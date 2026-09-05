@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-022-milken",
+  "topic_id": "TOP-20260630-022",
+  "slug": "milken",
+  "title_working": "Michael Milken: Genius, or the Face of Greed?",
+  "state": "edit_review",
+  "risk_class": "R3",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "audio_mix": "v001",
+    "captions": "v001",
+    "voice_master": "v001",
+    "narration_index": "v001",
+    "thumbnail_candidates": "v001",
+    "youtube_meta": "v001",
+    "rights_manifest": "v001",
+    "prefinal_audit": "v001",
+    "edit": "v001",
+    "final_delivery": "v001",
+    "final_acceptance": "v001",
+    "final_audit": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-022-milken-topic",
+      "artifact_type": "topic",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/00_topic/topic.v001.json",
+      "checksum": "sha256:79a8a4a69f9e3ce111daa5e10593f6e42f25dfcc585f06a130dd1bb23dcbf282",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-sources",
+      "artifact_type": "source_set",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/01_research/sources.v001.json",
+      "checksum": "sha256:fdcd32c9976897e308f3e0a6b3330ef56d1730c223da23103fb296674f28928e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-claims",
+      "artifact_type": "claim_ledger",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/01_research/claims.v001.json",
+      "checksum": "sha256:eb1cead41d42ba74d61187c743a6cd542756b2ce44d7d19c81575bd58d8f537e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/03_script/script.annotated.v001.json",
+      "checksum": "sha256:c074a0ab2181e239a9450532a8ab2170816fb817b0667d6655d30add5690b131",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-voice-master-meta",
+      "artifact_type": "voice_master",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/06_audio/voice_master.v001.json",
+      "checksum": "sha256:b307cc36aff46f681e166c27a927cbfffc84cd03afeed0c1475569bb3774ab32",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-narration-index",
+      "artifact_type": "narration_index",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/06_audio/narration_index.v001.json",
+      "checksum": "sha256:71beaf23733c282b1b6dfecbc0bbc4a8b3408f43724e897fb9eabbe1ee309d3e",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-captions",
+      "artifact_type": "captions",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/08_edit/captions.v001.srt",
+      "checksum": "sha256:c2b59efd8505accab8fd1fd95f457be437cdd8309afe3faba272a0f4fd60a9dc",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-rights-manifest",
+      "artifact_type": "rights_manifest",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/09_package/rights_manifest.v001.json",
+      "checksum": "sha256:25711503853b414eea4be1623cafd1c187fed015b553af98b13c7de102eee943",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-youtube-meta-draft",
+      "artifact_type": "youtube_meta",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/09_package/youtube_meta.v001.json",
+      "checksum": "sha256:aaf04f6e836f094e7344708ed2000033b040cf1504ef0219f4f7b32e7d03b6d7",
+      "status": "draft",
+      "rights_status": "conditional",
+      "qc_status": "owner_review_required"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-prefinal-audit",
+      "artifact_type": "prefinal_audit",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/09_package/EVIDENCE/self_audit_prefinal.v001.md",
+      "checksum": "sha256:5bc674d007e07876bb4a86eb3fbbced843c1db452c5a736b3db4381325c9f8eb",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pending_final_render"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-r3-fact-recheck",
+      "artifact_type": "r3_fact_recheck",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/09_package/EVIDENCE/r3_fact_recheck.v001.md",
+      "checksum": "sha256:603b8f6d422d2ce9175abef262f846319e91862b47fdaddd2fb863f8d375e018",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-final-delivery",
+      "artifact_type": "final_delivery",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/09_package/final_delivery.v001.json",
+      "checksum": "sha256:fac2edbb9805979045d18c693be53cb0cf65e01cd64e37d60db401824ea0859e",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-final-acceptance",
+      "artifact_type": "final_acceptance",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/09_package/EVIDENCE/final_acceptance.v001.json",
+      "checksum": "sha256:21a7f49a0ebac3d307a96e305a355e5df7765a1626ab7efd791f8e1d04281e9c",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-final-audit",
+      "artifact_type": "final_audit",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/09_package/EVIDENCE/self_audit_final.v001.md",
+      "checksum": "sha256:682f4f68eb70b3de0066422fb6439482d6e9c0840925a9c1ad60e2aa3b841972",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "R3 LIVING person who PLEADED GUILTY (April 1990, six felony counts) and was later PARDONED (Feb 18, 2020). Strictly record-based and neutral. NEVER say 'convicted at trial', 'convicted of insider trading', or 'convicted of racketeering/RICO'. Always distinguish CHARGED (98 counts, incl. RICO) from PLEADED (6 counts); RICO + 92 counts dropped.",
+    "The 2020 pardon is clemency, NOT innocence/exoneration: the guilty plea STANDS and the SEC LIFETIME industry BAN was NOT lifted. The genius-vs-greed debate must stay ATTRIBUTED ('critics argue / defenders argue'), never settled fact.",
+    "Visuals: NO real-person likeness of anyone, NO real logos/seals, NO readable text in images (Remotion adds text). Symbolic reconstruction only.",
+    "Left-process only (Claude): topic/research/claims/script. Codex owns scenes/visuals/audio/edit/render.",
+    "Narration sized at measured ~173 wpm (~26.8 min, Gardner-level) to fill ~27-33 min runtime with hook montage, OP/ED bookends, music beats and the CTA hold; validator estimates at 150 wpm (~30.9 min, in mid band).",
+    "Durable source content hashes PENDING (capture before publish; non-blocking). Final-script approval is an OWNER gate: APR-0001 is PENDING (not self-approved). Before broadcast: re-confirm the subject is living and lock verbatim White House / court / SEC quotes."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-30T00:00:00+00:00",
+  "updated_at": "2026-07-01T01:44:38.664041+00:00"
+}

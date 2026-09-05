@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-083-max737",
+  "slug": "max737",
+  "authored": "2026-09-05",
+  "note": "Fills the empty people_plates declaration (people_plates_min: 20 in episode_spec.v001.json) for local SD3.5 generation under the owner's emergency-addition exception while Codex is down. Every figure is anonymous by construction: from behind, silhouette, or hands-only. No real-person likeness, no readable text or marks, era 2011-2026 per era_setting.notes (modern flat-panel flight decks, 2010s dress, open-plan offices, dual monitors, nothing that reads 1970s-90s). All compositions 16:9. Beats reference script.en.v001.md sections and lines.",
+  "plates": [
+    {
+      "id": "P001",
+      "beat": "HOOK — 'Over the Java Sea, a wheel beside the captain's knee turns by itself.'",
+      "subject": "A pilot's hand hovering an inch from a large black stabiliser trim wheel that is turning on its own, hands-only, no face.",
+      "prompt": "Extreme close-up inside a modern airliner flight deck, a large black stabiliser trim wheel beside the pilot's knee spinning by itself with visible motion blur on its rim, a bare hand in a white uniform shirt cuff hovering an inch away from it not touching it, morning light raking across the centre console, flat-panel displays glowing soft blue in the background bokeh, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, shallow depth of field, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, badge, insignia, emblem, airline markings, recognizable face, facial features, portrait, identifiable person, extra fingers, deformed hands, CRT screens, steam gauges, 1980s cockpit, cartoon, illustration, low-resolution",
+      "constraints": "No face in frame at all. No readable placard or label on the console. Flight deck must read as a modern flat-panel airliner, not a vintage cockpit. The hand must not touch the wheel — the wheel moves alone."
+    },
+    {
+      "id": "P002",
+      "beat": "HOOK — 'Who decided he did not need to know?'",
+      "subject": "A lone suited figure in silhouette at a floor-to-ceiling office window at dusk, seen entirely from behind, rain on the glass.",
+      "prompt": "A lone figure in a 2010s business suit seen entirely from behind, standing at a floor-to-ceiling window of a modern open-plan office at dusk, silhouetted against a rain-streaked glass wall with the grey-blue light of a Pacific Northwest evening beyond, rows of empty desks with dark flat monitors receding behind the figure, one desk lamp burning in the foreground and flaring into the lens, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, reflection of a face in the glass, wall signage, posters, cartoon, illustration, low-resolution",
+      "constraints": "Figure from behind only — no face and no face reflected in the window. No company mark, nameplate, or poster on any wall. No skyline landmark identifiable as a specific real city."
+    },
+    {
+      "id": "P003",
+      "beat": "ACT_1 — 'In the jump seat behind the two pilots sat a third man... rated on the same aircraft, riding home.'",
+      "subject": "Three crew seen from behind in a modern flight deck at night — two pilots in their seats and a third figure on the jump seat between and behind them.",
+      "prompt": "Wide shot from the rear bulkhead of a modern airliner flight deck at night, the backs of two pilots' heads and shoulders in white uniform shirts in their seats, a third uniformed figure seated on the fold-down jump seat behind and between them seen only from behind, the panel ahead of them a wall of glowing flat-panel displays rendered as soft defocused fields of light, deep blue night beyond the windscreen, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, badge, insignia, emblem, epaulette insignia, recognizable face, facial features, portrait, identifiable person, side profile of a face, CRT screens, steam gauges, cartoon, illustration, low-resolution",
+      "constraints": "All three figures from behind — not even a partial profile. No airline patch, wing badge, or name tag on any uniform. Display symbology must stay defocused and unreadable."
+    },
+    {
+      "id": "P004",
+      "beat": "ACT_1 — 'The control column in the captain's hands began to shake... The stick shaker ran for the whole flight. Ninety-six minutes.'",
+      "subject": "Hands-only close-up of two hands gripping a violently vibrating control column, heavy motion blur on the column.",
+      "prompt": "Close-up of two bare hands in rolled white shirt sleeves gripping the horns of a modern airliner control column that is vibrating violently, heavy motion blur on the column and sharp tension in the knuckles, amber caution light washing over the hands from a glowing flat-panel instrument out of focus behind, dark flight deck, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, extra fingers, deformed hands, six fingers, CRT screens, cartoon, illustration, low-resolution",
+      "constraints": "Hands only — no face, no torso above the shoulders. No readable placard on the yoke hub. Anatomically correct hands (flag any extra-finger output for regeneration)."
+    },
+    {
+      "id": "P005",
+      "beat": "ACT_1 — 'Pulling on the column with ninety-three, then a hundred and three pounds of force... holding a full suitcase off the floor with your fingertips.'",
+      "subject": "A first officer seen from behind and below, hauling back on the control column with both arms, whole posture straining, no face.",
+      "prompt": "Low angle from behind the right-hand pilot seat of a modern airliner flight deck, an anonymous pilot in a white uniform shirt seen from behind hauling back on the control column with both arms, shoulders hunched and forearms corded with strain, the seat frame and shoulder harness sharp in the foreground, morning glare burning through the windscreen beyond and blowing out white, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, side profile of a face, CRT screens, cartoon, illustration, low-resolution",
+      "constraints": "Camera stays behind the seat — no face, no profile. No airline markings on the uniform. The strain is in posture and arms, never in a visible expression."
+    },
+    {
+      "id": "P006",
+      "beat": "ACT_1 — 'Two switches on the console between the seats. Cut the electricity to the trim.'",
+      "subject": "Hands-only macro of a captain's hand flipping two guarded cutout switches on the centre pedestal, motion blur on the moving fingers.",
+      "prompt": "Macro close-up of a hand reaching down to a modern airliner centre pedestal and flipping two side-by-side guarded toggle switches to the cut-out position, slight motion blur on the fingers, the big black trim wheel frozen mid-frame beside the hand, a single bright panel lamp burning above and flaring, everything else falling into darkness, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, shallow depth of field, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, placard text, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, extra fingers, deformed hands, CRT screens, cartoon, illustration, low-resolution",
+      "constraints": "Hands only. Switch placards must carry no legible characters — blank or defocused. Modern pedestal, not a vintage one."
+    },
+    {
+      "id": "P007",
+      "beat": "ACT_2 — 'Airlines do not really buy aeroplanes. They buy fleets. And a fleet is only cheap if every pilot can fly every aircraft in it.'",
+      "subject": "A line of uniformed pilots with rolling flight bags crossing an airport apron at dawn, all seen from behind, unmarked narrow-body jets behind them.",
+      "prompt": "Four airline pilots in dark 2010s uniforms and peaked caps seen entirely from behind, walking away from camera across a wet airport apron at dawn towing rolling flight bags, a row of identical modern narrow-body airliners with plain unmarked white fuselages parked beyond them, apron floodlights blazing into the lens and doubling in the wet concrete, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, badge, insignia, emblem, tail markings, painted tail design, airline colours, registration characters, recognizable face, facial features, portrait, identifiable person, cartoon, illustration, low-resolution",
+      "constraints": "All figures from behind. Every aircraft plain white — no tail art, no fuselage titles, no registration characters. No terminal signage in frame — open apron only."
+    },
+    {
+      "id": "P008",
+      "beat": "ACT_2 — 'Level B is generally computer-based training — a course a pilot can do on a laptop.'",
+      "subject": "Over-the-shoulder shot of an anonymous pilot at a kitchen table at night doing training on a laptop, screen a featureless glow, no face.",
+      "prompt": "Over-the-shoulder shot from behind an anonymous man in a plain t-shirt seated at a kitchen table at night, an open modern laptop before him rendered as a soft featureless field of white-blue glow with no visible interface, a 2010s smartphone lying face-down beside a coffee mug, the laptop light rimming his shoulders, the kitchen behind falling into warm darkness with one pendant lamp burning, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, user interface, icons, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, face reflected in screen, CRT monitor, cartoon, illustration, low-resolution",
+      "constraints": "From behind only; no face and no face reflection in the screen. The laptop screen must be pure defocused glow — no glyphs, no windows, no icons. Contemporary 2010s hardware."
+    },
+    {
+      "id": "P009",
+      "beat": "ACT_2 — 'At the deep end it means a full-flight simulator — a box on hydraulic legs, an instructor, hours per pilot, thousands of pilots.'",
+      "subject": "A tiny human silhouette on the gantry of a towering full-flight simulator in a dark simulator bay, dwarfed by the machine.",
+      "prompt": "Wide shot of a cavernous simulator bay at night, a full-flight simulator — a huge white cabin standing on six hydraulic legs — looming under high ceiling floodlights, a single human silhouette in work clothes standing on the access gantry at its door, dwarfed by the machine, one floodlight blazing into the lens from high above, hard shadows across the polished floor, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, wall signage, safety posters, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, cartoon, illustration, low-resolution",
+      "constraints": "Figure is a pure silhouette — no facial detail at any distance. No markings on the simulator shell, no bay signage or posters on the walls."
+    },
+    {
+      "id": "P010",
+      "beat": "ACT_2 — 'In December of 2011, Boeing signed a contract... that obliged Boeing to discount every MAX it delivered by at least one million dollars if the FAA required simulator training.'",
+      "subject": "Hands-only shot of two suited parties across a boardroom table, one fountain pen poised over an out-of-focus blank signature page.",
+      "prompt": "Close-up across a dark boardroom table, the sleeved hands and cuffs of two people in 2010s business suits facing each other, one hand holding a heavy fountain pen poised above a thick stack of paper whose pages are blank and softly out of focus, a low warm banker-style desk lamp burning between them and flaring into the lens, winter daylight dying in the window blinds behind, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, shallow depth of field, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, signature, numerals, readable document, letterhead, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Hands and forearms only — no faces. The paper must carry no glyphs, letterhead, or signature lines; keep it defocused. No company mark anywhere in the room."
+    },
+    {
+      "id": "P011",
+      "beat": "ACT_2 — 'The Level B decision, he said, was a provisional approval, assuming no significant systems changes... To go back to them now... would be a huge threat.'",
+      "subject": "An engineer alone at a dual-monitor workstation late at night in an open-plan office, seen from behind, monitors as defocused light.",
+      "prompt": "An anonymous engineer in a plaid shirt seen from behind, alone at a workstation in a dark open-plan engineering office late at night, two modern flat monitors before him rendered as defocused fields of pale light, an ergonomic chair, a lanyard hanging over the chair back with its card turned away, every other desk dark and empty receding into the gloom, his single desk lamp the only warm light in the room, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, email window, user interface, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, face reflected in monitor, CRT monitor, cubicle-era 1990s office, cartoon, illustration, low-resolution",
+      "constraints": "From behind only; no face, no readable ID card, no screen content — the monitors are pure defocused light. Office must read 2010s open-plan, not cubicles or CRTs."
+    },
+    {
+      "id": "P012",
+      "beat": "ACT_3 — 'An angle-of-attack sensor is a small vane on the side of the nose... MCAS listened to one.'",
+      "subject": "A maintenance technician on a lift platform beside an airliner's nose, gloved finger almost touching the small angle-of-attack vane, seen from behind.",
+      "prompt": "A maintenance technician in a hi-vis vest and cap seen from behind on a scissor-lift platform beside the nose of a modern narrow-body airliner with a plain unmarked white fuselage, one gloved hand reaching towards a small blade-like vane protruding from the fuselage side, a work floodlight clamped to the lift rail blazing across the aluminium skin, hangar darkness beyond, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, stencilled characters, registration characters, badge, insignia, emblem, airline colours, tail markings, recognizable face, facial features, portrait, identifiable person, cartoon, illustration, low-resolution",
+      "constraints": "Technician from behind — no face. Fuselage entirely unmarked: no titles, stencils, or registration characters. The vane is small and physical, not a diagram."
+    },
+    {
+      "id": "P013",
+      "beat": "ACT_3 — 'Boeing test pilots found the MAX did not handle well approaching a stall at lower speeds — and Boeing redesigned MCAS to work down there too.'",
+      "subject": "Two test pilots from behind inside a full-flight simulator cab pitched nose-high, red master warning glow, no faces.",
+      "prompt": "Interior of a full-flight simulator cab seen from the rear, two anonymous pilots in plain polo shirts and headsets seen from behind in their seats, the cab visibly pitched nose-high, the wraparound visual display beyond the windscreen a defocused wash of grey sky, red and amber warning glow from the glareshield lighting the backs of their headsets, cables and a spare headset swaying with the motion, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, side profile of a face, CRT screens, cartoon, illustration, low-resolution",
+      "constraints": "Both figures from behind — no faces or profiles. Display symbology defocused and unreadable. No manufacturer mark inside the cab."
+    },
+    {
+      "id": "P014",
+      "beat": "ACT_3 — 'He felt MCAS operate at low speed... Oh shocker alert... It's running rampant in the sim on me.'",
+      "subject": "A lone pilot from behind in a dark simulator, both hands fighting a control column pushed forward, red light strobing over him.",
+      "prompt": "A lone anonymous pilot in a plain shirt seen from directly behind in a dark full-flight simulator cab at night, both hands locked on the control column as it forces itself forward, motion blur on his straining forearms, pulsing red master-warning light strobing over his shoulders and the empty seat beside him, the simulated horizon beyond the glass tilted down and defocused, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, side profile of a face, CRT screens, cartoon, illustration, low-resolution",
+      "constraints": "From behind only — no face at any angle. No readable annunciator captions; warning lights are pure colour. The empty second seat matters — he is alone with it."
+    },
+    {
+      "id": "P015",
+      "beat": "ACT_3 — 'It had been mis-calibrated during an earlier repair... Somebody bench-tested a part, and the test passed, and the part was wrong by twenty-one degrees.'",
+      "subject": "Hands-only shot of a bench technician's gloved hands adjusting a small sensor vane unit in a workshop fixture under one lamp.",
+      "prompt": "Macro close-up of a technician's nitrile-gloved hands steadying a small metal angle-of-attack sensor unit in a calibration fixture on a cluttered workshop bench, a precision screwdriver mid-turn, a single articulated bench lamp burning hard light across the metal and throwing the rest of the workshop into darkness, a modern digital multimeter defocused in the background with its display a blank glow, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, shallow depth of field, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, dial markings, screen digits, part labels, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Hands only — no face. No readable part label, serial characters, or instrument digits; test-equipment displays are blank glow. The scene is ordinary and diligent, not sinister."
+    },
+    {
+      "id": "P016",
+      "beat": "ACT_3 — 'Boeing put a presentation in front of the Aircraft Evaluation Group... The words were accurate. The impression was false.'",
+      "subject": "A row of suited figures from behind in a dark briefing room facing a blown-out featureless projection screen.",
+      "prompt": "A dark government briefing room seen from the back wall, the heads and shoulders of a row of anonymous people in 2010s business dress seen entirely from behind, all facing a large projection screen that is a featureless rectangle of blown-out white light with no visible content, the projector beam cutting through the darkness above their heads and flaring in the lens, closed laptops and paper cups on the long table, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, slide content, charts, bullet points, seals, badge, insignia, emblem, flags, recognizable face, facial features, portrait, identifiable person, side profile of a face, cartoon, illustration, low-resolution",
+      "constraints": "Everyone from behind — no faces or profiles. The screen must be pure blown-out white: no glyphs, charts, or pseudo-text. No agency seal, flag, or wall plaque anywhere."
+    },
+    {
+      "id": "P017",
+      "beat": "ACT_4 — 'On the third of December, 2018, the FAA finished a risk analysis on its own aeroplane... They did the arithmetic.'",
+      "subject": "A lone analyst from behind at a government desk late at night, dual monitors as blank glow, one desk lamp, papers face-down.",
+      "prompt": "A lone anonymous analyst in a rumpled shirt seen from behind at a desk in a dark government office at night, two flat monitors before him reduced to blank fields of cold light, a desk calculator under one resting hand, stacks of paper turned face-down beside it, a single green-shaded desk lamp burning as the only warm light, venetian blinds closed on winter darkness behind, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, screen text, spreadsheets, charts, seals, badge, insignia, emblem, flags, recognizable face, facial features, portrait, identifiable person, face reflected in monitor, CRT monitor, cartoon, illustration, low-resolution",
+      "constraints": "From behind only. No readable page, digit, or chart — every paper face-down, every screen blank glow. No agency seal or flag. The mood is procedural, not villainous."
+    },
+    {
+      "id": "P018",
+      "beat": "ACT_4 — 'In those five months, Boeing delivered nearly one hundred and fifty more aircraft to its customers.'",
+      "subject": "A factory worker silhouetted under an unpainted green-primer narrow-body fuselage on a bright assembly line, seen small and from behind.",
+      "prompt": "Wide interior of a vast aircraft assembly hall flooded with high bay lighting, a modern narrow-body airliner fuselage in green-tinted protective primer suspended in an assembly jig, a single factory worker in a hi-vis vest and hard hat seen small and from behind walking beneath it along the polished floor, work platforms and yellow gantry cranes receding into the bright haze, one bank of ceiling lights blazing into the lens, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, banners, wall signage, stencilled characters, badge, insignia, emblem, company marks, flags, recognizable face, facial features, portrait, identifiable person, cartoon, illustration, low-resolution",
+      "constraints": "Worker from behind, small in frame — no face. No banners, safety signage, or stencils with characters; keep wall surfaces bare or defocused. No manufacturer wordmark anywhere."
+    },
+    {
+      "id": "P019",
+      "beat": "ACT_4 — 'With the electric trim dead, the stabiliser has to be turned by hand... and at that speed... two people could not move it.'",
+      "subject": "Extreme macro, hands-only: two different pairs of hands stacked on the rim of a large dark wheel, straining, everything beyond the wheel falling into black shadow.",
+      "prompt": "Extreme macro photograph, almost abstract: two different pairs of adult hands stacked together on the rim of a large dark ribbed wheel, knuckles white, tendons standing, straining to turn it, a single shaft of cold dawn light raking across the skin and the wheel rim, everything else falling away into pure black shadow, no background visible, no cockpit, no panels, no screens, shallow depth of field, cinematic documentary reconstruction, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, letters, words, logo, plaque, screen, display, label, poster, notice, placard, writing, watermark, handwriting, numerals, readable document, badge, insignia, emblem, recognizable face, facial features, portrait, identifiable person, extra fingers, deformed hands, six fingers, cockpit panel, instrument panel, gauges, dials, aircraft exterior, cartoon, illustration",
+      "constraints": "Hands and wheel rim only against blackness -- no panels, instruments, or surfaces that could carry glyphs anywhere in frame. Anatomically correct hands. v2 redesign 2026-09-05 after 4 failed attempts (panel glyph storms / nose misrender); the beat and meaning are unchanged."
+    },
+    {
+      "id": "P020",
+      "beat": "ENDING — 'You will get on one of these. They are flying now, everywhere... Somebody, somewhere, decided you did not need to know.'",
+      "subject": "An ordinary passenger with a shoulder bag seen from behind, walking down an empty jet bridge towards the open door of a modern airliner.",
+      "prompt": "A single ordinary adult traveller in a 2020s casual jacket with a shoulder bag seen entirely from behind, walking away from camera down an empty jet bridge, the corridor's ribbed walls bare and unmarked, morning light blazing through the seam windows and flaring into the lens, the open doorway of a modern narrow-body airliner glowing warm at the far end with a plain unmarked white fuselage visible beyond, cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, handwriting, numerals, readable document, wall signage, advertisements, posters, badge, insignia, emblem, airline colours, tail markings, recognizable face, facial features, portrait, identifiable person, children, cartoon, illustration, low-resolution",
+      "constraints": "From behind only — no face. Jet bridge walls bare: no advertising panels, no signage surfaces with glyphs. Aircraft unmarked white. One adult only — no children, no crowd."
+    }
+  ]
+}

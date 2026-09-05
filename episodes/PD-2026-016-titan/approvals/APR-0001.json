@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-016-titan",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-24T12:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-24T12:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner directed EP16 as the first 60-min flagship feature, chose topic direction (Titan / OceanGate), approved the tight-and-restrained script density ('A'), and authorized proceeding to completion. Content/direction sign-off for the Titan feature script v001, bound to annotated content_hash sha256:e2e109f574c41a64170dc0a848eabcb2cb70056f3855365f2b86f0f98c2594b9 — re-approval required if revision/hash changes (rules/12). Facts web-verified 2026-06-24 against the U.S. Coast Guard MBI report (2025), hearing exhibits incl. the 2018 MTS letter, 2018 court filings (Lochridge), and major-outlet reporting. R2 episode about a recent disaster with deceased victims and living relatives: this content sign-off does NOT substitute for the required pre-publish fact re-check or the first-cut / title-thumbnail / public-scheduling gates.",
+  "conditions": [
+    "R2 PRE-PUBLISH GATE: re-verify current facts before publish (rights_status=conditional) — USCG report wording, MTS exhibit URL, exact Rush-quote source/wording.",
+    "DIGNITY: moral center = Suleman (19); no schadenfreude; no graphic implosion/remains; cause attributed to the U.S. Coast Guard Board, not the narrator; living relatives & whistleblower via documented statements only, no invented dialogue.",
+    "NO real-person likeness/deepfake of any of the five or of Stockton Rush (invariant 11); visuals symbolic + AI-disclosed; brand markings non-specific. Capture durable content hashes for SRC-0001..0010 before publish."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-016-titan/03_script/script.annotated.v001.json"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "short": 268,
+  "episode_id": "PD-2026-065-marmet",
+  "slug": "marmet",
+  "loop": true,
+  "loop_join": "The rewind (p21->p22->p23) runs backward through the paper-edge shot (short268_03.png) and the empty reception desk with the lounge chairs visible down the hallway behind it (short268_02.png), then settles on the pen resting across the blank signature line (short268_01.png) under the FULL CASE card, held to the last frame. Frame 0 opens on that same pen-and-signature-line image, so the loop closes on the identical picture.",
+  "second_watch_detail": "The kinetic card 'ONE EXCEPTION' (short268_kin_one_exception.webm) sits over the pen-on-signature-line image (short268_01.png, also the loop frame) and reads as a routine admissions detail on pass one; on pass two, once L1 explains the exception protects only the home's own late-payment claims, that same signature line reads as where the patient's right to sue left their hands for everything except the home's own bill.",
+  "funnel_question_left_for_longform": "Can a family member's signature bind the patient who never signed?",
+  "funnel_long_title": "The Paper You Sign at the Door",
+  "funnel_long_video_id": "m19yjXNVotk",
+  "description_line_1": "▶ FULL CASE: The Paper You Sign at the Door | https://youtu.be/m19yjXNVotk",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "The Paper You Sign at the Door",
+    "ctaLongThumbSrc": "shorts/short268/short268_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "Can a family member's signature bind the patient who never signed? The full case is here: https://youtu.be/m19yjXNVotk",
+  "note": "Record completed on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but whose corridor was still a stub (funnel_long_video_id and pinned_comment null). The long-form PD-2026-065-marmet is live at https://youtu.be/m19yjXNVotk (confirmed against youtube_schedule_result.v005.json and final_delivery.v005.json; its live YouTube title is 'Three Patients Died Under Its Care. The Only Claim It Let a Court Hear Was Its Own Bill.', which is why funnel_long_title uses the shorter working title already baked into this short's on-screen CTA card in remotion/src/data/short268.ts rather than the full live title, which is over the 60-character limit this field allows). Loop join and second-watch detail were read directly off the rendered plates in remotion/public/shorts/short268/ and the kineticBeats entry in that same .ts file, not invented. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet.",
+  "renumbered_from": "short191",
+  "renumber_reason": "short182-193 were reserved on 2026-08-04 when the highest number on disk was 181. Another thread then wrote short182-193 for tlo, willingham, tyler and others at 06:32 the same day. The true high-water mark is 258, so this slate moved to 259-270."
+}

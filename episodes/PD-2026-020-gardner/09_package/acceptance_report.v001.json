@@ -1,0 +1,116 @@
+{
+  "episode_id": "PD-2026-020-gardner",
+  "revision": "v001",
+  "status": "accepted_for_owner_gate",
+  "final_video": "H:/pd-media/episodes/PD-2026-020-gardner/08_edit/final.mp4",
+  "captions_srt": "episodes/PD-2026-020-gardner/08_edit/captions.v003.srt",
+  "thumbnail_selected": "episodes/PD-2026-020-gardner/09_package/thumbnail.selected.v001.png",
+  "acceptance_command": "./.venv/Scripts/python.exe scripts/check_final_acceptance.py 20 --json",
+  "acceptance_exit_code": 0,
+  "acceptance_status": "PASS",
+  "measured_at": "2026-06-29T19:29:44.641367+00:00",
+  "self_audit": [
+    {
+      "gate": "runtime in band 27-33 min",
+      "measured": "1643.13s = 27.39min",
+      "status": "OK"
+    },
+    {
+      "gate": "render resolution",
+      "measured": "1920x1080 h264, 30fps",
+      "status": "OK"
+    },
+    {
+      "gate": "narration provider",
+      "measured": "ElevenLabs master narration present; no SAPI/local final",
+      "status": "OK"
+    },
+    {
+      "gate": "captions coverage and format",
+      "measured": "captions.v003.srt; 548 breath-group cues; last cue 1636.082s; 4553/4553 words; 0 format violations",
+      "status": "OK"
+    },
+    {
+      "gate": "BGM present / no long silence",
+      "measured": "total silence 0s; longest detected silence 0s",
+      "status": "OK"
+    },
+    {
+      "gate": "integrated loudness",
+      "measured": "-14.3 LUFS",
+      "status": "OK"
+    },
+    {
+      "gate": "motion / freeze",
+      "measured": "frozen total 0.0s; longest frozen 0.0s",
+      "status": "OK"
+    },
+    {
+      "gate": "black frames",
+      "measured": "black total 0.0s; longest black 0.0s",
+      "status": "OK"
+    },
+    {
+      "gate": "hero image inventory and resolution",
+      "measured": "92 hero PNGs staged; all long-edge >= 3840px",
+      "status": "OK"
+    },
+    {
+      "gate": "factory asset density",
+      "measured": "72 factory clips staged and referenced; gate need >=36",
+      "status": "OK"
+    },
+    {
+      "gate": "structure",
+      "measured": "hook, opening, body, CTA, ending, and tail endcard built into final render; hook row skipped by script because shotlist totals are not available",
+      "status": "OK"
+    },
+    {
+      "gate": "OP/ED",
+      "measured": "brand opening after hook; moving PD endcard at tail; visual QC frames checked",
+      "status": "OK"
+    },
+    {
+      "gate": "thumbnails",
+      "measured": "4 PNGs at 1280x720 including selected; variants A/B/C generated",
+      "status": "OK"
+    },
+    {
+      "gate": "R2 wording / visual safety",
+      "measured": "thumbnail plan and generated visuals avoid real-person likeness, real museum/logo, and authentic artwork reproduction; $500M treated as estimate in package safety note",
+      "status": "OK"
+    },
+    {
+      "gate": "final acceptance command",
+      "measured": "scripts/check_final_acceptance.py 20 --json exited 0",
+      "status": "OK"
+    }
+  ],
+  "thumbnails": [
+    {
+      "option": "A",
+      "headline": "STILL MISSING",
+      "path": "episodes/PD-2026-020-gardner/10_thumbnail/thumbnail.gardner_option_A.v001.png",
+      "selected": true,
+      "size": "1280x720"
+    },
+    {
+      "option": "B",
+      "headline": "$500M GONE",
+      "path": "episodes/PD-2026-020-gardner/10_thumbnail/thumbnail.gardner_option_B.v001.png",
+      "selected": false,
+      "size": "1280x720"
+    },
+    {
+      "option": "C",
+      "headline": "EMPTY FRAMES",
+      "path": "episodes/PD-2026-020-gardner/10_thumbnail/thumbnail.gardner_option_C.v001.png",
+      "selected": false,
+      "size": "1280x720"
+    }
+  ],
+  "notes": [
+    "No upload, publish, privacy change, or owner pre-publish approval was performed.",
+    "Owner gate remains: pre-publish fact/quote check, title/thumbnail selection, and publish decision."
+  ]
+}

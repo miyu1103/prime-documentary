@@ -1,0 +1,89 @@
+EP69 hyatt — 画像発注 バッチA 3/8（15枚）
+区分: ACT_2　／　人物レーン 3枚
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, American Midwest between 1978 and 1988, tungsten interiors and flat midday daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous surfaces, painted steel, vellum, brass, cut stone, plaster and travertine, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, dimension callouts, drawing title block, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsed building, collapsing structure, rubble, debris, wreckage, ruined interior, rescue worker, ambulance, stretcher, injured person, blood, body, casualty, funeral, firefighter, hospital, crowded hotel lobby, packed function room, crowd of people indoors, courtroom interior, gavel, judge's bench, scales of justice, hourglass, a handshake, police officer, uniform, handcuffs, prison bars, mobile phone, smartphone, laptop, flat-panel monitor, LED work lamp, cordless power tool, hi-vis safety vest, modern safety helmet, CAD screen, car built after 1990, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いているプロンプトがあります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+★[HSTYLE] で始まるプロンプトは人物レーンです。[HSTYLE] の中身はプロンプト本文の一部として
+　そのまま使ってください（置換不要）。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・寸法・手書き・署名・図面のタイトル欄を一切描かない
+・**崩落・瓦礫・救助・負傷者・遺体・満員のロビーを一切描かない**
+・**1978〜1988年のアメリカ中西部。**携帯電話・ノートPC・薄型モニタ・LED投光器・
+　充電式電動工具・蛍光色の安全ベスト・1990年以降の車を描かない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+・**「The same …」で始まるプロンプト（H004 / H051 / H053 / H054）は、直前の1枚と
+　同じ部屋・同じ画角・同じレンズでなければなりません。**別々に生成すると必ずずれます。
+　ずれた場合は作り直さず、元の1枚（H003 / H048 / H049）を色調整だけで作り直してください。
+
+──────── プロンプト ────────
+
+■ H031.png
+The underside of a length of hollow rectangular steel box section, seen close and straight on, with two round drilled holes in it a short distance apart along the length of the section. Clean cut edges, mill scale on the steel, one raking light from the left so the holes read as two dark ellipses Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H032.png
+The threaded end of a steel rod in extreme close-up, filling the frame diagonally, the last few turns of thread slightly bruised from handling, a film of dark oil sitting in the roots. Hard narrow light from one side, everything beyond the first inch out of focus into black Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H033.png
+One flat round steel washer lying alone on dark oiled wood, seen from slightly above, filling the middle third of the frame, the hole in its centre black, one hard light from the upper left casting a long shadow to the right. Faint circular grinding marks on the face of the washer. Nothing else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H034.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A man in his forties in a short-sleeved shirt sitting at a plain steel desk in a fabricator's office under a low hanging lamp, framed from the chest up and turned three-quarters to the camera, looking down at a large sheet of plain paper in front of him with a neutral working expression, a pencil in his hand. The office behind him is dim and ordinary. The sheet is blank Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H035.png
+A wooden rack holding a dozen rolled drawings in cardboard tubes, the open ends of the tubes turned toward the camera and filling the frame in a rough grid, the paper inside each one visible as a pale spiral. Flat side light. Nothing is written or printed on any tube Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H036.png
+A steel flat-file cabinet with one wide shallow drawer pulled out, seen from a standing height at a slight angle, large sheets of plain paper lying flat inside the open drawer with their edges showing. Cold overhead light, grey-green paint on the cabinet. Nothing on any sheet is visible and there are no labels on the drawer fronts Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H037.png
+Three wooden-handled rubber stamps lying face down in a row on the bare corner of a large sheet of plain paper, seen from directly above, warm lamp light from the left throwing three short shadows. The handles are worn. No printing on the handles and no ink impression anywhere on the sheet Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H038.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A single adult hand pressing a wooden-handled rubber stamp down onto the corner of a large sheet of plain paper on a table, forearm in a rolled shirt sleeve entering from the right, no head or body in frame, seen from a low angle across the surface of the sheet so the paper runs away out of focus. The hand and the stamp are sharp Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H039.png
+The bare corner of a large sheet of plain paper carrying three overlapping rectangular ink impressions, seen close from directly above in warm lamp light. The impressions are worn, uneven and deliberately unreadable: soft edges, broken ink, no legible characters of any kind inside any of them Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H040.png
+A loose pile of large folded drawings lying on a wooden chair in the corner of an office, seen from standing height, the folds and edges catching flat daylight from a window out of frame. The uppermost sheet shows only blank paper. Dust on the floor beside the chair Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H041.png
+An American construction site in 1979, the structural steel frame of a large building four storeys up against a pale flat sky, bare beams and columns, timber formwork on the deck, a stack of steel decking, an old crawler crane at the edge of the frame. Ordinary and unglamorous. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H042.png
+A tower crane standing against a completely flat pale grey sky above the unfinished concrete frame of a large building, seen from the ground with a long lens so the jib runs right across the top of the frame. No lettering anywhere on the crane. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H043.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. Three men in ordinary work clothes and plain old-fashioned hard hats standing together on the open deck of an unfinished building, seen from behind at about twenty feet so no face is visible, one of them pointing up at the steel above them. Flat overcast daylight, bare concrete deck, the city beyond soft in the haze Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H044.png
+A steel erection detail high in an unfinished frame: the end of a beam bolted to a column, two thin hanger rods dropping away below it, seen from below against a bright overcast sky so the steel reads as dark silhouette with a rim of light along its top edges. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H045.png
+The inside of a site office trailer in 1979, a plywood board on the wall with large sheets pinned to it, a plain desk under the window with a mug and a hard hat on it, a bare fluorescent tube overhead. The pinned sheets are blank paper. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: H001.png）で保存してください。
+保存先 H:\pd-media\assets\ai\hyatt\
+長辺 3840px 以上・16:9・PNG。

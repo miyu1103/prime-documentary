@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-007-riley",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Riley v. California (2014) the Supreme Court held that police generally may not, without a warrant, search the digital contents of a cell phone seized from an individual who has been arrested.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Roberts, C.J.), holding"
+      ],
+      "counterevidence": [],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "Police generally need a warrant to search a cell phone seized during an arrest."
+      ],
+      "prohibited_wording": [
+        "Police can never look at your phone.",
+        "The ruling banned phone evidence."
+      ],
+      "temporal_scope": "2014-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Riley v. California was decided on June 25, 2014; the judgment was unanimous (9-0), with the majority opinion by Chief Justice John Roberts and Justice Alito concurring in part and in the judgment.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / decision date / vote"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "A unanimous Court ruled in 2014; Chief Justice Roberts wrote the opinion.",
+        "Not one justice dissented."
+      ],
+      "prohibited_wording": [
+        "The decision was 5-4.",
+        "The opinion was joined in full by every justice."
+      ],
+      "temporal_scope": "2014",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "9-0 in the result; Alito concurred in part and in the judgment (not full reasoning)."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The Court held that the traditional 'search incident to arrest' justifications from Chimel v. California — officer safety and preventing the destruction of evidence — do not justify searching the digital data on a phone.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, application of Chimel rationales"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The usual reasons for searching an arrestee don't fit phone data."
+      ],
+      "prohibited_wording": [
+        "The Court abolished search incident to arrest."
+      ],
+      "temporal_scope": "2014-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Reasoning: data can't be a weapon; secured phone removes destruction concern."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The Court reasoned that modern cell phones differ from other objects 'in both a quantitative and a qualitative sense,' holding what it called the privacies of life.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (quantitative/qualitative difference; 'privacies of life')"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The Court said a phone is different in kind, holding 'the privacies of life.'"
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2014-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Direct quotes are public domain."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "Riley's case was decided together with United States v. Wurie, which involved an older flip phone whose call log police used without a warrant.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Syllabus (consolidated cases)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "The case was decided alongside a second one about an old flip phone, United States v. Wurie."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2014",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Companion case (No. 13-212)."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "David Riley was stopped in San Diego while driving on a suspended license; firearms were found in his car; officers searched his smartphone without a warrant (at the scene and again at the station), and photos, videos and contacts on it linked him to a street gang and an earlier shooting, leading to charges in that shooting.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Opinion, facts (Riley)",
+        "Justia: facts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Riley was stopped, guns were found, his phone was searched without a warrant, and it tied him to a shooting."
+      ],
+      "prohibited_wording": [
+        "Riley was innocent.",
+        "The phone search proved him guilty."
+      ],
+      "temporal_scope": "2009-2014",
+      "geographic_scope": "California, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real person; charged status accurate; do not editorialize on guilt."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "The Court's instruction to officers who want to search a phone was, in its words, 'get a warrant.'",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, conclusion"
+      ],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "The Court's answer was simple: get a warrant."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2014-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Famous closing line; public domain."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "The ruling preserves the exigent-circumstances exception, allowing a warrantless phone search in a genuine emergency (such as imminent destruction of evidence, a fleeing suspect, or someone in serious danger).",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, exigency discussion"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "In a true emergency, police can still act without a warrant."
+      ],
+      "prohibited_wording": [
+        "The ruling has no exceptions."
+      ],
+      "temporal_scope": "2014-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Important limit."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "Riley builds on the principle from Katz v. United States (1967) that the Fourth Amendment 'protects people, not places,' tied to a person's reasonable expectation of privacy.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Katz, Opinion of the Court ('people, not places')",
+        "Katz, Harlan, J. concurrence (reasonable expectation of privacy)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "The older principle that privacy follows the person, not the place, comes from Katz (1967)."
+      ],
+      "prohibited_wording": [
+        "Katz was about cell phones."
+      ],
+      "temporal_scope": "1967-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Background principle woven in; sourced to the Katz primary opinion."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable content hashes captured for 2/3 sources; SRC-0002 returned a fetch block (403) — non-blocking, primary opinion(s) hashed."
+    ]
+  }
+}

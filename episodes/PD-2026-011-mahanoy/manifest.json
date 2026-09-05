@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-011-mahanoy",
+  "topic_id": "TOP-20260620-011",
+  "slug": "mahanoy",
+  "title_working": "Can Your School Punish You for a Post You Made Off Campus?",
+  "state": "scheduled",
+  "risk_class": "R2",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "shotlist": "v001",
+    "edit_design": "v001",
+    "voice_plan": "v001",
+    "narration_index": "v001",
+    "captions_final": "v001",
+    "final_qc": "v001",
+    "rights_manifest": "v001",
+    "youtube_meta": "v001",
+    "final_delivery": "v002",
+    "youtube_schedule_result": "v001",
+    "youtube_status_verify": "v001",
+    "youtube_captions_result": "v001",
+    "thumbnail": "v002",
+    "youtube_thumbnail_update": "v002"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-011-mahanoy-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-011-mahanoy/03_script/script.annotated.v001.json",
+      "checksum": "sha256:b28f42c87c4e194d6ebf41ca98f383f7f233bcd31e6e7ef78b8a9a396438c4f4",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-011-mahanoy-final-video-v001",
+      "artifact_type": "final_video",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-011-mahanoy/08_edit/mahanoy_premium_v001.mp4",
+      "checksum": "sha256:898ee186255dc54989a944cb92e4d174e1e8603b77c4a75faf9a461497eaac87",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-011-mahanoy-final-delivery-v001",
+      "artifact_type": "final_delivery",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-011-mahanoy/09_package/final_delivery.v001.json",
+      "checksum": "sha256:9a5759079ba295cb85a5f61a0b9e6f110326a66b14692a4e49f6937e7cfc8fd2",
+      "status": "superseded",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-011-mahanoy-final-delivery-v002",
+      "artifact_type": "final_delivery",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-011-mahanoy/09_package/final_delivery.v002.json",
+      "checksum": "sha256:7bf0136418a856f444a7bddcb18719d4da6b59d7e8cb844bcb201c76771602f8",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001",
+    "APR-0002"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 2.59,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Claude owns research+script; Codex begins at scenes/visuals. Use rights-clean real footage (references/README.md, H:/pd-media/assets/stock). Image gen = Codex; edit = Remotion+FFmpeg.",
+    "script_qc PASS (FK 7.0, no AI-filler), timing ~10.1min; promoted to script_verified.",
+    "ADVERTISER SAFETY (CLM-0006): the post's caption was profane — the narration DESCRIBES it and must NEVER read the explicit words; on-screen text must be censored/blurred.",
+    "Brandi Levy (B.L.) was a minor but went public with the ACLU — safe to name; describe neutrally. Keep neutral on school-vs-student; present the school's interest fairly.",
+    "Heavy media (scenes/visuals/audio/edit) on the external SSD (H:\\pd-media), not in this repo.",
+    "EP11 package is ready for owner review. YouTube upload/public scheduling was not performed. Intended schedule metadata: 2026-06-26T12:00:00+09:00.",
+    "YouTube private upload completed and scheduled under APR-0002: video_id cSfe3iGnBBM, public release 2026-06-26T12:00:00+09:00. containsSyntheticMedia=true; immediate public publish not performed.",
+    "YouTube thumbnail updated to v002 for video_id cSfe3iGnBBM; scheduled release remains 2026-06-26T12:00:00+09:00."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-20T04:00:00+09:00",
+  "updated_at": "2026-06-22T18:22:50.802748+00:00",
+  "video_id": "cSfe3iGnBBM",
+  "video_url": "https://youtu.be/cSfe3iGnBBM"
+}

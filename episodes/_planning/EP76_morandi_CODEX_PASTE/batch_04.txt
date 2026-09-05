@@ -1,0 +1,56 @@
+EP76_morandi — 画像発注 バッチ 4/15（8枚）
+区分: ACT_1 — THE SHEATH
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V025.png
+   [period traffic]  flags: D C
+   1960s Italian traffic on a new elevated motorway — small saloons and a single coach — seen from far enough away that no vehicle detail resolves
+
+2) V026.png
+   [white ground]  flags: I
+   a plain white ground with a single fine horizontal line ruled across it, evenly lit, nothing else in frame
+
+3) V027.png
+   [the tower against cloud]  flags: R D C
+   a concrete bridge tower ninety metres tall seen from below against flat grey cloud, four stays cutting away from its head
+
+4) V028.png
+   [the infill deck]  flags: R D U
+   a short simply supported concrete bridge deck sitting between two much larger structures, its six beams visible from beneath
+
+5) V029.png
+   [what is underneath]  flags: R D C
+   the underside of a motorway viaduct with a corrugated-roof factory directly below it, a railway line and a two-lane road all in the same frame
+
+6) V030.png
+   [the balcony]  flags: P R D C
+   a resident standing at the railing of a fourth-floor balcony in a Ligurian apartment block, washing on a line beside them, a motorway viaduct crossing a short distance away at the same height
+
+7) V031.png
+   [the strand, new]  flags: R I
+   macro of seven-wire steel prestressing strand, the helical lay of the wires bright and lightly oiled, lying on plain grey card
+
+8) V032.png
+   [the strand, later]  flags: R I
+   macro of the same seven-wire steel strand, rust-brown and deeply pitted, several outer wires reduced to half their thickness, lying on plain grey card

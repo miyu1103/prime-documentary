@@ -24,6 +24,7 @@ credentials/
 client_secret*.json
 *apps.googleusercontent.com.json
 episodes/*/05_visuals/raw/
+episodes/*/05_assets/ai_stills/
 episodes/*/06_audio/narration/raw/
 episodes/*/07_edit/cache/
 
@@ -46,3 +47,25 @@ remotion/public/
 /_demo/
 /_sdxl_test/
 /out/
+episodes/*/04_scenes/generated_images/
+episodes/*/08_edit/renders/
+
+# PD Visual System generated/local artifacts
+.pd-visual-system-backup_*/
+outputs/pd-visual-system/
+data/*.sqlite
+data/*.sqlite-*
+models/
+H:/pd-media/generated/
+H:/pd-media/previews/
+H:/pd-media/indexes/
+H:/pd-media/thumbnails/
+H:/pd-media/temp/
+
+# Pruned mirror of remotion/public used only for bundling (8.4 GB of copies).
+# Remotion copies the whole public dir into every bundle; the full 262 GB dir filled the disk,
+# so builds point at this subset instead. It is a derived artifact, never a source.
+remotion/public_min/
+
+# QC contact sheets and sampled frames: regenerable, thousands of files (2026-08-22)
+runs/qc/pool_frames/

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-008-carpenter",
+  "revision": "v005",
+  "generated_at": "2026-06-20T23:45:00+09:00",
+  "status": "thumbnail_selected_not_published",
+  "publish_performed": false,
+  "upload_performed": false,
+  "ai_disclosure_required": true,
+  "synthetic_content_disclosure_required": true,
+  "generator": "Local SDXL via A1111 + Codex/Pillow compositing; no upload",
+  "source_visuals": [
+    "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_thumbnail_v005\\carpenter_codex_style_phone_map_v005_a_seed932009.png"
+  ],
+  "recommended_shortlist": [
+    "thumbnail.sdxl_art.v005.png"
+  ],
+  "selected": "thumbnail.sdxl_art.v005.png",
+  "selection_reason": "Replaces v004's flat procedural look with richer generated background art, while keeping text accurate and thumbnail-readable.",
+  "options": [
+    {
+      "id": "sdxl_art_v005",
+      "file": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail.sdxl_art.v005.png",
+      "headline": "127 DAYS NO WARRANT",
+      "kicker": "PHONE LOCATION RECORDS",
+      "sha256": "2edbb9b38b5ac02e0c7d99381c446ec11dc942b0591afd7947189f6d9a57bec7",
+      "dimensions": "1280x720",
+      "assessment": "Selected. Richer, more cinematic background art; no people, no logos, no fake text; exact title text added in post."
+    }
+  ],
+  "supporting_assets": [
+    {
+      "file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_thumbnail_v005\\carpenter_codex_style_phone_map_v005_a_seed932009.png",
+      "sha256": "bcd9031d5600b10e2c0c9dcf8dbdbf9fc8a1b96eaf87663bdecbfbf8fd7ac88a",
+      "prompt_sha256": "6e0415f451479bdb5906f3beb7ffaf72119daec1ec15a6278f1f12496f28158b"
+    }
+  ],
+  "contact_sheet": {
+    "file": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_contact_sheet.v005.jpg",
+    "sha256": "2e71b4664b9252fa1a4c667df61d056c0480f3ff39a071cb537e8704892ba697"
+  }
+}

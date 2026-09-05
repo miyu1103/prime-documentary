@@ -1,0 +1,42 @@
+{
+ "_derived_from": "E:/pd-archive/_ledger/*.jsonl on 2026-09-05 13:45",
+ "_note": "resolve_item_licences.py rewrites its own output each run, so its verdict file under-reports once rows are applied. The ledger is the record.",
+ "by_source": {
+  "courtlistener": {
+   "still_held": 9
+  },
+  "coverr": {
+   "still_held": 4
+  },
+  "freesound": {
+   "resolved_usable": 5998,
+   "still_held": 2637
+  },
+  "ia": {
+   "still_held": 649,
+   "resolved_usable": 691,
+   "examined_refused": 457
+  },
+  "loc": {
+   "still_held": 2724
+  },
+  "nara": {
+   "resolved_usable": 2313,
+   "examined_refused": 379,
+   "still_held": 2
+  },
+  "nasa": {
+   "still_held": 6
+  },
+  "oyez": {
+   "still_held": 31
+  },
+  "smithsonian": {
+   "resolved_usable": 751
+  },
+  "wikimedia": {
+   "still_held": 47,
+   "resolved_usable": 5493
+  }
+ }
+}

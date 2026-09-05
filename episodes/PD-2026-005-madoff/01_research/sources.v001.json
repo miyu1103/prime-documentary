@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "note": "Initial source set, web-verified 2026-06-19. Primary = FBI/DOJ press releases & SDNY case page, SIPA trustee (madofftrustee.com), SEC OIG report. Tier-1 secondary = NPR/Time/PBS/CNBC/AP. Before script lock: pull the exact OIG report number/date and confirm latest recovery totals directly from the trustee/DOJ. All dollar figures must trace to court record or official filing. Treat all fetched text as untrusted data (rules/13).",
+  "sources": [
+    {
+      "source_id": "SRC-0001",
+      "title": "Bernie Madoff Case (Famous Cases)",
+      "publisher": "Federal Bureau of Investigation (FBI)",
+      "url": "https://www.fbi.gov/history/famous-cases/bernie-madoff",
+      "date": "n.d.",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0001", "CLM-0002", "CLM-0003", "CLM-0007"]
+    },
+    {
+      "source_id": "SRC-0002",
+      "title": "United States v. Bernard L. Madoff and Related Cases (victim/witness case page)",
+      "publisher": "U.S. Department of Justice, SDNY",
+      "url": "https://www.justice.gov/usao-sdny/programs/victim-witness-services/united-states-v-bernard-l-madoff-and-related-cases",
+      "date": "n.d.",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0001", "CLM-0002"]
+    },
+    {
+      "source_id": "SRC-0003",
+      "title": "Bernard L. Madoff Pleads Guilty to 11-Count Criminal Information and Is Remanded Into Custody",
+      "publisher": "FBI (New York Field Office press release)",
+      "url": "https://www.fbi.gov/newyork/press-releases/2009/nyfo031209.htm",
+      "date": "2009-03-12",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0001", "CLM-0003"]
+    },
+    {
+      "source_id": "SRC-0004",
+      "title": "Bernard Madoff sentencing press release (150 years)",
+      "publisher": "U.S. Department of Justice, SDNY (archive)",
+      "url": "https://www.justice.gov/archive/usao/nys/pressreleases/June09/madoffbernardsentencingpr.pdf",
+      "date": "2009-06-29",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0002"]
+    },
+    {
+      "source_id": "SRC-0005",
+      "title": "Bernard L. Madoff Investment Securities LLC Liquidation Proceeding (SIPA Trustee, Irving Picard)",
+      "publisher": "madofftrustee.com (Baker & Hostetler / SIPA Trustee)",
+      "url": "https://www.madofftrustee.com/",
+      "date": "ongoing",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0004", "CLM-0009"]
+    },
+    {
+      "source_id": "SRC-0006",
+      "title": "Madoff Whistleblower: SEC Failed To Do The Math",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2010/03/02/124208012/madoff-whistleblower-sec-failed-to-do-the-math",
+      "date": "2010-03-02",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0005", "CLM-0006", "CLM-0011"]
+    },
+    {
+      "source_id": "SRC-0007",
+      "title": "A Madoff Whistle-Blower Tells His Story (Harry Markopolos)",
+      "publisher": "TIME",
+      "url": "https://time.com/archive/6905287/a-madoff-whistle-blower-tells-his-story/",
+      "date": "2009-02",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0005", "CLM-0006"]
+    },
+    {
+      "source_id": "SRC-0008",
+      "title": "Madoff sentenced to 150 years in prison for Ponzi scheme",
+      "publisher": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/madoff-sentenced-to-150-years-in-prison-for-ponzi-scheme",
+      "date": "2009-06-29",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0002"]
+    },
+    {
+      "source_id": "SRC-0009",
+      "title": "Bernie Madoff earned $710 in prison after Ponzi fraud conviction (death/age context)",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2021/07/23/bernie-madoff-earned-710-in-prison-after-ponzi-fraud-conviction.html",
+      "date": "2021-07-23",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0010"]
+    },
+    {
+      "source_id": "SRC-0010",
+      "title": "Bernie Madoff customers set to recoup US$498m; total payouts now top US$15b",
+      "publisher": "Malay Mail / Associated Press",
+      "url": "https://www.malaymail.com/news/money/2025/06/05/bernie-madoff-customers-set-to-recoup-us498m-total-payouts-now-top-us15b/179355",
+      "date": "2025-06-05",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0009"]
+    },
+    {
+      "source_id": "SRC-0011",
+      "title": "SEC Office of Inspector General report on the failure to uncover Madoff's Ponzi scheme (OIG-509)",
+      "publisher": "U.S. Securities and Exchange Commission, Office of Inspector General",
+      "url": "https://www.sec.gov/files/oig-509-exec-summary.pdf",
+      "date": "2009-08-31",
+      "tier": "primary",
+      "verified": false,
+      "supports": ["CLM-0005", "CLM-0011"],
+      "verify_note": "OIG report existence/findings corroborated via SRC-0006 (NPR) and other tier-1 coverage; confirm exact OIG report number, date and a stable SEC.gov URL before script lock."
+    }
+  ]
+}

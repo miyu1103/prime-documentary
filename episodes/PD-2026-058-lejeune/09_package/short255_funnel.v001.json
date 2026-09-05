@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 255,
+  "episode_id": "PD-2026-058-lejeune",
+  "slug": "lejeune",
+  "loop": true,
+  "loop_join": "The final beat p25 is short255_01.png, a records aisle of unlabelled claim boxes, rewound under the FULL CASE card and held to the last frame. Frame 0 (p01) is that same plate, the same aisle of unlabelled claim boxes, so the loop closes on the identical picture the short opened on.",
+  "second_watch_detail": "A hand holding a folded cheque (p33) reads as an ordinary payment on the first pass; once L7 names Jose Vidana's non-Hodgkin's lymphoma settlement -- four hundred and five dollars, paid, case dismissed -- the same folded, unreadable cheque reads as hiding exactly how small the number inside it is.",
+  "funnel_question_left_for_longform": "What happens to four hundred and eight thousand claims when the court's October deadline passes?",
+  "funnel_long_title": "He Buried His Daughter at Nine. 408,000 Have Filed.",
+  "funnel_long_video_id": "J97Rh1qOTPA",
+  "description_line_1": "▶ FULL CASE: He Buried His Daughter at Nine. 408,000 Have Filed. | https://youtu.be/J97Rh1qOTPA",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "He Buried His Daughter at Nine.",
+    "ctaLongThumbSrc": "shorts/short255/short255_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What happens to four hundred and eight thousand claims when the court's October deadline passes? The full case is here: https://youtu.be/J97Rh1qOTPA",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments in remotion/src/data/short255.ts, the standing question from that file's header docstring, the CTA block from that same file, and the long-form video id from the now-live upload J97Rh1qOTPA. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

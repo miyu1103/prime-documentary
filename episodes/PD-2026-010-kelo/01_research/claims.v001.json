@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-010-kelo",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Kelo v. City of New London (2005) the Supreme Court held that a city's taking of private property to transfer to private developers as part of a comprehensive economic-development plan qualifies as a 'public use' under the Fifth Amendment's Takings Clause, reading 'public use' broadly as 'public purpose.'",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Stevens, J.), holding"
+      ],
+      "counterevidence": [
+        "O'Connor, J. and Thomas, J. dissented; the decision was 5-4."
+      ],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled that taking property for economic development counts as 'public use.'"
+      ],
+      "prohibited_wording": [
+        "The Court let the government take property for free.",
+        "The Court abolished property rights."
+      ],
+      "temporal_scope": "2005-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Kelo was decided on June 23, 2005 by a 5-4 vote; the majority opinion was by Justice John Paul Stevens (joined by Kennedy, Souter, Ginsburg, Breyer), Kennedy concurred, and Justices O'Connor (joined by Rehnquist, Scalia, Thomas) and Thomas dissented.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / vote / opinions"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In a 5-4 decision in 2005, Justice Stevens wrote for the Court; Justice O'Connor wrote the main dissent."
+      ],
+      "prohibited_wording": [
+        "The decision was unanimous.",
+        "The decision was 6-3."
+      ],
+      "temporal_scope": "2005",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/vote/lineup."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The Fifth Amendment allows the government to take private property for 'public use' if it pays just compensation; the dispute in Kelo was over the meaning of 'public use,' not over the amount of compensation.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, Takings Clause framing"
+      ],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "The government can take property for public use if it pays you; the fight was over what 'public use' means."
+      ],
+      "prohibited_wording": [
+        "The owners got nothing."
+      ],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Takings Clause; dispute was 'public use'."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The homes taken were in the Fort Trumbull neighborhood of New London, Connecticut, and were not blighted; the owners had done nothing wrong.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, facts (not-blighted, well-maintained properties)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The houses were in good condition; the owners had done nothing wrong."
+      ],
+      "prohibited_wording": [
+        "The neighborhood was a slum."
+      ],
+      "temporal_scope": "2000-2005",
+      "geographic_scope": "New London, Connecticut, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Not blighted — central to the unfairness."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "The city acted through the New London Development Corporation, a private nonprofit serving as the city's development agent, condemning the homes for a redevelopment plan intended to create jobs and tax revenue, tied to a new Pfizer research facility nearby.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Opinion, facts (NLDC, redevelopment plan, Pfizer)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.94,
+      "allowed_wording": [
+        "The city, through a nonprofit development agent, condemned the homes for a redevelopment plan tied to a new Pfizer facility."
+      ],
+      "prohibited_wording": [
+        "A private company seized the homes on its own."
+      ],
+      "temporal_scope": "1998-2005",
+      "geographic_scope": "New London, Connecticut, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "NLDC = city's development agent (phrase carefully); Pfizer tie-in is documented."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "The lead plaintiff was Susette Kelo, owner of a small renovated house known as the 'little pink house'; she and her neighbors were represented by the Institute for Justice.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0003",
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion caption",
+        "IJ case page (the 'little pink house')"
+      ],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "Susette Kelo's small pink house gave the case its name; the homeowners were represented by the Institute for Justice."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2000-2005",
+      "geographic_scope": "New London, Connecticut, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real person by role; 'little pink house' attributed."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "In dissent, Justice O'Connor warned that the ruling let government take property from one private owner to give to another, and that under it the words 'for public use' were effectively erased from the Takings Clause.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Dissent (O'Connor, J.)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Justice O'Connor warned the ruling let the state move property from one private owner to another, gutting 'public use.'"
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2005",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Dissent (balance); short quote public domain."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "The decision triggered a large, bipartisan public backlash, and in the years after it a large number of states — roughly forty or more, by the Institute for Justice's tally — passed laws or constitutional amendments restricting eminent domain for economic development, though many of those reforms were later criticized as weak.",
+      "importance": "context",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "IJ tally of post-Kelo state reforms"
+      ],
+      "counterevidence": [
+        "Reform quality varied; critics say many state laws had loopholes and changed little in practice."
+      ],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "The backlash was bipartisan; by IJ's count, roughly forty-plus states passed some reform, though many were criticized as weak."
+      ],
+      "prohibited_wording": [
+        "Every state banned economic-development takings."
+      ],
+      "temporal_scope": "2005-present",
+      "geographic_scope": "United States",
+      "units": "states",
+      "status": "approved",
+      "notes": "Use a RANGE (~40-plus) and ATTRIBUTE to IJ; note reforms varied in strength; bipartisan."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "The Fort Trumbull redevelopment largely failed: after the homes were demolished, the planned development was not built and the land sat largely vacant for years, and Pfizer closed its New London facility in 2009.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0002",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Documented aftermath (vacant site; Pfizer 2009 closure)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.86,
+      "allowed_wording": [
+        "The development was never built; the land sat empty, and Pfizer left New London in 2009."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2005-2011",
+      "geographic_scope": "New London, Connecticut, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The irony / payoff: the homes were taken for a plan that failed."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "Susette Kelo's house itself was not destroyed but was disassembled and relocated to another lot in downtown New London, preserved as a landmark (around 2008).",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "IJ: 'little pink house' relocation (2008)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "The pink house itself was saved — taken apart and moved to a new lot in downtown New London."
+      ],
+      "prohibited_wording": [
+        "Kelo still lives in the house."
+      ],
+      "temporal_scope": "2008",
+      "geographic_scope": "New London, Connecticut, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "House relocated/preserved; Kelos no longer live in it."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable hashes captured for 2/4 sources (SRC-0003,SRC-0004 blocked). CLM-0008 reform count is a range attributed to IJ; keep neutral/bipartisan."
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 280,
+  "episode_id": "PD-2026-069-hyatt",
+  "slug": "hyatt",
+  "loop": true,
+  "loop_join": "The final beat (p14, short280_14.png, cut comment H004) is the identical split-line drafting-table plate already used at p02 (short280_02.png, also H004) -- same asset, reused. It is rewound so its kenburns motion ends where that earlier beat's motion began, then held under the FULL CASE card to the last frame. When the loop restarts it lands on p01, the threaded-rod macro (H001), so the seam reads as a return toward the story's opening image rather than a hard cut to black.",
+  "second_watch_detail": "That drafting-table plate (p02/p14) shows one pencil-thin line splitting the paper down the middle. On the first pass it is just a technical drawing. Once L3-L4 have explained that one rod became two and nobody has established whose hand drew it, that single line is the exact edit the whole short is about.",
+  "funnel_question_left_for_longform": "On the drawing it looks like the same thing. What did the change actually do?",
+  "funnel_long_title": "One Rod Became Two. The Load on One Beam Doubled.",
+  "funnel_long_video_id": "R6IRqClVnLo",
+  "description_line_1": "▶ FULL CASE: One Rod Became Two. The Load on One Beam Doubled. | https://youtu.be/R6IRqClVnLo",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "One Rod Became Two.",
+    "ctaLongThumbSrc": "shorts/short280/short280_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "On the drawing it looks like the same thing. What did the change actually do? The full case is here: https://youtu.be/R6IRqClVnLo",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. The loop join and second-watch detail come from a direct visual check of remotion/public/shorts/short280/short280_02.png against short280_14.png (confirmed identical plate, both stamped H004 in remotion/src/data/short280.ts) plus the beat list and CTA block in that same file; the long-form id and title come from episodes/PD-2026-069-hyatt/09_package/youtube_schedule_result.v001.json. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

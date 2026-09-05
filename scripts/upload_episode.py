@@ -31,7 +31,7 @@ EPISODE_ID    = "PD-2026-001-miranda"
 EPISODE_DIR   = ROOT / "episodes" / EPISODE_ID
 META_PATH     = EPISODE_DIR / "09_package" / "youtube_meta.v003.json"
 APR_PATH      = EPISODE_DIR / "approvals" / "APR-0004.json"
-VIDEO_FILE    = Path(r"H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\sample_v021.mp4")
+VIDEO_FILE    = Path(r"E:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\sample_v021.mp4")
 EXPECTED_HASH = "20e926fb71c204ba40b5d6539f24d499b706cd820a215bc0b6d453758275d651"
 
 CHANNEL_ALLOWLIST = {"UCuQPtAz1rca9eJ4xhvX0yKA"}  # Prime Documentary (renamed from Japan 2026-06-15)

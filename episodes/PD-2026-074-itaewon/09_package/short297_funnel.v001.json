@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 297,
+  "episode_id": "PD-2026-074-itaewon",
+  "slug": "itaewon",
+  "loop": true,
+  "loop_join": "The final beat p14 (short297_14.png), the same street at three in the morning with three distant figures, is isCta and rewind:true so it plays backward under the FULL CASE card and holds on its last frame; frame 0 opens on p01 (short297_01.png), a closed bound statute volume with a blank spine, so the loop restarts from the unopened law the short is about to interpret.",
+  "second_watch_detail": "p07's empty filing counter and p12's blank noticeboard read as generic institutional stillness on the first pass; once L5 has stated that the regulations did not require any safety plan for an event with no organiser, the same empty counter and bare board read as paperwork that was never required to exist, not simply uncollected.",
+  "funnel_question_left_for_longform": "What is the sentence that replaced the definition - and why did it take fourteen months to write?",
+  "funnel_long_title": "A Street Fifty Metres Long Killed 159 People",
+  "funnel_long_video_id": "RFDPSfllbk0",
+  "description_line_1": "▶ FULL CASE: A Street Fifty Metres Long Killed 159 People | https://youtu.be/RFDPSfllbk0",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Street Fifty Metres Long Killed...",
+    "ctaLongThumbSrc": "shorts/short297/short297_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What is the sentence that replaced the definition - and why did it take fourteen months to write? The full case is here: https://youtu.be/RFDPSfllbk0",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for short297, a finished, rendered Short that had no machine-readable corridor to its episode. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments in remotion/src/data/short297.ts, the standing question from that file's LEAVES FOR THE LONG-FORM header (checked against short297_lines.v001.json -- 'sentence' is spoken but 'replaced', 'definition', 'fourteen', 'months' and 'write' are not, so the question stays open), the CTA block from the same file's hardcoded ctaLongTitle/ctaHeadline/ctaLongThumbSrc, and the long-form title/video id from episodes/PD-2026-074-itaewon/09_package/youtube_schedule_result.v001.json (video is a scheduled private upload). Layer 4 -- the Studio related-video setting, which the API cannot set -- now has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but the short itself is not yet uploaded, so the Studio action has NOT been performed yet."
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-012-arbitration",
+  "revision": "v001",
+  "generated_at": "2026-06-23T12:49:49.827439+00:00",
+  "status": "cleared_for_scheduled_publication",
+  "commercial_use": "allowed",
+  "publication_gate": "owner_approved_scheduled_publication",
+  "assertions": {
+    "script_claims_unchanged": true,
+    "claims_ledger_unchanged": true,
+    "no_real_person_likeness": true,
+    "no_judge_likeness_or_portraits": true,
+    "ai_visuals_symbolic_not_evidence": true,
+    "stock_visuals_symbolic_not_case_footage": true,
+    "critics_forced_arbitration_term_attributed": true,
+    "critics_defenders_balanced": true,
+    "commercial_ok_assets_only": true,
+    "elevenlabs_tts_owner_approved": true,
+    "external_upload_not_performed": false,
+    "youtube_upload_scheduled_by_owner_approval": true
+  },
+  "assets": [
+    {
+      "type": "final_render",
+      "file": "H:/pd-media/episodes/PD-2026-012-arbitration/08_edit/arbitration_premium_v001.mp4",
+      "sha256": "sha256:4cb8e5e9e67e36b118fd671a70c3b3e78e748562bbe08290d2d1b1514b4f7c0c"
+    },
+    {
+      "type": "narration",
+      "provider": "ElevenLabs",
+      "voice_id": "nPczCjzI2devNBz1zQrb",
+      "model_id": "eleven_multilingual_v2",
+      "license": "Paid TTS generated under owner approval for commercial channel use"
+    },
+    {
+      "type": "thumbnail_selected",
+      "file": "episodes/PD-2026-012-arbitration/09_package/thumbnail.selected.v001.png",
+      "sha256": "sha256:013171c838f4b1c8626437620a66e2620e6a2df8086d36b44ad4236bfcb7ed66"
+    },
+    {
+      "type": "captions",
+      "file": "episodes/PD-2026-012-arbitration/08_edit/captions.v001.srt",
+      "sha256": "sha256:19c9b691a968d372b796ab12a9fe9a1f713bbc2faa3f59357f8bbf20c68fd47a"
+    },
+    {
+      "type": "thumbnail_candidates",
+      "file": "episodes/PD-2026-012-arbitration/09_package/title_thumbnail_candidates.v001.json",
+      "sha256": "sha256:c16bbdbb268d5b2094eac324a94f1eb29e26ffe4935c54ff1eb4f5a9ed384acf"
+    }
+  ],
+  "publication_approval": "APR-0002",
+  "youtube_video_id": "1pox44KsaV8",
+  "scheduled_at_local": "2026-06-27T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-27T03:00:00Z",
+  "selected_thumbnail": "episodes/PD-2026-012-arbitration/09_package/thumbnail.selected.v002.png",
+  "thumbnail_sha256": "sha256:7d5825ec6606ee1091192d6f7e563497396e727534a56af68e720316f569756c",
+  "thumbnail_revision": "v002",
+  "thumbnail_candidates": "episodes/PD-2026-012-arbitration/09_package/thumbnail_candidates.v002.json"
+}

@@ -1,0 +1,61 @@
+EP67 ramirez — 画像発注 予備バッチ 5/6（5枚）
+区分: K · the letters going out, and the trial  [R139 – R143]
+
+★これは**予備**です。**生成してください。**本編の契約（mandatory_stills）には入って
+　いませんが、却下が出たときの差し替えと、ナレーションが伸びた場合の不足に備えます。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R139.png
+A plain mail-room bench photographed from a standing three-quarter angle: a wide grey worktop with a shallow open tray on it holding A TIGHT ROW OF IDENTICAL PLAIN WHITE ENVELOPES STANDING ON EDGE, all the same size, packed so their top edges make one straight unbroken line across the tray. EVERY ENVELOPE IS BLANK — no address, no window, no stamp, no franking mark. Hard even overhead light, a bare wall behind, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address blocks, window envelopes, stamps, franking, barcodes
+
+■ R140.png
+The feed tray of a plain grey mailing machine, photographed close from a low three-quarter angle, A STACK OF IDENTICAL BLANK WHITE ENVELOPES loaded into it with the topmost one just entering the rollers. EVERY ENVELOPE IS BLANK — no address, no window, no stamp, no franking mark — and the machine itself carries no maker's name and no control panel with readable icons. Even workshop light, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, address blocks, franking impression, brand name on the machine, panel icons
+
+■ R141.png
+A wall of identical small residential mailboxes in an apartment lobby, photographed square on so the grid of doors fills the whole frame: eight across and six down, every door shut, every one the same brushed aluminium with the same small keyhole and the same little name-card slot. ALL THE NAME SLOTS ARE EMPTY AND NO DOOR CARRIES A NUMBER. Even flat lobby light, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, box numbers, name cards, handwritten labels, junk mail sticking out, person
+
+■ R142.png
+A single bundle of identical plain white envelopes held together by a paper band, LYING ON ITS SIDE AND PUSHED TO ONE END of an otherwise completely empty grey counter, photographed from a low three-quarter angle so the bare counter runs away empty across the rest of the frame. Every envelope in the bundle is blank, AND THE PAPER BAND AROUND THEM IS BLANK TOO — no printing, no writing, no batch mark. Cool even light, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, printing on the band, batch number, address blocks, stamps, hand
+
+■ R143.png
+Six identical plain white paper cups left standing on a bare wooden table in a plain room at the end of a long day, photographed from a standing three-quarter angle: most upright, two knocked slightly askew, all of them empty and ALL OF THEM COMPLETELY UNMARKED with no printing, no logo and no writing on any cup. Nothing else on the table at all. Flat overhead light, nobody in the room Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, printing on the cups, logo, coffee shop branding, notepads, person
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R139.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

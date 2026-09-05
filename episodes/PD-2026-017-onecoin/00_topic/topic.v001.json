@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "topic_id": "TOP-20260627-017",
+  "subject": "OneCoin and Ruja Ignatova: how a cryptocurrency with no blockchain at all became one of the largest frauds in history, and how its 'queen' vanished",
+  "angle": "hidden system",
+  "central_question": "OneCoin had no blockchain — nothing to mine, nothing to verify, nothing there at all — yet it took in billions and its believers defended it hardest of all. Why does a lie that gives people hope outsell a truth that offers them nothing?",
+  "viewer_promise": "By the end, the viewer understands how an empty 'coin' spread across the world through belief and the fear of missing out, why the victims fought to protect it, why its founder is still on the FBI Most Wanted list — and why the same hunger lives in the viewer.",
+  "surprise": "There was no coin. The 'blockchain' was a fiction; the numbers were typed by hand. The deeper shock is that the believers were not stupid — they were us, afraid of being too late, and that fear is the vulnerability every con exploits.",
+  "stakes": "When does the hope of a second chance — the dream you 'missed Bitcoin' but could still get in — stop being optimism and become the reason you refuse to verify? The question under every promise that you are not too late.",
+  "target_audience": "English-speaking US general audience interested in scams, crypto, true crime, money, psychology, and how smart people get fooled",
+  "evergreen_horizon": "10y_plus",
+  "series_cluster": "fraud-and-belief",
+  "demand_evidence": [
+    "OneCoin / 'The Missing Cryptoqueen' is a globally proven viral subject (BBC podcast, worldwide press); a vanished FBI-Most-Wanted founder gives an irresistible mystery hook.",
+    "Crypto + true-crime + a still-unsolved disappearance = high CTR, broad (incl. younger) audience, and evergreen interest (the case remains open)."
+  ],
+  "competition": [
+    "Widely podcasted/reported, but few retellings turn it into a 30-min auteur short film whose FORM enacts the con (seduce -> believe -> nothing) and implicates the viewer's own FOMO rather than mocking victims."
+  ],
+  "differentiation": "Mid-feature (~30 min) as a single-arc art film: gold->white->black movements, second-person complicity, the 'empty ledger' motif, an unresolved ending (she is still out there). Honest, dignity-first, victims as the moral center, no real-person likeness.",
+  "research_feasibility": "High: U.S. DOJ indictment, FBI Most Wanted listing, multiple national-regulator warnings/actions, a technologist's account that no real blockchain existed, and extensive major-outlet/BBC reporting.",
+  "visual_feasibility": "High via symbolic AI imagery + factory crowd/finance/data b-roll + code graphics: a golden arena going empty, a blank glowing ledger, a coin with a hole, an MLM growth tree, a fabricated spreadsheet, a white airport vanishing. No real-person likeness (invariant 11).",
+  "scores": {
+    "demand": 19,
+    "clickability": 15,
+    "retention": 15,
+    "evergreen": 8,
+    "differentiation": 9,
+    "visual": 8,
+    "sources": 7,
+    "series": 4,
+    "monetization": 4,
+    "efficiency": 2,
+    "risk_deduction": -5,
+    "total": 86
+  },
+  "risk_class": "R3",
+  "risk_notes": [
+    "R3 — a living, charged-but-unconvicted fugitive (Ruja Ignatova) and named living associates. Pre-publish LEGAL REVIEW REQUIRED (cf. EP15 Theranos R3). Never assert guilt as fact; use 'alleged / charged / according to the U.S. indictment / regulators found'.",
+    "Dignity: victims (ordinary people who lost savings) are the moral center — no schadenfreude, no 'they were stupid'. Living victims/whistleblowers/technologists represented ONLY via documented public statements; no invented dialogue.",
+    "Ambiguity is artistic, not defamatory: leave the disappearance unresolved without implying unproven facts about associates' motives.",
+    "No real-person likeness or deepfake of Ruja or any associate (invariant 11). All AI visuals symbolic and disclosed; brand markings (OneCoin and others) kept non-specific.",
+    "MID format (~30 min) uses the new 'mid' duration profile in the validator (ADR-0008); do NOT silently weaken validation (invariant 15)."
+  ],
+  "estimated_cost_band": "medium",
+  "recommendation": "priority",
+  "kill_conditions": [
+    "Cannot sustain strict record-based neutrality on the living fugitive/associates through legal review; or the auteur structure cannot hold 30-min retention without sensationalizing victims; or core facts (no real blockchain; charges; disappearance) cannot be re-verified to primary records at publish time."
+  ],
+  "status": "approved"
+}

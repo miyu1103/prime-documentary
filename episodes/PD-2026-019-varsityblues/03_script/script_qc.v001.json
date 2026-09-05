@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-019-varsityblues",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 4558,
+    "est_duration_minutes_at_150wpm": 30.4,
+    "est_duration_minutes_at_173wpm_actual_voice": 26.3,
+    "target_profile": "mid (30:00 runtime; narration band 24.0-32.4 min @150wpm)",
+    "claim_link_consistency": "pass",
+    "risk_class": "R3"
+  },
+  "status": "pass",
+  "findings": [
+    "Narration sized at the MEASURED ElevenLabs pace (~173 wpm) to fill ~27 min; validator estimates at 150 wpm = 30.4 min, inside the mid band.",
+    "R3 wording locks applied (pleaded-guilty vs convicted; Loughlin/Giannulli money-laundering & bribery DISMISSED; Singer 3 charged->4 pleaded; counts date-qualified; universities=victims).",
+    "Durable source content hashes PENDING (DOJ pages bot-protected); non-blocking, capture before publish."
+  ]
+}

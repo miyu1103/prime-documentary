@@ -1,0 +1,56 @@
+EP82_valdez — 画像発注 バッチ 17/23（8枚）
+区分: ACT_4 / ENDING
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, ship name, funnel marking, company colour, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) V129.png
+   [V129]  flags: 
+   A wall of clocks in an operations room under bright strip lights, plain dials, no numerals
+
+2) V130.png
+   [V130]  flags: 
+   A modern tanker bridge in brilliant daylight, clean and empty, sea beyond the glass
+
+3) V131.png
+   [V131]  flags: 
+   A modern escort tug alongside a large vessel in bright daylight, plain hulls, no markings
+
+4) V132.png
+   [V132]  flags: 
+   A wide Alaskan sound in brilliant summer daylight, blue water, green shoreline, empty
+
+5) V133.png
+   [V133]  flags: 
+   Low view from the foot of a narrow ship's cabin bunk, a tightly folded grey blanket in the foreground, the empty pillow beneath a bright bulkhead reading lamp
+
+6) V134.png
+   [V134]  flags: 
+   The same bunk turned back and ready, the lamp still on, the cabin empty
+
+7) V135.png
+   [V135]  flags: 
+   A ship's alleyway with the lights on and every cabin door closed
+
+8) V136.png
+   [V136]  flags: 
+   Side-on close view of anonymous duty magnets aligned across a bare grey planning panel, a narrow overhead fluorescent fixture glaring into the lens

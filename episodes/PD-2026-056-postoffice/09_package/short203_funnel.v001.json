@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 203,
+  "episode_id": "PD-2026-056-postoffice",
+  "slug": "postoffice",
+  "loop": true,
+  "loop_join": "The final beat p25 is short203_01.png, the helpline handset on the counter, rewound through p24 (short203_02.png, the same counter at closing time) and p23 (short203_03.png, a sub-postmistress counting again) under the FULL CASE card and held to the last frame. Frame 0 is that same helpline-handset shot (p01), so the loop closes on the identical picture.",
+  "second_watch_detail": "That opening/closing shot of the helpline handset on the counter (p01/p25) reads as a mundane office object on the first pass; once L4 names the helpline's answer as 'the load-bearing lie,' the same handset reads as the source of the lie that trapped every sub-postmaster in the loop.",
+  "funnel_question_left_for_longform": "Who finally told the sub-postmasters, in writing, that they were not the only one, and how many years did that take?",
+  "funnel_long_title": "A Computer Invents a £2,000 Debt. Her Employer Prosecutes",
+  "funnel_long_video_id": "4FlCaOVpln0",
+  "description_line_1": "▶ FULL CASE: A Computer Invents a £2,000 Debt. Her Employer Prosecutes | https://youtu.be/4FlCaOVpln0",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Computer Invents a £2,000 Debt. Her",
+    "ctaLongThumbSrc": "shorts/short203/short203_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "Who finally told the sub-postmasters, in writing, that they were not the only one, and how many years did that take? The full case is here: https://youtu.be/4FlCaOVpln0",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments in remotion/src/data/short203.ts, the CTA block from that same file, and the long-form id/title from the live video (4FlCaOVpln0). Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet; the short is not yet uploaded so no real Studio edit link exists."
+}

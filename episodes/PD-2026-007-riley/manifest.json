@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-007-riley",
+  "topic_id": "TOP-20260620-007",
+  "slug": "riley",
+  "title_working": "Can the Police Search Your Phone?",
+  "state": "scheduled",
+  "risk_class": "R2",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "scene_plan": "v001",
+    "asset_plan": "v001",
+    "visual_bible": "v001",
+    "visual_qc_plan": "v001",
+    "rights_manifest": "v001",
+    "edit_manifest": "v002",
+    "firstcut_qc": "v002",
+    "thumbnail_candidates": "v001",
+    "thumbnail_qc": "v001",
+    "narration_index": "v001",
+    "narration_generation_script": "v001",
+    "final_build_script": "v001",
+    "captions_final": "v001",
+    "final_qc": "v001",
+    "final_contact_sheet": "v001",
+    "youtube_meta": "v001",
+    "final_delivery": "v001",
+    "final_render": "v001",
+    "youtube_schedule_result": "v001",
+    "youtube_captions_result": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-007-riley-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/03_script/script.annotated.v001.json",
+      "checksum": "sha256:a92cca5ff9ce45b023daedab3b886ff9cce8c645f33f640d61050a8e6d0a9bb7",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-scene-plan",
+      "artifact_type": "scene_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/04_scenes/scene_plan.v001.json",
+      "checksum": "sha256:e34718f3d46c19faf75c931f97487f69f7f13fbf20d0cdfabb557cc7c7f88366",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-asset-plan",
+      "artifact_type": "asset_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/04_scenes/asset_plan.v001.json",
+      "checksum": "sha256:311fbce91819c34a79a422f20579d75744ce6cab987c0a85c614cb6a08c2303e",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-visual-bible",
+      "artifact_type": "visual_bible",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/04_scenes/visual_bible.v001.json",
+      "checksum": "sha256:2e5df1ddfee330a69376ef8693c92b064164a091bd9817ba56b852aaaa82691f",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-visual-qc-plan",
+      "artifact_type": "visual_qc_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/04_scenes/visual_qc_plan.v001.md",
+      "checksum": "sha256:cce2148676cc5974eb351d0f81f2228da0fd269da1f3b39ae769ada23532a6c0",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-rights-manifest",
+      "artifact_type": "rights_manifest",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/09_package/rights_manifest.v001.json",
+      "checksum": "sha256:9caad29425f21de2e91d6ab48650fff74d8b2b818bae3c881dcb850287b55f82",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-edit-manifest",
+      "artifact_type": "edit_manifest",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_edit/edit_manifest.v001.json",
+      "checksum": "sha256:ea4b58ae6bb0dcf4d27673f603f6ea43d980463ca36b834ddbeaa7e42a27f954",
+      "status": "superseded",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-edit-manifest-v002",
+      "artifact_type": "edit_manifest",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_edit/edit_manifest.v002.json",
+      "checksum": "sha256:08c8e9f5012cf3c2f65f6b567222ef8621548ea578b99bf2f713ba2ef74ac28b",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-firstcut-visual-proxy-qc",
+      "artifact_type": "firstcut_qc",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_qc/firstcut_visual_proxy_qc.v001.md",
+      "checksum": "sha256:c1f59f10d7c7cf59ec3bbe6dbe496312cb3a70540c0b63afa88133f5283caec6",
+      "status": "superseded",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-firstcut-visual-proxy-qc-v002",
+      "artifact_type": "firstcut_qc",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_qc/firstcut_visual_proxy_qc.v002.md",
+      "checksum": "sha256:28822d41e286fbbf5756d28c674a4131b9e30c4b510a8ce4378aca81de343ea5",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-thumbnail-candidates",
+      "artifact_type": "thumbnail_candidates",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/09_package/thumbnail_candidates.v001.json",
+      "checksum": "sha256:792a1606df2403cdc22d885e2c0820b9a0b7ad6222717f3cdc0e4d06a25bcc22",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-thumbnail-qc",
+      "artifact_type": "thumbnail_qc",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_qc/thumbnail_qc.v001.md",
+      "checksum": "sha256:fa8b89ee44ab358491ec9a0e51fc56091d0658b9843cb7641d1549efa688e5cb",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-approval-APR-0002",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/approvals/APR-0002.json",
+      "checksum": "sha256:7f76c84084663e8c5eb49cf0c2c945d46313fbebabbd416a6a0a12297c5dfb4c",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-narration-generation-script",
+      "artifact_type": "narration_generation_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/gen_narration_riley.py",
+      "checksum": "sha256:7cd56d474074cf9bac2243c62665dba985c5b119946a9ee6cde5907e2a8ed9e8",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-final-build-script",
+      "artifact_type": "final_build_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/build_riley_final_v001.py",
+      "checksum": "sha256:0dccc9daa1c1eb6e8881e79162d053b741231e34316b9a9606d31dcbf2d15b4e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-narration-index",
+      "artifact_type": "narration_index",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/06_audio/narration_index.v001.json",
+      "checksum": "sha256:c96022758b4006596ba7d3c7de7fcfd9db6d2813f97058fa01c0d582f9159146",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-captions-final",
+      "artifact_type": "captions",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_edit/captions.final.v001.srt",
+      "checksum": "sha256:968a21ca8b388dafa2106d58ed620ec932842e82ccfdafe761fe1bb2aadbf85e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-final-qc",
+      "artifact_type": "qc_report",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_edit/renders/final.v001.qc.json",
+      "checksum": "sha256:ac656d62420501c2768a07915c27e2cb049262779b79e1982fd5acd1e6e6b774",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-final-contact-sheet",
+      "artifact_type": "qc_contact_sheet",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_edit/renders/final.v001.contact_sheet.jpg",
+      "checksum": "sha256:507011bdc56788483bbe96918237f1f8ec48c921353c5ad47b1726eae3e2877a",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-youtube-meta",
+      "artifact_type": "youtube_metadata",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/09_package/youtube_meta.v001.json",
+      "checksum": "sha256:c1ec86c0ee1e551c1ae7cdc21a4ce56f6b4c9ceee64e52cf9a8f3d9f4f853eba",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-final-delivery",
+      "artifact_type": "final_delivery_manifest",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/09_package/final_delivery.v001.json",
+      "checksum": "sha256:9cb96b03ce4f8dfdcc5655527d2a1b145910488125ef23a7d0aa0a7fecf4439e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-final-render",
+      "artifact_type": "final_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_edit/riley_final_v001.mp4",
+      "checksum": "sha256:ca595294db079a42a408543a83a7aee79a34348ada70494071560e97bb2ee3fe",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-approval-APR-0003",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/approvals/APR-0003.json",
+      "checksum": "sha256:af8b4f2ea287acac61c3fc7164f69ae39049f118a7be8ec452fcf649a0cbfd16",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-youtube-schedule-result",
+      "artifact_type": "youtube_schedule_result",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/09_package/youtube_schedule_result.v001.json",
+      "checksum": "sha256:53d8f1e1f237b60d963064f0dca05429c712f8a547b5d233a5523b14371eeeac",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-youtube-captions-result",
+      "artifact_type": "youtube_captions_result",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/09_package/youtube_captions_result.v001.json",
+      "checksum": "sha256:3a7ef66970f3ad51df215f0b99984e9d4ea035754993c84c7756dee1dc7a40f1",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001",
+    "APR-0002",
+    "APR-0003"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 2.66,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 2.66,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Package-ready local final render created with ElevenLabs narration under APR-0002, then privately uploaded and scheduled under APR-0003.",
+    "Title/thumbnail selected: The Supreme Court Case That Put a Warrant on Your Phone + PD-2026-007-THUMB-001.",
+    "Final render uses symbolic AI reconstructions and motion graphics; YouTube synthetic-content disclosure is required/declared.",
+    "Caption timing is derived from ElevenLabs chunk timings, not Whisper word-level forced alignment.",
+    "YouTube private upload completed and scheduled under APR-0003: video_id ODCh4-UelI4, public release 2026-06-22T12:00:00+09:00."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-20T00:00:00+09:00",
+  "updated_at": "2026-06-20T15:04:11.498419+00:00",
+  "video_id": "ODCh4-UelI4",
+  "video_url": "https://youtu.be/ODCh4-UelI4"
+}

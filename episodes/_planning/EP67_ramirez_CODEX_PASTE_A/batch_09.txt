@@ -1,0 +1,66 @@
+EP67 ramirez — 画像発注 バッチ 9/18（7枚）
+区分: B · the identifiers that were never compared  [R061 – R067]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R061.png
+A paper wall calendar hanging on a plain painted wall, photographed square on from six feet away with the focus set on the wall beside it so THE CALENDAR ITSELF IS OUT OF FOCUS: its month grid reads only as a soft blur of pale squares and grey smudges, with no digits, no month name and no weekday letters resolvable anywhere on it. Even daylight from the left, the wall bare around it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, readable numbers, month name, weekday letters, sharp calendar, photograph on the calendar
+
+■ R062.png
+A desk nameplate standing on a plain desk, photographed close and square on at desk height, filling the middle of the frame: a plain brushed brass plate in a plain dark wooden holder, ITS FACE COMPLETELY BLANK — bare brushed metal with a soft directional grain and one shallow reflection running along it, and no engraving, no name, no title, no lettering, no logo. The desk beyond it is empty and soft Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, engraved name, job title, initials, logo on the plate
+
+■ R063.png
+A single plain filing card HELD LIGHTLY BETWEEN THE TIPS OF A THUMB AND A FOREFINGER at the bottom corner, the rest of the hand out of the frame, the card standing upright and filling the middle of the picture, front on. THE CARD IS COMPLETELY BLANK — no ruling, no printing, no writing, no tab, no punch hole. The two visible digits are clearly separate, each with its own nail and its own shadow on the card. Soft even light, dark soft background Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, writing on the card, ruled lines, index tab
+
+■ R064.png
+A wall of small identical wooden index drawers filling the entire frame, photographed square on and lit from the left: eight rows by twelve columns of the same little drawer front, each with the same plain brass cup handle and the same empty brass label holder above it, and EVERY LABEL HOLDER IS EMPTY — bare metal frames with no cards and no writing in any of them. The wood is worn pale at the handles Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, cards in the label holders, letters on the drawers, alphabet dividers, numbers
+
+■ R065.png
+A bank of identical grey server cabinets in a cold windowless room, photographed straight down the aisle between two rows at eye height: perforated dark doors in a long repeating rank, a hard even overhead light, a bare raised floor. The status lights on the cabinets are SOFT UNRESOLVED SPECKS OF GREEN AND AMBER with no pattern that could be read, and there are no maker's marks, no rack labels and no printed asset tags anywhere Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, rack labels, asset tags, brand logo on the cabinets, blue neon glow
+
+■ R066.png
+A close, very shallow-focus still of the cut ends of a bundle of fibre optic cables, the polished ferrules catching small hard points of light, the bundle running out of the bottom of the frame and everything behind it dissolved into a soft dark wash. No connectors with printing, no cable labels, no colour-coded tags with writing. Cool light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, cable labels, printed connectors, neon blue grade, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface
+
+■ R067.png
+A computer monitor seen square on from the front in a dim room, THE ENTIRE SCREEN A SINGLE FIELD OF SOFT EVEN PALE LIGHT with no content on it whatsoever: no window, no cursor, no icon, no line of text, no menu bar, no reflection of a room. The bezel is plain matte black with no maker's mark. The light from the screen falls on a bare desk in front of it. Nobody in frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, desktop icons, reflection of a person, brand logo on the bezel
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R061.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

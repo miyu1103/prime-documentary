@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-060-surfside",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "out\\surfside_probe_slice.mp4",
+  "slice_seconds": 90.07,
+  "slice_sha256": "sha256:7eb15b10d9b5eda1fa241d4742ae31e895431b4920c36dd2d2d3e63f2f0c90fb",
+  "film_sha256": "sha256:cba8d14b123bb154f2ef126c8582717a0cc2eaf9a081277ff39716d1e36cfe1c",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 47.7 / p10 45.3 / p50 46.6 (2046 frames, 464 cuts masked +/-8f; 7 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-08-03T17:57:23.806276+00:00"
+}

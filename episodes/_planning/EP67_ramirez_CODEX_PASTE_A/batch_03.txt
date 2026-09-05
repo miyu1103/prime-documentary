@@ -1,0 +1,66 @@
+EP67 ramirez — 画像発注 バッチ 3/18（7枚）
+区分: A2 · the two mailings  [R018 – R024]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R018.png
+A plain white business envelope lying FACE DOWN on a bare wooden kitchen table, photographed from a low three-quarter angle a foot away, ONE CORNER OF THE FLAP LIFTED SLIGHTLY AND STANDING PROUD of the table so it catches the light. Low warm morning sun comes across the table from the left and lays the envelope's own shadow to the right. The envelope is entirely unmarked: no address, no window, no stamp, no franking, no return corner, no printing on the flap. The lower third of the frame — the bare table in front of the envelope — is the brightest part of the picture Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address block, postage stamp, franking mark, window envelope, return address, barcode
+
+■ R019.png
+The same plain white envelope on the same bare wooden kitchen table in the same morning light, now lying FACE UP AND FLAT, sealed, its front a completely empty white rectangle: no address, no name, no window, no stamp, no franking, no printing of any kind on it. Same low three-quarter angle, same distance, the table grain running away to the right Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address block, postage stamp, franking mark, window envelope, barcode
+
+■ R020.png
+TWO plain white envelopes lying side by side and slightly overlapping on the same bare wooden kitchen table, ONE CLEARLY LARGER AND DEEPER THAN THE OTHER so the difference in size is the subject of the picture, both face up and both completely blank — no address, no window, no stamp, no franking, no printing at all on either. Morning light from the left, seen from a low three-quarter angle Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address block, postage stamp, window envelope, franking, barcode
+
+■ R021.png
+A plain white envelope lying on a wooden kitchen table with its flap TORN RAGGEDLY OPEN along the top edge, the torn paper fibres standing up along the tear, the mouth of the envelope gaping slightly but ANGLED AWAY FROM THE CAMERA SO NOTHING INSIDE IT CAN BE SEEN — the interior is a flat dark gap. The envelope's face is blank. Morning light from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, contents visible, letter emerging, address block, stamp
+
+■ R022.png
+A single sheet of paper, folded in three and lying open-side-down across the envelope it came out of, on a bare wooden kitchen table, photographed from overhead. The paper carries no writing of any kind, and this is what is on it instead: EVENLY SPACED FLAT GREY HORIZONTAL BARS of one uniform width and one uniform weight, laid in parallel like ruled bands of tone, each bar a solid unbroken block of soft grey with straight ends and no letter shapes, no word shapes, no gaps between words and no broken or ragged edge anywhere along it, so the sheet reads as printed matter purely by its rhythm of grey and white and carries not one readable character. The envelope beneath it is blank. Morning light from the left, the fold creases catching a soft highlight Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, printed paragraphs, headings, bullet points, letterhead, signature
+
+■ R023.png
+A stack of three folded sheets of paper lying on a wooden table, photographed from a very low angle almost level with the table so that ONLY THE FOLDED EDGES AND THE THICKNESS OF THE STACK ARE VISIBLE and no printed face of any sheet is turned toward the camera: the picture is three pale horizontal bands of paper edge with fine shadow between them. Morning light from the left, everything beyond the stack soft Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, printed face visible, text on the edge, page numbers
+
+■ R024.png
+A domestic letter slot seen from INSIDE a house, on the inside face of a painted front door, at chest height and square on: the sprung brass flap is pushed up and one plain white envelope is halfway through it, held in the slot, about to drop. The envelope's visible face is completely blank. The door is plain painted timber with no numbers, no nameplate and no notice on it. Cool daylight leaking round the door edge Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, house numbers on the door, nameplate, address on the envelope, junk mail, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R018.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

@@ -1,0 +1,410 @@
+[
+ {
+  "_comment": "EP76 morandi. Migrated 2026-08-22 from scripts/write_morandi_sound_plan.py by the main thread (invariant 14). The rule list is byte-identical to the one that produced this episode's verified cue plan; nothing was retuned during the move.",
+  "needle": "__doc__",
+  "kind": "click",
+  "anchor": "__doc__"
+ },
+ {
+  "_comment": "EP76 morandi. Migrated 2026-08-22 from scripts/write_morandi_sound_plan.py by the main thread (invariant 14). The rule list is byte-identical to the one that produced this episode's verified cue plan; nothing was retuned during the move.",
+  "needle": "__doc__",
+  "kind": "click",
+  "anchor": "__doc__"
+ },
+ {
+  "needle": "hammer",
+  "kind": "tick",
+  "anchor": "hammer",
+  "_kind_before": "tap"
+ },
+ {
+  "needle": "torch",
+  "kind": "click",
+  "anchor": "torch"
+ },
+ {
+  "needle": "gantry",
+  "kind": "metallic",
+  "anchor": "gantry",
+  "_kind_before": "metal groan"
+ },
+ {
+  "needle": "walkway",
+  "kind": "footstep",
+  "anchor": "walkway"
+ },
+ {
+  "needle": "hatch",
+  "kind": "metallic",
+  "anchor": "hatch",
+  "_kind_before": "metal"
+ },
+ {
+  "needle": "chamber",
+  "kind": "cloth",
+  "anchor": "chamber",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "soffit",
+  "kind": "cloth",
+  "anchor": "soffit",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "bolt",
+  "kind": "metallic",
+  "anchor": "bolt",
+  "_kind_before": "metal"
+ },
+ {
+  "needle": "drill",
+  "kind": "mechanical",
+  "anchor": "drill",
+  "_kind_before": "drill"
+ },
+ {
+  "needle": "core",
+  "kind": "mechanical",
+  "anchor": "core",
+  "_kind_before": "drill"
+ },
+ {
+  "needle": "grout",
+  "kind": "mechanical",
+  "anchor": "grout",
+  "_kind_before": "pump"
+ },
+ {
+  "needle": "strand",
+  "kind": "metallic",
+  "anchor": "strand",
+  "_kind_before": "wire"
+ },
+ {
+  "needle": "cable",
+  "kind": "metallic",
+  "anchor": "cable",
+  "_kind_before": "wire"
+ },
+ {
+  "needle": "steel",
+  "kind": "metallic",
+  "anchor": "steel",
+  "_kind_before": "metal"
+ },
+ {
+  "needle": "concrete",
+  "kind": "thud",
+  "anchor": "concrete",
+  "_kind_before": "stone"
+ },
+ {
+  "needle": "rust",
+  "kind": "thud",
+  "anchor": "rust",
+  "_kind_before": "stone"
+ },
+ {
+  "needle": "traffic",
+  "kind": "pass-by",
+  "anchor": "traffic"
+ },
+ {
+  "needle": "motorway",
+  "kind": "pass-by",
+  "anchor": "motorway"
+ },
+ {
+  "needle": "carriageway",
+  "kind": "pass-by",
+  "anchor": "carriageway"
+ },
+ {
+  "needle": "lorry",
+  "kind": "pass-by",
+  "anchor": "lorry"
+ },
+ {
+  "needle": "vehicle",
+  "kind": "pass-by",
+  "anchor": "vehicle"
+ },
+ {
+  "needle": "driving",
+  "kind": "pass-by",
+  "anchor": "driving"
+ },
+ {
+  "needle": "drove",
+  "kind": "pass-by",
+  "anchor": "drove"
+ },
+ {
+  "needle": "viaduct",
+  "kind": "swoosh",
+  "anchor": "viaduct",
+  "_kind_before": "wind"
+ },
+ {
+  "needle": "valley",
+  "kind": "swoosh",
+  "anchor": "valley",
+  "_kind_before": "wind"
+ },
+ {
+  "needle": "tower",
+  "kind": "swoosh",
+  "anchor": "tower",
+  "_kind_before": "wind"
+ },
+ {
+  "needle": "antenna",
+  "kind": "swoosh",
+  "anchor": "antenna",
+  "_kind_before": "wind"
+ },
+ {
+  "needle": "rain",
+  "kind": "rustle",
+  "anchor": "rain",
+  "_kind_before": "rain"
+ },
+ {
+  "needle": "water",
+  "kind": "swoosh",
+  "anchor": "water",
+  "_kind_before": "water"
+ },
+ {
+  "needle": "drainage",
+  "kind": "swoosh",
+  "anchor": "drainage",
+  "_kind_before": "water"
+ },
+ {
+  "needle": "harbour",
+  "kind": "low boom",
+  "anchor": "harbour",
+  "_kind_before": "harbour"
+ },
+ {
+  "needle": "port",
+  "kind": "low boom",
+  "anchor": "port",
+  "_kind_before": "harbour"
+ },
+ {
+  "needle": "crane",
+  "kind": "low boom",
+  "anchor": "crane",
+  "_kind_before": "harbour"
+ },
+ {
+  "needle": "form",
+  "kind": "page turn",
+  "anchor": "form"
+ },
+ {
+  "needle": "sheet",
+  "kind": "page turn",
+  "anchor": "sheet"
+ },
+ {
+  "needle": "manual",
+  "kind": "page turn",
+  "anchor": "manual"
+ },
+ {
+  "needle": "report",
+  "kind": "page turn",
+  "anchor": "report"
+ },
+ {
+  "needle": "document",
+  "kind": "rustle",
+  "anchor": "document"
+ },
+ {
+  "needle": "file",
+  "kind": "rustle",
+  "anchor": "file"
+ },
+ {
+  "needle": "binder",
+  "kind": "rustle",
+  "anchor": "binder"
+ },
+ {
+  "needle": "archive",
+  "kind": "rustle",
+  "anchor": "archive"
+ },
+ {
+  "needle": "note",
+  "kind": "rustle",
+  "anchor": "note"
+ },
+ {
+  "needle": "letter",
+  "kind": "rustle",
+  "anchor": "letter"
+ },
+ {
+  "needle": "score",
+  "kind": "tick",
+  "anchor": "score",
+  "_kind_before": "pen"
+ },
+ {
+  "needle": "wrote",
+  "kind": "tick",
+  "anchor": "wrote",
+  "_kind_before": "pen"
+ },
+ {
+  "needle": "written",
+  "kind": "tick",
+  "anchor": "written",
+  "_kind_before": "pen"
+ },
+ {
+  "needle": "entered",
+  "kind": "tick",
+  "anchor": "entered",
+  "_kind_before": "pen"
+ },
+ {
+  "needle": "signed",
+  "kind": "stamp",
+  "anchor": "signed"
+ },
+ {
+  "needle": "approved",
+  "kind": "stamp",
+  "anchor": "approved"
+ },
+ {
+  "needle": "validated",
+  "kind": "stamp",
+  "anchor": "validated"
+ },
+ {
+  "needle": "stamp",
+  "kind": "stamp",
+  "anchor": "stamp"
+ },
+ {
+  "needle": "committee",
+  "kind": "upholstery",
+  "anchor": "committee",
+  "_kind_before": "chair"
+ },
+ {
+  "needle": "meeting",
+  "kind": "upholstery",
+  "anchor": "meeting",
+  "_kind_before": "chair"
+ },
+ {
+  "needle": "session",
+  "kind": "upholstery",
+  "anchor": "session",
+  "_kind_before": "chair"
+ },
+ {
+  "needle": "room",
+  "kind": "cloth",
+  "anchor": "room",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "corridor",
+  "kind": "footstep",
+  "anchor": "corridor"
+ },
+ {
+  "needle": "office",
+  "kind": "cloth",
+  "anchor": "office",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "desk",
+  "kind": "cloth",
+  "anchor": "desk",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "court",
+  "kind": "cloth",
+  "anchor": "court",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "tribunal",
+  "kind": "cloth",
+  "anchor": "tribunal",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "judgment",
+  "kind": "cloth",
+  "anchor": "judgment",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "verdict",
+  "kind": "cloth",
+  "anchor": "verdict",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "trial",
+  "kind": "cloth",
+  "anchor": "trial",
+  "_kind_before": "room tone"
+ },
+ {
+  "needle": "deck",
+  "kind": "thud",
+  "anchor": "deck",
+  "_added": "2026-08-24: density margin -- the plan passed at 2.008/min against a floor of 2.0, which one shifted beat would break."
+ },
+ {
+  "needle": "pier",
+  "kind": "thud",
+  "anchor": "pier",
+  "_added": "2026-08-24: density margin -- the plan passed at 2.008/min against a floor of 2.0, which one shifted beat would break."
+ },
+ {
+  "needle": "bridge",
+  "kind": "low boom",
+  "anchor": "bridge",
+  "_added": "2026-08-24: density margin -- the plan passed at 2.008/min against a floor of 2.0, which one shifted beat would break."
+ },
+ {
+  "needle": "inspection",
+  "kind": "page turn",
+  "anchor": "inspection",
+  "_added": "2026-08-24: density margin -- the plan passed at 2.008/min against a floor of 2.0, which one shifted beat would break."
+ },
+ {
+  "needle": "record",
+  "kind": "rustle",
+  "anchor": "record",
+  "_added": "2026-08-24: density margin -- the plan passed at 2.008/min against a floor of 2.0, which one shifted beat would break."
+ },
+ {
+  "needle": "court",
+  "kind": "stamp",
+  "anchor": "court",
+  "_added": "2026-08-24: density margin -- the plan passed at 2.008/min against a floor of 2.0, which one shifted beat would break."
+ },
+ {
+  "needle": "contract",
+  "kind": "stamp",
+  "anchor": "contract",
+  "_added": "2026-08-24: density margin -- the plan passed at 2.008/min against a floor of 2.0, which one shifted beat would break."
+ }
+]

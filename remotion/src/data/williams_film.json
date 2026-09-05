@@ -1,0 +1,4389 @@
+{
+  "episode_id": "PD-2026-036-williams",
+  "fps": 30,
+  "_estimation_note": "MEASURED. Timing is stamped from the ElevenLabs master narration (episodes/PD-2026-036-williams/06_audio/narration_index.v001.json, 106 chunks, generated_seconds=613.707); the body timeline equals the master timeline [0, T]. cuts are a per-span grid keyed to real chunk offsets: image cuts reference the planned Codex hero stills williams/img/PD-2026-036-<heroId>-IMG-001.png (generated separately; intentionally absent here, referenced by name only), and 43 factory b-roll cuts (kind:'footage', src williams/factory/<file>) from broll_selection.v001.json are injected into their assigned span windows, each used exactly once (footage_diversity/arc_nonrepeat). captions are the forced-aligned verbatim SRT (captions.v002.srt, 284 cues). The 16 figure beats and graphics are carried over verbatim from the skeleton and re-timed onto their real span windows (no fabricated on-screen numbers). Built by scripts/build_williams_film.py.",
+  "narration": "williams/narration.mp3",
+  "narrationSeconds": 613.707,
+  "hookSeconds": 8.04,
+  "hookLine": "A blurry photo. A computer's guess. A knock at your door — arrested for a crime you did not commit.",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "hook-0.0"
+    },
+    {
+      "start": 1.34,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "hook-1.34"
+    },
+    {
+      "start": 2.68,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "hook-2.68"
+    },
+    {
+      "start": 4.02,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "hook-4.02"
+    },
+    {
+      "start": 5.36,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "hook-5.36"
+    },
+    {
+      "start": 6.7,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "hook-6.7"
+    }
+  ],
+  "cuts": [
+    {
+      "start": 0.0,
+      "dur": 1.258,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-25521__city_surveillance_camera_dome.mp4",
+      "seed": "williams-0",
+      "treatment": "footage"
+    },
+    {
+      "start": 1.258,
+      "dur": 1.554,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-1",
+      "treatment": "bleed"
+    },
+    {
+      "start": 2.812,
+      "dur": 1.924,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-2",
+      "treatment": "bleed"
+    },
+    {
+      "start": 4.736,
+      "dur": 1.332,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-21735__cctv_monitor_grid_wall.mp4",
+      "seed": "williams-3",
+      "treatment": "footage"
+    },
+    {
+      "start": 6.068,
+      "dur": 1.702,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-4",
+      "treatment": "bleed"
+    },
+    {
+      "start": 7.77,
+      "dur": 1.182,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-5",
+      "treatment": "bleed"
+    },
+    {
+      "start": 8.952,
+      "dur": 2.128,
+      "kind": "footage",
+      "src": "williams/factory/AF-LOOP-0223__abstract_network_nodes_loop.mp4",
+      "seed": "williams-6",
+      "treatment": "footage"
+    },
+    {
+      "start": 11.08,
+      "dur": 1.685,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-7",
+      "treatment": "depth"
+    },
+    {
+      "start": 12.765,
+      "dur": 2.483,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-8",
+      "treatment": "bleed"
+    },
+    {
+      "start": 15.248,
+      "dur": 1.774,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-9",
+      "treatment": "depth"
+    },
+    {
+      "start": 17.022,
+      "dur": 1.508,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-10",
+      "treatment": "bleed"
+    },
+    {
+      "start": 18.53,
+      "dur": 1.951,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-11",
+      "treatment": "depth"
+    },
+    {
+      "start": 20.481,
+      "dur": 1.508,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-12",
+      "treatment": "bleed"
+    },
+    {
+      "start": 21.989,
+      "dur": 1.862,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-13",
+      "treatment": "depth"
+    },
+    {
+      "start": 23.851,
+      "dur": 2.306,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-14",
+      "treatment": "bleed"
+    },
+    {
+      "start": 26.157,
+      "dur": 1.596,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-15",
+      "treatment": "depth"
+    },
+    {
+      "start": 27.753,
+      "dur": 2.039,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-16",
+      "treatment": "bleed"
+    },
+    {
+      "start": 29.792,
+      "dur": 1.299,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-1675__suburban_house_exterior_night.mp4",
+      "seed": "williams-17",
+      "treatment": "footage"
+    },
+    {
+      "start": 31.091,
+      "dur": 1.948,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-18",
+      "treatment": "depth"
+    },
+    {
+      "start": 33.039,
+      "dur": 1.542,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-19",
+      "treatment": "focus"
+    },
+    {
+      "start": 34.581,
+      "dur": 2.273,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-20",
+      "treatment": "depth"
+    },
+    {
+      "start": 36.854,
+      "dur": 1.624,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-21",
+      "treatment": "scan"
+    },
+    {
+      "start": 38.478,
+      "dur": 1.38,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-22",
+      "treatment": "depth"
+    },
+    {
+      "start": 39.858,
+      "dur": 1.786,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-21905__american_suburb_aerial.mp4",
+      "seed": "williams-23",
+      "treatment": "footage"
+    },
+    {
+      "start": 41.644,
+      "dur": 1.38,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-24",
+      "treatment": "focus"
+    },
+    {
+      "start": 43.024,
+      "dur": 1.705,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-25",
+      "treatment": "depth"
+    },
+    {
+      "start": 44.729,
+      "dur": 2.111,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-26",
+      "treatment": "scan"
+    },
+    {
+      "start": 46.84,
+      "dur": 1.461,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-27",
+      "treatment": "depth"
+    },
+    {
+      "start": 48.301,
+      "dur": 1.867,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-28",
+      "treatment": "focus"
+    },
+    {
+      "start": 50.168,
+      "dur": 1.299,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-9059__rural_road_america.mp4",
+      "seed": "williams-29",
+      "treatment": "footage"
+    },
+    {
+      "start": 51.467,
+      "dur": 1.948,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-30",
+      "treatment": "depth"
+    },
+    {
+      "start": 53.415,
+      "dur": 1.542,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-31",
+      "treatment": "scan"
+    },
+    {
+      "start": 54.957,
+      "dur": 2.273,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-32",
+      "treatment": "depth"
+    },
+    {
+      "start": 57.23,
+      "dur": 1.624,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-33",
+      "treatment": "focus"
+    },
+    {
+      "start": 58.854,
+      "dur": 1.38,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-34",
+      "treatment": "depth"
+    },
+    {
+      "start": 60.234,
+      "dur": 1.786,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-26608__person_at_window_silhouette_night.mp4",
+      "seed": "williams-35",
+      "treatment": "footage"
+    },
+    {
+      "start": 62.02,
+      "dur": 1.38,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-36",
+      "treatment": "scan"
+    },
+    {
+      "start": 63.4,
+      "dur": 1.705,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-37",
+      "treatment": "depth"
+    },
+    {
+      "start": 65.105,
+      "dur": 2.111,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-38",
+      "treatment": "focus"
+    },
+    {
+      "start": 67.216,
+      "dur": 1.461,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-39",
+      "treatment": "depth"
+    },
+    {
+      "start": 68.677,
+      "dur": 1.867,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-40",
+      "treatment": "scan"
+    },
+    {
+      "start": 70.544,
+      "dur": 1.297,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-41",
+      "treatment": "depth"
+    },
+    {
+      "start": 71.841,
+      "dur": 1.948,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-23410__police_interrogation_room_empty.mp4",
+      "seed": "williams-42",
+      "treatment": "footage"
+    },
+    {
+      "start": 73.789,
+      "dur": 1.542,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-43",
+      "treatment": "depth"
+    },
+    {
+      "start": 75.331,
+      "dur": 2.272,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-44",
+      "treatment": "focus"
+    },
+    {
+      "start": 77.603,
+      "dur": 1.623,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-45",
+      "treatment": "scan"
+    },
+    {
+      "start": 79.226,
+      "dur": 1.38,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-46",
+      "treatment": "depth"
+    },
+    {
+      "start": 80.606,
+      "dur": 1.785,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-47",
+      "treatment": "focus"
+    },
+    {
+      "start": 82.391,
+      "dur": 1.38,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-48",
+      "treatment": "scan"
+    },
+    {
+      "start": 83.771,
+      "dur": 1.704,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-23557__one_way_mirror_room.mp4",
+      "seed": "williams-49",
+      "treatment": "footage"
+    },
+    {
+      "start": 85.475,
+      "dur": 2.11,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-50",
+      "treatment": "depth"
+    },
+    {
+      "start": 87.585,
+      "dur": 1.461,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-51",
+      "treatment": "focus"
+    },
+    {
+      "start": 89.046,
+      "dur": 1.866,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-52",
+      "treatment": "scan"
+    },
+    {
+      "start": 90.912,
+      "dur": 1.298,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-53",
+      "treatment": "depth"
+    },
+    {
+      "start": 92.21,
+      "dur": 1.948,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-54",
+      "treatment": "focus"
+    },
+    {
+      "start": 94.158,
+      "dur": 1.542,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-55",
+      "treatment": "scan"
+    },
+    {
+      "start": 95.7,
+      "dur": 2.272,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-6840__jail_cell_bars.mp4",
+      "seed": "williams-56",
+      "treatment": "footage"
+    },
+    {
+      "start": 97.972,
+      "dur": 1.623,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-57",
+      "treatment": "depth"
+    },
+    {
+      "start": 99.595,
+      "dur": 1.38,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-58",
+      "treatment": "focus"
+    },
+    {
+      "start": 100.975,
+      "dur": 1.785,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-59",
+      "treatment": "scan"
+    },
+    {
+      "start": 102.76,
+      "dur": 1.38,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-60",
+      "treatment": "depth"
+    },
+    {
+      "start": 104.14,
+      "dur": 1.704,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-61",
+      "treatment": "focus"
+    },
+    {
+      "start": 105.844,
+      "dur": 2.108,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-62",
+      "treatment": "scan"
+    },
+    {
+      "start": 107.952,
+      "dur": 1.489,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-0455__office_interior_dark.mp4",
+      "seed": "williams-63",
+      "treatment": "footage"
+    },
+    {
+      "start": 109.441,
+      "dur": 1.903,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-64",
+      "treatment": "depth"
+    },
+    {
+      "start": 111.344,
+      "dur": 1.324,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-65",
+      "treatment": "depth"
+    },
+    {
+      "start": 112.668,
+      "dur": 1.986,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-66",
+      "treatment": "scan"
+    },
+    {
+      "start": 114.654,
+      "dur": 1.572,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-67",
+      "treatment": "depth"
+    },
+    {
+      "start": 116.226,
+      "dur": 2.317,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-68",
+      "treatment": "depth"
+    },
+    {
+      "start": 118.543,
+      "dur": 1.655,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-69",
+      "treatment": "scan"
+    },
+    {
+      "start": 120.198,
+      "dur": 1.407,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-23690__case_files_stack_desk.mp4",
+      "seed": "williams-70",
+      "treatment": "footage"
+    },
+    {
+      "start": 121.605,
+      "dur": 1.82,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-71",
+      "treatment": "depth"
+    },
+    {
+      "start": 123.425,
+      "dur": 1.407,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-72",
+      "treatment": "depth"
+    },
+    {
+      "start": 124.832,
+      "dur": 1.738,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-73",
+      "treatment": "scan"
+    },
+    {
+      "start": 126.57,
+      "dur": 2.151,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-74",
+      "treatment": "depth"
+    },
+    {
+      "start": 128.721,
+      "dur": 1.489,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-75",
+      "treatment": "depth"
+    },
+    {
+      "start": 130.21,
+      "dur": 1.903,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-76",
+      "treatment": "scan"
+    },
+    {
+      "start": 132.113,
+      "dur": 1.324,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-0991__server_room_blue.mp4",
+      "seed": "williams-77",
+      "treatment": "footage"
+    },
+    {
+      "start": 133.437,
+      "dur": 1.986,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-78",
+      "treatment": "depth"
+    },
+    {
+      "start": 135.423,
+      "dur": 1.572,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-79",
+      "treatment": "depth"
+    },
+    {
+      "start": 136.995,
+      "dur": 2.317,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-80",
+      "treatment": "scan"
+    },
+    {
+      "start": 139.312,
+      "dur": 1.655,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-81",
+      "treatment": "depth"
+    },
+    {
+      "start": 140.967,
+      "dur": 1.407,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-82",
+      "treatment": "depth"
+    },
+    {
+      "start": 142.374,
+      "dur": 1.819,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-83",
+      "treatment": "scan"
+    },
+    {
+      "start": 144.193,
+      "dur": 1.444,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-3425__surveillance_camera_city.mp4",
+      "seed": "williams-84",
+      "treatment": "footage"
+    },
+    {
+      "start": 145.637,
+      "dur": 1.784,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-85",
+      "treatment": "depth"
+    },
+    {
+      "start": 147.421,
+      "dur": 2.209,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-86",
+      "treatment": "bleed"
+    },
+    {
+      "start": 149.63,
+      "dur": 1.529,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-87",
+      "treatment": "depth"
+    },
+    {
+      "start": 151.159,
+      "dur": 1.954,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-88",
+      "treatment": "bleed"
+    },
+    {
+      "start": 153.113,
+      "dur": 1.359,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-89",
+      "treatment": "depth"
+    },
+    {
+      "start": 154.472,
+      "dur": 2.039,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-25522__city_surveillance_camera_dome.mp4",
+      "seed": "williams-90",
+      "treatment": "footage"
+    },
+    {
+      "start": 156.511,
+      "dur": 1.614,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-91",
+      "treatment": "bleed"
+    },
+    {
+      "start": 158.125,
+      "dur": 2.379,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-92",
+      "treatment": "depth"
+    },
+    {
+      "start": 160.504,
+      "dur": 1.699,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-93",
+      "treatment": "bleed"
+    },
+    {
+      "start": 162.203,
+      "dur": 1.444,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-94",
+      "treatment": "depth"
+    },
+    {
+      "start": 163.647,
+      "dur": 1.869,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-95",
+      "treatment": "bleed"
+    },
+    {
+      "start": 165.516,
+      "dur": 1.444,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-9209__small_town_main_street.mp4",
+      "seed": "williams-96",
+      "treatment": "footage"
+    },
+    {
+      "start": 166.96,
+      "dur": 1.784,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-97",
+      "treatment": "depth"
+    },
+    {
+      "start": 168.744,
+      "dur": 2.209,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-98",
+      "treatment": "bleed"
+    },
+    {
+      "start": 170.953,
+      "dur": 1.529,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-99",
+      "treatment": "depth"
+    },
+    {
+      "start": 172.482,
+      "dur": 1.954,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-100",
+      "treatment": "bleed"
+    },
+    {
+      "start": 174.436,
+      "dur": 1.359,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-101",
+      "treatment": "depth"
+    },
+    {
+      "start": 175.795,
+      "dur": 2.041,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-102",
+      "treatment": "bleed"
+    },
+    {
+      "start": 177.836,
+      "dur": 1.599,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-0992__server_room_blue.mp4",
+      "seed": "williams-103",
+      "treatment": "footage"
+    },
+    {
+      "start": 179.435,
+      "dur": 2.357,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-104",
+      "treatment": "depth"
+    },
+    {
+      "start": 181.792,
+      "dur": 1.684,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-105",
+      "treatment": "focus"
+    },
+    {
+      "start": 183.476,
+      "dur": 1.431,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-106",
+      "treatment": "scan"
+    },
+    {
+      "start": 184.907,
+      "dur": 1.852,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-107",
+      "treatment": "depth"
+    },
+    {
+      "start": 186.759,
+      "dur": 1.431,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-108",
+      "treatment": "focus"
+    },
+    {
+      "start": 188.19,
+      "dur": 1.768,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-1050__data_center.mp4",
+      "seed": "williams-109",
+      "treatment": "footage"
+    },
+    {
+      "start": 189.958,
+      "dur": 2.189,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-110",
+      "treatment": "scan"
+    },
+    {
+      "start": 192.147,
+      "dur": 1.515,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-111",
+      "treatment": "depth"
+    },
+    {
+      "start": 193.662,
+      "dur": 1.936,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-112",
+      "treatment": "focus"
+    },
+    {
+      "start": 195.598,
+      "dur": 1.347,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-113",
+      "treatment": "scan"
+    },
+    {
+      "start": 196.945,
+      "dur": 2.02,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-114",
+      "treatment": "depth"
+    },
+    {
+      "start": 198.965,
+      "dur": 1.599,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-115",
+      "treatment": "focus"
+    },
+    {
+      "start": 200.564,
+      "dur": 2.357,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-11990__binary_code_screen_green.mp4",
+      "seed": "williams-116",
+      "treatment": "footage"
+    },
+    {
+      "start": 202.921,
+      "dur": 1.684,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-117",
+      "treatment": "scan"
+    },
+    {
+      "start": 204.605,
+      "dur": 1.431,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-118",
+      "treatment": "depth"
+    },
+    {
+      "start": 206.036,
+      "dur": 1.852,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-119",
+      "treatment": "focus"
+    },
+    {
+      "start": 207.888,
+      "dur": 1.431,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-120",
+      "treatment": "scan"
+    },
+    {
+      "start": 209.319,
+      "dur": 1.768,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-121",
+      "treatment": "depth"
+    },
+    {
+      "start": 211.087,
+      "dur": 2.189,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-122",
+      "treatment": "focus"
+    },
+    {
+      "start": 213.276,
+      "dur": 1.515,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-7467__circuit_data_flow.mp4",
+      "seed": "williams-123",
+      "treatment": "footage"
+    },
+    {
+      "start": 214.791,
+      "dur": 1.936,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-124",
+      "treatment": "scan"
+    },
+    {
+      "start": 216.727,
+      "dur": 1.347,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-125",
+      "treatment": "depth"
+    },
+    {
+      "start": 218.074,
+      "dur": 2.02,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-126",
+      "treatment": "focus"
+    },
+    {
+      "start": 220.094,
+      "dur": 1.599,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-127",
+      "treatment": "scan"
+    },
+    {
+      "start": 221.693,
+      "dur": 2.357,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-128",
+      "treatment": "depth"
+    },
+    {
+      "start": 224.05,
+      "dur": 1.682,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-129",
+      "treatment": "focus"
+    },
+    {
+      "start": 225.732,
+      "dur": 1.455,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-23691__case_files_stack_desk.mp4",
+      "seed": "williams-130",
+      "treatment": "footage"
+    },
+    {
+      "start": 227.187,
+      "dur": 1.883,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-131",
+      "treatment": "depth"
+    },
+    {
+      "start": 229.07,
+      "dur": 1.455,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-132",
+      "treatment": "focus"
+    },
+    {
+      "start": 230.525,
+      "dur": 1.797,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-133",
+      "treatment": "depth"
+    },
+    {
+      "start": 232.322,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-134",
+      "treatment": "focus"
+    },
+    {
+      "start": 234.547,
+      "dur": 1.541,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-135",
+      "treatment": "depth"
+    },
+    {
+      "start": 236.088,
+      "dur": 1.969,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-136",
+      "treatment": "focus"
+    },
+    {
+      "start": 238.057,
+      "dur": 1.369,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-1286__documents_on_desk.mp4",
+      "seed": "williams-137",
+      "treatment": "footage"
+    },
+    {
+      "start": 239.426,
+      "dur": 2.054,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-138",
+      "treatment": "depth"
+    },
+    {
+      "start": 241.48,
+      "dur": 1.626,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-139",
+      "treatment": "focus"
+    },
+    {
+      "start": 243.106,
+      "dur": 2.396,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-140",
+      "treatment": "depth"
+    },
+    {
+      "start": 245.502,
+      "dur": 1.712,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-141",
+      "treatment": "focus"
+    },
+    {
+      "start": 247.214,
+      "dur": 1.455,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-142",
+      "treatment": "depth"
+    },
+    {
+      "start": 248.669,
+      "dur": 1.883,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-143",
+      "treatment": "focus"
+    },
+    {
+      "start": 250.552,
+      "dur": 1.455,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-144",
+      "treatment": "depth"
+    },
+    {
+      "start": 252.007,
+      "dur": 1.797,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-15138__magnifying_glass_on_document.mp4",
+      "seed": "williams-145",
+      "treatment": "footage"
+    },
+    {
+      "start": 253.804,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-146",
+      "treatment": "focus"
+    },
+    {
+      "start": 256.029,
+      "dur": 1.541,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-147",
+      "treatment": "depth"
+    },
+    {
+      "start": 257.57,
+      "dur": 1.969,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-148",
+      "treatment": "focus"
+    },
+    {
+      "start": 259.539,
+      "dur": 1.369,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-149",
+      "treatment": "depth"
+    },
+    {
+      "start": 260.908,
+      "dur": 2.054,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-150",
+      "treatment": "focus"
+    },
+    {
+      "start": 262.962,
+      "dur": 1.626,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-151",
+      "treatment": "depth"
+    },
+    {
+      "start": 264.588,
+      "dur": 2.398,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-152",
+      "treatment": "focus"
+    },
+    {
+      "start": 266.986,
+      "dur": 1.767,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-15797__security_monitors_wall.mp4",
+      "seed": "williams-153",
+      "treatment": "footage"
+    },
+    {
+      "start": 268.753,
+      "dur": 1.502,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-154",
+      "treatment": "depth"
+    },
+    {
+      "start": 270.255,
+      "dur": 1.943,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-155",
+      "treatment": "duotone"
+    },
+    {
+      "start": 272.198,
+      "dur": 1.502,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-156",
+      "treatment": "depth"
+    },
+    {
+      "start": 273.7,
+      "dur": 1.855,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-157",
+      "treatment": "duotone"
+    },
+    {
+      "start": 275.555,
+      "dur": 2.297,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-158",
+      "treatment": "depth"
+    },
+    {
+      "start": 277.852,
+      "dur": 1.59,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-159",
+      "treatment": "duotone"
+    },
+    {
+      "start": 279.442,
+      "dur": 2.032,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-160",
+      "treatment": "depth"
+    },
+    {
+      "start": 281.474,
+      "dur": 1.413,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-161",
+      "treatment": "duotone"
+    },
+    {
+      "start": 282.887,
+      "dur": 2.12,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-162",
+      "treatment": "depth"
+    },
+    {
+      "start": 285.007,
+      "dur": 1.678,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-21736__cctv_monitor_grid_wall.mp4",
+      "seed": "williams-163",
+      "treatment": "footage"
+    },
+    {
+      "start": 286.685,
+      "dur": 2.473,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-164",
+      "treatment": "duotone"
+    },
+    {
+      "start": 289.158,
+      "dur": 1.767,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-165",
+      "treatment": "depth"
+    },
+    {
+      "start": 290.925,
+      "dur": 1.502,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-166",
+      "treatment": "duotone"
+    },
+    {
+      "start": 292.427,
+      "dur": 1.943,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-167",
+      "treatment": "depth"
+    },
+    {
+      "start": 294.37,
+      "dur": 1.502,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-168",
+      "treatment": "duotone"
+    },
+    {
+      "start": 295.872,
+      "dur": 1.855,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-169",
+      "treatment": "depth"
+    },
+    {
+      "start": 297.727,
+      "dur": 2.297,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-170",
+      "treatment": "duotone"
+    },
+    {
+      "start": 300.024,
+      "dur": 1.59,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-171",
+      "treatment": "depth"
+    },
+    {
+      "start": 301.614,
+      "dur": 2.03,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-172",
+      "treatment": "duotone"
+    },
+    {
+      "start": 303.644,
+      "dur": 1.377,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-2136__modern_medical_lab.mp4",
+      "seed": "williams-173",
+      "treatment": "footage"
+    },
+    {
+      "start": 305.021,
+      "dur": 2.066,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-174",
+      "treatment": "depth"
+    },
+    {
+      "start": 307.087,
+      "dur": 1.636,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-175",
+      "treatment": "depth"
+    },
+    {
+      "start": 308.723,
+      "dur": 2.41,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-176",
+      "treatment": "depth"
+    },
+    {
+      "start": 311.133,
+      "dur": 1.722,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-177",
+      "treatment": "depth"
+    },
+    {
+      "start": 312.855,
+      "dur": 1.463,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-178",
+      "treatment": "depth"
+    },
+    {
+      "start": 314.318,
+      "dur": 1.894,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-179",
+      "treatment": "depth"
+    },
+    {
+      "start": 316.212,
+      "dur": 1.463,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-180",
+      "treatment": "depth"
+    },
+    {
+      "start": 317.675,
+      "dur": 1.808,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-2060__laboratory_glassware.mp4",
+      "seed": "williams-181",
+      "treatment": "footage"
+    },
+    {
+      "start": 319.483,
+      "dur": 2.238,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-182",
+      "treatment": "depth"
+    },
+    {
+      "start": 321.721,
+      "dur": 1.549,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-183",
+      "treatment": "depth"
+    },
+    {
+      "start": 323.27,
+      "dur": 1.98,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-184",
+      "treatment": "depth"
+    },
+    {
+      "start": 325.25,
+      "dur": 1.377,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-185",
+      "treatment": "depth"
+    },
+    {
+      "start": 326.627,
+      "dur": 2.066,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-186",
+      "treatment": "depth"
+    },
+    {
+      "start": 328.693,
+      "dur": 1.636,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-187",
+      "treatment": "depth"
+    },
+    {
+      "start": 330.329,
+      "dur": 2.41,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-188",
+      "treatment": "depth"
+    },
+    {
+      "start": 332.739,
+      "dur": 1.722,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-0993__server_room_blue.mp4",
+      "seed": "williams-189",
+      "treatment": "footage"
+    },
+    {
+      "start": 334.461,
+      "dur": 1.463,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-190",
+      "treatment": "depth"
+    },
+    {
+      "start": 335.924,
+      "dur": 1.894,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-191",
+      "treatment": "depth"
+    },
+    {
+      "start": 337.818,
+      "dur": 1.463,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-192",
+      "treatment": "depth"
+    },
+    {
+      "start": 339.281,
+      "dur": 1.808,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-193",
+      "treatment": "depth"
+    },
+    {
+      "start": 341.089,
+      "dur": 2.238,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-194",
+      "treatment": "depth"
+    },
+    {
+      "start": 343.327,
+      "dur": 1.549,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-195",
+      "treatment": "depth"
+    },
+    {
+      "start": 344.876,
+      "dur": 1.981,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-196",
+      "treatment": "depth"
+    },
+    {
+      "start": 346.857,
+      "dur": 1.45,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-7468__circuit_data_flow.mp4",
+      "seed": "williams-197",
+      "treatment": "footage"
+    },
+    {
+      "start": 348.307,
+      "dur": 2.175,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-198",
+      "treatment": "depth"
+    },
+    {
+      "start": 350.482,
+      "dur": 1.722,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-199",
+      "treatment": "scan"
+    },
+    {
+      "start": 352.204,
+      "dur": 2.537,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-200",
+      "treatment": "depth"
+    },
+    {
+      "start": 354.741,
+      "dur": 1.812,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-201",
+      "treatment": "scan"
+    },
+    {
+      "start": 356.553,
+      "dur": 1.54,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-202",
+      "treatment": "depth"
+    },
+    {
+      "start": 358.093,
+      "dur": 1.993,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-203",
+      "treatment": "scan"
+    },
+    {
+      "start": 360.086,
+      "dur": 1.54,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-204",
+      "treatment": "depth"
+    },
+    {
+      "start": 361.626,
+      "dur": 1.903,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-205",
+      "treatment": "scan"
+    },
+    {
+      "start": 363.529,
+      "dur": 2.356,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-206",
+      "treatment": "depth"
+    },
+    {
+      "start": 365.885,
+      "dur": 1.631,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-207",
+      "treatment": "scan"
+    },
+    {
+      "start": 367.516,
+      "dur": 2.084,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-208",
+      "treatment": "depth"
+    },
+    {
+      "start": 369.6,
+      "dur": 1.45,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-209",
+      "treatment": "scan"
+    },
+    {
+      "start": 371.05,
+      "dur": 2.175,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-210",
+      "treatment": "depth"
+    },
+    {
+      "start": 373.225,
+      "dur": 1.722,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-211",
+      "treatment": "scan"
+    },
+    {
+      "start": 374.947,
+      "dur": 2.537,
+      "kind": "footage",
+      "src": "williams/factory/AF-LOOP-0224__abstract_network_nodes_loop.mp4",
+      "seed": "williams-212",
+      "treatment": "footage"
+    },
+    {
+      "start": 377.484,
+      "dur": 1.812,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-213",
+      "treatment": "depth"
+    },
+    {
+      "start": 379.296,
+      "dur": 1.54,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-214",
+      "treatment": "scan"
+    },
+    {
+      "start": 380.836,
+      "dur": 1.993,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-215",
+      "treatment": "depth"
+    },
+    {
+      "start": 382.829,
+      "dur": 1.54,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-216",
+      "treatment": "scan"
+    },
+    {
+      "start": 384.369,
+      "dur": 1.903,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-217",
+      "treatment": "depth"
+    },
+    {
+      "start": 386.272,
+      "dur": 2.356,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-218",
+      "treatment": "scan"
+    },
+    {
+      "start": 388.628,
+      "dur": 1.631,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-219",
+      "treatment": "depth"
+    },
+    {
+      "start": 390.259,
+      "dur": 2.084,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-220",
+      "treatment": "scan"
+    },
+    {
+      "start": 392.343,
+      "dur": 1.45,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-221",
+      "treatment": "depth"
+    },
+    {
+      "start": 393.793,
+      "dur": 2.175,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-222",
+      "treatment": "scan"
+    },
+    {
+      "start": 395.968,
+      "dur": 1.722,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-223",
+      "treatment": "depth"
+    },
+    {
+      "start": 397.69,
+      "dur": 2.537,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-224",
+      "treatment": "scan"
+    },
+    {
+      "start": 400.227,
+      "dur": 1.812,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-225",
+      "treatment": "depth"
+    },
+    {
+      "start": 402.039,
+      "dur": 1.54,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-226",
+      "treatment": "scan"
+    },
+    {
+      "start": 403.579,
+      "dur": 1.995,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-227",
+      "treatment": "depth"
+    },
+    {
+      "start": 405.574,
+      "dur": 1.482,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-7720__empty_office_cubicles.mp4",
+      "seed": "williams-228",
+      "treatment": "footage"
+    },
+    {
+      "start": 407.056,
+      "dur": 1.831,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-229",
+      "treatment": "depth"
+    },
+    {
+      "start": 408.887,
+      "dur": 2.267,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-230",
+      "treatment": "duotone"
+    },
+    {
+      "start": 411.154,
+      "dur": 1.569,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-231",
+      "treatment": "depth"
+    },
+    {
+      "start": 412.723,
+      "dur": 2.005,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-232",
+      "treatment": "duotone"
+    },
+    {
+      "start": 414.728,
+      "dur": 1.395,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-233",
+      "treatment": "depth"
+    },
+    {
+      "start": 416.123,
+      "dur": 2.092,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-234",
+      "treatment": "duotone"
+    },
+    {
+      "start": 418.215,
+      "dur": 1.656,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-235",
+      "treatment": "depth"
+    },
+    {
+      "start": 419.871,
+      "dur": 2.441,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-236",
+      "treatment": "duotone"
+    },
+    {
+      "start": 422.312,
+      "dur": 1.744,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-1980__smartphone_in_dark.mp4",
+      "seed": "williams-237",
+      "treatment": "footage"
+    },
+    {
+      "start": 424.056,
+      "dur": 1.482,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-238",
+      "treatment": "depth"
+    },
+    {
+      "start": 425.538,
+      "dur": 1.918,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-239",
+      "treatment": "duotone"
+    },
+    {
+      "start": 427.456,
+      "dur": 1.482,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-240",
+      "treatment": "depth"
+    },
+    {
+      "start": 428.938,
+      "dur": 1.831,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-241",
+      "treatment": "duotone"
+    },
+    {
+      "start": 430.769,
+      "dur": 2.267,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-242",
+      "treatment": "depth"
+    },
+    {
+      "start": 433.036,
+      "dur": 1.569,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-243",
+      "treatment": "duotone"
+    },
+    {
+      "start": 434.605,
+      "dur": 2.005,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-244",
+      "treatment": "depth"
+    },
+    {
+      "start": 436.61,
+      "dur": 1.395,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-245",
+      "treatment": "duotone"
+    },
+    {
+      "start": 438.005,
+      "dur": 2.093,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-246",
+      "treatment": "depth"
+    },
+    {
+      "start": 440.098,
+      "dur": 1.63,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-3286__courthouse_steps.mp4",
+      "seed": "williams-247",
+      "treatment": "footage"
+    },
+    {
+      "start": 441.728,
+      "dur": 2.401,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-248",
+      "treatment": "depth"
+    },
+    {
+      "start": 444.129,
+      "dur": 1.715,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-249",
+      "treatment": "focus"
+    },
+    {
+      "start": 445.844,
+      "dur": 1.458,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-250",
+      "treatment": "depth"
+    },
+    {
+      "start": 447.302,
+      "dur": 1.887,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-251",
+      "treatment": "focus"
+    },
+    {
+      "start": 449.189,
+      "dur": 1.458,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-252",
+      "treatment": "depth"
+    },
+    {
+      "start": 450.647,
+      "dur": 1.801,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-253",
+      "treatment": "focus"
+    },
+    {
+      "start": 452.448,
+      "dur": 2.23,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-254",
+      "treatment": "depth"
+    },
+    {
+      "start": 454.678,
+      "dur": 1.544,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-23026__federal_building_columns_night.mp4",
+      "seed": "williams-255",
+      "treatment": "footage"
+    },
+    {
+      "start": 456.222,
+      "dur": 1.973,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-256",
+      "treatment": "focus"
+    },
+    {
+      "start": 458.195,
+      "dur": 1.372,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-257",
+      "treatment": "depth"
+    },
+    {
+      "start": 459.567,
+      "dur": 2.058,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-258",
+      "treatment": "focus"
+    },
+    {
+      "start": 461.625,
+      "dur": 1.63,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-259",
+      "treatment": "depth"
+    },
+    {
+      "start": 463.255,
+      "dur": 2.401,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-260",
+      "treatment": "focus"
+    },
+    {
+      "start": 465.656,
+      "dur": 1.715,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-261",
+      "treatment": "depth"
+    },
+    {
+      "start": 467.371,
+      "dur": 1.458,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-262",
+      "treatment": "focus"
+    },
+    {
+      "start": 468.829,
+      "dur": 1.887,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-14512__courtroom_empty_wide.mp4",
+      "seed": "williams-263",
+      "treatment": "footage"
+    },
+    {
+      "start": 470.716,
+      "dur": 1.458,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-264",
+      "treatment": "depth"
+    },
+    {
+      "start": 472.174,
+      "dur": 1.801,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-265",
+      "treatment": "focus"
+    },
+    {
+      "start": 473.975,
+      "dur": 2.23,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-266",
+      "treatment": "depth"
+    },
+    {
+      "start": 476.205,
+      "dur": 1.544,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-267",
+      "treatment": "focus"
+    },
+    {
+      "start": 477.749,
+      "dur": 1.973,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-268",
+      "treatment": "depth"
+    },
+    {
+      "start": 479.722,
+      "dur": 1.372,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-269",
+      "treatment": "focus"
+    },
+    {
+      "start": 481.094,
+      "dur": 2.058,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-270",
+      "treatment": "depth"
+    },
+    {
+      "start": 483.152,
+      "dur": 1.631,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-271",
+      "treatment": "focus"
+    },
+    {
+      "start": 484.783,
+      "dur": 2.369,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-13402__drone_city_aerial_night.mp4",
+      "seed": "williams-272",
+      "treatment": "footage"
+    },
+    {
+      "start": 487.152,
+      "dur": 1.692,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-273",
+      "treatment": "depth"
+    },
+    {
+      "start": 488.844,
+      "dur": 1.439,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-274",
+      "treatment": "depth"
+    },
+    {
+      "start": 490.283,
+      "dur": 1.862,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-275",
+      "treatment": "depth"
+    },
+    {
+      "start": 492.145,
+      "dur": 1.439,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-276",
+      "treatment": "depth"
+    },
+    {
+      "start": 493.584,
+      "dur": 1.777,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-277",
+      "treatment": "depth"
+    },
+    {
+      "start": 495.361,
+      "dur": 2.2,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-278",
+      "treatment": "depth"
+    },
+    {
+      "start": 497.561,
+      "dur": 1.523,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-279",
+      "treatment": "depth"
+    },
+    {
+      "start": 499.084,
+      "dur": 1.946,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-280",
+      "treatment": "depth"
+    },
+    {
+      "start": 501.03,
+      "dur": 1.354,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-1517__city_skyline_dusk.mp4",
+      "seed": "williams-281",
+      "treatment": "footage"
+    },
+    {
+      "start": 502.384,
+      "dur": 2.031,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-282",
+      "treatment": "depth"
+    },
+    {
+      "start": 504.415,
+      "dur": 1.608,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-283",
+      "treatment": "depth"
+    },
+    {
+      "start": 506.023,
+      "dur": 2.369,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-284",
+      "treatment": "depth"
+    },
+    {
+      "start": 508.392,
+      "dur": 1.692,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-285",
+      "treatment": "depth"
+    },
+    {
+      "start": 510.084,
+      "dur": 1.439,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-286",
+      "treatment": "depth"
+    },
+    {
+      "start": 511.523,
+      "dur": 1.862,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-287",
+      "treatment": "depth"
+    },
+    {
+      "start": 513.385,
+      "dur": 1.439,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-288",
+      "treatment": "depth"
+    },
+    {
+      "start": 514.824,
+      "dur": 1.777,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-289",
+      "treatment": "depth"
+    },
+    {
+      "start": 516.601,
+      "dur": 2.2,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-290",
+      "treatment": "depth"
+    },
+    {
+      "start": 518.801,
+      "dur": 1.488,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-1752__front_door_house.mp4",
+      "seed": "williams-291",
+      "treatment": "footage"
+    },
+    {
+      "start": 520.289,
+      "dur": 1.901,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-292",
+      "treatment": "depth"
+    },
+    {
+      "start": 522.19,
+      "dur": 1.322,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-293",
+      "treatment": "focus"
+    },
+    {
+      "start": 523.512,
+      "dur": 1.984,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-294",
+      "treatment": "depth"
+    },
+    {
+      "start": 525.496,
+      "dur": 1.57,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-295",
+      "treatment": "focus"
+    },
+    {
+      "start": 527.066,
+      "dur": 2.314,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-296",
+      "treatment": "depth"
+    },
+    {
+      "start": 529.38,
+      "dur": 1.653,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-9210__small_town_main_street.mp4",
+      "seed": "williams-297",
+      "treatment": "footage"
+    },
+    {
+      "start": 531.033,
+      "dur": 1.405,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-298",
+      "treatment": "focus"
+    },
+    {
+      "start": 532.438,
+      "dur": 1.818,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-299",
+      "treatment": "depth"
+    },
+    {
+      "start": 534.256,
+      "dur": 1.405,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-300",
+      "treatment": "focus"
+    },
+    {
+      "start": 535.661,
+      "dur": 1.736,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-301",
+      "treatment": "depth"
+    },
+    {
+      "start": 537.397,
+      "dur": 2.149,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-302",
+      "treatment": "focus"
+    },
+    {
+      "start": 539.546,
+      "dur": 1.488,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-303",
+      "treatment": "depth"
+    },
+    {
+      "start": 541.034,
+      "dur": 1.901,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-15259__long_shadow_of_a_person.mp4",
+      "seed": "williams-304",
+      "treatment": "footage"
+    },
+    {
+      "start": 542.935,
+      "dur": 1.322,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-305",
+      "treatment": "focus"
+    },
+    {
+      "start": 544.257,
+      "dur": 1.984,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-306",
+      "treatment": "depth"
+    },
+    {
+      "start": 546.241,
+      "dur": 1.57,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-307",
+      "treatment": "focus"
+    },
+    {
+      "start": 547.811,
+      "dur": 2.314,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-308",
+      "treatment": "depth"
+    },
+    {
+      "start": 550.125,
+      "dur": 1.653,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-309",
+      "treatment": "focus"
+    },
+    {
+      "start": 551.778,
+      "dur": 1.408,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-310",
+      "treatment": "depth"
+    },
+    {
+      "start": 553.186,
+      "dur": 1.935,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-25523__city_surveillance_camera_dome.mp4",
+      "seed": "williams-311",
+      "treatment": "footage"
+    },
+    {
+      "start": 555.121,
+      "dur": 1.495,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-312",
+      "treatment": "bleed"
+    },
+    {
+      "start": 556.616,
+      "dur": 1.847,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-313",
+      "treatment": "depth"
+    },
+    {
+      "start": 558.463,
+      "dur": 2.287,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-314",
+      "treatment": "focus"
+    },
+    {
+      "start": 560.75,
+      "dur": 1.583,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-315",
+      "treatment": "bleed"
+    },
+    {
+      "start": 562.333,
+      "dur": 2.023,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-316",
+      "treatment": "depth"
+    },
+    {
+      "start": 564.356,
+      "dur": 1.407,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-317",
+      "treatment": "focus"
+    },
+    {
+      "start": 565.763,
+      "dur": 2.111,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-318",
+      "treatment": "bleed"
+    },
+    {
+      "start": 567.874,
+      "dur": 1.671,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-319",
+      "treatment": "depth"
+    },
+    {
+      "start": 569.545,
+      "dur": 2.463,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-320",
+      "treatment": "focus"
+    },
+    {
+      "start": 572.008,
+      "dur": 1.759,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-321",
+      "treatment": "bleed"
+    },
+    {
+      "start": 573.767,
+      "dur": 1.495,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-3426__surveillance_camera_city.mp4",
+      "seed": "williams-322",
+      "treatment": "footage"
+    },
+    {
+      "start": 575.262,
+      "dur": 1.935,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-323",
+      "treatment": "depth"
+    },
+    {
+      "start": 577.197,
+      "dur": 1.495,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-324",
+      "treatment": "focus"
+    },
+    {
+      "start": 578.692,
+      "dur": 1.847,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-325",
+      "treatment": "bleed"
+    },
+    {
+      "start": 580.539,
+      "dur": 2.287,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-326",
+      "treatment": "depth"
+    },
+    {
+      "start": 582.826,
+      "dur": 1.583,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-327",
+      "treatment": "focus"
+    },
+    {
+      "start": 584.409,
+      "dur": 2.023,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-328",
+      "treatment": "bleed"
+    },
+    {
+      "start": 586.432,
+      "dur": 1.407,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-329",
+      "treatment": "depth"
+    },
+    {
+      "start": 587.839,
+      "dur": 2.111,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-330",
+      "treatment": "focus"
+    },
+    {
+      "start": 589.95,
+      "dur": 1.671,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-331",
+      "treatment": "bleed"
+    },
+    {
+      "start": 591.621,
+      "dur": 2.463,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-332",
+      "treatment": "depth"
+    },
+    {
+      "start": 594.084,
+      "dur": 1.759,
+      "kind": "footage",
+      "src": "williams/factory/AF-BG-28649__rain_on_city_street_neon.mp4",
+      "seed": "williams-333",
+      "treatment": "footage"
+    },
+    {
+      "start": 595.843,
+      "dur": 1.495,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-334",
+      "treatment": "focus"
+    },
+    {
+      "start": 597.338,
+      "dur": 1.935,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-335",
+      "treatment": "bleed"
+    },
+    {
+      "start": 599.273,
+      "dur": 1.495,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-336",
+      "treatment": "depth"
+    },
+    {
+      "start": 600.768,
+      "dur": 1.847,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-337",
+      "treatment": "focus"
+    },
+    {
+      "start": 602.615,
+      "dur": 2.287,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-338",
+      "treatment": "bleed"
+    },
+    {
+      "start": 604.902,
+      "dur": 1.583,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-339",
+      "treatment": "depth"
+    },
+    {
+      "start": 606.485,
+      "dur": 2.023,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-340",
+      "treatment": "focus"
+    },
+    {
+      "start": 608.508,
+      "dur": 1.407,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-341",
+      "treatment": "bleed"
+    },
+    {
+      "start": 609.915,
+      "dur": 2.111,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-342",
+      "treatment": "depth"
+    },
+    {
+      "start": 612.026,
+      "dur": 1.681,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-343",
+      "treatment": "focus"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 0.6,
+      "text": "A blurry photo."
+    },
+    {
+      "start": 0.66,
+      "end": 2.355,
+      "text": "A computer's guess."
+    },
+    {
+      "start": 2.415,
+      "end": 3.795,
+      "text": "A knock at your door —"
+    },
+    {
+      "start": 3.855,
+      "end": 8.292,
+      "text": "arrested for a crime you did not commit."
+    },
+    {
+      "start": 8.352,
+      "end": 9.771,
+      "text": "This is the story of a face —"
+    },
+    {
+      "start": 9.772,
+      "end": 12.411,
+      "text": "and how a machine looking at one put"
+    },
+    {
+      "start": 12.412,
+      "end": 14.231,
+      "text": "an innocent father in a jail cell"
+    },
+    {
+      "start": 14.232,
+      "end": 16.508,
+      "text": "for something he never did."
+    },
+    {
+      "start": 16.568,
+      "end": 18.847,
+      "text": "Over the next twelve minutes you will see exactly"
+    },
+    {
+      "start": 18.848,
+      "end": 21.587,
+      "text": "how it happened, why it keeps happening to people"
+    },
+    {
+      "start": 21.588,
+      "end": 22.908,
+      "text": "who did nothing wrong,"
+    },
+    {
+      "start": 22.968,
+      "end": 25.307,
+      "text": "and why the same technology is already looking"
+    },
+    {
+      "start": 25.308,
+      "end": 28.867,
+      "text": "at your face, too."
+    },
+    {
+      "start": 29.192,
+      "end": 31.404,
+      "text": "Picture an ordinary weekday."
+    },
+    {
+      "start": 31.464,
+      "end": 34.124,
+      "text": "You pull into your own driveway after work."
+    },
+    {
+      "start": 34.184,
+      "end": 35.724,
+      "text": "Your kids are inside."
+    },
+    {
+      "start": 35.784,
+      "end": 37.623,
+      "text": "Dinner is on the stove."
+    },
+    {
+      "start": 37.683,
+      "end": 39.763,
+      "text": "Two police cars roll up behind you,"
+    },
+    {
+      "start": 39.823,
+      "end": 42.002,
+      "text": "and before you understand what is happening,"
+    },
+    {
+      "start": 42.003,
+      "end": 44.282,
+      "text": "officers are walking you off your own front lawn"
+    },
+    {
+      "start": 44.283,
+      "end": 45.703,
+      "text": "in handcuffs —"
+    },
+    {
+      "start": 45.763,
+      "end": 47.143,
+      "text": "in front of your wife,"
+    },
+    {
+      "start": 47.203,
+      "end": 49.415,
+      "text": "in front of your two young daughters"
+    },
+    {
+      "start": 49.475,
+      "end": 52.523,
+      "text": "— and they will not really tell you why."
+    },
+    {
+      "start": 52.583,
+      "end": 53.722,
+      "text": "This is not a nightmare,"
+    },
+    {
+      "start": 53.723,
+      "end": 56.281,
+      "text": "and it is not a hypothetical."
+    },
+    {
+      "start": 56.341,
+      "end": 58.68,
+      "text": "It happened to a father in a quiet Detroit suburb"
+    },
+    {
+      "start": 58.681,
+      "end": 60.68,
+      "text": "in the winter of twenty twenty."
+    },
+    {
+      "start": 60.681,
+      "end": 62.593,
+      "text": "He had done nothing wrong."
+    },
+    {
+      "start": 62.653,
+      "end": 63.872,
+      "text": "And the thing that sent police"
+    },
+    {
+      "start": 63.873,
+      "end": 67.153,
+      "text": "to his door was not a witness, not a fingerprint,"
+    },
+    {
+      "start": 67.213,
+      "end": 69.272,
+      "text": "not a tip from anyone who knew him."
+    },
+    {
+      "start": 69.293,
+      "end": 71.181,
+      "text": "It was a computer."
+    },
+    {
+      "start": 71.241,
+      "end": 72.681,
+      "text": "They took him downtown."
+    },
+    {
+      "start": 72.741,
+      "end": 74.461,
+      "text": "His mug shot."
+    },
+    {
+      "start": 74.521,
+      "end": 76.007,
+      "text": "His fingerprints. His DNA."
+    },
+    {
+      "start": 76.067,
+      "end": 77.127,
+      "text": "Then a cell,"
+    },
+    {
+      "start": 77.187,
+      "end": 79.767,
+      "text": "and the better part of two days inside it —"
+    },
+    {
+      "start": 79.827,
+      "end": 80.746,
+      "text": "about thirty hours —"
+    },
+    {
+      "start": 80.747,
+      "end": 84.13,
+      "text": "for a crime he had never heard a word about."
+    },
+    {
+      "start": 84.19,
+      "end": 86.229,
+      "text": "When a detective finally slid two photographs"
+    },
+    {
+      "start": 86.23,
+      "end": 87.57,
+      "text": "across the table,"
+    },
+    {
+      "start": 87.63,
+      "end": 90.289,
+      "text": "a still pulled from a store's security camera,"
+    },
+    {
+      "start": 90.29,
+      "end": 92.529,
+      "text": "he lifted one up beside his own face and said"
+    },
+    {
+      "start": 92.53,
+      "end": 95.09,
+      "text": "the only thing there was to say."
+    },
+    {
+      "start": 95.15,
+      "end": 97.222,
+      "text": "This is not me."
+    },
+    {
+      "start": 97.282,
+      "end": 98.601,
+      "text": "You mean a person looked at me"
+    },
+    {
+      "start": 98.602,
+      "end": 100.841,
+      "text": "and decided I did this?"
+    },
+    {
+      "start": 100.901,
+      "end": 103.54,
+      "text": "And the detective's answer is what should stop you"
+    },
+    {
+      "start": 103.541,
+      "end": 104.761,
+      "text": "cold."
+    },
+    {
+      "start": 104.821,
+      "end": 107.292,
+      "text": "No. A computer did."
+    },
+    {
+      "start": 107.352,
+      "end": 109.378,
+      "text": "Eventually they let him go."
+    },
+    {
+      "start": 109.438,
+      "end": 110.797,
+      "text": "The charges were dropped,"
+    },
+    {
+      "start": 110.798,
+      "end": 112.877,
+      "text": "and the prosecutor's office later admitted"
+    },
+    {
+      "start": 112.878,
+      "end": 114.437,
+      "text": "the case should never have been built"
+    },
+    {
+      "start": 114.438,
+      "end": 116.062,
+      "text": "the way it was."
+    },
+    {
+      "start": 116.122,
+      "end": 117.981,
+      "text": "But the question he walked out with is the one"
+    },
+    {
+      "start": 117.982,
+      "end": 119.495,
+      "text": "that matters."
+    },
+    {
+      "start": 119.555,
+      "end": 122.092,
+      "text": "He had never set foot in that store."
+    },
+    {
+      "start": 122.152,
+      "end": 124.211,
+      "text": "His picture had never sat in some lineup"
+    },
+    {
+      "start": 124.212,
+      "end": 126.129,
+      "text": "a witness pointed to."
+    },
+    {
+      "start": 126.189,
+      "end": 129.249,
+      "text": "So how did the police get his name, his face,"
+    },
+    {
+      "start": 129.309,
+      "end": 131.068,
+      "text": "and his front door out of a crime he"
+    },
+    {
+      "start": 131.069,
+      "end": 133.37,
+      "text": "had no connection to at all?"
+    },
+    {
+      "start": 133.43,
+      "end": 135.269,
+      "text": "The answer is a quiet machine"
+    },
+    {
+      "start": 135.27,
+      "end": 137.769,
+      "text": "that most people have never once thought about —"
+    },
+    {
+      "start": 137.77,
+      "end": 140.349,
+      "text": "and that has almost certainly already looked"
+    },
+    {
+      "start": 140.35,
+      "end": 143.533,
+      "text": "at you."
+    },
+    {
+      "start": 143.593,
+      "end": 145.573,
+      "text": "Go back to where it started."
+    },
+    {
+      "start": 145.633,
+      "end": 147.332,
+      "text": "In twenty eighteen,"
+    },
+    {
+      "start": 147.333,
+      "end": 149.312,
+      "text": "someone walked into a downtown watch shop"
+    },
+    {
+      "start": 149.313,
+      "end": 152.083,
+      "text": "and stole a few thousand dollars of merchandise."
+    },
+    {
+      "start": 152.084,
+      "end": 153.783,
+      "text": "The only witness was a camera bolted"
+    },
+    {
+      "start": 153.784,
+      "end": 155.364,
+      "text": "to the ceiling."
+    },
+    {
+      "start": 155.424,
+      "end": 156.663,
+      "text": "It caught one grainy,"
+    },
+    {
+      "start": 156.664,
+      "end": 159.404,
+      "text": "low-light frame of a man in a dark cap —"
+    },
+    {
+      "start": 159.464,
+      "end": 160.343,
+      "text": "the kind of smeared,"
+    },
+    {
+      "start": 160.344,
+      "end": 162.443,
+      "text": "pixelated image you could stare at all day"
+    },
+    {
+      "start": 162.444,
+      "end": 165.484,
+      "text": "and still not recognize your own brother in it."
+    },
+    {
+      "start": 165.544,
+      "end": 168.313,
+      "text": "There was no name attached to that face."
+    },
+    {
+      "start": 168.373,
+      "end": 170.012,
+      "text": "So the police did what more"
+    },
+    {
+      "start": 170.013,
+      "end": 172.768,
+      "text": "and more departments now do by reflex."
+    },
+    {
+      "start": 172.828,
+      "end": 174.247,
+      "text": "They handed the blur to software,"
+    },
+    {
+      "start": 174.248,
+      "end": 177.176,
+      "text": "and they asked it to go find a person."
+    },
+    {
+      "start": 177.236,
+      "end": 180.144,
+      "text": "So look at what the software actually does."
+    },
+    {
+      "start": 180.204,
+      "end": 182.003,
+      "text": "It takes one image and compares it"
+    },
+    {
+      "start": 182.004,
+      "end": 184.944,
+      "text": "against a vast state database —"
+    },
+    {
+      "start": 185.004,
+      "end": 188.224,
+      "text": "millions of driver's-license photos and mug shots,"
+    },
+    {
+      "start": 188.284,
+      "end": 190.143,
+      "text": "ordinary people who have never been accused"
+    },
+    {
+      "start": 190.144,
+      "end": 192.215,
+      "text": "of anything in their lives."
+    },
+    {
+      "start": 192.275,
+      "end": 195.183,
+      "text": "The software does not know who anyone is."
+    },
+    {
+      "start": 195.243,
+      "end": 197.082,
+      "text": "It produces a ranked list of faces"
+    },
+    {
+      "start": 197.083,
+      "end": 199.363,
+      "text": "that look statistically similar,"
+    },
+    {
+      "start": 199.423,
+      "end": 202.238,
+      "text": "each one scored by a probability."
+    },
+    {
+      "start": 202.298,
+      "end": 206.135,
+      "text": "Feed it a sharp photo and it does reasonably well."
+    },
+    {
+      "start": 206.195,
+      "end": 207.575,
+      "text": "Feed it a blurry one,"
+    },
+    {
+      "start": 207.635,
+      "end": 210.172,
+      "text": "and it will still hand back somebody."
+    },
+    {
+      "start": 210.232,
+      "end": 212.371,
+      "text": "In this case it reached into old license records"
+    },
+    {
+      "start": 212.372,
+      "end": 214.852,
+      "text": "and surfaced a photo from years before —"
+    },
+    {
+      "start": 214.912,
+      "end": 215.251,
+      "text": "a man"
+    },
+    {
+      "start": 215.252,
+      "end": 217.891,
+      "text": "who had once renewed his license one afternoon."
+    },
+    {
+      "start": 217.892,
+      "end": 219.828,
+      "text": "That was the whole link."
+    },
+    {
+      "start": 219.888,
+      "end": 221.788,
+      "text": "A guess, ranked by a number,"
+    },
+    {
+      "start": 221.848,
+      "end": 223.807,
+      "text": "pulled out of a database he never knew he"
+    },
+    {
+      "start": 223.808,
+      "end": 225.072,
+      "text": "was in."
+    },
+    {
+      "start": 225.132,
+      "end": 227.071,
+      "text": "And a face on a screen is not supposed"
+    },
+    {
+      "start": 227.072,
+      "end": 228.644,
+      "text": "to be enough."
+    },
+    {
+      "start": 228.704,
+      "end": 231.422,
+      "text": "Everyone in that room knew it."
+    },
+    {
+      "start": 231.482,
+      "end": 233.742,
+      "text": "A match is a lead —"
+    },
+    {
+      "start": 233.802,
+      "end": 235.568,
+      "text": "a name to look into, not a name to arrest."
+    },
+    {
+      "start": 235.569,
+      "end": 237.687,
+      "text": "But instead of treating it that way,"
+    },
+    {
+      "start": 237.729,
+      "end": 239.588,
+      "text": "the detectives took the exact photo"
+    },
+    {
+      "start": 239.589,
+      "end": 241.648,
+      "text": "the computer had picked and dropped it"
+    },
+    {
+      "start": 241.649,
+      "end": 243.539,
+      "text": "into a physical lineup."
+    },
+    {
+      "start": 243.599,
+      "end": 246.693,
+      "text": "Then they showed that lineup to a store contractor."
+    },
+    {
+      "start": 246.753,
+      "end": 249.615,
+      "text": "Not someone who had witnessed the theft."
+    },
+    {
+      "start": 249.675,
+      "end": 251.174,
+      "text": "Someone who had only ever watched"
+    },
+    {
+      "start": 251.175,
+      "end": 253.694,
+      "text": "the same blurry video the computer watched."
+    },
+    {
+      "start": 253.695,
+      "end": 255.509,
+      "text": "He pointed at the picture."
+    },
+    {
+      "start": 255.569,
+      "end": 257.049,
+      "text": "And that small nod —"
+    },
+    {
+      "start": 257.109,
+      "end": 258.329,
+      "text": "a machine's guess,"
+    },
+    {
+      "start": 258.389,
+      "end": 260.628,
+      "text": "confirmed by a person staring at the same footage"
+    },
+    {
+      "start": 260.629,
+      "end": 262.169,
+      "text": "the machine had —"
+    },
+    {
+      "start": 262.229,
+      "end": 264.348,
+      "text": "was written down as probable cause to arrest"
+    },
+    {
+      "start": 264.349,
+      "end": 266.326,
+      "text": "a living human being."
+    },
+    {
+      "start": 266.386,
+      "end": 268.045,
+      "text": "So that is how they got his door."
+    },
+    {
+      "start": 268.046,
+      "end": 269.573,
+      "text": "Not evidence."
+    },
+    {
+      "start": 269.633,
+      "end": 272.588,
+      "text": "Not a witness who had seen him do anything."
+    },
+    {
+      "start": 272.648,
+      "end": 275.127,
+      "text": "A probability, dressed up as an identification,"
+    },
+    {
+      "start": 275.128,
+      "end": 277.927,
+      "text": "and not one person along the chain stopped"
+    },
+    {
+      "start": 277.928,
+      "end": 279.028,
+      "text": "to break it."
+    },
+    {
+      "start": 279.088,
+      "end": 281.176,
+      "text": "Which leaves the harder question."
+    },
+    {
+      "start": 281.236,
+      "end": 283.595,
+      "text": "It turns this from a single man's bad luck"
+    },
+    {
+      "start": 283.596,
+      "end": 285.956,
+      "text": "into everyone's problem."
+    },
+    {
+      "start": 286.016,
+      "end": 289.076,
+      "text": "Out of all the millions of faces in that database,"
+    },
+    {
+      "start": 289.136,
+      "end": 292.036,
+      "text": "why did the machine reach for a face like his?"
+    },
+    {
+      "start": 292.096,
+      "end": 294.516,
+      "text": "This technology does not miss at random."
+    },
+    {
+      "start": 294.576,
+      "end": 296.537,
+      "text": "It misses in a pattern."
+    },
+    {
+      "start": 296.597,
+      "end": 298.156,
+      "text": "And that pattern has been measured,"
+    },
+    {
+      "start": 298.157,
+      "end": 302.984,
+      "text": "in a government lab, in black and white."
+    },
+    {
+      "start": 303.044,
+      "end": 304.603,
+      "text": "In twenty nineteen,"
+    },
+    {
+      "start": 304.604,
+      "end": 306.803,
+      "text": "the federal government's own standards laboratory"
+    },
+    {
+      "start": 306.804,
+      "end": 308.143,
+      "text": "ran the largest test of its kind"
+    },
+    {
+      "start": 308.144,
+      "end": 309.543,
+      "text": "on these algorithms."
+    },
+    {
+      "start": 309.544,
+      "end": 311.247,
+      "text": "The finding was blunt."
+    },
+    {
+      "start": 311.307,
+      "end": 312.006,
+      "text": "A great many"
+    },
+    {
+      "start": 312.007,
+      "end": 314.766,
+      "text": "of them returned false matches far more often"
+    },
+    {
+      "start": 314.767,
+      "end": 317.507,
+      "text": "on Black and Asian faces than on white ones."
+    },
+    {
+      "start": 317.567,
+      "end": 319.463,
+      "text": "Not by a hair."
+    },
+    {
+      "start": 319.523,
+      "end": 320.562,
+      "text": "In head-to-head tests,"
+    },
+    {
+      "start": 320.563,
+      "end": 323.128,
+      "text": "ten to a hundred times more often."
+    },
+    {
+      "start": 323.188,
+      "end": 326.189,
+      "text": "Consider what a false match actually is."
+    },
+    {
+      "start": 326.249,
+      "end": 328.148,
+      "text": "It is the machine looking straight at you"
+    },
+    {
+      "start": 328.149,
+      "end": 330.168,
+      "text": "and confidently naming a stranger —"
+    },
+    {
+      "start": 330.169,
+      "end": 332.108,
+      "text": "or looking at a stranger"
+    },
+    {
+      "start": 332.109,
+      "end": 334.637,
+      "text": "and confidently naming you."
+    },
+    {
+      "start": 334.697,
+      "end": 336.497,
+      "text": "And in test after test,"
+    },
+    {
+      "start": 336.557,
+      "end": 339.057,
+      "text": "if your face was Black or Asian,"
+    },
+    {
+      "start": 339.117,
+      "end": 340.776,
+      "text": "the very tool the police were leaning"
+    },
+    {
+      "start": 340.777,
+      "end": 343.116,
+      "text": "on was far more likely to write your name"
+    },
+    {
+      "start": 343.117,
+      "end": 346.197,
+      "text": "onto a crime that was never yours."
+    },
+    {
+      "start": 346.257,
+      "end": 348.796,
+      "text": "And the way police use these tools makes it worse,"
+    },
+    {
+      "start": 348.797,
+      "end": 350.141,
+      "text": "not better."
+    },
+    {
+      "start": 350.201,
+      "end": 352.3,
+      "text": "Searching one blurry face against a database"
+    },
+    {
+      "start": 352.301,
+      "end": 355.18,
+      "text": "of millions is exactly where false matches pile"
+    },
+    {
+      "start": 355.181,
+      "end": 356.201,
+      "text": "up highest,"
+    },
+    {
+      "start": 356.261,
+      "end": 358.18,
+      "text": "and the worst error rates of all landed"
+    },
+    {
+      "start": 358.181,
+      "end": 360.354,
+      "text": "on the faces of Black women."
+    },
+    {
+      "start": 360.414,
+      "end": 362.333,
+      "text": "An earlier study had looked at a related"
+    },
+    {
+      "start": 362.334,
+      "end": 363.994,
+      "text": "but different job —"
+    },
+    {
+      "start": 364.054,
+      "end": 365.933,
+      "text": "software guessing whether a face is a man"
+    },
+    {
+      "start": 365.934,
+      "end": 366.994,
+      "text": "or a woman —"
+    },
+    {
+      "start": 367.054,
+      "end": 369.034,
+      "text": "and found the same shape:"
+    },
+    {
+      "start": 369.094,
+      "end": 372.796,
+      "text": "it misread darker-skinned women up to a third of"
+    },
+    {
+      "start": 372.856,
+      "end": 374.815,
+      "text": "the time, while almost never erring"
+    },
+    {
+      "start": 374.816,
+      "end": 376.693,
+      "text": "on a lighter-skinned man."
+    },
+    {
+      "start": 376.753,
+      "end": 378.672,
+      "text": "That is not the same task as the matching"
+    },
+    {
+      "start": 378.673,
+      "end": 380.593,
+      "text": "that sent police to his door,"
+    },
+    {
+      "start": 380.653,
+      "end": 383.191,
+      "text": "but the gap runs the same way."
+    },
+    {
+      "start": 383.251,
+      "end": 386.159,
+      "text": "And this is not a machine holding a grudge."
+    },
+    {
+      "start": 386.219,
+      "end": 388.799,
+      "text": "When that same federal lab looked closer,"
+    },
+    {
+      "start": 388.859,
+      "end": 391.078,
+      "text": "the gap all but vanished on systems built"
+    },
+    {
+      "start": 391.079,
+      "end": 392.259,
+      "text": "in Asia —"
+    },
+    {
+      "start": 392.319,
+      "end": 394.378,
+      "text": "strong evidence the fault lies in the faces"
+    },
+    {
+      "start": 394.379,
+      "end": 396.059,
+      "text": "a system is trained on,"
+    },
+    {
+      "start": 396.119,
+      "end": 398.648,
+      "text": "not in the technology itself."
+    },
+    {
+      "start": 398.708,
+      "end": 401.147,
+      "text": "These tools learn from what they are shown,"
+    },
+    {
+      "start": 401.148,
+      "end": 404.914,
+      "text": "and for years, faces like his barely made the set."
+    },
+    {
+      "start": 404.974,
+      "end": 407.557,
+      "text": "Now bring it all the way back to you."
+    },
+    {
+      "start": 407.617,
+      "end": 409.636,
+      "text": "Your face is almost certainly already sitting"
+    },
+    {
+      "start": 409.637,
+      "end": 411.686,
+      "text": "in one of these databases."
+    },
+    {
+      "start": 411.746,
+      "end": 413.465,
+      "text": "If you hold a driver's license,"
+    },
+    {
+      "start": 413.466,
+      "end": 414.886,
+      "text": "you are in the lineup —"
+    },
+    {
+      "start": 414.946,
+      "end": 416.685,
+      "text": "a permanent one you never volunteered"
+    },
+    {
+      "start": 416.686,
+      "end": 419.159,
+      "text": "for and can never step out of."
+    },
+    {
+      "start": 419.219,
+      "end": 420.938,
+      "text": "You do not have to break a law,"
+    },
+    {
+      "start": 420.939,
+      "end": 421.678,
+      "text": "know a criminal,"
+    },
+    {
+      "start": 421.679,
+      "end": 423.985,
+      "text": "or go anywhere near a crime scene."
+    },
+    {
+      "start": 424.045,
+      "end": 425.665,
+      "text": "To a piece of software,"
+    },
+    {
+      "start": 425.725,
+      "end": 428.811,
+      "text": "you only have to look a little like somebody else."
+    },
+    {
+      "start": 428.871,
+      "end": 430.53,
+      "text": "The man who was marched off his own lawn"
+    },
+    {
+      "start": 430.531,
+      "end": 432.491,
+      "text": "in handcuffs was not careless,"
+    },
+    {
+      "start": 432.551,
+      "end": 433.57,
+      "text": "and he was not unlucky"
+    },
+    {
+      "start": 433.571,
+      "end": 435.336,
+      "text": "in the way we usually mean it."
+    },
+    {
+      "start": 435.391,
+      "end": 439.185,
+      "text": "He was simply matched."
+    },
+    {
+      "start": 439.498,
+      "end": 441.71,
+      "text": "He did not let it go."
+    },
+    {
+      "start": 441.77,
+      "end": 443.349,
+      "text": "In twenty twenty-one,"
+    },
+    {
+      "start": 443.35,
+      "end": 445.829,
+      "text": "civil-rights lawyers sued the city on his behalf,"
+    },
+    {
+      "start": 445.83,
+      "end": 448.44,
+      "text": "and three years later the case settled."
+    },
+    {
+      "start": 448.5,
+      "end": 449.54,
+      "text": "By news accounts,"
+    },
+    {
+      "start": 449.6,
+      "end": 452.071,
+      "text": "he was paid somewhere around three hundred"
+    },
+    {
+      "start": 452.116,
+      "end": 453.127,
+      "text": "thousand dollars."
+    },
+    {
+      "start": 453.187,
+      "end": 455.77,
+      "text": "But the money is not what matters here."
+    },
+    {
+      "start": 455.83,
+      "end": 457.21,
+      "text": "As part of that deal,"
+    },
+    {
+      "start": 457.27,
+      "end": 460.039,
+      "text": "the city was forced to rewrite its rules."
+    },
+    {
+      "start": 460.099,
+      "end": 462.138,
+      "text": "Police there can no longer arrest anyone"
+    },
+    {
+      "start": 462.139,
+      "end": 464.076,
+      "text": "on a face-match alone."
+    },
+    {
+      "start": 464.136,
+      "end": 467.23,
+      "text": "The match is treated as a lead and nothing more."
+    },
+    {
+      "start": 467.29,
+      "end": 469.509,
+      "text": "Every earlier case where the software was used"
+    },
+    {
+      "start": 469.51,
+      "end": 472.43,
+      "text": "to make an arrest has to be pulled and reviewed,"
+    },
+    {
+      "start": 472.49,
+      "end": 474.471,
+      "text": "going back years."
+    },
+    {
+      "start": 474.531,
+      "end": 476.35,
+      "text": "And a court will keep watch over the department"
+    },
+    {
+      "start": 476.351,
+      "end": 478.6,
+      "text": "to make sure the promise holds."
+    },
+    {
+      "start": 478.66,
+      "end": 479.839,
+      "text": "It is, for now, one"
+    },
+    {
+      "start": 479.84,
+      "end": 482.299,
+      "text": "of the strictest limits any American city has put"
+    },
+    {
+      "start": 482.3,
+      "end": 484.123,
+      "text": "on this technology."
+    },
+    {
+      "start": 484.183,
+      "end": 486.673,
+      "text": "But read that outcome closely."
+    },
+    {
+      "start": 486.733,
+      "end": 488.692,
+      "text": "Those rules bind one police department,"
+    },
+    {
+      "start": 488.693,
+      "end": 490.431,
+      "text": "in one city."
+    },
+    {
+      "start": 490.491,
+      "end": 491.39,
+      "text": "Everywhere else,"
+    },
+    {
+      "start": 491.391,
+      "end": 494.514,
+      "text": "this same power still works the way it always has."
+    },
+    {
+      "start": 494.574,
+      "end": 496.513,
+      "text": "And his case was only the first of its kind"
+    },
+    {
+      "start": 496.514,
+      "end": 498.273,
+      "text": "the whole country ever heard about —"
+    },
+    {
+      "start": 498.274,
+      "end": 501.105,
+      "text": "which is not the same as the first to happen."
+    },
+    {
+      "start": 501.165,
+      "end": 503.065,
+      "text": "Before his story ever broke,"
+    },
+    {
+      "start": 503.125,
+      "end": 504.645,
+      "text": "at least two other men —"
+    },
+    {
+      "start": 504.705,
+      "end": 507.825,
+      "text": "one in the same city, one two states away —"
+    },
+    {
+      "start": 507.885,
+      "end": 510.284,
+      "text": "had already been arrested this exact way,"
+    },
+    {
+      "start": 510.285,
+      "end": 512.943,
+      "text": "their cases only surfacing later."
+    },
+    {
+      "start": 513.003,
+      "end": 515.162,
+      "text": "He was only the first whose story got loud enough"
+    },
+    {
+      "start": 515.163,
+      "end": 518.141,
+      "text": "to force anyone to change a single rule."
+    },
+    {
+      "start": 518.201,
+      "end": 520.366,
+      "text": "And he was not the last."
+    },
+    {
+      "start": 520.426,
+      "end": 521.766,
+      "text": "In the years since,"
+    },
+    {
+      "start": 521.826,
+      "end": 523.725,
+      "text": "more people have been arrested on the say-so"
+    },
+    {
+      "start": 523.726,
+      "end": 525.517,
+      "text": "of a face-match."
+    },
+    {
+      "start": 525.577,
+      "end": 527.696,
+      "text": "One of them was eight months pregnant —"
+    },
+    {
+      "start": 527.697,
+      "end": 529.196,
+      "text": "held in a cell over a crime"
+    },
+    {
+      "start": 529.197,
+      "end": 531.829,
+      "text": "a computer had tied to her face."
+    },
+    {
+      "start": 531.889,
+      "end": 534.448,
+      "text": "By the count of the group that represented him,"
+    },
+    {
+      "start": 534.449,
+      "end": 535.228,
+      "text": "there are now more"
+    },
+    {
+      "start": 535.229,
+      "end": 537.268,
+      "text": "than a dozen known wrongful arrests like"
+    },
+    {
+      "start": 537.269,
+      "end": 540.248,
+      "text": "his in this country, and nearly every person named"
+    },
+    {
+      "start": 540.249,
+      "end": 542.089,
+      "text": "in them has been Black."
+    },
+    {
+      "start": 542.149,
+      "end": 544.828,
+      "text": "Each one an ordinary person."
+    },
+    {
+      "start": 544.888,
+      "end": 547.286,
+      "text": "Each one matched by a machine."
+    },
+    {
+      "start": 547.346,
+      "end": 552.526,
+      "text": "And each one believed over their own flat denial."
+    },
+    {
+      "start": 552.586,
+      "end": 555.123,
+      "text": "So here is where all of this leaves you."
+    },
+    {
+      "start": 555.183,
+      "end": 556.682,
+      "text": "The next time you renew a license,"
+    },
+    {
+      "start": 556.683,
+      "end": 558.063,
+      "text": "or upload a photo,"
+    },
+    {
+      "start": 558.123,
+      "end": 561.203,
+      "text": "or just walk past a camera you never notice,"
+    },
+    {
+      "start": 561.263,
+      "end": 564.203,
+      "text": "remember what your face has quietly become —"
+    },
+    {
+      "start": 564.263,
+      "end": 566.483,
+      "text": "a password you can never change,"
+    },
+    {
+      "start": 566.543,
+      "end": 568.726,
+      "text": "that software somewhere is"
+    },
+    {
+      "start": 568.786,
+      "end": 570.625,
+      "text": "already comparing against the worst thing"
+    },
+    {
+      "start": 570.626,
+      "end": 572.995,
+      "text": "that happened in your city today."
+    },
+    {
+      "start": 573.055,
+      "end": 575.154,
+      "text": "One man got his day, his settlement,"
+    },
+    {
+      "start": 575.155,
+      "end": 576.846,
+      "text": "and his apology."
+    },
+    {
+      "start": 576.906,
+      "end": 579.125,
+      "text": "He still does not get back the thirty hours,"
+    },
+    {
+      "start": 579.126,
+      "end": 582.74,
+      "text": "or the look on his daughters' faces on that lawn."
+    },
+    {
+      "start": 582.8,
+      "end": 585.099,
+      "text": "And the rules that finally protect him stop dead"
+    },
+    {
+      "start": 585.1,
+      "end": 586.916,
+      "text": "at one city's edge."
+    },
+    {
+      "start": 586.976,
+      "end": 589.436,
+      "text": "Past it, the machine is still watching,"
+    },
+    {
+      "start": 589.496,
+      "end": 590.596,
+      "text": "still guessing,"
+    },
+    {
+      "start": 590.656,
+      "end": 593.182,
+      "text": "still reaching for a face in the dark."
+    },
+    {
+      "start": 593.242,
+      "end": 595.872,
+      "text": "One day it may reach for yours."
+    },
+    {
+      "start": 595.932,
+      "end": 597.231,
+      "text": "If you would rather understand"
+    },
+    {
+      "start": 597.232,
+      "end": 599.552,
+      "text": "that before it happens than after,"
+    },
+    {
+      "start": 599.612,
+      "end": 601.627,
+      "text": "subscribe and stay."
+    },
+    {
+      "start": 601.687,
+      "end": 603.066,
+      "text": "Because there is one more way"
+    },
+    {
+      "start": 603.067,
+      "end": 605.287,
+      "text": "the state can make you a suspect —"
+    },
+    {
+      "start": 605.347,
+      "end": 607.407,
+      "text": "not with your face this time,"
+    },
+    {
+      "start": 607.467,
+      "end": 609.726,
+      "text": "but with the trail you leave without ever knowing"
+    },
+    {
+      "start": 609.727,
+      "end": 610.818,
+      "text": "it."
+    },
+    {
+      "start": 610.878,
+      "end": 613.596,
+      "text": "That is the case we take apart next."
+    }
+  ],
+  "graphics": [],
+  "figures": [
+    {
+      "start": 0.448,
+      "end": 6.448,
+      "kind": "kinetic",
+      "lines": [
+        "A BLURRY PHOTO.",
+        "A COMPUTER'S GUESS."
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 9.552,
+      "end": 15.552,
+      "kind": "kinetic",
+      "lines": [
+        "THE ALGORITHM SAID IT WAS YOU."
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 30.392,
+      "end": 36.392,
+      "kind": "kinetic",
+      "lines": [
+        "JANUARY 2020",
+        "A DETROIT SUBURB"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 72.441,
+      "end": 78.441,
+      "kind": "kinetic",
+      "lines": [
+        "≈ 30 HOURS IN A CELL",
+        "\"A COMPUTER DID.\""
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 108.552,
+      "end": 114.552,
+      "kind": "kinetic",
+      "lines": [
+        "CHARGES DROPPED",
+        "HOW DID THEY GET HIS NAME?"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 144.793,
+      "end": 150.793,
+      "kind": "kinetic",
+      "lines": [
+        "A GRAINY FRAME",
+        "NO NAME ATTACHED"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 178.436,
+      "end": 184.436,
+      "kind": "kinetic",
+      "lines": [
+        "A GUESS, RANKED BY A NUMBER",
+        "MILLIONS OF PHOTOS"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 226.332,
+      "end": 232.332,
+      "kind": "kinetic",
+      "lines": [
+        "A MATCH IS A LEAD — NOT A NAME TO ARREST"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 267.586,
+      "end": 273.586,
+      "kind": "kinetic",
+      "lines": [
+        "A PROBABILITY, NOT PROOF",
+        "WHY A FACE LIKE HIS?"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 304.244,
+      "end": 310.244,
+      "kind": "kinetic",
+      "lines": [
+        "FALSE MATCHES: 10–100× HIGHER",
+        "NIST · 2019"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 347.457,
+      "end": 353.457,
+      "kind": "kinetic",
+      "lines": [
+        "TRAINED ON TOO FEW OF US"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 406.174,
+      "end": 412.174,
+      "kind": "kinetic",
+      "lines": [
+        "YOUR FACE IS ALREADY IN THE LINEUP"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 440.698,
+      "end": 446.698,
+      "kind": "kinetic",
+      "lines": [
+        "APRIL 2021 · LAWSUIT",
+        "JUNE 2024 · SETTLEMENT",
+        "AUDIT SINCE 2017",
+        "COURT OVERSIGHT · 4 YEARS"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 485.383,
+      "end": 491.383,
+      "kind": "kinetic",
+      "lines": [
+        "FIRST CASE THE COUNTRY HEARD ABOUT",
+        "NOT THE FIRST TO HAPPEN"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 519.401,
+      "end": 525.401,
+      "kind": "kinetic",
+      "lines": [
+        "HE WAS NOT THE LAST"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 553.786,
+      "end": 559.786,
+      "kind": "kinetic",
+      "lines": [
+        "YOUR FACE IS A PASSWORD YOU CAN'T CHANGE",
+        "SUBSCRIBE"
+      ],
+      "style": "maskslide"
+    }
+  ]
+}

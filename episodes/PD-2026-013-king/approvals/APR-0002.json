@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-013-king",
+  "target_type": "publish",
+  "target_id": "youtube_schedule",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-24T00:00:00+09:00",
+  "requested_by": "local-codex",
+  "decided_at": "2026-06-24T00:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner explicitly instructed: \u4e88\u7d04\u6295\u7a3f\u3057\u3066. Approval covers YouTube private upload, thumbnail/caption attachment, and public schedule for 2026-06-28T12:00:00+09:00 only. Hash evidence is recorded in youtube_schedule_result.v001.json.",
+  "conditions": [
+    "Upload must target the allowlisted Prime Documentary channel.",
+    "Initial upload must be private.",
+    "Public schedule must be 2026-06-28T12:00:00+09:00 / 2026-06-28T03:00:00Z.",
+    "Synthetic media disclosure must be set where supported.",
+    "Do not alter script or claims.",
+    "Maintain King framing: assault arrest first, DNA swab during booking, rape case only as downstream database hit."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-013-king/09_package/final_delivery.v001.json"
+}

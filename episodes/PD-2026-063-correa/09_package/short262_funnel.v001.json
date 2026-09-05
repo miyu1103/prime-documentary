@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 262,
+  "episode_id": "PD-2026-063-correa",
+  "slug": "correa",
+  "loop": true,
+  "loop_join": "The final three beats (p21-p23) rewind the hook images in reverse -- short262_03, then short262_02, then short262_01 -- under the FULL CASE card, with p23 marked isCta and rewind and held to the last frame. Frame 0 opens on that same short262_01 image, a hand holding a blank torn ticket stub in the ER waiting room, so the loop closes on the identical blank number and the wait restarts exactly where it began.",
+  "second_watch_detail": "The blank ticket stub held up in the opening frame (short262_01) reads as a throwaway prop on the first pass; once L5 has explained constructive refusal -- nobody says no, yet the system never reaches the person holding the number -- that same blank slip is the actual instrument of the case: the number she was given and that was never called.",
+  "funnel_question_left_for_longform": "What does emergency law require a hospital to do, and what finding did the appeals court decline to review?",
+  "funnel_long_title": "A Hospital Handed Her Number 47 and Never Called It",
+  "funnel_long_video_id": "D5zX7PcL6zQ",
+  "description_line_1": "▶ FULL CASE: A Hospital Handed Her Number 47 and Never Called It | https://youtu.be/D5zX7PcL6zQ",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "Never Called",
+    "ctaLongThumbSrc": "shorts/short262/short262_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What does emergency law require a hospital to do, and what finding did the appeals court decline to review? The full case is here: https://youtu.be/D5zX7PcL6zQ",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it: the question and loop-join intent are read off episodes/_planning/short_designs/PD-2026-063-correa.design.v001.json and remotion/src/data/short262.ts (CUTS p21-p23, ctaLongTitle 'Never Called'), the second-watch detail and loop-image identity were confirmed by opening remotion/public/shorts/short262/short262_01.png directly, and the long-form title and video id are read off episodes/PD-2026-063-correa/09_package/youtube_meta.v001.json and the live channel audit in scripts/_yt_audit.json. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

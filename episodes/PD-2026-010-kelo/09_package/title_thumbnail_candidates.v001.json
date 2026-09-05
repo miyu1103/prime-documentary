@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-010-kelo",
+  "slug": "kelo",
+  "revision": "v001",
+  "generated_at": "2026-06-21T17:04:51.526539+00:00",
+  "status": "selected_private_upload_candidate",
+  "selection": {
+    "selected_id": "B",
+    "selected_title": "YOUR HOME FOR A DEVELOPER?",
+    "selected_file": "episodes/PD-2026-010-kelo/09_package/thumbnail.selected.v001.png",
+    "selected_sha256": "8378ed0b32e6fe359a600b39fc128c1efc575120ca7cb6d4d508a044cee9afd1",
+    "selected_background": "THUMB-02.png",
+    "reason": "Selected. Turns the Kelo holding into an immediate viewer-facing question while staying neutral and factual."
+  },
+  "background_selection": {
+    "selected_background": "THUMB-02.png",
+    "criteria": {
+      "browse_stop": "Immediate visual interruption in the feed.",
+      "story_clarity": "Viewer can infer home versus redevelopment without reading metadata.",
+      "mobile_legibility": "Enough dark/quiet space for the title overlay.",
+      "rights_safety": "No real-person likeness, judge likeness, or authentic document impersonation."
+    },
+    "options": [
+      {
+        "id": "THUMB-01",
+        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-01.png",
+        "scores": {
+          "browse_stop": 23,
+          "story_clarity": 22,
+          "mobile_legibility": 23,
+          "rights_safety": 25,
+          "total": 93
+        },
+        "assessment": "Strong symbolic house-versus-demolition image; less immediate than option 02 because the demolition threat is farther from the house."
+      },
+      {
+        "id": "THUMB-02",
+        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-02.png",
+        "scores": {
+          "browse_stop": 25,
+          "story_clarity": 25,
+          "mobile_legibility": 23,
+          "rights_safety": 25,
+          "total": 98
+        },
+        "assessment": "Selected. The small home under a looming wrecking ball communicates the stakes instantly, with no real-person likeness and enough negative space for bold text."
+      },
+      {
+        "id": "THUMB-03",
+        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-03.png",
+        "scores": {
+          "browse_stop": 21,
+          "story_clarity": 20,
+          "mobile_legibility": 24,
+          "rights_safety": 25,
+          "total": 90
+        },
+        "assessment": "Clean public/private contrast, but the emotional event is less obvious at small sizes."
+      },
+      {
+        "id": "THUMB-04",
+        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-04.png",
+        "scores": {
+          "browse_stop": 22,
+          "story_clarity": 22,
+          "mobile_legibility": 21,
+          "rights_safety": 25,
+          "total": 90
+        },
+        "assessment": "Moody and safe, but busier and less instantly legible than option 02."
+      },
+      {
+        "id": "THUMB-05",
+        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-05.png",
+        "scores": {
+          "browse_stop": 18,
+          "story_clarity": 17,
+          "mobile_legibility": 24,
+          "rights_safety": 25,
+          "total": 84
+        },
+        "assessment": "Safe legal-document mood, but too abstract for a high-CTR browse surface."
+      },
+      {
+        "id": "THUMB-06",
+        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-06.png",
+        "scores": {
+          "browse_stop": 19,
+          "story_clarity": 19,
+          "mobile_legibility": 23,
+          "rights_safety": 25,
+          "total": 86
+        },
+        "assessment": "Good aftermath symbolism, but lacks the immediate conflict shown in option 02."
+      }
+    ]
+  },
+  "title_options": [
+    {
+      "id": "A",
+      "title": "THEY TOOK HER HOME",
+      "variant": "left",
+      "scores": {
+        "curiosity": 24,
+        "accuracy": 24,
+        "mobile_legibility": 24,
+        "emotional_stakes": 24,
+        "total": 96
+      },
+      "assessment": "Direct and emotional; strong, but slightly less audience-involving than option B.",
+      "file": "episodes/PD-2026-010-kelo/10_thumbnail/thumbnail.kelo_option_A.v001.png",
+      "sha256": "b8fcb89f329e139515df88c2ea032c6fc7ba6dd3532d2badb795bcf1a04ef955",
+      "background_static": "kelo/thumbs/THUMB-02.png"
+    },
+    {
+      "id": "B",
+      "title": "YOUR HOME FOR A DEVELOPER?",
+      "variant": "left",
+      "scores": {
+        "curiosity": 25,
+        "accuracy": 25,
+        "mobile_legibility": 23,
+        "emotional_stakes": 25,
+        "total": 98
+      },
+      "assessment": "Selected. Turns the Kelo holding into an immediate viewer-facing question while staying neutral and factual.",
+      "file": "episodes/PD-2026-010-kelo/10_thumbnail/thumbnail.kelo_option_B.v001.png",
+      "sha256": "8378ed0b32e6fe359a600b39fc128c1efc575120ca7cb6d4d508a044cee9afd1",
+      "background_static": "kelo/thumbs/THUMB-02.png"
+    },
+    {
+      "id": "C",
+      "title": "THE 5-4 TAKING",
+      "variant": "left",
+      "scores": {
+        "curiosity": 22,
+        "accuracy": 25,
+        "mobile_legibility": 25,
+        "emotional_stakes": 21,
+        "total": 93
+      },
+      "assessment": "Accurate and short, but less concrete for non-legal viewers.",
+      "file": "episodes/PD-2026-010-kelo/10_thumbnail/thumbnail.kelo_option_C.v001.png",
+      "sha256": "9ba1d6d41b4c09dd1b29be0b1e4372f829b69006b4836deacc472db11def0764",
+      "background_static": "kelo/thumbs/THUMB-02.png"
+    }
+  ],
+  "rights_gate": {
+    "real_person_likeness": false,
+    "judge_likeness": false,
+    "deepfake": false,
+    "symbolic_ai_reconstruction": true,
+    "commercial_use_ok": true
+  }
+}

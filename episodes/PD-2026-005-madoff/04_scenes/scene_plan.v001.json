@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "script_ref": "script.en.v001",
+  "topic_angle_ref": "v002",
+  "target_runtime": "12:00",
+  "shot_count_target": 126,
+  "animation_cap_pct": 10,
+  "tier_legend": {
+    "R": "true animation (Runway/SVD) — key beats only, <=10% total",
+    "M": "moving still (Ken Burns / 2.5D parallax / drifting light/dust) — default",
+    "K": "motion graphics rendered in Remotion (the return curve, Ponzi loop diagram, numbers, timeline, quote/citation cards, captions)"
+  },
+  "recurring_hero_motif": "THE LINE — an impossibly smooth, always-rising return curve. It opens the film, returns at each act as a visual refrain, and in the ending is revealed as the warning sign. Rendered in Remotion (tier K) so it is exact and animatable; never a generated image.",
+  "image_pipeline": "SDXL local (Windows RTX 4090, ComfyUI/API), fully Codex-automatable — NO Midjourney. RealVisXL/JuggernautXL, locked seed family for unity, 3-4 candidates per shot -> select best -> R-ESRGAN 4x -> 1080p. See sdxl_prompts.v001.md. ALL people are anonymous silhouettes (no real-person likeness, invariant 11). Charts/diagrams/timeline/numbers/quote+citation cards/captions are Remotion (tier K), NOT generated images. Palette dark + gold; NO pink anywhere.",
+  "sections": [
+    {"id": "00_hook", "time": "0:00-0:30", "script_part": "HOOK", "shots": 6, "runway_shots": 1, "key_claims": ["CLM-0006"], "visual_spine": "The Line appears and climbs; one silhouette studies it while a crowd sees only 'safe'. Disclaimer card."},
+    {"id": "01_opening", "time": "0:30-1:20", "script_part": "OPENING", "shots": 10, "runway_shots": 0, "key_claims": ["CLM-0008"], "visual_spine": "Trusted institutions (bank/university/charity as symbols) pour money toward a calm golden figure-as-silhouette; thesis card 'steadiness was the trick'."},
+    {"id": "actI_trust", "time": "1:20-3:30", "script_part": "ACT 1", "shots": 22, "runway_shots": 1, "key_claims": ["CLM-0008", "CLM-0006"], "visual_spine": "The respectable name: trading-floor heritage, the invite-only 'club' door, the slow dependable climb vs jagged real markets; professional victims as silhouettes lowering their guard. Ends on the question 'how?'."},
+    {"id": "actII_system", "time": "3:30-6:30", "script_part": "ACT 2", "shots": 32, "runway_shots": 1, "key_claims": ["CLM-0003", "CLM-0004"], "visual_spine": "The hidden system: money into a bank account, almost no trades; the Ponzi loop diagram (new hands -> old hands); fabricated statements/confirmations; the $65B-vs-$17.5B reveal as a number that shrinks from illusion to cash; the built-in fatal math."},
+    {"id": "actIII_math", "time": "6:30-9:00", "script_part": "ACT 3", "shots": 24, "runway_shots": 1, "key_claims": ["CLM-0005", "CLM-0006", "CLM-0011"], "visual_spine": "The analyst does the math (calculator, the too-smooth line annotated as impossible); warning letters travel to a vast institutional facade (SEC) and go unread; the watchdog asleep; OIG finding = failure not corruption."},
+    {"id": "actIV_collapse", "time": "9:00-10:45", "script_part": "ACT 4", "shots": 22, "runway_shots": 1, "key_claims": ["CLM-0007", "CLM-0001", "CLM-0002", "CLM-0010", "CLM-0009"], "visual_spine": "2008 panic, withdrawals drain an empty vault; confession; arrest; courthouse + plea (11 felonies); 150-year card; death-in-prison beat; then the surprising clawback recovery (coins flowing back) with the honest caveat."},
+    {"id": "ending", "time": "10:45-12:00", "script_part": "ENDING", "shots": 10, "runway_shots": 0, "key_claims": ["CLM-0006"], "visual_spine": "The Line returns; risk-vs-reward contrast; the takeaway card 'too smooth = warning'; analyst vs regulator split; subscribe/next-episode CTA."}
+  ],
+  "shot_total_check": 126,
+  "animation_estimate": "~5 Runway/SVD beats + Remotion motion graphics; true animation ~4-5% of 126 (well within 10% cap). Most motion is tier M (moving stills) and tier K (Remotion graphics).",
+  "abundance_targets": {"real_or_symbolic_inserts": ">=10", "motion_graphics_beats": ">=12 (curve/diagram/timeline/cards)", "sfx_cues": "60-100", "ambience_coverage_pct": 100, "silence_beats": ["before '150 years'", "before 'he wasn't really investing the money at all'"]},
+  "status": "draft_ready_for_generation"
+}

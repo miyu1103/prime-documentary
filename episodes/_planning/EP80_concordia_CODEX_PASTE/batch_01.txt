@@ -1,0 +1,56 @@
+EP80_concordia — 画像発注 バッチ 1/23（8枚）
+区分: HOOK / ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, airline livery, airline tail markings, ship funnel markings, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) N001.png
+   [N001]  flags: 
+   Extreme macro of a brass ship's clinometer mounted on a bulkhead, the pendulum hanging dead centre at rest, a bright brass lamp burning beside it, no numerals on the arc
+
+2) N002.png
+   [N002]  flags: 
+   A wide carpeted cruise ship lounge in the evening, chandeliers blazing, deep upholstered chairs, polished floor, empty and level
+
+3) N003.png
+   [N003]  flags: 
+   The lit superstructure of a very large cruise ship at night seen from the sea, every deck window blazing, calm dark water, the ship entirely plain unmarked white with a completely bare funnel carrying no symbol, no name and no company colour of any kind
+
+4) N004.png
+   [N004]  flags: 
+   A brass ship's clock on a panelled bulkhead, hands near a quarter to ten, a bright wall lamp flaring beside it, no numerals on the dial
+
+5) N005.png
+   [N005]  flags: 
+   An orange lifejacket hanging alone on the open door of a cabin wardrobe, a bright bedside lamp throwing hard shadow across it
+
+6) N006.png
+   [N006]  flags: 
+   A cruise ship stairwell of polished brass and glass seen from below, chandelier blazing at the top, empty and level
+
+7) N007.png
+   [N007]  flags: 
+   A calm Mediterranean sea at dusk, a brilliant orange band low on the horizon, no vessels, glassy water
+
+8) N008.png
+   [N008]  flags: 
+   An Italian island harbour in brilliant afternoon sun, pastel stone houses stacked up the hillside, small fishing boats, clear sky

@@ -1,0 +1,705 @@
+{
+  "episode_id": "PD-2026-042-young",
+  "slug": "young",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "Enok7A7wGBA",
+    "title": "Police Raided the Wrong House and Handcuffed an Innocent Woman",
+    "url": "https://www.youtube.com/watch?v=Enok7A7wGBA",
+    "privacy": "public",
+    "views": 14
+  },
+  "shorts_existing": [
+    "short44",
+    "short52"
+  ],
+  "shorts_to_author": 1,
+  "existing_angles_do_not_repeat": {
+    "short44": [
+      "Armed police break down your door.",
+      "Wrong house.",
+      "You're right — and it's all on camera.",
+      "Does the law owe you anything?",
+      "A Chicago social worker is changing after a shift",
+      "when twelve officers force her door.",
+      "She's cuffed before she can cover herself.",
+      "They had a real warrant, signed by a judge,",
+      "but the address was wrong.",
+      "Again and again she says: you have the wrong house.",
+      "A body camera recorded all of it.",
+      "The city fought two years to bury the video.",
+      "A TV station aired it, and the country heard her.",
+      "An oversight agency flagged nearly a hundred alleged violations.",
+      "But a watchdog's finding is not a court's ruling.",
+      "The city paid her two point nine million dollars.",
+      "But look what a settlement is.",
+      "No court found anyone broke the law.",
+      "No officer was declared liable.",
+      "The reform in her name was voted down.",
+      "The rule guarding your door is still a command —",
+      "with almost nothing behind it.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ],
+    "short52": [
+      "Twelve officers with rifles just broke down",
+      "a door in Chicago.",
+      "It's the wrong house",
+      "and being right won't save her.",
+      "A social worker comes home from her shift.",
+      "She's changing out of her work clothes",
+      "when her front door caves in.",
+      "She's handcuffed before she can cover herself",
+      "and she tells them",
+      "again and again:",
+      "you have the wrong house.",
+      "The warrant was real.",
+      "The tip behind it was wrong.",
+      "The man they wanted lived somewhere else",
+      "wearing a court-ordered ankle monitor.",
+      "His exact location was on a screen",
+      "the entire time.",
+      "A body camera recorded everything.",
+      "So the city apologized right? No.",
+      "It fought in court to keep that video hidden",
+      "until a TV station aired it.",
+      "Then the city paid her 2.9 million dollars.",
+      "Here's the part they don't say:",
+      "no court ever ruled a single officer",
+      "violated her rights.",
+      "The money admitted nothing.",
+      "Follow for the cases they don't teach you",
+      "full film on the channel."
+    ]
+  },
+  "script": "episodes\\_planning\\EP42_young_script.en.v001.md",
+  "candidate_payload_lines": [
+    "They pull her life apart looking for a man who was never here.",
+    "Then, in December 2020, a CBS station in Chicago obtained the body-camera footage and put it on television.",
+    "Your privacy in that last moment, your dignity, the chance to open your own door — none of it changes whether the thing they find inside is real.",
+    "The country of the 1960s, when the exclusionary rule grew into what it is, is not the country of 2006, he writes.",
+    "The argument that civil suits are enough was never the majority's — only the result was.",
+    "Young was never charged with anything; there was nothing of hers to suppress.",
+    "The city agreed to pay her two point nine million dollars, and on December 15th, 2021, the City Council approved it — reported as forty-eight to nothing.",
+    "In the language of the law, nobody did anything wrong to Anjanette Young that night.",
+    "One sergeant who led the raid, Alex Wolinski, was fired by the city's Police Board in the summer of 2023, by a vote of five to three.",
+    "In November 2022, a City Council committee voted it down, ten to four.",
+    "It is the one thing that puts this story in front of the next person who is sure it could never be them."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short179",
+      "angle": "The Supreme Court kept the knock-and-announce rule and took away the only punishment for breaking it.",
+      "funnel_question_left_for_longform": "What that remaining remedy was actually worth to a woman whose door was the wrong one.",
+      "loop": true,
+      "loop_join": "L5 ends with the knock-and-announce rule still standing, and L1 opens by describing that rule, so the loop replays it with the remedy already gone.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "Before police force their way into your home, they knock and announce. In 2006 the Supreme Court decided what happens when they do not.",
+          "delivery": "intense",
+          "source_lines": [
+            "Before police force their way into a home, they knock, they announce who they are, and they give you a moment to reach the door."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "Detroit, 1998. Police hold a valid warrant. They announce themselves, then wait three to five seconds before going through an unlocked door. The violation is admitted.",
+          "delivery": "building",
+          "source_lines": [
+            "Police hold a valid warrant to search the home of a man named Booker Hudson.",
+            "and then they wait only three to five seconds before going through an unlocked door. It is not long enough. Everyone in the case agrees it is not long enough; Michigan does not even argue the point. The violation is admitted."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "The Court answers five to four. The rule is still a command of the Fourth Amendment. Police still have to obey it. What it takes away is the punishment.",
+          "delivery": "building",
+          "source_lines": [
+            "The knock-and-announce rule, he writes, is still a command of the Fourth Amendment. It still exists. Police still have to obey it. The Court does not say officers can stop knocking.",
+            "What the Court takes away is the punishment."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "The dissent is blunt. Take away the remedy, and you take away the rule. A right with no consequence for breaking it is not really a right.",
+          "delivery": "intense",
+          "source_lines": [
+            "Take away the remedy, he says, and you take away the rule.",
+            "A right with no consequence for breaking it, he writes, is not really a right at all."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "The majority's reasons: police are more professional now, and the courthouse door is open.",
+          "delivery": "building",
+          "source_lines": [
+            "Police forces are more professional now, more disciplined from within than they were then.",
+            "And the courthouse door is open: a person whose rights were trampled can bring a civil-rights suit"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Those reasons carried only four votes. The fifth justice wrote separately that exclusion was not in doubt.",
+          "delivery": "building",
+          "source_lines": [
+            "But those reasons carried only four votes.",
+            "The fifth, Justice Anthony Kennedy, supplied the deciding vote, yet wrote separately that the exclusionary rule was not in doubt."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The dissent answered with history. Civil suits had sat on the books for generations, changing almost nothing.",
+          "delivery": "intense",
+          "source_lines": [
+            "civil suits had sat on the books for generations and changed almost nothing"
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "What is left is a civil lawsuit you bring yourself, years after the door is already off its hinges. The knocking rule is still there.",
+          "delivery": "calm",
+          "source_lines": [
+            "The majority's reply is that one remedy still stands — a civil lawsuit."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R10",
+          "subject": "a front door from inside, chain on",
+          "source": "GENERATE",
+          "prompt": "a residential front door seen from inside a dark hallway with the security chain drawn across it and one hard blade of light burning under the sill, the hall swallowed in black, lit ONLY by that light, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "front door inside chain hallway"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "the knock before the announcement",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand knocking on door",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51275__open_door_bright_light.mp4",
+          "bound_title": "a person counting bank notes on the table",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4826,
+          "motion": 2.517,
+          "luma": 159.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R10",
+          "subject": "a splintered strike plate",
+          "source": "GENERATE",
+          "prompt": "macro of a residential door frame splintered white where the strike plate has been torn out of the timber, brass screws bent in the wreckage, lit ONLY by one work lamp which is switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "splintered door frame macro"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "the Court at night, no inscriptions",
+          "source": "GENERATE",
+          "prompt": "the marble facade and column line of a supreme courthouse at night with the architrave bare of any inscription and the sky black above it, nobody on the steps, lit ONLY by hard uplights switched on at the column bases, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "courthouse facade at night"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a warrant face down on a car seat",
+          "source": "GENERATE",
+          "prompt": "a folded document lying face down on the passenger seat of a parked car at night with all its writing worn completely blank, keys beside it, nobody in the car, lit ONLY by the dome light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "document on car seat"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U05",
+          "subject": "three to five seconds",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stopwatch close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29115__broken_window_glass_shards.mp4",
+          "bound_title": "the pillars of the memorial are lined up",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.383,
+          "motion": 53.488,
+          "luma": 97.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "R10",
+          "subject": "the lock that was never thrown",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "door lock close up macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33524__clock_ticking_macro.mp4",
+          "bound_title": "locker with padlock",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5109,
+          "motion": 2.66,
+          "luma": 144.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U04",
+          "subject": "a hallway door standing open on a dark room",
+          "source": "GENERATE",
+          "prompt": "a residential hallway with one interior door standing wide open onto a completely dark room beyond it, the runner rucked up on the boards, nobody in frame, lit ONLY by one hall fixture which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hallway open door dark room"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U09",
+          "subject": "boots crossing the boards",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "boots walking on floor",
+          "bound_title": "graphs on multiple screens",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3894,
+          "motion": 20.76,
+          "luma": 59.4
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "a torch beam crossing a stairwell",
+          "source": "GENERATE",
+          "prompt": "one hard torch beam sweeping across the turn of a domestic staircase in the dark, thick with disturbed dust, nobody visible in the beam, lit ONLY by that torch which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "flashlight beam in stairwell"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U05",
+          "subject": "a wall clock counting five seconds",
+          "source": "GENERATE",
+          "prompt": "a plain round wall clock on a domestic hallway wall with a completely blank featureless face and no numerals, its second hand caught in a short arc of motion blur, lit ONLY by one hall fixture switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "wall clock blank face"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "I07",
+          "subject": "nine chairs, five lit and four in shadow",
+          "source": "GENERATE",
+          "prompt": "nine identical high-backed chairs standing empty behind one long bench in a dark chamber, the five chairs at one end catching hard light and the remaining four lost in shadow, no inscriptions anywhere, lit ONLY by one bank of lights switched on above that end, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chairs behind bench"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "R06",
+          "subject": "the gallery of the room that ruled",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courtroom interior benches",
+          "bound_file": "H:\\pd-media\\assets\\archive\\courtroom_justice\\ia__witnessfortheprosecutiontrailer__witness-for-the-prosecution-trailer.mp4",
+          "bound_title": "interior, room, home, modern, floor, house, furniture, hall, architecture, wall,",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.408,
+          "motion": 3.771,
+          "luma": 71.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "I02",
+          "subject": "a courtroom door plate worn smooth",
+          "source": "GENERATE",
+          "prompt": "macro of a heavy brass plate screwed to a panelled courtroom door with its engraving worn completely smooth and unreadable, the timber dark around it, lit ONLY by one corridor fixture switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "brass plate on wooden door"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "W06",
+          "subject": "an evidence bag that stays admitted",
+          "source": "GENERATE",
+          "prompt": "one sealed clear evidence bag lying flat on a steel counter with its paper label worn completely blank and unreadable and its contents in shadow, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "sealed evidence bag counter"
+        },
+        {
+          "n": 16,
+          "role": "payoff",
+          "line": "L3",
+          "motif": "R12",
+          "subject": "keys handed back across a counter",
+          "source": "GENERATE",
+          "prompt": "macro of a ring of house keys being set down on a steel counter by a single hand, no face or body above the wrist, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "keys on counter hand"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "one chair left in a dark room",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty chair dark room",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-0371__sparks_slow_motion.mp4",
+          "bound_title": "empty seats in an arena with red seats",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3899,
+          "motion": 10.424,
+          "luma": 35.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M07",
+          "subject": "a row of bench lamps with one gone dark",
+          "source": "GENERATE",
+          "prompt": "a long bench carrying five identical brass lamps of which four stand dark and cold and a single lamp at the far end is switched on and is the only light in frame, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "row of desk lamps bench"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I04",
+          "subject": "four empty bolt holes where a fixture was",
+          "source": "GENERATE",
+          "prompt": "macro of a bare institutional wall showing four empty bolt holes and a clean unfaded rectangle where a heavy fixture has been unbolted and taken away, lit ONLY by one caged bulb which is switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "bolt holes on bare wall"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U02",
+          "subject": "a door standing wide open on nothing",
+          "source": "GENERATE",
+          "prompt": "a heavy residential door standing wide open onto complete darkness with nothing visible beyond the threshold, the hallway floor bare, lit ONLY by one hall fixture which is switched on behind camera, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open door into darkness"
+        },
+        {
+          "n": 21,
+          "role": "body",
+          "line": "L4",
+          "motif": "R11",
+          "subject": "the switch by the door",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "light switch close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21666__elevator_interior_steel.mp4",
+          "bound_title": "blurred city lights",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3937,
+          "motion": 5.419,
+          "luma": 42.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R10",
+          "subject": "a hallway at night with the front door still open",
+          "source": "GENERATE",
+          "prompt": "a residential hallway at night with the front door standing open onto the dark street and a single hall lamp burning above the coats, nobody present, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2006 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hallway front door open night"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the chained front door",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "the courthouse door they said was open",
+          "source": "FOOTAGE",
+          "footage_query": "tall door held open into a lobby",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\goods_in_motion\\pixabay_extra__v_130783__elevator-door-open-waiting-elevator-sliding-door-lift-waitin.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y01",
+          "subject": "the professionalism the majority trusted",
+          "source": "FOOTAGE",
+          "footage_query": "jacket hanging inside an open metal locker",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14899__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "where you file the suit yourself",
+          "source": "FOOTAGE",
+          "footage_query": "public counter with a stack of blank forms",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-18017__us_constitution_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "M04",
+          "subject": "the case you have to build alone",
+          "source": "FOOTAGE",
+          "footage_query": "blank notepad and pen on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0451__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "the open door, in daylight",
+          "source": "FOOTAGE",
+          "footage_query": "morning light through tall lobby windows",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51254__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "R08",
+          "subject": "the five who took the remedy away",
+          "source": "FOOTAGE",
+          "footage_query": "five empty chairs in a row",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46773__empty_chair_in_spotlight_grief.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U07",
+          "subject": "the fifth, writing separately",
+          "source": "FOOTAGE",
+          "footage_query": "one folder set apart from a stack",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\pixabay_extra__v_69535__book-library-history-literature-text-studio-memory-school-st.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U01",
+          "subject": "the desk where that opinion was written",
+          "source": "FOOTAGE",
+          "footage_query": "single lamp lit on a long desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12499__wooden_desk_lamp_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I06",
+          "subject": "a concurrence of a page and a half",
+          "source": "FOOTAGE",
+          "footage_query": "single blank sheet on a polished table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30345__newspaper_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "W04",
+          "subject": "one of them not going along",
+          "source": "FOOTAGE",
+          "footage_query": "row of doors with one standing open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31117__bank_building_columns.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U08",
+          "subject": "generations of civil suits on the books",
+          "source": "FOOTAGE",
+          "footage_query": "wall of old bound volumes on shelves",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0590__law_library_books.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U10",
+          "subject": "the history the dissent went back to",
+          "source": "FOOTAGE",
+          "footage_query": "hand pulling an old volume from shelf",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\pixabay_extra__v_16359__flipping-pages-book-reading-library.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W09",
+          "subject": "years of it, changing almost nothing",
+          "source": "FOOTAGE",
+          "footage_query": "pages of an old book turning",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1362__newspaper_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "the record of every one of them",
+          "source": "FOOTAGE",
+          "footage_query": "card catalogue cabinet in a reading room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10147__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "what all that changed",
+          "source": "FOOTAGE",
+          "footage_query": "faded patch on an old painted wall",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        }
+      ],
+      "type": "C — a quotation or document",
+      "avoids": "Shorts 44 and 52 both ran the raid, the video and the settlement; this cut is the 2006 ruling underneath all of it, the reason a right can survive with nothing behind it.",
+      "era": "2006 Washington, D.C.",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "Take away the remedy",
+          "style": "punch",
+          "words": [
+            "NO REMEDY",
+            "NO RULE"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "four votes",
+          "style": "number",
+          "big": "4",
+          "bigSize": 260,
+          "label": "VOTES ONLY",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "b"
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

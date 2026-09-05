@@ -1,0 +1,56 @@
+EP85_katrina — 画像発注 バッチ 10/24（8枚）
+区分: ACT_3 — 湿地の試験
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, person in water, rooftop figure, rescue, school bus, crowd, body, corpse, cross marker, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) W073.png
+   [W073]  flags: 
+   A cypress swamp in flat bright daylight, dark still water between the trunks
+
+2) W074.png
+   [W074]  flags: 
+   An earth levee running through swamp, seen along its crest, bright overcast
+
+3) W075.png
+   [W075]  flags: 
+   A test embankment under construction in a swamp in the 1970s, plain machinery, bright daylight
+
+4) W076.png
+   [W076]  flags: P
+   Steel sheet piling being driven into a levee crest by a rig, bright daylight, workers seen from behind
+
+5) W077.png
+   [W077]  flags: 
+   A short concrete test wall standing on an earth bank in open country, bright daylight
+
+6) W078.png
+   [W078]  flags: 
+   The same test wall with water impounded against one side, bright daylight
+
+7) W079.png
+   [W079]  flags: 
+   Instrument stakes and gauges set in a line across a test embankment, close, hard light
+
+8) W080.png
+   [W080]  flags: 
+   A dial gauge mounted on a stand against a concrete wall, close, one work lamp, no numerals

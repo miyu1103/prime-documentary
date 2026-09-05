@@ -234,3 +234,32 @@ Retention timestampをscene rangesへjoin。
 - analytics data gap
 
 公開後のtitle/thumbnail変更は時刻と前後データ窓を保存する。
+
+## 17. Post-Publish Standard Operations (EP10+)
+
+EP10以降、全エピソードで**公開または予約の直後に以下を必須実行**する（EP1-9は遡及任意）。
+理由：公開しただけでは取りこぼしが出る（字幕欠落・再生リスト未登録・engagement未設置）。
+北極星＝視聴/登録/維持を伸ばす × BAN回避。
+
+各動画でのルーチン（at publish/schedule time）：
+
+1. **Audit（read-only）** — 当該動画の状態を確認：`uploadStatus=processed`、privacy正、rejection/failure無し、`madeForKids=False`、`defaultAudioLanguage=en`。
+2. **Captions sidecar** — `captions.final.vNNN.srt`（**最終レンダーに整合したもの**）を `en/standard` でアップロード。**proxy版(`captions.review_proxy.*`)は禁止**（タイミング不整合リスク）。最終SRTが無ければ公開前に生成する。
+3. **Playlist** — `31_CONTENT_TAXONOMY` のチャンネル分類に従い該当再生リストへ**必ず登録**（未登録ゼロ）。
+4. **Pinned comment** — engagement質問コメントを `@PrimeDocumentaryStudio` で投稿。文面は `pinned_comment.md` を使う。※**ピン留めはAPI不可のため手動**。
+5. **Verify** — 字幕トラック(`en/standard`)とプレイリスト所属を再読込で確認。
+6. **Record** — manifest/event に caption/playlist/comment の実施を記録。
+
+API capability boundaries（doc 33 capability registry と同期）：
+
+- **API可**：stats取得、動画状態、metadata編集、`playlistItems`追加、`captions`追加、`commentThreads`投稿。
+- **API不可（Studio/手動）**：サムネA/Bテスト（テストと比較）、CTR/impressions取得、コメントのピン留め。
+- **要有効化**：YouTube Analytics API（GCP project `575149180320` で無効＋トークンに `yt-analytics.readonly` スコープ無し）。維持率/流入/動画別登録者増の自動取得にはこの2点が前提。
+
+Tooling（read-only監査＋冪等な追加系書き込み）：`scripts/yt_full_audit.py`、`scripts/yt_deep_audit.py`、`scripts/yt_apply_playlist_captions.py`。実行は `.venv` python ＋ `PYTHONIOENCODING=utf-8`（cp932回避）。
+
+Publish gate add-on（EP10+、section 10 へ加算）：
+
+- `captions_sidecar_final_uploaded == true`（proxy不可）
+- `playlist_assigned == true`
+- `pinned_comment_posted == true`（pin自体は手動pending許容、postedは必須）

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-006-terry",
+  "target_type": "edit",
+  "target_id": "first_cut_review_proxy_to_finalization",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T19:35:00+09:00",
+  "requested_by": "codex",
+  "decided_at": "2026-06-20T19:35:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner approved continuing from first-cut review proxy to completion in chat on 2026-06-20. Approval covers the EP6 Terry finalization path for the current locked script and v001 review proxy, including the ElevenLabs paid narration run using the existing manifest budget limits (soft $100 / hard $200). It does not authorize upload, public publish, or script/fact edits.",
+  "conditions": [
+    "Use idempotent ElevenLabs chunk generation and skip already-current chunks.",
+    "Keep total estimated paid narration cost within the manifest budget limits.",
+    "Do not upload, publish, or change visibility without a separate publish approval.",
+    "Do not modify the locked script, annotated script, or claims."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-006-terry/08_edit/terry_review_proxy_v001.mp4"
+}

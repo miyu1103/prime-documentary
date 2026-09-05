@@ -1,0 +1,86 @@
+{
+  "schema_version": "thumbnail_generation_receipt.v001",
+  "created_at": "2026-08-24T19:17:22.5310826+09:00",
+  "order": {
+    "file": "episodes/_planning/EP77-82_THUMB_CODEX.v004.md",
+    "sha256": "E506ACAAD200478EE9A5EF6C5A368724A137F2051D6DC0F97412D773F15B105E",
+    "requested_new_assets": 37,
+    "preexisting_asset": "E:/pd-media/05_visuals/thumbs/keybridge_v3/THUMB-01.v002_graded.png"
+  },
+  "provider": "codex_builtin_image_gen",
+  "generation": {
+    "initial_assets": 37,
+    "targeted_repair_assets": 11,
+    "provider_requests_total": 48,
+    "generated_bytes_total": 90016014,
+    "overwrites": 0,
+    "automatic_identical_retries": 0
+  },
+  "selection": {
+    "selected_total": 20,
+    "technical_gate": "20 of 20 PASS scripts/check_thumb_punch.py",
+    "feed_review": "7 of 7 selected feed sheets reviewed at 168x94",
+    "owner_approval": false,
+    "headline_composited": false,
+    "title_pair_validated": false,
+    "note": "These are text-free hero plates. Final title/headline pairing and the exact thumbnail revision remain at the owner approval gate."
+  },
+  "headline_claim_check": {
+    "tool": "scripts/check_packaging_claims.py with explicit --slug and --thumb-text",
+    "supported": ["keybridge: SIX MEN WERE UP THERE", "hinders: NO CRIME NO CHARGE"],
+    "unverified_soft": [
+      "colgan: EIGHTEEN SECONDS NOBODY LOOKED",
+      "alaska261: FOUR EXTENSIONS APPROVED",
+      "station: NOT FIRE RETARDANT",
+      "valdez: FIVE BILLION FIVE HUNDRED MILLION"
+    ],
+    "indeterminate": ["concordia: HE WAS ASHORE FIRST (checker extracted zero claims)"],
+    "release_effect": "Headline compositing and package approval remain blocked until the episode record supports the exact wording or the wording is revised."
+  },
+  "selected_assets": [
+    {"episode":"keybridge_v3","file":"THUMB-02.v002_graded.png","sha256":"14F76A8B1D5B1C221B38BBBC69B213146041C0BFAD4F5028D67FD26C0E6A9A97","dimensions":"1672x941"},
+    {"episode":"keybridge_v3","file":"THUMB-03.v002.png","sha256":"29284802DD892BCBCCECBC29CAABE972E2A967D641CFF0039DF19602C32CEBA9","dimensions":"1672x941"},
+    {"episode":"keybridge_v3","file":"THUMB-10.png","sha256":"674B84705E5FE016D79D6D7DA850332E0D80823CDB4A15ED197559FBBA42077D","dimensions":"1672x941"},
+    {"episode":"colgan_v3","file":"THUMB-01.v002.png","sha256":"C3A2CDD2C4169D403E8B496102B475A0F38FB1D3D9994065728429CE4AF6C62D","dimensions":"1672x941"},
+    {"episode":"colgan_v3","file":"THUMB-02.png","sha256":"6F1C59F5F9182D1889CDC1851849D58AC7DD617F704CB408CB7B8D7B428FB2FC","dimensions":"1672x941"},
+    {"episode":"alaska261_v3","file":"THUMB-01.v002_graded.png","sha256":"5285CD517EEA511FEC7C9558B8558497319A0A4F6959F32212709DC0497EC277","dimensions":"1672x941"},
+    {"episode":"alaska261_v3","file":"THUMB-02.png","sha256":"D18C428ECBE850165F3411E7B32231D56EC8B22B8C2D65036345CB9A0B7CAEB7","dimensions":"1672x941"},
+    {"episode":"alaska261_v3","file":"THUMB-03.v002_graded.png","sha256":"A69089990EA458F830CCF2723DDEDE296C4308251158E844A99721232E21E755","dimensions":"1672x941"},
+    {"episode":"concordia_v3","file":"THUMB-01.png","sha256":"2E7067B817DA0C04EE7A65DB09582C4BCE834A4C5426AC06D7E2D277CC434AE0","dimensions":"1672x941"},
+    {"episode":"concordia_v3","file":"THUMB-02.png","sha256":"8CA644598B9784740F23ABAC3A16E301701B33F1EA41D46D0AE0B460C14B615C","dimensions":"1672x941"},
+    {"episode":"concordia_v3","file":"THUMB-04.v004_graded.png","sha256":"8CCCBE00B3F5684D1A2C928B75C430CD52A252AA5ADA9B71CAF48174A52E3417","dimensions":"1672x941"},
+    {"episode":"station_v3","file":"THUMB-01.v002_graded.png","sha256":"078B186221CA0EA13344F2C49EE90CD9F203BF6BF938474D3D3DFEF6C7B17048","dimensions":"1672x941"},
+    {"episode":"station_v3","file":"THUMB-02.png","sha256":"32038F24BC42682C0444DC6567711B76463D648C80833C76A2E034983DCEFC1D","dimensions":"1672x941"},
+    {"episode":"station_v3","file":"THUMB-05.v002_graded.png","sha256":"7A3FED08AC71EB083CF16238C8426DE797CE9E7F9E2449D49ABD400AA8CE3C6E","dimensions":"1672x941"},
+    {"episode":"valdez_v3","file":"THUMB-01.v002_graded.png","sha256":"47DE76822364A5F0B020D5AD950733414370556015D7636BECC5613FDBCCE6AF","dimensions":"1672x941"},
+    {"episode":"valdez_v3","file":"THUMB-02.v002_graded.png","sha256":"30363037C797E8377ED7902A7608BE7BD8043EC1017A947D46D51AA373A73D6C","dimensions":"1672x941"},
+    {"episode":"valdez_v3","file":"THUMB-05.v003_graded.png","sha256":"73F916D20BD26B95AB3E8EF63F5D6BE98D702EA702012602958ECF7A5809D56B","dimensions":"1672x941"},
+    {"episode":"hinders_v3","file":"THUMB-01.png","source":"hinders_v2/THUMB-01.png","sha256":"5DC1449EE705D74F4B5DE71503137E00586F14A41F89B8E84361D78D0D38EBA4","dimensions":"1672x941"},
+    {"episode":"hinders_v3","file":"THUMB-02.png","source":"hinders_v2/THUMB-02.png","sha256":"FDD87B3B0339B00E22F672DEA2FC93C90352E187F2AD37440FDE4275BC8C7B6F","dimensions":"1672x941"},
+    {"episode":"hinders_v3","file":"THUMB-03.png","source":"hinders_v3/THUMB-03.png","sha256":"FA33C8AD07D9301CC89580C1D70B2C6E071C8BB20417ED9BC44EA2F2BCEA3A61","dimensions":"1672x941"}
+  ],
+  "prompt_contract_changes": [
+    {
+      "episode": "colgan_v3",
+      "asset": "THUMB-05",
+      "change": "Replaced the text-bearing exit-sign concept with an unlettered green emergency fixture and empty pilot seat because the order also forbids letters and text."
+    },
+    {
+      "episode": "station_v3",
+      "asset": "THUMB-03",
+      "change": "Replaced the text-bearing exit-sign concept with an unmarked green-lit emergency doorway because the order also forbids letters and text."
+    }
+  ],
+  "paths": {
+    "selected_pattern": "E:/pd-media/05_visuals/thumbs/<slug>/_selected/*.png",
+    "selected_feed_sheet_pattern": "E:/pd-media/05_visuals/thumbs/<slug>/_selected_feed_sheet.png",
+    "master_selected_feed_sheet": "E:/pd-media/05_visuals/thumbs/_EP77-82_v004_selected_all/_feed_sheet.png",
+    "master_selected_feed_sheet_sha256": "1B1BA227963BCA2FD16B9304828E4076F9BC122CC3981D9D71A05B4C8131FED2"
+  },
+  "side_effects": {
+    "published": false,
+    "uploaded": false,
+    "manifest_updated": false,
+    "external_messages_sent": false
+  }
+}

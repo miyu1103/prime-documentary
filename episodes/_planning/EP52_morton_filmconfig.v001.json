@@ -1,0 +1,418 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "morton",
+  "episode_id": "PD-2026-052-morton",
+  "assets": "episodes/PD-2026-052-morton/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-052-morton/06_audio/narration_index.v001.json",
+  "narration": "morton/narration.mp3",
+  "hookSeconds": 8.0,
+  "hookLine": "In 1986 a three-year-old boy told his grandmother that a monster killed his mother and that his daddy wasn't home, and Williamson County buried that account and sent his father, Michael Morton, to prison for twenty-five years.",
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "kinetic",
+        "lines": ["A MONSTER DID IT.", "DADDY WASN'T HOME."],
+        "style": "emphasis",
+        "emphasisWords": ["MONSTER"]
+      },
+      {
+        "kind": "stat",
+        "value": 25,
+        "label": "Years in a Texas prison for a murder he did not commit"
+      }
+    ],
+    "OP": [
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "1987", "text": "Convicted of murdering his wife, Christine" },
+          { "year": "2011", "text": "Exonerated by DNA" }
+        ]
+      }
+    ],
+    "ACT_1": [
+      {
+        "kind": "acttitle",
+        "title": "THE HUSBAND DID IT",
+        "kicker": "ACT ONE",
+        "index": 1
+      },
+      {
+        "kind": "numberticker",
+        "value": 1986,
+        "label": "August 13 — the morning Christine Morton was killed",
+        "group": false,
+        "prefix": ""
+      },
+      {
+        "kind": "stat",
+        "value": 32,
+        "label": "Michael's birthday the night before — August 12, 1986"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["OUT THE DOOR", "AROUND SIX IN THE MORNING"],
+        "style": "emphasis",
+        "emphasisWords": ["SIX"]
+      },
+      {
+        "kind": "quote",
+        "quote": "He said a monster did it. He said the monster had a big mustache, and that his daddy wasn't home.",
+        "text": "He said a monster did it. He said the monster had a big mustache, and that his daddy wasn't home.",
+        "attribution": "The account three-year-old Eric gave his grandmother, Rita"
+      },
+      { "kind": "mechanism", "mechanism": "closingdoor" },
+      {
+        "kind": "kinetic",
+        "lines": ["THEY DIDN'T ASK WHO KILLED HER.", "THEY ASKED HOW TO PROVE IT WAS HIM."],
+        "style": "emphasis",
+        "emphasisWords": ["PROVE"]
+      },
+      {
+        "kind": "arrow",
+        "from": "Who killed Christine Morton?",
+        "to": "How do we prove Michael did?",
+        "label": "The question they actually asked"
+      },
+      { "kind": "spotlight", "cx": 0.5, "cy": 0.5, "r": 0.22, "dim": 0.72 },
+      {
+        "kind": "highlightring",
+        "cx": 0.5,
+        "cy": 0.46,
+        "r": 0.13,
+        "label": "The murder had to happen before six a.m."
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "Time of death by stomach contents",
+        "secondary": "Since thoroughly discredited — but good enough in 1986"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["THE PROSECUTION'S THEORY:", "A BRUISED EGO ON HIS BIRTHDAY"],
+        "style": "emphasis",
+        "emphasisWords": ["THEORY"]
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "Aug 12, 1986", "text": "The family goes out for Michael's 32nd birthday" },
+          { "year": "Aug 13, 1986", "text": "Christine Morton is killed; Michael leaves for work around six" },
+          { "year": "Sept 25, 1986", "text": "Michael Morton is arrested and charged with her murder" }
+        ]
+      }
+    ],
+    "ACT_2": [
+      {
+        "kind": "acttitle",
+        "title": "THE TRIAL",
+        "kicker": "ACT TWO",
+        "index": 2
+      },
+      {
+        "kind": "stat",
+        "value": 0,
+        "label": "Pieces of physical evidence tying Michael to the murder"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["NO BLOOD.", "NO WEAPON.", "NO WITNESS WHO SAW HIM."],
+        "style": "emphasis",
+        "emphasisWords": ["NO"]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "Withheld: the boy's account",
+        "secondary": "Sgt. Wood's report — a 'monster,' not his father, and daddy wasn't home"
+      },
+      {
+        "kind": "pindropmap",
+        "pins": [
+          { "x": 0.47, "y": 0.56, "label": "The Morton home" },
+          { "x": 0.56, "y": 0.45, "label": "Green van, parked behind the house" },
+          { "x": 0.64, "y": 0.37, "label": "The wooded area he walked into" }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["A BLOODY BANDANA", "ABOUT A BLOCK FROM THE HOUSE"],
+        "style": "emphasis",
+        "emphasisWords": ["BANDANA"]
+      },
+      {
+        "kind": "stat",
+        "value": 100,
+        "label": "Yards from the house where the bandana was found (as reported)"
+      },
+      {
+        "kind": "routemap",
+        "pins": [
+          { "x": 0.34, "y": 0.34 },
+          { "x": 0.62, "y": 0.66 }
+        ],
+        "label": "Christine's credit card used after her death — San Antonio"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "Withheld: the stolen property",
+        "secondary": "Her purse missing; her credit card and checkbook used"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.44,
+        "cy": 0.55,
+        "r": 0.12,
+        "label": "Unidentified fingerprints and footprints"
+      },
+      {
+        "kind": "quote",
+        "quote": "the other side can't have access to those reports",
+        "text": "the other side can't have access to those reports",
+        "attribution": "Ken Anderson, of record, on Sgt. Wood's reports"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["A PROSECUTOR'S JOB", "IS NOT TO WIN."],
+        "style": "emphasis",
+        "emphasisWords": ["WIN"]
+      },
+      { "kind": "mechanism", "mechanism": "closingdoor" },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "Sept 25, 1986", "text": "Arrested and charged" },
+          { "year": "Feb 17, 1987", "text": "Convicted of murdering Christine Morton" },
+          { "year": "1987", "text": "Sentenced to life in prison" }
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 1987,
+        "label": "The year twelve jurors were shown half a case",
+        "group": false,
+        "prefix": ""
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["THE JURY SAW HALF A CASE.", "THE HALF THAT CONVICTED HIM."],
+        "style": "emphasis",
+        "emphasisWords": ["HALF"]
+      }
+    ],
+    "ACT_3": [
+      {
+        "kind": "acttitle",
+        "title": "TWENTY-FIVE YEARS",
+        "kicker": "ACT THREE",
+        "index": 3
+      },
+      {
+        "kind": "numberticker",
+        "value": 25,
+        "label": "Years Michael Morton spent inside",
+        "group": false,
+        "prefix": ""
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["WHEN HE WALKED IN,", "RONALD REAGAN WAS PRESIDENT."],
+        "style": "emphasis",
+        "emphasisWords": ["REAGAN"]
+      },
+      { "kind": "mechanism", "mechanism": "gears" },
+      {
+        "kind": "kinetic",
+        "lines": ["HE FILED.", "HE WAS DENIED.", "HE FILED AGAIN."],
+        "style": "emphasis",
+        "emphasisWords": ["AGAIN"]
+      },
+      {
+        "kind": "numberticker",
+        "value": 2005,
+        "label": "The year the fight for DNA testing began",
+        "group": false,
+        "prefix": ""
+      },
+      { "kind": "spotlight", "cx": 0.5, "cy": 0.54, "r": 0.2, "dim": 0.7 },
+      {
+        "kind": "compbars",
+        "items": [
+          { "label": "Years Morton had already served", "value": 25 },
+          { "label": "Years the DA's office fought the test", "value": 6 }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["SIX YEARS.", "THAT'S HOW LONG THEY FOUGHT TO NOT TEST IT."],
+        "style": "emphasis",
+        "emphasisWords": ["SIX"]
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "2005", "text": "Raley and the Innocence Project file for DNA testing" },
+          { "year": "2005-2011", "text": "The District Attorney's office fights the testing" },
+          { "year": "June 2011", "text": "A judge orders the bandana tested" }
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 2011,
+        "label": "June 2011 — the bandana finally goes to a laboratory",
+        "group": false,
+        "prefix": ""
+      }
+    ],
+    "ACT_4": [
+      {
+        "kind": "acttitle",
+        "title": "WHAT THE BANDANA KNEW",
+        "kicker": "ACT FOUR",
+        "index": 4
+      },
+      {
+        "kind": "stat",
+        "value": 2,
+        "label": "People the lab found on the bandana"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["ONE WAS CHRISTINE.", "THE OTHER WAS NOT MICHAEL MORTON."],
+        "style": "emphasis",
+        "emphasisWords": ["NOT"]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "The bandana",
+        "secondary": "Christine's blood and hair, plus the DNA of an unknown man"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "Oct 4, 2011", "text": "Michael Morton walks out of prison" },
+          { "year": "Dec 19, 2011", "text": "A court declares him innocent — the conviction erased" }
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 45,
+        "label": "Morton was the 45th man in Texas freed by modern DNA testing",
+        "group": false,
+        "prefix": ""
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          { "label": "Age when he went in", "value": 32 },
+          { "label": "Age when he walked out", "value": 57 }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["THE MONSTER WAS REAL.", "AND HE HAD A NAME."],
+        "style": "emphasis",
+        "emphasisWords": ["NAME"]
+      },
+      {
+        "kind": "numberticker",
+        "value": 2013,
+        "label": "March 27, 2013 — Norwood convicted of Christine Morton's murder, life in prison",
+        "group": false,
+        "prefix": ""
+      },
+      {
+        "kind": "stat",
+        "value": 27,
+        "label": "Years between the murder and the real killer's conviction"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "Aug 1986", "text": "Christine Morton murdered" },
+          { "year": "Feb 1987", "text": "Michael Morton convicted and imprisoned" },
+          { "year": "Jan 1988", "text": "Debra Masters Baker murdered in Austin" },
+          { "year": "Sept 2016", "text": "Norwood convicted of Baker's murder" }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["WHEN NORWOOD KILLED AGAIN,", "MORTON WAS ALREADY IN A CELL."],
+        "style": "emphasis",
+        "emphasisWords": ["ALREADY"]
+      },
+      {
+        "kind": "arrow",
+        "from": "Evidence buried, 1986",
+        "to": "Debra Baker killed, January 1988",
+        "label": "Not a second tragedy — a consequence of the first"
+      },
+      { "kind": "mechanism", "mechanism": "faultsplit" },
+      {
+        "kind": "kinetic",
+        "lines": ["A COURT OF INQUIRY.", "THE PROSECUTOR HIMSELF."],
+        "style": "emphasis",
+        "emphasisWords": ["PROSECUTOR"]
+      },
+      {
+        "kind": "quote",
+        "quote": "This court cannot think of a more intentionally harmful act than a prosecutor's conscious choice to hide mitigating evidence so as to create an uneven playing field.",
+        "text": "This court cannot think of a more intentionally harmful act than a prosecutor's conscious choice to hide mitigating evidence so as to create an uneven playing field.",
+        "attribution": "The presiding judge, ordering Ken Anderson's arrest — April 19, 2013"
+      },
+      {
+        "kind": "numberticker",
+        "value": 500,
+        "label": "The fine Ken Anderson paid",
+        "group": false,
+        "prefix": "$"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          { "label": "Morton: years in prison", "value": 25 },
+          { "label": "Anderson: days in jail", "value": 5 }
+        ]
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "Sept 2013", "text": "Anderson resigns his judgeship" },
+          { "year": "Nov 2013", "text": "Found in criminal contempt; pleads no contest" },
+          { "year": "Nov 2013", "text": "Ten days in jail — he serves about five; gives up his law license" }
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "The Michael Morton Act",
+        "secondary": "Signed by Gov. Rick Perry, May 2013 — prosecutors must open their files"
+      }
+    ],
+    "ENDING": [
+      {
+        "kind": "kinetic",
+        "lines": ["EVERY SINGLE THING", "THAT LITTLE BOY SAID", "WAS TRUE."],
+        "style": "emphasis",
+        "emphasisWords": ["TRUE"]
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "1986", "text": "A three-year-old names a monster; the file is buried" },
+          { "year": "2011", "text": "A strip of blue cloth proves the child right" },
+          { "year": "2013", "text": "Texas passes the law that carries his father's name" }
+        ]
+      },
+      {
+        "kind": "stat",
+        "value": 25,
+        "label": "Years lost before anyone dug the truth back up"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["THE TRUTH WAS NEVER MISSING.", "THEY JUST BURIED IT."],
+        "style": "emphasis",
+        "emphasisWords": ["BURIED"]
+      }
+    ]
+  }
+}

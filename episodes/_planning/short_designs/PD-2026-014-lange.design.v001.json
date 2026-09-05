@@ -1,0 +1,1208 @@
+{
+  "episode_id": "PD-2026-014-lange",
+  "slug": "lange",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "Sz8zPUoBANM",
+    "title": "He Drove Home Honking. The Police Followed Him Inside.",
+    "url": "https://www.youtube.com/watch?v=Sz8zPUoBANM",
+    "privacy": "public",
+    "views": 43
+  },
+  "shorts_existing": [
+    "short14"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short14": [
+      "An officer chases you over something minor, and you step inside your home.",
+      "Can he follow you in?",
+      "One man was just playing his music too loud.",
+      "An officer flipped on his lights, and the man pulled into his own garage.",
+      "The officer stuck his foot under the closing garage door, and walked right in.",
+      "In 2021, the Supreme Court said no: chasing a minor offense, by itself, does not automatically let police enter your home.",
+      "They need a warrant, or a real emergency.",
+      "Your home is still the hardest place for the state to enter.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-014-lange\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "The officer walks up and sticks his foot under the descending door, stopping it, and steps inside — no warrant, no permission .",
+    "In 2021, the Supreme Court took up exactly this question, and the answer is one of the clearest statements in years about the one place the law still treats as a fortress: your home .",
+    "As a rule, the police cannot enter your home without a warrant — that is the baseline, and the exceptions to it are narrow .",
+    "The question the courts had to answer is the one step before that: was the officer allowed to enter the garage at all — to follow a man into his home over a minor offense, without a warrant — just because that man had not pulled over?",
+    "If a dangerous suspect runs into a house, no one thinks the police must stop politely at the door and go find a judge .",
+    "In 2021, the Supreme Court rejected the automatic rule."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short98",
+      "angle": "The Court did not say police can never follow you in. It said there is no automatic yes.",
+      "type": "A — the correction to what everyone takes away",
+      "avoids": "short14 lands on 'the Supreme Court said no'. The actual holding is narrower than that, and the difference is the whole point.",
+      "funnel_question_left_for_longform": "If it is not automatic, what does an officer have to show instead?",
+      "era": "2021, California",
+      "loop": true,
+      "loop_join": "L5 says the ruling keeps getting repeated wrong, and L1 is the wrong version people repeat, that the Court stopped police following you in.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "People hear that the Supreme Court stopped police following you into your home. That is not quite what happened.",
+          "delivery": "intense",
+          "source_lines": [
+            "In 2021, the Supreme Court rejected the automatic rule."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "What the Court rejected in 2021 was the automatic rule. Chasing someone over a minor offence does not, by itself, open your door.",
+          "delivery": "building",
+          "source_lines": [
+            "In 2021, the Supreme Court rejected the automatic rule."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "Because if a dangerous suspect runs into a house, nobody thinks the police must stop politely at the door and go find a judge.",
+          "delivery": "building",
+          "source_lines": [
+            "If a dangerous suspect runs into a house, no one thinks the police must stop politely at the door and go find a judge."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "So the answer is not never. The answer is: not automatically, and not for anything.",
+          "delivery": "intense",
+          "source_lines": [
+            "In 2021, the Supreme Court rejected the automatic rule."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "A misdemeanor can mean a violent assault. It can also mean jaywalking, an open container, or a complaint about music played too loud.",
+          "delivery": "building",
+          "source_lines": [
+            "And the range of \"misdemeanor\" really is enormous.",
+            "It can mean a violent assault — or it can mean jaywalking, an open container, a noise complaint, playing your music too loud."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Justice Kagan wrote that flight is a fact an officer can weigh, but the emergency is not there every time. Someone has to look.",
+          "delivery": "building",
+          "source_lines": [
+            "The principal opinion was written by Justice Elena Kagan.",
+            "Flight, she explained, is a real and relevant fact — an officer can absolutely consider it.",
+            "The point is that you have to actually look."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "All nine justices agreed on the result, but not on the reasoning. Roberts and Alito wanted a broader rule that would let officers in.",
+          "delivery": "intense",
+          "source_lines": [
+            "The result was unanimous — all nine justices agreed to send the case back.",
+            "Chief Justice John Roberts, joined by Justice Samuel Alito, wrote separately.",
+            "They agreed with the outcome here, but they argued for a broader rule: that hot pursuit of a fleeing suspect should generally justify entry, because an officer in a chase cannot safely pause to weigh the seriousness of the offense, and because letting suspects escape into their homes invites exactly that."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Case by case. Every single time. Which is why this one keeps being repeated as something it never actually said.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U01",
+          "subject": "a bare garage bulb burning straight into camera through exhaust haze",
+          "source": "GENERATE",
+          "prompt": "low angle looking up into a bare garage ceiling bulb burning straight into camera, exhaust haze drifting through the beam, the garage beyond swallowed in black, lit ONLY by that bulb which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "bare bulb dark room"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "a suburban garage door descending on a narrowing blade of driveway light",
+          "source": "GENERATE",
+          "prompt": "a suburban roll-up garage door descending on a narrowing blade of driveway light, seen from inside the dark oil-stained garage, the gap closing to a slot, lit ONLY by that narrowing driveway light which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "garage door closing dark"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "courthouse columns from directly below against a storm sky",
+          "source": "GENERATE",
+          "prompt": "tall marble courthouse columns photographed from directly below against a dark storm sky, no inscriptions anywhere, lit ONLY by hard uplights switched on at their bases, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "courthouse columns exterior"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R01",
+          "subject": "the single roof beacon of a cruiser at a suburban kerb",
+          "source": "GENERATE",
+          "prompt": "the single roof beacon of a cruiser at a suburban kerb, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "R08",
+          "subject": "an empty judge's bench seen from the courtroom floor",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, one shaft falling across its face, lit ONLY by a single brass bench lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "judge bench courtroom"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "R06",
+          "subject": "rows of empty courtroom gallery benches",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courtroom interior benches",
+          "bound_title": "minimalist vietnamese interior with lamp",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5634,
+          "motion": 4.846,
+          "luma": 83.3,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14600__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "I01",
+          "subject": "a rubber stamp resting beside a blank warrant form",
+          "source": "GENERATE",
+          "prompt": "macro of a wooden-handled rubber stamp resting on an ink pad beside a completely blank unreadable warrant form, the die face worn smooth, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rubber stamp ink pad"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "R10",
+          "subject": "a work boot wedged under the descending garage door",
+          "source": "GENERATE",
+          "prompt": "a heavy police work boot wedged under a descending garage door, the rubber door seal pressed down on the toe, concrete and a blade of driveway light beyond, no face or body above the ankle, lit ONLY by that driveway light which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "boot in doorway"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U15",
+          "subject": "a dark relief map of the United States, borders as glowing seams",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States showing state borders as thin glowing seams and absolutely no place names or lettering, lit ONLY by that internal glow which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "united states map dark"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "R09",
+          "subject": "the interior of the parked station wagon, beacons washing the dash",
+          "source": "GENERATE",
+          "prompt": "the interior of a parked station wagon at night seen from the passenger side, empty seats, a red and blue wash crossing the dashboard from behind, lit ONLY by those beacons which are switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "car interior night"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "a car stereo dial in the dark, display blank, one hand on it",
+          "source": "GENERATE",
+          "prompt": "macro of one hand resting on the volume dial of a car stereo in a dark cabin, the display completely dark and unreadable, no face or body above the wrist, lit ONLY by a single dome light which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "car radio dial close up"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U04",
+          "subject": "a long corridor receding toward one lit doorway",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "silhouette walking dim corridor",
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_89270__door-green-screen-door-opening-chroma-key-intro-opening.mp4",
+          "bound_title": "mysterious silhouette walking in dim corridor",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4567,
+          "motion": 1.178,
+          "luma": 31.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "R02",
+          "subject": "steel handcuffs closing on a pair of wrists",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "handcuffs close up wrists",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-18139__jail_cell_bars.mp4",
+          "bound_title": "close up of a person s hand holding house keys",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6124,
+          "motion": 9.193,
+          "luma": 150.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a hand pressing a pen to a blank warrant sheet",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "person signing a document",
+          "bound_file": "D:\\pd-archive\\business_corporate\\mixkit__23222__signing-on-a-contract-on-a-wooden-table.mp4",
+          "bound_title": "person signing a documents",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4379,
+          "motion": 3.92,
+          "luma": 127.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "I02",
+          "subject": "a judge's chambers door, nameplate blank, light beneath it",
+          "source": "GENERATE",
+          "prompt": "a single heavy panelled chambers door at the end of a dim marble corridor, its nameplate completely blank, one hard blade of light under the door, lit ONLY by that light which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "closed office door corridor"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "R07",
+          "subject": "a gavel caught mid-strike above its block",
+          "source": "GENERATE",
+          "prompt": "a gavel caught mid-strike above its block, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "U07",
+          "subject": "a leaning tower of worn appellate case folders",
+          "source": "GENERATE",
+          "prompt": "a leaning tower of worn appellate case folders on a small desk, every label worn completely blank, lit ONLY by one desk lamp which is switched on beside it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stack of case files"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "an institutional wall clock with a blank face",
+          "source": "GENERATE",
+          "prompt": "an institutional wall clock with a blank face, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "the garage door rising onto blinding daylight",
+          "source": "GENERATE",
+          "prompt": "a suburban garage door rolling up onto blinding daylight, seen from inside the dark garage, the concrete floor flooding with light, lit ONLY by that daylight which is switched on beyond, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "garage door opening daylight"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "one blank sheet lying on the garage concrete",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper lying on stained garage concrete, lit ONLY by a hard shaft of driveway light which is switched on and falls across it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper on floor light"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U09",
+          "subject": "a lone silhouette high in a vertical shaft of light",
+          "source": "GENERATE",
+          "prompt": "a lone dark silhouette standing in a single vertical shaft of light in a vast dark hall, the figure placed HIGH in frame with its head in the upper third and a long empty floor below it, face not visible, lit ONLY by that shaft which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouette shaft of light"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R10",
+          "subject": "a brass latch and security chain, chain still across",
+          "source": "GENERATE",
+          "prompt": "macro of a brass door latch and a security chain still drawn across a door jamb, the gap only a hand wide, lit ONLY by one hard porch fixture which is switched on beyond the gap, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021, California, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door chain lock close up"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook plate — identical framing to plate 01",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U16",
+          "subject": "jaywalking is a misdemeanor",
+          "source": "FOOTAGE",
+          "footage_query": "empty crosswalk stripes at night",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-6810__car_light_trails_long_exposure.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "an open container is a misdemeanor",
+          "source": "FOOTAGE",
+          "footage_query": "glass bottle standing on a kerb",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_145342__farmer-bottles-man-boxes-tomato-sauce-homemade-lid.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W05",
+          "subject": "music played too loud is a misdemeanor",
+          "source": "FOOTAGE",
+          "footage_query": "speaker cone vibrating close up",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\science_tech\\pixabay_extra__v_9087__horn-sound-noise-vibration-music-electronics-audio-speaker-d.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "the noise complaint came from a house like this",
+          "source": "FOOTAGE",
+          "footage_query": "porch light on a house at night",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-2176__snow_blizzard_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W11",
+          "subject": "and a violent assault is a misdemeanor too",
+          "source": "FOOTAGE",
+          "footage_query": "overturned chair in an empty room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10480__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U10",
+          "subject": "someone has to actually look",
+          "source": "FOOTAGE",
+          "footage_query": "magnifying glass held over a surface",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\business_corporate\\mixkit__13807__hand-of-a-person-using-a-magnifying-glass-to-read-a-book.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "flight is a real fact an officer can weigh",
+          "source": "FOOTAGE",
+          "footage_query": "feet running on wet pavement at night",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282,
+          "bound_file": "D:\\pd-archive\\prison_jail\\pixabay_extra__v_157437__man-walking-feet-shoes-road-path-person-walk-trees-mystery.mp4"
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "R04",
+          "subject": "an officer deciding at somebody's door",
+          "source": "FOOTAGE",
+          "footage_query": "two figures standing at a doorway",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\pd_feature_films\\ia__nothing-quiet-on-the-western-front__nothing-quiet-on-the-western-front-remix-contest-2026.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "the chamber the opinion was written for",
+          "source": "FOOTAGE",
+          "footage_query": "empty tiered chamber with rows of seats",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14605__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I08",
+          "subject": "the emergency is not there every time",
+          "source": "FOOTAGE",
+          "footage_query": "water tower over rooftops at dusk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8659__cell_tower_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "M07",
+          "subject": "all nine of them agreed on the result",
+          "source": "FOOTAGE",
+          "footage_query": "long empty conference table with chairs",
+          "prompt": null,
+          "bound_file": "E:\\pd-archive\\courtroom_justice\\nara__19382-159158622__yamashita-trial-32nd-day-manila-philippine-islands.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "but two of them sat apart on the reasoning",
+          "source": "FOOTAGE",
+          "footage_query": "row of empty chairs in a curve",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10483__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "M04",
+          "subject": "two opinions written side by side",
+          "source": "FOOTAGE",
+          "footage_query": "two sets of papers side by side",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\newspapers_printing\\mixkit__41192__pov-flipping-through-a-newspaper.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "M05",
+          "subject": "the door a broader rule would have opened",
+          "source": "FOOTAGE",
+          "footage_query": "heavy steel door closed in the dark",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21008__abandoned_factory_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I04",
+          "subject": "what a broader rule takes off the door",
+          "source": "FOOTAGE",
+          "footage_query": "hand lifting a chain off a door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-5462__sandstorm_wall_approaching.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L5",
+          "anchor": "music played too loud",
+          "style": "punch",
+          "words": [
+            "MUSIC",
+            "TOO LOUD"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L7",
+          "anchor": "nine justices",
+          "style": "number",
+          "big": "9",
+          "bigSize": 260,
+          "label": "ALL AGREED",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "b"
+        }
+      ]
+    },
+    {
+      "short_id": "short99",
+      "angle": "The baseline nobody states out loud: without a warrant, your door stays shut.",
+      "type": "A — the rule the exceptions hang off",
+      "avoids": "short14 is about the garage and the 2021 ruling. It never states the underlying baseline or how narrow the exceptions are.",
+      "funnel_question_left_for_longform": "How narrow is narrow — what actually counts as an emergency?",
+      "era": "present day, United States",
+      "loop": true,
+      "loop_join": "L5 points back to where the rule starts, and L1 is that starting point, the baseline everyone skips.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "Start from the rule everyone skips. As a baseline, police cannot enter your home without a warrant.",
+          "delivery": "intense",
+          "source_lines": [
+            "As a rule, the police cannot enter your home without a warrant — that is the baseline, and the exceptions to it are narrow."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "The exceptions to that are narrow. Narrow is doing a lot of work in that sentence.",
+          "delivery": "building",
+          "source_lines": [
+            "As a rule, the police cannot enter your home without a warrant — that is the baseline, and the exceptions to it are narrow."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "One night an officer put his foot under a descending garage door, stopped it, and stepped inside. No warrant. No permission.",
+          "delivery": "building",
+          "source_lines": [
+            "The officer walks up and sticks his foot under the descending door, stopping it, and steps inside — no warrant, no permission."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "The question was not whether the man was guilty of anything. It was whether the officer was allowed through that door at all.",
+          "delivery": "intense",
+          "source_lines": [
+            "The question the courts had to answer is the one step before that: was the officer allowed to enter the garage at all"
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "One of those exceptions is an emergency the law calls exigent circumstances: evidence about to be destroyed, a person in danger, a suspect escaping.",
+          "delivery": "building",
+          "source_lines": [
+            "One of those exceptions is an emergency the law calls \"exigent circumstances,\" and a classic example is hot pursuit: an officer chasing a fleeing suspect.",
+            "They cover things like someone about to destroy evidence, a person in danger, or a suspect actively escaping."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "California argued the answer was yes, automatically. Any flight, even from a misdemeanor, would count as the emergency. Flight in, door open.",
+          "delivery": "building",
+          "source_lines": [
+            "California's answer was yes, automatically.",
+            "Under the rule the state defended, whenever a suspect flees — even from a misdemeanor — that flight by itself creates the kind of emergency that lets police enter a home in pursuit.",
+            "No case-by-case judgment required."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "If any flight from any offense opened the door, the strongest protection in the Fourth Amendment could be switched off by a trivial chase.",
+          "delivery": "intense",
+          "source_lines": [
+            "On the other side: the home cannot lose its constitutional protection over a honking horn.",
+            "If any flight, from any offense, automatically opens your door to the police, then the strongest protection in the Fourth Amendment can be switched off by the most trivial chase."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "In 2021 the Supreme Court answered it. And the answer only makes sense if you know where the whole thing begins.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R10",
+          "subject": "a front door from inside a dark hallway, chain across it",
+          "source": "GENERATE",
+          "prompt": "a residential front door seen from inside a dark hallway, a security chain drawn across it, one hard blade of porch light under the door, lit ONLY by that porch light which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "front door dark hallway"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "a hand pressing a pen to a blank warrant sheet",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "person signing a document",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32812__contract_paperwork_signing.mp4",
+          "bound_title": "close up video of a person signing documents",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3852,
+          "motion": 20.158,
+          "luma": 128.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "courthouse columns from directly below",
+          "source": "GENERATE",
+          "prompt": "tall marble courthouse columns photographed from directly below against a dark storm sky, no inscriptions anywhere, lit ONLY by hard uplights switched on at their bases, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "courthouse columns exterior"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R01",
+          "subject": "a cruiser's single roof beacon at a kerb",
+          "source": "GENERATE",
+          "prompt": "a cruiser's single roof beacon at a kerb, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "a shaft of light narrowed to a thin slot across a hallway floor",
+          "source": "GENERATE",
+          "prompt": "a hard shaft of light narrowed to a thin bright slot across a dark hallway floor, thick with slowly drifting dust and nothing else in frame, lit ONLY by that shaft which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "light shaft dust room"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U04",
+          "subject": "a long corridor receding toward one lit doorway",
+          "source": "GENERATE",
+          "prompt": "a long corridor receding toward one lit doorway, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U07",
+          "subject": "a thin stack of only three worn folders on a bare desk",
+          "source": "GENERATE",
+          "prompt": "a thin stack of only three worn folders standing alone on a large bare desk, every label worn completely blank, lit ONLY by one desk lamp which is switched on beside them, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "few files on desk"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "R08",
+          "subject": "an empty judge's bench from the floor",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, lit ONLY by one shaft of window light which is switched on and falls across its face, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "judge bench courtroom"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U05",
+          "subject": "a wall clock with a blank featureless face",
+          "source": "GENERATE",
+          "prompt": "a wall clock with a blank featureless face, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I01",
+          "subject": "a rubber stamp beside a blank warrant form",
+          "source": "GENERATE",
+          "prompt": "macro of a wooden-handled rubber stamp lying on an ink pad beside a completely blank warrant form, the die face worn smooth and unreadable, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rubber stamp ink pad"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R10",
+          "subject": "a heavy brass deadbolt thrown across a jamb",
+          "source": "GENERATE",
+          "prompt": "macro of a heavy brass deadbolt thrown hard across a door jamb, the strike plate scarred, lit ONLY by one bare hallway bulb which is switched on above it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door bolt lock macro"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U02",
+          "subject": "a garage door descending on a narrowing blade of driveway light",
+          "source": "GENERATE",
+          "prompt": "a suburban roll-up garage door descending on a narrowing blade of driveway light, seen from inside the dark garage, lit ONLY by that narrowing driveway light which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "garage door closing dark"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "R10",
+          "subject": "a boot wedged under the descending garage door",
+          "source": "GENERATE",
+          "prompt": "a heavy work boot wedged under a descending garage door, the rubber seal pressed on the toe, no face or body above the ankle, lit ONLY by the driveway light which is switched on beyond the gap, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "boot in doorway"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "R09",
+          "subject": "the dark garage past the rear bumper of a parked wagon",
+          "source": "GENERATE",
+          "prompt": "the interior of a suburban garage at night seen past the rear bumper of a parked station wagon, tools on a pegboard, a red and blue wash crossing the back wall, lit ONLY by those beacons which are switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "garage interior night"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U10",
+          "subject": "two hands laid flat on the cold hood of the wagon",
+          "source": "GENERATE",
+          "prompt": "macro of two weathered hands laid flat on the cold hood of a parked station wagon, no face or body above the wrists, lit ONLY by one bare garage bulb which is switched on overhead, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands on car hood"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "I06",
+          "subject": "a worn doormat and a single boot print, seen from above",
+          "source": "GENERATE",
+          "prompt": "looking straight down at a worn bristled doormat with one muddy boot print on it, a hard blade of light across the threshold, lit ONLY by that light which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "doormat threshold light"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R06",
+          "subject": "rows of empty courtroom gallery benches",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courtroom interior benches",
+          "bound_title": "modern architectural interior with geometric patterns",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3886,
+          "motion": 36.64,
+          "luma": 114.9,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14510__courtroom_empty_wide.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.28
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "a single empty chair in a cone of light in the courtroom well",
+          "source": "GENERATE",
+          "prompt": "a single empty wooden chair standing in a cone of light in a large dark courtroom well, dust motes drifting, lit ONLY by the fixture switched on above it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chair spotlight"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R07",
+          "subject": "a gavel caught mid-strike",
+          "source": "GENERATE",
+          "prompt": "a gavel caught mid-strike, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U15",
+          "subject": "the United States with borders as glowing seams",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States showing state borders as thin glowing seams and absolutely no place names or lettering, lit ONLY by that internal glow which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "united states map dark"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U13",
+          "subject": "a silhouette walking away through a doorway into daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "silhouette walking away corridor",
+          "bound_file": "D:\\pd-archive\\decision_rooms\\pixabay_extra__v_148795__woman-silhouette-walk-respect-theatre.mp4",
+          "bound_title": "black and white corridor",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4802,
+          "motion": 33.098,
+          "luma": 98.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "a front door standing open onto blinding daylight",
+          "source": "GENERATE",
+          "prompt": "a residential front door standing wide open onto blinding daylight, seen from inside a dark hallway, lit ONLY by that daylight which is switched on beyond, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present day, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door opening bright daylight"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook plate — identical framing to plate 01",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W06",
+          "subject": "evidence about to be destroyed",
+          "source": "FOOTAGE",
+          "footage_query": "papers burning in a metal bin",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16099__burning_paper_documents.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U09",
+          "subject": "a person in danger inside",
+          "source": "FOOTAGE",
+          "footage_query": "figure behind a curtained lit window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11663__operating_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I04",
+          "subject": "a suspect actively getting away",
+          "source": "FOOTAGE",
+          "footage_query": "chain link fence gate swinging open",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\prison_jail\\pixabay_extra__v_251491__winter-snow-ice-cold-wether-nature-metal-iron-chain-fence-ra.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U01",
+          "subject": "what the law is willing to call an emergency",
+          "source": "FOOTAGE",
+          "footage_query": "red warning lamp glowing on a wall",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307,
+          "bound_file": "D:\\pd-archive\\police_modern\\pixabay_extra__v_340106__police-car-creepy-dark-loop-seamless-loop-animated-wallpaper.mp4"
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "the door those exceptions are about",
+          "source": "FOOTAGE",
+          "footage_query": "key left in a door lock",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51080__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W10",
+          "subject": "the state's answer was yes, automatically",
+          "source": "FOOTAGE",
+          "footage_query": "metal gate opening slowly at night",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21325__train_platform_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R04",
+          "subject": "any flight at all, from anything",
+          "source": "FOOTAGE",
+          "footage_query": "two figures running down a night street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-28658__rain_on_city_street_neon.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I02",
+          "subject": "every front door that rule would reach",
+          "source": "FOOTAGE",
+          "footage_query": "apartment doors along a hallway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8124__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "flight in, door open",
+          "source": "FOOTAGE",
+          "footage_query": "open door into a dark room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37052__open_safe_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "W03",
+          "subject": "where an automatic rule ends up",
+          "source": "FOOTAGE",
+          "footage_query": "empty cell with a small high window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23408__police_interrogation_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R11",
+          "subject": "the protection switched off",
+          "source": "FOOTAGE",
+          "footage_query": "hand flipping a light switch",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51083__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U11",
+          "subject": "the house the Fourth Amendment is strongest in",
+          "source": "FOOTAGE",
+          "footage_query": "rain running down a window at night",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\goods_in_motion\\pixabay_extra__v_169141__rain-raindrops-cabin-wooden-water-night-old-house-city-scene.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y05",
+          "subject": "the trivial file the whole chase was over",
+          "source": "FOOTAGE",
+          "footage_query": "thin file folder closed on a desk",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\money_banking\\mixkit__20847__printing-a-receipt.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "M06",
+          "subject": "the strongest protection, emptied out",
+          "source": "FOOTAGE",
+          "footage_query": "empty steel drawer pulled from a wall",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_125777__key-door-house-to-open-closure-hands.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I03",
+          "subject": "a trivial chase over a trivial thing",
+          "source": "FOOTAGE",
+          "footage_query": "rubbish bin knocked over on a driveway",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283,
+          "bound_file": "D:\\pd-archive\\police_modern\\pixabay_extra__v_133__cars-road-traffic-driving-lanes-turning-lane-blur-automobile.mp4"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L3",
+          "anchor": "foot under a descending garage door",
+          "style": "punch",
+          "words": [
+            "A FOOT",
+            "UNDER THE DOOR"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "Flight in, door open",
+          "style": "punch",
+          "words": [
+            "FLIGHT IN",
+            "DOOR OPEN"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

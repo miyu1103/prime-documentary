@@ -1,0 +1,56 @@
+EP79_alaska261 — 画像発注 バッチ 5/24（8枚）
+区分: ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, airline livery, airline tail markings, ship funnel markings, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) K033.png
+   [K033]  flags: 
+   An artificial horizon instrument tilted far past level, crisp and brightly lit from one side
+
+2) K034.png
+   [K034]  flags: 
+   A cockpit at night in a long exposure so every instrument light becomes a bright streak, the frame full of light trails
+
+3) K035.png
+   [K035]  flags: 
+   The Pacific seen from low altitude in the late afternoon, brilliant sun band on the horizon, whitecaps below
+
+4) K036.png
+   [K036]  flags: 
+   A rocky Californian island seen from the sea in brilliant afternoon light, cliffs and kelp, empty
+
+5) K037.png
+   [K037]  flags: 
+   A wide view of the southern Californian coastline from the air at golden hour, brilliant low sun, the ocean glittering
+
+6) K038.png
+   [K038]  flags: 
+   A US Navy-style coastal air station seen in bright daylight, runway and hangars, clear sky
+
+7) K039.png
+   [K039]  flags: 
+   An empty stretch of Pacific water at dusk under a brilliant orange sky, calm, no boats
+
+8) K185.png
+   [K185]  flags: P
+   Two hands gripping an airliner control column and holding it back under load, seen from the side, tendons showing, a bright instrument glow washing across the knuckles

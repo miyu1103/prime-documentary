@@ -1,0 +1,344 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-008-carpenter",
+  "revision": "v002",
+  "generated_at": "2026-06-20T17:05:00+09:00",
+  "status": "full_qc_current_candidates",
+  "policy": {
+    "ai_disclosure_required": true,
+    "symbolic_reconstruction_only": true,
+    "no_real_person_likeness": true,
+    "no_authentic_footage_claim": true
+  },
+  "summary": {
+    "reviewed": 32,
+    "accepted": 22,
+    "rejected": 10,
+    "note": "32 local SDXL candidates reviewed. Accepted assets are symbolic backgrounds only; rejected assets include weak phone-hand stills and any image with readable/fake sign or document text."
+  },
+  "items": [
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_blank_order_c01_seed829425.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_blank_order_c01_seed829425.png",
+      "item_id": "CARP_A1_blank_order",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Best blank-order candidate; no readable text, strong warrant/SCA contrast background."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_blank_order_c02_seed829562.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_blank_order_c02_seed829562.png",
+      "item_id": "CARP_A1_blank_order",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Usable court-order-like blank paper with generic phone; no readable text."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_blank_order_c03_seed829699.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_blank_order_c03_seed829699.png",
+      "item_id": "CARP_A1_blank_order",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Usable blank-paper phone scene; no readable text."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_blank_order_c04_seed829836.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_blank_order_c04_seed829836.png",
+      "item_id": "CARP_A1_blank_order",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Document cover includes readable/fake text; reject for no-text policy."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_caseboard_number_c01_seed828877.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_caseboard_number_c01_seed828877.png",
+      "item_id": "CARP_A1",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Board contains readable/fake label-like text; reject for no-text policy."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_caseboard_number_c02_seed829014.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_caseboard_number_c02_seed829014.png",
+      "item_id": "CARP_A1",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Abstract caseboard/card scene with no readable numbers; usable for investigation texture."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_caseboard_number_c03_seed829151.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_caseboard_number_c03_seed829151.png",
+      "item_id": "CARP_A1",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Clean abstract caseboard/sticky-note composition; no readable text."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_caseboard_number_c04_seed829288.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_caseboard_number_c04_seed829288.png",
+      "item_id": "CARP_A1",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Hand and board are symbolic; no identifiable person and no readable numbers."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_city_overhead_c01_seed829973.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_city_overhead_c01_seed829973.png",
+      "item_id": "CARP_A1",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Clean abstract blue city grid; no labels or text."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_city_overhead_c02_seed830110.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_city_overhead_c02_seed830110.png",
+      "item_id": "CARP_A1",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Wide city grid with depth; good life-map background."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_city_overhead_c03_seed830247.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_city_overhead_c03_seed830247.png",
+      "item_id": "CARP_A1",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Dense blue city grid; usable as tower/path background."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_city_overhead_c04_seed830384.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_city_overhead_c04_seed830384.png",
+      "item_id": "CARP_A1",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Strongest city-overhead candidate; selected for CSLI/tower sequence."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_store_exterior_c01_seed828329.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_store_exterior_c01_seed828329.png",
+      "item_id": "CARP_A1_store_exterior",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Storefront has readable/fake sign-like text; reject for no-text policy."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_store_exterior_c02_seed828466.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_store_exterior_c02_seed828466.png",
+      "item_id": "CARP_A1_store_exterior",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Best store exterior candidate; no readable sign, neutral symbolic storefront."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_store_exterior_c03_seed828603.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_store_exterior_c03_seed828603.png",
+      "item_id": "CARP_A1_store_exterior",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Usable storefront with no readable branding; good Act I alternate."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/act1/CARP_A1_store_exterior_c04_seed828740.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\act1\\CARP_A1_store_exterior_c04_seed828740.png",
+      "item_id": "CARP_A1_store_exterior",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Storefront has readable/fake sign-like text; reject for no-text policy."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c01_seed826137.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c01_seed826137.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Screen is too blank and composition reads like a draft still rather than final premium documentary art."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c02_seed826274.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c02_seed826274.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Good silhouette but too sparse; not enough map/trail specificity for opener or ending."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c03_seed826411.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c03_seed826411.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Overly dark and under-resolved; weak narrative read at 1080p."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c04_seed826548.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c04_seed826548.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Contains phone UI-like marks and lacks polished location-trail image language."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c05_seed826685.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c05_seed826685.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Usable only as rough mood reference; final cut should not depend on it."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c06_seed826822.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c06_seed826822.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "usable_for": [],
+      "reason": "Generic UI photography look; risks reading as app footage."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c01_seed826959.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H02_dark_location_bloom_c01_seed826959.png",
+      "item_id": "CARP_H02_dark_location_bloom",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Strong abstract city-map texture; no readable text; useful for thin-list and ending backgrounds."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c02_seed827096.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H02_dark_location_bloom_c02_seed827096.png",
+      "item_id": "CARP_H02_dark_location_bloom",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Most cinematic existing map bloom; supports the 127-day hook."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c03_seed827233.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H02_dark_location_bloom_c03_seed827233.png",
+      "item_id": "CARP_H02_dark_location_bloom",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Clean map macro with strong blue-gold palette and no identity risk."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c04_seed827370.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H02_dark_location_bloom_c04_seed827370.png",
+      "item_id": "CARP_H02_dark_location_bloom",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Clean dense route texture; strong alternate map background."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c05_seed827507.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H02_dark_location_bloom_c05_seed827507.png",
+      "item_id": "CARP_H02_dark_location_bloom",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Deep, graphic map field; suitable for location-density scenes."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c06_seed827644.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H02_dark_location_bloom_c06_seed827644.png",
+      "item_id": "CARP_H02_dark_location_bloom",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Bright, legible location-grid background; selected for points sequence."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/opening/CARP_H03_phone_on_desk_c01_seed827781.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\opening\\CARP_H03_phone_on_desk_c01_seed827781.png",
+      "item_id": "CARP_H03_phone_on_desk",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Generic phone/table composition with useful object realism; no logos or readable text."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/opening/CARP_H03_phone_on_desk_c02_seed827918.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\opening\\CARP_H03_phone_on_desk_c02_seed827918.png",
+      "item_id": "CARP_H03_phone_on_desk",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Generic phone/desk scene; acceptable as background texture."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/opening/CARP_H03_phone_on_desk_c03_seed828055.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\opening\\CARP_H03_phone_on_desk_c03_seed828055.png",
+      "item_id": "CARP_H03_phone_on_desk",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Best desk-phone candidate; polished shallow-focus smartphone still with no readable text."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/opening/CARP_H03_phone_on_desk_c04_seed828192.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\opening\\CARP_H03_phone_on_desk_c04_seed828192.png",
+      "item_id": "CARP_H03_phone_on_desk",
+      "qc_status": "accepted",
+      "usable_for": [
+        "final_cut_background",
+        "thumbnail_background_candidate"
+      ],
+      "reason": "Generic phone-on-paper scene; acceptable with overlays and dark grade."
+    }
+  ],
+  "contact_sheet": "episodes/PD-2026-008-carpenter/05_visuals/qc_contact_32.v001.jpg"
+}

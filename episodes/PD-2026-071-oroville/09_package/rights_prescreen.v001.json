@@ -1,0 +1,571 @@
+{
+  "schema_version": "rights_manifest_v1",
+  "artifact_kind": "rights_prescreen",
+  "artifact_kind_note": "This is NOT a delivery-time rights manifest. It carries no final_video, no sha256 of a render and no publication gate, because no render exists. It uses the rights_manifest_v1 skeleton (schema_version / episode_id / revision / created_at / items[] / constraints[]) from episodes/PD-2026-005-madoff/09_package/rights_manifest.final.v009.json, and extends each item with the prescreen fields the planning question actually needs: url, publisher, date, shows, licence_quoted, attribution_required, media, verified_by, verified_at, beat. The extension is declared here rather than invented silently.",
+  "episode_id": "PD-2026-071-oroville",
+  "episode_id_renumbered_from": "PD-2026-070-oroville",
+  "episode_id_renumber_note": "RENUMBER, NOT A CONTENT CHANGE. On 2026-08-12 the owner assigned EP70 to Martin v. United States (45 min) and EP71 to Oroville (30 min). This file was authored under the old number and was moved with the directory from episodes/PD-2026-070-oroville/ to episodes/PD-2026-071-oroville/. The identifier field was corrected in place because leaving it would have made it false; NOTHING ELSE IN THIS FILE WAS EDITED -- no item, no rejection, no answer, no verification record. Recorded in the episode manifest and in events.jsonl. The premise files this artefact cites in `provenance.inputs` still carry their original EP70_oroville_* filenames and were deliberately NOT renamed, so those paths still resolve; see episodes/_planning/EP71_oroville_IDENTITY.v001.md.",
+  "slug": "oroville",
+  "revision": "v001",
+  "created_at": "2026-08-12T00:00:00+00:00",
+  "created_by": "claude",
+  "purpose": "Settle bonus_reasoning.real_footage in episodes/_planning/EP70_oroville_premise.v002.scored.json by establishing, per asset, whether specific February 2017 Oroville footage is available AND clearable. The scorer withheld the +5 real_footage bonus because no clearance position had been established on any specific clip; awarding it unverified would have moved 85 to 90 and flipped RESERVE to PRODUCTION.",
+
+  "verification_standard": {
+    "rule": "An item appears in `items` only if a human-directed fetch actually retrieved the publisher's page and read its content. `verified_by` records who retrieved it. Nothing in `items` rests on a search-engine snippet, a summary, or an unopened URL.",
+    "why": "A previous agent on this episode fabricated citations. See MEMORY feedback_subagent_fabrication.",
+    "verified_by_values": {
+      "claude_direct": "This session opened the page (or, for the Croyle PDF, parsed the retrieved file locally with pymupdf) and read the content quoted here.",
+      "not_verified": "Listed in `could_not_verify`, never in `items`."
+    }
+  },
+
+  "commercial_use_ok": true,
+  "commercial_use_note": "Every item in `items` carries either a publisher-stated public-domain position or a publisher-stated free licence. No item requires a paid licence. Two of the three legal bases carry conditions that are recorded per item and repeated in `constraints`.",
+  "contains_real_person_likeness": true,
+  "contains_real_person_likeness_note": "Several verified assets show identifiable real people (named officials in the Croyle deck; named Cal OES staff in DVIDS 3169156; evacuees at Beale AFB in DVIDS 509456). These are authentic photographic records, which invariant 11 permits. HC-6 forbids GENERATED likenesses, not documentary ones. No verified asset here is AI-generated.",
+
+  "legal_bases": [
+    {
+      "id": "LB-1",
+      "label": "California state work, public domain by operation of California law",
+      "applies_to": "California Department of Water Resources stills and video",
+      "the_position": "California state government works are NOT automatically public domain the way US federal works are. There is no federal-style statutory exclusion. The public-domain position rests on County of Santa Clara v. CFAC, which holds that a California public entity cannot enforce copyright in public records absent express statutory authorisation. DWR is not among the agencies California law authorises to claim copyright.",
+      "who_asserts_it": "Wikimedia Commons, via Template:PD-CAGov. This is a community legal analysis applied per file, NOT a grant from DWR.",
+      "template_caveat_quoted": "Wikimedia Commons makes no guarantee of the adequacy or validity of this information.",
+      "what_dwr_itself_asserts": "Nothing helpful. https://water.ca.gov/Conditions-of-Use was opened in full: it contains Privacy, SECURITY and DISCLAIMER sections and the footer line 'Copyright © 2026 State of California'. It contains NO section headed Ownership, NO public-domain statement, and NO reuse grant. The nearest thing to a permission anywhere on DWR's own estate is https://water.ca.gov/Library describing its photo library: 'Our web-based photo library, Pixel, features a vast collection of images of California's natural landscapes, waterways, and other features of interest, available for free download.' That is a description of a download button, not a licence.",
+      "strength": "GOOD BUT INFERRED. This is the honest characterisation. It is the same basis Wikipedia relies on for its entire Oroville Dam crisis article, and no counter-claim by DWR was found. It is not a written permission and should not be described as one.",
+      "sister_agency_note": "The one California publisher that DOES assert the position in writing is Cal OES, whose Conditions of Use says in terms: 'In general, information presented on this web site, unless otherwise indicated, is considered in the public domain. It may be distributed or copied as permitted by law.' The identical clause appears on CHP's site. DWR's own site omits it. This inconsistency is the single weakest point in the whole rights picture and is why LB-1 is rated inferred rather than granted."
+    },
+    {
+      "id": "LB-2",
+      "label": "US federal government work, no copyright",
+      "applies_to": "DVIDS (DoD) stills and video; NASA imagery; USGS imagery",
+      "quoted_dvids": "DoW VI that are works of authorship prepared by U.S. Government employees as part of their official duties are not eligible for copyright protection in the United States.",
+      "quoted_dvids_use": "DoW VI may be distributed, copied, and used, for non-commercial, personal use, as well as historical and newsworthy purposes or activities.",
+      "quoted_dvids_endorsement": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+      "quoted_dvids_caveat": "some VI available on this publicly accessible website may be subject to copyright or other intellectual property rights owned by non-DoW parties.",
+      "quoted_nasa": "NASA should be acknowledged as the source of the material. / NASA will not promote or endorse or appear to promote or endorse a commercial product, service or activity.",
+      "reading": "The underlying legal fact is the absence of copyright. The DVIDS 'non-commercial, personal use' phrasing is a use-policy overlay, not a copyright restriction, and the same sentence expressly extends to 'historical and newsworthy purposes', which a documentary is. A monetised documentary must therefore carry the non-endorsement disclaimer and must not imply DoD or NASA endorsement. Recorded as a binding constraint, not a blocker.",
+      "strength": "STRONG. Publisher states the position in writing, per asset, with a Public Domain badge on every asset page opened.",
+      "national_guard_wrinkle": "Several items are California National Guard products. National Guard status (Title 32 vs Title 10) can complicate the 'federal employee' analysis. DVIDS nonetheless publishes them with the Public Domain badge and identical boilerplate. Where a purely federal alternative exists (509456 is 9th Reconnaissance Wing, an active-duty USAF unit; 3171587/3171592 are 60th Air Mobility Wing), prefer it for any hero placement."
+    },
+    {
+      "id": "LB-3",
+      "label": "Explicit free mark asserted by the holding institution",
+      "applies_to": "California State Archives / California Revealed films on the Internet Archive",
+      "quoted": "Public domain. No restrictions on use.",
+      "licence_url": "http://creativecommons.org/publicdomain/mark/1.0/",
+      "strength": "STRONGEST of the three. An unambiguous written rights statement from the holding institution in a machine-readable metadata field. Its only weakness is subject matter: these are 1960s films, not the 2017 event."
+    }
+  ],
+
+  "items": [
+    {
+      "asset": "PRESCREEN-V-001",
+      "type": "video",
+      "media": "video",
+      "beat": "the spillway on the day before the order",
+      "url": "https://commons.wikimedia.org/wiki/File:Lake_Oroville_Emergency_Spillway,_February_11th_4PM.webm",
+      "direct_file": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Lake_Oroville_Emergency_Spillway%2C_February_11th_4PM.webm",
+      "publisher": "California Department of Water Resources (via Wikimedia Commons)",
+      "original_source_stated_on_file_page": "https://www.youtube.com/watch?v=fA52L0eabNo",
+      "date": "filmed 2017-02-11 16:00 PST; Commons file date 2017-02-12",
+      "shows": "The Oroville Dam spillways at 4pm on 11 February 2017, the afternoon before the evacuation order.",
+      "spec": "1920x1080, 135.398 s, WebM, 154,453,483 bytes",
+      "licence_quoted": "{{PD-CAGov}} — 'a public record that was not created by an agency which state law has allowed to claim copyright, and is therefore in the public domain in the United States'",
+      "legal_basis": "LB-1",
+      "attribution_required": false,
+      "attribution_recommended": "California Department of Water Resources",
+      "rights_basis": "California state public record; public domain per County of Santa Clara v. CFAC as applied by Commons Template:PD-CAGov. No DWR grant exists; see LB-1.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "File page opened; raw wikitext retrieved via action=raw confirming Source and {{PD-CAGov}}; dimensions, byte size and duration read from the Commons API imageinfo endpoint."
+    },
+    {
+      "asset": "PRESCREEN-V-002",
+      "type": "video",
+      "media": "video",
+      "beat": "the day of the order — 12 February 2017",
+      "url": "https://commons.wikimedia.org/wiki/File:Lake_Oroville_Spillways_February_12,_2017.webm",
+      "direct_file": "https://upload.wikimedia.org/wikipedia/commons/1/12/Lake_Oroville_Spillways_February_12%2C_2017.webm",
+      "publisher": "California Department of Water Resources (via Wikimedia Commons)",
+      "original_source_stated_on_file_page": "https://www.youtube.com/watch?v=T5zumuQIMV0",
+      "date": "filmed 2017-02-12; Commons file date 2017-02-20",
+      "shows": "The Oroville Dam spillways on 12 February 2017 — the day the counties issued the evacuation orders at 4:10pm, 4:34pm, 4:59pm and 6:03pm.",
+      "spec": "1920x1080, 120.654 s, WebM, 94,880,465 bytes",
+      "licence_quoted": "{{PD-CAGov}} — 'a public record that was not created by an agency which state law has allowed to claim copyright, and is therefore in the public domain in the United States'",
+      "legal_basis": "LB-1",
+      "attribution_required": false,
+      "attribution_recommended": "California Department of Water Resources",
+      "rights_basis": "As PRESCREEN-V-001.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "File page opened; raw wikitext retrieved via action=raw; spec read from Commons API imageinfo.",
+      "production_note": "This is the highest-value single asset on the list. It is real, moving, 1080p footage of the thing that emptied the valley, on the exact day the film opens."
+    },
+    {
+      "asset": "PRESCREEN-V-003",
+      "type": "video",
+      "media": "video",
+      "beat": "the emergency response — helicopters, rock bags, the eroded hillside",
+      "url": "https://www.dvidshub.net/video/510349",
+      "publisher": "DVIDS — 146th Airlift Wing, California Air National Guard",
+      "credit": "Tech. Sgt. Ty Moore",
+      "virin": "170214-Z-QA374-002",
+      "date": "taken 2017-02-15 (VIRIN dates the shoot 2017-02-14); posted 2017-02-17",
+      "shows": "B-roll of Oroville Dam and repair of the emergency spillway, with helicopters dropping bags of rocks into the large hole on the emergency spillway.",
+      "spec": "8 min 55 s; formats up to 1920x1080",
+      "licence_quoted": "Public Domain. 'This work ... must comply with the restrictions shown on https://www.dvidshub.net/about/copyright.'",
+      "legal_basis": "LB-2",
+      "attribution_required": false,
+      "conditions": [
+        "Carry the DoD non-endorsement disclaimer.",
+        "Do not imply DoD endorsement of the channel."
+      ],
+      "rights_basis": "US federal government visual information, not eligible for copyright; DVIDS use policy overlay applies.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "Asset page opened; title, VIRIN, unit, duration, resolutions, caption and Public Domain badge all read from the page.",
+      "production_note": "Nine minutes of 1080p B-roll from inside the emergency is by far the largest single block of clearable moving footage found. Caveat: it is the DAM, and per the premise's own thumbnail_power reasoning this film is not about the dam. Ration it."
+    },
+    {
+      "asset": "PRESCREEN-V-004",
+      "type": "video",
+      "media": "video",
+      "beat": "THE EVACUATION — the only verified moving footage of the people the order moved",
+      "url": "https://www.dvidshub.net/video/509456",
+      "publisher": "DVIDS — 9th Reconnaissance Wing, Beale Air Force Base (active-duty USAF)",
+      "credit": "Senior Airman Tommy Wilbourn",
+      "virin": "170212-F-GX009-213",
+      "date": "taken 2017-02-12; posted 2017-02-13",
+      "shows": "Beale Air Force Base preparing for and receiving evacuees affected by the Oroville Spillway, 12 February 2017.",
+      "caption_quoted": "Beale Air Force Base prepares for and receives evacuees affected by the Oroville Spillway Feb. 12, 2017.",
+      "spec": "1 min 12 s; formats up to 1920x1080",
+      "licence_quoted": "Public Domain. 'This work, Beale Receives Evacuees, by SrA Tommy Wilbourn, identified by DVIDS, must comply with the restrictions shown on https://www.dvidshub.net/about/copyright.'",
+      "legal_basis": "LB-2",
+      "attribution_required": false,
+      "conditions": [
+        "Carry the DoD non-endorsement disclaimer."
+      ],
+      "rights_basis": "US federal government visual information, active-duty USAF unit — the cleanest federal position on the list.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "Asset page opened; title, date, location, unit, VIRIN, duration, resolutions, caption and Public Domain badge read from the page.",
+      "production_note": "This is the answer to question C, and it is thin: 72 seconds. It is also 30 miles from Oroville, at an air base, not the Silver Dollar Fairgrounds. Independently corroborated context: Beale sheltered more than 400 people and by Monday afternoon was redirecting further arrivals to Wheatland High School and the Placer County Fairgrounds (Military.com, 14 Feb 2017, opened)."
+    },
+    {
+      "asset": "PRESCREEN-S-001",
+      "type": "still",
+      "media": "still",
+      "beat": "the emergency spillway carrying water on the day of the order",
+      "url": "https://commons.wikimedia.org/wiki/File:Oroville_Emergency_Spillway_Carrying_Water.jpg",
+      "publisher": "California Department of Water Resources (via Wikimedia Commons)",
+      "date": "2017-02-12",
+      "shows": "Water flowing over the emergency spillway during the crisis.",
+      "spec": "2040x1362",
+      "licence_quoted": "Public domain (Template:PD-CAGov). extmetadata UsageTerms = 'Public domain'; AttributionRequired = false.",
+      "legal_basis": "LB-1",
+      "attribution_required": false,
+      "rights_basis": "As PRESCREEN-V-001.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "Commons API imageinfo with extmetadata filter; LicenseShortName, UsageTerms, AttributionRequired, Artist, Credit and DateTimeOriginal read from the JSON."
+    },
+    {
+      "asset": "PRESCREEN-S-002",
+      "type": "still",
+      "media": "still",
+      "beat": "the spillway the day before the order",
+      "url": "https://commons.wikimedia.org/wiki/File:Oroville_dam_spillway_2017-02-11.jpg",
+      "publisher": "California Department of Water Resources (via Wikimedia Commons)",
+      "artist": "William Croyle, California Department of Water Resources",
+      "date": "2017-02-11",
+      "shows": "Water flowing from the eroded overflow spillway of Oroville Dam.",
+      "spec": "2924x2193",
+      "original_source_stated_on_file_page": "https://www.facebook.com/CADWR/photos/pb.100066946417752.-2207520000/10154430795292449/",
+      "licence_quoted": "Public domain (Template:PD-CAGov).",
+      "legal_basis": "LB-1",
+      "attribution_required": false,
+      "rights_basis": "As PRESCREEN-V-001.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "File page opened directly."
+    },
+    {
+      "asset": "PRESCREEN-S-003",
+      "type": "still",
+      "media": "still",
+      "beat": "7 February — the concrete fails, five days before anyone is told to leave",
+      "url": "https://commons.wikimedia.org/wiki/File:Oroville_Dam_spillway_damage_7_Feb_2017-10235.jpg",
+      "publisher": "California Department of Water Resources (via Wikimedia Commons)",
+      "artist": "Sr. Photographer Kelly M. Grow / California Department of Water Resources",
+      "date": "2017-02-07 14:51:33 PST",
+      "shows": "The suspended spillway after a concrete section eroded on the middle section.",
+      "spec": "4790x7177 (26.52 MB)",
+      "original_source_stated_on_file_page": "http://pixel-ca-dwr.photoshelter.com/galleries/C0000OxvlgXg3yfg/G00003YCcmDTx48Y/I0000GbsE7AZBBMc/KG-oro-spillway-damage-10235-jpg",
+      "licence_quoted": "Public domain (Template:PD-CAGov).",
+      "legal_basis": "LB-1",
+      "attribution_required": false,
+      "rights_basis": "As PRESCREEN-V-001.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "File page opened directly.",
+      "production_note": "Portrait orientation and 7177px tall — this one also serves the vertical short."
+    },
+    {
+      "asset": "PRESCREEN-S-004",
+      "type": "still_set",
+      "media": "still",
+      "beat": "spillway and aftermath, spread across the film",
+      "url": "https://commons.wikimedia.org/wiki/Category:2017_Oroville_Dam_crisis",
+      "publisher": "California Department of Water Resources (via Wikimedia Commons)",
+      "date": "2017-02-07 to 2017-02-27",
+      "shows": "Further DWR stills, all individually confirmed public domain with AttributionRequired = false.",
+      "members_verified": [
+        {"file": "Oroville dam spillover 2017-02-11.jpg", "px": "960x720", "date": "2017-02-11", "artist": "William Croyle / DWR", "shows": "Water overflowing the auxiliary spillway."},
+        {"file": "Oroville Emergency Spillway Erosion.jpg", "px": "1280x789", "date": "2017-02-13", "artist": "DWR", "shows": "Crews inspect and evaluate the erosion just below the emergency spillway."},
+        {"file": "Oroville Dam weir and emergency spillway erosion.jpg", "px": "1200x900", "date": "2017-02-13", "artist": "DWR", "shows": "The emergency spillway following crisis usage."},
+        {"file": "Rock loaded for helicopter transport during Oroville Dam crisis.jpg", "px": "7360x4912", "date": "2017-02-13", "artist": "Florence Low / DWR", "shows": "Excavators load rocks for helicopters to transport to the eroded auxiliary spillway."},
+        {"file": "Oroville Dam wide view 15 February 2017.jpg", "px": "6200x3848", "date": "2017-02-15", "artist": "Dale Kolke / DWR", "shows": "Aerial east toward the dam, damaged spillway at 100,000 cfs."},
+        {"file": "Oroville Dam spillways 15 February 2017.jpg", "px": "5699x3840", "date": "2017-02-15", "artist": "Dale Kolke / DWR", "shows": "Eroded landscape below the emergency spillway, repair work ongoing."},
+        {"file": "Oroville Dam aerial of damage 16 Feb 2017.jpg", "px": "5611x3741", "date": "2017-02-16", "artist": "DWR", "shows": "Emergency spillway erosion and main spillway crater."},
+        {"file": "Oroville Dam emergency spillway repairwork.jpg", "px": "1200x801", "date": "2017-02-16", "artist": "DWR", "shows": "Emergency shoring with rock and concrete."},
+        {"file": "Concrete trucks, Oroville Dam emergency spillway, 2017.jpg", "px": "7360x4912", "date": "2017-02-17", "artist": "Brian Baer / DWR", "shows": "Concrete trucks awaiting delivery for erosion repair."},
+        {"file": "Oroville Dam damaged main spillway 20 Feb 2017.jpg", "px": "808x1200", "date": "2017-02-20", "artist": "DWR", "shows": "The forked main spillway."},
+        {"file": "Oroville Dam split main spillway.jpg", "px": "1200x900", "date": "2017-02-20", "artist": "DWR", "shows": "The forked main spillway."},
+        {"file": "Oroville Dam emergency spillway 1.jpg", "px": "1200x765", "date": "2017-02-22", "artist": "DWR", "shows": "Concrete poured on bare earth to reinforce the weir."},
+        {"file": "Oroville Dam spillway debris in Feather River 27 February 2017.jpg", "px": "5760x3840", "date": "2017-02-27", "artist": "Dale Kolke / DWR", "shows": "Eroded soil and debris in the Feather River."}
+      ],
+      "licence_quoted": "Public domain (Template:PD-CAGov) on every member listed. extmetadata AttributionRequired = false on every member listed.",
+      "legal_basis": "LB-1",
+      "attribution_required": false,
+      "rights_basis": "As PRESCREEN-V-001.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "Category page opened (43 files). Each member listed above was checked through the Commons API imageinfo endpoint with extmetadata; the values recorded are the values the API returned."
+    },
+    {
+      "asset": "PRESCREEN-S-005",
+      "type": "still",
+      "media": "still",
+      "beat": "establishing — the reservoir from orbit",
+      "url": "https://commons.wikimedia.org/wiki/File:ISS-50_Lake_Oroville_and_the_Oroville_Dam.jpg",
+      "canonical_publisher_page": "https://science.nasa.gov/earth/earth-observatory/astronauts-snap-a-photo-of-oroville-dam-89767",
+      "publisher": "NASA — ISS Crew Earth Observations Facility / Earth Science and Remote Sensing Unit, Johnson Space Center",
+      "photo_id": "ISS050-E-52024",
+      "date": "2017-02-22",
+      "shows": "Lake Oroville and the dam from the International Space Station, water being released down the main spillway. Nikon D4, 1200mm lens.",
+      "spec": "4928x3280",
+      "licence_quoted": "Commons: 'This file is in the public domain in the United States because it was created by the Image Science & Analysis Laboratory, of the NASA Johnson Space Center.' NASA brand guidance: 'NASA should be acknowledged as the source of the material.' / 'NASA will not promote or endorse or appear to promote or endorse a commercial product, service or activity.'",
+      "legal_basis": "LB-2",
+      "attribution_required": true,
+      "attribution_text": "NASA / ISS Crew Earth Observations Facility, Johnson Space Center. Photo ID ISS050-E-52024.",
+      "conditions": ["Credit NASA.", "Do not imply NASA endorsement."],
+      "rights_basis": "US federal government work; NASA imagery is generally not subject to copyright in the United States.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "Commons file page opened; NASA publisher page opened (note: the old earthobservatory.nasa.gov URL 301-redirects to science.nasa.gov); NASA brand/media-usage page opened for the credit and endorsement wording.",
+      "caveat": "NASA's own asset page states no licence in words. The public-domain position is the statutory federal one plus NASA's general media guidance, not an asset-level grant."
+    },
+    {
+      "asset": "PRESCREEN-S-006",
+      "type": "still_set",
+      "media": "still",
+      "beat": "THE SYSTEM — the room where the order came from",
+      "url": "https://www.dvidshub.net/image/3169147",
+      "url_second": "https://www.dvidshub.net/image/3169156",
+      "publisher": "DVIDS — 146th Airlift Wing, California Air National Guard",
+      "credit": "Staff Sgt. Nicholas Carzis",
+      "virin": "170215-Z-QY689-002 and 170215-Z-QY689-006",
+      "date": "2017-02-15",
+      "location": "Rancho Cordova, California",
+      "shows": "Inside the California Governor's Office of Emergency Services State Operations Center during the Oroville response. 3169147: state emergency representatives from DWR, CAL FIRE, the California National Guard and the CHP coordinating interagency logistics. 3169156: Megan Walton and Toni Curtis at the Mission Resource Tasking Operations Desk with National Guard liaison officers Lt. Col. Steve Casagrande and Col. David Garcia.",
+      "spec": "5568x3712 each",
+      "licence_quoted": "Public Domain. 'This work ... identified by DVIDS, must comply with the restrictions shown on https://www.dvidshub.net/about/copyright.'",
+      "legal_basis": "LB-2",
+      "attribution_required": false,
+      "conditions": ["Carry the DoD non-endorsement disclaimer."],
+      "rights_basis": "US federal government visual information; see LB-2 national_guard_wrinkle.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "Both asset pages opened individually; VIRIN, unit, credit, resolution, caption and Public Domain badge read from each. The associated DVIDS news item 223719 was also opened and names the same two image IDs as connected media.",
+      "production_note": "5568x3712 and genuinely on-theme. This film's subject is an order that no one could later attribute to anywhere in particular; a real photograph of the actual room where the agencies sat is worth more to it than any amount of spillway water. Strong candidate for a hero plate.",
+      "hc3_check": "The two named individuals (Walton, Curtis) are Cal OES staff photographed at work by a government photographer. They are unrelated to the JCCP 4974 employee allegations that HC-3 bars. Naming them on screen is optional; nothing requires it."
+    },
+    {
+      "asset": "PRESCREEN-S-007",
+      "type": "still_set",
+      "media": "still",
+      "beat": "the federal machine assembling for a failure that did not come",
+      "url": "https://www.dvidshub.net/image/3171587/fema-oroville-dam",
+      "publisher": "DVIDS — 60th Air Mobility Wing, Travis Air Force Base",
+      "credit": "Louis Briscese",
+      "virin": "170216-F-LI975-0009 (image 1) and 170216-F-LI975-0034 (image 3)",
+      "date": "2017-02-16",
+      "location": "Travis Air Force Base, California",
+      "shows": "FEMA staging at Travis AFB in case of Oroville auxiliary spillway failure. Caption quoted: 'Travis AFB is acting as a staging area for FEMA personnel, providing space for necessary equipment and supplies in case of the Oroville auxiliary spillway failure.' Image 1: FEMA logistics chain systems managers tracking arriving trucks. Image 3: FEMA trucks and personnel arriving.",
+      "spec": "3000x2400",
+      "set_size": 18,
+      "members_individually_opened": ["3171587", "3171592"],
+      "licence_quoted": "Public Domain. 'must comply with the restrictions shown on https://www.dvidshub.net/about/copyright'",
+      "legal_basis": "LB-2",
+      "attribution_required": false,
+      "conditions": ["Carry the DoD non-endorsement disclaimer."],
+      "rights_basis": "US federal government visual information, active-duty USAF unit.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "3171587 and 3171592 opened individually. The set size of 18 is stated on both pages ('18 images in this gallery'; '[Image 3 of 18]'). The remaining 16 asset IDs were NOT individually opened and are therefore not asserted here.",
+      "production_note": "Convoys and logistics, not shelters. Do not mistake this for evacuee imagery."
+    },
+    {
+      "asset": "PRESCREEN-S-008",
+      "type": "still_set",
+      "media": "still",
+      "beat": "aftermath — the two days are over and the ground is still wrecked",
+      "url": "https://www.dvidshub.net/image/3195145",
+      "publisher": "DVIDS — Defense Imagery Management Operations Center; US Army National Guard / California Army National Guard",
+      "date": "2017-02-25",
+      "location": "Oroville, California",
+      "shows": "California Army National Guard flood damage assessment and recovery in Oroville. Individually opened: 3195131 (aerial flood damage assessment from a UH-60 Black Hawk, 2048x1365), 3195145 (recovery efforts, 1920x1080), 3195148 (damage assessment, 1365x2048), 3195151 (soldiers building sandbags, 480x640).",
+      "set_size": 13,
+      "member_ids_listed_on_set_page": ["3195131", "3195133", "3195135", "3195136", "3195138", "3195139", "3195140", "3195143", "3195144", "3195145", "3195148", "3195149", "3195151"],
+      "members_individually_opened": ["3195131", "3195145", "3195148", "3195151"],
+      "licence_quoted": "Public Domain. 'must comply with the restrictions shown on https://www.dvidshub.net/about/copyright'",
+      "legal_basis": "LB-2",
+      "attribution_required": false,
+      "conditions": ["Carry the DoD non-endorsement disclaimer."],
+      "rights_basis": "US federal government visual information; see LB-2 national_guard_wrinkle.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "Four members opened individually. The 13-ID list is reproduced from the gallery listing on the 3195145 page, which this session read.",
+      "ACCURACY_WARNING": "The DoD caption on several members of this set reads '...in the aftermath of a dam failure near Oroville, California'. NO DAM FAILURE OCCURRED. If any of these images is used, the narration and any on-screen caption must not repeat the DoD wording. This is exactly the kind of second-hand error HC-4 exists to catch.",
+      "resolution_warning": "Sizes in this set range from 2048x1365 down to 480x640. Check each before placing; 3195151 is unusable above thumbnail size."
+    },
+    {
+      "asset": "PRESCREEN-S-009",
+      "type": "still_set",
+      "media": "still",
+      "beat": "THE EVACUATION ON THE GROUND — the only state-published imagery of it that exists",
+      "url": "https://sntr.senate.ca.gov/sites/sntr.senate.ca.gov/files/bill_croyle_oroville_dam_photo_presentation_small.pdf",
+      "publisher": "California Senate Committee on Natural Resources and Water (document); California Department of Water Resources (author of the presentation)",
+      "presented_by": "Bill Croyle, Acting Director, California Department of Water Resources",
+      "presented_on": "2017-04-25",
+      "pdf_metadata": "34 pages; title 'PowerPoint Presentation'; author 'Eagan, Alicia'; creator 'Acrobat PDFMaker 11 for PowerPoint'; creationDate 2017-04-21",
+      "shows": "A 34-slide chronological photo record, March 2016 to March 2017, one large photograph per slide. The evacuation-relevant slides, captions quoted verbatim from the file: slide 10 'February 12, 2017, approximately 5:20 p.m. | CHP officers review map' (804x452); slide 11 'February 12, 2017, approximately 6:45 p.m. | Residents receive updates on Oroville situation/evacuation' (809x455); slide 12 'February 12, 2017, 10:24 p.m. | Press conference regarding emergency spillway and evacuation' (1067x600); slide 13 'February 12, 2017 – CHP and local law enforcement aiding evacuations' (1183x664); slide 16 'February 14, 2017 | L to R: Butte County Sheriff Kory L. Honea, Cal Fire incident commander Kevin Lawson and DWR Acting Director Bill Croyle announce that the immediate evacuation order in Butte County has been reduced to an evacuation warning' (1200x675). Also slide 23 'February 20, 2017 | A handmade sign on Canyon Drive in Oroville gives thanks to emergency crews' (1200x780) and slide 29 'March 5, 2017 | Oroville residents make a special delivery of baked goods to show their support to the crews' (1200x793).",
+      "licence_quoted": "NONE. The document contains no copyright notice, no photo credit, no courtesy line and no permission statement — a full-text scan of all 34 pages returned zero occurrences of 'copyright', '©', 'photo by', 'credit', 'courtesy' or 'all rights'.",
+      "legal_basis": "LB-1 (contested — see rights_conflict)",
+      "rights_conflict": "The underlying photographs are DWR's, which puts them under LB-1. But the document is hosted on a California Senate committee server, and the Legislature's own terms are materially more restrictive than the executive branch's. Quoted from https://www.assembly.ca.gov/privacy-and-conditions-use-policy: 'Some of the information presented on this web site may be protected by copyright. Permission to use that material must be obtained in advance from the California State Assembly, the California State Senate, or the Legislative Counsel Bureau, as applicable.' Which regime governs a DWR deck on a Senate server is genuinely unresolved.",
+      "attribution_required": "unresolved",
+      "rights_basis": "review_required — DWR-authored photographs, legislature-hosted document, no statement in either the file or a governing terms page that settles it.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "PDF retrieved and parsed locally with pymupdf. Page count, PDF metadata, every slide caption and every embedded image dimension were read from the file itself. The Assembly terms page was opened separately.",
+      "resolution_warning": "The embedded images are 804-1200 px wide JPEG2000/JPEG slide graphics. Slide 10 at 804x452 is below 720p. These are presentation exports, not archive masters. They can carry a beat with treatment; they cannot carry a hero plate.",
+      "recommended_action": "Before any use, ask DWR Public Affairs in writing for the originals of the slide 10-13 and 16 photographs and for a written statement of terms. They are DWR's own images and DWR advertises its photo library as free to download; a written reply would convert the strongest asset in question C from review_required to cleared, and would incidentally give LB-1 the written grant it currently lacks."
+    },
+    {
+      "asset": "PRESCREEN-A-001",
+      "type": "video_set",
+      "media": "video",
+      "beat": "the dam that was built — historical / 2005 warning context",
+      "url": "https://archive.org/details/car_000262",
+      "publisher": "California State Archives, via California Revealed, hosted on the Internet Archive",
+      "creator": "California Department of Water Resources",
+      "members_verified": [
+        {"identifier": "car_000262", "title": "Oroville Plaque Ceremony", "date": "1968-05-05", "duration_s": 1362.69, "px": "720x540", "note": "Silent colour film. Unveiling ceremony honouring Edward Hyatt and A. D. Edmonston, plus recreation scenes INCLUDING SPILLWAY FOOTAGE."},
+        {"identifier": "car_000256", "title": "Dedications Ceremonies/Reagan/Brown/State Water Project", "date": "published 2017-11-22", "duration_s": 2170.97, "px": "720x540", "note": "Governors Knight, Pat Brown and Reagan at dedications including Oroville Dam. Mostly silent."},
+        {"identifier": "car_000259", "title": "Oroville Recreation", "date": "published 2017-11-22", "duration_s": 2481.98, "px": "720x540", "note": "16mm colour silent film on Lake Oroville."}
+      ],
+      "licence_quoted": "rights field: 'Public domain. No restrictions on use.' licenseurl: http://creativecommons.org/publicdomain/mark/1.0/",
+      "legal_basis": "LB-3",
+      "attribution_required": false,
+      "rights_basis": "Explicit public-domain mark and an explicit rights statement from the holding institution — the strongest written position on this list.",
+      "verified_by": "claude_direct",
+      "verified_at": "2026-08-12",
+      "verification_detail": "archive.org /metadata/ endpoint opened for each of the three identifiers; rights, licenseurl, creator, collection, description and file durations/resolutions read from the returned JSON.",
+      "production_note": "Not 2017 and does not count toward the real_footage question. It is a real, free, period-correct answer to the 'this dam was built and celebrated, and in 2005 three groups told FERC the hillside was bare' beat, which the stock shelf cannot dress at all. 720x540 SD — treat as archival texture, never full frame."
+    }
+  ],
+
+  "rejected": [
+    {
+      "what": "Independent Forensic Team Report, Oroville Dam Spillway Incident, 5 January 2018 — figures and photographs",
+      "host": "https://damsafety.org (Association of State Dam Safety Officials)",
+      "reason": "The host asserts rights over site content. Quoted verbatim from https://damsafety.org/disclaimer: 'Copyright ©2025. Association of State Dam Safety Officials. All Rights Reserved.' DWR's Forensic Team page links to the ASDSO-hosted PDF and adds no permission of its own; its footer reads 'Copyright © 2026 State of California'.",
+      "status": "NOT CLEARED. Do not lift figures or photographs from the IFT report. The premise's SRC-0011 already records that the IFT report itself was not read and no claim rests on its contents; that stands, and now the visual position is settled too.",
+      "note": "The report text is separately on the Internet Archive as identifier 'independent-forensic-team-report-final-01-05-18' with NO licenceurl and NO rights field. Absence of a rights field is not a grant.",
+      "verified_by": "claude_direct"
+    },
+    {
+      "what": "Broadcast news recordings of the evacuation — KRON 4, KTVU, KNTV/NBC Bay Area, MSNBC, Fox Business, 12-15 February 2017",
+      "host": "Internet Archive TV News Archive",
+      "reason": "Every one of these items returns licenceurl = null. The TV News Archive is a research-access collection, not a licensable footage library. The underlying footage is network copyright.",
+      "status": "NOT CLEARED.",
+      "note": "This is where the actual evacuation footage lives — helicopter shots of Highway 70, the queues, the emptying town. It exists, it is on camera, and it is not free. A paid archive licence (AP Archive, Reuters, Getty, the stations directly) is a real path, but no budget line, no prior episode precedent and no quote exists, so it cannot be counted as an established clearance position.",
+      "verified_by": "claude_direct"
+    },
+    {
+      "what": "HOME MOVIE of CONSTRUCTION OF THE LAKE OROVILLE DAM & SPILLWAY (archive.org identifier 12434orovilledammarch19618mmmosvwr)",
+      "reason": "licenceurl = https://creativecommons.org/licenses/by-nc-nd/4.0/ — NonCommercial and NoDerivatives. Both are fatal: the channel is monetised and the film cuts.",
+      "status": "NOT CLEARED.",
+      "verified_by": "claude_direct"
+    },
+    {
+      "what": "Planet Labs satellite imagery of Oroville Dam, 2017-02-14 and 2017-02-27 (on Wikimedia Commons)",
+      "reason": "CC BY-SA 4.0, AttributionRequired = yes. ShareAlike on a frame inside a finished film is a licensing hazard the project has no reason to accept when NASA ISS050-E-52024 is public domain and 4928x3280.",
+      "status": "REJECTED ON PREFERENCE, not on availability. Usable if ever needed, with attribution and a considered ShareAlike position.",
+      "verified_by": "claude_direct"
+    },
+    {
+      "what": "Senator Kamala Harris aerial inspection of the dam, 23 February 2017 (Commons)",
+      "reason": "CC BY 2.5, AttributionRequired = yes, artist 'Office of Senator Kamala Harris', sourced from a Twitter post. Usable with credit, but a sitting-Senator photo-op is off-register for a film about an ordinary renter and invites a political read the premise does not want.",
+      "status": "REJECTED ON EDITORIAL GROUNDS.",
+      "verified_by": "claude_direct"
+    },
+    {
+      "what": "The evacuation and shelter photographs published on Cal OES's own five-year retrospective",
+      "url": "https://www.news.caloes.ca.gov/cal-oes-revisits-the-oroville-dam-spillway-incident-and-its-impacts-five-years-later/",
+      "reason": "This page is the clearest evidence in the whole prescreen. Every image of the DAM is credited 'Cal OES Photo' or 'DWR Photo'. Every image of PEOPLE is credited to a third party: 'Long line of cars gridlock highway during Oroville evacuation' = 'Appeal-Democrat Photo'; 'Line of cars in parking lot' = 'KQED Photo'; 'Red Cross Volunteer sits with three evacuees' = 'Red Cross Photo'; 'Evacuee Shirley Baker consoles her great-granddaughter Rylee Rhodes at the evacuation center' = 'The Washington Post Photo'. Cal OES's own Conditions of Use then says: 'the State does make use of copyrighted data (e.g., photographs) which may require additional permissions prior to your use' and 'In order to use any information on this web site not owned or created by the State, you must seek permission directly from the owning (or holding) sources.'",
+      "status": "NOT CLEARED. When California's own emergency agency wanted a picture of the evacuation for its own retrospective, it had to borrow one from a newspaper, a public broadcaster, the Red Cross and the Washington Post. That is the whole answer to question C in one page.",
+      "verified_by": "claude_direct"
+    },
+    {
+      "what": "Butte County published material",
+      "reason": "Quoted from https://www.buttecounty.net/copyright: 'All content © 2006-2026 Butte County, CA and its representatives. All rights reserved.'",
+      "status": "NOT CLEARED.",
+      "verified_by": "claude_direct"
+    }
+  ],
+
+  "could_not_verify": [
+    {
+      "what": "US Air Force still photographs of Oroville evacuees at Beale AFB, 12-13 February 2017",
+      "urls": ["https://www.beale.af.mil/News/Photos/igphoto/2001699647/", "https://www.nellis.af.mil/News/Photos/igphoto/2001698688/"],
+      "why": "Both returned HTTP 403. Every *.af.mil, *.army.mil, defense.gov and fema.gov URL attempted in this session returned 403. web.archive.org is blocked to this tool.",
+      "status": "NOT ASSERTED. Search snippets describe a family settling into an emergency shelter at Beale AFB on 13 February 2017 credited to 'U.S. Air Force photo/Airman Tristan D. Viglianco', but this session did not see either page and does not assert their content, dates or rights.",
+      "value_if_resolved": "HIGH. These are the most likely home for federal, public-domain, actual evacuee-and-cot imagery, which is exactly the gap in question C. One browser session on an unblocked connection resolves it.",
+      "trap": "A DVIDS asset titled '9th Reconnaissance Wing hangars become shelters for California flood evacuees' looks perfect and is NOT this event — it is dated 13 January 1997, the Yolo County floods. Do not use it."
+    },
+    {
+      "what": "DWR photo library gallery 'Oroville Spillway Incident & Recovery'",
+      "url": "https://pixel-ca-dwr.photoshelter.com/galleries/C0000OxvlgXg3yfg/G00003YCcmDTx48Y/",
+      "why": "PhotoShelter is fully JavaScript-rendered; the gallery page returns only the page title to a fetch tool. The gallery is real — two Commons files cite per-image URLs inside it (KG-oro-spillway-damage-10235 and DK-Oro-Spillway-damage-02-15-2017-IMG-4211).",
+      "status": "NOT ENUMERATED. Unknown how many images it holds, whether any show the evacuation, or what per-image terms it states.",
+      "value_if_resolved": "HIGH. DWR's own Library page calls Pixel 'available for free download'. This is the most likely source of additional state-owned February 2017 imagery at archive resolution, and the most likely place to find a written DWR permission that would upgrade LB-1 from inferred to granted."
+    },
+    {
+      "what": "YouTube licence field on the DWR and Cal OES 2017 Oroville videos",
+      "why": "YouTube watch pages do not render for this tool. A CC-BY marking would be a direct publisher grant and would settle LB-1 for those specific videos.",
+      "status": "UNRESOLVED. Not needed for the two Commons webm files, which are already hosted free-standing under PD-CAGov, but it would strengthen them and would open the rest of DWR's 'Oroville Spillways Incident' playlist.",
+      "resolution_path": "YouTube Data API videos.list part=status, field status.license. Cheap and definitive."
+    },
+    {
+      "what": "California Senate hearing video, 'An Update on the Oroville Dam', 25 April 2017",
+      "why": "https://sntr.senate.ca.gov/content/2017-informationaloversight-hearings lists a '4/25/17 Video Recording of Hearing' link that resolves only to the generic https://senate.ca.gov/media-archive landing page, which is a JavaScript search tool. The Assembly's own archive states its televised coverage begins 3 January 2018. The California Channel, which historically carried this material, went off the air permanently in October 2019 and calchannel.com is now a squatted spam domain — do not cite it.",
+      "status": "UNRESOLVED, and low value even if found: legislature terms require permission in advance."
+    },
+    {
+      "what": "USACE Sacramento District, FERC Project 2100 docket imagery, NWS Sacramento graphics, FEMA media library",
+      "why": "USACE: the DVIDS unit page for Sacramento District was opened and surfaces no February 2017 Oroville content; spk.usace.army.mil returned 403. FERC: both HTML pages returned 403; two FERC-hosted PDFs were opened and contain only scanned correspondence, no usable spillway photography — and note that filings in this docket are authored by DWR and its consultants, so the copyright position there is the filer's, not a federal-work position. NOAA: the climate.gov Oroville page was opened and its two dramatic spillway photographs are credited to William Croyle and Kelly M. Grow of DWR — NOAA is only the host, so these are LB-1 assets already covered above, not federal ones. FEMA: fema.gov returned 403 throughout.",
+      "status": "NO USABLE FEDERAL ASSETS ESTABLISHED FROM THESE SOURCES beyond the DVIDS, NASA and USGS items already in `items`."
+    }
+  ],
+
+  "answers": {
+    "A": {
+      "question": "Are there at least a handful of clearable, genuinely usable Oroville 2017 clips — enough that the film's spine can show the real event rather than a reconstruction?",
+      "answer": "YES for the dam. QUALIFIED for this film.",
+      "clip_count": 4,
+      "clips": [
+        "PRESCREEN-V-001 — DWR, spillways at 4pm 11 Feb 2017, 1080p, 2:15",
+        "PRESCREEN-V-002 — DWR, spillways 12 Feb 2017 (the day of the orders), 1080p, 2:01",
+        "PRESCREEN-V-003 — DVIDS/146AW, spillway and helicopter rock drops, 1080p, 8:55",
+        "PRESCREEN-V-004 — DVIDS/9RW, Beale AFB receives evacuees 12 Feb 2017, 1080p, 1:12"
+      ],
+      "total_runtime_s": 927,
+      "still_count_verified": 26,
+      "still_breakdown": "20 DWR stills on Commons individually confirmed public domain (2 opened as full file pages, 18 confirmed through the Commons API extmetadata endpoint), 1 NASA ISS still, 8 DVIDS federal stills opened individually. Two DVIDS sets of 18 and 13 are known to exist with their sizes stated on pages this session opened; only the 6 members opened individually are counted.",
+      "plus": "3 further California State Archives DWR films (1968 and undated, 22-41 min each, 720x540) under an explicit 'Public domain. No restrictions on use.' — historical, not 2017.",
+      "the_qualification": "Roughly 15 minutes of clearable 1080p video exists, and all but 72 seconds of it is the DAM. This film is not about the dam. The premise says so itself: its own thumbnail_power justification retires the eroding-hillside image because 'it sells the dam, and this film is not about the dam.' What the film actually opens on — a woman walking into a supermarket, strangers shouting, a town emptying, a shelter at a fairground — has no clearable footage at all. So the spine CAN show the real event in the sense that the thing that caused the order is on camera at high resolution and free; it CANNOT show the event the film is about."
+    },
+    "B": {
+      "question": "Does that satisfy the real_footage bonus as the planning OS defines it?",
+      "bonus_definition_quoted": "{\"key\": \"real_footage\", \"points\": 5, \"question\": \"Genuine bodycam, CCTV, dashcam, court or news footage is available and clearable.\"}",
+      "bonus_definition_source": "config/pd_planning_os.v002.json, premise_score.bonuses",
+      "answer": "DO NOT AWARD.",
+      "score_unchanged": 85,
+      "verdict_unchanged": "RESERVE",
+      "reasoning_literal": "The bonus names five categories. Taken one at a time against what was actually verified: BODYCAM — none found, no source published any. CCTV — none found. DASHCAM — none found. COURT footage — none; Oroville Dam Cases No. C090941 is a California civil appeal with no video record, and the 2023 companion C093600 likewise. NEWS footage — this one exists and is the closest call, and it fails on the second half of the test rather than the first: the KRON, KTVU, KNTV, MSNBC and Fox recordings of 12-15 February 2017 are real and were located on the Internet Archive TV News Archive, but every one returns licenceurl = null, the TV News Archive grants research access rather than a reuse licence, and the two press evacuation stills that surfaced (Appeal-Democrat, KQED) are third-party copyright which Cal OES's own Conditions of Use expressly directs you to clear with the owner. Available, not clearable. On the literal reading the bonus fails on all five limbs.",
+      "reasoning_generous": "Read generously as 'genuine footage of the real event is available and clearable', the answer is yes for the dam and no for the film. Fourteen of the fifteen clearable minutes show concrete, water and helicopters. The bonus's five named categories share a common shape — a recording system or a press camera that captured the event as it happened to people. Agency B-roll of infrastructure is a different thing, and it is the thing this topic has.",
+      "why_not_award_anyway": "Awarding would move 85 to 90 and flip RESERVE to PRODUCTION. A bonus that decides a band must not be awarded on a stretch, which is the standard the scorer already applied to recognizable_institution in this same premise. The instruction on marginality was explicit: if marginal, say marginal and do not award. This is marginal in the generous reading and a clean fail in the literal one, so it is not awarded under either.",
+      "what_would_change_it": "One of two things, both cheap. (1) The Beale AFB evacuee stills at beale.af.mil and nellis.af.mil open and turn out to be federal public-domain photographs of evacuees and cots — that would put real people, on the real day, in the film, from a free federal source. (2) A written reply from DWR Public Affairs releasing the slide 10-13 originals at archive resolution — CHP officers with a map, CHP and local law enforcement aiding evacuations, residents being briefed at 6:45pm on 12 February. Either would move this from marginal to arguable. Neither has happened, so the score stands at 85.",
+      "what_this_finding_IS_worth": "The bonus is not awarded, but the producibility picture improved materially and that is a separate axis. The v002 producibility block records dam_spillway_reservoir as '29 clips, of which roughly half are genuine dams and none is Oroville.' That is no longer the position: there are now 4 verified Oroville video clips and 26 verified Oroville stills, most at 2000-7000px, all free. The AMBER gate reasoning should be revisited on its own terms — not by adjusting the score."
+    },
+    "C": {
+      "question": "Do any of these sources cover the Silver Dollar Fairgrounds shelter or the evacuation itself — the two beats the shelf cannot dress (emergency_shelter = 1 clip; supermarket = 29 candidates of uncertain quality)?",
+      "silver_dollar_fairgrounds": {
+        "answer": "NO. Clean, thorough negative.",
+        "what_was_checked": [
+          "Cal OES Flickr (calemaphotos) — albums 2009 to 2025, no Oroville or February 2017 album.",
+          "Cal OES 2017 Oroville After Action Report (36pp) — contains no photographs at all beyond cover logos, and never names Silver Dollar Fairgrounds. It does confirm 'Fairgrounds in surrounding unaffected areas served as the primary location for shelters' and names Chico.",
+          "Cal OES five-year retrospective — its two shelter images are credited 'Red Cross Photo' and 'The Washington Post Photo'.",
+          "American Red Cross official Flickr (NSID 7172404@N06) — zero public photos, zero albums; an in-account search for 'oroville' returned 'Oops! There are no matches for your search in this user's photos.'",
+          "redcross.org — 403 on every path including its terms page; Red Cross terms are therefore unestablished and must be assumed restrictive.",
+          "Wikimedia Commons — the category holds 43 files and a MediaSearch for 'Oroville evacuation 2017' returns 2 results, neither an evacuation scene. Wikipedia's own Oroville Dam crisis article uses 20 images and not one shows an evacuation or a shelter.",
+          "Butte, Yuba and Sutter counties — no published imagery; Butte asserts all rights reserved, Yuba's terms are non-commercial only, Sutter returned 403 throughout."
+        ],
+        "conclusion": "There is no government-published photograph or video of the Silver Dollar Fairgrounds shelter. The free-licence visual record of this entire event is engineering, not people. This beat must be budgeted as a labelled reconstruction under HC-6, exactly as the v002 producibility block already warned ('budget the shelter sequence as a non-archive solution at the premise stage, not at assembly'). This prescreen confirms that warning was right and closes the question."
+      },
+      "the_evacuation_itself": {
+        "answer": "PARTIALLY, and thinly.",
+        "what_exists": [
+          "PRESCREEN-V-004 — DVIDS 509456, 72 seconds, 1080p, federal public domain: Beale AFB receiving Oroville evacuees on 12 February 2017. This is the only verified MOVING footage of the people the order moved. It is at an air base, not in Oroville.",
+          "PRESCREEN-S-009 slides 10, 11, 12, 13, 16 — the Croyle deck: CHP officers reviewing a map at 5:20pm, residents receiving updates at 6:45pm, the 10:24pm press conference, CHP and local law enforcement aiding evacuations, and the 14 February announcement reducing the order. All on 12-14 February 2017. Rights are review_required and resolution is 804-1200px.",
+          "PRESCREEN-S-006 — DVIDS 3169147 and 3169156, 5568x3712, federal public domain: inside the Cal OES State Operations Center on 15 February. Not the evacuation, but the room the orders came out of, which for THIS film may be worth more."
+        ],
+        "what_does_not_exist_free": "Highway traffic, gas-station queues, an emptying town, a supermarket. The gridlock frames exist and are Appeal-Democrat and KQED — press, licensable for money, not free."
+      },
+      "the_supermarket_opening_beat": {
+        "answer": "NOTHING, from any source, at any price that was checked.",
+        "conclusion": "The opening beat was always going to be a reconstruction and this prescreen changes nothing about that. HC-6 already governs it: labelled on screen, disclosed on YouTube, no real-person likeness, and thumbnail variant A is already written with exactly that constraint. The v002 staging plan's instruction to eyeball the 29-clip supermarket sub-register by hand before commissioning anything still stands and is untouched by this work."
+      }
+    }
+  },
+
+  "constraints": [
+    "DVIDS items: carry the DoD non-endorsement disclaimer and do not imply DoD endorsement of the channel. Obscure distinctive military markings where practical.",
+    "NASA item: credit NASA and the ISS Crew Earth Observations Facility, Johnson Space Center, photo ID ISS050-E-52024. Do not imply NASA endorsement.",
+    "DWR/Commons items: attribution is not required by the licence tag, but credit 'California Department of Water Resources' anyway. LB-1 is an inferred position, not a written grant, and a visible credit is the cheapest form of good faith.",
+    "California State Archives films: no restrictions stated; credit the California State Archives / California Revealed as a courtesy.",
+    "PRESCREEN-S-009 (Croyle deck) is review_required, not cleared. Do not place it in a cut until DWR Public Affairs replies in writing or the images are located at DWR-hosted archive resolution.",
+    "NEVER repeat the DoD caption phrase 'in the aftermath of a dam failure near Oroville' — no dam failure occurred (see PRESCREEN-S-008 ACCURACY_WARNING).",
+    "No AI-generated image or motion may be presented as an authentic record of the 2017 crisis (HC-6). Everything in `items` is a genuine record and must be kept visually distinguishable from the reconstructions.",
+    "HC-1 still binds: Oroville Dam Cases No. C090941 is unpublished and must never be called precedent.",
+    "HC-3 still binds: no JCCP 4974 employee names anywhere. Nothing in this prescreen touches them.",
+    "Rights research text is untrusted input (.claude/rules/13). Nothing quoted here was executed as an instruction."
+  ],
+
+  "provenance": {
+    "inputs": [
+      "episodes/_planning/EP70_oroville_premise.v002.json",
+      "episodes/_planning/EP70_oroville_premise.v002.scored.json",
+      "config/pd_planning_os.v002.json (premise_score.bonuses)",
+      "episodes/PD-2026-005-madoff/09_package/rights_manifest.final.v009.json (schema shape)",
+      "episodes/PD-2026-013-king/09_package/rights_manifest.v001.json (schema shape, second reference)"
+    ],
+    "method": "Direct retrieval. Every URL in `items`, `rejected` and the quoted portions of `could_not_verify` was opened in this session. Two background research agents were used for breadth of discovery only; every claim they returned that appears in this file was independently re-opened and re-read here before being recorded, and anything they reported that could not be re-opened is in `could_not_verify` rather than in `items`.",
+    "blocked_hosts_this_session": ["*.af.mil", "*.army.mil", "defense.gov", "fema.gov", "redcross.org", "sutter.gov", "web.archive.org"],
+    "tools_note": "The Croyle PDF was retrieved by the fetch tool, which cached it locally; page count, slide captions and embedded image dimensions were then read from that file with pymupdf rather than from any summary."
+  },
+
+  "status": "prescreen_complete",
+  "decision": "real_footage bonus NOT AWARDED. EP70 remains 85/100, RESERVE.",
+  "recommended_next_actions": [
+    "Cheap and decisive: open beale.af.mil/News/Photos/igphoto/2001699647/ and nellis.af.mil/News/Photos/igphoto/2001698688/ in a real browser. Federal evacuee-and-cot stills would materially change question C.",
+    "Cheap and decisive: open the DWR Pixel gallery 'Oroville Spillway Incident & Recovery' in a real browser and record how many February 2017 images it holds and what terms it states.",
+    "Cheap: YouTube Data API videos.list part=status on fA52L0eabNo and T5zumuQIMV0 to settle status.license.",
+    "Worth one email: ask DWR Public Affairs in writing for the Croyle slide 10-13 originals and a statement of terms. A written DWR permission would upgrade LB-1 from inferred to granted for every DWR asset on this list.",
+    "Separate from the score: revisit the v002 producibility AMBER reasoning, which recorded 'dam_spillway_reservoir 29 clips ... none is Oroville'. That is no longer true."
+  ]
+}

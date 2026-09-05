@@ -1,0 +1,56 @@
+EP85_katrina — 画像発注 バッチ 3/24（8枚）
+区分: ACT_1 — 壁が行った朝
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, person in water, rooftop figure, rescue, school bus, crowd, body, corpse, cross marker, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) W017.png
+   [W017]  flags: 
+   The same canal seen from a residential street, the wall visible above the garden fences, flat daylight
+
+2) W018.png
+   [W018]  flags: 
+   A breach in a floodwall seen from the dry side, wall sections displaced sideways, water pouring through, grey daylight
+
+3) W019.png
+   [W019]  flags: 
+   The same breach seen wide, showing the houses immediately beyond it, bright overcast
+
+4) W020.png
+   [W020]  flags: 
+   A displaced levee section pushed bodily sideways with the grass surface still intact on top of it, bright daylight
+
+5) W021.png
+   [W021]  flags: 
+   A concrete wall panel tilted at about forty-five degrees, still joined to its neighbours, bright daylight
+
+6) W022.png
+   [W022]  flags: 
+   A street of single-storey houses with water halfway up the doors, bright flat daylight, no person in frame
+
+7) W023.png
+   [W023]  flags: 
+   The same street at dusk with the water still, lamps reflecting
+
+8) W024.png
+   [W024]  flags: 
+   A residential intersection under still floodwater, street signs turned away so no lettering shows, bright daylight

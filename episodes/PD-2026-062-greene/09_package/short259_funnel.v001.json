@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 259,
+  "episode_id": "PD-2026-062-greene",
+  "slug": "greene",
+  "loop": true,
+  "loop_join": "The final beat (p23, isCta:true, rewind:true) is short259_01.png -- the same plate that opens the Short at p01 for L1, the process servers taped eviction notices to the door. It rewinds under the FULL CASE card and holds on that identical frame, so frame 0 and the last held frame are the same picture of the men who taped the notices.",
+  "second_watch_detail": "That opening plate of the process servers under oath reads as routine case documentation on the first pass; once L3 and L7 establish that these three tenants say they never saw the notices and lost by default before learning the cases existed, the same frame reads as the entire evidentiary basis for a claim the record itself never makes about these tenants.",
+  "funnel_question_left_for_longform": "If a paper on the door is unreliable, what notice does due process require instead?",
+  "funnel_long_title": "A Paper on the Door: Kids Pulled It Down",
+  "funnel_long_video_id": "Atla22DlJcU",
+  "description_line_1": "▶ FULL CASE: A Paper on the Door: Kids Pulled It Down | https://youtu.be/Atla22DlJcU",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Paper on the Door",
+    "ctaLongThumbSrc": "shorts/short259/short259_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If a paper on the door is unreliable, what notice does due process require instead? The full case is here: https://youtu.be/Atla22DlJcU",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. The loop join and second-watch detail are read off CUTS/beats in remotion/src/data/short259.ts and the per-short entry in episodes/_planning/short_designs/PD-2026-062-greene.design.v001.json; the CTA block is read off that same .ts file's exported ShortData; the long-form video id is read off the design file's destination.video_id, matching the live title. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

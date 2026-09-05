@@ -1,0 +1,65 @@
+{
+  "episode_id": "DEMO-splice",
+  "fps": 30,
+  "narration": "tone.wav",
+  "narrationSeconds": 12.0,
+  "hookSeconds": 0.0,
+  "leadSeconds": 1.0,
+  "endcardSeconds": 1.0,
+  "cuts": [
+    {
+      "id": "cut-0000",
+      "start": 0.0,
+      "dur": 2.0,
+      "kind": "panel",
+      "src": "panel/amber",
+      "seed": "demo-0000",
+      "act": "ACT_1"
+    },
+    {
+      "id": "cut-0001",
+      "start": 2.0,
+      "dur": 2.0,
+      "kind": "panel",
+      "src": "panel/teal",
+      "seed": "demo-0001",
+      "act": "ACT_1"
+    },
+    {
+      "id": "cut-0002",
+      "start": 4.0,
+      "dur": 2.0,
+      "kind": "panel",
+      "src": "panel/crimson",
+      "seed": "demo-0002",
+      "act": "ACT_2"
+    },
+    {
+      "id": "cut-0003",
+      "start": 6.0,
+      "dur": 2.0,
+      "kind": "panel",
+      "src": "panel/violet",
+      "seed": "demo-0003",
+      "act": "ACT_2"
+    },
+    {
+      "id": "cut-0004",
+      "start": 8.0,
+      "dur": 2.0,
+      "kind": "panel",
+      "src": "panel/olive",
+      "seed": "demo-0004",
+      "act": "ACT_3"
+    },
+    {
+      "id": "cut-0005",
+      "start": 10.0,
+      "dur": 2.0,
+      "kind": "panel",
+      "src": "panel/slate",
+      "seed": "demo-0005",
+      "act": "ACT_3"
+    }
+  ]
+}

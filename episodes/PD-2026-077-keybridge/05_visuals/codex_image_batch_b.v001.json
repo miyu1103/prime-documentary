@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "PD-2026-077-keybridge",
+  "recorded_at": "2026-08-23T21:03:05.458Z",
+  "status": "raw_generation_complete_visual_exception_pending_owner",
+  "scope": "EP77 Key Bridge additive Batch B H122-H131 built-in image generation, exact-ID raw delivery, technical QC, cache provenance verification, and preliminary visual QC only",
+  "source_contract": {
+    "order_file": "episodes/_planning/EP77_keybridge_CODEX_BATCH_B.v001.md",
+    "order_file_sha256": "112f4603d3f2de29836c8f5659b8eff151c41b35d781deaccaa22f85244775bc",
+    "requested_ids": [
+      "H122",
+      "H123",
+      "H124",
+      "H125",
+      "H126",
+      "H127",
+      "H128",
+      "H129",
+      "H130",
+      "H131"
+    ],
+    "requested_count": 10,
+    "people_flags": [
+      "H127"
+    ],
+    "people_flag_interpretation": "Metadata only; the H127 plate prompt explicitly requests an empty roadway and no person was introduced.",
+    "additive_not_remake": true,
+    "one_prompt_one_image": true,
+    "required_aspect_ratio": "16:9",
+    "accepted_raw_dimensions": [
+      "1672x941",
+      "3840x2160"
+    ]
+  },
+  "generation": {
+    "provider": "Codex built-in image generation",
+    "use_case": "historical-scene",
+    "calls": 10,
+    "outputs": 10,
+    "automatic_retries": 0,
+    "variants": 0,
+    "overwrites": 0,
+    "model_profile": "built-in provider metadata not exposed",
+    "seed": "not exposed",
+    "provider_cost": "not exposed by built-in tool",
+    "raw_directory": "E:/pd-media/05_visuals/keybridge/img",
+    "cache_root": "C:/Users/aab15/.codex/generated_images/01a0301b-0ab7-7403-bf8d-173c57c5d689",
+    "operational_prompt_guardrail": "Contemporary 2024-2026 American east-coast/Baltimore context; no vintage vehicles, steam-era vessels, antique machinery, or European stone arches, towers, or spires unless explicitly requested. Flags were treated as metadata, not added visual subjects."
+  },
+  "technical_qc": {
+    "status": "pass",
+    "batch_files": 10,
+    "destination_total_files": 131,
+    "destination_expected_range": "H001-H131",
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "dimensions": {
+      "1672x941": 10
+    },
+    "image_mode": {
+      "RGB": 10
+    },
+    "format": {
+      "PNG": 10
+    },
+    "wrong_aspect_ids": [],
+    "exact_duplicate_groups_batch_and_all_131": [],
+    "metadata_files": [],
+    "cache_sha_matches": 10,
+    "cache_sha_mismatches": [],
+    "total_bytes": 20422915
+  },
+  "visual_qc": {
+    "status": "one_exception_pending_owner",
+    "method": "Labelled contact sheet H121-H131 reviewed; all ten Batch B images were then inspected at original resolution.",
+    "contact_sheet_directory": "runs/qc/plate_sheets/keybridge_batch_b",
+    "contact_sheets": 5,
+    "batch_review_sheet": "runs/qc/plate_sheets/keybridge_batch_b/keybridge_batch_b_plates_05.png",
+    "accepted_without_flag": [
+      "H122",
+      "H123",
+      "H124",
+      "H125",
+      "H126",
+      "H127",
+      "H128",
+      "H129",
+      "H130"
+    ],
+    "accepted_without_flag_count": 9,
+    "reject_recommended": [
+      "H131"
+    ],
+    "reject_recommended_count": 1,
+    "review_required": [],
+    "review_required_count": 0,
+    "findings": {
+      "H131": "Shared NEG violation: several shipping containers contain visible alphanumeric markings and logo-like glyphs. Keep the raw output for provenance, but regenerate selectively before final use if the no-text rule is strict."
+    },
+    "positive_checks": {
+      "H122": "The prior wrong-place problem is resolved: contemporary American industrial harbour, steel truss bridge, cranes, and no stone arches, towers, or spires.",
+      "H123": "Bright low-angle open equipment cabinet provides a distinct replacement option for the prior dark duplicate.",
+      "H124-H127": "Bright HOOK alternatives are present; H127 remains empty despite its P metadata flag.",
+      "H128-H130": "Daylight institutional and bridge alternatives are usable and contain no people or legible text."
+    }
+  },
+  "downstream": {
+    "owner_visual_approval": "pending",
+    "selective_regeneration": "not_run",
+    "upscale": "not_run_not_required_by_this_order",
+    "remotion_staging": "not_run",
+    "episode_state_transition": "not_run",
+    "publication": "not_run"
+  },
+  "assets": [
+    {
+      "id": "H122",
+      "file": "H122.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-15cabd15-0596-4b29-bca8-6aca2d651951.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H122.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "274F5A98206144F94CA7F2DDE97992849FC492A5041BD39B97DD820491447F8A",
+      "bytes": 2103085
+    },
+    {
+      "id": "H123",
+      "file": "H123.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-036088fe-0a51-4489-b89a-670d861cde60.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H123.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "372C6064D2B90F160B888157FE4E32BFCB18CBB7CB4BA2ACBA3D38211EB880D4",
+      "bytes": 2020113
+    },
+    {
+      "id": "H124",
+      "file": "H124.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-3727cd2e-4607-4e64-9140-44dd85b47fa0.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H124.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "D287397DE547E21E326210284C859DA91BB28F9CE79455B7D507153B4BDECB7E",
+      "bytes": 2214137
+    },
+    {
+      "id": "H125",
+      "file": "H125.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-b2183fe9-9025-471c-9b30-3dd9764177a4.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H125.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "D19D0383DD3CDF5CF064E3C246DBC4D429204FE5868B68EB994D8914975038F5",
+      "bytes": 2421744
+    },
+    {
+      "id": "H126",
+      "file": "H126.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-7a2dba3a-2a3b-437e-a2e1-1ee36ef7c37f.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H126.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0A7B8360C15C2E40F31BF4D6F05A5F41E9ECD77EAB7396A2B73A0C6F8F7BF7AC",
+      "bytes": 1845014
+    },
+    {
+      "id": "H127",
+      "file": "H127.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-8054d25b-701b-4561-8d46-d983cc9862ea.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H127.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "AE77AFED7E5779014D644D892929EEFC8A94664328A261148F61A68FCF0EC071",
+      "bytes": 2000294
+    },
+    {
+      "id": "H128",
+      "file": "H128.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-cdcb916e-da7c-423d-966f-bf4284343ed9.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H128.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4478DC9D0545878D43A2594306AF9C6B90BD05BE6E3AFC2CC7356E8CA048AAEC",
+      "bytes": 1562933
+    },
+    {
+      "id": "H129",
+      "file": "H129.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-eac4359d-92b3-42f7-a1f9-b77427c101c4.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H129.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "696E406A6529CBADEE61DED54E5FD684B6B9064EB295F4986CEF7FD30432FC66",
+      "bytes": 1835121
+    },
+    {
+      "id": "H130",
+      "file": "H130.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-8301cf0a-c1e0-4f93-85e4-c8e188bd39ea.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H130.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6D3AB3505655B6087981C7E8933CBF54A887CE12A6D159A7048AC1ACD348DDED",
+      "bytes": 2254555
+    },
+    {
+      "id": "H131",
+      "file": "H131.png",
+      "source_cache": "C:\\Users\\aab15\\.codex\\generated_images\\01a0301b-0ab7-7403-bf8d-173c57c5d689\\exec-69050007-feb7-4889-a84f-637a7834d9e7.png",
+      "destination": "E:\\pd-media\\05_visuals\\keybridge\\img\\H131.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "D703F7D150166817EB77216C475CF6A7829EC123BDDA827DBAE014C0F4BEFA73",
+      "bytes": 2165919
+    }
+  ]
+}

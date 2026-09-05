@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-032-carsearch",
+  "revision": "v001",
+  "generated_at": "2026-07-06T00:00:00+00:00",
+  "status": "thumbnail_plan_only_not_rendered",
+  "render_performed": false,
+  "image_generation_performed": false,
+  "publish_performed": false,
+  "upload_performed": false,
+  "ai_disclosure_required": true,
+  "synthetic_content_disclosure_required": true,
+  "design_intent": "派手 (bold/loud) max-CTR set for the automobile-exception episode. Owner directive (EP21-24 incident #5/#7, pd-craft-directives, EP32_carsearch_DESIGN §7): thumbnails were too plain — must be eye-grabbing. Style = v003 派手 system: ONE bright hero subject on a deep-navy field, a red accent burst for urgency, extra-thick black text stroke for phone legibility, a huge 2-4 word SECOND-PERSON hook word, and the show's bright-line motif seeded to open a curiosity gap. Single focal idea per thumbnail; title carries recognition, thumbnail carries the threat.",
+  "source_visuals": [
+    "NOTE: no S0NN stills rendered yet (05_visuals not populated at plan time). Hero art below is specified as dedicated Codex thumbnail key-art (画像内テキストなし) mapped to a planned script beat. When S001-S040 (EP32_carsearch_ai_prompts.v001.md) are generated, the mapped still may substitute for the key-art.",
+    "planned_beat://HOOK — night traffic stop, red-and-blue wash on wet asphalt, a trunk lifting open (script.en.v001 HOOK / lines 10-11)",
+    "planned_beat://ACT III — quiet suburban driveway at dusk, a covered shape (motorcycle under a tarp) pressed against the side of a home (script.en.v001 ACT III / lines 76-77)",
+    "planned_beat://ACT I — gloved hands tearing into a car seat, bottles revealed (script.en.v001 ACT I / lines 30-31)"
+  ],
+  "global_constraints": {
+    "canvas": "1280x720 (BRAND.thumb)",
+    "luma_mean_min": 33,
+    "luma_mean_note": "Bright hero subject + red burst keep the frame out of muddy/dark territory; measure mean luma of the final PNG and reject if < 33 (EP32_carsearch_DESIGN §7).",
+    "readable_at_px_width": 320,
+    "legibility_test": "10% downscale + grayscale + 1-second recognition test (doc27 §7). Hook word must read at 320px width.",
+    "text_stroke": "Extra-thick black stroke on all headline glyphs (approx 12-18px at 1280px width) + subtle drop shadow, so white/accent type survives on any hero. This is the '特大黒縁' requirement.",
+    "headline": "UPPERCASE, <=4 words, second-person, huge (Impact / BRAND.font.display). Final word or the '?' carries the accent color.",
+    "palette": {
+      "field": "deep navy near-black (BRAND dark)",
+      "hero": "bright, high-contrast subject (the one lit thing)",
+      "urgency_accent": "red burst behind/around the hero for alarm (approx #E5202A) — the 派手 CTR accent",
+      "brand_motif": "bright-line motif in electric blue #1F6BFF or gold #E5B53A (ONE brand accent per thumb) — the show's line",
+      "note": "One urgency red + one brand accent max. No rainbow. Left/one-side dark scrim under the headline for contrast."
+    },
+    "honesty_and_rights": {
+      "no_real_person_likeness": true,
+      "no_recognizable_face": "anonymous silhouettes / gloved hands / covered shapes only (invariant 11)",
+      "no_misleading_claim": "Every hook word is literally true to the holding: police CAN search a car on probable cause (automobile exception, Carroll 1925); the one line they cannot cross is the home's curtilage (Collins v. Virginia 2018, 8-1). No fabricated shock the video does not pay off.",
+      "no_on_image_logos_or_ui": "no real car brand, no OS UI, no watermark, no readable text inside the AI art (headline is added in Remotion)",
+      "advertiser_safe": "neutral, neither pro- nor anti-police; illustration/reconstruction, not authentic footage"
+    }
+  },
+  "options": [
+    {
+      "id": "thumb01",
+      "concept": "SEARCH YOUR CAR? — open trunk under police lights",
+      "headline": "SEARCH YOUR CAR?",
+      "kicker": "NO WARRANT NEEDED",
+      "hero_image": {
+        "source": "codex_keyart (to generate) — no on-image text",
+        "mapped_beat": "HOOK — night traffic stop",
+        "description": "Low three-quarter angle on the open trunk / lifted hatch of a generic dark sedan at a night roadside; a bright shaft of light pours into the exposed trunk cavity (the one lit thing). An anonymous officer silhouette stands at the rear corner, seen from behind, no face. Wet asphalt throws red-and-blue reflections."
+      },
+      "framing": "Hero = the glowing open trunk, right-of-center. Left third kept dark for the headline scrim. Officer is a rim-lit silhouette, deliberately faceless.",
+      "color_lighting": "Deep navy field; red urgency burst radiating from the trunk / behind the officer; bright cold key-light inside the trunk keeps luma up.",
+      "bright_line_motif": "A thin electric-blue line runs across the very bottom edge of the frame (the road), hinting the boundary the story will draw. Subtle here — the payoff lives in thumb02.",
+      "headline_treatment": "White Impact, the '?' in red; extra-thick black stroke. Kicker in small caps beneath.",
+      "assessment": "Recommended primary. Broadest second-person hook, matches the central question and the working title, maximally self-relevant (nearly everyone drives). Strongest single-idea threat read at 320px."
+    },
+    {
+      "id": "thumb02",
+      "concept": "THEY CAN'T CROSS THIS — the bright line slams down across the driveway",
+      "headline": "THEY CAN'T CROSS THIS",
+      "kicker": "ONE PLACE THEY CAN'T SEARCH",
+      "hero_image": {
+        "source": "codex_keyart (to generate) — no on-image text",
+        "mapped_beat": "ACT III — motorcycle under a tarp in a driveway (Collins v. Virginia)",
+        "description": "Dusk suburban driveway pressed against the side of a home; a covered shape (a tarp-draped motorcycle) sits close to the wall. A blade of bright light SLAMS across the driveway between the covered vehicle and the house — the show's bright-line motif at full force — stopping an implied reach at the property edge. Anonymous, no people."
+      },
+      "framing": "Hero = the bright line cutting diagonally across the driveway, foreground the covered shape, background the glowing home. Headline sits in the dark sky / upper-left negative space.",
+      "color_lighting": "Deep navy dusk; warm gold glow on the home (protection); a red burst on the driveway side (the search power that gets stopped). The line itself is the brightest element — keeps luma up.",
+      "bright_line_motif": "IS the hero — the payoff of the motif, rendered as a hard, glowing barrier (electric-blue/gold) with a flash at the impact point.",
+      "headline_treatment": "White Impact, 'THIS' in gold; extra-thick black stroke. Three-word top line + one-word punch allowed to wrap via splitHeadline.",
+      "assessment": "Best differentiation / curiosity-gap option. Sells the surprise (there is a line even your car's exposure can't erase = the curtilage). Pairs as the A/B partner to thumb01. Slightly more text — verify 'THIS' still punches at 320px."
+    },
+    {
+      "id": "thumb03",
+      "concept": "NO WARRANT NEEDED — gloved hands tear into the seat (100-year rule)",
+      "headline": "NO WARRANT NEEDED",
+      "kicker": "THE 100-YEAR RULE",
+      "hero_image": {
+        "source": "codex_keyart (to generate) — no on-image text",
+        "mapped_beat": "ACT I — gloved hands tearing a car seat (Carroll v. United States, 1925)",
+        "description": "Tight, aggressive close-up of anonymous gloved hands prying open / tearing back a car seat or forcing a trunk latch; a hidden compartment glints as it's exposed. Shallow depth, cinematic. No face, no identifiable person, no real brand."
+      },
+      "framing": "Hero = the gloved hands + the point of forced entry, center-frame and large. Headline banded across the top on a dark scrim.",
+      "color_lighting": "Deep navy; hard red burst around the hands for menace; a single bright key on the exposed compartment. High contrast, high luma on the action point.",
+      "bright_line_motif": "A faint electric-blue line traces the seam being torn open — motif present but understated (this thumb sells the invasive power, not the limit).",
+      "headline_treatment": "White Impact, 'NO' oversized in red; extra-thick black stroke. Kicker '100-YEAR RULE' adds the hidden-system intrigue.",
+      "assessment": "Highest-shock / hidden-system angle. Great for the 'wait, they can just do that?' reaction. Risk: 'NO WARRANT NEEDED' is a statement not a question — keep the kicker to signal there IS a catch so it doesn't read as pure alarm."
+    }
+  ],
+  "selected": "thumb01",
+  "selection_reason": "SEARCH YOUR CAR? is the broadest, most self-relevant second-person hook, matches the central question and title 1:1, and reads instantly at 320px; run thumb02 (THEY CAN'T CROSS THIS) as the A/B partner because it carries the differentiation/curiosity-gap payoff.",
+  "ab_test_plan": {
+    "A": "thumb01 (threat / everyone-drives hook)",
+    "B": "thumb02 (surprise / the-line-they-can't-cross)",
+    "decision_rule": "doc27 §10 — higher CTR wins ONLY if the video pays off the promise (both hooks are literally true to the holding); do not crown a hook the episode doesn't deliver."
+  },
+  "title_candidates": [
+    "Can the Police Search Your Car? (And the One Place They Can't)",
+    "Police Can Search Your Car Without a Warrant — Here's Where It Stops",
+    "The 100-Year Rule That Lets Police Search Your Car",
+    "They Can Search Your Car — But Not This One Spot",
+    "No Warrant Needed to Search Your Car? Almost Everywhere"
+  ],
+  "recommended_title": "Can the Police Search Your Car? (And the One Place They Can't)",
+  "build_tooling_note": {
+    "render_component": "Remotion <Still> at 1280x720 (BRAND.thumb), new CarsearchThumbnail following the ThumbVariant pattern in the 派手 thumbnail system (docs/thumbnail-and-title-system.md §0). AI art is background-only (no on-image text); headline + black stroke + red burst + bright-line motif are composited in Remotion reading BRAND.color / BRAND.font from remotion/src/brand.ts. Do NOT hardcode hex beyond the urgency-red CTR accent.",
+    "do_not_render_now": true,
+    "next_steps_when_authorized": [
+      "Generate the 3 hero key-arts via Codex (or map to S0NN stills once 05_visuals exists), 1280x720, negative space for headline, no text/faces/logos.",
+      "Composite headlines in Remotion, export PNGs.",
+      "Measure luma mean (>=33) and run the 320px + grayscale + 1s legibility test; reject and iterate on any fail.",
+      "Build contact sheet, get owner title/thumbnail approval (rule 16), then youtube_thumbnail_update via the pd-package flow."
+    ]
+  }
+}

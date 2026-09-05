@@ -1,0 +1,42 @@
+{
+  "episode_id": "PD-2026-051-willingham",
+  "producer": "scripts/build_case_film_generic.py",
+  "inputs": {
+    "assets": "episodes\\PD-2026-051-willingham\\05_visuals\\asset_manifest.v003.json",
+    "narr": "episodes\\PD-2026-051-willingham\\06_audio\\narration_index.v001.json",
+    "config": "episodes\\_planning\\EP51_willingham_filmconfig.v001.json"
+  },
+  "report": {
+    "slug": "willingham",
+    "cuts": 263,
+    "factory": 179,
+    "motion": 0,
+    "still": 84,
+    "pools": {
+      "factory": 230,
+      "motion": 0,
+      "still": 182,
+      "people": 32
+    },
+    "video_cuts": 179,
+    "still_cuts": 84,
+    "video_share": 0.6806,
+    "distinct_assets": 263,
+    "distinct_ratio": 1.0,
+    "max_reuse": 1,
+    "avg_cut_sec": 4.6,
+    "figures": 57,
+    "captions": 346,
+    "narrationSeconds": 1208.853,
+    "duration_frames": 36881,
+    "duration_sec_with_bookends": 1229.37,
+    "sections": [
+      "HOOK",
+      "OP",
+      "ACT_1",
+      "ACT_2",
+      "ACT_3",
+      "ENDING"
+    ]
+  }
+}

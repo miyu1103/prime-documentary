@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-009-timbs",
+  "revision": "v001",
+  "generated_at": "2026-06-21T08:13:42.039427+00:00",
+  "status": "draft_ready_for_review",
+  "assets": [
+    {
+      "asset_id": "PD-2026-009-RENDER-ROUGH-v001",
+      "type": "render",
+      "file": "C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\out\\timbs_rough.mp4",
+      "content_hash": "sha256:17f3cc61068ce3a5e98ba885005bbb36d708dc147e88c8c073f3cc904114e5d9",
+      "producer": "Remotion + FFmpeg/libx264 local render",
+      "license": "Prime Documentary composite edit render from rights-tracked local inputs.",
+      "rights_holder": "Prime Documentary",
+      "ai_disclosure_required": true,
+      "symbolic_reconstruction": true,
+      "qc": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-009-timbs\\08_edit\\renders\\rough.v001.qc.json"
+    },
+    {
+      "asset_id": "PD-2026-009-CAPTIONS-v001",
+      "type": "captions",
+      "file": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-009-timbs\\08_edit\\captions.v001.srt",
+      "content_hash": "sha256:c064881757c5a99b9b08c2cc0d1992430dee4f658cce94ca47720f17d6cdcf45",
+      "producer": "Codex local caption timing from ElevenLabs chunk timings",
+      "license": "Prime Documentary script-derived subtitles.",
+      "rights_holder": "Prime Documentary"
+    },
+    {
+      "asset_id": "PD-2026-009-THUMB-001",
+      "type": "thumbnail",
+      "file": "H:/pd-media/episodes/PD-2026-009-timbs/09_package/thumbnails/PD-2026-009-timbs-thumb01.v001.jpg",
+      "content_hash": "sha256:5f524e533f9dcb7e4ea9c5ba706be2a6b7ad94f17db1d6c540a4846d3c5ba504",
+      "producer": "Local Pillow compositing over existing Timbs stock still",
+      "license": "Prime Documentary local package thumbnail from rights-cleared episode material.",
+      "rights_holder": "Prime Documentary",
+      "ai_disclosure_required": true,
+      "symbolic_reconstruction": false,
+      "package_selected": true
+    }
+  ],
+  "verification_required": [
+    "Final owner approval for title/thumbnail before upload.",
+    "Confirm YouTube synthetic-content disclosure at upload because AI symbolic reconstructions are used."
+  ]
+}

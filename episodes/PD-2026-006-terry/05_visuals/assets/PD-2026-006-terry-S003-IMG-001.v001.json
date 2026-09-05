@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "PD-2026-006-terry-S003-IMG-001",
+  "episode_id": "PD-2026-006-terry",
+  "scene_id": "S003",
+  "shot_id": "S003-SH002",
+  "asset_type": "image",
+  "revision": "v001",
+  "status": "approved",
+  "uri": "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S003/PD-2026-006-terry-S003-IMG-001.v001.png",
+  "checksum": "sha256:38263f5a202dd0b7675e2a0b4154765b6b50f9a8668111239496479111935ed6",
+  "mime_type": "image/png",
+  "size_bytes": 1832587,
+  "provenance": {
+    "created_by": "codex",
+    "provider": "local-a1111-sdxl",
+    "provider_request_id": null,
+    "model_profile": "juggernautXL_ragnarokBy.safetensors [dd08fa32f9]",
+    "prompt_ref": "episodes/PD-2026-006-terry/04_scenes/codex_image_prompts.v001.md#COD-S003-downtown-street-wide",
+    "seed": 608235,
+    "input_hash": "sha256:6b9ea6771760fd9df04b3c1f0ea03b7dc17ffb452e55c0898c2d97b91ac58950"
+  },
+  "rights": {
+    "status": "clear",
+    "origin": "AI-generated local SDXL symbolic reconstruction",
+    "commercial_use": "allowed",
+    "evidence_ref": "episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json#PD-2026-006-terry-S003-IMG-001",
+    "notes": "Generated locally on owner machine. No upload or paid API. No real-person likeness, no identifiable face, no readable text/logos on selected image. Must be disclosed as AI-generated symbolic reconstruction."
+  },
+  "qc": {
+    "status": "pass",
+    "score": 93,
+    "findings": [
+      "Pass: strong establishing composition for Cleveland 1963 symbolic reconstruction.",
+      "Pass: no identifiable faces or real-person likeness.",
+      "Pass: no readable storefront signs/logos after prompt repair.",
+      "Pass: suitable negative space and crop room for Remotion map/lower-third overlay.",
+      "Caution: treat as symbolic reconstruction, not archival footage."
+    ]
+  }
+}

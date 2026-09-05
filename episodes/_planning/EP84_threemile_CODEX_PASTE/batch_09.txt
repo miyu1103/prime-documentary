@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 9/24（8枚）
+区分: ACT_2 — 見えるはずだった部屋
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T065.png
+   [T065]  flags: 
+   A 1979 operator's hard hat resting on a console, one hard light
+
+2) T066.png
+   [T066]  flags: 
+   A shift handover board on a control room wall, blank magnetic strips in rows, strip light above
+
+3) T067.png
+   [T067]  flags: 
+   An intercom speaker grille on a painted wall, close, one hard light
+
+4) T068.png
+   [T068]  flags: 
+   A control room ceiling of fluorescent troffers seen from below, harsh and even, panel lights bright across the frame
+
+5) T069.png
+   [T069]  flags: 
+   A row of identical grey instrument cabinets in a relay room, one door open, work lamp inside
+
+6) T070.png
+   [T070]  flags: 
+   A cable spreading room beneath a control room, trays of cable overhead, torch beam, panel lights bright across the frame
+
+7) T071.png
+   [T071]  flags: 
+   A complaint form on a supervisor's desk, entirely blank, desk lamp burning
+
+8) T072.png
+   [T072]  flags: 
+   A filing cabinet drawer open on rows of unlabelled folders, one hard light

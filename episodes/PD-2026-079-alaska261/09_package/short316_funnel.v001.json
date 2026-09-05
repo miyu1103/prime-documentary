@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 316,
+  "episode_id": "PD-2026-079-alaska261",
+  "slug": "alaska261",
+  "loop": true,
+  "loop_join": "The final beat p14 (short316_14.png, a round wall clock in an airline maintenance office) carries isCta/rewind and is rewound under the FULL CASE card, holding on its last frame before the loop returns to frame 0 -- the macro dial-indicator needle of p01/p02 that opened the short -- so the loop lands back on the exact gauge the whole piece is about.",
+  "second_watch_detail": "p01/p02 open on the dial indicator's needle in two positions -- at rest, then deflected -- which reads as a plain explainer diagram on the first pass. Once L5 lands 'an end play measurement that came out inside the limits was not required to be recorded anywhere,' those same two macro frames read as the exact, silent moment nobody was required to write anything down.",
+  "funnel_question_left_for_longform": "If nobody could see a number creeping up, what was happening to the threads between the checks?",
+  "funnel_long_title": "Alaska Flight 261 Flew on One Jackscrew",
+  "funnel_long_video_id": "0a_MnQuJF3s",
+  "description_line_1": "▶ FULL CASE: Alaska Flight 261 Flew on One Jackscrew | https://youtu.be/0a_MnQuJF3s",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "It Was Measured Once.",
+    "ctaLongThumbSrc": "shorts/short316/short316_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If nobody could see a number creeping up, what was happening to the threads between the checks? The full case is here: https://youtu.be/0a_MnQuJF3s",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments and beat list in remotion/src/data/short316.ts, the CTA block (ctaHeadline/ctaLongTitle/ctaLongThumbSrc) from that same file, and the standing question from the file's own 'LEAVES FOR THE LONG-FORM' header. The long-form id 0a_MnQuJF3s is the video just uploaded and scheduled -- it is currently a PRIVATE upload with publishAt 2026-09-08, not yet public, which satisfies the gate's requirement that the long-form exist as at least a private upload before its short can be scheduled. Layer 4, the Studio related-video setting, cannot be performed until this short itself is uploaded; it has a placeholder row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md."
+}

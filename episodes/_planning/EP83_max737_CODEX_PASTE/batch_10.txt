@@ -1,0 +1,56 @@
+EP83_max737 — 画像発注 バッチ 10/24（8枚）
+区分: ACT_2 — なぜ起きないはずだったか / ACT_3 — 誰も言わなくてよかった仕組みの解剖
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, airline livery, tail marking, company colour, human face, facial features, portrait, identifiable person, wreckage, debris, fire, smoke plume, crash site, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) X073.png
+   [X073]  flags: 
+   An empty regulator's hearing room, plain bench, microphones, one bright window
+
+2) X074.png
+   [X074]  flags: 
+   An angle-of-attack vane close on an aircraft nose, hard morning light, the vane turned slightly, plain metal skin
+
+3) X075.png
+   [X075]  flags: 
+   The same vane from the opposite side of the nose, the second vane visible in the distance, showing there are two, one hard work light in frame
+
+4) X076.png
+   [X076]  flags: 
+   A single wire running from a sensor into an aircraft skin panel, close, one work lamp
+
+5) X077.png
+   [X077]  flags: 
+   A flight control computer unit pulled from an avionics rack, plain metal case, connector pins bright
+
+6) X078.png
+   [X078]  flags: 
+   An avionics bay beneath a cockpit floor, racks of black boxes, one torch beam, instrument panel glow lighting the frame
+
+7) X079.png
+   [X079]  flags: 
+   A horizontal stabiliser at the tail of an airliner, seen from below at dusk, plain unpainted, no marking, bright daylight
+
+8) X080.png
+   [X080]  flags: 
+   A jackscrew turning inside its housing, close, threads and grease, hard lamp

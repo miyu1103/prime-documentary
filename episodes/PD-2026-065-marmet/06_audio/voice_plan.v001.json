@@ -1,0 +1,2797 @@
+{
+  "episode_id": "PD-2026-065-marmet",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Two papers said this: a dispute about how somebody died goes to a private arbitrator.",
+      "text_sha256": "sha256:6be18408c9706afb7edb442772bace0955f2f6c4640f87449dfa9cd911b0a37b",
+      "idempotency_key": "sha256:6e8024a156be2acfbf6400a1c6470d4dc965d7dd3afa51edfb007d7c9e9c7140"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "A dispute about an unpaid bill stays in a courthouse.",
+      "text_sha256": "sha256:158553e66aa02891b55d6307e928560de6c658e87a35dc2ba2a88fef0ba0856a",
+      "idempotency_key": "sha256:42fea61e82c56d2edada6d87b86b9c958a25e9268b53046048eddd33c4d7a19c"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "The case is Marmet Health Care Center against Clayton Brown, decided by the Supreme Court of the United States on February 21, 2012.",
+      "text_sha256": "sha256:923a929681c9edf63b859351d946c28fd144a9f817faf062bd34b377d5271450",
+      "idempotency_key": "sha256:d6e89a50fcb5697646a5492bdc20a3eeddf7895844c3dee8f7e331606bcf34f4"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "It is five pages long, and it is per curiam — an opinion issued by the Court with no author's name on it and no vote reported.",
+      "text_sha256": "sha256:05c9cc68b8590ae0a182c9b23bcdaac9c0d81396adce1aaee13643d757296812",
+      "idempotency_key": "sha256:7b28a21861e4eaef28a0c91c5e4906bbc520b735f5a66386eecead6b80a5bfdd"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Five pages.",
+      "text_sha256": "sha256:0f990d77791f99daabce40363799c8fc1f4b8b4519bc7e74edf9c3cfd2361d24",
+      "idempotency_key": "sha256:6a6f4de48606d4f7e1faaf7e9c9adf55323c89e049a5ebb0d09574eec12a1928"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Almost everything a person would want to know about these three families is not in them.",
+      "text_sha256": "sha256:4ce1e8755bd6a849f7687c95e34af4b3abbf77106faf47c7443d0bb9481d366a",
+      "idempotency_key": "sha256:a83350fe1c414395a0cd47b8abf9aeff32553030499057beed46ccae702ae305"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "This litigation involves three negligence suits against nursing homes in West Virginia.",
+      "text_sha256": "sha256:42f3b745e9099ef8162d2c79860790464e5b0cf27c919df978259020428c7ee4",
+      "idempotency_key": "sha256:95b4dd704c2629d819be982425e431d61eadd76c9420f06c319b3a1c1f5fcc05"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is the opinion's own first line of fact.",
+      "text_sha256": "sha256:7f3dae74c33d0435dc6370ad94796656feb5fd53ffbfda1d0d8c22511cb02aca",
+      "idempotency_key": "sha256:5d97e632d9d06340a9f9783bf22bb59a287e5283e16ac160d82e8debb17d5179"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The suits were brought by Clayton Brown, Jeffrey Taylor, and Sharon Marchio.",
+      "text_sha256": "sha256:1b2b7276dc4d2968ed05d116e791fc3a1fc813d3f104bee474c0d0bb8618eb8e",
+      "idempotency_key": "sha256:cc060de7320961b508528352a9a54eceeec8c2c70132d36415060e4527ed7b05"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Brown sued Marmet Health Care Center.",
+      "text_sha256": "sha256:3d0abf7ff2c698e8d4071fdbfeaca8b895691394d5dccb79091615ae5512f70e",
+      "idempotency_key": "sha256:bef4d049724506f83e0d018a71db48038b208ba119047ceffd1aec847d496155"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Taylor sued Marmet Health Care Center.",
+      "text_sha256": "sha256:018b107945c3cf445f4fa6aab57c2559f5ec6d43fc2a310c3a341c0ffa99c748",
+      "idempotency_key": "sha256:be2276856c60f88be08393fffd17efc0fdd28d4df2fdf75a2fc8179496b2ad86"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Marchio sued a nursing home in Clarksburg.",
+      "text_sha256": "sha256:9e7ede57719bd6bcf00292bf8c4fff0b9559cc3b4f211e1420aa3b002452a9e6",
+      "idempotency_key": "sha256:1eda85db7588c82eedda4754dec05f65fc690d8414e3ff17d1c3b91555f173a6"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In the Supreme Court's caption it has two names — Clarksburg Nursing Home and Rehabilitation Center, doing business as Clarksburg Continuous Care Center.",
+      "text_sha256": "sha256:feb5d796c8f7a5d0ea614335189b823dd79a39f5db1884d1027ecb79baf81d6c",
+      "idempotency_key": "sha256:3eb430459e4d7a05ef66060158019e36fb90842bd77a08cea0b376140de43db9"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She sued as executrix of the estate of Pauline Virginia Willett.",
+      "text_sha256": "sha256:13f704b9a7524e6863f3876676ed7658dcbe974fd775572164ded8bee4c92d45",
+      "idempotency_key": "sha256:8968462ef3dddcab5f18cb84ecbb68b406acb856ad3feb10b50d11601f80f88c"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three plaintiffs.",
+      "text_sha256": "sha256:c89d9cd75b2584699f6af1137835cd119d5fd3da2ca22f346870c39d735e06fe",
+      "idempotency_key": "sha256:3573974e7909622a434f48949781db21725aaef43bc2bbc0c55fc2598f8c2d60"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two nursing homes.",
+      "text_sha256": "sha256:5c1e1e33e28693e4c836f2a0606e4bd862bf7a2ef9fd45fdde56688fdc1b2f1a",
+      "idempotency_key": "sha256:905a20a906a77ddad31cfa278649413ff6b4e107d82df7d660ff1d48a1d55ba8"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One state.",
+      "text_sha256": "sha256:720b1b67dde415974e04f1926d27a888eb1198d5eb928ba3fe2f1069edd94219",
+      "idempotency_key": "sha256:ee650522c65e3193d3456cd8b551c315a7688e1855f38801d94ab5229a8de293"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The first order came on August 25, 2009.",
+      "text_sha256": "sha256:db41fcc27f204801e8bf3b17d5371cf22b907876ccf90f5af9c326eb9bb99612",
+      "idempotency_key": "sha256:5cf981470cd352f6db416dc0dbbb2cffd0767f2a874b709b15fe90eea5678ffe"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Circuit Court of Kanawha County dismissed Clayton Brown's suit.",
+      "text_sha256": "sha256:1b9f4ca019a0853c1ebea9924df79666dc4998d090e7dd7a9b806fbaf86d6096",
+      "idempotency_key": "sha256:46fa5171df4d6ca1f451c7ce250b840bdfe0cf5be11cda21c0ef2ee1c26ff67f"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Brown had argued that the arbitration clause was unenforceable on two grounds — that it violated section 15(c) of the West Virginia Nursing Home Act, and that it was an unconscionable contract of adhesion.",
+      "text_sha256": "sha256:db0570857f211727dfd15352472e711d719173f1b59d5f93ba3833cde59f78a5",
+      "idempotency_key": "sha256:118ea0223b463fb0718e2a031404b0c74a65f543f2ab85070f0cb0e76f91ec04"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The circuit court disagreed, and ruled that under the admission agreement signed with the nursing home he was required to arbitrate all of his claims.",
+      "text_sha256": "sha256:df1ff8eb90341c683f3e07e8fd5b214ca7330a6802e2758a7aaa87ba6eda0f7c",
+      "idempotency_key": "sha256:b0cd4a3d9148e86dceff17a77a225189c3aef082b041260662ee4ecbe865499e"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That order is one paragraph long.",
+      "text_sha256": "sha256:77c200ab8496e6843489dcb6df2e47439debeb8e7f413cf10569bda1b2596ee8",
+      "idempotency_key": "sha256:8530be956eb694fc202a9254d03102facfaf0a7e38006f9468266e12e6db4d72"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One paragraph.",
+      "text_sha256": "sha256:2c069473c7b4116886666e58ef49c28394ebe90894574b4ff68a22d97ca2684e",
+      "idempotency_key": "sha256:451ae7f43ee80ee748f34fa38cda2e71e5c9928f900f8071d6a4406a9cad2745"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Its stated basis is a single clause: the court determined that Brown was required to arbitrate his claims after hearing argument of counsel, reviewing the respective briefs and the record.",
+      "text_sha256": "sha256:a32bd96bf2dadb19d7fc796047e202f25b0c7223c7d08b5df91bfee401a7ffa6",
+      "idempotency_key": "sha256:bffe2d93b0e648252a2aae924e034c1392ee5ce122ec1ca501d7aa90fb09021a"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No findings.",
+      "text_sha256": "sha256:2557f6e38ead83874f9694ea4332f459014b6921de5a7e153be890185da08ef5",
+      "idempotency_key": "sha256:b1bfac63ebcf5df5be79ae836df60a006615d064593dcd937e130db94e7938f5"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No analysis.",
+      "text_sha256": "sha256:8720339c8de1e3b60b5c956e3be1ed22212e86721efecad4eadb23984ce17435",
+      "idempotency_key": "sha256:54793a7af3aadcc66539e62ef0195740fd007b69396f3f1773f53b70f793e8b9"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That paragraph comes back at the end of this story.",
+      "text_sha256": "sha256:30cd2120a11ba5679fc61e356e9b493ea3bd405cf5b6bfa4fd8231499cfeafb6",
+      "idempotency_key": "sha256:5e69acde07b41add545e17f55a8961d4753271bd7065da958d8085d0a0178c1d"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Five weeks later, the same court did the same thing.",
+      "text_sha256": "sha256:eb33cf03d291fd2867931448ca58c46b45f987930cf082ce034a42308726b484",
+      "idempotency_key": "sha256:9177e5864e65187bd92ff74deb1bb55f184ec4133edd16b12d8944f0572cd863"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The second order came on September 29, 2009, and it dismissed Jeffrey Taylor's suit against owners, operators and employees of the same nursing home.",
+      "text_sha256": "sha256:8f2c6a091ca67f0487ec6dab40628366bd6f0cae6f1b900a537fbec5f1262b21",
+      "idempotency_key": "sha256:aad0bbb56624cc54bbbb6fd5e7b693a8b9182c1f8bf90284af8d300054075398"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Taylor had made the same two arguments.",
+      "text_sha256": "sha256:1b6d286e48a7497d131c0ac179d6bce151f9a97d0432590f717a3c782c1ab4c3",
+      "idempotency_key": "sha256:d704d89a6dcdd357d8250c5ffb76557b9374d269d6d86cf9006b70583ae9fafd"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The circuit court concluded that under the admission agreement he was required to arbitrate all of the claims asserted against the nursing home.",
+      "text_sha256": "sha256:1ff96d1de9a68424f39533ce1f476d2445966b2b243b63d23334bca339c8798f",
+      "idempotency_key": "sha256:9fb0c98eb072967590d46e2aa1164ee836fd0e4a713c9b01d28cf0445af0ac9a"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Both plaintiffs appealed.",
+      "text_sha256": "sha256:646404596e528bc751be60cea24cd151356c74f1b1158749b8cf31d07293e246",
+      "idempotency_key": "sha256:f28c89480e922411a420b368c40e76bb405e81aa9d70c8849c2bb93aec6999e7"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The third order went the other way.",
+      "text_sha256": "sha256:1b8bbeffc9f7e823c663fb16f999b928fa18f626a8d9ccb8d1ee962aab01dd8c",
+      "idempotency_key": "sha256:8288ffa57e470916fa5289da782b6870bb76e303968be95f6cbdd9778fe72cc9"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On June 2, 2010, the Circuit Court of Harrison County refused to dismiss Sharon Marchio's suit and refused to compel arbitration.",
+      "text_sha256": "sha256:a83e9bd21f6b4507f316a95ff666d94e00eb94b247e8f8f9a5c1ac0117dcb1de",
+      "idempotency_key": "sha256:d5cae4a3a2acf4ec73a79a8924b11408347d9c149c46dedd068c34e196bc1ebb"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Instead it certified a question upward, because Marchio had argued that her clause was unenforceable under the same section of the Nursing Home Act.",
+      "text_sha256": "sha256:08b6acf88f68ad3bb8fdc027ebd44d3dbe63ddd3cd13dc64b4d76e0edfd32745",
+      "idempotency_key": "sha256:aedbfdfed864bce7f863d0d789a876be6d24fdee318b1868a3d15d12ccca113d"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The question was whether that section was preempted by the Federal Arbitration Act.",
+      "text_sha256": "sha256:a49e8c70dc5ee69cc15ee4665983e5444237581389f81fe3af906881fd41815d",
+      "idempotency_key": "sha256:4cc64b0bb3cd2700e365b71f71bb4d596aea207db97b240400c7d1fbfc43750e"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two dismissals and one question, all travelling to the Supreme Court of Appeals of West Virginia.",
+      "text_sha256": "sha256:450b7da3217978a464d72790aeb6d10ea6921a52e11b8e3c1f015f4797d749f5",
+      "idempotency_key": "sha256:68f2dc89811a9dfb0ff03fea577d518b9709299da6b05a77d501fe60d4f7c2bc"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Now the part where the record stops.",
+      "text_sha256": "sha256:34a8c6399712a16f1bc7ca04a9be5866e93ce4f9f30f7bb81ea0c8fb858461a9",
+      "idempotency_key": "sha256:b6f037b6039e227bf5f3d6cad95d8933a067fa512b06e01b57605574ee9cd50c"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Here is everything the Supreme Court's opinion tells you about what happened to these three patients.",
+      "text_sha256": "sha256:6bda3785a278fda1725b73dbd0e6d0123d752e59338478918bebce9febe13504",
+      "idempotency_key": "sha256:0b400f037e2a90f810d430b1de648dda605f893ca8e95ab8379773c75ebe7b35"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is two sentences.",
+      "text_sha256": "sha256:99a321462e3c0874d7b09b02f6b3ca64eb6cd9e04c58e7d73ac4c986de4586dd",
+      "idempotency_key": "sha256:ccbcafd8ed3cf1b989f92f1421799f951bc1dff8ed513b93836402a6e9490e15"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In each case, a family member of a patient requiring extensive nursing care had signed an agreement with a nursing home on behalf of the patient.",
+      "text_sha256": "sha256:f98baafc28da71ded15970cd0a264e312cde50c86767cce5ffe9ae968e5e8d8e",
+      "idempotency_key": "sha256:9cdf0ac632957b97c86548099ad9fa5c01fee82a85ad5a4636d2a9fa6a98908b"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In each of the three cases, a family member of a patient who had died sued the nursing home in state court, alleging that negligence caused injuries or harm resulting in death.",
+      "text_sha256": "sha256:2793c287ab0c550f99b01c2b8fb4f4cc6981b4c473aca9b569136eda613784de",
+      "idempotency_key": "sha256:aa4b8d99e593a43be6f3ab1d5f207440fa2ec996e8b5f618c8861ee90d4b0937"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is the whole account.",
+      "text_sha256": "sha256:28153805ed05169e02f2fcea16944ada335faa2e2165f6caf6b801b29d31f8ef",
+      "idempotency_key": "sha256:f0b8a3f66f8dde5f36ecb1453ae764a6de369bc830ce8d1fc90533defe59ee30"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No ages.",
+      "text_sha256": "sha256:a3584e2275aea19241edcf0a94a2fa09c47e6c3482a97e4f5aac769439e40de4",
+      "idempotency_key": "sha256:a5682288097fdcf540a7fad789a2e247bddfc3a7740441f946d0a3d67419cda0"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No conditions.",
+      "text_sha256": "sha256:d6017ce7912b6f03a7907129d2d93bc9fbec56bfc063c962d25ad4eb46e78811",
+      "idempotency_key": "sha256:68c8f896268a8c5a629895c50585c57852c71680905a2542afe315eadab049fe"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No dates of admission, no dates of death.",
+      "text_sha256": "sha256:f7f86c7734684841cfa2841270967be95804b13a1bb3a816536abc9e14d2bba9",
+      "idempotency_key": "sha256:813e35c80b9eba5eac45d189ecca78939a1abca89ea34d6f976dfb8d2ad9bc61"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No description of the care, and no description of what the negligence was said to be.",
+      "text_sha256": "sha256:bc7986503165b04430a92345dfc95b235fa08a348dbd36b7616a756af156c08d",
+      "idempotency_key": "sha256:3f051c2e1c825eafcc2b0cf01be0fd1fbe99c634ded5502f8ce413e8acec3e67"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Pauline Virginia Willett is the only patient named anywhere in the opinion, and she is named only in the caption of Marchio's case.",
+      "text_sha256": "sha256:4d985422db7d932ff688567322148027a4748b94b1ffae6b7c30ce32726efcf4",
+      "idempotency_key": "sha256:9e442bb1d5b764f9559a333ff75a20b48f85973c4842b2f14f3683f627a94bb6"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Brown's patient is unnamed.",
+      "text_sha256": "sha256:9c9a10c50291c533fc976748739545fe55481a1981336b32d6eadc78bbdac978",
+      "idempotency_key": "sha256:bd7cc34df05af57003116af075c90c80e7b74528950afaa251fcbd62fd9730a8"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Taylor's patient is unnamed.",
+      "text_sha256": "sha256:de83fe66d60d0d65e41dc9abe9b39f20bef6c34f643a6c4feace6b8f3e82d36b",
+      "idempotency_key": "sha256:14e1f20448e08d657799b98427d5031ddc01f65fbfc734ccebb32bde20b5dfdb"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The signature is described twice, in the same four words.",
+      "text_sha256": "sha256:a3a8d84d0f6e18e05bb145edb742537affe91ffcd43e62cbc27f8a8037499e98",
+      "idempotency_key": "sha256:8a566c6af8451ca4b9b8cdb3db9f0a4a79659f16b3821f12c0baed133c528763"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A family member.",
+      "text_sha256": "sha256:028be9573b896349b6b5e014bb07ad1ff5a6ab8c624488111770a715ae60dc20",
+      "idempotency_key": "sha256:6f74a42c4d4b4c1ddfe7fc4b88d11108cf66ed96c60974a00edc32ad00d3a89b"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The opinion never says which.",
+      "text_sha256": "sha256:235ef4f15e9b3c0377115fca18cd9af805507903c4b3dc510d93ca4825cf09b5",
+      "idempotency_key": "sha256:6bef084ab13675b6914bc7a81bf701a9c9f69467d34f1e4f2ec631f6cdb67727"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It never says whether the person who signed is the person who later sued, and it never says what either of them was to the patient.",
+      "text_sha256": "sha256:9b0f8071ea1c49392df3515d257ee702083a8f15adc15ea6639f9caed43f1246",
+      "idempotency_key": "sha256:efa80ad0e17b11a7ba8a3f6793e8641e3abdcac86e6c98e6e688ba80c95f63ee"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A five-page per curiam opinion is not a narrative.",
+      "text_sha256": "sha256:9a1943f217d7e4b086c2892cc04be36a9937d9ed64783712192754d18e21546b",
+      "idempotency_key": "sha256:34e01a471d7e6a4d0c0f8b561cc8143569fe8e57d32fdbd8030476a53c220155"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "What the record does describe closely is the paper.",
+      "text_sha256": "sha256:4a912aa97a881cb26324f7d8a2cd44defbda788833e2b84b47c46b82d617f4f7",
+      "idempotency_key": "sha256:b467d4481f418f9c961112e99ca5ad66027f940ea31322ade85037dd26d9db2a"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The relevant parts of the agreements in Brown's case and Taylor's case were identical.",
+      "text_sha256": "sha256:fb4d829a940eea6141bfd32a9873ee4ed704be919a69bcb0834b3da146e4f7db",
+      "idempotency_key": "sha256:a5e0eaa736053aa44c340b271cd51b833828053ddf7e62d6afe44ce27f331663"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Both contained a clause requiring the parties to arbitrate all disputes, other than claims to collect late payments owed by the patient.",
+      "text_sha256": "sha256:d8d0819f75de0384e655dacefeabcfad8b7fb7da0b8d78748104b4b71c81f9c0",
+      "idempotency_key": "sha256:7052c600bcb59e3bf8e6739c2dbef0d92a00e69421c397ffaba527eda58b4450"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A dispute about how somebody died goes to a private arbitrator.",
+      "text_sha256": "sha256:76943a30743c589d1f6d5bf6757cbe9224fd6caf1ac5385844a3b650f3e10501",
+      "idempotency_key": "sha256:7807c68e78e1e9ee1b91ad0bbac31aedca54f0f84269b96209f443e1503a070b"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A dispute about an unpaid bill stays in a courthouse.",
+      "text_sha256": "sha256:158553e66aa02891b55d6307e928560de6c658e87a35dc2ba2a88fef0ba0856a",
+      "idempotency_key": "sha256:ebca9b8ab4546083440c9213ffd680087b47d7e7e687d7a40f6039a6227ecb0a"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There was a second provision in those two contracts.",
+      "text_sha256": "sha256:a77854c890e27fa3eb2b1fa706296da90d587b5af07686a07d5cf1dadce5b92e",
+      "idempotency_key": "sha256:19ac11997743dc71187d8882b3d36d6aa842c97e0ba46016c240132241957a19"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The party filing the arbitration is responsible for paying a filing fee, in accordance with the Rules of the American Arbitration Association fee schedules.",
+      "text_sha256": "sha256:cc0de12b90eda85a5d935d98b1b31c054dbd084fe31092ecfdf2c69c6a9d938d",
+      "idempotency_key": "sha256:4230b9c93ff9427d705c7d621efe885f7a6bdb10e3a3a10ff0088c5057e95f3c"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Whoever starts the proceeding pays to start it.",
+      "text_sha256": "sha256:9b5fee853af096d0dc7884c1ba26bfdcd586ff9b316c18bc793ef65c45dbc6da",
+      "idempotency_key": "sha256:1be65f2b7a58285a6288d205c90be4cfd2582d40350722d2f227a3174aa0998f"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The opinion states no dollar figure.",
+      "text_sha256": "sha256:80321583dfbf92b95246691194dda7d4a5e41f3522c3818fa7598d636724ad99",
+      "idempotency_key": "sha256:3cf2db3e3c6cdc522925cfa02a61412d27fe660579a988830e4157623c49553b"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Marchio's paper was not that paper.",
+      "text_sha256": "sha256:0d8f46ff147a43fea848836ca7267e91b132966f5778620bfdcfb6e5e3e41224",
+      "idempotency_key": "sha256:57c9d289b474e7fff77fb86d4225dbdec2943909b81de41f81b11eefe59af498"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The agreement in Marchio's case also included a clause requiring arbitration, but it made no exceptions to the arbitration requirement and it did not mention filing fees.",
+      "text_sha256": "sha256:c9d2fb58dbed71f9423613b294a46a4fd0fe935e52836efa58249c1570d27f46",
+      "idempotency_key": "sha256:b673e52d5878efe6a2a2c5242e3657f1a4450b162666e10096ace7a9f8ce58fd"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No carve-out for late payments.",
+      "text_sha256": "sha256:fe3cae1b5b5216a06793404e60bd2c166b9687c2c00866bd3df1ff43eaf5189c",
+      "idempotency_key": "sha256:313f718fcc26ae6763bd2158ed9eeeb77d2d4ea10a9512ec1b09c976d010449e"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Nothing about who pays to file.",
+      "text_sha256": "sha256:b8d838dc5f2273c50a8805711e757f28b70d5ee820bcc84808ba8488b6f8500b",
+      "idempotency_key": "sha256:10198d9795f51b9603761831d89575d7b73cdc13c838b647b2eef3cff9aa9bbc"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three families.",
+      "text_sha256": "sha256:42fda47da1bd0ff00f72418247dbb34e9e89727825041773afaa4e62c0bf622f",
+      "idempotency_key": "sha256:e522afd7fabadddce67984f9d67e4a78edda0756f6e4f2c423b8a8ea1d488b0a"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two documents.",
+      "text_sha256": "sha256:9e2505a920785ce6b7009c47d0ebd8b5fd39e47e9d7bf379d3f16956a3db10e2",
+      "idempotency_key": "sha256:04422f7159c3259f4c4e76f0e3cdd4f31084fb202d8e5e3d32fc625b9651a2c5"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The state law they were all pointing at was one sentence.",
+      "text_sha256": "sha256:13e2707785baecae101d9a10a2104a4d2e5a159ec2b982b6ea44f5c844563a1d",
+      "idempotency_key": "sha256:aba0fb69109f17b843e478fe5ef245b1063a4c12f1cdc78129b2723133897116"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Section 15(c) of the West Virginia Nursing Home Act, as it stood in 1997: any waiver by a resident or his or her legal representative of the right to commence an action under this section, whether oral or in writing, shall be null and void as contrary to public policy.",
+      "text_sha256": "sha256:2895bf3b1be3715c44f544d391deb641c01d15089935d84e6872c0a69d18bb47",
+      "idempotency_key": "sha256:5201a29bb72b2df0e15f6fd5a68a37d64a124064f8816075640e3d8730379665"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A waiver of the right to commence an action.",
+      "text_sha256": "sha256:711626cceebec08fad2daa53ef5e68f581e58de54a9f102974af2ac62c4a1fc0",
+      "idempotency_key": "sha256:bdd90bd6fa6402fe6cbb3b7f91a470f95e521315cb072c58c700574125585de1"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Null and void.",
+      "text_sha256": "sha256:e2ede178f639450ec99fd3d2239524f16d2c2daa4b4a216436c968f6bf478a5a",
+      "idempotency_key": "sha256:d79258cbe9abba65aa7781a0852d78d7858edfab3ace1d1ae499a9991c7e5b1a"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "West Virginia's legislature had put that in the statute books in 1997.",
+      "text_sha256": "sha256:6ee77a6644e18e372b9fabb5939b8b787dfc7b93da678331fcc9cffa12683de5",
+      "idempotency_key": "sha256:541ffab35528c975b074cd8b4f80d24e00abd379e7d2414092cf4d0f96a2b225"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Whether it survived contact with a federal statute passed in 1925 was now a question for the state's highest court.",
+      "text_sha256": "sha256:60a8a31775757deb4740c719d2edcddd247526eee583efc3bb8a2dff74bdbd41",
+      "idempotency_key": "sha256:05289670a57a23c8b10e6ee2386b2928b8be6481dad5f2163345a441b42da9c9"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "On June 29, 2011, the Supreme Court of Appeals of West Virginia decided all three cases together.",
+      "text_sha256": "sha256:860f33aded90bab732ecc62665e862fa9ed6ddb7be22612772a3f0ed4ecbb813",
+      "idempotency_key": "sha256:d2c935b19f31eb357904d9282af461c00be8ee93cfb2ef399ebbe08480e87eea"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It consolidated Brown's and Taylor's appeals with Marchio's, which was before the court on other issues.",
+      "text_sha256": "sha256:25cb3553f473efa36509d6cb933db2af33f6f1b464597a146b15c66b6477c1ab",
+      "idempotency_key": "sha256:8137e0a0b83d3d2af6041ed01bc21074f8ad618c7eb3676d47e3fb27f9e066d8"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The court's own later description of what it produced: an extensive opinion with three holdings.",
+      "text_sha256": "sha256:d3ad55320fc90ec3d610a48e1e17b73a777c5200ac5278759815b3d50cf7a6d7",
+      "idempotency_key": "sha256:4b966a83e91f164720f6ad363a835af03787d21d4c2fa33210f23fda925b92a8"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Lawyers call it Brown One.",
+      "text_sha256": "sha256:d0bee8476a4183eaad7cf3f2dd9875c35c93cd0e2383af781d0553eb2035b240",
+      "idempotency_key": "sha256:ada75e26dd28d762cabfbf398039f3cdef99489eb7b95138eac2237f61ff9029"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The first holding went against the patients.",
+      "text_sha256": "sha256:cfa40bb5007b837c16c051502f92e4ab4f5c0df85c49951c1524c1a5aa469d5e",
+      "idempotency_key": "sha256:00ec76b11281debae850037f50d2d9d79474dcafaec4e9ad83a5ab99a75ccf06"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The state court took its own legislature's waiver ban and held that the Federal Arbitration Act preempted it.",
+      "text_sha256": "sha256:cea3b2202dda1f0d651704cb794b12107d5dbed3463d55b4b9e4da0cf043ea9c",
+      "idempotency_key": "sha256:b75b06cfc79b4546026945cacbc12fb42e3418401ca291b361230a540eb68eda"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The reasoning was a rule the court stated for itself.",
+      "text_sha256": "sha256:568ab074fd9535af02808b4f8a414bd44e8c6e269e5f5101200b44474fd6d582",
+      "idempotency_key": "sha256:354cfd7033d4b6e143ca7f09e022835c1f2f412ae645761033a59232e44390e7"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A state statute, rule, or common-law doctrine which targets arbitration provisions for disfavored treatment, and which is not usually applied to other types of contract provisions, stands as an obstacle to the accomplishment and execution of the purposes and objectives of the Federal Arbitration Act, and is preempted.",
+      "text_sha256": "sha256:83f3baaa2f7d19236d322369734f41f0ce1e813353a7a351b7b938049063b306",
+      "idempotency_key": "sha256:ed6995fd7c6681ce1ac61f5ebb766ca04f6d0ee38d2b89d6ae7ba5f2cdbe115c"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the rule it wrote.",
+      "text_sha256": "sha256:ce7de04701bb8b053ba99e7f63d9c772e45dbdcd559a9ef3a6c9c3abc654e716",
+      "idempotency_key": "sha256:bafbae334fba28f75072121945def95dab46a33f97a54541f30017513766565f"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Then it applied that rule to Charleston.",
+      "text_sha256": "sha256:cbed4c9d85ed69e714046cebd85a294c4f4d8ab1e90b140873fbb2e2262ddf56",
+      "idempotency_key": "sha256:9335fccd069c3581ff9836635dc50520feb399dca3574207bc5e401d7b0ad3f7"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "To the extent that section 15(c) attempts to nullify and void any arbitration clause in a written contract which evidences a transaction affecting interstate commerce, between a nursing home and a nursing home resident or the resident's legal representative, the statute is preempted.",
+      "text_sha256": "sha256:6795f30565ca141e67123de0a69ceb3e296b52966bd75f46e9546295d6b05378",
+      "idempotency_key": "sha256:50aeae0b80a05dfd4676b78638f5543facde72529d164ff32c021f904d7ec340"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The picture of a state court simply defying Washington does not survive that.",
+      "text_sha256": "sha256:4517c810942e0994d0b02cc101f73a65ca1ed49f8506d603a632364e2be4f923",
+      "idempotency_key": "sha256:7e76a1b21c6c1aec80ce68916b3b9d421f8d21975fffda5290e429efc49bdba0"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "On the statute, West Virginia agreed with the nursing homes.",
+      "text_sha256": "sha256:ae87d1c9c8c19359d332bed507f116c8990a424211f150a8bbfe7b850768e46a",
+      "idempotency_key": "sha256:4af0a6a30fe096937426bb7326a401f3b32294f3d704e06500a66f52c0a8f66c"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Nobody appealed that holding, and the court would later note that nobody had.",
+      "text_sha256": "sha256:e2dbb2e99d0459a7d27705ffd7ede4c11289f126295c0fda9dee18cdd8fa106f",
+      "idempotency_key": "sha256:63773aef515ebb5799bc95578602dcb93c8af86d625235259b38e0880d140f35"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The second holding is the one that travelled.",
+      "text_sha256": "sha256:d52abc52aecf238825ab38ab1e6efddc70571443842ff047845091904e6585e4",
+      "idempotency_key": "sha256:bdd7962ffcf1cc419153507ac01bede56b05c512e7380f9b822de0321181247d"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is Syllabus Point 21, and it reads: Congress did not intend for arbitration agreements, adopted prior to an occurrence of negligence that results in a personal injury or wrongful death, and which require questions about the negligence be submitted to arbitration, to be governed by the Federal Arbitration Act.",
+      "text_sha256": "sha256:a9e01a384c8c87ec70e29a985dad39fc1e8dc29c98c6da3ffa8eb195eac9a985",
+      "idempotency_key": "sha256:102e68b69d9b0437d6d4e4e39dd863e30066f0a9884338324d5f617796e6f682"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The load is on one word.",
+      "text_sha256": "sha256:acc75f570f477757c8afe144d4ca8e7648c5fb728e5f47f439186bf613a0ab83",
+      "idempotency_key": "sha256:f2dcf0c86da1061ca56ff919618cf6ab54fc026d52e85d193bf38188630706ce"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Prior.",
+      "text_sha256": "sha256:65c4ac06f8c4a737de3e274d978077e272d686217d905de1a9f537996108b300",
+      "idempotency_key": "sha256:e6dda52f747eac58981d1c32a93e438af9d78f9598419fc000d13efa1243f3a1"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The court's argument was about sequence.",
+      "text_sha256": "sha256:886f0dc81b131950047dc55ed54a96d43d39be0c5f2fff1eb34570d103ac60d3",
+      "idempotency_key": "sha256:30c6d7729a9693b058c17c34829e450233a4f127c2f03dd437b512bf6f687078"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A commercial contract that goes wrong produces a dispute about the contract.",
+      "text_sha256": "sha256:d9dc1ab68368e6f43f083f673deee213700df1de4836c28dd0afa6cea23f0384",
+      "idempotency_key": "sha256:f6409935a52142b857922d90db34254396b82d2e7061451941c849020b95c1bc"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A nursing home admission agreement that goes wrong produces a dispute about something else — an injury, a death — and the paper routing that dispute to an arbitrator was signed before the injury existed.",
+      "text_sha256": "sha256:f7997bc0edb97f1a5b44059dffc11510d851a0bb9a41ba5e7b6cbb3ee8220871",
+      "idempotency_key": "sha256:ca6d0b3644dd4f6256f795a451a9a053a0dbd00f91a5c27222901262d0003407"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "From that the court drew the public policy that gave the case its shape.",
+      "text_sha256": "sha256:9cc062fae92505cacc51bb15f029a79158f6e06f69f82a6db371c90985c71ba1",
+      "idempotency_key": "sha256:58d119f2b8ac034e9eb49830b44849d05d17f83412559f417f2d7e1f253186ca"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Its own sentence, quoted back to it the next year in Washington.",
+      "text_sha256": "sha256:0dd3cf389ccafb096da154d9c8cae40b684d48e3248d556e5440662463095994",
+      "idempotency_key": "sha256:d1e0ad56950f5174940df0e1d02ee887499aca7c4d66032b94ff632bb07a4a34"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "As a matter of public policy under West Virginia law, an arbitration clause in a nursing home admission agreement adopted prior to an occurrence of negligence that results in a personal injury or wrongful death, shall not be enforced to compel arbitration of a dispute concerning the negligence.",
+      "text_sha256": "sha256:27af906445479d3953a29e212845787e45225920d2aa2ea4c45716d8d7ea90d7",
+      "idempotency_key": "sha256:b67658b3685fb0fdbcdaf3daac01fb5629f7d520d39ed114c718459e70bc905c"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not this clause.",
+      "text_sha256": "sha256:756154ef306796c0d61f0b096040649769b5c749b821103754dee4964b432b60",
+      "idempotency_key": "sha256:b77e3f482a11aaae4291e05da11f5c874556c0b0902b1dcc5e07a26a4a7722a9"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not these three clauses.",
+      "text_sha256": "sha256:57d1237e9e44fe1e5b2523d28cd7a8e11b9c50ef3b08b700656c721d11d8769d",
+      "idempotency_key": "sha256:d9cfe643c729a7bf45f3a838c2451b34fe3106623e25eb06cc8930fdea937cc0"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Any such clause, in any nursing home admission agreement in the state.",
+      "text_sha256": "sha256:722c91857089dd7361b58db8fa9a47449f96054a7a0698e566e8fbe96463d231",
+      "idempotency_key": "sha256:853c99d77bdc200c5fd80875cb7f151869a9d557b17810eaaf4acdca3619af7a"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The third holding was about these particular papers.",
+      "text_sha256": "sha256:1fc959f2ac14a7935ca82876c3c97040109c90478c8d91628572dcfc8caa3d12",
+      "idempotency_key": "sha256:900366de1384b5eee30351f9bce3446774dc77c7bfd3d6be7e75e68f8d98324a"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In two of the three cases, the court ruled that the arbitration clauses were unconscionable and unenforceable — Brown's and Taylor's.",
+      "text_sha256": "sha256:d29f3af1c86a8c68066b59abae92aa201a2edf18cf1b442c02dd39b7f83a6f89",
+      "idempotency_key": "sha256:f1e66c22f9265b11144579b4eaedbbeaac318cb0ce9d5d29f259ea9a88347e08"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In the third, Marchio's, it answered the certified question and held that the Nursing Home Act could not be relied upon to bar enforcement of an arbitration clause in a nursing home contract.",
+      "text_sha256": "sha256:40163c1deca217b8c168554909c3cc9df2c538cb775fde9bd681600183084941",
+      "idempotency_key": "sha256:b6786c4df834f852008729d6f5b4e8639993ead7555160ee029cdcbbb74dcd32"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So the court had built two separate doors.",
+      "text_sha256": "sha256:7d5657ca90b1728832e0a732dc68821043e395bf4818d910d66fd704866bee22",
+      "idempotency_key": "sha256:ab3d4f3c3eea3014972e41c01f6e366d998a51b0f13fc29d3bc749ed9b232324"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "One was a public policy against a whole category of agreement.",
+      "text_sha256": "sha256:1a3c38a8261a6b3761b566f01415a4d5ab6d1cd5e7f01888db1e960d176a854c",
+      "idempotency_key": "sha256:f5f4f2c77523018c37ea8a5775da4918a4e27f7399353701bb9f7726fc605ecf"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The other was the ordinary law of contracts, applied to specific pieces of paper.",
+      "text_sha256": "sha256:15a7963e9f68bb5ed794121c5868843b279b2e18308be42517b9436594c1ae52",
+      "idempotency_key": "sha256:289a900d2be1f771f29c822f3ba1f382e0f7386b23f08dcfa6743251b509e0ec"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Brown One also said something about admission day.",
+      "text_sha256": "sha256:1967b8c23d8299a24503058bf4634147e27ffa9784c5973da835b194ed34338d",
+      "idempotency_key": "sha256:c49d1c690d252faeeb65b9345e234042c3e5ff0d54a5cf803a3dcb049b57b8f8"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The process of signing paperwork for medical care — specifically, a contract for admission to a nursing home — is often fraught with urgency, confusion, and stress.",
+      "text_sha256": "sha256:1c7fb881ec1a59fa9aa6558a509665515540885034c726b448146638d263db5c",
+      "idempotency_key": "sha256:bea9fdf59284dfbf8dbee5c4b879f2b1458481ce1dee9dd1c8230307c02ed6e9"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Most patients, it wrote, do not view the admission process as an interstate commercial transaction with far-reaching legal consequences.",
+      "text_sha256": "sha256:ad709ac2b24a27342c26302c4c58742fe57b984d2fdf9ac581903fdd3271548b",
+      "idempotency_key": "sha256:f391275f6925801f33460b5188fe8255cf0e0393ac9e54fc46d8d10414cb814b"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A year later, in the opinion it wrote after Washington sent the cases back, it added two more sentences.",
+      "text_sha256": "sha256:09dfe99fbbc7671ad0ec800f60fdfb3903a169a443fbb15851247d6dc883156f",
+      "idempotency_key": "sha256:448ab54b9efef3e7f5970d2ee5cca3f48012fd3bfe294243435941ce0e5e8472"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Nursing homes daily sign contracts with patients as a routine course of doing business.",
+      "text_sha256": "sha256:3040ee4df6c4ca3fd4b1e6e688c149a7e1dc40738bf88951e25f1f519402bb25",
+      "idempotency_key": "sha256:1537f3ad737029891d8adedc975505a30598080c20eb41649be19bc730ca6eae"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "People seek medical care in a nursing home for long-term treatment to heal, and do so only a few times in life.",
+      "text_sha256": "sha256:61d3acec669d6e72986ced8cd4d465c3c1ac072c627dc733b4e4ff81dddc77d8",
+      "idempotency_key": "sha256:83f2b04375050c5895d12729f77ad16dd4f618175fcb24cb298f72d87b106057"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The doctrine underneath all that is old, and narrower than it sounds.",
+      "text_sha256": "sha256:ad387345368dd0f6da1d405b4f16f7efcff89cae7bb4dc19e001bd0ef3880304",
+      "idempotency_key": "sha256:a9f2efcef888ddcb3103e99ffc88bbd681a63604301da2fd0cac874bef620b90"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Because of an overall and gross imbalance, one-sidedness or lop-sidedness in a contract, a court may be justified in refusing to enforce the contract as written.",
+      "text_sha256": "sha256:78fc34d4c74300bfbd7d038ad5e47f7049be056b8a5f25dc1c3b9728c7ea6e2f",
+      "idempotency_key": "sha256:e13763e9bfc577715616e12e849758c66f407114e1fc31afd9213a634af12f47"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is unconscionability — a rule about contracts.",
+      "text_sha256": "sha256:59e78127cdc1c5d19f076cc03fa275f38377cd319815f5f1ea93069d901661f9",
+      "idempotency_key": "sha256:b28f8841fed7a4c9c71ab7b086951ac548fb93dca4e5b2dca16684d165b5c275"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In Brown's paper and Taylor's, whoever filed paid to file, and the opinion names no sum.",
+      "text_sha256": "sha256:f4eeaf195b6d48d4a2387124733139f3366a0b5df8f0a260533dc12937c2ce47",
+      "idempotency_key": "sha256:200f3874584292012df53cea152a377176a6482afbaae0990d0c7f5b38dab3c1"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The court was careful about what it was not saying.",
+      "text_sha256": "sha256:93c500bc1a774b340288ef92dfcde870207bd82a052cd940f98d34186b9e53d2",
+      "idempotency_key": "sha256:a8e1781751a4dd15803319f4ca7659794c6546abc5982b9aeabb49afa59ada3b"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The courts of this State, it wrote, are not hostile to arbitration or to adhesion contracts.",
+      "text_sha256": "sha256:aca5f64d7775d4b16b23fcfe6fa95f61cd8314db4b22f474a1ad4adffc027f21",
+      "idempotency_key": "sha256:b99e81abd838421c5389bc930360bbf438382f61e5aa3baac17e6ab000211339"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "We are hostile toward contracts of adhesion that are unconscionable and rely upon arbitration as an artifice to defraud a weaker party of rights clearly provided by the common law or statute.",
+      "text_sha256": "sha256:b9eaa9e4a814552abdf9debd1a5b4f022df31e8ab40b8ac3d80a269096cad908",
+      "idempotency_key": "sha256:a1b179374c1894c9a2bfc0b1b7d22a15e87271c0e7a8cb4795b8819faa7ea987"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The word is adhesion.",
+      "text_sha256": "sha256:4011c3aa14a9f90e71521e33d475c9acd7205b4a03e8c10eb36c81db9451b161",
+      "idempotency_key": "sha256:09e6355c53e796db05e066aed55cd74f6c4f4634b3d3d98ed2f588819628a95f"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A contract of adhesion is one drafted and imposed by a party of superior strength that leaves the subscribing party little or no opportunity to alter the substantive terms, and only the opportunity to adhere to the contract or reject it.",
+      "text_sha256": "sha256:fbb84f937e4785548d1ea9e0d29fd85e863b83a6cc22f431f74cb002108c5654",
+      "idempotency_key": "sha256:6d089bdb0bb18af0aa9f7a7a452093043efc907d2b0a36be7da45bc74eba410d"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Two of these three forms said the same thing.",
+      "text_sha256": "sha256:518646f9e6c132ac6b044e8cf99cf8f9892113858718e0bc2fe0c20e61cd01ba",
+      "idempotency_key": "sha256:a205a8cf7d9f27025d3726f080def528d540601ff581053b0bf83cca330c9ff0"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The third made no exceptions at all.",
+      "text_sha256": "sha256:3737e6427cea0bba6ca629a2f394333c54230b6f5ddbcf41757dcacfdd18d012",
+      "idempotency_key": "sha256:db53e062122172a8d38cefc502c9b064c88c8726d13e2792cd39546494b76ce0"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Take it or leave it.",
+      "text_sha256": "sha256:2ed9a2ada4e9daae76eb066d2060c8d47c6f03b76055fd0ef7e3b2c04aec3334",
+      "idempotency_key": "sha256:cfa5103b5540608de7929efd00281c9f8e0595b447422794048d33d99b8add4d"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The state court's finding, in Brown One: people being admitted to long-term care facilities and their families have to sign admission contracts without time to comparison shop or to negotiate the best service and price combination.",
+      "text_sha256": "sha256:34f2bbd535c7adff2eeeaf5f9694b54ac87bfc287f840f9c385c0c65e2307b8e",
+      "idempotency_key": "sha256:8fe113834ba10b42550976e535ea38bb1fb6ec839ca61253cc3a73d388c8b902"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "But being a form is not a verdict, and the court said so.",
+      "text_sha256": "sha256:ee74f165062eb86a15159a507bf3f1eec6c6cbfe5f44a8fd93ffce4e5cb15aa3",
+      "idempotency_key": "sha256:63b2d2f61bf9d94207ad8cc49130b5a69cdfc5f479d124d607e4c087dc09b6ee"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Finding that there is an adhesion contract is the beginning point for analysis, not the end of it.",
+      "text_sha256": "sha256:ef63a17bd023e8462ea971a5c03fc5a722aa0b8a18fa9665b1ee6e7fd7dbcb7b",
+      "idempotency_key": "sha256:bea756c8f0dc2f06717ce3d416c8d81877b061343f7294821adcd2fcfbc449f1"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "What courts aim at doing is distinguishing good adhesion contracts which should be enforced, from bad adhesion contracts which should not.",
+      "text_sha256": "sha256:b7012b9c0182889233dc7b5a3bcb89de2041bd9c73cff01dd19e626cc94d69ca",
+      "idempotency_key": "sha256:7607a46c2553027e5a4432ea9106430fbda67acccb66ff6098ac728c4896be4e"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And then the sentence that gives the whole opinion its edge.",
+      "text_sha256": "sha256:117383ce9c55c5ad6f5f7f1b3e2a5ed2348b4dd9660e1be3573d1043e358e1c8",
+      "idempotency_key": "sha256:3be66ef778e3bd5d4f7a5b36f7e02811c2725095d3c63adb88f2d455cfb7c176"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It may be disingenuous for a nursing home to later assert that the patient or family member consciously, knowingly and deliberately accepted an arbitration clause in the contract, and understood the clause was intended to eliminate their access to the courts if the nursing home negligently injured or killed the patient.",
+      "text_sha256": "sha256:35898005293030b9adda4280124822725c5f6bfadb7a8229d730d7c0c12850f9",
+      "idempotency_key": "sha256:4e37f87533d52d842106a05dd969bcb43810689fd7d54b82a08f4980b0a0d2aa"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Disingenuous.",
+      "text_sha256": "sha256:74f43fd3c49833ac83cc5063cf40aa54befcc7738a823d12759d5ae1b5f8c25a",
+      "idempotency_key": "sha256:d4ec21577d1aa53e010d3d10751d5f5cf05f1dab1eeb82cb483c8f0a4a1cb494"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The defendant nursing homes in all three cases sought review in the Supreme Court of the United States.",
+      "text_sha256": "sha256:f8085676861a55ad1cc7bbed4ef4caf7212b48c8b1f65d00601c436bea32d88f",
+      "idempotency_key": "sha256:484389bd56be14afc2c38c2dda59ab22ed2defe893307dfc90570a192c95b324"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Two petitions for certiorari, docketed as 11-391 and 11-394.",
+      "text_sha256": "sha256:07795e8b6631db3c51372cde12c02e7fe00b08d7a4d6977c966b9234785aafec",
+      "idempotency_key": "sha256:12f22fb9b81c01507d124db942c78f98bfc1dc90f1b9a1551578bfdf87d10636"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And the defendants specifically challenged Syllabus Point 21.",
+      "text_sha256": "sha256:27706b3be551a9c4a9a39f0cc5e504ae9250461ce8b5457ddbfc5519fe2673e2",
+      "idempotency_key": "sha256:14bcb78b71f16d9c8503c02709e995b810706418883b89e3449036a8e7f88151"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not the unconscionability holding.",
+      "text_sha256": "sha256:97984fe495d0bed7285d9fef4d1b6c0508180feda298e07c4d8612435c1bb525",
+      "idempotency_key": "sha256:d8d54d9a83766b1b1f6ff416ccbd46b00ac904b6bd4f5ffd711117844a2d1375"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not the ruling on the statute, which had gone their way.",
+      "text_sha256": "sha256:3e1186af1a0e724b4b8e32a5cfa56ad3b43b7d7162795a6f4d9fd29545831159",
+      "idempotency_key": "sha256:8b7ae787013a6579b65534a7373cac9bd8064581addf90be8cd6387c9f52ea34"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The timing rule.",
+      "text_sha256": "sha256:242dfe65c7510112f8d6dc9d2840041b43b3108148fbf51549b8bb39cbefd593",
+      "idempotency_key": "sha256:a9be8335d3e18324a0f42ac5b3e6eb6057a2a3e2643e1905b992fed2a3201b25"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "West Virginia had described Washington first.",
+      "text_sha256": "sha256:cf504792a8475eb822f0ce06ed86333296ae1ab4c69dac569aa3859eb14fd713",
+      "idempotency_key": "sha256:f89e374cba71cabf19fb9a93fcf3057532f4d01286add347d2e868602e0357d0"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The state court had to decide whether its public policy was preempted, and to do that it read the Supreme Court's arbitration cases.",
+      "text_sha256": "sha256:0e3d1aae7abf48ca093a4cdcb407cd3b03bab2fe11e4111129ed3872d111b93f",
+      "idempotency_key": "sha256:5dc057c5cfa8fd74a6cc31c3b007f3257147fa7cf3908c260ef92837fa533b1f"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It found them unpersuasive, in language appellate judges do not use about the court above them.",
+      "text_sha256": "sha256:7c0f4a0e65ae83f3d2b6a213990ae65a9d0cf0784505b058c107f644f8976065",
+      "idempotency_key": "sha256:4f60ba8908b90d317fa5c12698f4fee6bee9deaa1ef1d3c6cb0ba6ba5807c034"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It called this Court's interpretation of the Federal Arbitration Act tendentious.",
+      "text_sha256": "sha256:26735b05f9d5f90333e32fee83a6e3f3a1a900f4ef07ebf2dc11ab9dadcafc44",
+      "idempotency_key": "sha256:3a589f69009f6487fb1c795dd661a405cb35241d163130fda1f5715caba03e96"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It called it created from whole cloth.",
+      "text_sha256": "sha256:cd16e974e60785668812596e15d7188d97225b4c31b1307573906e1ddf89545a",
+      "idempotency_key": "sha256:65e9d66ea445527e3726e5a0b5f5bb957ba5aba5104a4d2743bf16c5e9001246"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The sentence behind the first of those words is in Brown One.",
+      "text_sha256": "sha256:008ead69d1ba72f2ffe69ff807658853f3549d67a3951823ff37e7dffbc740ac",
+      "idempotency_key": "sha256:5fc399c57cdd153c86d7895c0bd45b43c879a307a0320f3efcd7df65c35e7700"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "With tendentious reasoning, the United States Supreme Court has stretched the application of the FAA from being a procedural statutory scheme effective only in the federal courts, to being a substantive law that preempts state law in both the federal and state courts.",
+      "text_sha256": "sha256:9fe39bb600f3fef429adff71551c480fe9300ea2eb69b2ebe72e366bb4a17cb0",
+      "idempotency_key": "sha256:ee92f8653c376a112d25eb43dd9dd4fabf6dfe5006c7dfe906cc93ea9bb77720"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Underneath the insult was a theory of the statute, and the state court laid it out.",
+      "text_sha256": "sha256:2be6c43bf9ccbfc2ae161cd1f63a652e100961b6a901f294fbacb180e4cfe5ae",
+      "idempotency_key": "sha256:09d1aceaa2559df99f68b3206b5347166d2ca8b3630657aa3cf61088c4f9b6b0"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The text of the Federal Arbitration Act, and the congressional history at the time of its adoption in 1925, suggested to it that the Act was intended to reverse judicial hostility to arbitration.",
+      "text_sha256": "sha256:9d53879fe707c6ca2cf0f7727973891f38cc376b9305844f6426007054d7ef04",
+      "idempotency_key": "sha256:068ef3f2af0c615483e64591b030383ae03e49555bc0f1ce3f7d9d64f02cc93d"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It was designed, the court said, to allow commercial entities engaged in interstate commerce to enter into arbitration agreements that would be enforced nationwide.",
+      "text_sha256": "sha256:6852bde6eaa6834a44e777099c051bb33db7d083b1ef5282768de37c5faf99a9",
+      "idempotency_key": "sha256:be54f9bb0e3e0d712386d988b579cbb779be39936385a2bb24b8cb167c366df0"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Commercial entities.",
+      "text_sha256": "sha256:cf343c37bb8c2944939bacee770bdc01db41ae043bb58359e9b6a6ca9a8ab791",
+      "idempotency_key": "sha256:aefd33c1ba192f6011bf36150c01893ac5339db3f1eb8482084a1b34375aab96"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Nationwide enforcement.",
+      "text_sha256": "sha256:05394bf7ad3a59ec8daf84df1c48a80f261482cc105a87185b445cdfade5401d",
+      "idempotency_key": "sha256:65f2e9bc734cf60905397a94c660e34ed6f8931c15575e751dd5fcf7c6f09ebb"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then it read the recent decisions and said what it thought they were doing.",
+      "text_sha256": "sha256:ffe0c68f014f4073f9852d0dae2567bd4d550219ff761800f7078217e678ccd1",
+      "idempotency_key": "sha256:5424ee876e92364ceae62449109021f7d04e936bbf6a9750a4f809b0ce66ff26"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Much of the reasoning was tendentious, and intended to promote a particular point of view — namely that arbitration is a panacea for all the woes of litigation and should therefore be given special favor.",
+      "text_sha256": "sha256:1e7eab6b9234b30ab5c5848b06caadf3786c7b19b2645ed4ec4f0235d6928cc1",
+      "idempotency_key": "sha256:0dec54dee579eb086b773d7bff66e743ed0d7734cff895c7dd93eca331e65c68"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A panacea.",
+      "text_sha256": "sha256:1e12323f6437ace3a3734e7ca699f047425e37368777e2b7269b7046ed15936b",
+      "idempotency_key": "sha256:340183477aad85508be0490b6e94f7792ca5d2d8081a1f6159428ed7939bf4c4"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And from that reading, the state court drew the finding it would be reversed for: that the Supreme Court had never extended the Act to arbitration agreements like the ones in these three cases.",
+      "text_sha256": "sha256:969db02103ada95cea0d2be88ae94cf94de0ed46cd6ea7b44fbcf4ea1d3bb439",
+      "idempotency_key": "sha256:262a1b63b267ae67de80d799df6399b6281f807f842bf87ae9bbfb9a307bdc05"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then the conclusion it reached.",
+      "text_sha256": "sha256:a6bc2355f82bc4307cced3189daf7c434d3f2f2f898b507eff5d372c20c923b2",
+      "idempotency_key": "sha256:1adec1c7541152c594b8467a7e49e9ecc49fd908aae38a399694009457560dc3"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Congress did not intend for the FAA to be, in any way, applicable to personal injury or wrongful death suits that only collaterally derive from a written agreement that evidences a transaction affecting interstate commerce.",
+      "text_sha256": "sha256:0e21c0355c2ef6b1b1729e71d12cf2aaae59ff79af7e4cbb259657ab3bc7533a",
+      "idempotency_key": "sha256:00f814e93a4f326bb074809926f146345bc187effe9e489e8c4eec1bfc6bf664"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Collaterally derive.",
+      "text_sha256": "sha256:50459f8781772dea27b28c673955304191bcf0912ecdf542086c81d6e8b40522",
+      "idempotency_key": "sha256:c50dfe8732da959c1954793cc15015baa21c742b9e9d7184cd64568b05010eb4"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A negligence claim is not a claim on the contract.",
+      "text_sha256": "sha256:74905cc15f752751b058fc098426b95e45c6821472fa3615cfa406bbeea1855e",
+      "idempotency_key": "sha256:e106042161c68615a284c6bc1c943d2eae8f13aa87233c1ef789a79181e9c92b"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It arrives later, out of an event nobody contracted about.",
+      "text_sha256": "sha256:771554abfa41787974b62a3cb333a891b4b32254a2400863be1b044812d2cf4f",
+      "idempotency_key": "sha256:8a70a15442fb224aff58b8fea8983cb8f20425eb45280f63bffde10b6292d594"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Supreme Court granted certiorari and decided both cases on February 21, 2012.",
+      "text_sha256": "sha256:310a91705d1b09aa352940729572b768c53d58c7a056b84240a0bf7517a58b2d",
+      "idempotency_key": "sha256:c41c8ccc83844cd0ec01048b187f70109d0a7d554452ffc3c4801a3b5fac6325"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Five pages, per curiam.",
+      "text_sha256": "sha256:76a361269a80977aabd94dbfdb4338a9df34dbb9fb20d4f489785c1920e634f7",
+      "idempotency_key": "sha256:537fcd30ee2b877d8d8e542df54a655444b11162b005fca19fd88cac18154741"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It opened with the rule and left the courtesies out.",
+      "text_sha256": "sha256:85aa809a74dd476fdbb7d358ee3af6c725c7f75a8fa6d6d18b8aaed9d76184f4",
+      "idempotency_key": "sha256:a40b08e1192afd0cd33a94ba5d6eccf8d324d30921567b188e734d42c4ec1478"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "State and federal courts must enforce the Federal Arbitration Act with respect to all arbitration agreements covered by that statute.",
+      "text_sha256": "sha256:d077cb8ca958fdc72081f8c56229bcc70c7183b7b396ac10575d0d8e51c62f16",
+      "idempotency_key": "sha256:c3940795909a90fbfb4350f1e43d9754b9c9a5a40efa4d6444fb26e04008d44f"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Here, the Supreme Court of Appeals of West Virginia, by misreading and disregarding the precedents of this Court interpreting the FAA, did not follow controlling federal law implementing that basic principle.",
+      "text_sha256": "sha256:96cdf56069c42b010ed606715d8b99f080788811302d7bbeb98a167dff1c5fbb",
+      "idempotency_key": "sha256:ea80605e858b02fbb1455eb08378f70bc4480d9cc710c5d5b4d1598cf2ce1589"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Misreading and disregarding.",
+      "text_sha256": "sha256:6010c96c84dfe95284c1f81c3c5520ade055a220e81901870a0337287e90de19",
+      "idempotency_key": "sha256:ee1d00be9f9630fa5a727187f57298558aef96879cd7f31ad1d1aaf3bcbde813"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Two words, and they are not the same accusation.",
+      "text_sha256": "sha256:7c64c07008b9647f142e71d6876969d276ba63b0f1d456855d064fbf8eef422e",
+      "idempotency_key": "sha256:a6d5802c891af9680fbf6841b3d88497538e0ac82fde5f343e618d77f7dddd30"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One is error.",
+      "text_sha256": "sha256:1dcc4f20ac5a0e93f9d1bd6315b12413177df26022a53a012082a91112ef783d",
+      "idempotency_key": "sha256:ea4c7be43e98b64324fb5a8da90c99bcea287f61e26af1173d4e6e92c67133b0"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The other is choice.",
+      "text_sha256": "sha256:7e11c3dcc3e3b626925ba21ecda0827fc908ec3be2ece7b46734a0ef4e7aeed1",
+      "idempotency_key": "sha256:9d40f01ff8bcecb5600e080a0a0cfec02d09b517f51dc3b955a66358e15307bd"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Court then described what the state court had done, in a single sentence.",
+      "text_sha256": "sha256:ac5fcd2531c3cdfcc4dbf3a39674bef1157d64d366165fdd9025f21af4b9e1ab",
+      "idempotency_key": "sha256:28d99a9ce43e2179dea19bfb3e40ed65edc53596942bfa390b7cda020a16231d"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The state court held unenforceable all predispute arbitration agreements that apply to claims alleging personal injury or wrongful death against nursing homes.",
+      "text_sha256": "sha256:8bc443dcb0cc43f783934cfb54acc20a69214f01c61cc94ff9c116e8f88ab01a",
+      "idempotency_key": "sha256:6d6d7fb24fc272bd3281605ec6daaa8eb36a4d1403eec35f1fe05ec9ca44c5be"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "All of them.",
+      "text_sha256": "sha256:e02dd0ab39a485cab361a3f29c1ed887575bd036212015f758debab64c075045",
+      "idempotency_key": "sha256:9d46086efa8353ab464fb7ca567be3f1934ccab215c0060f36bec5c7b085a0bb"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Next, the statute.",
+      "text_sha256": "sha256:94087576703dad1bc27e1712661822bf2b34a508726ba42b6a5491b7ff2811b7",
+      "idempotency_key": "sha256:b05d27def26702edebeb61597fd89207b4f4928abdae5b7f4fd71863e7a813db"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Section 2 of the Federal Arbitration Act, quoted in the opinion: a written provision in a contract evidencing a transaction involving commerce to settle by arbitration a controversy thereafter arising out of such contract or transaction shall be valid, irrevocable, and enforceable, save upon such grounds as exist at law or in equity for the revocation of any contract.",
+      "text_sha256": "sha256:e016d5e6a162723b7bc93c102a7b11275792d760d352f082cc7c650789be3de8",
+      "idempotency_key": "sha256:4ca91268d50a688d4a41706bd93c0d7421152642d7354b4b9ab7d80be8aa7eab"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Valid, irrevocable, and enforceable.",
+      "text_sha256": "sha256:655295f0eb81f567a36b55f65bfc79705a2285efc71a01fefe2b1a1b629ab2bf",
+      "idempotency_key": "sha256:d5c32a1ac7afb8c4a3bdee82238c84041af2f97b1390d54a7122d585dd19b419"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And then, in the same sentence of the statute, an exception that decides everything that follows.",
+      "text_sha256": "sha256:454fbc867e173878c0ede0c290c21becb58553a1c52cdff5039b9d9cc327a150",
+      "idempotency_key": "sha256:2f427b0f0dd72c6eb0487d7612a23532de15118cc947fa9e105c3a747ffbe22c"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Save upon such grounds as exist at law or in equity for the revocation of any contract.",
+      "text_sha256": "sha256:21751960685a012d0ee50b587fd072d8ec2a1cf70e15ecf450def895f5fbccca",
+      "idempotency_key": "sha256:b7b168833fe76935fadf92357c6145e74375399b7683ca62f8631b1735764aed"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Keep the second half.",
+      "text_sha256": "sha256:3b66453bc8f530d7e6c13b8a620622157ed7acb2f75b345b5c8789b80c30c72d",
+      "idempotency_key": "sha256:298b350cdb96196ac99297dc3ce2b49002f051c861218f14294f9ddbae038caf"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It comes back.",
+      "text_sha256": "sha256:67be0cdc8e274b5d92101376a0852db5009e533622a328c04f72f3a4ad024c52",
+      "idempotency_key": "sha256:492f08bdc99fdc166eff2984e61928eedfada17f69a911a460eb7c4c2fc3e4c9"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "On the first half the Court was brief.",
+      "text_sha256": "sha256:a9cb1688108c524285c0ebb6df36677c89adfb7d52a6af0b88cfa91998f40c48",
+      "idempotency_key": "sha256:b6acd81e8cee97539545ccb88e8c9c98e233f81575d20dd1ef2e7a6ffa758c28"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The statute's text includes no exception for personal-injury or wrongful-death claims.",
+      "text_sha256": "sha256:4ffff9fe18ecbb28ca2a8d0e919c14f435c80f9601408e25e0164efc9a71fae4",
+      "idempotency_key": "sha256:c705e1d5f0a6a6e8a887f39af801b3ab5b3a8bf063367c34bab53875a547296f"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Act requires courts to enforce the bargain of the parties to arbitrate — a line from a 1985 decision, Dean Witter Reynolds against Byrd.",
+      "text_sha256": "sha256:f973a133951fa4bf1b8246d2b774956c468d95c2c9fbed37c9f554f42111d056",
+      "idempotency_key": "sha256:fea187f81043f70440d8bb99243e0c7702850118bfcee76cbe5b6828dee9e9ff"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It reflects an emphatic federal policy in favor of arbitral dispute resolution — a line the Court took from one of its own per curiam opinions of 2011, which was itself quoting a decision from 1985.",
+      "text_sha256": "sha256:3483af4d07d0307b4758ded26adbfff23f0600e771aec1ca3771720df8741069",
+      "idempotency_key": "sha256:75bd07838333c26a3d7390516b61c597c906d70dcfd81cdb726c757de8098cc5"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then the precedent that made the answer mechanical.",
+      "text_sha256": "sha256:5e74a23bb6679b68e8e76e460be5447c02088569ba75efaa6d8a3864ca128df6",
+      "idempotency_key": "sha256:fc1e113734f1e37ce08f2ec1716a4b3817ec92012f4a743e9af638db72b32cbd"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "When state law prohibits outright the arbitration of a particular type of claim, the analysis is straightforward: the conflicting rule is displaced by the FAA.",
+      "text_sha256": "sha256:c735c930e3d1dba7f83d7dd85202f5c447e08eb25aece3e62f36cda20ee367e7",
+      "idempotency_key": "sha256:64274cc21a1917952635cb234a455d6f43672a7970407008e36410225435a2f3"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That was AT&T Mobility against Concepcion, decided the previous term.",
+      "text_sha256": "sha256:1279c9d9fcddc7124afde95368b901403cdc0bd479776eceb41667447c978357",
+      "idempotency_key": "sha256:5669e7f34454e1d49316c5349ee0246c19654f20c12a8baeed3686fe7849cd6a"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That rule resolves these cases.",
+      "text_sha256": "sha256:63c63166da9b4ebb7617cfe21b603a5c58ca71711998ca2a72465146a4334be1",
+      "idempotency_key": "sha256:19fd7a2933185bc90256cd4708b0b08d6185c1021e310401dcfe96d16c01ea39"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Four words, and then the application, in the Court's own sentence.",
+      "text_sha256": "sha256:382672be848c3fe04e6f6fee970db8574cfd1479e63576afe70c140d47d926c6",
+      "idempotency_key": "sha256:8e8321762a572403f8f64f8af31a46dde7924114ba67660ea6720665b1f067ea"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "West Virginia's prohibition against predispute agreements to arbitrate personal-injury or wrongful-death claims against nursing homes is a categorical rule prohibiting arbitration of a particular type of claim, and that rule is contrary to the terms and coverage of the FAA.",
+      "text_sha256": "sha256:f79fcf67b8c6a833ac7a53fa6cbd4a641610ab7cd8c03004f592d0ce1784099f",
+      "idempotency_key": "sha256:985aa71599b5826617faea6949e7a5ec8543d2535f01b333af4ffc58b8d9137b"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Court listed four cases in which a state had tried something from the same family and lost.",
+      "text_sha256": "sha256:1b42955fb3f86a74553005e4615f0cc6d7ef57af4ab53bacf340075f4a5a1ded",
+      "idempotency_key": "sha256:0246e812506e3701471569d552b4bf1daa657385aca8696b2229a436df9a5bfb"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Preston against Ferrer, 2008 — a state commissioner given exclusive jurisdiction over an issue the parties had agreed to arbitrate.",
+      "text_sha256": "sha256:c38abadc419b4b0b5b10950e6a47b785704a4e137e0e8138af9c7f82ed077d34",
+      "idempotency_key": "sha256:d3198b81e7be389d934c785884aeba00c257485f97f8b42f6e5669a6e0dcf1bf"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Mastrobuono, 1995 — a state rule requiring judicial resolution of claims involving punitive damages.",
+      "text_sha256": "sha256:9385771415e2ba74cfc0110f0cff9d1c050622694a9736f56d717196f00e6098",
+      "idempotency_key": "sha256:252846b2a2485cd8f57859c028b345cca8903a51559fe2acf46890bd4d6562d4"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Perry against Thomas, 1987 — a state requirement that litigants be provided a judicial forum for wage disputes.",
+      "text_sha256": "sha256:46df465f0b4ff6eac620cc8695b3b4cf8adc6bc03719e3e7421771d9080cd1ca",
+      "idempotency_key": "sha256:ca8ded9b8f7f6856e9ed5fa1189106bde8028dfb2277c1d6702c3e5b5e850670"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Southland against Keating, 1984 — a state investment statute banning arbitration of claims brought under it.",
+      "text_sha256": "sha256:b89c2558a6fe28458199feda687a572501da7e6c0b23bb987a7cbc0272b9fe6b",
+      "idempotency_key": "sha256:6213d75e463cd61d945bafae8540f406a6ece0760b5e802d3767570011b9be5c"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Preempted.",
+      "text_sha256": "sha256:9adfd40e64ff32a7572e2124726ece66727caf2c8551f216360f4d3ccd86ba70",
+      "idempotency_key": "sha256:cf59c2077393f7a43bebc1c2184bd442446be6d9dc26c8b42fbadabcf60002d1"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Preempted.",
+      "text_sha256": "sha256:9adfd40e64ff32a7572e2124726ece66727caf2c8551f216360f4d3ccd86ba70",
+      "idempotency_key": "sha256:cb87940150783eac0ff147301411031c3025f9fb7b14a3fa783f809f58a88d06"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Preempted.",
+      "text_sha256": "sha256:9adfd40e64ff32a7572e2124726ece66727caf2c8551f216360f4d3ccd86ba70",
+      "idempotency_key": "sha256:a71bd688548a40d0dd31a9486f29ec995f6245ecadd5a17afc5740bf06314b1e"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Preempted.",
+      "text_sha256": "sha256:9adfd40e64ff32a7572e2124726ece66727caf2c8551f216360f4d3ccd86ba70",
+      "idempotency_key": "sha256:1150860b66082db57048110cea67fa0b494e8b12dda42be229fc868396fae90d"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "To the language about tendentious reasoning, one sentence.",
+      "text_sha256": "sha256:f3f2502233d464bf37938cfb5a00ea2b4862af2a17cf770ae520dbf817d4a588",
+      "idempotency_key": "sha256:c73a37ebfa33365e2b35dd9cb9c5050b5c11f055a0f10b95dc3119c3ff90807e"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The West Virginia court's interpretation of the FAA was both incorrect and inconsistent with clear instruction in the precedents of this Court.",
+      "text_sha256": "sha256:545b4994df2483d5fb5b524e984aae92a6efb42f85468a34f0db08bfe3b0ab9b",
+      "idempotency_key": "sha256:e0a41292a9a8bff908f3fee1345b5315697e83a1553e7f639e4eb3ddb6812c34"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then the constitutional point, which is the shortest passage in the opinion and the largest.",
+      "text_sha256": "sha256:86bd156d5a9d5f8f209e7ec355073b77f20af5fd9604ca99562c6a2273ddda8e",
+      "idempotency_key": "sha256:314227f4748f60f2a9eae8ac93ae476fcd7d5957f9b192d70a0ab3c92f302a54"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "When this Court has fulfilled its duty to interpret federal law, a state court may not contradict or fail to implement the rule so established.",
+      "text_sha256": "sha256:eaf7218250d6e4e84b6c98c2be68110368af277636d1d60e89485c2094549664",
+      "idempotency_key": "sha256:1b707c359c8b8483b4771ad64f0bd588e59a226b50f75ad3eddb8e60faa34738"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The citation is the Supremacy Clause.",
+      "text_sha256": "sha256:3c1c72e4e368f3ebeaa16ca9c1084472147995b5b10d0e4420a0e78d9a956011",
+      "idempotency_key": "sha256:13faa4cd9ec041a412cb844110d3636edc138011b9c24b3cce9bf8c814bf19fd"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The decision of the State Supreme Court of Appeals must be vacated.",
+      "text_sha256": "sha256:5d5c0a4a1869dfed451820a96754d7b4c63a51c5e3844643e7f0fe964654f776",
+      "idempotency_key": "sha256:4bae84a9f2fa53e81a8df47a03faa79619637c6e7355cc709548369208b9ec68"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "To vacate a judgment is to wipe it out and send the case back.",
+      "text_sha256": "sha256:167d2eede9287c186e249bc6f31d2f93c1d7be554503c8429c3533822e75e2a4",
+      "idempotency_key": "sha256:5e3c413435e7d4304d2fb2e248175533bdc41b841f2f3deffc3a67e4f7e4208f"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is not a ruling that the other side wins.",
+      "text_sha256": "sha256:57e1f7d6406cc844b5d92465c5943622e9b28498b35fc4e40159ef601eb7379a",
+      "idempotency_key": "sha256:6901fdc20ec23b53b826b228cffeb163b5ed3d32b287f9d347f719e1e23038de"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And here the Supreme Court was unusually explicit about how much it was leaving undone, because it wrote a second part.",
+      "text_sha256": "sha256:fd083756f49de30402d8037c1e108f040b635bd13e9ceb1399e9a0539740c7db",
+      "idempotency_key": "sha256:58ecc97fd517e7914aa14418233c56feb285d783573b2d138598e1280776ed2f"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Part Two is one page long.",
+      "text_sha256": "sha256:33baf46cd31b5f17cb714d5a3aa706ebabb4c6a2891ec546057a4eda8d88e524",
+      "idempotency_key": "sha256:8c4c154f95b2a4678c8722fafae0271f6f999fe00a372d87d437982594b05d85"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It begins with the holding nobody had appealed.",
+      "text_sha256": "sha256:4c88b7ce87530e611179fd2167fb0ec797da608288813a4584a1efcf5f39e1d0",
+      "idempotency_key": "sha256:488adf189d112978fe3b5aaf29e443b6c73c81f5f0b413a1b23b0e61a9948da7"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The West Virginia court proposed an alternative holding that the particular arbitration clauses in Brown's case and Taylor's case were unconscionable.",
+      "text_sha256": "sha256:a77fea7129eabe22eed02efb0342657e22ba140644bb97c496560735d86ecd3e",
+      "idempotency_key": "sha256:b6861cc473e2f130a838d3e372eccb9205e4d37c038e3b9fd90f004a6c081191"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "As to Marchio, the Supreme Court added a note inside its own sentence: the state court had not addressed the question whether the arbitration agreement in Marchio's case is unenforceable for reasons other than public policy.",
+      "text_sha256": "sha256:76fb19f3af58baaec4ac8bf0fd43abad804785cb9b5792b5bde70e9686e88c67",
+      "idempotency_key": "sha256:366be30d2355b0a1d4a2bd5586ea14f919b46a70e04ef0cd13b457b28d221e93"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Two of the three papers had been condemned twice — once by a categorical rule, once by ordinary contract law.",
+      "text_sha256": "sha256:c8ebe207bf2fcaab52aca255a9bce615c50bbf5508d4666507f6f3e1aa7670b8",
+      "idempotency_key": "sha256:2a90c406899cd0efa3384d8151bad00ec33b27d4bffb864a835e4481fcb95098"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The third had been condemned once, on the categorical rule alone, and examined on no other ground at all.",
+      "text_sha256": "sha256:27920e3fc4abfc7e58c8d1ed4cdfcf3b16b9f160799b70496df59d25c1d83bbc",
+      "idempotency_key": "sha256:d9d02952bd4d976fd63894a8dd1dda0acdf2c3b90b9cbcbf76379e71bf8b2074"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Court's problem with the alternative holding was contamination.",
+      "text_sha256": "sha256:ce8126b865b74d382673602c9fdb5037b855ce682a5e79d2baf07b785d1fcbc1",
+      "idempotency_key": "sha256:e7caa500b0b59e5eab667cf30d8c65ca70c4d2912e8ebf0c6d64739ef045ba6f"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is unclear, however, to what degree the state court's alternative holding was influenced by the invalid, categorical rule discussed above, the rule against predispute arbitration agreements.",
+      "text_sha256": "sha256:f46d056fd1844147ed21fe86459d6dcb2bcff70c174cb69c8b3529e53a01c596",
+      "idempotency_key": "sha256:6af51bb093ad5a327bdbcd1ab5260af82bee062a00830db5ed76c0812d2b2985"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And it produced the example.",
+      "text_sha256": "sha256:e10288797f82aea9f6ba4611da4bbef390d10c24bbb339073f513ab2110ca154",
+      "idempotency_key": "sha256:612bf7fa3ece2339fa939430f2ac7727a2a1d44e9be803e0f5bcd49526596cc2"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In its discussion of the alternative holding, the state court had found the arbitration clauses unconscionable in part because a predispute arbitration agreement of this kind clearly violates public policy.",
+      "text_sha256": "sha256:344cb625666c3eb9e1f54ce9f7e127bb7fac97ae028d56bcecc06b588b004c5e",
+      "idempotency_key": "sha256:e3754b588c83027f55b300aea77a9a787fc038d4143dc8c356a588a8f1de9814"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There it was, sitting in the middle of the contract analysis: the rule that had just been struck out, doing work inside the finding that was supposed to stand without it.",
+      "text_sha256": "sha256:f4ea1e5c245cff025a2b7adeb337ade4f34001fe8e98005fd8a8bd58db6e948c",
+      "idempotency_key": "sha256:7091ac941a06953de30946f0505a56f58c83ce711b77eb4036752709afba2555"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So, the instruction.",
+      "text_sha256": "sha256:8413bf3cb370adeb6f47e83f75211ae2dd71a37c9f372282e083d2a9544b3ad0",
+      "idempotency_key": "sha256:fb7c50fc84aa08a1c8b3154d92bd19038fcc371782f8b925c4f5b6d0a5150ee2"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On remand, the West Virginia court must consider whether, absent that general public policy, the arbitration clauses in Brown's case and Taylor's case are unenforceable under state common law principles that are not specific to arbitration and pre-empted by the FAA.",
+      "text_sha256": "sha256:dc5f1fec1e7695fb5105b48f80a5282a118fd2d41f45b87455bce611daf82fa3",
+      "idempotency_key": "sha256:bc422ddd3ed708bb90cab9710e12f3b29b7270670e9b8d1d5b4fa32f13cf90ca"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The last clause is the savings clause from section 2, back again.",
+      "text_sha256": "sha256:10d9a0a222e6bb10fe37caf8cd6708690243c74ef8a74511a675bc9229e9fbc5",
+      "idempotency_key": "sha256:68549fbaaf765d193766bd6340b2026a098c3691087bb56948412f0937a1b4b3"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A state may not write a rule that says: this type of claim does not go to arbitration.",
+      "text_sha256": "sha256:4eba137950498f12c3ab5d582ac72dbbf476f5510a8fd9d8a12d7a4e881d1ea0",
+      "idempotency_key": "sha256:aec244723e70e92eb03b934020cea61567ea24f4c33adccfb09299658d5c6de1"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is what West Virginia had written, and that is what fell.",
+      "text_sha256": "sha256:7132a2d804806ab48b6194a3c90aac21cb10ea138d614024e62d6d4a7d3ecab3",
+      "idempotency_key": "sha256:f3d5ef4f993a146064baab5856cd31635a248a1869aa821691a53c869a5aed14"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A state may say: this contract is unconscionable, and we would say so of any contract with these features, whether or not the word arbitration ever appeared in it.",
+      "text_sha256": "sha256:3936ba5542fa2398cb99b43fc39800f61935042be929387a2bb676c5ba76386c",
+      "idempotency_key": "sha256:786924fef57e8efb6b26375842ec1621ea8862a5f36b03e620adc756b6d3e727"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is a ground that exists at law or in equity for the revocation of any contract, and the federal statute preserves it in terms.",
+      "text_sha256": "sha256:5f739920903398b19e929a6550b84111f8def8bee1f1629bf31630f9eda61e79",
+      "idempotency_key": "sha256:18e87cbdd94c27873a3627cd8f111efb233347d29b129750cea49db3937daacb"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then the disposition.",
+      "text_sha256": "sha256:d994e230815b0fc35d66021ae3a370ba29a0ede652d88daaa1269de37536c35f",
+      "idempotency_key": "sha256:e7ae3eb8abf79192b9b00ab9608754e68ac3e2de03fefb3cda04173e6be836ec"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The petition for certiorari is granted.",
+      "text_sha256": "sha256:b146606f9a5a60cab5201e9c1990e9919375db609cbed476fb4a1a69b0b350f3",
+      "idempotency_key": "sha256:d9f1d487a9e36281ab033db8b93e5a55671829e960a3656cfea79026b40544e5"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The judgment of the Supreme Court of Appeals of West Virginia is vacated, and the cases are remanded for proceedings not inconsistent with this opinion.",
+      "text_sha256": "sha256:26bd0926b5c66d5af338c6c7e98547a6f1bf6053153ae70a6dae97badae6e85b",
+      "idempotency_key": "sha256:72cadf95d8d60e7cf958c83e39e6e925b786f2111a24ef17e578aa57f9a4babd"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Supreme Court of the United States did not hold that any of these three arbitration clauses was valid.",
+      "text_sha256": "sha256:7d132a1489a8d8fd407a4982f23ccc44ae874d3538ec1a265ef435c59edeba7f",
+      "idempotency_key": "sha256:af680e2c26d085276e6f6cffbd8cdff45a15655463980345662580878a060338"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It did not order anyone to arbitrate anything.",
+      "text_sha256": "sha256:dcec28e371c60c58fa8d5b7f54544b824c93fbb5300ae28e4079a322a6bc1439",
+      "idempotency_key": "sha256:abc084d356884b567cf75e4984d25f444d27beebd4f941f11cbf7e335248323c"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It did not decide whether these families could sue, and it did not decide whether the papers they were holding meant what the nursing homes said they meant.",
+      "text_sha256": "sha256:e48179bcda42c11863e45c6feebda1bf4ba14a0b821e009b1ae85ca14543524a",
+      "idempotency_key": "sha256:4644167524a9ffdbbff7180a12703a61f3818ab41e39b69216f954aff43fd4e6"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It held that one rule West Virginia had invented was preempted, and that a judgment resting on that rule could not stand.",
+      "text_sha256": "sha256:51e980c5c5cf3eece8f6be01a5d2db1fed2efa0de81291ad93f0e5d63a1c0ceb",
+      "idempotency_key": "sha256:169ec388bea3f507f25177fd143ca816cefaa75af4de51f30d241ce3eb312f48"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Everything else went back.",
+      "text_sha256": "sha256:a7f7e65db40ce67aea7f6478a05db1bda78debabb2af60bc1a25d4d41a054ded",
+      "idempotency_key": "sha256:b392c6855661c752f63a966ee315abefb2cffe2fbac3478039cc1340ba746ba6"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It also left untouched a question the record does not answer: whether a relative's signature on an admission form can bind a patient, or a patient's estate, at all.",
+      "text_sha256": "sha256:ae7d146d23144bb3693f45c54ff6b75da65be78f708e17148d9ac0f3a59b98e2",
+      "idempotency_key": "sha256:8d4f52b3b607002995817fe868cfd9b867e9f8e6781d24902ad3c051f8b315b3"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That question was raised in the litigation.",
+      "text_sha256": "sha256:727ac083bd1efab8d5445a96e1ae71f47985aa3bb58b65edbae9ffe9732310e8",
+      "idempotency_key": "sha256:34795e25295a43adb22c2bc25c45aec6a56f8ec0cd2e68988e71d28b44c57d13"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is in the file.",
+      "text_sha256": "sha256:8e74eef596c185207d082b2dfc6a531c1b922643f82f3782ce546ba252bc36da",
+      "idempotency_key": "sha256:1945d3cc8585130cf7cf041c34d41c9f6c305f48828fb269f81a4fa2c7d43c66"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The five pages do not mention it.",
+      "text_sha256": "sha256:10f92c067b79db924e564fa486a396ae4692d5cc0b434ee64d20d9f05abe3c12",
+      "idempotency_key": "sha256:b895cdd700ea28a6f56e30b3df3ac46651d056dedb3b0d621ff4b54c7610bcc0"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the opinion says nothing whatever about a contract that arbitrates a death claim while leaving a debt claim in a courthouse.",
+      "text_sha256": "sha256:89c3b8621c48edbb3d4446522027bc994ae600a3a12f795aff551f823d857a63",
+      "idempotency_key": "sha256:f50df4c44238a861c413dfcb58e341ccbb0bb565b88d9daa792b8e3c903b95c2"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That clause was in front of the Court.",
+      "text_sha256": "sha256:253df80c340cc744bb1f00ab14b2ea3cae288b2b6b764f0e4388f02bf51e04d6",
+      "idempotency_key": "sha256:1bdedfa5f5306b264f0fc0af47590a39f910f3eb6237b06314c4cbec09b8ec9a"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is quoted in the Court's own recitation of the facts.",
+      "text_sha256": "sha256:919222e421a9abe25b19cbf1f4062d8cd04b1d18dc77e3ed471e44c662249fc6",
+      "idempotency_key": "sha256:391338e260c8b18daca100361e18544c5c79867acb5b6305e1790aea2de43e23"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It was not what the defendants had challenged.",
+      "text_sha256": "sha256:a46b9f6a9e51560920a97cf40c637f9f0062806db6cb01e0bc15d3b3bb792d1c",
+      "idempotency_key": "sha256:a4424bde08c5645c96dbe40c223b525524f85e0d9a174092a3ab41a2449d6cb7"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "This was a per curiam opinion.",
+      "text_sha256": "sha256:60127e2023958fe2c2e5914cbd2be4eb565238a42605df8748745691728223fc",
+      "idempotency_key": "sha256:8e3ff01a74ee016f0a88951bcbbd36820fb78ab4ca1d0140995dfdcf7f7c0845"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Per curiam means by the court.",
+      "text_sha256": "sha256:49420016bbbde5c2dc48d34811cc5f40d48101fb9b5f2d0002365a1df05121d8",
+      "idempotency_key": "sha256:e4c05eb29da25fc6b2b1c0fae0ca009c42be0407b385b5acfab6855f06a11ff0"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There is no author, no reported vote, and no separate writing attached to the text.",
+      "text_sha256": "sha256:a29204009cd35445629bb87f27ed7f9313921e0b5257c05bd34c300b7213800d",
+      "idempotency_key": "sha256:34680eef8dec530a53abe7c0f8c3b8856e09e78871f8675c83e999d9826c6499"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is not a synonym for unanimous, and nobody should be told which Justices stood behind it, because the document does not say.",
+      "text_sha256": "sha256:ce97d4c5b1163d7653ef060162d8f32917d8c5b4e2f67b72f62e4eb44f19d8a3",
+      "idempotency_key": "sha256:15db5fad6031ce40e2259bed4a58eb0f5f9a1fcc7aff645fa019bef8ac556011"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So the file went back to Charleston with a mandate in it, and an unanswered question underneath the mandate.",
+      "text_sha256": "sha256:ba2e84aeb8e00cf5acc32c0172e0522dc46599e186c0b1bdd7dcbfaf31781764",
+      "idempotency_key": "sha256:96e6dbb76ac8bc8c41744927d55303d5c955a671d9774504f08b0c321a6b1f16"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Supreme Court of Appeals of West Virginia did not treat that as a formality.",
+      "text_sha256": "sha256:c6633c34823ec0550666c10297c449f61ce7bb854c62b4337c604646769ca27f",
+      "idempotency_key": "sha256:3cd23ee9157fdab91b963c4fbc2b7419dfdd6b1d03b9a93a7e79cc799905f0fd"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In an order dated April 3, 2012, it directed the parties to submit additional briefs and arguments.",
+      "text_sha256": "sha256:20afae10636c85469a2e5528fb2141cdbe49ae6371008c49bbe5814258033d6d",
+      "idempotency_key": "sha256:ab860217b9b7784efda27e5b76ba691050a43446807c9223377afd39c80ac080"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It heard the cases again.",
+      "text_sha256": "sha256:8b7761a4444fc438e9bf64f076f4b5168fd2cf4f3faa332cebe2ebbe579ed097",
+      "idempotency_key": "sha256:7008ebf5e5aaad90ecc0d874a06f08cfaebf534fc7984c1e6e2720d50b8560a9"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "At that rehearing, counsel for the plaintiffs argued that because the trial courts had never permitted the parties to develop evidence on unconscionability, parties challenging an arbitration clause must have a right to conduct discovery.",
+      "text_sha256": "sha256:424a736eb2a2d96f17f92ca8ff85f19552b7d74a920ac266e529c89ecf064af4",
+      "idempotency_key": "sha256:d1268fe019891c77d9982a1af27ffb765cad096772117ccc05bee2405a4629f3"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Counsel for Marmet Health Care Center argued the reverse.",
+      "text_sha256": "sha256:29dff288742f54d5df45800071c0df2253eee2f9f213b61a6f18e55953fb77a1",
+      "idempotency_key": "sha256:67620454c2a43dbd5ff58958799521a0ec7b3cb53e0e9067c82e15e69a7b3518"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Brown One had been wrong, they said, because there was insufficient evidence in the record to support a finding that the arbitration clause was unconscionable.",
+      "text_sha256": "sha256:8732e2d382a13dc454af09753f9fe483ac78486845c4e8965178435fe42b39d1",
+      "idempotency_key": "sha256:52b4ef956838cdc397f65c2be5201d9c51adb0a330203477ff16c46b9c8a2962"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Both sides, in other words, were now arguing about an empty file.",
+      "text_sha256": "sha256:967cac3257ad9a400c3b268f792219602beb4440201835cd7a34307cfa7ff6b8",
+      "idempotency_key": "sha256:9c799a94b70e57229062536c997cf433c87b92f3d983cfdb999baef0d5842cc8"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The cases were submitted on June 6, 2012.",
+      "text_sha256": "sha256:f160124669bba4fbb9e77d0603175c327603c8b6e43740d87de35a2431140f06",
+      "idempotency_key": "sha256:f5772b75210397b38d63efca3dab675915e0782b57fb14c2c685bf2c78739307"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The opinion came down seven days later.",
+      "text_sha256": "sha256:e54dd8c9192a163748de6a4e63505a18063c13746a2cdcab7be2029ad975d71f",
+      "idempotency_key": "sha256:e439c1de1754b64999feb32f9029fcafb745358d51fdb34e33019585c1b06026"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "June 13, 2012.",
+      "text_sha256": "sha256:bbe298a51a8595ba7b4d61c95ae1fb83bdb2433b3eb86f9e7518833baf9506d8",
+      "idempotency_key": "sha256:7849c35e91d22cb48544841fd88c241573d06eb8027a2bb60f6b331e93e670ec"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Ketchum, Chief Justice, writing for the Supreme Court of Appeals of West Virginia, in the second opinion — the one that followed Brown One.",
+      "text_sha256": "sha256:90379c1b9013dcd73b43fd5a20146ec1125c23a91e8e74de626f9ce1fa70e819",
+      "idempotency_key": "sha256:056d2713a4eb53400952b930c5f14de06e95132e192e35ecaabbced0b03f0659"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The first move is obedience, and it is exact.",
+      "text_sha256": "sha256:33650414a93e3b7232575ff978955dd3b870884ed53a4946ae6e79e9e964d3c3",
+      "idempotency_key": "sha256:5470fcbc7ce2fd4164d4b7df2d60907330fb7fc49dc84c10ff9bf63dfd9a29f7"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In accordance with the Supreme Court's mandate, we overrule Syllabus Point 21 of Brown One.",
+      "text_sha256": "sha256:310ea14cfdc8ba9a2e8161490beeff3ba26c4f7045bfd9364593c632b0c109de",
+      "idempotency_key": "sha256:182db9890f4b8cfba1041062ffd1bcfc6dc6050a1dda0facc8944e85e28f9b39"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Overrule.",
+      "text_sha256": "sha256:a30ca685451fecb8f6bed26994f8ab7e4c27ee5066179b877b84570eb4fea107",
+      "idempotency_key": "sha256:95db454110996c10d6baddf02e57b247261108c00177cc4dcb0bd652a62335df"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not vacate, not modify, not distinguish.",
+      "text_sha256": "sha256:5b921f3a999d68cbfc5fe61a4f614cdcb6d6d04ce77c72a57995284bcf2e9df7",
+      "idempotency_key": "sha256:58c1ea7f6d85941d607e92745ab7fd021a0a604ec5206f1dc996a494d8fdd6c3"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The holding that had gone to Washington was taken out of West Virginia law by the court that had written it.",
+      "text_sha256": "sha256:8e016ea0d4a7732b5436cc4bd9762689812f6a301c298de3629435138dad8c24",
+      "idempotency_key": "sha256:4b314dedf09dc14abd5a5665030d5f96a7b36b2dd1ca1c502f57173ae1f4e2a4"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The next sentence, in the same paragraph:",
+      "text_sha256": "sha256:ec6b960486404b8351a45d553a4fcb420e785a265e94e43b16fbcadf9b6d5b00",
+      "idempotency_key": "sha256:187c4850ff0ea736a35906e20a97c729026b0024d32ed3110d6bc7246ebaf3e2"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "We otherwise find that the Supreme Court's decision does not counsel us to alter our original analysis of West Virginia's common law of contracts.",
+      "text_sha256": "sha256:ed1d58180c17a426f25a0ecee5a599a21710fcb1642362eee31210cc5f6baa1d",
+      "idempotency_key": "sha256:fb735a4b361a49d6a54aae474a17b1e89f92d769588002f282a6c41819542e7e"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then, plainly: we otherwise reaffirm all of our discussion and holdings in Brown One.",
+      "text_sha256": "sha256:eb0cf625c42775e4ab84aee211dc01f12f65e715854a26dbf7ba98d1187309ca",
+      "idempotency_key": "sha256:963d75c4b9bd67c9eb6ab9a0376078969ef5dd849f2ef5e995537fb5df3a3d54"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And in the next paragraph: however, in light of the parties' additional briefs and arguments, we modify our conclusions in Brown One.",
+      "text_sha256": "sha256:c0aa6979726f15e31da7a021ebdb3775ec16e5b80515e5f601fe5a7a83efb09b",
+      "idempotency_key": "sha256:c3dba937886d0b96458569cde0a782b57fb02c06d8f49684bb6d1a8201362385"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Both sentences are in the same opinion.",
+      "text_sha256": "sha256:c3c8b3a82c08f2995c503b5036e4f3e1f0a285d49495e86dbad9c1f7a141d856",
+      "idempotency_key": "sha256:197e342838202ff8db72c3920d7d25699b6a91522a17da857c9c2bfdbf46f0a6"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The state court had noticed something about the five pages.",
+      "text_sha256": "sha256:52a0f43c1003aea3c043c27c005e4a8b4b06396a1f77824b2a3d71e9a632359e",
+      "idempotency_key": "sha256:f5ef1ff10b9c276b4e9c1558a0c5119c90d0990cc4050951ed8a5e1e1942e253"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Supreme Court's opinion did not discuss any other portion of Brown One, aside from Syllabus Point 21 and its accompanying text.",
+      "text_sha256": "sha256:a18c0887ebabc1193bc9763df22d41990b81766678078d5b7d4ff51b6907a9a4",
+      "idempotency_key": "sha256:f0d3930ef981505d6654108e3901294a5427cfc82a2d74e03a525c10e109a2c6"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "One holding out of three had been reversed.",
+      "text_sha256": "sha256:15ae93c87c146a4e99662d7d07d789776c00e9efc64e078d395895f9e66e62ef",
+      "idempotency_key": "sha256:2fda2944401a41763b4c4998e09895b5ca0f867e2b7ca8e70a35db518b7a1f17"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The other two were untouched, and the court that wrote them declined to read silence as defeat.",
+      "text_sha256": "sha256:7ddaf1d058a08248efa2b4875d90066d47bc29fc3c6f049b4a93523b9de318f9",
+      "idempotency_key": "sha256:00cb35ca6551e8a208ac305a752a3df05cce1637b635872353c6d67fa97cf15c"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the first of them: the parties have not challenged our holding in Syllabus Point 11 of Brown One regarding the preemption of section 15(c) by section 2 of the FAA, and we need not revisit it.",
+      "text_sha256": "sha256:4c9f4ababe31cf88d25f089f5b05942c72fa623413158e78e96bb8272120f162",
+      "idempotency_key": "sha256:ca525eda6d4c7c3421045622c8c7eaf3c8e8a7b7bc2a51426164cda545a92309"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It then described the doctrine it was keeping, in the exact vocabulary the mandate had used.",
+      "text_sha256": "sha256:55ab25434bc1226411ecab3d67d75a1daaa6844896817a62fad0df7258f1e3bc",
+      "idempotency_key": "sha256:20fe0514f33b6ec63b6e919a819a037aaf20b456e2fea64fdd2e3b4ab7f598ae"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The doctrine of unconscionability that we explicated in Brown One is a general, state, common-law, contract-law principle that is not specific to arbitration, and does not implicate the FAA.",
+      "text_sha256": "sha256:e267d521577c77225b77f75126296fa70be66aac62c57ceb505e37cc1fa41e70",
+      "idempotency_key": "sha256:db8e6479aaf11cd49b96e30355ac7820ee33c01e633db8a4155798f834b696ce"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And the court did not take back the language that had got it reversed.",
+      "text_sha256": "sha256:200b0b6d7bfbaee8d5cb87e0adf92e229ac309fe2e6eacd569a624a4665576d1",
+      "idempotency_key": "sha256:bc1eebd74e35c40ff0133248a76f98d197e13b5798537b3551edf68b2bd1d6bf"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Here is how it described what had happened to it.",
+      "text_sha256": "sha256:4f259bfa2898550428613591e07e31378309e6a53c91d65c4862389964cc0aa9",
+      "idempotency_key": "sha256:23cd1cde8e4679ede2099c5dcba81d02d0dc266632b609af579c351618c7928f"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Supreme Court — without elucidating how and why the FAA applies to negligence actions that arise subsequently and only incidentally to a contract containing an arbitration clause — summarily concluded that the holding was a categorical rule contrary to the terms and coverage of the FAA.",
+      "text_sha256": "sha256:e21bd8b53c678133e1a432d408439734aacd401ce75df9a9d94357bb31d81b83",
+      "idempotency_key": "sha256:21abda02d7af4aab6790c155631946b7c7a22324716e33e3bf298f817f5d1069"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Summarily.",
+      "text_sha256": "sha256:0425cbcfc233742ec5a15e814d6c18d9d9410bbee96f6cbb3b0529ba43f11f8e",
+      "idempotency_key": "sha256:b16c40ca68fa1e29d56121872edcc293fc02b91d43382de067fb144271d83e4d"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Without elucidating how and why.",
+      "text_sha256": "sha256:06b0e6a080100c3ef8912c6b8de581337f26f579e50cce9d38d2017a79508600",
+      "idempotency_key": "sha256:3a07f906a2dd88e7aafff60920d2693379e764cab925626a2f3151514145a4f1"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is a court accepting a result while declining to accept the reasoning, in the very document it was ordered to write.",
+      "text_sha256": "sha256:5c13857c14f5408883884e108218ecc62670126a5b31b3ff4d08c228589d244b",
+      "idempotency_key": "sha256:88f24a3790547f0c6ecc5cc40ffcba60f8ae6948f679833b1636f4bca6a43a6b"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What it kept was the body of contract law it had assembled in 2011 — the adhesion analysis, the sliding scale, the whole apparatus.",
+      "text_sha256": "sha256:4caf68d0eae52871d745d9e3213541e4e8fc99ffa8caefe3682a8ac35a395c76",
+      "idempotency_key": "sha256:b42068259fd7a369e5a965b4ebc53d9826fabd8ceab1e0e78eb9e2244bcfc6f9"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the sliding scale, in the words it reaffirmed: a contract term is unenforceable if it is both procedurally and substantively unconscionable, but both need not be present to the same degree.",
+      "text_sha256": "sha256:0a6ea2a6608445ee2793a307fadb1c06a05e63959b8a2a34fd7c2dab2197f56b",
+      "idempotency_key": "sha256:5a7e6fb705ce4bf2482f6e3dac9312e663c3533a76ea6fb09d65248ffb7a450a"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The more substantively oppressive the contract term, the less evidence of procedural unconscionability is required to come to the conclusion that the clause is unenforceable, and vice versa.",
+      "text_sha256": "sha256:ee164052ecfcbb75ff125bea3c5c295e0923974a2342addd1bf6ed12f6eef4e6",
+      "idempotency_key": "sha256:2a7f5412016564691f44556403cc800c2fbd313a5dba48050bb6136d9fc291f1"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the substance of a term, this is the sentence it kept.",
+      "text_sha256": "sha256:15470f0cf39baed74ef16b0c36265af4eab150b2f8d5e625105bb87bcc10d12b",
+      "idempotency_key": "sha256:5c6dac1f9f1dc89b37ddbeb88f42b5a5580007a7bf15761ca391778e5245d841"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Substantive unconscionability may manifest itself in the form of an agreement requiring arbitration only for the claims of the weaker party.",
+      "text_sha256": "sha256:a877a9b54eadf4ac6e0fb8c03fe4e127190407c886136bdfe5ff35fd80f9a6b9",
+      "idempotency_key": "sha256:04925589cb561b5c7c8cdfa9271f2c342bd4228f30e3774d06c1006b8da6ac08"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "But a choice of forums for the claims of the stronger party.",
+      "text_sha256": "sha256:e67864149684ef489caabd493a3face9cb5cdef7528c1ad866381650831cbbae",
+      "idempotency_key": "sha256:b574b9b5b63c4e70513e4e75c04056f735e4e0f73493fe384e1f9ea82971fda9"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Agreements to arbitrate, the court wrote, must contain at least a modicum of bilaterality to avoid unconscionability.",
+      "text_sha256": "sha256:b854d11ff4a703732536b63da085e6695ab5131e8df69d663aa82355b266b506",
+      "idempotency_key": "sha256:b712e9dff57b78c169921bc4b4fa3837389e97ea541825106e84f4750f94c741"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The West Virginia court did not apply that doctrine to that clause in this opinion.",
+      "text_sha256": "sha256:d9f56c2b0624294209aa6f3dca7671a9f0750ad0c598f4055e9993c2364d54ad",
+      "idempotency_key": "sha256:9c3969fec9d5ceac8e117c61edb010ca3782ee380dbab4fb4e1e77f15bdc40fe"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It could not, and it said why.",
+      "text_sha256": "sha256:e05eec73f36652520e48186a79ed3df8797a6ce534a789ce399e8e9ab80206ab",
+      "idempotency_key": "sha256:a8dca062b1ac36bddd8a7355d0338d5eee25f2e44873d096931e98edd7a8df0f"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It had a sentence of the Supreme Court's own to lean on.",
+      "text_sha256": "sha256:a5562de74374c83bdfde25d15fb59187c90fb67c02c9a4ad1551fefaec0f7d22",
+      "idempotency_key": "sha256:2a15ca3d9f78be2731b84c97ed73d87256c2fb2f381c41731df91916e37ed039"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Claims of coercion, fraud, or unequal bargaining power in the formation of an arbitration agreement are, that Court has said, best left for resolution in specific cases.",
+      "text_sha256": "sha256:54061a24d8c14cea103505b6c088d7bdfcc10c7f69b42e008501049e2e171e05",
+      "idempotency_key": "sha256:3e9b6355f01e305bed68edf0e2387ad2e113913cd17260e372ac906ad2a5151e"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Given that position, the state court wrote, further development of the factual record by the parties is proper.",
+      "text_sha256": "sha256:93b2ad4ae024e856a9425fbb5efba7c21bb7277235f6b7f91d46c7fb2d007502",
+      "idempotency_key": "sha256:86954dfab80616de9d224d2ad23141a581e80781d1ec308a327b50a00a15944d"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then its own account of the two records in front of it.",
+      "text_sha256": "sha256:afea0c4cf39cb079d90e58d6fd33444d82116f02864f15d5165a32ebc055f61a",
+      "idempotency_key": "sha256:a42f7543aefa2f6312113eeeae7ddb48cef120df850a73710e151a76f1b9b18e"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The circuit court's order in Brown's case is devoid of any findings of fact or conclusions of law on the question of unconscionability.",
+      "text_sha256": "sha256:700a4bce860debe9a834384c3489a233f43baa4dd9b363014fbd82d355796f05",
+      "idempotency_key": "sha256:e0536f8f4163f2209b4ce0e45c1f54d19d654920ca2fb83f02f0ee58f30d718c"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Taylor's order had some findings of fact, but that court had never comprehensively analysed the question under the guidelines the state court laid down in 2011.",
+      "text_sha256": "sha256:89c7b3d673e672048a440219b9aa7412112c04eeec1cb750a734736e65c50437",
+      "idempotency_key": "sha256:e191dc59992c5d90e07779da1813cc1c18f377b7b6378d7803f87d17db7889fe"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There was no evidence to weigh, because nobody had been permitted to take any.",
+      "text_sha256": "sha256:878ea24ade427c43a0b534c8746c4992e385a8c3095c840ed0730ca8dd0cf7cd",
+      "idempotency_key": "sha256:f1c3ed5ef03285d01966d4b71e3f760970e9cb46e43903b06c39430b37066029"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Its own line for a record in that condition, from Brown One: without factual or legal findings, this Court is greatly at sea without a chart or compass.",
+      "text_sha256": "sha256:968ab4c7da546ebf48d7ffca7434e190d62c9cbb4329e8bdc8343119caafc8c7",
+      "idempotency_key": "sha256:563fe6e5ec33a45c9d745b5557690f6b98f4b3523213c09653f8a36fc1951250"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "So it sent Brown's case and Taylor's case down rather than answering them.",
+      "text_sha256": "sha256:aa8b488bb66655f9d93572a372910d96fef388f1ae6074c515ccfa8b13358060",
+      "idempotency_key": "sha256:3249ec1450897819f132a1953a979c47af3952f9e65daf40cc893d4260e86de4"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In its own words.",
+      "text_sha256": "sha256:9e80212bb00da02fb00696b4b88f01411cab9a91797921b5f725b8252e96f44f",
+      "idempotency_key": "sha256:21b7bc4d68a9da64c2c7e925ade8a91240255071b3a70eb4a1af2bd3a93d2201"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "We conclude the correct course is to remand these cases to the circuit courts for the taking of evidence, the full development of a record, and proper consideration of whether the clauses are unconscionable.",
+      "text_sha256": "sha256:558b0068cb4917621fe311c1f30415fcea7ececbbad99265ae8632a64eabcb91",
+      "idempotency_key": "sha256:dae08993ebeb61ba5a2e222e6d5544dec95bb9e960aebe491ece02c0e8c821c9"
+    },
+    {
+      "chunk_id": "VC-0302",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Two further arguments were on the table, and the court refused both — not on their merits, but on the order of business.",
+      "text_sha256": "sha256:9a6bc866c2e71b8b9fa6117edf869fd6cc18195d480c1aa287f3f9d12df7f179",
+      "idempotency_key": "sha256:2e0ca611b3148b92ca13993306641724445639064d968ad503217f0fcf666ede"
+    },
+    {
+      "chunk_id": "VC-0303",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The plaintiffs had argued that the clauses were impossible to comply with.",
+      "text_sha256": "sha256:d9b904c8bc09506bda4ce7a2b640d85b59a47102de911ec4f51c4929f14b1526",
+      "idempotency_key": "sha256:a89a0b4cc69eb78080afedd07ffdc2ee09f588f5d7e8733296da9e8d62497b39"
+    },
+    {
+      "chunk_id": "VC-0304",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Marmet clause required binding arbitration in accordance with the Commercial Arbitration Rules of the American Arbitration Association.",
+      "text_sha256": "sha256:9c8fd7ec57e912165697bde6f39346155180694e2be985af6f41dfc53732b0d8",
+      "idempotency_key": "sha256:e9fcd9541d261dce5ad63ce36884dc4a140a25c9f34e97a167e4c8a4af2b8043"
+    },
+    {
+      "chunk_id": "VC-0305",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Effective January 1, 2003, that association had announced it would no longer accept the administration of cases involving individual patients without a post-dispute agreement to arbitrate.",
+      "text_sha256": "sha256:9e436b5800a2ad59206ffdf2cd24cc2dd2f42ff3c8aa1f763a690ceccdac0ef8",
+      "idempotency_key": "sha256:927fe77403a2b5ae691b4e93d2f5c80c1191370ab7fae838e968cf6b5d837bab"
+    },
+    {
+      "chunk_id": "VC-0306",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Clarksburg clause required arbitration in accordance with the Code of Procedure of the National Arbitration Forum.",
+      "text_sha256": "sha256:73ffd26adb290dbbccddc731ff970974a81a5d7e1685725a09c48b2eb55d7b3c",
+      "idempotency_key": "sha256:3e2099b31f95e8371b4e568fc9c5a7439f6ea59e8ee5c90f20815482ec4e93c2"
+    },
+    {
+      "chunk_id": "VC-0307",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That forum had announced it would cease to administer consumer arbitration disputes as of Friday, July 24, 2009, as part of a settlement agreement with the Minnesota Attorney General.",
+      "text_sha256": "sha256:f73f4cf8074a0a8e0c83dd6ecf437a245c27287d379076984ee2c58962950859",
+      "idempotency_key": "sha256:15583ae18d8956cc09b3b6da910e9667a35176ce22b7ffbc69fc91c753e08d2f"
+    },
+    {
+      "chunk_id": "VC-0308",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The forums named in the papers had stopped taking the kind of case the papers were sending them.",
+      "text_sha256": "sha256:bb8339e1988fafd106c5ff669d9dc50d565024918f09601af3a6cbda837d00c1",
+      "idempotency_key": "sha256:14d7b2ff066d483b62e891768c1cc19f11e16b9f4c48373ba98f3c908872ef6b"
+    },
+    {
+      "chunk_id": "VC-0309",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The second argument is the one the Supreme Court never reached.",
+      "text_sha256": "sha256:5c0ee68162dd05b70c6c56b237e50820b4915dae9a562b71412220c885b43a26",
+      "idempotency_key": "sha256:89590f29effd0af8b26d2264c2141c37821de358ee2b00e0821fa0003357f435"
+    },
+    {
+      "chunk_id": "VC-0310",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There is no evidence in the record, the plaintiffs said, that the family member who signed each admission agreement had the legal authority to sign an arbitration clause, and thereby waive the resident's or the resident's heirs' right to pursue action in court.",
+      "text_sha256": "sha256:ad21fd6d74f7ebd38ccee4e454ff3fa9c9beb79bbbae6f167d49d333d5bbd770",
+      "idempotency_key": "sha256:cfad2920de7798f3c2cabba9329a0523e1624687b2badf2b6def3de7ab756523"
+    },
+    {
+      "chunk_id": "VC-0311",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "We decline to consider these two arguments, the court wrote, which should be considered by the trial court first.",
+      "text_sha256": "sha256:3c0862dd13920ae6564dba824cca419eed3eb662bd424441e6659b30954686b3",
+      "idempotency_key": "sha256:92c51eff09e69eb53ee37d6397f98440e42bea36c197580d1ddd7c7d6d5608b7"
+    },
+    {
+      "chunk_id": "VC-0312",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the disposition, and it is not one thing.",
+      "text_sha256": "sha256:ad749cbb9e2965ef84bf07edf27b47aed4f39778730742b8ed1c796a80a16089",
+      "idempotency_key": "sha256:df84acc5c1e759f0c9b3e655cf8eabacdd0bceeae3a06be256cbaf86070c5178"
+    },
+    {
+      "chunk_id": "VC-0313",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Brown: reversed and remanded.",
+      "text_sha256": "sha256:0ae0bd78f0398a0623037640f34ebc86acfd61e68e92d0d6b417d037b4af605d",
+      "idempotency_key": "sha256:425ed7c32ebf24b50ae4cf897ea58a592c2a306c6ad3e4bc5bcc2287b39b86b3"
+    },
+    {
+      "chunk_id": "VC-0314",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Taylor: reversed and remanded.",
+      "text_sha256": "sha256:87d28c9d72103885285246b407133d11a79674fc5c3273b6e9b02c21504b5b4f",
+      "idempotency_key": "sha256:2de5b1e851bb5c0dfc5cfb7bbfc981f860e20072b02997d6529c2b273aa9b7d9"
+    },
+    {
+      "chunk_id": "VC-0315",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Marchio: the certified question answered.",
+      "text_sha256": "sha256:e46b94745b50931dc788c99ce29d5e910d3d629d9a7d32d7b1c23a4014992cf9",
+      "idempotency_key": "sha256:5efe489c81b56ed02a0700457d59774d01fce3b4e12f996e50b080188ab7d1b3"
+    },
+    {
+      "chunk_id": "VC-0316",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Yes — the Nursing Home Act's waiver ban is preempted by the Federal Arbitration Act.",
+      "text_sha256": "sha256:af63c3c812775ee13ab7e28423b8cdda1283d99e3e0659784e28c418de689fc9",
+      "idempotency_key": "sha256:fe5fd71f02e277b0a16c51382bae90c1732f80c9b9c5cfc46d5d2ea13b8bb504"
+    },
+    {
+      "chunk_id": "VC-0317",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Unconscionability was left to be raised by the parties on remand, because the trial court had never considered it.",
+      "text_sha256": "sha256:9c82103d5a9319fe5b22cd7d66de212dcebeaf08e5612d04c8fb7ffc1240cfd7",
+      "idempotency_key": "sha256:635459bbc43f4238a395047d099ca1b96ea36a8e83b43997794105be714b7051"
+    },
+    {
+      "chunk_id": "VC-0318",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Nothing in that second opinion holds these clauses unenforceable.",
+      "text_sha256": "sha256:5f190cac9caadd8c6383600648746735177fa2cdc30e4286cca9376e2125f9cc",
+      "idempotency_key": "sha256:b4b31cf219756267401e63f46cc421f08a59bc80d4c90bfcd85edf61106a6913"
+    },
+    {
+      "chunk_id": "VC-0319",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Nothing in it holds them enforceable either.",
+      "text_sha256": "sha256:c51d19091506595c54e447c80666cab3d85598ada009543820b1d6a2ea23fd91",
+      "idempotency_key": "sha256:1331004bfd11b1fc3ba47bb29197c124421d86c7844353d58ce9104f060d2a53"
+    },
+    {
+      "chunk_id": "VC-0320",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It hands the question back to the circuit courts and stops.",
+      "text_sha256": "sha256:36d74af4e3fcd205241eaa3110d87cf8ae836f9be6b7009210293fe59be849f2",
+      "idempotency_key": "sha256:9bcd3cd822fa8b049285353fc43df34f3a0a612b63952e02ca722b0f111164ef"
+    },
+    {
+      "chunk_id": "VC-0321",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "So what was the paper?",
+      "text_sha256": "sha256:d6c1a88ef1c8f5fbfdf23c81741e344ef465f174edc47cd0bbad467491c9dfe6",
+      "idempotency_key": "sha256:01950c85e6f57ea1c61210f337711dc6f4bc698a945ada1eb5e69764fde7363c"
+    },
+    {
+      "chunk_id": "VC-0322",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "On the record these two opinions make, it was this.",
+      "text_sha256": "sha256:55bbba9164cbaef54f094e0fd57c948e32fde5000ecd5c1d7609e4de6f670ed7",
+      "idempotency_key": "sha256:afa12c2b235e5c60487c77048e4faa4f6bd3381812ec838b78cb1b51ca8bb024"
+    },
+    {
+      "chunk_id": "VC-0323",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A form signed at an admission desk by a family member, on behalf of a patient who required extensive nursing care.",
+      "text_sha256": "sha256:1dbd9995f810054dee8dec5df12e94cd30354243a7f7669d74e202f1779a1610",
+      "idempotency_key": "sha256:cb746d987af109f28dfaf66ddb1a8791de429ea25652eb58849df4ad42d54253"
+    },
+    {
+      "chunk_id": "VC-0324",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A form that sent every dispute to a private arbitrator, except one — a claim to collect late payments owed by the patient.",
+      "text_sha256": "sha256:a9a1ea277f4f00e7c12090d5d3f935517760ccd96d26f4ad119c3f8548382b06",
+      "idempotency_key": "sha256:78ae681a40d2c75769f4d2bc279bd0f5aea05507aad09471f0b2951935405602"
+    },
+    {
+      "chunk_id": "VC-0325",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A form that made whoever filed first pay to file.",
+      "text_sha256": "sha256:9e442e4c91bcdc25157f3c89e7fdd3e3e10c56880d91ca88d6039a5423583102",
+      "idempotency_key": "sha256:ff3ec136e900b7e7b9b51f791632e4e489b2492363cf724a5cc325620673cf81"
+    },
+    {
+      "chunk_id": "VC-0326",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And in one of the three cases, a form with no exceptions in it at all.",
+      "text_sha256": "sha256:9e85d2ca0b0668a3ec86d2c82a56bee9bc87935ee082e28d0cdade6c7b44fb56",
+      "idempotency_key": "sha256:ac9469c68fee339b0525f29935cd26ed755625241bf7de9974308a94ba810b79"
+    },
+    {
+      "chunk_id": "VC-0327",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It was, the Supreme Court held, a written provision in a contract evidencing a transaction involving commerce — and therefore inside an Act of Congress passed in 1925.",
+      "text_sha256": "sha256:3fa741efaa8f15d9f202c530e8c9cfd56f94e2608c0a15cb6d0370bb1218701f",
+      "idempotency_key": "sha256:a66f9e23879ceec292a4d40328275bf69af5f781ffa4eaf01b43574578361759"
+    },
+    {
+      "chunk_id": "VC-0328",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is what Washington decided.",
+      "text_sha256": "sha256:0a8b4abca61b0a90f8daefbb35aa9e936f838ad835108c78269df34e0630705c",
+      "idempotency_key": "sha256:2fa3c27776adc4536a410dae78aad1926e1578a3323d0297a0e56029514c41f9"
+    },
+    {
+      "chunk_id": "VC-0329",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It decided the paper was covered by the statute.",
+      "text_sha256": "sha256:ac3747a8e786797bae1691efcf8fe57deb6abf3fa8c926e30cadd44d843026ff",
+      "idempotency_key": "sha256:bfe913a416ccacac42cac3d1dfb01ec2a9dc97cd4aee6ed8921d5be585270a42"
+    },
+    {
+      "chunk_id": "VC-0330",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It did not decide the paper was good.",
+      "text_sha256": "sha256:2f865390f9e054b23776e87443937389f48e5109870d00428d25b9fcaa57cf2e",
+      "idempotency_key": "sha256:5a6335be79707e44a297269ad5831489ee79ce0291a9d8863d725901fc6081c5"
+    },
+    {
+      "chunk_id": "VC-0331",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Section 2 of the Federal Arbitration Act carries both halves in one sentence — valid, irrevocable, and enforceable, save upon such grounds as exist at law or in equity for the revocation of any contract.",
+      "text_sha256": "sha256:f0a700b706e76e1e6cce4eddfe18ea817c698c67c8ea08715baaf14728678283",
+      "idempotency_key": "sha256:f51499e40f5233640eee4b26fc34d736b9099327f095d5db56e8e05bd642151a"
+    },
+    {
+      "chunk_id": "VC-0332",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The savings clause was there the whole time.",
+      "text_sha256": "sha256:f1fb8d5e9b895316a79389b6381485b3c2053c46e74e25b4737dd88b44840c14",
+      "idempotency_key": "sha256:f668a0ca0581bce61d2b15b0279de58ca324cc35fe27335f72bd3d4a722dd706"
+    },
+    {
+      "chunk_id": "VC-0333",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "What the Supreme Court decided was that West Virginia had reached past it.",
+      "text_sha256": "sha256:2bb66b6bcddd36a393bd79c33c64781c96894aa9d966ce87ed2b0142d16f888b",
+      "idempotency_key": "sha256:1313c5a9461b46640e76d288fd3b4f365af1f9873c53d996924b798712c265a7"
+    },
+    {
+      "chunk_id": "VC-0334",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "West Virginia gave up the rule it had been reversed on and kept everything else, including the doctrine that asks whether a contract is so one-sided that a court may refuse to enforce it as written.",
+      "text_sha256": "sha256:d3d75041ece703492e47a16194f1770a615601584a1253e2f0518ba86cf2eb28",
+      "idempotency_key": "sha256:341e4848988acdcefa50104ff89aadb85b695366961c59c0db8981fba5afa86b"
+    },
+    {
+      "chunk_id": "VC-0335",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Which leaves the story where the documents leave it.",
+      "text_sha256": "sha256:d921a6c5c3ccb338e178ad0c9453473e667f3f06997c2963a507d5a7f7dc3512",
+      "idempotency_key": "sha256:7e658a7bfdb2390bc06c24f61a2e8f0994ba7c6c5d99fffae810c56fd128d9cb"
+    },
+    {
+      "chunk_id": "VC-0336",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Three families sued.",
+      "text_sha256": "sha256:f9614911035ce2d844cc119cb414dd68890044dfdca761282bc96a88b1db3fa3",
+      "idempotency_key": "sha256:2171d162bc5e217508884655512e36a77c566403a0673a8f856b10418fa4b8ba"
+    },
+    {
+      "chunk_id": "VC-0337",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Three papers were signed.",
+      "text_sha256": "sha256:9b122a5d33a4d87e983799060a1bc139d986770bb9ceda52cf7413c20d373b0b",
+      "idempotency_key": "sha256:8723aa16d53a98894da1b13cd6aeed2a2f85f8e55dfd3dd3a4da9d1e3f32d449"
+    },
+    {
+      "chunk_id": "VC-0338",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "What the litigation settled was which sovereign's law applied to those papers, and almost nothing about whether they were fair.",
+      "text_sha256": "sha256:3721c776f35776372aa0d5a0043d3c9db474f2f421608e9ec0b7b99110b6bcdf",
+      "idempotency_key": "sha256:0ae3792cfbd99abe0a391367ff0702942fda6ea6fab9bdfc45339376bae16eb5"
+    },
+    {
+      "chunk_id": "VC-0339",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Two questions were still standing when both opinions closed.",
+      "text_sha256": "sha256:ba086f6e3c4d77eb565cfcf7af8f3c64c76fd54a07429c4e242123d7742c6c6b",
+      "idempotency_key": "sha256:6f9f5ef8673a3e7c08b9d7bbad80ae2a27066f2dfcaf25d904c424ff7db2e999"
+    },
+    {
+      "chunk_id": "VC-0340",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Whether a paper that arbitrates a death and litigates a debt is lop-sided enough that a court should refuse to enforce it as written.",
+      "text_sha256": "sha256:642df356e35706ee1ccf98f8b9cc9710019b42adabc7dab9e3bfb50a6e3f5d41",
+      "idempotency_key": "sha256:f7f1ddfbc695c6a4e2eeb45a5a0e3a5e8972e1134c39cb55fff632ca3eac0344"
+    },
+    {
+      "chunk_id": "VC-0341",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And whether the family member who signed it had the authority to sign away anything at all.",
+      "text_sha256": "sha256:0c146a6b988758e5ba245d9d036f083efbb8b6a65510ade693cc6bdbf34eb3c9",
+      "idempotency_key": "sha256:efac919c680fa93c06c84ee9d70ec79d8868527ac6bd4709c8c9db393a5d9e3e"
+    },
+    {
+      "chunk_id": "VC-0342",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Neither had been answered.",
+      "text_sha256": "sha256:5bb517086974c08158b9daf2a59b1fb73634ae467a61ae311a67555f81349b99",
+      "idempotency_key": "sha256:c85096da69ccfae2d8c18d95604b863a16e6041c31c9049814d7aacf16c91fa6"
+    },
+    {
+      "chunk_id": "VC-0343",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The first was sent back down to be argued on a record that did not exist yet.",
+      "text_sha256": "sha256:9117bea1de665fb992cd5c2ba4079b48f5f136583142c20cfc19a583d94060ae",
+      "idempotency_key": "sha256:3653c8807db3e41ce650b196fac80caba37409c78763f947ff9ec6fcf4ca2faa"
+    },
+    {
+      "chunk_id": "VC-0344",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The second the court declined to reach at all.",
+      "text_sha256": "sha256:28369c98d849cb5018fa3ce8d8fec7087a0a4bbe0edf7effe896b92e3031e84b",
+      "idempotency_key": "sha256:e527c3f7949f8ddb3ddf77ccfc7d6104ea56b7657f1d1eb7200a7e78eea72a0f"
+    },
+    {
+      "chunk_id": "VC-0345",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The clause, once more, as the two papers wrote it.",
+      "text_sha256": "sha256:799cac7facf538f6ad77d51eaef66b73fa1f495f3bdcbe9112cc30e6c6abc901",
+      "idempotency_key": "sha256:360f4e36168840ee74ed88578cfba76f0900021040988928c552ed7950205d9c"
+    },
+    {
+      "chunk_id": "VC-0346",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "To arbitrate all disputes, other than claims to collect late payments owed by the patient.",
+      "text_sha256": "sha256:d77edd20eef8f550c8da1fe4f716d319d57f79b07355d52109bed1e1aba2668c",
+      "idempotency_key": "sha256:5e4348d445b3a7f9daee2ade83bfc4d0b9a1b690a514f1b2b03e3f96e5445c6a"
+    }
+  ]
+}

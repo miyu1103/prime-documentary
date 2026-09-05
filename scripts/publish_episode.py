@@ -22,7 +22,7 @@ from pd_factory.providers.youtube import _access_token
 
 VIDEO_ID      = "PjGEqW6F9WM"
 EXPECTED_HASH = "20e926fb71c204ba40b5d6539f24d499b706cd820a215bc0b6d453758275d651"
-VIDEO_FILE    = Path(r"H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\sample_v021.mp4")
+VIDEO_FILE    = Path(r"E:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\sample_v021.mp4")
 THUMB_FILE    = ROOT / "remotion" / "out" / "thumb_final.png"
 APR_PATH      = ROOT / "episodes" / "PD-2026-001-miranda" / "approvals" / "APR-0004.json"
 EPISODE_DIR   = ROOT / "episodes" / "PD-2026-001-miranda"

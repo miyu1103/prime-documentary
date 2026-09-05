@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-012-arbitration",
+  "revision": "v002",
+  "created_at": "2026-06-23T13:28:43.661053+00:00",
+  "reason_for_revision": "Owner rejected v001 as too weak; rebuild with louder visual, larger text, and higher mobile contrast.",
+  "selection_criterion": "CTR maximum: high contrast, single clear subject, emotional consequence, short text, mobile readability.",
+  "selected_title_id": "A",
+  "selected_thumbnail": "episodes/PD-2026-012-arbitration/09_package/thumbnail.selected.v002.png",
+  "selected_thumbnail_sha256": "sha256:7d5825ec6606ee1091192d6f7e563497396e727534a56af68e720316f569756c",
+  "title_candidates": [
+    {
+      "id": "A",
+      "thumbnail_text": "YOU CAN'T SUE",
+      "file": "episodes/PD-2026-012-arbitration/10_thumbnail/thumbnail.arbitration_option_A.v002.png",
+      "sha256": "sha256:7d5825ec6606ee1091192d6f7e563497396e727534a56af68e720316f569756c",
+      "ctr_score": 96,
+      "reason": "Strongest blunt promise-conflict hook; huge mobile-readable type and red denial stamp."
+    },
+    {
+      "id": "B",
+      "thumbnail_text": "I AGREE / NO COURT?",
+      "file": "episodes/PD-2026-012-arbitration/10_thumbnail/thumbnail.arbitration_option_B.v002.png",
+      "sha256": "sha256:f774d0136269aedd9118420669c2e0560a5ec99a79713857e2ee5db9c6ae2435",
+      "ctr_score": 92,
+      "reason": "Best tap-to-consequence concept; slightly more abstract than A."
+    },
+    {
+      "id": "C",
+      "thumbnail_text": "FINE PRINT TRAP",
+      "file": "episodes/PD-2026-012-arbitration/10_thumbnail/thumbnail.arbitration_option_C.v002.png",
+      "sha256": "sha256:e9fbb893bff3de293b4bc2d0bb636e5465ed330e594dbbc50dc92dfc4113d4af",
+      "ctr_score": 88,
+      "reason": "Aggressive but less legally precise; good fallback if A feels too direct."
+    }
+  ],
+  "safety": {
+    "real_person_likeness": false,
+    "judge_likeness": false,
+    "case_footage": false,
+    "commercial_ok": true,
+    "forced_arbitration_text_used": false
+  }
+}

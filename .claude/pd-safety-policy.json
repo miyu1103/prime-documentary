@@ -1,0 +1,169 @@
+{
+  "schema_version": "2.0.0",
+  "protected_paths": [
+    "${PROJECT_ROOT}/.git",
+    "H:/pd-media/assets",
+    "H:/pd-media/renders/baseline",
+    "E:/pd-media/assets",
+    "E:/pd-media/renders/baseline"
+  ],
+  "approved_external_write_roots": [
+    "H:/pd-media/generated",
+    "H:/pd-media/previews",
+    "H:/pd-media/indexes",
+    "H:/pd-media/thumbnails",
+    "H:/pd-media/temp",
+    "E:/pd-media/generated",
+    "E:/pd-media/previews",
+    "E:/pd-media/indexes",
+    "E:/pd-media/thumbnails",
+    "E:/pd-media/temp"
+  ],
+  "deny_command_regex": [
+    "(?i)\\bgit\\s+reset\\s+--hard\\b",
+    "(?i)\\bgit\\s+clean\\s+-(?:[^\\s]*f[^\\s]*d|[^\\s]*d[^\\s]*f)",
+    "(?i)\\bgit\\s+push\\b[^\\n]*(?:--force|-f\\b)",
+    "(?i)\\brm\\s+-[^\\n]*r[^\\n]*f\\s+(?:/|~|\\$HOME|[A-Za-z]:[\\\\/])(?:\\s|$)",
+    "(?i)\\bRemove-Item\\b[^\\n]*(?:-Recurse)[^\\n]*(?:-Force)",
+    "(?i)\\b(?:format|diskpart|bcdedit)\\b"
+  ],
+  "ask_command_regex": [
+    "(?i)\\bgit\\s+(?:push|merge|rebase|commit|tag\\s+-d|branch\\s+-D)\\b",
+    "(?i)\\b(?:pip|pip3|uv|poetry|conda|mamba)\\s+(?:install|add|update|upgrade|remove)\\b",
+    "(?i)\\b(?:npm|pnpm|yarn)\\s+(?:install|add|update|upgrade|remove)\\b",
+    "(?i)\\b(?:winget|choco|scoop)\\s+(?:install|upgrade|uninstall)\\b",
+    "(?i)\\b(?:curl|wget|aria2c|huggingface-cli|hf\\s+download|git\\s+lfs\\s+pull)\\b",
+    "(?i)\\b(?:Start-Process\\s+[^\\n]*-Verb\\s+RunAs|sudo|runas)\\b",
+    "(?i)\\b(?:youtube|upload|publish)\\b[^\\n]*(?:api|cli|script)",
+    "(?i)\\bffmpeg\\b[^\\n]*\\s-y(?:\\s|$)",
+    "(?i)\\b(?:git|gh)\\s+(?:clone|repo\\s+clone)\\b",
+    "(?i)\\b(?:Invoke-WebRequest|Invoke-RestMethod|Start-BitsTransfer)\\b",
+    "(?i)\\b(?:npm|pnpm|yarn)\\s+(?:i|ci)\\b",
+    "(?i)\\b(?:pip|pip3)\\s+install\\b"
+  ],
+  "destructive_verbs": [
+    "rm",
+    "del",
+    "erase",
+    "rmdir",
+    "remove-item",
+    "move-item",
+    "mv",
+    "ren",
+    "rename-item"
+  ],
+  "network_install_requires_approval": true,
+  "large_download_threshold_gb": 5,
+  "phase_repository_write_allow": {
+    "P00": [
+      "docs/pd-visual-system"
+    ],
+    "P01": [
+      "docs/pd-visual-system",
+      "outputs/pd-visual-system",
+      "templates/pd-visual-system"
+    ],
+    "P02": [
+      "docs/pd-visual-system",
+      "benchmarks",
+      "templates/pd-visual-system"
+    ],
+    "P03": [
+      "docs/pd-visual-system",
+      "scripts/pd-visual-system",
+      "schemas",
+      "config/pd-visual-system",
+      "tests/pd-visual-system",
+      "data",
+      "outputs/pd-visual-system"
+    ],
+    "P04": [
+      "docs/pd-visual-system",
+      "scripts/pd-visual-system",
+      "schemas",
+      "config/pd-visual-system",
+      "tests/pd-visual-system",
+      "data",
+      "outputs/pd-visual-system"
+    ],
+    "P05": [
+      "docs/pd-visual-system",
+      "src",
+      "packages",
+      "remotion",
+      "tests",
+      "config/pd-visual-system",
+      "schemas",
+      "outputs/pd-visual-system"
+    ],
+    "P06": [
+      "docs/pd-visual-system",
+      "src",
+      "packages",
+      "remotion",
+      "episodes",
+      "outputs/pd-visual-system"
+    ],
+    "P07": [
+      "docs/pd-visual-system",
+      "scripts/pd-visual-system",
+      "src",
+      "packages",
+      "remotion",
+      "schemas",
+      "tests",
+      "outputs/pd-visual-system"
+    ],
+    "P08": [
+      "docs/pd-visual-system",
+      "scripts/pd-visual-system",
+      "src",
+      "packages",
+      "remotion",
+      "schemas",
+      "tests",
+      "outputs/pd-visual-system"
+    ],
+    "P09": [
+      "docs/pd-visual-system",
+      "blender",
+      "scripts/pd-visual-system",
+      "src",
+      "packages",
+      "remotion",
+      "tests",
+      "outputs/pd-visual-system"
+    ],
+    "P10": [
+      "docs/pd-visual-system",
+      "workflows",
+      "scripts/pd-visual-system",
+      "src",
+      "packages",
+      "remotion",
+      "schemas",
+      "tests",
+      "outputs/pd-visual-system"
+    ],
+    "P11": [
+      "docs/pd-visual-system",
+      "scripts/pd-visual-system",
+      "src",
+      "packages",
+      "remotion",
+      "config/pd-visual-system",
+      "outputs/pd-visual-system"
+    ],
+    "P12": [
+      "docs/pd-visual-system",
+      "src",
+      "packages",
+      "remotion",
+      "episodes",
+      "config/pd-visual-system",
+      "schemas",
+      "tests",
+      "outputs/pd-visual-system"
+    ]
+  }
+}

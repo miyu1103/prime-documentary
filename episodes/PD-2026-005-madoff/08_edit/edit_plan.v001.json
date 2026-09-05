@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "engine": "Remotion (compositions/motion/graphics) + FFmpeg (mux/encode). No manual DaVinci timeline; optional final color/loudness pass only.",
+  "inputs": {
+    "narration_master": "06_audio voice master (per voice_plan VC-0001..0023), force-aligned",
+    "music": "audio_cue_sheet regions M1-M6 (library assets)",
+    "sfx_ambience": "audio_cue_sheet cues + 100% ambience beds",
+    "stills": "SDXL heroes H01-H26 + coverage (05_visuals/approved)",
+    "motion_clips": "Runway RW1-RW5 (budget-capped) or Remotion parallax fallback",
+    "graphics": "Remotion tier-K components per remotion_plan G01-G12",
+    "captions": "open captions force-aligned to narration master"
+  },
+  "assembly_order": [
+    "1. Lock narration master timing -> derive per-section in/out points.",
+    "2. Lay music arc (M1-M6) + ambience beds; duck under VO (-14 LUFS target).",
+    "3. Place stills with Ken Burns/2.5D parallax per scene_plan; insert Runway beats RW1-RW5.",
+    "4. Render Remotion graphics G01-G12 at the mapped timecodes (THE LINE refrain, Ponzi loop, $65B->$17.5B morph, timeline, cards).",
+    "5. Burn citation lower-thirds for every on-screen factual number (linked claim_id) + the cold-open disclaimer.",
+    "6. Burn open captions (aligned to master).",
+    "7. Honor silence beats (before '150 years' and the mechanism reveal).",
+    "8. Fit to ~12:00 via small atempo on assembled master if needed (not re-read).",
+    "9. Encode with FFmpeg (1080p, H.264 high, +faststart); produce final render + a review proxy."
+  ],
+  "markers": "Chapter markers at each section boundary (hook/opening/actI-IV/ending) for YouTube chapters.",
+  "qc_before_first_cut": [
+    "Every factual number on screen has a citation lower-third (claim_id).",
+    "No pink anywhere; no real-person likeness; disclaimer present.",
+    "Caption/VO sync within tolerance; loudness ~-14 LUFS, TP <= -1 dB.",
+    "Runtime ~12:00; silence beats intact; no slideshow feel (every still has motion).",
+    "$65B vs $17.5B stated precisely; 'pleaded guilty' (not 'jury'); SEC = failure not corruption."
+  ],
+  "outputs": {
+    "review_proxy": "08_edit/renders/review.proxy.v001.mp4",
+    "final_render": "08_edit/renders/final.v001.mp4 (after first-cut approval)"
+  },
+  "gates_ahead": [
+    "first_cut approval (human gate) on the review proxy",
+    "title+thumbnail approval (human gate)",
+    "rights_manifest + final QC",
+    "publish approval (human gate) — upload PRIVATE first"
+  ],
+  "status": "spec_ready_for_codex"
+}

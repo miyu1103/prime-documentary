@@ -1,0 +1,842 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "weimer",
+  "episode_id": "PD-2026-061-weimer",
+  "assets": "episodes/PD-2026-061-weimer/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-061-weimer/06_audio/narration_index.v001.json",
+  "narration": "weimer/narration.mp3",
+  "captions": "episodes/PD-2026-061-weimer/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/weimer_film.json",
+  "hookSeconds": 8.0,
+  "hookLine": "On the morning of the twenty-seventh of January, two thousand and one, a young woman in Connellsville, Pennsylvania told police officers where she had been the night before.",
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "CONNELLSVILLE, PENNSYLVANIA",
+        "secondary": "27 January 2001"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "SHE TOLD THEM",
+          "WHERE SHE HAD BEEN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "WHERE"
+        ]
+      },
+      {
+        "kind": "stat",
+        "value": 4,
+        "label": "People who confirmed her account that morning"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOBODY EVER",
+          "FOUND ANYTHING."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ANYTHING"
+        ]
+      }
+    ],
+    "OP": [
+      {
+        "kind": "lowerthird",
+        "primary": "FAYETTE COUNTY",
+        "secondary": "South-west Pennsylvania"
+      },
+      {
+        "kind": "numberticker",
+        "value": 11,
+        "label": "Years she spent in prison",
+        "group": false
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOT THE TRIAL.",
+          "THE ELEVEN YEARS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ELEVEN YEARS"
+        ]
+      }
+    ],
+    "ACT_1": [
+      {
+        "kind": "acttitle",
+        "title": "THE FIRST MORNING",
+        "kicker": "ACT ONE",
+        "index": 1
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "CONNELLSVILLE",
+        "secondary": "Population about nine thousand, and falling"
+      },
+      {
+        "kind": "numberticker",
+        "value": 21,
+        "label": "Curtis Haith's age",
+        "group": false
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "27 JANUARY 2001",
+        "secondary": "Early hours"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "gears"
+      },
+      {
+        "kind": "stat",
+        "value": 12,
+        "label": "People who passed through the apartment that night"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "NANCY VERNON",
+        "secondary": "District Attorney of Fayette County; came to the scene herself"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "A PROSECUTOR WHO ADVOCATES",
+          "IS IMMUNE.",
+          "A PROSECUTOR WHO INVESTIGATES",
+          "IS NOT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IS NOT"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "CRYSTAL WEIMER",
+        "secondary": "Twenty-three years old; one name on the list"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "STILL IN LAST NIGHT'S",
+          "CLOTHES."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "LAST NIGHT'S"
+        ]
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.47,
+        "cy": 0.55,
+        "r": 0.12,
+        "label": "A minor injury to the face. A minor injury to the foot."
+      },
+      {
+        "kind": "stat",
+        "value": 4,
+        "label": "Her cousin. Her sisters. Michael Gibson. All confirmed it."
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Crime-scene DNA samples matching Weimer",
+            "value": 0
+          },
+          {
+            "label": "Samples suggesting a male profile",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE BLOOD ON HER SHIRT",
+          "WAS HIS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "WAS HIS"
+        ]
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.62,
+          0.42
+        ],
+        "to": [
+          0.28,
+          0.62
+        ],
+        "label": "Every piece of it pointed away from her"
+      },
+      {
+        "kind": "numberticker",
+        "value": 20,
+        "label": "Months in which nothing happened",
+        "group": false
+      }
+    ],
+    "ACT_2": [
+      {
+        "kind": "acttitle",
+        "title": "TWENTY MONTHS",
+        "kicker": "ACT TWO",
+        "index": 2
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "OCTOBER 2002",
+        "secondary": "Twenty months after the murder"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THOMAS BEAL",
+        "secondary": "An ex-boyfriend, arriving of his own accord"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HE SAID SHE TOLD HIM",
+          "THE BLOOD WAS HAITH'S."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "HAITH'S"
+        ]
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "What Beal said the blood was",
+            "value": 0
+          },
+          {
+            "label": "What the laboratory had established twenty months earlier",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE FIRST STATEMENT",
+          "AGAINST HER CONTAINED",
+          "A FACT ALREADY DISPROVED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ALREADY DISPROVED"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "PA STATE POLICE COLD CASE SQUAD",
+        "secondary": "New people. The same file."
+      },
+      {
+        "kind": "spotlight",
+        "cx": 0.5,
+        "cy": 0.5,
+        "r": 0.2,
+        "dim": 0.72
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE AUTOPSY PHOTOGRAPHS",
+        "secondary": "On the hand, something believed to be a bite mark"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "gears"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE FIRST DENTIST",
+        "secondary": "Fayette County"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "FIRST SHE SAID",
+          "GIBSON."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "GIBSON"
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THEN SHE SAID",
+          "SHE COULD NOT TELL."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "COULD NOT TELL"
+        ]
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Certainty after the first examination",
+            "value": 100
+          },
+          {
+            "label": "Certainty after being given more material",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE SECOND EXPERT",
+        "secondary": "Given the photographs, the impressions — and Beal's statement"
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.24,
+          0.34
+        ],
+        "to": [
+          0.7,
+          0.6
+        ],
+        "label": "The accusation arrived before the examination"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HE SAID",
+          "WEIMER."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "WEIMER"
+        ]
+      }
+    ],
+    "ACT_3": [
+      {
+        "kind": "acttitle",
+        "title": "NOTHING NEW",
+        "kicker": "ACT THREE",
+        "index": 3
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE PROBLEM WITH THE MARK",
+        "secondary": "Nobody could say when it happened"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.5,
+        "cy": 0.48,
+        "r": 0.13,
+        "label": "Hours before? Days before?"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "VERNON DIRECTED OFFICERS",
+        "secondary": "To investigate the timing"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HE WAS ASKED",
+          "TO UPDATE HIS OPINION."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "UPDATE"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 10,
+        "label": "Minutes before death, at the outside",
+        "group": false
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "SEVEN TO TEN",
+          "MINUTES."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "SEVEN TO TEN"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "Without reviewing additional evidence, he determined the bite occurred seven to ten minutes before Haith's death.",
+        "attribution": "Weimer v. County of Fayette, 972 F.3d 177 (3d Cir. 2020)"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "New evidence examined before the opinion changed",
+            "value": 0
+          },
+          {
+            "label": "Opinions given",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "A QUESTION WAS ASKED.",
+          "THE ANSWER MOVED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE ANSWER MOVED"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "BEAL, AGAIN",
+        "secondary": "Now a third man had taken part"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE MAN HE NAMED",
+          "WAS IN PRISON",
+          "THAT NIGHT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IN PRISON"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "Despite these puzzling changes to his story, Beal remained a key witness.",
+        "attribution": "Weimer v. County of Fayette (3d Cir. 2020)"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "AUGUST 2003",
+        "secondary": "Conrad Blair, from prison"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HIS DOCUMENT",
+          "CONTRADICTED HIM."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "CONTRADICTED"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "STENGER'S ATTORNEY",
+        "secondary": "His client did not write it"
+      },
+      {
+        "kind": "stat",
+        "value": 3,
+        "label": "Accusations. None of them agreed with any other."
+      }
+    ],
+    "ACT_4": [
+      {
+        "kind": "acttitle",
+        "title": "ELEVEN SPRINGS",
+        "kicker": "ACT FOUR",
+        "index": 4
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "DECEMBER 2003",
+        "secondary": "The complaint is prepared"
+      },
+      {
+        "kind": "quote",
+        "quote": "despite the conflicting statements",
+        "attribution": "Weimer v. County of Fayette (3d Cir. 2020), on the criminal complaint"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "JANUARY 2004",
+        "secondary": "Arrested — three years after the death"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE CASE FELL APART",
+          "ALMOST IMMEDIATELY."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IMMEDIATELY"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "kind of like coaxed me along on how to do it",
+        "attribution": "Thomas Beal, recanting under oath at the preliminary hearing"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE CHARGES",
+          "WERE DISMISSED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "DISMISSED"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 6,
+        "label": "Months she was home",
+        "group": false
+      },
+      {
+        "kind": "quote",
+        "quote": "Nevertheless, investigators continued to focus their efforts on Weimer.",
+        "attribution": "Weimer v. County of Fayette (3d Cir. 2020)"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "JULY 2004",
+        "secondary": "A prisoner offers to implicate her for a lighter sentence"
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.3,
+          0.66
+        ],
+        "to": [
+          0.68,
+          0.36
+        ],
+        "label": "Second arrest, on that statement"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE TRIAL",
+        "secondary": "Fayette County, spring 2006"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE INFORMANTS TOLD",
+          "THE JURY THEY WERE",
+          "GETTING NOTHING."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOTHING"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "7 APRIL 2006",
+        "secondary": "Third-degree murder. Conspiracy."
+      },
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "2007",
+            "text": ""
+          },
+          {
+            "year": "2009",
+            "text": ""
+          },
+          {
+            "year": "2011",
+            "text": ""
+          },
+          {
+            "year": "2013",
+            "text": ""
+          },
+          {
+            "year": "2014",
+            "text": "Nothing about the case changed"
+          }
+        ]
+      },
+      {
+        "kind": "stat",
+        "value": 28,
+        "label": "Her age when the jury came back"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "FIFTEEN TO THIRTY YEARS",
+        "secondary": "as recorded by the reviewing court"
+      }
+    ],
+    "ACT_5": [
+      {
+        "kind": "acttitle",
+        "title": "WHAT CAME OUT",
+        "kicker": "ACT FIVE",
+        "index": 5
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "1 OCTOBER 2015",
+        "secondary": "The convictions are vacated"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "VACATED IS NOT",
+          "EXONERATED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOT"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "JOSEPH STENGER",
+        "secondary": "Recants"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HE KNEW NOTHING.",
+          "POLICE WALKED HIM",
+          "THROUGH IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOTHING"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE BITE-MARK EXPERT",
+        "secondary": "Disavows his own trial testimony"
+      },
+      {
+        "kind": "quote",
+        "quote": "junk science",
+        "attribution": "The bite-mark expert, describing the opinion he gave the jury"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THAT IS NOT",
+          "THIS FILM'S VERDICT.",
+          "IT IS HIS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IT IS HIS"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE LETTERS IN THE FILE",
+        "secondary": "From the informants who testified they had no deals"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "What the jury was told",
+            "value": 0
+          },
+          {
+            "label": "Requests for deals found in the file",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "2016",
+        "secondary": "An expert reads the autopsy report and the photographs from that first morning"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HER INJURIES MATCHED",
+          "WHAT SHE SAID",
+          "IN 2001."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "MATCHED"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "27 JUNE 2016",
+        "secondary": "Charges dropped with prejudice"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THEY CANNOT",
+          "CHARGE HER AGAIN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "CANNOT"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "SEPTEMBER 2017",
+        "secondary": "She files a civil rights suit"
+      },
+      {
+        "kind": "quote",
+        "quote": "only a narrow sliver of this sweeping case",
+        "attribution": "The Third Circuit, 2020, on what its decision covered"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOT WHETHER IT",
+          "WAS TRUE.",
+          "WHETHER SHE COULD",
+          "EVEN BE ASKED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "EVEN BE ASKED"
+        ]
+      }
+    ],
+    "ENDING": [
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "27 Jan 2001",
+            "text": "She gives her account. The blood is Gibson's."
+          },
+          {
+            "year": "Oct 2002",
+            "text": "A witness arrives, twenty months late"
+          },
+          {
+            "year": "Jan 2004",
+            "text": "Arrested. He recants. Dismissed."
+          },
+          {
+            "year": "Apr 2006",
+            "text": "Convicted."
+          },
+          {
+            "year": "Oct 2015",
+            "text": "Vacated"
+          },
+          {
+            "year": "Jun 2016",
+            "text": "Dropped with prejudice"
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "EVERYTHING IN BETWEEN",
+          "HAPPENED ANYWAY."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ANYWAY"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 11,
+        "label": "Years, more than",
+        "group": false
+      },
+      {
+        "kind": "stat",
+        "value": 0,
+        "label": "Times her account changed"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOBODY EVER",
+          "FOUND ANYTHING."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ANYTHING"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "CURTIS HAITH",
+        "secondary": "Killed 27 January 2001. He was twenty-one."
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HIS KILLING HAS",
+          "NEVER BEEN ANSWERED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NEVER"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "NOTHING HERE ESTABLISHES WHO DID IT",
+        "secondary": "Only that the case against her was not a case"
+      }
+    ]
+  },
+  "_notes": {
+    "runtime": "30:00 total. Narration 25.5 min at the measured 173 wpm, from EP61_weimer_script.en.v002.md (4,412 words). Band declared in episode_spec.v001.json as 1620-1920 s.",
+    "figures": "100 beats across 8 sections (HOOK=4, OP=3, ACT_1=16, ACT_2=17, ACT_3=17, ACT_4=18, ACT_5=17, ENDING=8). Contract requires 13-17 per act. EP57 shipped 10 and EP58/59 shipped 8 and the gate called all three a slideshow.",
+    "facts": "Every number, quote and date traces to EP61_weimer_FACTS_LEDGER.v001.md. The seven quarantined claims appear nowhere: no killer named, no settlement figure, no civil-suit outcome, and the narrator never calls bite-mark analysis junk science -- the expert's own words are quoted (CW-33).",
+    "images": "150 AI stills W001-W150, staged to remotion/public/weimer/img on 2026-08-03. Verified: 0 variants, 0 duplicates, 0 under-resolution, 0 below luma 45, median luma 68.9.",
+    "sentence_conflict": "The 3d Cir. records fifteen to thirty years; WHYY (2018) reports twelve to twenty-five. Unresolved (ledger ○-05, ⛔-08). The two numberticker beats that would have put 15 and 30 on screen as figures are removed; the sentence appears once, as a lower-third attributed to the reviewing court. Restore the tickers only after the sentencing order is read."
+  },
+  "revision": "v002",
+  "revision_note": {
+    "from": "EP61_weimer_filmconfig.v001.json",
+    "made_at": "2026-08-04",
+    "by": "assembly thread, after reading the rendered v001 master frame by frame",
+    "changes": [
+      "ACT_1[2] numberticker 22 -> 21 (Curtis Haith's age; FACTS_LEDGER CW-43 'Curtis Haith was 21' and script v004 says 'twenty-one' twice -- the figure contradicted the narration it sat under)",
+      "ENDING[0] casetimeline_c 'Apr 2006' text drops 'Fifteen to thirty years.' -- the sentence length is UNRESOLVED (15-30 in the opinion vs 12-25 in reporting, ledger O-05 / X-08) and the design removed every sentence-length number graphic from figures. It had come back in this timeline.",
+      "ENDING[5] lowerthird 'He was twenty-two.' -> 'twenty-one.' (same ledger/script conflict as the ticker)"
+    ],
+    "unchanged": "every other figure, the hook line, the section map and all 99 beat payloads are byte-identical to v001"
+  }
+}

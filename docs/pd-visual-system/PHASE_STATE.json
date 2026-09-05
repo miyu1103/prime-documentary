@@ -1,0 +1,282 @@
+{
+  "schema_version": "2.0.0",
+  "system_version": "2.0.0",
+  "project_id": "prime-documentary",
+  "episode_id": "PD-2026-009-timbs",
+  "current_phase": "P12",
+  "phase_status": "candidate_complete",
+  "human_approved_next_phase": "P12",
+  "active_variant": "A",
+  "last_updated": "2026-07-11T20:40:01Z",
+  "updated_by": "claude-code",
+  "history": [
+    {
+      "phase": "P00",
+      "event": "started",
+      "at": "2026-07-11T17:46:15Z"
+    },
+    {
+      "phase": "P00",
+      "event": "candidate_complete",
+      "at": "2026-07-11T17:57:46Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P00_EVIDENCE.md"
+    },
+    {
+      "phase": "P00",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T18:02:22Z",
+      "next": "P01",
+      "approved_by": "owner-go-via-claude-code"
+    },
+    {
+      "phase": "P01",
+      "event": "started",
+      "at": "2026-07-11T18:02:43Z"
+    },
+    {
+      "phase": "P01",
+      "event": "candidate_complete",
+      "at": "2026-07-11T18:10:15Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P01_EVIDENCE.md"
+    },
+    {
+      "phase": "P01",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T18:12:35Z",
+      "next": "P02",
+      "approved_by": "owner-go-via-claude-code"
+    },
+    {
+      "phase": "P00",
+      "event": "rescoped_to_P00",
+      "at": "2026-07-11T18:20:00Z",
+      "by": "claude-code",
+      "reason": "Owner が詳細ブリーフで『今回はP00だけ・自動で先へ進むな』を再指示。P02 Web作業は破棄。P00→P01→P02 の履歴は保持し、current_phase を P00(candidate_complete) に再設定。P01 baseline(候補A)と P02 は着手済みだが正式進行はP00承認まで凍結。",
+      "preserved_artifacts": [
+        "baseline_A.mp4",
+        "BASELINE_DIAGNOSIS.md",
+        "P00/P01 evidence"
+      ]
+    },
+    {
+      "phase": "P00",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T18:36:34Z",
+      "next": "P01",
+      "approved_by": "owner-do-everything"
+    },
+    {
+      "phase": "P01",
+      "event": "started",
+      "at": "2026-07-11T18:36:35Z"
+    },
+    {
+      "phase": "P01",
+      "event": "candidate_complete",
+      "at": "2026-07-11T18:36:35Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P01_EVIDENCE.md"
+    },
+    {
+      "phase": "P01",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T18:36:35Z",
+      "next": "P02",
+      "approved_by": "owner-do-everything"
+    },
+    {
+      "phase": "P02",
+      "event": "started",
+      "at": "2026-07-11T18:36:35Z"
+    },
+    {
+      "phase": "P02",
+      "event": "candidate_complete",
+      "at": "2026-07-11T18:38:19Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P02_EVIDENCE.md"
+    },
+    {
+      "phase": "P02",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T18:38:19Z",
+      "next": "P03",
+      "approved_by": "owner-do-everything"
+    },
+    {
+      "phase": "P03",
+      "event": "started",
+      "at": "2026-07-11T18:38:19Z"
+    },
+    {
+      "phase": "P03",
+      "event": "candidate_complete",
+      "at": "2026-07-11T18:50:16Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P03_EVIDENCE.md"
+    },
+    {
+      "phase": "P03",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T18:57:02Z",
+      "next": "P04",
+      "approved_by": "owner-proceed-nonstop"
+    },
+    {
+      "phase": "P04",
+      "event": "started",
+      "at": "2026-07-11T18:57:02Z"
+    },
+    {
+      "phase": "P04",
+      "event": "candidate_complete",
+      "at": "2026-07-11T19:03:19Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P04_EVIDENCE.md"
+    },
+    {
+      "phase": "P04",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T19:03:57Z",
+      "next": "P05",
+      "approved_by": "owner-proceed-nonstop"
+    },
+    {
+      "phase": "P05",
+      "event": "started",
+      "at": "2026-07-11T19:03:58Z"
+    },
+    {
+      "phase": "P05",
+      "event": "candidate_complete",
+      "at": "2026-07-11T19:17:53Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P05_EVIDENCE.md"
+    },
+    {
+      "phase": "P05",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T19:21:47Z",
+      "next": "P06",
+      "approved_by": "owner-proceed-nonstop"
+    },
+    {
+      "phase": "P06",
+      "event": "started",
+      "at": "2026-07-11T19:21:47Z"
+    },
+    {
+      "phase": "P06",
+      "event": "candidate_complete",
+      "at": "2026-07-11T19:31:58Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P06_EVIDENCE.md"
+    },
+    {
+      "phase": "P06",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T19:47:13Z",
+      "next": "P07",
+      "approved_by": "owner-proceed-nonstop"
+    },
+    {
+      "phase": "P07",
+      "event": "started",
+      "at": "2026-07-11T19:47:13Z"
+    },
+    {
+      "phase": "P07",
+      "event": "candidate_complete",
+      "at": "2026-07-11T20:01:38Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P07_EVIDENCE.md"
+    },
+    {
+      "phase": "P07",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T20:05:03Z",
+      "next": "P08",
+      "approved_by": "owner-proceed-nonstop"
+    },
+    {
+      "phase": "P08",
+      "event": "started",
+      "at": "2026-07-11T20:05:03Z"
+    },
+    {
+      "phase": "P08",
+      "event": "candidate_complete",
+      "at": "2026-07-11T20:23:29Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P08_EVIDENCE.md"
+    },
+    {
+      "phase": "P08",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T20:26:15Z",
+      "next": "P09",
+      "approved_by": "owner-complete-to-end"
+    },
+    {
+      "phase": "P09",
+      "event": "started",
+      "at": "2026-07-11T20:26:15Z"
+    },
+    {
+      "phase": "P09",
+      "event": "candidate_complete",
+      "at": "2026-07-11T20:30:15Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P09_EVIDENCE.md"
+    },
+    {
+      "phase": "P09",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T20:35:40Z",
+      "next": "P10",
+      "approved_by": "owner-approve-all"
+    },
+    {
+      "phase": "P10",
+      "event": "started",
+      "at": "2026-07-11T20:35:40Z"
+    },
+    {
+      "phase": "P10",
+      "event": "candidate_complete",
+      "at": "2026-07-11T20:36:54Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P10_EVIDENCE.md"
+    },
+    {
+      "phase": "P10",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T20:36:54Z",
+      "next": "P11",
+      "approved_by": "owner-approve-all"
+    },
+    {
+      "phase": "P11",
+      "event": "started",
+      "at": "2026-07-11T20:36:54Z"
+    },
+    {
+      "phase": "P11",
+      "event": "candidate_complete",
+      "at": "2026-07-11T20:38:54Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P11_EVIDENCE.md"
+    },
+    {
+      "phase": "P11",
+      "event": "completed_and_advanced",
+      "at": "2026-07-11T20:38:54Z",
+      "next": "P12",
+      "approved_by": "owner-approve-all"
+    },
+    {
+      "phase": "P12",
+      "event": "started",
+      "at": "2026-07-11T20:38:54Z"
+    },
+    {
+      "phase": "P12",
+      "event": "candidate_complete",
+      "at": "2026-07-11T20:40:01Z",
+      "evidence": "C:\\Users\\aab15\\Documents\\prime-documentary\\docs\\pd-visual-system\\P12_DECISION.md"
+    }
+  ],
+  "blockers": [],
+  "assumptions": [
+    "Windows、RTX 4090 24GB、Remotion、H:\\pd-mediaは暫定前提でありP00で検証する。"
+  ]
+}

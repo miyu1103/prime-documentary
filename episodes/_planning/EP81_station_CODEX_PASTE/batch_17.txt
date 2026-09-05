@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 17/24（8枚）
+区分: ACT_4
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S129.png
+   [S129]  flags: 
+   A federal laboratory building exterior on a clear winter morning, hard brilliant sunlight on the facade
+
+2) S130.png
+   [S130]  flags: 
+   A thick bound government report lying closed on a bare table, a hard overhead lamp flaring into the lens, plain unmarked cover
+
+3) S131.png
+   [S131]  flags: 
+   The same report standing upright, brightly side-lit, no lettering
+
+4) S132.png
+   [S132]  flags: 
+   A conference room in brilliant daylight with a long table and a projector screen showing a blank frame
+
+5) S133.png
+   [S133]  flags: 
+   A government hearing room in bright daylight, a raised bench, microphones, empty seating
+
+6) S134.png
+   [S134]  flags: 
+   A lectern with microphones in a bright room, empty, a blank backdrop behind it
+
+7) S135.png
+   [S135]  flags: 
+   An engineering exhibit board on an easel in a bright room, line drawings only, no lettering
+
+8) S136.png
+   [S136]  flags: 
+   A modern small music venue interior in brilliant daylight, sprinkler heads visible on the ceiling, exit signs on two walls

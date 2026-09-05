@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-019-varsityblues",
+  "topic_id": "TOP-20260628-019",
+  "slug": "varsityblues",
+  "title_working": "The Side Door: How the Rich Bought Their Kids Into Elite Colleges",
+  "state": "scheduled",
+  "risk_class": "R3",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "codex_image_prompts": "v001",
+    "audio_mix": "v001",
+    "captions": "v001",
+    "edit": "v001",
+    "youtube_meta": "v001",
+    "final_delivery": "v001",
+    "rights_manifest": "v001",
+    "youtube_schedule_result": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-019-varsityblues-topic",
+      "artifact_type": "topic",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-019-varsityblues/00_topic/topic.v001.json",
+      "checksum": "sha256:ab2180f1dac20d4d48c8316e077770a7d09f93939b33c606c1072c005578fbf7",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-019-varsityblues-sources",
+      "artifact_type": "source_set",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-019-varsityblues/01_research/sources.v001.json",
+      "checksum": "sha256:b4c5df3e0550f4c286b883ea57423ca567cf8a954f422a61fc9b1d381702de94",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-019-varsityblues-claims",
+      "artifact_type": "claim_ledger",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-019-varsityblues/01_research/claims.v001.json",
+      "checksum": "sha256:4f5053406b79303ee8eaa9332d270e29a954695c085504e9cba7ab824b0e61cc",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-019-varsityblues-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-019-varsityblues/03_script/script.annotated.v001.json",
+      "checksum": "sha256:13857eea6b843a1f46e4c8da4086012dfb9ea8a506ddbdaca8dfd3f40454b8ce",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-019-varsityblues-codex-image-prompts",
+      "artifact_type": "image_prompt_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-019-varsityblues/04_scenes/codex_image_prompts.v001.md",
+      "checksum": "sha256:16a6f0a165208c51dd0154faaf67bd7012879414f9cc0624e3ab4a7dbbc805f7",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001",
+    "APR-0002",
+    "APR-0003",
+    "APR-0004"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "R3 (living people who pleaded guilty/were convicted). Dedicated rights/legal review REQUIRED before any publish. No real-person likeness in visuals.",
+    "Left-process only (Claude): topic/research/claims/script. Codex owns scenes/visuals/audio/edit/render.",
+    "Narration sized at measured ~173 wpm to fill ~27 min; validator estimates at 150 wpm.",
+    "Durable source content hashes PENDING (DOJ pages bot-protected); capture before publish (non-blocking).",
+    "Image-prompt pack wave 1 (30 hero stills) committed; waves 2-3 appended after script lock.",
+    "Final-script approval is an OWNER gate: APR-0001 is PENDING (not self-approved)."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-28T00:00:00+00:00",
+  "updated_at": "2026-06-29T18:53:58.581487+00:00",
+  "video_id": "j8U8c4BB_GQ",
+  "video_url": "https://youtu.be/j8U8c4BB_GQ",
+  "public_schedule_active": true
+}

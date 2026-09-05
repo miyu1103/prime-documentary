@@ -1,0 +1,34 @@
+{
+  "schema_version": "final_qc_v1",
+  "episode_id": "PD-2026-006-terry",
+  "revision": "v003",
+  "render": "artifact://episodes/PD-2026-006-terry/08_edit/terry_final_v003.mp4",
+  "render_actual_path": "H:\\pd-media\\episodes\\PD-2026-006-terry\\08_edit\\terry_final_v003.mp4",
+  "sha256": "b28f14502d8a0937e5b5b2eaaff7245cdda6ad04ef99149f8780166cfb75ca26",
+  "duration_seconds": 681.0,
+  "target_duration_seconds": 681.0,
+  "video": "Remotion TerryPremium v003, narration-aligned structure, standard bookends, clear hook animation, 180 local SDXL symbolic hero plates, crossfades, pan/zoom, light motion",
+  "audio": {
+    "narration": "Approved ElevenLabs master reused and slowed to fit timeline",
+    "narration_master": "artifact://episodes/PD-2026-006-terry/06_voice/master/vc_master_v001.mp3",
+    "narration_slowed": "artifact://episodes/PD-2026-006-terry/06_voice/master/vc_master_v001_slowed_672s_for_v003.mp3",
+    "narration_slowed_seconds": 671.984,
+    "music": "Prime Documentary reusable library multi-bed mix",
+    "sfx": "Prime Documentary reusable library spot SFX"
+  },
+  "captions": "artifact://episodes/PD-2026-006-terry/08_edit/captions.final.v003.srt",
+  "contact_sheet": "artifact://episodes/PD-2026-006-terry/08_edit/renders/final.v003.contact_sheet.jpg",
+  "image_plate_count": 180,
+  "synthetic_content_disclosure_required": true,
+  "contains_ai_symbolic_reconstruction": true,
+  "upload_performed": false,
+  "publish_performed": false,
+  "qc_status": "pass_with_warnings",
+  "warnings": [
+    "No upload or publish was performed.",
+    "Caption timing is derived from ElevenLabs chunk timings and uniform slowdown, not Whisper word-level forced alignment.",
+    "Synthetic-content disclosure is required because symbolic AI reconstructions are used."
+  ],
+  "audio_probe_tail": "me= 4741 fps=2285 q=-0.0 size=N/A time=00:02:38.03 bitrate=N/A speed=76.2x elapsed=0:00:02.07    \nframe= 5798 fps=2247 q=-0.0 size=N/A time=00:03:13.26 bitrate=N/A speed=74.9x elapsed=0:00:02.58    \nframe= 7071 fps=2277 q=-0.0 size=N/A time=00:03:55.70 bitrate=N/A speed=75.9x elapsed=0:00:03.10    \nframe= 8332 fps=2299 q=-0.0 size=N/A time=00:04:37.73 bitrate=N/A speed=76.6x elapsed=0:00:03.62    \nframe= 9372 fps=2261 q=-0.0 size=N/A time=00:05:12.40 bitrate=N/A speed=75.4x elapsed=0:00:04.14    \nframe=10412 fps=2234 q=-0.0 size=N/A time=00:05:47.06 bitrate=N/A speed=74.5x elapsed=0:00:04.66    \nframe=11451 fps=2209 q=-0.0 size=N/A time=00:06:21.70 bitrate=N/A speed=73.6x elapsed=0:00:05.18    \nframe=12352 fps=2171 q=-0.0 size=N/A time=00:06:51.73 bitrate=N/A speed=72.4x elapsed=0:00:05.68    \nframe=13348 fps=2150 q=-0.0 size=N/A time=00:07:24.93 bitrate=N/A speed=71.7x elapsed=0:00:06.20    \nframe=14518 fps=2160 q=-0.0 size=N/A time=00:08:03.93 bitrate=N/A speed=  72x elapsed=0:00:06.72    \nframe=15577 fps=2151 q=-0.0 size=N/A time=00:08:39.23 bitrate=N/A speed=71.7x elapsed=0:00:07.24    \nframe=16647 fps=2145 q=-0.0 size=N/A time=00:09:14.90 bitrate=N/A speed=71.5x elapsed=0:00:07.76    \nframe=17669 fps=2138 q=-0.0 size=N/A time=00:09:48.90 bitrate=N/A speed=71.2x elapsed=0:00:08.26    \nframe=18769 fps=2137 q=-0.0 size=N/A time=00:10:25.63 bitrate=N/A speed=71.2x elapsed=0:00:08.78    \nframe=20062 fps=2157 q=-0.0 size=N/A time=00:11:08.70 bitrate=N/A speed=71.9x elapsed=0:00:09.30    \n[Parsed_volumedetect_0 @ 0000024b77e73780] n_samples: 65368064\n[Parsed_volumedetect_0 @ 0000024b77e73780] mean_volume: -16.0 dB\n[Parsed_volumedetect_0 @ 0000024b77e73780] max_volume: -0.7 dB\n[Parsed_volumedetect_0 @ 0000024b77e73780] histogram_0db: 1327\n[Parsed_volumedetect_0 @ 0000024b77e73780] histogram_1db: 14592\n[Parsed_volumedetect_0 @ 0000024b77e73780] histogram_2db: 37523\n[Parsed_volumedetect_0 @ 0000024b77e73780] histogram_3db: 82713\n[out#0/null @ 0000024b77e74540] video:8459KiB audio:127672KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=20430 fps=2170 q=-0.0 Lsize=N/A time=00:11:21.00 bitrate=N/A speed=72.3x elapsed=0:00:09.41    \n",
+  "created_at": "2026-06-21T04:36:47.586867+00:00"
+}

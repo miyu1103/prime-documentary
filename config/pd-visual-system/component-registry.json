@@ -1,0 +1,266 @@
+{
+  "schema_version": "2.0.0",
+  "core_components": [
+    {
+      "name": "EvidenceReveal",
+      "verb": "Reveal",
+      "purpose": "実在資料、証拠、写真、記録の全体から核心へ段階的に視線を移す。",
+      "modes": [
+        "document",
+        "photograph",
+        "record",
+        "exhibit"
+      ],
+      "required_props": [
+        "asset",
+        "focusRegions",
+        "sourceLabel",
+        "revealSequence"
+      ],
+      "tests": [
+        "5/8/12秒",
+        "長文引用",
+        "focusRegion画面外",
+        "素材欠損",
+        "出典ラベル"
+      ]
+    },
+    {
+      "name": "PenaltyVsProperty",
+      "verb": "Compare",
+      "purpose": "金額、罰金、財産、人数、判決前後などを共通軸で段階比較する。",
+      "modes": [
+        "currency",
+        "generic",
+        "before_after",
+        "ratio"
+      ],
+      "required_props": [
+        "left",
+        "right",
+        "comparisonAxis",
+        "sourceLabel"
+      ],
+      "tests": [
+        "単位一致",
+        "負数/ゼロ",
+        "大数表記",
+        "比率精度",
+        "左右長文"
+      ]
+    },
+    {
+      "name": "CaseJourney",
+      "verb": "Trace",
+      "purpose": "事件、裁判所、日付、場所の経路を現在地を一つに保って示す。",
+      "modes": [
+        "timeline",
+        "court_hierarchy",
+        "map_route",
+        "procedural_path"
+      ],
+      "required_props": [
+        "nodes",
+        "activeNode",
+        "direction"
+      ],
+      "tests": [
+        "3/5/8ノード",
+        "同日イベント",
+        "長い裁判所名",
+        "欠損日付",
+        "VFR無関係"
+      ]
+    },
+    {
+      "name": "QuoteUnderExamination",
+      "verb": "Isolate",
+      "purpose": "長い資料から正確な一文または語句を抽出し、文脈と出典を保って読ませる。",
+      "modes": [
+        "holding",
+        "dissent",
+        "statute",
+        "testimony"
+      ],
+      "required_props": [
+        "quote",
+        "source",
+        "emphasisRanges"
+      ],
+      "tests": [
+        "引用一致",
+        "省略記号",
+        "強調範囲",
+        "長文wrap",
+        "引用改変検知"
+      ]
+    },
+    {
+      "name": "VerdictReversal",
+      "verb": "Overturn",
+      "purpose": "旧判断と新判断の差、変わった点、変わらない点を順に示す。",
+      "modes": [
+        "court_reversal",
+        "rule_change",
+        "burden_shift"
+      ],
+      "required_props": [
+        "beforeDecision",
+        "afterDecision",
+        "changed",
+        "unchanged"
+      ],
+      "tests": [
+        "完全逆転",
+        "一部変更",
+        "差戻し",
+        "長文理由",
+        "色だけに依存しない"
+      ]
+    }
+  ],
+  "expansion_components": [
+    {
+      "name": "CaseNetwork",
+      "verb": "Connect",
+      "purpose": "人物、組織、証拠、資金の関係を一つずつ構築する。",
+      "status": "deferred_until_need_is_proven"
+    },
+    {
+      "name": "RuleBoundary",
+      "verb": "Constrain/Classify",
+      "purpose": "原則、許容範囲、禁止範囲、例外を整理する。",
+      "status": "deferred_until_need_is_proven"
+    },
+    {
+      "name": "ImpactExpansion",
+      "verb": "Expand",
+      "purpose": "個別事件から他州、他事件、一般市民への影響を根拠付きで広げる。",
+      "status": "deferred_until_need_is_proven"
+    },
+    {
+      "name": "CaseResolution",
+      "verb": "Resolve",
+      "purpose": "冒頭の問いへ答え、条件と残る問題を返す。",
+      "status": "deferred_until_need_is_proven"
+    },
+    {
+      "name": "ParallaxStill",
+      "verb": "Reconstruct/Isolate",
+      "purpose": "静止画へ弱い奥行きと視線誘導を加える。",
+      "status": "deferred_until_need_is_proven"
+    },
+    {
+      "name": "InvestigativeMapRoute",
+      "verb": "Trace",
+      "purpose": "場所、移動、距離、管轄を正確な地図で示す。",
+      "status": "deferred_until_need_is_proven"
+    },
+    {
+      "name": "ChapterTransition",
+      "verb": "Resolve/Reveal",
+      "purpose": "前章を閉じ、次の問いを2〜4秒で提示する。",
+      "status": "deferred_until_need_is_proven"
+    },
+    {
+      "name": "IncidentReconstruction",
+      "verb": "Reconstruct",
+      "purpose": "既知事実と推測を分けた簡略空間再現を行う。",
+      "status": "deferred_until_need_is_proven"
+    }
+  ],
+  "aliases": {
+    "DocumentReveal": {
+      "canonical": "EvidenceReveal",
+      "mode": "document"
+    },
+    "LegalTimeline": {
+      "canonical": "CaseJourney",
+      "mode": "timeline"
+    },
+    "CourtHierarchy": {
+      "canonical": "CaseJourney",
+      "mode": "court_hierarchy"
+    },
+    "MapRoute": {
+      "canonical": "InvestigativeMapRoute",
+      "mode": null
+    },
+    "ComparisonSplit": {
+      "canonical": "PenaltyVsProperty",
+      "mode": "generic"
+    },
+    "EvidenceBoard": {
+      "canonical": "CaseNetwork",
+      "mode": "evidence_board"
+    },
+    "LegalClassification": {
+      "canonical": "RuleBoundary",
+      "mode": "classification"
+    },
+    "DataCounter": {
+      "canonical": "MetricCounterPrimitive",
+      "mode": null
+    },
+    "CaseFileStack": {
+      "canonical": "EvidenceReveal",
+      "mode": "file_stack"
+    },
+    "RedactionReveal": {
+      "canonical": "EvidenceReveal",
+      "mode": "redaction"
+    },
+    "SurveillanceFrame": {
+      "canonical": "EvidenceReveal",
+      "mode": "surveillance_record"
+    },
+    "StakesEscalation": {
+      "canonical": "ImpactExpansion",
+      "mode": "stakes"
+    },
+    "Dramatization": {
+      "canonical": "IncidentReconstruction",
+      "mode": "dramatization"
+    }
+  },
+  "rules": {
+    "initial_implementation_count": 5,
+    "one_primary_visual_verb_per_scene": true,
+    "no_new_component_without_gap_report": true,
+    "aliases_must_not_create_duplicate_components": true
+  },
+  "primitives": [
+    {
+      "name": "MetricCounterPrimitive",
+      "purpose": "数値の決定論的な表示・更新を提供する内部primitive。"
+    },
+    {
+      "name": "SourceLabel",
+      "purpose": "出典、資料種別、再現ラベルを表示する内部primitive。"
+    },
+    {
+      "name": "FocusRegion",
+      "purpose": "資料内の注目領域を安全に強調する内部primitive。"
+    },
+    {
+      "name": "ConnectorLine",
+      "purpose": "因果、対応、移動を示す内部primitive。"
+    },
+    {
+      "name": "WordCue",
+      "purpose": "ナレーション語タイミングをframe eventへ変換する内部primitive。"
+    },
+    {
+      "name": "SafeTextBlock",
+      "purpose": "長い英語文、引用、固有名詞をsafe area内へ収める内部primitive。"
+    },
+    {
+      "name": "SeededNoise",
+      "purpose": "再現可能な質感・微動を提供する内部primitive。"
+    },
+    {
+      "name": "DisclosureBadge",
+      "purpose": "AI/3D再現や出典種別を必要に応じ表示する内部primitive。"
+    }
+  ]
+}

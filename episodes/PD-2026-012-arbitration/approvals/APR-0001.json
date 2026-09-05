@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-012-arbitration",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T05:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T05:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner delegated EP10-15 topic selection to Claude and approved proceeding to the end. Content/direction sign-off for the arbitration episode (Concepcion 2011 / Epic 2018) script v001, bound to content_hash sha256:d52f9ae2024493aa2e978dba55f1401354722fc7c58dff8ab6d4841b0af45aec — re-approval if revision/hash changes (rules/12). Facts web-verified 2026-06-20 against the primary opinions. Carries forward provided no fact or claim changes.",
+  "conditions": [
+    "Keep strictly NEUTRAL/balanced: 'forced arbitration' is the critics' term (pair with 'mandatory/pre-dispute'); CLM-0007/0008 must stay attributed; do not narrate empirical cost/speed/outcome claims as settled fact.",
+    "Capture durable content hashes for SRC-0001/0002/0003/0004 before publish.",
+    "Name companies only for documented facts; no editorializing."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-012-arbitration/03_script/script.annotated.v001.json"
+}

@@ -1,0 +1,48 @@
+EP66 openfields — 画像発注 バッチ 14/32（6枚）
+区分: ACT_4（23枚）
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, muted natural colour, flat overcast daylight of a late Appalachian autumn, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, restrained documentary framing, rural Pennsylvania and Middle Tennessee between 2019 and 2026, ordinary working farmland and unmanaged second-growth woodland, worn unglamorous surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名を一切描かない（看板の面は必ず「褪せて読めない」状態）
+・警察・制服・記章・銃器・血液・ドローンを描かない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ L148.png
+A small plastic box strapped to a hardwood trunk on a steep slope, its lens face turned away down the hill, the strap pulled hard into moss on the bark, seen from a few feet away and slightly below [STYLE] Avoid: [NEG]
+
+■ L149.png
+The same kind of small plastic box after a long season on the tree: drifted leaves lodged on top of it, a spider web strung from its corner to the bark, the webbing strap faded stiff and bleached, seen very close and level [STYLE] Avoid: [NEG]
+
+■ L150.png
+A worn hollow in the leaf litter beneath hardwoods where feed has repeatedly been put down, a few grains still lying in the churned mud and the ground bare around it, no animal anywhere in the frame [STYLE] Avoid: [NEG]
+
+■ L151.png
+The back of a blank weathered placard on a trunk seen from inside the property, the nail points standing through the board and the open wood running away beyond it, seen close and slightly from one side [STYLE] Avoid: [NEG]
+
+■ L152.png
+First light in bare hardwood on a cold morning, frost on the leaf litter and the trunks still half in shadow, the sky between the branches only just gone pale, no person and no animal in the frame [STYLE] Avoid: [NEG]
+
+■ L153.png
+A heap of rotting apple mash collapsing into the leaf litter under bare trees, the fruit browned and broken open and the ground stained around it, seen from a few feet away at waist height [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: L070.png）で保存してください。
+長辺 3840px 以上・16:9・PNG。

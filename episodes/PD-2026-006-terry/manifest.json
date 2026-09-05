@@ -1,0 +1,671 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-006-terry",
+  "topic_id": "TOP-20260620-006",
+  "slug": "terry",
+  "title_working": "A Cop Can Search You Without a Warrant — Here's the Catch",
+  "state": "published",
+  "risk_class": "R2",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "scene_plan": "v001",
+    "shotlist": "v001",
+    "visual_bible": "v001",
+    "codex_image_prompts": "v001",
+    "remotion_plan": "v001",
+    "visual_qc_plan": "v001",
+    "asset_selection": "v001",
+    "rights_manifest": "v003",
+    "asset_generation_script": "v001",
+    "remotion_component": "v001",
+    "edit_build_script": "v001",
+    "captions_review_proxy": "v001",
+    "review_proxy_qc": "v001",
+    "review_proxy_render": "v001",
+    "thumbnail_component": "v001",
+    "thumbnail_build_script": "v001",
+    "thumbnail_options": "v001",
+    "narration_index": "v001",
+    "narration_generation_script": "v001",
+    "final_build_script": "v003",
+    "captions_final": "v003",
+    "final_qc": "v003",
+    "youtube_meta": "v003",
+    "final_render": "v001",
+    "youtube_schedule_result": "v001",
+    "youtube_thumbnail_update": "v003",
+    "thumbnail_option_09": "v001",
+    "final_delivery": "v003",
+    "youtube_publish_result": "v003"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-006-terry-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/03_script/script.annotated.v001.json",
+      "checksum": "sha256:6211aa2f4eddbc26545abc77a69e92b2b2a79f7954c6e03b866614817bf4426d",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-scene-plan",
+      "artifact_type": "scene_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/scene_plan.v001.json",
+      "checksum": "sha256:7a21af708581ea224bc728c046629bcbf2fecada9985339c2cc91f696c7edf04",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-asset-selection",
+      "artifact_type": "asset_selection",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/05_visuals/asset_selection.v001.json",
+      "checksum": "sha256:1b0901753e0d7030922601ca97920c2c9ad611b3d4bd9ff6cb66d20780f2ecc2",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-S003-IMG-001",
+      "artifact_type": "image_asset_metadata",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/05_visuals/assets/PD-2026-006-terry-S003-IMG-001.v001.json",
+      "checksum": "sha256:8bae321a47e90fc165ae3e9eaa9686dbdc1e0722b188b138978617af5bdbfc44",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-S004-IMG-001",
+      "artifact_type": "image_asset_metadata",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/05_visuals/assets/PD-2026-006-terry-S004-IMG-001.v001.json",
+      "checksum": "sha256:d16260053f9a1f735b22ddda6b58cd6cb6dd0a2b1df5ede4a8258fb37e5bb287",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-S018-IMG-001",
+      "artifact_type": "image_asset_metadata",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/05_visuals/assets/PD-2026-006-terry-S018-IMG-001.v001.json",
+      "checksum": "sha256:8a74a0cbfdc767f318433f433057a3da83aa519cf6c185fe9a338c3bb4cb3996",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-rights-manifest",
+      "artifact_type": "rights_manifest",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json",
+      "checksum": "sha256:2352730266114a8585cbf14254ca6090535f8c9f5a3aacdeb87d92980967983f",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-asset-generation-script",
+      "artifact_type": "asset_generation_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/gen_terry_sdxl_ultra.py",
+      "checksum": "sha256:fbbba2465126d7e2d3fb119a13d577b3bec97c7d051b810baf4e5ea14581f3f7",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-shotlist",
+      "artifact_type": "shotlist",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/shotlist.v001.md",
+      "checksum": "sha256:0e3e425607564fd57f19de04d3aa0a5529591d3ddae3110d6277217d9b11e3ce",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-visual-bible",
+      "artifact_type": "visual_bible",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/visual_bible.v001.json",
+      "checksum": "sha256:8d472208b9d94861a8c4e6afd16b8bbbb5d01c8f966cf52106198221e4717bc6",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-codex-image-prompts",
+      "artifact_type": "image_prompt_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/codex_image_prompts.v001.md",
+      "checksum": "sha256:46d68a706bf0e0d066bce76306d3a41e364774509e4dc72a82a7c3f18ffe9496",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-remotion-plan",
+      "artifact_type": "remotion_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/remotion_plan.v001.json",
+      "checksum": "sha256:0d8dbab48765872b4b179240229f8972ddedcb96bbf90eda0ac16b601bdf7678",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-visual-qc-plan",
+      "artifact_type": "visual_qc_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/visual_qc_plan.v001.md",
+      "checksum": "sha256:ed93170b2055a062b1c23dd86b9d0371fd8743aaf36d232a560065afca582abf",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-remotion-component",
+      "artifact_type": "remotion_component",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/compositions/TerryPremium.tsx",
+      "checksum": "sha256:f7e569d1f1404f43443fb88da191e48444c2e2bf7e7f8885f529fb8e57b4fcad",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-remotion-entry",
+      "artifact_type": "remotion_entry",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/terry_index.tsx",
+      "checksum": "sha256:6fdafb92e14a501154957bcee1c7f22f7cb2a152b32350c3735d621d48b82c8e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-edit-build-script",
+      "artifact_type": "edit_build_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/build_terry_review_v001.py",
+      "checksum": "sha256:f2d3de285b21db6ba34ee057c3df741b9228e19b19d2127fd5a52bd1869c8d05",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-captions-review-proxy",
+      "artifact_type": "captions",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/captions.review_proxy.v001.srt",
+      "checksum": "sha256:daa4ea91f4fd0c76e15e8c0e492c4a2011f8ff1e8c9275224185682e5fe4da6b",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-review-proxy-qc",
+      "artifact_type": "qc_report",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/renders/review.proxy.v001.qc.json",
+      "checksum": "sha256:d9778166cfe4b2a5e1e454fbbab73321c533001c54096d952d66dbac9b580f09",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-review-proxy-render",
+      "artifact_type": "review_proxy_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/terry_review_proxy_v001.mp4",
+      "checksum": "sha256:3a2136b68826ada0879fcd04136bbda4fe7c5d930a9517656afd5e8b426e913c",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-component",
+      "artifact_type": "thumbnail_component",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/compositions/TerryThumbnails.tsx",
+      "checksum": "sha256:e25008d42e370f2b276008f4e3eea09bb3e5ade047c05cd1e7b1533b3790fcfa",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-build-script",
+      "artifact_type": "thumbnail_build_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/build_terry_thumbnails_v001.py",
+      "checksum": "sha256:7a3012cc303b57e1643dba4010fc9fa1a3c23739be60e60ef9cc945eb5c06ac3",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-options",
+      "artifact_type": "thumbnail_options",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_options.v001.json",
+      "checksum": "sha256:2de878ee1a4f202deef5c9210449aa28e224e78edb9edb79a183a1643161aea9",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-contact-sheet",
+      "artifact_type": "thumbnail_contact_sheet",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_contact_sheet.v001.jpg",
+      "checksum": "sha256:b558384d27df8748b7e16e95e4e234ec74d14b94829ce4077d72adf37b9e492a",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-01",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_01.v001.png",
+      "checksum": "sha256:e08e467a3ec9f4420f46321cac4594bbaceb3293311c652d024bf5d0b3ffba99",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-02",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_02.v001.png",
+      "checksum": "sha256:d1a95ac2effcfc4851231d1fc1faa18b2cf84c3ab905a03f7e076fe7c8ce1fc8",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-03",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_03.v001.png",
+      "checksum": "sha256:366d86b243fa07962dcbb4f93a8b11d97b37b927a0f06e12ca7e0c8eda6978f4",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-04",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_04.v001.png",
+      "checksum": "sha256:f327918727c6548501a5917d05acbaec0e4d9131547a32465ca01ba7c01d6093",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-05",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_05.v001.png",
+      "checksum": "sha256:d6e73e7abdbb57235751988fc7775af996b0a6a6139ac8843f507d39850f84f6",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-06",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_06.v001.png",
+      "checksum": "sha256:0f74baa103d2f772a291e781380303926e9ea10d372472764661d84c914e0dec",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-07",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_07.v001.png",
+      "checksum": "sha256:0adde85c93ccd5ca83eea695531b14a0433d985ccd5e22bfa9ba49a3601f24d6",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-08",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_08.v001.png",
+      "checksum": "sha256:2410160486162ad7e2b0f25c8e6f92dbcba19177a1618622e9fb28f366a4acc0",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-bg-008",
+      "artifact_type": "thumbnail_background",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/codex_keyart_background.v008.png",
+      "checksum": "sha256:fd6f3e4300fe36a37632b11fe2f4453a7804a8b080c707a07cde2930a8337aa4",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0002",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0002.json",
+      "checksum": "sha256:fe16324650a7908b5f1cae4348d141c679157987103bd89b162f815defec23fe",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0003",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0003.json",
+      "checksum": "sha256:d41028303fd92db37ee9404d4cfd7730e6c4aa149238150b313791d6ba862db8",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0005",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0005.json",
+      "checksum": "sha256:8adb028150a3e2ae39696894ee6f6651e27384d8058e1a62913e3a6f61658001",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-narration-generation-script",
+      "artifact_type": "narration_generation_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/gen_narration_terry.py",
+      "checksum": "sha256:e2ce414c3c367ba0ff54df3d5c246267b89a63caa27d8152012c0ac88403e441",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-build-script",
+      "artifact_type": "final_build_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/build_terry_final_v001.py",
+      "checksum": "sha256:88a4ef888dc51bf89cfb9414b2f9ceedcdf1eb8f96a4f9ec69ebd4a02027b025",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-narration-index",
+      "artifact_type": "narration_index",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/06_audio/narration_index.v001.json",
+      "checksum": "sha256:42d220ce05ee784546207887d3a4f36d3e08848f8a88d409b9a7c59d7851bcae",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-captions-final",
+      "artifact_type": "captions",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/captions.final.v001.srt",
+      "checksum": "sha256:16f341f1b4e1edfe2476ea401a218f1417c27a4ccffc54109bd3e75c1e74b5c9",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-qc",
+      "artifact_type": "qc_report",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/renders/final.v001.qc.json",
+      "checksum": "sha256:27d4b133162778235be3c9245bdc5efe312257004ba5382ee3296b53a2b2b9a2",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-youtube-meta",
+      "artifact_type": "youtube_metadata",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_meta.v001.json",
+      "checksum": "sha256:b1ac89dbf0e08e0415db7d079bfc283656092c9a7ae7686d8aa2225121c1bc2f",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-render",
+      "artifact_type": "final_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/terry_final_v001.mp4",
+      "checksum": "sha256:938897c59113adb46d501b81c379ab692dc918fd8c931a9f4743cb9a8d30343e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0004",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0004.json",
+      "checksum": "sha256:ebace393caaa0ecd3f053231739f2b273921a6e1ac489d3d55ac30bcbbac1c95",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-youtube-schedule-result",
+      "artifact_type": "youtube_schedule_result",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_schedule_update.v003.json",
+      "checksum": "sha256:2c239fa01e7b976d30919111434ac20c696ba175d377373cd9daa5244dc63498",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-09",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_09_codex_beauty.v001.png",
+      "checksum": "sha256:5f364026fc46758441c9673e47cdd93f96ceec265810d2267643d0d4695c45bf",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-09-report",
+      "artifact_type": "thumbnail_report",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_09_codex_beauty.v001.json",
+      "checksum": "sha256:9436211505ebfaf95fab314286821cacf23730ec6c054978d8d9cc1a3c7fb87e",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0006",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0006.json",
+      "checksum": "sha256:b0e46404eca9702348ebeb2daede2e295f11cab59cc7706d64e9594b8c20595c",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-youtube-thumbnail-update",
+      "artifact_type": "youtube_thumbnail_update",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_thumbnail_update.v003.json",
+      "checksum": "sha256:07d46b523ff206e1dbb78f9fa337ca8bc3085b6bab2d5c30821c4f91fc0fa450",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0007",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0007.json",
+      "checksum": "sha256:b684e494ca8cf76a333df1a0339d56ada635b7b5eea63961ed1f79bfd83604f4",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0008",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0008.json",
+      "checksum": "sha256:757588155b203ee0daa680817677873bb8ba4977ef9a9761411f951b0246e804",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-qc-v003",
+      "artifact_type": "qc_report",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/renders/final.v003.qc.json",
+      "checksum": "sha256:5fedc2ebd6c013ec6647a9e4ad6964dcd92a8e7caa36b0e7857622b1aae1b340",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-delivery-v003",
+      "artifact_type": "final_delivery_manifest",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/final_delivery.v003.json",
+      "checksum": "sha256:bd6718ef2a93eea3a6b404a78031218191555b956dcf4275f8bb38f137078f8c",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-rights-manifest-v003",
+      "artifact_type": "rights_manifest",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/rights_manifest.v003.json",
+      "checksum": "sha256:f9361e8f28076333c3f8a2f9c676b38e0b96cc4682a9991c1ed7afb84741aee2",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-render-v003",
+      "artifact_type": "final_render",
+      "revision": "v003",
+      "uri": "H:\\pd-media\\episodes\\PD-2026-006-terry\\08_edit\\terry_final_v003.mp4",
+      "checksum": "sha256:b28f14502d8a0937e5b5b2eaaff7245cdda6ad04ef99149f8780166cfb75ca26",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-youtube-meta-v003",
+      "artifact_type": "youtube_metadata",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_meta.v003.json",
+      "checksum": "sha256:360af639e06a71dec927651193384ecd228bfcba8d2db4795cad2850cdf2f7b9",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-youtube-publish-result-v003",
+      "artifact_type": "youtube_publish_result",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_publish_result.v003.json",
+      "checksum": "sha256:d20b47158b622508349e1b3656ee7bc6399770549f9cbaa0746c63852d53a41f",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001",
+    "APR-0002",
+    "APR-0003",
+    "APR-0004",
+    "APR-0005",
+    "APR-0006",
+    "APR-0007",
+    "APR-0008"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 2.75,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 2.75,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Claude owns research+script; Codex begins production at scenes/visuals (see episodes/_planning/EP6-8_HANDOFF.md). Image generation = Codex; edit = Remotion+FFmpeg.",
+    "script_qc PASS (readability grade 7-8, no AI-filler, claim-links consistent) and draft-voice word-count timing ~11min; promoted to script_verified.",
+    "Durable source content hashes captured 2026-06-20.",
+    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo.",
+    "Scene package v001 created by Codex from locked script/annotated spans; script, annotated script, and claims were not modified.",
+    "Owner set premium image bar: selected AI stills must pass visual_qc_plan.v001.md; placeholders are not acceptable for first-cut.",
+    "Asset generation started locally via A1111/SDXL. S003 establishing image approved; S001 stop/pat-down candidates rejected/not locked due visual/QC defects.",
+    "S004 approved as empty storefront background; the repeated two-person path/counter is handled by exact Remotion graphics to avoid generated-face/text risk.",
+    "S018 approved as outer-clothing boundary motif only; not to be used as literal pat-down action without Remotion weapons-only overlay.",
+    "First-cut review proxy rendered locally with Remotion + FFmpeg; no paid API, external upload, or publish performed.",
+    "Review proxy uses local Windows SAPI draft narration; ElevenLabs master requires explicit owner approval and will require caption re-alignment.",
+    "QC notes: duration/streams pass; blackdetect flags the dark endcard background and freezedetect flags short low-motion segments, both documented for v002 polish.",
+    "Thumbnail gate package rendered: five Remotion options plus title candidates; no upload/publish performed, owner selection still required.",
+    "Package-ready local final render created with ElevenLabs narration under APR-0002; no upload or publish performed.",
+    "Title/thumbnail selected under APR-0003: recommended title + thumbnail_option_01.v001.png.",
+    "Publish remains blocked until separate publish approval; YouTube synthetic-content disclosure required.",
+    "Thumbnail selection revised after owner requested a denser option: thumbnail_option_06.v001.png selected; upload/publish still not approved.",
+    "Thumbnail selection revised again after owner requested a more beautiful Codex-made image: thumbnail_option_07.v001.png selected; upload/publish still not approved.",
+    "Thumbnail selection revised again after owner requested a more beautiful detailed Codex-generated image: thumbnail_option_08.v001.png selected; upload/publish still not approved.",
+    "YouTube private upload completed and scheduled under APR-0004: video_id dcqWIPXun7c, public release 2026-06-21T12:00:00+09:00; thumbnail_option_08.v001.png set.",
+    "Publish schedule approved under APR-0005 for 2026-06-22T12:00:00+09:00 (2026-06-22T03:00:00Z); upload/schedule script must verify channel allowlist and exact hashes before external write.",
+    "YouTube upload completed as private and scheduled for 2026-06-22T12:00:00+09:00; public immediate publish not performed.",
+    "YouTube thumbnail replaced under APR-0006: thumbnail_option_09_codex_beauty.v001.png set on video_id dcqWIPXun7c; video file, metadata, privacy, and schedule were not changed.",
+    "YouTube upload completed as private and scheduled for 2026-06-21T12:00:00+09:00; public immediate publish not performed.",
+    "YouTube public upload completed for Terry v003 under APR-0008: video_id bYcqabvvxak. Synthetic-content disclosure set; previous video check/action: not_found_no_action."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-20T00:00:00+09:00",
+  "updated_at": "2026-06-21T04:57:45.970288+00:00",
+  "video_id": "bYcqabvvxak",
+  "video_url": "https://youtu.be/bYcqabvvxak"
+}

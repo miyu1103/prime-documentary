@@ -1,0 +1,764 @@
+{
+ "schema_version": "pd_filmconfig.v001",
+ "slug": "correa",
+ "episode_id": "PD-2026-063-correa",
+ "assets": "episodes/PD-2026-063-correa/05_visuals/asset_manifest.v003.json",
+ "narration_index": "episodes/PD-2026-063-correa/06_audio/narration_index.v001.json",
+ "narration": "correa/narration.mp3",
+ "captions": "episodes/PD-2026-063-correa/08_edit/captions.final.v001.srt",
+ "out": "remotion/src/data/correa_film.json",
+ "hookSeconds": 8.0,
+ "hookLine": "She was handed a number and told to bide her time. Forty-seven. Two hours later, she got up and left.",
+ "figures_by_section": {
+  "HOOK": [
+   {
+    "kind": "lowerthird",
+    "primary": "AI-assisted visualization",
+    "secondary": "symbolic reconstruction, no real likenesses"
+   },
+   {
+    "kind": "numberticker",
+    "value": 47,
+    "label": "The number she was handed",
+    "group": false
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "TWO HOURS LATER,",
+     "SHE GOT UP AND LEFT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "GOT UP AND LEFT"
+    ]
+   }
+  ],
+  "OP": [
+   {
+    "kind": "lowerthird",
+    "primary": "CORREA v. HOSPITAL SAN FRANCISCO",
+    "secondary": "United States Court of Appeals, First Circuit — 31 October 1995"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NOBODY DISCHARGED HER.",
+     "NOBODY SAID NO."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOBODY"
+    ]
+   },
+   {
+    "kind": "numberticker",
+    "value": 700000,
+    "prefix": "$",
+    "label": "Awarded by the jury. Not reduced by a dollar.",
+    "group": true
+   }
+  ],
+  "ACT_1": [
+   {
+    "kind": "acttitle",
+    "title": "THE AFTERNOON",
+    "kicker": "ACT ONE",
+    "index": 1
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "CARMEN GLORIA GONZALEZ FIGUEROA",
+    "secondary": "Sixty-five. A widow. Inside the emergency room no later than one o'clock."
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Angel Correa: he implored the receptionist, she has chest pains",
+      "value": 1
+     },
+     {
+      "label": "The Hospital: its personnel were told only dizzy and nauseated",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "TWO ACCOUNTS.",
+     "ONE COUNTER."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "ONE COUNTER"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "the thicket of conflicting testimony and the chasmal gaps in the direct evidence",
+    "attribution": "Judge Bruce Selya, Correa v. Hospital San Francisco, 69 F.3d 1184 (1st Cir. 1995)"
+   },
+   {
+    "kind": "numberticker",
+    "value": 47,
+    "label": "The number a Hospital employee assigned her, before telling her to bide her time",
+    "group": false
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "HER INSURANCE CARD WAS CHECKED",
+    "secondary": "Her plan allowed any appropriate provider in an emergency. She was entitled to be there."
+   },
+   {
+    "kind": "stat",
+    "value": 24,
+    "label": "The number called as her son left, an hour in"
+   },
+   {
+    "kind": "quote",
+    "quote": "The Hospital staff continued blithely to ignore her.",
+    "attribution": "Correa v. Hospital San Francisco (1st Cir. 1995)"
+   },
+   {
+    "kind": "stat",
+    "value": 0,
+    "label": "Physicians who saw her in that time"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "SHE LEFT BECAUSE SHE HAD BEEN WAITING",
+    "secondary": "The opinion does not describe anyone turning her away. It does not describe anyone discharging her."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AT THE CLINIC",
+    "secondary": "Blood pressure ninety over sixty. Intravenous fluids. Medicine to control the vomiting."
+   },
+   {
+    "kind": "casetimeline_c",
+    "events": [
+     {
+      "year": "1:00 pm",
+      "text": "Inside the emergency room, at the latest"
+     },
+     {
+      "year": "~2:15 pm",
+      "text": "Number twenty-four is called"
+     },
+     {
+      "year": "3:00-3:30",
+      "text": "She gets up and drives to a clinic"
+     },
+     {
+      "year": "~4:30 pm",
+      "text": "She dies there, under a physician's care"
+     }
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "DEATH ATTRIBUTED TO",
+     "HYPOVOLEMIC SHOCK."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "HYPOVOLEMIC SHOCK"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AT ANOTHER FACILITY, UNDER A PHYSICIAN'S CARE",
+    "secondary": "The opinion never says the delay killed her, and never says she would have lived"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE ONE O'CLOCK CALL",
+    "secondary": "A nurse called Hospmed to say the patient would be coming. Dr. Rojas's recollection."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "PROBABLY.",
+     "PERHAPS.",
+     "SUGGESTING."
+    ],
+    "style": "maskslide"
+   }
+  ],
+  "ACT_2": [
+   {
+    "kind": "acttitle",
+    "title": "SEVEN PLAINTIFFS",
+    "kicker": "ACT TWO",
+    "index": 2
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE MALPRACTICE CLAIM",
+     "DID NOT SURVIVE.",
+     "NOT WHETHER SHE WAS TREATED WELL.",
+     "WHETHER SHE WAS LOOKED AT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "LOOKED AT"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE JURY'S SPECIAL WRITTEN FINDINGS",
+    "secondary": "An emergency condition. No appropriate screening. An improper transfer."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE IMPROPER-TRANSFER FINDING",
+    "secondary": "Footnote seven. The court of appeals never reviewed it, and it plays no part in what this case decided."
+   },
+   {
+    "kind": "bar",
+    "items": [
+     {
+      "label": "On the decedent's own account, payable to the heirs",
+      "value": 200000
+     },
+     {
+      "label": "The survivors' pain, suffering and mental anguish",
+      "value": 500000
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "the trial judge's unconditional seal of approval",
+    "attribution": "Correa (1st Cir. 1995), n.10, on the district court's treatment of the award"
+   },
+   {
+    "kind": "stat",
+    "value": 8,
+    "label": "Assignments of error on appeal. None of them worked."
+   },
+   {
+    "kind": "quote",
+    "quote": "This appeal requires us to interpret, for the first time, the Emergency Medical Treatment and Active Labor Act",
+    "attribution": "Correa v. Hospital San Francisco (1st Cir. 1995), opening line"
+   },
+   {
+    "kind": "quote",
+    "quote": "about the increasing number of reports that hospital emergency rooms are refusing to accept or treat patients with emergency conditions if the patient does not have medical insurance",
+    "attribution": "H.R. Rep. No. 241(I), 99th Cong., 1st Sess. 27 (1986), quoted in Correa (1st Cir. 1995)"
+   },
+   {
+    "kind": "mechanism",
+    "mechanism": "gears"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NOBODY IS COMMANDED.",
+     "EVERYBODY IS PAID."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "EVERYBODY IS PAID"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TWO LINCHPIN PROVISIONS",
+    "secondary": "An appropriate screening — and stabilisation if an emergency condition is found"
+   },
+   {
+    "kind": "numberticker",
+    "value": 50000,
+    "prefix": "$",
+    "label": "The ceiling on the penalty for each negligent violation",
+    "group": true
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ELEMENT THREE HAS TWO DOORS",
+    "secondary": "No appropriate screening — or bade farewell without stabilising. This case went through the first."
+   },
+   {
+    "kind": "quote",
+    "quote": "This suggestion finds no purchase in the statute's text, and we reject it.",
+    "attribution": "Correa (1st Cir. 1995), n.5, rejecting the contrary dictum"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE DUTY TO LOOK",
+     "DOES NOT DEPEND ON WHAT",
+     "THE LOOKING WOULD HAVE FOUND."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "DOES NOT DEPEND"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "BUT THE DAMAGES REMEDY STILL REQUIRES HARM",
+    "secondary": "Civil penalties are imposable irrespective of resulting harm. The statutory damage remedy is not."
+   }
+  ],
+  "ACT_3": [
+   {
+    "kind": "acttitle",
+    "title": "A MUTABLE CLOUD",
+    "kicker": "ACT THREE",
+    "index": 3
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "IT HAD WRITTEN A MANUAL ON EMTALA COMPLIANCE",
+    "secondary": "Its own executive told the jury he had trained the staff on it. Then it argued the law did not apply."
+   },
+   {
+    "kind": "quote",
+    "quote": "This argument has the shrill ring of desperation.",
+    "attribution": "Correa v. Hospital San Francisco (1st Cir. 1995)"
+   },
+   {
+    "kind": "stat",
+    "value": 99,
+    "suffix": "%",
+    "label": "Of American hospitals covered by EMTALA — the court's figure, given without a citation. Ninety-nine is not one hundred."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE SECOND ARGUMENT",
+    "secondary": "That she had no emergency condition when she reported to the facility — \"doubly flawed\""
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "HSF CONCEDES:",
+     "CHEST PAINS AT HER AGE",
+     "WOULD BE AN EMERGENCY."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "CONCEDES"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "Credibility choices are generally for the jury, not for the court of appeals.",
+    "attribution": "Correa v. Hospital San Francisco (1st Cir. 1995)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "A HYPERTENSIVE DIABETIC",
+    "secondary": "Nausea and dizziness might well herald the onset of an emergency condition — as Dr. Rojas explained"
+   },
+   {
+    "kind": "quote",
+    "quote": "Appropriate is one of the most wonderful weasel words in the dictionary",
+    "attribution": "Cleland v. Bronson Health Care Group (6th Cir. 1990), quoted in Correa (1st Cir. 1995)"
+   },
+   {
+    "kind": "quote",
+    "quote": "appropriateness, like nature, is a mutable cloud which is always and never the same",
+    "attribution": "Judge Bruce Selya, after Emerson, in Correa (1st Cir. 1995)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE TEST THE COURTS HAD BUILT",
+    "secondary": "A screening reasonably calculated to identify critical conditions — provided uniformly to substantially similar complaints"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "SOME PROCEDURE.",
+     "ADMINISTERED",
+     "EVEN-HANDEDLY."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "EVEN-HANDEDLY"
+    ]
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "A hospital that examines you badly has not broken this law",
+      "value": 0
+     },
+     {
+      "label": "A hospital that examines you differently, or not at all, has",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "TAKE VITAL SIGNS.",
+     "MAKE A WRITTEN RECORD.",
+     "TREAT CHEST PAIN AS CRITICAL.",
+     "REFER TO A PHYSICIAN AT ONCE."
+    ],
+    "style": "maskslide"
+   },
+   {
+    "kind": "quote",
+    "quote": "the Hospital's utter inability to produce any records",
+    "attribution": "Correa v. Hospital San Francisco (1st Cir. 1995)"
+   },
+   {
+    "kind": "stat",
+    "value": 0,
+    "label": "Records produced for a patient who had been inside for two hours"
+   },
+   {
+    "kind": "quote",
+    "quote": "we need not decide whether mere negligence in failing to expedite screening would itself violate the federal statute",
+    "attribution": "Correa (1st Cir. 1995) — the door the panel left shut"
+   }
+  ],
+  "ACT_4": [
+   {
+    "kind": "acttitle",
+    "title": "SHADES OF GRAY",
+    "kicker": "ACT FOUR",
+    "index": 4
+   },
+   {
+    "kind": "quote",
+    "quote": "facts at trial, as in life, do not always appear in black and white",
+    "attribution": "Correa v. Hospital San Francisco (1st Cir. 1995)"
+   },
+   {
+    "kind": "stat",
+    "value": 0,
+    "label": "People shown to have refused her, discharged her, or told her to leave"
+   },
+   {
+    "kind": "quote",
+    "quote": "it gave the patient a number, and would have ministered to her had she waited",
+    "attribution": "Correa (1st Cir. 1995) — the Court's statement of the Hospital's point"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THIS CONTENTION",
+     "IS SPURIOUS."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "SPURIOUS"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE FIRST REASON · THE TELEPHONE CALL",
+    "secondary": "Described by Dr. Rojas — and the panel notes, as an aside, that HSF called her as its witness"
+   },
+   {
+    "kind": "quote",
+    "quote": "was itself responsible for truncating her wait",
+    "attribution": "Correa (1st Cir. 1995), on what the jury could have found if it believed the physician"
+   },
+   {
+    "kind": "quote",
+    "quote": "regardless of motive, a complete failure to attend a patient who presents a condition that practically everyone knows may indicate an immediate and acute threat to life can constitute a denial of an appropriate medical screening examination",
+    "attribution": "Correa v. Hospital San Francisco, 69 F.3d 1184 (1st Cir. 1995)"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "ABSENT ANY",
+     "EXPLANATION."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "ABSENT"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "EMTALA should be read to proscribe both actual and constructive dumping of patients.",
+    "attribution": "Correa v. Hospital San Francisco, 69 F.3d 1184 (1st Cir. 1995)"
+   },
+   {
+    "kind": "quote",
+    "quote": "a high number and a cold shoulder",
+    "attribution": "Correa (1st Cir. 1995), on what the jury could have concluded she received"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "The number in her hand",
+      "value": 47
+     },
+     {
+      "label": "The number the attendant called",
+      "value": 24
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE LAST ARGUMENT",
+    "secondary": "That liability requires an economic motive. She was insured, so none could have existed."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "EVERY COURT OF APPEALS",
+     "THAT HAD CONSIDERED IT",
+     "HAD SAID NO."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "EVERY"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "covers all patients who come to a hospital's emergency department, and requires that they be appropriately screened, regardless of insurance status or ability to pay",
+    "attribution": "Correa v. Hospital San Francisco (1st Cir. 1995), the holding on motive"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ESURIENT",
+    "secondary": "All insurance plans are not created equal — the panel's footnote on why insurance does not end the inquiry"
+   },
+   {
+    "kind": "quote",
+    "quote": "A participating hospital may not delay provision of an appropriate medical screening examination required under subsection (a) of this section … in order to inquire about the individual's method of payment or insurance status.",
+    "attribution": "42 U.S.C. § 1395dd(h), reproduced in the appendix to Correa (1st Cir. 1995)"
+   }
+  ],
+  "ACT_5": [
+   {
+    "kind": "acttitle",
+    "title": "THE BARN DOOR",
+    "kicker": "ACT FIVE",
+    "index": 5
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE BEST ARGUMENT IT HAD",
+    "secondary": "That EMTALA pays the patient's harm, and not seven relatives' grief. The court never decided it."
+   },
+   {
+    "kind": "casetimeline_c",
+    "events": [
+     {
+      "year": "The answer",
+      "text": "Not raised"
+     },
+     {
+      "year": "Scheduling conference",
+      "text": "Not raised"
+     },
+     {
+      "year": "Pretrial order",
+      "text": "Signed by all counsel. No mention of it."
+     },
+     {
+      "year": "Trial brief",
+      "text": "Three legal issues. Not this one."
+     },
+     {
+      "year": "Rule 50(a), twice",
+      "text": "Not raised"
+     },
+     {
+      "year": "Verdict forms",
+      "text": "No objection"
+     }
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THIS WAS A WAIVER,",
+     "PURE AND SIMPLE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "WAIVER"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "Based on this somber record of inattention",
+    "attribution": "Correa (1st Cir. 1995), on the defence the hospital forfeited"
+   },
+   {
+    "kind": "quote",
+    "quote": "a classic example of a litigant locking the barn door long after the horse has bolted",
+    "attribution": "Correa v. Hospital San Francisco (1st Cir. 1995)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "RULE 50(b) IS BOUNDED BY RULE 50(a)",
+    "secondary": "A renewed motion cannot introduce a theory not distinctly articulated at the close of the evidence"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NOT DECIDED.",
+     "FORFEITED."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "FORFEITED"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "grossly excessive, inordinate, shocking to the conscience of the court, or so high that it would be a denial of justice to permit it to stand",
+    "attribution": "Segal v. Gilbert Color Sys. (1st Cir. 1984), quoting Grunenthal (1968) — the excessiveness standard applied in Correa"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE HUB OF THE FAMILY CIRCLE",
+    "secondary": "A matriarchal figure. Her son lived with her; her two daughters resided nearby."
+   },
+   {
+    "kind": "stat",
+    "value": 5,
+    "label": "Months between the grandchildren losing their father and losing her"
+   },
+   {
+    "kind": "numberticker",
+    "value": 5,
+    "suffix": " years",
+    "label": "Up to five years, an expert said, for the grandchildren's suffering to abate",
+    "group": false
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE TRUNK OF THE FAMILY TREE",
+    "secondary": "One witness's description of her. The sums awarded do not shock the court's collective conscience."
+   },
+   {
+    "kind": "quote",
+    "quote": "Though generous, the jury's assessment does not outstrip the bounds of reason.",
+    "attribution": "Correa v. Hospital San Francisco (1st Cir. 1995)"
+   },
+   {
+    "kind": "quote",
+    "quote": "Ms. Gonzalez spent the few remaining hours of her life in agony, beset by nausea, dizziness, and chest pains",
+    "attribution": "Correa (1st Cir. 1995), giving its reason for the award on her own account"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NOT HER DEATH.",
+     "THE WAITING."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "THE WAITING"
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NOTHING WAS REVERSED.",
+     "NOTHING WAS VACATED.",
+     "NO REMITTITUR."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOTHING"
+    ]
+   }
+  ],
+  "ENDING": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "IT DOES NOT",
+     "GUARANTEE TREATMENT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOT"
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "IT DOES NOT MAKE",
+     "DELAY UNLAWFUL."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOT"
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "IT DOES NOT FIND",
+     "THAT THE HOSPITAL",
+     "DUMPED HER."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOT"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TWO DIFFERENT SENTENCES",
+    "secondary": "A jury found a screening violation. The court held that finding unimpugnable, and said the statute reaches constructive dumping."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "IT DOES NOT HOLD THAT THE TRANSFER WAS UNLAWFUL",
+    "secondary": "That finding was never reviewed."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "IT DID NOT CALL A MEDICAL EXPERT",
+    "secondary": "It asked what the hospital's own rules required, and then what the hospital could produce."
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Rules of its own that the opinion lists",
+      "value": 4
+     },
+     {
+      "label": "Sheets of paper it could produce for her",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THERE IS NO VILLAIN IN THIS RECORD",
+    "secondary": "No decision was ever testified to. That is what the court's word is for. Constructive."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AI-assisted visualization",
+    "secondary": "symbolic reconstruction, no real likenesses"
+   }
+  ]
+ },
+ "_notes": {
+  "script": "episodes/_planning/EP63_correa_script.en.v002.md is the confirmed script. It was CUT on 2026-08-06 after the real narration master measured over the ceiling; do not restore anything from an earlier revision.",
+  "runtime": "MEASURED, not modelled: the ffprobed ElevenLabs master gives 1898.6s for 5121 narration words, inside the contract band [1620,1920]. The scripts' own 176 words-per-finished-minute model runs 8-10 percent optimistic and is what put two films on this slate over the ceiling. Re-ffprobe after any script edit and check against 1920 before committing anything downstream.",
+  "voice": "Pinned in the gen_narration_case.py registry and recorded in 06_audio/voice_plan.v001.json: voice nPczCjzI2devNBz1zQrb, model eleven_multilingual_v2, stability 0.35, similarity_boost 0.80. Do not change them: they are what makes these four episodes comparable to each other.",
+  "figures": "100 beats from EP63_correa_beats.v002.json. USE v002, NOT v001. v001 carried non-verbatim quotations, wrong attributions and, on two episodes, a kind the builder rejects outright, and it spent the slot at figures[-1] -- which build_figures overwrites with the AI-disclosure card -- on the film's closing line.",
+  "people_plates": "10 declared in episode_spec as people_plates. They are named with this episode's prefix, not P###; check_episode_inputs reads the declared list.",
+  "mandatory_stills": "episode_spec declares 223. The THUMB plates are deliberately excluded: a thumbnail is packaging, not a cut, and check_spec_satisfied fails any declared still that is in no cut.",
+  "assets": "BLOCKER: only 8 archive clips survived visual QC against a floor near 138 for a film this long, and there are no motion clips at all. greene solved the same problem with 122 i2v clips in remotion/public/greene/motion; the tool that made them is not in this repository. The asset_manifest this config points at cannot be built until that pool exists.",
+  "shotlist": "Do not hand-write one. It was retired at EP38. scripts/build_case_film_generic.py --config <this file> generates it."
+ }
+}

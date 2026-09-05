@@ -1,0 +1,3292 @@
+{
+ "episode_id": "PD-2026-042-young",
+ "fps": 30,
+ "narration": "young/narration.mp3",
+ "narrationSeconds": 712.34,
+ "hookSeconds": 8.0,
+ "hookLine": "You have the wrong house.",
+ "hook": [
+  {
+   "start": 0.0,
+   "dur": 1.333,
+   "kind": "img",
+   "src": "young/img/S01.png",
+   "seed": "young-hook-00"
+  },
+  {
+   "start": 1.333,
+   "dur": 1.333,
+   "kind": "img",
+   "src": "young/img/S02.png",
+   "seed": "young-hook-01"
+  },
+  {
+   "start": 2.666,
+   "dur": 1.333,
+   "kind": "img",
+   "src": "young/img/S03.png",
+   "seed": "young-hook-02"
+  },
+  {
+   "start": 3.999,
+   "dur": 1.333,
+   "kind": "img",
+   "src": "young/img/S04.png",
+   "seed": "young-hook-03"
+  },
+  {
+   "start": 5.332,
+   "dur": 1.333,
+   "kind": "img",
+   "src": "young/img/S05.png",
+   "seed": "young-hook-04"
+  },
+  {
+   "start": 6.665,
+   "dur": 1.335,
+   "kind": "img",
+   "src": "young/img/S06.png",
+   "seed": "young-hook-05"
+  }
+ ],
+ "cuts": [
+  {
+   "id": "cut-000",
+   "start": 0.0,
+   "dur": 5.292,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-17221__front_door_house.mp4",
+   "seed": "young-000",
+   "act": "HOOK",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-001",
+   "start": 5.292,
+   "dur": 3.528,
+   "kind": "img",
+   "src": "young/img/S01.png",
+   "seed": "young-001",
+   "act": "HOOK",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-002",
+   "start": 8.82,
+   "dur": 5.292,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-51254__open_door_bright_light.mp4",
+   "seed": "young-002",
+   "act": "HOOK",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-003",
+   "start": 14.112,
+   "dur": 5.292,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-63423__vault_door_spinning_lock.mp4",
+   "seed": "young-003",
+   "act": "HOOK",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-004",
+   "start": 19.404,
+   "dur": 3.528,
+   "kind": "img",
+   "src": "young/img/S02.png",
+   "seed": "young-004",
+   "act": "HOOK",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-005",
+   "start": 22.932,
+   "dur": 3.53,
+   "kind": "img",
+   "src": "young/img/S03.png",
+   "seed": "young-005",
+   "act": "HOOK",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-006",
+   "start": 26.462,
+   "dur": 4.259,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0138__abstract_dark_background.mp4",
+   "seed": "young-006",
+   "act": "OP",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-007",
+   "start": 30.721,
+   "dur": 2.84,
+   "kind": "img",
+   "src": "young/img/S04.png",
+   "seed": "young-007",
+   "act": "OP",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-008",
+   "start": 33.561,
+   "dur": 4.259,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0291__concrete_wall_texture_dark.mp4",
+   "seed": "young-008",
+   "act": "OP",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-009",
+   "start": 37.82,
+   "dur": 4.259,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0064__dark_cinematic_background.mp4",
+   "seed": "young-009",
+   "act": "OP",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-010",
+   "start": 42.079,
+   "dur": 2.84,
+   "kind": "img",
+   "src": "young/img/S05.png",
+   "seed": "young-010",
+   "act": "OP",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-011",
+   "start": 44.919,
+   "dur": 2.84,
+   "kind": "img",
+   "src": "young/img/S06.png",
+   "seed": "young-011",
+   "act": "OP",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-012",
+   "start": 47.759,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-1510__city_skyline_dusk.mp4",
+   "seed": "young-012",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-013",
+   "start": 52.517,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S07.png",
+   "seed": "young-013",
+   "act": "ACT_1",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-014",
+   "start": 55.689,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-18359__city_traffic_night_long_exposure.mp4",
+   "seed": "young-014",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-015",
+   "start": 60.447,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-13400__drone_city_aerial_night.mp4",
+   "seed": "young-015",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-016",
+   "start": 65.205,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S08.png",
+   "seed": "young-016",
+   "act": "ACT_1",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-017",
+   "start": 68.377,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-1587__highway_night_long_exposure.mp4",
+   "seed": "young-017",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-018",
+   "start": 73.135,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S09.png",
+   "seed": "young-018",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-019",
+   "start": 76.307,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-17246__prison_corridor.mp4",
+   "seed": "young-019",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-020",
+   "start": 81.065,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-1432__rain_on_window_night.mp4",
+   "seed": "young-020",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-021",
+   "start": 85.823,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S10.png",
+   "seed": "young-021",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-022",
+   "start": 88.995,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-10712__snowy_street_night.mp4",
+   "seed": "young-022",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-023",
+   "start": 93.753,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S11.png",
+   "seed": "young-023",
+   "act": "ACT_1",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-024",
+   "start": 96.925,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-11241__subway_tunnel_empty.mp4",
+   "seed": "young-024",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-025",
+   "start": 101.683,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-1511__city_skyline_dusk.mp4",
+   "seed": "young-025",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-026",
+   "start": 106.441,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S12.png",
+   "seed": "young-026",
+   "act": "ACT_1",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-027",
+   "start": 109.613,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-18360__city_traffic_night_long_exposure.mp4",
+   "seed": "young-027",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-028",
+   "start": 114.371,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S13.png",
+   "seed": "young-028",
+   "act": "ACT_1",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-029",
+   "start": 117.543,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-13401__drone_city_aerial_night.mp4",
+   "seed": "young-029",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-030",
+   "start": 122.301,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-1588__highway_night_long_exposure.mp4",
+   "seed": "young-030",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-031",
+   "start": 127.059,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S14.png",
+   "seed": "young-031",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-032",
+   "start": 130.231,
+   "dur": 4.758,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-1433__rain_on_window_night.mp4",
+   "seed": "young-032",
+   "act": "ACT_1",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-033",
+   "start": 134.989,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S15.png",
+   "seed": "young-033",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-034",
+   "start": 138.161,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S16.png",
+   "seed": "young-034",
+   "act": "ACT_1",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-035",
+   "start": 141.333,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S17.png",
+   "seed": "young-035",
+   "act": "ACT_1",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-036",
+   "start": 144.505,
+   "dur": 3.172,
+   "kind": "img",
+   "src": "young/img/S18.png",
+   "seed": "young-036",
+   "act": "ACT_1",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-037",
+   "start": 147.677,
+   "dur": 3.169,
+   "kind": "img",
+   "src": "young/img/S19.png",
+   "seed": "young-037",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-038",
+   "start": 150.846,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-23686__case_files_stack_desk.mp4",
+   "seed": "young-038",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-039",
+   "start": 155.397,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S20.png",
+   "seed": "young-039",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-040",
+   "start": 158.684,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-10313__newspaper_printing_press.mp4",
+   "seed": "young-040",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-041",
+   "start": 163.235,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-14451__quill_and_ink_pot.mp4",
+   "seed": "young-041",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-042",
+   "start": 167.786,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S21.png",
+   "seed": "young-042",
+   "act": "ACT_2",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-043",
+   "start": 171.073,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-10590__rain_on_glass_macro.mp4",
+   "seed": "young-043",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-044",
+   "start": 175.624,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S22.png",
+   "seed": "young-044",
+   "act": "ACT_2",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-045",
+   "start": 178.911,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-23688__case_files_stack_desk.mp4",
+   "seed": "young-045",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-046",
+   "start": 183.462,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-17588__crowd_silhouette.mp4",
+   "seed": "young-046",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-047",
+   "start": 188.013,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S23.png",
+   "seed": "young-047",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-048",
+   "start": 191.3,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-1280__documents_on_desk.mp4",
+   "seed": "young-048",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-049",
+   "start": 195.851,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S24.png",
+   "seed": "young-049",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-050",
+   "start": 199.138,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-23689__case_files_stack_desk.mp4",
+   "seed": "young-050",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-051",
+   "start": 203.689,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-23690__case_files_stack_desk.mp4",
+   "seed": "young-051",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-052",
+   "start": 208.24,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S25.png",
+   "seed": "young-052",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-053",
+   "start": 211.527,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-17624__lone_person_silhouette_walking.mp4",
+   "seed": "young-053",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-054",
+   "start": 216.078,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S26.png",
+   "seed": "young-054",
+   "act": "ACT_2",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-055",
+   "start": 219.365,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0215__moody_atmosphere_fog.mp4",
+   "seed": "young-055",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-056",
+   "start": 223.916,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0139__abstract_dark_background.mp4",
+   "seed": "young-056",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-057",
+   "start": 228.467,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S27.png",
+   "seed": "young-057",
+   "act": "ACT_2",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-058",
+   "start": 231.754,
+   "dur": 4.551,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0292__concrete_wall_texture_dark.mp4",
+   "seed": "young-058",
+   "act": "ACT_2",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-059",
+   "start": 236.305,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S28.png",
+   "seed": "young-059",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-060",
+   "start": 239.592,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S29.png",
+   "seed": "young-060",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-061",
+   "start": 242.879,
+   "dur": 3.287,
+   "kind": "img",
+   "src": "young/img/S30.png",
+   "seed": "young-061",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-062",
+   "start": 246.166,
+   "dur": 3.285,
+   "kind": "img",
+   "src": "young/img/S31.png",
+   "seed": "young-062",
+   "act": "ACT_2",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-063",
+   "start": 249.451,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-10005__balance_scale_brass.mp4",
+   "seed": "young-063",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-064",
+   "start": 254.084,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S32.png",
+   "seed": "young-064",
+   "act": "ACT_3",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-065",
+   "start": 257.276,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-18905__candle_in_dark.mp4",
+   "seed": "young-065",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-066",
+   "start": 261.909,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-28712__courtroom_gavel_block_macro.mp4",
+   "seed": "young-066",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-067",
+   "start": 266.542,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S33.png",
+   "seed": "young-067",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-068",
+   "start": 269.734,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0667__government_building_exterior.mp4",
+   "seed": "young-068",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-069",
+   "start": 274.367,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S34.png",
+   "seed": "young-069",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-070",
+   "start": 277.559,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-14596__jury_box_empty.mp4",
+   "seed": "young-070",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-071",
+   "start": 282.192,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-18017__us_constitution_document.mp4",
+   "seed": "young-071",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-072",
+   "start": 286.825,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S35.png",
+   "seed": "young-072",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-073",
+   "start": 290.017,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-10007__balance_scale_brass.mp4",
+   "seed": "young-073",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-074",
+   "start": 294.65,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S36.png",
+   "seed": "young-074",
+   "act": "ACT_3",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-075",
+   "start": 297.842,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-17527__bank_building_columns.mp4",
+   "seed": "young-075",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-076",
+   "start": 302.475,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-18906__candle_in_dark.mp4",
+   "seed": "young-076",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-077",
+   "start": 307.108,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S37.png",
+   "seed": "young-077",
+   "act": "ACT_3",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-078",
+   "start": 310.3,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-28713__courtroom_gavel_block_macro.mp4",
+   "seed": "young-078",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-079",
+   "start": 314.933,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S38.png",
+   "seed": "young-079",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-080",
+   "start": 318.125,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0514__courtroom_interior.mp4",
+   "seed": "young-080",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-081",
+   "start": 322.758,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0668__government_building_exterior.mp4",
+   "seed": "young-081",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-082",
+   "start": 327.391,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S39.png",
+   "seed": "young-082",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-083",
+   "start": 330.583,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-18061__supreme_court_building.mp4",
+   "seed": "young-083",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-084",
+   "start": 335.216,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S40.png",
+   "seed": "young-084",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-085",
+   "start": 338.408,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-18018__us_constitution_document.mp4",
+   "seed": "young-085",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-086",
+   "start": 343.041,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-17528__bank_building_columns.mp4",
+   "seed": "young-086",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-087",
+   "start": 347.674,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S41.png",
+   "seed": "young-087",
+   "act": "ACT_3",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-088",
+   "start": 350.866,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-18908__candle_in_dark.mp4",
+   "seed": "young-088",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-089",
+   "start": 355.499,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S42.png",
+   "seed": "young-089",
+   "act": "ACT_3",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-090",
+   "start": 358.691,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-28714__courtroom_gavel_block_macro.mp4",
+   "seed": "young-090",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-091",
+   "start": 363.324,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0515__courtroom_interior.mp4",
+   "seed": "young-091",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-092",
+   "start": 367.957,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S43.png",
+   "seed": "young-092",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-093",
+   "start": 371.149,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0516__courtroom_interior.mp4",
+   "seed": "young-093",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-094",
+   "start": 375.782,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S44.png",
+   "seed": "young-094",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-095",
+   "start": 378.974,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-28715__courtroom_gavel_block_macro.mp4",
+   "seed": "young-095",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-096",
+   "start": 383.607,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-2438__bank_building_columns.mp4",
+   "seed": "young-096",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-097",
+   "start": 388.24,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S45.png",
+   "seed": "young-097",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-098",
+   "start": 391.432,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-14602__jury_box_empty.mp4",
+   "seed": "young-098",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-099",
+   "start": 396.065,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S46.png",
+   "seed": "young-099",
+   "act": "ACT_3",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-100",
+   "start": 399.257,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-33426__candle_in_dark.mp4",
+   "seed": "young-100",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-101",
+   "start": 403.89,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-28716__courtroom_gavel_block_macro.mp4",
+   "seed": "young-101",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-102",
+   "start": 408.523,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S47.png",
+   "seed": "young-102",
+   "act": "ACT_3",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-103",
+   "start": 411.715,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-2439__bank_building_columns.mp4",
+   "seed": "young-103",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-104",
+   "start": 416.348,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S48.png",
+   "seed": "young-104",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-105",
+   "start": 419.54,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0671__government_building_exterior.mp4",
+   "seed": "young-105",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-106",
+   "start": 424.173,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0065__dark_cinematic_background.mp4",
+   "seed": "young-106",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-107",
+   "start": 428.806,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S49.png",
+   "seed": "young-107",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-108",
+   "start": 431.998,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-17625__lone_person_silhouette_walking.mp4",
+   "seed": "young-108",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-109",
+   "start": 436.631,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S50.png",
+   "seed": "young-109",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-110",
+   "start": 439.823,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0216__moody_atmosphere_fog.mp4",
+   "seed": "young-110",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-111",
+   "start": 444.456,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0140__abstract_dark_background.mp4",
+   "seed": "young-111",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-112",
+   "start": 449.089,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S51.png",
+   "seed": "young-112",
+   "act": "ACT_3",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-113",
+   "start": 452.281,
+   "dur": 4.633,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0293__concrete_wall_texture_dark.mp4",
+   "seed": "young-113",
+   "act": "ACT_3",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-114",
+   "start": 456.914,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S52.png",
+   "seed": "young-114",
+   "act": "ACT_3",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-115",
+   "start": 460.106,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S53.png",
+   "seed": "young-115",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-116",
+   "start": 463.298,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S54.png",
+   "seed": "young-116",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-117",
+   "start": 466.49,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S55.png",
+   "seed": "young-117",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-118",
+   "start": 469.682,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S56.png",
+   "seed": "young-118",
+   "act": "ACT_3",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-119",
+   "start": 472.874,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S57.png",
+   "seed": "young-119",
+   "act": "ACT_3",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-120",
+   "start": 476.066,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S58.png",
+   "seed": "young-120",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-121",
+   "start": 479.258,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S59.png",
+   "seed": "young-121",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-122",
+   "start": 482.45,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S60.png",
+   "seed": "young-122",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-123",
+   "start": 485.642,
+   "dur": 3.197,
+   "kind": "img",
+   "src": "young/img/S61.png",
+   "seed": "young-123",
+   "act": "ACT_3",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-124",
+   "start": 488.839,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0827__money_cash_counting.mp4",
+   "seed": "young-124",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-125",
+   "start": 493.321,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S62.png",
+   "seed": "young-125",
+   "act": "ACT_4",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-126",
+   "start": 496.522,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-12141__padlock_and_chain.mp4",
+   "seed": "young-126",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-127",
+   "start": 501.004,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-12383__spotlight_smoke_stage.mp4",
+   "seed": "young-127",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-128",
+   "start": 505.486,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S63.png",
+   "seed": "young-128",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-129",
+   "start": 508.687,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0828__money_cash_counting.mp4",
+   "seed": "young-129",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-130",
+   "start": 513.169,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S64.png",
+   "seed": "young-130",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-131",
+   "start": 516.37,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-12142__padlock_and_chain.mp4",
+   "seed": "young-131",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-132",
+   "start": 520.852,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-12384__spotlight_smoke_stage.mp4",
+   "seed": "young-132",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-133",
+   "start": 525.334,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S65.png",
+   "seed": "young-133",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-134",
+   "start": 528.535,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-12143__padlock_and_chain.mp4",
+   "seed": "young-134",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-135",
+   "start": 533.017,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S66.png",
+   "seed": "young-135",
+   "act": "ACT_4",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-136",
+   "start": 536.218,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-12144__padlock_and_chain.mp4",
+   "seed": "young-136",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-137",
+   "start": 540.7,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-32708__cash_stacks_money.mp4",
+   "seed": "young-137",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-138",
+   "start": 545.182,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S67.png",
+   "seed": "young-138",
+   "act": "ACT_4",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-139",
+   "start": 548.383,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0066__dark_cinematic_background.mp4",
+   "seed": "young-139",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-140",
+   "start": 552.865,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S68.png",
+   "seed": "young-140",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-141",
+   "start": 556.066,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0217__moody_atmosphere_fog.mp4",
+   "seed": "young-141",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-142",
+   "start": 560.548,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-26614__person_at_window_silhouette_night.mp4",
+   "seed": "young-142",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-143",
+   "start": 565.03,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S69.png",
+   "seed": "young-143",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-144",
+   "start": 568.231,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0141__abstract_dark_background.mp4",
+   "seed": "young-144",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-145",
+   "start": 572.713,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S70.png",
+   "seed": "young-145",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-146",
+   "start": 575.914,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0294__concrete_wall_texture_dark.mp4",
+   "seed": "young-146",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-147",
+   "start": 580.396,
+   "dur": 4.482,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0067__dark_cinematic_background.mp4",
+   "seed": "young-147",
+   "act": "ACT_4",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-148",
+   "start": 584.878,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S71.png",
+   "seed": "young-148",
+   "act": "ACT_4",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-149",
+   "start": 588.079,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S72.png",
+   "seed": "young-149",
+   "act": "ACT_4",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-150",
+   "start": 591.28,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S73.png",
+   "seed": "young-150",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-151",
+   "start": 594.481,
+   "dur": 3.201,
+   "kind": "img",
+   "src": "young/img/S74.png",
+   "seed": "young-151",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-152",
+   "start": 597.682,
+   "dur": 3.204,
+   "kind": "img",
+   "src": "young/img/S75.png",
+   "seed": "young-152",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-153",
+   "start": 600.886,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0218__moody_atmosphere_fog.mp4",
+   "seed": "young-153",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-154",
+   "start": 605.344,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S76.png",
+   "seed": "young-154",
+   "act": "ENDING",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-155",
+   "start": 608.528,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0142__abstract_dark_background.mp4",
+   "seed": "young-155",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-156",
+   "start": 612.986,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0068__dark_cinematic_background.mp4",
+   "seed": "young-156",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-157",
+   "start": 617.444,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S77.png",
+   "seed": "young-157",
+   "act": "ENDING",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-158",
+   "start": 620.628,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-0295__concrete_wall_texture_dark.mp4",
+   "seed": "young-158",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-159",
+   "start": 625.086,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S78.png",
+   "seed": "young-159",
+   "act": "ENDING",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-160",
+   "start": 628.27,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-10713__snowy_street_night.mp4",
+   "seed": "young-160",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-161",
+   "start": 632.728,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-32572__city_traffic_night_long_exposure.mp4",
+   "seed": "young-161",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-162",
+   "start": 637.186,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S79.png",
+   "seed": "young-162",
+   "act": "ENDING",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-163",
+   "start": 640.37,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-13402__drone_city_aerial_night.mp4",
+   "seed": "young-163",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-164",
+   "start": 644.828,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S80.png",
+   "seed": "young-164",
+   "act": "ENDING",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-165",
+   "start": 648.012,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-10714__snowy_street_night.mp4",
+   "seed": "young-165",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-166",
+   "start": 652.47,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-1434__rain_on_window_night.mp4",
+   "seed": "young-166",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-167",
+   "start": 656.928,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S81.png",
+   "seed": "young-167",
+   "act": "ENDING",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-168",
+   "start": 660.112,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-1589__highway_night_long_exposure.mp4",
+   "seed": "young-168",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-169",
+   "start": 664.57,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S82.png",
+   "seed": "young-169",
+   "act": "ENDING",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-170",
+   "start": 667.754,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-18506__bank_vault_door.mp4",
+   "seed": "young-170",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-171",
+   "start": 672.212,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-17222__front_door_house.mp4",
+   "seed": "young-171",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-172",
+   "start": 676.67,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S83.png",
+   "seed": "young-172",
+   "act": "ENDING",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-173",
+   "start": 679.854,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-51257__open_door_bright_light.mp4",
+   "seed": "young-173",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-174",
+   "start": 684.312,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S84.png",
+   "seed": "young-174",
+   "act": "ENDING",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-175",
+   "start": 687.496,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-17223__front_door_house.mp4",
+   "seed": "young-175",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-176",
+   "start": 691.954,
+   "dur": 4.458,
+   "kind": "footage",
+   "src": "young/factory/AF-BG-51259__open_door_bright_light.mp4",
+   "seed": "young-176",
+   "act": "ENDING",
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-177",
+   "start": 696.412,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S85.png",
+   "seed": "young-177",
+   "act": "ENDING",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-178",
+   "start": 699.596,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S01.png",
+   "seed": "young-178",
+   "act": "ENDING",
+   "treatment": "depth"
+  },
+  {
+   "id": "cut-179",
+   "start": 702.78,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S02.png",
+   "seed": "young-179",
+   "act": "ENDING",
+   "treatment": "scan"
+  },
+  {
+   "id": "cut-180",
+   "start": 705.964,
+   "dur": 3.184,
+   "kind": "img",
+   "src": "young/img/S03.png",
+   "seed": "young-180",
+   "act": "ENDING",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-181",
+   "start": 709.148,
+   "dur": 3.192,
+   "kind": "img",
+   "src": "young/img/S04.png",
+   "seed": "young-181",
+   "act": "ENDING",
+   "treatment": "focus"
+  }
+ ],
+ "captions": [
+  {
+   "start": 0.0,
+   "end": 2.111,
+   "text": "February. Chicago."
+  },
+  {
+   "start": 2.411,
+   "end": 6.358,
+   "text": "After a long shift, a social worker is changing\nout of her work clothes."
+  },
+  {
+   "start": 6.658,
+   "end": 8.283,
+   "text": "Then her front door caves in."
+  },
+  {
+   "start": 8.583,
+   "end": 10.441,
+   "text": "Twelve officers, rifles up."
+  },
+  {
+   "start": 10.741,
+   "end": 13.481,
+   "text": "Her wrists are cuffed before she can cover\nherself."
+  },
+  {
+   "start": 13.781,
+   "end": 17.796,
+   "text": "She says three words, and she will not stop saying\nthem. You."
+  },
+  {
+   "start": 18.096,
+   "end": 19.025,
+   "text": "Have."
+  },
+  {
+   "start": 19.325,
+   "end": 20.579,
+   "text": "The wrong house."
+  },
+  {
+   "start": 20.879,
+   "end": 21.901,
+   "text": "She is right."
+  },
+  {
+   "start": 22.201,
+   "end": 24.662,
+   "text": "And tonight, being right will not be enough."
+  },
+  {
+   "start": 26.462,
+   "end": 28.041,
+   "text": "Ask one plain question."
+  },
+  {
+   "start": 28.341,
+   "end": 34.703,
+   "text": "If armed police break down the wrong door —\nyour door — does the law owe you anything at all?"
+  },
+  {
+   "start": 35.003,
+   "end": 37.0,
+   "text": "Most people are sure they already know."
+  },
+  {
+   "start": 37.3,
+   "end": 39.065,
+   "text": "Almost none of them are right."
+  },
+  {
+   "start": 39.365,
+   "end": 42.992,
+   "text": "What the answer actually is takes one woman's\nnight in Chicago,"
+  },
+  {
+   "start": 42.992,
+   "end": 45.959,
+   "text": "and one decision from the Supreme Court, to see."
+  },
+  {
+   "start": 47.759,
+   "end": 49.617,
+   "text": "Her name is Anjanette Young."
+  },
+  {
+   "start": 49.917,
+   "end": 52.75,
+   "text": "She is a social worker on Chicago's West Side."
+  },
+  {
+   "start": 53.05,
+   "end": 57.26,
+   "text": "That night she had just come home from a shift\nspent steering other people through the worst"
+  },
+  {
+   "start": 57.26,
+   "end": 58.251,
+   "text": "days of their lives."
+  },
+  {
+   "start": 58.551,
+   "end": 61.059,
+   "text": "This time the person who needed help was her."
+  },
+  {
+   "start": 61.359,
+   "end": 63.449,
+   "text": "The officers had a search warrant."
+  },
+  {
+   "start": 63.749,
+   "end": 65.56,
+   "text": "A real one, signed by a judge."
+  },
+  {
+   "start": 65.86,
+   "end": 68.043,
+   "text": "But the information behind it was wrong."
+  },
+  {
+   "start": 68.343,
+   "end": 71.826,
+   "text": "Someone had told the police that a man with a gun\nlived at her address."
+  },
+  {
+   "start": 72.126,
+   "end": 73.194,
+   "text": "He did not."
+  },
+  {
+   "start": 73.494,
+   "end": 76.141,
+   "text": "The man they wanted lived somewhere else entirely."
+  },
+  {
+   "start": 76.441,
+   "end": 80.232,
+   "text": "And one detail turns the whole night from tragedy\ninto farce:"
+  },
+  {
+   "start": 80.232,
+   "end": 82.989,
+   "text": "he was already wearing a court-ordered ankle\nmonitor."
+  },
+  {
+   "start": 83.289,
+   "end": 86.261,
+   "text": "His exact location sat on a screen the entire\ntime."
+  },
+  {
+   "start": 86.561,
+   "end": 88.419,
+   "text": "They came to her door instead."
+  },
+  {
+   "start": 88.719,
+   "end": 90.019,
+   "text": "A shout at the door."
+  },
+  {
+   "start": 90.319,
+   "end": 92.802,
+   "text": "Then the frame gives way. Boots."
+  },
+  {
+   "start": 93.102,
+   "end": 94.217,
+   "text": "Flashlights."
+  },
+  {
+   "start": 94.517,
+   "end": 96.189,
+   "text": "Men filling a small apartment."
+  },
+  {
+   "start": 96.489,
+   "end": 99.647,
+   "text": "She is handcuffed where she stands, before she\ncan cover herself."
+  },
+  {
+   "start": 99.947,
+   "end": 103.244,
+   "text": "And she says the only true thing anyone will say\nall night."
+  },
+  {
+   "start": 103.544,
+   "end": 105.03,
+   "text": "You have the wrong house."
+  },
+  {
+   "start": 105.33,
+   "end": 107.466,
+   "text": "She says it to the first officer."
+  },
+  {
+   "start": 107.766,
+   "end": 109.113,
+   "text": "She says it to the next."
+  },
+  {
+   "start": 110.613,
+   "end": 112.146,
+   "text": "They keep searching anyway."
+  },
+  {
+   "start": 112.446,
+   "end": 113.839,
+   "text": "They open her cabinets."
+  },
+  {
+   "start": 114.139,
+   "end": 117.529,
+   "text": "They pull her life apart looking for a man\nwho was never here."
+  },
+  {
+   "start": 117.829,
+   "end": 121.864,
+   "text": "On one officer's chest, a body camera runs\nthe whole time, recording her voice,"
+  },
+  {
+   "start": 121.864,
+   "end": 126.188,
+   "text": "the number of times she says it, and the silence\nwhere an answer should be."
+  },
+  {
+   "start": 126.488,
+   "end": 128.113,
+   "text": "Eventually they understand."
+  },
+  {
+   "start": 128.413,
+   "end": 130.596,
+   "text": "They uncuff her, let her dress, and leave."
+  },
+  {
+   "start": 130.896,
+   "end": 135.958,
+   "text": "And that could have been the end of it — a bad\nnight, an honest mistake, an apology."
+  },
+  {
+   "start": 136.258,
+   "end": 137.837,
+   "text": "But no one apologized."
+  },
+  {
+   "start": 138.137,
+   "end": 140.923,
+   "text": "The officers filed their paperwork and moved on."
+  },
+  {
+   "start": 141.223,
+   "end": 142.523,
+   "text": "The city never called."
+  },
+  {
+   "start": 142.823,
+   "end": 145.935,
+   "text": "The recording of what happened in that apartment\nwent into a drawer,"
+  },
+  {
+   "start": 145.935,
+   "end": 149.046,
+   "text": "and the people who put it there were content\nto leave it."
+  },
+  {
+   "start": 150.846,
+   "end": 153.075,
+   "text": "For almost two years, nothing happened."
+  },
+  {
+   "start": 153.375,
+   "end": 156.533,
+   "text": "Anjanette Young did everything the system tells\nyou to do."
+  },
+  {
+   "start": 156.833,
+   "end": 158.366,
+   "text": "She filed complaints."
+  },
+  {
+   "start": 158.666,
+   "end": 161.386,
+   "text": "She asked for the video from the officers' own\ncameras,"
+  },
+  {
+   "start": 161.386,
+   "end": 164.378,
+   "text": "the proof she had told the truth from the first\nsecond."
+  },
+  {
+   "start": 164.678,
+   "end": 166.025,
+   "text": "The city fought her."
+  },
+  {
+   "start": 166.325,
+   "end": 169.593,
+   "text": "It went to court to keep that video from ever\nbeing seen,"
+  },
+  {
+   "start": 169.593,
+   "end": 172.316,
+   "text": "and it moved to sanction her lawyer for sharing\nit."
+  },
+  {
+   "start": 172.616,
+   "end": 174.102,
+   "text": "She was the one they raided."
+  },
+  {
+   "start": 174.402,
+   "end": 179.0,
+   "text": "She stood in her own home while strangers\nwith rifles decided it was theirs."
+  },
+  {
+   "start": 179.3,
+   "end": 181.854,
+   "text": "And she was the one the city moved to punish."
+  },
+  {
+   "start": 182.154,
+   "end": 183.568,
+   "text": "Then, in December 2020,"
+  },
+  {
+   "start": 183.568,
+   "end": 188.516,
+   "text": "a CBS station in Chicago obtained the body-camera\nfootage and put it on television."
+  },
+  {
+   "start": 188.816,
+   "end": 192.067,
+   "text": "Overnight, the whole country was standing inside\nthat apartment."
+  },
+  {
+   "start": 192.367,
+   "end": 193.76,
+   "text": "People heard her voice."
+  },
+  {
+   "start": 194.06,
+   "end": 195.964,
+   "text": "They heard how many times she said it."
+  },
+  {
+   "start": 196.264,
+   "end": 200.722,
+   "text": "They watched a woman ringed by armed men ask only\nto be believed, and go unbelieved."
+  },
+  {
+   "start": 201.022,
+   "end": 202.555,
+   "text": "The reaction was fast."
+  },
+  {
+   "start": 202.855,
+   "end": 204.248,
+   "text": "The mayor apologized."
+  },
+  {
+   "start": 204.548,
+   "end": 207.845,
+   "text": "Officials who had said they knew nothing suddenly\nremembered."
+  },
+  {
+   "start": 208.145,
+   "end": 212.371,
+   "text": "And the city's own police-oversight agency opened\na full investigation."
+  },
+  {
+   "start": 212.671,
+   "end": 214.391,
+   "text": "It ran for roughly sixteen months,"
+  },
+  {
+   "start": 214.391,
+   "end": 218.117,
+   "text": "and in the end it flagged something close to one\nhundred alleged violations,"
+  },
+  {
+   "start": 218.117,
+   "end": 220.984,
+   "text": "tied to more than a dozen officers\nfrom that night."
+  },
+  {
+   "start": 221.284,
+   "end": 224.024,
+   "text": "It looked, at last, like accountability arriving."
+  },
+  {
+   "start": 224.924,
+   "end": 225.853,
+   "text": "On paper."
+  },
+  {
+   "start": 226.153,
+   "end": 232.133,
+   "text": "Because a finding by a watchdog is not a ruling\nby a court, and an apology, however sincere,"
+  },
+  {
+   "start": 232.133,
+   "end": 234.791,
+   "text": "is not the law admitting it broke it."
+  },
+  {
+   "start": 235.091,
+   "end": 238.017,
+   "text": "Everything that came next would turn on that gap —"
+  },
+  {
+   "start": 238.017,
+   "end": 240.617,
+   "text": "the distance between being sorry and being liable."
+  },
+  {
+   "start": 240.917,
+   "end": 246.304,
+   "text": "To see why the gap runs so wide, you have to leave\nChicago and go back more than twenty years,"
+  },
+  {
+   "start": 246.304,
+   "end": 247.651,
+   "text": "to a doorway in Detroit."
+  },
+  {
+   "start": 249.451,
+   "end": 251.866,
+   "text": "The Fourth Amendment is one sentence long."
+  },
+  {
+   "start": 252.166,
+   "end": 257.435,
+   "text": "It says the people have a right to be secure\nin their houses against unreasonable searches,"
+  },
+  {
+   "start": 257.435,
+   "end": 259.411,
+   "text": "and that warrants require probable cause."
+  },
+  {
+   "start": 259.711,
+   "end": 263.734,
+   "text": "For most of American history, that security\ncarried an old rule,"
+  },
+  {
+   "start": 263.734,
+   "end": 265.562,
+   "text": "inherited from English common law."
+  },
+  {
+   "start": 265.862,
+   "end": 270.265,
+   "text": "Before police force their way into a home, they\nknock, they announce who they are,"
+  },
+  {
+   "start": 270.265,
+   "end": 273.2,
+   "text": "and they give you a moment to reach the door."
+  },
+  {
+   "start": 273.5,
+   "end": 274.893,
+   "text": "Knock, and announce."
+  },
+  {
+   "start": 275.193,
+   "end": 277.561,
+   "text": "It is the line between a search and an ambush."
+  },
+  {
+   "start": 277.861,
+   "end": 283.387,
+   "text": "For decades, when police broke that rule, courts\nheld one answer officers actually felt."
+  },
+  {
+   "start": 283.687,
+   "end": 286.931,
+   "text": "Evidence from a bad entry could be thrown\nout of court,"
+  },
+  {
+   "start": 286.931,
+   "end": 289.585,
+   "text": "and a thrown-out search could sink an entire case."
+  },
+  {
+   "start": 289.885,
+   "end": 291.0,
+   "text": "That was the teeth."
+  },
+  {
+   "start": 291.3,
+   "end": 293.297,
+   "text": "Then came Hudson versus Michigan."
+  },
+  {
+   "start": 293.597,
+   "end": 295.408,
+   "text": "Detroit, August 1998."
+  },
+  {
+   "start": 295.708,
+   "end": 299.516,
+   "text": "Police hold a valid warrant to search the home\nof a man named Booker Hudson."
+  },
+  {
+   "start": 299.816,
+   "end": 302.151,
+   "text": "They announce themselves — police, search warrant\n—"
+  },
+  {
+   "start": 302.151,
+   "end": 307.989,
+   "text": "and then they wait only three to five seconds\nbefore going through an unlocked door."
+  },
+  {
+   "start": 308.289,
+   "end": 309.822,
+   "text": "It is not long enough."
+  },
+  {
+   "start": 310.122,
+   "end": 315.184,
+   "text": "Everyone in the case agrees it is not long enough;\nMichigan does not even argue the point."
+  },
+  {
+   "start": 315.484,
+   "end": 317.156,
+   "text": "The violation is admitted."
+  },
+  {
+   "start": 317.456,
+   "end": 321.357,
+   "text": "The only question left for the Supreme Court\nis what to do about it."
+  },
+  {
+   "start": 321.657,
+   "end": 322.957,
+   "text": "June 2006."
+  },
+  {
+   "start": 323.257,
+   "end": 325.44,
+   "text": "The Court answers, five to four."
+  },
+  {
+   "start": 325.74,
+   "end": 331.344,
+   "text": "Justice Antonin Scalia writes for the majority,\nand the ruling is narrow and precise,"
+  },
+  {
+   "start": 331.344,
+   "end": 334.146,
+   "text": "and devastating precisely because it is narrow."
+  },
+  {
+   "start": 334.446,
+   "end": 338.626,
+   "text": "The knock-and-announce rule, he writes, is still\na command of the Fourth Amendment."
+  },
+  {
+   "start": 338.926,
+   "end": 340.087,
+   "text": "It still exists."
+  },
+  {
+   "start": 340.387,
+   "end": 342.059,
+   "text": "Police still have to obey it."
+  },
+  {
+   "start": 342.359,
+   "end": 345.238,
+   "text": "The Court does not say officers can stop knocking."
+  },
+  {
+   "start": 345.538,
+   "end": 347.721,
+   "text": "What the Court takes away is the punishment."
+  },
+  {
+   "start": 348.021,
+   "end": 350.84,
+   "text": "When police break the knock-and-announce rule,\nScalia writes,"
+  },
+  {
+   "start": 350.84,
+   "end": 354.012,
+   "text": "the evidence they find does not get thrown out."
+  },
+  {
+   "start": 354.312,
+   "end": 359.575,
+   "text": "Your privacy in that last moment, your dignity,\nthe chance to open your own door —"
+  },
+  {
+   "start": 359.575,
+   "end": 363.786,
+   "text": "none of it changes whether the thing they find\ninside is real."
+  },
+  {
+   "start": 364.086,
+   "end": 365.619,
+   "text": "So the evidence stays."
+  },
+  {
+   "start": 365.919,
+   "end": 368.083,
+   "text": "The exclusionary rule, the Court says,"
+  },
+  {
+   "start": 368.083,
+   "end": 372.049,
+   "text": "should apply only where its benefits outweigh\nits heavy social costs."
+  },
+  {
+   "start": 372.349,
+   "end": 374.253,
+   "text": "Here, it decides, they do not."
+  },
+  {
+   "start": 374.553,
+   "end": 377.386,
+   "text": "And Scalia gives reasons the old teeth\ncan be spared."
+  },
+  {
+   "start": 377.686,
+   "end": 382.414,
+   "text": "The country of the 1960s, when the exclusionary\nrule grew into what it is,"
+  },
+  {
+   "start": 382.414,
+   "end": 385.116,
+   "text": "is not the country of 2006, he writes."
+  },
+  {
+   "start": 385.416,
+   "end": 390.617,
+   "text": "Police forces are more professional now, more\ndisciplined from within than they were then."
+  },
+  {
+   "start": 390.917,
+   "end": 392.858,
+   "text": "And the courthouse door is open:"
+  },
+  {
+   "start": 392.858,
+   "end": 398.036,
+   "text": "a person whose rights were trampled can bring\na civil-rights suit, and those suits, he says,"
+  },
+  {
+   "start": 398.036,
+   "end": 400.948,
+   "text": "had grown common enough to keep police in line."
+  },
+  {
+   "start": 401.248,
+   "end": 406.124,
+   "text": "The deterrent has simply moved —\nout of the criminal case and into the civil one,"
+  },
+  {
+   "start": 406.124,
+   "end": 408.075,
+   "text": "where money is on the table."
+  },
+  {
+   "start": 408.375,
+   "end": 410.79,
+   "text": "But those reasons carried only four votes."
+  },
+  {
+   "start": 411.09,
+   "end": 414.392,
+   "text": "The fifth, Justice Anthony Kennedy, supplied\nthe deciding vote,"
+  },
+  {
+   "start": 414.392,
+   "end": 418.428,
+   "text": "yet wrote separately that the exclusionary rule\nwas not in doubt."
+  },
+  {
+   "start": 418.728,
+   "end": 424.115,
+   "text": "The argument that civil suits are enough was never\nthe majority's — only the result was."
+  },
+  {
+   "start": 424.415,
+   "end": 429.895,
+   "text": "Justice Stephen Breyer writes the dissent, joined\nby three others, and his warning is blunt."
+  },
+  {
+   "start": 430.195,
+   "end": 433.724,
+   "text": "Take away the remedy, he says, and you take away\nthe rule."
+  },
+  {
+   "start": 434.024,
+   "end": 435.986,
+   "text": "He walks through the history:"
+  },
+  {
+   "start": 435.986,
+   "end": 441.089,
+   "text": "the exclusion of evidence exists precisely\nbecause nothing softer ever made police obey;"
+  },
+  {
+   "start": 441.089,
+   "end": 446.191,
+   "text": "civil suits had sat on the books for generations\nand changed almost nothing."
+  },
+  {
+   "start": 446.491,
+   "end": 451.228,
+   "text": "A right with no consequence for breaking it, he\nwrites, is not really a right at all."
+  },
+  {
+   "start": 451.528,
+   "end": 456.265,
+   "text": "The majority's reply is that one remedy still\nstands — a civil lawsuit."
+  },
+  {
+   "start": 456.565,
+   "end": 458.859,
+   "text": "Under a federal statute, section nineteen\neighty-three,"
+  },
+  {
+   "start": 458.859,
+   "end": 462.463,
+   "text": "you can take the government to court and ask\nfor money."
+  },
+  {
+   "start": 462.763,
+   "end": 466.014,
+   "text": "That is the whole promise, stripped to the frame."
+  },
+  {
+   "start": 466.314,
+   "end": 468.64,
+   "text": "Break into a home the wrong way,"
+  },
+  {
+   "start": 468.64,
+   "end": 471.962,
+   "text": "and the Constitution's reply is not that the case\ncollapses,"
+  },
+  {
+   "start": 471.962,
+   "end": 474.952,
+   "text": "and not that anyone is automatically held\nto account."
+  },
+  {
+   "start": 475.252,
+   "end": 478.735,
+   "text": "It is that you, whose door it was, may go to court\nand try."
+  },
+  {
+   "start": 479.035,
+   "end": 480.335,
+   "text": "You carry the burden."
+  },
+  {
+   "start": 480.635,
+   "end": 482.028,
+   "text": "You hire the lawyer."
+  },
+  {
+   "start": 482.328,
+   "end": 483.953,
+   "text": "And you hope a jury agrees."
+  },
+  {
+   "start": 484.253,
+   "end": 487.039,
+   "text": "That is the remedy the Constitution leaves you."
+  },
+  {
+   "start": 488.839,
+   "end": 490.325,
+   "text": "Now Anjanette Young."
+  },
+  {
+   "start": 490.625,
+   "end": 492.808,
+   "text": "Her case and Hudson's are not the same door."
+  },
+  {
+   "start": 493.108,
+   "end": 496.498,
+   "text": "Hudson was a convicted man asking a court to throw\nout evidence."
+  },
+  {
+   "start": 496.798,
+   "end": 501.117,
+   "text": "Young was never charged with anything; there\nwas nothing of hers to suppress."
+  },
+  {
+   "start": 501.417,
+   "end": 503.321,
+   "text": "What links them is not a remedy."
+  },
+  {
+   "start": 503.621,
+   "end": 504.782,
+   "text": "It is a pattern."
+  },
+  {
+   "start": 505.082,
+   "end": 510.065,
+   "text": "When the wrong is in how the police get in,\nthe Constitution's cupboard runs nearly bare,"
+  },
+  {
+   "start": 510.065,
+   "end": 515.67,
+   "text": "and the one thing left on the shelf is exactly\nwhat the Court pointed to — the civil suit."
+  },
+  {
+   "start": 515.97,
+   "end": 517.41,
+   "text": "So she brought one."
+  },
+  {
+   "start": 517.71,
+   "end": 519.986,
+   "text": "And she reached the only door still open."
+  },
+  {
+   "start": 520.286,
+   "end": 526.459,
+   "text": "The city agreed to pay her two point nine million\ndollars, and on December 15th, 2021,"
+  },
+  {
+   "start": 526.459,
+   "end": 530.317,
+   "text": "the City Council approved it — reported\nas forty-eight to nothing."
+  },
+  {
+   "start": 530.617,
+   "end": 532.15,
+   "text": "It sounds like victory."
+  },
+  {
+   "start": 532.45,
+   "end": 534.911,
+   "text": "Look at what a settlement actually is."
+  },
+  {
+   "start": 535.211,
+   "end": 537.487,
+   "text": "No court found the city broke the law."
+  },
+  {
+   "start": 537.787,
+   "end": 540.016,
+   "text": "No judge ruled her rights were violated."
+  },
+  {
+   "start": 540.316,
+   "end": 543.288,
+   "text": "Not one officer was declared liable by any court."
+  },
+  {
+   "start": 543.588,
+   "end": 548.464,
+   "text": "The city paid to make the case disappear; it\nbought quiet, not a verdict."
+  },
+  {
+   "start": 548.764,
+   "end": 552.897,
+   "text": "In the language of the law, nobody did anything\nwrong to Anjanette Young that night."
+  },
+  {
+   "start": 553.197,
+   "end": 557.423,
+   "text": "There is a check, and a page that stays blank\nwhere a finding of fault should be."
+  },
+  {
+   "start": 557.723,
+   "end": 559.07,
+   "text": "There were gestures."
+  },
+  {
+   "start": 559.37,
+   "end": 561.874,
+   "text": "One sergeant who led the raid, Alex Wolinski,"
+  },
+  {
+   "start": 561.874,
+   "end": 567.822,
+   "text": "was fired by the city's Police Board in the summer\nof 2023, by a vote of five to three."
+  },
+  {
+   "start": 568.122,
+   "end": 570.296,
+   "text": "Most of the other officers who stood"
+  },
+  {
+   "start": 570.296,
+   "end": 573.091,
+   "text": "in her apartment kept their jobs, their pensions,\nEverything."
+  },
+  {
+   "start": 573.391,
+   "end": 574.691,
+   "text": "And the law itself?"
+  },
+  {
+   "start": 574.991,
+   "end": 579.31,
+   "text": "A reform was written and named for her,\nthe Anjanette Young Ordinance."
+  },
+  {
+   "start": 579.61,
+   "end": 583.85,
+   "text": "It asked for small, human things: a written plan\nbefore a raid,"
+  },
+  {
+   "start": 583.85,
+   "end": 587.737,
+   "text": "thirty seconds of waiting at the door, protection\nfor children inside."
+  },
+  {
+   "start": 588.037,
+   "end": 592.495,
+   "text": "In November 2022, a City Council committee voted\nit down, ten to four."
+  },
+  {
+   "start": 592.795,
+   "end": 594.374,
+   "text": "It never reached the floor."
+  },
+  {
+   "start": 594.674,
+   "end": 599.086,
+   "text": "Years on, the practice it was written to fix\nis still legal in the city where it happened."
+  },
+  {
+   "start": 600.886,
+   "end": 603.162,
+   "text": "So, the question we started with."
+  },
+  {
+   "start": 603.462,
+   "end": 609.081,
+   "text": "If armed police break down the wrong door —\nyour door — does the law owe you anything?"
+  },
+  {
+   "start": 609.381,
+   "end": 611.61,
+   "text": "The honest answer comes in two halves."
+  },
+  {
+   "start": 611.91,
+   "end": 614.65,
+   "text": "The first half is that yes, you might get paid."
+  },
+  {
+   "start": 614.95,
+   "end": 618.366,
+   "text": "If the mistake is bad enough, and the footage\nis damning enough,"
+  },
+  {
+   "start": 618.366,
+   "end": 620.643,
+   "text": "and a television station airs your worst night,"
+  },
+  {
+   "start": 620.643,
+   "end": 623.774,
+   "text": "a city may decide a check is cheaper than a fight."
+  },
+  {
+   "start": 624.074,
+   "end": 626.675,
+   "text": "Two point nine million dollars is real money."
+  },
+  {
+   "start": 626.975,
+   "end": 628.925,
+   "text": "For Anjanette Young, it was real."
+  },
+  {
+   "start": 629.925,
+   "end": 632.108,
+   "text": "The second half is the one that lasts."
+  },
+  {
+   "start": 632.408,
+   "end": 637.145,
+   "text": "In all of it — the settlement, the apology,\nthe long investigation —"
+  },
+  {
+   "start": 637.145,
+   "end": 641.882,
+   "text": "no court ever said a single person violated\nAnjanette Young's rights."
+  },
+  {
+   "start": 642.182,
+   "end": 643.575,
+   "text": "The money admitted nothing."
+  },
+  {
+   "start": 643.875,
+   "end": 646.383,
+   "text": "The reform that carried her name was voted down."
+  },
+  {
+   "start": 646.683,
+   "end": 652.679,
+   "text": "The rule that was supposed to guard her front door\nis still, in the Supreme Court's own words,"
+  },
+  {
+   "start": 652.679,
+   "end": 656.343,
+   "text": "a command of the Constitution, with almost nothing\nstanding behind it."
+  },
+  {
+   "start": 656.643,
+   "end": 658.547,
+   "text": "You can be completely innocent."
+  },
+  {
+   "start": 658.847,
+   "end": 660.38,
+   "text": "You can be completely right."
+  },
+  {
+   "start": 660.68,
+   "end": 665.605,
+   "text": "You can say the wrong house again and again\ninto a camera that captures every word, and still,"
+  },
+  {
+   "start": 665.605,
+   "end": 668.068,
+   "text": "at the end, the law can hand you money"
+  },
+  {
+   "start": 668.068,
+   "end": 670.804,
+   "text": "while refusing to say that anyone wronged you\nat all."
+  },
+  {
+   "start": 671.104,
+   "end": 673.147,
+   "text": "Being right was never her problem."
+  },
+  {
+   "start": 673.447,
+   "end": 676.048,
+   "text": "It took a television station to make her believed."
+  },
+  {
+   "start": 676.348,
+   "end": 677.788,
+   "text": "And being made whole?"
+  },
+  {
+   "start": 678.088,
+   "end": 679.574,
+   "text": "That door never opened."
+  },
+  {
+   "start": 679.874,
+   "end": 682.196,
+   "text": "Anjanette Young still talks about that night."
+  },
+  {
+   "start": 682.496,
+   "end": 684.586,
+   "text": "Not for the money; she has the money."
+  },
+  {
+   "start": 684.886,
+   "end": 689.468,
+   "text": "She talks because there is one sentence the whole\nsystem spent years not saying,"
+  },
+  {
+   "start": 689.468,
+   "end": 691.759,
+   "text": "the sentence no check will ever contain."
+  },
+  {
+   "start": 692.059,
+   "end": 694.288,
+   "text": "We were wrong, and it was your door."
+  },
+  {
+   "start": 694.588,
+   "end": 698.489,
+   "text": "If this changed the way you look at your own front\ndoor, hit the like button."
+  },
+  {
+   "start": 698.789,
+   "end": 701.188,
+   "text": "It is the one thing that puts this story in front"
+  },
+  {
+   "start": 701.188,
+   "end": 703.805,
+   "text": "of the next person who is sure it could never\nBe them."
+  },
+  {
+   "start": 704.105,
+   "end": 707.993,
+   "text": "And subscribe, because we are documenting, one\nruling at a time,"
+  },
+  {
+   "start": 707.993,
+   "end": 710.467,
+   "text": "exactly how much the law owes you."
+  },
+  {
+   "start": 710.767,
+   "end": 712.346,
+   "text": "This is Prime Documentary."
+  }
+ ],
+ "graphics": [],
+ "figures": [
+  {
+   "start": 3.877,
+   "end": 9.277,
+   "kind": "kinetic",
+   "lines": [
+    "THE WRONG HOUSE"
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "WRONG"
+   ]
+  },
+  {
+   "start": 9.031,
+   "end": 14.431,
+   "kind": "lowerthird",
+   "primary": "AI-assisted visualization",
+   "secondary": "symbolic reconstruction"
+  },
+  {
+   "start": 14.185,
+   "end": 19.585,
+   "kind": "mechanism",
+   "mechanism": "closingdoor"
+  },
+  {
+   "start": 54.708,
+   "end": 60.108,
+   "kind": "acttitle",
+   "title": "THE WRONG DOOR",
+   "kicker": "ACT ONE",
+   "index": 1
+  },
+  {
+   "start": 68.006,
+   "end": 73.406,
+   "kind": "stat",
+   "value": 12,
+   "label": "about twelve officers"
+  },
+  {
+   "start": 81.304,
+   "end": 86.704,
+   "kind": "lowerthird",
+   "primary": "a search warrant, signed by a judge"
+  },
+  {
+   "start": 94.603,
+   "end": 100.003,
+   "kind": "kinetic",
+   "lines": [
+    "THE WRONG HOUSE"
+   ],
+   "style": "wordpop",
+   "emphasisWords": [
+    "WRONG"
+   ]
+  },
+  {
+   "start": 121.199,
+   "end": 126.599,
+   "kind": "mechanism",
+   "mechanism": "closingdoor"
+  },
+  {
+   "start": 134.497,
+   "end": 139.897,
+   "kind": "timeline",
+   "events": [
+    {
+     "year": "Feb 2019",
+     "text": "wrong address"
+    }
+   ]
+  },
+  {
+   "start": 158.53,
+   "end": 163.93,
+   "kind": "acttitle",
+   "title": "THE TAPE",
+   "kicker": "ACT TWO",
+   "index": 2
+  },
+  {
+   "start": 173.297,
+   "end": 178.697,
+   "kind": "timeline",
+   "events": [
+    {
+     "year": "Dec 2020",
+     "text": "footage airs"
+    }
+   ]
+  },
+  {
+   "start": 188.065,
+   "end": 193.465,
+   "kind": "numberticker",
+   "value": 16,
+   "suffix": " months",
+   "label": "COPA"
+  },
+  {
+   "start": 202.832,
+   "end": 208.232,
+   "kind": "numberticker",
+   "value": 100,
+   "suffix": " alleged",
+   "label": "oversight flags"
+  },
+  {
+   "start": 217.6,
+   "end": 223.0,
+   "kind": "kinetic",
+   "lines": [
+    "ALLEGED",
+    "NOT PROVEN"
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "ALLEGED"
+   ]
+  },
+  {
+   "start": 232.367,
+   "end": 237.767,
+   "kind": "lowerthird",
+   "primary": "police-oversight investigation"
+  },
+  {
+   "start": 260.178,
+   "end": 265.578,
+   "kind": "acttitle",
+   "title": "THE COMMAND",
+   "kicker": "ACT THREE",
+   "index": 3
+  },
+  {
+   "start": 301.885,
+   "end": 307.285,
+   "kind": "timeline",
+   "events": [
+    {
+     "year": "Aug 1998",
+     "text": "entry"
+    },
+    {
+     "year": "Jun 2006",
+     "text": "decision"
+    }
+   ]
+  },
+  {
+   "start": 322.738,
+   "end": 328.138,
+   "kind": "numberticker",
+   "value": 5,
+   "suffix": " seconds",
+   "label": "three to five"
+  },
+  {
+   "start": 343.592,
+   "end": 348.992,
+   "kind": "votetally",
+   "majority": 5,
+   "dissent": 4,
+   "label": "Supreme Court 2006"
+  },
+  {
+   "start": 364.445,
+   "end": 369.845,
+   "kind": "quote",
+   "quote": "still a command",
+   "attribution": "Justice Scalia, for the majority"
+  },
+  {
+   "start": 385.298,
+   "end": 390.698,
+   "kind": "stat",
+   "value": 4,
+   "label": "Part IV - Kennedy did not join"
+  },
+  {
+   "start": 406.152,
+   "end": 411.552,
+   "kind": "kinetic",
+   "lines": [
+    "STILL A COMMAND"
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "COMMAND"
+   ]
+  },
+  {
+   "start": 427.005,
+   "end": 432.405,
+   "kind": "lowerthird",
+   "primary": "SECTION 1983",
+   "secondary": "the civil remedy"
+  },
+  {
+   "start": 447.859,
+   "end": 453.259,
+   "kind": "mechanism",
+   "mechanism": "gears"
+  },
+  {
+   "start": 468.712,
+   "end": 474.112,
+   "kind": "mechanism",
+   "mechanism": "faultsplit"
+  },
+  {
+   "start": 497.643,
+   "end": 503.043,
+   "kind": "acttitle",
+   "title": "THE REACH",
+   "kicker": "ACT FOUR",
+   "index": 4
+  },
+  {
+   "start": 514.651,
+   "end": 520.051,
+   "kind": "stat",
+   "value": 2.9,
+   "prefix": "$",
+   "suffix": "M",
+   "decimals": 1,
+   "label": "reported - no finding of fault"
+  },
+  {
+   "start": 531.659,
+   "end": 537.059,
+   "kind": "kinetic",
+   "lines": [
+    "A SETTLEMENT",
+    "NOT A FINDING"
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NOT"
+   ]
+  },
+  {
+   "start": 548.666,
+   "end": 554.066,
+   "kind": "numberticker",
+   "value": 10,
+   "suffix": "-4",
+   "label": "voted down"
+  },
+  {
+   "start": 565.674,
+   "end": 571.074,
+   "kind": "stat",
+   "value": 5,
+   "suffix": "-3",
+   "label": "Police Board - Wolinski"
+  },
+  {
+   "start": 613.18,
+   "end": 618.58,
+   "kind": "kinetic",
+   "lines": [
+    "STILL LEGAL"
+   ],
+   "style": "wordpop",
+   "emphasisWords": [
+    "LEGAL"
+   ]
+  },
+  {
+   "start": 637.169,
+   "end": 642.569,
+   "kind": "lowerthird",
+   "primary": "AI-assisted visualization",
+   "secondary": "symbolic reconstruction"
+  },
+  {
+   "start": 661.157,
+   "end": 666.557,
+   "kind": "kinetic",
+   "lines": [
+    "IT WAS",
+    "YOUR DOOR"
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "YOUR"
+   ]
+  },
+  {
+   "start": 685.146,
+   "end": 690.546,
+   "kind": "mechanism",
+   "mechanism": "closingdoor"
+  }
+ ]
+}

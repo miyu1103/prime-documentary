@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "release_deviations",
+  "episode_id": "PD-2026-076-morandi",
+  "slug": "morandi",
+  "authority": "config/ship_policy.v001.json -- only real_person_likeness, rights_and_licence, factual_support and fabricated_record close the door. Everything else ships and is recorded here. Nothing in this file is dropped silently.",
+  "measured_at": "2026-08-22",
+  "measurement_stage": "ASSET STAGE, BEFORE THE RENDER. This is unusual and deliberate: these three deviations are all knowable from the inputs, and the assembly thread asked for them in writing now rather than after a render. The render-stage fields below are therefore empty and MUST be filled in after check_final_acceptance runs.",
+  "render_sha256": null,
+  "render_sha256_note": "No render exists yet. data/morandi_film.json has not been built. This file is not an acceptance record and must not be read as one.",
+  "blocking_findings": [],
+  "blocking_findings_basis": "No finding in any of the four blocking classes was open at the asset stage. Two that WOULD have been blocking were closed rather than deviated: 2 i2v clips that grew a photoreal face (real_person_likeness) and 171 archive clips whose own ledger title says 'ai generated' (fabricated_record) are now in config/footage_blocklist.v001.json and cannot reach a cut.",
+  "action_taken_before_render": [
+    "52 of 120 i2v motion clips blocked, episode-scoped, after reading all 20 sheets from qc_motion_clips.py --samples 6.",
+    "32 of the 61 originally staged footage clips rejected after re-reading them at full size; moved to factory_rejected/.",
+    "MO-30911562 (textured concrete) additionally removed on the assembly thread's instruction as a cross-episode duplicate.",
+    "171 AI-generated archive clips blocked globally.",
+    "Three prestage rounds (116 candidates, 42 sheets) added 14 clips; 102 were rejected on the shelf and never copied."
+  ],
+  "deviations": [
+    {
+      "check": "asset_reuse / footage_diversity",
+      "status": "ADVISORY -- shipped knowingly. Approved by the assembly thread 2026-08-22: 'asset_reuse: record it as a deviation and ship. If the number is what is left after mining the shelf out, we do not stop for it.'",
+      "measured": "42 staged footage clips + 120 generated plates = 162 distinct video assets, against approximately 266 footage cuts in a 30:51 film. About 104 cuts must therefore repeat an asset already used. Measured by check_episode_inputs.py --slug morandi on 2026-08-22.",
+      "threshold": "episodes/PD-2026-076-morandi/episode_spec.v001.json declares distinct_video_assets 265; check_episode_inputs applies a working floor of about 40 staged clips at the reuse cap for a 31-minute film.",
+      "why_it_was_not_stopped": "The shelf is exhausted for this film's registers, and that is measured rather than asserted. Four staged rounds put 217 candidates on 77 contact sheets. The yield fell round on round: 61 -> 29 survivors, then 52 candidates -> 10, then 49 -> 3, then 15 -> 2. Round three returned three usable clips from forty-nine. The remaining candidates are not near misses -- they are Japanese lanterns, sci-fi tunnels, US dollar sheets, Korean shopfronts and countdown graphics. Staging more would mean lowering the era and place bar that keeps this particular episode honest, which is a worse trade than repeating a clean clip.",
+      "backlog": "The archive has no depth in the registers this film needs: Italian industrial interiors, 1960s European construction, institutional corridors and archive rooms, and overcast port infrastructure. That is an ingest problem, not an episode problem. Recorded for the archive lane.",
+      "what_would_change_it": "Any new ingest in those registers. Re-run scripts/stage_footage_by_title.py --slug morandi --emit-candidates and the existing verdict file will exclude everything already judged."
+    },
+    {
+      "check": "footage_diversity / cross-episode reuse",
+      "status": "ADVISORY -- two clips shipped knowingly, one was replaced.",
+      "measured": "Three clips in the accepted pool carry bytes already cut into another episode, found by stage_footage_by_title.py's content de-dup index (10,810 files across 47 episodes, matched on bytes rather than on filename): MO-30911562 (close-up of textured concrete) in PD-2026-060-surfside; MO-27732553 (a rusty iron gate with a chain and lock) in PD-2026-066-openfields; MO-30117908 (hands flipping through old documents) in PD-2026-054-flowers.",
+      "threshold": "Owner directive feedback_footage_diversity: avoid repeats both within a film and across films.",
+      "why_it_was_not_stopped": "The assembly thread ruled on 2026-08-22: replace MO-30911562, record the other two. MO-30911562 was removed from the pool and moved to factory_rejected/ because EP60 surfside is also a structural-collapse film and a shared signature texture between two collapse episodes is a real harm. MO-27732553 and MO-30117908 are generic shots -- rust and anonymous hands on paper -- whose repetition carries no argument.",
+      "backlog": "The content de-dup index only excludes NEW candidates. It does not audit a pool that is already staged, which is why these three were found by reading the staging log rather than by a check. A pool-level cross-episode audit would have caught all three at once.",
+      "what_would_change_it": "A check that runs the same byte index against an already-staged pool."
+    },
+    {
+      "check": "motion coverage / animation_density (forecast, not yet measured on a render)",
+      "status": "RECORDED IN ADVANCE so it is not a surprise after the render.",
+      "measured": "120 i2v clips were produced and 52 are blocked, so 68 plates carry motion and 52 fall back to their still. All 20 QC sheets were read; the 52 break down as 47 that grew a person, a hand or an arm that is not in the plate, 2 that grew a photoreal face, 2 that are simply broken (they go black), and 1 that drives a car onto the severed carriageway.",
+      "threshold": "animation_density is advisory under ship_policy; the perceptual-motion budget from feedback_perceptual_motion_and_verify is not.",
+      "why_it_was_not_stopped": "The 47 are not a craft judgement. This episode's forbidden_claims bar asserting that the collapse was foreseen, and a figure who arrives from nowhere to touch corroded steel, shine a light into a box girder or fill in an inspection form asserts visually that somebody was looking at it. That is factual_support, one of the four blocking classes. Regeneration was NOT attempted: the assembly thread measured on EP70 that negative prompts and seed changes both failed 16 of 16, and instructed on 2026-08-22 not to retry.",
+      "backlog": "Wan draws people into any plate that could plausibly hold them. The paperwork and room registers were hit hardest -- sheets 14, 15 and 16 lost 13 of 18 clips -- and those are precisely this film's subject.",
+      "what_would_change_it": "An i2v path that can be told not to add people and be held to it. Nothing available today can."
+    }
+  ],
+  "gate_consequence_of_the_prune": "Removing 52 motion clips and 33 footage clips lowers the distinct-asset count that asset_reuse measures, so deviation 1 is partly a consequence of deviations 2 and 3. That is the correct direction: a repeated clean clip is cheaper than a clip that makes a claim the record does not support.",
+  "what_this_file_does_not_cover": "Everything measured on the render itself: runtime_band, caption sync, sound layers, mean luma, freeze detection, shipped-frames review, packaging claims, and the acceptance receipt. None of those can be measured because data/morandi_film.json does not exist. This file must be extended, not replaced, when they are. It also does not certify that the 42 footage clips and 68 motion clips that survived are good -- only that every one of them was looked at and that the judgement is written down. Twice on 2026-08-22 a judgement made from a 400px tile was overturned by the full-resolution frame.",
+  "authored_by": "claude (EP76 asset lane)",
+  "authored_at": "2026-08-22"
+}

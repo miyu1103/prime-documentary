@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 296,
+  "episode_id": "PD-2026-074-itaewon",
+  "slug": "itaewon",
+  "loop": true,
+  "loop_join": "The final beat p14 (short296_14.png), steam crossing the empty alley past a wall vent at night, is isCta and rewind:true so it plays backward under the FULL CASE card and holds on its last frame; frame 0 opens on p01 (short296_01.png), the alley's narrowest point where both walls close in, so the loop restarts on the same physical bottleneck the film opened on.",
+  "second_watch_detail": "p08 shows the alley's slope read from the side, a stepped kerb rising, cut in early as an ordinary street detail; once L4 has explained that the slope 'decides which way the weight goes,' the same stepped kerb reads as the mechanism the whole short is measuring, not incidental texture.",
+  "funnel_question_left_for_longform": "Who was supposed to decide, before the evening started, what that street was for on a Saturday night?",
+  "funnel_long_title": "A Street Fifty Metres Long Killed 159 People",
+  "funnel_long_video_id": "RFDPSfllbk0",
+  "description_line_1": "▶ FULL CASE: A Street Fifty Metres Long Killed 159 People | https://youtu.be/RFDPSfllbk0",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Street Fifty Metres Long Killed...",
+    "ctaLongThumbSrc": "shorts/short296/short296_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "Who was supposed to decide, before the evening started, what that street was for on a Saturday night? The full case is here: https://youtu.be/RFDPSfllbk0",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for short296, a finished, rendered Short that had no machine-readable corridor to its episode. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments in remotion/src/data/short296.ts, the standing question from that file's LEAVES FOR THE LONG-FORM header (checked against short296_lines.v001.json so no content word of it is already spoken -- the geometry short never says 'Saturday' or 'decide'), the CTA block from the same file's hardcoded ctaLongTitle/ctaHeadline/ctaLongThumbSrc, and the long-form title/video id from episodes/PD-2026-074-itaewon/09_package/youtube_schedule_result.v001.json (video is a scheduled private upload). Layer 4 -- the Studio related-video setting, which the API cannot set -- now has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but the short itself is not yet uploaded, so the Studio action has NOT been performed yet."
+}

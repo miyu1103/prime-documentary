@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 252,
+  "episode_id": "PD-2026-057-fieldtest",
+  "slug": "fieldtest",
+  "loop": true,
+  "loop_join": "The final CTA beat p25 (isCta, rewind) lands on short252_01.png, the wall of steel shelves packed with unlabelled folders, after p24 replays short252_02.png and p23 replays short252_03.png as a reverse echo of the hook's first three plates. Frame 0 of the short opens on that identical short252_01.png shelf plate, so the loop closes on the exact frame it began with.",
+  "second_watch_detail": "p08's sealed evidence envelope on a steel counter reads as routine procedure on the first pass; once L3 has said the laboratory finding on two hundred fifty-one of those files was 'no controlled substance,' that same still-sealed envelope reads as proof the conviction was already final before anyone opened it.",
+  "funnel_question_left_for_longform": "What happened to the hundred and seventy-two convictions that were still standing after the office finished counting?",
+  "funnel_long_title": "A $2 Test Turned Blue. She Served 21 Days.",
+  "funnel_long_video_id": "KPYLtYYODLE",
+  "description_line_1": "▶ FULL CASE: A $2 Test Turned Blue. She Served 21 Days. | https://youtu.be/KPYLtYYODLE",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A $2 Test Turned Blue. She Served 21",
+    "ctaLongThumbSrc": "shorts/short252/short252_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What happened to the hundred and seventy-two convictions that were still standing after the office finished counting? The full case is here: https://youtu.be/KPYLtYYODLE",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the CUTS list and its inline comments plus the docstring's LEAVES FOR THE LONG-FORM line in remotion/src/data/short252.ts, the CTA block from that same file, and the live long-form video id KPYLtYYODLE (title: 'A $2 Test Turned Blue. She Served 21 Days. Police Still Carry the Kits.'). Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet; the short itself is not yet uploaded so no real Studio edit link exists."
+}

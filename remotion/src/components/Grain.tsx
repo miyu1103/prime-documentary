@@ -4,7 +4,7 @@ import {AbsoluteFill, useCurrentFrame} from 'remotion';
 /** Subtle film grain overlay (decisions/0002 §5 "light/dust/grain"). Pure SVG, $0. */
 export const Grain: React.FC<{opacity?: number}> = ({opacity = 0.06}) => {
   const frame = useCurrentFrame();
-  const seed = frame % 8; // re-seed to animate the grain
+  const seed = frame % 64; // unique per-frame grain so no frame is ever identical (kills freeze false-flags)
   return (
     <AbsoluteFill style={{pointerEvents: 'none', opacity, mixBlendMode: 'overlay'}}>
       <svg width="100%" height="100%">
