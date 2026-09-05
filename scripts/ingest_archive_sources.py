@@ -1097,6 +1097,9 @@ class Net:
         n = 0
         with self.s.get(url, stream=True, timeout=300, headers=headers or {}) as r:
             r.raise_for_status()
+            declared = r.headers.get("Content-Length")
+            if declared and declared.isdigit() and int(declared) > MAX_ITEM_BYTES:
+                raise ValueError(f"file exceeds MAX_ITEM_BYTES: {url}")
             tmp = dest + ".part"
             with open(tmp, "wb") as f:
                 for chunk in r.iter_content(1024 * 512):
