@@ -100,3 +100,28 @@ Genuinely good and under-used: `documents_paper`, `period_telephone_tech`, `chic
   sweep of individual assets remains impossible by hand; episode-time contact sheets remain the
   real gate.
 * **`.git` loose-object cleanup** (~173GB on C:) — needs no other lane running.
+
+---
+
+## 6. Addendum — the afternoon and evening of the same day
+
+Written after the main document; these three things happened after it was pushed.
+
+* **Freesound batch 3 applied**: 2,000 more rows usable, 6,000 of 8,635 done, 2,637 left for one
+  final run when the 24-hour window opens (~midday 09-06). `docs/shelf/rights_progress.v001.json`
+  is derived from the LEDGER and is current.
+* **Every usable image opened once** (`check_image_integrity.py`): 85,423 decoded, **652 defects**
+  — 343 near-black, 233 mostly-transparent (logo cut-outs that composite as a black rectangle),
+  60 near-white, 16 truncated JPEGs. Nothing blocked (a near-black texture can be deliberate);
+  the defect prints on the asset's checklist as `INTEGRITY: ...`. Videos are NOT covered, and the
+  docstring says why. Record: `docs/shelf/image_integrity.v001.jsonl`.
+* **The .git mystery solved and closed**: 139 GB of the repository was **three
+  `refs/codex/turn-diffs/*` refs** — the broken Codex desktop app's per-turn snapshots, which had
+  captured the whole working tree (media included) once in July and twice in August. All real
+  branches together: 635.73 MiB. Refs recorded in `docs/shelf/codex_refs_removed_20260905.txt`,
+  deleted, `git repack -a -d`: **size-pack 2.81 GiB, fsck clean, every branch intact** including
+  the main thread's fresh EP83-85 commit. C: free went 3.1 GB (08-30 crisis) → **419 GB**.
+  The Codex app has not launched since 26.707 broke, so nobody could even view what it had saved.
+
+The disk saga, start to finish: build garbage 44 GB + junction moves 111 GB + interrupted-GC
+garbage 131 GB + Codex snapshots/repack 136 GB.
