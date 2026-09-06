@@ -61,6 +61,18 @@ That is the whole trade-off. Quarantine by theme name and video loses essentiall
 13,073 images become unfindable — including the genuinely good ones, which in
 `atmosphere_symbolic` alone is on the order of 1,900 pictures.
 
+**As of 12:0x the same day this is no longer the trade-off — the stills index is built.**
+87,542 shelf stills embedded (16 unreadable skipped, exactly the 16 truncated JPEGs
+`image_integrity.v001.jsonl` already knew about). Re-measured:
+
+```
+                     video   reachable   image   reachable
+TOTAL                 5,891   5,887          13,073  13,073
+```
+
+**Images went 0 → 13,073 of 13,073.** Option B no longer costs anything: every asset behind these
+labels is now findable without its label. What the sheets showed when it was tested (see §6).
+
 **A correction, because the first count was wrong.** The first pass reported 19,378 assets, 6,157
 videos and 95.6% reachability. It counted rows whose files are **already sitting in
 `E:\pd-archive\_quarantine`** — 414 of them, put there by an earlier `quarantine_theme.py` run —
@@ -103,7 +115,7 @@ Nothing is deleted or moved. Video is essentially unaffected (95.6% still reacha
 **13,221 images become unreachable** until an image index exists. Erosion has to be handled
 separately.
 
-**C. Build an image semantic index first, then guard. — STARTED 2026-09-06 10:17.**
+**C. Build an image semantic index first, then guard. — DONE 2026-09-06.**
 `index_footage_semantic.py --build --images` (commit `64e219ad`) extends the existing CLIP indexer
 rather than duplicating it: same model, same vector space, a separate index so the clip index is
 never touched. It covers **87,558 shelf stills**, not only the 13,073 in these eleven themes, so
@@ -111,13 +123,34 @@ the whole shelf stops depending on its labels. Running on the GPU, which was idl
 4%); this lane does not own the GPU, so if a render or i2v job needs it, kill the build — it
 resumes from `images_state.json` with nothing lost.
 
-**Recommendation: C, then B.** B alone trades a known problem for a quieter one — the images do not
-become safe, they become invisible, and invisible material is what produced these labels in the
-first place. C is the only option that makes "search by meaning, then look" true for images, which
-is what the canon has been telling everyone to do since the labels were found rotten.
+**Recommendation: B is now the decision, and its cost is measured at zero.** C was the reason to
+wait, and C is finished — every one of the 18,964 assets is reachable without its label. B alone
+would have traded a known problem for a quieter one: the images would not have become safe, they
+would have become invisible, and invisible material is what produced these labels in the first
+place. That objection no longer applies.
 
-Once C lands, B's cost is measurable rather than assumed: re-run the reachability count and it
-should read close to 100% on both rows.
+What B still needs before anyone should call it done: the guard belongs at
+`factory_ledger_themes.select()`/`tier_of()` rather than on the `--theme` flag (§4), and it has to
+be **demonstrated rejecting a real quarantined pick** before it is relied on — a gate that has
+never been shown to bite is decoration.
 
 Not recommended: deleting anything. `atmosphere_symbolic` is 40% on-label — the material is real,
 the label is what failed.
+
+## 6. What the index actually returned, looked at rather than scored
+
+Two queries, tiled and read (`--sheet`; sheets in `runs/qc/`):
+
+* **"a uniformed police officer"** — real officers, where `police_modern` held **zero** in its 20
+  sampled tiles. The index solves the label problem. It does **not** solve the country problem:
+  of 12 hits, the readable ones are Japanese, British, Chinese and assorted European, plus one
+  carnival costume. **The shelf's real police are overwhelmingly not American**, and a query that
+  does not say so will not say so — this is the same defect that put Shenzhen, Moscow and a
+  Chinatown market into EP74 three episodes running.
+* **"an American courthouse exterior with columns"** — **12 of 12 genuine American courthouses**
+  (Texarkana, Marin County, Belzoni, Sioux City, Eau Claire, Milwaukee County, Louisville, Inyo
+  County, Jackson TN), several with the flag in frame. `courtroom_justice` had one courthouse in
+  twenty; the shelf had these all along, filed under labels nobody would search. **But 7 of the 12
+  are `loc__` and every LOC row is RIGHTS HOLD** — the item API was re-tested on 2026-09-06 and
+  still answers 403. The best pictures this shelf has of the channel's own subject are the ones it
+  may not use.
