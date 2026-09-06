@@ -56,7 +56,7 @@ all (every endpoint returns 403, measured 2026-09-03).
 | `motion` | how much the frame changes | a near-zero value is a still photograph in a video container. The owner rejects those as 紙芝居 |
 | `centre_energy` | does the subject survive a 9:16 crop | only 12% of the shelf keeps its subject vertically. Below ~0.25, a Short will crop the subject out |
 | `luma_crop` | brightness of the cropped frame | a dark blob reads as a black screen after grading |
-| `in semantic search` | is it findable | **`False` means a search will never surface it.** The clip exists but is invisible to the tool that picks clips |
+| `in semantic search` | is it findable | **`False` means a search will never surface it.** The asset exists but is invisible to the tool that picks it. Covers clips **and, since 2026-09-06, stills** — before that every image read `False`, correctly: the indexer globbed `*.mp4`/`*.mov`, so a picture could only ever be reached through its theme label |
 
 A missing technical field is printed as absent rather than as zero. `resolution unmeasured`
 means nobody probed it, not that it is small.
@@ -138,7 +138,11 @@ is a labelled contact sheet: `scripts/build_footage_contact_sheet.py`.
 
 ## 4. How to use this when choosing clips
 
-1. Search for candidates as usual (`index_footage_semantic.py --query "..."`).
+1. Search for candidates as usual — `index_footage_semantic.py --query "..."` for clips,
+   **`--query "..." --images` for stills** (two indexes, one command). Add `--sheet` to tile the
+   hits and look at them; the score is not the evidence, the picture is.
+   Say the country in the query. "a uniformed police officer" returns Japanese, British and
+   Chinese officers, because the shelf's real police are mostly not American.
 2. Run `--path` on each shortlisted file.
 3. Drop anything that is not `USABLE`. A `HOLD` is not a "probably fine".
 4. Drop anything below 720p if it will be full-frame, and anything with near-zero `motion`.
