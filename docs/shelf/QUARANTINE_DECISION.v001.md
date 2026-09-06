@@ -20,7 +20,9 @@ The question is not "are these themes bad" — that was settled by opening every
 
 ## 2. What is behind the label
 
-19,378 usable assets. The `eye` column is what 20 sampled tiles actually showed.
+19,378 assets carry these labels — of which **18,964 are still on the open shelf** and 414 were
+already moved into `_quarantine` by an earlier run (§3). The `eye` column is what 20 sampled tiles
+actually showed.
 
 | theme | assets | eye | what is really in it |
 |---|---:|---:|---|
@@ -46,19 +48,27 @@ were true for everything, closing theme-name access would cost nothing. It is tr
 **false for images**:
 
 ```
-                     usable   video   image   in semantic index
-TOTAL                 19,378   6,157  13,221               5,887
+                     video   reachable   image   reachable
+TOTAL                 5,891   5,887          13,073       0
 ```
 
-**95.6% of the video (5,887 of 6,157) is reachable by meaning without its theme name.**
-**0% of the 13,221 images is** — `index_footage_semantic.py` globs `*.mp4` and `*.mov` only, so
-all 30,470 index entries are clips. For an image, the rotten theme label is the *only* way in.
+**99.9% of the video (5,887 of 5,891) is reachable by meaning without its theme name.**
+**0% of the 13,073 images is** — `index_footage_semantic.py` globbed `*.mp4` and `*.mov` only, so
+all 30,470 entries in the existing index are clips. For an image, the rotten theme label was the
+*only* way in.
 
-That is the whole trade-off. Quarantine by theme name and video loses almost nothing, while
-13,221 images become unfindable — including the genuinely good ones, which in
-`atmosphere_symbolic` alone is on the order of 2,000 pictures.
+That is the whole trade-off. Quarantine by theme name and video loses essentially nothing, while
+13,073 images become unfindable — including the genuinely good ones, which in
+`atmosphere_symbolic` alone is on the order of 1,900 pictures.
 
-(`anonymous_crowd` is the one anomaly: 175 videos but 11 indexed. Not investigated.)
+**A correction, because the first count was wrong.** The first pass reported 19,378 assets, 6,157
+videos and 95.6% reachability. It counted rows whose files are **already sitting in
+`E:\pd-archive\_quarantine`** — 414 of them, put there by an earlier `quarantine_theme.py` run —
+as if they were on the open shelf. The indexer excludes `_quarantine` by design, so those assets
+looked like an indexing hole when they were the opposite. Corrected figures are above; the number
+still on the open shelf is **18,964**. `anonymous_crowd` is the case that exposed it: 291 of its
+302 assets were quarantined months ago, leaving 11 videos and no images, so it barely belongs in
+this decision at all.
 
 ## 4. Where a guard would have to go
 
@@ -93,16 +103,21 @@ Nothing is deleted or moved. Video is essentially unaffected (95.6% still reacha
 **13,221 images become unreachable** until an image index exists. Erosion has to be handled
 separately.
 
-**C. Build an image semantic index first, then guard.** Extend the CLIP indexer to still images
-(85,423 usable images shelf-wide, not just these 19k). That removes the dependency on rotten labels
-for the whole shelf, not only the 11 themes, and makes B free of its one real cost. The GPU is idle
-right now (2.1 of 24.5 GB, 4%), but this lane does not own the GPU — a render or i2v job in another
-lane would contend, so the timing is the owner's call.
+**C. Build an image semantic index first, then guard. — STARTED 2026-09-06 10:17.**
+`index_footage_semantic.py --build --images` (commit `64e219ad`) extends the existing CLIP indexer
+rather than duplicating it: same model, same vector space, a separate index so the clip index is
+never touched. It covers **87,558 shelf stills**, not only the 13,073 in these eleven themes, so
+the whole shelf stops depending on its labels. Running on the GPU, which was idle (2.1 of 24.5 GB,
+4%); this lane does not own the GPU, so if a render or i2v job needs it, kill the build — it
+resumes from `images_state.json` with nothing lost.
 
 **Recommendation: C, then B.** B alone trades a known problem for a quieter one — the images do not
 become safe, they become invisible, and invisible material is what produced these labels in the
 first place. C is the only option that makes "search by meaning, then look" true for images, which
 is what the canon has been telling everyone to do since the labels were found rotten.
+
+Once C lands, B's cost is measurable rather than assumed: re-run the reachability count and it
+should read close to 100% on both rows.
 
 Not recommended: deleting anything. `atmosphere_symbolic` is 40% on-label — the material is real,
 the label is what failed.
