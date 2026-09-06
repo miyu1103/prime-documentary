@@ -281,7 +281,34 @@ def build(limit: int | None, workers: int, images: bool = False, device: str = "
     return 0
 
 
-def query(text: str, top: int, images: bool = False) -> int:
+def _sheet(text: str, hits: list[tuple[float, str]]) -> None:
+    """Tile the hits so a person can SEE whether the index answered the question.
+
+    Reuses build_footage_contact_sheet.py --from-json, the same way sample_theme_sheets.py does.
+    A retrieval score is not evidence that the picture is right; the sheet is.
+    """
+    import re
+    slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:40] or "query"
+    sel = ROOT / "runs" / "qc" / f"semantic_query_{slug}.json"
+    sel.parent.mkdir(parents=True, exist_ok=True)
+    sel.write_text(json.dumps({"slug": f"q_{slug}", "items": [
+        {"abs_path": p, "label": f"{s:.3f}"} for s, p in hits]}), encoding="utf-8")
+    out = ROOT / "runs" / "qc" / f"semantic_query_{slug}.png"
+    # encoding="utf-8" is load-bearing on this machine, not decoration. With text=True the reader
+    # thread decodes the child with the locale codec (cp932 here), and the sheet builder prints a
+    # Japanese QC reminder. The UnicodeDecodeError is raised INSIDE that thread, where run() never
+    # sees it: it returns returncode 0 with stdout=None. Success, and the output gone.
+    r = subprocess.run([sys.executable, str(ROOT / "scripts" / "build_footage_contact_sheet.py"),
+                        "--from-json", str(sel), "--out", str(out)],
+                       capture_output=True, encoding="utf-8", errors="replace")
+    print((r.stdout or "").strip() or (r.stderr or "").strip())
+    if r.returncode != 0:
+        print(f"  sheet FAILED (exit {r.returncode})")
+        return
+    print(f"  sheet: {out}")
+
+
+def query(text: str, top: int, images: bool = False, sheet: bool = False) -> int:
     import numpy as np
     import torch
     from transformers import CLIPModel, CLIPProcessor
@@ -296,8 +323,11 @@ def query(text: str, top: int, images: bool = False) -> int:
         q = as_tensor(model.get_text_features(**t))
         q = (q / q.norm(dim=-1, keepdim=True)).cpu().numpy().astype("float32")[0]
     scores = emb @ q
-    for i in np.argsort(-scores)[:top]:
-        print(f"  {scores[i]:.3f}  {paths[i]}")
+    hits = [(float(scores[i]), paths[i]) for i in np.argsort(-scores)[:top]]
+    for s, p in hits:
+        print(f"  {s:.3f}  {p}")
+    if sheet:
+        _sheet(text, hits)
     return 0
 
 
@@ -315,11 +345,13 @@ def main() -> int:
     ap.add_argument("--images", action="store_true",
                     help="the stills index instead of the clip index")
     ap.add_argument("--device", default="auto", choices=("auto", "cuda", "cpu"))
+    ap.add_argument("--sheet", action="store_true",
+                    help="tile the hits into a contact sheet -- LOOK at it, the score is not proof")
     a = ap.parse_args()
     if a.build:
         return build(a.limit, a.workers, a.images, a.device)
     if a.query:
-        return query(a.query, a.top, a.images)
+        return query(a.query, a.top, a.images, a.sheet)
     ap.error("pass --build or --query")
 
 
