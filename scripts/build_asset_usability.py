@@ -38,6 +38,10 @@ OUT = ROOT / "runs" / "asset_usability.v001.jsonl"
 RES_INDEX = Path(LEDGER_DIR) / "video_resolution.json"
 VERT_INDEX = Path(r"E:\pd-media\assets\archive\_qc\vertical_index.jsonl")
 SEM_PATHS = ROOT / "runs" / "footage_semantic" / "paths.json"
+# stills got their own index on 2026-09-06. Before that every image answered "in semantic
+# search: False" -- correctly, because the indexer globbed *.mp4/*.mov, which is exactly why
+# pictures could only be reached through the theme labels the eye review found rotten.
+SEM_IMAGE_PATHS = ROOT / "runs" / "footage_semantic" / "images_paths.json"
 HONESTY = ROOT / "runs" / "theme_label_honesty.v001.json"
 EYE_REVIEW = ROOT / "docs" / "shelf" / "theme_eye_review.v001.json"
 INTEGRITY = ROOT / "runs" / "image_integrity.v001.jsonl"
@@ -105,6 +109,8 @@ def load_side_indexes() -> tuple[dict, dict, set]:
             if r.get("file_path"):
                 vert[r["file_path"]] = r
     sem = set(json.loads(SEM_PATHS.read_text("utf-8"))) if SEM_PATHS.exists() else set()
+    if SEM_IMAGE_PATHS.exists():
+        sem |= set(json.loads(SEM_IMAGE_PATHS.read_text("utf-8")))
     return res, vert, sem
 
 
@@ -213,7 +219,7 @@ def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict, eye: dic
         gaps.append("resolution unmeasured")
     if kind == "video" and not v:
         gaps.append("framing/motion unmeasured")
-    if kind == "video" and not tech["searchable"]:
+    if kind in ("video", "image") and not tech["searchable"]:
         gaps.append("not in the semantic index -- a search will never surface it")
     if "foreign" in tech:
         gaps.append(f"title names '{tech['foreign']}' -- this is not an American subject")
