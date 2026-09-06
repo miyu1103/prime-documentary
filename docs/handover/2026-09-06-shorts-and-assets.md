@@ -123,11 +123,36 @@ Two things found on the way:
   in `docs/shelf/QUARANTINE_DECISION.v001.md` (`f16c535e`). `anonymous_crowd` exposed it: 291 of
   its 302 assets were quarantined months ago.
 
-The decision packet is `docs/shelf/QUARANTINE_DECISION.v001.md`. It says: guard theme-name
-selection, but not before the stills are findable by meaning, and do not delete — `atmosphere_symbolic`
-is 40% on-label, the material is real and the label is what failed. It also maps every entry point
-a guard would need, including that **there are two shelves with two ledgers and `quarantine_theme.py`
-cannot reach the factory one**, which is the shelf that actually serves episodes.
+**It finished the same morning.** 87,542 stills embedded; 16 skipped as unreadable — exactly the
+16 truncated JPEGs yesterday's integrity sweep already knew about, two instruments agreeing
+without being told to. The clip index was caught up in the same pass (989 videos the shelf had
+gained since 08-25; now 31,455 of 31,459). Semantic side index: **30,470 → 118,997**.
+`build_asset_usability.py` reads both, so `in semantic search` is now true for stills, and the
+whole record was rebuilt (130,285 assets).
+
+Re-measured: **images went 0 → 13,073 of 13,073 reachable by meaning.** The quarantine decision's
+one real cost is now zero.
+
+Then it was tested by looking, not by scoring:
+
+* **"a uniformed police officer"** returned real officers, where `police_modern` held **zero** in
+  its 20 sampled tiles. But the readable ones are Japanese, British, Chinese and European, plus a
+  carnival costume — **the shelf's real police are mostly not American**, and a query that does
+  not say so will not say so. Same defect that put Shenzhen and a Chinatown market into EP74.
+* **"an American courthouse exterior with columns"** returned **12 of 12 genuine American
+  courthouses** — Texarkana, Belzoni, Sioux City, Milwaukee County, Louisville, Jackson TN, several
+  with the flag in frame. `courtroom_justice` had one courthouse in twenty; the shelf had these all
+  along, under labels nobody would search. **7 of the 12 are `loc__` and every LOC row is RIGHTS
+  HOLD** — the item API was re-tested today and still answers 403. The best pictures this shelf has
+  of the channel's own subject are the ones it may not use.
+
+The decision packet is `docs/shelf/QUARANTINE_DECISION.v001.md`. With C done, it recommends
+guarding theme-name selection — at `factory_ledger_themes.select()`/`tier_of()`, not on the
+`--theme` flag, and demonstrated biting before it is relied on. Do not delete:
+`atmosphere_symbolic` is 40% on-label, the material is real and the label is what failed. The
+packet also maps every entry point a guard needs, including that **there are two shelves with two
+ledgers and `quarantine_theme.py` cannot reach the factory one**, which is the shelf that actually
+serves episodes.
 
 ## 5. A trap that returns success with no output
 
