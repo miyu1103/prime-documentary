@@ -90,7 +90,64 @@ writers on one ledger. If the owner decides to stop collecting instead, killing 
 stop, and the restart line is simply not run (`Disable-ScheduledTask -TaskName 'PD-Ingest-IA'`
 keeps it off; resume state survives).
 
-## 4. Unchanged
+## 4. The stills had no way in, and now they do
+
+The one open item in this lane that was not blocked was the owner's quarantine decision on the
+eleven rotten themes. Preparing it produced the number that decides it:
+
+```
+                     video   reachable by meaning   image   reachable by meaning
+the 11 themes         5,891   5,887 (99.9%)        13,073   0
+```
+
+`index_footage_semantic.py` globbed `*.mp4` and `*.mov`, so every one of its 30,470 entries was a
+clip. **For a still, the rotten theme label was the only way in** — and those are the labels the
+eye review found describing something other than their contents. That is why theme names keep
+getting used despite the canon saying not to: for images there was no alternative.
+
+`--images` (commit `64e219ad`) extends the same indexer — same CLIP model, same vector space, a
+separate index so the clip index is never disturbed — over **87,558 shelf stills**. Started 10:17
+on the GPU. `--sheet` (commit `5c45a8ab`) tiles any query's hits through the existing contact-sheet
+builder, because a retrieval score is not evidence that the picture is right.
+
+Two things found on the way:
+
+* **The `ai_video` exclusion never existed in code.** The file header has said since August that
+  generated material is "deliberately left out"; nothing implemented it. It happened to be true —
+  0 of the 30,470 indexed paths — and would have stopped being true on the next rebuild. Now
+  enforced in `_excluded()` for `ai_video`/`ai_image`/`ai_gen`/`synthetic`.
+* **My own count was wrong and the correction matters.** The first pass said 19,378 assets and
+  95.6% video reachability. It counted 414 rows whose files already sit in
+  `E:\pd-archive\_quarantine` from an earlier `quarantine_theme.py` run; the indexer excludes
+  `_quarantine` by design, so they read as an indexing hole when they were the opposite. Corrected
+  in `docs/shelf/QUARANTINE_DECISION.v001.md` (`f16c535e`). `anonymous_crowd` exposed it: 291 of
+  its 302 assets were quarantined months ago.
+
+The decision packet is `docs/shelf/QUARANTINE_DECISION.v001.md`. It says: guard theme-name
+selection, but not before the stills are findable by meaning, and do not delete — `atmosphere_symbolic`
+is 40% on-label, the material is real and the label is what failed. It also maps every entry point
+a guard would need, including that **there are two shelves with two ledgers and `quarantine_theme.py`
+cannot reach the factory one**, which is the shelf that actually serves episodes.
+
+## 5. A trap that returns success with no output
+
+`subprocess.run(capture_output=True, text=True)` decodes the child with the **locale** codec —
+cp932 on this machine. A child that prints Japanese raises `UnicodeDecodeError` **inside
+subprocess's reader thread**, where `run()` never sees it. The call returns **returncode 0 with
+`stdout=None`**. Exit zero, output gone, nothing raised.
+
+Found because `--sheet` crashed on `r.stdout.strip()`. Fixed there with
+`encoding="utf-8", errors="replace"`.
+
+Measured repo-wide: **116 of 1,112 scripts print non-ASCII, and 33 of them are invoked from a
+caller that uses `capture_output` with `text=True`** — including the ship path
+(`pd_ship_policy.py`, `check_final_acceptance.py`, `upload_schedule_case_v001.py`). One was
+checked by hand: `pd_ship_policy.py:381` reads `check_spec_satisfied.py` this way and **fails
+closed** on an unreadable answer, so it would over-block rather than under-block. **The other 32
+are measured, not verified** — this is the build/ship lane's to judge, not this one's, and it is
+recorded here rather than fixed across 269 files by a lane that does not own them.
+
+## 6. Unchanged
 
 * **Freesound tail**: 2,637 rows, waiting on the window (~13:00 09-06). Procedure unchanged and
   unrun. `docs/shelf/rights_progress.v001.json` is still current (derived from the ledger).
