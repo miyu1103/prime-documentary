@@ -20,14 +20,30 @@ So: embed a real frame from every clip with CLIP and match queries against the p
 image land in the same space, so "handcuffs closing on wrists" retrieves clips that actually show
 that, whatever the file is called.
 
+The same argument applies to STILL images, and for them it is worse. Measured 2026-09-06: of the
+19,378 assets behind the eleven themes the eye review marked QUARANTINE, 5,887 of 6,157 videos
+(95.6%) were already findable here by meaning — and 0 of 13,221 images were, because this indexer
+globbed *.mp4 and *.mov only. For a picture, the theme label was the ONLY way in, and those are
+the labels that were found rotten ("police_modern" holds zero real police). `--images` closes
+that: same model, same space, a separate index so the clip index is never disturbed.
+
+This is a SEARCH tool, not a gate. Being findable here does not make an asset usable — run
+`build_asset_usability.py --path <file>` before putting anything on screen.
+
 Output (resumable, written incrementally):
-    runs/footage_semantic/embeddings.npy   float32 [N, 512], L2-normalised
+    runs/footage_semantic/embeddings.npy   float32 [N, 512], L2-normalised   (clips)
     runs/footage_semantic/paths.json       the N clip paths, same order
     runs/footage_semantic/state.json       progress, so a killed run resumes
+    runs/footage_semantic/images_*.{npy,json}                                (--images)
 
 Usage:
-  py -3.11 scripts/index_footage_semantic.py --build            # or resume
-  py -3.11 scripts/index_footage_semantic.py --query "handcuffs closing on wrists" --top 12
+  py -3.10 scripts/index_footage_semantic.py --build            # or resume  (clips)
+  py -3.10 scripts/index_footage_semantic.py --build --images   # or resume  (stills)
+  py -3.10 scripts/index_footage_semantic.py --query "handcuffs closing on wrists" --top 12
+  py -3.10 scripts/index_footage_semantic.py --query "a courthouse exterior" --images
+
+py -3.10, not 3.11: torch lives in the 3.10 interpreter (2.0.1+cu118, CUDA available). 3.11 has
+no torch at all, so --build there dies on import.
 """
 from __future__ import annotations
 
@@ -62,6 +78,19 @@ OUT = ROOT / "runs" / "footage_semantic"
 MODEL = "openai/clip-vit-base-patch32"
 BATCH = 32
 
+VIDEO_EXTS = ("*.mp4", "*.mov")
+IMAGE_EXTS = ("*.jpg", "*.jpeg", "*.png", "*.webp", "*.tif", "*.tiff", "*.bmp")
+
+# _quarantine is where the ingest scripts put anything they could not clear:
+# license_decision=review_required. An unreviewed asset must never become bindable, because
+# binding is what puts it on screen. _ledger/_qc are bookkeeping, not media.
+# The ai_* directories are generated material: the header above says ai_video is "deliberately
+# left out", but until 2026-09-06 nothing in the code did that -- the exclusion lived only in the
+# comment. It happened to be true (0 of the 30,470 indexed clip paths were ai_video) and would
+# have quietly stopped being true on the next rebuild.
+SKIP_PARTS = ("_quarantine", "_ledger", "_qc")
+SKIP_PREFIXES = ("ai_video", "ai_image", "ai_gen", "synthetic")
+
 
 def as_tensor(out):
     """transformers 5.x returns a model-output object from get_*_features, 4.x returned a tensor.
@@ -76,20 +105,53 @@ def as_tensor(out):
     return out
 
 
-def clip_paths() -> list[str]:
+def _excluded(p: Path) -> bool:
+    for part in p.parts:
+        if part in SKIP_PARTS:
+            return True
+        if part.lower().startswith(SKIP_PREFIXES):
+            return True
+    return False
+
+
+def media_paths(exts: tuple[str, ...]) -> list[str]:
     out: set[str] = set()
     for shelf in SHELVES:
         if not shelf.is_dir():
             continue
-        for ext in ("*.mp4", "*.mov"):
+        for ext in exts:
             for p in shelf.rglob(ext):
-                # _quarantine is where the ingest scripts put anything they could not clear:
-                # license_decision=review_required. An unreviewed clip must never become bindable,
-                # because binding is what puts it on screen. _ledger/_qc are bookkeeping, not media.
-                if any(part in ("_quarantine", "_ledger", "_qc") for part in p.parts):
+                if _excluded(p):
                     continue
                 out.add(str(p))
     return sorted(out)
+
+
+def clip_paths() -> list[str]:
+    """Kept as its own name: other tools import it."""
+    return media_paths(VIDEO_EXTS)
+
+
+def load_image(path: str):
+    """Open a shelf still at roughly CLIP's input size. Returns None on anything unreadable.
+
+    `draft` makes libjpeg decode a large JPEG at a reduced scale, which is most of the speed on a
+    shelf whose stills run to 6000 px. Truncated files are NOT forced to load: sixteen of them are
+    known (docs/shelf/image_integrity.v001.jsonl) and a half-decoded picture embeds as grey, which
+    would then answer to every washed-out query. They are skipped and counted instead.
+    """
+    from PIL import Image
+    try:
+        im = Image.open(path)
+        try:
+            im.draft("RGB", (448, 448))
+        except Exception:
+            pass
+        im = im.convert("RGB")
+        im.thumbnail((448, 448))
+        return im
+    except Exception:
+        return None
 
 
 def grab_frame(clip: str, dst: Path) -> bool:
@@ -121,17 +183,24 @@ def grab_frame(clip: str, dst: Path) -> bool:
     return True
 
 
-def build(limit: int | None, workers: int) -> int:
+def build(limit: int | None, workers: int, images: bool = False, device: str = "auto") -> int:
     import numpy as np
     from concurrent.futures import ThreadPoolExecutor
     from PIL import Image
     import torch
     from transformers import CLIPModel, CLIPProcessor
 
-    OUT.mkdir(parents=True, exist_ok=True)
-    paths_file, emb_file, state_file = OUT / "paths.json", OUT / "embeddings.npy", OUT / "state.json"
+    # the shelf holds scans and 6000 px stills; the default bomb guard refuses some of them
+    Image.MAX_IMAGE_PIXELS = 300_000_000
 
-    all_clips = clip_paths()
+    OUT.mkdir(parents=True, exist_ok=True)
+    pre = "images_" if images else ""
+    paths_file = OUT / f"{pre}paths.json"
+    emb_file = OUT / f"{pre}embeddings.npy"
+    state_file = OUT / f"{pre}state.json"
+    noun = "still" if images else "clip"
+
+    all_clips = media_paths(IMAGE_EXTS if images else VIDEO_EXTS)
     if limit:
         all_clips = all_clips[:limit]
     done: list[str] = []
@@ -139,45 +208,54 @@ def build(limit: int | None, workers: int) -> int:
     if paths_file.exists() and emb_file.exists():
         done = json.loads(paths_file.read_text(encoding="utf-8"))
         embs = [np.load(emb_file)]
-        print(f"resuming: {len(done)} clips already embedded")
+        print(f"resuming: {len(done)} {noun}s already embedded")
     todo = [c for c in all_clips if c not in set(done)]
-    print(f"shelf {len(all_clips)} clips | to do {len(todo)}")
+    print(f"shelf {len(all_clips)} {noun}s | to do {len(todo)}")
     if not todo:
         return 0
 
-    print(f"loading {MODEL} (first run downloads ~600 MB)")
-    model = CLIPModel.from_pretrained(MODEL).eval()
+    dev = ("cuda" if torch.cuda.is_available() else "cpu") if device == "auto" else device
+    print(f"loading {MODEL} on {dev} (first run downloads ~600 MB)")
+    model = CLIPModel.from_pretrained(MODEL).eval().to(dev)
     proc = CLIPProcessor.from_pretrained(MODEL)
 
     tmp = Path(tempfile.mkdtemp(prefix="clipidx_"))
     processed = 0
+    unreadable = 0
     try:
         for start in range(0, len(todo), BATCH):
             chunk = todo[start:start + BATCH]
-            frames: list[tuple[str, Path]] = []
-            with ThreadPoolExecutor(max_workers=workers) as ex:
-                futs = {ex.submit(grab_frame, c, tmp / f"f{i}.jpg"): (c, tmp / f"f{i}.jpg")
-                        for i, c in enumerate(chunk)}
-                for fut in futs:
-                    c, dst = futs[fut]
-                    if fut.result():
-                        frames.append((c, dst))
-            if not frames:
-                done.extend(chunk)
-                continue
             imgs = []
             keep = []
-            for c, dst in frames:
-                try:
-                    imgs.append(Image.open(dst).convert("RGB"))
-                    keep.append(c)
-                except Exception:
-                    pass
+            if images:
+                # a still IS the frame -- no ffmpeg, no temp file, no brightest-of-three
+                with ThreadPoolExecutor(max_workers=workers) as ex:
+                    for c, im in zip(chunk, ex.map(load_image, chunk)):
+                        if im is None:
+                            unreadable += 1
+                            continue
+                        imgs.append(im)
+                        keep.append(c)
+            else:
+                frames: list[tuple[str, Path]] = []
+                with ThreadPoolExecutor(max_workers=workers) as ex:
+                    futs = {ex.submit(grab_frame, c, tmp / f"f{i}.jpg"): (c, tmp / f"f{i}.jpg")
+                            for i, c in enumerate(chunk)}
+                    for fut in futs:
+                        c, dst = futs[fut]
+                        if fut.result():
+                            frames.append((c, dst))
+                for c, dst in frames:
+                    try:
+                        imgs.append(Image.open(dst).convert("RGB"))
+                        keep.append(c)
+                    except Exception:
+                        pass
             if not imgs:
                 done.extend(chunk)
                 continue
             with torch.no_grad():
-                inp = proc(images=imgs, return_tensors="pt")
+                inp = proc(images=imgs, return_tensors="pt").to(dev)
                 v = as_tensor(model.get_image_features(**inp))
                 v = v / v.norm(dim=-1, keepdim=True)
             embs.append(v.cpu().numpy().astype("float32"))
@@ -198,17 +276,19 @@ def build(limit: int | None, workers: int) -> int:
         for f in tmp.glob("*"):
             f.unlink(missing_ok=True)
         tmp.rmdir()
-    print(f"indexed {len(done)} clips")
+    print(f"indexed {len(done)} {noun}s"
+          + (f" | {unreadable} unreadable, skipped" if unreadable else ""))
     return 0
 
 
-def query(text: str, top: int) -> int:
+def query(text: str, top: int, images: bool = False) -> int:
     import numpy as np
     import torch
     from transformers import CLIPModel, CLIPProcessor
 
-    emb = np.load(OUT / "embeddings.npy")
-    paths = json.loads((OUT / "paths.json").read_text(encoding="utf-8"))
+    pre = "images_" if images else ""
+    emb = np.load(OUT / f"{pre}embeddings.npy")
+    paths = json.loads((OUT / f"{pre}paths.json").read_text(encoding="utf-8"))
     model = CLIPModel.from_pretrained(MODEL).eval()
     proc = CLIPProcessor.from_pretrained(MODEL)
     with torch.no_grad():
@@ -232,11 +312,14 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--query")
     ap.add_argument("--top", type=int, default=10)
+    ap.add_argument("--images", action="store_true",
+                    help="the stills index instead of the clip index")
+    ap.add_argument("--device", default="auto", choices=("auto", "cuda", "cpu"))
     a = ap.parse_args()
     if a.build:
-        return build(a.limit, a.workers)
+        return build(a.limit, a.workers, a.images, a.device)
     if a.query:
-        return query(a.query, a.top)
+        return query(a.query, a.top, a.images)
     ap.error("pass --build or --query")
 
 
