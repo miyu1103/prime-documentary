@@ -172,9 +172,39 @@ closed** on an unreadable answer, so it would over-block rather than under-block
 are measured, not verified** — this is the build/ship lane's to judge, not this one's, and it is
 recorded here rather than fixed across 269 files by a lane that does not own them.
 
-## 6. Unchanged
+## 6. The Freesound tail — run, and not quite finished
 
-* **Freesound tail**: 2,637 rows, waiting on the window (~13:00 09-06). Procedure unchanged and
-  unrun. `docs/shelf/rights_progress.v001.json` is still current (derived from the ledger).
+The window opened at **13:42**, not "about midday": it replenishes 24 hours after the previous
+batch, and the previous batch ran at 13:42. A 5-row probe at 10:25 returned 5 unanswered; the same
+probe at 13:42 returned 2 free.
+
+```
+2,637 asked -> 1,993 free, 0 refused, 644 unanswered at the 2,000/day ceiling
+audio in the usability record: clear 5,998 -> 7,991, hold 2,677 -> 684
+```
+
+**644 rows are left for one more run** (window reopens ~13:45 on 09-07). They keep no verdict, so
+the next run retries them — that is the design, not a failure.
+
+**The apply was run while the orphaned ingest was still writing, on purpose and with proof.** The
+standing rule is to stop the ingest first, and the ingest could not be stopped (§3). So the
+question was answered instead of assumed: `apply_item_licence_verdicts.py` rewrites **only files
+it changed** (`if hit and not dry_run`), and `--dry-run` showed hits in `freesound.jsonl` and
+nowhere else. The orphan appends to `ia.jsonl`/`nasa.jsonl`/`rejects_ia.jsonl`, which the apply
+never opened for writing. Ledger PASS afterwards: 130,285 rows, torn 0, duplicated 0.
+
+**`rights_progress.v001.json` is no longer hand-maintained** — which is how the file that exists to
+correct a stale report becomes one. `scripts/build_rights_progress.py` derives it from the ledger.
+
+```
+resolved_usable 17,239   examined_refused 836   still_held 4,116
+held = LOC 2,724 (403, re-tested today) + IA 649 (no evidence) + freesound 644 (tomorrow)
+     + a 99-row residue: wikimedia 47, oyez 31, courtlistener 9, nasa 6, coverr 4, nara 2
+```
+
+The 99-row residue was re-asked today where a lookup exists (wikimedia, nara): **all unanswered
+again**. Those sources have simply stopped answering for those ids.
+
+## 7. Unchanged
 * LOC 2,724 and IA 649 stay held. No machine path exists; that is the final state.
 * The quarantine decision on 11 themes (~19k assets) is still the owner's.
