@@ -1,6 +1,6 @@
 {
- "_derived_from": "E:/pd-archive/_ledger/*.jsonl on 2026-09-05 13:45",
- "_note": "resolve_item_licences.py rewrites its own output each run, so its verdict file under-reports once rows are applied. The ledger is the record.",
+ "_derived_from": "E:\\pd-archive\\_ledger/*.jsonl at 2026-09-06 06:02 UTC",
+ "_note": "Derived from the ledger by scripts/build_rights_progress.py. resolve_item_licences.py rewrites its own output each run, so its verdict file under-reports once rows are applied. still_held means unanswered, not refused.",
  "by_source": {
   "courtlistener": {
    "still_held": 9
@@ -9,8 +9,8 @@
    "still_held": 4
   },
   "freesound": {
-   "resolved_usable": 5998,
-   "still_held": 2637
+   "resolved_usable": 7991,
+   "still_held": 644
   },
   "ia": {
    "still_held": 649,
