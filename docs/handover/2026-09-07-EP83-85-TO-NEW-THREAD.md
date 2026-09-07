@@ -30,18 +30,23 @@ whichever session has quota.
 | captions | lead 0.0 | lead 0.0 | **lead 0.30** (was failing p90 +0.415s vs +0.35s) |
 | packaging | title/thumb/desc present, claims check PASS | same | same |
 | stock pool | 42 (11 new aviation) | 71 (15 new nuclear/river) | 80 (18 new levee/flood) |
-| master | **rendering now** | queued | queued |
+| master | **picture done 19:12; mixing audio** | queued 2nd | queued 3rd |
 
 \* max737 reads "NOT READY -- only 8 stills / 25 factory" **and that is normal**. `[5/7]` moves
 everything the last film did not cut into `<pool>_unused`; `[0/7]` moves it back. Measured now:
 `factory 25 + 17 unused = 42`, `img 8 + 394 unused = 402`. Do not "fix" this.
 
-**EP83 is at 51,364 / 53,455 frames on its second attempt.** The first attempt rendered all
-53,455 frames and then FFmpeg died at `Encoded 42764/53455` with exit code `3221225794`
-(`STATUS_DLL_INIT_FAILED` — a Windows resource failure, not a content bug). `pd_render_guarded.sh`
-retried automatically at `--concurrency=4`, which is the documented mitigation. If it dies the same
-way again, that is the thing to investigate, and a reboot is the usual cure — ask the owner first,
-another lane is using this machine.
+**EP83's picture is DONE.** `out/max737.mp4`, 1,377,805,643 bytes, 19:12, all 53,455 frames
+rendered and all 53,455 encoded. At 19:14 the finisher was at `[7/7] 4-layer mix ... as v007`,
+which writes `episodes/PD-2026-083-max737/08_edit/max737_final_bgm.v001.mp4` and re-gates it.
+When that finishes the supervisor starts threemile on its own.
+
+That was the **second** attempt. The first rendered all 53,455 frames and then FFmpeg died at
+`Encoded 42764/53455` with exit code `3221225794` (`STATUS_DLL_INIT_FAILED` — a Windows resource
+failure, not a content bug), and `pd_render_guarded.sh` retried at `--concurrency=4`, which is the
+documented mitigation and which worked. **If EP84 or EP85 dies the same way twice, stop and look
+at machine resources** rather than at the film; a reboot is the usual cure, but ask the owner
+first because another lane is on this machine.
 
 ---
 
