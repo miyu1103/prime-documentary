@@ -123,6 +123,8 @@ the whole shelf stops depending on its labels. Running on the GPU, which was idl
 4%); this lane does not own the GPU, so if a render or i2v job needs it, kill the build — it
 resumes from `images_state.json` with nothing lost.
 
+> **DONE 2026-09-07 (owner: "やって"). B is implemented in `search_archive.py` — see §7.**
+
 **Recommendation: B is now the decision, and its cost is measured at zero.** C was the reason to
 wait, and C is finished — every one of the 18,964 assets is reachable without its label. B alone
 would have traded a known problem for a quieter one: the images would not have become safe, they
@@ -154,3 +156,42 @@ Two queries, tiled and read (`--sheet`; sheets in `runs/qc/`):
   are `loc__` and every LOC row is RIGHTS HOLD** — the item API was re-tested on 2026-09-06 and
   still answers 403. The best pictures this shelf has of the channel's own subject are the ones it
   may not use.
+
+## 7. What B turned out to be, once it was measured rather than mapped
+
+The survey in §4 named `factory_ledger_themes.select()` as the cheapest chokepoint. **Running the
+tools said otherwise**, and the difference matters enough to write down:
+
+* `select_factory_assets.py --theme courtroom_justice` returns **0 matches today**. The factory
+  ledger it needs (`E:\pd-media\assets\archive\_ledger\factory.jsonl`) **does not exist on this
+  machine**, and the tool already refuses off-label rows and prints a four-line banner saying so.
+  It is not leaking anything; it is serving nothing.
+* `search_archive.py --theme courtroom_justice` returned **3,045 rows with no warning at all.**
+  That was the leak, and it is the shelf the eye review actually measured.
+
+So the guard went into `search_archive.py` (`38a48696`). Asking for one of the eleven **by name**
+is refused with exit 3, printing the reviewer's own note and the commands to search by picture
+instead; `--allow-quarantined-theme` overrides it with a banner.
+
+**Keyword, `--shot` and semantic search are deliberately not filtered.** They judge an asset by its
+own title or its own pixels — the thing that still works. `--shot "courtroom interior wooden
+benches"` returns a genuine courtroom *from* `courtroom_justice`, which is the same reason nothing
+is deleted. Those results now print how many of the rows shown carry a thrown-out label.
+
+Demonstrated four ways before being relied on: quarantined theme refused (exit 3); `documents_paper`
+still returns 2,729 hits (exit 0); the override serves with a banner; keyword search unaffected and
+annotated. The tool's own first usage example was `--theme courtroom_justice` — refused by its own
+new guard, and replaced.
+
+**`select_factory_assets.py` was deliberately left alone.** Three of its group names collide with
+quarantined themes (`atmosphere_symbolic` 9,126, `misc_background` 11,560, `legal_court` 4,303) and
+it would have been easy to guard those too. But the factory shelf is a **different file
+population**: it has no `legal_court` directory at all, its groups are derived from filenames, and
+**0 basenames are shared** with the archive shelf's `legal_court`. The eye verdict was measured on
+the archive shelf; applying it there would be an inference wearing a measurement's clothes. That
+shelf has its own measured problem — its own audit puts the filename labels at 40% wrong — and its
+own banner already says so.
+
+**Still not done, and it is the erosion problem from §4:** `recover_stock_shelf.py` re-derives a
+theme with no quarantine check, and the scheduled ingest runs `--theme all`, so these labels keep
+refilling. The guard refuses the *question*; it does not stop the shelf answering it again tomorrow.
