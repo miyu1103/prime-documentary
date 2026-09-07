@@ -20,9 +20,11 @@ Every factual line traces to EP85_katrina_FACTS_LEDGER.v001.md by KT- id.
 
 ## HOOK
 In New Orleans a concrete wall stands on an earth bank, and the water is nine feet up it. <!-- KT-505 -->
+<!-- KT-505, KT-501; AE001 comparison 8.2 FEET / 14.4 FEET rides this line — nine feet of water against a wall built for fourteen, on screen 0.00 to 8.00 s -->
 The wall is built for fourteen. <!-- KT-505 -->
 At about seven in the morning, it goes. <!-- KT-505 -->
 Why does a wall fail at water it was designed to hold?
+<!-- KT-503; AE002 hero_number 29 AUGUST 2005 rides this line — the hook's last line, 9.86 to 16.86 s. The brand opening of this film is the 'overlay' variant, a 238 px lower band from 12.90 to 16.40 s; it does not reach this card's type, which lives between y150 and y820 -->
 
 ## OP
 <!-- canonical bookend — not narrated, do not write copy here -->
@@ -32,8 +34,10 @@ Why does a wall fail at water it was designed to hold?
 Everyone remembers the hurricane. Almost nobody remembers the arithmetic.
 
 New Orleans sits lower than the water around it, and it stays dry because of a ring — earth banks, concrete walls, pumps — about three hundred and fifty miles of protective structures, fifty-six miles of which are floodwalls. Most of those floodwalls are a type called an I-wall: a slab of concrete standing on a line of steel sheet piling driven down into the earth bank beneath it. <!-- KT-405 -->
+<!-- KT-202; AE003 title_card NEW ORLEANS rides this line — the OP bookend of this film is a 3.5 s lower band that ends at 16.40 s, so the episode's own title card lands on the first full line of ACT_1 (19.28 s) rather than under the band -->
 
 Think of a fence post in a lawn. The part you see is the wall. The part you do not see is what holds it.
+<!-- KT-405, KT-601, KT-603; AE004 system_map A WALL ON A LEVEE rides this line — the wall you see, the sheetpile you do not, and the earth levee it stands on -->
 
 On the twenty-ninth of August, 2005, the water came up. And what happened next divides cleanly into two stories that get told as one, and should not be.
 
@@ -58,6 +62,7 @@ Now the numbers, because they are the film.
 At the 17th Street Canal, the top of the floodwall was supposed to be fourteen feet. Because of an out-of-date datum and settlement of the ground it stood on, it was actually somewhere between about twelve and twelve and a half. The water that broke it was around ten to eleven. <!-- KT-503 -->
 
 The breach began to develop at about six in the morning and was fully developed before nine. <!-- KT-503 -->
+<!-- KT-503, KT-505; AE005 timeline 6 A.M. / 7 A.M. / 8 A.M. rides this line -->
 
 And at the London Avenue Canal, the south breach happened between about seven and eight in the morning **when the water level in the canal was eight point two to nine point five feet.** <!-- KT-505 -->
 
@@ -90,12 +95,14 @@ What broke?
 Before the failure, the mechanism. And before the mechanism, the thing that makes this story matter to somebody who does not care about soil.
 
 Two-thirds. In Orleans East Bank and St. Bernard, approximately two-thirds of the flooding — and half of the economic losses — came from water flowing through breaches in the floodwalls and levees, not over them. <!-- KT-801 -->
+<!-- KT-801; AE006 hero_number TWO-THIRDS rides this line -->
 
 For the east bank of Orleans Parish specifically, the outfall canal breaches and the west-side Industrial Canal failures were responsible for about seventy percent of the flooding. <!-- KT-802 -->
 
 And the investigators ran the alternative. They modelled the same storm with no breaching and working pumps.
 
 Flooding in some areas **may have been as little as one-third** of what actually happened. And then they wrote the line that separates a bad night from a catastrophe. **Overtopping was extensive, but would have only occurred for a matter of hours. Breaching allowed water to enter the protected areas for days.** <!-- KT-803 -->
+<!-- KT-803, KT-801; AE007 comparison HOURS / DAYS rides this line -->
 
 Hours, against days. That is the difference between a flooded ground floor and a drowned city.
 
@@ -166,6 +173,7 @@ They built the wall. They raised the water against it. And they watched what hap
 So what does a full-scale test, on the right soil, actually tell you that a calculation cannot?
 
 This was 1977. <!-- KT-602 -->
+<!-- KT-602; AE009 hero_number 1977 rides this line -->
 
 Twenty-eight years before the storm.
 
@@ -174,6 +182,7 @@ Here is what the test showed, in the investigators' words.
 **A gap opened between the sheetpile curtain and the outboard side earthen embankment during loading, and then water penetrated into this gap. This effectively cut the supporting embankment in half, and the water pressures applied against the lower sheetpile sections helped to push the inboard half of the embankment, as well as the I-wall and its supporting sheetpile curtain, towards the inboard — the protected — side.** <!-- KT-603 -->
 
 Every word of that is a description of what happened at the 17th Street Canal on the twenty-ninth of August, 2005.
+<!-- KT-603, KT-607; AE008 system_map THE GAP BEHIND THE WALL rides this line — the mechanism the 1977 test disclosed, drawn as the sentence lands on 17th Street -->
 
 And the investigators add the clause that turns a technical finding into the spine of a film. This was **a failure mechanism that had not traditionally been considered in the local design of floodwall systems in the New Orleans District.** <!-- KT-603 -->
 
@@ -186,6 +195,7 @@ So: a well-designed, expensive, deliberately commissioned full-scale field test,
 And then.
 
 **Unfortunately, despite publication of these important findings in both internal Corps reports as well as in professional journals — and despite the fact that these studies had been undertaken to facilitate the design of the challenging floodwalls along the drainage canals — neither of these lessons were then incorporated in the subsequent design of the floodwalls along the 17th Street, Orleans and London Avenue drainage canals, nor along the Industrial Canal.** <!-- KT-604 -->
+<!-- KT-604; AE010 quote_card NEITHER OF THESE LESSONS WERE INCORPORATED rides this line — Moment of Truth, music out, motion stops -->
 
 Read that once for the facts and once for the shape.
 
@@ -202,6 +212,7 @@ There is more in the same section, and it is the same shape twice.
 Two permeability tests had been run on the ground under these canals, and both concluded that underseepage — water travelling beneath the sheet piling — was not a risk worth designing against. The investigators call that **a very serious error**, and say it resulted in sheet piles throughout the system **routinely being far too short.** <!-- KT-609 -->
 
 And underneath all of it, a number. These walls were designed to a factor of safety of **one point three** — meaning they were calculated to be thirty percent stronger than the load they were expected to carry. The investigators call that **far too low a value for a system protecting a large urban population**, and they trace where it came from: standards developed for levees protecting **agricultural land**, in the first half of the twentieth century. <!-- KT-608 -->
+<!-- KT-608; AE011 hero_number 1.3 rides this line -->
 
 A city was being held up to a standard written for a field.
 
@@ -250,6 +261,7 @@ Twelve years of nothing, with no reason recorded.
 In November of 2009, after trial, the judge ruled. And the language he chose is why people still quote this case.
 
 He found that the negligence of the Corps — by failing to maintain MR-GO properly — **was not policy, but insouciance, myopia and shortsightedness.** <!-- KT-203 -->
+<!-- KT-203, KT-201, KT-204, KT-207; AE012 list_build WHAT THE COURT FOUND rides this line — the TRIAL court, whose finding the reversal card later takes away -->
 
 **For over forty years**, he wrote, **the Corps was aware that the Reach II levee protecting Chalmette and the Lower Ninth Ward was going to be compromised by the continued deterioration of the MRGO.** <!-- KT-204 -->
 
@@ -274,6 +286,7 @@ The popular version blamed the channel for delivering the water. The court recor
 The government appealed.
 
 And on the second of March, 2012, the Fifth Circuit affirmed. **We AFFIRM each of the judgments**, the panel wrote. <!-- KT-301 -->
+<!-- KT-301, KT-302, KT-304; AE013 timeline AFFIRMED / REVERSED rides this line -->
 
 For six months, the finding stood.
 
@@ -346,12 +359,14 @@ In 1977, in a swamp in the Atchafalaya basin, that gap opened in a test that had
 In August 2005 it opened again at the 17th Street Canal, in ground the investigators had already noted was **remarkably similar**, and a wall built for fourteen feet came apart under ten. <!-- KT-602, KT-503 -->
 
 And in a courtroom in 2012, a different kind of gap held open: between a finding that the Corps had been negligent for forty years, and a rule that made the finding unenforceable **whatever the actual reasons.** <!-- KT-204, KT-304 -->
+<!-- KT-304; AE014 quote_card SHIELDED BY THE DFE rides this line -->
 
 ⟨HELD⟩
 
 The independent report ends on a list, and it is only six numbers.
 
 New Orleans has now been flooded by hurricanes six times in a century — **1915, 1940, 1947, 1965, 1969, and 2005.** <!-- KT-909 -->
+<!-- KT-909; AE015 timeline 1915 · 1940 · 1947 · 1965 · 1969 · 2005 rides this line -->
 
 And then the last line those engineers allowed themselves. **It should not be allowed to happen again.** <!-- KT-909 -->
 

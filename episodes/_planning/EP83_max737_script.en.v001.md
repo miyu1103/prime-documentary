@@ -13,15 +13,58 @@ admissions BY AGREEMENT (MX-204). The one individual tried was ACQUITTED and is 
 is contested by the NTSB and the film says so (MX-805, MX-806).
 
 Every factual line traces to EP83_max737_FACTS_LEDGER.v001.md by MX- id.
+
+AFTER EFFECTS (ADR-0011), 15 kinetic beats, 138.5 s on screen against floors of 12 beats / 90 s.
+The contract is episode_spec.v001.json `ae_beats`; the render detail is scripts/ae/jobs_max737.json
+(validated by scripts/ae/check_ae_jobs.py, which resolves every cite against the FACTS LEDGER);
+scripts/ae/render_cards.sh draws each card with scripts/ae/kinetic_card.jsx at gpuAccelType
+SOFTWARE and scripts/ae/verify_cards.py reads the pixels. What puts them IN the film is
+scripts/ae/build_ae_placement.py, which reads the AE### anchor comment under each narration line
+below and writes 08_edit/ae_placement.v001.json; without that file build_case_film_generic.py
+writes no aeBeats at all and the film ships with zero After Effects in it.
+
+  id     kind             sec   at        headline                             source
+  AE001  hero_number       8.0     0.00s   0.6 TO 2.5                          MX-615
+  AE002  timeline          7.0    10.57s   FIVE MONTHS                         MX-001, MX-002
+  AE003  title_card        7.5   148.92s   29 OCTOBER 2018                     MX-001
+  AE007  comparison       10.0   295.11s   LEVEL B / LEVEL D                   MX-101, MX-612
+  AE008  hero_number       9.0   316.70s   ONE MILLION PER AIRPLANE            MX-612, MX-613
+  AE004  system_map       11.0   374.26s   WHAT MCAS WAS FOR                   MX-614, MX-615
+  AE005  hero_number       8.0   567.30s   ONE SENSOR                          MX-614
+  AE006  quote_card       10.0   728.46s   SHOCKER ALERT                       MX-108
+  AE013  comparison       10.0   984.59s   28 OF 87 / 79 OF 91                 MX-619
+  AE010  document_blowup   9.0  1041.22s   THE DIRECTIVE THAT DID NOT SAY MCAS MX-607
+  AE009  hero_number       9.0  1082.57s   FIFTEEN                             MX-602, MX-609
+  AE011  timeline          9.0  1180.29s   150 MORE AIRPLANES                  MX-606
+  AE012  list_build       12.0  1419.80s   WHAT THE COMMITTEE NAMED            MX-617
+  AE014  quote_card       10.0  1618.20s   NO JUDICIALLY COGNIZABLE INTEREST   MX-311
+  AE015  timeline          9.0  1641.93s   WHAT IS STILL OPEN                  Open items
+
+PLACEMENT RULE USED, written down because it differs from the spec's act labels. Every card rides
+the sentence that STATES ITS FACT (owner directive: the picture means what the narration means),
+so a beat can sit in a script section other than the act its spec entry names. The acts in
+episode_spec were written against a five-act outline and this script runs HOOK / OP / ACT_1..4 /
+ENDING; no machine ties the two together (check_ae_in_film counts per-act from the spec's own
+labels), and no declared value was changed to fit. The drifts are AE004 and AE005 (spec ACT_1,
+script ACT_3), AE006 (spec ACT_2, script ACT_3), AE009 to AE011 (spec ACT_3, script ACT_4),
+AE013 (spec ACT_4, script ACT_3) and AE014 and AE015 (spec ENDING, script ACT_4).
+
+FRONT OF THE FILM. leadSeconds is 0 and openingVariant is 'overlay', so BrandOpening is a 3.5 s
+band over the bottom 22 percent of the frame from 8.97 s to 12.47 s. AE type lives between y 150
+and y 820 (kinetic_card.jsx SAFE_TOP / SAFE_BOT), so AE002 at 10.57 s is not covered by it. AE001
+clears at 8.00 s, before the band rises. Only two cards fit before ACT_1 begins: the hook speaks
+three lines and the OP speaks none.
 -->
 
 ## HOOK
 Over the Java Sea, a wheel beside the captain's knee turns by itself. <!-- MX-704 -->
+<!-- AE001 (hero_number, "0.6 TO 2.5") rides this line: the wheel that turns by itself is the stabiliser MCAS could move, 0.6 degrees as designed and 2.5 after the March 2016 redesign. MX-615 -->
 He was never told it could. <!-- MX-111 -->
 Who decided he did not need to know?
 
 ## OP
 <!-- canonical bookend — not narrated, do not write copy here -->
+<!-- AE002 (timeline, "FIVE MONTHS") rides the OP: this section speaks no line, so the card opens with the section. 29 October 2018 to 10 March 2019, arithmetic on MX-001 and MX-002 -->
 
 ## ACT_1 — THE FLIGHT BEFORE, AND THE FLIGHT AFTER
 
@@ -66,6 +109,7 @@ Hold that sentence. Everything else in this film is the distance between that se
 Because the next morning, the same aeroplane took off again. <!-- MX-709 -->
 
 Lion Air Flight 610 left Jakarta at twenty past six in the morning, local time, on the twenty-ninth of October. <!-- MX-001, MX-901 -->
+<!-- AE003 (title_card, "29 OCTOBER 2018") rides this line, the sentence that states the date and the flight. MX-001; trap MX-901 -->
 
 The left stick shaker started at rotation and continued for most of the flight. <!-- MX-703 -->
 
@@ -102,10 +146,12 @@ Airlines do not really buy aeroplanes. They buy fleets. And a fleet is only chea
 If a new model is different enough, the regulator says: your pilots must be retrained. And retraining does not mean a booklet. At the deep end it means a full-flight simulator — a box on hydraulic legs, an instructor, hours per pilot, thousands of pilots.
 
 The regulator has a scale for this. The Federal Aviation Administration's Aircraft Evaluation Group decides how different a new aeroplane is, on a ladder from Level A to Level E. Level B is generally computer-based training — a course a pilot can do on a laptop. Level D generally means the simulator. <!-- MX-101 -->
+<!-- AE007 (comparison, "LEVEL B / LEVEL D") rides this line, where the ladder is explained. MX-101, MX-105, MX-613 -->
 
 The 737 MAX was designed to land on Level B.
 
 Not by accident. In December of 2011, Boeing signed a contract with Southwest Airlines, the launch customer, that obliged Boeing to discount every MAX it delivered by at least one million dollars if the FAA required simulator training. <!-- MX-612 -->
+<!-- AE008 (hero_number, "ONE MILLION PER AIRPLANE") rides this line, the Southwest contract term. MX-612 -->
 
 Southwest had ordered two hundred of them, with options for nearly two hundred more. Had Boeing failed to get Level B or better, the Committee that later investigated all this calculated the bill at between two hundred million and nearly four hundred million dollars. <!-- MX-613 -->
 
@@ -116,6 +162,7 @@ Here is what the aeroplane actually needed.
 The MAX had bigger, more efficient engines than the model before it, mounted further forward and higher on the wing. In certain conditions — nose high, turning hard — that changes how the aeroplane feels as it approaches a stall.
 
 So Boeing wrote a piece of software to push the nose back down in those conditions and make the aeroplane feel like the old one. Its name was the Maneuvering Characteristics Augmentation System. MCAS. <!-- MX-204 -->
+<!-- AE004 (system_map, "WHAT MCAS WAS FOR") rides this line, where the film names MCAS: one AOA sensor, vulnerable to a single failure, nose pushed down, up to 2.5 degrees of stabiliser. MX-614, MX-615 -->
 
 Read that name again slowly, because it is honest. It is not a safety system. It is not an anti-stall system. It is a system for augmenting the characteristics of the aeroplane. Its job was to make a difference disappear.
 
@@ -158,6 +205,7 @@ Start with what MCAS read.
 An angle-of-attack sensor is a small vane on the side of the nose that turns in the airflow and reports the angle at which the aeroplane is meeting the air. The 737 has two of them, one on each side.
 
 MCAS listened to one. <!-- MX-614 -->
+<!-- AE005 (hero_number, "ONE SENSOR") rides this line. MX-614 -->
 
 Not one at a time. One. In 2015, one of Boeing's own authorised representatives asked the question out loud — whether MCAS was vulnerable to single sensor failures. The aeroplane shipped that way anyway. <!-- MX-614 -->
 
@@ -192,6 +240,7 @@ On the fifteenth of November, 2016, one of Boeing's two 737 MAX technical pilots
 That same day, he messaged his colleague. The messages are quoted in the agreement, word for word.
 
 Oh shocker alert. MCAS is now active down to point two. It's running rampant in the sim on me. <!-- MX-108 -->
+<!-- AE006 (quote_card, "SHOCKER ALERT") rides this line and holds while the reply is read at the next two lines; the card carries both verbatim halves of the exchange. MX-108 -->
 
 The colleague replied that this meant they had to update the speed trim description in volume two.
 
@@ -238,6 +287,7 @@ The temptation is to make these two men the story. They are the smallest people 
 The company was charged. Not the engineers who moved a limit from zero point six to two point five. Not the managers who set the directive that there were to be no differences. Not the regulator who signed where the manufacturer pointed.
 
 And about that regulator, one number tells you the shape of the thing. In 2013 the FAA delegated twenty-eight of eighty-seven certification tasks to Boeing itself. By November of 2016 — four months before the MAX was certified — it was seventy-nine of ninety-one. <!-- MX-619 -->
+<!-- AE013 (comparison, "28 OF 87 / 79 OF 91") rides this line. MX-619 -->
 
 The Committee that investigated it put the shape into a sentence: career FAA officials documented cases where FAA management overruled the determination of the FAA's own technical experts at the request of Boeing. <!-- MX-618 -->
 
@@ -250,6 +300,7 @@ They did the arithmetic. That is the part almost nobody knows.
 On the seventh of November, 2018, nine days after Lion Air, the FAA issued an emergency airworthiness directive. It told operators what to do if the trim ran away. <!-- MX-607 -->
 
 It did not mention MCAS. <!-- MX-607 -->
+<!-- AE010 (document_blowup, "THE DIRECTIVE THAT DID NOT SAY MCAS") rides this line. MX-607, MX-608 -->
 
 Not once, by name. Boeing's own bulletin, the day before, had not mentioned it either. <!-- MX-607 -->
 
@@ -264,6 +315,7 @@ The method has a name that sounds like nothing: Transport Airplane Risk Assessme
 The number it produced is the reason this film exists.
 
 Even with the emergency directive in place, but without a fix to MCAS, the analysis indicated there could be more than fifteen fatal 737 MAX crashes over the estimated thirty-year lifetime of the fleet — a fleet then projected at four thousand eight hundred aircraft — resulting in over two thousand nine hundred deaths. <!-- MX-602 -->
+<!-- AE009 (hero_number, "FIFTEEN") rides this line; the card label carries MX-609 as well, so the number never reads as a prophecy. MX-602, MX-609 -->
 
 The Committee translated it into the sentence a person can hold. Statistically, the FAA was predicting one fatal 737 MAX accident every two years, for thirty years. <!-- MX-603 -->
 
@@ -284,6 +336,7 @@ The machine compared the risk to the rule, and the rule said: keep flying.
 And so, despite the analysis, the FAA permitted the 737 MAX to continue flying. <!-- MX-605 -->
 
 In those five months, Boeing delivered nearly one hundred and fifty more aircraft to its customers, and the global fleet grew to three hundred and eighty-seven. <!-- MX-606 -->
+<!-- AE011 (timeline, "150 MORE AIRPLANES") rides this line. MX-601, MX-606, MX-607 -->
 
 So what happens to the next crew, the one that has been told everything the world knows?
 
@@ -334,6 +387,7 @@ It is worth being exact about what the disagreement is, because it is not a tech
 When the Committee finished, eighteen months after the second crash, it did not name a culprit either. It named five themes, and they are worth hearing in the order it wrote them. <!-- MX-617 -->
 
 Production pressures. Faulty design and performance assumptions. A culture of concealment. Conflicted representation. And Boeing's influence over the FAA's oversight structure. <!-- MX-617 -->
+<!-- AE012 (list_build, "WHAT THE COMMITTEE NAMED") rides this line, so the five themes build as they are spoken. MX-617 -->
 
 Not one of those is a person. Every one of them is a condition — the kind of thing that is nobody's job to fix, because it is not on anybody's list.
 
@@ -376,8 +430,10 @@ An agreement was reached about something that had happened to them. The people i
 On the sixth of November, 2025, the court granted the motion. The case was dismissed. <!-- MX-308 -->
 
 The families went to the Fifth Circuit. On the thirty-first of March, 2026, that court denied them, holding that it lacked jurisdiction to review the dismissal substantively — and declining to read into the victims' rights law an unlimited right for victims to appeal the dismissal of a criminal prosecution, because non-parties have no judicially cognizable interest in the prosecution of another. <!-- MX-309, MX-311 -->
+<!-- AE014 (quote_card, "NO JUDICIALLY COGNIZABLE INTEREST") rides this line. MX-311, MX-309 -->
 
 On the twenty-second of May, 2026, rehearing was denied. No judge asked for a vote. <!-- MX-312 -->
+<!-- AE015 (timeline, "WHAT IS STILL OPEN") rides this line and closes the record at 22 May 2026. Re-check the docket before publication. MX-305, MX-308, MX-309, MX-312 -->
 
 That is where the record stops.
 

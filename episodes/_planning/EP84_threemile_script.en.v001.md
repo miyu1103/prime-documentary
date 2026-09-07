@@ -19,11 +19,13 @@ Every factual line traces to EP84_threemile_FACTS_LEDGER.v001.md by TM- id.
 ## HOOK
 At four in the morning a pump stops, and a valve opens exactly as designed. <!-- TM-402 -->
 Thirteen seconds later it does not close. <!-- TM-404 -->
+<!-- TM-404; AE002 hero_number THIRTEEN SECONDS rides this line -->
 The light on the panel says it did. <!-- TM-505 -->
 What do you do when the instrument is the thing that is broken?
 
 ## OP
 <!-- canonical bookend — not narrated, do not write copy here -->
+<!-- TM-401; AE003 title card 28 MARCH 1979 rides the brand sting as title furniture, the date and the place only -->
 
 ## ACT_1 — NINETY SECONDS OF ORDINARY
 
@@ -32,6 +34,7 @@ Everything that follows begins with a plumbing problem.
 Not a nuclear problem. A plumbing problem — the kind of thing that happens in a building, on a Wednesday.
 
 At thirty-six seconds past four in the morning on the twenty-eighth of March, 1979, a feedwater pump tripped at the Three Mile Island Nuclear Station, Unit 2, near Middletown, Pennsylvania. The plant was running at ninety-seven percent power. <!-- TM-401, TM-402 -->
+<!-- TM-402; AE001 hero_number 4:00:36 A.M. rides this line -->
 
 Two seconds later, the turbine and the generator shut themselves down. That is what they are supposed to do.
 
@@ -52,6 +55,7 @@ And here is the sentence that decides everything else. The light on the control 
 The signal said: close.
 
 The valve stayed open for two hours and twenty-two minutes. In the first hundred minutes, some thirty-two thousand gallons — over a third of the entire capacity of the reactor coolant system — escaped. <!-- TM-405 -->
+<!-- TM-102, TM-405; AE004 system map WHERE THE WATER GOES rides this line, the loop drawn as a mechanism -->
 
 A reactor that has stopped fissioning is still hot. It is hot the way a stove ring is hot after you switch it off, except that it will stay hot for days, and the only thing standing between that heat and the fuel is water.
 
@@ -66,6 +70,7 @@ Three separate ways out. Any one of them. In the first minutes.
 The water was leaving. The panel said it was not.
 
 At fourteen seconds, an operator checked that the emergency feedwater pumps had started. They had. He did not see two small lights showing that a valve on each emergency line was closed. <!-- TM-407 -->
+<!-- TM-407; AE009 document blowup A YELLOW MAINTENANCE TAG rides this line, the two lights nobody saw. No legible text inside the frame -->
 
 The Commission wrote down why, and it is one of the most ordinary sentences in the whole report. **One light was covered by a yellow maintenance tag. No one knows why the second light was missed.** <!-- TM-407 -->
 
@@ -74,6 +79,7 @@ A minute and forty-five seconds in, with their water blocked, the steam generato
 At two minutes, the high-pressure injection pumps started by themselves, pushing about a thousand gallons a minute into the reactor. This is the system whose entire job is this exact moment. <!-- TM-409 -->
 
 And then an operator shut one of them down, and turned the other down to less than a hundred gallons a minute. <!-- TM-409 -->
+<!-- TM-409; AE006 comparison 1,000 A MINUTE / UNDER 100 rides this line. The corrupted throttle-back interval never goes on screen -->
 
 Not from carelessness. Because the pressuriser level was rising — and everything he had ever been taught said that a rising pressuriser means too much water. He was reading a real instrument, correctly, and drawing the trained conclusion.
 
@@ -86,6 +92,7 @@ Then the morning got long.
 At a quarter past six, the water in the reactor was below the top of the core. <!-- TM-411 -->
 
 At twenty-two minutes past six, an operator shut a backup valve and finally stopped the leak — two hours and twenty-two minutes after it started. <!-- TM-411 -->
+<!-- TM-405, TM-411; AE005 hero_number 2 HOURS 22 MINUTES rides this line -->
 
 By quarter to seven, as much as two-thirds of the twelve-foot core stood uncovered, and analyses done later put the core temperature as high as three and a half to four thousand degrees. <!-- TM-412 -->
 
@@ -120,6 +127,7 @@ That is a sound idea. Here is what it did that morning.
 **During the first few minutes of the accident, more than one hundred alarms went off, and there was no system for suppressing the unimportant signals so that operators could concentrate on the significant alarms.** <!-- TM-501 -->
 
 One hundred. In minutes. With nothing to sort them.
+<!-- TM-501; AE007 hero_number ONE HUNDRED ALARMS rides this line. The ledger says MORE THAN 100 and the card's label carries the words -->
 
 And the Commission went further, into something worse than noise. **Information was not presented in a clear and sufficiently understandable form. Although the pressure and temperature within the reactor coolant system were shown, there was no direct indication that the combination of pressure and temperature meant that the cooling water was turning into steam.** <!-- TM-502 -->
 
@@ -142,6 +150,7 @@ And a year before all of this, after a smaller incident, an operator complained 
 One of the men who was in that room said it to the Commission as plainly as it can be said. **I would have liked to have thrown away the alarm panel. It wasn't giving us any useful information.** <!-- TM-507 -->
 
 Now, the temptation.
+<!-- TM-507; AE008 quote card IT WASN'T GIVING US ANY USEFUL INFORMATION rides this line, holding the operator's own sentence while the narration reaches for the easy verdict -->
 
 The temptation is to say: they should have known. Any decent operator would have. And that version has been printed for forty years.
 
@@ -168,6 +177,7 @@ Go back six months, to the autumn before.
 A reactor leaks. All of them leak a little; that is not a scandal, it is plumbing. What matters is how much, and whether you know where it is going.
 
 So the licence carries a number. The technical specifications for Three Mile Island Unit 2 limited leakage **to one gallon per minute from unidentified sources**. <!-- TM-103 -->
+<!-- TM-103; AE011 document blowup ONE GALLON A MINUTE rides this line -->
 
 Unidentified is the operative word. Water you can point at is a maintenance job. Water you cannot account for is a question.
 
@@ -194,6 +204,7 @@ Accurate and meaningful. Those two words are the whole of this act.
 On the seventh of November, 1983 — four and a half years after the accident — a federal grand jury in the Middle District of Pennsylvania returned an indictment against the company that ran the plant. <!-- TM-206 -->
 
 There were eleven counts. Here is the one that matters, and it is the one the company would eventually plead guilty to. <!-- TM-301 -->
+<!-- TM-301, TM-302, TM-303, TM-305; AE012 list build WHAT THE COUNTS SAID rides this line. The fourth item is the guard: the only Title 18 count was dismissed -->
 
 The charge, in the grand jury's own words.
 
@@ -214,6 +225,7 @@ The prosecutor told the court why he insisted on that specific count and no othe
 And now the thing this programme will not do.
 
 Look at the dates in that charge again. It runs up to and including the twenty-eighth of March, 1979. It ends on the morning of the accident. It does not reach into it. <!-- TM-203 -->
+<!-- TM-203; AE010 timeline OCTOBER 1978 TO 28 MARCH 1979 rides this line. The spine stops on 28 March and implies no causation -->
 
 No document in this story says the faked tests caused the meltdown, and this film is not going to be the first to say it.
 
@@ -257,13 +269,14 @@ Forty-five thousand dollars.
 
 For scale, and this is the Commission's own figure, the direct financial cost of the accident was estimated at **one to two billion dollars.** <!-- TM-714 -->
 
-The fine was three-thousandths of one percent of the low end of that.
+The fine was four and a half thousandths of one percent of the low end of that.
 
 But there is a second number, and it is the interesting one, and it is almost always reported wrongly.
 
 The plea agreement carried a condition. **As a material condition of this agreement**, the company had to place **one million dollars** in an interest-bearing escrow account, and that money would pass **absolutely and without condition** to the **Pennsylvania Emergency Management Agency**, to assist in emergency preparedness and planning **within twenty miles of the station.** <!-- TM-311 -->
 
 That million was not a fine. It was not cleanup money. It was a payment for the ability to warn people.
+<!-- TM-304, TM-311; AE013 comparison $45,000 / $1,000,000 rides this line, each column labelled for what it is -->
 
 And the judge explained why she had taken it. The maximum penalty available after a trial would have been eighty-five thousand dollars — **none of which would go to the direct benefit of the citizens negatively impacted by the Defendant's conduct.** One million of these dollars, she said, **will benefit the public.** <!-- TM-312 -->
 
@@ -320,6 +333,7 @@ More than a year before the accident, an engineer at the company that built the 
 ⟨HELD⟩
 
 Nobody died at Three Mile Island.
+<!-- TM-701; AE014 hero_number 2,000 PERSON-REMS rides this line, against 240,000 of annual background for the same population -->
 
 The Commission estimated the collective dose to the two million people within fifty miles at about **two thousand person-rems**, against an annual background dose, for the same population, of about **two hundred and forty thousand** — somewhat less than one percent of what they receive from the world anyway in a year. <!-- TM-701 -->
 
@@ -368,5 +382,6 @@ And in a filing cabinet somewhere in that same building, there were months of le
 ⟨HELD⟩
 
 The Commission's last word on all of it was not about a valve. It was about a room full of people who had been left off the drawing of the thing that was supposed to keep them safe. <!-- TM-605 -->
+<!-- TM-607; AE015 quote card EVENTUALLY INEVITABLE rides this line -->
 
 Every system you rely on has a light on it somewhere, and someone decided what that light is wired to.
