@@ -41,6 +41,20 @@ for _p in img motion factory; do
   fi
 done
 
+# THE RESTORE PUTS BLOCKED CLIPS BACK, SO PRUNE BEFORE MEASURING (fixed 2026-09-07).
+# `<pool>_unused` is where [5/7] parked everything the last film did not cut -- which is
+# exactly where a clip blocked AFTER that render is sitting. Restoring the directory
+# wholesale hands those files back to the pool, and the input pre-flight below refuses on
+# them before the [2b/7] prune is ever reached. Measured today: EP83 max737 restored 33
+# factory clips, 15 of them on the blocklist, and stopped dead at [0/7]. The [2b/7] prune
+# stays where it is -- it catches what the i2v copy reintroduces, which is a different route
+# back into the pool and the reason that step was written.
+for _p in img motion factory; do
+  py -3.11 scripts/prune_pool_by_blocklist.py --slug "$SLUG" --pool "$_p" >> "$LOG" 2>&1 \
+    || die "$_p blocklist prune failed after restore"
+done
+grep -E "^\[prune\]" "$LOG" | tail -3 | sed "s/^/[finish:$SLUG]   /"
+
 say "[0/7] input pre-flight (fails in seconds, not hours)"
 INPUT_ARGS=(--slug "$SLUG")
 if [ "$ALLOW_DIVERSITY" = "--allow-video-diversity-deviation" ]; then
