@@ -63,7 +63,13 @@ FREE_PAT = re.compile(
 # Explicit blockers, checked first so "public domain" inside a longer caveat cannot win.
 BLOCK_PAT = re.compile(
     r"\b(cc[- ]?by|noncommercial|non-commercial|\bnc\b|noderiv|\bnd\b|share[- ]?alike|"
-    r"all rights reserved|rights advisory|permission|restricted|copyright(ed)?\b)", re.I)
+    r"all rights reserved|rights advisory|permission|restricted|copyright(ed)?\b)"
+    # Freesound answers with the licence URL, not its name, and a CC-BY URL contains no
+    # "cc-by" for the clause above to find: https://creativecommons.org/licenses/by/4.0/ hit
+    # neither pattern and fell through to "unknown". Measured 2026-09-07 -- that, not the rate
+    # limit, is most of what was left in the tail. Everything under /licenses/ is a reserved
+    # licence by definition; CC0 lives under /publicdomain/ and is matched by FREE_PAT.
+    r"|creativecommons\.org/licenses/", re.I)
 
 
 def env(name: str) -> str:
@@ -304,7 +310,18 @@ def main() -> int:
             continue
         cpath = CACHE_DIR / f"licences_{src}.json"
         cache = json.loads(cpath.read_text("utf-8")) if cpath.exists() else {}
-        print(f"{src:12s} {len(items)} row(s), {len(cache)} cached ...", flush=True)
+        # A FAILED lookup used to be cached exactly like a successful one, and every lookup
+        # starts with `if i in cache: continue` -- so one HTTP 429 made a row permanently
+        # unanswerable. Measured 2026-09-07: 644 Freesound rows sat "still_held" after being
+        # rate-limited the day before, and a fresh run asked for none of them, while the API
+        # answered those same ids with HTTP 200 and a licence. "The next run retries it" was
+        # true of the ledger and false of this cache. Errors are evicted before every run.
+        stale = [k for k, v in cache.items() if isinstance(v, dict) and "error" in v]
+        for k in stale:
+            del cache[k]
+        print(f"{src:12s} {len(items)} row(s), {len(cache)} cached"
+              + (f", {len(stale)} failed lookup(s) evicted for retry" if stale else "")
+              + " ...", flush=True)
         try:
             LOOKUPS[src]([r["id"] for r in items], cache)
         finally:
