@@ -539,6 +539,14 @@ returned all-unknown, a run the same cache had blocked. **Freesound is done: 8,6
 Rights: usable **17,239 → 17,914**, held **4,116 → 3,434**. **LOC was re-asked with the fix and is
 genuinely 403** — 2,211 cache entries, every one Forbidden — so it stays held on a measurement
 rather than on a broken instrument.
+**The quarantine guard is in** (`38a48696`): the eleven themes a person threw out are refused **by
+name** in `search_archive.py` — which is where the leak actually was (**3,045 rows served
+silently**), not `select_factory_assets.py`, which returns **0 rows** here and already banners. The
+factory shelf was left alone on purpose: different file population, **0 basenames shared**.
+Keyword/`--shot`/semantic search stay unfiltered — they judge the asset, not the label, and
+`--shot "courtroom interior wooden benches"` returns a genuine courtroom *from* `courtroom_justice`.
+Four directions demonstrated. **Erosion is still open**: `recover_stock_shelf.py` and the
+`--theme all` ingest refill these labels.
 
 **[2026-09-06 — assets lane](handover/2026-09-06-shorts-and-assets.md)** — **the ingest is alive
 and buying almost nothing: 4 assets in 4 days** against a 130,285-asset shelf, with `rejects_ia.jsonl`
