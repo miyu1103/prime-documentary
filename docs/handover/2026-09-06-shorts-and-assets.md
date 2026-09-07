@@ -184,7 +184,8 @@ audio in the usability record: clear 5,998 -> 7,991, hold 2,677 -> 684
 ```
 
 **644 rows are left for one more run** (window reopens ~13:45 on 09-07). They keep no verdict, so
-the next run retries them — that is the design, not a failure.
+the next run retries them — that is the design, not a failure. **This turned out to be wrong on
+09-07; see the 09-07 handover. They were never retried, because the resolver cached the failure.**
 
 **The apply was run while the orphaned ingest was still writing, on purpose and with proof.** The
 standing rule is to stop the ingest first, and the ingest could not be stopped (§3). So the
