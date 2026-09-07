@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-016-titan",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 6266,
+    "est_duration_minutes": 41.8,
+    "planned_runtime_minutes_with_silence": 58,
+    "flesch_kincaid": 5.6,
+    "ai_filler_hits": 0
+  },
+  "status": "pass",
+  "findings": [
+    "FEATURE (target ~58min runtime). Narration 6266 words (~41.8min @150wpm); the remaining runtime is DESIGNED silence + visual/music sequences (cold-open hold, the implosion total-silence beat, descent sequences, the 4-day search montage, coda holds). Feature duration band applied per ADR-0003 (keyed off manifest.target_duration_minutes); standard 10.0-12.8 gate unchanged for standard episodes (invariant 15).",
+    "R2: record-based; cause attributed to the U.S. Coast Guard Board; 'preventable' (CLM-0012) as the official finding. Pre-publish FACT RE-CHECK required (current event): verify USCG report wording, the MTS exhibit URL, and the exact source/wording of the Rush quote.",
+    "DIGNITY (load-bearing): moral center = Suleman (19); no schadenfreude; no graphic implosion/remains; implosion near-instantaneous (no suffering implied, CLM-0009); living relatives (Christine Dawood) & whistleblower (David Lochridge) via documented statements only, no invented dialogue; the boy's reported anxiety attributed 'reportedly'.",
+    "No AI-filler; FK 5.6 (<=9.5); 14/14 claims used; no dangling claim refs; chapter/span ids consistent; no real-person likeness (invariant 11)."
+  ]
+}

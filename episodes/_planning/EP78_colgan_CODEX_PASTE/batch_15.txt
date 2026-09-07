@@ -1,0 +1,56 @@
+EP78_colgan — 画像発注 バッチ 15/21（8枚）
+区分: ACT_4
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) C113.png
+   [C113]  flags: 
+   A press conference lectern with microphones, empty, brilliant daylight, a blank backdrop behind it
+
+2) C114.png
+   [C114]  flags: 
+   A federal office building exterior on a clear winter morning, hard brilliant sunlight on the stone
+
+3) C115.png
+   [C115]  flags: 
+   A modern server room, blue and white indicator lights running away down a cold aisle, the aisle lighting blown out white at the far end
+
+4) C116.png
+   [C116]  flags: 
+   Close-up of a rack of network switches, dozens of link lights burning green and amber, one blown out white
+
+5) C117.png
+   [C117]  flags: 
+   A database interface on a large monitor showing rows of blank fields, the screen glow blown out and lighting the whole dark office, no legible text
+
+6) C118.png
+   [C118]  flags: 
+   An office at night with one monitor burning bright, a chair pulled up to it, the screen the only light in the room and blown out at its centre
+
+7) C119.png
+   [C119]  flags: P
+   A hand resting on a computer mouse beside a brilliant monitor, close-up, screen light blowing out across the skin
+
+8) C120.png
+   [C120]  flags: 
+   An airline training centre in daylight, a row of simulator bays, brilliant industrial ceiling lights

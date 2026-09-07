@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "note": "Common public confusions and source tensions, with the resolution the script must follow.",
+  "contradictions": [
+    {
+      "id": "CON-01",
+      "topic": "Size of the fraud: $65B vs $17.5B vs $170B",
+      "positions": [
+        "$65 billion: total fabricated value across customer statements (paper, includes fictional profits).",
+        "~$17.5 billion: actual lost principal (cash in, per the trustee).",
+        "$170 billion: a forfeiture/asset figure cited at sentencing (funds that flowed through accounts), not net investor loss."
+      ],
+      "resolution": "Treat the three numbers as different measures. State plainly: $65B = fake account value, ~$17.5B = real principal lost, and avoid using $170B as 'the amount stolen'. This distinction is a deliberate myth-correction beat (CLM-0004).",
+      "claim_ids": ["CLM-0004"],
+      "status": "resolved"
+    },
+    {
+      "id": "CON-02",
+      "topic": "Was the whole firm fake?",
+      "positions": [
+        "Popular shorthand: 'Madoff's company was a fraud.'",
+        "Reality: the broker-dealer/market-making business was a real operation; the investment ADVISORY arm was the Ponzi."
+      ],
+      "resolution": "Specify that the fraud was the advisory arm; do not claim the entire firm was fictional (CLM-0003).",
+      "claim_ids": ["CLM-0003"],
+      "status": "resolved"
+    },
+    {
+      "id": "CON-03",
+      "topic": "Did victims lose everything?",
+      "positions": [
+        "Headline impression: investors were wiped out.",
+        "Reality: the trustee/DOJ clawed back most principal; many recovered >90%."
+      ],
+      "resolution": "Acknowledge devastating initial losses AND the large eventual recovery; do not say everyone lost everything or that everyone was made whole (CLM-0009).",
+      "claim_ids": ["CLM-0009"],
+      "status": "resolved"
+    },
+    {
+      "id": "CON-04",
+      "topic": "How many times / which years did Markopolos warn the SEC?",
+      "positions": [
+        "Various counts cited (started 1999/2000; submissions in 2000, 2001, 2005, 2007, 2008)."
+      ],
+      "resolution": "Use 'for roughly a decade, repeatedly' in narration; lock the exact count/dates to the SEC OIG report before script lock (CLM-0005).",
+      "claim_ids": ["CLM-0005"],
+      "status": "open_minor"
+    },
+    {
+      "id": "CON-05",
+      "topic": "Plea vs jury conviction",
+      "positions": [
+        "Often loosely called 'convicted'.",
+        "He PLEADED guilty; there was no trial."
+      ],
+      "resolution": "Say 'pleaded guilty'; never 'a jury found him guilty' (CLM-0001).",
+      "claim_ids": ["CLM-0001"],
+      "status": "resolved"
+    }
+  ]
+}

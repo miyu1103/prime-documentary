@@ -1,0 +1,17 @@
+FINAL ACCEPTANCE - PD-2026-018-flashcrash
+render: H:\pd-media\episodes\PD-2026-018-flashcrash\08_edit\renders\final\flashcrash_final_v001.mp4  (1680.0s)
+  PASS [hard] runtime_band: 1680.0s = 28.00min (band 1620-1980s)
+  PASS [hard] render_resolution: 1920x1080 codec=h264 (need >= 1920x1080)
+  PASS [hard] images_present: black total 0.0s / longest 0.0s (limits 8/3)
+  PASS [hard] motion_present: frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)
+  PASS [hard] bgm_present: total silence 23s (limit 25s; high => no continuous BGM bed / narration-only mix)
+  PASS [soft] hook_added: shotlist totals missing
+  PASS [soft] loudness: integrated -15.8 LUFS (target -14, band -16.0..-12.0)
+  PASS [hard] voice_is_master: master narration present: ['elevenlabs']
+  PASS [hard] captions_final: final captions captions.v001.srt (last cue 1667s)
+  PASS [hard] caption_format: captions.v001.srt: line/duration/cps within limits
+  PASS [hard] thumbnail_ready: 4 thumb(s) at 1280x720, selected=yes (need >=3 + selected)
+  PASS [hard] image_resolution: 78 hero PNGs, all long-edge >= 3840px
+  PASS [hard] factory_used: 58 factory clip(s) staged, referenced_in_composition=True, need >= 37 (1 per 45s)
+
+RESULT: PASS

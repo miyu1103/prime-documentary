@@ -1,0 +1,56 @@
+EP83_max737 — 画像発注 バッチ 5/24（8枚）
+区分: ACT_1 — 前日の便と、翌朝の便
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, airline livery, tail marking, company colour, human face, facial features, portrait, identifiable person, wreckage, debris, fire, smoke plume, crash site, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) X033.png
+   [X033]  flags: 
+   A cockpit from behind at low level, the sea visible through the windscreen far too close, morning light
+
+2) X034.png
+   [X034]  flags: 
+   A flight data recorder unit, bright orange, on a plain workbench under a hard lamp, no markings
+
+3) X035.png
+   [X035]  flags: 
+   An empty control room with a radar screen glowing green, one operator's chair, no person present
+
+4) X036.png
+   [X036]  flags: 
+   The surface of a tropical sea at mid morning, calm and empty, seen from a low aircraft, no vessel and no object in the water, bright daylight
+
+5) X037.png
+   [X037]  flags: P
+   A departure board in an airport concourse showing plain coloured rows with no readable characters, travellers as distant blurred figures, one hard practical light in frame
+
+6) X038.png
+   [X038]  flags: 
+   A wall clock in an airline operations room, plain face, no numerals, hard light from one side
+
+7) X039.png
+   [X039]  flags: 
+   A row of identical single-aisle airliners at a maintenance base, **every one plain unpainted white with completely bare tails**, morning light
+
+8) X040.png
+   [X040]  flags: 
+   An empty airline crew briefing room, chairs pushed in, a blank screen glowing at the front

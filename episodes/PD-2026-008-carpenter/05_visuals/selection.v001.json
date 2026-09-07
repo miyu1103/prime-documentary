@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-008-carpenter",
+  "revision": "v001",
+  "generated_at": "2026-06-20T15:50:00+09:00",
+  "status": "partial_qc",
+  "policy": {
+    "ai_disclosure_required": true,
+    "symbolic_reconstruction_only": true,
+    "no_real_person_likeness": true,
+    "no_authentic_footage_claim": true
+  },
+  "summary": {
+    "reviewed": 8,
+    "accepted": 2,
+    "conditional": 0,
+    "rejected": 6,
+    "note": "Phone-hand candidates are visually coherent but below final premium threshold; use generated map candidates plus Remotion-built device graphics until stronger phone candidates exist."
+  },
+  "items": [
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c01_seed826959.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H02_dark_location_bloom_c01_seed826959.png",
+      "item_id": "CARP_H02_dark_location_bloom",
+      "qc_status": "accepted",
+      "usable_for": ["act2_thin_list_background", "ending_location_trail", "thumbnail_background_candidate"],
+      "reason": "Strong abstract city-map texture, no identifiable person, no readable text, good blue-gold palette, sufficient negative space for overlays."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c02_seed827096.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H02_dark_location_bloom_c02_seed827096.png",
+      "item_id": "CARP_H02_dark_location_bloom",
+      "qc_status": "accepted",
+      "usable_for": ["hook_opening_map", "location_points_sequence", "thumbnail_background_candidate"],
+      "reason": "Most cinematic of current candidates; central blue bloom and dense gold route structure support the 127-day trail concept."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c01_seed826137.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c01_seed826137.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "reason": "Screen is too blank and composition reads like a draft still rather than final premium documentary art."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c02_seed826274.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c02_seed826274.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "reason": "Good silhouette but too sparse; not enough map/trail specificity for the opener or ending."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c03_seed826411.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c03_seed826411.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "reason": "Overly dark and visually under-resolved; weak narrative read at 1080p."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c04_seed826548.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c04_seed826548.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "reason": "Contains phone UI-like marks and lacks the required polished location-trail image language."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c05_seed826685.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c05_seed826685.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "reason": "Screen and hand are usable only as rough mood reference; final cut should not depend on it."
+    },
+    {
+      "file": "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H01_phone_map_hand_c06_seed826822.png",
+      "source_file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\05_visuals\\sdxl_ultra_v001\\hook\\CARP_H01_phone_map_hand_c06_seed826822.png",
+      "item_id": "CARP_H01_phone_map_hand",
+      "qc_status": "rejected",
+      "reason": "Looks like generic UI photography and risks reading as app footage; reject for final documentary visual standard."
+    }
+  ],
+  "contact_sheet": "episodes/PD-2026-008-carpenter/05_visuals/qc_contact_existing8.v001.jpg"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 190,
+  "episode_id": "PD-2026-032-carsearch",
+  "slug": "carsearch",
+  "loop": true,
+  "loop_join": "The last beat is the first one again: cut p25 is short190_01.png -- the single lamp burning on a dark car at the kerb -- run in rewind under the FULL CASE card and held to the final frame, so the picture the short ends on is the identical picture frame 0 opens on, and the loop reads as one continuous push rather than a cut.",
+  "second_watch_detail": "The kinetic beat at 14.05 s, A CAR CAN DRIVE OFF, reads on the first pass as the reason for the rule; after L5 and L8 it reads as the thing nobody has to prove any more, which is the opposite point.",
+  "funnel_question_left_for_longform": "So where does that power finally run out — does parking in your own driveway change anything?",
+  "funnel_long_title": "Police Searched the Motorcycle in His Driveway",
+  "funnel_long_video_id": "bXATF9ZnKLE",
+  "description_line_1": "▶ FULL CASE: Police Searched the Motorcycle in His Driveway | https://youtu.be/bXATF9ZnKLE",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "Police Can Search Your Car Without a",
+    "ctaLongThumbSrc": "shorts/short190/short190_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "So where does that power finally run out — does parking in your own driveway change anything? The full case is here: https://youtu.be/bXATF9ZnKLE",
+  "note": "Record authored on 2026-09-01 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the contact sheet and the beat list in remotion/src/data/short190.ts, the CTA block from that same file, the long-form id from runs/short_funnel/episode_live_video_map.v001.json. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

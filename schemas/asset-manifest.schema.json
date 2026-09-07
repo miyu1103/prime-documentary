@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/asset-manifest.schema.json",
+  "title": "PD Asset Manifest (Asset Factory shelf registry)",
+  "description": "Reusable, episode-independent asset shelf registry. Distinct layer from schemas/asset.schema.json (per-episode generated artifacts, PD-... ids). This is the materialized, real-data form of docs/asset-manifest-schema.md: the canonical id/type/enum vocabulary is enforced, but fields that the bulk stock builder records as null (mood/intensity/colorTone/width/height/durationFrames/fps/seed) and empty arrays (compatibleSceneTypes) are tolerated so the live manifest validates without weakening intent. Rights/commercial-use safety is enforced as a lint in scripts/validate_asset_manifest.py, not as a hard schema enum, so newly added stock sources do not silently fail structural validation. See codex-asset-factory-implementation-brief.md.",
+  "type": "object",
+  "required": ["schema", "assets"],
+  "properties": {
+    "schema": { "const": "asset-manifest/v1" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "assets": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/assetManifest" }
+    }
+  },
+  "$defs": {
+    "assetManifest": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id", "type", "subtype", "path", "sourceTool", "license"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^AF-[A-Z_]+-[0-9]{4,}$",
+          "description": "Asset Factory id. Zero-padded to >=4 digits. Deviation from the brief's fixed {4}: backgrounds already exceed AF-BG-8900 and will pass 9999, so {4,} is used to keep canonical ids valid as the shelf grows."
+        },
+        "type": {
+          "enum": [
+            "backgrounds", "parallax_layers", "vfx_overlays", "loops",
+            "transitions", "typography_assets", "diagram_assets", "sfx",
+            "ai_video_shots", "lottie_assets", "ui_motion_assets",
+            "texture_assets", "light_assets", "particle_assets"
+          ]
+        },
+        "subtype": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "minLength": 1 },
+        "previewPath": { "type": ["string", "null"], "description": "Preview/thumbnail uri. Bulk stock entries leave this null (the asset itself is the preview); generated entries should set it." },
+        "sourceTool": {
+          "enum": ["midjourney", "runway", "elevenlabs", "suno", "lottie", "local", "sdxl", "codex", "stock"]
+        },
+        "source": { "type": ["string", "null"] },
+        "kind": { "enum": ["image", "video", "audio", "lottie", "other"] },
+        "mediaKind": { "enum": ["image", "video", "audio", "lottie", "other"] },
+        "durationFrames": { "type": ["integer", "null"], "minimum": 0 },
+        "fps": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+        "width": { "type": ["integer", "null"], "minimum": 0 },
+        "height": { "type": ["integer", "null"], "minimum": 0 },
+        "bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "hasAlpha": { "type": "boolean" },
+        "loopable": { "type": "boolean" },
+        "mood": {
+          "type": ["string", "null"],
+          "enum": ["neutral", "tense", "somber", "hopeful", "triumphant",
+                   "mysterious", "urgent", "calm", "clinical", "nostalgic", null]
+        },
+        "intensity": {
+          "type": ["string", "null"],
+          "enum": ["subtle", "moderate", "strong", "extreme", null]
+        },
+        "useCases": { "type": "array", "items": { "type": "string" } },
+        "compatibleSceneTypes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "opening_hook", "chapter_title", "explanation", "character_profile",
+              "company_profile", "place_intro", "timeline", "evidence_board",
+              "comparison", "data_reveal", "quote", "turning_point", "reenactment",
+              "emotional_pause", "summary", "ending", "transition_bridge",
+              "abstract_emotion", "problem_statement", "solution_reveal"
+            ]
+          }
+        },
+        "colorTone": {
+          "type": ["string", "null"],
+          "enum": ["neutral", "warm", "cool_blue", "cool_teal", "monochrome",
+                   "high_contrast", "desaturated", "vibrant", "dark", "bright", null]
+        },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "sourcePrompt": { "type": ["string", "null"] },
+        "negativePrompt": { "type": ["string", "null"] },
+        "seed": { "type": ["integer", "null"] },
+        "license": { "type": "string", "minLength": 1 },
+        "sourceUrl": { "type": ["string", "null"] },
+        "sha256": { "type": ["string", "null"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "notes": { "type": ["string", "null"] },
+        "checksum": { "type": ["string", "null"] },
+        "last_verified_at": { "type": ["string", "null"], "format": "date-time" }
+      }
+    }
+  }
+}

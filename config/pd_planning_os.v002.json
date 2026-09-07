@@ -1,0 +1,512 @@
+{
+  "schema_version": "2.0.0",
+  "artifact_type": "pd_planning_os",
+  "authored": "2026-08-11",
+  "supersedes": "config/pd_planning_os.v001.json (kept, immutable). v001 remains the record of the 2026-08-11 morning directive; v002 is the same owner's evening directive, which widens the channel's subject space and replaces the rubric, the gate, the slate and the series registry.",
+  "authority": "Owner directive, 2026-08-11 evening. Prose form: docs/PD_EDITORIAL_DIRECTION.v002.md. This file is the machine form and is what scripts read.",
+  "applies_to": "Topics chosen from 2026-08-12 onward. It does NOT retroactively invalidate EP62-EP69, which are already approved and in production, nor any episode already script_verified.",
+
+  "brand": {
+    "one_line": "True stories about money, power, technology and the hidden systems that shape ordinary lives.",
+    "tagline": "The world you live in, but never see.",
+    "centre": "An ordinary person meets an invisible system.",
+    "not": [
+      "not a law channel",
+      "not a police channel",
+      "not a true-crime channel",
+      "not an AI channel"
+    ],
+    "test": "Every episode must end up at: this could happen to you.",
+    "note": "The audience subscribes to a VIEWPOINT, not a topic. The unifying antagonist is THE SYSTEM, which is why police, banks, hospitals, algorithms, insurers and airports can all be Prime Documentary without the channel scattering.",
+    "editorial_principle": "We do not tell viewers what to think. We show them what they didn't know.",
+    "villain_rule": "Do not name the villain up front. Stack facts until the viewer reaches 'wait, that is allowed?' on their own. A one-sided answer is a shallow answer -- state the system's own rationale before showing the abuse."
+  },
+
+  "episode_structure": {
+    "spine": [
+      "an ordinary person",
+      "an ordinary day",
+      "contact with a system they did not know existed",
+      "an outcome that common sense says should be impossible",
+      "why?",
+      "anatomy of the hidden system",
+      "the outcome",
+      "and this concerns you"
+    ],
+    "reveal_architecture_15min": [
+      {"at_sec": 0, "beat": "the abnormal event"},
+      {"at_sec": 20, "beat": "the question"},
+      {"at_sec": 90, "beat": "the protagonist"},
+      {"at_sec": 180, "beat": "first unexpected turn"},
+      {"at_sec": 300, "beat": "the system explained"},
+      {"at_sec": 420, "beat": "second unexpected turn"},
+      {"at_sec": 540, "beat": "the other side's rationale"},
+      {"at_sec": 660, "beat": "the largest reveal"},
+      {"at_sec": 780, "beat": "the outcome"},
+      {"at_sec": 840, "beat": "what it means for the viewer"}
+    ],
+    "alternation_rule": "Never two explanation blocks in a row. Order is Story / Explanation / Story / Evidence / Story / Explanation.",
+    "density_rule": "Every 60 seconds must deliver at least one of: a new fact, a new question, a new emotion, a new visual, a new consequence. Sixty seconds in which nothing changes is a defect.",
+    "narrator_voice": "A storyteller who knows something you don't -- never a professor. Open on the concrete scene, not on the definition. 'The officer found no drugs. No weapon. No warrant. But there was one thing in the car that changed everything.' Then enter the system.",
+    "moment_of_truth": "Once per episode, at the largest reveal: music stops, motion stops, one document or one number on screen, one narrated sentence. Silence is a brand device.",
+    "system_map": "Once per episode, mid-film: a node diagram of who is actually connected to whom (Person -> Police -> Court -> Agency -> Bank). This is a brand signature, not decoration.",
+    "landing": "Fear must land on preparedness. The last beat converts 'the world is frightening' into 'now I can see it.'"
+  },
+
+  "premise_score": {
+    "scale_note": "The owner's directive lists eleven weighted axes and calls the total 100, but the listed weights sum to 120. Rather than silently re-weight the owner's own ranking, the raw sum is normalised: normalised = round(raw * 100 / 120). Bonuses are then added on the 100-point scale, so the ceiling is 120 exactly as the directive states. FLAGGED FOR OWNER: if the intent was a 120-point base with a 140 ceiling, change `normalise_to` to 120 and multiply the gate by 1.2.",
+    "normalise_to": 100,
+    "raw_max": 120,
+    "gate": {"flagship": 110, "priority": 100, "production": 90, "reserve": 80, "reject": 79},
+    "gate_meaning": {
+      "reject": "under 80 -- not made",
+      "reserve": "80-89 -- parked, may be reworked",
+      "production": "90-99 -- built",
+      "priority": "100-109 -- built first, given extra research and packaging",
+      "flagship": "110+ -- Prime Original treatment, length set by the story"
+    },
+    "supersedes": "The 85-point gate and the 8-axis rubric in v001. Both are void for topics chosen from 2026-08-12.",
+    "axes": [
+      {"key": "personal_relevance", "max": 15, "question": "Does the viewer have a daily point of contact with this system -- a car, a bank, a phone, a house, a hospital, a job?"},
+      {"key": "wtf_factor",        "max": 15, "question": "Is there a 'wait, that is allowed?' moment?"},
+      {"key": "human_stakes",      "max": 15, "question": "How large is what is lost -- money, freedom, home, job, family, health, reputation?"},
+      {"key": "contradiction",     "max": 15, "question": "Is there a hard logical contradiction: innocent yet imprisoned, paid yet still owing, cancelled yet still charged, no charge yet money seized?"},
+      {"key": "story_arc",         "max": 10, "question": "Ordinary person -> incident -> it gets worse -> reversal or outcome?"},
+      {"key": "title_power",       "max": 10, "question": "Does one sentence make a brutal title, in Subject + Verb + Consequence form?"},
+      {"key": "thumbnail_power",   "max": 10, "question": "Can a single image carry it? If explaining it needs five elements, it is weak."},
+      {"key": "evidence",          "max": 10, "question": "Are there documents, records, footage, receipts or filings that can be put on screen?"},
+      {"key": "broad_audience",    "max": 10, "question": "Does it reach beyond the people who already like this subject?"},
+      {"key": "franchiseability",  "max": 5,  "question": "Can 10-100 similar episodes follow it?"},
+      {"key": "evergreen",         "max": 5,  "question": "Is it still watchable in five years?"}
+    ],
+    "bonuses": [
+      {"key": "real_footage",            "points": 5, "question": "Genuine bodycam, CCTV, dashcam, court or news footage is available and clearable."},
+      {"key": "specific_money_amount",   "points": 5, "question": "A precise figure exists -- $86,900, not 'thousands'."},
+      {"key": "recognizable_institution","points": 5, "question": "A name the audience already knows appears in it."},
+      {"key": "major_reversal",          "points": 5, "question": "The outcome flips at least once."}
+    ],
+    "hard_rule": "An interesting subject is not enough, and neither is an important one. Social importance is not YouTube strength -- do not dilute the content, translate the entrance into human language.",
+    "primary_feature": "contradiction",
+    "primary_feature_note": "Expectation Violation is the single most predictive feature. A criminal losing money is not a story; a man never charged losing money is. Every premise must state its contradiction in one sentence before anything else is written."
+  },
+
+  "generators": {
+    "contradiction": {
+      "order": ["NORMAL EXPECTATION -- what would ordinarily happen?", "ACTUAL OUTCOME -- what happened?", "GAP -- state the contradiction in one sentence"],
+      "scout_prompt": "Find events where the outcome violates what an ordinary American would reasonably expect.",
+      "note": "Run this BEFORE any title is generated."
+    },
+    "consequences": {
+      "enumerate": ["money", "time", "freedom", "home", "job", "reputation", "privacy", "family", "health", "opportunity", "control"],
+      "rule": "List everything the protagonist lost, then title on the largest."
+    },
+    "personalization": {
+      "contact_points": ["traffic stop", "bank", "insurance", "phone", "house", "hospital", "workplace", "car", "delivery", "utilities", "school", "airport"],
+      "rule": "The denser the everyday contact point, the higher the priority."
+    },
+    "share_test": {
+      "question": "Would a viewer send this to a parent, a spouse, a friend or a coworker?",
+      "note": "Conversation value is scored. But never put 'Send this to...' in the title -- naturalness wins."
+    }
+  },
+
+  "instincts": [
+    {"key": "survival",  "viewer_thought": "would I survive this?",        "fits": ["police", "scams", "disaster"]},
+    {"key": "money",     "viewer_thought": "I don't want to lose money",   "fits": ["fees", "debt", "banking"]},
+    {"key": "justice",   "viewer_thought": "that is not right",            "fits": ["wrongful conviction"]},
+    {"key": "curiosity", "viewer_thought": "why?",                          "fits": ["hidden systems"]},
+    {"key": "control",   "viewer_thought": "I want to know this",          "fits": ["law", "rights"]},
+    {"key": "status",    "viewer_thought": "not knowing is embarrassing",  "fits": ["hidden rules"]},
+    {"key": "family",    "viewer_thought": "I must protect them",          "fits": ["scams", "privacy"]},
+    {"key": "safety",    "viewer_thought": "I want to avoid this",         "fits": ["AI fraud"]},
+    {"key": "ownership", "viewer_thought": "but it is mine",               "fits": ["home", "digital goods"]},
+    {"key": "freedom",   "viewer_thought": "don't take my freedom",        "fits": ["police", "courts"]},
+    {"key": "wonder",    "viewer_thought": "the world works like that?",   "fits": ["infrastructure"]},
+    {"key": "triumph",   "viewer_thought": "I want the person to win",     "fits": ["beat the system"]}
+  ],
+  "instinct_rule": "Every episode must carry at least two.",
+
+  "emotion_mix": {
+    "dark_reality": 40,
+    "hidden_systems": 30,
+    "human_battles": 20,
+    "world_wonders": 10,
+    "unit": "percent of episodes",
+    "conflict_note": "The directive states two mixes -- 60/20/10/10 (dark/smart/inspiring/weird) early and 40/30/20/10 (four emotion products) later. The later, more specified one is taken as binding, consistent with the v001 precedent that the newer statement wins. FLAGGED FOR OWNER.",
+    "reason": "A channel that is only 'the world is frightening' exhausts its audience before two million. Fear, understanding, hope and wonder together make a media brand.",
+    "human_wins_floor": 15,
+    "human_wins_note": "At least 15-20% of episodes must be a person defeating the system. This is aimed at returning viewers."
+  },
+
+  "portfolio": {
+    "core": 50,
+    "adjacent": 25,
+    "emerging": 15,
+    "moonshot": 10,
+    "unit": "percent of the next 100 episodes",
+    "supersedes": "slate_next_100 in v001",
+    "reason": "An all-safe slate has no fat tail, and the fat tail is what reaches two million.",
+    "definitions": {
+      "core": "the measured winning pattern -- ordinary person vs police, wrongful justice, money taken",
+      "adjacent": "one step out -- housing, insurance, medical, consumer traps",
+      "emerging": "AI decisions, AI scams, dark patterns, digital ownership",
+      "moonshot": "infrastructure and dependency stories with a far larger potential audience"
+    }
+  },
+
+  "priority_categories": [
+    {"rank": 1,  "field": "Ordinary people vs police",   "reason": "matches the channel's own measured data"},
+    {"rank": 2,  "field": "Innocent / wrongful justice", "reason": "emotion and narrative"},
+    {"rank": 3,  "field": "Money taken / fees / debt",   "reason": "concerns everyone"},
+    {"rank": 4,  "field": "AI decisions gone wrong",     "reason": "future growth"},
+    {"rank": 5,  "field": "AI scams",                    "reason": "currency plus fear"},
+    {"rank": 6,  "field": "Home / HOA / property",       "reason": "enormous stakes"},
+    {"rank": 7,  "field": "Dark patterns",               "reason": "an unoccupied position"},
+    {"rank": 8,  "field": "Insurance / medical",         "reason": "US-specific strength"},
+    {"rank": 9,  "field": "Privacy / data",              "reason": "long-horizon theme"},
+    {"rank": 10, "field": "Digital ownership",           "reason": "future value"}
+  ],
+
+  "series": [
+    {"id": "S01", "name": "THE HIDDEN RULE",              "thesis": "A rule ordinary people do not know that decides their lives.", "flagship": true, "carried_from": "v001 S01/S06"},
+    {"id": "S02", "name": "THIS SHOULDN'T BE POSSIBLE",   "thesis": "Built entirely on impossible contradiction. The CTR series.", "flagship": true},
+    {"id": "S03", "name": "ONE SMALL MISTAKE",            "thesis": "Small cause, catastrophic consequence.", "carried_from": "v001 S10"},
+    {"id": "S04", "name": "INNOCENT",                     "thesis": "Not true crime. What happens when the system is wrong.", "carried_from": "v001 S04", "note": "Sell the failure of the institution, never the murder."},
+    {"id": "S05", "name": "ONE TRAFFIC STOP",             "thesis": "An ordinary day, a patrol car, one small decision, a changed life.", "carried_from": "v001 S02"},
+    {"id": "S06", "name": "THE NUMBER",                   "thesis": "Every episode opens on a single figure. Highest thumbnail affinity of any format."},
+    {"id": "S07", "name": "THE RECEIPT",                  "thesis": "One bill, dissected until it explains an entire industry."},
+    {"id": "S08", "name": "THE FILE",                     "thesis": "Start from a court filing, a memo, an email, an evidence log.", "note": "The strongest antidote to 'this looks AI-made'."},
+    {"id": "S09", "name": "THE FOOTAGE",                  "thesis": "The recording itself is the protagonist -- bodycam, dashcam, CCTV, doorbell."},
+    {"id": "S10", "name": "THE ALGORITHM",                "thesis": "A machine decides, and no human can explain or reverse it.", "flagship": true, "carried_from": "v001 S09"},
+    {"id": "S11", "name": "THE SCAM FACTORY",             "thesis": "Not one scam -- the industry behind it, and why it works."},
+    {"id": "S12", "name": "THE VOICE WASN'T REAL",        "thesis": "AI voice and video fraud, told through one family."},
+    {"id": "S13", "name": "WHO REALLY OWNS IT?",          "thesis": "You bought it. Do you own it? Consumer rights meets business model."},
+    {"id": "S14", "name": "THE HOUSE WASN'T SAFE",        "thesis": "The home seen as institutional risk, not as property.", "carried_from": "v001 S08"},
+    {"id": "S15", "name": "AFTER THE DISASTER",           "thesis": "Not the disaster -- the system that starts the day after it ends."},
+    {"id": "S16", "name": "THE PRICE YOU SEE ISN'T THE PRICE", "thesis": "Fees, dark patterns, personalised pricing.", "carried_from": "v001 S11"},
+    {"id": "S17", "name": "THE SYSTEM FAILED",            "thesis": "Infrastructure. What happens when a system millions depend on stops.", "tier": "moonshot"},
+    {"id": "S18", "name": "24 HOURS WITHOUT",             "thesis": "Simulation documentary built from real dependency structure and real past outages.", "tier": "moonshot", "guard": "Built from documented outages and published dependency data, never from speculation dressed as fact."},
+    {"id": "S19", "name": "THE COMPANY BEHIND EVERYTHING","thesis": "Not a corporate biography -- how much society depends on a company nobody has heard of."},
+    {"id": "S20", "name": "THE INVISIBLE MARKET",         "thesis": "Markets ordinary people never see -- debt, location data, identities, lawsuits."},
+    {"id": "S21", "name": "ONE PERSON CHANGED THE SYSTEM","thesis": "The hero series. A named individual beats the machine.", "note": "Carries the human_wins_floor."},
+    {"id": "S22", "name": "48 HOURS",                     "thesis": "One case in real time. Sells TIME, not the institution.", "tier": "premium", "cadence_per_month": [2, 4], "carried_from": "v001 S12"},
+    {"id": "S23", "name": "WHAT HAPPENS IN 2 SECONDS",    "thesis": "The machinery behind an action the viewer performs every day.", "tier": "moonshot"},
+    {"id": "S24", "name": "WHY HERE?",                    "thesis": "Geography as protagonist. Maps are a retention device and PD can draw them."},
+    {"id": "S25", "name": "ONE DECISION",                 "thesis": "A single choice changed a life. The easiest series for a viewer to place themselves inside."},
+    {"id": "S26", "name": "FOLLOW THE ___",               "thesis": "Follow one object, one dollar, one call, one package, one claim through every hand it passes. The system is explained by tracking a single thing, never by describing the system.", "flagship": true, "example": "One Woman Bought a $4 Coffee. Here's What Happened to the Money."},
+    {"id": "S27", "name": "THE SECRET LIFE OF",           "thesis": "An ordinary object turns out to have a life of its own -- a credit card, a returned package, a dollar bill, a social security number.", "role": "relief between dark episodes; carries the world_wonders share"},
+    {"id": "S28", "name": "YOU DECIDE",                   "thesis": "The evidence is shown in order, the viewer is asked to judge mid-film, and the real outcome lands afterwards. Retention becomes the answer check.", "guard": "The viewer must be given the same material the decision-maker had -- never a rigged reveal."},
+    {"id": "S29", "name": "SYSTEM BUG",                   "thesis": "Nobody is the villain; the design is. A loophole, an incentive, a form nobody wrote for this case, an algorithm that cannot represent an exception."},
+    {"id": "S30", "name": "WHY NOBODY FIXED IT",          "thesis": "Answers the question every viewer forms mid-film -- if it is this broken, why is it still like this? History, interests, cost, technical debt."},
+    {"id": "S31", "name": "WHO BENEFITS?",                "thesis": "Follow the incentive. A rule survives because someone is paid by it or because changing it costs more than leaving it."},
+    {"id": "S32", "name": "WHO'S RESPONSIBLE?",           "thesis": "The accountability vacuum. The decision was automated, outsourced or diffused, and no human will own it. This grows more relevant every year."},
+    {"id": "S33", "name": "THIS KEEPS HAPPENING",         "thesis": "Pattern documentary. Five cases, one shape -- the story stops being one person's misfortune and becomes a structure.", "flagship": true},
+    {"id": "S34", "name": "AFTER THE HEADLINES",          "thesis": "What happened after everyone stopped watching. News covers the event; PD covers the aftermath, where the competition has already left."},
+    {"id": "S35", "name": "THE CASE WAS OVER. THE DAMAGE WASN'T.", "thesis": "Second-order harm -- the charges dropped and the record stayed, the scam ended and the debt didn't."},
+    {"id": "S36", "name": "THE PEOPLE KEEPING IT RUNNING","thesis": "The invisible operators -- dispatchers, controllers, fraud analysts, grid and water operators. Warmth, competence, and a system seen from inside."},
+    {"id": "S37", "name": "THE DISASTER THAT DIDN'T HAPPEN", "thesis": "The near miss. One judgement stopped it, and almost nobody knows. Positive tension, strong advertiser fit."},
+    {"id": "S38", "name": "INSIDE THE BLACK BOX",         "thesis": "The mechanism behind an everyday verdict -- credit, ride pricing, fraud flags, resume ranking. Enter from the human outcome, never from the technology."},
+    {"id": "S39", "name": "BRAND COLLISION",              "thesis": "An ordinary person against a company the audience already knows. The brand supplies recognition; the person supplies the story.", "guard": "Never a bare accusation in the title. The company's account is stated in the film."},
+    {"id": "S40", "name": "THE CHAIN",                    "thesis": "One error, drawn as a line through every system it touched: error -> database -> decision -> lost job."},
+    {"id": "S41", "name": "ONE DOCUMENT",                 "thesis": "Fifteen minutes built out of a single piece of paper -- a denial letter, an eviction notice, an HOA fine, an evidence log."},
+    {"id": "S42", "name": "HOW WE GOT HERE",              "thesis": "Long time-scale, entered backwards: a present-day absurdity, then thirty years of how it was built. Never history for its own sake."},
+    {"id": "S43", "name": "WHAT THIS BECOMES NEXT",       "thesis": "Reasonable extension of technology that already exists, built from documented cases. Never prophecy.", "guard": "Every future claim traces to a shipped technology and a real incident."}
+  ],
+  "series_note": "Twenty-five formats, not twenty-five themes. The channel page becomes a programme schedule of playlists, so a viewer asks 'which show next?' instead of meeting a graveyard of one-off videos.",
+
+  "title": {
+    "shape": "Subject + Verb + Consequence",
+    "verbs": ["took", "lost", "found", "hid", "refused", "vanished", "changed", "cost", "locked", "failed", "knew", "never", "wrong"],
+    "avoid": ["how", "history", "explained", "understanding", "framework", "legal implications"],
+    "candidates_per_episode": 20,
+    "pair_rule": {
+      "core": "the version that lands with people who already like the subject -- 'How Civil Asset Forfeiture Works'",
+      "broad": "the version that can land with anyone -- 'Police Took His $86,900. He Was Never Charged.'",
+      "default": "broad",
+      "note": "Write both, every time. Ship broad unless there is a stated reason."
+    }
+  },
+
+  "thumbnail": {
+    "words": [2, 4],
+    "subjects": 1,
+    "variants_required": [
+      {"id": "A", "kind": "human emotion", "example": "a bewildered man and a patrol car"},
+      {"id": "B", "kind": "evidence",      "example": "$86,900 SEIZED on a seizure form"},
+      {"id": "C", "kind": "symbolic / minimal", "example": "cash alone, NO CRIME"}
+    ],
+    "evidence_thumbnail_note": "Push away from movie-poster AI faces and toward the look of a real record -- a document, a figure, a form, a still. This is a deliberate shift from the current house style.",
+    "sentence_rule": "The title and the thumbnail must form ONE sentence between them and must never repeat each other.",
+    "examples": [
+      {"title": "Police Took His $86,900. He Was Never Charged.", "thumbnail_text": "0 CHARGES"},
+      {"title": "She Paid Off the House. Then Someone Else Claimed It.", "thumbnail_text": "NOT HERS?"},
+      {"title": "AI Rejected Him Before a Human Saw His Resume", "thumbnail_text": "DENIED IN 8 SEC"}
+    ]
+  },
+
+  "tiers": [
+    {"id": "PD_DAILY",       "role": "fast validation",  "runtime_min": [8, 11]},
+    {"id": "PD_INVESTIGATES","role": "depth",            "runtime_min": [15, 22]},
+    {"id": "PRIME_ORIGINAL", "role": "flagship",         "runtime_min": [18, 30], "cadence_per_month": [1, 2]}
+  ],
+  "runtime_rule": "Story dictates length. PD is not a 15-minute-video factory. This supersedes any fixed runtime band for NEW topics; episodes already specced keep the band declared in their own episode_spec.",
+
+  "editorial_agents": [
+    {"role": "Scout",              "does": "finds anomalies, not news", "prompt": "Find events where the outcome violates what an ordinary American would reasonably expect."},
+    {"role": "Investigator",       "does": "truth, primary sources, the other side's account, law, chronology, amounts, available footage, present-day outcome, the size of the system"},
+    {"role": "Editor",             "does": "removes explanation", "prompt": "What can be deleted without weakening the story?"},
+    {"role": "Packaging Director", "does": "titles and thumbnails, and HOLDS A VETO BEFORE PRODUCTION -- if it cannot win on a home feed, it is not built"},
+    {"role": "Devils Advocate",    "does": "exaggeration, legal exposure, and the institution's own defence. AI drifts toward the protagonist; this role exists to stop that."},
+    {"role": "Audience Predictor", "does": "predicts response from PD's own history, not from general YouTube lore"},
+    {"role": "Portfolio Manager",  "does": "decides what is built next from data, saturation, recent winners, overlap, risk and upside -- explicitly ignoring what anyone feels like making"}
+  ],
+  "funnel": {
+    "harvest_per_day": 1000,
+    "after_scoring": 100,
+    "after_titles_and_thumbs": 20,
+    "human_review": 20,
+    "built": 10,
+    "principle": "The purpose of the planning AI is REJECTION, not generation. Reviewing a thousand premises costs less than making one video.",
+    "kpi_note": "The KPI to watch is not 'one upload a day' but 'a thousand premises judged a day'."
+  },
+
+  "topic_sources": {
+    "discovery_only": ["reddit", "local news comment threads", "YouTube comments"],
+    "verification_required": ["court decisions", "regulator actions", "government audits", "consumer complaint records", "research papers", "FOIA releases", "lawsuits", "company filings", "cybersecurity disclosures"],
+    "local_news_note": "Local stories that never went national are often STRONGER on YouTube, because the audience has not seen them.",
+    "saturation_rule": "Score demand against saturation. A 90-point premise with no competing video beats a 100-point premise with ten videos over five million views.",
+    "comment_sensor": "Classify every comment of the form 'this happened to me' or 'do X next' into the premise database. The audience is a research department.",
+    "news_to_evergreen": "A news event enters as a timeless question, never as a news video. One AI fraud case -> 'How AI Voice Scams Actually Work'. Keep about 20% of the slate current so there is a reason to watch PD today.",
+    "ongoing_cases": "While litigation is live, do not conclude. Use alleged / according to court records / authorities say."
+  },
+
+  "asset_reuse": {
+    "principle": "One investigated case yields ten assets, not one.",
+    "outputs": ["long documentary", "explainer", "follow-up", "short hook", "short lesson", "short twist", "community poll", "newsletter", "compilation segment", "related-video bridge"],
+    "breakout_rule": "When an episode breaks out, satellite topics are generated within 24 hours and go to the front of the line. When the market says dig here, do not change subject."
+  },
+
+  "shorts": {
+    "role": "trailer network for the long-form catalogue",
+    "rules": [
+      "never answer the question the long-form answers",
+      "each short must stand alone -- a new viewer has no series context",
+      "do not number them into a series a newcomer cannot enter"
+    ],
+    "measure": ["short -> long click", "subscriber conversion", "returning behaviour on long-form"],
+    "measure_note": "A million short views with no long-form watch time does not serve this goal."
+  },
+
+  "kpis": {
+    "north_star": ["monthly unique viewers", "returning viewers", "views per viewer", "long-form watch hours", "subscriber conversion"],
+    "note": "Two million subscribers who do not watch is not the goal. A million people for whom PD is a habit is.",
+    "per_video": ["ctr", "avd", "retention_30s", "browse_ratio", "suggested_ratio", "subs_per_1000_views"],
+    "views_king_vs_subs_king": "Track which episodes generate views and which generate subscriptions -- they are usually different. Scams may acquire; hidden rules may convert. That difference is a funnel, once measured."
+  },
+
+  "learning_engine_fields": [
+    "theme", "system", "sub_theme", "victim_type", "authority_type", "money_amount", "contradiction",
+    "title_archetype", "title_verb", "title_length", "thumbnail_words", "thumbnail_kind", "thumbnail_has_face",
+    "evidence_present", "length_sec", "hook_type", "reveal_type", "ending_emotion",
+    "ctr", "retention_30s", "avd", "avp", "impressions", "browse_ratio", "suggested_ratio", "subscriber_conversion"
+  ],
+  "learning_engine_note": "After a few hundred episodes this yields win rates specific to PD's own audience. Generative AI is available to everyone; this dataset is not. When PD's own data disagrees with general YouTube advice, PD's data wins.",
+
+  "producibility_gate": {
+    "origin": "Added by the production side, 2026-08-11, from measurement. It is NOT part of the owner's viral-potential rubric and does not change any score; it runs after the score and before greenlight.",
+    "why": "Register abundance decides whether an episode can be dressed at all. EP66 openfields is a field-and-woods story: the shelf holds 3,572 nature clips, so it needed 5% of its register. EP63 correa is a 1995 emergency room: the shelf holds 258 hospital clips, it needed 74%, and it fell short. Same shelf, same week. This is not a search-quality problem and more querying does not fix it.",
+    "rule": "Before a topic is greenlit, measure the shelf's inventory for its visual register and compute utilisation = clips_needed / clips_available.",
+    "thresholds": {"green": 0.15, "amber": 0.40, "red": 0.41},
+    "threshold_meaning": {
+      "green": "<= 15% utilisation -- dressable",
+      "amber": "16-40% -- dressable only with a staging plan named up front",
+      "red": "> 40% -- do not greenlight without either an archive acquisition plan or an accepted AI-motion budget"
+    },
+    "ai_motion_caution": "The channel's normal visual shape is ~68% archive footage and 0% AI motion. EP62-65 drifted to 44-57% AI motion, which is a regression, not a standard. Generating more plates makes it worse: solve_totals splits video proportionally to pool capacity, so a bigger AI pool pushes archive cuts off screen (measured on correa: 52 -> 46 -> 41 archive cuts at +0/+20/+40 plates).",
+    "abstract_subject_warning": "The new emerging and moonshot categories -- algorithms, data brokers, banking rails, dependency stories -- have the thinnest archive registers on the shelf. They are the most likely to fail this gate. Budget the visual solution at the premise stage, not at assembly.",
+
+    "period_rule": {
+      "measured": "2026-08-12, from the full archive ledger (423,225 rows) while dressing EP68 pinto (Ford Pinto, 1968-1981).",
+      "finding": "THE SHELF HAS NO ERA FIELD. Across every ledger row there is no year, no created-date and no archival flag -- the only date-like field is `date_argued` on 40 audio rows. The shelf therefore CANNOT be filtered for period material at all. Era can only be proxied by source class (ia / nara) or by a year appearing inside a provider's title.",
+      "why_it_matters": "This is why a noun query returns green and a human eye returns 1.3%. The utilisation number is honest about nouns and blind about time.",
+      "supply": "26,101 distinct playable clips: modern stock 24,412 (93.5%), archival/institutional 1,058 (4.1%). Channel-wide, 26 clips carry a title year in 1955-1985, and they are Nuremberg, Pearl Harbor, three westerns, two film noirs and a cartoon. 64% of the archival pool is sub-720p.",
+      "rule": "Split every episode's register into the ERA-NEUTRAL half (hands, paper, liquids, instruments, coins, rust, stone, dusk -- 22,144 clips available, the shelf's real strength) and the ERA-BOUND half (anything that must look like a specific past: period streets, period vehicles, period interiors, period workplaces). Score utilisation for the era-bound half against ARCHIVAL SOURCES ONLY, never against the whole shelf.",
+      "default_colour": "Any premise set before ~1995 is AMBER at best and RED by default on its era-bound registers, and the AI-motion budget must be agreed at premise time rather than discovered at assembly.",
+      "worked_example": "EP68 pinto: noun-match utilisation 0.066 (green) and truly 1.617 on archival-on-register (red). Five of six era-bound registers have ZERO archival supply, so no query set fixes them. The resolution was to re-harvest the era-neutral half with subject-naming phrases (747 legal clips against 152 needed = 0.203, amber) and spend i2v ONLY on the era-bound half: 53-55 conversions, ~3.1 GPU hours, ~33% AI motion -- against 110 conversions, 6.3 hours and 68% AI motion if the whole film were bought with GPU time.",
+      "generalisation": "This shelf is strong at the contemporary and the era-neutral and structurally unable to dress anything that must look like a specific past. Prefer premises whose visual demands are era-neutral or present-day; when a period premise is chosen anyway, choose it knowing the AI-motion share it will cost."
+    }
+  },
+
+  "audience_reality": {
+    "measured": "2026-08-11",
+    "age_55_plus_pct": 77,
+    "male_pct": 92.5,
+    "long_form_ctr_pct_impression_weighted": 1.61,
+    "long_form_ctr_pct_median": 1.26,
+    "subscribers": 21,
+    "note": "The existing base is older men. Forfeiture, wrongful conviction, AI voice scams, medical bills, insurance and property land inside it. Dark patterns, gig-work algorithms, digital ownership and simulation formats are bets on an audience PD does not yet have -- correct to make, but they must be tracked as acquisition experiments and not judged by the same CTR expectation.",
+    "feeder_reality": "The only measured growth mechanism is being linked to by external videos after publication. The band '27-37 min beats 9-15 min' is confounded -- its advantage is carried by OceanGate and D.B. Cooper, the only two topics with a large external feed. Length is not the variable; a famous, adjacent premise is. This is the strongest data-side argument FOR widening the subject space."
+  },
+
+  "risks": {
+    "politicisation": "Police, government and justice pull a channel left or right. Political colour can buy short-term CTR and costs long-term brand. Evidence first.",
+    "clickbait": "Maximising CTR alone raises CTR, lowers retention and lowers trust. Optimise lifetime trust.",
+    "fatigue": "Unrelieved dread exhausts an audience. The emotion mix exists for this.",
+    "rights": "The more real footage, bodycam, exhibits and photographs are used, the more licensing becomes a business problem. Asset provenance must be recorded from the start.",
+    "fact_trail": "Every narrated sentence carries a source id, so a claim can be traced years later.",
+    "ai_disclosure": "Reconstruction must be visibly distinguishable from record. Transparency is brand value.",
+    "scale_reality": "Reaching 2M on fully automated AI video alone is not assumed. From ~100k, human interviews on flagships; from ~500k, original reporting fed by viewers' own stories."
+  },
+
+  "next_ten": [
+    {"rank": 1,  "title": "Police Took His Life Savings. He Was Never Charged.",        "intent": "maximise the measured winning pattern", "portfolio": "core"},
+    {"rank": 2,  "title": "He Confessed to a Crime He Didn't Commit.",                   "intent": "wrongful justice",                     "portfolio": "core"},
+    {"rank": 3,  "title": "His Daughter Called Crying. It Wasn't Her.",                  "intent": "AI x family x fraud",                  "portfolio": "emerging"},
+    {"rank": 4,  "title": "She Owed Hundreds. Then She Lost Her Home.",                  "intent": "housing x contradiction",              "portfolio": "adjacent"},
+    {"rank": 5,  "title": "What Happens in the 2 Seconds After You Tap Your Card?",      "intent": "new wonder axis",                      "portfolio": "moonshot"},
+    {"rank": 6,  "title": "The Algorithm Said He Was a Fraudster. It Was Wrong.",        "intent": "test the future pillar",               "portfolio": "emerging"},
+    {"rank": 7,  "title": "The Hospital Saved His Life. Then the Bill Arrived.",         "intent": "US mass appeal",                       "portfolio": "adjacent"},
+    {"rank": 8,  "title": "What Happens If GPS Stops for 24 Hours?",                     "intent": "moonshot",                             "portfolio": "moonshot"},
+    {"rank": 9,  "title": "The Button They Didn't Want You to Find.",                    "intent": "dark patterns",                        "portfolio": "emerging"},
+    {"rank": 10, "title": "He Got Every Dollar Back.",                                   "intent": "positive reversal",                    "portfolio": "core"}
+  ],
+  "next_ten_note": "Deliberately spread across psychological triggers so the experiment reveals which trigger dominates for PD's own audience. All ten share one worldview: an invisible system moves an ordinary life. Titles are hypotheses -- every figure, name and outcome must be replaced with what primary sources actually support before production.",
+
+  "editorial_constitution": [
+    "1. Ordinary before extraordinary -- open on a normal person and a normal day.",
+    "2. Show the contradiction -- the gap between what common sense expects and what happened.",
+    "3. Evidence before opinion.",
+    "4. Explain the system, not just the villain -- the enemy is bad design, bad incentives, bad information and bad rules, not a bad person.",
+    "5. Leave the viewer smarter, not just angrier."
+  ],
+  "constitution_note": "Five articles. Every premise, script and cut is judged against them. Article 4 is what keeps the channel out of politics: 'the hospital is evil' is shallow, 'the hospital, the insurer, the network contract, the billing code and the regulation together produce a bill nobody can explain' is durable.",
+
+  "format_ip": {
+    "note": "Three recurring devices that should make a clip identifiable as PD with the logo removed. Recurring, small, never gimmicky.",
+    "the_system_map": "One diagram per episode of who is actually connected to whom.",
+    "the_moment": "The instant everything turned, stamped with a time. Sound stops. '10:42 AM -- the officer found the cash.'",
+    "the_hidden_rule": "One closing sentence stating the rule the story just exposed, in plain words.",
+    "money_flow": "Where the money actually went, drawn -- patient to hospital to insurer to provider to collections.",
+    "power_map": "Who could decide, refuse, appeal, enforce and stop. Viewers discover the power sat somewhere they did not expect."
+  },
+
+  "named_concepts": {
+    "note": "PD's own vocabulary. When a viewer says 'this is another System Collision story', the channel owns a way of seeing, which is not copyable.",
+    "system_collision": "The moment an ordinary person makes contact with a large system.",
+    "expectation_gap": "The distance between what common sense predicts and what the rules actually produce.",
+    "invisible_decision": "A judgement made where no human can be found to explain it."
+  },
+
+  "script_evaluation": {
+    "answer_reversal": {
+      "rule": "Stronger than a plain curiosity gap: let the viewer form a WRONG answer, take it away, offer a second, take that away too, then land the real one.",
+      "example": "account frozen -> fraud suspected -> he committed no fraud -> a bank error? -> no: an outside database.",
+      "scored": true
+    },
+    "one_memorable_line": "Before production, write the single sentence a viewer should still hold a week later. 'You can lose money without being charged.' 'A familiar voice is no longer proof of identity.' A premise that cannot produce one is weak.",
+    "dinner_table_test": "Can the film be retold to a friend in one breath? If the retelling needs thirty seconds of setup, the premise is weak.",
+    "emotion_arc": {"start": "curiosity", "mid": "shock", "end": "understanding / relief / concern"},
+    "ending_emotion_is_data": "Record the ending emotion for every episode -- anger, relief, hope, wonder, concern, empowerment -- and learn which converts subscribers.",
+    "the_unexpected_rationale": "Every episode must state the system's own reason for existing before showing its failure. Civil forfeiture exists to freeze criminal assets quickly, AND it takes money from people never charged. Both are true; the friction is the brand.",
+    "numbers_to_human_units": "Translate every figure into a life unit. Not '$50,000' but 'three years of rent'. Not '20 years' but 'from the day his daughter was born until she was an adult'. Reading a number aloud is what an AI does; translating it is what PD does.",
+    "titles_and_thumbnails_stand_alone": "The title must work with no thumbnail and the thumbnail must work with no title -- each 80 on its own, 100 together. A thumbnail is an amplifier, not a life-support machine."
+  },
+
+  "video_roles": {
+    "note": "Not every episode owes every KPI. Assign one role at the premise stage and judge it by that role.",
+    "acquisition": {"measures": ["ctr", "new viewers"],        "fits": ["police", "AI scams", "shocking cases"]},
+    "conversion":  {"measures": ["subs per 1000 views"],       "fits": ["hidden systems", "explanation"]},
+    "retention":   {"measures": ["returning viewers"],         "fits": ["series with chains"]},
+    "revenue":     {"measures": ["rpm", "audience value"],     "fits": ["finance", "insurance", "housing", "technology"]},
+    "brand":       {"measures": ["memory", "citation", "share"], "fits": ["flagship investigations", "infrastructure"]},
+    "value_score": "A weighted composite -- views, watch hours, subscribers, returning viewers, revenue -- weighted by the assigned role. 50k views with 1,500 subscribers can be worth more than 100k with 100.",
+    "audience_value_warning": "Chasing raw views can fill the channel with low-value viewers and push the revenue goal further away, not closer. Finance, insurance, housing and technology attract the 25-54 English-speaking long-form viewer."
+  },
+
+  "audience_layers": [
+    {"layer": "Curious Mass",        "wants": "surprise and story",      "entry": ["police", "scams", "hidden rules"]},
+    {"layer": "Smart Professionals", "wants": "structural understanding","entry": ["finance", "AI", "infrastructure"]},
+    {"layer": "Core Fans",           "wants": "the PD viewpoint itself", "entry": ["flagship", "investigations"]}
+  ],
+  "audience_funnel": "buzz -> trust -> habit. Acquire through Curious Mass, deepen into Smart Professionals, convert into Core Fans. Designing this deliberately is what fixes 'plenty of views, no subscribers'.",
+
+  "distribution_design": {
+    "next_video_is_decided_at_premise": "The follow-on episode is chosen before production, and the last thirty seconds are written as the bridge to it. Do not leave the path to the algorithm.",
+    "content_chains": "Ship in threes: traffic stop -> seizure -> rights; AI scam -> voice cloning -> data brokers; medical bill -> insurance -> collections.",
+    "playlists_by_feeling": "Group playlists by emotion, not genre -- 'Stories That Started With One Small Mistake', 'When Algorithms Get It Wrong', 'Money You Didn't Know You Could Lose'.",
+    "start_here": "A five-video playlist that teaches a newcomer what PD is. Subscription conversion, not SEO.",
+    "trailer": "No 'welcome to the channel'. Thirty seconds of three abnormal events, three numbers and the phrase hidden systems.",
+    "one_sentence_others_use": "They make documentaries about the hidden systems behind everyday life. If a viewer cannot say that, the brand has not landed."
+  },
+
+  "topic_mix": {
+    "known_topic_new_angle": 40,
+    "unknown_story_strong_hook": 40,
+    "experimental": 20,
+    "unit": "percent",
+    "reason": "All-obscure loses the click; all-famous loses the fight. Known demand plus a new angle is where PD wins.",
+    "news_timing": "News breaks against CNN, Fox, NBC and local. Six months later 'what happened next' has almost no competition and a longer life."
+  },
+
+  "content_genome": {
+    "why": "Classifying episodes by theme hides the thing that actually predicts performance. Recording each film's DNA lets the winning STRUCTURE be transplanted onto a different subject.",
+    "fields": [
+      "protagonist_type", "system", "contradiction", "stakes", "emotion_arc", "ending_emotion",
+      "hook_type", "evidence_type", "structure", "title_verb", "title_archetype", "thumbnail_kind",
+      "duration_sec", "video_role", "instincts", "series_id",
+      "ctr", "avd", "retention_30s", "browse_ratio", "suggested_ratio", "subs_per_1000", "rpm"
+    ],
+    "example": {
+      "protagonist_type": "ordinary man", "system": "police", "contradiction": "no charge / money lost",
+      "stakes": "money + freedom", "emotion_arc": "shock -> anger -> understanding",
+      "hook_type": "specific dollar amount", "evidence_type": "court document",
+      "structure": "reverse timeline", "ending_emotion": "ambiguous", "title_verb": "took",
+      "thumbnail_kind": "evidence", "duration_sec": 804
+    },
+    "evolution_loop": ["generate", "test", "measure", "crossbreed", "mutate", "select"],
+    "crossbreed_rule": "When an episode wins, do NOT make ten more like it -- the audience tires and the theme saturates. Extract its DNA and transplant it onto a different system: cash + no crime + authority + exact amount, moved from a traffic stop to a bank freeze, a tax lien, an HOA. Copy the structure, change the subject.",
+    "hypothesis_to_test": "It may turn out that 'police' was never the reason. 'Specific number + ordinary person + institutional contradiction' may be. If PD's own data says so, that pattern moves to banks, hospitals and algorithms and the channel stops depending on one theme.",
+    "brand_filter": "A premise that would score well and does not look like PD is rejected -- celebrity scandal, outrage bait, conspiracy, gore. Short-term numbers, long-term brand damage. The Portfolio Manager owns this call.",
+    "brand_elasticity": "The metric that proves the channel has graduated from theme to brand: does the audience still watch when the subject is not police? Track view and retention ratios of non-core subjects against core."
+  },
+
+  "moat": {
+    "note": "None of the tools are a moat -- competitors have the same models. These are.",
+    "tipline": "A route for viewers to submit their own story, anonymous accepted. At scale this produces cases no competitor can obtain.",
+    "original_case_ratio_targets": {"now": 0, "at_100k": 5, "at_500k": 15, "at_2m": 30, "unit": "percent of episodes from PD's own sourcing"},
+    "expert_inserts": "Short contributions from lawyers, former officers, security researchers, billing specialists. Flagships only, and not before the brand is formed.",
+    "no_host_yet": "Do not install a human presenter early -- the presenter becomes the brand. Add human texture instead: real audio, recorded calls, public statements, expert voices.",
+    "pd_index": "PD's own recurring datasets -- hidden fees, AI errors, forfeiture -- published annually as The Hidden Systems Report. A channel with an annual event has a season.",
+    "content_genome_note": "The genome database is itself a moat: it is PD's own audience, not a public model."
+  },
+
+  "experiments": {
+    "purpose": "The next 30-40 episodes are a market experiment measuring how far the PD brand can stretch, not a content plan. If any of these beats the police pattern, that category becomes the second pillar.",
+    "five_shapes": [
+      {"shape": "Follow the Money", "probe": "One $4 Coffee. Six Companies. Here's Where the Money Goes."},
+      {"shape": "Interactive Mystery", "probe": "Would You Have Believed the Witness?"},
+      {"shape": "Invisible Infrastructure", "probe": "What Happens in the 2 Seconds After You Tap Your Card?"},
+      {"shape": "System Bug", "probe": "The Fraud System Locked Out the Person It Was Supposed to Protect."},
+      {"shape": "Positive Hero", "probe": "They Took His Money. He Fought for Two Years and Got It Back."}
+    ],
+    "ten_off_pattern": [
+      "What Happens in the 2 Seconds After You Tap Your Card?",
+      "The People Keeping 911 Alive",
+      "He Was Cleared. His Record Wasn't.",
+      "Where Your Returned Amazon Package Actually Goes",
+      "Who Decides If Your Insurance Claim Gets Paid?",
+      "The Software America Can't Turn Off",
+      "One Wrong Database Entry Followed Him Everywhere",
+      "How One $4 Coffee Moves Through Six Companies",
+      "Everyone Knows This System Is Broken. Why Hasn't It Changed?",
+      "The Disaster That Didn't Happen"
+    ],
+    "the_real_risk": "The danger is not failure. It is succeeding small -- hardening into 'the police-and-law AI channel'. That can reach a modest revenue and cannot reach two million."
+  },
+
+  "integrity": {
+    "absolute": "Never bend a fact to fit a title. A title written before the research is a hypothesis, not a promise.",
+    "ai_imagery": "Where the subject is a real event, AI-generated people and scenes must never be presented as authentic record. Label reconstructions.",
+    "gate_rule": "Never weaken a threshold, gate, schema or declared value to make something pass."
+  }
+}

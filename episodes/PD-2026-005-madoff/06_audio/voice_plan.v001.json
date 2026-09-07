@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "script_ref": "script.en.v001",
+  "provider": "ElevenLabs",
+  "voice_profile": {
+    "character": "middle-aged American male, low, calm, authoritative explainer (channel-consistent with prior episodes)",
+    "style": "measured, restrained; lean into quiet menace on the mechanism reveal; warmth in the opening, sober in the ending",
+    "pace_wpm_target": 150,
+    "notes": "Draft pass first (cheap voice) for timing; MASTER generation only after script LOCK and owner go (paid/metered, rules/11). Fit to 12:00 via small atempo on the assembled master, not by re-reading."
+  },
+  "chunking_rule": "One chunk per script paragraph / beat (VC-NNNN), so a single fix re-renders one chunk, not the whole track. Keep chunks <= ~60s.",
+  "chunks": [
+    {"id": "VC-0001", "section": "00_hook", "text_ref": "HOOK para 1-3 (the line / safe / one man saw a crime)", "silence_after_ms": 600},
+    {"id": "VC-0002", "section": "01_opening", "text_ref": "OPENING (trusted name; steadiness was the trick; takeaway promise; disclaimer)", "silence_after_ms": 300},
+    {"id": "VC-0003", "section": "actI_trust", "text_ref": "ACT1 a (who Madoff was; legitimate firm; establishment)", "silence_after_ms": 200},
+    {"id": "VC-0004", "section": "actI_trust", "text_ref": "ACT1 b (the invite-only club; the slow dependable climb)", "silence_after_ms": 200},
+    {"id": "VC-0005", "section": "actI_trust", "text_ref": "ACT1 c (professionals fooled; the question 'how?'; 'wasn't really investing')", "silence_before_ms": 700, "emphasis": "hold silence before 'he wasn't really investing the money at all'"},
+    {"id": "VC-0006", "section": "actII_system", "text_ref": "ACT2 a (no real trades; money into a bank account)", "silence_after_ms": 200},
+    {"id": "VC-0007", "section": "actII_system", "text_ref": "ACT2 b (the Ponzi mechanism explained step by step)", "silence_after_ms": 200},
+    {"id": "VC-0008", "section": "actII_system", "text_ref": "ACT2 c (fabricated statements; trust deepens; new money is the only money)", "silence_after_ms": 200},
+    {"id": "VC-0009", "section": "actII_system", "text_ref": "ACT2 d ($65B myth -> ~$17.5B principal; the gap IS the scheme)", "silence_after_ms": 300},
+    {"id": "VC-0010", "section": "actII_system", "text_ref": "ACT2 e (the fatal math; can never stop growing)", "silence_after_ms": 300},
+    {"id": "VC-0011", "section": "actIII_math", "text_ref": "ACT3 a (Markopolos; ran the numbers; five minutes)", "silence_after_ms": 200},
+    {"id": "VC-0012", "section": "actIII_math", "text_ref": "ACT3 b (too smooth = impossible; rigged game analogy)", "silence_after_ms": 200},
+    {"id": "VC-0013", "section": "actIII_math", "text_ref": "ACT3 c (warned the SEC repeatedly; nothing happened)", "silence_after_ms": 400},
+    {"id": "VC-0014", "section": "actIII_math", "text_ref": "ACT3 d (OIG: failure not corruption; sleeping watchdog)", "silence_after_ms": 300},
+    {"id": "VC-0015", "section": "actIII_math", "text_ref": "ACT3 e (couldn't last; that year was 2008)", "silence_after_ms": 500},
+    {"id": "VC-0016", "section": "actIV_collapse", "text_ref": "ACT4 a (2008 panic; withdrawals; no vault)", "silence_after_ms": 200},
+    {"id": "VC-0017", "section": "actIV_collapse", "text_ref": "ACT4 b (confession to sons; arrest Dec 2008)", "silence_after_ms": 200},
+    {"id": "VC-0018", "section": "actIV_collapse", "text_ref": "ACT4 c (plea to 11 felonies; no trial)", "silence_after_ms": 700, "emphasis": "hold silence before 'a hundred and fifty years'"},
+    {"id": "VC-0019", "section": "actIV_collapse", "text_ref": "ACT4 d (150 years; died in prison 2021)", "silence_after_ms": 400},
+    {"id": "VC-0020", "section": "actIV_collapse", "text_ref": "ACT4 e (the surprising recovery; >90%, with honest caveat)", "silence_after_ms": 400},
+    {"id": "VC-0021", "section": "ending", "text_ref": "ENDING a (not 'don't trust anyone'; the sharper lesson)", "silence_after_ms": 200},
+    {"id": "VC-0022", "section": "ending", "text_ref": "ENDING b (return comes with risk; smoothness = warning)", "silence_after_ms": 300},
+    {"id": "VC-0023", "section": "ending", "text_ref": "ENDING c (analyst vs regulator; 'ask it'; subscribe/next CTA)", "silence_after_ms": 0}
+  ],
+  "pronunciation_dictionary": [
+    {"term": "Madoff", "ipa_or_respell": "MAY-dawf"},
+    {"term": "Ponzi", "ipa_or_respell": "PON-zee"},
+    {"term": "Markopolos", "ipa_or_respell": "mar-KOP-uh-luhs"},
+    {"term": "SIPA", "ipa_or_respell": "spell out: S-I-P-A (or 'SY-puh' if used as a word — pick one and keep consistent)"},
+    {"term": "Picard", "ipa_or_respell": "pih-KARD"},
+    {"term": "SEC", "ipa_or_respell": "spell out: S-E-C"},
+    {"term": "fiduciary", "ipa_or_respell": "fih-DOO-shee-air-ee"},
+    {"term": "endowment", "ipa_or_respell": "en-DOW-ment"}
+  ],
+  "open_items": [
+    "Lock script (resolve CLM-0004/0005/0009/0011 follow-ups) BEFORE master generation.",
+    "Confirm exact voice id/settings used on prior episodes for continuity."
+  ],
+  "status": "draft_ready (master pending script lock + owner go)"
+}

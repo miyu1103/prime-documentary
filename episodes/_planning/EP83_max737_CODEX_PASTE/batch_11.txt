@@ -1,0 +1,56 @@
+EP83_max737 — 画像発注 バッチ 11/24（8枚）
+区分: ACT_3 — 誰も言わなくてよかった仕組みの解剖
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, airline livery, tail marking, company colour, human face, facial features, portrait, identifiable person, wreckage, debris, fire, smoke plume, crash site, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) X081.png
+   [X081]  flags: 
+   An angle gauge on a plain protractor drawn as a lit graphic, a small wedge and a much larger wedge side by side, no characters
+
+2) X082.png
+   [X082]  flags: 
+   A simulator bay at night, the box dark, one light burning in the instructor's window
+
+3) X083.png
+   [X083]  flags: 
+   An office monitor at night seen over an empty chair, a chat window as blocks of glowing colour with no readable characters
+
+4) X084.png
+   [X084]  flags: 
+   A desk at night lit only by a monitor, a coffee cup, the chair pushed back, no person present
+
+5) X085.png
+   [X085]  flags: 
+   A manual page holder in a cockpit, the page blank and white under a reading light
+
+6) X086.png
+   [X086]  flags: 
+   A thick operations manual open on a plain desk, both pages entirely blank, one hard lamp
+
+7) X087.png
+   [X087]  flags: 
+   The same manual with one line of the page physically cut out, an empty slot through the paper, backlit
+
+8) X088.png
+   [X088]  flags: 
+   A regulator's stamp resting on a blank page, the stamp face plain and uncut, hard light

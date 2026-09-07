@@ -1,0 +1,3093 @@
+{
+  "episode_id": "PD-2026-064-memphis",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Two bills came to one house.",
+      "text_sha256": "sha256:64cbc2e02a11192427c50425d777b8e596161a2d1c47640f00d67d81c395a3b9",
+      "idempotency_key": "sha256:9815661495c56f803b92f68e1bb803b6f13156cc48e2a328cece63869a2f11e9"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Pay or face termination.",
+      "text_sha256": "sha256:94cca9d304e948e2f656840e4113839274de5d25d6300c356968ecb3f4311661",
+      "idempotency_key": "sha256:ed82b5b0636bee17d26bbbbc682d4a8bf44dd1a065f08dec82790e9a1c1aaa2e"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Mary Craft telephoned after a final notice and said she had paid a bill.",
+      "text_sha256": "sha256:96efa89bbab23947cf23f4ebc89b5809eb78fa0962b83810f5ecfa7a7819ff5e",
+      "idempotency_key": "sha256:1748daf4f6fc7c382ab13d53f78eb5c848b12949b6ecc9012b78158937bc68dc"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "The case is Memphis Light, Gas and Water Division against Craft.",
+      "text_sha256": "sha256:a0b994d7ebed50b5045beace3b70e65935e24b32c76d4c202504728352b72b40",
+      "idempotency_key": "sha256:136b42a1f68423f64a6ea50380537d35e7ab981a0b57196b88975370a91b35ec"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Argued in November 1977, decided on the first of May, 1978.",
+      "text_sha256": "sha256:7338be7fe910a05dc92cf5be1d6b757c742289e17965a89bd63964e3b8354184",
+      "idempotency_key": "sha256:7e34895c95f266fb7542c420421489644898b302ae24b068d033324feaa5ef7a"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Justice Powell wrote for the Court.",
+      "text_sha256": "sha256:4704d4f3287f0b471bfd8e10e3a6429c847941f3ffe3c6a0815e7493cc5795a3",
+      "idempotency_key": "sha256:d8e397f815c4a83b44d063c29c792a0e1c4dcb6207ce6d38c490582f75a4be7a"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "The Supreme Court affirmed the judgment below and sent the damages question back down undecided.",
+      "text_sha256": "sha256:694d02494566c6f2204a652def5ab4aaa6672cecba8ba9edfaf08a33fad9ba2b",
+      "idempotency_key": "sha256:422d4be5deef7afb570d9087ed8ed9124621c4d1282917563e6b642caa528460"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Three Justices dissented, and their account of the same record is printed in the same volume.",
+      "text_sha256": "sha256:dab6fd15cf4010fa72d8b1a9136283880768ba5ad254d97b0c2c148f0b4a46bd",
+      "idempotency_key": "sha256:c6e5848a72bb5eafcdf5c0af67f6ebcd412fe3077128a1450289eb492f1adb64"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Willie S. and Mary Craft, respondents here, reside on Alaska Street in Memphis.",
+      "text_sha256": "sha256:5f6f21c525488e99645b371e7fcb40c8a469f47a9d600991af52d3a87ea575ef",
+      "idempotency_key": "sha256:27798942dcb3e5c06322272972d086dedb813faecb01d18e126bd93394eaea6e"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Their names and that street are very nearly everything the Court says about them.",
+      "text_sha256": "sha256:4d915540694dfeeeae6051cf987911a0d5215fe64ddc086305453da5d0b7830f",
+      "idempotency_key": "sha256:d9545bd8e4c64ea69fbdbf311c1364cc6160d34bfb4fb18669296095571ff5ac"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No ages.",
+      "text_sha256": "sha256:a3584e2275aea19241edcf0a94a2fa09c47e6c3482a97e4f5aac769439e40de4",
+      "idempotency_key": "sha256:94b7f657022015868eeda6516c8eab050e5d854cdc72d2f1ed474ff46a7139c1"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No occupations.",
+      "text_sha256": "sha256:34f90914076662dcf637a31018f137b7d63be0f4e32c313f371ebb2d19aabb10",
+      "idempotency_key": "sha256:e0bae8bf34fa50b1624c16c75b20a8469fa3e338e1d175e0675998e0bcd80e08"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No children.",
+      "text_sha256": "sha256:57159d168cc87a814e66903731a78d80004b508527581dccfd2250ce6ecfb226",
+      "idempotency_key": "sha256:5c6f125a37a4aa4f49707bd44d53717cbef9100344a454d9cc93b33efb9f14e8"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The opinion never says how long a single outage lasted.",
+      "text_sha256": "sha256:e1301557f547f551c537e5b4faa6be47123231d4e5d6a66b0d1a9055d9abb214",
+      "idempotency_key": "sha256:105437fdf0259e6c2e68ca61cf788eb8438e7d869370d96336c39bd49ecf565b"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "What it does record is a sequence.",
+      "text_sha256": "sha256:32c176466b0e9106c63ac2142499b38f6e2fbe634d0996ae1037155535d0a547",
+      "idempotency_key": "sha256:da0d952f6964eac0ad426c92c93403b0bc84e3dc41a32df73c79c7055a3e27c3"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "When the Crafts moved into their residence in October 1972, they noticed that there were two separate gas and electric meters and only one water meter serving the premises.",
+      "text_sha256": "sha256:91b1a7caef53de0a17ed00b9987a025ac6d189dbb51a514b7336104a116bd5e5",
+      "idempotency_key": "sha256:890e8108198cad5cfe21b63699b7a1bd8a5e672650149af5722be4fe80dc88c1"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The residence had been used previously as a duplex.",
+      "text_sha256": "sha256:6d9625f786c157800abdd48d226ac0bfb110ed6d5933f7f79260a59bb4a95e2f",
+      "idempotency_key": "sha256:3c43bcb773c282e0aa641ea173c9ad7269d459119a7163bc2d5ad4331dc9f9d6"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Crafts assumed, on the basis of information from the seller, that the second set of meters was inoperative.",
+      "text_sha256": "sha256:6f44c80290df3e822d34be9ce169bfbd5aed4812f509ffab1b87bf48293f5dfb",
+      "idempotency_key": "sha256:5a3641b9ea620cf694ec419154a5d6140a618aba5aeb5bc672146a471f1e706f"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The assumption held for a year.",
+      "text_sha256": "sha256:77534d9809a58854b5ef81d53b45863232bd063dc8e4ce1d98bfe2ecb01f3721",
+      "idempotency_key": "sha256:ee0ffb9eaf653c777ceccf6166296047649b6d025fc3bad42d6a0607ed42056b"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Then, in 1973, the Crafts began receiving two bills: their regular bill, and a second bill with an account number in the name of Willie C. Craft, as opposed to Willie S. Craft.",
+      "text_sha256": "sha256:7dd44d58ce93571ade6cc49061a4ded10df805efc42ed3f6503100a6e975b2b7",
+      "idempotency_key": "sha256:a2a8f5b904167b5ce7a0871465f574e8e8d004c8203ba150d4289f8a8c24a0e9"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One house, one family, two customers as far as the billing system was concerned.",
+      "text_sha256": "sha256:e0e48504e60e79a9911a0dbd87dd0ecf9994354cf44243dceee61fa5398306ea",
+      "idempotency_key": "sha256:dc963da185463ae82b15463b674925e73af98c708f1015638a189e29a02829bc"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Separate monthly bills were received for each set of meters, with a city service fee appearing on each bill.",
+      "text_sha256": "sha256:d5400d60052a6ac169ec69b8ea8061570c7b47a3934c84ab391c2518fe4ff6d2",
+      "idempotency_key": "sha256:2fbd5860f226ccbc1688bab0b7f31fb6d2d071fe7738dc53a3bb53e059379bb0"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Municipal ordinance required that fee as a separate item.",
+      "text_sha256": "sha256:d26d14e9fc70f11f7e22900fe12de85928473265442bc03297c7562e476f4227",
+      "idempotency_key": "sha256:5c9a47c8b74974b7ce5a6409ff56d4c7917438823deb55449828c3517a4bb7fc"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "So it appeared twice.",
+      "text_sha256": "sha256:969baefcb26a30e7ef37b74cf41d1ac2852ae4440826bc03330b5235da3c0d09",
+      "idempotency_key": "sha256:588d5a25c23342fd9d32f91ed912e0e1d612a74cbd04e5519dc3ac9315bbb689"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "October 1973.",
+      "text_sha256": "sha256:5164406f7259deed2f94511f0c5ae1441bbef7cd57537cd036f3a46a211eb115",
+      "idempotency_key": "sha256:ee19e5c6c02f4e7e64bbfa9002175617bafd5484fe78b9293eebb45977b12ae5"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "After learning from a MLG&W meter reader that both sets of meters were running in their home, the Crafts hired a private plumber and electrical contractor to combine the meters into one gas and one electric meter.",
+      "text_sha256": "sha256:e08b804b640c6c4e82f0d6aa2babfbd884e5ca373d72d4f5b09d5d0c022ab83b",
+      "idempotency_key": "sha256:e7a0995985f44ca06bb489d82ecb5344bc2de14defdabc172396c54953844933"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They paid for that themselves.",
+      "text_sha256": "sha256:821e87916c9381557f1342c22ed5f516297d1957a515ad3440c3cb6da95d1f30",
+      "idempotency_key": "sha256:7f8e0453c0fbf614814e551ba4a9471e408651022e45ff01a5329cf0a89792a0"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And then the sentence the first half of this case turns on.",
+      "text_sha256": "sha256:90cc1c819f03a85eb926d3e5b5dba5016589568b8a0d9573f16975226487bbe0",
+      "idempotency_key": "sha256:e389c558460cfb5dcb073f7475e011224756ceeea5acd95de64e71db00feef9c"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Because the contractor did not consolidate the meters properly, a condition of which the Crafts were not aware, they continued to receive two bills until January 1974.",
+      "text_sha256": "sha256:ac748d895d797c75284464f504f56314c30fb5a122dab52714a443f0f8a1bb44",
+      "idempotency_key": "sha256:9739b4f3ff707acb4584e1efece182e27cbd1564a90191cec5f2134c22168013"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is the majority's account.",
+      "text_sha256": "sha256:329c1b060480ba75e8d09d5643bc568674bcd28a775f3165dec7f444ef4e582a",
+      "idempotency_key": "sha256:1b400205bb2990e4a489d37e11aa29e0a6bade3db6e149b927839647f83b2495"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Crafts hired somebody and their man got it wrong.",
+      "text_sha256": "sha256:a887c6158ff304456edc516ca8c265c398ed1af0e6cceda867939384bb8fe78b",
+      "idempotency_key": "sha256:d923e12d47ef8ce7c8536f3427bfd2de67ffbc5100c19d7723d175270b37fc31"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There is a second account of the same events, inside the same opinion.",
+      "text_sha256": "sha256:a052515656925aa268dbdb164fbd02d0cdc511b78f89b47b3be0af0daa0b448a",
+      "idempotency_key": "sha256:62ae523dc852dfe8c149d92f4f504eaf7252ccbad3857f94c9b1cacaff267294"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In a footnote, the Court quotes the brief filed by the Crafts' own lawyers.",
+      "text_sha256": "sha256:2f81c831302e9659752e4b57f70c9cf571740fac9dadba2402d15f85e2abd89b",
+      "idempotency_key": "sha256:27c5848aa195b57a5edc2c3c01cfe4e6753ec49d8b7eaf39a58583b29dfbaa0b"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Not until after the action was filed were the Crafts able to discover that they continued to receive double computer billings because MLG&W failed to combine the two accounts properly.",
+      "text_sha256": "sha256:ea9bff84e20ae3e670d8ca86a9f4ad03c66d40030d5abc6c382a51a6b1404a8f",
+      "idempotency_key": "sha256:0337d77fd7c1da5dccf893e181c555e6307383feda3bf53445c9bf0ea01d3cc6"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is the Crafts' account, and the Court printed it.",
+      "text_sha256": "sha256:c817c71ba892839050e8f25d0bd505379043d0c9141ec8cfa0d26aefab95e5c9",
+      "idempotency_key": "sha256:df4ff36df08f6e679d4820bf8e4ed97e94093124a342e92adab67d3a435928cf"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The utility never put the two accounts together.",
+      "text_sha256": "sha256:cf85a5ae415c41793360ad08727084b868c44f08894f293fee9ef0656e627751",
+      "idempotency_key": "sha256:b0c339c728dbd1ebb3f94040acda29b420c5088aa0eee27b57748aa74b8ff146"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The body says the meters.",
+      "text_sha256": "sha256:8e82072a67619c360e40221336e95466206ed68abb46b4053f4c5c162a97c66a",
+      "idempotency_key": "sha256:a4a2a129d584d50a4e70d1cdc5065f4205031ac0c8207b0b12de39dd3d562afa"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The footnote says the accounts.",
+      "text_sha256": "sha256:c4e2b0b11b38801150b0bc3310190c160a050f861b9cb684c33f682cae841393",
+      "idempotency_key": "sha256:b168f4445d199d7af9a289d6753886c41ff8812f59cb31b8d85ba0f3f15bac95"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The record does not agree with itself about whose mistake this was.",
+      "text_sha256": "sha256:dd85f5fbcb986a4d51ec81bebd5d921a2df294c61701cc9fbb9c87d1fc69295b",
+      "idempotency_key": "sha256:bdaad827de623c36cc294559030698bd6eda8ce83699d912b3c397a9f683298b"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Court never resolves it.",
+      "text_sha256": "sha256:88b7707be2f142f27d215fecf6e791ce70caf42dd5ab7c32a1693c8a349b76d3",
+      "idempotency_key": "sha256:041ff8a5297c86164615aab6d2c998caab512531931025110efea9207863f863"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That shape returns twice more.",
+      "text_sha256": "sha256:bd647861909c65e4df033b24492f58fc2a77a912eb6850a52d687cbf15e0cbb6",
+      "idempotency_key": "sha256:5752b2bda424f23f3d39c4b6397a06c45369c35a561cbaa80c797304ffeccf21"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "During this period, the Crafts' utility service was terminated five times for nonpayment.",
+      "text_sha256": "sha256:ebfee806711545c7f7da97c2bb62f99078ec11ca541ecda7badfd51fde7120b0",
+      "idempotency_key": "sha256:ef295cc4f12a05f8f4eda965e10ed5a66792be038f9b4f4eb4ca4ab878574779"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "During this period.",
+      "text_sha256": "sha256:9db2b67f9c7dfacf6eadbaf8c48ac1d7846e63f6290818b57de5fcd727adfc94",
+      "idempotency_key": "sha256:99ce1a957a1ec7162ac89cf317b41c60123c2b4d89e0d7afccec06eb90fcaa06"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That phrase is the Court's, and it is as precise as the opinion ever becomes.",
+      "text_sha256": "sha256:d85935810b4106236455f43cf53c379c82e1188fc9f13882f3aff976cf884b25",
+      "idempotency_key": "sha256:d4cb12efb77284ccf79105e4ffb30f11a6ffa918df16f5339e133d3a567d3b45"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No month for any of the majority's five.",
+      "text_sha256": "sha256:c9e5555dd80ab5d81ed809264a9ea3cc8c3a8d24aba6974187b371df994324d6",
+      "idempotency_key": "sha256:0e54cd760ad56a925d853f7a643322e9ca80d3604f71c9c995b6874e073f84d1"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No duration.",
+      "text_sha256": "sha256:af7049a8fd2067db2fae7ef7b3592154ddbab114ab9ba4f71e7643b26797a49c",
+      "idempotency_key": "sha256:fd1d5554ea2232b90d883f18477c0ff24bf4c99f9b11ca024007ab23cd9321dc"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No season.",
+      "text_sha256": "sha256:bfc9613a371ae09e62f8b783636038f48b0b94376a79913990796adf13abd385",
+      "idempotency_key": "sha256:956c983c0232ebbd3c5688c0a6a8408626c8758d6626ae2875374a0b421ca4c7"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No figure for any bill behind them.",
+      "text_sha256": "sha256:938e3bc610540f3a2ea3185dab72809c2a97e740deac2a5fa1f219b406f36c18",
+      "idempotency_key": "sha256:7a75ae6ae9ce56ea9644c6d58909d7dc3ca0cae270084941a4d178b99804d3f3"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On several occasions, Mrs. Craft missed work and went to the MLG&W offices in order to resolve the double billing problem.",
+      "text_sha256": "sha256:c7fa0b43b8bc91c44aa04e71b5c360067ab5c6e1ed6c15ad3fbd72e31fa14ed3",
+      "idempotency_key": "sha256:860d63abd0d47fc46964ed8ab60cd94ce2d1448614e510d08522c99a5c1641e1"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Missed work.",
+      "text_sha256": "sha256:73620980c13450ca1993700c55ddabfab3168289505196d2e9e07aa0e81a49dd",
+      "idempotency_key": "sha256:e1b73837c1ce23805a47dbdfdb89f596cc7341ebff7249135c79fc483b3d4ded"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "As found by the District Court, Mrs. Craft sought in good faith to determine the cause of the double billing, but was unable to obtain a satisfactory explanation or any suggestion for further recourse from MLG&W employees.",
+      "text_sha256": "sha256:47b2b4b225f7d5086b500d16d628695d8f2803a2fb489fa6b44a17f27e28bb65",
+      "idempotency_key": "sha256:6a2d55da545153b5247d96a8413e0a516e09c087fbd9fe82af423d1a8f12bdcb"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Good faith there is a legal term.",
+      "text_sha256": "sha256:930817e0f8e31095694dcce8808bede9a235bc5c5268a692abb23e3aba340725",
+      "idempotency_key": "sha256:5637af793c9fe18a8737bc7f44ad18b22ad06315a96ddd94dbd963a98bbfa0ee"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It was a finding, not a compliment.",
+      "text_sha256": "sha256:103c577a811ff7776d5598d64c24db6140dc74564a794b4b531d8e1814b13b7e",
+      "idempotency_key": "sha256:3be969243440bcd723421f9776bff17a461eaca31ba27d744f3cea6212dc284b"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Then the trial judge wrote down one occasion in particular.",
+      "text_sha256": "sha256:67cd3801f34b87484626e2ae24f07036875a0558e42c855229de6fe77451653e",
+      "idempotency_key": "sha256:930b5ec27843ba3c6dc1add4a8a90e1b4284533484c7c15f9ac2cbb8a9bbd18c"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On one occasion when Mrs. Craft was attempting to avert a utilities termination, after final notice, she called the defendant's offices and explained that she had paid a bill, but was given no satisfaction.",
+      "text_sha256": "sha256:49c416f12fedc0e9d5b5a882aab94789560fb696bda75258ad15c62877bd67c8",
+      "idempotency_key": "sha256:f3dc06ce14eeb5db4a0a87119fd9f62d3b3b7985899fe817221d8ab5d7f36838"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The procedure for an opportunity to talk with management was not adequately explained to Mrs. Craft, although she repeatedly tried to get some explanation for the problems of two bills and possible duplicate charges.",
+      "text_sha256": "sha256:c1a0bbfec3268960dc6e0aadf6f15634435bc8f3625b7be2c0097ba7b7a5f037",
+      "idempotency_key": "sha256:8351988bb4625fed209655e07d78e64d738e2a4f0c8df1da7673eb6c81b83f51"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Court kept what an employee actually said to her in a footnote.",
+      "text_sha256": "sha256:246d0d098081639623c7c7b8b0dcde18be49c4973b53c03bcf17cead5fae4fcd",
+      "idempotency_key": "sha256:2d582b8ae3865ad511cc8a96a847b12a5bfa4ad955a549d708a1fd3c4e8b0dfa"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "An employee of uncertain authority told Mrs. Craft, apparently without explanation or attempt at investigation, \"well, you have to pay on the other\" bill.",
+      "text_sha256": "sha256:9ce90d1bbdf32f1d61baceec5c39609e44733f1cb39f37aa2243552870436f91",
+      "idempotency_key": "sha256:ae6406943cc0e0645b7271a365d0df90cdbfc1ca2297610f72d45e41f181688a"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Of uncertain authority.",
+      "text_sha256": "sha256:d1e0af2881cc1d688283c0e946eeb7292ea66dfbb676b6b80ed222b112eb4582",
+      "idempotency_key": "sha256:1d6ae67c5309cd6f9ab44a3347f7ff16b9ac45e86c4e6bacd8f3285739135612"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Apparently without explanation.",
+      "text_sha256": "sha256:e6902bef151d5d8a68fd598a55373d09b89fe1e5913ecee06b55279d19be44f5",
+      "idempotency_key": "sha256:64568720b1216cfeeabf44d2fbeaf66f3fceb57f313714e02c8accfc11abfa0e"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Those qualifiers are the majority's.",
+      "text_sha256": "sha256:2fa4dcc1f369ad08df3836d1b1e43f52d5683599bb6a5281e5e21c84bf8d27d4",
+      "idempotency_key": "sha256:998c9c5bef7d1fc04045b73f8c283a6743bca9f49635b169fc6deed92329397a"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That sentence comes back.",
+      "text_sha256": "sha256:938b1031df490e131eaaefbdc91c1ffa31ae919280c7dba6714220afb3c092a2",
+      "idempotency_key": "sha256:baa81e1013c5dd4beac7ce0dacab4482b35f287c38659a829b52388a5e768816"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three Justices read it the other way round, and their reading is coming.",
+      "text_sha256": "sha256:cd7a3fce1b226d93e05690c6ab2cb961d312335c40db7dc15ad2ec2716433488",
+      "idempotency_key": "sha256:3e4455f87aa55b92f160fc0f26ab06b03b5efe4b500ac884d1b3fdb00c039c7b"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In February 1974, the Crafts and other MLG&W customers filed this action in the District Court for the Western District of Tennessee.",
+      "text_sha256": "sha256:eb30bd926909cb1120570fa3d71684de30723501f8e1e7b09018b600aeebd52b",
+      "idempotency_key": "sha256:7e177d4e3cfe881426c7141b36c60982943e73d72e6a39fca53593cd680ad398"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Memphis Light, Gas and Water Division is a division of the city of Memphis which provides utility service.",
+      "text_sha256": "sha256:25e13601ca6ff5c6beb15fe04c8531c5e2567066ddd40064fb3327703d988363",
+      "idempotency_key": "sha256:10bd8187cb9551b81c0a4d7a797ed39aa3403f272177c185b7b676dea56c2d2d"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is directed by a Board of Commissioners appointed by the City Council, and is subject to the ultimate control of the municipal government.",
+      "text_sha256": "sha256:8eec28fafc312997617d111291cecdf121fcf8d7e607287cf11ca442692d5d22",
+      "idempotency_key": "sha256:623e9f319a2d194c52d4f30e5d1670ee585c0387ce6c065b8e63eeaec03c0284"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The company sending the bills was the city.",
+      "text_sha256": "sha256:771590fd23b965aa2ec0c31570ebb76c3ce72930caa562c8e85359de31fe863d",
+      "idempotency_key": "sha256:d57a8059b767e97ab0291ecc390bb4836fe6230414cb54de27aefd8f2bc09122"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "As a municipal utility, MLG&W enjoys a statutory exemption from regulation by the state public service commission.",
+      "text_sha256": "sha256:d05dfb24d39b1e26ad3ec3a29534da86b531ebdb4b07ba293885f3554e4d3437",
+      "idempotency_key": "sha256:e38dbee38914bc4773aa243b05dae5cbe44d6e8ec4c196769869538165d6f20c"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The utility argued at first that its termination policies were not government action at all.",
+      "text_sha256": "sha256:fd21f8022e4f594fa055fbc5531b6b5e454e6f3325a7508721c2ae3f7a8b0dad",
+      "idempotency_key": "sha256:8084f5073bfabad7341440d8ecc815b260596412f2ac7dd65566123d4449fa7b"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Then it stopped.",
+      "text_sha256": "sha256:13c4d74efb56cbd8239a0aca7bc05d2ee24a90d1ec784e604e3cb59a3e30d5e1",
+      "idempotency_key": "sha256:151118aa527c44be66d1e1d0daac669a1056677718a3f55f7f744904f4146ce9"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Petitioners have abandoned their contention that state action is not present in this case.",
+      "text_sha256": "sha256:1deaf11d801e419be0e7b9211ee24d2bfe07ba702ed60580e7c937ec2da0f462",
+      "idempotency_key": "sha256:3ba9362c328c4c3856536b0fa3fe6470c5763869670839e87f7293054c4f310d"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The utility itself was dismissed out, because a municipality or governmental unit standing in that capacity is not a person within the meaning of section 1983.",
+      "text_sha256": "sha256:b31e11cdf57a81bd1628b76a6c7c450342f1862fa6016dccc3ea53010dd90ab1",
+      "idempotency_key": "sha256:7f539587f5e09672189c31df81a4243054c0d7fd36673f067610b3fd460b1762"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "What remained were individuals, sued in both their official and personal capacities: the president and general manager, the vice president, members of the Board of Commissioners, and two employees who have had responsibility for terminating utility services.",
+      "text_sha256": "sha256:933c44a9bec46675e1d548b358377852b65101433d780b9ce9b2fdf90f4355e9",
+      "idempotency_key": "sha256:eaa6361beb31e0927565c741ec94d1877025e5edb69a8a6b7bd4b46d505872a3"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Now the procedure.",
+      "text_sha256": "sha256:27d0f1b024889b22fbc71907b736496decb198992d72d467f0a2c4a1e08ed1d8",
+      "idempotency_key": "sha256:42d2f6946268207aab212425bc4157e1fd63276f05db6434d9ed25e64b1ec47b"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The District Court set it out in four steps, and this is the clock the family on Alaska Street was living on.",
+      "text_sha256": "sha256:e1456b5399245c49e973c2174bb503c3f4815b1115cc1a4268c019825db15804",
+      "idempotency_key": "sha256:32d6a74c77d36fc467914c3073ca2584dc85b701d8e1abf291d57dea52571383"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Approximately four days after a meter reading date, a bill is mailed to the service location.",
+      "text_sha256": "sha256:38dac1feac60dd52d90cad3dc41665bbac92031f3cff638bb4d527a5a75ec22c",
+      "idempotency_key": "sha256:88adc75f17d089fbdd127734513a8d038ff6a21ca4b83e4d4cdea212b2c5da7a"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The last day to pay the net amount would be approximately 20 days after the meter reading date.",
+      "text_sha256": "sha256:012cfb3d4d34f4f9a98e81f76d124dbcdc15b19dbc3d8b7baaf44e206f118241",
+      "idempotency_key": "sha256:19804beba96eb45d010dcd1b3af5dd3c6d99a781a412bb5037aeef9e5ea6e559"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Approximately 24 days after the meters are read, a final notice is mailed stating that services will be disconnected within four days if no payment is received or other provision for payment is made.",
+      "text_sha256": "sha256:c7a14caa646565dc1eef2f8b89153fa44786233325caad02684f9f4efe73d110",
+      "idempotency_key": "sha256:864245780c6d3b57d1811ed9eafd4dfe235ad56e2b8b429d1099fa292edc4d33"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Electric service is then terminated by the meter reader, unless the customer assures him that payment is in the mail, shows a paid receipt, or explains that nonpayment was due to illness.",
+      "text_sha256": "sha256:628b342bffe1ef1a144ba5d3911ae2d9741ce9decf27ef599163748fc2cf0c3c",
+      "idempotency_key": "sha256:201c6ed3101bbe211b47a91438ff0bfdae3e2264a4b8981b040ceb0f9a14104d"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "If there is no communication prior to termination, the meter reader or serviceman is instructed to leave a cutoff notice giving information about restoration of service.",
+      "text_sha256": "sha256:4d1b7b455d25fa4f905bffa055f952e23eb51411e1276f54b3ea6f038a9a30e1",
+      "idempotency_key": "sha256:84c7987e996a7cda5f3d182bfc7fecf4a03e548975c5d27c5e4ab33b10d96601"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Approximately five days after the electric service cutoff, the remaining services are terminated if the customer has not paid the bill or made other arrangements for payment.",
+      "text_sha256": "sha256:ff66b0203c3f7d045320e7d673dd355d53ff512a9cf348ee723f050db776ceab",
+      "idempotency_key": "sha256:676ac52b404c0a522016627701786a2bf1b58f67c2ef4ec92fdfed19955eb9ca"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Three things the meter reader is instructed to accept.",
+      "text_sha256": "sha256:b00d7d32a8098e7cbc61b3a6b5f848993e99d75d32f72167d3e992c8db530647",
+      "idempotency_key": "sha256:7b0db4181e303053ff4f411dde23b7dbb5c3f5e022e8be54e964d48630ca5887"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Payment in the mail, a paid receipt, illness in the house — any of the three and the electricity stays on.",
+      "text_sha256": "sha256:c2ca492d659b807e59996608a6298497582432c7f35a6426b6623ef3f986bfff",
+      "idempotency_key": "sha256:05cb1ca2ae5842f8ecb4e139240a919124f740ad2a549103a8402535a59b70de"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It happens on a doorstep, at the last possible minute.",
+      "text_sha256": "sha256:745a61c9f5dbb6ff0c25b8bb61cf2c4cb6502b1ad0a3d222de078863e1de44a7",
+      "idempotency_key": "sha256:a8f700edb016f7825204eaf0a0d6d9dd6c67fc782452911c7b4482f0cc11451b"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Petitioners provide for at least a 30-day period between the mailing of the bill and the actual termination of service.",
+      "text_sha256": "sha256:e9dfdea529857b7bcc2759d38a9583831481fcea56f9f84b640f0d495f42a132",
+      "idempotency_key": "sha256:cbca611a26f65aa5e54310d1aedbda500589b0748beadae19c425a791c479467"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Thirty days of warnings, and one man at the end of them.",
+      "text_sha256": "sha256:80f3be55e79152eeacd6252f9fff50ef2e2c72cd0fb53d70e961c94055092b3e",
+      "idempotency_key": "sha256:20e7235f5aee40b8f11023b86931a816ad64b75328754455ec260a0f53f49bb7"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Justice Stevens, dissenting, described the same operation with numbers the majority never uses.",
+      "text_sha256": "sha256:d79869cbf69a0b4a218e2ef83456ec7b8eb1c2b1eb8825cc21b3a540a223ab57",
+      "idempotency_key": "sha256:31b9cf62a84c354404a3d9fa3522ce0d96d49c77ac1b153b1481b4e74f317218"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Each month the Division terminates the service of about 2,000 customers.",
+      "text_sha256": "sha256:c3f4480355aad6e69eb7a5720808ac5802d04f637ade1e575c1948befd79da02",
+      "idempotency_key": "sha256:efbb6f8c034e5e57172ab548274cd774697fd661dcd490d9b009f99dc6591723"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "During the six months from September 1973 through February 1974, there were 11,216 so-called delinquent cutoffs.",
+      "text_sha256": "sha256:63d352e85e0798a8153b05998dd31fb3ef7d3563245588d84541d5725b71ae01",
+      "idempotency_key": "sha256:004568cca9db1282c934571b31679a819f1ff8498686d083156ac060008c78f2"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Then the notice, as the dissent describes it.",
+      "text_sha256": "sha256:8561269dca751c9900a5dd35dab1fc378a69e237a018a59004e61fbe7ee0aa11",
+      "idempotency_key": "sha256:4a5c5989ecbe754afb8de424e57f7050e1f96e4d3f1a2dd689e66f1c77eef92d"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The notices contain a prominent legend.",
+      "text_sha256": "sha256:88c17a52bd07258985828448cee85117f1f6f4956e568a591a065b667187e9f5",
+      "idempotency_key": "sha256:34b3c14595fb7235f07f725ac376cd664750267496651ed9ac1a083e06a06481"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Phone 523-0711, information center.",
+      "text_sha256": "sha256:252bd13be23423ef31573c1984640d17fad071cc70cca8234053529bf2bef80c",
+      "idempotency_key": "sha256:57a13aeec6fb7ee7ba0c118313d511ffd28d980a3ee23a6b1e3efa5427e3974c"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Calls to the listed phone number are answered by 30 or 40 Division employees, all of whom are empowered to delay cutoffs for three days based on representations made by customers over the phone.",
+      "text_sha256": "sha256:64faba6668b6563ab319c1cfc011bc2b4d0da5508bd7a5d3fe7358a49ea392e2",
+      "idempotency_key": "sha256:38010f7fd1fa38662001089b35c640fa5c030ef53f749a9dc4d8da5836d44892"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "These employees also direct callers to credit counselors who are authorized to resolve disputes on a more permanent basis and who can set up extended payment plans for customers in financial difficulty.",
+      "text_sha256": "sha256:00d4feb3e72f7e560dfa411b8731aa24b2df46ad3574deb452b45f3e4d19591d",
+      "idempotency_key": "sha256:02181e2627f5d5be7edabc257337dd848d7d3c8189193158705334456be29de2"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Thirty or forty people.",
+      "text_sha256": "sha256:a23d75a97f406d3648b9a49cccb011072f684f51a6c19ed2bd4b701930c03f5b",
+      "idempotency_key": "sha256:c18a8dc46b064603edb8dcb9c597f81871517d793f7d57e3029f6233b20d7374"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Every one of them able to stop the meter reader for three days, over the telephone.",
+      "text_sha256": "sha256:1fef8c353073eece914732b82982d2bb4dfcaea53f13fbef258c6cc6323d6ce3",
+      "idempotency_key": "sha256:cadb6a99b0cb8e4220f6e6fc7409ba023778a58df3799f1e7a1033b2e1356aa0"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And the number was printed on the notice.",
+      "text_sha256": "sha256:50a9def45c13d91b2721b29343493671eb6028ad53717c3864c61eff397bec30",
+      "idempotency_key": "sha256:125e45f0c51563d7cf7a7e551561d6222d095498f8509a674d9083fa3e0ad2b8"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Behind the paper there was a real procedure.",
+      "text_sha256": "sha256:fcc346cd8e2d3196e0896c9e189fe3b8e9f5eb706c10d003113c56fbbadcf041",
+      "idempotency_key": "sha256:8ba343043fd9956a48594c6e604f19c2cc53bda938479d6574b5854b01d2f823"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Credit counselors came first.",
+      "text_sha256": "sha256:85ba206aded6d56d10e253bef8a3389f932f8a1246ca73004e8a01d30b78a5ab",
+      "idempotency_key": "sha256:753dde7db17c41dd9890a7595590cd53c99f8ecbd133eb374d80e64dd4e49a74"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "If those counselors cannot satisfy the customer, then the customer is referred to management personnel; generally the chief clerk in the department; then the supervisor in credit and collection.",
+      "text_sha256": "sha256:e4b63c5b337297b82e8b8cdd32a25181c1b9483f1d238c115c232f9b8f77819d",
+      "idempotency_key": "sha256:14a8fb41761cf65006c73bd1145d7c71067b1aef5344362a964cfc6d89982f1d"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Above them sat the Board of Commissioners.",
+      "text_sha256": "sha256:aa8d44c747003a98d9d3fa71d8c43fe18f8c25daabe9c46249850cf9ad2431fd",
+      "idempotency_key": "sha256:aa4dab119bf4efeea8eb1a059a5df173e70d0f88b397d3c35affba65fc0a3bfb"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A customer may, if he so desires, be accompanied by an appropriate representative.",
+      "text_sha256": "sha256:304f096999a4a2f20a26da5228ca007d08f99b7224a01df9e6dd9839cd8ef8d3",
+      "idempotency_key": "sha256:01e49a96988c8f9256eaa7b6ffb9421d38e55241ca9d71c42f57329047861c57"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Counselor, chief clerk, supervisor, commissioners.",
+      "text_sha256": "sha256:e7891337cb383915beeccb96e7bd5126311f9c0d6085fb3781d0a0c8a471c23d",
+      "idempotency_key": "sha256:7521af257ed674e833cea1875b6f06485d07c492f554b0c2a562bb9228704ab6"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Four rungs, and the right to bring somebody with you.",
+      "text_sha256": "sha256:3850ccf3907f67926b956282ef7785b93fc0a825e6ad405a4d913cafc172be04",
+      "idempotency_key": "sha256:9f7fdb94d45ccf37463025d859d38707064c569be4fc36bb75de9bfab7452a4a"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In March 1973 the utility began an extended payment plan, which the trial judge called a generous program.",
+      "text_sha256": "sha256:1c63224d3143ca047f3532cfd426fe89f4e309f9a48ed1f8fe88e797cb6849c2",
+      "idempotency_key": "sha256:481f98c5ef858d65c4d575e2d8afacb8c2b4fbe1b5f4d7637a7fcf38cc752b81"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Customers able to demonstrate financial hardship could pay only one-half of a past due bill, with the balance in equal installments over the next three bills.",
+      "text_sha256": "sha256:aa4084a296d83e16f14dd33d9720cc99782f0e98a1a08470ee08913adec69888",
+      "idempotency_key": "sha256:fb3407d76aac82bc60c645e8a6d8ac38943870a4b9a93c8f40b0627081c61062"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The plaintiffs in this action were participants in the plan.",
+      "text_sha256": "sha256:198bcb97f49fddf9928f04ad556ca466fc558a96dfa134f844fa6c238638ea74",
+      "idempotency_key": "sha256:1ee2fff58ee35ce607e4459252ec72b93bceb8666696227eb19024bd2b28609d"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Whatever else this case is, it is not a case about a utility that offered nothing.",
+      "text_sha256": "sha256:c7d372be8fbc7304e7e8feb4f32101a08d07758c9e75297add4daa52527ff92b",
+      "idempotency_key": "sha256:114eca66c9ddcc8a90059b2baee79fa4c3097518b4e1958835c9a17bdea10c7c"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And this is what the notice itself said.",
+      "text_sha256": "sha256:671efa62bac95a048378a0a75286ffd432d268a9203faf5fcc048dac8c3c34a3",
+      "idempotency_key": "sha256:fa5fd3298c3ebc7a5305567c5ea1b73424eef5de0ebff72f8782f618a06eadc0"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The final notice contained in MLG&W's bills simply stated that payment was overdue and that service would be discontinued if payment was not made by a certain date.",
+      "text_sha256": "sha256:56c68c438a232dfa21f625a6e1218ab02557682d0d29dbecc1987622790537ed",
+      "idempotency_key": "sha256:00dfb09208582b2c1bc1b6fadcd0c004101edff3674904e96287805b966f4dd5"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court of Appeals put it more bluntly.",
+      "text_sha256": "sha256:2b60650df75e4191aa7883a77f467b2b8badb61db6ea5ca157a4d5a418231759",
+      "idempotency_key": "sha256:a7855511de0107c5be4e674bcc0f0f93dc065323d01c028940cb52519075ac56"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The MLG&W notice only warned the customer to pay or face termination.",
+      "text_sha256": "sha256:00147dd2c465ff4fe75c68a7aae6f1c9217feb0e5ae7a78eeef0b25729c58086",
+      "idempotency_key": "sha256:1f904560db713ef9cbeb465330492610fee18d959891cb3c39e69b991efdd4af"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Pay or face termination.",
+      "text_sha256": "sha256:94cca9d304e948e2f656840e4113839274de5d25d6300c356968ecb3f4311661",
+      "idempotency_key": "sha256:c139cef8d4acac7bdafddbca85aef293a7fc0c5d27f2ac70b3008d2f7f17d7e3"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the entire content.",
+      "text_sha256": "sha256:84f5ab34588119cfc789913bbbc0bafbc510873301bc13e1b805c314aba2f952",
+      "idempotency_key": "sha256:06b411a9b06394d7f9caf819cae84556de447af1526837bdc4a944c567f6bc0c"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There were flyers too, folded in with the final notice, and there were two different ones.",
+      "text_sha256": "sha256:9d5e7015bbf4857f18786580e1052f7456dd07aa11344b3447a2b32b7f02d54e",
+      "idempotency_key": "sha256:d42bec3c1143f48b28108fe6925c0e4d6aa09ea699f633161fc531645c68e36b"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "About 40 percent of the utility's customers, those living in areas serviced by credit counseling stations, got the first.",
+      "text_sha256": "sha256:a825f5a8e59294271f23d36196bd39762b979894d3af62458378b4f529dc1132",
+      "idempotency_key": "sha256:03786f8d981c278dcff14edc5bf68c7f97ef95b5ba9d5d807aadd283f69752d9"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "If you are having difficulty paying your utility bill, bring your bill to our neighborhood credit counselors for assistance.",
+      "text_sha256": "sha256:4996815a81ebe7829a798888a462c2b81323b6f560d55729a2247b48f2aa1625",
+      "idempotency_key": "sha256:b2edf8ab2d36cdb560cdff64e7fd4a4d655a79952f97089c9f4115a9f3ca8194"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Of that flyer the Court wrote one sentence.",
+      "text_sha256": "sha256:d80f2f78cd80b4b2c1d1d6a5fb012c57a8f3673f5a7e45bcdc78a0428366cb11",
+      "idempotency_key": "sha256:339ce8fc8c3e4d303623b9aa938e52d0243dba975605852c91cbaa50dad73dd1"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "No mention was made of a procedure for the disposition of a disputed claim.",
+      "text_sha256": "sha256:26494a135e6ceda44e49cf835f6f9163321850487835476ad37c784346aa1dc1",
+      "idempotency_key": "sha256:fea9e71516ce5157d83d550a9aa2cd9fb9f7c6b9ce542ad3097bacdd5c2d6bbc"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Difficulty paying is a different problem from being billed twice.",
+      "text_sha256": "sha256:486a4fa09b6fa6e16739e590123e3c3e0608912b5e205963e54cb20aa740cc84",
+      "idempotency_key": "sha256:470b3fec4be25b03347aabf5eacefdd5986eb93d180f16d8cb7251815155e70d"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The second flyer, sent to the remaining areas, did the other thing.",
+      "text_sha256": "sha256:fc9fe897e61dc0b27618b155cf5e69f83a0ba87428b88f78984e0c8c464142a6",
+      "idempotency_key": "sha256:05ce77f0bd1175002329c9df3aac8d701da45705e0e751e4708d07deb19a80b6"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "If there is any dispute concerning the amount due, bring your bill to the office, or phone.",
+      "text_sha256": "sha256:1d700bcd96c5be30e5e14b396a3743fc32d2b3c1c82a7e697e95c9fee7b7014d",
+      "idempotency_key": "sha256:379d2c8126770980fcfcef539f815b327cfcc280bba9d4346cf15e5c15611fee"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "If there is any dispute concerning the amount due.",
+      "text_sha256": "sha256:2943ea7d901cecaa776ab64257ab11269c7fc492f4d5f390e1f8a13dbb529746",
+      "idempotency_key": "sha256:cf2edc14435c83e46ca7c79755fc8e349e9c4d9a8b7425a4633a1981f8076dc3"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the sentence the first flyer did not contain.",
+      "text_sha256": "sha256:fc8085962e0431c9fdee089a4e624cdc13f0758b8f075d7cf452265752bbd702",
+      "idempotency_key": "sha256:bf5fc220c0cc30c54c84e2406a5f789cc4379cf073517394b7ed3597e787437d"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court of Appeals noted that there is no assurance that the Crafts were mailed the just mentioned flyer.",
+      "text_sha256": "sha256:98178ae3c98a0a7e0b6aeb20f4175e83c8adde2c99b53c1c7a801bdf1c8619ce",
+      "idempotency_key": "sha256:e0fd09fa73bf9608b49b909617a6e80f6f33d34d05e20c3666633d704635d198"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Two flyers.",
+      "text_sha256": "sha256:7994ac5262f8138f40588bb6f16623ecdeb8745ba9e925fcf0347392e43da7cb",
+      "idempotency_key": "sha256:523c5e5064fa436cbbf6c86da0a06bdea31a94038b058ad435f495d335944c11"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Which of them reached Alaska Street the record does not establish.",
+      "text_sha256": "sha256:f7eb84aa58082022b282d3caaadd9783fa42bb98a4d275862a16f942f7f10d97",
+      "idempotency_key": "sha256:45b3143f35ab402ed1eb8cc0f3bfad4b5e79d72f8e9d75d02da56311c558fb1e"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "William T. Mullen, secretary-treasurer of MLG&W, testified that the utility processed thirty-three thousand high bill complaints in 1973.",
+      "text_sha256": "sha256:4681b363b5acb1b49bae732b9585fd8cd40a49d07db46192b386e6dc485d03ff",
+      "idempotency_key": "sha256:e39dc308a45c0175e1014a0fe3c98c41f6b6287b3cdff945ac9dd0c89d5e9648"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He conceded, however, that no description of a dispute resolution process was ever distributed to the utility's customers, and there is no indication in the record that a written account of such a procedure was accessible to customers who had complaints about their bills.",
+      "text_sha256": "sha256:c7ef44cbce098735269547f17c16bf191942c8609fc02e3f85b6875af0d8fc4b",
+      "idempotency_key": "sha256:2726d10d1978665ded25bae1885e4f3e844b9173cb11d37e6673805587be7f4c"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The ladder existed.",
+      "text_sha256": "sha256:d5edeaa9d4ae84005b0a44c7f97c08b70beb34ee57aa08613d22ad8505f960d9",
+      "idempotency_key": "sha256:1c70841cd1c38b6a1010495000ac59357807fd18d686f07032f11bbb5e6b4140"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It was never written down anywhere a customer could find it.",
+      "text_sha256": "sha256:da7f5bc4204764bec43e2dd9d2ea29b6540538e8361fd9a2e2f0a3c7a943807a",
+      "idempotency_key": "sha256:cfa3448a513588c1a09ae5ae84c20321344e2491d0ae0787d1de674c7999b8c7"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court finished the thought in the same footnote.",
+      "text_sha256": "sha256:7fc253d0d61e46c3241d90f00acce88913865a564cbac5fcb2c8baa588211f97",
+      "idempotency_key": "sha256:1e2968ba87c6312b3edf8f44af300892dec506daf9a111b64634da3d1db64f9b"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Mrs. Craft's case reveals that the opportunity to invoke that procedure, if it existed at all, depended on the vagaries of word of mouth referral.",
+      "text_sha256": "sha256:65d0bc2a4b4c6f3e7636629bef6054529680d56cc19601bd4cddd048b58709db",
+      "idempotency_key": "sha256:14ef564438fc50669485c45dc652adbb481174a9a2a7b33fba67c253efa738dc"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "If it existed at all.",
+      "text_sha256": "sha256:156c911f43c623c63103c06d7f4725664a46503bed7b8c275f1e26d66b00e56a",
+      "idempotency_key": "sha256:76716cafcc118f302d4f83f9a3807ba7d8c75dab29bc2d2938a3236a99b25c44"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Depending on the vagaries.",
+      "text_sha256": "sha256:909d909dc8050dcc1b4b6eaad6e8c6bd621a75908199926c27f0a4977d38302f",
+      "idempotency_key": "sha256:07167c57adfb1d01e08b0e631c481140727d4d500371be3b783d41c54f1e52ea"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Tennessee law did require rules regarding the adjustment of all complaints and the adjustment of bills to be posted or otherwise available for convenient inspection by customers — but only for an independent utility district, as opposed to a utility division of a municipality.",
+      "text_sha256": "sha256:205b2d844ba8eead33b57f34a32424a74bacd5031e2fbadf5e826d762a065332",
+      "idempotency_key": "sha256:364c9d1d43198915c56f964b37a2c454632ed26ed6519aaea01bad1729c6275a"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The city-owned utility was the one exempt.",
+      "text_sha256": "sha256:0ba2d6c94ec0e254073556ed1ac22bfc05e9ad5c82e016bb07253a4658ab6d93",
+      "idempotency_key": "sha256:71dd681de824feff3ba80e636657344b10ac6e5e71e7cd274b995f9962b12b11"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "After trial, the District Court refused to certify the plaintiffs' class and rendered judgment for the defendants.",
+      "text_sha256": "sha256:6b25899062b716d7a1aa1f161a9380d4c7a06ec94aa2627570d85be7b4dc408d",
+      "idempotency_key": "sha256:e97ad5a698d33ae82b31dd14640d09bdcdf31969f130ffd81db2ef65a0dc5af4"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Crafts lost.",
+      "text_sha256": "sha256:37f7f864ab16c0636d39bfbd68e80ed49f9f1f36741e6520236c16a59ede50b0",
+      "idempotency_key": "sha256:a703929a87f8eb1ba8b7087ad8a86331683c9c144871803004a9ea4bb7786edf"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The way they lost is in the trial court's own findings.",
+      "text_sha256": "sha256:6cb76ad1a672150d9106800a9bb997f660616b6b3dcc109f1197e3a795af4fc9",
+      "idempotency_key": "sha256:79f4198896521c16460a3dc7cd4e21342b90f6224b2830090e96ea8cac073984"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The trial court acknowledged that respondents had not been given adequate notice of a procedure for discussing the disputed bills with management.",
+      "text_sha256": "sha256:21de7f1c883194c0302ef822b70fc22f16bcf62b06678a0fe7999a6c016ae317",
+      "idempotency_key": "sha256:507eae3559917a511782b634ef06c2023018cec9e20e4c37e21c2a527ccd1172"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It found that.",
+      "text_sha256": "sha256:8d6ff0816f2d1e61efc6049a90f74cd8eb23fd6bcf28359e5478d050a3637a24",
+      "idempotency_key": "sha256:872530b2eb7bda7b08582290c6e0d15dafb086a43a6294a2d0a5561aeebe1beb"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then it concluded that none of the individual plaintiffs was deprived of a due process opportunity to be heard, nor did the circumstances indicate any substantial deprivation except in the possible instance of Mr. and Mrs. Craft.",
+      "text_sha256": "sha256:ed56284ba0b9e482af48bfa2e5ef6fa7df8889a3aaaf740bf208f3d6656c2927",
+      "idempotency_key": "sha256:cd3a66ac13bb82cb0e1d4a409d2d5cf480538eb6acc23302081247783f60ffbc"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Nobody was substantially deprived — except, possibly, the Crafts.",
+      "text_sha256": "sha256:21383ac7577b330f3f38112246dc184ebf5b02a9b744d8c0b3c819fa26b87981",
+      "idempotency_key": "sha256:e6016b8e3838656f58acc7961edea0b59f0571b6b0ebc18011ec6eb324c2b98b"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The judge then expressed a hope.",
+      "text_sha256": "sha256:2f3004cce3ba9e6b1b121d7eb7a826512e8ea3a8a487a9348c3cf8b98339cdc6",
+      "idempotency_key": "sha256:7d9e44e15bc82c680ec0a12db54c7a5ae673a5cf59999183dc1b53304ed7bac4"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "His word, in quotation marks, in the opinion.",
+      "text_sha256": "sha256:512eee24a240127dba9f82120e6980d13eadfc8bd2d882508fdf38e116d2fc86",
+      "idempotency_key": "sha256:687e445514c81cb0007bf5cb51d4f6ec56a91c87fad211724a2acb2893014395"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "He hoped that credit in the amount of thirty-five dollars be issued to reimburse the Crafts for duplicate and unnecessary charges made and expenses incurred by them with respect to terminations which should have been unnecessary had effectual relief been afforded them as requested.",
+      "text_sha256": "sha256:17a2f6238f52e789830b7f62d8716ab88564e778658a5446e07ec28fc21f1f44",
+      "idempotency_key": "sha256:d82fbaa6538e4491bd7b90ebe244560497f1450c08a024bedea331e39712328a"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Terminations which should have been unnecessary.",
+      "text_sha256": "sha256:e0d927825bb7340ef72ecceeb02e44e4a38175944d8f752a8519324159e3a70c",
+      "idempotency_key": "sha256:96c75d1fff942072b8e2e8fc57b74d4577b31bf1bd3d20f8fc4ba3897bb49554"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is the trial judge, ruling for the utility.",
+      "text_sha256": "sha256:1651b74644386aab917393ce230d601e65a034d522fa13f01b1feddda3435bc5",
+      "idempotency_key": "sha256:a031d9a75ec9fe5df9ccba9f4b2053825a12880b2f5ded81ea653fd10e12665a"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "He recommended two changes.",
+      "text_sha256": "sha256:3d8297947cba4fd17ddd8ea4e2f22d1c1ea06186b71862a735f9a7594930c596",
+      "idempotency_key": "sha256:e4308038996a4b33696376e5df70c2248f0563626898178a928100bd4cb23a19"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That MLG&W in the future send a certified or registered mail notice of termination at least four days prior to termination.",
+      "text_sha256": "sha256:86200ddcf3cc04a905cb235c0bc5ad83e379f800a7f2ef7e3b7076c784a1c59b",
+      "idempotency_key": "sha256:60336e2ce5db44d54c312fed1819cd8ccfeb17c1357d16fab5e05dfa3ca599c4"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And that such notice provide more specific information about customer service locations and personnel available to work out extended payment plans or adjustments of accounts.",
+      "text_sha256": "sha256:38d3bdf030ee7dc560e9e1442b31d6117ae428d5caa89e67a85a13b0376cc9e2",
+      "idempotency_key": "sha256:a376949ce60f468d274c74a35d9d7bc9c64c0c28ce6178ebe288b92c74ac3b80"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Recommended.",
+      "text_sha256": "sha256:51261a2a79af018554cdeecefc1fd9f939400a25c4fda514c3453a2086d77340",
+      "idempotency_key": "sha256:9453c8618c90df0d14860ec8ac0bce8a5e6a2af5f7472d21b6748f455bbf7230"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not ordered.",
+      "text_sha256": "sha256:0f2951779078efa07211f34564d5a1f6a1b6bd6d79cdbebf97934f63a5063e72",
+      "idempotency_key": "sha256:79f18ebb8da06a22cec5e9f7a6282f038010b51e8bfbf8053a43c94142ca44df"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The utility did it anyway.",
+      "text_sha256": "sha256:624613960f416cc2a86a6eaf251fa3323857447b1839ec6b694097286ae268b6",
+      "idempotency_key": "sha256:60e0bacbb170ca36b84e15fc9a3c958eef89d6181495de52dffce0ddfed13dfd"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In its order filed on the thirtieth of December, 1974, the court acknowledged that defendants had issued the recommended credit and instituted some new procedures which will give more definitive and adequate notice to customers of possible or impending cut-off of services.",
+      "text_sha256": "sha256:fa001c3a8da882105c578e800e19193d577731645a0c680683baf53810c7ccab",
+      "idempotency_key": "sha256:b46f4247171c575949d36d9bdd314f465defe1a2ff100553a2d0c19ee707b1f9"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So before this case reached Washington, the thirty-five dollars had been paid and some new procedures were in place.",
+      "text_sha256": "sha256:6d7d35c551299452cdcdb3146eca62cd09306249401169516b12fbd401e87d40",
+      "idempotency_key": "sha256:5e58c7b731db17e07227c7acf6dc39406fcceaa47f12679acfa2ee30d6bbcb70"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Now the money, and this is the second place the record refuses to settle.",
+      "text_sha256": "sha256:b26330f2a8b76f973c9ee3d61888f09d34f8bae4d1ca92c283bf65e038867717",
+      "idempotency_key": "sha256:ecc29810254e60bb423403daf85f9db58e9196f46a709464511b1ca14477b220"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That credit was never a finding that anybody had been billed too much.",
+      "text_sha256": "sha256:fda59330b781f30d26d3595a290d456a03addbd6dd575ef2140dadedf3b97688",
+      "idempotency_key": "sha256:bf49d6b1ab9d5522eb5c16e6dc0a25316b0d8052109acc16a00a6f19dffd676c"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The trial court's own words were that of the balance claimed by MLG&W in March, 1974, some involved possible gas overcharges and double or duplicate billings with respect to city service fees.",
+      "text_sha256": "sha256:69131b885f719729fbdf74917799db60d72163a442b24f056f02889b4b3e38d4",
+      "idempotency_key": "sha256:b6489e92ab5c33e9905ca7b828e641e4a45a6aca4fd4e3b06455463dadd97507"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Possible.",
+      "text_sha256": "sha256:09c20d1da8c102cab9f8299e3a4432afa7483274631348edafc96a402f48690a",
+      "idempotency_key": "sha256:ff3c3a41037dbc635296d10a3c1724c8280aaa300dc196627f136cb318deef8e"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Justice Stevens, dissenting, went at the same thirty-five dollars from the other side.",
+      "text_sha256": "sha256:e001539e755b0e609023384ca558cb691425a22e83e7e257ae2e2ca7f4d1abf7",
+      "idempotency_key": "sha256:bc975ec0ea5c5436cbac8cb666d3364e7b576d7ff94193c1b6d248513d3576af"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The trial judge evidently accepted the Division's claim that it was engaged in split billing rather than double billing.",
+      "text_sha256": "sha256:203a6cfe3ae01a0fe46787b6b54b58b2833d35b154d1cea2fb1de62cf90dc5a9",
+      "idempotency_key": "sha256:5ab0374ad0fb6742cc5c025f865a14f45fc037bd6b163aed8d3003cb80c57101"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "But the amounts challenged by the Crafts as the result of double billing were considerably larger than thirty-five dollars.",
+      "text_sha256": "sha256:1d5c7ff40dba384523e6521860ff1bdf1809959a545c14cbb83c9a207f59c2c9",
+      "idempotency_key": "sha256:9e8bfe1584be87bc4de246e50da9dbbd7bc7ee0029692182c607ba0a9d5626cf"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The reference to duplicate charges apparently concerns the two dollars and fifty cents per month city service fee which was charged on each set of meters in the duplex until after they were consolidated.",
+      "text_sha256": "sha256:481ddcee06df79d96e313f3f371ce249226cd93912fa7c84d7497c552fecb68e",
+      "idempotency_key": "sha256:db39b169ca50d567e3911b7edf9b11be170236f6cb9635e365d5a0196168e3b8"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Two dollars and fifty cents a month.",
+      "text_sha256": "sha256:b94212cc57dba7771d4718aec76234c75da442e7e5bff852c1d5c36f8dadb016",
+      "idempotency_key": "sha256:33b9d40c5a2298c4615c2a8f31504e15b618252d690d3a662122560177d0f3b5"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The only recurring figure in the case, and it comes from the dissent.",
+      "text_sha256": "sha256:cf758006d8d2d6bd11ce7b69a2c58e0fabf0002b3709f5d47b0b14e989ba8cf2",
+      "idempotency_key": "sha256:30c207bfa409fefae58f56fae2223f1f73ab05b3f1dd98a617fefe14541ab247"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Nobody ever decided whether the Crafts owed the money.",
+      "text_sha256": "sha256:87b64b1319043bb94c91305c5e01f27de8a98c1769d40fc40f621694c3f3d226",
+      "idempotency_key": "sha256:8d9357f19f4c317013b596d4adb3dad730d9e8312f94ffbcf2157c570ecac690"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not the trial court.",
+      "text_sha256": "sha256:5f13b136bd541fa51d9edc3aa5e22d9e73ceaba620c416c8816783748816622b",
+      "idempotency_key": "sha256:b58e84d64c1d1f0c34b418f1edfd7a4e1e15b25c7151cd52d40ab8a696c4fcd6"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not the court of appeals.",
+      "text_sha256": "sha256:216724a8eed7efc90489e3f8dd3ca3591059ea094d29eccda847d2292909a520",
+      "idempotency_key": "sha256:bcb706520da9f89255d9ed540bdb5fd2e23ad8a8cf501faf4b36910c765fea68"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not the Supreme Court.",
+      "text_sha256": "sha256:27b964fb94f8abb6656b4ae619aad273e52e728cb3d7628f75a3b81c3b521449",
+      "idempotency_key": "sha256:0e1c47c1b77abf1f1cce38675831a2a650b692efcf531ab5891602bbe8c4ac0e"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Court said so in terms.",
+      "text_sha256": "sha256:afcc6d1964d3a5cd7d6038e80da196180967366b701542f46e687e539e3f8d1d",
+      "idempotency_key": "sha256:edfa57df4b8d6bfdf96a62904a633b83cee7b9c9b73d0363507b00daa426fc66"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The validity of the damages claim is a matter for initial determination by the courts below.",
+      "text_sha256": "sha256:b752a00b5675b3e5a066ef5492fd1df4f655f85ca4dcd83b8b6b85b490b2c568",
+      "idempotency_key": "sha256:39c6e04488c3a55c702407aa432cd9690dee0717ba7a1fbd48195d44039a6ea3"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "On appeal, the Court of Appeals for the Sixth Circuit affirmed the District Court's refusal to certify a class action, but held that the procedures accorded to the Crafts did not comport with due process.",
+      "text_sha256": "sha256:a4a08967d35d8828f4cab206b4ff0572795fcab4fad39b265f18407cc1529007",
+      "idempotency_key": "sha256:04a38a42cb64a6cb8141f454abe6fc6e3dbfe7a183314f2d6d955c402e3b0eab"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The class stayed dead.",
+      "text_sha256": "sha256:3474c7a668ea0f3b17bb892b5560770b3cb1ec145736fc8ce2dc1b82f2000da5",
+      "idempotency_key": "sha256:2394dcf6dd99b2ddd94285ee0a832e1ee53e9be6c4828def821393b968da4dfc"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Everything after it is a judgment about two people at one address.",
+      "text_sha256": "sha256:24685bb0c52dd8cb103acaf19350385a18bd56d8922d728efe54563d5ac2ac0e",
+      "idempotency_key": "sha256:dbc49f3d0b109a10312d777e2dcc9ea849921807451141a9f1b33791547aa723"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Sixth Circuit's ruling had two limbs.",
+      "text_sha256": "sha256:18026f8fbbe297255f2e7c02fbed8ea05d9a6c174798d4f34d515fd526a8c145",
+      "idempotency_key": "sha256:5334ebb4827d1c3cd042246f767cc9b9b89674530a9f8e6e3dcbfef94d41d55e"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "First, notice informing the customer not only of the possibility of termination but also of a procedure for challenging a disputed bill.",
+      "text_sha256": "sha256:c200a69aadd28a2f061d2d2d13c8f55256e8d2a9ddace277355c38532920473d",
+      "idempotency_key": "sha256:3e99b709bea29014e3fba9fd5f258176372cc41317c7b977d1d0eb994dec76cd"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Second, an established procedure for resolution of disputes, or some specified avenue of relief for customers who dispute the existence of the liability.",
+      "text_sha256": "sha256:9465f75cbd4bc656554bc6d70a6fe663465c7ab47b38104a1ba04cf5eb74b3ef",
+      "idempotency_key": "sha256:dfaceb3955e76fc56a98dc6706701bcae3220ff992f386a0ad8bebd2db05d429"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Certiorari was granted on the twenty-second of February, 1977.",
+      "text_sha256": "sha256:12a2a67a68f4944d066a01920786d81ccb6f1273490749dc5e5a6fa99cad9039",
+      "idempotency_key": "sha256:26b836265f497dfe47d0069103683629965bea0cf8997b5fb10d902c8e3b7b94"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And then, before any of it could be decided, the case nearly evaporated.",
+      "text_sha256": "sha256:4d3c179f757110924b8fbcd89050ba57eb27353fb5af18cf096bdcd9cecf09fe",
+      "idempotency_key": "sha256:992b40170895233ef06f04ab3d5fe428f701f0dc5f02e8a9b57849cc90438a33"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Court records only this.",
+      "text_sha256": "sha256:feef680605dc8e51adad59a38c28854d3282fda44a75b3c88ba4914c041802b4",
+      "idempotency_key": "sha256:409f5ce15fd3ddf63508e63af85a13e77159be6022c39b59b44af738cf6bed18"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Respondents no longer desire a hearing to resolve a continuing dispute over their bills, as the double-meter problem has been clarified during this litigation.",
+      "text_sha256": "sha256:fcd52c35e95e42064afd7a1a25ac1748238918a98ef1ff9dd029e5e717cd6255",
+      "idempotency_key": "sha256:16a5d10b880a2e6ba735b1836cf8e122433107778557d45eb149727089d1ec94"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Nor do respondents aver that there is a present threat of termination of service.",
+      "text_sha256": "sha256:b26970c47e63add3f8ba4def9754c2cb36c67e1f854e7118c91e247ca7d8808b",
+      "idempotency_key": "sha256:2c887b18416b14e0f4874188839e5be952338966483b034c48b67cd0e33e5104"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Court put it plainly.",
+      "text_sha256": "sha256:e93ffdf8d56446f9ae0c266e09a1567834b285ffbd64c097264317eae02488a0",
+      "idempotency_key": "sha256:83fefa40d47b8d098d63505826c913405303a7df915c020c169ecdc53e4d2434"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Respondents' claim for actual and punitive damages arising from MLG&W's terminations of service saves this cause from the bar of mootness.",
+      "text_sha256": "sha256:7b99107b1065583bee90e816ea224a82f607aab853d22a51d2e2564e75fb0590",
+      "idempotency_key": "sha256:ac8db40d7da27d850760a12aebe49b61fdbf13d9895533f2863012d9125564d5"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The first question is whether a city utility customer holds anything the Constitution recognises as property.",
+      "text_sha256": "sha256:0bd1411cda4c769ed5f46d2636c366bd4f518c4c80071ea3e9b7c37cce73f1da",
+      "idempotency_key": "sha256:bf1f9c9f4c7903a239077425d60dfa2fbcec9f83bb45bd48ef77a32c1a30c7e4"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "State law creates the interest.",
+      "text_sha256": "sha256:b06886e5adee3e26103ec4ac9d141404225fee265909e671ff7388939ec18f3e",
+      "idempotency_key": "sha256:65a14110639ed1ed1a8bb0cc6aea43db12902226e3903aa8fcc84f1e03355d87"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Federal constitutional law decides whether it rises to a legitimate claim of entitlement.",
+      "text_sha256": "sha256:f7963f65d87e93023e2b871108acde7f94eb1bc6f555009e2ad3fc868853f48f",
+      "idempotency_key": "sha256:8fb9cff48a8f740f73db8cc36d646a185f9da5c6249e0c17eac4e213a55e32fe"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So the answer was in Tennessee, and the Court went and got it.",
+      "text_sha256": "sha256:dcd0cab9df6440bbf30d8668544fd74fbd662b7b1d2094d0ed1ff9450f043557",
+      "idempotency_key": "sha256:dd1eaa818e2438279c9d83525a85a7e45874071af94faad272e87bed0c8b5e9f"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A company supplying electricity to the public has a right to cut off service to a customer for nonpayment of a just service bill and the company may adopt a rule to that effect.",
+      "text_sha256": "sha256:364b06a8473e86e23f77b78ce2e62ce6b0519ef7678102a254be0110f23f4d59",
+      "idempotency_key": "sha256:4b86ddb8b2c4a5f2aea3d6161faad2a226206115d33d9582174f6a7bd7f2f63d"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "An exception to the general rule exists when the customer has a bona fide dispute concerning the correctness of the bill.",
+      "text_sha256": "sha256:ba0c12ff41e47fe817ec3758f512cc2b32bee68f7b90b11e76e8d724e0deefa0",
+      "idempotency_key": "sha256:9d4ed5537336079cf7d3abed9448cfac332bc7fb8721cc4c131a61fda2d02437"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The same decision put the risk of error on the utility.",
+      "text_sha256": "sha256:2ea61d8e223022cb814cefe8634e7914dcbf41712f9e7bad4b8e5ff9d0b394bd",
+      "idempotency_key": "sha256:2b22dd157d252ffc3b97048fed17e606edd6665f1560e1520fbe3ef04e4d2197"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "If the public utility discontinues service for nonpayment of a disputed amount it does so at its peril and if the public utility was wrong, for example if the customer was overcharged, it is liable for damages.",
+      "text_sha256": "sha256:f741f95e356132c2989ff510f151260317f76cd65eaaeb995d6915146fa474c8",
+      "idempotency_key": "sha256:00e9a4be1c11b46f404b68c9af46e6a682b30c3cb915bd67c9705971b941493d"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It refused to let a rulebook override that.",
+      "text_sha256": "sha256:c22a6670145d0d5c6d528b433214de42bf45f413b05e933d8d9f81281996a732",
+      "idempotency_key": "sha256:a7667a43fac04e29ab438d659847985ce743a15a5de319c798bc63c0b9bc0c90"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A public utility should not be able to coerce a customer to pay a disputed claim.",
+      "text_sha256": "sha256:2d5704f288a908397554bb6ab74cbfeeb9c7050b2dc9e324193d56b4c93410a6",
+      "idempotency_key": "sha256:8fea913e6ebf8fb080e122a3af0e8910dd6cf99f0e4c708fe35d5d19c4db9360"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "State law does not permit a public utility to terminate service at will.",
+      "text_sha256": "sha256:f325d71bad921c60bda9065f21c66c9858ec70ee6d09ae569b3b2ffffe367683",
+      "idempotency_key": "sha256:4e554cef1d06d3f8d6097a5705d1ee9bf71162ed3093bdb70c234cb3b488a496"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A Tennessee utility is obliged to serve all of the inhabitants of the city of its location alike, without discrimination, and without denial, except for good and sufficient cause.",
+      "text_sha256": "sha256:a2941c9be40a77a5cd89fbffd97c294145c465d38e8d01bf1a40caeb5025caf3",
+      "idempotency_key": "sha256:b71cf14cda4708c0c3da1087615daa293645b43d605804a01a2d26451ac5e71e"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Not at will.",
+      "text_sha256": "sha256:af2949f87cd3f3fbd1bedc8797e6c8709b7fb59fede89c968f5dbfcd36d860c1",
+      "idempotency_key": "sha256:7b2220ebd5dcad1ac448bd77b5070e73686d356cae62597a783e38c4d313574e"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Only for cause.",
+      "text_sha256": "sha256:1af72b581c4f4f4b513d5844e688e1e802179f2bf739af605459dc9879663eec",
+      "idempotency_key": "sha256:97e7c6405bbf2722ad24620c39801d2923e17b2f2c3baa67c3e340afe47eaef8"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Because petitioners may terminate service only for cause, respondents assert a legitimate claim of entitlement within the protection of the Due Process Clause.",
+      "text_sha256": "sha256:cbaa92339e07fb8b3990f9d14b8631bac8aafec372d7f0934ff715a4bb3bda97",
+      "idempotency_key": "sha256:d529a5b474041eda4dd84ceb1c206279e7db680cd1362fa7fd9b03baa30d677d"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The customer's right to continued service is conditioned upon payment of the charges properly due.",
+      "text_sha256": "sha256:cac0bc702f25a36c991f3c0c26bab3b6c306dc73d25c6013e8e4d08d574746a8",
+      "idempotency_key": "sha256:092df387fd57ecd06a6115faa1821009d7a5fa5c349c11dfd5769232b1a556b0"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "But the Fourteenth Amendment's protection of property has never been interpreted to safeguard only the rights of undisputed ownership.",
+      "text_sha256": "sha256:b0a6fb8faf2d3ec3ddb0e83f78dbf58799e89769f306cfebf59ea878dcca7a3b",
+      "idempotency_key": "sha256:d3206a5be334e68f6c3d50d58e7186b3be1affa803ed46d88eef6162f9d94400"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That gets the Crafts through the door.",
+      "text_sha256": "sha256:1db6a1503cca1508003835d64a70e6e1fe2131e792966059a8ccee90b4c2fac6",
+      "idempotency_key": "sha256:bbb029f9fb752afd8bafa3a26a0ce651f8a63cfade42bcb99d6468b4ff29155a"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Notice first.",
+      "text_sha256": "sha256:68a44f32996d8e19dbe2bdc89ba1a2f020edc0d1b2084e863e4c9cee9088031e",
+      "idempotency_key": "sha256:64ed120b9add7ef0b9d08a28b1630242f1c60ddde3015c01371046d7f70b8db2"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The standard comes from a 1950 dispute about telling the beneficiaries of a trust fund.",
+      "text_sha256": "sha256:770ca201c56fbef28f571f443f11006f566d12643e0a93f5034c1e5d1553fd99",
+      "idempotency_key": "sha256:4b49199395cea0deab798aadf379371faff8e0c954ee9f27946dda24557c66b4"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "An elementary and fundamental requirement of due process in any proceeding which is to be accorded finality is notice reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action and afford them an opportunity to present their objections.",
+      "text_sha256": "sha256:f9686379688045008632549a7c9ae622212cdc8796d22bc2fb81ee124ebde0ad",
+      "idempotency_key": "sha256:fc63e6d2c70a7f7912b5d34bffb2a00076740938f70536d08c6226c428efe3d8"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Two halves.",
+      "text_sha256": "sha256:1c95f6b35fe1910ba70b58f71da2b7a8c52d416256db906bdb194f4ab101634f",
+      "idempotency_key": "sha256:dc4d10e7f30149d30e4daf08223b90fcdcb1b059467353fc754ee1c6c739b1e5"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Tell them the thing is happening.",
+      "text_sha256": "sha256:5483d96c583d324f0ef14e90c98cd9eedff26f931143ae1bf263cfec028bc491",
+      "idempotency_key": "sha256:fd458f1fcb77be255cb50a6131610ba0dcd54e712780809bb000bcceeb2810f4"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And tell them they can object to it.",
+      "text_sha256": "sha256:ecb7edd1dae98f458071a05d8ef7357bad0ed65cebf66a464d0f1539be5c4742",
+      "idempotency_key": "sha256:459187bf5839230f100f54f9361a9e0802451d1eafd442215d3eff5b03274964"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Memphis notice did the first and not the second.",
+      "text_sha256": "sha256:2359fa3d9f2d3e2d41574ae2030ccc7c0063aaf6853c0009cff09d481591bac5",
+      "idempotency_key": "sha256:316cb41efce3fb547a3174d48b0182bf305ac409453ef1eefe934b34c21538e5"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Petitioners' notification procedure, while adequate to apprise the Crafts of the threat of termination of service, was not reasonably calculated to inform them of the availability of an opportunity to present their objections to their bills.",
+      "text_sha256": "sha256:69d668bfea21f75969a52f021abe5f923df5adc97fd6d13347e3ffcbcfc89440",
+      "idempotency_key": "sha256:97aa209ec934cc1497ae7d9a8c3a4092c568cc483491e1cc8f054c34cc92652f"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then the holding.",
+      "text_sha256": "sha256:a50773f733d19e158a5143278f28587b922343fd02aeca592afbf0bbbfe72c58",
+      "idempotency_key": "sha256:48a0cb9510067bd9d97608421c8f884a842f28913ba609c57ce9c8f984b81af0"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Notice in a case of this kind does not comport with constitutional requirements when it does not advise the customer of the availability of a procedure for protesting a proposed termination of utility service as unjustified.",
+      "text_sha256": "sha256:6d63c264bf75231988ce3d7c016ff6715351efff8642337fa92a11f931332b1d",
+      "idempotency_key": "sha256:35f3a430f5357ee6f74144080f97b0fab5cb306da9c859744b6bef24fc02840c"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "As no such notice was given respondents, despite good faith efforts on their part, they were deprived of the notice which was their due.",
+      "text_sha256": "sha256:d05437d01715718aa3a0168affcdf7ff64f018c877802307a1ebdee5a901db5c",
+      "idempotency_key": "sha256:54580cbede807a0058ecd3800545a3493087556f3422b3de77dad02b97b3165b"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the Court said what a sufficient notice would contain.",
+      "text_sha256": "sha256:c6ee4122b17318b673a6e497e075008455e3732b61b7959199d978d6ff9637a1",
+      "idempotency_key": "sha256:ddcf86585b01eb0886b61d07c9cce725d78b9b1cd2614abd1160bb4826fbe0ad"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In essence, recipients of a cutoff notice should be told where, during which hours of the day, and before whom disputed bills appropriately may be considered.",
+      "text_sha256": "sha256:8c92fd5d86b64b04bce05422b1480f1d3530f21b4616ddd7eaf52eb99b509c8e",
+      "idempotency_key": "sha256:a629c5b7316f5812d58467a97a3e00824789c5c64bfd07f80ec3fe615885bd92"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Where.",
+      "text_sha256": "sha256:afebf35a51cc8b242cfbc8f4fc86f9abed93ed2372a4b89730de74140580ac01",
+      "idempotency_key": "sha256:1e3199a53d12926d01bd9d97c9b1145534223cf4d1ead2091b3e87a6a0349e5d"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "What hours.",
+      "text_sha256": "sha256:3ea4a6f27b32c32f7d1b51bc501ecb19fac563cfdd1b2a052e61fd35cedba3d8",
+      "idempotency_key": "sha256:08e4586c93ced344da7d12c0aba2fd7dd0e7ffa36e31e2a0a6b2afc2344df35f"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Before whom.",
+      "text_sha256": "sha256:74bb00d4a4779be52c1e92a6cd4506a79fd0d8fd1b7018dc8efb2183c8e937cb",
+      "idempotency_key": "sha256:f20f6f68a6fb039bc23d0e62e98d45c068ee3eb0008d794d3fdbfa0f4218ccf8"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Three items on paper the utility was already mailing.",
+      "text_sha256": "sha256:d1dd3a32e3df5cb5a7f68d48f70d934e07098cad2885757b876d78723b65f0a6",
+      "idempotency_key": "sha256:15417c2c0e6e2615812ef5a507cd58a0271c251fbfee6437de01caff2d631220"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Second, the hearing.",
+      "text_sha256": "sha256:2de36e308ff592c07944ebc3829ea62c912c42fcafcda7ec685060ad966363cd",
+      "idempotency_key": "sha256:a26995c13a95dbe132e8c06677225883cda9409a37d5fd84b3a51eb01c113bf4"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "This Court consistently has held that some kind of hearing is required at some time before a person is finally deprived of his property interests.",
+      "text_sha256": "sha256:b1885539e3f5452a1a7908d28ac6a8601b6caad207eab154a8c64e98b10bea45",
+      "idempotency_key": "sha256:c989ccb4cf1a49601266fffe00b1949792a915e2183e8efa6c33c2129c5dc66f"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Some kind.",
+      "text_sha256": "sha256:4bdfc9fd8acde5385396493365d631cefca65f7df791e88d0a8e6f75e11b8f5a",
+      "idempotency_key": "sha256:5f62359d27c59725725088c8d349d6a11e044b812ea56d4fa1bf59daf4f12f5e"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "At some time.",
+      "text_sha256": "sha256:74ef6ea757c2d50d6e90bbbb9408c5fc658116136cfbb716aafb265551f31394",
+      "idempotency_key": "sha256:9df16f4dd856564f1c2d55b4411ad9423d78bfbd0d890d63203b765bdd8fdf60"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "We agree with the Court of Appeals that due process requires the provision of an opportunity for the presentation to a designated employee of a customer's complaint that he is being overcharged or charged for services not rendered.",
+      "text_sha256": "sha256:5081cca74be92020195a532d7655858888e2854b536eb76441bf7d1c8cafffbb",
+      "idempotency_key": "sha256:7b33d0d5dd82ff6bf146c90c2cf294825da3aa26d8544283149c5bfa5f4b5307"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A designated employee.",
+      "text_sha256": "sha256:63d52b731db4c693fd2588ea2241864cb5eba6bdf623273df935987c812e9828",
+      "idempotency_key": "sha256:3c2dad7db4e665eac46acf6e82e14fc7a682059c3a79c37448a1a2f0d19e7bba"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Not a judge, not a hearing officer, not a lawyer.",
+      "text_sha256": "sha256:37e17976817ddbe4df936c3e99f3ea92c766e9e498c1c01f4490417ee3270f5f",
+      "idempotency_key": "sha256:04a1be19894310a9649f8c25e7a4062c0e4e86b537a788db8deec06322f679e8"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Court said in a footnote who it meant.",
+      "text_sha256": "sha256:f28fcacc12c656bacbd09264d39cb2178e49169b312e36919d464f5ee1a6a45c",
+      "idempotency_key": "sha256:eb4628d438efcb1d007a2720393d9b41c43b70912aee4ff8e7e9a8024549c1a2"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Designated personnel who were duly authorized to review disputed bills with complaining customers and to correct any errors.",
+      "text_sha256": "sha256:c3f1035d752880613d1a936bff613ea78fd7f5fab47a9003fba5085a3320a2b5",
+      "idempotency_key": "sha256:1d129b0611061a036c8902b7a543d1fde37275bd7bc14fde202110940b88c3ea"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Whether or not such a procedure may be available to other MLG&W customers, both courts below found that it was not made available to Mrs. Craft.",
+      "text_sha256": "sha256:f2c52c6f47a005506aa983fce7c8e1bb31e2ac196726782afaa88e1a37960aa3",
+      "idempotency_key": "sha256:badd7527b3564a68c30df6251445a44fff3fef3a04a819bd5a1f8ecc93d325ef"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That was a concurrent finding of fact by two courts, and the utility had not made the showing required to overturn one.",
+      "text_sha256": "sha256:b1ee9be313a317ed5c12c56673d4ed7d037113226d0a392d272c820fc6fcd953",
+      "idempotency_key": "sha256:5943e2c60181d206a51378d8e432aff6495c4bc8aefb62a82d845642701a004f"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then the balance, borrowed from a case about disability benefits.",
+      "text_sha256": "sha256:2a4251f910fbbb5bcd00ac978da01cffcc9f09844b2cf9a1f64062e5aaf595c0",
+      "idempotency_key": "sha256:81f08de807c195485cfb5b70d1036685593e51d40703917b273c30300687a53f"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The private interest affected.",
+      "text_sha256": "sha256:5a675c8d5071efbdfd35c20777d40b9510811da778ea213867a7aea0401a08dc",
+      "idempotency_key": "sha256:7d48ae7f5341fe27b1d5b973f856509a08acdf3709508dab72eacaa88de00938"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The risk of an erroneous deprivation, and the value of any additional safeguard.",
+      "text_sha256": "sha256:9980fbf80a974f267381e25d57f5ffb172700c788e6543d0d26fafb3159e411d",
+      "idempotency_key": "sha256:bd2728919a7f1bd3a6ac8237dbcbde7eb12eba9c49cb6158ffb02543a723d02b"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The government's own burden.",
+      "text_sha256": "sha256:83f195a41ec473d35c75e09cb4da030d2ad9a4bbbcaa75bfc473255661b21db3",
+      "idempotency_key": "sha256:7fb1990263892ab426e60fc3366f7d41d46725d97491566a1e04a56f0f4f4d66"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On the private interest, one sentence.",
+      "text_sha256": "sha256:69bf5652678fcc499a36fbd6d2a5fc1836bbca0ee9059795a62f640e90144693",
+      "idempotency_key": "sha256:48c68536375e8b93ef07f06c3bfcc177ade2b9597aac65d373577dd8cd9af437"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Utility service is a necessity of modern life; indeed, the discontinuance of water or heating for even short periods of time may threaten health and safety.",
+      "text_sha256": "sha256:4ca42a318510dac4512c5f93821e77f7a05018fd28276e80425690030eca5084",
+      "idempotency_key": "sha256:1a2a43219f67694a5c7329992eadc4c2dc724a03f2c42e7f952c546ada99a528"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On the risk: the risk of an erroneous deprivation, given the necessary reliance on computers, is not insubstantial.",
+      "text_sha256": "sha256:c5ec56394cc49635ae99e387ab8228f1f2d1ead836d72cf14be51d5a01e1a429",
+      "idempotency_key": "sha256:526e0fbbdb6dec32e0364181077390fa5bd5b379721c1b181d753e50d96f509a"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On the cost: nor should some kind of hearing prove burdensome.",
+      "text_sha256": "sha256:0c415b58d155245654c23d8feb12e8962325264a28196f4b1389af315d68a31d",
+      "idempotency_key": "sha256:51d1c76a11a3f4b17d551d26875aaa58ab1f484399c987e10d4ac048bdeeb92a"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The opportunity for a meeting with a responsible employee empowered to resolve the dispute could be afforded well in advance of the scheduled date of termination.",
+      "text_sha256": "sha256:e849a0d6640c069d1985e5a13d67d1c399b8936e5567f24fb0b3a80b2750ed57",
+      "idempotency_key": "sha256:8077a3e4d49fd8438a9a2330d5eabb3ed77f58a03ce193045fbad47ca32ab753"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The utility had one argument left.",
+      "text_sha256": "sha256:784e70803cdd0d7c0867d0c5cf5f03e8effc16a5f53848aa66946f0a8e5a3370",
+      "idempotency_key": "sha256:3fde1263461c633a16cbaf5b6d471afee66ae663dd71aea535c5fff3f6a7a89a"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Petitioners contend that the available common-law remedies of a pretermination injunction, a post-termination suit for damages, and post-payment action for a refund are sufficient to cure any perceived inadequacy in MLG&W's procedures.",
+      "text_sha256": "sha256:92c77e63c7cc540028da16c2a6b3409817063bb9b06f4ebe8f62276c6a548181",
+      "idempotency_key": "sha256:e3914337a0041d0fdd91b49cc3a7dea971575a0e261f20c39d54aa1d5a76a351"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Court noted it had been advanced only obliquely below, and answered in three moves.",
+      "text_sha256": "sha256:708c0b31d9ac7c541552d06344dec0237e5405029f95b85c8dec60e5e736a606",
+      "idempotency_key": "sha256:48281e23ac88ea7c5639d4cdcf5b90ab5299065d5883e9cce7526268d56a6483"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "First.",
+      "text_sha256": "sha256:6ccbae3c549451073bfcd5d56254fc65cba81b7c44192ef9fb4e68b91872d342",
+      "idempotency_key": "sha256:86f2c8c21b58f924a85425244a9c89291fe3cd30f364de2e93fbb9c76525c3bb"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Although utility service may be restored ultimately, the cessation of essential services for any appreciable time works a uniquely final deprivation.",
+      "text_sha256": "sha256:f005eb6d81a45f79c1c0355e75f8a7728048a4bf00033bfab32d262f628f7fa0",
+      "idempotency_key": "sha256:2792eac32f50905f1fa80b2bd577917f9236d80a9b5db057d734c508d8463052"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Second.",
+      "text_sha256": "sha256:1e8bbbab2a0b0e51cce5a6867182b081c60b35e2512744847021b624729a8218",
+      "idempotency_key": "sha256:7263c597607292c91e3646ebcf554fccc80aacf851c5a456491bc0af71a96ac6"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Moreover, the probability of error in utility cutoff decisions is not so insubstantial as to warrant dispensing with all process prior to termination.",
+      "text_sha256": "sha256:8c45a5cd3907673856dd82a0438018ce5401e22b7c8cc73d8b5ce02b59626131",
+      "idempotency_key": "sha256:5982f80467300080192bca80208ef19c7947dc8da9c925aebecd59f1fc3542cf"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Third.",
+      "text_sha256": "sha256:560c6aac8e55899e661512b8cdc6ff34dd56e16bd26da1aa476a08c0dab187ff",
+      "idempotency_key": "sha256:585c863e79e4396c6a3308bffc2c934e8f0683f8598f29a690dc4c9f107972d0"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Equitable remedies are particularly unsuited to the resolution of factual disputes typically involving sums of money too small to justify engaging counsel or bringing a lawsuit.",
+      "text_sha256": "sha256:0e4229412f9f087e32c936c6cbf4de4b5679a51e836df62e0be1d2bc4746b59a",
+      "idempotency_key": "sha256:27db932ac95ca483a2c716a4fc3486fb14bb0c9dfe43f5093a30ce083ad522e1"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Too small to justify a lawyer.",
+      "text_sha256": "sha256:7a91e60a16c7e357d17bd95c3d2237e1ac4caecc2627ed48c8c3785ee8d1e51a",
+      "idempotency_key": "sha256:223d330ffa2204a0a3d9aa3102009e74c94ed9e0ddf10d3716ff81ab6d500840"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And to the suggestion that a customer can simply pay and claim it back later, the Court answered in a footnote that this ignores the predicament confronting many individuals who lack the means to pay additional, unanticipated utility expenses.",
+      "text_sha256": "sha256:6d6778a326bd59bbf2b10285ba4c4a4dccd063bfadc7b88fee5c6857145f6007",
+      "idempotency_key": "sha256:609836c8c3b28073318ac2be9ce80131998a7f652b8b9823d811fb9d2bc14388"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Even under MLG&W's admirable credit procedures, the customer must make immediate payment of one-half of a disputed past due bill.",
+      "text_sha256": "sha256:4bdf110c162301063068daf0a48419379bdcbf688f46763d1c67cc11f24d4dd1",
+      "idempotency_key": "sha256:d76fb754158385b13b0d6583f7bcb8a756c96d924efb8b517531d6c14b45204c"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So, the holding.",
+      "text_sha256": "sha256:1d52495ddc4a86e6a01b21c8a4e272b62cf3362065e2cfebbc69707c1cd18ed9",
+      "idempotency_key": "sha256:278032ee6a37866043bdad645ddf5439261b8f9049dee94560b32f45a33158f7"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Because of the failure to provide notice reasonably calculated to apprise respondents of the availability of an administrative procedure to consider their complaint of erroneous billing, and the failure to afford them an opportunity to present their complaint to a designated employee empowered to review disputed bills and rectify error, petitioners deprived respondents of an interest in property without due process of law.",
+      "text_sha256": "sha256:5c7fb00421d2e9fcd940509c231da34bd1853bd7c03d4b840f97d7f4d45557b6",
+      "idempotency_key": "sha256:402d6e59700eca78b86145bb84f6b18a385d352b491659315af2b8f3a8578632"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The judgment of the Court of Appeals is affirmed.",
+      "text_sha256": "sha256:d34ac6b0ef4e52be26cf28d9334b9754beb914fe124e51b77a0934f948818eea",
+      "idempotency_key": "sha256:12ec45fad68ccf714d6f6d2e2cb7bd0fc1395f82f1c75b2465bf872574dbfd03"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And then, inside the reasoning that got there, one more sentence.",
+      "text_sha256": "sha256:8388df5e076e5b1b19012dd4c9339f9c5985f50e5b9a0f694bf2f3c17ceaae70",
+      "idempotency_key": "sha256:c8e4813bd7e1a2b2fc983f89580a0597457ca70c78735dab6ffb58d3d2a22d2b"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And petitioners would retain the option to terminate service after affording this opportunity and concluding that the amount billed was justly due.",
+      "text_sha256": "sha256:b44939ea9d5700f2892e3ce25d98ba47cdafb0b544814edad77348c3516ed27a",
+      "idempotency_key": "sha256:d708c0649c77fbc7d38b94aecfe741983dca7e72bbdbb6a4d85aed222db0d4bb"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Retain the option to terminate.",
+      "text_sha256": "sha256:1729ebbf7505725b3817180b0b8b3573accb0dceb669f19c00c35f2544009c7f",
+      "idempotency_key": "sha256:3c8c5c599fb08766dcf8973ceeed5c240f85c036aa78b5996bc073644f20a7ac"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "After affording the opportunity.",
+      "text_sha256": "sha256:3d61ac7adf5ee47bcbe7e8b0f89f783e081fd1d3483e92d34ea9c8ec7d219f1c",
+      "idempotency_key": "sha256:6ff1877d5ea5f07ee120f7f664d6da579b6ae35ca87310539ad4b5fb18a85b23"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "After concluding the amount was justly due.",
+      "text_sha256": "sha256:0621b16fb73f7709f3cfa5f87f372dd7b6ec40e069cc36837ca36ca0ec76e503",
+      "idempotency_key": "sha256:eeb4f63307099f9ed521c708f869b4b672e1086861db7d795ecb743276acd0b5"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The meter reader stays.",
+      "text_sha256": "sha256:dc2e19d3411cc5b9f36718336d84ebb493c896a7d179b5758b2e903f2730bc06",
+      "idempotency_key": "sha256:3b062da7ebab7e7d7dba6eebb23e35be015bfb1be2d9a9733697e5ad6d00b8bd"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The four-day final notice stays.",
+      "text_sha256": "sha256:482a4b37cf0b422bb8517a649fd28cc55a894a51e4457a097a3e1d3149cc4b09",
+      "idempotency_key": "sha256:e35817133d3e4c3a9a56742f0ca9793c2ac6755cd869a6e2a63dfdb6424453f4"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The thirty-day clock stays.",
+      "text_sha256": "sha256:4ec0f5f3d4a9b0f445e52bda9ea36e87fefe5c59cf65bb5be416946eb5f45f76",
+      "idempotency_key": "sha256:8c1534ad0566e0882b4f44802b768c5e03011454021912a1c315d9192063e22a"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What is added is three items on the page, and a designated employee obliged to hear the answer before the clock runs out.",
+      "text_sha256": "sha256:6645779a0f4a366c57b975701114130935e5b3194ac0565a2f69113dc8b5af69",
+      "idempotency_key": "sha256:a2147b44071182af1d9d4b6183ff0ca604a12bab874772e865764b42d15e4f11"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the list of things the Court did not decide.",
+      "text_sha256": "sha256:8b48251629ae607443fdfbef984eeafb9414361f524bef97df65561419d8bb0f",
+      "idempotency_key": "sha256:90796ca707fb5e960a5bd13de6169872c412f4e9c0b656b22ea6698a26258d54"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It ordered nobody's service restored.",
+      "text_sha256": "sha256:adf60f46c4414cbccdf32c51b4ab9cf34657768541740833124e81362892b2c1",
+      "idempotency_key": "sha256:36eed69ac5eb069b0acd6e43721cb5441f027d877cf5ded205109f4c33a39667"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It enjoined nothing.",
+      "text_sha256": "sha256:378eaa7f8e24b41c3738b3a18b6b58e3be4f2d4694399bd2ca0659a290266b72",
+      "idempotency_key": "sha256:9cf5722139e7784795d250fc6713718834b6fb6aa934f9a1e591f885f9c3aabd"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It awarded no money.",
+      "text_sha256": "sha256:e7dbdf67082a78caa3b02adbcd13f56d3929fff951f0195adb75439a7d68393d",
+      "idempotency_key": "sha256:1d6fba55169a2509b3c8f03882aa9cee89a8a60fca7d3efb0b5629446dd0075c"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The damages claim went back down undecided.",
+      "text_sha256": "sha256:1761f685c12b44a44cf4b761a43f175ce434d068665e25f765a37a967b7d66ca",
+      "idempotency_key": "sha256:495063576599a769dd30b3994e6d8863c2b8e91aa94abf3a71009ec99b1795b1"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It did not revive the class.",
+      "text_sha256": "sha256:d8611c22865de41d07bdf1fe3d0eb5499d9584a810482da4240e6773199de513",
+      "idempotency_key": "sha256:cb3eb3a4a3e501f8b6e1cd9e8ac86b62b78313899ba3ab5f6369888e990ec64a"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Crafts had asked for more than they got.",
+      "text_sha256": "sha256:eb6d1e781988b71476f0dac8a50161bdd35f64eccecbc6a4f49a99eeacc40833",
+      "idempotency_key": "sha256:6d8a19a1b476458eda9a97fcd552787c9b7d7b86164289981ccff5ff2702d3b1"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "An impartial decision maker.",
+      "text_sha256": "sha256:7b3f380190b7868e4af8354a845d49aa780fda3282d2f92c7d542e18f327465c",
+      "idempotency_key": "sha256:340d1cf5c46920dc79e888630677675b3bb0a611d01e26134998bda01ed67163"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The opportunity to present information and rebut the records presented.",
+      "text_sha256": "sha256:5bacf13886e468adfc49de6395cb64e84d56ab412ab17f05080aa33521ed9256",
+      "idempotency_key": "sha256:ade124fe7d57fc29158e13ddf1cb0a465685b8dfbaef258e5d3b4d92278f2b18"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A written decision.",
+      "text_sha256": "sha256:1dc7dad535c295ef0a40d07cbead0462835e50dfd3cc202dc2532741976fdd9c",
+      "idempotency_key": "sha256:54f669781f79bf7778a94c7db88efa79a0c3b00eecd6c1fa74159dfdf96d4722"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "As respondents have not cross-petitioned, the Court wrote, we do not decide whether, or under what circumstances, any of these additional procedures may be appropriate.",
+      "text_sha256": "sha256:01d1305fe7e97f7d72c343a8d7d8c2efe9f3212cd920bb129df6bb8ee3a9765f",
+      "idempotency_key": "sha256:84f1b12b536b9def4dc870fbb5f21de2ba62ca78752ebc079f4cb6ece1b271ac"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the shape of the meeting the Court was equally reluctant.",
+      "text_sha256": "sha256:81bf4101ce7f458fdcb2e75bc6c7cac42b4153de8c6e0d1bb9a329c2a9473154",
+      "idempotency_key": "sha256:ae53a1e386892aeeb8008f0a72807262b6f08b2fca198a8e1c661d9a321efe22"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The public utility enjoys a broad discretion in the scheduling and structuring of this hearing, provided that the customer is afforded adequate time for effective presentation of his complaint prior to termination.",
+      "text_sha256": "sha256:b9f766387f1344903ceedb2830705b1cd5b79d0c285499a8c0e10633e0f8d184",
+      "idempotency_key": "sha256:4b64c2850967231047e5279fae5ae3cf77020975f36d1fa315ae7dedcc6c6c2b"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Broad discretion.",
+      "text_sha256": "sha256:19daab82bbfe316aa3c2524901cf53823af1cbb5d95625e3028e8c61f9a4bc28",
+      "idempotency_key": "sha256:bfe732c3b129c6d4881564f5c9531109103edccc0c79125afbaa2c2245fcae5b"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The resolution of a disputed bill normally presents a limited factual issue susceptible of informal resolution.",
+      "text_sha256": "sha256:4bb58b3d039b22416e729d558aa2c3953583f169a1d909627ca570743fcec1e3",
+      "idempotency_key": "sha256:1e69b35fff3a791f70126acaaf3340f5c22c6211df87e5ec5eca40c9d4a30de8"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The utility had already rewritten its notice.",
+      "text_sha256": "sha256:fc169acca49b654721c6e8888f30a41d6efc92aff6052f26a05f648e6ef0b53c",
+      "idempotency_key": "sha256:ec9e294cc97f55a9caba01d2ed7c532c7fb8e4a9b0a1efd9a182b7b1486926ff"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Petitioners have moved to clarify and regularize their notice procedure, and it is possible that the revised notice presently afforded may be entirely adequate.",
+      "text_sha256": "sha256:7e59d6a604e20e8f61082f74caf2b0bfd1ad76757c0c7a4833801376e62029c1",
+      "idempotency_key": "sha256:da36a6ea9db7d872e88fee6582b55287f7709bc497755986a70b8c7f49810a65"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Possible.",
+      "text_sha256": "sha256:09c20d1da8c102cab9f8299e3a4432afa7483274631348edafc96a402f48690a",
+      "idempotency_key": "sha256:1ea5dc2ad02160cff2326460d8de889c693be38b4b6643d9b3834aef904aff1b"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not held.",
+      "text_sha256": "sha256:7bf5c42b0f55aa0f54a326aaa1aa2938035e6dc7dc7918706977394582863248",
+      "idempotency_key": "sha256:5ac1fcfade6c6c3a5ac33ed52c556f056e086d84c0a41b5252315c7b483b2f16"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Now the dissent in full.",
+      "text_sha256": "sha256:d11b5677490980f6f40c0ccbc6f4593e1ecc6d582cc7e462bfe6ebad9e27f351",
+      "idempotency_key": "sha256:266199f39aa3d44f09fce9d604fa52a9f1dd16631b80bf24e7bc6552c1853152"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Justice Stevens, with the Chief Justice and Justice Rehnquist, dissenting.",
+      "text_sha256": "sha256:b1d59aa3c006016f27ee18e31831dfc9c96a0a1216c88f95318b6c7c5eda1c0b",
+      "idempotency_key": "sha256:31c7e36c7a3b838e9e94018ee59af588fa22dc89e50f54e25b95c0d3b5871eff"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In my judgment, the Court's holding confuses and trivializes the principle that the State may not deprive any person of life, liberty, or property without due process of law.",
+      "text_sha256": "sha256:af678f060954d8049c37c1b59316dcf2ba67a59cc03dace6d9173b3ceffa9ef2",
+      "idempotency_key": "sha256:0ea0e0f1df899145b52da681695630241d832f909757192bd93fa859389cf759"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "He gave up the property point at once.",
+      "text_sha256": "sha256:4e6209b82a4af1273014f1d69aa6e132f44412d652d173240f21434dca54260b",
+      "idempotency_key": "sha256:5edd35648cf4bc4309fa9e83d14bfc0a93af3d19cec211120282b67db318f618"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "I have no quarrel with the Court's conclusion that as a matter of Tennessee law a customer has a legitimate claim of entitlement to continued utility services as long as the undisputed portions of his utility bills are paid.",
+      "text_sha256": "sha256:4f3e1c5b62571545b69cb3d5a0ffd5a5ca06b5e0c2ea3eee23f1677a2e412b8f",
+      "idempotency_key": "sha256:e93cf99930cacb3e59e481a1237f5b38f34968c00d147102fdd085e275cd927d"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "His fight was about the record.",
+      "text_sha256": "sha256:f159d566561dc772c72d4d1478b63becd03ae5e93d4dd2e50bab3e1d89a703f6",
+      "idempotency_key": "sha256:5d2b9be57eb0e21fc8827cccd69970f19255ee3a8876d487be8bc74fbc67e6db"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The number on the notice, and the thirty or forty people who answered it, are in the dissent's opening pages.",
+      "text_sha256": "sha256:851464899305221112d1fca8d7e337aee4fa9ee5adab79f7cecf7bd4a5482281",
+      "idempotency_key": "sha256:b6536e921f60f9211966f9c7bfb15dc1196887fe532252d399a7f481bcbd9b71"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And his account of the dispute itself reverses the majority's.",
+      "text_sha256": "sha256:3ac370fcfcf96e83ed9d822399a9f2d687c4b21d46e808af91aaaed4c8cae622",
+      "idempotency_key": "sha256:64a9e6577736a46ad866d97e669faee88c4513d37e7fdc75aef482e72f0d8a0c"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Crafts, believing they were being billed twice for the same utilities, did not pay on the second account.",
+      "text_sha256": "sha256:cd238849982702bbf03a3c6e7403e512b79bb4e114f9c80109364f6e5e528969",
+      "idempotency_key": "sha256:25f67d3f72e748e27b4ee44128ef40cb2040c6a0ec1e7b3715ad71cd0e74712e"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In fact, the two accounts were independent; because the Crafts refused to pay the balance on the second account, the Division terminated their service on several occasions.",
+      "text_sha256": "sha256:35a73a7eab11413328b022faebfabd8b64a536f5911652b2097edec0b8ee5f0c",
+      "idempotency_key": "sha256:ec38115753c5d8dbbbf6c5ea310f7d8fff4d62717996f8adab874e528564aaff"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The District Court expressly found that the Division sent a final notice before each termination.",
+      "text_sha256": "sha256:d80f90ecd3232bda4509d156365e982e4d0efa77e63c9975f113cbcc0fa37379",
+      "idempotency_key": "sha256:fa592cecff087bba688ef5e7a76487153eb7c2b21c3356c0ac66ca503ed10c0c"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Five times, said the majority.",
+      "text_sha256": "sha256:05e581447dbaad692e44803b84cc475bc2bbb0adf37463d5dbb2b16d8cd36653",
+      "idempotency_key": "sha256:d812f4ebda18d8a9661dae735c581a9fb95e7ddda34f6d1b2f84af1cc5ba4a9f"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Several occasions, said the dissent.",
+      "text_sha256": "sha256:1b9b13ca8cc38257a937c1cf57ee05446fb2e8d667e3e26f16704f6db79a76d4",
+      "idempotency_key": "sha256:e982925a3e2243a2233c79e205bb3930358dfcccac88d7f3817e4a4c4cb84349"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Mary Craft telephoned after a final notice and said she had paid a bill, and the trial judge wrote that she was given no satisfaction.",
+      "text_sha256": "sha256:d3c88bd63aae8a79f9932158ff69bbb74bc23ab942d08dbfc2bd6ef1870e36b7",
+      "idempotency_key": "sha256:f8aaee5f2be68fe78a02ac3df23ca9d3f28de4075b76cd90c7650a3f5da3ea2b"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The dissent read the identical record and found something else in it.",
+      "text_sha256": "sha256:04ff9b5c394cacca1bddd223266a31555806724b5893231edd18462b2c7762bd",
+      "idempotency_key": "sha256:2c01ecd7f0a17e30a7954107bef9a8a359b99dbf288973e53a3890692be7013c"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "She was successful in working out a deferred-payment arrangement but apparently was unable to have the amount of the bills reduced.",
+      "text_sha256": "sha256:7c26df76a84903fcc60519b47937f834aa538e928d0682b3cf1f19ff12587a7b",
+      "idempotency_key": "sha256:7424f924ae31f9508f589a5083ed7ece37475526a3f31636922f2036b20564ec"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The record therefore indicates that Mrs. Craft did meet with Division employees having adequate authority but simply failed to persuade any of them that there was any error in her bills.",
+      "text_sha256": "sha256:85cbef49c6e10e39091c7f66121d9fd29d869e1357d899addc41d2956cb36a68",
+      "idempotency_key": "sha256:f5bcb1045210499d071132477650f02a1d9f45c062edd2582c6a96617fccc20a"
+    },
+    {
+      "chunk_id": "VC-0302",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Mrs. Craft testified on direct examination that after being cut off she went to the Division's office with the record of her payments on one account.",
+      "text_sha256": "sha256:7fbf08b9c62eac02392e510f4145a993dda5e307f39b3bde19cb94d00ab98a3e",
+      "idempotency_key": "sha256:730805b193c749e914f6bb9339a94d07d6f23817c03f3dd0a80ba45e8430b608"
+    },
+    {
+      "chunk_id": "VC-0303",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "She was told that she had to pay on the other account as well.",
+      "text_sha256": "sha256:890ea657b46ed500addbd62661a64966c23775302601f105e90499647d7db23e",
+      "idempotency_key": "sha256:5636c40ccdea00367c7f7add63acf3c9f7c94663b0f1d7ecaf99f88bd9f5370a"
+    },
+    {
+      "chunk_id": "VC-0304",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In other words, an official of the Division did resolve the Crafts' dispute, correctly as it turned out.",
+      "text_sha256": "sha256:624160df19b370d7362ea7001824cde786ad3c0ce9f49234304707edcb484199",
+      "idempotency_key": "sha256:58c81a50d3bc965f16363ab1a393e04c12d6ea4ecaf69c0303f7724d2069394f"
+    },
+    {
+      "chunk_id": "VC-0305",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Same sentence.",
+      "text_sha256": "sha256:675df46d4918c9b50db8e63154c42d333599159a8032511ba03339cc7ece7f37",
+      "idempotency_key": "sha256:cb6e1dfc46c2ad22644bb77701098b9e1669a8d716af53664e25c2b70c5ddef7"
+    },
+    {
+      "chunk_id": "VC-0306",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Same office.",
+      "text_sha256": "sha256:3de1b4ed810301b0cf402c37f70b4d95d71c0b9f90c33329998e9da9d661d39c",
+      "idempotency_key": "sha256:c1f8e7d1d4d608a78a5e990b05b6eb8396c10e8dc17dcb1d05fc0c1aeceb01e2"
+    },
+    {
+      "chunk_id": "VC-0307",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "One reading calls it a brush-off.",
+      "text_sha256": "sha256:2370601c44846c8337a3547c0736b617368f117d6397c3d6869d869d2e33afd4",
+      "idempotency_key": "sha256:2d881e8f94600a268baedf7f4b85267eade3fae926ab5a82f73a1ebd20e5fb8b"
+    },
+    {
+      "chunk_id": "VC-0308",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The other calls it the answer.",
+      "text_sha256": "sha256:cc213b13653a8d1a7d0117461c416879fb776a68c45cf484b98254b9da1a9dcc",
+      "idempotency_key": "sha256:0fa4aba07f7b104d60a5cc823ff4c9cea04bbf65987bf8732e236dedd732556b"
+    },
+    {
+      "chunk_id": "VC-0309",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The majority answered that in a single line.",
+      "text_sha256": "sha256:dd16300469499671162cacc50d20a371266f1984e6cfb84dddc453de8a76f555",
+      "idempotency_key": "sha256:f43048a0fe42605bcda913ff4009dcf4138f019485b364d116e458f332af7a0c"
+    },
+    {
+      "chunk_id": "VC-0310",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The dissent advances its own reading of the record in this case, but offers no justification for sidestepping the determinations made below.",
+      "text_sha256": "sha256:f347fac5e2a532767ad533c9e8e985ddbe91f5879b166b68c194d331429188cf",
+      "idempotency_key": "sha256:f1970b6cb04f02ee6ced041f7c72c153ae832e8312e5df48a7b26b60116c6949"
+    },
+    {
+      "chunk_id": "VC-0311",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The dissent kept going.",
+      "text_sha256": "sha256:d705df706438447f0aaf3db0b88de0a9c30c6687e2b467c474490946dd05648b",
+      "idempotency_key": "sha256:261b40ac809fbf3e116fa4347c84e7a0e0ae3fdb1481bd91a79a9e64a1ca1fda"
+    },
+    {
+      "chunk_id": "VC-0312",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Division's procedures would not be unconstitutional even if we assumed that Division employees, like federal judges, are occasionally discourteous and occasionally make mistakes.",
+      "text_sha256": "sha256:ed2a6944e8e8e0469f2b18ee1ec0e624e7111e05137e36a6c3763ffa518be03f",
+      "idempotency_key": "sha256:4fb6b81d1969a279d773a1fc3866b76b49262931fcb02f5f7d095ddbfd31afb1"
+    },
+    {
+      "chunk_id": "VC-0313",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Due Process Clause does not guarantee a correct or a courteous resolution of every dispute.",
+      "text_sha256": "sha256:d00556f20d09011ed76437e0ec58e229540b3486fe65dbd6c559cf337a58683c",
+      "idempotency_key": "sha256:4a9b2d84a4d047ea7cff180fbe3356d150d75a9a9f12385a70f9a9e92415b2ba"
+    },
+    {
+      "chunk_id": "VC-0314",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then his central objection.",
+      "text_sha256": "sha256:0c5c56f98d544d8085443a81b9bcea0a1f9bc237a21f3378c4a0a53f27e0a7d3",
+      "idempotency_key": "sha256:6c44e9d136718f66d46530fe43e23618f48ded580c8078b167126315ad03f77b"
+    },
+    {
+      "chunk_id": "VC-0315",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "For a homeowner surely need not be told how to complain about an error in a utility bill; it is, of course, helpful to include the telephone number and office address in the termination notice, but our democratic government would cease to function if, as the Court seems to assume, our citizenry were unable to find such information on their own initiative.",
+      "text_sha256": "sha256:9eb0b19e1ec29b910f4d3486b9c284472c65d959887312b63ddf9554c6c7f317",
+      "idempotency_key": "sha256:0aeb3139ef8c16a646da1360fa36bc0279e7d9305d50ecce9234e5634274a0ad"
+    },
+    {
+      "chunk_id": "VC-0316",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Court's holding that the Division's notice was constitutionally defective rests on a paternalistic predicate that I cannot accept.",
+      "text_sha256": "sha256:b10d86434b3f5412088bccd576cc6726b969ca9fcfc56f86c3a17be061f4e6ec",
+      "idempotency_key": "sha256:8aad4c7dc42647dee6754308c774630c2e15fab3df27a717c850bf4d09dd3d26"
+    },
+    {
+      "chunk_id": "VC-0317",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then the reductio.",
+      "text_sha256": "sha256:361dca885b87008c30aabeb4425e1c2b3a1b30c207bcc6aed84f77f4ce32b471",
+      "idempotency_key": "sha256:974fcbf18cda1de4bf09d91cec4595e5fd9f380ea14123f8417db0626ae6f14d"
+    },
+    {
+      "chunk_id": "VC-0318",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Even accepting the Court's predicate, a notice which advises customers to call the information center should be adequate; if not, it seems clear that advising customers to call, during normal business hours, a dispute resolution center manned by the same personnel would cure the constitutional objection.",
+      "text_sha256": "sha256:3b2c6c89da1f54a88a1fffc741df2ae6b369626e1747f99985358241d046e59d",
+      "idempotency_key": "sha256:0609efab113ea3065362c44b7f715124fe838581770545079b23cb60e4ec9ca5"
+    },
+    {
+      "chunk_id": "VC-0319",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Distinctions of this small magnitude are the appropriate concern of administrative rulemaking; they are too trivial to identify constitutional error.",
+      "text_sha256": "sha256:1a4fc1368d54f1a3ac284b197c470b31af9fdfcec291c88730d9b9960b325779",
+      "idempotency_key": "sha256:f94499a4f51c808cd75d49ee7b3b2c8738d744520c77bb4ff238ead05ba9ec21"
+    },
+    {
+      "chunk_id": "VC-0320",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Same building.",
+      "text_sha256": "sha256:39d8e66198f314fecf61d7c850f92e244c1ffbc0d7e7dc2a8da76f7647cd051b",
+      "idempotency_key": "sha256:45a057679c59df93732f18916c6bc06c26ffca70e099f136d4c9b2536e595484"
+    },
+    {
+      "chunk_id": "VC-0321",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Same staff.",
+      "text_sha256": "sha256:6e3cb0e8a154cb68fb6b0e0cf8ad4629c11f1f359e4199a40be1f6525ad0d284",
+      "idempotency_key": "sha256:9779440f44da02923701d21188b9f8ac313f4569b7f733cd636734fb90b50b59"
+    },
+    {
+      "chunk_id": "VC-0322",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A different sign on the door.",
+      "text_sha256": "sha256:9ca8d4b4dbd96ee39363cb019868733676fc962fee2e48ce702ed14a8f18f090",
+      "idempotency_key": "sha256:d3d467dbfb33e58c49b9370ada6c4dec0f351097f9fdc48fbe02e965b8326780"
+    },
+    {
+      "chunk_id": "VC-0323",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The majority had already answered the predicate, in a footnote of its own.",
+      "text_sha256": "sha256:44473c61e63091080cb404886f8eebfbcacc0e1eff9a9e02e798e7ff5fc58501",
+      "idempotency_key": "sha256:edb8b3ee7ac86a2d5b24e01ab07cd6ef9d52b832236227b1f4e203370806d407"
+    },
+    {
+      "chunk_id": "VC-0324",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In a different context a person threatened with the deprivation of a protected interest need not be told how to complain.",
+      "text_sha256": "sha256:3ee126663e1aec23fbf0b8b6efd966cfbc919db66a13a273434e980567359366",
+      "idempotency_key": "sha256:3e1f05306e221c18534c89cbcd74088720e50f36a033914632ad5c04f5b70f55"
+    },
+    {
+      "chunk_id": "VC-0325",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "But the prior decisions of this Court make clear that due process is flexible and calls for such procedural protections as the particular situation demands.",
+      "text_sha256": "sha256:4cd63d9de240e168f9cda1acd4617d1607fa35bf9128971fb17fc04bfe198e1e",
+      "idempotency_key": "sha256:daf15f53b1d60266a6bd3aa97456b889336ca9ee4b760938dadd356e82b446ea"
+    },
+    {
+      "chunk_id": "VC-0326",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Here, however, the notice is given to thousands of customers of various levels of education, experience, and resources.",
+      "text_sha256": "sha256:a069f0942650da3b2b636d2f5ac593afd7dce8c08c922234deed96bd1003ed52",
+      "idempotency_key": "sha256:41e8fe94335d23283713dbd27a6e96247c26cae78a1ffa87c7f0f9a51d97c5fc"
+    },
+    {
+      "chunk_id": "VC-0327",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Lay consumers of electric service, the uninterrupted continuity of which is essential to health and safety, should be informed clearly of the availability of an opportunity to present their complaint.",
+      "text_sha256": "sha256:9ca86005b9ad6fef941de390aa1564299ba03efb5d98aac5947795bf85aa83aa",
+      "idempotency_key": "sha256:9136cfc6448b5b4d7485afe345dd736cf321c2fa058b9925c45e18789b400e5a"
+    },
+    {
+      "chunk_id": "VC-0328",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Although the Division's terminations number about 2,000 each month, the record does not reveal any actual case of harm to health or safety.",
+      "text_sha256": "sha256:a3b5a0dd3b1ae9a9c6f2f3d36fcd7f7aac8c698a41613cfde034375629d78736",
+      "idempotency_key": "sha256:06b45770ff3c0e9d841584423b46c5d6fbb9620474cb54e73b3a6c6610397fe9"
+    },
+    {
+      "chunk_id": "VC-0329",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The District Court found that the Division does not discontinue service when there is illness in a home.",
+      "text_sha256": "sha256:4581e92d72a414ba1c8934479df96ed8ab6113ab07d52fb1df6b4257da104455",
+      "idempotency_key": "sha256:59421c578d479025fc18e70fb520c4c91ab566ee871ddf6baf216d77c531f470"
+    },
+    {
+      "chunk_id": "VC-0330",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then the dilemma.",
+      "text_sha256": "sha256:ef7187a4fcb28d61a64c66b6604ba98da35983360450fbcabcedbcd8cdaee9a0",
+      "idempotency_key": "sha256:03da3aeebff9cd1dfd648894758c2cbd07a740805f2c5bd21dd89b4f0aafcad2"
+    },
+    {
+      "chunk_id": "VC-0331",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A potential loss of utility service sufficiently grievous to qualify as a constitutional deprivation can hardly be too petty to justify invoking the aid of counsel or the judiciary.",
+      "text_sha256": "sha256:cf7b8a2d9af672d8477498542069f149019d2936f0b217f8d83f8a53c0db4cbb",
+      "idempotency_key": "sha256:7bd72e47e7e285b6cbb2c188dbf7e418ac9d869c02d8f3fb997b8419c131b6fc"
+    },
+    {
+      "chunk_id": "VC-0332",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Conversely, routine billing disputes too petty for the bench or the bar can hardly merit extraordinary constitutional protection.",
+      "text_sha256": "sha256:f1b70913149678d5aa4df4533e43c9a150a106b3d5c919339a2d583d42847250",
+      "idempotency_key": "sha256:e499bf587f8bdab18cca6148c29dba47b187c4334dd62e7d9218ec7e0d251603"
+    },
+    {
+      "chunk_id": "VC-0333",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Serious enough to sue over, or too small to be constitutional.",
+      "text_sha256": "sha256:aa10edacacce0b159c2f0272b1432b6f6a0a3238b8e62a23ad697a72ec04a43c",
+      "idempotency_key": "sha256:dc622e835f5797dcddf70ffa2ec40a5907d16ca3ac6db29885696a44da53ba93"
+    },
+    {
+      "chunk_id": "VC-0334",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is the dissent's question to the majority.",
+      "text_sha256": "sha256:7955fc1045ad94b5a633ddd968231de0a88467bdb636ef3ea5f63b47f9c8389e",
+      "idempotency_key": "sha256:941c7dcf4135da2eb7e18e482e273c0dc2da750b2484e64e4282a0429f3e1146"
+    },
+    {
+      "chunk_id": "VC-0335",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Against the majority's picture of a household priced out of a lawyer, he noted that the Crafts' dispute involved only a relatively small amount, but they did obtain counsel and thereafter they encountered no billing problems.",
+      "text_sha256": "sha256:159ecb1b8efe5665a3112660da7f9d53d8d457f095403cf90ac8f280d450553d",
+      "idempotency_key": "sha256:460495734a03365f0f850feee2f05e0a4faed6bb7547dfa479f9d1b5238fbeb9"
+    },
+    {
+      "chunk_id": "VC-0336",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the charge itself.",
+      "text_sha256": "sha256:ea5c3815a1c4347c720fa7d764cb67f6ba2e5b46d1cfd12cf51672459738207e",
+      "idempotency_key": "sha256:622dcf8bb85ecf2865cf2262750ab2acacd58c783531fc19e00d4c5bd91d8484"
+    },
+    {
+      "chunk_id": "VC-0337",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "These justifications suggest that the Court's new rule is the product of a policy determination rather than a traditional construction of the Constitution.",
+      "text_sha256": "sha256:27ac846f7927946ab24525314554e5585189bc6b87caef326e22ff67b165f44b",
+      "idempotency_key": "sha256:82ebf5506310a5c9e73871cdc12b2a8539aed13e92f2d69dc889af2197b60da4"
+    },
+    {
+      "chunk_id": "VC-0338",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "As judges we have experience in appraising the fairness of legal remedies and judicial proceedings, but we have no similar ability to balance the cost of scheduling thousands of billing conferences against the benefit of providing additional protection to the occasional customer who may be unable to forestall an unjustified termination.",
+      "text_sha256": "sha256:ad43c0e8b55d2b90f60632f3e35cba0fee4b34225817cbccc3bbc0772f0fb346",
+      "idempotency_key": "sha256:3956724e835b8eb7be4274bc26525c7340206f615d63ebadcca89a11eef99b3e"
+    },
+    {
+      "chunk_id": "VC-0339",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then his closing.",
+      "text_sha256": "sha256:609a34ff1a0abfdf969f3bc67ab504c82d196485dacb765d4c9a01e5ba96d78f",
+      "idempotency_key": "sha256:ed9eb5742021d90270f529691ea1e6a9bf345274ca42760bcd0d5a11394d4c18"
+    },
+    {
+      "chunk_id": "VC-0340",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It is an unfortunate fact that when the State assesses taxes or operates a utility, it occasionally overcharges the citizen.",
+      "text_sha256": "sha256:f73c2d58d9c52ce13f0b90d942de9daf42fa7d105f47d0962994e3d0407c09b8",
+      "idempotency_key": "sha256:c63d9d59ee9779dc406579035af12eeb82b66486a938af739e7eb4067c18452a"
+    },
+    {
+      "chunk_id": "VC-0341",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "But if the State has given the citizen fair notice and afforded him procedural redress which is entirely adequate when invoked by his lawyer, the demands of the Due Process Clause are satisfied.",
+      "text_sha256": "sha256:959b3eea2e2f6840fcd4b84dc4ae7097dd3c050784f183a6c4bfaebfbde974d6",
+      "idempotency_key": "sha256:1f172da824a1fc283a9f496fbeb24e1bcfb848771a07ea92acccdfb440e8fc3d"
+    },
+    {
+      "chunk_id": "VC-0342",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "I do not believe the Constitution requires the State to employ procedures that are so simple that every lay person can always act effectively without the assistance of counsel.",
+      "text_sha256": "sha256:540a5539996f0d0017c3ecc1d6bcc7c74a34cbe28081e9441e314be1447a31ce",
+      "idempotency_key": "sha256:d464ed0ab73f109dcce5691d46205376bba9a9c9e0f0be4883d4d928ebebc736"
+    },
+    {
+      "chunk_id": "VC-0343",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "I respectfully dissent.",
+      "text_sha256": "sha256:6e12ccdcb094e5de39ca7025fca1679837e821e4a6f758516805128c5a30d176",
+      "idempotency_key": "sha256:6610168a2565c418ab0033cc0acbed2a01feff77ca6daf0d24bb64900fc3f7ff"
+    },
+    {
+      "chunk_id": "VC-0344",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is where the two opinions stop describing the same woman.",
+      "text_sha256": "sha256:927b3dc9108d35a1a8d2bb873c5f663ba3cf1d99040aa7d74117d6ea015ef213",
+      "idempotency_key": "sha256:1923f6d111dc32ad25671da9eeceeda6c12fc17a056ee7cd346a0141f0f2845e"
+    },
+    {
+      "chunk_id": "VC-0345",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Two bills came to one house, and the second was addressed in a name one letter different from the man who lived there.",
+      "text_sha256": "sha256:1f00eabe31020a6dfadbe1adcd5b97411716f3db083c406896d17aa2fe74afd8",
+      "idempotency_key": "sha256:28b7d2a7659ed1a567b05573806cbc11013444f31115e6b1ad8d932c74bc2a86"
+    },
+    {
+      "chunk_id": "VC-0346",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The record never settled who put it there.",
+      "text_sha256": "sha256:92b4bea3d8c07e3c8f14f168606654c138ee30e60aeab44b13fd88430f2c39f6",
+      "idempotency_key": "sha256:3358933092daf0412e596ba2917cfdfb165ce4dbc1fbc57b5b07c3891e1e6670"
+    },
+    {
+      "chunk_id": "VC-0347",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A footnote quoting the Crafts' own brief says the utility failed to combine the two accounts.",
+      "text_sha256": "sha256:b85019f499c8286b4bdca316584fcb068c5051dae6de024768dbffd515fdbb62",
+      "idempotency_key": "sha256:9b862a6dcfb342cb95f2f699699ea5f574258aa380c68edd77e827f1330c4ee2"
+    },
+    {
+      "chunk_id": "VC-0348",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The body of the opinion says a contractor the Crafts hired failed to consolidate the meters.",
+      "text_sha256": "sha256:5754b85157fbb4984d8df229481277697a32f03e0c4badbda5a8886365199b93",
+      "idempotency_key": "sha256:8effbd44db57a8886dc346ff1dc8bf027421a51bd6a907e9f22043178b1aac41"
+    },
+    {
+      "chunk_id": "VC-0349",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Both sentences are printed in the same opinion, and the Court chose neither.",
+      "text_sha256": "sha256:aab55b0829db3789726f70358b359c194155c1c1086960d76cd05d5f616ec30f",
+      "idempotency_key": "sha256:a33c96ec50067a9e020699d95406866034cb488acb2ac0b26ff5e3a67b819a6d"
+    },
+    {
+      "chunk_id": "VC-0350",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "An employee of uncertain authority told Mrs. Craft she had to pay on the other bill as well.",
+      "text_sha256": "sha256:bf19be83f19e3c1cfbd809f022bc616ff84c9fbff72f034a9311418c523ce9a2",
+      "idempotency_key": "sha256:b7d1344e1fccb617339d64ff97d43ed316d0c1d427c8a0acb7d841c6f936b8a8"
+    },
+    {
+      "chunk_id": "VC-0351",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The majority prints that as a brush-off, apparently without explanation or attempt at investigation.",
+      "text_sha256": "sha256:ff00808cf85060eeabf30b6296b9ebb3b9c01b5cc0e185dd56fced7bf6842c7f",
+      "idempotency_key": "sha256:90986ac37626b5f86d0e6505ba105f1a107a9680302ed62e8e9c5c1ad937b3a9"
+    },
+    {
+      "chunk_id": "VC-0352",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The dissent prints it as an official of the Division resolving the dispute, correctly as it turned out.",
+      "text_sha256": "sha256:879dfeaea2ad76fbea629edc0eb718ec988414d2ba643d960005d1ef2efe37a6",
+      "idempotency_key": "sha256:f5cab1d5a8611762d2e8aa29fdebacded07696793647e469ef869ec6734a6b9e"
+    },
+    {
+      "chunk_id": "VC-0353",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Same sentence.",
+      "text_sha256": "sha256:675df46d4918c9b50db8e63154c42d333599159a8032511ba03339cc7ece7f37",
+      "idempotency_key": "sha256:88b8beee355f04d1c61fbb4980bdf8f46cd8b0f253767ead1d13ee43a525bf05"
+    },
+    {
+      "chunk_id": "VC-0354",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Same office.",
+      "text_sha256": "sha256:3de1b4ed810301b0cf402c37f70b4d95d71c0b9f90c33329998e9da9d661d39c",
+      "idempotency_key": "sha256:8bf50387831c19f7993b74b9e3d2708af6574e19ba961e6177077bb52dd87644"
+    },
+    {
+      "chunk_id": "VC-0355",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Five terminations, said the majority.",
+      "text_sha256": "sha256:cde0b9c07775d3d9ca8b21a6b708229c30b91b6166651df43b66a8fe5319b921",
+      "idempotency_key": "sha256:03fa5974558584bf5219680a9b75c7a64cb5bcbd91b25a07cb8a4044fa324327"
+    },
+    {
+      "chunk_id": "VC-0356",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Several occasions, said the dissent.",
+      "text_sha256": "sha256:1b9b13ca8cc38257a937c1cf57ee05446fb2e8d667e3e26f16704f6db79a76d4",
+      "idempotency_key": "sha256:15ddbdc3cbd3147da386f10c93f937258b2339ecf8e36f6fccbd894b4d3bce46"
+    },
+    {
+      "chunk_id": "VC-0357",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The opinion gives no month, no duration and no figure for any of them.",
+      "text_sha256": "sha256:854803a403ac27dea229174b3b8aa4360a27cc8459692fc40dc875d8288de457",
+      "idempotency_key": "sha256:e82a0f800ac6380faf1e85b921bd3431b65f3394158d80782dd654dc27c8f183"
+    },
+    {
+      "chunk_id": "VC-0358",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Nor did anyone settle the money.",
+      "text_sha256": "sha256:28ea26bce6512ea571cad71e4f90af1b189da08b7e506956aa4dab91a48d77eb",
+      "idempotency_key": "sha256:110f7477ba74e970fd4c4bb7c87b0ba8359f4e8404becc4133d9fcdd4d680b2d"
+    },
+    {
+      "chunk_id": "VC-0359",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Possible gas overcharges, said the trial court.",
+      "text_sha256": "sha256:8b5663b3b79c02c9d97baa10f440274dff861c838f75935da7636ff0672deac0",
+      "idempotency_key": "sha256:f9a4bf1bc107365ca5d366598892e7d26e1b98dccf69f8f56fc0288e713baa0a"
+    },
+    {
+      "chunk_id": "VC-0360",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Genuinely independent accounts, said the dissent.",
+      "text_sha256": "sha256:b568a92bd527f148996941069804ca160b6e67419a88d32146b0e9ca294f4c23",
+      "idempotency_key": "sha256:e69407a6f1da62503c0b27c8231ec263666d3a1c6cc7ca86dadf15611b9e41bc"
+    },
+    {
+      "chunk_id": "VC-0361",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The Supreme Court expressed no opinion and sent the question back down.",
+      "text_sha256": "sha256:e19030ec8de3a138830b7dc31d8fcaae6960aa31cd8a863debe8d78cf34432ba",
+      "idempotency_key": "sha256:9dbb979ed65992fc01c298df2cb1166d41a0fe1465cf1f9212d000d3f8cfdf9b"
+    },
+    {
+      "chunk_id": "VC-0362",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "No damages were awarded here.",
+      "text_sha256": "sha256:e73eaee3cd54c8972e32073ac5d9d2093aad95f4ac9b2690e8f93d9c41116940",
+      "idempotency_key": "sha256:8081e493d3607fd1e7603206c6a2fe523c64dd8fcea8dc2748f317557bd04f90"
+    },
+    {
+      "chunk_id": "VC-0363",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "No court found that the bill was wrong.",
+      "text_sha256": "sha256:298c84811cf5e73e15c09bce2639b6c50589a4eef8a70a291fdd8fdea16472c7",
+      "idempotency_key": "sha256:6cb6aef34107c3c8b4a6f2bdd1f72f7a6cb254ac0261a783c0bfa503fe8838f0"
+    },
+    {
+      "chunk_id": "VC-0364",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Behind the notice there was a procedure, as the District Court described it.",
+      "text_sha256": "sha256:367459ec07555085e7fbc0c5b96ca301ddaf81efaa8c065b772de857578163a2",
+      "idempotency_key": "sha256:7a745b03fe719da9a316f30e111a48a20d6b6821b07f49c4df4a29b207ef1d3a"
+    },
+    {
+      "chunk_id": "VC-0365",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Credit counselors, the chief clerk, the supervisor, the Board of Commissioners.",
+      "text_sha256": "sha256:0c15e628ed8710df9d27123723f0440dbe7d6e02f95d4cdf34491169203aee61",
+      "idempotency_key": "sha256:fa6c16486370de101efaf61895e694b79003bc12f53ec783698bc345a5898994"
+    },
+    {
+      "chunk_id": "VC-0366",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Thirty-three thousand high bill complaints in one year.",
+      "text_sha256": "sha256:78de5d426c0e190c23c3ff42438b6e91d6775e6ee10ed215260e84e5e0ec7016",
+      "idempotency_key": "sha256:4f631b2982214210e409c92a49b3f92f26427056669822c6cbf2f709f0b0b57d"
+    },
+    {
+      "chunk_id": "VC-0367",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A telephone number printed on the notice, answered, in the dissent's account, by thirty or forty people who could each delay the cutoff by three days.",
+      "text_sha256": "sha256:f983a8ca652e5d466891aeafd0f3b4369a9aaa005a2192c48df940ec04b0fab7",
+      "idempotency_key": "sha256:42ccfa5d080740a3ab460bda07135c17a1ecb7bb3cb24648321de400d03dc062"
+    },
+    {
+      "chunk_id": "VC-0368",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "No description of any of it was ever distributed to customers, and the record does not establish which flyer reached Alaska Street.",
+      "text_sha256": "sha256:d7024f30542bce9456ae864ea15a84053ddf6649cf6c70d5a8147aba6e001e2b",
+      "idempotency_key": "sha256:73a91fd1dcdbb643126ed3fc915d695b69ba2de676ed8dc1de6859d9c3858c23"
+    },
+    {
+      "chunk_id": "VC-0369",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "What the case added is three items and one obligation.",
+      "text_sha256": "sha256:b4cc87261e55ec9fc30d20ee2dbcb7308c52aeb0107f99238ddb99b810f6ce36",
+      "idempotency_key": "sha256:47fb4d5d9238ca5cbe30d1ec268693750a85ff89424e6981e3c8e11d1abcb537"
+    },
+    {
+      "chunk_id": "VC-0370",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Where.",
+      "text_sha256": "sha256:afebf35a51cc8b242cfbc8f4fc86f9abed93ed2372a4b89730de74140580ac01",
+      "idempotency_key": "sha256:85565ccca9ff5257421556011a2021c91d6fa0f6c1f96b98501eb8d7b78fa78b"
+    },
+    {
+      "chunk_id": "VC-0371",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "During which hours of the day.",
+      "text_sha256": "sha256:cfe9475526fa2c75aed3e2016a6cca0641e557152de5a10589b55d5f757545b7",
+      "idempotency_key": "sha256:e8b7e496bfcb81dfc52e062a382d853519cd17c4e8835cd479f6ceed55f9138e"
+    },
+    {
+      "chunk_id": "VC-0372",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And before whom.",
+      "text_sha256": "sha256:ead6e5784edc2bd7dea5f520dbaa309760e487204a10c848f4ca09877596853c",
+      "idempotency_key": "sha256:542c4f633dcd8f48900cd39f2bdd769888772a175267d86819eb8cd660cfff55"
+    },
+    {
+      "chunk_id": "VC-0373",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And a designated employee empowered to review disputed bills and rectify error, obliged to hear the complaint before the meter reader arrives.",
+      "text_sha256": "sha256:e0a547da74b16af5443eb410e2a1dd35082f3ab3099a5494df68d39179ce376f",
+      "idempotency_key": "sha256:306bce56252000fbcdbe1eefd5f0e6422ed7da6282e66d0562be61e47ee72057"
+    },
+    {
+      "chunk_id": "VC-0374",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And after that, the meter reader may still arrive.",
+      "text_sha256": "sha256:6b9aa8672fc3d5b26ef543cd070b3996437fc8647fe1b39356f482686e20edd8",
+      "idempotency_key": "sha256:fe96279fe9ac8c29b37e3f2741111f6998fea173678fbf1748c5cec722a16699"
+    },
+    {
+      "chunk_id": "VC-0375",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Petitioners, the Court wrote, would retain the option to terminate service after affording this opportunity and concluding that the amount billed was justly due.",
+      "text_sha256": "sha256:ffe4c9c65f9e390e84afc16d19885b9bacdb4ef408bc3abb80065939fcaf06dd",
+      "idempotency_key": "sha256:61cf61a619e783db6d855897ef4848ee3fd38e7127641668d4ba826e0eee8fce"
+    },
+    {
+      "chunk_id": "VC-0376",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Bill at about day four.",
+      "text_sha256": "sha256:85bd16ec3570adf908fc0fbe5e2a35d74689267abc6228d4416cdf166af85aee",
+      "idempotency_key": "sha256:e9c7f4906bd535a75304e6b2d7453b3f589d466d4c88e3cc4fb3b76d1850080b"
+    },
+    {
+      "chunk_id": "VC-0377",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Net due at about day twenty.",
+      "text_sha256": "sha256:75edb3607d28fcdba82ca47c7ee3e0c2ca19a2b52a552166ee1f5dd2680c062f",
+      "idempotency_key": "sha256:9d6b47a275168fd56250d5d9a0ca160d9a25894ae7a088e9a3320c67b16bcd96"
+    },
+    {
+      "chunk_id": "VC-0378",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Final notice at about day twenty-four, giving four days.",
+      "text_sha256": "sha256:ea27a37f2582e848be7baf3ccda0eb370ea5f9e50c079740799c5c994261c699",
+      "idempotency_key": "sha256:24f25ce7068a1e1b61af7b6bf4eb7976c4cd1c6144d257dbbc11e1aec7f133b1"
+    },
+    {
+      "chunk_id": "VC-0379",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Then the meter reader.",
+      "text_sha256": "sha256:e893f77dabaf2cee9fb775d93f2e7d8b80c56be07dc37e6174610c24379c74d1",
+      "idempotency_key": "sha256:0b4de30e49adb1a2166b3af054b3cb86c69a74852f26bb27bab64517ec929f5a"
+    },
+    {
+      "chunk_id": "VC-0380",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "About five days after that, everything else.",
+      "text_sha256": "sha256:d3e28d52a1d8546e30f8501f743673b19a16baf7c9ed38032b43c604e322b027",
+      "idempotency_key": "sha256:5b99cd2e6ae2a11ce959626e460b5a6d265dac77a336a10caba593be56d4ee69"
+    },
+    {
+      "chunk_id": "VC-0381",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "On one occasion, after a final notice, a woman in Memphis telephoned the offices of her city's utility and explained that she had paid a bill.",
+      "text_sha256": "sha256:4df6b20070b39f1c02460d2d2ca81d588a256584baaae29ec83f99f2396b0a1e",
+      "idempotency_key": "sha256:6e96f8ca1d1a29136e6cb0961ffeb70d810ebf5ebe7566c05f9f2d1c5158f4b6"
+    },
+    {
+      "chunk_id": "VC-0382",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Three courts, four years, and a record that never agreed with itself — all out of what happened at the other end of that line.",
+      "text_sha256": "sha256:f5de2f06f4332de007825ccf6dfbf212b84a30bf669d66fbd03ba0f6b64a0b42",
+      "idempotency_key": "sha256:16d4cb92dec75e336fca50c541c5b463cd88845fd0ed15c6bbd1c57f280c548d"
+    },
+    {
+      "chunk_id": "VC-0383",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "She was given no satisfaction.",
+      "text_sha256": "sha256:a950cfd21f162d4c9abb5d1c02de99e45501ea0aabdb35fb01670f7c0642ea75",
+      "idempotency_key": "sha256:4f1df599f964b729c4fe69a9a32a18cb2c9271f8b47bdb74df657a0f544abbf6"
+    }
+  ]
+}

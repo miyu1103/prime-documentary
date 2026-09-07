@@ -1,0 +1,56 @@
+EP80_concordia — 画像発注 バッチ 20/23（8枚）
+区分: PEOPLE / SPARE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, airline livery, airline tail markings, ship funnel markings, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) N153.png
+   [N153]  flags: P
+   Two crew members seen from behind conferring in a bright steel corridor, strip lights overhead
+
+2) N154.png
+   [N154]  flags: P
+   A crew member seen from behind handing an orange lifejacket to someone off frame, bright deck lighting
+
+3) N155.png
+   [N155]  flags: P
+   A line of people in orange lifejackets walking away down a brightly lit deck, all from behind
+
+4) N156.png
+   [N156]  flags: P
+   A lone figure silhouetted at a ship's rail against a brilliant dawn sky, sea beyond
+
+5) N157.png
+   [N157]  flags: 
+   A brass ship's bell polished bright on a panelled bulkhead, a lamp flaring off the metal, no lettering
+
+6) N158.png
+   [N158]  flags: 
+   A ship's wheelhouse window with a clear-view screen spinning, brilliant daylight beyond
+
+7) N159.png
+   [N159]  flags: 
+   A magnetic compass in a binnacle under a bright brass lamp, the card visible, no numerals
+
+8) N160.png
+   [N160]  flags: 
+   A ship's telegraph repeater dial, brightly backlit, needle steady, no lettering

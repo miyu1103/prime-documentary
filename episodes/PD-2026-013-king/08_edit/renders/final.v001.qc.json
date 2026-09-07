@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-013-king",
+  "slug": "king",
+  "revision": "v001",
+  "generated_at": "2026-06-23T16:25:44.509354+00:00",
+  "video": "H:\\pd-media\\episodes\\PD-2026-013-king\\08_edit\\king_premium_v001.mp4",
+  "video_exists": true,
+  "video_sha256": "bdef6c0ff321484bf279a350900759e1ad203b8a3354d3e04fc0716a5ffab042",
+  "duration_seconds": 691.2,
+  "duration_check": {
+    "target_seconds_min": 690,
+    "target_seconds_max": 750,
+    "pass": true
+  },
+  "audio_loudness": {
+    "input_i": "-13.99",
+    "input_tp": "-2.47",
+    "input_lra": "2.10",
+    "input_thresh": "-24.04",
+    "output_i": "-14.04",
+    "output_tp": "-1.99",
+    "output_lra": "2.10",
+    "output_thresh": "-24.09",
+    "normalization_type": "dynamic",
+    "target_offset": "0.04",
+    "returncode": 0
+  },
+  "audio_check": {
+    "target_lufs": -14,
+    "true_peak_max_db": -1,
+    "pass": true
+  },
+  "caption_sidecar": "episodes/PD-2026-013-king/08_edit/captions.v001.srt",
+  "caption_sidecar_exists": true,
+  "burned_in_captions": true,
+  "four_part_structure": {
+    "hook": true,
+    "brand_opening": true,
+    "main_acts_1_to_4": true,
+    "ending_with_series_bridge_next_tease_cta": true,
+    "pass": true
+  },
+  "content_safety": {
+    "assault_arrest_separated_from_rape_database_hit": true,
+    "swab_not_presented_as_arrest_reason": true,
+    "no_victim_reenactment": true,
+    "no_real_person_or_judge_likeness": true,
+    "neutral_majority_and_dissent_framing": true,
+    "pass": true
+  },
+  "upload_gate": {
+    "youtube_upload_performed": false,
+    "youtube_schedule_performed": false,
+    "owner_confirmation_required": true,
+    "pass": true
+  }
+}

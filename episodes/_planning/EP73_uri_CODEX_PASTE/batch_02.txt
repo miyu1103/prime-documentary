@@ -1,0 +1,55 @@
+EP73_uri — 画像発注 バッチ 2/15（8枚）
+区分: OP — U007–U010 / ACT_1 — THE ISLAND
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U009.png
+   [ice on a branch]  flags: D A
+   a live oak branch sheathed in clear ice against a flat grey sky, close
+
+2) U010.png
+   [black ground]  flags: B
+   a plain near-black surface with faint horizontal grain, empty
+
+3) U011.png
+   [a line at dusk]  flags: D B
+   a high-voltage transmission line crossing flat Texas ranchland at dusk, no snow, ordinary weather
+
+4) U012.png
+   [the substation]  flags: D B
+   a substation seen through a chain-link fence, transformers and busbars, flat daylight
+
+5) U013.png
+   [the border]  flags: D B
+   a straight rural road running to the horizon across flat land, a fence line beside it
+
+6) U014.png
+   [the old office]  flags: R B
+   a plain 1930s office interior, wooden desk, banker's lamp, no papers legible
+
+7) U015.png
+   [the ledger ground]  flags: R B
+   a large ruled ledger open on a desk, columns empty, one lamp
+
+8) U016.png
+   [the agreement]  flags: R B
+   a plain sheet of heavy paper on a dark table, blank, a fountain pen beside it

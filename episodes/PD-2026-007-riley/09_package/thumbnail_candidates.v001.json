@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-007-riley",
+  "revision": "v001",
+  "generated_at": "2026-06-20T19:30:00+09:00",
+  "status": "thumbnail_gate_candidates_ready",
+  "recommended_order": [
+    "PD-2026-007-THUMB-001",
+    "PD-2026-007-THUMB-002",
+    "PD-2026-007-THUMB-005",
+    "PD-2026-007-THUMB-004",
+    "PD-2026-007-THUMB-003"
+  ],
+  "recommendation": {
+    "primary": "PD-2026-007-THUMB-001",
+    "reason": "Shortest, fastest-read concept: the viewer immediately sees a searched phone without requiring case-law knowledge.",
+    "backup_a": "PD-2026-007-THUMB-002",
+    "backup_b": "PD-2026-007-THUMB-005"
+  },
+  "candidates": [
+    {
+      "asset_id": "PD-2026-007-THUMB-001",
+      "composition_id": "Riley-thumb01",
+      "headline": "SEARCHED?",
+      "kicker": "YOUR PHONE",
+      "file": "H:/pd-media/episodes/PD-2026-007-riley/09_package/thumbnails/PD-2026-007-riley-thumb01.v001.png",
+      "content_hash": "sha256:b093023534c67d72a3468fc2fafa2a95d69fa53f899797b30e366a7a9bb5766f",
+      "rank": 1,
+      "notes": "Best overall: direct, short, high-contrast, and visually tied to phone search."
+    },
+    {
+      "asset_id": "PD-2026-007-THUMB-002",
+      "composition_id": "Riley-thumb02",
+      "headline": "GET A WARRANT",
+      "kicker": "PHONE SEARCH",
+      "file": "H:/pd-media/episodes/PD-2026-007-riley/09_package/thumbnails/PD-2026-007-riley-thumb02.v001.png",
+      "content_hash": "sha256:d55e5b3f022b5c166fcd132c9dd6b3c310695e1a34ee0d3863e0ec87aa930ba4",
+      "rank": 2,
+      "notes": "Best legal-message variant; strong quote energy and advertiser-safe."
+    },
+    {
+      "asset_id": "PD-2026-007-THUMB-003",
+      "composition_id": "Riley-thumb03",
+      "headline": "NO WARRANT?",
+      "kicker": "POLICE + PHONE",
+      "file": "H:/pd-media/episodes/PD-2026-007-riley/09_package/thumbnails/PD-2026-007-riley-thumb03.v001.png",
+      "content_hash": "sha256:cfee8320c1e6a33ce3c600ee7699822114560fa03a3c94fe869609f1bf4bba9b",
+      "rank": 5,
+      "notes": "Clear topic but weaker visual hierarchy than thumb01/thumb02."
+    },
+    {
+      "asset_id": "PD-2026-007-THUMB-004",
+      "composition_id": "Riley-thumb04",
+      "headline": "YOUR PHONE IS YOUR LIFE",
+      "kicker": "RILEY v. CALIFORNIA",
+      "file": "H:/pd-media/episodes/PD-2026-007-riley/09_package/thumbnails/PD-2026-007-riley-thumb04.v001.png",
+      "content_hash": "sha256:65a5e8bac5fbc6bce4e2b67ade2fed413d6cdb805b3babc731ece352ccf0e328",
+      "rank": 4,
+      "notes": "Best explanatory variant, but less urgent than the search/warrant options."
+    },
+    {
+      "asset_id": "PD-2026-007-THUMB-005",
+      "composition_id": "Riley-thumb05",
+      "headline": "CAN POLICE OPEN THIS?",
+      "kicker": "LOCKED PHONE",
+      "file": "H:/pd-media/episodes/PD-2026-007-riley/09_package/thumbnails/PD-2026-007-riley-thumb05.v001.png",
+      "content_hash": "sha256:fce42f2b449cdc08fc630222f64103cea862553c7b69a9bc097e3710f3f7c52a",
+      "rank": 3,
+      "notes": "Strong question format, but longer than thumb01 and less legally distinctive than thumb02."
+    }
+  ],
+  "source": {
+    "remotion_entry": "remotion/src/riley_index.tsx",
+    "component": "remotion/src/compositions/RileyThumbnails.tsx",
+    "base_stills": "H:/pd-media/episodes/PD-2026-007-riley/05_visuals/selected/"
+  },
+  "gate": {
+    "current_gate": "title_thumbnail_review",
+    "owner_approval_required_before_final_selection": true,
+    "publish_allowed": false
+  }
+}

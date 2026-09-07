@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 2/24（8枚）
+区分: ACT_1 — 4時00分36秒
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T009.png
+   [T009]  flags: 
+   A bank of turbine control switches in a 1979 plant, chrome levers in a row, bright overhead light
+
+2) T010.png
+   [T010]  flags: 
+   A pressuriser relief valve assembly at the top of a vessel, insulated pipework, one work lamp
+
+3) T011.png
+   [T011]  flags: 
+   A control rod drive mechanism seen from above the reactor head, a forest of vertical steel tubes, bright overhead lighting
+
+4) T012.png
+   [T012]  flags: 
+   An indicator light on a 1979 panel, lit green, close, the panel dark around it
+
+5) T013.png
+   [T013]  flags: 
+   The same indicator light with the panel dark and only its filament glowing
+
+6) T014.png
+   [T014]  flags: 
+   A relief valve stuck open, close, insulated pipe and a wisp of vapour escaping, one hard work lamp
+
+7) T015.png
+   [T015]  flags: 
+   A pen-and-paper strip chart recorder in mid trace, close, the paper rolling, a lamp above it
+
+8) T016.png
+   [T016]  flags: 
+   A large analogue level gauge on a control panel, needle high, one bright light across the glass

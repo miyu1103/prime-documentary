@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-080-concordia",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "out\\concordia_preprobe.mp4",
+  "slice_seconds": 60.05,
+  "slice_sha256": "sha256:fb78363bb5e1ef09575c4b80ebab5b4651693dcad081be95228aa4a80a7b4be0",
+  "film_sha256": "sha256:48cb764968ebb12c48996696b6898db92c078d1b05eab902461c1a754ce6fb81",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 46.5 / p10 45.0 / p50 45.6 (1315 frames, 250 cuts masked +/-8f; 4 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-08-27T19:27:23.613592+00:00"
+}

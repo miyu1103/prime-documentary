@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0.0",
+  "revision": "v001",
+  "status": "approved",
+  "created_at": "2026-07-28",
+  "basis": "episodes/_planning/measurements/DISTRIBUTION_STATE.v001.json (measured 2026-07-28) + scripts/_yt_analytics.json per-video APV",
+  "rationale": "DEEP_RESEARCH_FINDINGS.v001 section 5: PLAYLIST traffic = 19.6 min/view, 10x any other source, on 1.1% of views. Suggested traffic is 100% borrowed adjacency. Playlists + end screens are the only levers that manufacture our OWN co-watch edges. R-26 asked for 4 series playlists covering all long-forms.",
+  "ordering_rule": "Position 1 = highest measured reach x watch-through in the cluster (it is the video the playlist link lands on). Then escalate the stakes rather than follow publish date, keep the two weakest-APV videos out of positions 1-3, and place the weakest last so a broken session ends late rather than early.",
+  "end_screen_rule": "slot 1 = the NEXT video in this playlist; for the last position, slot 1 = position 1 (loops the session back to the entry point). slot 2 = this playlist.",
+  "deviations_from_research": [
+    "The research named the 4th cluster 'Unsolved & Disaster'. 5 of its 8 members are wrongful convictions or institutional betrayal, not unsolved cases, so it is renamed 'The System Got It Wrong'. A viewer who clicks an unsolved-mystery label and lands on an exoneration film bounces; the rename protects the 19.6 min/view.",
+    "The research counted 40 long-forms. The true census is 42 - the uploads playlist omits bYcqabvvxak (Terry, 2026-06-21) and Qyad4FejCIc (Hinton, 2026-07-14). Both are assigned here.",
+    "P3 reuses the existing 'Fraud, Finance & Power' playlist and P1 reuses 'Landmark Rights Cases' rather than creating new ones, because 4 live descriptions already link those two ids. Creating replacements would strand those links."
+  ],
+  "playlists": [
+    {
+      "key": "police_power",
+      "title": "Police Power: What They Can Actually Do to You",
+      "research_name": "Rights vs Police",
+      "action": "reuse_existing",
+      "existing_playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "existing_title": "Landmark Rights Cases",
+      "description": "A traffic stop. A phone in your pocket. A knock at the wrong door. Every film here is one real case that decided how far the police can go before they need a warrant - and what happens to the person who found out the hard way. Watch in order: the cases build from the roadside to your front door to the interrogation room.\n\nNew case every week.",
+      "privacy": "public",
+      "entry_point_video_id": "tpAKfHKuwqY",
+      "entry_point_reason": "38.98% average view percentage - the highest measured on the channel - on the most universally relatable scenario (a traffic stop).",
+      "cleanup_required": [
+        "position 0 currently holds PjGEqW6F9WM, a DELETED video. It is the slot the playlist link lands on. Remove it first.",
+        "Retitling changes the anchor text in 4 live descriptions that say 'Landmark Rights Cases playlist'. Those descriptions are rewritten in the same batch, so schedule the retitle and the description batch together."
+      ],
+      "order": [
+        {
+          "pos": 1,
+          "video_id": "tpAKfHKuwqY",
+          "episode": "PD-2026-027-rodriguez",
+          "note": "APV 38.98% - best on channel; everyday scenario"
+        },
+        {
+          "pos": 2,
+          "video_id": "bXATF9ZnKLE",
+          "episode": "PD-2026-032-carsearch",
+          "note": "same lane, 2nd highest views in cluster"
+        },
+        {
+          "pos": 3,
+          "video_id": "Sz8zPUoBANM",
+          "episode": "PD-2026-014-lange",
+          "note": "escalates from roadside to the doorway"
+        },
+        {
+          "pos": 4,
+          "video_id": "bYcqabvvxak",
+          "episode": "PD-2026-006-terry",
+          "note": "stop and frisk - the doctrine under 1-3"
+        },
+        {
+          "pos": 5,
+          "video_id": "XWYWAgkExH4",
+          "episode": "PD-2026-007-riley",
+          "note": "pivot to the phone"
+        },
+        {
+          "pos": 6,
+          "video_id": "YQIhk2dKZHU",
+          "episode": "PD-2026-031-unlock",
+          "note": "thumb vs passcode - direct sequel to Riley"
+        },
+        {
+          "pos": 7,
+          "video_id": "zE3nCUlUmLY",
+          "episode": "PD-2026-008-carpenter",
+          "note": "APV 23.88%; location history"
+        },
+        {
+          "pos": 8,
+          "video_id": "rrftLmSVivk",
+          "episode": "PD-2026-025-kyllo",
+          "note": "sensors pointed at the home"
+        },
+        {
+          "pos": 9,
+          "video_id": "68oWZRiOnB8",
+          "episode": "PD-2026-026-katz",
+          "note": "APV 21.58%; the doctrine Kyllo rests on"
+        },
+        {
+          "pos": 10,
+          "video_id": "An0to4U0hJQ",
+          "episode": "PD-2026-003-mapp",
+          "note": "what happens when they break in"
+        },
+        {
+          "pos": 11,
+          "video_id": "Enok7A7wGBA",
+          "episode": "PD-2026-042-young",
+          "note": "wrong house - the sharpest stakes gap in the cluster"
+        },
+        {
+          "pos": 12,
+          "video_id": "g5yFmDt48oU",
+          "episode": "PD-2026-013-king",
+          "note": "pivot from the home to the body"
+        },
+        {
+          "pos": 13,
+          "video_id": "gR_nzXIyIlk",
+          "episode": "PD-2026-036-williams",
+          "note": "facial recognition; 30 hours in jail"
+        },
+        {
+          "pos": 14,
+          "video_id": "SOu4Y1NkGGY",
+          "episode": "PD-2026-037-florence",
+          "note": "strip search over a paid fine"
+        },
+        {
+          "pos": 15,
+          "video_id": "X40EbUw5kzQ",
+          "episode": "PD-2026-039-frazier",
+          "note": "pivot to the interrogation room"
+        },
+        {
+          "pos": 16,
+          "video_id": "cQFql7tT1fE",
+          "episode": "PD-2026-001-miranda",
+          "note": "the warning itself"
+        },
+        {
+          "pos": 17,
+          "video_id": "ch2hQ5jhDmQ",
+          "episode": "PD-2026-002-gideon",
+          "note": "APV 7.51% - weak, placed late"
+        },
+        {
+          "pos": 18,
+          "video_id": "cSfe3iGnBBM",
+          "episode": "PD-2026-011-mahanoy",
+          "note": "weakest thematic fit (student speech, not police) - last"
+        }
+      ]
+    },
+    {
+      "key": "forfeiture_files",
+      "title": "The Forfeiture Files: When the Government Takes What's Yours",
+      "research_name": "Forfeiture Files",
+      "action": "create_new",
+      "existing_playlist_id": null,
+      "description": "Nobody was convicted of anything. The house, the car, the savings, the surplus from the sale - taken anyway, legally. These are the real cases behind civil forfeiture, tax-sale windfalls and eminent domain, and the ordinary people who spent years getting their own property back.\n\nWatch in order - the amounts get smaller and the injustice gets sharper.",
+      "privacy": "public",
+      "entry_point_video_id": "Xc_PxdC_75c",
+      "entry_point_reason": "172 views - the highest of any long-form on the channel - and the premise (following the rule is what made her a target) is the cluster's cleanest stakes gap.",
+      "cleanup_required": [],
+      "order": [
+        {
+          "pos": 1,
+          "video_id": "Xc_PxdC_75c",
+          "episode": "PD-2026-035-hinders",
+          "note": "top-viewed long-form on the channel"
+        },
+        {
+          "pos": 2,
+          "video_id": "6ozsIfwqrP0",
+          "episode": "PD-2026-034-rolin",
+          "note": "airport cash seizure - direct sibling"
+        },
+        {
+          "pos": 3,
+          "video_id": "rU2vk9XL4vY",
+          "episode": "PD-2026-033-tyler",
+          "note": "completes the announced property trilogy"
+        },
+        {
+          "pos": 4,
+          "video_id": "YhEJHK279f8",
+          "episode": "PD-2026-028-forfeiture",
+          "note": "APV 24.37% - strongest watch-through in cluster"
+        },
+        {
+          "pos": 5,
+          "video_id": "m-uWzgWHGPg",
+          "episode": "PD-2026-009-timbs",
+          "note": "the Supreme Court answer to 1-4"
+        },
+        {
+          "pos": 6,
+          "video_id": "4uuY6G0LmHo",
+          "episode": "PD-2026-040-lech",
+          "note": "destroyed home, no compensation"
+        },
+        {
+          "pos": 7,
+          "video_id": "89SQoRgAD7U",
+          "episode": "PD-2026-010-kelo",
+          "note": "eminent domain - the widest frame, closes the arc"
+        }
+      ]
+    },
+    {
+      "key": "fraud_finance_power",
+      "title": "Fraud, Finance & Power",
+      "research_name": "Fraud, Finance & Power",
+      "action": "reuse_existing",
+      "existing_playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "existing_title": "Fraud, Finance & Power",
+      "description": "Nine real collapses: the money that was never there, the warnings nobody acted on, and the people who were paid enormously to look away. Ponzi schemes, fake technology, a trillion dollars that vanished in 36 minutes, and the fine print that quietly took your right to sue.\n\nWatch in order - each film explains the machinery the next one runs on.",
+      "privacy": "public",
+      "entry_point_video_id": "sphERPA4gAc",
+      "entry_point_reason": "57 views at 19.13% APV - the best combination in this cluster, and the whistleblower framing is the cluster's strongest present-tense injustice.",
+      "cleanup_required": [
+        "Currently ordered waA4XJ9bYcE (APV 4.24%) at position 0. That is the weakest-retention video in the cluster sitting in the entry-point slot. Reorder before anything else."
+      ],
+      "order": [
+        {
+          "pos": 1,
+          "video_id": "sphERPA4gAc",
+          "episode": "PD-2026-005-madoff",
+          "note": "APV 19.13% at 57 views"
+        },
+        {
+          "pos": 2,
+          "video_id": "vikfOBHullI",
+          "episode": "PD-2026-017-onecoin",
+          "note": "26 views; same 'money was never there' premise"
+        },
+        {
+          "pos": 3,
+          "video_id": "LXFjJqE6vKU",
+          "episode": "PD-2026-015-theranos",
+          "note": "0 views - strongest premise in the cluster, needs the playlist's traffic"
+        },
+        {
+          "pos": 4,
+          "video_id": "mj9qEKPRatE",
+          "episode": "PD-2026-022-milken",
+          "note": "APV 21.14%, 350s AVD - pivot from fraud to legal power"
+        },
+        {
+          "pos": 5,
+          "video_id": "j8U8c4BB_GQ",
+          "episode": "PD-2026-019-varsityblues",
+          "note": "buying access"
+        },
+        {
+          "pos": 6,
+          "video_id": "5Jap-0h43A4",
+          "episode": "PD-2026-018-flashcrash",
+          "note": "machinery, not people"
+        },
+        {
+          "pos": 7,
+          "video_id": "1pox44KsaV8",
+          "episode": "PD-2026-012-arbitration",
+          "note": "the power that reaches the viewer directly"
+        },
+        {
+          "pos": 8,
+          "video_id": "waA4XJ9bYcE",
+          "episode": "PD-2026-004-ftx",
+          "note": "APV 4.24% - placed late"
+        },
+        {
+          "pos": 9,
+          "video_id": "rYV4rxtQCV0",
+          "episode": "PD-2026-024-rajaratnam",
+          "note": "APV 3.64% - weakest on channel, last"
+        }
+      ]
+    },
+    {
+      "key": "system_got_it_wrong",
+      "title": "The System Got It Wrong",
+      "research_name": "Unsolved & Disaster (renamed - see deviations)",
+      "action": "create_new",
+      "existing_playlist_id": null,
+      "description": "Eight cases the system never answered for: men who spent decades in prison for crimes they did not commit, a judge who was paid by the jail he sent children to, evidence that stayed buried, and disappearances still open after fifty years.\n\nWatch in order - the wrongful convictions first, then the cases nobody ever closed.",
+      "privacy": "public",
+      "entry_point_video_id": "marQjsCagh0",
+      "entry_point_reason": "158 views at 22.77% APV with 495s average view duration - the deepest-watched film on the channel.",
+      "cleanup_required": [],
+      "order": [
+        {
+          "pos": 1,
+          "video_id": "marQjsCagh0",
+          "episode": "PD-2026-016-titan",
+          "note": "158 views, 495s AVD - deepest watch on the channel"
+        },
+        {
+          "pos": 2,
+          "video_id": "Qyad4FejCIc",
+          "episode": "PD-2026-029-hinton",
+          "note": "30 years on death row - strongest injustice premise"
+        },
+        {
+          "pos": 3,
+          "video_id": "5L_HCGJxX_U",
+          "episode": "PD-2026-030-cotton",
+          "note": "APV 23.08%; eyewitness certainty"
+        },
+        {
+          "pos": 4,
+          "video_id": "tYZuE76Hwdc",
+          "episode": "PD-2026-041-thompson",
+          "note": "buried evidence - direct sequel to Cotton"
+        },
+        {
+          "pos": 5,
+          "video_id": "Pmh6h5SfWw4",
+          "episode": "PD-2026-038-kidsforcash",
+          "note": "pivot from error to corruption"
+        },
+        {
+          "pos": 6,
+          "video_id": "tt7U1XgjCU4",
+          "episode": "PD-2026-021-dbcooper",
+          "note": "56 views, APV 19.41% - pivot to unclosed cases"
+        },
+        {
+          "pos": 7,
+          "video_id": "1h267U6PY0I",
+          "episode": "PD-2026-020-gardner",
+          "note": "APV 24.09%, 396s AVD"
+        },
+        {
+          "pos": 8,
+          "video_id": "FTm1icKgycU",
+          "episode": "PD-2026-023-swartz",
+          "note": "APV 3.97% - weakest, last"
+        }
+      ]
+    }
+  ],
+  "copy": {
+    "notes": [
+      "Placeholders: {sibling_title} {sibling_url} {playlist_title} {playlist_url} {this_title}.",
+      "The WATCH NEXT block goes AFTER the narrative paragraphs and the chapter block, and BEFORE the AI-disclosure / sources sections. The first two lines of the description must stay narrative (R-28) because that is what shows in the feed.",
+      "Pinned comments follow the Shorts wave-1 pattern that is already proven on this channel: one line that restates the stake, one link to the cluster sibling, one question that is answerable without having watched anything else. No channel-ritual CTA (R-33: the audience has zero brand trust on first contact)."
+    ],
+    "watch_next_template": "— WATCH NEXT —\n{sibling_title}\n{sibling_url}\n\nThe full series: {playlist_title}\n{playlist_url}",
+    "per_cluster": {
+      "police_power": {
+        "pinned_comment": "Every case in this series turns on the same question: at what exact moment does a police officer stop needing your permission?\n\nThe next one is {sibling_title} — {sibling_url}\n\nIf an officer asked to search your car tomorrow, do you know what you are actually allowed to say?",
+        "watch_next_lead": "The next case in Police Power:"
+      },
+      "forfeiture_files": {
+        "pinned_comment": "Nobody in this film was convicted of anything. That is the part people do not believe until they see the paperwork.\n\nNext in the series: {sibling_title} — {sibling_url}\n\nHow much of your own money do you think you could carry through an airport before it stopped being yours?",
+        "watch_next_lead": "The next case in The Forfeiture Files:"
+      },
+      "fraud_finance_power": {
+        "pinned_comment": "The warnings in this story were not missed. They were filed, read, and set aside — which is the part that keeps repeating.\n\nNext: {sibling_title} — {sibling_url}\n\nWhat is the earliest point in this timeline where you think someone could still have stopped it?",
+        "watch_next_lead": "The next case in Fraud, Finance & Power:"
+      },
+      "system_got_it_wrong": {
+        "pinned_comment": "The record in this case was not ambiguous. It was available the whole time, and it sat in a drawer.\n\nNext in the series: {sibling_title} — {sibling_url}\n\nWhat would it take to convince you that a conviction you were certain about was wrong?",
+        "watch_next_lead": "The next case in The System Got It Wrong:"
+      }
+    }
+  },
+  "optional_scale_out": {
+    "when": "if police_power exceeds ~20 items",
+    "split": "police_power -> 'Your Phone, Your Car, Your Home' (positions 1-11) and 'In Custody: Rights, Lawyers & Confessions' (positions 12-18)",
+    "reason": "an 18-item playlist is fine for watch-through but dilutes the thumbnail grid on the channel page"
+  },
+  "approved_by": "owner",
+  "approved_at": "2026-07-28",
+  "approval_record": "APR-0006-series-playlists.md",
+  "approval_verbatim": "①→実行して"
+}

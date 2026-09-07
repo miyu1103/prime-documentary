@@ -1,0 +1,3493 @@
+{
+  "episode_id": "PD-2026-049-strieff",
+  "fps": 30,
+  "narration": "strieff/narration.mp3",
+  "narrationSeconds": 686.815,
+  "hookSeconds": 8.0,
+  "hookLine": "A stop with no reason. A warrant. A search the law now lets count.",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "strieff/img/S01.png",
+      "seed": "strieff-hook-00"
+    },
+    {
+      "start": 1.333,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "strieff/img/S02.png",
+      "seed": "strieff-hook-01"
+    },
+    {
+      "start": 2.666,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "strieff/img/S03.png",
+      "seed": "strieff-hook-02"
+    },
+    {
+      "start": 3.999,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "strieff/img/S04.png",
+      "seed": "strieff-hook-03"
+    },
+    {
+      "start": 5.332,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "strieff/img/S05.png",
+      "seed": "strieff-hook-04"
+    },
+    {
+      "start": 6.665,
+      "dur": 1.335,
+      "kind": "img",
+      "src": "strieff/img/S06.png",
+      "seed": "strieff-hook-05"
+    }
+  ],
+  "cuts": [
+    {
+      "id": "cut-000",
+      "start": 0.0,
+      "dur": 5.159,
+      "kind": "footage",
+      "src": "strieff/factory/F001_codex_plate_S01.mp4",
+      "seed": "strieff-000",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-001",
+      "start": 5.159,
+      "dur": 4.629,
+      "kind": "footage",
+      "src": "strieff/human/G1.mp4",
+      "seed": "strieff-h-G1",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0
+    },
+    {
+      "id": "cut-002",
+      "start": 9.788,
+      "dur": 5.159,
+      "kind": "footage",
+      "src": "strieff/motion/M01_rife.mp4",
+      "seed": "strieff-002",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-003",
+      "start": 14.947,
+      "dur": 5.159,
+      "kind": "footage",
+      "src": "strieff/stock/st_cctv_watch.mp4",
+      "seed": "strieff-003",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "a detective has been watching that house"
+    },
+    {
+      "id": "cut-004",
+      "start": 20.106,
+      "dur": 4.629,
+      "kind": "img",
+      "src": "strieff/img/S02.png",
+      "seed": "strieff-004",
+      "act": "HOOK",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-005",
+      "start": 24.735,
+      "dur": 5.159,
+      "kind": "footage",
+      "src": "strieff/stock/st_police_night.mp4",
+      "seed": "strieff-005",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "he walks over and tells him to stop"
+    },
+    {
+      "id": "cut-006",
+      "start": 29.894,
+      "dur": 5.159,
+      "kind": "footage",
+      "src": "strieff/stock/st_celltower.mp4",
+      "seed": "strieff-006",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "reads his ID to a dispatcher over the radio"
+    },
+    {
+      "id": "cut-007",
+      "start": 35.053,
+      "dur": 4.629,
+      "kind": "footage",
+      "src": "strieff/stock/st_records_server.mp4",
+      "seed": "strieff-007",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "a name comes back with an outstanding warrant"
+    },
+    {
+      "id": "cut-008",
+      "start": 39.682,
+      "dur": 5.159,
+      "kind": "footage",
+      "src": "strieff/motion/M02_rife.mp4",
+      "seed": "strieff-008",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-009",
+      "start": 44.841,
+      "dur": 5.932,
+      "kind": "footage",
+      "src": "strieff/stock/st_drugs_evidence.mp4",
+      "seed": "strieff-009",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the search turns up evidence (forensic)"
+    },
+    {
+      "id": "cut-009b",
+      "start": 50.773,
+      "dur": 2.733,
+      "kind": "footage",
+      "src": "strieff/human/G3.mp4",
+      "seed": "strieff-h-G3",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0
+    },
+    {
+      "id": "cut-009c",
+      "start": 53.506,
+      "dur": 2.733,
+      "kind": "footage",
+      "src": "strieff/human/G4.mp4",
+      "seed": "strieff-h-G4",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0
+    },
+    {
+      "id": "cut-011",
+      "start": 56.24,
+      "dur": 3.018,
+      "kind": "footage",
+      "src": "strieff/stock/st_phone_records.mp4",
+      "seed": "strieff-011",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "runs your name / used against you in court"
+    },
+    {
+      "id": "cut-012",
+      "start": 59.258,
+      "dur": 4.63,
+      "kind": "img",
+      "src": "strieff/img/S06.png",
+      "seed": "strieff-012",
+      "act": "HOOK",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-013",
+      "start": 63.888,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/factory/F006_codex_plate_S06.mp4",
+      "seed": "strieff-013",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-014",
+      "start": 67.003,
+      "dur": 2.796,
+      "kind": "footage",
+      "src": "strieff/stock/st_lawbooks.mp4",
+      "seed": "strieff-014",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "a rule in American law"
+    },
+    {
+      "id": "cut-015",
+      "start": 69.799,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/motion/M03_rife.mp4",
+      "seed": "strieff-015",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-016",
+      "start": 72.914,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/stock/st_scales.mp4",
+      "seed": "strieff-016",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "search you illegally, evidence is normally thrown out"
+    },
+    {
+      "id": "cut-017",
+      "start": 76.029,
+      "dur": 2.796,
+      "kind": "img",
+      "src": "strieff/img/S08.png",
+      "seed": "strieff-017",
+      "act": "OP",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-018",
+      "start": 78.825,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/factory/F008_codex_plate_S08.mp4",
+      "seed": "strieff-018",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-019",
+      "start": 81.94,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/stock/st_document.mp4",
+      "seed": "strieff-019",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the exclusionary rule"
+    },
+    {
+      "id": "cut-020",
+      "start": 85.055,
+      "dur": 2.796,
+      "kind": "img",
+      "src": "strieff/img/S09.png",
+      "seed": "strieff-020",
+      "act": "OP",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-021",
+      "start": 87.851,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/motion/M04_rife.mp4",
+      "seed": "strieff-021",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-022",
+      "start": 90.966,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/factory/F010_codex_plate_S10.mp4",
+      "seed": "strieff-022",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-023",
+      "start": 94.081,
+      "dur": 2.796,
+      "kind": "footage",
+      "src": "strieff/stock/st_jail.mp4",
+      "seed": "strieff-023",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the man was convicted"
+    },
+    {
+      "id": "cut-024",
+      "start": 96.877,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/factory/F011_codex_plate_S11.mp4",
+      "seed": "strieff-024",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-025",
+      "start": 99.992,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/factory/F012_codex_plate_S12.mp4",
+      "seed": "strieff-025",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-026",
+      "start": 103.107,
+      "dur": 2.796,
+      "kind": "footage",
+      "src": "strieff/stock/st_courthouse.mp4",
+      "seed": "strieff-026",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the case is Utah v. Strieff, decided in 2016"
+    },
+    {
+      "id": "cut-027",
+      "start": 105.903,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/motion/M05_rife.mp4",
+      "seed": "strieff-027",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-028",
+      "start": 109.018,
+      "dur": 3.115,
+      "kind": "footage",
+      "src": "strieff/stock/st_capitol.mp4",
+      "seed": "strieff-028",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the attenuation doctrine"
+    },
+    {
+      "id": "cut-029",
+      "start": 112.133,
+      "dur": 2.796,
+      "kind": "img",
+      "src": "strieff/img/S12.png",
+      "seed": "strieff-029",
+      "act": "OP",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-030",
+      "start": 114.929,
+      "dur": 2.796,
+      "kind": "img",
+      "src": "strieff/img/S13.png",
+      "seed": "strieff-030",
+      "act": "OP",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-031",
+      "start": 117.725,
+      "dur": 2.796,
+      "kind": "img",
+      "src": "strieff/img/S14.png",
+      "seed": "strieff-031",
+      "act": "OP",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-032",
+      "start": 120.521,
+      "dur": 2.799,
+      "kind": "img",
+      "src": "strieff/img/S15.png",
+      "seed": "strieff-032",
+      "act": "OP",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-033",
+      "start": 123.32,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F014_codex_plate_S14.mp4",
+      "seed": "strieff-033",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-034",
+      "start": 126.937,
+      "dur": 3.246,
+      "kind": "footage",
+      "src": "strieff/stock/st_cctv_watch.mp4",
+      "seed": "strieff-034",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "Detective Fackrell got an anonymous tip"
+    },
+    {
+      "id": "cut-035",
+      "start": 130.183,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/motion/M06_rife.mp4",
+      "seed": "strieff-035",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-036",
+      "start": 133.8,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/stock/st_house_night.mp4",
+      "seed": "strieff-036",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "watched the place, on and off, for about a week"
+    },
+    {
+      "id": "cut-037",
+      "start": 137.417,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S17.png",
+      "seed": "strieff-037",
+      "act": "ACT_1",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-038",
+      "start": 140.663,
+      "dur": 4.067,
+      "kind": "footage",
+      "src": "strieff/human/G5.mp4",
+      "seed": "strieff-h-G5",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0
+    },
+    {
+      "id": "cut-039",
+      "start": 144.73,
+      "dur": 3.167,
+      "kind": "footage",
+      "src": "strieff/factory/F017_codex_plate_S17.mp4",
+      "seed": "strieff-039",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-040",
+      "start": 147.897,
+      "dur": 3.246,
+      "kind": "footage",
+      "src": "strieff/stock/st_feet_walking.mp4",
+      "seed": "strieff-040",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "Strieff walked out and headed across a parking lot"
+    },
+    {
+      "id": "cut-041",
+      "start": 151.143,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/motion/M07_rife.mp4",
+      "seed": "strieff-041",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-042",
+      "start": 154.76,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F018_codex_plate_S18.mp4",
+      "seed": "strieff-042",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-043",
+      "start": 158.377,
+      "dur": 4.067,
+      "kind": "footage",
+      "src": "strieff/human/G2.mp4",
+      "seed": "strieff-h-G2",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0
+    },
+    {
+      "id": "cut-044",
+      "start": 162.444,
+      "dur": 2.796,
+      "kind": "footage",
+      "src": "strieff/factory/F019_codex_plate_S19.mp4",
+      "seed": "strieff-044",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-045",
+      "start": 165.24,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F020_codex_plate_S20.mp4",
+      "seed": "strieff-045",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-046",
+      "start": 168.857,
+      "dur": 3.246,
+      "kind": "footage",
+      "src": "strieff/stock/st_document.mp4",
+      "seed": "strieff-046",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "we keep to what the record says"
+    },
+    {
+      "id": "cut-047",
+      "start": 172.103,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/motion/M08_rife.mp4",
+      "seed": "strieff-047",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-048",
+      "start": 175.72,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F021_codex_plate_S21.mp4",
+      "seed": "strieff-048",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-049",
+      "start": 179.337,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S21.png",
+      "seed": "strieff-049",
+      "act": "ACT_1",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-050",
+      "start": 182.583,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F022_codex_plate_S22.mp4",
+      "seed": "strieff-050",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-051",
+      "start": 186.2,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F023_codex_plate_S23.mp4",
+      "seed": "strieff-051",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-052",
+      "start": 189.817,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S22.png",
+      "seed": "strieff-052",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-053",
+      "start": 193.063,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/motion/M09_rife.mp4",
+      "seed": "strieff-053",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-054",
+      "start": 196.68,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F024_codex_plate_S24.mp4",
+      "seed": "strieff-054",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-055",
+      "start": 200.297,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S23.png",
+      "seed": "strieff-055",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-056",
+      "start": 203.543,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/stock/st_tension_abstract.mp4",
+      "seed": "strieff-056",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "no reasonable suspicion — the stop was not legal"
+    },
+    {
+      "id": "cut-057",
+      "start": 207.16,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F026_codex_plate_S26.mp4",
+      "seed": "strieff-057",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-058",
+      "start": 210.777,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S24.png",
+      "seed": "strieff-058",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-059",
+      "start": 214.023,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/motion/M10_rife.mp4",
+      "seed": "strieff-059",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-060",
+      "start": 217.64,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F027_codex_plate_S27.mp4",
+      "seed": "strieff-060",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-061",
+      "start": 221.257,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S25.png",
+      "seed": "strieff-061",
+      "act": "ACT_1",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-062",
+      "start": 224.503,
+      "dur": 3.617,
+      "kind": "footage",
+      "src": "strieff/factory/F028_codex_plate_S28.mp4",
+      "seed": "strieff-062",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-063",
+      "start": 228.12,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S26.png",
+      "seed": "strieff-063",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-064",
+      "start": 231.366,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S27.png",
+      "seed": "strieff-064",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-065",
+      "start": 234.612,
+      "dur": 3.246,
+      "kind": "footage",
+      "src": "strieff/stock/st_courthouse.mp4",
+      "seed": "strieff-065",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the Terry-stop rule"
+    },
+    {
+      "id": "cut-066",
+      "start": 237.858,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S29.png",
+      "seed": "strieff-066",
+      "act": "ACT_1",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-067",
+      "start": 241.104,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S30.png",
+      "seed": "strieff-067",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-068",
+      "start": 244.35,
+      "dur": 3.246,
+      "kind": "img",
+      "src": "strieff/img/S31.png",
+      "seed": "strieff-068",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-069",
+      "start": 247.596,
+      "dur": 3.244,
+      "kind": "img",
+      "src": "strieff/img/S32.png",
+      "seed": "strieff-069",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-070",
+      "start": 250.84,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F029_codex_plate_S29.mp4",
+      "seed": "strieff-070",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-071",
+      "start": 254.017,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S33.png",
+      "seed": "strieff-071",
+      "act": "ACT_2",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-072",
+      "start": 256.868,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/motion/M11_rife.mp4",
+      "seed": "strieff-072",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-073",
+      "start": 260.045,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F030_codex_plate_S30.mp4",
+      "seed": "strieff-073",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-074",
+      "start": 263.222,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S34.png",
+      "seed": "strieff-074",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-075",
+      "start": 266.073,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/stock/st_scales.mp4",
+      "seed": "strieff-075",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "fruit of the poisonous tree"
+    },
+    {
+      "id": "cut-076",
+      "start": 269.25,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F032_codex_plate_S32.mp4",
+      "seed": "strieff-076",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-077",
+      "start": 272.427,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S35.png",
+      "seed": "strieff-077",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-078",
+      "start": 275.278,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/motion/M12_rife.mp4",
+      "seed": "strieff-078",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-079",
+      "start": 278.455,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F033_codex_plate_S33.mp4",
+      "seed": "strieff-079",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-080",
+      "start": 281.632,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S36.png",
+      "seed": "strieff-080",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-081",
+      "start": 284.483,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F034_codex_plate_S34.mp4",
+      "seed": "strieff-081",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-082",
+      "start": 287.66,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F035_codex_plate_S35.mp4",
+      "seed": "strieff-082",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-083",
+      "start": 290.837,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S37.png",
+      "seed": "strieff-083",
+      "act": "ACT_2",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-084",
+      "start": 293.688,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/motion/M13_rife.mp4",
+      "seed": "strieff-084",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-085",
+      "start": 296.865,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/stock/st_lawbooks.mp4",
+      "seed": "strieff-085",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the attenuation exception"
+    },
+    {
+      "id": "cut-086",
+      "start": 300.042,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S38.png",
+      "seed": "strieff-086",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-087",
+      "start": 302.893,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F037_codex_plate_S37.mp4",
+      "seed": "strieff-087",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-088",
+      "start": 306.07,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F038_codex_plate_S38.mp4",
+      "seed": "strieff-088",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-089",
+      "start": 309.247,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S39.png",
+      "seed": "strieff-089",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-090",
+      "start": 312.098,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/motion/M14_rife.mp4",
+      "seed": "strieff-090",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-091",
+      "start": 315.275,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F039_codex_plate_S39.mp4",
+      "seed": "strieff-091",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-092",
+      "start": 318.452,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S40.png",
+      "seed": "strieff-092",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-093",
+      "start": 321.303,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F040_codex_plate_S40.mp4",
+      "seed": "strieff-093",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-094",
+      "start": 324.48,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F041_codex_plate_S41.mp4",
+      "seed": "strieff-094",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-095",
+      "start": 327.657,
+      "dur": 2.851,
+      "kind": "footage",
+      "src": "strieff/stock/st_document.mp4",
+      "seed": "strieff-095",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the Brown v. Illinois factors"
+    },
+    {
+      "id": "cut-096",
+      "start": 330.508,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/motion/M15_rife.mp4",
+      "seed": "strieff-096",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-097",
+      "start": 333.685,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F042_codex_plate_S42.mp4",
+      "seed": "strieff-097",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-098",
+      "start": 336.862,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S42.png",
+      "seed": "strieff-098",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-099",
+      "start": 339.713,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F043_codex_plate_S43.mp4",
+      "seed": "strieff-099",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-100",
+      "start": 342.89,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/factory/F044_codex_plate_S44.mp4",
+      "seed": "strieff-100",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-101",
+      "start": 346.067,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S43.png",
+      "seed": "strieff-101",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-102",
+      "start": 348.918,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/motion/M16_rife.mp4",
+      "seed": "strieff-102",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-103",
+      "start": 352.095,
+      "dur": 3.177,
+      "kind": "footage",
+      "src": "strieff/stock/st_judge_gavel.mp4",
+      "seed": "strieff-103",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "did the warrant break the chain?"
+    },
+    {
+      "id": "cut-104",
+      "start": 355.272,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S44.png",
+      "seed": "strieff-104",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-105",
+      "start": 358.123,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S45.png",
+      "seed": "strieff-105",
+      "act": "ACT_2",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-106",
+      "start": 360.974,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S46.png",
+      "seed": "strieff-106",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-107",
+      "start": 363.825,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S47.png",
+      "seed": "strieff-107",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-108",
+      "start": 366.676,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S48.png",
+      "seed": "strieff-108",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-109",
+      "start": 369.527,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S49.png",
+      "seed": "strieff-109",
+      "act": "ACT_2",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-110",
+      "start": 372.378,
+      "dur": 2.851,
+      "kind": "footage",
+      "src": "strieff/stock/st_night_street.mp4",
+      "seed": "strieff-110",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the warrant intervenes"
+    },
+    {
+      "id": "cut-111",
+      "start": 375.229,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S51.png",
+      "seed": "strieff-111",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-112",
+      "start": 378.08,
+      "dur": 2.851,
+      "kind": "img",
+      "src": "strieff/img/S52.png",
+      "seed": "strieff-112",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-113",
+      "start": 380.931,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F046_codex_plate_S46.mp4",
+      "seed": "strieff-113",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-114",
+      "start": 383.785,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S53.png",
+      "seed": "strieff-114",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-115",
+      "start": 386.346,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M01_rife.mp4",
+      "seed": "strieff-115",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-116",
+      "start": 389.2,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F047_codex_plate_S47.mp4",
+      "seed": "strieff-116",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-117",
+      "start": 392.054,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S54.png",
+      "seed": "strieff-117",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-118",
+      "start": 394.615,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F048_codex_plate_S48.mp4",
+      "seed": "strieff-118",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-119",
+      "start": 397.469,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/stock/st_courthouse.mp4",
+      "seed": "strieff-119",
+      "act": "ACT_3",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the ruling"
+    },
+    {
+      "id": "cut-120",
+      "start": 400.323,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S55.png",
+      "seed": "strieff-120",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-121",
+      "start": 402.884,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M02_rife.mp4",
+      "seed": "strieff-121",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-122",
+      "start": 405.738,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F050_codex_plate_S50.mp4",
+      "seed": "strieff-122",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-123",
+      "start": 408.592,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S56.png",
+      "seed": "strieff-123",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-124",
+      "start": 411.153,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F051_codex_plate_S51.mp4",
+      "seed": "strieff-124",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-125",
+      "start": 414.007,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F052_codex_plate_S52.mp4",
+      "seed": "strieff-125",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-126",
+      "start": 416.861,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S57.png",
+      "seed": "strieff-126",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-127",
+      "start": 419.422,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M03_rife.mp4",
+      "seed": "strieff-127",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-128",
+      "start": 422.276,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F053_codex_plate_S53.mp4",
+      "seed": "strieff-128",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-129",
+      "start": 425.13,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S58.png",
+      "seed": "strieff-129",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-130",
+      "start": 427.691,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F054_codex_plate_S54.mp4",
+      "seed": "strieff-130",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-131",
+      "start": 430.545,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/stock/st_judge_gavel.mp4",
+      "seed": "strieff-131",
+      "act": "ACT_3",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "5-3, decided 2016"
+    },
+    {
+      "id": "cut-132",
+      "start": 433.399,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S59.png",
+      "seed": "strieff-132",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-133",
+      "start": 435.96,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M04_rife.mp4",
+      "seed": "strieff-133",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-134",
+      "start": 438.814,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F056_codex_plate_S56.mp4",
+      "seed": "strieff-134",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-135",
+      "start": 441.668,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S60.png",
+      "seed": "strieff-135",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-136",
+      "start": 444.229,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F057_codex_plate_S57.mp4",
+      "seed": "strieff-136",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-137",
+      "start": 447.083,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F058_codex_plate_S58.mp4",
+      "seed": "strieff-137",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-138",
+      "start": 449.937,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S61.png",
+      "seed": "strieff-138",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-139",
+      "start": 452.498,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M05_rife.mp4",
+      "seed": "strieff-139",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-140",
+      "start": 455.352,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/stock/st_capitol.mp4",
+      "seed": "strieff-140",
+      "act": "ACT_3",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "an 8-justice court, Scalia's seat empty"
+    },
+    {
+      "id": "cut-141",
+      "start": 458.206,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S62.png",
+      "seed": "strieff-141",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-142",
+      "start": 460.767,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F060_codex_plate_S60.mp4",
+      "seed": "strieff-142",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-143",
+      "start": 463.621,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F061_codex_plate_S61.mp4",
+      "seed": "strieff-143",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-144",
+      "start": 466.475,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S63.png",
+      "seed": "strieff-144",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-145",
+      "start": 469.036,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M06_rife.mp4",
+      "seed": "strieff-145",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-146",
+      "start": 471.89,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F062_codex_plate_S62.mp4",
+      "seed": "strieff-146",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-147",
+      "start": 474.744,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S64.png",
+      "seed": "strieff-147",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-148",
+      "start": 477.305,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F063_codex_plate_S63.mp4",
+      "seed": "strieff-148",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-149",
+      "start": 480.159,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F064_codex_plate_S64.mp4",
+      "seed": "strieff-149",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-150",
+      "start": 483.013,
+      "dur": 2.561,
+      "kind": "footage",
+      "src": "strieff/stock/st_tension_abstract.mp4",
+      "seed": "strieff-150",
+      "act": "ACT_3",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "Sotomayor, dissenting — a carceral state"
+    },
+    {
+      "id": "cut-151",
+      "start": 485.574,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M07_rife.mp4",
+      "seed": "strieff-151",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-152",
+      "start": 488.428,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F065_codex_plate_S65.mp4",
+      "seed": "strieff-152",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-153",
+      "start": 491.282,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S66.png",
+      "seed": "strieff-153",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-154",
+      "start": 493.843,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F066_codex_plate_S66.mp4",
+      "seed": "strieff-154",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-155",
+      "start": 496.697,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F067_codex_plate_S67.mp4",
+      "seed": "strieff-155",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-156",
+      "start": 499.551,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S67.png",
+      "seed": "strieff-156",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-157",
+      "start": 502.112,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M08_rife.mp4",
+      "seed": "strieff-157",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-158",
+      "start": 504.966,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F068_codex_plate_S68.mp4",
+      "seed": "strieff-158",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-159",
+      "start": 507.82,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S68.png",
+      "seed": "strieff-159",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-160",
+      "start": 510.381,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F069_codex_plate_S69.mp4",
+      "seed": "strieff-160",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-161",
+      "start": 513.235,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F070_codex_plate_S70.mp4",
+      "seed": "strieff-161",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-162",
+      "start": 516.089,
+      "dur": 2.561,
+      "kind": "footage",
+      "src": "strieff/stock/st_jail.mp4",
+      "seed": "strieff-162",
+      "act": "ACT_3",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "Kagan, dissenting — the incentive increases"
+    },
+    {
+      "id": "cut-163",
+      "start": 518.65,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M09_rife.mp4",
+      "seed": "strieff-163",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-164",
+      "start": 521.504,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F071_codex_plate_S71.mp4",
+      "seed": "strieff-164",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-165",
+      "start": 524.358,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S70.png",
+      "seed": "strieff-165",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-166",
+      "start": 526.919,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F072_codex_plate_S72.mp4",
+      "seed": "strieff-166",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-167",
+      "start": 529.773,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F073_codex_plate_S73.mp4",
+      "seed": "strieff-167",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-168",
+      "start": 532.627,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S71.png",
+      "seed": "strieff-168",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-169",
+      "start": 535.188,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/motion/M10_rife.mp4",
+      "seed": "strieff-169",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-170",
+      "start": 538.042,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F074_codex_plate_S74.mp4",
+      "seed": "strieff-170",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-171",
+      "start": 540.896,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S72.png",
+      "seed": "strieff-171",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-172",
+      "start": 543.457,
+      "dur": 2.854,
+      "kind": "footage",
+      "src": "strieff/factory/F075_codex_plate_S75.mp4",
+      "seed": "strieff-172",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-173",
+      "start": 546.311,
+      "dur": 2.561,
+      "kind": "footage",
+      "src": "strieff/stock/st_courthouse.mp4",
+      "seed": "strieff-173",
+      "act": "ACT_3",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "the evidence stayed in"
+    },
+    {
+      "id": "cut-174",
+      "start": 548.872,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S74.png",
+      "seed": "strieff-174",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-175",
+      "start": 551.433,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S75.png",
+      "seed": "strieff-175",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-176",
+      "start": 553.994,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S76.png",
+      "seed": "strieff-176",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-177",
+      "start": 556.555,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S77.png",
+      "seed": "strieff-177",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-178",
+      "start": 559.116,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S78.png",
+      "seed": "strieff-178",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-179",
+      "start": 561.677,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S79.png",
+      "seed": "strieff-179",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-180",
+      "start": 564.238,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S80.png",
+      "seed": "strieff-180",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-181",
+      "start": 566.799,
+      "dur": 2.561,
+      "kind": "img",
+      "src": "strieff/img/S81.png",
+      "seed": "strieff-181",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-182",
+      "start": 569.36,
+      "dur": 2.574,
+      "kind": "img",
+      "src": "strieff/img/S82.png",
+      "seed": "strieff-182",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-183",
+      "start": 571.934,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F076_codex_plate_S76.mp4",
+      "seed": "strieff-183",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-184",
+      "start": 574.733,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S83.png",
+      "seed": "strieff-184",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-185",
+      "start": 577.244,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/motion/M11_rife.mp4",
+      "seed": "strieff-185",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-186",
+      "start": 580.043,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F077_codex_plate_S77.mp4",
+      "seed": "strieff-186",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-187",
+      "start": 582.842,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S84.png",
+      "seed": "strieff-187",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-188",
+      "start": 585.353,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/stock/st_records_server.mp4",
+      "seed": "strieff-188",
+      "act": "ENDING",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "outstanding warrants exist across the country"
+    },
+    {
+      "id": "cut-189",
+      "start": 588.152,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F079_codex_plate_S79.mp4",
+      "seed": "strieff-189",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-190",
+      "start": 590.951,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S85.png",
+      "seed": "strieff-190",
+      "act": "ENDING",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-191",
+      "start": 593.462,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/motion/M12_rife.mp4",
+      "seed": "strieff-191",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-192",
+      "start": 596.261,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F080_codex_plate_S80.mp4",
+      "seed": "strieff-192",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-193",
+      "start": 599.06,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S01.png",
+      "seed": "strieff-193",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-194",
+      "start": 601.571,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F081_codex_plate_S81.mp4",
+      "seed": "strieff-194",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-195",
+      "start": 604.37,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F082_codex_plate_S82.mp4",
+      "seed": "strieff-195",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-196",
+      "start": 607.169,
+      "dur": 2.511,
+      "kind": "footage",
+      "src": "strieff/stock/st_night_street.mp4",
+      "seed": "strieff-196",
+      "act": "ENDING",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "an illegal stop becomes almost free"
+    },
+    {
+      "id": "cut-197",
+      "start": 609.68,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/motion/M13_rife.mp4",
+      "seed": "strieff-197",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-198",
+      "start": 612.479,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F083_codex_plate_S83.mp4",
+      "seed": "strieff-198",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-199",
+      "start": 615.278,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S03.png",
+      "seed": "strieff-199",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-200",
+      "start": 617.789,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F084_codex_plate_S84.mp4",
+      "seed": "strieff-200",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-201",
+      "start": 620.588,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F085_codex_plate_S85.mp4",
+      "seed": "strieff-201",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-202",
+      "start": 623.387,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S04.png",
+      "seed": "strieff-202",
+      "act": "ENDING",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-203",
+      "start": 625.898,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/motion/M14_rife.mp4",
+      "seed": "strieff-203",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-204",
+      "start": 628.697,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F086_codex_plate_M01_src.mp4",
+      "seed": "strieff-204",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-205",
+      "start": 631.496,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S05.png",
+      "seed": "strieff-205",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-206",
+      "start": 634.007,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F087_codex_plate_M02_src.mp4",
+      "seed": "strieff-206",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-207",
+      "start": 636.806,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F088_codex_plate_M03_src.mp4",
+      "seed": "strieff-207",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-208",
+      "start": 639.605,
+      "dur": 2.511,
+      "kind": "footage",
+      "src": "strieff/stock/st_cctv_watch.mp4",
+      "seed": "strieff-208",
+      "act": "ENDING",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "a door held open"
+    },
+    {
+      "id": "cut-209",
+      "start": 642.116,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/motion/M15_rife.mp4",
+      "seed": "strieff-209",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-210",
+      "start": 644.915,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F089_codex_plate_M04_src.mp4",
+      "seed": "strieff-210",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-211",
+      "start": 647.714,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S07.png",
+      "seed": "strieff-211",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-212",
+      "start": 650.225,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F090_codex_plate_M05_src.mp4",
+      "seed": "strieff-212",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-213",
+      "start": 653.024,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F091_codex_plate_M06_src.mp4",
+      "seed": "strieff-213",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-214",
+      "start": 655.823,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S08.png",
+      "seed": "strieff-214",
+      "act": "ENDING",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-215",
+      "start": 658.334,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/motion/M16_rife.mp4",
+      "seed": "strieff-215",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-216",
+      "start": 661.133,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F092_codex_plate_M07_src.mp4",
+      "seed": "strieff-216",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-217",
+      "start": 663.932,
+      "dur": 2.511,
+      "kind": "footage",
+      "src": "strieff/stock/st_house_night.mp4",
+      "seed": "strieff-217",
+      "act": "ENDING",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock_note": "closing"
+    },
+    {
+      "id": "cut-218",
+      "start": 666.443,
+      "dur": 2.799,
+      "kind": "footage",
+      "src": "strieff/factory/F093_codex_plate_M08_src.mp4",
+      "seed": "strieff-218",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-219",
+      "start": 669.242,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S10.png",
+      "seed": "strieff-219",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-220",
+      "start": 671.753,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S11.png",
+      "seed": "strieff-220",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-221",
+      "start": 674.264,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S12.png",
+      "seed": "strieff-221",
+      "act": "ENDING",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-222",
+      "start": 676.775,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S13.png",
+      "seed": "strieff-222",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-223",
+      "start": 679.286,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S14.png",
+      "seed": "strieff-223",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-224",
+      "start": 681.797,
+      "dur": 2.511,
+      "kind": "img",
+      "src": "strieff/img/S15.png",
+      "seed": "strieff-224",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-225",
+      "start": 684.308,
+      "dur": 2.507,
+      "kind": "img",
+      "src": "strieff/img/S16.png",
+      "seed": "strieff-225",
+      "act": "ENDING",
+      "treatment": "bleed"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 4.319,
+      "text": "A man steps out the front door of a house in Utah and starts walking to his car."
+    },
+    {
+      "start": 4.619,
+      "end": 5.919,
+      "text": "He is not running."
+    },
+    {
+      "start": 6.219,
+      "end": 8.68,
+      "text": "He is not carrying anything you can see."
+    },
+    {
+      "start": 8.98,
+      "end": 17.571,
+      "text": "Across the lot a detective has been watching that house on and off for about a week, because a caller he never met left an anonymous tip that people were dealing drugs inside."
+    },
+    {
+      "start": 17.871,
+      "end": 20.379,
+      "text": "The detective does not know this man's name."
+    },
+    {
+      "start": 20.679,
+      "end": 22.769,
+      "text": "He has not seen him do anything."
+    },
+    {
+      "start": 23.069,
+      "end": 25.577,
+      "text": "He walks over anyway and tells him to stop."
+    },
+    {
+      "start": 25.877,
+      "end": 29.081,
+      "text": "That stop is the whole case, so hold onto it."
+    },
+    {
+      "start": 29.381,
+      "end": 31.564,
+      "text": "The officer has no good reason for it."
+    },
+    {
+      "start": 31.864,
+      "end": 32.653,
+      "text": "None."
+    },
+    {
+      "start": 32.953,
+      "end": 44.934,
+      "text": "He asks for the man's ID, reads it out to a dispatcher over the radio, and a few seconds later a name comes back with a small outstanding warrant attached, an old unpaid traffic matter."
+    },
+    {
+      "start": 45.234,
+      "end": 51.039,
+      "text": "On that warrant the man is arrested, and the search that follows turns up a little bag of methamphetamine."
+    },
+    {
+      "start": 51.339,
+      "end": 53.104,
+      "text": "So ask it about yourself."
+    },
+    {
+      "start": 53.404,
+      "end": 62.088,
+      "text": "If an officer stops you on the street for no reason at all, and then runs your name, can everything he finds after that be used against you in court?"
+    },
+    {
+      "start": 63.888,
+      "end": 66.535,
+      "text": "Here is why that question is harder than it looks."
+    },
+    {
+      "start": 66.835,
+      "end": 71.2,
+      "text": "There is a rule in American law that is supposed to protect you from exactly this."
+    },
+    {
+      "start": 71.5,
+      "end": 75.726,
+      "text": "If the police search you illegally, the evidence they turn up is normally thrown out."
+    },
+    {
+      "start": 76.026,
+      "end": 79.555,
+      "text": "Lawyers call it the exclusionary rule, and the idea is simple."
+    },
+    {
+      "start": 79.855,
+      "end": 85.01,
+      "text": "If breaking the Constitution does not win the police anything, they will stop doing it."
+    },
+    {
+      "start": 85.31,
+      "end": 90.836,
+      "text": "So when the stop is illegal, you would expect the drugs to be gone and the case to fall apart."
+    },
+    {
+      "start": 91.136,
+      "end": 93.551,
+      "text": "In this story that is not what happened."
+    },
+    {
+      "start": 93.851,
+      "end": 95.291,
+      "text": "The evidence stayed in."
+    },
+    {
+      "start": 95.591,
+      "end": 97.031,
+      "text": "The man was convicted."
+    },
+    {
+      "start": 97.331,
+      "end": 105.226,
+      "text": "And the Supreme Court of the United States said that was the right result, even though everyone agreed the stop that started it should never have happened."
+    },
+    {
+      "start": 105.526,
+      "end": 108.963,
+      "text": "The case is called Utah versus Strieff, decided in 2016."
+    },
+    {
+      "start": 109.263,
+      "end": 114.418,
+      "text": "It turns on a narrow sounding legal idea with a heavy name, the attenuation doctrine."
+    },
+    {
+      "start": 114.718,
+      "end": 119.641,
+      "text": "And by the time you understand it, you will see how an illegal stop can still cost you everything."
+    },
+    {
+      "start": 119.941,
+      "end": 121.52,
+      "text": "This is Prime Documentary."
+    },
+    {
+      "start": 123.32,
+      "end": 126.571,
+      "text": "Start with the facts, because they are short and they matter."
+    },
+    {
+      "start": 126.871,
+      "end": 131.654,
+      "text": "A police detective in South Salt Lake City named Fackrell got an anonymous tip."
+    },
+    {
+      "start": 131.954,
+      "end": 135.251,
+      "text": "Someone said there was drug activity at a particular house."
+    },
+    {
+      "start": 135.551,
+      "end": 138.523,
+      "text": "So he watched the place, on and off, for about a week."
+    },
+    {
+      "start": 138.823,
+      "end": 147.322,
+      "text": "And he saw a steady stream of people making short visits, walking in and coming right back out, the kind of foot traffic he had learned to read as dealing."
+    },
+    {
+      "start": 147.622,
+      "end": 149.898,
+      "text": "One of those visitors was Edward Strieff."
+    },
+    {
+      "start": 150.198,
+      "end": 152.706,
+      "text": "We will keep to what the record says and no more."
+    },
+    {
+      "start": 153.006,
+      "end": 155.978,
+      "text": "Strieff walked out of the house and headed across a parking lot."
+    },
+    {
+      "start": 156.278,
+      "end": 158.786,
+      "text": "The detective decided to find out who he was."
+    },
+    {
+      "start": 159.086,
+      "end": 161.826,
+      "text": "He stopped him and asked what he was doing at the house."
+    },
+    {
+      "start": 162.126,
+      "end": 164.169,
+      "text": "Here is the part the whole case is built on."
+    },
+    {
+      "start": 164.469,
+      "end": 166.187,
+      "text": "That stop was not legal."
+    },
+    {
+      "start": 166.487,
+      "end": 170.759,
+      "text": "The detective had watched the house, but he had not watched this man do anything."
+    },
+    {
+      "start": 171.059,
+      "end": 174.078,
+      "text": "He could not point to a single fact about Strieff himself."
+    },
+    {
+      "start": 174.378,
+      "end": 176.932,
+      "text": "Later, in court, the state of Utah admitted it."
+    },
+    {
+      "start": 177.232,
+      "end": 184.709,
+      "text": "They conceded that the detective did not have the reasonable suspicion the law requires before he can stop and detain you on the street."
+    },
+    {
+      "start": 185.009,
+      "end": 186.588,
+      "text": "The stop broke the rules."
+    },
+    {
+      "start": 186.888,
+      "end": 189.21,
+      "text": "Remember that, because it never changes."
+    },
+    {
+      "start": 189.51,
+      "end": 191.368,
+      "text": "What happened next is a chain."
+    },
+    {
+      "start": 191.668,
+      "end": 196.451,
+      "text": "The detective asked for Strieff's identification and read it to a dispatcher over the radio."
+    },
+    {
+      "start": 196.751,
+      "end": 199.584,
+      "text": "The dispatcher checked the name and found something."
+    },
+    {
+      "start": 199.884,
+      "end": 202.206,
+      "text": "Strieff had an outstanding arrest warrant."
+    },
+    {
+      "start": 202.506,
+      "end": 204.131,
+      "text": "Not for anything dramatic."
+    },
+    {
+      "start": 204.431,
+      "end": 210.468,
+      "text": "It was a small warrant for an old traffic violation, the kind of thing that sits in a database for years."
+    },
+    {
+      "start": 210.768,
+      "end": 214.576,
+      "text": "But a warrant is a warrant, and it let the detective make an arrest."
+    },
+    {
+      "start": 214.876,
+      "end": 216.919,
+      "text": "So he arrested Strieff on that warrant."
+    },
+    {
+      "start": 217.219,
+      "end": 220.934,
+      "text": "And once you are under arrest, the police are allowed to search you."
+    },
+    {
+      "start": 221.234,
+      "end": 226.296,
+      "text": "That search is legal on its own terms, because it rides on the warrant, not on the stop."
+    },
+    {
+      "start": 226.596,
+      "end": 230.218,
+      "text": "In Strieff's pocket the detective found a small bag of methamphetamine."
+    },
+    {
+      "start": 230.518,
+      "end": 232.515,
+      "text": "Strieff was charged with a drug offense."
+    },
+    {
+      "start": 232.815,
+      "end": 235.091,
+      "text": "His lawyers made the obvious move."
+    },
+    {
+      "start": 235.391,
+      "end": 241.614,
+      "text": "Throw the drugs out, they argued, because the only reason the detective ever reached his pocket was an illegal stop."
+    },
+    {
+      "start": 241.914,
+      "end": 245.861,
+      "text": "The Utah Supreme Court agreed and ordered the evidence suppressed."
+    },
+    {
+      "start": 246.161,
+      "end": 249.04,
+      "text": "Then the case went up one more level, to Washington."
+    },
+    {
+      "start": 250.84,
+      "end": 255.67,
+      "text": "To see what the Court was deciding, you have to understand the rule Strieff was leaning on."
+    },
+    {
+      "start": 255.97,
+      "end": 261.729,
+      "text": "When the police get evidence by breaking the Constitution, courts usually will not let them use it."
+    },
+    {
+      "start": 262.029,
+      "end": 265.048,
+      "text": "The illegal act poisons everything that grows out of it."
+    },
+    {
+      "start": 265.348,
+      "end": 268.738,
+      "text": "Lawyers call the tainted evidence the fruit of the poisonous tree."
+    },
+    {
+      "start": 269.038,
+      "end": 271.128,
+      "text": "The stop was the poisonous tree."
+    },
+    {
+      "start": 271.428,
+      "end": 273.239,
+      "text": "The drugs were the fruit."
+    },
+    {
+      "start": 273.539,
+      "end": 275.954,
+      "text": "But the rule has never been absolute."
+    },
+    {
+      "start": 276.254,
+      "end": 289.211,
+      "text": "Over the years the Court has carved out exceptions, cases where the link between the original wrong and the evidence is so stretched, so broken up by other events, that throwing the evidence out would not deter anyone."
+    },
+    {
+      "start": 289.511,
+      "end": 291.833,
+      "text": "The name for that idea is attenuation."
+    },
+    {
+      "start": 292.133,
+      "end": 298.263,
+      "text": "Attenuated just means thinned out, so far removed from the first mistake that the connection barely holds."
+    },
+    {
+      "start": 298.563,
+      "end": 301.535,
+      "text": "So the real question was not whether the stop was illegal."
+    },
+    {
+      "start": 301.835,
+      "end": 303.646,
+      "text": "Everyone had agreed it was."
+    },
+    {
+      "start": 303.946,
+      "end": 312.491,
+      "text": "The question was whether the outstanding warrant, turning up in the middle of that illegal stop, was enough to break the chain between the bad stop and the drugs."
+    },
+    {
+      "start": 312.791,
+      "end": 316.878,
+      "text": "If the chain held, the evidence was fruit of the poisonous tree and had to go."
+    },
+    {
+      "start": 317.178,
+      "end": 320.707,
+      "text": "If the warrant snapped the chain, the evidence could stay."
+    },
+    {
+      "start": 321.007,
+      "end": 327.276,
+      "text": "To answer that, the Court uses a test it has leaned on for decades, three factors it weighs against each other."
+    },
+    {
+      "start": 327.576,
+      "end": 328.876,
+      "text": "The first is time."
+    },
+    {
+      "start": 329.176,
+      "end": 333.448,
+      "text": "How much time passed between the illegal stop and the moment the evidence turned up."
+    },
+    {
+      "start": 333.748,
+      "end": 338.624,
+      "text": "The closer together they are, the more the evidence looks like a direct product of the wrong."
+    },
+    {
+      "start": 338.924,
+      "end": 341.989,
+      "text": "The second factor is whether something happened in between."
+    },
+    {
+      "start": 342.289,
+      "end": 348.373,
+      "text": "Some intervening event that stands on its own and interrupts the flow from the illegal act to the discovery."
+    },
+    {
+      "start": 348.673,
+      "end": 355.964,
+      "text": "This is the one the whole case rides on, because the government pointed straight at the warrant and said, there is your intervening event."
+    },
+    {
+      "start": 356.264,
+      "end": 360.119,
+      "text": "The third factor is the purpose and flagrancy of what the police did."
+    },
+    {
+      "start": 360.419,
+      "end": 368.5,
+      "text": "Was the illegal stop an honest mistake, or a deliberate fishing trip, an officer who broke the rules on purpose hoping something would turn up."
+    },
+    {
+      "start": 368.8,
+      "end": 374.233,
+      "text": "The more flagrant the misconduct, the more the Court wants to punish it by throwing the evidence out."
+    },
+    {
+      "start": 374.533,
+      "end": 379.131,
+      "text": "Three factors: time, intervening events, and how bad the police behavior was."
+    },
+    {
+      "start": 380.931,
+      "end": 386.039,
+      "text": "In June of 2016, the Court gave its answer, and it sided with the state of Utah."
+    },
+    {
+      "start": 386.339,
+      "end": 390.519,
+      "text": "By a vote of five to three, it held that the methamphetamine was admissible."
+    },
+    {
+      "start": 390.819,
+      "end": 393.838,
+      "text": "The evidence came in, and Strieff's conviction stood."
+    },
+    {
+      "start": 394.138,
+      "end": 395.671,
+      "text": "Two things about that vote."
+    },
+    {
+      "start": 395.971,
+      "end": 405.213,
+      "text": "There were only eight justices that term, not the usual nine, because Justice Antonin Scalia had died a few months earlier and his seat was still empty."
+    },
+    {
+      "start": 405.513,
+      "end": 409.925,
+      "text": "Justice Clarence Thomas wrote the majority opinion, joined by four colleagues."
+    },
+    {
+      "start": 410.225,
+      "end": 412.268,
+      "text": "Thomas walked through the three factors."
+    },
+    {
+      "start": 412.568,
+      "end": 415.54,
+      "text": "On the first, time, he admitted the state lost."
+    },
+    {
+      "start": 415.84,
+      "end": 422.017,
+      "text": "Only minutes passed between the illegal stop and the drugs, so that factor pointed toward throwing the evidence out."
+    },
+    {
+      "start": 422.317,
+      "end": 426.497,
+      "text": "But the other two, he wrote, pointed the other way, and carried more weight."
+    },
+    {
+      "start": 426.797,
+      "end": 430.977,
+      "text": "The second factor was the warrant, and for the majority it was close to decisive."
+    },
+    {
+      "start": 431.277,
+      "end": 434.621,
+      "text": "That warrant existed before the detective ever stopped Strieff."
+    },
+    {
+      "start": 434.921,
+      "end": 437.104,
+      "text": "It had nothing to do with the illegal stop."
+    },
+    {
+      "start": 437.404,
+      "end": 443.488,
+      "text": "It was valid, it was outstanding, and it commanded the detective to make an arrest the moment it surfaced."
+    },
+    {
+      "start": 443.788,
+      "end": 447.596,
+      "text": "That, the Court said, was a genuine intervening circumstance."
+    },
+    {
+      "start": 447.896,
+      "end": 452.076,
+      "text": "The arrest, and the search with it, flowed from the warrant, not the stop."
+    },
+    {
+      "start": 452.376,
+      "end": 457.949,
+      "text": "On the third factor, the majority found the detective's conduct was at most negligent, not flagrant."
+    },
+    {
+      "start": 458.249,
+      "end": 468.234,
+      "text": "He was investigating a real tip and made a bad call on the stop, but there was no sign he was deliberately abusing his power or stopping people at random hoping to get lucky."
+    },
+    {
+      "start": 468.534,
+      "end": 474.664,
+      "text": "Add it up, Thomas concluded, and the connection between the illegal stop and the drugs was attenuated."
+    },
+    {
+      "start": 474.964,
+      "end": 476.404,
+      "text": "The warrant broke the chain."
+    },
+    {
+      "start": 476.704,
+      "end": 478.144,
+      "text": "The evidence stays."
+    },
+    {
+      "start": 478.444,
+      "end": 483.645,
+      "text": "Then came the dissents, and this is where the case became one of the most quoted of the decade."
+    },
+    {
+      "start": 483.945,
+      "end": 489.1,
+      "text": "Justice Sonia Sotomayor wrote one of them, and part of it she wrote for herself alone."
+    },
+    {
+      "start": 489.4,
+      "end": 496.645,
+      "text": "She warned that the ruling gives police a reason to stop people they have no right to stop, because now an illegal stop can pay off."
+    },
+    {
+      "start": 496.945,
+      "end": 499.964,
+      "text": "Then she turned to what that means for the person on the sidewalk."
+    },
+    {
+      "start": 500.264,
+      "end": 510.434,
+      "text": "Speaking for the dissent, she wrote that this case tells everyone, white and black, guilty and innocent, that an officer can verify your legal status at any time."
+    },
+    {
+      "start": 510.734,
+      "end": 515.332,
+      "text": "It says that your body is subject to invasion while courts excuse the violation of your rights."
+    },
+    {
+      "start": 515.632,
+      "end": 522.784,
+      "text": "It implies that you are not a citizen of a democracy but the subject of a carceral state, just waiting to be cataloged."
+    },
+    {
+      "start": 523.084,
+      "end": 525.406,
+      "text": "This is not only about one group of people."
+    },
+    {
+      "start": 525.706,
+      "end": 527.796,
+      "text": "The man in this case was white."
+    },
+    {
+      "start": 528.096,
+      "end": 535.434,
+      "text": "As she put it, still speaking in dissent, the white defendant in this case shows that anyone's dignity can be violated in this manner."
+    },
+    {
+      "start": 535.734,
+      "end": 542.003,
+      "text": "Justice Elena Kagan wrote a second dissent, going after the incentive the majority had just handed the police."
+    },
+    {
+      "start": 542.303,
+      "end": 547.829,
+      "text": "Before this ruling, an officer who made an illegal stop got nothing for it, and that was the point."
+    },
+    {
+      "start": 548.129,
+      "end": 550.079,
+      "text": "Now, she warned, the math changes."
+    },
+    {
+      "start": 550.379,
+      "end": 554.698,
+      "text": "The officer's incentive to violate the Constitution thus increases, she wrote."
+    },
+    {
+      "start": 554.998,
+      "end": 565.447,
+      "text": "From here on, he sees potential advantage in stopping individuals without reasonable suspicion, which she called exactly the temptation the exclusionary rule is supposed to remove."
+    },
+    {
+      "start": 565.747,
+      "end": 568.162,
+      "text": "But the dissent is the side that lost."
+    },
+    {
+      "start": 568.462,
+      "end": 570.134,
+      "text": "Three votes, not five."
+    },
+    {
+      "start": 571.934,
+      "end": 576.206,
+      "text": "So go back to the man walking out of that house, and the question we started with."
+    },
+    {
+      "start": 576.506,
+      "end": 583.333,
+      "text": "If an officer stops you for no reason and then runs your name, can what he finds afterward be used against you."
+    },
+    {
+      "start": 583.633,
+      "end": 592.549,
+      "text": "After 2016, the honest answer is that it can, so long as the search that turns it up is tied to something like a warrant rather than to the stop itself."
+    },
+    {
+      "start": 592.849,
+      "end": 596.1,
+      "text": "Sit with how much rides on that one word, attenuation."
+    },
+    {
+      "start": 596.4,
+      "end": 598.118,
+      "text": "The stop was still illegal."
+    },
+    {
+      "start": 598.418,
+      "end": 600.415,
+      "text": "The Court never pretended otherwise."
+    },
+    {
+      "start": 600.715,
+      "end": 608.61,
+      "text": "What changed is that an old, unrelated warrant, sitting in a database, was enough to rescue the evidence that the illegal stop delivered."
+    },
+    {
+      "start": 608.91,
+      "end": 611.0,
+      "text": "The wrong done to Strieff did not disappear."
+    },
+    {
+      "start": 611.3,
+      "end": 614.319,
+      "text": "It just stopped mattering to whether the drugs came into court."
+    },
+    {
+      "start": 614.619,
+      "end": 617.777,
+      "text": "Here is why this reaches far past one man in Utah."
+    },
+    {
+      "start": 618.077,
+      "end": 628.526,
+      "text": "A very large number of Americans have some kind of outstanding warrant, very often for something small, an unpaid fine, a missed court date, an old traffic ticket."
+    },
+    {
+      "start": 628.826,
+      "end": 640.25,
+      "text": "If you are one of them, an officer who stops you with no legal reason can run your name, find that warrant, arrest you, and search you, and under this rule most of what he finds will hold up."
+    },
+    {
+      "start": 640.55,
+      "end": 642.918,
+      "text": "The illegal stop becomes almost free."
+    },
+    {
+      "start": 643.218,
+      "end": 645.819,
+      "text": "That is the fault line the dissents were pointing at."
+    },
+    {
+      "start": 646.119,
+      "end": 655.5,
+      "text": "The logic quietly rewards the very thing the Fourth Amendment is supposed to prevent, and when breaking the rules can still win the prize, the rule against breaking them gets weaker."
+    },
+    {
+      "start": 655.8,
+      "end": 657.565,
+      "text": "Strieff's case is settled now."
+    },
+    {
+      "start": 657.865,
+      "end": 665.853,
+      "text": "What it left behind is a door held open, a rule that lets an unlawful stop pay off whenever a warrant happens to be waiting on the other side."
+    },
+    {
+      "start": 666.153,
+      "end": 675.023,
+      "text": "The next time you hear that an illegal search means the evidence gets thrown out, remember the man in the parking lot, and how much can depend on one thinned out chain."
+    },
+    {
+      "start": 675.323,
+      "end": 680.989,
+      "text": "If you would rather understand where your rights actually bend before the afternoon you need them, stay with us."
+    },
+    {
+      "start": 681.289,
+      "end": 686.815,
+      "text": "At Prime Documentary, we read the fine print of the Constitution out loud, one case at a time."
+    }
+  ],
+  "graphics": [],
+  "figures": [
+    {
+      "start": 10.115,
+      "end": 15.515,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction"
+    },
+    {
+      "start": 27.744,
+      "end": 33.144,
+      "kind": "kinetic",
+      "lines": [
+        "THE WARRANT",
+        "IN YOUR POCKET"
+      ],
+      "style": "maskslide",
+      "emphasisWords": [
+        "WARRANT"
+      ]
+    },
+    {
+      "start": 45.373,
+      "end": 50.773,
+      "kind": "pindropmap",
+      "pins": [
+        {
+          "x": 0.62,
+          "y": 0.44,
+          "label": "South Salt Lake City, Utah"
+        }
+      ]
+    },
+    {
+      "start": 70.367,
+      "end": 75.767,
+      "kind": "kinetic",
+      "lines": [
+        "A STOP",
+        "WITH NO REASON"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "NO REASON"
+      ]
+    },
+    {
+      "start": 82.725,
+      "end": 88.125,
+      "kind": "lowerthird",
+      "primary": "The exclusionary rule",
+      "secondary": "illegal searches are normally thrown out"
+    },
+    {
+      "start": 95.083,
+      "end": 100.483,
+      "kind": "acttitle",
+      "title": "THE ILLEGAL STOP",
+      "kicker": "UTAH v. STRIEFF"
+    },
+    {
+      "start": 107.441,
+      "end": 112.841,
+      "kind": "lowerthird",
+      "primary": "Utah v. Strieff, 579 U.S. 232",
+      "secondary": "the U.S. Supreme Court"
+    },
+    {
+      "start": 130.965,
+      "end": 136.365,
+      "kind": "acttitle",
+      "title": "THE STOP",
+      "kicker": "ACT ONE",
+      "index": 1
+    },
+    {
+      "start": 145.655,
+      "end": 151.055,
+      "kind": "routemap",
+      "label": "the chain from an illegal stop to the evidence",
+      "pins": [
+        {
+          "x": 0.12,
+          "y": 0.6,
+          "label": "illegal stop"
+        },
+        {
+          "x": 0.36,
+          "y": 0.48,
+          "label": "ID check"
+        },
+        {
+          "x": 0.6,
+          "y": 0.58,
+          "label": "warrant hit"
+        },
+        {
+          "x": 0.84,
+          "y": 0.48,
+          "label": "arrest and search"
+        }
+      ]
+    },
+    {
+      "start": 160.345,
+      "end": 165.745,
+      "kind": "kinetic",
+      "lines": [
+        "THE STOP",
+        "WAS ILLEGAL"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "ILLEGAL"
+      ]
+    },
+    {
+      "start": 175.035,
+      "end": 180.435,
+      "kind": "lowerthird",
+      "primary": "No reasonable suspicion",
+      "secondary": "the State conceded the stop was illegal"
+    },
+    {
+      "start": 189.725,
+      "end": 195.125,
+      "kind": "mechanism",
+      "mechanism": "faultsplit",
+      "label": "the pre-existing warrant surfaces - the intervening circumstance"
+    },
+    {
+      "start": 204.415,
+      "end": 209.815,
+      "kind": "stat",
+      "value": 4,
+      "label": "THE FOURTH AMENDMENT - unreasonable searches and seizures"
+    },
+    {
+      "start": 219.105,
+      "end": 224.505,
+      "kind": "lowerthird",
+      "primary": "Detective Fackrell",
+      "secondary": "South Salt Lake City police"
+    },
+    {
+      "start": 233.795,
+      "end": 239.195,
+      "kind": "bar",
+      "items": [
+        {
+          "label": "time",
+          "value": 1
+        },
+        {
+          "label": "warrant",
+          "value": 2
+        },
+        {
+          "label": "flagrancy",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "start": 258.646,
+      "end": 264.046,
+      "kind": "acttitle",
+      "title": "THE EXCLUSIONARY RULE",
+      "kicker": "ACT TWO",
+      "index": 2
+    },
+    {
+      "start": 273.657,
+      "end": 279.057,
+      "kind": "brightline",
+      "mode": "draw"
+    },
+    {
+      "start": 288.668,
+      "end": 294.068,
+      "kind": "lowerthird",
+      "primary": "Fruit of the poisonous tree",
+      "secondary": "the stop poisons what grows from it"
+    },
+    {
+      "start": 303.68,
+      "end": 309.08,
+      "kind": "kinetic",
+      "lines": [
+        "ATTENUATION"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 318.691,
+      "end": 324.091,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "minutes - favors suppression",
+          "value": 1
+        },
+        {
+          "label": "the warrant - favors admission",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "start": 333.703,
+      "end": 339.103,
+      "kind": "stat",
+      "value": 3,
+      "label": "BROWN v. ILLINOIS FACTORS"
+    },
+    {
+      "start": 348.714,
+      "end": 354.114,
+      "kind": "mechanism",
+      "mechanism": "faultsplit",
+      "label": "did the warrant snap the chain?"
+    },
+    {
+      "start": 363.725,
+      "end": 369.125,
+      "kind": "kinetic",
+      "lines": [
+        "DID THE WARRANT",
+        "BREAK THE CHAIN?"
+      ],
+      "style": "maskslide",
+      "emphasisWords": [
+        "WARRANT"
+      ]
+    },
+    {
+      "start": 390.281,
+      "end": 395.681,
+      "kind": "acttitle",
+      "title": "THE RULING",
+      "kicker": "ACT THREE",
+      "index": 3
+    },
+    {
+      "start": 408.381,
+      "end": 413.781,
+      "kind": "numberticker",
+      "value": 2016,
+      "label": "decided - Supreme Court",
+      "group": false
+    },
+    {
+      "start": 426.482,
+      "end": 431.882,
+      "kind": "votetally",
+      "majority": 5,
+      "dissent": 3,
+      "label": "an 8-justice court - Scalia's seat empty"
+    },
+    {
+      "start": 444.582,
+      "end": 449.982,
+      "kind": "stat",
+      "value": 8,
+      "topLabel": "5-3",
+      "label": "JUSTICES SAT - SCALIA'S SEAT WAS EMPTY"
+    },
+    {
+      "start": 462.682,
+      "end": 468.082,
+      "kind": "quote",
+      "quote": "It implies that you are not a citizen of a democracy but the subject of a carceral state, just waiting to be cataloged.",
+      "attribution": "Justice Sotomayor, dissenting"
+    },
+    {
+      "start": 480.783,
+      "end": 486.183,
+      "kind": "lowerthird",
+      "primary": "Justice Clarence Thomas",
+      "secondary": "for the majority"
+    },
+    {
+      "start": 498.883,
+      "end": 504.283,
+      "kind": "quote",
+      "quote": "The officer's incentive to violate the Constitution thus increases.",
+      "attribution": "Justice Kagan, dissenting"
+    },
+    {
+      "start": 516.983,
+      "end": 522.383,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "flagrancy - at most negligent",
+          "value": 1
+        },
+        {
+          "label": "the majority - favors admission",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "start": 535.084,
+      "end": 540.484,
+      "kind": "mechanism",
+      "mechanism": "faultsplit",
+      "label": "the warrant broke the chain - the evidence stayed"
+    },
+    {
+      "start": 553.184,
+      "end": 558.584,
+      "kind": "quote",
+      "quote": "The white defendant in this case shows that anyone's dignity can be violated in this manner.",
+      "attribution": "Justice Sotomayor, dissenting"
+    },
+    {
+      "start": 584.657,
+      "end": 590.057,
+      "kind": "kinetic",
+      "lines": [
+        "THE ILLEGAL STOP",
+        "BECOMES ALMOST FREE"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "FREE"
+      ]
+    },
+    {
+      "start": 609.502,
+      "end": 614.902,
+      "kind": "statemap",
+      "label": "outstanding warrants exist across the country - often for something small"
+    },
+    {
+      "start": 634.347,
+      "end": 639.747,
+      "kind": "mechanism",
+      "mechanism": "closingdoor",
+      "label": "a door held open - an unlawful stop pays off when a warrant is waiting"
+    },
+    {
+      "start": 659.192,
+      "end": 664.592,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction"
+    }
+  ],
+  "overlays": [
+    "strieff/overlay/AF-LIGHT-1275__anamorphic_lens_flare_blue.mp4",
+    "strieff/overlay/AF-LIGHT-1943__caustics_water_light.mp4",
+    "strieff/overlay/AF-LIGHT-3672__headlights_in_rain.mp4",
+    "strieff/overlay/AF-LIGHT-5940__moonlight_through_clouds.mp4",
+    "strieff/overlay/AF-LIGHT-4564__soft_golden_light.mp4",
+    "strieff/overlay/AF-PART-0428__ash_falling.mp4",
+    "strieff/overlay/AF-PART-3957__embers_rising_black_background.mp4",
+    "strieff/overlay/AF-PART-1154__rain_particles_backlit.mp4",
+    "strieff/overlay/AF-VFX-1661__cloud_time_lapse_dark.mp4",
+    "strieff/overlay/AF-VFX-0652__ink_in_water.mp4",
+    "strieff/overlay/AF-LOOP-0001__abstract_loop_dark.mp4",
+    "strieff/overlay/AF-LOOP-0389__looping_gradient_navy.mp4"
+  ]
+}

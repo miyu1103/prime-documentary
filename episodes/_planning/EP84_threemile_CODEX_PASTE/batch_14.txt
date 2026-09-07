@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 14/24（8枚）
+区分: ACT_4 — 何を支払ったか
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T105.png
+   [T105]  flags: 
+   A civil defence siren on a pole against a bright overcast sky
+
+2) T106.png
+   [T106]  flags: 
+   A small-town main street in central Pennsylvania in 1979, bright flat daylight, 1979 cars
+
+3) T107.png
+   [T107]  flags: 
+   A farmhouse porch in bright daylight with fields beyond, early spring, bare trees
+
+4) T108.png
+   [T108]  flags: 
+   A school bus parked outside a small-town school in bright daylight, 1979
+
+5) T109.png
+   [T109]  flags: 
+   A pharmacy counter of 1979 seen from the customer side, shelves of plain bottles, strip light
+
+6) T110.png
+   [T110]  flags: 
+   An empty pharmacy shelf, close, one hard light, no labels visible
+
+7) T111.png
+   [T111]  flags: 
+   A television set of 1979 on a stand in a living room, the screen a plain bright glow, curtains drawn
+
+8) T112.png
+   [T112]  flags: 
+   A radio on a kitchen table in 1979, morning light through the window

@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-026-katz",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Katz v. United States (1967) the Supreme Court held that the Government's electronic listening to and recording of Katz's telephone-booth conversation violated the privacy on which he justifiably relied and therefore constituted a 'search and seizure' within the meaning of the Fourth Amendment, even though there was no physical entry into or trespass upon the booth.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Stewart, J.), holding that the surveillance was a 'search and seizure'"],
+      "counterevidence": ["Justice Black, dissenting, argued that intangible spoken words overheard by eavesdropping cannot be the subject of a Fourth Amendment 'search' or 'seizure'."],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled that secretly recording his words in the booth was a search under the Fourth Amendment, even though no one physically entered the booth."
+      ],
+      "prohibited_wording": [
+        "The Court banned wiretapping.",
+        "The Court said the police can never record a suspect's calls."
+      ],
+      "temporal_scope": "1967-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source. A search occurred without any physical intrusion."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Katz v. United States was decided on December 18, 1967 by a 7-1 vote; Justice Potter Stewart wrote the opinion of the Court, Justice Hugo Black was the lone dissenter, Justice Thurgood Marshall took no part in the case, and Justices Harlan, White and Douglas (joined by Brennan) filed concurring opinions.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Syllabus / decision date and lineup", "Oyez: decision, vote and lineup"],
+      "counterevidence": [],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "In a 7-1 decision in 1967, Justice Stewart wrote for the Court and Justice Black dissented alone."
+      ],
+      "prohibited_wording": [
+        "The decision was unanimous.",
+        "The decision was 5-4."
+      ],
+      "temporal_scope": "1967",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/vote/author/lineup per the syllabus; Marshall recused (took no part). Harlan's opinion is a concurrence, not the majority."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "Justice Stewart's majority opinion declared that 'the Fourth Amendment protects people, not places,' rejecting the idea that Fourth Amendment protection turns on whether a constitutionally protected physical area was penetrated.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Stewart, J.), 'the Fourth Amendment protects people, not places'"],
+      "counterevidence": [],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court wrote that the Fourth Amendment protects people, not places."
+      ],
+      "prohibited_wording": [
+        "The Court said places no longer matter at all under the Fourth Amendment."
+      ],
+      "temporal_scope": "1967-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Signature exact public-domain quote from the majority."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The majority reasoned that what a person knowingly exposes to the public is not protected by the Fourth Amendment, but what he seeks to preserve as private, even in an area accessible to the public, may be constitutionally protected.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Stewart, J.), 'what a person knowingly exposes to the public' passage"],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "The Court said what you knowingly expose to the public is not protected, but what you try to keep private can be protected even in a public place."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1967-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Exact public-domain passage; the doctrinal hinge between exposure and privacy."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "In 1965, FBI agents investigating illegal gambling attached an electronic listening-and-recording device to the outside of a public glass telephone booth in Los Angeles that Charles Katz regularly used, and recorded his end of calls in which he transmitted wagering information by telephone across state lines to Miami and Boston; the agents never physically entered the booth.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Opinion of the Court (Stewart, J.), facts", "Oyez: facts of the case"],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "In 1965, FBI agents taped a recording device to the outside of a public phone booth in Los Angeles that Katz used to place illegal betting calls."
+      ],
+      "prohibited_wording": [
+        "The agents broke into the booth.",
+        "The agents drilled through or entered the booth."
+      ],
+      "temporal_scope": "1965",
+      "geographic_scope": "Los Angeles, California, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real people by role; facts per the opinion, cross-checked on Oyez. The device was on the OUTSIDE; no physical penetration. Depict gambling only as the factual reason for surveillance, never glamorized."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "The majority reasoned that a person who enters a telephone booth, shuts the door behind him, and pays the toll that lets him place a call is entitled to assume that the words he speaks into the mouthpiece will not be broadcast to the world.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Stewart, J.), telephone-booth passage"],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "The Court said a man who shuts the booth door and pays the toll is entitled to assume his words are not being broadcast to the world."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1967",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Exact public-domain passage; the intuitive heart of the ruling."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "The Court held that the reach of the Fourth Amendment does not depend on a physical intrusion into any given enclosure, concluding that the 'trespass' doctrine of Olmstead v. United States and Goldman v. United States had been so eroded by later decisions that it could no longer be regarded as controlling.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Stewart, J.), rejection of the physical-trespass doctrine and discussion of Olmstead and Goldman"],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "The Court set aside the old rule that a search required a physical trespass, saying the trespass doctrine of Olmstead could no longer control."
+      ],
+      "prohibited_wording": [
+        "The Court said trespass no longer matters for any Fourth Amendment question."
+      ],
+      "temporal_scope": "1967",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The doctrinal overturning of the earlier physical-penetration rule; central to the 'places to people' shift."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "The Court held that searches conducted without prior approval by a judge or magistrate are, subject to a few well-delineated exceptions, per se unreasonable, and that although the FBI agents had probable cause and acted with restraint, their electronic surveillance was unconstitutional because they did not obtain advance authorization from a neutral magistrate — that is, a warrant.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Stewart, J.), warrant / prior-judicial-authorization requirement"],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "The Court said the surveillance was unconstitutional not because agents lacked cause, but because they never got a warrant from a judge before listening."
+      ],
+      "prohibited_wording": [
+        "The Court ruled all electronic surveillance illegal.",
+        "The Court said the government could never record Katz's calls."
+      ],
+      "temporal_scope": "1967-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Anti-overstatement claim: Katz required prior judicial authorization (a warrant); it did not ban wiretapping. The opinion notes agents could likely have obtained a warrant had they asked."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "In a concurring opinion, Justice John Marshall Harlan set out a two-part test for when the Fourth Amendment applies: first, that a person has exhibited an actual, subjective expectation of privacy, and second, that the expectation is one that society is prepared to recognize as reasonable.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Concurring opinion (Harlan, J.), two-part expectation-of-privacy formulation"],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In his concurrence, Justice Harlan described a two-part test: an actual expectation of privacy that society is prepared to accept as reasonable."
+      ],
+      "prohibited_wording": [
+        "The majority opinion created the reasonable-expectation-of-privacy test.",
+        "The Court's holding was the two-part privacy test."
+      ],
+      "temporal_scope": "1967",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "MUST be presented as Harlan's concurrence, not the majority holding. This is the origin of the later-adopted standard."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "Justice Hugo Black dissented alone, arguing that the Fourth Amendment protects tangible things — persons, houses, papers and effects — against physical search and seizure, and that eavesdropping on spoken words that are not tangible and cannot be 'seized' falls outside its text.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Dissenting opinion (Black, J.)"],
+      "counterevidence": ["The majority rejected this, holding that the Fourth Amendment governs the recording of oral statements and is not confined to the seizure of tangible items."],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "Justice Black dissented, arguing the Fourth Amendment covers only tangible things and not overheard conversations."
+      ],
+      "prohibited_wording": [
+        "All the justices agreed it was a search."
+      ],
+      "temporal_scope": "1967",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Dissent for balance; Black was the sole dissenter."
+    },
+    {
+      "claim_id": "CLM-0011",
+      "normalized_claim": "Harlan's two-part 'reasonable expectation of privacy' formulation, though only a concurrence in 1967, was later embraced by the courts as the standard test for what counts as a Fourth Amendment search, making Katz the foundation of modern privacy doctrine as surveillance technology has evolved.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": ["SRC-0002"],
+      "evidence_locations": ["Oyez: significance / legacy of the 'reasonable expectation of privacy' standard"],
+      "counterevidence": ["Commentators note that what society is 'prepared to recognize as reasonable' shifts as surveillance becomes more common, so the test's protection is contested and evolving."],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "Harlan's concurrence later became the standard test courts use to decide what is a search, making Katz the base of modern privacy law."
+      ],
+      "prohibited_wording": [
+        "Katz settled every question about modern surveillance."
+      ],
+      "temporal_scope": "1967-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Legacy/interpretation kept neutral; B-grade context framed as a later development and an ongoing debate, not settled fact."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable content hashes captured for both sources (2026-07-04): SRC-0001 Cornell LII primary opinion text page; SRC-0002 Oyez case JSON (public HTML is a JS shell).",
+      "No E-grade claims. All script factual spans map to A-grade primary-source claims except CLM-0011 (B, legacy/interpretation), which is framed as a later development and ongoing debate.",
+      "Anti-overstatement guard (CLM-0008): Katz required prior judicial authorization (a warrant); it did not ban wiretapping. Reasonable-expectation-of-privacy (CLM-0009) is Harlan's concurrence, not the majority holding."
+    ]
+  }
+}

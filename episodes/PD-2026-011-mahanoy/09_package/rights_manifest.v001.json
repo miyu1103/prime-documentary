@@ -1,0 +1,71 @@
+{
+  "episode_id": "PD-2026-011-mahanoy",
+  "revision": "v001",
+  "status": "cleared_for_scheduled_publication",
+  "commercial_use": "allowed",
+  "no_publication_approval": false,
+  "no_upload_performed": false,
+  "video_file": "H:\\pd-media\\episodes\\PD-2026-011-mahanoy\\08_edit\\mahanoy_premium_v001.mp4",
+  "video_sha256": "sha256:898ee186255dc54989a944cb92e4d174e1e8603b77c4a75faf9a461497eaac87",
+  "selected_thumbnail": "episodes/PD-2026-011-mahanoy/09_package/thumbnail.selected.v002.png",
+  "thumbnail_sha256": "sha256:cf3c4b111889efbc4facc222591d8e2c2fc15d6d585a1f2dbe2d3b76f5789da0",
+  "assertions": {
+    "no_minor_likeness": true,
+    "profanity_never_displayed": true,
+    "profanity_never_spoken": true,
+    "ai_visuals_symbolic_not_evidence": true,
+    "no_real_person_portraits": true,
+    "stock_and_factory_assets_license_allowed_only": true
+  },
+  "assets": [
+    {
+      "type": "narration_audio",
+      "hash": "sha256:2d034056c7b5515cdb8cf613e88150cacb76daa6357b82ad37078281749c3d7d",
+      "producer": "ElevenLabs",
+      "file": "artifact://episodes/PD-2026-011-mahanoy/06_voice/master/vc_master_v001.mp3",
+      "id": "AST-VOICE-001",
+      "rights_basis": "commercial plan / owner-authorized generation"
+    },
+    {
+      "type": "final_audio_mix",
+      "hash": "sha256:c53db2cd40988c6888c1c0d950c7a2e64b2097b78416d1c04a27890897a13ee0",
+      "producer": "Prime Documentary",
+      "file": "remotion/public/mahanoy/audio/mahanoy_final_mix_v001.mp3",
+      "id": "AST-MIX-001",
+      "rights_basis": "ElevenLabs narration + licensed library music/SFX/ambience"
+    },
+    {
+      "file": "artifact://assets/ai/mahanoy/SPN-*.png",
+      "id": "AST-VISUAL-001",
+      "rights_basis": "generated owned; symbolic reconstructions; no real-person likeness",
+      "type": "ai_visuals",
+      "producer": "Codex/SDXL AI-assisted"
+    },
+    {
+      "file": "episodes/PD-2026-011-mahanoy/05_stock/stock_ledger.v001.json",
+      "id": "AST-STOCK-001",
+      "rights_basis": "ledgered commercial-use assets",
+      "type": "stock_assets",
+      "producer": "Pexels/Pixabay/library"
+    },
+    {
+      "file": "episodes/PD-2026-011-mahanoy/08_edit/factory_assets.v001.json",
+      "id": "AST-FACTORY-001",
+      "rights_basis": "license allowed only",
+      "type": "factory_finish_assets",
+      "producer": "Prime Documentary asset factory"
+    },
+    {
+      "file": "remotion/src/compositions/MahanoyPremium.tsx",
+      "id": "AST-CODE-001",
+      "rights_basis": "original code animation",
+      "type": "motion_graphics",
+      "producer": "Prime Documentary"
+    }
+  ],
+  "publication_approval": "APR-0002",
+  "youtube_video_id": "cSfe3iGnBBM",
+  "scheduled_at_local": "2026-06-26T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-26T03:00:00Z",
+  "thumbnail_revision": "v002"
+}

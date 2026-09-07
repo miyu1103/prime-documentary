@@ -1,0 +1,144 @@
+{
+  "_generated_by": "scripts/build_production_spec.py",
+  "_source_of_truth": "This file is DERIVED from the finalised script. Do not hand-edit it, and do not restate these numbers in prose documents -- generate from here. The EP39/EP40 document set accrued 28 blocker-level contradictions precisely because the same facts were hand-copied into six files.",
+  "schema": "pd_production_spec.v1",
+  "episode_id": "PD-2026-048-glover",
+  "ep": "EP48",
+  "slug": "glover",
+  "script_file": "EP48_glover_script.en.v001.md",
+  "wpm_used": 178.1,
+  "words_total": 2136,
+  "narration_seconds": 719.6,
+  "acts": [
+    {
+      "heading": "[HOOK]",
+      "scene_codes": [],
+      "words": 196,
+      "seconds": 66.0
+    },
+    {
+      "heading": "[OPENING]",
+      "scene_codes": [],
+      "words": 145,
+      "seconds": 48.8
+    },
+    {
+      "heading": "[ACT_1]",
+      "scene_codes": [],
+      "words": 332,
+      "seconds": 111.8
+    },
+    {
+      "heading": "[ACT_2]",
+      "scene_codes": [],
+      "words": 409,
+      "seconds": 137.8
+    },
+    {
+      "heading": "[ACT_3]",
+      "scene_codes": [],
+      "words": 597,
+      "seconds": 201.1
+    },
+    {
+      "heading": "[ENDING]",
+      "scene_codes": [],
+      "words": 389,
+      "seconds": 131.0
+    },
+    {
+      "heading": "SELF-CHECK (author, 3 passes)",
+      "scene_codes": [],
+      "words": 259,
+      "seconds": 87.3
+    }
+  ],
+  "scenes": {
+    "source": "derive",
+    "codes": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23",
+      "S24",
+      "S25",
+      "S26",
+      "S27",
+      "S28",
+      "S29",
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36",
+      "S37",
+      "S38",
+      "S39",
+      "S40",
+      "S41",
+      "S42",
+      "S43",
+      "S44",
+      "S45",
+      "S46",
+      "S47",
+      "S48"
+    ],
+    "count": 48
+  },
+  "assets": {
+    "total_cuts": 225,
+    "still": {
+      "distinct": 85,
+      "cuts": 101,
+      "mean_uses": 1.19,
+      "cap": 2
+    },
+    "factory": {
+      "distinct": 92,
+      "cuts": 92,
+      "mean_uses": 1.0,
+      "cap": 1
+    },
+    "motion": {
+      "distinct": 16,
+      "cuts": 32,
+      "mean_uses": 2.0,
+      "cap": 2
+    },
+    "distinct_total": 193,
+    "first_use_share": 0.8578,
+    "first_use_floor": 0.7,
+    "still_share_of_cuts": 0.4489,
+    "still_share_cap": 0.45
+  },
+  "motion": {
+    "beats_floor": 30,
+    "beats_per_min_floor": 2.5,
+    "variety_floor": 3,
+    "note": "check_motion_density counts graphics+figures+heroCuts inside film.json ONLY. AE cards composited afterwards do NOT count toward it -- both EP39 and EP40 planned around AE cards and would have failed. Put beats_floor beats in film.json regardless of AE."
+  },
+  "mean_shot_seconds": 3.2,
+  "max_shot_seconds": 6.0
+}

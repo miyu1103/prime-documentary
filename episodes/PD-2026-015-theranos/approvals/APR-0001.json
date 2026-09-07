@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-015-theranos",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T08:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T08:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner delegated EP10-15 topic selection to Claude and approved proceeding to the end. Content/direction sign-off for the Theranos finale script v001, bound to content_hash sha256:b839847e1f8ad5fe4bdb9b9f59b50e6cd3dca7a1480af14cde2a21dfc0cba31d — re-approval if revision/hash changes (rules/12). Facts web-verified 2026-06-20 against DOJ/SEC records. This is an R3 episode about a living, convicted person: this content sign-off does NOT substitute for the required pre-publish rights/legal review.",
+  "conditions": [
+    "R3 PRE-PUBLISH GATE: a dedicated rights/legal review is REQUIRED before any upload/publish (rights_status=review_required).",
+    "PHRASING: investor-fraud counts = convictions (fact); patient counts = 'acquitted'; 3 counts = 'mistrial/no verdict' (never 'guilty'); acquittal != exoneration / != tech worked (CLM-0010); attribute intent to jury/court.",
+    "NO real-person likeness/deepfake of Holmes or Balwani; visuals symbolic + AI-disclosed. Capture durable content hashes for SRC-0001..0004 before publish."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-015-theranos/03_script/script.annotated.v001.json"
+}

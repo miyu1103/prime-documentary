@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "note": "Tier-K motion graphics rendered as code (Remotion + FFmpeg). These are exact, data-driven and animatable — NOT generated images. Palette dark/gold; the return LINE uses the single cold accent. NO pink. Citations burn in for major claims, linked to claim_id.",
+  "reusable_components": [
+    "ReturnLine: the hero curve (data-driven, smooth, always-rising), with optional annotation overlay and a 'jagged real-market' comparison line",
+    "PonziLoop: closed circle of new->old hands passing coins; can speed up then seize",
+    "NumberMorph: large gold figure that morphs/shrinks (e.g. $65,000,000,000 -> $17,500,000,000)",
+    "Timeline: horizontal date ribbon with pins, used for the whistleblower-warning years and the 1999->2008->2009->2021 arc",
+    "CitationLowerThird: small-caps source label tied to claim_id, burned in",
+    "OpenCaption: burned-in styled subtitles, bottom third",
+    "ChapterCard / QuoteCard: minimal gold-on-black title and pull-quote cards"
+  ],
+  "key_graphics": [
+    {"id": "G01", "section": "00_hook", "component": "ReturnLine", "spec": "The Line draws on from left to right, climbing smoothly, never dipping; hold. This is the cold-open image.", "claim_ids": ["CLM-0006"]},
+    {"id": "G02", "section": "actI_trust", "component": "ReturnLine", "spec": "Same line continues through good and bad market shading in the background; it stays smooth while the background turns stormy.", "claim_ids": ["CLM-0006"]},
+    {"id": "G03", "section": "actII_system", "component": "PonziLoop", "spec": "Coins pass new-hand -> old-hand around a closed ring labeled (caption) 'paid with the next investor's money'; ring spins faster, then locks when inflow stops.", "claim_ids": ["CLM-0003"]},
+    {"id": "G04", "section": "actII_system", "component": "NumberMorph", "spec": "$65B (label: 'on the statements') shrinks/peels away fictional profit to ~$17.5B (label: 'real cash lost'). The gap is highlighted.", "claim_ids": ["CLM-0004"]},
+    {"id": "G05", "section": "actII_system", "component": "CitationLowerThird", "spec": "'SIPA Trustee estimate' under the $17.5B figure.", "claim_ids": ["CLM-0004"]},
+    {"id": "G06", "section": "actIII_math", "component": "ReturnLine", "spec": "The Line gets hand-annotated: circles on the impossibly smooth stretches, a scrawled 'impossible'.", "claim_ids": ["CLM-0006", "CLM-0005"]},
+    {"id": "G07", "section": "actIII_math", "component": "Timeline", "spec": "Warning years pin in one by one (2000, 2001, 2005, 2007, 2008) toward an unmoving SEC marker. NOTE: lock exact years to SEC OIG before render.", "claim_ids": ["CLM-0005"]},
+    {"id": "G08", "section": "actIII_math", "component": "CitationLowerThird", "spec": "'SEC Office of Inspector General report, 2009' on the failure beat.", "claim_ids": ["CLM-0011"]},
+    {"id": "G09", "section": "actIV_collapse", "component": "ChapterCard", "spec": "'150 YEARS' card, gold on black, after a held silence beat.", "claim_ids": ["CLM-0002"]},
+    {"id": "G10", "section": "actIV_collapse", "component": "Timeline", "spec": "Arc: Dec 2008 arrest -> Mar 2009 plea (11 felonies) -> Jun 2009 sentence -> 2021 death.", "claim_ids": ["CLM-0007", "CLM-0001", "CLM-0002", "CLM-0010"]},
+    {"id": "G11", "section": "actIV_collapse", "component": "NumberMorph", "spec": "Recovery: a bar rising to '>90% of real losses recovered' with caveat caption 'not everyone; some institutions closed'.", "claim_ids": ["CLM-0009"]},
+    {"id": "G12", "section": "ending", "component": "ReturnLine", "spec": "Final reveal: the smooth Line beside a jagged real line; caption 'too smooth = warning'. The smooth one is marked as the red flag.", "claim_ids": ["CLM-0006"]}
+  ],
+  "global": {
+    "captions": "open captions burned in for the whole film, force-aligned to the narration master",
+    "citation_policy": "burn a source lower-third for every on-screen factual number, linked to claim_id",
+    "disclaimer": "cold-open + persistent-in-description: 'Dramatized symbolic reconstruction. Not financial or legal advice.'",
+    "forbidden": ["pink", "any real-person likeness", "presenting graphics as authentic footage"]
+  },
+  "status": "spec_ready_for_codex"
+}

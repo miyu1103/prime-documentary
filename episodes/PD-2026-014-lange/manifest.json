@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-014-lange",
+  "topic_id": "TOP-20260620-014",
+  "slug": "lange",
+  "title_working": "Can a Police Officer Follow You Into Your Own Home?",
+  "state": "script_verified",
+  "risk_class": "R2",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {"topic": "v001", "sources": "v001", "claims": "v001", "script": "v001", "script_qc": "v001"},
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-014-lange-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-014-lange/03_script/script.annotated.v001.json",
+      "checksum": "sha256:76fd7617f50f0ea9ef79f1389294cf4ffef1522c9a7ab18223145ab7e88981dd",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": ["APR-0001"],
+  "costs": {"estimated": {"amount": 0, "currency": "USD"}, "actual": {"amount": 0, "currency": "USD"}, "soft_limit": {"amount": 100, "currency": "USD"}, "hard_limit": {"amount": 200, "currency": "USD"}},
+  "warnings": [
+    "Claude owns research+script; Codex begins at scenes/visuals. Use rights-clean real footage (references/README.md, H:/pd-media/assets/stock). Image gen = Codex; edit = Remotion+FFmpeg.",
+    "script_qc PASS (no AI-filler), timing ~10.3min; promoted to script_verified.",
+    "VOTE FRAMING (critical): say 'unanimous in the JUDGMENT / 9-0 to vacate & remand', NOT 'unanimous opinion'. Roberts (joined Alito) concurred only in the judgment and favored a broader hot-pursuit rule — present both rationales fairly (CLM-0002/0008).",
+    "The question is about misdemeanor FLIGHT, not the DUI (CLM-0006). Arthur Lange (DUI, public record) by role, neutral; no real-person likeness in AI visuals. Keep neutral on policing.",
+    "Heavy media on the external SSD (H:\\pd-media), not in this repo."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-20T07:00:00+09:00",
+  "updated_at": "2026-06-20T07:00:00+09:00"
+}

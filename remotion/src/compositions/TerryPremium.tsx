@@ -1,0 +1,542 @@
+import React from 'react';
+import {
+  AbsoluteFill,
+  Img,
+  Sequence,
+  interpolate,
+  spring,
+  staticFile,
+  useCurrentFrame,
+  useVideoConfig,
+} from 'remotion';
+import {BRAND} from '../brand';
+import {BrandEndcard, BrandOpening, ENDCARD_SEC, OPENING_SEC} from '../components/Bookends';
+import {Grain} from '../components/Grain';
+import {LightSweep, Particles, Vignette} from '../components/Motion';
+
+const TOTAL_SEC = 672 + ENDCARD_SEC;
+const INK = BRAND.color.ink;
+const NAVY = BRAND.color.navy;
+const BLUE = BRAND.color.electric;
+const GOLD = BRAND.color.gold;
+const WHITE = BRAND.color.white;
+const SILVER = BRAND.color.silver;
+
+type Kind =
+  | 'pov'
+  | 'wall'
+  | 'image'
+  | 'counter'
+  | 'observer'
+  | 'type'
+  | 'risk'
+  | 'charge'
+  | 'scale'
+  | 'question'
+  | 'ruling'
+  | 'facts'
+  | 'frisk'
+  | 'boundary'
+  | 'equation'
+  | 'dissent'
+  | 'modern'
+  | 'pressure'
+  | 'line'
+  | 'objects'
+  | 'phone'
+  | 'end';
+
+type Scene = {
+  id: string;
+  kind: Kind;
+  start: number;
+  dur: number;
+  title: string;
+  subtitle?: string;
+  kicker?: string;
+  citation?: string;
+  image?: string;
+  images?: string[];
+  text?: string[];
+  recon?: boolean;
+};
+
+const sceneImages = (id: string): string[] =>
+  Array.from({length: 10}, (_, i) => `terry/v002/${id}/${id}_${String(i + 1).padStart(3, '0')}.png`);
+
+const scenes: Scene[] = [
+  {id: 'S001', kind: 'pov', start: 0, dur: 30.5, title: 'No warrant. No crime seen.', subtitle: 'A street stop before the legal line is named.', kicker: 'HOOK', images: sceneImages('t01'), text: ['No warrant', 'No crime seen'], recon: true},
+  {id: 'S002', kind: 'wall', start: 30.91, dur: 33.57, title: 'Suspicion, not proof', subtitle: 'The Fourth Amendment wall has a gap.', kicker: 'OPENING', images: sceneImages('t02'), text: ['warrant', 'solid evidence', 'suspicion'], recon: true},
+  {id: 'S003', kind: 'image', start: 64.9, dur: 13.55, title: 'Cleveland, Ohio - 1963', subtitle: 'The case begins on a downtown street.', kicker: 'MAIN BODY · ACT I', image: 'terry/PD-2026-006-terry-S003-IMG-001.v001.png', images: sceneImages('t03'), citation: 'CLM-0005', recon: true},
+  {id: 'S004', kind: 'counter', start: 78.86, dur: 26.17, title: '~12 trips', subtitle: 'Two men, one store window, a repeated path.', kicker: 'ACT I', image: 'terry/PD-2026-006-terry-S004-IMG-001.v001.png', images: sceneImages('t04'), citation: 'CLM-0006', text: ['~12 trips'], recon: true},
+  {id: 'S005', kind: 'observer', start: 105.44, dur: 20.84, title: 'A pattern forms', subtitle: 'Experience turns ordinary motion into suspicion.', kicker: 'ACT I', images: sceneImages('t05'), text: ['window', 'return', 'heads together'], recon: true},
+  {id: 'S006', kind: 'type', start: 126.7, dur: 14.32, title: 'Suspicion != proof', subtitle: 'Under the ordinary rule, that is not enough.', kicker: 'ACT I', images: sceneImages('t06'), recon: true},
+  {id: 'S007', kind: 'risk', start: 141.43, dur: 22.6, title: 'The decision point', subtitle: 'Officer safety on one side. Innocent contact on the other.', kicker: 'ACT I', images: sceneImages('t07'), text: ['officer safety', 'innocent contact'], recon: true},
+  {id: 'S008', kind: 'frisk', start: 164.44, dur: 12.07, title: 'Outer clothing', subtitle: 'The weapon question is shown as a boundary, not a spectacle.', kicker: 'ACT I', image: 'terry/PD-2026-006-terry-S018-IMG-001.v001.png', images: sceneImages('t08'), citation: 'CLM-0006', recon: true},
+  {id: 'S009', kind: 'charge', start: 176.92, dur: 8.01, title: 'Carrying a concealed weapon', subtitle: 'The street encounter becomes a constitutional case.', kicker: 'ACT II', images: sceneImages('t09'), citation: 'CLM-0007', recon: true},
+  {id: 'S010', kind: 'scale', start: 185.34, dur: 20.08, title: 'Probable cause + warrant', subtitle: 'The ordinary Fourth Amendment baseline.', kicker: 'ACT II', images: sceneImages('t10'), text: ['reasonable suspicion', 'probable cause', 'warrant'], recon: true},
+  {id: 'S011', kind: 'scale', start: 205.83, dur: 20.08, title: 'Threshold not met', subtitle: 'A window pattern is less than full probable cause.', kicker: 'ACT II', images: sceneImages('t11'), recon: true},
+  {id: 'S012', kind: 'risk', start: 226.32, dur: 27.26, title: 'The unknown moment', subtitle: 'Before proof exists, the safety risk can still be real.', kicker: 'ACT II', images: sceneImages('t12'), recon: true},
+  {id: 'S013', kind: 'question', start: 254, dur: 25.18, title: 'Below arrest?', subtitle: 'Can a brief stop sit below probable cause?', kicker: 'ACT II', images: sceneImages('t13'), text: ['encounter', 'stop', 'arrest'], recon: true},
+  {id: 'S014', kind: 'wall', start: 279.59, dur: 18.49, title: 'Two truths at once', subtitle: 'Real streets. Real abuse risk.', kicker: 'ACT II', images: sceneImages('t14'), recon: true},
+  {id: 'S015', kind: 'ruling', start: 298.49, dur: 26.99, title: '1968 - 8-1', subtitle: 'Terry v. Ohio, 392 U.S. 1', kicker: 'ACT III', images: sceneImages('t15'), citation: 'CLM-0002', text: ['8', '1'], recon: true},
+  {id: 'S016', kind: 'facts', start: 325.89, dur: 23.7, title: 'Specific, articulable facts', subtitle: 'Reasonable suspicion must be describable.', kicker: 'ACT III', images: sceneImages('t16'), citation: 'CLM-0004', recon: true},
+  {id: 'S017', kind: 'facts', start: 350, dur: 36.31, title: '"specific and articulable facts"', subtitle: 'Two men. Same window. A dozen trips. Heads together.', kicker: 'ACT III', images: sceneImages('t16'), citation: 'CLM-0004', text: ['two men', 'same window', 'a dozen trips', 'heads together'], recon: true},
+  {id: 'S018', kind: 'frisk', start: 386.73, dur: 22.22, title: 'Weapons only', subtitle: 'Outer clothing, and only for weapons.', kicker: 'ACT III', image: 'terry/PD-2026-006-terry-S018-IMG-001.v001.png', images: sceneImages('t08'), citation: 'CLM-0001', recon: true},
+  {id: 'S019', kind: 'boundary', start: 409.36, dur: 31.87, title: 'Outer clothing - weapons only', subtitle: 'Not pockets. Not evidence. Not one inch more.', kicker: 'ACT III', images: sceneImages('t08'), citation: 'CLM-0003', recon: true},
+  {id: 'S020', kind: 'equation', start: 441.64, dur: 26.71, title: 'Stop = seizure. Frisk = search.', subtitle: 'Still reasonable on a lower standard.', kicker: 'ACT III', images: sceneImages('t11'), citation: 'CLM-0003 / CLM-0004', recon: true},
+  {id: 'S021', kind: 'dissent', start: 468.77, dur: 26.28, title: 'Dissent: Douglas, J. (alone)', subtitle: 'A warning about lowering the probable-cause line.', kicker: 'ACT III', images: sceneImages('t15'), citation: 'CLM-0008', recon: true},
+  {id: 'S022', kind: 'modern', start: 495.46, dur: 15.08, title: '"Terry stop"', subtitle: 'One of the most common police-public encounters.', kicker: 'ACT IV', images: sceneImages('t17'), citation: 'CLM-0009', recon: true},
+  {id: 'S023', kind: 'pressure', start: 510.96, dur: 23.53, title: 'Judgment can bend', subtitle: 'Training can sharpen it. Bias can distort it.', kicker: 'ACT IV', images: sceneImages('t17'), citation: 'CLM-0009', recon: true},
+  {id: 'S024', kind: 'modern', start: 534.9, dur: 28.8, title: 'Facts, later put into words', subtitle: 'A low bar can be careful work - or weather.', kicker: 'ACT IV', images: sceneImages('t17'), citation: 'CLM-0009', recon: true},
+  {id: 'S025', kind: 'pressure', start: 564.12, dur: 25.01, title: 'Careful rule. Pressured street.', subtitle: 'The risk is application under pressure.', kicker: 'ACT IV', images: sceneImages('t17'), recon: true},
+  {id: 'S026', kind: 'line', start: 589.54, dur: 23.81, title: 'The line is thin', subtitle: 'Redrawn on sidewalks every day.', kicker: 'ACT IV', images: sceneImages('t17'), recon: true},
+  {id: 'S027', kind: 'equation', start: 613.76, dur: 14.54, title: 'Street. Body. Less than proof.', subtitle: 'A real suspicion, and the gun was allowed to stand.', kicker: 'ENDING', images: sceneImages('t18'), citation: 'CLM-0001 / CLM-0007', recon: true},
+  {id: 'S028', kind: 'objects', start: 628.72, dur: 17.99, title: 'Physical things', subtitle: 'House. Pockets. The ground you stand on.', kicker: 'ENDING', images: sceneImages('t18'), recon: true},
+  {id: 'S029', kind: 'phone', start: 647.12, dur: 24.88, title: 'Next: can they search your phone?', subtitle: 'The device inside the pocket changes the question.', kicker: 'NEXT', images: sceneImages('t18'), recon: true},
+];
+
+const fit = (text: string): number => Math.min(86, Math.max(42, 1240 / Math.max(text.length, 14)));
+
+const sceneSeed = (id: string): number => id.split('').reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
+
+const ReconLabel: React.FC = () => (
+  <div style={{
+    position: 'absolute',
+    right: 54,
+    top: 48,
+    fontFamily: BRAND.font.body,
+    fontSize: 18,
+    color: SILVER,
+    padding: '7px 11px',
+    border: `1px solid ${GOLD}88`,
+    background: '#00000099',
+  }}>
+    symbolic reconstruction
+  </div>
+);
+
+const Lower: React.FC<{scene: Scene}> = ({scene}) => {
+  if (scene.kind === 'end') return null;
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const hiddenByBumper =
+    (scene.id === 'S001' && frame < Math.round(3.2 * fps)) ||
+    (scene.id === 'S002' && frame < Math.round(OPENING_SEC * fps)) ||
+    (scene.id === 'S003' && frame < Math.round(2.6 * fps)) ||
+    (scene.id === 'S027' && frame < Math.round(2.6 * fps));
+  if (hiddenByBumper) return null;
+  const e = spring({frame: frame - Math.round(0.12 * fps), fps, config: {damping: 18, stiffness: 90}});
+  return (
+    <div style={{position: 'absolute', left: 58, top: 48, opacity: Math.min(1, e), maxWidth: 1260}}>
+      <div style={{fontFamily: BRAND.font.body, fontSize: 18, color: GOLD, fontWeight: 800}}>{scene.kicker ?? 'PRIME DOCUMENTARY'}</div>
+      <div style={{width: 300, height: 2, background: GOLD, marginTop: 9, marginBottom: 21}} />
+      <div style={{
+        fontFamily: BRAND.font.display,
+        fontSize: fit(scene.title),
+        color: WHITE,
+        textTransform: 'uppercase',
+        lineHeight: 0.95,
+        textShadow: '0 4px 28px #000',
+      }}>{scene.title}</div>
+      {scene.subtitle ? <div style={{fontFamily: BRAND.font.body, fontSize: 28, color: SILVER, marginTop: 12, maxWidth: 1030}}>{scene.subtitle}</div> : null}
+      {scene.citation ? <div style={{fontFamily: BRAND.font.body, fontSize: 19, color: GOLD, marginTop: 15, background: '#000000AA', padding: '7px 11px', display: 'inline-block'}}>{scene.citation}</div> : null}
+    </div>
+  );
+};
+
+const SectionBumper: React.FC<{label: string; title: string; subtitle?: string; tone?: 'blue' | 'gold'}> = ({label, title, subtitle, tone = 'blue'}) => {
+  const frame = useCurrentFrame();
+  const {fps, durationInFrames} = useVideoConfig();
+  const color = tone === 'gold' ? GOLD : BLUE;
+  const enter = spring({frame: frame - Math.round(0.08 * fps), fps, config: {damping: 18, stiffness: 100}});
+  const out = interpolate(frame, [durationInFrames - Math.round(0.42 * fps), durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const rule = interpolate(frame, [8, 28], [0, 620], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{background: `radial-gradient(95% 85% at 52% 42%, ${tone === 'gold' ? '#3A2A08' : '#0F356B'} 0%, ${NAVY} 39%, ${INK} 86%)`, opacity: Math.min(enter, out), overflow: 'hidden'}}>
+      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
+        <div style={{fontFamily: BRAND.font.body, color: SILVER, fontSize: 25, fontWeight: 800, textTransform: 'uppercase', opacity: enter}}>
+          {label}
+        </div>
+        <div style={{width: rule, height: 3, background: color, margin: '18px 0 26px', boxShadow: `0 0 20px ${color}`}} />
+        <div style={{fontFamily: BRAND.font.display, color: WHITE, fontSize: 92, lineHeight: 0.92, textTransform: 'uppercase', textAlign: 'center', textShadow: `0 0 44px ${color}66`, transform: `translateY(${interpolate(enter, [0, 1], [32, 0])}px)`, opacity: enter}}>
+          {title}
+        </div>
+        {subtitle ? (
+          <div style={{fontFamily: BRAND.font.body, color, fontSize: 30, fontWeight: 800, marginTop: 18, opacity: enter}}>
+            {subtitle}
+          </div>
+        ) : null}
+      </AbsoluteFill>
+      <Vignette strength={1} />
+      <Grain opacity={0.06} />
+    </AbsoluteFill>
+  );
+};
+
+const SceneShell: React.FC<{scene: Scene; children: React.ReactNode}> = ({scene, children}) => {
+  const frame = useCurrentFrame();
+  const localDuration = Math.max(1, Math.round(scene.dur * BRAND.video.fps));
+  const p = interpolate(frame, [0, localDuration], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const eased = p * p * (3 - 2 * p);
+  const seed = sceneSeed(scene.id);
+  const xDir = seed % 2 === 0 ? 1 : -1;
+  const yDir = seed % 3 === 0 ? 1 : -1;
+  const imageSet = scene.images && scene.images.length > 0 ? scene.images : scene.image ? [scene.image] : [];
+  const segment = Math.max(36, Math.round(localDuration / Math.max(1, imageSet.length)));
+  const currentIndex = imageSet.length > 0 ? Math.floor(frame / segment) % imageSet.length : 0;
+  const nextIndex = imageSet.length > 0 ? (currentIndex + 1) % imageSet.length : 0;
+  const segmentFrame = frame % segment;
+  const nextOpacity = imageSet.length > 1 ? interpolate(segmentFrame, [segment * 0.72, segment], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}) : 0;
+  const currentPulse = interpolate(segmentFrame, [0, segment], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const imgScale = 1.1 + eased * 0.09 + currentPulse * 0.055;
+  const imgX = xDir * interpolate(eased, [0, 1], [-54, 54]) + xDir * interpolate(currentPulse, [0, 1], [-16, 16]);
+  const imgY = yDir * interpolate(eased, [0, 1], [-28, 28]) + yDir * interpolate(currentPulse, [0, 1], [12, -12]);
+  const imgRot = xDir * interpolate(eased, [0, 1], [-0.38, 0.38]);
+  const pulse = 0.5 + 0.5 * Math.sin(frame * 0.036 + seed);
+  const renderImage = (src: string, opacity: number, offset: number) => (
+    <Img
+      src={staticFile(src)}
+      style={{
+        position: 'absolute',
+        inset: 0,
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        opacity,
+        transform: `translate3d(${imgX + offset * 14}px, ${imgY - offset * 8}px, 0) scale(${imgScale + offset * 0.02}) rotate(${imgRot + offset * 0.07}deg)`,
+        transformOrigin: `${seed % 2 === 0 ? 64 : 36}% ${seed % 3 === 0 ? 58 : 42}%`,
+        filter: 'brightness(0.76) contrast(1.22) saturate(1.06)',
+        willChange: 'transform, opacity',
+      }}
+    />
+  );
+  return (
+    <AbsoluteFill style={{backgroundColor: INK, overflow: 'hidden'}}>
+      {imageSet.length > 0 ? (
+        <AbsoluteFill style={{overflow: 'hidden'}}>
+          {renderImage(imageSet[currentIndex], 1, 0)}
+          {imageSet.length > 1 ? renderImage(imageSet[nextIndex], nextOpacity, 1) : null}
+          <AbsoluteFill
+            style={{
+              background: `radial-gradient(60% 55% at ${58 + xDir * 12}% ${44 + yDir * 6}%, ${BLUE}${Math.round(18 + pulse * 22).toString(16).padStart(2, '0')} 0%, #00000000 66%)`,
+              mixBlendMode: 'screen',
+              opacity: 0.5,
+            }}
+          />
+        </AbsoluteFill>
+      ) : (
+        <AbsoluteFill style={{background: `radial-gradient(90% 74% at 60% 34%, #14335c 0%, ${NAVY} 34%, ${INK} 82%)`}} />
+      )}
+      <AbsoluteFill style={{background: `linear-gradient(180deg, ${INK}C8 0%, #00000014 42%, ${INK}E8 100%)`}} />
+      <AbsoluteFill
+        style={{
+          background: `linear-gradient(${82 + imgRot * 12}deg, #00000000 0%, #ffffff0D 45%, #00000000 58%)`,
+          transform: `translateX(${interpolate(eased, [0, 1], [-740, 740])}px)`,
+          mixBlendMode: 'screen',
+          opacity: 0.4,
+        }}
+      />
+      <LightSweep seed={scene.id} color={scene.kind === 'ruling' || scene.kind === 'dissent' ? GOLD : BLUE} />
+      <Particles seed={scene.id} count={imageSet.length > 0 ? 22 : 26} color={scene.kind === 'ruling' ? GOLD : BLUE} />
+      {children}
+      <Lower scene={scene} />
+      {scene.recon || imageSet.length > 0 ? <ReconLabel /> : null}
+      <Vignette strength={1} />
+      <Grain opacity={0.04} />
+    </AbsoluteFill>
+  );
+};
+
+const Pairs: React.FC<{left: string; right: string}> = ({left, right}) => (
+  <div style={{position: 'absolute', left: 380, right: 160, top: 390, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 44}}>
+    {[left, right].map((label, i) => (
+      <div key={label} style={{height: 210, border: `2px solid ${i === 0 ? BLUE : GOLD}`, background: '#00000088', padding: 30}}>
+        <div style={{fontFamily: BRAND.font.display, color: i === 0 ? BLUE : GOLD, fontSize: 54, textTransform: 'uppercase'}}>{label}</div>
+        <div style={{height: 2, width: 220, background: i === 0 ? BLUE : GOLD, marginTop: 18}} />
+      </div>
+    ))}
+  </div>
+);
+
+const PovGraphic: React.FC = () => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const stop = spring({frame: frame - Math.round(0.6 * fps), fps, config: {damping: 18, stiffness: 95}});
+  const pat = spring({frame: frame - Math.round(1.75 * fps), fps, config: {damping: 20, stiffness: 90}});
+  const rule = spring({frame: frame - Math.round(2.8 * fps), fps, config: {damping: 18, stiffness: 100}});
+  const path = interpolate(frame, [0, 210], [250, 955], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const scan = interpolate(frame, [58, 142], [470, 710], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <>
+      <svg width="1920" height="1080" style={{position: 'absolute'}}>
+        <g opacity="0.34">
+          {Array.from({length: 10}, (_, i) => <line key={`h${i}`} x1="280" x2="1640" y1={300 + i * 52} y2={300 + i * 52} stroke={SILVER} strokeWidth="1" />)}
+          {Array.from({length: 11}, (_, i) => <line key={`v${i}`} x1={310 + i * 132} x2={310 + i * 132} y1="280" y2="820" stroke={SILVER} strokeWidth="1" />)}
+        </g>
+        <path d="M320 700 C520 610, 700 730, 930 635 S1320 610, 1540 520" fill="none" stroke={`${BLUE}66`} strokeWidth="12" strokeLinecap="round" />
+        <circle cx={path} cy="635" r="18" fill={BLUE} opacity="0.95" />
+        <line x1="820" x2="1120" y1="420" y2="420" stroke={GOLD} strokeWidth="8" opacity={Math.min(stop, 1)} strokeLinecap="round" />
+        <text x="842" y="395" fill={GOLD} fontFamily={BRAND.font.display} fontSize="54" opacity={Math.min(stop, 1)}>STOP</text>
+        <rect x="760" y="455" width="420" height="315" rx="150" fill="#00000099" stroke={SILVER} strokeWidth="3" opacity="0.72" />
+        <rect x="835" y="510" width="270" height="205" rx="96" fill="none" stroke={BLUE} strokeWidth="5" opacity={Math.min(pat, 1)} />
+        <line x1="835" x2="1105" y1={scan} y2={scan} stroke={GOLD} strokeWidth="7" opacity={Math.min(pat, 1)} strokeLinecap="round" />
+        <text x="812" y="806" fill={SILVER} fontFamily={BRAND.font.body} fontSize="28" opacity={Math.min(pat, 1)}>outer clothing only</text>
+      </svg>
+      <div style={{position: 'absolute', right: 170, top: 398, display: 'grid', gap: 14, opacity: Math.min(rule, 0.86)}}>
+        {['NO WARRANT', 'NO CRIME SEEN', 'LEGAL QUESTION'].map((label, i) => (
+          <div key={label} style={{
+            width: 300,
+            height: 62,
+            border: `2px solid ${i === 2 ? GOLD : BLUE}`,
+            background: '#000000AA',
+            color: i === 2 ? GOLD : WHITE,
+            fontFamily: BRAND.font.display,
+            fontSize: 28,
+            display: 'flex',
+            alignItems: 'center',
+            paddingLeft: 22,
+            textTransform: 'uppercase',
+            boxShadow: `0 0 26px ${i === 2 ? GOLD : BLUE}33`,
+          }}>
+            {label}
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
+
+const WallGraphic: React.FC = () => {
+  const frame = useCurrentFrame();
+  const gap = interpolate(frame, [10, 80], [8, 132], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <svg width="1920" height="1080" style={{position: 'absolute'}}>
+      {Array.from({length: 9}, (_, i) => (
+        <rect key={i} x={310 + i * 150 + (i > 4 ? gap : 0)} y={380 + (i % 2) * 68} width="132" height="62" fill={SILVER} opacity="0.22" />
+      ))}
+      <rect x="882" y="330" width={gap} height="360" fill={BLUE} opacity="0.78" />
+      <text x="905" y="735" fill={GOLD} fontFamily={BRAND.font.display} fontSize="42">GAP</text>
+    </svg>
+  );
+};
+
+const CounterPath: React.FC = () => {
+  const frame = useCurrentFrame();
+  const trips = Math.min(12, Math.floor(interpolate(frame, [5, 650], [0, 12], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})));
+  return (
+    <>
+      <svg width="1920" height="1080" style={{position: 'absolute'}}>
+        <polyline points="420,720 680,650 940,710 1200,640 1460,705" fill="none" stroke={`${BLUE}88`} strokeWidth="14" strokeLinecap="round" strokeLinejoin="round" />
+        {Array.from({length: trips}, (_, i) => (
+          <circle key={i} cx={420 + (i % 6) * 208} cy={i % 2 ? 650 : 720} r="11" fill={i % 2 ? GOLD : BLUE} opacity="0.92" />
+        ))}
+      </svg>
+      <div style={{position: 'absolute', right: 170, bottom: 140, fontFamily: BRAND.font.display, fontSize: 124, color: GOLD, textShadow: '0 4px 28px #000'}}>~{trips}</div>
+    </>
+  );
+};
+
+const ScaleGraphic: React.FC<{scene: Scene}> = ({scene}) => {
+  const frame = useCurrentFrame();
+  const pos = scene.id === 'S011' ? 0.38 : scene.id === 'S016' ? 0.56 : 0.82;
+  const x = interpolate(frame, [0, 70], [420, 420 + pos * 880], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <svg width="1920" height="1080" style={{position: 'absolute'}}>
+      <line x1="420" x2="1300" y1="612" y2="612" stroke={SILVER} strokeWidth="6" opacity="0.45" />
+      <line x1="420" x2={x} y1="612" y2="612" stroke={GOLD} strokeWidth="10" strokeLinecap="round" />
+      <circle cx={x} cy="612" r="24" fill={GOLD} />
+      <text x="405" y="670" fill={SILVER} fontFamily={BRAND.font.body} fontSize="24">hunch</text>
+      <text x="845" y="670" fill={BLUE} fontFamily={BRAND.font.body} fontSize="24">reasonable suspicion</text>
+      <text x="1190" y="670" fill={GOLD} fontFamily={BRAND.font.body} fontSize="24">probable cause</text>
+      <line x1="1185" x2="1185" y1="560" y2="664" stroke={GOLD} strokeWidth="3" opacity="0.75" />
+    </svg>
+  );
+};
+
+const RulingGraphic: React.FC = () => (
+  <div style={{position: 'absolute', left: 520, right: 190, top: 385, display: 'flex', alignItems: 'center', gap: 24}}>
+    {Array.from({length: 8}, (_, i) => <div key={i} style={{width: 82, height: 82, background: BLUE, boxShadow: `0 0 24px ${BLUE}99`}} />)}
+    <div style={{fontFamily: BRAND.font.display, fontSize: 92, color: GOLD, padding: '0 18px'}}>:</div>
+    <div style={{width: 82, height: 82, background: GOLD, boxShadow: `0 0 24px ${GOLD}99`}} />
+  </div>
+);
+
+const FactsGraphic: React.FC<{scene: Scene}> = ({scene}) => {
+  const facts = scene.text ?? ['specific', 'describable', 'testable'];
+  return (
+    <div style={{position: 'absolute', left: 430, top: 405, display: 'flex', flexWrap: 'wrap', gap: 18, width: 1040}}>
+      {facts.map((fact, i) => (
+        <div key={fact} style={{fontFamily: BRAND.font.body, fontSize: 34, color: i % 2 ? GOLD : WHITE, border: `2px solid ${i % 2 ? GOLD : BLUE}`, padding: '18px 22px', background: '#00000099'}}>
+          {fact}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const BoundaryGraphic: React.FC = () => (
+  <svg width="1920" height="1080" style={{position: 'absolute'}}>
+    <rect x="560" y="350" width="640" height="330" fill="#00000088" stroke={BLUE} strokeWidth="4" />
+    <line x1="880" x2="880" y1="350" y2="680" stroke={GOLD} strokeWidth="5" />
+    <text x="610" y="465" fill={WHITE} fontFamily={BRAND.font.display} fontSize="50">OUTER</text>
+    <text x="930" y="465" fill={SILVER} fontFamily={BRAND.font.display} fontSize="50">POCKETS</text>
+    <text x="610" y="555" fill={GOLD} fontFamily={BRAND.font.body} fontSize="32">weapons check</text>
+    <text x="930" y="555" fill={SILVER} fontFamily={BRAND.font.body} fontSize="32">requires more</text>
+  </svg>
+);
+
+const EquationGraphic: React.FC<{scene: Scene}> = ({scene}) => (
+  <div style={{position: 'absolute', left: 390, top: 402, display: 'grid', gap: 20}}>
+    {(scene.id === 'S027' ? ['street', 'body', 'less than proof'] : ['stop = seizure', 'frisk = search', 'reasonable suspicion']).map((line, i) => (
+      <div key={line} style={{fontFamily: BRAND.font.display, fontSize: 62, color: i === 2 ? GOLD : WHITE, borderLeft: `5px solid ${i === 2 ? GOLD : BLUE}`, paddingLeft: 22, textTransform: 'uppercase'}}>
+        {line}
+      </div>
+    ))}
+  </div>
+);
+
+const DissentGraphic: React.FC = () => (
+  <div style={{position: 'absolute', left: 510, top: 420, display: 'flex', gap: 20, alignItems: 'center'}}>
+    {Array.from({length: 8}, (_, i) => <div key={i} style={{width: 58, height: 58, background: `${BLUE}88`}} />)}
+    <div style={{width: 58, height: 58, background: GOLD, boxShadow: `0 0 26px ${GOLD}`}} />
+  </div>
+);
+
+const ModernGraphic: React.FC = () => (
+  <svg width="1920" height="1080" style={{position: 'absolute'}}>
+    <line x1="260" x2="1640" y1="760" y2="760" stroke={SILVER} strokeWidth="3" opacity="0.32" />
+    {Array.from({length: 5}, (_, i) => {
+      const x = 520 + i * 210;
+      return <rect key={i} x={x} y={500 + (i % 2) * 38} width="58" height="210" fill={i === 2 ? GOLD : BLUE} opacity="0.34" />;
+    })}
+    <path d="M420 760 C640 640, 880 820, 1140 650 S1480 710, 1620 620" fill="none" stroke={GOLD} strokeWidth="5" opacity="0.72" />
+  </svg>
+);
+
+const LineGraphic: React.FC = () => {
+  const frame = useCurrentFrame();
+  const x = interpolate(frame, [0, 560], [260, 1660], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <svg width="1920" height="1080" style={{position: 'absolute'}}>
+      <line x1="260" x2="1660" y1="645" y2="645" stroke={SILVER} strokeWidth="2" opacity="0.25" />
+      <line x1="260" x2={x} y1="645" y2="645" stroke={GOLD} strokeWidth="5" />
+      <line x1={x} x2={x + 110} y1="645" y2="645" stroke={BLUE} strokeWidth="5" />
+    </svg>
+  );
+};
+
+const ObjectsGraphic: React.FC = () => (
+  <div style={{position: 'absolute', left: 460, top: 405, display: 'flex', gap: 56}}>
+    {['house', 'pockets', 'sidewalk'].map((item, i) => (
+      <div key={item} style={{width: 260, height: 190, border: `2px solid ${i === 1 ? GOLD : BLUE}`, background: '#00000088', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: BRAND.font.display, fontSize: 42, color: WHITE, textTransform: 'uppercase'}}>
+        {item}
+      </div>
+    ))}
+  </div>
+);
+
+const PhoneGraphic: React.FC = () => {
+  const frame = useCurrentFrame();
+  const glow = interpolate(frame % 90, [0, 45, 90], [0.25, 0.8, 0.25]);
+  return (
+    <div style={{position: 'absolute', left: 860, top: 300, width: 230, height: 430, borderRadius: 34, border: `5px solid ${SILVER}`, background: '#05070A', boxShadow: `0 0 ${70 + glow * 70}px ${BLUE}`}}>
+      <div style={{position: 'absolute', left: 30, right: 30, top: 70, height: 5, background: GOLD, opacity: 0.8}} />
+      <div style={{position: 'absolute', left: 30, right: 30, top: 118, height: 5, background: BLUE, opacity: 0.8}} />
+      <div style={{position: 'absolute', left: 30, right: 30, top: 166, height: 5, background: SILVER, opacity: 0.5}} />
+    </div>
+  );
+};
+
+const SceneBody: React.FC<{scene: Scene}> = ({scene}) => {
+  if (scene.kind === 'end') return <BrandEndcard />;
+  let body: React.ReactNode;
+  switch (scene.kind) {
+    case 'pov':
+      body = <PovGraphic />;
+      break;
+    case 'wall':
+      body = <WallGraphic />;
+      break;
+    case 'counter':
+      body = <CounterPath />;
+      break;
+    case 'observer':
+      body = <FactsGraphic scene={{...scene, text: scene.text ?? ['window', 'return', 'pattern']}} />;
+      break;
+    case 'risk':
+      body = <Pairs left={(scene.text?.[0] ?? 'officer safety')} right={(scene.text?.[1] ?? 'innocent contact')} />;
+      break;
+    case 'scale':
+      body = <ScaleGraphic scene={scene} />;
+      break;
+    case 'question':
+      body = <FactsGraphic scene={{...scene, text: scene.text ?? ['encounter', 'stop', 'arrest']}} />;
+      break;
+    case 'ruling':
+      body = <RulingGraphic />;
+      break;
+    case 'facts':
+      body = <FactsGraphic scene={scene} />;
+      break;
+    case 'frisk':
+      body = <BoundaryGraphic />;
+      break;
+    case 'boundary':
+      body = <BoundaryGraphic />;
+      break;
+    case 'equation':
+      body = <EquationGraphic scene={scene} />;
+      break;
+    case 'dissent':
+      body = <DissentGraphic />;
+      break;
+    case 'modern':
+      body = <ModernGraphic />;
+      break;
+    case 'pressure':
+      body = <Pairs left="careful rule" right="pressure" />;
+      break;
+    case 'line':
+      body = <LineGraphic />;
+      break;
+    case 'objects':
+      body = <ObjectsGraphic />;
+      break;
+    case 'phone':
+      body = <PhoneGraphic />;
+      break;
+    case 'charge':
+    case 'type':
+    default:
+      body = <EquationGraphic scene={{...scene, text: [scene.title]}} />;
+  }
+  return <SceneShell scene={scene}>{body}</SceneShell>;
+};
+
+export const TerryPremium: React.FC = () => (
+  <AbsoluteFill style={{backgroundColor: INK}}>
+    {scenes.map((scene) => (
+      <Sequence key={scene.id} from={Math.round(scene.start * BRAND.video.fps)} durationInFrames={Math.round(scene.dur * BRAND.video.fps)} name={scene.id}>
+        <SceneBody scene={scene} />
+      </Sequence>
+    ))}
+    <Sequence from={0} durationInFrames={Math.round(3.2 * BRAND.video.fps)} name="HOOK_BUMPER">
+      <SectionBumper label="Hook" title="Stopped on the street" subtitle="No warrant. No crime seen." tone="blue" />
+    </Sequence>
+    <Sequence from={Math.round(30.5 * BRAND.video.fps)} durationInFrames={Math.round(OPENING_SEC * BRAND.video.fps)} name="BRAND_OPENING">
+      <BrandOpening seriesLabel="Landmark Rights Cases" title="Terry v. Ohio" subtitle="The line between suspicion and proof" />
+    </Sequence>
+    <Sequence from={Math.round(64.48 * BRAND.video.fps)} durationInFrames={Math.round(2.6 * BRAND.video.fps)} name="MAIN_BODY_BUMPER">
+      <SectionBumper label="Main Story" title="The stop, the frisk, the rule" subtitle="Cleveland 1963 -> Supreme Court 1968" tone="gold" />
+    </Sequence>
+    <Sequence from={Math.round(613.35 * BRAND.video.fps)} durationInFrames={Math.round(2.6 * BRAND.video.fps)} name="ENDING_BUMPER">
+      <SectionBumper label="Ending" title="Street. Body. Less than proof." subtitle="And then the phone in your pocket" tone="blue" />
+    </Sequence>
+    <Sequence from={Math.round(672 * BRAND.video.fps)} durationInFrames={Math.round(ENDCARD_SEC * BRAND.video.fps)} name="BRAND_ENDCARD">
+      <BrandEndcard />
+    </Sequence>
+  </AbsoluteFill>
+);
+
+export const terryPremiumDurationInFrames = (fps: number): number => Math.round(TOTAL_SEC * fps);

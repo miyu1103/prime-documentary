@@ -1,0 +1,31 @@
+{
+  "_note": "Text-on-face thumbnail overhaul (2026-07-24). The 5 episodes with a saved SDXL raw were CPU-recomposited to thumbnail.face.v002.png (face pushed to right ~40%, headline in a clean dark LEFT column). caniglia has NO local pre-text base (its media dir holds only R2 object/door/gun stills; the doorway-man face raw was never saved to scratch and the ep4447 face builder has no caniglia entry), so its overlap CANNOT be fixed on CPU and must be regenerated on the GPU when free.",
+  "created": "2026-07-24",
+  "cpu_fixed_v002": ["045-cleveland", "046-tlo", "047-atwater", "048-glover", "049-strieff"],
+  "left_as_is": ["040-lech (re-inspected: already CLEAN layout - man on right, 'THEY PAID HIM $0' in left negative space, no text-on-face; borderline flag not warranted)"],
+  "needs_sdxl_regen": [
+    {
+      "ep": "043-caniglia",
+      "video_id": "yRwxBfrOY5o",
+      "live": true,
+      "scheduled_publishAt": "2026-07-28",
+      "why": "Overlap real (red 'THEY TOOK' bar crosses his left cheek/nose). Man is composed too central; no pre-text base recoverable.",
+      "recipe": "Add a caniglia entry to build_face_thumbnails_ep4447.py EPS (2-stage Juggernaut->DreamShaper d0.55). subject: an ordinary distressed silver-haired man in his 60s in the doorway of his home at night, worried/violated expression, looking off to the side, warm rim light, deep dark negative space on the LEFT; framed on the RIGHT side of the frame. neg_extra: 'police uniform on the man, badge, tiny face, wide shot'. zoom ~1.12, cx 0.66, cy 0.40. kicker 'IT WAS A WELFARE CHECK', lines [('THEY TOOK', WHITE),('HIS GUNS', WHITE)] with redbar True accent RED (matches v001 text). Then write thumbnail.face.v002.png and re-apply via scripts/apply_thumbnails_v002.py (add the caniglia target).",
+      "after_regen": "thumbnails.set to yRwxBfrOY5o (rate-limited, 42s spacing)."
+    }
+  ],
+  "not_uploaded_local_only": ["048-glover", "049-strieff"],
+  "sdxl_regen_done": [
+    {"ep": "043-caniglia", "video_id": "yRwxBfrOY5o", "date": "2026-07-24",
+     "raw": "PD-2026-043-caniglia_raw_seed43208.png (JuggernautXL->DreamShaperXL d0.55, illustrative non-real)",
+     "v002": "episodes/PD-2026-043-caniglia/09_package/thumbnail.face.v002.png",
+     "layout": "recompose_faces_v002.py (zoom1.14 fx0.60 fy0.38 tx0.68 ty0.42); face right ~45%, headline red bars in left column <50%, no text-on-face",
+     "http": 200, "result": "OK"}
+  ],
+  "applied_live_v002": [
+    {"ep": "043-caniglia", "video_id": "yRwxBfrOY5o", "http": 200, "result": "OK"},
+    {"ep": "045-cleveland", "video_id": "AxOlQ2NIaBU", "http": 200, "result": "OK"},
+    {"ep": "046-tlo", "video_id": "hC5KE6IqmhM", "http": 200, "result": "OK"},
+    {"ep": "047-atwater", "video_id": "i95peRcdtz4", "http": 200, "result": "OK"}
+  ]
+}

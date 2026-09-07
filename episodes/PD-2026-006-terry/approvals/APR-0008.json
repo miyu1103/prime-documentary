@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0008",
+  "episode_id": "PD-2026-006-terry",
+  "target_type": "youtube_public_publish",
+  "target_id": "terry_final_v003_public_now",
+  "target_revision": "v003",
+  "decision": "approved",
+  "requested_at": "2026-06-21T13:45:00+09:00",
+  "requested_by": "owner",
+  "decided_at": "2026-06-21T13:45:00+09:00",
+  "decided_by": "owner",
+  "source_request": "このまま投稿しよう",
+  "notes": "Owner approved posting the completed Terry v003 render as-is. Approval covers a new YouTube upload of the exact v003 render hash, selected thumbnail_option_09_codex_beauty.v001.png, existing checked title/description/tags with v003 chapters, synthetic-content disclosure, private-first upload, then public visibility. If the prior Terry upload is still present on the allowlisted channel, it may be set private after the v003 upload succeeds to avoid duplicate public videos.",
+  "conditions": [
+    "Upload only H:/pd-media/episodes/PD-2026-006-terry/08_edit/terry_final_v003.mp4 with the exact approved SHA256.",
+    "Use the allowlisted Prime Documentary YouTube channel only.",
+    "Set madeForKids=false and containsSyntheticMedia=true.",
+    "Use selected thumbnail_option_09_codex_beauty.v001.png.",
+    "Upload private first, set thumbnail, verify state, then publish public.",
+    "Do not modify the locked script, annotated script, claims, or research.",
+    "Do not delete any YouTube video."
+  ],
+  "video_sha256": "sha256:b28f14502d8a0937e5b5b2eaaff7245cdda6ad04ef99149f8780166cfb75ca26",
+  "thumbnail_sha256": "sha256:5f364026fc46758441c9673e47cdd93f96ceec265810d2267643d0d4695c45bf",
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-006-terry/09_package/final_delivery.v003.json"
+}

@@ -1,0 +1,473 @@
+{
+  "episode": "PD-2026-071-wronghouse",
+  "title": "Martin v. United States -- the FBI raided the wrong house",
+  "measured": "2026-08-12",
+  "read_only": true,
+  "method": "EP68_pinto_register_inventory.v001.md method as reproduced in EP70_45min_candidates.v001.md section 10. Pool built by EP70_45min_pool.py (reused, not forked). Register = word-boundary re.I search over the provider title.",
+  "period_rule": "config/pd_planning_os.v002.json -> producibility_gate.period_rule: era-neutral registers scored against the whole pool, era-bound registers scored against ARCHIVAL SOURCES ONLY.",
+  "thresholds": {
+    "green": 0.15,
+    "amber": 0.4,
+    "red_above": 0.4
+  },
+  "pool": {
+    "distinct_playable_video": 26101,
+    "reproduced_EP70_26101": true,
+    "archival_source_rows": 1058,
+    "modern_rows": 25043,
+    "title_year_1955_1985_or_decade_word": 32,
+    "archival_and_period_titled": 27
+  },
+  "sizing": {
+    "runtime_min": 45,
+    "cuts": 400,
+    "distinct_fraction": 0.818,
+    "distinct_assets": 327,
+    "narrow_share": 0.4,
+    "narrow_cuts": 160,
+    "narrow_distinct": 131,
+    "act_1973_min": 5.0,
+    "act_1973_cuts": 44,
+    "act_1973_distinct": 36
+  },
+  "groups": {
+    "era_neutral": {
+      "governs": "whole pool",
+      "registers": {
+        "N01_hands_writing_signing": {
+          "regex": "\\b(hand|hands|finger|fingers|fingertip\\w*|palm|palms|wrist|writing|handwriting|handwritten|pen|pens|pencil|pencils|notebook|signature|signatures|signing|paperwork|typing|scribbl\\w*)\\b",
+          "total": 684,
+          "archival": 5,
+          "modern": 679,
+          "title_year_1955_1985": 0
+        },
+        "N02_documents_paper_files": {
+          "regex": "\\b(document\\w*|paper|papers|page|pages|file|files|filing|folder|folders|form|forms|report|reports|record|records|letter|letters|envelope|envelopes|stamp\\w*|contract|contracts|dossier|print|printing|printer|clipboard)\\b",
+          "total": 517,
+          "archival": 10,
+          "modern": 507,
+          "title_year_1955_1985": 0
+        },
+        "N03_door_lock_key_handle": {
+          "regex": "\\b(door|doors|doorway|doorstep|doorknob|door handle|threshold|lock|locks|locked|padlock|key|keys|keyhole|handle|handles|hinge|hinges|latch|deadbolt|knob|bolt)\\b",
+          "total": 217,
+          "archival": 3,
+          "modern": 214,
+          "title_year_1955_1985": 0
+        },
+        "N04_mail_envelope_letter": {
+          "regex": "\\b(mail|mailbox|mail box|letterbox|letter box|mailman|postman|postal|post office|envelope|envelopes|letter|letters|postcard|parcel|package|packages|delivery|courier|postmark)\\b",
+          "total": 140,
+          "archival": 1,
+          "modern": 139,
+          "title_year_1955_1985": 0
+        },
+        "N05_clock_watch_countdown": {
+          "regex": "\\b(clock|clocks|clockwork|wristwatch|watches|stopwatch|timer|timers|countdown|hourglass|sundial|alarm clock|minute hand|second hand|pendulum|time lapse|timelapse)\\b",
+          "total": 453,
+          "archival": 8,
+          "modern": 445,
+          "title_year_1955_1985": 0
+        },
+        "N06_dawn_sunrise_first_light": {
+          "regex": "\\b(dawn|daybreak|sunrise|sunup|first light|early morning|morning light|predawn|pre-dawn|twilight|dusk|sunset|golden hour|horizon|skyline at dawn)\\b",
+          "total": 898,
+          "archival": 4,
+          "modern": 894,
+          "title_year_1955_1985": 0
+        },
+        "N07_empty_room_hallway_stairs": {
+          "regex": "\\b(empty room|hallway|hallways|corridor|corridors|staircase|stairs|stairway|stairwell|bedroom|bedrooms|closet|wardrobe|interior|interiors|room|rooms|apartment|living room|attic|basement|hall)\\b",
+          "total": 322,
+          "archival": 1,
+          "modern": 321,
+          "title_year_1955_1985": 0
+        },
+        "N08_rain_storm_cloud_sky_fog": {
+          "regex": "\\b(rain|raining|rainy|raindrop\\w*|storm|storms|stormy|thunder|thunderstorm|lightning|cloud|clouds|cloudy|overcast|sky|skies|fog|foggy|mist|misty|drizzle|downpour|puddle|puddles)\\b",
+          "total": 1431,
+          "archival": 8,
+          "modern": 1423,
+          "title_year_1955_1985": 2
+        },
+        "N09_cabinet_archive_boxes_shelves": {
+          "regex": "\\b(filing cabinet|file cabinet|archive|archives|archival|box|boxes|carton|cartons|crate|crates|shelf|shelves|shelving|bookshelf|bookcase|library|stacks|storage|warehouse|ledger|binder|binders|catalogue|catalog)\\b",
+          "total": 233,
+          "archival": 2,
+          "modern": 231,
+          "title_year_1955_1985": 0
+        },
+        "N10_texture_dust_blinds_glass_shadow": {
+          "regex": "\\b(dust|dusty|particle|particles|light beam|sunbeam|sunlight|blind|blinds|venetian|window|windows|windowpane|glass|reflection|reflections|reflecting|shadow|shadows|silhouette|silhouettes|texture|textures|abstract|bokeh|smoke|haze)\\b",
+          "total": 1829,
+          "archival": 5,
+          "modern": 1824,
+          "title_year_1955_1985": 1
+        },
+        "N11_map_gps_route_dashboard": {
+          "regex": "\\b(map|maps|mapping|navigation|navigating|navigator|gps|satellite|satellites|route|routes|compass|coordinates|dashboard|windshield|windscreen|street sign|address|addresses|aerial|drone)\\b",
+          "total": 1369,
+          "archival": 9,
+          "modern": 1360,
+          "title_year_1955_1985": 0
+        },
+        "N12_keyboard_screen_data_server": {
+          "regex": "\\b(keyboard|keyboards|screen|screens|monitor|monitors|computer|computers|laptop|laptops|data|database|databases|server|servers|data center|data centre|code|coding|software|network|networks|digital|terminal)\\b",
+          "total": 1197,
+          "archival": 3,
+          "modern": 1194,
+          "title_year_1955_1985": 0
+        }
+      },
+      "union": 7534,
+      "union_archival": 53,
+      "util_400": 0.0531,
+      "util_327": 0.0434,
+      "colour_400": "GREEN",
+      "colour_327": "GREEN"
+    },
+    "era_bound_contemporary": {
+      "governs": "whole pool -- the shelf is 93.5% contemporary stock, so for a 2017-2026 premise the contemporary stock IS the era-correct supply; the archival-only reading is reported for completeness and is NOT the binding one.",
+      "registers": {
+        "C01_front_door_suburban_house": {
+          "regex": "\\b(front door|porch|driveway|doorstep|suburb|suburbs|suburban|suburbia|subdivision|neighborhood|neighbourhood|residential|house|houses|home|homes|bungalow|yard|front lawn|lawn|garage|garden fence|picket fence|mailbox)\\b",
+          "total": 430,
+          "archival": 29,
+          "modern": 401,
+          "title_year_1955_1985": 5
+        },
+        "C02_swat_tactical_raid_breach": {
+          "regex": "\\b(swat|tactical|body armor|body armour|bulletproof|kevlar|helmet|helmets|raid|raids|raided|breach|breaching|battering ram|riot|riot police|special forces|assault rifle|rifle|rifles|shield|shields|commando|task force|fbi|federal agent|federal agents)\\b",
+          "total": 28,
+          "archival": 18,
+          "modern": 10,
+          "title_year_1955_1985": 1
+        },
+        "C03_police_car_patrol_lights": {
+          "regex": "\\b(police car|police cars|patrol car|squad car|cruiser|police vehicle|patrol|siren|sirens|emergency light|emergency lights|blue light|blue lights|flashing light|flashing lights|law enforcement|sheriff|police|policeman|officer|officers|cop|cops|badge|precinct)\\b",
+          "total": 238,
+          "archival": 16,
+          "modern": 222,
+          "title_year_1955_1985": 0
+        },
+        "C04_courthouse_courtroom_judge": {
+          "regex": "\\b(court|courts|courtroom|courthouse|judge|judges|jury|juror|jurors|trial|trials|hearing|hearings|verdict|testimony|witness stand|bench|attorney|attorneys|lawyer|lawyers|counsel|litigation|appeal|appeals|deposition)\\b",
+          "total": 112,
+          "archival": 51,
+          "modern": 61,
+          "title_year_1955_1985": 0
+        },
+        "C05_supreme_court_dc_capitol": {
+          "regex": "\\b(supreme court|washington|capitol|congress|congressional|senate|house of representatives|federal building|government building|white house|monument|monuments|memorial|marble|colonnade|column|columns|dome|rotunda|flag|flags)\\b",
+          "total": 184,
+          "archival": 13,
+          "modern": 171,
+          "title_year_1955_1985": 0
+        },
+        "C06_atlanta_suburb_aerial_street": {
+          "regex": "\\b(atlanta|georgia|american suburb|suburb|suburbs|suburban|suburbia|subdivision|neighborhood|neighbourhood|residential street|neighborhood street|street scene|cul-de-sac|aerial|drone|rooftop|rooftops|housing development|housing estate)\\b",
+          "total": 1267,
+          "archival": 8,
+          "modern": 1259,
+          "title_year_1955_1985": 0
+        },
+        "C07_school_classroom_corridor": {
+          "regex": "\\b(school|schools|schoolyard|schoolroom|classroom|classrooms|kindergarten|elementary|high school|pupil|pupils|student|students|teacher|teachers|locker|lockers|playground|campus|gymnasium|blackboard|whiteboard|schoolbus|school bus)\\b",
+          "total": 115,
+          "archival": 0,
+          "modern": 115,
+          "title_year_1955_1985": 0
+        },
+        "C08_counselling_clinic_waiting_room": {
+          "regex": "\\b(counseling|counselling|counselor|counsellor|therapy|therapist|psychiatr\\w*|psycholog\\w*|waiting room|clinic|clinics|clinical|consultation|patient|patients|doctor|doctors|physician|nurse|nurses|mental health|hospital|appointment)\\b",
+          "total": 146,
+          "archival": 6,
+          "modern": 140,
+          "title_year_1955_1985": 0
+        },
+        "C09_lawyer_office_briefcase_books": {
+          "regex": "\\b(lawyer|lawyers|attorney|attorneys|legal|law firm|law office|law book|law books|briefcase|briefcases|paralegal|notary|conference room|boardroom|board room|office|offices|desk|desks|handshake|meeting|meetings)\\b",
+          "total": 427,
+          "archival": 19,
+          "modern": 408,
+          "title_year_1955_1985": 0
+        },
+        "C10_flashlight_night_silhouette": {
+          "regex": "\\b(flashlight|flash light|torch|torchlight|night vision|infrared|thermal|searchlight|spotlight|light beam|beam of light|dark|darkness|night|nighttime|night-time|silhouette|silhouettes|headlight|headlights|lantern|shadowy)\\b",
+          "total": 1301,
+          "archival": 8,
+          "modern": 1293,
+          "title_year_1955_1985": 0
+        }
+      },
+      "union": 3882,
+      "union_archival": 156,
+      "util_400_wholepool": 0.103,
+      "util_327_wholepool": 0.0842,
+      "colour_400_wholepool": "GREEN",
+      "colour_327_wholepool": "GREEN",
+      "util_400_archivalonly": 2.5641,
+      "util_327_archivalonly": 2.0962,
+      "colour_400_archivalonly": "RED",
+      "colour_327_archivalonly": "RED"
+    },
+    "era_bound_past_1973": {
+      "governs": "archival sources only (period_rule)",
+      "registers": {
+        "P01_1970s_street_interior_car_town": {
+          "regex": "\\b(1970s|1970|1971|1972|1973|1974|1975|1976|1977|1978|1979|seventies|super 8|super-8|8mm|16mm|newsreel|home movie|home movies|vintage|retro|period film)\\b",
+          "total": 218,
+          "archival": 54,
+          "modern": 164,
+          "title_year_1955_1985": 13
+        },
+        "P02_1970s_senate_hearing_govt_office": {
+          "regex": "\\b(senate|senator|senators|congress|congressional|subcommittee|committee|hearing|hearings|testimony|capitol hill|government office|federal office|legislature|legislative|statehouse|state house)\\b",
+          "total": 6,
+          "archival": 3,
+          "modern": 3,
+          "title_year_1955_1985": 0
+        }
+      },
+      "union": 224,
+      "union_archival": 57,
+      "union_archival_and_period_titled": 9,
+      "P01_archival_and_period_titled": 9,
+      "P02_archival_and_period_titled": 0,
+      "util_act_44cuts_archivalonly": 0.7719,
+      "util_act_36distinct_archivalonly": 0.6316,
+      "colour_act_44_archivalonly": "RED",
+      "util_act_44_archival_period_titled": 4.8889,
+      "util_act_36_archival_period_titled": 4.0,
+      "colour_act_44_archival_period_titled": "RED",
+      "util_400_archivalonly": 7.0175,
+      "P01_archival_titles": [
+        "\"Acualities Du Monde\" #17 Japanese Newsreel",
+        "1942 Captured Japanese Newsreel: Pearl Harbor, Hong Kong",
+        "AE Wallace Newsreel Training German Troops In Frankfurt NARA 11 H 1547",
+        "Alonzo Mann Sworn Testimony at the Trial of Leo Frank, August 1913, Fulton County Superior Court, Atlanta, Georgia",
+        "Big News of 1941 - The Editors of Universal Newsreel present dramatic highlights of an epochal year,  1941/12/24",
+        "Centron Films - The Reluctant Witch raw footage, 16mm film",
+        "Dandelion 1976 silent movie",
+        "French newsreel,  Actualités Derniére Edition, Dieppe Raid",
+        "Giornale Luce Newsreel",
+        "Giornale Luce No 2: Fascist Italy Newsreel",
+        "HEARING ON THE NATIONAL VOTER REGISTRATION ACT, SECTION 7: THE CHALLENGES THAT PUBLIC ASSISTANCE",
+        "Herbert Hoover Kodacolor Home Movie Collection",
+        "Home Movie: 97172: County Fair",
+        "Home Movie: 97287: Friends, Wichita and Washington, D.C.",
+        "Home Movie: 98201: Pennsylvania Railroad Steam and New York and Long Branch MUs",
+        "Home Movie: Galante Collection: 004313",
+        "Home Movie: Galante Collection: 004319",
+        "Home Movie: Gordon Hewes Collection: 004164",
+        "Home Movie: Lloyd Royal Collection: 011063",
+        "Home movie: 000416: 1951 Detroit area family",
+        "Home movie: 000419: 1960s Pennsylvania farm",
+        "Home movie: 000427: 1944 Fairview Poultry Farm, IL",
+        "Home movie: 000432: 1967 San Francisco peace march",
+        "Home movie: 000436: 1920s family scenes",
+        "Home movie: 000437: 1940s western train trip",
+        "Home movie: 000541: 1940s tourism to mountain provinces, catches film production",
+        "Home movie: 010058_001: 1931 Upstate New York town life with flood",
+        "Home movie: 010126: 1940s World War II Navy film about Grumman aircraft with sound",
+        "Invasion Of France, German Newsreel",
+        "Invasion Of France, German Newsreel",
+        "Japanese Newsreel \"Training At Manila And On Borneo\" 1942",
+        "Japanese Newsreel 04/27/1942",
+        "Japanese Newsreel No. 158",
+        "Japanese Newsreel: Acualities Du Monde, February 1942",
+        "Japanese Newsreel: Review Of WWII In Pacific On Its 1st Anniversary",
+        "Japanese War Newsreel #232",
+        "Joshua 1976 Western:★★★ CC: Fred Williamson [1:23:25] Enhanced/Widescreen",
+        "Look again (1975) kids inspirational movie",
+        "Luce Anno XXI (Era Fascista) 1943 Newsreel",
+        "Maya the Bee Movie (1977, English dub)",
+        "National Film Board Of Canada Newsreel Excerpts",
+        "Newsreel: D-Day, 1944",
+        "Newsreel: Death of Franklin Delano Roosevelt",
+        "Newsreel: Fire Power! U.S. Guns Open Upon Nazis In Italy",
+        "Newsreel: Life Aboard Merchant Ship; Marines Land, Solomons",
+        "Parker, Randall - Destruction Of The Victory Theater 1978, 16mm film",
+        "Parker, Randall - The Shortest Straw - Feature Film, 16mm film",
+        "RCA 16mm Sound Projector, The",
+        "Schenectady City Council Committee Meeting July 18th 2016",
+        "The Lemurs - Ex-Lemurs House Party, 1978 - 8mm film",
+        "Thunderbirds Super 8mm Film (1965)",
+        "Various Locations In Germany Recorded on 8mm Film",
+        "[Home Movies: \"Just 'Round Town\"]",
+        "[Home Movies: Chicago World's Fair]",
+        "[Home Movies: Kansas City to Natchez]",
+        "[Home Movies: Washington & Gettysburg]",
+        "[Home movie: 098751: A cross-country road trip with stops at marquee locations in a dozen states both west and east]"
+      ],
+      "P01_P02_archival_AND_period_titled_titles": [
+        "Dandelion 1976 silent movie",
+        "Home movie: 000419: 1960s Pennsylvania farm",
+        "Home movie: 000432: 1967 San Francisco peace march",
+        "Joshua 1976 Western:★★★ CC: Fred Williamson [1:23:25] Enhanced/Widescreen",
+        "Look again (1975) kids inspirational movie",
+        "Maya the Bee Movie (1977, English dub)",
+        "Parker, Randall - Destruction Of The Victory Theater 1978, 16mm film",
+        "The Lemurs - Ex-Lemurs House Party, 1978 - 8mm film",
+        "Thunderbirds Super 8mm Film (1965)"
+      ],
+      "P02_archival_titles": [
+        "Alonzo Mann Sworn Testimony at the Trial of Leo Frank, August 1913, Fulton County Superior Court, Atlanta, Georgia",
+        "HEARING ON THE NATIONAL VOTER REGISTRATION ACT, SECTION 7: THE CHALLENGES THAT PUBLIC ASSISTANCE",
+        "Schenectady City Council Committee Meeting July 18th 2016"
+      ],
+      "whole_shelf_archival_period_titled_titles": [
+        "1957 Campaign Firecamp Training",
+        "A Life At Stake 1955 ★★★ Film-noir/Drama [1:15:52] Angela Lansbury (CC)",
+        "AMC Theaters Feature Presentation Pre-Rolls 1983-2009",
+        "Alonzo Mann Affidavit March 4 1982 Sullivan County Tennessee About The Leo Frank Case Regarding Jim Conley And Mary Phagan In 1913",
+        "Anti-War Demonstrators Storm Pentagon, 1967/10/24",
+        "Chicago riots, Chicago, Illinois (1968)",
+        "Dandelion 1976 silent movie",
+        "FBI Scans The Deteriorating Masks From The 1962 Alcatraz Escape",
+        "Fleet Review. Secretary Honored in 200 Ship Parade,  1956/09/17",
+        "Home movie: 000419: 1960s Pennsylvania farm",
+        "Home movie: 000432: 1967 San Francisco peace march",
+        "IRA 1983 Break Out of The Maze Prison",
+        "Johnny Cool 1963 ★★★ (HD) Crime/Neo-Noir: CC [1:41:29]",
+        "Joshua 1976 Western:★★★ CC: Fred Williamson [1:23:25] Enhanced/Widescreen",
+        "Lassie A Christmas Story (1958 Film Noir Christmas Special)",
+        "Look again (1975) kids inspirational movie",
+        "Maya the Bee Movie (1977, English dub)",
+        "New Orleans Uncensored ★★★ CC: 1955 Crime/Film-noir [1:15:03] HD",
+        "One-Eyed Jacks 1961 Western ★★★ CC: [2:21:00] Marlon Brando, Karl Malden",
+        "Parker, Randall - Destruction Of The Victory Theater 1978, 16mm film",
+        "Playhouse 90: Judgement At Nuremberg (CBS, 1959)",
+        "Reds Free Professor. Home After 16 Days In Soviet Prison, 1963/11/18",
+        "Storm Havoc. Hurricane Kills 43, Damage 15 Millions, 1955/08/15",
+        "The Deadly Companions 1961 Western ★★★ [1:33:26] Maureen O'Hara/Brian Keith & Chill Wills",
+        "The Lemurs - Ex-Lemurs House Party, 1978 - 8mm film",
+        "The Naked Kiss 1964 ★★★ CC: Neo-Noir/Melodrama [1:30:52]",
+        "Thunderbirds Super 8mm Film (1965)"
+      ],
+      "act_budget_EP68_contract_F_plus_2M_ge_cuts": {
+        "optimistic_F3": {
+          "footage_cuts": 3,
+          "i2v_conversions": 21,
+          "gpu_hours": 1.2,
+          "ai_motion_share_of_45min_film": 0.105
+        },
+        "pessimistic_F0": {
+          "footage_cuts": 0,
+          "i2v_conversions": 22,
+          "gpu_hours": 1.26,
+          "ai_motion_share_of_45min_film": 0.11
+        },
+        "seconds_per_i2v": 206
+      }
+    }
+  },
+  "narrow_core": {
+    "definition": "40% of the film -- the registers whose frame must read as a specific thing rather than an abstraction.",
+    "in": [
+      "C01_front_door_suburban_house",
+      "C02_swat_tactical_raid_breach",
+      "C03_police_car_patrol_lights",
+      "C04_courthouse_courtroom_judge",
+      "C05_supreme_court_dc_capitol",
+      "C06_atlanta_suburb_aerial_street",
+      "C10_flashlight_night_silhouette"
+    ],
+    "out_and_why": {
+      "N01-N12": "abstractions by definition; they are the wide half",
+      "C07_school_classroom_corridor": "any contemporary school reads as the school",
+      "C08_counselling_clinic_waiting_room": "any waiting room reads as the waiting room",
+      "C09_lawyer_office_briefcase_books": "any law office reads as the law office",
+      "P01/P02": "archival-only denominator; cannot be unioned with a whole-pool figure"
+    },
+    "union": 3271,
+    "union_archival": 132,
+    "util_160": 0.0489,
+    "util_131": 0.04,
+    "colour_160": "GREEN",
+    "colour_131": "GREEN",
+    "util_160_archivalonly": 1.2121,
+    "colour_160_archivalonly": "RED",
+    "tight": {
+      "why": "the broad-token narrow core above is inflated by 'dark', 'night', 'aerial', 'drone', 'house', 'home'; this variant keeps only nouns that name the thing itself. This is the honest narrow figure.",
+      "registers": {
+        "C01_tight_front_door_suburban": {
+          "regex": "\\b(front door|doorstep|porch|driveway|suburban|suburbia|subdivision|residential|front lawn|picket fence|mailbox)\\b",
+          "total": 63,
+          "archival": 0
+        },
+        "C02_tight_swat_raid_breach": {
+          "regex": "\\b(swat|tactical|body armor|body armour|kevlar|bulletproof|battering ram|breaching|riot police|special forces|raid|raided)\\b",
+          "total": 9,
+          "archival": 7
+        },
+        "C03_tight_police_vehicle_lights": {
+          "regex": "\\b(police car|police cars|patrol car|squad car|cruiser|police vehicle|siren|sirens|emergency lights|blue lights|flashing lights|law enforcement|sheriff|police)\\b",
+          "total": 180,
+          "archival": 5
+        },
+        "C04_tight_courtroom_courthouse": {
+          "regex": "\\b(courtroom|courthouse|supreme court|judge|judges|jury|jurors|gavel|witness stand)\\b",
+          "total": 27,
+          "archival": 14
+        },
+        "C05_tight_capitol_supreme_court": {
+          "regex": "\\b(supreme court|capitol|congress|senate|white house|washington|federal building|government building|rotunda)\\b",
+          "total": 63,
+          "archival": 9
+        },
+        "C06_tight_atlanta_suburb_street": {
+          "regex": "\\b(atlanta|georgia|suburban|suburbia|subdivision|residential street|neighborhood street|cul-de-sac|housing development)\\b",
+          "total": 41,
+          "archival": 5
+        },
+        "C10_tight_flashlight_nightvision": {
+          "regex": "\\b(flashlight|torchlight|night vision|infrared|searchlight|spotlight|silhouette|silhouettes|headlights)\\b",
+          "total": 86,
+          "archival": 0
+        }
+      },
+      "union": 421,
+      "util_160": 0.38,
+      "util_131": 0.3112,
+      "colour_160": "AMBER",
+      "colour_131": "AMBER"
+    },
+    "ep70_verbatim_reproduction": {
+      "why": "EP70_45min_candidates.v001.md section 10 published narrow union 366 and util 0.437 RED for this same premise. Reproduced here to prove the pool and matcher are identical.",
+      "registers": {
+        "residential front door / doorway": {
+          "regex": "\\b(front door|doorway|door|porch|driveway|mailbox)\\b",
+          "total": 139,
+          "archival": 1
+        },
+        "tactical police / raid / fbi": {
+          "regex": "\\b(swat|tactical|raid|police|officer|officers|law enforcement|fbi|federal agent|handcuff\\w*)\\b",
+          "total": 190,
+          "archival": 18
+        },
+        "courtroom / supreme court interior": {
+          "regex": "\\b(courtroom|courthouse|supreme court|judge|jury|gavel|bench)\\b",
+          "total": 37,
+          "archival": 14
+        }
+      },
+      "union": 366,
+      "util_160": 0.4372,
+      "util_131": 0.3579,
+      "colour_160": "RED",
+      "published_union": 366,
+      "published_util_160": 0.437,
+      "reproduced": true
+    }
+  },
+  "what_the_number_cannot_see": [
+    "THE SHELF HAS NO ERA FIELD. No year, no created-date, no archival flag on any ledger row (period_rule.finding). Era is proxied only by source class and by a year appearing inside a provider title.",
+    "A TITLE MATCH IS NOT A SUPPLY COUNT. It says the word is in the title; it does not say the clip is usable, in date, in the right country, above 720p, or that a human would accept the frame. EP68 measured a 1.3% hand-accept rate against a green noun number.",
+    "64% of the 1,058-clip archival pool is below 720p (EP68 section 2).",
+    "Registers overlap; the union is distinct, but a clip counted in two registers can only be spent once. Union availability therefore overstates supply.",
+    "Broad tokens carry noise: 'key' also matches 'key west', 'watch' is a verb, 'hall' matches concert halls, 'dark' matches dark chocolate. Noise inflates the denominator, i.e. it makes utilisation look BETTER than it is.",
+    "C06 deliberately excludes the bare token 'street' (it would add thousands of non-American streets); C03 keeps the broad token 'police'.",
+    "No disk re-verification is done here beyond the pool builder's absent_index.json."
+  ]
+}

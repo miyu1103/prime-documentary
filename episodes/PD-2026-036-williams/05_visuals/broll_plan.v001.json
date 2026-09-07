@@ -1,0 +1,305 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-036-williams",
+  "revision": "v001",
+  "title": "EP36 factory b-roll query plan (image-independent)",
+  "purpose": "A pull/query plan telling assembly WHICH commercial-OK factory clips to search for each of the 16 script spans, with per-beat distinct-count targets and explicit avoid-lists, so the cutlist clears the footage_diversity ship gate WITHOUT repetition or generic-symbol spam. This plan selects nothing and copies no media; it is the search recipe only.",
+  "authored_from": {
+    "script": "episodes/PD-2026-036-williams/03_script/script.en.v001.md",
+    "annotated_spans": "episodes/PD-2026-036-williams/03_script/script.annotated.v001.json",
+    "design": "episodes/_planning/EP36_williams_DESIGN.v001.md",
+    "shelf_inventory": "episodes/_planning/FACTORY_INVENTORY.md",
+    "theme_taxonomy": "scripts/factory_themes.py (theme_of())",
+    "selector_tool": "scripts/select_factory_assets.py",
+    "ship_gate": ".claude/rules/19-ship-gate.md + scripts/check_final_acceptance.py::check_footage_diversity"
+  },
+
+  "policy": {
+    "commercial_ok_only": "Every clip must be from the committed factory shelf (assets/asset_manifest.v001.json), all Pexels/Pixabay commercial-OK. No new downloads, no other source.",
+    "no_real_person_likeness": "Invariant 11. Reject any clip showing an identifiable real person's face (esp. anything readable as Robert Williams, his family, Detroit officers). Prefer faceless / silhouette / from-behind / hands-only / out-of-focus. All figures anonymous.",
+    "no_real_logos_seals_landmarks": "Reject visible real brand logos, police-department insignia, court seals, flags, or recognizable real buildings. These are illustrative/symbolic stock, never presented as the actual case's real people/places/records (R2 neutrality; invariant 11).",
+    "not_evidence": "A stock clip is never presented as the authentic surveillance frame, the real mugshot, or a real record. Illustrative/symbolic use only.",
+    "mandatory_visual_qc_contact_sheet_before_accept": {
+      "why": "KNOWN ISSUE (memory pd-factory-shelf-mislabeled): the factory shelf labels are PARTIALLY BROKEN. Subtypes have contained off-theme media (e.g. an 'evidence_bag' folder held cartoons). The machine gate cannot detect a wrong-but-commercial-OK clip. Therefore NO clip is accepted into the cutlist until a human has eyeballed it.",
+      "procedure": "For every candidate returned by select_factory_assets.py, build a LABELED contact sheet (thumbnail + AF-id + subtype + kind) and visually confirm each clip actually matches its subtype label AND the beat intent AND the neutral cold-slate/cyan tone. Reject cartoons, mislabeled content, off-tone, any real face/logo/landmark. Only QC-passed AF-ids may enter <slug>_film.json cuts[].",
+      "prefer_neutral_themes": "Because mislabeling risk rises in crime/forensic buckets, PREFER neutral themes (surveillance_tech, urban_night, property_home, atmosphere_symbolic, documents_paper, abstract loops). Treat crime_police and legal_court as QC-heavy: pull architecture/environment shots only, never the generic justice symbols."
+    },
+    "footage_diversity_targets": {
+      "gate_source": "scripts/check_final_acceptance.py::check_footage_diversity (HARD). Computed over the ENTIRE cuts[] list in remotion/src/data/williams_film.json (every src: hero stills AND factory clips).",
+      "distinct_fraction_min": 0.40,
+      "distinct_fraction_target": 0.50,
+      "max_uses_per_clip_gate": 4,
+      "max_uses_per_clip_plan": 3,
+      "generic_symbol_regex": "scale|gavel|hourglass|clock|stopwatch|balance",
+      "generic_symbol_max_uses": 2,
+      "generic_symbol_plan": "Aim for 0-1. NOTE: 'clock' is a gate-generic token, so any clock/wall-clock/clock_ticking b-roll (ACT I holding beats) is capped at <=2 uses TOTAL across the whole film and should ideally be a code motion-graphic or hero still, not a repeated factory clip. Do NOT pull lady_justice / balance_scale / gavel / hourglass at all (surveillance topic does not need them).",
+      "factory_seconds_per_clip_floor": 45,
+      "factory_distinct_floor_min_clips": 17
+    },
+    "layer_load_split": {
+      "note": "Three layers share the ~700s visual timeline so no single source is overused and the meaning-beats are code, not stock.",
+      "hero_stills_codex": "30 distinct Codex stills S001-S030 (episodes/_planning/EP36_williams_ai_prompts.v001.md). ~40% of screen time. Each held with Ken-Burns; cap <=3 placements/still to protect the reuse gate.",
+      "motion_graphics_code": "Code-built Remotion components carry the MEANING beats (FaceMatchGrid, NumberTicker similarity meter, BiasBars, CaseTimeline year-sweep, PinDropMap, kinetic caption cards). ~25-30% of screen time. These are components, largely NOT stock srcs, so they add screen time without consuming the factory pool or the distinct budget.",
+      "factory_broll": "Neutral establishing / transition / breathing cutaways. ~30-35% of screen time. TARGET POOL: stage >=60 QC-passed distinct factory clips (this plan enumerates ~70 candidate subtypes below) so assembly can cut with variety and cap any clip at <=3 uses."
+    },
+    "diversity_math": {
+      "runtime_total_s": 735,
+      "visual_timeline_s_approx": 700,
+      "avg_cut_s": 2.2,
+      "approx_total_cuts": "700 / 2.2 = ~318 cut-slots (MG-heavy spans hold longer, so effective ~250-320)",
+      "distinct_sources_needed_at_floor": "0.40 x total_cuts = ~100-128 distinct srcs",
+      "planned_distinct_sources": "30 hero stills + >=60 factory clips = >=90-100 distinct srcs",
+      "headroom_rule": "Keep max reuse <=3 and stage the full ~60-70 clip factory pool so the cutlist distinct ratio lands ~0.45-0.55 (margin over the 0.40 floor). If assembly's cut count runs high enough to push the ratio under 0.45, widen the factory pool or lengthen holds rather than repeating a clip a 4th time."
+    }
+  },
+
+  "global_avoid": [
+    "lady_justice_statue / balance_scale / brass_scales / gavel / hourglass / stopwatch / clock spam (gate-generic; not needed for a surveillance topic)",
+    "any identifiable real human face; any look-alike of Robert Williams / family / named officers",
+    "real police-department insignia, court seals, flags, real brand logos, recognizable real landmarks/buildings",
+    "any clip presented as the authentic surveillance export, the real mugshot, or a real record",
+    "cartoons / illustration-style / 3D-render-look / plastic-AI-sheen clips (frequent mislabel contaminant in the shelf)",
+    "teal-orange or oversaturated grades that fight the cold-slate x cyan palette",
+    "reusing the SAME clip across beats more than 3x, or across neighbouring cuts (no back-to-back repeats)"
+  ],
+
+  "preferred_themes_neutral": [
+    "surveillance_tech",
+    "urban_night",
+    "property_home",
+    "atmosphere_symbolic",
+    "documents_paper",
+    "abstract_loop (loops)",
+    "light / vfx / particle / texture overlays (screen/add accents)"
+  ],
+  "qc_heavy_themes_restricted": {
+    "crime_police": "environment/architecture only (holding-area, corridor, station exterior). Off-theme/cartoon contamination is highest here -- QC every clip. Prefer neutral atmosphere_symbolic substitutes.",
+    "legal_court": "architecture only (courthouse steps/columns, empty courtroom benches). NEVER the justice symbols (scales/gavel/lady_justice)."
+  },
+
+  "spans": [
+    {
+      "span_id": "SPN-0001",
+      "chapter": "hook",
+      "beat": "HOOK cold-open threat: a blurry surveillance frame resolves toward a suburban front door.",
+      "hero_stills": ["S001"],
+      "primary_layer": "hero_still + surveillance texture overlay",
+      "target_distinct_broll_clips": 2,
+      "factory_keywords": ["surveillance camera", "cctv monitor grid", "tv static / scanline noise", "dark front door", "suburban house night"],
+      "candidate_themes": ["surveillance_tech", "property_home", "texture (overlays)"],
+      "candidate_subtypes": ["city_surveillance_camera_dome", "cctv_monitor_grid_wall", "static_noise_particles / tv_static", "front_door_house", "suburban_house_exterior_night"],
+      "selector_examples": ["--theme surveillance_tech --kind video", "--subtype front_door_house"],
+      "avoid": ["any real surveillance-export look or real face in the CCTV clip", "gavel/scales", "bright daytime cheerful suburb", "readable house numbers or signage"]
+    },
+    {
+      "span_id": "SPN-0002",
+      "chapter": "opening",
+      "beat": "OP title card 'THE ALGORITHM SAID IT WAS YOU.' over a face-scan grid; card dissolves to pixels.",
+      "hero_stills": [],
+      "primary_layer": "canonical BrandOpening bookend + code face-scan grid; factory = thin abstract BED only",
+      "target_distinct_broll_clips": 1,
+      "factory_keywords": ["abstract network nodes loop", "data stream loop", "looping navy gradient"],
+      "candidate_themes": ["abstract_loop (loops)"],
+      "candidate_subtypes": ["abstract_network_nodes_loop", "data_stream_loop", "looping_gradient_navy", "looping_particles_blue"],
+      "selector_examples": ["--category loops --kind video"],
+      "avoid": ["any concrete b-roll that competes with the title card", "gold accent changes (OP stays canonical gold -- do not add cyan over the bookend)", "faces"]
+    },
+    {
+      "span_id": "SPN-0003",
+      "chapter": "act1",
+      "beat": "ACT I open: ordinary father, driveway, two cruisers, walked off his own lawn in handcuffs. JANUARY 2020, a Detroit suburb.",
+      "hero_stills": ["S002", "S016", "S027"],
+      "primary_layer": "hero_still-led establishing; factory = suburb establishing + cold police light",
+      "target_distinct_broll_clips": 4,
+      "factory_keywords": ["suburban house exterior night", "american suburb aerial", "rural / residential road", "person at window silhouette", "police strobe red and blue"],
+      "candidate_themes": ["property_home", "atmosphere_symbolic", "light (overlay)"],
+      "candidate_subtypes": ["suburban_house_exterior_night", "american_suburb_aerial", "rural_road_america", "person_at_window_silhouette_night", "police_strobe_red_and_blue"],
+      "selector_examples": ["--theme property_home --kind video", "--subtype police_strobe_red_and_blue"],
+      "avoid": ["identifiable faces of the family / officers", "real cruiser markings or department insignia", "gavel/scales/courthouse (too early)", "cheerful daytime tone"]
+    },
+    {
+      "span_id": "SPN-0004",
+      "chapter": "act1",
+      "beat": "ACT I escalation: downtown, mugshot/prints/DNA, ~30 hours in a cell; 'A computer did.'",
+      "hero_stills": ["S004", "S017", "S028"],
+      "primary_layer": "hero_still-led; factory = cold institutional environment + NumberTicker '~30 HOURS' (code)",
+      "target_distinct_broll_clips": 3,
+      "factory_keywords": ["empty holding / interrogation room", "concrete cell wall", "single empty chair", "fluorescent corridor", "steel door macro"],
+      "candidate_themes": ["crime_police (QC-heavy, environment only)", "atmosphere_symbolic", "urban_night"],
+      "candidate_subtypes": ["police_interrogation_room_empty", "one_way_mirror_room", "jail_cell_bars", "single_chair_empty_room", "concrete_wall"],
+      "selector_examples": ["--subtype police_interrogation_room_empty", "--theme atmosphere_symbolic --kind video"],
+      "avoid": ["real mugshot realism / real booking record", "CLOCK / clock_ticking b-roll here beyond a single use -- 'clock' is a gate-generic (<=2 total film-wide); prefer an implied clock in the hero still or a code motion-graphic", "cartoon 'evidence_bag'-type mislabeled clips (QC hard)", "readable documents or numbers", "gavel/scales"]
+    },
+    {
+      "span_id": "SPN-0005",
+      "chapter": "act1",
+      "beat": "ACT I close: charges dropped, prosecutor admits fault; open loop 'how did they get his name?'; turn toward the quiet machine/database.",
+      "hero_stills": ["S019", "S005", "S020"],
+      "primary_layer": "kinetic type 'CHARGES DROPPED' (code) + factory transition to server glow",
+      "target_distinct_broll_clips": 3,
+      "factory_keywords": ["empty office at night", "closed case file on desk", "server room blue push-in", "data center aisle", "fiber optic glow"],
+      "candidate_themes": ["urban_night", "documents_paper", "surveillance_tech"],
+      "candidate_subtypes": ["office_interior_dark", "case_files_stack_desk", "server_room_blue", "data_center", "fiber_optic_cables_glowing"],
+      "selector_examples": ["--theme surveillance_tech --kind video", "--subtype case_files_stack_desk"],
+      "avoid": ["readable document text", "real seals/letterhead", "faces", "gavel/scales"]
+    },
+    {
+      "span_id": "SPN-0006",
+      "chapter": "act2",
+      "beat": "ACT II turn: 2018 watch-shop theft; a ceiling camera catches one grainy frame; police hand the blur to software.",
+      "hero_stills": ["S006", "S001"],
+      "primary_layer": "hero_still-led (dim retail) + surveillance camera cutaway + pixel-zoom (code)",
+      "target_distinct_broll_clips": 3,
+      "factory_keywords": ["ceiling security camera", "surveillance camera city dome", "dim downtown storefront night", "retail display glass reflection", "scanline / film grain overlay"],
+      "candidate_themes": ["surveillance_tech", "urban_night", "texture (overlay)"],
+      "candidate_subtypes": ["surveillance_camera_city", "city_surveillance_camera_dome", "small_town_main_street", "rain_on_city_street_neon", "scratched_film / film_grain_texture"],
+      "selector_examples": ["--subtype surveillance_camera_city", "--category texture_assets"],
+      "avoid": ["any real watch/store brand or logo", "real surveillance-export framing", "faces", "gavel/scales"]
+    },
+    {
+      "span_id": "SPN-0007",
+      "chapter": "act2",
+      "beat": "ACT II mechanism: software compares one image to millions of license/mugshot photos; ranked probability; the old license photo surfaces.",
+      "hero_stills": ["S007", "S021", "S022", "S026"],
+      "primary_layer": "code motion-graphics DOMINANT (FaceMatchGrid + NumberTicker similarity meter); factory = data-infrastructure BED",
+      "target_distinct_broll_clips": 4,
+      "factory_keywords": ["server room / data center", "binary code screen", "circuit board macro / data flow", "world map dark glowing", "data stream loop"],
+      "candidate_themes": ["surveillance_tech", "abstract_loop (loops)"],
+      "candidate_subtypes": ["server_room_blue", "data_center", "binary_code_screen_green", "circuit_data_flow", "world_map_dark_glowing", "data_stream_loop"],
+      "selector_examples": ["--theme surveillance_tech --kind video", "--category loops --kind video"],
+      "avoid": ["readable UI / real software interface", "real faces in any 'database' clip", "burned-in numbers (the meter is code, decorative, not a measured value)", "gavel/scales"]
+    },
+    {
+      "span_id": "SPN-0008",
+      "chapter": "act2",
+      "beat": "ACT II stake: the computer's pick dropped into a physical lineup, shown to a contractor who only watched the same video -> circular probable cause.",
+      "hero_stills": ["S008", "S023"],
+      "primary_layer": "hero_still-led (desk / lineup card) + code loop-arrow circularity diagram",
+      "target_distinct_broll_clips": 3,
+      "factory_keywords": ["detective desk lamp pool", "case files / paperwork on desk", "magnifying glass on document", "pinned case board strings", "dark office"],
+      "candidate_themes": ["documents_paper", "atmosphere_symbolic", "urban_night"],
+      "candidate_subtypes": ["case_files_stack_desk", "documents_on_desk", "magnifying_glass_on_document", "desk_lamp", "office_interior_dark"],
+      "selector_examples": ["--theme documents_paper --kind video", "--subtype magnifying_glass_on_document"],
+      "avoid": ["readable text on the lineup/documents", "any real face on the lineup card", "gavel/scales", "real insignia"]
+    },
+    {
+      "span_id": "SPN-0009",
+      "chapter": "act2",
+      "beat": "ACT II payoff + open loop: a probability dressed as an ID; 'why did it reach for a face like his?'; turn to a clean data-lab.",
+      "hero_stills": ["S009", "S026"],
+      "primary_layer": "code (grid pulls back to wall of faces) + factory transition to neutral lab motif",
+      "target_distinct_broll_clips": 2,
+      "factory_keywords": ["wall of monitors / security monitors", "cctv monitor grid wall", "clean dark data-lab", "abstract network nodes"],
+      "candidate_themes": ["surveillance_tech", "abstract_loop (loops)"],
+      "candidate_subtypes": ["security_monitors_wall", "cctv_monitor_grid_wall", "abstract_network_nodes_loop"],
+      "selector_examples": ["--subtype security_monitors_wall"],
+      "avoid": ["real identifiable faces on the monitor wall", "gavel/scales", "melodramatic red-alert stock"]
+    },
+    {
+      "span_id": "SPN-0010",
+      "chapter": "act3",
+      "beat": "ACT III reveal: NIST 2019 standards test; false matches 10-100x higher on Black and Asian faces in head-to-head tests.",
+      "hero_stills": ["S009"],
+      "primary_layer": "code motion-graphics DOMINANT (BiasBars, two bars + wide gap, '10-100x . NIST 2019' clean type); factory = neutral standards-lab BED",
+      "target_distinct_broll_clips": 3,
+      "factory_keywords": ["neutral standards / testing lab", "modern lab low-key", "bank of blurred monitors", "clean architectural dark space", "server / measurement racks"],
+      "candidate_themes": ["medical_lab (illustrative neutral lab)", "surveillance_tech", "urban_night"],
+      "candidate_subtypes": ["modern_medical_lab", "laboratory_glassware", "server_room_blue", "office_interior_dark"],
+      "selector_examples": ["--subtype modern_medical_lab", "--theme surveillance_tech --kind video"],
+      "avoid": ["baked-in numbers/percentages in any still or clip (numbers are code, grade-A only)", "inflammatory race imagery", "real lab logos", "gavel/scales"]
+    },
+    {
+      "span_id": "SPN-0011",
+      "chapter": "act3",
+      "beat": "ACT III neutral evidence: one-to-many worst on Black women; Gender Shades = distinct task; the counter-finding (gap all but vanishes on Asia-built systems -> training-data, not the tech).",
+      "hero_stills": ["S010", "S018"],
+      "primary_layer": "code motion-graphics DOMINANT (lopsided dataset -> anonymous silhouettes); factory = abstract data texture BED only",
+      "target_distinct_broll_clips": 2,
+      "factory_keywords": ["binary code / data flow", "abstract network nodes loop", "dust motes / particles in beam (depth)", "dark gradient loop"],
+      "candidate_themes": ["surveillance_tech", "abstract_loop (loops)", "particle (overlay)"],
+      "candidate_subtypes": ["circuit_data_flow", "abstract_network_nodes_loop", "dust_motes_sunlight", "looping_gradient_navy"],
+      "selector_examples": ["--category loops --kind video", "--category particle_assets"],
+      "avoid": ["caricature or any identifiable faces / real people in a 'dataset' clip", "criminalizing framing", "real logos", "gavel/scales"]
+    },
+    {
+      "span_id": "SPN-0012",
+      "chapter": "act3",
+      "beat": "ACT III re-hook: your face is already in the lineup (driver's license); a permanent lineup you never volunteered for.",
+      "hero_stills": ["S011", "S026"],
+      "primary_layer": "code (license photo dissolves into grid of millions, scan line); factory = DMV/office + scan overlay",
+      "target_distinct_broll_clips": 2,
+      "factory_keywords": ["plain office / DMV counter interior", "smartphone in dark / scan glow", "flat institutional overhead light space", "scanline overlay"],
+      "candidate_themes": ["urban_night", "surveillance_tech", "atmosphere_symbolic"],
+      "candidate_subtypes": ["empty_office_cubicles", "smartphone_in_dark", "security_monitors_wall", "concrete_wall"],
+      "selector_examples": ["--subtype smartphone_in_dark", "--theme urban_night --kind video"],
+      "avoid": ["real DMV signage / state logos", "any real face on the license/grid", "gavel/scales"]
+    },
+    {
+      "span_id": "SPN-0013",
+      "chapter": "act4",
+      "beat": "ACT IV resolution: 2021 lawsuit -> 2024 settlement; no arrest on face-match alone; audit since 2017; 4 years court oversight. Timeline graphic.",
+      "hero_stills": ["S012", "S025"],
+      "primary_layer": "code motion-graphics DOMINANT (CaseTimeline year-sweep, grade-A markers); factory = neutral civic ARCHITECTURE only",
+      "target_distinct_broll_clips": 3,
+      "factory_keywords": ["courthouse steps (architecture)", "federal building columns night", "empty courtroom benches wide", "city civic building dusk"],
+      "candidate_themes": ["legal_court (ARCHITECTURE ONLY -- no justice symbols)", "urban_night"],
+      "candidate_subtypes": ["courthouse_steps", "federal_building_columns_night", "courtroom_empty_wide", "city_skyline_dusk"],
+      "selector_examples": ["--subtype courthouse_steps", "--subtype courtroom_empty_wide"],
+      "avoid": ["lady_justice_statue / balance_scale / gavel / brass_scales (generic symbols -- gate cap, and the topic does not need them)", "real court seals / flags / recognizable real courthouse", "burned-in dollar amounts ($300,000 stays in narration only)"]
+    },
+    {
+      "span_id": "SPN-0014",
+      "chapter": "act4",
+      "beat": "ACT IV twist: the rules bind ONE city; his was the first case the country heard about, not the first to happen; two earlier men.",
+      "hero_stills": ["S013"],
+      "primary_layer": "code motion-graphics DOMINANT (PinDropMap: one lit pin over a field of dark pins); factory = city aerial / map BED",
+      "target_distinct_broll_clips": 2,
+      "factory_keywords": ["drone city aerial night", "city skyline dusk", "world map dark glowing", "satellite earth at night"],
+      "candidate_themes": ["urban_night", "surveillance_tech"],
+      "candidate_subtypes": ["drone_city_aerial_night", "city_skyline_dusk", "world_map_dark_glowing", "satellite_earth_at_night"],
+      "selector_examples": ["--theme urban_night --kind video", "--subtype world_map_dark_glowing"],
+      "avoid": ["real identifiable skyline / named landmark", "real map labels or city names baked in", "gavel/scales"]
+    },
+    {
+      "span_id": "SPN-0015",
+      "chapter": "act4",
+      "beat": "ACT IV escalation: he was not the last; more arrests; one woman eight months pregnant (silhouette/shadow only); a row of doors going cold.",
+      "hero_stills": ["S014", "S024"],
+      "primary_layer": "hero_still-led (door-frames row, pregnant-woman shadow) + factory door/shadow cutaways",
+      "target_distinct_broll_clips": 3,
+      "factory_keywords": ["suburban front door / porch dusk", "row of houses / suburb street", "long shadow of a person", "empty road at dusk", "person in doorway silhouette"],
+      "candidate_themes": ["property_home", "atmosphere_symbolic"],
+      "candidate_subtypes": ["front_door_house", "small_town_main_street", "long_shadow_of_a_person", "empty_road_sunset", "lone_person_silhouette_walking"],
+      "selector_examples": ["--theme property_home --kind video", "--subtype long_shadow_of_a_person"],
+      "avoid": ["any identifiable face; the pregnant-woman beat is silhouette/shadow ONLY (no likeness)", "criminalizing framing", "real people", "gavel/scales"]
+    },
+    {
+      "span_id": "SPN-0016",
+      "chapter": "ending",
+      "beat": "ENDING/CTA: your face is a password you can't change; walk past a camera; subscribe; open loop to the next case (data trail).",
+      "hero_stills": ["S015", "S029", "S030"],
+      "primary_layer": "canonical BrandEndcard + hero resolve still; factory = 'camera watching you' + city street cutaways",
+      "target_distinct_broll_clips": 3,
+      "factory_keywords": ["cctv / security camera looking at viewer", "surveillance camera city", "dusk city street corner", "lone person walking away silhouette", "cell tower silhouette"],
+      "candidate_themes": ["surveillance_tech", "urban_night", "atmosphere_symbolic"],
+      "candidate_subtypes": ["city_surveillance_camera_dome", "surveillance_camera_city", "rain_on_city_street_neon", "lone_person_silhouette_walking", "cell_tower_silhouette"],
+      "selector_examples": ["--subtype surveillance_camera_city", "--theme atmosphere_symbolic --kind video"],
+      "avoid": ["clip that competes with the endcard CTA type", "any real face", "real brand/landmark", "gavel/scales", "changing the canonical gold endcard"]
+    }
+  ],
+
+  "rollup": {
+    "sum_of_per_span_distinct_targets": 43,
+    "recommended_staged_factory_pool_distinct": "60-70 (stage extra candidates so QC rejections + the <=3-uses cap still leave a wide pool)",
+    "combined_distinct_sources_estimate": "30 hero stills + >=60 factory = >=90 distinct srcs -> clears distinct>=0.40 with margin for cutlists up to ~225 cuts; keep max reuse <=3 to hold the ratio >=0.45",
+    "generic_symbol_budget_used": "0 planned (justice symbols excluded entirely; clock imagery pushed to hero/code and capped <=2)",
+    "themes_touched": ["surveillance_tech", "urban_night", "property_home", "atmosphere_symbolic", "documents_paper", "abstract_loop", "medical_lab (illustrative)", "crime_police (QC-heavy env only)", "legal_court (architecture only)", "light/vfx/particle/texture overlays"]
+  },
+
+  "next_steps_for_assembly": [
+    "1. Run scripts/select_factory_assets.py per span (examples in each span's selector_examples), preferring --exclude-used to stage FRESH-only clips (avoids the arc_nonrepeat gate).",
+    "2. Build a LABELED contact sheet of all returned candidates; visually QC each (label-correct? on-tone? no real face/logo/landmark? not a cartoon?). Reject failures. (MANDATORY -- shelf labels are partially broken.)",
+    "3. Copy only QC-passed clips to remotion/public/williams/factory/ and wire into williams_film.json cuts[] with src set, <=3 uses each, no back-to-back repeats.",
+    "4. Verify with check_final_acceptance.py williams (footage_diversity: distinct>=0.40, no reuse>4, no generic>2) before the acceptance render."
+  ]
+}

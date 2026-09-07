@@ -1,0 +1,58 @@
+EP67 ramirez — 画像発注 予備バッチ 3/6（4枚）
+区分: J · the machine and the company, second angles  [R131 – R134]
+
+★これは**予備**です。**生成してください。**本編の契約（mandatory_stills）には入って
+　いませんが、却下が出たときの差し替えと、ナレーションが伸びた場合の不足に備えます。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R131.png
+TWO plain pale filing cards lying side by side and touching along one long edge on a dark matte surface, photographed from directly overhead in even soft light, THE TWO CARDS ALMOST BUT NOT QUITE THE SAME SIZE — one is a few millimetres wider and a shade taller than the other, so their outer edges do not line up and that near-miss is the whole subject of the picture. BOTH CARDS ARE COMPLETELY BLANK: no printing, no ruling, no writing, no tab, no punch hole. Nothing else is in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, writing on the cards, hand, arrows, tick, cross, comparison marks
+
+■ R132.png
+A shallow office drawer pulled fully open, seen from a standing angle looking down into it, filled front to back with IDENTICAL EMPTY HANGING FILE POCKETS on two steel rails: every pocket the same colour, the same height and slack because nothing is in any of them. ALL THE TAB HOLDERS ARE EMPTY — bare plastic frames with no cards and no writing in a single one. Even office light from above, nobody in frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, cards in the tab holders, handwritten labels, coloured tabs, files inside
+
+■ R133.png
+A bank of grey steel filing cabinets photographed square on from six feet away, TWO DRAWERS IN THE SAME COLUMN treated differently: the upper drawer is pulled fully out and packed with identical blank paper files standing on edge, and the drawer below it is shut. EVERY LABEL HOLDER ON EVERY DRAWER FRONT IS EMPTY — bare metal frames, no cards, no writing, no numbers anywhere on the run. Flat even office light, nobody in frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, drawer labels, numbers on the drawers, writing on the files, hand
+
+■ R134.png
+A single plain pale card lying alone on top of a folded stack of continuous fanfold paper, photographed close from a low three-quarter angle so the card is sharp and the perforated sprocket margins of the stack run away soft behind it. THE CARD IS COMPLETELY BLANK, and the fanfold sheet beneath it carries no writing either. The paper carries no writing of any kind, and this is what is on it instead: EVENLY SPACED FLAT GREY HORIZONTAL BARS of one uniform width and one uniform weight, laid in parallel like ruled bands of tone, each bar a solid unbroken block of soft grey with straight ends and no letter shapes, no word shapes, no gaps between words and no broken or ragged edge anywhere along it, so the sheet reads as printed matter purely by its rhythm of grey and white and carries not one readable character. One soft light from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, writing on the card, printed figures, column headings, hand
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R131.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

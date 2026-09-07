@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-020-gardner",
+  "topic_id": "TOP-20260629-020",
+  "slug": "gardner",
+  "title_working": "The Heist That Was Never Solved: The Gardner Museum Mystery",
+  "state": "scheduled",
+  "risk_class": "R2",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "audio_mix": "v001",
+    "captions": "v003",
+    "factory_ledger": "v001",
+    "edit_scaffold": "v001",
+    "edit": "v001",
+    "youtube_meta": "v001",
+    "final_delivery": "v001",
+    "rights_manifest": "v001",
+    "youtube_schedule_result": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-020-gardner-topic",
+      "artifact_type": "topic",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-020-gardner/00_topic/topic.v001.json",
+      "checksum": "sha256:5e0a27d6adf3adae69f278d723abec5b4b7122c20015d3193a3e75710b9dd62a",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-020-gardner-sources",
+      "artifact_type": "source_set",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-020-gardner/01_research/sources.v001.json",
+      "checksum": "sha256:7215e56d89af50c44d11cd7e7ad7e6d4889b7f07edf1ae12fba8ff21d4fee871",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-020-gardner-claims",
+      "artifact_type": "claim_ledger",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-020-gardner/01_research/claims.v001.json",
+      "checksum": "sha256:75c8eeaf23b3f9b3d46592cf778b497736ff8a5962e5434bb0e7a09cc2e005af",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-020-gardner-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-020-gardner/03_script/script.annotated.v001.json",
+      "checksum": "sha256:4233f5ea0a0bfcd5083cf93518b2abddbcaa99e09119dc2f38bdaf65b022e91b",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "R2 UNSOLVED case. Never name or imply guilt of any living person. FBI never publicly named the thieves. Visuals: no real-person likeness, no real museum interior/logo, no authentic art reproductions.",
+    "Left-process only (Claude): topic/research/claims/script. Codex owns scenes/visuals/audio/edit/render.",
+    "Narration sized at measured ~173 wpm to fill ~26-27 min; validator estimates at 150 wpm.",
+    "Durable source content hashes PENDING (bot-protected); capture before publish (non-blocking).",
+    "Final-script approval is an OWNER gate: APR-0001 is PENDING (not self-approved). Before broadcast: confirm living/deceased status of any person of interest; lock verbatim FBI/DOJ quotes."
+  ],
+  "blockers": [],
+  "events": [
+    {
+      "timestamp": "2026-06-29T19:29:44.641367+00:00",
+      "event": "edit_review_built",
+      "details": {
+        "final_video": "H:/pd-media/episodes/PD-2026-020-gardner/08_edit/final.mp4",
+        "captions": "episodes/PD-2026-020-gardner/08_edit/captions.v003.srt",
+        "acceptance_report": "episodes/PD-2026-020-gardner/09_package/acceptance_report.v001.json",
+        "acceptance_status": "PASS"
+      }
+    }
+  ],
+  "created_at": "2026-06-29T00:00:00+00:00",
+  "updated_at": "2026-06-29T19:51:27.820078+00:00",
+  "video_id": "1h267U6PY0I",
+  "video_url": "https://youtu.be/1h267U6PY0I",
+  "public_schedule_active": true
+}

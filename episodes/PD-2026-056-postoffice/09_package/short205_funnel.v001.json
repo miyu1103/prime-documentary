@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 205,
+  "episode_id": "PD-2026-056-postoffice",
+  "slug": "postoffice",
+  "loop": true,
+  "loop_join": "The final beat p25 is short205_01.png, a pen laid down on an internal report, rewound through p24 (short205_02.png, the lamp over the desk it landed on) and p23 (short205_03.png, the senior desks it went to) under the FULL CASE card and held to the last frame. Frame 0 is that same pen-on-the-report shot (p01), so the loop closes on the identical picture.",
+  "second_watch_detail": "The frame captioned 'the weekly calls about the defects' (p33) reads as routine IT support on the first pass; once L6 states the Post Office's own barrister's rule that 'if it is not minuted, it is not disclosable,' the same calls read as conversations kept off paper on purpose.",
+  "funnel_question_left_for_longform": "Who gave the instruction that the minutes about the defects should be destroyed, and what happened to the people who carried it out?",
+  "funnel_long_title": "A Computer Invents a £2,000 Debt. Her Employer Prosecutes",
+  "funnel_long_video_id": "4FlCaOVpln0",
+  "description_line_1": "▶ FULL CASE: A Computer Invents a £2,000 Debt. Her Employer Prosecutes | https://youtu.be/4FlCaOVpln0",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Computer Invents a £2,000 Debt. Her",
+    "ctaLongThumbSrc": "shorts/short205/short205_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "Who gave the instruction that the minutes about the defects should be destroyed, and what happened to the people who carried it out? The full case is here: https://youtu.be/4FlCaOVpln0",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments in remotion/src/data/short205.ts, the CTA block from that same file, and the long-form id/title from the live video (4FlCaOVpln0). Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet; the short is not yet uploaded so no real Studio edit link exists."
+}

@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 22/24（8枚）
+区分: SPARE（予備・本編の隙間を埋めるため）
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T169.png
+   [T169]  flags: 
+   A 1979 kitchen table with a radio and a cup, morning light
+
+2) T170.png
+   [T170]  flags: 
+   An empty school corridor in bright daylight, 1979 lockers
+
+3) T171.png
+   [T171]  flags: 
+   A church steeple in a small Pennsylvania town, bright overcast
+
+4) T172.png
+   [T172]  flags: 
+   A telephone pole and wires against a bright blank sky
+
+5) T173.png
+   [T173]  flags: 
+   A field of early spring stubble in flat bright daylight
+
+6) T174.png
+   [T174]  flags: 
+   A plant gate seen at dusk with one floodlight burning
+
+7) T175.png
+   [T175]  flags: 
+   A concrete stairwell in an office building of 1979, one strip light
+
+8) T176.png
+   [T176]  flags: 
+   A wall of 1979 office pigeonholes, all empty, hard light

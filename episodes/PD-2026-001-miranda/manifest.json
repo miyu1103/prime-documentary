@@ -20,9 +20,14 @@
     "voice_plan": "v001",
     "voice_master": "v002",
     "qc_report": "v001",
-    "edit": "v021",
+    "edit": "premium_v001",
     "rights_manifest": "v002",
-    "package": "v003"
+    "package": "v004",
+    "youtube_meta": "v004",
+    "youtube_replacement_result": "v004",
+    "youtube_replacement_verify": "v004",
+    "thumbnail": "v005",
+    "youtube_thumbnail_update": "v005"
   },
   "artifacts": [
     {
@@ -40,11 +45,12 @@
     "APR-0001",
     "APR-0002",
     "APR-0003",
-    "APR-0004"
+    "APR-0004",
+    "APR-0005"
   ],
-  "published_at": "2026-06-15T06:05:00+00:00",
-  "video_id": "PjGEqW6F9WM",
-  "video_url": "https://www.youtube.com/watch?v=PjGEqW6F9WM",
+  "published_at": "2026-06-23T15:35:38.447199+00:00",
+  "video_id": "cQFql7tT1fE",
+  "video_url": "https://youtu.be/cQFql7tT1fE",
   "costs": {
     "estimated": {
       "amount": 0,
@@ -67,9 +73,11 @@
     "Heavy media (05_visuals/06_voice/07_music/08_edit) is stored on the external exFAT SSD, not in this repo. See episodes/PD-2026-001-miranda/README.md and config/storage.local.json for the per-machine artifact-root mapping.",
     "Research QC SRC-0001 accepted post-publish: the Miranda v. Arizona opinion (384 U.S. 436, 1966) is public domain and the citation is verified (cross-checked via Oyez SRC-0002, which carries a content hash). The CourtListener live fetch returned HTTP 401, so no durable content hash was captured for SRC-0001. Accepted as low-risk; not a publish blocker. See events.jsonl research_qc_accepted.",
     "Final-cut QC was NOT run as a recorded gate for the published cut (EP1 process gap — see 10_analytics/retro.v001.md and OPERATING_PLAYBOOK section 8). Accepted retroactively as low-risk (PD/owner-generated assets only; AI/synthetic disclosure shown). EP2 must run the QC gates on the final cut before publish.",
-    "Thumbnail not yet set on YouTube: thumbnails.set API returned 404 (new-channel restriction, PD-001). Set manually in YouTube Studio (remotion/out/thumb_final.png) or retry after switching GCP OAuth to Production. Does not affect the published video."
+    "Historical v021 note before premium replacement; old upload thumbnail was not set on YouTube: thumbnails.set API returned 404 (new-channel restriction, PD-001). The premium replacement upload cQFql7tT1fE has thumbnail_set=true.",
+    "Miranda premium rebuild replaced old public upload PjGEqW6F9WM; new public upload cQFql7tT1fE with selected flashy thumbnail. Old upload set private.",
+    "Miranda public upload cQFql7tT1fE thumbnail updated to Codex flashy v005 image; title text is baked into the thumbnail."
   ],
   "blockers": [],
   "created_at": "2026-06-14T00:00:00+09:00",
-  "updated_at": "2026-06-15T06:30:00+00:00"
+  "updated_at": "2026-06-23T15:58:23.078561+00:00"
 }

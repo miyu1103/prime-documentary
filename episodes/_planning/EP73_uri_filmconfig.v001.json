@@ -1,0 +1,605 @@
+{
+ "schema_version": "pd_filmconfig.v001",
+ "slug": "uri",
+ "episode_id": "PD-2026-073-uri",
+ "assets": "episodes/PD-2026-073-uri/05_visuals/asset_manifest.v003.json",
+ "narration_index": "episodes/PD-2026-073-uri/06_audio/narration_index.v001.json",
+ "narration": "uri/narration.mp3",
+ "captions": "episodes/PD-2026-073-uri/08_edit/captions.final.v001.srt",
+ "out": "remotion/src/data/uri_film.json",
+ "leadSeconds": 0,
+ "openingVariant": "overlay",
+ "hookSeconds": 27.32,
+ "hookLine": "At twenty past one in the morning, in a control room north of Austin, an operator gave an order",
+ "captionLeadSeconds": 0.0,
+ "figures_by_section": {
+  "HOOK": [
+   {
+    "kind": "lowerthird",
+    "primary": "AI-assisted visualization",
+    "secondary": "symbolic reconstruction, no real likenesses"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "01:20 CENTRAL TIME.",
+     "15 FEBRUARY 2021."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "01:20 CENTRAL TIME"
+    ]
+   }
+  ],
+  "OP": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "A RECOMMENDATION",
+     "THAT WAS NEVER MADE A RULE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NEVER MADE A RULE"
+    ]
+   }
+  ],
+  "ACT_1": [
+   {
+    "kind": "lowerthird",
+    "primary": "1935",
+    "secondary": "The Federal Power Act tasks a federal commission with overseeing electricity sales that cross state lines. (TX-01)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "RATES AND OPERATIONS",
+    "secondary": "The two words the utilities were reading. Federal jurisdiction is not really a pricing power - it is the authority to say how a system must be run, and to come and check. (TX-02)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "SO THE WIRES STAYED INSIDE",
+    "secondary": "If no power crossed a state line, the sale was not interstate commerce, and the federal government could not regulate their rates or operations. (TX-02)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AND IT WAS WRITTEN DOWN",
+    "secondary": "The policy of isolation was put into an agreement among the utilities, binding themselves to intrastate operation. (TX-03)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "1965",
+    "secondary": "A cascading failure takes out much of the north-eastern United States, and the country decides grids need somebody watching them. (TX-04)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "1970",
+    "secondary": "ERCOT is formed, five years after that blackout - and deliberately outside the reach of the federal regulator. (TX-04)"
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "in nineteen thirty-five the federal government passed a law giving a federal commission authority over electricity crossing state lines",
+    "primary": "1935",
+    "secondary": "federal authority begins at the state line"
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "and in nineteen thirty-five, when the question on the table was bookkeeping, that looked like a straightforward line to draw",
+    "lines": [
+     "IN 1935 THE QUESTION",
+     "WAS BOOKKEEPING."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "BOOKKEEPING"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "thirty years later, in nineteen sixty-five, a cascading failure took out the power across much of the north-east",
+    "primary": "1965",
+    "secondary": "a cascading failure across the north-east"
+   },
+   {
+    "kind": "stat",
+    "_provenance": "thirty years later, in nineteen sixty-five",
+    "label": "BETWEEN THE TWO",
+    "value": 30,
+    "suffix": " YEARS",
+    "_was_value": "30",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "permission that takes one state's time rather than a federal process is permission that actually arrives",
+    "lines": [
+     "ONE STATE'S PERMISSION",
+     "ARRIVES."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "ARRIVES"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "what it hands you instead is a supply chain, a list, and a decision taken in twenty eleven",
+    "primary": "2011",
+    "secondary": "the decision this film returns to"
+   },
+   {
+    "kind": "timeline",
+    "_provenance": "1935, 1965, 2011: the three dates the first act is built on",
+    "events": [
+     {
+      "year": "1935",
+      "text": "federal authority stops at the state line"
+     },
+     {
+      "year": "1965",
+      "text": "a cascading failure in the north-east"
+     },
+     {
+      "year": "2011",
+      "text": "the report, and the decision taken on it"
+     }
+    ]
+   }
+  ],
+  "ACT_2": [
+   {
+    "kind": "lowerthird",
+    "primary": "2011",
+    "secondary": "Texas experiences an extreme cold weather event. A joint federal inquiry follows. (TX-05)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE RECOMMENDATION",
+    "secondary": "The FERC-NERC report recommended the development of winterization standards. (TX-06)"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "DECLINED."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "DECLINED"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "recommended development of winterization standards",
+    "attribution": "FERC-NERC report on the 2011 Texas cold weather event (TX-06)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "A RECOMMENDATION IS NOT A STANDARD",
+    "secondary": "NERC ultimately declined to act on it. Nobody audits a recommendation. Nobody is penalised for not following one. (TX-07)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE CHAIRMAN SAID SO",
+    "secondary": "FERC's chairman stated afterwards that the 2011 recommendations were not acted on. (TX-08)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "WHAT HAPPENED INSTEAD",
+    "secondary": "Annual reminders, through Regional Entity workshops. A workshop informs. It does not require. (TX-09)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ABOVE THE DESIGN TEMPERATURE",
+    "secondary": "In 2021, generating units experienced freeze-related outages ABOVE the unit's own stated ambient design temperature. Not below it. Above it. (TX-09)"
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "the twenty eleven report asked for the second thing",
+    "primary": "THE 2011 REPORT",
+    "secondary": "it asked for the requirement, not the advice"
+   },
+   {
+    "kind": "quote",
+    "_provenance": "script.en.v001.md:154 -- were not ACTED ON. Corrected 2026-09-01: the card read \"not followed\", which the narration never says and FACTS_LEDGER TX-08 (VERBATIM, SRC-0002) contradicts. The film states it correctly with its citation at 8:26. A full-screen card in quotation marks attributed to a named real office-holder is the one place a paraphrase becomes a claim about what a person said.",
+    "quote": "The 2011 recommendations were not acted on.",
+    "attribution": "the federal regulator's chairman, afterwards (TX-08)"
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "when February twenty twenty-one arrived, generating units failed from freezing above their own stated ambient limits",
+    "lines": [
+     "THEY FAILED ABOVE",
+     "THEIR OWN LIMITS."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "ABOVE"
+    ]
+   },
+   {
+    "kind": "stat",
+    "_provenance": "that is what the report found, in twenty twenty-one, after ten years of annual reminders",
+    "label": "ANNUAL REMINDERS",
+    "value": 10,
+    "suffix": " YEARS",
+    "_was_value": "10",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "the report found it again in twenty twenty-one",
+    "primary": "2021",
+    "secondary": "the same finding, ten years later"
+   }
+  ],
+  "ACT_3": [
+   {
+    "kind": "lowerthird",
+    "primary": "01:20, 15 FEBRUARY 2021",
+    "secondary": "ERCOT orders load shedding, to prevent the risk of a system-wide blackout. (TX-10)"
+   },
+   {
+    "kind": "numberticker",
+    "value": 20000,
+    "group": true,
+    "label": "Megawatts of customers cut off - the largest manually controlled load shedding event in United States history. (TX-13)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "IT IS NOT A FAILURE",
+    "_correction_20260901b": "citation was (TX-10), which is only the 01:20/15 Feb timing and does not support this sentence. The sentence itself is supported directly by the narration: script.en.v001.md:210 (\"It is the thing you do so that the failure does not happen.\") and :220 (\"The only variable that operator controls is how much of the state is permitted to draw.\"). Removed the wrong citation rather than attach a new ledger row to a paraphrase.",
+    "secondary": "Load shedding is the thing you do so that the failure does not happen. It is also the only variable the operator controls."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "59.4 HZ.",
+     "FOUR MINUTES AND TWENTY-THREE SECONDS."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "FOUR MINUTES AND TWENTY-THREE SECONDS"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE LINE WAS NINE MINUTES",
+    "secondary": "Had frequency stayed below 59.4 Hz for nine minutes or more, more generation would have tripped - risking a shutdown that would have cut power to millions more, significantly slowed restoration and damaged units across the grid. (TX-12)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE GRID DID NOT COLLAPSE",
+    "secondary": "It did not. Load was shed to prevent a collapse, and the margin is a measured number - not a figure of speech."
+   },
+   {
+    "kind": "stat",
+    "value": 4500000,
+    "label": "People who lost power in Texas. Some of them for four days. (TX-14)",
+    "decimals": 0
+   },
+   {
+    "kind": "bar",
+    "_correction_20260901": "unit added. The bars rendered bare 263 and 540 directly above a label reading The nine-minute threshold, so the number and its own label contradicted each other on screen. Both are correct only as SECONDS: 4 min 23 s below 59.4 Hz against a 540 s threshold (TX-11, TX-12). BarChart takes a unit prop and this call did not pass one.",
+    "unit": "s",
+    "data": [
+     {
+      "label": "Held below 59.4 Hz",
+      "value": 263
+     },
+     {
+      "label": "The nine-minute threshold",
+      "value": 540
+     }
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "at twenty past one on the morning of the fifteenth, the grid operator ordered load shedding",
+    "lines": [
+     "1:20 A.M.",
+     "LOAD SHEDDING ORDERED."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "1:20 A.M."
+    ]
+   },
+   {
+    "kind": "stat",
+    "_provenance": "the frequency of the Texas grid fell below fifty-nine point four hertz and stayed there",
+    "label": "GRID FREQUENCY FELL BELOW",
+    "value": 59.4,
+    "suffix": " HZ",
+    "decimals": 1,
+    "_was_value": "59.4",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master)."
+   },
+   {
+    "kind": "stat",
+    "_provenance": "more than four and a half million people lost power",
+    "label": "LOST POWER",
+    "value": 4.5,
+    "suffix": " MILLION",
+    "decimals": 1,
+    "_was_value": "4.5",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master)."
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "a system-wide shutdown, cutting power to millions more and significantly slowing restoration",
+    "primary": "WHAT WAS AVOIDED",
+    "secondary": "a system-wide shutdown, and a much slower restoration"
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "cars were being run in driveways for twenty minutes at a time, to charge a phone and get warm",
+    "lines": [
+     "TWENTY MINUTES",
+     "TO CHARGE A PHONE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "TWENTY MINUTES"
+    ]
+   }
+  ],
+  "ACT_4": [
+   {
+    "kind": "lowerthird",
+    "primary": "GAS PRODUCTION FELL",
+    "secondary": "Natural gas production in Texas dropped by about 45 per cent during the storm. (TX-15)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE REPORT SPLIT IT IN TWO",
+    "secondary": "43.3 % of the fuel-supply problems were caused by freezing temperatures and weather. 21.5 % by power losses at midstream, wellhead or gathering facilities. (TX-16)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NOT ONE KIND OF PLANT",
+    "secondary": "Freeze-related outages happened across fuel types. Of the gas fuel-supply problems, 43.3 per cent were freezing and weather and 21.5 per cent were power losses at midstream, wellhead or gathering facilities. (TX-16)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE CRITICAL LOAD LIST",
+    "secondary": "The set of customers who do not get shed no matter what: hospitals, water plants, emergency services. Most gas production and processing facilities were not on it. (TX-17)"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE GAS FIELDS",
+     "WERE NOT ON IT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "WERE NOT ON IT"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "Most natural gas production and processing facilities in ERCOT were not identified as critical load, so the controlled load shedding took their power away.",
+    "attribution": "FERC / NERC final report on the February 2021 outages (TX-17)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AND THEN THE WATER",
+    "secondary": "Nearly 15 million Texans had their primary source of potable water disrupted. 1,105 boil-water notices covered about 14.5 million people. (TX-21, TX-22)"
+   },
+   {
+    "kind": "stat",
+    "value": 52,
+    "label": "Hours. The average disruption for the 49 per cent of Texans who lost running water altogether. (TX-24)",
+    "decimals": 0
+   },
+   {
+    "kind": "mechanism",
+    "mechanism": "gears"
+   },
+   {
+    "kind": "stat",
+    "_provenance": "during the storm, gas production in Texas fell by about forty-five per cent",
+    "label": "GAS PRODUCTION FELL",
+    "value": 45,
+    "suffix": "%",
+    "_was_value": "45",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "compbars",
+    "_provenance": "forty-three point three per cent freezing, twenty-one point five per cent power losses",
+    "items": [
+     {
+      "label": "freezing and weather",
+      "value": 43.3
+     },
+     {
+      "label": "power losses at the wellhead",
+      "value": 21.5
+     }
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "when the operator shed twenty thousand megawatts to save the grid, some of what went dark was the gas industry itself",
+    "lines": [
+     "THEY SHED 20,000 MW.",
+     "SOME OF IT WAS THE GAS."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "THE GAS"
+    ]
+   },
+   {
+    "kind": "stat",
+    "_provenance": "one thousand one hundred and five boil-water notices were issued",
+    "label": "BOIL-WATER NOTICES",
+    "value": 1105,
+    "_was_value": "1105",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   }
+  ],
+  "ACT_5": [
+   {
+    "kind": "stat",
+    "value": 246,
+    "label": "The Texas Department of State Health Services figure, in its sixth and final report, January 2022. This film uses no other number as fact. (TX-26)",
+    "decimals": 0
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "HOW THEY DIED",
+    "secondary": "Close to two-thirds of hypothermia. Then 10 % from an existing illness worsening, 9 % motor vehicle accidents, 8 % carbon monoxide, 4 % fires, 4 % falls. (TX-27, TX-28)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE COUNT ROSE SIX TIMES",
+    "secondary": "111 in March 2021. 210 by July. 246 final. One outlet estimated the true toll at four or five times the tally as it stood in May 2021, which was 151 - an estimate, and the film says so. (TX-29, TX-30)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NINE THOUSAND DOLLARS",
+    "secondary": "The Public Utility Commission set the price of electricity at the High System-Wide Offer Cap - $9,000 per megawatt-hour - for the emergency period. A price meant to exist for minutes ran for days. (TX-31)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TWO NUMBERS THAT DO NOT AGREE",
+    "secondary": "Loss estimates cited by the Dallas Fed ranged from $80bn to $130bn. A separate figure of over $195bn also circulates. They are not reconciled, and this film adopts neither. (TX-36)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TWENTY-EIGHT RECOMMENDATIONS",
+    "secondary": "The federal report on February 2021 made twenty-eight formal recommendations - including revisions to the reliability standards on generator winterization and on gas-electric coordination. (TX-20)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "SENATE BILL 3",
+    "secondary": "Required the Railroad Commission to make rules requiring critical gas supply chain and pipeline facilities to weatherize. A five-member committee maps the supply chain, updated at least yearly. (TX-37, TX-38, TX-39)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "FIVE THOUSAND TO ONE MILLION",
+    "secondary": "Dollars per violation per day. That is the difference between a recommendation and a standard, expressed in money. (TX-40)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "30 AUGUST 2022",
+    "secondary": "Statewide Rule 66 adopted. Eleven years after the report that recommended it. (TX-41, TX-05)"
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "2011",
+      "text": "Extreme cold. A joint federal inquiry follows"
+     },
+     {
+      "year": "2011",
+      "text": "The report recommends winterization standards"
+     },
+     {
+      "year": "AFTER",
+      "text": "NERC declines. Annual workshop reminders instead"
+     },
+     {
+      "year": "FEB 2021",
+      "text": "Units fail above their own design temperature"
+     },
+     {
+      "year": "2021",
+      "text": "Senate Bill 3 requires weatherization"
+     },
+     {
+      "year": "30 AUG 2022",
+      "text": "Statewide Rule 66 adopted"
+     }
+    ]
+   },
+   {
+    "kind": "compbars",
+    "_provenance": "in March of twenty twenty-one the figure was a hundred and eleven; the sixth and final report put it at two hundred and forty-six",
+    "items": [
+     {
+      "label": "March 2021",
+      "value": 111
+     },
+     {
+      "label": "January 2022, final",
+      "value": 246
+     }
+    ]
+   },
+   {
+    "kind": "stat",
+    "_provenance": "some of those households received bills of seventeen thousand dollars",
+    "label": "A HOUSEHOLD BILL",
+    "value": 17000,
+    "prefix": "$",
+    "_was_value": "17,000",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "one analysis published that June put the excess energy costs loaded onto Texas ratepayers at nearly thirty-eight billion dollars",
+    "primary": "LOADED ONTO RATEPAYERS",
+    "secondary": "one analysis, June 2021: nearly $38 billion"
+   }
+  ],
+  "ENDING": [
+   {
+    "kind": "lowerthird",
+    "primary": "WHAT THE RECORD DOES NOT SAY",
+    "secondary": "Whether winterizing to the 2011 recommendation would have prevented this specific event is not established as a finding. The report recommends standards; it does not run the counterfactual. (AB-02)"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NO INDIVIDUAL WAS",
+     "ESTABLISHED AS THE CAUSE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NO INDIVIDUAL"
+    ]
+   }
+  ]
+ },
+ "_figure_sources": {
+  "_readme": [
+   "EVERY CARD CARRIES ITS LEDGER ROW ID. A card sits on screen longer than a sentence is spoken",
+   "and reads as the film's own voice, so none of them asserts anything the ledger does not.",
+   "",
+   "THE FIVE QUARANTINE RULES SHAPE THIS SET DIRECTLY:",
+   "  ⛔-02 the grid did NOT collapse. ACT_3 therefore carries a card that says so in terms, next",
+   "       to the measured margin. A near-miss is a number here, never an adjective.",
+   "  ⛔-03 no single fuel villain. The 43.3 / 21.5 split is carded verbatim and a second card",
+   "       states that outages happened ACROSS fuel types. No turbine appears in the typography at",
+   "       all -- the film shows one, once, and the cards do not reinforce it.",
+   "  ⛔-01 winterization was RECOMMENDED, not required. 'A RECOMMENDATION IS NOT A STANDARD' is a",
+   "       card of its own in ACT_2, and the penalty range in ACT_5 answers it eleven years later",
+   "       in dollars per day. Those two cards are a pair and should not be separated.",
+   "  ⛔-04 246 is the only toll stated as fact -- one stat card. The contested estimate is carded",
+   "       with the word 'estimate' and without adopting it.",
+   "  ⛔-06 no single economic figure. Both ranges on one card, neither adopted.",
+   "",
+   "THE TURN OF THE FILM IS ACT_4's kinetic card, THE GAS FIELDS / WERE NOT ON IT. It is the only",
+   "place the typography raises its voice, and it lands on the sentence the whole film is built",
+   "around (TX-17).",
+   "",
+   "BANNED FIGURE KINDS: no dochighlight -- the black bar / box / underline figure reads as a",
+   "rendering artefact; the owner flagged it on EP40, EP41 and EP42 and it is barred from PD",
+   "film.json. No DATE_STAMP. Kinds used: lowerthird, kinetic, stat."
+  ]
+ },
+ "_declared_values": {
+  "leadSeconds": "0 -- the hook is voiced from frame 0, as the script's HOOK block specifies.",
+  "openingVariant": "overlay -- the brand sting sits over continuing footage rather than cutting to black.",
+  "captionLeadSeconds": "0.0 -- captions were force-aligned to this master by gen_captions_case.py.",
+  "hookSeconds": "27.320 -- MEASURED: the end of the last HOOK chunk in narration_index.v001.json.",
+  "designedSilence": "The script declares silences at the re-hooks; they sit inside the measured chunk timings."
+ }
+}

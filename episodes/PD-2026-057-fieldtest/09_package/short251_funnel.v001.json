@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 251,
+  "episode_id": "PD-2026-057-fieldtest",
+  "slug": "fieldtest",
+  "loop": true,
+  "loop_join": "The final CTA beat p25 (isCta, rewind) lands on short251_01.png, the lone silhouette high in a courthouse shaft of light, after p24 replays short251_02.png and p23 replays short251_03.png as a reverse echo of the hook's first three plates. Frame 0 of the short opens on that identical short251_01.png silhouette plate, so the loop closes on the exact frame it began with.",
+  "second_watch_detail": "p27's sealed envelope lying on a metal counter reads as ordinary paperwork clutter on the first pass; once L5 has said a positive field test is already in the file with no laboratory report in there to argue with, that same still-sealed envelope reads as the whole case against her, closed before it was ever opened.",
+  "funnel_question_left_for_longform": "What was sitting in a sealed envelope in the property room while she was confessing to it in open court?",
+  "funnel_long_title": "A $2 Test Turned Blue. She Served 21 Days.",
+  "funnel_long_video_id": "KPYLtYYODLE",
+  "description_line_1": "▶ FULL CASE: A $2 Test Turned Blue. She Served 21 Days. | https://youtu.be/KPYLtYYODLE",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A $2 Test Turned Blue. She Served 21",
+    "ctaLongThumbSrc": "shorts/short251/short251_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What was sitting in a sealed envelope in the property room while she was confessing to it in open court? The full case is here: https://youtu.be/KPYLtYYODLE",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the CUTS list and its inline comments plus the docstring's LEAVES FOR THE LONG-FORM line in remotion/src/data/short251.ts, the CTA block from that same file, and the live long-form video id KPYLtYYODLE (title: 'A $2 Test Turned Blue. She Served 21 Days. Police Still Carry the Kits.'). Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet; the short itself is not yet uploaded so no real Studio edit link exists."
+}

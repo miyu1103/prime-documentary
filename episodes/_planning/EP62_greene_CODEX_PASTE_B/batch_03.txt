@@ -1,0 +1,76 @@
+EP62 greene — 画像発注 バッチB 3/10（7枚）
+区分: ACT_4  [G257 – G263]
+
+★これは**新規発注**です。同名の既存ファイルはありません。
+　新しい ID を勝手に作らない。`_v2` / `_02` を作らない。**名前は下の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, muted natural colour, flat humid Ohio Valley light, low contrast, low-key but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, restrained documentary framing, mid-1970s to early-1980s American public housing period detail, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・**紙は「完全な白紙」か「均一な灰色の横棒が等間隔に並ぶだけの面」**（本文に指定あり）。
+　この話の中心は「ドアに貼られた召喚状」です。**紙の上に何か書いたら不合格。**
+・舞台は**1975〜1982年の米国ケンタッキー州ルイビル**。現代の車・電話・画面・スニーカー・
+　電動キックボード・欧州の標識・ラテン文字以外の文字は一切不可
+・立ち退きの最中（歩道の家具・追い出される家族・制服の執行官）を描かない
+・法廷内部・木槌・判事席・監獄・鉄格子・手錠を描かない
+・子どもの顔を描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+・**黒つぶれさせない。** スマホで見て何が写っているか分かること
+
+──────── ★この発注で特に大事な点 ────────
+
+・**この70枚は i2v（静止画→動画）の元絵です。** 生成後に全枚を動画化します。
+　各プロンプトに `MOVING ELEMENT, already mid-movement when the shutter opens:` という
+　一文があり、**シャッターが開いた時点で既に動いている物**を名指ししています。
+　**その一文を必ず絵にしてください。** 完全に静止した構図は、動かない動画になります。
+・**すべて新規の番号です。** `G001`〜`G242` は既に存在します。**上書きしないでください。**
+
+──────── プロンプト ────────
+
+■ G257.png
+A concrete doorstep carrying one single fresh shoe print in wet dust and no second print anywhere on it, photographed obliquely from one metre at knee height so the step runs across the frame, flat wet daylight. Everything in the frame belongs to Louisville, Kentucky in the United States between 1975 and 1982 -- painted timber and pressed-steel doors, chipped poured concrete, dark red brick, formica, enamel, net curtain and worn paint -- and nothing made after 1982 appears anywhere in the picture. MOVING ELEMENT, already mid-movement when the shutter opens: rainwater is running off the lip of the step in a thin unbroken thread and the dust at the edge of the print is being carried away with it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern car, modern van, modern smartphone, computer screen, television screen, trainers, sneakers, e-scooter, plastic wheelie bin, uPVC window, EU number plate, non-Latin script, LED lighting, composite decking, modern kitchen, furniture on a pavement, people being evicted, a removal van being loaded, crying, a hand on a shoulder, a uniformed officer at a door, a landlord character, a completely static arrangement with nothing caught mid-movement, everything locked and settled, studio-locked still life, footprint in snow, crime scene, forensic marker
+
+■ G258.png
+A heavy timber door of a plain public building swinging inward, the widening wedge of daylight sweeping across a worn stone floor, photographed from inside at four paces at waist height with the room beyond dark but holding its detail. Everything in the frame belongs to Louisville, Kentucky in the United States between 1975 and 1982 -- painted timber and pressed-steel doors, chipped poured concrete, dark red brick, formica, enamel, net curtain and worn paint -- and nothing made after 1982 appears anywhere in the picture. MOVING ELEMENT, already mid-movement when the shutter opens: the door is mid-swing with its leading edge smeared, and the wedge of light on the floor is travelling with it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern car, modern van, modern smartphone, computer screen, television screen, trainers, sneakers, e-scooter, plastic wheelie bin, uPVC window, EU number plate, non-Latin script, LED lighting, composite decking, modern kitchen, furniture on a pavement, people being evicted, a removal van being loaded, crying, a hand on a shoulder, a uniformed officer at a door, a landlord character, a completely static arrangement with nothing caught mid-movement, everything locked and settled, studio-locked still life, courthouse portico, carved motto, memorial plaque, church interior
+
+■ G259.png
+A pendulum wall clock in a plain hallway seen from below and well to one side so the dial is turned away from the camera and only the case, the glass door and the swinging pendulum are in view, photographed at two paces at chest height in cold daylight from a window out of frame. Everything in the frame belongs to Louisville, Kentucky in the United States between 1975 and 1982 -- painted timber and pressed-steel doors, chipped poured concrete, dark red brick, formica, enamel, net curtain and worn paint -- and nothing made after 1982 appears anywhere in the picture. MOVING ELEMENT, already mid-movement when the shutter opens: the pendulum is at the far end of its travel and its bob has smeared, and the bob's shadow is running across the wall behind it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern car, modern van, modern smartphone, computer screen, television screen, trainers, sneakers, e-scooter, plastic wheelie bin, uPVC window, EU number plate, non-Latin script, LED lighting, composite decking, modern kitchen, furniture on a pavement, people being evicted, a removal van being loaded, crying, a hand on a shoulder, a uniformed officer at a door, a landlord character, a completely static arrangement with nothing caught mid-movement, everything locked and settled, studio-locked still life, clock face, dial in view, hands of a clock, hourglass, stopwatch
+
+■ G260.png
+A plain unmarked folder being slid back across a wooden public counter toward the camera by one flat hand, photographed at counter height at half a metre, the hand cropped at the wrist. THE HAND IS AT REST FLAT ON THE SURFACE, not raised and not held in the air, the palm laid down in full contact with it and the wrist straight, THE FOUR FINGERS LYING SIDE BY SIDE AND SEPARATE with a line of shadow between each pair and one nail showing on each, and the thumb clearly apart from the fingers along the near side -- here the surface is the folder. The paper reads as a printed page and yet carries nothing readable: EVENLY SPACED FLAT GREY HORIZONTAL BARS of one uniform width and one uniform weight lie across it in parallel, each bar a solid unbroken block of soft grey with straight ends, no letter shapes, no word shapes and no gaps between words anywhere along it, so it is recognisable as a printed page purely by its rhythm of grey and white and carries not one readable character on the loose leaves that have come out of it. Everything in the frame belongs to Louisville, Kentucky in the United States between 1975 and 1982 -- painted timber and pressed-steel doors, chipped poured concrete, dark red brick, formica, enamel, net curtain and worn paint -- and nothing made after 1982 appears anywhere in the picture. MOVING ELEMENT, already mid-movement when the shutter opens: the folder is mid-slide with its trailing edge lifted off the counter and two of its leaves fanning out behind it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern car, modern van, modern smartphone, computer screen, television screen, trainers, sneakers, e-scooter, plastic wheelie bin, uPVC window, EU number plate, non-Latin script, LED lighting, composite decking, modern kitchen, furniture on a pavement, people being evicted, a removal van being loaded, crying, a hand on a shoulder, a uniformed officer at a door, a landlord character, a completely static arrangement with nothing caught mid-movement, everything locked and settled, studio-locked still life, readable document, printed words on paper, letterforms, typed lines, printed paragraph, letterhead, form fields, rubber stamp with words, handwritten note, fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, raised hand, hand held up in the air, blurred hand
+
+■ G261.png
+A small brass postal balance on a wooden counter with one plain envelope lying in its pan, photographed at pan height at thirty centimetres with the dial turned away from the camera so only the back of its case shows, one soft window light from the left. The paper is completely bare: an unbroken field of off-white with no print, no ruling, no letterform, no number and no mark of any kind anywhere on it. Everything in the frame belongs to Louisville, Kentucky in the United States between 1975 and 1982 -- painted timber and pressed-steel doors, chipped poured concrete, dark red brick, formica, enamel, net curtain and worn paint -- and nothing made after 1982 appears anywhere in the picture. MOVING ELEMENT, already mid-movement when the shutter opens: the pan has not settled: it is still swinging below its rest and the envelope on it has slid to one side Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern car, modern van, modern smartphone, computer screen, television screen, trainers, sneakers, e-scooter, plastic wheelie bin, uPVC window, EU number plate, non-Latin script, LED lighting, composite decking, modern kitchen, furniture on a pavement, people being evicted, a removal van being loaded, crying, a hand on a shoulder, a uniformed officer at a door, a landlord character, a completely static arrangement with nothing caught mid-movement, everything locked and settled, studio-locked still life, readable document, printed words on paper, letterforms, typed lines, printed paragraph, letterhead, form fields, rubber stamp with words, handwritten note, dial in view, gauge markings, kitchen scales, digital scales
+
+■ G262.png
+A rubber stamp lifted clear of an open ink pad with wet ink glistening on its face, the face itself an even bare rubber pad with nothing cut into it, photographed from the side at twenty centimetres against a dark wooden counter under one hard low light. Everything in the frame belongs to Louisville, Kentucky in the United States between 1975 and 1982 -- painted timber and pressed-steel doors, chipped poured concrete, dark red brick, formica, enamel, net curtain and worn paint -- and nothing made after 1982 appears anywhere in the picture. MOVING ELEMENT, already mid-movement when the shutter opens: the stamp is mid-lift and a thread of ink is drawing away from the pad and breaking Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern car, modern van, modern smartphone, computer screen, television screen, trainers, sneakers, e-scooter, plastic wheelie bin, uPVC window, EU number plate, non-Latin script, LED lighting, composite decking, modern kitchen, furniture on a pavement, people being evicted, a removal van being loaded, crying, a hand on a shoulder, a uniformed officer at a door, a landlord character, a completely static arrangement with nothing caught mid-movement, everything locked and settled, studio-locked still life, readable document, printed words on paper, letterforms, typed lines, printed paragraph, letterhead, form fields, rubber stamp with words, handwritten note, cut lettering on the stamp face, date stamp, official seal, monogram
+
+■ G263.png
+A sheet of small perforated paper squares lying on a wooden counter with one corner lifted, each square an even field of one flat faded colour with nothing figured on it at all, photographed at thirty centimetres at a low oblique so the perforations catch the raking light. Everything in the frame belongs to Louisville, Kentucky in the United States between 1975 and 1982 -- painted timber and pressed-steel doors, chipped poured concrete, dark red brick, formica, enamel, net curtain and worn paint -- and nothing made after 1982 appears anywhere in the picture. MOVING ELEMENT, already mid-movement when the shutter opens: the lifted corner is rippling in the draught from an open door and the whole sheet has begun to slide on the polished counter Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern car, modern van, modern smartphone, computer screen, television screen, trainers, sneakers, e-scooter, plastic wheelie bin, uPVC window, EU number plate, non-Latin script, LED lighting, composite decking, modern kitchen, furniture on a pavement, people being evicted, a removal van being loaded, crying, a hand on a shoulder, a uniformed officer at a door, a landlord character, a completely static arrangement with nothing caught mid-movement, everything locked and settled, studio-locked still life, readable document, printed words on paper, letterforms, typed lines, printed paragraph, letterhead, form fields, rubber stamp with words, handwritten note, portrait on a banknote, engraved head on currency, engraved head on a stamp, denomination, printed value, stamp design, portrait
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: G257.png）で保存してください。
+保存先 H:\pd-media\assets\ai\greene\
+長辺 3840px 以上・16:9・PNG。

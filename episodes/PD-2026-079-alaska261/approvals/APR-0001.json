@@ -1,0 +1,24 @@
+{
+    "schema_version": "1.0.0",
+    "approval_id": "APR-0001",
+    "episode_id": "PD-2026-079-alaska261",
+    "target_type": "edit",
+    "target_id": "alaska261_final_bgm.v001.mp4",
+    "target_revision": "v001",
+    "decision": "approved",
+    "requested_at": "2026-09-05T00:20:00+09:00",
+    "requested_by": "local-claude-code",
+    "decided_at": "2026-09-05T00:51:00+09:00",
+    "decided_by": "owner",
+    "accepted_deviations": [
+        "cue_timing_sync"
+    ],
+    "notes": "Two independent human-read passes over all 49 shipped-frame contact sheets (sheets 01-25 clean; sheets 26-49 found one defect) confirmed a real, reproducible defect: the kinetic title/quote/stat overlay cards in this render are placed by scripts/build_case_film_generic.py's build_figures() even-spread-within-section fallback (no payload in this episode's filmconfig declares at_seconds), so several cards land 57-115s after the narration line they belong to and sit over unrelated content instead (e.g. the 'DECEMBER 2001. NO CHARGES WOULD BE FILED.' card floats over unrelated Boeing overhaul statistics rather than its own narration at 00:20:22). All numbers/quotes on the cards themselves are individually correct against the FACTS_LEDGER; nothing on screen is false, fabricated, or misattributed to the wrong case -- the defect is placement timing, not content. A repo-wide check (2026-09-04) found this same at_seconds-less fallback in 34 of 36 episode filmconfigs on disk (only oroville and morandi ever populate at_seconds, one payload each) -- this is a pre-existing, catalog-wide structural characteristic of the card-placement pipeline, not an alaska261-specific regression, and the same pattern is already live in 30+ published episodes without prior incident. Presented to the owner with a recommendation to ship on schedule and record this as a catalog-wide craft backlog item rather than holding alaska261 to a different standard than the rest of the published catalog. Owner instruction 2026-09-05, via structured decision prompt: ship as planned (recommended option chosen; the other offered options were 're-time the cards before shipping, delaying publish' and 'hold, decide later').",
+    "conditions": [
+        "Covers cue-timing/card-placement synchronization ONLY. The four ship-blocking classes (real_person_likeness, rights_and_licence, factual_support, fabricated_record) remain bound by their own measured findings: this episode's two read passes found no real_person_likeness or rights_and_licence defect, and no on-screen text was found to assert anything the record does not support -- only that some true cards are timed to the wrong moment.",
+        "Bound to render sha256 44d5813f4b9ac5e56595939ed9c638e4f9c79ba1062a4ec04ab61b048bec4c6d (alaska261_final_bgm.v001.mp4). A re-render invalidates this approval and requires a fresh review.",
+        "Backlog: fix build_figures()'s at_seconds-less placement to sync cards against captions.final.v001.srt, catalog-wide, as a separate future task -- not scoped to this episode."
+    ],
+    "expires_at": null,
+    "evidence_snapshot_ref": "runs/qc/alaska261_shipped_frames_review.v001.json; read-agent reports for sheets 01-25 and 26-49, 2026-09-04"
+}

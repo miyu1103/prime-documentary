@@ -1,0 +1,48 @@
+EP78_colgan — 画像発注 バッチ 21/21（6枚）
+区分: PEOPLE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの6枚 ────────
+
+1) C161.png
+   [C161]  flags: P
+   A lone airline crew member asleep on a crew room sofa seen from behind, a coat pulled over them, one lamp burning bright in the corner
+
+2) C162.png
+   [C162]  flags: P
+   Two airline crew walking away down a jet bridge with flight bags, seen from behind, the bridge brilliantly lit ahead of them
+
+3) C163.png
+   [C163]  flags: P
+   A single person seated at a witness table seen from directly behind, brilliant daylight from tall windows ahead, a microphone in front of them
+
+4) C164.png
+   [C164]  flags: P
+   A flight instructor and a student walking toward a small aircraft on a desert ramp, both seen from behind, brilliant afternoon sun, hard shadows
+
+5) C165.png
+   [C165]  flags: P
+   A person standing at an employment office counter seen from behind, filling in a blank form, a brilliant window beyond the counter
+
+6) C166.png
+   [C166]  flags: P
+   A lone figure silhouetted at an airport window at dawn, the sky beyond blown out bright, an empty departure lounge behind them

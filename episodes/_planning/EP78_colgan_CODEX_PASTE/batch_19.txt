@@ -1,0 +1,56 @@
+EP78_colgan — 画像発注 バッチ 19/21（8枚）
+区分: SPARE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) C145.png
+   [C145]  flags: 
+   A photocopier lid raised with a blank sheet on the glass, the scanner lamp burning brilliant white beneath it
+
+2) C146.png
+   [C146]  flags: 
+   A government office in daylight, rows of desks, a brilliant window wall, filing cabinets along the back, no one present
+
+3) C147.png
+   [C147]  flags: 
+   A single empty chair at a long hearing table, brilliant daylight from a window behind it, a microphone in front
+
+4) C148.png
+   [C148]  flags: 
+   A stairwell in a government building, brilliant daylight falling from a skylight down the whole shaft, empty
+
+5) C149.png
+   [C149]  flags: 
+   Close-up of a lanyard and blank plastic identity card lying on a desk, a hard lamp blowing out the card surface, no lettering or photograph
+
+6) C150.png
+   [C150]  flags: 
+   A staff noticeboard in bright fluorescent light, dozens of blank sheets pinned in rows, edges curling
+
+7) C151.png
+   [C151]  flags: 
+   A crew room window at night with the room light burning bright inside and an airport apron visible beyond
+
+8) C152.png
+   [C152]  flags: 
+   An airport shuttle bus stop at night under a bright canopy light, empty bench, snow falling through the beam

@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-016-titan",
+  "topic_id": "TOP-20260624-016",
+  "slug": "titan",
+  "title_working": "Pure Waste — The Last Dive of the Titan",
+  "state": "audio_ready",
+  "risk_class": "R2",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 58,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "shotlist": "v001",
+    "ai_prompts": "v001",
+    "design_bible": "v001",
+    "usable_assets": "v001",
+    "thumb_prompts": "v001",
+    "thumbnail_candidates": "v001",
+    "thumbnail": "v001",
+    "factory_ledger": "v001",
+    "titan_factory_assets": "v001",
+    "titan_premium_composition": "v001",
+    "titan_captions": "v001",
+    "narration_index": "v001",
+    "captions_srt": "v001",
+    "audio_mix": "v001",
+    "audio_mix_qc": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-016-titan-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/03_script/script.annotated.v001.json",
+      "checksum": "sha256:e2e109f574c41a64170dc0a848eabcb2cb70056f3855365f2b86f0f98c2594b9",
+      "status": "approved",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-usable-assets",
+      "artifact_type": "usable_assets",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/05_stock/usable_assets.v001.json",
+      "checksum": "sha256:b1c5c3312c6db995420f009ed6bf4fde62d5c4f089733a80f3947dc8055255aa",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-asset-manifest-registration",
+      "artifact_type": "asset_manifest_registration",
+      "revision": "v001",
+      "uri": "artifact://assets/asset_manifest.v001.json",
+      "checksum": "sha256:30d7bd646a7186fec8f25bbb47ccfa692fdb492e09df747eb7c1648f40c94bda",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-title-thumbnail-candidates",
+      "artifact_type": "title_thumbnail_candidates",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/09_package/title_thumbnail_candidates.v001.json",
+      "checksum": "sha256:b2f23d334cde89f0284b0a48b6422012898934d3ed465c47b5d84088f4c70103",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-script-annotated-v002-candidate",
+      "artifact_type": "annotated_script",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-016-titan/03_script/script.annotated.v002.json",
+      "checksum": "sha256:843c8f36fd660eea176c5d32d9965322da13e97fcaaca4f11056536064d94920",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-factory-ledger",
+      "artifact_type": "factory_ledger",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/05_stock/factory_ledger.v001.json",
+      "checksum": "sha256:dfe499221f2e81bad6220bb84c8b00153158df4fc5fdf0f7fb5ac38d56939da4",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-factory-remotion-data",
+      "artifact_type": "remotion_factory_data",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/data/titan_factory_assets.ts",
+      "checksum": "sha256:0e67513621bd6142852435a5e9ed47c9faf2ed19bab3d4926875498a1cc7ea09",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-premium-composition",
+      "artifact_type": "remotion_composition",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/compositions/TitanPremium.tsx",
+      "checksum": "sha256:50a3e0330f1497c10a592aea03388d27d81fc42c378defdc4955637e0c91c673",
+      "status": "draft",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-captions-data",
+      "artifact_type": "captions_data",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/data/titan_captions.ts",
+      "checksum": "sha256:c0a84fd9a8cc8f7799aadf3fd9323b11e62ab7f82c09db9b5b9b33233a4c59ed",
+      "status": "draft",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-narration-index",
+      "artifact_type": "narration_index",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/06_audio/narration_index.v001.json",
+      "checksum": "sha256:37bec2e872b5f85f4bf6490be60402b067bef41c2736279dfc58686a90d30141",
+      "status": "draft",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-voice-master-pending",
+      "artifact_type": "voice_master_gate",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/06_audio/voice_master.v001.pending.json",
+      "checksum": "sha256:b0455b5f21fe3a05a3985b6b76a756fbe37ef9246cc16fd150c0e68802a2f198",
+      "status": "draft",
+      "rights_status": "clear",
+      "qc_status": "not_run"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-captions-srt",
+      "artifact_type": "captions_srt",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/08_edit/captions.v001.srt",
+      "checksum": "sha256:b83b2561d110395b6261f3dd47180a3d481844ed8000d94b88aeddb20f951568",
+      "status": "draft",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-captions-json",
+      "artifact_type": "captions_json",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/08_edit/captions.v001.json",
+      "checksum": "sha256:fc34fc6c6f7a8425d3eff0db307ad6cb1cc58f638b38cb1a9ce840e00a667c91",
+      "status": "draft",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-captions-remotion-data",
+      "artifact_type": "captions_data",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/data/titan_captions.ts",
+      "checksum": "sha256:c0a84fd9a8cc8f7799aadf3fd9323b11e62ab7f82c09db9b5b9b33233a4c59ed",
+      "status": "draft",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-audio-mix-qc",
+      "artifact_type": "audio_mix_qc",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/08_edit/audio_mix.v001.qc.json",
+      "checksum": "sha256:8b8ee8a82761ab8f1edd0d7db428771aa07fbc33f5423759a7904bb5b422c134",
+      "status": "draft",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-audio-mix-remotion",
+      "artifact_type": "audio_mix",
+      "revision": "v001",
+      "uri": "artifact://remotion/public/titan/audio/titan_final_mix_v001.wav",
+      "checksum": "sha256:e71542d732217b2bc4e1eda93bc621c17cd6a86b9aa26083b6d5409446e9b0c7",
+      "status": "draft",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-016-titan-premium-composition-audio-wired",
+      "artifact_type": "remotion_composition",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/compositions/TitanPremium.tsx",
+      "checksum": "sha256:50a3e0330f1497c10a592aea03388d27d81fc42c378defdc4955637e0c91c673",
+      "status": "draft",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 150,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 300,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "FIRST PD FEATURE (60-min flagship). target_duration_minutes=58 is the planned RUNTIME; narration is 6266 words (~41.8min @150wpm) and the rest is designed silence/visual/music. Feature duration band applied in validate_episode.py per ADR-0003; standard 10.0-12.8 gate unchanged (invariant 15).",
+    "Claude owns research+script (left process); Codex begins at scenes/visuals (right process). Image gen = Codex (local SDXL :7860, juggernautXL); edit = Remotion + FFmpeg libx264 (quality-first).",
+    "R2 — recent disaster, named deceased victims + living relatives. PRE-PUBLISH FACT RE-CHECK REQUIRED (rights_status=conditional): verify USCG report wording, MTS exhibit URL, exact Rush-quote source.",
+    "DIGNITY (load-bearing): moral center = Suleman (19); no schadenfreude; no graphic implosion/remains; cause attributed to the U.S. Coast Guard Board; living relatives & whistleblower via documented statements only.",
+    "NO real-person likeness/deepfake of any of the five or of Stockton Rush (invariant 11); all AI visuals symbolic + disclosed; brand markings (OceanGate/Logitech/Titanic operators) kept non-specific.",
+    "Remaining human gates: final-script sign-off (this APR-0001 is owner content sign-off), first-cut, title/thumbnail, public scheduling. Media on external SSD (H:\\pd-media), not in repo.",
+    "Title/thumbnail candidates v001 prepared from generated symbolic SDXL stills; title/thumbnail owner gate still required before publish.",
+    "v002 CANDIDATE pending owner re-approval (see approvals/OWNER_REVIEW_REQUEST.v002.md): two fixes from 01_research/fact_recheck.v001.md — (1) cold-open quote verbatim 'safety just is pure waste' (SPN-0004); (2) CLM-0005/SRC-0005 viewport-vs-hull correction (no script-span content change). v001 remains the approved active revision until APR-0002."
+  ],
+  "blockers": [
+    "ElevenLabs master narration requires explicit owner GO before paid generation; local SAPI draft is timing-only."
+  ],
+  "created_at": "2026-06-24T12:00:00+09:00",
+  "updated_at": "2026-06-27T10:43:50.808348+00:00"
+}

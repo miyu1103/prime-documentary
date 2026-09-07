@@ -4,11 +4,11 @@ Role: audio-director
 Generate SFX and ambience using ElevenLabs Sound Generation API.
 
 Output:
-  H:\pd-media\library\sfx\       SFX-0001 … SFX-0016  (one-shots)
-  H:\pd-media\library\ambience\  SFX-0017 … SFX-0022  (loopable beds)
+  E:\pd-media\library\sfx\       SFX-0001 … SFX-0016  (one-shots)
+  E:\pd-media\library\ambience\  SFX-0017 … SFX-0022  (loopable beds)
 
 Registry:
-  H:\pd-media\library\sfx_registry.v001.json
+  E:\pd-media\library\sfx_registry.v001.json
 
 Idempotency: SHA-256 of (prompt + str(duration_seconds)).
 If registry entry with same content_hash and file exist → skip.
@@ -36,9 +36,9 @@ except Exception:
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 ENV_PATH      = pathlib.Path(r"C:\Users\aab15\Documents\prime-documentary\.env")
-LIB_SFX       = pathlib.Path(r"H:\pd-media\library\sfx")
-LIB_AMB       = pathlib.Path(r"H:\pd-media\library\ambience")
-REGISTRY_PATH = pathlib.Path(r"H:\pd-media\library\sfx_registry.v001.json")
+LIB_SFX       = pathlib.Path(r"E:\pd-media\library\sfx")
+LIB_AMB       = pathlib.Path(r"E:\pd-media\library\ambience")
+REGISTRY_PATH = pathlib.Path(r"E:\pd-media\library\sfx_registry.v001.json")
 EVENTS_JSONL  = pathlib.Path(
     r"C:\Users\aab15\Documents\prime-documentary\episodes"
     r"\PD-2026-001-miranda\events.jsonl"

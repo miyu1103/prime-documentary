@@ -1,0 +1,6577 @@
+{
+ "episode_id": "PD-2026-069-hyatt",
+ "fps": 30,
+ "narration": "hyatt/narration.mp3",
+ "narrationSeconds": 1695.29,
+ "hookSeconds": 21.909,
+ "hookLine": "On the drawing, it looks like the same thing.",
+ "hook": [
+  {
+   "start": 0.0,
+   "dur": 2.739,
+   "kind": "img",
+   "src": "hyatt/img/H011.png",
+   "seed": "hyatt-hook-00"
+  },
+  {
+   "start": 2.739,
+   "dur": 2.739,
+   "kind": "img",
+   "src": "hyatt/img/H016.png",
+   "seed": "hyatt-hook-01"
+  },
+  {
+   "start": 5.478,
+   "dur": 2.739,
+   "kind": "img",
+   "src": "hyatt/img/H021.png",
+   "seed": "hyatt-hook-02"
+  },
+  {
+   "start": 8.217,
+   "dur": 2.739,
+   "kind": "img",
+   "src": "hyatt/img/H029.png",
+   "seed": "hyatt-hook-03"
+  },
+  {
+   "start": 10.956,
+   "dur": 2.739,
+   "kind": "img",
+   "src": "hyatt/img/H034.png",
+   "seed": "hyatt-hook-04"
+  },
+  {
+   "start": 13.695,
+   "dur": 2.739,
+   "kind": "img",
+   "src": "hyatt/img/H038.png",
+   "seed": "hyatt-hook-05"
+  },
+  {
+   "start": 16.434,
+   "dur": 2.739,
+   "kind": "img",
+   "src": "hyatt/img/H043.png",
+   "seed": "hyatt-hook-06"
+  },
+  {
+   "start": 19.173,
+   "dur": 2.736,
+   "kind": "img",
+   "src": "hyatt/img/H050.png",
+   "seed": "hyatt-hook-07"
+  }
+ ],
+ "cuts": [
+  {
+   "id": "cut-0000",
+   "start": 0.0,
+   "dur": 6.083,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-10170945__time_lapse_of_moving_clouds_at_night.mp4",
+   "seed": "hyatt-0000",
+   "act": "HOOK",
+   "srcSeconds": 24.775,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0001",
+   "start": 6.083,
+   "dur": 6.083,
+   "kind": "footage",
+   "src": "hyatt/motion/H005.mp4",
+   "seed": "hyatt-0001",
+   "act": "HOOK",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0002",
+   "start": 12.166,
+   "dur": 6.083,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-10347035__time_lapse_on_clouds_on_sky_in_evening.mp4",
+   "seed": "hyatt-0002",
+   "act": "HOOK",
+   "srcSeconds": 5.48,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0003",
+   "start": 18.249,
+   "dur": 5.46,
+   "kind": "img",
+   "src": "hyatt/img/H001.png",
+   "seed": "hyatt-0003",
+   "act": "HOOK",
+   "treatment": "bleed",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0004",
+   "start": 23.709,
+   "dur": 3.954,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-10651140__time_lapse_of_a_thunderstorm_at_night.mp4",
+   "seed": "hyatt-0004",
+   "act": "OP",
+   "srcSeconds": 24.149,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0005",
+   "start": 27.663,
+   "dur": 3.954,
+   "kind": "footage",
+   "src": "hyatt/motion/H011.mp4",
+   "seed": "hyatt-0005",
+   "act": "OP",
+   "srcSeconds": 5.033,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0006",
+   "start": 31.617,
+   "dur": 3.548,
+   "kind": "img",
+   "src": "hyatt/img/H002.png",
+   "seed": "hyatt-0006",
+   "act": "OP",
+   "treatment": "duotone",
+   "lift": 1.631
+  },
+  {
+   "id": "cut-0007",
+   "start": 35.165,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-11374206__time_lapse_of_a_full_moon_rising_in_a_cloudy_sky.mp4",
+   "seed": "hyatt-0007",
+   "act": "ACT_1",
+   "srcSeconds": 25.407,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0008",
+   "start": 41.244,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H016.mp4",
+   "seed": "hyatt-0008",
+   "act": "ACT_1",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0009",
+   "start": 47.323,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-11783695__timelapse_of_cloudy_sky_and_sun_shining.mp4",
+   "seed": "hyatt-0009",
+   "act": "ACT_1",
+   "srcSeconds": 90.2,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0010",
+   "start": 53.402,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H021.mp4",
+   "seed": "hyatt-0010",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0011",
+   "start": 59.481,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-11887093__sparks_flying_while_a_man_is_working_with_metal.mp4",
+   "seed": "hyatt-0011",
+   "act": "ACT_1",
+   "srcSeconds": 13.013,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0012",
+   "start": 65.56,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H003.png",
+   "seed": "hyatt-0012",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0013",
+   "start": 71.015,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-11914077__welder_working_with_metal.mp4",
+   "seed": "hyatt-0013",
+   "act": "ACT_1",
+   "srcSeconds": 76.201,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0014",
+   "start": 77.094,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H029.mp4",
+   "seed": "hyatt-0014",
+   "act": "ACT_1",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0015",
+   "start": 83.173,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-11958282__a_young_woman_looking_at_books_in_a_library.mp4",
+   "seed": "hyatt-0015",
+   "act": "ACT_1",
+   "srcSeconds": 107.583,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0016",
+   "start": 89.252,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H034.mp4",
+   "seed": "hyatt-0016",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0017",
+   "start": 95.331,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-12281456__moving_dark_clouds.mp4",
+   "seed": "hyatt-0017",
+   "act": "ACT_1",
+   "srcSeconds": 5.88,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0018",
+   "start": 101.41,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H004.png",
+   "seed": "hyatt-0018",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0019",
+   "start": 106.865,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-12426752__dark_clouds_on_sky.mp4",
+   "seed": "hyatt-0019",
+   "act": "ACT_1",
+   "srcSeconds": 15.317,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0020",
+   "start": 112.944,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H038.mp4",
+   "seed": "hyatt-0020",
+   "act": "ACT_1",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0021",
+   "start": 119.023,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-13237024__golden_sky_over_hill.mp4",
+   "seed": "hyatt-0021",
+   "act": "ACT_1",
+   "srcSeconds": 25.258,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0022",
+   "start": 125.102,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H041.mp4",
+   "seed": "hyatt-0022",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0023",
+   "start": 131.181,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-13310122__dark_clouds_in_sky.mp4",
+   "seed": "hyatt-0023",
+   "act": "ACT_1",
+   "srcSeconds": 25.472,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0024",
+   "start": 137.26,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H006.png",
+   "seed": "hyatt-0024",
+   "act": "ACT_1",
+   "treatment": "duotone",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0025",
+   "start": 142.715,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-13908043__fog_over_landscape_aerial_footage.mp4",
+   "seed": "hyatt-0025",
+   "act": "ACT_1",
+   "srcSeconds": 67.605,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0026",
+   "start": 148.794,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H042.mp4",
+   "seed": "hyatt-0026",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0027",
+   "start": 154.873,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-14146429__snapshots_from_ironworks.mp4",
+   "seed": "hyatt-0027",
+   "act": "ACT_1",
+   "srcSeconds": 9.6,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0028",
+   "start": 160.952,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H043.mp4",
+   "seed": "hyatt-0028",
+   "act": "ACT_1",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0029",
+   "start": 167.031,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-15556126__heavy_duty_crane.mp4",
+   "seed": "hyatt-0029",
+   "act": "ACT_1",
+   "srcSeconds": 15.743,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0030",
+   "start": 173.11,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H007.png",
+   "seed": "hyatt-0030",
+   "act": "ACT_1",
+   "treatment": "focus",
+   "lift": 1.769
+  },
+  {
+   "id": "cut-0031",
+   "start": 178.565,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-1856985__snow_falling_video.mp4",
+   "seed": "hyatt-0031",
+   "act": "ACT_1",
+   "srcSeconds": 19.327,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0032",
+   "start": 184.644,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H046.mp4",
+   "seed": "hyatt-0032",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0033",
+   "start": 190.723,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-19642749__winter_snow_storm.mp4",
+   "seed": "hyatt-0033",
+   "act": "ACT_1",
+   "srcSeconds": 6.6,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0034",
+   "start": 196.802,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H050.mp4",
+   "seed": "hyatt-0034",
+   "act": "ACT_1",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0035",
+   "start": 202.881,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-19917968__the_moon_is_seen_through_clouds_in_a_dark_sky.mp4",
+   "seed": "hyatt-0035",
+   "act": "ACT_1",
+   "srcSeconds": 13.055,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0036",
+   "start": 208.96,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H008.png",
+   "seed": "hyatt-0036",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0037",
+   "start": 214.415,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-20118507__the_sun_is_shining_through_the_clouds_in_this_ph.mp4",
+   "seed": "hyatt-0037",
+   "act": "ACT_1",
+   "srcSeconds": 3.2,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0038",
+   "start": 220.494,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/motion/H054.mp4",
+   "seed": "hyatt-0038",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0039",
+   "start": 226.573,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-20392235__a_view_of_the_foggy_mountains_from_a_hill.mp4",
+   "seed": "hyatt-0039",
+   "act": "ACT_1",
+   "srcSeconds": 18.867,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0040",
+   "start": 232.652,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-2478688__a_macro_footage_of_a_water_bubble_slowly_freezin.mp4",
+   "seed": "hyatt-0040",
+   "act": "ACT_1",
+   "srcSeconds": 45.013,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0041",
+   "start": 238.731,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-26746388__rain.mp4",
+   "seed": "hyatt-0041",
+   "act": "ACT_1",
+   "srcSeconds": 24.56,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0042",
+   "start": 244.81,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H009.png",
+   "seed": "hyatt-0042",
+   "act": "ACT_1",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0043",
+   "start": 250.265,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-27603609__snow_falling.mp4",
+   "seed": "hyatt-0043",
+   "act": "ACT_1",
+   "srcSeconds": 17.36,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0044",
+   "start": 256.344,
+   "dur": 6.079,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-27928831__factory_worker_buffing_and_sparking_metal_manufa.mp4",
+   "seed": "hyatt-0044",
+   "act": "ACT_1",
+   "srcSeconds": 4.28,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0045",
+   "start": 262.423,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H010.png",
+   "seed": "hyatt-0045",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0046",
+   "start": 267.878,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H012.png",
+   "seed": "hyatt-0046",
+   "act": "ACT_1",
+   "treatment": "bleed",
+   "lift": 1.327
+  },
+  {
+   "id": "cut-0047",
+   "start": 273.333,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H013.png",
+   "seed": "hyatt-0047",
+   "act": "ACT_1",
+   "treatment": "duotone",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0048",
+   "start": 278.788,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H014.png",
+   "seed": "hyatt-0048",
+   "act": "ACT_1",
+   "treatment": "focus",
+   "lift": 1.344
+  },
+  {
+   "id": "cut-0049",
+   "start": 284.243,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H015.png",
+   "seed": "hyatt-0049",
+   "act": "ACT_1",
+   "treatment": "bleed",
+   "lift": 1.102
+  },
+  {
+   "id": "cut-0050",
+   "start": 289.698,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H017.png",
+   "seed": "hyatt-0050",
+   "act": "ACT_1",
+   "treatment": "duotone",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0051",
+   "start": 295.153,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H018.png",
+   "seed": "hyatt-0051",
+   "act": "ACT_1",
+   "treatment": "focus",
+   "lift": 1.467
+  },
+  {
+   "id": "cut-0052",
+   "start": 300.608,
+   "dur": 5.455,
+   "kind": "img",
+   "src": "hyatt/img/H019.png",
+   "seed": "hyatt-0052",
+   "act": "ACT_1",
+   "treatment": "bleed",
+   "lift": 1.402
+  },
+  {
+   "id": "cut-0053",
+   "start": 306.063,
+   "dur": 5.454,
+   "kind": "img",
+   "src": "hyatt/img/H020.png",
+   "seed": "hyatt-0053",
+   "act": "ACT_1",
+   "treatment": "duotone",
+   "lift": 1.272
+  },
+  {
+   "id": "cut-0054",
+   "start": 311.517,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-2858__the_hand_of_a_person_drawing.mp4",
+   "seed": "hyatt-0054",
+   "act": "ACT_2",
+   "srcSeconds": 10.636,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0055",
+   "start": 317.557,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H055.mp4",
+   "seed": "hyatt-0055",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0056",
+   "start": 323.597,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-28827685__industrial_factory_with_smoke_emissions.mp4",
+   "seed": "hyatt-0056",
+   "act": "ACT_2",
+   "srcSeconds": 10.467,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0057",
+   "start": 329.637,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H059.mp4",
+   "seed": "hyatt-0057",
+   "act": "ACT_2",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0058",
+   "start": 335.677,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-29936073__mesmerizing_sparks_in_dark_atmosphere.mp4",
+   "seed": "hyatt-0058",
+   "act": "ACT_2",
+   "srcSeconds": 16.817,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0059",
+   "start": 341.717,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H022.png",
+   "seed": "hyatt-0059",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0060",
+   "start": 347.138,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-30342459__industrial_metal_casting_in_foundry_workshop.mp4",
+   "seed": "hyatt-0060",
+   "act": "ACT_2",
+   "srcSeconds": 29.12,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0061",
+   "start": 353.178,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H062.mp4",
+   "seed": "hyatt-0061",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0062",
+   "start": 359.218,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-3051492__abstract_image_of_a_black_and_white_ink.mp4",
+   "seed": "hyatt-0062",
+   "act": "ACT_2",
+   "srcSeconds": 39.68,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0063",
+   "start": 365.258,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H063.mp4",
+   "seed": "hyatt-0063",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0064",
+   "start": 371.298,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-30833332__gentle_snowfall_on_a_winter_day.mp4",
+   "seed": "hyatt-0064",
+   "act": "ACT_2",
+   "srcSeconds": 9.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0065",
+   "start": 377.338,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H023.png",
+   "seed": "hyatt-0065",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0066",
+   "start": 382.759,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-31056060__dynamic_construction_site_with_tower_cranes.mp4",
+   "seed": "hyatt-0066",
+   "act": "ACT_2",
+   "srcSeconds": 13.113,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0067",
+   "start": 388.799,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H065.mp4",
+   "seed": "hyatt-0067",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0068",
+   "start": 394.839,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-31806786__metal_fabrication_welding_in_workshop.mp4",
+   "seed": "hyatt-0068",
+   "act": "ACT_2",
+   "srcSeconds": 13.8,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0069",
+   "start": 400.879,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H066.mp4",
+   "seed": "hyatt-0069",
+   "act": "ACT_2",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0070",
+   "start": 406.919,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-32065794__precision_metal_grinding_process_with_sparks.mp4",
+   "seed": "hyatt-0070",
+   "act": "ACT_2",
+   "srcSeconds": 10.878,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0071",
+   "start": 412.959,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H024.png",
+   "seed": "hyatt-0071",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0072",
+   "start": 418.38,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-32065795__precision_metal_grinding_with_sparks.mp4",
+   "seed": "hyatt-0072",
+   "act": "ACT_2",
+   "srcSeconds": 11.645,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0073",
+   "start": 424.42,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H067.mp4",
+   "seed": "hyatt-0073",
+   "act": "ACT_2",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0074",
+   "start": 430.46,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-32093033__tower_cranes_over_urban_construction_site.mp4",
+   "seed": "hyatt-0074",
+   "act": "ACT_2",
+   "srcSeconds": 19.64,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0075",
+   "start": 436.5,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H071.mp4",
+   "seed": "hyatt-0075",
+   "act": "ACT_2",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0076",
+   "start": 442.54,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-32243439__industrial_workers_welding_in_factory_setting.mp4",
+   "seed": "hyatt-0076",
+   "act": "ACT_2",
+   "srcSeconds": 10.32,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0077",
+   "start": 448.58,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H025.png",
+   "seed": "hyatt-0077",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0078",
+   "start": 454.001,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-32308133__dramatic_black_and_white_cloudy_sky_time_lapse.mp4",
+   "seed": "hyatt-0078",
+   "act": "ACT_2",
+   "srcSeconds": 11.478,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0079",
+   "start": 460.041,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H072.mp4",
+   "seed": "hyatt-0079",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0080",
+   "start": 466.081,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-33464307__vintage_black_and_white_abstract_video_with_blur.mp4",
+   "seed": "hyatt-0080",
+   "act": "ACT_2",
+   "srcSeconds": 10.719,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0081",
+   "start": 472.121,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H078.mp4",
+   "seed": "hyatt-0081",
+   "act": "ACT_2",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0082",
+   "start": 478.161,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-33754097__stunning_coastal_sunset_with_industrial_silhouet.mp4",
+   "seed": "hyatt-0082",
+   "act": "ACT_2",
+   "srcSeconds": 16.2,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0083",
+   "start": 484.201,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H026.png",
+   "seed": "hyatt-0083",
+   "act": "ACT_2",
+   "treatment": "bleed",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0084",
+   "start": 489.622,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-33938964__molten_metal_glowing_in_a_foundry_furnace.mp4",
+   "seed": "hyatt-0084",
+   "act": "ACT_2",
+   "srcSeconds": 13.775,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0085",
+   "start": 495.662,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H083.mp4",
+   "seed": "hyatt-0085",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0086",
+   "start": 501.702,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-33939016__molten_metal_being_poured_in_forging_process.mp4",
+   "seed": "hyatt-0086",
+   "act": "ACT_2",
+   "srcSeconds": 18.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0087",
+   "start": 507.742,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/motion/H088.mp4",
+   "seed": "hyatt-0087",
+   "act": "ACT_2",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0088",
+   "start": 513.782,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-34664530__ethereal_mountain_fog_at_sunrise.mp4",
+   "seed": "hyatt-0088",
+   "act": "ACT_2",
+   "srcSeconds": 24.091,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0089",
+   "start": 519.822,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H027.png",
+   "seed": "hyatt-0089",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0090",
+   "start": 525.243,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-34771866__professional_welder_in_action_creating_sparks.mp4",
+   "seed": "hyatt-0090",
+   "act": "ACT_2",
+   "srcSeconds": 34.105,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0091",
+   "start": 531.283,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-35190502__mesmerizing_sparks_flying_in_darkness.mp4",
+   "seed": "hyatt-0091",
+   "act": "ACT_2",
+   "srcSeconds": 13.76,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0092",
+   "start": 537.323,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-35298349__dramatic_clouds_at_sunset_with_golden_light.mp4",
+   "seed": "hyatt-0092",
+   "act": "ACT_2",
+   "srcSeconds": 20.267,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0093",
+   "start": 543.363,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-35532015__intense_snowstorm_with_falling_snowflakes.mp4",
+   "seed": "hyatt-0093",
+   "act": "ACT_2",
+   "srcSeconds": 19.967,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0094",
+   "start": 549.403,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-35591498__tranquil_snowy_winter_forest_pathway.mp4",
+   "seed": "hyatt-0094",
+   "act": "ACT_2",
+   "srcSeconds": 30.233,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0095",
+   "start": 555.443,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H028.png",
+   "seed": "hyatt-0095",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.712
+  },
+  {
+   "id": "cut-0096",
+   "start": 560.864,
+   "dur": 6.04,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-35665668__serene_sunset_over_foggy_field_with_pole.mp4",
+   "seed": "hyatt-0096",
+   "act": "ACT_2",
+   "srcSeconds": 21.722,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0097",
+   "start": 566.904,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H030.png",
+   "seed": "hyatt-0097",
+   "act": "ACT_2",
+   "treatment": "bleed",
+   "lift": 1.385
+  },
+  {
+   "id": "cut-0098",
+   "start": 572.325,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H031.png",
+   "seed": "hyatt-0098",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.257
+  },
+  {
+   "id": "cut-0099",
+   "start": 577.746,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H032.png",
+   "seed": "hyatt-0099",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0100",
+   "start": 583.167,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H033.png",
+   "seed": "hyatt-0100",
+   "act": "ACT_2",
+   "treatment": "bleed",
+   "lift": 1.823
+  },
+  {
+   "id": "cut-0101",
+   "start": 588.588,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H035.png",
+   "seed": "hyatt-0101",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0102",
+   "start": 594.009,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H036.png",
+   "seed": "hyatt-0102",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.079
+  },
+  {
+   "id": "cut-0103",
+   "start": 599.43,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H037.png",
+   "seed": "hyatt-0103",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0104",
+   "start": 604.851,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H039.png",
+   "seed": "hyatt-0104",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0105",
+   "start": 610.272,
+   "dur": 5.421,
+   "kind": "img",
+   "src": "hyatt/img/H040.png",
+   "seed": "hyatt-0105",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0106",
+   "start": 615.693,
+   "dur": 5.427,
+   "kind": "img",
+   "src": "hyatt/img/H044.png",
+   "seed": "hyatt-0106",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0107",
+   "start": 621.12,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-35760122__industrial_coastline_at_twilight.mp4",
+   "seed": "hyatt-0107",
+   "act": "ACT_3",
+   "srcSeconds": 8.492,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0108",
+   "start": 627.044,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H090.mp4",
+   "seed": "hyatt-0108",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0109",
+   "start": 632.968,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-35968580__serene_snowy_forest_path_in_winter.mp4",
+   "seed": "hyatt-0109",
+   "act": "ACT_3",
+   "srcSeconds": 7.508,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0110",
+   "start": 638.892,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H093.mp4",
+   "seed": "hyatt-0110",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0111",
+   "start": 644.816,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-36055430__snowfall_over_pristine_winter_landscape.mp4",
+   "seed": "hyatt-0111",
+   "act": "ACT_3",
+   "srcSeconds": 102.3,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0112",
+   "start": 650.74,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H045.png",
+   "seed": "hyatt-0112",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0113",
+   "start": 656.056,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-36055431__blizzard_conditions_with_heavy_snowfall.mp4",
+   "seed": "hyatt-0113",
+   "act": "ACT_3",
+   "srcSeconds": 111.067,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0114",
+   "start": 661.98,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H097.mp4",
+   "seed": "hyatt-0114",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0115",
+   "start": 667.904,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-36179848__abstract_cracked_black_and_white_texture_video.mp4",
+   "seed": "hyatt-0115",
+   "act": "ACT_3",
+   "srcSeconds": 17.818,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0116",
+   "start": 673.828,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H100.mp4",
+   "seed": "hyatt-0116",
+   "act": "ACT_3",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0117",
+   "start": 679.752,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-3643825__watching_thunder_clouds_in_low_angle.mp4",
+   "seed": "hyatt-0117",
+   "act": "ACT_3",
+   "srcSeconds": 88.427,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0118",
+   "start": 685.676,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H047.png",
+   "seed": "hyatt-0118",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0119",
+   "start": 690.992,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-37596049__industrial_worker_cleaning_factory_shop_floor.mp4",
+   "seed": "hyatt-0119",
+   "act": "ACT_3",
+   "srcSeconds": 7.858,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0120",
+   "start": 696.916,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H104.mp4",
+   "seed": "hyatt-0120",
+   "act": "ACT_3",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0121",
+   "start": 702.84,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-3772777__high_angle_footage_of_books_on_the_ground.mp4",
+   "seed": "hyatt-0121",
+   "act": "ACT_3",
+   "srcSeconds": 7.36,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0122",
+   "start": 708.764,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H108.mp4",
+   "seed": "hyatt-0122",
+   "act": "ACT_3",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0123",
+   "start": 714.688,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-37984546__stunning_aerial_view_of_sunrays_through_clouds.mp4",
+   "seed": "hyatt-0123",
+   "act": "ACT_3",
+   "srcSeconds": 13.433,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0124",
+   "start": 720.612,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H048.png",
+   "seed": "hyatt-0124",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0125",
+   "start": 725.928,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-3804695__an_out_of_focus_video_footage_of_lights.mp4",
+   "seed": "hyatt-0125",
+   "act": "ACT_3",
+   "srcSeconds": 8.233,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0126",
+   "start": 731.852,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H109.mp4",
+   "seed": "hyatt-0126",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0127",
+   "start": 737.776,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-38086087__birds_on_a_crane_in_industrial_harbor.mp4",
+   "seed": "hyatt-0127",
+   "act": "ACT_3",
+   "srcSeconds": 15.415,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0128",
+   "start": 743.7,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H111.mp4",
+   "seed": "hyatt-0128",
+   "act": "ACT_3",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0129",
+   "start": 749.624,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-3879471__time_lapse_video_of_dark_clouds_with_lightning_i.mp4",
+   "seed": "hyatt-0129",
+   "act": "ACT_3",
+   "srcSeconds": 6.206,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0130",
+   "start": 755.548,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H049.png",
+   "seed": "hyatt-0130",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0131",
+   "start": 760.864,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-4059704__hailstorm_pouring.mp4",
+   "seed": "hyatt-0131",
+   "act": "ACT_3",
+   "srcSeconds": 17.108,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0132",
+   "start": 766.788,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H113.mp4",
+   "seed": "hyatt-0132",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0133",
+   "start": 772.712,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-4368122__a_view_of_a_beautiful_sunset.mp4",
+   "seed": "hyatt-0133",
+   "act": "ACT_3",
+   "srcSeconds": 15.487,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0134",
+   "start": 778.636,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H005.mp4",
+   "seed": "hyatt-0134",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0135",
+   "start": 784.56,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-44696__colored_lights_of_cars_in_a_video_out_of_focus.mp4",
+   "seed": "hyatt-0135",
+   "act": "ACT_3",
+   "srcSeconds": 28.07,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0136",
+   "start": 790.484,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H051.png",
+   "seed": "hyatt-0136",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0137",
+   "start": 795.8,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-4489974__time_lapse_footage_of_dark_clouds.mp4",
+   "seed": "hyatt-0137",
+   "act": "ACT_3",
+   "srcSeconds": 17.9,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0138",
+   "start": 801.724,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/motion/H011.mp4",
+   "seed": "hyatt-0138",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0139",
+   "start": 807.648,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-4941457__worker_welding_metal.mp4",
+   "seed": "hyatt-0139",
+   "act": "ACT_3",
+   "srcSeconds": 7.44,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0140",
+   "start": 813.572,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5000009__black_and_white_video_of_clouds.mp4",
+   "seed": "hyatt-0140",
+   "act": "ACT_3",
+   "srcSeconds": 28.907,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0141",
+   "start": 819.496,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5018900__timelapse_of_cloudy_sky.mp4",
+   "seed": "hyatt-0141",
+   "act": "ACT_3",
+   "srcSeconds": 18.432,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0142",
+   "start": 825.42,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H052.png",
+   "seed": "hyatt-0142",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0143",
+   "start": 830.736,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5018909__black_and_white_footage_of_a_mountains_and_cloud.mp4",
+   "seed": "hyatt-0143",
+   "act": "ACT_3",
+   "srcSeconds": 20.757,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0144",
+   "start": 836.66,
+   "dur": 5.924,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-50330__hands_of_a_skillful_musician_playing_a_wooden_pi.mp4",
+   "seed": "hyatt-0144",
+   "act": "ACT_3",
+   "srcSeconds": 11.178,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0145",
+   "start": 842.584,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H053.png",
+   "seed": "hyatt-0145",
+   "act": "ACT_3",
+   "treatment": "duotone",
+   "lift": 1.026
+  },
+  {
+   "id": "cut-0146",
+   "start": 847.9,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H056.png",
+   "seed": "hyatt-0146",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0147",
+   "start": 853.216,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H057.png",
+   "seed": "hyatt-0147",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0148",
+   "start": 858.532,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H058.png",
+   "seed": "hyatt-0148",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0149",
+   "start": 863.848,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H060.png",
+   "seed": "hyatt-0149",
+   "act": "ACT_3",
+   "treatment": "focus",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0150",
+   "start": 869.164,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H061.png",
+   "seed": "hyatt-0150",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0151",
+   "start": 874.48,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H064.png",
+   "seed": "hyatt-0151",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0152",
+   "start": 879.796,
+   "dur": 5.316,
+   "kind": "img",
+   "src": "hyatt/img/H068.png",
+   "seed": "hyatt-0152",
+   "act": "ACT_3",
+   "treatment": "focus",
+   "lift": 1.26
+  },
+  {
+   "id": "cut-0153",
+   "start": 885.112,
+   "dur": 5.326,
+   "kind": "img",
+   "src": "hyatt/img/H069.png",
+   "seed": "hyatt-0153",
+   "act": "ACT_3",
+   "treatment": "bleed",
+   "lift": 1.449
+  },
+  {
+   "id": "cut-0154",
+   "start": 890.438,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5055607__three_workers_in_industrial_suit.mp4",
+   "seed": "hyatt-0154",
+   "act": "ACT_4",
+   "srcSeconds": 9.12,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0155",
+   "start": 896.483,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H016.mp4",
+   "seed": "hyatt-0155",
+   "act": "ACT_4",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0156",
+   "start": 902.528,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5121742__factory_workers_working_at_foundry.mp4",
+   "seed": "hyatt-0156",
+   "act": "ACT_4",
+   "srcSeconds": 15.44,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0157",
+   "start": 908.573,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H021.mp4",
+   "seed": "hyatt-0157",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0158",
+   "start": 914.618,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5121743__melted_metal_coming_out_of_furnace.mp4",
+   "seed": "hyatt-0158",
+   "act": "ACT_4",
+   "srcSeconds": 10.4,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0159",
+   "start": 920.663,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H070.png",
+   "seed": "hyatt-0159",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0160",
+   "start": 926.088,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5121752__flowing_molten_steel.mp4",
+   "seed": "hyatt-0160",
+   "act": "ACT_4",
+   "srcSeconds": 11.04,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0161",
+   "start": 932.133,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H029.mp4",
+   "seed": "hyatt-0161",
+   "act": "ACT_4",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0162",
+   "start": 938.178,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5121754__flowing_molten_steel.mp4",
+   "seed": "hyatt-0162",
+   "act": "ACT_4",
+   "srcSeconds": 16.6,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0163",
+   "start": 944.223,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H034.mp4",
+   "seed": "hyatt-0163",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0164",
+   "start": 950.268,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5302860__man_drawing_on_a_map_using_a_pencil_and_a_ruler.mp4",
+   "seed": "hyatt-0164",
+   "act": "ACT_4",
+   "srcSeconds": 17.72,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0165",
+   "start": 956.313,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H073.png",
+   "seed": "hyatt-0165",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0166",
+   "start": 961.738,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5446620__view_of_the_beautiful_sky_in_the_morning.mp4",
+   "seed": "hyatt-0166",
+   "act": "ACT_4",
+   "srcSeconds": 3.072,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0167",
+   "start": 967.783,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H038.mp4",
+   "seed": "hyatt-0167",
+   "act": "ACT_4",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0168",
+   "start": 973.828,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5481262__footage_of_a_turning_tower_crane.mp4",
+   "seed": "hyatt-0168",
+   "act": "ACT_4",
+   "srcSeconds": 20.073,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0169",
+   "start": 979.873,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H041.mp4",
+   "seed": "hyatt-0169",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0170",
+   "start": 985.918,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5535155__beautiful_sky_with_sunbeams_and_moving_clouds.mp4",
+   "seed": "hyatt-0170",
+   "act": "ACT_4",
+   "srcSeconds": 27.477,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0171",
+   "start": 991.963,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H074.png",
+   "seed": "hyatt-0171",
+   "act": "ACT_4",
+   "treatment": "bleed",
+   "lift": 1.089
+  },
+  {
+   "id": "cut-0172",
+   "start": 997.388,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5561389__golden_dust_particles_floating.mp4",
+   "seed": "hyatt-0172",
+   "act": "ACT_4",
+   "srcSeconds": 18.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0173",
+   "start": 1003.433,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H042.mp4",
+   "seed": "hyatt-0173",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0174",
+   "start": 1009.478,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5561390__gold_dust_floating_on_dark_background.mp4",
+   "seed": "hyatt-0174",
+   "act": "ACT_4",
+   "srcSeconds": 28.6,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0175",
+   "start": 1015.523,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H043.mp4",
+   "seed": "hyatt-0175",
+   "act": "ACT_4",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0176",
+   "start": 1021.568,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5595568__time_lapse_video_of_clouds_in_the_sky_during_sun.mp4",
+   "seed": "hyatt-0176",
+   "act": "ACT_4",
+   "srcSeconds": 60.073,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0177",
+   "start": 1027.613,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H075.png",
+   "seed": "hyatt-0177",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0178",
+   "start": 1033.038,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5761036__time_lapse_video_of_sunrise.mp4",
+   "seed": "hyatt-0178",
+   "act": "ACT_4",
+   "srcSeconds": 21.9,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0179",
+   "start": 1039.083,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H046.mp4",
+   "seed": "hyatt-0179",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0180",
+   "start": 1045.128,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5814524__out_of_focus_colorful_lights.mp4",
+   "seed": "hyatt-0180",
+   "act": "ACT_4",
+   "srcSeconds": 15.04,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0181",
+   "start": 1051.173,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H050.mp4",
+   "seed": "hyatt-0181",
+   "act": "ACT_4",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0182",
+   "start": 1057.218,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5846320__young_man_working_at_smithy_workshop.mp4",
+   "seed": "hyatt-0182",
+   "act": "ACT_4",
+   "srcSeconds": 24.6,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0183",
+   "start": 1063.263,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H076.png",
+   "seed": "hyatt-0183",
+   "act": "ACT_4",
+   "treatment": "focus",
+   "lift": 1.031
+  },
+  {
+   "id": "cut-0184",
+   "start": 1068.688,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5846379__forging_hot_metal.mp4",
+   "seed": "hyatt-0184",
+   "act": "ACT_4",
+   "srcSeconds": 13.6,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0185",
+   "start": 1074.733,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H054.mp4",
+   "seed": "hyatt-0185",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0186",
+   "start": 1080.778,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5846396__flames_from_a_furnace_and_an_anvil.mp4",
+   "seed": "hyatt-0186",
+   "act": "ACT_4",
+   "srcSeconds": 9.68,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0187",
+   "start": 1086.823,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H055.mp4",
+   "seed": "hyatt-0187",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0188",
+   "start": 1092.868,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5846587__person_working_metal_with_plasma_cutter.mp4",
+   "seed": "hyatt-0188",
+   "act": "ACT_4",
+   "srcSeconds": 17.08,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0189",
+   "start": 1098.913,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H077.png",
+   "seed": "hyatt-0189",
+   "act": "ACT_4",
+   "treatment": "bleed",
+   "lift": 1.829
+  },
+  {
+   "id": "cut-0190",
+   "start": 1104.338,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5846589__blacksmithing_forge.mp4",
+   "seed": "hyatt-0190",
+   "act": "ACT_4",
+   "srcSeconds": 18.36,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0191",
+   "start": 1110.383,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H059.mp4",
+   "seed": "hyatt-0191",
+   "act": "ACT_4",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0192",
+   "start": 1116.428,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-5846592__factory_worker_sketching.mp4",
+   "seed": "hyatt-0192",
+   "act": "ACT_4",
+   "srcSeconds": 26.88,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0193",
+   "start": 1122.473,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/motion/H062.mp4",
+   "seed": "hyatt-0193",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0194",
+   "start": 1128.518,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6046357__angle_grinder_sparks.mp4",
+   "seed": "hyatt-0194",
+   "act": "ACT_4",
+   "srcSeconds": 18.09,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0195",
+   "start": 1134.563,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H079.png",
+   "seed": "hyatt-0195",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0196",
+   "start": 1139.988,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6173756__the_brightness_of_the_sun_in_the_sky.mp4",
+   "seed": "hyatt-0196",
+   "act": "ACT_4",
+   "srcSeconds": 10.177,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0197",
+   "start": 1146.033,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6185978__time_lapse_of_clouds_in_movement.mp4",
+   "seed": "hyatt-0197",
+   "act": "ACT_4",
+   "srcSeconds": 15.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0198",
+   "start": 1152.078,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6212583__moving_clouds_in_the_sky.mp4",
+   "seed": "hyatt-0198",
+   "act": "ACT_4",
+   "srcSeconds": 16.333,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0199",
+   "start": 1158.123,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6326360__time_lapse_video_of_moving_clouds.mp4",
+   "seed": "hyatt-0199",
+   "act": "ACT_4",
+   "srcSeconds": 24.591,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0200",
+   "start": 1164.168,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6458459__city_lights_in_an_out_of_focus.mp4",
+   "seed": "hyatt-0200",
+   "act": "ACT_4",
+   "srcSeconds": 13.472,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0201",
+   "start": 1170.213,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H080.png",
+   "seed": "hyatt-0201",
+   "act": "ACT_4",
+   "treatment": "focus",
+   "lift": 1.367
+  },
+  {
+   "id": "cut-0202",
+   "start": 1175.638,
+   "dur": 6.045,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6475920__close_up_video_of_a_tower_crane.mp4",
+   "seed": "hyatt-0202",
+   "act": "ACT_4",
+   "srcSeconds": 20.979,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0203",
+   "start": 1181.683,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H081.png",
+   "seed": "hyatt-0203",
+   "act": "ACT_4",
+   "treatment": "bleed",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0204",
+   "start": 1187.108,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H082.png",
+   "seed": "hyatt-0204",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0205",
+   "start": 1192.533,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H084.png",
+   "seed": "hyatt-0205",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0206",
+   "start": 1197.958,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H085.png",
+   "seed": "hyatt-0206",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0207",
+   "start": 1203.383,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H086.png",
+   "seed": "hyatt-0207",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0208",
+   "start": 1208.808,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H087.png",
+   "seed": "hyatt-0208",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0209",
+   "start": 1214.233,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H089.png",
+   "seed": "hyatt-0209",
+   "act": "ACT_4",
+   "treatment": "bleed",
+   "lift": 1.259
+  },
+  {
+   "id": "cut-0210",
+   "start": 1219.658,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H091.png",
+   "seed": "hyatt-0210",
+   "act": "ACT_4",
+   "treatment": "duotone",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0211",
+   "start": 1225.083,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H092.png",
+   "seed": "hyatt-0211",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0212",
+   "start": 1230.508,
+   "dur": 5.425,
+   "kind": "img",
+   "src": "hyatt/img/H094.png",
+   "seed": "hyatt-0212",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0213",
+   "start": 1235.933,
+   "dur": 5.449,
+   "kind": "img",
+   "src": "hyatt/img/H095.png",
+   "seed": "hyatt-0213",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0214",
+   "start": 1241.382,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6567564__light_reflections_on_a_glass.mp4",
+   "seed": "hyatt-0214",
+   "act": "ACT_5",
+   "srcSeconds": 5.205,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0215",
+   "start": 1247.319,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H063.mp4",
+   "seed": "hyatt-0215",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0216",
+   "start": 1253.256,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6577036__timelapse_video_of_a_cloudy_sky.mp4",
+   "seed": "hyatt-0216",
+   "act": "ACT_5",
+   "srcSeconds": 15.402,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0217",
+   "start": 1259.193,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H065.mp4",
+   "seed": "hyatt-0217",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0218",
+   "start": 1265.13,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6602733__light_refraction_though_textured_glass.mp4",
+   "seed": "hyatt-0218",
+   "act": "ACT_5",
+   "srcSeconds": 9.776,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0219",
+   "start": 1271.067,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H096.png",
+   "seed": "hyatt-0219",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0220",
+   "start": 1276.395,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6650296__woods_under_snowfall.mp4",
+   "seed": "hyatt-0220",
+   "act": "ACT_5",
+   "srcSeconds": 18.538,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0221",
+   "start": 1282.332,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H066.mp4",
+   "seed": "hyatt-0221",
+   "act": "ACT_5",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0222",
+   "start": 1288.269,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6997690__people_working_on_a_heavy_industry.mp4",
+   "seed": "hyatt-0222",
+   "act": "ACT_5",
+   "srcSeconds": 9.13,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0223",
+   "start": 1294.206,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H067.mp4",
+   "seed": "hyatt-0223",
+   "act": "ACT_5",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0224",
+   "start": 1300.143,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-6997856__furnace_sparks.mp4",
+   "seed": "hyatt-0224",
+   "act": "ACT_5",
+   "srcSeconds": 4.693,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0225",
+   "start": 1306.08,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H098.png",
+   "seed": "hyatt-0225",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.179
+  },
+  {
+   "id": "cut-0226",
+   "start": 1311.408,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-7122120__smoke_in_black_background.mp4",
+   "seed": "hyatt-0226",
+   "act": "ACT_5",
+   "srcSeconds": 12.846,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0227",
+   "start": 1317.345,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H071.mp4",
+   "seed": "hyatt-0227",
+   "act": "ACT_5",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0228",
+   "start": 1323.282,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-7432023__person_drawing_a_world_map.mp4",
+   "seed": "hyatt-0228",
+   "act": "ACT_5",
+   "srcSeconds": 21.167,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0229",
+   "start": 1329.219,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H072.mp4",
+   "seed": "hyatt-0229",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0230",
+   "start": 1335.156,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-8321907__close_up_of_a_person_using_a_lathe_machine.mp4",
+   "seed": "hyatt-0230",
+   "act": "ACT_5",
+   "srcSeconds": 31.08,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0231",
+   "start": 1341.093,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H099.png",
+   "seed": "hyatt-0231",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.138
+  },
+  {
+   "id": "cut-0232",
+   "start": 1346.421,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-8334203__time_lapse_video_of_dark_and_cloudy_sky.mp4",
+   "seed": "hyatt-0232",
+   "act": "ACT_5",
+   "srcSeconds": 15.508,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0233",
+   "start": 1352.358,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H078.mp4",
+   "seed": "hyatt-0233",
+   "act": "ACT_5",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0234",
+   "start": 1358.295,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-8515954__a_mirror_on_the_floor.mp4",
+   "seed": "hyatt-0234",
+   "act": "ACT_5",
+   "srcSeconds": 15.542,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0235",
+   "start": 1364.232,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H083.mp4",
+   "seed": "hyatt-0235",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0236",
+   "start": 1370.169,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-852354__starry_sky_timelapse.mp4",
+   "seed": "hyatt-0236",
+   "act": "ACT_5",
+   "srcSeconds": 15.083,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0237",
+   "start": 1376.106,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H101.png",
+   "seed": "hyatt-0237",
+   "act": "ACT_5",
+   "treatment": "focus",
+   "lift": 1.349
+  },
+  {
+   "id": "cut-0238",
+   "start": 1381.434,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-8869780__man_working_in_his_office.mp4",
+   "seed": "hyatt-0238",
+   "act": "ACT_5",
+   "srcSeconds": 17.96,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0239",
+   "start": 1387.371,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H088.mp4",
+   "seed": "hyatt-0239",
+   "act": "ACT_5",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0240",
+   "start": 1393.308,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-8869913__man_carrying_books_in_library.mp4",
+   "seed": "hyatt-0240",
+   "act": "ACT_5",
+   "srcSeconds": 31.24,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0241",
+   "start": 1399.245,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H090.mp4",
+   "seed": "hyatt-0241",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0242",
+   "start": 1405.182,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-8899929__person_looking_a_map.mp4",
+   "seed": "hyatt-0242",
+   "act": "ACT_5",
+   "srcSeconds": 7.445,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0243",
+   "start": 1411.119,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H102.png",
+   "seed": "hyatt-0243",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.208
+  },
+  {
+   "id": "cut-0244",
+   "start": 1416.447,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-9190922__person_grinding_a_metal.mp4",
+   "seed": "hyatt-0244",
+   "act": "ACT_5",
+   "srcSeconds": 10.965,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0245",
+   "start": 1422.384,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H093.mp4",
+   "seed": "hyatt-0245",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0246",
+   "start": 1428.321,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-9343478__video_of_metals_hanging_in_the_crane.mp4",
+   "seed": "hyatt-0246",
+   "act": "ACT_5",
+   "srcSeconds": 16.895,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0247",
+   "start": 1434.258,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H097.mp4",
+   "seed": "hyatt-0247",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0248",
+   "start": 1440.195,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-9618370__man_doing_architectural_designs.mp4",
+   "seed": "hyatt-0248",
+   "act": "ACT_5",
+   "srcSeconds": 37.4,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0249",
+   "start": 1446.132,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H103.png",
+   "seed": "hyatt-0249",
+   "act": "ACT_5",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0250",
+   "start": 1451.46,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-9694807__footage_of_smoke_against_black_background.mp4",
+   "seed": "hyatt-0250",
+   "act": "ACT_5",
+   "srcSeconds": 39.28,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0251",
+   "start": 1457.397,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H100.mp4",
+   "seed": "hyatt-0251",
+   "act": "ACT_5",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0252",
+   "start": 1463.334,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-9857905__time_lapse_of_bridge_in_fog.mp4",
+   "seed": "hyatt-0252",
+   "act": "ACT_5",
+   "srcSeconds": 38.833,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0253",
+   "start": 1469.271,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H104.mp4",
+   "seed": "hyatt-0253",
+   "act": "ACT_5",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0254",
+   "start": 1475.208,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_101027__smoke_wallpaper_space_light_graphic_black_design.mp4",
+   "seed": "hyatt-0254",
+   "act": "ACT_5",
+   "srcSeconds": 15.018,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0255",
+   "start": 1481.145,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H105.png",
+   "seed": "hyatt-0255",
+   "act": "ACT_5",
+   "treatment": "focus",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0256",
+   "start": 1486.473,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_101390__smoke_cloud_wallpaper_graphic_digital_light_desi.mp4",
+   "seed": "hyatt-0256",
+   "act": "ACT_5",
+   "srcSeconds": 15.018,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0257",
+   "start": 1492.41,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H108.mp4",
+   "seed": "hyatt-0257",
+   "act": "ACT_5",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0258",
+   "start": 1498.347,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_154548__blue_sky_moving_clouds_scenery_nature.mp4",
+   "seed": "hyatt-0258",
+   "act": "ACT_5",
+   "srcSeconds": 63.317,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0259",
+   "start": 1504.284,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/motion/H109.mp4",
+   "seed": "hyatt-0259",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0260",
+   "start": 1510.221,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_179481__sunset_sun_sunbeams_evening_atmosphere_dusk_natu.mp4",
+   "seed": "hyatt-0260",
+   "act": "ACT_5",
+   "srcSeconds": 30.33,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0261",
+   "start": 1516.158,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H106.png",
+   "seed": "hyatt-0261",
+   "act": "ACT_5",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0262",
+   "start": 1521.486,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_19412__sunrise_sun_fog_time_lapse_mist_mood_morning_moo.mp4",
+   "seed": "hyatt-0262",
+   "act": "ACT_5",
+   "srcSeconds": 19.933,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0263",
+   "start": 1527.423,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_214922__clouds_sunset_summer_sunbeams_nature.mp4",
+   "seed": "hyatt-0263",
+   "act": "ACT_5",
+   "srcSeconds": 14.464,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0264",
+   "start": 1533.36,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_230528__clouds_dark_duster_cloud_landscape_cloudy_meteor.mp4",
+   "seed": "hyatt-0264",
+   "act": "ACT_5",
+   "srcSeconds": 10.844,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0265",
+   "start": 1539.297,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_237672__sunset_clouds_golden_sun_light_rays_sunbeams_lig.mp4",
+   "seed": "hyatt-0265",
+   "act": "ACT_5",
+   "srcSeconds": 11.46,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0266",
+   "start": 1545.234,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_237756__sunrise_birds_migratory_birds_smoke_industry_gol.mp4",
+   "seed": "hyatt-0266",
+   "act": "ACT_5",
+   "srcSeconds": 16.367,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0267",
+   "start": 1551.171,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H107.png",
+   "seed": "hyatt-0267",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.085
+  },
+  {
+   "id": "cut-0268",
+   "start": 1556.499,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_251932__twisted_metal_rotation_hydraulic_steel_close_up.mp4",
+   "seed": "hyatt-0268",
+   "act": "ACT_5",
+   "srcSeconds": 23.824,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0269",
+   "start": 1562.436,
+   "dur": 5.937,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_318180__heaven_sunset_clouds_sunbeams_evening_sky_dusk_e.mp4",
+   "seed": "hyatt-0269",
+   "act": "ACT_5",
+   "srcSeconds": 22.433,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0270",
+   "start": 1568.373,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H110.png",
+   "seed": "hyatt-0270",
+   "act": "ACT_5",
+   "treatment": "focus",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0271",
+   "start": 1573.701,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H112.png",
+   "seed": "hyatt-0271",
+   "act": "ACT_5",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0272",
+   "start": 1579.029,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H114.png",
+   "seed": "hyatt-0272",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.784
+  },
+  {
+   "id": "cut-0273",
+   "start": 1584.357,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H115.png",
+   "seed": "hyatt-0273",
+   "act": "ACT_5",
+   "treatment": "focus",
+   "lift": 1.28
+  },
+  {
+   "id": "cut-0274",
+   "start": 1589.685,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H116.png",
+   "seed": "hyatt-0274",
+   "act": "ACT_5",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0275",
+   "start": 1595.013,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H117.png",
+   "seed": "hyatt-0275",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.416
+  },
+  {
+   "id": "cut-0276",
+   "start": 1600.341,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H118.png",
+   "seed": "hyatt-0276",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0277",
+   "start": 1605.669,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H119.png",
+   "seed": "hyatt-0277",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0278",
+   "start": 1610.997,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H120.png",
+   "seed": "hyatt-0278",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.287
+  },
+  {
+   "id": "cut-0279",
+   "start": 1616.325,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H121.png",
+   "seed": "hyatt-0279",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0280",
+   "start": 1621.653,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H122.png",
+   "seed": "hyatt-0280",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.26
+  },
+  {
+   "id": "cut-0281",
+   "start": 1626.981,
+   "dur": 5.328,
+   "kind": "img",
+   "src": "hyatt/img/H123.png",
+   "seed": "hyatt-0281",
+   "act": "ACT_5",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0282",
+   "start": 1632.309,
+   "dur": 5.35,
+   "kind": "img",
+   "src": "hyatt/img/H124.png",
+   "seed": "hyatt-0282",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0283",
+   "start": 1637.659,
+   "dur": 6.63,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_56261__clouds_sun_heaven_landscape_horizon_fog_wisps_of.mp4",
+   "seed": "hyatt-0283",
+   "act": "ENDING",
+   "srcSeconds": 14.014,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0284",
+   "start": 1644.289,
+   "dur": 6.63,
+   "kind": "footage",
+   "src": "hyatt/motion/H111.mp4",
+   "seed": "hyatt-0284",
+   "act": "ENDING",
+   "srcSeconds": 6.733,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0285",
+   "start": 1650.919,
+   "dur": 6.63,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_58474__clouds_sun_moving_clouds_heaven_landscape_time_l.mp4",
+   "seed": "hyatt-0285",
+   "act": "ENDING",
+   "srcSeconds": 14.014,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0286",
+   "start": 1657.549,
+   "dur": 6.63,
+   "kind": "footage",
+   "src": "hyatt/motion/H113.mp4",
+   "seed": "hyatt-0286",
+   "act": "ENDING",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0287",
+   "start": 1664.179,
+   "dur": 6.63,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_6348__sun_clouds_sunrise_tomorrow_orange_golden_sunbea.mp4",
+   "seed": "hyatt-0287",
+   "act": "ENDING",
+   "srcSeconds": 20.053,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0288",
+   "start": 1670.809,
+   "dur": 5.95,
+   "kind": "img",
+   "src": "hyatt/img/H125.png",
+   "seed": "hyatt-0288",
+   "act": "ENDING",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0289",
+   "start": 1676.759,
+   "dur": 6.63,
+   "kind": "footage",
+   "src": "hyatt/factory/AR-v_9062__repair_electronics_fix_screw_metal_hand_screwdri.mp4",
+   "seed": "hyatt-0289",
+   "act": "ENDING",
+   "srcSeconds": 40.541,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0290",
+   "start": 1683.389,
+   "dur": 5.95,
+   "kind": "img",
+   "src": "hyatt/img/H126.png",
+   "seed": "hyatt-0290",
+   "act": "ENDING",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0291",
+   "start": 1689.339,
+   "dur": 5.951,
+   "kind": "img",
+   "src": "hyatt/img/H127.png",
+   "seed": "hyatt-0291",
+   "act": "ENDING",
+   "treatment": "focus",
+   "lift": 1.031
+  }
+ ],
+ "captions": [
+  {
+   "start": 0.0,
+   "end": 3.69,
+   "text": "Kansas City, Missouri. January 1979."
+  },
+  {
+   "start": 3.39,
+   "end": 8.355,
+   "text": "In a fabricator's shop, somebody redraws one\ndetail on a hotel walkway."
+  },
+  {
+   "start": 8.055,
+   "end": 12.463,
+   "text": "One long steel rod becomes two shorter ones, four\ninches apart."
+  },
+  {
+   "start": 12.163,
+   "end": 15.457,
+   "text": "Nobody has ever established whose hand drew it."
+  },
+  {
+   "start": 15.157,
+   "end": 19.333,
+   "text": "Two walkways will hang from that detail,\nover a crowded room."
+  },
+  {
+   "start": 19.033,
+   "end": 21.909,
+   "text": "On the drawing, it looks like the same thing."
+  },
+  {
+   "start": 23.109,
+   "end": 27.61,
+   "text": "That detail is a nut, a washer, and a hole\nthrough a steel beam."
+  },
+  {
+   "start": 27.31,
+   "end": 30.65,
+   "text": "It does not get weaker when the second rod\narrives."
+  },
+  {
+   "start": 30.35,
+   "end": 33.365,
+   "text": "It is simply asked to carry twice as much."
+  },
+  {
+   "start": 34.565,
+   "end": 38.927,
+   "text": "The Hyatt Regency Hotel in Kansas City\nhad been open about a year."
+  },
+  {
+   "start": 38.627,
+   "end": 40.945,
+   "text": "At its centre was an atrium."
+  },
+  {
+   "start": 40.645,
+   "end": 45.664,
+   "text": "A room roughly a hundred and seventeen feet\nby a hundred and forty-five,"
+  },
+  {
+   "start": 45.064,
+   "end": 46.864,
+   "text": "and fifty feet high."
+  },
+  {
+   "start": 46.564,
+   "end": 51.762,
+   "text": "Three suspended walkways spanned it,\nat the second, third and fourth floor levels."
+  },
+  {
+   "start": 51.462,
+   "end": 56.867,
+   "text": "They were bridges with nothing underneath them.\nNo columns, no piers, no arch."
+  },
+  {
+   "start": 56.567,
+   "end": 61.625,
+   "text": "Steel rods coming down out of the roof,\nand the walkway hanging on the rods."
+  },
+  {
+   "start": 61.325,
+   "end": 66.476,
+   "text": "So the whole question in this building,\nfrom the day it was drawn, is a small one."
+  },
+  {
+   "start": 66.176,
+   "end": 69.909,
+   "text": "What holds the rod. Two of the three were stacked."
+  },
+  {
+   "start": 69.609,
+   "end": 74.439,
+   "text": "The second floor walkway was suspended\nfrom the fourth floor walkway,"
+  },
+  {
+   "start": 73.839,
+   "end": 76.107,
+   "text": "which was directly above it."
+  },
+  {
+   "start": 75.807,
+   "end": 78.793,
+   "text": "The third was offset from the other two,"
+  },
+  {
+   "start": 78.193,
+   "end": 82.93,
+   "text": "and hung on its own rods from the roof framing.\nRemember that one."
+  },
+  {
+   "start": 82.63,
+   "end": 87.317,
+   "text": "It is the reason the third walkway is still\nstanding at the end of this film."
+  },
+  {
+   "start": 87.017,
+   "end": 90.868,
+   "text": "Each walkway was four spans of steel stringers."
+  },
+  {
+   "start": 90.568,
+   "end": 94.042,
+   "text": "Underneath the stringers ran a pair of box beams,"
+  },
+  {
+   "start": 93.442,
+   "end": 96.88,
+   "text": "and the box beams were what the rods actually\nheld."
+  },
+  {
+   "start": 96.58,
+   "end": 100.963,
+   "text": "A box beam sounds like a solid thing. It was not."
+  },
+  {
+   "start": 100.663,
+   "end": 104.329,
+   "text": "It was two ordinary eight-inch steel channels,"
+  },
+  {
+   "start": 103.729,
+   "end": 109.297,
+   "text": "laid facing each other and joined toe to toe\nby continuous longitudinal welds."
+  },
+  {
+   "start": 108.997,
+   "end": 112.151,
+   "text": "A hollow rectangle, closed along two seams."
+  },
+  {
+   "start": 111.851,
+   "end": 114.778,
+   "text": "The rods were an inch and a quarter across,"
+  },
+  {
+   "start": 114.178,
+   "end": 119.392,
+   "text": "threaded top and bottom to take a nut\nand a washer. That is the whole connection."
+  },
+  {
+   "start": 119.092,
+   "end": 125.029,
+   "text": "A rod through a hole. A washer under the beam.\nA nut under the washer."
+  },
+  {
+   "start": 124.729,
+   "end": 130.598,
+   "text": "There is nothing else in it. As it was first\ndrawn, one rod ran the whole way down."
+  },
+  {
+   "start": 130.298,
+   "end": 134.508,
+   "text": "Out of the roof framing, through the fourth floor\nbox beam,"
+  },
+  {
+   "start": 133.908,
+   "end": 136.331,
+   "text": "and on down through the second."
+  },
+  {
+   "start": 136.031,
+   "end": 139.681,
+   "text": "Each beam sat on its own nut, on the same rod,"
+  },
+  {
+   "start": 139.081,
+   "end": 143.133,
+   "text": "and each beam put only its own share\ninto the steel."
+  },
+  {
+   "start": 142.833,
+   "end": 148.795,
+   "text": "The Missouri Court of Appeals calls it, plainly,\na one rod design. Six rods."
+  },
+  {
+   "start": 148.495,
+   "end": 154.178,
+   "text": "Three down each side of the atrium. Thirty feet\nof threaded steel apiece."
+  },
+  {
+   "start": 153.878,
+   "end": 157.543,
+   "text": "Now the arithmetic, because this film\nis arithmetic."
+  },
+  {
+   "start": 157.243,
+   "end": 162.411,
+   "text": "The project specified a design live load\nof a hundred pounds per square foot"
+  },
+  {
+   "start": 161.811,
+   "end": 164.583,
+   "text": "for hotel corridors and lobby areas,"
+  },
+  {
+   "start": 163.983,
+   "end": 168.431,
+   "text": "and the federal investigators read\nthat as covering the walkways."
+  },
+  {
+   "start": 168.131,
+   "end": 173.443,
+   "text": "Engineers write that load in kips. A kip\nis a thousand pounds of force."
+  },
+  {
+   "start": 173.143,
+   "end": 177.944,
+   "text": "It is not a mysterious unit. It is a weight,\nwritten short."
+  },
+  {
+   "start": 177.644,
+   "end": 182.225,
+   "text": "Under the one rod design, the load arriving\nat each connection,"
+  },
+  {
+   "start": 181.625,
+   "end": 184.554,
+   "text": "at the second floor and at the fourth,"
+  },
+  {
+   "start": 183.954,
+   "end": 187.486,
+   "text": "would have been about twenty point three kips."
+  },
+  {
+   "start": 187.186,
+   "end": 191.037,
+   "text": "The same at both levels, because each beam carried\nonly itself."
+  },
+  {
+   "start": 190.737,
+   "end": 195.238,
+   "text": "Steel design in Kansas City ran on the AISC\nSpecification."
+  },
+  {
+   "start": 194.938,
+   "end": 199.439,
+   "text": "That is what the city's building code pointed\nat for structural steel."
+  },
+  {
+   "start": 199.139,
+   "end": 203.454,
+   "text": "Under that specification a connection carries\na factor of safety."
+  },
+  {
+   "start": 203.154,
+   "end": 207.934,
+   "text": "The lowest that would govern any part of this one\nis one point six seven."
+  },
+  {
+   "start": 207.634,
+   "end": 209.972,
+   "text": "Multiply the design load by that,"
+  },
+  {
+   "start": 209.372,
+   "end": 213.494,
+   "text": "and you have the load the finished connection\nis expected to survive"
+  },
+  {
+   "start": 212.894,
+   "end": 218.148,
+   "text": "before it lets go. For the one rod design,\nthat is thirty-three point nine kips."
+  },
+  {
+   "start": 217.848,
+   "end": 221.559,
+   "text": "The connection as drawn could take about twenty\npoint five."
+  },
+  {
+   "start": 221.259,
+   "end": 224.135,
+   "text": "Sixty percent of what the code expected."
+  },
+  {
+   "start": 223.835,
+   "end": 227.082,
+   "text": "That percentage is the federal report's own."
+  },
+  {
+   "start": 226.782,
+   "end": 230.865,
+   "text": "So the detail was already illegal before anybody\nchanged it."
+  },
+  {
+   "start": 230.565,
+   "end": 235.715,
+   "text": "The Missouri Board's tribunal found\nthat the hanger rods and the connections shown"
+  },
+  {
+   "start": 235.115,
+   "end": 239.391,
+   "text": "on the structural drawings did not meet the design\nspecifications"
+  },
+  {
+   "start": 238.791,
+   "end": 243.704,
+   "text": "of the Kansas City Building Code, and that finding\nwas not contested on appeal."
+  },
+  {
+   "start": 243.404,
+   "end": 246.93,
+   "text": "The federal report reached it separately,\nfrom the steel."
+  },
+  {
+   "start": 246.63,
+   "end": 251.038,
+   "text": "There is one more thing about that drawing, and it\nis not a small one."
+  },
+  {
+   "start": 250.738,
+   "end": 255.982,
+   "text": "The connection had no calculations behind it\nthat anybody has ever seen."
+  },
+  {
+   "start": 255.682,
+   "end": 260.019,
+   "text": "Not the federal investigators. Not the Office\nof the Mayor."
+  },
+  {
+   "start": 259.719,
+   "end": 265.512,
+   "text": "Efforts to obtain copies of the structural design\ncalculations, the report says,"
+  },
+  {
+   "start": 264.912,
+   "end": 270.616,
+   "text": "were unsuccessful. A tribunal would later find\nthat these were special connections,"
+  },
+  {
+   "start": 270.016,
+   "end": 274.736,
+   "text": "and that all connections are the responsibility\nof the structural engineer."
+  },
+  {
+   "start": 274.436,
+   "end": 279.004,
+   "text": "And it found something harder than special. It\nfound them non-redundant."
+  },
+  {
+   "start": 278.704,
+   "end": 283.205,
+   "text": "A non-redundant connection which fails will cause\ncollapse of the structure."
+  },
+  {
+   "start": 282.905,
+   "end": 286.756,
+   "text": "Six of them, over a room that held two thousand\npeople."
+  },
+  {
+   "start": 286.456,
+   "end": 289.517,
+   "text": "Nothing behind any of them if one let go."
+  },
+  {
+   "start": 310.917,
+   "end": 315.232,
+   "text": "Construction was under way while the design\nwas still being finished."
+  },
+  {
+   "start": 314.932,
+   "end": 317.477,
+   "text": "The Hyatt was a fast-track project,"
+  },
+  {
+   "start": 316.877,
+   "end": 321.476,
+   "text": "which means the building went\nup while the drawings were still being drawn."
+  },
+  {
+   "start": 321.176,
+   "end": 324.516,
+   "text": "The steel fabricator was Havens Steel Company."
+  },
+  {
+   "start": 324.216,
+   "end": 329.283,
+   "text": "Havens had engineers of its own, capable\nof designing simple, complex,"
+  },
+  {
+   "start": 328.683,
+   "end": 330.714,
+   "text": "or special connections."
+  },
+  {
+   "start": 330.414,
+   "end": 333.399,
+   "text": "Because of certain fabricating problems,"
+  },
+  {
+   "start": 332.799,
+   "end": 336.68,
+   "text": "Havens proposed a double rod system to the project\nengineer."
+  },
+  {
+   "start": 336.38,
+   "end": 340.417,
+   "text": "Two explanations have been proposed\nin the literature for why."
+  },
+  {
+   "start": 340.117,
+   "end": 343.782,
+   "text": "One is that rods long enough could not be got."
+  },
+  {
+   "start": 343.482,
+   "end": 348.194,
+   "text": "The other is that threading a thirty-foot rod\nalong its whole length was judged"
+  },
+  {
+   "start": 347.594,
+   "end": 350.512,
+   "text": "impractical. Both are proposals."
+  },
+  {
+   "start": 350.212,
+   "end": 355.27,
+   "text": "Neither is a finding of any tribunal,\nand this film does not choose between them."
+  },
+  {
+   "start": 354.97,
+   "end": 357.01,
+   "text": "Here is what the change did."
+  },
+  {
+   "start": 356.71,
+   "end": 361.062,
+   "text": "Instead of one rod carrying two beams at two\ndifferent heights,"
+  },
+  {
+   "start": 360.462,
+   "end": 362.418,
+   "text": "there were now two rods."
+  },
+  {
+   "start": 362.118,
+   "end": 366.34,
+   "text": "An upper set from the fourth floor box beams\nto the roof framing."
+  },
+  {
+   "start": 366.04,
+   "end": 370.123,
+   "text": "A lower set from the second floor box beams\nup to the fourth."
+  },
+  {
+   "start": 369.823,
+   "end": 373.302,
+   "text": "The second rod did not pass through the same hole."
+  },
+  {
+   "start": 373.002,
+   "end": 377.524,
+   "text": "It was offset four inches along the beam. Follow\nthe load."
+  },
+  {
+   "start": 377.224,
+   "end": 379.28,
+   "text": "Under the new arrangement,"
+  },
+  {
+   "start": 378.68,
+   "end": 382.365,
+   "text": "all of the second floor walkway load was first\ntransferred"
+  },
+  {
+   "start": 381.765,
+   "end": 383.908,
+   "text": "to the fourth floor box beams."
+  },
+  {
+   "start": 383.608,
+   "end": 387.554,
+   "text": "Then that load, and the fourth floor walkway's own\nload,"
+  },
+  {
+   "start": 386.954,
+   "end": 391.824,
+   "text": "both went out through the fourth floor connections\ninto the ceiling rods."
+  },
+  {
+   "start": 391.524,
+   "end": 394.91,
+   "text": "The second floor connection did not change at all."
+  },
+  {
+   "start": 394.61,
+   "end": 397.671,
+   "text": "It still carried about twenty point three kips."
+  },
+  {
+   "start": 397.371,
+   "end": 401.222,
+   "text": "The fourth floor connection went to about forty\npoint seven."
+  },
+  {
+   "start": 400.922,
+   "end": 405.887,
+   "text": "The word the federal report uses is doubled,\nand it uses it as a conclusion."
+  },
+  {
+   "start": 405.587,
+   "end": 410.673,
+   "text": "The change in hanger rod arrangement,\nfrom a continuous rod to interrupted rods,"
+  },
+  {
+   "start": 410.073,
+   "end": 415.103,
+   "text": "essentially doubled the load to be transferred\nby the fourth floor connections."
+  },
+  {
+   "start": 414.803,
+   "end": 419.341,
+   "text": "The Missouri Court of Appeals says the same thing,\nin its own words,"
+  },
+  {
+   "start": 418.741,
+   "end": 420.511,
+   "text": "out of its own record."
+  },
+  {
+   "start": 420.211,
+   "end": 425.091,
+   "text": "The effect of this change was to double the load\non the fourth floor walkway"
+  },
+  {
+   "start": 424.491,
+   "end": 430.049,
+   "text": "and on the connections there. No steel\nwas removed. No steel was thinned."
+  },
+  {
+   "start": 429.749,
+   "end": 432.857,
+   "text": "One beam was simply asked to carry two."
+  },
+  {
+   "start": 432.557,
+   "end": 437.244,
+   "text": "The change was transmitted to the project\nengineer, and it was approved."
+  },
+  {
+   "start": 436.944,
+   "end": 439.632,
+   "text": "There was evidence, the court found,"
+  },
+  {
+   "start": 439.032,
+   "end": 443.434,
+   "text": "that one of the architects contacted the project\nengineer to verify"
+  },
+  {
+   "start": 442.834,
+   "end": 448.179,
+   "text": "that the double rod arrangement was structurally\nsound, and was advised that it was."
+  },
+  {
+   "start": 447.879,
+   "end": 450.847,
+   "text": "On appeal the engineers disputed that."
+  },
+  {
+   "start": 450.547,
+   "end": 453.841,
+   "text": "The court reviewed the record and rejected\nthe dispute."
+  },
+  {
+   "start": 453.541,
+   "end": 458.135,
+   "text": "It is a reasonable inference from the evidence,\nthe same court wrote,"
+  },
+  {
+   "start": 457.535,
+   "end": 461.24,
+   "text": "that the engineering calculations and tests\nnecessary"
+  },
+  {
+   "start": 460.64,
+   "end": 465.101,
+   "text": "to determine whether the double rod design\nwas sound were never made."
+  },
+  {
+   "start": 464.801,
+   "end": 466.748,
+   "text": "Somebody did notice."
+  },
+  {
+   "start": 466.448,
+   "end": 471.287,
+   "text": "A technician checking the shop drawings called\nthe project engineer's attention"
+  },
+  {
+   "start": 470.687,
+   "end": 473.682,
+   "text": "to questions about the strength of the rods,"
+  },
+  {
+   "start": 473.082,
+   "end": 475.825,
+   "text": "and about the change from one rod to two."
+  },
+  {
+   "start": 475.525,
+   "end": 479.263,
+   "text": "He was told that the change to two rods\nwas basically the same"
+  },
+  {
+   "start": 478.663,
+   "end": 483.577,
+   "text": "as the one rod concept. Basically the same\nas the one rod concept."
+  },
+  {
+   "start": 483.277,
+   "end": 486.534,
+   "text": "And by the licensing board's own investigation,"
+  },
+  {
+   "start": 485.934,
+   "end": 490.107,
+   "text": "as reported in the American Society of Civil\nEngineers' journal,"
+  },
+  {
+   "start": 489.507,
+   "end": 494.467,
+   "text": "the project engineer had been asked\nabout the implications of the design change"
+  },
+  {
+   "start": 493.867,
+   "end": 497.577,
+   "text": "on at least six separate occasions during\nconstruction,"
+  },
+  {
+   "start": 496.977,
+   "end": 501.56,
+   "text": "and assured each inquirer that the change\nwould not compromise the safety"
+  },
+  {
+   "start": 500.96,
+   "end": 503.728,
+   "text": "of the walkways. Six times."
+  },
+  {
+   "start": 503.428,
+   "end": 507.014,
+   "text": "Nobody who asked was answered with a calculation,"
+  },
+  {
+   "start": 506.414,
+   "end": 511.526,
+   "text": "because there was not one to give them.\nThe drawings had a hole in them as well."
+  },
+  {
+   "start": 511.226,
+   "end": 515.316,
+   "text": "Information about loads and about the connections\nhad appeared"
+  },
+  {
+   "start": 514.716,
+   "end": 517.863,
+   "text": "on the project engineer's preliminary sketches."
+  },
+  {
+   "start": 517.563,
+   "end": 522.25,
+   "text": "It was not carried onto the final structural\ndrawings that went to the fabricator."
+  },
+  {
+   "start": 521.95,
+   "end": 528.005,
+   "text": "So Havens had a drawing. Sheet S four zero five\npoint one, sections ten and eleven."
+  },
+  {
+   "start": 527.705,
+   "end": 532.856,
+   "text": "And the tribunal that later read that sheet found\ntwo things about it at once."
+  },
+  {
+   "start": 532.556,
+   "end": 535.328,
+   "text": "It did not communicate to the fabricator"
+  },
+  {
+   "start": 534.728,
+   "end": 537.893,
+   "text": "that the fabricator was to design the connection."
+  },
+  {
+   "start": 537.593,
+   "end": 540.387,
+   "text": "And it did communicate to the fabricator"
+  },
+  {
+   "start": 539.787,
+   "end": 543.952,
+   "text": "that those connections had already been designed\nby the engineer."
+  },
+  {
+   "start": 543.652,
+   "end": 547.75,
+   "text": "The project engineer testified that he intended\nthe fabricator"
+  },
+  {
+   "start": 547.15,
+   "end": 549.128,
+   "text": "to design the connections."
+  },
+  {
+   "start": 548.828,
+   "end": 553.158,
+   "text": "Havens prepared its shop drawings on the basis\nthat the connections shown"
+  },
+  {
+   "start": 552.558,
+   "end": 556.533,
+   "text": "on the design drawings had been designed\nby the structural engineer."
+  },
+  {
+   "start": 556.233,
+   "end": 561.638,
+   "text": "Each believed the other had done it. Havens sent\nits shop drawings back for review."
+  },
+  {
+   "start": 561.338,
+   "end": 565.696,
+   "text": "As indicated by their stamps, they were reviewed\nby the contractor,"
+  },
+  {
+   "start": 565.096,
+   "end": 569.762,
+   "text": "by the structural engineer, and by the architect.\nThree stamps."
+  },
+  {
+   "start": 569.462,
+   "end": 571.734,
+   "text": "The drawing did not change."
+  },
+  {
+   "start": 571.434,
+   "end": 575.749,
+   "text": "The engineering firm had a written procedure\nfor exactly this situation."
+  },
+  {
+   "start": 575.449,
+   "end": 579.031,
+   "text": "The Commission found, and the engineers\ndid not dispute,"
+  },
+  {
+   "start": 578.431,
+   "end": 582.158,
+   "text": "that its own internal procedures called\nfor a detailed check"
+  },
+  {
+   "start": 581.558,
+   "end": 585.498,
+   "text": "of all special connections. That check\ndid not happen."
+  },
+  {
+   "start": 585.198,
+   "end": 589.526,
+   "text": "The project engineer did not review the fourth\nfloor connection shown"
+  },
+  {
+   "start": 588.926,
+   "end": 593.553,
+   "text": "on the shop drawings, and did not, in accord\nwith usual engineering practice,"
+  },
+  {
+   "start": 592.953,
+   "end": 597.733,
+   "text": "assemble its components to determine what\nthe connection looked like in detail."
+  },
+  {
+   "start": 597.433,
+   "end": 602.723,
+   "text": "Listen to that last part again, because the film\nis about to do it for him."
+  },
+  {
+   "start": 602.423,
+   "end": 605.976,
+   "text": "No review was made, and no calculations\nwere performed,"
+  },
+  {
+   "start": 605.376,
+   "end": 608.22,
+   "text": "to determine whether the connection shown"
+  },
+  {
+   "start": 607.62,
+   "end": 610.5,
+   "text": "on the shop drawings met code requirements."
+  },
+  {
+   "start": 610.2,
+   "end": 612.936,
+   "text": "Both engineers approved the shop drawings."
+  },
+  {
+   "start": 612.636,
+   "end": 615.691,
+   "text": "Under the contract, and under the statute,"
+  },
+  {
+   "start": 615.091,
+   "end": 619.32,
+   "text": "review and approval of shop drawings\nis an engineering function."
+  },
+  {
+   "start": 620.52,
+   "end": 626.321,
+   "text": "In October 1979, with the hotel still going up,\nthe atrium roof collapsed."
+  },
+  {
+   "start": 626.021,
+   "end": 629.227,
+   "text": "The investigation into that collapse established"
+  },
+  {
+   "start": 628.627,
+   "end": 631.683,
+   "text": "that the cause was poor construction workmanship."
+  },
+  {
+   "start": 631.383,
+   "end": 635.93,
+   "text": "There were two accidents at the Hyatt that month,\nand one of them killed a man."
+  },
+  {
+   "start": 635.63,
+   "end": 641.683,
+   "text": "The federal occupational safety agency\ninvestigated a fatal construction accident"
+  },
+  {
+   "start": 641.083,
+   "end": 643.568,
+   "text": "at the hotel in October 1979."
+  },
+  {
+   "start": 643.268,
+   "end": 646.906,
+   "text": "So twenty-one months before anybody died\nin that room,"
+  },
+  {
+   "start": 646.306,
+   "end": 649.301,
+   "text": "the building had already dropped something."
+  },
+  {
+   "start": 649.001,
+   "end": 653.594,
+   "text": "The owner and the architect paid the engineering\nfirm an additional fee to go back"
+  },
+  {
+   "start": 652.994,
+   "end": 654.617,
+   "text": "and check the atrium."
+  },
+  {
+   "start": 654.317,
+   "end": 659.052,
+   "text": "The senior engineer assured the owner's\nrepresentative that he would personally look"
+  },
+  {
+   "start": 658.452,
+   "end": 660.676,
+   "text": "at every connection in the hotel."
+  },
+  {
+   "start": 660.376,
+   "end": 663.902,
+   "text": "In their report to the architects, the engineers\nwrote:"
+  },
+  {
+   "start": 663.302,
+   "end": 667.617,
+   "text": "we then checked the suspended bridges and found\nthem to be satisfactory."
+  },
+  {
+   "start": 667.317,
+   "end": 668.892,
+   "text": "They had not."
+  },
+  {
+   "start": 668.592,
+   "end": 673.486,
+   "text": "The court found that they did not do a complete\ncheck of the design of all steel"
+  },
+  {
+   "start": 672.886,
+   "end": 676.715,
+   "text": "in the atrium, nor a complete check\nof the suspended bridges."
+  },
+  {
+   "start": 676.415,
+   "end": 679.151,
+   "text": "What they had checked was the roof steel."
+  },
+  {
+   "start": 678.851,
+   "end": 682.434,
+   "text": "This is the most damning date in the whole file,"
+  },
+  {
+   "start": 681.834,
+   "end": 686.624,
+   "text": "and it is worth being exact about why. It comes\nafter the change."
+  },
+  {
+   "start": 686.324,
+   "end": 688.874,
+   "text": "It comes before anybody died."
+  },
+  {
+   "start": 688.574,
+   "end": 693.075,
+   "text": "And it is a check somebody was paid to make,\nand reported as made."
+  },
+  {
+   "start": 692.775,
+   "end": 694.822,
+   "text": "The atrium was inspected,"
+  },
+  {
+   "start": 694.222,
+   "end": 699.087,
+   "text": "and the walkways went on hanging from a connection\nnobody had ever calculated."
+  },
+  {
+   "start": 698.787,
+   "end": 700.596,
+   "text": "Then the hotel opened,"
+  },
+  {
+   "start": 699.996,
+   "end": 703.845,
+   "text": "and by the following summer it had been in service\nabout a year."
+  },
+  {
+   "start": 703.545,
+   "end": 706.142,
+   "text": "For about a year, the building worked."
+  },
+  {
+   "start": 705.842,
+   "end": 709.461,
+   "text": "That is the part of this that is hardest to keep\nhold of."
+  },
+  {
+   "start": 709.161,
+   "end": 713.824,
+   "text": "Two walkways carried people across that room,\nevery day, for a year,"
+  },
+  {
+   "start": 713.224,
+   "end": 719.163,
+   "text": "on a connection nobody had ever calculated.\nFriday, the seventeenth of July, 1981."
+  },
+  {
+   "start": 718.863,
+   "end": 720.949,
+   "text": "Kansas City is hot."
+  },
+  {
+   "start": 720.649,
+   "end": 726.063,
+   "text": "Between fifteen hundred and two thousand area\nresidents chose to escape the heat"
+  },
+  {
+   "start": 725.463,
+   "end": 730.862,
+   "text": "at the hotel's tea dance, a weekly event with big\nband music and a dance contest."
+  },
+  {
+   "start": 730.562,
+   "end": 735.409,
+   "text": "They began arriving in the middle\nof the afternoon. They are not in this film."
+  },
+  {
+   "start": 735.109,
+   "end": 739.093,
+   "text": "A television crew was in that room with a camera\nthat evening,"
+  },
+  {
+   "start": 738.493,
+   "end": 742.4,
+   "text": "and there are newspaper photographs from the hours\nafter it,"
+  },
+  {
+   "start": 741.8,
+   "end": 743.882,
+   "text": "and none of it appears here."
+  },
+  {
+   "start": 743.582,
+   "end": 745.905,
+   "text": "It belongs to other people,"
+  },
+  {
+   "start": 745.305,
+   "end": 750.312,
+   "text": "and it is a picture of a mass-casualty event\nwith survivors still living."
+  },
+  {
+   "start": 750.012,
+   "end": 755.872,
+   "text": "What this film has instead is the room, empty,\nat three o'clock, at half past four,"
+  },
+  {
+   "start": 755.272,
+   "end": 756.696,
+   "text": "and at seven."
+  },
+  {
+   "start": 756.396,
+   "end": 759.111,
+   "text": "The federal report built a timeline"
+  },
+  {
+   "start": 758.511,
+   "end": 762.266,
+   "text": "of that evening out of the two Kansas City\nnewspapers,"
+  },
+  {
+   "start": 761.666,
+   "end": 767.049,
+   "text": "and printed it in its own pages. What follows\nis that timeline, in its words."
+  },
+  {
+   "start": 766.749,
+   "end": 772.479,
+   "text": "Seven o'clock. Crowd in atrium area is estimated\nat fifteen hundred to two thousand."
+  },
+  {
+   "start": 772.179,
+   "end": 778.095,
+   "text": "Four minutes past. Band returns from break\nand begins to play for the dance contest."
+  },
+  {
+   "start": 777.795,
+   "end": 779.928,
+   "text": "Five minutes past seven."
+  },
+  {
+   "start": 784.828,
+   "end": 788.4,
+   "text": "A non-redundant connection gives nothing away\nfirst."
+  },
+  {
+   "start": 788.1,
+   "end": 793.272,
+   "text": "There is no second path for the load to take.\nNo bend, no sag, no interval."
+  },
+  {
+   "start": 792.972,
+   "end": 797.287,
+   "text": "The washer comes through the beam, and the walkway\nis already falling."
+  },
+  {
+   "start": 796.987,
+   "end": 800.923,
+   "text": "The second and fourth floor walkways fell\nto the atrium floor,"
+  },
+  {
+   "start": 800.323,
+   "end": 804.414,
+   "text": "and the fourth floor walkway came to rest on top\nof the lower one."
+  },
+  {
+   "start": 804.114,
+   "end": 808.893,
+   "text": "Most of those killed or injured were either\non the first floor level of the atrium"
+  },
+  {
+   "start": 808.293,
+   "end": 813.281,
+   "text": "or on the second floor walkway. The third floor\nwalkway was not involved."
+  },
+  {
+   "start": 812.981,
+   "end": 817.389,
+   "text": "The two walkways together weighed a hundred\nand forty-two thousand pounds."
+  },
+  {
+   "start": 817.089,
+   "end": 820.243,
+   "text": "That figure is the Missouri Court of Appeals'."
+  },
+  {
+   "start": 819.943,
+   "end": 824.862,
+   "text": "About seventy-one tons of steel and concrete,\nfrom four storeys up."
+  },
+  {
+   "start": 824.562,
+   "end": 829.62,
+   "text": "What happened after that is in the same timeline,\nand this film will not show it."
+  },
+  {
+   "start": 829.32,
+   "end": 834.539,
+   "text": "It will read it. Three minutes past the collapse,\nthe first call for help."
+  },
+  {
+   "start": 834.239,
+   "end": 837.718,
+   "text": "Fourteen minutes later, a call goes\nout for cutting tools."
+  },
+  {
+   "start": 837.418,
+   "end": 840.201,
+   "text": "Four minutes after that, for a forklift."
+  },
+  {
+   "start": 839.901,
+   "end": 844.374,
+   "text": "By fifty-two minutes past seven there are more\nthan a hundred firefighters"
+  },
+  {
+   "start": 843.774,
+   "end": 847.953,
+   "text": "in the building. At half past eight, a heavy crane\narrives."
+  },
+  {
+   "start": 847.653,
+   "end": 852.572,
+   "text": "At a quarter past three the following morning,\nthe first walkway span is lifted."
+  },
+  {
+   "start": 852.272,
+   "end": 856.355,
+   "text": "At half past four, the last survivor is removed\nfrom the debris."
+  },
+  {
+   "start": 856.055,
+   "end": 861.228,
+   "text": "Nine hours and twenty-five minutes. The federal\nreport gives it eleven lines."
+  },
+  {
+   "start": 860.928,
+   "end": 863.618,
+   "text": "One hundred and fourteen people died."
+  },
+  {
+   "start": 863.318,
+   "end": 866.24,
+   "text": "At least a hundred and eighty-six were injured."
+  },
+  {
+   "start": 865.94,
+   "end": 869.776,
+   "text": "The federal report, and the engineering literature\nafter it,"
+  },
+  {
+   "start": 869.176,
+   "end": 871.788,
+   "text": "used the same phrase for what that was."
+  },
+  {
+   "start": 871.488,
+   "end": 876.221,
+   "text": "The most devastating structural collapse ever\nto take place in the United States."
+  },
+  {
+   "start": 875.921,
+   "end": 878.75,
+   "text": "This film names none of the dead."
+  },
+  {
+   "start": 878.45,
+   "end": 881.968,
+   "text": "Neither the federal report nor the court names\none,"
+  },
+  {
+   "start": 881.368,
+   "end": 884.019,
+   "text": "so there is nothing here to leave out."
+  },
+  {
+   "start": 883.719,
+   "end": 888.638,
+   "text": "What there is, is a number, and a room\nthat had been full at five past seven."
+  },
+  {
+   "start": 889.838,
+   "end": 892.816,
+   "text": "On the twentieth of July, three days after,"
+  },
+  {
+   "start": 892.216,
+   "end": 897.111,
+   "text": "Senator Thomas Eagleton's office contacted\nthe National Bureau of Standards"
+  },
+  {
+   "start": 896.511,
+   "end": 900.887,
+   "text": "and requested that technical assistance\nbe provided to Kansas City."
+  },
+  {
+   "start": 900.587,
+   "end": 901.932,
+   "text": "Two days later,"
+  },
+  {
+   "start": 901.332,
+   "end": 903.365,
+   "text": "the Mayor formally requested"
+  },
+  {
+   "start": 902.765,
+   "end": 907.364,
+   "text": "that the Bureau independently ascertain the most\nprobable cause of the collapse."
+  },
+  {
+   "start": 907.064,
+   "end": 910.59,
+   "text": "Two senators and a congressman endorsed\nthe request."
+  },
+  {
+   "start": 910.29,
+   "end": 913.351,
+   "text": "The Bureau's people did not get a free hand."
+  },
+  {
+   "start": 913.051,
+   "end": 915.951,
+   "text": "In the early phases of the investigation,"
+  },
+  {
+   "start": 915.351,
+   "end": 920.634,
+   "text": "their involvement was limited by court order\nto visual and photographic observations"
+  },
+  {
+   "start": 920.034,
+   "end": 923.723,
+   "text": "and measurements. Permission to weigh the spans"
+  },
+  {
+   "start": 923.123,
+   "end": 927.21,
+   "text": "and to cut specimens out of them came later,\nby court order,"
+  },
+  {
+   "start": 926.61,
+   "end": 930.066,
+   "text": "after the parties in the litigation agreed to it."
+  },
+  {
+   "start": 929.766,
+   "end": 934.592,
+   "text": "What came out of it, in May 1982, was Building\nScience Series one four three."
+  },
+  {
+   "start": 934.292,
+   "end": 937.66,
+   "text": "It is a National Bureau of Standards document,"
+  },
+  {
+   "start": 937.06,
+   "end": 941.179,
+   "text": "not a National Institute of Standards\nand Technology one —"
+  },
+  {
+   "start": 940.579,
+   "end": 944.332,
+   "text": "the Bureau did not become the Institute\nuntil 1988 —"
+  },
+  {
+   "start": 943.732,
+   "end": 947.013,
+   "text": "and everything in this act is read out of it."
+  },
+  {
+   "start": 948.913,
+   "end": 952.671,
+   "text": "Its first conclusion is the one nobody expects."
+  },
+  {
+   "start": 952.371,
+   "end": 956.271,
+   "text": "Collapse of the walkways occurred under the action\nof loads"
+  },
+  {
+   "start": 955.671,
+   "end": 959.733,
+   "text": "that were substantially less than the design loads\nspecified"
+  },
+  {
+   "start": 959.133,
+   "end": 963.881,
+   "text": "by the Kansas City Building Code. Less. Not more."
+  },
+  {
+   "start": 963.581,
+   "end": 966.452,
+   "text": "The most probable cause, it concluded,"
+  },
+  {
+   "start": 965.852,
+   "end": 970.497,
+   "text": "was insufficient load capacity of the box\nbeam-hanger rod connections."
+  },
+  {
+   "start": 970.197,
+   "end": 972.515,
+   "text": "Two factors contributed."
+  },
+  {
+   "start": 972.215,
+   "end": 976.101,
+   "text": "The inadequacy of the original design\nfor the connection,"
+  },
+  {
+   "start": 975.501,
+   "end": 978.527,
+   "text": "which was identical for all three walkways."
+  },
+  {
+   "start": 978.227,
+   "end": 981.888,
+   "text": "And the change in hanger rod arrangement during\nconstruction,"
+  },
+  {
+   "start": 981.288,
+   "end": 984.678,
+   "text": "which essentially doubled the load at the fourth\nfloor."
+  },
+  {
+   "start": 984.378,
+   "end": 987.439,
+   "text": "Now the four numbers, and they are the argument."
+  },
+  {
+   "start": 987.139,
+   "end": 991.686,
+   "text": "As drawn, the connection had to carry twenty point\nthree kips."
+  },
+  {
+   "start": 991.386,
+   "end": 996.166,
+   "text": "As built, the fourth floor connection had to carry\nforty point seven."
+  },
+  {
+   "start": 995.866,
+   "end": 1000.43,
+   "text": "At forty point seven, with a factor of safety\nof one point six seven,"
+  },
+  {
+   "start": 999.83,
+   "end": 1003.94,
+   "text": "the code expected that connection to survive\nan ultimate load"
+  },
+  {
+   "start": 1003.34,
+   "end": 1005.615,
+   "text": "of at least sixty-eight kips."
+  },
+  {
+   "start": 1005.315,
+   "end": 1008.98,
+   "text": "So the Bureau built the connection again\nand pulled it apart."
+  },
+  {
+   "start": 1008.68,
+   "end": 1010.85,
+   "text": "Across its test series,"
+  },
+  {
+   "start": 1010.25,
+   "end": 1016.114,
+   "text": "the estimated mean ultimate capacities\nof the fourth floor connections ranged"
+  },
+  {
+   "start": 1015.514,
+   "end": 1019.661,
+   "text": "from eighteen point two kips to nineteen point\nthree,"
+  },
+  {
+   "start": 1019.061,
+   "end": 1023.884,
+   "text": "with an average of eighteen point six. Sixty-eight\nrequired."
+  },
+  {
+   "start": 1023.584,
+   "end": 1027.921,
+   "text": "Eighteen point six available. Then the last\nnumber."
+  },
+  {
+   "start": 1027.621,
+   "end": 1031.983,
+   "text": "It is the one this case is quoted wrongly on, more\nthan any other."
+  },
+  {
+   "start": 1031.683,
+   "end": 1036.36,
+   "text": "The maximum load actually acting on a fourth floor\nconnection at the moment"
+  },
+  {
+   "start": 1035.76,
+   "end": 1038.97,
+   "text": "of collapse was about twenty-one point four kips."
+  },
+  {
+   "start": 1038.67,
+   "end": 1041.343,
+   "text": "The Bureau puts it as a percentage:"
+  },
+  {
+   "start": 1040.743,
+   "end": 1044.683,
+   "text": "the maximum load on a fourth floor connection\nat the time"
+  },
+  {
+   "start": 1044.083,
+   "end": 1049.017,
+   "text": "of collapse was only thirty-one percent\nof the ultimate capacity expected"
+  },
+  {
+   "start": 1048.417,
+   "end": 1052.598,
+   "text": "of a connection designed under the Kansas City\nBuilding Code."
+  },
+  {
+   "start": 1052.298,
+   "end": 1056.681,
+   "text": "That thirty-one percent is a load. It\nis not a strength."
+  },
+  {
+   "start": 1056.381,
+   "end": 1059.14,
+   "text": "It says how much was on the connection,"
+  },
+  {
+   "start": 1058.54,
+   "end": 1062.786,
+   "text": "measured against how much the code wanted\nthe connection to hold."
+  },
+  {
+   "start": 1062.486,
+   "end": 1067.358,
+   "text": "The strength ratio is a different number,\nand the federal report never states it."
+  },
+  {
+   "start": 1067.058,
+   "end": 1071.65,
+   "text": "Eighteen point six against sixty-eight\nis about twenty-seven percent,"
+  },
+  {
+   "start": 1071.05,
+   "end": 1073.649,
+   "text": "and that figure is ours, not theirs."
+  },
+  {
+   "start": 1073.349,
+   "end": 1078.773,
+   "text": "Measured the other way, against the design load\nrather than the ultimate capacity,"
+  },
+  {
+   "start": 1078.173,
+   "end": 1083.655,
+   "text": "the load on the night was fifty-three percent\nof what the code required for design."
+  },
+  {
+   "start": 1083.355,
+   "end": 1088.131,
+   "text": "About half. Of the paper load. On a Friday\nevening."
+  },
+  {
+   "start": 1087.831,
+   "end": 1091.635,
+   "text": "The report is just as firm about what\ndid not do it."
+  },
+  {
+   "start": 1091.335,
+   "end": 1095.289,
+   "text": "Neither the quality of workmanship\nnor the materials used"
+  },
+  {
+   "start": 1094.689,
+   "end": 1099.598,
+   "text": "in the walkway system played a significant role\nin initiating the collapse."
+  },
+  {
+   "start": 1099.298,
+   "end": 1101.523,
+   "text": "And dancing did not do it."
+  },
+  {
+   "start": 1101.223,
+   "end": 1104.439,
+   "text": "Dynamic loads induced by walking or dancing"
+  },
+  {
+   "start": 1103.839,
+   "end": 1109.207,
+   "text": "on the walkways would not have been significant\nin comparison to the static loads."
+  },
+  {
+   "start": 1108.907,
+   "end": 1111.532,
+   "text": "That is the report's own conclusion,"
+  },
+  {
+   "start": 1110.932,
+   "end": 1115.033,
+   "text": "and it kills the story most people have heard\nabout this building."
+  },
+  {
+   "start": 1114.733,
+   "end": 1118.723,
+   "text": "The Bureau counted the people too, as carefully\nas it could."
+  },
+  {
+   "start": 1118.423,
+   "end": 1120.406,
+   "text": "It concluded that a total"
+  },
+  {
+   "start": 1119.806,
+   "end": 1124.78,
+   "text": "of sixty-three people represents a credible\nupper-bound combined occupancy"
+  },
+  {
+   "start": 1124.18,
+   "end": 1128.357,
+   "text": "of the second and fourth floor walkways\nat the time of collapse."
+  },
+  {
+   "start": 1128.057,
+   "end": 1130.3,
+   "text": "Sixty-three, at the outside,"
+  },
+  {
+   "start": 1129.7,
+   "end": 1133.533,
+   "text": "on two bridges specified for a hundred pounds\na square foot."
+  },
+  {
+   "start": 1133.233,
+   "end": 1136.619,
+   "text": "The failure appears to have begun at one\nconnection."
+  },
+  {
+   "start": 1136.319,
+   "end": 1140.845,
+   "text": "Observed distortions strongly suggest that it\nstarted at the east end"
+  },
+  {
+   "start": 1140.245,
+   "end": 1143.653,
+   "text": "of the middle box beam in the fourth floor\nwalkway."
+  },
+  {
+   "start": 1143.353,
+   "end": 1145.95,
+   "text": "It hardly matters which one it was."
+  },
+  {
+   "start": 1145.65,
+   "end": 1150.43,
+   "text": "Each of the six fourth floor connections\nhad a high probability of failure."
+  },
+  {
+   "start": 1150.13,
+   "end": 1153.377,
+   "text": "Each was a candidate for initiating the collapse."
+  },
+  {
+   "start": 1153.077,
+   "end": 1157.14,
+   "text": "And failure of any one of them would have led\nto complete collapse"
+  },
+  {
+   "start": 1156.54,
+   "end": 1158.275,
+   "text": "of the walkway system."
+  },
+  {
+   "start": 1157.975,
+   "end": 1163.173,
+   "text": "Here is the hinge of the whole case, and it\nis the strangest thing in the file."
+  },
+  {
+   "start": 1162.873,
+   "end": 1167.745,
+   "text": "Had the change never been made, the connections\nwould still have been illegal."
+  },
+  {
+   "start": 1167.445,
+   "end": 1171.689,
+   "text": "Sixty percent of code. But they would have held\nthat night."
+  },
+  {
+   "start": 1171.389,
+   "end": 1175.336,
+   "text": "The load actually on a second floor connection\nat the time"
+  },
+  {
+   "start": 1174.736,
+   "end": 1177.935,
+   "text": "of collapse was about eleven and a half kips,"
+  },
+  {
+   "start": 1177.335,
+   "end": 1180.905,
+   "text": "against a single rod capacity of twenty\nand a half."
+  },
+  {
+   "start": 1180.605,
+   "end": 1185.685,
+   "text": "An illegal building would have stayed up.\nThe change is what made it lethal."
+  },
+  {
+   "start": 1185.385,
+   "end": 1188.446,
+   "text": "There is an odder fact underneath that one."
+  },
+  {
+   "start": 1188.146,
+   "end": 1191.654,
+   "text": "Because of its greater dead load and design live\nload,"
+  },
+  {
+   "start": 1191.054,
+   "end": 1195.736,
+   "text": "the third floor walkway connection\nwould have had about fifty-three percent"
+  },
+  {
+   "start": 1195.136,
+   "end": 1197.523,
+   "text": "of the expected ultimate capacity."
+  },
+  {
+   "start": 1197.223,
+   "end": 1199.426,
+   "text": "Had the change not been made,"
+  },
+  {
+   "start": 1198.826,
+   "end": 1203.303,
+   "text": "the third floor walkway would have been the most\ncritical of the three."
+  },
+  {
+   "start": 1203.003,
+   "end": 1206.157,
+   "text": "The walkway that survived was the weakest one."
+  },
+  {
+   "start": 1205.857,
+   "end": 1210.869,
+   "text": "Redrawing the fourth floor detail is what moved\nthe failure to the fourth floor."
+  },
+  {
+   "start": 1210.569,
+   "end": 1213.723,
+   "text": "And the third walkway was never safe either."
+  },
+  {
+   "start": 1213.423,
+   "end": 1215.715,
+   "text": "It had, the Commission found,"
+  },
+  {
+   "start": 1215.115,
+   "end": 1219.131,
+   "text": "a high probability of failure during the life\nof the building."
+  },
+  {
+   "start": 1218.831,
+   "end": 1221.545,
+   "text": "With the change, the report says,"
+  },
+  {
+   "start": 1220.945,
+   "end": 1226.835,
+   "text": "the ultimate capacity of the walkways\nwas so significantly reduced that from the day"
+  },
+  {
+   "start": 1226.235,
+   "end": 1231.464,
+   "text": "of construction they had only minimal capacity\nto resist their own weight,"
+  },
+  {
+   "start": 1230.864,
+   "end": 1235.917,
+   "text": "and virtually no capacity to resist additional\nloads imposed by people."
+  },
+  {
+   "start": 1235.617,
+   "end": 1239.582,
+   "text": "From the day of construction. Not from the day\nof the dance."
+  },
+  {
+   "start": 1240.782,
+   "end": 1243.565,
+   "text": "No one was ever charged with a crime."
+  },
+  {
+   "start": 1243.265,
+   "end": 1244.928,
+   "text": "In December 1983,"
+  },
+  {
+   "start": 1244.328,
+   "end": 1248.753,
+   "text": "the county prosecutor and the United States\nAttorney announced"
+  },
+  {
+   "start": 1248.153,
+   "end": 1252.985,
+   "text": "that they had found insufficient evidence\nto convict anyone involved"
+  },
+  {
+   "start": 1252.385,
+   "end": 1256.167,
+   "text": "in the Hyatt construction with criminal\nnegligence,"
+  },
+  {
+   "start": 1255.567,
+   "end": 1258.772,
+   "text": "and that no criminal charges would be filed."
+  },
+  {
+   "start": 1258.472,
+   "end": 1259.775,
+   "text": "By that date,"
+  },
+  {
+   "start": 1259.175,
+   "end": 1263.548,
+   "text": "insurance companies had paid\nout over seventy-eight million dollars"
+  },
+  {
+   "start": 1262.948,
+   "end": 1267.585,
+   "text": "to settle civil lawsuits filed by many\nof the victims and their families,"
+  },
+  {
+   "start": 1266.985,
+   "end": 1270.636,
+   "text": "and no one had yet taken responsibility\nfor the collapse."
+  },
+  {
+   "start": 1270.336,
+   "end": 1273.815,
+   "text": "What happened instead came from a licensing board."
+  },
+  {
+   "start": 1273.515,
+   "end": 1277.333,
+   "text": "In February 1984, the Missouri Board\nfor Architects,"
+  },
+  {
+   "start": 1276.733,
+   "end": 1282.555,
+   "text": "Professional Engineers and Land Surveyors filed\na complaint seeking a determination"
+  },
+  {
+   "start": 1281.955,
+   "end": 1286.969,
+   "text": "that the certificates of registration of Daniel\nDuncan and Jack Gillum,"
+  },
+  {
+   "start": 1286.369,
+   "end": 1291.576,
+   "text": "and the certificate of authority of their firm,\nwere subject to discipline."
+  },
+  {
+   "start": 1291.276,
+   "end": 1294.712,
+   "text": "It went to the state's Administrative Hearing\nCommission,"
+  },
+  {
+   "start": 1294.112,
+   "end": 1297.542,
+   "text": "and the Commission conducted twenty-seven days\nof hearing."
+  },
+  {
+   "start": 1297.242,
+   "end": 1300.953,
+   "text": "Its decision runs four hundred and forty-two\npages."
+  },
+  {
+   "start": 1300.653,
+   "end": 1303.452,
+   "text": "Ninety-eight of findings of fact,"
+  },
+  {
+   "start": 1302.852,
+   "end": 1306.795,
+   "text": "three hundred and twenty-two of conclusions\nof law,"
+  },
+  {
+   "start": 1306.195,
+   "end": 1311.981,
+   "text": "a hundred and eighty numbered findings —\nof which the engineers challenged five."
+  },
+  {
+   "start": 1311.681,
+   "end": 1315.903,
+   "text": "It was filed on the fifteenth of November, 1985."
+  },
+  {
+   "start": 1315.603,
+   "end": 1320.16,
+   "text": "The project engineer was found guilty of gross\nnegligence in the preparation"
+  },
+  {
+   "start": 1319.56,
+   "end": 1322.254,
+   "text": "and completion of a structural drawing,"
+  },
+  {
+   "start": 1321.654,
+   "end": 1325.259,
+   "text": "and in failing to review shop drawings\nof the Hyatt project."
+  },
+  {
+   "start": 1324.959,
+   "end": 1328.839,
+   "text": "He was further found guilty of misconduct\nin misrepresenting"
+  },
+  {
+   "start": 1328.239,
+   "end": 1333.232,
+   "text": "to the architects the safety of a connection\nwhen he was ignorant of that safety,"
+  },
+  {
+   "start": 1332.632,
+   "end": 1336.767,
+   "text": "due to a failure to perform the engineering tests\nand calculations"
+  },
+  {
+   "start": 1336.167,
+   "end": 1338.376,
+   "text": "that would have determined it."
+  },
+  {
+   "start": 1338.076,
+   "end": 1343.072,
+   "text": "The senior engineer was found vicariously liable\nand responsible for the acts"
+  },
+  {
+   "start": 1342.472,
+   "end": 1345.303,
+   "text": "and omissions of the project engineer —"
+  },
+  {
+   "start": 1344.703,
+   "end": 1349.182,
+   "text": "a liability he assumed by affixing\nhis professional engineering seal"
+  },
+  {
+   "start": 1348.582,
+   "end": 1350.704,
+   "text": "to the structural drawings."
+  },
+  {
+   "start": 1350.404,
+   "end": 1354.591,
+   "text": "He was further found grossly negligent in failing\nto review,"
+  },
+  {
+   "start": 1353.991,
+   "end": 1356.954,
+   "text": "or to assure that somebody had reviewed,"
+  },
+  {
+   "start": 1356.354,
+   "end": 1359.503,
+   "text": "that drawing before affixing his seal to it."
+  },
+  {
+   "start": 1359.203,
+   "end": 1363.474,
+   "text": "And he was found to have engaged in unprofessional\nconduct,"
+  },
+  {
+   "start": 1362.874,
+   "end": 1368.534,
+   "text": "in failing and refusing to take responsibility\nfor the entire engineering project."
+  },
+  {
+   "start": 1368.234,
+   "end": 1372.828,
+   "text": "His answer is in the record, in a footnote,\nunder cross-examination."
+  },
+  {
+   "start": 1372.528,
+   "end": 1375.361,
+   "text": "Asked whether his seal made him responsible"
+  },
+  {
+   "start": 1374.761,
+   "end": 1379.31,
+   "text": "for shop drawings prepared under another\nengineer's direction, he answered:"
+  },
+  {
+   "start": 1378.71,
+   "end": 1382.606,
+   "text": "because the shop drawings that were prepared\nunder the direction"
+  },
+  {
+   "start": 1382.006,
+   "end": 1386.27,
+   "text": "of another engineer have to be the responsibility\nof the other engineer."
+  },
+  {
+   "start": 1385.97,
+   "end": 1390.352,
+   "text": "They were not prepared under my direction\nand therefore I cannot accept"
+  },
+  {
+   "start": 1389.752,
+   "end": 1393.312,
+   "text": "that responsibility. In essence, the court wrote,"
+  },
+  {
+   "start": 1392.712,
+   "end": 1397.399,
+   "text": "he placed the responsibility for the improper\ndesign of the connections"
+  },
+  {
+   "start": 1396.799,
+   "end": 1398.462,
+   "text": "on the fabricator,"
+  },
+  {
+   "start": 1397.862,
+   "end": 1402.423,
+   "text": "and took the position that the structural engineer\nwas entitled to rely"
+  },
+  {
+   "start": 1401.823,
+   "end": 1406.489,
+   "text": "on the fabricator's expertise. The answer\nto that is a statute."
+  },
+  {
+   "start": 1406.189,
+   "end": 1409.637,
+   "text": "By section three two seven point four one one,"
+  },
+  {
+   "start": 1409.037,
+   "end": 1414.066,
+   "text": "the owner of the seal is responsible for the whole\nengineering project"
+  },
+  {
+   "start": 1413.466,
+   "end": 1419.183,
+   "text": "when he places his seal on any plans — unless he\nexpressly disclaims responsibility,"
+  },
+  {
+   "start": 1418.583,
+   "end": 1421.65,
+   "text": "and specifies the documents he disclaims."
+  },
+  {
+   "start": 1421.35,
+   "end": 1425.191,
+   "text": "The responsibility for the structural integrity\nand safety"
+  },
+  {
+   "start": 1424.591,
+   "end": 1428.109,
+   "text": "of the walkway connections was the project\nengineer's,"
+  },
+  {
+   "start": 1427.509,
+   "end": 1430.449,
+   "text": "and that responsibility was non-delegable."
+  },
+  {
+   "start": 1430.149,
+   "end": 1434.122,
+   "text": "Reliance upon others to perform that duty,\nthe court held,"
+  },
+  {
+   "start": 1433.522,
+   "end": 1436.926,
+   "text": "serves as no justification for indifference to it."
+  },
+  {
+   "start": 1436.626,
+   "end": 1440.606,
+   "text": "The administrative law judge put the same idea\nin one line:"
+  },
+  {
+   "start": 1440.006,
+   "end": 1443.42,
+   "text": "while the engineer may properly delegate the work"
+  },
+  {
+   "start": 1442.82,
+   "end": 1448.093,
+   "text": "of performing engineering design functions, he\ncannot delegate the responsibility."
+  },
+  {
+   "start": 1447.793,
+   "end": 1452.128,
+   "text": "Gross negligence had never been defined\nin a Missouri licensing case"
+  },
+  {
+   "start": 1451.528,
+   "end": 1452.991,
+   "text": "before this one."
+  },
+  {
+   "start": 1452.691,
+   "end": 1456.425,
+   "text": "The Commission defined it as an act or course\nof conduct"
+  },
+  {
+   "start": 1455.825,
+   "end": 1460.257,
+   "text": "which demonstrates a conscious indifference\nto a professional duty."
+  },
+  {
+   "start": 1459.957,
+   "end": 1463.285,
+   "text": "The structural engineer's duty, the court wrote,"
+  },
+  {
+   "start": 1462.685,
+   "end": 1465.493,
+   "text": "is to determine that the plans he designs"
+  },
+  {
+   "start": 1464.893,
+   "end": 1467.956,
+   "text": "or approves will provide structural safety,"
+  },
+  {
+   "start": 1467.356,
+   "end": 1471.052,
+   "text": "because if they do not a strong probability\nof harm exists."
+  },
+  {
+   "start": 1470.752,
+   "end": 1474.092,
+   "text": "Indifference to the duty is indifference\nto the harm."
+  },
+  {
+   "start": 1473.792,
+   "end": 1477.829,
+   "text": "And then the finding that separates\nthis from a disaster story."
+  },
+  {
+   "start": 1477.529,
+   "end": 1480.358,
+   "text": "The discipline was not for the deaths."
+  },
+  {
+   "start": 1480.058,
+   "end": 1482.757,
+   "text": "That breach occurred, the court held,"
+  },
+  {
+   "start": 1482.157,
+   "end": 1486.412,
+   "text": "at the latest when their design was incorporated\ninto the building"
+  },
+  {
+   "start": 1485.812,
+   "end": 1487.581,
+   "text": "with their approval —"
+  },
+  {
+   "start": 1486.981,
+   "end": 1488.749,
+   "text": "and they were subject"
+  },
+  {
+   "start": 1488.149,
+   "end": 1492.222,
+   "text": "to discipline whether or not any collapse\nsubsequently occurred."
+  },
+  {
+   "start": 1491.922,
+   "end": 1494.519,
+   "text": "It was not any single act, either."
+  },
+  {
+   "start": 1494.219,
+   "end": 1498.714,
+   "text": "The Commission's own footnote says it is only\nafter a complete analysis"
+  },
+  {
+   "start": 1498.114,
+   "end": 1502.245,
+   "text": "of their overall performance within the system\nthat any judgment"
+  },
+  {
+   "start": 1501.645,
+   "end": 1503.735,
+   "text": "of their conduct can be made."
+  },
+  {
+   "start": 1503.435,
+   "end": 1505.078,
+   "text": "The court agreed:"
+  },
+  {
+   "start": 1504.478,
+   "end": 1508.205,
+   "text": "it is the combination of a series of acts\nand omissions"
+  },
+  {
+   "start": 1507.605,
+   "end": 1510.955,
+   "text": "which created the structurally unsound walkways."
+  },
+  {
+   "start": 1510.655,
+   "end": 1512.916,
+   "text": "And in a footnote of its own,"
+  },
+  {
+   "start": 1512.316,
+   "end": 1516.828,
+   "text": "the court concedes the thing that makes this worth\nthirty minutes."
+  },
+  {
+   "start": 1516.528,
+   "end": 1521.443,
+   "text": "The original inadequacies of the structural\ndrawings might not have been critical"
+  },
+  {
+   "start": 1520.843,
+   "end": 1524.419,
+   "text": "if a meaningful review of the shop drawings\nhad occurred."
+  },
+  {
+   "start": 1524.119,
+   "end": 1527.784,
+   "text": "Every person in that chain did something ordinary."
+  },
+  {
+   "start": 1527.484,
+   "end": 1530.592,
+   "text": "A drawing left a detail to the fabricator."
+  },
+  {
+   "start": 1530.292,
+   "end": 1533.26,
+   "text": "A fabricator solved a fabricating problem."
+  },
+  {
+   "start": 1532.96,
+   "end": 1537.415,
+   "text": "An engineer answered a question the way engineers\nanswer questions."
+  },
+  {
+   "start": 1537.115,
+   "end": 1539.433,
+   "text": "Three parties stamped a drawing."
+  },
+  {
+   "start": 1539.133,
+   "end": 1543.17,
+   "text": "Nothing in the record says that any of them wanted\na building to fall."
+  },
+  {
+   "start": 1542.87,
+   "end": 1545.746,
+   "text": "The Board revoked all three certificates."
+  },
+  {
+   "start": 1545.446,
+   "end": 1550.172,
+   "text": "It carried out the punishment on the twenty-second\nof January, 1986,"
+  },
+  {
+   "start": 1549.572,
+   "end": 1553.074,
+   "text": "four and a half years after the walkway collapse,"
+  },
+  {
+   "start": 1552.474,
+   "end": 1556.977,
+   "text": "and the two Hyatt engineers became the first\nto lose their licenses"
+  },
+  {
+   "start": 1556.377,
+   "end": 1559.675,
+   "text": "for gross negligence. They appealed."
+  },
+  {
+   "start": 1559.375,
+   "end": 1562.279,
+   "text": "On the twenty-sixth of January, 1988,"
+  },
+  {
+   "start": 1561.679,
+   "end": 1565.454,
+   "text": "the Missouri Court of Appeals reversed one finding\n—"
+  },
+  {
+   "start": 1564.854,
+   "end": 1569.245,
+   "text": "a charge of misconduct arising from the atrium\ndesign review,"
+  },
+  {
+   "start": 1568.645,
+   "end": 1571.994,
+   "text": "which had not been pleaded in the complaint —"
+  },
+  {
+   "start": 1571.394,
+   "end": 1575.838,
+   "text": "and in all other respects affirmed the order\nof the Commission"
+  },
+  {
+   "start": 1575.238,
+   "end": 1580.29,
+   "text": "and the discipline imposed by the Board.\nThe revocations stood."
+  },
+  {
+   "start": 1579.99,
+   "end": 1582.54,
+   "text": "The profession had its own turn."
+  },
+  {
+   "start": 1582.24,
+   "end": 1587.721,
+   "text": "The American Society of Civil Engineers\nhad rewritten its code of ethics in 1976,"
+  },
+  {
+   "start": 1587.121,
+   "end": 1592.541,
+   "text": "and its first fundamental canon read: engineers\nshall hold paramount the safety,"
+  },
+  {
+   "start": 1591.941,
+   "end": 1597.422,
+   "text": "health and welfare of the public\nin the performance of their professional duties."
+  },
+  {
+   "start": 1597.122,
+   "end": 1600.508,
+   "text": "The Hyatt was the first real test\nof that sentence."
+  },
+  {
+   "start": 1600.208,
+   "end": 1605.565,
+   "text": "The society's conduct committee heard the matter\nin confidence in the summer"
+  },
+  {
+   "start": 1604.965,
+   "end": 1608.283,
+   "text": "of 1986, and two of its members stood aside —"
+  },
+  {
+   "start": 1607.683,
+   "end": 1610.994,
+   "text": "the chair of the Missouri licensing board,"
+  },
+  {
+   "start": 1610.394,
+   "end": 1614.09,
+   "text": "and the man who had led the federal investigation."
+  },
+  {
+   "start": 1613.79,
+   "end": 1616.931,
+   "text": "The committee members concluded unanimously"
+  },
+  {
+   "start": 1616.331,
+   "end": 1621.263,
+   "text": "that the senior engineer should be expelled,\nwith no privilege ever to rejoin."
+  },
+  {
+   "start": 1620.963,
+   "end": 1626.414,
+   "text": "The board of direction did not do that. It voted\nto suspend him for three years."
+  },
+  {
+   "start": 1626.114,
+   "end": 1629.222,
+   "text": "He then relinquished his membership altogether."
+  },
+  {
+   "start": 1628.922,
+   "end": 1632.633,
+   "text": "The project engineer faced no ethics committee\nat all."
+  },
+  {
+   "start": 1632.531,
+   "end": 1639.331,
+   "text": "He had never been a member of any national\nsociety. Twenty point three, as drawn."
+  },
+  {
+   "start": 1639.031,
+   "end": 1644.157,
+   "text": "Forty point seven, as built. Sixty-eight,\nas the code required."
+  },
+  {
+   "start": 1643.857,
+   "end": 1647.476,
+   "text": "Eighteen point six, as the steel could actually\ngive."
+  },
+  {
+   "start": 1647.176,
+   "end": 1652.116,
+   "text": "Nothing on that walkway got weaker. One beam\nwas asked to carry two."
+  },
+  {
+   "start": 1651.816,
+   "end": 1654.413,
+   "text": "The three walkways were removed."
+  },
+  {
+   "start": 1654.113,
+   "end": 1659.58,
+   "text": "In their place stands a single span, supported\nnot by delicate, graceful rods,"
+  },
+  {
+   "start": 1658.98,
+   "end": 1661.911,
+   "text": "but standing on stout, sturdy columns."
+  },
+  {
+   "start": 1661.611,
+   "end": 1664.78,
+   "text": "That description was written in the year 2000,"
+  },
+  {
+   "start": 1664.18,
+   "end": 1667.041,
+   "text": "and this film has not been back to check it."
+  },
+  {
+   "start": 1666.741,
+   "end": 1671.753,
+   "text": "The record this film is built on ends with a court\nof appeals in January 1988."
+  },
+  {
+   "start": 1671.453,
+   "end": 1675.47,
+   "text": "What either engineer has done since, where they\nare,"
+  },
+  {
+   "start": 1674.87,
+   "end": 1679.749,
+   "text": "or what they think about it now is not in any\ndocument we retrieved,"
+  },
+  {
+   "start": 1679.149,
+   "end": 1681.62,
+   "text": "and this film does not guess."
+  },
+  {
+   "start": 1681.32,
+   "end": 1685.728,
+   "text": "One hundred and fourteen people went to a tea\ndance and did not come home."
+  },
+  {
+   "start": 1685.428,
+   "end": 1690.718,
+   "text": "The connection that failed was a rod, a washer,\na nut, and a hole through a beam."
+  },
+  {
+   "start": 1690.418,
+   "end": 1695.29,
+   "text": "A state board found that responsibility for it\ncould not be handed to anybody else."
+  }
+ ],
+ "graphics": [],
+ "figures": [
+  {
+   "start": 2.518,
+   "end": 5.518,
+   "kind": "lowerthird",
+   "primary": "AI-assisted visualization",
+   "secondary": "symbolic reconstruction, no real likenesses"
+  },
+  {
+   "start": 10.354,
+   "end": 13.354,
+   "kind": "kinetic",
+   "lines": [
+    "ONE LONG STEEL ROD",
+    "BECOMES TWO."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "BECOMES TWO"
+   ]
+  },
+  {
+   "start": 18.191,
+   "end": 21.191,
+   "kind": "kinetic",
+   "lines": [
+    "ON THE DRAWING,",
+    "IT LOOKS LIKE THE SAME THING."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "THE SAME THING"
+   ]
+  },
+  {
+   "start": 27.937,
+   "end": 30.937,
+   "kind": "kinetic",
+   "lines": [
+    "NOTHING GOT WEAKER.",
+    "IT WAS ASKED TO CARRY TWICE AS MUCH."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "TWICE AS MUCH"
+   ]
+  },
+  {
+   "start": 42.578,
+   "end": 48.578,
+   "kind": "lowerthird",
+   "primary": "HYATT REGENCY HOTEL, KANSAS CITY",
+   "secondary": "In service approximately one year. The atrium is about 117 ft by 145 ft in plan and 50 ft high."
+  },
+  {
+   "start": 57.403,
+   "end": 63.403,
+   "kind": "stat",
+   "value": 3,
+   "label": "Suspended walkways spanning the atrium — at the second, third and fourth floor levels"
+  },
+  {
+   "start": 72.228,
+   "end": 78.228,
+   "kind": "lowerthird",
+   "primary": "THE STACK",
+   "secondary": "The second floor walkway hung from the fourth floor walkway directly above it. The third was offset, on its own rods from the roof framing."
+  },
+  {
+   "start": 87.053,
+   "end": 93.053,
+   "kind": "kinetic",
+   "lines": [
+    "THE WHOLE QUESTION",
+    "IS WHAT HOLDS THE ROD."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "WHAT HOLDS THE ROD"
+   ]
+  },
+  {
+   "start": 101.878,
+   "end": 107.878,
+   "kind": "lowerthird",
+   "primary": "THE BOX BEAM",
+   "secondary": "Two 8-inch steel channels laid toe to toe and joined by continuous longitudinal fillet welds. Not a solid section."
+  },
+  {
+   "start": 116.703,
+   "end": 122.703,
+   "kind": "quote",
+   "quote": "As originally designed the fourth and second floor walkways were to be supported by what is referred to as a 'one rod' design.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988) — the court's description of the original detail"
+  },
+  {
+   "start": 131.528,
+   "end": 137.528,
+   "kind": "numberticker",
+   "value": 6,
+   "label": "Hanger rods — three down each side of the atrium, about thirty feet of threaded steel apiece",
+   "group": false
+  },
+  {
+   "start": 146.353,
+   "end": 152.353,
+   "kind": "quote",
+   "quote": "The project design criteria specify a design live load of 100 psf (4.8 kPa) for hotel corridors and lobby areas. This is interpreted by NBS to include the walkways",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 161.178,
+   "end": 167.178,
+   "kind": "numberticker",
+   "value": 20.3,
+   "label": "Design load at EACH connection under the one-rod arrangement — NBS Conclusion 6(a)",
+   "decimals": 1,
+   "suffix": " kips"
+  },
+  {
+   "start": 176.004,
+   "end": 182.004,
+   "kind": "quote",
+   "quote": "The AISC Specification for the Design, Fabrication and Erection of Structural Steel for Buildings forms the basis for the steel design provisions of the Kansas City Building Code.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 190.829,
+   "end": 196.829,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "Ultimate capacity the code expected of the one-rod connection — 1.67 × 20.3",
+     "value": 33.9
+    },
+    {
+     "label": "Mean ultimate capacity the one-rod connection actually had",
+     "value": 20.5
+    }
+   ]
+  },
+  {
+   "start": 205.654,
+   "end": 211.654,
+   "kind": "numberticker",
+   "value": 60,
+   "label": "Of the capacity expected under the AISC Specification — the ORIGINAL detail, before any change (NBS)",
+   "suffix": "%"
+  },
+  {
+   "start": 220.479,
+   "end": 226.479,
+   "kind": "kinetic",
+   "lines": [
+    "THE DETAIL WAS ALREADY ILLEGAL",
+    "BEFORE ANYBODY CHANGED IT."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "ALREADY ILLEGAL"
+   ]
+  },
+  {
+   "start": 235.304,
+   "end": 241.304,
+   "kind": "quote",
+   "quote": "The hanger rods and the box beam-hanger rod connections shown on the structural drawings did not meet the design specifications of the Kansas City Building Code.",
+   "attribution": "Administrative Hearing Commission, quoted at 744 S.W.2d 524 — not contested on appeal"
+  },
+  {
+   "start": 250.129,
+   "end": 256.129,
+   "kind": "quote",
+   "quote": "Efforts to obtain copies of the structural design calculations were unsuccessful",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 264.954,
+   "end": 270.954,
+   "kind": "lowerthird",
+   "primary": "SPECIAL, AND NON-REDUNDANT",
+   "secondary": "The Commission found the box beam–hanger rod connections to be special connections. All connections are the responsibility of the structural engineer."
+  },
+  {
+   "start": 279.779,
+   "end": 285.779,
+   "kind": "quote",
+   "quote": "A 'non-redundant' connection which fails will cause collapse of the structure. The box beam-hanger rod connections were 'non-redundant.'",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 294.604,
+   "end": 300.604,
+   "kind": "lowerthird",
+   "primary": "THE CONNECTION, ASSEMBLED",
+   "secondary": "A rod. A hole through the box beam. A washer. A nut. Each beam sat on its own nut and put only its own share into the steel."
+  },
+  {
+   "start": 319.853,
+   "end": 325.853,
+   "kind": "lowerthird",
+   "primary": "FAST-TRACK",
+   "secondary": "The building went up while the drawings were still being drawn."
+  },
+  {
+   "start": 336.526,
+   "end": 342.526,
+   "kind": "quote",
+   "quote": "The steel fabricator on the Hyatt project, Havens Steel Company, had engineers capable of designing simple, complex, or special connections.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 353.198,
+   "end": 359.198,
+   "kind": "quote",
+   "quote": "Because of certain fabricating problems Havens proposed to Duncan the use of a 'double rod' system to suspend the second and fourth floor walkways.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 369.87,
+   "end": 375.87,
+   "kind": "mechanism",
+   "mechanism": "faultsplit"
+  },
+  {
+   "start": 386.543,
+   "end": 392.543,
+   "kind": "quote",
+   "quote": "Under this arrangement all of the second floor walkway load was first transferred to the fourth floor box beams, where both that load and the fourth floor walkway load were transmitted through the box beam-hanger rod connections to the ceiling hanger rods.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 403.215,
+   "end": 409.215,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "Second floor connection — unchanged by the redraw",
+     "value": 20.3
+    },
+    {
+     "label": "Fourth floor connection — as built",
+     "value": 40.7
+    }
+   ]
+  },
+  {
+   "start": 419.888,
+   "end": 425.888,
+   "kind": "quote",
+   "quote": "The change in hanger rod arrangement from a continuous rod to interrupted rods essentially doubled the load to be transferred by the fourth floor box beam-hanger rod connections",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 6"
+  },
+  {
+   "start": 436.56,
+   "end": 442.56,
+   "kind": "quote",
+   "quote": "The effect of this change was to double the load on the fourth floor walkway and the box beam-hanger rod connections on that walkway.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 453.232,
+   "end": 459.232,
+   "kind": "kinetic",
+   "lines": [
+    "NO STEEL WAS REMOVED.",
+    "NO STEEL WAS THINNED."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NO STEEL"
+   ]
+  },
+  {
+   "start": 469.905,
+   "end": 475.905,
+   "kind": "quote",
+   "quote": "There was evidence that one of the architects contacted Duncan to verify that the double rod arrangement was structurally sound and was advised by Duncan that it was.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 486.577,
+   "end": 492.577,
+   "kind": "quote",
+   "quote": "He called to Duncan's attention questions concerning the strength of the rods and the change from one rod to two. Duncan stated to the technician that the change to two rods was 'basically the same as the one rod concept.'",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 503.249,
+   "end": 509.249,
+   "kind": "stat",
+   "value": 6,
+   "label": "Separate occasions on which the project engineer was asked about the implications of the change — the licensing board's investigation, reported in ASCE's journal"
+  },
+  {
+   "start": 519.922,
+   "end": 525.922,
+   "kind": "quote",
+   "quote": "Certain information concerning loads and other aspects of the box beam-hanger rod connections which appeared on Duncan's preliminary sketches was not included on the final structural drawings sent to the fabricator.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 536.594,
+   "end": 542.594,
+   "kind": "quote",
+   "quote": "The Commission found that the structural drawings (S405.1 Secs. 10 and 11) did not communicate to the fabricator that it was to design the box beam-hanger rod connection, and did communicate to the fabricator that those connections had been designed by the engineer.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 553.267,
+   "end": 559.267,
+   "kind": "quote",
+   "quote": "Duncan testified that he intended for the fabricator to design the connections. Havens prepared its shop drawings on the basis that the connections shown on the design drawings had been designed by the structural engineer.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 569.939,
+   "end": 575.939,
+   "kind": "kinetic",
+   "lines": [
+    "THREE STAMPS.",
+    "THE DRAWING DID NOT CHANGE."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "DID NOT CHANGE"
+   ]
+  },
+  {
+   "start": 586.611,
+   "end": 592.611,
+   "kind": "quote",
+   "quote": "The Commission found, and appellants do not dispute, that its own internal procedures called for a detailed check of all special connections.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 603.284,
+   "end": 609.284,
+   "kind": "quote",
+   "quote": "Under the contract, and under the statute, review and approval of the shop drawings is an engineering function.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 628.337,
+   "end": 634.337,
+   "kind": "lowerthird",
+   "primary": "OCTOBER 1979",
+   "secondary": "With the hotel still going up, the atrium roof collapsed. The investigation established that the cause was poor construction workmanship."
+  },
+  {
+   "start": 642.772,
+   "end": 648.772,
+   "kind": "quote",
+   "quote": "In their report to the architects, appellants advised 'we then checked the suspended bridges and found them to be satisfactory.'",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 657.206,
+   "end": 663.206,
+   "kind": "quote",
+   "quote": "Appellants did not do a complete check of the design of all steel in the atrium nor a complete check of the suspended bridges.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 671.64,
+   "end": 677.64,
+   "kind": "kinetic",
+   "lines": [
+    "THE SECOND CHANCE",
+    "CAME AFTER THE CHANGE."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "AFTER THE CHANGE"
+   ]
+  },
+  {
+   "start": 686.074,
+   "end": 692.074,
+   "kind": "quote",
+   "quote": "With this change in hanger rod arrangement, the ultimate capacity of the walkways was so significantly reduced that, from the day of construction, they had only minimal capacity to resist their own weight and had virtually no capacity to resist additional loads imposed by people.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 700.509,
+   "end": 706.509,
+   "kind": "lowerthird",
+   "primary": "FRIDAY, 17 JULY 1981",
+   "secondary": "Kansas City is hot. The hotel has been in service about a year."
+  },
+  {
+   "start": 714.943,
+   "end": 720.943,
+   "kind": "quote",
+   "quote": "Between 1,500 and 2,000 area residents chose to escape the heat at the Hyatt Regency Hotel's tea dance, a weekly event featuring big band music and a dance contest.",
+   "attribution": "Pfatteicher, “‘The Hyatt Horror’”, ASCE Journal of Performance of Constructed Facilities 14(2), May 2000"
+  },
+  {
+   "start": 729.378,
+   "end": 735.378,
+   "kind": "casetimeline_c",
+   "events": [
+    {
+     "year": "7:00 PM",
+     "text": "Crowd in atrium area is estimated at 1500 to 2000"
+    },
+    {
+     "year": "7:04 PM",
+     "text": "Band returns from break and begins to play for dance contest"
+    },
+    {
+     "year": "7:05 PM",
+     "text": "Second and fourth floor walkways collapse"
+    }
+   ]
+  },
+  {
+   "start": 743.812,
+   "end": 749.812,
+   "kind": "kinetic",
+   "lines": [
+    "NO SECOND PATH.",
+    "NO BEND. NO SAG. NO WARNING."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NO SECOND PATH"
+   ]
+  },
+  {
+   "start": 758.246,
+   "end": 764.246,
+   "kind": "quote",
+   "quote": "Thus, failure of any one connection would have led to complete collapse of the walkway system.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 772.68,
+   "end": 778.68,
+   "kind": "quote",
+   "quote": "In the collapse, the second and fourth floor walkways fell to the atrium floor, with the fourth floor walkway coming to rest on top of the lower walkway.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 787.115,
+   "end": 793.115,
+   "kind": "quote",
+   "quote": "Most of those killed or injured were either on the first floor level of the atrium or on the second floor walkway. The third floor walkway was not involved in the collapse.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — executive summary"
+  },
+  {
+   "start": 801.549,
+   "end": 807.549,
+   "kind": "numberticker",
+   "value": 142000,
+   "label": "Pounds — the weight of the two walkways, the Missouri Court of Appeals' figure",
+   "suffix": " lb",
+   "group": true
+  },
+  {
+   "start": 815.984,
+   "end": 821.984,
+   "kind": "numberticker",
+   "value": 71,
+   "label": "Tons of steel and concrete, from four storeys up — our own arithmetic on the NBS dead-load measurement",
+   "suffix": " tons"
+  },
+  {
+   "start": 830.418,
+   "end": 836.418,
+   "kind": "casetimeline_c",
+   "events": [
+    {
+     "year": "7:08 PM",
+     "text": "First call for help"
+    },
+    {
+     "year": "7:22 PM",
+     "text": "A call goes out for cutting tools"
+    },
+    {
+     "year": "7:52 PM",
+     "text": "More than a hundred firefighters in the building"
+    },
+    {
+     "year": "3:15 AM",
+     "text": "The first walkway span is lifted"
+    },
+    {
+     "year": "4:30 AM",
+     "text": "Last survivor removed from debris"
+    }
+   ]
+  },
+  {
+   "start": 844.852,
+   "end": 850.852,
+   "kind": "lowerthird",
+   "primary": "NINE HOURS, TWENTY-FIVE MINUTES",
+   "secondary": "7:05 p.m. to 4:30 a.m. The federal report gives it eleven lines."
+  },
+  {
+   "start": 859.286,
+   "end": 865.286,
+   "kind": "numberticker",
+   "value": 114,
+   "label": "People died. At least 186 were injured — the Missouri Court of Appeals' figures"
+  },
+  {
+   "start": 873.721,
+   "end": 879.721,
+   "kind": "lowerthird",
+   "primary": "NO NAMES",
+   "secondary": "Neither the federal report nor the court names a single victim. This film names none of the dead."
+  },
+  {
+   "start": 899.923,
+   "end": 905.923,
+   "kind": "lowerthird",
+   "primary": "20 JULY 1981",
+   "secondary": "Three days after. Senator Eagleton's office contacts the National Bureau of Standards; on 22 July the Mayor formally requests it."
+  },
+  {
+   "start": 918.892,
+   "end": 924.892,
+   "kind": "quote",
+   "quote": "In the early phases of the investigation, NBS involvement was limited by court order to visual and photographic observations and measurements.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 937.861,
+   "end": 943.861,
+   "kind": "lowerthird",
+   "primary": "NBS BUILDING SCIENCE SERIES 143",
+   "secondary": "National Bureau of Standards, May 1982. Not NIST — the Bureau did not become the Institute until 1988."
+  },
+  {
+   "start": 956.83,
+   "end": 962.83,
+   "kind": "quote",
+   "quote": "Collapse of the walkways occurred under the action of loads that were substantially less than the design loads specified by the Kansas City Building Code.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 1"
+  },
+  {
+   "start": 975.799,
+   "end": 981.799,
+   "kind": "kinetic",
+   "lines": [
+    "LESS.",
+    "NOT MORE."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "LESS"
+   ]
+  },
+  {
+   "start": 994.768,
+   "end": 1000.768,
+   "kind": "quote",
+   "quote": "it is concluded that the most probable cause of failure was insufficient load capacity of the box beam-hanger rod connections.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 1013.737,
+   "end": 1019.737,
+   "kind": "quote",
+   "quote": "Two factors contributed to the collapse: inadequacy of the original design for the box beam-hanger rod connection, which was identical for all three walkways, and a change in hanger rod arrangement during construction that essentially doubled the load on the box beam-hanger rod connections at the fourth floor walkway.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 1032.706,
+   "end": 1038.706,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "Design load at the connection AS DRAWN (one rod)",
+     "value": 20.3
+    },
+    {
+     "label": "Design load at the fourth floor connection AS BUILT (two rods)",
+     "value": 40.7
+    }
+   ]
+  },
+  {
+   "start": 1051.675,
+   "end": 1057.675,
+   "kind": "quote",
+   "quote": "It would be expected that the ultimate load capacity of the resulting connection would be at least 1.67 times 40.7, or 68 kips (302 kN)",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+  },
+  {
+   "start": 1070.645,
+   "end": 1076.645,
+   "kind": "quote",
+   "quote": "Mean ultimate capacities of the fourth floor box beam-hanger rod connections were estimated on the basis of the NBS test series and these capacities ranged from 18.2 kips (81 kN) to 19.3 kips (86 kN) with an average value of 18.6 kips (83 kN)",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 2(c)"
+  },
+  {
+   "start": 1089.614,
+   "end": 1095.614,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "Ultimate load the code required of the connection",
+     "value": 68.0
+    },
+    {
+     "label": "Ultimate capacity the connection actually had",
+     "value": 18.6
+    }
+   ]
+  },
+  {
+   "start": 1108.583,
+   "end": 1114.583,
+   "kind": "numberticker",
+   "value": 21.4,
+   "label": "Maximum load on a fourth floor connection at the moment of collapse (NBS)",
+   "decimals": 1,
+   "suffix": " kips"
+  },
+  {
+   "start": 1127.552,
+   "end": 1133.552,
+   "kind": "kinetic",
+   "lines": [
+    "31% IS A LOAD RATIO.",
+    "THE STRENGTH RATIO IS ABOUT 27% — OURS, NOT THEIRS."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "A LOAD RATIO"
+   ]
+  },
+  {
+   "start": 1146.521,
+   "end": 1152.521,
+   "kind": "numberticker",
+   "value": 53,
+   "label": "The load on the night, measured against the 40.7 kip design load (NBS)",
+   "suffix": "%"
+  },
+  {
+   "start": 1165.49,
+   "end": 1171.49,
+   "kind": "quote",
+   "quote": "Neither the quality of workmanship nor the materials used in the walkway system played a significant role in initiating the collapse",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 9"
+  },
+  {
+   "start": 1184.459,
+   "end": 1190.459,
+   "kind": "quote",
+   "quote": "Dynamic loads induced by walking or dancing on the walkways would not have been significant in comparison to the static loads.",
+   "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 1(c)"
+  },
+  {
+   "start": 1203.428,
+   "end": 1209.428,
+   "kind": "stat",
+   "value": 63,
+   "label": "Credible upper-bound combined occupancy of the second and fourth floor walkways at the time of collapse, as NBS counted it"
+  },
+  {
+   "start": 1222.397,
+   "end": 1228.397,
+   "kind": "kinetic",
+   "lines": [
+    "WITHOUT THE CHANGE IT WAS STILL ILLEGAL.",
+    "WITHOUT THE CHANGE IT WOULD HAVE HELD."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "WOULD HAVE HELD"
+   ]
+  },
+  {
+   "start": 1252.126,
+   "end": 1258.126,
+   "kind": "kinetic",
+   "lines": [
+    "NO ONE WAS EVER CHARGED",
+    "WITH A CRIME."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NO ONE"
+   ]
+  },
+  {
+   "start": 1273.613,
+   "end": 1279.613,
+   "kind": "numberticker",
+   "value": 78000000,
+   "label": "Paid out by insurers to settle civil suits as at December 1983 — a figure at a date, not a final total",
+   "prefix": "$",
+   "group": true
+  },
+  {
+   "start": 1295.101,
+   "end": 1301.101,
+   "kind": "lowerthird",
+   "primary": "FEBRUARY 1984",
+   "secondary": "The Missouri Board for Architects, Professional Engineers and Land Surveyors files its complaint."
+  },
+  {
+   "start": 1316.589,
+   "end": 1322.589,
+   "kind": "stat",
+   "value": 27,
+   "label": "Days of hearing before the Missouri Administrative Hearing Commission"
+  },
+  {
+   "start": 1338.076,
+   "end": 1344.076,
+   "kind": "quote",
+   "quote": "Its 'Statement of the case, Findings of Fact, Conclusions of Law and Decision' are 442 pages in length.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 1359.564,
+   "end": 1365.564,
+   "kind": "lowerthird",
+   "primary": "15 NOVEMBER 1985",
+   "secondary": "98 pages of findings of fact, 322 of conclusions of law, 180 numbered findings. The appellants challenged five."
+  },
+  {
+   "start": 1381.051,
+   "end": 1387.051,
+   "kind": "lowerthird",
+   "primary": "THE FINDINGS — THE PROJECT ENGINEER",
+   "secondary": "Gross negligence in the preparation and completion of a structural drawing; misconduct in misrepresenting to the architects the safety of a connection."
+  },
+  {
+   "start": 1402.539,
+   "end": 1408.539,
+   "kind": "lowerthird",
+   "primary": "THE FINDINGS — THE SENIOR ENGINEER",
+   "secondary": "Vicariously liable for the acts and omissions of the project engineer; grossly negligent in failing to review, or assure review of, the drawing before affixing his seal."
+  },
+  {
+   "start": 1424.027,
+   "end": 1430.027,
+   "kind": "quote",
+   "quote": "By section 327.411.2 the owner of the seal is responsible for the 'whole ... engineering project' when he places his seal on 'any plans' unless he expressly disclaims responsibility and specifies the documents which he disclaims.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 1445.514,
+   "end": 1451.514,
+   "kind": "quote",
+   "quote": "The responsibility for the structural integrity and safety of the walkway connections was Duncan's and that responsibility was non-delegable.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 1467.002,
+   "end": 1473.002,
+   "kind": "quote",
+   "quote": "while the engineer may properly delegate the work of performing engineering design functions, he cannot delegate the responsibility",
+   "attribution": "the administrative law judge, quoted in Pfatteicher, “‘The Hyatt Horror’”, ASCE Journal of Performance of Constructed Facilities 14(2), May 2000"
+  },
+  {
+   "start": 1488.49,
+   "end": 1494.49,
+   "kind": "quote",
+   "quote": "The Commission defined the phrase in the licensing context as 'an act or course of conduct which demonstrates a conscious indifference to a professional duty.'",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988) — gross negligence, defined for the first time in a Missouri licensing case"
+  },
+  {
+   "start": 1509.977,
+   "end": 1515.977,
+   "kind": "quote",
+   "quote": "The structural engineer's duty is to determine that the structural plans which he designs or approves will provide structural safety because if they do not a strong probability of harm exists. Indifference to the duty is indifference to the harm.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 1531.465,
+   "end": 1537.465,
+   "kind": "quote",
+   "quote": "That breach occurred at the latest when their design was incorporated into the building with their approval and they were subject to discipline whether or not any collapse subsequently occurred.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+  },
+  {
+   "start": 1552.952,
+   "end": 1558.952,
+   "kind": "quote",
+   "quote": "the original inadequacies of the structural drawings might not have been critical if a meaningful review of the shop drawings had occurred.",
+   "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988) — footnote 7"
+  },
+  {
+   "start": 1574.44,
+   "end": 1580.44,
+   "kind": "casetimeline_c",
+   "events": [
+    {
+     "year": "22 Jan 1986",
+     "text": "The Board revokes all three certificates"
+    },
+    {
+     "year": "Summer 1986",
+     "text": "ASCE conduct committee: expel, with no privilege ever to rejoin"
+    },
+    {
+     "year": "26 Jan 1988",
+     "text": "One finding reversed; the revocations stand"
+    }
+   ]
+  },
+  {
+   "start": 1595.928,
+   "end": 1601.928,
+   "kind": "quote",
+   "quote": "Engineers shall hold paramount the safety, health and welfare of the public in the performance of their professional duties",
+   "attribution": "ASCE Code of Ethics, Fundamental Canon 1, as rewritten in 1976"
+  },
+  {
+   "start": 1617.415,
+   "end": 1623.415,
+   "kind": "lowerthird",
+   "primary": "WHAT THE PROFESSION DID",
+   "secondary": "The conduct committee recommended expulsion. The board of direction voted to suspend for three years; he then relinquished his membership. The project engineer faced no ethics committee at all."
+  },
+  {
+   "start": 1640.667,
+   "end": 1646.667,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "20.3 kips — as drawn",
+     "value": 20.3
+    },
+    {
+     "label": "40.7 kips — as built",
+     "value": 40.7
+    },
+    {
+     "label": "68 kips — as the code required",
+     "value": 68.0
+    },
+    {
+     "label": "18.6 kips — as the steel could actually give",
+     "value": 18.6
+    }
+   ]
+  },
+  {
+   "start": 1646.684,
+   "end": 1652.684,
+   "kind": "kinetic",
+   "lines": [
+    "NOTHING GOT WEAKER.",
+    "ONE BEAM WAS ASKED TO CARRY TWO."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "ASKED TO CARRY TWO"
+   ]
+  },
+  {
+   "start": 1652.7,
+   "end": 1658.7,
+   "kind": "quote",
+   "quote": "In their place stands a single span, supported not by delicate, graceful rods, but standing on stout, sturdy columns",
+   "attribution": "Pfatteicher, “‘The Hyatt Horror’”, ASCE Journal of Performance of Constructed Facilities 14(2), May 2000 — as at 2000"
+  },
+  {
+   "start": 1658.716,
+   "end": 1664.716,
+   "kind": "lowerthird",
+   "primary": "WHERE THE RECORD ENDS",
+   "secondary": "A court of appeals, January 1988. Nothing here is said about what either engineer has done since."
+  },
+  {
+   "start": 1664.733,
+   "end": 1670.733,
+   "kind": "numberticker",
+   "value": 114,
+   "label": "People went to a tea dance and did not come home"
+  },
+  {
+   "start": 1670.749,
+   "end": 1676.749,
+   "kind": "lowerthird",
+   "primary": "THE CONNECTION THAT FAILED",
+   "secondary": "A rod, a washer, a nut, and a hole through a welded steel beam."
+  },
+  {
+   "start": 1676.765,
+   "end": 1682.765,
+   "kind": "kinetic",
+   "lines": [
+    "THE RESPONSIBILITY",
+    "WAS NON-DELEGABLE."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NON-DELEGABLE"
+   ]
+  },
+  {
+   "start": 1682.782,
+   "end": 1688.782,
+   "kind": "lowerthird",
+   "primary": "AI-assisted visualization",
+   "secondary": "symbolic reconstruction, no real likenesses"
+  }
+ ],
+ "overlays": [],
+ "leadSeconds": 0.0,
+ "openingVariant": "overlay"
+}

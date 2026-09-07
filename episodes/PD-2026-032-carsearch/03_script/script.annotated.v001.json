@@ -1,0 +1,374 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-032-carsearch",
+  "revision": "v001",
+  "language": "en",
+  "thesis": "For a hundred years police have been able to search your car without a warrant on probable cause (the automobile exception, Carroll 1925) — but that power stops at the car and cannot cross into the protected ground around your home (curtilage, Collins 2018).",
+  "viewer_promise": "You will know exactly when police can search your car, how far that search can reach, and the one place — the ground against your home — where even your car is still protected.",
+  "chapters": [
+    {
+      "chapter_id": "hook",
+      "title": "Hook",
+      "function": "cold_open_tease",
+      "span_ids": [
+        "SPN-0001"
+      ]
+    },
+    {
+      "chapter_id": "opening",
+      "title": "Opening",
+      "function": "thesis_and_promise",
+      "span_ids": [
+        "SPN-0002"
+      ]
+    },
+    {
+      "chapter_id": "act1",
+      "title": "The Hundred-Year Rule",
+      "function": "origin",
+      "span_ids": [
+        "SPN-0003",
+        "SPN-0004",
+        "SPN-0005",
+        "SPN-0006",
+        "SPN-0007"
+      ]
+    },
+    {
+      "chapter_id": "act2",
+      "title": "What Probable Cause Means",
+      "function": "mechanism",
+      "span_ids": [
+        "SPN-0008",
+        "SPN-0009",
+        "SPN-0010",
+        "SPN-0011",
+        "SPN-0012"
+      ]
+    },
+    {
+      "chapter_id": "act3",
+      "title": "The Motorcycle Under the Tarp",
+      "function": "turn_and_payoff",
+      "span_ids": [
+        "SPN-0013",
+        "SPN-0014",
+        "SPN-0015",
+        "SPN-0016",
+        "SPN-0017"
+      ]
+    },
+    {
+      "chapter_id": "act4",
+      "title": "Where the Line Leaves You",
+      "function": "map_and_limits",
+      "span_ids": [
+        "SPN-0018",
+        "SPN-0019",
+        "SPN-0020",
+        "SPN-0021"
+      ]
+    },
+    {
+      "chapter_id": "ending",
+      "title": "Ending",
+      "function": "payoff_and_cta",
+      "span_ids": [
+        "SPN-0022"
+      ]
+    }
+  ],
+  "spans": [
+    {
+      "span_id": "SPN-0001",
+      "text": "The police can search your car without a warrant. They've been able to for a hundred years. But there's one place they still can't go — and in 2018 the Supreme Court drew that line at the very edge of your home.",
+      "claim_ids": [
+        "CLM-0001",
+        "CLM-0007"
+      ],
+      "narrative_function": "hook_cold_open",
+      "visual_intent": "8s cold-open, ~2s punch cuts of the strongest beats: night traffic stop with trunk open (S001), a quiet suburban driveway at dusk (S002), then the BrightLine motif (mode=draw->slam preview) snapping between a car and a house. Kinetic type slams in. HERO motion surface #1.",
+      "on_screen_text": [
+        "A HUNDRED YEARS",
+        "ONE LINE THEY CAN'T CROSS"
+      ]
+    },
+    {
+      "span_id": "SPN-0002",
+      "text": "You get pulled over. The officer walks up, glances through the glass, and says he's going to search the car. Can he? When? And where, exactly, does that power run out? The answer stretches from a Prohibition bootlegger on a Michigan highway to a motorcycle hidden under a tarp in a Virginia driveway — and it quietly decides how much privacy you actually keep the moment you turn the key.",
+      "claim_ids": [],
+      "narrative_function": "opening_thesis",
+      "visual_intent": "Gold BrandOpening lands (title 'Can the Police Search Your Car?'). Then CaseTimeline preview sweeping 1925->2018 over a stylized map (RouteMap/CaseTimeline).",
+      "on_screen_text": [
+        "CAN THE POLICE SEARCH YOUR CAR?"
+      ]
+    },
+    {
+      "span_id": "SPN-0003",
+      "text": "Start with the thing that surprises almost everyone. To search your house, the police usually need a warrant — a judge's signature, probable cause written down. That is the Fourth Amendment at full strength. Your car does not get that. And it hasn't since 1925.",
+      "claim_ids": [
+        "CLM-0001"
+      ],
+      "narrative_function": "setup_contrast",
+      "visual_intent": "Warrant doc + a house wrapped in a protective glow (S036 porch / CurtilageShield hint). Then timeline snaps to 1925 (CaseTimeline dot).",
+      "on_screen_text": [
+        "HOUSE = WARRANT",
+        "CAR = ?"
+      ]
+    },
+    {
+      "span_id": "SPN-0004",
+      "text": "It was Prohibition. A whole underground economy ran liquor across state lines by car. A man named George Carroll was one of those runners, on the highway between Detroit and Grand Rapids. Agents stopped his car, found nothing in plain sight — so they tore into it, ripped open the seat cushions, and behind the upholstery pulled out sixty-eight bottles of whisky and gin.",
+      "claim_ids": [
+        "CLM-0002"
+      ],
+      "narrative_function": "story_origin",
+      "visual_intent": "1920s night highway (S004/S027), tail car (S028), gloved hands tearing a seat (S006), one bottle to the light (S029). NumberTicker counts 0->68 (moving figure #1).",
+      "on_screen_text": [
+        "1925 · PROHIBITION",
+        "$68 BOTTLES",
+        "68"
+      ]
+    },
+    {
+      "span_id": "SPN-0005",
+      "text": "Carroll's lawyers had what sounds like a winning argument: no warrant, no search. The case climbed to the Supreme Court. And the Court drew a line — not around what the police wanted, but around the thing being searched.",
+      "claim_ids": [
+        "CLM-0001"
+      ],
+      "narrative_function": "escalation",
+      "visual_intent": "1925 courthouse (S008) / gavel on bench (S030). A HOUSE|CAR split forms (S009 concept).",
+      "on_screen_text": [
+        "CARROLL v. UNITED STATES · 1925"
+      ]
+    },
+    {
+      "span_id": "SPN-0006",
+      "text": "A house stays put — officers can guard it while they get a warrant. But a car is built to move; by the time a warrant is signed it can be in another state. Chief Justice Taft wrote you can't treat the two the same, 'because the vehicle can be quickly moved out of the locality or jurisdiction in which the warrant must be sought.' So the Court carved out what we now call the automobile exception: with probable cause, police can search your car — no warrant.",
+      "claim_ids": [
+        "CLM-0001"
+      ],
+      "narrative_function": "core_holding",
+      "visual_intent": "House holding still vs car accelerating off (S009). QuoteCard for the Taft line. Kinetic 'THE AUTOMOBILE EXCEPTION'; the house keeps its shield, the car's shield thins.",
+      "on_screen_text": [
+        "THE AUTOMOBILE EXCEPTION",
+        "\"quickly moved out of the jurisdiction\""
+      ]
+    },
+    {
+      "span_id": "SPN-0007",
+      "text": "This isn't a dusty relic — that 1925 rule is the engine under a huge share of roadside searches today. Not everyone agreed: Justice McReynolds dissented. But the majority held. And here's the phrase the whole story turns on: probable cause. Not a warrant, not certainty — but not a hunch either. Remember it.",
+      "claim_ids": [
+        "CLM-0001",
+        "CLM-0002"
+      ],
+      "narrative_function": "loop_open",
+      "visual_intent": "A single stop multiplies into a grid across a night map (PinDropMap). 'PROBABLE CAUSE' ignites and locks (open-loop marker).",
+      "on_screen_text": [
+        "PROBABLE CAUSE"
+      ]
+    },
+    {
+      "span_id": "SPN-0008",
+      "text": "Here's what movies get wrong. The automobile exception is not a blank check. Being pulled over is not, by itself, permission to search your car. And a hunch is not enough — probable cause means a fair, fact-based probability that there's contraband inside, something an officer can point to. A busted taillight does not get anyone into your trunk.",
+      "claim_ids": [
+        "CLM-0003"
+      ],
+      "narrative_function": "myth_correct",
+      "visual_intent": "A red 'NOT' stamps over a routine stop (S010/S026). ProbableCauseMeter (outcome=stall): a 'HUNCH' bar stalls below the PROBABLE CAUSE line. HighlightRing on a taillight.",
+      "on_screen_text": [
+        "NOT A BLANK CHECK",
+        "A HUNCH ISN'T ENOUGH"
+      ]
+    },
+    {
+      "span_id": "SPN-0009",
+      "text": "So what clears the bar? Something in plain view on the seat. An admission. A trained dog's alert. Facts that add up. And once there really is probable cause, the search can go much further than people expect — because its reach is defined by the thing they're looking for.",
+      "claim_ids": [
+        "CLM-0003",
+        "CLM-0004"
+      ],
+      "narrative_function": "mechanism",
+      "visual_intent": "ProbableCauseMeter (outcome=cross): evidence chips (PLAIN VIEW / K-9 ALERT / ADMISSION) push the fill across the line, which locks gold.",
+      "on_screen_text": [
+        "PLAIN VIEW",
+        "K-9 ALERT",
+        "ADMISSION"
+      ]
+    },
+    {
+      "span_id": "SPN-0010",
+      "text": "If the object could fit in the glovebox, they can open the glovebox. If it could be in the trunk, they can open the trunk. If it could be inside a zipped bag on the back seat, they can open the bag. Locked or loose — if that's a place the thing could be, it's fair game.",
+      "claim_ids": [
+        "CLM-0004"
+      ],
+      "narrative_function": "scope",
+      "visual_intent": "CarCutaway (mode=all): the car diagram lights zone by zone — GLOVEBOX, TRUNK, BACK SEAT, A ZIPPED BAG — with mask-revealed labels. Real b-roll of a hand pulling a bag (S032).",
+      "on_screen_text": [
+        "GLOVEBOX",
+        "TRUNK",
+        "ANY CONTAINER"
+      ]
+    },
+    {
+      "span_id": "SPN-0011",
+      "text": "But that same rule is your leash. The search has to fit the reason for it. Probable cause about a stolen fifty-inch television does not justify opening a tiny pill bottle — a TV can't hide there. The bigger the thing they chase, the fewer the places they can look. They don't even have to prove a separate emergency: drivable plus probable cause is enough.",
+      "claim_ids": [
+        "CLM-0004",
+        "CLM-0005"
+      ],
+      "narrative_function": "limit",
+      "visual_intent": "CarCutaway mode=big (only TRUNK+BACK SEAT glow) then mode=small (whole car). A checklist: readily-mobile / probable-cause -> permitted, the third 'emergency' box absent.",
+      "on_screen_text": [
+        "SCOPE = THE OBJECT",
+        "NO EXTRA EMERGENCY NEEDED"
+      ]
+    },
+    {
+      "span_id": "SPN-0012",
+      "text": "Step back and feel it. Your car — where you keep your bag, your phone, half your private life in motion — carries far thinner protection than your living room, for a reason written down before your grandparents were born. Which raises the only question left: if the car is this exposed, is there anywhere the police still cannot follow it?",
+      "claim_ids": [
+        "CLM-0001"
+      ],
+      "narrative_function": "rehook",
+      "visual_intent": "Aerial night highway, thousands of lit cars (S013). The BrightLine motif flickers at the edge — the loop tightens.",
+      "on_screen_text": [
+        "WHERE DOES IT STOP?"
+      ]
+    },
+    {
+      "span_id": "SPN-0013",
+      "text": "To find the line, go to Virginia — and a motorcycle that kept getting away. An officer had been outrun by the same distinctive orange-and-black bike, and he suspected it was stolen. One day he tracked it down. Not to a street. To a house — parked in the driveway, pulled up close to the home, with a tarp thrown over it.",
+      "claim_ids": [
+        "CLM-0006"
+      ],
+      "narrative_function": "story_turn",
+      "visual_intent": "Motorcycle blur past a patrol car (S014/S033). Map pin drops on a residential address (PinDropMap). The quiet house with a covered shape in the driveway (S015).",
+      "on_screen_text": [
+        "VIRGINIA",
+        "THE BIKE THAT GOT AWAY"
+      ]
+    },
+    {
+      "span_id": "SPN-0014",
+      "text": "So the officer walked up the driveway. He lifted the tarp. He ran the plate and the number — it came back stolen. Then he arrested the man staying there, Ryan Collins. And here's the whole ballgame: he had probable cause. If that motorcycle had been sitting on a public street, lifting the tarp is a clean, legal, automobile-exception search.",
+      "claim_ids": [
+        "CLM-0006"
+      ],
+      "narrative_function": "tension",
+      "visual_intent": "Footsteps up the driveway (S017), a hand peeling the tarp (S016/S035), 'STOLEN — CONFIRMED' chip. Replay the same act on a public curb with a green LEGAL check.",
+      "on_screen_text": [
+        "STOLEN — CONFIRMED",
+        "ON A STREET = LEGAL"
+      ]
+    },
+    {
+      "span_id": "SPN-0015",
+      "text": "So Virginia argued: same thing here. But think about what that asks for. To search a car at a stranger's public curb, an officer needs only probable cause. Virginia wanted that power to include walking onto private property — up the driveway, past where a home begins. The most exposed thing you own could become the key that unlocks the most protected place you have.",
+      "claim_ids": [
+        "CLM-0007"
+      ],
+      "narrative_function": "stakes",
+      "visual_intent": "The automobile-exception rule stretches off the street up the driveway. CarKeyLock: a car-shaped key turning in a lock set into a house door (HERO motion surface #2).",
+      "on_screen_text": [
+        "A CAR = A KEY TO YOUR HOME?"
+      ]
+    },
+    {
+      "span_id": "SPN-0016",
+      "text": "The Supreme Court said no. In 2018, by a vote of eight to one, the Court held that the car-search power does not reach onto the ground that belongs to your home. There's a word for that ground — the porch, the steps, the driveway against the walls: the curtilage. And curtilage gets the home's full protection.",
+      "claim_ids": [
+        "CLM-0007"
+      ],
+      "narrative_function": "payoff",
+      "visual_intent": "BrightLine mode=slam — the biggest hit, the hook's motif paid off. VoteTally lights 8 gold + 1 red -> '8–1'. CurtilageShield: the home's glow expands to wrap the driveway; 'CURTILAGE' mask-reveals. CaseTimeline dot at 2018.",
+      "on_screen_text": [
+        "THE COURT SAID NO",
+        "COLLINS v. VIRGINIA · 8–1",
+        "CURTILAGE"
+      ]
+    },
+    {
+      "span_id": "SPN-0017",
+      "text": "Justice Sotomayor put it in one line: 'The scope of the automobile exception extends no further than the automobile itself.' So both things are true — on the street that search is fine, but the instant the car is tucked into the ground hugging your house, the hundred-year exception runs out of road. Only Justice Alito dissented. The line held.",
+      "claim_ids": [
+        "CLM-0007"
+      ],
+      "narrative_function": "quote_resolve",
+      "visual_intent": "QuoteCard for the Sotomayor line, attributed; the car-search glow stops dead at the BrightLine. A warrant icon appears on the house side. A lone dissent card.",
+      "on_screen_text": [
+        "\"no further than the automobile itself\"",
+        "— Justice Sotomayor"
+      ]
+    },
+    {
+      "span_id": "SPN-0018",
+      "text": "So here's the actual map of your rights, the one almost nobody is handed. On a public street or a routine stop, your car can be searched without a warrant — but only with probable cause, and only as far as the thing they're looking for could be.",
+      "claim_ids": [
+        "CLM-0001",
+        "CLM-0003",
+        "CLM-0004"
+      ],
+      "narrative_function": "summary",
+      "visual_intent": "A clean summary diagram assembles: STREET -> probable-cause gate -> zoned car (CarCutaway recap). ActTitle 'YOUR RIGHTS ON THE ROAD'.",
+      "on_screen_text": [
+        "YOUR RIGHTS ON THE ROAD"
+      ]
+    },
+    {
+      "span_id": "SPN-0019",
+      "text": "Being arrested doesn't automatically open the car. In a case called Gant, the Court said once you're handcuffed and set away from the vehicle, officers generally can't search it just because they arrested you — not unless it's reasonable to think evidence of that offense is inside. And the protection can even follow you into a rental you're driving that isn't in your name.",
+      "claim_ids": [
+        "CLM-0008",
+        "CLM-0009"
+      ],
+      "narrative_function": "limits",
+      "visual_intent": "A person cuffed on a curb, away from a closed car (S020). A rental agreement with a name not listed, a shield settling over the car (S021/S038). CaseTimeline: 2009 Gant dot.",
+      "on_screen_text": [
+        "ARREST ≠ A BLANK CHECK",
+        "GANT · 2009"
+      ]
+    },
+    {
+      "span_id": "SPN-0020",
+      "text": "One honest gray area: for years the smell of marijuana alone was treated as probable cause. But the Supreme Court has never set a single nationwide rule, and in states that legalized it, several courts now say the odor by itself isn't enough. The honest answer is: it depends where you are.",
+      "claim_ids": [
+        "CLM-0010"
+      ],
+      "narrative_function": "caveat",
+      "visual_intent": "RegionHighlightMap (pattern=varied): a US map lights states in different colors under 'SMELL = PROBABLE CAUSE?' — deliberately non-uniform, an unresolving shimmer.",
+      "on_screen_text": [
+        "SMELL = PROBABLE CAUSE?",
+        "IT DEPENDS WHERE YOU ARE"
+      ]
+    },
+    {
+      "span_id": "SPN-0021",
+      "text": "So what does it mean next time you're pulled over? You don't have to be a lawyer. They need a real, articulable reason — not a mood — to search; the search has to match what they're after; and the ground pressed against your house is not the road. Your car trades privacy for mobility. The exception is broad — broader than most people believe — but it's not infinite. It stops, exactly, at the edge of your home.",
+      "claim_ids": [
+        "CLM-0003",
+        "CLM-0007"
+      ],
+      "narrative_function": "throughline",
+      "visual_intent": "A calm driver at a window (S022). The car and the home side by side with the BrightLine between them; slow push into the line — the film's resolving image (S023/S039).",
+      "on_screen_text": [
+        "A REASON, NOT A MOOD",
+        "IT STOPS AT YOUR HOME"
+      ]
+    },
+    {
+      "span_id": "SPN-0022",
+      "text": "If you drive, that line is yours — and most people never knew exactly where it falls. If knowing where your rights stop changed how you'll see the next traffic stop, hit like — it helps more drivers find this. And tell me in the comments: were you taught that police need a warrant to search your car? Because for a hundred years, they haven't.",
+      "claim_ids": [
+        "CLM-0001"
+      ],
+      "narrative_function": "cta_earn_like",
+      "visual_intent": "BrandEndcard; the BrightLine motif as the sign-off; like/subscribe cue. Teaser: a phone lock screen glows (S024).",
+      "on_screen_text": [
+        "THE LINE IS YOURS"
+      ]
+    }
+  ],
+  "estimated_duration_seconds": 690,
+  "qc_status": "pass"
+}

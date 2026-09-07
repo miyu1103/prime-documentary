@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-018-flashcrash",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-27T23:53:17+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-27T23:53:17+09:00",
+  "decided_by": "owner",
+  "notes": "Owner approved EP18 script/content explicitly ('全て承認するのでできるところまで進めて', 2026-06-27). Bound to annotated content_hash sha256:da6bd4ce14894561ce7d7b0f218b78ab827476b6ac55e176c8caacc2c563d79b — re-approval required if the script revision/hash changes (rules/12). R3: this content sign-off does NOT waive the required pre-publish dedicated legal/rights review. Causation lock holds (contributed, not caused).",
+  "conditions": [
+    "Compute durable source content_hash (sources currently sha256:pending) and finish fact_recheck before publish.",
+    "Dedicated R3 legal/rights review (exact revision/hash) required before publish_approved.",
+    "Maintain causation lock and no real-person likeness through production."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-018-flashcrash/03_script/script.annotated.v001.json"
+}

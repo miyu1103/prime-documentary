@@ -1,0 +1,1729 @@
+{
+  "schema_version": "1.0.0",
+  "note": "Shelf clips and generated plates that visual QC rejected. SCOPE OF THIS FILE CHANGED ON 2026-08-05. `blocked` is now HARD findings only -- the four kinds that can end the channel or harm a real person: (1) scraped or third-party copyrighted production footage (a y2mate rip, broadcast news carrying a chyron/watermark/branded mic, another production's burned-in subtitles or title cards, copyrighted characters); (2) a real identifiable minor on screen; (3) a real named person's identity captioned onto a different real person, including a generated plate presented AS a named real person; (4) legible personal data of a real private individual. `blocked` is the ONLY key any tool reads. Everything else -- legible generic document props, 'CITY COP' invented insignia, wrong-city police cruisers, foreign locations standing in for the US, foreign-language signage, stock-photo cliches, sci-fi imagery, register mismatches, ruins, restraint imagery and subject bans from an episode's own spec -- moved to `quality_deferred` by owner decision to ship. Those findings are correct and are kept verbatim; they simply no longer block, because the reject rate they imply is one the archive cannot sustain and the calendar was empty. A row with no `episodes` key is global; a row WITH one binds only for those slugs. SCOPE EXTENDED 2026-08-25, narrowly: `blocked` also takes (5) an asset that BREAKS THE BUILD -- one the pre-render or post-render gate refuses, so leaving it in the pool costs a 2.5-hour render every run. This is not a re-opening of the taste rejects demoted on 08-05; those were demoted because enforcing them emptied the calendar, and a build-breaking file costs the calendar rather than saving it. Rows of this kind carry hard_category cat5_build_breaking_asset and MUST be episode-scoped.",
+  "reviewed_by": "owner-standard visual QC, contact sheets runs/qc/ep51_new + runs/qc/ep52; plus runs/qc/*_shipped_frames_review.v001.json (EP51-EP61, 201 rejections) and runs/qc/burge_clip_verdicts.v001.json (172 rejections), re-read row by row and classified HARD/SOFT on 2026-08-05",
+  "blocked": [
+    {
+      "ids": [
+        "AR-the_bad_guys_2022_prison"
+      ],
+      "label": "copyrighted_animation_with_hud",
+      "reason": "a clip of a copyrighted animated feature with video-game health bars and a character name burned in; rights hazard, never footage",
+      "hard_category": "cat1_third_party_production_footage"
+    },
+    {
+      "ids": [
+        "AR-davidwoodamericantaliban"
+      ],
+      "label": "third_party_vlogger",
+      "reason": "a third-party YouTube vlogger talking to camera; not stock, not licensable",
+      "hard_category": "cat1_third_party_production_footage"
+    },
+    {
+      "ids": [
+        "AR-davidwoodr_kellyconverti"
+      ],
+      "label": "third_party_vlogger",
+      "reason": "a third-party YouTube vlogger talking to camera; not stock, not licensable",
+      "hard_category": "cat1_third_party_production_footage"
+    },
+    {
+      "ids": [
+        "AR-2019aug11_fbi_epsteins_d"
+      ],
+      "label": "broadcast_news_epstein",
+      "reason": "real Fox News broadcast with burned-in chyron and network logo, showing a real identifiable person from an unrelated story: rights risk and invariant 11",
+      "hard_category": "cat1_third_party_production_footage"
+    },
+    {
+      "ids": [
+        "AR-steve_bannon_and_prison"
+      ],
+      "label": "broadcast_news_bannon",
+      "reason": "real news footage with a broadcaster watermark showing a real identifiable person from an unrelated story: rights risk and invariant 11",
+      "hard_category": "cat1_third_party_production_footage"
+    },
+    {
+      "ids": [
+        "AR-2022_jan_26_vic_stasi_po",
+        "AR-y_2mate_so_do_the_pretty"
+      ],
+      "label": "scraped_third_party_production",
+      "reason": "scraped third-party video, not stock. The first is Rebel News footage with a branded stick microphone, a REBEL NEWS lanyard, a 'AVI YEMINI / REBEL REPORTER' chyron and a corner watermark, showing a real named reporter front-on. The second is a y2mate rip carrying ANOTHER production's burned-in subtitles and a full-screen '1970s NEW YORK' title card, which collided with PD's own captions on screen. Rights hazard plus invariant 11.",
+      "hard_category": "cat1_third_party_production_footage"
+    },
+    {
+      "ids": [
+        "AR-10643359",
+        "AR-10643401",
+        "AR-7924639",
+        "AR-6994429",
+        "AR-6994523",
+        "AR-8499734"
+      ],
+      "label": "real_identifiable_minor",
+      "reason": "real identifiable children in stock footage: two schoolgirls of roughly 14-17 front-on at stereo microscopes, and a girl of roughly 8-11 in bed lit by a phone screen. No PD film may put a real identifiable minor on screen; EP51 captioned the second one with a line about a father and his three dead daughters. Added 2026-08-05 from the burge clip verdicts: AR-6994429 is a boy of roughly ten at a front door with his face fully visible, AR-6994523 a girl of roughly eight opening a door, AR-8499734 three schoolchildren in a school corridor with faces sharp and front-facing.",
+      "hard_category": "cat2_real_identifiable_minor"
+    },
+    {
+      "ids": [
+        "AR-6125684"
+      ],
+      "label": "real_identifiable_prisoner",
+      "reason": "archive footage of a real, identifiable woman prisoner in an orange jumpsuit behind bars, forearm tattoo legible. A real person in custody, no release, no anonymisation. EP51 additionally bonded a named male expert's identification card to her.",
+      "hard_category": "cat3_named_person_identity_on_another_person"
+    },
+    {
+      "ids": [
+        "AF-BG-11522"
+      ],
+      "episodes": [
+        "burge"
+      ],
+      "label": "carried_false_identification_card",
+      "reason": "a young red-haired woman carrying a folder through a clinic corridor, over which EP55 placed a lower-third reading 'JON BURGE / Chicago Police - Area 2, South Side'. The clip is not the defect -- the card is -- but the clip is excluded from EP55 so the exact frame cannot recur while the card placement rule is decided.",
+      "hard_category": "cat3_named_person_identity_on_another_person"
+    },
+    {
+      "ids": [
+        "F003",
+        "P07"
+      ],
+      "episodes": [
+        "morton"
+      ],
+      "label": "named_real_person_likeness",
+      "reason": "EP52's own generated plates. F003 is a resolved front-on face at a courtroom bench under the caption 'His name is Michael Morton'; P07 is a resolved face carrying the lower-third 'Nina Morrison / Attorney, the Innocence Project'. Both are on the episode's forbidden-likeness list. Scoped to morton because F003 and P07 are per-episode plate numbers that name completely different pictures in centralpark, surfside, tekoh, burge, flowers, norfolk, postoffice and willingham.",
+      "hard_category": "cat3_named_person_identity_on_another_person"
+    },
+    {
+      "ids": [
+        "P14"
+      ],
+      "episodes": [
+        "norfolk"
+      ],
+      "label": "named_real_person_likeness",
+      "reason": "a resolved, front-on synthetic face at a press scrum carrying the lower-third 'Det. Robert Glenn Ford / Norfolk homicide, took over the questioning'. Ford is a real living named man on the forbidden-likeness list. P14 is a per-episode plate number used by seven other episodes for other pictures, so this is scoped, never global.",
+      "hard_category": "cat3_named_person_identity_on_another_person"
+    },
+    {
+      "ids": [
+        "P01",
+        "P03",
+        "P26"
+      ],
+      "label": "named_real_person_likeness",
+      "episodes": [
+        "willingham"
+      ],
+      "hard_category": "cat3_named_person_identity_on_another_person",
+      "reason": "EP51's own generated plates, each presented AS a real named person: P01 under 'for murdering his own children' reads as Cameron Todd Willingham; P26 carries the lower-third 'JOHNNY WEBB / Jailhouse informant'; P03 carries 'GERALD HURST / Cambridge-trained chemist'. A generated face captioned with a real person's name and role is the defect the owner named on 2026-08-05. Scoped: these plate numbers name different pictures in seven other episodes."
+    },
+    {
+      "ids": [
+        "AR-6980263"
+      ],
+      "episodes": [
+        "postoffice"
+      ],
+      "label": "carried_false_identification_card",
+      "reason": "a close-up of a stock actor's face over which EP56 placed the lower-third 'GARETH JENKINS / Fujitsu engineer, expert witness for the Post Office'. Jenkins is living, has been charged with nothing, and is on the design document's no-likeness list. The clip is innocent; the card is the defect. Excluded from EP56 so the frame cannot recur.",
+      "hard_category": "cat3_named_person_identity_on_another_person"
+    },
+    {
+      "ids": [
+        "AR-15069622"
+      ],
+      "label": "opens_on_black",
+      "reason": "a vintage CRT in a dark room whose first ~1.6s is near-black before the tube warms. It put a 1.6s black stretch into the EP56 postoffice master and the post-render gate failed it as flicker/gap; I extracted the frame at 197.5s and the picture is genuinely absent, with only the caption visible. The builder cuts a fixed window and cannot seek past dead head frames, so this is unusable in any episode, not only this one. KEPT BLOCKING 2026-08-05 THOUGH IT IS NOT ONE OF THE FOUR HARD CATEGORIES. It is not a visual-quality judgement at all: the file genuinely has no picture for its first ~1.6s, the builder cuts a fixed window and cannot seek past dead head frames, and the post-render gate fails the master as flicker/gap. Restoring it would cost a re-render, not a lower visual bar. Move it to quality_deferred if the owner wants the letter of the ship decision applied here too.",
+      "hard_category": "none_kept_for_a_mechanical_reason"
+    },
+    {
+      "ids": [
+        "AR-8419363",
+        "AF-BG-11511",
+        "AF-BG-11513",
+        "AF-BG-11514",
+        "AF-BG-11517"
+      ],
+      "label": "possible_minor_age_not_resolvable",
+      "hard_category": "cat2_real_identifiable_minor",
+      "reason": "Kept blocking on 2026-08-05 as the conservative call, not on a confident finding. AR-8419363 is a lone figure walking a school corridor in a 'VIRGINITY ROCKS' hoodie and a short skirt; the face is small and never resolves, so the subject cannot be aged from any frame and the reviewer's 'possibly a minor' cannot be ruled out. AF-BG-11511/11513/11514/11517 are the same chemotherapy patient -- shaved head, nasal cannula, hospital gown, face fully resolved front-on -- who reads anywhere between about fourteen and twenty. Five clips is a cheap price for not putting a real child on screen; if the owner ages them as adults, move this row to quality_deferred."
+    },
+    {
+      "ids": [
+        "AR-8061661",
+        "AR-8061662"
+      ],
+      "label": "named_private_individual_on_a_certificate",
+      "hard_category": "cat4_legible_personal_data_of_a_private_individual",
+      "reason": "A desk still-life whose framed certificate is legible on screen: 'THE INSTITUTE OF CONTINUING LEGAL EDUCATION / Certificate of Completion / Adam G. Zuwerink / The Probate and Estate Planning Certification Program / 2013'. That is a real private individual's name attached to his professional credential, readable in frame -- the same class as a bar number and name. Recorded 2026-08-05 from the burge clip verdicts."
+    },
+    {
+      "ids": [
+        "AR-10475365"
+      ],
+      "label": "carried_false_identification_card",
+      "episodes": [
+        "fieldtest"
+      ],
+      "hard_category": "cat3_named_person_identity_on_another_person",
+      "reason": "EP57 places the lower-third 'AMY ALBRITTON / Apartment manager, Frances Place, Monroe, Louisiana' over this clip, which shows a uniformed officer in profile and a tattooed man in inmate browns behind glass -- two unrelated real people, both faces fully resolved, neither of them Amy Albritton. Verified at full resolution on 2026-08-05 from runs/qc/shipped_frames/fieldtest/frames/001m30s_601__cut0017_p20.jpg. Same defect class as the JON BURGE card in EP55 and the GARETH JENKINS card in EP56. The clip is not the defect, the card is; the clip is excluded from EP57 so the exact frame cannot recur. NOTE FOR THE EDITOR: blocking the clip only moves the card -- the Albritton identification card itself still needs to be taken off any shot of a person."
+    },
+    {
+      "ids": [
+        "AR-9577270",
+        "AR-9586583"
+      ],
+      "label": "real_identifiable_minor",
+      "reason": "two clips of a real, identifiable child at prayer -- a child of roughly 8-11 at a rail with a woman, and a tight close-up of a boy of roughly 9-13 with a rosary at his forehead, his face filling the frame. Both reached the shipped EP54 flowers master at 18:30-18:38 and were found only when all 75 sheets were finally opened; the earlier review had opened 3. Licensed archive, so no rights issue -- this is the child. One of the four categories that stay blocked under the owner's 2026-08-06 ruling to compromise on visual quality and ship."
+    },
+    {
+      "ids": [
+        "AR-34088981",
+        "AR-37715200"
+      ],
+      "episodes": [
+        "morton"
+      ],
+      "label": "wrong_country_standing_in_for_texas",
+      "reason": "Government House in Baku with the Azerbaijani flag flying, and a fully legible 'Morning Kashmir' newspaper dated 21 May 2025, both used as the American justice system in a Texas story whose last event is 2011. Named by morton's own episode_spec forbidden_subjects (baku, kashmir); check_spec_satisfied fails the film while they are in it."
+    },
+    {
+      "ids": [
+        "AR-28388728",
+        "AR-20132104",
+        "AR-34719182"
+      ],
+      "episodes": [
+        "norfolk"
+      ],
+      "label": "wrong_place_standing_in_for_tidewater",
+      "reason": "a Vigo, Spain courthouse used as the case's courthouse; Lynden, Washington with snow-capped mountains used as coastal Tidewater Virginia; and a futuristic neon cityscape under the sex-offender registration line. Named by norfolk's own episode_spec forbidden_subjects (vigo, lynden, futuristic)."
+    },
+    {
+      "ids": [
+        "AF-BG-7372",
+        "AF-BG-7373"
+      ],
+      "label": "real_school_students_microscope",
+      "reason": "two real young women, plainly identifiable faces, in a school classroom biology setting (AF-BG-7372/7373 microscope_lab); both independent shipped-frame readers judged them teenage-looking and the lead confirmed at full resolution that minority cannot be excluded. Same class as the norfolk 3:21 schoolgirls rejection.",
+      "hard_category": "cat2_real_minor_on_screen"
+    },
+    {
+      "ids": [
+        "AR-10159563"
+      ],
+      "label": "real_person_age_indeterminate_marmet",
+      "reason": "EP65 marmet, found 2026-08-10 while restaging: a real person alone in a lounge chair against a bare wall, face sharp, centre-frame, smiling to camera at 0:51 and again at 18:22. Age cannot be settled from the footage, so it cannot be shown not to be a minor. It reached the scheduling command inside a finished render because the filename reads woman_sitting_on_a_chair_while_reading_a_magazine and every keyword and machine gate passed it. It was withdrawn from marmet by deleting the staged copy, which protects marmet only: the shelf row is live and any other episode query can stage it again. This entry is the actual guard.",
+      "hard_category": "cat2_real_identifiable_minor"
+    },
+    {
+      "ids": [
+        "AR-8847832"
+      ],
+      "label": "modern_us_election_ballot",
+      "reason": "filed as person_holding_papers; at full resolution it is a modern US election ballot reading 'United States President and Vice President / VOTE FOR ONE' with five party checkboxes, a hand in an American-flag sleeve and a modern ballpoint. Legible political text on screen, and anachronistic in any film set before the 2000s. Found in EP62 greene (1975 Louisville) where its second use sat under the narration 'the only evidence anybody brought'.",
+      "hard_category": "cat4_wrong_subject_reads_as_the_claim",
+      "found_by": "runs/qc/greene_shipped_frames_review.v001.json, 2026-08-11, 78 sheets opened"
+    },
+    {
+      "ids": [
+        "AR-28450296"
+      ],
+      "label": "modern_european_playground",
+      "reason": "filed as playground; a modern European park with a Range Rover Evoque (2011+) on a long white EU-format plate, three further modern cars and primary-coloured steel play equipment. Anachronistic for any period film and geographically wrong for a US case. Found in EP62 greene at 0:59, inside the opening minute.",
+      "hard_category": "cat4_wrong_subject_reads_as_the_claim",
+      "found_by": "runs/qc/greene_shipped_frames_review.v001.json, 2026-08-11, 78 sheets opened"
+    },
+    {
+      "ids": [
+        "AR-8035620"
+      ],
+      "label": "third_party_screenplay_beat_cards",
+      "reason": "filed as small_pieces_of_paper_falling_on_the_floor; at native resolution (2048x1080, magnified 2.6x from the source clip, not from a 960px extract) the scattered index cards are another production's shot-list cards and are legible on screen: '5) CLOSE - WALTS HANDS / JESSE ARGUE \"LOOK MR. WHITE\" / J SHOWS PHONE PIC OF GPS' and '9) AFTER / SKY D...'. Walt and Jesse are the copyrighted characters of Breaking Bad, so this is another production's written material readable in frame. Found in EP62 greene, where it was ACCEPTED by the wave 1-4 pool QC and shipped twice in the delivered master, at cut-0098 (7:39) and cut-0297 (23:28), under the paper motif. The 78-sheet shipped-frames review did not catch it because its extracts are 960px wide and the card text is illegible at that size.",
+      "hard_category": "cat1_third_party_production_footage",
+      "found_by": "EP62 greene wave-5 pool re-review, 2026-08-11, scripts/check_pool_frames.py multi-frame sheets; confirmed at native resolution before recording"
+    },
+    {
+      "ids": [
+        "AR-v_120266"
+      ],
+      "label": "present_day_seoul_identifiable_tower",
+      "reason": "filed as motoring_road_car_traffic_vehicle_driving_roadwa; the Lotte World Tower (completed 2017, Korea's tallest building) sits on the horizon for the whole cut, with Hangul on a yellow warning sign and its supplementary plate, CJK characters on a building gable, and Korean-format speed signs. Identifiable real building plus non-Latin script. Found in EP63 correa at 15:10, a film set in Puerto Rico in 1991.",
+      "hard_category": "cat4_wrong_subject_reads_as_the_claim",
+      "found_by": "runs/qc/correa_shipped_frames_review.v001.json, 2026-08-11, 78 sheets opened"
+    },
+    {
+      "ids": [
+        "AR-32161267"
+      ],
+      "label": "dockless_escooter_rack_2018plus",
+      "reason": "a dockless e-scooter rack (2018 or later) in focus with an LED storefront and a legible Spanish fragment. Dates any shot it appears in to the last few years. Used twice in EP63 correa (5:44, 25:31) against 1991.",
+      "hard_category": "cat4_wrong_subject_reads_as_the_claim",
+      "found_by": "runs/qc/correa_shipped_frames_review.v001.json, 2026-08-11, 78 sheets opened"
+    },
+    {
+      "ids": [
+        "AR-5879298"
+      ],
+      "label": "covid_era_masked_real_man_head_on",
+      "reason": "a real man head-on as the sole subject wearing a COVID-era face mask (2020-22). Dates the shot, and the subject is a real adult used as generic. Found in EP63 correa at 8:11.",
+      "hard_category": "cat4_wrong_subject_reads_as_the_claim",
+      "found_by": "runs/qc/correa_shipped_frames_review.v001.json, 2026-08-11, 78 sheets opened"
+    },
+    {
+      "ids": [
+        "AR-3009534"
+      ],
+      "label": "portuguese_book_spines_dated_1993_1995",
+      "reason": "legible Portuguese book spines including the real periodical 'coloquio | educacao e sociedade' with printed dates 1993 / 1994 / 1995. Readable text naming a real publication, and the dates postdate the September 1991 events the cut illustrates. Used twice in EP63 correa (2:10, 24:43).",
+      "hard_category": "cat4_wrong_subject_reads_as_the_claim",
+      "found_by": "runs/qc/correa_shipped_frames_review.v001.json, 2026-08-11, 78 sheets opened"
+    },
+    {
+      "ids": [
+        "W001.mp4",
+        "W004.mp4",
+        "W007.mp4",
+        "W008.mp4",
+        "W010.mp4",
+        "W012.mp4",
+        "W017.mp4",
+        "W019.mp4",
+        "W020.mp4",
+        "W024.mp4",
+        "W026.mp4",
+        "W027.mp4",
+        "W028.mp4",
+        "W029.mp4",
+        "W030.mp4",
+        "W035.mp4",
+        "W036.mp4",
+        "W041.mp4",
+        "W043.mp4",
+        "W044.mp4",
+        "W055.mp4",
+        "W059.mp4",
+        "W062.mp4",
+        "W066.mp4",
+        "W067.mp4",
+        "W068.mp4",
+        "W072.mp4",
+        "W075.mp4",
+        "W101.mp4",
+        "W122.mp4",
+        "W147.mp4",
+        "W159.mp4"
+      ],
+      "episodes": [
+        "wronghouse"
+      ],
+      "label": "wronghouse_i2v_invented_people",
+      "reason": "Wan i2v put PEOPLE INTO FRAMES THAT HAVE NONE. All 160 EP70 clips were read at 6 evenly spaced frames each on 2026-08-21 (runs/qc/wronghouse_motion_verdicts.v001.json, 15 contact sheets); these 32 show a person who is not in the plate. W044 walks a woman up to the front door of a house that is not hers, in a film about an FBI team raiding the wrong family's home. W027 resolves a face. W020 puts a woman over the splintered lock, the film's central image. W122 is here for a different reason: the house number 4112 degrades to 411Z, and the whole case is about the address. THE PROMPT ROUTE DOES NOT WORK -- W012 and W035 were regenerated with a negative barring person/people/human/figure/face and a fresh seed, and came back with the same figures. Hands and gloved arms were KEPT: they are this episode's own register and a hand is not an identifiable likeness. Registered here rather than moved by hand because _finish_episode.sh [1/7] rebuilds mp4s from the frame dirs and [2/7] re-copies from the source archive, so a manual quarantine is undone on every run -- which it was, twice, on 2026-08-21.",
+      "hard_category": "cat2_real_person_likeness"
+    },
+    {
+      "ids": [
+        "V003",
+        "V004",
+        "V007",
+        "V008",
+        "V012",
+        "V018",
+        "V023",
+        "V027",
+        "V031",
+        "V032",
+        "V033",
+        "V034",
+        "V035",
+        "V036",
+        "V038",
+        "V041",
+        "V043",
+        "V044",
+        "V047",
+        "V055",
+        "V057",
+        "V058",
+        "V069",
+        "V070",
+        "V072",
+        "V073",
+        "V075",
+        "V081",
+        "V082",
+        "V083",
+        "V084",
+        "V085",
+        "V086",
+        "V087",
+        "V088",
+        "V089",
+        "V090",
+        "V091",
+        "V092",
+        "V093",
+        "V097",
+        "V101",
+        "V102",
+        "V110",
+        "V114",
+        "V115",
+        "V116"
+      ],
+      "label": "wan_hallucinated_inspector",
+      "reason": "Wan drew a person, a hand or an arm that is not in the plate, handling the structure or the paperwork. EP76 may never assert the collapse was foreseen (⛔-02, episode_spec.forbidden_claims); a figure who arrives to touch corroded steel or fill in a form asserts that somebody was looking at it. Per-clip findings (read on runs/qc/motion_frames/morandi/morandi_motion_01..20.png, 6 frames per clip; V098 and V120 re-checked at full resolution): V003 a woman reaches toward the exposed rusted rebar; V004 a hand, then a whole person, enters at the broken high-tensile wires; V007 a figure walks along the deck under the four ties; V008 hands reach into the sectioned stay; V012 a person in a red top works at the 1962 drawing board; V018 an arm, then a young woman's face, enters at the bearing; V023 a head and torso appear beneath the pier crossbeam; V027 a figure climbs the pylon; V031 a bare arm reaches in and grasps the new strand; V032 two hands come in and touch the corroded strand; V033 a hand reaches down and picks at the spalled deck edge; V034 a man with a backpack walks in and looks into the box-girder cell; V035 a person reaches for the folder on the 1960s desk; V036 a figure stands beneath the deck access hatch; V038 legs, then a torso holding a tool, appear at the drainage pipe; V041 a person in a blue shirt walks in and stands over the concrete cores; V043 a bare hand reaches into the exposed strands; V044 a hand reaches repeatedly into the broken concrete; V047 a bare arm reaches into the bearing detail; V055 an orange-sleeved hand reaches into the open ring binder; V057 a hand holding a pen writes on the form; V058 a woman appears holding the clipboard at the parapet -- the literal inspection image; V069 a man with a backpack walks through the base of the pier; V070 a hand turns the blank page AND glyph-like marks resolve on the turned face; V072 a dark hand holding a tool appears at the duct; V073 a hand with red nail polish appears on the blank graph paper; V075 a hand enters at the open ledger; V081 a person in beige reaches into the filing drawer; V082 a hand appears at the file tabs; V083 a woman with dark hair pulls a box off the archive shelf; V084 a hand wearing a watch appears at the desk paper; V085 an arm and hand reach into the fax machine; V086 a hand appears on the ruled form; V087 a person in white walks past the rolled drawings; V088 a hand, then a torso, appears at the drawing table; V089 a large arm and hand press down on the ledger; V090 a hand enters at the ring binder; V091 hands in white sleeves arrive at the stack of paper; V092 a person in a white shirt resolves out of a blur in the drawing office; V093 a hand appears at the right edge of the blank page; V097 people arrive one by one in what the plate holds as an empty hearing room; V101 a hand and arm reach for the rubber stamp; V102 a leg, then a hand, appears at the document tray; V110 arms and hands arrive at the two bound volumes; V114 a standing woman walks into the hall of chairs; V115 a man's head and shoulders appear at the noticeboard; V116 a hand, then a seated person reading, appears at the open binder.",
+      "hard_category": "cat4_wrong_subject_reads_as_the_claim",
+      "episodes": [
+        "morandi"
+      ],
+      "applies_to": [
+        "motion"
+      ]
+    },
+    {
+      "ids": [
+        "V010",
+        "V064"
+      ],
+      "label": "wan_hallucinated_face",
+      "reason": "A face that is not in the plate resolves to photoreal detail. Per-clip findings (read on runs/qc/motion_frames/morandi/morandi_motion_01..20.png, 6 frames per clip; V098 and V120 re-checked at full resolution): V010 a lit female face resolves out of what the plate holds as an empty black ground; V064 a man appears at the steelwork and looks into the lens.",
+      "hard_category": "cat2_real_person_likeness",
+      "episodes": [
+        "morandi"
+      ],
+      "applies_to": [
+        "motion"
+      ]
+    },
+    {
+      "ids": [
+        "V026",
+        "V056"
+      ],
+      "label": "i2v_clip_broken",
+      "reason": "The clip is unusable on its own terms -- it goes black. No rights or safety finding. Per-clip findings (read on runs/qc/motion_frames/morandi/morandi_motion_01..20.png, 6 frames per clip; V098 and V120 re-checked at full resolution): V026 frame 1 is white and every later frame is black; V056 the ruled form fades to near-black by frame 3 and never returns.",
+      "hard_category": "none_kept_for_a_mechanical_reason",
+      "episodes": [
+        "morandi"
+      ],
+      "applies_to": [
+        "motion"
+      ],
+      "applies_to_note": "2026-08-23: scoped to the CLIP. Both findings are about what the i2v ANIMATION does -- V026/V056 go black over their run, and V120's car drives onto the severed carriageway 'by frame N'. The plates themselves were accepted at plate review and are not what was rejected. The shipped-frames read is where a wrong call here is caught."
+    },
+    {
+      "ids": [
+        "V120"
+      ],
+      "label": "forbidden_subject_vehicle_on_severed_road",
+      "reason": "EP76 forbids depicting the fall, the vehicles and the dead. Per-clip findings (read on runs/qc/motion_frames/morandi/morandi_motion_01..20.png, 6 frames per clip; V098 and V120 re-checked at full resolution): V120 a car drives onto the severed carriageway by frame 80; confirmed at full resolution.",
+      "hard_category": "cat4_wrong_subject_reads_as_the_claim",
+      "episodes": [
+        "morandi"
+      ],
+      "applies_to": [
+        "motion"
+      ],
+      "applies_to_note": "2026-08-23: scoped to the CLIP. Both findings are about what the i2v ANIMATION does -- V026/V056 go black over their run, and V120's car drives onto the severed carriageway 'by frame N'. The plates themselves were accepted at plate review and are not what was rejected. The shipped-frames read is where a wrong call here is caught."
+    },
+    {
+      "ids": [
+        "AR-pixabay_249214",
+        "AR-pixabay_250487",
+        "AR-pixabay_251791",
+        "AR-pixabay_251793",
+        "AR-pixabay_254651",
+        "AR-pixabay_256053",
+        "AR-pixabay_256060",
+        "AR-pixabay_256072",
+        "AR-pixabay_261362",
+        "AR-pixabay_265656",
+        "AR-pixabay_265662",
+        "AR-pixabay_265737",
+        "AR-pixabay_265743",
+        "AR-pixabay_267595",
+        "AR-pixabay_267661",
+        "AR-pixabay_267775",
+        "AR-pixabay_269608",
+        "AR-pixabay_269616",
+        "AR-pixabay_269820",
+        "AR-pixabay_270384",
+        "AR-pixabay_270431",
+        "AR-pixabay_270433",
+        "AR-pixabay_270445",
+        "AR-pixabay_270840",
+        "AR-pixabay_270881",
+        "AR-pixabay_270894",
+        "AR-pixabay_271552",
+        "AR-pixabay_277906",
+        "AR-pixabay_280174",
+        "AR-pixabay_287084",
+        "AR-pixabay_288668",
+        "AR-pixabay_290006",
+        "AR-pixabay_291665",
+        "AR-pixabay_293254",
+        "AR-pixabay_293618",
+        "AR-pixabay_293917",
+        "AR-pixabay_296210",
+        "AR-pixabay_296334",
+        "AR-pixabay_296582",
+        "AR-pixabay_296933",
+        "AR-pixabay_296936",
+        "AR-pixabay_296937",
+        "AR-pixabay_297281",
+        "AR-pixabay_299111",
+        "AR-pixabay_300423",
+        "AR-pixabay_301738",
+        "AR-pixabay_309075",
+        "AR-pixabay_309460",
+        "AR-pixabay_312397",
+        "AR-pixabay_317221",
+        "AR-pixabay_325218",
+        "AR-pixabay_325219",
+        "AR-pixabay_332556",
+        "AR-pixabay_349352",
+        "AR-pixabay_349530",
+        "AR-pixabay_349816",
+        "AR-pixabay_351075",
+        "AR-pixabay_351076",
+        "AR-pixabay_351133",
+        "AR-pixabay_351449",
+        "AR-pixabay_351450",
+        "AR-pixabay_351688",
+        "AR-pixabay_352557",
+        "AR-pixabay_352951",
+        "AR-pixabay_352971",
+        "AR-pixabay_352972",
+        "AR-pixabay_352974",
+        "AR-pixabay_353278",
+        "AR-pixabay_353556",
+        "AR-pixabay_353732",
+        "AR-pixabay_353736",
+        "AR-pixabay_353892",
+        "AR-pixabay_354336",
+        "AR-pixabay_354924",
+        "AR-pixabay_355035",
+        "AR-pixabay_355096",
+        "AR-pixabay_355099",
+        "AR-pixabay_355100",
+        "AR-pixabay_355136",
+        "AR-pixabay_355291",
+        "AR-pixabay_355604",
+        "AR-pixabay_356200",
+        "AR-pixabay_357387",
+        "AR-pixabay_357485",
+        "AR-pixabay_357569",
+        "AR-pixabay_357744",
+        "AR-pixabay_357750",
+        "AR-pixabay_358209",
+        "AR-pixabay_358455",
+        "AR-pixabay_358842",
+        "AR-pixabay_358929",
+        "AR-pixabay_358945",
+        "AR-pixabay_358946",
+        "AR-v_150883",
+        "AR-v_172763",
+        "AR-v_187356",
+        "AR-v_188176",
+        "AR-v_188177",
+        "AR-v_188197",
+        "AR-v_188339",
+        "AR-v_192760",
+        "AR-v_201030",
+        "AR-v_201290",
+        "AR-v_202004",
+        "AR-v_202600",
+        "AR-v_203133",
+        "AR-v_204222",
+        "AR-v_205006",
+        "AR-v_206939",
+        "AR-v_208812",
+        "AR-v_210240",
+        "AR-v_210244",
+        "AR-v_210246",
+        "AR-v_211097",
+        "AR-v_211550",
+        "AR-v_211551",
+        "AR-v_219080",
+        "AR-v_219081",
+        "AR-v_224155",
+        "AR-v_225705",
+        "AR-v_225944",
+        "AR-v_240952",
+        "AR-v_259519",
+        "AR-v_263192",
+        "AR-v_264136",
+        "AR-v_264170",
+        "AR-v_264550",
+        "AR-v_264552",
+        "AR-v_265568",
+        "AR-v_265606",
+        "AR-v_265639",
+        "AR-v_265688",
+        "AR-v_266040",
+        "AR-v_267585",
+        "AR-v_267608",
+        "AR-v_270360",
+        "AR-v_270442",
+        "AR-v_286152",
+        "AR-v_290317",
+        "AR-v_290438",
+        "AR-v_295479",
+        "AR-v_297863",
+        "AR-v_300032",
+        "AR-v_325136",
+        "AR-v_353119",
+        "AR-v_356213",
+        "AR-v_356787",
+        "AR-v_356932",
+        "AR-v_358482",
+        "AR-v_360387",
+        "AR-v_361923",
+        "AR-v_362886",
+        "AR-v_362909",
+        "AR-v_363709",
+        "AR-v_363920",
+        "AR-v_365157",
+        "AR-v_365245",
+        "AR-v_365250",
+        "AR-v_365259",
+        "AR-v_366130",
+        "AR-v_366249",
+        "AR-v_366534",
+        "AR-v_366670",
+        "AR-v_366932",
+        "AR-v_367131",
+        "AR-v_367837",
+        "AR-v_368211",
+        "AR-v_369531",
+        "AR-v_370034",
+        "AR-v_370071",
+        "AR-v_371474"
+      ],
+      "label": "ai_generated_synthetic_footage",
+      "reason": "The clip's own archive-ledger title says 'ai generated'. Synthetic footage may not be cut into a PD episode (CLAUDE.md invariant 11: generated visuals are not evidence and must not be presented as authentic records). GLOBAL, not episode-scoped, because these are archive-wide file ids and the ban applies to every episode. Found by EP76's footage review when two of them reached a human contact sheet through the ordinary candidate path; measured 2026-08-22 as 171 ledger row(s), ZERO of which are cut into any built film. Read from the LEDGER, not from filenames: the two that started this are named `pixabay__357485__id.mp4` and carry no title on disk at all. This is a denylist of what is on the shelf today, NOT a rule that catches the next one ingested.",
+      "hard_category": "cat4_wrong_subject_reads_as_the_claim"
+    },
+    {
+      "ids": [
+        "AR-v_47127"
+      ],
+      "label": "near_black_clip",
+      "episodes": [
+        "oroville"
+      ],
+      "reason": "measured mean luma 2.4 by pd_preflight B/ASSETS on 2026-08-23: the frame is effectively black on a screen, and a cut of it reads as a dropout. Staged in the 2026-08-20 pool, never looked at until now."
+    },
+    {
+      "ids": [
+        "O008b"
+      ],
+      "label": "near_black_i2v_output",
+      "episodes": [
+        "oroville"
+      ],
+      "reason": "i2v output measured at mean luma 0.8 (pd_preflight B/ASSETS, 2026-08-23) -- the clip came back black, the same failure mode EP76 recorded as 'broken clips'. The plate itself is fine; only this animation is dead.",
+      "applies_to": [
+        "motion"
+      ]
+    },
+    {
+      "ids": [
+        "AR-20148"
+      ],
+      "label": "shenzhen city skyline standing in for Seoul",
+      "episodes": [
+        "itaewon"
+      ],
+      "applies_to": [
+        "footage"
+      ],
+      "reason": "the Shenzhen skyline, used at 1:13-1:17 under a line about a Korean court. Chinese high-rise, not Seoul. Found by reading the shipped master's contact sheets on 2026-08-24; the automated gates were all green on this render. Same class as EP72's British passenger train and EP71's legible STILLWATER water tower: the shelf is searched by words like 'street' and 'city', and the words do not carry a country."
+    },
+    {
+      "ids": [
+        "AR-pexels_10297595"
+      ],
+      "label": "moscow traffic standing in for Seoul",
+      "episodes": [
+        "itaewon"
+      ],
+      "applies_to": [
+        "footage"
+      ],
+      "reason": "night traffic in Moscow, used at 6:14. Found by reading the shipped master's contact sheets on 2026-08-24; the automated gates were all green on this render. Same class as EP72's British passenger train and EP71's legible STILLWATER water tower: the shelf is searched by words like 'street' and 'city', and the words do not carry a country."
+    },
+    {
+      "ids": [
+        "AR-pexels_11792112"
+      ],
+      "label": "snow in a story with no snow",
+      "episodes": [
+        "itaewon"
+      ],
+      "applies_to": [
+        "footage"
+      ],
+      "reason": "a man walking in deep snow, used at 6:20. This film is Seoul on 29 October 2022; there was no snow. Found by reading the shipped master's contact sheets on 2026-08-24; the automated gates were all green on this render. Same class as EP72's British passenger train and EP71's legible STILLWATER water tower: the shelf is searched by words like 'street' and 'city', and the words do not carry a country."
+    },
+    {
+      "ids": [
+        "AR-v_176418"
+      ],
+      "label": "kaohsiung taiwan standing in for Seoul",
+      "episodes": [
+        "itaewon"
+      ],
+      "applies_to": [
+        "footage"
+      ],
+      "reason": "Kaohsiung, Taiwan at 16:38-16:42, with Chinese vertical signage and Taiwanese road markings legible. Found by reading the shipped master's contact sheets on 2026-08-24; the automated gates were all green on this render. Same class as EP72's British passenger train and EP71's legible STILLWATER water tower: the shelf is searched by words like 'street' and 'city', and the words do not carry a country."
+    },
+    {
+      "ids": [
+        "AR-v_57770"
+      ],
+      "label": "chinatown standing in for Itaewon",
+      "episodes": [
+        "itaewon"
+      ],
+      "applies_to": [
+        "footage"
+      ],
+      "reason": "a Chinatown market at 26:46-26:49: Chinese lanterns with Chinese characters, in a Korean street. Found by reading the shipped master's contact sheets on 2026-08-24; the automated gates were all green on this render. Same class as EP72's British passenger train and EP71's legible STILLWATER water tower: the shelf is searched by words like 'street' and 'city', and the words do not carry a country."
+    },
+    {
+      "ids": [
+        "H014",
+        "H014_black_head_rejected_20260825"
+      ],
+      "episodes": [
+        "lahaina"
+      ],
+      "label": "i2v_clip_opens_black_post_render_gate_refuses",
+      "reason": "EP75 lahaina's POST-RENDER GATE refused the master on 3 black stretches (114.1-115.4s, 117.4-118.6s, 1076.2-1077.4s) after a 2.5-hour render. All three are this clip: a 3.37s exposure ramp, luma YAVG 28 -> 110, whose first 1.20s ffmpeg blackdetect calls black at the same pixel threshold the gate uses. Looped into a 6.26s cut it plays that head TWICE per cut, and the builder used it in cut-0018 and cut-0172. The 81 generated frames are faithful; the source plate img_unused/H014.png is itself near-black, so this is a dark plate, not an i2v failure. Quarantining the mp4 by hand did NOT hold: finisher step [1/7] re-assembled it from ae-demo/wan_frames_lahaina_H014/ on the next run and step [2b/7] pruned nothing, because it reads `blocked` only. Frame dir moved aside as well. Detected in advance from now on by check_motion_saturation --  BLACK-HEAD. SECOND NAME: renaming the frame dir in place made [1/7] re-assemble the same clip as H014_black_head_rejected_20260825.mp4 -- the assembler takes the clip name from the directory -- and the archive at E:/pd-media/assets/ai_video/lahaina/motion/ then restored that name on every run. Both names are blocked; the frame dir now lives outside ae-demo at E:/pd-media/_rejected_i2v_frames/wan_frames_lahaina_H014.",
+      "hard_category": "cat5_build_breaking_asset"
+    },
+    {
+      "ids": [
+        "L092"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "i2v_clip_is_black_for_87_percent_of_its_duration",
+      "reason": "Measured before EP72's first render, not after it: blackdetect reports black from 0.43s to 3.33s of a 3.37s clip -- 2.90s, 87 per cent. Opened at full frame it is the edge of a curtain for two tenths of a second and then nothing. Looped into a ~6s cut it would have produced a black hole far over the post-render gate's 1.2s limit and cost a 2.5-hour render, which is exactly what the same defect cost EP75 lahaina the same evening. Quarantined from the public pool and the E: archive; frame dir moved to E:/pd-media/_rejected_i2v_frames/ (renaming it in place makes the assembler rebuild the clip under the new name).",
+      "hard_category": "cat5_build_breaking_asset"
+    },
+    {
+      "ids": [
+        "L010"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "i2v_clip_opens_black_and_invents_a_person",
+      "reason": "Two findings in one clip. blackdetect reports 0.00-0.77s black at the head, which a looped cut plays twice. And at 2.5s the frame carries a person facing camera with legible facial features, in a corridor -- the i2v-invents-people defect that put a person into 32 of EP70's 160 clips against plates that have none. Neither was visible at contact-sheet scale. Quarantined from the public pool and the E: archive; frame dir moved out of ae-demo.",
+      "hard_category": "cat5_build_breaking_asset"
+    },
+    {
+      "ids": [
+        "H062",
+        "H065",
+        "H084"
+      ],
+      "episodes": [
+        "keybridge"
+      ],
+      "label": "i2v_chroma_collapse_opens_colour_ends_grey",
+      "reason": "check_motion_saturation measured all three opening in colour and ending grey (H084 17.7->5.9, H065 18.6->6.9, H062 19.3->7.5). Not a frame-mixing defect: each frame dir held exactly its own 81 png, and re-assembling from those frames reproduced the identical bytes. The Wan generation itself desaturates, so the plate cannot be rescued by re-encoding. Frame dirs moved out of ae-demo to runs/qc/keybridge_rejected_frames/ so the finisher cannot rebuild them, and NOT renamed in place (a rename revives the same defect under a new clip name).",
+      "measured_at": "2026-08-26",
+      "measured_by": "check_motion_saturation.py --slug keybridge"
+    },
+    {
+      "ids": [
+        "AR-pexels_v_11662311"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "a European four-wheel buffered tank wagon lettered 'ESSO NEDERLAND N.V. 's-GRAVENHAGE', legible on screen, cut in under the film's central line 'Not one hand brake was applied to any of the seventy-two tank cars'. Wrong continent and a readable oil-major mark.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_11662355"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "European preserved stock with 'USA 17048' stencilled large and fully legible plus readable graffiti tags.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_15548229"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "a European rolling-highway intermodal terminal; the swap bodies read 'nothegger' (Austrian haulier) twice and 'ArcoTrans' on a dark box. Neither the stock nor the operator belongs in a Quebec freight film.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_31378119"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "a modern Swedish articulated city tram: destination blind '1 ESS', 'Skanetrafiken' on the cab front, and an illuminated 'FITNESS 24SEVEN' gym sign on the corner building.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_14614733"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "a European electric PASSENGER railway: white-and-green EMU at a platform and a graffitied coach carrying readable 'EASTERN' livery lettering, with overhead catenary and snow on the platform under a 6 July night.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_38004394"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "wrong_railway_readable_signal",
+      "reason": "a German/European mainline junction: a DB-pattern colour-light signal at green with an illuminated white 'R' plate, a white numeric speed board, a red-and-white striped mast base and lineside graffiti. This is the exact defect class that scrapped an earlier render of this episode.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_7683189"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "a Norfolk Southern locomotive with '3073' number boards and the thoroughbred emblem plainly readable on the nose, and an adjacent tank car lettered 'UTLX 674027'. Names the wrong railroad in a film about a specific Canadian operator.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pixabay_v_132503"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "Canadian Pacific livery with 'CP' and road number 3777 legible on the maroon hood. Names the wrong railway.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_856181"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "'STAMFORD' and 'E4' clearly readable on the rear of a US (Connecticut) fire appliance, in a film about a Quebec town.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_5481190"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "two readable business signs: 'KAR KING' in white on blue across the building and 'MATCON' on the fence.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_10971670"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "'CASE' readable twice on the boom and cab of an excavator demolishing a house.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_12598147"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "'KOMATSU' readable on a yellow excavator.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_33845056"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "an illuminated business sign reading 'SOUL' on the building corner, legible at ship size.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_6549531"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "identifiable_face_held",
+      "reason": "a young man in wire-rim glasses held in close profile for about five seconds, clearly identifiable by hairline, glasses and jaw, in an episode that names three men who were ACQUITTED of criminal negligence.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "L021"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "identifiable_face_held",
+      "reason": "EP72's own generated plate, used at cut-0041 and cut-0238. A figure with a fully visible front-on face, floppy pale hat and white blouse leaning over the coupler casting, hands dissolving into the metal. Summer-lifestyle wardrobe, not a 2013 railwayman, on beats about securement.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "L036"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "identifiable_face_held",
+      "reason": "EP72's own generated plate, used at cut-0065 and cut-0266. A glamour-styled young woman, long glossy hair and full makeup, face held large and clearly rendered in profile at the tank-car handrail -- on the beat adjacent to the criminal trial of three named, acquitted men, and she is not touching the brake wheel the narration describes.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP72 lacmegantic master (sha a4cedf13); owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_9889207"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "one shot carrying a whole row of readable third-party marks: a gold CHEVROLET bowtie and a SILVERADO badge on the pickup tailgate, TEREX on the bucket-truck boom, a utility company roundel on both truck doors, fleet number 906992, a legible NO PARKING sign and a front licence plate. It is also high summer -- green leafy trees, blue sky, cumulus, no snow -- and it runs under narration about the February 2021 storm bills.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP73 uri master (sha 9faf5f31), 74/74 sheets; owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_5495838"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "identifiable_face_held",
+      "reason": "a face in three-quarter view, lit and discernible, held about five seconds; the window behind is full summer green in a February ice-storm film.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP73 uri master (sha 9faf5f31), 74/74 sheets; owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "U069"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "identifiable_face_held",
+      "reason": "EP73's own generated plate, cut in twice (9:57 and 26:09). A woman in her thirties, hair up, lit by a phone screen, features fully readable, held 4-5 seconds each time.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP73 uri master (sha 9faf5f31), 74/74 sheets; owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "U073"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "identifiable_face_held",
+      "reason": "EP73's own generated plate, cut in twice (10:17 and 26:35). A bearded man in a grey coat looking straight into camera from a doorway; his coat sleeve and trousers also show visible generation artefacts.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP73 uri master (sha 9faf5f31), 74/74 sheets; owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "U082",
+        "U083"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "identifiable_face_held",
+      "reason": "EP73's own generated plates, cut in twice each. Together they hold a clearly identifiable woman's face for about nine seconds, and she is SMILING BROADLY while touching frozen gas equipment, in a film about 246 deaths. The tone is as wrong as the likeness.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP73 uri master (sha 9faf5f31), 74/74 sheets; owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "U100"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "identifiable_face_held",
+      "reason": "EP73's own generated plate, cut in twice (14:34 and 29:35). A man's face held and clearly identifiable in three-quarter view in a supermarket aisle. The same clip is also not a US store -- pegboard fixtures, Japanese-style shelf edging and unbranded bottles -- standing in for Texas.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-30 -- read in the shipped frames of the EP73 uri master (sha 9faf5f31), 74/74 sheets; owner ruled on 2026-08-30 to fix the readable-mark and identifiable-face cuts only."
+    },
+    {
+      "ids": [
+        "U010"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "identifiable_face_held",
+      "reason": "EP73's own generated plate, cut-0205 at 16:51-16:55. A young man in a charcoal blazer over an open-collar white shirt stands centre-frame against sunlit sheer curtains, facing camera, sharply lit and in focus, for about two continuous seconds; the 3.37s source then loops and he returns in a tight left profile at 16:54.5. Eyes, nose, mouth, jawline and hairstyle all read -- a face you could pick out of a line-up. Same class as U069/U073/U082/U083/U100. The picture is also wrong for its line: the caption says cars were being run in driveways for twenty minutes to charge a phone and get warm, over a well-dressed man in a bright, warm-looking room.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31 -- SECOND read of the re-rendered EP73 master (sha a41a2995). The FIRST read of these same sheets listed twelve defects and did not mention this cut at all. Found by a reader, then confirmed by the lane owner on frames 016m53s_045__cut0205_p60.jpg and 016m54s_813__cut0205_p95.jpg."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_11662298",
+        "AR-pexels_v_11662299",
+        "AR-pexels_v_11662300",
+        "AR-pexels_v_11662312"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "The rest of the European heritage-railway shoot that AR-pexels_v_11662311 (ESSO NEDERLAND N.V. 's-GRAVENHAGE) and AR-pexels_v_11662355 (USA 17048) came from. Pexels ids 11662298/11662299/11662300/11662311/11662312/11662355 are consecutive and are one day's filming: two-axle wagons with BUFFERS, leaf-spring suspension, riveted underframes and pale-green spherical-domed tank wagons, on a bare-birch European lineside. On 11662298 (6:04-6:08) and 11662300 (6:24-6:28) the end panel carries readable stencilling -- the UIC wagon-type code 'Ucs-y' and a dark data plate reading 'AMSTERDAM' in white capitals, in daylight, essentially unmoving for the whole cut. 11662298 sits under the film's central mechanism line, 'So from that moment the seventy-two loaded cars behind the locomotives had no air.'",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31. MY OWN ERROR, recorded so it is not repeated: on 08-30 I blocked 11662311 and 11662355 individually because those were the two a reader had named, and left their four sister clips in the pool. The rebuild then cut all four back in and the re-rendered master carries one of each. When a defect is a SHOOT rather than a frame -- one location, one day, consecutive ids -- block the lot, not the clips somebody happened to quote."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_6520278",
+        "AR-pexels_v_6520448"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "Two cuts from one stock shoot, fifteen seconds apart (23:35-23:40 and 23:45-23:50), giving roughly ten seconds of a legible corporate mark. The white controller at the top of the blue panel carries a hexagonal logo reading 'HOSELINE INC.' -- a company name WITH its legal suffix -- and it is readable in a 960px downscale, so it is unambiguous at 1080p delivery. Same class as the CHEVROLET/SILVERADO/TEREX shot already removed from this episode.\nSecondary, recorded not blocking: the switch legends read 'HI' and 'BENCH HI', which means this is a marine or RV switch panel, not the domestic breaker box the narration describes.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31. SECOND read of the re-rendered EP73 master. The FIRST read saw this mark and wrote it down as a minor note -- 'the thermostat carries a readable maker's name HOSELINE INC. on its dial plate (small, rotated)' -- without escalating it. A second reader called it plainly readable at delivery size, and the lane owner confirmed it on frame 023m47s_921__cut0289_p60.jpg. Recording the disagreement because it is the useful part: the same pixels were seen twice and classified differently, and the stricter call was the right one."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_27898911",
+        "AR-pexels_v_27898912"
+      ],
+      "label": "readable_third_party_text_and_profanity",
+      "reason": "THE WORST THING FOUND IN THE 2026-08-30/31 REVIEW. At 11:22 a passing hopper is tagged in large white graffiti reading 'FUCK JOE BIDEN', fully legible across the top third of frame -- and this episode's own death-toll card is still fading over it: 'BY THE NUMBERS / 47 / People killed. Thirty of them at the Musi-Cafe. This film states the figure once. (LM-16, LM-18)'. So the count of 47 real dead is superimposed on profanity naming a real living former US president. Profanity, a named public figure, and readable third-party text, over the death toll. Both clips of this shoot also carry a full service stencil 'RADIANT THAW / HEAT ONLY / MAX ALUMINUM / TEMP 250 F', full-frame and completely legible at 11:35, and a graffiti tag reading '2020' in a story set in 2013.\nSCOPE WIDENED TO GLOBAL 2026-08-31: originally scoped to lacmegantic. Profanity naming a living former head of state is not something any episode of this channel should be able to pick up by accident, so this shoot is blocked everywhere.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31. Found on the SECOND read of the re-rendered EP72 master (sha 6fc5468f) and confirmed by the lane owner on the frames. Blocked as SHOOTS, not as individual clips: 27898911/27898912 and 19290649/19290650 are consecutive ids from one filming each. That rule exists because on 08-30 I blocked two clips of a European wagon shoot by name and left four siblings in the pool, and they all came back in this render."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_15261765"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "'KOMATSU' in blue block letters on TWO excavator booms plus 'PC 400 LC' model decals on two counterweights, legible in every frame of the 9:41-9:47 cut. KOMATSU was ALREADY removed from this episode on 08-30 in a different clip (AR-pexels_v_12598147) -- the brand came back by another route. The site is also tropical (palms, scrub, a military truck) under a line about the provincial police.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31. Found on the SECOND read of the re-rendered EP72 master (sha 6fc5468f) and confirmed by the lane owner on the frames. Blocked as SHOOTS, not as individual clips: 27898911/27898912 and 19290649/19290650 are consecutive ids from one filming each. That rule exists because on 08-30 I blocked two clips of a European wagon shoot by name and left four siblings in the pool, and they all came back in this render."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_19290649",
+        "AR-pexels_v_19290650"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "A stencilled reporting mark and car number on the tank barrel at 10:02-10:07, best read 'ADMWX 28157', with capacity stencils 'LD LMT 187500 LB / 85 050 KG' and 'LT WT 78500 LB / 31 250 KG' legible below. A reporting mark identifies the car's owner, which is exactly what the ESSO NEDERLAND and UTLX removals were about. Sister clip 19290650 blocked with it under the same shoot rule.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31. Found on the SECOND read of the re-rendered EP72 master (sha 6fc5468f) and confirmed by the lane owner on the frames. Blocked as SHOOTS, not as individual clips: 27898911/27898912 and 19290649/19290650 are consecutive ids from one filming each. That rule exists because on 08-30 I blocked two clips of a European wagon shoot by name and left four siblings in the pool, and they all came back in this render."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_10058463"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "readable_foreign_equipment_marking",
+      "reason": "cut-0016 at 1:17-1:22. The substation cabinet at frame left carries a legible placard reading 'CB 110 / SHKAF / CB' -- SHKAF is CYRILLIC (russian/ukrainian for 'cabinet'), readable even in a 960px downscale and therefore plain at 1080p. Same class as the 'Ucs-y' UIC code and 'AMSTERDAM' data plate removed from EP72: readable foreign equipment lettering that places the shot on the wrong continent.\nIt is worse than a generic wrong-place shot because of WHERE it sits. The narration under it is 'over electricity sales that crossed state lines. The reasoning was ordinary.' -- the film is at that moment explaining why Texas built a grid that does not cross a state line, illustrated by a substation in another country.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31. THIRD read of EP73. Found by a reader that then stalled before it could describe the finding -- it reported only 'BLOCKING FOUND at 1:19-1:21'. The lane owner opened frames 001m19s_977__cut0016_p60.jpg and 001m21s_723__cut0016_p95.jpg and identified the Cyrillic placard. Worth recording: a dead agent's half-message was still actionable because it carried a timecode."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_12891229"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "readable_third_party_brand",
+      "reason": "cut-0042 at 3:25-3:28. The HF double-cross monogram above the serif wordmark 'HOLLYFRONTIER' is on the curved side of the large white storage tank at lower right, readable in a 960px downscale and therefore plain at 1080p. It names a real, listed refiner on screen in a film about a different company's failure, and it identifies the location as Woods Cross, Utah (Wasatch range and Great Salt Lake flats behind) rather than Texas. Roughly 2.5-3 seconds. Secondary, recorded not blocking: it is a summer aerial -- green trees, dry grass, blue sky -- in a February ice-storm film.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31, THIRD read of EP73. The lane owner confirmed the HollyFrontier mark on frame 003m27s_079__cut0042_p60.jpg and the Cyrillic placards on 001m19s_977__cut0016_p60.jpg."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_10058364",
+        "AR-pexels_v_10008320",
+        "AR-pexels_v_10008388"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "readable_foreign_equipment_marking",
+      "reason": "The rest of the non-US substation shoot whose sibling AR-pexels_v_10058463 was blocked earlier today. 10058364 (cut-0014, 1:08-1:11) carries two white placards in Russian, fully legible on enlargement: 'SHKAF / PITANIYA I / OBOGREVA / PRIVODOV 2' and 'SHZV / 3 OBR', with IEC hazard triangles, held ~3.5s on a static push-in that makes them grow. 10008320 and 10008388 are the same station family and their switchgear nameplates probably carry an ABB logo, unresolvable at ~5px in the QC frames -- blocked with the lot rather than left to be rediscovered, which is the rule that had to be learned twice on EP72.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31, THIRD read of EP73. The lane owner confirmed the HollyFrontier mark on frame 003m27s_079__cut0042_p60.jpg and the Cyrillic placards on 001m19s_977__cut0016_p60.jpg."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_12588031",
+        "AR-pexels_v_12588076",
+        "AR-pexels_v_34241190",
+        "AR-pexels_v_4876787"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "demolition_footage_category",
+      "reason": "Every house-demolition clip left in this episode's pool, blocked as a CATEGORY rather than one at a time, because this material has now produced a readable third-party mark on four separate occasions across three renders.\nCONFIRMED THIS PASS: 12588031 (cut-0077, 6:21-6:26) and 12588076 (cut-0079, 6:31-6:36) both show a raised cast 'CP' monogram on the excavator bucket -- and in a film about a railway, 'CP' reads as the Canadian Pacific reporting mark, which was removed from this same episode one render ago. 12588076 also shows a blackletter brand wordmark on the red roll-off container (leading 'G', trailing '...eath', i.e. Goliath) with a yellow CAUTION decal beneath it.\nPREVIOUSLY RECORDED, now included: 34241190 has a palm frond in shot and a tropical tiled building; 4876787 is a pancaked multi-storey concrete ruin that reads as earthquake or war damage and risks being taken for the Lac-Megantic site, which was low-rise timber that burned.\nALREADY BLOCKED FROM THE SAME CATEGORY: 10971670 ('CASE'), 12598147 ('KOMATSU'), 15261765 ('KOMATSU' + 'PC 400 LC').\nBeyond the marks: 12588076 is a sunlit US suburban street with a mesa behind it, running under the narration 'A person walks the length of the train IN THE DARK'. Construction plant is branded by default and this film has no editorial need for it.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-08-31, THIRD read of EP72. Confirmed by the lane owner on frame 006m36s_056__cut0079_p95.jpg. Blocked by category after the same defect recurred through two rounds of clip-by-clip blocking -- the narrower rule kept letting the next clip of the same kind back in."
+    },
+    {
+      "ids": [
+        "S086",
+        "S087",
+        "S135"
+      ],
+      "episodes": [
+        "station"
+      ],
+      "label": "reviewer_rejected_plate_cut_into_film",
+      "reason": "Three plates a reviewer REJECTED on 2026-08-27 were cut into the shipped master anyway (runs/qc/station_plate_verdicts.v001.json). Blocked here rather than reclassified in the ship policy, because the reviewer's call was correct on all three -- verified frame by frame:\nS086 (cut-0096, 10:47-10:53) a floor of shattered glass under a broken window, raked by an investigator's work light. In a film about a hundred people who could not get out of a building, that is the aftermath, which this episode's own forbidden_subjects bars.\nS087 (cut-0097, 10:54-10:59) an overturned wooden chair in an empty room -- and the card burned over it is 'REPORTED THAT NIGHT. 440 TO 458.', the count of people who were inside. An overturned chair under the headcount is the standard shorthand for a room emptying in panic, and it will be read that way and no other.\nS135 (cut-0151, 16:56-17:02) a TRUSS BRIDGE engineering drawing on an easel -- elevation, end view and isometric -- under the line 'Somebody has to decide that the window is the way.' This is a nightclub-fire film; the plate belongs to a different episode entirely.\nThe gate that caught this (pd_ship_policy.plate_verdict_rows) refused the ship and was right to. The other three masters in flight -- uri, lacmegantic, keybridge -- were checked the same way on 2026-09-01 and carry ZERO non-accept plates in their films.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01. Opened all three at full resolution in runs/qc/shipped_frames/station/frames/ (010m50s_175__cut0096_p60.jpg, 010m56s_773__cut0097_p60.jpg, 016m59s_631__cut0151_p60.jpg) before blocking anything."
+    },
+    {
+      "ids": [
+        "AR-pexels_10391545",
+        "AR-pexels_6595373",
+        "AR-pexels_29570736"
+      ],
+      "episodes": [
+        "keybridge"
+      ],
+      "label": "readable_third_party_branding",
+      "reason": "EP77 keybridge, first full read (49 sheets, two readers). Three cuts carry a legible third-party mark; all three opened at full resolution and confirmed by the lane owner before blocking.\nAR-pexels_6595373 (cut-0103, 11:35) 'drone footage of containers in a dock': the ship at the quay carries MSC in large white capitals along her hull, and MAERSK repeats across the blue container stacks bottom-left. The clearest and largest third-party marks in the film -- readable at 960px without enlargement.\nAR-pexels_10391545 (cut-0009, 1:01 and 1:06) 'directly above view of commercial dock': a magenta container reads ONE -- the Ocean Network Express livery -- top-left at 1:01 and again, inverted, bottom-right at 1:06. Also readable at 960px.\nAR-pexels_29570736 (cut-0054, 6:05-6:10) 'adjusting vintage radio dial': a product wordmark in script, 'fm radio...', with a circular maker's emblem beside it, plus FM and BT legends at the dial. The radio is held large, sharp and centre-frame in two hands for four seconds. The reader called this one borderline because no company name resolves; blocked anyway -- it is a branded consumer product filling the frame, which is the same exposure as a hull mark.\nNOT blocked, checked and cleared: AR-pixabay_129181 (12:14, container ship at sunset) is a pure silhouette with no readable mark, and AR-pexels_7601935 (11:47) is a conceptual model. The pool holds 35 stock clips and the film used 34 of them, so there are no unused siblings of these shoots waiting to return on the rebuild -- the trap that cost EP72 three renders.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01, after the full 49-sheet read of EP77. Opened 011m35s_090__cut0103_p20.jpg, 001m01s_541__cut0009_p20.jpg, 006m07s_894__cut0054_p60.jpg, 012m18s_258__cut0109_p60.jpg."
+    },
+    {
+      "ids": [
+        "U027",
+        "U012",
+        "U004",
+        "U023"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "identifiable_face",
+      "reason": "EP73 uri. Four i2v motion clips carry an identifiable human face. Every one is used TWICE in the film, so a likeness call on any of them applies at both timecodes.\nU027 (cut-0245, 20:08.7-20:09.8, and again at 04:27.9) is the unambiguous one and the reason this entry exists: a woman with curly hair steps in from frame right and her face is presented near-frontal, three-quarter, sharply lit and in focus, head filling roughly a third of the frame height, held about 1.2 seconds. CONFIRMED BY THE LANE OWNER at 1280px on a frame pulled from the master at t=1209.25s.\nU012 (cut-0205, 16:50.7-16:55.1, and 01:41.4) a young man in a light-blue shirt, large in frame, tight profile, in focus and well lit, about 4.5 seconds; hair, brow, nose, mouth and ear all resolved.\nU004 (cut-0198, 16:16.5-16:18.5, and 00:24.9) a man in a tan work shirt crossing frame in tight profile, in focus, about 2 seconds.\nU023 (cut-0233, 19:08.6-19:10.0, and 04:03.5) a woman in a white cap, profile, in focus, face clearly resolved before she turns away.\nU012, U004 and U023 are profiles rather than frontal and could be argued down; they are blocked with U027 rather than argued, because the cost of removing four clips is one render and the cost of being wrong is a real person's face in a published documentary.\nHOW IT WAS FOUND, which matters more than the finding: U027's face appears on NO contact-sheet tile. The sheets sample four frames per cut and all four caught the wall or the back of her head. The reader re-sampled every people-bearing cut from the master at 4 fps. A tile-by-tile read of the sheets alone would have shipped this.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01. Reader swept sheets 39-56 plus a 4 fps re-sample of the master; the lane owner then pulled t=1208.75 and t=1209.25 from uri_final_bgm.v001.mp4 at 1280px and confirmed U027 before any clip was blocked."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_30243440",
+        "AR-pexels_v_30243437"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "readable_foreign_equipment_marking",
+      "reason": "EP73 uri, cut-0142 at 11:35.8-11:40.9. AR-pexels_v_30243440 (filed on the shelf as 'wellhead_valve_equipment') is a 220 kV gas-insulated switchgear hall with Russian-language equipment placards legible across the WHOLE cut, not one frame of it: 'ЛР 221', 'ЗНТ ТР 211', 'ЗНЛ ЛР 221' and 'Р ТН 1 / 220 кВ' at lower left. Readable at 960px without enlargement -- confirmed by the lane owner on 011m38s_858__cut0142_p60.jpg before blocking. It runs under 'Demand rose for a reason that is not obvious to anyone who lives somewhere cold', so it also puts a named foreign facility inside a Texas documentary.\nAR-pexels_v_30243437 (cut-0140, 11:26-11:30) is the SAME shoot in the same hall. No placard resolved in its four sampled frames, and it is blocked anyway: this episode has now had eight clips pulled for readable foreign markings across two reads, every one of them a sibling of another, and leaving one behind is how they came back the last three times.\nThe shelf label is wrong in both cases -- neither clip contains a wellhead or a valve.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01, fourth read of EP73 (sheets 20-38). Placards confirmed at full resolution by the lane owner before either id was written down."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_18512155",
+        "L086",
+        "AR-pexels_v_30243446",
+        "AR-pexels_v_20630219",
+        "AR-pexels_v_28523920",
+        "AR-pexels_v_28348624",
+        "AR-pexels_v_29913462"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_branding_and_forbidden_subject",
+      "reason": "EP72 lacmegantic, fourth read (sheets 19-36). Pool is 97 clips, so blocking seven costs nothing.\nRIGHTS -- the two that stop a ship:\nAR-pexels_v_18512155 (cut-0117, 9:41.9-9:47.0) the lead tank car is stencilled 'UTLX 663976' with the sub-line 'THE UNION TANK CAR CO...' and LD LMT / LT WT capacity stencils. UTLX is Union Tank Car Company's reporting mark -- a named third-party company on rolling stock, in a film about a runaway oil train. Readable at native grade, unambiguous at 5x, and INVISIBLE ON EVERY TILE of sheet 24: it was found only by cropping the master.\nL086 (cut-0144, 11:57.2-12:02.3, also in cuts 0143 and 0145) a yellow tracked excavator whose boom carries a rectangular manufacturer decal. The reader re-sampled the whole cut at 4 fps and cropped at 16x with sharpening across five timestamps: it IS a wordmark and it does NOT resolve at 1080p, and the source is 1080p too, so no better read exists. Blocked on the precedent rather than cleared on a maybe -- this film has already lost three renders to exactly this asset class in exactly this position ('CASE', 'KOMATSU', 'PC 400 LC', a cast 'CP' monogram that reads as the Canadian Pacific reporting mark, and a 'Goliath' wordmark).\nAR-pexels_v_30243446 (cut-0169, 14:04.3-14:09.4) shelved as 'industrial_pipes_terminal' and actually a high-voltage gas-insulated switchgear hall with the bay label 'B 242' legible. It is a SIBLING OF THE CLIPS BLOCKED FROM EP73 THE SAME DAY: 30243437 and 30243440 are the same hall and carry Russian placards -- ЛР 221, ЗНТ ТР 211, ЗНЛ ЛР 221, Р ТН 1 / 220 кВ. No manufacturer wordmark resolved in this one's sampled frames; blocked anyway, because leaving one sibling behind is how this class came back three times. It also runs under the caption 'Forty-seven people were killed. Much of the centre of the town was destroyed.'\nEPISODE'S OWN FORBIDDEN_SUBJECTS -- these are in episode_spec.v001.json and were still cut in:\nAR-pexels_v_20630219 (cut-0125, 10:21.7-10:26.9) shelved as 'railway_track_night', actually an empty UNDERGROUND METRO PLATFORM. 'subway' is a forbidden_subject. Also ~60% near-black for 5s.\nAR-pexels_v_28523920 (cut-0133, 11:02.1-11:07.2) a preserved STEAM LOCOMOTIVE's wheels and white-painted side rods. 'steam locomotive' is a forbidden_subject, and the accident was a 2013 diesel.\nAR-pexels_v_29913462 (cut-0141, 11:42.4-11:47.5) INDIAN RAILWAYS freight stock -- teal BCNA covered wagons, an orange coach, Indian OHLE masts, monsoon vegetation -- in a Quebec film.\nMISREPRESENTS THE EVENT:\nAR-pexels_v_28348624 (cut-0131, 10:51.9-10:57.0) a large WILDFIRE running along an arid scrub ridge, cut under 'One of the volunteers went home in the small hours', immediately after the narration describes the small locomotive fire at Nantes that was put out with nobody hurt. The picture asserts a scale the film has just denied.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01, fourth read of EP72 (sheets 19-36 by a reader who re-sampled the master at 4 fps and cropped to 16x). The UTLX stencil and the excavator decal were the reader's own crops from the master, not sheet tiles."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_38683845",
+        "AR-pexels_v_12891229",
+        "AR-pexels_28829385"
+      ],
+      "label": "readable_third_party_branding",
+      "reason": "GLOBAL, not episode-scoped: the mark is painted on the subject and travels with the clip wherever it is staged.\npexels 38683845 -- the HollyFrontier refinery at Woods Cross, Utah. The HF monogram and the HollyFrontier wordmark are on the white storage tank at frame right, legible at 1920px WITHOUT a crop. Staged in EP73 uri as oil_storage_tank_farm_aerial (17:05) and in EP72 lacmegantic as oil_tank_car_railroad (16:35) -- two different shelf names, one pexels id, one refinery. A reader looking at the uri copy cleared it; a reader looking at the lacmegantic copy read the wordmark at 10x. The clip does not change between films.\npexels 12891229 -- the same refinery from a different angle, shelved as gas_compressor_station, blocked from uri earlier the same night at 3:25 for the same wordmark plus a partly legible CTCX-series reporting mark on a rail tank car.\npexels 28829385 -- misty lake with boats, EP72 at 4:52-4:57: a stylized aquablue wordmark on a boat hull at frame left, held the full five seconds, invisible at tile size and legible in a 5x crop.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01. The HollyFrontier tank was opened by the lane owner at 1920px from remotion/public/uri/factory/AR-pexels_v_38683845__oil_storage_tank_farm_aerial.mp4 at t=1.0s before this row was written. The uri render carrying it was killed 75 minutes in rather than allowed to finish."
+    },
+    {
+      "ids": [
+        "AR-pexels_36746548",
+        "AR-pexels_9391522",
+        "AR-pexels_v_36244093",
+        "AR-pexels_v_5844276",
+        "AR-pexels_v_3882887",
+        "AR-pexels_v_38828205"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_branding_and_off_subject",
+      "reason": "EP72 lacmegantic, remaining findings from the full 72-sheet read. Pool is 87, so seven more costs nothing.\nAR-pexels_36746548 (5:46) a lit hotel sign resolving at 8x to three stars over GNC over ...TEL. Small, half-occluded by a column and only partly legible -- the reader referred it up rather than deciding. Blocked: a real business sign that resolves at all is the same class as a hull mark, and partial legibility is what the last three misses looked like before somebody enlarged them.\nAR-pexels_9391522 (5:51.5) renders as flat blue bands and blocky compression noise with no discernible subject, held five seconds. The clip is broken.\nAR-pexels_v_36244093 (16:15) a night street in LOWER MANHATTAN -- the New York County courthouse colonnade with a street steam-stack -- under the line about the railway safety management system. Wrong country, and a recognisable landmark.\nAR-pexels_v_5844276 (21:47) a cheerful sunlit white-and-red clapboard house under blue sky, carried under the caption: Three men were charged with criminal negligence causing forty-seven deaths.\nAR-pexels_v_3882887 (16:55) trees wrapped in festive fairy lights on a promenade, under the line about the crude being more volatile than the shipping documents described. Wrong season and tonally wrong; the same lit tree recurs at 20:48.\nAR-pexels_v_38828205 (16:45) a mountainous coastal bay town that reads as Adriatic, in a film set in Quebec.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01, from the four-reader full read of EP72. Every one of these was found by a reader who re-sampled the master rather than trusting the contact sheets."
+    },
+    {
+      "ids": [
+        "U075",
+        "U112"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "reviewer_rejected_plate_cut_into_film",
+      "reason": "EP73 uri. episodes/_planning/EP73_uri_plate_verdicts.v001.json carries EIGHT plates at agent_preliminary_verdict=reject_recommended with human_verdict=null, and ALL EIGHT are cut into the film. A reader opened four of them on the 06:31 master and enlarged to 10-20x. Two are clearable on the evidence -- U057 (monitors) and U101 (badges, plates, bottle labels) resolve to illegible glyph noise. These two are not:\nU075 (cut-0119, 9:58.7-10:03.8) the reviewer wrote: Generator carries a visible wordmark-like label. Confirmed at 20x -- a white wordmark panel across the red housing, reading as a brand badge. Cleared at sheet scale, unmistakable enlarged.\nU112 (cut-0178, 14:57.5-15:02.7) the reviewer wrote: Legislative chamber includes multiple official portraits, flags, and plaque-like insignia. It is also FACTUALLY WRONG WHERE IT SITS: a daylit legislative chamber under the kinetic card \"1:20 A.M. / LOAD SHEDDING ORDERED\", when TX-10 attributes that order to ERCOT's control room. The picture misassigns the act and contradicts the time on its own card.\nThe remaining four (U001, U011, U033, U038) are in ranges still being read; they stay in unless a reader finds something, and the honest position is that nobody has cleared them either.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01, from the post-render read of the 06:31 master (sha 3352f939). The reviewer's own agent_reasons are quoted above verbatim; the reader confirmed both at 20x before either id was written down."
+    },
+    {
+      "ids": [
+        "U033"
+      ],
+      "episodes": [
+        "uri"
+      ],
+      "label": "reviewer_rejected_plate_cut_into_film",
+      "reason": "EP73 uri, cut-0056. The plate reviewer wrote: US and Texas flags visible, conflicting with the emblem exclusion -- agent_preliminary_verdict=reject_recommended, human_verdict=null, and it is cut into the film. A reader opened it on the 06:31 master and the flags are plainly visible exactly as described.\nTwo other rejects in the same range were checked and do NOT survive into the master: U001's storefront glyphs do not resolve at 10x, and U038's calculator numerals are garbled. Recorded so nobody blocks them later on the verdict text alone.\nSTANDING PROBLEM, not solved by this row: EP73_uri_plate_verdicts.v001.json is human_review_status=pending_owner_review and ALL 120 plates carry a blank human_verdict. Separately, twelve stills actually on screen (U121, U122, U123, U124, U126, U127, U128, U131, U139, U149, U150, U167) fall OUTSIDE the file's U001-U120 range and have no verdict row at all -- they are among the largest and longest-held images in act one. A reader has now looked at all twelve and found no face and no readable mark, which is a review by a reader, not by the plate owner.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01, from the post-render read of sha 3352f939."
+    },
+    {
+      "ids": [
+        "AR-pexels_v_2882182"
+      ],
+      "label": "identifiable_face",
+      "reason": "Global, not episode-scoped: a real-photography clip with an identifiable face is unsafe in any film. EP73 uri cut-0096, 8:10-8:15 (source AR-pexels_v_2882182, shelved as flashlight_beam_dark_room). A previous read of an earlier uri render flagged this clip only as off-subject (night hikers with headlamps standing in for a power station) and did not catch the face -- the sheet's four sample points happened to land on backlit/blown-out moments. A later read at full resolution, p20 sample, found a smiling face at frame-left: sunglasses pushed up, headlamp, orange bandana, mouth/teeth/cheek clearly resolved. Confirmed by the lane owner at 4x crop before blocking. Real, identifiable, not AI-generated.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-02, final pre-publish read of EP73 uri."
+    },
+    {
+      "ids": [
+        "AR-pexels_20654632"
+      ],
+      "label": "readable_third_party_branding",
+      "reason": "Global: real company logos in an industrial-yard aerial. EP77 keybridge cut-0053, ~6:07-6:10, shelved as 'an_aerial_view_of_a_truck_and_trailer'. Confirmed at full 1920px: a red 'AEP' (American Electric Power) roundel on a semi-trailer, and 'KOHLER' embossed on a generator housing. Both fully legible without cropping. Confirmed by the lane owner before blocking.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-02, keybridge re-read."
+    },
+    {
+      "ids": [
+        "AR-v_90789"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "readable_third_party_branding_and_wrong_era",
+      "reason": "EP72 lacmegantic, cut-0334, ~28:23-28:28. A junkyard of real, photographed EUROPEAN electric locomotives (catenary/pantograph masts visible in frame) with a faded curved livery mark and a white placard carrying illegible text on the nose. Neither mark resolves to a specific readable name at 1080p, but this film has already lost three renders to exactly this asset class (construction plant and rail rolling-stock branding: CASE, KOMATSU, PC 400 LC, a cast CP monogram, Goliath, UTLX) -- blocked on the same precedent rather than argued from an inconclusive crop. Also wrong era/region on its own terms: these are electrified European locomotives, and the 2013 Lac-Megantic derailment was a North American short-line diesel train.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-02, lacmegantic re-read."
+    },
+    {
+      "ids": [
+        "L089"
+      ],
+      "episodes": [
+        "lacmegantic"
+      ],
+      "label": "dramatised_victim_at_wreck_site",
+      "reason": "EP72 lacmegantic, ~11:48, a generated clip of a man crouched beside the ruptured tank car at the derailment site, near-frontal, mouth open in apparent distress, raising a hand. This is not a rendering glitch -- it is a coherent, identifiable-style human figure dramatising a person in danger at the wreck. This episode's own card, 'WHAT THIS FILM DOES NOT SHOW: No victim, no rescue, no body' (corrected 2026-09-01), makes exactly this promise; a distressed figure at the wreck breaks it, and it is the same class of image (a person reacting to the derailment, not simply present near generic wreckage) as the ruptured-tank-car sequence corrected earlier in this project. Confirmed by the lane owner at full resolution before blocking.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-03, lacmegantic re-read."
+    },
+    {
+      "ids": [
+        "AR-v_143479"
+      ],
+      "label": "readable_third_party_branding",
+      "reason": "Global: real drone stock of a lumber/sawmill yard (shelved as 'road_cargo_trailer_truck'). EP77 keybridge cut-0229, ~25:38-25:46. A semi-truck cab carries a maroon cursive wordmark on the roof, consistent with the Werner Enterprises trucking trademark, legible once cropped 5x. Confirmed by the lane owner before blocking. Generic atmospheric b-roll with zero connection to the case; same defect class as MSC/MAERSK/ONE/AEP/KOHLER caught earlier in this project.",
+      "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-03, keybridge re-read."
+    },
+    {
+      "ids": [
+        "C014"
+      ],
+      "episodes": [
+        "colgan"
+      ],
+      "label": "delta_air_lines_tail_liveries",
+      "reason": "EP78 colgan, 2:13-2:20 (cut-0020, colgan/motion/C014.mp4 from generated plate C014.png): three aircraft tails through a rain-streaked window carry Delta Air Lines' recognizable widget livery (dark navy tail, red upper wedge) -- the generator reproduced a real carrier's trade dress. rights_and_licence class. Found in the 2026-09-05 shipped-frames read of render v001 (sha 979c4a76), confirmed by independent crop-zoom. Episode-scoped because C-prefix plate ids are per-episode, not global shelf ids; the offending pixels exist only in colgan's C014 assets (img/C014.png, img/C014_depth.png, motion/C014.mp4 and the E:/pd-media ai_video archive copy).",
+      "added": "2026-09-05"
+    },
+    {
+      "ids": [
+        "X043",
+        "X062",
+        "X065"
+      ],
+      "episodes": [
+        "max737"
+      ],
+      "label": "real_carrier_liveries_in_window_backgrounds",
+      "reason": "EP83 max737 pre-render livery sweep 2026-09-05 (runs/qc/max737_livery_sweep.v001.json): X043 shows Air France-style red/blue tricolor tail stripes on two background aircraft through an office window; X062 shows a dark navy tail with a white DL monogram (reads as Delta) twice; X065 shows crimson carrier-style engine nacelles/trim. Same failure mode as colgan C014 (window-background aircraft, invisible at contact-sheet scale, resolves under zoom). rights_and_licence. X-prefix plate ids are max737-local; blocked for the plate, its depth sibling, and the i2v motion derivative everywhere they exist.",
+      "added": "2026-09-05"
+    }
+  ],
+  "quality_deferred": [
+    {
+      "ids": [
+        "AR-8774546"
+      ],
+      "label": "labelled_coronavirus_vial",
+      "reason": "test tube legibly labelled Coronavirus; reads as a fabricated document on screen"
+    },
+    {
+      "ids": [
+        "9715",
+        "9716",
+        "9718",
+        "9720",
+        "9723",
+        "9724",
+        "9725",
+        "9726",
+        "9727"
+      ],
+      "label": "clock_ticking_macro",
+      "reason": "cheap stock 'time' symbol; 9721 kept as the single usable clock"
+    },
+    {
+      "ids": [
+        "9305",
+        "9306",
+        "9309",
+        "9310",
+        "9311",
+        "9313",
+        "9315",
+        "9316",
+        "9317",
+        "9318"
+      ],
+      "label": "storm_clouds_dramatic",
+      "reason": "featureless sky, no subject; 9307 and 9312 kept"
+    },
+    {
+      "ids": [
+        "10951",
+        "10954",
+        "10958",
+        "10959",
+        "10960",
+        "10961"
+      ],
+      "label": "fireplace_embers_close",
+      "reason": "cosy hearth reads as warmth, not fire as evidence"
+    },
+    {
+      "ids": [
+        "14087",
+        "14090",
+        "14091",
+        "14094",
+        "14096",
+        "14097",
+        "14098",
+        "14099"
+      ],
+      "label": "church_interior_light_beam",
+      "reason": "nine near-identical church interiors; 14089 and 14092 kept"
+    },
+    {
+      "ids": [
+        "13962",
+        "13964",
+        "13969",
+        "13970",
+        "13971"
+      ],
+      "label": "cemetery_fog",
+      "reason": "cartoon Halloween gravestone, ivy with no subject, snowy European rows"
+    },
+    {
+      "ids": [
+        "23315"
+      ],
+      "label": "barbed_wire_fence_sky",
+      "reason": "green scribble abstract, mislabelled"
+    },
+    {
+      "ids": [
+        "18181"
+      ],
+      "label": "evidence_bag",
+      "reason": "actually a close-up of a child's face; dignity + mislabel"
+    },
+    {
+      "ids": [
+        "30299",
+        "30300",
+        "30301"
+      ],
+      "label": "documents_on_desk",
+      "reason": "modern pastel office, wrong era for 1980s-2000s cases"
+    },
+    {
+      "ids": [
+        "9217"
+      ],
+      "label": "small_town_main_street",
+      "reason": "snowy mountain town, wrong region"
+    },
+    {
+      "ids": [
+        "32159",
+        "32160",
+        "32162",
+        "32164",
+        "32165"
+      ],
+      "label": "police_badge_close_up",
+      "reason": "eight near-identical modern patrol clips; 32157/32163/32166 kept"
+    },
+    {
+      "ids": [
+        "AR-6964023"
+      ],
+      "label": "keyboard_letters_message",
+      "reason": "lifestyle stock: hands arranging plastic letter tiles into a message. Read as a scam-word gag over police-torture narration in EP55. Never documentary."
+    },
+    {
+      "ids": [
+        "AR-8293117"
+      ],
+      "label": "couple_welcome_mat",
+      "reason": "smiling couple placing a WELCOME sign at a doorstep. Domestic-lifestyle stock; contradicts every PD subject."
+    },
+    {
+      "ids": [
+        "2061",
+        "2062",
+        "2064",
+        "2065",
+        "2066",
+        "2067"
+      ],
+      "label": "laboratory_glassware",
+      "reason": "rainbow school-chemistry beakers; not a forensic laboratory"
+    },
+    {
+      "ids": [
+        "AR-6963492",
+        "AR-6962707",
+        "AR-7247815"
+      ],
+      "label": "readable_irs_form_1040",
+      "reason": "the same US federal tax-form prop shot sharp and large: 'Form 1040', 'Department of the Treasury-Internal Revenue Service (99)', 'U.S. Individual Income Tax Return', '2020', 'OMB No. 1545-0074', the filing-status boxes, the name/address/SSN field labels and the 2020 crypto question all resolve on screen. A readable form on screen asserts its own content; EP59 ran it under narration about mortgage affidavits."
+    },
+    {
+      "ids": [
+        "AR-241",
+        "AR-8731513",
+        "AR-7841658",
+        "AR-8960642",
+        "AR-7841584",
+        "AR-5778854",
+        "AR-17050"
+      ],
+      "label": "readable_contract_prop",
+      "reason": "document props whose body text is legible and says something the film does not mean: a construction contract ('Article 10. Insurance.', '10.1 Contractor's Insurance.'), a British private-school text ('about 500 private schools in Great Britain', 'Winchester'), 'Product Development Agreement', 'LEASE AGREEMENT', a US 'At-Will Employment' contract used for a UK sub-postmaster contract, a photographer's 'Model Release Form' used as a plea document, and a subcontracting agreement used as a felony charge sheet. Every document on screen must be an unreadable smear."
+    },
+    {
+      "ids": [
+        "AR-8382677"
+      ],
+      "label": "readable_forensic_document",
+      "reason": "a fingerprint card with legible printed and handwritten fields -- 'LEAVE BLANK', 'CRIMINAL', a handwritten date and the place name 'New York' twice. A readable fabricated forensic record, and the legible state contradicts any story not set in New York."
+    },
+    {
+      "ids": [
+        "AR-8061568"
+      ],
+      "label": "readable_third_party_privacy_policy",
+      "reason": "a stapled agreement held flat to camera, in focus, filling a third of the frame: 'What are the legal basis for processing your Personal Information?', 'uses cookies and web beacons (including pixel tags)', 'political opinions, health or biometric'. Two readers independently identified the company named throughout as Yandex -- a real company's privacy policy standing in for a US foreclosure affidavit."
+    },
+    {
+      "ids": [
+        "AR-10325"
+      ],
+      "label": "readable_screen_code",
+      "reason": "sharply legible JavaScript filling the frame, including 'b.yaCounter29509970', '\"yandex_metrika_callbacks\"' and 'document.cookie' -- a real Russian analytics product's tracking code, on screen as a 1999 retail system. Text on a screen must never resolve; when it does it asserts a technology the story does not have."
+    },
+    {
+      "ids": [
+        "AF-BG-30798",
+        "AR-14614733",
+        "AR-12154580",
+        "AR-35182373",
+        "AR-34787807",
+        "AR-34088981",
+        "AR-28388728",
+        "AF-BG-6237",
+        "AR-6676510",
+        "AR-3360811"
+      ],
+      "label": "foreign_location_standing_in_for_us",
+      "reason": "identifiable non-US locations and vehicles used as American ones: a Japanese patrol car whose roof board reads 警視庁 (Tokyo Metropolitan Police); a Finnish VR train at a Nordic station; a Paris Metro/RER platform with 'Sortie' and Ile-de-France Mobilites livery; a Chinese lantern street; a Moroccan railway concourse; Government House in Baku with the Azerbaijani flag; a Vigo, Spain courthouse hyperlapse; the University of Havana colonnade with the 'ALMA MATER' statue and a Cuban national flag; a South American mill signed 'MOLINOS HNOS ... SANTA ROSA'; and a night street carrying a 'BEAUTIFUL BRITISH COLUMBIA' plate. The last two are also barred by EP60 surfside for ruin and ambulance content; the reason recorded here is the one that generalises."
+    },
+    {
+      "ids": [
+        "AR-4263",
+        "AR-v_143808",
+        "AR-v_28693",
+        "AR-v_28880",
+        "AR-1246"
+      ],
+      "label": "identifiable_london_street",
+      "reason": "London streets carrying legible identifying text: a red double-decker with route '47' and operator 'Stagecoach'; 'BIGBUS LONDON' at Parliament Square; a London Underground roundel with the nameplate 'BELGROVE STREET' and a real 'Post Office' shopfront sign; a converted bus at Albert Dock signed 'MERSEYSIDE MARITIME MUSEUM'; and a Transport for London roundel with a red double-decker in a film set in Norfolk, Virginia. PD is a US-case channel: these read as a foreign country in every episode. EP56 postoffice is the one UK story and forbids bus imagery outright, so nothing on the slate can use them."
+    },
+    {
+      "ids": [
+        "AR-21911",
+        "AR-5452720",
+        "AR-31940805",
+        "AR-27616566",
+        "AR-37715200",
+        "AR-5228146"
+      ],
+      "label": "foreign_language_signage_on_screen",
+      "reason": "foreign-language text legible on screen in American stories: a Cyrillic ATM ('Выдать чек?', 'Выберите сумму') with a EUR denomination menu; a Cyrillic Minsk street map covering the back wall of a 'US servicer call centre' set ('ул. Матусевича', 'Площадь Победы'); Buenos Aires gantries ('Av. GENERAL PAZ', 'AEROPARQUE', '100 MAXIMA'); an open Polish-language newspaper under US banknotes; a fully legible 'Morning Kashmir' newspaper dated 21 May 2025; and a street fascia with Polish copy plus a live phone number and URL ('www.pepes.co.uk', '0208 567 2211')."
+    },
+    {
+      "ids": [
+        "AR-10472376"
+      ],
+      "label": "third_party_courier_branding",
+      "reason": "a parcel hub with the real 'LEL EXPRESS' logo legible on three signs and trolleys, alongside readable gantry signs 'INBOUND LANE 15' and 'INBOUND LANE 16'. A live third-party commercial brand and a non-US depot standing in for a national postal operation."
+    },
+    {
+      "ids": [
+        "AF-BG-32300",
+        "AF-BG-62568",
+        "AR-10476422"
+      ],
+      "label": "invented_police_force",
+      "reason": "actors whose shoulder patch reads 'CITY COP', a force that does not exist, standing in for real named police departments. A fabricated insignia on a documentary screen asserts a fact (invariant 11), and the same stock family reached both EP55 burge and EP57 fieldtest. One of the three also shows a man gripping holding-cell bars with his face fully visible."
+    },
+    {
+      "ids": [
+        "AF-BG-62558"
+      ],
+      "label": "dc_police_with_live_recruitment_url",
+      "reason": "a cruiser with unit number 9751 and fully legible 'METROPOLITAN POLICE' plus the live recruitment address 'join us - dcpolicejobs.dc.gov', beside a military Humvee and camouflaged soldiers -- a dated 2020-21 Washington DC National Guard deployment. Wrong city, wrong decade and a specific real event, with a working third-party web address on screen."
+    },
+    {
+      "ids": [
+        "AF-BG-32299"
+      ],
+      "label": "mislabelled_vox_pop",
+      "reason": "filed on the shelf as 'evidence_bag'; it is a smiling, laughing woman in a red coat holding a microphone and gesturing to camera on a suburban street, face fully identifiable. Consumer vox-pop stock. It played under torture testimony in EP55 purely because the label lied."
+    },
+    {
+      "ids": [
+        "AR-7232001"
+      ],
+      "label": "glamour_stock_interrogation",
+      "reason": "a young woman under a single interrogation lamp styled as glamour stock -- low-cut top, choker, heavy makeup, shoji-screen backdrop, an open foam-lined case at frame left. Sexualised styling of a restrained person is never documentary and contradicts every PD subject."
+    },
+    {
+      "ids": [
+        "AR-34719182"
+      ],
+      "label": "sci_fi_cityscape",
+      "reason": "a glowing blue futuristic neon cityscape: explicit science-fiction imagery with no documentary referent, run under narration about sex-offender registration."
+    },
+    {
+      "ids": [
+        "AF-BG-6236",
+        "AF-BG-31848"
+      ],
+      "label": "identifiable_courthouse_wrong_town",
+      "reason": "aerials of the same real American town square dominated by a Second-Empire stone courthouse with mansard roof, clock tower and cupola, a US flag and brick storefronts. Architecturally identifiable and not any town PD has covered. EP61 weimer rejected AF-BG-6236 as 'not Fayette County'; because the rejection was never turned into a block, EP54 flowers then ran the same clip and its twin under an on-screen 'WINONA, MISSISSIPPI' card -- a town of about 5,000 people with no such building. This entry exists so that cannot happen a third time."
+    },
+    {
+      "ids": [
+        "AF-BG-14092",
+        "AF-BG-9595"
+      ],
+      "label": "foreign_orthodox_church_interior",
+      "reason": "Eastern Orthodox interiors: a bishop icon in Slavonic style, a three-bar cross and Cyrillic-style lettering on the analogion cloth, ornate gilt-brass candle stands with thin red and yellow tapers, a gold-ground Byzantine icon. Foreign-language lettering and non-US religious architecture presented as western Pennsylvania. Supersedes the 'kept' note on the church_interior_light_beam entry for 14092."
+    },
+    {
+      "ids": [
+        "AR-20132104"
+      ],
+      "label": "wrong_region_small_town",
+      "reason": "an aerial of Lynden, Washington -- the basename names it -- with snow-capped mountains on the horizon, used as coastal Tidewater Virginia. Same class as 9217."
+    },
+    {
+      "ids": [
+        "AF-BG-62560",
+        "AR-6125532",
+        "AF-BG-32230"
+      ],
+      "episodes": [
+        "burge"
+      ],
+      "label": "restraint_and_distress",
+      "reason": "EP55's design document forbids depicting the torture: 'no restrained person, no device touching anyone, no distress faces', and episode_spec forbids 'torture'. These are a full-frame close-up of hands locked in steel handcuffs, a woman handcuffed at an interrogation table mid-shout, and a man shot through cell bars with his face upturned reading as anguish. Handcuffs and cell bars are ordinary material for other episodes -- this is an EP55 constraint, not a shelf defect."
+    },
+    {
+      "ids": [
+        "AF-BG-36300"
+      ],
+      "episodes": [
+        "burge"
+      ],
+      "label": "lapd_seal_legible_wrong_city",
+      "reason": "a cruiser door carrying the legible seal 'CITY OF LOS ANGELES' around the California bear and the LAPD motto 'to protect and to serve', used for Chicago PD (whose cars read 'We Serve and Protect'). CLOSE CALL: this is a real US agency correctly depicted, so it is legitimate material for a Los Angeles story and is scoped rather than blocked. It must never be staged for an episode set anywhere else; a keyword gate cannot see that, so it is a review point."
+    },
+    {
+      "ids": [
+        "AR-23315"
+      ],
+      "episodes": [
+        "morton"
+      ],
+      "label": "couple_staged_on_a_bed",
+      "reason": "a young woman and a bearded man sitting together on a bed going through papers, both faces fully resolved. EP52's design document requires the bedroom to appear only as ABSENCE and bans any likeness of Michael or Christine Morton. Ordinary domestic-stress stock for a debt or foreclosure episode; unusable here."
+    },
+    {
+      "ids": [
+        "P06"
+      ],
+      "label": "unanonymised_courtroom_faces",
+      "episodes": [
+        "willingham"
+      ],
+      "reason": "P06 shows two unanonymised courtroom faces with severe colour corruption (teal suits, acid-green cast, posterisation). No name is captioned on either, so this is a likeness and grade problem, not a named-identity defect. Split out of the named_real_person_likeness row on 2026-08-05."
+    },
+    {
+      "ids": [
+        "AR-37957757",
+        "AR-30339957"
+      ],
+      "episodes": [
+        "postoffice"
+      ],
+      "label": "bus_in_frame",
+      "reason": "episode_spec forbids 'bus' outright -- Martin Griffiths died after walking in front of a moving bus. The first has a white-and-blue single-decker filling the right half of frame, defocused but unmistakable. The second is AMBIGUOUS and is recorded as such: a free-standing kerbside passenger shelter in heavy fog, the standard UK bus-shelter form, but the reviewer's own note says it cannot be read as unambiguously a BUS shelter from the sampled frames. Both are ordinary street footage for any other episode."
+    },
+    {
+      "ids": [
+        "AR-v_318039",
+        "AR-15040626"
+      ],
+      "episodes": [
+        "postoffice"
+      ],
+      "label": "method_adjacent_composition",
+      "reason": "EP56's restraint block bars bridge and parapet imagery and 'method emphasis'. The first is a road bridge on piers over a frozen river; the second is a lone human figure at a quay railing above black water at night. Neither is a shelf defect -- both are ordinary scenic footage -- and the second is an explicit editorial judgement no keyword names."
+    },
+    {
+      "ids": [
+        "AR-7714286"
+      ],
+      "episodes": [
+        "robosigning"
+      ],
+      "label": "charged_imagery_meaning_mismatch",
+      "reason": "a uniformed officer leaning into the window of a car driven by a Black man, run under narration about a Maine lawyer deposing a document processor and again under a line about mailing statements. Nothing in EP59 involves police or a traffic stop; three readers flagged it independently. Editorial, not a rights or truth defect, so it is scoped."
+    },
+    {
+      "ids": [
+        "AR-v_218133",
+        "AR-2691466",
+        "AR-34387138",
+        "AR-31687629"
+      ],
+      "episodes": [
+        "surfside"
+      ],
+      "label": "ruin_and_demolition",
+      "reason": "episode_spec forbids 'collapse', 'rubble', 'debris' and 'excavator' and its note calls that binding and non-negotiable. These are a drone descent over an active demolition site (yellow tracked excavator, spoil heaps, debris skips) filed on the shelf as 'rehabilitated_building_rehabilitation'; a gutted interior with fallen ceiling joists; a derelict room with broken masonry; and an abandoned entrance with a broken door and threshold debris. Ruins and demolition are ordinary material for other episodes."
+    },
+    {
+      "ids": [
+        "W066",
+        "W084",
+        "W044",
+        "W058",
+        "W059",
+        "W029"
+      ],
+      "episodes": [
+        "weimer"
+      ],
+      "label": "forbidden_subject_plates",
+      "reason": "EP61's own generated plates, each hitting a line of its episode_spec: W066 is a stainless post-mortem table under a surgical lamp ('a mortuary, a post-mortem examination'); W084 is a steel cell door with a wired-glass observation port, circled by the film's own annotation, and W044 an institutional corridor ('prison cells ... as the primary register'); W058 is a real photographed neoclassical civic building captioned as 'The Office of the Fayette County District Attorney' ('any real ... courthouse ... identifiable by architecture'); W059 is a plaster arch with a measurement arrow cutting to calipers ('dental casts of a human jaw'); W029 draws an evidence-marker ring onto empty asphalt, enclosing nothing, with the callout clipped mid-word ('evidence markers on a pavement'). W-numbers exist only in weimer."
+    },
+    {
+      "ids": [
+        "AF-BG-14089"
+      ],
+      "episodes": [
+        "weimer"
+      ],
+      "label": "reads_as_the_victim",
+      "reason": "a young man -- shaved head, neck tattoo, sleeveless top -- alone in a church pew, held across the line 'He wanted to be a chef.' episode_spec forbids 'the victim Curtis Haith in any depiction, real or generic'. The clip is an ordinary church interior elsewhere; note that the sibling entry church_interior_light_beam kept 14089 and 14092 as the two usable ones, and both have now been rejected -- 14092 globally, 14089 here."
+    },
+    {
+      "ids": [
+        "AF-BG-9208"
+      ],
+      "episodes": [
+        "weimer"
+      ],
+      "label": "seasonal_decorations_and_brand_sign",
+      "reason": "a dusk aerial down a main street with lit municipal snowflake Christmas decorations on the utility poles and a lit DOLLAR GENERAL sign, over flat terrain reading southern US rather than Appalachian Fayette County. AMBIGUOUS: a southern US main street is ordinary PD material and the decorations only misdate a film whose events are not at Christmas, so this is scoped rather than blocked. Any episode staging it must check the season."
+    },
+    {
+      "ids": [
+        "AF-BG-2665"
+      ],
+      "episodes": [
+        "weimer"
+      ],
+      "label": "monochrome_reads_as_archival",
+      "reason": "a fully monochrome silhouette insert among colour shots, under 'They told the jury they were not receiving deals in exchange for their testimony' -- it reads as an authentic archival record of real people, which is what invariant 11 exists to prevent. AMBIGUOUS: the defect is the grade, not the content, and a colour treatment would remove it, so this is scoped rather than blocked. The durable fix is a rule that no cut may render monochrome, not a ban on this clip."
+    }
+  ],
+  "quality_deferred_note": "Set aside on 2026-08-05 by owner decision to ship, NOT because the finding was wrong. Every row here was written from a frame someone actually opened and is an accurate record of what this shelf contains; it is retained verbatim so the same judgement does not have to be made again. These rows do not bind any tool. Restore a row to `blocked` by moving it back.",
+  "cross_episode_notes": [
+    {
+      "found_at": "2026-08-31",
+      "note": "Blocks written tonight are EPISODE-SCOPED, so audit_films_vs_blocklist will not flag the same clips in other films. A direct scan of every built film found the readable-brand clips already present in TWO PUBLISHED episodes:\n  norfolk    (public, H8j_K1x9Dog) uses AR-pexels_v_10971670 ('CASE' on an excavator) and AR-pexels_v_12598147 ('KOMATSU' on an excavator)\n  postoffice (public, 4FlCaOVpln0) uses AR-pexels_v_14614733 (a European EMU in readable 'EASTERN' livery, with snow, in a US postal story)\nNothing was done about the published videos: taking down or replacing a public upload is a destructive, owner-approval action under .claude/rules/08. This note exists so the exposure is on the record and the owner can rule. The open question is whether readable-brand clips should be blocked GLOBALLY rather than per episode -- the argument for is that a legible third-party mark is a hazard in any film; the argument against is that a KOMATSU excavator in an episode about construction may be a legitimate editorial choice."
+    }
+  ]
+}

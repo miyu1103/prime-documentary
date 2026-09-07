@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "topic_id": "TOP-20260619-005",
+  "slug": "madoff",
+  "title_working": "Madoff: The Biggest Ponzi Scheme in History",
+  "state": "asset_plan_ready",
+  "risk_class": "R1",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v002",
+    "research_plan": "v001",
+    "sources": "v002",
+    "claims": "v002",
+    "chronology": "v001",
+    "contradictions": "v002",
+    "research_qc": "v002",
+    "script": "v001",
+    "scene_plan": "v001",
+    "visual_bible": "v001",
+    "sdxl_prompts": "v001",
+    "remotion_plan": "v001",
+    "runway_shots": "v001",
+    "voice_plan": "v001",
+    "audio_cue_sheet": "v001",
+    "edit_plan": "v001",
+    "handoff_codex": "v001"
+  },
+  "artifacts": [],
+  "approvals": [
+    "APR-0001",
+    "APR-0002",
+    "APR-0003"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Owner continued the money/financial-fraud direction after FTX (Ep.4) and explicitly delegated the Ep.5 topic choice to Claude (2026-06-19). Series so far: Miranda(1) -> Gideon(2) -> Mapp(3) -> FTX/SBF(4) -> Madoff(5).",
+    "R1 (DOWN from FTX R2): Madoff is DECEASED (2021) and pleaded GUILTY (2009) -> lower defamation risk. Still: no real-person likeness (anonymous silhouettes only); all money figures sourced to court records / SIPA trustee / SEC filings before script lock; living non-defendants (family, employees, whistleblower, regulators) described neutrally by role.",
+    "Differentiation from FTX must stay sharp: FTX = crypto-exchange software backdoor; Madoff = classic paper Ponzi (new deposits pay old 'returns'). Keep the 'hidden system' spine.",
+    "ANGLE LOCKED v002 (owner delegated 'おすすめで', 2026-06-19): Madoff is an over-covered story, so the angle is deliberately differentiated. Protagonist = the impossibly perfect, never-down return CHART as the smoking gun ('too steady = red flag', a takeaway the viewer can use). Human spine = the whistleblower ignored by the SEC for ~9 years (hero vs sleeping watchdog). Myth-correction payoff on the famous $65B (fabricated value vs ~$17.5B principal). Visual identity: faceless, dark/gold noir, NO pink.",
+    "Thumbnail/visual rule: hero motif is the perfect rising return curve; NO pink anywhere; no real-person likeness (silhouettes only)."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-19T00:00:00+00:00",
+  "updated_at": "2026-06-19T13:51:00+00:00"
+}

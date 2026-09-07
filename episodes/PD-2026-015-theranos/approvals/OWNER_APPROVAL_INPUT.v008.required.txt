@@ -1,0 +1,50 @@
+This file is the exact-hash approval input required before any upload, publish, or schedule action for PD-2026-015-theranos v008.
+
+Do not treat this file itself as approval. To activate the gates, the owner/legal reviewer must approve the exact blocks below, then copy only the approved blocks into:
+episodes/PD-2026-015-theranos/approvals/OWNER_APPROVAL_INPUT.v008.txt
+
+External action requested:
+- Initial YouTube upload must be private.
+- Public schedule target: 2026-06-30T12:00:00+09:00 / 2026-06-30T03:00:00Z.
+- Synthetic media disclosure must be set where supported.
+
+APPROVED: PD-2026-015-theranos first-cut/final video review v008.
+Video: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4
+Video SHA-256: sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec
+Runtime: 735.42s / 12:15
+Acceptance: episodes/PD-2026-015-theranos/08_edit/renders/final.v006.acceptance.json
+Acceptance SHA-256: sha256:9fd0129980216de24a68855829c0bd460440a34e3e27ba9013a3d22d01adea26
+Scope: final video approval only. No upload, schedule, or public release unless APR-0005 and APR-0006 are also approved.
+
+APPROVED: PD-2026-015-theranos title/thumbnail v008.
+Title: When Does a Bold Promise Become a Crime? The Rise and Fall of Theranos
+Thumbnail: episodes/PD-2026-015-theranos/09_package/thumbnail.selected.v003.png
+Thumbnail SHA-256: sha256:17f4e97f0b34ce1697cf7ac089201b213df9184ae744a2cbc4c0b67d72aa2f3a
+YouTube metadata: episodes/PD-2026-015-theranos/09_package/youtube_meta.v008.json
+YouTube metadata SHA-256: sha256:e95039f9f38c4742c01e9549419f06632ece3a8c30c86fae93873e9960eb3e32
+Scope: title/thumbnail approval only. No upload, schedule, or public release unless APR-0005 and APR-0006 are also approved.
+
+APPROVED: PD-2026-015-theranos final narration/audio release v008.
+Narration master: H:/pd-media/episodes/PD-2026-015-theranos/06_voice/master/vc_master_v001.mp3
+Narration master SHA-256: sha256:6fee72875c34867cf8e37d34bbbdee769bbbf4735cbeb7adf884e886760a58b0
+Final audio mix: H:/pd-media/episodes/PD-2026-015-theranos/06_voice/master/theranos_mix_v001.mp3
+Final audio mix SHA-256: sha256:083b1500352a3eab4945428e0f6b96ab0a7b57f5a60a6c8cf1aa439b6b492be5
+Scope: final narration/audio release approval only. No upload, schedule, or public release unless APR-0005 and APR-0006 are also approved.
+
+APPROVED: PD-2026-015-theranos R3 legal/rights review v008 for the exact package hashes below.
+Legal/rights review packet: episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v008.json
+Legal/rights review packet SHA-256: sha256:0ad72c5ce2f84ee2c01eb8c84f4540cc1da1cdb084fa5255ec06cb204a243d56
+Rights manifest: episodes/PD-2026-015-theranos/09_package/rights_manifest.v008.json
+Rights manifest SHA-256: sha256:25b7b2837bf9dfd7466620386e86ee1d23718de0d5b8aab3ecf8d1a5d218b865
+Conditions: keep living-person framing record-based and neutral; no Holmes/Balwani likeness; no Theranos logo/brand mark; patient counts remain ACQUITTED/not guilty; three counts remain NO VERDICT/mistrial; acquittal is not framed as exoneration or proof the technology worked.
+Scope: public-release risk gate only. This does not authorize upload or schedule by itself.
+
+APPROVED: PD-2026-015-theranos publish/schedule v008 for the exact final delivery hash below.
+Final delivery: episodes/PD-2026-015-theranos/09_package/final_delivery.v008.json
+Final delivery SHA-256: sha256:3e3fb56da842a802c7112959f69d56f62490d0c7c217af72023f30fdf1cff28e
+Final video SHA-256: sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec
+Selected thumbnail SHA-256: sha256:17f4e97f0b34ce1697cf7ac089201b213df9184ae744a2cbc4c0b67d72aa2f3a
+Initial upload must be private.
+Public schedule target: 2026-06-30T12:00:00+09:00 / 2026-06-30T03:00:00Z.
+Synthetic media disclosure must be set where supported.
+Scope: upload privately, set thumbnail, upload sidecar captions, and schedule public release for the exact target above only.

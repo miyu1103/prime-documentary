@@ -1,0 +1,2923 @@
+{
+ "episode_id": "PD-2026-038-kidsforcash",
+ "fps": 30,
+ "narration": "kidsforcash/narration.mp3",
+ "narrationSeconds": 543.346,
+ "hookSeconds": 8.04,
+ "hookLine": "Two judges were paid to send children to jail.",
+ "hook": [
+  {
+   "start": 0.0,
+   "dur": 1.34,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S01.png",
+   "seed": "hook-0.0"
+  },
+  {
+   "start": 1.34,
+   "dur": 1.34,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S02.png",
+   "seed": "hook-1.34"
+  },
+  {
+   "start": 2.68,
+   "dur": 1.34,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S03.png",
+   "seed": "hook-2.68"
+  },
+  {
+   "start": 4.02,
+   "dur": 1.34,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S04.png",
+   "seed": "hook-4.0200000000000005"
+  },
+  {
+   "start": 5.36,
+   "dur": 1.34,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S05.png",
+   "seed": "hook-5.36"
+  },
+  {
+   "start": 6.7,
+   "dur": 1.34,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S06.png",
+   "seed": "hook-6.7"
+  }
+ ],
+ "cuts": [
+  {
+   "start": 0.0,
+   "dur": 1.7,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-0460__office_interior_dark.mp4",
+   "seed": "kidsforcash-0",
+   "treatment": "footage"
+  },
+  {
+   "start": 1.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S01.png",
+   "seed": "kidsforcash-1",
+   "treatment": "depth"
+  },
+  {
+   "start": 3.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S02.png",
+   "seed": "kidsforcash-2",
+   "treatment": "depth"
+  },
+  {
+   "start": 9.4,
+   "dur": 1.8,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-3972__government_building_exterior.mp4",
+   "seed": "kidsforcash-3",
+   "treatment": "footage"
+  },
+  {
+   "start": 11.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S03.png",
+   "seed": "kidsforcash-4",
+   "treatment": "scan"
+  },
+  {
+   "start": 14.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S04.png",
+   "seed": "kidsforcash-5",
+   "treatment": "depth"
+  },
+  {
+   "start": 20.7,
+   "dur": 2.0,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-4134__money_cash_counting.mp4",
+   "seed": "kidsforcash-6",
+   "treatment": "footage"
+  },
+  {
+   "start": 22.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S05.png",
+   "seed": "kidsforcash-7",
+   "treatment": "duotone"
+  },
+  {
+   "start": 24.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S06.png",
+   "seed": "kidsforcash-8",
+   "treatment": "depth"
+  },
+  {
+   "start": 28.5,
+   "dur": 2.4,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-10144__old_library_archive.mp4",
+   "seed": "kidsforcash-9",
+   "treatment": "footage"
+  },
+  {
+   "start": 30.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S07.png",
+   "seed": "kidsforcash-10",
+   "treatment": "focus"
+  },
+  {
+   "start": 36.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S08.png",
+   "seed": "kidsforcash-11",
+   "treatment": "depth"
+  },
+  {
+   "start": 38.0,
+   "dur": 1.7,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-10228__stacked_legal_documents.mp4",
+   "seed": "kidsforcash-12",
+   "treatment": "footage"
+  },
+  {
+   "start": 39.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S09.png",
+   "seed": "kidsforcash-13",
+   "treatment": "scan"
+  },
+  {
+   "start": 41.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S10.png",
+   "seed": "kidsforcash-14",
+   "treatment": "depth"
+  },
+  {
+   "start": 47.4,
+   "dur": 1.8,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-10315__newspaper_printing_press.mp4",
+   "seed": "kidsforcash-15",
+   "treatment": "footage"
+  },
+  {
+   "start": 49.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S11.png",
+   "seed": "kidsforcash-16",
+   "treatment": "duotone"
+  },
+  {
+   "start": 52.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S12.png",
+   "seed": "kidsforcash-17",
+   "treatment": "depth"
+  },
+  {
+   "start": 58.7,
+   "dur": 2.0,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-11243__subway_tunnel_empty.mp4",
+   "seed": "kidsforcash-18",
+   "treatment": "footage"
+  },
+  {
+   "start": 60.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S13.png",
+   "seed": "kidsforcash-19",
+   "treatment": "focus"
+  },
+  {
+   "start": 62.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S14.png",
+   "seed": "kidsforcash-20",
+   "treatment": "depth"
+  },
+  {
+   "start": 66.5,
+   "dur": 2.4,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-12146__padlock_and_chain.mp4",
+   "seed": "kidsforcash-21",
+   "treatment": "footage"
+  },
+  {
+   "start": 68.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S15.png",
+   "seed": "kidsforcash-22",
+   "treatment": "scan"
+  },
+  {
+   "start": 74.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S16.png",
+   "seed": "kidsforcash-23",
+   "treatment": "depth"
+  },
+  {
+   "start": 76.0,
+   "dur": 1.7,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-19098__stacked_legal_documents.mp4",
+   "seed": "kidsforcash-24",
+   "treatment": "footage"
+  },
+  {
+   "start": 77.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S17.png",
+   "seed": "kidsforcash-25",
+   "treatment": "duotone"
+  },
+  {
+   "start": 79.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S18.png",
+   "seed": "kidsforcash-26",
+   "treatment": "depth"
+  },
+  {
+   "start": 85.4,
+   "dur": 1.8,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-33739__stacked_legal_documents.mp4",
+   "seed": "kidsforcash-27",
+   "treatment": "footage"
+  },
+  {
+   "start": 87.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S19.png",
+   "seed": "kidsforcash-28",
+   "treatment": "focus"
+  },
+  {
+   "start": 90.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S20.png",
+   "seed": "kidsforcash-29",
+   "treatment": "depth"
+  },
+  {
+   "start": 96.7,
+   "dur": 2.0,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-13403__drone_city_aerial_night.mp4",
+   "seed": "kidsforcash-30",
+   "treatment": "footage"
+  },
+  {
+   "start": 98.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S21.png",
+   "seed": "kidsforcash-31",
+   "treatment": "scan"
+  },
+  {
+   "start": 100.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S22.png",
+   "seed": "kidsforcash-32",
+   "treatment": "depth"
+  },
+  {
+   "start": 104.5,
+   "dur": 2.4,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-1362__newspaper_macro.mp4",
+   "seed": "kidsforcash-33",
+   "treatment": "footage"
+  },
+  {
+   "start": 106.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S23.png",
+   "seed": "kidsforcash-34",
+   "treatment": "duotone"
+  },
+  {
+   "start": 112.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S24.png",
+   "seed": "kidsforcash-35",
+   "treatment": "depth"
+  },
+  {
+   "start": 114.0,
+   "dur": 1.7,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-1437__rain_on_window_night.mp4",
+   "seed": "kidsforcash-36",
+   "treatment": "footage"
+  },
+  {
+   "start": 115.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S25.png",
+   "seed": "kidsforcash-37",
+   "treatment": "focus"
+  },
+  {
+   "start": 117.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S26.png",
+   "seed": "kidsforcash-38",
+   "treatment": "depth"
+  },
+  {
+   "start": 123.4,
+   "dur": 1.8,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-14513__courtroom_empty_wide.mp4",
+   "seed": "kidsforcash-39",
+   "treatment": "footage"
+  },
+  {
+   "start": 125.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S27.png",
+   "seed": "kidsforcash-40",
+   "treatment": "scan"
+  },
+  {
+   "start": 128.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S28.png",
+   "seed": "kidsforcash-41",
+   "treatment": "depth"
+  },
+  {
+   "start": 134.7,
+   "dur": 2.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S29.png",
+   "seed": "kidsforcash-42",
+   "treatment": "duotone"
+  },
+  {
+   "start": 136.7,
+   "dur": 1.6,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-14599__jury_box_empty.mp4",
+   "seed": "kidsforcash-43",
+   "treatment": "footage"
+  },
+  {
+   "start": 138.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S30.png",
+   "seed": "kidsforcash-44",
+   "treatment": "depth"
+  },
+  {
+   "start": 142.5,
+   "dur": 2.4,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S31.png",
+   "seed": "kidsforcash-45",
+   "treatment": "focus"
+  },
+  {
+   "start": 144.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S32.png",
+   "seed": "kidsforcash-46",
+   "treatment": "depth"
+  },
+  {
+   "start": 150.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S33.png",
+   "seed": "kidsforcash-47",
+   "treatment": "scan"
+  },
+  {
+   "start": 152.0,
+   "dur": 1.7,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S34.png",
+   "seed": "kidsforcash-48",
+   "treatment": "depth"
+  },
+  {
+   "start": 153.7,
+   "dur": 2.1,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-14601__jury_box_empty.mp4",
+   "seed": "kidsforcash-49",
+   "treatment": "footage"
+  },
+  {
+   "start": 155.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S35.png",
+   "seed": "kidsforcash-50",
+   "treatment": "duotone"
+  },
+  {
+   "start": 161.4,
+   "dur": 1.8,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S36.png",
+   "seed": "kidsforcash-51",
+   "treatment": "depth"
+  },
+  {
+   "start": 163.2,
+   "dur": 3.0,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-14682__witness_stand_empty.mp4",
+   "seed": "kidsforcash-52",
+   "treatment": "footage"
+  },
+  {
+   "start": 166.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S37.png",
+   "seed": "kidsforcash-53",
+   "treatment": "focus"
+  },
+  {
+   "start": 172.7,
+   "dur": 2.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S38.png",
+   "seed": "kidsforcash-54",
+   "treatment": "depth"
+  },
+  {
+   "start": 174.7,
+   "dur": 1.6,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-14767__police_station_at_night.mp4",
+   "seed": "kidsforcash-55",
+   "treatment": "footage"
+  },
+  {
+   "start": 176.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S39.png",
+   "seed": "kidsforcash-56",
+   "treatment": "scan"
+  },
+  {
+   "start": 180.5,
+   "dur": 2.4,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S40.png",
+   "seed": "kidsforcash-57",
+   "treatment": "depth"
+  },
+  {
+   "start": 182.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S01.png",
+   "seed": "kidsforcash-58",
+   "treatment": "duotone"
+  },
+  {
+   "start": 188.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S02.png",
+   "seed": "kidsforcash-59",
+   "treatment": "depth"
+  },
+  {
+   "start": 190.0,
+   "dur": 1.7,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S03.png",
+   "seed": "kidsforcash-60",
+   "treatment": "focus"
+  },
+  {
+   "start": 191.7,
+   "dur": 2.1,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-14897__evidence_locker_shelves.mp4",
+   "seed": "kidsforcash-61",
+   "treatment": "footage"
+  },
+  {
+   "start": 193.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S04.png",
+   "seed": "kidsforcash-62",
+   "treatment": "depth"
+  },
+  {
+   "start": 199.4,
+   "dur": 1.8,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S05.png",
+   "seed": "kidsforcash-63",
+   "treatment": "scan"
+  },
+  {
+   "start": 201.2,
+   "dur": 3.0,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-15005__crime_scene_tape_night.mp4",
+   "seed": "kidsforcash-64",
+   "treatment": "footage"
+  },
+  {
+   "start": 204.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S06.png",
+   "seed": "kidsforcash-65",
+   "treatment": "depth"
+  },
+  {
+   "start": 210.7,
+   "dur": 2.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S07.png",
+   "seed": "kidsforcash-66",
+   "treatment": "duotone"
+  },
+  {
+   "start": 212.7,
+   "dur": 1.6,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-1518__city_skyline_dusk.mp4",
+   "seed": "kidsforcash-67",
+   "treatment": "footage"
+  },
+  {
+   "start": 214.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S08.png",
+   "seed": "kidsforcash-68",
+   "treatment": "depth"
+  },
+  {
+   "start": 218.5,
+   "dur": 2.4,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S09.png",
+   "seed": "kidsforcash-69",
+   "treatment": "focus"
+  },
+  {
+   "start": 220.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S10.png",
+   "seed": "kidsforcash-70",
+   "treatment": "depth"
+  },
+  {
+   "start": 226.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S11.png",
+   "seed": "kidsforcash-71",
+   "treatment": "scan"
+  },
+  {
+   "start": 228.0,
+   "dur": 1.7,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S12.png",
+   "seed": "kidsforcash-72",
+   "treatment": "depth"
+  },
+  {
+   "start": 229.7,
+   "dur": 2.1,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-15260__long_shadow_of_a_person.mp4",
+   "seed": "kidsforcash-73",
+   "treatment": "footage"
+  },
+  {
+   "start": 231.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S13.png",
+   "seed": "kidsforcash-74",
+   "treatment": "duotone"
+  },
+  {
+   "start": 237.4,
+   "dur": 1.8,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S14.png",
+   "seed": "kidsforcash-75",
+   "treatment": "depth"
+  },
+  {
+   "start": 239.2,
+   "dur": 3.0,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-1676__suburban_house_exterior_night.mp4",
+   "seed": "kidsforcash-76",
+   "treatment": "footage"
+  },
+  {
+   "start": 242.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S15.png",
+   "seed": "kidsforcash-77",
+   "treatment": "focus"
+  },
+  {
+   "start": 248.7,
+   "dur": 2.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S16.png",
+   "seed": "kidsforcash-78",
+   "treatment": "depth"
+  },
+  {
+   "start": 250.7,
+   "dur": 1.6,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-22890__white_house_exterior.mp4",
+   "seed": "kidsforcash-79",
+   "treatment": "footage"
+  },
+  {
+   "start": 252.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S17.png",
+   "seed": "kidsforcash-80",
+   "treatment": "scan"
+  },
+  {
+   "start": 256.5,
+   "dur": 2.4,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S18.png",
+   "seed": "kidsforcash-81",
+   "treatment": "depth"
+  },
+  {
+   "start": 258.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S19.png",
+   "seed": "kidsforcash-82",
+   "treatment": "duotone"
+  },
+  {
+   "start": 264.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S20.png",
+   "seed": "kidsforcash-83",
+   "treatment": "depth"
+  },
+  {
+   "start": 266.0,
+   "dur": 1.7,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S21.png",
+   "seed": "kidsforcash-84",
+   "treatment": "focus"
+  },
+  {
+   "start": 267.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S22.png",
+   "seed": "kidsforcash-85",
+   "treatment": "depth"
+  },
+  {
+   "start": 269.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S23.png",
+   "seed": "kidsforcash-86",
+   "treatment": "scan"
+  },
+  {
+   "start": 275.4,
+   "dur": 1.8,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S24.png",
+   "seed": "kidsforcash-87",
+   "treatment": "depth"
+  },
+  {
+   "start": 277.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S25.png",
+   "seed": "kidsforcash-88",
+   "treatment": "duotone"
+  },
+  {
+   "start": 280.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S26.png",
+   "seed": "kidsforcash-89",
+   "treatment": "depth"
+  },
+  {
+   "start": 286.7,
+   "dur": 2.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S27.png",
+   "seed": "kidsforcash-90",
+   "treatment": "focus"
+  },
+  {
+   "start": 288.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S28.png",
+   "seed": "kidsforcash-91",
+   "treatment": "depth"
+  },
+  {
+   "start": 290.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S29.png",
+   "seed": "kidsforcash-92",
+   "treatment": "scan"
+  },
+  {
+   "start": 294.5,
+   "dur": 2.4,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S30.png",
+   "seed": "kidsforcash-93",
+   "treatment": "depth"
+  },
+  {
+   "start": 296.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S31.png",
+   "seed": "kidsforcash-94",
+   "treatment": "duotone"
+  },
+  {
+   "start": 302.1,
+   "dur": 1.9,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-6844__jail_cell_bars.mp4",
+   "seed": "kidsforcash-95",
+   "treatment": "footage"
+  },
+  {
+   "start": 304.0,
+   "dur": 1.7,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S32.png",
+   "seed": "kidsforcash-96",
+   "treatment": "depth"
+  },
+  {
+   "start": 305.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S33.png",
+   "seed": "kidsforcash-97",
+   "treatment": "focus"
+  },
+  {
+   "start": 307.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S34.png",
+   "seed": "kidsforcash-98",
+   "treatment": "depth"
+  },
+  {
+   "start": 313.4,
+   "dur": 1.8,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S35.png",
+   "seed": "kidsforcash-99",
+   "treatment": "scan"
+  },
+  {
+   "start": 315.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S36.png",
+   "seed": "kidsforcash-100",
+   "treatment": "depth"
+  },
+  {
+   "start": 318.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S37.png",
+   "seed": "kidsforcash-101",
+   "treatment": "duotone"
+  },
+  {
+   "start": 324.7,
+   "dur": 2.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S38.png",
+   "seed": "kidsforcash-102",
+   "treatment": "depth"
+  },
+  {
+   "start": 326.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S39.png",
+   "seed": "kidsforcash-103",
+   "treatment": "focus"
+  },
+  {
+   "start": 328.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S40.png",
+   "seed": "kidsforcash-104",
+   "treatment": "depth"
+  },
+  {
+   "start": 332.5,
+   "dur": 2.4,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S01.png",
+   "seed": "kidsforcash-105",
+   "treatment": "scan"
+  },
+  {
+   "start": 334.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S02.png",
+   "seed": "kidsforcash-106",
+   "treatment": "depth"
+  },
+  {
+   "start": 340.1,
+   "dur": 1.9,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-6841__jail_cell_bars.mp4",
+   "seed": "kidsforcash-107",
+   "treatment": "footage"
+  },
+  {
+   "start": 342.0,
+   "dur": 1.7,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S03.png",
+   "seed": "kidsforcash-108",
+   "treatment": "duotone"
+  },
+  {
+   "start": 343.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S04.png",
+   "seed": "kidsforcash-109",
+   "treatment": "depth"
+  },
+  {
+   "start": 345.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S05.png",
+   "seed": "kidsforcash-110",
+   "treatment": "focus"
+  },
+  {
+   "start": 351.4,
+   "dur": 1.8,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S06.png",
+   "seed": "kidsforcash-111",
+   "treatment": "depth"
+  },
+  {
+   "start": 353.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S07.png",
+   "seed": "kidsforcash-112",
+   "treatment": "scan"
+  },
+  {
+   "start": 356.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S08.png",
+   "seed": "kidsforcash-113",
+   "treatment": "depth"
+  },
+  {
+   "start": 362.7,
+   "dur": 2.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S09.png",
+   "seed": "kidsforcash-114",
+   "treatment": "duotone"
+  },
+  {
+   "start": 364.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S10.png",
+   "seed": "kidsforcash-115",
+   "treatment": "depth"
+  },
+  {
+   "start": 366.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S11.png",
+   "seed": "kidsforcash-116",
+   "treatment": "focus"
+  },
+  {
+   "start": 370.5,
+   "dur": 2.4,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S12.png",
+   "seed": "kidsforcash-117",
+   "treatment": "depth"
+  },
+  {
+   "start": 372.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S13.png",
+   "seed": "kidsforcash-118",
+   "treatment": "scan"
+  },
+  {
+   "start": 378.1,
+   "dur": 1.9,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-1901__police_car_lights_night.mp4",
+   "seed": "kidsforcash-119",
+   "treatment": "footage"
+  },
+  {
+   "start": 380.0,
+   "dur": 1.7,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S14.png",
+   "seed": "kidsforcash-120",
+   "treatment": "depth"
+  },
+  {
+   "start": 381.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S15.png",
+   "seed": "kidsforcash-121",
+   "treatment": "duotone"
+  },
+  {
+   "start": 383.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S16.png",
+   "seed": "kidsforcash-122",
+   "treatment": "depth"
+  },
+  {
+   "start": 389.4,
+   "dur": 1.8,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S17.png",
+   "seed": "kidsforcash-123",
+   "treatment": "focus"
+  },
+  {
+   "start": 391.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S18.png",
+   "seed": "kidsforcash-124",
+   "treatment": "depth"
+  },
+  {
+   "start": 394.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S19.png",
+   "seed": "kidsforcash-125",
+   "treatment": "scan"
+  },
+  {
+   "start": 400.7,
+   "dur": 2.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S20.png",
+   "seed": "kidsforcash-126",
+   "treatment": "depth"
+  },
+  {
+   "start": 402.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S21.png",
+   "seed": "kidsforcash-127",
+   "treatment": "duotone"
+  },
+  {
+   "start": 404.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S22.png",
+   "seed": "kidsforcash-128",
+   "treatment": "depth"
+  },
+  {
+   "start": 408.5,
+   "dur": 2.4,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-20983__abandoned_factory_interior.mp4",
+   "seed": "kidsforcash-129",
+   "treatment": "footage"
+  },
+  {
+   "start": 410.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S23.png",
+   "seed": "kidsforcash-130",
+   "treatment": "focus"
+  },
+  {
+   "start": 416.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S24.png",
+   "seed": "kidsforcash-131",
+   "treatment": "depth"
+  },
+  {
+   "start": 418.0,
+   "dur": 1.7,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-21499__empty_parking_garage.mp4",
+   "seed": "kidsforcash-132",
+   "treatment": "footage"
+  },
+  {
+   "start": 419.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S25.png",
+   "seed": "kidsforcash-133",
+   "treatment": "scan"
+  },
+  {
+   "start": 421.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S26.png",
+   "seed": "kidsforcash-134",
+   "treatment": "depth"
+  },
+  {
+   "start": 427.4,
+   "dur": 1.8,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-22282__for_sale_sign_yard.mp4",
+   "seed": "kidsforcash-135",
+   "treatment": "footage"
+  },
+  {
+   "start": 429.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S27.png",
+   "seed": "kidsforcash-136",
+   "treatment": "duotone"
+  },
+  {
+   "start": 432.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S28.png",
+   "seed": "kidsforcash-137",
+   "treatment": "depth"
+  },
+  {
+   "start": 438.7,
+   "dur": 2.0,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-23312__barbed_wire_fence_sky.mp4",
+   "seed": "kidsforcash-138",
+   "treatment": "footage"
+  },
+  {
+   "start": 440.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S29.png",
+   "seed": "kidsforcash-139",
+   "treatment": "focus"
+  },
+  {
+   "start": 442.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S30.png",
+   "seed": "kidsforcash-140",
+   "treatment": "depth"
+  },
+  {
+   "start": 446.5,
+   "dur": 2.4,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-23411__police_interrogation_room_empty.mp4",
+   "seed": "kidsforcash-141",
+   "treatment": "footage"
+  },
+  {
+   "start": 448.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S31.png",
+   "seed": "kidsforcash-142",
+   "treatment": "scan"
+  },
+  {
+   "start": 454.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S32.png",
+   "seed": "kidsforcash-143",
+   "treatment": "depth"
+  },
+  {
+   "start": 456.0,
+   "dur": 1.7,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-31063__school_hallway_empty.mp4",
+   "seed": "kidsforcash-144",
+   "treatment": "footage"
+  },
+  {
+   "start": 457.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S33.png",
+   "seed": "kidsforcash-145",
+   "treatment": "duotone"
+  },
+  {
+   "start": 459.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S34.png",
+   "seed": "kidsforcash-146",
+   "treatment": "depth"
+  },
+  {
+   "start": 465.4,
+   "dur": 1.8,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-31064__school_hallway_empty.mp4",
+   "seed": "kidsforcash-147",
+   "treatment": "footage"
+  },
+  {
+   "start": 467.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S35.png",
+   "seed": "kidsforcash-148",
+   "treatment": "focus"
+  },
+  {
+   "start": 470.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S36.png",
+   "seed": "kidsforcash-149",
+   "treatment": "depth"
+  },
+  {
+   "start": 476.7,
+   "dur": 2.0,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-23693__case_files_stack_desk.mp4",
+   "seed": "kidsforcash-150",
+   "treatment": "footage"
+  },
+  {
+   "start": 478.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S37.png",
+   "seed": "kidsforcash-151",
+   "treatment": "scan"
+  },
+  {
+   "start": 480.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S38.png",
+   "seed": "kidsforcash-152",
+   "treatment": "depth"
+  },
+  {
+   "start": 484.5,
+   "dur": 2.4,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-23797__shredded_documents_pile.mp4",
+   "seed": "kidsforcash-153",
+   "treatment": "footage"
+  },
+  {
+   "start": 486.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S39.png",
+   "seed": "kidsforcash-154",
+   "treatment": "duotone"
+  },
+  {
+   "start": 492.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S40.png",
+   "seed": "kidsforcash-155",
+   "treatment": "depth"
+  },
+  {
+   "start": 494.0,
+   "dur": 1.7,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-23989__money_counting_machine.mp4",
+   "seed": "kidsforcash-156",
+   "treatment": "footage"
+  },
+  {
+   "start": 495.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S01.png",
+   "seed": "kidsforcash-157",
+   "treatment": "focus"
+  },
+  {
+   "start": 497.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S02.png",
+   "seed": "kidsforcash-158",
+   "treatment": "depth"
+  },
+  {
+   "start": 503.4,
+   "dur": 1.8,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-26609__person_at_window_silhouette_night.mp4",
+   "seed": "kidsforcash-159",
+   "treatment": "footage"
+  },
+  {
+   "start": 505.2,
+   "dur": 3.0,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S03.png",
+   "seed": "kidsforcash-160",
+   "treatment": "scan"
+  },
+  {
+   "start": 508.2,
+   "dur": 6.5,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S04.png",
+   "seed": "kidsforcash-161",
+   "treatment": "depth"
+  },
+  {
+   "start": 514.7,
+   "dur": 2.0,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-2664__lone_person_silhouette_walking.mp4",
+   "seed": "kidsforcash-162",
+   "treatment": "footage"
+  },
+  {
+   "start": 516.7,
+   "dur": 1.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S05.png",
+   "seed": "kidsforcash-163",
+   "treatment": "duotone"
+  },
+  {
+   "start": 518.3,
+   "dur": 4.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S06.png",
+   "seed": "kidsforcash-164",
+   "treatment": "depth"
+  },
+  {
+   "start": 522.5,
+   "dur": 2.4,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-40287__empty_playground_at_dusk.mp4",
+   "seed": "kidsforcash-165",
+   "treatment": "footage"
+  },
+  {
+   "start": 524.9,
+   "dur": 5.2,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S07.png",
+   "seed": "kidsforcash-166",
+   "treatment": "focus"
+  },
+  {
+   "start": 530.1,
+   "dur": 1.9,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S08.png",
+   "seed": "kidsforcash-167",
+   "treatment": "depth"
+  },
+  {
+   "start": 532.0,
+   "dur": 1.7,
+   "kind": "footage",
+   "src": "kidsforcash/factory/AF-BG-27102__school_bus_yellow.mp4",
+   "seed": "kidsforcash-168",
+   "treatment": "footage"
+  },
+  {
+   "start": 533.7,
+   "dur": 2.1,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S09.png",
+   "seed": "kidsforcash-169",
+   "treatment": "scan"
+  },
+  {
+   "start": 535.8,
+   "dur": 5.6,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S10.png",
+   "seed": "kidsforcash-170",
+   "treatment": "depth"
+  },
+  {
+   "start": 541.4,
+   "dur": 1.8,
+   "kind": "img",
+   "src": "kidsforcash/img/kfc_S11.png",
+   "seed": "kidsforcash-171",
+   "treatment": "duotone"
+  }
+ ],
+ "captions": [
+  {
+   "start": 0.0,
+   "end": 2.75,
+   "text": "In 2007, a seventeen-year-old girl in Pennsylvania built"
+  },
+  {
+   "start": 2.75,
+   "end": 5.35,
+   "text": "a fake web page that made fun of her assistant"
+  },
+  {
+   "start": 5.35,
+   "end": 6.35,
+   "text": "principal."
+  },
+  {
+   "start": 6.35,
+   "end": 7.53,
+   "text": "It was a prank."
+  },
+  {
+   "start": 7.53,
+   "end": 9.57,
+   "text": "She expected, at worst, detention."
+  },
+  {
+   "start": 9.57,
+   "end": 11.81,
+   "text": "A judge sent her away for three months."
+  },
+  {
+   "start": 11.81,
+   "end": 13.87,
+   "text": "The hearing lasted about ninety seconds —"
+  },
+  {
+   "start": 13.87,
+   "end": 15.47,
+   "text": "and no one in that room told"
+  },
+  {
+   "start": 15.47,
+   "end": 17.19,
+   "text": "her she was allowed a lawyer."
+  },
+  {
+   "start": 17.19,
+   "end": 19.61,
+   "text": "The rest, she would not learn for years:"
+  },
+  {
+   "start": 19.61,
+   "end": 21.65,
+   "text": "that the judge who signed her order was being paid"
+  },
+  {
+   "start": 21.65,
+   "end": 23.49,
+   "text": "by the jail that took her in."
+  },
+  {
+   "start": 23.49,
+   "end": 26.33,
+   "text": "Paid for every child he sent through its doors."
+  },
+  {
+   "start": 26.33,
+   "end": 28.07,
+   "text": "Luzerne County, Pennsylvania."
+  },
+  {
+   "start": 28.07,
+   "end": 30.97,
+   "text": "Coal country, long after the coal."
+  },
+  {
+   "start": 30.97,
+   "end": 32.87,
+   "text": "In the city of Wilkes-Barre stood a courthouse"
+  },
+  {
+   "start": 32.87,
+   "end": 34.83,
+   "text": "that was supposed to be the one place a kid"
+  },
+  {
+   "start": 34.83,
+   "end": 36.97,
+   "text": "who went wrong could be set right."
+  },
+  {
+   "start": 36.97,
+   "end": 40.01,
+   "text": "The children who passed through it had done small things."
+  },
+  {
+   "start": 40.01,
+   "end": 41.597,
+   "text": "A shoving match in a hallway."
+  },
+  {
+   "start": 41.597,
+   "end": 44.05,
+   "text": "Twenty dollars of stolen makeup."
+  },
+  {
+   "start": 44.05,
+   "end": 45.71,
+   "text": "A rude page online."
+  },
+  {
+   "start": 45.71,
+   "end": 46.93,
+   "text": "The kind of thing that,"
+  },
+  {
+   "start": 46.93,
+   "end": 49.87,
+   "text": "almost anywhere else, ends with a warning and a ride"
+  },
+  {
+   "start": 49.87,
+   "end": 50.77,
+   "text": "home."
+  },
+  {
+   "start": 50.77,
+   "end": 52.97,
+   "text": "Here it began with a signature."
+  },
+  {
+   "start": 52.97,
+   "end": 55.25,
+   "text": "A child was handed a form giving up the right"
+  },
+  {
+   "start": 55.25,
+   "end": 56.57,
+   "text": "to a lawyer —"
+  },
+  {
+   "start": 56.57,
+   "end": 58.85,
+   "text": "and it was handed over the way you'd pass someone"
+  },
+  {
+   "start": 58.85,
+   "end": 61.49,
+   "text": "a receipt, as if it were nothing."
+  },
+  {
+   "start": 61.49,
+   "end": 63.37,
+   "text": "No one explained what it meant."
+  },
+  {
+   "start": 63.37,
+   "end": 64.65,
+   "text": "And so the children,"
+  },
+  {
+   "start": 64.65,
+   "end": 66.87,
+   "text": "young and scared and taught to trust the adults"
+  },
+  {
+   "start": 66.87,
+   "end": 69.69,
+   "text": "in the room, signed away the one protection"
+  },
+  {
+   "start": 69.69,
+   "end": 71.93,
+   "text": "that might have saved them."
+  },
+  {
+   "start": 71.93,
+   "end": 75.49,
+   "text": "Then came a man in a robe named Mark Ciavarella."
+  },
+  {
+   "start": 75.49,
+   "end": 77.77,
+   "text": "Half of the children who signed that form left"
+  },
+  {
+   "start": 77.77,
+   "end": 79.75,
+   "text": "his courtroom in handcuffs,"
+  },
+  {
+   "start": 79.75,
+   "end": 81.59,
+   "text": "bound for a locked facility."
+  },
+  {
+   "start": 81.59,
+   "end": 83.05,
+   "text": "In the rest of the state,"
+  },
+  {
+   "start": 83.05,
+   "end": 84.97,
+   "text": "that number was eight in a hundred."
+  },
+  {
+   "start": 84.97,
+   "end": 87.33,
+   "text": "And placement was not a slap on the wrist."
+  },
+  {
+   "start": 87.33,
+   "end": 90.03,
+   "text": "It meant being taken that same day —"
+  },
+  {
+   "start": 90.03,
+   "end": 92.87,
+   "text": "cuffed, photographed, driven hours from home,"
+  },
+  {
+   "start": 92.87,
+   "end": 95.57,
+   "text": "and left to sleep behind a locked door for weeks"
+  },
+  {
+   "start": 95.57,
+   "end": 96.57,
+   "text": "or months."
+  },
+  {
+   "start": 96.57,
+   "end": 98.01,
+   "text": "Missing school."
+  },
+  {
+   "start": 98.01,
+   "end": 99.75,
+   "text": "Missing a parent's face."
+  },
+  {
+   "start": 99.75,
+   "end": 101.71,
+   "text": "Learning to think of yourself as an inmate"
+  },
+  {
+   "start": 101.71,
+   "end": 103.81,
+   "text": "before you were old enough to drive."
+  },
+  {
+   "start": 103.81,
+   "end": 105.37,
+   "text": "It was fast, too."
+  },
+  {
+   "start": 105.37,
+   "end": 107.29,
+   "text": "A minute. Two."
+  },
+  {
+   "start": 107.29,
+   "end": 109.57,
+   "text": "A boy could be named a delinquent and led"
+  },
+  {
+   "start": 109.57,
+   "end": 111.27,
+   "text": "out a side door before his mother rose"
+  },
+  {
+   "start": 111.27,
+   "end": 112.57,
+   "text": "from her seat."
+  },
+  {
+   "start": 112.57,
+   "end": 114.51,
+   "text": "Some parents drove home and only understood,"
+  },
+  {
+   "start": 114.51,
+   "end": 117.27,
+   "text": "hours later, that they would not be tucking their child"
+  },
+  {
+   "start": 117.27,
+   "end": 118.39,
+   "text": "in that night —"
+  },
+  {
+   "start": 118.39,
+   "end": 120.53,
+   "text": "or for many nights after."
+  },
+  {
+   "start": 120.53,
+   "end": 122.79,
+   "text": "There were no long deliberations,"
+  },
+  {
+   "start": 122.79,
+   "end": 124.65,
+   "text": "no weighing of the evidence."
+  },
+  {
+   "start": 124.65,
+   "end": 127.01,
+   "text": "There was a decision that seemed to have been made"
+  },
+  {
+   "start": 127.01,
+   "end": 128.89,
+   "text": "before anyone walked in."
+  },
+  {
+   "start": 128.89,
+   "end": 131.55,
+   "text": "And still the parents believed it was justice,"
+  },
+  {
+   "start": 131.55,
+   "end": 133.97,
+   "text": "because who doesn't believe a judge?"
+  },
+  {
+   "start": 133.97,
+   "end": 134.87,
+   "text": "That belief —"
+  },
+  {
+   "start": 134.87,
+   "end": 136.91,
+   "text": "that a courtroom is a safe place to bring"
+  },
+  {
+   "start": 136.91,
+   "end": 137.81,
+   "text": "your child —"
+  },
+  {
+   "start": 137.81,
+   "end": 139.55,
+   "text": "was the first thing being sold."
+  },
+  {
+   "start": 139.55,
+   "end": 141.51,
+   "text": "To see what was really happening,"
+  },
+  {
+   "start": 141.51,
+   "end": 142.63,
+   "text": "follow the money."
+  },
+  {
+   "start": 142.63,
+   "end": 144.27,
+   "text": "It starts one floor up."
+  },
+  {
+   "start": 144.27,
+   "end": 145.55,
+   "text": "There were two judges."
+  },
+  {
+   "start": 145.55,
+   "end": 148.05,
+   "text": "Ciavarella, in the juvenile court."
+  },
+  {
+   "start": 148.05,
+   "end": 150.59,
+   "text": "And Michael Conahan, the president judge —"
+  },
+  {
+   "start": 150.59,
+   "end": 153.03,
+   "text": "the one who held the county's checkbook."
+  },
+  {
+   "start": 153.03,
+   "end": 155.69,
+   "text": "The county ran its own juvenile detention center,"
+  },
+  {
+   "start": 155.69,
+   "end": 157.59,
+   "text": "paid for with tax dollars."
+  },
+  {
+   "start": 157.59,
+   "end": 160.05,
+   "text": "Conahan starved it of funding and moved it toward"
+  },
+  {
+   "start": 160.05,
+   "end": 161.15,
+   "text": "the door."
+  },
+  {
+   "start": 161.15,
+   "end": 162.29,
+   "text": "He went further:"
+  },
+  {
+   "start": 162.29,
+   "end": 164.43,
+   "text": "he put his name to an agreement that guaranteed"
+  },
+  {
+   "start": 164.43,
+   "end": 167.11,
+   "text": "a steady stream of children to a brand-new,"
+  },
+  {
+   "start": 167.11,
+   "end": 169.77,
+   "text": "private, for-profit jail."
+  },
+  {
+   "start": 169.77,
+   "end": 170.67,
+   "text": "A guarantee."
+  },
+  {
+   "start": 170.67,
+   "end": 171.95,
+   "text": "In writing."
+  },
+  {
+   "start": 171.95,
+   "end": 174.43,
+   "text": "That a certain number of kids would be needed."
+  },
+  {
+   "start": 174.43,
+   "end": 177.29,
+   "text": "A for-profit jail lives by one number."
+  },
+  {
+   "start": 177.29,
+   "end": 179.01,
+   "text": "Empty beds cost money;"
+  },
+  {
+   "start": 179.01,
+   "end": 180.35,
+   "text": "full beds make it."
+  },
+  {
+   "start": 180.35,
+   "end": 183.19,
+   "text": "And now someone had promised the beds would be full."
+  },
+  {
+   "start": 183.19,
+   "end": 185.55,
+   "text": "They were filled the only way they could be —"
+  },
+  {
+   "start": 185.55,
+   "end": 186.95,
+   "text": "one child at a time,"
+  },
+  {
+   "start": 186.95,
+   "end": 189.47,
+   "text": "by the judge down the hall."
+  },
+  {
+   "start": 189.47,
+   "end": 192.69,
+   "text": "A developer named Robert Mericle built those facilities."
+  },
+  {
+   "start": 192.69,
+   "end": 196.25,
+   "text": "An attorney named Robert Powell owned and ran them."
+  },
+  {
+   "start": 196.25,
+   "end": 197.87,
+   "text": "Across roughly three years,"
+  },
+  {
+   "start": 197.87,
+   "end": 199.95,
+   "text": "the two men passed about two point eight million dollars"
+  },
+  {
+   "start": 199.95,
+   "end": 201.17,
+   "text": "to the judges."
+  },
+  {
+   "start": 201.17,
+   "end": 203.51,
+   "text": "It didn't move in open daylight;"
+  },
+  {
+   "start": 203.51,
+   "end": 206.43,
+   "text": "it moved through side accounts and quiet transfers,"
+  },
+  {
+   "start": 206.43,
+   "end": 210.13,
+   "text": "dressed up as a \"finder's fee.\" A referral."
+  },
+  {
+   "start": 210.13,
+   "end": 212.81,
+   "text": "Money, they said, for helping the places get built"
+  },
+  {
+   "start": 212.81,
+   "end": 214.13,
+   "text": "and kept busy."
+  },
+  {
+   "start": 214.13,
+   "end": 217.07,
+   "text": "Take the language away and it is very simple."
+  },
+  {
+   "start": 217.07,
+   "end": 218.51,
+   "text": "A child walked in."
+  },
+  {
+   "start": 218.51,
+   "end": 220.67,
+   "text": "A judge sent that child to a cell."
+  },
+  {
+   "start": 220.67,
+   "end": 222.13,
+   "text": "A payment followed."
+  },
+  {
+   "start": 222.13,
+   "end": 224.65,
+   "text": "And the children who came without a lawyer?"
+  },
+  {
+   "start": 224.65,
+   "end": 228.23,
+   "text": "In that courtroom they appeared seven to eleven times more"
+  },
+  {
+   "start": 228.23,
+   "end": 230.51,
+   "text": "often than anywhere else in the state —"
+  },
+  {
+   "start": 230.51,
+   "end": 232.81,
+   "text": "because a child with no lawyer is a child"
+  },
+  {
+   "start": 232.81,
+   "end": 234.77,
+   "text": "who cannot fight back."
+  },
+  {
+   "start": 234.77,
+   "end": 237.61,
+   "text": "Every hearing that felt too quick was not impatience"
+  },
+  {
+   "start": 237.61,
+   "end": 238.51,
+   "text": "on the bench."
+  },
+  {
+   "start": 238.51,
+   "end": 239.77,
+   "text": "It was inventory."
+  },
+  {
+   "start": 239.77,
+   "end": 242.01,
+   "text": "And it did not happen once."
+  },
+  {
+   "start": 242.01,
+   "end": 243.67,
+   "text": "It happened morning after morning,"
+  },
+  {
+   "start": 243.67,
+   "end": 246.31,
+   "text": "for years, until the children who had been fed"
+  },
+  {
+   "start": 246.31,
+   "end": 250.47,
+   "text": "into those private beds numbered in the thousands."
+  },
+  {
+   "start": 250.47,
+   "end": 251.57,
+   "text": "No one pulled the alarm,"
+  },
+  {
+   "start": 251.57,
+   "end": 254.75,
+   "text": "because on paper each of those hearings looked perfectly"
+  },
+  {
+   "start": 254.75,
+   "end": 255.67,
+   "text": "legal —"
+  },
+  {
+   "start": 255.67,
+   "end": 257.61,
+   "text": "a judge, a courtroom,"
+  },
+  {
+   "start": 257.61,
+   "end": 258.87,
+   "text": "a signature."
+  },
+  {
+   "start": 258.87,
+   "end": 262.61,
+   "text": "The machine hid inside the shape of ordinary justice."
+  },
+  {
+   "start": 262.61,
+   "end": 264.93,
+   "text": "A number this size goes silent."
+  },
+  {
+   "start": 264.93,
+   "end": 266.55,
+   "text": "So stand in one house."
+  },
+  {
+   "start": 266.55,
+   "end": 268.79,
+   "text": "Ed Kenzakoski was seventeen."
+  },
+  {
+   "start": 268.79,
+   "end": 270.93,
+   "text": "A wrestler, with a father who had a future picked"
+  },
+  {
+   "start": 270.93,
+   "end": 271.97,
+   "text": "out for him."
+  },
+  {
+   "start": 271.97,
+   "end": 274.61,
+   "text": "He came before Ciavarella on a small charge,"
+  },
+  {
+   "start": 274.61,
+   "end": 276.59,
+   "text": "and he was sent away."
+  },
+  {
+   "start": 276.59,
+   "end": 278.35,
+   "text": "The boy who came home was not the boy"
+  },
+  {
+   "start": 278.35,
+   "end": 279.25,
+   "text": "who left."
+  },
+  {
+   "start": 279.25,
+   "end": 280.91,
+   "text": "He carried it for years —"
+  },
+  {
+   "start": 280.91,
+   "end": 282.87,
+   "text": "the record, the lost time,"
+  },
+  {
+   "start": 282.87,
+   "end": 284.65,
+   "text": "the verdict passed on him at seventeen"
+  },
+  {
+   "start": 284.65,
+   "end": 286.81,
+   "text": "that he could never quite outrun."
+  },
+  {
+   "start": 286.81,
+   "end": 287.85,
+   "text": "He struggled."
+  },
+  {
+   "start": 287.85,
+   "end": 290.47,
+   "text": "He tried to hold a life together and couldn't."
+  },
+  {
+   "start": 290.47,
+   "end": 292.79,
+   "text": "At twenty-three, he took his own life."
+  },
+  {
+   "start": 292.79,
+   "end": 294.69,
+   "text": "His mother is Sandy Fonzo."
+  },
+  {
+   "start": 294.69,
+   "end": 297.13,
+   "text": "And when Ciavarella walked down the steps of a federal"
+  },
+  {
+   "start": 297.13,
+   "end": 298.89,
+   "text": "courthouse years later —"
+  },
+  {
+   "start": 298.89,
+   "end": 301.23,
+   "text": "a defendant now, out on bail,"
+  },
+  {
+   "start": 301.23,
+   "end": 302.89,
+   "text": "calm in a dark suit —"
+  },
+  {
+   "start": 302.89,
+   "end": 304.35,
+   "text": "she was there."
+  },
+  {
+   "start": 304.35,
+   "end": 305.81,
+   "text": "She met him on the pavement in front"
+  },
+  {
+   "start": 305.81,
+   "end": 307.89,
+   "text": "of the cameras, grief turned to fury,"
+  },
+  {
+   "start": 307.89,
+   "end": 310.07,
+   "text": "and demanded to know how the man who had broken"
+  },
+  {
+   "start": 310.07,
+   "end": 312.71,
+   "text": "her son could stand there and say he'd done nothing"
+  },
+  {
+   "start": 312.71,
+   "end": 313.99,
+   "text": "wrong."
+  },
+  {
+   "start": 313.99,
+   "end": 316.07,
+   "text": "He fixed his tie and looked past her."
+  },
+  {
+   "start": 316.07,
+   "end": 317.33,
+   "text": "He had nothing."
+  },
+  {
+   "start": 317.33,
+   "end": 319.13,
+   "text": "There is nothing to say."
+  },
+  {
+   "start": 319.13,
+   "end": 321.71,
+   "text": "Now set that against the size of it."
+  },
+  {
+   "start": 321.71,
+   "end": 322.89,
+   "text": "Thousands of children told,"
+  },
+  {
+   "start": 322.89,
+   "end": 325.39,
+   "text": "at thirteen, at fifteen,"
+  },
+  {
+   "start": 325.39,
+   "end": 326.85,
+   "text": "that they were criminals —"
+  },
+  {
+   "start": 326.85,
+   "end": 329.65,
+   "text": "and, being children, believing it."
+  },
+  {
+   "start": 329.65,
+   "end": 332.11,
+   "text": "Some came out and never found their footing."
+  },
+  {
+   "start": 332.11,
+   "end": 334.79,
+   "text": "A record that trailed them onto every job form"
+  },
+  {
+   "start": 334.79,
+   "end": 336.67,
+   "text": "and every college application,"
+  },
+  {
+   "start": 336.67,
+   "end": 339.63,
+   "text": "quietly closing doors they never saw close."
+  },
+  {
+   "start": 339.63,
+   "end": 341.79,
+   "text": "Years later, grown now,"
+  },
+  {
+   "start": 341.79,
+   "end": 343.59,
+   "text": "some of them would sit in front of cameras"
+  },
+  {
+   "start": 343.59,
+   "end": 345.61,
+   "text": "and try to explain what it does to a person"
+  },
+  {
+   "start": 345.61,
+   "end": 347.93,
+   "text": "to be sold at fifteen."
+  },
+  {
+   "start": 347.93,
+   "end": 349.25,
+   "text": "Some still can't."
+  },
+  {
+   "start": 349.25,
+   "end": 351.55,
+   "text": "That is the part no ruling returns and no settlement"
+  },
+  {
+   "start": 351.55,
+   "end": 352.59,
+   "text": "buys back."
+  },
+  {
+   "start": 352.59,
+   "end": 353.67,
+   "text": "For years it held —"
+  },
+  {
+   "start": 353.67,
+   "end": 356.13,
+   "text": "because of who was doing the complaining."
+  },
+  {
+   "start": 356.13,
+   "end": 357.63,
+   "text": "A kid with a record."
+  },
+  {
+   "start": 357.63,
+   "end": 361.43,
+   "text": "A parent who \"should have raised them better.\" Easy voices"
+  },
+  {
+   "start": 361.43,
+   "end": 362.63,
+   "text": "to wave off."
+  },
+  {
+   "start": 362.63,
+   "end": 363.85,
+   "text": "And they were waved off,"
+  },
+  {
+   "start": 363.85,
+   "end": 365.43,
+   "text": "again and again."
+  },
+  {
+   "start": 365.43,
+   "end": 367.43,
+   "text": "Then one more mother picked up the phone —"
+  },
+  {
+   "start": 367.43,
+   "end": 370.21,
+   "text": "and called a small nonprofit in Philadelphia,"
+  },
+  {
+   "start": 370.21,
+   "end": 371.95,
+   "text": "the Juvenile Law Center."
+  },
+  {
+   "start": 371.95,
+   "end": 374.83,
+   "text": "Its lawyers pulled the files expecting a few heavy-handed"
+  },
+  {
+   "start": 374.83,
+   "end": 375.93,
+   "text": "sentences."
+  },
+  {
+   "start": 375.93,
+   "end": 377.51,
+   "text": "They found a machine:"
+  },
+  {
+   "start": 377.51,
+   "end": 380.77,
+   "text": "hundreds of children, the same pattern each time —"
+  },
+  {
+   "start": 380.77,
+   "end": 381.93,
+   "text": "minutes in the room,"
+  },
+  {
+   "start": 381.93,
+   "end": 384.87,
+   "text": "no lawyer, straight to the same private beds."
+  },
+  {
+   "start": 384.87,
+   "end": 386.53,
+   "text": "At the same time,"
+  },
+  {
+   "start": 386.53,
+   "end": 389.79,
+   "text": "federal investigators were quietly building their own case,"
+  },
+  {
+   "start": 389.79,
+   "end": 392.51,
+   "text": "following the money the judges thought no one could see."
+  },
+  {
+   "start": 392.51,
+   "end": 394.87,
+   "text": "And it might all have stayed buried —"
+  },
+  {
+   "start": 394.87,
+   "end": 398.47,
+   "text": "a local story, a few angry parents easy to ignore —"
+  },
+  {
+   "start": 398.47,
+   "end": 401.49,
+   "text": "if the families had not refused to go quiet,"
+  },
+  {
+   "start": 401.49,
+   "end": 404.25,
+   "text": "and if, later, a documentary had not put their faces"
+  },
+  {
+   "start": 404.25,
+   "end": 406.47,
+   "text": "on a screen and made the rest of the country"
+  },
+  {
+   "start": 406.47,
+   "end": 407.91,
+   "text": "finally look."
+  },
+  {
+   "start": 407.91,
+   "end": 408.89,
+   "text": "For the first time,"
+  },
+  {
+   "start": 408.89,
+   "end": 411.53,
+   "text": "the children in those files stopped being case numbers."
+  },
+  {
+   "start": 411.53,
+   "end": 413.23,
+   "text": "They were somebody's kid."
+  },
+  {
+   "start": 413.23,
+   "end": 414.63,
+   "text": "They had names."
+  },
+  {
+   "start": 414.63,
+   "end": 417.39,
+   "text": "The Juvenile Law Center took it to the Pennsylvania Supreme"
+  },
+  {
+   "start": 417.39,
+   "end": 420.19,
+   "text": "Court, and the court did a rare thing."
+  },
+  {
+   "start": 420.19,
+   "end": 423.57,
+   "text": "It reached back into Ciavarella's courtroom and unmade it —"
+  },
+  {
+   "start": 423.57,
+   "end": 426.11,
+   "text": "throwing out thousands of adjudications,"
+  },
+  {
+   "start": 426.11,
+   "end": 428.49,
+   "text": "clearing the records of as many as several thousand"
+  },
+  {
+   "start": 428.49,
+   "end": 429.43,
+   "text": "children."
+  },
+  {
+   "start": 429.43,
+   "end": 431.37,
+   "text": "The state, in plain terms,"
+  },
+  {
+   "start": 431.37,
+   "end": 433.93,
+   "text": "admitting that none of it should ever have counted."
+  },
+  {
+   "start": 433.93,
+   "end": 436.83,
+   "text": "But a cleared record is not a returned childhood."
+  },
+  {
+   "start": 436.83,
+   "end": 439.41,
+   "text": "Behind each of those cases was a year,"
+  },
+  {
+   "start": 439.41,
+   "end": 440.85,
+   "text": "or two, or three,"
+  },
+  {
+   "start": 440.85,
+   "end": 443.55,
+   "text": "that the county had already spent —"
+  },
+  {
+   "start": 443.55,
+   "end": 446.39,
+   "text": "nights in a cell that no order could give back."
+  },
+  {
+   "start": 446.39,
+   "end": 448.35,
+   "text": "The paperwork could be erased."
+  },
+  {
+   "start": 448.35,
+   "end": 449.77,
+   "text": "The time could not."
+  },
+  {
+   "start": 449.77,
+   "end": 451.43,
+   "text": "Then the law turned on the men who had sold"
+  },
+  {
+   "start": 451.43,
+   "end": 452.33,
+   "text": "it."
+  },
+  {
+   "start": 452.33,
+   "end": 454.58,
+   "text": "Michael Conahan pleaded guilty to racketeering;"
+  },
+  {
+   "start": 454.58,
+   "end": 456.435,
+   "text": "seventeen and a half years."
+  },
+  {
+   "start": 456.435,
+   "end": 458.49,
+   "text": "Ciavarella refused to fold —"
+  },
+  {
+   "start": 458.49,
+   "end": 461.33,
+   "text": "he insisted the money was a legal finder's fee,"
+  },
+  {
+   "start": 461.33,
+   "end": 463.79,
+   "text": "not a bribe, that he had never sentenced a child"
+  },
+  {
+   "start": 463.79,
+   "end": 464.91,
+   "text": "for cash."
+  },
+  {
+   "start": 464.91,
+   "end": 467.15,
+   "text": "A jury heard him out and convicted him anyway,"
+  },
+  {
+   "start": 467.15,
+   "end": 469.67,
+   "text": "on racketeering and corruption,"
+  },
+  {
+   "start": 469.67,
+   "end": 471.91,
+   "text": "and he was given twenty-eight years."
+  },
+  {
+   "start": 471.91,
+   "end": 474.11,
+   "text": "Later, a court ordered the two of them to pay"
+  },
+  {
+   "start": 474.11,
+   "end": 476.31,
+   "text": "more than two hundred million dollars to the families"
+  },
+  {
+   "start": 476.31,
+   "end": 477.61,
+   "text": "they had harmed."
+  },
+  {
+   "start": 477.61,
+   "end": 478.51,
+   "text": "It was, at last,"
+  },
+  {
+   "start": 478.51,
+   "end": 480.07,
+   "text": "a kind of justice —"
+  },
+  {
+   "start": 480.07,
+   "end": 482.01,
+   "text": "and it forced a change:"
+  },
+  {
+   "start": 482.01,
+   "end": 484.45,
+   "text": "Pennsylvania moved to make sure a child standing"
+  },
+  {
+   "start": 484.45,
+   "end": 487.93,
+   "text": "in a courtroom actually has a lawyer at their side."
+  },
+  {
+   "start": 487.93,
+   "end": 490.47,
+   "text": "But ask Sandy Fonzo if it was enough."
+  },
+  {
+   "start": 490.47,
+   "end": 492.51,
+   "text": "We like to believe a courtroom is the one room"
+  },
+  {
+   "start": 492.51,
+   "end": 494.57,
+   "text": "where the money stays outside the door."
+  },
+  {
+   "start": 494.57,
+   "end": 496.69,
+   "text": "That the people with power are held to a higher"
+  },
+  {
+   "start": 496.69,
+   "end": 498.29,
+   "text": "line than the rest of us."
+  },
+  {
+   "start": 498.29,
+   "end": 500.97,
+   "text": "For thousands of children in one American county,"
+  },
+  {
+   "start": 500.97,
+   "end": 502.63,
+   "text": "that line had a price."
+  },
+  {
+   "start": 502.63,
+   "end": 505.35,
+   "text": "It worked out to a few thousand dollars a head."
+  },
+  {
+   "start": 505.35,
+   "end": 507.19,
+   "text": "The judges are named and gone."
+  },
+  {
+   "start": 507.19,
+   "end": 509.03,
+   "text": "One spent years in prison."
+  },
+  {
+   "start": 509.03,
+   "end": 512.41,
+   "text": "The other, quietly, was granted an early release and walked"
+  },
+  {
+   "start": 512.41,
+   "end": 515.05,
+   "text": "back out into the world while the children he sentenced"
+  },
+  {
+   "start": 515.05,
+   "end": 517.41,
+   "text": "were still carrying theirs."
+  },
+  {
+   "start": 517.41,
+   "end": 519.09,
+   "text": "Because that is the last,"
+  },
+  {
+   "start": 519.09,
+   "end": 521.13,
+   "text": "hardest truth of this story:"
+  },
+  {
+   "start": 521.13,
+   "end": 522.35,
+   "text": "the men could be punished,"
+  },
+  {
+   "start": 522.35,
+   "end": 524.51,
+   "text": "and still the years don't come back."
+  },
+  {
+   "start": 524.51,
+   "end": 526.65,
+   "text": "If this is a story that should be seen"
+  },
+  {
+   "start": 526.65,
+   "end": 529.13,
+   "text": "and not buried, subscribe —"
+  },
+  {
+   "start": 529.13,
+   "end": 531.29,
+   "text": "the next one opens the way this one did:"
+  },
+  {
+   "start": 531.29,
+   "end": 535.19,
+   "text": "an ordinary person, and a system that was never meant"
+  },
+  {
+   "start": 535.19,
+   "end": 536.49,
+   "text": "to reach them."
+  },
+  {
+   "start": 536.49,
+   "end": 538.73,
+   "text": "Because the distance between a family like yours"
+  },
+  {
+   "start": 538.73,
+   "end": 541.51,
+   "text": "and a family like theirs is far shorter"
+  },
+  {
+   "start": 541.51,
+   "end": 543.53,
+   "text": "than we let ourselves believe."
+  }
+ ],
+ "graphics": [],
+ "figures": [
+  {
+   "start": 16.033,
+   "end": 21.033,
+   "kind": "lowerthird",
+   "primary": "LUZERNE COUNTY",
+   "secondary": "Pennsylvania"
+  },
+  {
+   "start": 23.233,
+   "end": 29.233,
+   "kind": "numberticker",
+   "value": 90,
+   "suffix": " SEC",
+   "topLabel": "THE HEARING",
+   "label": "NO LAWYER"
+  },
+  {
+   "start": 40.033,
+   "end": 45.533,
+   "kind": "acttitle",
+   "title": "ORDINARY CHILDREN"
+  },
+  {
+   "start": 57.533,
+   "end": 62.533,
+   "kind": "lowerthird",
+   "primary": "MARK CIAVARELLA",
+   "secondary": "Juvenile Court Judge"
+  },
+  {
+   "start": 62.533,
+   "end": 68.533,
+   "kind": "numberticker",
+   "value": 3,
+   "suffix": " MONTHS",
+   "topLabel": "FOR A PRANK"
+  },
+  {
+   "start": 73.533,
+   "end": 79.033,
+   "kind": "numberticker",
+   "value": 50,
+   "suffix": "%",
+   "topLabel": "IN HIS COURT",
+   "label": "SENT AWAY"
+  },
+  {
+   "start": 94.033,
+   "end": 102.033,
+   "kind": "thresholdmeter"
+  },
+  {
+   "start": 115.533,
+   "end": 122.033,
+   "kind": "mechanism",
+   "mechanism": "closingdoor"
+  },
+  {
+   "start": 149.533,
+   "end": 155.033,
+   "kind": "acttitle",
+   "title": "FOLLOW THE MONEY"
+  },
+  {
+   "start": 157.533,
+   "end": 162.533,
+   "kind": "lowerthird",
+   "primary": "MICHAEL CONAHAN",
+   "secondary": "President Judge"
+  },
+  {
+   "start": 179.533,
+   "end": 186.033,
+   "kind": "mechanism",
+   "mechanism": "gears"
+  },
+  {
+   "start": 193.533,
+   "end": 198.533,
+   "kind": "lowerthird",
+   "primary": "ROBERT POWELL",
+   "secondary": "Owner, PA Child Care"
+  },
+  {
+   "start": 208.033,
+   "end": 214.533,
+   "kind": "cashstack",
+   "amount": 2800000,
+   "caption": "$2.8M IN KICKBACKS"
+  },
+  {
+   "start": 235.533,
+   "end": 241.533,
+   "kind": "numberticker",
+   "value": 11,
+   "prefix": "7–",
+   "suffix": "×",
+   "topLabel": "NO-LAWYER RATE"
+  },
+  {
+   "start": 247.033,
+   "end": 253.533,
+   "kind": "mechanism",
+   "mechanism": "faultsplit"
+  },
+  {
+   "start": 270.033,
+   "end": 275.533,
+   "kind": "acttitle",
+   "title": "ONE FAMILY"
+  },
+  {
+   "start": 274.533,
+   "end": 279.533,
+   "kind": "lowerthird",
+   "primary": "EDWARD KENZAKOSKI",
+   "secondary": "Seventeen years old"
+  },
+  {
+   "start": 303.533,
+   "end": 308.533,
+   "kind": "lowerthird",
+   "primary": "SANDY FONZO",
+   "secondary": "His mother"
+  },
+  {
+   "start": 311.533,
+   "end": 317.533,
+   "kind": "mechanism",
+   "mechanism": "gears"
+  },
+  {
+   "start": 348.033,
+   "end": 353.533,
+   "kind": "acttitle",
+   "title": "THE RECKONING"
+  },
+  {
+   "start": 369.533,
+   "end": 375.033,
+   "kind": "numberticker",
+   "value": 2251,
+   "topLabel": "CONVICTIONS",
+   "label": "VACATED"
+  },
+  {
+   "start": 409.533,
+   "end": 414.533,
+   "kind": "lowerthird",
+   "primary": "JUVENILE LAW CENTER",
+   "secondary": "Philadelphia"
+  },
+  {
+   "start": 420.533,
+   "end": 427.033,
+   "kind": "returnledger",
+   "caption": "THOUSANDS OF CONVICTIONS VACATED"
+  },
+  {
+   "start": 453.533,
+   "end": 459.533,
+   "kind": "numberticker",
+   "value": 17.5,
+   "decimals": 1,
+   "suffix": " YRS",
+   "topLabel": "CONAHAN"
+  },
+  {
+   "start": 468.533,
+   "end": 474.533,
+   "kind": "numberticker",
+   "value": 28,
+   "suffix": " YEARS",
+   "topLabel": "CIAVARELLA"
+  },
+  {
+   "start": 473.033,
+   "end": 479.533,
+   "kind": "cashstack",
+   "amount": 200000000,
+   "caption": "$200M TO THE FAMILIES"
+  },
+  {
+   "start": 490.033,
+   "end": 495.033,
+   "kind": "acttitle",
+   "title": "WHAT IT COSTS"
+  }
+ ]
+}

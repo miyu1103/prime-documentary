@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-034-rolin",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "remotion\\out\\rolin_probe_slice.mp4",
+  "slice_seconds": 90.02,
+  "slice_sha256": "sha256:5a23a1e0bd53aa4ebff45d3c83ba15948d1c02e9a6ae45cfe82a9f97c5eea198",
+  "film_sha256": "sha256:1a8736f2896b6569d521a9862b1e78762c07bb1a56e0acd9f262a280c5093b96",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 47.1 / p10 45.2 / p50 46.9 (4173 frames, 348 cuts masked +/-8f; 7 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-07-09T20:18:00.144130+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 265,
+  "episode_id": "PD-2026-064-memphis",
+  "slug": "memphis",
+  "loop": true,
+  "loop_join": "The final beat p23 is short265_01.png, the twin metal utility meter housings mounted side by side on the house siding, rewound under the FULL CASE card and held to the last frame. Frame 0 is that same pair of meters, so the loop closes on the identical picture and the two-account hardware is on screen at both ends.",
+  "second_watch_detail": "The two side-by-side meters read as ordinary infrastructure on the first pass; once L1-L2 explain the duplex history, the same twin housings read as physical proof that two separate accounts could legitimately exist under one roof.",
+  "funnel_question_left_for_longform": "If the record cannot settle which account is yours, who can resolve the dispute before shutoff?",
+  "funnel_long_title": "One Wrong Initial Split Their House Into Two Accounts.",
+  "funnel_long_video_id": "0EerFIEJbRk",
+  "description_line_1": "▶ FULL CASE: One Wrong Initial Split Their House Into Two Accounts. | https://youtu.be/0EerFIEJbRk",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "The Bill in the Wrong Name",
+    "ctaLongThumbSrc": "shorts/short265/short265_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If the record cannot settle which account is yours, who can resolve the dispute before shutoff? The full case is here: https://youtu.be/0EerFIEJbRk",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. The loop join and second-watch detail are read off the actual rendered frame short265_01.png (opened directly, not assumed from the CUTS comment) and the beat list in remotion/src/data/short265.ts; the CTA block and long-form title are grounded in that same file and the live YouTube listing for 0EerFIEJbRk. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

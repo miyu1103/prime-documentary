@@ -1,0 +1,56 @@
+EP85_katrina — 画像発注 バッチ 13/24（8枚）
+区分: ACT_3 — 湿地の試験
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, person in water, rooftop figure, rescue, school bus, crowd, body, corpse, cross marker, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) W097.png
+   [W097]  flags: 
+   A weighing balance with two unequal loads on its pans, close, hard lamp
+
+2) W098.png
+   [W098]  flags: 
+   A farm field with a low earth bank running across it, bright flat daylight
+
+3) W099.png
+   [W099]  flags: 
+   A city skyline seen low across water in bright hazy daylight
+
+4) W100.png
+   [W100]  flags: 
+   An anemometer and weather instruments on a mast against a bright sky
+
+5) W101.png
+   [W101]  flags: 
+   A 1950s-style weather chart pinned to a wall with no readable labels, one lamp
+
+6) W102.png
+   [W102]  flags: 
+   A stack of meteorological record cards on a desk, entirely blank, lamp above
+
+7) W103.png
+   [W103]  flags: 
+   A wind-blown palm and power line against a bright overcast sky
+
+8) W104.png
+   [W104]  flags: 
+   An empty levee crest path in bright daylight with the canal on one side and houses on the other

@@ -1,0 +1,48 @@
+EP66 openfields — 画像発注 バッチ 7/12（6枚）
+区分: TRACK（6枚） — 入った、ということ。**人は写さない。** / WOODS_FIELD（8枚） — 「野」と「林」そのもの。
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, muted natural colour, flat overcast daylight of a late Appalachian autumn, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, restrained documentary framing, rural Pennsylvania and Middle Tennessee between 2019 and 2026, ordinary working farmland and unmanaged second-growth woodland, worn unglamorous surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名を一切描かない（看板の面は必ず「褪せて読めない」状態）
+・警察・制服・記章・銃器・血液・ドローンを描かない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ L037.png
+A track passing from open ground into standing timber, the light dropping away as it goes in, seen from the open side at eye height [STYLE] Avoid: [NEG]
+
+■ L038.png
+The inside of an unmanaged second-growth wood at midday under heavy overcast, straight bare trunks receding in every direction, no undergrowth and no path, seen at eye height [STYLE] Avoid: [NEG]
+
+■ L039.png
+A narrow deer trail worn through leaf litter in a wood, seen from knee height along its length, the trail disappearing between two trunks [STYLE] Avoid: [NEG]
+
+■ L040.png
+A stand of hardwood on a hillside seen from below the slope, the ground rising steeply so the trunks stand out of vertical across the frame [STYLE] Avoid: [NEG]
+
+■ L041.png
+A field of frost-killed stubble running flat to a dark tree line, seen from the middle of the field at eye height under a white sky [STYLE] Avoid: [NEG]
+
+■ L042.png
+A mown hay field seen along the cut stripes so they converge, the windrows still lying, low cloud above and no machinery in the frame [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: L001.png）で保存してください。
+長辺 3840px 以上・16:9・PNG。

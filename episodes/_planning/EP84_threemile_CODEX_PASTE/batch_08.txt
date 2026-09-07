@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 8/24（8枚）
+区分: ACT_2 — 見えるはずだった部屋
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T057.png
+   [T057]  flags: 
+   An engineering drawing table with a large blank sheet pinned to it, drafting lamp burning
+
+2) T058.png
+   [T058]  flags: 
+   A drafting compass and scale rule on a blank drawing sheet, close, lamp above
+
+3) T059.png
+   [T059]  flags: 
+   An architect-engineer's office at night in 1979, drawing boards in rows, one lamp left on
+
+4) T060.png
+   [T060]  flags: 
+   A wall of blank ring binders on a shelf in a technical library, hard side light
+
+5) T061.png
+   [T061]  flags: 
+   A single binder pulled halfway out of the shelf, spine blank, one lamp
+
+6) T062.png
+   [T062]  flags: 
+   A simulator control panel identical to the real one, in a training room, bright fluorescent light
+
+7) T063.png
+   [T063]  flags: 
+   An empty training classroom with rows of chairs facing a blank chalkboard, bright windows
+
+8) T064.png
+   [T064]  flags: 
+   A chalkboard wiped clean, close, chalk dust in raking light

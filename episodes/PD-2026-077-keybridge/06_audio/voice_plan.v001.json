@@ -1,0 +1,2893 @@
+{
+  "episode_id": "PD-2026-077-keybridge",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "At twenty-seven minutes and fifty-three seconds past one in the morning, a duty officer in Baltimore gave an order to stop the traffic. <!-- KB-113 -->",
+      "text_sha256": "sha256:ea87c84e71e296e8af4137b5b94ee6999041d860b1d510ed96848721ed1de8b4",
+      "idempotency_key": "sha256:aa93aa631e06a3d0e51c04e36c6d8436deb4976c916cbca423b4791ea473f589"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Sixty-seven seconds later the bridge was in the river, and six men who had been filling potholes on it were gone. <!-- KB-113, KB-002, KB-004 -->",
+      "text_sha256": "sha256:f30906fc6e087653ea5ad518c3ed143d449ba17068a4653a506fae492e73314b",
+      "idempotency_key": "sha256:73222e862c84e8e5dc56c693612c8cedf9b22e2360f4feaadf6774f4e08353a1"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Everyone who could act, acted.",
+      "text_sha256": "sha256:a825868b033bf9add8a4556b607d790739cd3c30924ad0062de976162f42460a",
+      "idempotency_key": "sha256:f58d6fd51ff7bec2cd8e82ee4ebc32434bdc0fa46bc44ff73819d27a44c4ffc2"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "So how did the sixty-seven seconds run out?",
+      "text_sha256": "sha256:1e86eff1ed92ab508a682ce7e80d3c61bb0c134c519b90f7f42fbd7cb4b4ec3e",
+      "idempotency_key": "sha256:9b08e3b895098337541a7d2bb86e3c96b59b22b7d9bee882042de3cfc23af91b"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There is a particular kind of American job that only exists after midnight.",
+      "text_sha256": "sha256:e1b228f1ac87c880a0948528185a437d3cdcf2a8c758628eb7616c6560157038",
+      "idempotency_key": "sha256:4ae6b27c7d25ebe1168cfd632af210f764c71648eafc02f93d902904e8579787"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The road belongs to everybody during the day, so the work on it has to happen when nobody wants it.",
+      "text_sha256": "sha256:de418ea14e5827fb3c821d32337ce62ea59f29fbaa3271ae0a9738f4610134ae",
+      "idempotency_key": "sha256:503cd475317e0834bcd5fe09a50f0e4a191953c5bda3d99bf72d31b264271197"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Cones.",
+      "text_sha256": "sha256:6222aa7f54bc5f9fdaa515b1f62c528b3b5cb0bd893bb1ffaa2f9263cd045373",
+      "idempotency_key": "sha256:a96a9a0199bc8387e3a69492281bbaa8915c52698e454fa1c8c869f034c7895d"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A truck with a light bar.",
+      "text_sha256": "sha256:633f57412918a8b8955a09e27267ab23c807ed04bb2879f20343662a164d2f8c",
+      "idempotency_key": "sha256:a77f00122328f3c88c81841e840fefe36cfc852ed2e8b9de5d89f9bb4acdc97c"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A crew that knows each other's coffee order and works in the cold with the river underneath them.",
+      "text_sha256": "sha256:c6e40ebcf4f38894c6119b8e7588cbbf7c6c271fb231b5e680bd6ad1973d5508",
+      "idempotency_key": "sha256:be84b87e1138ebd81aaf200e7c27daa2885df403626bfe548f64ba27ea0ef9d0"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On the night of the twenty-fifth of March, 2024, that crew was on the Francis Scott Key Bridge in Baltimore, patching the deck.",
+      "text_sha256": "sha256:ee8e602cc10b36a04d947d796424c29462f69b63efa06dc8c87dae452b9b0419",
+      "idempotency_key": "sha256:9c1cc156bee1d67e349f636a606a2e34777c7398b02c0bd8681b8fd8d5bbb980"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Eight people were up there — a seven-person road maintenance crew and one inspector. <!-- KB-004 -->",
+      "text_sha256": "sha256:3874b2906aa225863fca5535f54d97b4924caa986ff5e3e33748ac924bd97a2c",
+      "idempotency_key": "sha256:647f75c2fae3ea3210ff32b126510cc40e427cd64ab8ebb9667dc2e657505a2c"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Below them, at the Seagirt Marine Terminal, a container ship was finishing her cargo.",
+      "text_sha256": "sha256:20d084083260f5b8bd20f15f010ccc1def19c9097d152707ffd27ab5b9d124a0",
+      "idempotency_key": "sha256:5e352d2d929869d71f51b9633629426301048a0bf909f79e2f45c91076bbb908"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She was called the Dali.",
+      "text_sha256": "sha256:ae67d0ced7c23480b438bb08f782e0fd09038fcad2036250b626aba26ebcf356",
+      "idempotency_key": "sha256:5822aec609be098e188077a2412ae1713dd4b2365faf133b688d3395a8d31a88"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She flew the flag of Singapore, and her international number was 9697428. <!-- KB-001 -->",
+      "text_sha256": "sha256:81c60bf60ea6425469f982dcb9611e73dbf1df887c5d4c55dce3c31ce4980bf8",
+      "idempotency_key": "sha256:467c1f67b1cf9e681fe19c2526559e02cd800e72d50232f9aa005b80e520480d"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She had come to the United States on the nineteenth of March, worked Newark for two days, then Norfolk for one, and moored in Baltimore Harbor on the twenty-third at thirty-six minutes past two in the morning. <!-- KB-006 -->",
+      "text_sha256": "sha256:9ef7600361ffaddd7d2a3bb5fe1ba48fcf49b6d79cf1e5126fcf3b544ac542ed",
+      "idempotency_key": "sha256:7e66dd71ab8b764371fcbe8c383a8e0caea732e43bb3dcbe84202c33267490e7"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She was a working ship on a working schedule, and she was bound for Sri Lanka.",
+      "text_sha256": "sha256:aedeb46794dd6b1e27d9fbe6ea7a7e0680531f0b44cc2562a8a1a7c3dc259142",
+      "idempotency_key": "sha256:c560cc2f920228b95f7293fc9f25759bc3a30e5cd830679445fb3673261ab664"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She was loaded.",
+      "text_sha256": "sha256:2fedf10e72ff054dcd204089d88fe8dae70d0b3c6b882c1f5648e14864d04cc6",
+      "idempotency_key": "sha256:267a9e08c11e0c66e0f291c052aec8a8c1d79c820318be131be43ddad1171efa"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Not riding high and empty on her way to pick something up — loaded, which matters, because a loaded ship carries her momentum differently and answers a rudder differently. <!-- KB-115 -->",
+      "text_sha256": "sha256:f371310a440e27bb5013a1a8e77af071d539794d6460866397a2a3458ff60cb3",
+      "idempotency_key": "sha256:3976e316b62a8d0216b5c5ee48ce41e13b99d3346852e784134aa67bc973f521"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two halves of one picture.",
+      "text_sha256": "sha256:2fd0518062931c7319c5b2168a05c7e9405e885efc95f7ff305af52c8420029f",
+      "idempotency_key": "sha256:8957a2c586868aa8a55d48418c703e33a5b9e6e867ee86f57f239a4d06780182"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The night lives in the distance between them.",
+      "text_sha256": "sha256:1e42915092f5bedc472cf6acb168b2b2aba3a42db8cebaf1d2664cc58dff7bee",
+      "idempotency_key": "sha256:f227d6ac2a10a44f4fa97b27ca0f87e4ad68a2e07d54bdab8f4d0da76c33351d"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Up on the deck, the work is small and physical.",
+      "text_sha256": "sha256:8de226a32a7bd8d84a1ff69da7df1d8f06591c4ed473fdead009af9d775cc2ea",
+      "idempotency_key": "sha256:a3908126131ea56bcbfd2d51fff21a56f3fb91c8fa31a74a3ab9bd7791b30139"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Somebody is walking backwards guiding a truck.",
+      "text_sha256": "sha256:8212261e70402b5d5ffa2f9ad450f03c32d35d4784fc392ff7846b4a3a7678fa",
+      "idempotency_key": "sha256:42c1eb340d1052cb246b4db10516866aaac9fcde26747ea257e4b780ef122298"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Somebody is checking that a cone has not blown over.",
+      "text_sha256": "sha256:3cd893eb3257a1a36a9e50ea0bc30edaebdf90e46878f70883f05666e233f526",
+      "idempotency_key": "sha256:5cf0c99cc0f65592ee07231cf2e994e087210c38bd67f4d7d6d0db180268d957"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is the kind of job where the most dangerous thing you expect is a car that does not slow down.",
+      "text_sha256": "sha256:b22583460497bffcd546f412fc1b0ccb252205a28e785744aa44a75fb8d5cfd0",
+      "idempotency_key": "sha256:6b092739079102cfa832b9d3d88ce6f5f8e3592765eddd70e0d6a747a5f14d05"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Down at the terminal, the work is enormous and invisible.",
+      "text_sha256": "sha256:bbf525950a01f1da93f3d6ea48aed1417c7bd6495b18356b3dcd39c90672efd7",
+      "idempotency_key": "sha256:fe3777613873e12fbf018b0350d4c08cbf37b00bc199ace3395962e98e8ec474"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A ship this size is a floating power station with cargo strapped to it.",
+      "text_sha256": "sha256:ff4af3822479c57fcaa4c5e8ee0aebce4125b0857c385a1d337f038844f4a269",
+      "idempotency_key": "sha256:450b41c179e4b9799d7054f11244c048a245a21cda19fb0a558665bed42fd4cb"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She makes her own electricity from four diesel generators.",
+      "text_sha256": "sha256:cc494a54fe76a6da005f626e878355a83e37f51b4264299569ba31e150801ea6",
+      "idempotency_key": "sha256:89c4549e6f57b7d71b7f454f89c1c9de463893cf04c3fee28a014c7a4fa343f6"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She distributes it on a high-voltage bus.",
+      "text_sha256": "sha256:bf92517d0a3911aa5d68f4ad8242632f2a6e5635628772f57c34d0e354cb5228",
+      "idempotency_key": "sha256:60254409915653cdffd815fa2a555f1ac4ebed507e2939cedb2b2f9365b1f096"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She steps it down through transformers to run everything a person would recognise as a ship — the lights, the pumps, the steering.",
+      "text_sha256": "sha256:d62406c9436d5ea836873776f21e49b096380e4005329603d72fab1132caf6c3",
+      "idempotency_key": "sha256:b82a66c6cc72af40c72f9f57e115a44e3349c5249d501d86509164350d5fa55f"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Neither group can see the other's risks.",
+      "text_sha256": "sha256:b1f9b89966e52a3afce312be55fc525ecbf67844cc7358c0c913f95b4d6ca3b9",
+      "idempotency_key": "sha256:ec92e9d6579beae7a40204b65811e207ef8475c5fb791bb5bdbcc7ab3bdbcd86"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is not a criticism.",
+      "text_sha256": "sha256:7a0cabf206f1effc0623938fd386f60fbe72dd21988f4f68efe88b02e3f8402d",
+      "idempotency_key": "sha256:cb9bb49a25d31934d2486e733eec859365a4231e55c83dd1012659b166d45202"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is just what a port is.",
+      "text_sha256": "sha256:50a2ba4d2a9669240d8c62f2c1f250f6ffc0e11d3025c1743bfe8a75cefff792",
+      "idempotency_key": "sha256:d8445d40bda858b2195cc22d04031e2c413c28468fcad1514dc16b19b0ebc08b"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And there was one more witness aboard that neither of them would have thought about.",
+      "text_sha256": "sha256:eddfba40c903a09a2fff66ce51c401681395c0a2b66cb0f9ae8552a77a2a3333",
+      "idempotency_key": "sha256:1213f47c0ea0f9a3c88dd057b6c476359da3cc47db7ff040ccc74ce4b8d0f6a9"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "International rules require a ship of the Dali's tonnage and age to carry a voyage data recorder — the maritime equivalent of a black box.",
+      "text_sha256": "sha256:ac44c0397866860b27a3a9bd72c448e061fbf6c71b87a4e6877c983c6715c573",
+      "idempotency_key": "sha256:2cb14015eb37de8ac98fb5da18b978ea186d64247cb4b480d6b34ef909f4719a"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Through everything that followed, with the ship's lighting gone twice, the bridge audio kept recording. <!-- KB-116 -->",
+      "text_sha256": "sha256:3005000f179c7da4a09b193728acd1bb240fa53025bc2a1a31aa27cf091ccb6d",
+      "idempotency_key": "sha256:25f266f60414e0c548ab8a69519a079f801fbe0dd066619b9ad1f6dee13688f3"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Somebody would hear this night.",
+      "text_sha256": "sha256:0ae7456f7fb7be7807b2ee720fafa980bfef521b17c7abfa34e743563dc3c876",
+      "idempotency_key": "sha256:2e871a718947f5a14ab660fdc400a22c3e0e928f0166e4555093b70755d0df17"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At about a quarter to one, the senior pilot ordered the main engine to dead slow ahead. <!-- KB-008 -->",
+      "text_sha256": "sha256:3e3a94df63026536896655109bee672a370f45f28779bb770980f9afa4cac744",
+      "idempotency_key": "sha256:2d0d170720f36fb6305c8f6ee377159cb206788c9c4fa22b9055368221db4a0e"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That engine was not a small thing.",
+      "text_sha256": "sha256:526325a6098ef426fee4bd2a6e82fa73db0e39d980e7be271a189478e36b05da",
+      "idempotency_key": "sha256:318af04b6333962a0ea6c7ce56a141bc284627e5776ed3205bbcc5bbb4baca1b"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Fifty-five thousand six hundred and twenty-six horsepower, turning one propeller. <!-- KB-007 -->",
+      "text_sha256": "sha256:767bb18f0fb1668ac6197f0f2d704e6a494c95daa35258241d3f108ded276392",
+      "idempotency_key": "sha256:edf44ee1ca9204653607d192c68f543f7487ee93c9f48075aa2dd52380f53d58"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Call it five hundred family cars.",
+      "text_sha256": "sha256:615f803e31fa574860024a306ded3a81ba68e365bdaa46573b617cb3da4569d3",
+      "idempotency_key": "sha256:20f320fee0211f3735eef691d44a3d7174140838dd09f170c61a207ae9bf1c1f"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One shaft.",
+      "text_sha256": "sha256:76205651a94ba5caff169e3ff0705934391fa808d9e18fb5838a31cec861a65f",
+      "idempotency_key": "sha256:d364708ba58fd4d06a32190906cc23b74d848b58a503ddcf1c5fef1fbf8524b4"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One loaded ship.",
+      "text_sha256": "sha256:46b5146179f5f1ab482cffca8c421b50ff87fee7b2fdb3a472cb9e8ac8b9e20a",
+      "idempotency_key": "sha256:cf3d06bfa547fdff5a39f63a1ed9356ece729d811a051d0260e0ad65f11d0c26"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In the dark.",
+      "text_sha256": "sha256:d8c149a56922541463e97f845b1be693571717a7a8253a9ea2f2ffb72a40760c",
+      "idempotency_key": "sha256:fc248fac027ff57e005d618e0f1c504e2016c281b66773faadb6400e144ed0b9"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At about seven minutes past one, once she was in the channel, the tugboats let go.",
+      "text_sha256": "sha256:61f8389f9414f667e8ee0b4b9ea7d92bf0d1a489e16eb8e5e4a8377e01530d55",
+      "idempotency_key": "sha256:c8d917e6e8f4a061905654fb39fec6e0417e78e070ddba397437a12123a5e9fd"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is normal.",
+      "text_sha256": "sha256:bb0f95629eff77665362c6d2d2cb47d2329c2a281fb9b2c2203eda0109e67939",
+      "idempotency_key": "sha256:6b26a944766e73ac0ad1701b28357427ec71b49dccca980b49b12147cb829d8a"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Every night.",
+      "text_sha256": "sha256:cf03453511a12580379353e7c65bb796c7a4a79f63b9630ce5b0de0ed892bb53",
+      "idempotency_key": "sha256:1f18b39682ea1e615e26b843947a24b83441563f6ac3facd53ca628c114f5cd7"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Every port. <!-- KB-008 -->",
+      "text_sha256": "sha256:9444b3044aa13422e943fcdc0860a4e74cd9fe971a30411fd3194f8b149e9219",
+      "idempotency_key": "sha256:bec97a06a4b919c53724c5ee883c74448e535df01176d2737d1216e36b58c51c"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "From that moment she moved under her own power.",
+      "text_sha256": "sha256:eb3eecb5f46178177b6b9e0db0bd3265f25f1cd77b197090b0508717e3ff94e0",
+      "idempotency_key": "sha256:5bb431f99ace74ba7eeea487cf723828bee755f6b30fd44aa1613889f34ce17e"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two pilots aboard.",
+      "text_sha256": "sha256:91423160284a3f9b2374890b307f1ba19b5457b1a055b0006b3d938ac2515207",
+      "idempotency_key": "sha256:b61a6c4dfe739cadc660eaae0dc86348c7b4da47917e7fb82b08d41bfd62d950"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A bridge she had passed under before.",
+      "text_sha256": "sha256:8f8bd553b65937f522681ca82050637d4e057601c67855a7576635e0564ccabf",
+      "idempotency_key": "sha256:3bb9041ef35a51898c9e7f75dd3ada65708d10b15378c01d0119169967d7a52a"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At about twenty-five minutes past one, she was six tenths of a mile out.",
+      "text_sha256": "sha256:a3ca90eb992f666c2b9b0ca7c3b27ac33e9c1bddd3a19da229b351cac4387a61",
+      "idempotency_key": "sha256:9ef2dbec6c5534f28d0d627f567ed29dff9875a1f01820fffb01ba9f0ec7c963"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three of her own lengths. <!-- KB-105 -->",
+      "text_sha256": "sha256:13b0b7f7443a1ca1b7b593ee3724eb51d0e3a658b8431c15aec054afb86b9698",
+      "idempotency_key": "sha256:9b9f9a4ab3a78a237a029fd01b55664afd92b03e2a9f2aa5d099797d17640e13"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And the lights went out.",
+      "text_sha256": "sha256:f0874b711eb60ef0c234d9c7b7c49f181aa9bbd0778748ddbc036f9ad6609bd2",
+      "idempotency_key": "sha256:9a725b79fec3548fbe1a8d194f847b7793002d9b82180e559ced1409d47ac616"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two electrical breakers — HR1 and LR1 — opened without being told to.",
+      "text_sha256": "sha256:0aa19a4b7ae6a85277bf324d15a21e5370902530c55a866f42dbaff8eb1b1a10",
+      "idempotency_key": "sha256:5c2f98dd58a0161b3d3c5f3732cb0040bdf13fe98dd3b5b1acdb0fcb3f49fc00"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In the space of that, the ship lost her lighting and most of her equipment.",
+      "text_sha256": "sha256:e021e75d67949fd9cb37a40fdb512a1b7770d5db4cbcfdcf87e554c8988e9d14",
+      "idempotency_key": "sha256:e62ce7b62b10f25730476600bd20f0dc174c0e877d00c4e3b449edcd28cc2a64"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She lost the pumps that cooled the main engine.",
+      "text_sha256": "sha256:6a83cfd3650a23a114fa86354db6c587ee920c14ff5cc0630c26574cf2003b16",
+      "idempotency_key": "sha256:9b555a670f1bf9d501cf6fe6635c735a7491a9e9924d3b8ef3296900a426b69f"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She lost the pumps that moved the steering gear. <!-- KB-105 -->",
+      "text_sha256": "sha256:fa90149346eb513438e7429895c740ff563f825a060559934cab185b158826c7",
+      "idempotency_key": "sha256:7a4bea318b47c26793f89d590ebdfe94be69c252b1f8ededfed74623b0ccbc1e"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The emergency generator started and picked up the emergency bus. <!-- KB-106 -->",
+      "text_sha256": "sha256:df9c101f0ffbe8f84b8623b9eabb960aa7acb23b5f7ef437b78ed8e01a15b8ae",
+      "idempotency_key": "sha256:5440a9e4b265dc1bf459481688e1210dcc61848d7246f851c80aa72858b0c09c"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And the crew went to work.",
+      "text_sha256": "sha256:7b252197a3d4bcd56987e8042b2770c7c282f491cb6ef562c7263b63cb2ec0ee",
+      "idempotency_key": "sha256:d7b210e60117514c923e1204fd881aaea0b6f8e778102862d802582d70a7dea8"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They closed HR1 and LR1 by hand, and the power came back to the whole vessel. <!-- KB-107 -->",
+      "text_sha256": "sha256:1d5fa73a27453145a85b4055178426009f60b6094c58346ada42d8b165229591",
+      "idempotency_key": "sha256:6b98bf9b98c1f24df9e35ab391186607b3e6ea667acbc08284735cc3045dc9a1"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At twenty-six minutes and thirty-nine seconds past one, the pilots called for a tug.",
+      "text_sha256": "sha256:552e520d1d84a785d996b90ded0d8eaa5eef417db1209ccfc1e97c0792bb4bc0",
+      "idempotency_key": "sha256:d29915c6249a41a0574ada55a184667b31fd306408390615b7a85cdb3961c70e"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Eric McAllister answered immediately and turned toward them.",
+      "text_sha256": "sha256:b16b15121dbecf9fa39d772a5a4c1a01a6ea1d81bfcd305d1b8c0186c53a8819",
+      "idempotency_key": "sha256:2c395acec0386eb02c547989c5ac864472d009676de2223097a34fcd3b03d072"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She was three miles away.",
+      "text_sha256": "sha256:a3199d982f35e55b0bd1cd66dd213e54c61c5c20430d28cc2c3bba3a05ac700b",
+      "idempotency_key": "sha256:ca0bd0053f97bb2a5b596d1cab9d2e1d830d034e4053ffc26d391dc46499dd0d"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She never reached the ship. <!-- KB-108 -->",
+      "text_sha256": "sha256:7145465cd1cc92b318746b9acac18e2900dd1a973ca615dd3de411a294aa2f8d",
+      "idempotency_key": "sha256:4201a8a1530bf379241438c8d5f06d50f00266b61434051af116a5597470d8a4"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The pilots' dispatcher got on the phone to the Coast Guard and told them the Dali had lost power. <!-- KB-109 -->",
+      "text_sha256": "sha256:6884f6b29e86e748bfc3ace3737486bf7dd8394a7a56b37828538691652b3fb3",
+      "idempotency_key": "sha256:b3cd3925c4a4ba94fd0d9d5f7dbdedf098f73a89bedfad077cf4ebd86fc02249"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Then, two tenths of a mile from the bridge, it happened again.",
+      "text_sha256": "sha256:c12eba4862e992a85419204674a176893da4cb0426fe966ac11278a67c91ac3e",
+      "idempotency_key": "sha256:42b6ac83001fcb8982be93deb6cd1458826094695d79ca70d4cd71ea793b2e14"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two more breakers — DGR3 and DGR4 — opened, and this time the generators came off the high-voltage bus entirely.",
+      "text_sha256": "sha256:aa6db945a4af3f2df381ba12bfe6d4f928c198707650e2308322fa4f0c73cbce",
+      "idempotency_key": "sha256:11884b0949be0ffbfca14d9a19b1372b40aa93d13d2e42b5f833ae877f1964cb"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Total loss of power, high side and low. <!-- KB-110 -->",
+      "text_sha256": "sha256:83b1bcdf0762db65289d9ada426bc03c444417f3908daa3a5278d3a88419c591",
+      "idempotency_key": "sha256:8be0e2c8afa3cb78ab0f2272b9a4c7f36a29f1717d2961bfd1efadd97c965bc9"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At twenty-seven minutes and twenty-five seconds past one, a pilot picked up the radio and warned every vessel on the water. <!-- KB-111 -->",
+      "text_sha256": "sha256:12d43c686ac05678f2ea93dbe481c0d29cf4eeae4aacf0cba401304c906970b2",
+      "idempotency_key": "sha256:025ac39bb3d688efe2ce9d69ab21322bcab86c95af6ae8e15598b97685a7c4c3"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Seven seconds after that, the duty officer in Baltimore gave his order about the traffic. <!-- KB-113 -->",
+      "text_sha256": "sha256:2f4e246f0a8607f829c3dcef7afbfed6f69fa794fd17c9c0867a400b19ee1873",
+      "idempotency_key": "sha256:95167832f68d75d96178f62df37610ffad4066478ad7b4a04432f5575e0e9061"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And thirty-one seconds after the second blackout, the crew closed two different breakers by hand and got the lights back. <!-- KB-112 -->",
+      "text_sha256": "sha256:8a81b6a5d75cfb64bee1298deffac29e8c4234381688e768e416b16865b40eb2",
+      "idempotency_key": "sha256:64ccbed203a5876401963739d96b8a8a7bc355fefdc5d5b3f8c8f8592bc88c23"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They got the electricity back before the ship touched the bridge.",
+      "text_sha256": "sha256:77a27cc0246b3fd80cdbfec336575c6c0619f2eb34e9d9e1acf433c6db11d2e9",
+      "idempotency_key": "sha256:9626440feb0d04597a64a6c3d7009195ef1de2b69bd2a8e73e04183e3b754c77"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They did not get the propeller back. <!-- KB-112 -->",
+      "text_sha256": "sha256:405f675e0c473ed7ca34eb3a09e5b32f4bb05201a3c1a6550bf53566203686a8",
+      "idempotency_key": "sha256:51629105c542d53cce3faf23707bb370f83b8dff45277b80cee11c509ec6462e"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One more thing was true.",
+      "text_sha256": "sha256:43e950ed3943d459b308cf8252c10894465fe8d5e6206149b91bfa2713f3a083",
+      "idempotency_key": "sha256:1aa1d2521fc7b6485ef397c9311f5b5b5a4c7ac97667db3f484aa24998b65325"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The emergency power could run a single steering pump.",
+      "text_sha256": "sha256:125a1cfd4ebf4e5302048510cf2339513fda449176c9392d68db42f786ed1fd1",
+      "idempotency_key": "sha256:a66594bce1c3eaff355fee29129362359317f6a193f464ea60392bb2408e4026"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "But that pump, running alone on emergency power, was designed to turn the rudder more slowly than it would with all pumps working.",
+      "text_sha256": "sha256:dccde93eaa23f2c68d7c7c12d296eaf3d98eaf34357b5dac2899b158e507d4c8",
+      "idempotency_key": "sha256:f84c54e352799533a9088c489fe16c13c297afe1353ab98d2c88cd8573b24150"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And a rudder needs water moving past it to steer at all — so without the propeller turning, it would have been less effective anyway. <!-- KB-117 -->",
+      "text_sha256": "sha256:3722c439a933a8a6c0a2f831234097540cd9c82f519a1eb4509ecb4f1e42bb09",
+      "idempotency_key": "sha256:d47819755123c1239c887f71d070f4ae9cd1ccc307a0b3e762eb7a071d43ed96"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The ship had a wheel.",
+      "text_sha256": "sha256:6f875d8839fe00cdf162fc27bfa6589d9f8e346b433402d33d7dd9930e65e428",
+      "idempotency_key": "sha256:80d2ed4c0af5208b7f795bca88ab7954215a505860680e4af7283fd73038a063"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Turning it did almost nothing.",
+      "text_sha256": "sha256:521dc8cd8ac6970a238a561007153d405e49ebedcc76649714484addacc91360",
+      "idempotency_key": "sha256:3aa46666a223887fc36cfa7767293428543575ba716632ad346614ea7242f8a8"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At about twenty-nine minutes past one, the Dali struck pier number seventeen. <!-- KB-002, KB-005 -->",
+      "text_sha256": "sha256:0d82f63e2d8cc263e00d3b7d7593ddce3767374334b44071ec8c7a855b051995",
+      "idempotency_key": "sha256:b59e440f6007919741b019b60c779b04bfa4b1b067e06e875ada583945693a94"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The piers were not naked.",
+      "text_sha256": "sha256:aee08d4ece9ee000993162b4711df198b0c7bfc564be0478fc2048e7c97a2053",
+      "idempotency_key": "sha256:dbb46685f7454f83b15f98955fb95c80e1ef1a5d52284f92ee1fb294ec4998d9"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They were protected by structures called dolphins — sheet pile and concrete, built to take a hit and keep a ship off the column.",
+      "text_sha256": "sha256:c5afc3e51e6594e973d7a2deb3536faa5919f0495cccffda08dd65054e5edd3a",
+      "idempotency_key": "sha256:e5569ca1b3256bdc9321d5f22971a2da5358034862ee80ef2227aef5653eda6d"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two of them are drawn on the Safety Board's own map of the Dali's last three minutes. <!-- KB-114 -->",
+      "text_sha256": "sha256:79ed7423e17f327084db070860db0567119dfa9f351ce6a9a65bc8c2c01e2b87",
+      "idempotency_key": "sha256:5a90bca032c6edce357b2410b19d3319a54bc937b6bd81ccc0e5a5ba8d73575b"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They were not enough.",
+      "text_sha256": "sha256:2ebfd0ca73e953caf91b165f809e3bee813fa81c0bed06ff142db1902aa3be57",
+      "idempotency_key": "sha256:42867030d8baf26a3a57eb23da840b9acbbc413bbc3e82ff3157a4558db57d7f"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Why they were not enough is still standing over other people's roads tonight.",
+      "text_sha256": "sha256:f419a3e3b7cfbef6de1dc99af367676c78a2c6456cc2404d4bf65fea7cef93d7",
+      "idempotency_key": "sha256:ce214dba86d4e8ec9ace19648c518d47e9aef657cd7d4d022adf84fe300b2e27"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The span came down.",
+      "text_sha256": "sha256:baa101a95c8f4229600faac8e6da0a787ddb263131607e6d31458831d036531b",
+      "idempotency_key": "sha256:fe13d9ea9869ecfc9a334bda8154c59852ae6f5d7f922f4792a95d5dd73df056"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Eight people had been on it.",
+      "text_sha256": "sha256:8b7e724010658fe4a8b5607af6008a6185a43feff0f44388cbf74d71953622db",
+      "idempotency_key": "sha256:513648ef8f423d2dff73d52d137331c7f0fece599eead77c28b8381873257fda"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Six of them died. <!-- KB-003, KB-004 -->",
+      "text_sha256": "sha256:8d1aa2cbeb4b366fa629089a26a20613b7c1af17e965e5192664258addcbb621",
+      "idempotency_key": "sha256:fa00737213f561e1adebf50f0476a38b4974632141290251344e9fc00a81b936"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Which raises the first thing that does not fit.",
+      "text_sha256": "sha256:33ce6a7bf20d567f49f248cd1a9efcec2403e6f87e2178b80dd126c04d3df13f",
+      "idempotency_key": "sha256:b7741c9e35793a4b2420b8b3cabc97f2e691af796f5e1039975e217eb3b6d772"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "If a ship losing power is a known event, and this bridge had protection built for exactly that, why did the protection not hold?",
+      "text_sha256": "sha256:81928e098f440a258f654b72adde409bfb3a40a190f68727a3f46347bf1edc8c",
+      "idempotency_key": "sha256:d4d0d77a61a91af31f6dd426bb4c6994181aff864d7d03dfce28896875cf8934"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Everybody gets this part wrong.",
+      "text_sha256": "sha256:2fd4d4b82cae3b1ded6ab23e85986fd1a26e8b550210d19f33e46027f002e543",
+      "idempotency_key": "sha256:fd179c1453fbc06597abc8b9c1e2092abb8e2700c26075b0ee661c197d40d12d"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The obvious answer is that a ship lost power and hit a bridge.",
+      "text_sha256": "sha256:d543cdc0a9c4426d3a547bcaf49960393e4f23a559d71c27c7bd9fbc467d0b0d",
+      "idempotency_key": "sha256:7e5d2888f991dec2b9834de8d39f6baea5228ace947d869564247b11a004faa3"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is true, and it explains nothing, because ships lose power.",
+      "text_sha256": "sha256:c7fbd7bb1c69a1a4f9cd92c7816d02badf264a3671e69c1c11c83a27456b1f54",
+      "idempotency_key": "sha256:4dff6e86b1402247757d208af502cf1da7c4c56aab57146c976b84763078022b"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is not rare.",
+      "text_sha256": "sha256:99139d0a1ea20df4c215d252d7a684cb479120e368abfab1b7f9caee01c3f4cf",
+      "idempotency_key": "sha256:b9c6374bd172fc4b9e8c27f53dcda19fc7e60fc079bf9aef92c8ac8f55592dbf"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A vessel is a small industrial city with four generators and several thousand connections.",
+      "text_sha256": "sha256:d8d6eb8d3bc69861224e472ac84741cb9f618f214cdf4e4077e4af158a21ecf6",
+      "idempotency_key": "sha256:252ac22a8f08b721135b0973566efd2c09726e083dcf97251fee18dbaf3d1386"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Industrial cities have bad nights.",
+      "text_sha256": "sha256:a501319199a64c1f450426f4d44c1069924ab9a217c1a9ada63d39ab3cae0eba",
+      "idempotency_key": "sha256:7c574d9ef6f9384964d9d617657e64bdb9b4ade350baf5e718cc11a40336e713"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So the question was never whether the Dali could lose power.",
+      "text_sha256": "sha256:b4e1271bea8fc4afc16be6807ed2e72f0defe29c19ed825a9ec7aa13e540c07d",
+      "idempotency_key": "sha256:58065bd395b14a5014b80cef39e20651b3c766cc734385437f1138c39bac4d62"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A ship of this class is built on the assumption that she will.",
+      "text_sha256": "sha256:260f5cb25d2f7ab0b4ea01f0269f16863a86d3119bd2994ae6365eab3dc369bf",
+      "idempotency_key": "sha256:2deb4b9db7aa7dc6c7d2a8586ff6ac1a3b76cb770547546806eeb2a7b6302a65"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The whole architecture exists to make a blackout survivable.",
+      "text_sha256": "sha256:8bbae833c523102ee052672d045fa48414fbc18f736ac950729574618b9e04f8",
+      "idempotency_key": "sha256:79d5beeb983b299fad0a7cb7a038697145afaf877ff36890dbe3e2d9bb64e4cf"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Two step-down transformers, TR1 and TR2, either of which can feed the low-voltage side.",
+      "text_sha256": "sha256:10bf7ad40fc3d05f4a72ca459f561057e7bf7a48dd4ad8e98de684d231cace77",
+      "idempotency_key": "sha256:b982de6119f6f1de3bd7ce6bd23528aca80a5186e81d4f59acb7ed3feffd9661"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A breaker on each side of each transformer.",
+      "text_sha256": "sha256:9b4b162477ed1b8394b81099fd75252e2ba73bf1e9709a98c5801e3cf1ae5ce0",
+      "idempotency_key": "sha256:a5ab201f99b74d53c9930a0529bf7e452a5b89048e015a70075e37814f5c27fa"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A bus tie that can be closed to run the two halves as one, which is how she was running that night. <!-- KB-105 -->",
+      "text_sha256": "sha256:5b0975d4056db401438fe8c59b16bb95898206f3d2e39803d9a92ae27d8335cb",
+      "idempotency_key": "sha256:fd638c5d99bf33dc559ace7fe30ed6c11551fc20c7392f9b18a9bbba11022d8d"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And critically: the ship's critical systems were originally designed with reliable redundancies and automatic restart capabilities, so that after a blackout she could get her power back quickly.",
+      "text_sha256": "sha256:70ecbadb2bc89e10db6452a2e0e679eb92f928a0313df6227c690ee1f76b0ae0",
+      "idempotency_key": "sha256:fdc1045b8ef6ec7cdc5f725d7c253a90d13cb8ad010205f84be68d2da92ff6f9"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is not an opinion.",
+      "text_sha256": "sha256:48fa741c1307e08d9e131228d41d0151ee01b352c6c56a77ad6136960317c1e9",
+      "idempotency_key": "sha256:455e2a2951ae3d6b12e6aaac9a1cbd302e79af1bb09e289d305063e016059f00"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is what the United States told a grand jury this year. <!-- KB-406 -->",
+      "text_sha256": "sha256:ea69c1306ca1b934be2f12c1dec7f18edd1a44dd46c137c89fb7d67b94ea8736",
+      "idempotency_key": "sha256:66f3f1affbe66bc935bbce9d3fe499a5ad1b73e183ce5d952a40c8cb3b99923b"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Now look at what the humans on the water actually did in those four minutes.",
+      "text_sha256": "sha256:426a8d969e1b0a63f7311595c7fdf6db35921df31f4ed4ce914038edb7fa8468",
+      "idempotency_key": "sha256:09ef24e80c4deeb605fa484f137bd0fdeb7d7460a1efd88e000566a22a4816bd"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The engineers found the breakers and closed them by hand — twice, under a blackout, at night, in a channel. <!-- KB-107, KB-112 -->",
+      "text_sha256": "sha256:4aa00a49a5c146eb89457ef7941d307ea008b6f522826429dd55b3615e4c4ec0",
+      "idempotency_key": "sha256:a23a8a25dfcb7ca32608725313b4467bcf066d0f947a7478f6ecb16b02871f56"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The pilots called for a tug within seventy-four seconds of the first blackout. <!-- KB-108 -->",
+      "text_sha256": "sha256:a11eee3c83bc800746dab29a7ac665b79e23b60682e57ea04b7138b3b0d646e8",
+      "idempotency_key": "sha256:632696b2436c3fe0790ec5cdecefd07efaf68d195522815b31a6103aa15cb440"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The pilots' dispatcher called the Coast Guard. <!-- KB-109 -->",
+      "text_sha256": "sha256:c6d17a46cac3e64860566997266de5bd43d67052afee17efc8556547af1dbc78",
+      "idempotency_key": "sha256:6a42959a28e88189e7b755530ca28cf6c4f6ddee7b424fa558db3d3c3c807a5c"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A pilot broadcast a warning to everything floating in the Patapsco. <!-- KB-111 -->",
+      "text_sha256": "sha256:1d361def5409aba8ec2964631825197fe4b7f40b1adef5e05cd2c89c1c28bd96",
+      "idempotency_key": "sha256:32adb56d494bf622ea5fb564213cf8fa187c1c7a026851409d67966d619d37f4"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The duty officer stopped the traffic. <!-- KB-113 -->",
+      "text_sha256": "sha256:2b05526bb8c86f3441b9085d0f5c2993b662bd60473f521f56a0a8020db9c6d1",
+      "idempotency_key": "sha256:914ff57814d31ea821178967cb62d7d8a4ecc6dca290014f4ffec7f28905c277"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The tug turned around and ran.",
+      "text_sha256": "sha256:14f25c60d76e18f0a8cdbfc5fed39049b3d9a8788bf6f162e35680a9b2a0710f",
+      "idempotency_key": "sha256:40d5d0873e2460f6817d595ab971f1b0cbb7c916fecb8523fd376ce6f188efb9"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Every one of those is a person doing exactly the thing their training says to do, in the right order, faster than most of us would manage.",
+      "text_sha256": "sha256:5dfda80a7d297b83ce047dc4fb20d69dae1ea67c2d7c63f108c328c998141a3b",
+      "idempotency_key": "sha256:4fe1ed73fd696bce886a4efe6080226815ff830db7a768a7537fc89f152e619c"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The tug was three miles out.",
+      "text_sha256": "sha256:5c36432640143e3509454fdbf2ba4362285e24312716c0d6539ae2387c778701",
+      "idempotency_key": "sha256:108f8f1ff4b22fcc28714b0eb1c7a32932f8a424280130576812b26eab42cbad"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The bridge was two tenths of a mile ahead.",
+      "text_sha256": "sha256:6f6d73c6036cb14717c34e7c44504d6faf803ad25c29bc3ff509acbaf0231268",
+      "idempotency_key": "sha256:8dc20e425313bfd6dcf8d48772564597823e63b0b79edcc12359b73a82f960ec"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Nobody was going to close that gap. <!-- KB-108, KB-110 -->",
+      "text_sha256": "sha256:2b2d60328c357fcc03a293fc2782c26e16a35114603f6d32b98113361c93da72",
+      "idempotency_key": "sha256:e53c2bffabf6d9376e705980bedf1dafa0aed20b097e09855af3e56577f554d3"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And the second wrong answer usually arrives right here.",
+      "text_sha256": "sha256:16db8453c78a104e0e80e88954a23923ed6a49d57ee01edba215a70f40d5d160",
+      "idempotency_key": "sha256:19e5a074adc4acc7b07b0df8730fded7c8798382fb793fbe07f4e96253178123"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "If the tug could not get there in time, then surely the mistake was letting the tugs go in the first place.",
+      "text_sha256": "sha256:16790059f6925aeb4efdd3fda3ace73ceddd79150859a5f8bda9f67e3a948a91",
+      "idempotency_key": "sha256:9ae08f1a3e160f3008b104f984355758f534733b3f22fa5aedc45847fa8c43b3"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It was not.",
+      "text_sha256": "sha256:0206cc08e0672b0cc4adcb9be119ad8967132fb26e3d5537a69088e021539769",
+      "idempotency_key": "sha256:cf3d154863d51aed2a345ef209479ae597bd884e697c04128249a9d3035f97f9"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the procedure.",
+      "text_sha256": "sha256:bcdbb4af5a633b1b51996240272b8829252f7ebe86c92cbf141f0ce50e643f59",
+      "idempotency_key": "sha256:c94766b918efa972faaca7948a441c7d9a55af6fa80e28ca24900c5c14cb22aa"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Tugs escort a ship out of the berth and through the tight water, and once she is in the channel and making way under her own power, they are released.",
+      "text_sha256": "sha256:8f8caa6c421243116cc612b58054e2872c10af8483b16bdb33be1bc40224b535",
+      "idempotency_key": "sha256:487e19f587a36e97df7a05319acc91028ead87240c386a4bd811b7f55b9b8095"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "About seven minutes past one, in the channel, that is what happened, and the Safety Board records it as normal practice. <!-- KB-008 -->",
+      "text_sha256": "sha256:f46ecccd01774e9a1f35797aa8ec43111c2bd11c59fe549e729e9f9414dea7ce",
+      "idempotency_key": "sha256:7c561e6ea3b0c0c43786d00f248ca36358866a0656259704ed9606434e1df7a1"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Every ship leaving Baltimore that week did the same thing.",
+      "text_sha256": "sha256:0338b6c79a0cadcb10f9fca113b890377e08659f06c609e847bcd4d37ad26abc",
+      "idempotency_key": "sha256:892a36f29b02892f91a6a9c3f1c1354d8d3e2a47cafb66b78adf6bb3f5486dab"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Every ship leaving most ports in the world does the same thing tonight.",
+      "text_sha256": "sha256:c57e71477279fd48fa68ea658fbedfcea5c57663d487cd96034320b965fc3910",
+      "idempotency_key": "sha256:963cc205a6e6acd2c7c2bbee0bb1a2f744f6b9cb0a529955663fe3120a5ab84a"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A rule that only looks wrong once, in hindsight, after a wire fails, is not the thing that failed.",
+      "text_sha256": "sha256:b002d42effbcad993623d85f9f9f15b2914fe1f1c6b08c0f3fd0fd7e14339f15",
+      "idempotency_key": "sha256:e21d34bcfb553d6c719e40d2180d84a6035be4ea455984c26c1c85b2fea97e0e"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So walk the four minutes again and ask what lever was actually available.",
+      "text_sha256": "sha256:fa0ecc4ca62310fb9356af0d16537012503e8e512cb04a576fede4c8fba93a9b",
+      "idempotency_key": "sha256:ec88bc72849dba1e828cddd12c9e9e751b0667a0a92c230e0522d893541d1f99"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The emergency generator started and picked up the emergency bus, exactly as designed. <!-- KB-106 -->",
+      "text_sha256": "sha256:692e626035f533d4dff33570643bf963243895468773f6d5566ff92004d960d7",
+      "idempotency_key": "sha256:ba6c52485252cd3edf853f163284f05580f66ed6a9cb0e34de219ced7467f0dd"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The engineers found and closed the breakers by hand.",
+      "text_sha256": "sha256:0d865b4363101a49175b722292ff6189edc09c44bf3ccc6cd473eaab5e1fce8b",
+      "idempotency_key": "sha256:13de2dbe1a7ef538c3f69cbfee82eb4dcccfb2817e0234da9b5873f4ead51e2f"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Twice.",
+      "text_sha256": "sha256:e82e28f4ad6e41aee221d6448f461c7628441d889c690cc84af9f7f98ab68ec3",
+      "idempotency_key": "sha256:8cc9f488b0ab3adf2cc5244e7cdc4025af0498c49f35111f01f6476dc79c2a09"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In the dark. <!-- KB-107, KB-112 -->",
+      "text_sha256": "sha256:379aa94d81d9683e5da02e4cd55950a0e5e0b9a548756fa14dec269d9e414a65",
+      "idempotency_key": "sha256:0e63f06f8f360a62d561a4041377b6cd4f80f00a34fb2fdcb52d82cb86e650c7"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The pilots called for help, warned the water, and told the Coast Guard. <!-- KB-108, KB-109, KB-111 -->",
+      "text_sha256": "sha256:00fe3088f475e18e5ffc8bcc114cae3eba1ee2d441dc653728d6df813c44e734",
+      "idempotency_key": "sha256:3956f011c40ffee8a0186eb9bd291d82765e3aa8cfef240af32b76d1b619b214"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The shore stopped the cars. <!-- KB-113 -->",
+      "text_sha256": "sha256:31f6f0177b0cbc7c1f37af279ed578a33e632e9818de024eab70eb560f053aff",
+      "idempotency_key": "sha256:99477168b2508ceaaf4a964f8d44e075172ffcbabab87678935a558351375a15"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And every one of those levers moves something other than the ship.",
+      "text_sha256": "sha256:2ebe91899eba1affb0793b80101d17ca5ed103ccc3924ac1003217af36176d7d",
+      "idempotency_key": "sha256:a42f8963abcc40853dfe0dfaf2ec62df478342377242a193c6e7161cb31464b4"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Because the one thing that would have changed the outcome was the propeller, and the propeller was downstream of the exact system that kept switching itself off.",
+      "text_sha256": "sha256:b4328b2f55568484a9a63d1ab90b1a27249b36057e01abd07d857bcf25bcef20",
+      "idempotency_key": "sha256:70ebce6761fa73e8b8fd981d8b2085d99618e242072365b95cf2c11cd3e16898"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The main engine was a separate machine from the four generators — but the pumps that cooled it, and the pumps that drove the steering, lived on the low-voltage bus that went dark. <!-- KB-007, KB-105 -->",
+      "text_sha256": "sha256:7b2399c5c97ad1c58b62564b1fbeed1d5bcf701859b8b5d433dfd566d666104a",
+      "idempotency_key": "sha256:c8d304ac96a3d30fdb78e49357ed0c30341f6a1a4831972b11aa0ef6da623810"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the shape of the trap.",
+      "text_sha256": "sha256:712a49142bdc0a1116e29d1619d00832950481b62e1477e623bb47152096ba5b",
+      "idempotency_key": "sha256:e1846ee93ac8564cbdbfaca0526cb91eb65b3c0279dda5e3d0c577c7404c6940"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The ship was not disabled because her engine broke.",
+      "text_sha256": "sha256:a1a5bdb2214c72276a3958b138d7c63d17cbb433e76a64ce17b6f8918214e065",
+      "idempotency_key": "sha256:db632c274f4275f8660ac2750d0a37d7b0c222e1f3d514526fd1bb706690fd86"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Her engine did not break.",
+      "text_sha256": "sha256:b9b1b99efa29a81b53733a45fb73e4ecac57e856a2f1671ad37b9ea92babe2ee",
+      "idempotency_key": "sha256:534ae99d32bd9792567932decf38e697ec30f23d7fc51de1608d35b66b272ea3"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "She was disabled because the small electrical support around a very large engine went away, and a very large engine without cooling and without steering assistance is not a propulsion system.",
+      "text_sha256": "sha256:acfa5bee3092df80f24f7b9b577d7e3e2fb6f7bf411d2b306bb652d0d8eca657",
+      "idempotency_key": "sha256:18b844868edf6495de311270250b51537910a437983c9d57148a200d083ca607"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is ballast with a crankshaft in it.",
+      "text_sha256": "sha256:4fbc9fa471e6164836463e12acb537fc59f10c7983b56f0575d5f7a1c68ff414",
+      "idempotency_key": "sha256:24dc8ed70dd6965a47ded3a2cb749c68d91b6c9f8d8d4040357ccb1c0480c868"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There is one more detail in the record that makes this concrete, and it is the sort of thing only an investigator would notice.",
+      "text_sha256": "sha256:432ca7b544f2568e28d3d6f1431ba35e6787b44d59245094a4ff6803548da08e",
+      "idempotency_key": "sha256:b3140c018847dca300c235953ab0de8a58d7848dc1a151b49334df3d9c6c1a5d"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The ship's data recorder never stopped listening.",
+      "text_sha256": "sha256:c59de7be7197033d1432845e3aa442eb4d0a73e4fcd06e3d0cd8c9e031269db8",
+      "idempotency_key": "sha256:398857d76c99cbf22efd8d13a2119d275fb4441af7d04034a270f634286d3f1e"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "International rules require a vessel of her tonnage, built after the middle of 2014 and trading internationally, to carry one — and through both blackouts, with most of the ship dark, the bridge audio kept being captured. <!-- KB-116 -->",
+      "text_sha256": "sha256:f7a789f987681ad9f24a21a5077924af57b9af6e132dc318b77b07014b18a15c",
+      "idempotency_key": "sha256:1c32505a3201574682b9ef16af9909d581364a4e6c76dcab5fe4ba60981ce53c"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Which means we are not reconstructing this from memory or from lawyers.",
+      "text_sha256": "sha256:ef491a858b64d3804276145679d0e2ec4125911a44902d45594f4ebf7c1fdd89",
+      "idempotency_key": "sha256:b4525b6b50b9a6f88d029650dbeafc15879d3c9fe07613ea416e439d87d51c43"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There is a recording of four minutes in which a professional crew did the right things in the right order and it did not matter.",
+      "text_sha256": "sha256:93f030ec4dbc7df8a542bbc5cdfbff98d4a94df153fed7aea9afd29b31d63ae8",
+      "idempotency_key": "sha256:2fa5fc8904ecb1aaf9c24a7d26d4ac91cdbe9b52b71fb48b55beea26ec1409b2"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is a rare and horrible kind of evidence, and it forecloses the comfortable explanation.",
+      "text_sha256": "sha256:741313cc3d8b77859cf6b2057c2981b0b6bb0f1d91c411c73e965b2db4c2f8f9",
+      "idempotency_key": "sha256:34f963fd04dbbddd12c4222eac6f206667ef3252304b46d410b0d50da601e00c"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There is no moment on that tape where somebody freezes, or argues, or fails to understand what is happening.",
+      "text_sha256": "sha256:43b16bd02f7f2470c38433cfe430cc4e103d6e0901bb55f34595bfa73fca2da7",
+      "idempotency_key": "sha256:d4624c6400886bf5cf2703bb10c1ad9fb0fd43d27d7d8722e17de91fa4f89d0b"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "What there is, instead, is a ship that kept coming back to life from the neck up.",
+      "text_sha256": "sha256:0cc5df10f10bdd7c28d1750e3bf109a5ef6947e38930547596be08a3d964fc5a",
+      "idempotency_key": "sha256:ae447509e90676dc6f157847c0ae86c8f85c1ee4d6e746eb49666037ca85c5c9"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At twenty-seven minutes and thirty-two seconds past one she had her lights, her low-voltage bus and generator number two. <!-- KB-112 -->",
+      "text_sha256": "sha256:8e1b082863eaabee0fb32b1a88b006bc76370c3a33ebcf5fe1e342cb9aec6221",
+      "idempotency_key": "sha256:564a01eda8e0443672fe2c6ce1703e95b7147869ddede6bd00f56166500b6d60"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Ninety seconds earlier she had had all of that too, and then lost it again. <!-- KB-105, KB-110 -->",
+      "text_sha256": "sha256:2c79f733d83d87a1857036f7fbfc17d0560e75422303ff44d8f3e62f0d74fe4d",
+      "idempotency_key": "sha256:0567de501ea1f92e298555de98d569f963764d8e57eebf304d0458ee329cab58"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Twice in four minutes, the thing that was designed never to happen twice in a row, happened twice in a row.",
+      "text_sha256": "sha256:bb8688d533a46b10025df08019fbd8c1621e6a55acd04908599bdf6fb6bbccba",
+      "idempotency_key": "sha256:026e0221f75d2b16b634153f5eb9aa02cdfe48794a5f9ca50bf2bacee7a8261a"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So the story is not a story about people failing.",
+      "text_sha256": "sha256:70073fdb9722637284260ba39262d4c42f6c47c38931559f9d7a09beddaa4798",
+      "idempotency_key": "sha256:78c5b69f69e06b1788ab98e69d26bb2f59fc179eefc1c07c1aa028fdffedb38f"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is a story about a machine that was supposed to come back and did not come back in time — and about the difference between getting your lights back and getting your ship back.",
+      "text_sha256": "sha256:9024f492f1c8bbcb3de0888aa044ab8ed278069c33b14e423fe7e69311ddf5d6",
+      "idempotency_key": "sha256:19048b930f42285cb18964bd3d9b7cba87f18016e932ea3ce17d480b3a64e868"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At twenty-seven minutes and thirty-two seconds past one, the Dali had electricity.",
+      "text_sha256": "sha256:af34728375cf50100708764d7d50c9558e752f577a91c01d0a86da20d21e1e22",
+      "idempotency_key": "sha256:af28393c7a7fce49145e0661343b2c28e118287d8c8579dfc99def963d42953b"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "She had lighting.",
+      "text_sha256": "sha256:30d8a7aa674d786c26087d6084d6129bb7c14649c9bf0c068ce7118c46c6531a",
+      "idempotency_key": "sha256:44571da0b75ff2d10760b3fd04524904fb4ff70460aadd74ae62c6455cc2447d"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "She had her low-voltage bus, fed from generator number two. <!-- KB-112 -->",
+      "text_sha256": "sha256:f8dd7cd44e090b997bef9450fe462ef2971022d5f8955ef7eaadb0a24d851155",
+      "idempotency_key": "sha256:5c28630ac7ab980ca5ca93e63a9c71797f8a169905eb3bf82688ea82315602ba"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "What she did not have was a turning propeller, and without a turning propeller a rudder is a piece of furniture.",
+      "text_sha256": "sha256:120dc97b49e16b001832513f33a56ccb25045a06677d7ee5e5dbdc067a61595a",
+      "idempotency_key": "sha256:8bed89dca36c9029cd2a702f8474c27967f5641a35f86bb47444cbe47b873a4c"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Water has to move across it for it to do anything at all.",
+      "text_sha256": "sha256:5e62dd3e5376b5afde4bc2ab9a0f28f3461d5d9585793fe98094fe2ddfaf327a",
+      "idempotency_key": "sha256:063bcf22698b70aefb448e838652f95190ea058e70d5a89e10c700c760a5bdf7"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "She was, at that moment, nine hundred and forty-seven feet of loaded steel with the lights on, going where the tide and her own momentum took her.",
+      "text_sha256": "sha256:7dedc4891610ef1a66dc3167de60b66e0235c2e843f94b948c11b9b953691ce8",
+      "idempotency_key": "sha256:0e1e79c004f9efc2cf4f8907db591e932bf25adbb7a7360475fef307dd75c867"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Which leaves one question, and it is the question two federal investigations spent two years on.",
+      "text_sha256": "sha256:63b1fa8d00d64cf9f8e9d8bbfb2a10969eb16e52cf6ea41bb7da42e56c9e84e4",
+      "idempotency_key": "sha256:d278ffe5e008c99606f65aeb8caec578d7a43458f8520fa3293695d52bb4564b"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Why did the power keep going out?",
+      "text_sha256": "sha256:9ca34705f19cb2a7fade61ae9fed2dedc60b15e5f76890469c8b17f0d17a440a",
+      "idempotency_key": "sha256:d94a5264120fe681e5222fbb11226830b23172b38728d1c8f49963ac6cb808a0"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Before the failures, the reasons.",
+      "text_sha256": "sha256:3aed6d78a58330132938b270154fc2df05a59368268ea3b38fa6be24c3bb1f56",
+      "idempotency_key": "sha256:93d28ff03ae830741a6d4acaa17097eab3312ae8c818b7400096e7196a4ea9f2"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "This is a system that was designed by people who had thought about this exact night.",
+      "text_sha256": "sha256:321e7385bdfaf53d230c7e47a4379487aa2193c001f8b69e430173198c23a7d8",
+      "idempotency_key": "sha256:91d7e48ce3f1c543a8932340e6add385994a4374e49d1dd37506de46c3c2b7d0"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A vessel like the Dali distributes power on a high-voltage bus fed by four diesel generators.",
+      "text_sha256": "sha256:66c4d39db8567898bc73919a597cb66166216a0033434b08e1d5100be7c92f87",
+      "idempotency_key": "sha256:4ae6a2983155211137fd561b5958445ec3fdfaa240172a84d91fe53eca0c4602"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A four-hundred-and-forty-volt low-voltage bus hangs off it through two step-down transformers.",
+      "text_sha256": "sha256:1b23d4dd1af4e7c725fd14c274f15355c3263771de176d762abc4b8f321d7c06",
+      "idempotency_key": "sha256:145e81e599b165ea3e40f81aa28bcb4def2593908f3c84f7abe45eeaed018801"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The low-voltage side is where the ordinary life of the ship lives: the lighting, the steering gear pumps, the main engine cooling water pumps. <!-- KB-105 -->",
+      "text_sha256": "sha256:39c0f141269888e402b2a16d737476bb55f504199f3df8f844fe927f51e3547b",
+      "idempotency_key": "sha256:edc2bdfd07d137d4d23dc5982722a771e7e36d99927e8670681ccd6f621971e3"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The redundancy is deliberate and it is doubled.",
+      "text_sha256": "sha256:ccc7740d7a65d3fad52138eb469df1ddab510ad19e9e55b666a7e1d68a9b2db1",
+      "idempotency_key": "sha256:b1e6dbb56d9c5b2261863441db9fe6b3bad3bfb8bdec4de69e677d929a4e3c33"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Two transformers, so one can fail.",
+      "text_sha256": "sha256:2b995f613aeab65a78538c98caa1463baf842cca46cdd350c961d91a99777a5f",
+      "idempotency_key": "sha256:ad635eecb130b8f3919f9bffcc6002110b12ea12793729ffba0c61913bf6a801"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Breakers either side of each, so a fault can be isolated.",
+      "text_sha256": "sha256:4f7ebfe53ba691bce25e7a4e19be96e875ed804bdd9e5929c055f5c9205f34ff",
+      "idempotency_key": "sha256:006946b060bfdc552036e75247ccba7fc3064429f5768f602df833dd276eddbe"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Generators that restart on their own, so a blackout does not need a human in the loop to end. <!-- KB-406 -->",
+      "text_sha256": "sha256:68afa6f233ef26440f648b474941874e356ff4fde0d4b42cfcb22758f36f928f",
+      "idempotency_key": "sha256:7a464e7c81ac1760774a44e14bf520a07c9edcf054e3fd994795b2df8d11aac2"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is the design.",
+      "text_sha256": "sha256:4f94a35e6661554f1c77750a04a9849fa4889c698b4fffa6531934951318196d",
+      "idempotency_key": "sha256:fded838733a805ac3fc6780c5124314ce82ba25b0b2569f5402a0110ceb6728a"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Now the night.",
+      "text_sha256": "sha256:f330bccffcb407b821b76b793a1a1d541c59fb09b748e13aed26e3e444cb7f1b",
+      "idempotency_key": "sha256:4957c880f0a43b32b18704335dd14ff2a89baae96da3e170bf7c9705b5a5c385"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Ten hours before the Dali sailed, while she was still tied up in Baltimore, the lights went out on her once already.",
+      "text_sha256": "sha256:585005d4a530d44560d2fc9e05478e854de5d8bdc0a3fd10f203245f3f6ad877",
+      "idempotency_key": "sha256:4c8019540219a712d535345c71f2b44083b861837daeb79696cd51613fbf780a"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A crewmember was working on the exhaust scrubber system for the engine driving the only generator that was online.",
+      "text_sha256": "sha256:9c17d544e7ffb5c9bff942ca19efbce7b5c46ae7f4fdf0eea5d8ae5e938c4c04",
+      "idempotency_key": "sha256:eac91d88029cb1c438250caff0bfde960a94e10c912512f4bf9600c7036b0e46"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "He closed an inline exhaust damper by mistake.",
+      "text_sha256": "sha256:912821be3c129b91105c78fc0980bfb3aeffbf8b8a1791fe601824ecad392709",
+      "idempotency_key": "sha256:8182562332614d9fe16252579226355a56c7d4d93e1424a9e5acc3cf5ff3e222"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The exhaust had nowhere to go.",
+      "text_sha256": "sha256:dc207d96f8da27fc6889d5f9d4523479c57befb540e5f1a321f139ca8b549f0d",
+      "idempotency_key": "sha256:88e2ecb07ac541eaafeb27f49a7513d99032db7a73f9f42dccd262afbffc4545"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The generator stopped, and the ship went dark at the pier. <!-- KB-101 -->",
+      "text_sha256": "sha256:01431648a3f2fde216468b5440cddbd582cfcdb2b5b2eefb91496501a72a5f02",
+      "idempotency_key": "sha256:f9b6c4e8446ea69ff75cdc5570780d3b454f223c5a481514e4d9d2d63e04408e"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then it happened a second time in port, for a different reason — not enough fuel pressure for the online generator. <!-- KB-102 -->",
+      "text_sha256": "sha256:9a62648f7bd68d122da83d2baae6d39ad714dea65fd1e96021510d0d4d1d3620",
+      "idempotency_key": "sha256:b37d2755260ea0d69e8c5ef4ebe9aeac57d4fa08b1e89d6a85485762e2cf716c"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Nobody died in either of those.",
+      "text_sha256": "sha256:4f6b16fd5d756de41e50557d17589bcc9db935f0327b2c83ebb4e4cfc1c63ff4",
+      "idempotency_key": "sha256:93839fe14448aca7bdf4bfe9efce4bd1bc35eb58fb3de128fdbc48f5afe56704"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They are the kind of thing that gets written in a log and talked about over a meal.",
+      "text_sha256": "sha256:8b0b3366f2e69cb8f150e5222de076a0fee5bcca960dfb7a997d6e20b8b8c80a",
+      "idempotency_key": "sha256:277a9f705cc554acb54348441f5eb4515336fd2f99b401b312ce059a9103f18e"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So why would a night at a pier where nothing happened turn out to matter more than anything else in this story?",
+      "text_sha256": "sha256:56ad68ca4db0dfc562f0688f523fa1a6262a595bea0f01f258ab8574b40b37a3",
+      "idempotency_key": "sha256:5639d7476adca5650b54ad8a5f7450693ad546b54bab9f66da88d73a2c7f5481"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Because of what was done to put the ship right afterwards.",
+      "text_sha256": "sha256:1b252cfda70a15551806d222dd947deeff5ccb0c397915207ebed5ba93be9e8d",
+      "idempotency_key": "sha256:d38175a7a71ba5c6ef5667a407a10cf1605c56ac58d6f31524bac64ff1ade4fa"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Something happened during the recovery from the second in-port blackout, and it is the hinge of the entire night.",
+      "text_sha256": "sha256:8529adb69bddb2d442ed19996634e7788fe4dd0f44e5127d195a0eb0ed1d3d71",
+      "idempotency_key": "sha256:3817bc412f7ca645efe3d949c7c9a2d07775164b4b8a212923fa6b4108314a62"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Coming back up, the crew changed the ship's electrical configuration.",
+      "text_sha256": "sha256:962a947fc5d12a78d2ed9c2b67cc8ab45ee1f0a1a5e87b8d7dcb75db6543fa68",
+      "idempotency_key": "sha256:95baef86c9384ea1de57defcec9bb253682951e7ac7f96f78ff3dc6a8bdd51a2"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They stopped using breakers HR2 and LR2 with transformer TR2 — which had been in use for several months — and switched to HR1, LR1 and TR1. <!-- KB-103 -->",
+      "text_sha256": "sha256:96912c6fda8cc391ec411521cc9fc812f80095b4f1679ea155b7d45d7e8eddb6",
+      "idempotency_key": "sha256:fb4e3316abea30d86bbc5a101886f214090c7dd2611dc0e816a6c9929d7d393c"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And that is the configuration the Dali sailed on the next morning. <!-- KB-104 -->",
+      "text_sha256": "sha256:1fbd2ce7bb3a327fa60085d54930e0bcf0925b9c36738796d2c9daa3813d3d4d",
+      "idempotency_key": "sha256:e054fec52def69ad9a0944e509d976df216bd03ee14c6301b91cbe82190aba31"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Ten hours later, six tenths of a mile from the Key Bridge, it was HR1 and LR1 that opened. <!-- KB-105 -->",
+      "text_sha256": "sha256:405ef88aaca308622c62a600c757c757a54c3fd5d7433ec63633136b0e7c0c62",
+      "idempotency_key": "sha256:091d433e19bcf4ebe05fab7e446098777423f58dbb8e3dae9889fb674f90317f"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It took the National Transportation Safety Board twenty months to say why.",
+      "text_sha256": "sha256:a94e2c0fa99fdcd2d14696c6e12c3d58e32ff8e82ebbf0db7fe2ce61157495c2",
+      "idempotency_key": "sha256:03b318ca1c7c9e42cf3b4d4fd1d3eb4d67e9744956bfbfd5535df296c84eb7cf"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "On the eighteenth of November, 2025, the Board met and determined the probable cause. <!-- KB-201 -->",
+      "text_sha256": "sha256:512e5e3564a30411f4d73a206e5ff5926aa3f6affb0837c8f02860736039b854",
+      "idempotency_key": "sha256:6f1f2a22c7d0ed0e7a666b7d2360a9d567cf2b907685925fbb191c1e8848bb36"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It was a wire.",
+      "text_sha256": "sha256:fbbd91be9142a10fac1c58dbc99fe9b2a4ea1e2c025436ab2a2447fd4df7a51d",
+      "idempotency_key": "sha256:f2f087ad68378f973bdf7d672532dbaafdb769df12b072b171e44c939c115d5a"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Specifically: a loose signal wire connection to a terminal block, stemming from the improper installation of wire-label banding, which caused the loss of electrical power, which caused the loss of propulsion and steering close to the bridge. <!-- KB-202 -->",
+      "text_sha256": "sha256:443bf4878074c524633f425dfb3583d826bc2181e21f4de5fe55597427337282",
+      "idempotency_key": "sha256:a8228d8449029dc8daa604df99809706c1050e9adedfe2fc7ede09e88dd9a810"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The mechanism is small enough to hold between two fingers.",
+      "text_sha256": "sha256:188b5809395fc0f44953809ff48b780306b7cbc1c418bfcde415a371c89fd0ac",
+      "idempotency_key": "sha256:852bbfc6a4245388e92c08d68bd0e85fd4486b2200affa137b6f695bc3c53678"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A terminal block has a spring-clamp gate that grips a wire.",
+      "text_sha256": "sha256:5d57dcb64ba510ca9d975797d1f79fae0fb3211c4a131c29f903f4ef5dcbaba4",
+      "idempotency_key": "sha256:fdbf90ac77e6b18a6e58bb218b9dfe17c2e4ab55683a75e113aa2fbab2b4410a"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Somebody had put a band of labelling around that wire.",
+      "text_sha256": "sha256:40c8dee7ff235b2bb917a2ad4e9170b3631dfa8cc2fb7cd12cd8d652a5193abb",
+      "idempotency_key": "sha256:8aa4f2d923a29c97f4cb281a59bba57a23497c501ac81ef93ec58762efe0602f"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The band stopped the wire seating fully into the gate.",
+      "text_sha256": "sha256:2505eabf6e6860e015f078b4aaa5113d96b2efda1928e357ed667e0a24a0cf5c",
+      "idempotency_key": "sha256:671e31fcf5844f824ad7e922269af2dd9377cefd8f96f6872ba508239c9ec459"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The connection was inadequate. <!-- KB-203 -->",
+      "text_sha256": "sha256:b84a5864e01ab4202f87b5b15650749cdaa176e880e7e6bdcac7a8d650c45b6a",
+      "idempotency_key": "sha256:094aaac960c0df92cf3ddb7650ee3f88752191e05ce063002e0d7f69002c5852"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is the whole thing.",
+      "text_sha256": "sha256:1c93a181d057cb60fd5e173589806ab9b4daf6e863ffb2de41a13d2d8cb0a7bb",
+      "idempotency_key": "sha256:6678ae0c7f82cdd86585848d9941c64d684d4e5d72a038f7f31087d4ac090879"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A ship of this size, a bridge of this size, six men, and the physical cause is a label that was a fraction of a millimetre too thick in the wrong place.",
+      "text_sha256": "sha256:2ef082d8735ca5acc03923bc2553525be41a5ac4636ff2810be47b3f187c2297",
+      "idempotency_key": "sha256:a4c744a3d9a3136f2d3db99cbeff809b9f3a279454765a5e4f2844087ad83dfe"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "But that explains the first blackout.",
+      "text_sha256": "sha256:36db604c413dde62b1cb5bbd8cc5192d7c807bc14c63bd1edd464c97ac201c86",
+      "idempotency_key": "sha256:67ea8298e1f847ea8a9cf9952340e44ae47d4420fc17e99cf1127e83ef9451b1"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It does not explain why she did not come back.",
+      "text_sha256": "sha256:7276c80b7c203112a87701c61495e2c7f8f81d87487f83bf674e40578b0657a8",
+      "idempotency_key": "sha256:1ef0ae620d3e72f2d1391c668fec5594a181d963c7bd045626705de20cbbfb6b"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Because remember: she was built to come back.",
+      "text_sha256": "sha256:949b7742bdc683f8e58a044a2b1d5451077b2032e9cd0979d092e1e491e210d4",
+      "idempotency_key": "sha256:a2cd7456362d29808d52afc5d7a35934f1e4b16132afa44985fd0d04c7d6697e"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Automatic restart.",
+      "text_sha256": "sha256:7ebfbd355a806cf0a5fa5e7da46b33985f511deab890b9535bb5682f2519d15c",
+      "idempotency_key": "sha256:8d08cbbb5060cbda760da98f7d3286fde8263e4d01662754615ca191ec44c5e3"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Reliable redundancies.",
+      "text_sha256": "sha256:386663254d9530e9cc04caa016d96382565cde8db877e8f61f26a68182cfdd35",
+      "idempotency_key": "sha256:8c989fb57baecd7c18e28a8d75c98659899a7d61f788a89addb602e547c0f4f5"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That was the promise in the drawings. <!-- KB-406 -->",
+      "text_sha256": "sha256:e5937fecabe351844acdefdc773fcf8ef483d05dbedbd5f85786cb3b873ccb9b",
+      "idempotency_key": "sha256:ea7c03cf1af69bf7600f913cd7854f67190d6083e77bd19e492fc277026bb67d"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "On the twelfth of May, 2026, a federal court in Maryland unsealed an indictment, and the United States offered its account of why the promise was not kept.",
+      "text_sha256": "sha256:1d0b964a537bb231dbe70f674d0b3e4ceaf140d8979ce5e13f26c57a52e87a39",
+      "idempotency_key": "sha256:b8ae6a188653d16e444bf4c17ca099915c17dd547609b3c134a776ddcaab271f"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Before a word of it: an indictment is merely an accusation, and all defendants are presumed innocent until proven guilty beyond a reasonable doubt in a court of law.",
+      "text_sha256": "sha256:e13f3de609d26e144bdc18acb778d82e9be34dc6be948f2ff1d29084864dabfb",
+      "idempotency_key": "sha256:35a2f1e805acc253f8ba734c6c2c029235fed7e296a821cbb6aab2000abb9b46"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Those are the Department of Justice's own words, printed underneath its own press release.",
+      "text_sha256": "sha256:ceaf9318f7fdd03cae1e64d85096b80a2383d0006a143f011c74457ce2ba0943",
+      "idempotency_key": "sha256:1f867ad05c922cc3dfc49b2c37c9026e0849b5b7fb5f93f36aea880e44a4f48a"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "This programme will hold to them. <!-- KB-501 -->",
+      "text_sha256": "sha256:b520bd3e490ec0567abe283c32b12cc77d9839d6e4719f94499dd0f411b8fb5e",
+      "idempotency_key": "sha256:0a3eb4c5176edfff1bb25366e2952647f7e50e8ba6ecb22483ca7910df84dfad"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The three defendants are Synergy Marine, of Singapore; Synergy Maritime, of Chennai, India; and Radhakrishnan Karthik Nair, forty-seven years old, an Indian national who worked for both companies as the technical superintendent for the Dali. <!-- KB-401 -->",
+      "text_sha256": "sha256:37e06473d377484c643fe290c14289be5dc817f67a8411a2b2b89f602997af7c",
+      "idempotency_key": "sha256:800c226223897b8ed2048797776837dc7854a828b8ecd3d00b1d9788611011e7"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They are charged with conspiracy to defraud the United States, with willfully failing to immediately inform the Coast Guard of a known hazardous condition, with obstruction of an agency proceeding, and with false statements.",
+      "text_sha256": "sha256:a3239a9aadf68c8714e35bc90d5ec08e90fe277ce34211e88b5b20f04435d182",
+      "idempotency_key": "sha256:9e3481efa61212f481245b7821d0fb16926d430b7bee9f281229cfeb9f759602"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The two companies additionally face misdemeanour environmental counts for what went into the Patapsco River — containers, oil, and the bridge itself. <!-- KB-402, KB-403 -->",
+      "text_sha256": "sha256:968a5b0023d7f210a551a10b281b7ea9f4eb59d5ca31fb115e470c2761fadb3f",
+      "idempotency_key": "sha256:3f5e61d1c2f88f24270b2c763f2b532c112aa45e3415a5c9f8a49d55439373ea"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The allegation about the machinery is this.",
+      "text_sha256": "sha256:0e6ade4583adc4a7750bc0594f783104b6a9235654980d4175ef30664a3cb6d1",
+      "idempotency_key": "sha256:621c96ade166dd2b86015d22ff93664fbaee8b09cb62db4b359d7fcaa4bcf3ee"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The government says the Dali lost power twice in a four-minute span, and that a loose wire in a high-voltage switchboard likely caused the first loss. <!-- KB-405 -->",
+      "text_sha256": "sha256:e3542b90a82638a687aba9c1cdd4d3eed50cae2bce3624ccceb8426159a3b458",
+      "idempotency_key": "sha256:387add73855b3a2aba67c70ae394e6d3e82233ae2e15ade295e3356deb469e83"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And then, the government says, the ship did not recover the way she was designed to recover — because the defendants had altered her.",
+      "text_sha256": "sha256:491ea5051303e72d85d9533ee199b81591cb039b2b8d881290a87188845c22e2",
+      "idempotency_key": "sha256:e6ac6701f552b8877908a3a2403db74571a8b94a557ea06f75498021ef8bcb8f"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "According to the indictment, they relied on a flushing pump to supply fuel to two of the Dali's four generators. <!-- KB-407 -->",
+      "text_sha256": "sha256:b58afb5aa99fe518f260734e6365f182e0eca03ed305fd55e4ee2bce1675fc06",
+      "idempotency_key": "sha256:98e8378cdb9f875950a7fc48cc11e6ec064065ca9a5747465d3f8df7f82bb68d"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A flushing pump is a housekeeping device.",
+      "text_sha256": "sha256:c2b211072e682ef5182c6cf041e49ac82041497b13e49bfcc7bd0b59b9f75f89",
+      "idempotency_key": "sha256:fd990b3c66f6f0b9d87628463ec6331ca50438b994fc542faafca1a43455a2e8"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is for moving fuel around, not for feeding an engine in anger.",
+      "text_sha256": "sha256:f119eeda1626d238c4e4963f4e35fa665ecb79bd27aecfa773faed3ca366d16c",
+      "idempotency_key": "sha256:bd126e09a5d5ce32a8301d5ff3ac6e155ede7452066cabcbb0b49083b1f59be4"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the crucial property, in the government's telling, is that it was not designed to automatically restart after a blackout. <!-- KB-407 -->",
+      "text_sha256": "sha256:0c734a5a4840bc62a18f71cc0a0cf9f0d92113627509742d94c5a9d49b1d6168",
+      "idempotency_key": "sha256:2c5c01c98456ed0104c155a1f286c1a44cf9b2a0e4d8b24652fd72bd604dd005"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So the chain the indictment draws is: the lights go out, the generators need fuel, the pump that was feeding them cannot start itself, and the ship blacks out a second time. <!-- KB-407 -->",
+      "text_sha256": "sha256:520e5feda0a493bc91ab4456bafcbbce2320ab6cf52ddae3fcf7eeff0ce0a984",
+      "idempotency_key": "sha256:19f415a07d08420d3f0a2f9d31c6463a3bb606e5bce21844638a3eea3049d1d5"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And then comes the sentence that will be fought over in court for years.",
+      "text_sha256": "sha256:01f6980969b54e193f110a20faccc52adf66a3ecda66e399bf2fa1260c1a5e93",
+      "idempotency_key": "sha256:6ad3f275d3e57d25a80ebce29ddf0ef9e76991764373e37eb05305383bb1d92b"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The indictment alleges that if the Dali had used the proper fuel supply pumps, the vessel would have regained power in time to navigate safely under the Key Bridge. <!-- KB-408 -->",
+      "text_sha256": "sha256:22de07a4afd0f950372cc34c973adab0ec35822f97331a79dfa67adeb41b2a53",
+      "idempotency_key": "sha256:376c2afd8b1e95187522d971469e6f997c5cf446483f566e06dbaf538db09a7f"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Alleges.",
+      "text_sha256": "sha256:f8d8e976942925ca995e3145da7040a3b4db32a92b41af04e2656ab5cb0a3759",
+      "idempotency_key": "sha256:df00ca45a3cca8ee446f253ad56562cdce5b3e749d81188d9b3523682f76367f"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not found.",
+      "text_sha256": "sha256:0802559db1375af3ff5caabba71acea1d6299f1a7fc64b6a5024f19cbd33b72f",
+      "idempotency_key": "sha256:53171f22c92bd8e9cccbf0c420f2b273800e965a5a538707ab10782bf95c60a3"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not proven.",
+      "text_sha256": "sha256:4b4d9a76ec2b035c90642e0b01019d521e665a631ce5359f150c81fb7a04bc60",
+      "idempotency_key": "sha256:e61a2256085c1d818944369b5275760d2920ff8f7cf772773bd9090908079df6"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A grand jury heard a case and returned a charge, and that is a beginning, not an ending. <!-- KB-501 -->",
+      "text_sha256": "sha256:0f9d4281bc3ed2c66aa9f584bce8ab2cae9a245be9e086c0b779bcfdbd02cbae",
+      "idempotency_key": "sha256:74234b06e5b7121155ec16828faaeee4922e3bf54f545c7993411d35f549dcfa"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And then, five weeks later, something happened that is not an allegation at all.",
+      "text_sha256": "sha256:3570f2f86d0335102fc4caaa49282db56de624ab15355df232757d38d9d556c7",
+      "idempotency_key": "sha256:dc4efd5c993a70a3fb4661446f6b03dba3ab09ee8d76c1da2bf599d3e2db38ce"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "On the eighteenth of June, 2026, the chief engineer of the Dali entered into a deferred prosecution agreement with the United States.",
+      "text_sha256": "sha256:523a3612afe3f24c0640c79647ce8ed7f7a61d35c582b6a73242d9454735eff3",
+      "idempotency_key": "sha256:09916caaf47fcb9e718fcf64f6fda76f3448250e60e416425c33880259d9f195"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "His name is Karthikeyan Deenadayalan.",
+      "text_sha256": "sha256:56dd2867337b1ed3ed5a101447a6f69ad1961284f452486e2a9b40b83436aa3f",
+      "idempotency_key": "sha256:cd699903947b80a4e3a68c79f697a0e4e0e7ae27aa739b23634098b8d6b35f70"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "He was aboard that night. <!-- KB-701, KB-702, KB-703 -->",
+      "text_sha256": "sha256:8152d88803d83bc4cb8f7fc879e275acc05b9c79cbc408a93b1f0a25e173ce9c",
+      "idempotency_key": "sha256:c7961a8d339b03d5e8654f0993c8260abd8cb13fff2aaa37790833fb528e3e73"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In that agreement he admitted to failing to report a hazardous condition, in violation of the Ports and Waterways Safety Act. <!-- KB-704 -->",
+      "text_sha256": "sha256:ee507971c945022d4480d8a97d6c8d2f9174734a4b2d2bc8ff0c62dfaf70706b",
+      "idempotency_key": "sha256:c22520be1c68b28e3f9b619c439498065e4da72940ed6c7320a7cc848119d50d"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the things he acknowledged are worth hearing slowly.",
+      "text_sha256": "sha256:15eabbd01ba4460dee1b54a5083f7a91cd0d4ab4ea50cb8f751f89ca91e28dd7",
+      "idempotency_key": "sha256:d0698c73f12c72c4db6e2a6042ab54bc3271a6ce8a714edf14c4413dcbec668d"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "He had also been chief engineer on two of the Dali's sister ships — the Maersk Saltoro and the Cezanne.",
+      "text_sha256": "sha256:c2702735a8c0eff3bd266a52b62e898a0a5bab6098cb98a692128aebacc8b07e",
+      "idempotency_key": "sha256:ba4beb3cf730b2fc494a10ce1f5179a51c45cfb6584eb3711bac33f0665d377a"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And he knew that all three of them used an unsafe fuel supply pump. <!-- KB-705 -->",
+      "text_sha256": "sha256:cb70a1215643ac253dfac33e1a2936abc1d9f21c4d79a0119b27a22a66537b7b",
+      "idempotency_key": "sha256:82bb90af9fb709158bae0e25966e936c9a500b40127519bbaa070e50bf78957b"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not one ship.",
+      "text_sha256": "sha256:fabfb53a0ce62baebd59bf609f9ad223d1a5c42dc894315be7d8f83ef42cee47",
+      "idempotency_key": "sha256:3a0eb60f6f42abef877036e25c131987ad11621032c0e2b3ceded8337aa3d39a"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Three. <!-- KB-705 -->",
+      "text_sha256": "sha256:9ecac70978a9bf2463ab5a259918faf0b97a2015d049d2ae796fd1248bd18bc5",
+      "idempotency_key": "sha256:2d84303e3027f6553d93fb3a67eb1e8c80eb59bd5aa16ae3967aee8eb07bf0df"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "He acknowledged that the pump lacked redundancy, and that this compromised the vessels' safe navigation and their ability to recover from a loss of power. <!-- KB-706 -->",
+      "text_sha256": "sha256:6a4e065420159282768c48962ec6309b29c7009a0c05f3d1f3b211466edf5970",
+      "idempotency_key": "sha256:50b17ee8c24db5da06309d58add894947aca7ffe2c380b3d24924204099fd943"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And he knew that a ship unable to recover from a loss of power could adversely affect the safety of the vessel itself — and of any bridge, structure or shore area. <!-- KB-707 -->",
+      "text_sha256": "sha256:776ef2c586ca00cde96bcc8b6b99f20fdca67828459192fdac0e4c38312e4832",
+      "idempotency_key": "sha256:e8d3c7f85f114c9b4224c0adacff4ec4e257113c83fd7c5d319040bf24942130"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That sentence was written in a legal agreement in 2026.",
+      "text_sha256": "sha256:5ffcee6179dc64fe1edf628e90202132d089fa769e71e84689c02638e16951de",
+      "idempotency_key": "sha256:38281dcb7be3f4857aaa008165e4535a735af887332f0e37f7bb6bbb07fbd62a"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It describes, in the abstract, exactly what happened in the Patapsco in 2024.",
+      "text_sha256": "sha256:2ce3c620651452ff86f39a711ab95370deb3cd5c73481e731f7c2cbd56f7ea88",
+      "idempotency_key": "sha256:613e46647eb7068cdb8946dd9ae9c111e64640c70b38079191931d873f6360fb"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "He also said he had spoken and corresponded with people at Synergy about using that pump, including the co-defendant, Nair. <!-- KB-708 -->",
+      "text_sha256": "sha256:52ba5549b899cd90f0aed968455f266bafe144c69d5a46c9893f66ba03fd0e06",
+      "idempotency_key": "sha256:f3c2406a2175a77aed2479cdca769b184b8b2d0c31427e92fdbc3ad37ff0e78b"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And he said something else, and here the guardrail goes back up, because this is one man's account of another man's conduct and that other man has not been tried.",
+      "text_sha256": "sha256:2f2c05f0b2d77686332e3456d5fce787c7b90851c9240a18cf2d879f9944925c",
+      "idempotency_key": "sha256:1d3e1024f4724f998ac8eec61022fbfb798bd782a4ba239611a01c3b893273f4"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The chief engineer said that Nair directed him to send a convincing email to the ship's charterer, so that the charterer would not ask more questions about fuel consumption and find out that the flushing pump was being used. <!-- KB-709, KB-501 -->",
+      "text_sha256": "sha256:7197027323e74f0c58ef14f4516715ef55a8815b3e0b12124aa48aab34747f3f",
+      "idempotency_key": "sha256:77ea4b22894515f28879c437c13246ce8a0a9dba0d34b0e1ac14eb47ee79a965"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "There is one more count, and it is the one that tells you what kind of story this is.",
+      "text_sha256": "sha256:eb4bddffb602b80742eb1cb1ec3d9515575caf2700cd5ba09112738e8fea1bf3",
+      "idempotency_key": "sha256:6ecaaa454f8f87ef8f40e2d0182a29cdd35cbb5a9c9056030998b3542ac6f440"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The obstruction charge relates, among other things, to what Nair is alleged to have told the investigators: that he was unaware the Dali was using the flushing pump to fuel the generators. <!-- KB-409 -->",
+      "text_sha256": "sha256:8f079e2d5a23499f24a2bbea8f2eb50467c413e1571b20a63dc14f2f950978c0",
+      "idempotency_key": "sha256:de3e9c6ff311de676c05a999b6eaa66883115fb69b7df626db152b51bb8dd439"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "An alteration to a ship.",
+      "text_sha256": "sha256:049cc740b7dfd7bf016b88575a6213c863a9ebb04b217b6cddeadfb507443c27",
+      "idempotency_key": "sha256:053ff5d9996a61647930482a449961eeb5dcdb610cd04bbfb9532d9966da5055"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In an engine room.",
+      "text_sha256": "sha256:61c3ec5e4e1e30c314b910748a54b8d5061edba89df680bd0cb282c8a74ad31e",
+      "idempotency_key": "sha256:256ba25c3a7795a8a66ddbe9a90a9e0ab2091bdbe8e94bb503cefb1c3c921b42"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Below the waterline.",
+      "text_sha256": "sha256:4bb900d08e02d3a1c33db7eaea4937030270b00e391f6058969e772cc8de7619",
+      "idempotency_key": "sha256:ae670d5318150b4bf104cc1c5ae03a8f963771fa7e414898482a171f825556c3"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Which, the United States says, the investigators had to find rather than be told.",
+      "text_sha256": "sha256:3f7536d992834ace9d3a6ba335d008f018eadee22993cd6fb5767399d775aab1",
+      "idempotency_key": "sha256:765038c6e89b6819fade92c98f7767564f636c8122411f002b569e9768e1e2be"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And what about the bridge in all this?",
+      "text_sha256": "sha256:a8675a48e9e7e2a4cc2f23184da03038ab661434d24f1a4bd2662e57168054a9",
+      "idempotency_key": "sha256:ce81e324b5b52e9c7503c9ef2dce2ab459322088a456eb0b4986b190a3450860"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Board looked at that too, and its finding is quieter and, for anyone who drives, worse.",
+      "text_sha256": "sha256:28db24c904a2084e2dbedf9e8a76f1ea34fee355d82c8b99e4904700fe9e1dd5",
+      "idempotency_key": "sha256:1843223b8aca668c12eb290b9a98ce86112cea51cee5153b99bcb72f7fc0a1dd"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Contributing to the collapse and to the loss of life was the absence of countermeasures to reduce the bridge's vulnerability to being struck by an ocean-going vessel — countermeasures that could have been put in place if the Maryland Transportation Authority had carried out a vulnerability assessment. <!-- KB-204 -->",
+      "text_sha256": "sha256:0d60da18ff82e5c88f76ec3403479b4a72572884280dca009b6c3fd57f601014",
+      "idempotency_key": "sha256:3f08b3f0f04035e97d38bd6041d9d8fca399d13361391a2e292daffa211ec2dd"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The guidance recommending those assessments is longstanding.",
+      "text_sha256": "sha256:4247bb86f9d196266410ff68e9948439844b80c47d434475a344af8c77139820",
+      "idempotency_key": "sha256:8b2816d27a4ffc4b77e6958b2105ea143109a5bb8ad82dc4a93b532a0b684673"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It comes from the American Association of State Highway and Transportation Officials, and it has been sitting there for years. <!-- KB-205 -->",
+      "text_sha256": "sha256:a45b8cf40f9ff8b99d727768c3aa1dbe579caf2e2a83f6796e2681c9422c18a2",
+      "idempotency_key": "sha256:17e54e05b64b2e573bb90613b4a70b28e5af24949ee8cf701b3c746295b076d3"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And here the Board did something careful that is worth noticing.",
+      "text_sha256": "sha256:2331a26672b933ea70fd3a27dc0678f9c3d5e287a7bc0410693fe6b6986c21d5",
+      "idempotency_key": "sha256:15af51b35b33faed4096d0d78e0c31b1616cb5cf3aa3164bcd1139f1be3d2bfc"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It did not find that Maryland knew and ignored it.",
+      "text_sha256": "sha256:dedf9685359adc74fcdd6958881e53291b7b438cdda51612e910c08c20af140c",
+      "idempotency_key": "sha256:7859acc97f07856704a1312a495f172a3bed6db294658736d56425e40142e4b2"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It found that they were likely unaware of the potential risk. <!-- KB-205 -->",
+      "text_sha256": "sha256:f98c4607c4c6fec6e2f63fa6c5f4759b55c8b899b75f1330a9bc9297e01643fb",
+      "idempotency_key": "sha256:063cc6b9fd8367bbbbd6d351b6291af7850563c1466072012223f0712e74edf9"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not a cover-up.",
+      "text_sha256": "sha256:12ed49345a106fcdf7d122268e2c97bd2f17644e5e8f75a56226c28cea2671e5",
+      "idempotency_key": "sha256:8304eadb37469cb7a2dee70f51859410c784967421d8f53755824fd211029946"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Something more ordinary and harder to fix: a recommendation that existed, and a bridge whose owner did not know it applied to them.",
+      "text_sha256": "sha256:3ea64f573cfa557947d31694875845bb36466ecb931daab8ad43c81381017438",
+      "idempotency_key": "sha256:4eed11f0d51d0384fb1a65d52619949cfca1ba37dd4ff970185bc91cf163b393"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A vulnerability assessment sounds like a filing cabinet.",
+      "text_sha256": "sha256:8228c6329f6c8ba8c39fa9db58dccfbf01da36a54149b7f345d23b0c6d388fd8",
+      "idempotency_key": "sha256:eea1d1efa63cb6a64b055f5e4e1cbc290e23717503cf7b7bf9f197eb91d1400f"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is a sum.",
+      "text_sha256": "sha256:778d402905abdbe14d077e83c59c585bd897455af50f929aa6d378ff951cd785",
+      "idempotency_key": "sha256:6c66b56eeb3a6d83a9840c628cc0f203c8fc94f3edd76400649ac5407f0e9fbb"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Take the bridge you have.",
+      "text_sha256": "sha256:09a3b4b8724b89a94115db6e6ad671e7f7111eb97850ab908b56c60b68d39a99",
+      "idempotency_key": "sha256:9de8098d21a4fe891d9cc6a5c9255238dff479d376f6ae5c3dde9f6dabdd4c0b"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Take the ships that use the channel now, not the ships that used it when the bridge was drawn.",
+      "text_sha256": "sha256:631235a0f403ef996123656887fce48be3578e9c282650d32c500a50c3ade68d",
+      "idempotency_key": "sha256:e1fbe994f1a89148971e21cb5ba9ff772631a56fe63093ac859a99734296cf2b"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Work out what happens to that pier if that ship arrives at that speed at that angle.",
+      "text_sha256": "sha256:20746b4eaf814776ffcd78d31e027b21b6b691105dafae798fcb6e364ca18b1f",
+      "idempotency_key": "sha256:fca26ce3a42e5d018fc9f8287144b81052930f46ac24253d795dd15a8d560698"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then find out whether the protection you already have is protection.",
+      "text_sha256": "sha256:39ecd83afbb29ba69030b16ee85c8c5a91df2aaa6da1570f7c52b0158d97972b",
+      "idempotency_key": "sha256:663b4cafb6820a13702826410d7f7026a3789f126677fc605004102fd7b68a49"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Or decoration.",
+      "text_sha256": "sha256:f1afd30425fdd925e1cff2470ed70ab473c4026ca025bece4e03d57c8822cc74",
+      "idempotency_key": "sha256:ef87a4c5caf85a49dbf0c4399b6dcc562b3f887cde6bafec69f21a715bc42222"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The dolphins by pier seventeen were real.",
+      "text_sha256": "sha256:10c873e48cac728e7aeb085cf33ed1dddc8a393cd95920055ba9afca31eae812",
+      "idempotency_key": "sha256:72274e313521955a78719230c05796cf2b7c112fd67e52f09853968f535d261e"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Sheet pile and concrete, built by people who were not careless. <!-- KB-114 -->",
+      "text_sha256": "sha256:dfb1ec246fa6bc9dd15fc55de9cdacd8bb55a8a66797ff2c2370df37a90d0e1a",
+      "idempotency_key": "sha256:195185f9dfd1e571ebb98a5fb510478932a177e554f1505ddcfcfd3fe3059f9e"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "But protection is never absolute.",
+      "text_sha256": "sha256:55bedf27452d7ae2b96ac99e9eac293aa65c5dc92b4c2b3bcd3e84014062058c",
+      "idempotency_key": "sha256:97af6c7e7d5ecadb981474556b6e8664d3e905ff4c81fc8a008f0b9f4e2b721e"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is protection against something, at some speed, of some size.",
+      "text_sha256": "sha256:d7ba6fcf561a812c1f0e204db633f108318353fec2bfe66dd2cda1de9695c596",
+      "idempotency_key": "sha256:da5c389426106c397c1a8c6c12f573b20cf252748c27e9497d7418b5f59b22e8"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And a bridge stays exactly where it is while the ships underneath it keep getting bigger.",
+      "text_sha256": "sha256:07141f664bb8e75d2f03d36ffe953f1b4f9b602c2011a89f1ac3ba88f18f9b6a",
+      "idempotency_key": "sha256:ee235a8acf9c6f5092a9fd0297591689bd65defce5036e96f06bbe3e3413b28d"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is the failure.",
+      "text_sha256": "sha256:c91de69755e8a2e1e14f828f434368d328d813b766787e2f549af499dd836931",
+      "idempotency_key": "sha256:c4933b68b3d356abf518e085be2b9c6c02b853580fcb5e1a95dad85a06de5bde"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not neglect.",
+      "text_sha256": "sha256:128dff85df39ed9f32128d5a81657cb8b08c0c59871b4cd3b964028adb7d3140",
+      "idempotency_key": "sha256:348e63f48ecfd8b886994abee6cfbdf607ef5c7f700a3531c8cb89797ff9a138"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Arithmetic that went quietly out of date.",
+      "text_sha256": "sha256:2910a406dbbbb540758f08ae897b065b2d39288e201f9d9c25e9b6e265f302d4",
+      "idempotency_key": "sha256:c763099f5ee2aeee24a25f22b4ac8bc7ac3b5b4586f8417f2a4f75e6397e42bf"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So how many other bridges are standing over shipping channels tonight without anyone having done that sum?",
+      "text_sha256": "sha256:76daeea10341c9646b840ab8e3d0c2037d93060922c97afbeed2751d6fe6c031",
+      "idempotency_key": "sha256:84e5bd99728d405426128b4ef7848d579d8a7eb8945f5aa044f0691e2ab1bab6"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Board answered that question on the twentieth of March, 2025.",
+      "text_sha256": "sha256:9f1040248cf83ba0bd47fd9eaea97342bbb6b5fa80afa8de0fbaca4ef0350d4a",
+      "idempotency_key": "sha256:4cb6dfa6247ddb8adea6e10847fa52b3b523e86348a3ef4178277e08a45641c6"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Sixty-eight.",
+      "text_sha256": "sha256:dbb67534cdeb54609d867136e6245acf582333de412b14c463f4c272fdf4c977",
+      "idempotency_key": "sha256:dff6ed69a4997b5ad888eab4a98127695f103103ae541b60c6534c37bed018ed"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Sixty-eight bridges in the United States for which the NTSB recommended a vulnerability evaluation. <!-- KB-206 -->",
+      "text_sha256": "sha256:f9829ed6a2491dc7381e97643372f7cdf59e0e6ae7db5785b687f2b9ea985524",
+      "idempotency_key": "sha256:6653ad73d518eb956c10290dd8773e5b340947f2ef38bb2f0573ab459729bcd6"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Not sixty-eight bridges that are unsafe.",
+      "text_sha256": "sha256:852bddcbc0f811bf7b0ee6f1faf3d5e9bb3a7554ae5c38bd3a52bf7943301f59",
+      "idempotency_key": "sha256:d8cd27110edd4b5669da419c2f2db64366e457e8cad6ae4ac6b14a61b8813ee0"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Sixty-eight bridges where nobody had done the arithmetic — where the owner could not say what would happen if a modern ship hit a pier, because the question had never been asked in that form.",
+      "text_sha256": "sha256:e1bc37f555a0f196c60d0f449056d88206405ae69b52cc241e9f638728b8cdaf",
+      "idempotency_key": "sha256:86171dde74381c9ccadf06491c1ac34696b1e083cd7ff60897cc17c2368db1fb"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Every one of those is somebody's commute.",
+      "text_sha256": "sha256:7d9a394df258852a99248c5ed1c30c54f4bc05e20d95493f4edc9d08755ad082",
+      "idempotency_key": "sha256:00520f292d8e29d39634c3cfb8f54e2b5d497ab94c8dced2d0937477066c2d46"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Meanwhile, the money moved through a different courthouse, and it moved fast.",
+      "text_sha256": "sha256:df64eb829f79dac069a38084a0a497377c4055aaa4e1317b409b745c51cde995",
+      "idempotency_key": "sha256:e78e61d8b534773b701b7a4fdef1859beee505aad3119250da17c52cb8cdf303"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Six days after the collapse, on the first of April, 2024, the ship's owner and manager — Grace Ocean Private Limited and Synergy Marine Private Limited — filed in the District of Maryland for exoneration from, or limitation of, liability. <!-- KB-301 -->",
+      "text_sha256": "sha256:a0b52506688d6c32626ecdcce42ac01e3ed8e09ce24cca196f66cb6ce9ea97ca",
+      "idempotency_key": "sha256:3236b72231790694fbdb0b1444991168187cf428ff7518aff9201701e1bee227"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is a very old piece of American maritime law, and it does something that sounds impossible when you first hear it.",
+      "text_sha256": "sha256:b3f7032d196cfc8d260a8cb33ef33e6683806f838548ea967ec1aeae29fa38ce",
+      "idempotency_key": "sha256:6fad59ec9d417162fe3d880d8982566a5d41e18cdea4cd5140d4f1a1eb311dc3"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It allows the owner of a vessel to ask a court to cap what they can be made to pay, at roughly the value of what is left of the ship.",
+      "text_sha256": "sha256:ab8a48bac81193f6654daf23ce4e43df595e5394e5fdf23f5c2546006529be4d",
+      "idempotency_key": "sha256:133bbfa51d4a644b8d55e674d195508234e401b92d162d0363f0beff7e349bb2"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Before the outrage, the reason.",
+      "text_sha256": "sha256:cdbbc29afc241eeb3da6df239f3dbc6cf58009027947c0ece79973d07b76ae6b",
+      "idempotency_key": "sha256:86a71fc86f64e5d34e5b187645d11d4b4a9942d66447daa75cebbd5baaadc370"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That law exists because of a hard problem.",
+      "text_sha256": "sha256:7abe4501994ac21f27d57c8e643720d24677997df5892bfb218cffeef6cb8bd1",
+      "idempotency_key": "sha256:ffdabc5c0d376dc0d039adf72e6a54477ed332d1d3f86170f3e025bd923a2b28"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A ship is an asset that leaves.",
+      "text_sha256": "sha256:dbf2bbe80b2f9a8e925181b1d5c07b261164e15542ccfafaad48377638c482bc",
+      "idempotency_key": "sha256:4f1630ab722bce5047bfcf5b8faae29da639ecdc60ae9d47a028dd5babb32e30"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "She sails out of reach, under people her owner cannot see, into weather nobody controls.",
+      "text_sha256": "sha256:f44b0fac9054624f1ed2921183ad568d3a309ceca9f3756db0c043ebf29d1e4b",
+      "idempotency_key": "sha256:2e19dbf5a8e051d15c30356795d0e5bb2c368383da5c03695c0836cc2f7de2c3"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "If one voyage could destroy the company that financed it, the argument runs, nobody finances ships.",
+      "text_sha256": "sha256:7b992b687b90aefa43c976cf862be41ee977b9b5321478fbe1251d94023828b8",
+      "idempotency_key": "sha256:f72d940fe67854a61270b1cae0a7cec9ee80f5817985bf48b7ed198745fddde6"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So the law strikes a deal.",
+      "text_sha256": "sha256:9b3c221151c520fcb7a556d1a168e7b2229c6b55539f6ec4addcca674076c740",
+      "idempotency_key": "sha256:289e58fe70b6c39a472f5406a0e9233eb7dd3fee354aa223d4e5f74e6387e0ee"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "An owner who did not know about the fault, and could not have known, may ask a court to cap what he owes at the value of the vessel and her freight.",
+      "text_sha256": "sha256:579a30eab1c2e6321aa13c988fb79bd9236c2b942d90fb3d958c83ba768a3ff7",
+      "idempotency_key": "sha256:27c6bde144dd8eccef24d14b91faa959f6eede5de67ab9e60e076d0f76011df4"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In the abstract it is a sensible rule for a trading nation.",
+      "text_sha256": "sha256:3458a4f76698fdfe801b50a1bb78c96353b1fd9b5367f7a2bab4876989c07b30",
+      "idempotency_key": "sha256:94956090a57d86512640a10d27f97bf14ffb4aad76887339330deca145fbb084"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "After a bridge falls on a work crew it is a number.",
+      "text_sha256": "sha256:d79b271ff3354174be697f419586c508d21f4859eaf5d19555e30616e8c05e03",
+      "idempotency_key": "sha256:6ca3b452aad0f6744e9c845dc22f27b33c87b6b3b92dc48c97a2888a806a1d16"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The figure they asked to be limited to was about forty-three point seven million dollars. <!-- KB-302 -->",
+      "text_sha256": "sha256:ded5812852a3dff2a4fbce2ef430af386f2b2c7bdf7a30041c9f85c5611a2657",
+      "idempotency_key": "sha256:473c3ecbd51e5d13e2eefccef6bda44da66560fe11613eb6eca006f47780dfc3"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Against that, the United States put in a claim of one hundred and three million, seventy-eight thousand and fifty-six dollars, under the Rivers and Harbors Act, the Oil Pollution Act, and general maritime law — for what it had cost the government to answer the collapse. <!-- KB-303 -->",
+      "text_sha256": "sha256:ac776de3179270ac6b82f8e55e81064bfe4d12d2e7d311bf758e24df415a692c",
+      "idempotency_key": "sha256:9a5c35e8d991e06dffd003915e1f053f1a6f92b901404f7d17d1063dc6460849"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The companies agreed to pay one hundred and one million, nine hundred and eighty thousand dollars. <!-- KB-304 -->",
+      "text_sha256": "sha256:184a687cd940510d789e82f212e824f97de34d36a5def24c99e32fba6321846c",
+      "idempotency_key": "sha256:9bdb69b47a4ad9d6148192c38e2a53fb05817dcfbb63477b6cda4102c7556fd0"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is a settlement of a civil claim.",
+      "text_sha256": "sha256:964cff18eff68a6b21c679c369f34275b2f1d63c63a155cb0861f55e43d957ae",
+      "idempotency_key": "sha256:9caaef651a991154e411826d61e94d622d165fefabdd5bcf02c0de82dd6908c2"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is not an admission of anything, and it is not a criminal finding, and this programme is not going to let it stand in for one. <!-- KB-305 -->",
+      "text_sha256": "sha256:24e9fc53471bfd750bd50ecc966b53040969929420cb62a5d4bbadec8d3294ec",
+      "idempotency_key": "sha256:6edf5e3a3bc1341f2f36ccdebdb444001fd27df4f99b64ff7b2abd73deb06098"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then, in May of 2026, the criminal case arrived, and with it a number that resets the scale of everything above.",
+      "text_sha256": "sha256:aa5ba131a226e49831a1e3173a3a21a80ba1622d416be9aca4b8cd2a18f13f8b",
+      "idempotency_key": "sha256:6d502cbbbd977966d2903555d42d0b68b9a69777c2ebbd40c4dce26e93adb168"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The indictment alleges the economic loss in this case is at least five billion dollars. <!-- KB-404 -->",
+      "text_sha256": "sha256:3b2c8267da43530b9d337540a45b8353f8011eb5ddc6ff06bbb8d85993173008",
+      "idempotency_key": "sha256:d2a014e8e2401b9a5996190193ee28c8b979adbee919edc6376f4bc75f93206a"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Five billion, against a request to be capped at forty-three point seven million. <!-- KB-404, KB-302 -->",
+      "text_sha256": "sha256:97fb59dbc994c9e0ce1a2e2e590279fbf24aa05c721a6d6ca28a2b950d312f7b",
+      "idempotency_key": "sha256:f8cf967cc3d516ae121c8211d33df36f0d350d43bfbd4e4e65e7a8d3c9f40900"
+    },
+    {
+      "chunk_id": "VC-0302",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The gap between those two numbers is the entire argument, and it will be argued by real lawyers in a real courtroom in Maryland, and it is not finished today.",
+      "text_sha256": "sha256:192756930cccf7adb8d6af3de4507a46304262dbb47e8e2d75c10bf0cb144e40",
+      "idempotency_key": "sha256:d733e6be5f273423673b69f8313fd00748626df7c23787b3595153b250c2a069"
+    },
+    {
+      "chunk_id": "VC-0303",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The investigation that produced the charges ran for two years and involved the FBI, the Coast Guard Investigative Service, and the criminal investigators of the Environmental Protection Agency, some of whom were among the first people aboard the wrecked ship. <!-- KB-410, KB-411 -->",
+      "text_sha256": "sha256:04728d17782b69d0db5d6d5ff1dac74991522bd16de93f15bdda295b4341090a",
+      "idempotency_key": "sha256:4964488632dada141027d6bc674d7b8ed1295759a3e9193bf05d7d84ae027b8e"
+    },
+    {
+      "chunk_id": "VC-0304",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is worth saying plainly where that leaves things on the day this programme is made.",
+      "text_sha256": "sha256:b23038e630b3a4239091503b7ae71463327f7d1dd82d8fe8cc0c86602b4aa5ac",
+      "idempotency_key": "sha256:51b292bb62674bca966453e0e82e9e92a04bfb9fe38aa758fbbdd270c49acddd"
+    },
+    {
+      "chunk_id": "VC-0305",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Safety Board has finished.",
+      "text_sha256": "sha256:a8f0872207614311888a6da539246679383c9393438d4ee63189a5a77f1806bd",
+      "idempotency_key": "sha256:8a64229226c21e41de110f17888476d11e3ce88854c9ac9f4d2b7a08cd661de1"
+    },
+    {
+      "chunk_id": "VC-0306",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It met, it voted, it named a probable cause, and it said the complete report would follow. <!-- KB-201, KB-202, KB-207 -->",
+      "text_sha256": "sha256:fdb548f8c61f0739c76c80344d847a2514d9ec507f2db21fe334251725c8d7d5",
+      "idempotency_key": "sha256:3922e15c405042fbbb4ccff7f203b628e8d3493b9659be5c3e63791368870305"
+    },
+    {
+      "chunk_id": "VC-0307",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The civil claim by the United States is resolved, by agreement, for a hundred and one million, nine hundred and eighty thousand dollars. <!-- KB-304 -->",
+      "text_sha256": "sha256:ef5a6ea6bedb99590310c873be639774d7884b614ddc28478eba6a1b105ee52e",
+      "idempotency_key": "sha256:192f640eeac6f5f9c26d721d338eba4c1fe910a4174684ea147dacedd27fb408"
+    },
+    {
+      "chunk_id": "VC-0308",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the criminal case has barely begun.",
+      "text_sha256": "sha256:101b4f243f658e3a3b9a9b900c6090ff636d264c8a2cb5a122cae58b3e025150",
+      "idempotency_key": "sha256:416040c490298a9902970c5b425b93e23b693e23eb8937db75df365fdcac85f6"
+    },
+    {
+      "chunk_id": "VC-0309",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "An indictment was unsealed in May.",
+      "text_sha256": "sha256:62d959d0782ec4d1c53579d16546712d0a71d2cab54355eb2c2ec432c17cd7e5",
+      "idempotency_key": "sha256:9d87d74af91950ebca2b9b777f6a6d6f6549f9320faf488f55634bf964cd1952"
+    },
+    {
+      "chunk_id": "VC-0310",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Three defendants stand charged — two companies and one man.",
+      "text_sha256": "sha256:38d096d451c8b1c7ee6d3d90e53aacd6d0c8ab410114d4f9420aff58cc10556a",
+      "idempotency_key": "sha256:08fbdaa96c8de74c2d5554da69328c92693b4cb7547e22e38189570cb23174f8"
+    },
+    {
+      "chunk_id": "VC-0311",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "None of them has been tried.",
+      "text_sha256": "sha256:eeea29912f0ede1ef30a547199fd6c0ce619596b167d687caa989639492b7cb0",
+      "idempotency_key": "sha256:3f88a0bbb26e1a1c2285131d44c7e0c1fd93686f0b338eb8f15708948dc74599"
+    },
+    {
+      "chunk_id": "VC-0312",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "None of them has been convicted of anything.",
+      "text_sha256": "sha256:924a459f215d9ca43a905248d399ae7c3ebcbf57b79f2cc8cb7115d4e3e5f35e",
+      "idempotency_key": "sha256:2fc835d5c1e969de866b0548392e1c9f359fc8cf4f821ad73c6ee9f23dd8d497"
+    },
+    {
+      "chunk_id": "VC-0313",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The presumption of innocence is not a formality that a documentary gets to skip because the facts underneath are upsetting. <!-- KB-401, KB-501 -->",
+      "text_sha256": "sha256:927de1049e8d8f9c18d0b4f876d78d59d7471413aef6311fad055e3c7532f142",
+      "idempotency_key": "sha256:19caf53d47a15eca6e0e46af7ef3768ea85bc10236446bbc001ab1f514370037"
+    },
+    {
+      "chunk_id": "VC-0314",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There is also a distinction in that indictment which is easy to miss and which will decide a great deal.",
+      "text_sha256": "sha256:b4181219a5ba17eb46a78b8aa1b5b9e821397e68e8050c65688106dca366fa67",
+      "idempotency_key": "sha256:0b13c4dd2cc0247fcbc042b54885d958495dbbb3c0f08ee604eb48b26631262f"
+    },
+    {
+      "chunk_id": "VC-0315",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The counts are not, in the main, about building a bad ship.",
+      "text_sha256": "sha256:a8ac339cac8de378eb74377a3b09a668cefdab96f7a624ff0f1d724317213b1e",
+      "idempotency_key": "sha256:d32e4a4b0fc5bb9f7f1aa769e749c966efa4d2929e3ca52d295e8bd0e9458d62"
+    },
+    {
+      "chunk_id": "VC-0316",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They are about what was done with a good one, and about what was said afterwards.",
+      "text_sha256": "sha256:335bb19a3be70bf72c85ce2b407b2bead060c68f53e168e9007b8db070fbf904",
+      "idempotency_key": "sha256:4de2adf21b1f01cef4906af4b9dd7a354c947c9965129eb41f31dbb672c53076"
+    },
+    {
+      "chunk_id": "VC-0317",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Conspiracy.",
+      "text_sha256": "sha256:6cdc51d9f9612cf5f7dd716dd5ecb158ebf8d0d35f52d2c7efcababd74346532",
+      "idempotency_key": "sha256:cbf8b3f2cb3b37acf22605064d798dfeb26307ab7ce8773f6605a0dd14d9357a"
+    },
+    {
+      "chunk_id": "VC-0318",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Failing to tell the Coast Guard about a known hazardous condition.",
+      "text_sha256": "sha256:6f2610ab19eb1c4a5dd18a53f95245697ae9f7fa926bb019f8c8f4f601035b16",
+      "idempotency_key": "sha256:c8277c3f2add460deaf762541f5246b0b48b201f686f0e438418e843c4ab79ff"
+    },
+    {
+      "chunk_id": "VC-0319",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Obstruction of an agency proceeding.",
+      "text_sha256": "sha256:f6a78851b71a807a84eb201516c60673997e48a1ac439d8167f70ecb295ce1dc",
+      "idempotency_key": "sha256:eccfd5b2a00a92020f74f80c928ef13d5b27935a2dca67cf6ed4ae3213304bde"
+    },
+    {
+      "chunk_id": "VC-0320",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "False statements. <!-- KB-402 -->",
+      "text_sha256": "sha256:acd56996662d8a2d04b8a51b53f5533cc20ee4dd1c04649fa32346f6bcc05c97",
+      "idempotency_key": "sha256:58c1378acc1938ded9ce38ce1359fd339bd58150cdf44a4aad74341733b71a9a"
+    },
+    {
+      "chunk_id": "VC-0321",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Read them in order and they describe a sequence: something was changed, the change was not reported, and when investigators came asking, the government says they were not told. <!-- KB-402, KB-407, KB-409 -->",
+      "text_sha256": "sha256:ad3d2174cc924667cc86e2826065bc91754ce1da791688610d3ab467f1cfef4e",
+      "idempotency_key": "sha256:2d177e72a8101f036fd8b22ae760549a1ece75ffbf0a62ddb1c9f315f67ab9ec"
+    },
+    {
+      "chunk_id": "VC-0322",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Whether that sequence is true is not for this programme to decide, and it is not decided yet.",
+      "text_sha256": "sha256:f3f82c1f8a9f116c06b634bacaa56169b961b09fbc629004f4e7dc6d7b886bb0",
+      "idempotency_key": "sha256:ea3eea913fbf8db3fbd9ae6a31a2dce8c80d905b0da36f7055ed7cf4b431b53d"
+    },
+    {
+      "chunk_id": "VC-0323",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is for twelve people in a courtroom in Maryland who have not yet been chosen. <!-- KB-501 -->",
+      "text_sha256": "sha256:8b46da6bb684bf9ce6e12c371a7b5ded5f60e222e125b2e9b84f5f4a5d9b321d",
+      "idempotency_key": "sha256:b21776a8a4b72a68784815c73eb699728b1f9bc5588e40f791c4a74f190ff6c8"
+    },
+    {
+      "chunk_id": "VC-0324",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And all of it — the Board's twenty months, the grand jury's two years, the settlement, the sixty-eight bridges — all of it comes back to a stretch of time you could hold your breath through.",
+      "text_sha256": "sha256:1da4257b13ef2246b097e2355114b9fdd1ad5b1bb295a5438dfbfef2f107b868",
+      "idempotency_key": "sha256:1a22d6f2d0a128fe17b01c8e4d536dd014e2bcaa5ee33a610189ebd652a2f95b"
+    },
+    {
+      "chunk_id": "VC-0325",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The duty officer's order went out at twenty-seven minutes and fifty-three seconds past one. <!-- KB-113 -->",
+      "text_sha256": "sha256:eeb0f2b940cc33c29c202c3874cafc29b3e40213b52059fc1cf7a8de3e05d307",
+      "idempotency_key": "sha256:e8ff63bd13b3a231ed42596090708c5bbc643925e94c3747f1f83fe4ad3ebdde"
+    },
+    {
+      "chunk_id": "VC-0326",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The ship touched the pier at about twenty-nine minutes past one. <!-- KB-002 -->",
+      "text_sha256": "sha256:507ea743b47f4cde030ba0183dc156d76aae852dc7153c6ccb9a1bd9e2360a6d",
+      "idempotency_key": "sha256:a9729d43ce6c2d2495f96c3a0cf4babac385ba77705f13befa43bbae10450491"
+    },
+    {
+      "chunk_id": "VC-0327",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Sixty-seven seconds.",
+      "text_sha256": "sha256:95b665706fbf68980f841bc228753d358f48a314b29d4618038497943ca9e425",
+      "idempotency_key": "sha256:e66b526b4eafe38444004502febf88b1a14b64a8679967d38960b00d448b3057"
+    },
+    {
+      "chunk_id": "VC-0328",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And in that window a decision made ten hours earlier at a pier, and a modification made at some point before that in an engine room, and a band of label on a single wire, all arrived at the same place at the same time.",
+      "text_sha256": "sha256:c37d1d8d5e5ebba37795393fb9663b92b38882b268da5d0b307459ba688a5b81",
+      "idempotency_key": "sha256:edbd632b68f7a428b4550bf62035ea624a4ff3c5eb481560406394527e852cc1"
+    },
+    {
+      "chunk_id": "VC-0329",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So what is the rule that was actually running that night?",
+      "text_sha256": "sha256:7c747467bf518f41abfe6a203202c5b7c7704d953c8fa651c0e60205c82356d8",
+      "idempotency_key": "sha256:2df1a9d8de3aca858df49a71ca4f8cebd039d12bdcfe201272fb43897a283f61"
+    },
+    {
+      "chunk_id": "VC-0330",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Go back to the deck.",
+      "text_sha256": "sha256:74b49907541f26c90aacf4f5d05c6949d991d90d492095f743a8e1f1a5532d29",
+      "idempotency_key": "sha256:b2a3871bc34c8efea53c60ad9f192c39e7f56a721ac701792f3497d5aa40c28b"
+    },
+    {
+      "chunk_id": "VC-0331",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The work light is still burning.",
+      "text_sha256": "sha256:891c6840a967cf8e7552dbad89887dc2b4c70303bd8c6fc6fa1f349ade9592f8",
+      "idempotency_key": "sha256:a0ff9be0a5d25fb699ac8d52ffa89b42bd3b9e17da5add4ccbef845a9f750ba5"
+    },
+    {
+      "chunk_id": "VC-0332",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The cone is still standing in it.",
+      "text_sha256": "sha256:bf46d6dea2a14006c172e00e10a7e85f7ebf0be2260b77c6f33806eaaed96196",
+      "idempotency_key": "sha256:b80a9a7da0d9639fe7ab11cda1539403286336f2ed00ea0c18ecf301821f0824"
+    },
+    {
+      "chunk_id": "VC-0333",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Nothing has happened yet.",
+      "text_sha256": "sha256:f279f39eb2e3a96ee6c255a819508605f52717b08ce89d5a25366f536a07956a",
+      "idempotency_key": "sha256:7a9c2174a555c68130d88745fbf9e02017c47860805eae16ab93222dd1c30db0"
+    },
+    {
+      "chunk_id": "VC-0334",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Down the channel, a ship is leaving a berth with her lights on.",
+      "text_sha256": "sha256:e92cf9e7a789d98f09c9a811384499a959d205f823bd9103bb0438a36e1b496f",
+      "idempotency_key": "sha256:b53723522e0cc7a3b97b9842e34fe5b216dc1f5c9462d95675d5b697ddd79775"
+    },
+    {
+      "chunk_id": "VC-0335",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Every lamp aboard her is lit.",
+      "text_sha256": "sha256:e405ba6dc00de8df65eb8603725daf71f3efe0674dfed4fd703d58ca16a1d57e",
+      "idempotency_key": "sha256:d3739a19d82c4fbb47293e8163c1cea8214ab5b8ea48bb4b980db92aee1a26e8"
+    },
+    {
+      "chunk_id": "VC-0336",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is what a working ship looks like. <!-- KB-008 -->",
+      "text_sha256": "sha256:cd946c1f148950393f86de7f596116d4a3c05f6c5ed761e0c7ba06237d56e55a",
+      "idempotency_key": "sha256:dd03017f43cc124d0a911db3f49f7365488db20dfa7f67f9c3e1fd80f715dff6"
+    },
+    {
+      "chunk_id": "VC-0337",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "She loses them at twenty-five past one.",
+      "text_sha256": "sha256:46be4a431d2a3c3099eb568f0a55f4b3c8154332f394226263dc79cc7119b6f3",
+      "idempotency_key": "sha256:621540c6710586e9eb1c0a03f3c9352b291588d11be67493ce191320483189a6"
+    },
+    {
+      "chunk_id": "VC-0338",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "She gets them back.",
+      "text_sha256": "sha256:466a765fcf8969c4a4d1962554e2fe118b789f592805f6b16508db9275c2dbee",
+      "idempotency_key": "sha256:df7fa76fab517ea373dcff2bbf3b07bef67377c21114e026957a59bd43d4b2f4"
+    },
+    {
+      "chunk_id": "VC-0339",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "She loses them again.",
+      "text_sha256": "sha256:c242f257f6766f11e8977f5f64393f077798b10b260367a57d78d99216a3859d",
+      "idempotency_key": "sha256:801d20ce74fc3b4f0c283c65f5a3819d3a22572e3bbdbeab2479e10eb5310860"
+    },
+    {
+      "chunk_id": "VC-0340",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And at twenty-seven minutes and thirty-two seconds past one, with two tenths of a mile to run, she gets them back for the last time. <!-- KB-105, KB-107, KB-110, KB-112 -->",
+      "text_sha256": "sha256:f9a6d226942d2ee3f0d41fe4e06cc60537577bbcb9587c358c318f5c34eb2a3f",
+      "idempotency_key": "sha256:2231846eca2a843b0d536565b823289cc716d4ea9d78d58f973abe8aaa54b480"
+    },
+    {
+      "chunk_id": "VC-0341",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Lit from bow to stern.",
+      "text_sha256": "sha256:ebfd24d5e3c63e1910f987c8bf3eb47f4809664d96a8b4664d0aa1bc99483401",
+      "idempotency_key": "sha256:548b9868c26250f502f0f8f7ab3b302ef858c6fd41f443b7111fbd4fb93d135a"
+    },
+    {
+      "chunk_id": "VC-0342",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Every lamp burning. <!-- KB-112 -->",
+      "text_sha256": "sha256:b7028cc5a20f0dc5a9cca11500e5472c89cefe6ea7b9d42eb04d7182b2714d2e",
+      "idempotency_key": "sha256:e3162a83dbb50782f91245783285b981e6c14c67be8c68e94c9c34765c7e3f05"
+    },
+    {
+      "chunk_id": "VC-0343",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And not moving under her own power. <!-- KB-112 -->",
+      "text_sha256": "sha256:5d14656ca3ba2399242889a1cca7a5664dc574416cf7488d83922fed13901f3d",
+      "idempotency_key": "sha256:aa2557f2d422495d0bfd3fc56428ab9ffb48b68d7a640da0899284eb9e287ee1"
+    },
+    {
+      "chunk_id": "VC-0344",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The drawings promised she could recover.",
+      "text_sha256": "sha256:f92c2fc66dcc22f08706615e44a056fbbe67b69c557b8dae543e2b66a10f0e8e",
+      "idempotency_key": "sha256:2056f26fe4ee7b8a02b0857e5e38700a4914f663b6635e414740dce3cb669a3e"
+    },
+    {
+      "chunk_id": "VC-0345",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "They were honest drawings. <!-- KB-406 -->",
+      "text_sha256": "sha256:5982b4d8a2252f919ad0e067db847e7ae78994d3b40432915d877d97381269be",
+      "idempotency_key": "sha256:b7145314c469872ae4ff7cc13caf474f144a692526cb43f010916276922181f9"
+    },
+    {
+      "chunk_id": "VC-0346",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Somewhere between those drawings and that water, the United States says, the promise was edited — and the edit stayed in the engine room. <!-- KB-407, KB-409, KB-501 -->",
+      "text_sha256": "sha256:7ce6074dbcb19daf1adbf63a0b489251587512fa45a0f60f896f5cf39f2b174c",
+      "idempotency_key": "sha256:74926a9c9aefc2e834fe1441a474abb098289d9247d95ae5799fc210002a220b"
+    },
+    {
+      "chunk_id": "VC-0347",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Nobody has been tried for that. <!-- KB-501 -->",
+      "text_sha256": "sha256:370775f1e45e03aa31895dbb86f79bcea467270c508a9cec07a81bb282a0cf32",
+      "idempotency_key": "sha256:c1e80724986a86d2ff41225e201aadd02a9f4001f7d4b60c318178ea99491c42"
+    },
+    {
+      "chunk_id": "VC-0348",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "On the other side of the channel, the guidance about ship strikes had been written, and published, and had not reached the people who owned the bridge.",
+      "text_sha256": "sha256:9c7a11c1bd12095fb673bd2f0dd812457d50a66a1a6c87cc7eecb2bd6b5a608c",
+      "idempotency_key": "sha256:4ee42516ed5ae1678f2009b96059ec7263cd4e17d156ea417cee13fdfc66140e"
+    },
+    {
+      "chunk_id": "VC-0349",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The Board found they were likely unaware. <!-- KB-204, KB-205 -->",
+      "text_sha256": "sha256:6ac51cbe35a88f71bf4750019879d2d37196c08b6f227809a3a4445c46560a48",
+      "idempotency_key": "sha256:7af58c15626c88bf7910c27370be1bf0b7b5a197fd200b34cd0b4b2c2376394c"
+    },
+    {
+      "chunk_id": "VC-0350",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Not a villain.",
+      "text_sha256": "sha256:7dad11e9a2870a82ab4cc094349ebf7e657d8a171475330e81f16e7b75500d97",
+      "idempotency_key": "sha256:b0d33b6b08fd4b452dd78cd74baa8187ecd01be1be58b0cbadaac6af086b83dd"
+    },
+    {
+      "chunk_id": "VC-0351",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A gap.",
+      "text_sha256": "sha256:4d7a9f93ba25cb14b2cd46575421ddff119eae6b02c7bacf7329efd81e3c1f8b",
+      "idempotency_key": "sha256:2764a6adbb2fcccbd0e1651418fe8257f2aa4c6a0ff904e7da8a78d7d50e14dd"
+    },
+    {
+      "chunk_id": "VC-0352",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Sixty-eight bridges are now on a list that says: go and check what happens if a ship hits this. <!-- KB-206 -->",
+      "text_sha256": "sha256:bb5eaa21bbb6b19e1eb067b293608826c6a19287c5010dad9cc64e79f5748261",
+      "idempotency_key": "sha256:b042210e3a2f7b542604ed142c1249811d9314979867b57a8be6bec6a18e0eb8"
+    },
+    {
+      "chunk_id": "VC-0353",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That list did not exist on the twenty-fifth of March, 2024.",
+      "text_sha256": "sha256:168eaa03d819d98f68a330acad78e24eebdeffd5f2595a0b8102af5f326fe025",
+      "idempotency_key": "sha256:5756242e49056e50f1a3b0f12714c6383f098c4c55d3d1e2c6267c79bd36310b"
+    },
+    {
+      "chunk_id": "VC-0354",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The work light on the deck goes off at dawn.",
+      "text_sha256": "sha256:c70d2f7a79240d307e13504951fdda9149c908e5e3ccb31547d5f21baa86b444",
+      "idempotency_key": "sha256:9d1a2533c1f24bd2b21a7d584385b59a903681c67ce7321e6ba9acd558c4817d"
+    },
+    {
+      "chunk_id": "VC-0355",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The cone gets stacked on the truck.",
+      "text_sha256": "sha256:80803f9b1c5ddeb80af7f4675de2914c15d5aca18abc33fcc1f44fdf00f22ab2",
+      "idempotency_key": "sha256:971beca93d6a3f87fe3eb6d1ca90f8150781164a41c269628da7ae7354b8c351"
+    },
+    {
+      "chunk_id": "VC-0356",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The lane opens. <!-- KB-004 -->",
+      "text_sha256": "sha256:ea079e8ec0766f9d8f080c82acf7ed89e19ce1560387217a7b028f01e28071da",
+      "idempotency_key": "sha256:2fc0246c8f7d6e5b19962dc01a074f77ae580149bdda986ab55ba8f989e9e727"
+    },
+    {
+      "chunk_id": "VC-0357",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Every light in this story came back on.",
+      "text_sha256": "sha256:965b95e71213edb9749d1687e4afa225bbe61039b2c9e32ae10e278adf3280ec",
+      "idempotency_key": "sha256:88d88e9a7c871351d849ddba52829bc45dece082ba4910ab4374dd568f6ceba5"
+    },
+    {
+      "chunk_id": "VC-0358",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That was never the thing that had to hold.",
+      "text_sha256": "sha256:8529015b59e425bfd1e78475a71b2f9255b41f77db2be70a70b670da0829fdfc",
+      "idempotency_key": "sha256:562d2c265e3b70d42688064137a9b17c9a965e5cf22a845e557c118a5510903d"
+    }
+  ]
+}

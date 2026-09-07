@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "pd_014_015_publish_readiness_preflight",
+  "public_release_allowed": false,
+  "episodes": [
+    {
+      "episode_id": "PD-2026-014-lange",
+      "status": "BLOCKED",
+      "public_release_allowed": false,
+      "checks": [
+        {
+          "name": "file_exists:episodes/PD-2026-014-lange/manifest.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-014-lange/manifest.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-014-lange/09_package/final_delivery.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-014-lange/09_package/final_delivery.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-014-lange/09_package/youtube_meta.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-014-lange/09_package/youtube_meta.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-014-lange/09_package/rights_manifest.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-014-lange/09_package/rights_manifest.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-014-lange/09_package/OWNER_REVIEW_REQUEST.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-014-lange/09_package/OWNER_REVIEW_REQUEST.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-014-lange/09_package/approval_drafts.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-014-lange/09_package/approval_drafts.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-014-lange/09_package/prepublish_review_packet.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-014-lange/09_package/prepublish_review_packet.v001.json"
+        },
+        {
+          "name": "state_is_edit_review_or_later",
+          "ok": true,
+          "detail": "edit_review"
+        },
+        {
+          "name": "package_marks_no_public_release",
+          "ok": true,
+          "detail": "owner review request must not authorize release"
+        },
+        {
+          "name": "no_logo_or_likeness_declared",
+          "ok": true,
+          "detail": "rights manifest likeness/logo flags"
+        },
+        {
+          "name": "synthetic_disclosure_required",
+          "ok": true,
+          "detail": "synthetic disclosure flag"
+        },
+        {
+          "name": "video_exists",
+          "ok": true,
+          "detail": "H:\\pd-media\\episodes\\PD-2026-014-lange\\08_edit\\renders\\lange_premium_review_proxy_v001.mp4"
+        },
+        {
+          "name": "video_sha_matches_final_delivery",
+          "ok": true,
+          "detail": "sha256:0698e4294d536506c7eac40b693e911d548d23e24706d607f12f91c38d49022b"
+        },
+        {
+          "name": "video_sha_matches_youtube_meta",
+          "ok": true,
+          "detail": "sha256:0698e4294d536506c7eac40b693e911d548d23e24706d607f12f91c38d49022b"
+        },
+        {
+          "name": "video_sha_matches_owner_request",
+          "ok": true,
+          "detail": "sha256:0698e4294d536506c7eac40b693e911d548d23e24706d607f12f91c38d49022b"
+        },
+        {
+          "name": "thumbnail_exists",
+          "ok": true,
+          "detail": "episodes/PD-2026-014-lange/09_package/thumbnail.selected.v001.png"
+        },
+        {
+          "name": "thumbnail_sha_matches_youtube_meta",
+          "ok": true,
+          "detail": "sha256:dae3f3a81eeb0253b077bbab5f581fc56e95d7eae9174fb8e84b18f73c6c6e97"
+        },
+        {
+          "name": "thumbnail_sha_matches_owner_request",
+          "ok": true,
+          "detail": "sha256:dae3f3a81eeb0253b077bbab5f581fc56e95d7eae9174fb8e84b18f73c6c6e97"
+        },
+        {
+          "name": "validate_episode_pass",
+          "ok": true,
+          "detail": "RESULT: PASS"
+        },
+        {
+          "name": "rights_hashes_match_expected",
+          "ok": true,
+          "detail": "{\"mismatch\": 0, \"missing\": 0, \"nohash\": 0, \"ok\": 173, \"total\": 173}"
+        },
+        {
+          "name": "approval_present:first_cut:APR-0002",
+          "ok": false,
+          "detail": "episodes/PD-2026-014-lange/approvals/APR-0002.json"
+        },
+        {
+          "name": "approval_present:title_thumbnail:APR-0003",
+          "ok": false,
+          "detail": "episodes/PD-2026-014-lange/approvals/APR-0003.json"
+        },
+        {
+          "name": "approval_present:narration_release:APR-0004",
+          "ok": false,
+          "detail": "episodes/PD-2026-014-lange/approvals/APR-0004.json"
+        },
+        {
+          "name": "approval_present:publish_schedule:APR-0005",
+          "ok": false,
+          "detail": "episodes/PD-2026-014-lange/approvals/APR-0005.json"
+        }
+      ],
+      "blockers": [
+        "approval_present:first_cut:APR-0002: episodes/PD-2026-014-lange/approvals/APR-0002.json",
+        "approval_present:title_thumbnail:APR-0003: episodes/PD-2026-014-lange/approvals/APR-0003.json",
+        "approval_present:narration_release:APR-0004: episodes/PD-2026-014-lange/approvals/APR-0004.json",
+        "approval_present:publish_schedule:APR-0005: episodes/PD-2026-014-lange/approvals/APR-0005.json"
+      ],
+      "warnings": []
+    },
+    {
+      "episode_id": "PD-2026-015-theranos",
+      "status": "BLOCKED",
+      "public_release_allowed": false,
+      "checks": [
+        {
+          "name": "file_exists:episodes/PD-2026-015-theranos/manifest.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-015-theranos/manifest.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-015-theranos/09_package/final_delivery.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-015-theranos/09_package/final_delivery.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-015-theranos/09_package/youtube_meta.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-015-theranos/09_package/youtube_meta.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-015-theranos/09_package/rights_manifest.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-015-theranos/09_package/rights_manifest.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-015-theranos/09_package/approval_drafts.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-015-theranos/09_package/approval_drafts.v001.json"
+        },
+        {
+          "name": "file_exists:episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v001.json",
+          "ok": true,
+          "detail": "episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v001.json"
+        },
+        {
+          "name": "state_is_edit_review_or_later",
+          "ok": true,
+          "detail": "edit_review"
+        },
+        {
+          "name": "package_marks_no_public_release",
+          "ok": true,
+          "detail": "owner review request must not authorize release"
+        },
+        {
+          "name": "no_logo_or_likeness_declared",
+          "ok": true,
+          "detail": "rights manifest likeness/logo flags"
+        },
+        {
+          "name": "synthetic_disclosure_required",
+          "ok": true,
+          "detail": "synthetic disclosure flag"
+        },
+        {
+          "name": "video_exists",
+          "ok": true,
+          "detail": "H:\\pd-media\\episodes\\PD-2026-015-theranos\\08_edit\\renders\\theranos_premium_review_proxy_v003.mp4"
+        },
+        {
+          "name": "video_sha_matches_final_delivery",
+          "ok": true,
+          "detail": "sha256:fa119c6af8c3f37c55f23f2885d34250f65c0b0ee2f87f73ca1cccb2ce873df9"
+        },
+        {
+          "name": "video_sha_matches_youtube_meta",
+          "ok": true,
+          "detail": "sha256:fa119c6af8c3f37c55f23f2885d34250f65c0b0ee2f87f73ca1cccb2ce873df9"
+        },
+        {
+          "name": "video_sha_matches_owner_request",
+          "ok": true,
+          "detail": "sha256:fa119c6af8c3f37c55f23f2885d34250f65c0b0ee2f87f73ca1cccb2ce873df9"
+        },
+        {
+          "name": "thumbnail_exists",
+          "ok": true,
+          "detail": "episodes/PD-2026-015-theranos/09_package/thumbnail.selected.v001.png"
+        },
+        {
+          "name": "thumbnail_sha_matches_youtube_meta",
+          "ok": true,
+          "detail": "sha256:f0d14264ffaf47aaa601ce7ad7eff5106dc828e30a3da8da17c31c3eca603963"
+        },
+        {
+          "name": "thumbnail_sha_matches_owner_request",
+          "ok": true,
+          "detail": "sha256:f0d14264ffaf47aaa601ce7ad7eff5106dc828e30a3da8da17c31c3eca603963"
+        },
+        {
+          "name": "validate_episode_pass",
+          "ok": true,
+          "detail": "RESULT: PASS"
+        },
+        {
+          "name": "rights_hashes_match_expected",
+          "ok": true,
+          "detail": "{\"mismatch\": 0, \"missing\": 0, \"nohash\": 0, \"ok\": 160, \"total\": 160}"
+        },
+        {
+          "name": "approval_present:first_cut:APR-0002",
+          "ok": false,
+          "detail": "episodes/PD-2026-015-theranos/approvals/APR-0002.json"
+        },
+        {
+          "name": "approval_present:title_thumbnail:APR-0003",
+          "ok": false,
+          "detail": "episodes/PD-2026-015-theranos/approvals/APR-0003.json"
+        },
+        {
+          "name": "approval_present:narration_release:APR-0004",
+          "ok": false,
+          "detail": "episodes/PD-2026-015-theranos/approvals/APR-0004.json"
+        },
+        {
+          "name": "approval_present:legal_rights:APR-0005",
+          "ok": false,
+          "detail": "episodes/PD-2026-015-theranos/approvals/APR-0005.json"
+        },
+        {
+          "name": "approval_present:publish_schedule:APR-0006",
+          "ok": false,
+          "detail": "episodes/PD-2026-015-theranos/approvals/APR-0006.json"
+        },
+        {
+          "name": "theranos_legal_packet_blocks_until_review",
+          "ok": true,
+          "detail": "do_not_publish_until_owner_first_cut_title_thumbnail_final_narration_and_legal_rights_approval_are_recorded"
+        }
+      ],
+      "blockers": [
+        "approval_present:first_cut:APR-0002: episodes/PD-2026-015-theranos/approvals/APR-0002.json",
+        "approval_present:title_thumbnail:APR-0003: episodes/PD-2026-015-theranos/approvals/APR-0003.json",
+        "approval_present:narration_release:APR-0004: episodes/PD-2026-015-theranos/approvals/APR-0004.json",
+        "approval_present:legal_rights:APR-0005: episodes/PD-2026-015-theranos/approvals/APR-0005.json",
+        "approval_present:publish_schedule:APR-0006: episodes/PD-2026-015-theranos/approvals/APR-0006.json"
+      ],
+      "warnings": []
+    }
+  ]
+}

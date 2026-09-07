@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-085-katrina",
+  "slug": "katrina",
+  "authored": "2026-09-05",
+  "note": "Fills the empty people_plates declaration in episode_spec.v001.json (people_plates_min: 20). Authored for local SD3.5 Large generation (sd35_gen.py) under the owner's emergency-addition exception while Codex is down. Every figure is anonymous by construction: from behind, silhouette, or hands-only. No real-person likeness, no readable text or sign surfaces, no bodies or suffering-as-spectacle, per forbidden_subjects. Era anchors: 1977 E-99 test, 1980s design office, 29 Aug 2005 and its dry aftermath, 2009-2012 court. 16:9 composition intent throughout. Beats reference script.en.v001.md sections.",
+  "plates": [
+    {
+      "id": "P001",
+      "beat": "HOOK — 'In New Orleans a concrete wall stands on an earth bank, and the water is nine feet up it.'",
+      "subject": "A lone man seen entirely from behind, standing at the foot of a tall concrete floodwall on a grass levee bank in dim storm-grey dawn light, dwarfed by the wall.",
+      "prompt": "Cinematic documentary photograph, 2005, a lone man seen entirely from behind standing at the base of a tall smooth concrete floodwall rising from a grassy earthen levee, storm-dark dawn sky, wind pressing his rain jacket against his back, the wall towering featureless and grey above him, wet grass, one cold shaft of early light along the top of the concrete, low camera angle from behind the figure, photorealistic, film grain, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, human face, facial features, portrait, identifiable person, body, corpse, person in water, flood water, child, smartphone, modern car, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Figure strictly from behind, no face or profile. No floodwater touching the figure. No signage or markings on the wall. Not a recognizable real location plaque."
+    },
+    {
+      "id": "P002",
+      "beat": "HOOK — 'Why does a wall fail at water it was designed to hold?'",
+      "subject": "Hands-only close-up: a pair of weathered adult hands pressed flat against cold wet concrete floodwall surface.",
+      "prompt": "Cinematic documentary close-up, two weathered adult hands pressed flat against a cold rain-wet concrete floodwall surface, water beading and running down the grey concrete, overcast daylight from one side raking across the texture, shallow depth of field, skin and concrete both tack sharp, photorealistic, high contrast, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, human face, facial features, portrait, identifiable person, ring with insignia, tattoo, wristwatch with readable dial, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Hands only, no face, no body beyond forearms. No jewellery or watch that could read as identifying. No markings on the concrete."
+    },
+    {
+      "id": "P003",
+      "beat": "ACT_1 — 'Everyone remembers the hurricane.' / 'On the twenty-ninth of August, 2005, the water came up.' (the city preparing)",
+      "subject": "A homeowner seen from behind on a ladder, drilling a sheet of plywood over a house window before the storm, 2005 suburban New Orleans street.",
+      "prompt": "Cinematic documentary photograph, August 2005, a homeowner in a plain t-shirt seen fully from behind on a short stepladder, holding a bare plywood sheet over a shotgun-house window, one arm raised with a cordless drill, heavy yellow-grey pre-storm light, humid haze, a mid-2000s sedan blurred in the driveway behind, clapboard siding, no markings anywhere, photorealistic, film grain, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, street sign, licence plate, human face, facial features, portrait, identifiable person, child, smartphone, modern electric car, flood water, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Figure from behind only. Plywood and walls completely blank. Car generic mid-2000s, licence plate not visible. No children, no crowd."
+    },
+    {
+      "id": "P004",
+      "beat": "ACT_1 — 'urban drainage channels — narrow, straight, with houses standing within a few metres of the wall.'",
+      "subject": "A resident seen from behind in a small backyard, looking up at the concrete floodwall that looms directly over the garden fence, 2005 era.",
+      "prompt": "Cinematic documentary photograph, mid-2000s New Orleans backyard, a resident in a plain shirt seen entirely from behind standing on a small patch of lawn, garden hose coiled at their feet, looking up at a tall grey concrete floodwall rising just beyond the low chain-link fence only a few metres away, late golden afternoon light, laundry line, humid summer air, the wall filling the top half of the frame, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, human face, facial features, portrait, identifiable person, child, smartphone, modern car, flood water, graffiti, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "From behind only. Wall surface blank, no graffiti or markings. No children's toys implying a child subject. Domestic and calm, not ominous suffering."
+    },
+    {
+      "id": "P005",
+      "beat": "ACT_1 — 'The breach began to develop at about six in the morning and was fully developed before nine.' (the city indoors as it happened)",
+      "subject": "A figure seen from behind in a dark living room before dawn, lit only by the static glow of a CRT television, storm rain streaking the window.",
+      "prompt": "Cinematic documentary photograph, 29 August 2005 before dawn, a lone adult seen from behind in silhouette sitting forward on a couch in a dark wood-panelled living room, lit only by the blue-grey static glow of a bulky CRT television, the screen showing only formless analog static, hurricane rain lashing the window glass beyond, power-flicker gloom, mid-2000s furniture, photorealistic, high contrast, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, legible screen text, news graphics, human face, facial features, portrait, identifiable person, child, smartphone, flat-screen television, flood water indoors, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Silhouette from behind only. CRT screen shows pure static, no images, no captions, no map, no hurricane graphic with a name label. No water inside the house."
+    },
+    {
+      "id": "P006",
+      "beat": "ACT_1 — 'The federal task force identified fifty major breaches...' (walking the damage)",
+      "subject": "An inspector in hard hat and work boots seen from behind, walking the crest of a damaged earthen levee past tilted concrete wall panels, dry cracked mud, weeks after the storm.",
+      "prompt": "Cinematic documentary photograph, autumn 2005 New Orleans, an engineer in a white hard hat and khaki work clothes seen entirely from behind walking along the crest of a damaged earthen levee, tilted and displaced blank concrete floodwall panels leaning at odd angles ahead of him, dry grey mud cracked into plates underfoot, hazy flat overcast light, debris-strewn empty ground beyond, no water, photorealistic, muted colour, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, agency insignia, human face, facial features, portrait, identifiable person, body, corpse, victim, flood water, person wading, child, smartphone, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "From behind only, no insignia on hard hat or clothing. Ground fully drained and dry. No bodies, no personal belongings readable as a victim's. No houses with rescue markings."
+    },
+    {
+      "id": "P007",
+      "beat": "ACT_2 — 'two-thirds of the flooding... came from water flowing through breaches in the floodwalls and levees, not over them.'",
+      "subject": "A silhouetted investigator standing inside the gap of a breached floodwall, framed by the broken concrete edges, looking out over a dried mud-caked neighbourhood.",
+      "prompt": "Cinematic documentary photograph, late 2005, a lone investigator in silhouette seen from behind standing in the ragged gap of a breached concrete floodwall, the torn blank concrete edges framing him on both sides, beyond him a drained residential street caked in pale grey dried mud, flat white overcast sky, scale of the breach dwarfing the figure, photorealistic, desaturated, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, street sign, human face, facial features, portrait, identifiable person, body, corpse, victim, flood water, person wading, child, rescue marking, cross marker on a house, smartphone, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Silhouette from behind. Street beyond is dry and empty of people. No X-code rescue markings on houses, no readable house numbers, no bodies or belongings staged as loss."
+    },
+    {
+      "id": "P008",
+      "beat": "ACT_2 — 'shear failure within the clay in the foundation beneath the levee and the wall.'",
+      "subject": "Hands-only: gloved engineer's hands holding a cylindrical grey clay soil core over an open wooden core box in the field.",
+      "prompt": "Cinematic documentary close-up, 2005 field investigation, two hands in worn work gloves holding a freshly extracted cylinder of soft grey clay soil core above an open unmarked wooden core box, smears of wet clay on the gloves, low warm late-afternoon sun raking across the texture of the clay, drained levee ground blurred behind, shallow depth of field, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, labels, tags, human face, facial features, portrait, identifiable person, child, smartphone, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Hands and core only, no face. Core box and gloves completely unmarked, no sample tags or written labels anywhere."
+    },
+    {
+      "id": "P009",
+      "beat": "ACT_2 — 'the wall and the levee it stood on moved about forty feet sideways, and finished tilted at about forty-five degrees.'",
+      "subject": "Two investigators seen from behind stretching a survey tape across bare ground toward a distant concrete wall section tilted at forty-five degrees.",
+      "prompt": "Cinematic documentary photograph, late 2005, two engineers in hard hats seen entirely from behind, one kneeling holding the reel of a long surveyor's tape pulled taut across churned bare earth toward a massive blank concrete floodwall section tilted at forty-five degrees in the middle distance, the displaced wall clearly far from its original line, cold overcast light, dry ground, photorealistic, muted palette, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, readable tape markings, agency insignia, human face, facial features, portrait, identifiable person, body, corpse, flood water, child, smartphone, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Both figures from behind, no faces. Tape markings out of focus and unreadable. No insignia. Dry ground, no water, no bodies."
+    },
+    {
+      "id": "P010",
+      "beat": "ACT_2 — 'at London Avenue the water in the gap flowed down into the underlying sand... taking away the ground that was supporting the wall.'",
+      "subject": "Hands-only: an investigator's bare hand lifting pale sand and letting it pour between the fingers, over a residential yard buried in sand.",
+      "prompt": "Cinematic documentary close-up, autumn 2005, a single weathered adult hand lifting a fistful of pale river sand and letting it stream between the fingers, backlit by low hazy sun so the falling sand glows, behind it a drained suburban yard buried under a sheet of the same pale sand, a blank fence line blurred in the distance, shallow depth of field, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, human face, facial features, portrait, identifiable person, body, corpse, victim, personal photographs, toys, flood water, child, smartphone, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Hand and sand only, no face. The buried yard must contain no personal effects, toys or photographs that read as a victim's belongings. Dry scene."
+    },
+    {
+      "id": "P011",
+      "beat": "ACT_2 — 'Two teams. The same ground. Two mechanisms.' (IPET vs ILIT at the failure surface)",
+      "subject": "Two engineers seen from behind standing on opposite sides of an excavated trench cut through the levee, each studying the exposed soil layers.",
+      "prompt": "Cinematic documentary photograph, 2005-2006 forensic excavation, a deep trench cut cleanly through an earthen levee exposing banded layers of grey clay and dark organic soil, two engineers in hard hats seen entirely from behind standing on opposite rims of the trench looking down into it from opposing sides, cold morning light throwing long shadows into the cut, unmarked equipment cases nearby, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, flags with writing, survey stakes with writing, agency insignia, human face, facial features, portrait, identifiable person, flood water, child, smartphone, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Both figures from behind, on opposite sides to carry the disagreement visually. No written stake markers or labelled flags. No insignia."
+    },
+    {
+      "id": "P012",
+      "beat": "ACT_3 — 'to make it taller you must make it wider, and there was nothing to widen into — the canals had houses along both banks.' (design era begins)",
+      "subject": "A 1970s Corps surveyor seen from behind at a tripod-mounted optical level on a narrow canal levee, houses crowding both banks, vintage pickup parked below.",
+      "prompt": "Cinematic documentary photograph, late 1970s Louisiana, a surveyor in a short-sleeved khaki shirt and 1970s hard hat seen entirely from behind, bent to a tripod-mounted optical level on the narrow grassy crest of a drainage canal levee, small wooden houses crowding close along both banks of the straight narrow canal, a faded 1970s pickup truck parked on the gravel below, warm hazy period colour like aged Kodachrome, photorealistic, film grain, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, licence plate, street sign, human face, facial features, portrait, identifiable person, modern car, smartphone, hi-vis modern safety vest, LED lighting, child, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "From behind only. All vehicles, clothing and instruments pre-1980. No modern safety gear, no modern cars, no readable plates or signs."
+    },
+    {
+      "id": "P013",
+      "beat": "ACT_3 — 'an admirable decision to construct a test section and perform a full-scale test' (building E-99 in the Atchafalaya swamp, 1977)",
+      "subject": "Distant workers in 1970s gear seen from behind as a crane rig drives steel sheet piling into a misty swamp embankment.",
+      "prompt": "Cinematic documentary photograph, 1977 Atchafalaya basin Louisiana, a tracked crane rig driving a line of steel sheet piling into a low earthen test embankment in a misty cypress swamp, three workers in 1970s denim and metal hard hats seen small and entirely from behind watching the pile driver, standing water and cypress knees in the foreground marsh, humid grey-gold morning haze, period machinery with no markings, photorealistic, film grain, muted 1970s colour, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, equipment branding, human face, facial features, portrait, identifiable person, person in water, modern crane, modern excavator, smartphone, hi-vis modern vest, child, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Workers distant and from behind, faces indiscernible. Machinery unbranded and period-correct 1970s. Swamp water is landscape only — no person in or touching the water."
+    },
+    {
+      "id": "P014",
+      "beat": "ACT_3 — 'They built the wall. They raised the water against it. And they watched what happened.' (E-99 instrumented loading, 1977)",
+      "subject": "A 1970s engineer seen from behind inside a plywood instrument shack, watching a bank of unlabelled analog dial gauges and a drum chart recorder.",
+      "prompt": "Cinematic documentary photograph, 1977, an engineer in a short-sleeved white shirt and 1970s haircut seen entirely from behind, leaning toward a plywood instrument bench crowded with unlabelled analog dial gauges and a slowly rotating drum chart recorder tracing a single ink line, a bare incandescent bulb overhead, through the shack's window the grey shape of a test embankment and floodwall against swamp haze, warm tungsten light against cold daylight, photorealistic, film grain, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, gauge labels, chart annotations, human face, facial features, portrait, identifiable person, computer monitor, digital display, smartphone, modern equipment, child, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "From behind only. Every gauge face and chart is unlabelled — needle positions and one ink trace only, no digits, no writing. All equipment analog and pre-1980."
+    },
+    {
+      "id": "P015",
+      "beat": "ACT_3 — 'neither of these lessons were then incorporated in the subsequent design of the floodwalls' (the 1980s design office where the file went unread)",
+      "subject": "A draftsman seen from behind at a 1980s drafting table under fluorescent light, working on a large technical drawing rendered only as faint unreadable line-work, a closed dusty report binder pushed to the table's far corner.",
+      "prompt": "Cinematic documentary photograph, mid-1980s engineering office at night, a draftsman in a short-sleeved shirt seen entirely from behind hunched over a tilted drafting table, parallel rule and mechanical pencil in hand, the large drawing sheet showing only faint blurred technical line-work with no readable characters, a single closed dusty grey binder pushed unopened to the far corner of the table, green-white fluorescent tube light, rolled drawings in a rack, beige 1980s office furniture, photorealistic, film grain, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, readable drawing annotations, title block text, human face, facial features, portrait, identifiable person, computer, flat-screen monitor, smartphone, modern office, child, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "From behind only. The drawing must carry no legible characters or dimension text — line-work only, soft focus at edges. The unopened binder is blank. Office strictly 1980s: no computers."
+    },
+    {
+      "id": "P016",
+      "beat": "ACT_3 — 'designed to a factor of safety of one point three... standards developed for levees protecting agricultural land.'",
+      "subject": "Hands-only: fingers adjusting the cursor of a slide rule in a pool of desk-lamp light, everything else falling into darkness.",
+      "prompt": "Cinematic documentary macro, 1980s, a pair of adult hands adjusting the sliding cursor of a worn wooden slide rule in the small warm pool of a desk lamp, the rule's scale markings dissolved into soft unreadable blur by shallow depth of field, the desk beyond falling away into complete darkness, one bright practical light source, high contrast, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, readable scale markings, documents, papers with writing, human face, facial features, portrait, identifiable person, calculator, computer, smartphone, wristwatch, child, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Hands only. Slide rule markings blurred beyond reading — no legible digits anywhere. No papers or documents in frame. Period 1980s."
+    },
+    {
+      "id": "P017",
+      "beat": "ACT_4 — 'Thousands of people sued the United States. The case that reached trial...' (the litigation begins, 2009)",
+      "subject": "An attorney seen from behind carrying a heavy closed document box up broad stone courthouse steps in early morning light.",
+      "prompt": "Cinematic documentary photograph, New Orleans 2009, a lone figure in a dark suit seen entirely from behind carrying a heavy lidded cardboard document box up broad grey stone steps toward tall unmarked classical columns, cold early-morning light raking across the stone, long shadow trailing down the steps, the architecture heavy and anonymous with no inscriptions, mid-2000s era, photorealistic, muted colour, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, building inscription, agency seal, courthouse name, human face, facial features, portrait, identifiable person, gavel, scales of justice, child, smartphone in hand, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "From behind only. Box closed and blank. Building facade carries no inscription, seal or name — generic monumental stone. Not a depiction of any real courthouse or real attorney."
+    },
+    {
+      "id": "P018",
+      "beat": "ACT_4 — 'We REVERSE each judgment for the plaintiffs... shielded by the DFE.' (the case closed, 2012)",
+      "subject": "Hands-only: hands tying the cloth ribbon of a thick, worn, blank legal folder closed on a desk, lamplight, 2012.",
+      "prompt": "Cinematic documentary close-up, 2012, two adult hands drawing tight and tying the faded cloth ribbon of a thick worn blank-covered legal folder, the folder swollen with years of unseen pages, a single warm desk lamp burning at the edge of frame, dark wood desk, everything beyond the lamplight in shadow, shallow depth of field, photorealistic, high contrast, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, readable documents, case captions, stamps, seals, human face, facial features, portrait, identifiable person, gavel, scales of justice, child, smartphone, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "Hands only. Folder cover and any visible page edges completely blank — no captions, stamps or seals. Not a facsimile of a real court filing."
+    },
+    {
+      "id": "P019",
+      "beat": "ACT_4 — 'it is a system in name only... a disjointed agglomeration of many individual projects' (the reports, written overlooking the repaired canal)",
+      "subject": "A panel engineer seen from behind at an office window at dusk, looking down at a repaired canal floodwall below, a stack of closed blank-spined binders on the desk beside him.",
+      "prompt": "Cinematic documentary photograph, 2006-2007, an older engineer in shirtsleeves seen entirely from behind standing at a large office window at dusk, looking down on a straight drainage canal below where a line of bright new blank concrete wall panels stands out pale against the older grey sections, a neat stack of thick closed binders with blank spines on the desk beside him, the window reflecting only his dark anonymous outline, blue-hour light, photorealistic, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, binder labels, spine text, human face, facial features, portrait, reflection of a face, identifiable person, flood water, child, smartphone, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "From behind only, and his window reflection must be a featureless silhouette — no facial features in the glass. Binder spines blank. Canal dry and calm."
+    },
+    {
+      "id": "P020",
+      "beat": "ENDING — 'Go back to the gap... Somewhere there is a test that was run for the thing protecting you.'",
+      "subject": "A lone figure seen from behind at dusk, one hand resting flat on the joint line of a rebuilt concrete floodwall where new pale concrete meets old grey.",
+      "prompt": "Cinematic documentary photograph, mid-2000s dusk, a lone adult seen entirely from behind standing close to a rebuilt concrete floodwall, one hand resting flat on the vertical joint where a pale new concrete panel meets a darker weathered old one, the seam running the full height of the frame, deep blue evening sky above the wall, a faint warm streetlight glow from the neighbourhood behind the figure, quiet and still, photorealistic, film grain, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, graffiti, memorial, flowers, candles, cross marker, human face, facial features, portrait, identifiable person, flood water, child, smartphone, extra fingers, deformed hands, cartoon, illustration, low-resolution",
+      "constraints": "From behind only. The wall joint is a construction seam, not a crack in distress and not a memorial — no flowers, candles, markings or tributes. Calm, resolved tone."
+    }
+  ]
+}

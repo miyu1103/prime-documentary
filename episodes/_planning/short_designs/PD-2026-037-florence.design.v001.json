@@ -1,0 +1,1151 @@
+{
+  "episode_id": "PD-2026-037-florence",
+  "slug": "florence",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "SOu4Y1NkGGY",
+    "title": "He showed the officer the receipt and was arrested anyway",
+    "url": "https://www.youtube.com/watch?v=SOu4Y1NkGGY",
+    "privacy": "public",
+    "views": 68
+  },
+  "shorts_existing": [
+    "short39"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short39": [
+      "He held the receipt.",
+      "Proof that the fine was already paid.",
+      "He showed it.",
+      "He was arrested anyway.",
+      "How does a man holding proof he",
+      "owed nothing end up stripped bare in a cell?",
+      "Albert Florence was driving to dinner with",
+      "his family when a trooper found an old warrant",
+      "for a fine he had paid",
+      "settled within a week.",
+      "A statewide database never cleared it.",
+      "He was arrested for a debt that",
+      "no longer existed.",
+      "At the county jail",
+      "he was strip-searched at intake.",
+      "He was moved to a second jail",
+      "and searched again",
+      "ordered to squat and cough. One stop. Two jails. Six days.",
+      "They let him go. No charges. No apology.",
+      "He sued",
+      "not for money",
+      "but on principle.",
+      "A federal court ruled for him in 2009;",
+      "an appeals court reversed it in 2010. Then in 2012",
+      "the Supreme Court disagreed",
+      "five to four:",
+      "a jail may search anyone it admits",
+      "whatever the offense.",
+      "Full story on the channel.",
+      "Follow for the cases they don't teach you."
+    ]
+  },
+  "script": "episodes\\PD-2026-037-florence\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "\"I went from having a good day with my wife standing next to me,\" he said, \"to being scared, petrified, humiliated.\" He could have let it go.",
+    "On the evening of March 3rd, 2005, he wasn't driving.",
+    "Somewhere in a statewide database, no one ever pressed the key that would have erased it.",
+    "Then, in 2010, a federal appeals court reversed it.",
+    "On April 2nd, 2012, the Court gave its answer."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short90",
+      "angle": "He was not even driving. He was the passenger.",
+      "type": "A — it can reach you when you have done nothing at all",
+      "avoids": "short39 covers the receipt, the uncleared database, the strip searches, six days, 5-4. It never mentions that he was a passenger in his own car.",
+      "funnel_question_left_for_longform": "Once the record was wrong, was there anything he could have done to stop it?",
+      "era": "2005 New Jersey",
+      "loop": true,
+      "loop_join": "L5 states the outcome, so hearing L1 again, that he was only the passenger and was arrested anyway, lands as the exact situation the ruling now covers.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "He was not driving. He was in the passenger seat, going to dinner with his family. He was arrested anyway.",
+          "delivery": "intense",
+          "source_lines": [
+            "On the evening of March 3rd, 2005, he wasn't driving."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "A trooper ran the car and found a warrant for a fine. He had paid that fine. He had the paperwork with him.",
+          "delivery": "building",
+          "source_lines": [
+            "Somewhere in a statewide database, no one ever pressed the key that would have erased it."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "Somewhere in a statewide database, nobody had ever pressed the key that would have erased it.",
+          "delivery": "building",
+          "source_lines": [
+            "Somewhere in a statewide database, no one ever pressed the key that would have erased it."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "So a man riding in his own car, owing nothing, went into custody on a record that should not have existed.",
+          "delivery": "building",
+          "source_lines": [
+            "On the evening of March 3rd, 2005, he wasn't driving."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "At the county jail, booking was a procedure. It did not ask what he had done. He was ordered to remove his clothes.",
+          "delivery": "building",
+          "source_lines": [
+            "Booking is a procedure, and the procedure did not ask what he had done.",
+            "At intake he was ordered to remove his clothes."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Days passed. He was moved to a second facility, and at the second door it happened again. One stop, two jails, six days.",
+          "delivery": "building",
+          "source_lines": [
+            "He was held. Days passed.",
+            "At the second door, it happened again.",
+            "One traffic stop. Two jails. Two searches. Six days."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Then it ended. The payment was confirmed, and he was released. No charges. No apology. He could have let it go. He sued instead.",
+          "delivery": "intense",
+          "source_lines": [
+            "No charges. No apology.",
+            "He could have let it go. Most people do.",
+            "He sued — not for the money, but on a principle: that a person arrested over a minor, unpaid fine should not be strip-searched when there is no reason at all to suspect he is hiding anything."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "The Court held, five votes to four, that a jail may strip-search anyone entering general population. Whatever they were arrested for.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "the empty passenger seat with a folded document on it",
+          "source": "GENERATE",
+          "prompt": "the empty front passenger seat of a family sedan at night seen from the driver's side, one folded blank sheet of paper lying on the upholstery, red and blue wash crossing the seat from behind, lit ONLY by those beacons which are switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R01",
+          "subject": "a cruiser's lights working behind a stopped car",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "a cruiser's lights working behind a stopped car, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "a hand holding paper up into a torch beam",
+          "source": "GENERATE",
+          "prompt": "macro of one hand holding a folded completely blank sheet of paper up toward a torch beam through a half-open car window at night, no face or body visible, lit ONLY by that torch which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "the child's seat empty in the back",
+          "source": "GENERATE",
+          "prompt": "an empty child's booster seat strapped into the rear bench of a family sedan at night, a small jacket folded on it, nobody present, lit ONLY by one beacon wash which is switched on behind the car, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a torch beam crossing the dashboard",
+          "source": "GENERATE",
+          "prompt": "a hard torch beam sweeping across the dark dashboard and empty seats of a stopped car at night, the hand holding it out of frame with no face or body visible, lit ONLY by that torch which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a flashlight beam inside a dark car",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "a flashlight beam inside a dark car, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "the cruiser's terminal glowing between the seats",
+          "source": "GENERATE",
+          "prompt": "a mobile data terminal mounted between the front seats of a police cruiser at night, its display an unreadable featureless glow with no characters on it, nobody in the seats, lit ONLY by one dash lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the paid-fine slip he carried with him",
+          "source": "FOOTAGE",
+          "footage_query": "close up hands holding paper receipt",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14326__wax_seal_on_document.mp4",
+          "bound_title": "man signing the paper",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.468,
+          "motion": 6.84,
+          "luma": 91.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the paperwork passed across a car seat",
+          "source": "GENERATE",
+          "prompt": "two hands passing a folded completely blank sheet of paper across the front seats of a car at night, no faces or bodies visible above the wrists, lit ONLY by the car's dome light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the glovebox open on a bundle of blank papers",
+          "source": "GENERATE",
+          "prompt": "an open glovebox in a family car at night stuffed with a bundle of folded papers whose every surface is completely blank, no face or body in frame, lit ONLY by the small glovebox bulb which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the car pulled onto a dark shoulder",
+          "source": "GENERATE",
+          "prompt": "a family sedan stopped on the gravel shoulder of a dark highway at night with two figures reduced to silhouettes beside it, faces not visible, no lettering anywhere, lit ONLY by one beacon which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "a finger hovering over a key that never went down",
+          "source": "GENERATE",
+          "prompt": "extreme macro of one worn unmarked key on a beige office keyboard with a single fingertip hovering a few millimetres above it and never touching it, no characters on any key, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "a finger stopped above a keyboard",
+          "source": "FOOTAGE",
+          "footage_query": "finger hovering over keyboard",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3145__old_keys_on_table.mp4",
+          "bound_title": "golden sky over hill",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4243,
+          "motion": 14.94,
+          "luma": 53.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "the state database, humming in the dark",
+          "source": "GENERATE",
+          "prompt": "a narrow aisle between two rows of tall server cabinets in a dark machine room with cable trays overhead and no labels anywhere, nobody present, lit ONLY by one maintenance lamp which is switched on at the far end of the aisle, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "I05",
+          "subject": "the records room where the correction never arrived",
+          "source": "GENERATE",
+          "prompt": "looking down the aisle of a deep county records room with shelving stacked to the ceiling in unlabelled boxes, lit ONLY by one bulb switched on at the far end, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "the terminal nobody was sitting at",
+          "source": "GENERATE",
+          "prompt": "an office chair pushed back from a grey desk holding one dark computer terminal with a blank screen, the desk otherwise bare, nobody present, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R02",
+          "subject": "cuffs closing on a passenger's wrists",
+          "source": "FOOTAGE",
+          "footage_query": "handcuffs closing on wrists",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51095__key_turning_in_lock.mp4",
+          "bound_title": "different flags in one pole",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.9344,
+          "motion": 3.503,
+          "luma": 195.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "the cage seen from the back of the cruiser",
+          "source": "GENERATE",
+          "prompt": "the interior of a police cruiser's rear compartment seen from the back seat, a steel cage mesh dividing it from the empty front, no lettering anywhere, lit ONLY by the dome light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R12",
+          "subject": "his property in the intake tray",
+          "source": "GENERATE",
+          "prompt": "a steel booking tray on a counter holding a leather belt, a wedding ring and a set of shoelaces, no lettering on anything, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W03",
+          "subject": "the cell he was put in over a paid fine",
+          "source": "FOOTAGE",
+          "footage_query": "empty jail cell interior",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1824__prison_corridor.mp4",
+          "bound_title": "a cop pushing an inmate inside the cell",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4554,
+          "motion": 0.981,
+          "luma": 53.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W01",
+          "subject": "the intake gate closing behind him",
+          "source": "FOOTAGE",
+          "footage_query": "prison cell door closing",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62985__prison_gate_closing.mp4",
+          "bound_title": "an inmate talking to the policeman inside the cell",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4495,
+          "motion": 30.279,
+          "luma": 83.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "one blank sheet on the jail floor",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper lying alone on a scuffed institutional floor, lit ONLY by a hard blade of corridor light falling across it from one fixture switched on beyond the door, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the empty passenger seat",
+          "source": "REUSE_01"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "the intake tray of forms nobody read to him",
+          "source": "FOOTAGE",
+          "footage_query": "paper forms stacked in a metal tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63076__old_ledger_book.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U01",
+          "subject": "the bare lamp burning over the booking counter",
+          "source": "FOOTAGE",
+          "footage_query": "bare lamp burning in a dark room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-3421__lantern_in_fog.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W06",
+          "subject": "his wallet and belt sealed into a property bag",
+          "source": "FOOTAGE",
+          "footage_query": "sealed paper bag on a metal counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41348__open_briefcase_of_cash.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W08",
+          "subject": "the bare tiled wall he was told to face",
+          "source": "FOOTAGE",
+          "footage_query": "bare tiled wall in an empty room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23895__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U06",
+          "subject": "his own clothes folded and taken away",
+          "source": "FOOTAGE",
+          "footage_query": "folded clothes on a wooden bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-48702__person_in_wheelchair_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "the corridor to the second jail's intake door",
+          "source": "FOOTAGE",
+          "footage_query": "long empty corridor toward a lit doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5384__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W04",
+          "subject": "the block of iron doors at the second facility",
+          "source": "FOOTAGE",
+          "footage_query": "row of iron cell doors in a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37599__empty_parking_garage.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U02",
+          "subject": "the second door closing behind him",
+          "source": "FOOTAGE",
+          "footage_query": "heavy metal door swinging shut",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63423__vault_door_spinning_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "W11",
+          "subject": "the small bare room where it happened again",
+          "source": "FOOTAGE",
+          "footage_query": "two empty chairs in a small bare room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3772__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U16",
+          "subject": "six days of light crossing an empty floor",
+          "source": "FOOTAGE",
+          "footage_query": "dust drifting in a shaft of light",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14517__courtroom_empty_wide.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "the doors that finally opened for him",
+          "source": "FOOTAGE",
+          "footage_query": "heavy doors opening into bright daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-18506__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "he walked out with nothing said to him",
+          "source": "FOOTAGE",
+          "footage_query": "lone figure walking away into sunlight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-48959__elderly_person_alone_at_window.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U07",
+          "subject": "the case he built instead of letting it go",
+          "source": "FOOTAGE",
+          "footage_query": "worn folders piled on a wooden desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63071__old_ledger_book.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R05",
+          "subject": "the courthouse he took it to",
+          "source": "FOOTAGE",
+          "footage_query": "marble columns of a courthouse facade",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2435__bank_building_columns.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "M04",
+          "subject": "the complaint he filed on principle",
+          "source": "FOOTAGE",
+          "footage_query": "legal papers fanned across a table",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        }
+      ]
+    },
+    {
+      "short_id": "short91",
+      "angle": "His own words for it: scared, petrified, humiliated.",
+      "type": "C — the quotation",
+      "avoids": "short39 narrates the events. It never quotes Albert Florence.",
+      "funnel_question_left_for_longform": "He could have let it go. Why did he spend seven years on it instead?",
+      "era": "2005-2012 New Jersey",
+      "loop": true,
+      "loop_join": "L5 gives away that he lost, so his own words in L1 about being scared, petrified and humiliated come back as something no court ever put right.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "\"I went from having a good day with my wife standing next to me,\" he said, \"to being scared, petrified, humiliated.\"",
+          "delivery": "intense",
+          "source_lines": [
+            "\"I went from having a good day with my wife standing next to me,\" he said, \"to being scared, petrified, humiliated.\""
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "That is Albert Florence describing the evening a traffic stop turned into custody over a fine he had already paid.",
+          "delivery": "building",
+          "source_lines": [
+            "On the evening of March 3rd, 2005, he wasn't driving."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "Six days, across two facilities, on a record a database had never cleared.",
+          "delivery": "building",
+          "source_lines": [
+            "Somewhere in a statewide database, no one ever pressed the key that would have erased it."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "He could have let it go. Most people do. He took it to the Supreme Court of the United States instead.",
+          "delivery": "building",
+          "source_lines": [
+            "He could have let it go."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "By then the question was no longer only about him. It was whether a jail may search every person it admits, whatever the offense.",
+          "delivery": "building",
+          "source_lines": [
+            "The question was no longer only about him.",
+            "Not just Florence. Anyone booked."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The majority looked at the jail door and saw danger. Correctional officers, they reasoned, cannot know who is walking in.",
+          "delivery": "building",
+          "source_lines": [
+            "The majority looked at the jail door and saw danger.",
+            "Correctional officers, they reasoned, cannot know who is walking in."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Four dissenting justices looked at the same door and saw a person. Dignity is not nothing, they argued. The state should have some reason.",
+          "delivery": "intense",
+          "source_lines": [
+            "The four dissenting justices looked at the same door and saw a person.",
+            "He argued that dignity is not nothing — that the state should have some reason before it strips a human being bare."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Seven years later, the Court gave its answer. Five votes to four. He had won in the district court, and lost where it finally counted.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "two hands still linked across a car seat",
+          "source": "GENERATE",
+          "prompt": "macro of a man's hand and a woman's hand still linked at the fingers resting on the seat between them inside a dark car, no faces or bodies visible above the wrists, lit ONLY by the car's dome light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "two hands holding, close",
+          "source": "FOOTAGE",
+          "footage_query": "two hands holding close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6164__handshake_business.mp4",
+          "bound_title": "a person holding the documents",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4292,
+          "motion": 19.945,
+          "luma": 158.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U09",
+          "subject": "a man standing alone in a bare tiled room",
+          "source": "GENERATE",
+          "prompt": "the back of one fully clothed man standing alone facing a bare tiled wall in a small institutional room, his head high in the upper third of the frame and empty floor below, face not visible, lit ONLY by one caged fixture which is switched on above, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "folded clothes left on a holding bench",
+          "source": "GENERATE",
+          "prompt": "one folded set of civilian clothes and a pair of shoes left on a bare wooden holding-cell bench, nobody present, no lettering anywhere, lit ONLY by one caged bulb which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "R01",
+          "subject": "the trooper's beacon at the kerb",
+          "source": "GENERATE",
+          "prompt": "tight low angle on the front fender and roof light bar of a state police cruiser stopped on a dark road shoulder, dark paint and chrome filling frame, no lettering on the body, lit ONLY by that light bar which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "headlights running on a dark road",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "headlights running on a dark road, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "tail lights going away up the highway",
+          "source": "GENERATE",
+          "prompt": "an empty state highway at night seen from the gravel shoulder with a single pair of tail lights receding into the distance, no signage or lettering anywhere, lit ONLY by those tail lights which are switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the paid-fine slip closed in a fist",
+          "source": "GENERATE",
+          "prompt": "extreme macro of a creased completely blank paper slip crushed inside a closed fist, the paper soft from being carried, no face or body visible, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a hand gripping a crumpled sheet",
+          "source": "FOOTAGE",
+          "footage_query": "hand holding crumpled paper",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38436__shredded_documents_pile.mp4",
+          "bound_title": "figurine of a woman holding a weighing scale",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4234,
+          "motion": 6.101,
+          "luma": 105.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the family's things left in the car",
+          "source": "GENERATE",
+          "prompt": "a jacket over the seat back, a handbag in the footwell and keys hanging in the ignition of a stopped car at night, nobody present, lit ONLY by the dome light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a car door standing open on a dark shoulder",
+          "source": "GENERATE",
+          "prompt": "a car standing on a dark roadside with the driver's door left wide open and the interior spilling one small pool of light onto the gravel, nobody in frame, lit ONLY by that interior light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "W03",
+          "subject": "the first cell, six days beginning",
+          "source": "GENERATE",
+          "prompt": "the interior of a bare county jail cell with a steel bunk and a small high barred window throwing one hard shaft onto the concrete floor, nobody present, lit ONLY by that window, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "W01",
+          "subject": "bars and an empty cell beyond",
+          "source": "FOOTAGE",
+          "footage_query": "empty prison cell bars",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-17247__prison_corridor.mp4",
+          "bound_title": "a man holding at the bars while talking happily",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4438,
+          "motion": 29.37,
+          "luma": 57.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "the transfer van doors closing",
+          "source": "GENERATE",
+          "prompt": "the rear doors of a prisoner transfer van swinging shut seen from inside the dark compartment, the blade of daylight between them narrowing to nothing, nobody visible, lit ONLY by that closing daylight, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "W04",
+          "subject": "the second facility's corridor of iron doors",
+          "source": "GENERATE",
+          "prompt": "a long cell block corridor of identical iron doors receding into distance in a second larger facility, nobody present, lit ONLY by a row of caged ceiling bulbs which are switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "W09",
+          "subject": "the days coming off, unnumbered",
+          "source": "FOOTAGE",
+          "footage_query": "calendar pages turning",
+          "bound_title": "old calendar on fire",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5991,
+          "motion": 27.179,
+          "luma": 74.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "a blank sheet and a pen on a kitchen table",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper and a cheap pen lying on a worn kitchen table late at night with the chair pushed back and nobody present, lit ONLY by one hanging kitchen lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U03",
+          "subject": "a hand signing at the bottom of a page",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "a hand signing at the bottom of a page, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R05",
+          "subject": "courthouse columns from below",
+          "source": "GENERATE",
+          "prompt": "tall marble courthouse columns photographed from directly below against a dark sky with no inscriptions or lettering anywhere on the stone, lit ONLY by hard uplights which are switched on at their bases, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "the courthouse steps at dawn, empty",
+          "source": "GENERATE",
+          "prompt": "a long flight of empty stone courthouse steps photographed at first light with nobody on them and no signage anywhere, lit ONLY by one lamp still switched on at the head of the stairs, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R05",
+          "subject": "the steps of a courthouse",
+          "source": "FOOTAGE",
+          "footage_query": "courthouse steps exterior",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6237__courthouse_steps.mp4",
+          "bound_title": "low angle footage of a construction worker securing the steel scaffolding on the building exterior",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3823,
+          "motion": 1.623,
+          "luma": 129.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U02",
+          "subject": "the courtroom doors closed from inside",
+          "source": "GENERATE",
+          "prompt": "tall panelled courtroom doors seen closed from inside a dark chamber with one hard blade of light lying under them across the floor, nobody present, lit ONLY by that light, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005-2012 New Jersey, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the two linked hands",
+          "source": "REUSE_01"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I02",
+          "subject": "the corridor of identical intake doors",
+          "source": "FOOTAGE",
+          "footage_query": "identical closed doors along a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1823__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U15",
+          "subject": "a rule that would reach every state",
+          "source": "FOOTAGE",
+          "footage_query": "dark map with glowing borders",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12999__world_map_dark_glowing.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "the tray every person admitted has to empty into",
+          "source": "FOOTAGE",
+          "footage_query": "belt and shoelaces in a metal tray",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W02",
+          "subject": "one more person on the wrong side of the bars",
+          "source": "FOOTAGE",
+          "footage_query": "silhouette standing behind metal bars",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15270__long_shadow_of_a_person.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R06",
+          "subject": "the gallery where the question was argued",
+          "source": "FOOTAGE",
+          "footage_query": "rows of empty wooden benches in a hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14602__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "the jail door the majority looked at",
+          "source": "FOOTAGE",
+          "footage_query": "steel door with a heavy bolt",
+          "prompt": null
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "the keys to every door inside",
+          "source": "FOOTAGE",
+          "footage_query": "row of keys hanging on hooks",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9713__clock_ticking_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "R03",
+          "subject": "the bare table where an intake search is done",
+          "source": "FOOTAGE",
+          "footage_query": "bare metal table under a hanging lamp",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3146__old_keys_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "the lockers waiting behind the intake door",
+          "source": "FOOTAGE",
+          "footage_query": "wall of grey steel lockers",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14908__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R10",
+          "subject": "one blade of light under a closed door",
+          "source": "FOOTAGE",
+          "footage_query": "blade of light under a closed door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46129__person_crying_silhouette_window.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "one chair alone in a bare room",
+          "source": "FOOTAGE",
+          "footage_query": "single empty chair in a bare room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29209__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R04",
+          "subject": "two people across a table, one of them a person",
+          "source": "FOOTAGE",
+          "footage_query": "two silhouettes seated across a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-19017__chess_board_dramatic.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R08",
+          "subject": "the bench the four of them wrote from",
+          "source": "FOOTAGE",
+          "footage_query": "empty judge bench seen from below",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U11",
+          "subject": "the desk where the dissent was written",
+          "source": "FOOTAGE",
+          "footage_query": "desk by a window at first light",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41643__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U10",
+          "subject": "two hands laid flat, nothing hidden",
+          "source": "FOOTAGE",
+          "footage_query": "two bare hands laid flat on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-40180__elderly_hands_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

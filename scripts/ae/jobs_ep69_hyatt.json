@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ep69_kin_20_3",
+    "style": "number",
+    "seconds": 2.4,
+    "big": "20.3",
+    "bigSize": 300,
+    "label": "KIPS AT EACH CONNECTION, AS DRAWN",
+    "labelSize": 60,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_1",
+    "_at": "3:07",
+    "_ledger": "LD-01, LD-02",
+    "_line": "Under the one rod design, the load arriving at each connection, at the second floor and at the fourth, would have been about twenty point three kips.",
+    "_why": "The first of the six numbers that ARE this film's argument. It is NBS Conclusion 6(a) verbatim, and every later figure is measured against it, so the audience has to be able to hold it. One number, one label, no motion vocabulary that will not be reused.",
+    "_note": "EP69 hyatt -- After Effects kinetic beats. SIX beats, one for each number the record's argument is made of: 20.3 (as drawn) / 40.7 (as built) / 68 (required) / 18.6 (available) / 21.4 (on the night) / 114 (dead). The standing approval (PD_CANON, owner 2026-08-04) names one or two beats mid-film on the numbers and the turns; this episode authors six, and that widening is recorded as an approved_deviation in episode_spec.v001.json and wants an owner line before the build. Placement 3:07 / 6:37 / 14:55 / 17:13 / 17:49 / 28:15 -- one every ~5 minutes, except 17:13 and 17:49 which are deliberately paired as the arithmetic climax at the turn. Render with scripts/ae/render_beats.sh scripts/ae/jobs_ep69_hyatt.json; install each VP9-alpha webm at remotion/public/hyatt/ae/<id>.webm and place it as a cut in hyatt_film.json at the timestamp in _at, which is FILM_BIBLE 12.5. TWO LIVE DEFECTS, both measured in this repo tonight, both written here rather than rediscovered: (1) scripts/ae/kinetic_beat.jsx line 32 reads `var W = 1080, H = 1920, FPS = 30;` -- a Short's portrait frame, hardcoded. Rendered as-is these overlays come out 1080x1920 and pillarbox inside a 1920x1080 film. The canvas field on every job below is the value the jsx must read instead; teaching it to read job.canvas is a one-line edit through scripts/pd_edit.py and it MUST land before render_beats.sh is run for a long-form. (2) EP66's jobs file carries a leading style:'note' _meta object; kinetic_beat.jsx builds a comp for EVERY array element, so that element becomes a comp with no text, the build log prints FAILED, and render_beats.sh line 31 greps for FAILED and refuses to render. This file therefore contains NO note object -- the provenance lives in _section/_at/_ledger/_line/_why/_note fields on real beats, which the jsx ignores."
+  },
+  {
+    "id": "ep69_kin_doubled",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "20.3 AS DRAWN",
+      "40.7 AS BUILT",
+      "SAME STEEL"
+    ],
+    "bigSize": 124,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_2",
+    "_at": "6:37",
+    "_ledger": "LD-03, LD-04, LD-06",
+    "_line": "The fourth floor connection went to about forty point seven.",
+    "_why": "The change, as arithmetic. NBS uses the word 'doubled' as a conclusion and the Missouri Court of Appeals reaches the same effect independently, so the two figures may sit side by side without commentary. The third line is the film's controlling sentence compressed: nothing was removed and nothing was thinned. It is a statement about the steel, not about anybody's conduct."
+  },
+  {
+    "id": "ep69_kin_114",
+    "style": "number",
+    "seconds": 2.8,
+    "big": "114",
+    "bigSize": 320,
+    "label": "PEOPLE DIED. AT LEAST 186 WERE INJURED.",
+    "labelSize": 56,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_3",
+    "_at": "14:55",
+    "_ledger": "ID-02",
+    "_line": "One hundred and fourteen people died. At least a hundred and eighty-six were injured.",
+    "_why": "The ledger's substitution table fixes this beat: for the dead, one number, held, and no image at all. It is the Missouri Court of Appeals' figure, not the federal report's May 1982 count of 113, and the film never narrates the gap between them because no retrieved document explains it. Lands after the cut to black and the 7:05 PM card, on silence."
+  },
+  {
+    "id": "ep69_kin_68_vs_18_6",
+    "style": "punch",
+    "seconds": 3.4,
+    "words": [
+      "68 KIPS REQUIRED",
+      "18.6 KIPS AVAILABLE",
+      "SAME CONNECTION"
+    ],
+    "bigSize": 118,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_4",
+    "_at": "17:13",
+    "_ledger": "LD-08, LD-09, LD-10",
+    "_line": "At forty point seven, with a factor of safety of one point six seven, the code expected that connection to survive an ultimate load of at least sixty-eight kips. / So the Bureau built the connection again and pulled it apart ... with an average of eighteen point six.",
+    "_why": "Two numbers, one beat, because they only mean anything against each other and the film must not let a viewer hear them eleven seconds apart and lose the comparison. Both are NBS verbatim -- 68 from the working-stress calculation, 18.6 as the mean of the NBS test series. The beat runs across both narration lines."
+  },
+  {
+    "id": "ep69_kin_21_4_that_night",
+    "style": "punch",
+    "seconds": 3.6,
+    "words": [
+      "21.4 KIPS ON THE NIGHT",
+      "31% OF WHAT THE CODE EXPECTED",
+      "THAT IS A LOAD, NOT A STRENGTH"
+    ],
+    "bigSize": 100,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_4",
+    "_at": "17:49",
+    "_ledger": "LD-12, LD-11",
+    "_line": "The maximum load actually acting on a fourth floor connection at the moment of collapse was about twenty-one point four kips ... only thirty-one percent of the ultimate capacity expected of a connection designed under the Kansas City Building Code.",
+    "_why": "THIS BEAT IS A MECHANISM, not decoration. The single easiest error in this case -- and the one an engineering-literate audience will catch -- is reading NBS's 31 percent as a strength ratio. It is a LOAD ratio (21.4 against 68). The capacity ratio is 18.6 against 68, about 27 percent, and NBS never states it; the Missouri Court of Appeals makes exactly this slip in its own footnote 12. Putting the correction on screen in the same three seconds as the number is the cheapest way to stop the film repeating it."
+  },
+  {
+    "id": "ep69_kin_ledger_four",
+    "style": "punch",
+    "seconds": 3.6,
+    "words": [
+      "20.3 DRAWN / 40.7 BUILT",
+      "68 REQUIRED / 18.6 THERE",
+      "NOTHING GOT WEAKER"
+    ],
+    "bigSize": 104,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ENDING",
+    "_at": "28:15",
+    "_ledger": "LD-01, LD-03, LD-09, LD-10, LD-20",
+    "_line": "Twenty point three, as drawn. Forty point seven, as built. Sixty-eight, as the code required. Eighteen point six, as the steel could actually give.",
+    "_why": "A recapitulation, not a new fact, which is why it is allowed inside an ENDING whose rule is zero new information. EP67 kept AE out of its ending; this film puts one there because its ending IS the four numbers said once more, and eight minutes separate this beat from the previous one. If the owner would rather the ending stayed typographic, delete this job and the ENDING still works -- nothing else depends on it."
+  }
+]

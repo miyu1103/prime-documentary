@@ -1,0 +1,37 @@
+{
+  "slug": "midas",
+  "working_title": "A Computer Accused Him of Fraud. It Took Seven Years to Win the Right to Sue.",
+  "one_line": "Michigan's automated fraud-detection system accused tens of thousands of unemployment claimants of lying, seized their tax refunds and garnished their wages without a hearing, and a state study later found roughly 93% of its fraud determinations were wrong.",
+  "contradiction": "A machine decided he had committed fraud, the state took his tax refund on the strength of it, the state later ruled its own finding null and void -- and it still took seven years and the Michigan Supreme Court to establish that he was even allowed to sue for it.",
+  "series_id": "S10",
+  "scored_by": "claude, 2026-08-12, v002 rubric, for the 45-minute slot",
+  "scores": {
+    "personal_relevance": 13,
+    "wtf_factor": 14,
+    "human_stakes": 10,
+    "contradiction": 15,
+    "story_arc": 8,
+    "title_power": 8,
+    "thumbnail_power": 6,
+    "evidence": 10,
+    "broad_audience": 7,
+    "franchiseability": 5,
+    "evergreen": 5
+  },
+  "bonuses": ["specific_money_amount", "major_reversal"],
+  "justification": {
+    "personal_relevance": "A tax refund and a paycheque are universal; an unemployment claim is not. The garnishment mechanism is the transferable part. 13.",
+    "wtf_factor": "93% wrong, and the questionnaires were posted only to an online account the claimant had stopped using because the benefits had stopped. 14.",
+    "human_stakes": "The named plaintiffs got every dollar back -- Bauserman in 2015, Broe in 2015. The catastrophic losses belong to unnamed class members. Scoring the film on losses its protagonist did not suffer is exactly the padding the owner banned. 10.",
+    "contradiction": "Accused by a machine, money taken with no hearing, finding voided, and years of litigation about whether a remedy exists at all. Maximum.",
+    "story_arc": "Weak in the same way EP70 was weak: Grant Bauserman's personal story resolves in ten months, and everything after it is procedural history. 8.",
+    "title_power": "Good shape, abstract nouns. 8.",
+    "thumbnail_power": "The real problem. A screen, a letter or a server rack -- none of them is a face or an object a viewer recognises in 320 pixels. 6.",
+    "evidence": "The Michigan Supreme Court opinion of 26 July 2022 retrieved in full, quoting the sums, the dates and the 93% study. Everything is on paper. 10.",
+    "broad_audience": "Measured, and it is bad: the query 'michigan unemployment fraud algorithm false accusations' returns a median of 29 views and no channel above 100k. 7 on merit, and the market does not currently exist.",
+    "franchiseability": "Automated benefit systems, tenant-screening algorithms, fraud scores -- the S10 spine. 5.",
+    "evergreen": "More relevant every year. 5.",
+    "specific_money_amount": "$19,910 assessed against Grant Bauserman; more than $8,000 against Teddy Broe.",
+    "major_reversal": "The Agency itself declared its own determinations 'null and void' and returned the money, then spent seven years arguing no damages claim existed."
+  }
+}

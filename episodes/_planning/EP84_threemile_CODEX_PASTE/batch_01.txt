@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 1/24（8枚）
+区分: HOOK / ACT_1 — 4時00分36秒
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T001.png
+   [T001]  flags: 
+   A single backlit rectangular alarm tile on a wall of identical dark tiles, lit hard from within, everything else dark
+
+2) T002.png
+   [T002]  flags: 
+   A wall of backlit alarm tiles in a 1979 control room, most of them lit at once, hard glare across the panel
+
+3) T003.png
+   [T003]  flags: 
+   A round analogue pressure gauge on a painted metal panel, close, one bright lamp raking across the glass
+
+4) T004.png
+   [T004]  flags: 
+   A yellow paper maintenance tag hanging on a wire over a small indicator light, close, the light burning behind it
+
+5) T005.png
+   [T005]  flags: 
+   Two hyperboloid concrete cooling towers at dawn releasing thick white water vapour, bright sky behind them, river in the foreground
+
+6) T006.png
+   [T006]  flags: 
+   A 1979 control room seen wide and empty from the doorway, fluorescent light on curved panels of dials and switches
+
+7) T007.png
+   [T007]  flags: 
+   A large industrial feedwater pump in a plant basement, painted steel, one work lamp burning above it
+
+8) T008.png
+   [T008]  flags: 
+   A control room wall clock, plain face, no numerals, hard light from one side

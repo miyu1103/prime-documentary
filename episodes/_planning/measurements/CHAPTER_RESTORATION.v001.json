@@ -1,0 +1,2656 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-01T21:57:00.823726+00:00",
+  "generator": "scripts/stage_chapter_restoration.py",
+  "published": false,
+  "measured_state": "episodes/_planning/measurements/DISTRIBUTION_STATE.v001.json",
+  "summary": {
+    "targets": 40,
+    "resolved": 34,
+    "blocked": 6,
+    "high_confidence": 13,
+    "medium_confidence": 19,
+    "low_confidence": 2,
+    "videos_with_labels_needing_authoring": 1,
+    "total_labels_needing_authoring": 1
+  },
+  "items": [
+    {
+      "video_id": "Xc_PxdC_75c",
+      "title": "Following the deposit rule is what made her a suspect",
+      "episode_id": "PD-2026-035-hinders",
+      "watch_url": "https://youtu.be/Xc_PxdC_75c",
+      "studio_url": "https://studio.youtube.com/video/Xc_PxdC_75c/edit",
+      "duration_seconds": 1156,
+      "views": 235,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "low",
+        "source": "episodes/PD-2026-035-hinders/03_script/script.annotated.v001.json + episodes/PD-2026-035-hinders/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "No crime, no charge, account emptied",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Rule Nobody Explained",
+            "seconds": 10,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Guilty Until Proven Innocent",
+            "seconds": 227,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Front Page",
+            "seconds": 458,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "It Kept Happening",
+            "seconds": 632,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What They Built From It",
+            "seconds": 835,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What it means for your own account",
+            "seconds": 1095,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "'Opening': caption alignment weak (best match 0.00) - timestamp not trusted",
+          "authored 'Hook' -> 'No crime, no charge, account emptied'",
+          "authored 'Ending' -> 'What it means for your own account'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 7,
+        "first_seconds": 0,
+        "min_gap": 10,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 No crime, no charge, account emptied",
+        "0:10 The Rule Nobody Explained",
+        "3:47 Guilty Until Proven Innocent",
+        "7:38 The Front Page",
+        "10:32 It Kept Happening",
+        "13:55 What They Built From It",
+        "18:15 What it means for your own account"
+      ]
+    },
+    {
+      "video_id": "marQjsCagh0",
+      "title": "He called safety pure waste and dove anyway",
+      "episode_id": "PD-2026-016-titan",
+      "watch_url": "https://youtu.be/marQjsCagh0",
+      "studio_url": "https://studio.youtube.com/video/marQjsCagh0/edit",
+      "duration_seconds": 2174,
+      "views": 175,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "Hook: the last sound",
+            "seconds": 0
+          },
+          {
+            "title": "The dream",
+            "seconds": 46
+          },
+          {
+            "title": "The warnings",
+            "seconds": 567
+          },
+          {
+            "title": "The dive",
+            "seconds": 1192
+          },
+          {
+            "title": "The search",
+            "seconds": 1451
+          },
+          {
+            "title": "The truth",
+            "seconds": 1763
+          },
+          {
+            "title": "Ending: what remains",
+            "seconds": 2090
+          }
+        ],
+        "notes": [
+          "dropped 'Opening: Pure Waste' at 9s (9s after 'Hook: the last sound' - under YouTube's 10s floor, which is what was silently killing the whole block)"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines"
+      },
+      "validation": {
+        "chapter_count": 7,
+        "first_seconds": 0,
+        "min_gap": 46,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Hook: the last sound",
+        "0:46 The dream",
+        "9:27 The warnings",
+        "19:52 The dive",
+        "24:11 The search",
+        "29:23 The truth",
+        "34:50 Ending: what remains"
+      ]
+    },
+    {
+      "video_id": "bYcqabvvxak",
+      "title": "Police Can Stop and Frisk You Without Arresting You",
+      "episode_id": "PD-2026-006-terry",
+      "watch_url": "https://youtu.be/bYcqabvvxak",
+      "studio_url": "https://studio.youtube.com/video/bYcqabvvxak/edit",
+      "duration_seconds": 682,
+      "views": 159,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "Stopped on the street",
+            "seconds": 0
+          },
+          {
+            "title": "Suspicion, not proof",
+            "seconds": 30
+          },
+          {
+            "title": "Cleveland, 1963",
+            "seconds": 64
+          },
+          {
+            "title": "The store-window pattern",
+            "seconds": 78
+          },
+          {
+            "title": "The concealed weapon charge",
+            "seconds": 176
+          },
+          {
+            "title": "The 1968 ruling",
+            "seconds": 298
+          },
+          {
+            "title": "Specific, articulable facts",
+            "seconds": 325
+          },
+          {
+            "title": "Weapons-only frisk",
+            "seconds": 386
+          },
+          {
+            "title": "Douglas dissents",
+            "seconds": 469
+          },
+          {
+            "title": "The modern Terry stop",
+            "seconds": 495
+          },
+          {
+            "title": "The line redrawn every day",
+            "seconds": 589
+          },
+          {
+            "title": "Next: the phone",
+            "seconds": 647
+          }
+        ],
+        "notes": [
+          "dropped 'Probable cause vs reasonable suspicion' at 185s (9s after 'The concealed weapon charge' - under YouTube's 10s floor, which is what was silently killing the whole block)"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines"
+      },
+      "validation": {
+        "chapter_count": 12,
+        "first_seconds": 0,
+        "min_gap": 14,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Stopped on the street",
+        "0:30 Suspicion, not proof",
+        "1:04 Cleveland, 1963",
+        "1:18 The store-window pattern",
+        "2:56 The concealed weapon charge",
+        "4:58 The 1968 ruling",
+        "5:25 Specific, articulable facts",
+        "6:26 Weapons-only frisk",
+        "7:49 Douglas dissents",
+        "8:15 The modern Terry stop",
+        "9:49 The line redrawn every day",
+        "10:47 Next: the phone"
+      ]
+    },
+    {
+      "video_id": "SOu4Y1NkGGY",
+      "title": "He showed the officer the receipt and was arrested anyway",
+      "episode_id": "PD-2026-037-florence",
+      "watch_url": "https://youtu.be/SOu4Y1NkGGY",
+      "studio_url": "https://studio.youtube.com/video/SOu4Y1NkGGY/edit",
+      "duration_seconds": 552,
+      "views": 68,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "unresolved",
+        "confidence": "none",
+        "source": null,
+        "chapters": [],
+        "notes": [
+          "no script.annotated*.json with chapters[] and no script.en.v*.md with ACT headings under PD-2026-037-florence/03_script/ or episodes/_planning/"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "BLOCKED - chapter titles must be authored by hand"
+      },
+      "validation": {
+        "chapter_count": 0,
+        "first_seconds": null,
+        "min_gap": null,
+        "youtube_valid": false
+      },
+      "chapter_lines": []
+    },
+    {
+      "video_id": "tt7U1XgjCU4",
+      "title": "Fifty years later the FBI still cannot name him",
+      "episode_id": "PD-2026-021-dbcooper",
+      "watch_url": "https://youtu.be/tt7U1XgjCU4",
+      "studio_url": "https://studio.youtube.com/video/tt7U1XgjCU4/edit",
+      "duration_seconds": 1782,
+      "views": 64,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-021-dbcooper/03_script/script.annotated.v001.json + episodes/PD-2026-021-dbcooper/08_edit/captions.v001.srt",
+        "chapters": [
+          {
+            "title": "The man who jumped into the night",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Quiet Hijacking",
+            "seconds": 194,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Vanishing",
+            "seconds": 620,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Manhunt",
+            "seconds": 935,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The One Clue",
+            "seconds": 1328,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Ending — The Open Door",
+            "seconds": 1613,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped the brand-sting chapter \"Opening — The Man Who Wasn't There\" - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "relabelled 'Act I — The Quiet Hijacking' -> 'The Quiet Hijacking'",
+          "relabelled 'Act II — The Vanishing' -> 'The Vanishing'",
+          "relabelled 'Act III — The Manhunt' -> 'The Manhunt'",
+          "relabelled 'Act IV — The One Clue' -> 'The One Clue'",
+          "authored 'Hook' -> 'The man who jumped into the night'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 194,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The man who jumped into the night",
+        "3:14 The Quiet Hijacking",
+        "10:20 The Vanishing",
+        "15:35 The Manhunt",
+        "22:08 The One Clue",
+        "26:53 Ending — The Open Door"
+      ]
+    },
+    {
+      "video_id": "bXATF9ZnKLE",
+      "title": "Police Can Search Your Car Without a Warrant — Except One Place",
+      "episode_id": "PD-2026-032-carsearch",
+      "watch_url": "https://youtu.be/bXATF9ZnKLE",
+      "studio_url": "https://studio.youtube.com/video/bXATF9ZnKLE/edit",
+      "duration_seconds": 697,
+      "views": 56,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-032-carsearch/03_script/script.annotated.v001.json + episodes/PD-2026-032-carsearch/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "A hundred years of warrantless car searches",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Hundred-Year Rule",
+            "seconds": 42,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What Probable Cause Means",
+            "seconds": 194,
+            "align_ratio": 0.815
+          },
+          {
+            "title": "The Motorcycle Under the Tarp",
+            "seconds": 362,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Where the Line Leaves You",
+            "seconds": 542,
+            "align_ratio": 0.793
+          },
+          {
+            "title": "Where the line is drawn now",
+            "seconds": 653,
+            "align_ratio": 0.877
+          }
+        ],
+        "notes": [
+          "dropped 'Opening' at 7s (7s after 'Hook' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "authored 'Hook' -> 'A hundred years of warrantless car searches'",
+          "authored 'Ending' -> 'Where the line is drawn now'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 42,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 A hundred years of warrantless car searches",
+        "0:42 The Hundred-Year Rule",
+        "3:14 What Probable Cause Means",
+        "6:02 The Motorcycle Under the Tarp",
+        "9:02 Where the Line Leaves You",
+        "10:53 Where the line is drawn now"
+      ]
+    },
+    {
+      "video_id": "Qyad4FejCIc",
+      "title": "Alabama kept a date to kill him for 30 years",
+      "episode_id": "PD-2026-029-hinton",
+      "watch_url": "https://youtu.be/Qyad4FejCIc",
+      "studio_url": "https://studio.youtube.com/video/Qyad4FejCIc/edit",
+      "duration_seconds": 698,
+      "views": 52,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-029-hinton/03_script/script.annotated.v001.json + episodes/PD-2026-029-hinton/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "Thirty years on one bullet that matched nothing",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Alibi",
+            "seconds": 27,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Trial",
+            "seconds": 146,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Thirty Years",
+            "seconds": 330,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Light",
+            "seconds": 516,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "After the release",
+            "seconds": 620,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped the brand-sting chapter 'Opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "relabelled 'Act I — The Alibi' -> 'The Alibi'",
+          "relabelled 'Act II — The Trial' -> 'The Trial'",
+          "relabelled 'Act III — Thirty Years' -> 'Thirty Years'",
+          "relabelled 'Act IV — The Light' -> 'The Light'",
+          "authored 'Hook' -> 'Thirty years on one bullet that matched nothing'",
+          "authored 'Ending' -> 'After the release'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 27,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Thirty years on one bullet that matched nothing",
+        "0:27 The Alibi",
+        "2:26 The Trial",
+        "5:30 Thirty Years",
+        "8:36 The Light",
+        "10:20 After the release"
+      ]
+    },
+    {
+      "video_id": "Sz8zPUoBANM",
+      "title": "He Drove Home Honking. The Police Followed Him Inside.",
+      "episode_id": "PD-2026-014-lange",
+      "watch_url": "https://youtu.be/Sz8zPUoBANM",
+      "studio_url": "https://studio.youtube.com/video/Sz8zPUoBANM/edit",
+      "duration_seconds": 554,
+      "views": 43,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "Hook: the threshold question",
+            "seconds": 0
+          },
+          {
+            "title": "The stop reaches the garage",
+            "seconds": 84
+          },
+          {
+            "title": "California argues automatic entry",
+            "seconds": 164
+          },
+          {
+            "title": "Exigent circumstances",
+            "seconds": 232
+          },
+          {
+            "title": "2021: 9-0 in judgment",
+            "seconds": 332
+          },
+          {
+            "title": "Factor, not trigger",
+            "seconds": 377
+          },
+          {
+            "title": "What the line means",
+            "seconds": 470
+          },
+          {
+            "title": "Next: when a promise becomes a crime",
+            "seconds": 512
+          }
+        ],
+        "notes": [
+          "dropped 'The home: warrant required' at 16s (6s after 'Opening: Lange v. California' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "dropped the brand-sting chapter 'Opening: Lange v. California' - it is the line that broke rendering on 13 videos and means nothing to a viewer"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines"
+      },
+      "validation": {
+        "chapter_count": 8,
+        "first_seconds": 0,
+        "min_gap": 42,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Hook: the threshold question",
+        "1:24 The stop reaches the garage",
+        "2:44 California argues automatic entry",
+        "3:52 Exigent circumstances",
+        "5:32 2021: 9-0 in judgment",
+        "6:17 Factor, not trigger",
+        "7:50 What the line means",
+        "8:32 Next: when a promise becomes a crime"
+      ]
+    },
+    {
+      "video_id": "tYZuE76Hwdc",
+      "title": "They Hid the Evidence That Proved Him Innocent — He Spent 14 Years on Death Row",
+      "episode_id": "PD-2026-041-thompson",
+      "watch_url": "https://youtu.be/tYZuE76Hwdc",
+      "studio_url": "https://studio.youtube.com/video/tYZuE76Hwdc/edit",
+      "duration_seconds": 737,
+      "views": 41,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "unresolved",
+        "confidence": "none",
+        "source": null,
+        "chapters": [],
+        "notes": [
+          "no script.annotated*.json with chapters[] and no script.en.v*.md with ACT headings under PD-2026-041-thompson/03_script/ or episodes/_planning/"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "BLOCKED - chapter titles must be authored by hand"
+      },
+      "validation": {
+        "chapter_count": 0,
+        "first_seconds": null,
+        "min_gap": null,
+        "youtube_valid": false
+      },
+      "chapter_lines": []
+    },
+    {
+      "video_id": "yRwxBfrOY5o",
+      "title": "Police Came for a Welfare Check and Left With His Guns — No Warrant",
+      "episode_id": "PD-2026-043-caniglia",
+      "watch_url": "https://youtu.be/yRwxBfrOY5o",
+      "studio_url": "https://studio.youtube.com/video/yRwxBfrOY5o/edit",
+      "duration_seconds": 753,
+      "views": 32,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-043-caniglia/03_script/script.en.v001.md + episodes/PD-2026-043-caniglia/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "The night",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The welfare check",
+            "seconds": 117,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Where \"caretaking\" came from, and where it stops",
+            "seconds": 243,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL - labels are the author's, every timestamp is derived"
+      },
+      "validation": {
+        "chapter_count": 3,
+        "first_seconds": 0,
+        "min_gap": 117,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The night",
+        "1:57 The welfare check",
+        "4:03 Where \"caretaking\" came from, and where it stops"
+      ]
+    },
+    {
+      "video_id": "vikfOBHullI",
+      "title": "There Was No Coin: $4 Billion in Empty Promises",
+      "episode_id": "PD-2026-017-onecoin",
+      "watch_url": "https://youtu.be/vikfOBHullI",
+      "studio_url": "https://studio.youtube.com/video/vikfOBHullI/edit",
+      "duration_seconds": 1210,
+      "views": 27,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "Hook: there was no coin",
+            "seconds": 0
+          },
+          {
+            "title": "The promise",
+            "seconds": 11
+          },
+          {
+            "title": "The crack",
+            "seconds": 427
+          },
+          {
+            "title": "The void",
+            "seconds": 872
+          },
+          {
+            "title": "Coda: still missing",
+            "seconds": 1135
+          },
+          {
+            "title": "The question worth asking",
+            "seconds": 1204
+          }
+        ],
+        "notes": [
+          "dropped 'Opening: Prime Documentary' at 8s (8s after 'Hook: there was no coin' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "authored 'Ending' -> 'The question worth asking'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines; 1 labels still need a real title"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 11,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Hook: there was no coin",
+        "0:11 The promise",
+        "7:07 The crack",
+        "14:32 The void",
+        "18:55 Coda: still missing",
+        "20:04 The question worth asking"
+      ]
+    },
+    {
+      "video_id": "5L_HCGJxX_U",
+      "title": "She memorized her attacker's face to be certain",
+      "episode_id": "PD-2026-030-cotton",
+      "watch_url": "https://youtu.be/5L_HCGJxX_U",
+      "studio_url": "https://studio.youtube.com/video/5L_HCGJxX_U/edit",
+      "duration_seconds": 711,
+      "views": 24,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-030-cotton/03_script/script.annotated.v001.json + episodes/PD-2026-030-cotton/08_edit/captions.final.v003.srt",
+        "chapters": [
+          {
+            "title": "Certain, and completely wrong",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Face",
+            "seconds": 36,
+            "align_ratio": 0.878
+          },
+          {
+            "title": "Two Men",
+            "seconds": 202,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Truth",
+            "seconds": 374,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Forgiveness",
+            "seconds": 508,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What the two of them did next",
+            "seconds": 623,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped the brand-sting chapter 'Opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "relabelled 'Act I — The Face' -> 'The Face'",
+          "relabelled 'Act II — Two Men' -> 'Two Men'",
+          "relabelled 'Act III — The Truth' -> 'The Truth'",
+          "relabelled 'Act IV — Forgiveness' -> 'Forgiveness'",
+          "authored 'Hook' -> 'Certain, and completely wrong'",
+          "authored 'Ending' -> 'What the two of them did next'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 36,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Certain, and completely wrong",
+        "0:36 The Face",
+        "3:22 Two Men",
+        "6:14 The Truth",
+        "8:28 Forgiveness",
+        "10:23 What the two of them did next"
+      ]
+    },
+    {
+      "video_id": "FTm1icKgycU",
+      "title": "The website he took from never wanted him charged",
+      "episode_id": "PD-2026-023-swartz",
+      "watch_url": "https://youtu.be/FTm1icKgycU",
+      "studio_url": "https://studio.youtube.com/video/FTm1icKgycU/edit",
+      "duration_seconds": 1743,
+      "views": 23,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-023-swartz/03_script/script.annotated.v001.json + episodes/PD-2026-023-swartz/08_edit/captions.v001.srt",
+        "chapters": [
+          {
+            "title": "Hook — Who Owns Knowledge",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Opening — The Gap",
+            "seconds": 98,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Boy Who Wanted To Give It Away",
+            "seconds": 186,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Man Who Learned He Could Win",
+            "seconds": 473,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Download",
+            "seconds": 711,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Weight",
+            "seconds": 981,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Ending — The Open Door",
+            "seconds": 1321,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "relabelled 'Act I — The Boy Who Wanted To Give It Away' -> 'The Boy Who Wanted To Give It Away'",
+          "relabelled 'Act II — The Man Who Learned He Could Win' -> 'The Man Who Learned He Could Win'",
+          "relabelled 'Act III — The Download' -> 'The Download'",
+          "relabelled 'Act IV — The Weight' -> 'The Weight'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL - labels are the author's, every timestamp is derived"
+      },
+      "validation": {
+        "chapter_count": 7,
+        "first_seconds": 0,
+        "min_gap": 88,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Hook — Who Owns Knowledge",
+        "1:38 Opening — The Gap",
+        "3:06 The Boy Who Wanted To Give It Away",
+        "7:53 The Man Who Learned He Could Win",
+        "11:51 The Download",
+        "16:21 The Weight",
+        "22:01 Ending — The Open Door"
+      ]
+    },
+    {
+      "video_id": "6ozsIfwqrP0",
+      "title": "They Took His Life Savings at the Airport — No Charges, No Crime",
+      "episode_id": "PD-2026-034-rolin",
+      "watch_url": "https://youtu.be/6ozsIfwqrP0",
+      "studio_url": "https://studio.youtube.com/video/6ozsIfwqrP0/edit",
+      "duration_seconds": 1150,
+      "views": 20,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-034-rolin/03_script/script.annotated.v001.json + episodes/PD-2026-034-rolin/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "His own cash, gone at the gate",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Checkpoint",
+            "seconds": 33,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Machine",
+            "seconds": 235,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Scale",
+            "seconds": 414,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Fight",
+            "seconds": 637,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Reckoning",
+            "seconds": 860,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "How far this power reaches",
+            "seconds": 1086,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped 'Opening' at 8s (8s after 'Hook' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "authored 'Hook' -> 'His own cash, gone at the gate'",
+          "authored 'Ending' -> 'How far this power reaches'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 7,
+        "first_seconds": 0,
+        "min_gap": 33,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 His own cash, gone at the gate",
+        "0:33 The Checkpoint",
+        "3:55 The Machine",
+        "6:54 The Scale",
+        "10:37 The Fight",
+        "14:20 The Reckoning",
+        "18:06 How far this power reaches"
+      ]
+    },
+    {
+      "video_id": "mj9qEKPRatE",
+      "title": "One banker was paid $550 million in a single year",
+      "episode_id": "PD-2026-022-milken",
+      "watch_url": "https://youtu.be/mj9qEKPRatE",
+      "studio_url": "https://studio.youtube.com/video/mj9qEKPRatE/edit",
+      "duration_seconds": 1659,
+      "views": 19,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "$550 million in a single year",
+            "seconds": 0
+          },
+          {
+            "title": "The Idea",
+            "seconds": 180
+          },
+          {
+            "title": "The Empire",
+            "seconds": 540
+          },
+          {
+            "title": "The Fall",
+            "seconds": 900
+          },
+          {
+            "title": "The Reckoning and the Forgiveness",
+            "seconds": 1290
+          },
+          {
+            "title": "Your Verdict",
+            "seconds": 1650
+          }
+        ],
+        "notes": [
+          "dropped 'The Two-Sided Man' at 8s (8s after 'Hook' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "authored 'Hook' -> '$550 million in a single year'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines; 1 labels still need a real title"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 180,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 $550 million in a single year",
+        "3:00 The Idea",
+        "9:00 The Empire",
+        "15:00 The Fall",
+        "21:30 The Reckoning and the Forgiveness",
+        "27:30 Your Verdict"
+      ]
+    },
+    {
+      "video_id": "bSnyfsulna8",
+      "title": "Police Never Saw the Driver — the Supreme Court Let Them Stop Him Anyway",
+      "episode_id": "PD-2026-048-glover",
+      "watch_url": "https://youtu.be/bSnyfsulna8",
+      "studio_url": "https://studio.youtube.com/video/bSnyfsulna8/edit",
+      "duration_seconds": 699,
+      "views": 19,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "unresolved",
+        "confidence": "none",
+        "source": null,
+        "chapters": [],
+        "notes": [
+          "no script.annotated*.json with chapters[] and no script.en.v*.md with ACT headings under PD-2026-048-glover/03_script/ or episodes/_planning/"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "BLOCKED - chapter titles must be authored by hand"
+      },
+      "validation": {
+        "chapter_count": 0,
+        "first_seconds": null,
+        "min_gap": null,
+        "youtube_valid": false
+      },
+      "chapter_lines": []
+    },
+    {
+      "video_id": "zE3nCUlUmLY",
+      "title": "The phone in his pocket testified against him for months",
+      "episode_id": "PD-2026-008-carpenter",
+      "watch_url": "https://youtu.be/zE3nCUlUmLY",
+      "studio_url": "https://studio.youtube.com/video/zE3nCUlUmLY/edit",
+      "duration_seconds": 679,
+      "views": 18,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "127 days, no warrant",
+            "seconds": 0
+          },
+          {
+            "title": "Detroit, 2010-2011",
+            "seconds": 63
+          },
+          {
+            "title": "Cell-site location records",
+            "seconds": 94
+          },
+          {
+            "title": "12,898 location points",
+            "seconds": 131
+          },
+          {
+            "title": "No warrant",
+            "seconds": 166
+          },
+          {
+            "title": "The third-party doctrine",
+            "seconds": 194
+          },
+          {
+            "title": "Dialed numbers are not a life map",
+            "seconds": 228
+          },
+          {
+            "title": "Different in kind, not degree",
+            "seconds": 262
+          },
+          {
+            "title": "A 1970s rule meets an always-on phone",
+            "seconds": 312
+          },
+          {
+            "title": "The 2018 ruling",
+            "seconds": 346
+          },
+          {
+            "title": "The doctrine stops at CSLI",
+            "seconds": 382
+          },
+          {
+            "title": "Depth and no real choice",
+            "seconds": 424
+          },
+          {
+            "title": "Where is the line?",
+            "seconds": 464
+          },
+          {
+            "title": "The warrant remains the line",
+            "seconds": 504
+          },
+          {
+            "title": "Location was just the first door",
+            "seconds": 530
+          },
+          {
+            "title": "Terry, Riley, Carpenter",
+            "seconds": 578
+          },
+          {
+            "title": "The line through your phone",
+            "seconds": 616
+          },
+          {
+            "title": "Prime Documentary",
+            "seconds": 669
+          }
+        ],
+        "notes": [
+          "dropped 'Body, phone, location' at 31s (4s after 'Opening: Carpenter' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "dropped the brand-sting chapter 'Opening: Carpenter' - it is the line that broke rendering on 13 videos and means nothing to a viewer"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines"
+      },
+      "validation": {
+        "chapter_count": 18,
+        "first_seconds": 0,
+        "min_gap": 26,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 127 days, no warrant",
+        "1:03 Detroit, 2010-2011",
+        "1:34 Cell-site location records",
+        "2:11 12,898 location points",
+        "2:46 No warrant",
+        "3:14 The third-party doctrine",
+        "3:48 Dialed numbers are not a life map",
+        "4:22 Different in kind, not degree",
+        "5:12 A 1970s rule meets an always-on phone",
+        "5:46 The 2018 ruling",
+        "6:22 The doctrine stops at CSLI",
+        "7:04 Depth and no real choice",
+        "7:44 Where is the line?",
+        "8:24 The warrant remains the line",
+        "8:50 Location was just the first door",
+        "9:38 Terry, Riley, Carpenter",
+        "10:16 The line through your phone",
+        "11:09 Prime Documentary"
+      ]
+    },
+    {
+      "video_id": "rU2vk9XL4vY",
+      "title": "The county sold her condo and kept the extra $25,000",
+      "episode_id": "PD-2026-033-tyler",
+      "watch_url": "https://youtu.be/rU2vk9XL4vY",
+      "studio_url": "https://studio.youtube.com/video/rU2vk9XL4vY/edit",
+      "duration_seconds": 1107,
+      "views": 17,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-033-tyler/03_script/script.annotated.v001.json + episodes/PD-2026-033-tyler/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "A $2,300 bill took her paid-off home",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Woman and the Empty House",
+            "seconds": 23,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Taking",
+            "seconds": 215,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "She Was Not the Only One",
+            "seconds": 399,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Fight",
+            "seconds": 579,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Verdict",
+            "seconds": 793,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What the ruling changed",
+            "seconds": 1045,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped 'Opening' at 8s (8s after 'Hook' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "authored 'Hook' -> 'A $2,300 bill took her paid-off home'",
+          "authored 'Ending' -> 'What the ruling changed'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 7,
+        "first_seconds": 0,
+        "min_gap": 23,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 A $2,300 bill took her paid-off home",
+        "0:23 The Woman and the Empty House",
+        "3:35 The Taking",
+        "6:39 She Was Not the Only One",
+        "9:39 The Fight",
+        "13:13 The Verdict",
+        "17:25 What the ruling changed"
+      ]
+    },
+    {
+      "video_id": "1h267U6PY0I",
+      "title": "Two men dressed as police emptied a Boston museum",
+      "episode_id": "PD-2026-020-gardner",
+      "watch_url": "https://youtu.be/1h267U6PY0I",
+      "studio_url": "https://studio.youtube.com/video/1h267U6PY0I/edit",
+      "duration_seconds": 1644,
+      "views": 15,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "Cold open: the empty frames",
+            "seconds": 0
+          },
+          {
+            "title": "The night",
+            "seconds": 12
+          },
+          {
+            "title": "The treasure",
+            "seconds": 400
+          },
+          {
+            "title": "The hunt",
+            "seconds": 760
+          },
+          {
+            "title": "The mystery",
+            "seconds": 1215
+          },
+          {
+            "title": "The case that is still open",
+            "seconds": 1612
+          }
+        ],
+        "notes": [
+          "dropped 'Prime Documentary opening' at 8s (8s after 'Cold open: the empty frames' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "authored 'Ending' -> 'The case that is still open'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines; 1 labels still need a real title"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 12,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Cold open: the empty frames",
+        "0:12 The night",
+        "6:40 The treasure",
+        "12:40 The hunt",
+        "20:15 The mystery",
+        "26:52 The case that is still open"
+      ]
+    },
+    {
+      "video_id": "Enok7A7wGBA",
+      "title": "Police Raided the Wrong House and Handcuffed an Innocent Woman",
+      "episode_id": "PD-2026-042-young",
+      "watch_url": "https://youtu.be/Enok7A7wGBA",
+      "studio_url": "https://studio.youtube.com/video/Enok7A7wGBA/edit",
+      "duration_seconds": 733,
+      "views": 14,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/_planning/EP42_young_script.en.v001.md + episodes/PD-2026-042-young/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "The Wrong Door",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Tape",
+            "seconds": 150,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Command",
+            "seconds": 249,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Reach",
+            "seconds": 488,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Where the law leaves you",
+            "seconds": 600,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "authored 'Ending' -> 'Where the law leaves you'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 5,
+        "first_seconds": 0,
+        "min_gap": 99,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The Wrong Door",
+        "2:30 The Tape",
+        "4:09 The Command",
+        "8:08 The Reach",
+        "10:00 Where the law leaves you"
+      ]
+    },
+    {
+      "video_id": "GGW1SIAAgkY",
+      "title": "Police Skipped His Rights — Then He Learned He Couldn't Even Sue",
+      "episode_id": "PD-2026-044-tekoh",
+      "watch_url": "https://youtu.be/GGW1SIAAgkY",
+      "studio_url": "https://studio.youtube.com/video/GGW1SIAAgkY/edit",
+      "duration_seconds": 720,
+      "views": 13,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "unresolved",
+        "confidence": "none",
+        "source": null,
+        "chapters": [],
+        "notes": [
+          "no script.annotated*.json with chapters[] and no script.en.v*.md with ACT headings under PD-2026-044-tekoh/03_script/ or episodes/_planning/"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "BLOCKED - chapter titles must be authored by hand"
+      },
+      "validation": {
+        "chapter_count": 0,
+        "first_seconds": null,
+        "min_gap": null,
+        "youtube_valid": false
+      },
+      "chapter_lines": []
+    },
+    {
+      "video_id": "5Jap-0h43A4",
+      "title": "The Day $1 Trillion Vanished in 36 Minutes",
+      "episode_id": "PD-2026-018-flashcrash",
+      "watch_url": "https://youtu.be/5Jap-0h43A4",
+      "studio_url": "https://studio.youtube.com/video/5Jap-0h43A4/edit",
+      "duration_seconds": 1336,
+      "views": 11,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "Cold open: the market vanishes",
+            "seconds": 0
+          },
+          {
+            "title": "the machine market",
+            "seconds": 126
+          },
+          {
+            "title": "the bedroom trader",
+            "seconds": 268
+          },
+          {
+            "title": "the ghost wall",
+            "seconds": 493
+          },
+          {
+            "title": "May 6, 2010",
+            "seconds": 702
+          },
+          {
+            "title": "The plunge",
+            "seconds": 843
+          },
+          {
+            "title": "the autopsy",
+            "seconds": 941
+          },
+          {
+            "title": "law and aftermath",
+            "seconds": 1129
+          },
+          {
+            "title": "Ending: person or system?",
+            "seconds": 1301
+          }
+        ],
+        "notes": [
+          "dropped 'The drop' at 38s (9s after 'Opening: did one man break the market?' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "dropped the brand-sting chapter 'Opening: did one man break the market?' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "relabelled 'Act I: the machine market' -> 'the machine market'",
+          "relabelled 'Act II: the bedroom trader' -> 'the bedroom trader'",
+          "relabelled 'Act III: the ghost wall' -> 'the ghost wall'",
+          "relabelled 'Act IV: May 6, 2010' -> 'May 6, 2010'",
+          "relabelled 'Act V: the autopsy' -> 'the autopsy'",
+          "relabelled 'Act VI: law and aftermath' -> 'law and aftermath'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines"
+      },
+      "validation": {
+        "chapter_count": 9,
+        "first_seconds": 0,
+        "min_gap": 98,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Cold open: the market vanishes",
+        "2:06 the machine market",
+        "4:28 the bedroom trader",
+        "8:13 the ghost wall",
+        "11:42 May 6, 2010",
+        "14:03 The plunge",
+        "15:41 the autopsy",
+        "18:49 law and aftermath",
+        "21:41 Ending: person or system?"
+      ]
+    },
+    {
+      "video_id": "rYV4rxtQCV0",
+      "title": "A billionaire heard his own voice on an FBI tape",
+      "episode_id": "PD-2026-024-rajaratnam",
+      "watch_url": "https://youtu.be/rYV4rxtQCV0",
+      "studio_url": "https://studio.youtube.com/video/rYV4rxtQCV0/edit",
+      "duration_seconds": 1717,
+      "views": 11,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-024-rajaratnam/03_script/script.annotated.v001.json + episodes/PD-2026-024-rajaratnam/08_edit/captions.v001.srt",
+        "chapters": [
+          {
+            "title": "cold_open",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "THE EDGE",
+            "seconds": 139,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "THE WHISPER NETWORK",
+            "seconds": 526,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "THE WIRE",
+            "seconds": 873,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "THE RECKONING",
+            "seconds": 1237,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "coda",
+            "seconds": 1567,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL - labels are the author's, every timestamp is derived"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 139,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 cold_open",
+        "2:19 THE EDGE",
+        "8:46 THE WHISPER NETWORK",
+        "14:33 THE WIRE",
+        "20:37 THE RECKONING",
+        "26:07 coda"
+      ]
+    },
+    {
+      "video_id": "68oWZRiOnB8",
+      "title": "The FBI taped a microphone to a phone booth roof",
+      "episode_id": "PD-2026-026-katz",
+      "watch_url": "https://youtu.be/68oWZRiOnB8",
+      "studio_url": "https://studio.youtube.com/video/68oWZRiOnB8/edit",
+      "duration_seconds": 632,
+      "views": 11,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-026-katz/03_script/script.annotated.v001.json + episodes/PD-2026-026-katz/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "The microphone on the phone booth",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Booth",
+            "seconds": 83,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Problem",
+            "seconds": 172,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Ruling",
+            "seconds": 282,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What It Means",
+            "seconds": 432,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "From protecting places to protecting people",
+            "seconds": 531,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped the brand-sting chapter 'Opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "relabelled 'Act I — The Booth' -> 'The Booth'",
+          "relabelled 'Act II — The Problem' -> 'The Problem'",
+          "relabelled 'Act III — The Ruling' -> 'The Ruling'",
+          "relabelled 'Act IV — What It Means' -> 'What It Means'",
+          "authored 'Hook' -> 'The microphone on the phone booth'",
+          "authored 'Ending' -> 'From protecting places to protecting people'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 83,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The microphone on the phone booth",
+        "1:23 The Booth",
+        "2:52 The Problem",
+        "4:42 The Ruling",
+        "7:12 What It Means",
+        "8:51 From protecting places to protecting people"
+      ]
+    },
+    {
+      "video_id": "tpAKfHKuwqY",
+      "title": "The Traffic Stop Was Over. Then the Dog Arrived.",
+      "episode_id": "PD-2026-027-rodriguez",
+      "watch_url": "https://youtu.be/tpAKfHKuwqY",
+      "studio_url": "https://studio.youtube.com/video/tpAKfHKuwqY/edit",
+      "duration_seconds": 648,
+      "views": 11,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-027-rodriguez/03_script/script.annotated.v001.json + episodes/PD-2026-027-rodriguez/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "How long can they keep you?",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Stop",
+            "seconds": 88,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Waiting",
+            "seconds": 180,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Ruling",
+            "seconds": 298,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What It Means",
+            "seconds": 428,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Where your rights live",
+            "seconds": 549,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped the brand-sting chapter 'Opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "relabelled 'Act I — The Stop' -> 'The Stop'",
+          "relabelled 'Act II — The Waiting' -> 'The Waiting'",
+          "relabelled 'Act III — The Ruling' -> 'The Ruling'",
+          "relabelled 'Act IV — What It Means' -> 'What It Means'",
+          "authored 'Hook' -> 'How long can they keep you?'",
+          "authored 'Ending' -> 'Where your rights live'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 88,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 How long can they keep you?",
+        "1:28 The Stop",
+        "3:00 The Waiting",
+        "4:58 The Ruling",
+        "7:08 What It Means",
+        "9:09 Where your rights live"
+      ]
+    },
+    {
+      "video_id": "gR_nzXIyIlk",
+      "title": "Thirty hours in jail because an algorithm chose his photo",
+      "episode_id": "PD-2026-036-williams",
+      "watch_url": "https://youtu.be/gR_nzXIyIlk",
+      "studio_url": "https://studio.youtube.com/video/gR_nzXIyIlk/edit",
+      "duration_seconds": 714,
+      "views": 10,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-036-williams/03_script/script.annotated.v001.json + episodes/PD-2026-036-williams/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "Arrested on a computer's guess",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Arrested In Your Own Driveway",
+            "seconds": 49,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Computer Picked Him",
+            "seconds": 170,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Why It Reaches For The Wrong Face",
+            "seconds": 336,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "One Man Got A Rule, You Got A Warning",
+            "seconds": 471,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The next way to become a suspect",
+            "seconds": 595,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped the brand-sting chapter 'Opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "authored 'Hook' -> \"Arrested on a computer's guess\"",
+          "authored 'Ending' -> 'The next way to become a suspect'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 49,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Arrested on a computer's guess",
+        "0:49 Arrested In Your Own Driveway",
+        "2:50 The Computer Picked Him",
+        "5:36 Why It Reaches For The Wrong Face",
+        "7:51 One Man Got A Rule, You Got A Warning",
+        "9:55 The next way to become a suspect"
+      ]
+    },
+    {
+      "video_id": "Pmh6h5SfWw4",
+      "title": "A Judge Took $2.8 Million to Send Kids to Prison",
+      "episode_id": "PD-2026-038-kidsforcash",
+      "watch_url": "https://youtu.be/Pmh6h5SfWw4",
+      "studio_url": "https://studio.youtube.com/video/Pmh6h5SfWw4/edit",
+      "duration_seconds": 564,
+      "views": 10,
+      "state_before": "PLACEHOLDER",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "low",
+        "source": "episodes/PD-2026-038-kidsforcash/03_script/script.annotated.v001.json + episodes/PD-2026-038-kidsforcash/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "A prank web page, and a judge",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Ordinary Children",
+            "seconds": 26,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Machine",
+            "seconds": 139,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "One House",
+            "seconds": 262,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Exposed",
+            "seconds": 352,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "How close this is to an ordinary family",
+            "seconds": 490,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "'Opening': caption alignment weak (best match 0.00) - timestamp not trusted",
+          "authored 'Hook' -> 'A prank web page, and a judge'",
+          "authored 'Ending' -> 'How close this is to an ordinary family'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 26,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 A prank web page, and a judge",
+        "0:26 Ordinary Children",
+        "2:19 The Machine",
+        "4:22 One House",
+        "5:52 Exposed",
+        "8:10 How close this is to an ordinary family"
+      ]
+    },
+    {
+      "video_id": "j8U8c4BB_GQ",
+      "title": "He sold a side door into America's best universities",
+      "episode_id": "PD-2026-019-varsityblues",
+      "watch_url": "https://youtu.be/j8U8c4BB_GQ",
+      "studio_url": "https://studio.youtube.com/video/j8U8c4BB_GQ/edit",
+      "duration_seconds": 1661,
+      "views": 8,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "The Side Door",
+            "seconds": 0
+          },
+          {
+            "title": "The Fixer",
+            "seconds": 170
+          },
+          {
+            "title": "The Two Machines",
+            "seconds": 510
+          },
+          {
+            "title": "The Families and the Taken Seat",
+            "seconds": 945
+          },
+          {
+            "title": "The Reckoning",
+            "seconds": 1350
+          },
+          {
+            "title": "What the Scandal Did Not Touch",
+            "seconds": 1640
+          }
+        ],
+        "notes": [
+          "dropped 'The Three Doors' at 8s (8s after 'The Side Door' - under YouTube's 10s floor, which is what was silently killing the whole block)"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 170,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The Side Door",
+        "2:50 The Fixer",
+        "8:30 The Two Machines",
+        "15:45 The Families and the Taken Seat",
+        "22:30 The Reckoning",
+        "27:20 What the Scandal Did Not Touch"
+      ]
+    },
+    {
+      "video_id": "1pox44KsaV8",
+      "title": "The Fine Print That Quietly Took Your Right to Sue",
+      "episode_id": "PD-2026-012-arbitration",
+      "watch_url": "https://youtu.be/1pox44KsaV8",
+      "studio_url": "https://studio.youtube.com/video/1pox44KsaV8/edit",
+      "duration_seconds": 721,
+      "views": 5,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "You tap I agree",
+            "seconds": 0
+          },
+          {
+            "title": "The thirty-dollar case",
+            "seconds": 80
+          },
+          {
+            "title": "The 1925 law and the waiver",
+            "seconds": 230
+          },
+          {
+            "title": "Critics and defenders",
+            "seconds": 340
+          },
+          {
+            "title": "2011: Concepcion",
+            "seconds": 395
+          },
+          {
+            "title": "Epic Systems and work",
+            "seconds": 485
+          },
+          {
+            "title": "What mandatory arbitration means now",
+            "seconds": 560
+          },
+          {
+            "title": "The rights you can sign away",
+            "seconds": 645
+          },
+          {
+            "title": "Next: DNA after arrest",
+            "seconds": 710
+          }
+        ],
+        "notes": [
+          "dropped 'The arbitration clause' at 36s (4s after 'Prime Documentary opening' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "dropped the brand-sting chapter 'Prime Documentary opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines"
+      },
+      "validation": {
+        "chapter_count": 9,
+        "first_seconds": 0,
+        "min_gap": 55,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 You tap I agree",
+        "1:20 The thirty-dollar case",
+        "3:50 The 1925 law and the waiver",
+        "5:40 Critics and defenders",
+        "6:35 2011: Concepcion",
+        "8:05 Epic Systems and work",
+        "9:20 What mandatory arbitration means now",
+        "10:45 The rights you can sign away",
+        "11:50 Next: DNA after arrest"
+      ]
+    },
+    {
+      "video_id": "YhEJHK279f8",
+      "title": "Their Son Was Charged. The City Came for His Parents' House.",
+      "episode_id": "PD-2026-028-forfeiture",
+      "watch_url": "https://youtu.be/YhEJHK279f8",
+      "studio_url": "https://studio.youtube.com/video/YhEJHK279f8/edit",
+      "duration_seconds": 707,
+      "views": 5,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-028-forfeiture/03_script/script.annotated.v001.json + episodes/PD-2026-028-forfeiture/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "The house itself was charged",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The House",
+            "seconds": 23,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Machine",
+            "seconds": 112,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Fight",
+            "seconds": 314,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Reckoning",
+            "seconds": 525,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What most people never learn",
+            "seconds": 616,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped 'Opening' at 9s (9s after 'Hook' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "relabelled 'Act I — The House' -> 'The House'",
+          "relabelled 'Act II — The Machine' -> 'The Machine'",
+          "relabelled 'Act III — The Fight' -> 'The Fight'",
+          "relabelled 'Act IV — The Reckoning' -> 'The Reckoning'",
+          "authored 'Hook' -> 'The house itself was charged'",
+          "authored 'Ending' -> 'What most people never learn'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 23,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The house itself was charged",
+        "0:23 The House",
+        "1:52 The Machine",
+        "5:14 The Fight",
+        "8:45 The Reckoning",
+        "10:16 What most people never learn"
+      ]
+    },
+    {
+      "video_id": "YQIhk2dKZHU",
+      "title": "Police Can Force Your Thumb — But Maybe Not Your Mind",
+      "episode_id": "PD-2026-031-unlock",
+      "watch_url": "https://youtu.be/YQIhk2dKZHU",
+      "studio_url": "https://studio.youtube.com/video/YQIhk2dKZHU/edit",
+      "duration_seconds": 715,
+      "views": 5,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-031-unlock/03_script/script.annotated.v002.json + episodes/PD-2026-031-unlock/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "The officer holding your phone",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Phone Is You",
+            "seconds": 34,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Mind vs. Body",
+            "seconds": 172,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "America Can't Agree",
+            "seconds": 348,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Unsettled Line",
+            "seconds": 558,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Your passcode vs your face",
+            "seconds": 685,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped the brand-sting chapter 'Opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "relabelled 'Act I — The Phone Is You' -> 'The Phone Is You'",
+          "relabelled 'Act II — Mind vs. Body' -> 'Mind vs. Body'",
+          "relabelled \"Act III — America Can't Agree\" -> \"America Can't Agree\"",
+          "relabelled 'Act IV — The Unsettled Line' -> 'The Unsettled Line'",
+          "authored 'Hook' -> 'The officer holding your phone'",
+          "authored 'Ending' -> 'Your passcode vs your face'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 34,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The officer holding your phone",
+        "0:34 The Phone Is You",
+        "2:52 Mind vs. Body",
+        "5:48 America Can't Agree",
+        "9:18 The Unsettled Line",
+        "11:25 Your passcode vs your face"
+      ]
+    },
+    {
+      "video_id": "cQFql7tT1fE",
+      "title": "Read Rights or It's Out | Miranda v. Arizona",
+      "episode_id": "PD-2026-001-miranda",
+      "watch_url": "https://youtu.be/cQFql7tT1fE",
+      "studio_url": "https://studio.youtube.com/video/cQFql7tT1fE/edit",
+      "duration_seconds": 696,
+      "views": 3,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "Hook - the warning before the case",
+            "seconds": 0
+          },
+          {
+            "title": "Phoenix, Arizona, 1963",
+            "seconds": 79
+          },
+          {
+            "title": "The interrogation room is tilted",
+            "seconds": 110
+          },
+          {
+            "title": "Did he know he had a choice?",
+            "seconds": 157
+          },
+          {
+            "title": "A confession becomes evidence",
+            "seconds": 196
+          },
+          {
+            "title": "Four cases, one question",
+            "seconds": 245
+          },
+          {
+            "title": "June 13, 1966 - 5-4",
+            "seconds": 328
+          },
+          {
+            "title": "The four warnings",
+            "seconds": 351
+          },
+          {
+            "title": "Fifth Amendment line",
+            "seconds": 392
+          },
+          {
+            "title": "The dissent",
+            "seconds": 416
+          },
+          {
+            "title": "Printed on cards",
+            "seconds": 438
+          },
+          {
+            "title": "Power moves across the table",
+            "seconds": 463
+          },
+          {
+            "title": "Retried and convicted again",
+            "seconds": 512
+          },
+          {
+            "title": "The next person",
+            "seconds": 551
+          },
+          {
+            "title": "Structural, not set dressing",
+            "seconds": 594
+          },
+          {
+            "title": "Next: Gideon",
+            "seconds": 651
+          }
+        ],
+        "notes": [
+          "dropped 'Not a courtesy. A repair.' at 30s (3s after 'Brand opening' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "dropped the brand-sting chapter 'Brand opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "dropped 'Subscribe / endcard' - endcard row, nothing for a viewer to seek to"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines; 1 labels still need a real title"
+      },
+      "validation": {
+        "chapter_count": 16,
+        "first_seconds": 0,
+        "min_gap": 22,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Hook - the warning before the case",
+        "1:19 Phoenix, Arizona, 1963",
+        "1:50 The interrogation room is tilted",
+        "2:37 Did he know he had a choice?",
+        "3:16 A confession becomes evidence",
+        "4:05 Four cases, one question",
+        "5:28 June 13, 1966 - 5-4",
+        "5:51 The four warnings",
+        "6:32 Fifth Amendment line",
+        "6:56 The dissent",
+        "7:18 Printed on cards",
+        "7:43 Power moves across the table",
+        "8:32 Retried and convicted again",
+        "9:11 The next person",
+        "9:54 Structural, not set dressing",
+        "10:51 Next: Gideon"
+      ]
+    },
+    {
+      "video_id": "cSfe3iGnBBM",
+      "title": "Can Your School Punish You for a Post You Made Off Campus?",
+      "episode_id": "PD-2026-011-mahanoy",
+      "watch_url": "https://youtu.be/cSfe3iGnBBM",
+      "studio_url": "https://studio.youtube.com/video/cSfe3iGnBBM/edit",
+      "duration_seconds": 721,
+      "views": 3,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "Weekend post, school punishment",
+            "seconds": 0
+          },
+          {
+            "title": "Mahanoy, Pennsylvania, 2017",
+            "seconds": 81
+          },
+          {
+            "title": "The vanished gate",
+            "seconds": 215
+          },
+          {
+            "title": "2021: the 8-1 ruling",
+            "seconds": 429
+          },
+          {
+            "title": "The fuzzy line after Mahanoy",
+            "seconds": 588
+          },
+          {
+            "title": "Next: the right you sign away",
+            "seconds": 660
+          }
+        ],
+        "notes": [
+          "dropped 'The schoolhouse gate' at 32s (4s after 'Prime Documentary opening' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "dropped the brand-sting chapter 'Prime Documentary opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "dropped 'Subscribe' - endcard row, nothing for a viewer to seek to"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines; 1 labels still need a real title"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 72,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Weekend post, school punishment",
+        "1:21 Mahanoy, Pennsylvania, 2017",
+        "3:35 The vanished gate",
+        "7:09 2021: the 8-1 ruling",
+        "9:48 The fuzzy line after Mahanoy",
+        "11:00 Next: the right you sign away"
+      ]
+    },
+    {
+      "video_id": "X40EbUw5kzQ",
+      "title": "Police Are Allowed to Lie to You Until You Confess — Even If You're Innocent",
+      "episode_id": "PD-2026-039-frazier",
+      "watch_url": "https://youtu.be/X40EbUw5kzQ",
+      "studio_url": "https://studio.youtube.com/video/X40EbUw5kzQ/edit",
+      "duration_seconds": 737,
+      "views": 3,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "low",
+        "source": "episodes/PD-2026-039-frazier/03_script/script.annotated.stub.json + episodes/PD-2026-039-frazier/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "HOOK",
+            "seconds": 0,
+            "align_ratio": 1.0,
+            "needs_authoring": true
+          }
+        ],
+        "notes": [
+          "'OPENING': caption alignment weak (best match 0.00) - timestamp not trusted",
+          "'ACT I': caption alignment weak (best match 0.00) - timestamp not trusted",
+          "'ACT II': caption alignment weak (best match 0.00) - timestamp not trusted",
+          "'ACT III': caption alignment weak (best match 0.00) - timestamp not trusted",
+          "'ACT IV': caption alignment weak (best match 0.00) - timestamp not trusted",
+          "'ENDING': caption alignment weak (best match 0.00) - timestamp not trusted"
+        ],
+        "labels_needing_authoring": [
+          "HOOK"
+        ],
+        "needs_owner_review": "FULL + 1 labels are production-internal (HOOK) and must be rewritten before publishing"
+      },
+      "validation": {
+        "chapter_count": 1,
+        "first_seconds": 0,
+        "min_gap": null,
+        "youtube_valid": false
+      },
+      "chapter_lines": [
+        "0:00 HOOK"
+      ]
+    },
+    {
+      "video_id": "89SQoRgAD7U",
+      "title": "Your Home for a Developer? The Kelo Supreme Court Case",
+      "episode_id": "PD-2026-010-kelo",
+      "watch_url": "https://youtu.be/89SQoRgAD7U",
+      "studio_url": "https://studio.youtube.com/video/89SQoRgAD7U/edit",
+      "duration_seconds": 641,
+      "views": 2,
+      "state_before": "RENDER_BROKEN",
+      "repair": {
+        "method": "drop_sub_10s_chapters_from_live_description",
+        "confidence": "high",
+        "source": "the live YouTube description (surviving labels and times unchanged)",
+        "chapters": [
+          {
+            "title": "Your home for a developer?",
+            "seconds": 0
+          },
+          {
+            "title": "The little pink house",
+            "seconds": 72
+          },
+          {
+            "title": "Jobs, taxes, and a plan",
+            "seconds": 111
+          },
+          {
+            "title": "The Fifth Amendment question",
+            "seconds": 171
+          },
+          {
+            "title": "Public use or public purpose",
+            "seconds": 192
+          },
+          {
+            "title": "Narrow versus broad",
+            "seconds": 257
+          },
+          {
+            "title": "The 2005 decision",
+            "seconds": 297
+          },
+          {
+            "title": "The 5-4 line",
+            "seconds": 309
+          },
+          {
+            "title": "O'Connor's warning",
+            "seconds": 360
+          },
+          {
+            "title": "Kennedy's concurrence",
+            "seconds": 437
+          },
+          {
+            "title": "The backlash in the states",
+            "seconds": 485
+          },
+          {
+            "title": "The plan collapses",
+            "seconds": 560
+          },
+          {
+            "title": "What Kelo means now",
+            "seconds": 600
+          },
+          {
+            "title": "Prime Documentary",
+            "seconds": 632
+          }
+        ],
+        "notes": [
+          "dropped 'Fort Trumbull' at 32s (7s after 'Opening: Kelo' - under YouTube's 10s floor, which is what was silently killing the whole block)",
+          "dropped the brand-sting chapter 'Opening: Kelo' - it is the line that broke rendering on 13 videos and means nothing to a viewer"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "light - confirm the dropped lines"
+      },
+      "validation": {
+        "chapter_count": 14,
+        "first_seconds": 0,
+        "min_gap": 12,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 Your home for a developer?",
+        "1:12 The little pink house",
+        "1:51 Jobs, taxes, and a plan",
+        "2:51 The Fifth Amendment question",
+        "3:12 Public use or public purpose",
+        "4:17 Narrow versus broad",
+        "4:57 The 2005 decision",
+        "5:09 The 5-4 line",
+        "6:00 O'Connor's warning",
+        "7:17 Kennedy's concurrence",
+        "8:05 The backlash in the states",
+        "9:20 The plan collapses",
+        "10:00 What Kelo means now",
+        "10:32 Prime Documentary"
+      ]
+    },
+    {
+      "video_id": "4uuY6G0LmHo",
+      "title": "Police Destroyed His Home Chasing a Stranger — Then Paid Him Nothing",
+      "episode_id": "PD-2026-040-lech",
+      "watch_url": "https://youtu.be/4uuY6G0LmHo",
+      "studio_url": "https://studio.youtube.com/video/4uuY6G0LmHo/edit",
+      "duration_seconds": 760,
+      "views": 2,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/_planning/EP40_lech_script.en.v001.md + episodes/PD-2026-040-lech/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "The house the police destroyed",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "4219 South Alton Street",
+            "seconds": 41,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What it costs to be the address",
+            "seconds": 173,
+            "align_ratio": 0.962
+          },
+          {
+            "title": "Police power",
+            "seconds": 314,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The address is the only qualification",
+            "seconds": 444,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Who pays",
+            "seconds": 660,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "authored 'Hook' -> 'The house the police destroyed'",
+          "authored 'Ending' -> 'Who pays'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 41,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The house the police destroyed",
+        "0:41 4219 South Alton Street",
+        "2:53 What it costs to be the address",
+        "5:14 Police power",
+        "7:24 The address is the only qualification",
+        "11:00 Who pays"
+      ]
+    },
+    {
+      "video_id": "rrftLmSVivk",
+      "title": "Can the Police Scan Your Home From the Street?",
+      "episode_id": "PD-2026-025-kyllo",
+      "watch_url": "https://youtu.be/rrftLmSVivk",
+      "studio_url": "https://studio.youtube.com/video/rrftLmSVivk/edit",
+      "duration_seconds": 621,
+      "views": 1,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-025-kyllo/03_script/script.annotated.v001.json + episodes/PD-2026-025-kyllo/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "The camera aimed at his house",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Scan",
+            "seconds": 69,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Problem",
+            "seconds": 158,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Ruling",
+            "seconds": 261,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "What It Means",
+            "seconds": 420,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "From heat to a phone booth",
+            "seconds": 525,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped the brand-sting chapter 'Opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "relabelled 'Act I — The Scan' -> 'The Scan'",
+          "relabelled 'Act II — The Problem' -> 'The Problem'",
+          "relabelled 'Act III — The Ruling' -> 'The Ruling'",
+          "relabelled 'Act IV — What It Means' -> 'What It Means'",
+          "authored 'Hook' -> 'The camera aimed at his house'",
+          "authored 'Ending' -> 'From heat to a phone booth'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 69,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The camera aimed at his house",
+        "1:09 The Scan",
+        "2:38 The Problem",
+        "4:21 The Ruling",
+        "7:00 What It Means",
+        "8:45 From heat to a phone booth"
+      ]
+    },
+    {
+      "video_id": "AxOlQ2NIaBU",
+      "title": "She Was Jailed Because She Was Too Poor to Pay a Fine",
+      "episode_id": "PD-2026-045-cleveland",
+      "watch_url": "https://youtu.be/AxOlQ2NIaBU",
+      "studio_url": "https://studio.youtube.com/video/AxOlQ2NIaBU/edit",
+      "duration_seconds": 718,
+      "views": 1,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-045-cleveland/03_script/script.en.v001.md + episodes/PD-2026-045-cleveland/08_edit/captions.final.v001.srt",
+        "chapters": [
+          {
+            "title": "The road that ends at a cell",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The machine that turns a debt into a sentence",
+            "seconds": 158,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Bearden, and the difference between a right and a remedy",
+            "seconds": 318,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL - labels are the author's, every timestamp is derived"
+      },
+      "validation": {
+        "chapter_count": 3,
+        "first_seconds": 0,
+        "min_gap": 158,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 The road that ends at a cell",
+        "2:38 The machine that turns a debt into a sentence",
+        "5:18 Bearden, and the difference between a right and a remedy"
+      ]
+    },
+    {
+      "video_id": "LXFjJqE6vKU",
+      "title": "Behind the $9 billion promise was a machine that failed",
+      "episode_id": "PD-2026-015-theranos",
+      "watch_url": "https://youtu.be/LXFjJqE6vKU",
+      "studio_url": "https://studio.youtube.com/video/LXFjJqE6vKU/edit",
+      "duration_seconds": 736,
+      "views": 0,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "rebuilt_from_annotated_script_aligned_to_captions",
+        "confidence": "medium",
+        "source": "episodes/PD-2026-015-theranos/03_script/script.annotated.v001.json + episodes/PD-2026-015-theranos/08_edit/captions.review_proxy.v001.srt",
+        "chapters": [
+          {
+            "title": "One drop of blood, nine billion dollars",
+            "seconds": 0,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Promise",
+            "seconds": 76,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Cracks",
+            "seconds": 189,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Trial",
+            "seconds": 286,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "The Line",
+            "seconds": 468,
+            "align_ratio": 1.0
+          },
+          {
+            "title": "Ending (series finale)",
+            "seconds": 542,
+            "align_ratio": 1.0
+          }
+        ],
+        "notes": [
+          "dropped the brand-sting chapter 'Opening' - it is the line that broke rendering on 13 videos and means nothing to a viewer",
+          "relabelled 'Act I — The Promise' -> 'The Promise'",
+          "relabelled 'Act II — The Cracks' -> 'The Cracks'",
+          "relabelled 'Act III — The Trial' -> 'The Trial'",
+          "relabelled 'Act IV — The Line' -> 'The Line'",
+          "authored 'Hook' -> 'One drop of blood, nine billion dollars'"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "FULL"
+      },
+      "validation": {
+        "chapter_count": 6,
+        "first_seconds": 0,
+        "min_gap": 74,
+        "youtube_valid": true
+      },
+      "chapter_lines": [
+        "0:00 One drop of blood, nine billion dollars",
+        "1:16 The Promise",
+        "3:09 The Cracks",
+        "4:46 The Trial",
+        "7:48 The Line",
+        "9:02 Ending (series finale)"
+      ]
+    },
+    {
+      "video_id": "2pLWw_vhfI8",
+      "title": "The Stop Was Illegal — the Supreme Court Kept the Evidence Anyway",
+      "episode_id": "PD-2026-049-strieff",
+      "watch_url": "https://youtu.be/2pLWw_vhfI8",
+      "studio_url": "https://studio.youtube.com/video/2pLWw_vhfI8/edit",
+      "duration_seconds": 708,
+      "views": 0,
+      "state_before": "MISSING",
+      "repair": {
+        "method": "unresolved",
+        "confidence": "none",
+        "source": null,
+        "chapters": [],
+        "notes": [
+          "no script.annotated*.json with chapters[] and no script.en.v*.md with ACT headings under PD-2026-049-strieff/03_script/ or episodes/_planning/"
+        ],
+        "labels_needing_authoring": [],
+        "needs_owner_review": "BLOCKED - chapter titles must be authored by hand"
+      },
+      "validation": {
+        "chapter_count": 0,
+        "first_seconds": null,
+        "min_gap": null,
+        "youtube_valid": false
+      },
+      "chapter_lines": []
+    }
+  ]
+}

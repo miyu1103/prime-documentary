@@ -1,0 +1,90 @@
+{
+  "schema_version": "thumbnail_generation_gate_receipt.v001",
+  "created_at": "2026-08-24T05:51:20.0841654+09:00",
+  "order": {
+    "file": "episodes/_planning/EP77-82_THUMB_CODEX.v003.md",
+    "commit": "ccdc496c",
+    "current_matches_commit": true,
+    "sha256": "0976D227774971485220838B39AAE2D378F3DE1AF12AEADCA998FA1C5E433468",
+    "requested_total": 33
+  },
+  "provider": "codex_builtin_image_gen",
+  "gate": {
+    "test_asset": "keybridge_v3/THUMB-01",
+    "status": "blocked",
+    "reason": "None of six targeted attempts passed all five check_thumb_punch.py bands.",
+    "remaining_assets_generated": 0,
+    "remaining_assets_withheld": 32,
+    "root_deliverable_present": false
+  },
+  "bands": {
+    "brightness": [42.0, 78.0],
+    "contrast": [60.0, 95.0],
+    "bright_pct": [3.0, 16.0],
+    "dark_pct": [35.0, 72.0],
+    "saturation": [30.0, 85.0]
+  },
+  "attempts": [
+    {
+      "file": "THUMB-01_gate01_overexposed.png",
+      "kind": "initial_generation",
+      "dimensions": "1672x941",
+      "sha256": "E3C8066FC2B5C18C40D4E3B06422D14FF5CEB496DBFBF35A1ADC6712BC167E35",
+      "metrics": {"brightness": 110.5, "contrast": 78.0, "bright_pct": 16.8, "dark_pct": 24.2, "saturation": 100.7},
+      "verdict": "fail"
+    },
+    {
+      "file": "THUMB-01_gate02_targeted-lighting.png",
+      "kind": "targeted_edit",
+      "dimensions": "1672x941",
+      "sha256": "92285D49AE06BE1DB0328A0B72E10178A1C7EA1304C81D9FF02E0D0E019CD0A4",
+      "metrics": {"brightness": 43.2, "contrast": 57.6, "bright_pct": 4.8, "dark_pct": 68.6, "saturation": 39.3},
+      "verdict": "fail",
+      "closest_to_pass": true
+    },
+    {
+      "file": "THUMB-01_gate03_contrast-edit.png",
+      "kind": "targeted_edit",
+      "dimensions": "1672x941",
+      "sha256": "F362CEC6B69615A265D8AE3D4F54659FA48D27E5AD602826ED052531E07DE400",
+      "metrics": {"brightness": 36.8, "contrast": 57.2, "bright_pct": 4.6, "dark_pct": 75.0, "saturation": 36.3},
+      "verdict": "fail"
+    },
+    {
+      "file": "THUMB-01_gate04_scurve-edit.png",
+      "kind": "targeted_edit",
+      "dimensions": "1672x941",
+      "sha256": "F97AC921F920B16C7C287658752215F2629BD5A23A4354D52AE41957DF94321D",
+      "metrics": {"brightness": 38.1, "contrast": 54.7, "bright_pct": 3.7, "dark_pct": 72.6, "saturation": 32.9},
+      "verdict": "fail"
+    },
+    {
+      "file": "THUMB-01_gate05_numeric-fresh.png",
+      "kind": "revised_generation",
+      "dimensions": "1672x941",
+      "sha256": "3891E59D36E454ECCEDEC8DA9C66BA1C6DA21D04EDD357B426A09D56BA663ED8",
+      "metrics": {"brightness": 49.2, "contrast": 45.1, "bright_pct": 1.7, "dark_pct": 56.5, "saturation": 62.4},
+      "verdict": "fail"
+    },
+    {
+      "file": "THUMB-01_gate06_hard-chiaroscuro.png",
+      "kind": "revised_generation",
+      "dimensions": "1672x941",
+      "sha256": "24BC5514195B3F4C668BAC3923FE82747B32B70112D953C56AFF66432F14E821",
+      "metrics": {"brightness": 33.4, "contrast": 49.6, "bright_pct": 3.3, "dark_pct": 79.2, "saturation": 21.9},
+      "verdict": "fail"
+    }
+  ],
+  "artifacts": {
+    "rejected_dir": "E:\\pd-media\\05_visuals\\thumbs\\keybridge_v3\\_rejected_gate",
+    "feed_sheet": "E:\\pd-media\\05_visuals\\thumbs\\keybridge_v3\\_rejected_gate\\_feed_sheet.png",
+    "feed_sheet_sha256": "2C6173141FBFD3CC976059A47E223E3C7BAF3ABF0B9D1D999DE52EC6486072AE"
+  },
+  "side_effects": {
+    "overwrites": 0,
+    "manifest_updated": false,
+    "published": false,
+    "uploaded": false
+  },
+  "next_decision": "Authorize deterministic local color grading of gate02, revise the numeric bands, or provide a new generation specification before continuing the remaining 32 images."
+}

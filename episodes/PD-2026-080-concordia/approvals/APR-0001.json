@@ -1,0 +1,19 @@
+{
+ "schema_version": "1.0.0",
+ "approval_id": "APR-0001",
+ "episode_id": "PD-2026-080-concordia",
+ "target_type": "edit",
+ "target_id": "concordia_final_bgm.v001.mp4",
+ "target_revision": "v001",
+ "decision": "approved_with_deviations",
+ "requested_at": "2026-08-30T18:30:00+09:00",
+ "requested_by": "local-claude-code",
+ "decided_at": "2026-08-30T19:05:00+09:00",
+ "decided_by": "owner",
+ "bound_to_sha256": "f0add8ed7bfa680d3dfab6c77d87dcd982a78dc5ce0653ccc60d59c718afe1cf",
+ "accepted_deviations": [
+  "cruise_line_funnel_livery",
+  "shipped_frames_craft_findings"
+ ],
+ "notes": "Two owner rulings, both given in chat on 2026-08-30 after the full shipped-frames read (51/51 sheets, 21 findings) was put in front of the owner.\n\nRULING 1 -- the funnel. Thirteen cuts show a cruise-line funnel marking and ten of those are the operator's yellow, four capped dark blue with a blue 'C'. The owner was told plainly that this episode's own episode_spec forbidden_subjects does NOT name the funnel or the livery -- it names the capsized, listing, heeled and wrecked ship, none of which appears anywhere in 51 sheets -- and that no machine verdict was available because check_final_acceptance had not run. The owner chose to SHIP WITHOUT CHANGING IT, taking the fastest route back to a dated slot. The thirteen cuts are listed in full in the shipped-frames review under recorded_deviations and are NOT deleted from the record.\n\nRULING 2 -- the standard for craft findings. Asked whether a distasteful juxtaposition (the example given was EP72 lacmegantic's '47 People killed' card laid over a full-frame close-up of burning logs) should stop a ship, the owner ruled: DO NOT STOP, RECORD ONLY. The four blocking classes in config/ship_policy.v001.json stand unchanged as the only grounds for refusal. This ruling is general, not specific to this episode.\n\nApplying both: this episode has NO finding in any of the four blocking classes. There is no held identifiable face anywhere in it -- every crowd, officer and passenger is shot from behind, checked at zoom -- and the only third-party marks are the funnel markings covered by ruling 1. The remaining findings are craft and are covered by ruling 2. Verified separately before booking: the AI disclosure required by invariant 11 IS present in the YouTube description ('This film contains AI-assisted visualization: symbolic reconstruction, no real likenesses. Generated imagery is not evidence...'), so the end card's missing AI line is cosmetic and not a compliance gap. Also verified: the compbars figure reading 'KNOWN ON BOARD, MIN 37' is CORRECT and matches script.en.v001.md:261 'Known on board for thirty-seven minutes.' -- a reader had flagged it as a possible contradiction and it is not one.\n\nRe-approval required if the render revision or its sha changes (rules/12)."
+}

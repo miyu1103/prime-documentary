@@ -1,0 +1,62 @@
+{
+  "slug": "overpayment",
+  "working_title": "Social Security Paid Her by Mistake for Years. Then It Wanted $60,175.90 Back.",
+  "one_line": "The Social Security Administration overpays millions of people because of its own errors, then demands every dollar back years later -- and until 2024 its default was to withhold the entire monthly cheque until the debt was cleared.",
+  "contradiction": "She did nothing wrong, the government made the mistake, the government kept paying her anyway -- and the government's remedy was to take her whole income until a five-figure debt she never incurred was repaid.",
+  "series_id": "S35",
+  "scored_by": "claude, 2026-08-12, v002 rubric, for the 45-minute slot",
+  "scores": {
+    "personal_relevance": 15,
+    "wtf_factor": 13,
+    "human_stakes": 12,
+    "contradiction": 15,
+    "story_arc": 7,
+    "title_power": 9,
+    "thumbnail_power": 9,
+    "evidence": 8,
+    "broad_audience": 9,
+    "franchiseability": 5,
+    "evergreen": 4
+  },
+  "bonuses": [
+    "specific_money_amount",
+    "recognizable_institution",
+    "major_reversal"
+  ],
+  "justification": {
+    "personal_relevance": "Seventy-seven per cent of this channel's measured audience is 55 or older. Social Security is not a system they might one day meet; it is the system that pays them this month. Maximum, and it is the highest-relevance premise on the slate for THIS audience.",
+    "wtf_factor": "'The government's own error, and it takes your entire cheque' is a real 'that is allowed?'. Held under 15 because most viewers half-suspect it already; it confirms a fear rather than inverting an expectation.",
+    "human_stakes": "Income, housing and independence for people with no capacity to earn it back. Below the 43-years and lost-home tier, above two nights in a car. 12.",
+    "contradiction": "Paid yet still owing -- one of the four canonical contradictions named in the rubric itself. Maximum.",
+    "story_arc": "The weakest axis and the reason this is not ranked first. No single named person with a documented beginning-to-end arc has been retrieved: Justina Worrell is one figure and one letter, and her aunt speaks for her. Without a protagonist followed end to end this is 7, and 7 is exactly what sank EP70.",
+    "title_power": "The figure is the title. $60,175.90 is the kind of number the rubric's own example ($86,900) is built on. 9.",
+    "thumbnail_power": "One government letter, one number. That is the v002 evidence-thumbnail direction exactly. 9.",
+    "evidence": "Strong journalism (KFF Health News / Cox Media Group, internal SSA documents obtained, congressional testimony) but no court record and no docket. Documentary evidence rather than adjudicated evidence. 8.",
+    "broad_audience": "Everyone has a parent on Social Security even if they are not on it. 9.",
+    "franchiseability": "VA overpayments, Medicaid clawbacks, state unemployment clawbacks, student-aid recovery -- the same shape repeats across agencies. 5.",
+    "evergreen": "The policy moved in 2024 and moved back in 2025. Current, which buys attention now and dates the film later. 4.",
+    "specific_money_amount": "$60,175.90 demanded from Justina Worrell (KFF Health News, Overpayment Outrage series).",
+    "recognizable_institution": "The Social Security Administration.",
+    "major_reversal": "In March 2024 the agency stopped withholding 100% of monthly cheques and defaulted to 10%; under the following administration full withholding resumed."
+  },
+  "scored": {
+    "raw": 106,
+    "total": 103,
+    "bonuses_awarded": [
+      "specific_money_amount",
+      "recognizable_institution",
+      "major_reversal"
+    ],
+    "verdict": "PRIORITY",
+    "problems": [],
+    "rubric": "config/pd_planning_os.v002.json",
+    "gate": {
+      "flagship": 110,
+      "priority": 100,
+      "production": 90,
+      "reserve": 80,
+      "reject": 79
+    },
+    "at": "2026-08-11T15:59:37.956501+00:00"
+  }
+}

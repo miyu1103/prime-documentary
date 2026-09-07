@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-034-rolin",
+  "revision": "v001",
+  "canonical_final": {
+    "final_video": "remotion/out/PD-2026-034-rolin_film.muxed.v003.mp4",
+    "video_sha256": "sha256:49fff2559d4960bd5109e4c2226e6498bffe9af8b7b61766af0c18effef2a277",
+    "runtime_seconds": "1149.91",
+    "resolution": "1920x1080"
+  },
+  "acceptance": "09_package/acceptance_receipt.v003.json (status=FAIL; 35/36 hard-PASS)",
+  "owner_deviation_required": {
+    "check": "runtime_band",
+    "detail": "finished runtime 1149.9s (19.16min) is ~20s under the episode's own design band 1170-1230s (19.5-20.5min, recorded in 04_scenes/remotion_plan.v001.json per the script's stated ship band). Narration is fixed at 18.8min; silent padding is forbidden. This is the SINGLE owner-approvable ship-gate deviation (same class as EP35 APR-0002).",
+    "status": "PENDING_OWNER_APPROVAL"
+  },
+  "notes": "Core-quality PASS. All previously-failing gates fixed: images_present (tail fill), image_cut_luma (14 imgs + burdenflip hero brightened), footage_utilization (orphan removed), animation_density (heroCut Ken-Burns). NOT scheduled/uploaded — owner GO required."
+}

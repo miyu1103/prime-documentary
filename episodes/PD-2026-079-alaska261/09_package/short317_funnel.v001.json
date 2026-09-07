@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 317,
+  "episode_id": "PD-2026-079-alaska261",
+  "slug": "alaska261",
+  "loop": true,
+  "loop_join": "The final beat p14 (short317_14.png, a rack of hand tools on a hangar wall) carries isCta/rewind and is rewound under the FULL CASE card, holding on its last frame before the loop returns to frame 0 -- the technical manual open under a bright lamp of p01 -- so the tools of the trade hand back to the paperwork that named the remedy sixteen years early.",
+  "second_watch_detail": "The open tub of aviation grease on the hangar bench (p08) reads as routine maintenance stock on the first pass. Once L5 lands 'Dry. In 1984.', the same tub reads as the exact substance the manufacturer's own letter said was missing, sixteen years before the accident.",
+  "funnel_question_left_for_longform": "If the warning was circulated in 1984, what happened to the interval that was supposed to act on it?",
+  "funnel_long_title": "Alaska Flight 261 Flew on One Jackscrew",
+  "funnel_long_video_id": "0a_MnQuJF3s",
+  "description_line_1": "▶ FULL CASE: Alaska Flight 261 Flew on One Jackscrew | https://youtu.be/0a_MnQuJF3s",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "It Was Measured Once.",
+    "ctaLongThumbSrc": "shorts/short317/short317_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If the warning was circulated in 1984, what happened to the interval that was supposed to act on it? The full case is here: https://youtu.be/0a_MnQuJF3s",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments and beat list in remotion/src/data/short317.ts, the CTA block (ctaHeadline/ctaLongTitle/ctaLongThumbSrc) from that same file, and the standing question from the file's own 'LEAVES FOR THE LONG-FORM' header. The long-form id 0a_MnQuJF3s is the video just uploaded and scheduled -- it is currently a PRIVATE upload with publishAt 2026-09-08, not yet public, which satisfies the gate's requirement that the long-form exist as at least a private upload before its short can be scheduled. Layer 4, the Studio related-video setting, cannot be performed until this short itself is uploaded; it has a placeholder row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md."
+}

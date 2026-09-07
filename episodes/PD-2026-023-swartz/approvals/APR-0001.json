@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-023-swartz",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "pending",
+  "requested_at": "2026-06-30T12:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": null,
+  "decided_by": null,
+  "notes": "Owner gate: final-script/content approval for EP23 (Aaron Swartz, 'The Internet's Own Boy'). PENDING. Bound to annotated content_hash sha256:4720227d4e2e9068d6251a210e9095c44b6cbbad87488fb68d09cb8eaee57b08 — re-approval required if the script revision/hash changes (rules/12). R3 + SENSITIVE: this content sign-off, once given, does NOT waive the required pre-publish dedicated legal/rights + safe-handling review.",
+  "conditions": [
+    "SAFE-HANDLING (binding through production): death stated ONCE with the locked wording; NO method/location/note/scene/reenactment; never 'committed suicide'; NO single-cause narrative (causation attributed to the family statement only); 988 Suicide & Crisis Lifeline on-screen and in description; CTA quiet/respectful; no real-person likeness.",
+    "THE 35 YEARS shown only as the theoretical stacked statutory maximum, always paired with the ~6-month plea signal (Peters) and the scholarly critique (Kerr).",
+    "Maintain wording locks (RSS co-authored not invented; Markdown key collaborator not co-created; CC technical layer not founded; Reddit co-owner via merger, co-founder disputed; charged not convicted; JSTOR settled civilly + did not want charges; MIT neutral; Ortiz quote attributed; Aaron's Law never passed).",
+    "Compute durable source content_hash (sources currently sha256:pending) and finish fact_recheck before publish.",
+    "Dedicated R3 legal/rights + safe-handling review (exact revision/hash) required before publish_approved."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-023-swartz/03_script/script.annotated.v001.json"
+}

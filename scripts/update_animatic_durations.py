@@ -7,7 +7,7 @@ from __future__ import annotations
 import pathlib, re, subprocess
 
 FFPROBE  = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"
-SLOW_DIR = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\slow_v001")
+SLOW_DIR = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_voice\slow_v001")
 TS_FILE  = pathlib.Path(__file__).resolve().parents[1] / "remotion/src/data/miranda_animatic.ts"
 
 def probe(p: pathlib.Path) -> float:

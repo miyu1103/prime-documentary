@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "PD-2026-006-terry-S004-IMG-001",
+  "episode_id": "PD-2026-006-terry",
+  "scene_id": "S004",
+  "shot_id": "S004-SH001",
+  "asset_type": "image",
+  "revision": "v001",
+  "status": "approved",
+  "uri": "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S004/PD-2026-006-terry-S004-IMG-001.v001.png",
+  "checksum": "sha256:32c3de3944da2cdf1eaaef4b4d513b775c584e760173855cf45d307d5ab3e8b7",
+  "mime_type": "image/png",
+  "size_bytes": 1521034,
+  "provenance": {
+    "created_by": "codex",
+    "provider": "local-a1111-sdxl",
+    "provider_request_id": null,
+    "model_profile": "juggernautXL_ragnarokBy.safetensors [dd08fa32f9]",
+    "prompt_ref": "episodes/PD-2026-006-terry/04_scenes/codex_image_prompts.v001.md#COD-S004-store-window-anonymous-wide",
+    "seed": 608682,
+    "input_hash": "sha256:542fbbf4668938e55903c46e49204c20d48ffca43b005e2a450f8993c1e6098f"
+  },
+  "rights": {
+    "status": "clear",
+    "origin": "AI-generated local SDXL symbolic reconstruction",
+    "commercial_use": "allowed",
+    "evidence_ref": "episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json#PD-2026-006-terry-S004-IMG-001",
+    "notes": "Generated locally on owner machine. No upload or paid API. Empty storefront background selected to avoid real-person likeness and hand/face failures; repeated-trip motion is added accurately in Remotion."
+  },
+  "qc": {
+    "status": "pass",
+    "score": 94,
+    "findings": [
+      "Pass: premium storefront background with strong navy/gold brand fit.",
+      "Pass: no people, no faces, no real-person likeness risk.",
+      "Pass: no readable store name or logo in selected use; any faint decorative marks remain non-readable and can be masked/cropped if needed.",
+      "Pass: clean negative space for Remotion path-counter overlay.",
+      "Caution: use only as symbolic reconstruction background; do not present as authentic 1963 footage."
+    ]
+  }
+}

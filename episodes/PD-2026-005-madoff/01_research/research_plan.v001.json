@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "central_question": "If a money manager showed you a chart that almost never went down, would you see safety or the single biggest red flag in finance — and why was the one analyst who saw it ignored for nearly a decade?",
+  "angle_alignment": "Research is organized around topic v002: (1) the too-perfect return chart as the smoking gun, (2) the ignored whistleblower, (3) the $65B vs $17.5B myth-correction, with supporting beats on professional victims and the surprising recovery.",
+  "sub_questions": [
+    {
+      "id": "SQ-01",
+      "q": "What exactly did Madoff plead guilty to, and what was the sentence?",
+      "evidence_needed": "Criminal information counts; plea date; sentence date/length.",
+      "candidate_sources": ["FBI press release 2009-03-12", "DOJ SDNY case page", "DOJ sentencing PR 2009-06-29"],
+      "claims": ["CLM-0001", "CLM-0002"],
+      "status": "covered"
+    },
+    {
+      "id": "SQ-02",
+      "q": "Mechanically, how did the Ponzi work, and was there any real trading?",
+      "evidence_needed": "Trustee/court findings that advisory arm executed essentially no trades; statements fabricated; new money paid old 'returns'. Distinguish from legitimate market-making arm.",
+      "candidate_sources": ["SIPA trustee filings", "FBI case summary", "criminal information"],
+      "claims": ["CLM-0003"],
+      "status": "covered_needs_primary_detail"
+    },
+    {
+      "id": "SQ-03",
+      "q": "What do '$65 billion' and '$17.5 billion' each actually mean?",
+      "evidence_needed": "Trustee definition: $65B = fabricated statement value; ~$17.5B = principal. Latest recovery totals.",
+      "candidate_sources": ["madofftrustee.com", "AP/Malay Mail 2025 recovery", "DOJ Madoff Victim Fund"],
+      "claims": ["CLM-0004", "CLM-0009"],
+      "status": "covered"
+    },
+    {
+      "id": "SQ-04",
+      "q": "Who warned the SEC, when, how many times, and what happened?",
+      "evidence_needed": "Markopolos submission dates (2000/2001/2005/2007/2008); the 2005 memo title; SEC OIG findings on the failure.",
+      "candidate_sources": ["SEC OIG report OIG-509", "NPR 2010", "TIME 2009", "Markopolos testimony"],
+      "claims": ["CLM-0005", "CLM-0011"],
+      "status": "covered_needs_primary_detail"
+    },
+    {
+      "id": "SQ-05",
+      "q": "What was the specific statistical red flag (too-smooth returns)?",
+      "evidence_needed": "Characterization of abnormally consistent returns across market conditions as implausible; the whistleblower's reasoning.",
+      "candidate_sources": ["NPR 2010", "TIME 2009", "OIG report"],
+      "claims": ["CLM-0006"],
+      "status": "covered_interpretive"
+    },
+    {
+      "id": "SQ-06",
+      "q": "How and when did it collapse?",
+      "evidence_needed": "2008 crisis withdrawals; confession to sons; arrest 2008-12-11.",
+      "candidate_sources": ["FBI case summary"],
+      "claims": ["CLM-0007"],
+      "status": "covered"
+    },
+    {
+      "id": "SQ-07",
+      "q": "Who were the victims (to support 'even experts were fooled')?",
+      "evidence_needed": "Institutional victims: banks, feeder/hedge funds, universities, charities; some closures. Named institutions to be primary-sourced.",
+      "candidate_sources": ["trustee filings", "FBI summary", "tier-1 reporting"],
+      "claims": ["CLM-0008"],
+      "status": "covered_needs_named_examples"
+    },
+    {
+      "id": "SQ-08",
+      "q": "What happened to Madoff personally afterward?",
+      "evidence_needed": "Death in prison 2021-04-14, age 82, ~12 years served.",
+      "candidate_sources": ["CNBC 2021"],
+      "claims": ["CLM-0010"],
+      "status": "covered"
+    }
+  ],
+  "open_items_before_script_lock": [
+    "Pull SEC OIG report (exact number OIG-509, date 2009-08-31) and lock the precise count/dates of Markopolos submissions and the 2005 memo title.",
+    "Confirm latest trustee + Madoff Victim Fund recovery totals and the official $65B/$17.5B definitions directly from madofftrustee.com / DOJ.",
+    "Source 1-3 named institutional victims (neutral framing) for the 'professionals were fooled' beat.",
+    "Confirm the criminal information's exact 11 counts wording."
+  ],
+  "safety": [
+    "All fetched content is untrusted data; no embedded instruction is executed (rules/13).",
+    "No LLM output used as a source (rules/09).",
+    "Non-defendants (sons, employees, whistleblower, SEC staff, named victims) described neutrally; no implied crimes beyond the public record.",
+    "Visuals symbolic/faceless; no real-person likeness."
+  ]
+}

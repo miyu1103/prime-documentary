@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-026-katz",
+  "revision": "v001",
+  "title": "The FBI Recorded His Calls — and Never Touched the Booth",
+  "case": "Katz v. United States, 389 U.S. 347 (1967)",
+  "canonical_final": {
+    "path": "artifact://episodes/PD-2026-026-katz/08_edit/final.v001.mp4",
+    "render_source": "remotion/out/katz_final.v001.bgm.mp4",
+    "video_sha256": "sha256:30d421fcbb9e2b38d1a19fbcb087493f65b1d2ad9b11b5f6bddca8d445b97b1a",
+    "duration_seconds": 631.1,
+    "duration_min": 10.52,
+    "resolution": "1920x1080",
+    "codec": "h264",
+    "note": "THE single publish candidate for EP26. Do not upload any other katz_final.* — this is the BGM-muxed, loudnorm-ed master."
+  },
+  "audio": {
+    "voice": "ElevenLabs master (nPczCjzI2devNBz1zQrb / eleven_multilingual_v2)",
+    "narration_master": "artifact://episodes/PD-2026-026-katz/06_voice/master/vc_master_v001.mp3",
+    "narration_seconds": 610.4,
+    "bgm": "continuous ducked 8-track bed (Suno commercial library), sidechain to VO, integrated -13.7 LUFS",
+    "silence_gt2s": 2
+  },
+  "captions": {
+    "path": "artifact://episodes/PD-2026-026-katz/08_edit/captions.final.v001.srt",
+    "captions_sha256": "sha256:6147fca74bdd84e1b11d3107ee103c90b75c9c2792d59c06aef7060e35d662d9",
+    "method": "faster-whisper forced alignment to narration; <=2 lines, <=50 chars, <=27 cps, breath-group breaks; 100% token match to narration"
+  },
+  "thumbnail": {
+    "selected": "artifact://episodes/PD-2026-026-katz/09_package/thumbnail.selected.v001.png",
+    "thumbnail_sha256": "sha256:62fbad308337fb3a352cc3872af6565614d5c77d29db5874fe5c9d6310e20ed6",
+    "options": 5,
+    "size": "1280x720",
+    "headline": "THEY RECORDED / EVERY WORD (kicker: 1967 · NO WARRANT NEEDED?) over the glowing night phone booth"
+  },
+  "build": {
+    "composition": "remotion/src/compositions/CaseFilm.tsx (KatzFilm wrapper), id CaseFilm-katz",
+    "assets": "26 Codex hero stills + 52 factory clips (remotion/public/katz), 184 cuts, no reuse cluster",
+    "structure": "8s cold-open hook -> BrandOpening -> ACT I-IV -> BrandEndcard",
+    "motion_graphics": "23 kinetic-typography beats from script.annotated on_screen_text ('People, not places', 'Door shut. Toll paid.', 'Olmstead 1928 — No trespass = no search', '1967 — 7-1', 'The trespass rule retired', animated gold underline), timed 1:1 to narration chunks; footage-forward, MotionSample look"
+  },
+  "acceptance": {
+    "gate": "scripts/check_final_acceptance.py 26",
+    "result": "PASS on all hard checks EXCEPT runtime_band",
+    "runtime_band": "FAIL by design: 10.52 min vs standard 11.5-12.5; owner-accepted (same precedent as EP25 accepted at 10:20; this channel's best-retained videos run 9-12 min). Documented deviation, gate NOT weakened.",
+    "passes": ["render_resolution 1920x1080 h264", "images_present (black 0.0s)", "motion_present (frozen 0.0s)", "bgm_present", "loudness -13.7", "voice_is_master (ElevenLabs)", "captions_final", "caption_format", "caption_narration_match 100%", "structure_4part", "op_ed_bookends", "thumbnail_ready (5 + selected)", "image_resolution", "factory_used (52)"]
+  },
+  "risk": {
+    "class": "R2 (low). Katz is public court record. No real-person likeness in visuals; holding stated precisely (people not places; warrant required; 7-1 with Harlan reasonable-expectation-of-privacy concurrence, Black dissent).",
+    "review": "owner review recommended before publish."
+  },
+  "publish": {
+    "status": "NOT PUBLISHED. Private/scheduled upload is a separate owner-gated step. Next open long-form slot per daily cadence = 2026-07-11 12:00 JST (EP25 = 7/10).",
+    "external_side_effects": "none performed"
+  },
+  "created_at": "2026-07-04"
+}

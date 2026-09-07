@@ -1,0 +1,221 @@
+[
+  {
+    "id": "concordia_ae001",
+    "beat": "AE001",
+    "act": "HOOK",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "SIXTY-NINE MINUTES",
+    "style": "number",
+    "big": "69",
+    "bigSize": 340,
+    "label": "FROM THE ROCK TO THE ORDER TO LEAVE",
+    "value": 69,
+    "suffix": " MINUTES",
+    "source": "FACTS_LEDGER rows CC-012 and CC-021",
+    "forbid": "CORRECTED 2026-08-25: the spec first said SEVENTY-FIVE, but CC-021 records the abandon-ship order 69 minutes after contact. 75 belongs to the crisis committee (CC-715) only."
+  },
+  {
+    "id": "concordia_ae002",
+    "beat": "AE002",
+    "act": "HOOK",
+    "kind": "hero_number",
+    "seconds": 6,
+    "headline": "41 SECONDS",
+    "style": "number",
+    "big": "41",
+    "bigSize": 340,
+    "label": "THE EMERGENCY GENERATOR RAN — THEN COULD NOT HOLD",
+    "value": 41,
+    "suffix": " SECONDS",
+    "source": "FACTS_LEDGER row CC-014"
+  },
+  {
+    "id": "concordia_ae003",
+    "beat": "AE003",
+    "act": "OP",
+    "kind": "title_card",
+    "seconds": 6,
+    "headline": "13 JANUARY 2012",
+    "style": "number",
+    "big": "13 JANUARY 2012",
+    "bigSize": 170,
+    "source": "FACTS_LEDGER row CC-001"
+  },
+  {
+    "id": "concordia_ae004",
+    "beat": "AE004",
+    "act": "ACT_1",
+    "kind": "map_move",
+    "seconds": 12,
+    "headline": "HALF A MILE INSIDE THE LINE",
+    "value": 0.5,
+    "suffix": " MILES",
+    "lines": [
+      {"t": "0.5 MILES SOUTH-WEST OF THE PLANNED ROUTE", "cite": "CC-011"},
+      {"t": "0.3 MILES FROM LE SCOLE, MAKING 16 KNOTS", "cite": "CC-011"}
+    ],
+    "source": "FACTS_LEDGER row CC-011"
+  },
+  {
+    "id": "concordia_ae005",
+    "beat": "AE005",
+    "act": "ACT_1",
+    "kind": "timeline",
+    "seconds": 11,
+    "headline": "21:45:07 / 21:45:58 / 21:46:05",
+    "lines": [
+      {"t": "21:45:07 — THE HULL STRIKES THE ROCK", "cite": "CC-012"},
+      {"t": "21:45:58 — BLACK OUT. RUDDER AND BILGE PUMPS LOSE POWER", "cite": "CC-013"},
+      {"t": "21:46:05 — THE EMERGENCY GENERATOR STARTS. IT RUNS 41 SECONDS", "cite": "CC-014"}
+    ],
+    "source": "FACTS_LEDGER rows CC-012, CC-013, CC-014"
+  },
+  {
+    "id": "concordia_ae006",
+    "beat": "AE006",
+    "act": "ACT_2",
+    "kind": "comparison",
+    "seconds": 9,
+    "headline": "1,270 OF 3,206",
+    "value_a": 1270,
+    "value_b": 3206,
+    "lines": [
+      {"t": "HAD ATTENDED A MUSTER: 1,270 — THOSE WHO BOARDED AT SAVONA", "cite": "CC-004"},
+      {"t": "THE REST: SAFETY INSTRUCTIONS BY VIDEO", "cite": "CC-004"}
+    ],
+    "source": "FACTS_LEDGER row CC-004"
+  },
+  {
+    "id": "concordia_ae007",
+    "beat": "AE007",
+    "act": "ACT_2",
+    "kind": "system_map",
+    "seconds": 11,
+    "headline": "WHAT A MUSTER IS FOR",
+    "lines": [
+      {"t": "EVERY PASSENGER, A STATION, PRACTISED IN ADVANCE", "cite": "CC-004"},
+      {"t": "\"CHAOS AND CONFUSION... NOBODY BY THE BRIDGE COORDINATED THE EMERGENCY\"", "cite": "CC-106"}
+    ],
+    "source": "FACTS_LEDGER rows CC-004 and CC-106",
+    "forbid": "The chaos line is the investigators' own sentence (CC-106) -- quote, never paraphrase into an accusation of a named person."
+  },
+  {
+    "id": "concordia_ae008",
+    "beat": "AE008",
+    "act": "ACT_3",
+    "kind": "timeline",
+    "seconds": 14,
+    "headline": "22:14 / 22:36:34 / 22:54:10",
+    "lines": [
+      {"t": "22:14 — LIVORNO FINDS THE SHIP ON AIS. 'A BLACK OUT.' NO REQUEST FOR HELP", "cite": "CC-017"},
+      {"t": "22:36:34 — PRESSED BY LIVORNO, THE BRIDGE DECLARES DISTRESS", "cite": "CC-019"},
+      {"t": "22:54:10 — ABANDON SHIP", "cite": "CC-021"}
+    ],
+    "source": "FACTS_LEDGER rows CC-017, CC-019, CC-021"
+  },
+  {
+    "id": "concordia_ae009",
+    "beat": "AE009",
+    "act": "ACT_3",
+    "kind": "quote_card",
+    "seconds": 8,
+    "headline": "NOT PRECEDED BY AN EFFECTIVE ALARM",
+    "quote": "It was not preceded by an effective general emergency alarm.",
+    "attribution": "MARINE CASUALTIES INVESTIGATIVE BODY",
+    "source": "FACTS_LEDGER row CC-022",
+    "forbid": "The investigators' finding about the abandon-ship order. R3: a safety investigation is not a trial -- no criminal outcome appears on any card in this episode."
+  },
+  {
+    "id": "concordia_ae010",
+    "beat": "AE010",
+    "act": "ACT_3",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "3,206 / 3,208 / 3,216",
+    "style": "punch",
+    "words": ["3,206", "3,208", "3,216"],
+    "bigSize": 150,
+    "lines": [
+      {"t": "THE TRUE COUNT: 3,206", "cite": "CC-020"},
+      {"t": "TOLD TO LIVORNO: 3,208", "cite": "CC-020"},
+      {"t": "GIVEN ON DEPARTURE: 3,216", "cite": "CC-020"}
+    ],
+    "source": "FACTS_LEDGER row CC-020",
+    "forbid": "Three counts of the same people, none agreeing -- the card presents the disagreement, it does not resolve it."
+  },
+  {
+    "id": "concordia_ae011",
+    "beat": "AE011",
+    "act": "ACT_4",
+    "kind": "comparison",
+    "seconds": 10,
+    "headline": "13° / 30° / 40° / 80°",
+    "lines": [
+      {"t": "THE MODEL: PASSENGERS BEGIN LEAVING AT 13° OF HEEL", "cite": "CC-203"},
+      {"t": "THE MODEL: AT 30°, ALL OF THEM COULD HAVE REACHED SAFETY", "cite": "CC-204"},
+      {"t": "THE NIGHT: 40° BY MIDNIGHT — 80° DURING THE RESCUE", "cite": "CC-025"}
+    ],
+    "source": "FACTS_LEDGER rows CC-203, CC-204, CC-025",
+    "forbid": "The floor angle is the episode MOTIF (script header) -- state angles, never explain the symbol."
+  },
+  {
+    "id": "concordia_ae012",
+    "beat": "AE012",
+    "act": "ACT_4",
+    "kind": "list_build",
+    "seconds": 13,
+    "headline": "WHAT THE BODY MODELLED",
+    "lines": [
+      {"t": "GENERAL EMERGENCY GIVEN AT 22:39 — THE SECOND GROUNDING", "cite": "CC-201"},
+      {"t": "ABANDON SHIP 36 MINUTES LATER", "cite": "CC-202"},
+      {"t": "PASSENGERS LEAVING AT 13° OF HEEL", "cite": "CC-203"},
+      {"t": "BY 23:12, AT 30° — EVERYONE REACHES SAFETY", "cite": "CC-204"}
+    ],
+    "source": "FACTS_LEDGER rows CC-201 to CC-204",
+    "forbid": "This is the investigators' OWN model (CC-201..204), not this film's counterfactual. Every card in the build keeps the 'modelled' framing."
+  },
+  {
+    "id": "concordia_ae013",
+    "beat": "AE013",
+    "act": "ACT_4",
+    "kind": "hero_number",
+    "seconds": 7,
+    "headline": "ALL OF THEM",
+    "style": "punch",
+    "words": ["ALL OF THEM"],
+    "bigSize": 200,
+    "label": "THE BODY'S MODEL — FROM THE POSITION WHERE 32 DIED",
+    "source": "FACTS_LEDGER row CC-204",
+    "forbid": "Modelled, not what happened. The attribution stays on the card."
+  },
+  {
+    "id": "concordia_ae014",
+    "beat": "AE014",
+    "act": "ENDING",
+    "kind": "hero_number",
+    "seconds": 7,
+    "headline": "THIRTY-TWO",
+    "style": "number",
+    "big": "32",
+    "bigSize": 340,
+    "label": "THIRTY FOUND. TWO NEVER FOUND.",
+    "value": 32,
+    "source": "FACTS_LEDGER row CC-301",
+    "forbid": "Held plain. No music swell direction on this card."
+  },
+  {
+    "id": "concordia_ae015",
+    "beat": "AE015",
+    "act": "ENDING",
+    "kind": "timeline",
+    "seconds": 9,
+    "headline": "WHAT IS STILL OPEN",
+    "lines": [
+      {"t": "THE COURT RECORD — NOT AMONG THIS FILM'S SOURCES", "cite": "ledger S3, Open items"},
+      {"t": "THE CHANGES TO SOLAS SINCE THAT NIGHT — NOT YET READ", "cite": "Open items"}
+    ],
+    "source": "FACTS_LEDGER open items",
+    "forbid": "R3: the master is alive and was convicted, and the court record is unobtained -- NO criminal outcome appears on this or any card. The card says what the film's sources do not cover, nothing more."
+  }
+]

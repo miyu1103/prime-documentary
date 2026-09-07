@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-015-theranos",
+  "revision": "v002",
+  "created_at": "2026-06-26T19:30:16.158737+00:00",
+  "status": "drafts_only_not_approved",
+  "important": "These are approval drafts only. They do not authorize upload, schedule, public release, paid API use, or publication.",
+  "external_side_effects": {
+    "paid_api": false,
+    "upload": false,
+    "publish": false,
+    "schedule": false
+  },
+  "drafts": [
+    {
+      "draft_id": "APR-0002-DRAFT",
+      "gate": "final_review_video",
+      "decision": "pending_owner_decision",
+      "target_revision": "v002",
+      "video": "H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v001.mp4",
+      "video_sha256": "sha256:61166f21665e0c0f4d7dd00582278f9613de27736ec8efb9619e9a494c18d418",
+      "owner_review_request": "episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v002.json",
+      "owner_review_request_sha256": "sha256:5206dcf0f070f58e656057dd43e3091580fad60b395d2d31fd617687e6638f9b"
+    },
+    {
+      "draft_id": "APR-0003-DRAFT",
+      "gate": "title_thumbnail",
+      "decision": "pending_owner_decision",
+      "target_revision": "v002",
+      "title": "When Does a Bold Promise Become a Crime? The Rise and Fall of Theranos",
+      "thumbnail": "episodes/PD-2026-015-theranos/09_package/thumbnail.selected.v001.png",
+      "thumbnail_sha256": "sha256:f0d14264ffaf47aaa601ce7ad7eff5106dc828e30a3da8da17c31c3eca603963",
+      "youtube_meta": "episodes/PD-2026-015-theranos/09_package/youtube_meta.v002.json",
+      "youtube_meta_sha256": "sha256:7956202864e852374bfb99cc366bb61e74b3f99b493022695fc7708f1194ce42"
+    },
+    {
+      "draft_id": "APR-0004-DRAFT",
+      "gate": "final_narration_release",
+      "decision": "pending_owner_decision",
+      "target_revision": "v002",
+      "narration_index": "episodes/PD-2026-015-theranos/06_audio/narration_index.v001.json",
+      "audio_mix": "episodes/PD-2026-015-theranos/06_audio/audio_mix.v001.json",
+      "provider": "ElevenLabs"
+    },
+    {
+      "draft_id": "APR-0005-DRAFT",
+      "gate": "legal_rights",
+      "decision": "pending_owner_or_legal_decision",
+      "target_revision": "v002",
+      "legal_rights_review_packet": "episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v002.json",
+      "legal_rights_review_packet_sha256": "sha256:70d82f01f0f6c1f292dc30f06f8a2d5c42aab5c62a90983a88c8435b430ec33a",
+      "rights_manifest": "episodes/PD-2026-015-theranos/09_package/rights_manifest.v002.json",
+      "rights_manifest_sha256": "sha256:a5365d98f8c60538a85b381fc60b9fe4e07d1a5075237cf7de9430a3811d343a"
+    },
+    {
+      "draft_id": "APR-0006-DRAFT",
+      "gate": "publish_schedule",
+      "decision": "pending_owner_decision",
+      "target_revision": "v002",
+      "video": "H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v001.mp4",
+      "video_sha256": "sha256:61166f21665e0c0f4d7dd00582278f9613de27736ec8efb9619e9a494c18d418",
+      "final_delivery": "episodes/PD-2026-015-theranos/09_package/final_delivery.v002.json",
+      "final_delivery_sha256": "sha256:553b748fb85c170c9a678bfbaecef79abf9656bcd19c5bd5db6cdc2002fd8c7d",
+      "youtube_meta": "episodes/PD-2026-015-theranos/09_package/youtube_meta.v002.json",
+      "youtube_meta_sha256": "sha256:7956202864e852374bfb99cc366bb61e74b3f99b493022695fc7708f1194ce42",
+      "rights_manifest": "episodes/PD-2026-015-theranos/09_package/rights_manifest.v002.json",
+      "rights_manifest_sha256": "sha256:a5365d98f8c60538a85b381fc60b9fe4e07d1a5075237cf7de9430a3811d343a"
+    }
+  ]
+}

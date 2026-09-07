@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 11/24（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S081.png
+   [S081]  flags: 
+   A single interior doorway seen from a dark room, brightly lit from the far side, the opening a hard white rectangle
+
+2) S082.png
+   [S082]  flags: 
+   A vestibule seen from inside the main room, brilliantly lit, the outer doors beyond standing open to the night
+
+3) S083.png
+   [S083]  flags: 
+   Close-up of a door push bar, worn steel, a bright lamp raking hard along it
+
+4) S084.png
+   [S084]  flags: 
+   A window frame in a bar room seen from inside in bright daylight, the glass intact, a table beneath it
+
+5) S085.png
+   [S085]  flags: 
+   An empty window frame with the glass gone, seen from outside in flat daylight, the room dark beyond
+
+6) S086.png
+   [S086]  flags: 
+   Broken safety glass scattered on a floor beneath a window, close-up, brilliant daylight raking across the fragments
+
+7) S087.png
+   [S087]  flags: 
+   A wooden chair lying on its side beneath a window in an empty room, bright daylight through the opening
+
+8) S088.png
+   [S088]  flags: 
+   A sun room with windows on three sides seen from inside at night, a bright floodlight outside blazing in through the glass, the room itself dark

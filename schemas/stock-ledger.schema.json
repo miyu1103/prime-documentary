@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/stock-ledger.schema.json",
+  "title": "PD Stock/Asset Rights Ledger",
+  "description": "Per-episode rights ledger for sourced media (free stock, AI, archival). The same item shape is reused for the full ledger, the usable subset, and the review queue. Each item carries source/author/license/commercial-use/date/hash so usage is auditable; the rights gate (build_usable_assets.py) fills 'gate'.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "episode_id", "revision", "kind", "assets"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "episode_id": {"type": "string", "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"},
+    "revision": {"type": "string", "pattern": "^v[0-9]{3}$"},
+    "kind": {"enum": ["ledger", "usable", "review"]},
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["asset_id", "asset_type", "source", "source_url", "license", "commercial_use", "file"],
+        "properties": {
+          "asset_id": {"type": "string", "minLength": 3},
+          "asset_type": {"enum": ["video", "image", "audio"]},
+          "source": {"enum": ["pexels", "pixabay", "mixkit", "wikimedia", "nasa", "youtube_audio_library", "cc0", "public_domain", "ai_codex", "ai_sdxl", "local", "other"]},
+          "source_url": {"type": "string"},
+          "author": {"type": ["string", "null"]},
+          "license": {"type": "string"},
+          "commercial_use": {"enum": ["allowed", "restricted", "not_allowed", "unknown"]},
+          "file": {"type": "string"},
+          "sha256": {"type": ["string", "null"]},
+          "bytes": {"type": ["integer", "null"], "minimum": 0},
+          "query": {"type": ["string", "null"]},
+          "depicts": {"type": ["string", "null"]},
+          "fetched_at": {"type": ["string", "null"]},
+          "used_in_spans": {"type": "array", "items": {"type": "string", "pattern": "^SPN-[0-9]{4}$"}},
+          "gate": {"enum": ["usable", "review", "blocked"]},
+          "gate_reason": {"type": "string"}
+        }
+      }
+    }
+  }
+}

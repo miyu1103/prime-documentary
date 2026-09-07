@@ -1,0 +1,478 @@
+{
+  "measured": "2026-08-12",
+  "method": "EP68_pinto_register_inventory.v001.md method; pool=26101 distinct playable video; word-boundary re.I over provider title",
+  "sizing": {
+    "cuts_45min": 400,
+    "distinct_45min": 327,
+    "narrow_cuts": 160,
+    "narrow_distinct": 131
+  },
+  "union": {
+    "A_martin_wronghouse": {
+      "buckets": {
+        "front door / suburban house": [
+          524,
+          30
+        ],
+        "police / swat / tactical": [
+          221,
+          22
+        ],
+        "night street / dark residential": [
+          1343,
+          9
+        ],
+        "courtroom / judge / trial": [
+          90,
+          43
+        ],
+        "documents / filings": [
+          372,
+          4
+        ],
+        "family interior / children": [
+          258,
+          9
+        ],
+        "gps / phone / map screen": [
+          618,
+          10
+        ],
+        "washington / federal buildings": [
+          167,
+          12
+        ]
+      },
+      "union": 3398,
+      "util_400": 0.1177,
+      "util_327": 0.0962
+    },
+    "B_midas_algorithm": {
+      "buckets": {
+        "office / cubicle / clerk": [
+          570,
+          9
+        ],
+        "computer / server / data": [
+          1068,
+          3
+        ],
+        "mail / letters / notices": [
+          93,
+          1
+        ],
+        "money / paycheck / bank": [
+          786,
+          8
+        ],
+        "courtroom / judge": [
+          90,
+          43
+        ],
+        "unemployment / factory worker": [
+          365,
+          3
+        ],
+        "home / kitchen table": [
+          647,
+          29
+        ],
+        "state capitol / michigan / civic": [
+          51,
+          6
+        ]
+      },
+      "union": 3221,
+      "util_400": 0.1242,
+      "util_327": 0.1015
+    },
+    "C_torres_burnpits": {
+      "buckets": {
+        "military / deployment / iraq": [
+          347,
+          112
+        ],
+        "fire / smoke / burning pit": [
+          648,
+          26
+        ],
+        "hospital / breathing / oxygen": [
+          191,
+          11
+        ],
+        "police cruiser / trooper / texas": [
+          81,
+          9
+        ],
+        "courtroom / supreme court": [
+          90,
+          43
+        ],
+        "documents / claim forms": [
+          365,
+          4
+        ],
+        "home / family / porch": [
+          388,
+          33
+        ],
+        "flag / capitol / congress": [
+          143,
+          12
+        ]
+      },
+      "union": 2164,
+      "util_400": 0.1848,
+      "util_327": 0.1511
+    },
+    "D_serrano_forfeiture": {
+      "buckets": {
+        "border crossing / port of entry": [
+          167,
+          3
+        ],
+        "pickup truck / vehicle": [
+          1025,
+          3
+        ],
+        "impound lot / fence / storage": [
+          285,
+          4
+        ],
+        "cash / money / bank": [
+          763,
+          8
+        ],
+        "courtroom / judge": [
+          90,
+          43
+        ],
+        "highway / rural kentucky": [
+          1238,
+          15
+        ],
+        "documents / seizure notice": [
+          232,
+          3
+        ],
+        "guns / ammunition / permit": [
+          49,
+          11
+        ]
+      },
+      "union": 3222,
+      "util_400": 0.1241,
+      "util_327": 0.1015
+    },
+    "E_strickland_exoneration": {
+      "buckets": {
+        "prison / cell / bars": [
+          178,
+          62
+        ],
+        "courtroom / judge / trial": [
+          94,
+          47
+        ],
+        "PERIOD 1970s kansas city": [
+          18,
+          11
+        ],
+        "police / detective / lineup": [
+          429,
+          10
+        ],
+        "documents / case file": [
+          312,
+          6
+        ],
+        "release / freedom / gate": [
+          806,
+          4
+        ],
+        "family / home / aging": [
+          380,
+          29
+        ],
+        "money / compensation / capitol": [
+          611,
+          9
+        ]
+      },
+      "union": 2768,
+      "util_400": 0.1445,
+      "util_327": 0.1181
+    },
+    "F_detroit_facerecognition": {
+      "buckets": {
+        "city street / detroit / retail": [
+          2119,
+          217
+        ],
+        "cctv / surveillance camera": [
+          651,
+          9
+        ],
+        "face / biometric / scanning": [
+          148,
+          2
+        ],
+        "police / arrest / precinct": [
+          495,
+          18
+        ],
+        "computer / algorithm / database": [
+          1065,
+          3
+        ],
+        "courtroom / lawsuit": [
+          90,
+          43
+        ],
+        "family / driveway / daughters": [
+          396,
+          33
+        ],
+        "documents / warrant / photo": [
+          345,
+          8
+        ]
+      },
+      "union": 4989,
+      "util_400": 0.0802,
+      "util_327": 0.0655
+    },
+    "G_ssa_overpayment": {
+      "buckets": {
+        "mailbox / letter / notice": [
+          138,
+          1
+        ],
+        "elderly person at home": [
+          84,
+          1
+        ],
+        "government office / counter": [
+          291,
+          3
+        ],
+        "money / bank / check": [
+          792,
+          12
+        ],
+        "kitchen table / paperwork": [
+          917,
+          30
+        ],
+        "computer / database / records": [
+          1089,
+          5
+        ],
+        "capitol / congress / hearing": [
+          150,
+          12
+        ],
+        "grocery / pharmacy / daily life": [
+          352,
+          0
+        ]
+      },
+      "union": 3441,
+      "util_400": 0.1162,
+      "util_327": 0.095
+    },
+    "H_pge_campfire": {
+      "buckets": {
+        "wildfire / flames / smoke": [
+          632,
+          23
+        ],
+        "burned town / ruins / debris": [
+          178,
+          13
+        ],
+        "power lines / utility / grid": [
+          103,
+          0
+        ],
+        "evacuation / emergency": [
+          1327,
+          25
+        ],
+        "trailer / rebuild / construction": [
+          121,
+          10
+        ],
+        "courtroom / bankruptcy / corporate": [
+          311,
+          43
+        ],
+        "forest / california landscape": [
+          1220,
+          12
+        ],
+        "documents / claim forms": [
+          372,
+          4
+        ]
+      },
+      "union": 3930,
+      "util_400": 0.1018,
+      "util_327": 0.0832
+    }
+  },
+  "narrow_core": {
+    "A_martin_wronghouse": {
+      "buckets": {
+        "residential front door / doorway": [
+          139,
+          1
+        ],
+        "tactical police / raid / fbi": [
+          190,
+          18
+        ],
+        "courtroom / supreme court interior": [
+          37,
+          14
+        ]
+      },
+      "union": 366,
+      "narrow_util_160": 0.4372,
+      "narrow_util_131": 0.3579
+    },
+    "B_midas_algorithm": {
+      "buckets": {
+        "state agency office / clerk counter": [
+          43,
+          0
+        ],
+        "mainframe / server / database screen": [
+          430,
+          2
+        ],
+        "notice letter / envelope / mailbox": [
+          87,
+          1
+        ]
+      },
+      "union": 560,
+      "narrow_util_160": 0.2857,
+      "narrow_util_131": 0.2339
+    },
+    "C_torres_burnpits": {
+      "buckets": {
+        "iraq deployment / desert base": [
+          167,
+          55
+        ],
+        "open burning pit / smoke plume": [
+          499,
+          6
+        ],
+        "oxygen / lungs / respiratory care": [
+          97,
+          2
+        ]
+      },
+      "union": 758,
+      "narrow_util_160": 0.2111,
+      "narrow_util_131": 0.1728
+    },
+    "D_serrano_forfeiture": {
+      "buckets": {
+        "border port of entry / customs booth": [
+          64,
+          2
+        ],
+        "pickup truck / impound lot": [
+          107,
+          1
+        ],
+        "bullets / magazine / handgun": [
+          25,
+          3
+        ]
+      },
+      "union": 196,
+      "narrow_util_160": 0.8163,
+      "narrow_util_131": 0.6684
+    },
+    "E_strickland_exoneration": {
+      "buckets": {
+        "PERIOD 1970s american street/interior": [
+          17,
+          11
+        ],
+        "prison cell / bars / razor wire": [
+          169,
+          59
+        ],
+        "police lineup / mugshot / interrogation": [
+          11,
+          0
+        ]
+      },
+      "union": 197,
+      "narrow_util_160": 0.8122,
+      "narrow_util_131": 0.665
+    },
+    "F_detroit_facerecognition": {
+      "buckets": {
+        "cctv / security camera view": [
+          632,
+          8
+        ],
+        "face grid / biometric scan": [
+          78,
+          2
+        ],
+        "police station / booking / cell": [
+          478,
+          14
+        ]
+      },
+      "union": 1176,
+      "narrow_util_160": 0.1361,
+      "narrow_util_131": 0.1114
+    },
+    "G_ssa_overpayment": {
+      "buckets": {
+        "official letter / envelope / mailbox": [
+          87,
+          1
+        ],
+        "older person at home / caregiver": [
+          84,
+          1
+        ],
+        "government counter / federal office": [
+          287,
+          3
+        ]
+      },
+      "union": 450,
+      "narrow_util_160": 0.3556,
+      "narrow_util_131": 0.2911
+    },
+    "H_pge_campfire": {
+      "buckets": {
+        "wildfire flame front / ember storm": [
+          361,
+          20
+        ],
+        "burned-out town / foundations / ash": [
+          75,
+          8
+        ],
+        "power line / transmission tower": [
+          53,
+          0
+        ]
+      },
+      "union": 476,
+      "narrow_util_160": 0.3361,
+      "narrow_util_131": 0.2752
+    }
+  }
+}

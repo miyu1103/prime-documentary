@@ -1,0 +1,56 @@
+EP83_max737 — 画像発注 バッチ 16/24（8枚）
+区分: ACT_4 — 五か月
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, airline livery, tail marking, company colour, human face, facial features, portrait, identifiable person, wreckage, debris, fire, smoke plume, crash site, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) X121.png
+   [X121]  flags: 
+   An airport runway at first light with mountains beyond, a plain unmarked airliner holding short
+
+2) X122.png
+   [X122]  flags: P
+   An airliner cockpit at dawn from behind the seats, two crew in silhouette, faces not visible, mountains through the windscreen
+
+3) X123.png
+   [X123]  flags: P
+   A cockpit centre console with a hand moving to the guarded switches, close, dawn light through the side window
+
+4) X124.png
+   [X124]  flags: P
+   A trim wheel held still by a hand, close, the knuckles white, hard light
+
+5) X125.png
+   [X125]  flags: P
+   The same trim wheel with both hands on it, straining, the arms braced, faces out of frame, instrument panel glow lighting the frame
+
+6) X126.png
+   [X126]  flags: 
+   A dry farmland field at mid morning, empty, low crops, nothing on the ground and nothing in the sky, bright daylight
+
+7) X127.png
+   [X127]  flags: 
+   An empty aircraft parking apron with dozens of plain unmarked airliners stored wingtip to wingtip, engines covered, one hard work light in frame
+
+8) X128.png
+   [X128]  flags: 
+   Engine intake covers fitted on a stored airliner, plain fabric, hard light

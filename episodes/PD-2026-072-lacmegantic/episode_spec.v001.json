@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-072-lacmegantic",
+  "slug": "lacmegantic",
+  "runtime_seconds": [
+    1740,
+    1920
+  ],
+  "script_words": [
+    4600,
+    4800
+  ],
+  "section_vocabulary": [
+    "HOOK",
+    "OP",
+    "ACT_1",
+    "ACT_2",
+    "ACT_3",
+    "ACT_4",
+    "ACT_5",
+    "ENDING"
+  ],
+  "figure_beats_per_act": [
+    13,
+    17
+  ],
+  "distinct_video_assets": 265,
+  "people_plates_min": 20,
+  "thumbnail_candidates_min": 3,
+  "footage_review_required": true,
+  "audio_layers": 4,
+  "target_cut_sec": 3.8,
+  "era_setting": {
+    "place": "Nantes and Lac-Mégantic, Estrie, Quebec, Canada; the Sherbrooke courthouse for the 2017-2018 trial; Hermon, Maine for MMA's head office; New Town, North Dakota as the crude's origin",
+    "country": "Canada",
+    "years": [
+      2012,
+      2018
+    ],
+    "notes": "The film runs from the October 2012 non-standard engine repair on MMA 5017 to the January 2018 acquittals, and its centre of gravity is 22:50 on 05 July 2013 to 01:15 on 06 July 2013. This is a RECENT setting, so modern stock is period-correct and that is this episode's structural advantage. What is WRONG is the CONTINENT and the LANGUAGE. OUT OF PLACE, and wrong in any cut: American highway signage and US number plates; UK/EU streets, right-hand-drive traffic and EU plates; Asian or Latin American cityscapes; megacity skylines; palm trees, ocean surf and desert. Quebec is francophone: shopfronts, road signs and municipal signage in the frame must be FRENCH or unreadable, never English-only, and the town is a small lakeside mill town of about 6,000 people in low forested hills, not a city. OUT OF PERIOD: steam locomotives, pre-2000 vehicles as the ordinary traffic of 2013, CRT televisions in a 2013 interior, rotary telephones, pre-digital newsrooms. Rolling stock must read as North American freight -- black tank cars and road-switcher diesels -- never a European multiple unit, never a passenger high-speed train. Declared because EP62 greene shipped a 2011 Range Rover on an EU plate past a green pre-flight, and because a francophone town is the single easiest register error available here. footage_review_required is true and a labelled contact sheet must be opened by a person before any clip enters a cut."
+  },
+  "forbidden_subjects": [
+    "victim",
+    "corpse",
+    "body bag",
+    "funeral",
+    "coffin",
+    "mourner",
+    "crying woman",
+    "grieving family",
+    "burn victim",
+    "hospital patient",
+    "crash test",
+    "movie explosion",
+    "action movie",
+    "video game",
+    "steam locomotive",
+    "passenger train interior",
+    "high speed train",
+    "european train",
+    "subway",
+    "us flag",
+    "american highway sign",
+    "palm tree",
+    "ocean surf",
+    "desert",
+    "megacity skyline",
+    "courtroom gavel",
+    "scales of justice",
+    "handcuffs closeup",
+    "money rain",
+    "stock ticker"
+  ],
+  "forbidden_claims": [
+    "That Thomas Harding, Richard Labrie or Jean Demaitre was responsible, negligent or at fault. A jury acquitted all three of criminal negligence causing death in January 2018, and the film must state the acquittal wherever any of them is described. No narration line, caption, figure or thumbnail may carry an implication of guilt.",
+    "That a second crew member would have prevented the accident. The TSB investigation states it was not able to conclude this, and single-person operation is not among the 18 causes and contributing factors.",
+    "That single-person train operation caused the derailment. It is context, not a finding.",
+    "A single figure for the number of hand brakes required. The investigation concluded a minimum of 17 and possibly as many as 26 were needed; the seven that were applied must always be given against that range, never against one number.",
+    "Any victim's name, face, likeness or personal detail. 47 people died and the film names none of them.",
+    "That the crude oil was deliberately mislabelled. The record establishes the shipping documents described it as less volatile than it was; intent is not established.",
+    "That Transport Canada or any named official knew the train would run away.",
+    "Any figure for deaths, litres, speed, grade, distance or settlement that is not in the FACTS_LEDGER with a source."
+  ],
+  "notes": "Runtime and word band derived from PD_ONE_PASS_PRODUCTION_SPEC.v2 row 15 (mid 30:00 -> narration ~27 min -> ~4,600-4,700 words at ~173 wpm) and PD_EPISODE_SPEC_STANDARD.v001 (measured 4,673-4,750 narration words at 1,656-1,786s). Band set to 29:00-32:00 because the owner specified 30 minutes and EP62-65 shipped at 31-32. distinct_video_assets = 265 from the standard's formula runtime x 0.65 / 4.5 at the 1,830s midpoint (1,830 x 0.65 = 1,189.5; / 4.5 = 264.3 -> 265). audio_layers = 4 follows EP71 and the finisher's four-layer mix, not the standard's default of 2, which the standard itself flags as an unsettled contradiction. people_plates_min = 20 matches EP71 and the premium animation mandate. mandatory_stills is deliberately absent: no stills have been generated for this episode yet, and the field is only populated when purpose-made stills exist to cover a gap. R3: 47 real deaths and three living acquitted men -- see forbidden_claims, which is the legally load-bearing part of this spec.",
+  "people_plates": [
+    "L003.png",
+    "L004.png",
+    "L015.png",
+    "L039.png",
+    "L041.png",
+    "L042.png",
+    "L051.png",
+    "L058.png",
+    "L060.png",
+    "L063.png",
+    "L090.png",
+    "L102.png",
+    "L109.png",
+    "L110.png",
+    "L116.png",
+    "L118.png",
+    "L131.png",
+    "L136.png",
+    "L167.png",
+    "L169.png"
+  ],
+  "_people_plates_note": "DECLARED, not detected. build_asset_manifest_motionfirst reads episode_spec.people_plates and refuses to build with people=0 (EP56's faces never reached the pool because this key was absent). These are the plates the CODEX image orders flagged P -- a human figure that is never an identifiable individual. Extracted from the order tables on 2026-08-22, intersected with what is actually staged, so an ordered-but-undelivered id cannot enter."
+}

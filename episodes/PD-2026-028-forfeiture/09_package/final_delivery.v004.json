@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-028-forfeiture",
+  "revision": "v004",
+  "title": "They Took the House",
+  "case": "Sourovelis v. City of Philadelphia (civil forfeiture; 2018 consent decree)",
+  "series": "They Did Nothing Wrong (1/3)",
+  "canonical_final": {
+    "path": "artifact://episodes/PD-2026-028-forfeiture/08_edit/final.v004.mp4",
+    "render_source": "remotion/out/forfeiture_final.v004.bgm.mp4",
+    "video_sha256": "sha256:5298daf96a608e33792b7f2c79167113d74634e2b229628fe7599027c614ce98",
+    "duration_seconds": 706.7, "duration_min": 11.78, "resolution": "1920x1080", "codec": "h264"
+  },
+  "audio": {"voice": "ElevenLabs master (nPczCjzI2devNBz1zQrb / eleven_multilingual_v2)", "bgm": "8-track ducked bed, -13.8 LUFS", "silence_gt2s": 0},
+  "captions": {"path": "artifact://episodes/PD-2026-028-forfeiture/08_edit/captions.final.v001.srt", "captions_sha256": "sha256:5c78e4f6e4f3128b2cc51c342f35027fc03678f55368ffa0a559cba01c8f47a8", "match": "100% token match to narration"},
+  "thumbnail": {"selected": "artifact://episodes/PD-2026-028-forfeiture/09_package/thumbnail.selected.v002.png", "thumbnail_sha256": "sha256:f51400a907ae9480b9c941a4e2a0e2fb422e38dd6cfabd6ddcd7ab138a6ae04c", "options": 5, "headline": "THEY TOOK / THE HOUSE (kicker: NO CRIME. NO CONVICTION.) over a child's bike at a night rowhouse door"},
+  "build": {
+    "composition": "CaseFilm-forfeiture (premium engine)",
+    "assets": "40 Codex hero stills upscaled to 4176x2352 + 88 factory clips (6 themes), 206 cuts, distinct 0.62, max reuse 3",
+    "animation": "real DPT depth-parallax (DepthStill) + AmbientMotion overlay + designed motion-blurred cut transitions + Trail + mask-reveal kinetic typography (28 on_screen_text beats); footage-forward",
+    "structure": "8s hook -> BrandOpening -> ACT I-IV -> BrandEndcard"
+  },
+  "acceptance": {
+    "gate": "scripts/check_final_acceptance.py 28 --emit-receipt",
+    "result": "PASS (all hard gates green)",
+    "animation_density": "BODY near-still 9.0% / longest 1.7s (OP/ED bookends excluded per owner-approved body-scope; thresholds unchanged)",
+    "receipt": "acceptance_receipt.v001.json status=PASS"
+  },
+  "design_compliance": {
+    "done": ["§5.1 transitions", "§5.2 treatments + AmbientMotion", "§5.3 mask-reveal kinetic typography (28 beats)", "§5.4 footage", "§5.5 banned-effects avoided", "depth-parallax (DepthStill)", "§6 diversity", "§7 OP/ED bookends+CTA", "§8 thumbnails", "§9 all gates PASS"],
+    "pending_enhancements": ["§5.6 Figures tier (10 data beats as StatCounter/Timeline/BarChart/NetworkDiagram)", "§5.7 3D hero (Blender EEVEE plate, elective/owner-gated)"]
+  },
+  "risk": {"class": "R2 (low). Public record (IJ/federal court). No real-person likeness; anonymous figures only; facts locked in fact_recheck."},
+  "publish": {"status": "NOT PUBLISHED. Owner-gated. Next open long-form slot per cadence to be confirmed."},
+  "created_at": "2026-07-05"
+}

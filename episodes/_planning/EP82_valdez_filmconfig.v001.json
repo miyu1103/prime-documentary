@@ -1,0 +1,135 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "valdez",
+  "episode_id": "PD-2026-082-valdez",
+  "assets": "episodes/PD-2026-082-valdez/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-082-valdez/06_audio/narration_index.v001.json",
+  "narration": "valdez/narration.mp3",
+  "captions": "episodes/PD-2026-082-valdez/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/valdez_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 20.446,
+  "hookLine": "There is a number written on a piece of paper for every ship at sea.",
+  "captionLeadSeconds": 0.0,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses",
+        "_row": "invariant-11"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["THE NUMBER", "HAD NOT MOVED."],
+        "style": "emphasis",
+        "emphasisWords": ["HAD NOT MOVED."],
+        "_row": "VZ-210"
+      }
+    ],
+    "ACT_1": [
+      {"kind": "acttitle", "title": "ONE MAN'S DAY", "kicker": "ACT ONE", "index": 1, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["24 MARCH 1989.", "NINE MINUTES PAST MIDNIGHT."], "style": "emphasis", "emphasisWords": ["24 MARCH 1989."], "_row": "VZ-001"},
+      {"kind": "stat", "value": 900, "label": "feet of ship, and she was longer than that", "topLabel": "OVER", "_row": "VZ-601"},
+      {"kind": "stat", "value": 1263000, "label": "barrels of crude oil aboard", "topLabel": "THE CARGO", "_row": "VZ-002"},
+      {"kind": "kinetic", "lines": ["THREE FOOTBALL PITCHES OF STEEL.", "A CARGO YOU CANNOT PUT BACK."], "style": "emphasis", "emphasisWords": ["A CARGO YOU CANNOT PUT BACK."], "_row": "VZ-002"},
+      {"kind": "quote", "quote": "had probably had very little sleep the night before the grounding and had worked a stressful, physically demanding day", "attribution": "The National Transportation Safety Board, summarising the third mate's previous twenty-four hours", "_row": "VZ-101"},
+      {"kind": "stat", "value": 50, "label": "feet from his bed to a running cargo operation", "topLabel": "WHERE HE SLEPT", "_row": "VZ-102"},
+      {"kind": "kinetic", "lines": ["TO BED AFTER ONE IN THE MORNING.", "CALLED AS EARLY AS TWENTY PAST FIVE."], "style": "emphasis", "emphasisWords": ["CALLED AS EARLY AS TWENTY PAST FIVE."], "_row": "VZ-103"},
+      {"kind": "stat", "value": 4, "label": "hours of sleep before the workday of the twenty-third", "topLabel": "AS LITTLE AS", "_row": "VZ-106"},
+      {"kind": "compbars", "items": [{"label": "SLEEP BEFORE THE DAY, HRS", "value": 4}, {"label": "AFTERNOON NAP, HRS AT MOST", "value": 2}], "_row": "VZ-106"},
+      {"kind": "kinetic", "lines": ["FIVE OR SIX HOURS", "IN THE PREVIOUS TWENTY-FOUR."], "style": "emphasis", "emphasisWords": ["FIVE OR SIX HOURS"], "_row": "VZ-106"},
+      {"kind": "kinetic", "lines": ["ICE ON ONE SIDE.", "ROCK ON THE OTHER."], "style": "emphasis", "emphasisWords": ["ROCK ON THE OTHER."], "_row": "VZ-108"},
+      {"kind": "quote", "quote": "Nonetheless, the insidious nature of fatigue is such that sleep could have overcome him at any time that he momentarily relaxed his vigilance.", "attribution": "The Board, immediately after arguing the other way", "_row": "VZ-109"},
+      {"kind": "kinetic", "lines": ["COULD HAVE.", "NOT DID."], "style": "emphasis", "emphasisWords": ["NOT DID."], "_row": "VZ-109"},
+      {"kind": "stat", "value": 257, "label": "pages that state a cause, and could not be read for this film", "topLabel": "THE OTHER REPORT", "_row": "trap-note"},
+      {"kind": "stat", "value": 258000, "label": "barrels spilled when eight cargo tanks ruptured", "topLabel": "ABOUT", "_row": "VZ-005"},
+      {"kind": "compbars", "items": [{"label": "DAMAGE TO THE VESSEL, $M", "value": 25}, {"label": "LOST CARGO, $M", "value": 3.4}], "_row": "VZ-006"}
+    ],
+    "ACT_2": [
+      {"kind": "acttitle", "title": "THE ARITHMETIC OF A DAY", "kicker": "ACT TWO", "index": 2, "_row": "structure"},
+      {"kind": "stat", "value": 3, "label": "deck officers below the master on a tanker of this kind", "topLabel": "THE MACHINERY", "_row": "VZ-201"},
+      {"kind": "stat", "value": 24, "label": "hours a day somebody has to be on the bridge", "topLabel": "A SHIP NEVER STOPS", "_row": "VZ-202"},
+      {"kind": "compbars", "items": [{"label": "ON WATCH, HRS", "value": 4}, {"label": "OFF WATCH, HRS", "value": 8}], "_row": "VZ-202"},
+      {"kind": "kinetic", "lines": ["FOUR ON, EIGHT OFF.", "THE THREE-WATCH SYSTEM."], "style": "emphasis", "emphasisWords": ["FOUR ON, EIGHT OFF."], "_row": "VZ-202"},
+      {"kind": "kinetic", "lines": ["EIGHT HOURS OFF", "IS NOT EIGHT HOURS ASLEEP."], "style": "emphasis", "emphasisWords": ["IS NOT EIGHT HOURS ASLEEP."], "_row": "VZ-202"},
+      {"kind": "kinetic", "lines": ["NOW TAKE ONE", "OF THE THREE AWAY."], "style": "emphasis", "emphasisWords": ["OF THE THREE AWAY."], "_row": "VZ-201"},
+      {"kind": "stat", "value": 12, "label": "hours each, once twenty-four is divided between two", "topLabel": "SIX ON, SIX OFF", "_row": "VZ-104"},
+      {"kind": "compbars", "items": [{"label": "THREE OFFICERS, HRS ON", "value": 8}, {"label": "TWO OFFICERS, HRS ON", "value": 12}], "_row": "VZ-202"},
+      {"kind": "kinetic", "lines": ["SIX HOURS OFF IS NOT A NIGHT.", "IT IS A NAP WITH A JOB EITHER SIDE."], "style": "emphasis", "emphasisWords": ["IT IS A NAP WITH A JOB EITHER SIDE."], "_row": "VZ-202"},
+      {"kind": "quote", "quote": "seldom enables any officer to acquire adequate rest until the vessel returns to sea", "attribution": "The Safety Board, on the six-on six-off arrangement", "_row": "VZ-202"},
+      {"kind": "kinetic", "lines": ["THE MOST DANGEROUS WATER IS AT THE FRONT.", "THE SLEEP IS AT THE BACK."], "style": "emphasis", "emphasisWords": ["THE SLEEP IS AT THE BACK."], "_row": "VZ-203"},
+      {"kind": "quote", "quote": "is likely to be conducted by navigation watch officers who are in varying stages of fatigue", "attribution": "The Board, on the first part of the voyage", "_row": "VZ-203"},
+      {"kind": "kinetic", "lines": ["NOT THIS SHIP.", "SHIPS."], "style": "emphasis", "emphasisWords": ["SHIPS."], "_row": "VZ-203"},
+      {"kind": "kinetic", "lines": ["NOT ON A RULE. NOT ON A FORM.", "ON THE HABITS OF THE MASTER."], "style": "emphasis", "emphasisWords": ["ON THE HABITS OF THE MASTER."], "_row": "VZ-204"},
+      {"kind": "quote", "quote": "was the practice in the past on many tankships, including those of the Exxon Shipping Company", "attribution": "The Board, on assigning a fourth deck officer", "_row": "VZ-205"},
+      {"kind": "kinetic", "lines": ["THREE OPTIONS.", "ALL OF THEM SOMEBODY'S PAYROLL LINE."], "style": "emphasis", "emphasisWords": ["ALL OF THEM SOMEBODY'S PAYROLL LINE."], "_row": "VZ-205"}
+    ],
+    "ACT_3": [
+      {"kind": "acttitle", "title": "WRITTEN FOR A DIFFERENT ROUTE", "kicker": "ACT THREE", "index": 3, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["WATCHKEEPING SAFEGUARDS", "COMPROMISED BY THE MANNING LEVEL."], "style": "emphasis", "emphasisWords": ["COMPROMISED BY THE MANNING LEVEL."], "_row": "VZ-206"},
+      {"kind": "quote", "quote": "As a result, on the EXXON VALDEZ, the lookout position routinely went unattended when the AB was called for other tasks or took a break.", "attribution": "The Safety Board, the flattest sentence in the letter", "_row": "VZ-208"},
+      {"kind": "kinetic", "lines": ["ROUTINELY.", "NOT ONCE."], "style": "emphasis", "emphasisWords": ["NOT ONCE."], "_row": "VZ-208"},
+      {"kind": "kinetic", "lines": ["TAKE THE LOOKOUT AWAY AND NOTHING HAPPENS.", "WHICH IS WHY IT GOES FIRST."], "style": "emphasis", "emphasisWords": ["WHICH IS WHY IT GOES FIRST."], "_row": "VZ-207"},
+      {"kind": "kinetic", "lines": ["IT IS SET ONCE.", "IT DOES NOT FOLLOW THE SHIP AROUND."], "style": "emphasis", "emphasisWords": ["IT DOES NOT FOLLOW THE SHIP AROUND."], "_row": "VZ-210"},
+      {"kind": "kinetic", "lines": ["VALDEZ TO PANAMA.", "VALDEZ TO CALIFORNIA."], "style": "emphasis", "emphasisWords": ["VALDEZ TO CALIFORNIA."], "_row": "VZ-210"},
+      {"kind": "kinetic", "lines": ["THE TRADE WAS DISCONTINUED", "AFTER DECEMBER 1988."], "style": "emphasis", "emphasisWords": ["AFTER DECEMBER 1988."], "_row": "VZ-210"},
+      {"kind": "kinetic", "lines": ["A MUCH SHORTER PASSAGE.", "THE SAME NUMBER OF PEOPLE."], "style": "emphasis", "emphasisWords": ["THE SAME NUMBER OF PEOPLE."], "_row": "VZ-210"},
+      {"kind": "quote", "quote": "The mates on the EXXON VALDEZ were usually fatigued after cargo handling operations in Valdez, and the vessel usually put to sea with a fatigued crew.", "attribution": "The Safety Board, in a single sentence", "_row": "VZ-211"},
+      {"kind": "stat", "value": 2, "label": "officers the company's own procedures required on the bridge during manoeuvring", "topLabel": "A RULE THAT EXISTED", "_row": "VZ-213"},
+      {"kind": "quote", "quote": "generally incautious and without apparent justification from the standpoint of safety", "attribution": "The Board, on the company's reduced manning practices", "_row": "VZ-215"},
+      {"kind": "stat", "value": 4, "label": "things for which the Board could find no reasonable explanation", "topLabel": "FINALLY", "_row": "VZ-216"},
+      {"kind": "kinetic", "lines": ["RATED IN PART", "ON WILLINGNESS TO WORK OVERTIME."], "style": "emphasis", "emphasisWords": ["ON WILLINGNESS TO WORK OVERTIME."], "_row": "VZ-216"},
+      {"kind": "stat", "value": 90, "label": "days of leave in 1985, and no document that the follow-up ever happened", "topLabel": "THE MASTER", "_row": "VZ-303"},
+      {"kind": "kinetic", "lines": ["AN AUTOPILOT GETS A SPECIALIST.", "A PERSON GETS A FILE NOBODY KEEPS."], "style": "emphasis", "emphasisWords": ["A FILE NOBODY KEEPS."], "_row": "VZ-309"},
+      {"kind": "compbars", "items": [{"label": "ABOUT HOURS AND MANNING", "value": 4}, {"label": "ABOUT THE ALCOHOL PROGRAMME", "value": 2}], "_row": "VZ-401"}
+    ],
+    "ACT_4": [
+      {"kind": "acttitle", "title": "ONE DOLLAR FOR ONE DOLLAR", "kicker": "ACT FOUR", "index": 4, "_row": "structure"},
+      {"kind": "stat", "value": 2.1, "prefix": "$", "suffix": " BILLION", "decimals": 1, "label": "spent on cleanup", "topLabel": "BEFORE ANY JURY SAT", "_row": "VZ-501"},
+      {"kind": "compbars", "items": [{"label": "CIVIL SETTLEMENT, $M", "value": 900}, {"label": "VOLUNTARY PAYMENTS, $M", "value": 303}], "_row": "VZ-503"},
+      {"kind": "kinetic", "lines": ["MORE THAN THREE BILLION DOLLARS", "BEFORE A SINGLE JUROR WAS ASKED."], "style": "emphasis", "emphasisWords": ["BEFORE A SINGLE JUROR WAS ASKED."], "_row": "VZ-602"},
+      {"kind": "kinetic", "lines": ["NOT ASKED TO MAKE ANYBODY WHOLE.", "ASKED WHAT A PUNISHMENT SHOULD BE."], "style": "emphasis", "emphasisWords": ["ASKED WHAT A PUNISHMENT SHOULD BE."], "_row": "VZ-611"},
+      {"kind": "stat", "value": 32000, "label": "people in the class, commercial fishermen and native Alaskans", "topLabel": "THE PRIVATE CASE", "_row": "VZ-608"},
+      {"kind": "compbars", "items": [{"label": "COMPENSATORY AWARD, $M", "value": 287}, {"label": "CLAIMS ALREADY SETTLED, $M", "value": 22.6}], "_row": "VZ-505"},
+      {"kind": "kinetic", "lines": ["PUNITIVE DAMAGES", "DO NOT COMPENSATE ANYBODY."], "style": "emphasis", "emphasisWords": ["DO NOT COMPENSATE ANYBODY."], "_row": "VZ-611"},
+      {"kind": "stat", "value": 5000, "prefix": "$", "label": "in punitive damages against the master", "topLabel": "THE JURY AWARDED", "_row": "VZ-506"},
+      {"kind": "stat", "value": 5, "prefix": "$", "suffix": " BILLION", "label": "in punitive damages against the company", "topLabel": "AND", "_row": "VZ-506"},
+      {"kind": "stat", "value": 2.5, "prefix": "$", "suffix": " BILLION", "decimals": 1, "label": "is where the Ninth Circuit remitted the award", "topLabel": "THEN", "_row": "VZ-508"},
+      {"kind": "quote", "quote": "the stark unpredictability of punitive awards", "attribution": "The Supreme Court, naming the real problem", "_row": "VZ-612"},
+      {"kind": "kinetic", "lines": ["NOT TOO BIG.", "TOO RANDOM."], "style": "emphasis", "emphasisWords": ["TOO RANDOM."], "_row": "VZ-612"},
+      {"kind": "kinetic", "lines": ["ONE DOLLAR OF PUNISHMENT", "FOR ONE DOLLAR OF HARM."], "style": "emphasis", "emphasisWords": ["FOR ONE DOLLAR OF HARM."], "_row": "VZ-509"},
+      {"kind": "stat", "value": 507.5, "prefix": "$", "suffix": " MILLION", "decimals": 1, "label": "of relevant compensatory damages, which at one to one is the ceiling", "topLabel": "THE COURT TOOK", "_row": "VZ-510"},
+      {"kind": "kinetic", "lines": ["VACATED AND REMANDED.", "25 JUNE 2008."], "style": "emphasis", "emphasisWords": ["25 JUNE 2008."], "_row": "VZ-511"},
+      {"kind": "stat", "value": 11, "label": "post-trial motions filed, and all of them were denied", "topLabel": "EXXON", "_row": "VZ-610"}
+    ],
+    "ENDING": [
+      {
+        "kind": "kinetic",
+        "lines": ["AN EMPTY BED", "ON A WORKING SHIP."],
+        "style": "emphasis",
+        "emphasisWords": ["ON A WORKING SHIP."],
+        "_row": "motif"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["WRITTEN FOR A DIFFERENT ROUTE.", "THAT IS THE WHOLE DIFFERENCE."],
+        "style": "emphasis",
+        "emphasisWords": ["THAT IS THE WHOLE DIFFERENCE."],
+        "_row": "VZ-210"
+      }
+    ]
+  },
+  "_declared_values": {
+    "leadSeconds": "0 -- VC-0001 is voiced from frame 0; narration_index.v001.json puts the HOOK at 0.0s.",
+    "openingVariant": "'overlay' -- BrandOpening over the hook's settle, as on EP74-EP77 and EP80. The voice does not stop.",
+    "captionLeadSeconds": "0.0 -- 08_edit/captions.final.v001.srt already carries the house 0.60 s lead.",
+    "hookSeconds": "MEASURED 2026-08-27 from 06_audio/narration_index.v001.json: section HOOK spans 0.0 to 20.446 across six chunks (VC-0001..VC-0006). ACT_1 opens at 22.246. Not estimated.",
+    "hookLine": "VC-0001 verbatim.",
+    "figures_by_section": "Authored 2026-08-27 from 03_script/script.en.v001.md and EP82_valdez_FACTS_LEDGER.v001.md. Counts are 17/17/17/17 across ACT_1..ACT_4, at the top of episode_spec's figure_beats_per_act [13,17]; HOOK 2 and ENDING 2; 72 cards in total. EVERY number on a card is a number the narration speaks -- 900, 1263000, 50, 4, 2, 257, 258000, 25, 3.4, 3, 24, 8, 12, 90, 2.1, 900, 303, 32000, 287, 22.6, 5000, 5, 2.5, 507.5, 11 all appear in the script, and every stat/numberticker `value` is numeric so nothing can render as NaN. No `stat` carries a `group` key. Every range in the record (the one- to two-hour nap, the five-or-six hours, the six recommendations split four and two) is drawn as a kinetic pair or a compbars comparison, never squeezed into a single stat.",
+    "no_OP_section": "episode_spec's section_vocabulary lists OP, but narration_index has no OP chunks -- the brand opening is an overlay on the HOOK, not a spoken section. A card there would have no window to live in.",
+    "quarantine": "Nothing on screen states a probable cause for the grounding. MAR-90/04 is a 257-page scan with no text layer and has not been read on this machine; the ACT_1 card that names it says only that it exists and could not be read. No card says the master was drunk, was steering, or caused the grounding -- the vessel was under the third mate's navigational control (VZ-003). No card says the third mate was negligent or asleep: the VZ-109 quote is the Board's own 'could have overcome him', and the card next to it says COULD HAVE / NOT DID. No card says fatigue caused anything. No card says Exxon was uniquely bad -- VZ-201's practice is recorded as widely practised and the six recommendations went to every company in Prince William Sound. No card says the master was removed from employment; VZ-308 is a recommendation and is not drawn. No card touches oiled wildlife, the wreck or the grounding itself, per forbidden_subjects. The ACT_4 cards report the Court's ratio rule and the money already spent, and stop -- no card says the Court let the company off.",
+    "act_4_money_scale": "The $5,000 against the master and the $5 billion against the company are two separate stat cards, not one compbars pair: at that ratio the smaller bar is one four-hundred-thousandth of the larger and would render as a blank row. The comparison is made by the cut order and the narration, not by a bar chart that cannot draw it."
+  }
+}

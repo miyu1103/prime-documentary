@@ -1,0 +1,763 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "katrina",
+  "episode_id": "PD-2026-085-katrina",
+  "assets": "episodes/PD-2026-085-katrina/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-085-katrina/06_audio/narration_index.v001.json",
+  "narration": "katrina/narration.mp3",
+  "captions": "episodes/PD-2026-085-katrina/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/katrina_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 12.696,
+  "hookLine": "In New Orleans a concrete wall stands on an earth bank, and the water is nine feet up it.",
+  "captionLeadSeconds": 0.0,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses",
+        "_row": "invariant-11"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE WATER IS NINE FEET UP THE WALL.",
+          "THE WALL IS BUILT FOR FOURTEEN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE WALL IS BUILT FOR FOURTEEN."
+        ],
+        "_row": "KT-505"
+      }
+    ],
+    "ACT_1": [
+      {
+        "kind": "acttitle",
+        "title": "THE MORNING THE WALLS WENT",
+        "kicker": "ACT ONE",
+        "index": 1,
+        "_row": "structure"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "EVERYONE REMEMBERS THE HURRICANE.",
+          "ALMOST NOBODY REMEMBERS THE ARITHMETIC."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ALMOST NOBODY REMEMBERS THE ARITHMETIC."
+        ],
+        "_row": "structure"
+      },
+      {
+        "kind": "stat",
+        "value": 350,
+        "label": "miles of earth banks, concrete walls and pumps, holding a city that sits lower than the water",
+        "topLabel": "THE RING IS ABOUT",
+        "_row": "KT-405"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE PART YOU SEE IS THE WALL.",
+          "THE PART YOU DO NOT SEE IS WHAT HOLDS IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE PART YOU DO NOT SEE IS WHAT HOLDS IT."
+        ],
+        "_row": "KT-405"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "29 AUGUST 2005.",
+          "THE WATER CAME UP."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "29 AUGUST 2005."
+        ],
+        "_row": "KT-503"
+      },
+      {
+        "kind": "stat",
+        "value": 14.2,
+        "decimals": 1,
+        "suffix": " FEET",
+        "label": "of surge on the Industrial Canal, about one foot eight inches above the top of the walls there",
+        "topLabel": "STORY ONE, THE WALLS BEATEN",
+        "_row": "KT-509"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "WATER WENT OVER THE TOP.",
+          "THE WALLS FELL BACKWARDS INTO THE HOLE THEY HAD MADE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE WALLS FELL BACKWARDS INTO THE HOLE THEY HAD MADE."
+        ],
+        "_row": "KT-509"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THAT IS A BAD DAY.",
+          "IT IS NOT A SCANDAL."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IT IS NOT A SCANDAL."
+        ],
+        "_row": "KT-509"
+      },
+      {
+        "kind": "quote",
+        "quote": "were not overtopped, but failed at water levels below their design height",
+        "attribution": "The federal investigation, on the floodwalls at the 17th Street and London Avenue Canals",
+        "_row": "KT-501"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOT OVERTOPPED.",
+          "BELOW DESIGN HEIGHT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "BELOW DESIGN HEIGHT."
+        ],
+        "_row": "KT-501"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE WALL WAS SUPPOSED TO BE FOURTEEN FEET.",
+          "IT WAS TWELVE TO TWELVE AND A HALF."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IT WAS TWELVE TO TWELVE AND A HALF."
+        ],
+        "_row": "KT-503"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE BREACH BEGAN AT SIX IN THE MORNING.",
+          "IT WAS FULLY DEVELOPED BEFORE NINE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IT WAS FULLY DEVELOPED BEFORE NINE."
+        ],
+        "_row": "KT-503"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "LONDON AVENUE, WATER IN THE CANAL, FEET",
+            "value": 8.2
+          },
+          {
+            "label": "LONDON AVENUE, DESIGN HEIGHT, FEET",
+            "value": 14.4
+          }
+        ],
+        "_row": "KT-505"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "EIGHT FEET OF WATER.",
+          "A WALL BUILT FOR FOURTEEN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "A WALL BUILT FOR FOURTEEN."
+        ],
+        "_row": "KT-505"
+      },
+      {
+        "kind": "stat",
+        "value": 950,
+        "suffix": " FEET",
+        "label": "up the canal, on the opposite bank, another stretch of wall moved and tilted, and held",
+        "topLabel": "NINE HUNDRED AND FIFTY",
+        "_row": "KT-507"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "IPET, MAJOR BREACHES",
+            "value": 50
+          },
+          {
+            "label": "IPET APPENDIX, AGGREGATED FOR REPAIR",
+            "value": 29
+          },
+          {
+            "label": "ASCE, FAILED BEFORE OVERTOPPING",
+            "value": 4
+          }
+        ],
+        "_row": "KT-401, KT-402"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "MILES OF STRUCTURE DAMAGED",
+            "value": 220
+          },
+          {
+            "label": "MILES SEVERELY DAMAGED",
+            "value": 41
+          }
+        ],
+        "_row": "KT-404"
+      }
+    ],
+    "ACT_2": [
+      {
+        "kind": "acttitle",
+        "title": "WHAT THE WATER ACTUALLY DID",
+        "kicker": "ACT TWO",
+        "index": 2,
+        "_row": "structure"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "TWO-THIRDS OF THE FLOODING",
+          "CAME THROUGH THE BREACHES, NOT OVER THE TOP."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "CAME THROUGH THE BREACHES, NOT OVER THE TOP."
+        ],
+        "_row": "KT-801"
+      },
+      {
+        "kind": "stat",
+        "value": 70,
+        "suffix": " PERCENT",
+        "label": "of the flooding on the east bank of Orleans Parish came from the canal and Industrial Canal failures",
+        "topLabel": "ABOUT",
+        "_row": "KT-802"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THEY MODELLED THE SAME STORM",
+          "WITH NO BREACHING AND WORKING PUMPS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "WITH NO BREACHING AND WORKING PUMPS."
+        ],
+        "_row": "KT-803"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "FLOODING IN SOME AREAS",
+          "MAY HAVE BEEN AS LITTLE AS ONE-THIRD."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "MAY HAVE BEEN AS LITTLE AS ONE-THIRD."
+        ],
+        "_row": "KT-803"
+      },
+      {
+        "kind": "quote",
+        "quote": "Overtopping was extensive, but would have only occurred for a matter of hours. Breaching allowed water to enter the protected areas for days.",
+        "attribution": "The federal task force, modelling the same storm without the breaches",
+        "_row": "KT-803"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HOURS, AGAINST DAYS.",
+          "A FLOODED GROUND FLOOR, AGAINST A DROWNED CITY."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "A FLOODED GROUND FLOOR, AGAINST A DROWNED CITY."
+        ],
+        "_row": "KT-803"
+      },
+      {
+        "kind": "quote",
+        "quote": "the formation of a gap between the wall and the levee fill on the canal side of the wall, allowing water pressure to act on the wall below the surface of the levee",
+        "attribution": "The federal team, naming the key factor at the 17th Street Canal",
+        "_row": "KT-504"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "A GAP.",
+          "BETWEEN THE CONCRETE AND THE EARTH IT WAS STANDING IN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "BETWEEN THE CONCRETE AND THE EARTH IT WAS STANDING IN."
+        ],
+        "_row": "KT-504, KT-607"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "faultsplit",
+        "_row": "KT-504, KT-603"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "IT IS CUTTING THE EARTH BANK IN HALF.",
+          "THE CANAL SIDE NO LONGER HOLDS UP THE CITY SIDE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE CANAL SIDE NO LONGER HOLDS UP THE CITY SIDE."
+        ],
+        "_row": "KT-504"
+      },
+      {
+        "kind": "stat",
+        "value": 40,
+        "suffix": " FEET",
+        "label": "sideways, and it finished tilted at about forty-five degrees",
+        "topLabel": "THE WALL AND THE LEVEE MOVED ABOUT",
+        "_row": "KT-504"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOT CRUMBLED.",
+          "PUSHED BODILY ACROSS THE GROUND."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "PUSHED BODILY ACROSS THE GROUND."
+        ],
+        "_row": "KT-504"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "AT LONDON AVENUE THE INGREDIENT WAS DIFFERENT.",
+          "SAND."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "SAND."
+        ],
+        "_row": "KT-506"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE WALL WAS NOT PUSHED OVER.",
+          "THE GROUND WAS CARRIED OUT FROM UNDER IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE GROUND WAS CARRIED OUT FROM UNDER IT."
+        ],
+        "_row": "KT-506"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "TWO TEAMS. THE SAME GROUND.",
+          "TWO MECHANISMS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "TWO MECHANISMS."
+        ],
+        "_row": "KT-510"
+      },
+      {
+        "kind": "quote",
+        "quote": "None of these failures were the result of overtopping; surge levels in all three drainage canals were well below the design levels, and well below the tops of the floodwalls.",
+        "attribution": "The independent university team, on all three drainage canals",
+        "_row": "KT-508"
+      }
+    ],
+    "ACT_3": [
+      {
+        "kind": "acttitle",
+        "title": "THE TEST IN THE SWAMP",
+        "kicker": "ACT THREE",
+        "index": 3,
+        "_row": "structure"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "A LEVEE IS A PYRAMID OF EARTH.",
+          "THERE WAS NOTHING LEFT TO WIDEN INTO."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THERE WAS NOTHING LEFT TO WIDEN INTO."
+        ],
+        "_row": "structure"
+      },
+      {
+        "kind": "quote",
+        "quote": "made an admirable decision to construct a test section and perform a full-scale test of this type of design",
+        "attribution": "The independent investigators, on the New Orleans District",
+        "_row": "KT-601"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOT A COMPUTER MODEL.",
+          "A REAL WALL, IN REAL GROUND, LOADED WITH REAL WATER."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "A REAL WALL, IN REAL GROUND, LOADED WITH REAL WATER."
+        ],
+        "_row": "KT-601"
+      },
+      {
+        "kind": "quote",
+        "quote": "The swampy foundation soils at this test site were remarkably similar to those at the north end of the 17th Street canal in New Orleans.",
+        "attribution": "The investigators, on why that ground was chosen",
+        "_row": "KT-602"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THIS WAS 1977.",
+          "TWENTY-EIGHT YEARS BEFORE THE STORM."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "TWENTY-EIGHT YEARS BEFORE THE STORM."
+        ],
+        "_row": "KT-602"
+      },
+      {
+        "kind": "quote",
+        "quote": "A gap opened between the sheetpile curtain and the outboard side earthen embankment during loading, and then water penetrated into this gap.",
+        "attribution": "The full-scale test in the Atchafalaya basin, 1977",
+        "_row": "KT-603"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THIS EFFECTIVELY CUT",
+          "THE SUPPORTING EMBANKMENT IN HALF."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE SUPPORTING EMBANKMENT IN HALF."
+        ],
+        "_row": "KT-603"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "A FAILURE MECHANISM",
+          "NOT TRADITIONALLY CONSIDERED IN THE LOCAL DESIGN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOT TRADITIONALLY CONSIDERED IN THE LOCAL DESIGN."
+        ],
+        "_row": "KT-603"
+      },
+      {
+        "kind": "quote",
+        "quote": "neither of these lessons were then incorporated in the subsequent design of the floodwalls along the 17th Street, Orleans and London Avenue drainage canals",
+        "attribution": "The independent team, on findings published in the Corps' own reports",
+        "_row": "KT-604"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THEY RAN THE TEST TO DESIGN THESE WALLS.",
+          "THEY DESIGNED THESE WALLS WITHOUT IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THEY DESIGNED THESE WALLS WITHOUT IT."
+        ],
+        "_row": "KT-604, KT-605"
+      },
+      {
+        "kind": "quote",
+        "quote": "we had read the E-99 full-scale test section reports, and were aware of the likelihood of this mechanism",
+        "attribution": "The 2006 investigators, on how they worked out what had failed",
+        "_row": "KT-606"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "A VERY SERIOUS ERROR.",
+          "THE SHEET PILES WERE ROUTINELY FAR TOO SHORT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE SHEET PILES WERE ROUTINELY FAR TOO SHORT."
+        ],
+        "_row": "KT-609"
+      },
+      {
+        "kind": "stat",
+        "value": 1.3,
+        "decimals": 1,
+        "label": "the factor of safety these walls were designed to, thirty percent of headroom and no more",
+        "topLabel": "A DESIGN FACTOR OF SAFETY OF",
+        "_row": "KT-608"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "IT CAME FROM STANDARDS FOR FARMLAND.",
+          "A CITY WAS HELD UP TO A STANDARD WRITTEN FOR A FIELD."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "A CITY WAS HELD UP TO A STANDARD WRITTEN FOR A FIELD."
+        ],
+        "_row": "KT-608"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE CRITERIA WERE REVISED IN 1979.",
+          "IT DOES NOT APPEAR THE CORPS USED THEM."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IT DOES NOT APPEAR THE CORPS USED THEM."
+        ],
+        "_row": "KT-703"
+      },
+      {
+        "kind": "quote",
+        "quote": "Levees and I-walls were designed to provide protection up to the estimated water elevations. They were not designed to withstand overtopping. There was no armoring or uniform use of erosion resistant soils.",
+        "attribution": "The federal task force, on the design of the system",
+        "_row": "KT-706"
+      }
+    ],
+    "ACT_4": [
+      {
+        "kind": "acttitle",
+        "title": "THE COURT",
+        "kicker": "ACT FOUR",
+        "index": 4,
+        "_row": "structure"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THOUSANDS OF PEOPLE SUED THE UNITED STATES.",
+          "THE CASE THAT REACHED TRIAL WAS NOT ABOUT THE FLOODWALLS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE CASE THAT REACHED TRIAL WAS NOT ABOUT THE FLOODWALLS."
+        ],
+        "_row": "KT-201, KT-207"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THOSE WERE ALREADY IMMUNE.",
+          "THE PLAINTIFFS DID NOT CONTEST IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE PLAINTIFFS DID NOT CONTEST IT."
+        ],
+        "_row": "KT-207"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "IT WAS ABOUT A SHIPPING CHANNEL.",
+          "CUT FROM THE CITY OUT TO THE GULF."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IT WAS ABOUT A SHIPPING CHANNEL."
+        ],
+        "_row": "KT-102"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE DESIGNERS CONSIDERED ARMOURING THE BANKS.",
+          "THEY REJECTED IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THEY REJECTED IT."
+        ],
+        "_row": "KT-103"
+      },
+      {
+        "kind": "stat",
+        "value": 3,
+        "label": "times its design width, after the banks eroded and the marsh that protected the levee went with them",
+        "topLabel": "THE CHANNEL WIDENED TO AN AVERAGE OF",
+        "_row": "KT-106, KT-107"
+      },
+      {
+        "kind": "quote",
+        "quote": "from 1968 until 1980, it is not evident why the protection was not implemented",
+        "attribution": "The court record, on twelve years with no reason written down",
+        "_row": "KT-104"
+      },
+      {
+        "kind": "quote",
+        "quote": "was not policy, but insouciance, myopia and shortsightedness",
+        "attribution": "The trial judge, November 2009, on the Corps' failure to maintain the channel",
+        "_row": "KT-203"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "FOR OVER FORTY YEARS,",
+          "THE CORPS WAS AWARE THE LEVEE WOULD BE COMPROMISED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "FOR OVER FORTY YEARS,"
+        ],
+        "_row": "KT-204"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "PLAINTIFFS WHO WON ON ALL CLAIMS",
+            "value": 3
+          },
+          {
+            "label": "PLAINTIFFS WHO DID NOT",
+            "value": 4
+          }
+        ],
+        "_row": "KT-208"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE FUNNEL IS A MYTH.",
+          "THE CASE WAS NEVER ABOUT SURGE. IT WAS ABOUT EROSION."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE FUNNEL IS A MYTH."
+        ],
+        "_row": "KT-708, KT-107"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "2 MARCH 2012. THE FIFTH CIRCUIT AFFIRMED.",
+          "25 SEPTEMBER 2012. THE SAME COURT REVERSED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "25 SEPTEMBER 2012. THE SAME COURT REVERSED."
+        ],
+        "_row": "KT-301, KT-302"
+      },
+      {
+        "kind": "quote",
+        "quote": "whether or not the discretion involved be abused",
+        "attribution": "The discretionary function exception, as the court applied it",
+        "_row": "KT-303, KT-307"
+      },
+      {
+        "kind": "quote",
+        "quote": "Whatever the actual reasons for the delay, the Corps's failure to armor timely Reach 2 is shielded by the DFE.",
+        "attribution": "The Fifth Circuit, on rehearing, 25 September 2012",
+        "_row": "KT-304"
+      },
+      {
+        "kind": "quote",
+        "quote": "a disjointed agglomeration of many individual projects that were conceived and constructed in a piecemeal fashion",
+        "attribution": "The engineering review panel, on a system in name only",
+        "_row": "KT-901, KT-902"
+      },
+      {
+        "kind": "quote",
+        "quote": "not solely as a natural disaster, but also as a catastrophic engineering failure, a man-made catastrophe",
+        "attribution": "The Louisiana investigation team",
+        "_row": "KT-906"
+      },
+      {
+        "kind": "stat",
+        "value": 1118,
+        "label": "people died in Louisiana, the vast majority in the five parishes around New Orleans, with 135 still missing",
+        "topLabel": "AS OF AUGUST 2006",
+        "_row": "KT-1001, KT-1005"
+      }
+    ],
+    "ENDING": [
+      {
+        "kind": "kinetic",
+        "lines": [
+          "A WALL BUILT FOR FOURTEEN FEET.",
+          "IT CAME APART UNDER TEN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IT CAME APART UNDER TEN."
+        ],
+        "_row": "KT-503, KT-602"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "1915. 1940. 1947. 1965. 1969. 2005.",
+          "SIX TIMES IN A CENTURY."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "SIX TIMES IN A CENTURY."
+        ],
+        "_row": "KT-909"
+      },
+      {
+        "kind": "quote",
+        "quote": "It should not be allowed to happen again.",
+        "attribution": "The independent investigation team, the last line of its report",
+        "_row": "KT-909"
+      }
+    ]
+  },
+  "_declared_values": {
+    "leadSeconds": "0 -- VC-0001 is voiced from frame 0; 06_audio/narration_index.v001.json puts the HOOK at 0.0s.",
+    "openingVariant": "'overlay' -- BrandOpening over the hook's settle, as on EP74-EP83. The voice does not stop.",
+    "captionLeadSeconds": "0.0 -- 08_edit/captions.final.v001.srt will carry the house 0.60 s lead when it is written; this config adds none on top.",
+    "hookSeconds": "MEASURED 2026-08-28 from 06_audio/narration_index.v001.json, not estimated. Section HOOK spans 0.0 to 12.696 across four chunks (VC-0001..VC-0004). ACT_1 opens at 14.496 (VC-0005) and runs to 270.400; ACT_2 272.200 to 565.390 (VC-0059..VC-0114); ACT_3 567.190 to 1023.008 (VC-0115..VC-0185); ACT_4 1024.808 to 1515.853 (VC-0186..VC-0267); ENDING 1516.453 to 1595.171 (VC-0268..VC-0278). total_seconds 1595.164 over 278 chunks. The hook is four sentences, so it runs past the 8-second house target; the number is what the voice actually did.",
+    "hookLine": "VC-0001 verbatim.",
+    "not_yet_on_disk": "`assets` and `captions` name the files the staging and caption steps will write (asset_manifest.v003.json, captions.final.v001.srt), the same naming EP80-EP83 declared. Neither exists yet, which is the state EP82 and EP83 were in when their filmconfigs were authored -- the config declares the contract and the later step fills it. 06_audio/narration_index.v001.json and remotion/public/katrina/narration.mp3 (1595.164 s) DO exist and were read for this file, as do the 173 reviewed plates in remotion/public/katrina/img (13 rejected plates are in img/rejected and are not referenced here).",
+    "figures_by_section": "Authored 2026-08-28 from 03_script/script.en.v001.md and EP85_katrina_FACTS_LEDGER.v001.md. Counts are 17/17/17/17 across ACT_1..ACT_4, at the top of episode_spec's figure_beats_per_act [13,17]; HOOK 2 and ENDING 3; 73 cards in total. EVERY number on a card is a number the narration speaks -- 350, 14.2, 8.2, 14.4, 950, 50, 29, 4, 220, 41, 70, 40, 1.3, 3, 1118 -- and every `stat` `value` is numeric so nothing can render as NaN. No `stat` carries a `group` key (the FigureSpec union does not give `stat` one; only `numberticker` has it).",
+    "years_are_never_stats": "StatCounter formats with toLocaleString('en-US'), so a year in a `stat` renders as '1,977'. Every date in this deck -- 29 August 2005, 1977, 1959, 1900 to 1956, 1979, 1967, 1968, 1968-1980, November 2009, 2 March 2012, 25 September 2012, and the six-flood list -- is a kinetic pair or a quote, never a number card.",
+    "ranges_are_never_stats": "Every range the narration speaks is drawn as a kinetic pair or a comparison, never squeezed into one number card: the 12-to-12.5-foot as-built height and the 10-to-11-foot water that broke it (KT-503), the 8.2-to-9.5-foot canal level at London Avenue (drawn as compbars against the 14.4-foot design height, its low end only and labelled as the canal water), the 6 a.m. to 9 a.m. window (KT-503), and hours-against-days (KT-803). The 50-to-500-year recurrence interval (KT-707) is narrated and deliberately not drawn.",
+    "breach_count_names_its_source": "KT-402 and episode_spec forbidden_claims forbid any single breach count stated as THE number. The ACT_1 comparison prints three counts with whose they are on the bar itself -- IPET 50 major breaches, IPET's own appendix 29 aggregated for repair, ASCE 4 that failed before overtopping -- and the card after it says four different numbers, none of them wrong. Team Louisiana's 'over 50' is narrated and not drawn, because 'over 50' is not a number a bar can carry honestly.",
+    "no_OP_section": "episode_spec's section_vocabulary lists OP, but narration_index has no OP chunks -- the brand opening is an overlay on the HOOK, not a spoken section, and the script's OP block carries no copy. A card there would have no window to live in.",
+    "quarantine": "Nothing on screen says a court found the levees or floodwalls negligently built: the ACT_4 cards say the case that reached trial was not about the floodwalls, that those were already immune and the plaintiffs did not contest it (KT-207), and the trial judge's quote is attributed to the failure to maintain the channel (KT-203). Nothing on screen leaves the negligence finding standing -- the affirmed/reversed card and the 'shielded by the DFE' card are both in ACT_4 (KT-301, KT-302, KT-304). Nothing on screen says the reversal means the Corps was careful; the card immediately before it is the statute's own 'whether or not the discretion involved be abused' (KT-303, KT-307). No card says the channel funnelled the surge -- the card says the funnel is a myth and the case was about erosion (KT-708, KT-107). No card resolves the IPET/ILIT disagreement; the card says two teams, the same ground, two mechanisms (KT-510). No card says the city flooded because the walls were overtopped -- two-thirds through breaches (KT-801) and 'not overtopped, below design height' (KT-501) are both drawn. The death figure is 1,118 in Louisiana with 135 missing as of August 2006, carrying its scope on the card (KT-1001, KT-1005); '1,833' and 'over 1,800' appear nowhere. No card mentions a bus, an evacuation or who should have moved whom (KT-1106). No card carries an organisation mark, a seal or a readable document.",
+    "act_4_selection": "ACT_4 runs 491 seconds and carries the channel, the trial finding, the appeal, the reversal and the closing verdicts; 17 cards is the spec ceiling, so the Gaubert 'susceptible to policy analysis' test (KT-305), the court's acknowledgement of the plaintiffs' evidence (KT-306), the ILIT three causes and 'no one group had a monopoly on responsibility' (KT-904, KT-905), the 'performed as designed' irony line (KT-903), the self-referential culture finding (KT-908) and the ages of the dead (KT-1006, KT-1008) are carried by the narration rather than by a card."
+  }
+}

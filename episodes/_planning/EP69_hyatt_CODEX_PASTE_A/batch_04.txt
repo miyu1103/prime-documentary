@@ -1,0 +1,89 @@
+EP69 hyatt — 画像発注 バッチA 4/8（15枚）
+区分: ACT_3　／　人物レーン 3枚
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, American Midwest between 1978 and 1988, tungsten interiors and flat midday daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous surfaces, painted steel, vellum, brass, cut stone, plaster and travertine, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, dimension callouts, drawing title block, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsed building, collapsing structure, rubble, debris, wreckage, ruined interior, rescue worker, ambulance, stretcher, injured person, blood, body, casualty, funeral, firefighter, hospital, crowded hotel lobby, packed function room, crowd of people indoors, courtroom interior, gavel, judge's bench, scales of justice, hourglass, a handshake, police officer, uniform, handcuffs, prison bars, mobile phone, smartphone, laptop, flat-panel monitor, LED work lamp, cordless power tool, hi-vis safety vest, modern safety helmet, CAD screen, car built after 1990, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いているプロンプトがあります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+★[HSTYLE] で始まるプロンプトは人物レーンです。[HSTYLE] の中身はプロンプト本文の一部として
+　そのまま使ってください（置換不要）。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・寸法・手書き・署名・図面のタイトル欄を一切描かない
+・**崩落・瓦礫・救助・負傷者・遺体・満員のロビーを一切描かない**
+・**1978〜1988年のアメリカ中西部。**携帯電話・ノートPC・薄型モニタ・LED投光器・
+　充電式電動工具・蛍光色の安全ベスト・1990年以降の車を描かない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+・**「The same …」で始まるプロンプト（H004 / H051 / H053 / H054）は、直前の1枚と
+　同じ部屋・同じ画角・同じレンズでなければなりません。**別々に生成すると必ずずれます。
+　ずれた場合は作り直さず、元の1枚（H003 / H048 / H049）を色調整だけで作り直してください。
+
+──────── プロンプト ────────
+
+■ H046.png
+The unfinished roof structure of a large atrium seen from the floor below, long steel purlins running across the frame with empty glazing frames between them and bright white sky showing through, timber props standing up from the deck at intervals. Bare, incomplete, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H047.png
+One bent length of steel angle lying alone on a swept concrete floor in an unfinished interior, the kink in the middle of it clearly visible, flat daylight from a large opening at the far end. The floor around it is clean and empty. Nothing else in the frame and nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H048.png
+An empty ballroom in an American hotel of about 1980, a polished wooden dance floor filling the middle of the frame, a low carpeted bandstand at the far end with no instruments and no musicians on it, banquet chairs stacked neatly against the side wall, warm tungsten light from ceiling fittings. Completely empty: nobody anywhere in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H049.png
+A wide of a large empty hotel atrium in mid-afternoon, tan travertine floor, planting boxes, a low fountain, five storeys of open air above with a glazed roof, strong warm daylight coming down through the glass and lying in long rectangles across the floor. Camera at standing height at one end of the room. Not one person anywhere in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H050.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A caretaker in plain work clothes crossing the middle of a large empty ballroom floor at midday, seen from across the room so the figure is small in the frame and turned away from the camera, a folded cloth over one shoulder. Warm light from high windows, the polished floor reflecting the figure. Nobody else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H051.png
+The same ballroom with round banquet tables and chairs now set out in rows across the floor, seen from the same position at the same height in the same warm tungsten light, every chair empty and nobody anywhere in the room. Plain white cloths, no decoration, no place settings Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H052.png
+A low carpeted bandstand in an empty function room with a single microphone stand on it and nothing else, no instruments, no music stands, no musicians, seen straight on from the floor with warm light from above. The room in front of it is empty Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H053.png
+The same large empty hotel atrium in late afternoon, the daylight through the glazed roof now lower and more amber, the shadows longer and running across the tan floor at a steep angle, the planting darker. Camera at standing height at the same end of the room as before. Not one person anywhere in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H054.png
+The same large empty hotel atrium in early evening, daylight almost gone from the glazed roof, the interior lamps now on and throwing warm pools onto the tan floor, the upper storeys falling into blue shadow. Camera at standing height at the same end of the room as before. Not one person anywhere in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H055.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A hotel porter in a plain dark jacket standing at the edge of a wide empty carpeted floor with his hands behind his back, framed from the waist up and turned toward the camera, an ordinary tired neutral expression, ordinary period haircut. Warm interior light. No badge, no name plate, no insignia anywhere on the jacket. The room behind him is empty Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H056.png
+A polished wooden dance floor seen close from a low angle, the grain and the scuffs of the boards running away from the camera, warm light glancing across it from the left so the surface reads as a long bright plane. The far edge of the floor and the darkness beyond are out of focus. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H057.png
+A tall stack of banquet chairs pushed against a papered wall in an empty function room, seen from a low three-quarter angle, the frames making a repeating pattern of legs and seat backs, one warm lamp on the wall above them. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H058.png
+A plain service corridor behind a hotel function room, painted breeze block walls, a run of grey vinyl floor, three identical closed doors along one side and a bare bulkhead light overhead, running away from the camera to a corner. No signage of any kind. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H059.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. Two adult hands setting a row of glasses out along a long table under a plain white cloth, forearms in rolled white sleeves entering from the right, no head or body in frame, the near glasses sharp and the far end of the table out of focus. Warm interior light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H060.png
+One thin steel hanger rod seen against a dark ceiling from a low angle, standing very slightly out of vertical, a hard narrow light running down one side of it. The ceiling behind is almost black. Nothing else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: H001.png）で保存してください。
+保存先 H:\pd-media\assets\ai\hyatt\
+長辺 3840px 以上・16:9・PNG。

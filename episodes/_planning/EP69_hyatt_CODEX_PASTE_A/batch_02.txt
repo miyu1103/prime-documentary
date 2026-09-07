@@ -1,0 +1,89 @@
+EP69 hyatt — 画像発注 バッチA 2/8（15枚）
+区分: ACT_1, ACT_2　／　人物レーン 3枚
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, American Midwest between 1978 and 1988, tungsten interiors and flat midday daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous surfaces, painted steel, vellum, brass, cut stone, plaster and travertine, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, dimension callouts, drawing title block, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsed building, collapsing structure, rubble, debris, wreckage, ruined interior, rescue worker, ambulance, stretcher, injured person, blood, body, casualty, funeral, firefighter, hospital, crowded hotel lobby, packed function room, crowd of people indoors, courtroom interior, gavel, judge's bench, scales of justice, hourglass, a handshake, police officer, uniform, handcuffs, prison bars, mobile phone, smartphone, laptop, flat-panel monitor, LED work lamp, cordless power tool, hi-vis safety vest, modern safety helmet, CAD screen, car built after 1990, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いているプロンプトがあります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+★[HSTYLE] で始まるプロンプトは人物レーンです。[HSTYLE] の中身はプロンプト本文の一部として
+　そのまま使ってください（置換不要）。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・寸法・手書き・署名・図面のタイトル欄を一切描かない
+・**崩落・瓦礫・救助・負傷者・遺体・満員のロビーを一切描かない**
+・**1978〜1988年のアメリカ中西部。**携帯電話・ノートPC・薄型モニタ・LED投光器・
+　充電式電動工具・蛍光色の安全ベスト・1990年以降の車を描かない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+・**「The same …」で始まるプロンプト（H004 / H051 / H053 / H054）は、直前の1枚と
+　同じ部屋・同じ画角・同じレンズでなければなりません。**別々に生成すると必ずずれます。
+　ずれた場合は作り直さず、元の1枚（H003 / H048 / H049）を色調整だけで作り直してください。
+
+──────── プロンプト ────────
+
+■ H016.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. Two gloved hands guiding a length of steel channel section down onto a workshop bench, forearms in worn cotton sleeves entering the frame from the right, no head or body visible, the hands and the end of the steel sharp and the shop behind them dark and soft. Ordinary heavy leather work gloves, scuffed Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H017.png
+The cut end of a hollow rectangular steel box section seen straight on, filling the middle of the frame, so the rectangle of steel wall and the dark hollow inside it are both clearly readable. The cut face is bright where a saw has been across it, the outer faces dull with mill scale. Plain dark background, one soft light from above left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H018.png
+A threaded steel rod passing down through a hole in the underside of a hollow steel box section, with a flat washer and a hexagonal nut drawn up tight against the steel, seen close from below and slightly to one side so the nut, the washer, the underside of the section and three or four turns of exposed thread below the nut are all in frame together. One hard light from the side, deep shadow above Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H019.png
+Six identical thin steel rods hanging vertically in a row from a dark ceiling structure in a large interior space, evenly spaced, receding away from the camera so they read as a rhythm of bright vertical lines against darkness. Nothing hangs on them and nobody is in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H020.png
+A large tilted drawing board in a quiet drawing office of about 1978, seen from a standing position just behind and to one side, a parallel rule lying across a big sheet of blank vellum, an adjustable goose-neck lamp throwing a warm pool of light onto the sheet, a jar of pencils and a scale rule at the top edge, and beyond it the dark rest of the room. The sheet is entirely blank. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H021.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A technician in his late twenties in a plain shirt and a narrow tie standing in a drawing office in about 1979, holding a large rolled drawing upright against his shoulder, framed from the waist up and turned three-quarters toward the camera, looking off to one side with a plain unremarkable expression, ordinary period haircut. Flat daylight from a window on the left. The rolled sheet is plain paper with nothing showing on it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H022.png
+A set of drawing instruments laid out on the corner of a drawing board, seen from directly above: a pair of steel dividers, a triangular scale rule, two sharpened pencils, an eraser shield and a brass pencil sharpener, all on plain vellum. Warm tungsten light from the upper left, long soft shadows. No markings on the rule and no printing anywhere Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H023.png
+A desk-top electronic calculator of the middle 1970s, beige plastic with a small dark display and large square keys, sitting on a pad of plain engineering paper beside a mug, warm lamp light from the left. The display is dark and unreadable and the pad is completely blank. Shallow focus, the office behind out of focus Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H024.png
+A thick hardback technical volume with a plain dark cloth binding and a completely blank spine lying closed on a wooden desk under a lamp, a pencil across the cover, deep warm shadow around it. Nothing is printed anywhere on the book Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H025.png
+A drawing office at night, one large empty drawing board in the middle of the frame with the lamp switched off, a wooden stool pushed back from it at an angle, cold blue light from a window at the far end and no other light. The board is bare. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H026.png
+The inside of a steel fabrication shop in the late 1970s, a long empty aisle running away from the camera between racks of structural steel sections, an overhead travelling crane on rails high up, dusty daylight coming in through high dirty windows, oil-dark concrete floor. Nobody in the frame and no machinery running Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H027.png
+A large flat drawing table in a fabricator's office with a big sheet of plain paper spread across it and weighted at all four corners by steel offcuts, seen from a standing position at one corner so the sheet runs away in perspective. Bare overhead light. The sheet has nothing on it. A window with a workshop beyond it out of focus in the background Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H028.png
+Two threaded steel rods lying parallel and close together on a dark oiled bench, one of them roughly twice the length of the other, both the same diameter, seen from directly above with one hard light raking across so both threads read. A flat washer and a hexagonal nut lie beside the shorter one. Nothing else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H029.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. Two bare adult hands flattening a large rolled drawing out across a table, one hand pressing the near edge down and the other running along the curl at the far side, forearms in rolled shirt sleeves entering from the bottom of the frame, no head or body visible. Warm lamp light. The sheet is plain and entirely unmarked Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H030.png
+An exploded arrangement laid out in a neat row on a dark surface, seen from directly above: a length of threaded rod, a flat washer, a hexagonal nut, and beside them a short offcut of hollow rectangular steel box section with a drilled hole in its face. Even soft top light, each object casting its own shadow, generous empty space between them Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: H001.png）で保存してください。
+保存先 H:\pd-media\assets\ai\hyatt\
+長辺 3840px 以上・16:9・PNG。

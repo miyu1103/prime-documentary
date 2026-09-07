@@ -1,0 +1,217 @@
+{
+  "_what_this_is": "The register of running and planned channel experiments. Every number a thread needs in order not to destroy an experiment lives here, not in prose. Read it with `py -3.11 scripts/pd_experiments.py`. Each entry validates against schemas/experiment.schema.json.",
+  "_why_this_exists": "On 2026-08-12 a repackaging instruction was written that would have retitled 6 of the 13 control videos of a running experiment. It was caught by one agent reading one markdown file. The control list existed only inside a receipt's prose, so nothing mechanical could refuse the write. This file is that mechanism.",
+  "_rules": [
+    "A number in this file is the only copy. If prose disagrees with it, this file wins.",
+    "locked_video_ids blocks writes. scripts/pd_experiments.py --check <id> exits 2 on a hit; apply_title_batch.py calls it before the first write.",
+    "read_on is a date, not an intention. scripts/pd_brief.py prints an experiment that is due.",
+    "Do not delete a completed experiment. Set status and fill result. The record of what was tried is the asset."
+  ],
+  "version": "v001",
+  "updated_at": "2026-08-23",
+  "measured_baselines": {
+    "_note": "Every figure below was measured, with the command or file that produced it. Do not re-derive these; do not quote a figure without its source.",
+    "long_form_thumbnail_impressions_28d": {
+      "value": 64975,
+      "source": "scripts/_yt_studio_video_ctr.20260819.json, summed over rows with length_seconds>=300 (68 rows). Window: YouTube Studio default trailing 28 days, file mtime 2026-08-19 22:38."
+    },
+    "long_form_ctr_pct_impression_weighted": {
+      "value": 1.58,
+      "source": "same file; sum(imp*vtr)/sum(imp)"
+    },
+    "long_form_ctr_pct_median": {
+      "value": 1.21,
+      "source": "same file; median of VIDEO_THUMBNAIL_IMPRESSIONS_VTR over 68 long-form rows"
+    },
+    "long_form_videos_below_2pct_ctr": {
+      "value": "53 of 68",
+      "source": "same file"
+    },
+    "long_form_videos_statistically_readable": {
+      "value": 13,
+      "source": "same file; rows where imp*vtr/100 >= 20 estimated impressed views. Below that threshold AVERAGE_WATCH_TIME_FROM_VIDEO_THUMBNAIL_IMPRESSIONS is unusable -- one 2155 s video reports a 2252 s average (104.5%) off a single impressed view."
+    },
+    "long_form_lifetime_views_median": {
+      "value": 11,
+      "source": "runs/_cache/content_genome_perf.v001.json, captured 2026-08-11; 53 long-form videos, 1805 views total, 7 subscribers"
+    },
+    "shorts_subs_per_1000_views": {
+      "value": 1.22,
+      "source": "same file; 54 shorts, 8206 views, 10 subscribers"
+    },
+    "long_form_subs_per_1000_views": {
+      "value": 3.88,
+      "source": "same file; 53 long-forms, 1805 views, 7 subscribers"
+    },
+    "long_form_traffic_mix": {
+      "value": "RELATED_VIDEO 1026 / SUBSCRIBER 324 / YT_SEARCH 188 / NO_LINK_OTHER 149 / PLAYLIST 57 / EXT_URL 34 / YT_OTHER_PAGE 22 / YT_CHANNEL 3 / NOTIFICATION 2",
+      "source": "same file, traffic block. There is no BROWSE_FEATURES row and no Shorts-derived row.",
+      "caveat": "Absence of a row is not proof the API would never return one. Treat as 'not observed', not 'measured zero'."
+    },
+    "instrument_disagreement": {
+      "what": "channel-total thumbnail impressions",
+      "values": "43973 (scripts/_yt_studio_ctr_summary.json) vs 64975 (per-video file, long-form only), both captured 2026-08-19 22:38",
+      "resolution": "Use the per-video file. The summary scraper takes the FIRST of four VIDEO_THUMBNAIL_IMPRESSIONS values (43973 / 1632 / 0 / 26296) and carries no period field.",
+      "also_unusable": "EXTERNAL_VIEWS: the channel total (11089) exceeds total channel views (10011). Meaning undetermined; not used."
+    }
+  },
+  "experiments": [
+    {
+      "experiment_id": "title-band-2026-08-10",
+      "owner_visible_name": "back-catalogue title rewrite (39 titles)",
+      "status": "active",
+      "hypothesis": "The 59-100 character Subject+Verb+Consequence title band, imported from Unseen (1.41M subs), raises PD's long-form CTR.",
+      "change": "39 back-catalogue titles rewritten 2026-08-10 ~23:55 JST via scripts/apply_title_batch.py.",
+      "primary_metric": "paired delta CTR (VIDEO_THUMBNAIL_IMPRESSIONS_VTR), treated vs control, restricted to videos with >=150 before-impressions",
+      "secondary_metrics": ["VIDEO_THUMBNAIL_IMPRESSIONS", "views"],
+      "confounders": [
+        "Control skews low: treated holds 43923 before-impressions, control 12362. Expect regression to the mean to flatter the control.",
+        "The channel's four best titles (CTR 4.40 / 3.96 / 3.77 / 3.12%) are all inside the treated set.",
+        "PD's own data has already failed twice to show a title-shape effect (receipt section 5: treated +0.11pp, control -0.04pp, n=15/13)."
+      ],
+      "start_condition": "applied 2026-08-10",
+      "stop_condition": "read on 2026-09-07 (28 days, so the trailing window contains no pre-change impressions)",
+      "read_on": "2026-09-07",
+      "arms": {
+        "treated": {
+          "n": 30,
+          "derived_from": "episodes/_planning/measurements/TITLE_APPLY_39.applied.v001.json",
+          "note": "39 written; 30 of them are long-forms with >=150 before-impressions and form the treated arm."
+        },
+        "control": {
+          "n": 13,
+          "video_ids": [
+            "bSnyfsulna8", "tYZuE76Hwdc", "yRwxBfrOY5o", "6ozsIfwqrP0", "Enok7A7wGBA",
+            "m-uWzgWHGPg", "2pLWw_vhfI8", "GGW1SIAAgkY", "YhEJHK279f8", "Iw-EPUD2nHg",
+            "4FlCaOVpln0", "PfdEpNQyaQQ", "Wo-SvvGsv8g"
+          ]
+        }
+      },
+      "locked_video_ids": {
+        "title": {
+          "ids_from_arm": ["control", "treated"],
+          "until": "2026-09-07",
+          "reason": "Retitling either arm before the read destroys the comparison."
+        },
+        "thumbnail": {
+          "ids_from_arm": ["control", "treated"],
+          "until": "2026-09-07",
+          "reason": "A thumbnail change moves CTR for a non-title reason and contaminates the arm it lands in."
+        }
+      },
+      "verdicts": [
+        {"when": "treated mean dCTR exceeds control by >= +0.30 pp", "verdict": "WIN", "then": "keep the band in the spec and apply it to new episodes"},
+        {"when": "treated - control within +/-0.30 pp", "verdict": "NULL", "then": "retire the band as a HARD gate, keep it as a default, move the effort to thumbnails"},
+        {"when": "treated falls short of control by >= 0.30 pp", "verdict": "LOSS", "then": "roll back, starting with the four top performers"}
+      ],
+      "noise_floor_pp": 0.30,
+      "noise_floor_basis": "the spread already seen among untouched controls between 2026-07-25 and 2026-08-10 (-0.52 to +0.53)",
+      "receipt": "episodes/_planning/measurements/TITLE_EXPERIMENT_RECEIPT.v001.md",
+      "rollback": "py -3.11 scripts/apply_title_batch.py --rollback episodes/_planning/measurements/TITLE_APPLY_39.applied.v001.json",
+      "result": null
+    },
+    {
+      "experiment_id": "thumbnail-2026-09-07",
+      "owner_visible_name": "thumbnail-only rewrite (the untested lever)",
+      "status": "planned",
+      "hypothesis": "The thumbnail, not the title, is the ceiling on PD's CTR.",
+      "change": "Redraw the thumbnail and NOTHING else on 12 long-forms with >=150 before-impressions; 12 matched long-forms left untouched as control. Titles, descriptions and tags are not touched on either arm.",
+      "primary_metric": "paired delta CTR (VIDEO_THUMBNAIL_IMPRESSIONS_VTR), treated vs control, restricted to videos with >=150 before-impressions",
+      "secondary_metrics": ["VIDEO_THUMBNAIL_IMPRESSIONS"],
+      "confounders": [
+        "Cannot start before 2026-09-07 without contaminating title-band-2026-08-10.",
+        "Same low-n problem as the title experiment: only a large effect clears the 0.50 pp bar."
+      ],
+      "standing_evidence": "Enok7A7wGBA (Police Raided the Wrong House) has a fully rule-compliant 62-character title, was deliberately left untouched, and went 0.45% CTR (2026-08-10) to 0.38% (2026-08-19). The title rules are satisfied and it is still the worst high-impression long-form on the channel.",
+      "start_condition": "2026-09-07, immediately after title-band-2026-08-10 is read",
+      "stop_condition": "read on 2026-10-05 (28 days after application)",
+      "read_on": "2026-10-05",
+      "verdicts": [
+        {"when": "treated mean dCTR exceeds control by >= +0.50 pp", "verdict": "WIN", "then": "thumbnails are the lever; move production effort there"},
+        {"when": "below +0.50 pp", "verdict": "NULL/LOSS", "then": "the thumbnail is not the lever either. Stop spending on packaging and bet on external feed (see docs: pd-feeder-rail)"}
+      ],
+      "abort_condition": "a treated video's CTR falls 0.50 pp or more below its own pre-change figure -- roll that thumbnail back and record it",
+      "noise_floor_pp": 0.30,
+      "result": null
+    },
+    {
+      "experiment_id": "publish-pace-2026-08-23",
+      "owner_visible_name": "long-form pace: 1 per day -> 2 per week",
+      "status": "planned",
+      "hypothesis": "Publishing volume is not buying impressions. Fewer, better-packaged uploads will hold total impressions while raising impressions per upload.",
+      "change": "Long-form publishing drops from daily (11 consecutive days 2026-08-12..08-22) to two per week.",
+      "primary_metric": "long-form VIDEO_THUMBNAIL_IMPRESSIONS per week",
+      "secondary_metrics": ["impressions per upload", "subscribersGained"],
+      "confounders": [
+        "Whether low-CTR uploads harm the channel as a whole is NOT MEASURED anywhere in this repository. This experiment does not test that."
+      ],
+      "start_condition": "2026-08-23",
+      "stop_condition": "read on 2026-09-20",
+      "read_on": "2026-09-20",
+      "baseline": {
+        "long_form_impressions_per_week": 16244,
+        "derivation": "64975 impressions / 28 days * 7"
+      },
+      "verdicts": [
+        {"when": "weekly impressions >= 16244 and impressions per upload at least doubled", "verdict": "WIN", "then": "keep the slower pace"},
+        {"when": "weekly impressions fall more than 30% below baseline (< 11371)", "verdict": "LOSS", "then": "revert to daily publishing"}
+      ],
+      "result": null
+    },
+    {
+      "experiment_id": "disaster-slate-2026",
+      "owner_visible_name": "the five finished disaster episodes (EP72/73/74/75/76)",
+      "status": "planned",
+      "hypothesis": "PD's subject, not its craft, is the constraint. Disaster and system-failure topics have live external demand that police/court doctrine does not.",
+      "change": "Publish EP72 lacmegantic, EP73 uri, EP74 itaewon, EP75 lahaina, EP76 morandi. All are already built or near-built; no new production is required.",
+      "primary_metric": "median VIDEO_THUMBNAIL_IMPRESSIONS_VTR across the five",
+      "secondary_metrics": ["median watch percentage", "subscribersGained"],
+      "supporting_measurement": {
+        "demand_probe": "episodes/_planning/measurements/TOPIC_DEMAND_PROBE_SLATE50_batch1-5.json (49 topics, measured 2026-08-03 and 2026-08-20): 36 of 49 have a competitor above 1,000,000 views; 12 of 49 have a video above 100,000 views published within the last 365 days.",
+        "pd_own_best": "OceanGate (marQjsCagh0): 4806 impressions, CTR 3.14%, watch 38.8% -- first on the channel by watch-seconds per 1000 impressions (26459). The same topic tops the demand probe (titan submersible: median 1,028,373).",
+        "honesty": "n=1. The channel's own record (docs/PD_EDITORIAL_DIRECTION.v002.md section 4) says OceanGate's margin may be carried by an external feed rather than by the topic. This experiment is how that becomes answerable."
+      },
+      "confounders": [
+        "The subject pivot already began around EP57; episodes published 2026-08-12..08-22 are already mixed-subject, so the police-vs-disaster contrast is not clean.",
+        "These five are also the longest episodes, so runtime and subject move together."
+      ],
+      "start_condition": "first of the five publishes",
+      "stop_condition": "28 days after the fifth publishes",
+      "read_on": "publish_of_fifth + 28 days",
+      "verdicts": [
+        {"when": "median CTR >= 2.5% and median watch >= 30%", "verdict": "WIN", "then": "the subject is the lever; commission the next slate from the demand probe"},
+        {"when": "median CTR < 2.0%", "verdict": "LOSS", "then": "the disaster pivot is not working either. Abandon the topic hypothesis."}
+      ],
+      "result": null
+    }
+  ],
+  "stopped": [
+    {
+      "what": "TikTok",
+      "decided_at": "2026-08-23",
+      "measurement": "v1: 152 videos, all 0 views, account abandoned (docs/PD_CANON.md section 1). v2: 196 rendered, 12 scheduled, last scheduled 2026-08-19 (py -3.11 scripts/daily_status.py).",
+      "cost_of_being_wrong": "platform diversification, and 196 already-rendered vertical masters written off as sunk cost",
+      "reversible": true,
+      "how_to_reverse": "the render and scheduling tooling under scripts/tiktok/ is untouched"
+    },
+    {
+      "what": "new Shorts production",
+      "decided_at": "2026-08-10 (owner), reaffirmed 2026-08-23",
+      "measurement": "Shorts hold 82% of channel views (8206 of 10011) but 1.22 subscribers per 1000 views against long-form's 3.88, and no Shorts-derived row appears in long-form traffic.",
+      "cost_of_being_wrong": "82% of the channel's views and 10 of its 17 subscribers",
+      "reversible": true,
+      "note": "The existing YouTube Shorts backlog (37 unposted) still ships on the normal daily schedule. Only NEW production stops."
+    }
+  ],
+  "not_stopped_and_why": [
+    {
+      "what": "full visual QC of every footage clip and plate",
+      "why": "EP65 marmet shipped with an identifiable real face in archive footage. Filename screening, pool QC and every machine gate passed it (docs/PD_CANON.md section 7, 20c). Automatic face detection is measured unusable (20d). Only reading the frames works, and a ban ends the business.",
+      "binding": "config/ship_policy.v001.json real_person_likeness"
+    },
+    {
+      "what": "30-minute runtime",
+      "why": "Of the 13 statistically readable long-forms, two are over 25 minutes (OceanGate 36 min, D.B. Cooper 29.7 min) and they rank 1st and 3rd by watch-seconds per 1000 impressions. n=2 is thin, but cutting the runtime now would cut the shape of the two best films. Reduce the NUMBER of episodes instead."
+    }
+  ]
+}

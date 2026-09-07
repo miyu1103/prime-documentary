@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 279,
+  "episode_id": "PD-2026-068-pinto",
+  "slug": "pinto",
+  "loop": true,
+  "loop_join": "The final beat p10 (isCta, rewind, fast) is short279_10.png, which is byte-identical to the opening p01 short279_01.png -- both are the same plate, scene R097: two hands setting down a thick stack of paper on a counter beside a heavy rubber stamp. It is held under the FULL CASE card and rewound to the last frame. Frame 0 is that same counter, so the loop closes on the identical picture the short opened on.",
+  "second_watch_detail": "The stack of paper and stamp on a counter reads on the first pass as generic office filing. Once L4-L7 explain that a grand jury indicted the company itself and that the maximum penalties came to thirty-six thousand dollars, the same modest stack of paper being stamped reads as the entire weight the case could bring down on a corporation over three deaths -- a stamp, not a sentence.",
+  "funnel_question_left_for_longform": "What does a fine of that size mean against a company of that size?",
+  "funnel_long_title": "Everyone Quotes the Ford Pinto Memo.",
+  "funnel_long_video_id": "yW_-diNLfO8",
+  "description_line_1": "▶ FULL CASE: Everyone Quotes the Ford Pinto Memo. | https://youtu.be/yW_-diNLfO8",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "Everyone Quotes the Ford Pinto Memo.",
+    "ctaLongThumbSrc": "shorts/short279/short279_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What does a fine of that size mean against a company of that size? The full case is here: https://youtu.be/yW_-diNLfO8",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. The loop_join and second_watch_detail are read off the actual rendered frames (short279_01.png / short279_10.png, verified byte-identical by hash, scene R097) and the file-header 'LEAVES FOR THE LONG-FORM' comment plus the CUTS list in remotion/src/data/short279.ts; the CTA block is copied verbatim from that same file's ctaHeadline/ctaLongTitle/ctaLongThumbSrc. funnel_long_title is the short's own first sentence of the live long-form title (full live title on YouTube is longer than the 60-char cap this field allows). The standing question was checked against episodes/PD-2026-068-pinto/09_package/short279_lines.v001.json: 'fine', 'size', 'mean' and 'against' do not appear anywhere in the short's spoken lines (only the different word-form 'fines' does), so the corridor stays open. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet; the short is not uploaded yet either."
+}

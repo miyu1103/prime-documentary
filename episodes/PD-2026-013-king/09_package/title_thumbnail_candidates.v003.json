@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-013-king",
+  "slug": "king",
+  "revision": "v003",
+  "generated_at": "2026-06-23T17:16:27.824791+00:00",
+  "status": "selected_scheduled_thumbnail_replacement",
+  "source_note": "Requested THUMB-01..06 files were not present under H:/pd-media/assets/ai/thumbs/king; candidates were rendered from existing King AI stills.",
+  "selection": {
+    "selected_id": "E",
+    "selected_title": "DNA AT ARREST?",
+    "selected_file": "episodes/PD-2026-013-king/09_package/thumbnail.selected.v003.png",
+    "selected_sha256": "sha256:34a96ba102e0bf2484a32d2a193adb54f114050cd56a1d0cb9204b22183fc649",
+    "reason": "Selected after owner feedback asking for a brighter, flashier thumbnail. Keeps the close-up swab concept but raises exposure, saturation, gold/cyan glow, and mobile contrast while preserving the arrest-stage question framing."
+  },
+  "title_options": [
+    {
+      "id": "A",
+      "title": "Get Arrested - Even by Mistake - and They Take Your DNA",
+      "thumbnail_text": "DNA AT / ARREST?",
+      "file": "episodes/PD-2026-013-king/10_thumbnail/thumbnail.king_option_A.v001.png",
+      "background_static": "king/SPN-0004.png",
+      "scores": {
+        "contrast_single_subject": 23,
+        "conflict_emotion": 24,
+        "title_space": 24,
+        "mobile_legibility": 25,
+        "brand_fit": 24,
+        "accuracy": 25,
+        "total": 145
+      },
+      "assessment": "Safest legal framing: it asks the arrest-stage DNA question without implying the swab caused the assault arrest.",
+      "sha256": "847d4ff2f3062afd24807be6c0569e1ff859bb6053272adcef8b3a8f1147db16"
+    },
+    {
+      "id": "B",
+      "title": "The Supreme Court Said Police Can Swab Your DNA at Arrest",
+      "thumbnail_text": "POLICE CAN / SWAB DNA",
+      "file": "episodes/PD-2026-013-king/10_thumbnail/thumbnail.king_option_B.v001.png",
+      "background_static": "king/SPN-0010.png",
+      "scores": {
+        "contrast_single_subject": 25,
+        "conflict_emotion": 24,
+        "title_space": 24,
+        "mobile_legibility": 25,
+        "brand_fit": 25,
+        "accuracy": 24,
+        "total": 147
+      },
+      "assessment": "Selected. Highest browse clarity and mobile read while staying accurate: it states the holding, not the arrest reason.",
+      "sha256": "d5181a0a5b78ab3737180c4bf58022a3f77d2d762c4716e37642830851061ac4"
+    },
+    {
+      "id": "C",
+      "title": "Your DNA, a National Database, and One Vote",
+      "thumbnail_text": "YOUR DNA / DATABASE",
+      "file": "episodes/PD-2026-013-king/10_thumbnail/thumbnail.king_option_C.v001.png",
+      "background_static": "king/SPN-0011.png",
+      "scores": {
+        "contrast_single_subject": 22,
+        "conflict_emotion": 21,
+        "title_space": 24,
+        "mobile_legibility": 25,
+        "brand_fit": 24,
+        "accuracy": 25,
+        "total": 141
+      },
+      "assessment": "Accurate and clean, but the conflict is more abstract than option B.",
+      "sha256": "acc8304f2b2d3db7888c047d38ed4e100613c08a5c90ce099ea91a0da1a2d785"
+    },
+    {
+      "id": "D",
+      "title": "DNA AT ARREST?",
+      "thumbnail_text": "DNA AT / ARREST?",
+      "file": "episodes/PD-2026-013-king/10_thumbnail/thumbnail.king_option_D.v001.png",
+      "background_static": "king/SPN-0010_02.png",
+      "scores": {
+        "contrast_single_subject": 25,
+        "conflict_emotion": 25,
+        "title_space": 25,
+        "mobile_legibility": 25,
+        "brand_fit": 24,
+        "accuracy": 25,
+        "total": 149
+      },
+      "assessment": "Selected v002. The swab is the focal object, the text is shorter, and the image reads faster than the generic DNA helix option.",
+      "sha256": "67371777c116bf358c87b9dad9d669cd5d5ab47828b072c7b0eb68aa7f52c4b0"
+    },
+    {
+      "id": "E",
+      "title": "DNA AT ARREST?",
+      "thumbnail_text": "DNA AT / ARREST?",
+      "file": "episodes/PD-2026-013-king/10_thumbnail/thumbnail.king_option_E_bright.v001.png",
+      "background_static": "king/SPN-0010_02.png",
+      "render_props": {
+        "tone": "bright",
+        "variant": "left"
+      },
+      "scores": {
+        "contrast_single_subject": 26,
+        "conflict_emotion": 25,
+        "title_space": 25,
+        "mobile_legibility": 26,
+        "brand_fit": 25,
+        "accuracy": 25,
+        "total": 152
+      },
+      "assessment": "Bright replacement for v002: stronger exposure and gold/cyan energy improve browse impact while keeping the swab as an arrest-stage booking question, not the reason for arrest.",
+      "sha256": "34a96ba102e0bf2484a32d2a193adb54f114050cd56a1d0cb9204b22183fc649"
+    }
+  ],
+  "rights_gate": {
+    "real_person_likeness": false,
+    "judge_likeness": false,
+    "deepfake": false,
+    "symbolic_ai_reconstruction": true,
+    "commercial_use_ok": true,
+    "accuracy_guard": "Assault arrest is separated from later database hit; no thumbnail text says or implies DNA was the arrest reason."
+  }
+}

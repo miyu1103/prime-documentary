@@ -1,0 +1,1127 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-073-uri",
+  "source_revision": "raw_codex_v001",
+  "generated_at": "2026-08-20T21:21:20.362598+00:00",
+  "human_review_status": "pending_owner_review",
+  "review_instructions": [
+    "Reject any casualty, grief, hospital, funeral, grave, or person in medical distress.",
+    "Reject any face that reads as a specific real person.",
+    "Reject any readable glyph, numeral, logo, emblem, badge, seal, or licence plate.",
+    "Reject wrong snow geography, deep snow, alpine or northern-city cues.",
+    "Reject courtroom furniture and golden-hour or postcard lighting."
+  ],
+  "agent_preliminary_review": {
+    "status": "complete_at_contact_sheet_and_targeted_full_resolution_scale",
+    "reject_recommended_count": 8,
+    "review_required_count": 4,
+    "not_flagged_count": 108,
+    "note": "This is not owner acceptance and does not clear any plate for staging or publication."
+  },
+  "plates": [
+    {
+      "id": "U001",
+      "sha256": "7808830e2f6ce4cf18dd78e351cf206801a252a58bd5186f1318fe255fbb3e75",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "reject_recommended",
+      "agent_reasons": [
+        "Text-like UI glyphs appear across multiple monitors; a storefront sign also reads as generated lettering."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U002",
+      "sha256": "dc7f90491a58c9fcca2f9d48f91b1477d0fa32dbfab21b1ccc711fbe6965ddc3",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "review_required",
+      "agent_reasons": [
+        "Telephone and blurred control-room screens need owner confirmation for residual glyphs or labels."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U003",
+      "sha256": "7115077fda009aa4abb15550e1f3c3faefcf548befb0a204e1d50c96bb72fd1c",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U004",
+      "sha256": "bba75c7494803eea88a637bedf06780cf3963b513770da57e792fe32c48699af",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U005",
+      "sha256": "6376340cfac1ad0ebc9a113f104711fb54827e3bad62ccc0e8bee673424529ba",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U006",
+      "sha256": "2addc5d66a60e599aa07611cb3b7aa26ff294684222d5d2ff8d711715d684a26",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U007",
+      "sha256": "dc64265c6d9044d697467905e7b68960616cf389cdabbf3740068aedc087d2c8",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U008",
+      "sha256": "2e74572e973d5a98936d793c289e455b1f075451048c6a91ad69c71a0fd7fa93",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U009",
+      "sha256": "d1defa2eb762b256a6bb28b92c3b77cf7abe084bfaab7e71317b39f1da518b74",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U010",
+      "sha256": "d644a1d464910822fa9b98f2b2a6a1ed749770b207207a6838c142e5afbefac7",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U011",
+      "sha256": "d31d7e855eda1e5c8e17782cfb77523fad0b50c5eee54de92622db8adc5fd044",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "reject_recommended",
+      "agent_reasons": [
+        "Strong orange sunset glow conflicts with the explicit no-golden-hour and no-sunset-glow rule."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U012",
+      "sha256": "e7fb1a9b26f643d0a2f1ac16fcbf285b737bc1429b56384a5f5c90865f6416ad",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U013",
+      "sha256": "aca7e03e74498d346dc4ceab5e3a1f252589d9e96fa330b361612e4a20e2f184",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U014",
+      "sha256": "b5f3536051701a3e2c2b665ea17934b6177ec868ec330a242af1828c3b3a7359",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U015",
+      "sha256": "f187824ff7ed1fc5e132e50d072e8c67c4662624ea1c538e673690f0d03efdbc",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U016",
+      "sha256": "37f3b5157d6a37404405a50978ea5822e25dc5981d3040d87e47c8bc5bbfc7ac",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U017",
+      "sha256": "606b31611fd1e131d131f514efc54e7642c242561e38c81ba5714f22515240c7",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U018",
+      "sha256": "5f5ac130d4b0cedd7ae3d31c8044aa101fc41dac656f89e9b6c6157d0f0b8be2",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "review_required",
+      "agent_reasons": [
+        "Skyline may read as contemporary rather than the requested 1965 register."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U019",
+      "sha256": "b26fd8b4324ced0746670b41004d3ee588517d7683ad6f5fa5922f417ba1d4a3",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U020",
+      "sha256": "c5fd8294cbd00d18bec4a505ea7cdaf58c14fe9fb5b112a1e45ae1fdee350fc4",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U021",
+      "sha256": "af7b6557bf849a196ebd67dbed3ce4c2f69942ba208a9a1617ef57a6cf1f8a54",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U022",
+      "sha256": "8bdfe8c09586faba58dcc2c0bd486b2716366ce4665ec7155e04a5689d043988",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U023",
+      "sha256": "9c9b65570a547952da0173a9a8da2cc9010d58f0a4ae38203db23970788d70bc",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U024",
+      "sha256": "9d03dd885b9a2bc7f0715d5b018bb63a0389367e56ab54b4d002230e49f481b6",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U025",
+      "sha256": "e40fe97e9a5af1d0e419394fcdc5def2f397cf8be6cbc72c1ec73fe278b3f834",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U026",
+      "sha256": "5f7547db0888e2200ea72a1fcf96dd325df4a72d014a899cbc7b7c7e18362d36",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U027",
+      "sha256": "02e63c72cf53ece10a086f742c38d9d75a3b4de0653e1fb172c1281794ff13d9",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U028",
+      "sha256": "cacdcba405305cacea9a94019c8c1d623a6b0677ee7b7a017d210052059be4b8",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U029",
+      "sha256": "99eb08797d5ee923cd9e4cf75c8178ed68d69b18f0e979e8350815ce598f5124",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U030",
+      "sha256": "43f573a100b675710c8e23a611b6b0e4477f378ffef3b76787a18a1e4a8300a1",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U031",
+      "sha256": "2214515b1ee27f3dfc0bb4a5194f92472c9cad13264211878811b587c16f5db8",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U032",
+      "sha256": "1e30ba586671b2b0ca7728e235a730db35d0821b77b17d0391cf8dfaaf4f4528",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U033",
+      "sha256": "4e6e1c1d47af083cb2f97907d857d48f0b78ec2d65239e5ae6156d1c280fdfd6",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "reject_recommended",
+      "agent_reasons": [
+        "United States and Texas flags are clearly visible, conflicting with the emblem and insignia exclusion."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U034",
+      "sha256": "4b33d52cd0729b36ce668d700faa75e22f44dad19b340f48e9323d2338ce042c",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U035",
+      "sha256": "29c19af0d391f7737fddcfe8ff5c9f714661739cb6b2d9f6b5f06bd4ebf9d1a2",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U036",
+      "sha256": "bba52a2722981a4d7466f79d2656c9666b91f863162560dd75cf8a86c56919da",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U037",
+      "sha256": "e3ea5084706871a534f3c377fe3e465845f6a71562fe75074c51624bd593ab5c",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U038",
+      "sha256": "dbe9f8df97ad090a1aa41634bc1f2beb02573168c60de9b6a737b01b1d65d0ff",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "reject_recommended",
+      "agent_reasons": [
+        "Calculator keys contain visible numerals and arithmetic glyphs."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U039",
+      "sha256": "c74929faa6096b1384d8c3f3573c00f41094e38722979535cce1ca7f8cde285d",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U040",
+      "sha256": "6e2aebf34854f8443f47d8f2b42aa12a789b1892a0ecaf7a02f1b94c96894021",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U041",
+      "sha256": "f718f236c24420f6c1c40dc3282f4f950aadbe0b1cb1c95297f1aca99ef18fa5",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U042",
+      "sha256": "3764153f01db6b66b338491d464775b22a31d551950a6bec82d056835aa31d8f",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U043",
+      "sha256": "a8c9e7f46c366dd2c578c1d394b6f3f0056170f2e0fb9ff118ddd10747b02bb2",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U044",
+      "sha256": "bacbe3d3d4cdae3a92036de45312fc46f72f869362d2283309594c82b9eee653",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U045",
+      "sha256": "c3f4a36b4cc0a262ad0719c12eca7a16f1a002133a8855bdda22f214fddbebce",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U046",
+      "sha256": "c404690c09f683157b1f3a31e7deaafc0f9d88cedad6bd8fd99bf406529c9564",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U047",
+      "sha256": "7d98d3c7437269e7b7047adbf5e6b98a6039d042f886f8509f536f9ff984404d",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U048",
+      "sha256": "d00c8bf1f65211dcb60203622e20ea2aba60fe670cc518722fbdf64cf9aefdcd",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U049",
+      "sha256": "c3ce3cae1e979bede54677d1516bda0cbba03343cf4f1f9de461f965739a6fd5",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U050",
+      "sha256": "de685fb0fa0796ef86fe7411582a92981c50c8ddc08bc9b1af0c6408a7b95490",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U051",
+      "sha256": "03d881b5b32884dd9f69163ff066c8405d66eb760262f549beda99b283d95428",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U052",
+      "sha256": "7dd27185873aef22921d2ab82d560b2f50a11a058a7be03806d27a297fb0ed00",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U053",
+      "sha256": "bf61f4db6adb268428a904475215b9f915049b866534512d3bb19286d563f69c",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U054",
+      "sha256": "6386af0eabb93fa3b7308bd243006da3477dbc68269f964a58713fbee4bfe1ea",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U055",
+      "sha256": "7604f8378e553ee8d7cfef271755f57b2b350e04ae752b2de329e00b50f476a1",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U056",
+      "sha256": "5126d75252672f84c822bc14c8f63d39510150c8052373cb7384b6fa4f17155a",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U057",
+      "sha256": "cf05fc40d4e26f87a92088b7b52f7be04861d8c4386539e53628e71e17fa8a94",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "reject_recommended",
+      "agent_reasons": [
+        "Dense monitor UI contains text-like glyphs and numeric-looking marks."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U058",
+      "sha256": "bae3f6328f10a9e860ad90e37e5a0583822de3b084598da9f5a476ff5b3ddb9d",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "review_required",
+      "agent_reasons": [
+        "Large graph wall needs owner confirmation that no axis labels, numerals, or generated glyphs read at edit scale."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U059",
+      "sha256": "84ab6bdc8bfc0926d9e39b75e47e91bf8ce7aca373524124e8d8b1119d70bc93",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U060",
+      "sha256": "84a92cd0ed565b2c0a85742fd5bd8ab1e5c05b9eaed6e2ddf157d6f8569f4dec",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "review_required",
+      "agent_reasons": [
+        "Telephone keypad and console need owner confirmation for button labels or numerals."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U061",
+      "sha256": "ec88a2ba4e1830b345729854b50a0ecca3ca37c46d5e0fdbc2d0937dd2eeaa8e",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U062",
+      "sha256": "b4a9e089e22cfe0f40a315973d240ec0d3c56ed8030be8fe2c58fb387a90b48f",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U063",
+      "sha256": "fa38161b3d35aaf05a859193968180e4626e155a99c65afa096082a75a601881",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U064",
+      "sha256": "448a3f13b615af5e2c106c48f5e342447cf2838b3d6f31973082cbb2ed3c5298",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U065",
+      "sha256": "9b29da12fc3798814bc51c2f9400e2fa802b46e390c7ff485bcb79b55cd4ffed",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U066",
+      "sha256": "787a144d41807278451ab17d6bbfa26bc72fee0c9a0032d9b9134bf5ddae207a",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U067",
+      "sha256": "9346a6d3cb55f2b8d83adc21d2642b891e5874aef527b312e469c3e185dcd757",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U068",
+      "sha256": "38b9525a9b309a2418fc77a6cc3f8f408fd64ca075eba7b300fed53ebaa6bdae",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U069",
+      "sha256": "945909325e849c41760db0fa64e956b7c6afeb9aabb30653680b0bfc20b3f425",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U070",
+      "sha256": "f6fb265ec1a1041acfa9adaca0cc4c24c15a78c92698d1ed8b49f774d63d1799",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U071",
+      "sha256": "a96c0e5e47e269e99ffae171f523fa311f8704306459262683fd2f1c1f5b9f1a",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U072",
+      "sha256": "ee8bd673284f39bc9c2729b5da8f43245f31d84fe781b6669aafcb3c205fb8d9",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U073",
+      "sha256": "d07495af0124606b1ec7e4ff5f9a7f45ce1d12f94fd718b2ee2cb89385e851bb",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U074",
+      "sha256": "6609afa84b61d31413fda10b1feeb07b34883a6c01c41ddd1e24983c6926ece1",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U075",
+      "sha256": "4f6da771757efa8db7d79d4f5bd7412300dab5af00eb720e7b211b8cfce4c122",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "reject_recommended",
+      "agent_reasons": [
+        "Generator carries a visible wordmark-like label and the exterior cold-day plate lacks the required thin snow or ice."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U076",
+      "sha256": "dd65b6d7c4360cb89162eece54b5ffc0c3bfa1d56e13a7de316b6696615e310a",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U077",
+      "sha256": "aae66971c1d5189d767e53fa4ae93a5bf212b2f8db0c26b6e4488456ffa62425",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U078",
+      "sha256": "d7727b351f131da1eb6ac71ec9a55c596b9e2e275468221fc2f845858c6d2459",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U079",
+      "sha256": "c2b8c226f5c12b9a27ca88a8702f891daceaa73c673bfebfd9af6e5861806978",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U080",
+      "sha256": "2b6a094a9378876909b46c54989b103d5b77b2a991160fe27051fda715fabf27",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U081",
+      "sha256": "0a4318b02b771bd9da0293032fa5997d6fcfad4ab2a8b51bc572e45028e9a86c",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U082",
+      "sha256": "fe06db93c6e3ec42ab47b3b3ade826ae65a44f7742917fb049b3e6874430064e",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U083",
+      "sha256": "233afd848c376f9b41936ae9a0f36423e5511fc67d45ce6e9ed4814f13a24fd6",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U084",
+      "sha256": "0b8a618657925602311d6646b8b8e4a6bebffb907692f944de2ffc9780d887e8",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U085",
+      "sha256": "0f38ca87a5808af7d3b43b956fd3fdc019cb7d2eaf2a15c4e2d06ef09f12a8dd",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U086",
+      "sha256": "4fb11ab7e7d6df9f2b2a8d61cda47e17bbb4f62bf736a1c31df3a85374e97556",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U087",
+      "sha256": "c29454bf883414d54316501e59c2b3565cad4a06dac3cabc43f1c3913e4654a2",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U088",
+      "sha256": "a18b1c59afc47401c99722a2be856a2399e8a2da6950d491fa45daf3c49ad3d3",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U089",
+      "sha256": "a433efd14d0ae5de2a29ab6d13ce0efaf226c33a8b61a7911a66d36210d85026",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U090",
+      "sha256": "8a82aea9de6b9e3d8fff2159c928d693ca8fb4408305b465a8b7d9198fe9c9fe",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U091",
+      "sha256": "5bfa413c58574232e03456d3e0a4dbc61f43f6bc913fae1b17848c10189f89fa",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U092",
+      "sha256": "8e93a4885f80204a3e530edbce139a12d598814fbf218d2b8a260defe223caf1",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U093",
+      "sha256": "5beba6b1e81ed1a9c47b2aa1802cedb3a8050cb4a0740c62df113af4217b574f",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U094",
+      "sha256": "d5fe2f606658b1a4fd4d67db5687dd6afa54643945ad7c5bb2a2c51156800379",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U095",
+      "sha256": "ad1c04bda325fb436920cbe7e07dae7b2dd11a67eb4a25f11bd7c30b25c06ac2",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U096",
+      "sha256": "28125e8dabe032d27bccba8dc225ec468f93b87c92d611370f4268911c2e7293",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U097",
+      "sha256": "8bc26855477976d09ac3b406b4753743d718b6773cf27935445fe810c1037506",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U098",
+      "sha256": "9e7c20c493d11534fecea5d7844adab0d50a4c95d91252877ec3cbf4226d0e07",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U099",
+      "sha256": "38a38082aefb1618c353e500f3ff6ce5df4c20a09900f6132a8da8f87effae2e",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U100",
+      "sha256": "35c8ac2061493ab8c056553fd318bc389a6d793d35034dc469045ce4d866d60f",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U101",
+      "sha256": "b7762ebe1db1d27fe69a2da0c791cd6cb51226546f3344c0f2f2303e8e19ee9d",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "reject_recommended",
+      "agent_reasons": [
+        "Vehicle badges and registration plates are visible; bottle packaging also carries label-like marks."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U102",
+      "sha256": "6f0b40539ef1a35fdde10a4e247d1685097ee4a3922f7e748bcc373aae2ad2fd",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U103",
+      "sha256": "6e4935a37383b9d0dec5424c64449e8faee3b04e0884bea331cc77f0d0f43fb2",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U104",
+      "sha256": "5b0535fafeeebe813c25a605a49a535653fe52917b28bcfa90de96fdc4ced0f5",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U105",
+      "sha256": "7631f0c0057ad9d0beb3b317c5132ba3f7be4b213b94c32f3af1e8af8c0a0a00",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U106",
+      "sha256": "9e7887becc99aac236244a879abe3cdeabf2e1458cbfaf14ce6c258f6b4d52f9",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U107",
+      "sha256": "20c4e80616755af89a4eb178b9de3db638a3b00a2fe44415e2aaf096b2872ada",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U108",
+      "sha256": "f118c451e69e80d89e6cb94e98c065fc4df159f0ee7c4d115d18a5594747d118",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U109",
+      "sha256": "3f1b6fe16bf51e41af7184754a37f9d4ccc88afd004ab18d8cad4a2a9cbbc6f0",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U110",
+      "sha256": "6eadc93e678445327be8c37db87242a9d47a231cdb6c928b82e2c5f5ec4a250e",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U111",
+      "sha256": "306d2c06e70c81230ab4e0f5639cb32eb8a20a50dbc7e3f60ac72342073dc684",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U112",
+      "sha256": "f89a6ff41e5225b9ba86cf69fbd524d48b4b7976b8b3809bc03acb8695fc83a2",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "reject_recommended",
+      "agent_reasons": [
+        "Legislative chamber includes multiple official portraits, flags, and plaque-like insignia."
+      ],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U113",
+      "sha256": "29a8c73498bb0f6921e52cc6c2b17f669c5e71d7875658098d0b0cb09d1b23d1",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U114",
+      "sha256": "f924b357254eb06e2323ec22b13decb32d27a1c2217b2164dc8f2aa8e062e2db",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U115",
+      "sha256": "9b844816ea87ef6aa3d583242a46893efd26c8edf85e63ebe53de53f5d4db494",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U116",
+      "sha256": "5022c3162dadf15ef443be3c84f9ac23aff5da54ee2380f85cae5ee4f3762ca5",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U117",
+      "sha256": "4d8b24bbbe3cb0fbd01986342323106d2880d687e0ea5e3745de9054996dc8d4",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U118",
+      "sha256": "84b59740e8ae95dede6e9e55c15425f8bd695d4617cb77ac95707ec83fbcc874",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U119",
+      "sha256": "f00d4019a11270d70cd886a000dcdcddd533de6a637424a21a721111cb61b8e5",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    },
+    {
+      "id": "U120",
+      "sha256": "d8026f9b89a1d2eb40acaf9602f82cd9d0e55e62509cf846d41b05798384cdf3",
+      "technical_status": "pass",
+      "agent_preliminary_verdict": "not_flagged",
+      "agent_reasons": [],
+      "human_verdict": null,
+      "human_reasons": []
+    }
+  ]
+}

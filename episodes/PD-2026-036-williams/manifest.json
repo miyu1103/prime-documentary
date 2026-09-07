@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-036-williams",
+  "topic_id": "TOP-20260710-036",
+  "slug": "williams",
+  "title_working": "The Algorithm Said It Was You",
+  "state": "script_verified",
+  "risk_class": "R2",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-036-williams-topic",
+      "artifact_type": "topic_brief",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-036-williams/00_topic/topic.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:14465a28cf01556709a6413a303a3dcaf09ea141a47f47f1a1fc6f4456628373"
+    },
+    {
+      "artifact_id": "PD-2026-036-williams-sources",
+      "artifact_type": "sources",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-036-williams/01_research/sources.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:837a0666c0fa662e7ba3a6052ac54b20c75b634f68ff4695a3513ea4ce977982"
+    },
+    {
+      "artifact_id": "PD-2026-036-williams-claims",
+      "artifact_type": "claims",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-036-williams/01_research/claims.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "warn",
+      "checksum": "sha256:4e83b7a7020054c93f5e54ecfa5f6760051469997ff1c88d2715acbf505a67fa"
+    },
+    {
+      "artifact_id": "PD-2026-036-williams-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-036-williams/03_script/script.annotated.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:eb2bbdbc23c0989098402987b1c5fb30dc3adf78db636d2dd1545a7769e5b45b"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Open primary rechecks before publish (non-blocking at script stage): confirm the $300,000 settlement figure and verbatim policy language against the court-filed settlement PDF (SRC-0003); confirm theft figures (~$3,800 / ~5 watches) and the March 2019 search date against MIT Tech Review + wire copy. All are narration-only and hedged; none are burned on-screen."
+  ],
+  "blockers": [],
+  "created_at": "2026-07-10T00:00:00+09:00",
+  "updated_at": "2026-07-10T02:38:01+09:00"
+}

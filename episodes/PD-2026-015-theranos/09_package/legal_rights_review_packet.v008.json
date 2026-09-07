@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-015-theranos",
+  "revision": "v008",
+  "created_at": "2026-06-28T03:39:31.367589+00:00",
+  "status": "final_R3_legal_rights_review_required",
+  "public_release_recommendation": "do_not_publish_until_APR-0005_and_APR-0006_are_recorded_for_exact_hashes",
+  "external_side_effects": {
+    "paid_api": false,
+    "upload": false,
+    "publish": false,
+    "schedule": false
+  },
+  "exact_targets": {
+    "final_video": "H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4",
+    "final_video_sha256": "sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec",
+    "final_delivery": "episodes/PD-2026-015-theranos/09_package/final_delivery.v008.json",
+    "final_delivery_sha256": "sha256:3e3fb56da842a802c7112959f69d56f62490d0c7c217af72023f30fdf1cff28e",
+    "acceptance": "episodes/PD-2026-015-theranos/08_edit/renders/final.v006.acceptance.json",
+    "acceptance_sha256": "sha256:9fd0129980216de24a68855829c0bd460440a34e3e27ba9013a3d22d01adea26",
+    "youtube_meta": "episodes/PD-2026-015-theranos/09_package/youtube_meta.v008.json",
+    "youtube_meta_sha256": "sha256:e95039f9f38c4742c01e9549419f06632ece3a8c30c86fae93873e9960eb3e32",
+    "rights_manifest": "episodes/PD-2026-015-theranos/09_package/rights_manifest.v008.json",
+    "rights_manifest_sha256": "sha256:25b7b2837bf9dfd7466620386e86ee1d23718de0d5b8aab3ecf8d1a5d218b865",
+    "thumbnail": "episodes/PD-2026-015-theranos/09_package/thumbnail.selected.v003.png",
+    "thumbnail_sha256": "sha256:17f4e97f0b34ce1697cf7ac089201b213df9184ae744a2cbc4c0b67d72aa2f3a",
+    "captions": "episodes/PD-2026-015-theranos/08_edit/captions.v001.srt",
+    "captions_sha256": "sha256:fb8e241e4c54df7dea2c94a66b874e7d4836f9be0807446e0b7a225591ff03e6"
+  },
+  "hard_gate_summary": [
+    {
+      "check": "runtime_band",
+      "ok": true,
+      "hard": true,
+      "reason": "735.4s = 12.26min (band 690-750s)"
+    },
+    {
+      "check": "render_resolution",
+      "ok": true,
+      "hard": true,
+      "reason": "1920x1080 codec=h264 (need >= 1920x1080)"
+    },
+    {
+      "check": "images_present",
+      "ok": true,
+      "hard": true,
+      "reason": "black total 1.8s / longest 1.8s (limits 8/3)"
+    },
+    {
+      "check": "motion_present",
+      "ok": true,
+      "hard": true,
+      "reason": "frozen total 5.6s / longest 3.0s (limits 8/4s; high => static/slideshow)"
+    },
+    {
+      "check": "bgm_present",
+      "ok": true,
+      "hard": true,
+      "reason": "total silence 0s (limit 25s; high => no continuous BGM bed / narration-only mix)"
+    },
+    {
+      "check": "hook_added",
+      "ok": true,
+      "hard": false,
+      "reason": "runtime exceeds body+bookends by 111s (need >=25s for hook+breathing; body=612s)"
+    },
+    {
+      "check": "loudness",
+      "ok": true,
+      "hard": false,
+      "reason": "integrated -14.5 LUFS (target -14, band -16.0..-12.0)"
+    },
+    {
+      "check": "voice_is_master",
+      "ok": true,
+      "hard": true,
+      "reason": "master narration present: ['elevenlabs']"
+    },
+    {
+      "check": "captions_final",
+      "ok": true,
+      "hard": true,
+      "reason": "final captions captions.v001.srt (last cue 714s)"
+    },
+    {
+      "check": "caption_format",
+      "ok": true,
+      "hard": true,
+      "reason": "captions.v001.srt: line/duration/cps within limits"
+    },
+    {
+      "check": "thumbnail_ready",
+      "ok": true,
+      "hard": true,
+      "reason": "4 thumb(s) at 1280x720, selected=yes (need >=3 + selected)"
+    },
+    {
+      "check": "image_resolution",
+      "ok": true,
+      "hard": true,
+      "reason": "71 hero PNGs, all long-edge >= 3840px"
+    },
+    {
+      "check": "factory_used",
+      "ok": true,
+      "hard": true,
+      "reason": "16 factory clip(s) staged, referenced_in_composition=True, need >= 16 (1 per 45s)"
+    }
+  ],
+  "r3_review_points": [
+    "Investor-fraud convictions are stated as verdict facts only.",
+    "Patient counts remain ACQUITTED/not guilty; three counts remain NO VERDICT/mistrial.",
+    "Acquittal is not framed as exoneration or proof that the technology worked.",
+    "No real-person likeness, real footage, Theranos logo, real Edison device, magazine cover, or specific facility is used as such.",
+    "All AI visuals remain labelled symbolic reconstruction in-video.",
+    "Factory/stock materials are generic illustrative assets with provenance in rights_manifest.v008."
+  ]
+}
