@@ -731,7 +731,40 @@ def build_figures(cfg: dict, order: list[str], windows: dict[str, tuple[float, f
         if extra:
             figures.extend(extra)
             figures.sort(key=lambda x: x["start"])
-    return figures
+    # TWO CARDS AT ONCE IS ONE UNREADABLE CARD (added 2026-09-07).
+    # Pinning every figure to its own narration fixed a median 52 s lag on EP85 katrina and
+    # immediately created a new defect: where the script says several quotable things within a
+    # few seconds, the cards landed on top of each other. Measured on that render, four pile-ups
+    # printed two or three texts through each other -- "THE PA(29 AUGUST 2005)E WALL" -- and a
+    # four-card stack at 27 s buried the ACT ONE title. A card nobody can read is worse than a
+    # card that is late.
+    #
+    # Walk the sorted list and give each figure the floor of the one before it. A pushed card
+    # keeps its full hold unless that would run past the film, in which case it is dropped
+    # rather than stacked. The AI disclosure is exempt in both directions (invariant 11): it
+    # never moves and nothing is stacked on it.
+    _MIN_GAP = 0.35
+    _out: list[dict] = []
+    _floor = 0.0
+    _pushed = _dropped = 0
+    for _f in figures:
+        if "AI-assisted visualization" in str(_f.get("primary") or ""):
+            _out.append(_f)
+            _floor = max(_floor, _f["end"] + _MIN_GAP)
+            continue
+        if _f["start"] < _floor:
+            _dur = _f["end"] - _f["start"]
+            if _floor + _dur > total - 0.5:
+                _dropped += 1
+                continue
+            _f["start"], _f["end"] = round(_floor, 3), round(_floor + _dur, 3)
+            _pushed += 1
+        _out.append(_f)
+        _floor = _f["end"] + _MIN_GAP
+    if _pushed or _dropped:
+        print(f"  [figure-stagger] {_pushed} card(s) pushed clear of the card before them, "
+              f"{_dropped} dropped (no room left in the film)")
+    return _out
 
 
 def lead_frames(hook_sec: float, lead_sec: float | None) -> int:
@@ -769,8 +802,24 @@ def build_ae_beats(placement: Path, slug: str, total: float) -> list[dict] | Non
     AeBeatLayer and draws.
     """
     if not placement.is_file():
+        print(f"  [ae] no placement file at {placement} -- this film gets NO aeBeats. If the "
+              f"episode_spec declares ae_beats, check_spec_satisfied.py will refuse the film "
+              f"(scripts/ae/build_ae_placement.py writes the placement).", file=sys.stderr)
         return None
     doc = load_json(placement)
+    # A PROJECTED placement is a plan, not a measurement. build_ae_placement.py writes
+    # `provisional: true` when it had to project start times from a word count because the
+    # narration did not exist yet; those seconds are not the seconds the voice actually lands on,
+    # and a card 2s off its sentence is a card that says something the narration is not saying.
+    # A film is only ever built when the narration exists, so the placement can always be
+    # regenerated against it -- there is no case where accepting a projection is correct.
+    if isinstance(doc, dict) and doc.get("provisional"):
+        basis = doc.get("basis")
+        raise SystemExit(
+            f"{slug}: {placement} is PROVISIONAL (basis={basis!r}) -- its atSec values are a "
+            f"projection, not the measured narration. Re-run "
+            f"py -3.11 scripts/ae/build_ae_placement.py --slug {slug} --force now that the "
+            f"narration exists, then rebuild.")
     rows = doc.get("beats") if isinstance(doc, dict) else doc
     beats: list[dict] = []
     for row in rows or []:
@@ -898,6 +947,96 @@ def main() -> int:
     ae_beats = build_ae_beats(ae_placement, slug, total)
     if ae_beats is not None:
         film["aeBeats"] = ae_beats
+        # AE CARDS AND REMOTION FIGURES DRAW IN THE SAME PLACE (fixed 2026-09-06).
+        # Measured on EP83 max737's first render: 10 figure beats overlapped an AE beat, four of
+        # them for 3.5-6.0 s -- the AE LEVEL B/D comparison and the kinetic line "AIRLINES DO NOT
+        # BUY AEROPLANES. THEY BUY FLEETS." printed on top of each other and NEITHER was legible.
+        # Nothing caught it: aeBeats and figures are built by separate functions that never see
+        # each other, and no gate compares them. Every episode from EP77 on carries AE beats, so
+        # this is a standing collision, not one film's bad luck.
+        #
+        # The AE plate is a rendered video and cannot move; the figure is data and can. So each
+        # colliding figure is pushed clear of the AE window -- after it when the section still has
+        # room, otherwise before it -- and dropped only if neither side fits. Cuts, captions,
+        # narration and the AE beats themselves are untouched.
+        _GAP = 0.35
+        if figures:
+            _windows = [(b["atSec"], b["atSec"] + b["durSec"]) for b in ae_beats]
+            _moved = _dropped = 0
+            _kept: list[dict] = []
+            _occupied: list[tuple[float, float]] = []
+            for f in figures:
+                # The AI disclosure is an invariant-11 obligation, not decoration: it may not be
+                # pushed under another card. Measured on EP83 max737 v2 -- the push stacked the
+                # opening disclosure, a kinetic beat and an opaque full-screen ACT ONE title on
+                # 0:17.92, and the act card covered the disclosure completely, so only the closing
+                # instance ever reached the viewer. Disclosure beats keep their slot; everything
+                # else moves around them.
+                for a0, a1 in _windows + _occupied:
+                    if min(f["end"], a1) - max(f["start"], a0) <= 0:
+                        continue
+                    _dur = f["end"] - f["start"]
+                    if a1 + _GAP + _dur <= total - 0.5:
+                        f["start"], f["end"] = round(a1 + _GAP, 3), round(a1 + _GAP + _dur, 3)
+                    elif a0 - _GAP - _dur >= 0.0:
+                        f["start"], f["end"] = round(a0 - _GAP - _dur, 3), round(a0 - _GAP, 3)
+                    else:
+                        f = None
+                        break
+                    _moved += 1
+                if f is None:
+                    _dropped += 1
+                else:
+                    _kept.append(f)
+            figures[:] = sorted(_kept, key=lambda x: x["start"])
+            film["figures"] = figures
+            if _moved or _dropped:
+                print(f"  [ae-decollide] {_moved} figure beat(s) moved clear of an AE card, "
+                      f"{_dropped} dropped (no room either side)")
+
+    # THE STAGGER MUST BE THE LAST WORD ON FIGURE TIMING (fixed 2026-09-07).
+    # build_figures already staggers, but the AE de-collision above runs AFTER it and pushes
+    # cards sideways, which re-creates the exact pile-ups the stagger removed. Measured on EP83
+    # max737 v6: seven card-on-card overlaps survived a render whose build had staggered
+    # cleanly, including 6.0 s of "THE 737 MAX WAS DESIGNED TO LAND ON LEVEL B" printed through
+    # "DECEMBER 2011. A CONTRACT WITH THE LAUNCH CUSTOMER." Running it once more here, on the
+    # final list, is cheap and makes the invariant true of what actually ships.
+    _figs = film.get("figures") or []
+    if _figs:
+        _GAP2 = 0.35
+        # NO CARD IS EXEMPT, INCLUDING THE AI DISCLOSURE (invariant 11).
+        # Two earlier attempts special-cased the disclosure so it would keep its exact second,
+        # and both made it LESS readable, not more: pinning it let "AND IT WORKED. NOBODY WAS
+        # TOLD." run 5.0 s straight through the closing disclosure, and exempting it from the
+        # AE pass left the opening one sitting 3.0 s inside an AE plate. Then, on threemile,
+        # exempting disclosures from each other stacked BOTH of them on 0:32. The obligation
+        # is that the disclosure is READABLE, not that it is at a particular second -- so it
+        # takes its turn in the same queue as every other card.
+        _ae_win = [(b["atSec"], b["atSec"] + b["durSec"]) for b in (film.get("aeBeats") or [])]
+        _final: list[dict] = []
+        _floor2 = 0.0
+        _pushed2 = _dropped2 = 0
+        for _f in sorted(_figs, key=lambda x: x["start"]):
+            _dur2 = _f["end"] - _f["start"]
+            _at = max(_f["start"], _floor2)
+            # AE plates are rendered video and cannot move, so walk past any the card lands in.
+            for _ in range(len(_ae_win) + 1):
+                _hit = next((w for w in _ae_win if min(_at + _dur2, w[1]) - max(_at, w[0]) > 0), None)
+                if _hit is None:
+                    break
+                _at = _hit[1] + _GAP2
+            if _at + _dur2 > total - 0.5:
+                _dropped2 += 1
+                continue
+            if abs(_at - _f["start"]) > 1e-6:
+                _f["start"], _f["end"] = round(_at, 3), round(_at + _dur2, 3)
+                _pushed2 += 1
+            _final.append(_f)
+            _floor2 = _f["end"] + _GAP2
+        film["figures"] = _final
+        if _pushed2 or _dropped2:
+            print(f"  [figure-stagger:final] {_pushed2} card(s) pushed clear of the card "
+                  f"before them, {_dropped2} dropped")
     # EP66 PACKAGING v001 sections 4 and 7: which FORM of the channel opening this film places.
     # Written only when the filmconfig declares it, because CaseFilm.tsx reads an absent key as
     # the historical full-screen card -- EP62-65's film.json must not gain the key.

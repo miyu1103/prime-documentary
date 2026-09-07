@@ -124,7 +124,7 @@ py -3.11 scripts/check_spec_satisfied.py --slug "$SLUG" > "${LOG}.satisfied" 2>&
 _sat=$?
 cat "${LOG}.satisfied" >> "$LOG"
 sed "s/^/[finish:$SLUG]   /" "${LOG}.satisfied" | head -8
-if [ $_sat -ne 0 ] && grep -qE "mandatory_stills|forbidden_subjects" "${LOG}.satisfied"; then
+if [ $_sat -ne 0 ] && grep -qE "mandatory_stills|forbidden_subjects|ae_beats|archive_footage" "${LOG}.satisfied"; then
   die "the film violates its own spec (mandatory stills missing, or forbidden subject present)"
 fi
 
@@ -166,6 +166,17 @@ say "[4d] EP77 standard, plan stage (still-hold caps before any GPU is spent)"
 py -3.11 scripts/check_ep77_standard.py --slug "$SLUG" --stage plan >> "$LOG" 2>&1 \
   || die "the film plan fails the EP77 standard -- fix the plan; the render has not started, so this costs minutes"
 grep "\[ep77-standard\]" "$LOG" | tail -1 | sed "s/^/[finish:$SLUG]   /"
+
+# TWO CARDS AT ONCE IS ONE UNREADABLE CARD (added 2026-09-07). Figure beats and AE beats are
+# built by functions that never see each other, so nothing compared them until EP83 max737
+# shipped a build with seven card-on-card pile-ups -- "THE 737 MAX WAS DESIGNED TO LAND ON
+# LEVEL B" printed for 6.0 s through "DECEMBER 2011. A CONTRACT WITH THE LAUNCH CUSTOMER."
+# The builder now de-collides and staggers; this proves it did, on the file that ships.
+say "[4e] no card draws on top of another (figures vs figures vs AE plates)"
+py -3.11 scripts/check_card_overlaps.py --slug "$SLUG" >> "$LOG" 2>&1 \
+  || { grep -E "CARD-ON" "$LOG" | tail -8 | sed "s/^/[finish:$SLUG]   /"
+       die "cards overlap in the built film -- fix before the render, not after"; }
+say "  no overlapping cards"
 
 say "[4c] retire staged clips the film does not reference (footage_utilization)"
 py -3.11 scripts/retire_unused_pool_clips.py --slug "$SLUG" >> "$LOG" 2>&1 || true
