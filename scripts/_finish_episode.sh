@@ -105,6 +105,18 @@ CFG=$(ls episodes/_planning/EP*_${SLUG}_filmconfig.v*.json 2>/dev/null | sort | 
 py -3.11 scripts/build_case_film_generic.py --config "$CFG" >> "$LOG" 2>&1 || die "film build failed"
 say "  built from $(basename "$CFG")"
 
+# STOCK IS PLACED BY CADENCE, WHICH IS NOT MEANING (added 2026-09-07). build_case_film_generic
+# lays cuts out on a fixed F/M/F/M/F/S rhythm and fills each stock slot from a queue in pool
+# order, so what a viewer sees under a sentence is decided by counting, not by the sentence.
+# Measured the day this was written: a coffee-shop laptop under "Same aeroplane. Same fault.
+# Same wheel."; ducklings under "the company was never convicted of lying to the regulator".
+# This permutes stock clips among the stock slots they already occupy -- no cut time, cut
+# count, plate or caption changes -- and only when a clip's own words match the narration in
+# that slot by two words or more. It is a no-op on episodes whose pool has nothing to match,
+# which is most of them, and it never fails the build.
+py -3.11 scripts/assign_stock_by_meaning.py --slug "$SLUG" --apply >> "$LOG" 2>&1 || true
+grep -E "stock slot\(s\)," "$LOG" | tail -1 | sed "s/^/[finish:$SLUG]   /"
+
 # [4a] THE FILM IS CHECKED AGAINST ITS OWN CONTRACT, BEFORE THE RENDER.
 # The pre-flight at [0/7] only sees inputs. This sees the PLAN: whether the stills that were
 # generated for this episode actually reached a cut, whether anything the episode forbids is
