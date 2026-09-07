@@ -7,10 +7,15 @@ Queries the centralized rights ledger E:\\pd-media\\assets\\archive\\_ledger\\*.
 printing file path, title, license and theme for each hit.
 
 Usage:
-  python scripts/search_archive.py courtroom 1950s --theme courtroom_justice
+  python scripts/search_archive.py --shot "courtroom interior wooden benches" --sheet
   python scripts/search_archive.py "post office" --source ia --license pd
   python scripts/search_archive.py train --kind video --limit 50
   python scripts/search_archive.py --theme japan --stats
+
+Eleven themes are REFUSED by name (see EYE_REVIEW below): a person opened their tiles and they
+hold something other than what they are called. Search for the picture, not for the label --
+`--shot "..."`, keywords, or index_footage_semantic.py --query. The first example above used to
+read `--theme courtroom_justice`; that theme holds one courthouse in twenty.
 """
 from __future__ import annotations
 
@@ -24,6 +29,15 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 LEDGER_DIR = r"E:\pd-archive\_ledger"
+# Eleven of the 68 themes were read tile by tile on 2026-09-04/05 and found to describe something
+# other than their contents -- police_modern holds ZERO real police in twenty sampled tiles,
+# courtroom_justice one courthouse. Until 2026-09-07 nothing acted on that: the verdict was printed
+# on a per-asset checklist nobody had to open, while `--theme courtroom_justice` served 3,045 rows
+# without a word. Asking for one of those themes BY NAME is now refused, because the name is the
+# broken claim. Keyword, --shot and semantic search are untouched: they judge an asset by its own
+# title or its own pixels, which is exactly the thing that still works.
+EYE_REVIEW = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                          "docs", "shelf", "theme_eye_review.v001.json")
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv", ".avi", ".mpeg", ".mpg"}
 IMAGE_EXT = {".jpg", ".jpeg", ".png", ".gif", ".tif", ".tiff", ".webp"}
 AUDIO_EXT = {".mp3", ".wav", ".flac", ".ogg", ".m4a", ".aac"}
@@ -206,6 +220,21 @@ def load_verdicts() -> dict:
     return out
 
 
+def load_eye_quarantine() -> dict:
+    """theme -> the reviewer's note, for the themes a person marked QUARANTINE.
+
+    Returns {} if the record is missing, and the guard then does nothing. That is deliberate:
+    a search tool must not become unusable because a review file moved.
+    """
+    try:
+        with open(EYE_REVIEW, encoding="utf-8") as fh:
+            rows = json.load(fh).get("reviewed", [])
+    except Exception:
+        return {}
+    return {r["theme"]: str(r.get("note") or "") for r in rows
+            if r.get("verdict") == "QUARANTINE" and r.get("theme")}
+
+
 def load_quarantined() -> set:
     """`source:id` of everything quarantine_ban_risk.py pulled off the shelf.
 
@@ -378,6 +407,9 @@ def main() -> int:
                     help="also offer theme/source rows the owner marked unusable")
     ap.add_argument("--include-quarantined", action="store_true",
                     help="also offer files sitting in _quarantine (pending owner review)")
+    ap.add_argument("--allow-quarantined-theme", action="store_true",
+                    help="ask for a theme a human marked QUARANTINE anyway (you will be shown "
+                         "what they found in it, and you must look at every result)")
     ap.add_argument("--keep-talking-heads", action="store_true",
                     help="disable the podcast/lecture/interview penalty in --shot")
     ap.add_argument("--sheet", action="store_true",
@@ -395,6 +427,27 @@ def main() -> int:
 
     if args.pick or args.reject:
         return record_feedback(args.pick, args.reject)
+
+    eye_quarantine = load_eye_quarantine()
+    if args.theme and args.theme in eye_quarantine:
+        note = eye_quarantine[args.theme]
+        if not args.allow_quarantined_theme:
+            print(f"REFUSED: theme '{args.theme}' was marked QUARANTINE by a person who opened "
+                  f"its tiles.\n")
+            print(f"  what they found: {note}\n" if note else "")
+            print("  The label does not describe the contents, so asking for it by name returns")
+            print("  confident wrong answers. Search by what you actually want to see instead:\n")
+            print(f'    py -3.10 scripts/index_footage_semantic.py --query "..." --sheet')
+            print(f'    py -3.10 scripts/index_footage_semantic.py --query "..." --images --sheet')
+            print("\n  Then run build_asset_usability.py --path on anything you shortlist.")
+            print("  --allow-quarantined-theme overrides this. Record: docs/shelf/"
+                  "theme_eye_review.v001.json")
+            return 3
+        print(f"!! theme '{args.theme}' is QUARANTINE and you asked for it anyway.")
+        if note:
+            print(f"!! a person found: {note}")
+        print("!! LOOK AT EVERY RESULT. The label is not evidence of the contents.\n")
+
     terms = [t.lower() for t in args.keywords]
     verdicts = load_verdicts()
     quarantined = load_quarantined()
@@ -555,6 +608,16 @@ def main() -> int:
              if skipped_in_quarantine else "")
           + (f"; {skipped_unusable} owner-marked-unusable row(s) withheld"
              if skipped_unusable else ""))
+    # Keyword and --shot results are NOT withheld -- they matched on the asset's own title, not on
+    # the label. But the reader should know when a row carries a label a person threw out, so the
+    # count is printed rather than the row being hidden.
+    if eye_quarantine and not args.paths_only:
+        n = sum(1 for r in hits[:args.limit] if r.get("theme") in eye_quarantine)
+        if n:
+            themes = sorted({r.get("theme") for r in hits[:args.limit]
+                             if r.get("theme") in eye_quarantine})
+            print(f"-- {n} of the rows shown carry a QUARANTINE theme label "
+                  f"({', '.join(themes)}) -- the label is not evidence, look at the file")
     if args.sheet:
         # --sheet used to be reachable only through --shot. That is the phrase-search path,
         # and it is the one measured to undercount badly (`underground parking garage` -> 3
