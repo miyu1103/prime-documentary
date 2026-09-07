@@ -1292,6 +1292,69 @@
       "label": "real_carrier_liveries_in_window_backgrounds",
       "reason": "EP83 max737 pre-render livery sweep 2026-09-05 (runs/qc/max737_livery_sweep.v001.json): X043 shows Air France-style red/blue tricolor tail stripes on two background aircraft through an office window; X062 shows a dark navy tail with a white DL monogram (reads as Delta) twice; X065 shows crimson carrier-style engine nacelles/trim. Same failure mode as colgan C014 (window-background aircraft, invisible at contact-sheet scale, resolves under zoom). rights_and_licence. X-prefix plate ids are max737-local; blocked for the plate, its depth sibling, and the i2v motion derivative everywhere they exist.",
       "added": "2026-09-05"
+    },
+    {
+      "ids": [
+        "AR-v_299580"
+      ],
+      "label": "southwest_airlines_canyon_blue_livery",
+      "reason": "EP83 max737 shipped-frames read 2026-09-06, 28:03.8-28:05.4 (cut-0248): AR-v_299580__airport_sunset_clouds_take_off_plane_aircraft_sk.mp4 shows an unmistakable Southwest Airlines Canyon Blue 737 -- blue fuselage, red/orange/yellow heart tail, blue winglet, and the Southwest script wordmark legible on the forward fuselage at 8x zoom. Visible unaided at thumbnail size. AGGRAVATING: Southwest is the named launch customer in this episode ledger (MX-612/613), so real trade dress is tied to the wrongdoing narrative. rights_and_licence. GLOBAL block by clip id (no episodes scope) per feedback_rights_block_global_by_clip_id.",
+      "added": "2026-09-06"
+    },
+    {
+      "ids": [
+        "AR-pexels_15069622"
+      ],
+      "label": "clip_goes_fully_black_for_3s",
+      "reason": "EP84 threemile post-render gate 2026-09-06: the film went black 50.37-53.30s (2.93s). Traced to the SOURCE clip AR-pexels_15069622__vintage_crt_monitor_tv_in_the_dark.mp4, which is itself fully black from 2.63s to 5.59s (2.96s) -- a dark-CRT clip whose middle is unusable, not a render fault. Any cut long enough to reach that span goes black. Blocked globally by clip id: the black seconds are a property of the file, not of this episode.",
+      "added": "2026-09-06"
+    },
+    {
+      "ids": [
+        "AR-pexels_7862640"
+      ],
+      "episodes": [
+        "threemile"
+      ],
+      "label": "modern_cell_tower_in_1979_film",
+      "reason": "EP84 threemile shipped-frames read 2026-09-07, cut-0057 (06:25.1-06:31.9, 6.8s unbroken): AR-pexels_7862640__an_transmission_tower.mp4 is not a 1970s transmission tower -- sectored cell panel antennas, a radomed parabolic microwave dish and grid backhaul dishes fill the frame, i.e. a 1995-or-later object in a film whose episode_spec declares era 1978-1985 STRICT. Confirmed across all 27 frames of the cut. Episode-scoped: the clip is fine for a modern-era film, it is only wrong here.",
+      "added": "2026-09-07"
+    },
+    {
+      "ids": [
+        "AR-pexels_38168754"
+      ],
+      "label": "binance_tradingview_crypto_terminal",
+      "reason": "EP83 max737 shipped-frames read 2026-09-07 (300.5-307.2s): AR-pexels_38168754__dynamic_stock_market_data_visualization.mp4 is a crypto trading terminal with Binance and TradingView wordmarks and the ticker 1000CAT/USDC all legible at full resolution -- third-party trade dress, and cryptocurrency b-roll under FAA pilot-certification narration is also a meaning mismatch. Invisible at contact-sheet scale, which is why three earlier reads missed it. rights_and_licence. GLOBAL block by clip id.",
+      "added": "2026-09-07"
+    },
+    {
+      "ids": [
+        "AR-pexels_27114536",
+        "AR-pexels_32904534"
+      ],
+      "label": "readable_company_marks_katrina",
+      "reason": "EP85 katrina shipped-frames read 2026-09-07. AR-pexels_27114536 (cut-0041, ~4:32-4:39): rooftop letters read \"...GTON WATER POWER\" -- the Washington Water Power building in Spokane, marginal at 100% but unambiguous at 7x -- plus two SkyRide gondolas carrying an operator roundel and wordmark strip. AR-pexels_32904534 (cut-0087, ~9:46, about 0.5s): Target trade dress twice, the maroon entry facade and a red wall panel with the white bullseye, brand-identifiable at 12-20x. Both are rights_and_licence; both are also wrong-place footage for a New Orleans film. GLOBAL block by clip id.",
+      "added": "2026-09-07"
+    },
+    {
+      "ids": [
+        "AR-pexels_5053182",
+        "AR-pexels_6042251",
+        "AR-pexels_6132733",
+        "AR-pixabay_136780",
+        "AR-pexels_855216",
+        "AR-pixabay_200580",
+        "AR-v_122964",
+        "AR-v_59270"
+      ],
+      "episodes": [
+        "katrina"
+      ],
+      "label": "wrong_landscape_for_new_orleans_levees",
+      "reason": "EP85 katrina pre-render pool sweep 2026-09-07, 21 dense sheets read at 640x360 per frame. Zero rights defects, but eight clips depict a landscape this film cannot contain, and seven of them were cut into the film under narration that names the opposite place. AR-pexels_5053182 (cut at 670.8s): a tall concrete ARCH dam in a steep rocky gorge, under \"the outboard side earthen embankment during loading... water penetrated into this gap\" -- the film is about an EARTHEN levee, and the picture asserts a structure type that is not the one that failed. AR-pixabay_200580 (1115.5s): a reservoir in arid brown scrub mountains, under \"the Reach II levee protecting Chalmette and the Lower Ninth Ward\" -- a desert standing in for the Louisiana delta at the exact second the narration names the delta. AR-pixabay_136780 (1089.9s) and AR-pexels_855216 (1076.7s): white-barked birch/aspen stands in autumn colour, under the 1967 bank-protection authorisation for a Gulf marsh channel. AR-pexels_6042251 (697.0s): a bedrock-ledge waterfall in a bare-winter hardwood ravine. AR-v_59270 (1168.1s): a bulk port ringed by arid dust, reading North Africa or the Middle East. AR-pexels_6132733 and AR-v_122964 (a Northern-European canalised waterway with a self-propelled motor barge and wind turbines -- Mississippi traffic is unmanned barges in pushed tows) were in the pool but not cut; they are blocked so a rebuild cannot pull them in. This is not a rights class and does not stop a ship under ship_policy.v001. It is blocked because generic footage flowed in against the meaning of the line being spoken, which the owner has ruled out (feedback_visual_narration_meaning_match). Scoped to katrina: a birch forest is honest footage in a film set where birches grow.",
+      "reviewed_by": "claude-pool-sweep-20260907",
+      "date": "2026-09-07"
     }
   ],
   "quality_deferred": [
