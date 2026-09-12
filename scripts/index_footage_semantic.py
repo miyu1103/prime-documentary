@@ -162,7 +162,12 @@ def grab_frame(clip: str, dst: Path) -> bool:
     clips measuring 0.1, 0.8 and 7.7 mean luma and rendered as holes of up to 1.87 s.
     """
     best, best_luma = None, -1.0
-    for i, t in enumerate(("1.2", "3.5", "7.0")):
+    # "0.0" is a fallback, not a fourth sample: every offset here is past the end of a clip
+    # shorter than 1.2 s, so those could never be indexed at all. Measured 2026-09-13 -- two
+    # perfectly good 1920x1080 clips (1.001 s and 1.017 s, h264, ffprobe clean) were absent from
+    # the semantic index and looked like corruption until they were probed. A short clip now
+    # indexes on its first frame rather than on nothing.
+    for i, t in enumerate(("1.2", "3.5", "7.0", "0.0")):
         cand = dst.with_name(f"{dst.stem}_{i}{dst.suffix}")
         r = subprocess.run(
             ["ffmpeg", "-y", "-v", "error", "-ss", t, "-i", clip, "-frames:v", "1",

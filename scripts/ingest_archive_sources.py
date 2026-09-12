@@ -246,6 +246,27 @@ DEFAULT_THRESHOLD = 30
 PERIOD_THEMES = {"police_period", "americana_1930s_1970s", "uk_period",
                  "period_telephone_tech", "music_performance_pd_era",
                  "vintage_ads_cartoons", "pd_feature_films"}
+def quarantine_themes() -> set:
+    """Themes a person opened and threw out, from docs/shelf/theme_eye_review.v001.json.
+
+    Eleven of the 68 hold something other than what they are called -- police_modern has zero
+    real police in twenty sampled tiles. The cause is upstream of the shelf and lives HERE: the
+    queries below are matched a word at a time by the stock sources ("judge bench gavel" ->
+    "bank wooden BENCH relax sea") and whatever came back was filed under the theme that asked.
+    `search_archive.py` stopped serving those labels on 2026-09-07; if this keeps downloading
+    into them, the shelf refills what a person threw out. An empty set disables the skip, so a
+    moved review file makes the ingest noisier, never broken.
+    """
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                     "docs", "shelf", "theme_eye_review.v001.json")
+    try:
+        with open(p, encoding="utf-8") as fh:
+            rows = json.load(fh).get("reviewed", [])
+    except Exception:
+        return set()
+    return {r["theme"] for r in rows if r.get("verdict") == "QUARANTINE" and r.get("theme")}
+
+
 QC_SHEET_EVERY = 500   # contact sheet per theme every N downloads
 QC_SHEET_TILES = 60
 ACTIVE_TIERS: set[str] = {t["name"] for t in TIERS}  # narrowed via --tiers (e.g. "H,D")
@@ -2289,6 +2310,10 @@ def main() -> int:
                     help="all | comma list of: " + ",".join(ADAPTERS))
     ap.add_argument("--theme", default="all",
                     help="all | comma list of: " + ",".join(THEMES))
+    ap.add_argument("--include-quarantined-themes", action="store_true",
+                    help="also ingest into the themes a person marked QUARANTINE "
+                         "(docs/shelf/theme_eye_review.v001.json). Off by default: the shelf "
+                         "would refill labels that were thrown out")
     ap.add_argument("--cap-gb", type=float, default=0.0,
                     help="optional TOTAL cap in GB, cumulative (0 = unlimited, default)")
     ap.add_argument("--limit", type=int, default=1000,
@@ -2314,6 +2339,17 @@ def main() -> int:
         [s.strip() for s in args.source.split(",") if s.strip() in ADAPTERS]
     themes = list(THEMES) if args.theme == "all" else \
         [t.strip() for t in args.theme.split(",") if t.strip() in THEMES]
+
+    quar = quarantine_themes()
+    if quar and not args.include_quarantined_themes:
+        blocked = [t for t in themes if t in quar]
+        if blocked:
+            themes = [t for t in themes if t not in quar]
+            log(f"skipping {len(blocked)} QUARANTINE theme(s) a person threw out: "
+                f"{', '.join(sorted(blocked))}")
+            log("  (docs/shelf/theme_eye_review.v001.json; "
+                "--include-quarantined-themes to ingest into them anyway)")
+
     if not sources or not themes:
         log("nothing to do (bad --source/--theme)")
         return 2
