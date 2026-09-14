@@ -1,0 +1,540 @@
+[
+ {
+  "_comment": "EP74 itaewon. Migrated 2026-08-22 from scripts/write_itaewon_sound_plan.py by the main thread (invariant 14). The rule list is byte-identical to the one that produced this episode's verified cue plan; nothing was retuned during the move.",
+  "needle": "__doc__",
+  "kind": "click",
+  "anchor": "__doc__"
+ },
+ {
+  "_comment": "AMBIENCE DECLARED 2026-08-22 by the EP74 thread. amb_road_rumble_1920s.mp3 is a Prohibition-era road and must never appear in this film: it is the bed the keyword scan falls through to, and it landed on the HOOK of a 2022 Seoul alley, then on ACT_4 once the ranking was fixed. Declaring all eight chapters is the only way to keep it out, because the density gate counts DISTINCT beds and cannot hear that they are wrong."
+ },
+ {
+  "needle": "called the police",
+  "kind": "click",
+  "anchor": "police"
+ },
+ {
+  "needle": "phone",
+  "kind": "click",
+  "anchor": "phone"
+ },
+ {
+  "needle": "call",
+  "kind": "click",
+  "anchor": "call"
+ },
+ {
+  "needle": "calls",
+  "kind": "click",
+  "anchor": "calls"
+ },
+ {
+  "needle": "caller",
+  "kind": "click",
+  "anchor": "caller"
+ },
+ {
+  "needle": "reports",
+  "kind": "click",
+  "anchor": "reports"
+ },
+ {
+  "needle": "switchboard",
+  "kind": "click",
+  "anchor": "switchboard"
+ },
+ {
+  "needle": "radio",
+  "kind": "click",
+  "anchor": "radio"
+ },
+ {
+  "needle": "whistle",
+  "kind": "click",
+  "anchor": "whistle"
+ },
+ {
+  "needle": "whistles",
+  "kind": "click",
+  "anchor": "whistles"
+ },
+ {
+  "needle": "bells",
+  "kind": "click",
+  "anchor": "bells"
+ },
+ {
+  "needle": "shutter",
+  "kind": "latch",
+  "anchor": "shutter"
+ },
+ {
+  "needle": "shutters",
+  "kind": "latch",
+  "anchor": "shutters"
+ },
+ {
+  "needle": "kerb",
+  "kind": "footstep",
+  "anchor": "kerb"
+ },
+ {
+  "needle": "pavement",
+  "kind": "footstep",
+  "anchor": "pavement"
+ },
+ {
+  "needle": "walked",
+  "kind": "footstep",
+  "anchor": "walked"
+ },
+ {
+  "needle": "walking",
+  "kind": "footstep",
+  "anchor": "walking"
+ },
+ {
+  "needle": "pushed",
+  "kind": "footstep",
+  "anchor": "pushed"
+ },
+ {
+  "needle": "stairs",
+  "kind": "footstep",
+  "anchor": "stairs"
+ },
+ {
+  "needle": "station",
+  "kind": "footstep",
+  "anchor": "station"
+ },
+ {
+  "needle": "escalator",
+  "kind": "footstep",
+  "anchor": "escalator"
+ },
+ {
+  "needle": "train",
+  "kind": "pass-by",
+  "anchor": "train"
+ },
+ {
+  "needle": "traffic",
+  "kind": "pass-by",
+  "anchor": "traffic"
+ },
+ {
+  "needle": "scooter",
+  "kind": "pass-by",
+  "anchor": "scooter"
+ },
+ {
+  "needle": "vehicles",
+  "kind": "pass-by",
+  "anchor": "vehicles"
+ },
+ {
+  "needle": "road",
+  "kind": "pass-by",
+  "anchor": "road"
+ },
+ {
+  "needle": "street",
+  "kind": "pass-by",
+  "anchor": "street"
+ },
+ {
+  "needle": "rain",
+  "kind": "rustle",
+  "anchor": "rain"
+ },
+ {
+  "needle": "wet",
+  "kind": "rustle",
+  "anchor": "wet"
+ },
+ {
+  "needle": "hosed",
+  "kind": "rustle",
+  "anchor": "hosed"
+ },
+ {
+  "needle": "statute",
+  "kind": "page turn",
+  "anchor": "statute"
+ },
+ {
+  "needle": "act",
+  "kind": "page turn",
+  "anchor": "act"
+ },
+ {
+  "needle": "decree",
+  "kind": "page turn",
+  "anchor": "decree"
+ },
+ {
+  "needle": "law",
+  "kind": "page turn",
+  "anchor": "law"
+ },
+ {
+  "needle": "regulations",
+  "kind": "page turn",
+  "anchor": "regulations"
+ },
+ {
+  "needle": "amendment",
+  "kind": "page turn",
+  "anchor": "amendment"
+ },
+ {
+  "needle": "plan",
+  "kind": "stamp",
+  "anchor": "plan"
+ },
+ {
+  "needle": "report",
+  "kind": "stamp",
+  "anchor": "report"
+ },
+ {
+  "needle": "audit",
+  "kind": "stamp",
+  "anchor": "audit"
+ },
+ {
+  "needle": "record",
+  "kind": "stamp",
+  "anchor": "record"
+ },
+ {
+  "needle": "records",
+  "kind": "stamp",
+  "anchor": "records"
+ },
+ {
+  "needle": "filed",
+  "kind": "stamp",
+  "anchor": "filed"
+ },
+ {
+  "needle": "appealed",
+  "kind": "stamp",
+  "anchor": "appealed"
+ },
+ {
+  "needle": "indicted",
+  "kind": "stamp",
+  "anchor": "indicted"
+ },
+ {
+  "needle": "bill",
+  "kind": "rustle",
+  "anchor": "bill"
+ },
+ {
+  "needle": "document",
+  "kind": "rustle",
+  "anchor": "document"
+ },
+ {
+  "needle": "papers",
+  "kind": "rustle",
+  "anchor": "papers"
+ },
+ {
+  "needle": "notice",
+  "kind": "rustle",
+  "anchor": "notice"
+ },
+ {
+  "needle": "fines",
+  "kind": "stamp",
+  "anchor": "fines"
+ },
+ {
+  "needle": "court",
+  "kind": "latch",
+  "anchor": "court"
+ },
+ {
+  "needle": "courts",
+  "kind": "latch",
+  "anchor": "courts"
+ },
+ {
+  "needle": "bench",
+  "kind": "latch",
+  "anchor": "bench"
+ },
+ {
+  "needle": "hearing",
+  "kind": "latch",
+  "anchor": "hearing"
+ },
+ {
+  "needle": "commission",
+  "kind": "latch",
+  "anchor": "commission"
+ },
+ {
+  "needle": "committee",
+  "kind": "latch",
+  "anchor": "committee"
+ },
+ {
+  "needle": "chief",
+  "kind": "latch",
+  "anchor": "chief"
+ },
+ {
+  "needle": "sentenced",
+  "kind": "stamp",
+  "anchor": "sentenced"
+ },
+ {
+  "needle": "acquitted",
+  "kind": "stamp",
+  "anchor": "acquitted"
+ },
+ {
+  "needle": "judgment",
+  "kind": "stamp",
+  "anchor": "judgment"
+ },
+ {
+  "needle": "suspended",
+  "kind": "stamp",
+  "anchor": "suspended"
+ },
+ {
+  "needle": "stopped",
+  "kind": "latch",
+  "anchor": "stopped"
+ },
+ {
+  "needle": "minutes",
+  "kind": "clock",
+  "anchor": "minutes"
+ },
+ {
+  "needle": "hours",
+  "kind": "clock",
+  "anchor": "hours"
+ },
+ {
+  "needle": "evening",
+  "kind": "clock",
+  "anchor": "evening"
+ },
+ {
+  "needle": "night",
+  "kind": "clock",
+  "anchor": "night"
+ },
+ {
+  "needle": "morning",
+  "kind": "clock",
+  "anchor": "morning"
+ },
+ {
+  "needle": "years",
+  "kind": "clock",
+  "anchor": "years"
+ },
+ {
+  "needle": "months",
+  "kind": "clock",
+  "anchor": "months"
+ },
+ {
+  "needle": "october",
+  "kind": "clock",
+  "anchor": "October"
+ },
+ {
+  "needle": "saturday",
+  "kind": "clock",
+  "anchor": "Saturday"
+ },
+ {
+  "needle": "barrier",
+  "kind": "latch",
+  "anchor": "barrier"
+ },
+ {
+  "needle": "cameras",
+  "kind": "shutter",
+  "anchor": "cameras"
+ },
+ {
+  "needle": "camera",
+  "kind": "shutter",
+  "anchor": "camera"
+ },
+ {
+  "needle": "signs",
+  "kind": "rustle",
+  "anchor": "signs"
+ },
+ {
+  "needle": "sign",
+  "kind": "rustle",
+  "anchor": "sign"
+ },
+ {
+  "needle": "door",
+  "kind": "latch",
+  "anchor": "door"
+ },
+ {
+  "needle": "window",
+  "kind": "rustle",
+  "anchor": "window"
+ },
+ {
+  "silent": "hundred and fifty-nine",
+  "why": "the toll. The largest card in the film carries itself."
+ },
+ {
+  "silent": "hundred and fifty-seven",
+  "why": "the toll, rising"
+ },
+ {
+  "silent": "hundred and fifty-eight",
+  "why": "the toll, rising"
+ },
+ {
+  "silent": "crushed to death",
+  "why": "a caller's words. A one-shot here dramatises the thing the film refuses to depict."
+ },
+ {
+  "silent": "fell over and got hurt",
+  "why": "a caller's words"
+ },
+ {
+  "silent": "terrible accident",
+  "why": "a caller's words"
+ },
+ {
+  "silent": "almost being crushed",
+  "why": "a caller's words"
+ },
+ {
+  "silent": "died",
+  "why": "death is never scored"
+ },
+ {
+  "silent": "dead",
+  "why": "death is never scored"
+ },
+ {
+  "silent": "asphyxiation",
+  "why": "cause of death"
+ },
+ {
+  "silent": "crush syndrome",
+  "why": "cause of death"
+ },
+ {
+  "silent": "rhabdomyolysis",
+  "why": "cause of death"
+ },
+ {
+  "silent": "survived",
+  "why": "the survivor line"
+ },
+ {
+  "silent": "rescue",
+  "why": "the response is not scored"
+ },
+ {
+  "silent": "thirteen minutes",
+  "why": "the interval between the first report and the first rescue team"
+ },
+ {
+  "silent": "not concluded",
+  "why": "the two words the last act turns on"
+ },
+ {
+  "silent": "stopped. by the court itself",
+  "why": "the recognition"
+ },
+ {
+  "silent": "people per square metre",
+  "why": "the measured density"
+ },
+ {
+  "silent": "newtons per metre",
+  "why": "the measured pressure"
+ },
+ {
+  "silent": "over three hundred people",
+  "why": "the eighteen square metres"
+ },
+ {
+  "ambience": "hook",
+  "bed": "amb_rain_street.mp3",
+  "why": "0:00 の路地。濡れたアスファルトと遠い車。"
+ },
+ {
+  "ambience": "op",
+  "bed": "amb_tension_drone.mp3",
+  "why": "街路図と定義。抑えた持続音。"
+ },
+ {
+  "ambience": "act_1",
+  "bed": "amb_night_window.mp3",
+  "why": "日暮れの街が満ちていく。屋外の轟音でなく、窓の外の街。"
+ },
+ {
+  "ambience": "act_2",
+  "bed": "amb_office_hum.mp3",
+  "why": "11件の通報を受ける組織の側。交換台の部屋。"
+ },
+ {
+  "ambience": "act_3",
+  "bed": "amb_empty_hallway.mp3",
+  "why": "路地が空・普通・事後の3状態だけの幕。最も抑制する。足音と静けさ。"
+ },
+ {
+  "ambience": "act_4",
+  "bed": "amb_institutional_drone.mp3",
+  "why": "地図と監査。政府の重み。"
+ },
+ {
+  "ambience": "act_5",
+  "bed": "amb_courtroom_room_tone.mp3",
+  "why": "判決・法令・控訴の中断。部屋の残響。"
+ },
+ {
+  "ambience": "ending",
+  "bed": "amb_night_window.mp3",
+  "why": "柵とカメラ。フックと同じ床で閉じる。"
+ },
+ {
+  "needle": "street",
+  "kind": "whoosh",
+  "anchor": "street",
+  "_added": "2026-08-24: sound_layers measured 11 distinct sample files against a floor of 12. The one-shot library holds 13 files in total, so an episode has to reach nearly all of them; these four are the ones EP74 was not using. Anchors are words this script actually speaks (street 26, alley 9, report 4, door 1)."
+ },
+ {
+  "needle": "alley",
+  "kind": "low boom",
+  "anchor": "alley",
+  "_added": "2026-08-24: sound_layers measured 11 distinct sample files against a floor of 12. The one-shot library holds 13 files in total, so an episode has to reach nearly all of them; these four are the ones EP74 was not using. Anchors are words this script actually speaks (street 26, alley 9, report 4, door 1)."
+ },
+ {
+  "needle": "report",
+  "kind": "riser",
+  "anchor": "report",
+  "_added": "2026-08-24: sound_layers measured 11 distinct sample files against a floor of 12. The one-shot library holds 13 files in total, so an episode has to reach nearly all of them; these four are the ones EP74 was not using. Anchors are words this script actually speaks (street 26, alley 9, report 4, door 1)."
+ },
+ {
+  "needle": "door",
+  "kind": "gavel",
+  "anchor": "door",
+  "_added": "2026-08-24: sound_layers measured 11 distinct sample files against a floor of 12. The one-shot library holds 13 files in total, so an episode has to reach nearly all of them; these four are the ones EP74 was not using. Anchors are words this script actually speaks (street 26, alley 9, report 4, door 1)."
+ }
+]

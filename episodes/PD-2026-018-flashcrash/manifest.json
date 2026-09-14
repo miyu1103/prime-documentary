@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-018-flashcrash",
+  "topic_id": "TOP-20260627-018",
+  "slug": "flashcrash",
+  "title_working": "Did One Man Really Break the Stock Market? The 2010 Flash Crash",
+  "state": "owner_review_ready_r3_legal_required",
+  "risk_class": "R3",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "shotlist": "v001",
+    "ai_prompts": "v001",
+    "thumb_prompts": "v001",
+    "edit_design": "v001",
+    "narration_index": "v001",
+    "audio_mix": "v001",
+    "captions": "v001",
+    "factory_ledger": "v001",
+    "final_render": "v001",
+    "final_qc": "v001",
+    "youtube_meta": "v001",
+    "rights_manifest": "v001",
+    "final_delivery": "v001",
+    "owner_review_request": "v001",
+    "thumbnail": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-018-flashcrash-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-018-flashcrash/03_script/script.annotated.v001.json",
+      "checksum": "sha256:da6bd4ce14894561ce7d7b0f218b78ab827476b6ac55e176c8caacc2c563d79b",
+      "status": "approved",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-018-flashcrash-audio-mix",
+      "artifact_type": "audio_mix",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-018-flashcrash/06_audio/audio_mix.v001.json",
+      "checksum": "sha256:8744e1c8eace9d4f0bcab4d2e0fa76d10ed91f21867d20a12a63bbe18d95e662",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-018-flashcrash-factory-ledger",
+      "artifact_type": "factory_ledger",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-018-flashcrash/05_stock/stock_ledger.v001.json",
+      "checksum": "sha256:48a46693e590cb0e1f6c064ec92d7d624a47d68289dcb431128f2d1e010d5734",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-018-flashcrash-final-acceptance",
+      "artifact_type": "final_acceptance",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-018-flashcrash/09_package/EVIDENCE/final_acceptance.v001.txt",
+      "checksum": "sha256:51f66df1537824df09f16d79cf27d971f43e6f237e84821c8a11e6c1c0e26467",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-018-flashcrash-youtube-meta",
+      "artifact_type": "youtube_meta",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-018-flashcrash/09_package/youtube_meta.v001.json",
+      "checksum": "sha256:961cc6de36d2d0cf1bb2fa70db1aa1a6d066b97325252c902af596f33017626c",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-018-flashcrash-rights-manifest",
+      "artifact_type": "rights_manifest",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-018-flashcrash/09_package/rights_manifest.v001.json",
+      "checksum": "sha256:78d7471d2628c24e3db93439311bc8b7393022eb0ff9f2a104b71188ccb39d4a",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-018-flashcrash-final-delivery",
+      "artifact_type": "final_delivery",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-018-flashcrash/09_package/final_delivery.v001.json",
+      "checksum": "sha256:58769b87389a270f81e24fbb288a9c4c291e8eafb898e558bac261d45274705f",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-018-flashcrash-owner-review-request",
+      "artifact_type": "owner_review_request",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-018-flashcrash/09_package/OWNER_REVIEW_REQUEST.v001.md",
+      "checksum": "sha256:43eecd05685348a43d923b3d9f311ada003db6eef880b2d651ed9698ed0659be",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Claude owns research+script+design (left process); Codex begins at scenes/visuals/render (right process). AI image gen = SDXL 4K (>=3840); edit = Remotion+FFmpeg.",
+    "FEATURE ~30 min = mid profile (runtime band 27-33 min). Narration ~15.1 min by design; runtime reached with hero shots + factory b-roll + held beats + 4-part bookends.",
+    "OUTPUT GATE = docs/PD_ONE_PASS_PRODUCTION_SPEC.v1.md. Codex must satisfy rows 1-13 from the first render; not done until check_final_acceptance.py 18 exits 0. Self-asserted QC forbidden.",
+    "R3 — LIVING person who pleaded guilty (Sarao). DEDICATED legal/rights review required before publish. CAUSATION LOCK: guilty plea (wire fraud+spoofing) = fact; crash = 'contributed/significantly responsible', NEVER 'caused/single-handedly/one man broke the market'; attribute to officials; no real-person likeness.",
+    "Durable source hashes pending (content_hash=sha256:pending) -> compute at fact_recheck before publish. Current facts to be re-verified pre-publish.",
+    "SDXL 4K hero plates generating to H:/pd-media/assets/ai/flashcrash + remotion/public/flashcrash (26 shots x 3 variants, 3840x2160). Heavy media on the external SSD, not in this repo.",
+    "Final render v001 passed independent check_final_acceptance.py 18 with runtime/render/images/motion/BGM/captions/thumbnail/factory gates PASS; public gates remain closed.",
+    "R3 causation lock remains binding: Sarao pleaded guilty to wire fraud and spoofing; crash language must remain contributed/exacerbated/order imbalance with multi-factor context, never single-cause."
+  ],
+  "blockers": [
+    "Owner first-cut review required before upload/publication.",
+    "Title/thumbnail approval required before upload/publication.",
+    "Dedicated R3 legal/rights review required with exact final render hash before publish_approved may change.",
+    "Same-day fact re-check required before public scheduling.",
+    "Public upload/schedule/publish approval required; no upload, schedule, or publish has been performed."
+  ],
+  "created_at": "2026-06-27T09:00:00+09:00",
+  "updated_at": "2026-06-28T06:48:42.901689+00:00"
+}

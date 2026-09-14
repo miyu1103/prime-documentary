@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-027-rodriguez",
+  "revision": "v001",
+  "title": "How Long Can the Police Keep You at a Traffic Stop?",
+  "case": "Rodriguez v. United States, 575 U.S. 348 (2015)",
+  "canonical_final": {
+    "path": "artifact://episodes/PD-2026-027-rodriguez/08_edit/final.v001.mp4",
+    "render_source": "remotion/out/rodriguez_final.v001.bgm.mp4",
+    "video_sha256": "sha256:6623359a99fa3f3ccfc27a117fad48342977f2936e31377d1a210a7326214b15",
+    "duration_seconds": 647.5,
+    "duration_min": 10.79,
+    "resolution": "1920x1080",
+    "codec": "h264",
+    "note": "THE single publish candidate for EP27. BGM-muxed, loudnorm-ed master."
+  },
+  "audio": {
+    "voice": "ElevenLabs master (nPczCjzI2devNBz1zQrb / eleven_multilingual_v2)",
+    "narration_master": "artifact://episodes/PD-2026-027-rodriguez/06_voice/master/vc_master_v001.mp3",
+    "narration_seconds": 626.8,
+    "bgm": "continuous ducked 8-track bed (Suno commercial library), sidechain to VO, integrated -13.7 LUFS",
+    "silence_gt2s": 0
+  },
+  "captions": {
+    "path": "artifact://episodes/PD-2026-027-rodriguez/08_edit/captions.final.v001.srt",
+    "captions_sha256": "sha256:f61a4b6b8b881ab1aa62ecc907a06f91c7ef303fc5e4b5aa65dcfe1dffe78fdb",
+    "method": "faster-whisper forced alignment to narration; <=2 lines, <=50 chars, <=27 cps, breath-group breaks; 100% token match to narration"
+  },
+  "thumbnail": {
+    "selected": "artifact://episodes/PD-2026-027-rodriguez/09_package/thumbnail.selected.v001.png",
+    "thumbnail_sha256": "sha256:4767b92440e66208f576843c34f646dc424bdfc4f2f7de84978e2e2d66cd706e",
+    "options": 5,
+    "size": "1280x720",
+    "headline": "HOW LONG CAN / THEY HOLD YOU? (kicker: 2015 · THEN THE DOG ARRIVED) over a night patrol-stop on a dark two-lane road"
+  },
+  "build": {
+    "composition": "remotion/src/compositions/CaseFilm.tsx (RodriguezFilm wrapper), id CaseFilm-rodriguez",
+    "assets": "26 Codex hero stills + 36 factory clips (remotion/public/rodriguez), 188 cuts, no reuse cluster",
+    "structure": "8s cold-open hook -> BrandOpening -> ACT I-IV -> BrandEndcard",
+    "motion_graphics": "23 kinetic-typography beats from script.annotated on_screen_text ('The mission was complete', 'But the stop did not end', 'Authority ends when the traffic tasks are done', 'a short, careful delay was reasonable', 'Mission: Thomas, Alito, Kennedy'), animated gold underline, timed 1:1 to narration chunks; footage-forward, MotionSample look"
+  },
+  "acceptance": {
+    "gate": "scripts/check_final_acceptance.py 27",
+    "result": "PASS on all hard checks EXCEPT runtime_band",
+    "runtime_band": "FAIL by design: 10.79 min vs standard 11.5-12.5; owner-accepted (same precedent as EP25 accepted at 10:20). Documented deviation, gate NOT weakened.",
+    "passes": ["render_resolution 1920x1080 h264", "images_present (black 3.6s total / 2.8s longest, within 8/3)", "motion_present (frozen 0.0s)", "bgm_present (0s silence)", "loudness -13.7", "voice_is_master (ElevenLabs)", "captions_final", "caption_format", "caption_narration_match 100%", "structure_4part", "op_ed_bookends", "thumbnail_ready (5 + selected)", "image_resolution", "factory_used (36)"]
+  },
+  "risk": {
+    "class": "R2 (low). Rodriguez is public court record. No real-person likeness in visuals; holding stated precisely (a stop may last no longer than needed to complete the traffic mission; a dog sniff that prolongs the stop absent reasonable suspicion is unlawful; 6-3, Ginsburg majority, remanded on reasonable suspicion).",
+    "review": "owner review recommended before publish."
+  },
+  "publish": {
+    "status": "NOT PUBLISHED. Private/scheduled upload is a separate owner-gated step. Next open long-form slot per daily cadence = 2026-07-12 12:00 JST (EP25=7/10, EP26=7/11).",
+    "external_side_effects": "none performed"
+  },
+  "created_at": "2026-07-04"
+}

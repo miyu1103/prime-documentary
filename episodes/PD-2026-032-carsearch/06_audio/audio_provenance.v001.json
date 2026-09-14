@@ -1,0 +1,849 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "case_film_audio_provenance",
+  "episode_id": "PD-2026-032-carsearch",
+  "revision": "v001",
+  "generator": "scripts/build_case_film_audio.py",
+  "fps": 30,
+  "timeline": {
+    "total_sec": 698.453,
+    "lead_sec": 11.54,
+    "body_len_sec": 677.913,
+    "body_internal_sec": 677.913,
+    "narration_starts_at_sec": 11.54,
+    "voice_end_sec": 687.953,
+    "tail_sec": 1.5,
+    "chunks": 52,
+    "beats": 52,
+    "video_timeline": {
+      "note": "mix spans the whole CaseFilm composition; body (narration+cues) offset by lead so it aligns with the burned captions + figures",
+      "hook_seconds": 8.04,
+      "opening_sec": 3.5,
+      "endcard_sec": 9.0,
+      "narration_seconds": 676.413,
+      "film_data": "remotion\\public\\carsearch\\film_data.v001.json"
+    },
+    "timing_source": "narration_index chunk durations (measured per-chunk audio when present, else estimate); SFX placed by token position within the owning chunk; whole body shifted by lead",
+    "measured_chunks": 52,
+    "estimated_chunks": 0
+  },
+  "chapters": [
+    {
+      "chapter_id": "hook",
+      "title": "Hook",
+      "start": 11.54,
+      "end": 19.659,
+      "ambience_bed": "amb_night_window.mp3"
+    },
+    {
+      "chapter_id": "opening",
+      "title": "Opening",
+      "start": 19.659,
+      "end": 54.613,
+      "ambience_bed": "amb_highway_traffic.mp3"
+    },
+    {
+      "chapter_id": "act1",
+      "title": "ACT I",
+      "start": 54.613,
+      "end": 206.654,
+      "ambience_bed": "amb_office_hum.mp3"
+    },
+    {
+      "chapter_id": "act2",
+      "title": "ACT II",
+      "start": 206.654,
+      "end": 374.86,
+      "ambience_bed": "amb_institutional_drone.mp3"
+    },
+    {
+      "chapter_id": "act3",
+      "title": "ACT III",
+      "start": 374.86,
+      "end": 555.08,
+      "ambience_bed": "amb_tension_drone.mp3"
+    },
+    {
+      "chapter_id": "act4",
+      "title": "ACT IV",
+      "start": 555.08,
+      "end": 665.248,
+      "ambience_bed": "amb_courtroom_room_tone.mp3"
+    },
+    {
+      "chapter_id": "ending",
+      "title": "Ending / CTA",
+      "start": 665.248,
+      "end": 689.453,
+      "ambience_bed": "amb_light_wind.mp3"
+    }
+  ],
+  "layers": {
+    "narration": {
+      "role": "front / sidechain-priority (VO wins)",
+      "master_uri": "artifact://episodes/PD-2026-032-carsearch/06_voice/master/vc_master_v001.mp3",
+      "master_path_expected": "H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_voice\\master\\vc_master_v001.mp3",
+      "master_exists": true,
+      "gain_db": 0.0
+    },
+    "music": {
+      "role": "per-chapter ducked musical bed (sidechained by VO) + hook/opening intro fill + endcard outro fill",
+      "cue_count": 7,
+      "distinct_tracks": 7,
+      "tracks": [
+        "music/hook/mus_20260614_hook_glass_air_bed_v2.mp3",
+        "music/opening/mus_20260614_opening_measured_arpeggio_v2.mp3",
+        "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v2.mp3",
+        "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v2.mp3",
+        "music/reveal/mus_20260614_reveal_verdict_at_dawn_v2.mp3",
+        "music/somber/mus_20260614_somber_ledger_of_ash_v2.mp3",
+        "music/outro/mus_20260614_outro_last_frame_v2.mp3"
+      ],
+      "gain_db": -13.2,
+      "ducked": true,
+      "fills": [
+        {
+          "role": "hook",
+          "file": "music/hook/mus_20260614_hook_glass_air_bed_v2.mp3",
+          "start": 0.0,
+          "end": 8.04,
+          "vol": 0.3
+        },
+        {
+          "role": "opening",
+          "file": "music/opening/mus_20260614_opening_measured_arpeggio_v2.mp3",
+          "start": 8.04,
+          "end": 11.54,
+          "vol": 0.3
+        },
+        {
+          "role": "outro",
+          "file": "music/outro/mus_20260614_outro_last_frame_v2.mp3",
+          "start": 689.453,
+          "end": 698.453,
+          "vol": 0.26
+        }
+      ],
+      "fill_count": 3
+    },
+    "ambience": {
+      "role": "distinct constant location bed per chapter (audible; NOT sidechained -> capped duck)",
+      "bed_count": 7,
+      "distinct_beds": 7,
+      "beds": [
+        "amb_courtroom_room_tone.mp3",
+        "amb_highway_traffic.mp3",
+        "amb_institutional_drone.mp3",
+        "amb_light_wind.mp3",
+        "amb_night_window.mp3",
+        "amb_office_hum.mp3",
+        "amb_tension_drone.mp3"
+      ],
+      "beds_by_chapter": {
+        "hook": "amb_night_window.mp3",
+        "opening": "amb_highway_traffic.mp3",
+        "act1": "amb_office_hum.mp3",
+        "act2": "amb_institutional_drone.mp3",
+        "act3": "amb_tension_drone.mp3",
+        "act4": "amb_courtroom_room_tone.mp3",
+        "ending": "amb_light_wind.mp3"
+      },
+      "floor_db": -18.0,
+      "ducking_capped": true,
+      "swell_automation_events": 15
+    },
+    "sfx": {
+      "role": "narration-timed one-shots at real words + chapter cuts (cue times are body-local; add timeline.lead_sec for absolute)",
+      "cue_count": 37,
+      "cues_before_dedup": 37,
+      "deduped": 0,
+      "distinct_files": 20,
+      "word_triggered": 1,
+      "riser_fill": "sfx_riser_2s.mp3",
+      "transient_bed": null,
+      "transient_bed_removed_note": "The former onset-density filler bed (326 meaningless tick/blip/whoosh hits placed on a fixed cadence to game the acceptance onset floor) was REMOVED (EP32 owner reject 2026-07-06). SFX are now ONLY the script's designed (SFX:) cues + chapter cuts at real narrated beats; the gate rewards distinct SFX files + beds, not raw transient count."
+    }
+  },
+  "mix": {
+    "wav_uri": "artifact://episodes/PD-2026-032-carsearch/06_audio/mix/PD-2026-032-carsearch_film_audio_v001.wav",
+    "wav_path_expected": "H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_audio\\mix\\PD-2026-032-carsearch_film_audio_v001.wav",
+    "render_audio_copy": "H:\\pd-media\\episodes\\PD-2026-032-carsearch\\08_edit\\audio\\PD-2026-032-carsearch_film_audio_v001.wav",
+    "exists": true,
+    "sha256": "a946b35d9e8ecc446f33cfd5be52e3b6056d189b41276bdea8980a1eaa3ee98a",
+    "duration_sec": 698.406,
+    "sample_rate": 48000,
+    "channels": 2,
+    "codec": "pcm_s16le",
+    "loudnorm": {
+      "I": -14.0,
+      "TP": -1.5,
+      "LRA": 11.0,
+      "passes": 2
+    },
+    "loudnorm_measured": {
+      "input_i": "-23.54",
+      "input_tp": "-2.82",
+      "input_lra": "2.90",
+      "input_thresh": "-33.66",
+      "output_i": "-14.16",
+      "output_tp": "-1.50",
+      "output_lra": "2.60",
+      "output_thresh": "-24.23",
+      "normalization_type": "dynamic",
+      "target_offset": "0.16"
+    },
+    "final_weights": "1 0.90 0.80 0.95"
+  },
+  "mux": {
+    "note": "This WAV is the ONLY audio in the final deliverable; the video is muxed with -map 0:v -map 1:a so the render carries exactly this mix.",
+    "audio_source_uri": "artifact://episodes/PD-2026-032-carsearch/06_audio/mix/PD-2026-032-carsearch_film_audio_v001.wav",
+    "audio_source_sha256": "a946b35d9e8ecc446f33cfd5be52e3b6056d189b41276bdea8980a1eaa3ee98a",
+    "command_template": "ffmpeg -y -i <case_film_video.mp4> -i H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_audio\\mix\\PD-2026-032-carsearch_film_audio_v001.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 320k -ar 48000 -shortest <final.mp4>"
+  },
+  "density_gate": {
+    "sfx_count": 37,
+    "sfx_per_min": 3.178,
+    "ambience_coverage": 0.971,
+    "ambience_distinct_beds": 7,
+    "floors": {
+      "sfx_total": 20,
+      "sfx_per_min": 2.0,
+      "ambience_coverage": 0.85,
+      "ambience_distinct_beds": 4
+    },
+    "pass": true,
+    "failures": []
+  },
+  "unmapped_sfx": [
+    {
+      "chunk": "VC-0004",
+      "beat": 3,
+      "phrase": "a beat of silence",
+      "reason": "rest_silence"
+    },
+    {
+      "chunk": "VC-0022",
+      "beat": 21,
+      "phrase": "two card flips",
+      "reason": "no_keyword_match"
+    },
+    {
+      "chunk": "VC-0035",
+      "beat": 34,
+      "phrase": "quiet",
+      "reason": "no_keyword_match"
+    },
+    {
+      "chunk": "VC-0052",
+      "beat": 51,
+      "phrase": "a gentle outro resolving on the musical cadence",
+      "reason": "no_keyword_match"
+    }
+  ],
+  "swells": [
+    {
+      "chapter_id": "act1",
+      "time": 67.659,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a low engine hum, ambient night road",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act2",
+      "time": 312.59,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a hollow tone where the third would be",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act2",
+      "time": 322.86,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a single low, settled tone",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act2",
+      "time": 339.183,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "an ambient highway bed swells under the line",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act2",
+      "time": 354.52,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "one deep, patient beat",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act3",
+      "time": 369.729,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "an ambient suburban hush",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act3",
+      "time": 380.107,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a light wind rustling the tarp",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act3",
+      "time": 416.036,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a straining, elastic tone",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act3",
+      "time": 462.847,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a warm, resolving swell",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act3",
+      "time": 477.551,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a single grounded low note",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act3",
+      "time": 495.093,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a soft period-beat",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act3",
+      "time": 506.042,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a single confident note",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act3",
+      "time": 533.997,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a low, forward-leaning pulse",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act4",
+      "time": 593.998,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "an uncertain shimmer that never resolves",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "act4",
+      "time": 618.17,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a steady, reassuring pulse",
+      "trigger": "",
+      "timing": "beat_offset"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "cue_id": "L4-001",
+      "file": "sfx/sfx_whoosh_v2_long.mp3",
+      "chapter_id": "hook",
+      "time": 0.803,
+      "dur": 0.8,
+      "gain_db": -14.9,
+      "source": "script_sfx",
+      "phrase": "whoosh",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-002",
+      "file": "sfx/sfx_low_boom.mp3",
+      "chapter_id": "hook",
+      "time": 4.281,
+      "dur": 1.6,
+      "gain_db": -11.7,
+      "source": "script_sfx",
+      "phrase": "a low boom on \"hundred years.\"",
+      "trigger": "hundred years.",
+      "timing": "word_trigger"
+    },
+    {
+      "cue_id": "L4-003",
+      "file": "sfx/sfx_whoosh_short.mp3",
+      "chapter_id": "opening",
+      "time": 8.119,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into Opening",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-004",
+      "file": "sfx/sfx_riser_2s.mp3",
+      "chapter_id": "opening",
+      "time": 34.364,
+      "dur": 2.0,
+      "gain_db": -13.2,
+      "source": "script_sfx",
+      "phrase": "a tight riser",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-005",
+      "file": "sfx/sfx_whoosh_short.mp3",
+      "chapter_id": "act1",
+      "time": 43.073,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into ACT I",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-006",
+      "file": "sfx/sfx_page_turn.mp3",
+      "chapter_id": "act1",
+      "time": 60.142,
+      "dur": 0.9,
+      "gain_db": -14.9,
+      "source": "script_sfx",
+      "phrase": "page turn",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-007",
+      "file": "sfx/sfx_stamp_seal.mp3",
+      "chapter_id": "act1",
+      "time": 60.821,
+      "dur": 0.9,
+      "gain_db": -14.0,
+      "source": "script_sfx",
+      "phrase": "a soft stamp",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-008",
+      "file": "sfx/sfx_paper_rustle.mp3",
+      "chapter_id": "act1",
+      "time": 82.018,
+      "dur": 1.0,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "fabric tear",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-009",
+      "file": "sfx/sfx_tick_v2_hi.mp3",
+      "chapter_id": "act1",
+      "time": 82.653,
+      "dur": 0.4,
+      "gain_db": -18.4,
+      "source": "script_sfx",
+      "phrase": "glass clinks",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-010",
+      "file": "sfx/sfx_blip_v2_lo.mp3",
+      "chapter_id": "act1",
+      "time": 83.288,
+      "dur": 0.8,
+      "gain_db": -17.1,
+      "source": "script_sfx",
+      "phrase": "the counter blips",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-011",
+      "file": "sfx/sfx_whoosh_medium.mp3",
+      "chapter_id": "act1",
+      "time": 131.923,
+      "dur": 1.2,
+      "gain_db": -14.9,
+      "source": "script_sfx",
+      "phrase": "engine pull",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-012",
+      "file": "sfx/sfx_whoosh_short.mp3",
+      "chapter_id": "act1",
+      "time": 132.553,
+      "dur": 0.8,
+      "gain_db": -14.9,
+      "source": "script_sfx",
+      "phrase": "a whoosh past the mic",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-013",
+      "file": "sfx/sfx_tick_v2_lo.mp3",
+      "chapter_id": "act1",
+      "time": 163.0,
+      "dur": 0.5,
+      "gain_db": -18.4,
+      "source": "script_sfx",
+      "phrase": "a soft multiplying tick",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-014",
+      "file": "sfx/sfx_sub_drop.mp3",
+      "chapter_id": "act1",
+      "time": 181.166,
+      "dur": 1.4,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "a sub-drop",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-015",
+      "file": "sfx/sfx_whoosh_short.mp3",
+      "chapter_id": "act2",
+      "time": 195.114,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into ACT II",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-016",
+      "file": "sfx/sfx_stamp_seal.mp3",
+      "chapter_id": "act2",
+      "time": 196.273,
+      "dur": 0.9,
+      "gain_db": -14.0,
+      "source": "script_sfx",
+      "phrase": "a hard stamp / soft impact",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-017",
+      "file": "sfx/sfx_riser_v2_3s.mp3",
+      "chapter_id": "act2",
+      "time": 206.827,
+      "dur": 2.0,
+      "gain_db": -13.2,
+      "source": "script_sfx",
+      "phrase": "ui-ticks as the meter rises, a dull thud when it falls short",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-018",
+      "file": "sfx/sfx_data_blip.mp3",
+      "chapter_id": "act2",
+      "time": 224.158,
+      "dur": 0.8,
+      "gain_db": -17.1,
+      "source": "script_sfx",
+      "phrase": "rising data-blips",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-019",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "act2",
+      "time": 249.987,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a soft mechanical click per zone",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-020",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "act2",
+      "time": 268.656,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a lock pop",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-021",
+      "file": "sfx/sfx_data_blip.mp3",
+      "chapter_id": "act2",
+      "time": 289.944,
+      "dur": 0.8,
+      "gain_db": -17.1,
+      "source": "script_sfx",
+      "phrase": "contrasting low and high blips",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-022",
+      "file": "sfx/sfx_tick_v2_hi.mp3",
+      "chapter_id": "act2",
+      "time": 312.056,
+      "dur": 0.5,
+      "gain_db": -18.4,
+      "source": "script_sfx",
+      "phrase": "two crisp checks",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-023",
+      "file": "sfx/sfx_whoosh_short.mp3",
+      "chapter_id": "act3",
+      "time": 363.32,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into ACT III",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-024",
+      "file": "sfx/sfx_whoosh_v2_long.mp3",
+      "chapter_id": "act3",
+      "time": 363.93,
+      "dur": 1.2,
+      "gain_db": -14.9,
+      "source": "script_sfx",
+      "phrase": "a fast pass-by whoosh",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-025",
+      "file": "sfx/sfx_impact_v2_tight.mp3",
+      "chapter_id": "act3",
+      "time": 388.44,
+      "dur": 0.8,
+      "gain_db": -18.4,
+      "source": "script_sfx",
+      "phrase": "footsteps",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-026",
+      "file": "sfx/sfx_paper_rustle.mp3",
+      "chapter_id": "act3",
+      "time": 389.093,
+      "dur": 1.0,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "the tarp pull",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-027",
+      "file": "sfx/sfx_blip_v2_lo.mp3",
+      "chapter_id": "act3",
+      "time": 389.745,
+      "dur": 0.8,
+      "gain_db": -17.1,
+      "source": "script_sfx",
+      "phrase": "a data-blip on \"confirmed.\"",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-028",
+      "file": "sfx/sfx_ui_tick.mp3",
+      "chapter_id": "act3",
+      "time": 401.525,
+      "dur": 0.5,
+      "gain_db": -18.4,
+      "source": "script_sfx",
+      "phrase": "a confirming tick",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-029",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "act3",
+      "time": 426.784,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a tense metallic turn",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-030",
+      "file": "sfx/sfx_soft_impact.mp3",
+      "chapter_id": "act3",
+      "time": 450.508,
+      "dur": 1.0,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "the single hardest impact in the film",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-031",
+      "file": "sfx/sfx_gavel_knock.mp3",
+      "chapter_id": "act3",
+      "time": 453.536,
+      "dur": 1.0,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "a gavel knock",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-032",
+      "file": "sfx/sfx_tick_v2_hi.mp3",
+      "chapter_id": "act3",
+      "time": 494.329,
+      "dur": 0.5,
+      "gain_db": -18.4,
+      "source": "script_sfx",
+      "phrase": "type ticks",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-033",
+      "file": "sfx/sfx_whoosh_short.mp3",
+      "chapter_id": "act4",
+      "time": 543.54,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into ACT IV",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-034",
+      "file": "sfx/sfx_tick_v2_lo.mp3",
+      "chapter_id": "act4",
+      "time": 544.507,
+      "dur": 0.5,
+      "gain_db": -18.4,
+      "source": "script_sfx",
+      "phrase": "three quick assembling ticks",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-035",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "act4",
+      "time": 563.07,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a restrained click",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-036",
+      "file": "sfx/sfx_boom_v2_deep.mp3",
+      "chapter_id": "act4",
+      "time": 648.938,
+      "dur": 1.6,
+      "gain_db": -11.7,
+      "source": "script_sfx",
+      "phrase": "the low boom from the hook returns, quiet and settled",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-037",
+      "file": "sfx/sfx_whoosh_short.mp3",
+      "chapter_id": "ending",
+      "time": 653.708,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into Ending / CTA",
+      "trigger": "",
+      "timing": "chapter_start"
+    }
+  ],
+  "ffmpeg": {
+    "mixing": "narration(front) + music(sidechain-ducked) + ambience(constant audible bed + swell automation) + sfx(one-shots), two-pass loudnorm I=-14",
+    "output_expected": "H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_audio\\mix\\PD-2026-032-carsearch_film_audio_v001.wav",
+    "filter_complex": "[0:a]aresample=48000,volume=1.0,apad,atrim=0:677.913,asetpts=PTS-STARTPTS,adelay=11540|11540,apad,atrim=0:698.453,asetpts=PTS-STARTPTS,asplit=2[vo][key];[1:a]atrim=0:8.040,asetpts=PTS-STARTPTS,volume=0.3,afade=t=in:st=0:d=0.6,afade=t=out:st=7.240:d=0.8,adelay=0|0[mi0];[2:a]atrim=0:3.500,asetpts=PTS-STARTPTS,volume=0.3,afade=t=in:st=0:d=0.6,afade=t=out:st=2.700:d=0.8,adelay=8040|8040[mi1];[3:a]atrim=0:8.119,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=7.419:d=0.7,adelay=11540|11540[m0];[4:a]atrim=0:34.954,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=34.254:d=0.7,adelay=19659|19659[m1];[5:a]atrim=0:152.041,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=151.341:d=0.7,adelay=54613|54613[m2];[6:a]atrim=0:168.206,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=167.506:d=0.7,adelay=206654|206654[m3];[7:a]atrim=0:180.220,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=179.520:d=0.7,adelay=374860|374860[m4];[8:a]atrim=0:110.168,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=109.468:d=0.7,adelay=555080|555080[m5];[9:a]atrim=0:24.205,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=23.505:d=0.7,adelay=665248|665248[m6];[10:a]atrim=0:9.000,asetpts=PTS-STARTPTS,volume=0.26,afade=t=in:st=0:d=0.8,afade=t=out:st=2.500:d=3.000,adelay=689453|689453[mo];[mi0][mi1][m0][m1][m2][m3][m4][m5][m6][mo]amix=inputs=10:normalize=0:dropout_transition=0[musraw];[musraw][key]sidechaincompress=threshold=0.03:ratio=8:attack=25:release=320[musd];[11:a]atrim=0:8.119,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=7.519:d=0.6,adelay=11540|11540[a0];[12:a]atrim=0:34.954,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=34.354:d=0.6,adelay=19659|19659[a1];[13:a]atrim=0:152.041,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=151.441:d=0.6,adelay=54613|54613[a2];[14:a]atrim=0:168.206,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=167.606:d=0.6,adelay=206654|206654[a3];[15:a]atrim=0:180.220,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=179.620:d=0.6,adelay=374860|374860[a4];[16:a]atrim=0:110.168,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=109.568:d=0.6,adelay=555080|555080[a5];[17:a]atrim=0:24.205,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=23.605:d=0.6,adelay=665248|665248[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0:dropout_transition=0[ambraw];[ambraw]volume=eval=frame:volume='1+0.600*between(t,79.199,81.999)+0.600*between(t,324.130,326.930)+0.600*between(t,334.400,337.200)+0.600*between(t,350.723,353.523)+0.600*between(t,366.060,368.860)+0.600*between(t,381.269,384.069)+0.600*between(t,391.647,394.447)+0.600*between(t,427.576,430.376)+0.600*between(t,474.387,477.187)+0.600*between(t,489.091,491.891)+0.600*between(t,506.633,509.433)+0.600*between(t,517.582,520.382)+0.600*between(t,545.537,548.337)+0.600*between(t,605.538,608.338)+0.600*between(t,629.710,632.510)'[ambd];[18:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=12343|12343[s0];[19:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=15821|15821[s1];[20:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=19659|19659[s2];[21:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=45904|45904[s3];[22:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=54613|54613[s4];[23:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=71682|71682[s5];[24:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=72361|72361[s6];[25:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=93558|93558[s7];[26:a]atrim=0:0.400,asetpts=PTS-STARTPTS,volume=0.12,adelay=94193|94193[s8];[27:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=94828|94828[s9];[28:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=143463|143463[s10];[29:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=144093|144093[s11];[30:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=174540|174540[s12];[31:a]atrim=0:1.400,asetpts=PTS-STARTPTS,volume=0.24,adelay=192706|192706[s13];[32:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=206654|206654[s14];[33:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=207813|207813[s15];[34:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=218367|218367[s16];[35:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=235698|235698[s17];[36:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=261527|261527[s18];[37:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=280196|280196[s19];[38:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=301484|301484[s20];[39:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=323596|323596[s21];[40:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=374860|374860[s22];[41:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=375470|375470[s23];[42:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.12,adelay=399980|399980[s24];[43:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=400633|400633[s25];[44:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=401285|401285[s26];[45:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=413065|413065[s27];[46:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=438324|438324[s28];[47:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=462048|462048[s29];[48:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=465076|465076[s30];[49:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=505869|505869[s31];[50:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=555080|555080[s32];[51:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=556047|556047[s33];[52:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=574610|574610[s34];[53:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=660478|660478[s35];[54:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=665248|665248[s36];[55:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=9540|9540[sriser];[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22][s23][s24][s25][s26][s27][s28][s29][s30][s31][s32][s33][s34][s35][s36][sriser]amix=inputs=38:normalize=0:dropout_transition=0[sfxraw];[vo][musd][ambd][sfxraw]amix=inputs=4:weights=1 0.90 0.80 0.95:normalize=0:duration=first,atrim=0:698.453,loudnorm=I=-14:TP=-1.5:LRA=11:linear=true,alimiter=level_in=1:level_out=1:limit=0.95[aout]",
+    "command": "ffmpeg -y -i \"H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_voice\\master\\vc_master_v001.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\hook\\mus_20260614_hook_glass_air_bed_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\opening\\mus_20260614_opening_measured_arpeggio_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\hook\\mus_20260614_hook_glass_air_bed_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\opening\\mus_20260614_opening_measured_arpeggio_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\tension_build\\mus_20260614_tension_build_courtroom_horizon_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\reveal\\mus_20260614_reveal_verdict_at_dawn_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\somber\\mus_20260614_somber_ledger_of_ash_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\outro\\mus_20260614_outro_last_frame_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\outro\\mus_20260614_outro_last_frame_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_night_window.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_highway_traffic.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_office_hum.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_institutional_drone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_tension_drone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_courtroom_room_tone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_light_wind.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_long.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_low_boom.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_2s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_page_turn.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_hi.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_blip_v2_lo.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_medium.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_lo.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_sub_drop.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_v2_3s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_data_blip.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_data_blip.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_hi.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_long.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_impact_v2_tight.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_blip_v2_lo.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_ui_tick.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_soft_impact.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_gavel_knock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_hi.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_lo.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_boom_v2_deep.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_2s.mp3\" -filter_complex \"[0:a]aresample=48000,volume=1.0,apad,atrim=0:677.913,asetpts=PTS-STARTPTS,adelay=11540|11540,apad,atrim=0:698.453,asetpts=PTS-STARTPTS,asplit=2[vo][key];[1:a]atrim=0:8.040,asetpts=PTS-STARTPTS,volume=0.3,afade=t=in:st=0:d=0.6,afade=t=out:st=7.240:d=0.8,adelay=0|0[mi0];[2:a]atrim=0:3.500,asetpts=PTS-STARTPTS,volume=0.3,afade=t=in:st=0:d=0.6,afade=t=out:st=2.700:d=0.8,adelay=8040|8040[mi1];[3:a]atrim=0:8.119,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=7.419:d=0.7,adelay=11540|11540[m0];[4:a]atrim=0:34.954,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=34.254:d=0.7,adelay=19659|19659[m1];[5:a]atrim=0:152.041,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=151.341:d=0.7,adelay=54613|54613[m2];[6:a]atrim=0:168.206,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=167.506:d=0.7,adelay=206654|206654[m3];[7:a]atrim=0:180.220,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=179.520:d=0.7,adelay=374860|374860[m4];[8:a]atrim=0:110.168,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=109.468:d=0.7,adelay=555080|555080[m5];[9:a]atrim=0:24.205,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=23.505:d=0.7,adelay=665248|665248[m6];[10:a]atrim=0:9.000,asetpts=PTS-STARTPTS,volume=0.26,afade=t=in:st=0:d=0.8,afade=t=out:st=2.500:d=3.000,adelay=689453|689453[mo];[mi0][mi1][m0][m1][m2][m3][m4][m5][m6][mo]amix=inputs=10:normalize=0:dropout_transition=0[musraw];[musraw][key]sidechaincompress=threshold=0.03:ratio=8:attack=25:release=320[musd];[11:a]atrim=0:8.119,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=7.519:d=0.6,adelay=11540|11540[a0];[12:a]atrim=0:34.954,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=34.354:d=0.6,adelay=19659|19659[a1];[13:a]atrim=0:152.041,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=151.441:d=0.6,adelay=54613|54613[a2];[14:a]atrim=0:168.206,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=167.606:d=0.6,adelay=206654|206654[a3];[15:a]atrim=0:180.220,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=179.620:d=0.6,adelay=374860|374860[a4];[16:a]atrim=0:110.168,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=109.568:d=0.6,adelay=555080|555080[a5];[17:a]atrim=0:24.205,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=23.605:d=0.6,adelay=665248|665248[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0:dropout_transition=0[ambraw];[ambraw]volume=eval=frame:volume='1+0.600*between(t,79.199,81.999)+0.600*between(t,324.130,326.930)+0.600*between(t,334.400,337.200)+0.600*between(t,350.723,353.523)+0.600*between(t,366.060,368.860)+0.600*between(t,381.269,384.069)+0.600*between(t,391.647,394.447)+0.600*between(t,427.576,430.376)+0.600*between(t,474.387,477.187)+0.600*between(t,489.091,491.891)+0.600*between(t,506.633,509.433)+0.600*between(t,517.582,520.382)+0.600*between(t,545.537,548.337)+0.600*between(t,605.538,608.338)+0.600*between(t,629.710,632.510)'[ambd];[18:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=12343|12343[s0];[19:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=15821|15821[s1];[20:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=19659|19659[s2];[21:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=45904|45904[s3];[22:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=54613|54613[s4];[23:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=71682|71682[s5];[24:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=72361|72361[s6];[25:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=93558|93558[s7];[26:a]atrim=0:0.400,asetpts=PTS-STARTPTS,volume=0.12,adelay=94193|94193[s8];[27:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=94828|94828[s9];[28:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=143463|143463[s10];[29:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=144093|144093[s11];[30:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=174540|174540[s12];[31:a]atrim=0:1.400,asetpts=PTS-STARTPTS,volume=0.24,adelay=192706|192706[s13];[32:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=206654|206654[s14];[33:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=207813|207813[s15];[34:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=218367|218367[s16];[35:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=235698|235698[s17];[36:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=261527|261527[s18];[37:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=280196|280196[s19];[38:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=301484|301484[s20];[39:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=323596|323596[s21];[40:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=374860|374860[s22];[41:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=375470|375470[s23];[42:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.12,adelay=399980|399980[s24];[43:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=400633|400633[s25];[44:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=401285|401285[s26];[45:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=413065|413065[s27];[46:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=438324|438324[s28];[47:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=462048|462048[s29];[48:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=465076|465076[s30];[49:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=505869|505869[s31];[50:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=555080|555080[s32];[51:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=556047|556047[s33];[52:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=574610|574610[s34];[53:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=660478|660478[s35];[54:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=665248|665248[s36];[55:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=9540|9540[sriser];[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22][s23][s24][s25][s26][s27][s28][s29][s30][s31][s32][s33][s34][s35][s36][sriser]amix=inputs=38:normalize=0:dropout_transition=0[sfxraw];[vo][musd][ambd][sfxraw]amix=inputs=4:weights=1 0.90 0.80 0.95:normalize=0:duration=first,atrim=0:698.453,loudnorm=I=-14:TP=-1.5:LRA=11:linear=true,alimiter=level_in=1:level_out=1:limit=0.95[aout]\" -map [aout] -t 698.453 -ar 48000 -ac 2 -c:a pcm_s16le \"H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_audio\\mix\\PD-2026-032-carsearch_film_audio_v001.wav\""
+  },
+  "library_root": "H:\\pd-media\\library",
+  "provenance": {
+    "script_md": "episodes\\PD-2026-032-carsearch\\03_script\\script.en.v001.md",
+    "script_md_sha256": "00334cbfccb4d3d54f804e42cef72c94cc9685de4d686283c29712758b99a4e5",
+    "narration_index": "episodes\\PD-2026-032-carsearch\\06_audio\\narration_index.v001.json",
+    "narration_index_sha256": "bf22a6653b1e0a7ede0ac6c6c6190ac8ef2c9470629025598b362dcaaa478ddf",
+    "deterministic": true
+  },
+  "side_effects": {
+    "external_cost_usd": 0,
+    "external_calls": [],
+    "wrote_files": [
+      "episodes\\PD-2026-032-carsearch\\06_audio\\audio_provenance.v001.json",
+      "H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_audio\\mix\\PD-2026-032-carsearch_film_audio_v001.wav"
+    ],
+    "ran_ffmpeg": true
+  }
+}

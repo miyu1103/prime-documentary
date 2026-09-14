@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-027-rodriguez",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Rodriguez v. United States (2015) the Supreme Court held that a traffic stop, though lawfully begun, becomes an unlawful seizure under the Fourth Amendment if it is prolonged beyond the time reasonably required to complete the stop's 'mission'; extending an otherwise-completed stop to conduct a dog sniff, absent independent reasonable suspicion, is unconstitutional.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Opinion of the Court (Ginsburg, J.), holding", "Justia syllabus and holding"],
+      "counterevidence": ["Three justices dissented; Thomas (joined by Alito) argued the stop as a whole was reasonable and the officer had reasonable suspicion, and Alito argued the timing-based rule is arbitrary."],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled that a traffic stop cannot be extended beyond the time needed to handle the traffic violation just to run a dog sniff, unless the officer has independent reasonable suspicion."
+      ],
+      "prohibited_wording": [
+        "The Court banned dog sniffs.",
+        "The Court banned traffic stops.",
+        "The police can never hold you after a ticket."
+      ],
+      "temporal_scope": "2015-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source. Do not overstate: the bar is on prolonging past the mission without reasonable suspicion, not a ban on sniffs or stops."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Rodriguez v. United States was decided on April 21, 2015 by a 6-3 vote; the majority opinion was written by Justice Ruth Bader Ginsburg (joined by Chief Justice Roberts and Justices Scalia, Breyer, Sotomayor and Kagan), with dissenting opinions by Justices Kennedy, Thomas (joined by Alito, and by Kennedy except as to Part III) and Alito.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002", "SRC-0003"],
+      "evidence_locations": ["Syllabus / decision date, vote and lineup", "Justia case header", "Oyez: decision, vote and lineup"],
+      "counterevidence": [],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "In a 6-3 decision in 2015, Justice Ginsburg wrote for the Court, with Justices Kennedy, Thomas and Alito dissenting."
+      ],
+      "prohibited_wording": [
+        "The decision was unanimous.",
+        "The decision was 5-4."
+      ],
+      "temporal_scope": "2015",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/vote/author/lineup per the syllabus, cross-checked on Justia and Oyez. Case No. 13-9972; 575 U.S. 348; argued Jan 21, 2015."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The majority reasoned that a traffic stop is a seizure justified only by its 'mission' — addressing the traffic violation and attending to related roadway-safety tasks such as checking the driver's license, registration and insurance and looking for outstanding warrants — and that the authority for the seizure 'ends when tasks tied to the traffic infraction are - or reasonably should have been - completed.'",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Ginsburg, J.), 'mission' reasoning and the tasks tied to the traffic infraction"],
+      "counterevidence": ["The dissents argued this focus on the discrete tasks and their sequence is too rigid and diverts from the overall reasonableness of the stop's duration."],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "The Court said the stop's 'mission' - handling the violation and related safety checks - sets how long it may last, and the authority to hold the driver ends once those tasks are or reasonably should have been done."
+      ],
+      "prohibited_wording": [
+        "The Court said officers must finish a stop in a fixed number of minutes."
+      ],
+      "temporal_scope": "2015-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Doctrinal core; the 'ends when tasks tied to the traffic infraction are - or reasonably should have been - completed' phrasing is from the opinion."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The Court held that a dog sniff aimed at detecting evidence of ordinary criminal wrongdoing is not part of a traffic stop's mission because it lacks the same close connection to roadway safety, and that the critical question is not whether the sniff occurs before or after the ticket is issued but whether conducting it adds time to the stop.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Ginsburg, J.), dog sniff not part of the mission; 'critical question ... whether conducting the sniff adds time to the stop'"],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "The Court said a dog sniff is not part of the traffic mission, and what matters is whether it adds time to the stop, not whether it comes before or after the ticket."
+      ],
+      "prohibited_wording": [
+        "A dog sniff is always a search.",
+        "A dog sniff is always illegal at a traffic stop."
+      ],
+      "temporal_scope": "2015-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "On its own a dog sniff of a lawfully stopped car is not a search (Illinois v. Caballes, 2005); Rodriguez turns on the added time, not the sniff itself."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "Just after midnight on March 27, 2012, in Nebraska, K-9 officer Morgan Struble stopped Dennys Rodriguez, who was driving a Mercury Mountaineer, after the vehicle briefly veered onto the highway shoulder in violation of Nebraska law.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Ginsburg, J.), facts"],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "Just after midnight on March 27, 2012, a Nebraska K-9 officer, Morgan Struble, stopped Dennys Rodriguez for briefly driving onto the shoulder."
+      ],
+      "prohibited_wording": [
+        "Rodriguez was speeding.",
+        "The stop was for drugs."
+      ],
+      "temporal_scope": "2012",
+      "geographic_scope": "Nebraska, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real people by role; facts per the opinion. Dennys Rodriguez and Officer Struble are real people on the public record; handle factually."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "Officer Struble checked Rodriguez's license, registration and insurance and issued him a written warning for the traffic violation, returning his documents - completing the tasks tied to the traffic stop.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Ginsburg, J.), facts (records checks and written warning)"],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "Struble ran the usual checks and gave Rodriguez a written warning, handing his documents back - finishing the traffic stop's business."
+      ],
+      "prohibited_wording": [
+        "Rodriguez was arrested for the traffic violation.",
+        "Struble issued a speeding ticket."
+      ],
+      "temporal_scope": "2012",
+      "geographic_scope": "Nebraska, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "It was a written warning, not a ticket; the return of documents marks the end of the mission in the opinion's timeline."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "After issuing the written warning, Struble did not release Rodriguez; he asked to walk his dog around the car, and when Rodriguez refused, Struble detained him for roughly seven to eight more minutes until a second officer arrived, then walked the dog around the vehicle, the dog alerted, and a search found methamphetamine; the entire stop lasted about twenty-nine minutes.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Ginsburg, J.), facts (post-warning detention, dog sniff, discovery)"],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "After the warning, Struble held Rodriguez about seven to eight minutes for a second officer, then ran the dog, which alerted, and the search found methamphetamine; the whole stop ran about 29 minutes."
+      ],
+      "prohibited_wording": [
+        "The drugs were found during the traffic-violation part of the stop.",
+        "Rodriguez consented to the dog sniff."
+      ],
+      "temporal_scope": "2012",
+      "geographic_scope": "Nebraska, United States",
+      "units": "minutes (~7-8 post-warning; ~29 total)",
+      "status": "approved",
+      "notes": "The discovery occurred in the post-warning window; treat the methamphetamine only as 'what the search found,' never depicted as drugs."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "The Court rejected the Government's argument that the seven-to-eight-minute extension was a permissible 'de minimis' intrusion, reasoning that an officer cannot earn 'bonus time' by completing the traffic mission efficiently; the tolerable duration of a stop is set by its mission, not by whether an added delay seems short.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Ginsburg, J.), rejection of the de minimis / earned-time argument"],
+      "counterevidence": ["The dissents accepted a version of the Government's position, viewing a brief, safety-motivated delay as reasonable."],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "The Court would not treat the extra minutes as too small to count; an officer cannot bank time saved by working quickly and spend it on an unrelated investigation."
+      ],
+      "prohibited_wording": [
+        "The Court said any delay of any length is always unconstitutional."
+      ],
+      "temporal_scope": "2015",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Anti-de-minimis reasoning; the limit is the mission, not the felt size of the delay."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "The Court did not free Rodriguez or ban dog sniffs; it vacated the judgment and remanded to the Eighth Circuit to determine whether the officer had reasonable suspicion, independent of the traffic violation, that would have justified detaining Rodriguez for the dog sniff.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Opinion of the Court (Ginsburg, J.), disposition / remand", "Justia holding (vacated and remanded)"],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "The ruling sent the case back to decide whether the officer had independent reasonable suspicion; it did not automatically free Rodriguez or outlaw dog sniffs."
+      ],
+      "prohibited_wording": [
+        "Rodriguez went free because of the ruling.",
+        "The Court made dog sniffs illegal."
+      ],
+      "temporal_scope": "2015",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Anti-overstatement claim: holding vs. outcome; the case was vacated and remanded on the reasonable-suspicion question, not reversed to acquittal."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "Three justices dissented: Justice Thomas (joined by Justice Alito, and by Justice Kennedy except as to Part III) argued the roughly twenty-nine-minute stop was reasonable and that the officer in fact had reasonable suspicion; Justice Alito argued the majority's timing rule is arbitrary and formalistic and that waiting for backup before the sniff was a sensible officer-safety choice; Justice Kennedy would not have reached the reasonable-suspicion question the court below had not addressed.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Dissenting opinions (Thomas, J.; Alito, J.; Kennedy, J.)"],
+      "counterevidence": ["The majority rejected these views, holding that once the mission was complete the added time required its own justification."],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "In dissent, Justices Thomas and Alito argued the short, careful delay was reasonable and the officer had grounds to suspect more; Kennedy would not reach the reasonable-suspicion issue."
+      ],
+      "prohibited_wording": [
+        "All the justices agreed the stop was unlawful.",
+        "The dissenters said time never matters."
+      ],
+      "temporal_scope": "2015",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Dissents presented fairly: the core dissent position is that a brief, safety-motivated delay was reasonable / de minimis and that reasonable suspicion existed."
+    },
+    {
+      "claim_id": "CLM-0011",
+      "normalized_claim": "The opinion's key formulation, quoting Illinois v. Caballes (2005), is that a seizure justified by a traffic violation 'become[s] unlawful if it is prolonged beyond the time reasonably required to complete the mission' of the stop - making the constitutional limit a matter of time and the stop's purpose rather than the order in which the officer performs tasks.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Ginsburg, J.), quoting Illinois v. Caballes, 543 U.S. 405 (2005)"],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "The Court's line is that a stop becomes unlawful when it is 'prolonged beyond the time reasonably required to complete the mission.'"
+      ],
+      "prohibited_wording": [
+        "The Court invented a new stopwatch limit measured in exact minutes."
+      ],
+      "temporal_scope": "2015",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Exact public-domain quoted phrase; the opinion attributes it to Illinois v. Caballes. Use as an attributed quotation, not paraphrase."
+    },
+    {
+      "claim_id": "CLM-0012",
+      "normalized_claim": "Rodriguez v. United States is widely treated as the leading Supreme Court authority on the permissible duration of traffic stops and is frequently litigated in the lower courts over what tasks belong to a stop's 'mission' and whether particular police actions unlawfully add time to a stop.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": ["SRC-0003"],
+      "evidence_locations": ["Oyez: significance / conclusion; general treatment of the case as controlling on traffic-stop duration"],
+      "counterevidence": ["Because reasonable suspicion can still justify an extension and 'mission' tasks are contested, commentators disagree about how much practical protection the rule provides."],
+      "confidence": 0.82,
+      "allowed_wording": [
+        "Rodriguez is the case courts keep returning to when they ask how long a traffic stop may lawfully last."
+      ],
+      "prohibited_wording": [
+        "Rodriguez settled every question about traffic-stop detentions."
+      ],
+      "temporal_scope": "2015-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Legacy/interpretation kept neutral; B-grade context framed as ongoing litigation, not settled fact."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable content hashes captured 2026-07-04: SRC-0001 Cornell LII primary opinion text page; SRC-0002 Justia opinion page (hashed via direct GET; site returns 403 to the fetch bot - non-blocking); SRC-0003 Oyez case JSON (public HTML is a JS shell).",
+      "No E-grade claims. All script factual spans map to A-grade primary-source claims except CLM-0012 (B, legacy/interpretation), which is framed as ongoing litigation.",
+      "Facts fact-checked against the primary opinion (575 U.S. 348) via Cornell LII and cross-checked on Justia and Oyez: 6-3, decided April 21, 2015, Ginsburg majority; March 27, 2012 just after midnight, Nebraska; Officer Morgan Struble (K-9); Dennys Rodriguez; shoulder-veer violation; written warning; ~7-8 min post-warning detention; dog alert; methamphetamine; ~29 min total; mission rule; de minimis rejected; 'prolonged beyond the time reasonably required to complete the mission'; vacated and remanded on reasonable suspicion."
+    ]
+  }
+}

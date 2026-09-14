@@ -1,0 +1,692 @@
+{
+  "episode_id": "PD-2026-003-mapp",
+  "slug": "mapp",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "An0to4U0hJQ",
+    "title": "The Police Broke In — So the Court Let Her Go",
+    "url": "https://www.youtube.com/watch?v=An0to4U0hJQ",
+    "privacy": "public",
+    "views": 2
+  },
+  "shorts_existing": [
+    "short03",
+    "short37"
+  ],
+  "shorts_to_author": 1,
+  "existing_angles_do_not_repeat": {
+    "short03": [
+      "Police search a home illegally and find something.",
+      "Can they still use it against you?",
+      "In 1957, officers forced their way into a woman's house without a valid warrant.",
+      "The suspect they were after wasn't there.",
+      "Instead, they found some books, and charged her with a different crime.",
+      "In 1961, the Supreme Court ruled: evidence from an illegal search can't be used, in any state.",
+      "Sometimes a guilty person goes free, because the police broke the rules.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ],
+    "short37": [
+      "Police force their way into your home",
+      "with a warrant that doesn't exist",
+      "and search everything you own.",
+      "For most of American history",
+      "evidence taken in an illegal search could",
+      "still be used to convict you.",
+      "The search being illegal simply didn't matter.",
+      "Then officers pushed into Dollree Mapp's home",
+      "waving a piece of paper they claimed",
+      "was a warrant",
+      "and searched her entire house.",
+      "In nineteen sixty-one",
+      "the Supreme Court drew the line.",
+      "Evidence from an illegal search can't be",
+      "used against you",
+      "in any state.",
+      "A search that breaks the rules now protects you.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-003-mapp\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "If the police bungle a search, he wrote, \"the criminal is to go free because the constable has blundered\" .",
+    "Before 1961, in most states, the answer was yes.",
+    "But for most of American history, the amendment had a problem: no one had figured out what happened when the police ignored it .",
+    "What changed that — what gave the Fourth Amendment actual teeth in a real courtroom — was a search gone wrong in Cleveland, Ohio, in 1957, and a woman named Dollree Mapp .",
+    "And the reason she loses reveals a gap in American law that most people never knew existed.",
+    "The Fourth Amendment, as of 1957, already applied to the states.",
+    "Federal courts had operated under a different rule since 1914 — a case called Weeks v.",
+    "Because the Supreme Court is about to do something no one in the courtroom fully anticipated.",
+    "On June 19, 1961, the Supreme Court issues its decision in Mapp v.",
+    "Colorado — the 1949 case that had let states use illegally seized evidence — and it overrules it .",
+    "A guarantee that no one can actually use is not a guarantee.",
+    "Every state court in the country is now bound by the same rule that federal courts had operated under since 1914 .",
+    "And it carries a cost that no one can ignore.",
+    "In 1926, a New York judge named Benjamin Cardozo put the objection as bluntly as it can be put.",
+    "That tension is real and it has never gone away.",
+    "The rule today is narrower than it was in 1961 .",
+    "It began with a bombing suspect who was never found, a search that produced something else entirely, and a conviction that no one at the time thought would matter very much .",
+    "Mapp is the answer to the follow-up question nobody asked loudly enough for decades: or what?"
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short111",
+      "angle": "The most famous objection to the Mapp rule was written by a New York judge in 1926, and the Supreme Court has spent decades quietly carving exceptions into its own rule to answer it.",
+      "type": "C — a quotation (Cardozo's 1926 line) plus the narrowing that followed",
+      "avoids": "Both existing Shorts stop at the 1961 holding that evidence from an illegal search is out. Neither names the cost of that rule, the Cardozo sentence that defines the objection, or the fact that the rule today is narrower than the one Mapp created.",
+      "funnel_question_left_for_longform": "Which exceptions the justices carved out after 1961, and how much of the original rule is left.",
+      "era": "1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line",
+      "loop": true,
+      "loop_join": "L5 says it happens again and L1 shows it happening, so the loop lands as the next instance of the thing just described.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "A guilty person goes free. Not because the evidence was wrong. Because police made a mistake.",
+          "delivery": "intense",
+          "source_lines": [
+            "The guilty person walks not because the evidence was wrong, but because the process that produced it was"
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "That is the cost of the Mapp rule. Throw out an illegal search, and you sometimes throw out evidence that is true.",
+          "delivery": "building",
+          "source_lines": [
+            "It can require a court to throw out reliable evidence — evidence that is true, that demonstrates what happened — because of the way it was obtained"
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "In 1926, a New York judge named Benjamin Cardozo put the objection as bluntly as it can be put. If the police bungle a search, he wrote, the criminal is to go free because the constable has blundered.",
+          "delivery": "building",
+          "source_lines": [
+            "In 1926, a New York judge named Benjamin Cardozo put the objection as bluntly as it can be put.",
+            "If the police bungle a search, he wrote, \"the criminal is to go free because the constable has blundered\""
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "That tension has never gone away. The Court has been carving exceptions into its own rule ever since. The rule today is narrower than it was in 1961.",
+          "delivery": "intense",
+          "source_lines": [
+            "That tension is real and it has never gone away.",
+            "among them a good-faith exception, for cases where officers acted on a warrant they reasonably believed was valid, even if it turned out to be defective",
+            "The rule today is narrower than it was in 1961"
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "Before 1961, most states could use what an illegal search turned up. Wolf v. Colorado left them free to choose.",
+          "delivery": "building",
+          "source_lines": [
+            "Before 1961, in most states, the answer was yes.",
+            "And Ohio was one of the states that, under Wolf, was allowed to use what an illegal search turned up",
+            "States were free to handle the problem however they chose"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The Court answered with a principle. A real right needs a real remedy when it is violated.",
+          "delivery": "building",
+          "source_lines": [
+            "If the Fourth Amendment is a real right, there has to be a real remedy when it is violated"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Without one, the Court said, the protection becomes a form of words: a guarantee nobody can actually use.",
+          "delivery": "building",
+          "source_lines": [
+            "Without it, the Court says, the constitutional protection becomes",
+            "A guarantee that no one can actually use is not a guarantee."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "So the core of the rule survives, exceptions and all, and it still ends cases. Which means this happens again.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W10",
+          "subject": "a heavy gate standing open onto flat daylight",
+          "source": "GENERATE",
+          "prompt": "a heavy barred gate standing wide open onto flat daylight, seen from inside a dark sally port, nobody in frame, lit ONLY by that daylight beyond, with every interior fixture switched on behind camera left dark, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "prison gate opening daylight"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R12",
+          "subject": "a booking tray of personal effects pushed back across a counter",
+          "source": "GENERATE",
+          "prompt": "a steel booking tray holding a belt, a set of laces and a few coins being pushed back across a bare counter, nothing visible above the wrists, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "property tray personal effects counter"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "a blank sheet held up at arm's length in a dark doorway",
+          "source": "GENERATE",
+          "prompt": "one completely blank unprinted sheet of paper held up at arm's length inside a dark residential doorway, only the forearm visible, the sheet catching the light like a warrant nobody can read, lit ONLY by one hard porch lamp which is switched on behind it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand holding sheet of paper"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "courthouse columns from below against a storm sky",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stone courthouse columns facade",
+          "bound_file": "D:\\pd-archive\\government_buildings\\pixabay_extra__v_28201__venice-palace-museum-building-italy-architecture-city-travel.mp4",
+          "bound_title": "columns in a building",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6078,
+          "motion": 5.218,
+          "luma": 118.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "W06",
+          "subject": "a sealed evidence envelope on a steel counter",
+          "source": "GENERATE",
+          "prompt": "a sealed paper evidence envelope lying on a bare steel counter, every marking on it worn completely blank, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "sealed evidence envelope counter"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "I06",
+          "subject": "an evidence envelope dropped into a wire wastebasket",
+          "source": "GENERATE",
+          "prompt": "a sealed paper evidence envelope falling into a wire mesh wastebasket on a dark office floor, the envelope caught in mid drop and worn completely blank, lit ONLY by one desk lamp which is switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper falling into wastebasket"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U08",
+          "subject": "a wall of steel evidence shelves",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "evidence locker shelves storage",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23892__safe_deposit_boxes_vault.mp4",
+          "bound_title": "industrial warehouse with bulk material storage",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4375,
+          "motion": 3.691,
+          "luma": 77.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "a trunk forced open in a dark basement",
+          "source": "GENERATE",
+          "prompt": "an old travelling trunk forced open on the concrete floor of a dark basement, its lid thrown back and its contents in shadow, lit ONLY by one bare bulb switched on above the stairs, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "old trunk basement opened"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "a bedroom drawer pulled out onto the floor",
+          "source": "GENERATE",
+          "prompt": "a chest of drawers with one drawer pulled all the way out and its contents strewn across a bedroom floor, nobody in the room, lit ONLY by one bedside lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "ransacked room drawers open"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "R06",
+          "subject": "empty courtroom gallery benches receding into shadow",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty courtroom benches wooden",
+          "bound_title": "a dark empty hallway with a light on the wall",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.8035,
+          "motion": 1.075,
+          "luma": 42.5,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14605__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U06",
+          "subject": "an empty witness chair beside a dark bench",
+          "source": "GENERATE",
+          "prompt": "one empty wooden witness chair standing in its box beside a dark judicial bench, nobody in the room, lit ONLY by one shaft of window light falling across the seat from a fixture switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "witness stand chair courtroom"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "R08",
+          "subject": "a 1920s oak bench with a green-shaded lamp",
+          "source": "GENERATE",
+          "prompt": "a high panelled oak courtroom bench of the 1920s with a green shaded brass lamp standing on it, the chair behind it empty, no inscriptions anywhere, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "antique wooden judge bench"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a fountain pen writing on a blank page",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "fountain pen writing paper",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53212__fountain_pen_signature.mp4",
+          "bound_title": "a person writing a letter on a paper using a fountain pen",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4105,
+          "motion": 19.471,
+          "luma": 141.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "Y05",
+          "subject": "a heavy reporter volume open to blank pages on a lectern",
+          "source": "GENERATE",
+          "prompt": "a heavy leather bound volume lying open on a reading lectern in a dark law library, both pages completely blank and unprinted, lit ONLY by one reading lamp which is switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open leather book lectern library"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "R10",
+          "subject": "a door frame with the lock plate splintered",
+          "source": "GENERATE",
+          "prompt": "a residential door frame with its lock plate torn out and the wood splintered, the dark hallway of the house beyond it, nobody in frame, lit ONLY by one hard blade of light from a porch lamp switched on outside the broken jamb, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "broken door frame damaged lock"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "W01",
+          "subject": "thick iron cell bars with a dark cell beyond",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "prison cell bars close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-4403__heavy_rain_backlit.mp4",
+          "bound_title": "counting currency notes in hand close up",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6277,
+          "motion": 13.822,
+          "luma": 80.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "U16",
+          "subject": "a chisel biting into a marble block",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "chisel carving stone close",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-47993__construction_worker_silhouette.mp4",
+          "bound_title": "close up of a futuristic abstract pattern",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4474,
+          "motion": 20.263,
+          "luma": 53.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a marble slab cut with many deep notches",
+          "source": "GENERATE",
+          "prompt": "a long marble slab standing in a dark workshop with many deep notches cut along its top edge, dust on the floor beneath it, no inscriptions anywhere, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "carved marble slab workshop"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R07",
+          "subject": "a gavel caught mid-strike above its block",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "judge gavel wooden block",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-61717__robot_arm_assembly_line.mp4",
+          "bound_title": "close up video of wooden doors",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4056,
+          "motion": 0.906,
+          "luma": 63.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U02",
+          "subject": "a heavy door closing on a narrowing blade of light",
+          "source": "GENERATE",
+          "prompt": "a heavy panelled door swinging almost shut on a narrowing blade of light, seen from inside a dark room, lit ONLY by that closing light thrown by one corridor fixture which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door closing narrow light dark"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W09",
+          "subject": "a stack of calendar pages caught mid-turn",
+          "source": "GENERATE",
+          "prompt": "a stack of wall calendar pages caught mid-turn on a dark wall, every date worn completely blank and unreadable, lit ONLY by one angled desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "calendar pages turning wall"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U13",
+          "subject": "a silhouette walking out of a courthouse doorway into daylight",
+          "source": "GENERATE",
+          "prompt": "a lone silhouette walking away from camera through a tall courthouse doorway into hard daylight, the figure placed high in frame with a long empty floor below it, face not visible, lit ONLY by the daylight ahead with every interior fixture switched on left out of frame, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1961 Cleveland, Ohio, with a 1926 New York courtroom for the Cardozo line, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouette walking away doorway"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01: a heavy gate standing open onto flat daylight",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "prison gate opening daylight"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I08",
+          "subject": "an old two storey house seen from the street",
+          "source": "FOOTAGE",
+          "footage_query": "old two storey house seen from the street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22901__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R04",
+          "subject": "two men in hats standing at a front door",
+          "source": "FOOTAGE",
+          "footage_query": "two men in hats standing at a front door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32754__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "hands lifting clothes out of a wardrobe",
+          "source": "FOOTAGE",
+          "footage_query": "hands lifting clothes out of a wardrobe",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\hands_and_transactions\\mixkit__12531__grandmother-shopping-in-a-clothing-store.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "I05",
+          "subject": "cellar shelves lined with jars and boxes",
+          "source": "FOOTAGE",
+          "footage_query": "cellar shelves with jars and boxes",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\newspapers_printing\\pixabay_extra__v_187954__pallet-stack-timber-industry-wood-wooden-manufacturing-no-pe.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "I02",
+          "subject": "a corridor of frosted glass office doors",
+          "source": "FOOTAGE",
+          "footage_query": "corridor of frosted glass office doors",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_89278__hallway-doors-opening-gate-green-screen-door-opening-chroma.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "a hand turning a key in a door lock",
+          "source": "FOOTAGE",
+          "footage_query": "hand turning a key in a lock",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51085__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U01",
+          "subject": "a brass desk lamp switched on in an office",
+          "source": "FOOTAGE",
+          "footage_query": "brass desk lamp switched on in an office",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\pixabay_extra__v_55572__design-blank-3d-art-frame-business-sign-empty-object-space-b.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "W05",
+          "subject": "a magnifier and a brush lying on an evidence bench",
+          "source": "FOOTAGE",
+          "footage_query": "magnifier and brush on an evidence bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15141__magnifying_glass_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "tall wooden doors opening into a bright room",
+          "source": "FOOTAGE",
+          "footage_query": "tall wooden doors opening into a bright room",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\prison_jail\\pixabay_extra__v_229639__living-room-furniture-windows-fireplace-house-home.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M07",
+          "subject": "a heavy wooden desk in an empty office",
+          "source": "FOOTAGE",
+          "footage_query": "heavy wooden desk in an empty office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7729__empty_office_cubicles.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y04",
+          "subject": "an empty picture frame hanging on a wall",
+          "source": "FOOTAGE",
+          "footage_query": "empty picture frame hanging on a wall",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_175414__notebook-desk-company-copy-space.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R02",
+          "subject": "handcuffs lying open on a wooden table",
+          "source": "FOOTAGE",
+          "footage_query": "handcuffs lying open on a wooden table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3351__judge_gavel_wooden.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U05",
+          "subject": "a large wall clock in a public hall",
+          "source": "FOOTAGE",
+          "footage_query": "large wall clock in a public hall",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\government_buildings\\pixabay_extra__v_175239__clock-medieval-city-hall-gothic-architecture-city-unesco-old.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R11",
+          "subject": "an old telephone handset lying off the hook",
+          "source": "FOOTAGE",
+          "footage_query": "old telephone handset lying off the hook",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52290__red_rotary_telephone.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W11",
+          "subject": "two empty wooden chairs against a bare wall",
+          "source": "FOOTAGE",
+          "footage_query": "two empty wooden chairs against a bare wall",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\hands_and_transactions\\mixkit__43732__yoga-practice-of-a-small-group-of-people.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L3",
+          "anchor": "constable has blundered",
+          "style": "punch",
+          "words": [
+            "THE CONSTABLE",
+            "HAS BLUNDERED"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L7",
+          "anchor": "form of words",
+          "style": "punch",
+          "words": [
+            "A FORM",
+            "OF WORDS"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

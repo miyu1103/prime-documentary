@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-060-surfside",
+  "slug": "surfside",
+  "runtime_seconds": [
+    2160,
+    2640
+  ],
+  "script_words": [
+    5900,
+    6600
+  ],
+  "section_vocabulary": [
+    "COLD OPEN",
+    "BRAND STING",
+    "OPENING",
+    "ACT I",
+    "ACT II",
+    "ACT III",
+    "ACT IV",
+    "ACT V",
+    "THE NIGHT",
+    "ENDING"
+  ],
+  "figure_beats_per_act": [
+    13,
+    17
+  ],
+  "distinct_video_assets": 312,
+  "people_plates_min": 8,
+  "mandatory_stills": [],
+  "thumbnail_candidates_min": 3,
+  "footage_review_required": true,
+  "audio_layers": 2,
+  "forbidden_subjects": [
+    "collapse",
+    "rubble",
+    "rescue",
+    "firefighter",
+    "debris",
+    "excavator",
+    "ambulance",
+    "casualty",
+    "body",
+    "victim"
+  ],
+  "forbidden_claims": [
+    "half the required strength",
+    "13 second collapse",
+    "less than half the required strength",
+    "thirteen seconds"
+  ],
+  "notes": "This is the 40-minute film: runtime_seconds is derived from this episode's own manifest.target_duration_minutes = 40 (36-44 min), not from the channel default. script_words measured from EP60_surfside_script.en.v004.md -- 6,302 narration words across the ten sections, banded at 5,900-6,600. section_vocabulary read from that script's headings; THE NIGHT sits between ACT V and ENDING and is confirmed by the episode's design owner (EP60_surfside_filmconfig.v003.json carries the matching THE_NIGHT figure section). distinct_video_assets = 2160 * 0.65 / 4.5 = 312. forbidden_subjects are BINDING AND NON-NEGOTIABLE: the footage queries written for this episode asked for 'rubble collapse', 'search and rescue', 'firefighter rescue', 'excavator debris' and 'ambulance night', and thirty-one clips were staged before a human noticed. forbidden_claims: EP60_surfside_FACTS_LEDGER.v002.md keeps quarantine -01 (no readable source for the strength fraction; NIST's own investigator deck says only 'critically low margins of safety at the time of failure') and quarantine -03 (the pool deck fell more than four minutes before the tower, so no single collapse duration exists)."
+}

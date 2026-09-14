@@ -40,9 +40,9 @@ except Exception:
 # ──────────────────────────── paths ────────────────────────────────────────
 REPO        = Path(__file__).resolve().parents[1]
 REMOTION    = REPO / "remotion"
-MUSIC_DIR   = Path(r"H:\pd-media\downloads\music")
-NARR_DIR    = Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
-EDIT_DIR    = Path(r"H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample")
+MUSIC_DIR   = Path(r"E:\pd-media\downloads\music")
+NARR_DIR    = Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
+EDIT_DIR    = Path(r"E:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample")
 FFMPEG      = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 FFPROBE     = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"
 

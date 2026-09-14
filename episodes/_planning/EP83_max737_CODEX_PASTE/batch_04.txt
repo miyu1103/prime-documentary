@@ -1,0 +1,56 @@
+EP83_max737 — 画像発注 バッチ 4/24（8枚）
+区分: ACT_1 — 前日の便と、翌朝の便
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, airline livery, tail marking, company colour, human face, facial features, portrait, identifiable person, wreckage, debris, fire, smoke plume, crash site, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) X025.png
+   [X025]  flags: P
+   An overhead bin closing, a hand on the latch, cabin light bright above
+
+2) X026.png
+   [X026]  flags: 
+   A takeoff roll seen from a cockpit jump seat position, runway lights streaming past the windscreen at speed
+
+3) X027.png
+   [X027]  flags: 
+   An airspeed tape on a flat panel display, close, plain graphic scale, no readable characters, two indications disagreeing shown as two distinct bars, one desk lamp burning in frame
+
+4) X028.png
+   [X028]  flags: 
+   An altimeter readout on a flat panel display, close, blurred, one bright reflection across the glass
+
+5) X029.png
+   [X029]  flags: 
+   A flap lever in an airliner cockpit moved to the up position, close, hard light
+
+6) X030.png
+   [X030]  flags: 
+   A horizontal stabiliser jackscrew assembly inside an aircraft tail, close, metal threads and grease, lit by a single work lamp
+
+7) X031.png
+   [X031]  flags: 
+   A trim indicator scale beside the throttle quadrant, close, a plain pointer with no numerals, moving down, instrument panel glow lighting the frame
+
+8) X032.png
+   [X032]  flags: P
+   Two pilots seen from behind pulling back on their columns, shoulders braced, faces not visible, instrument glow ahead, instrument panel glow lighting the frame

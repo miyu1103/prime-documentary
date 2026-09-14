@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 4/24（8枚）
+区分: ACT_1 — 4時00分36秒
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T025.png
+   [T025]  flags: 
+   A telephone handset off its cradle on a control room desk, 1979 rotary phone, one desk lamp
+
+2) T026.png
+   [T026]  flags: P
+   A 1979 control room from a high corner, wide, several operators as silhouettes at the panels, faces not visible, panel lights bright across the frame
+
+3) T027.png
+   [T027]  flags: 
+   A radiation area monitor on a wall, plain analogue meter, one hard light
+
+4) T028.png
+   [T028]  flags: 
+   A containment building dome seen from outside at dawn, plain concrete, bright sky
+
+5) T029.png
+   [T029]  flags: 
+   An auxiliary building corridor, painted concrete, pipes overhead, strip lighting
+
+6) T030.png
+   [T030]  flags: 
+   A stairwell inside a power plant, painted steel treads, one bright bulkhead light
+
+7) T031.png
+   [T031]  flags: 
+   A locked steel door with a hand wheel in a plant corridor, one work lamp above
+
+8) T032.png
+   [T032]  flags: 
+   The Susquehanna river at first light with the plant on its island in the distance, mist on the water

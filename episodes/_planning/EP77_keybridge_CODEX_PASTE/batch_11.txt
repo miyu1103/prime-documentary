@@ -1,0 +1,56 @@
+EP77_keybridge — 画像発注 バッチ 11/16（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame throwing a directional beam, atmospheric haze and river mist catching the light, deep shadow on one side only, restrained colour with a single dominant accent, high contrast, ultra high resolution, hyper-detailed, razor-sharp focus, photorealistic, volumetric light, shallow depth of field, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, legible text, readable text, captions, subtitles, handwriting, cursive, signature, numerals, numbers, digits, house numbers, readable documents, signage lettering, watermark, seal, seals, emblem, emblems, logo, logos, badge, insignia, human face, facial features, portrait, identifiable person, recognisable person, looking at the camera, bodies, corpse, injuries, blood, rescue operations, the moment of collision, the bridge collapsing, wreckage in water, children, gavel, handcuffs, prison bars, police uniform, patrol car, golden hour, drone shot, cartoon, oversaturated, flat evenly-dark image, muted grey wash, desaturated, low-resolution, distorted anatomy, extra fingers.
+
+──────── このバッチの8枚 ────────
+
+1) H081.png
+   [H081]  flags: 
+   A bridge pier rising out of black water, concrete, massive, floodlit from a boat
+
+2) H082.png
+   [H082]  flags: 
+   A sheet-pile and concrete dolphin structure in the water beside a bridge pier, weathered, lit
+
+3) H083.png
+   [H083]  flags: 
+   An engineer's scale model of a bridge pier on a desk under a lamp, no markings
+
+4) H084.png
+   [H084]  flags: 
+   A stack of engineering binders on a shelf, spines blank, dusty, one lamp
+
+5) H085.png
+   [H085]  flags: 
+   A highway bridge seen from beneath, girders receding, a service walkway, harsh work lighting
+
+6) H086.png
+   [H086]  flags: 
+   A container ship passing under a bridge span at dusk, seen from far off, everything calm
+
+7) H087.png
+   [H087]  flags: 
+   A row of identical container ships at anchor waiting outside a port at dawn
+
+8) H088.png
+   [H088]  flags: 
+   An empty state transport authority office at night, desks, screens off, one lamp burning

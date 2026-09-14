@@ -1,0 +1,72 @@
+EP68 pinto — 画像発注 バッチ 12/13（8枚）
+区分: A6 THE PEOPLE LANE — [HSTYLE]
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, the United States between 1968 and 1981, mixed tungsten and daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous period surfaces — painted steel, brushed aluminium, laminate, bakelite, manila card, newsprint, enamel — nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, readable words on a page, seals, emblems, logos, insignia, badge, name plates, wordmarks, manufacturer script, grille emblem, licence plate, registration plate, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, fire, flame, flames, smoke, burning, embers, soot, charred surfaces, a burning vehicle, a person on fire, burn injury, scarring, skin graft, bandages, hospital, ambulance, paramedic, blood, a crashed car, collision, wreckage, crumpled bodywork, shattered windscreen, police officer, uniform, patrol car, flashing lights, handcuffs, firearm, courtroom interior, gavel, judge's bench, jury box, witness stand, prison bars, scales of justice, hourglass, a handshake, children, modern smartphones, flat-screen monitors, LED headlights, modern cars, contemporary clothing, plastic modern fittings, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いている行があります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+★プロンプト冒頭の [HSTYLE] は、次の文言に置き換えてください:
+
+[HSTYLE] photographic, 35mm, natural light, real adults of the 1970s, ordinary period clothing and ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・**この話の中の誰か**として通る人物を描かない——Richard Grimshaw、Lilly Gray とその家族、
+　Ulrich 姉妹と従姉、バンの運転者、Ford の従業員、判事、検事、弁護人。全員不可
+・**火・炎・煙・火傷・負傷者・病院を一枚も描かない。**この映画に火は一度も出ない
+・**衝突・事故車・潰れた車体・割れたフロントガラスを描かない。**衝突は一度も映さない
+・読める文字・数字・手書き・署名を一切描かない。タイプ文字は「斜めから見た質感」までで、
+　一語も判読できてはいけない
+・車体のバッジ・オーバル・車名スクリプト・グリルのエンブレム・ネームプレート・
+　ナンバープレートを一切描かない。**実在の Pinto として通る車を作らない**
+・**1968〜1981年のアメリカ。**液晶モニタ・LEDヘッドライト・携帯電話・現代の車・現代の服・
+　現代の樹脂部品を一切入れない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R089.png
+[HSTYLE] The back of a man in a 1970s suit standing at a window of an upper-floor office, city roofs beyond, seen from inside the dark room Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R090.png
+[HSTYLE] A hand lifting a folded magazine off a kitchen table, cropped at the wrist Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R091.png
+[HSTYLE] A woman in her sixties in period clothing seated at a kitchen table reading a magazine, mid-shot, the magazine's cover turned away from camera Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable cover
+
+■ R092.png
+[HSTYLE] A mail-room worker's hands and forearms sorting plain envelopes into pigeonholes, no face in frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R093.png
+[HSTYLE] A man in his fifties in a plain 1970s suit standing in a stone corridor with his back to a tall window, mid-shot, three-quarter, looking off frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R094.png
+[HSTYLE] A crowd of about forty adults in 1970s clothing crossing a wide American street, high fixed angle, faces unresolvable at that distance Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R095.png
+[HSTYLE] A group of eight adults in 1970s clothing on a city pavement, walking toward camera, mixed ages, nobody in focus Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R096.png
+[HSTYLE] Nine pairs of shoes and lower legs in a row of waiting-room chairs in a stone-floored anteroom Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（このバッチは R089.png 〜 R096.png）で保存してください。**他のバッチの ID を使わないこと。**
+保存先 H:\pd-media\assets\ai\pinto\
+長辺 3840px 以上・16:9・PNG。

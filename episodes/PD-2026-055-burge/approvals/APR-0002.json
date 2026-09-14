@@ -1,0 +1,21 @@
+{
+ "schema_version": "1.0.0",
+ "approval_id": "APR-0002",
+ "episode_id": "PD-2026-055-burge",
+ "target_type": "edit",
+ "target_id": "acceptance_receipt",
+ "target_revision": "v005",
+ "video_sha256": "260395ca4c8e1de9e99a63c7dff6851e0cfc8216cdfb4e83a81ae9675ea630d3",
+ "decision": "approved_with_conditions",
+ "accepted_deviations": [
+  "asset_reuse",
+  "retention_cadence",
+  "structure_4part",
+  "preflight_receipt"
+ ],
+ "requested_at": "2026-08-06T04:10:00+09:00",
+ "requested_by": "local-claude-code",
+ "decided_at": "2026-08-06T04:10:00+09:00",
+ "decided_by": "owner",
+ "notes": "WHY THIS RENDER EXISTS. EP55 was scheduled for 2026-08-09 and pulled off the calendar on 2026-08-05 when a new check -- check_shipped_frames.py, which samples four frames per cut out of the finished master rather than one frame per clip off a contact sheet -- found 13 defects in the shipped file. The worst was a lower-third reading 'JON BURGE / Chicago Police - Area 2, South Side' laid over an unrelated young woman in a clinic; Jon Burge is a real, named person and the card was false about both him and her. YouTube cannot replace a video's bytes, so this is a fresh upload and the original Ew5bZNOk17E stays private with no publishAt.\n\nWHAT CHANGED. All six person-naming lower-thirds were removed from the filmconfig -- the narration still says the names, only the on-screen identification is gone. 15 blocklisted clips were pruned. The pool was then reviewed honestly for the first time: 244 clips read across 13 contact sheets by three independent readers, 172 initially rejected. Under the owner's 2026-08-06 ruling below, 162 of those were restored and 10 stay out: three confirmed minors, a legible legal certificate naming a real private individual (Adam G. Zuwerink), and five conservative calls on a chemotherapy patient whose age could not be settled at full resolution.\n\nTHE NEW MASTER WAS THEN MEASURED, NOT ASSERTED. 76 contact sheets, 1520 frames, every sheet read by two independent readers, all bound to sha256 260395ca. Zero hard-category findings. Four candidates were escalated and all four were disproven at native resolution rather than waived: the timeline node naming Andrew Wilson never shares a frame with the arrestee's face; the 'FBI agents arrest Jon Burge' card sits on a place nameplate with nobody in frame who could read as him; the bald wheelchair patient is an adult (Pexels 6011522); the upside-down FD-249 prop carries an invented signature and no social-security number resolves at 6x. All 15 lower-thirds in the film were checked mechanically: every primary slot holds a place, date, institution or term -- not one is a person's name.\n\nTHE AUTHORISATION. The owner ruled on 2026-08-06, in these words: '妥協して予約してもいい' (it is fine to compromise and schedule), then '進めてください' (proceed), then '今非公開になってる動画は早急に公開できるようにしてほしい。全部。' (get every video that is currently private publishable, urgently, all of them). That is an explicit instruction to ship at a lower visual bar, and this record exists so it is not mistaken later for an inference from tone. Four categories were held back from the compromise on the owner's own standing rule that the channel must never be banned: scraped third-party footage, a real identifiable minor, a real person's name card over a different real person, and legible personal data of a real private individual. This film carries none of them.\n\nTHE FOUR DEVIATIONS, MEASURED. asset_reuse: 9 assets appear twice against a cap of 1 -- the four hospital_corridor_night clips and five others; footage_diversity passes on the same film at 371/380 distinct (0.98) with max reuse 2, so the repeats are spread, not clustered. This one is NOT covered by APR-0001 and is new to this revision. retention_cadence, structure_4part and preflight_receipt are the same three APR-0001 accepted at v004: the episode poses no direct question for 637s (a writing choice this build cannot alter without re-voicing), it is a five-act shape judged against a four-part OPENING vocabulary the channel no longer uses, and preflight_receipt is an artefact no step in this pipeline produces while the pre-render probe did pass on this film (black 0.0s, frozen 0.0s, dark 3.3%). APR-0001 targeted v004 and does not carry forward to a different render, which is why this record names v005 and its sha explicitly."
+}

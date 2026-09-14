@@ -1,0 +1,52 @@
+{
+  "episode_id": "PD-2026-012-arbitration",
+  "revision": "v001",
+  "created_at": "2026-06-23T12:49:35.898913+00:00",
+  "source_render": "remotion/out/arbitration_premium.mp4",
+  "final_render": "H:/pd-media/episodes/PD-2026-012-arbitration/08_edit/arbitration_premium_v001.mp4",
+  "sha256": "4cb8e5e9e67e36b118fd671a70c3b3e78e748562bbe08290d2d1b1514b4f7c0c",
+  "bytes": 1052106782,
+  "duration_seconds": 720.1,
+  "expected_duration_seconds": 720.0,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "pix_fmt": "yuv420p",
+    "nb_frames": 21600,
+    "avg_frame_rate": "30/1"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "loudness_probe": {
+      "input_i": -14.0,
+      "input_tp": -2.1,
+      "input_lra": 2.4
+    }
+  },
+  "captions": {
+    "file": "episodes/PD-2026-012-arbitration/08_edit/captions.v001.json",
+    "cue_count": 234,
+    "first_start": 0.0,
+    "last_end": 711.0,
+    "monotonic": true,
+    "durations_ok": true,
+    "line_lengths_ok": true
+  },
+  "visual_sample_contact_sheet": "episodes/PD-2026-012-arbitration/08_edit/renders/final.v001.contact_sheet.jpg",
+  "checks": {
+    "duration_about_12min": true,
+    "resolution_ok": true,
+    "video_codec_ok": true,
+    "pixel_format_ok": true,
+    "audio_codec_ok": true,
+    "loudness_ok": true,
+    "captions_ok": true,
+    "critics_defenders_balanced": true,
+    "no_real_judge_portraits": true,
+    "contact_sheet_created": true
+  },
+  "status": "PASS"
+}

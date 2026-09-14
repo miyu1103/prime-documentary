@@ -19,15 +19,64 @@
     ],
     "deny": [
       "Bash(rm -rf /:*)", "Bash(rm -rf ~:*)",
-      "Bash(git push --force:*)", "Bash(git push:* --force:*)", "Bash(git reset --hard:*)"
+      "Bash(git push --force:*)", "Bash(git push:* --force:*)", "Bash(git reset --hard:*)",
+      "Bash(git reset --hard *)", "Bash(git clean -f*)", "Bash(git push --force*)", "Bash(git push -f*)",
+      "Edit(/.git/**)",
+      "Edit(//h/pd-media/assets/**)",
+      "Edit(//h/pd-media/renders/baseline/**)",
+      "Read(//**/.env)",
+      "Read(//**/.ssh/**)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(git merge *)",
+      "Bash(git rebase *)",
+      "Bash(git commit *)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(uv add *)",
+      "Bash(npm install *)",
+      "Bash(pnpm install *)",
+      "Bash(yarn add *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(huggingface-cli *)",
+      "Bash(hf download *)",
+      "Bash(npm i *)",
+      "Bash(npm ci *)",
+      "Bash(pnpm i *)",
+      "Bash(yarn install *)",
+      "Bash(git clone *)",
+      "Bash(gh repo clone *)",
+      "Bash(git lfs pull *)",
+      "Bash(Invoke-WebRequest *)",
+      "Bash(Invoke-RestMethod *)",
+      "Bash(Start-BitsTransfer *)",
+      "Bash(winget install *)",
+      "Bash(choco install *)",
+      "Bash(scoop install *)"
     ]
   },
   "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "py -3.11 \"${CLAUDE_PROJECT_DIR}/scripts/pd_brief.py\"", "timeout": 20 } ] }
+    ],
     "PreToolUse": [
-      { "matcher": "Bash", "hooks": [ { "type": "command", "command": "python scripts/guard_destructive.py", "timeout": 10 } ] }
+      { "matcher": "Bash|PowerShell", "hooks": [ { "type": "command", "command": "python \"${CLAUDE_PROJECT_DIR}/scripts/guard_destructive.py\"", "timeout": 20 } ] },
+      {
+        "matcher": "Bash|PowerShell|Write|Edit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${CLAUDE_PROJECT_DIR}/.claude/hooks/pd_safety_gate.py\"",
+            "timeout": 10
+          }
+        ]
+      }
     ],
     "PostToolUse": [
-      { "matcher": "Write|Edit", "hooks": [ { "type": "command", "command": "python scripts/check_secrets.py", "timeout": 20 } ] }
+      { "matcher": "Write|Edit", "hooks": [ { "type": "command", "command": "python scripts/check_secrets.py", "timeout": 20 } ] },
+      { "matcher": "Write|Edit", "hooks": [ { "type": "command", "command": "py -3.11 \"${CLAUDE_PROJECT_DIR}/.claude/hooks/pd_decision_reminder.py\"", "timeout": 10 } ] }
     ]
   }
 }

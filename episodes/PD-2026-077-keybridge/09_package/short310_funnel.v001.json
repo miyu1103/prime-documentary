@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 310,
+  "episode_id": "PD-2026-077-keybridge",
+  "slug": "keybridge",
+  "loop": true,
+  "loop_join": "The final beat p14 is short310_14.png, a ship's bridge interior at night lit only by instrument glow, rewound under the FULL CASE card and held on the last frame. Frame 0 is p01, the wall-mounted operations clock in the dim traffic control room, so the loop closes from one night-lit instrument scene into another and the sixty-seven-second countdown restarts unbroken.",
+  "second_watch_detail": "The single orange traffic cone in a pool of work light (p04) reads as ordinary roadwork on the first pass; once L2 explains that six men were filling potholes on that bridge, the same cone marks the job that killed them.",
+  "funnel_question_left_for_longform": "If nobody on that ship made a mistake, what was it that kept switching the power off?",
+  "funnel_long_title": "They Got the Lights Back. Not the Propeller.",
+  "funnel_long_video_id": "Z91ZsyPsRi0",
+  "description_line_1": "▶ FULL CASE: They Got the Lights Back. Not the Propeller. | https://youtu.be/Z91ZsyPsRi0",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "They Got the Lights Back.",
+    "ctaLongThumbSrc": "shorts/short310/short310_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If nobody on that ship made a mistake, what was it that kept switching the power off? The full case is here: https://youtu.be/Z91ZsyPsRi0",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments and beat list in remotion/src/data/short310.ts, the CTA block from that same file, the long-form id from the live video Z91ZsyPsRi0. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

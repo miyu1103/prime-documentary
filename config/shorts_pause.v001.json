@@ -1,0 +1,18 @@
+{
+  "schema_version": "shorts_pause.v001",
+  "paused_until": "2026-08-31",
+  "reason": "LIFTED. Owner's instruction, 2026-09-01: resume Shorts publishing from 09-01. The pause below was set by the shorts lane on 08-25 with a note saying to lift it only when the owner says so; the owner has now said so, in this session, which is also the single session that schedules uploads.\n\nThe quota arithmetic that caused the pause has not changed and is still respected: 4 Shorts (6,600) + 1 long-form (1,650) + pinned comments and reads (~450) = 8,700 of the 10,000 daily allowance, margin 1,300. DAILY_SHORTS_CAP stays at 4 in fill_short_schedule.py and is NOT raised. Every run must pass --reserve 1650 while the long-form backlog (uri 09-01, lacmegantic 09-02, keybridge 09-03, station 09-04) is being cleared, so the episode upload can never be starved by a Shorts run -- that is exactly what happened to EP71 oroville on 08-24.\n\nMeasured state at the moment of lifting: the channel's last Short published 2026-08-30 21:00 JST (3O3cphBotlM) and yt_list_scheduled reported scheduled=0 -- the queue was empty, not merely slow, so nothing would have gone out on its own.",
+  "set_by": "owner (via build/publish lane, 2026-09-01)",
+  "set_at": "2026-09-01",
+  "resumes_at_uploads_per_day": 4,
+  "prior_pause": {
+    "paused_until": "2026-12-31",
+    "set_at": "2026-08-25",
+    "set_by": "shorts lane",
+    "reason": "do not book any more Shorts -- an upload spends 1,650 quota units and four Shorts spend 6,600 of the daily 10,000, which is what stops the long-form from being scheduled"
+  },
+  "prior_pause_2": {
+    "paused_until": "2026-08-29",
+    "set_at": "2026-08-24"
+  }
+}

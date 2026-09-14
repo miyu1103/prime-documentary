@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-032-carsearch",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-07-06T00:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-07-06T00:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner content/direction sign-off for the EP32 'Can the Police Search Your Car?' (automobile exception) script v001, conditioned on the 3-pass review being complete — which it is (Pass 1 facts vs claims, Pass 2 craft, Pass 3 retention). Bound to annotated content_hash sha256:4f7cc24fb611e2d94409c9cb2dcd4d46ac448b4410d3c89f64c58f8befc98578 — re-approval required if the script revision/hash changes (rules/12). Facts fact-checked against primary sources (Carroll 267 U.S. 132; Collins 584 U.S. 586, 8-1 Sotomayor; Ross; Acevedo; Labron; Gant; Byrd) per 01_research/claims.v001.json. This is the flagship 'revolution-format' episode (see episodes/_planning/EP32_carsearch_DESIGN.v001.md); content sign-off carries forward to the verified revision provided no fact or claim changes.",
+  "conditions": [
+    "Enforce the perceptual motion budget BEFORE render (depth cuts >=40%, moving FigureBeats >=6, hero motion surfaces >=2) and the optical-flow motion_energy floor (body mean >=12) per the DESIGN doc — gate-green plus owner eyeball/ear check is the definition of done, not self-report.",
+    "Keep the marijuana-odor beat (CLM-0010, grade B) framed as unsettled/state-dependent; do not state a single nationwide rule.",
+    "No real-person likeness; anonymous figures/reconstruction only; every generated visual is illustration, never presented as authentic archival record (invariant 11).",
+    "Capture durable content hashes for the primary sources before publish; owner gate on final render + public scheduling (not self-approved)."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-032-carsearch/03_script/script.annotated.v001.json"
+}

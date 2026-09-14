@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "stage": "research",
+  "summary": "Research base for the differentiated Madoff angle (topic v002) is sufficient to begin scripting. Core facts (plea, sentence, mechanism, $65B vs $17.5B, whistleblower, collapse, death, recovery) are web-verified against primary (FBI/DOJ/trustee) and tier-1 sources. No critical claim is unsupported; two items need primary-detail confirmation before SCRIPT LOCK (not before drafting).",
+  "coverage": {
+    "claims_total": 11,
+    "approved": 9,
+    "needs_primary_confirm": 2,
+    "unsupported": 0,
+    "critical_claims": ["CLM-0001", "CLM-0002", "CLM-0003", "CLM-0004", "CLM-0005"],
+    "critical_unsupported": 0
+  },
+  "grades": {"A": 7, "B": 3, "C": 0, "needs_confirm": 1},
+  "gaps_before_script_lock": [
+    "SEC OIG report (OIG-509): lock exact Markopolos submission count/dates and the 2005 memo title (affects CLM-0005, CLM-0011).",
+    "Trustee/DOJ: confirm latest recovery totals and official $65B/$17.5B definitions (CLM-0004, CLM-0009).",
+    "Source 1-3 named institutional victims, neutral framing (CLM-0008).",
+    "Confirm exact wording of the 11 criminal counts (CLM-0001)."
+  ],
+  "blocking": false,
+  "block_reason": null,
+  "gate_decision": "pass_with_followups",
+  "rights_safety_notes": [
+    "Defendant deceased (R1); adjudicated facts stateable plainly.",
+    "Non-defendants (sons, whistleblower, SEC staff, victims) neutral, role-based; no implied crimes beyond record.",
+    "OIG finding = failure/incompetence, NOT corruption; do not allege bribery.",
+    "Red-flag framing is educational, not investment advice; disclaimer required.",
+    "All visuals symbolic/faceless, no real-person likeness; no pink."
+  ],
+  "verified_at": "2026-06-19T00:00:00+00:00"
+}

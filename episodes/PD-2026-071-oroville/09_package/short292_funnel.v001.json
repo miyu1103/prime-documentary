@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 292,
+  "episode_id": "PD-2026-071-oroville",
+  "slug": "oroville",
+  "loop": true,
+  "loop_join": "The beat right before the FULL CASE card, p13 (short292_13.png), returns to the O098 plate that opens the short at p01, so the picture the loop lands on one beat before the card matches frame 0. The card itself, p14 (short292_14.png), is the isCta/rewind beat: per MovingImageV's rewind logic (Short.tsx) its camera runs backward so it ends on the same framing the opening beat began on, and it holds to the last frame of the short, closing the loop seam.",
+  "second_watch_detail": "p01 and p13 are both the O098 plate. On a first watch that repetition just reads as a return to the establishing shot; once L5 has said 'there was never a zone,' the short opening and nearly closing on the identical, undivided plate reads as the point itself -- nothing in the picture was ever divided into an inside and an outside either.",
+  "funnel_question_left_for_longform": "If there was never a zone, what did the word mandatory mean that afternoon?",
+  "funnel_long_title": "188,000 Left in a Few Hours. Then Ordered to Pay the State.",
+  "funnel_long_video_id": "YuVBUlqrkdI",
+  "description_line_1": "▶ FULL CASE: 188,000 Left in a Few Hours. Then Ordered to Pay the State. | https://youtu.be/YuVBUlqrkdI",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "188,000 Left in a Few Hours.",
+    "ctaLongThumbSrc": "shorts/short292/short292_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If there was never a zone, what did the word mandatory mean that afternoon? The full case is here: https://youtu.be/YuVBUlqrkdI",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. The loop join and second-watch detail are read off the CUTS list and comments in remotion/src/data/short292.ts -- the O098 plate shared by p01 and p13, and the isCta/rewind CTA card at p14 -- cross-checked against Short.tsx's rewind comment. The standing question is the file header's LEAVES FOR THE LONG-FORM line verbatim, checked against short292_lines.v001.json's spoken text (several content words, including 'word', 'mean' and 'afternoon', do not appear there). The long-form id and title are read from episodes/PD-2026-071-oroville/09_package/youtube_schedule_result.v001.json and youtube_meta.v001.json. cta.ctaLongThumbSrc points at shorts/short292/short292_ctathumb.jpg, which does NOT exist on disk anywhere in the repo (checked remotion/public, remotion/public_min, remotion/public_shorts_slim) -- a real blocker for the in-video CTA card, separate from this record's own validity. Layer 4 -- the Studio related-video setting -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet, and cannot be until the short is uploaded."
+}

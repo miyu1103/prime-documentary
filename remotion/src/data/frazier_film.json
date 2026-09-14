@@ -1,0 +1,4462 @@
+{
+  "episode_id": "PD-2026-039-frazier",
+  "fps": 30,
+  "narration": "frazier/narration.mp3",
+  "narrationSeconds": 716.289,
+  "hookSeconds": 8.04,
+  "hookLine": "Police can lie in the interrogation room.",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S02_V02.png",
+      "seed": "hook-0"
+    },
+    {
+      "start": 1.34,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S08_V01.png",
+      "seed": "hook-1"
+    },
+    {
+      "start": 2.68,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S12_V01.png",
+      "seed": "hook-2"
+    },
+    {
+      "start": 4.02,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S12_V02.png",
+      "seed": "hook-3"
+    },
+    {
+      "start": 5.36,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S13_V01.png",
+      "seed": "hook-4"
+    },
+    {
+      "start": 6.7,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S13_V02.png",
+      "seed": "hook-5"
+    }
+  ],
+  "cuts": [
+    {
+      "start": 0.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S02_V02.png",
+      "seed": "frazier-0",
+      "treatment": "depth",
+      "scene_code": "S02",
+      "asset_id": "ST-039-001",
+      "depth": "frazier/img/FRZ_S02_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 1.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-25783__blood_vials_in_rack.mp4",
+      "seed": "frazier-1",
+      "treatment": "motion",
+      "scene_code": "S32",
+      "asset_id": "MO-039-002"
+    },
+    {
+      "start": 3.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-32431__blood_sample_vial.mp4",
+      "seed": "frazier-2",
+      "treatment": "footage",
+      "scene_code": "S20",
+      "asset_id": "FC-039-020"
+    },
+    {
+      "start": 9.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S08_V01.png",
+      "seed": "frazier-3",
+      "treatment": "scan",
+      "scene_code": "S08",
+      "asset_id": "ST-039-002",
+      "depth": "frazier/img/FRZ_S08_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 11.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-10147__old_library_archive.mp4",
+      "seed": "frazier-4",
+      "treatment": "footage",
+      "scene_code": "S26",
+      "asset_id": "FC-039-076"
+    },
+    {
+      "start": 14.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-0593__law_library_books.mp4",
+      "seed": "frazier-5",
+      "treatment": "footage",
+      "scene_code": "S01",
+      "asset_id": "FC-039-001"
+    },
+    {
+      "start": 20.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S12_V01.png",
+      "seed": "frazier-6",
+      "treatment": "focus",
+      "scene_code": "S12",
+      "asset_id": "ST-039-003",
+      "depth": "frazier/img/FRZ_S12_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 22.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S12_V02.png",
+      "seed": "frazier-7",
+      "treatment": "focus",
+      "scene_code": "S12",
+      "asset_id": "ST-039-004",
+      "depth": "frazier/img/FRZ_S12_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 24.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-17248__prison_corridor.mp4",
+      "seed": "frazier-8",
+      "treatment": "footage",
+      "scene_code": "S07",
+      "asset_id": "FC-039-057"
+    },
+    {
+      "start": 28.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-0600__law_library_books.mp4",
+      "seed": "frazier-9",
+      "treatment": "motion",
+      "scene_code": "S32",
+      "asset_id": "MO-039-002"
+    },
+    {
+      "start": 30.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-13549__forest_fog_morning.mp4",
+      "seed": "frazier-10",
+      "treatment": "footage",
+      "scene_code": "S39",
+      "asset_id": "FC-039-039"
+    },
+    {
+      "start": 36.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S13_V01.png",
+      "seed": "frazier-11",
+      "treatment": "scan",
+      "scene_code": "S13",
+      "asset_id": "ST-039-005",
+      "depth": "frazier/img/FRZ_S13_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 38.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S13_V02.png",
+      "seed": "frazier-12",
+      "treatment": "duotone",
+      "scene_code": "S13",
+      "asset_id": "ST-039-006",
+      "depth": "frazier/img/FRZ_S13_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 39.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-14095__church_interior_light_beam.mp4",
+      "seed": "frazier-13",
+      "treatment": "motion",
+      "scene_code": "S33",
+      "asset_id": "MO-039-003"
+    },
+    {
+      "start": 41.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-39749__blood_vials_in_rack.mp4",
+      "seed": "frazier-14",
+      "treatment": "footage",
+      "scene_code": "S21",
+      "asset_id": "FC-039-021"
+    },
+    {
+      "start": 47.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/S65.png",
+      "seed": "frazier-15",
+      "treatment": "focus",
+      "scene_code": "S65",
+      "asset_id": "ST-039-007",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 49.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-33339__storm_clouds_dramatic.mp4",
+      "seed": "frazier-16",
+      "treatment": "footage",
+      "scene_code": "S27",
+      "asset_id": "FC-039-077"
+    },
+    {
+      "start": 52.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-10011__balance_scale_brass.mp4",
+      "seed": "frazier-17",
+      "treatment": "footage",
+      "scene_code": "S02",
+      "asset_id": "FC-039-002"
+    },
+    {
+      "start": 58.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/S65_02.png",
+      "seed": "frazier-18",
+      "treatment": "scan",
+      "scene_code": "S65",
+      "asset_id": "ST-039-008",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 60.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S01_V01.png",
+      "seed": "frazier-19",
+      "treatment": "scan",
+      "scene_code": "S01",
+      "asset_id": "ST-039-009",
+      "depth": "frazier/img/FRZ_S01_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 62.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-10326__newspaper_printing_press.mp4",
+      "seed": "frazier-20",
+      "treatment": "footage",
+      "scene_code": "S08",
+      "asset_id": "FC-039-058"
+    },
+    {
+      "start": 66.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-2741__foggy_forest.mp4",
+      "seed": "frazier-21",
+      "treatment": "motion",
+      "scene_code": "S33",
+      "asset_id": "MO-039-003"
+    },
+    {
+      "start": 68.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-23323__barbed_wire_fence_sky.mp4",
+      "seed": "frazier-22",
+      "treatment": "footage",
+      "scene_code": "S40",
+      "asset_id": "FC-039-040"
+    },
+    {
+      "start": 74.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S01_V02.png",
+      "seed": "frazier-23",
+      "treatment": "focus",
+      "scene_code": "S01",
+      "asset_id": "ST-039-010",
+      "depth": "frazier/img/FRZ_S01_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 76.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S02_V01.png",
+      "seed": "frazier-24",
+      "treatment": "depth",
+      "scene_code": "S02",
+      "asset_id": "ST-039-011",
+      "depth": "frazier/img/FRZ_S02_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 77.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-10339__newspaper_printing_press.mp4",
+      "seed": "frazier-25",
+      "treatment": "motion",
+      "scene_code": "S34",
+      "asset_id": "MO-039-004"
+    },
+    {
+      "start": 79.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-10475__vintage_typewriter.mp4",
+      "seed": "frazier-26",
+      "treatment": "footage",
+      "scene_code": "S22",
+      "asset_id": "FC-039-022"
+    },
+    {
+      "start": 85.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S03_V01.png",
+      "seed": "frazier-27",
+      "treatment": "scan",
+      "scene_code": "S03",
+      "asset_id": "ST-039-012",
+      "depth": "frazier/img/FRZ_S03_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 87.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-26624__person_at_window_silhouette_night.mp4",
+      "seed": "frazier-28",
+      "treatment": "footage",
+      "scene_code": "S28",
+      "asset_id": "FC-039-078"
+    },
+    {
+      "start": 90.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-10488__vintage_typewriter.mp4",
+      "seed": "frazier-29",
+      "treatment": "footage",
+      "scene_code": "S03",
+      "asset_id": "FC-039-003"
+    },
+    {
+      "start": 96.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S03_V02.png",
+      "seed": "frazier-30",
+      "treatment": "focus",
+      "scene_code": "S03",
+      "asset_id": "ST-039-013",
+      "depth": "frazier/img/FRZ_S03_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 98.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S05_V01.png",
+      "seed": "frazier-31",
+      "treatment": "focus",
+      "scene_code": "S05",
+      "asset_id": "ST-039-014",
+      "depth": "frazier/img/FRZ_S05_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 100.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-16361__capitol_dome_dusk.mp4",
+      "seed": "frazier-32",
+      "treatment": "footage",
+      "scene_code": "S09",
+      "asset_id": "FC-039-059"
+    },
+    {
+      "start": 104.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-16576__law_library_books.mp4",
+      "seed": "frazier-33",
+      "treatment": "motion",
+      "scene_code": "S34",
+      "asset_id": "MO-039-004"
+    },
+    {
+      "start": 106.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-14327__wax_seal_on_document.mp4",
+      "seed": "frazier-34",
+      "treatment": "footage",
+      "scene_code": "S41",
+      "asset_id": "FC-039-041"
+    },
+    {
+      "start": 112.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S05_V02.png",
+      "seed": "frazier-35",
+      "treatment": "scan",
+      "scene_code": "S05",
+      "asset_id": "ST-039-015",
+      "depth": "frazier/img/FRZ_S05_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 114.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S08_V02.png",
+      "seed": "frazier-36",
+      "treatment": "duotone",
+      "scene_code": "S08",
+      "asset_id": "ST-039-016",
+      "depth": "frazier/img/FRZ_S08_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 115.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-7245__blood_sample_vial.mp4",
+      "seed": "frazier-37",
+      "treatment": "motion",
+      "scene_code": "S35",
+      "asset_id": "MO-039-005"
+    },
+    {
+      "start": 117.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-14448__quill_and_ink_pot.mp4",
+      "seed": "frazier-38",
+      "treatment": "footage",
+      "scene_code": "S23",
+      "asset_id": "FC-039-023"
+    },
+    {
+      "start": 123.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S09_V01.png",
+      "seed": "frazier-39",
+      "treatment": "focus",
+      "scene_code": "S09",
+      "asset_id": "ST-039-017",
+      "depth": "frazier/img/FRZ_S09_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 125.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-0374__blurred_city_night_bokeh.mp4",
+      "seed": "frazier-40",
+      "treatment": "footage",
+      "scene_code": "S29",
+      "asset_id": "FC-039-079"
+    },
+    {
+      "start": 128.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-23422__police_interrogation_room_empty.mp4",
+      "seed": "frazier-41",
+      "treatment": "footage",
+      "scene_code": "S04",
+      "asset_id": "FC-039-004"
+    },
+    {
+      "start": 134.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S09_V02.png",
+      "seed": "frazier-42",
+      "treatment": "scan",
+      "scene_code": "S09",
+      "asset_id": "ST-039-018",
+      "depth": "frazier/img/FRZ_S09_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 136.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S16_V01.png",
+      "seed": "frazier-43",
+      "treatment": "scan",
+      "scene_code": "S16",
+      "asset_id": "ST-039-019",
+      "depth": "frazier/img/FRZ_S16_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 138.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-7250__blood_sample_vial.mp4",
+      "seed": "frazier-44",
+      "treatment": "footage",
+      "scene_code": "S10",
+      "asset_id": "FC-039-060"
+    },
+    {
+      "start": 142.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-7257__blood_sample_vial.mp4",
+      "seed": "frazier-45",
+      "treatment": "motion",
+      "scene_code": "S35",
+      "asset_id": "MO-039-005"
+    },
+    {
+      "start": 144.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-8381__fingerprint_scan_blue.mp4",
+      "seed": "frazier-46",
+      "treatment": "footage",
+      "scene_code": "S42",
+      "asset_id": "FC-039-042"
+    },
+    {
+      "start": 150.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S16_V02.png",
+      "seed": "frazier-47",
+      "treatment": "focus",
+      "scene_code": "S16",
+      "asset_id": "ST-039-020",
+      "depth": "frazier/img/FRZ_S16_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 152.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S21_V01.png",
+      "seed": "frazier-48",
+      "treatment": "depth",
+      "scene_code": "S21",
+      "asset_id": "ST-039-021",
+      "depth": "frazier/img/FRZ_S21_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 153.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-2678__lone_person_silhouette_walking.mp4",
+      "seed": "frazier-49",
+      "treatment": "motion",
+      "scene_code": "S36",
+      "asset_id": "MO-039-006"
+    },
+    {
+      "start": 155.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-20316__courtroom_empty_wide.mp4",
+      "seed": "frazier-50",
+      "treatment": "footage",
+      "scene_code": "S24",
+      "asset_id": "FC-039-024"
+    },
+    {
+      "start": 161.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S21_V02.png",
+      "seed": "frazier-51",
+      "treatment": "scan",
+      "scene_code": "S21",
+      "asset_id": "ST-039-022",
+      "depth": "frazier/img/FRZ_S21_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 163.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-18216__dna_laboratory_blue.mp4",
+      "seed": "frazier-52",
+      "treatment": "footage",
+      "scene_code": "S30",
+      "asset_id": "FC-039-080"
+    },
+    {
+      "start": 166.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-25672__dna_double_helix_render.mp4",
+      "seed": "frazier-53",
+      "treatment": "footage",
+      "scene_code": "S05",
+      "asset_id": "FC-039-005"
+    },
+    {
+      "start": 172.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S22_V01.png",
+      "seed": "frazier-54",
+      "treatment": "focus",
+      "scene_code": "S22",
+      "asset_id": "ST-039-023",
+      "depth": "frazier/img/FRZ_S22_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 174.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S22_V02.png",
+      "seed": "frazier-55",
+      "treatment": "focus",
+      "scene_code": "S22",
+      "asset_id": "ST-039-024",
+      "depth": "frazier/img/FRZ_S22_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 176.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-22738__lady_justice_statue.mp4",
+      "seed": "frazier-56",
+      "treatment": "footage",
+      "scene_code": "S11",
+      "asset_id": "FC-039-061"
+    },
+    {
+      "start": 180.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-23033__federal_building_columns_night.mp4",
+      "seed": "frazier-57",
+      "treatment": "motion",
+      "scene_code": "S36",
+      "asset_id": "MO-039-006"
+    },
+    {
+      "start": 182.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-29839__law_library_books.mp4",
+      "seed": "frazier-58",
+      "treatment": "footage",
+      "scene_code": "S43",
+      "asset_id": "FC-039-043"
+    },
+    {
+      "start": 188.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S23_V01.png",
+      "seed": "frazier-59",
+      "treatment": "scan",
+      "scene_code": "S23",
+      "asset_id": "ST-039-025",
+      "depth": "frazier/img/FRZ_S23_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 190.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S23_V02.png",
+      "seed": "frazier-60",
+      "treatment": "duotone",
+      "scene_code": "S23",
+      "asset_id": "ST-039-026",
+      "depth": "frazier/img/FRZ_S23_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 191.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-14460__quill_and_ink_pot.mp4",
+      "seed": "frazier-61",
+      "treatment": "motion",
+      "scene_code": "S37",
+      "asset_id": "MO-039-007"
+    },
+    {
+      "start": 193.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-15141__magnifying_glass_on_document.mp4",
+      "seed": "frazier-62",
+      "treatment": "footage",
+      "scene_code": "S25",
+      "asset_id": "FC-039-025"
+    },
+    {
+      "start": 199.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S25_V01.png",
+      "seed": "frazier-63",
+      "treatment": "focus",
+      "scene_code": "S25",
+      "asset_id": "ST-039-027",
+      "depth": "frazier/img/FRZ_S25_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 201.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-32340__dna_laboratory_blue.mp4",
+      "seed": "frazier-64",
+      "treatment": "footage",
+      "scene_code": "S31",
+      "asset_id": "FC-039-081"
+    },
+    {
+      "start": 204.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-32345__dna_laboratory_blue.mp4",
+      "seed": "frazier-65",
+      "treatment": "footage",
+      "scene_code": "S06",
+      "asset_id": "FC-039-006"
+    },
+    {
+      "start": 210.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S25_V02.png",
+      "seed": "frazier-66",
+      "treatment": "scan",
+      "scene_code": "S25",
+      "asset_id": "ST-039-028",
+      "depth": "frazier/img/FRZ_S25_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 212.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S30_V01.png",
+      "seed": "frazier-67",
+      "treatment": "scan",
+      "scene_code": "S30",
+      "asset_id": "ST-039-029",
+      "depth": "frazier/img/FRZ_S30_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 214.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-19132__newspaper_printing_press.mp4",
+      "seed": "frazier-68",
+      "treatment": "footage",
+      "scene_code": "S12",
+      "asset_id": "FC-039-062"
+    },
+    {
+      "start": 218.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-30757__prison_corridor.mp4",
+      "seed": "frazier-69",
+      "treatment": "motion",
+      "scene_code": "S37",
+      "asset_id": "MO-039-007"
+    },
+    {
+      "start": 220.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-31120__bank_building_columns.mp4",
+      "seed": "frazier-70",
+      "treatment": "footage",
+      "scene_code": "S44",
+      "asset_id": "FC-039-044"
+    },
+    {
+      "start": 226.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S30_V02.png",
+      "seed": "frazier-71",
+      "treatment": "focus",
+      "scene_code": "S30",
+      "asset_id": "ST-039-030",
+      "depth": "frazier/img/FRZ_S30_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 228.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S31_V01.png",
+      "seed": "frazier-72",
+      "treatment": "depth",
+      "scene_code": "S31",
+      "asset_id": "ST-039-031",
+      "depth": "frazier/img/FRZ_S31_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 229.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-28127__desert_highway_heat_haze.mp4",
+      "seed": "frazier-73",
+      "treatment": "motion",
+      "scene_code": "S38",
+      "asset_id": "MO-039-008"
+    },
+    {
+      "start": 231.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-32161__police_badge_close_up.mp4",
+      "seed": "frazier-74",
+      "treatment": "footage",
+      "scene_code": "S26",
+      "asset_id": "FC-039-026"
+    },
+    {
+      "start": 237.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S31_V02.png",
+      "seed": "frazier-75",
+      "treatment": "scan",
+      "scene_code": "S31",
+      "asset_id": "ST-039-032",
+      "depth": "frazier/img/FRZ_S31_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 239.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-32233__jail_cell_bars.mp4",
+      "seed": "frazier-76",
+      "treatment": "footage",
+      "scene_code": "S32",
+      "asset_id": "FC-039-082"
+    },
+    {
+      "start": 242.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-38303__police_interrogation_room_empty.mp4",
+      "seed": "frazier-77",
+      "treatment": "footage",
+      "scene_code": "S07",
+      "asset_id": "FC-039-007"
+    },
+    {
+      "start": 248.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/S60.png",
+      "seed": "frazier-78",
+      "treatment": "focus",
+      "scene_code": "S60",
+      "asset_id": "ST-039-033",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 250.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/S60_02.png",
+      "seed": "frazier-79",
+      "treatment": "focus",
+      "scene_code": "S60",
+      "asset_id": "ST-039-034",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 252.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-3288__courthouse_steps.mp4",
+      "seed": "frazier-80",
+      "treatment": "footage",
+      "scene_code": "S13",
+      "asset_id": "FC-039-063"
+    },
+    {
+      "start": 256.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-38350__one_way_mirror_room.mp4",
+      "seed": "frazier-81",
+      "treatment": "motion",
+      "scene_code": "S38",
+      "asset_id": "MO-039-008"
+    },
+    {
+      "start": 258.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-6729__police_badge_close_up.mp4",
+      "seed": "frazier-82",
+      "treatment": "footage",
+      "scene_code": "S45",
+      "asset_id": "FC-039-045"
+    },
+    {
+      "start": 264.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S04_V01.png",
+      "seed": "frazier-83",
+      "treatment": "scan",
+      "scene_code": "S04",
+      "asset_id": "ST-039-035",
+      "depth": "frazier/img/FRZ_S04_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 266.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S04_V02.png",
+      "seed": "frazier-84",
+      "treatment": "duotone",
+      "scene_code": "S04",
+      "asset_id": "ST-039-036",
+      "depth": "frazier/img/FRZ_S04_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 267.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-29220__single_chair_empty_room.mp4",
+      "seed": "frazier-85",
+      "treatment": "motion",
+      "scene_code": "S39",
+      "asset_id": "MO-039-009"
+    },
+    {
+      "start": 269.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-3357__judge_gavel_wooden.mp4",
+      "seed": "frazier-86",
+      "treatment": "footage",
+      "scene_code": "S27",
+      "asset_id": "FC-039-027"
+    },
+    {
+      "start": 275.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S11_V01.png",
+      "seed": "frazier-87",
+      "treatment": "focus",
+      "scene_code": "S11",
+      "asset_id": "ST-039-037",
+      "depth": "frazier/img/FRZ_S11_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 277.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-35981__antique_brass_scales.mp4",
+      "seed": "frazier-88",
+      "treatment": "footage",
+      "scene_code": "S33",
+      "asset_id": "FC-039-083"
+    },
+    {
+      "start": 280.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-36171__courtroom_empty_wide.mp4",
+      "seed": "frazier-89",
+      "treatment": "footage",
+      "scene_code": "S08",
+      "asset_id": "FC-039-008"
+    },
+    {
+      "start": 286.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S11_V02.png",
+      "seed": "frazier-90",
+      "treatment": "scan",
+      "scene_code": "S11",
+      "asset_id": "ST-039-038",
+      "depth": "frazier/img/FRZ_S11_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 288.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S17_V01.png",
+      "seed": "frazier-91",
+      "treatment": "scan",
+      "scene_code": "S17",
+      "asset_id": "ST-039-039",
+      "depth": "frazier/img/FRZ_S17_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 290.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-36209__jury_box_empty.mp4",
+      "seed": "frazier-92",
+      "treatment": "footage",
+      "scene_code": "S14",
+      "asset_id": "FC-039-064"
+    },
+    {
+      "start": 294.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-30350__newspaper_macro.mp4",
+      "seed": "frazier-93",
+      "treatment": "motion",
+      "scene_code": "S39",
+      "asset_id": "MO-039-009"
+    },
+    {
+      "start": 296.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-36253__witness_stand_empty.mp4",
+      "seed": "frazier-94",
+      "treatment": "footage",
+      "scene_code": "S46",
+      "asset_id": "FC-039-046"
+    },
+    {
+      "start": 302.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S17_V02.png",
+      "seed": "frazier-95",
+      "treatment": "focus",
+      "scene_code": "S17",
+      "asset_id": "ST-039-040",
+      "depth": "frazier/img/FRZ_S17_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 304.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S18_V01.png",
+      "seed": "frazier-96",
+      "treatment": "depth",
+      "scene_code": "S18",
+      "asset_id": "ST-039-041",
+      "depth": "frazier/img/FRZ_S18_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 305.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-31283__lone_person_silhouette_walking.mp4",
+      "seed": "frazier-97",
+      "treatment": "motion",
+      "scene_code": "S40",
+      "asset_id": "MO-039-010"
+    },
+    {
+      "start": 307.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-38150__lady_justice_statue.mp4",
+      "seed": "frazier-98",
+      "treatment": "footage",
+      "scene_code": "S28",
+      "asset_id": "FC-039-028"
+    },
+    {
+      "start": 313.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S18_V02.png",
+      "seed": "frazier-99",
+      "treatment": "scan",
+      "scene_code": "S18",
+      "asset_id": "ST-039-042",
+      "depth": "frazier/img/FRZ_S18_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 315.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-45952__broken_window_glass_shards.mp4",
+      "seed": "frazier-100",
+      "treatment": "footage",
+      "scene_code": "S34",
+      "asset_id": "FC-039-084"
+    },
+    {
+      "start": 318.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-6987__evidence_bag.mp4",
+      "seed": "frazier-101",
+      "treatment": "footage",
+      "scene_code": "S09",
+      "asset_id": "FC-039-009"
+    },
+    {
+      "start": 324.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S19_V01.png",
+      "seed": "frazier-102",
+      "treatment": "focus",
+      "scene_code": "S19",
+      "asset_id": "ST-039-043",
+      "depth": "frazier/img/FRZ_S19_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 326.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S19_V02.png",
+      "seed": "frazier-103",
+      "treatment": "focus",
+      "scene_code": "S19",
+      "asset_id": "ST-039-044",
+      "depth": "frazier/img/FRZ_S19_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 328.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-38217__federal_building_columns_night.mp4",
+      "seed": "frazier-104",
+      "treatment": "footage",
+      "scene_code": "S15",
+      "asset_id": "FC-039-065"
+    },
+    {
+      "start": 332.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-5676__lone_person_silhouette_walking.mp4",
+      "seed": "frazier-105",
+      "treatment": "motion",
+      "scene_code": "S40",
+      "asset_id": "MO-039-010"
+    },
+    {
+      "start": 334.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-3829__courtroom_interior.mp4",
+      "seed": "frazier-106",
+      "treatment": "footage",
+      "scene_code": "S47",
+      "asset_id": "FC-039-047"
+    },
+    {
+      "start": 340.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S26_V01.png",
+      "seed": "frazier-107",
+      "treatment": "scan",
+      "scene_code": "S26",
+      "asset_id": "ST-039-045",
+      "depth": "frazier/img/FRZ_S26_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 342.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S26_V02.png",
+      "seed": "frazier-108",
+      "treatment": "duotone",
+      "scene_code": "S26",
+      "asset_id": "ST-039-046",
+      "depth": "frazier/img/FRZ_S26_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 343.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-6748__police_badge_close_up.mp4",
+      "seed": "frazier-109",
+      "treatment": "motion",
+      "scene_code": "S41",
+      "asset_id": "MO-039-011"
+    },
+    {
+      "start": 345.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-3904__law_library_books.mp4",
+      "seed": "frazier-110",
+      "treatment": "footage",
+      "scene_code": "S29",
+      "asset_id": "FC-039-029"
+    },
+    {
+      "start": 351.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S27_V01.png",
+      "seed": "frazier-111",
+      "treatment": "focus",
+      "scene_code": "S27",
+      "asset_id": "ST-039-047",
+      "depth": "frazier/img/FRZ_S27_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 353.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-23340__barbed_wire_fence_sky.mp4",
+      "seed": "frazier-112",
+      "treatment": "footage",
+      "scene_code": "S35",
+      "asset_id": "FC-039-085"
+    },
+    {
+      "start": 356.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-3912__law_library_books.mp4",
+      "seed": "frazier-113",
+      "treatment": "footage",
+      "scene_code": "S10",
+      "asset_id": "FC-039-010"
+    },
+    {
+      "start": 362.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S27_V02.png",
+      "seed": "frazier-114",
+      "treatment": "scan",
+      "scene_code": "S27",
+      "asset_id": "ST-039-048",
+      "depth": "frazier/img/FRZ_S27_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 364.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S28_V01.png",
+      "seed": "frazier-115",
+      "treatment": "scan",
+      "scene_code": "S28",
+      "asset_id": "ST-039-049",
+      "depth": "frazier/img/FRZ_S28_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 366.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-3977__government_building_exterior.mp4",
+      "seed": "frazier-116",
+      "treatment": "footage",
+      "scene_code": "S16",
+      "asset_id": "FC-039-066"
+    },
+    {
+      "start": 370.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-3985__government_building_exterior.mp4",
+      "seed": "frazier-117",
+      "treatment": "motion",
+      "scene_code": "S41",
+      "asset_id": "MO-039-011"
+    },
+    {
+      "start": 372.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-5457__bank_building_columns.mp4",
+      "seed": "frazier-118",
+      "treatment": "footage",
+      "scene_code": "S48",
+      "asset_id": "FC-039-048"
+    },
+    {
+      "start": 378.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S28_V02.png",
+      "seed": "frazier-119",
+      "treatment": "focus",
+      "scene_code": "S28",
+      "asset_id": "ST-039-050",
+      "depth": "frazier/img/FRZ_S28_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 380.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S29_V01.png",
+      "seed": "frazier-120",
+      "treatment": "depth",
+      "scene_code": "S29",
+      "asset_id": "ST-039-051",
+      "depth": "frazier/img/FRZ_S29_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 381.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-7124__dna_laboratory_blue.mp4",
+      "seed": "frazier-121",
+      "treatment": "motion",
+      "scene_code": "S42",
+      "asset_id": "MO-039-012"
+    },
+    {
+      "start": 383.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-7129__dna_laboratory_blue.mp4",
+      "seed": "frazier-122",
+      "treatment": "footage",
+      "scene_code": "S30",
+      "asset_id": "FC-039-030"
+    },
+    {
+      "start": 389.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S29_V02.png",
+      "seed": "frazier-123",
+      "treatment": "scan",
+      "scene_code": "S29",
+      "asset_id": "ST-039-052",
+      "depth": "frazier/img/FRZ_S29_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 391.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-8386__fingerprint_scan_blue.mp4",
+      "seed": "frazier-124",
+      "treatment": "footage",
+      "scene_code": "S36",
+      "asset_id": "FC-039-086"
+    },
+    {
+      "start": 394.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-8392__fingerprint_scan_blue.mp4",
+      "seed": "frazier-125",
+      "treatment": "footage",
+      "scene_code": "S11",
+      "asset_id": "FC-039-011"
+    },
+    {
+      "start": 400.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S39_V02.png",
+      "seed": "frazier-126",
+      "treatment": "focus",
+      "scene_code": "S39",
+      "asset_id": "ST-039-053",
+      "depth": "frazier/img/FRZ_S39_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 402.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/S61.png",
+      "seed": "frazier-127",
+      "treatment": "focus",
+      "scene_code": "S61",
+      "asset_id": "ST-039-054",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 404.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-6238__courthouse_steps.mp4",
+      "seed": "frazier-128",
+      "treatment": "footage",
+      "scene_code": "S17",
+      "asset_id": "FC-039-067"
+    },
+    {
+      "start": 408.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-6284__judge_gavel_wooden.mp4",
+      "seed": "frazier-129",
+      "treatment": "motion",
+      "scene_code": "S42",
+      "asset_id": "MO-039-012"
+    },
+    {
+      "start": 410.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-6494__us_constitution_document.mp4",
+      "seed": "frazier-130",
+      "treatment": "footage",
+      "scene_code": "S49",
+      "asset_id": "FC-039-049"
+    },
+    {
+      "start": 416.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/S61_02.png",
+      "seed": "frazier-131",
+      "treatment": "scan",
+      "scene_code": "S61",
+      "asset_id": "ST-039-055",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 418.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/S62.png",
+      "seed": "frazier-132",
+      "treatment": "duotone",
+      "scene_code": "S62",
+      "asset_id": "ST-039-056",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 419.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-3774__office_interior_dark.mp4",
+      "seed": "frazier-133",
+      "treatment": "motion",
+      "scene_code": "S43",
+      "asset_id": "MO-039-013"
+    },
+    {
+      "start": 421.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-2448__bank_building_columns.mp4",
+      "seed": "frazier-134",
+      "treatment": "footage",
+      "scene_code": "S31",
+      "asset_id": "FC-039-031"
+    },
+    {
+      "start": 427.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/S62_02.png",
+      "seed": "frazier-135",
+      "treatment": "focus",
+      "scene_code": "S62",
+      "asset_id": "ST-039-057",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 429.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-29943__government_building_exterior.mp4",
+      "seed": "frazier-136",
+      "treatment": "footage",
+      "scene_code": "S37",
+      "asset_id": "FC-039-087"
+    },
+    {
+      "start": 432.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-25667__dna_double_helix_render.mp4",
+      "seed": "frazier-137",
+      "treatment": "footage",
+      "scene_code": "S12",
+      "asset_id": "FC-039-012"
+    },
+    {
+      "start": 438.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S49_V01.png",
+      "seed": "frazier-138",
+      "treatment": "scan",
+      "scene_code": "S49",
+      "asset_id": "ST-039-058",
+      "depth": "frazier/img/FRZ_S49_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 440.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S49_V02.png",
+      "seed": "frazier-139",
+      "treatment": "scan",
+      "scene_code": "S49",
+      "asset_id": "ST-039-059",
+      "depth": "frazier/img/FRZ_S49_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 442.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-9589__candle_in_dark.mp4",
+      "seed": "frazier-140",
+      "treatment": "footage",
+      "scene_code": "S18",
+      "asset_id": "FC-039-068"
+    },
+    {
+      "start": 446.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-14191__antique_brass_scales.mp4",
+      "seed": "frazier-141",
+      "treatment": "motion",
+      "scene_code": "S43",
+      "asset_id": "MO-039-013"
+    },
+    {
+      "start": 448.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-14603__jury_box_empty.mp4",
+      "seed": "frazier-142",
+      "treatment": "footage",
+      "scene_code": "S50",
+      "asset_id": "FC-039-050"
+    },
+    {
+      "start": 454.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/S63.png",
+      "seed": "frazier-143",
+      "treatment": "focus",
+      "scene_code": "S63",
+      "asset_id": "ST-039-060",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 456.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/S63_02.png",
+      "seed": "frazier-144",
+      "treatment": "depth",
+      "scene_code": "S63",
+      "asset_id": "ST-039-061",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 457.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-21009__abandoned_factory_interior.mp4",
+      "seed": "frazier-145",
+      "treatment": "motion",
+      "scene_code": "S44",
+      "asset_id": "MO-039-014"
+    },
+    {
+      "start": 459.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-62297__city_data_overlay_map.mp4",
+      "seed": "frazier-146",
+      "treatment": "footage",
+      "scene_code": "S32",
+      "asset_id": "FC-039-032"
+    },
+    {
+      "start": 465.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S14_V01.png",
+      "seed": "frazier-147",
+      "treatment": "scan",
+      "scene_code": "S14",
+      "asset_id": "ST-039-062",
+      "depth": "frazier/img/FRZ_S14_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 467.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-7118__dna_laboratory_blue.mp4",
+      "seed": "frazier-148",
+      "treatment": "footage",
+      "scene_code": "S38",
+      "asset_id": "FC-039-088"
+    },
+    {
+      "start": 470.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-14198__antique_brass_scales.mp4",
+      "seed": "frazier-149",
+      "treatment": "footage",
+      "scene_code": "S13",
+      "asset_id": "FC-039-013"
+    },
+    {
+      "start": 476.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S14_V02.png",
+      "seed": "frazier-150",
+      "treatment": "focus",
+      "scene_code": "S14",
+      "asset_id": "ST-039-063",
+      "depth": "frazier/img/FRZ_S14_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 478.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S15_V01.png",
+      "seed": "frazier-151",
+      "treatment": "focus",
+      "scene_code": "S15",
+      "asset_id": "ST-039-064",
+      "depth": "frazier/img/FRZ_S15_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 480.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-12395__spotlight_smoke_stage.mp4",
+      "seed": "frazier-152",
+      "treatment": "footage",
+      "scene_code": "S19",
+      "asset_id": "FC-039-069"
+    },
+    {
+      "start": 484.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-18907__candle_in_dark.mp4",
+      "seed": "frazier-153",
+      "treatment": "motion",
+      "scene_code": "S44",
+      "asset_id": "MO-039-014"
+    },
+    {
+      "start": 486.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-32816__contract_paperwork_signing.mp4",
+      "seed": "frazier-154",
+      "treatment": "footage",
+      "scene_code": "S01",
+      "asset_id": "FC-039-051"
+    },
+    {
+      "start": 492.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S15_V02.png",
+      "seed": "frazier-155",
+      "treatment": "scan",
+      "scene_code": "S15",
+      "asset_id": "ST-039-065",
+      "depth": "frazier/img/FRZ_S15_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 494.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S20_V01.png",
+      "seed": "frazier-156",
+      "treatment": "duotone",
+      "scene_code": "S20",
+      "asset_id": "ST-039-066",
+      "depth": "frazier/img/FRZ_S20_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 495.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-30416__rain_on_window_night.mp4",
+      "seed": "frazier-157",
+      "treatment": "motion",
+      "scene_code": "S45",
+      "asset_id": "MO-039-015"
+    },
+    {
+      "start": 497.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-34695__padlock_and_chain.mp4",
+      "seed": "frazier-158",
+      "treatment": "footage",
+      "scene_code": "S33",
+      "asset_id": "FC-039-033"
+    },
+    {
+      "start": 503.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S20_V02.png",
+      "seed": "frazier-159",
+      "treatment": "focus",
+      "scene_code": "S20",
+      "asset_id": "ST-039-067",
+      "depth": "frazier/img/FRZ_S20_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 505.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-0288__concrete_wall_texture_dark.mp4",
+      "seed": "frazier-160",
+      "treatment": "footage",
+      "scene_code": "S39",
+      "asset_id": "FC-039-089"
+    },
+    {
+      "start": 508.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-19045__balance_scale_brass.mp4",
+      "seed": "frazier-161",
+      "treatment": "footage",
+      "scene_code": "S14",
+      "asset_id": "FC-039-014"
+    },
+    {
+      "start": 514.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S24_V01.png",
+      "seed": "frazier-162",
+      "treatment": "scan",
+      "scene_code": "S24",
+      "asset_id": "ST-039-068",
+      "depth": "frazier/img/FRZ_S24_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 516.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S24_V02.png",
+      "seed": "frazier-163",
+      "treatment": "scan",
+      "scene_code": "S24",
+      "asset_id": "ST-039-069",
+      "depth": "frazier/img/FRZ_S24_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 518.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-9722__clock_ticking_macro.mp4",
+      "seed": "frazier-164",
+      "treatment": "footage",
+      "scene_code": "S20",
+      "asset_id": "FC-039-070"
+    },
+    {
+      "start": 522.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-4596__newspaper_macro.mp4",
+      "seed": "frazier-165",
+      "treatment": "motion",
+      "scene_code": "S45",
+      "asset_id": "MO-039-015"
+    },
+    {
+      "start": 524.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-10600__rain_on_glass_macro.mp4",
+      "seed": "frazier-166",
+      "treatment": "footage",
+      "scene_code": "S02",
+      "asset_id": "FC-039-052"
+    },
+    {
+      "start": 530.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S38_V01.png",
+      "seed": "frazier-167",
+      "treatment": "focus",
+      "scene_code": "S38",
+      "asset_id": "ST-039-070",
+      "depth": "frazier/img/FRZ_S38_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 532.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S38_V02.png",
+      "seed": "frazier-168",
+      "treatment": "depth",
+      "scene_code": "S38",
+      "asset_id": "ST-039-071",
+      "depth": "frazier/img/FRZ_S38_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 533.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-36529__magnifying_glass_on_document.mp4",
+      "seed": "frazier-169",
+      "treatment": "motion",
+      "scene_code": "S46",
+      "asset_id": "MO-039-016"
+    },
+    {
+      "start": 535.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-31342__foggy_forest.mp4",
+      "seed": "frazier-170",
+      "treatment": "footage",
+      "scene_code": "S34",
+      "asset_id": "FC-039-034"
+    },
+    {
+      "start": 541.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S43_V01.png",
+      "seed": "frazier-171",
+      "treatment": "scan",
+      "scene_code": "S43",
+      "asset_id": "ST-039-072",
+      "depth": "frazier/img/FRZ_S43_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 543.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-10852__candlelit_room_dark.mp4",
+      "seed": "frazier-172",
+      "treatment": "footage",
+      "scene_code": "S40",
+      "asset_id": "FC-039-090"
+    },
+    {
+      "start": 546.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-33692__old_library_archive.mp4",
+      "seed": "frazier-173",
+      "treatment": "footage",
+      "scene_code": "S15",
+      "asset_id": "FC-039-015"
+    },
+    {
+      "start": 552.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S43_V02.png",
+      "seed": "frazier-174",
+      "treatment": "focus",
+      "scene_code": "S43",
+      "asset_id": "ST-039-073",
+      "depth": "frazier/img/FRZ_S43_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 554.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S45_V01.png",
+      "seed": "frazier-175",
+      "treatment": "focus",
+      "scene_code": "S45",
+      "asset_id": "ST-039-074",
+      "depth": "frazier/img/FRZ_S45_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 556.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-8257__contract_paperwork_signing.mp4",
+      "seed": "frazier-176",
+      "treatment": "footage",
+      "scene_code": "S21",
+      "asset_id": "FC-039-071"
+    },
+    {
+      "start": 560.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-26478__lone_figure_with_umbrella_in_rain.mp4",
+      "seed": "frazier-177",
+      "treatment": "motion",
+      "scene_code": "S46",
+      "asset_id": "MO-039-016"
+    },
+    {
+      "start": 562.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-40188__elderly_hands_close_up.mp4",
+      "seed": "frazier-178",
+      "treatment": "footage",
+      "scene_code": "S03",
+      "asset_id": "FC-039-053"
+    },
+    {
+      "start": 568.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S45_V02.png",
+      "seed": "frazier-179",
+      "treatment": "scan",
+      "scene_code": "S45",
+      "asset_id": "ST-039-075",
+      "depth": "frazier/img/FRZ_S45_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 570.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S47_V01.png",
+      "seed": "frazier-180",
+      "treatment": "duotone",
+      "scene_code": "S47",
+      "asset_id": "ST-039-076",
+      "depth": "frazier/img/FRZ_S47_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 571.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-22613__law_books_spines_macro.mp4",
+      "seed": "frazier-181",
+      "treatment": "motion",
+      "scene_code": "S47",
+      "asset_id": "MO-039-017"
+    },
+    {
+      "start": 573.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-12152__padlock_and_chain.mp4",
+      "seed": "frazier-182",
+      "treatment": "footage",
+      "scene_code": "S35",
+      "asset_id": "FC-039-035"
+    },
+    {
+      "start": 579.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S47_V02.png",
+      "seed": "frazier-183",
+      "treatment": "focus",
+      "scene_code": "S47",
+      "asset_id": "ST-039-077",
+      "depth": "frazier/img/FRZ_S47_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 581.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-6479__us_constitution_document.mp4",
+      "seed": "frazier-184",
+      "treatment": "footage",
+      "scene_code": "S41",
+      "asset_id": "FC-039-091"
+    },
+    {
+      "start": 584.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-33917__vintage_typewriter.mp4",
+      "seed": "frazier-185",
+      "treatment": "footage",
+      "scene_code": "S16",
+      "asset_id": "FC-039-016"
+    },
+    {
+      "start": 590.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/S64.png",
+      "seed": "frazier-186",
+      "treatment": "scan",
+      "scene_code": "S64",
+      "asset_id": "ST-039-078",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 592.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/S64_02.png",
+      "seed": "frazier-187",
+      "treatment": "scan",
+      "scene_code": "S64",
+      "asset_id": "ST-039-079",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 594.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-31939__judge_gavel_wooden.mp4",
+      "seed": "frazier-188",
+      "treatment": "footage",
+      "scene_code": "S22",
+      "asset_id": "FC-039-072"
+    },
+    {
+      "start": 598.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-36128__quill_and_ink_pot.mp4",
+      "seed": "frazier-189",
+      "treatment": "motion",
+      "scene_code": "S47",
+      "asset_id": "MO-039-017"
+    },
+    {
+      "start": 600.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-9876__chess_board_dramatic.mp4",
+      "seed": "frazier-190",
+      "treatment": "footage",
+      "scene_code": "S04",
+      "asset_id": "FC-039-054"
+    },
+    {
+      "start": 606.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S37_V01.png",
+      "seed": "frazier-191",
+      "treatment": "focus",
+      "scene_code": "S37",
+      "asset_id": "ST-039-080",
+      "depth": "frazier/img/FRZ_S37_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 608.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S37_V02.png",
+      "seed": "frazier-192",
+      "treatment": "depth",
+      "scene_code": "S37",
+      "asset_id": "ST-039-081",
+      "depth": "frazier/img/FRZ_S37_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 609.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-38439__shredded_documents_pile.mp4",
+      "seed": "frazier-193",
+      "treatment": "motion",
+      "scene_code": "S48",
+      "asset_id": "MO-039-018"
+    },
+    {
+      "start": 611.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-47677__factory_workers_silhouette.mp4",
+      "seed": "frazier-194",
+      "treatment": "footage",
+      "scene_code": "S36",
+      "asset_id": "FC-039-036"
+    },
+    {
+      "start": 617.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S41_V01.png",
+      "seed": "frazier-195",
+      "treatment": "scan",
+      "scene_code": "S41",
+      "asset_id": "ST-039-082",
+      "depth": "frazier/img/FRZ_S41_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 619.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-47218__doctor_consulting_patient_silhouette.mp4",
+      "seed": "frazier-196",
+      "treatment": "footage",
+      "scene_code": "S42",
+      "asset_id": "FC-039-092"
+    },
+    {
+      "start": 622.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-37034__fingerprint_dust_lift.mp4",
+      "seed": "frazier-197",
+      "treatment": "footage",
+      "scene_code": "S17",
+      "asset_id": "FC-039-017"
+    },
+    {
+      "start": 628.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S41_V02.png",
+      "seed": "frazier-198",
+      "treatment": "focus",
+      "scene_code": "S41",
+      "asset_id": "ST-039-083",
+      "depth": "frazier/img/FRZ_S41_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 630.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S46_V01.png",
+      "seed": "frazier-199",
+      "treatment": "focus",
+      "scene_code": "S46",
+      "asset_id": "ST-039-084",
+      "depth": "frazier/img/FRZ_S46_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 632.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-6291__judge_gavel_wooden.mp4",
+      "seed": "frazier-200",
+      "treatment": "footage",
+      "scene_code": "S23",
+      "asset_id": "FC-039-073"
+    },
+    {
+      "start": 636.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-16104__burning_paper_documents.mp4",
+      "seed": "frazier-201",
+      "treatment": "motion",
+      "scene_code": "S48",
+      "asset_id": "MO-039-018"
+    },
+    {
+      "start": 638.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-15271__long_shadow_of_a_person.mp4",
+      "seed": "frazier-202",
+      "treatment": "footage",
+      "scene_code": "S05",
+      "asset_id": "FC-039-055"
+    },
+    {
+      "start": 644.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S46_V02.png",
+      "seed": "frazier-203",
+      "treatment": "scan",
+      "scene_code": "S46",
+      "asset_id": "ST-039-085",
+      "depth": "frazier/img/FRZ_S46_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 646.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S50_V01.png",
+      "seed": "frazier-204",
+      "treatment": "duotone",
+      "scene_code": "S50",
+      "asset_id": "ST-039-086",
+      "depth": "frazier/img/FRZ_S50_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 647.7,
+      "dur": 2.1,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-8244__contract_paperwork_signing.mp4",
+      "seed": "frazier-205",
+      "treatment": "motion",
+      "scene_code": "S49",
+      "asset_id": "MO-039-019"
+    },
+    {
+      "start": 649.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-16119__burning_paper_documents.mp4",
+      "seed": "frazier-206",
+      "treatment": "footage",
+      "scene_code": "S37",
+      "asset_id": "FC-039-037"
+    },
+    {
+      "start": 655.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S50_V02.png",
+      "seed": "frazier-207",
+      "treatment": "focus",
+      "scene_code": "S50",
+      "asset_id": "ST-039-087",
+      "depth": "frazier/img/FRZ_S50_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 657.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-41177__courtroom_gavel_block_macro.mp4",
+      "seed": "frazier-208",
+      "treatment": "footage",
+      "scene_code": "S43",
+      "asset_id": "FC-039-093"
+    },
+    {
+      "start": 660.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-2528__spotlight_on_dark_stage.mp4",
+      "seed": "frazier-209",
+      "treatment": "footage",
+      "scene_code": "S18",
+      "asset_id": "FC-039-018"
+    },
+    {
+      "start": 666.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S02_V02.png",
+      "seed": "frazier-210",
+      "treatment": "scan",
+      "scene_code": "S02",
+      "asset_id": "ST-039-001",
+      "depth": "frazier/img/FRZ_S02_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 668.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S08_V01.png",
+      "seed": "frazier-211",
+      "treatment": "scan",
+      "scene_code": "S08",
+      "asset_id": "ST-039-002",
+      "depth": "frazier/img/FRZ_S08_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 670.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-20302__quill_and_ink_pot.mp4",
+      "seed": "frazier-212",
+      "treatment": "footage",
+      "scene_code": "S24",
+      "asset_id": "FC-039-074"
+    },
+    {
+      "start": 674.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-36062__wax_seal_on_document.mp4",
+      "seed": "frazier-213",
+      "treatment": "motion",
+      "scene_code": "S49",
+      "asset_id": "MO-039-019"
+    },
+    {
+      "start": 676.9,
+      "dur": 5.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-31849__courthouse_steps.mp4",
+      "seed": "frazier-214",
+      "treatment": "footage",
+      "scene_code": "S06",
+      "asset_id": "FC-039-056"
+    },
+    {
+      "start": 682.1,
+      "dur": 1.9,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S12_V01.png",
+      "seed": "frazier-215",
+      "treatment": "focus",
+      "scene_code": "S12",
+      "asset_id": "ST-039-003",
+      "depth": "frazier/img/FRZ_S12_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 684.0,
+      "dur": 1.7,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S12_V02.png",
+      "seed": "frazier-216",
+      "treatment": "depth",
+      "scene_code": "S12",
+      "asset_id": "ST-039-004",
+      "depth": "frazier/img/FRZ_S12_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 685.7,
+      "dur": 2.1,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S13_V01.png",
+      "seed": "frazier-217",
+      "treatment": "depth",
+      "scene_code": "S13",
+      "asset_id": "ST-039-005",
+      "depth": "frazier/img/FRZ_S13_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 687.8,
+      "dur": 5.6,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-16368__capitol_dome_dusk.mp4",
+      "seed": "frazier-218",
+      "treatment": "footage",
+      "scene_code": "S38",
+      "asset_id": "FC-039-038"
+    },
+    {
+      "start": 693.4,
+      "dur": 1.8,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S13_V02.png",
+      "seed": "frazier-219",
+      "treatment": "scan",
+      "scene_code": "S13",
+      "asset_id": "ST-039-006",
+      "depth": "frazier/img/FRZ_S13_V02_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 695.2,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-38110__law_books_spines_macro.mp4",
+      "seed": "frazier-220",
+      "treatment": "motion",
+      "scene_code": "S31",
+      "asset_id": "MO-039-001"
+    },
+    {
+      "start": 698.2,
+      "dur": 6.5,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-46385__hands_clasped_praying.mp4",
+      "seed": "frazier-221",
+      "treatment": "footage",
+      "scene_code": "S19",
+      "asset_id": "FC-039-019"
+    },
+    {
+      "start": 704.7,
+      "dur": 2.0,
+      "kind": "img",
+      "src": "frazier/S65.png",
+      "seed": "frazier-222",
+      "treatment": "focus",
+      "scene_code": "S65",
+      "asset_id": "ST-039-007",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 706.7,
+      "dur": 1.6,
+      "kind": "img",
+      "src": "frazier/S65_02.png",
+      "seed": "frazier-223",
+      "treatment": "focus",
+      "scene_code": "S65",
+      "asset_id": "ST-039-008",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    },
+    {
+      "start": 708.3,
+      "dur": 4.2,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-37073__burning_paper_documents.mp4",
+      "seed": "frazier-224",
+      "treatment": "footage",
+      "scene_code": "S25",
+      "asset_id": "FC-039-075"
+    },
+    {
+      "start": 712.5,
+      "dur": 2.4,
+      "kind": "footage",
+      "src": "frazier/factory/AF-BG-49694__two_people_arguing_silhouette.mp4",
+      "seed": "frazier-225",
+      "treatment": "motion",
+      "scene_code": "S31",
+      "asset_id": "MO-039-001"
+    },
+    {
+      "start": 714.9,
+      "dur": 1.389,
+      "kind": "img",
+      "src": "frazier/img/FRZ_S01_V01.png",
+      "seed": "frazier-226",
+      "treatment": "scan",
+      "scene_code": "S01",
+      "asset_id": "ST-039-009",
+      "depth": "frazier/img/FRZ_S01_V01_depth.png",
+      "overlay": null,
+      "blendHint": null,
+      "overlayDuration": null
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.508,
+      "text": "A man with the comprehension of a ten-year-old described"
+    },
+    {
+      "start": 2.508,
+      "end": 5.851,
+      "text": "a wound that a coroner had to open a body to find."
+    },
+    {
+      "start": 6.151,
+      "end": 9.17,
+      "text": "Officers testified that nobody had told him about it."
+    },
+    {
+      "start": 9.47,
+      "end": 11.849,
+      "text": "What they had told him was that his fingerprints"
+    },
+    {
+      "start": 11.849,
+      "end": 12.907,
+      "text": "were at the scene."
+    },
+    {
+      "start": 13.207,
+      "end": 14.647,
+      "text": "There were no fingerprints."
+    },
+    {
+      "start": 14.947,
+      "end": 16.294,
+      "text": "There was no match."
+    },
+    {
+      "start": 16.594,
+      "end": 19.07,
+      "text": "Every word of that was invented, and every word"
+    },
+    {
+      "start": 19.07,
+      "end": 20.17,
+      "text": "of it was legal."
+    },
+    {
+      "start": 22.67,
+      "end": 24.295,
+      "text": "His name was Barry Laughman."
+    },
+    {
+      "start": 24.595,
+      "end": 26.22,
+      "text": "He was twenty-four years old."
+    },
+    {
+      "start": 26.52,
+      "end": 28.958,
+      "text": "Nothing an officer said to him that day broke"
+    },
+    {
+      "start": 28.958,
+      "end": 29.771,
+      "text": "a single rule."
+    },
+    {
+      "start": 32.271,
+      "end": 34.918,
+      "text": "Oxford Township, Adams County, Pennsylvania."
+    },
+    {
+      "start": 35.218,
+      "end": 38.442,
+      "text": "Farm country, two hours west of Philadelphia, where the corn"
+    },
+    {
+      "start": 38.442,
+      "end": 40.698,
+      "text": "comes up to the shoulder in August."
+    },
+    {
+      "start": 40.998,
+      "end": 44.191,
+      "text": "On the morning of August 13, 1987, a neighbor saw"
+    },
+    {
+      "start": 44.191,
+      "end": 46.106,
+      "text": "Edna Laughman out in her yard."
+    },
+    {
+      "start": 46.406,
+      "end": 48.124,
+      "text": "She was eighty-five years old."
+    },
+    {
+      "start": 48.424,
+      "end": 51.489,
+      "text": "Later that day she was found dead inside her own house."
+    },
+    {
+      "start": 51.789,
+      "end": 53.832,
+      "text": "She had been sexually assaulted."
+    },
+    {
+      "start": 54.132,
+      "end": 56.918,
+      "text": "Law and Crime reported that she was beaten and suffocated."
+    },
+    {
+      "start": 57.218,
+      "end": 61.236,
+      "text": "The Innocence Project and the legal scholar Brandon Garrett's exoneration"
+    },
+    {
+      "start": 61.236,
+      "end": 65.255,
+      "text": "record both describe the suffocation the same way: pills, forced"
+    },
+    {
+      "start": 65.255,
+      "end": 66.46,
+      "text": "down her throat."
+    },
+    {
+      "start": 66.76,
+      "end": 69.049,
+      "text": "A killing like that, in a township like"
+    },
+    {
+      "start": 69.049,
+      "end": 71.909,
+      "text": "that, does not stay quiet, and within weeks the state"
+    },
+    {
+      "start": 71.909,
+      "end": 73.912,
+      "text": "police had a name from the neighborhood."
+    },
+    {
+      "start": 74.212,
+      "end": 78.14,
+      "text": "A twenty-four-year-old man who lived nearby, with an IQ of 70,"
+    },
+    {
+      "start": 78.14,
+      "end": 81.711,
+      "text": "who functioned — by the assessments in his own case file —"
+    },
+    {
+      "start": 81.711,
+      "end": 84.568,
+      "text": "at roughly the level of a ten-year-old child."
+    },
+    {
+      "start": 84.868,
+      "end": 86.965,
+      "text": "Then an officer told him that his fingerprints"
+    },
+    {
+      "start": 86.965,
+      "end": 88.537,
+      "text": "had been found at the scene."
+    },
+    {
+      "start": 88.837,
+      "end": 90.741,
+      "text": "Barry had no way to check that."
+    },
+    {
+      "start": 91.041,
+      "end": 93.34,
+      "text": "He could not ask to see the report, and he"
+    },
+    {
+      "start": 93.34,
+      "end": 95.639,
+      "text": "could not know there was no report to ask for."
+    },
+    {
+      "start": 95.939,
+      "end": 98.587,
+      "text": "He did not know that a man in a room"
+    },
+    {
+      "start": 98.587,
+      "end": 100.97,
+      "text": "like this one, in another state, in another decade,"
+    },
+    {
+      "start": 100.97,
+      "end": 103.883,
+      "text": "had already tried to stop an interview and been talked past,"
+    },
+    {
+      "start": 103.883,
+      "end": 106.267,
+      "text": "and that the answer a court gave that man"
+    },
+    {
+      "start": 106.267,
+      "end": 108.385,
+      "text": "was sitting in the room with him now."
+    },
+    {
+      "start": 108.685,
+      "end": 109.892,
+      "text": "Barry confessed."
+    },
+    {
+      "start": 110.192,
+      "end": 112.41,
+      "text": "What came out of that room was a statement"
+    },
+    {
+      "start": 112.41,
+      "end": 113.396,
+      "text": "in his own name."
+    },
+    {
+      "start": 113.696,
+      "end": 115.983,
+      "text": "It would take sixteen years and a private laboratory"
+    },
+    {
+      "start": 115.983,
+      "end": 118.015,
+      "text": "to take apart what was wrong with it."
+    },
+    {
+      "start": 120.515,
+      "end": 122.512,
+      "text": "The statement did not fit the house."
+    },
+    {
+      "start": 122.812,
+      "end": 124.817,
+      "text": "He described getting in through a window"
+    },
+    {
+      "start": 124.817,
+      "end": 126.249,
+      "text": "that had not been disturbed."
+    },
+    {
+      "start": 126.549,
+      "end": 128.469,
+      "text": "He said he killed her on August 12,"
+    },
+    {
+      "start": 128.469,
+      "end": 130.868,
+      "text": "though a neighbor had seen her alive in her yard"
+    },
+    {
+      "start": 130.868,
+      "end": 132.308,
+      "text": "on the morning of the 13th."
+    },
+    {
+      "start": 132.608,
+      "end": 135.063,
+      "text": "A confession should not need a neighbor to tell it"
+    },
+    {
+      "start": 135.063,
+      "end": 136.045,
+      "text": "what day it was."
+    },
+    {
+      "start": 136.345,
+      "end": 137.831,
+      "text": "Then there was his blood."
+    },
+    {
+      "start": 138.131,
+      "end": 140.897,
+      "text": "The victim was an A secretor, Barry Laughman"
+    },
+    {
+      "start": 140.897,
+      "end": 144.354,
+      "text": "was a B secretor, and the vaginal swab carried A-type"
+    },
+    {
+      "start": 144.354,
+      "end": 147.465,
+      "text": "material with no B antigen on it at all."
+    },
+    {
+      "start": 147.765,
+      "end": 151.837,
+      "text": "In 1987, before DNA typing, that was the strongest exclusion"
+    },
+    {
+      "start": 151.837,
+      "end": 153.059,
+      "text": "science could offer."
+    },
+    {
+      "start": 153.359,
+      "end": 155.077,
+      "text": "The body had already answered."
+    },
+    {
+      "start": 155.377,
+      "end": 156.445,
+      "text": "Not this man."
+    },
+    {
+      "start": 156.745,
+      "end": 159.903,
+      "text": "At trial the state's chemist offered the jury a way around it."
+    },
+    {
+      "start": 160.203,
+      "end": 164.512,
+      "text": "Bacteria, she speculated, can convert one blood group substance into another —"
+    },
+    {
+      "start": 164.512,
+      "end": 168.43,
+      "text": "given enough time, A material could become B, and B"
+    },
+    {
+      "start": 168.43,
+      "end": 172.348,
+      "text": "could become A. That testimony was wrong, and the Innocence"
+    },
+    {
+      "start": 172.348,
+      "end": 175.482,
+      "text": "Project's record of the case says it plainly."
+    },
+    {
+      "start": 175.782,
+      "end": 177.825,
+      "text": "The analyst testified incorrectly."
+    },
+    {
+      "start": 178.125,
+      "end": 180.911,
+      "text": "But it was said under oath, by someone the jury"
+    },
+    {
+      "start": 180.911,
+      "end": 183.14,
+      "text": "had every reason to trust, and the jury"
+    },
+    {
+      "start": 183.14,
+      "end": 185.927,
+      "text": "had in front of it a statement in Barry's name"
+    },
+    {
+      "start": 185.927,
+      "end": 188.713,
+      "text": "that agreed with the officers and disagreed with the swab."
+    },
+    {
+      "start": 189.013,
+      "end": 192.124,
+      "text": "And there was the card the prosecution held back for last."
+    },
+    {
+      "start": 192.424,
+      "end": 195.639,
+      "text": "Barry's statement contained details of the crime that the public"
+    },
+    {
+      "start": 195.639,
+      "end": 196.604,
+      "text": "did not have."
+    },
+    {
+      "start": 196.904,
+      "end": 199.087,
+      "text": "That she had been sexually assaulted."
+    },
+    {
+      "start": 199.387,
+      "end": 202.173,
+      "text": "That the pills forced into her mouth were what killed her."
+    },
+    {
+      "start": 202.473,
+      "end": 206.049,
+      "text": "A wound to her head that, according to the case record,"
+    },
+    {
+      "start": 206.049,
+      "end": 207.999,
+      "text": "was not visible until the autopsy."
+    },
+    {
+      "start": 208.299,
+      "end": 212.079,
+      "text": "Officers testified that they had never given those details to Barry,"
+    },
+    {
+      "start": 212.079,
+      "end": 213.454,
+      "text": "or to his family."
+    },
+    {
+      "start": 213.754,
+      "end": 215.797,
+      "text": "His federal complaint says otherwise."
+    },
+    {
+      "start": 216.097,
+      "end": 218.651,
+      "text": "It says the details came from the officers."
+    },
+    {
+      "start": 218.951,
+      "end": 221.227,
+      "text": "That claim has never been tried."
+    },
+    {
+      "start": 221.527,
+      "end": 226.153,
+      "text": "On December 16, 1988, Barry Laughman was convicted of murder, rape,"
+    },
+    {
+      "start": 226.153,
+      "end": 229.097,
+      "text": "robbery and burglary, and sentenced to life."
+    },
+    {
+      "start": 229.397,
+      "end": 230.79,
+      "text": "Twenty-five years old."
+    },
+    {
+      "start": 233.29,
+      "end": 234.637,
+      "text": "Portland, Oregon."
+    },
+    {
+      "start": 234.937,
+      "end": 237.073,
+      "text": "September 22, 1964."
+    },
+    {
+      "start": 237.373,
+      "end": 240.727,
+      "text": "A man named Russell Anton Marleau was killed, and police"
+    },
+    {
+      "start": 240.727,
+      "end": 243.41,
+      "text": "brought in a young Marine named Martin Frazier."
+    },
+    {
+      "start": 243.71,
+      "end": 246.646,
+      "text": "Frazier did not want to talk, so an officer told"
+    },
+    {
+      "start": 246.646,
+      "end": 249.582,
+      "text": "him something that was not true: that his cousin, Jerry"
+    },
+    {
+      "start": 249.582,
+      "end": 252.812,
+      "text": "Lee Rawls, had been brought in, and that Rawls had confessed."
+    },
+    {
+      "start": 253.112,
+      "end": 255.295,
+      "text": "The opinion states it without softening."
+    },
+    {
+      "start": 255.595,
+      "end": 258.753,
+      "text": "The officer questioning petitioner told him, falsely, that Rawls"
+    },
+    {
+      "start": 258.753,
+      "end": 261.911,
+      "text": "had been brought in and that he had confessed."
+    },
+    {
+      "start": 262.211,
+      "end": 263.697,
+      "text": "Then Frazier said this."
+    },
+    {
+      "start": 263.997,
+      "end": 266.319,
+      "text": "\"I think I had better get a lawyer before I"
+    },
+    {
+      "start": 266.319,
+      "end": 267.016,
+      "text": "talk any more."
+    },
+    {
+      "start": 267.316,
+      "end": 269.459,
+      "text": "I am going to get into trouble more than I"
+    },
+    {
+      "start": 269.459,
+      "end": 270.102,
+      "text": "am in now.\""
+    },
+    {
+      "start": 270.402,
+      "end": 271.795,
+      "text": "The officer answered."
+    },
+    {
+      "start": 272.095,
+      "end": 274.254,
+      "text": "\"You can't be in any more trouble than you"
+    },
+    {
+      "start": 274.254,
+      "end": 274.974,
+      "text": "are in now.\""
+    },
+    {
+      "start": 275.274,
+      "end": 279.044,
+      "text": "The questioning continued, and Frazier confessed, and he was convicted"
+    },
+    {
+      "start": 279.044,
+      "end": 282.813,
+      "text": "of second-degree murder — and four and a half years later,"
+    },
+    {
+      "start": 282.813,
+      "end": 286.206,
+      "text": "after argument that February, Justice Thurgood Marshall handed down"
+    },
+    {
+      "start": 286.206,
+      "end": 288.091,
+      "text": "the opinion that answered him."
+    },
+    {
+      "start": 288.391,
+      "end": 291.595,
+      "text": "One sentence has outlived everything else in the case."
+    },
+    {
+      "start": 291.895,
+      "end": 295.932,
+      "text": "\"The fact that the police misrepresented the statements that Rawls"
+    },
+    {
+      "start": 295.932,
+      "end": 299.564,
+      "text": "had made is, while relevant, insufficient in our view"
+    },
+    {
+      "start": 299.564,
+      "end": 302.39,
+      "text": "to make this otherwise voluntary confession inadmissible.\""
+    },
+    {
+      "start": 302.69,
+      "end": 304.733,
+      "text": "The Court did not bless the lie."
+    },
+    {
+      "start": 305.033,
+      "end": 307.852,
+      "text": "It weighed it, and found it too light, by itself,"
+    },
+    {
+      "start": 307.852,
+      "end": 308.98,
+      "text": "to sink the confession."
+    },
+    {
+      "start": 309.28,
+      "end": 312.568,
+      "text": "The test, the Court said, citing Clewis v. Texas,"
+    },
+    {
+      "start": 312.568,
+      "end": 314.76,
+      "text": "is the totality of the circumstances."
+    },
+    {
+      "start": 315.06,
+      "end": 316.546,
+      "text": "Relevant means it counts."
+    },
+    {
+      "start": 316.846,
+      "end": 318.957,
+      "text": "It goes onto the scale with everything else"
+    },
+    {
+      "start": 318.957,
+      "end": 321.596,
+      "text": "that was in the room, and nothing on that scale"
+    },
+    {
+      "start": 321.596,
+      "end": 322.651,
+      "text": "decides the question alone."
+    },
+    {
+      "start": 322.951,
+      "end": 324.484,
+      "text": "Two things get left out."
+    },
+    {
+      "start": 324.784,
+      "end": 327.632,
+      "text": "Frazier was tried after Escobedo and before Miranda,"
+    },
+    {
+      "start": 327.632,
+      "end": 331.193,
+      "text": "and the Court said so itself — Miranda does not apply"
+    },
+    {
+      "start": 331.193,
+      "end": 332.261,
+      "text": "to this case."
+    },
+    {
+      "start": 332.561,
+      "end": 335.851,
+      "text": "And the line about a lawyer, the one that sounds"
+    },
+    {
+      "start": 335.851,
+      "end": 339.141,
+      "text": "so plain in the transcript, the Court held was neither"
+    },
+    {
+      "start": 339.141,
+      "end": 342.761,
+      "text": "as clear nor as unambiguous as the request Escobedo had made;"
+    },
+    {
+      "start": 342.761,
+      "end": 346.051,
+      "text": "an officer might have taken it for a passing comment"
+    },
+    {
+      "start": 346.051,
+      "end": 348.025,
+      "text": "rather than a demand to stop."
+    },
+    {
+      "start": 348.325,
+      "end": 351.112,
+      "text": "Frazier had been given partial warnings, and the Court put"
+    },
+    {
+      "start": 351.112,
+      "end": 352.505,
+      "text": "those in the balance too."
+    },
+    {
+      "start": 352.805,
+      "end": 355.418,
+      "text": "So the exchange in that room turns over as you"
+    },
+    {
+      "start": 355.418,
+      "end": 356.985,
+      "text": "listen to it a second time."
+    },
+    {
+      "start": 357.285,
+      "end": 360.675,
+      "text": "The sailor asking for a lawyer was not, in law, asking."
+    },
+    {
+      "start": 360.975,
+      "end": 365.898,
+      "text": "Once Miranda swallowed the rest, what survived from 1969 is narrow."
+    },
+    {
+      "start": 366.198,
+      "end": 370.02,
+      "text": "A lie about the evidence, standing alone, does not make"
+    },
+    {
+      "start": 370.02,
+      "end": 371.167,
+      "text": "a confession inadmissible."
+    },
+    {
+      "start": 371.467,
+      "end": 374.302,
+      "text": "That is the rule that was waiting in the room"
+    },
+    {
+      "start": 374.302,
+      "end": 376.854,
+      "text": "when an officer told Barry Laughman about a fingerprint."
+    },
+    {
+      "start": 379.354,
+      "end": 382.001,
+      "text": "In 1993, DNA testing was tried."
+    },
+    {
+      "start": 382.301,
+      "end": 387.177,
+      "text": "The technology of the day — PCR, DQ Alpha — came back inconclusive."
+    },
+    {
+      "start": 387.477,
+      "end": 389.01,
+      "text": "It took another decade."
+    },
+    {
+      "start": 389.31,
+      "end": 393.142,
+      "text": "In November 2003 the laboratory Orchid Cellmark ran Y-STR testing"
+    },
+    {
+      "start": 393.142,
+      "end": 396.973,
+      "text": "on the same evidence, and the result excluded Barry Laughman."
+    },
+    {
+      "start": 397.273,
+      "end": 400.524,
+      "text": "He was released that month to supervised home confinement."
+    },
+    {
+      "start": 400.824,
+      "end": 404.4,
+      "text": "In August 2004 a new trial was granted,"
+    },
+    {
+      "start": 404.4,
+      "end": 408.87,
+      "text": "and on August 26, 2004, the Adams County District Attorney,"
+    },
+    {
+      "start": 408.87,
+      "end": 411.552,
+      "text": "Shawn C. Wagner, dropped every charge."
+    },
+    {
+      "start": 411.852,
+      "end": 414.611,
+      "text": "(The federal court's later opinion dates the new trial"
+    },
+    {
+      "start": 414.611,
+      "end": 417.676,
+      "text": "and the withdrawal of charges to August 24; the records"
+    },
+    {
+      "start": 417.676,
+      "end": 419.515,
+      "text": "differ by a couple of days.)"
+    },
+    {
+      "start": 419.815,
+      "end": 420.976,
+      "text": "Sixteen years."
+    },
+    {
+      "start": 421.276,
+      "end": 424.062,
+      "text": "He had gone in at twenty-five and come out at forty."
+    },
+    {
+      "start": 424.362,
+      "end": 426.173,
+      "text": "He sued the men who had taken them."
+    },
+    {
+      "start": 426.473,
+      "end": 428.934,
+      "text": "A federal court held that a jury could hear it."
+    },
+    {
+      "start": 429.234,
+      "end": 430.581,
+      "text": "No jury ever did."
+    },
+    {
+      "start": 430.881,
+      "end": 434.031,
+      "text": "Then, in August 2018, the same vaginal swab"
+    },
+    {
+      "start": 434.031,
+      "end": 437.968,
+      "text": "that had cleared him was sent to a private laboratory,"
+    },
+    {
+      "start": 437.968,
+      "end": 439.937,
+      "text": "Parabon NanoLabs, for genetic genealogy."
+    },
+    {
+      "start": 440.237,
+      "end": 443.952,
+      "text": "The analysis pointed to a family — a common ancestor surnamed"
+    },
+    {
+      "start": 443.952,
+      "end": 446.924,
+      "text": "Laughman or Speelman — and then to one man."
+    },
+    {
+      "start": 447.224,
+      "end": 451.197,
+      "text": "On July 14, 2021, Adams County District Attorney Brian Sinnett"
+    },
+    {
+      "start": 451.197,
+      "end": 454.773,
+      "text": "announced that Christopher Speelman's DNA was, in his words,"
+    },
+    {
+      "start": 454.773,
+      "end": 457.952,
+      "text": "an absolute match to the crime scene evidence."
+    },
+    {
+      "start": 458.252,
+      "end": 460.883,
+      "text": "Barry Laughman was fifty-eight the day another man's name"
+    },
+    {
+      "start": 460.883,
+      "end": 463.221,
+      "text": "was read out in place of his own."
+    },
+    {
+      "start": 463.521,
+      "end": 467.933,
+      "text": "On June 22, 2023, Chris Joseph Larry Speelman, then fifty-nine,"
+    },
+    {
+      "start": 467.933,
+      "end": 473.227,
+      "text": "pleaded guilty to third-degree murder and burglary and no contest to rape."
+    },
+    {
+      "start": 473.527,
+      "end": 477.648,
+      "text": "Judge Thomas Campbell sentenced him to twenty-five to fifty years,"
+    },
+    {
+      "start": 477.648,
+      "end": 480.121,
+      "text": "with no parole eligibility until 2046."
+    },
+    {
+      "start": 480.421,
+      "end": 482.836,
+      "text": "Barry Laughman lived to see it."
+    },
+    {
+      "start": 483.136,
+      "end": 486.951,
+      "text": "He died on March 21, 2024, at Jefferson Einstein Hospital"
+    },
+    {
+      "start": 486.951,
+      "end": 488.477,
+      "text": "in Philadelphia, at sixty."
+    },
+    {
+      "start": 488.777,
+      "end": 491.076,
+      "text": "He had twenty years of freedom, and almost none"
+    },
+    {
+      "start": 491.076,
+      "end": 493.885,
+      "text": "of them are in the record this film is built from."
+    },
+    {
+      "start": 494.185,
+      "end": 497.445,
+      "text": "The paperwork keeps his conviction, his exclusion, his lawsuit"
+    },
+    {
+      "start": 497.445,
+      "end": 501.43,
+      "text": "and his death, and almost nothing of the man in between."
+    },
+    {
+      "start": 501.73,
+      "end": 505.157,
+      "text": "Of the 257 cases the Innocence Project has won,"
+    },
+    {
+      "start": 505.157,
+      "end": 507.442,
+      "text": "the average client served sixteen years."
+    },
+    {
+      "start": 507.742,
+      "end": 509.228,
+      "text": "The same sixteen."
+    },
+    {
+      "start": 509.528,
+      "end": 513.037,
+      "text": "Lay those 257 sentences end to end and they come"
+    },
+    {
+      "start": 513.037,
+      "end": 515.844,
+      "text": "to four thousand, one hundred and two years."
+    },
+    {
+      "start": 516.144,
+      "end": 520.221,
+      "text": "Among exonerees convicted as children, 34 percent had falsely confessed,"
+    },
+    {
+      "start": 520.221,
+      "end": 523.482,
+      "text": "against 10 percent of those convicted as adults."
+    },
+    {
+      "start": 523.782,
+      "end": 526.176,
+      "text": "A lie with a badge behind it roughly triples"
+    },
+    {
+      "start": 526.176,
+      "end": 528.835,
+      "text": "the odds that a child will confess to something they"
+    },
+    {
+      "start": 528.835,
+      "end": 529.633,
+      "text": "did not do."
+    },
+    {
+      "start": 529.933,
+      "end": 531.651,
+      "text": "Barry Laughman was twenty-four."
+    },
+    {
+      "start": 531.951,
+      "end": 534.273,
+      "text": "The law counted him as an adult."
+    },
+    {
+      "start": 534.573,
+      "end": 536.106,
+      "text": "Nothing else about him did."
+    },
+    {
+      "start": 536.406,
+      "end": 538.264,
+      "text": "Legislatures started with the children."
+    },
+    {
+      "start": 538.564,
+      "end": 542.237,
+      "text": "Oregon's Senate Bill 418, carried by Senator Chris Gorsek,"
+    },
+    {
+      "start": 542.237,
+      "end": 546.319,
+      "text": "a former police officer, was signed by Governor Kate Brown"
+    },
+    {
+      "start": 546.319,
+      "end": 549.992,
+      "text": "on July 14, 2021: a statement taken from someone"
+    },
+    {
+      "start": 549.992,
+      "end": 554.073,
+      "text": "under eighteen through information the officer knew to be false"
+    },
+    {
+      "start": 554.073,
+      "end": 557.746,
+      "text": "is presumed involuntary, and the state must prove otherwise"
+    },
+    {
+      "start": 557.746,
+      "end": 559.787,
+      "text": "by clear and convincing evidence."
+    },
+    {
+      "start": 560.087,
+      "end": 562.084,
+      "text": "Illinois signed its own the next day."
+    },
+    {
+      "start": 562.384,
+      "end": 565.057,
+      "text": "Both took effect on January 1, 2022,"
+    },
+    {
+      "start": 565.057,
+      "end": 569.257,
+      "text": "and by 2026 roughly ten states have some version of it."
+    },
+    {
+      "start": 569.557,
+      "end": 572.204,
+      "text": "For adults, no state has a law that generally forbids"
+    },
+    {
+      "start": 572.204,
+      "end": 574.851,
+      "text": "an officer from lying to your face about the evidence."
+    },
+    {
+      "start": 575.151,
+      "end": 579.516,
+      "text": "There is a line, though."
+    },
+    {
+      "start": 579.816,
+      "end": 583.782,
+      "text": "In State v. Cayward, decided by Florida's Second District Court"
+    },
+    {
+      "start": 583.782,
+      "end": 587.749,
+      "text": "of Appeal on November 15, 1989, officers manufactured two fake"
+    },
+    {
+      "start": 587.749,
+      "end": 591.715,
+      "text": "scientific reports — one on the letterhead of the Florida Department"
+    },
+    {
+      "start": 591.715,
+      "end": 594.888,
+      "text": "of Criminal Law Enforcement, one on the letterhead"
+    },
+    {
+      "start": 594.888,
+      "end": 598.458,
+      "text": "of a company called Life Codes, Inc. — and showed"
+    },
+    {
+      "start": 598.458,
+      "end": 602.424,
+      "text": "the suspect a document saying his semen had been found"
+    },
+    {
+      "start": 602.424,
+      "end": 604.011,
+      "text": "on the victim's underwear."
+    },
+    {
+      "start": 604.311,
+      "end": 607.005,
+      "text": "The court upheld the suppression of his confession."
+    },
+    {
+      "start": 607.305,
+      "end": 610.934,
+      "text": "Spoken deception, it said, is one thing; fabricated documents"
+    },
+    {
+      "start": 610.934,
+      "end": 614.159,
+      "text": "that impersonate a real institution have no place"
+    },
+    {
+      "start": 614.159,
+      "end": 616.175,
+      "text": "in the criminal justice system."
+    },
+    {
+      "start": 616.475,
+      "end": 620.262,
+      "text": "Florida's Supreme Court declined review in 1990 and never ruled"
+    },
+    {
+      "start": 620.262,
+      "end": 621.398,
+      "text": "on the merits."
+    },
+    {
+      "start": 621.698,
+      "end": 622.859,
+      "text": "They may say it."
+    },
+    {
+      "start": 623.159,
+      "end": 625.295,
+      "text": "In some courts, they may not print it."
+    },
+    {
+      "start": 625.595,
+      "end": 629.518,
+      "text": "Kassin and six colleagues, in Police-Induced Confessions 2.0, published"
+    },
+    {
+      "start": 629.518,
+      "end": 633.441,
+      "text": "in Law and Human Behavior in 2025 and endorsed"
+    },
+    {
+      "start": 633.441,
+      "end": 637.8,
+      "text": "as a Scientific Review Paper by the American Psychology-Law Society,"
+    },
+    {
+      "start": 637.8,
+      "end": 641.724,
+      "text": "conclude that confrontational interrogation built on false evidence raises"
+    },
+    {
+      "start": 641.724,
+      "end": 644.775,
+      "text": "the risk that an innocent person confesses."
+    },
+    {
+      "start": 645.075,
+      "end": 649.422,
+      "text": "They recommend recording interrogations end to end, requiring evidence-based"
+    },
+    {
+      "start": 649.422,
+      "end": 654.735,
+      "text": "suspicion before questioning begins, and restricting the false evidence ploy itself."
+    },
+    {
+      "start": 655.035,
+      "end": 658.138,
+      "text": "In January 2019 a court in the Bronx took"
+    },
+    {
+      "start": 658.138,
+      "end": 661.585,
+      "text": "that research as newly discovered evidence and vacated a conviction"
+    },
+    {
+      "start": 661.585,
+      "end": 663.998,
+      "text": "built on a confession given at sixteen."
+    },
+    {
+      "start": 666.498,
+      "end": 669.026,
+      "text": "A man with the comprehension of a ten-year-old is told"
+    },
+    {
+      "start": 669.026,
+      "end": 671.049,
+      "text": "a fingerprint has placed him at a murder."
+    },
+    {
+      "start": 671.349,
+      "end": 672.696,
+      "text": "He cannot check it."
+    },
+    {
+      "start": 672.996,
+      "end": 674.854,
+      "text": "He cannot demand the report."
+    },
+    {
+      "start": 675.154,
+      "end": 677.649,
+      "text": "He does not know that the officer is allowed"
+    },
+    {
+      "start": 677.649,
+      "end": 680.422,
+      "text": "to say it, or that an opinion written before he"
+    },
+    {
+      "start": 680.422,
+      "end": 683.471,
+      "text": "was born had already weighed that lie and called it relevant,"
+    },
+    {
+      "start": 683.471,
+      "end": 684.303,
+      "text": "but not enough."
+    },
+    {
+      "start": 684.603,
+      "end": 688.55,
+      "text": "Everything after that — the trial, the chemist, the life sentence,"
+    },
+    {
+      "start": 688.55,
+      "end": 692.498,
+      "text": "the sixteen years, a laboratory in 2003 — was the state"
+    },
+    {
+      "start": 692.498,
+      "end": 696.445,
+      "text": "spending sixteen years undoing one sentence spoken in a room"
+    },
+    {
+      "start": 696.445,
+      "end": 698.024,
+      "text": "with the door closed."
+    },
+    {
+      "start": 698.324,
+      "end": 699.671,
+      "text": "The print was invented."
+    },
+    {
+      "start": 699.971,
+      "end": 701.457,
+      "text": "The permission was not."
+    },
+    {
+      "start": 701.757,
+      "end": 704.846,
+      "text": "If this changed how you would answer the first question"
+    },
+    {
+      "start": 704.846,
+      "end": 707.317,
+      "text": "in that room, like the video and subscribe —"
+    },
+    {
+      "start": 707.317,
+      "end": 708.862,
+      "text": "that is all we ask."
+    },
+    {
+      "start": 709.162,
+      "end": 711.916,
+      "text": "Next: they can take your car before they ever charge"
+    },
+    {
+      "start": 711.916,
+      "end": 713.017,
+      "text": "you with a crime."
+    },
+    {
+      "start": 713.317,
+      "end": 715.546,
+      "text": "And to get it back, you have to sue"
+    },
+    {
+      "start": 715.546,
+      "end": 716.289,
+      "text": "your own property."
+    }
+  ],
+  "graphics": [],
+  "figures": [
+    {
+      "start": 6.0,
+      "end": 11.4,
+      "kind": "numberticker",
+      "value": 16,
+      "suffix": " YEARS",
+      "label": "TIME LOST"
+    },
+    {
+      "start": 22.769,
+      "end": 28.169,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "1969",
+          "text": "RULE"
+        },
+        {
+          "year": "2003",
+          "text": "DNA"
+        },
+        {
+          "year": "2021",
+          "text": "MATCH"
+        }
+      ]
+    },
+    {
+      "start": 39.538,
+      "end": 44.938,
+      "kind": "bar",
+      "data": [
+        {
+          "label": "FALSE CONFESSION",
+          "value": 29
+        },
+        {
+          "label": "EYEWITNESS ID",
+          "value": 62
+        }
+      ]
+    },
+    {
+      "start": 56.306,
+      "end": 61.706,
+      "kind": "kinetic",
+      "lines": [
+        "THE ROOM",
+        "CHANGES THE STORY"
+      ],
+      "style": "maskslide",
+      "emphasisWords": [
+        "ROOM"
+      ]
+    },
+    {
+      "start": 73.075,
+      "end": 78.475,
+      "kind": "acttitle",
+      "title": "ACT 1",
+      "kicker": "FRAZIER",
+      "index": 1
+    },
+    {
+      "start": 89.844,
+      "end": 95.244,
+      "kind": "lowerthird",
+      "primary": "ILLUSTRATIVE REENACTMENT",
+      "secondary": "AI-assisted visualization"
+    },
+    {
+      "start": 106.613,
+      "end": 112.013,
+      "kind": "dochighlight",
+      "rects": [
+        {
+          "x": 0.18,
+          "y": 0.36,
+          "w": 0.64,
+          "h": 0.08
+        }
+      ],
+      "mode": "redact"
+    },
+    {
+      "start": 123.381,
+      "end": 128.781,
+      "kind": "routemap",
+      "pins": [
+        {
+          "x": 0.25,
+          "y": 0.58,
+          "label": "HOME"
+        },
+        {
+          "x": 0.66,
+          "y": 0.42,
+          "label": "ROOM"
+        }
+      ]
+    },
+    {
+      "start": 140.15,
+      "end": 145.55,
+      "kind": "pindropmap",
+      "pins": [
+        {
+          "x": 0.35,
+          "y": 0.5,
+          "label": "1987"
+        },
+        {
+          "x": 0.62,
+          "y": 0.45,
+          "label": "2003"
+        }
+      ]
+    },
+    {
+      "start": 156.919,
+      "end": 162.319,
+      "kind": "regionmap",
+      "label": "STATE RULES",
+      "pattern": "varied"
+    },
+    {
+      "start": 173.688,
+      "end": 179.088,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "ADULTS",
+          "value": 10
+        },
+        {
+          "label": "YOUTH",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "start": 190.457,
+      "end": 195.857,
+      "kind": "mechanism",
+      "mechanism": "closingdoor"
+    },
+    {
+      "start": 207.225,
+      "end": 212.625,
+      "kind": "numberticker",
+      "value": 16,
+      "suffix": " YEARS",
+      "label": "TIME LOST"
+    },
+    {
+      "start": 223.994,
+      "end": 229.394,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "1969",
+          "text": "RULE"
+        },
+        {
+          "year": "2003",
+          "text": "DNA"
+        },
+        {
+          "year": "2021",
+          "text": "MATCH"
+        }
+      ]
+    },
+    {
+      "start": 240.763,
+      "end": 246.163,
+      "kind": "bar",
+      "data": [
+        {
+          "label": "FALSE CONFESSION",
+          "value": 29
+        },
+        {
+          "label": "EYEWITNESS ID",
+          "value": 62
+        }
+      ]
+    },
+    {
+      "start": 257.532,
+      "end": 262.932,
+      "kind": "kinetic",
+      "lines": [
+        "THE ROOM",
+        "CHANGES THE STORY"
+      ],
+      "style": "maskslide",
+      "emphasisWords": [
+        "ROOM"
+      ]
+    },
+    {
+      "start": 274.301,
+      "end": 279.701,
+      "kind": "acttitle",
+      "title": "ACT 2",
+      "kicker": "FRAZIER",
+      "index": 2
+    },
+    {
+      "start": 291.069,
+      "end": 296.469,
+      "kind": "lowerthird",
+      "primary": "ILLUSTRATIVE REENACTMENT",
+      "secondary": "AI-assisted visualization"
+    },
+    {
+      "start": 307.838,
+      "end": 313.238,
+      "kind": "dochighlight",
+      "rects": [
+        {
+          "x": 0.18,
+          "y": 0.36,
+          "w": 0.64,
+          "h": 0.08
+        }
+      ],
+      "mode": "redact"
+    },
+    {
+      "start": 324.607,
+      "end": 330.007,
+      "kind": "routemap",
+      "pins": [
+        {
+          "x": 0.25,
+          "y": 0.58,
+          "label": "HOME"
+        },
+        {
+          "x": 0.66,
+          "y": 0.42,
+          "label": "ROOM"
+        }
+      ]
+    },
+    {
+      "start": 341.376,
+      "end": 346.776,
+      "kind": "pindropmap",
+      "pins": [
+        {
+          "x": 0.35,
+          "y": 0.5,
+          "label": "1987"
+        },
+        {
+          "x": 0.62,
+          "y": 0.45,
+          "label": "2003"
+        }
+      ]
+    },
+    {
+      "start": 358.144,
+      "end": 363.544,
+      "kind": "regionmap",
+      "label": "STATE RULES",
+      "pattern": "varied"
+    },
+    {
+      "start": 374.913,
+      "end": 380.313,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "ADULTS",
+          "value": 10
+        },
+        {
+          "label": "YOUTH",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "start": 391.682,
+      "end": 397.082,
+      "kind": "mechanism",
+      "mechanism": "closingdoor"
+    },
+    {
+      "start": 408.451,
+      "end": 413.851,
+      "kind": "numberticker",
+      "value": 16,
+      "suffix": " YEARS",
+      "label": "TIME LOST"
+    },
+    {
+      "start": 425.22,
+      "end": 430.62,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "1969",
+          "text": "RULE"
+        },
+        {
+          "year": "2003",
+          "text": "DNA"
+        },
+        {
+          "year": "2021",
+          "text": "MATCH"
+        }
+      ]
+    },
+    {
+      "start": 441.988,
+      "end": 447.388,
+      "kind": "bar",
+      "data": [
+        {
+          "label": "FALSE CONFESSION",
+          "value": 29
+        },
+        {
+          "label": "EYEWITNESS ID",
+          "value": 62
+        }
+      ]
+    },
+    {
+      "start": 458.757,
+      "end": 464.157,
+      "kind": "kinetic",
+      "lines": [
+        "THE ROOM",
+        "CHANGES THE STORY"
+      ],
+      "style": "maskslide",
+      "emphasisWords": [
+        "ROOM"
+      ]
+    },
+    {
+      "start": 475.526,
+      "end": 480.926,
+      "kind": "acttitle",
+      "title": "ACT 3",
+      "kicker": "FRAZIER",
+      "index": 3
+    },
+    {
+      "start": 492.295,
+      "end": 497.695,
+      "kind": "lowerthird",
+      "primary": "ILLUSTRATIVE REENACTMENT",
+      "secondary": "AI-assisted visualization"
+    },
+    {
+      "start": 509.064,
+      "end": 514.464,
+      "kind": "dochighlight",
+      "rects": [
+        {
+          "x": 0.18,
+          "y": 0.36,
+          "w": 0.64,
+          "h": 0.08
+        }
+      ],
+      "mode": "redact"
+    },
+    {
+      "start": 525.832,
+      "end": 531.232,
+      "kind": "routemap",
+      "pins": [
+        {
+          "x": 0.25,
+          "y": 0.58,
+          "label": "HOME"
+        },
+        {
+          "x": 0.66,
+          "y": 0.42,
+          "label": "ROOM"
+        }
+      ]
+    },
+    {
+      "start": 542.601,
+      "end": 548.001,
+      "kind": "pindropmap",
+      "pins": [
+        {
+          "x": 0.35,
+          "y": 0.5,
+          "label": "1987"
+        },
+        {
+          "x": 0.62,
+          "y": 0.45,
+          "label": "2003"
+        }
+      ]
+    },
+    {
+      "start": 559.37,
+      "end": 564.77,
+      "kind": "regionmap",
+      "label": "STATE RULES",
+      "pattern": "varied"
+    },
+    {
+      "start": 576.139,
+      "end": 581.539,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "ADULTS",
+          "value": 10
+        },
+        {
+          "label": "YOUTH",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "start": 592.907,
+      "end": 598.307,
+      "kind": "mechanism",
+      "mechanism": "closingdoor"
+    },
+    {
+      "start": 609.676,
+      "end": 615.076,
+      "kind": "numberticker",
+      "value": 16,
+      "suffix": " YEARS",
+      "label": "TIME LOST"
+    },
+    {
+      "start": 626.445,
+      "end": 631.845,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "1969",
+          "text": "RULE"
+        },
+        {
+          "year": "2003",
+          "text": "DNA"
+        },
+        {
+          "year": "2021",
+          "text": "MATCH"
+        }
+      ]
+    },
+    {
+      "start": 643.214,
+      "end": 648.614,
+      "kind": "bar",
+      "data": [
+        {
+          "label": "FALSE CONFESSION",
+          "value": 29
+        },
+        {
+          "label": "EYEWITNESS ID",
+          "value": 62
+        }
+      ]
+    },
+    {
+      "start": 659.983,
+      "end": 665.383,
+      "kind": "kinetic",
+      "lines": [
+        "THE ROOM",
+        "CHANGES THE STORY"
+      ],
+      "style": "maskslide",
+      "emphasisWords": [
+        "ROOM"
+      ]
+    },
+    {
+      "start": 676.751,
+      "end": 682.151,
+      "kind": "acttitle",
+      "title": "ACT 4",
+      "kicker": "FRAZIER",
+      "index": 4
+    },
+    {
+      "start": 693.52,
+      "end": 698.92,
+      "kind": "lowerthird",
+      "primary": "ILLUSTRATIVE REENACTMENT",
+      "secondary": "AI-assisted visualization"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "artifact_type": "preflight_render_receipt",
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-076-morandi",
+  "generated_at": "2026-08-21T02:17:22.299068+00:00",
+  "gate": "preflight_render_gate.py",
+  "thresholds": {
+    "depth_floor_pct": 40.0,
+    "figure_beat_floor": 6,
+    "hero_surface_floor": 2,
+    "min_long_edge_px": 3840,
+    "cuts_per_graphic_max": 4
+  },
+  "inputs": {
+    "remotion_plan": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-076-morandi\\04_scenes\\remotion_plan.v001.json",
+    "scene_plan": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-076-morandi\\04_scenes\\scene_plan.v001.json",
+    "script_annotated": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-076-morandi\\03_script\\script.annotated.v001.json",
+    "asset_selection": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-076-morandi\\05_visuals\\asset_selection.v001.json",
+    "image_dir_exists": true
+  },
+  "verdict": "BLOCK",
+  "render_allowed": false,
+  "checks": [
+    {
+      "check": "script_length",
+      "status": "PASS",
+      "detail": "5,051 words -> ~28.4 min (band 27.0-33.0) [EP76_morandi_script.en.v001.md]"
+    },
+    {
+      "check": "motion_budget",
+      "status": "FAIL",
+      "detail": "cannot recompute motion budget -- required plan file(s) missing",
+      "subchecks": [
+        {
+          "check": "motion.inputs",
+          "status": "FAIL",
+          "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-076-morandi\\04_scenes\\remotion_plan.v001.json"
+        },
+        {
+          "check": "motion.inputs",
+          "status": "FAIL",
+          "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-076-morandi\\04_scenes\\scene_plan.v001.json"
+        }
+      ],
+      "recomputed": {}
+    },
+    {
+      "check": "assets_exist",
+      "status": "FAIL",
+      "detail": "referenced stills exist at 4K with depth maps for depth-treated scenes",
+      "subchecks": [
+        {
+          "check": "assets.references",
+          "status": "FAIL",
+          "detail": "no S0NN still references found in annotated/scene_plan (cannot verify prerequisites)"
+        },
+        {
+          "check": "assets.stills",
+          "status": "FAIL",
+          "detail": "0/0 referenced stills present & >= 3840px long edge; missing=none; under_res=none; unreadable=none"
+        },
+        {
+          "check": "assets.depth_maps",
+          "status": "PASS",
+          "detail": "0/0 depth maps present for depth-eligible stills; missing=0"
+        }
+      ],
+      "recomputed": {
+        "referenced_still_ids": [],
+        "referenced_still_count": 0,
+        "staged_still_files": 117,
+        "stills_present_ok": 0,
+        "stills_missing": [],
+        "stills_under_resolution": [],
+        "stills_unreadable": [],
+        "depth_eligible_still_count": 0,
+        "depth_maps_present": 0,
+        "depth_maps_missing": []
+      }
+    },
+    {
+      "check": "coverage",
+      "status": "FAIL",
+      "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-076-morandi\\05_visuals\\asset_selection.v001.json",
+      "recomputed": {
+        "expected_span_count": 0
+      }
+    },
+    {
+      "check": "film_crosscheck",
+      "status": "WARN",
+      "detail": "no <slug>_film.json render input found yet -- render cannot run until it is generated (motion budget was validated from the plan)",
+      "film_path": null
+    },
+    {
+      "check": "motion_density",
+      "status": "WARN",
+      "detail": "no <slug>_film.json resolves to episode 'morandi' under C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\src\\data (film data may be on SSD) — skipping"
+    },
+    {
+      "check": "animation_mix",
+      "status": "WARN",
+      "detail": "no premium beatsheet or usable CaseFilm data for morandi — skipping"
+    },
+    {
+      "check": "asset_reuse",
+      "status": "WARN",
+      "detail": "no film.json yet"
+    },
+    {
+      "check": "caption_integrity",
+      "status": "WARN",
+      "detail": "no premium beatsheet or composition resolves to 'morandi' — not a code-driven premium episode (skipping)"
+    },
+    {
+      "check": "caption_breaks",
+      "status": "WARN",
+      "detail": "no .srt yet"
+    },
+    {
+      "check": "visual_asset_qc",
+      "status": "PASS",
+      "detail": "visual-asset QC OK — stills: stills OK: 2.6% dark (<= 40%), variety 1.00 (>= 0.60)"
+    },
+    {
+      "check": "pool_frame_review",
+      "status": "WARN",
+      "detail": "no clips staged in remotion/public/morandi/factory -- nothing to review yet"
+    },
+    {
+      "check": "plate_review",
+      "status": "PASS",
+      "detail": "117 plate(s) in the set (0 declared, 117 on disk), every one carrying a resolved per-plate verdict whose sha256 matches the file now on disk; binding=subset (the review names plate_id_sha256=(none) and this set hashes to 0d442f0c2fc10ea2; 3 id(s) have been REMOVED since and none added, so every plate still in the set was seen. Not an exact binding.). Reviewer: claude, EP76 design lane 2026-08-21. THIS SAYS SOMEBODY SIGNED FOR EVERY PLATE. It does not say the plates are good: no pixel was examined here, and every content judgement came from that reviewer."
+    },
+    {
+      "check": "retention_cadence",
+      "status": "WARN",
+      "detail": "no film.json yet"
+    },
+    {
+      "check": "packaging_qc",
+      "status": "WARN",
+      "detail": "no 09_package/youtube_meta.v*.json yet (packaging not authored)"
+    },
+    {
+      "check": "encoder_settings",
+      "status": "WARN",
+      "detail": "no long-form final render resolved yet"
+    }
+  ]
+}

@@ -1,0 +1,609 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-035-hinders",
+  "revision": "v001",
+  "note": "Revolution-format motion plan for EP35 'FOLLOWING THE RULE.' (Carole Hinders / civil forfeiture / structuring). Exact text, dates, amounts, citations, counters and diagrams are code-rendered in Remotion (never baked into AI stills). Perceptual motion budget (depth 45% / moving FigureBeats 27 / hero surfaces 8 / ~2.32s cut cadence / ForcefulCut transitions) per EP35_hinders_DESIGN.v001 sec3. fps=60, 1920x1080. key_graphics map to CaseFilm FigureBeats via build_case_film_assets.key_graphic_to_figure; scene_id S0NN anchors to narration span SPN-00NN.",
+  "global": {
+    "fps": 60,
+    "resolution": "1920x1080",
+    "palette_ref": "remotion/src/brand.ts",
+    "base_composition": "CaseFilm.tsx (premium, data-driven)",
+    "hinders_components_dir": "remotion/src/components/hinders/ (FIGURE_REGISTRY F1-F21)",
+    "motionkit_components_dir": "remotion/src/components/motionkit/",
+    "bookends": "canonical BrandOpening / BrandEndcard (fork forbidden)",
+    "citation_policy": "CitationLowerThird / QuoteCard for case, statute, statistic and headline graphics tied to claim_id.",
+    "synthetic_label": "symbolic reconstruction on all AI reenactment/location sequences (no real-person likeness).",
+    "transition_component": "ForcefulCut (modes: push, slide, zoompunch, whip)",
+    "banned_transitions": [
+      "WipeTransition (gold vertical sweep)",
+      "crossfade-as-default",
+      "orbiting soft glow",
+      "lissajous",
+      "fixed-position glow breathing",
+      "flicker"
+    ],
+    "no_paid_api": true
+  },
+  "motion_budget": {
+    "target_runtime_seconds": 1225,
+    "runtime_band_seconds": [
+      1170,
+      1230
+    ],
+    "actual_master_narration_seconds": 1134.8,
+    "scene_count": 38,
+    "target_total_cuts": 528,
+    "avg_cut_seconds": 2.32,
+    "cut_cadence_note": "Design target 1225s / 528 cuts = 2.32s average. Builder derives the real cut grid from the actual master narration length; this budget pins the depth share and the figure map.",
+    "depth": {
+      "still_cut_count": 324,
+      "depth_treated_still_cut_count": 239,
+      "depth_cut_percent": 45,
+      "floor_percent": 40,
+      "definition": "depth-treated cut = DepthImageV (dpt-large depth map) applied to a single-image cut. Figure layer parallax (L3 near/mid/far) is a separate mechanism and is NOT counted here.",
+      "pass": true
+    },
+    "moving_figure_beats": {
+      "count": 27,
+      "floor": 6,
+      "hero_count": 8,
+      "hero_floor": 3,
+      "pass": true,
+      "hero_list": [
+        "F2 BSAOriginFlow",
+        "F3 ThresholdMeter",
+        "F5 FrozenAccount",
+        "F11 PolicyReversalTimeline",
+        "F14 McLellanParallel",
+        "F14b McLellanLedger",
+        "F15 TIGTA-Dots",
+        "F20 CaroleAfterCard"
+      ]
+    },
+    "hero_motion_surfaces": {
+      "count": 8,
+      "floor": 2,
+      "pass": true
+    }
+  },
+  "cut_plan": [
+    {
+      "section": "HOOK",
+      "scene_id_range": "S001",
+      "duration_seconds": 7,
+      "scenes": 1,
+      "cuts": 4,
+      "depth_percent": 25,
+      "lane": "Iowa",
+      "still_cuts": 2,
+      "depth_cuts": 1
+    },
+    {
+      "section": "OP",
+      "scene_id_range": "S001",
+      "duration_seconds": 12,
+      "scenes": 1,
+      "cuts": 4,
+      "depth_percent": 25,
+      "lane": "Iowa",
+      "still_cuts": 2,
+      "depth_cuts": 1
+    },
+    {
+      "section": "ACT1",
+      "scene_id_range": "S002-S007",
+      "duration_seconds": 241,
+      "scenes": 6,
+      "cuts": 100,
+      "depth_percent": 46,
+      "lane": "Iowa",
+      "still_cuts": 62,
+      "depth_cuts": 46
+    },
+    {
+      "section": "ACT2",
+      "scene_id_range": "S008-S014",
+      "duration_seconds": 254,
+      "scenes": 7,
+      "cuts": 116,
+      "depth_percent": 48,
+      "lane": "Federal",
+      "still_cuts": 76,
+      "depth_cuts": 56
+    },
+    {
+      "section": "ACT3",
+      "scene_id_range": "S015-S018",
+      "duration_seconds": 183,
+      "scenes": 6,
+      "cuts": 88,
+      "depth_percent": 50,
+      "lane": "Iowa->Federal",
+      "still_cuts": 60,
+      "depth_cuts": 44
+    },
+    {
+      "section": "ACT4",
+      "scene_id_range": "S019-S023",
+      "duration_seconds": 209,
+      "scenes": 7,
+      "cuts": 100,
+      "depth_percent": 45,
+      "lane": "NC",
+      "still_cuts": 61,
+      "depth_cuts": 45
+    },
+    {
+      "section": "ACT5",
+      "scene_id_range": "S024-S029",
+      "duration_seconds": 279,
+      "scenes": 9,
+      "cuts": 106,
+      "depth_percent": 42,
+      "lane": "Federal->Iowa",
+      "still_cuts": 58,
+      "depth_cuts": 44
+    },
+    {
+      "section": "ED",
+      "scene_id_range": "S030",
+      "duration_seconds": 39,
+      "scenes": 1,
+      "cuts": 10,
+      "depth_percent": 20,
+      "lane": "Iowa",
+      "still_cuts": 3,
+      "depth_cuts": 2
+    }
+  ],
+  "cut_plan_totals": {
+    "runtime_seconds": 1225,
+    "cuts": 528,
+    "scene_count": 38,
+    "still_cuts": 324,
+    "depth_cuts": 239,
+    "depth_cut_percent": 45,
+    "avg_cut_seconds": 2.32
+  },
+  "reusable_components": [
+    "DepthImageV (base): per-image dpt-large depth-map parallax on >=45% of single-image cuts; depth maps pre-generated by tools/depth/gen_depth.py.",
+    "ForcefulCut (base): mode push|slide|zoompunch|whip — every inter-cut transition; NO WipeTransition/crossfade default.",
+    "KineticType / KineticCaptions (base): mask-cut-up kinetic captions with motion blur, translateY reveal.",
+    "CitationLowerThird / OpenCaption (base): case citations, statute numbers and force-aligned captions.",
+    "NumberTicker (motionkit): count-up amounts and statistics (38 years, $32,820.56, 301 deposits, 91%, $17.1M).",
+    "ProbableCauseMeter (motionkit): threshold / burden meters (stall vs cross).",
+    "CaseTimeline (motionkit): 1970 BSA -> 1986 structuring -> 2014 front page -> 2019 reform timeline.",
+    "QuoteCard (motionkit): exact NYT headline, attributed.",
+    "CitationLowerThird (motionkit): case caption 'United States v. $32,820.56', 8th Cir. fee ruling.",
+    "PinDropMap (motionkit): Iowa vs North Carolina parallel (Hinders / McLellan).",
+    "RouteMap (motionkit): BSA money-flow origin diagram.",
+    "ActTitle (motionkit): section / reframe title cards ('STRUCTURING', 'STILL ON THE BOOKS', 'THAT IS NEXT')."
+  ],
+  "key_graphics": [
+    {
+      "id": "F1",
+      "scene_id": "S002",
+      "component": "NumberTicker",
+      "props": {
+        "value": 38,
+        "suffix": " YEARS",
+        "topLabel": "MRS. LADY'S"
+      },
+      "spec": "Register38Years — number-wheel decel + near-bills/far-kitchen parallax.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0001"
+      ]
+    },
+    {
+      "id": "F2",
+      "scene_id": "S003",
+      "component": "RouteMap",
+      "props": {
+        "pins": [
+          "1970 Bank Secrecy Act",
+          "organized crime cash",
+          "a diner register"
+        ]
+      },
+      "spec": "BSAOriginFlow — fluid stream flows down and a branch drips toward the small store. HERO #1.",
+      "hero": true,
+      "claim_ids": [
+        "CLM-0015"
+      ]
+    },
+    {
+      "id": "F2b",
+      "scene_id": "S004",
+      "component": "CaseTimeline",
+      "props": {
+        "events": [
+          {
+            "year": "1970",
+            "text": "Bank Secrecy Act"
+          },
+          {
+            "year": "1986",
+            "text": "Structuring made a crime"
+          }
+        ]
+      },
+      "spec": "StructuringExplainer — deposit column repeats under the $10k line; 'staying small = the offense' fills in.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0015"
+      ]
+    },
+    {
+      "id": "F3",
+      "scene_id": "S005",
+      "component": "ProbableCauseMeter",
+      "props": {
+        "outcome": "stall"
+      },
+      "spec": "ThresholdMeter — deposit blocks stack toward the $10k line; gauge glow travels after completion. HERO #2.",
+      "hero": true,
+      "claim_ids": [
+        "CLM-0015"
+      ]
+    },
+    {
+      "id": "F4",
+      "scene_id": "S006",
+      "component": "ProbableCauseMeter",
+      "props": {
+        "outcome": "cross"
+      },
+      "spec": "ThresholdBreach — a crack propagates along the line then push-transitions within 0.5s.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0015"
+      ]
+    },
+    {
+      "id": "F4t",
+      "scene_id": "S007",
+      "component": "ActTitle",
+      "props": {
+        "title": "STRUCTURING",
+        "kicker": "31 U.S.C. Sec. 5324"
+      },
+      "spec": "Act1 label bridge — statute name mask-reveal.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0015"
+      ]
+    },
+    {
+      "id": "F5",
+      "scene_id": "S008",
+      "component": "NumberTicker",
+      "props": {
+        "value": 32820.56,
+        "prefix": "$",
+        "decimals": 2,
+        "topLabel": "SEIZED"
+      },
+      "spec": "FrozenAccount — ice cracks propagate + near-passbook parallax; the exact seized balance counts up. HERO #3.",
+      "hero": true,
+      "claim_ids": [
+        "CLM-0002"
+      ]
+    },
+    {
+      "id": "F5b",
+      "scene_id": "S009",
+      "component": "ProbableCauseMeter",
+      "props": {
+        "outcome": "stall"
+      },
+      "spec": "BurdenShiftScale — the burden-of-proof scale rotates from government to citizen; 'PROVE IT INNOCENT' fills.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0003"
+      ]
+    },
+    {
+      "id": "F6",
+      "scene_id": "S010",
+      "component": "CitationLowerThird",
+      "props": {
+        "case": "United States v. $32,820.56",
+        "year": "N.D. Iowa"
+      },
+      "spec": "CaseCaptionNameplate — case name reveals one word at a time over an empty-defendant-seat parallax.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0002"
+      ]
+    },
+    {
+      "id": "F7",
+      "scene_id": "S011",
+      "component": "ActTitle",
+      "props": {
+        "title": "THEY WALK AWAY",
+        "kicker": "no judge ever ruled"
+      },
+      "spec": "WalkAwayTally — a row of owners greys out one by one (the quiet engine).",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0003"
+      ]
+    },
+    {
+      "id": "F8",
+      "scene_id": "S012",
+      "component": "ProbableCauseMeter",
+      "props": {
+        "outcome": "cross"
+      },
+      "spec": "CivilForfeitureInvert — bar rotates; an underline sweeps left to right (presumption inverted).",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0003"
+      ]
+    },
+    {
+      "id": "F9",
+      "scene_id": "S013",
+      "component": "ActTitle",
+      "props": {
+        "title": "GUILTY OR INNOCENT?",
+        "kicker": "a number cannot testify"
+      },
+      "spec": "CoinFlip — coin lands, wobbles, then whip-transitions within 0.5s.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0003"
+      ]
+    },
+    {
+      "id": "F10",
+      "scene_id": "S015",
+      "component": "QuoteCard",
+      "props": {
+        "quote": "Law Lets I.R.S. Seize Accounts on Suspicion, No Crime Required",
+        "attribution": "The New York Times, October 25, 2014"
+      },
+      "spec": "HeadlineKinetic — the NYT front-page headline reveals word by word, receding into the page.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0007"
+      ]
+    },
+    {
+      "id": "F11",
+      "scene_id": "S016",
+      "component": "CaseTimeline",
+      "props": {
+        "events": [
+          {
+            "year": "2014",
+            "text": "Front page"
+          },
+          {
+            "year": "2014",
+            "text": "Policy signaled"
+          },
+          {
+            "year": "2019",
+            "text": "Reform act"
+          }
+        ]
+      },
+      "spec": "PolicyReversalTimeline — playhead glides right; a 'WITHOUT PREJUDICE' node persists through Act4. HERO #4.",
+      "hero": true,
+      "claim_ids": [
+        "CLM-0007",
+        "CLM-0016"
+      ]
+    },
+    {
+      "id": "F12",
+      "scene_id": "S017",
+      "component": "ProbableCauseMeter",
+      "props": {
+        "outcome": "cross"
+      },
+      "spec": "SeizureVsReturn — two stacks slide in and collide; returned funds push back +/-10px.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0011"
+      ]
+    },
+    {
+      "id": "F13",
+      "scene_id": "S018",
+      "component": "CitationLowerThird",
+      "props": {
+        "case": "DISMISSED",
+        "year": "without prejudice"
+      },
+      "spec": "DismissedStamp — two words land (zoompunch); underline sweeps left to right.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0011"
+      ]
+    },
+    {
+      "id": "F14",
+      "scene_id": "S019",
+      "component": "PinDropMap",
+      "props": {
+        "pins": [
+          "Iowa (Hinders)",
+          "North Carolina (McLellan)"
+        ]
+      },
+      "spec": "McLellanParallel — left Iowa / right NC split open with dual parallax + red marker. HERO #5.",
+      "hero": true,
+      "claim_ids": [
+        "CLM-0012"
+      ]
+    },
+    {
+      "id": "F14b",
+      "scene_id": "S020",
+      "component": "NumberTicker",
+      "props": {
+        "value": 2000000,
+        "prefix": "$",
+        "topLabel": "301 DEPOSITS OVER 3 YEARS"
+      },
+      "spec": "McLellanLedger — 301 deposits light up in sequence; ~$2M counts up; year labels scroll. HERO #6.",
+      "hero": true,
+      "claim_ids": [
+        "CLM-0012"
+      ]
+    },
+    {
+      "id": "F14c",
+      "scene_id": "S021",
+      "component": "ActTitle",
+      "props": {
+        "title": "A COUNTRY STORE",
+        "kicker": "gas, cigarettes, lottery"
+      },
+      "spec": "McLellanStore — dolly back-to-front, small-transaction register cells light up.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0012"
+      ]
+    },
+    {
+      "id": "F15",
+      "scene_id": "S022",
+      "component": "NumberTicker",
+      "props": {
+        "value": 91,
+        "suffix": "%",
+        "topLabel": "LEGAL SOURCE"
+      },
+      "spec": "TIGTA-Dots — 278 dots assemble; 91% wave-flip to green; slow parallax after. HERO #7.",
+      "hero": true,
+      "claim_ids": [
+        "CLM-0014"
+      ]
+    },
+    {
+      "id": "F15b",
+      "scene_id": "S023",
+      "component": "NumberTicker",
+      "props": {
+        "value": 17.1,
+        "prefix": "$",
+        "suffix": "M",
+        "decimals": 1,
+        "topLabel": "231 CASES"
+      },
+      "spec": "LegalSourceBars — 231 cases / $17.1M bar extends; counter travels; push within 0.5s.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0014"
+      ]
+    },
+    {
+      "id": "F16",
+      "scene_id": "S024",
+      "component": "CitationLowerThird",
+      "props": {
+        "case": "FEES DENIED",
+        "year": "8th Cir. 838 F.3d 930 (2016)"
+      },
+      "spec": "FeeDeniedCard — suspended card lands; half-green/half-grey boundary sweeps left to right.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0011"
+      ]
+    },
+    {
+      "id": "F17",
+      "scene_id": "S025",
+      "component": "ActTitle",
+      "props": {
+        "title": "STILL ON THE BOOKS",
+        "kicker": "who does it reach for next"
+      },
+      "spec": "ThreatReframeCard — panel + second-person threat; institutional spine slow-drifts behind.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0016"
+      ]
+    },
+    {
+      "id": "F17b",
+      "scene_id": "S026",
+      "component": "ActTitle",
+      "props": {
+        "title": "FEES PAID vs FEES DENIED",
+        "kicker": "same law, opposite endings"
+      },
+      "spec": "FeeContrastCard — McLellan 'FEES PAID' / Carole 'FEES DENIED' two-row contrast; fill bars extend (L5 payoff).",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0011",
+        "CLM-0013"
+      ]
+    },
+    {
+      "id": "F18",
+      "scene_id": "S027",
+      "component": "ActTitle",
+      "props": {
+        "title": "CONGRESS HEARS THE OWNERS",
+        "kicker": "hearings, 2015"
+      },
+      "spec": "CongressHearingCard — hearing room, witness table, empty silhouettes; papers turn.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0020"
+      ]
+    },
+    {
+      "id": "F19",
+      "scene_id": "S028",
+      "component": "CaseTimeline",
+      "props": {
+        "events": [
+          {
+            "year": "2019",
+            "text": "A reform act"
+          }
+        ]
+      },
+      "spec": "RESPECTActNode — final timeline node lights gold; spine does one confirming left-to-right scan.",
+      "hero": false,
+      "claim_ids": [
+        "CLM-0016"
+      ]
+    },
+    {
+      "id": "F20",
+      "scene_id": "S029",
+      "component": "CitationLowerThird",
+      "props": {
+        "case": "SOLD",
+        "year": "Mrs. Lady's"
+      },
+      "spec": "CaroleAfterCard — empty diner interior -> 'SOLD' sign (L4 close); dolly back-to-front. HERO #8.",
+      "hero": true,
+      "claim_ids": [
+        "CLM-0001"
+      ]
+    },
+    {
+      "id": "F21",
+      "scene_id": "S030",
+      "component": "ActTitle",
+      "props": {
+        "title": "THAT IS NEXT",
+        "kicker": "one more account"
+      },
+      "spec": "InfoDensitySpine (ED bridge) — playhead scan to end-card; next-arc open loop.",
+      "hero": false,
+      "claim_ids": []
+    }
+  ],
+  "recompute_note": "Per-section still_cuts/depth_cuts added so preflight_render_gate.py can recompute depth share from cut_plan. Sums match cut_plan_totals (still_cuts 324, depth_cuts 239 -> 73.8% of still cuts depth-treated; 45.3% of all cuts). Actual render (hinders_film.json) delivers 122 depth of 271 img cuts = 45% (film_crosscheck), both >= 40% floor."
+}

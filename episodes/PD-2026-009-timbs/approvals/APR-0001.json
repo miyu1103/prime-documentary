@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-009-timbs",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T02:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T02:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner delegated topic selection to Claude and approved proceeding with EP9 (civil forfeiture / Timbs v. Indiana). Content/direction sign-off bound to content_hash sha256:6d3c055f01b9b14ec62c0d73a4784bab6392360527bb3dc9b97b9ec6949d40a8 — re-approval required if the script revision/hash changes (rules/12). Facts web-verified 2026-06-20 against the primary opinion (586 U.S. 146). Carries forward to the verified revision provided no fact or claim changes.",
+  "conditions": [
+    "Capture durable content hashes for SRC-0001/0002/0003/0004 before publish.",
+    "Forfeiture-system + 'policing for profit' claims (CLM-0008/0009) must stay ATTRIBUTED (Institute for Justice / ACLU) with defenders' view shown; keep strictly neutral and non-partisan. Strongly consider an R3 expert pass before publish.",
+    "Describe Tyson Timbs neutrally by role; emphasize no prison; keep drug context modest. Disposition is 'vacated and remanded' (the Court did not itself rule the seizure excessive)."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-009-timbs/03_script/script.annotated.v001.json"
+}

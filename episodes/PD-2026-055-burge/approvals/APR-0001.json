@@ -1,0 +1,24 @@
+{
+ "schema_version": "1.0.0",
+ "approval_id": "APR-0001",
+ "episode_id": "PD-2026-055-burge",
+ "target_type": "edit",
+ "target_id": "acceptance_receipt",
+ "target_revision": "v004",
+ "decision": "approved_with_conditions",
+ "accepted_deviations": [
+  "runtime_band",
+  "script_length",
+  "animation_density",
+  "sound_layers",
+  "caption_format",
+  "retention_cadence",
+  "structure_4part",
+  "preflight_receipt"
+ ],
+ "requested_at": "2026-08-02T16:30:00+09:00",
+ "requested_by": "local-claude-code",
+ "decided_at": "2026-08-02T16:30:00+09:00",
+ "decided_by": "owner",
+ "notes": "Owner reviewed the film and instructed scheduling on 2026-08-02. TWO failures on the earlier receipts were NOT accepted -- they were fixed, and they are absent from v004: (a) arc_nonrepeat claimed 16 cuts reused P01-P06 from EP51/52/53; the plates are different pictures with the same slot name (burge/willingham/morton/norfolk P01.png measured at four distinct sha256 and four distinct byte sizes), and check_arc_nonrepeat.py's slot-name exemption was missing the p## pattern it already had for s###/m##_rife -- fixed in the gate, not waived; (b) thumbnail_ready wanted >= 3 candidates and only 1 existed because --face supplies a single plate, so build_thumbs_ctr_v2.py gained --variant and three candidates were built (NOBODY/BELIEVED, A DOCTOR/SAW IT, BURIED/33 YEARS). Building them exposed a second real defect -- the fit loop bottoms out at 175px and then DREW the overflowing line anyway, shipping 'WROTE IT DO' -- so compose() now refuses and reports the character count that would fit. The eight deviations below are each measured: runtime_band + script_length -- 29:30 by design, the band is the 11.5-12.5 min format; animation_density -- near-still is 2.3% of the body against a 10% ceiling, and the only breach is one 3.3s shot against a 3.0s cap, while motion_energy passes at 47.0 against a floor of 12 and motion_density passes at 2.88 beats/min with 28.1% coverage; sound_layers -- no audio_provenance artifact because build_case_film_audio.py was not the path used, while bgm_present, loudness (-14.0 LUFS) and bgm_ending all pass on the actual bytes; caption_format -- 3 cues of 456 run 7.0-7.9s, and the captions are burned into the render so an SRT edit would desynchronise text from picture; retention_cadence and structure_4part -- script-level, fixable only by re-voicing; preflight_receipt -- this pipeline does not emit that artifact, and the pre-render check that IS wired (probe_receipt, motion/black/freeze on a 90s slice) passed and is bound by film_sha256."
+}

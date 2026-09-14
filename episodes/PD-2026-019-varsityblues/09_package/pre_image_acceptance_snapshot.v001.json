@@ -1,0 +1,59 @@
+{
+  "episode_id": "PD-2026-019-varsityblues",
+  "revision": "v001",
+  "expected_status": "FAIL_until_images_thumbnails_and_final_render_exist",
+  "exit_code": 1,
+  "snapshot": {
+    "check": "final_acceptance",
+    "episode": "PD-2026-019-varsityblues",
+    "render": null,
+    "render_duration_seconds": null,
+    "status": "FAIL",
+    "results": [
+      {
+        "check": "render_present",
+        "ok": false,
+        "hard": true,
+        "reason": "final render not found (looked at None); render the episode's *Premium final before acceptance"
+      },
+      {
+        "check": "voice_is_master",
+        "ok": true,
+        "hard": true,
+        "reason": "master narration present: ['elevenlabs']"
+      },
+      {
+        "check": "captions_final",
+        "ok": true,
+        "hard": true,
+        "reason": "final captions captions.v001.srt (last cue 1652s)"
+      },
+      {
+        "check": "caption_format",
+        "ok": true,
+        "hard": true,
+        "reason": "captions.v001.srt: line/duration/cps within limits"
+      },
+      {
+        "check": "thumbnail_ready",
+        "ok": false,
+        "hard": true,
+        "reason": "0 thumb(s) at 1280x720, selected=NO (need >=3 + selected)"
+      },
+      {
+        "check": "image_resolution",
+        "ok": true,
+        "hard": true,
+        "skipped": true,
+        "reason": "no hero PNGs staged in remotion/public/varsityblues"
+      },
+      {
+        "check": "factory_used",
+        "ok": true,
+        "hard": true,
+        "reason": "64 factory clip(s) staged, referenced_in_composition=True, need >= 1 (1 per 45s)"
+      }
+    ]
+  },
+  "created_at": "2026-06-28T17:42:05.927131+00:00"
+}

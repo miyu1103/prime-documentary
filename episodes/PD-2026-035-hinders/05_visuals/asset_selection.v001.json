@@ -1,0 +1,2216 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "asset_selection",
+  "episode_id": "PD-2026-035-hinders",
+  "revision": "v001",
+  "generated_at": "2026-07-09T14:28:15.117413+00:00",
+  "producer": "claude:preflight-wiring",
+  "inputs": {
+    "annotated_script": "03_script/script.annotated.v001.json",
+    "scene_plan": "04_scenes/scene_plan.v001.json",
+    "remotion_plan": "04_scenes/remotion_plan.v001.json",
+    "render_truth": "remotion/src/data/hinders_film.json",
+    "narration_index": "06_audio/narration_index.v001.json"
+  },
+  "note": "Binds every script span (SPN-0001..SPN-0030) to the visuals it actually receives in the render. AI stills and their per-scene assignment are derived from the real film timeline (narration_index span windows x hinders_film img cuts). All 68 staged images (S001-S068) are covered; images recur across scenes exactly as the film reuses them.",
+  "coverage_summary": {
+    "spans_total": 30,
+    "spans_bound": 30,
+    "distinct_ai_stills": 68,
+    "distinct_motion_figures": 27,
+    "hero_videos": 3
+  },
+  "scene_selection": [
+    {
+      "span_id": "SPN-0001",
+      "scene_id": "S001",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S001-IMG-001",
+          "file": "remotion/public/hinders/img/PD-2026-035-S001-IMG-001.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S001-IMG-001_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S002-IMG-002",
+          "file": "remotion/public/hinders/img/PD-2026-035-S002-IMG-002.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S002-IMG-002_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S003-IMG-003",
+          "file": "remotion/public/hinders/img/PD-2026-035-S003-IMG-003.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S003-IMG-003_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "UNDER $10,000",
+        "NO CRIME. NO CHARGE."
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0002",
+      "scene_id": "S002",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S004-IMG-004",
+          "file": "remotion/public/hinders/img/PD-2026-035-S004-IMG-004.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S004-IMG-004_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S005-IMG-005",
+          "file": "remotion/public/hinders/img/PD-2026-035-S005-IMG-005.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S005-IMG-005_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S006-IMG-006",
+          "file": "remotion/public/hinders/img/PD-2026-035-S006-IMG-006.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S006-IMG-006_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S007-IMG-007",
+          "file": "remotion/public/hinders/img/PD-2026-035-S007-IMG-007.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S007-IMG-007_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S008-IMG-008",
+          "file": "remotion/public/hinders/img/PD-2026-035-S008-IMG-008.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S008-IMG-008_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S009-IMG-009",
+          "file": "remotion/public/hinders/img/PD-2026-035-S009-IMG-009.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S009-IMG-009_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S010-IMG-010",
+          "file": "remotion/public/hinders/img/PD-2026-035-S010-IMG-010.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S010-IMG-010_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S011-IMG-011",
+          "file": "remotion/public/hinders/img/PD-2026-035-S011-IMG-011.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S011-IMG-011_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S012-IMG-012",
+          "file": "remotion/public/hinders/img/PD-2026-035-S012-IMG-012.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S012-IMG-012_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "FOLLOWING THE RULE."
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0003",
+      "scene_id": "S003",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S013-IMG-013",
+          "file": "remotion/public/hinders/img/PD-2026-035-S013-IMG-013.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S013-IMG-013_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S014-IMG-014",
+          "file": "remotion/public/hinders/img/PD-2026-035-S014-IMG-014.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S014-IMG-014_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S015-IMG-015",
+          "file": "remotion/public/hinders/img/PD-2026-035-S015-IMG-015.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S015-IMG-015_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S016-IMG-016",
+          "file": "remotion/public/hinders/img/PD-2026-035-S016-IMG-016.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S016-IMG-016_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S017-IMG-017",
+          "file": "remotion/public/hinders/img/PD-2026-035-S017-IMG-017.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S017-IMG-017_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S018-IMG-018",
+          "file": "remotion/public/hinders/img/PD-2026-035-S018-IMG-018.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S018-IMG-018_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S019-IMG-019",
+          "file": "remotion/public/hinders/img/PD-2026-035-S019-IMG-019.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S019-IMG-019_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S020-IMG-020",
+          "file": "remotion/public/hinders/img/PD-2026-035-S020-IMG-020.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S020-IMG-020_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S021-IMG-021",
+          "file": "remotion/public/hinders/img/PD-2026-035-S021-IMG-021.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S021-IMG-021_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F1",
+          "component": "NumberTicker"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "38 YEARS",
+        "MRS. LADY'S"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0004",
+      "scene_id": "S004",
+      "primary_visual": "hero_video",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S022-IMG-022",
+          "file": "remotion/public/hinders/img/PD-2026-035-S022-IMG-022.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S022-IMG-022_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S023-IMG-023",
+          "file": "remotion/public/hinders/img/PD-2026-035-S023-IMG-023.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S023-IMG-023_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S024-IMG-024",
+          "file": "remotion/public/hinders/img/PD-2026-035-S024-IMG-024.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S024-IMG-024_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S025-IMG-025",
+          "file": "remotion/public/hinders/img/PD-2026-035-S025-IMG-025.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S025-IMG-025_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S026-IMG-026",
+          "file": "remotion/public/hinders/img/PD-2026-035-S026-IMG-026.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S026-IMG-026_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F2",
+          "component": "RouteMap"
+        }
+      ],
+      "factory_candidates": [
+        {
+          "kind": "hero_video",
+          "src": "hinders/hero_bsa_flow.mp4"
+        }
+      ],
+      "on_screen_text": [
+        "THE BANK FILES THIS — NOT YOU",
+        "1970"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0005",
+      "scene_id": "S005",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S027-IMG-027",
+          "file": "remotion/public/hinders/img/PD-2026-035-S027-IMG-027.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S027-IMG-027_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S028-IMG-028",
+          "file": "remotion/public/hinders/img/PD-2026-035-S028-IMG-028.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S028-IMG-028_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S029-IMG-029",
+          "file": "remotion/public/hinders/img/PD-2026-035-S029-IMG-029.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S029-IMG-029_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S030-IMG-030",
+          "file": "remotion/public/hinders/img/PD-2026-035-S030-IMG-030.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S030-IMG-030_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S031-IMG-031",
+          "file": "remotion/public/hinders/img/PD-2026-035-S031-IMG-031.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S031-IMG-031_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S032-IMG-032",
+          "file": "remotion/public/hinders/img/PD-2026-035-S032-IMG-032.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S032-IMG-032_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S033-IMG-033",
+          "file": "remotion/public/hinders/img/PD-2026-035-S033-IMG-033.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S033-IMG-033_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S034-IMG-034",
+          "file": "remotion/public/hinders/img/PD-2026-035-S034-IMG-034.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S034-IMG-034_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F2b",
+          "component": "CaseTimeline"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "1970 -> 1986",
+        "KEEPING IT SMALL = THE CRIME (§5324)"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0006",
+      "scene_id": "S006",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S035-IMG-035",
+          "file": "remotion/public/hinders/img/PD-2026-035-S035-IMG-035.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S035-IMG-035_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S036-IMG-036",
+          "file": "remotion/public/hinders/img/PD-2026-035-S036-IMG-036.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S036-IMG-036_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S037-IMG-037",
+          "file": "remotion/public/hinders/img/PD-2026-035-S037-IMG-037.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S037-IMG-037_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S038-IMG-038",
+          "file": "remotion/public/hinders/img/PD-2026-035-S038-IMG-038.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S038-IMG-038_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S039-IMG-039",
+          "file": "remotion/public/hinders/img/PD-2026-035-S039-IMG-039.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S039-IMG-039_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S040-IMG-040",
+          "file": "remotion/public/hinders/img/PD-2026-035-S040-IMG-040.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S040-IMG-040_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S041-IMG-041",
+          "file": "remotion/public/hinders/img/PD-2026-035-S041-IMG-041.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S041-IMG-041_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S042-IMG-042",
+          "file": "remotion/public/hinders/img/PD-2026-035-S042-IMG-042.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S042-IMG-042_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S043-IMG-043",
+          "file": "remotion/public/hinders/img/PD-2026-035-S043-IMG-043.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S043-IMG-043_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S044-IMG-044",
+          "file": "remotion/public/hinders/img/PD-2026-035-S044-IMG-044.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S044-IMG-044_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F2b",
+          "component": "CaseTimeline"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "STRUCTURING"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0007",
+      "scene_id": "S007",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S045-IMG-045",
+          "file": "remotion/public/hinders/img/PD-2026-035-S045-IMG-045.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S045-IMG-045_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S046-IMG-046",
+          "file": "remotion/public/hinders/img/PD-2026-035-S046-IMG-046.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S046-IMG-046_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S047-IMG-047",
+          "file": "remotion/public/hinders/img/PD-2026-035-S047-IMG-047.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S047-IMG-047_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S048-IMG-048",
+          "file": "remotion/public/hinders/img/PD-2026-035-S048-IMG-048.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S048-IMG-048_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S049-IMG-049",
+          "file": "remotion/public/hinders/img/PD-2026-035-S049-IMG-049.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S049-IMG-049_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S050-IMG-050",
+          "file": "remotion/public/hinders/img/PD-2026-035-S050-IMG-050.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S050-IMG-050_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S051-IMG-051",
+          "file": "remotion/public/hinders/img/PD-2026-035-S051-IMG-051.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S051-IMG-051_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S052-IMG-052",
+          "file": "remotion/public/hinders/img/PD-2026-035-S052-IMG-052.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S052-IMG-052_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S053-IMG-053",
+          "file": "remotion/public/hinders/img/PD-2026-035-S053-IMG-053.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S053-IMG-053_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S054-IMG-054",
+          "file": "remotion/public/hinders/img/PD-2026-035-S054-IMG-054.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S054-IMG-054_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S055-IMG-055",
+          "file": "remotion/public/hinders/img/PD-2026-035-S055-IMG-055.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S055-IMG-055_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S056-IMG-056",
+          "file": "remotion/public/hinders/img/PD-2026-035-S056-IMG-056.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S056-IMG-056_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F3",
+          "component": "ProbableCauseMeter"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "$10,000 REPORTING THRESHOLD",
+        "a plan?"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0008",
+      "scene_id": "S008",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S057-IMG-057",
+          "file": "remotion/public/hinders/img/PD-2026-035-S057-IMG-057.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S057-IMG-057_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S058-IMG-058",
+          "file": "remotion/public/hinders/img/PD-2026-035-S058-IMG-058.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S058-IMG-058_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S059-IMG-059",
+          "file": "remotion/public/hinders/img/PD-2026-035-S059-IMG-059.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S059-IMG-059_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S060-IMG-060",
+          "file": "remotion/public/hinders/img/PD-2026-035-S060-IMG-060.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S060-IMG-060_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S061-IMG-061",
+          "file": "remotion/public/hinders/img/PD-2026-035-S061-IMG-061.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S061-IMG-061_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F4",
+          "component": "ProbableCauseMeter"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "THE LAW WAS WATCHING THE ENTIRE TIME"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0009",
+      "scene_id": "S009",
+      "primary_visual": "hero_video",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S062-IMG-062",
+          "file": "remotion/public/hinders/img/PD-2026-035-S062-IMG-062.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S062-IMG-062_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S063-IMG-063",
+          "file": "remotion/public/hinders/img/PD-2026-035-S063-IMG-063.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S063-IMG-063_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S064-IMG-064",
+          "file": "remotion/public/hinders/img/PD-2026-035-S064-IMG-064.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S064-IMG-064_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S065-IMG-065",
+          "file": "remotion/public/hinders/img/PD-2026-035-S065-IMG-065.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S065-IMG-065_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S066-IMG-066",
+          "file": "remotion/public/hinders/img/PD-2026-035-S066-IMG-066.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S066-IMG-066_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F5",
+          "component": "NumberTicker"
+        }
+      ],
+      "factory_candidates": [
+        {
+          "kind": "hero_video",
+          "src": "hinders/hero_frozen_account.mp4"
+        }
+      ],
+      "on_screen_text": [
+        "$32,820.56",
+        "SEIZED"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0010",
+      "scene_id": "S010",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S001-IMG-001",
+          "file": "remotion/public/hinders/img/PD-2026-035-S001-IMG-001.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S001-IMG-001_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S002-IMG-002",
+          "file": "remotion/public/hinders/img/PD-2026-035-S002-IMG-002.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S002-IMG-002_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S003-IMG-003",
+          "file": "remotion/public/hinders/img/PD-2026-035-S003-IMG-003.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S003-IMG-003_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S067-IMG-067",
+          "file": "remotion/public/hinders/img/PD-2026-035-S067-IMG-067.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S067-IMG-067_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S068-IMG-068",
+          "file": "remotion/public/hinders/img/PD-2026-035-S068-IMG-068.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S068-IMG-068_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "CHARGES: NONE"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0011",
+      "scene_id": "S011",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S004-IMG-004",
+          "file": "remotion/public/hinders/img/PD-2026-035-S004-IMG-004.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S004-IMG-004_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S005-IMG-005",
+          "file": "remotion/public/hinders/img/PD-2026-035-S005-IMG-005.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S005-IMG-005_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S006-IMG-006",
+          "file": "remotion/public/hinders/img/PD-2026-035-S006-IMG-006.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S006-IMG-006_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S007-IMG-007",
+          "file": "remotion/public/hinders/img/PD-2026-035-S007-IMG-007.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S007-IMG-007_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S008-IMG-008",
+          "file": "remotion/public/hinders/img/PD-2026-035-S008-IMG-008.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S008-IMG-008_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S009-IMG-009",
+          "file": "remotion/public/hinders/img/PD-2026-035-S009-IMG-009.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S009-IMG-009_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S010-IMG-010",
+          "file": "remotion/public/hinders/img/PD-2026-035-S010-IMG-010.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S010-IMG-010_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S011-IMG-011",
+          "file": "remotion/public/hinders/img/PD-2026-035-S011-IMG-011.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S011-IMG-011_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S012-IMG-012",
+          "file": "remotion/public/hinders/img/PD-2026-035-S012-IMG-012.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S012-IMG-012_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S013-IMG-013",
+          "file": "remotion/public/hinders/img/PD-2026-035-S013-IMG-013.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S013-IMG-013_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S014-IMG-014",
+          "file": "remotion/public/hinders/img/PD-2026-035-S014-IMG-014.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S014-IMG-014_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S015-IMG-015",
+          "file": "remotion/public/hinders/img/PD-2026-035-S015-IMG-015.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S015-IMG-015_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S016-IMG-016",
+          "file": "remotion/public/hinders/img/PD-2026-035-S016-IMG-016.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S016-IMG-016_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S017-IMG-017",
+          "file": "remotion/public/hinders/img/PD-2026-035-S017-IMG-017.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S017-IMG-017_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F6",
+          "component": "CitationLowerThird"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "UNITED STATES v. $32,820.56 IN U.S. CURRENCY"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0012",
+      "scene_id": "S012",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S018-IMG-018",
+          "file": "remotion/public/hinders/img/PD-2026-035-S018-IMG-018.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S018-IMG-018_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S019-IMG-019",
+          "file": "remotion/public/hinders/img/PD-2026-035-S019-IMG-019.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S019-IMG-019_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S020-IMG-020",
+          "file": "remotion/public/hinders/img/PD-2026-035-S020-IMG-020.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S020-IMG-020_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S021-IMG-021",
+          "file": "remotion/public/hinders/img/PD-2026-035-S021-IMG-021.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S021-IMG-021_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S022-IMG-022",
+          "file": "remotion/public/hinders/img/PD-2026-035-S022-IMG-022.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S022-IMG-022_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S023-IMG-023",
+          "file": "remotion/public/hinders/img/PD-2026-035-S023-IMG-023.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S023-IMG-023_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S024-IMG-024",
+          "file": "remotion/public/hinders/img/PD-2026-035-S024-IMG-024.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S024-IMG-024_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S025-IMG-025",
+          "file": "remotion/public/hinders/img/PD-2026-035-S025-IMG-025.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S025-IMG-025_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F5b",
+          "component": "ProbableCauseMeter"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "PROVE IT INNOCENT"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0013",
+      "scene_id": "S013",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S026-IMG-026",
+          "file": "remotion/public/hinders/img/PD-2026-035-S026-IMG-026.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S026-IMG-026_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S027-IMG-027",
+          "file": "remotion/public/hinders/img/PD-2026-035-S027-IMG-027.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S027-IMG-027_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S028-IMG-028",
+          "file": "remotion/public/hinders/img/PD-2026-035-S028-IMG-028.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S028-IMG-028_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S029-IMG-029",
+          "file": "remotion/public/hinders/img/PD-2026-035-S029-IMG-029.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S029-IMG-029_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F7",
+          "component": "ActTitle"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "SEIZED -> LAWYER -> COSTS -> WALK AWAY -> PERMANENT"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0014",
+      "scene_id": "S014",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S030-IMG-030",
+          "file": "remotion/public/hinders/img/PD-2026-035-S030-IMG-030.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S030-IMG-030_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S031-IMG-031",
+          "file": "remotion/public/hinders/img/PD-2026-035-S031-IMG-031.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S031-IMG-031_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S032-IMG-032",
+          "file": "remotion/public/hinders/img/PD-2026-035-S032-IMG-032.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S032-IMG-032_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S033-IMG-033",
+          "file": "remotion/public/hinders/img/PD-2026-035-S033-IMG-033.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S033-IMG-033_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S034-IMG-034",
+          "file": "remotion/public/hinders/img/PD-2026-035-S034-IMG-034.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S034-IMG-034_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S035-IMG-035",
+          "file": "remotion/public/hinders/img/PD-2026-035-S035-IMG-035.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S035-IMG-035_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S036-IMG-036",
+          "file": "remotion/public/hinders/img/PD-2026-035-S036-IMG-036.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S036-IMG-036_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S037-IMG-037",
+          "file": "remotion/public/hinders/img/PD-2026-035-S037-IMG-037.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S037-IMG-037_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S038-IMG-038",
+          "file": "remotion/public/hinders/img/PD-2026-035-S038-IMG-038.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S038-IMG-038_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S039-IMG-039",
+          "file": "remotion/public/hinders/img/PD-2026-035-S039-IMG-039.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S039-IMG-039_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S040-IMG-040",
+          "file": "remotion/public/hinders/img/PD-2026-035-S040-IMG-040.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S040-IMG-040_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S041-IMG-041",
+          "file": "remotion/public/hinders/img/PD-2026-035-S041-IMG-041.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S041-IMG-041_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S042-IMG-042",
+          "file": "remotion/public/hinders/img/PD-2026-035-S042-IMG-042.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S042-IMG-042_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S043-IMG-043",
+          "file": "remotion/public/hinders/img/PD-2026-035-S043-IMG-043.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S043-IMG-043_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F8",
+          "component": "ProbableCauseMeter"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "STRUCTURING SEIZURES",
+        "coming"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0015",
+      "scene_id": "S015",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S044-IMG-044",
+          "file": "remotion/public/hinders/img/PD-2026-035-S044-IMG-044.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S044-IMG-044_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S045-IMG-045",
+          "file": "remotion/public/hinders/img/PD-2026-035-S045-IMG-045.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S045-IMG-045_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S046-IMG-046",
+          "file": "remotion/public/hinders/img/PD-2026-035-S046-IMG-046.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S046-IMG-046_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S047-IMG-047",
+          "file": "remotion/public/hinders/img/PD-2026-035-S047-IMG-047.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S047-IMG-047_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S048-IMG-048",
+          "file": "remotion/public/hinders/img/PD-2026-035-S048-IMG-048.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S048-IMG-048_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S049-IMG-049",
+          "file": "remotion/public/hinders/img/PD-2026-035-S049-IMG-049.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S049-IMG-049_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F9",
+          "component": "ActTitle"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "NO THEFT / NO DRUGS / NO VICTIM"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0016",
+      "scene_id": "S016",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S050-IMG-050",
+          "file": "remotion/public/hinders/img/PD-2026-035-S050-IMG-050.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S050-IMG-050_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S051-IMG-051",
+          "file": "remotion/public/hinders/img/PD-2026-035-S051-IMG-051.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S051-IMG-051_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S052-IMG-052",
+          "file": "remotion/public/hinders/img/PD-2026-035-S052-IMG-052.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S052-IMG-052_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S053-IMG-053",
+          "file": "remotion/public/hinders/img/PD-2026-035-S053-IMG-053.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S053-IMG-053_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S054-IMG-054",
+          "file": "remotion/public/hinders/img/PD-2026-035-S054-IMG-054.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S054-IMG-054_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S055-IMG-055",
+          "file": "remotion/public/hinders/img/PD-2026-035-S055-IMG-055.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S055-IMG-055_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S056-IMG-056",
+          "file": "remotion/public/hinders/img/PD-2026-035-S056-IMG-056.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S056-IMG-056_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F10",
+          "component": "QuoteCard"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "LAW LETS I.R.S. SEIZE ACCOUNTS ON SUSPICION, NO CRIME REQUIRED",
+        "OCT 25, 2014"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0017",
+      "scene_id": "S017",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S057-IMG-057",
+          "file": "remotion/public/hinders/img/PD-2026-035-S057-IMG-057.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S057-IMG-057_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S058-IMG-058",
+          "file": "remotion/public/hinders/img/PD-2026-035-S058-IMG-058.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S058-IMG-058_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S059-IMG-059",
+          "file": "remotion/public/hinders/img/PD-2026-035-S059-IMG-059.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S059-IMG-059_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S060-IMG-060",
+          "file": "remotion/public/hinders/img/PD-2026-035-S060-IMG-060.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S060-IMG-060_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S061-IMG-061",
+          "file": "remotion/public/hinders/img/PD-2026-035-S061-IMG-061.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S061-IMG-061_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S062-IMG-062",
+          "file": "remotion/public/hinders/img/PD-2026-035-S062-IMG-062.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S062-IMG-062_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S063-IMG-063",
+          "file": "remotion/public/hinders/img/PD-2026-035-S063-IMG-063.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S063-IMG-063_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S064-IMG-064",
+          "file": "remotion/public/hinders/img/PD-2026-035-S064-IMG-064.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S064-IMG-064_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S065-IMG-065",
+          "file": "remotion/public/hinders/img/PD-2026-035-S065-IMG-065.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S065-IMG-065_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S066-IMG-066",
+          "file": "remotion/public/hinders/img/PD-2026-035-S066-IMG-066.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S066-IMG-066_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F11",
+          "component": "CaseTimeline"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "POLICY CHANGE — LEGAL-SOURCE CASES",
+        "DISMISSED / FUNDS RETURNED",
+        "On paper"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0018",
+      "scene_id": "S018",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S001-IMG-001",
+          "file": "remotion/public/hinders/img/PD-2026-035-S001-IMG-001.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S001-IMG-001_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S002-IMG-002",
+          "file": "remotion/public/hinders/img/PD-2026-035-S002-IMG-002.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S002-IMG-002_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S003-IMG-003",
+          "file": "remotion/public/hinders/img/PD-2026-035-S003-IMG-003.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S003-IMG-003_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S004-IMG-004",
+          "file": "remotion/public/hinders/img/PD-2026-035-S004-IMG-004.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S004-IMG-004_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S005-IMG-005",
+          "file": "remotion/public/hinders/img/PD-2026-035-S005-IMG-005.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S005-IMG-005_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S006-IMG-006",
+          "file": "remotion/public/hinders/img/PD-2026-035-S006-IMG-006.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S006-IMG-006_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S007-IMG-007",
+          "file": "remotion/public/hinders/img/PD-2026-035-S007-IMG-007.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S007-IMG-007_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S008-IMG-008",
+          "file": "remotion/public/hinders/img/PD-2026-035-S008-IMG-008.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S008-IMG-008_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S009-IMG-009",
+          "file": "remotion/public/hinders/img/PD-2026-035-S009-IMG-009.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S009-IMG-009_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S010-IMG-010",
+          "file": "remotion/public/hinders/img/PD-2026-035-S010-IMG-010.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S010-IMG-010_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S011-IMG-011",
+          "file": "remotion/public/hinders/img/PD-2026-035-S011-IMG-011.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S011-IMG-011_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S012-IMG-012",
+          "file": "remotion/public/hinders/img/PD-2026-035-S012-IMG-012.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S012-IMG-012_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S013-IMG-013",
+          "file": "remotion/public/hinders/img/PD-2026-035-S013-IMG-013.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S013-IMG-013_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S014-IMG-014",
+          "file": "remotion/public/hinders/img/PD-2026-035-S014-IMG-014.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S014-IMG-014_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S015-IMG-015",
+          "file": "remotion/public/hinders/img/PD-2026-035-S015-IMG-015.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S015-IMG-015_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S016-IMG-016",
+          "file": "remotion/public/hinders/img/PD-2026-035-S016-IMG-016.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S016-IMG-016_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S067-IMG-067",
+          "file": "remotion/public/hinders/img/PD-2026-035-S067-IMG-067.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S067-IMG-067_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S068-IMG-068",
+          "file": "remotion/public/hinders/img/PD-2026-035-S068-IMG-068.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S068-IMG-068_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F12",
+          "component": "ProbableCauseMeter"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "WITHOUT PREJUDICE"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0019",
+      "scene_id": "S019",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S017-IMG-017",
+          "file": "remotion/public/hinders/img/PD-2026-035-S017-IMG-017.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S017-IMG-017_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S018-IMG-018",
+          "file": "remotion/public/hinders/img/PD-2026-035-S018-IMG-018.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S018-IMG-018_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F13",
+          "component": "CitationLowerThird"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "AGENCY POLICY — NOT LAW"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0020",
+      "scene_id": "S020",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S019-IMG-019",
+          "file": "remotion/public/hinders/img/PD-2026-035-S019-IMG-019.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S019-IMG-019_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S020-IMG-020",
+          "file": "remotion/public/hinders/img/PD-2026-035-S020-IMG-020.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S020-IMG-020_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S021-IMG-021",
+          "file": "remotion/public/hinders/img/PD-2026-035-S021-IMG-021.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S021-IMG-021_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S022-IMG-022",
+          "file": "remotion/public/hinders/img/PD-2026-035-S022-IMG-022.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S022-IMG-022_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S023-IMG-023",
+          "file": "remotion/public/hinders/img/PD-2026-035-S023-IMG-023.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S023-IMG-023_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S024-IMG-024",
+          "file": "remotion/public/hinders/img/PD-2026-035-S024-IMG-024.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S024-IMG-024_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S025-IMG-025",
+          "file": "remotion/public/hinders/img/PD-2026-035-S025-IMG-025.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S025-IMG-025_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S026-IMG-026",
+          "file": "remotion/public/hinders/img/PD-2026-035-S026-IMG-026.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S026-IMG-026_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S027-IMG-027",
+          "file": "remotion/public/hinders/img/PD-2026-035-S027-IMG-027.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S027-IMG-027_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S028-IMG-028",
+          "file": "remotion/public/hinders/img/PD-2026-035-S028-IMG-028.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S028-IMG-028_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S029-IMG-029",
+          "file": "remotion/public/hinders/img/PD-2026-035-S029-IMG-029.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S029-IMG-029_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S030-IMG-030",
+          "file": "remotion/public/hinders/img/PD-2026-035-S030-IMG-030.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S030-IMG-030_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S031-IMG-031",
+          "file": "remotion/public/hinders/img/PD-2026-035-S031-IMG-031.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S031-IMG-031_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S032-IMG-032",
+          "file": "remotion/public/hinders/img/PD-2026-035-S032-IMG-032.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S032-IMG-032_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S033-IMG-033",
+          "file": "remotion/public/hinders/img/PD-2026-035-S033-IMG-033.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S033-IMG-033_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S034-IMG-034",
+          "file": "remotion/public/hinders/img/PD-2026-035-S034-IMG-034.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S034-IMG-034_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S035-IMG-035",
+          "file": "remotion/public/hinders/img/PD-2026-035-S035-IMG-035.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S035-IMG-035_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S036-IMG-036",
+          "file": "remotion/public/hinders/img/PD-2026-035-S036-IMG-036.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S036-IMG-036_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S037-IMG-037",
+          "file": "remotion/public/hinders/img/PD-2026-035-S037-IMG-037.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S037-IMG-037_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S038-IMG-038",
+          "file": "remotion/public/hinders/img/PD-2026-035-S038-IMG-038.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S038-IMG-038_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S039-IMG-039",
+          "file": "remotion/public/hinders/img/PD-2026-035-S039-IMG-039.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S039-IMG-039_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "THE END?"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0021",
+      "scene_id": "S021",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S040-IMG-040",
+          "file": "remotion/public/hinders/img/PD-2026-035-S040-IMG-040.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S040-IMG-040_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S041-IMG-041",
+          "file": "remotion/public/hinders/img/PD-2026-035-S041-IMG-041.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S041-IMG-041_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S042-IMG-042",
+          "file": "remotion/public/hinders/img/PD-2026-035-S042-IMG-042.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S042-IMG-042_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F14",
+          "component": "PinDropMap"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "$107,702.66 SEIZED",
+        "301 DEPOSITS",
+        "~$2M / 3 YRS"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0022",
+      "scene_id": "S022",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S043-IMG-043",
+          "file": "remotion/public/hinders/img/PD-2026-035-S043-IMG-043.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S043-IMG-043_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S044-IMG-044",
+          "file": "remotion/public/hinders/img/PD-2026-035-S044-IMG-044.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S044-IMG-044_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S045-IMG-045",
+          "file": "remotion/public/hinders/img/PD-2026-035-S045-IMG-045.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S045-IMG-045_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S046-IMG-046",
+          "file": "remotion/public/hinders/img/PD-2026-035-S046-IMG-046.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S046-IMG-046_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S047-IMG-047",
+          "file": "remotion/public/hinders/img/PD-2026-035-S047-IMG-047.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S047-IMG-047_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S048-IMG-048",
+          "file": "remotion/public/hinders/img/PD-2026-035-S048-IMG-048.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S048-IMG-048_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S049-IMG-049",
+          "file": "remotion/public/hinders/img/PD-2026-035-S049-IMG-049.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S049-IMG-049_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F14b",
+          "component": "NumberTicker"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "301 DEPOSITS",
+        "SAME LAW / SAME CLAIM / ?"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0023",
+      "scene_id": "S023",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S050-IMG-050",
+          "file": "remotion/public/hinders/img/PD-2026-035-S050-IMG-050.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S050-IMG-050_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S051-IMG-051",
+          "file": "remotion/public/hinders/img/PD-2026-035-S051-IMG-051.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S051-IMG-051_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S052-IMG-052",
+          "file": "remotion/public/hinders/img/PD-2026-035-S052-IMG-052.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S052-IMG-052_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S053-IMG-053",
+          "file": "remotion/public/hinders/img/PD-2026-035-S053-IMG-053.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S053-IMG-053_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S054-IMG-054",
+          "file": "remotion/public/hinders/img/PD-2026-035-S054-IMG-054.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S054-IMG-054_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S055-IMG-055",
+          "file": "remotion/public/hinders/img/PD-2026-035-S055-IMG-055.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S055-IMG-055_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S056-IMG-056",
+          "file": "remotion/public/hinders/img/PD-2026-035-S056-IMG-056.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S056-IMG-056_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S057-IMG-057",
+          "file": "remotion/public/hinders/img/PD-2026-035-S057-IMG-057.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S057-IMG-057_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S058-IMG-058",
+          "file": "remotion/public/hinders/img/PD-2026-035-S058-IMG-058.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S058-IMG-058_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S059-IMG-059",
+          "file": "remotion/public/hinders/img/PD-2026-035-S059-IMG-059.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S059-IMG-059_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S060-IMG-060",
+          "file": "remotion/public/hinders/img/PD-2026-035-S060-IMG-060.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S060-IMG-060_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S061-IMG-061",
+          "file": "remotion/public/hinders/img/PD-2026-035-S061-IMG-061.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S061-IMG-061_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S062-IMG-062",
+          "file": "remotion/public/hinders/img/PD-2026-035-S062-IMG-062.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S062-IMG-062_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S063-IMG-063",
+          "file": "remotion/public/hinders/img/PD-2026-035-S063-IMG-063.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S063-IMG-063_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F14c",
+          "component": "ActTitle"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "FOR SALE"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0024",
+      "scene_id": "S024",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S001-IMG-001",
+          "file": "remotion/public/hinders/img/PD-2026-035-S001-IMG-001.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S001-IMG-001_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S002-IMG-002",
+          "file": "remotion/public/hinders/img/PD-2026-035-S002-IMG-002.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S002-IMG-002_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S003-IMG-003",
+          "file": "remotion/public/hinders/img/PD-2026-035-S003-IMG-003.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S003-IMG-003_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S004-IMG-004",
+          "file": "remotion/public/hinders/img/PD-2026-035-S004-IMG-004.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S004-IMG-004_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S064-IMG-064",
+          "file": "remotion/public/hinders/img/PD-2026-035-S064-IMG-064.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S064-IMG-064_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S065-IMG-065",
+          "file": "remotion/public/hinders/img/PD-2026-035-S065-IMG-065.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S065-IMG-065_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S066-IMG-066",
+          "file": "remotion/public/hinders/img/PD-2026-035-S066-IMG-066.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S066-IMG-066_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S067-IMG-067",
+          "file": "remotion/public/hinders/img/PD-2026-035-S067-IMG-067.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S067-IMG-067_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S068-IMG-068",
+          "file": "remotion/public/hinders/img/PD-2026-035-S068-IMG-068.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S068-IMG-068_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F15",
+          "component": "NumberTicker"
+        },
+        {
+          "figure": "F15b",
+          "component": "NumberTicker"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "278 TRACEABLE CASES",
+        "91% LEGAL SOURCE",
+        "231 CASES / $17.1M"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0025",
+      "scene_id": "S025",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S005-IMG-005",
+          "file": "remotion/public/hinders/img/PD-2026-035-S005-IMG-005.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S005-IMG-005_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S006-IMG-006",
+          "file": "remotion/public/hinders/img/PD-2026-035-S006-IMG-006.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S006-IMG-006_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S007-IMG-007",
+          "file": "remotion/public/hinders/img/PD-2026-035-S007-IMG-007.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S007-IMG-007_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S008-IMG-008",
+          "file": "remotion/public/hinders/img/PD-2026-035-S008-IMG-008.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S008-IMG-008_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S009-IMG-009",
+          "file": "remotion/public/hinders/img/PD-2026-035-S009-IMG-009.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S009-IMG-009_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S010-IMG-010",
+          "file": "remotion/public/hinders/img/PD-2026-035-S010-IMG-010.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S010-IMG-010_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S011-IMG-011",
+          "file": "remotion/public/hinders/img/PD-2026-035-S011-IMG-011.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S011-IMG-011_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F16",
+          "component": "CitationLowerThird"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "NOT SUBSTANTIALLY PREVAILED -> NO FEES",
+        "2016"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0026",
+      "scene_id": "S026",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S012-IMG-012",
+          "file": "remotion/public/hinders/img/PD-2026-035-S012-IMG-012.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S012-IMG-012_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S013-IMG-013",
+          "file": "remotion/public/hinders/img/PD-2026-035-S013-IMG-013.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S013-IMG-013_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S014-IMG-014",
+          "file": "remotion/public/hinders/img/PD-2026-035-S014-IMG-014.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S014-IMG-014_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S015-IMG-015",
+          "file": "remotion/public/hinders/img/PD-2026-035-S015-IMG-015.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S015-IMG-015_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S016-IMG-016",
+          "file": "remotion/public/hinders/img/PD-2026-035-S016-IMG-016.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S016-IMG-016_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S017-IMG-017",
+          "file": "remotion/public/hinders/img/PD-2026-035-S017-IMG-017.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S017-IMG-017_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S018-IMG-018",
+          "file": "remotion/public/hinders/img/PD-2026-035-S018-IMG-018.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S018-IMG-018_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S019-IMG-019",
+          "file": "remotion/public/hinders/img/PD-2026-035-S019-IMG-019.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S019-IMG-019_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S020-IMG-020",
+          "file": "remotion/public/hinders/img/PD-2026-035-S020-IMG-020.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S020-IMG-020_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S021-IMG-021",
+          "file": "remotion/public/hinders/img/PD-2026-035-S021-IMG-021.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S021-IMG-021_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S022-IMG-022",
+          "file": "remotion/public/hinders/img/PD-2026-035-S022-IMG-022.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S022-IMG-022_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S023-IMG-023",
+          "file": "remotion/public/hinders/img/PD-2026-035-S023-IMG-023.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S023-IMG-023_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F17b",
+          "component": "ActTitle"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "McLELLAN: FEES + COSTS + INTEREST",
+        "CAROLE: NOTHING"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0027",
+      "scene_id": "S027",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S024-IMG-024",
+          "file": "remotion/public/hinders/img/PD-2026-035-S024-IMG-024.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S024-IMG-024_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S025-IMG-025",
+          "file": "remotion/public/hinders/img/PD-2026-035-S025-IMG-025.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S025-IMG-025_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S026-IMG-026",
+          "file": "remotion/public/hinders/img/PD-2026-035-S026-IMG-026.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S026-IMG-026_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S027-IMG-027",
+          "file": "remotion/public/hinders/img/PD-2026-035-S027-IMG-027.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S027-IMG-027_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S028-IMG-028",
+          "file": "remotion/public/hinders/img/PD-2026-035-S028-IMG-028.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S028-IMG-028_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S029-IMG-029",
+          "file": "remotion/public/hinders/img/PD-2026-035-S029-IMG-029.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S029-IMG-029_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S030-IMG-030",
+          "file": "remotion/public/hinders/img/PD-2026-035-S030-IMG-030.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S030-IMG-030_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S031-IMG-031",
+          "file": "remotion/public/hinders/img/PD-2026-035-S031-IMG-031.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S031-IMG-031_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S032-IMG-032",
+          "file": "remotion/public/hinders/img/PD-2026-035-S032-IMG-032.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S032-IMG-032_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S033-IMG-033",
+          "file": "remotion/public/hinders/img/PD-2026-035-S033-IMG-033.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S033-IMG-033_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S034-IMG-034",
+          "file": "remotion/public/hinders/img/PD-2026-035-S034-IMG-034.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S034-IMG-034_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S035-IMG-035",
+          "file": "remotion/public/hinders/img/PD-2026-035-S035-IMG-035.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S035-IMG-035_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S036-IMG-036",
+          "file": "remotion/public/hinders/img/PD-2026-035-S036-IMG-036.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S036-IMG-036_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S037-IMG-037",
+          "file": "remotion/public/hinders/img/PD-2026-035-S037-IMG-037.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S037-IMG-037_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S038-IMG-038",
+          "file": "remotion/public/hinders/img/PD-2026-035-S038-IMG-038.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S038-IMG-038_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S039-IMG-039",
+          "file": "remotion/public/hinders/img/PD-2026-035-S039-IMG-039.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S039-IMG-039_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S040-IMG-040",
+          "file": "remotion/public/hinders/img/PD-2026-035-S040-IMG-040.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S040-IMG-040_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S041-IMG-041",
+          "file": "remotion/public/hinders/img/PD-2026-035-S041-IMG-041.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S041-IMG-041_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F18",
+          "component": "ActTitle"
+        },
+        {
+          "figure": "F17",
+          "component": "ActTitle"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "STILL ON THE BOOKS",
+        "HEARINGS — 2015"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0028",
+      "scene_id": "S028",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S042-IMG-042",
+          "file": "remotion/public/hinders/img/PD-2026-035-S042-IMG-042.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S042-IMG-042_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S043-IMG-043",
+          "file": "remotion/public/hinders/img/PD-2026-035-S043-IMG-043.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S043-IMG-043_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S044-IMG-044",
+          "file": "remotion/public/hinders/img/PD-2026-035-S044-IMG-044.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S044-IMG-044_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S045-IMG-045",
+          "file": "remotion/public/hinders/img/PD-2026-035-S045-IMG-045.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S045-IMG-045_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S046-IMG-046",
+          "file": "remotion/public/hinders/img/PD-2026-035-S046-IMG-046.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S046-IMG-046_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F19",
+          "component": "CaseTimeline"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "2019 REFORM — SIGNED JULY",
+        "30-DAY HEARING",
+        "LEGAL-SOURCE ACCOUNTS PROTECTED"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0029",
+      "scene_id": "S029",
+      "primary_visual": "hero_video",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S047-IMG-047",
+          "file": "remotion/public/hinders/img/PD-2026-035-S047-IMG-047.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S047-IMG-047_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S048-IMG-048",
+          "file": "remotion/public/hinders/img/PD-2026-035-S048-IMG-048.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S048-IMG-048_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S049-IMG-049",
+          "file": "remotion/public/hinders/img/PD-2026-035-S049-IMG-049.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S049-IMG-049_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S050-IMG-050",
+          "file": "remotion/public/hinders/img/PD-2026-035-S050-IMG-050.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S050-IMG-050_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S051-IMG-051",
+          "file": "remotion/public/hinders/img/PD-2026-035-S051-IMG-051.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S051-IMG-051_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S052-IMG-052",
+          "file": "remotion/public/hinders/img/PD-2026-035-S052-IMG-052.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S052-IMG-052_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S053-IMG-053",
+          "file": "remotion/public/hinders/img/PD-2026-035-S053-IMG-053.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S053-IMG-053_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S054-IMG-054",
+          "file": "remotion/public/hinders/img/PD-2026-035-S054-IMG-054.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S054-IMG-054_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S055-IMG-055",
+          "file": "remotion/public/hinders/img/PD-2026-035-S055-IMG-055.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S055-IMG-055_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S056-IMG-056",
+          "file": "remotion/public/hinders/img/PD-2026-035-S056-IMG-056.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S056-IMG-056_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S057-IMG-057",
+          "file": "remotion/public/hinders/img/PD-2026-035-S057-IMG-057.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S057-IMG-057_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F20",
+          "component": "CitationLowerThird"
+        }
+      ],
+      "factory_candidates": [
+        {
+          "kind": "hero_video",
+          "src": "hinders/hero_carole_after.mp4"
+        }
+      ],
+      "on_screen_text": [
+        "SOLD",
+        "THE HALLWAY IS STILL OPEN"
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    },
+    {
+      "span_id": "SPN-0030",
+      "scene_id": "S030",
+      "primary_visual": "ai_still",
+      "ai_stills": [
+        {
+          "asset_id": "PD-2026-035-S058-IMG-058",
+          "file": "remotion/public/hinders/img/PD-2026-035-S058-IMG-058.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S058-IMG-058_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S059-IMG-059",
+          "file": "remotion/public/hinders/img/PD-2026-035-S059-IMG-059.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S059-IMG-059_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S060-IMG-060",
+          "file": "remotion/public/hinders/img/PD-2026-035-S060-IMG-060.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S060-IMG-060_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S061-IMG-061",
+          "file": "remotion/public/hinders/img/PD-2026-035-S061-IMG-061.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S061-IMG-061_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S062-IMG-062",
+          "file": "remotion/public/hinders/img/PD-2026-035-S062-IMG-062.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S062-IMG-062_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S063-IMG-063",
+          "file": "remotion/public/hinders/img/PD-2026-035-S063-IMG-063.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S063-IMG-063_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S064-IMG-064",
+          "file": "remotion/public/hinders/img/PD-2026-035-S064-IMG-064.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S064-IMG-064_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S065-IMG-065",
+          "file": "remotion/public/hinders/img/PD-2026-035-S065-IMG-065.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S065-IMG-065_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S066-IMG-066",
+          "file": "remotion/public/hinders/img/PD-2026-035-S066-IMG-066.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S066-IMG-066_depth.png",
+          "treatment": "depth"
+        },
+        {
+          "asset_id": "PD-2026-035-S067-IMG-067",
+          "file": "remotion/public/hinders/img/PD-2026-035-S067-IMG-067.png",
+          "depth_map": "remotion/public/hinders/img/PD-2026-035-S067-IMG-067_depth.png",
+          "treatment": "depth"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        {
+          "figure": "F21",
+          "component": "ActTitle"
+        }
+      ],
+      "factory_candidates": [],
+      "on_screen_text": [
+        "WHOSE RULES?",
+        "THAT IS NEXT."
+      ],
+      "rights": "AI-generated (Codex), symbolic reconstruction, no real-person likeness; motion graphics code-rendered in Remotion."
+    }
+  ]
+}

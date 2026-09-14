@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-010-kelo",
+  "revision": "v002",
+  "generated_at": "2026-06-22T00:17:48.276669+00:00",
+  "status": "scheduled",
+  "publish_performed": false,
+  "schedule_performed": false,
+  "upload_target": "youtube_private",
+  "youtube": {
+    "selected_title": "Your Home for a Developer? The Kelo Supreme Court Case",
+    "thumbnail": "episodes/PD-2026-010-kelo/09_package/thumbnail.selected.v002.png",
+    "thumbnail_sha256": "5c1b8e6437980b12d6884b8342a896146bde1fcdb796fd0e6678e161a3f79f94",
+    "synthetic_content_disclosure_required": true,
+    "publish_gate": "owner_approved_scheduled",
+    "planned_public_release_at_jst": "2026-06-25T12:00:00+09:00",
+    "public_schedule_active": true,
+    "scheduled_at_local": "2026-06-25T12:00:00+09:00",
+    "scheduled_at_utc": "2026-06-25T03:00:00Z",
+    "schedule_result": "episodes/PD-2026-010-kelo/09_package/youtube_schedule_result.v002.json"
+  },
+  "render": {
+    "file": "H:\\pd-media\\episodes\\PD-2026-010-kelo\\08_edit\\kelo_premium_v002.mp4",
+    "sha256": "f16bb925df8691c90c96380d0a2f6258c82786a18da12002b31bfb6c84962cc4",
+    "duration_seconds": 640.555,
+    "video": "1920x1080 H.264/libx264, 30fps, yuv420p, CRF 16",
+    "audio": "AAC, narration + BGM + SFX + ambience, ducked",
+    "loudness_probe": {
+      "input_i": -14.0,
+      "input_tp": -1.4,
+      "input_lra": 2.5
+    }
+  },
+  "thumbnail": {
+    "selected_id": "A",
+    "selected_title": "YOUR HOME TAKEN?",
+    "selected_file": "episodes/PD-2026-010-kelo/09_package/thumbnail.selected.v002.png",
+    "selected_sha256": "5c1b8e6437980b12d6884b8342a896146bde1fcdb796fd0e6678e161a3f79f94",
+    "selected_background": "THUMB-02.png",
+    "reason": "Selected. Shorter and more readable than v001, while the enlarged brighter house/wrecking-ball image carries the Kelo-specific private-development threat."
+  },
+  "qc": {
+    "final_qc": "episodes/PD-2026-010-kelo/08_edit/renders/final.v002.qc.json",
+    "status": "PASS",
+    "rights_manifest": "episodes/PD-2026-010-kelo/09_package/rights_manifest.v002.json",
+    "captions": "episodes/PD-2026-010-kelo/08_edit/captions.v002.srt",
+    "thumbnail_candidates": "episodes/PD-2026-010-kelo/09_package/title_thumbnail_candidates.v002.json"
+  },
+  "locked_inputs_unchanged": [
+    "episodes/PD-2026-010-kelo/03_script/script.en.v001.md",
+    "episodes/PD-2026-010-kelo/01_research/claims.v001.json",
+    "episodes/PD-2026-010-kelo/01_research/sources.v001.json"
+  ]
+}

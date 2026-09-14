@@ -1,0 +1,73 @@
+EP67 ramirez — 画像発注 バッチ 12/18（6枚）
+区分: C · the people lane  [HSTYLE]  [R079 – R084]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── この区分だけの追加指定（人物レーン）────────
+
+各プロンプトの先頭 [HSTYLE] は、次の文言に置き換えてください:
+
+photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens
+
+・この24枚のうち9枚は**顔がはっきり写ります。それが狙いです。**
+　ただし全員**架空の他人**です。実在の誰かに似せないでください。
+・カメラ目線にしない。作り笑いをしない。広告のモデル顔にしない。
+
+──────── プロンプト ────────
+
+■ R079.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. An adult's hands and forearms only, opening an envelope at a wooden kitchen table, framed from just above and in front with the head and body entirely out of the frame: BOTH HANDS REST DOWN ON THE TABLE, the left hand flat and holding the envelope steady against the wood with four separate fingers, the right hand also down on the table working a thumb under the flap. Every finger on both hands is distinct with its own nail and its own shadow. The envelope is blank. Morning light from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, hands raised in the air, address on the envelope, letter opener, face
+
+■ R080.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. AN INVENTED, COMPLETELY FICTIONAL man in his forties, in three-quarter profile, seated at an ordinary American kitchen table reading something held low and out of the bottom of the frame: HIS FACE IS VISIBLE AND IN FOCUS, unremarkable, evenly lit by flat window light, the expression neutral and unperformed with the eyes cast downward and NOT DIRECTED AT THE CAMERA. Ordinary short hair, an ordinary plain shirt, no styling, no retouching. The kitchen behind him is soft: cabinets, a kettle, a window Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, looking at the camera, smiling for the camera, model look, retouched skin, studio lighting, celebrity resemblance
+
+■ R081.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. The same ordinary American kitchen, the same table and the same flat morning window light, NOW WITH NOBODY IN IT: the chair he was sitting in stands empty and pushed back at an angle, the table bare in front of it. Same camera position, same height, same lens. Nothing on the table, no person anywhere in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, person, silhouette in the doorway, object on the table
+
+■ R082.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. A hand holding a corded telephone handset clamped against a shoulder and an ear, framed tight from the collarbone up to the jaw ONLY — the chin, the mouth and everything above them are OUTSIDE THE TOP OF THE FRAME AND NOT VISIBLE. The hand steadies the handset from below with the four fingers side by side and separate along its length, each with its own nail, and the thumb apart on the near side. An ordinary shirt collar, ordinary skin, soft interior light from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, face, mouth, chin, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, mobile phone, brand on the handset
+
+■ R083.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. AN INVENTED, COMPLETELY FICTIONAL woman in her thirties at an ordinary office desk, mid-shot from across the desk at seated height: HER FACE IS VISIBLE AND IN FOCUS, plain and unremarkable, LOOKING DOWN AT HER WORK AND NOT AT THE CAMERA, the expression neutral and unperformed. Ordinary work clothes, ordinary hair, no styling and no retouching. Her hands rest down on the desk with the fingers separate. The monitor beside her is turned away. The screen is never legible: it is a single soft bloom of even light with no icons, no windows, no rows, no cursor and nothing that could be read as a document. A plain open-plan office soft behind her Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, looking at the camera, smiling for the camera, model look, retouched skin, headset, lanyard with a printed badge
+
+■ R084.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. A pair of hands at a keyboard in a dim open-plan office, framed from just behind and above the hands with the body out of frame: BOTH PALMS ARE DOWN AND IN CONTACT WITH THE DESK AND THE KEYS, all eight fingers side by side and separate with a line of shadow between each pair and both thumbs clearly apart, the keycaps blank and unmarked. Behind and above the hands, four or five empty desks recede into soft focus and low light. THE SCREEN IS NOT IN THE FRAME Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, letters on the keycaps, hands typing in mid-air, face, person at a far desk in focus
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R079.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

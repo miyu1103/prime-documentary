@@ -1,0 +1,177 @@
+{
+  "episode": "EP49",
+  "slug": "strieff",
+  "case": "Utah v. Strieff, 579 U.S. 232 (2016)",
+  "docket": "14-1373",
+  "decided": "2016-06-20",
+  "sources_master": [
+    "Opinion of the Court (Thomas), Cornell LII: https://www.law.cornell.edu/supremecourt/text/14-1373",
+    "Dissents (Sotomayor; Kagan), same Cornell LII text file",
+    "Slip opinion, supremecourt.gov 14-1373 (403 on direct fetch; verified via Cornell LII + training knowledge)",
+    "Oyez case 2015/14-1373",
+    "US Reports cite 579 U.S. 232"
+  ],
+  "note": "Verified 2026-07-23. WebSearch budget assumed exhausted; verification done by WebFetch on Cornell LII opinion text + training knowledge. Items resting mainly on training knowledge alongside the fetched opinion are marked confidence:medium. IMPORTANT VOTE NOTE: one automated fetch summary said '6-3' but simultaneously listed only 5 majority justices (Thomas + Roberts/Kennedy/Breyer/Alito) plus 3 dissenters = 8 seated justices (Scalia's seat vacant). The correct and record vote is 5-3. Confirmed by lineup + Scalia vacancy.",
+  "ledger": [
+    {
+      "id": "S00",
+      "claim": "Case identity",
+      "detail": "Utah v. Strieff, 579 U.S. 232 (2016), docket 14-1373, decided June 20, 2016. A Fourth Amendment exclusionary-rule case about the attenuation doctrine, on certiorari from the Utah Supreme Court (which had ordered the evidence suppressed).",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373", "Oyez 2015/14-1373"]
+    },
+    {
+      "id": "S01",
+      "claim": "Subject and dignity (R2)",
+      "detail": "Edward Joseph Strieff, Jr. is a living person who was convicted of a drug offense after this case. R2 subject: no face, no likeness, symbols only; do not glorify. The drug reference must stay clinical and minimal. The story is the doctrine and what an illegal stop can now yield, not the man.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (statement of facts)"]
+    },
+    {
+      "id": "S02",
+      "claim": "The anonymous tip and surveillance",
+      "detail": "Police received an anonymous tip reporting 'narcotics activity' at a particular house in South Salt Lake City, Utah. Detective Douglas Fackrell surveilled the house intermittently over about a week and observed visitors making frequent, brief visits, a pattern he associated with drug dealing.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (majority statement of facts)"]
+    },
+    {
+      "id": "S03",
+      "claim": "The stop was ILLEGAL (State conceded; Court agreed)",
+      "detail": "When Strieff left the house on foot, Fackrell detained him in a nearby parking lot to ask what he was doing at the house. This investigatory stop was UNLAWFUL: the State CONCEDED that Fackrell lacked reasonable suspicion for the stop, and the Court proceeded on the premise that the stop was unconstitutional. FRAME PRECISELY: the stop was illegal / the Court did NOT dispute that. The evidence is admitted only despite the illegal stop, via attenuation. NEVER say the stop was legal.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (majority: 'The State conceded ... Officer Fackrell lacked reasonable suspicion')"]
+    },
+    {
+      "id": "S04",
+      "claim": "The pre-existing outstanding warrant (small traffic warrant)",
+      "detail": "During the illegal stop, Fackrell asked for Strieff's identification, relayed it to a police dispatcher, and learned that Strieff had an outstanding arrest warrant for a minor traffic violation. The warrant was valid and PRE-EXISTING (it existed before, and independent of, the unlawful stop). This is the 'intervening circumstance.'",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (majority: outstanding arrest warrant for a traffic violation)"]
+    },
+    {
+      "id": "S05",
+      "claim": "Arrest on the warrant, search incident, methamphetamine (clinical)",
+      "detail": "Fackrell arrested Strieff on the outstanding warrant, then searched him incident to that arrest and found a baggie of methamphetamine and drug paraphernalia. Keep the drug detail minimal and clinical in narration.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (search incident to arrest; methamphetamine and paraphernalia)"]
+    },
+    {
+      "id": "S06",
+      "claim": "The legal question",
+      "detail": "The question was whether the methamphetamine found in the search must be suppressed under the exclusionary rule as the fruit of the unlawful stop, or whether the discovery of the valid pre-existing warrant sufficiently 'attenuated' (broke) the connection between the illegal stop and the evidence so that the evidence is admissible.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (question presented / attenuation analysis)"]
+    },
+    {
+      "id": "S07",
+      "claim": "Exclusionary rule + attenuation as an exception",
+      "detail": "Ordinarily the exclusionary rule requires suppression of evidence obtained by exploiting an unconstitutional stop ('fruit of the poisonous tree'). The attenuation doctrine is an EXCEPTION: evidence is admissible when the connection between the unlawful police conduct and the evidence has become so attenuated as to dissipate the taint. Attenuation is judged by the three Brown v. Illinois factors.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (majority, discussing exclusionary rule and attenuation)"]
+    },
+    {
+      "id": "S08",
+      "claim": "HOLDING (evidence ADMISSIBLE via attenuation)",
+      "detail": "HOLDING: The evidence is ADMISSIBLE. The discovery of a valid, pre-existing, and untainted arrest warrant ATTENUATED the connection between the unconstitutional stop and the evidence seized incident to the arrest, so the exclusionary rule does not require suppression. The stop was still illegal; the warrant broke the causal chain. Do NOT say the stop was legal; the evidence comes in only because of attenuation.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (holding)"]
+    },
+    {
+      "id": "S09",
+      "claim": "The three attenuation factors and how each came out",
+      "detail": "The three Brown v. Illinois factors: (1) TEMPORAL PROXIMITY between the illegal stop and the discovery of evidence, which here favored SUPPRESSION because only minutes passed; (2) the presence of INTERVENING CIRCUMSTANCES, which strongly favored the State because the valid pre-existing warrant was a critical intervening circumstance that broke the chain (the decisive factor); (3) the PURPOSE and FLAGRANCY of the official misconduct, which favored the State because the Court characterized Fackrell's illegality as at most negligent and part of a good-faith, if mistaken, investigation, not purposeful or flagrant. On balance the second and third factors outweighed the first, so the taint was attenuated.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (majority applying the three Brown factors)"]
+    },
+    {
+      "id": "S10",
+      "claim": "Vote 5-3 (Scalia's seat vacant)",
+      "detail": "Decided 5-3. Only eight justices sat: Justice Scalia had died in February 2016 and his seat was vacant. Five in the majority, three in dissent. (Any '6-3' summary is an error; 5 majority + 3 dissent = the 8 seated justices.)",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (lineup)", "Public record: Scalia died Feb 13, 2016"]
+    },
+    {
+      "id": "S11",
+      "claim": "Majority author and lineup",
+      "detail": "Justice Clarence Thomas delivered the opinion of the Court, joined by Chief Justice Roberts and Justices Kennedy, Breyer, and Alito. (Notably Breyer, a member of the Court's liberal wing, joined the majority.)",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (opinion lineup)"]
+    },
+    {
+      "id": "S12",
+      "claim": "Dissent lineup",
+      "detail": "Justice Sotomayor filed a dissenting opinion, joined by Justice Ginsburg as to Parts I, II, and III (Part IV, the 'carceral state' section, was Sotomayor writing for herself alone). Justice Kagan filed a separate dissenting opinion, joined by Justice Ginsburg. Attribute dissent quotes to 'the dissent' neutrally, never to the Court.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (dissent lineup)"]
+    },
+    {
+      "id": "S13",
+      "claim": "Sotomayor 'carceral state' passage (VERBATIM, dissent Part IV, FEATURED / emotional core)",
+      "detail": "VERBATIM (Sotomayor, dissenting): \"This case tells everyone, white and black, guilty and innocent, that an officer can verify your legal status at any time. It says that your body is subject to invasion while courts excuse the violation of your rights. It implies that you are not a citizen of a democracy but the subject of a carceral state, just waiting to be cataloged.\" Attribute to the DISSENT.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (Sotomayor dissent, Part IV; verbatim confirmed on fetch)"]
+    },
+    {
+      "id": "S14",
+      "claim": "Sotomayor 'anyone's dignity' + 'canaries in the coal mine' (VERBATIM, dissent)",
+      "detail": "VERBATIM (Sotomayor, dissenting): \"The white defendant in this case shows that anyone's dignity can be violated in this manner.\" And, closing: \"They are the canaries in the coal mine whose deaths, civil and literal, warn us that no one can breathe in this atmosphere.\" Both attributed to the DISSENT. The first line is the accurate, verbatim way to make the 'this harms everyone, not one group' point.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (Sotomayor dissent; verbatim confirmed on fetch)"]
+    },
+    {
+      "id": "S15",
+      "claim": "'we are all harmed' is NOT a verbatim quote (DO NOT quote it)",
+      "detail": "The exact phrase 'we are all harmed' does NOT appear in Sotomayor's dissent (verified NOT PRESENT on fetch). It is a paraphrase of the sentiment carried by 'The white defendant in this case shows that anyone's dignity can be violated in this manner.' Do NOT present 'we are all harmed' as a verbatim quotation. If the everyone-is-harmed idea is used, either paraphrase it as narration or quote S14 verbatim instead.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 fetch: exact phrase 'we are all harmed' returned NOT PRESENT"]
+    },
+    {
+      "id": "S16",
+      "claim": "Kagan dissent incentive point (VERBATIM, dissent)",
+      "detail": "VERBATIM (Kagan, dissenting): \"The officer's incentive to violate the Constitution thus increases: From here on, he sees potential advantage in stopping individuals without reasonable suspicion—exactly the temptation the exclusionary rule is supposed to remove.\" Kagan's point: because a warrant check can now launder an illegal stop into admissible evidence, the ruling rewards unlawful stops and blunts the deterrent purpose of the exclusionary rule. Attribute to the DISSENT.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 14-1373 (Kagan dissent; verbatim confirmed on fetch)"]
+    },
+    {
+      "id": "S17",
+      "claim": "Detective name",
+      "detail": "The detective who made the stop and arrest was Douglas Fackrell of the South Salt Lake City police. Script may use 'a detective' / 'Detective Fackrell'; first name Douglas is not load-bearing.",
+      "verified": true,
+      "confidence": "medium",
+      "sources": ["Cornell LII 14-1373 (Officer/Detective Fackrell)", "first name Douglas from case record / training (medium)"]
+    },
+    {
+      "id": "S18",
+      "claim": "Procedural posture and disposition",
+      "detail": "The trial court denied suppression; Strieff entered a conditional guilty plea to reduced drug charges, reserving the right to appeal the suppression ruling. The Utah Court of Appeals affirmed; the Utah Supreme Court reversed and ordered the evidence suppressed; the U.S. Supreme Court reversed the Utah Supreme Court, holding the evidence admissible. Not all featured in narration, but supports 'the case reached the Supreme Court' and the final result.",
+      "verified": true,
+      "confidence": "medium",
+      "sources": ["Cornell LII 14-1373 (procedural history)", "Oyez 2015/14-1373 (medium)"]
+    },
+    {
+      "id": "S19",
+      "claim": "Surveillance duration and tip specifics",
+      "detail": "The anonymous tip and roughly week-long intermittent surveillance are recounted in the opinion; exact duration and the tip's precise wording are secondary detail. Keep general ('an anonymous tip', 'watched the house').",
+      "verified": true,
+      "confidence": "medium",
+      "sources": ["Cornell LII 14-1373 (facts; exact duration medium)"]
+    }
+  ]
+}

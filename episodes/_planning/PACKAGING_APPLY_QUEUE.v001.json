@@ -1,0 +1,96 @@
+{
+  "_note": "Deterministic batch-apply queue for the CTR packaging overhaul. Apply TOMORROW after YouTube Data API quota resets (today's quota was exhausted by the research harvest). Each entry: thumbnails.set(thumb) + videos.update(part=snippet, title=title, preserving description/tags/categoryId/language). Live-swap works on scheduled-private AND already-public videos, no re-upload. Verify each thumbnail file exists + <2MB before applying. lech title corrected HER->HIM (owner Leo Lech is male; the $0 was a Takings-Clause/police-power ruling, not qualified immunity).",
+  "created": "2026-07-23",
+  "status": "APPLIED 11/11 2026-07-24 (long-paced)",
+  "entries": [
+    {
+      "ep": "038-kidsforcash",
+      "video_id": "Pmh6h5SfWw4",
+      "publishAt": "2026-07-23",
+      "thumb": "episodes/PD-2026-038-kidsforcash/09_package/thumbnail.face.v001.png",
+      "title": "A Judge Took $2.8 Million to Send Kids to Prison",
+      "thumb_ready": true
+    },
+    {
+      "ep": "039-frazier",
+      "video_id": "X40EbUw5kzQ",
+      "publishAt": "2026-07-24",
+      "thumb": "episodes/PD-2026-039-frazier/09_package/thumbnail.face.v001.png",
+      "title": "Police Are Allowed to Lie to You Until You Confess — Even If You're Innocent",
+      "thumb_ready": true
+    },
+    {
+      "ep": "040-lech",
+      "video_id": "4uuY6G0LmHo",
+      "publishAt": "2026-07-25",
+      "thumb": "episodes/PD-2026-040-lech/09_package/thumbnail.face.v001.png",
+      "title": "Police Destroyed His Home Chasing a Stranger — Then Paid Him Nothing",
+      "thumb_ready": true
+    },
+    {
+      "ep": "041-thompson",
+      "video_id": "OkwHIpI7DkE",
+      "publishAt": "2026-07-26",
+      "thumb": "episodes/PD-2026-041-thompson/09_package/thumbnail.face.v001.png",
+      "title": "They Hid the Evidence That Proved Him Innocent — He Spent 14 Years on Death Row",
+      "thumb_ready": true
+    },
+    {
+      "ep": "042-young",
+      "video_id": "Enok7A7wGBA",
+      "publishAt": "2026-07-27",
+      "thumb": "episodes/PD-2026-042-young/09_package/thumbnail.face.v001.png",
+      "title": "Police Raided the Wrong House and Handcuffed an Innocent Woman",
+      "thumb_ready": true
+    },
+    {
+      "ep": "043-caniglia",
+      "video_id": "yRwxBfrOY5o",
+      "publishAt": "2026-07-28",
+      "thumb": "episodes/PD-2026-043-caniglia/09_package/thumbnail.face.v001.png",
+      "title": "Police Came for a Welfare Check and Left With His Guns — No Warrant",
+      "thumb_ready": true
+    },
+    {
+      "ep": "044-tekoh",
+      "video_id": "GGW1SIAAgkY",
+      "publishAt": "2026-07-29",
+      "thumb": "episodes/PD-2026-044-tekoh/09_package/thumbnail.face.v001.png",
+      "title": "Police Skipped His Rights — Then He Learned He Couldn't Even Sue",
+      "thumb_ready": true
+    },
+    {
+      "ep": "045-cleveland",
+      "video_id": "AxOlQ2NIaBU",
+      "publishAt": "2026-07-30",
+      "thumb": "episodes/PD-2026-045-cleveland/09_package/thumbnail.face.v001.png",
+      "title": "She Was Jailed Because She Was Too Poor to Pay a Fine",
+      "thumb_ready": true
+    },
+    {
+      "ep": "046-tlo",
+      "video_id": "hC5KE6IqmhM",
+      "publishAt": "2026-07-31",
+      "thumb": "episodes/PD-2026-046-tlo/09_package/thumbnail.face.v001.png",
+      "title": "Your School Can Search You Without a Warrant — the Supreme Court Said So",
+      "thumb_ready": true
+    },
+    {
+      "ep": "047-atwater",
+      "video_id": "i95peRcdtz4",
+      "publishAt": "2026-08-01",
+      "thumb": "episodes/PD-2026-047-atwater/09_package/thumbnail.face.v001.png",
+      "title": "She Was Handcuffed and Jailed Over a $50 Seatbelt Fine",
+      "thumb_ready": true
+    },
+    {
+      "ep": "029-hinton",
+      "video_id": "Qyad4FejCIc",
+      "publishAt": "public",
+      "thumb": "episodes/PD-2026-029-hinton/09_package/thumbnail.face.v001.png",
+      "title": "He Spent 30 Years on Death Row for a Murder He Didn't Commit",
+      "thumb_ready": true,
+      "note": "already public EP29; look up video_id tomorrow"
+    }
+  ]
+}

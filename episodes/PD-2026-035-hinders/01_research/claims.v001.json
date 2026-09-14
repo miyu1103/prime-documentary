@@ -1,0 +1,600 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-035-hinders",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "Carole Hinders ran a small cash-only Mexican restaurant, Mrs. Lady's, in the northwest-Iowa lakes region for roughly thirty-eight years, doing the cooking, running the register, and banking the day's cash herself.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0006"
+      ],
+      "evidence_locations": [
+        "NYT (Dewan, 2014-10-25): Hinders, Mrs. Lady's, cash Mexican restaurant, ~38 years",
+        "Institute for Justice case page: representation and business facts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "For thirty-eight years, a small cash restaurant sat off the lakes country of northwest Iowa. Mrs. Lady's.",
+        "A woman in her late sixties ran it six days a week."
+      ],
+      "prohibited_wording": [
+        "Depict Carole Hinders' real likeness or a photorealistic portrait of her (invariant 11).",
+        "State an exact age as fact (use 'late sixties').",
+        "Name the specific town on screen (use 'Iowa Great Lakes region')."
+      ],
+      "temporal_scope": "c.1976-2014",
+      "geographic_scope": "Northwest Iowa, United States",
+      "units": "38 years",
+      "status": "approved",
+      "notes": "Living private individual: role/record only, no likeness. [fact_recheck] exact age ('late sixties'), town name kept off-screen, and precise years of operation (§1.3 items 1,3)."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "In 2013 the federal government seized the entire checking-account balance of Hinders' restaurant — $32,820.56 — through civil forfeiture, and the resulting in rem case was captioned United States v. $32,820.56 in U.S. Currency; Hinders herself was never charged with any crime.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002",
+        "SRC-0006"
+      ],
+      "evidence_locations": [
+        "NYT (2014-10-25): $32,820.56 seized; no criminal charge",
+        "8th Cir. 838 F.3d 930 (2016): in rem caption against the currency"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The case was not called The United States versus Carole Hinders. It was called The United States versus thirty-two thousand, eight hundred twenty dollars and fifty-six cents.",
+        "She was never charged with a crime."
+      ],
+      "prohibited_wording": [
+        "State a specific month of the 2013 seizure (say 'In 2013').",
+        "Imply she committed money laundering or tax evasion."
+      ],
+      "temporal_scope": "2013",
+      "geographic_scope": "N.D. Iowa / United States",
+      "units": "$32,820.56",
+      "status": "approved",
+      "notes": "Fact hook (case-name-is-the-defendant). [fact_recheck] exact seizure month (§1.3 item 2) — keep 'In 2013'."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "Under the Bank Secrecy Act framework (31 U.S.C. § 5313; 31 C.F.R. § 1010.311), a bank must file a single currency transaction report to the federal government for a cash transaction over $10,000; the reporting obligation falls on the bank, not on the customer.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "31 U.S.C. § 5313(a); 31 C.F.R. § 1010.311 (CTR filing duty on the financial institution)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "If you deposit more than ten thousand dollars in cash, your bank files a single report to the federal government. One form. That is the entire obligation, and it falls on the bank, not on you."
+      ],
+      "prohibited_wording": [
+        "Say the depositor must file the report.",
+        "Say depositing over $10,000 is itself illegal."
+      ],
+      "temporal_scope": "1970-present",
+      "geographic_scope": "United States",
+      "units": "$10,000",
+      "status": "approved",
+      "notes": "Myth-correction anchor: the CTR duty is the bank's."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "Structuring — deliberately breaking cash into smaller deposits to keep them under the $10,000 reporting threshold in order to evade that report — is a separate federal offense under 31 U.S.C. § 5324.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "31 U.S.C. § 5324(a): prohibition on structuring transactions to evade the § 5313 reporting requirement"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "It became a crime to deliberately keep your deposits under ten thousand dollars in order to dodge that report. The government has a name for it. Structuring."
+      ],
+      "prohibited_wording": [
+        "Say any pattern of small deposits is automatically the crime of structuring (intent to evade is an element).",
+        "Cite a wrong statute number for structuring."
+      ],
+      "temporal_scope": "1986-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core inversion: staying small becomes the offense. Intent-to-evade element noted in prohibited_wording."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "Civil forfeiture proceeds in rem against the property itself rather than by charging a person; the property is treated as the defendant, and the owner must come forward and bear the cost of reclaiming it — an inversion of the criminal presumption of innocence.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0002",
+        "SRC-0006"
+      ],
+      "evidence_locations": [
+        "8th Cir. 838 F.3d 930: in rem posture against the currency",
+        "IJ case materials describing the burden the owner must carry to recover seized funds"
+      ],
+      "counterevidence": [
+        "Post-CAFRA (2000) the government bears an initial burden of proof in judicial forfeiture; the practical burden of financing a claim still falls heavily on the owner."
+      ],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "This is civil forfeiture, and it runs backwards from everything you assume about how the law works. The money itself was treated as guilty, and it was on her to prove that it was innocent."
+      ],
+      "prohibited_wording": [
+        "State that civil forfeiture has no statutory burden on the government at all (CAFRA shifted some burden in 2000).",
+        "Describe government agencies with loaded or defamatory language (R2 neutrality)."
+      ],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Structural doctrine beat. Counterevidence (CAFRA) recorded so narration frames the practical, not absolute, burden-shift."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "By Hinders' own account, her habit of keeping deposits under $10,000 came from her mother, who had kept the books, and she has said she never knew banks reported large deposits at all.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "NYT (2014-10-25): Hinders' statements about her mother's advice and her lack of awareness of the reporting rule"
+      ],
+      "counterevidence": [
+        "These are self-reported statements by an interested party; the government's forfeiture theory treated the deposit pattern as intentional evasion."
+      ],
+      "confidence": 0.7,
+      "allowed_wording": [
+        "By her own account, the habit came from her mother, who had once kept the books, and who told her to stay under the line and skip the extra bank paperwork.",
+        "She has said she never knew banks reported large deposits at all."
+      ],
+      "prohibited_wording": [
+        "State as established fact that she did not know the reporting rule.",
+        "State as fact that her motive was (or was not) to evade reporting."
+      ],
+      "temporal_scope": "pre-2013 (as recounted 2014)",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "conditional",
+      "notes": "[fact_recheck] self-reported motive — indirect attribution only, never asserted as proven (§1.3 item 8)."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "On October 25, 2014, The New York Times put Hinders' case on its front page under the headline 'Law Lets I.R.S. Seize Accounts on Suspicion, No Crime Required.'",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "NYT front page, 2014-10-25 (print 2014-10-26); headline text (directly quotable)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "On the twenty-fifth of October, two thousand fourteen, The New York Times put her on its front page.",
+        "The headline: 'Law Lets I.R.S. Seize Accounts on Suspicion, No Crime Required.'"
+      ],
+      "prohibited_wording": [
+        "Misquote the headline.",
+        "Claim the front page alone caused the IRS policy change (ordering unresolved — see CLM-0008)."
+      ],
+      "temporal_scope": "2014-10-25",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "NYT headline is the one directly quotable phrase at grade A (§1.3 item 5). [fact_recheck] online vs print date."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "In October 2014 the IRS (through Criminal Investigation chief Richard Weber) signaled a policy change: going forward it would generally stop pursuing structuring seizures where the cash came from a plainly legal source. This was an internal agency policy, not a law.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "NYT (2014-10-25) reporting the IRS-CI statement to stop pursuing legal-source structuring seizures"
+      ],
+      "counterevidence": [
+        "The IRS-CI statement (~2014-10-17) was contemporaneous with, not clearly caused by, the front-page article; a policy memo is not binding law."
+      ],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "The tax agency had quietly signaled a change: going forward, it would generally stop seizing money in cases like hers, where the cash came from a plainly legal source.",
+        "A policy memo is not a law. It is an instruction the agency writes to itself."
+      ],
+      "prohibited_wording": [
+        "Frame the policy change as directly caused by the NYT front page 'days later' (ordering not established).",
+        "Say the policy legally barred all such seizures."
+      ],
+      "temporal_scope": "2014-10",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "[fact_recheck] IRS-CI memo date vs NYT front page ordering (§1.3 item 12) — causal framing removed; keep 'around the same time'."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "About three months after the Institute for Justice took her case, the government moved to dismiss the forfeiture and return every dollar it had seized — but it dismissed the case 'without prejudice,' conceding no wrongdoing and reserving the right to refile.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0002",
+        "SRC-0006"
+      ],
+      "evidence_locations": [
+        "8th Cir. 838 F.3d 930: procedural history — voluntary dismissal without prejudice; funds returned",
+        "IJ case page: timeline of intervention and dismissal"
+      ],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "About three months after her lawyers stepped in, the government moved to dismiss the case and return every dollar it had taken.",
+        "It dismissed the case 'without prejudice' — it walked away without conceding a thing, and it kept the right to come back."
+      ],
+      "prohibited_wording": [
+        "Say the government admitted Hinders was innocent.",
+        "Say a court ruled she was innocent (there was no such ruling)."
+      ],
+      "temporal_scope": "2014-2015",
+      "geographic_scope": "N.D. Iowa / United States",
+      "units": "",
+      "status": "approved",
+      "notes": "'without prejudice' sets up the fee-denial payoff (CLM-0011). Directly quotable term of art."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "The Institute for Justice, a public-interest law firm that litigates against civil forfeiture, represented Carole Hinders and demanded the return of her seized funds.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0006",
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "IJ case page: representation of Hinders",
+        "NYT: IJ involvement"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "The Institute for Justice, a public-interest law firm that fights exactly this kind of case, took her on and demanded the money back."
+      ],
+      "prohibited_wording": [
+        "Adopt IJ advocacy framing as neutral narration."
+      ],
+      "temporal_scope": "2014-2015",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "IJ is an interested party (SRC-0006 independence low); representation fact is well corroborated."
+    },
+    {
+      "claim_id": "CLM-0011",
+      "normalized_claim": "In 2016 the U.S. Court of Appeals for the Eighth Circuit held that because Hinders' case had been dismissed without prejudice she had not 'substantially prevailed,' and therefore was not entitled to recover her attorney's fees.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "United States v. $32,820.56, 838 F.3d 930 (8th Cir. 2016): holding on 'substantially prevailed' / fee eligibility"
+      ],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "A federal appeals court ruled, in two thousand sixteen, that Carole had not substantially prevailed. She got her money back, but she was not entitled to her legal fees."
+      ],
+      "prohibited_wording": [
+        "Say the court found she committed structuring (the ruling was about fee eligibility, not guilt).",
+        "Misstate the reporter citation 838 F.3d 930."
+      ],
+      "temporal_scope": "2016",
+      "geographic_scope": "United States (8th Cir.)",
+      "units": "",
+      "status": "approved",
+      "notes": "Court-record fact (grade A). Central to the L2/L5 payoff contrasting Hinders vs McLellan."
+    },
+    {
+      "claim_id": "CLM-0012",
+      "normalized_claim": "Lyndon McLellan, who ran a rural convenience store in Fairmont, North Carolina, had his entire business account — one hundred seven thousand, seven hundred two dollars and sixty-six cents — seized under the same structuring theory; the account reflected about 301 deposits totaling roughly two million dollars over about three years, each under ten thousand dollars.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0007",
+        "SRC-0011"
+      ],
+      "evidence_locations": [
+        "IJ case page (McLellan): $107,702.66 seized; 301 deposits; ~$2M over ~3 years",
+        "E.D.N.C. court record (in rem currency action)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "In Fairmont, North Carolina, a man named Lyndon McLellan ran a country convenience store. The government seized one hundred seven thousand, seven hundred two dollars and sixty-six cents from him.",
+        "Three hundred one deposits. Around two million dollars in honest sales, rung up over three years, every one of them under ten thousand dollars."
+      ],
+      "prohibited_wording": [
+        "State a distance between North Carolina and Iowa (not in the ledger).",
+        "Assert McLellan committed any crime (no charge / no conviction)."
+      ],
+      "temporal_scope": "2014-2015",
+      "geographic_scope": "Fairmont, North Carolina / United States",
+      "units": "$107,702.66; 301 deposits; ~$2,000,000; 3 years",
+      "status": "approved",
+      "notes": "[fact_recheck] confirm 301 deposits / ~$2M / 3-year span against court docket (§1.3 items 10,13). Living private individual: record only, no likeness."
+    },
+    {
+      "claim_id": "CLM-0013",
+      "normalized_claim": "McLellan's seized money was returned (around the summer of 2015) and a federal judge ordered the government to pay his attorney's fees, litigation costs, and interest — an outcome Hinders never obtained.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0011",
+        "SRC-0007"
+      ],
+      "evidence_locations": [
+        "E.D.N.C. order: return of funds plus fees, costs, and interest against the government",
+        "IJ case page (McLellan) corroboration"
+      ],
+      "counterevidence": [],
+      "confidence": 0.82,
+      "allowed_wording": [
+        "His money was returned, and a judge ordered the government to pay his legal fees, his costs, and interest on top.",
+        "His money came back in the summer of two thousand fifteen."
+      ],
+      "prohibited_wording": [
+        "State an exact fee-order date on screen until the docket is confirmed.",
+        "Say the government formally apologized (it did not)."
+      ],
+      "temporal_scope": "2015-2016",
+      "geographic_scope": "E.D.N.C. / United States",
+      "units": "",
+      "status": "conditional",
+      "notes": "[fact_recheck] pull exact E.D.N.C. docket number and order date from PACER/CourtListener; grade-A rests on the court order, not advocacy reporting (design line 56). Return ~summer 2015; fee order 2016. Date-hedged until confirmed."
+    },
+    {
+      "claim_id": "CLM-0014",
+      "normalized_claim": "A Treasury Inspector General for Tax Administration (TIGTA) audit of IRS structuring seizures found that, in a sample of 278 cases where the source of the funds could be traced, about 91 percent involved money from legal sources; across more than two hundred such cases the government had taken in roughly $17.1 million from people whose money it could not tie to any crime.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0005"
+      ],
+      "evidence_locations": [
+        "TIGTA Ref. No. 2017-30-025 (2017): sample of traceable structuring cases; ~91% legal-source; ~$17.1M across 200+ legal-source cases"
+      ],
+      "counterevidence": [],
+      "confidence": 0.88,
+      "allowed_wording": [
+        "In a sample of two hundred seventy-eight cases where investigators could actually trace where the money came from, ninety-one percent of those cases involved money from legal sources.",
+        "Across more than two hundred of those cases, the government had taken in around seventeen million dollars from people whose money it could not tie to any crime."
+      ],
+      "prohibited_wording": [
+        "Say '91% of the money' (express as 91% of the cases — design aismell #45).",
+        "State the raw legal-source count (231) in narration; keep '231 cases / $17.1M' on screen only."
+      ],
+      "temporal_scope": "2017 (audit of prior years)",
+      "geographic_scope": "United States",
+      "units": "278 sample; 91%; 231 cases; ~$17.1M",
+      "status": "approved",
+      "notes": "[fact_recheck] confirm 278 / 231 / 91% / $17.1M against the published TIGTA PDF (§1.2). Express as case-share, not dollar-share."
+    },
+    {
+      "claim_id": "CLM-0015",
+      "normalized_claim": "The reporting regime came from the Bank Secrecy Act of 1970, aimed at organized crime and dirty money moving through banks; the structuring offense was not part of that original law but was added sixteen years later, in 1986, by the Money Laundering Control Act.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0010",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "FinCEN AML history: BSA 1970 purpose; Money Laundering Control Act 1986 added structuring/laundering offenses",
+        "31 U.S.C. § 5324 (structuring) placement in Title 31"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "The rule came out of a nineteen-seventy law written to track organized crime and the dirty money moving through American banks.",
+        "It was added sixteen years later, in nineteen eighty-six, when Congress made it a separate crime to split your cash into smaller deposits on purpose."
+      ],
+      "prohibited_wording": [
+        "Say the 1970 law targeted 'drug cartels' specifically (use 'organized crime' — design aismell #50).",
+        "Say structuring was part of the original 1970 Act."
+      ],
+      "temporal_scope": "1970 / 1986",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Legislative-history beat. Ties CLM-0003 (reporting) and CLM-0004 (structuring) to their statutes."
+    },
+    {
+      "claim_id": "CLM-0016",
+      "normalized_claim": "In 2019 a federal reform act (signed in July 2019) made permanent that the government cannot seize a legal-source account solely because the deposits stayed under $10,000, and it guarantees an owner a post-seizure hearing within thirty days; it did not abolish civil forfeiture generally.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0008"
+      ],
+      "evidence_locations": [
+        "Clyde-Hirsch-Sowers RESPECT Act (carried in the Taxpayer First Act, Pub. L. 116-25, July 1, 2019); amendments codified at 31 U.S.C. § 5317(c)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "In two thousand nineteen, it became law. A reform act, signed that July, made the change permanent.",
+        "The government could no longer take a legal-source account just because the deposits happened to stay under ten thousand dollars, and the owner now gets a hearing within thirty days."
+      ],
+      "prohibited_wording": [
+        "Name the act on screen with its client short title (use 'a reform act' — design §1.3 item 7).",
+        "Say the 2019 reform ended civil forfeiture generally (it only narrowed structuring seizures)."
+      ],
+      "temporal_scope": "2019-present",
+      "geographic_scope": "United States",
+      "units": "30 days",
+      "status": "approved",
+      "notes": "[fact_recheck] confirm the 30-day hearing figure and enactment vehicle (RESPECT Act inside the Taxpayer First Act) before lock. Earned-CTA anchor: door closed for structuring only."
+    },
+    {
+      "claim_id": "CLM-0017",
+      "normalized_claim": "In the mid-2010s Congress held hearings on IRS structuring seizures at which business owners who had lived through such seizures testified about the effect on their companies and families.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0009"
+      ],
+      "evidence_locations": [
+        "House Ways and Means, Subcommittee on Oversight, hearing on IRS structuring seizures (2015): testimony from affected business owners"
+      ],
+      "counterevidence": [],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "Lawmakers held hearings on these structuring seizures, and business owners who had lived through them came and testified about what it had done to their companies and their families."
+      ],
+      "prohibited_wording": [
+        "Attribute testimony specifically to Carole Hinders (see CLM-0020).",
+        "State an exact hearing date on screen until confirmed."
+      ],
+      "temporal_scope": "2015",
+      "geographic_scope": "United States (U.S. Congress)",
+      "units": "",
+      "status": "approved",
+      "notes": "[fact_recheck] confirm exact committee/date. Narration must say 'business owners' generically, not Hinders."
+    },
+    {
+      "claim_id": "CLM-0018",
+      "normalized_claim": "According to her lawyers and the reporting on her case, while her money was tied up Hinders sold Mrs. Lady's, the restaurant she had built over decades; by the time the money was returned she no longer owned the business.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0006",
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "IJ case materials and press reporting: sale of the restaurant during the litigation"
+      ],
+      "counterevidence": [
+        "Attributed to her lawyers and reporting; exact sale date not independently confirmed in the ledger."
+      ],
+      "confidence": 0.7,
+      "allowed_wording": [
+        "According to her lawyers and the reporting on her case, while her money was tied up she sold Mrs. Lady's, the restaurant she had built over thirty-eight years."
+      ],
+      "prohibited_wording": [
+        "State the sale as an unattributed hard fact.",
+        "State a specific sale date (§1.3 item 6)."
+      ],
+      "temporal_scope": "c.2014-2015",
+      "geographic_scope": "Northwest Iowa / United States",
+      "units": "",
+      "status": "conditional",
+      "notes": "[fact_recheck] sale date unconfirmed — indirect attribution ('according to her lawyers and the reporting') required (§1.3 item 6)."
+    },
+    {
+      "claim_id": "CLM-0019",
+      "normalized_claim": "Investigators reviewed roughly a year of Hinders' bank deposits and concluded that the pattern of frequent sub-$10,000 deposits was itself the offense; the forfeiture rested on the deposit pattern, with no allegation of theft, drugs, or any other underlying crime.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "NYT (2014-10-25): the case rested on the deposit pattern; no underlying-crime allegation",
+        "In rem forfeiture posture (8th Cir. 838 F.3d 930)"
+      ],
+      "counterevidence": [
+        "The precise deposit window (a 'ten-month' vs full-year range) is not confirmed in the ledger from the complaint."
+      ],
+      "confidence": 0.72,
+      "allowed_wording": [
+        "Over roughly a year of her deposits, investigators had gone through her banking and decided the pattern itself was the offense. No theft. No drugs. No victim."
+      ],
+      "prohibited_wording": [
+        "State a precise deposit window (e.g., exact ten-month April-to-February range) as confirmed fact until the complaint is verified.",
+        "Assert she intended to evade reporting (an unproven government theory)."
+      ],
+      "temporal_scope": "c.2012-2013",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "conditional",
+      "notes": "[fact_recheck] deposit-window range from the forfeiture complaint unverified (§1.3 item 14) — narration hedged to 'roughly a year'."
+    },
+    {
+      "claim_id": "CLM-0020",
+      "normalized_claim": "It is not confirmed that Carole Hinders personally testified before Congress or that she personally helped change the law; the script must not assert her individual congressional testimony or legislative role, and may attribute testimony only to business owners generally and her influence only to the press coverage her case received.",
+      "importance": "context",
+      "sensitivity": "high",
+      "grade": "B",
+      "source_ids": [],
+      "evidence_locations": [
+        "No confirmed record in the ledger of Hinders testifying before Congress or of a personal legislative-drafting role (design §1.3 items 4, 11)."
+      ],
+      "counterevidence": [
+        "Her case was widely cited during the reform debate; that is press influence, not proof of personal testimony or legislative authorship."
+      ],
+      "confidence": 0.6,
+      "allowed_wording": [
+        "Her case had become one of the stories that put this abuse in front of the country.",
+        "Business owners who had lived through them came and testified."
+      ],
+      "prohibited_wording": [
+        "Carole Hinders testified before Congress.",
+        "Carole Hinders helped change the law / helped write the reform."
+      ],
+      "temporal_scope": "2015-2019",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "needs_research",
+      "notes": "[fact_recheck] guardrail claim (§1.3 items 4, 11; design aismell #44). Not to be asserted; documents the do-not-claim boundary. source_ids intentionally empty."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "warn",
+    "findings": [
+      "20 claims CLM-0001..0020 graded and source-linked. All critical claims (CLM-0002/0004/0005/0007/0014/0016) rest on grade-A primary or official sources (court opinion 838 F.3d 930, 31 U.S.C. statutes, NYT front page, TIGTA 2017-30-025, Pub. L. 116-25).",
+      "Grade-B / conditional claims held for pre-lock primary verification and hedged in narration: CLM-0006 (self-reported motive), CLM-0013 (McLellan fee-order docket/date), CLM-0018 (restaurant-sale date), CLM-0019 (deposit-window range), CLM-0020 (Hinders congressional testimony — needs_research, do-not-assert).",
+      "Advocacy sources SRC-0006 / SRC-0007 (Institute for Justice) are party materials (independence low); numeric and outcome claims are corroborated with primary court records (SRC-0002, SRC-0011) per design line 56.",
+      "Open rechecks carried from design §1.3 (14 items): IRS-CI memo date vs NYT front-page ordering (CLM-0008), McLellan seizure date vs policy change (CLM-0012/0013), exact TIGTA denominators (CLM-0014), 2019 act short title kept off-screen (CLM-0016). Durable content hashes and confirmed live URLs for SRC-0005/0007/0009/0010/0011 to be captured before publish (non-blocking at research stage). Status 'warn' until §1.3 primary rechecks close."
+    ]
+  }
+}

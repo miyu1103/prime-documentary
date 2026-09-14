@@ -1,0 +1,868 @@
+EP76_morandi — 画像発注 バッチ 1/15（8枚）
+区分: HOOK — V001–V006 / OP — V007–V010
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V001.png
+   [the valley from above]  flags: R D C
+   a wide view down into a narrow urban valley in an Italian port city from a hillside: apartment blocks stacked up both slopes, corrugated warehouses and a railway goods yard on the flat floor, a concrete river bed with a thin stream, low flat grey cloud
+
+2) V002.png
+   [the underside]  flags: R D U
+   the soffit of a reinforced concrete motorway deck seen from directly beneath, transverse ribs and drainage outlets receding into shadow, daylight only at the far edges
+
+3) V003.png
+   [the concrete gone]  flags: R U
+   close on a concrete beam where the cover has broken away and rusted reinforcing steel is exposed, rust staining running down the face, damp along the lower edge
+
+4) V004.png
+   [broken wires]  flags: R U
+   macro of a bundle of high-tensile steel wires inside a broken concrete duct, several of the wires cleanly parted, the ends splayed and rust-brown
+
+5) V005.png
+   [the form]  flags: R I
+   a printed inspection form on a clipboard hooked over a galvanised steel handrail high above a valley, the sheet ruled into empty boxes, wind lifting one corner
+
+6) V006.png
+   [the hand and the box]  flags: P R I
+   a hand holding a ballpoint pen above one empty ruled box on a blank printed form, shot from directly above, forearm at the edge of frame, no face in frame
+
+7) V007.png
+   [the four ties]  flags: R D C
+   the four diagonal concrete stays of a cable-stayed bridge tower against flat grey cloud, seen from below, the deck cutting across them
+
+8) V008.png
+   [a stay in section]  flags: R U
+   a cut section through a large rectangular prestressed concrete member, dark, showing a dense cluster of steel strands embedded in grout at its core
+
+
+EP76_morandi — 画像発注 バッチ 2/15（8枚）
+区分: OP — V007–V010 / ACT_1 — THE SHEATH
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V009.png
+   [traffic on a viaduct]  flags: D C
+   two lanes of ordinary traffic on an elevated motorway seen at deck level from the hard shoulder, concrete barrier to the right, rooftops far below and beyond
+
+2) V010.png
+   [black ground]  flags: I
+   a plain matte near-black surface with faint horizontal grain, evenly lit, entirely empty
+
+3) V011.png
+   [the valley, 1960s]  flags: R D C
+   a narrow industrial valley in an Italian port city in the early 1960s: low workshops, a goods yard, overhead tram wires, apartment blocks climbing both hillsides, no motorway anywhere in the frame
+
+4) V012.png
+   [the drawing board]  flags: R I
+   a large drawing board in an engineering office of the early 1960s, a T-square and set squares lying on a blank sheet of drafting paper, an anglepoise lamp
+
+5) V013.png
+   [the blank sheet]  flags: R I
+   a blank sheet of drafting paper filling the frame, faint blue printed grid, one pencil laid across it
+
+6) V014.png
+   [falsework]  flags: R D C
+   a bridge under construction in the mid 1960s: timber and steel falsework rising from a valley floor, a concrete pier half formed inside it, a lattice crane
+
+7) V015.png
+   [the tower rising]  flags: R D C
+   a tall reinforced concrete A-frame bridge tower under construction, formwork panels still clamped to it, seen from below against pale sky
+
+8) V016.png
+   [workers on the deck]  flags: P R D C
+   small figures in overalls walking along an unfinished concrete bridge deck in the mid 1960s, seen from a long way off, faces far too small to resolve
+
+
+EP76_morandi — 画像発注 バッチ 3/15（8枚）
+区分: ACT_1 — THE SHEATH
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V017.png
+   [the strands laid]  flags: R U
+   a bundle of bright steel strands laid out along an unfinished concrete member on a bridge site in the mid 1960s, sleeved and clamped at intervals
+
+2) V018.png
+   [tensioning]  flags: R U
+   a hydraulic jack clamped to the end of a prestressing tendon on a concrete member, hoses trailing away, period industrial equipment of the 1960s
+
+3) V019.png
+   [the segments]  flags: R C
+   precast concrete segments stacked on a bridge construction site in the mid 1960s, each with a large rectangular opening through the middle
+
+4) V020.png
+   [threading the sheath]  flags: P R D C
+   a precast concrete segment being lowered by crane over a bundle of steel strands on a bridge site, two workers guiding it from a distance
+
+5) V021.png
+   [grout]  flags: P R U
+   grout being pumped into a duct through a steel nipple on a concrete member, hose and pressure gauge, gloved hands only at the edge of frame
+
+6) V022.png
+   [the finished stay]  flags: R D U
+   a long rectangular prestressed concrete stay running diagonally out of frame, seen close along its flank, pour joints and formwork lines visible
+
+7) V023.png
+   [the saddle]  flags: R U
+   the top of a concrete bridge tower where four diagonal members meet a transverse beam, seen from directly beneath
+
+8) V024.png
+   [the opening, 1967]  flags: R D C
+   a newly completed concrete cable-stayed motorway viaduct in 1967 seen from the valley floor, clean pale concrete, period saloon cars small on the deck
+
+
+EP76_morandi — 画像発注 バッチ 4/15（8枚）
+区分: ACT_1 — THE SHEATH
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V025.png
+   [period traffic]  flags: D C
+   1960s Italian traffic on a new elevated motorway — small saloons and a single coach — seen from far enough away that no vehicle detail resolves
+
+2) V026.png
+   [white ground]  flags: I
+   a plain white ground with a single fine horizontal line ruled across it, evenly lit, nothing else in frame
+
+3) V027.png
+   [the tower against cloud]  flags: R D C
+   a concrete bridge tower ninety metres tall seen from below against flat grey cloud, four stays cutting away from its head
+
+4) V028.png
+   [the infill deck]  flags: R D U
+   a short simply supported concrete bridge deck sitting between two much larger structures, its six beams visible from beneath
+
+5) V029.png
+   [what is underneath]  flags: R D C
+   the underside of a motorway viaduct with a corrugated-roof factory directly below it, a railway line and a two-lane road all in the same frame
+
+6) V030.png
+   [the balcony]  flags: P R D C
+   a resident standing at the railing of a fourth-floor balcony in a Ligurian apartment block, washing on a line beside them, a motorway viaduct crossing a short distance away at the same height
+
+7) V031.png
+   [the strand, new]  flags: R I
+   macro of seven-wire steel prestressing strand, the helical lay of the wires bright and lightly oiled, lying on plain grey card
+
+8) V032.png
+   [the strand, later]  flags: R I
+   macro of the same seven-wire steel strand, rust-brown and deeply pitted, several outer wires reduced to half their thickness, lying on plain grey card
+
+
+EP76_morandi — 画像発注 バッチ 5/15（8枚）
+区分: ACT_1 — THE SHEATH / ACT_2 — ONE OF THREE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V033.png
+   [the void]  flags: R U
+   a cut concrete duct in section showing grey grout that has not filled it, a void running along the top with bare strand exposed in it
+
+2) V034.png
+   [the shell]  flags: R D U
+   a large rectangular concrete member in section filling the frame, its outer shell intact and pale, the core dark
+
+3) V035.png
+   [the report, 1981]  flags: R I
+   a plain bound engineering report lying closed on a desk in an office of the early 1980s, cover blank, a rotary telephone beside it
+
+4) V036.png
+   [hatches cut]  flags: R U
+   a rectangular access hatch cut into the underside of a concrete bridge deck, its edges rough, darkness beyond it
+
+5) V037.png
+   [inside the box]  flags: R D U
+   the interior of a hollow concrete box girder: a low chamber with transverse walls and small openings, one work light on a cable
+
+6) V038.png
+   [inside, the cables]  flags: R U
+   close inside a concrete box girder chamber — prestressing ducts running along the wall, one broken open, strands visible inside it
+
+7) V039.png
+   [scaffold on the tower]  flags: R D C
+   scaffolding wrapped around the upper part of a concrete bridge tower in the early 1990s, a hoist, sheeting flapping at the edges
+
+8) V040.png
+   [the core]  flags: R U
+   a diamond core drill clamped to a concrete face, water running down it, a cylindrical core half withdrawn
+
+
+EP76_morandi — 画像発注 バッチ 6/15（8枚）
+区分: ACT_2 — ONE OF THREE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V041.png
+   [the cores laid out]  flags: R I
+   a row of concrete core samples lying on a plank, some sound and some crumbling at one end, no markings on any of them
+
+2) V042.png
+   [opening the stay]  flags: R U
+   a large rectangular concrete member with a section of its outer shell broken away, the steel inside exposed to daylight
+
+3) V043.png
+   [severed strands]  flags: R U
+   close on a bundle of prestressing strands inside broken concrete, several strands parted clean through, the cut ends splayed and rust-brown
+
+4) V044.png
+   [slack]  flags: R U
+   close on prestressing strands that have gone visibly slack inside a broken duct, one sagging away from the bundle
+
+5) V045.png
+   [the hands and the strand]  flags: P R U
+   two gloved hands holding a short length of severed steel strand up to the light, no face in frame
+
+6) V046.png
+   [the new ducts]  flags: R D U
+   new polyethylene ducts clamped in a row down the outside flank of a large weathered concrete member, bright plastic against grey
+
+7) V047.png
+   [the anchorage]  flags: R U
+   a steel anchorage block bolted to the top of a concrete transverse beam, new bright bolts against old grey concrete
+
+8) V048.png
+   [tensioning, 1990s]  flags: P R U
+   a hydraulic jack on an external cable anchorage high on a bridge tower, hoses running down the tower face, one figure at the far end of the platform
+
+
+EP76_morandi — 画像発注 バッチ 7/15（8枚）
+区分: ACT_2 — ONE OF THREE / ACT_3 — THE NUMBER IN THE BOX
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V049.png
+   [the temporary gantry]  flags: R D U
+   a purpose-built working platform suspended beneath a bridge deck in the 1990s, cables and winches, nobody on it
+
+2) V050.png
+   [traffic continues]  flags: D C
+   traffic running on a motorway viaduct while a working platform hangs beneath the deck, seen from the side at a distance
+
+3) V051.png
+   [one of three]  flags: R D C
+   three concrete bridge towers in a line along a valley seen from a hillside, only the nearest one wrapped in scaffolding
+
+4) V052.png
+   [the other two]  flags: R D C
+   two concrete bridge towers seen from below, unwrapped and weathered, water staining running down the stay flanks
+
+5) V053.png
+   [the walkway]  flags: R U
+   a galvanised steel inspection walkway bolted along the underside of a bridge abutment, empty, 2000s
+
+6) V054.png
+   [the equipment stored]  flags: R D U
+   working platforms and hoists in storage beneath a motorway structure, tarpaulins and chains, unused for years
+
+7) V055.png
+   [the manual]  flags: R I
+   a plain ring-bound technical manual lying open on a laminate desk, its pages ruled but entirely blank, one desk lamp
+
+8) V056.png
+   [the scale, blank]  flags: R I
+   a printed table on a plain sheet: ruled rows and columns filling the frame, every cell empty
+
+
+EP76_morandi — 画像発注 バッチ 8/15（8枚）
+区分: ACT_3 — THE NUMBER IN THE BOX
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V057.png
+   [the box, hero]  flags: R I
+   extreme close on one empty ruled box on a printed inspection form, the surrounding rows blank, one lamp raking across the paper
+
+2) V058.png
+   [the clipboard on the rail]  flags: R D U
+   a clipboard carrying a blank ruled form, hooked over a galvanised handrail high above a valley, the drop soft behind it
+
+3) V059.png
+   [the gantry, working]  flags: R D U
+   a self-propelled inspection gantry running along the underside of a motorway deck, its platform extended, seen from the side
+
+4) V060.png
+   [on the platform]  flags: P R U
+   a worker in plain high-visibility clothing standing on an inspection platform beneath a concrete deck, seen from behind, no insignia and no unit marking
+
+5) V061.png
+   [the torch]  flags: P R U
+   a hand torch held against a concrete soffit, the beam picking out a crack and a run of rust staining, hand only in frame
+
+6) V062.png
+   [the hammer]  flags: R U
+   a small steel inspection hammer resting against a concrete face beside a patch of hollow render
+
+7) V063.png
+   [the slab that dropped]  flags: R C
+   a bridge deck slab that has settled at one end where the bearing beneath it partly failed, a step visible in the running surface
+
+8) V064.png
+   [the bearing]  flags: R U
+   a steel bridge bearing between a pier head and a deck, corroded, one plate visibly displaced
+
+
+EP76_morandi — 画像発注 バッチ 9/15（8枚）
+区分: ACT_3 — THE NUMBER IN THE BOX
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V065.png
+   [severed bars]  flags: R U
+   reinforcing bars sheared through where a concrete cantilever has failed, the broken ends bright against dark rust
+
+2) V066.png
+   [the edge beam]  flags: R D U
+   the outer edge beam of a bridge deck seen from below and to the side, its lower bulb spalled away, cables in view
+
+3) V067.png
+   [corroded cables in the chamber]  flags: R U
+   prestressing cables inside a box girder chamber, heavily corroded, one duct broken open, water staining running below it
+
+4) V068.png
+   [the chamber you climb into]  flags: R U
+   a narrow access opening into a concrete box girder chamber, one ladder rung, darkness beyond
+
+5) V069.png
+   [the foundation]  flags: R D C
+   the base of a concrete bridge pier where it meets the ground, weeds along it, a drainage channel, undisturbed for decades
+
+6) V070.png
+   [the observations box]  flags: R I
+   a printed form on a desk with a large empty ruled area across the foot of it, headed by nothing, entirely blank
+
+7) V071.png
+   [the shelf that thins]  flags: R I
+   a shelf of ring binders in an office store room, every spine blank, one gap where a binder is missing
+
+8) V072.png
+   [the drainpipe]  flags: R U
+   a corroded steel bracket on the flank of a concrete bridge beam, the drainpipe sagging away from it, staining below
+
+
+EP76_morandi — 画像発注 バッチ 10/15（8枚）
+区分: ACT_3 — THE NUMBER IN THE BOX
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V073.png
+   [the graph, blank]  flags: R I
+   a blank graph grid printed on a plain sheet, axes ruled, no line drawn on it
+
+2) V074.png
+   [the office at night]  flags: I
+   an ordinary open-plan office at night, desks tidy, screens off, one strip light left on at the far end
+
+3) V075.png
+   [the ledger]  flags: R I
+   a plain ruled accounts ledger open on a desk, its columns empty, a lamp at the edge of frame
+
+4) V076.png
+   [the barrier going on]  flags: P R D C
+   new precast concrete traffic barrier units being set along the edge of a motorway deck, a crane hook, workers at a distance
+
+5) V077.png
+   [weight added]  flags: R C
+   close on the base of a concrete traffic barrier bolted down through a bridge deck slab, new bright bolts, old grey concrete
+
+6) V078.png
+   [the toll plaza]  flags: P D C
+   an Italian motorway toll plaza on a flat overcast day, canopies and lane islands, a short queue of cars, no legible signage
+
+7) V079.png
+   [the ordinary drive]  flags: P D C
+   the view forward through a car windscreen on an elevated motorway, two hands on the wheel at the bottom of frame, no face, wipers at rest
+
+8) V080.png
+   [underneath, waiting]  flags: P D C
+   a bus stop on a street directly beneath a motorway viaduct, people waiting, the concrete soffit filling the top third of the frame
+
+
+EP76_morandi — 画像発注 バッチ 11/15（8枚）
+区分: ACT_4 — THE THING NOBODY WROTE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V081.png
+   [the index]  flags: R I
+   a card index drawer pulled open on a desk, dividers standing upright, every tab blank
+
+2) V082.png
+   [the empty tab]  flags: R I
+   close on one blank index tab standing above the others in a card drawer, nothing filed behind it
+
+3) V083.png
+   [the archive shelf]  flags: R I
+   a shelf of identical archive box files in a store room, every label area blank, one box pulled out of line
+
+4) V084.png
+   [the letter]  flags: R I
+   a single sheet of headed paper lying on a desk, the head area blank, an envelope beside it
+
+5) V085.png
+   [the fax]  flags: R I
+   a fax machine on a side table in a 2010s office, a curl of blank thermal paper in the tray
+
+6) V086.png
+   [the form, level zero]  flags: R I
+   a printed form on a desk ruled into many small empty fields, a paperclip at one corner
+
+7) V087.png
+   [the drawings]  flags: R I
+   a stack of rolled engineering drawings standing in the corner of an office, the ends blank
+
+8) V088.png
+   [the drawing unrolled]  flags: R I
+   a large engineering drawing unrolled and weighted flat on a table, the sheet entirely blank, a weight at each corner
+
+
+EP76_morandi — 画像発注 バッチ 12/15（8枚）
+区分: ACT_4 — THE THING NOBODY WROTE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V089.png
+   [the title block]  flags: R I
+   close on the empty title block panel at the corner of a blank engineering drawing, ruled boxes, nothing entered
+
+2) V090.png
+   [the calculation]  flags: R I
+   a bound calculation report open on a desk, its pages ruled and blank, a pen laid across them
+
+3) V091.png
+   [the sixty-two]  flags: R I
+   a stack of identical blank comment slips squared up on a desk, the top one lifted slightly
+
+4) V092.png
+   [the verifier's desk]  flags: R I
+   a desk in a technical office: lamp, rolled drawings, a chair pushed in, nobody there
+
+5) V093.png
+   [the signature line]  flags: R I
+   close on a blank ruled signature line at the foot of a plain sheet, a pen resting beside it
+
+6) V094.png
+   [the hands and the file]  flags: P R I
+   two hands closing a thick bound file on a desk, no face in frame
+
+7) V095.png
+   [the corridor]  flags: P D I
+   a corridor in a plain Italian public office building, terrazzo floor, doors with blank plates, strip lighting, one figure far away
+
+8) V096.png
+   [the committee room]  flags: R D I
+   a plain municipal committee room: a long table, stacking chairs, a projector screen down, empty
+
+
+EP76_morandi — 画像発注 バッチ 13/15（8枚）
+区分: ACT_4 — THE THING NOBODY WROTE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V097.png
+   [the lectern]  flags: R I
+   a plain wooden lectern at the front of a meeting room, a glass of water on it, nobody there
+
+2) V098.png
+   [past the empty chair]  flags: P R D I
+   a meeting room seen past the back of one empty chair in the foreground, figures at the far end of the table too distant to resolve
+
+3) V099.png
+   [the back at the lectern]  flags: P R I
+   a figure standing at a lectern in a meeting room seen from behind, gesturing towards a screen that is blank
+
+4) V100.png
+   [the sheet passed]  flags: P R I
+   a plain sheet of paper being passed across a meeting table, two pairs of hands only, the sheet blank
+
+5) V101.png
+   [the stamp]  flags: R I
+   a rubber date stamp lying on an ink pad beside a blank document, the stamp face turned away
+
+6) V102.png
+   [the chaser]  flags: R I
+   an outgoing post tray on an office desk with three plain envelopes in it, address areas blank
+
+7) V103.png
+   [the gantry bolt]  flags: R U
+   close on a heavy bolt fixed through the lower flange of a concrete bridge beam, drilled, the concrete cracked around it
+
+8) V104.png
+   [the viaduct, ordinary]  flags: P D C
+   the viaduct on an ordinary morning with traffic on it, seen from a residential street below, washing on a balcony in the foreground
+
+
+EP76_morandi — 画像発注 バッチ 14/15（8枚）
+区分: ACT_4 — THE THING NOBODY WROTE / ACT_5 — WHAT WAS DECIDED
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V105.png
+   [the deck, level]  flags: D C
+   the running surface of a two-lane motorway deck from driver height, concrete barriers on both sides, hills beyond
+
+2) V106.png
+   [the gap]  flags: R D C
+   two ends of a severed elevated road with nothing between them, seen from a distance across a valley, flat grey light, no debris and no vehicle in frame
+
+3) V107.png
+   [the barrier]  flags: R D C
+   a line of new steel crash barrier set across the full width of a road that simply stops, nothing beyond it, flat grey light
+
+4) V108.png
+   [the emptied windows]  flags: R D C
+   a Ligurian apartment block directly beneath an elevated road, every window dark, shutters closed, nothing on the balconies
+
+5) V109.png
+   [the cordon]  flags: P R D C
+   a plastic cordon strung between two posts across a residential street, lifting in the wind, a resident standing well back on the pavement with their back to camera
+
+6) V110.png
+   [two reports]  flags: R I
+   two thick bound documents lying side by side on a table, both covers blank, one noticeably thicker than the other
+
+7) V111.png
+   [the corridor of the court]  flags: P D I
+   a wide institutional corridor with a wooden bench along one wall, terrazzo floor, one figure seated far away
+
+8) V112.png
+   [the bench]  flags: P R I
+   a worn wooden bench against a painted wall, empty, a folded coat left at one end
+
+
+EP76_morandi — 画像発注 バッチ 15/15（8枚）
+区分: ACT_5 — WHAT WAS DECIDED / ENDING — V117–V120
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, Genoa and the Polcevera valley in Liguria, north-west Italy — a working Mediterranean port city packed into a narrow steep-sided valley, tall narrow apartment blocks in ochre pink and grey render with dark green louvred shutters and roof terraces stacked up both hillsides, corrugated warehouses and a railway goods yard on the valley floor, a canalised river bed of concrete and gravel with a thin stream, container cranes and ferries in the distance, motorway viaducts and tunnel portals running over and through inhabited streets, umbrella pines on the slopes, flat overcast Ligurian daylight with sea haze and no sun in the sky, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — weathered reinforced concrete, rust staining, galvanised handrail, corrugated steel, painted render, terrazzo floor, laminate desk, manila card, ring binder board — nothing staged for advertising, no tourism, no scenery, Italian signage may appear but is always out of focus or too small or turned away and never legible, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no readable text, no legible lettering, no numerals, no watermark, no logo
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsing bridge, bridge collapsing, falling deck, falling car, falling vehicle, vehicle plunging, car at a broken edge, crashed car, crushed vehicle, wreckage with a vehicle in it, debris field, dust cloud of collapse, body, corpse, human remains, body bag, injured person, blood, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, rescue, search and rescue, firefighter carrying person, memorial portrait, photo memorial, candle vigil, lightning strike, thunderstorm, storm clouds dramatic, wall of rain, tornado, earthquake damage, war ruins, movie explosion, action movie, fireball vfx, video game, crash test, vineyard, cypress avenue, tuscan hill town, rolling hills with cypress, amalfi coast, cliff village, gondola, venetian canal, colosseum, roman ruins, leaning tower, piazza postcard, palm tree, beach, surf, sunbathing, cruise ship, tropical, desert, snow, megacity skyline, skyscrapers, expressway interchange, american highway sign, US route shield, US number plate, mainland american main street, uk street, london street, right-hand-drive traffic, asian street, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs closeup, firearm, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, handshake, golden hour, sunset glow, blue hour, warm hero light, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) V113.png
+   [the files, stacked]  flags: R I
+   a trolley of bound case files in an institutional corridor, spines blank, stacked high
+
+2) V114.png
+   [the room after]  flags: P R D I
+   a plain public room with rows of chairs, one chair out of line, papers left on a seat, otherwise empty
+
+3) V115.png
+   [the calendar]  flags: R I
+   a plain wall calendar in an office, its grid ruled, no dates and nothing written on it
+
+4) V116.png
+   [the reasons, unwritten]  flags: R I
+   a thick ring binder standing open on a desk, every page in it blank, one lamp beside it
+
+5) V117.png
+   [the new bridge]  flags: D C
+   a modern white steel-and-concrete motorway viaduct on slender elliptical piers crossing an urban valley, flat overcast daylight, no drama and no warm light
+
+6) V118.png
+   [the new deck]  flags: D C
+   the running surface of a new motorway viaduct from driver height, ordinary traffic, hills and port cranes beyond
+
+7) V119.png
+   [the crossing, anywhere]  flags: P D C
+   an ordinary concrete road overbridge in a European town with traffic passing over it, seen from the road beneath, a pedestrian walking through the frame
+
+8) V120.png
+   [the road that stops]  flags: R D C
+   the barrier across the severed road again, closer and held: worn asphalt, the line of steel barrier, the drop, and the city beyond it

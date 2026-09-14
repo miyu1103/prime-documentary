@@ -1,0 +1,2885 @@
+{
+  "episode_id": "PD-2026-075-lahaina",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Three o'clock on a Tuesday afternoon, on the mountain side of a town on Maui, an engine crew pulls up to a burning field and reports what it can see.",
+      "text_sha256": "sha256:0bce7085d8d1bd3c35908efa1e79e08fef1f80fda6b04495a5eb9fd4f117730b",
+      "idempotency_key": "sha256:f7d9307445557f225472cb1b78b264394c6ad6da44c6b79b4a8433750fc395eb"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "A fire about twenty feet by a hundred, moving toward the ocean.",
+      "text_sha256": "sha256:0e3dc65f710953d670afd8e88422c9ad0531a37b87e4cc55419ae62800114f9c",
+      "idempotency_key": "sha256:e011ff3245443c39348ff2839bf38ebe80af4f67d60611bb114d4fcfcc75a9a9"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "It is the same field they were called to that morning.",
+      "text_sha256": "sha256:476d865098368aa8c79d66f61fb450d8701be27adc00affafa13f661da46fd30",
+      "idempotency_key": "sha256:44c8ba064f8187c5c4a15582b11017c9e9b71b1b487d86a4a88cb5cfd4c825d1"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "What nobody standing in it knows is that the phones in the town below them stopped working hours ago.",
+      "text_sha256": "sha256:8e994e50ac38d66ed8a2aef14842f442520e91057d250d6a7f3411eeed380622",
+      "idempotency_key": "sha256:be769ec15425eb981371d9ab28c3f986d07e40ce961ef2941fc6e45904087e97"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "This is a story about a warning.",
+      "text_sha256": "sha256:f76ecf2d61e3a912056978aa01c945e8b6bcf6d9ad3751deebb1c61b436e4780",
+      "idempotency_key": "sha256:02bf1c0309f8768e554388920312ad814f54e6c07be7c2c141de92138056bcef"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Not about whether one was sent, because one was.",
+      "text_sha256": "sha256:0a37e5c515d19d8e6cb658cab0189e4b47ee2525e1af8a2480c436b288f59a4b",
+      "idempotency_key": "sha256:4633f7f157779f1dcda7cd3960031f5778574f210107cf774f94f23cea742b00"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "About what it was sent over, and what it was sent by, and which of the two the state had actually built.",
+      "text_sha256": "sha256:11ce930e9ee869bf9c48490f5142649e20cd8d446c88d8a7bd50d59e486d2bd6",
+      "idempotency_key": "sha256:1438e5fc778ff3a1f30c14b4a094e157dc87aba04a2b23729ea20fd2b7482826"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Over the next half hour you will hear what the largest warning system of its kind in the world was actually for, what happened in the town on the morning before the fire that everyone remembers, why the message that went out went out at sixteen minutes past four, and what the state's own investigators wrote at the end of five hundred and eighteen pages.",
+      "text_sha256": "sha256:fdaf99c032f35923030458eaad24aa14e1ec68e29b9b30767b47a6810f084ce7",
+      "idempotency_key": "sha256:c360b640f23ef53be442daae52a5259b1a2bdc0bbb2575fccacca413b28f204c"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "A warning system is not the equipment you own.",
+      "text_sha256": "sha256:32824fb55d7134a043c129fed9644c9906b43fe040ef1ae2ee1013c289cc63f8",
+      "idempotency_key": "sha256:fddba35bb6db354a800e09ec1397a1f2fcfdf362e4ad3dd58ef2a2b72d39b52c"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "It is the thing you are in the habit of using.",
+      "text_sha256": "sha256:d622ea3bc01d97babbb025d94c45ae3ecd4e47c64b0d45cb6e66d0d25a60a9aa",
+      "idempotency_key": "sha256:715d8978f996ed92270a61bd85372f13796a2dcf8d83eda43c8c5db00e6658c1"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Hawaiʻi has more outdoor warning sirens than any other place on earth.",
+      "text_sha256": "sha256:99d7fd309ce7cb52001c6d1c123e99ff4c429f2ff09f12508483063e30911863",
+      "idempotency_key": "sha256:81db6b80d328367652a551b07455a20db3a5fa03c0b40c3ed963cc7597938ea6"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is not a boast made by an outsider.",
+      "text_sha256": "sha256:554ad96923d836781897ad38d7d534a11ac44d7ace843b19ddf35339aec4faa4",
+      "idempotency_key": "sha256:97847dc3dc0947cbaa23f61fdf4f7e5384fda44082c584191c8e759eb7f1f936"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is the first line of the state's own description of the system.",
+      "text_sha256": "sha256:4a3a514c91b1dc07b34a4960ceaab81817057f328d32d92ac987617ad43dcff2",
+      "idempotency_key": "sha256:047c50f25202bde12e85b83ffa99dea716254c49ab4997f6bfbeacf656e77405"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "\"Hawaiʻi has the largest single integrated Outdoor Siren Warning System for Public Safety in the world.\"",
+      "text_sha256": "sha256:59c3c93ee6b0b07f55580d22d1e5e07d1268bf766e177b34719369d398b76f8b",
+      "idempotency_key": "sha256:f05ab5e0a340f3825f4ef5f18f2ebd2d18106a4bfcc1a3c5e6145d098e1f6903"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "More than four hundred of them stand on the islands.",
+      "text_sha256": "sha256:128e8ae51257624d07993ab78e3a4ea9731506a0522087360b1c8634b1460530",
+      "idempotency_key": "sha256:50289849da6e86572be90ed100e99f6c6604933e8f8e0af5f501d59024f9633e"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "About eighty of those are on Maui.",
+      "text_sha256": "sha256:5bb8f7e9cd00abac0771a55c85b4594a271ecf43469a043ee4366c3f928b114c",
+      "idempotency_key": "sha256:d159b29cb49fe31de13b6468eaab05113608cbabb72f24aa786a5138200d7e7a"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They are tested.",
+      "text_sha256": "sha256:0feea7dccbe615987d6ae66073398809fc21a75cb96e7b36d01f78fba9738700",
+      "idempotency_key": "sha256:9cb41fc2cd5f73ea06758a22c80eddf6f35eec6bfec4ecbae09029cec3773e84"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Not occasionally, and not after an incident.",
+      "text_sha256": "sha256:794830d5122bc6080be137de1e3b362f27b27dbfe4fcdc1820f311bfc3db9db7",
+      "idempotency_key": "sha256:5ba0e2ca989fc20b176d7aedda2fd9609ea6704b7024cb0bde30efbafcbd0962"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On a schedule, in public, in daylight, on the first business day of every month, together with the emergency broadcast system and the local radio and television stations.",
+      "text_sha256": "sha256:f11657fbd1ba2b87836f6ea33960981065880e761c0d8092c8dad0776d6e1660",
+      "idempotency_key": "sha256:2da25c1a2e97cef9dd4cf166acb2fbee5241e7e9bef33c74df2cfec5415affee"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Which means that for decades, on one morning a month, everybody on those islands has heard exactly what that system sounds like.",
+      "text_sha256": "sha256:601b581a1ea3d72bfa49641a4cda416a5d180145ff1f06c2fd0380f8c6075779",
+      "idempotency_key": "sha256:08d319baac8efaf7df1cfad8c13c08269c678f09b133947672a6f3e85d0090f3"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And the state publishes what it is for.",
+      "text_sha256": "sha256:44bf350dfe93e2310bf28b3eedf366a3d9459cafba6b3b43894ef76f589f68d3",
+      "idempotency_key": "sha256:b377adf7f112b724c99c29db9fdaa1c119cbbfb938d443aa995ca6aa2931cdf2"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The list is not short.",
+      "text_sha256": "sha256:eec1ab666cbdd98af622e87d96c67cc55c0561ee287a5b75ce9182ebb1171111",
+      "idempotency_key": "sha256:7eeff2e10e3978d9f7b05affccd06161f5fe011558fbe8ca71bb5e0392a15282"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Tsunamis.",
+      "text_sha256": "sha256:d6c263494d4bfccc231feab9b18bf9053d1046cc13f838052fc60118c9e5f378",
+      "idempotency_key": "sha256:73f5183e31414d5673562fe0bec726f88eabcc08594d8fc5a4e876f8398f3d14"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Hurricanes.",
+      "text_sha256": "sha256:3251b5d8694f2d8fb88b7b98164351189fc079fc006e537c4c81152e56c572ab",
+      "idempotency_key": "sha256:aaa525628c5e0f853311865f9aeba1f75f8d5840dbf0d51f603b65771c20d90c"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Dam breaches.",
+      "text_sha256": "sha256:953ef6dcfb3b83cd2d60d6fda67283867bc46beeb0bfde1e76321207af7dfcf7",
+      "idempotency_key": "sha256:93a223f547dc63f67737f8ba6d14aa9b6ed8c03d51a1ac9a836e351f3a275347"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Flooding.",
+      "text_sha256": "sha256:1be16a136158eb3a421c9eef496dbbc00bf925ed88e540e0ff91fbd905c80a42",
+      "idempotency_key": "sha256:ae5683474381c6b26f16c930399210bc7657328249c8e1aa6ce400b7dcf39d75"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Wildfires.",
+      "text_sha256": "sha256:bd1d550fc1bcc535cb5e3a90b86600a2cf2eaa9be1859277c54d891c77a6e8e4",
+      "idempotency_key": "sha256:dc1bcb262d29c19c9614031a317fa9d7b66ffa28a78873b99e6f6b04814fc206"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Volcanic eruptions.",
+      "text_sha256": "sha256:8199a8441896e16ba218fe4c84ac45bc6f32da2ce5d08cd9b59114bba194e3e1",
+      "idempotency_key": "sha256:7f9967081af26a91627d166b81b24efcbac573ddfb5d20f11462f65cf9dadad0"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Terrorist threats.",
+      "text_sha256": "sha256:c39fd80ff283a6ddbe83daf4ec7576011036d07309d2368d7bb70a8cfa0aa974",
+      "idempotency_key": "sha256:10492f36391d55f82f7a8f257c6c4e066dd4d5fab6c1c981a11b7113b7257e10"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Hazardous material incidents.",
+      "text_sha256": "sha256:50ead4596710a2b7c916e0abdb48af88897b758a54c4fd78edf90fa49562e6e7",
+      "idempotency_key": "sha256:d98bd2577ce5651f1758dbc0263b225b514c968ca8ebaac43629a4b50edcde92"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Wildfires are on the list.",
+      "text_sha256": "sha256:92831db9cd2a6f4e2cfacc6383a79f815a20b326e2e106cfbbeac9e9260e25c9",
+      "idempotency_key": "sha256:fce5e158879a48b0088a656009218f1a2cbe8f3340f9e04110b27fe96ac1de4d"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They are on the list in the state's own words, published on the state's own page, before any of this happened.",
+      "text_sha256": "sha256:282803b9fccd4d1ac6a16fe4d164405d53c6e6567f0724bc955ab16077546650",
+      "idempotency_key": "sha256:6b1883dd576d6a5b1840c62a80c92aa3b21480487895f9d21f6dfc98f7f32f65"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There is one more thing on that page, and it is the part almost nobody knows.",
+      "text_sha256": "sha256:fbe470864836431e86b2c43a894cfa95dcdc95463fb8e75b13daee28608cf4be",
+      "idempotency_key": "sha256:3a96fbcd0d708dc979abd2cfd6da7a580c85da166e8d8216f22ca06c99f59fa6"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The sirens do not tell you what to do.",
+      "text_sha256": "sha256:1935b41232f56078e5de35708dd749cadb20f31a0ff9d61a7c052b787e7120e4",
+      "idempotency_key": "sha256:565a7ca5100030e8bc0b13001bb09d86eb4fba0ea0e6f951b6e533d77e4111e2"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They are not a message.",
+      "text_sha256": "sha256:b88d647f67cf39e1c2f6536509fabf72a0dd0a6c51a9da7d1e4747520d2e7c4d",
+      "idempotency_key": "sha256:74918258c6037b6ce8412c8e428124fd7ab0521e90ed713ad9f1527c6abf2ebd"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They are an instruction to go and find the message.",
+      "text_sha256": "sha256:668181f0e0e228bd594892b7c420f3aae35b718d1f13a70a2882d3c0d0c1198f",
+      "idempotency_key": "sha256:4afd18dffca324b54cf76ac9209f367056d0ab6ff4d7a5b519d43c1a9e3fda11"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The state's own guidance is that if you hear a siren tone at any time other than a scheduled test, you should tune in to local radio, television or cable for emergency information and instructions from the authorities.",
+      "text_sha256": "sha256:0bf649b444eae1c7f1bc0c3f75a30a729d348b2d914f9351eab71e6f76760366",
+      "idempotency_key": "sha256:8ea66437389051c1aaf0f0a61ccf677989f58e8cd4243edd4c30ca4c6303d7e2"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is the whole design.",
+      "text_sha256": "sha256:ccd4c88e3c96ce0069a8ada9c63b2d818d9318fbabeb17ed7062a1b84af2588b",
+      "idempotency_key": "sha256:fa36059d8dfa577ee9a4bf7fbadf7c4084ade0c17cb22ee1dc8e27dfff05dd96"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A sound that reaches everybody, followed by a message that explains it.",
+      "text_sha256": "sha256:d7a109c00c9bbe37bc801c4347c95e9e2ce06c728dc9d0a248c80ec6f08703df",
+      "idempotency_key": "sha256:9fe393018a8aa7761ea91b48b486457a7b9766a4b53d4d7fe2caab7934d2d4dc"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Hold on to that, because the second half of it is going to matter more than the first.",
+      "text_sha256": "sha256:62141de6f0ef13cc7c859a8da696560cd1cdf6a0e02eded6188c08bd091a36e0",
+      "idempotency_key": "sha256:0b003c95689b37d5ec3f7e8107ea28eab6dd019ff7730d6e7e2f9c765e7a2a84"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Now the week before.",
+      "text_sha256": "sha256:c6b92aaeb317baa9dadf87ba63df21018b3d42225864f76010882a718cf75739",
+      "idempotency_key": "sha256:523c4f340bc4e59f5a7ea8cf78fe258c0f78561f5ec05381bfc5be05ad217716"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On the first of August, twenty twenty-three, the National Weather Service issued a forecast discussion that predicted stronger trade winds and dry air arriving with the passage of a hurricane, and mentioned the possibility of Red Flag conditions by early the following week.",
+      "text_sha256": "sha256:82be3ac30146ed24c126949579abdb79c50612d8e3827689f558e45a5af4071c",
+      "idempotency_key": "sha256:410d9053e7ac6c07dc24aa7328125f89d9739693f024f73136a456abbee48b33"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A Red Flag Warning is a statement that the weather itself is now capable of turning a small ignition into a fire that cannot be caught.",
+      "text_sha256": "sha256:56b9b3ffa7cd5103176bfe7af7b2b897afad152079dd053580c769533190cd24",
+      "idempotency_key": "sha256:ed41a259c932dbb94a191b053dbccdbb57d2e025aff6d61d725fcc716aa2415e"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The hurricane was called Dora, and it never came near the islands.",
+      "text_sha256": "sha256:eaae2f03e78353fe034d03edb03cadd58d07a0aed439db9b56901dc5b64d54ac",
+      "idempotency_key": "sha256:d9b0407659f2405bcf7a9c470d13b0c126f75da922efb1450095737e59da915d"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It passed about five hundred miles to the south.",
+      "text_sha256": "sha256:a3cf380846ccf16242e637faa1c17bd5050179bca1413933268e34791ad50318",
+      "idempotency_key": "sha256:bbb74e743b5ba4dbb2647ab48612ff3483c5098119809c60fbfe87011cf81635"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "What it did was pull.",
+      "text_sha256": "sha256:65d2c050e4e20a1e253fe99449f1f51b069b0dbe95807aa98b2ee58cefea81e1",
+      "idempotency_key": "sha256:b05ee7d353a6bc2d363a97ef60fe9b0be04d66666e64ec748b6a93be68047611"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The gap between its low pressure and the high pressure to the north squeezed the air between them, and the wind that came out of that gap was dry, and it came down the mountains.",
+      "text_sha256": "sha256:6c0f7f7614bfa6bec7cfa8c840b25c83ad57cbb3fe464134e9079162bef3e889",
+      "idempotency_key": "sha256:bd4f991aca980d6a64e0e3061b26e845d7f3fd1249bcb8c93e7cda038bd4f382"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On the third of August, the forecast discussion specifically mentioned the possibility of severe fire weather developing early in the coming week.",
+      "text_sha256": "sha256:1d0c44e50e12a0c8308ff10994da88c654c8e1f884351d12d5812f24716a73e2",
+      "idempotency_key": "sha256:1efaf3019f6e95d86b7c31520bed7d11c82ca97199d7384e9b495ae5ccd8923e"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That same period, a forecaster contacted his fire contacts directly, telling them to expect strong, dry winds on the Monday and Tuesday, and warning them that a Fire Weather Watch would be issued over the weekend.",
+      "text_sha256": "sha256:972897c91fd9363c4fee3ff0ba5881ba8adfa0e667ba94121d233a4f6a94765d",
+      "idempotency_key": "sha256:71de8b00f08d705e53649b0ce3d74a1414a8bb8e38372e240f8d180bda89f1d9"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And the report records something about that call that is worth saying slowly.",
+      "text_sha256": "sha256:f6a38f01eaa7bba11fa072c8ce9cfa28b18b680f0e970db953679e45b2a6aff0",
+      "idempotency_key": "sha256:570fdf5d58ce9ef76321d6de957159d9023f7bb6754025187b9cd7243c44bfde"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The forecaster recognised that this much notice of such a warning was rare.",
+      "text_sha256": "sha256:ffc7139b3bb16319cc15e2f6e39a2f0a31fcc65455a3a2b8e596f244837664b8",
+      "idempotency_key": "sha256:0035e8510ff700f6bf62279e69f77a96f2a10ff417299ddcd392651670a2a8e7"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On the fifth of August, the service raised its level of concern and predicted that Monday and Tuesday would bring critical fire weather, with Tuesday especially dry.",
+      "text_sha256": "sha256:92b28e91f90d2fd4b5abc1b82289a7ba068fb897a662ca9986edb3aeeef7f092",
+      "idempotency_key": "sha256:d792a98efa85def1cf99fee6663179447b213e2da50c5546ee39b889f83c0611"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At thirty-three minutes past three in the morning on the sixth of August, Red Flag Warnings were issued for the leeward portions of the Hawaiian Islands.",
+      "text_sha256": "sha256:357dc8ca8e3b94c096f826440f7b118f4f045732bdc07e84f7d1aae60c60b2dd",
+      "idempotency_key": "sha256:dc5614d02126516683b4143afc8e929ecb099e97d5c2328ece718e8c173510b8"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Lahaina was named in them.",
+      "text_sha256": "sha256:3862bb0ecf4e3dda3544980002fcb49a02c08b76d6f597b866a97f4a28338585",
+      "idempotency_key": "sha256:5ec77603a41c97301d1183f831d43556f0c7df0111f9355317c642dbc4362c60"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On the fourth of August, the forecast office in Honolulu sent a notice to state agencies, including the state's emergency management agency, about high winds and impending critical fire weather.",
+      "text_sha256": "sha256:f635052d70e5b971e6c2ee48ac32ab536841033e8a7ab6f0f80ac545704c28fa",
+      "idempotency_key": "sha256:5a5a32b17a7b0de5d2743096db150868a5047fac90695da717656d6d3fd68bec"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And early on the eighth of August, between three in the morning and half past nine, the service repeated its wind and Red Flag warnings and predicted gusts of up to sixty miles an hour.",
+      "text_sha256": "sha256:e8b474be6d2d8e319b28871d92012e3fdc10ad3ce1f0d2e8d7fcdc65ddd9dd73",
+      "idempotency_key": "sha256:69f047870688bb65c895d4b837e6b76be42a35eb2ae44a50ceca9e22a09623dd"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "So the forecast was right.",
+      "text_sha256": "sha256:87f410df9b0b7d8cefd3df3999c755c7fdc22116e433f57abbd6c24890675e4e",
+      "idempotency_key": "sha256:9fbe07f8ec4a3de1ff77ac16ab0a1ed1f601378d4be0d6072906fda829cb72fd"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It was early.",
+      "text_sha256": "sha256:90abe90e3f28a4eb8551c9bb3b081b9783a48b585a4951f2edd399a3ecab12e3",
+      "idempotency_key": "sha256:077a4363bed9fb2cf384f3acb2b04ccbe43ef1168d0fa8d65ec5c758449687bc"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And it named the place.",
+      "text_sha256": "sha256:9f5795a8be74359f49c03ebb2998070408ee26544aca56278527756c4a3f5862",
+      "idempotency_key": "sha256:03ce6b0bce10b537cf6075e9efe89b4b5db046227c74e82daf10b0d8893e6747"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Which raises an obvious question, and the state's own investigators answered it.",
+      "text_sha256": "sha256:f3ccf8c0f74d7d50f85e8cbaf75b28720897f8cc0364d874d44cf6c3d574dfa8",
+      "idempotency_key": "sha256:53caa989e7d3197f7524bb84552b5b7e05a76402db7c84c68d7b16cda83bb0c9"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Their sixth finding is that there is little perceptible difference between Hawaiʻi's Red Flag criteria and a typical summer day, and that this may have contributed to how the forecast was received.",
+      "text_sha256": "sha256:6a5cf2b22f6796c838faff5456d7e2164328e1a51c724877b5cff6d561f8bf0f",
+      "idempotency_key": "sha256:a3e4a0cd14f89330101d8a1bce1cd8f495e109cfbccb1b10fe5cb3e8d27103e4"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In a place where the trade winds blow most of the year and the leeward side is dry most of the year, the warning that says today is dangerous looks a great deal like the page that says today is Tuesday.",
+      "text_sha256": "sha256:526ddaf21cd79d4d191849d826ac9aefa5805f95e945b6cce6490bafff92f264",
+      "idempotency_key": "sha256:671e0b6a02e5fccc0c8ceeebf6d81fba71ca82f8630bc6806e9ce76733a95291"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And their eighth finding is about where the numbers came from.",
+      "text_sha256": "sha256:5991ae54734accdbf0843634a83479a8efa3123e5e68c200068afe0448dd4cf3",
+      "idempotency_key": "sha256:d1f9bc0aaeee95e7fe46a9e2fc7b12093f1a1c7d41887d77c25095bf9d6fccb2"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The fire weather forecasts and the Red Flag Warnings were based on data collected at the airport in Honolulu, which is on a different island.",
+      "text_sha256": "sha256:7b50993ee1e0195b17f4bc4f663fc285edd99b942d33d7060356d82f3220d4e5",
+      "idempotency_key": "sha256:0e98daf462cd804156c0504de614befaef1ed986e16bc0babe3af66985d8ba94"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "West Maui did not have the automated weather stations that would have shown where Red Flag conditions actually existed on the ground.",
+      "text_sha256": "sha256:ad28629747692e0cbdfaf759f67c1ac4e02e6861206ec591aee7df8ddfed4017",
+      "idempotency_key": "sha256:d1135e5c6150b4e02285f82b67ba1dc56141af50bef56a4c3a3b129f6ce3eecf"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "So the warning that arrived was correct, and it was general, and it was assembled on another island.",
+      "text_sha256": "sha256:c09e7e3bc4ace24fcb414877d3af4b0dc3a615eb10d7e94d88835c46939a952d",
+      "idempotency_key": "sha256:07b71f6b52204e014d50b9f7945ee6b9a2a5a2cc065428760a4324a6538e74d9"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The fires started before dawn, and there was more than one.",
+      "text_sha256": "sha256:8ef4fb826639797c9e1934de997208a68922189fa21d3041df67ebd9c4b383f3",
+      "idempotency_key": "sha256:f8e49080940087ba735cd478eb2b4df04c9df76173765881811adbd1551e4a4f"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At twenty-two minutes past midnight, a fire began upcountry, at Olinda, on the other side of the island.",
+      "text_sha256": "sha256:c95425985b60d3d1360d330fbc63d3184ba37ac4ad6d7c22d7b71fb9184e0aa4",
+      "idempotency_key": "sha256:c2b48f861733365fc8ee50a33370fcd571ad581dd560cb7f0740e6a6d320407e"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It grew quickly and it took days.",
+      "text_sha256": "sha256:7d9a2b9182ad45d237f68678e2b21a7fb5a1de7d66aa495bdb0384b98443e983",
+      "idempotency_key": "sha256:b9865e2b739cce2c0ba514eb49930b0c9e8b415d0bef382a1879a8e5fc2761b0"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At thirty-four minutes past six in the morning, on the mountain side of Lahaina, a second fire started.",
+      "text_sha256": "sha256:d6741b73c85e7403890ace1c615ebac26fc7b73368c6ab49abded360a0a9de07",
+      "idempotency_key": "sha256:b5bfd187b98ac7da6d161010cdf4a215252f445acf310798391dc2db5f8b803c"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The origin and cause of that fire are on the record, they were published by the County of Maui and the federal Bureau of Alcohol, Tobacco, Firearms and Explosives, and they are not in dispute in this film.",
+      "text_sha256": "sha256:7cdaf4e1c789cf706b68788dcdf31f3ea9499d0504f6f8865743776fd31d4053",
+      "idempotency_key": "sha256:d5831b32b37a424de2543e033639685923032f599e52acf7678f08a527c15e92"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "\"At 6:34 a.m., the fire originated off Lahainaluna Road in the unmaintained vegetation near utility pole 25 as a result of molten metallic material — sparks — ejected from the re-energization of broken power lines above.\"",
+      "text_sha256": "sha256:eac0502236a7ead524a2f2bd803c733f9244cfb5a6670f324d9afa6a0280ca90",
+      "idempotency_key": "sha256:bfba65226f6aa17bbcd09b8248701e4e5b5b6356aa6cbce28f54ccd6c5e20ad9"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Broken lines.",
+      "text_sha256": "sha256:2640077ed527432ea227bad95bc51d412be0df9a0daa4b420191ed84d7e462bc",
+      "idempotency_key": "sha256:daffbef798bd48de09ab23519ab53970829dd054460c78d313f589531c82c422"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Power returning to them.",
+      "text_sha256": "sha256:858088d7e48435793628aa488dedc58d4013dada30bab7b1af56e40cf7243ed7",
+      "idempotency_key": "sha256:1379cd136cd7bbffc315abea14b0080bd7015c738feaa4d43355c45043f2c5f0"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Metal melting and falling into grass that had not been cut.",
+      "text_sha256": "sha256:643c9905b2b9d23ac4b71db5fdf4c25fa05125966cc6e846b4af9cfba6186461",
+      "idempotency_key": "sha256:6abfcae7b080f7fe7e4bcdeb470ed447335812f50a91e54f03d0857114f5a116"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The fire chief said it in one sentence at the news conference: the origin and cause of the Lahaina fire is clear.",
+      "text_sha256": "sha256:c14e14c27aeed9ebce62987042a25d5770a18627741ef3e125a21a3948d1f87b",
+      "idempotency_key": "sha256:7d5e7317db427344369d146fec1f6e7d974f2565630523baa43a04aca9b28f97"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The classification is Accidental.",
+      "text_sha256": "sha256:76ce179af7815d66f385f1bc671352f9c9a02c3f79c1aa56db5ae7f484b077b5",
+      "idempotency_key": "sha256:c8cbaae77455de069ea757b16337bcda875a18c049c817424d5699cdc44d6074"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not incendiary, not natural, and not undetermined.",
+      "text_sha256": "sha256:1f1d94fe0ed0cfb5791d417dce575afb7d0b23a92aa5639a06eb627936cad5a8",
+      "idempotency_key": "sha256:28329de49b715bfef2fc4b5af7b1b96d66c689e2eb57bd0a439229da56eefbf1"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the answer, it was published in October of twenty twenty-four, and this film will not be raising it again.",
+      "text_sha256": "sha256:fa5e40fcbc288c90ce637a740dac1ac1e7990204e4617f903a8a5871ec05fccc",
+      "idempotency_key": "sha256:b429ebb41647571003408b108c3d57eb16a13b0b8ff0d5eaa7ec4fd014c4c90c"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "But something else had already happened that morning, before the fire, and it decided more than people realise.",
+      "text_sha256": "sha256:4b8a9abdc065e79a7cff3fcd5b19f4ad301cdbe23f580db60fc4af0b2210b10d",
+      "idempotency_key": "sha256:d55aaa7d9d50dec5426225f602af0c778ca43a373308774020282a2c24bca8f0"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The wind arrived across central and western Maui in the early hours.",
+      "text_sha256": "sha256:36fbdd26f632bbbdd74d2b1a61d9b457e3898c78c1c0add8bafccdfb2176f698",
+      "idempotency_key": "sha256:0576e269d226ff783d99c99296713860b48008504bb6ff9179de3e792d916b45"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Trees came down.",
+      "text_sha256": "sha256:63939d5900e31ed4a0a90e14c4e09b175fb82f9f6ec7c353e7c096c30480ee6e",
+      "idempotency_key": "sha256:e6e5ebd79d6b89472926f0e1d50ce53701988392843dee6aea17a3f0e9012fbb"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Utility poles came down.",
+      "text_sha256": "sha256:d4131d00d5ac6d2c503197cf3b40c0ead2375c823c5fda2bd0422bfecc47b3ef",
+      "idempotency_key": "sha256:c038041e707464baecc0b41f9f25a4d21626b46df911f5fc38887ffeabea9867"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Power lines came down across roads.",
+      "text_sha256": "sha256:5285901e44176664660b76888d624c0838f04885d68d00ec40db574d5e66b014",
+      "idempotency_key": "sha256:bebced472c2853c7f08178b53f01b46f474a6d5682a75c74fa355956016904a3"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At twenty minutes to six in the morning — nearly an hour before the fire started — the police were logging downed poles and lines at Keawe Street, on the northbound lanes of the highway.",
+      "text_sha256": "sha256:f34c61e2e7e17781bb138c63fef4e8518394fcd8e3f197c313ff2a6ac2cc2c27",
+      "idempotency_key": "sha256:b5cffd00f3aaaa4fd8fd1183b81adf6e3b0400149ced98b3247679d55873f9ad"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That intersection is the one that carries traffic north and south through Lahaina, and it is how you reach the bypass.",
+      "text_sha256": "sha256:d7e3134661da66dab8b9e1ee834069d6340f42bb7e6b2dcc76436d5e94c93d41",
+      "idempotency_key": "sha256:c1b5fe7438883b8f12248b0fa2a55231dc4dd688999f7a8cbc62e067cdff75c4"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The log's own summary of the effect is four words long.",
+      "text_sha256": "sha256:77d425735f6993409e810c3bcb3371fa870b0b928c6baf2f1eb55c4f550c0df3",
+      "idempotency_key": "sha256:3677f8a13c9bb322a3963d79de28695cd13b385f77abefba7fd722f172cda219"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Limited evacuation from south to north.",
+      "text_sha256": "sha256:467efbd19d0ce0e7dbef945574fa93fbaf7b52fa4d71b3fd4e702ac166196195",
+      "idempotency_key": "sha256:1d5c8496c47ee81f13c73978dd8f7a8cb2482edd10bcc3b2eb10e3532b45f2ed"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Before anything was burning in that town, one of the ways out of it was already narrower than it had been the day before.",
+      "text_sha256": "sha256:7d5d3e5b0b996bdba771aea561a8887bc5fc5750e504a3909433e89a4a12d7d7",
+      "idempotency_key": "sha256:dc8bd3415b866363ec659bcc09aae49b0fd13b8394c8558ee8b0e7484bc46c9d"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Two words are going to keep coming up, and they are the two directions that matter here.",
+      "text_sha256": "sha256:755fcca582306e510714bb54cb451e04115f57132152b57c4e733a0dbbed6ee7",
+      "idempotency_key": "sha256:0cec1e74affc16a0db4285b7bda7d8b2f57c42d4cf70e2588246dabbdde20315"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Mauka means toward the mountain.",
+      "text_sha256": "sha256:d1f6c13934c1b501c6b504e275b2bfc4374617012e381367713cacd8bd6af6ab",
+      "idempotency_key": "sha256:47d4c83a1759e52943a7292d917bc6610ca846aa0229991f02e0904cbc979e72"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Makai means toward the sea.",
+      "text_sha256": "sha256:6c4f0b8fedd74b32e7f0c21b7e7299ac9abee0e0dbc67674d08df552957789be",
+      "idempotency_key": "sha256:58873e20f041e44f887ed1799b011e7efc2b99d727c93375446f4818f5c27c89"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Lahaina sits on a slope between the two.",
+      "text_sha256": "sha256:a920cb0b60fcf8367fbb0c87e6f8fc3ff96cb36735cbf912338822a39ffcda41",
+      "idempotency_key": "sha256:bac274bb6a6c160ce5f1d786aa949123bd0cf79b67534c8c2d6fbe960b4d98c8"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The fire came mauka.",
+      "text_sha256": "sha256:fe6d8dfa056e1d6fa626f71247046fc37808e92003d2fc285230499160fc43c6",
+      "idempotency_key": "sha256:a50d353c9a4e7f61e15f96f03540dad87d191a7168be08f0e4e19cfba393df01"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Everything the town was built to be warned about came makai.",
+      "text_sha256": "sha256:1828032471ea642e10b57b4d567885b720e1457a4f4a9f57926cd9a6342193c5",
+      "idempotency_key": "sha256:60da9de864cf608f1067cf0d88271f4dc85d24abb23e0a58b8b392b9923211cd"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The morning fire was fought hard, by ground crews with private bulldozers and water tankers, cutting perimeter lines and soaking the ground.",
+      "text_sha256": "sha256:f9e8beba8bf02ec1912db885fb4f5ca71837f4df0b4b15b8097fe4cb99ff6625",
+      "idempotency_key": "sha256:a7b58c69983c452b3c249308e1a7995a941bdd10d5cfe54b119d1174a877cf67"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It was contained before nine in the morning.",
+      "text_sha256": "sha256:4758c7ebd878c155969beeac101fbd6ed0ad54eadb06e7bc487a741c0677eaa5",
+      "idempotency_key": "sha256:e7a4916e02e33504d166ffc88c426c4469eb4f4e78773532f43d2e76a13dd45b"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And then, in the County's own words: all available indicators showed the fire was fully contained and extinguished.",
+      "text_sha256": "sha256:10a7e168c5820d4525b2cc763bc76c50b1f4c3ddfaa2859d5052b6c29db0e8c6",
+      "idempotency_key": "sha256:847fc58abc3b8a88a02fb2bc2e4ff74932912b141f3aa5174badb0797424ea20"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "No flames.",
+      "text_sha256": "sha256:e7baa244806c0f0c6e6c1e415b7371425dd6af12dc11705b37b5beead6b44d5e",
+      "idempotency_key": "sha256:0cabf6cac8d18638d49635e65552ef40ed07052a52a749c568f0f51806f40571"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "No smoke.",
+      "text_sha256": "sha256:bce2054b42f971422142a59bd8d9b04a874b335f3c7c23ef39b029ee68e4d986",
+      "idempotency_key": "sha256:d968834d7a0aba15fbd97cb00188c58507ca1aead068dfdec2f08a9ea15d7d5f"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "No perceptibly combusting material observed, for several hours.",
+      "text_sha256": "sha256:d5ee7a8821468e85ec0360c8ebdb7a490b96f692dc076b38d5bfa2813bf7e0c6",
+      "idempotency_key": "sha256:39d4ec2f3fcf7baf817a6695c034d81204915dfaa66c9e7ae4639efbef0bd0ac"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At ten to eight that morning, the relieving crew walked the burned ground and looked at it.",
+      "text_sha256": "sha256:1770ea1afac1bbb91f3688779ba52c72dff30518403707cebd697d08418b6645",
+      "idempotency_key": "sha256:6eac97d445cb961d83ad5dab07e380915900e8236155e13e45cb5a0c79ac61ae"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The officer noted that power lines had already come down along the gulch behind the houses, and that the lines still standing were swaying in the wind.",
+      "text_sha256": "sha256:052951800664e1f83b5675d3135aae8e9eccff33e61ebe446dd3ebd29cfa8e69",
+      "idempotency_key": "sha256:c2e1c7153e8e671c4cd9c4e138e63fed4e7606b98889e59805c13c88341901cc"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At twenty-seven minutes past eleven, a third fire started upcountry, at Kula.",
+      "text_sha256": "sha256:edf7867ba128dae466f83ccf66afd45c69d3e6a2984c53039aca47d96bde68ec",
+      "idempotency_key": "sha256:302d87a8c4ec23428d6d1a6bfba441726a455f7eabb7172821de3314fb08c682"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It burned uncontained for over a week.",
+      "text_sha256": "sha256:0591b665bd3fb07d835cbd218c4b5c58ccbd71556aacb52996876b4c172d1d8c",
+      "idempotency_key": "sha256:41854efd14a6462ca07990bfa15b62fe4a3947546d3fa7c19abefa9d9a24be08"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There was a fourth on the island that day as well.",
+      "text_sha256": "sha256:c9b060a39c05527004664a238fc4a4b5e755139647dbf261293737040cc1ee4e",
+      "idempotency_key": "sha256:1e68e61ee95710789c30e83e3c18866cdb14a829e012699ffe411f5b8e71d9ae"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Emergency responders on Maui were not managing one fire.",
+      "text_sha256": "sha256:ee5113085a72555b6971bacfbb5838aa67ec803f100b3a2f1f7e822fdd49fb03",
+      "idempotency_key": "sha256:9c2f4374fb2906da8a484e142d24b8272f7bc39464363d2e2909921c238289b0"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "They were managing four, and continuing to take new calls across the island.",
+      "text_sha256": "sha256:c29d82172159d947067ea9bde38f28c0115519d4ba5667666917f622eee6c2aa",
+      "idempotency_key": "sha256:ecc2854aec79d6c58677a26d46da0ed388cf55f6acf8e536d494166f8bc64c3b"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And then, in the late morning, the town lost its phones.",
+      "text_sha256": "sha256:4c952fbc6930a6ede0c15feaa9d74b027021e7e5df3a3e9cc9974ff08a2faae8",
+      "idempotency_key": "sha256:adfe9920fe90c9a864822ff48fc74be41cbff96399a8789a7aba5870e4dd511d"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The state's timeline puts it plainly.",
+      "text_sha256": "sha256:220e08b59715006471f3ed836f96ae72908b36d6f4483da8193b8528afd61c38",
+      "idempotency_key": "sha256:fd16465f2ed37d9a051795d9100bef27c49750b30d7904405ad567f47e3004cc"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "High winds crippled the communications infrastructure, destroying cellular phone communication within the Lahaina region in the late morning of August the eighth.",
+      "text_sha256": "sha256:97902219f4134f2f529914ddc23b463207b9eda30dd861d3894924280c98d199",
+      "idempotency_key": "sha256:da221658e39a8479cf12f5c77f28895bbd636439b6c50dce160a63ab567c289d"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The report then spells out what that meant, and it is worth hearing all of it.",
+      "text_sha256": "sha256:e18732862bc723ccb4dfbe4dbd432e541060e655d9fbe87c02893ee50f171c4a",
+      "idempotency_key": "sha256:41869ce7beb64538cd9ca191ffc530a6b5c4101cc0f73f86d4ddd50356ea4ede"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "With no cellular communication, residents and tourists were not able to receive emergency alerts, communicate with loved ones, or receive incoming or outgoing calls or texts.",
+      "text_sha256": "sha256:17148e0e4c1590f19510b00fe10f77b8db48f34bae15e5d8facba50b35b7dd46",
+      "idempotency_key": "sha256:57cab40c9b0e56e0398ca103644204e7a3082d748017c3a6bf54d5e586439290"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not able to receive emergency alerts.",
+      "text_sha256": "sha256:be7b86bf6505c688bb4d3771160589b1166485767f1daa1856666aa9feb31750",
+      "idempotency_key": "sha256:8b55fd73e713511adb6bd7bf50764e4a1b38f1570f8a4f1d5694ea13ff9a67be"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the state's own sentence, about the late morning, hours before the town burned.",
+      "text_sha256": "sha256:f857fba7370fa5e2877f4f82cbb128ae4bc2d25a2cf95890ce47cbf80a75c9f9",
+      "idempotency_key": "sha256:99b1a16c8270855d7e70f68dea873e7cc2c7d0a142e5bf49cf84f0c577154b2d"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The police lost them too.",
+      "text_sha256": "sha256:cdc9494e067b77634cb6816e274fdb92ec5f30f282f0312f27638278b44c5c60",
+      "idempotency_key": "sha256:f2df349dbd7851296c7099e029ce4b78c52d8cc4ad0b3918d27ac47f7ac1213c"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Officers in Lahaina had no cellular capability at all and worked the entire incident on portable and vehicle radios.",
+      "text_sha256": "sha256:a71db8dd2018dfe893151e73185bb9f0f89d6cc316d014f5409f10d1eee4b9ee",
+      "idempotency_key": "sha256:8898735f40157e70d64f73f2d46dbe57b89651324f2454169fb5caac8a70167a"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There were once landlines in houses for exactly this reason.",
+      "text_sha256": "sha256:e1848b5f624bdcc59d0c0b142bf1b5d2aa853f053a83d4f835bda02fbc3fa94d",
+      "idempotency_key": "sha256:2a7cabe374d2b3a41b37f384e0dbadc6d1d2c456b8d114508d16442c88fce8e0"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Most households no longer have them, and the report says it does not know whether the ones that remained were even working once the power went out.",
+      "text_sha256": "sha256:7458bd5e0ec2835254088dcfa5ed013729a26036986239455175291564c3e7df",
+      "idempotency_key": "sha256:3e424652be8c214342fc07dbe5bc89cfcfe3716ee49247e45884ba49fafa391f"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At ten to one in the afternoon, a county entry logged network issues at Lahaina locations — the senior centre, the fire station.",
+      "text_sha256": "sha256:de1f86e2a1ac741a567a6e8fe6aef44f6429aa1c59aabeb2e920b140399264d7",
+      "idempotency_key": "sha256:0e5f8306a89d9bc4484ebc9df1a4b63ce4bcc3ab205df67b58007a648f2d95de"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At thirteen minutes past one, the shelter at the Lahaina Recreation Center reported that it had nobody in it.",
+      "text_sha256": "sha256:77e6f0db4d5c4d029fe0d5071a454df2e75295c11359f26dea2142a3a8ea8656",
+      "idempotency_key": "sha256:74132e874863d2896e241233cbcfa2e6d5b17517d6e27943db12e72e69a5b1e0"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Shelter population now zero.",
+      "text_sha256": "sha256:1b77e6596a5d4b4ecbcb7f9c07dc58d76e461941e4e73a757d55b3820a641c5c",
+      "idempotency_key": "sha256:c40317107bcf8070249505d2371ab8bbe6651e728a2ec55a413dfcebc68fd0fd"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At two o'clock, the shelter at the Lahaina Civic Center closed.",
+      "text_sha256": "sha256:da8843380d14325420ae7305523dfc5fc61ed7bcfc16f0c81cd106e1eaf06b44",
+      "idempotency_key": "sha256:18d666260fa8323291800f38712a22d924067460631eba0e98b1865863c1950b"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "At seventeen minutes past two in the afternoon, the crews on the morning fire reported it extinguished and returned to quarters.",
+      "text_sha256": "sha256:aa150c3be97a15f0008e464c36c2cde8ac36405620fb5ecf398741b8fd3787f5",
+      "idempotency_key": "sha256:3511ea31f4159ebe15843441b8a0125218beb791aac539ed6fb568a1f93c5156"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Thirty-eight minutes.",
+      "text_sha256": "sha256:682c9f41e525719be19652f4095866e643e64c288cd331acc9055118af8e4f9c",
+      "idempotency_key": "sha256:5b2e7ebad6360b024f260c052207e1291cdfb5be347571d5ee2a5396bae92f59"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is the distance between the crews reporting the morning fire out and the same ground being reported on fire again.",
+      "text_sha256": "sha256:96a04bc81dc9396e149486f741db44a8f03d545300f8149ee63c155874621383",
+      "idempotency_key": "sha256:9f8b750501de597875cdff4a67d50b40165c8c1075a8fd3aee63ed1870a75eb1"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Here is how the County described what happened in between, and this is the whole of it.",
+      "text_sha256": "sha256:3d2c69156f7aab12407c41aeca88f2c219e3efb4f36ae41c1a630a109e1cfe77",
+      "idempotency_key": "sha256:91282929bbcc1d5296eef98ec45d4912887f5bea5330900ac34ec2f6b75e7b79"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Despite diligent monitoring of the fire scene and deployment of significant resources, embers from the morning phase of the fire remained undetected and were rekindled by a severe wind event at approximately two fifty-two in the afternoon.",
+      "text_sha256": "sha256:dd47b55542e7d93ffad0485d0573b194f14aab21f239e5611f7de2e5a0939c1c",
+      "idempotency_key": "sha256:4226c95f90c932b0ef1d43c9357ed50f1d052d845f3cfe26bf3f44ca9e129178"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The County has been explicit about the firefighters, and it said so at the same news conference.",
+      "text_sha256": "sha256:e4fd44f8ac85149f75e8d722cc4f3d0e5c68ea4b7b09f2cd4ded3496d7d829ce",
+      "idempotency_key": "sha256:fceeff5f51873f9d297a339a86f05e8e7ea82d0b33bf77a7431d5052680b4d20"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Its assistant chief said they wanted to make abundantly clear to the community that their firefighters went above and beyond their due diligence to be as confident as they could be that the fire was completely extinguished before they left the scene.",
+      "text_sha256": "sha256:15556ce7492162b070a2eb4572c1fbafed57af846083268428dabe780968f3ba",
+      "idempotency_key": "sha256:53b9552f644d3dc4bdbc7b23052b6a7991cc5046d6a98363bd48b5e9cdb182ac"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the state's investigators reached the finding that sits underneath that.",
+      "text_sha256": "sha256:d722948ee724b8e9e1dba6393280e6c1ec31e7a2e61c0481de3b43340340e470",
+      "idempotency_key": "sha256:f0e705aa0656159c46cea4516186fde20b4184eab1455f9a89f7eab81cb640b6"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Their sixty-seventh finding is that the firefighters performed mopup as proven successful under typical weather conditions — and that under the severe conditions of that day, this level of mopup appears to have been insufficient.",
+      "text_sha256": "sha256:3eecb0f0d7eae34034a9bb232cb12c4105f1998addb39d1085287493e8764b6b",
+      "idempotency_key": "sha256:c19fdd9780f96d5e7e162bbd101df0b6b95d6cc7f8fdd049e3490d4cf8e74238"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Mopup is the work of turning over a burned area and drowning what is still hot in it.",
+      "text_sha256": "sha256:3de083457bea1d884d1e771c609c1b339c39b054d9ebbbe8d48c5b3474c99683",
+      "idempotency_key": "sha256:169e29274db31f47538bbcfdab23ceed5614f10a4e5b4aa3b79b3f3ed4ef0b73"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is a procedure, and it has a standard, and the standard was the one that works.",
+      "text_sha256": "sha256:82f1a5f48cb404e1da1b56ab316b794dffe35e8baff2959e6847e078864ca87f",
+      "idempotency_key": "sha256:fc57b435ed722942bc1bd9ea676e2c3ba3097db45e112ecda1ca0211573b295a"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is the finding.",
+      "text_sha256": "sha256:d44c903198a03a3225545ab055597726aa56dd3f3bc930ac04e328d2668b0e36",
+      "idempotency_key": "sha256:45f7cd016e40130fc38ae11891c4714ae92112f55d2b6f6638f6606c0154a9b7"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not that anybody left early.",
+      "text_sha256": "sha256:66f83a260dc4ac86e333fb07bed9ad64862ef23d2c93047df3c5afe51f786b19",
+      "idempotency_key": "sha256:1d62660b0b8ff2c416b36a07dc7a37888eed58a9fc38eb5540d46a7f882d514d"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That the method that has always been enough was not enough in that wind.",
+      "text_sha256": "sha256:b16d6a3b8434c6f043b678aa04ccf5641b0f9da79ba2e94ebb188ee52850fede",
+      "idempotency_key": "sha256:43611d1e41a11146ad1dec49d03ed6446ddb4931b050abcd9048c3ceca116a84"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At five to three in the afternoon, the fire was reported again, at the same place, after numerous callers to 911 said it was moving fast.",
+      "text_sha256": "sha256:2f9484f2644bdb878634f55601668fbe8c81bcd8f38a06dfafde7862a4fa0a96",
+      "idempotency_key": "sha256:629c6da5af29e0229b1652676df712d171425bea12ff721361cd5fb8eda6c52d"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At two minutes to three, Engine 11 reported it could see smoke.",
+      "text_sha256": "sha256:e30626169a6fcf06b8561fa32393a49eece2b67dd83b2bdcb441c3dc90eb1410",
+      "idempotency_key": "sha256:a3c61356be65a13268d858aeecca5423fcda750a5815337a7a2fb6a9aefebff6"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At three o'clock, Engine 11 arrived and reported the fire was approximately twenty feet by a hundred feet, moving rapidly makai — toward the ocean.",
+      "text_sha256": "sha256:c4418769659913618dac2d742529e9e483fd5e1af64358f7dc7a88a957859ed5",
+      "idempotency_key": "sha256:0b74375ee268d417a88ac68411cd1b8cf4948f31de0da9128b3b13d9ea5d887e"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Twenty by a hundred is a fire you can walk the length of.",
+      "text_sha256": "sha256:5b8e9443da30b6c1094abccbeb7fc20d2fba4496dcfd14fd7f512866759be451",
+      "idempotency_key": "sha256:7daa2a8282c8464e4a47957c0f7825264a5b9154469f6994231df6fe88d3a20f"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At five past three, police arriving at a shed confirmed the first structure on fire.",
+      "text_sha256": "sha256:29839661c799414e848c86228e0712737f93a862057b473dc8e6fb61079b22a4",
+      "idempotency_key": "sha256:d68d95efadecafa3ccf9a8e9fdab463086eaa9e79b634e6e90119f92a89dfe5a"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Here is the mechanism, because everything that follows is this repeated.",
+      "text_sha256": "sha256:2c4cd15642b55e3260a223601640c95754317550defd9cc23554b3c047bc5249",
+      "idempotency_key": "sha256:26805b3ba874953cb5eafd8cbe6316520397bcac4a7d51a9df4d2e6689689bc9"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Fire moves through a built area three ways: direct flame contact, radiant heat, and embers.",
+      "text_sha256": "sha256:c2654056f15d3540f8d2dee291825aa4c50a194836982f9609935584b222cd16",
+      "idempotency_key": "sha256:79e78f76299453bc989d3e793a854c259bd4a4fa6078977d2b409a456b1e8bd1"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Embers are made by whatever is burning and carried by the wind, and they start new fires beyond the edge of the old one.",
+      "text_sha256": "sha256:ce665ec499a08c48b48aed18d60cb90a8557b4def588e2d8f46cb82b9f59f8c8",
+      "idempotency_key": "sha256:95d806c34f13a8d71de216b4512f5a6f731d9fef8cc3ce44d82437b2f01d0259"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They get into buildings through vents, through windows, through openings the wind has already made — and the building burns from the inside out.",
+      "text_sha256": "sha256:2bdc5d99567108f1d31a16a0eea3ecb5b7dc8ce90b4fe9dee4995b25cfe670d4",
+      "idempotency_key": "sha256:3a9a920b611a399a1b85d4e87570f68db1378bab9f486860da4f3cd2b20e5f47"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At twenty-one past three, embers carried by the wind spotted the fire across the bypass road.",
+      "text_sha256": "sha256:37fa13577f1bd899fa36b72070d2898bd143d6d574a93941aa81ef0e91c84331",
+      "idempotency_key": "sha256:6c10f5606ca0f7762a5ddf4ef01b1b34618c359f318d2c404a24a4b9f3293c57"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At twenty-three past three, command advised that the fire had crossed Lahainaluna Road, that it was in the park, and that visibility was very poor because of the amount of smoke.",
+      "text_sha256": "sha256:895036babb46a2b96fde422754783618a2aaa97a634080e02e28a18ed23d508c",
+      "idempotency_key": "sha256:9346307978b3b2b5d28cc0e2c7f4fc6b873c1470db7aea878cf59c0a53e76bdd"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At twenty-eight past three, a ladder company reported a structure on fire south of Lahainaluna Road.",
+      "text_sha256": "sha256:65f0830933589d08508dcea1895bee84ce9bbe042c41b8b1da422a97444aec1d",
+      "idempotency_key": "sha256:412eb5424b482aa57e77669aada73444396e3704a19422c41550d3fc7eab7f8e"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At half past three, vehicles were burning near the bypass, and embers were reaching every house west and south of the park.",
+      "text_sha256": "sha256:2ac5f78ed35b2b61ae30cf028d389aef0cd424ecb2c234f0c20ad0ce081f8dba",
+      "idempotency_key": "sha256:3be11c267c5672271afd27f9c47c1bf50150b6883c3d32f484b8c16273340b3e"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At thirty-seven minutes past three, this went out over the radio.",
+      "text_sha256": "sha256:3a896f4b7d90edb2992a75dace26d4bc643f137a97fce2540b81a29aea961e23",
+      "idempotency_key": "sha256:b2a23eaedee6ff9a845b7011e1f9fca27f24338d895bc2d5355d16114b3b4b7a"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "\"There is one house on Lahainaluna that is fully going now.",
+      "text_sha256": "sha256:8aee9cc427e30d69db5885f309e2a2dd7188f95de6d1d35471e9813045769eac",
+      "idempotency_key": "sha256:c84e71cfb4b6f1aa4f3f36be6b99ad031a5ea1df968b385c1af84e6359898cb1"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "We need to stop it where you are.",
+      "text_sha256": "sha256:a2bd9ee647e176c27cc5e280c2aa15e0c48e3c30915358cd247120017c43ccdf",
+      "idempotency_key": "sha256:511842f051056b119fa1ccb710dd685e5525d321c3183f806950623ce185f3e7"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That has to be the cutoff there, that road back there.\"",
+      "text_sha256": "sha256:f266015e49e05c7c0e9744c10db303742b7ccb8bf5c724b285e88c15ee5a6acf",
+      "idempotency_key": "sha256:37874d91b05002acd2d24296bf6dd13fab9071a9215f9475c49b422a2b8fe002"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The engine that answered said it might be multiple houses.",
+      "text_sha256": "sha256:2a9eec76d7a506ed65432e85265c99ab831875e64811eaf6559b0c749bfc89f3",
+      "idempotency_key": "sha256:2e8f81202d2ee9988cdc18db3896b9d59a14cd32ee0550026732bfbd95dc6871"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Command answered: yeah, there are multiple structures going.",
+      "text_sha256": "sha256:99165116acb3c9f0c41545daa4fd0a4d5f9432590377e518622d40bba11fb51e",
+      "idempotency_key": "sha256:2cd0edcd3a0bc8cf1ea471ec667a377951bd7b9f4a2cb1ec8c9589bd40cff882"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Thirty-seven minutes after the fire was reported, the question on the radio was no longer where to put water.",
+      "text_sha256": "sha256:6addb4addaf764f22ed42cefc0106cf15d2dcc6cdbdfdec330a6432f7a4daec1",
+      "idempotency_key": "sha256:bf9e1540c7a75a79a332822e28758b0b22d2a587c2b4f531455a85ceb9e349ce"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It was where the line was.",
+      "text_sha256": "sha256:b6e933d754f5dc58296cf7b2a8b374bb483821021643ba4ce930609ac8713073",
+      "idempotency_key": "sha256:3cda6541fe2e50756cbc28d93022484c158674b317b2e34472720c19922c3295"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At forty-three minutes past three, an officer reported the smoke at the highway was getting, in his word, pretty bad.",
+      "text_sha256": "sha256:037464b090e187c18e26eb9224bbe6a022346194d5b84b18ff6550c31b41d2c6",
+      "idempotency_key": "sha256:f332102971aadcb05222c62778f6f271d4eb92db22fac3397cf53749d78e3b77"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Now the warnings.",
+      "text_sha256": "sha256:17e399b12037fdecf9c2415719ff01f065fda255fb654610fc798adfaf0e4d89",
+      "idempotency_key": "sha256:452f8e856d45a733c4a2dc8cfec28ec3d0dd2230fb6d1c983880526ece9a62eb"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The county sends emergency messages the way most American counties do: as Wireless Emergency Alerts, the ones that arrive on a phone with a tone and cannot be switched off.",
+      "text_sha256": "sha256:234952742c6d06d0bc5d61fad2d8c3ce4744f07cdd8d9c37ad466ccc1a2d934b",
+      "idempotency_key": "sha256:b19fdd8397c712cf000684bc5cf4429889fc04bd49b7751a4d8c9fab7bf801e7"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Its alert log for that day is in the state's report, and it begins early.",
+      "text_sha256": "sha256:af8c2633b6a6dbdd58ce62c3a77f136ab8329583f6e7caa4e031ec395703d96f",
+      "idempotency_key": "sha256:672623f35b211a627eafe2847d70ee541d5e85109741b1f6d699536c291e5abf"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At nine minutes past four in the morning, an evacuation order for a subdivision at Kula.",
+      "text_sha256": "sha256:827fdfc76f69748de7791ab4092f80be11e4feb6535c92141a015cc239b12913",
+      "idempotency_key": "sha256:bbac1de457341b4b4c2474eae0cd954d907d530669afc7b188310b931e696c32"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At five o'clock, another one, for a road at Kula.",
+      "text_sha256": "sha256:5f1923343c856e385e34b44aef8ccacb10fcb01ad58959f6b31c1a694fd3da2f",
+      "idempotency_key": "sha256:947d4c8da7516e69e33fc4648a75d0ee89ebe21a95ea0d8ba696f48904caf469"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At twenty-one past five, another, near Makawao.",
+      "text_sha256": "sha256:e113e5b1ad02721d4c490af9a45cceaf7e7b91cd9688b4114a5cfdf403532893",
+      "idempotency_key": "sha256:f41278790604ac578f60ba3a3aacfc1a61912727cc25a1769a4279fef27fc80e"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Those are the upcountry fires, and they went out in the dark, hours before the sun came up.",
+      "text_sha256": "sha256:f82f351ed8d9d2497c951b885d093912b68403fb487f28ad21d5e6224ffb1df0",
+      "idempotency_key": "sha256:ea5fc5e34d56a5c8b2bbef82833b4cbaade5575417650af1d4772c70f5796c42"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At four minutes past four in the afternoon — an hour and nine minutes after the fire was reported at Lahaina — an evacuation order went out for a subdivision.",
+      "text_sha256": "sha256:2edbdd24d554cede41da83f057818f7c3ae8a1e5d7d5df9500fe9cbbaf4b4045",
+      "idempotency_key": "sha256:f066cadccbd527f26408a0691972ae643921a84d24b0e925013017a6367abefe"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It was for Kula.",
+      "text_sha256": "sha256:e3236a84ac639a72884622c93ca8b2aff756431499f2d00fa1fa284189d24d70",
+      "idempotency_key": "sha256:647a290f6bdaf0cbd64a91464e804b863ef52f25692c612a90b822ed346f3480"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At eleven minutes past four, command asked for the power to be cut, because of the number of poles and wires down.",
+      "text_sha256": "sha256:db0aa97be94735c5c86b6973b181454a32d9e6602714604dd1732edd7246d67e",
+      "idempotency_key": "sha256:3c27e6054cd4dba60973bfebd52bbe02d59b4a4eb64f4fe536a5ffc89d5fde0b"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The dispatcher confirmed it within the minute.",
+      "text_sha256": "sha256:7639d35f076dec71f50acec23e34af280d463607218c3a328c9fa4db8b969e79",
+      "idempotency_key": "sha256:138b0f491adaf8762c0f1fa75ea720f60067e9e810fe145490e59fe2c0df1a38"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And at sixteen minutes past four in the afternoon, the first evacuation order in that log that names a Lahaina neighbourhood was sent.",
+      "text_sha256": "sha256:cadaa109302dc166726e73bd3aad8b311e3ecc3cfcb36185096ccf0d660fde68",
+      "idempotency_key": "sha256:53f74c00ff0ae04470c5b32835abc23f600cf9f0d3ff441160e6fed356b4d631"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Kelawea Mauka Subdivision.",
+      "text_sha256": "sha256:1448986b78c9581e7a16520834a402fc103ba9ad7fafb2664b42fe62d8a1a454",
+      "idempotency_key": "sha256:ffe641d644bfb4203608a42db218b283abc7947a975f7eb1a4747208a72e7935"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Evacuate your family and pets now, do not delay.",
+      "text_sha256": "sha256:d3754d7561f578e47f33755a80d04157371314f22d396e9de98f682d55d540e8",
+      "idempotency_key": "sha256:94dce8097213dfeeebabbd31c61388de07bb1e3c4556eb41488420b667568772"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Shelter is open at Lahaina Civic Center.",
+      "text_sha256": "sha256:71d83f872a00fcdbe7ffa095a041995a8e4318ea66743771b4cb71920466a7aa",
+      "idempotency_key": "sha256:1406e16c609fe5771192359c435cf469dcfd6ec2f06fc765d1e44d65eb4400a3"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The shelter named in that message had closed two hours and sixteen minutes earlier.",
+      "text_sha256": "sha256:02af17ba1e58efee91019e897fc73b33b30f4226aa9be88af5d61ea008c88c59",
+      "idempotency_key": "sha256:7decd13974e6378683675c4a1695851f41e63f2f3f51e1b082b5ada076a851a8"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the message was sent to cellphones, in a region where cellular phone communication had been destroyed in the late morning.",
+      "text_sha256": "sha256:03949d47cda791cb7ed915f9337482341d69677e2f077c9997f9f7ce1809cbcf",
+      "idempotency_key": "sha256:f92a447878cd0b91baf0b6847ae6c84eea045ab39e1a2bec70ecc778b84be5f2"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The County's position is that it sent at least fourteen alert messages that day, and that all twenty-one cell towers serving West Maui, including Lahaina, experienced total failure.",
+      "text_sha256": "sha256:7604b832f7a26d0534ed45bd825088084d15532e8c75f7372c835b93e23b2c19",
+      "idempotency_key": "sha256:74ca24d675d58b27bdcb538210e49c8b3d0d163470bb01c9ba8c1ca56eee849d"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It sued four carriers over it in May of twenty twenty-four.",
+      "text_sha256": "sha256:c6e934760a513ca4daa8356567786b85dec33594ec7f218e796334fe0e98bfc3",
+      "idempotency_key": "sha256:a57f7035130c551cd8ea41a27b76238a477b9e7a1fdd99487068173febba3153"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The next entry in that log naming a Lahaina neighbourhood is at forty-six minutes past eight that night.",
+      "text_sha256": "sha256:aff77414bf4cd4c9a5661704f1a3fb0cd383914033d209120d8b6a8b4f7bc866",
+      "idempotency_key": "sha256:031e694d94f16552531aaa47e97d61d6758d099b0393228e5f4cb9e502a22afe"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It says to evacuate north, out of town, toward Kapalua.",
+      "text_sha256": "sha256:33aeba2ed63b1bf94ac2826daa4e4495e0e076b0558935d8de353c13635e0454",
+      "idempotency_key": "sha256:469dc1639cf874c3f1f2543920c847ca291d7e94674d9075acf33c3629453785"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At half past four in the afternoon, the county's emergency operations centre was fully activated.",
+      "text_sha256": "sha256:c6ed8da61e3c66d13cff6ca531b72b46f60d0cf9f0348e1b8e3b12534e399ac5",
+      "idempotency_key": "sha256:6dea4fd8f75538bf0d912312158a94fb3b64e81e5f52ebf36be96caef274d473"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It had been at partial activation since nine o'clock the previous evening, staffed by two people, opened for the wind warning.",
+      "text_sha256": "sha256:52910b1789b621aaa8d4d37406f4feadf2e7d677d6ea35faf32a4cbe46902db7",
+      "idempotency_key": "sha256:25a1d65701a501bd17be98a5758a8af649b153b84133483bb25b7117b7c6d287"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That agency's full strength was an administrator and eight direct reports.",
+      "text_sha256": "sha256:4937d32b77fca13f8f0177af4e08835f641fdd63ab8358827c708267135efb39",
+      "idempotency_key": "sha256:9719d6962a9cea604598b73e30810d484bf459b353451a3e815a603bc30ca5e8"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Two of them were unavailable that week.",
+      "text_sha256": "sha256:b3d4790b5ab3e91cd20799f8c4e56ec5a299ff27c4e6902fbea1d623a4f667a2",
+      "idempotency_key": "sha256:ed5d69801da983b93652a74e8a00270c7c66e1682e83b7c766f78d41f55e6d32"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The police department was working normal daily staffing.",
+      "text_sha256": "sha256:c1848bc68f246b0306ed95fd8dccb66032146055c768708a3db1fd8fdfd94312",
+      "idempotency_key": "sha256:d82bf5cfbea8e2c710a259272d3d053e915896b56a824fbd1e0f6f6017b79d63"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Holding the night shift over on the morning of the eighth brought the number of officers in Lahaina town to thirteen.",
+      "text_sha256": "sha256:e3e54c463269f771ab1009ce1ce6132083a2fd518fa0b0780d37187398ece115",
+      "idempotency_key": "sha256:82d054b37ed979ce1a657157c0212d7cf40f3f778c8d1becde5b3d708bc6f585"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Thirteen officers.",
+      "text_sha256": "sha256:bb4f29fac83b06ad991b45cf6dbde3589c72b3ea8605a4ec6ef6cda0dab30eff",
+      "idempotency_key": "sha256:192a6e8fcafaf627b8d74f8f06df8a99e4d93581a9243b357d059eb14e6e6596"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "For a town, on a day the forecast had been naming it for five days.",
+      "text_sha256": "sha256:a29851af4d6b9336030c92fba86b0bab93173f6a1b4c2d139994b391cb7ad5a3",
+      "idempotency_key": "sha256:22787bda4dafcf20a629693498a5defc9a41a8c0372bab679dc256c1475e016d"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "By nightfall the fire had crossed the highway and burned all the way to the ocean's edge.",
+      "text_sha256": "sha256:98e71a8ed2765cead1035fcc721b44824a29f35368610efa42b6495c5d06712b",
+      "idempotency_key": "sha256:aa2ff2ff29cccd9c4924e6a1e2a69e9a8fe5c63b19e912213c42b726eb4ec5a2"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "When the County of Maui published the origin and cause of it, fourteen months later, it recorded that the fire claimed at least a hundred and two lives.",
+      "text_sha256": "sha256:1ee5e21f4d4cc6bdc219f8aba0d36c8c2ab230129182cad26be5de065cf3ddc8",
+      "idempotency_key": "sha256:eda38e428c5e71b7261c51cfa38ea652a3eda7ff0b713f0df8b8949a95a7df86"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is the last number in this film that is about people.",
+      "text_sha256": "sha256:329e0c68ebd41af0011b94d3cc225d8a773b74c7ad84c44a5a9c30cf60bcbe9a",
+      "idempotency_key": "sha256:a0bdb076fed3ef95dd1c98e1c56e44fc3fa0393b2021606401d8a32a5190dcff"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Everything after it is about what was already standing on that slope before the eighth of August.",
+      "text_sha256": "sha256:cd521eb4a1bc8262341d0a734fa227d7b21c53155dccebc1ce9c8af9074b9ebe",
+      "idempotency_key": "sha256:cee3f6a5a8e4f430f84d2473d05594c83415ca05d4cc41dfb3c7b74295b2f7b5"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Because by three in the afternoon the fire was no longer the only problem, and it had not been for hours.",
+      "text_sha256": "sha256:6ad7755b3c687cca2ec9970a950c00b1e9738ec26e3a5a8b3ab29fa97661d4e9",
+      "idempotency_key": "sha256:374610f5f9c2fdc025c7c6e66fa28387f2e7482c4a0d87197b7495d9a7384a6b"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The report's summary is that the conflagration overwhelmed the town's limited evacuation routes, some of which were blocked by downed utility poles and electrical lines.",
+      "text_sha256": "sha256:61455c8645e64f5cfc4551a097695444f1d212a546bbf6b3e7378ee699be6922",
+      "idempotency_key": "sha256:f83e359339ff1eadca4c7fd40ed17f9e3c5598dff18baef0fba9d951d2f4375a"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Limited is the operative word, and the investigators wrote three separate findings about it.",
+      "text_sha256": "sha256:c3de72a74e6a9fde3caed317579f9a2c02dfe08451663f7cecb7e71687afea8c",
+      "idempotency_key": "sha256:24b9183f3e52d10dfde63c082145643c7fd886f9a9f200e407b9cd0207b68cf2"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Severe congestion due to parked cars along neighbourhood streets hindered evacuation and response.",
+      "text_sha256": "sha256:e71528382b0f034ca810251cf6daf16564ed7503c542f3640e1ac469565733ed",
+      "idempotency_key": "sha256:38b81541504e5fc4ccbcb70546ecff86acd45683646d3b821844e849cc38b29e"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Densely populated and narrow roadways hindered the movement of both the fire department and the police.",
+      "text_sha256": "sha256:1b2a4e61ff4a7bbe4645f3b2fe6fc16033c09fe4f3e42083b0df5c012a2aefbb",
+      "idempotency_key": "sha256:70edd97510c038ee11d8da568c886216187e24a171f80e938f95acefd538578d"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Roadways and evacuation routes were not adequately maintained before August the eighth to sustain effective evacuation during a fire event.",
+      "text_sha256": "sha256:25cd18d4405e7dbbc3b3b23dc8c8eb6b37f1e77747e6d772912ad7aba860410c",
+      "idempotency_key": "sha256:b32c0f0f76092d68644c67cf9959ec81407759393d90157940beb7494605d6f9"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And zoning in some areas of Lahaina was not commensurate with the modern built environment, the environmental risks, or the population growth.",
+      "text_sha256": "sha256:05beca06c93fed0524fbaf1ed9058bc03160a7c9e08de8ae37f57d326cb31d71",
+      "idempotency_key": "sha256:ae3ac9feabb1683d4b875b360b32d4426c46e564faaea52facfb98832623d61c"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "At four minutes past seven that evening, one of the streets running out of town became impassable.",
+      "text_sha256": "sha256:e0dd46254bdff5015362e60567240ca49ee14f145985dcd07ad077fe60d490ca",
+      "idempotency_key": "sha256:1a3071f958cad5d652efaec6d18018742225c37e3515510e36446b3aabdd79bf"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Another had already gone.",
+      "text_sha256": "sha256:66ac57bc57ddc5c3000c8a1fee229c28474531a2d3e2581ff6ae5361d3bf57b3",
+      "idempotency_key": "sha256:1e3de76c5a994a551a5d730fc5205bed7f95340e727479fdaa46f1c264093514"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The report counts what that left.",
+      "text_sha256": "sha256:870d52ceb753f97c288b48604feb3a72cd08f8ffcdaf08902e4f516c7b072e46",
+      "idempotency_key": "sha256:58ad6f7ef55ccaa2db158acea085ad9c84f91be6377efd31427e0f60967a079b"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The potential evacuation exit routes from Front Street were reduced from eight to six.",
+      "text_sha256": "sha256:54693bd53147f3aca8f25f6ca1817bcaf5793fd8373d1d01674b2a180b37ae78",
+      "idempotency_key": "sha256:7a61f22fccb73d868a3ce6b5882f7a82a8a37b442ac6ca42a8db7498f0066ca3"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "At about a quarter to five that afternoon, an officer working the residential streets found an access road blocked by a metal gate, and the gate was locked.",
+      "text_sha256": "sha256:ce9c1b1a71b583398dd54aa486d1750b844a7c391e642d07ade57c9ae0463b68",
+      "idempotency_key": "sha256:a5a4a2d38ad6095366fb98d12a426ddf4fb31185c3e699348ed255bbffa5a739"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Behind it, by his count, were thirty to fifty cars that could not get out.",
+      "text_sha256": "sha256:80b39ab39475bee95468e457b5e9a3be2ab319225c0a0f7b2097e3ecda1c977e",
+      "idempotency_key": "sha256:845c5f7083be4e0ab05c80570dd2ade3245b4a6a1165a44dc0f324e6834af801"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A resident brought a reciprocating saw and cut the lock.",
+      "text_sha256": "sha256:fc41ca8165b4ea63e7d464d8cdf0065cad6e53d8cb172cf5755cd030bac48aa2",
+      "idempotency_key": "sha256:97ab14e7e91a7427f52181d381de28e19f798b71a189f4a222ad3d2990424e1b"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A chain-link gate nearby was pulled open with a tow strap.",
+      "text_sha256": "sha256:c197fcbc9b89dc4239149e0423091895ccac8754f5306cf307266995e20c423e",
+      "idempotency_key": "sha256:ba10a5f47e7b444b09755c8b652f5c417c3eb73c57097326b2b7ebff9fcde30a"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One side of it opened.",
+      "text_sha256": "sha256:18d6c9f795649225b1d0d41a57f63d243bf514b808f0590ac88ca10c6c331b53",
+      "idempotency_key": "sha256:3ff3f44b76fbeacd62cf67bc27b4cbe5e430673d9d7572ba9ea03bbbf954effe"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A driver stopped, because he was not sure there was enough room to get through.",
+      "text_sha256": "sha256:94eecb254b44215f25c2010d95569c4dda52065de360ed02be01f8d803dc0423",
+      "idempotency_key": "sha256:5595e397e49af6e3857a10c66fe5abbdf9c63c56eb2c6af363e88470447829ef"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The officer looked at the buildings next to the line of cars and saw that they were now fully engulfed.",
+      "text_sha256": "sha256:2951b0190655b4163693c5e8e7dce6a7e7f7fc19e7c2034ba921734fa53fc306",
+      "idempotency_key": "sha256:6fbfc69d3b8796c08cd59b02efd6e2bb4ce7ae6f6e4149e7d23885fe14b51a84"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So he ran at the gate and put his shoulder through it to open the other side.",
+      "text_sha256": "sha256:0ab918f8b0f3f41658d86e223c13b61b79a52f2b09b3bb395cfa21ca50e119d2",
+      "idempotency_key": "sha256:a548fae939c0291bb96bb80b72ccb1b30ec7589ee2a3379efcb2011497b126c1"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Thirty to fifty fully loaded cars went through that gate.",
+      "text_sha256": "sha256:0508c4aadcce7236e3707c88175f5e9f214d6402bd4ec9159edfcd7d3183c9f1",
+      "idempotency_key": "sha256:161a60b83d8a1e38e0447a63869d2e408de947590e735bde5c5bc550bc8c854c"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One gate.",
+      "text_sha256": "sha256:7185e2cf8cd696096242629e4d9eec0939fb8ecdc60939006018d70e3cbd9d96",
+      "idempotency_key": "sha256:7dff8296a38ca5e1ca7d2d4a137a7a9009066ceb9f7eb40c5764c6359d172149"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One officer.",
+      "text_sha256": "sha256:9ccdb3e0119ae8f5a65f88b1b8df093dae637777d67582f0e342c281cc3ded11",
+      "idempotency_key": "sha256:85ff95a4d869ac8afcd62308803571bfc48805411ef1b7df16e626b6aceb66b6"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And one saw that a resident happened to own.",
+      "text_sha256": "sha256:c095d88a946662094c4158058934ce35fecb8d9a6bf7b26b64201065be31945b",
+      "idempotency_key": "sha256:a3e162f18ef3170b45aa1f2ed1edc06c4ebc2857685a604f2fc1babb909e078c"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The state's investigators turned it into two findings, and both of them are about equipment nobody had.",
+      "text_sha256": "sha256:d9b47436fb6c3fc0385bd71508be928dd295057cfbf749e2f5539a963a28b32a",
+      "idempotency_key": "sha256:725e2776a036d350b18a584347bc13888307d53600e8628f20d325ebb39935fc"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Emergency responders did not have ready capability to unlock emergency gates at various locations, including schools, to facilitate evacuations.",
+      "text_sha256": "sha256:4f4bf7bdf9cbe0320c1dda2ad37a3b477a9f6dbd4222d3d7390f0b96bbe0dbbe",
+      "idempotency_key": "sha256:e4b8faa06680757d1e87499202f5aac348642de38e16663a050f11e93f73d729"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They were often forced to rely on a third party for access.",
+      "text_sha256": "sha256:38420cc5706961326a5023cf35293e922bf93b6acb914c15fb1cfbf0ed57356a",
+      "idempotency_key": "sha256:63111e5d9d0c2d42ec6278350b39b1e91191701d1dcf13e9e58957eaa9a241f2"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Police officers encountered barriers on roads that could have been used as alternate escape routes, and lacked the equipment to get through them.",
+      "text_sha256": "sha256:07d0e631ba9b7ff08261782abd9828d397b040315015abcc49b6adf8505ed3df",
+      "idempotency_key": "sha256:928ed210eb541c8935c58e15cd19917ea260e1304c01ec0f846d56ebdae29b9b"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The recommendation asks for police vehicles to carry kits able to remove chain-link fences, gates and boulders.",
+      "text_sha256": "sha256:d2bd718a2c93f486c929365781c9424ae07806a4aec7417f8e54dbaf4588e66c",
+      "idempotency_key": "sha256:4940e9a90b061cd7705195fe9dd550dd3177201d2a0299b357172cd6ffd58459"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A recommendation that a police car should carry bolt cutters is the kind of sentence that only gets written after something.",
+      "text_sha256": "sha256:0137828d4a88cb4df253f4182f95748ae32ae1fdc6a8861cef26a83a1ba99635",
+      "idempotency_key": "sha256:cc772348550c13bab960e7fde7ba65090ec973e50f9f03c8057e2d54e78a14c9"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Now the water, because the version of this story that most people carry is wrong, and the record says so directly.",
+      "text_sha256": "sha256:5d7c7cd49f0c082c57c58961fa8e6df133b7da93fdbadc13a6fc6c1b8e6d1a05",
+      "idempotency_key": "sha256:3faeb243f2a0c5abde8a7c8991e2a934335fe2769abd16ac5bada17117e7ca6c"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The common account is that the power failed, the pumps stopped, and the hydrants went dry.",
+      "text_sha256": "sha256:1ba23b23081fb6b5e138cdbfe1732829cb875f76a00eac1001efdca2043dfb28",
+      "idempotency_key": "sha256:e97ef22c97e911c2ff0f3904d1bc45dee92665b265c103570e0450082a7f937f"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The twenty-first finding of the state's investigation is that no pumps are used outside the water production facilities to provide pressure in that system at all.",
+      "text_sha256": "sha256:50d6e950a85f8336c16429775c468f0b3c94981dcbdc5ba127a366b3776486c2",
+      "idempotency_key": "sha256:62acdcb76827ed5d4ccf9e3db23eb7e741de131e9c3cb119fd5350f6ee4a1826"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Both systems had uninterrupted electrical power during the August twenty twenty-three fires, and produced water at capacity for the duration of the fire.",
+      "text_sha256": "sha256:e7f5deb83607cd53ab9b1dcebd81cf14586cb6ed300b1d012cb437404288e976",
+      "idempotency_key": "sha256:ab9f71d358eb2fbef1aeeefdd5338be9888f0f0838446185e6e5e83bf4d7e2f6"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Uninterrupted power.",
+      "text_sha256": "sha256:3841c71ae52bc37e86ecfaf4df7a046ee9acee272a5433e25b89311225bd7f95",
+      "idempotency_key": "sha256:0280da1429dd96a483a5fb5b75be3b7a221aaa9de425e0ea6435e48e36e86ac1"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Full capacity.",
+      "text_sha256": "sha256:6378007e7ac35c7a6ccdc842bb8489bc5f94f63674b69f6c5b12fa6c1d182e1f",
+      "idempotency_key": "sha256:60f1ac7d3226252b348fcd3d57287c97b6ec7bfb7d07a3ee3f67052d0a0a51ba"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "For the duration.",
+      "text_sha256": "sha256:d05fdd95ce04a52d805782e1d4709fd7cc10e9c064d92414922736ff41ba81e7",
+      "idempotency_key": "sha256:53dd93fe38102cb27331ddc2d9ae6f8c0e09f57c982c06811b3791983872af59"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "What actually happened to the pressure is the twenty-fourth finding, and it is worse, because nothing failed.",
+      "text_sha256": "sha256:af0558f0c1da4a251857d9fb3638f3efdb1c00f0fdd34c0c282d0284b7d1e973",
+      "idempotency_key": "sha256:2d0c1393405297ceeb21d8f33a2e6d7bb00f9e6ad3faf167b9ec703c4e97a5a2"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "As structures burned, the household plumbing inside them failed — plastic and other piping — allowing unrestricted flow of water from one or more locations in each home, so that water flowed freely from more and more structures, and the pressure and flow in the fire area fell.",
+      "text_sha256": "sha256:b443b7cb84ab58866bdf02a56a6707d3ae38e36818961984a543e6efc160d1bb",
+      "idempotency_key": "sha256:3521e9fac46c24f97f6cc9be622bf41d0049911a99c7d14092096020b6cd7e03"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Every house that burned became an open tap.",
+      "text_sha256": "sha256:be748cd9b9a66e43edc463ae4ae88b5685596033ee35915bf3e7ce64e40221cc",
+      "idempotency_key": "sha256:0c68c3dfe37a8f106fcca3957126d3d2b09f45e748da5910024796403a591096"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The system was not losing water because it was broken.",
+      "text_sha256": "sha256:63a59e5cbc4a3472d794b2a3d42a229ebdd4aebb57b98c864542a7511f07fae4",
+      "idempotency_key": "sha256:a3cb635d7ced6dbe4ea5dd43f756ffd65257288edeaacb329cf0eaf3595380ef"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It was losing water because it was working, into a thousand holes.",
+      "text_sha256": "sha256:32d1c600a43c37ad455973c56857ccaa46ee2c4732bf2fb280006e64d67aa399",
+      "idempotency_key": "sha256:d04cff3961f665af8f3f6fba65699f54b9d20ba5823e7dcf0c88c9cf9c6b423d"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The timeline records what that felt like on the ground.",
+      "text_sha256": "sha256:55286b373e30bab493319de66f6a759fd31f2356de0e43ccb936ae02fbc18172",
+      "idempotency_key": "sha256:1e61f84662326da7c217740aac34a047546ea46360a3c93a36774e17a95d953d"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Pressure in the mains dropped to the point that there was no water coming from fire hydrants in some parts of Lahaina.",
+      "text_sha256": "sha256:ef6628602eda8ecf7021b11bc7864f0e70e91bc6b8915b7b6313221a504cc266",
+      "idempotency_key": "sha256:5282a252b04501ceef06fb70d42cc3d9a9b35cc97fa5c568a7dddbf897671e18"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A relief engine trying to refill found a hydrant producing, in the crew's word, a trickle.",
+      "text_sha256": "sha256:34d5fa18dd05154c9072d86ec571bea09a31656d68544a8839d33459377a8813",
+      "idempotency_key": "sha256:c02fad7eb0dcd2b70a3f249c55c1022665f48e96057aa700648cb7fe40d56257"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Another crew found good pressure and filled their tanks — down at the beach, at the bottom of the hill.",
+      "text_sha256": "sha256:071efc52f468366a226b8745e69bfb58fbde24392fb5143bf6d71e64adb7fe90",
+      "idempotency_key": "sha256:fefc9106ab8bd4acf8c11a257e6f92cccf2060c1e8ebd20ffe40e6b943af1382"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "By five past five the next morning, the hydrants around the civic centre and the fire station were dry.",
+      "text_sha256": "sha256:0bc262e46e43ad75c832ffe6325b0d20d0f2bfe2539dd1b77d1953884ce79347",
+      "idempotency_key": "sha256:e835513f16c48dec6b89fef781c3392b857734a80a11cbe3ec09b73102863e4e"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And at half past three on the afternoon of the eighth, the system that tells the water department how much water it has left stopped reporting.",
+      "text_sha256": "sha256:8bbe25810a12f32466773eb7523ec1cacca7bb9dd84df4ade7292acc2b95d0ee",
+      "idempotency_key": "sha256:3a34c7020c7c05b1cdc8067e9d88ed0d96ecf0a3490dccf3950b0409b18de567"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "No storage tank data was recorded for the rest of the fire.",
+      "text_sha256": "sha256:c7e27bd60de4ac76f5b4d4f9e3c622af6832cf140fd2770189880d766599bb97",
+      "idempotency_key": "sha256:220a151608cbeedd4be61bfa449cc6218a3a11299c4f0052c4698c18c6e22aed"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Once that connection was lost, the county's water department did not know how much stored water was available for firefighting.",
+      "text_sha256": "sha256:5a11513adcdc4c651d9e4f41f80544060cfd90ca41f82282061cab045e7bbc43",
+      "idempotency_key": "sha256:f84a41cf9eaa009e89226cfb54d471bccb0cc2899aacc86da82693c9547d849f"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The twenty-sixth finding states the outcome plainly: water was not provided with sufficient volume and sufficient pressure for use in firefighting for the entire fire event.",
+      "text_sha256": "sha256:30ef43e16f9074d45d2af0a836368e52d97b4c3b586470b44dab20f810232820",
+      "idempotency_key": "sha256:307d3f42a1ff5f3c2607c765825f6217a566005eccf9d8aed7fd4275118b90a8"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the twentieth finding says the department was seemingly in compliance with the water system design standards for the State of Hawaiʻi.",
+      "text_sha256": "sha256:eb743d2338872e1e6afe056b51d37d65dc49ade0a6811a5defeb29b8c23a948d",
+      "idempotency_key": "sha256:85fb5070f60816c6b654180b511824c30a129d8577afb07becd5230a096e4b69"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Both of those are true at once, and the twenty-seventh finding explains why.",
+      "text_sha256": "sha256:55e4ac30513bc6c4ae196633519444f05ad7a6b3004d00b47d5c386af2be6c29",
+      "idempotency_key": "sha256:3ed47b3c531dd6c6dbce8aa9ad2378deba926fa75ad9cf1f78626bab3ca167b5"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Water quality and cost make it impractical to size a drinking water system to meet the firefighting demand of an urban conflagration.",
+      "text_sha256": "sha256:d61009d3157744b226c7989c90fc36830f1f43cb444e5a4064499de62c93d131",
+      "idempotency_key": "sha256:a044edf8dd2b12565ab76a43582c0e14f59c082655f967954237d9008dc00c0b"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A town's water system is built to supply houses and to fight house fires.",
+      "text_sha256": "sha256:e0b9cfb33fbad580d764a61dae1235c580e03b3e169412d38f4228f3cdb9efe8",
+      "idempotency_key": "sha256:62a886d2fa49043988bc432bb28189d47b0c2cbac31448629f6c7c19dd2f86da"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is not built to fight the town.",
+      "text_sha256": "sha256:ffc4d3d52147b57d0bb4ae6563c6a583886b9900a91d3c32b5bc59995f38374d",
+      "idempotency_key": "sha256:77db65e9a33e869ebda1d5b951e44912b022b4cfcea0ba0e8a6b33009dbde026"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The same shape appears at the utility.",
+      "text_sha256": "sha256:52a4839ed752d4a203cb90b9ad3a0f5fb3d2487c11c69298a19b9da61dad4a96",
+      "idempotency_key": "sha256:bb8aaf2632638209592aba07f3008d3afcf6d8b57c3b9a4717bb21d4029bcdbf"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The thirtieth finding is that Hawaiian Electric did not have a Public Safety Power Shut-Off program in place at the time of the fire — the procedure, used elsewhere, of switching lines off in advance when the weather makes them dangerous.",
+      "text_sha256": "sha256:5e0fdf8639d7bb92b7c0d67d058377316fb559a89e8511b3f407237642689973",
+      "idempotency_key": "sha256:49e00f7b7553add5f8adc048c93fa18e01c0997cbcc395428a448a5caa763b6c"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The twenty-ninth is that a lack of utility vegetation abatement regulation and enforcement may have contributed to vegetation at the base of utility poles and near transmission lines, creating a receptive fuel source for arcing electrical wires.",
+      "text_sha256": "sha256:84918d21c5f5c3d0c2d0489afb13bf585a86b1f3a585559e401ccfe898dc10ea",
+      "idempotency_key": "sha256:e4633f7477050cd41b03f88ea3cc5081b66fbb693c6ddd5650b2ae0815a99bc9"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Receptive fuel source is the language of an engineering report.",
+      "text_sha256": "sha256:d85c92d6266d962010a521dd7307e9502686d914b0316961d6ecf22d8784a9bd",
+      "idempotency_key": "sha256:a13933c1eb821a2a6fb4ed51ceafecddfa6436232c1cc2344a530a1707f014cb"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "What it describes is dry grass at the bottom of a pole.",
+      "text_sha256": "sha256:012fd5d475f123f8bfc6ee56129e897dd53310e365de93f22515736298ec081f",
+      "idempotency_key": "sha256:5dc877847b748c761ead8885223c57f256cccb5527db1c2b1670e5404b98404e"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The twenty-eighth is that the utility, together with the fire and police departments, did not have an adequate staffing plan for the wildfire conditions of that day.",
+      "text_sha256": "sha256:9f746e0ed7989a34cb800c64e8a72a53f38bee0a248f3c33c4bbcaffff2fc1d1",
+      "idempotency_key": "sha256:f108b4bc4dfdd5ae68cfb4b78fe8da647bebce7e522ab54d54256ede54938d32"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And then there is the sixty-first finding, which is not about equipment at all.",
+      "text_sha256": "sha256:1576086e5a198ebd95bc08887cc10984d9a0acf46a1c17f8ecf2a748dd9ef784",
+      "idempotency_key": "sha256:da0b13f22a69789395eb1f0e48a273391e51ead5aa8b839bca91af5033e46a7e"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There appears to be a statewide culture of dismissing and under-recognising wildfire risk.",
+      "text_sha256": "sha256:a17218eee0a3709627253879ec153c6671c3ed2971159f4cf4ee52027425b78b",
+      "idempotency_key": "sha256:1da1cf5e79a27113a5741f02408316d2bd3e23d8e66a8d3c3055bb805b7383c6"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The underfunding and under-addressing of preparedness, planning and mitigation significantly impacts all parts of the system and fire outcomes.",
+      "text_sha256": "sha256:bddcabfe8cbaeba2b9622d70b87c72935b9ef54257414b6af4989fa07371cf32",
+      "idempotency_key": "sha256:a6a5e8295f0589136914da67ff39d5544d3480a122de6795bc96222d3ba9b6dd"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And then the investigators added a sentence that appears nowhere else in the eighty-four.",
+      "text_sha256": "sha256:d1122bc67f072401a9e9950731ed3d7badafd635b8bb0a82050924f42b20153b",
+      "idempotency_key": "sha256:d4ff1e700dcb8ed25112f8c0d0086fb142ab07ebbd79fad6f82153a5b070a403"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "This cannot be overstated.",
+      "text_sha256": "sha256:c5d5c08d3acc45d852b2faf1a7a32852e3fb993e05bd3815af43fcab61f349b4",
+      "idempotency_key": "sha256:59b3827689575f72a19b76742975bd4bc33a645a9c8cc7f980414946286740f3"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Three weeks after the fire, the Attorney General of Hawaiʻi commissioned an outside investigation of her own state.",
+      "text_sha256": "sha256:f4ef8515f5fe8c5ddbc19f5a1422e47d5c92477d41c422fd9dbdb9b41c21fd9e",
+      "idempotency_key": "sha256:ed8a583829fe6d1f6e33f6d7a79e50997663f0dea4c0b1cf5ae149d39bc8fef8"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "She engaged the Fire Safety Research Institute, part of UL Research Institutes, to conduct a comprehensive, independent analysis assessing the policies and performance of state and county agencies in preparing for and responding to the Maui wildfires.",
+      "text_sha256": "sha256:be1f3b178db348bae47f1b16cdb4ca66e26cc6b19e865274df85a9222ed8a15f",
+      "idempotency_key": "sha256:7063205c8caef9da9b2726b4ab798c3e5e4d9cd8bc4db50b3c0fd9b3d17089b6"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Her own words at the time: \"I am committed to an independent, unbiased, and transparent investigation into the government actions during the fires.\"",
+      "text_sha256": "sha256:42f723dfdb15640db5fe0ad2572758755100117db20f2b1b29bb494da397793c",
+      "idempotency_key": "sha256:0aeed27aec97c5d3c11f1b18f938f7a5ce0c096826c6c5c4fe220e823c85fa7b"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The first report came in April of twenty twenty-four.",
+      "text_sha256": "sha256:c796d701187fe6c9a6437e4c359ca14f523a90588d8d6dbc6e9a7697a99c1179",
+      "idempotency_key": "sha256:c6d8270fad1e44229f0c29efff19307f5b41dfef563e44b44e1c16ce26f19c24"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Three hundred and seventy-five pages, and a minute-by-minute timeline built from more than twelve thousand records, covering the afternoon of the eighth through half past eight the next morning.",
+      "text_sha256": "sha256:169dc61ec8b4a072fa1678ebedd81c71629e783c16aad9d4f193e7d7f8cbea11",
+      "idempotency_key": "sha256:e2cf16ef0ef05bc294cb2584b67f66c9a1ebb0fc8bf980de8e9b284d41d0f655"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It says of itself that it does not analyse causation.",
+      "text_sha256": "sha256:bd56bfd2c67eb230a45ce4287aec3b121f369e9e4656d7ef92c4384dabaebab0",
+      "idempotency_key": "sha256:473aedc61c56f9d0b96eaecea2a395ac31f0a35ec4a988fd5b9b3a6979147118"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It only establishes what happened, and when.",
+      "text_sha256": "sha256:405e584e763e8b9f9189c9e328941d28db3250c12f42670e7abdf8475c7ec097",
+      "idempotency_key": "sha256:5be4efa86a7b4ed99e98da423e3430d372515f69a074f69cb47e3a377f66fbbc"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The second came in September.",
+      "text_sha256": "sha256:00a66b9cdf52c30724f536c0d46ac0d484d483c6c35ab2cf08753be08f359d61",
+      "idempotency_key": "sha256:d48e614a4f3b33d438960390dcf4c3ad9369936b10ae3b4d3a61fffe8d5308e5"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Five hundred and eighteen pages.",
+      "text_sha256": "sha256:e8f18e216d51049c6157bc5186c09ae50f6d812498bfcad08fd275c297d91643",
+      "idempotency_key": "sha256:57b05fd9a357e2e88a4d272e865d014183e6016efebd8f18113362afd4cfa32d"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Eighty-four findings and a hundred and forty recommendations, drawn from an eight hundred and fifty gigabyte evidence database of body-camera footage, dispatch audio, vehicle location data, interviews and official documents.",
+      "text_sha256": "sha256:e59073491afc74d8a0c8a664ad6f3a8bd235f5eca01ab59a8f25f13e30be930a",
+      "idempotency_key": "sha256:7f726ec6d59713c952df151043ac223258d1ab6d5dbbc5d759f32407ec392a79"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Two of those eighty-four findings are the reason this film exists.",
+      "text_sha256": "sha256:028ec30e0889b50693a4513d6e1875e0e168b5a25348b8b2342ab53618d29019",
+      "idempotency_key": "sha256:0ed9b53d20c5146cc00bcd47f77d0c91d502e602f4e2a6d0a3d58dae20bfa097"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Finding thirty-seven.",
+      "text_sha256": "sha256:c3aa23e952d3099c195dddfbdbfe46ab32b613039028a0d607edd91115f13f1a",
+      "idempotency_key": "sha256:67665624e8574cc7c9df9d241829aae3ac315926d95ccc4fa1e0ec48f41dd18c"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Only one siren from the All-Hazard Outdoor Warning Siren System was operable within the burn perimeter of the Lahaina area on August the eighth, twenty twenty-three.",
+      "text_sha256": "sha256:7b4b875f226df7c525fe436264fbb5cc0c1295beb2f7aa411f5d234ef2d9d4c6",
+      "idempotency_key": "sha256:2be30e4692db79e97c1200f4a775420321caba9e09ff6e864f6dc9f5feeba23e"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "One.",
+      "text_sha256": "sha256:70277bfc409b502132d7a48b2a3b386294264b31f7bf024a5fb0cafabb8ac122",
+      "idempotency_key": "sha256:0a46f9c1a448c23b2a3d8579a953167386f6c75448bffef3dbbaafe6ccac632d"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Inside the area that burned.",
+      "text_sha256": "sha256:1c7a2580d60edf6350c9c0ef4aa0d611a65dec96b027cc312917758fd97f9119",
+      "idempotency_key": "sha256:a07f9aab47ccd4b68fb902a46bc7a51080675aaa56f3a50ea44f4a4b3c19bc47"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Reporting at the time put the number of sirens in the Lahaina area at four, and described all four of them as sited along the shore.",
+      "text_sha256": "sha256:4a87eab0104f1eba6a675b37287abc3ebc4ee9ceaa674c502f923732057841f6",
+      "idempotency_key": "sha256:fb90d4dc14fd128bbcb67560ac2b079a17931fdef636951cba37cee1c727e430"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Finding thirty-eight is a separate finding, about a separate thing.",
+      "text_sha256": "sha256:cb4a499fec5217e66375d410db03b26cd27474629f295d6ac3f52fdc8d6020ba",
+      "idempotency_key": "sha256:abcd61cd3953c30caac5ba5829c5ad0025ace2c4c24dc1416e34a336e8150377"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The All-Hazard Outdoor Warning Siren System had not been utilised for warning of wildland-urban interface fires prior to August the eighth, twenty twenty-three.",
+      "text_sha256": "sha256:98f670e8c3b20f836e162a04b16c16587c2872c610e607bf0f343c39f9da8654",
+      "idempotency_key": "sha256:a75a64fd1aa6665259b6da30cd822ed83a282869ea59c1ca449e9dcbe327a351"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not that day.",
+      "text_sha256": "sha256:30020bfc6126c3b8c00dcac3ada71d40268e22d749d829979b6109af4bac7239",
+      "idempotency_key": "sha256:75a27231f1c8515512ac6aaca705ee94f061597a5d18cb3ccd4fcde3f87794bb"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Ever.",
+      "text_sha256": "sha256:d1c497f5d6ce6af91f7d6f87615d89773efbfdadb83fd2237841180fda545a7a",
+      "idempotency_key": "sha256:44c2ccf6205e5cf65c6076cdf720686dfbed9238a59d2df69e512f02ada23b3c"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In the whole life of the largest outdoor warning network in the world, it had never once been used to warn of a fire.",
+      "text_sha256": "sha256:fcf6d1c75940de1ddb8464c0928d39c2cbaf497853bed9d651f37ca0a5ac2910",
+      "idempotency_key": "sha256:3a87270cd62ffcf6c74b846a277f57b6b6cf2aae95b585d606b8149d09f3e54e"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And it was not used on the eighth of August either.",
+      "text_sha256": "sha256:a00bec6b088fceb46dd6b577d05263d1936485119173e8bce5bfd616f354fcd1",
+      "idempotency_key": "sha256:77a7d008879a665b2bd1da5a98d394fc11b91c94d67275c885f34f1eea06b8cc"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Reporting at the time established that, and the head of the county's emergency management agency confirmed it publicly within days.",
+      "text_sha256": "sha256:91420602ce1bb600a7b4730ec7f6eafa89a3dbd22a0f2ad7cc3d52f38da022d7",
+      "idempotency_key": "sha256:bc21c0770845e029b573be254ab381ef9ed2a0ca48e94f0c872d9680274b20f4"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "At a news conference on the sixteenth of August, twenty twenty-three, he was asked whether he regretted not activating them.",
+      "text_sha256": "sha256:c1a79d8642b3bd6ba9dc57afc9b456dbaa22170906412b4ee5060dfc29b985d2",
+      "idempotency_key": "sha256:b4e0a2881735e293faf81f0d68cb46eede35924698b41ab0a28ffcf7648c088a"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "His answer was three words.",
+      "text_sha256": "sha256:22f1f33b9dc35da1b9d9b4503956c09a9872604ddc9a9076f09651866450711c",
+      "idempotency_key": "sha256:9491cd35e0dc724b99de7007bbfab683cba65abe1e08588d0fb5494a43896f31"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "I do not.",
+      "text_sha256": "sha256:f72dd5625e57ab27b85c0e85c66915ed5a8fdab557f89591d4b902b8c72445c5",
+      "idempotency_key": "sha256:bfd777b13540e863cbcb395769ae8f980ca198659789f3076d9a10bdf7702feb"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And he gave his reason.",
+      "text_sha256": "sha256:2d1872c8a732fe8d178c9982cea6d606845f89e1fc4bdcceb658c7ba5722b707",
+      "idempotency_key": "sha256:aaeef00a55a9ed5d632aef5b6b22fc53b8cd4d1a061f7609923ad6ae38f6fdc1"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Had we sounded the sirens that night, we were afraid that people would have gone mauka — toward the mountainside — and if that was the case, they would have gone into the fire.",
+      "text_sha256": "sha256:228a68fe7dda7a313ed44e6bc32e1ad1c30bbd408f65730efc4089cf293a0d6e",
+      "idempotency_key": "sha256:a384a50bea07d8d41d2c55d8c12e1a1d4fedbce1cccaad0fe68569c4e78c4547"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "He resigned the next day, the seventeenth of August, citing health reasons.",
+      "text_sha256": "sha256:bd913cce77f9ff6f4e4a8e02b8b175befbf048530c74c8cd19cc088019422491",
+      "idempotency_key": "sha256:9ab2d474346a50fc0f9d47f3e4d677e05f0c1aeb222c9ae14694e45b035a2a13"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "He has not been charged with any offence.",
+      "text_sha256": "sha256:5fb4dc92d9578003152116e029abe5eefd9d9459eb13fdc5d5c7f5053ec25521",
+      "idempotency_key": "sha256:2ae7a095214dc1089f51ff4ba7e8c02671491bf6b84b3d79a1b2e1ec88905ddb"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The last recommendation attached to Finding thirty-seven asks for a statewide sustainable programme for the outdoor warning system, including functioning hardware resilient against mass communications failure.",
+      "text_sha256": "sha256:c38f5192f10d63be62086284c8a443bdcd2542aade640fc4e9b392c17a7868c4",
+      "idempotency_key": "sha256:84b327f7c55d41d4a536df81b0b8c53aafe910a733d3dc8aa70b487ba84b230b"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Resilient against mass communications failure.",
+      "text_sha256": "sha256:ed9d91f0191e3c98b1fa2deee7df657f0a333b44675452bc8d11ff2bd04a8a5c",
+      "idempotency_key": "sha256:a3c6f007a53c2ea7386b5369104471c9fae7898a76c87e368f401fdbadd11610"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That phrase is in the recommendation because of what the alternative turned out to be.",
+      "text_sha256": "sha256:71fe518c3edef8314e8d3477d7be4bfba78fc8771752edbd25a132844b6916d0",
+      "idempotency_key": "sha256:911008451fbc76ddec0ac5125b8a6083cfe006a848a88fd4425442b4750138a5"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The findings about the alerts that were sent are just as flat.",
+      "text_sha256": "sha256:020bd38364772a9774fb794f0c0b9e37e0ea07977acd35c2953c4aca2dbdb064",
+      "idempotency_key": "sha256:baf78b579928d0ae6427e6a71d5779b10250ee0f14d087c889cef32494143e5f"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Finding thirty-six.",
+      "text_sha256": "sha256:ba9131de2c1d128d8fb15fcd631986511c86d213c4de1f8c84c8ea8f25b961ee",
+      "idempotency_key": "sha256:b3339f5aa01e87fadb8c6e64f736b89b2e7f6b7667f49110ceb4a9473615ebe3"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Many residents did not receive a text notification from the county regarding the high winds and high fire danger.",
+      "text_sha256": "sha256:129411eac3c4e20504b6c365dddcdacde4b872c3a58c2391f8dee4167f84865f",
+      "idempotency_key": "sha256:34ad8d1089b24cf04bff5087f81240016acbbf951c7952865d08f3714fdcbd7a"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Finding seventy-five.",
+      "text_sha256": "sha256:cd35ce2c16e956578e748f2e3302964a6d6074c15fe32839b66b81c005b4cef7",
+      "idempotency_key": "sha256:2d0822fda81e43933a766e573de932c49828d59bc77599b3b649c188434e99e3"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The alert systems in place did not adequately inform residents of inherent dangers.",
+      "text_sha256": "sha256:f41d6f9dc85ee918ac0a231865c3b5385680d59f307b6f6db192dc1614245a0b",
+      "idempotency_key": "sha256:c6ae599c3cd192c2c2bd617f1d32e3729d5b499aaea1eadab61889c1ccc6d5f7"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Its first recommendation asks for multiple alert systems — sirens, radio broadcasts, and door-to-door notifications — especially when cell service and electrical power are lost.",
+      "text_sha256": "sha256:72834677f2611c51a69d450d099c2bedb9501bb0521364b535920bdb02c6a83c",
+      "idempotency_key": "sha256:41c66809b63d314a992bd6d6d59d2f7e0c3d9b46dd837777ec9c3592d3742a49"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Door-to-door.",
+      "text_sha256": "sha256:afe60c76d962d7b43caf8f498df45c817e174c289b62d26896cfb494b7985d28",
+      "idempotency_key": "sha256:1a05de05122d1f4a0343636a43ed5cc139692a354b475513452a178c18b71c76"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is the fallback the recommendation reaches for, and on the night itself it is what happened: an engine crew driving Wahikuli at twenty-four minutes past eleven, running its vehicle sirens and knocking on doors.",
+      "text_sha256": "sha256:75c3017a6609643b15ece3b7823fcd12a30140b3a0d71659e1d2d00017f17649",
+      "idempotency_key": "sha256:73213021f4d26510535d3eae67caf04ffbd76038a9c9d8d1adc948d3bbdcc72e"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And Finding thirty-nine is the one that is hardest to read.",
+      "text_sha256": "sha256:13ffc14b2d6da131d33b5756bd340c9d7cde7d7e57addd5be0f834bc835d5f98",
+      "idempotency_key": "sha256:41fc33be83d0124fa08768552f7b0413e3cfcef291491ed46e0f0c6b1af42e18"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Even when people were told to evacuate, and conditions seemed obvious that evacuation was necessary, many refused, because there did not appear to be official notification that danger was imminent.",
+      "text_sha256": "sha256:02e92f8d427ef48d5f12fd2d0554be7d6f6813b1e5095091d990d027376ef8da",
+      "idempotency_key": "sha256:2e4a732462cb9731a17054b075450a8ec7948c38c451c3127bafcbbb9795d48b"
+    },
+    {
+      "chunk_id": "VC-0302",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "People were standing in it, being told by other people to go, and waiting for the thing that says it is official.",
+      "text_sha256": "sha256:737296bddd005283fea4b25ed4edfa3d8ec06eb4e1e4d1310f3cdc79a9d4ca99",
+      "idempotency_key": "sha256:ab200ff84a67d466e09a5239e4250407290c4024bfe7d3225c96cbb25859de51"
+    },
+    {
+      "chunk_id": "VC-0303",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There is one more thing in the first report, and it is four sentences long.",
+      "text_sha256": "sha256:3837b396ce7d74b84409613178d6005032303f4d437d4a6efcdd24e28382963a",
+      "idempotency_key": "sha256:3fe94dd5da94145a789acae58e6e2d30c1d3625628834110391cb5d984c7a8f4"
+    },
+    {
+      "chunk_id": "VC-0304",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There is no data showing which emergency management personnel responded on August the eighth.",
+      "text_sha256": "sha256:c8792b0af2b7cd51b755d9b1c1508776deed655cad9980b77343a97d280f9348",
+      "idempotency_key": "sha256:76d536ea6b13a63c399f172c4d59f5d308157ce2e86dfd39e5ce3cd4c6a80b32"
+    },
+    {
+      "chunk_id": "VC-0305",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The only missing sign-in sheet for the emergency operations centre is that agency's sheet, for that day.",
+      "text_sha256": "sha256:3a9f555e74375ccce21f612cb03c5eb1868e13773e0b421e1218d0774cdf45b6",
+      "idempotency_key": "sha256:6433fcd68926435c0280a618779ba1d6854ed6a4408f80d7bc3f4e78265d4c14"
+    },
+    {
+      "chunk_id": "VC-0306",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The county has not produced it after multiple requests.",
+      "text_sha256": "sha256:2e0532d6e0c432c8d159ae512ca2f5e305e923f8eaaa8ddd73159a95424d306c",
+      "idempotency_key": "sha256:9b2cd4dd2049be35d17fb7d9590ce6ec159205acaaa4acdeb27bf38ca6b4c76a"
+    },
+    {
+      "chunk_id": "VC-0307",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The activity logs that would record the response hour by hour were not received from that agency's personnel for those dates either.",
+      "text_sha256": "sha256:63910184a4dd44a3c9c94aab7da7dd7aa55ce3853732a194083a0d96a5745cd8",
+      "idempotency_key": "sha256:52d7f390e1848bda7654d558e023cdc94d6497847ce41ca2430659ce88cb34d6"
+    },
+    {
+      "chunk_id": "VC-0308",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And so the report says, in its own words, that because of missing data it is difficult to make a complete and accurate accounting of activities within the emergency operations centre from August the seventh through August the ninth.",
+      "text_sha256": "sha256:6708c75b3a7cb0112b09dab5377a7c2472c7340e7b1d25383ddc3ef74ef8b7c9",
+      "idempotency_key": "sha256:fe23d036b80f755e87b865a0a1bac479faa73a887c6c8298bb62aa60f7fbcda4"
+    },
+    {
+      "chunk_id": "VC-0309",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The investigators had subpoena power, and they used it.",
+      "text_sha256": "sha256:29194163937e629dd0afbfa3c978ce9ac174268a94e098b4179520f2ee57c42d",
+      "idempotency_key": "sha256:cab837d4e6b955cd329c7e9a2e60027c7cc59cf65d0b021a0f8ee2629dc3ee80"
+    },
+    {
+      "chunk_id": "VC-0310",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "One subpoena, served on the county's emergency management agency in October of twenty twenty-three, asked for all maintenance and testing logs for the statewide alert and warning siren system in Maui County.",
+      "text_sha256": "sha256:6a5a09f6464d12f1141b54f0828f4eeec905e4b7834f0ee243ece231f6527454",
+      "idempotency_key": "sha256:b6e77bd53d1a96eb78f423f767ea435838c85960689aa8534e5aa361906bc1d0"
+    },
+    {
+      "chunk_id": "VC-0311",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "They had to ask for those in writing.",
+      "text_sha256": "sha256:b2a9c4d2469ff5d1df003267b4297997d47b8af0874f23da18bf0348dfcfa54e",
+      "idempotency_key": "sha256:6fd3139814b9cb708c65e9a1a07a481bb1906c70a8b876ad79ce68ece0c5b94d"
+    },
+    {
+      "chunk_id": "VC-0312",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The civil case has moved further than anything else.",
+      "text_sha256": "sha256:57677008f482c496238276ba51d17c364c53d9685dabc13303762435af809704",
+      "idempotency_key": "sha256:ed50313915fc1f71308bc1a5c58f2e6e9908fb6c1cc59b2d48992af2a13b07ad"
+    },
+    {
+      "chunk_id": "VC-0313",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A four billion, thirty-seven million dollar settlement resolving roughly four hundred and fifty lawsuits was announced in August of twenty twenty-four.",
+      "text_sha256": "sha256:2870aefb5bb7e548fc18b26ca2eccfb744624064d5ca07a5e501b47e597a6154",
+      "idempotency_key": "sha256:953808f7fe4ef28eb351fafa25c017584839f31561b44c1e2e73fa348437a4ee"
+    },
+    {
+      "chunk_id": "VC-0314",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In February of twenty twenty-six, the Hawaiʻi Supreme Court ruled unanimously that insurers could not intervene in it.",
+      "text_sha256": "sha256:2f6528dda6b0b32180580339d8bccca65b484bf85f732971c96d74494a19a2f8",
+      "idempotency_key": "sha256:e3251203c3e92dd033e44319089a9b4446c30e2d5beac05320c6777ec8fda8e2"
+    },
+    {
+      "chunk_id": "VC-0315",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The first award determination notices went out on the seventeenth of June, twenty twenty-six.",
+      "text_sha256": "sha256:801f247f9c14bd2ef0bfa985e7253b20c3af8ab788a8f6a47bb63509575cbcb9",
+      "idempotency_key": "sha256:4c50b0d22e0216fc49e8d74dc5af4fde7d83753e17e5fd03a2e6f88a93d0e2db"
+    },
+    {
+      "chunk_id": "VC-0316",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A notice is an offer, not a payment.",
+      "text_sha256": "sha256:2544c0c3409b71c8ec7a543eb18faf624a5bc5b674b1e7da17962794c1c2cbea",
+      "idempotency_key": "sha256:3dd6cb0c6e849b90d3d405c3db7e28ece531f6b0bf9801ea5adbbe31abda1a27"
+    },
+    {
+      "chunk_id": "VC-0317",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Nearly twenty-two thousand claimants have filed more than ninety-four thousand claims.",
+      "text_sha256": "sha256:c27de5152d5fa7cd781fbb73c1eacfdc29435ed55ee1cb05a73ca2719ba4b9db",
+      "idempotency_key": "sha256:db067ef1b16d8142a8fa232990891c26113137fd0b3ce6c9dfb5d607a8922fa0"
+    },
+    {
+      "chunk_id": "VC-0318",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "As of August twenty twenty-six, no payment has been made.",
+      "text_sha256": "sha256:25cce9ddcc99b3e831bcf0c492e9470e84d5b1b502e11ecce34ad839e3dbef01",
+      "idempotency_key": "sha256:15068d9f56ef0039d67d59c187e2bfe3b6a1e9e90dba2efc170f595c6006b129"
+    },
+    {
+      "chunk_id": "VC-0319",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "An appeal over how much of the settlement the lawyers receive is pending before the state Supreme Court, and while it is pending, no settlement payment can be made.",
+      "text_sha256": "sha256:59e3febc10ef9010d0f2ce4a207b50f6f160cbe393ae412c987c65503a4318f4",
+      "idempotency_key": "sha256:2ca6a823fde448eea66d83c18d01bbaecf9359d3319c38008f377a16206cfb26"
+    },
+    {
+      "chunk_id": "VC-0320",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "About one point one billion dollars is sitting in trust for the first of four annual instalments.",
+      "text_sha256": "sha256:11afa4626c42cea4af57935147a5194638f8a10a969c6a961a46dc0a1809f72c",
+      "idempotency_key": "sha256:93ee9ae41c821547f2432c785fb083f669c6e15ff172443617c012c44bcecb0d"
+    },
+    {
+      "chunk_id": "VC-0321",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "So here is what the record holds.",
+      "text_sha256": "sha256:23d539f27a155aa8147817b33b0c405d09fae6c16231d507396ed81808a906e3",
+      "idempotency_key": "sha256:68e3ff5dd6ba5b16f43f0d160a9d7f6e9afac4d3399e05956eb8a15bb1bec86c"
+    },
+    {
+      "chunk_id": "VC-0322",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A forecast that was right, five days early, and named the town.",
+      "text_sha256": "sha256:1b52e9ae19e795f49146e2d4a403e02965471072a454d2f36c9f76919a9ea9e5",
+      "idempotency_key": "sha256:48bba778e46e8d5747c08afe73e7a6b94d2046a3ae250c43b2bfe5836ed9f79f"
+    },
+    {
+      "chunk_id": "VC-0323",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A warning that looked like an ordinary summer Tuesday.",
+      "text_sha256": "sha256:23203ce2985dd288e4b91631104a426ba7e90f0a535fb07911879a674b3a92d6",
+      "idempotency_key": "sha256:2bfea24187dbadfde55005a571564562ff6eb40fd3da63d0894f390a35658d20"
+    },
+    {
+      "chunk_id": "VC-0324",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Weather data from an airport on another island.",
+      "text_sha256": "sha256:b03921821ce31302ef77b0d2236b0077fe95f8a4328d85e7cccbc9b802543c3f",
+      "idempotency_key": "sha256:439709ef9b0667b1f6408cc1d2c19a6af7ef65f3b3c0ead8df41f3c54ad224f0"
+    },
+    {
+      "chunk_id": "VC-0325",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Broken lines re-energised over grass that had not been cut.",
+      "text_sha256": "sha256:da85292e3514d4497e9362dc8824d87060f20621dabc07546a965264a24d2fb1",
+      "idempotency_key": "sha256:1a16cf8e5b166faa4f783b9eb60e000de7857c8ab6a5a21656c75ec01ec4538f"
+    },
+    {
+      "chunk_id": "VC-0326",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Poles across the northbound lanes before dawn.",
+      "text_sha256": "sha256:928b18e26836ee9ad53bbb3d9c221936244682f0f1fcc611ce0853ef51616dc1",
+      "idempotency_key": "sha256:610d1ecb96a92fc28a62af20f79a6c8ebf3772ff268ce1c7d9b85b2a925c4e2a"
+    },
+    {
+      "chunk_id": "VC-0327",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A fire put out by the method that works, in weather the method was not built for.",
+      "text_sha256": "sha256:bb3c0d721e14677fab165249c8195d2d3f8924fe354a3fa8794c4a93754566d5",
+      "idempotency_key": "sha256:78291feb61cff8d7b295ac0bea62f21eb7767f2a7d8b87b79b00a64efdf61d6e"
+    },
+    {
+      "chunk_id": "VC-0328",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Phones gone by late morning.",
+      "text_sha256": "sha256:82da3bb1cba89547dfae22448523b04455305914812a197781c6959fbc7ccbf8",
+      "idempotency_key": "sha256:eb1200c01aa0cb3fed2bdd88998af44086f18c86c8247c53748dcbc6cf343d8f"
+    },
+    {
+      "chunk_id": "VC-0329",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "An evacuation order at sixteen minutes past four, naming a shelter that had closed at two, sent to a network that had already died.",
+      "text_sha256": "sha256:c80eff3f0ce42a85d0014d7b916d4011fa4c74d002aa143d33c6cbc88dafa225",
+      "idempotency_key": "sha256:13e2bbe4326ce2306268fa391143ad70d0af85c4794480453e44bdde2b4d2473"
+    },
+    {
+      "chunk_id": "VC-0330",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Eight ways out reduced to six.",
+      "text_sha256": "sha256:257d53f8ed6240aaee0210e5037ceb365b684d749dc6fb104aaecfd403e88517",
+      "idempotency_key": "sha256:f91f7e617b717034b0742123148ed5c07f6d523b7e9f3804cf91815ed65eff06"
+    },
+    {
+      "chunk_id": "VC-0331",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A padlocked gate.",
+      "text_sha256": "sha256:8c72b5eb8ad417e81cfa8c04bf320b5bd9b58861c0dd8c0fb8856d941f7ef8df",
+      "idempotency_key": "sha256:38652dfa4314d212142f81186c7bce4fc88eec0b045495df2f67840e9eec7deb"
+    },
+    {
+      "chunk_id": "VC-0332",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A water system in compliance, bleeding out through a thousand burning houses.",
+      "text_sha256": "sha256:56e878632edbfe463e8c54ac6a233facc7ec040ea14583aaa49a086fa28bfd62",
+      "idempotency_key": "sha256:eecb7898972193cb40de3f6936b9e36c128765bf1c0c9077fb6bc84bef34331a"
+    },
+    {
+      "chunk_id": "VC-0333",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "One siren operable inside the burn perimeter, on a network that had never once been used for a fire.",
+      "text_sha256": "sha256:d570662de06251bfd693a0add55e669b7163e7947b2b97f621508aaa3898a1b3",
+      "idempotency_key": "sha256:ef0b60e42dcfad1eab028dea7e97bd9f260aff52794ed42cc95c3c17db1cf121"
+    },
+    {
+      "chunk_id": "VC-0334",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Eighty-four findings.",
+      "text_sha256": "sha256:b8a3baeeb9a22458cff624e1b3c073849a6bbd729e61cc4fdd089e10702223ef",
+      "idempotency_key": "sha256:cc13e84edc21d358c4a81321a11603ed3c772ab01e13a37b9a9aefad7f9ef1fb"
+    },
+    {
+      "chunk_id": "VC-0335",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A hundred and forty recommendations.",
+      "text_sha256": "sha256:58c2129f875524b11df2e5fd72429c34aa03b5d5f9137abf01b030269d5df2e2",
+      "idempotency_key": "sha256:9ef0f416729f0b321fe7e55a6e649b570ad719d86033d9d8f7887ca2c2c51c2f"
+    },
+    {
+      "chunk_id": "VC-0336",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And not one of them says that sounding the siren would have changed the outcome.",
+      "text_sha256": "sha256:3f511c31f570fbd057d1e625ce0d1d869679d18fb75608f2800aa3667ce419d2",
+      "idempotency_key": "sha256:14e982f5ba44f67e99c3e478d10f84d6b06a7e67fdb3f3cbe08bdf2bf7eeffd9"
+    },
+    {
+      "chunk_id": "VC-0337",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is not a loose end.",
+      "text_sha256": "sha256:94a451f6fe345a3bf62336829e0bb03084019c146642d97ca1f8ee9d27c46146",
+      "idempotency_key": "sha256:8fa1785b12e56f5f08711b42caf8c35d3cbb84c0f0ce3c980446db64e65cbe29"
+    },
+    {
+      "chunk_id": "VC-0338",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is the finding.",
+      "text_sha256": "sha256:d44c903198a03a3225545ab055597726aa56dd3f3bc930ac04e328d2668b0e36",
+      "idempotency_key": "sha256:8a7a18f3cdea6f6a02d7a032e8e3142720737cb1cbfe869b09ea3dfb4c2f1477"
+    },
+    {
+      "chunk_id": "VC-0339",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The report's own conclusion is a system — weather, fuel, building codes, roads, water, power and warning — and a system is exactly what nobody can be prosecuted for.",
+      "text_sha256": "sha256:51177cb595d1518fa8b5ec40cb233a7ae04a7bc766cb8a63baece7ab43c024b8",
+      "idempotency_key": "sha256:4b4e2e440aa0afb28843bfe4f5031cb87a8f34973c09de2604e5b9f64683f8cd"
+    },
+    {
+      "chunk_id": "VC-0340",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And there are things this film cannot tell you, because they are not in what has been published.",
+      "text_sha256": "sha256:c94c0a0f5087bad180d5434d3d3a2efda7ff7efd90eb0ccc1a42f5833f5e4b05",
+      "idempotency_key": "sha256:acb2e0df9df33c0680c3aac9a203dee38002290ee9c1c6663799f637fa3b79d8"
+    },
+    {
+      "chunk_id": "VC-0341",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "How much of the town burned in acres, and how fast the wind was actually blowing on that slope, are not in the record we read, and we have not put a number on them.",
+      "text_sha256": "sha256:f88bf273b45ad79162cff8f9171026cde85b6edcdd0712e19f5bc66af6ad5dac",
+      "idempotency_key": "sha256:3ef49b0df91d48667472422299804bf11ea4d46b4ee1957c8a310ccd590ee430"
+    },
+    {
+      "chunk_id": "VC-0342",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Here is the part that is not about Maui.",
+      "text_sha256": "sha256:1a45115bc50cc09d2dc28005542793d537101c8f8509dddd2492acb4c22eb34a",
+      "idempotency_key": "sha256:a04bcb2414dd8460973193109b07782c7a9c21ba8897544446e4bd53e859dc7b"
+    },
+    {
+      "chunk_id": "VC-0343",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Every place you have ever lived has a warning system.",
+      "text_sha256": "sha256:03f019b9f009633235f6f42470e07d8d9af1ae4d1bf5429b847e929485ec4a07",
+      "idempotency_key": "sha256:792ff747a3b90c49c0c11303eaaffcace43ef9eee37c80101d119bdcacdadb95"
+    },
+    {
+      "chunk_id": "VC-0344",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And every warning system is really a habit — the one thing it gets used for, over and over, until that becomes the only thing anybody believes it means.",
+      "text_sha256": "sha256:7a0967a7a853f39668d29b4bfc95fbe8e8b6234b3d2a52cdfedd390562f5b289",
+      "idempotency_key": "sha256:3f3cd229ccf0ae17f9fc7fb7ad7f1372917f7021f934954ba8b8015da12c5604"
+    },
+    {
+      "chunk_id": "VC-0345",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "In Hawaiʻi the habit was the sea.",
+      "text_sha256": "sha256:f6559c7c1702cc7f99f851cfdf411fb9033b9ba2277e6a0c114195c874da8f5a",
+      "idempotency_key": "sha256:7e0d1f506aa78c19bed79bfdb0bd843a6658c7ded9e59429c777c7a9ae4d0628"
+    },
+    {
+      "chunk_id": "VC-0346",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The equipment was general.",
+      "text_sha256": "sha256:747ed09a862fdee4d925d6f1dfc691c61afcb3ff871a34d4ad52cdb48a4c3375",
+      "idempotency_key": "sha256:9e31f24f2d36039939ed57f7023d634f0ab5d7ad390e19e585d9a9c8122db451"
+    },
+    {
+      "chunk_id": "VC-0347",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Its own published list included wildfires.",
+      "text_sha256": "sha256:a3e6a71d6ff619df624002f32296ca21ad31317fde53da7c38b8304fcb0bbb5f",
+      "idempotency_key": "sha256:0708131ab2382910c07492180884814fe0ac588e9133aae175a0f7884454f3e3"
+    },
+    {
+      "chunk_id": "VC-0348",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "But the habit had one direction in it, and the direction was makai, and on the eighth of August the fire came from the other side.",
+      "text_sha256": "sha256:30f4e0c6d8585ff1c2992161218c74749af91d24740504ea482c82efbca9b2ed",
+      "idempotency_key": "sha256:175308e9fb1ef292a11748b0268dd3034bb70719971f798a9ac0089df0b3491f"
+    },
+    {
+      "chunk_id": "VC-0349",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That has changed.",
+      "text_sha256": "sha256:8def410ae0bde9448a754b539a3e678fdfb888d821f757ee95dffcb9430dadf9",
+      "idempotency_key": "sha256:a513d51a5c806a018c2f97ad865129cd34b87a4fa5db3329046c7789d0090ea7"
+    },
+    {
+      "chunk_id": "VC-0350",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "As of the publication of the second report, the county has implemented a process for activating the sirens for wildfires.",
+      "text_sha256": "sha256:ce7513c27578cf5b86f8cb6b0550d12cb2b714be2de683823aa835030a54d6a8",
+      "idempotency_key": "sha256:75e310248a7e57155c537d346c024df251329927da70e595bcece60151618a91"
+    },
+    {
+      "chunk_id": "VC-0351",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "So this is the ask, and it is not the usual one.",
+      "text_sha256": "sha256:496c868b4e239f9b5aaf00d952188047564355089d5662d074bd7a54c09f9db5",
+      "idempotency_key": "sha256:23df9eaebf5d8c0c4fa23dd18362b1bfd59cf87f2aa2e50abd155f4b76a9621f"
+    },
+    {
+      "chunk_id": "VC-0352",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Find out what the warning where you live is actually for.",
+      "text_sha256": "sha256:71d32d0b2a36015e5e35d06ae6fa1777d2fa28284a69f4b2f4f3e531ae9c737b",
+      "idempotency_key": "sha256:576c6a8f2364138c09a807bc870f71dfb22b5c91782282826eeef7482b8c7f56"
+    },
+    {
+      "chunk_id": "VC-0353",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Not what you assume it means — what the agency that owns it has published that it means, and what you are supposed to do in the minute after you hear it.",
+      "text_sha256": "sha256:a589225b05d8203f8d340341ec2e82c91a39a56f60467d05309e44ef974e19a0",
+      "idempotency_key": "sha256:7c61d5ecde5151b27a0894a31668cf65a01d7ec7edde0c97d3b9b60cfd635b5f"
+    },
+    {
+      "chunk_id": "VC-0354",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "In Hawaiʻi the answer is one line long, and it has been on a public page the whole time.",
+      "text_sha256": "sha256:0cfda9a847f6f2dd66b15e5c1eefe5bfff0fff5d90109e3738c19789bb4a8e84",
+      "idempotency_key": "sha256:413b07ae0f41e1124afbeb7e9b022f4b521ea73d76ee691ae46df42acd10fa5c"
+    },
+    {
+      "chunk_id": "VC-0355",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "When you hear a siren tone that is not a scheduled test, turn on the radio.",
+      "text_sha256": "sha256:cc0568259d0cc999325a1034dc782b87a40c2ac3fa51756cc20a7072f0680df2",
+      "idempotency_key": "sha256:48bcbcd599673d46fa05db3424207e976341c86dba84a4f313edf3c4c13ddd48"
+    },
+    {
+      "chunk_id": "VC-0356",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The sound was never the message.",
+      "text_sha256": "sha256:f869c8a12b2d9bfd7437fe3ec193aeb991d9eba766d4887bee2a564d5790b0c9",
+      "idempotency_key": "sha256:fd3ad7a4aef7f3f56d1c13054f7cb2fdf95f2b5635332375758d24c14f25cd9e"
+    },
+    {
+      "chunk_id": "VC-0357",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It was the instruction to go and find one.",
+      "text_sha256": "sha256:76147e6675de816b44b4b917cae7db58713694840edfa524d3dd4d401349f895",
+      "idempotency_key": "sha256:942a89ee122b0fb216d8ec80c936e1bcd0076d6b1913dfb57e2fbc07e96f534d"
+    }
+  ]
+}

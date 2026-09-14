@@ -1,0 +1,37 @@
+{
+  "schema_version": "final_qc_v1",
+  "episode_id": "PD-2026-007-riley",
+  "revision": "v001",
+  "render": "artifact://episodes/PD-2026-007-riley/08_edit/riley_final_v001.mp4",
+  "render_actual_path": "H:\\pd-media\\episodes\\PD-2026-007-riley\\08_edit\\riley_final_v001.mp4",
+  "sha256": "ca595294db079a42a408543a83a7aee79a34348ada70494071560e97bb2ee3fe",
+  "duration_seconds": 646.0,
+  "target_duration_seconds": 646.0,
+  "visual_source": "H:\\pd-media\\episodes\\PD-2026-007-riley\\08_edit\\renders\\PD-2026-007-riley-firstcut-visual-proxy.v002.mp4",
+  "audio": {
+    "narration": "ElevenLabs channel voice fit to final timeline",
+    "narration_master": "artifact://episodes/PD-2026-007-riley/06_voice/master/vc_master_v001.mp3",
+    "narration_fit": "artifact://episodes/PD-2026-007-riley/06_voice/master/vc_master_v001_fit_640s.wav",
+    "narration_fit_seconds": 639.997,
+    "music": "H:\\pd-media\\library\\music\\reveal\\mus_20260614_reveal_hidden_system_clicks_v2.mp3"
+  },
+  "captions_sidecar": "artifact://episodes/PD-2026-007-riley/08_edit/captions.final.v001.srt",
+  "thumbnail": "H:/pd-media/episodes/PD-2026-007-riley/09_package/thumbnails/PD-2026-007-riley-thumb01.v001.png",
+  "thumbnail_sha256": "sha256:b093023534c67d72a3468fc2fafa2a95d69fa53f899797b30e366a7a9bb5766f",
+  "title": "The Supreme Court Case That Put a Warrant on Your Phone",
+  "synthetic_content_disclosure_required": true,
+  "upload_performed": false,
+  "publish_performed": false,
+  "approval_ids": [
+    "APR-0001",
+    "APR-0002"
+  ],
+  "qc_status": "pass_with_warnings",
+  "warnings": [
+    "Captions are generated as a sidecar SRT; they are not burned into the video.",
+    "Caption timing is derived from ElevenLabs chunk timings, not Whisper word-level forced alignment.",
+    "Synthetic-content disclosure is required because symbolic AI reconstructions are used.",
+    "Upload/publish is handled by a separate guarded script."
+  ],
+  "created_at": "2026-06-20T14:54:56.918079+00:00"
+}

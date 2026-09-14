@@ -1,0 +1,39 @@
+[
+  {
+    "_note": "EP66 openfields — After Effects kinetic beats. Owner directive 2026-08-10: 'AEもしっかり使って'. The approved use (2026-08-04) is one or two kinetic-text beats on the numbers and turns in the middle of a long-form; EP66's design had none until now — the film bible and the image order mentioned After Effects zero times, which is how an approved capability goes unused. Each id below names the script line it lands on so the beat cannot drift off its fact. Render with scripts/ae/render_beats.sh, then the clips are placed as cuts in film.json.",
+    "id": "_meta",
+    "style": "note",
+    "seconds": 0
+  },
+  {
+    "id": "ep66_kin_78_days",
+    "style": "number",
+    "seconds": 2.4,
+    "big": "78",
+    "bigSize": 300,
+    "label": "DAYS ON HIS TREE",
+    "labelSize": 78,
+    "_line": "That camera remained on Punxsutawney's property for 78 days. (PA-13)",
+    "_why": "The single number a landowner feels in the stomach. Mid-film, ACT_4."
+  },
+  {
+    "id": "ep66_kin_22_times",
+    "style": "number",
+    "seconds": 2.4,
+    "big": "15–22",
+    "bigSize": 240,
+    "label": "ENTRIES. NO WARRANT.",
+    "labelSize": 72,
+    "_line": "without consent, a warrant, or probable cause at least 15 to 22 times (PA-12)",
+    "_why": "The range is never narrowed anywhere in the opinion; ○-06 forbids rounding it, so both numbers are on screen."
+  },
+  {
+    "id": "ep66_kin_one_dollar",
+    "style": "punch",
+    "seconds": 2.0,
+    "words": ["ONE DOLLAR"],
+    "bigSize": 132,
+    "_line": "What the two men hold is a declaration about their own land, and a dollar.",
+    "_why": "The turn's floor. It lands just before the hard cut to Pennsylvania, and the script gives it a hold — the AE beat is what fills that hold."
+  }
+]

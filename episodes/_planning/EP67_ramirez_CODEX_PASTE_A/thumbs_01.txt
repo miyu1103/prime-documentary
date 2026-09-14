@@ -1,0 +1,68 @@
+EP67 ramirez — 画像発注 **サムネイル**バッチ 1/1（6枚）
+区分: T · THUMBNAIL PLATES  [TSTYLE]  [T001 – T006]
+
+★これは**サムネイル用**です。**動画のカットには一切使いません。**
+　この6枚だけ [STYLE] ではなく **[TSTYLE]** を使います（下記）。**[NEG] は変えません。**
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [TSTYLE] は、次の文言に置き換えてください:
+
+editorial photographic still made to be a video thumbnail, ONE HARD DIRECTIONAL KEY LIGHT from the side, HIGH CONTRAST AND BRIGHT OVERALL EXPOSURE, the subject clearly brighter than everything behind it and cleanly separated from it, shadow only where it defines an edge and never filling the frame, THE ENTIRE UPPER 40 PERCENT OF THE FRAME IS ONE UNBROKEN UNIFORM FIELD - plain wall, plain sky or plain out-of-focus darkness, with no object, no edge, no horizon and no detail crossing it anywhere - and the whole subject sits inside the lower 60 percent with the bottom third the brightest part of the picture, ordinary suburban and civic California in the United States between 2011 and 2026, ultra-detailed, photoreal, 4K, 16:9, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+★この6枚は**サムネイル専用**です。本編カットの [STYLE]（低コントラスト）は使いません。
+　硬い一灯・高コントラスト・明るい露出。**画面の上40%は何も無い一様な面**にしてください。
+　見出し文字を焼き込む場所です。被写体は下60%に収め、下1/3を一番明るくします。
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ T001.png
+A car-dealership sales desk seen from behind the customer's shoulder and slightly above, THE WHOLE SUBJECT SITTING IN THE LOWER 60 PERCENT OF THE FRAME: TWO ADULT HANDS LIE FLAT AND SEPARATE ON THE DESK TOP in the near foreground, palms down and in full contact with the surface, the four fingers of each hand side by side with a line of shadow between each pair and one nail visible on each, both thumbs clearly apart; a set of unmarked car keys sits on the far side of the desk just out of their reach; a slim monitor stands at the far edge TURNED AWAY so only its plain back is visible. The screen is never legible: it is a single soft bloom of even light with no icons, no windows, no rows, no cursor and nothing that could be read as a document. Bright showroom glass and a sunlit forecourt fill the bottom third and are the brightest thing in the picture. The upper 40 percent is one unbroken field of plain out-of-focus showroom shadow Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, face, head, object in the top of the frame, ceiling detail, hanging sign, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T002.png
+The same dealership desk, closer and lower: ONE ADULT HAND LIES FLAT ON THE BARE DESK in the near lower left of the frame with its four fingers side by side and separate, each with its own nail and its own shadow, and the thumb clearly apart; A SET OF UNMARKED CAR KEYS lies on the desk to the right of it. Both are low in the frame and both are hit by one hard directional key light from the left that makes them markedly brighter than anything behind them. The bottom third of the frame is bright bare desk. The upper 40 percent is one unbroken field of plain dark out-of-focus interior with nothing in it at all Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, face, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T003.png
+An office desk drawer pulled HALF OPEN with A SINGLE UNOPENED PLAIN WHITE ENVELOPE lying alone inside it and the rest of the drawer bare empty wood, photographed from a standing angle looking down, THE DRAWER AND THE ENVELOPE FILLING THE LOWER 60 PERCENT OF THE FRAME. One hard directional daylight from the left makes the envelope the brightest object in the picture and lays a crisp shadow from it across the drawer bottom; the bright uncluttered desk surface runs across the bottom third. The envelope is completely blank — no address, no window, no stamp. The upper 40 percent is one unbroken field of plain out-of-focus dark office with nothing crossing it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address block, stamp, other contents in the drawer, hand, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T004.png
+The same desk drawer and the same single blank envelope, closer and from a lower angle almost level with the desk top: the drawer front makes one strong bright horizontal across the lower third of the frame, the near corner of the envelope rises just above it catching a hard key light from the left, and the whole picture is bright and high contrast. The envelope is completely blank. The upper 40 percent is one unbroken field of plain out-of-focus darkness with nothing in it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address block, stamp, hand, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T005.png
+A dense field of small identical pale record cards laid edge to edge in a regular grid, photographed from directly above, ONE CARD LIFTED SLIGHTLY OUT OF THE GRID near the bottom of the frame and catching a hard directional key light so that it is markedly brighter than every card around it and throws a crisp shadow onto them. EVERY CARD IS COMPLETELY BLANK — no printing, no ruling, no writing, no numbers. The grid is brightest along the bottom edge of the frame, and the upper 40 percent of the frame is one unbroken even field of the same cards gone soft and featureless out of focus, with no edge crossing it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, writing on the cards, printed forms, hand, numbers, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T006.png
+The same field of identical blank record cards, photographed from a slightly raking angle just above the surface so the near cards are large and bright across the bottom third of the frame, ONE CARD STANDING PROUD of the others in the lower middle and lit hard from the left so it is the brightest and sharpest thing in the picture. All cards completely blank. The upper 40 percent of the frame is one unbroken field of the receding grid gone entirely soft and even, with no edge and no horizon crossing it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, writing on the cards, hand, numbers, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: T001.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

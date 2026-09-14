@@ -1,0 +1,31 @@
+{
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-011-mahanoy",
+  "gate": "title_thumbnail_publish_schedule",
+  "decision": "approved",
+  "approved_by": "owner_chat",
+  "approved_at": "2026-06-23T02:51:25+09:00",
+  "scope": "Upload to YouTube as private, set selected title/thumbnail/description/captions, and schedule public release for 2026-06-26T12:00:00+09:00",
+  "title": "Can Your School Punish You for a Post You Made Off Campus?",
+  "scheduled_at_local": "2026-06-26T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-26T03:00:00Z",
+  "video": "H:/pd-media/episodes/PD-2026-011-mahanoy/08_edit/mahanoy_premium_v001.mp4",
+  "video_sha256": "sha256:898ee186255dc54989a944cb92e4d174e1e8603b77c4a75faf9a461497eaac87",
+  "youtube_meta": "episodes/PD-2026-011-mahanoy/09_package/youtube_meta.v001.json",
+  "youtube_meta_sha256": "sha256:54f159b80ba4cb41e6dc0affd11d8168bd0fa20c7e81febfbd088ad463b561b9",
+  "thumbnail": "episodes/PD-2026-011-mahanoy/09_package/thumbnail.selected.v001.png",
+  "thumbnail_sha256": "sha256:fa74c38091576e623266d4f0d05ee31d2fb19e46a18431834c55a2f1b492ea92",
+  "captions": "episodes/PD-2026-011-mahanoy/08_edit/captions.v001.srt",
+  "captions_sha256": "sha256:ddff5372073950cbf83026aab67de3ab15be6444369f295ff29d0c1baa5d9065",
+  "conditions": [
+    "privacyStatus must be private until scheduled release",
+    "publishAt must be 2026-06-26T03:00:00Z",
+    "selfDeclaredMadeForKids=false",
+    "containsSyntheticMedia=true",
+    "upload to allowlisted Prime Documentary channel only",
+    "set selected thumbnail from youtube_meta",
+    "upload English sidecar captions when accepted by YouTube",
+    "no immediate public publish",
+    "do not alter locked script, claims, or narration"
+  ]
+}

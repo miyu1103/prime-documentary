@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 21/24（8枚）
+区分: PEOPLE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S161.png
+   [S161]  flags: P
+   Two technicians seen from behind adjusting instrumentation on a test enclosure, brilliant lab lighting
+
+2) S162.png
+   [S162]  flags: P
+   A firefighter seen from directly behind pulling a hose line across bright wet tarmac
+
+3) S163.png
+   [S163]  flags: P
+   Two firefighters seen from behind walking toward a plain red engine in daylight, no markings
+
+4) S164.png
+   [S164]  flags: P
+   A dispatcher seen from behind at a console, one hand raised to a headset, screens blazing
+
+5) S165.png
+   [S165]  flags: P
+   A lone figure seen from behind standing in a lit vestibule looking through a single doorway
+
+6) S166.png
+   [S166]  flags: P
+   A person seen from behind carrying a sheet of foam across a bright workshop
+
+7) S167.png
+   [S167]  flags: P
+   Two people seen from behind hanging acoustic foam on a wall under bright work lights
+
+8) S168.png
+   [S168]  flags: P
+   A person seen from behind stacking chairs in an empty brightly lit room

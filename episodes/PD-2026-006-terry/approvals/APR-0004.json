@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0004",
+  "episode_id": "PD-2026-006-terry",
+  "target_type": "publish_schedule",
+  "target_id": "terry_final_v001_youtube_schedule",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T22:54:55+09:00",
+  "requested_by": "owner",
+  "decided_at": "2026-06-20T22:54:55+09:00",
+  "decided_by": "owner",
+  "notes": "Owner explicitly requested posting EP6 Terry as a scheduled YouTube upload: '投稿しよう。予約で、明日の１２：００'. Interpreted as 2026-06-21 12:00 JST. Approval covers private upload, selected thumbnail_option_08.v001.png, YouTube metadata application, and scheduled public release at the exact time. It does not authorize deleting/replacing public videos or changing the locked script/claims.",
+  "conditions": [
+    "Upload only the exact final render H:/pd-media/episodes/PD-2026-006-terry/08_edit/terry_final_v001.mp4 with sha256:938897c59113adb46d501b81c379ab692dc918fd8c931a9f4743cb9a8d30343e.",
+    "Use selected thumbnail episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_08.v001.png with sha256:2410160486162ad7e2b0f25c8e6f92dbcba19177a1618622e9fb28f366a4acc0.",
+    "Schedule public release for 2026-06-21T12:00:00+09:00 (2026-06-21T03:00:00Z).",
+    "Keep madeForKids=false and containsSyntheticMedia=true.",
+    "Verify channel allowlist before upload.",
+    "Do not upload a duplicate if an upload result already exists.",
+    "Do not alter locked script, annotated script, or claims."
+  ],
+  "expires_at": "2026-06-21T12:00:00+09:00",
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-006-terry/09_package/youtube_meta.v001.json"
+}

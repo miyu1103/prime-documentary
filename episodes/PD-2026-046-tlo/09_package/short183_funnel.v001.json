@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 183,
+  "episode_id": "PD-2026-046-tlo",
+  "slug": "tlo",
+  "loop": true,
+  "loop_join": "the last beat brings back the opening plate -- the patrol car at the school kerb with its amber roof light burning in the fog -- under the FULL CASE card, run in rewind so the parallax settles onto the frame-0 framing instead of cutting away",
+  "second_watch_detail": "the patrol car in the first shot reads as scene-setting on pass 1 and, on pass 2, as the single fact that decides which standard applies to the bag",
+  "funnel_question_left_for_longform": "What did the Court say a school official may do on his own authority, and where exactly does that authority stop?",
+  "funnel_long_title": "A Vice Principal Opened a 14-Year-Old's Purse",
+  "funnel_long_video_id": "hC5KE6IqmhM",
+  "description_line_1": "▶ FULL CASE: A Vice Principal Opened a 14-Year-Old's Purse",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "Your School Can Search You Without a",
+    "ctaLongThumbSrc": "shorts/short183/short183_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What did the Court say a school official may do on his own authority, and where exactly does that authority stop?\n\nFull case here → https://www.youtube.com/watch?v=hC5KE6IqmhM",
+  "note": "Authored 2026-09-01 to unblock scheduling. short182-189 were finished and rendered but carried no funnel record, so check_short_funnel.py refused them and they could not be scheduled. Every field here was read off the built short: the spoken lines json, remotion/src/data/short<NNN>.ts and the contact sheet. Layer 4 -- the Studio related-video setting, which the YouTube API cannot set -- is recorded as a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

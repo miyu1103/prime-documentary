@@ -1,0 +1,56 @@
+EP82_valdez — 画像発注 バッチ 6/23（8枚）
+区分: ACT_1 / ACT_2
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, ship name, funnel marking, company colour, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) V041.png
+   [V041]  flags: 
+   A rocky shoal breaking the surface of cold water in flat daylight, no vessel anywhere in frame
+
+2) V042.png
+   [V042]  flags: 
+   A ship's clock on a bulkhead showing a few minutes past midnight, a bright wall lamp beside it, no numerals
+
+3) V043.png
+   [V043]  flags: 
+   An oil sheen on a steel deck catching a brilliant blown-out specular highlight, iridescent purple and green
+
+4) V044.png
+   [V044]  flags: 
+   Close-up of black crude oil pooling in the seams of a steel deck plate under a hard work lamp
+
+5) V045.png
+   [V045]  flags: 
+   Coiled orange containment boom on a dockside under a floodlight blazing into the lens
+
+6) V046.png
+   [V046]  flags: 
+   A cobble shoreline at low sun, brilliant orange band on the horizon, wet dark stones, no animals
+
+7) V047.png
+   [V047]  flags: 
+   A watch schedule chalked on a blackboard aboard ship, blocks and lines only, no lettering, a strip light above
+
+8) V048.png
+   [V048]  flags: 
+   A blank ruled watch bill in a frame on a bulkhead, columns only, a bright lamp beside it

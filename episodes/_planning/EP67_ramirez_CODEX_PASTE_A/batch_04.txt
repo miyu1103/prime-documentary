@@ -1,0 +1,66 @@
+EP67 ramirez — 画像発注 バッチ 4/18（7枚）
+区分: A2 · the two mailings  [R025 – R031]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R025.png
+A kitchen table seen from a seated height about two feet back: a plain white blank envelope lying flat in the middle of the table and a half-drunk mug of coffee gone cold beside it with a dull skin on the surface, morning light across the table from a window out of frame left, an ordinary American kitchen soft and dim behind. Nobody in the frame. The envelope and the mug are both unmarked Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address on the envelope, printed mug, newspaper, phone on the table
+
+■ R026.png
+The same kitchen table from the same seated height and the same morning light, now COMPLETELY CLEARED: bare wood from edge to edge, the grain and two old ring marks the only things in the lower half of the frame, the same soft kitchen behind. No envelope, no mug, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, any object on the table, person
+
+■ R027.png
+A plain white blank envelope lying on the cloth passenger seat of an ordinary car, photographed from the driver's side at head height looking down and across, the seat belt buckle and the door card visible at the edges, flat daylight coming through the side window and laying a soft bright patch across the seat. The envelope has no address, no stamp and no printing. Nobody in the car Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address block, stamp, licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, dashboard display, person
+
+■ R028.png
+A single sheet of paper HELD UP FLAT AGAINST A BRIGHT WINDOW and backlit, filling most of the frame, the light coming through the fibres so the paper glows evenly — AND NOTHING SHOWS THROUGH IT: no reverse printing, no shadow of type, no watermark, no fold. It is a plain luminous rectangle. Two hands hold it at the lower corners, both flat against the paper with fingers straight and separate, seen only as dark silhouetted edges. The window frame is a soft dark cross behind Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, reverse printing showing through, watermark, letterhead
+
+■ R029.png
+A plain kitchen waste bin seen from directly above with its lid open, mostly empty, ONE PLAIN WHITE ENVELOPE lying alone at the bottom of the liner, creased once across the middle and face up, completely blank. Dim domestic light from above, the bin's plastic rim making a bright ellipse around the dark interior Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address on the envelope, other rubbish with packaging, brand packaging
+
+■ R030.png
+A plain white envelope held flat against the pale metal door of a domestic refrigerator by a single plain magnet, photographed square on at chest height. The envelope is blank on both the face and the flap; the magnet is an unmarked coloured disc. The fridge door is bare around it — no photographs, no notes, no lists, no other magnets. Even kitchen daylight Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, notes on the fridge, shopping list, photographs, novelty magnet with text
+
+■ R031.png
+TWO plain white blank envelopes lying flat side by side in the bottom of a shallow open desk drawer, seen from a standing three-quarter angle looking down into it, the drawer pulled out about two thirds and the rest of its interior empty dark wood. A hand is not in frame. Soft north light from the left catching the near edge of the drawer front. Both envelopes are entirely unmarked Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, address block, stamp, other contents in the drawer, hand
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R025.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

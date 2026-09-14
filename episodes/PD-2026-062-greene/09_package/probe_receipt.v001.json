@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-062-greene",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "out\\greene_preprobe.mp4",
+  "slice_seconds": 60.05,
+  "slice_sha256": "sha256:e6c939916a8b914167ef5c9717c2d2415b5921c322dedccba894442d685c77c2",
+  "film_sha256": "sha256:6d66e8165b0f27ec7ab543eea8bfe47e8ea05f5f30e356b50355efb1a09bfc4e",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 46.3 / p10 45.2 / p50 45.9 (1264 frames, 381 cuts masked +/-8f; 4 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-08-09T11:58:02.460535+00:00"
+}

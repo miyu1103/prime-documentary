@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 290,
+  "episode_id": "PD-2026-070-wronghouse",
+  "slug": "wronghouse",
+  "loop": true,
+  "loop_join": "The last beat p14 is short290_14.png (plate W084, the same curtained room with a blanket over a reading chair already shown at p02), rewound under the FULL CASE card and held to the final frame. The beat directly before it, p13, is short290_13.png -- the identical plate W083 already shown at frame 0, the shelf of leather case-file spines. So the picture returns to its own opening image one beat before the card takes over, and frame 0 is that same shelf, closing the loop on the identical picture.",
+  "second_watch_detail": "The CTA-card plate (short290_14.png / W084, reused from p02) is a quiet room -- a blanket over a reading chair, curtains drawn against a window with a bare tree outside; on the first pass it reads as generic domestic warmth, but once L3-L4 have listed the tan split-level, the corner lot, the large tree and the stoop that all matched exactly, that same window and tree read instead as the confirmation an agent used to convince himself he was at the right address, when he was not.",
+  "funnel_question_left_for_longform": "If every landmark confirmed he was at the right house, what actually went wrong that night?",
+  "funnel_long_title": "The FBI Raided the Wrong House.",
+  "funnel_long_video_id": "1nxecNneBVk",
+  "description_line_1": "▶ FULL CASE: The FBI Raided the Wrong House. | https://youtu.be/1nxecNneBVk",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "The FBI Raided the Wrong House.",
+    "ctaLongThumbSrc": "shorts/short290/short290_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If every landmark confirmed he was at the right house, what actually went wrong that night? The full case is here: https://youtu.be/1nxecNneBVk",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that is already finished and rendered locally (remotion/public/shorts/short290, short290_yt.mp4) but not yet uploaded to YouTube, so funnel_long_video_id points at the already-live long-form (1nxecNneBVk, scheduled 2026-08-24, title verified against episodes/PD-2026-070-wronghouse/09_package/youtube_schedule_result.v001.json) while every short-side field -- loop join, second-watch detail, CTA block -- is read off remotion/src/data/short290.ts and the plates it cites in remotion/public/shorts/short290. The header question in that file (\"Everything he saw confirmed he was at the right house. What was he looking at?\") is answered by the short's own L3, so funnel_question_left_for_longform uses a close variant grounded in the same reveal instead of the verbatim header line. Layer 4, the Studio related-video setting, has a placeholder row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but cannot be performed until the short itself is uploaded and receives a real video id."
+}

@@ -1,0 +1,56 @@
+EP78_colgan — 画像発注 バッチ 5/21（8枚）
+区分: ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) C033.png
+   [C033]  flags: P
+   An airport ramp in a snowstorm, ground crew in high-visibility jackets seen from behind, floodlights blazing into the lens
+
+2) C034.png
+   [C034]  flags: 
+   Close-up of an airspeed tape with the red and black bar risen high, the digits directly above it, the display backlight blown out bright, everything else blurred
+
+3) C035.png
+   [C035]  flags: 
+   The same tape a moment later, the digits now glowing red, a hard blown-out specular highlight across the glass
+
+4) C036.png
+   [C036]  flags: P
+   A wide shot of a dark cockpit from behind the seats, two crew silhouetted, the windscreen full of snow blazing white in the landing lights
+
+5) C037.png
+   [C037]  flags: 
+   Extreme macro of a mechanical vibrator unit clamped to a control column shaft, engineering detail, a work lamp blazing into the lens beside it
+
+6) C038.png
+   [C038]  flags: 
+   A cockpit at night shot with a long exposure so every instrument light is a bright streak, columns blurred, the frame full of light trails
+
+7) C039.png
+   [C039]  flags: 
+   An artificial horizon instrument rolled far over to the right, the display crisp and brightly backlit, a hard blown highlight on the glass
+
+8) C040.png
+   [C040]  flags: 
+   A snow-covered residential street in upstate New York at night, street lamps burning bright and flaring, houses dark, quiet and undisturbed

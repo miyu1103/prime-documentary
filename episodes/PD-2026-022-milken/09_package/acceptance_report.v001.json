@@ -1,0 +1,19 @@
+{
+  "episode_id": "PD-2026-022-milken",
+  "revision": "v001",
+  "status": "PASS",
+  "render": "H:/pd-media/episodes/PD-2026-022-milken/08_edit/final.mp4",
+  "captions": "C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-022-milken/08_edit/captions.v001.srt",
+  "thumbnails": "episodes/PD-2026-022-milken/10_thumbnail/*.png; 09_package/thumbnail.selected.v001.png",
+  "notes": [
+    "Hero images must come from Codex app output under H:/pd-media/episodes/PD-2026-022-milken/05_visuals/selected; no local image generation.",
+    "R3 living+pardoned owner review remains required before upload/publish."
+  ],
+  "independent_gate": {
+    "command": ".venv/Scripts/python.exe scripts/check_final_acceptance.py 22 --json",
+    "exit_code": 0,
+    "status": "PASS",
+    "evidence": "episodes/PD-2026-022-milken/09_package/EVIDENCE/final_acceptance.v001.json"
+  },
+  "created_at": "2026-07-01T02:12:40.263202+00:00"
+}

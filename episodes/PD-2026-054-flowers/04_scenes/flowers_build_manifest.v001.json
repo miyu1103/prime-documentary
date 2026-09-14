@@ -1,0 +1,43 @@
+{
+  "episode_id": "PD-2026-054-flowers",
+  "producer": "scripts/build_case_film_generic.py",
+  "inputs": {
+    "assets": "episodes\\PD-2026-054-flowers\\05_visuals\\asset_manifest.v003.json",
+    "narr": "episodes\\PD-2026-054-flowers\\06_audio\\narration_index.v001.json",
+    "config": "episodes\\_planning\\EP54_flowers_filmconfig.v001.json"
+  },
+  "report": {
+    "slug": "flowers",
+    "cuts": 372,
+    "factory": 211,
+    "motion": 42,
+    "still": 119,
+    "pools": {
+      "factory": 218,
+      "motion": 44,
+      "still": 226,
+      "people": 16
+    },
+    "video_cuts": 253,
+    "still_cuts": 119,
+    "video_share": 0.6801,
+    "distinct_assets": 372,
+    "distinct_ratio": 1.0,
+    "max_reuse": 1,
+    "avg_cut_sec": 4.6,
+    "figures": 80,
+    "captions": 502,
+    "narrationSeconds": 1711.085,
+    "duration_frames": 51948,
+    "duration_sec_with_bookends": 1731.6,
+    "sections": [
+      "HOOK",
+      "OP",
+      "ACT_1",
+      "ACT_2",
+      "ACT_3",
+      "ACT_4",
+      "ENDING"
+    ]
+  }
+}

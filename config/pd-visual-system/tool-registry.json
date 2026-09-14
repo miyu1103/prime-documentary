@@ -1,0 +1,146 @@
+{
+  "schema_version": "2.0.0",
+  "tools": [
+    {
+      "id": "remotion",
+      "required": true,
+      "interface": [
+        "node",
+        "cli"
+      ],
+      "phase": "P00",
+      "name": "Remotion",
+      "purpose": "既存プロジェクト内で情報アニメーションと全体編集を行う。",
+      "license_gate": "既存package/lockfileを正本としP00でversion確認",
+      "license_state": "project"
+    },
+    {
+      "id": "ffmpeg",
+      "required": true,
+      "interface": [
+        "cli"
+      ],
+      "phase": "P00",
+      "name": "FFmpeg/ffprobe",
+      "purpose": "非破壊変換、probe、黒/無音/破損検査を行う。",
+      "license_gate": "公式buildと既存導入をP00で確認",
+      "license_state": "project"
+    },
+    {
+      "id": "pyscenedetect",
+      "required": false,
+      "interface": [
+        "python",
+        "cli"
+      ],
+      "phase": "P03",
+      "name": "PySceneDetect",
+      "purpose": "長い動画を論理カットへ分け、素材発見可能性を上げる。",
+      "license_gate": "code/version/licenseをP03前に記録",
+      "license_state": "review_required"
+    },
+    {
+      "id": "semantic_embedding",
+      "required": false,
+      "interface": [
+        "python"
+      ],
+      "phase": "P04",
+      "checkpoint_license_gate": true,
+      "name": "OpenCLIP-compatible embedding",
+      "purpose": "3点サンプルとmetadataを意味検索する。",
+      "license_gate": "codeとcheckpointを分離監査",
+      "license_state": "review_required"
+    },
+    {
+      "id": "whisperx",
+      "required": false,
+      "interface": [
+        "python",
+        "cli"
+      ],
+      "phase": "P07",
+      "alignment_model_license_gate": true,
+      "name": "WhisperX",
+      "purpose": "ナレーションと正本台本を単語単位で整列する。",
+      "license_gate": "code/checkpoint/alignment modelを分離監査",
+      "license_state": "review_required"
+    },
+    {
+      "id": "sam2",
+      "required": false,
+      "interface": [
+        "python"
+      ],
+      "phase": "P08",
+      "name": "SAM2",
+      "purpose": "明示されたbox/pointの対象マスクを生成する。",
+      "license_gate": "code/checkpointを分離監査",
+      "license_state": "review_required"
+    },
+    {
+      "id": "depth_anything_v2_small",
+      "required": false,
+      "interface": [
+        "python"
+      ],
+      "phase": "P08",
+      "model_variant_locked": "Small",
+      "name": "Depth Anything V2 Small",
+      "purpose": "静止画の弱い2.5D奥行きを作る。",
+      "license_gate": "Smallだけを候補とし導入時再監査",
+      "license_state": "review_required"
+    },
+    {
+      "id": "blender",
+      "required": false,
+      "interface": [
+        "python",
+        "cli"
+      ],
+      "phase": "P09",
+      "name": "Blender",
+      "purpose": "再利用可能なPD Evidence RoomをCLI/Pythonでレンダーする。",
+      "license_gate": "公式配布とaddonを個別監査",
+      "license_state": "review_required"
+    },
+    {
+      "id": "comfyui",
+      "required": false,
+      "interface": [
+        "http"
+      ],
+      "phase": "P10",
+      "name": "ComfyUI",
+      "purpose": "承認済み生成workflowをローカルHTTP APIで実行する。",
+      "license_gate": "code/custom nodeを分離監査",
+      "license_state": "review_required"
+    },
+    {
+      "id": "video_model",
+      "required": false,
+      "interface": [
+        "comfyui"
+      ],
+      "phase": "P10",
+      "model_license_gate": true,
+      "name": "Approved video checkpoint",
+      "purpose": "既存素材で埋まらない短いB-rollだけを生成する。",
+      "license_gate": "exact checkpoint/output termsを監査",
+      "license_state": "review_required"
+    },
+    {
+      "id": "davinci_resolve",
+      "required": false,
+      "interface": [
+        "python",
+        "lua"
+      ],
+      "phase": "P11",
+      "name": "DaVinci Resolve",
+      "purpose": "必要な場合だけ公式Scripting APIで仕上げを補助する。",
+      "license_gate": "edition/API差をP11で実機確認",
+      "license_state": "review_required"
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+EP68 pinto — 画像発注 **統合版・全 123 枚**
+区分: 本編 R001.png – R104.png（104枚・契約） ／ 予備 R105.png – R117.png（13枚・契約外） ／ サムネ T001.png – T006.png（6枚・カットに使わない）
+
+★このファイル1本に**全 123 枚**が入っています。分割ファイルは同じ内容です。
+　上から順に、**1プロンプト＝1枚**で生成してください。
+　複数のプロンプトをまとめて1枚にしない。同じプロンプトで2枚目を作らない。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は ■ のとおりちょうど。**
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, the United States between 1968 and 1981, mixed tungsten and daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous period surfaces — painted steel, brushed aluminium, laminate, bakelite, manila card, newsprint, enamel — nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+★ただし **T001.png 〜 T006.png の6枚だけ**は末尾が [TSTYLE] です。
+　その6枚は [STYLE] を使わず、次の文言に置き換えてください:
+
+editorial photographic still made to be a video thumbnail, ONE HARD DIRECTIONAL KEY LIGHT from the side, HIGH CONTRAST AND BRIGHT OVERALL EXPOSURE, the subject clearly brighter than everything behind it and cleanly separated from it, shadow only where it defines an edge and never filling the frame, THE ENTIRE UPPER 40 PERCENT OF THE FRAME IS ONE UNBROKEN UNIFORM FIELD - plain wall, plain sky or plain out-of-focus darkness, with no object, no edge, no horizon and no detail crossing it anywhere - and the whole subject sits inside the lower 60 percent with the bottom third the brightest part of the picture, the United States between 1968 and 1981, ultra-detailed, photoreal, 4K, 16:9, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+　サムネイルは本編カットの低コントラストにしません。硬い一灯・高コントラスト・明るい露出、
+　**画面の上40%は何も無い一様な面**（見出し文字を焼き込む場所）、被写体は下60%、下1/3が一番明るい。
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, readable words on a page, seals, emblems, logos, insignia, badge, name plates, wordmarks, manufacturer script, grille emblem, licence plate, registration plate, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, fire, flame, flames, smoke, burning, embers, soot, charred surfaces, a burning vehicle, a person on fire, burn injury, scarring, skin graft, bandages, hospital, ambulance, paramedic, blood, a crashed car, collision, wreckage, crumpled bodywork, shattered windscreen, police officer, uniform, patrol car, flashing lights, handcuffs, firearm, courtroom interior, gavel, judge's bench, jury box, witness stand, prison bars, scales of justice, hourglass, a handshake, children, modern smartphones, flat-screen monitors, LED headlights, modern cars, contemporary clothing, plastic modern fittings, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いているプロンプトがあります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。**サムネイルの6枚でも [NEG] は変えません。**
+
+★プロンプト冒頭の [HSTYLE] は人物レーンの印です。**次の文言に置き換えてください:**
+
+[HSTYLE] photographic, 35mm, natural light, real adults of the 1970s, ordinary period clothing and ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・**この話の中の誰か**として通る人物を描かない——Richard Grimshaw、Lilly Gray とその家族、
+　Ulrich 姉妹と従姉、バンの運転者、Ford の従業員、判事、検事、弁護人。全員不可
+・**火・炎・煙・火傷・負傷者・病院を一枚も描かない。**この映画に火は一度も出ない
+・**衝突・事故車・潰れた車体・割れたフロントガラスを描かない。**衝突は一度も映さない
+・読める文字・数字・手書き・署名を一切描かない。タイプ文字は「斜めから見た質感」までで、
+　一語も判読できてはいけない
+・車体のバッジ・オーバル・車名スクリプト・グリルのエンブレム・ネームプレート・
+　ナンバープレートを一切描かない。**実在の Pinto として通る車を作らない**
+・**1968〜1981年のアメリカ。**液晶モニタ・LEDヘッドライト・携帯電話・現代の車・現代の服・
+　現代の樹脂部品を一切入れない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R001.png
+A grey steel office desk under one bright articulated work lamp, photographed straight on from standing height, the desk surface empty and slightly scuffed, the room behind it dark and unresolved, a single power cable running off the edge of the desk Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], cluttered desk, ornaments, plants, mugs
+
+■ R002.png
+An adult hand laying a small stack of eight typed sheets square on a grey steel office desk lit by one bright articulated work lamp, the room behind it dark and unresolved, seen from just above and behind the hand, the topmost sheet catching the lamp at a steep angle so the typing reads only as a grey ribbed texture and no character can be made out Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible typing, letterhead, margins with page numbers
+
+■ R003.png
+A small stack of eight typed sheets on a grey steel desk seen from directly overhead under one work lamp, a plain steel paper clip being pressed onto the top left corner, the paper warm white and slightly foxed at the edges, the typing across all of it reduced to a soft grey grain by the shallow angle of the light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible typing, headed paper, stamp
+
+■ R004.png
+The work lamp swung low so its beam rakes across one page and blows out a ruled grid of tabulated figures into pure white, the ruled lines visible as faint darker threads and the figures themselves entirely lost in the flare Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible figures, readable table, spreadsheet
+
+■ R005.png
+A small stack of eight typed sheets lying square on a grey steel office desk with the work lamp switched off and only a cold window light on it from the left, the room otherwise dark, the paper the brightest thing in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R006.png
+A plain unmarked manila envelope, unsealed and empty, lying flat on a grey steel office desk beside a small stack of typed sheets, its flap open toward camera, one work lamp above Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], address, franking, stamp, window envelope
+
+■ R007.png
+A single typed sheet held up against a bright window, backlit, so the typing shows through as an even grey blur and the paper fibre is visible Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible text showing through
+
+■ R008.png
+A tall grey steel filing cabinet with one drawer pulled fully out, rows of manila folders standing on edge inside it, every tab blank, shot from slightly above at a shallow angle Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], tab labels, index letters, colour coding
+
+■ R009.png
+A tall grey steel filing cabinet with every drawer closed, standing in a dim office corner, one desk lamp reflecting off its painted steel front Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R010.png
+A stack of continuous perforated computer paper, folded concertina fashion on a low table, the printing on it reduced to fine grey banding by distance and focus Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible print, sprocket numbering
+
+■ R011.png
+A wide shallow tray of loose typed pages on a mail-room bench, several hundred sheets, seen from directly above, individual sheets indistinguishable Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible pages
+
+■ R012.png
+A period electric typewriter on a steel typing table, three-quarter from the side, a blank sheet rolled into the platen, the keys catching a hard side light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], brand marks on the machine, letters on the keycaps in focus
+
+■ R013.png
+Close on the paper bail of that typewriter with a blank sheet under it, extremely shallow focus, the rest of the machine falling away Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R014.png
+A cardboard document box with its lid off on a linoleum floor, packed upright with unlabelled folders, a strip of hard corridor light across it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], box labels, dates written on the side
+
+■ R015.png
+Two identical unmarked manila folders lying side by side on a desk, one very slightly thicker than the other Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], tab labels
+
+■ R016.png
+A hand sliding one sheet out from the middle of a bound stack, only the hand and the sheet edge in focus Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible text on the sheet
+
+■ R017.png
+A shallow wooden in-tray on the corner of a desk holding a low stack of blank paper, morning light from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R018.png
+A waste-paper basket beside a desk with a single crumpled sheet in the bottom of it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R019.png
+A rubber date stamp lying on its side on an ink pad, the rubber face turned away from camera and unreadable Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable date wheels, numerals
+
+■ R020.png
+A dark storeroom wall of identical grey steel filing cabinets receding into shadow, one narrow overhead strip light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], labels, index cards
+
+■ R021.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. The rear axle and differential housing fill the left of the frame, the flat forward face of the fuel tank fills the right, and between them there is a narrow open gap of bare air with the concrete floor visible far below through it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], badge, nameplate, plate, exhaust decals, shop signage
+
+■ R022.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. A plain unmarked steel machinist's rule has been laid horizontally across that gap, bridging from the housing to the tank face, its graduations too fine and too oblique to read Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable graduations, brand etching on the rule
+
+■ R023.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. Closer on the differential housing alone, several bolt heads standing proud of its cast surface and facing the tank, oil-blackened and sharply lit Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R024.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. Closer on the flat forward face of the tank alone, a plain pressed-steel shell with a faint factory seam across it and nothing else Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R025.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. The filler neck where it enters the top of the tank, a short rubber and steel joint, seen from below Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R026.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. Wider, showing the whole rear underbody: the tank, the axle, the two rear wheels and the underside of the boot floor, with the gap now small in the middle of the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R027.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. The same view with the work light switched off and only a cold blue-grey ambient light from the open shutter door behind Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R028.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. The empty lift with no car on it, arms lowered, the concrete floor stained, the same light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R029.png
+Close on a single bolt head on a cast-iron surface, macro, oil in the threads, the background a shallow black Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R030.png
+A plain unmarked steel machinist's rule lying alone on a workbench under a work light, seen along its length so the graduations foreshorten into an unreadable band Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable graduations, numbers
+
+■ R031.png
+A brass carburettor float — a small hollow closed brass cylinder on a thin pivot arm — held in a bench vice under a work lamp, macro, the brass dull and slightly discoloured Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R032.png
+A small hollow brass carburettor float on a thin pivot arm, suspended in a clear glass beaker of pale amber liquid and floating high on the surface, macro, backlit so the liquid glows and the meniscus reads clearly Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fire, flame, ignition, sparks
+
+■ R033.png
+A small hollow brass carburettor float on a thin pivot arm lying sunk on the bottom of a clear glass beaker of pale amber liquid, the liquid still, macro, backlit, framed and lit exactly as the companion plate in which the float is riding high on the surface Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R034.png
+A period carburettor removed from an engine and standing on a workbench, its top cover off, seen from above, the float chamber open Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], brand casting marks
+
+■ R035.png
+An engine bay of an early-1970s American subcompact seen from above with the bonnet up, air cleaner in the middle, everything plain and unbranded Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], manufacturer casting text, decals, warning labels
+
+■ R036.png
+A drafting board at a shallow angle with a large sheet of tracing paper pinned to it, a parallel rule across it, the drawing on the sheet reduced to pale grey lines with no dimension or note legible Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable dimensions, title block, numerals
+
+■ R037.png
+A pair of hands at a drafting board carrying a large pinned sheet of tracing paper, one holding a pencil and one steadying a parallel rule, cropped at the forearms Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R038.png
+A set of steel dividers, a scale rule and two pencils lying on tracing paper, seen from directly above under a drafting lamp Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable scale markings
+
+■ R039.png
+A three-lane American freeway seen from directly above from a fixed high vantage such as a road overbridge, at midday, dry pale concrete, the lane markings running vertically through the frame, all three lanes completely empty, dry scrub visible at both shoulders Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], drone shot, moving camera, vehicles, people
+
+■ R040.png
+A three-lane American freeway photographed from directly above from a fixed high vantage such as a road overbridge, at midday, dry pale concrete, the lane markings running vertically through the frame, dry scrub at both shoulders, with one early-1970s American subcompact hatchback stopped in the MIDDLE lane, small in frame, seen from directly above, nobody in it and no other vehicle anywhere in the frame, the car unbadged and unplated Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], badge, plate, other cars, damage, smoke
+
+■ R041.png
+A three-lane American freeway photographed from directly above from a fixed high vantage such as a road overbridge, at midday, dry pale concrete, the lane markings running vertically through the frame, dry scrub at both shoulders, completely empty of vehicles, with only a faint dark tyre scuff in the middle lane Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], debris, glass, scorch marks, fire damage
+
+■ R042.png
+A three-lane American freeway seen from ground level at the hard shoulder, a low wide lens, heat shimmer over the concrete, no vehicles, dry Southern Californian scrub and a low ridge on the horizon Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R043.png
+An early-1970s American subcompact hatchback parked alone on a dry gravel shoulder, side profile, midday, its bodywork a plain unmarked pale colour with no badge, no nameplate, no grille emblem and no plate front or rear Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], badge, oval, script, chrome nameplate, licence plate, decals
+
+■ R044.png
+A plain unmarked early-1970s american subcompact hatchback in a pale colour, with no badge, no nameplate, no grille emblem, no model script and no plate front or rear, three-quarter from the front on a dry gravel shoulder at midday, the grille a plain dark mesh panel with nothing mounted at its centre and the bumper a single plain bar with nothing fixed to it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], grille emblem, badge, plate, fog lamps, chrome script
+
+■ R045.png
+The rear three-quarter of a plain unmarked early-1970s American subcompact hatchback in a pale colour, with no badge, no nameplate, no grille emblem, no model script and no plate front or rear, on a dry gravel shoulder at midday, the hatchback tailgate a single unbroken pressed panel with only a recessed handle, both tail lights plain, no badge and no plate Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], badge, wordmark, plate, model script
+
+■ R046.png
+Close on the rear wheel and lower rear wing of a plain unmarked early-1970s American subcompact hatchback in a pale colour, with no badge, no nameplate, no grille emblem, no model script and no plate front or rear, the tyre sidewall plain, the paint slightly chalked, gravel underneath Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], tyre brand lettering
+
+■ R047.png
+The driver's door and window of a plain unmarked early-1970s American subcompact hatchback in a pale colour, with no badge, no nameplate, no grille emblem, no model script and no plate front or rear, seen from outside, sky reflected across the glass, the interior not visible Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R048.png
+The empty driver's seat and steering wheel of an early-1970s American car seen from the passenger side, vinyl and hard plastic, nobody in the car, the door shut Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], warning labels, badge on the horn boss, instrument numerals
+
+■ R049.png
+A two-lane American highway running away from camera between flat fields, tar-strip patches on the surface, low afternoon light, no traffic Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R050.png
+A wide of an American freeway interchange from a fixed high vantage, mid-1970s in character, light traffic of period cars, seen small Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern cars, modern gantries, LED signage
+
+■ R051.png
+A dry roadside verge at close range: gravel, a steel guard rail, dry grass, one plain white-painted post Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], route numbers, mile markers, signage
+
+■ R052.png
+A row of early-1970s American cars parked nose-in on a hardstanding, seen from behind at eye level, all unbadged and unplated, flat overcast light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], badges, plates, dealership signage, price stickers
+
+■ R053.png
+An American classical courthouse facade of pale stone with six plain columns, photographed head-on from the pavement at midday, no signage of any kind on the building Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], carved inscriptions, seals, lettering on the pediment, flags
+
+■ R054.png
+The wide stone steps of an American classical courthouse of pale stone with plain columns above them, empty and wet, seen from the bottom looking up Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R055.png
+A heavy bronze double door, closed, shallow relief panels, no words and no crest Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], seals, inscriptions, emblems
+
+■ R056.png
+A stone colonnade in raking afternoon light, deep shadow between the columns, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R057.png
+A polished stone floor with a single hard shaft of window light lying across it, shot low Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R058.png
+A tall window high in a stone wall, seen from inside a dark room, the glass blown out to white Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R059.png
+A long empty corridor with a stone floor, tall panelled doors down one side, no signage, one distant window at the end Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], door numbers, name plates, signage
+
+■ R060.png
+A plain mid-century American county courthouse of brick and limestone, three storeys, flat overcast light, a bare flagpole with no flag on it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], signage, seals, inscriptions, flag
+
+■ R061.png
+A wide of an empty civic plaza in front of a stone building, one small distant figure crossing it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R062.png
+A brass handrail on stone stairs, close, worn bright by use Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R063.png
+A stone cornice against a hard blue sky, low angle Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R064.png
+A plain mid-century american county courthouse of brick and limestone, three storeys, with a bare flagpole and no signage at dusk, with one row of windows lit and the rest dark Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R065.png
+A row of empty wooden public benches in a stone-floored anteroom, nobody sitting Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R066.png
+A plain unmarked wooden double door at the end of a corridor, closed, one overhead light above it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], signage, room numbers
+
+■ R067.png
+A 1971 American corporate meeting room: a long veneered table, twelve tubular-framed chairs pushed in, a projector screen rolled down at one end, fluorescent troffers overhead, nobody in the room Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern furniture, flat screens, whiteboards, brand marks
+
+■ R068.png
+A 1971 American corporate meeting room seen from the head of a long veneered table, tubular-framed chairs down both sides and a rolled-down projector screen at the far end, with one chair pulled out and a plain closed folder left on the table in front of it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable folder cover
+
+■ R069.png
+A 1970s open-plan engineering office: steel desks in rows, drafting lamps, telephone cords, low partitions, nobody at the desks, late light through venetian blinds Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern monitors, mobile phones, modern chairs
+
+■ R070.png
+A 1970s newspaper press hall: a web of newsprint running at speed through a large offset press, the paper a blur, the ink smell almost visible, no headline legible Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable headlines, masthead, legible print
+
+■ R071.png
+A folded magazine dropping onto a Formica kitchen table in morning light, its cover facing up but out of focus so nothing on it can be read Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable cover lines, masthead, cover image detail
+
+■ R072.png
+A 1970s American federal office interior: government-issue steel desks, a wall of card-index drawers, a wire in-tray, an institutional green wall, nobody present Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], agency seals, signage, notices
+
+■ R073.png
+A 1970s mail room: a long sorting bench with pigeonholes above it, canvas sacks below, hundreds of plain unmarked envelopes stacked in the racks Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], addresses, franking, agency marks
+
+■ R074.png
+A 1970s American domestic kitchen at breakfast, empty: Formica, a percolator, patterned curtains, morning sun across the table Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], modern appliances
+
+■ R075.png
+A period suburban living room with a wood-cased television set switched off in the corner, an armchair, nobody present, afternoon light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], brand marks on the set, screen content
+
+■ R076.png
+A 1970s vehicle test laboratory: a concrete hall, a fixed barrier block at one end, high-speed camera rigs on tripods, floodlights on stands, no vehicle present Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], a crash, a car, damage, smoke
+
+■ R077.png
+Close on a period high-speed film camera on a heavy tripod in a concrete vehicle test hall, side on, the lens turned away from camera Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], brand plates
+
+■ R078.png
+An automobile assembly line in the early 1970s: unpainted body shells moving on an overhead conveyor, sparks absent, the hall receding, workers small and distant Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], sparks, welding flash, fire, brand marks
+
+■ R079.png
+A row of finished but unbadged small car bodies in a factory yard under flat cloud, seen from the side Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], badges, plates
+
+■ R080.png
+A 1970s telephone on a steel desk, receiver on its cradle, coiled cord, one shaft of window light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], dial numerals in focus, brand marks
+
+■ R081.png
+[HSTYLE] An adult's two hands squaring a small stack of typed sheets on a steel desk under one work lamp, cropped at the forearms, a plain wristwatch on the left wrist, mid-forties skin Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R082.png
+[HSTYLE] A pair of hands at a drafting board in a 1970s engineering office, one holding a pencil against a parallel rule, cropped at the elbows, shirt sleeves rolled Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R083.png
+[HSTYLE] A man in his fifties in a 1970s short-sleeved shirt and tie, seated at a drafting board, seen in three-quarter profile, looking down at the work Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R084.png
+[HSTYLE] Twelve pairs of period shoes and lower legs under a long meeting table, seen from floor level, nobody's upper body in frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R085.png
+[HSTYLE] A woman in her thirties in period office clothing standing at a bank of card-index drawers with one drawer open, mid-shot, looking down into it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R086.png
+[HSTYLE] A hand pressing a paper clip onto a stack of typed sheets, extreme close, only the hand and the paper in frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R087.png
+[HSTYLE] A worker's gloved hands on a steel body panel on an assembly line, cropped at the wrists Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R088.png
+[HSTYLE] A man in his forties in factory overalls standing beside a conveyor, mid-shot, half-turned away, an unremarkable expression Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R089.png
+[HSTYLE] The back of a man in a 1970s suit standing at a window of an upper-floor office, city roofs beyond, seen from inside the dark room Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R090.png
+[HSTYLE] A hand lifting a folded magazine off a kitchen table, cropped at the wrist Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R091.png
+[HSTYLE] A woman in her sixties in period clothing seated at a kitchen table reading a magazine, mid-shot, the magazine's cover turned away from camera Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable cover
+
+■ R092.png
+[HSTYLE] A mail-room worker's hands and forearms sorting plain envelopes into pigeonholes, no face in frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R093.png
+[HSTYLE] A man in his fifties in a plain 1970s suit standing in a stone corridor with his back to a tall window, mid-shot, three-quarter, looking off frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R094.png
+[HSTYLE] A crowd of about forty adults in 1970s clothing crossing a wide American street, high fixed angle, faces unresolvable at that distance Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R095.png
+[HSTYLE] A group of eight adults in 1970s clothing on a city pavement, walking toward camera, mixed ages, nobody in focus Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R096.png
+[HSTYLE] Nine pairs of shoes and lower legs in a row of waiting-room chairs in a stone-floored anteroom Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R097.png
+[HSTYLE] A hand pushing a thick stack of paper across a table toward another hand, cropped above the wrists Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R098.png
+[HSTYLE] A man in his seventies in a plain jacket seated alone on a wooden bench in a courthouse corridor, hands folded, looking at the floor Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R099.png
+[HSTYLE] A woman's hands and forearms at a period electric typewriter, mid-keystroke, a blank sheet in the platen Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R100.png
+[HSTYLE] A woman in her forties in period clothing standing in the doorway of a 1970s federal office, mid-shot, half-turned, an unremarkable expression Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R101.png
+[HSTYLE] The backs of two adults in 1970s clothing walking away down a long stone corridor, small in frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R102.png
+[HSTYLE] A farmer's hands on a wooden fence rail at the edge of an Indiana cornfield in August, cropped at the forearms, corn at full height behind Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R103.png
+[HSTYLE] A man in his sixties in work clothes standing at the edge of a cornfield in flat August light, mid-shot, three-quarter, looking away down the road Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R104.png
+[HSTYLE] An empty 1970s office at dusk with one chair turned out from a desk and the lamp still on, nobody present Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R105.png
+A workshop lift raised to chest height with an early-1970s American subcompact hatchback standing on it, photographed from the side at floor level from twelve feet away so the whole underbody runs across the middle of the frame as one long dark band, one work light on a stand throwing hard raking light along it from the left, bare stained concrete in the foreground and a dim shop wall behind. Nobody is in the frame. No vehicle anywhere in this frame carries a mark of any kind: no badge, no emblem, no oval on the grille, no wordmark, no nameplate, no model lettering and no plate of any kind on any part of it, front or rear. The car is undamaged and intact Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, shop signage, price sticker, crumpled bodywork, collision damage, fire, flame, smoke, scorch marks, person in frame
+
+■ R106.png
+A plain pressed-steel fuel tank shell removed from a car and standing alone on a heavy workbench on its flat forward face, photographed straight on from bench height under one work lamp, the pressed seam running across it and nothing else on its surface, the metal dull grey and lightly scuffed, a dark shop falling away behind it. The shell is empty, clean, dry and undamaged, and there is no liquid, no vapour, no flame and no scorching anywhere in the picture. No badge, no stamped mark, no label and no writing on it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fire, flame, smoke, fuel spill, liquid, vapour, scorch marks, rust holes, crumpled metal, stamped lettering, part number, manufacturer wordmark, label, sticker
+
+■ R107.png
+A wide three-lane American freeway photographed from the hard shoulder at dusk with a low wide lens, the pale concrete running away to a low ridge on the horizon and going cold blue-grey as the light leaves it, dry Southern Californian scrub along the shoulder, the lane markings just holding their brightness. There is no vehicle anywhere in the frame and nobody is on the road Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], vehicles, cars, traffic, headlights, tail lights, street lighting, road signs, gantry, billboard, golden hour, sunset glow, orange sky
+
+■ R108.png
+A 1970s wire-service teleprinter standing on a steel stand in the corner of a newspaper office, photographed three-quarter from the side at standing height, a continuous roll of pale paper feeding up out of the machine and falling in a loose fold to the floor, the printing on the paper reduced by distance and shallow focus to fine even grey banding with no character, word or line resolving anywhere on it. Flat overhead office light, nobody in the room Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible typing, readable words on a page, letterforms, printed paragraph, headline, masthead, letterhead, manufacturer wordmark on the machine, nameplate, person in frame
+
+■ R109.png
+A two-lane blacktop road running dead straight away from the camera between two walls of corn at full height in flat mid-August light, photographed from the middle of the road at standing height, the crown of the road slightly raised, telephone poles receding down the left verge, a wide pale sky above and no cloud shape in it. Northern Indiana farmland. There is no vehicle in the frame and nobody is on the road, and no sign, board or marker carries any writing Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], vehicles, cars, traffic, road signs with words, billboards, mailboxes with names, farm signage, golden hour, sunset glow, person in frame
+
+■ R110.png
+A tall corrugated-steel grain elevator standing over a set of rail sidings under flat overcast light in a small Midwestern farming town, photographed from across the tracks at standing height so the elevator fills the right of the frame and empty gravel and rail run away to the left, weeds between the sleepers, no lettering, no company name and no painted sign anywhere on the steel. Nobody is in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], painted lettering on the silo, company name, grain co-op sign, billboard, modern trucks, modern cars, person in frame
+
+■ R111.png
+A small Midwestern county courthouse square in flat grey light: a modest three-storey limestone courthouse standing across an empty street with a bare metal flagpole in front of it carrying no flag, a small open bandstand on the lawn, mature trees bare of leaves, photographed from the far pavement at standing height. There is no signage of any kind on the building or the lawn, no vehicle at the kerb and nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], courthouse signage, engraved lettering on the stone, plaques, notice boards, flags, vehicles at the kerb, modern cars, person in frame, courtroom interior
+
+■ R112.png
+A two-storey small-town American main street at midday, brick shopfronts down both sides with plain canvas awnings out over the pavement, photographed from the middle of the road at standing height so the street runs away into flat haze, the pavement empty, the light hard and colourless. Not one window, awning, board or fascia carries any lettering, name or number, and there is no vehicle and nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], shop signage, fascia lettering, window lettering, awning text, street signs, house numbers, billboards, parked cars, modern cars, person in frame
+
+■ R113.png
+A gravel county road junction between two flat fields, photographed from the middle of one road at standing height so both roads run away to the horizon, a single plain white-painted wooden signpost standing at the corner with two blank arms on it that carry no lettering, no arrow and no number, dry grass in the verge, a wide pale overcast sky. No vehicle, no building and nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], lettering on the signpost, route numbers, arrows with names, road signs with words, mailboxes with names, vehicles, person in frame
+
+■ R114.png
+A plain 1970s American federal hearing room, completely empty: a low carpeted dais across the far end with a bare wooden lectern standing on it that carries no seal, no crest and no lettering of any kind, six rows of grey stacking chairs facing it, a run of fluorescent troffers in a low acoustic-tile ceiling, institutional pale green walls. Photographed from the back of the room at standing height. Nobody is present Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], seal on the lectern, crest, flag, insignia, nameplates, lettering on the wall, courtroom interior, gavel, judge's bench, jury box, witness stand, person in frame
+
+■ R115.png
+A long institutional corridor in a 1970s American federal building, photographed straight down its length from standing height: a painted green dado running the full length of both walls, a row of identical closed flush doors down the right side with blank plates where the numbers would be, a hard vinyl floor holding a long reflection, and one bright window at the far end burning out to white. Nobody is in the corridor Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], door numbers, name plates with words, directory boards, exit signage, notices on the walls, person in frame
+
+■ R116.png
+A period adding machine standing on a grey steel office desk under one lamp, photographed close from a low three-quarter angle, a narrow paper till roll feeding up out of the top of it and curling over the edge of the desk toward the floor in one long loose fall, the printing on the roll reduced by focus to a soft grey stipple with no figure, column or character resolving anywhere along it. The desk is otherwise bare Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible numbers, digits on the roll, printed figures, columns of numerals, keys with numerals, brand name on the machine, nameplate, person in frame
+
+■ R117.png
+Rain running down the side window glass of a stationary car, photographed from inside the car at seat height with the glass filling the frame, the water breaking into long vertical runs and beads, the world beyond the glass dissolved into soft flat grey with no shape, edge or object resolving in it. The interior is dark vinyl and hard plastic of the early 1970s, the car is not moving and nobody is in it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable signage beyond the glass, buildings, other vehicles, headlights, wipers in motion, person in frame, reflection of a face
+
+■ T001.png
+Eight sheets of typed paper fanned out across a grey steel office desk, photographed from a steep oblique angle from just above the near edge of the desk SO THE WHOLE FAN OF PAPER SITS IN THE LOWER 60 PERCENT OF THE FRAME, one hard directional work lamp raking across it from the left so the paper is markedly brighter than anything behind it and throws crisp shadows, a plain steel paper clip on the top sheet. The typing is visible only as an even grey ribbed texture at that angle and NOT ONE WORD, NUMBER, LINE OR LETTERFORM RESOLVES ANYWHERE. The bright bare desk top runs across the bottom third and is the brightest part of the picture. THE ENTIRE UPPER 40 PERCENT OF THE FRAME IS ONE UNBROKEN FIELD of plain out-of-focus dark office with no object, no edge and no detail crossing it anywhere Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], legible typing, readable words on a page, letterforms, typed lines, printed paragraph, letterhead, margins with page numbers, stamp with words, signature, hand, person in frame, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T002.png
+The same fan of eight typed sheets on the same bare grey steel desk, closer and from a lower angle almost level with the desk top: the near edges of the paper make one strong bright horizontal band across the lower third of the frame, one hard key light from the left rakes along them, and the plain steel paper clip catches a specular highlight. At this angle the typing is pure grey texture and NOT ONE CHARACTER IS READABLE. The picture is bright and high contrast throughout the lower 60 percent, and THE ENTIRE UPPER 40 PERCENT IS ONE UNBROKEN FIELD of plain out-of-focus darkness with nothing in it at all Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], legible typing, readable words on a page, letterforms, typed lines, printed paragraph, letterhead, stamp with words, signature, hand, person in frame, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T003.png
+The underbody of an early-1970s American subcompact hatchback raised high on a workshop lift, photographed from twelve feet away at standing height so THE WHOLE UNDERBODY RUNS AS ONE BRIGHT BAND ACROSS THE LOWER 60 PERCENT OF THE FRAME: the rear axle and the differential housing on the left, the flat forward face of the tank shell on the right, and a plain unmarked steel machinist's rule laid horizontally across the narrow gap between them, its graduations too fine and too oblique to read. One hard shop light from below and to the left makes the metal markedly brighter than anything behind it, and the bright swept concrete floor runs across the bottom third. THE ENTIRE UPPER 40 PERCENT IS ONE UNBROKEN FIELD of plain dark out-of-focus shop with nothing crossing it. The car is undamaged, carries no badge, no emblem, no wordmark, no nameplate and no plate of any kind, and there is no fire, no smoke, no scorching and no liquid anywhere in the picture Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, shop signage, readable markings on the rule, fire, flame, smoke, scorch marks, fuel spill, crumpled bodywork, hand, person in frame, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T004.png
+The same raised underbody and the same plain unmarked steel machinist's rule laid across the gap between the differential housing and the flat face of the tank shell, now closer and tighter so the housing, the gap and the rule fill the lower half of the frame and read large, one hard shop light from below and to the left putting a bright specular edge along the rule and the machined faces. The bright concrete floor is just visible along the bottom edge and is the brightest thing in the picture. THE ENTIRE UPPER 40 PERCENT IS ONE UNBROKEN FIELD of plain dark out-of-focus shop. No badge, no emblem, no wordmark, no nameplate, no plate, no readable graduation on the rule, and no fire, smoke, scorching or liquid anywhere Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, readable markings on the rule, fire, flame, smoke, scorch marks, fuel spill, crumpled bodywork, hand, person in frame, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T005.png
+A single unbadged early-1970s American subcompact hatchback standing stopped and alone in the middle lane of a wide dry three-lane freeway at midday, photographed from a fixed high vantage on a road overbridge looking down and along the carriageway, THE CAR AND THE ROAD FILLING THE LOWER 60 PERCENT OF THE FRAME with the car small and central in it. Hard overhead sun makes the pale concrete and the car roof markedly brighter than everything else, and the bright empty asphalt runs across the bottom third. Dry Southern Californian scrub along the shoulder, both other lanes completely empty, no other vehicle anywhere. Nobody is in or near the car, it is undamaged, and it carries no badge, no emblem, no wordmark, no nameplate and no plate of any kind. THE ENTIRE UPPER 40 PERCENT OF THE FRAME IS ONE UNBROKEN FIELD of flat white overexposed sky with no cloud, no horizon line, no gantry, no pole and no detail crossing it anywhere Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, other vehicles, traffic, road signs, gantry, overhead structure, billboards, crumpled bodywork, fire, flame, smoke, person in frame, object in the top of the frame, horizon crossing the top of the frame, low contrast, dull flat lighting, dark subject
+
+■ T006.png
+The same unbadged early-1970s American subcompact hatchback standing stopped and alone in the middle lane of the same wide dry three-lane freeway at midday, now seen from lower and closer on the same overbridge so the car reads larger from behind and the two empty lanes spread away on either side of it, all of it inside the lower 60 percent of the frame. Hard overhead sun, high contrast, the bright pale concrete across the bottom third the brightest part of the picture, dry scrub at the shoulder. No other vehicle anywhere, nobody in or near the car, no damage, and no badge, emblem, wordmark, nameplate or plate of any kind. THE ENTIRE UPPER 40 PERCENT IS ONE UNBROKEN FIELD of flat white overexposed sky with nothing crossing it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, other vehicles, traffic, road signs, gantry, overhead structure, billboards, crumpled bodywork, fire, flame, smoke, person in frame, object in the top of the frame, horizon crossing the top of the frame, low contrast, dull flat lighting, dark subject
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前ちょうどで保存してください（このファイルは R001.png 〜 T006.png）。
+保存先 H:\pd-media\assets\ai\pinto\
+長辺 3840px 以上・16:9・PNG。

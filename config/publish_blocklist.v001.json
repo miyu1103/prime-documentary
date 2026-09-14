@@ -1,0 +1,53 @@
+{
+  "schema_version": "publish_blocklist.v001",
+  "purpose": "Video ids that must never be public, with the reason each was withdrawn. This is DATA, not prose: scripts/audit_public_violations.py reads it and fails when any of these is public on the live channel.",
+  "why_this_exists": "2026-08-09 04:0x JST: five old uploads carrying category-1/2/3 violations were found public again (publishAt absent = published immediately). The rule 'do not publish with any of the four categories present' existed in writing and was broken anyway, because an agent executed the owner's 'publish everything' literally and no machine refused it. Twelve or more scripts in this repo can write privacyStatus=public; only the scheduling path had a lock. Prose could not have prevented this and cannot prevent the next one.",
+  "categories": {
+    "1": "third-party footage (copyright strike route)",
+    "2": "identifiable real minors",
+    "3": "name tag / badge reuse",
+    "4": "private individual's personal information"
+  },
+  "blocked": [
+    {
+      "video_id": "dueMY2lSu8w",
+      "episode": "willingham (old upload)",
+      "category": 2,
+      "evidence": "identifiable child's face at 18:37",
+      "withdrawn_at": "2026-08-09T04:00:00+09:00"
+    },
+    {
+      "video_id": "Gx_i5aMJWLM",
+      "episode": "morton (old upload)",
+      "category": 1,
+      "evidence": "y2mate-sourced Rebel News footage",
+      "withdrawn_at": "2026-08-09T04:00:00+09:00"
+    },
+    {
+      "video_id": "6VL_mA6OiS0",
+      "episode": "norfolk (old upload)",
+      "category": 2,
+      "evidence": "two identifiable schoolgirls at 3:21",
+      "withdrawn_at": "2026-08-09T04:00:00+09:00"
+    },
+    {
+      "video_id": "0iDUT0gzBiQ",
+      "episode": "flowers (old upload)",
+      "category": 2,
+      "evidence": "identifiable child's face at 18:30-18:38",
+      "withdrawn_at": "2026-08-09T04:00:00+09:00"
+    },
+    {
+      "video_id": "0sjw_1OxCVk",
+      "episode": "postoffice (old upload)",
+      "category": 3,
+      "evidence": "name tag violation; also a duplicate of the corrected 4FlCaOVpln0",
+      "withdrawn_at": "2026-08-09T04:00:00+09:00"
+    }
+  ],
+  "superseded_by": {
+    "0iDUT0gzBiQ": "PfdEpNQyaQQ",
+    "0sjw_1OxCVk": "4FlCaOVpln0"
+  },
+  "note": "Adding an id here is a one-way door in practice: it may only be removed when the underlying footage is gone from the file that was uploaded, not when someone believes it is acceptable."
+}

@@ -1,0 +1,89 @@
+EP69 hyatt — 画像発注 バッチA 5/8（15枚）
+区分: ACT_3, ACT_4　／　人物レーン 2枚
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, American Midwest between 1978 and 1988, tungsten interiors and flat midday daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous surfaces, painted steel, vellum, brass, cut stone, plaster and travertine, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, dimension callouts, drawing title block, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsed building, collapsing structure, rubble, debris, wreckage, ruined interior, rescue worker, ambulance, stretcher, injured person, blood, body, casualty, funeral, firefighter, hospital, crowded hotel lobby, packed function room, crowd of people indoors, courtroom interior, gavel, judge's bench, scales of justice, hourglass, a handshake, police officer, uniform, handcuffs, prison bars, mobile phone, smartphone, laptop, flat-panel monitor, LED work lamp, cordless power tool, hi-vis safety vest, modern safety helmet, CAD screen, car built after 1990, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いているプロンプトがあります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+★[HSTYLE] で始まるプロンプトは人物レーンです。[HSTYLE] の中身はプロンプト本文の一部として
+　そのまま使ってください（置換不要）。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・寸法・手書き・署名・図面のタイトル欄を一切描かない
+・**崩落・瓦礫・救助・負傷者・遺体・満員のロビーを一切描かない**
+・**1978〜1988年のアメリカ中西部。**携帯電話・ノートPC・薄型モニタ・LED投光器・
+　充電式電動工具・蛍光色の安全ベスト・1990年以降の車を描かない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+・**「The same …」で始まるプロンプト（H004 / H051 / H053 / H054）は、直前の1枚と
+　同じ部屋・同じ画角・同じレンズでなければなりません。**別々に生成すると必ずずれます。
+　ずれた場合は作り直さず、元の1枚（H003 / H048 / H049）を色調整だけで作り直してください。
+
+──────── プロンプト ────────
+
+■ H061.png
+An extreme macro of a heavy flat steel washer bearing hard against a steel plate, the plate around the washer beginning to dish very slightly downward so the surface curves away from the rim, a bright line of light along the deformed edge. Cold hard light from one side. Nothing else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H062.png
+A nearly black frame with one narrow shaft of pale grey light entering from the upper left and falling across a small area of plain concrete floor, everything else in deep unresolved darkness. No object, no person, no texture other than the concrete in the light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H063.png
+A large hotel atrium at night with all the interior lamps off, seen from standing height at one end, the tan floor now a cold grey plane lit only by faint spill from outside through the glazed roof, the planting reduced to black shapes. Completely empty and completely still Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H064.png
+A plain American federal office building of the 1960s seen from across an empty forecourt at midday, precast concrete panels, regular windows, a flat parapet, low steps up to a recessed entrance. Flat pale light, no flags, no lettering, no signage of any kind. Two period cars parked at the kerb. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H065.png
+A large structural test frame in a laboratory of the early 1980s: two heavy steel uprights and a crosshead, a short steel specimen clamped upright in the middle of it, hydraulic hoses running down to a pump unit on the floor, painted concrete floor and a high bay behind. Cold even light. Nobody in the frame and nothing readable on any instrument Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H066.png
+A dial gauge on a magnetic stand clamped against a steel plate, seen close from a low angle so the round face of the gauge fills the left of the frame and the plunger touching the steel is sharp on the right. The face of the gauge is turned just far enough away that no marking on it can be read. Cold workshop light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H067.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. Two adult hands adjusting the stem of a dial gauge on a test rig, forearms in the cuffs of a plain white coat entering from the left, no head or body in frame, the hands and the gauge sharp and the steel frame beyond out of focus. Cold even laboratory light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H068.png
+A hydraulic ram and a load cell mounted in the crosshead of a steel test frame, seen close from below, thick steel plate, four tension rods running down past the camera, a pressure hose looping away to the right. No dials or readouts are legible anywhere in the frame. Cold light, deep shadow above Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H069.png
+A short steel test specimen lying on its side on a laboratory bench after being pulled apart, the torn metal at the failure surface bright and crystalline against the dull mill finish of the rest, the deformation clearly visible. One raking light from the left, plain dark bench, nothing else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H070.png
+A short offcut of hollow rectangular steel box section standing on a laboratory bench with a threaded rod and its washer pulled part of the way down through the drilled hole in its face, the steel around the hole bent downward into a shallow funnel. Seen close from a low three-quarter angle, one hard light from the left. Nothing else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H071.png
+A strip chart recorder of the early 1980s with a pen arm tracing a single continuous line onto a wide roll of paper feeding out of the front, seen close from above at a slight angle. The trace is a plain curve; no grid numbers or scale markings can be read anywhere on the paper. Cold laboratory light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H072.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A woman in her thirties in a plain white laboratory coat standing beside a large steel test frame, framed from the waist up and turned three-quarters to the camera, one hand resting on the frame, looking off toward the specimen with a plain working expression, hair tied back in an ordinary early-1980s style. Cold even light, the high bay behind her out of focus Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H073.png
+A steel rule laid flat across a deformed steel plate, seen very close from a low angle so the rule runs away from the camera and the dishing of the plate lifts it clear of the surface in the middle. The graduations on the rule are turned away and cannot be read. Hard raking light from the right Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H074.png
+A shallow steel tray holding a dozen identical short steel test coupons stacked loosely, seen from directly above, each one showing a bright torn end. Cold even light from above, the tray filling most of the frame. Nothing is written on the tray or on any coupon Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H075.png
+A large empty structural testing hall, high roof with north light, an overhead travelling crane, two test frames standing idle at the far end, painted lines on a bare concrete floor running away from the camera. Cold daylight, no equipment running, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: H001.png）で保存してください。
+保存先 H:\pd-media\assets\ai\hyatt\
+長辺 3840px 以上・16:9・PNG。

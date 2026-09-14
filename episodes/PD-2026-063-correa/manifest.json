@@ -1,0 +1,13 @@
+{
+  "schema_version": "pd_manifest.v1",
+  "episode_id": "PD-2026-063-correa",
+  "slug": "correa",
+  "state": "script_review",
+  "target_duration_minutes": 30,
+  "runtime_band_minutes": [
+    27.0,
+    32.0
+  ],
+  "runtime_band_basis": "Owner target 30:00 (2026-08-04). Band matches episode_spec runtime_seconds [1620,1920]. Script measures 5368 narration words = 30:30 at the voice's measured 176 words per finished minute (EP60 191.4 wpm and EP61 194.3 wpm speech, plus the pipeline's 0.30s beat and 1.80s section gaps). target_duration_minutes is written explicitly because a missing manifest is what silently measured EP50-59 against an 11.5-minute band.",
+  "state_note": "STATE CORRECTED 2026-08-04: this said script_verified, written by me at the same minute I was still repairing the script. It was not true. Two independent re-reviews returned DOES NOT MEET IT, and the repairs that followed introduced two duplicated clauses of their own. The state is script_review until a re-review returns MEETS THE STANDARD against the file actually on disk."
+}

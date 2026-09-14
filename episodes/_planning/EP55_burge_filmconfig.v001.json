@@ -1,0 +1,146 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "burge",
+  "episode_id": "PD-2026-055-burge",
+  "assets": "episodes/PD-2026-055-burge/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-055-burge/06_audio/narration_index.v001.json",
+  "narration": "burge/narration.mp3",
+  "hookSeconds": 8.0,
+  "hookLine": "Jon Burge's detectives tortured more than a hundred men inside a Chicago police station, and the only crime he ever went to prison for was a denial he signed in November 2003.",
+  "figures_by_section": {
+    "HOOK": [
+      {"kind": "lowerthird", "primary": "COOK COUNTY JAIL", "secondary": "February 1982 · a doctor examines a new prisoner"},
+      {"kind": "kinetic", "lines": ["NO ANSWER", "NO INVESTIGATION", "NOTHING"], "style": "emphasis", "emphasisWords": ["NOTHING"]}
+    ],
+    "OP": [
+      {"kind": "kinetic", "lines": ["NEVER CHARGED", "WITH TORTURE"], "style": "maskslide", "emphasisWords": ["NEVER"]}
+    ],
+    "ACT_1": [
+      {"kind": "acttitle", "title": "THE COMMANDER", "kicker": "ACT ONE", "index": 1},
+      {"kind": "lowerthird", "primary": "SOUTH DEERING", "secondary": "Steel-mill neighborhood, Chicago's Southeast Side"},
+      {"kind": "numberticker", "value": 1969, "label": "Home from Vietnam — Bronze Star, Purple Heart", "group": false},
+      {"kind": "timeline", "events": [
+        {"year": "1970", "text": "Joins the Chicago Police Department"},
+        {"year": "1972", "text": "Detective, Area 2"},
+        {"year": "1977", "text": "Sergeant"},
+        {"year": "1981", "text": "Lieutenant — commands Area 2 Violent Crimes"}
+      ]},
+      {"kind": "lowerthird", "primary": "AREA 2 VIOLENT CRIMES", "secondary": "Detective division covering the South Side"},
+      {"kind": "kinetic", "lines": ["CASES CLOSED", "CONFESSIONS SIGNED", "CONVICTIONS WON"], "style": "wordpop", "emphasisWords": ["CONFESSIONS"]},
+      {"kind": "lowerthird", "primary": "THE MIDNIGHT CREW", "secondary": "The detectives working under Burge on the midnight shift"},
+      {"kind": "spotlight", "cx": 0.5, "cy": 0.55, "r": 0.22, "dim": 0.72},
+      {"kind": "lowerthird", "primary": "“BAGGING”", "secondary": "Plastic typewriter covers, held over a man's head"},
+      {"kind": "highlightring", "cx": 0.42, "cy": 0.6, "r": 0.14, "label": "The radiator in the interview room"},
+      {"kind": "arrow", "from": [0.24, 0.7], "to": [0.7, 0.36], "label": "HIS UNIT SAID: FIELD PHONE → THE BOX"},
+      {"kind": "quote", "quote": "He plugged it into the wall and came towards me. He said, 'You're going to tell us what we want to know.'", "attribution": "Anthony Holmes, arrested May 1973 — federal trial testimony"},
+      {"kind": "mechanism", "mechanism": "gears"},
+      {"kind": "stat", "value": 20, "label": "The tally climbs: one man, five, twenty"}
+    ],
+    "ACT_2": [
+      {"kind": "acttitle", "title": "THE SCREAMS NOBODY HEARD", "kicker": "ACT TWO", "index": 2},
+      {"kind": "timeline", "events": [
+        {"year": "FEB 9, 1982", "text": "Officers Fahey and O'Brien shot and killed at a traffic stop"},
+        {"year": "FEB 14, 1982", "text": "Andrew Wilson arrested, taken to Area 2"},
+        {"year": "FEB 17, 1982", "text": "Dr. Raba writes to Supt. Brzeczek"},
+        {"year": "FEB 25, 1982", "text": "The letter is forwarded to the State's Attorney"}
+      ]},
+      {"kind": "kinetic", "lines": ["HE WAS GUILTY", "AND THE LINE STILL HOLDS"], "style": "emphasis", "emphasisWords": ["GUILTY"]},
+      {"kind": "stat", "value": 15, "label": "Separate injuries counted at the county jail (roughly)"},
+      {"kind": "highlightring", "cx": 0.5, "cy": 0.5, "r": 0.13, "label": "Burns in parallel lines — matching the radiator ribs"},
+      {"kind": "quote", "quote": "a thorough investigation of this alleged brutality", "attribution": "Dr. John Raba, Cook County Jail, February 17, 1982"},
+      {"kind": "arrow", "from": [0.22, 0.68], "to": [0.74, 0.38], "label": "BRZECZEK → DALEY · FEB 25, 1982"},
+      {"kind": "mechanism", "mechanism": "closingdoor"},
+      {"kind": "kinetic", "lines": ["THE LETTER WAS BURIED", "PAPER KEEPS COMING BACK"], "style": "maskslide", "emphasisWords": ["BURIED"]},
+      {"kind": "timeline", "events": [
+        {"year": "1987", "text": "Illinois Supreme Court throws out Wilson's confession"},
+        {"year": "1988", "text": "Retried without it — convicted, life without parole"},
+        {"year": "1989", "text": "Wilson sues Burge in federal court; the first jury hangs"},
+        {"year": "1993", "text": "A federal appeals court sweeps the verdict aside"}
+      ]},
+      {"kind": "spotlight", "cx": 0.5, "cy": 0.52, "r": 0.2, "dim": 0.7},
+      {"kind": "stat", "value": 4, "label": "Anonymous letters from inside Area 2 — “Deep Badge”"},
+      {"kind": "numberticker", "value": 9, "label": "Days between Melvin Jones and Andrew Wilson", "group": false},
+      {"kind": "numberticker", "value": 23, "label": "Articles Conroy wrote on Area 2, over seventeen years", "group": false},
+      {"kind": "quote", "quote": "included psychological techniques and planned torture", "attribution": "The Goldston report, Office of Professional Standards, 1990"},
+      {"kind": "kinetic", "lines": ["FIRED IN FEBRUARY 1993", "CHARGED WITH NOTHING"], "style": "emphasis", "emphasisWords": ["NOTHING"]},
+      {"kind": "routemap", "pins": [{"x": 0.4, "y": 0.26}, {"x": 0.62, "y": 0.8}], "label": "Chicago to Apollo Beach, Florida"},
+      {"kind": "lowerthird", "primary": "“VIGILANTE”", "secondary": "Burge's forty-foot cabin cruiser — a name he said he picked at random"},
+      {"kind": "numberticker", "value": 3000, "prefix": "$", "label": "Police pension, every month (roughly)", "group": true}
+    ],
+    "ACT_3": [
+      {"kind": "acttitle", "title": "THE CLOCK RUNS OUT", "kicker": "ACT THREE", "index": 3},
+      {"kind": "lowerthird", "primary": "STATUTE OF LIMITATIONS", "secondary": "Aggravated battery, official misconduct — Illinois"},
+      {"kind": "numberticker", "value": 3, "label": "Years to file charges, from the moment the crank turned", "group": false},
+      {"kind": "timeline", "events": [
+        {"year": "1973", "text": "Anthony Holmes tortured at Area 2"},
+        {"year": "1976", "text": "His clock runs out"},
+        {"year": "1982", "text": "Andrew Wilson tortured at Area 2"},
+        {"year": "1985", "text": "His clock runs out — the letter still unanswered"}
+      ]},
+      {"kind": "kinetic", "lines": ["THE CLOCK WAS HIS ALIBI", "THE CITY'S SILENCE WOUND IT"], "style": "emphasis", "emphasisWords": ["ALIBI"]},
+      {"kind": "stat", "value": 148, "label": "Torture claims the special prosecutors examined"},
+      {"kind": "numberticker", "value": 7000000, "prefix": "$", "label": "Cost of the four-year investigation (about)", "group": true},
+      {"kind": "compbars", "items": [
+        {"label": "Cases proved beyond a reasonable doubt", "value": 3},
+        {"label": "Criminal charges filed", "value": 0}
+      ]},
+      {"kind": "kinetic", "lines": ["EVERY PROVABLE CRIME", "WAS PAST ITS CLOCK"], "style": "wordpop", "emphasisWords": ["CLOCK"]},
+      {"kind": "lowerthird", "primary": "THE DEATH ROW TEN", "secondary": "Condemned men whose confessions came out of Area 2"},
+      {"kind": "timeline", "events": [
+        {"year": "2000", "text": "Gov. George Ryan freezes every execution in Illinois"},
+        {"year": "JAN 10, 2003", "text": "Patterson, Hobley, Orange and Howard pardoned on innocence"},
+        {"year": "JAN 11, 2003", "text": "Death row emptied — 167 sentences commuted"}
+      ]},
+      {"kind": "numberticker", "value": 167, "label": "Death sentences commuted, January 11, 2003", "group": false},
+      {"kind": "quote", "quote": "Our capital system is haunted by the demon of error: error in determining guilt, and error in determining who among the guilty deserves to die.", "attribution": "Gov. George Ryan, January 2003"},
+      {"kind": "mechanism", "mechanism": "faultsplit"},
+      {"kind": "lowerthird", "primary": "NOVEMBER 2003", "secondary": "Burge signs sworn answers denying he ever used or saw abuse"}
+    ],
+    "ACT_4": [
+      {"kind": "acttitle", "title": "LYING UNDER OATH", "kicker": "ACT FOUR", "index": 4},
+      {"kind": "kinetic", "lines": ["THE TORTURE WAS LEGALLY DEAD", "THE LIE WAS BRAND NEW"], "style": "emphasis", "emphasisWords": ["LIE"]},
+      {"kind": "quote", "quote": "There is no place for torture and abuse in a police station. There is no place for perjury and false statements in federal lawsuits.", "attribution": "Patrick Fitzgerald, October 2008"},
+      {"kind": "lowerthird", "primary": "APOLLO BEACH, FLORIDA", "secondary": "October 21, 2008 — FBI agents arrest Jon Burge"},
+      {"kind": "bar", "items": [
+        {"label": "Counts of obstruction of justice", "value": 2},
+        {"label": "Counts of perjury", "value": 1}
+      ]},
+      {"kind": "quote", "quote": "I didn't know if it was daytime or nighttime. He just kept shocking me.", "attribution": "Anthony Holmes, testifying at the 2010 federal trial"},
+      {"kind": "kinetic", "lines": ["JUNE 28, 2010", "GUILTY ON EVERY COUNT"], "style": "maskslide", "emphasisWords": ["GUILTY"]},
+      {"kind": "quote", "quote": "I got justice, something I have been wanting for 28 years.", "attribution": "Melvin Jones, June 2010"},
+      {"kind": "lowerthird", "primary": "SENTENCING · JANUARY 21, 2011", "secondary": "United States District Court, Chicago"},
+      {"kind": "quote", "quote": "How can one trust the system of justice when the system is so defiled?", "attribution": "Judge Joan Lefkow, January 21, 2011"},
+      {"kind": "numberticker", "value": 54, "label": "Months in federal prison — for lying about it", "group": false},
+      {"kind": "compbars", "items": [
+        {"label": "Men tortured (his victims' lawyers' count)", "value": 118},
+        {"label": "Criminal sentences ever served for Area 2", "value": 1}
+      ]},
+      {"kind": "lowerthird", "primary": "POLICEMEN'S ANNUITY AND BENEFIT FUND", "secondary": "January 2011 — the board votes on Burge's pension"},
+      {"kind": "votetally", "majority": 4, "dissent": 4, "label": "FOUR TO FOUR — A TIE MEANT HE KEPT IT"},
+      {"kind": "quote", "quote": "I find it hard to believe that the city's political leadership could even contemplate giving 'Reparations' to human vermin.", "attribution": "Jon Burge, statement to a police blog, April 2015"},
+      {"kind": "kinetic", "lines": ["MAY 6, 2015", "PASSED UNANIMOUSLY"], "style": "emphasis", "emphasisWords": ["UNANIMOUSLY"]},
+      {"kind": "numberticker", "value": 5500000, "prefix": "$", "label": "Reparations fund for 57 living survivors", "group": true},
+      {"kind": "quote", "quote": "This is another step but an essential step in righting a wrong, removing a stain on the reputation of this great city.", "attribution": "Mayor Rahm Emanuel, May 6, 2015"},
+      {"kind": "lowerthird", "primary": "“REPARATIONS WON”", "secondary": "Required in Chicago public schools — 8th grade and 10th, since 2018"},
+      {"kind": "timeline", "events": [
+        {"year": "2018", "text": "Burge dies in Florida, pension intact, denials intact"},
+        {"year": "2020", "text": "Jackie Wilson declared innocent"},
+        {"year": "2026", "text": "Ground broken on a memorial, Martin Luther King Drive"}
+      ]},
+      {"kind": "numberticker", "value": 210000000, "prefix": "$", "label": "The public bill by 2022 — and still climbing", "group": true}
+    ],
+    "ENDING": [
+      {"kind": "kinetic", "lines": ["ONE PAGE", "ONE DOCTOR", "THIRTY-THREE YEARS EARLY"], "style": "wordpop", "emphasisWords": ["ONE"]},
+      {"kind": "lowerthird", "primary": "FEBRUARY 1982", "secondary": "A thorough investigation — complete, sufficient, and buried"},
+      {"kind": "timeline", "events": [
+        {"year": "1982", "text": "The letter is buried in a file"},
+        {"year": "2010", "text": "Convicted of lying about the torture"},
+        {"year": "2015", "text": "Chicago legislates reparations for his victims"},
+        {"year": "2018", "text": "The story enters every Chicago classroom"}
+      ]},
+      {"kind": "stat", "value": 33, "label": "Years from the doctor's letter to the city saying it out loud"},
+      {"kind": "kinetic", "lines": ["HE BEAT THE STATUTE OF LIMITATIONS", "NOBODY BEATS THE CURRICULUM"], "style": "emphasis", "emphasisWords": ["NOBODY"]},
+      {"kind": "lowerthird", "primary": "THEY BURIED THE LETTER", "secondary": "It came back as a chapter"}
+    ]
+  }
+}

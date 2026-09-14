@@ -1,0 +1,56 @@
+EP82_valdez — 画像発注 バッチ 11/23（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, ship name, funnel marking, company colour, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) V081.png
+   [V081]  flags: 
+   A ship's wheel standing untended, brightly lit from one side, the bridge windows bright beyond, the helm position vacant
+
+2) V082.png
+   [V082]  flags: P
+   Close-up of a hand on a ship's wheel, a bright instrument glow across the knuckles
+
+3) V083.png
+   [V083]  flags: P
+   A deck crew member seen from directly behind coiling a line on a bright sunlit deck
+
+4) V084.png
+   [V084]  flags: P
+   Two deck crew seen from behind working at a winch under bright deck floodlights at night
+
+5) V085.png
+   [V085]  flags: 
+   A steel deck locker with tools racked inside, a work lamp blazing across them
+
+6) V086.png
+   [V086]  flags: 
+   A paint locker aboard ship in bright work light, tins and brushes on shelves
+
+7) V087.png
+   [V087]  flags: 
+   A crew laundry aboard ship in bright fluorescent light, machines and a folding table, empty
+
+8) V088.png
+   [V088]  flags: 
+   An empty crew recreation room aboard ship, bright ceiling lights, fixed seating, a television off

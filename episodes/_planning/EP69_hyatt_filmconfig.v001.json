@@ -1,0 +1,2056 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "hyatt",
+  "episode_id": "PD-2026-069-hyatt",
+  "assets": "episodes/PD-2026-069-hyatt/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-069-hyatt/06_audio/narration_index.v001.json",
+  "narration": "hyatt/narration.mp3",
+  "captions": "episodes/PD-2026-069-hyatt/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/hyatt_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 21.909,
+  "hookLine": "On the drawing, it looks like the same thing.",
+  "captionLeadSeconds": 0.6,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "ONE LONG STEEL ROD",
+          "BECOMES TWO."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "BECOMES TWO"
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "ON THE DRAWING,",
+          "IT LOOKS LIKE THE SAME THING."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE SAME THING"
+        ]
+      }
+    ],
+    "OP": [
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOTHING GOT WEAKER.",
+          "IT WAS ASKED TO CARRY TWICE AS MUCH."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "TWICE AS MUCH"
+        ]
+      }
+    ],
+    "ACT_1": [
+      {
+        "kind": "lowerthird",
+        "primary": "HYATT REGENCY HOTEL, KANSAS CITY",
+        "secondary": "In service approximately one year. The atrium is about 117 ft by 145 ft in plan and 50 ft high."
+      },
+      {
+        "kind": "stat",
+        "value": 3,
+        "label": "Suspended walkways spanning the atrium — at the second, third and fourth floor levels"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE STACK",
+        "secondary": "The second floor walkway hung from the fourth floor walkway directly above it. The third was offset, on its own rods from the roof framing."
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE WHOLE QUESTION",
+          "IS WHAT HOLDS THE ROD."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "WHAT HOLDS THE ROD"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE BOX BEAM",
+        "secondary": "Two 8-inch steel channels laid toe to toe and joined by continuous longitudinal fillet welds. Not a solid section."
+      },
+      {
+        "kind": "quote",
+        "quote": "As originally designed the fourth and second floor walkways were to be supported by what is referred to as a 'one rod' design.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988) — the court's description of the original detail"
+      },
+      {
+        "kind": "numberticker",
+        "value": 6,
+        "label": "Hanger rods — three down each side of the atrium, about thirty feet of threaded steel apiece",
+        "group": false
+      },
+      {
+        "kind": "quote",
+        "quote": "The project design criteria specify a design live load of 100 psf (4.8 kPa) for hotel corridors and lobby areas. This is interpreted by NBS to include the walkways",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "numberticker",
+        "value": 20.3,
+        "label": "Design load at EACH connection under the one-rod arrangement — NBS Conclusion 6(a)",
+        "decimals": 1,
+        "suffix": " kips"
+      },
+      {
+        "kind": "quote",
+        "quote": "The AISC Specification for the Design, Fabrication and Erection of Structural Steel for Buildings forms the basis for the steel design provisions of the Kansas City Building Code.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Ultimate capacity the code expected of the one-rod connection — 1.67 × 20.3",
+            "value": 33.9
+          },
+          {
+            "label": "Mean ultimate capacity the one-rod connection actually had",
+            "value": 20.5
+          }
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 60,
+        "label": "Of the capacity expected under the AISC Specification — the ORIGINAL detail, before any change (NBS)",
+        "suffix": "%"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE DETAIL WAS ALREADY ILLEGAL",
+          "BEFORE ANYBODY CHANGED IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ALREADY ILLEGAL"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "The hanger rods and the box beam-hanger rod connections shown on the structural drawings did not meet the design specifications of the Kansas City Building Code.",
+        "attribution": "Administrative Hearing Commission, quoted at 744 S.W.2d 524 — not contested on appeal"
+      },
+      {
+        "kind": "quote",
+        "quote": "Efforts to obtain copies of the structural design calculations were unsuccessful",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "SPECIAL, AND NON-REDUNDANT",
+        "secondary": "The Commission found the box beam–hanger rod connections to be special connections. All connections are the responsibility of the structural engineer."
+      },
+      {
+        "kind": "quote",
+        "quote": "A 'non-redundant' connection which fails will cause collapse of the structure. The box beam-hanger rod connections were 'non-redundant.'",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE CONNECTION, ASSEMBLED",
+        "secondary": "A rod. A hole through the box beam. A washer. A nut. Each beam sat on its own nut and put only its own share into the steel."
+      }
+    ],
+    "ACT_2": [
+      {
+        "kind": "lowerthird",
+        "primary": "FAST-TRACK",
+        "secondary": "The building went up while the drawings were still being drawn."
+      },
+      {
+        "kind": "quote",
+        "quote": "The steel fabricator on the Hyatt project, Havens Steel Company, had engineers capable of designing simple, complex, or special connections.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "Because of certain fabricating problems Havens proposed to Duncan the use of a 'double rod' system to suspend the second and fourth floor walkways.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "faultsplit"
+      },
+      {
+        "kind": "quote",
+        "quote": "Under this arrangement all of the second floor walkway load was first transferred to the fourth floor box beams, where both that load and the fourth floor walkway load were transmitted through the box beam-hanger rod connections to the ceiling hanger rods.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Second floor connection — unchanged by the redraw",
+            "value": 20.3
+          },
+          {
+            "label": "Fourth floor connection — as built",
+            "value": 40.7
+          }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "The change in hanger rod arrangement from a continuous rod to interrupted rods essentially doubled the load to be transferred by the fourth floor box beam-hanger rod connections",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 6"
+      },
+      {
+        "kind": "quote",
+        "quote": "The effect of this change was to double the load on the fourth floor walkway and the box beam-hanger rod connections on that walkway.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NO STEEL WAS REMOVED.",
+          "NO STEEL WAS THINNED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NO STEEL"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "There was evidence that one of the architects contacted Duncan to verify that the double rod arrangement was structurally sound and was advised by Duncan that it was.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "He called to Duncan's attention questions concerning the strength of the rods and the change from one rod to two. Duncan stated to the technician that the change to two rods was 'basically the same as the one rod concept.'",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "stat",
+        "value": 6,
+        "label": "Separate occasions on which the project engineer was asked about the implications of the change — the licensing board's investigation, reported in ASCE's journal"
+      },
+      {
+        "kind": "quote",
+        "quote": "Certain information concerning loads and other aspects of the box beam-hanger rod connections which appeared on Duncan's preliminary sketches was not included on the final structural drawings sent to the fabricator.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "The Commission found that the structural drawings (S405.1 Secs. 10 and 11) did not communicate to the fabricator that it was to design the box beam-hanger rod connection, and did communicate to the fabricator that those connections had been designed by the engineer.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "Duncan testified that he intended for the fabricator to design the connections. Havens prepared its shop drawings on the basis that the connections shown on the design drawings had been designed by the structural engineer.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THREE STAMPS.",
+          "THE DRAWING DID NOT CHANGE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "DID NOT CHANGE"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "The Commission found, and appellants do not dispute, that its own internal procedures called for a detailed check of all special connections.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "Under the contract, and under the statute, review and approval of the shop drawings is an engineering function.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      }
+    ],
+    "ACT_3": [
+      {
+        "kind": "lowerthird",
+        "primary": "OCTOBER 1979",
+        "secondary": "With the hotel still going up, the atrium roof collapsed. The investigation established that the cause was poor construction workmanship."
+      },
+      {
+        "kind": "quote",
+        "quote": "In their report to the architects, appellants advised 'we then checked the suspended bridges and found them to be satisfactory.'",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "Appellants did not do a complete check of the design of all steel in the atrium nor a complete check of the suspended bridges.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE SECOND CHANCE",
+          "CAME AFTER THE CHANGE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "AFTER THE CHANGE"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "With this change in hanger rod arrangement, the ultimate capacity of the walkways was so significantly reduced that, from the day of construction, they had only minimal capacity to resist their own weight and had virtually no capacity to resist additional loads imposed by people.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "FRIDAY, 17 JULY 1981",
+        "secondary": "Kansas City is hot. The hotel has been in service about a year."
+      },
+      {
+        "kind": "quote",
+        "quote": "Between 1,500 and 2,000 area residents chose to escape the heat at the Hyatt Regency Hotel's tea dance, a weekly event featuring big band music and a dance contest.",
+        "attribution": "Pfatteicher, “‘The Hyatt Horror’”, ASCE Journal of Performance of Constructed Facilities 14(2), May 2000"
+      },
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "7:00 PM",
+            "text": "Crowd in atrium area is estimated at 1500 to 2000"
+          },
+          {
+            "year": "7:04 PM",
+            "text": "Band returns from break and begins to play for dance contest"
+          },
+          {
+            "year": "7:05 PM",
+            "text": "Second and fourth floor walkways collapse"
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NO SECOND PATH.",
+          "NO BEND. NO SAG. NO WARNING."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NO SECOND PATH"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "Thus, failure of any one connection would have led to complete collapse of the walkway system.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "quote",
+        "quote": "In the collapse, the second and fourth floor walkways fell to the atrium floor, with the fourth floor walkway coming to rest on top of the lower walkway.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "quote",
+        "quote": "Most of those killed or injured were either on the first floor level of the atrium or on the second floor walkway. The third floor walkway was not involved in the collapse.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — executive summary"
+      },
+      {
+        "kind": "numberticker",
+        "value": 142000,
+        "label": "Pounds — the weight of the two walkways, the Missouri Court of Appeals' figure",
+        "suffix": " lb",
+        "group": true
+      },
+      {
+        "kind": "numberticker",
+        "value": 71,
+        "label": "Tons of steel and concrete, from four storeys up — our own arithmetic on the NBS dead-load measurement",
+        "suffix": " tons"
+      },
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "7:08 PM",
+            "text": "First call for help"
+          },
+          {
+            "year": "7:22 PM",
+            "text": "A call goes out for cutting tools"
+          },
+          {
+            "year": "7:52 PM",
+            "text": "More than a hundred firefighters in the building"
+          },
+          {
+            "year": "3:15 AM",
+            "text": "The first walkway span is lifted"
+          },
+          {
+            "year": "4:30 AM",
+            "text": "Last survivor removed from debris"
+          }
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "NINE HOURS, TWENTY-FIVE MINUTES",
+        "secondary": "7:05 p.m. to 4:30 a.m. The federal report gives it eleven lines."
+      },
+      {
+        "kind": "numberticker",
+        "value": 114,
+        "label": "People died. At least 186 were injured — the Missouri Court of Appeals' figures"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "NO NAMES",
+        "secondary": "Neither the federal report nor the court names a single victim. This film names none of the dead."
+      }
+    ],
+    "ACT_4": [
+      {
+        "kind": "lowerthird",
+        "primary": "20 JULY 1981",
+        "secondary": "Three days after. Senator Eagleton's office contacts the National Bureau of Standards; on 22 July the Mayor formally requests it."
+      },
+      {
+        "kind": "quote",
+        "quote": "In the early phases of the investigation, NBS involvement was limited by court order to visual and photographic observations and measurements.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "NBS BUILDING SCIENCE SERIES 143",
+        "secondary": "National Bureau of Standards, May 1982. Not NIST — the Bureau did not become the Institute until 1988."
+      },
+      {
+        "kind": "quote",
+        "quote": "Collapse of the walkways occurred under the action of loads that were substantially less than the design loads specified by the Kansas City Building Code.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 1"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "LESS.",
+          "NOT MORE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "LESS"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "it is concluded that the most probable cause of failure was insufficient load capacity of the box beam-hanger rod connections.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "quote",
+        "quote": "Two factors contributed to the collapse: inadequacy of the original design for the box beam-hanger rod connection, which was identical for all three walkways, and a change in hanger rod arrangement during construction that essentially doubled the load on the box beam-hanger rod connections at the fourth floor walkway.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Design load at the connection AS DRAWN (one rod)",
+            "value": 20.3
+          },
+          {
+            "label": "Design load at the fourth floor connection AS BUILT (two rods)",
+            "value": 40.7
+          }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "It would be expected that the ultimate load capacity of the resulting connection would be at least 1.67 times 40.7, or 68 kips (302 kN)",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982"
+      },
+      {
+        "kind": "quote",
+        "quote": "Mean ultimate capacities of the fourth floor box beam-hanger rod connections were estimated on the basis of the NBS test series and these capacities ranged from 18.2 kips (81 kN) to 19.3 kips (86 kN) with an average value of 18.6 kips (83 kN)",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 2(c)"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Ultimate load the code required of the connection",
+            "value": 68.0
+          },
+          {
+            "label": "Ultimate capacity the connection actually had",
+            "value": 18.6
+          }
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 21.4,
+        "label": "Maximum load on a fourth floor connection at the moment of collapse (NBS)",
+        "decimals": 1,
+        "suffix": " kips"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "31% IS A LOAD RATIO.",
+          "THE STRENGTH RATIO IS ABOUT 27% — OURS, NOT THEIRS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "A LOAD RATIO"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 53,
+        "label": "The load on the night, measured against the 40.7 kip design load (NBS)",
+        "suffix": "%"
+      },
+      {
+        "kind": "quote",
+        "quote": "Neither the quality of workmanship nor the materials used in the walkway system played a significant role in initiating the collapse",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 9"
+      },
+      {
+        "kind": "quote",
+        "quote": "Dynamic loads induced by walking or dancing on the walkways would not have been significant in comparison to the static loads.",
+        "attribution": "NBS Building Science Series 143, Investigation of the Kansas City Hyatt Regency Walkways Collapse, May 1982 — Conclusion 1(c)"
+      },
+      {
+        "kind": "stat",
+        "value": 63,
+        "label": "Credible upper-bound combined occupancy of the second and fourth floor walkways at the time of collapse, as NBS counted it"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "WITHOUT THE CHANGE IT WAS STILL ILLEGAL.",
+          "WITHOUT THE CHANGE IT WOULD HAVE HELD."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "WOULD HAVE HELD"
+        ]
+      }
+    ],
+    "ACT_5": [
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NO ONE WAS EVER CHARGED",
+          "WITH A CRIME."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NO ONE"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 78000000,
+        "label": "Paid out by insurers to settle civil suits as at December 1983 — a figure at a date, not a final total",
+        "prefix": "$",
+        "group": true
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "FEBRUARY 1984",
+        "secondary": "The Missouri Board for Architects, Professional Engineers and Land Surveyors files its complaint."
+      },
+      {
+        "kind": "stat",
+        "value": 27,
+        "label": "Days of hearing before the Missouri Administrative Hearing Commission"
+      },
+      {
+        "kind": "quote",
+        "quote": "Its 'Statement of the case, Findings of Fact, Conclusions of Law and Decision' are 442 pages in length.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "15 NOVEMBER 1985",
+        "secondary": "98 pages of findings of fact, 322 of conclusions of law, 180 numbered findings. The appellants challenged five."
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE FINDINGS — THE PROJECT ENGINEER",
+        "secondary": "Gross negligence in the preparation and completion of a structural drawing; misconduct in misrepresenting to the architects the safety of a connection."
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE FINDINGS — THE SENIOR ENGINEER",
+        "secondary": "Vicariously liable for the acts and omissions of the project engineer; grossly negligent in failing to review, or assure review of, the drawing before affixing his seal."
+      },
+      {
+        "kind": "quote",
+        "quote": "By section 327.411.2 the owner of the seal is responsible for the 'whole ... engineering project' when he places his seal on 'any plans' unless he expressly disclaims responsibility and specifies the documents which he disclaims.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "The responsibility for the structural integrity and safety of the walkway connections was Duncan's and that responsibility was non-delegable.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "while the engineer may properly delegate the work of performing engineering design functions, he cannot delegate the responsibility",
+        "attribution": "the administrative law judge, quoted in Pfatteicher, “‘The Hyatt Horror’”, ASCE Journal of Performance of Constructed Facilities 14(2), May 2000"
+      },
+      {
+        "kind": "quote",
+        "quote": "The Commission defined the phrase in the licensing context as 'an act or course of conduct which demonstrates a conscious indifference to a professional duty.'",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988) — gross negligence, defined for the first time in a Missouri licensing case"
+      },
+      {
+        "kind": "quote",
+        "quote": "The structural engineer's duty is to determine that the structural plans which he designs or approves will provide structural safety because if they do not a strong probability of harm exists. Indifference to the duty is indifference to the harm.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "That breach occurred at the latest when their design was incorporated into the building with their approval and they were subject to discipline whether or not any collapse subsequently occurred.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988)"
+      },
+      {
+        "kind": "quote",
+        "quote": "the original inadequacies of the structural drawings might not have been critical if a meaningful review of the shop drawings had occurred.",
+        "attribution": "Duncan v. Missouri Board for Architects, Professional Engineers and Land Surveyors, 744 S.W.2d 524 (Mo. Ct. App. 1988) — footnote 7"
+      },
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "22 Jan 1986",
+            "text": "The Board revokes all three certificates"
+          },
+          {
+            "year": "Summer 1986",
+            "text": "ASCE conduct committee: expel, with no privilege ever to rejoin"
+          },
+          {
+            "year": "26 Jan 1988",
+            "text": "One finding reversed; the revocations stand"
+          }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "Engineers shall hold paramount the safety, health and welfare of the public in the performance of their professional duties",
+        "attribution": "ASCE Code of Ethics, Fundamental Canon 1, as rewritten in 1976"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "WHAT THE PROFESSION DID",
+        "secondary": "The conduct committee recommended expulsion. The board of direction voted to suspend for three years; he then relinquished his membership. The project engineer faced no ethics committee at all."
+      }
+    ],
+    "ENDING": [
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "20.3 kips — as drawn",
+            "value": 20.3
+          },
+          {
+            "label": "40.7 kips — as built",
+            "value": 40.7
+          },
+          {
+            "label": "68 kips — as the code required",
+            "value": 68.0
+          },
+          {
+            "label": "18.6 kips — as the steel could actually give",
+            "value": 18.6
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOTHING GOT WEAKER.",
+          "ONE BEAM WAS ASKED TO CARRY TWO."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ASKED TO CARRY TWO"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "In their place stands a single span, supported not by delicate, graceful rods, but standing on stout, sturdy columns",
+        "attribution": "Pfatteicher, “‘The Hyatt Horror’”, ASCE Journal of Performance of Constructed Facilities 14(2), May 2000 — as at 2000"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "WHERE THE RECORD ENDS",
+        "secondary": "A court of appeals, January 1988. Nothing here is said about what either engineer has done since."
+      },
+      {
+        "kind": "numberticker",
+        "value": 114,
+        "label": "People went to a tea dance and did not come home"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE CONNECTION THAT FAILED",
+        "secondary": "A rod, a washer, a nut, and a hole through a welded steel beam."
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE RESPONSIBILITY",
+          "WAS NON-DELEGABLE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NON-DELEGABLE"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses"
+      }
+    ]
+  },
+  "_figure_sources": {
+    "_readme": [
+      "Provenance for figures_by_section. One entry per beat, in the same order, so a reader can check any card against EP69_hyatt_FACTS_LEDGER.v001.md (138 rows, 140 verbatim quotations, verifier green 140/140). ledger_rows are the row ids behind every factual assertion on that card; card_window is where build_case_film_generic.build_figures() will place it against the MEASURED master; lands_on is the narration it sits over, taken from 06_audio/narration_index.v001.json. Nothing here is read by any tool.",
+      "PLACEMENT. build_figures() does not read a per-beat time: it spaces a section's payloads EVENLY inside the section window (dur 6.0s, and 3.0s in HOOK/OP), reserving 3.0s at the head and 6.5s at the tail. ORDER and COUNT are therefore the only placement controls. Both were chosen against the delivered narration index, not against the paper design, and card_window/lands_on above were computed with the same arithmetic build_figures uses. Every beat was checked to overlap narration it actually illustrates.",
+      "BEAT COUNTS. episode_spec figure_beats_per_act is [14, 18]. ACT_1..ACT_5 each carry 18, the ceiling, because this film's argument IS a sequence of measured numbers and every one of them needs to be seen. HOOK 3, OP 1, ENDING 8 -- those three are not acts and the floor does not apply to them.",
+      "SACRIFICIAL SLOTS. build_figures overwrites figures[0] and figures[-1] of the whole sorted list with the AI-disclosure lowerthird. HOOK[0] and ENDING[-1] are therefore already that card, so no content beat is destroyed (EP65's v001 lost its closing line this way).",
+      "THE DESIGNED SILENCES, and the one card that sits on one. The delivered master carries 30.0 s of scripted silence, measured off this index as three inter-chunk gaps: 22.0 s after VC-0074 (the H2 assembly opening ACT_2), 5.5 s after VC-0173 (H5 pull-through 3.0 + black 2.5, before the 7:05 PM card) and 2.5 s after VC-0209 (the TURN). Every beat above was checked against all three. ONE overlaps: ACT_1[17], 294.6-300.6, six seconds inside the 22.0 s hold. It cannot be moved -- build_figures reserves only 6.5 s at a section tail and this hold is 22 s long, so the last ACT_1 card lands inside it at every count in the declared band (14 -> 292.5, 18 -> 294.6). Rather than hide it, that slot is authored FOR the hold: it names the four parts the wordless animation is assembling and asserts nothing outside DS-04/DS-05/DS-06. The other two holds are clear.",
+      "THE SIX NUMBERS. 20.3 -> 40.7 -> 68 -> 18.6 -> 21.4 -> 114. Six AE kinetic beats are separately authored at scripts/ae/jobs_ep69_hyatt.json and are CUTS, not figures. The figure grid deliberately carries the same numbers as compbars/numberticker so the argument survives if the owner drops any AE beat. NOTE: the AE _at timecodes (3:07 / 6:37 / 14:55 / 17:13 / 17:49 / 28:15) were derived from FILM BIBLE 12.5, whose clock is the word-cumulative model at 160.0 wpm and does NOT charge the 30.0s of designed silence. Against the delivered master every beat after the 22.0s ACT_2 hold moves later. Re-time them from this narration index before placing them in hyatt_film.json.",
+      "THE LOAD RATIO. Every card that states 31 percent says out loud that it is a LOAD ratio (21.4 against 68), and that the capacity ratio (18.6 against 68, about 27 percent) is OUR arithmetic and is not NBS's. Quarantine -01 and ledger LD-11/LD-12 make this the single most likely factual error in the episode; the Missouri Court of Appeals itself makes the slip in its own footnote 12.",
+      "QUOTE CARDS ARE VERBATIM, AND CHECKED. 43 of the 102 beats are `quote` cards. Each was string-matched back into EP69_hyatt_FACTS_LEDGER.v001.md after this file was written: 42 match the ledger byte for byte. The 43rd, ACT_4[3] (NBS Conclusion 1), deliberately does NOT: the cached OCR of BSS 143 carries the fault `specif ied` and the ledger says out loud that on screen and in narration the word is `specified`. Do not 'correct' that card back to the scanner's error.",
+      "AGENCY AND DATE. Quarantine -21: it is NBS, it is the National Bureau of Standards, and it is May 1982. ACT_4[2] is the card that fixes it on screen. No card anywhere says NIST.",
+      "NO DEPICTION. Quarantines -10, -11, -12 and -13 bar third-party footage, any depiction of a casualty or of the occupied room at or near 7:05 p.m., and any real likeness. Every beat here is typography, a diagram, or a number; none asserts an image of the room, and ACT_3[17] states on screen that the film names none of the dead (ND-09).",
+      "ATTRIBUTION. Every `quote` card names the tribunal or the document it comes from, because the film's rule is that criticism is a finding and never the narrator's opinion. 142,000 lb and 114 are attributed to the Missouri Court of Appeals (quarantine -06, -03), never to the federal report.",
+      "LEDGER ROWS SPOKEN BUT NOT CARDED (the grid has fewer slots than the script has lines): EV-03 partly, CH-07/CH-09, RV-02/RV-03/RV-04/RV-05, FN-03/FN-04/FN-13/FN-14, LD-02/LD-05/LD-07/LD-16/LD-18/LD-19, DC-17, PR-06/PR-07, ND-01/ND-02. All are narrated; none is contradicted by any card above.",
+      "STILL MISSING FOR THIS EPISODE, and unchanged by this file: episodes/PD-2026-069-hyatt/05_visuals/asset_manifest.v001.json, the 113 mandatory stills and >=40 factory clips under remotion/public/hyatt/, the face-plate register, and an Ep69Hyatt composition in remotion/src/Root.tsx. build_case_film_generic --dry-run stops at the asset manifest, before it ever reaches these figures."
+    ],
+    "HOOK": [
+      {
+        "i": 0,
+        "kind": "lowerthird",
+        "ledger_rows": [],
+        "card_window": [
+          2.518,
+          5.518
+        ],
+        "lands_on": "SACRIFICIAL SLOT: build_figures overwrites this payload with the AI disclosure."
+      },
+      {
+        "i": 1,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "CH-01",
+          "CH-02",
+          "CH-04"
+        ],
+        "card_window": [
+          10.354,
+          13.354
+        ],
+        "lands_on": "VC-0004 8.655-15.457 | One long steel rod becomes two shorter ones, four inches apart. / Nobody has ever established whose hand drew it."
+      },
+      {
+        "i": 2,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "CH-10"
+        ],
+        "card_window": [
+          18.191,
+          21.191
+        ],
+        "lands_on": "VC-0006 15.757-21.909 | Two walkways will hang from that detail, over a crowded room. / On the drawing, it looks like the same thing."
+      }
+    ],
+    "OP": [
+      {
+        "i": 0,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "DS-05",
+          "DS-06",
+          "LD-04"
+        ],
+        "card_window": [
+          27.937,
+          30.937
+        ],
+        "lands_on": "VC-0009 27.910-30.650 | It does not get weaker when the second rod arrives."
+      }
+    ],
+    "ACT_1": [
+      {
+        "i": 0,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "EV-01",
+          "EV-02"
+        ],
+        "card_window": [
+          42.578,
+          48.578
+        ],
+        "lands_on": "VC-0013 41.245-51.762 | A room roughly a hundred and seventeen feet by a hundred and forty-five, and fifty feet high. / Three suspended walkways spanned it, at the second, third and fourth floor"
+      },
+      {
+        "i": 1,
+        "kind": "stat",
+        "ledger_rows": [
+          "EV-03"
+        ],
+        "card_window": [
+          57.403,
+          63.403
+        ],
+        "lands_on": "VC-0017 57.167-66.476 | Steel rods coming down out of the roof, and the walkway hanging on the rods. / So the whole question in this building, from the day it was drawn, is a small one."
+      },
+      {
+        "i": 2,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "DS-01",
+          "DS-02"
+        ],
+        "card_window": [
+          72.228,
+          78.228
+        ],
+        "lands_on": "VC-0021 70.209-81.423 | The second floor walkway was suspended from the fourth floor walkway, which was directly above it. / The third was offset from the other two, and hung on its own rods fro"
+      },
+      {
+        "i": 3,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "DS-05",
+          "DS-06"
+        ],
+        "card_window": [
+          87.053,
+          93.053
+        ],
+        "lands_on": "VC-0024 83.230-96.880 | It is the reason the third walkway is still standing at the end of this film. / Each walkway was four spans of steel stringers. / Underneath the stringers ran a pair of b"
+      },
+      {
+        "i": 4,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "DS-03",
+          "DS-04"
+        ],
+        "card_window": [
+          101.878,
+          107.878
+        ],
+        "lands_on": "VC-0029 101.263-109.297 | It was two ordinary eight-inch steel channels, laid facing each other and joined toe to toe by continuous longitudinal welds."
+      },
+      {
+        "i": 5,
+        "kind": "quote",
+        "ledger_rows": [
+          "DS-07"
+        ],
+        "card_window": [
+          116.703,
+          122.703
+        ],
+        "lands_on": "VC-0031 112.451-123.104 | The rods were an inch and a quarter across, threaded top and bottom to take a nut and a washer. / That is the whole connection. / A rod through a hole. / A washer under t"
+      },
+      {
+        "i": 6,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "DS-07",
+          "CH-07"
+        ],
+        "card_window": [
+          131.528,
+          137.528
+        ],
+        "lands_on": "VC-0038 130.898-143.133 | Out of the roof framing, through the fourth floor box beam, and on down through the second. / Each beam sat on its own nut, on the same rod, and each beam put only its ow"
+      },
+      {
+        "i": 7,
+        "kind": "quote",
+        "ledger_rows": [
+          "DS-08"
+        ],
+        "card_window": [
+          146.353,
+          152.353
+        ],
+        "lands_on": "VC-0040 143.433-154.178 | The Missouri Court of Appeals calls it, plainly, a one rod design. / Six rods. / Three down each side of the atrium. / Thirty feet of threaded steel apiece."
+      },
+      {
+        "i": 8,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "LD-01",
+          "LD-02"
+        ],
+        "card_window": [
+          161.178,
+          167.178
+        ],
+        "lands_on": "VC-0045 157.843-168.431 | The project specified a design live load of a hundred pounds per square foot for hotel corridors and lobby areas, and the federal investigators read that as covering the "
+      },
+      {
+        "i": 9,
+        "kind": "quote",
+        "ledger_rows": [
+          "DS-09"
+        ],
+        "card_window": [
+          176.004,
+          182.004
+        ],
+        "lands_on": "VC-0049 175.901-187.486 | It is a weight, written short. / Under the one rod design, the load arriving at each connection, at the second floor and at the fourth, would have been about twenty point"
+      },
+      {
+        "i": 10,
+        "kind": "compbars",
+        "ledger_rows": [
+          "LD-08",
+          "LD-14"
+        ],
+        "card_window": [
+          190.829,
+          196.829
+        ],
+        "lands_on": "VC-0051 187.786-199.439 | The same at both levels, because each beam carried only itself. / Steel design in Kansas City ran on the AISC Specification. / That is what the city's building code point"
+      },
+      {
+        "i": 11,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "LD-15"
+        ],
+        "card_window": [
+          205.654,
+          211.654
+        ],
+        "lands_on": "VC-0055 203.754-214.411 | The lowest that would govern any part of this one is one point six seven. / Multiply the design load by that, and you have the load the finished connection is expected to"
+      },
+      {
+        "i": 12,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "DS-12",
+          "LD-16"
+        ],
+        "card_window": [
+          220.479,
+          226.479
+        ],
+        "lands_on": "VC-0058 218.448-227.082 | The connection as drawn could take about twenty point five. / Sixty percent of what the code expected. / That percentage is the federal report's own."
+      },
+      {
+        "i": 13,
+        "kind": "quote",
+        "ledger_rows": [
+          "DS-12",
+          "LD-16"
+        ],
+        "card_window": [
+          235.304,
+          241.304
+        ],
+        "lands_on": "VC-0062 231.165-243.704 | The Missouri Board's tribunal found that the hanger rods and the connections shown on the structural drawings did not meet the design specifications of the Kansas City Bu"
+      },
+      {
+        "i": 14,
+        "kind": "quote",
+        "ledger_rows": [
+          "ND-03"
+        ],
+        "card_window": [
+          250.129,
+          256.129
+        ],
+        "lands_on": "VC-0064 247.230-255.982 | There is one more thing about that drawing, and it is not a small one. / The connection had no calculations behind it that anybody has ever seen."
+      },
+      {
+        "i": 15,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "DS-11"
+        ],
+        "card_window": [
+          264.954,
+          270.954
+        ],
+        "lands_on": "VC-0068 260.319-274.736 | Efforts to obtain copies of the structural design calculations, the report says, were unsuccessful. / A tribunal would later find that these were special connections, and"
+      },
+      {
+        "i": 16,
+        "kind": "quote",
+        "ledger_rows": [
+          "DS-10"
+        ],
+        "card_window": [
+          279.779,
+          285.779
+        ],
+        "lands_on": "VC-0072 279.304-286.756 | A non-redundant connection which fails will cause collapse of the structure. / Six of them, over a room that held two thousand people."
+      },
+      {
+        "i": 17,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "DS-04",
+          "DS-05",
+          "DS-06"
+        ],
+        "card_window": [
+          294.604,
+          300.604
+        ],
+        "lands_on": "NO CHUNK OVERLAPS 294.604-300.604 (designed silence)"
+      }
+    ],
+    "ACT_2": [
+      {
+        "i": 0,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "RV-14"
+        ],
+        "card_window": [
+          319.853,
+          325.853
+        ],
+        "lands_on": "VC-0076 315.532-330.714 | The Hyatt was a fast-track project, which means the building went up while the drawings were still being drawn. / The steel fabricator was Havens Steel Company. / Havens "
+      },
+      {
+        "i": 1,
+        "kind": "quote",
+        "ledger_rows": [
+          "CH-06"
+        ],
+        "card_window": [
+          336.526,
+          342.526
+        ],
+        "lands_on": "VC-0079 331.014-343.782 | Because of certain fabricating problems, Havens proposed a double rod system to the project engineer. / Two explanations have been proposed in the literature for why. / O"
+      },
+      {
+        "i": 2,
+        "kind": "quote",
+        "ledger_rows": [
+          "CH-05"
+        ],
+        "card_window": [
+          353.198,
+          359.198
+        ],
+        "lands_on": "VC-0084 350.812-362.418 | Neither is a finding of any tribunal, and this film does not choose between them. / Here is what the change did. / Instead of one rod carrying two beams at two different "
+      },
+      {
+        "i": 3,
+        "kind": "mechanism",
+        "ledger_rows": [
+          "CH-02",
+          "CH-04"
+        ],
+        "card_window": [
+          369.87,
+          375.87
+        ],
+        "lands_on": "VC-0088 366.640-376.063 | A lower set from the second floor box beams up to the fourth. / The second rod did not pass through the same hole. / It was offset four inches along the beam."
+      },
+      {
+        "i": 4,
+        "kind": "quote",
+        "ledger_rows": [
+          "CH-03"
+        ],
+        "card_window": [
+          386.543,
+          392.543
+        ],
+        "lands_on": "VC-0093 384.208-394.910 | Then that load, and the fourth floor walkway's own load, both went out through the fourth floor connections into the ceiling rods. / The second floor connection did not c"
+      },
+      {
+        "i": 5,
+        "kind": "compbars",
+        "ledger_rows": [
+          "LD-01",
+          "LD-03",
+          "LD-17"
+        ],
+        "card_window": [
+          403.215,
+          409.215
+        ],
+        "lands_on": "VC-0097 401.522-415.103 | The word the federal report uses is doubled, and it uses it as a conclusion. / The change in hanger rod arrangement, from a continuous rod to interrupted rods, essentiall"
+      },
+      {
+        "i": 6,
+        "kind": "quote",
+        "ledger_rows": [
+          "LD-04",
+          "LD-05"
+        ],
+        "card_window": [
+          419.888,
+          425.888
+        ],
+        "lands_on": "VC-0099 415.403-426.662 | The Missouri Court of Appeals says the same thing, in its own words, out of its own record. / The effect of this change was to double the load on the fourth floor walkway"
+      },
+      {
+        "i": 7,
+        "kind": "quote",
+        "ledger_rows": [
+          "LD-06"
+        ],
+        "card_window": [
+          436.56,
+          442.56
+        ],
+        "lands_on": "VC-0104 433.157-448.179 | The change was transmitted to the project engineer, and it was approved. / There was evidence, the court found, that one of the architects contacted the project engineer "
+      },
+      {
+        "i": 8,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "LD-04",
+          "LD-20"
+        ],
+        "card_window": [
+          453.232,
+          459.232
+        ],
+        "lands_on": "VC-0107 451.147-465.101 | The court reviewed the record and rejected the dispute. / It is a reasonable inference from the evidence, the same court wrote, that the engineering calculations and test"
+      },
+      {
+        "i": 9,
+        "kind": "quote",
+        "ledger_rows": [
+          "CH-08"
+        ],
+        "card_window": [
+          469.905,
+          475.905
+        ],
+        "lands_on": "VC-0110 467.048-475.825 | A technician checking the shop drawings called the project engineer's attention to questions about the strength of the rods, and about the change from one rod to two."
+      },
+      {
+        "i": 10,
+        "kind": "quote",
+        "ledger_rows": [
+          "CH-10"
+        ],
+        "card_window": [
+          486.577,
+          492.577
+        ],
+        "lands_on": "VC-0113 483.877-502.453 | And by the licensing board's own investigation, as reported in the American Society of Civil Engineers' journal, the project engineer had been asked about the implication"
+      },
+      {
+        "i": 11,
+        "kind": "stat",
+        "ledger_rows": [
+          "CH-11"
+        ],
+        "card_window": [
+          503.249,
+          509.249
+        ],
+        "lands_on": "VC-0114 502.753-509.229 | Six times. / Nobody who asked was answered with a calculation, because there was not one to give them."
+      },
+      {
+        "i": 12,
+        "kind": "quote",
+        "ledger_rows": [
+          "CH-12"
+        ],
+        "card_window": [
+          519.922,
+          525.922
+        ],
+        "lands_on": "VC-0118 518.163-528.005 | It was not carried onto the final structural drawings that went to the fabricator. / So Havens had a drawing. / Sheet S four zero five point one, sections ten and eleven."
+      },
+      {
+        "i": 13,
+        "kind": "quote",
+        "ledger_rows": [
+          "RV-06"
+        ],
+        "card_window": [
+          536.594,
+          542.594
+        ],
+        "lands_on": "VC-0122 533.156-543.952 | It did not communicate to the fabricator that the fabricator was to design the connection. / And it did communicate to the fabricator that those connections had already b"
+      },
+      {
+        "i": 14,
+        "kind": "quote",
+        "ledger_rows": [
+          "RV-07"
+        ],
+        "card_window": [
+          553.267,
+          559.267
+        ],
+        "lands_on": "VC-0125 549.428-561.638 | Havens prepared its shop drawings on the basis that the connections shown on the design drawings had been designed by the structural engineer. / Each believed the other h"
+      },
+      {
+        "i": 15,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "RV-01"
+        ],
+        "card_window": [
+          569.939,
+          575.939
+        ],
+        "lands_on": "VC-0130 570.062-575.749 | The drawing did not change. / The engineering firm had a written procedure for exactly this situation."
+      },
+      {
+        "i": 16,
+        "kind": "quote",
+        "ledger_rows": [
+          "RV-09",
+          "RV-10",
+          "RV-11"
+        ],
+        "card_window": [
+          586.611,
+          592.611
+        ],
+        "lands_on": "VC-0134 585.798-597.733 | The project engineer did not review the fourth floor connection shown on the shop drawings, and did not, in accord with usual engineering practice, assemble its component"
+      },
+      {
+        "i": 17,
+        "kind": "quote",
+        "ledger_rows": [
+          "RV-12",
+          "RV-13"
+        ],
+        "card_window": [
+          603.284,
+          609.284
+        ],
+        "lands_on": "VC-0136 603.023-610.500 | No review was made, and no calculations were performed, to determine whether the connection shown on the shop drawings met code requirements."
+      }
+    ],
+    "ACT_3": [
+      {
+        "i": 0,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "RV-15"
+        ],
+        "card_window": [
+          628.337,
+          634.337
+        ],
+        "lands_on": "VC-0140 626.621-635.930 | The investigation into that collapse established that the cause was poor construction workmanship. / There were two accidents at the Hyatt that month, and one of them kil"
+      },
+      {
+        "i": 1,
+        "kind": "quote",
+        "ledger_rows": [
+          "RV-16",
+          "RV-17"
+        ],
+        "card_window": [
+          642.772,
+          648.772
+        ],
+        "lands_on": "VC-0142 636.230-649.301 | The federal occupational safety agency investigated a fatal construction accident at the hotel in October 1979. / So twenty-one months before anybody died in that room, t"
+      },
+      {
+        "i": 2,
+        "kind": "quote",
+        "ledger_rows": [
+          "RV-18"
+        ],
+        "card_window": [
+          657.206,
+          663.206
+        ],
+        "lands_on": "VC-0145 654.917-667.617 | The senior engineer assured the owner's representative that he would personally look at every connection in the hotel. / In their report to the architects, the engineers "
+      },
+      {
+        "i": 3,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "RV-15",
+          "RV-16",
+          "RV-17",
+          "RV-18"
+        ],
+        "card_window": [
+          671.64,
+          677.64
+        ],
+        "lands_on": "VC-0148 669.192-679.151 | The court found that they did not do a complete check of the design of all steel in the atrium, nor a complete check of the suspended bridges. / What they had checked was"
+      },
+      {
+        "i": 4,
+        "kind": "quote",
+        "ledger_rows": [
+          "LD-20",
+          "ND-03"
+        ],
+        "card_window": [
+          686.074,
+          692.074
+        ],
+        "lands_on": "VC-0151 685.045-693.075 | It comes after the change. / It comes before anybody died. / And it is a check somebody was paid to make, and reported as made."
+      },
+      {
+        "i": 5,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "ID-01",
+          "EV-01"
+        ],
+        "card_window": [
+          700.509,
+          706.509
+        ],
+        "lands_on": "VC-0155 699.387-709.461 | Then the hotel opened, and by the following summer it had been in service about a year. / For about a year, the building worked. / That is the part of this that is hardes"
+      },
+      {
+        "i": 6,
+        "kind": "quote",
+        "ledger_rows": [
+          "EV-04"
+        ],
+        "card_window": [
+          714.943,
+          720.943
+        ],
+        "lands_on": "VC-0158 709.761-720.949 | Two walkways carried people across that room, every day, for a year, on a connection nobody had ever calculated. / Friday, the seventeenth of July, 1981. / Kansas City is"
+      },
+      {
+        "i": 7,
+        "kind": "casetimeline_c",
+        "ledger_rows": [
+          "EV-05",
+          "EV-06",
+          "EV-07"
+        ],
+        "card_window": [
+          729.378,
+          735.378
+        ],
+        "lands_on": "VC-0161 721.249-735.409 | Between fifteen hundred and two thousand area residents chose to escape the heat at the hotel's tea dance, a weekly event with big band music and a dance contest. / They "
+      },
+      {
+        "i": 8,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "DS-10",
+          "FN-05"
+        ],
+        "card_window": [
+          743.812,
+          749.812
+        ],
+        "lands_on": "VC-0164 735.709-750.312 | A television crew was in that room with a camera that evening, and there are newspaper photographs from the hours after it, and none of it appears here. / It belongs to o"
+      },
+      {
+        "i": 9,
+        "kind": "quote",
+        "ledger_rows": [
+          "FN-05"
+        ],
+        "card_window": [
+          758.246,
+          764.246
+        ],
+        "lands_on": "VC-0167 756.996-764.055 | The federal report built a timeline of that evening out of the two Kansas City newspapers, and printed it in its own pages."
+      },
+      {
+        "i": 10,
+        "kind": "quote",
+        "ledger_rows": [
+          "EV-09"
+        ],
+        "card_window": [
+          772.68,
+          778.68
+        ],
+        "lands_on": "VC-0171 772.779-779.928 | Four minutes past. / Band returns from break and begins to play for the dance contest. / Five minutes past seven."
+      },
+      {
+        "i": 11,
+        "kind": "quote",
+        "ledger_rows": [
+          "EV-10"
+        ],
+        "card_window": [
+          787.115,
+          793.115
+        ],
+        "lands_on": "VC-0174 785.428-793.272 | A non-redundant connection gives nothing away first. / There is no second path for the load to take. / No bend, no sag, no interval."
+      },
+      {
+        "i": 12,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "EV-11"
+        ],
+        "card_window": [
+          801.549,
+          807.549
+        ],
+        "lands_on": "VC-0178 797.587-810.473 | The second and fourth floor walkways fell to the atrium floor, and the fourth floor walkway came to rest on top of the lower one. / Most of those killed or injured were e"
+      },
+      {
+        "i": 13,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "EV-12"
+        ],
+        "card_window": [
+          815.984,
+          821.984
+        ],
+        "lands_on": "VC-0181 813.581-824.862 | The two walkways together weighed a hundred and forty-two thousand pounds. / That figure is the Missouri Court of Appeals'. / About seventy-one tons of steel and concrete"
+      },
+      {
+        "i": 14,
+        "kind": "casetimeline_c",
+        "ledger_rows": [
+          "EV-08"
+        ],
+        "card_window": [
+          830.418,
+          836.418
+        ],
+        "lands_on": "VC-0185 829.920-837.718 | It will read it. / Three minutes past the collapse, the first call for help. / Fourteen minutes later, a call goes out for cutting tools."
+      },
+      {
+        "i": 15,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "EV-08"
+        ],
+        "card_window": [
+          844.852,
+          850.852
+        ],
+        "lands_on": "VC-0189 840.501-852.572 | By fifty-two minutes past seven there are more than a hundred firefighters in the building. / At half past eight, a heavy crane arrives. / At a quarter past three the fol"
+      },
+      {
+        "i": 16,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "ID-02"
+        ],
+        "card_window": [
+          859.286,
+          865.286
+        ],
+        "lands_on": "VC-0194 859.045-866.240 | The federal report gives it eleven lines. / One hundred and fourteen people died. / At least a hundred and eighty-six were injured."
+      },
+      {
+        "i": 17,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "ND-09",
+          "ID-04"
+        ],
+        "card_window": [
+          873.721,
+          879.721
+        ],
+        "lands_on": "VC-0198 872.088-884.019 | The most devastating structural collapse ever to take place in the United States. / This film names none of the dead. / Neither the federal report nor the court names one"
+      }
+    ],
+    "ACT_4": [
+      {
+        "i": 0,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "ID-05"
+        ],
+        "card_window": [
+          899.923,
+          905.923
+        ],
+        "lands_on": "VC-0202 890.438-907.364 | On the twentieth of July, three days after, Senator Thomas Eagleton's office contacted the National Bureau of Standards and requested that technical assistance be provide"
+      },
+      {
+        "i": 1,
+        "kind": "quote",
+        "ledger_rows": [
+          "ID-06"
+        ],
+        "card_window": [
+          918.892,
+          924.892
+        ],
+        "lands_on": "VC-0206 913.651-930.066 | In the early phases of the investigation, their involvement was limited by court order to visual and photographic observations and measurements. / Permission to weigh the"
+      },
+      {
+        "i": 2,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "ID-05"
+        ],
+        "card_window": [
+          937.861,
+          943.861
+        ],
+        "lands_on": "VC-0209 934.892-947.013 | It is a National Bureau of Standards document, not a National Institute of Standards and Technology one — the Bureau did not become the Institute until 1988 — and everyth"
+      },
+      {
+        "i": 3,
+        "kind": "quote",
+        "ledger_rows": [
+          "FN-08"
+        ],
+        "card_window": [
+          956.83,
+          962.83
+        ],
+        "lands_on": "VC-0211 952.971-962.606 | Collapse of the walkways occurred under the action of loads that were substantially less than the design loads specified by the Kansas City Building Code. / Less."
+      },
+      {
+        "i": 4,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "FN-08"
+        ],
+        "card_window": [
+          975.799,
+          981.799
+        ],
+        "lands_on": "VC-0216 972.815-984.678 | The inadequacy of the original design for the connection, which was identical for all three walkways. / And the change in hanger rod arrangement during construction, whic"
+      },
+      {
+        "i": 5,
+        "kind": "quote",
+        "ledger_rows": [
+          "FN-01"
+        ],
+        "card_window": [
+          994.768,
+          1000.768
+        ],
+        "lands_on": "VC-0220 991.986-1005.615 | As built, the fourth floor connection had to carry forty point seven. / At forty point seven, with a factor of safety of one point six seven, the code expected that conne"
+      },
+      {
+        "i": 6,
+        "kind": "quote",
+        "ledger_rows": [
+          "FN-02"
+        ],
+        "card_window": [
+          1013.737,
+          1019.737
+        ],
+        "lands_on": "VC-0223 1009.280-1022.144 | Across its test series, the estimated mean ultimate capacities of the fourth floor connections ranged from eighteen point two kips to nineteen point three, with an averag"
+      },
+      {
+        "i": 7,
+        "kind": "compbars",
+        "ledger_rows": [
+          "LD-01",
+          "LD-03"
+        ],
+        "card_window": [
+          1032.706,
+          1038.706
+        ],
+        "lands_on": "VC-0228 1032.283-1038.970 | The maximum load actually acting on a fourth floor connection at the moment of collapse was about twenty-one point four kips."
+      },
+      {
+        "i": 8,
+        "kind": "quote",
+        "ledger_rows": [
+          "LD-08",
+          "LD-09"
+        ],
+        "card_window": [
+          1051.675,
+          1057.675
+        ],
+        "lands_on": "VC-0229 1039.270-1062.786 | The Bureau puts it as a percentage: the maximum load on a fourth floor connection at the time of collapse was only thirty-one percent of the ultimate capacity expected of"
+      },
+      {
+        "i": 9,
+        "kind": "quote",
+        "ledger_rows": [
+          "LD-10"
+        ],
+        "card_window": [
+          1070.645,
+          1076.645
+        ],
+        "lands_on": "VC-0234 1067.658-1083.655 | Eighteen point six against sixty-eight is about twenty-seven percent, and that figure is ours, not theirs. / Measured the other way, against the design load rather than t"
+      },
+      {
+        "i": 10,
+        "kind": "compbars",
+        "ledger_rows": [
+          "LD-09",
+          "LD-10"
+        ],
+        "card_window": [
+          1089.614,
+          1095.614
+        ],
+        "lands_on": "VC-0239 1088.431-1099.598 | The report is just as firm about what did not do it. / Neither the quality of workmanship nor the materials used in the walkway system played a significant role in initia"
+      },
+      {
+        "i": 11,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "LD-12"
+        ],
+        "card_window": [
+          1108.583,
+          1114.583
+        ],
+        "lands_on": "VC-0242 1101.823-1115.033 | Dynamic loads induced by walking or dancing on the walkways would not have been significant in comparison to the static loads. / That is the report's own conclusion, and "
+      },
+      {
+        "i": 12,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "LD-11",
+          "LD-12"
+        ],
+        "card_window": [
+          1127.552,
+          1133.552
+        ],
+        "lands_on": "VC-0245 1119.023-1133.533 | It concluded that a total of sixty-three people represents a credible upper-bound combined occupancy of the second and fourth floor walkways at the time of collapse. / Si"
+      },
+      {
+        "i": 13,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "LD-13"
+        ],
+        "card_window": [
+          1146.521,
+          1152.521
+        ],
+        "lands_on": "VC-0250 1146.250-1153.377 | Each of the six fourth floor connections had a high probability of failure. / Each was a candidate for initiating the collapse."
+      },
+      {
+        "i": 14,
+        "kind": "quote",
+        "ledger_rows": [
+          "FN-07"
+        ],
+        "card_window": [
+          1165.49,
+          1171.49
+        ],
+        "lands_on": "VC-0254 1163.473-1171.689 | Had the change never been made, the connections would still have been illegal. / Sixty percent of code. / But they would have held that night."
+      },
+      {
+        "i": 15,
+        "kind": "quote",
+        "ledger_rows": [
+          "FN-12"
+        ],
+        "card_window": [
+          1184.459,
+          1190.459
+        ],
+        "lands_on": "VC-0259 1183.595-1197.523 | The change is what made it lethal. / There is an odder fact underneath that one. / Because of its greater dead load and design live load, the third floor walkway connecti"
+      },
+      {
+        "i": 16,
+        "kind": "stat",
+        "ledger_rows": [
+          "FN-09",
+          "DS-08"
+        ],
+        "card_window": [
+          1203.428,
+          1209.428
+        ],
+        "lands_on": "VC-0263 1203.603-1210.869 | The walkway that survived was the weakest one. / Redrawing the fourth floor detail is what moved the failure to the fourth floor."
+      },
+      {
+        "i": 17,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "LD-14",
+          "LD-15",
+          "LD-17",
+          "LD-18"
+        ],
+        "card_window": [
+          1222.397,
+          1228.397
+        ],
+        "lands_on": "VC-0267 1219.431-1235.917 | With the change, the report says, the ultimate capacity of the walkways was so significantly reduced that from the day of construction they had only minimal capacity to r"
+      }
+    ],
+    "ACT_5": [
+      {
+        "i": 0,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "DC-21"
+        ],
+        "card_window": [
+          1252.126,
+          1258.126
+        ],
+        "lands_on": "VC-0271 1243.865-1258.772 | In December 1983, the county prosecutor and the United States Attorney announced that they had found insufficient evidence to convict anyone involved in the Hyatt constru"
+      },
+      {
+        "i": 1,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "DC-22"
+        ],
+        "card_window": [
+          1273.613,
+          1279.613
+        ],
+        "lands_on": "VC-0273 1270.936-1291.576 | What happened instead came from a licensing board. / In February 1984, the Missouri Board for Architects, Professional Engineers and Land Surveyors filed a complaint seek"
+      },
+      {
+        "i": 2,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "ID-07"
+        ],
+        "card_window": [
+          1295.101,
+          1301.101
+        ],
+        "lands_on": "VC-0275 1291.876-1300.953 | It went to the state's Administrative Hearing Commission, and the Commission conducted twenty-seven days of hearing. / Its decision runs four hundred and forty-two pages."
+      },
+      {
+        "i": 3,
+        "kind": "stat",
+        "ledger_rows": [
+          "DC-01"
+        ],
+        "card_window": [
+          1316.589,
+          1322.589
+        ],
+        "lands_on": "VC-0279 1316.203-1325.259 | The project engineer was found guilty of gross negligence in the preparation and completion of a structural drawing, and in failing to review shop drawings of the Hyatt p"
+      },
+      {
+        "i": 4,
+        "kind": "quote",
+        "ledger_rows": [
+          "DC-02"
+        ],
+        "card_window": [
+          1338.076,
+          1344.076
+        ],
+        "lands_on": "VC-0280 1325.559-1350.704 | He was further found guilty of misconduct in misrepresenting to the architects the safety of a connection when he was ignorant of that safety, due to a failure to perform"
+      },
+      {
+        "i": 5,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "DC-02",
+          "DC-03"
+        ],
+        "card_window": [
+          1359.564,
+          1365.564
+        ],
+        "lands_on": "VC-0283 1359.803-1368.534 | And he was found to have engaged in unprofessional conduct, in failing and refusing to take responsibility for the entire engineering project."
+      },
+      {
+        "i": 6,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "DC-04",
+          "DC-05"
+        ],
+        "card_window": [
+          1381.051,
+          1387.051
+        ],
+        "lands_on": "VC-0285 1373.128-1391.400 | Asked whether his seal made him responsible for shop drawings prepared under another engineer's direction, he answered: because the shop drawings that were prepared under"
+      },
+      {
+        "i": 7,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "DC-06",
+          "DC-07",
+          "DC-08"
+        ],
+        "card_window": [
+          1402.539,
+          1408.539
+        ],
+        "lands_on": "VC-0287 1391.700-1421.650 | In essence, the court wrote, he placed the responsibility for the improper design of the connections on the fabricator, and took the position that the structural engineer"
+      },
+      {
+        "i": 8,
+        "kind": "quote",
+        "ledger_rows": [
+          "DC-09",
+          "DC-10",
+          "DC-11"
+        ],
+        "card_window": [
+          1424.027,
+          1430.027
+        ],
+        "lands_on": "VC-0290 1421.950-1430.449 | The responsibility for the structural integrity and safety of the walkway connections was the project engineer's, and that responsibility was non-delegable."
+      },
+      {
+        "i": 9,
+        "kind": "quote",
+        "ledger_rows": [
+          "DC-12"
+        ],
+        "card_window": [
+          1445.514,
+          1451.514
+        ],
+        "lands_on": "VC-0292 1437.226-1452.991 | The administrative law judge put the same idea in one line: while the engineer may properly delegate the work of performing engineering design functions, he cannot delega"
+      },
+      {
+        "i": 10,
+        "kind": "quote",
+        "ledger_rows": [
+          "DC-13"
+        ],
+        "card_window": [
+          1467.002,
+          1473.002
+        ],
+        "lands_on": "VC-0295 1460.557-1474.092 | The structural engineer's duty, the court wrote, is to determine that the plans he designs or approves will provide structural safety, because if they do not a strong pro"
+      },
+      {
+        "i": 11,
+        "kind": "quote",
+        "ledger_rows": [
+          "DC-14"
+        ],
+        "card_window": [
+          1488.49,
+          1494.49
+        ],
+        "lands_on": "VC-0299 1480.658-1494.519 | That breach occurred, the court held, at the latest when their design was incorporated into the building with their approval — and they were subject to discipline whether"
+      },
+      {
+        "i": 12,
+        "kind": "quote",
+        "ledger_rows": [
+          "DC-15"
+        ],
+        "card_window": [
+          1509.977,
+          1515.977
+        ],
+        "lands_on": "VC-0302 1504.035-1516.828 | The court agreed: it is the combination of a series of acts and omissions which created the structurally unsound walkways. / And in a footnote of its own, the court conce"
+      },
+      {
+        "i": 13,
+        "kind": "quote",
+        "ledger_rows": [
+          "DC-16",
+          "DC-17"
+        ],
+        "card_window": [
+          1531.465,
+          1537.465
+        ],
+        "lands_on": "VC-0307 1530.892-1537.415 | A fabricator solved a fabricating problem. / An engineer answered a question the way engineers answer questions."
+      },
+      {
+        "i": 14,
+        "kind": "quote",
+        "ledger_rows": [
+          "DC-18"
+        ],
+        "card_window": [
+          1552.952,
+          1558.952
+        ],
+        "lands_on": "VC-0312 1546.046-1559.675 | It carried out the punishment on the twenty-second of January, 1986, four and a half years after the walkway collapse, and the two Hyatt engineers became the first to los"
+      },
+      {
+        "i": 15,
+        "kind": "casetimeline_c",
+        "ledger_rows": [
+          "DC-19",
+          "DC-20",
+          "ID-08",
+          "PR-02",
+          "PR-03"
+        ],
+        "card_window": [
+          1574.44,
+          1580.44
+        ],
+        "lands_on": "VC-0314 1559.975-1580.290 | On the twenty-sixth of January, 1988, the Missouri Court of Appeals reversed one finding — a charge of misconduct arising from the atrium design review, which had not bee"
+      },
+      {
+        "i": 16,
+        "kind": "quote",
+        "ledger_rows": [
+          "PR-01"
+        ],
+        "card_window": [
+          1595.928,
+          1601.928
+        ],
+        "lands_on": "VC-0317 1582.840-1614.090 | The American Society of Civil Engineers had rewritten its code of ethics in 1976, and its first fundamental canon read: engineers shall hold paramount the safety, health "
+      },
+      {
+        "i": 17,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "PR-03",
+          "PR-04",
+          "PR-05"
+        ],
+        "card_window": [
+          1617.415,
+          1623.415
+        ],
+        "lands_on": "VC-0320 1614.390-1623.653 | The committee members concluded unanimously that the senior engineer should be expelled, with no privilege ever to rejoin. / The board of direction did not do that."
+      }
+    ],
+    "ENDING": [
+      {
+        "i": 0,
+        "kind": "compbars",
+        "ledger_rows": [
+          "LD-01",
+          "LD-03",
+          "LD-09",
+          "LD-10"
+        ],
+        "card_window": [
+          1640.667,
+          1646.667
+        ],
+        "lands_on": "VC-0327 1639.631-1647.476 | Forty point seven, as built. / Sixty-eight, as the code required. / Eighteen point six, as the steel could actually give."
+      },
+      {
+        "i": 1,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "LD-04",
+          "LD-20"
+        ],
+        "card_window": [
+          1646.682,
+          1652.682
+        ],
+        "lands_on": "VC-0329 1644.457-1654.413 | Eighteen point six, as the steel could actually give. / Nothing on that walkway got weaker. / One beam was asked to carry two. / The three walkways were removed."
+      },
+      {
+        "i": 2,
+        "kind": "quote",
+        "ledger_rows": [
+          "PR-08"
+        ],
+        "card_window": [
+          1652.698,
+          1658.698
+        ],
+        "lands_on": "VC-0332 1652.416-1661.911 | The three walkways were removed. / In their place stands a single span, supported not by delicate, graceful rods, but standing on stout, sturdy columns."
+      },
+      {
+        "i": 3,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "DC-23"
+        ],
+        "card_window": [
+          1658.713,
+          1664.713
+        ],
+        "lands_on": "VC-0333 1654.713-1667.041 | In their place stands a single span, supported not by delicate, graceful rods, but standing on stout, sturdy columns. / That description was written in the year 2000, and"
+      },
+      {
+        "i": 4,
+        "kind": "numberticker",
+        "ledger_rows": [
+          "ID-02"
+        ],
+        "card_window": [
+          1664.729,
+          1670.729
+        ],
+        "lands_on": "VC-0334 1662.211-1671.753 | That description was written in the year 2000, and this film has not been back to check it. / The record this film is built on ends with a court of appeals in January 198"
+      },
+      {
+        "i": 5,
+        "kind": "lowerthird",
+        "ledger_rows": [
+          "DS-04",
+          "DS-05"
+        ],
+        "card_window": [
+          1670.744,
+          1676.744
+        ],
+        "lands_on": "VC-0335 1667.341-1681.620 | The record this film is built on ends with a court of appeals in January 1988. / What either engineer has done since, where they are, or what they think about it now is n"
+      },
+      {
+        "i": 6,
+        "kind": "kinetic",
+        "ledger_rows": [
+          "DC-12"
+        ],
+        "card_window": [
+          1676.76,
+          1682.76
+        ],
+        "lands_on": "VC-0336 1672.053-1685.728 | What either engineer has done since, where they are, or what they think about it now is not in any document we retrieved, and this film does not guess. / One hundred and "
+      },
+      {
+        "i": 7,
+        "kind": "lowerthird",
+        "ledger_rows": [],
+        "card_window": [
+          1682.775,
+          1688.775
+        ],
+        "lands_on": "SACRIFICIAL SLOT: build_figures overwrites this payload with the AI disclosure."
+      }
+    ]
+  },
+  "_declared_values": {
+    "leadSeconds": "0 -- SPEC v2 row 9, binding from EP66: the hook is VOICED from frame 0, so the body sequence and the narration master both start at 0 and no silent lead is inserted. EP69's script heads its cold open `## HOOK (voice from frame 0)`.",
+    "openingVariant": "'overlay' -- EP69_hyatt_PACKAGING.v001.md section 4 and the script's OP direction: the brand band rises at 0:21.4 over H1 and falls at 0:24.9, and picture and voice do not stop under it. With a zero lead there is nothing for a full-screen opening to sit in.",
+    "captionLeadSeconds": "0.6 -- EP69_hyatt_FILM_BIBLE.v001.md section 12.6 declares this episode's lead as 0.60 s and says in terms that it is a DESTINATION, not an increment. This key read 0.0 until 2026-08-11, on the reasoning that gen_captions_forced.py had already applied 0.60 and a second lead would double-shift; that reasoning was wrong twice over. First, polish_captions_srt.py measures the lead already present in the srt and applies only the difference, so 0.6 here cannot double-shift anything. Second, _finish_episode.sh step [4/7] REBUILDS the srt from narration_index at raw chunk timings before step [4b] polishes it, so whatever gen_captions_forced.py applied is gone by then: with 0.0 declared, EP69 would have burned captions with NO lead at all, against its own bible.",
+    "designedSilence": "30.0 s, declared in scripts/gen_narration_case.py EPISODES['PD-2026-069-hyatt']['designed_silences'] and present in the delivered master: 22.0 s after 'Nothing behind any of them if one let go.' (the H2 assembly opening ACT_2), 5.5 s after 'Five minutes past seven.' (H5 pull-through 3.0 + black 2.5), and 2.5 s at the TURN before NBS Conclusion 1. FILM BIBLE line 144 budgets exactly 22.0 + 2.5 + 2.5 + 3.0. No figure card may be allowed to sit across a hold; see the card_window values.",
+    "hookSeconds": "21.909 -- MEASURED, the `end` of the last HOOK chunk (VC-0007) in 06_audio/narration_index.v001.json. The script designs the cold open at 0:00.0-0:21.0 and voices it from frame 0.",
+    "hookLine": "Verbatim, the closing line of the HOOK section: “On the drawing, it looks like the same thing.” (ledger CH-10)."
+  }
+}

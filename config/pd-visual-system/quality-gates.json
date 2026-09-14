@@ -1,0 +1,39 @@
+{
+  "schema_version": "2.0.0",
+  "preview": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "max_duration_sec": 90
+  },
+  "scene": {
+    "max_static_no_semantic_change_sec": 3.5,
+    "max_consecutive_same_component": 2,
+    "max_asset_reuse_in_test_segment": 2,
+    "max_parallax_displacement_px_1080p": 40,
+    "safe_area_percent": 5,
+    "max_primary_visual_verbs": 1,
+    "max_secondary_visual_verbs": 1
+  },
+  "asset": {
+    "min_width": 1280,
+    "min_height": 720,
+    "warn_upscale_ratio": 1.5,
+    "require_license_decision": true,
+    "require_provenance": true
+  },
+  "audio": {
+    "target_lufs": null,
+    "target_lufs_reason": "既存PDルールと実測を確認するまで固定しない",
+    "max_true_peak_dbtp": -1.0,
+    "detect_silence": true
+  },
+  "release_blockers": [
+    "missing_asset",
+    "license_review_required",
+    "ai_review_pending",
+    "provenance_missing",
+    "disclosure_undecided",
+    "render_corruption"
+  ]
+}

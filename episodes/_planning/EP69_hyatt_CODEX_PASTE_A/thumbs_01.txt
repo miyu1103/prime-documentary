@@ -1,0 +1,74 @@
+EP69 hyatt — 画像発注 **サムネイル**バッチ 1/1（6枚）
+区分: T · THUMBNAIL PLATES  [TSTYLE]  [T001 – T006]
+
+★これは**サムネイル用**です。**動画のカットには一切使いません。**
+　この6枚だけ [STYLE] ではなく **[TSTYLE]** を使います（下記）。**[NEG] は変えません。**
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [TSTYLE] は、次の文言に置き換えてください:
+
+editorial photographic still made to be a video thumbnail, ONE HARD DIRECTIONAL KEY LIGHT from the side, HIGH CONTRAST AND BRIGHT OVERALL EXPOSURE, the subject clearly brighter than everything behind it and cleanly separated from it, shadow only where it defines an edge and never filling the frame, THE ENTIRE UPPER 40 PERCENT OF THE FRAME IS ONE UNBROKEN UNIFORM FIELD - plain wall, plain sky or plain out-of-focus darkness, with no object, no edge, no horizon and no detail crossing it anywhere - and the whole subject sits inside the lower 60 percent with the bottom third the brightest part of the picture, the American Midwest between 1978 and 1988, ultra-detailed, photoreal, 4K, 16:9, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+★この6枚は**サムネイル専用**です。本編カットの [STYLE]（低コントラスト）は使いません。
+　硬い一灯・高コントラスト・明るい露出。**画面の上40%は何も無い一様な面**にしてください。
+　見出し文字を焼き込む場所です。被写体は下60%に収め、下1/3を一番明るくします。
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, dimension callouts, drawing title block, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsed building, collapsing structure, rubble, debris, wreckage, ruined interior, rescue worker, ambulance, stretcher, injured person, blood, body, casualty, funeral, firefighter, hospital, crowded hotel lobby, packed function room, crowd of people indoors, courtroom interior, gavel, judge's bench, scales of justice, hourglass, a handshake, police officer, uniform, handcuffs, prison bars, mobile phone, smartphone, laptop, flat-panel monitor, LED work lamp, cordless power tool, hi-vis safety vest, modern safety helmet, CAD screen, car built after 1990, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。**サムネイルでも [NEG] は変えません。**
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・寸法・手書き・署名・図面のタイトル欄を一切描かない
+・**崩落・瓦礫・救助・負傷者・遺体・満員のロビーを一切描かない**
+・**1978〜1988年のアメリカ中西部。**携帯電話・ノートPC・薄型モニタ・LED投光器・
+　充電式電動工具・蛍光色の安全ベスト・1990年以降の車を描かない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+・**「The same …」で始まるプロンプト（H004 / H051 / H053 / H054）は、直前の1枚と
+　同じ部屋・同じ画角・同じレンズでなければなりません。**別々に生成すると必ずずれます。
+　ずれた場合は作り直さず、元の1枚（H003 / H048 / H049）を色調整だけで作り直してください。
+
+★上の絶対条件は本編バッチから一字も変えずに引き写したものです。そこに出てくる
+　プロンプト ID は本編のもので、このファイルには入っていません。
+★このファイルの中では T001+T002 / T003+T004 / T005+T006 がそれぞれ同一シーンの2カットです。
+　各ペアは同じ被写体・同じ場所で、アングルと距離だけを変えてください。
+　ただし各プロンプトは単独で完結して書いてあります。
+
+──────── プロンプト ────────
+
+■ T001.png
+TWO LENGTHS OF THREADED STEEL ROD about an inch and a quarter across lying side by side on a dark oiled workbench, ONE LONG AND ONE ROUGHLY HALF ITS LENGTH, with a plain heavy hexagonal steel nut and one flat round steel washer lying beside them, photographed from just above the bench at a shallow angle SO ALL OF IT SITS IN THE LOWER 60 PERCENT OF THE FRAME. One hard directional key light from the left runs along the thread so every turn stands out and the steel is markedly brighter than anything behind it. The bright bare bench top runs across the bottom third and is the brightest part of the picture. THE ENTIRE UPPER 40 PERCENT OF THE FRAME IS ONE UNBROKEN FIELD of plain dark out-of-focus workshop with no object, no edge and no detail crossing it anywhere Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], stamped markings on the rod, size markings, grade markings, brand name, dimension callouts, hand, person in frame, rust, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T002.png
+The same two lengths of threaded steel rod, one long and one roughly half its length, lying side by side on the same dark oiled bench with the same plain nut and flat washer beside them, now closer and from a lower angle almost level with the bench top so the near ends of the rods read large across the lower third of the frame and the thread catches one hard key light from the left as a row of bright specular ridges. High contrast, bright exposure, the bench top the brightest thing in the picture. THE ENTIRE UPPER 40 PERCENT IS ONE UNBROKEN FIELD of plain dark out-of-focus workshop with nothing in it at all Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], stamped markings on the rod, size markings, grade markings, brand name, dimension callouts, hand, person in frame, rust, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T003.png
+A SINGLE THREADED STEEL ROD about an inch and a quarter across PASSING DOWN THROUGH A ROUND HOLE IN THE FLAT WEB OF A HOLLOW RECTANGULAR STEEL BOX SECTION, with a flat round washer and a heavy hexagonal nut bearing up against the underside of the web, photographed close and slightly from below SO THE WHOLE ASSEMBLY SITS IN THE LOWER 60 PERCENT OF THE FRAME. One hard directional shop light from the left makes the machined steel markedly brighter than anything behind it and lays a crisp shadow under the nut; the bright lower edge of the box section runs across the bottom third and is the brightest part of the picture. Clean bright steel, no rust, no damage, no deformation. THE ENTIRE UPPER 40 PERCENT IS ONE UNBROKEN FIELD of plain dark out-of-focus shop with nothing crossing it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], stamped markings, grade markings, dimension callouts, brand name, rust, bent metal, torn steel, hand, person in frame, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T004.png
+The same single threaded steel rod passing down through the same round hole in the flat web of the same hollow rectangular steel box section, the same flat washer and heavy hexagonal nut bearing up against the underside, now tighter and squarer on so the washer and the nut fill the lower half of the frame and the machined faces read large. One hard key light from the left, high contrast, bright exposure, the bright underside of the section running across the bottom third. Clean bright steel, no rust, no deformation. THE ENTIRE UPPER 40 PERCENT IS ONE UNBROKEN FIELD of plain dark out-of-focus shop Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], stamped markings, grade markings, dimension callouts, brand name, rust, bent metal, torn steel, hand, person in frame, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T005.png
+A large tilted drafting board with a big sheet of plain vellum pinned flat across it and a long parallel rule lying square on the sheet, one plain pencil resting on the bottom edge of the board and a wooden stool pushed back from it and empty, photographed from standing height at a shallow angle SO THE BOARD AND THE STOOL SIT IN THE LOWER 60 PERCENT OF THE FRAME. THE SHEET IS COMPLETELY BLANK: an unbroken field of pale vellum with no line, no drawing, no ruling, no figure and no mark of any kind on it. ONE HARD DIRECTIONAL KEY LIGHT from the left makes the sheet the brightest object in the picture and lays a crisp shadow from the parallel rule across it; the bottom edge of the board is bright and is the brightest part of the frame. THE ENTIRE UPPER 40 PERCENT OF THE FRAME IS ONE UNBROKEN FIELD of plain dark out-of-focus drawing office with no object, no edge and no detail crossing it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], lines on the sheet, drawing, dimension callouts, drawing title block, figures, handwriting, printed grid, stamps, hand, person in frame, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+■ T006.png
+The same tilted drafting board with the same completely blank sheet of pale vellum pinned across it and the same long parallel rule lying square on it, now closer and from a lower angle almost level with the board so the near edge of the board makes one strong bright horizontal across the lower third of the frame and the blank sheet rises away from it, one plain pencil in the near corner. THE SHEET IS COMPLETELY BLANK — no line, no drawing, no figure, no mark. One hard key light from the left, high contrast, bright exposure, the sheet markedly brighter than everything behind it. THE ENTIRE UPPER 40 PERCENT IS ONE UNBROKEN FIELD of plain dark out-of-focus drawing office with nothing in it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [TSTYLE] Avoid: [NEG], lines on the sheet, drawing, dimension callouts, drawing title block, figures, handwriting, printed grid, stamps, hand, person in frame, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（このファイルは T001.png 〜 T006.png）で
+保存してください。**他のバッチの ID を使わないこと。**
+保存先 H:\pd-media\assets\ai\hyatt\
+長辺 3840px 以上・16:9・PNG。

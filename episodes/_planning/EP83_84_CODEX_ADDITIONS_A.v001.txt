@@ -1,0 +1,24 @@
+EP83・EP84 追加生成（2026-08-25）
+
+**EP83 max737 は追加なし** — 188枚すべて合格。
+  機体は全機が完全な無地（尾翼に記号も色もなし）。人物は全部後ろ姿で顔は写っていない。
+  出発案内板・警報パネル・組織図・グラフはすべて抽象パターンで、読める文字はゼロ。
+
+**EP84 threemile は下記1枚だけ。** 他の185枚は合格です。
+  1979年のアナログ制御室として非常に良い出来でした（背面照明の警報タイル、丸い計器、
+  ペン式記録計、連続紙プリンタ、緑文字のCRT）。冷却塔はすべて白い水蒸気で、黒い煙はゼロ。
+
+※ EP85 katrina は別途再生成中のため、この発注書には含めていません。
+
+共通指定：1プロンプト＝1枚。ファイル名は指定どおり。16:9（横÷縦=1.778ちょうど・1672x941可）。
+文字は一切焼き込まない。
+
+---- threemile: 1 plate(s) -- save to E:\pd-media\05_visuals\threemile\img\
+
+[STYLE] (prepend to every prompt)
+  cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+1) T157.png  [P: person present, face must not be visible]
+   A farmer seen from behind at a field gate in bright daylight
+   FIX: **アメリカ・ペンシルベニア州の農地**にしてください——木の柵かワイヤーフェンス、耕された畑となだらかな丘、遠くに納屋。初回納品は**石積みの塀と生垣で囲まれた緑の丘（英国の風景）**で、中部ペンシルベニアには存在しません。260pxでは「柵の向こうの畑」に見えていました。
+

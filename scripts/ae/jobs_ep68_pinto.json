@@ -1,0 +1,111 @@
+[
+  {
+    "id": "ep68_kin_1530",
+    "style": "number",
+    "seconds": 2.4,
+    "big": "$15.30",
+    "bigSize": 300,
+    "label": "PER CAR. THE COURT'S PINTO FIGURE.",
+    "labelSize": 66,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_1",
+    "_ledger": "CAR-06",
+    "_line": "Fifteen dollars and thirty cents a car, the court wrote, would have made the tank safe in a rear-end collision at thirty-four to thirty-eight miles an hour.",
+    "_why": "This number has to be on screen BEFORE the famous eleven dollars arrives in ACT_4, or the audience merges them. It is the appellate court's own per-car figure for a package of Pinto rear-impact fixes, and it is the mechanism against quarantine 17. Landing it in ACT_1 and reprising it at 23:20 is the whole defence against the episode's most inviting arithmetic error.",
+    "_note": "EP68 pinto -- After Effects kinetic beats, SEVEN. The 2026-08-04 standing approval names one or two beats mid-film on the numbers and the turns; the owner's 2026-08-11 instruction is AEはガッツリ使ってほしい・とにかく紙芝居をやめたい. This record is unusual in that the ARGUMENT IS ARITHMETIC: the film's entire corrective rests on five pairs of numbers that folklore has merged ($11 vs $15.30; $200,000 as NHTSA's vs as Ford's; 12.5 million vehicles vs one car line; 500-900 vs 27; $125,000,000 vs $3,500,000). Every one of those merges is a quarantine entry in the facts ledger, and a card on screen is the cheapest mechanism that stops it. Seven beats over 29.5 minutes is one every ~4.2 minutes, all of them between ACT_1 and ACT_4, none in the HOOK and none in the ENDING. Recorded as an approved_deviation in episode_spec.v001.json; needs an owner line before the build. Render with scripts/ae/render_beats.sh scripts/ae/jobs_ep68_pinto.json; install each VP9-alpha webm at remotion/public/pinto/ae/<id>.webm and place it as a cut in pinto_film.json at the timestamp named in FILM_BIBLE 12.5. TWO TRAPS, both measured, both written down rather than rediscovered: (1) scripts/ae/kinetic_beat.jsx line 32 hardcodes var W = 1080, H = 1920 -- a Short's portrait frame. Rendered as-is these overlays come out portrait and pillarbox inside a 1920x1080 film. The canvas field on every job below is the value the jsx must read; teaching it to read that field is a one-line edit through scripts/pd_edit.py and MUST land before render_beats.sh is run for a long-form. (2) EP66's jobs file carried a style:'note' _meta object at the head of the array; kinetic_beat.jsx builds a comp for EVERY array element, so that object became a comp with no text, the build logged FAILED and render_beats.sh refused to render. This file therefore has NO note object -- the provenance lives in the _section/_ledger/_line/_why/_note fields on real beats, which the jsx ignores."
+  },
+  {
+    "id": "ep68_kin_jury_remittitur",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "$125,000,000  THE JURY",
+      "$3,500,000  AFTER REMITTITUR",
+      "BOTH AFFIRMED ON APPEAL"
+    ],
+    "bigSize": 108,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_2",
+    "_ledger": "MN-01, MN-03, MN-05",
+    "_line": "The jury awarded a hundred and twenty-five million dollars in punitive damages. The trial judge required all but three and a half million of it to be given back as the price of not ordering a new trial. The Court of Appeal affirmed the verdict, the reduction, and the refusal to overturn it.",
+    "_why": "Quarantine 6 forbids any sentence in which the jury's number and the reduced number are not both present, and forbids $125 million standing alone as what Ford paid. The single most repeated false sentence about this case is 'Ford paid $125 million.' Three lines on screen, together, is the mechanism. The third line exists because a viewer who sees only the reduction will conclude the appellate court rescued Ford, and it did not: it changed no number."
+  },
+  {
+    "id": "ep68_kin_500_to_900",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "500 BURN DEATHS",
+      "\"COULD BE AS HIGH AS 900\"",
+      "NO SOURCE GIVEN IN THE ARTICLE"
+    ],
+    "bigSize": 112,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_3",
+    "_ledger": "PM-02",
+    "_line": "By conservative estimates, the article said, Pinto crashes have caused five hundred burn deaths to people who would not have been seriously injured if the car had not burst into flames. The figure could be as high as nine hundred.",
+    "_why": "This is the number the whole country remembers, and the third line is the entire point of putting it on a card: the article gives no source for it in the text retrieved. The beat is deliberately placed 2 minutes 40 seconds before ep68_kin_38_27_24 so the audience is holding this figure when the government's own count arrives. The two cards use the same type, the same position and the same duration, so the only thing that changes between them is the number."
+  },
+  {
+    "id": "ep68_kin_38_27_24",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "38 CASES",
+      "27 FATALITIES",
+      "NHTSA, INVESTIGATION REPORT C7-38, MAY 1978"
+    ],
+    "bigSize": 108,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_3",
+    "_ledger": "NH2-05",
+    "_line": "In total, the agency wrote, NHTSA is aware of thirty-eight cases in which rear-end collisions of Pinto vehicles have resulted in fuel tank damage, fuel system leakage and-or ensuing fire. These cases have resulted in a total of twenty-seven fatalities sustained by Pinto occupants, of which one is reported to have resulted from impact injuries.",
+    "_why": "The film's central corrective, and as of this pass it is PRIMARY -- NHTSA's own Office of Defects Investigation report, page 4, not a law professor describing it. The third line is the citation and it stays on screen for the full 3.2 seconds, because the difference between this card and the previous one is not rhetoric, it is provenance. Quarantine 1 permits a death toll ONLY as this number, only attributed, and only with its caveat; the caveat is spoken over the card, not printed on it."
+  },
+  {
+    "id": "ep68_kin_11_million",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "11,000,000 CARS",
+      "1,500,000 LIGHT TRUCKS",
+      "THE WORD PINTO IS NOT IN THE TABLE"
+    ],
+    "bigSize": 112,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_4",
+    "_ledger": "DOC-07, DOC-08",
+    "_line": "Sales: eleven million cars, one and a half million light trucks. Unit cost: eleven dollars per car, eleven dollars per truck.",
+    "_why": "The scale beat, and the one that does the most work. The table is the whole American market for a model year, not a Ford model line; the first two lines are the document's own words and the third is a fact about the document that a viewer can check by looking at the card. This is the turn of the film rendered as arithmetic."
+  },
+  {
+    "id": "ep68_kin_200000",
+    "style": "number",
+    "seconds": 2.4,
+    "big": "$200,000",
+    "bigSize": 280,
+    "label": "NHTSA'S PUBLISHED FIGURE, NOT FORD'S",
+    "labelSize": 60,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_4",
+    "_ledger": "DOC-10",
+    "_line": "The NHTSA has calculated a value of $200,000 for each fatality.",
+    "_why": "Quarantine 4: the film may not say Ford valued a life at $200,000. The memo attributes the figure to NHTSA twice and states in terms that its use does not signify that Ford accepts or concurs in the values. The label is worded 'published figure' and not 'NHTSA's value of a life' on purpose -- Schwartz retracts the stronger claim at 1024, finding that NHTSA was not relying on that figure in standard-setting even while publishing it, and that Ford can fairly be faulted for ignoring NHTSA's own explanation that $200,000 was a minimum and not a maximum. The card must not overrun the correction it exists to make."
+  },
+  {
+    "id": "ep68_kin_11_vs_1530",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "$11  ROLLOVER, WHOLE INDUSTRY, 1973",
+      "$15.30  REAR IMPACT, THE PINTO, 1972",
+      "TWO DIFFERENT DOCUMENTS"
+    ],
+    "bigSize": 96,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_4",
+    "_ledger": "DOC-08, CAR-06",
+    "_line": "Eleven dollars is a rollover-compliance figure for every passenger car and light truck sold in America. Fifteen dollars and thirty cents is the court's figure for a package of rear-impact fixes on one car. They are not the same number and they never were.",
+    "_why": "Quarantine 17, the episode's single most inviting arithmetic error, because both are small dollar figures per car and every retelling for fifty years has merged them. This beat is the reprise of ep68_kin_1530 from ACT_1 and it is deliberately the last AE beat in the film: by 23:20 the audience has seen each number alone, and the card only has to put them side by side."
+  }
+]

@@ -24,14 +24,14 @@ except Exception:
 
 REPO        = Path(__file__).resolve().parents[1]
 REMOTION    = REPO / "remotion"
-MUSIC_DIR   = Path(r"H:\pd-media\downloads\music")
-EDIT_DIR    = Path(r"H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample")
+MUSIC_DIR   = Path(r"E:\pd-media\downloads\music")
+EDIT_DIR    = Path(r"E:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample")
 FFMPEG      = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 FFPROBE     = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"
 
 OPENING_MP4 = REMOTION / "out" / "opening.mp4"
 ANIMATIC_MP4 = REMOTION / "out" / "animatic_motion.mp4"
-NARR_MP3    = Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\master\vc_master_v001.mp3")
+NARR_MP3    = Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_voice\master\vc_master_v001.mp3")
 SRT_IN      = EDIT_DIR / "subs_vc_v001.srt"
 OUT_MP4     = EDIT_DIR / "sample_v011.mp4"
 

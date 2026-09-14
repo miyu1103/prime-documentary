@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 291,
+  "episode_id": "PD-2026-070-wronghouse",
+  "slug": "wronghouse",
+  "loop": true,
+  "loop_join": "The last beat p14 is short291_14.png (plate W151, the same empty courtroom -- unoccupied jury box, silent table mic -- already shown at p02), rewound under the FULL CASE card and held to the final frame. The beat directly before it, p13, is short291_13.png -- the identical plate W150 already shown at frame 0, a wall of black document cubbies stuffed with paper. So the picture returns to its own opening image one beat before the card takes over, and frame 0 is that same wall of files, closing the loop on the identical picture.",
+  "second_watch_detail": "The CTA-card plate (short291_14.png / W151) is an empty courtroom, the jury box unoccupied and the table microphone silent; on the first pass it reads as a standard legal-establishing shot, but once L3 and L6-L7 have said outright that not one of the two hundred and twenty-three entries is a trial and no jury has heard a word of it in eight years and nine months, that same empty box is the entire point -- it has been sitting empty the whole time.",
+  "funnel_question_left_for_longform": "They won at the Supreme Court unanimously and still have no trial. What is in the way?",
+  "funnel_long_title": "The FBI Raided the Wrong House.",
+  "funnel_long_video_id": "1nxecNneBVk",
+  "description_line_1": "▶ FULL CASE: The FBI Raided the Wrong House. | https://youtu.be/1nxecNneBVk",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "The FBI Raided the Wrong House.",
+    "ctaLongThumbSrc": "shorts/short291/short291_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "They won at the Supreme Court unanimously and still have no trial. What is in the way? The full case is here: https://youtu.be/1nxecNneBVk",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that is already finished and rendered locally (remotion/public/shorts/short291, short291_yt.mp4) but not yet uploaded to YouTube, so funnel_long_video_id points at the already-live long-form (1nxecNneBVk, scheduled 2026-08-24, title verified against episodes/PD-2026-070-wronghouse/09_package/youtube_schedule_result.v001.json) while every short-side field -- loop join, second-watch detail, CTA block -- is read off remotion/src/data/short291.ts and the plates it cites in remotion/public/shorts/short291. Layer 4, the Studio related-video setting, has a placeholder row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but cannot be performed until the short itself is uploaded and receives a real video id."
+}

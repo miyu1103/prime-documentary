@@ -6,7 +6,7 @@ try:
 except Exception:
     pass
 
-NARR = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
+NARR = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
 OUT  = NARR / "vc_s001_s023_v001.mp3"
 
 # Individual per-scene files (S001 and S002 map to hook/opening in older scheme)

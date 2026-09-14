@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-035-hinders",
+  "topic_id": "TOP-20260707-035",
+  "slug": "hinders",
+  "title_working": "Can the IRS Empty Your Bank Account for Following the Bank's Own Rule?",
+  "state": "script_verified",
+  "risk_class": "R2",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 20,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-035-hinders-topic",
+      "artifact_type": "topic_brief",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-035-hinders/00_topic/topic.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:6c319f9a393da14fcd3c756177b21316e0a3a9ded3a82955cf2f241b28f4c0d4"
+    },
+    {
+      "artifact_id": "PD-2026-035-hinders-sources",
+      "artifact_type": "sources",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-035-hinders/01_research/sources.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:8d738a04765a06f27b46b5bb8523b028579d4f3b3ec984670dd0629d93c31baa"
+    },
+    {
+      "artifact_id": "PD-2026-035-hinders-claims",
+      "artifact_type": "claims",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-035-hinders/01_research/claims.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:536a1525edde2cd786484d2a1aa60672a7b1e555891244272bf2a923bc041261"
+    },
+    {
+      "artifact_id": "PD-2026-035-hinders-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-035-hinders/03_script/script.annotated.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:731a6e1343ca8b5aa372b9fbcda052da9351b773f269fadb4267011473ee2b8f"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [],
+  "blockers": [],
+  "created_at": "2026-07-07T00:00:00+09:00",
+  "updated_at": "2026-07-08T00:50:59.433747+00:00"
+}

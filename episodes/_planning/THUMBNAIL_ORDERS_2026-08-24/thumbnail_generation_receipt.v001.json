@@ -1,0 +1,141 @@
+{
+  "schema_version": "thumbnail_generation_receipt.v001",
+  "generated_at": "2026-08-24T05:07:45.7791035+09:00",
+  "scope": {
+    "episodes": ["EP71", "EP72", "EP73", "EP75", "EP76"],
+    "concepts_per_episode": 6,
+    "expected_images": 30,
+    "generated_images": 30,
+    "attempt_policy": "one_prompt_one_image_one_attempt",
+    "retries": 0
+  },
+  "source_orders": [
+    {"file": "EP71_oroville_thumbnails.txt", "sha256": "A5C3CB7AE8E32507968D71356C3095240EAC056F9C986346461B689DB9E91137"},
+    {"file": "EP72_lacmegantic_thumbnails.txt", "sha256": "E26DC64C2659DE8A10943C309AFF30009DC0B279CAD3BF7A20D9545F70276204"},
+    {"file": "EP73_uri_thumbnails.txt", "sha256": "32657D3BE02452443C0E3B4D96BBC11E017DCAB5D1E1C55BAA9C10B394E1A379"},
+    {"file": "EP75_lahaina_thumbnails.txt", "sha256": "96ECBECEB1A2BCB452AF90C3D9DF90841D36E4E78F72058DDFBFC95D5AECBB79"},
+    {"file": "EP76_morandi_thumbnails.txt", "sha256": "8DB7442A2DF70E00D8ED548FDE22C382ED5E7BCD9990AA705D6827FDBDD8138C"}
+  ],
+  "generation": {
+    "provider": "codex_builtin_image_gen",
+    "native_dimensions": "1672x941",
+    "cost": "not_reported_by_provider",
+    "external_publish_or_upload": false
+  },
+  "upscale": {
+    "script": "scripts/upscale_thumbnail_candidates_4k_esrgan_v001.py",
+    "script_sha256": "C20FF31DE5A7C6D7D2612BB6B3CFBE94BABF80C84126D8F92FAA8BA497EA0B2D",
+    "model": "RealESRGAN_x4plus",
+    "intermediate_dimensions": "6688x3764",
+    "final_resize": "LANCZOS",
+    "final_dimensions": "3840x2160",
+    "pixel_format": "RGB"
+  },
+  "technical_qc": {
+    "passed": true,
+    "files_checked": 30,
+    "dimension_failures": [],
+    "cross_set_exact_duplicate_groups": [],
+    "total_4k_bytes": 252873666
+  },
+  "visual_qc": {
+    "status": "owner_review_required",
+    "clear_in_first_pass": 22,
+    "review_required": 5,
+    "reject_recommended": 3,
+    "exceptions": [
+      {"id": "EP71-T02", "status": "review_required", "reason": "Small label-like or brand-like marks appear on packaging and hat."},
+      {"id": "EP72-T04", "status": "review_required", "reason": "The empty chair is smaller than the requested dominant subject scale."},
+      {"id": "EP75-T01", "status": "review_required", "reason": "The person is smaller than the requested face-led CTR composition and the location reads somewhat generic."},
+      {"id": "EP75-T03", "status": "review_required", "reason": "Street architecture reads more mainland or generic urban than clearly Lahaina."},
+      {"id": "EP76-T01", "status": "review_required", "reason": "People and faces are small relative to the requested face-led CTR composition."},
+      {"id": "EP73-T02", "status": "reject_recommended", "reason": "A visible water stream conflicts with the instruction that the tap is not running."},
+      {"id": "EP73-T03", "status": "reject_recommended", "reason": "Dashboard and visor contain small digit-like or label-like marks."},
+      {"id": "EP76-T03", "status": "reject_recommended", "reason": "The image shows a normal side guardrail rather than a roadway ending at a full closure line."}
+    ],
+    "prohibited_content_observed": []
+  },
+  "sets": [
+    {
+      "episode": "EP71",
+      "slug": "oroville",
+      "raw_dir": "E:\\pd-media\\assets\\ai\\oroville\\_thumbnail_candidates_20260824_raw",
+      "final_dir": "E:\\pd-media\\assets\\ai\\oroville\\_thumbnail_candidates_20260824_4k",
+      "contact_sheet": {"file": "contact_sheet.v001.jpg", "sha256": "8CF1DAF5E3E8EC2D891F9C34786F46F87FF706473E2C270CF72FA5566294BF61"},
+      "images": {
+        "T01": "50FCB59E2FC9D79D94380FE913C4F7F2A7E1C3878F0991427005AE6986FD12F1",
+        "T02": "A0AE45CDE04052E8B84C7B8AFFD1EE105D94B7D2A495DEBA5606D0D63DE90D76",
+        "T03": "626D0FA0C0523C7A80D87B2779C67693893FCB0163374C23A6D318022A8693D5",
+        "T04": "464BA856A786D6F5C4849E7A15DC6EEAC7D3F4BEB8A53D6E4BA312A6739D08BE",
+        "T05": "4205F52EB97EF3125E8157D406FF7D3FA54BB12F4B0D6C7FF7F4513B1C13F407",
+        "T06": "DFF5713A2D8A8C246DEBE2A323E34F059639BA6DE83C963A6DCF1D9A6C1EF667"
+      }
+    },
+    {
+      "episode": "EP72",
+      "slug": "lacmegantic",
+      "raw_dir": "E:\\pd-media\\assets\\ai\\lacmegantic\\_thumbnail_candidates_20260824_raw",
+      "final_dir": "E:\\pd-media\\assets\\ai\\lacmegantic\\_thumbnail_candidates_20260824_4k",
+      "contact_sheet": {"file": "contact_sheet.v001.jpg", "sha256": "BD1A5DD560484CD4FF20B705A703803FBDF322CCF60CE70E10AE7AFB963AC442"},
+      "images": {
+        "T01": "DA3C834AF66F658535ABA50204DE59B76B8E9D1E24808C6FDFC5BE5CA9F10420",
+        "T02": "7AF76DEBBFC2C901A34116736DFC85234B00CCD2FB608DAF87F21551459205E0",
+        "T03": "B3F76811AFEF2574B7EF3FB67D40B454B4A647CC326CC1FFD7D513D95A3B7540",
+        "T04": "20D7BBC8784CD65191DF1BD5CFA1ABEF0858861E2DFC250B1AC5CBE7CAC31890",
+        "T05": "9A3E1672299E5ACF8E41A627C232DEC9C4C153CA06F213FF01F03C0D9452E29B",
+        "T06": "884C5954F7B3DD6BD58A52B104C7912F5B8DE59F633D7FAB20BF962F5E1F887A"
+      }
+    },
+    {
+      "episode": "EP73",
+      "slug": "uri",
+      "raw_dir": "E:\\pd-media\\assets\\ai\\uri\\_thumbnail_candidates_20260824_raw",
+      "final_dir": "E:\\pd-media\\assets\\ai\\uri\\_thumbnail_candidates_20260824_4k",
+      "contact_sheet": {"file": "contact_sheet.v001.jpg", "sha256": "52D5161256E63885E605EE257958623F0044DAEE2A02FAD05ABA492FFC40B461"},
+      "images": {
+        "T01": "CC723B67FEA60B33338607984C26523B10C47D1A5D39A0CD23F9935429623B14",
+        "T02": "D4E0BDF997AFE28A1C3B52A1E507872F273A9B2032751F502061F8AB98306DA1",
+        "T03": "6D03DE4D1D60320B295CF3E0EC3B2FFC5500250A0688656CF40D758508272236",
+        "T04": "17720CC4D696530444DECDA53A38362B4AAFDA1F00DBD39EB9C4B53BF80BAE9B",
+        "T05": "6DEFE65D950BB07A8B6A78B8B55BF3B48973BF6B156BA215BF00870C249CC762",
+        "T06": "E906A6252C5531E8E1BC73490F9DFA6A2D8855121F42B7EC35863A4A1307AB35"
+      }
+    },
+    {
+      "episode": "EP75",
+      "slug": "lahaina",
+      "raw_dir": "E:\\pd-media\\assets\\ai\\lahaina\\_thumbnail_candidates_20260824_raw",
+      "final_dir": "E:\\pd-media\\assets\\ai\\lahaina\\_thumbnail_candidates_20260824_4k",
+      "contact_sheet": {"file": "contact_sheet.v001.jpg", "sha256": "EE06CB7004512A4956D4E150A3CC167F72AF84C71839F685F8D3E56DE073C6DB"},
+      "images": {
+        "T01": "13007F3D550519146A74ABAAE30A7A0A64E908388D968E7757B0C2467BEB2112",
+        "T02": "CFF48502713D434936E25AA20FC53181C71E2B62E31F93E9FAB2AB814B28F902",
+        "T03": "19F9AE622D636942CCB96CD916D96F2F47B69B543A45F12580BE9073427B020F",
+        "T04": "2A10045982F45ABCEA5C105AFCC1F2BEA9AA97F9E7E3275A2A82E0A7B4C810B0",
+        "T05": "DAB0AA8EF6641378DE7A832CDA9FED9987B81376B95D25044E91BA3A70E07281",
+        "T06": "89DF2C223C4389BBFE231A7E3FE5A4236E54B219B68C124B80447A9FAD53B64E"
+      }
+    },
+    {
+      "episode": "EP76",
+      "slug": "morandi",
+      "raw_dir": "E:\\pd-media\\assets\\ai\\morandi\\_thumbnail_candidates_20260824_raw",
+      "final_dir": "E:\\pd-media\\assets\\ai\\morandi\\_thumbnail_candidates_20260824_4k",
+      "contact_sheet": {"file": "contact_sheet.v001.jpg", "sha256": "AAA8B06529E825D1BDD34ABD4F0B82EFF32B722EA76FC853CE65E34B796E9564"},
+      "images": {
+        "T01": "81656A4C9A5B16266D0B9F2A54B167E103AA2C2A526C67270EA969458CAD82B8",
+        "T02": "D81A8C874CA3CCF423A3E71863107E8FA13500ABBE19EC013AC997B2967527BE",
+        "T03": "0690E112CCA4565478B2DB0D78EA1AEF60895E81713120A65617F7BDC0F62B72",
+        "T04": "6F2F3BA9F49C1DAA9E34984B97B889067D088E220C800F99C7F2085654CCD28A",
+        "T05": "68E5A6E97D595BF8BB6F8048B3E9483AAC38E05856A3919FAA401688F0151096",
+        "T06": "E8D57FEA8F577F3D1C0919B25AD532ACEDDC0582A854BD23D99DACAF3ECC44BF"
+      }
+    }
+  ],
+  "release_state": {
+    "selected_assets": [],
+    "manifest_updated": false,
+    "published": false,
+    "next_gate": "owner_visual_selection"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 276,
+  "episode_id": "PD-2026-067-ramirez",
+  "slug": "ramirez",
+  "loop": true,
+  "loop_join": "The CTA card is p12 (short276_12.png, isCta:true, rewind:true) under L8; it rewinds the plate sequence under the FULL CASE overlay and holds on the final frame, landing back on p01 (short276_01.png) -- the same 'No concrete harm' opening frame -- so the loop closes on the identical picture.",
+  "second_watch_detail": "The plates under L1 (p01/p02) carry the bare ruling line 'No concrete harm, no standing' as the hook; on a first watch it reads as a neutral legal headline, but once L6-L8 show the same company could not confirm a single alert it sold was accurate, that opening line reads as the outcome for a company that never checked its own product.",
+  "funnel_question_left_for_longform": "The company could not confirm that a single alert it sold was accurate. Why was that not the question?",
+  "funnel_long_title": "A Salesman Said His Name Was on a Terrorist List.",
+  "funnel_long_video_id": "DgpF4UxcsH4",
+  "description_line_1": "▶ FULL CASE: A Salesman Said His Name Was on a Terrorist List. | https://youtu.be/DgpF4UxcsH4",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Salesman Said His Name...",
+    "ctaLongThumbSrc": "shorts/short276/short276_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "The company could not confirm that a single alert it sold was accurate. Why was that not the question? The full case is here: https://youtu.be/DgpF4UxcsH4",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for short276, a Short that is already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the CUTS/beat structure, ctaHeadline/ctaLongTitle/ctaLongThumbSrc and kineticBeats from remotion/src/data/short276.ts, the standing question from that file's header (also present verbatim in episodes/_planning/short_designs/PD-2026-067-ramirez.design.v001.json), the spoken lines from short276_lines.v001.json (checked so no content word of the standing question -- 'could', 'confirm', 'single', 'alert', 'sold', 'accurate', 'question' -- is fully covered by them; only 'company' overlaps), and the long-form id/title from youtube_schedule_result.v001.json and youtube_meta.v001.json for the live video DgpF4UxcsH4. shorts/short276/short276_ctathumb.jpg is not present in this checkout, matching short194's reference record, so it appears to live outside this repo rather than being a defect specific to this short. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a placeholder row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet because short276 is not yet uploaded."
+}

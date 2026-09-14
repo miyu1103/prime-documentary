@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-022-milken",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 4637,
+    "spans": 76,
+    "est_duration_minutes_at_150wpm": 30.9,
+    "est_duration_minutes_at_173wpm_actual_voice": 26.8,
+    "target_profile": "mid (30:00; narration band 24.0-32.4 @150wpm)",
+    "readability_fk_grade": 6.9,
+    "em_dashes_per_1000_words": 0.0,
+    "and_but_because_so_sentence_start_pct": 8.3,
+    "rhetorical_command_count": 2,
+    "to_his_defenders_critics_frame_count": 2,
+    "banned_filler": 0,
+    "claim_link_consistency": "pass",
+    "risk_class": "R3"
+  },
+  "status": "pass",
+  "findings": [
+    "Voice polish complete (>=3 passes): em-dashes 0/1000 (<=6), And/But/Because/So sentence-starts 8.3% (<=12%), rhetorical commands 2 (<=3), 'to his defenders/critics' frames 2 (<=2), 0 banned filler, FK grade 6.9 (<=9.5). Reads as human/spoken, not AI-written. The single myth-busting line negates the popular misconception and avoids any forbidden 'convicted of insider trading/racketeering' collocation.",
+    "R3 wording locks held in narration: 'pleaded guilty' (never 'convicted at trial'); pleaded to SIX felonies (never insider-trading/RICO conviction); CHARGED (98) vs PLEADED (6) distinct; RICO + 92 dropped; ~$600M = $200M fine + $400M restitution; SEC lifetime ban remains; 2020 pardon = clemency not innocence; genius-vs-greed attributed, never settled.",
+    "Length expanded from the prior short draft (~2,871 words) to 4,637 words / 76 spans within the locked structure (hook/opening/4 acts/ending+CTA): ~26.8 min narration at the measured ~173 wpm (Gardner-level), ~30.9 min at the validator's 150 wpm (mid band, no warning), so the finished cut lands comfortably in the 27-33 min runtime band at the normal, unchanged narration pace.",
+    "LIVING person (R3): before broadcast, re-confirm 'still alive' status and lock verbatim White House / court / SEC quotes; capture durable source content hashes (currently PENDING)."
+  ]
+}

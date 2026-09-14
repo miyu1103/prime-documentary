@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 325,
+  "episode_id": "PD-2026-082-valdez",
+  "slug": "valdez",
+  "loop": true,
+  "loop_join": "The closing beat p14 (short325_14.png, a porthole at night with terminal floodlight outside) carries isCta:true, rewind:true: its camera runs backward under the FULL CASE card so the shot ends at the same opening scale the film's very first beat used, and the loop restarts clean on p01 (the blank ruled crew list form) at frame 0 rather than cutting.",
+  "second_watch_detail": "p12 shows a narrow ship's cabin bunk made up tight; p13 is the same bunk slept in and rumpled. On a first watch it reads as ordinary cabin detail, but once L4-L5 explain the run was cut from a weeks-long Valdez-to-Panama voyage to a short California hop with the same crew number, that rumpled bunk reads as the only rest a watch that size was actually getting.",
+  "funnel_question_left_for_longform": "If the crew was set for a longer voyage, what was the first thing that got dropped on the short one?",
+  "funnel_long_title": "The Exxon Valdez Was Operated With a Reduced Crew",
+  "funnel_long_video_id": "wgjY-OHAQZI",
+  "description_line_1": "▶ FULL CASE: The Exxon Valdez Was Operated With a Reduced Crew | https://youtu.be/wgjY-OHAQZI",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "The Number on the Paper Had Not Moved.",
+    "ctaLongThumbSrc": "shorts/short325/short325_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If the crew was set for a longer voyage, what was the first thing that got dropped on the short one? The full case is here: https://youtu.be/wgjY-OHAQZI",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that is already finished and rendered (remotion/out/short325_yt.mp4) but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. The loop join, second-watch detail and CTA block are read off remotion/src/data/short325.ts; the standing question is the file-header LEAVES FOR THE LONG-FORM line verbatim. The long-form video wgjY-OHAQZI is currently PRIVATE and scheduled for 2026-09-06 -- check_short_funnel.py's own comment on funnel_long_video_id confirms a private+scheduled upload satisfies the requirement that the long-form exist as at least a private upload before its short can be scheduled. BLOCKER carried forward, not fixed here: cta.ctaLongThumbSrc points at shorts/short325/short325_ctathumb.jpg, which does not exist anywhere in the working tree (remotion/public_min/shorts only goes up to short324) -- it was presumably baked into the render from a since-removed source and should be restored or regenerated before the in-video FULL CASE card is trusted. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet, and cannot be until short325 is uploaded and has a real video id."
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "thumbnail_generation_gate_receipt.v001",
+  "created_at": "2026-08-24T18:55:00+09:00",
+  "supersedes": "EP77-82_THUMB_CODEX.v003.blocked_receipt.json",
+  "decision_taken": "deterministic_local_color_grading_of_gate02",
+  "decision_source": "blocked receipt next_decision option 1; owner directive 2026-08-24 (this thread: CTR-max thumbnail campaign)",
+  "tool": "scripts/thumb_autograde.py",
+  "input": {
+    "file": "E:\\pd-media\\05_visuals\\thumbs\\keybridge_v3\\_rejected_gate\\THUMB-01_gate02_targeted-lighting.png",
+    "sha256": "92285D49AE06BE1DB0328A0B72E10178A1C7EA1304C81D9FF02E0D0E019CD0A4"
+  },
+  "grade": {
+    "contrast_factor": 0.975,
+    "brightness_factor": 1.1
+  },
+  "output": {
+    "file": "E:\\pd-media\\05_visuals\\thumbs\\keybridge_v3\\THUMB-01.v002_graded.png",
+    "metrics": {"brightness": 46.2, "contrast": 60.5, "bright_pct": 5.6, "dark_pct": 66.4, "saturation": 41.4},
+    "gate": "check_thumb_punch.py PASS (independent re-run, 1 of 1 inside winners' bands)",
+    "visual_qc": "eyeballed at full size 2026-08-24: night story-frame, single practical light, no people, no text, no real-person likeness"
+  },
+  "effect": "keybridge_v3/THUMB-01 gate cleared. The 32 withheld assets of EP77-82_THUMB_CODEX.v003.md may resume generation. Near-miss plates from the remaining order may be finished with the same bounded grade instead of regeneration.",
+  "side_effects": {"overwrites": 0, "manifest_updated": false, "published": false, "uploaded": false}
+}

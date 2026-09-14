@@ -1,0 +1,165 @@
+{
+  "episode": "EP48",
+  "slug": "glover",
+  "case": "Kansas v. Glover, 589 U.S. ___ (2020) (No. 18-556)",
+  "decided": "2020-04-06",
+  "sources_master": [
+    "Majority opinion (Thomas) + Kagan concurrence (with Ginsburg) + Sotomayor dissent, Cornell LII: https://www.law.cornell.edu/supremecourt/text/18-556",
+    "US Reports cite 589 U.S. ___ (2020); Oyez case 18-556; Slip opinion Supreme Court of the United States"
+  ],
+  "note": "Verified 2026-07-23 against the primary opinion text (Cornell LII), fetched twice for verbatim confirmation of the holding line, the narrow-scope example, Kagan's concurrence limit, and all three Sotomayor dissent lines. WebSearch budget was treated as exhausted; items resting on training knowledge alongside the fetched opinion (deputy's full name detail, county, plate/vehicle specifics, procedural posture) are marked confidence:medium. Core legal holdings and every featured verbatim quote are confidence:high.",
+  "ledger": [
+    {
+      "id": "G01",
+      "claim": "Subject (living person, dignity)",
+      "detail": "Charles Glover Jr. was the registered owner of the pickup truck and, on the day in question, its driver. He is a living person who was convicted of driving on a revoked license (driving as a habitual violator). R2: treat with dignity, no face/likeness, symbols only. The story is the STOP and the viewer's own car, not Glover.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (majority statement of facts)"]
+    },
+    {
+      "id": "G02",
+      "claim": "The deputy and the routine plate check",
+      "detail": "A sheriff's deputy (Deputy Mark Mehrer, Douglas County, Kansas, Sheriff's Office) was on patrol and ran a routine license-plate / registration check on a pickup truck. He was not responding to a call and had NOT observed any traffic violation. Running a plate is a discretionary act officers may do at will.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (facts; deputy 'Mehrer' confirmed on fetch)", "Douglas County / plate 295ATJ / 1995 Chevy pickup: case record + training knowledge (medium on those specifics)"]
+    },
+    {
+      "id": "G03",
+      "claim": "The hit: registered owner's license REVOKED",
+      "detail": "The check returned that the truck was registered to Charles Glover Jr., whose Kansas driver's license had been REVOKED. Revocation in Kansas follows serious or repeated driving offenses (habitual violator) and is materially different from a mere administrative suspension.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (facts + Kagan concurrence on the revoked-vs-suspended distinction)"]
+    },
+    {
+      "id": "G04",
+      "claim": "The assumption and the stop (no ID confirmation, no violation)",
+      "detail": "The deputy did NOT observe any traffic violation and did NOT confirm the driver's identity or observe the driver's age/appearance. He ASSUMED the registered owner was the one driving and stopped the truck on that inference and nothing else.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (facts; deputy 'assumed' owner was driving, observed no violation)"]
+    },
+    {
+      "id": "G05",
+      "claim": "Glover WAS the driver",
+      "detail": "The driver of the truck was in fact Charles Glover Jr. The deputy's inference turned out to be correct. But the deputy did NOT know this when he initiated the stop; the case tests the stop as made, not the after-the-fact result.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (facts)"]
+    },
+    {
+      "id": "G06",
+      "claim": "Charge and stipulated facts",
+      "detail": "Glover was charged with driving as a habitual violator (driving on a revoked license). The parties stipulated to the facts; there was no factual dispute. Glover moved to suppress the evidence, arguing the deputy lacked reasonable suspicion to make the stop.",
+      "verified": true,
+      "confidence": "medium",
+      "sources": ["Cornell LII 18-556 (procedural history; stipulation)", "Kansas record via training knowledge (medium)"]
+    },
+    {
+      "id": "G07",
+      "claim": "Procedural posture",
+      "detail": "The Kansas trial court granted the motion to suppress; the Kansas Court of Appeals reversed; the Kansas Supreme Court held the stop violated the Fourth Amendment (the deputy relied on an unstated assumption); the U.S. Supreme Court reversed and remanded, upholding the stop. Not featured in narration beyond 'the case reached the Supreme Court.'",
+      "verified": true,
+      "confidence": "medium",
+      "sources": ["Cornell LII 18-556 (procedural history, medium)"]
+    },
+    {
+      "id": "G08",
+      "claim": "Question presented",
+      "detail": "Whether, for purposes of an investigative stop under the Fourth Amendment, it is reasonable for an officer to suspect that the registered owner of a vehicle is the one driving it, when the officer's only information is that the registered owner's driver's license has been revoked and the officer has no information negating that inference.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (question presented / holding framing)"]
+    },
+    {
+      "id": "G09",
+      "claim": "Standard = REASONABLE SUSPICION (Terry), not probable cause",
+      "detail": "The applicable standard is reasonable suspicion for a brief investigative (Terry) stop, NOT probable cause and NOT certainty. VERBATIM (Court, quoting precedent): reasonable suspicion is 'considerably less than proof of wrongdoing by a preponderance of the evidence, and obviously less than is necessary for probable cause.' BLOCKER: be precise that this is reasonable suspicion for a brief stop, not probable cause.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (standard-of-review discussion; quote confirmed on fetch)"]
+    },
+    {
+      "id": "G10",
+      "claim": "HOLDING (verbatim) — stop is reasonable, no 4A violation",
+      "detail": "VERBATIM (majority, Thomas): \"When the officer lacks information negating an inference that the owner is driving the vehicle, the stop is reasonable.\" I.e., where an officer has no information negating the inference that the registered owner is the driver, it is REASONABLE to infer the owner is driving, so the investigative stop does NOT violate the Fourth Amendment. The stop was UPHELD / constitutional. Do NOT call it illegal.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (holding sentence confirmed verbatim on fetch)"]
+    },
+    {
+      "id": "G11",
+      "claim": "Majority reasoning: commonsense inference",
+      "detail": "Thomas grounded the holding in common sense: it is a reasonable, everyday inference that the individual driving a vehicle is its registered owner. Reasonable suspicion does not require certainty; it requires a sensible, fact-based reason to investigate, and the owner's revoked license supplied it. The inference is bolstered by the empirical/commonsense point that drivers with revoked licenses often continue to drive.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (majority reasoning)"]
+    },
+    {
+      "id": "G12",
+      "claim": "NARROWNESS (verbatim example) — inference dissolves with contrary info",
+      "detail": "The holding is expressly NARROW. VERBATIM (majority): \"We emphasize the narrow scope of our holding.\" The presence of additional facts might dispel reasonable suspicion. VERBATIM example: \"if an officer knows that the registered owner of the vehicle is in his mid-sixties but observes that the driver is in her mid-twenties, then the totality of the circumstances would not 'raise a suspicion that the particular individual being stopped is engaged in wrongdoing.'\" BLOCKER: the inference is reasonable ONLY absent contrary information and dissolves once the officer can see the driver is not the owner.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (narrow-scope passage + mid-sixties/mid-twenties example confirmed verbatim on fetch)"]
+    },
+    {
+      "id": "G13",
+      "claim": "Vote 8-1 and lineup",
+      "detail": "Decided 8-1. Majority opinion by Justice Clarence Thomas. Justice Elena Kagan filed a concurrence, joined by Justice Ruth Bader Ginsburg. Justice Sonia Sotomayor was the LONE dissenter. Neutral attribution.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (opinion lineup)", "Oyez 18-556"]
+    },
+    {
+      "id": "G14",
+      "claim": "Kagan concurrence limit (verbatim) — revoked vs suspended; one glance dispels",
+      "detail": "Kagan (concurring, joined by Ginsburg) stressed how LITTLE it takes to dispel the inference and that the result depends on revocation, not mere suspension. VERBATIM (Kagan): \"I would find this a different case if Kansas had barred Glover from driving on a ground that provided no similar evidence of his penchant for ignoring driving laws. Consider, for example, if Kansas had suspended rather than revoked Glover's license.\" She also endorsed the Court's dispelling example: observing that the driver is not the owner (e.g., registered owner an elderly man, driver a young woman) would negate the reasonable inference. Attributed to the CONCURRENCE.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (Kagan concurrence; revoked-vs-suspended passage confirmed verbatim on fetch)"]
+    },
+    {
+      "id": "G15",
+      "claim": "Sotomayor dissent (verbatim, opening)",
+      "detail": "VERBATIM (dissent, Sotomayor): \"In upholding routine stops of vehicles whose owners have revoked licenses, the Court ignores key foundations of our reasonable-suspicion jurisprudence and impermissibly and unnecessarily reduces the State's burden of proof.\" Attributed to the DISSENT, not the Court.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (Sotomayor dissent; confirmed verbatim on two fetches)"]
+    },
+    {
+      "id": "G16",
+      "claim": "Sotomayor dissent (verbatim) — officers must investigate where feasible",
+      "detail": "VERBATIM (dissent, Sotomayor): \"The consequence of the majority's approach is to absolve officers from any responsibility to investigate the identity of a driver where feasible.\" Attributed to the DISSENT.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (Sotomayor dissent; confirmed verbatim on two fetches)"]
+    },
+    {
+      "id": "G17",
+      "claim": "Sotomayor dissent (verbatim) — 'paved the road' / demographic profile",
+      "detail": "VERBATIM (dissent, Sotomayor): \"The majority today has paved the road to finding reasonable suspicion based on nothing more than a demographic profile.\" Attributed to the DISSENT.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (Sotomayor dissent; confirmed verbatim on two fetches)"]
+    },
+    {
+      "id": "G18",
+      "claim": "Citation and decision date",
+      "detail": "Kansas v. Glover, 589 U.S. ___ (2020), No. 18-556, decided April 6, 2020. Reversed and remanded to the Kansas Supreme Court.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556", "Oyez 18-556"]
+    },
+    {
+      "id": "G19",
+      "claim": "NO-OVERCLAIM lock (reasonable suspicion, narrow, not 'any car')",
+      "detail": "The ruling does NOT hold that police can stop any car at any time. It authorizes a brief investigative stop based on reasonable suspicion where (a) the registered owner has a status making it reasonable to think they should not be driving (a revoked license) and (b) the officer has NO information negating the inference that the owner is driving. It dissolves the moment the officer has contrary information (e.g., the driver plainly does not match the owner). It is reasonable suspicion, not probable cause.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII 18-556 (synthesis of holding + narrowness + standard)"]
+    }
+  ]
+}

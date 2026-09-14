@@ -1,0 +1,118 @@
+{
+  "schema_version": "thumbnail_generation_receipt.delta.v001",
+  "generated_at": "2026-08-25T17:55:15.8854112+09:00",
+  "supersedes": {
+    "receipt": "thumbnail_generation_receipt.v001.json",
+    "entry": "EP85/T06.png",
+    "superseded_sha256": "CFBE2EDB24C6F595D8E1BF4E4A704125365BF519DBC982C897E5B619D1CA4403"
+  },
+  "scope": {
+    "episode": "EP85",
+    "episode_id": "PD-2026-085-katrina",
+    "asset_id": "EP85-T06",
+    "delivery_filename": "T06.png",
+    "attempt_policy": "one_prompt_one_image_one_attempt",
+    "provider_requests_total": 1,
+    "retries": 0,
+    "authorized_overwrites": 1,
+    "unrelated_assets_changed": 0
+  },
+  "authorization": {
+    "order_file": "EP85_T06_REDO.txt",
+    "order_sha256": "950C40EBBBE1853F173CBC1DE9FF56D0CFECC6DFEA75CA5B7886C7D16B89A55F",
+    "explicit_replacement_instruction": "File name T06.png; same-name overwrite delivery",
+    "replacement_reason": "Previous T06 was a five-panel collage and failed the one-subject mobile-readability contract."
+  },
+  "generation": {
+    "provider": "codex_builtin_image_gen",
+    "execution_prompt_file": "EP85_T06_REDO.execution_prompt.v001.txt",
+    "execution_prompt_sha256": "A5318C9D2B0E935AD00597E49250D6A69C99D22FBAB0F38DF92569EA2E3B0C17",
+    "provider_cost": "not_reported_by_provider",
+    "native_source": "C:\\Users\\aab15\\.codex\\generated_images\\01a03816-5861-7382-9a94-adc15fdbd4d1\\exec-da9de152-9123-4d9e-b502-f6bb2a4677b7.png",
+    "native_staging_copy": "runs/thumbnail_generation_20260825_ep85_t06_redo/native/PD-2026-085-katrina/T006.png",
+    "native_dimensions": "1800x941",
+    "native_sha256": "2F9ECFE040893E555C8D8451C2437BB85DCCE3446EEC8F40315FEDE70BAD33BF",
+    "native_source_retained": true
+  },
+  "replacement_safety": {
+    "previous_delivery_sha256": "CFBE2EDB24C6F595D8E1BF4E4A704125365BF519DBC982C897E5B619D1CA4403",
+    "backup": "runs/thumbnail_generation_20260825_ep85_t06_redo/replaced_original/PD-2026-085-katrina/T06.png",
+    "backup_sha256": "CFBE2EDB24C6F595D8E1BF4E4A704125365BF519DBC982C897E5B619D1CA4403",
+    "backup_verified_before_overwrite": true
+  },
+  "normalization_and_upscale": {
+    "normalized_source": "runs/thumbnail_generation_20260825_ep85_t06_redo/normalized/PD-2026-085-katrina/T006.png",
+    "aspect_normalization": "center crop 1800x941 to exact 16:9 at 1664x936 using crop=1664:936:68:2",
+    "normalized_sha256": "9D9D2E1A74D4A266BF7AABA4AFA684B6437C7A6C2EA8E350116533C135F81D39",
+    "upscale_script": "scripts/upscale_plates_4k_esrgan.py",
+    "upscale_script_sha256": "B43FB9E6A2FC46FE1180B312EE285F2FD663921CCC32FBA292AAD273A5F2D28F",
+    "model": "RealESRGAN_x4plus",
+    "device": "NVIDIA GeForce RTX 4090",
+    "final_resize": "LANCZOS",
+    "upscaled_staging_file": "runs/thumbnail_generation_20260825_ep85_t06_redo/upscaled/PD-2026-085-katrina/T006.png"
+  },
+  "delivery": {
+    "file": "episodes/PD-2026-085-katrina/10_thumbnail/T06.png",
+    "sha256": "8A66577FDB00A01820B6CECA55213F12B8C11115BAF3B79F624FB4424EDA9778",
+    "dimensions": "3840x2160",
+    "pixel_mode": "RGB",
+    "format": "PNG",
+    "staging_delivery_hash_match": true
+  },
+  "quality_control": {
+    "technical_qc": {
+      "passed": true,
+      "exact_16_9": true,
+      "long_edge_at_least_3840": true,
+      "episode_thumbnail_count": 10,
+      "episode_exact_duplicate_groups": 0
+    },
+    "semantic_qc": {
+      "reviewed_at_full_frame": true,
+      "reviewed_at_320x180": true,
+      "single_continuous_photograph": true,
+      "single_hero_subject": true,
+      "right_third_dark_negative_space": true,
+      "people_or_faces_observed": false,
+      "readable_text_or_numerals_observed": false,
+      "collage_or_panel_borders_observed": false,
+      "status": "replacement_delivered_owner_review_required"
+    },
+    "mobile_previews": [
+      {
+        "file": "runs/qc/thumbnail_generation_20260825_ep85_t06_redo/EP85-T06_320x180.png",
+        "sha256": "FF61EE3A94B92EA14094DF3BE029E0309189D2ED9DC30214BEC311C20BFE5CAB"
+      },
+      {
+        "file": "runs/qc/thumbnail_generation_20260825_ep85_t06_redo/EP85-T06_168x94.png",
+        "sha256": "29EA674988FA9520B9BCE2473476E8B5699FF1E72AC18BA1B8B83F80CA0CD80B"
+      }
+    ],
+    "ctr_punch_qc": {
+      "tool": "scripts/check_thumb_punch.py",
+      "passed": false,
+      "brightness": 52.0,
+      "contrast": 57.7,
+      "bright_percentage": 0.2,
+      "dark_percentage": 59.1,
+      "saturation": 27.9,
+      "failures": [
+        "contrast 57.7 < 60.0",
+        "bright_pct 0.2 < 3.0",
+        "saturation 27.9 < 30.0"
+      ],
+      "action": "No automatic grade or additional generation; preserve the one-attempt replacement and disclose the metric exception."
+    }
+  },
+  "release_state": {
+    "owner_thumbnail_approval": false,
+    "headline_composited": false,
+    "published": false,
+    "next_gate": "owner visual review"
+  },
+  "side_effects": {
+    "external_publish_or_upload": false,
+    "external_messages_sent": false,
+    "processes_restarted_or_terminated": false
+  }
+}

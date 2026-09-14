@@ -1,0 +1,43 @@
+{
+  "episode_id": "PD-2026-053-norfolk",
+  "producer": "scripts/build_case_film_generic.py",
+  "inputs": {
+    "assets": "episodes\\PD-2026-053-norfolk\\05_visuals\\asset_manifest.v003.json",
+    "narr": "episodes\\PD-2026-053-norfolk\\06_audio\\narration_index.v001.json",
+    "config": "episodes\\_planning\\EP53_norfolk_filmconfig.v001.json"
+  },
+  "report": {
+    "slug": "norfolk",
+    "cuts": 364,
+    "factory": 248,
+    "motion": 0,
+    "still": 116,
+    "pools": {
+      "factory": 230,
+      "motion": 0,
+      "still": 219,
+      "people": 16
+    },
+    "video_cuts": 248,
+    "still_cuts": 116,
+    "video_share": 0.6813,
+    "distinct_assets": 346,
+    "distinct_ratio": 0.9505,
+    "max_reuse": 2,
+    "avg_cut_sec": 4.6,
+    "figures": 78,
+    "captions": 476,
+    "narrationSeconds": 1673.89,
+    "duration_frames": 50832,
+    "duration_sec_with_bookends": 1694.4,
+    "sections": [
+      "HOOK",
+      "OP",
+      "ACT_1",
+      "ACT_2",
+      "ACT_3",
+      "ACT_4",
+      "ENDING"
+    ]
+  }
+}

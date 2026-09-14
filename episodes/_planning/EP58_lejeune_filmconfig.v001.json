@@ -1,0 +1,674 @@
+{
+ "schema_version": "pd_filmconfig.v001",
+ "slug": "lejeune",
+ "episode_id": "PD-2026-058-lejeune",
+ "assets": "episodes/PD-2026-058-lejeune/05_visuals/asset_manifest.v003.json",
+ "narration_index": "episodes/PD-2026-058-lejeune/06_audio/narration_index.v001.json",
+ "narration": "lejeune/narration.mp3",
+ "hookSeconds": 8.0,
+ "hookLine": "For decades the drinking water at Camp Lejeune carried industrial solvents, the base measured them, wrote them down, and the taps stayed open.",
+ "figures_by_section": {
+  "HOOK": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THEY WROTE",
+     "IT DOWN."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "WROTE"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "SEPTEMBER 1985",
+    "secondary": "A Marine Corps drill instructor buries his nine-year-old daughter. He hears nothing about the water until August 1997."
+   }
+  ],
+  "OP": [
+   {
+    "kind": "numberticker",
+    "value": 408000,
+    "group": true,
+    "topLabel": "As of 15 June 2026",
+    "label": "De-duplicated administrative claims, United States' notice to the court"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "CAMP LEJEUNE, NORTH CAROLINA",
+    "secondary": "One federal court. One deadline: 30 October 2026."
+   }
+  ],
+  "ACT_1": [
+   {
+    "kind": "acttitle",
+    "title": "THE QUARTERS",
+    "kicker": "ACT ONE",
+    "index": 1
+   },
+   {
+    "kind": "pindropmap",
+    "pins": [
+     {
+      "x": 0.3,
+      "y": 0.4,
+      "label": "Tarawa Terrace - family housing"
+     },
+     {
+      "x": 0.63,
+      "y": 0.58,
+      "label": "Hadnot Point - the working base"
+     },
+     {
+      "x": 0.2,
+      "y": 0.3,
+      "label": "ABC One-Hour Cleaners, off base"
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TARAWA TERRACE",
+    "secondary": "Marine Corps family housing. Jerry Ensminger and his wife lived there from 1973 to 1975; she spent her first trimester there."
+   },
+   {
+    "kind": "numberticker",
+    "value": 24.5,
+    "decimals": 1,
+    "suffix": " years",
+    "topLabel": "Master Sergeant, USMC",
+    "label": "Jerry Ensminger's service in the United States Marine Corps"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "20 DECEMBER 1975",
+    "secondary": "The family leaves Camp Lejeune after drill instructor school at Parris Island"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TETRACHLOROETHYLENE (PCE)",
+    "secondary": "A dry-cleaning solvent that leaked into the aquifer feeding the Tarawa Terrace wells from ABC One-Hour Cleaners, off base"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TRICHLOROETHYLENE (TCE)",
+    "secondary": "An industrial degreaser in the Hadnot Point system, with benzene and the products TCE breaks down into"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Tarawa Terrace PCE, maximum in drinking water (ug/L)",
+      "value": 215
+     },
+     {
+      "label": "Federal limit (ug/L)",
+      "value": 5
+     }
+    ]
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Hadnot Point TCE, maximum in drinking water (ug/L)",
+      "value": 1400
+     },
+     {
+      "label": "Federal limit (ug/L)",
+      "value": 5
+     }
+    ]
+   },
+   {
+    "kind": "numberticker",
+    "value": 280,
+    "suffix": "x",
+    "topLabel": "Hadnot Point TCE against the limit",
+    "label": "1,400 micrograms per litre against a federal limit of five"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NOBODY WAS MEASURING",
+    "secondary": "The federal drinking-water limits for TCE and PCE did not exist until 1989 and 1992"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "CONCEIVED AT CAMP LEJEUNE",
+    "secondary": "Janey Ensminger was born in 1976, after the family left. Diagnosed with acute lymphocytic leukemia at six. Ill for nearly two and a half years."
+   },
+   {
+    "kind": "quote",
+    "quote": "Janey died at 3:35 p.m. on 24 September 1985. She was only 9 years old.",
+    "attribution": "Jerry Ensminger, sworn testimony to Congress, 12 June 2007"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NO LETTER.",
+     "NO NOTIFICATION."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NO"
+    ]
+   },
+   {
+    "kind": "numberticker",
+    "value": 12,
+    "suffix": " years",
+    "topLabel": "After September 1985",
+    "label": "The two facts sat in different filing cabinets in different states"
+   }
+  ],
+  "ACT_2": [
+   {
+    "kind": "acttitle",
+    "title": "AUGUST 1997",
+    "kicker": "ACT TWO",
+    "index": 2
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AUGUST 1997",
+    "secondary": "Jerry Ensminger learns that the water at Camp Lejeune had been contaminated"
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "1983",
+      "text": "Janey Ensminger is diagnosed with leukemia at the age of six"
+     },
+     {
+      "year": "1985",
+      "text": "She dies on 24 September, aged nine"
+     },
+     {
+      "year": "1997",
+      "text": "Her father first hears that the base water was contaminated"
+     }
+    ]
+   },
+   {
+    "kind": "numberticker",
+    "value": 14,
+    "suffix": " years",
+    "topLabel": "August 1997",
+    "label": "After Janey Ensminger was diagnosed"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ATSDR",
+    "secondary": "The Agency for Toxic Substances and Disease Registry had proposed a childhood leukemia and non-Hodgkin's lymphoma study"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE HYPOTHESIS, WRITTEN DOWN",
+    "secondary": "Children exposed in the womb while their parents lived at Camp Lejeune between 1968 and 1985"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "IT NAMED THE BASE.",
+     "IT NAMED THE YEARS."
+    ],
+    "style": "maskslide",
+    "emphasisWords": [
+     "NAMED"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "FREEDOM OF INFORMATION ACT",
+    "secondary": "Letters to the base, to Headquarters Marine Corps, to the Navy - returned partial, returned late, returned with the useful part removed"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "FOIA REQUEST.",
+     "FOIA REQUEST."
+    ],
+    "style": "wordpop",
+    "emphasisWords": [
+     "FOIA"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE BINDER",
+    "secondary": "A retired drill instructor at a kitchen table in North Carolina, teaching himself to read a laboratory form"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "HE FOUND THE OTHERS",
+    "secondary": "Mothers who had miscarried at Tarawa Terrace. Men from the barracks at Hadnot Point with kidney cancer at fifty. Families scattered to Ohio, Texas and Florida."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NO LEGAL TRAINING. NO SCIENTIFIC TRAINING.",
+    "secondary": "What he had instead was twenty-four and a half years of learning how a military bureaucracy moves paper"
+   },
+   {
+    "kind": "quote",
+    "quote": "What they have filled me with is a terrible resolve to expose their misconduct, their arrogance, and their incompetence. And I want to expose the truth.",
+    "attribution": "Jerry Ensminger, sworn testimony to Congress, 12 June 2007"
+   },
+   {
+    "kind": "quote",
+    "quote": "It is time for the United States Marine Corps to live up to our motto, which is Semper Fidelis, which is Latin for 'always faithful.'",
+    "attribution": "Jerry Ensminger, sworn testimony to Congress, 12 June 2007"
+   }
+  ],
+  "ACT_3": [
+   {
+    "kind": "acttitle",
+    "title": "WHAT THE LABORATORY WROTE",
+    "kicker": "ACT THREE",
+    "index": 3
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "OCTOBER 1980",
+    "secondary": "A United States Army Environmental Hygiene Agency team from Fort McPherson, Georgia begins routine trihalomethane tests on Camp Lejeune water systems. The contamination was too high for the test to be completed."
+   },
+   {
+    "kind": "quote",
+    "quote": "Water is highly contaminated with low molecular weight halogenated hydrocarbons.",
+    "attribution": "handwritten remark, Hadnot Point sample form, 30 October 1980 - document CLW 0436"
+   },
+   {
+    "kind": "quote",
+    "quote": "Heavy organic interference at CHCL2BR. You need to analyze for chlorinated organics by GC/MS",
+    "attribution": "U.S. Army laboratory, 29 December 1980 - document CLW 0438"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "30 JANUARY 1981",
+    "secondary": "Samples of the same system, and the same instruction again: analyze for chlorinated organics by GC/MS"
+   },
+   {
+    "kind": "quote",
+    "quote": "Water highly contaminated with other chlorinated hydrocarbons (solvents)!",
+    "attribution": "U.S. Army laboratory analytical result form, samples 9 March 1981, Hadnot Point - document CLW 0443"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NINE WORDS.",
+     "ONE EXCLAMATION MARK."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NINE"
+    ]
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "30 Oct 1980",
+      "text": "Highly contaminated with low molecular weight halogenated hydrocarbons"
+     },
+     {
+      "year": "29 Dec 1980",
+      "text": "Heavy organic interference. Analyze for chlorinated organics by GC/MS"
+     },
+     {
+      "year": "30 Jan 1981",
+      "text": "Same system, same instruction, written on the form again"
+     },
+     {
+      "year": "9 Mar 1981",
+      "text": "Highly contaminated with other chlorinated hydrocarbons (solvents)!"
+     }
+    ]
+   },
+   {
+    "kind": "numberticker",
+    "value": 16,
+    "suffix": " years",
+    "topLabel": "Document CLW 0443",
+    "label": "It sat in a government file until a retired drill instructor asked for it"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "MAY 1982 - GRAINGER LABORATORIES",
+    "secondary": "Co-owner Mike Hargett telephones the base's own supervising chemist: high levels of volatile organic compounds in both the Hadnot Point and Tarawa Terrace systems"
+   },
+   {
+    "kind": "quote",
+    "quote": "These appeared to be at high levels and hence more important from a health standpoint than the total Trihalomethane content.",
+    "attribution": "Bruce A. Babson, Grainger Laboratories, to the Commanding General, 10 August 1982"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NOVEMBER 1984 TO FEBRUARY 1985",
+    "secondary": "The contaminated wells at Hadnot Point come out of service. The most contaminated are shut down in February 1985."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "1987",
+    "secondary": "The Tarawa Terrace treatment plant, the one that served the family housing, is closed"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THEY WROTE IT DOWN.",
+     "THE WELLS KEPT RUNNING."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "KEPT"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "DECLINED FOR PROSECUTION, 2007",
+    "secondary": "A federal criminal investigation looked for a conspiracy for eighteen months and found no violation of federal law. The Marine Corps' own review panel concluded the Corps had acted responsibly."
+   },
+   {
+    "kind": "quote",
+    "quote": "one spokesperson for the hundreds of thousands of Marines, sailors, their families, and the loyal civilian employees who were unknowingly exposed",
+    "attribution": "Jerry Ensminger, sworn testimony to Congress, 12 June 2007"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THERE IS NO OFFICIAL TOTAL",
+    "secondary": "No federal health agency has ever published one. The figure of around a million comes from a congressional hearing in 2010."
+   }
+  ],
+  "ACT_4": [
+   {
+    "kind": "acttitle",
+    "title": "THE MAN BORN ON THE BASE",
+    "kicker": "ACT FOUR",
+    "index": 4
+   },
+   {
+    "kind": "quote",
+    "quote": "'You have male breast cancer' were the words which greeted me and my wife on our 18th wedding anniversary.",
+    "attribution": "Mike Partain, sworn testimony to Congress, 16 September 2010"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "MIKE PARTAIN",
+    "secondary": "Son and grandson of Marine Corps officers. Conceived, carried and born at the base naval hospital in 1968, while his parents lived at Tarawa Terrace."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NO FAMILY HISTORY",
+    "secondary": "Negative for the hereditary breast cancer markers BRCA1 and BRCA2. He does not drink and does not smoke. Diagnosed in 2007, aged thirty-nine."
+   },
+   {
+    "kind": "numberticker",
+    "value": 64,
+    "topLabel": "September 2010",
+    "label": "Men with male breast cancer and exposure to the Camp Lejeune water, as Partain told Congress"
+   },
+   {
+    "kind": "numberticker",
+    "value": 125,
+    "suffix": "+",
+    "topLabel": "The count he keeps, 2026",
+    "label": "He located the first sixty-three himself, one at a time, by telephone and e-mail"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "A REGISTRY, NOT A STUDY",
+    "secondary": "One man's list, with no denominator and no control group. It was an alarm, and alarms are supposed to be crude."
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Male breast cancer cases examined, published 2015",
+      "value": 71
+     },
+     {
+      "label": "Controls",
+      "value": 373
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ODDS RATIO 1.14",
+    "secondary": "95% confidence interval 0.65 to 1.97 for ever having been stationed at Camp Lejeune. On male breast cancer the results point both ways and nothing is established."
+   },
+   {
+    "kind": "quote",
+    "quote": "No further action was taken.",
+    "attribution": "Mike Partain, sworn testimony to Congress, 16 September 2010, on the March 1981 remark"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "28 APRIL 2009 - ATLANTA",
+    "secondary": "ATSDR withdraws its own 1997 public health assessment for Camp Lejeune. It had left benzene out."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "AN AGENCY",
+     "TOOK IT BACK."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "BACK"
+    ]
+   },
+   {
+    "kind": "pindropmap",
+    "pins": [
+     {
+      "x": 0.16,
+      "y": 0.55,
+      "label": "Camp Pendleton, California"
+     },
+     {
+      "x": 0.74,
+      "y": 0.5,
+      "label": "Camp Lejeune, North Carolina"
+     }
+    ]
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Camp Lejeune Marines and sailors, 2014 mortality study",
+      "value": 154932
+     },
+     {
+      "label": "Camp Pendleton comparison group",
+      "value": 154969
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "OCTOBER 2024",
+    "secondary": "A cancer incidence study across the same two populations, following diagnoses from 1996 to 2017"
+   },
+   {
+    "kind": "quote",
+    "quote": "Increased risks of several cancers were observed among Marines/Navy personnel and civilian workers exposed to contaminated drinking water at Camp Lejeune compared with Camp Pendleton.",
+    "attribution": "Bove et al., Environmental Health Perspectives, 24 October 2024"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ATSDR, 13 JANUARY 2017",
+    "secondary": "Sufficient evidence for causation: TCE and kidney cancer; TCE and non-Hodgkin's lymphoma; PCE and bladder cancer; benzene and the leukemias; vinyl chloride and liver cancer"
+   }
+  ],
+  "ACT_5": [
+   {
+    "kind": "acttitle",
+    "title": "THE TWO-YEAR WINDOW",
+    "kicker": "ACT FIVE",
+    "index": 5
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "CTS CORP. v. WALDBURGER, 2014",
+    "secondary": "A statute of repose runs from the defendant's last act and then expires, whether you know you were injured or not. The Supreme Court confirmed that federal environmental law does not override it."
+   },
+   {
+    "kind": "numberticker",
+    "value": 4000,
+    "prefix": "~",
+    "group": true,
+    "topLabel": "Dismissed 5 December 2016",
+    "label": "Federal Tort Claims Act claims by Camp Lejeune families, with seventeen federal lawsuits"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "TOO LATE",
+     "BECAUSE THE WATER WAS OFF."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "LATE"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "6 AUGUST 2012",
+    "secondary": "The Janey Ensminger Act: VA health care for fifteen specified conditions, for thirty days or more at Camp Lejeune between 1953 and 1987"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "10 AUGUST 2022",
+    "secondary": "The Camp Lejeune Justice Act, passed as section 804 of the PACT Act. File with the Navy, wait six months, then one district in eastern North Carolina."
+   },
+   {
+    "kind": "quote",
+    "quote": "Any applicable statute of repose or statute of limitations... shall not apply to a claim under this section.",
+    "attribution": "section 804(j)(3), Public Law 117-168"
+   },
+   {
+    "kind": "quote",
+    "quote": "sufficient to conclude that a causal relationship is at least as likely as not",
+    "attribution": "the burden of proof written into section 804(c)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "10 AUGUST 2024",
+    "secondary": "The two-year filing window closes for almost everyone"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "6 FEBRUARY 2024",
+    "secondary": "All four judges of the district sign a thirty-four-page order striking the jury demand. Every Camp Lejeune case will be tried by a judge."
+   },
+   {
+    "kind": "quote",
+    "quote": "Congress could have made this dispute easy to resolve.",
+    "attribution": "Order D.E. 133, Eastern District of North Carolina, 6 February 2024"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TWENTY-FIVE BELLWETHERS",
+    "secondary": "Five each for bladder cancer, kidney cancer, leukemia, Parkinson's disease and non-Hodgkin's lymphoma. Each had to waive every other illness to be selected."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE ELECTIVE OPTION",
+    "secondary": "A grid: $150,000 to $450,000 for the worst-exposed with the listed cancers, and another $100,000 if the claimant died"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "People who filed an administrative claim",
+      "value": 408000
+     },
+     {
+      "label": "People who had been paid by 15 June 2026",
+      "value": 2446
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "more than 88% have insufficient evidence to support the claim and less than 2% have sufficient documentary substantiation",
+    "attribution": "United States' Notice of CLJA Settlement Status, D.E. 290, 15 June 2026"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Robert Fiolek, leukemia",
+      "value": 10000
+     },
+     {
+      "label": "Edward Raymond, bladder cancer",
+      "value": 24000
+     },
+     {
+      "label": "Jose Vidana, non-Hodgkin's lymphoma",
+      "value": 405
+     }
+    ]
+   },
+   {
+    "kind": "numberticker",
+    "value": 405,
+    "prefix": "$",
+    "topLabel": "Three of the twenty-five bellwether cases settled",
+    "label": "Paid, and the case voluntarily dismissed"
+   }
+  ],
+  "ENDING": [
+   {
+    "kind": "lowerthird",
+    "primary": "30 JUNE 2026 - ORDER D.E. 893",
+    "secondary": "The four judges of the Eastern District of North Carolina reappoint the plaintiffs' leadership group, and reappoint it only until 30 October 2026"
+   },
+   {
+    "kind": "quote",
+    "quote": "the court expects the PLG and DOJ to use their best efforts to achieve a global settlement by October 30, 2026.",
+    "attribution": "Order D.E. 893, Eastern District of North Carolina, 30 June 2026"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "EVERY SINGLE WEEK",
+    "secondary": "The lawyers and the government must meet the settlement masters weekly; a week may be skipped only on written request to and written approval by the settlement masters"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NO TRIAL.",
+     "NO FINDING."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NO"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NOBODY",
+    "secondary": "No court has ever ruled on whether the United States is liable. No individual has ever been publicly disciplined or prosecuted over the contamination."
+   },
+   {
+    "kind": "quote",
+    "quote": "Delay, deny, and wait 'til they die.",
+    "attribution": "Mike Partain, Public Radio East, 16 March 2026"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "ONE DEADLINE",
+     "30 OCTOBER 2026"
+    ],
+    "style": "maskslide",
+    "emphasisWords": [
+     "DEADLINE"
+    ]
+   }
+  ]
+ }
+}

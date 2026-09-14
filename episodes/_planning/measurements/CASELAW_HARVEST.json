@@ -1,0 +1,2600 @@
+{
+  "schema_version": "caselaw-harvest/v001",
+  "measured_utc": "2026-08-01T15:47:22+00:00",
+  "source": "CourtListener REST v4 /search/ type=o stat_Published=on",
+  "filed_after": "2008-01-01",
+  "lanes": [
+    "forfeiture",
+    "structuring",
+    "exoneration",
+    "false_confession",
+    "forensic_fraud",
+    "brady",
+    "qualified_immunity",
+    "fourth_amendment",
+    "eminent_domain",
+    "guardianship",
+    "child_removal",
+    "debtors_prison",
+    "medical_neglect",
+    "wage_theft",
+    "whistleblower",
+    "building_safety"
+  ],
+  "pages_per_lane": 2,
+  "caveat": "Scores are proxies for the channel's winning shape, not editorial judgement. An opinion states a holding, never whether the story carries 40 minutes. Run topic_demand_probe.py on the shortlist next.",
+  "errors": [
+    {
+      "lane": "brady",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "qualified_immunity",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "fourth_amendment",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "eminent_domain",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "guardianship",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "child_removal",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "debtors_prison",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "medical_neglect",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "wage_theft",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "whistleblower",
+      "page": 1,
+      "http": 429
+    },
+    {
+      "lane": "building_safety",
+      "page": 1,
+      "http": 429
+    }
+  ],
+  "count": 100,
+  "candidates": [
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 6658447,
+      "case_name": "State v. Roden",
+      "court": "Court of Appeals of Oregon",
+      "court_id": "orctapp",
+      "date_filed": "2019-03-20",
+      "docket": "A163861",
+      "cite_count": 3,
+      "citation": [
+        "437 P.3d 1203",
+        "296 Or. App. 604"
+      ],
+      "url": "https://www.courtlistener.com/opinion/6658447/state-v-roden/",
+      "suit_nature": "",
+      "snippet": "DeVORE, J.\n*606Defendant appeals a judgment of conviction for 11 offenses related to the death of his girlfriend's daughter and injuries to his girlfriend's sons. In his first of two assignments of error, he challenges the admission of expert testimony on bite marks, arguing that it failed to meet the Brown / O'Key standards f",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 8.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=3, +2)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: conviction, death, injuries (+1.5)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 7312687,
+      "case_name": "United States v. $134,972.34 Seized from FNB Bank",
+      "court": "District Court, N.D. Alabama",
+      "court_id": "alnd",
+      "date_filed": "2015-03-30",
+      "docket": "Civil Action No. CV-15-S-6-NE",
+      "cite_count": 5,
+      "citation": [
+        "94 F. Supp. 3d 1224",
+        "2015 U.S. Dist. LEXIS 39888",
+        "2015 WL 1411879"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7312687/united-states-v-13497234-seized-from-fnb-bank/",
+      "suit_nature": "",
+      "snippet": "MEMORANDUM OPINION AND ORDER\nLYNWOOD SMITH, District Judge.\nPlaintiff, the United States of America, asserts a civil action in rem for the forfeiture of $134,972.34 in United States currency (“the defendant currency”) seized on August 20, 2014, from FNB Bank, account number- 5351, pursuant to 31 U.S.C. § 5317(c)(2).1 The United States alleges that the defendant curren",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 7.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=5, +2)",
+        "11年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: forfeiture, seized (+1.0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 3189568,
+      "case_name": "People v. Cornelius",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2016-03-29",
+      "docket": "16183 5370/11",
+      "cite_count": 1,
+      "citation": [
+        "137 A.D.3d 663",
+        "27 N.Y.S.3d 566"
+      ],
+      "url": "https://www.courtlistener.com/opinion/3189568/people-v-cornelius/",
+      "suit_nature": "",
+      "snippet": "Judgment, Supreme Court, New York County (Carol Berk-man, J., at suppression hearing; Annalisa Torres, J., at nonjury trial and sentencing), rendered March 13, 2013, convicting de\n   \n   *664\n   \n  fendant of manslaughter in the first degree, and sentencing her to a term of eight years, unanimously affirmed.\n \n\n  On November 7,",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 7.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=1, +2)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: convicting, sentencing (+1.0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 5148384,
+      "case_name": "Commonwealth v. 1997 Chevrolet",
+      "court": "Commonwealth Court of Pennsylvania",
+      "court_id": "pacommwct",
+      "date_filed": "2014-12-17",
+      "docket": "",
+      "cite_count": 21,
+      "citation": [
+        "106 A.3d 836"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5148384/commonwealth-v-1997-chevrolet/",
+      "suit_nature": "",
+      "snippet": "OPINION BY\nJudge LEAVITT.\nElizabeth Young appeals an order of the Court of Common Pleas of Philadelphia County (trial court) that granted the Commonwealth of Pennsylvania’s petition for the forfeiture of her home and her 1997 Chevrolet minivan. The trial court held that the forfeited property had facilitated the illegal sale of marijuana by Young’s son, who lived with her, and it rejected Young’s",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 7.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "やや知られている (citeCount=21, +1)",
+        "12年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: forfeited, forfeiture, home (+1.5)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 3185687,
+      "case_name": "Com. v. The Real Property and Improvements at 2338 N. Beechwood St., Phila., PA 19132 Appeal of: T. Burney",
+      "court": "Commonwealth Court of Pennsylvania",
+      "court_id": "pacommwct",
+      "date_filed": "2016-03-15",
+      "docket": "631 C.D. 2012",
+      "cite_count": 1,
+      "citation": [
+        "134 A.3d 507",
+        "2016 Pa. Commw. LEXIS 130",
+        "2016 WL 980419"
+      ],
+      "url": "https://www.courtlistener.com/opinion/3185687/com-v-the-real-property-and-improvements-at-2338-n-beechwood-st/",
+      "suit_nature": "",
+      "snippet": "OPINION BY\n \n\n  Judge P. KEVIN BROBSON.\n \n\n  On remand from the Supreme Court of Pennsylvania,\n  \n   1\n  \n  we consider for a second time the appeal of Takeela Burney (Claimant) from the March 14, 2012 Order of the Court of Common Pleas of Philadelphia County (trial court), granting the Forfeiture Petition of the Commonwe",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 7.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=1, +2)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: forfeiture (+0.5)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 8286306,
+      "case_name": "Buhl v. State",
+      "court": "Court of Appeals of Minnesota",
+      "court_id": "minnctapp",
+      "date_filed": "2019-01-07",
+      "docket": "A18-0245",
+      "cite_count": 2,
+      "citation": [
+        "922 N.W.2d 435"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8286306/buhl-v-state/",
+      "suit_nature": "",
+      "snippet": "I. The district court correctly concluded that this court's reversal of appellant's conviction was not on \"grounds consistent with innocence.\"\nFollowing the Minnesota Supreme Court's decision in Back v. State , a petitioner can qualify as exonerated only under Minn. Stat. § 590.11, subd.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 7.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=2, +2)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: conviction (+0.5)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 4394422,
+      "case_name": "Commonwealth v. 1997 Chevrolet & Contents Seized From Young",
+      "court": "Supreme Court of Pennsylvania",
+      "court_id": "pa",
+      "date_filed": "2017-05-25",
+      "docket": "Commonwealth, Aplt. v. 416 S. 62nd Street - No. 30 EAP 2015",
+      "cite_count": 36,
+      "citation": [
+        "160 A.3d 153",
+        "639 Pa. 239"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4394422/commonwealth-v-1997-chevrolet-contents-seized-from-young/",
+      "suit_nature": "",
+      "snippet": "OPINION\n \n\n  JUSTICE TODD\n \n\n  The Eighth Amendment to the United States Constitution guarantees citizens protection against the government by limiting its power to punish. In this appeal by allowance, we consider,\n  \n   inter alia,\n  \n  the constitutional limitations on civil\n  \n   in rem\n  \n  forfeiture in Pennsylvania under the Excessive Fines C",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "やや知られている (citeCount=36, +1)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: forfeiture, seized (+1.0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 10381262,
+      "case_name": "Kenneth John Jouppi v. State of Alaska, State of Alaska v. Kenneth John Jouppi",
+      "court": "Alaska Supreme Court",
+      "court_id": "alaska",
+      "date_filed": "2025-04-18",
+      "docket": "S18598, S18637",
+      "cite_count": 3,
+      "citation": [
+        "566 P.3d 943"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10381262/kenneth-john-jouppi-v-state-of-alaska-state-of-alaska-v-kenneth-john/",
+      "suit_nature": "",
+      "snippet": "Notice: This opinion is subject to correction before publication in the PACIFIC REPORTER.\n     Readers are requested to bring errors to the attention of the Clerk of the Appellate Courts,\n     303 K Street, Anchorage, Alaska 99501, phone (907) 264-0608, fax (907) 264-0878, email\n     corrections@akcourts.gov.\n\n\n\n              THE SUPREME COURT OF THE STATE OF ALASKA\n\nKENNETH J. JOUPPI,",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=3, +2)",
+        "1年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 4299125,
+      "case_name": "United States v. Thirty-Two Thousand Eight Hundred Twenty Dollars & Fifty-Six Cents ($32,820.56) in United States Currency",
+      "court": "Court of Appeals for the Eighth Circuit",
+      "court_id": "ca8",
+      "date_filed": "2016-09-30",
+      "docket": "15-2622, 15-2624",
+      "cite_count": 20,
+      "citation": [
+        "838 F.3d 930",
+        "95 Fed. R. Serv. 3d 1709",
+        "2016 U.S. App. LEXIS 17693",
+        "2016 WL 5496794"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4299125/united-states-v-thirty-two-thousand-eight-hundred-twenty-dollars/",
+      "suit_nature": "",
+      "snippet": "COLLOTON, Circuit Judge.\nIn May 2013, the Internal Revenue Service (“IRS”) seized $32,820.56 from Carole Hinders’s business bank account based on allegations that Hinders had unlawfully “structured” deposits to avoid federal currency reporting requirements. The government then .filed a civil forfeiture complaint against th.e seized currency. Hinders responded by filing claims to the seized proper",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "やや知られている (citeCount=20, +1)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: forfeiture, seized (+1.0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 4769079,
+      "case_name": "United States v. Selene Suarez",
+      "court": "Court of Appeals for the Fifth Circuit",
+      "court_id": "ca5",
+      "date_filed": "2020-07-17",
+      "docket": "19-40783",
+      "cite_count": 7,
+      "citation": [
+        "966 F.3d 376"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4769079/united-states-v-selene-suarez/",
+      "suit_nature": "Direct Criminal",
+      "snippet": "Case: 19-40783   Document: 00515494751     Page: 1   Date Filed: 07/17/2020\n\n\n\n\n        IN THE UNITED STATES COURT OF APPEALS\n                 FOR THE FIFTH CIRCUIT\n\n\n                                 No. 19-40783                   United States Court of Appeals\n                                                                         Fifth Circuit",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=7, +2)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 4879075,
+      "case_name": "United States v. Barrett Prelogar",
+      "court": "Court of Appeals for the Eighth Circuit",
+      "court_id": "ca8",
+      "date_filed": "2021-04-30",
+      "docket": "19-3405",
+      "cite_count": 4,
+      "citation": [
+        "996 F.3d 526"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4879075/united-states-v-barrett-prelogar/",
+      "suit_nature": "",
+      "snippet": "United States Court of Appeals\n                            For the Eighth Circuit\n                        ___________________________\n\n                                No. 19-3405\n                        ___________________________\n\n                             United States of America\n\n                                       Plaintiff - Appellee",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=4, +2)",
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 4405265,
+      "case_name": "State v. West",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2017-06-30",
+      "docket": "NO. C–150587",
+      "cite_count": 12,
+      "citation": [
+        "2017 Ohio 5596",
+        "93 N.E.3d 1221"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4405265/state-v-west/",
+      "suit_nature": "",
+      "snippet": "Myers, Judge.\n \n\n  {¶ 1} Defendant-appellant Jack West appeals the Hamilton County Common Pleas Court's judgment overruling his Crim.R. 32.1 motion to withdraw his guilty pleas to sexual battery. We reverse the judgment in part, upon our determination\n   that the court abused its discretion in overruling the motion without first conducting an evidentiary hearing on West's claim of actual inn",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=12, +2)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 4587704,
+      "case_name": "State v. Hill",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2019-02-06",
+      "docket": "C-180114",
+      "cite_count": 9,
+      "citation": [
+        "2019 Ohio 365"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4587704/state-v-hill/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Hill, 2019-Ohio-365.]\n\n\n\n                             IN THE COURT OF APPEALS\n                   FIRST APPELLATE DISTRICT OF OHIO\n                              HAMILTON COUNTY, OHIO\n\n\n\n\nSTATE OF OHIO,                            :          APPEAL NO. C-180114\n                                                     TRIAL NO. B-9103654\n          Plaintiff-Appellee,             :",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=9, +2)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 4404070,
+      "case_name": "State v. Gaven",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2017-06-27",
+      "docket": "16AP-645",
+      "cite_count": 7,
+      "citation": [
+        "2017 Ohio 5524"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4404070/state-v-gaven/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Gaven, 2017-Ohio-5524.]\n\n                             IN THE COURT OF APPEALS OF OHIO\n\n                                   TENTH APPELLATE DISTRICT\n\n\n\nState of Ohio,                                     :\n\n                 Plaintiff-Appellee,               :\n                                                                  No. 16AP-645\nv.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=7, +2)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 10131701,
+      "case_name": "Tatum v. Commissioner of Correction",
+      "court": "Supreme Court of Connecticut",
+      "court_id": "conn",
+      "date_filed": "2024-07-16",
+      "docket": "SC20727",
+      "cite_count": 7,
+      "citation": [
+        "349 Conn. 733"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10131701/tatum-v-commissioner-of-correction/",
+      "suit_nature": "",
+      "snippet": "************************************************\n   The “officially released” date that appears near the\nbeginning of an opinion is the date the opinion will be\npublished in the Connecticut Law Journal or the date it\nis released as a slip opinion. The operative date for the\nbeginning of all time periods for the filing of postopin-\nion motions and petitions for certification is the “offi-\ncially re",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=7, +2)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 4402091,
+      "case_name": "State v. Thomas",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2017-06-21",
+      "docket": "NOS. C–150581; C–150555",
+      "cite_count": 7,
+      "citation": [
+        "2017 Ohio 4403",
+        "93 N.E.3d 227"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4402091/state-v-thomas/",
+      "suit_nature": "",
+      "snippet": "Miller, Judge.\n \n\n  {¶ 1} Today, we hold that a motion for leave under Crim.R. 33(B) to file a motion for a new trial must be filed within a reasonable time of the defendant's discovery of new evidence. Our holding aligns us with all nine of our sister appellate districts to visit this issue.\n \n\n  {¶ 2} Defendant-appellant Lewis Thomas III appeals from the Hamilton County Co",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=7, +2)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 10125911,
+      "case_name": "Jardine, III v. State. Concurring and Dissenting Opinion by Devens, J. [ada].",
+      "court": "Hawaii Supreme Court",
+      "court_id": "haw",
+      "date_filed": "2024-09-27",
+      "docket": "SCAP-23-0000460",
+      "cite_count": 7,
+      "citation": [
+        "155 Haw. 60",
+        "556 P.3d 406"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10125911/jardine-iii-v-state-concurring-and-dissenting-opinion-by-devens-j/",
+      "suit_nature": "",
+      "snippet": "*** FOR PUBLICATION IN WEST’S HAWAI‘I REPORTS AND PACIFIC REPORTER ***\n\n\n\n\n                                                         Electronically Filed\n                                                         Supreme Court\n                                                         SCAP-XX-XXXXXXX\n                                                         27-SEP-2024",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=7, +2)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 6349486,
+      "case_name": "State v. Miller",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2022-02-10",
+      "docket": "110571",
+      "cite_count": 6,
+      "citation": [
+        "2022 Ohio 378"
+      ],
+      "url": "https://www.courtlistener.com/opinion/6349486/state-v-miller/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Miller, 2022-Ohio-378.]\n\n                                COURT OF APPEALS OF OHIO\n\n                              EIGHTH APPELLATE DISTRICT\n                                 COUNTY OF CUYAHOGA\n\nSTATE OF OHIO,                                    :\n\n                 Plaintiff-Appellee,              :\n                                                           No. 110571",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=6, +2)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 5294970,
+      "case_name": "State v. Murphy",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2021-11-04",
+      "docket": "110220 & 110483",
+      "cite_count": 6,
+      "citation": [
+        "2021 Ohio 3925"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5294970/state-v-murphy/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Murphy, 2021-Ohio-3925.]\n\n                             COURT OF AMPPEALS OF OHIO\n\n                             EIGHTH APPELLATE DISTRICT\n                                COUNTY OF CUYAHOGA\n\nSTATE OF OHIO,                                     :\n\n                Plaintiff-Appellee,                :\n                                                        Nos. 110220 and 110483",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=6, +2)",
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 9370399,
+      "case_name": "State v. Long",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2023-01-18",
+      "docket": "C-220164",
+      "cite_count": 4,
+      "citation": [
+        "2023 Ohio 132"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9370399/state-v-long/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Long, 2023-Ohio-132.]\n\n\n\n\n                            IN THE COURT OF APPEALS\n                   FIRST APPELLATE DISTRICT OF OHIO\n                             HAMILTON COUNTY, OHIO\n\n\n\n STATE OF OHIO,                           :          APPEAL NO. C-220164\n                                                     TRIAL NO. B-0402803\n         Plaintiff-Appellee,              :\n\n   vs.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=4, +2)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 4664963,
+      "case_name": "State v. Cannon",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2019-09-27",
+      "docket": "C-180474",
+      "cite_count": 2,
+      "citation": [
+        "2019 Ohio 3941"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4664963/state-v-cannon/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Cannon, 2019-Ohio-3941.]\n\n\n\n                           IN THE COURT OF APPEALS\n                  FIRST APPELLATE DISTRICT OF OHIO\n                            HAMILTON COUNTY, OHIO\n\n\n\n\nSTATE OF OHIO,                               :      APPEAL NO. C-180474\n                                                    TRIAL NO. B-9507633\n          Plaintiff-Appellee,                :",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=2, +2)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 4617594,
+      "case_name": "State v. Millow",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2019-05-08",
+      "docket": "C-180259",
+      "cite_count": 1,
+      "citation": [
+        "2019 Ohio 1751"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4617594/state-v-millow/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Millow, 2019-Ohio-1751.]\n\n\n                        IN THE COURT OF APPEALS\n               FIRST APPELLATE DISTRICT OF OHIO\n                         HAMILTON COUNTY, OHIO\n\n\n\nSTATE OF OHIO,                                     :   APPEAL NO. C-180259\n                                                       TRIAL NO. B-9908530\n      Plaintiff-Appellee,                          :",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=1, +2)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 4520522,
+      "case_name": "PARKER v. STATE",
+      "court": "Court of Civil Appeals of Oklahoma",
+      "court_id": "oklacivapp",
+      "date_filed": "2018-02-09",
+      "docket": "",
+      "cite_count": 1,
+      "citation": [
+        "414 P.3d 391",
+        "2018 OK CIV APP 15"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4520522/parker-v-state/",
+      "suit_nature": "",
+      "snippet": "PARKER v. STATE\r\n\r\n\r\n\r\n    \r\n\r\n\t\r\n    \r\n\t\r\n\t\r\n\t\r\n\t\tSkip to Main Content\r\n\t\tAccessibility Statement\r\n\t\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\tHelp\r\n\t\t\t\t\tContact Us\r\n\t\t\t\t\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\te",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=1, +2)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 9410420,
+      "case_name": "People v. Jackson",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2023-06-29",
+      "docket": "112302",
+      "cite_count": 6,
+      "citation": [
+        "217 A.D.3d 1271",
+        "192 N.Y.S.3d 706",
+        "2023 NY Slip Op 03510"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9410420/people-v-jackson/",
+      "suit_nature": "",
+      "snippet": "People v Jackson (2023 NY Slip Op 03510)\n\n\n\n\n\nPeople v Jackson\n\n\n2023 NY Slip Op 03510\n\n\nDecided on June 29, 2023\n\n\nAppellate Division, Third Department\n\n\n\nPublished by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=6, +2)",
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 10278596,
+      "case_name": "State v. Flores",
+      "court": "Supreme Court of Connecticut",
+      "court_id": "conn",
+      "date_filed": "2022-09-20",
+      "docket": "SC20512",
+      "cite_count": 5,
+      "citation": [
+        "344 Conn. 713"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10278596/state-v-flores/",
+      "suit_nature": "",
+      "snippet": "***********************************************\n    The “officially released” date that appears near the be-\nginning of each opinion is the date the opinion will be pub-\nlished in the Connecticut Law Journal or the date it was\nreleased as a slip opinion. The operative date for the be-\nginning of all time periods for filing postopinion motions\nand petitions for certification is the “officially rele",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=5, +2)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 4789165,
+      "case_name": "State v. R.L.R.",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2020-09-24",
+      "docket": "18AP-971",
+      "cite_count": 3,
+      "citation": [
+        "2020 Ohio 4577"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4789165/state-v-rlr/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. R.L.R., 2020-Ohio-4577.]\n\n                              IN THE COURT OF APPEALS OF OHIO\n\n                                   TENTH APPELLATE DISTRICT\n\n\nState of Ohio,                                     :\n\n                 Plaintiff-Appellee,               :           No. 18AP-971\n                                                          (C.P.C. No. 17CR-5510)\nv.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=3, +2)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 4598436,
+      "case_name": "State v. Parker",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2019-03-11",
+      "docket": "CA2017-12-176",
+      "cite_count": 2,
+      "citation": [
+        "2019 Ohio 830"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4598436/state-v-parker/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Parker, 2019-Ohio-830.]\n\n\n\n                                      IN THE COURT OF APPEALS\n\n                            TWELFTH APPELLATE DISTRICT OF OHIO\n\n                                            BUTLER COUNTY\n\n\n\n\nSTATE OF OHIO,                                    :\n\n        Appellee,                                 :     CASE NO. CA2017-12-176",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=2, +2)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 802015,
+      "case_name": "United States v. Maria Ferro",
+      "court": "Court of Appeals for the Ninth Circuit",
+      "court_id": "ca9",
+      "date_filed": "2012-06-11",
+      "docket": "10-55734, 10-56808",
+      "cite_count": 7,
+      "citation": [
+        "681 F.3d 1105"
+      ],
+      "url": "https://www.courtlistener.com/opinion/802015/united-states-v-maria-ferro/",
+      "suit_nature": "",
+      "snippet": "OPINION\n \n\n  BEA, Circuit Judge:\n \n\n  These cross-appeals arise from what we understand to be the largest civil\n  \n   in rem\n  \n  forfeiture proceeding against firearms unlawfully possessed by a convicted felon in American history. In dispute is a forfeiture order against hundreds of collectable",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=7, +2)",
+        "具体的な被害語: convicted, forfeiture (+1.0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 4383106,
+      "case_name": "United States v. Avan Nguyen",
+      "court": "Court of Appeals for the Fifth Circuit",
+      "court_id": "ca5",
+      "date_filed": "2017-04-13",
+      "docket": "16-10186",
+      "cite_count": 50,
+      "citation": [
+        "854 F.3d 276",
+        "2017 U.S. App. LEXIS 6390",
+        "119 A.F.T.R.2d (RIA) 1530"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4383106/united-states-v-avan-nguyen/",
+      "suit_nature": "Direct Criminal",
+      "snippet": "CARL E. STEWART, Chief Judge:\n \n\n  Defendant-Appellant Avan Nguyen pleaded guilty to aiding and assisting in the preparation of a false and fraudulent tax return. The district court imposed a 36-month above-Guidelines sentence based on the 18 U.S.C. § 3553(a) factors and its conclusion that it was more likely than not that Nguyen participated in the uncharged offense of currency stru",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "やや知られている (citeCount=50, +1)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: sentence (+0.5)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8442609,
+      "case_name": "United States v. Taylor",
+      "court": "Court of Appeals for the Second Circuit",
+      "court_id": "ca2",
+      "date_filed": "2016-03-02",
+      "docket": "No. 14-360-CR",
+      "cite_count": 35,
+      "citation": [
+        "816 F.3d 12",
+        "2016 U.S. App. LEXIS 3837",
+        "2016 WL 805638"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8442609/united-states-v-taylor/",
+      "suit_nature": "",
+      "snippet": "DRONEY, Circuit Judge:\nDefendant-Appellant Dewey Taylor appeals from a judgment entered in the United States District Court for the Western District of New York (Arcara, ./.), following a jury trial, convicting him of one count of conspiracy to distribute or possess with the intent to distribute 500 grams or more of cocaine in violation of 21 U.S.C. §§ 841(a)(1), 841(b)(1)(B), and 846,. and seven",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "やや知られている (citeCount=35, +1)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: convicting (+0.5)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8718505,
+      "case_name": "United States v. Haleamau",
+      "court": "District Court, D. Hawaii",
+      "court_id": "hid",
+      "date_filed": "2012-08-01",
+      "docket": "Crim. No. 10-00567 HG",
+      "cite_count": 1,
+      "citation": [
+        "887 F. Supp. 2d 1051",
+        "2012 WL 3394952",
+        "2012 U.S. Dist. LEXIS 107333"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8718505/united-states-v-haleamau/",
+      "suit_nature": "",
+      "snippet": "AMENDED ORDER REGARDING THE FORFEITURE OF DEFENDANT BRANDON C. HALEAMAU’S INTEREST IN: 1) $354,421.70 SEIZED FROM HAWAII STATE FEDERAL CREDIT UNION ACCOUNT; 2) ONE SILVER 2009 ACURA TSX 4-DOOR SEDAN; 3) ONE GREY 2009 NISSAN GT-R 2-DOOR SEDAN; AND 4) ONE GREY 2008 LEXUS IS F 4-DOOR SEDAN\nHELEN GILLMOR, District Judge.\nDefendant Brandon C. Haleamau pled guilty to five counts of illegally importing",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=1, +2)",
+        "具体的な被害語: forfeiture, seized (+1.0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 6002182,
+      "case_name": "People v. Jaeger",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2012-06-14",
+      "docket": "",
+      "cite_count": 13,
+      "citation": [
+        "96 A.D.3d 1172",
+        "946 N.Y.S.2d 680"
+      ],
+      "url": "https://www.courtlistener.com/opinion/6002182/people-v-jaeger/",
+      "suit_nature": "",
+      "snippet": "Peters, P.J.\nAppeal from a judgment of the County Court of Sullivan County (LaBuda, J.), rendered April 28, 2011, upon a verdict convicting defendant of the crimes of course of sexual conduct against a child in the second degree, endangering the welfare of a child (four counts) and forcible touching.\n*1173Based upon allegations that defendant had subj",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=13, +2)",
+        "具体的な被害語: child, convicting (+1.0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 4445737,
+      "case_name": "Commonwealth v. Chmiel, D., Aplt.",
+      "court": "Supreme Court of Pennsylvania",
+      "court_id": "pa",
+      "date_filed": "2017-11-22",
+      "docket": "726 CAP",
+      "cite_count": 89,
+      "citation": [
+        "173 A.3d 617"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4445737/commonwealth-v-chmiel-d-aplt/",
+      "suit_nature": "",
+      "snippet": "OPINION JUSTICE WECHT In 2002, David Chmiel was convicted and sentenced to death for the murder of three elderly siblings.1 At Chmiel’s 2002 trial, the Commonwealth relied upon, the testimony of a state police forensic examiner, who opined that hair found at the crime scene was microscopically similar to Chmiel’s hair. On April",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: convicted, death, sentenced (+1.5)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 4340744,
+      "case_name": "United States v. Kofi Agyekum",
+      "court": "Court of Appeals for the Fourth Circuit",
+      "court_id": "ca4",
+      "date_filed": "2017-01-24",
+      "docket": "15-4479",
+      "cite_count": 16,
+      "citation": [
+        "846 F.3d 744",
+        "2017 WL 344982",
+        "2017 U.S. App. LEXIS 1220"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4340744/united-states-v-kofi-agyekum/",
+      "suit_nature": "",
+      "snippet": "Affirmed by published opinion. Judge NIEMEYER wrote the opinion, in which Judge. MOTZ concurred and Judge WYNN concurred in part. Judge WYNN wrote a separate opinion concurring in part and dissenting in part.\nNIEMEYER, Circuit Judge:\nPursuant to a plea agreement, Kofi Agyekum pleaded guilty to two counts of structuring cash transactions to evade reporting requirements, in violation of 31 U.S.C. §",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "やや知られている (citeCount=16, +1)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8724258,
+      "case_name": "United States v. $263,327.95",
+      "court": "District Court, D. New Jersey",
+      "court_id": "njd",
+      "date_filed": "2013-03-27",
+      "docket": "Civ. No. 2:12-cv-01914 (WJM)",
+      "cite_count": 2,
+      "citation": [
+        "936 F. Supp. 2d 468",
+        "2013 WL 1285407",
+        "2013 U.S. Dist. LEXIS 43788"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8724258/united-states-v-26332795/",
+      "suit_nature": "",
+      "snippet": "OPINION\nWILLIAM J. MARTINI, District Judge.\nPlaintiff United States of America (the “Government”) brings this civil forfeiture action to forfeit and condemn a total of $263,327.95. This matter comes before the Court on a motion to dismiss filed by Claimant Steve N. Chan (“Chan”). There was no oral argument. Fed.R.Civ.P. 78(b). For the reasons set forth below, the motion to dismiss is DENIED.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=2, +2)",
+        "具体的な被害語: forfeiture (+0.5)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 7327177,
+      "case_name": "United States v. Fisher",
+      "court": "District Court, W.D. New York",
+      "court_id": "nywd",
+      "date_filed": "2017-06-28",
+      "docket": "15-CR-19-A",
+      "cite_count": 0,
+      "citation": [
+        "273 F. Supp. 3d 354"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7327177/united-states-v-fisher/",
+      "suit_nature": "",
+      "snippet": "DECISION AND ORDER\nHONORABLE RICHARD J. ARCARA, UNITED STATES DISTRICT JUDGE\nThe Defendant, Georgina Fisher, is charged with eight counts of structuring, in violation of 31 U.S.C. § 5324(a)(1). She has made a number of arguments for dismissal, based primarily on the Government’s conduct before the grand jury, as well as the Government’s efforts to forfeit her home in the event of a conviction. In",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: conviction, home (+1.0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 4778177,
+      "case_name": "Crystal Weimer v. County of Fayette",
+      "court": "Court of Appeals for the Third Circuit",
+      "court_id": "ca3",
+      "date_filed": "2020-08-25",
+      "docket": "19-1823",
+      "cite_count": 56,
+      "citation": [
+        "972 F.3d 177"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4778177/crystal-weimer-v-county-of-fayette/",
+      "suit_nature": "",
+      "snippet": "PRECEDENTIAL\n\n      UNITED STATES COURT OF APPEALS\n           FOR THE THIRD CIRCUIT\n                   ______\n\n                     No. 19-1823\n                       ______\n\n            CRYSTAL DAWN WEIMER\n\n                          v.\n\n    COUNTY OF FAYETTE, PENNSYLVANIA;\n OFFICE OF THE FAYETTE COUNTY OF DISTRICT\n                 ATTORNEY;\n  NANCY D. VERNON",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "やや知られている (citeCount=56, +1)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 2755199,
+      "case_name": "One (1) 2011 Chevrolet Silverado 1500 v. Panola County Narcotics Task Force",
+      "court": "Court of Appeals of Mississippi",
+      "court_id": "missctapp",
+      "date_filed": "2014-11-25",
+      "docket": "2013-CA-01255-COA",
+      "cite_count": 0,
+      "citation": [
+        "169 So. 3d 967",
+        "2014 Miss. App. LEXIS 682",
+        "2014 WL 6657140"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2755199/one-1-2011-chevrolet-silverado-1500-v-panola-county-narcotics-task-force/",
+      "suit_nature": "",
+      "snippet": "ROBERTS, J.,\n \n\n  for the Court:\n \n\n  ¶ 1. Kelly Bowen Wilson and her son, Stephen Elliott Pergande, appeal the Pa-nola County Circuit Court’s judgment finding that their jointly owned vehicle was subject to forfeiture after Pergande pled guilty to conspiracy to possess cocaine. Pursuant to a plea agreement, Per-gande’s guilty plea was deferred, and he was placed o",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "12年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: forfeiture (+0.5)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 7930414,
+      "case_name": "Mikell v. State",
+      "court": "Court of Appeals of Georgia",
+      "court_id": "gactapp",
+      "date_filed": "2014-11-20",
+      "docket": "A14A1153",
+      "cite_count": 0,
+      "citation": [
+        "329 Ga. App. 830",
+        "766 S.E.2d 233",
+        "2014 Ga. App. LEXIS 786"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7930414/mikell-v-state/",
+      "suit_nature": "",
+      "snippet": "Phipps, Chief Judge.\nIn this civil in rem forfeiture action, Ricky Mikell appeals the trial court’s order finding that his residence was subject to forfeiture because the property had been used to facilitate a drug transaction. Mikell contends that the trial court erred by failing to perform the proper constitutional analysis on the record. As discussed below, the record does not reveal whether t",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "12年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: forfeiture (+0.5)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8441495,
+      "case_name": "United States v. Lang",
+      "court": "Court of Appeals for the Eleventh Circuit",
+      "court_id": "ca11",
+      "date_filed": "2013-10-03",
+      "docket": "No. 12-13608",
+      "cite_count": 3,
+      "citation": [
+        "732 F.3d 1246",
+        "2013 WL 5486771"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8441495/united-states-v-lang/",
+      "suit_nature": "",
+      "snippet": "CARNES, Chief Judge:\nThe lifeblood of many crimes is cash. So that federal law enforcement can more readily trace the flow of large amounts of cash, the law requires a financial institution to file with the Department of the Treasury reports of cash transactions by any person on a single day that exceed $10,000. If that were all, the reporting requirement could be evaded through the simple expedi",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=3, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 9327421,
+      "case_name": "Middleton (David) v. Warden (Death Penalty-Pc)",
+      "court": "Nevada Supreme Court",
+      "court_id": "nev",
+      "date_filed": "2022-12-02",
+      "docket": "81217",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/9327421/middleton-david-v-warden-death-penalty-pc/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPREME COURT OF THE STATE OF NEVADA\n\n\n                DAVID STEPHEN MIDDLETON,                                No. 81217\n                Appellant,\n                vs.\n                WILLIAM A. GITTERE, WARDEN,\n                                                                            FILED\n                Respondent.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 8241089,
+      "case_name": "Jimmy A. Richardson, II, Solicitor for the 15th Judicial Circuit v. Twenty Thousand Seven Hundred Seventy-One, U.S. Currency and Travis Green",
+      "court": "Supreme Court of South Carolina",
+      "court_id": "sc",
+      "date_filed": "2022-09-14",
+      "docket": "2020-000092",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/8241089/jimmy-a-richardson-ii-solicitor-for-the-15th-judicial-circuit-v-twenty/",
+      "suit_nature": "",
+      "snippet": "THE STATE OF SOUTH CAROLINA\n              In The Supreme Court\n\nJimmy A. Richardson, II, Solicitor for the 15th Judicial\nCircuit, on behalf of the 15th Circuit Drug Enforcement\nUnit, Appellant,\n\nv.\n\nTwenty Thousand Seven Hundred Seventy-One and\n00/100 Dollars ($20,771.00), U.S. Currency and Travis\nGreen, Respondents.\n\nAppellate Case No. 2020-000092\n\n\n\n                Appeal from Horry Cou",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 9425973,
+      "case_name": "In re: 4714 Morann Ave., Houtzdale, Clearfield County, PA ~ Appeal of: Com. of PA",
+      "court": "Commonwealth Court of Pennsylvania",
+      "court_id": "pacommwct",
+      "date_filed": "2023-09-13",
+      "docket": "909 C.D. 2022",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/9425973/in-re-4714-morann-ave-houtzdale-clearfield-county-pa-appeal-of-com/",
+      "suit_nature": "",
+      "snippet": "IN THE COMMONWEALTH COURT OF PENNSYLVANIA\n\nIn re: 4714 Morann Avenue,                  :\nHoutzdale, Clearfield County,               :\nPennsylvania                                :       No. 909 C.D. 2022\n                                            :       Argued: May 8, 2023\nAppeal of: Commonwealth of                  :\nPennsylvania                                :\n\n\nBEFORE:",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 4394423,
+      "case_name": "Commonwealth, Aplt. v. 1997 Chevrolet, etc.",
+      "court": "Supreme Court of Pennsylvania",
+      "court_id": "pa",
+      "date_filed": "2017-05-25",
+      "docket": "Commonwealth, Aplt. v. 1997 Chevrolet, etc. - No. 29 EAP 2015",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4394423/commonwealth-aplt-v-1997-chevrolet-etc/",
+      "suit_nature": "",
+      "snippet": "[J-68A-B-2016]\n                  IN THE SUPREME COURT OF PENNSYLVANIA\n                             EASTERN DISTRICT\n\n       SAYLOR, C.J., BAER, TODD, DONOHUE, DOUGHERTY, WECHT, JJ.\n\n\nCOMMONWEALTH OF PENNSYLVANIA,             :   No. 29 EAP 2015\n                                          :\n                   Appellant              :   Appeal from the Order of the",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 5093268,
+      "case_name": "USA v. LightRay Captl",
+      "court": "Court of Appeals for the Fifth Circuit",
+      "court_id": "ca5",
+      "date_filed": "2021-09-13",
+      "docket": "20-20471",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/5093268/usa-v-lightray-captl/",
+      "suit_nature": "United States Civil",
+      "snippet": "Case: 20-20471    Document: 00516011970        Page: 1     Date Filed: 09/13/2021\n\n\n\n\n           United States Court of Appeals\n                for the Fifth Circuit                         United States Court of Appeals\n                                                                       Fifth Circuit\n\n                                                                     FILED",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 10593069,
+      "case_name": "THE STATE OF OKLAHOMA ex rel. PANTER v. MCVEA",
+      "court": "Court of Civil Appeals of Oklahoma",
+      "court_id": "oklacivapp",
+      "date_filed": "2025-04-11",
+      "docket": "121868",
+      "cite_count": 0,
+      "citation": [
+        "2025 OK CIV APP 13"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10593069/the-state-of-oklahoma-ex-rel-panter-v-mcvea/",
+      "suit_nature": "",
+      "snippet": "OSCN Found Document:THE STATE OF OKLAHOMA ex rel. PANTER v. MCVEA\n\n\t\t\t\t\t\n\n\t\t\t\t\n  \n\n\n\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\tPrevious Case\n\n\t\t\t\t\t\t\n\t\t\t\t\t\tTop Of Index\n\n\t\t\t\t\t\t\n\t\t\t\t\t\tThis Point in Index\n\n\t\t\t\t\t\t\n\t\t\t\t\t\tCitationize\n\n\t\t\t\t\t\t\n\t\t\t\t\t\tNext Case",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "1年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 10277513,
+      "case_name": "United States v. Fifty-Three Virtual Currency Accounts",
+      "court": "District Court, District of Columbia",
+      "court_id": "dcd",
+      "date_filed": "2024-11-19",
+      "docket": "Civil Action No. 2020-2227",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10277513/united-states-v-fifty-three-virtual-currency-accounts/",
+      "suit_nature": "",
+      "snippet": "UNITED STATES DISTRICT COURT\n                           FOR THE DISTRICT OF COLUMBIA\n\nUNITED STATES OF AMERICA,                        :\n                                                 :      Civil Action No.:      20-2227 (RC)\n                                                 :\n       v.                                        :      Re Document No.:       54, 62, 68",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 4788909,
+      "case_name": "State v. Cody",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2020-09-24",
+      "docket": "108913",
+      "cite_count": 0,
+      "citation": [
+        "2020 Ohio 4566"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4788909/state-v-cody/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Cody, 2020-Ohio-4566.]\n\n                               COURT OF APPEALS OF OHIO\n\n                              EIGHTH APPELLATE DISTRICT\n                                 COUNTY OF CUYAHOGA\n\nSTATE OF OHIO,                                   :\n\n                 Plaintiff-Appellee,             :\n                                                           No. 108913\n                 v.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 7311437,
+      "case_name": "United States v. Thirty-two Thousand Eight Hundred Twenty Dollars & Fifty-Six Cents",
+      "court": "District Court, N.D. Iowa",
+      "court_id": "iand",
+      "date_filed": "2015-01-09",
+      "docket": "No. C13-4102-LTS",
+      "cite_count": 0,
+      "citation": [
+        "79 F. Supp. 3d 927",
+        "2015 U.S. Dist. LEXIS 2309",
+        "2015 WL 134046"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7311437/united-states-v-thirty-two-thousand-eight-hundred-twenty-dollars/",
+      "suit_nature": "",
+      "snippet": "ORDER\nLEONARD T. STRAND, United States Magistrate Judge.\nI. INTRODUCTION\nThis case is before me on a motion (Doc. No. 25) by plaintiff the United States of America (USA) to dismiss without prejudice. Claimants Carole Hinders and Mrs. Lady’s Inc. (Claimants) have filed a resistance (Doc. No. 28) in which they contend, among other things, that any dismissal of this action must b",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "12年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8699122,
+      "case_name": "Thomas v. United States",
+      "court": "Court of Appeals for the Eleventh Circuit",
+      "court_id": "ca11",
+      "date_filed": "2017-03-01",
+      "docket": "No. 15-15502",
+      "cite_count": 0,
+      "citation": [
+        "681 F. App'x 787"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8699122/thomas-v-united-states/",
+      "suit_nature": "",
+      "snippet": "PER CURIAM:\nAlvin Thomas, proceeding pro se, appeals the district court’s denial of his motion for return of property and his related motion for reconsideration. The district court granted the government’s motion for reconsideration of a previous order mandating an evidentiary hearing on Thomas’s motion for return of property under 18 U.S.C. § 983(e). On appeal, Thomas argues that the district co",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 10750585,
+      "case_name": "United States v. Anthony Sabaini",
+      "court": "Court of Appeals for the Seventh Circuit",
+      "court_id": "ca7",
+      "date_filed": "2025-12-10",
+      "docket": "23-3216",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10750585/united-states-v-anthony-sabaini/",
+      "suit_nature": "",
+      "snippet": "In the\n\n    United States Court of Appeals\n                 For the Seventh Circuit\n                     ____________________\nNo. 23-3216\nUNITED STATES OF AMERICA,\n                                                   Plaintiff-Appellee,\n                                 v.\n\nANTHONY SABAINI,\n                                               Defendant-Appellant.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "1年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 4441288,
+      "case_name": "State v. Williams",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2017-11-08",
+      "docket": "28572",
+      "cite_count": 0,
+      "citation": [
+        "2017 Ohio 8475"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4441288/state-v-williams/",
+      "suit_nature": "",
+      "snippet": "[Cite as State v. Williams, 2017-Ohio-8475.]\n\n\nSTATE OF OHIO                     )                 IN THE COURT OF APPEALS\n                                  )ss:              NINTH JUDICIAL DISTRICT\nCOUNTY OF SUMMIT                  )\n\nSTATE OF OHIO                                       C.A. No.     28572\n\n        Appellee\n\n        v.                                          APPEAL FROM JUDGMENT",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 8247287,
+      "case_name": "Myers v. State",
+      "court": "Connecticut Appellate Court",
+      "court_id": "connappct",
+      "date_filed": "2022-10-11",
+      "docket": "AC44736",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/8247287/myers-v-state/",
+      "suit_nature": "",
+      "snippet": "***********************************************\n    The “officially released” date that appears near the be-\nginning of each opinion is the date the opinion will be pub-\nlished in the Connecticut Law Journal or the date it was\nreleased as a slip opinion. The operative date for the be-\nginning of all time periods for filing postopinion motions\nand petitions for certification is the “officially rele",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 10312753,
+      "case_name": "State Of Washington, V. Jerry Lee Brock",
+      "court": "Court of Appeals of Washington",
+      "court_id": "washctapp",
+      "date_filed": "2025-01-13",
+      "docket": "86617-6",
+      "cite_count": 0,
+      "citation": [
+        "561 P.3d 1226"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10312753/state-of-washington-v-jerry-lee-brock/",
+      "suit_nature": "",
+      "snippet": "IN THE COURT OF APPEALS OF THE STATE OF WASHINGTON\n\n JERRY LEE BROCK,                           No. 86617-6-I\n\n                         Appellant,         DIVISION ONE\n\n              v.\n                                            PUBLISHED OPINION\n STATE OF WASHINGTON,\n\n                         Respondent.\n\n\n      SMITH, C.J. — In July 2013, the Washington Legislature enacted the\n\nwrongly c",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 10133858,
+      "case_name": "Hawai'i Police Department v. Kubota.",
+      "court": "Hawaii Supreme Court",
+      "court_id": "haw",
+      "date_filed": "2024-10-10",
+      "docket": "SCPW-24-0000537",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10133858/hawaii-police-department-v-kubota/",
+      "suit_nature": "",
+      "snippet": "*** FOR PUBLICATION IN WEST’S HAWAI‘I REPORTS AND PACIFIC REPORTER ***\n\n\n\n\n                                                         Electronically Filed\n                                                         Supreme Court\n                                                         SCPW-XX-XXXXXXX\n                                                         10-OCT-2024",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 4552648,
+      "case_name": "Christopher Miranda v. State",
+      "court": "Texas Court of Appeals, 8th District (El Paso)",
+      "court_id": "txctapp8",
+      "date_filed": "2018-11-09",
+      "docket": "08-15-00349-CR",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4552648/christopher-miranda-v-state/",
+      "suit_nature": "",
+      "snippet": "COURT OF APPEALS\n                                EIGHTH DISTRICT OF TEXAS\n                                     EL PASO, TEXAS\n\n\n  CHRISTOPHER MIRANDA,                            §\n                                                                  No. 08-15-00349-CR\n                               Appellant,         §",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 10275016,
+      "case_name": "People v. Adams",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2024-11-15",
+      "docket": "775 KA 23-00834",
+      "cite_count": 0,
+      "citation": [
+        "2024 NY Slip Op 05729"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10275016/people-v-adams/",
+      "suit_nature": "",
+      "snippet": "People v Adams (2024 NY Slip Op 05729)\n\n\n\n\n\nPeople v Adams\n\n\n2024 NY Slip Op 05729\n\n\nDecided on November 15, 2024\n\n\nAppellate Division, Fourth Department\n\n\n\nPublished by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 4666360,
+      "case_name": "People v. Kaba",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2019-10-02",
+      "docket": "Ind. No. 10167/12",
+      "cite_count": 0,
+      "citation": [
+        "2019 NY Slip Op 7093"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4666360/people-v-kaba/",
+      "suit_nature": "",
+      "snippet": "People v Kaba (2019 NY Slip Op 07093)\r\n\r\n\r\n\r\n\r\n\r\nPeople v Kaba\r\n\r\n\r\n2019 NY Slip Op 07093\r\n\r\n\r\nDecided on October 2, 2019\r\n\r\n\r\nAppellate Division, Second Department\r\n\r\n\r\n\r\nPublished by New York State Law Reporting Bureau pursuant to Judiciary Law § 431",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 4647234,
+      "case_name": "State v. Fana-Ruiz",
+      "court": "Superior Court of Delaware",
+      "court_id": "delsuperct",
+      "date_filed": "2019-08-09",
+      "docket": "1609020626 & 1609020620",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4647234/state-v-fana-ruiz/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPERIOR COURT OF THE STATE OF DELAWARE\n\n\n\nSTATE OF DELAWARE                            )\n                                             )\n       v.                                    ) I.D. No.     1609020626\n                                             )              1609020620\nBEATRIZ Y. FANA-RUIZ,                        )\n                                             )",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 10000295,
+      "case_name": "People of Michigan v. Damon Earl Warner",
+      "court": "Michigan Supreme Court",
+      "court_id": "mich",
+      "date_filed": "2024-07-11",
+      "docket": "163805",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10000295/people-of-michigan-v-damon-earl-warner/",
+      "suit_nature": "",
+      "snippet": "Michigan Supreme Court\n                                                                                           Lansing, Michigan\n\n\n\n\nSyllabus\n                                                             Chief Justice:             Justices:\n                                                              Elizabeth",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 4644462,
+      "case_name": "People v. Robinson",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2019-07-31",
+      "docket": "526 KA 16-02335",
+      "cite_count": 0,
+      "citation": [
+        "2019 NY Slip Op 5907"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4644462/people-v-robinson/",
+      "suit_nature": "",
+      "snippet": "People v Robinson (2019 NY Slip Op 05907)\r\n\r\n\r\n\r\n\r\n\r\nPeople v Robinson\r\n\r\n\r\n2019 NY Slip Op 05907\r\n\r\n\r\nDecided on July 31, 2019\r\n\r\n\r\nAppellate Division, Fourth Department\r\n\r\n\r\n\r\nPublished by New York State Law Reporting Bureau pursuant to Judiciary Law",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 9371124,
+      "case_name": "State of Iowa v. Gowun Park",
+      "court": "Supreme Court of Iowa",
+      "court_id": "iowa",
+      "date_filed": "2023-01-27",
+      "docket": "21-0756",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/9371124/state-of-iowa-v-gowun-park/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPREME COURT OF IOWA\n\n                                   No. 21–0756\n\n            Submitted November 16, 2022—Filed January 27, 2023\n\n\nSTATE OF IOWA,\n\n      Appellant,\n\nvs.\n\nGOWUN PARK,\n\n      Appellee.\n\n\n      On review from the Iowa Court of Appeals.\n\n      Appeal from the Iowa District Court for Dallas County, Brad McCall,\n\nJudge.\n\n      The State seeks further review",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 10338108,
+      "case_name": "State v. Reynolds",
+      "court": "Court of Appeals of Kansas",
+      "court_id": "kanctapp",
+      "date_filed": "2025-02-07",
+      "docket": "126940",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10338108/state-v-reynolds/",
+      "suit_nature": "",
+      "snippet": "No. 126,940\n\n            IN THE COURT OF APPEALS OF THE STATE OF KANSAS\n\n\n                                    STATE OF KANSAS,\n                                        Appellee,\n\n                                             v.\n\n                                    HENRY REYNOLDS,\n                                       Appellant.\n\n\n                             S",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "1年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 4635271,
+      "case_name": "People v. Morris",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2019-06-28",
+      "docket": "25 KA 18-00335",
+      "cite_count": 0,
+      "citation": [
+        "2019 NY Slip Op 5264"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4635271/people-v-morris/",
+      "suit_nature": "",
+      "snippet": "People v Morris (2019 NY Slip Op 05264)\r\n\r\n\r\n\r\n\r\n\r\nPeople v Morris\r\n\r\n\r\n2019 NY Slip Op 05264\r\n\r\n\r\nDecided on June 28, 2019\r\n\r\n\r\nAppellate Division, Fourth Department\r\n\r\n\r\n\r\nPublished by New York State Law Reporting Bureau pursuant to Judiciary Law § 4",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 4756741,
+      "case_name": "United States v. Manlambus",
+      "court": "Navy-Marine Corps Court of Criminal Appeals",
+      "court_id": "nmcca",
+      "date_filed": "2020-05-27",
+      "docket": "201900080",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4756741/united-states-v-manlambus/",
+      "suit_nature": "",
+      "snippet": "This opinion is subject to administrative correction before final disposition.\n\n\n\n\n                               Before\n                  TANG, LAWRENCE, and STEPHENS\n                      Appellate Military Judges\n\n                        _________________________\n\n                          UNITED STATES\n                              Appellee\n\n                                     v.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 6620630,
+      "case_name": "People v. Caparaz",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2022-06-30",
+      "docket": "A158473",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/6620630/people-v-caparaz/",
+      "suit_nature": "",
+      "snippet": "Filed 6/30/22\n                 CERTIFIED FOR PARTIAL PUBLICATION*\n\n         IN THE COURT OF APPEAL OF THE STATE OF CALIFORNIA\n\n                          FIRST APPELLATE DISTRICT\n\n                                  DIVISION TWO\n\n\n    THE PEOPLE,\n         Plaintiff and Respondent,\n                                               A158473\n    v.\n    ALVIN VILLETE CAPARAZ,                     (Napa County",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 10327738,
+      "case_name": "People v. Sobers",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2025-02-05",
+      "docket": "Ind. No. 2788/15",
+      "cite_count": 0,
+      "citation": [
+        "2025 NY Slip Op 00679"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10327738/people-v-sobers/",
+      "suit_nature": "",
+      "snippet": "People v Sobers (2025 NY Slip Op 00679)\n\n\n\n\n\nPeople v Sobers\n\n\n2025 NY Slip Op 00679\n\n\nDecided on February 5, 2025\n\n\nAppellate Division, Second Department\n\n\n\nPublished by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "1年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 4739451,
+      "case_name": "People v. Hernandez",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2020-03-26",
+      "docket": "4863/12 -430 11259",
+      "cite_count": 0,
+      "citation": [
+        "2020 NY Slip Op 2100"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4739451/people-v-hernandez/",
+      "suit_nature": "",
+      "snippet": "People v Hernandez (2020 NY Slip Op 02100)\r\n\r\n\r\n\r\n\r\n\r\nPeople v Hernandez\r\n\r\n\r\n2020 NY Slip Op 02100\r\n\r\n\r\nDecided on March 26, 2020\r\n\r\n\r\nAppellate Division, First Department\r\n\r\n\r\n\r\nPublished by New York State Law Reporting Bureau pursuant to Judiciary L",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 4798649,
+      "case_name": "Commonwealth v. Chmiel, D., Aplt.",
+      "court": "Supreme Court of Pennsylvania",
+      "court_id": "pa",
+      "date_filed": "2020-10-21",
+      "docket": "780 CAP",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4798649/commonwealth-v-chmiel-d-aplt/",
+      "suit_nature": "",
+      "snippet": "[J-63-2020]\n                     IN THE SUPREME COURT OF PENNSYLVANIA\n                                EASTERN DISTRICT\n\n   SAYLOR, C.J., BAER, TODD, DONOHUE, DOUGHERTY, WECHT, MUNDY, JJ.\n\nCOMMONWEALTH OF PENNSYLVANIA                  :   No. 780 CAP\n                                              :\n                 Appellee                     :   Appeal from the O",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 4780543,
+      "case_name": "Eddie Lee Howard, Jr. v. State of Mississippi",
+      "court": "Mississippi Supreme Court",
+      "court_id": "miss",
+      "date_filed": "2020-08-27",
+      "docket": "2018-CA-01586-SCT",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4780543/eddie-lee-howard-jr-v-state-of-mississippi/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPREME COURT OF MISSISSIPPI\n\n                        NO. 2018-CA-01586-SCT\n\nEDDIE LEE HOWARD, JR.\n\nv.\n\nSTATE OF MISSISSIPPI\n\n\nDATE OF JUDGMENT:               10/10/2018\nTRIAL JUDGE:                    HON. LEE J. HOWARD\nTRIAL COURT ATTORNEYS:          LOUWLYNN VANZETTA WILLIAMS\n                                ROBERT M. RYAN\n                                WILLIAM TUCKER CAR",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 10881772,
+      "case_name": "State of Louisiana v. Jimmie C. Duncan",
+      "court": "Supreme Court of Louisiana",
+      "court_id": "la",
+      "date_filed": "2026-06-29",
+      "docket": "2025-KP-01014",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10881772/state-of-louisiana-v-jimmie-c-duncan/",
+      "suit_nature": "",
+      "snippet": "FOR IMMEDIATE NEWS RELEASE                                                    NEWS RELEASE #030\n\n\nFROM: CLERK OF SUPREME COURT OF LOUISIANA\n\n\nThe Opinions handed down on the 29th day of June, 2026 are as follows:\n\nBY Cole, J.:\n\n 2025-KP-01014            STATE OF LOUISIANA VS. JIMMIE C. DUNCAN (Parish of Ouachita)\n\n                          AFFIRMED. RELIEF GRANTED UNDER LA.C.CR.P. ART. 930.3(8).",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "0年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 4445739,
+      "case_name": "Commonwealth v. Chmiel, D., Aplt.",
+      "court": "Supreme Court of Pennsylvania",
+      "court_id": "pa",
+      "date_filed": "2017-11-22",
+      "docket": "726 CAP",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4445739/commonwealth-v-chmiel-d-aplt/",
+      "suit_nature": "",
+      "snippet": "[J-21-2017] [MO: Wecht, J.]\n                   IN THE SUPREME COURT OF PENNSYLVANIA\n                                EASTERN DISTRICT\n\n\nCOMMONWEALTH OF PENNSYLVANIA,                 :   No. 726 CAP\n                                              :\n                     Appellee                 :   Appeal from the Order dated May 2,",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 4850875,
+      "case_name": "State of Tennessee v. Jack Edward Thomas",
+      "court": "Court of Criminal Appeals of Tennessee",
+      "court_id": "tenncrimapp",
+      "date_filed": "2021-01-26",
+      "docket": "E2020-00044-CCA-R3-CD",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4850875/state-of-tennessee-v-jack-edward-thomas/",
+      "suit_nature": "",
+      "snippet": "01/26/2021\n        IN THE COURT OF CRIMINAL APPEALS OF TENNESSEE\n                         AT KNOXVILLE\n                               November 17, 2020 Session\n\n            STATE OF TENNESSEE v. JACK EDWARD THOMAS\n\n                 Appeal from the Criminal Court for McMinn County\n                   No. 19-",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 10338105,
+      "case_name": "In re Wrongful Conviction of Warsame",
+      "court": "Supreme Court of Kansas",
+      "court_id": "kan",
+      "date_filed": "2025-02-14",
+      "docket": "126950",
+      "cite_count": 4,
+      "citation": [
+        "563 P.3d 1281"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10338105/in-re-wrongful-conviction-of-warsame/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPREME COURT OF THE STATE OF KANSAS\n\n\n                                              No. 126,950\n\n                           In the Matter of the Wrongful Conviction of\n                                    SHARMARKE WARSAME.\n\n\n                                  SYLLABUS BY THE COURT\n\n1.\n        To receive compensation for a wrongful conviction, a claimant is required to\nprove",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 4.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=4, +2)",
+        "1年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: conviction (+0.5)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 10035701,
+      "case_name": "In re Wrongful Conviction of Doelz",
+      "court": "Supreme Court of Kansas",
+      "court_id": "kan",
+      "date_filed": "2024-08-09",
+      "docket": "125740",
+      "cite_count": 1,
+      "citation": [
+        "553 P.3d 969"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10035701/in-re-wrongful-conviction-of-doelz/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPREME COURT OF THE STATE OF KANSAS\n\n\n                                              No. 125,740\n\n                           In the Matter of the Wrongful Conviction of\n                                   ROBERT WILLIAM DOELZ.\n\n\n                                  SYLLABUS BY THE COURT\n\n        Before a person can be compensated for time spent incarcerated while wrongfully\ncon",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 4.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: conviction (+0.5)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 6002185,
+      "case_name": "People v. Jaeger",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2012-06-14",
+      "docket": "",
+      "cite_count": 0,
+      "citation": [
+        "96 A.D.3d 1172",
+        "946 N.Y.S.2d 680"
+      ],
+      "url": "https://www.courtlistener.com/opinion/6002185/people-v-jaeger/",
+      "suit_nature": "",
+      "snippet": "Peters, P.J.\nAppeal from a judgment of the County Court of Sullivan County (LaBuda, J.), rendered April 28, 2011, upon a verdict convicting defendant of the crimes of course of sexual conduct against a child in the second degree, endangering the welfare of a child (four counts) and forcible touching.\n*1173Based upon allegations that defendant had subj",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "具体的な被害語: child, convicting (+1.0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8712928,
+      "case_name": "United States v. $255,427.15 in U.S. Currency",
+      "court": "District Court, S.D. Georgia",
+      "court_id": "gasd",
+      "date_filed": "2012-01-18",
+      "docket": "No. CV 110-097",
+      "cite_count": 0,
+      "citation": [
+        "841 F. Supp. 2d 1339",
+        "2012 U.S. Dist. LEXIS 13498",
+        "2012 WL 251910"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8712928/united-states-v-25542715-in-us-currency/",
+      "suit_nature": "",
+      "snippet": "ORDER\nJ. RANDAL HALL, District Judge.\nPresently pending before the Court is Claimants’ Motion to Suppress and For Return of Property. (Doc. no. 29.) Claimants request that the Court suppress the seizure of the Defendant $255,427.15 in U.S. Currency (“Defendant Currency”). Based on the following, this motion is DENIED.\n*1341/",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "具体的な被害語: seizure (+0.5)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8723374,
+      "case_name": "United States v. $25,846.96 & $6,000.00 Seized from Bank of Vernon Account No. XXX-XX-6206",
+      "court": "District Court, N.D. Alabama",
+      "court_id": "alnd",
+      "date_filed": "2013-03-06",
+      "docket": "No. 6:12-CV-1837-LSC",
+      "cite_count": 0,
+      "citation": [
+        "928 F. Supp. 2d 1296",
+        "2013 U.S. Dist. LEXIS 38997",
+        "2013 WL 851613"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8723374/united-states-v-2584696-600000-seized-from-bank-of-vernon-account/",
+      "suit_nature": "",
+      "snippet": "ORDER\nL. SCOTT COOGLER, District Judge.\nI. Introduction\nBefore the Court is Claimant Randall Keith Colburn’s (“Claimant”) Motion to Dismiss and for Return of Seized Funds, filed on July 11, 2012. (Doc. 6.) Claimant’s brief in support of the motion was contemporaneously filed. (Doc. 7.) Pursuant to this Court’s Order (Doc. 9), Plaintiff the United States of America (the “Government”) f",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "具体的な被害語: seized (+0.5)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8715146,
+      "case_name": "United States v. $9,980 Seized from Community Bank & Trust Account No. 067-0022713",
+      "court": "District Court, M.D. Florida",
+      "court_id": "flmd",
+      "date_filed": "2012-01-17",
+      "docket": "Case No. 5:11-cv-177-Oc-37TBS",
+      "cite_count": 0,
+      "citation": [
+        "859 F. Supp. 2d 1281",
+        "2012 WL 1640505"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8715146/united-states-v-9980-seized-from-community-bank-trust-account-no/",
+      "suit_nature": "",
+      "snippet": "ORDER\nROY B. DALTON JR., District Judge.\nThe matter is before the Court on the following:\n1. The United States of America’s Motion for Summary Judgment (Doc. No. 17), filed December 20, 2011; and\n2. Claimant’s Response (Doc. No. 18), filed December 30, 2011.\nBACKGROUND\nFederal law req",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "具体的な被害語: seized (+0.5)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8712930,
+      "case_name": "United States v. $255,427.15 in U.S. Currency",
+      "court": "District Court, S.D. Georgia",
+      "court_id": "gasd",
+      "date_filed": "2012-01-18",
+      "docket": "No. CV 110-097",
+      "cite_count": 0,
+      "citation": [
+        "841 F. Supp. 2d 1350",
+        "2012 U.S. Dist. LEXIS 13491",
+        "2012 WL 251913"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8712930/united-states-v-25542715-in-us-currency/",
+      "suit_nature": "",
+      "snippet": "ORDER\nJ. RANDAL HALL, District Judge.\nOn July 16, 2010, the United States of America (“Plaintiff’) filed this civil forfeiture action against $255,427.15 in United States Currency (“Defendant Currency”) seeking forfeiture of Defendant Currency pursuant to 31 U.S.C. § 5317(c)(2). (Doe. no. 1.) On September 2, 2010, Swaroop Investments, Inc., Chetankumar Patel, Ranjikant Patel, and Pankeeta Patel (",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "具体的な被害語: forfeiture (+0.5)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 7915286,
+      "case_name": "In re Charges of Judicial Misconduct",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2014-08-12",
+      "docket": "Nos. DC-13-90021, 05-13-90099",
+      "cite_count": 2,
+      "citation": [
+        "413 U.S. App. D.C. 1",
+        "769 F.3d 762",
+        "2012 U.S. App. LEXIS 27225"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7915286/in-re-charges-of-judicial-misconduct/",
+      "suit_nature": "",
+      "snippet": "ORDER\n\nThirteen individuals and public interest groups filed a Complaint of Judicial Misconduct against Judge Edith Jones of the United States Court of Appeals for the Fifth Circuit, pursuant to 28 U.S.C. § 351(a). The complainants asked the Judicial Council of the Fifth Circuit to request that the Chief Justice of the United States transfer the proceeding to the judicial council of another circ",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=2, +2)",
+        "12年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 8712929,
+      "case_name": "United States v. $255,427.15 in U.S. Currency",
+      "court": "District Court, S.D. Georgia",
+      "court_id": "gasd",
+      "date_filed": "2012-01-18",
+      "docket": "No. CV 110-097",
+      "cite_count": 0,
+      "citation": [
+        "841 F. Supp. 2d 1343",
+        "2012 U.S. Dist. LEXIS 13500",
+        "2012 WL 251911"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8712929/united-states-v-25542715-in-us-currency/",
+      "suit_nature": "",
+      "snippet": "ORDER\nJ. RANDAL HALL, District Judge.\nThis case comes before the Court on Claimants’ Joint Motion to Dismiss and Motion for Summary Judgment. (Doc. no. 43.) In their motion, Claimants seek dismissal of Plaintiffs Complaint or in the alternative pray that summary judgment be granted in their favor.1 To the extent set forth in this Order, Claimants’ Motion to Dismiss is DENIE",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 3.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 1044753,
+      "case_name": "Crystal Miranda Kirby v. State of Tennessee",
+      "court": "Court of Criminal Appeals of Tennessee",
+      "court_id": "tenncrimapp",
+      "date_filed": "2013-05-03",
+      "docket": "E2012-01995-CCA-R3-PC",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/1044753/crystal-miranda-kirby-v-state-of-tennessee/",
+      "suit_nature": "",
+      "snippet": "IN THE COURT OF CRIMINAL APPEALS OF TENNESSEE\n                         AT KNOXVILLE\n                                January 29, 2013 Session\n\n          CRYSTAL MIRANDA KIRBY v. STATE OF TENNESSEE\n\n                 Appeal from the Criminal Court for Campbell County\n                        No. 14865    E. Shayne Sexton, Judge\n\n\n                   No. E2012-01995-CCA-R3-PC - Filed May 3, 2013",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 3.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 3201664,
+      "case_name": "Alan Gimenez v. J. Ochoa",
+      "court": "Court of Appeals for the Ninth Circuit",
+      "court_id": "ca9",
+      "date_filed": "2016-05-09",
+      "docket": "14-55681",
+      "cite_count": 56,
+      "citation": [
+        "821 F.3d 1136",
+        "2016 U.S. App. LEXIS 8511",
+        "2016 WL 2620284"
+      ],
+      "url": "https://www.courtlistener.com/opinion/3201664/alan-gimenez-v-j-ochoa/",
+      "suit_nature": "Habeas",
+      "snippet": "OPINION\n \n\n  KOZINSKI, Circuit Judge:\n \n\n  Two decades after being convicted of murdering his infant daughter, Alan Gime-nez seeks federal habeas relief for the second time. We consider whether Gime-nez’s ineffective assistance of counsel claims are barred as successive. We also consider whether he may advance a due process claim on the ground that expert evide",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.0,
+      "reasons": [
+        "やや知られている (citeCount=56, +1)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: convicted (+0.5)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 9500702,
+      "case_name": "Culley v. Marshall",
+      "court": "Supreme Court of the United States",
+      "court_id": "scotus",
+      "date_filed": "2024-05-09",
+      "docket": "22-585",
+      "cite_count": 21,
+      "citation": [
+        "601 U.S. 377"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9500702/culley-v-marshall/",
+      "suit_nature": "",
+      "snippet": "(Slip Opinion)              OCTOBER TERM, 2023                                       1\n\n                                       Syllabus\n\n         NOTE: Where it is feasible, a syllabus (headnote) will be released, as is\n       being done in connection with this case, at the time the opinion is issued.\n       The syllabus constitutes no part of the opinion of the Court but has been\n       prepared",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=21, +1)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 10600097,
+      "case_name": "Culley v. Marshall",
+      "court": "Supreme Court of the United States",
+      "court_id": "scotus",
+      "date_filed": "2024-05-09",
+      "docket": "22-585",
+      "cite_count": 20,
+      "citation": [
+        "601 U.S. 377"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10600097/culley-v-marshall/",
+      "suit_nature": "",
+      "snippet": "PRELIMINARY PRINT\n\n             Volume 601 U. S. Part 2\n                             Pages 377–415\n\n\n\n\n       OFFICIAL REPORTS\n                                    OF\n\n\n   THE SUPREME COURT\n                                May 9, 2024\n\n\nPage Proof Pending Publication\n\n\n                   REBECCA A. WOMELDORF\n                           reporter of decisions\n\n\n\n\n    NOTICE: This pre",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=20, +1)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "structuring",
+      "lane_label": "現金の構造化 — 合法な金を口座ごと押さえられる",
+      "cluster_id": 7306960,
+      "case_name": "In re the Seizure of any & All Funds on Deposit in Wells Fargo Bank, NA",
+      "court": "District Court, E.D. New York",
+      "court_id": "nyed",
+      "date_filed": "2014-06-09",
+      "docket": "No. 14-MC-0325 (ADS)",
+      "cite_count": 1,
+      "citation": [
+        "25 F. Supp. 3d 270",
+        "2014 WL 2611253",
+        "2014 U.S. Dist. LEXIS 81359"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7306960/in-re-the-seizure-of-any-all-funds-on-deposit-in-wells-fargo-bank-na/",
+      "suit_nature": "",
+      "snippet": "MEMORANDUM OF DECISION AND ORDER\n\nSPATT, District Judge.\nOn March 21, 2014, Roger & Sons, Inc. (the “Movant” or the “Company”), initiated this motion by filing an Order to Show Cause seeking the release of the sum of $294,397.11 and all further amounts frozen, constituting the funds in Wells Fargo Bank NA account number xxxxxxxxxxxxx held in the name of Roger & Sons, Inc. (the “Subject Acc",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "具体的な被害語: seizure (+0.5)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 2948970,
+      "case_name": "Robbins, Neal Hampton",
+      "court": "Court of Criminal Appeals of Texas",
+      "court_id": "texcrimapp",
+      "date_filed": "2014-11-26",
+      "docket": "NO. WR-73,484-02",
+      "cite_count": 34,
+      "citation": [
+        "478 S.W.3d 678",
+        "2014 Tex. Crim. App. LEXIS 1900",
+        "2014 WL 6751684"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2948970/robbins-neal-hampton/",
+      "suit_nature": "",
+      "snippet": "IN THE COURT OF CRIMINAL APPEALS\n                           OF TEXAS\n                                       NO. WR-73,484-02\n\n\n\n                    EX PARTE NEAL HAMPTON ROBBINS, Applicant\n\n\n\n         ON APPLICATION FOR A WRIT OF HABEAS CORPUS\n    FROM CAUSE NO. 98-06-00750-CR-(2) IN THE 410 TH DISTRICT COURT\n                      MONTGOMERY COUNTY\n\n                 C OCHRAN, J., fi",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=34, +1)",
+        "12年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 9422584,
+      "case_name": "Danny Hill",
+      "court": "Court of Appeals for the Sixth Circuit",
+      "court_id": "ca6",
+      "date_filed": "2023-08-25",
+      "docket": "20-3863",
+      "cite_count": 27,
+      "citation": [
+        "81 F.4th 560"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9422584/danny-hill/",
+      "suit_nature": "",
+      "snippet": "RECOMMENDED FOR PUBLICATION\n                                  Pursuant to Sixth Circuit I.O.P. 32.1(b)\n                                         File Name: 23a0196p.06\n\n                     UNITED STATES COURT OF APPEALS\n                                    FOR THE SIXTH CIRCUIT\n\n\n\n                                                               ┐\n IN RE: DANNY HILL,",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=27, +1)",
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 7330468,
+      "case_name": "Lapachet v. Cal. Forensic Med. Grp., Inc.",
+      "court": "District Court, E.D. California",
+      "court_id": "caed",
+      "date_filed": "2018-06-01",
+      "docket": "No. 1:17–cv–01226–DAD–EPG",
+      "cite_count": 18,
+      "citation": [
+        "313 F. Supp. 3d 1183"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7330468/lapachet-v-cal-forensic-med-grp-inc/",
+      "suit_nature": "",
+      "snippet": "Dale A. Drozd, UNITED STATES DISTRICT JUDGE\nThis matter is before the court on defendants' motion to dismiss. (Doc. No. 51.) On December 19, 2017, a hearing on the motion was held. Attorneys Teresa Allen, Michael Haddad, and Sanjay Schmidt appeared telephonically on behalf of plaintiff Jeremy Lapachet. Attorneys Jemma Saunders, Jesse M. Rivera, and Jill Nathan appeared telephonically on behalf of",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=18, +1)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "exoneration",
+      "lane_label": "冤罪 — 後から無実が確定した人",
+      "cluster_id": 10925452,
+      "case_name": "In re Wrongful Conviction of Arita",
+      "court": "Supreme Court of Kansas",
+      "court_id": "kan",
+      "date_filed": "2026-07-10",
+      "docket": "129102",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10925452/in-re-wrongful-conviction-of-arita/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPREME COURT OF THE STATE OF KANSAS\n\n                                              No. 129,102\n\n\n                           In the Matter of the Wrongful Conviction of\n                                          JOSUE ARITA.\n\n\n                                  SYLLABUS BY THE COURT\n\n1.\n        K.S.A. 60-5004(c)(1)(C)'s phrase \"crimes or crimes\" is ambiguous when applied\nto al",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "0年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: conviction (+0.5)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 2145051,
+      "case_name": "Rey-Cruz v. Forensic Science Institute",
+      "court": "District Court, D. Puerto Rico",
+      "court_id": "prd",
+      "date_filed": "2011-05-16",
+      "docket": "Civil 10-1739(DRD)",
+      "cite_count": 7,
+      "citation": [
+        "794 F. Supp. 2d 329",
+        "2011 U.S. Dist. LEXIS 56143",
+        "2011 WL 1868841"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2145051/rey-cruz-v-forensic-science-institute/",
+      "suit_nature": "",
+      "snippet": "794 F.Supp.2d 329 (2011)\nRicardo Javier REY-CRUZ, Plaintiff,\nv.\nFORENSIC SCIENCE INSTITUTE (ICF), et al., Defendants.\nCivil No. 10-1739(DRD).\nUnited States District Court, D. Puerto Rico.\nMay 16, 2011.\n*331 Julio E. Gil-De-Lamadrid, Gil-De-Lamadrid, PSC, Bayamon, PR, for Plaintiff.\nAngel E. Rotger-Sabat, Maymi, Rivera &",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=7, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 10364812,
+      "case_name": "Virtus Pharmaceuticals, LLC v. Garland",
+      "court": "District Court, District of Columbia",
+      "court_id": "dcd",
+      "date_filed": "2025-03-26",
+      "docket": "Civil Action No. 2022-0448",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10364812/virtus-pharmaceuticals-llc-v-garland/",
+      "suit_nature": "",
+      "snippet": "UNITED STATES DISTRICT COURT\n                                  FOR THE DISTRICT OF COLUMBIA\n\n\n    VIRTUS PHARMACEUTICALS, LLC,\n                     Plaintiff,\n            v.\n                                                                      Civil Action No. 22-0448 (CKK)\n    PAMELA BONDI, in her official capacity as\n    Attorney General of the United States, et",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "1年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 10005697,
+      "case_name": "Spota v. Cicerone",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2024-07-17",
+      "docket": "Index No. 30951/12",
+      "cite_count": 0,
+      "citation": [
+        "2024 NY Slip Op 03840"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10005697/spota-v-cicerone/",
+      "suit_nature": "",
+      "snippet": "Spota v Cicerone (2024 NY Slip Op 03840)\n\n\n\n\n\nSpota v Cicerone\n\n\n2024 NY Slip Op 03840\n\n\nDecided on July 17, 2024\n\n\nAppellate Division, Second Department\n\n\n\nPublished by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "false_confession",
+      "lane_label": "虚偽自白 — 取調べで自分が犯人だと言わされた",
+      "cluster_id": 6346924,
+      "case_name": "Shumway, Bradley Jacobs",
+      "court": "Court of Criminal Appeals of Texas",
+      "court_id": "texcrimapp",
+      "date_filed": "2022-02-02",
+      "docket": "PD-0108-20",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/6346924/shumway-bradley-jacobs/",
+      "suit_nature": "",
+      "snippet": "IN THE COURT OF CRIMINAL APPEALS\n                       OF TEXAS\n\n                           NOS. PD-0108-20 & PD-0109-20\n\n\n                    BRADLEY JACOBS SHUMWAY, Appellant\n\n                                            v.\n\n                               THE STATE OF TEXAS\n\n\n        ON APPELLANT’S PETITION FOR DISCRETIONARY REVIEW\n                FROM THE NINTH COURT OF APPEALS",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 4676995,
+      "case_name": "Houston Forensic Science Center, Inc. v. Tammy Barette",
+      "court": "Texas Court of Appeals, 1st District (Houston)",
+      "court_id": "txctapp1",
+      "date_filed": "2019-11-07",
+      "docket": "01-19-00129-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4676995/houston-forensic-science-center-inc-v-tammy-barette/",
+      "suit_nature": "",
+      "snippet": "Opinion issued November 7, 2019\n\n\n\n\n                                     In The\n\n                              Court of Appeals\n                                    For The\n\n                         First District of Texas\n                            ————————————\n                              NO. 01-19-00129-CV\n                           ———————————\n        HOUSTON FORENSIC SCIENCE CENTER, INC., Ap",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 2742424,
+      "case_name": "In re Charges of Judicial Misconduct",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2014-10-15",
+      "docket": "DC-13-90021",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/2742424/in-re-charges-of-judicial-misconduct/",
+      "suit_nature": "",
+      "snippet": "Judicial Council\n           OF THE DISTRICT OF COLUMBIA CIRCUIT\n\n           In re CHARGES OF JUDICIAL MISCONDUCT\n\n\n                       No. DC-13-90021\n              No. 05-13-90099 (Fifth Circuit)\n\n                        August 12, 2014\n\n\n\n    Before: GARLAND, Chief Judge, U.S. Court of Appeals for\nthe District of Columbia Circuit; KAVANAUGH, SRINIVASAN,\nMILLETT, and PILLARD, C",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "12年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 9346757,
+      "case_name": "Tulalip Tribes v. 2008 White Ford Econoline Van",
+      "court": "Tulalip Court of Appeals",
+      "court_id": "tulalipctapp",
+      "date_filed": "2013-05-31",
+      "docket": "No. TUL-CV-AP-2012-0404",
+      "cite_count": 0,
+      "citation": [
+        "11 Am. Tribal Law 199"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9346757/tulalip-tribes-v-2008-white-ford-econoline-van/",
+      "suit_nature": "",
+      "snippet": "PER CURIAM:\nAppellant, Alfred Luongo, seeks reversal of the July 6, 2012 Order of the Tulalip Tribal Court in which the Tribal Court ordered that a 2008 Ford Econoline Van owned by Appellant be forfeited to the Tulalip Tribes (hereinafter also “Appel-lee”) under the civil forfeiture provisions of Chapter 2,15 of the Tulalip Tribal Code. This Court holds that the excessive fines clause of the Indi",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.0,
+      "reasons": [
+        "具体的な被害語: forfeited, forfeiture (+1.0)"
+      ]
+    },
+    {
+      "lane": "forfeiture",
+      "lane_label": "民事没収 — 有罪判決なしに財産を取られる",
+      "cluster_id": 9346762,
+      "case_name": "Tulalip Tribes v. 2008 White Ford Econoline Van",
+      "court": "Tulalip Court of Appeals",
+      "court_id": "tulalipctapp",
+      "date_filed": "2013-08-14",
+      "docket": "No. TUL-CV-AP-2012-0404",
+      "cite_count": 0,
+      "citation": [
+        "11 Am. Tribal Law 232"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9346762/tulalip-tribes-v-2008-white-ford-econoline-van/",
+      "suit_nature": "",
+      "snippet": "ORDER DENYING MOTION FOR RECONSIDERATION\nJANE M. SMITH, Chief Justice.\nOn June 14, 2013, the Tulalip Tribes filed a Motion for Reconsideration and Rehearing, asking this Court to reconsider our Opinion in this proceeding filed on May 31, 2013. Because the Tribes’ motion was filed within ten days of service of the Opinion on the Tribes as required by Tu-lalip Tribal Code (TTC) 2.20.110(2), we acce",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "forensic_fraud",
+      "lane_label": "科学の誤り — 鑑定が間違っていた",
+      "cluster_id": 2497374,
+      "case_name": "Omega Forensic Engineering, Inc. v. RLI Insurance",
+      "court": "District Court, S.D. Florida",
+      "court_id": "flsd",
+      "date_filed": "2010-02-08",
+      "docket": "Case 09-60582-CIV",
+      "cite_count": 2,
+      "citation": [
+        "682 F. Supp. 2d 1336",
+        "2010 U.S. Dist. LEXIS 13350",
+        "2010 WL 431223"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2497374/omega-forensic-engineering-inc-v-rli-insurance/",
+      "suit_nature": "",
+      "snippet": "682 F.Supp.2d 1336 (2010)\nOMEGA FORENSIC ENGINEERING, INC., Plaintiff,\nv.\nRLI INSURANCE COMPANY, Fireman's Fund Insurance Company, and Rheem Manufacturing Company, Defendants.\nCase No. 09-60582-CIV.\nUnited States District Court, S.D. Florida.\nFebruary 8, 2010.\n*1337 James Michael Fishman, Miami, FL, for Plaintiff.\nSina Bah",
+      "person_vs_state": false,
+      "corporate_only": true,
+      "score": -2.0,
+      "reasons": [
+        "両当事者が法人 — 商事紛争 (-4)",
+        "無名だが実体はある (citeCount=2, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    }
+  ]
+}

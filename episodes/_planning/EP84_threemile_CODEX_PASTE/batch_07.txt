@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 7/24（8枚）
+区分: ACT_2 — 見えるはずだった部屋
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T049.png
+   [T049]  flags: 
+   The same tile wall with almost every tile lit at once, the glare washing the frame
+
+2) T050.png
+   [T050]  flags: 
+   A close row of four alarm tiles, all lit, no readable characters on them, panel lights bright across the frame
+
+3) T051.png
+   [T051]  flags: P
+   An operator reaching up to an alarm acknowledge button, arm and shoulder only, panel lights bright
+
+4) T052.png
+   [T052]  flags: 
+   A control panel seen from a low angle so the top row of instruments is out of sight above, panel lights bright across the frame
+
+5) T053.png
+   [T053]  flags: 
+   The reverse side of a control panel with instruments mounted facing away from the room, one work lamp
+
+6) T054.png
+   [T054]  flags: 
+   A gauge whose needle has gone past the end of the scale and stopped, close, hard light
+
+7) T055.png
+   [T055]  flags: 
+   A line printer jammed with crumpled fanfold paper, close, a lamp above it
+
+8) T056.png
+   [T056]  flags: 
+   A 1979 CRT terminal showing plain green blocks of light and no readable characters, in a dim room

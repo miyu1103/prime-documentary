@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v002",
+  "supersedes": "v001",
+  "note": "Common public confusions and source tensions, with the resolution the script must follow. v002: CON-04 (Markopolos warnings) is now resolved against OIG-509.",
+  "contradictions": [
+    {
+      "id": "CON-01",
+      "topic": "Size of the fraud: $65B vs $17.5B vs $170B",
+      "positions": [
+        "$65 billion: total fabricated value across customer statements (paper, includes fictional profits).",
+        "~$17.5 billion: actual lost principal (cash in, per the trustee).",
+        "$170 billion: a forfeiture/asset figure cited at sentencing (funds that flowed through accounts), not net investor loss."
+      ],
+      "resolution": "Treat the three numbers as different measures. State plainly: $65B = fake account value, ~$17.5B = real principal lost, and avoid using $170B as 'the amount stolen'. This distinction is a deliberate myth-correction beat (CLM-0004).",
+      "claim_ids": ["CLM-0004"],
+      "status": "resolved"
+    },
+    {
+      "id": "CON-02",
+      "topic": "Was the whole firm fake?",
+      "positions": [
+        "Popular shorthand: 'Madoff's company was a fraud.'",
+        "Reality: the broker-dealer/market-making business was a real operation; the investment ADVISORY arm was the Ponzi."
+      ],
+      "resolution": "Specify that the fraud was the advisory arm; do not claim the entire firm was fictional (CLM-0003).",
+      "claim_ids": ["CLM-0003"],
+      "status": "resolved"
+    },
+    {
+      "id": "CON-03",
+      "topic": "Did victims lose everything?",
+      "positions": [
+        "Headline impression: investors were wiped out.",
+        "Reality: the trustee/DOJ clawed back most principal; many recovered >90%."
+      ],
+      "resolution": "Acknowledge devastating initial losses AND the large eventual recovery; do not say everyone lost everything or that everyone was made whole (CLM-0009).",
+      "claim_ids": ["CLM-0009"],
+      "status": "resolved"
+    },
+    {
+      "id": "CON-04",
+      "topic": "How many times / which years did Markopolos warn the SEC?",
+      "positions": [
+        "Various counts cited (started 1999/2000; submissions in 2000, 2001, 2005, 2007, 2008).",
+        "OIG-509 frames it at the agency level: the SEC received six substantive complaints between June 1992 and December 2008."
+      ],
+      "resolution": "RESOLVED against OIG-509. Narration may keep 'for roughly a decade, repeatedly'; for any exact statement use Markopolos submissions in 2000, 2001, 2005, 2007, 2008, and the agency-level 'six substantive complaints, 1992-2008'. The 2005 memo title is 'The World's Largest Hedge Fund Is a Fraud' (2005-11-07). (CLM-0005)",
+      "claim_ids": ["CLM-0005"],
+      "status": "resolved"
+    },
+    {
+      "id": "CON-05",
+      "topic": "Plea vs jury conviction",
+      "positions": [
+        "Often loosely called 'convicted'.",
+        "He PLEADED guilty; there was no trial."
+      ],
+      "resolution": "Say 'pleaded guilty'; never 'a jury found him guilty' (CLM-0001).",
+      "claim_ids": ["CLM-0001"],
+      "status": "resolved"
+    }
+  ]
+}

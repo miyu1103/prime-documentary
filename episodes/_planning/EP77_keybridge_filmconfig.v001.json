@@ -1,0 +1,121 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "keybridge",
+  "episode_id": "PD-2026-077-keybridge",
+  "assets": "episodes/PD-2026-077-keybridge/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-077-keybridge/06_audio/narration_index.v001.json",
+  "narration": "keybridge/narration.mp3",
+  "captions": "episodes/PD-2026-077-keybridge/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/keybridge_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 17.9,
+  "hookLine": "At twenty-seven minutes and fifty-three seconds past one in the morning, a duty officer in Baltimore gave an order to stop the traffic.",
+  "captionLeadSeconds": 0.0,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses",
+        "_row": "invariant-11"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["1:27:53 A.M.", "SIXTY-SEVEN SECONDS."],
+        "style": "emphasis",
+        "emphasisWords": ["1:27:53 A.M."],
+        "_row": "KB-113"
+      }
+    ],
+    "ACT_1": [
+      {"kind": "acttitle", "title": "THE NIGHT SHIFT", "kicker": "ACT ONE", "index": 1, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["EIGHT PEOPLE.", "ONE INSPECTOR."], "style": "emphasis", "emphasisWords": ["EIGHT PEOPLE."], "_row": "KB-004"},
+      {"kind": "kinetic", "lines": ["IMO 9697428.", "FLAG OF SINGAPORE."], "style": "emphasis", "emphasisWords": ["IMO 9697428."], "_row": "KB-001"},
+      {"kind": "stat", "value": 55626, "label": "horsepower, turning one propeller", "topLabel": "THE MAIN ENGINE", "_row": "KB-007"},
+      {"kind": "kinetic", "lines": ["CALL IT FIVE HUNDRED", "FAMILY CARS."], "style": "emphasis", "emphasisWords": ["FIVE HUNDRED"], "_row": "KB-007"},
+      {"kind": "kinetic", "lines": ["1:07 A.M.", "THE TUGS LET GO."], "style": "emphasis", "emphasisWords": ["1:07 A.M."], "_row": "KB-008"},
+      {"kind": "stat", "value": 0.6, "label": "of a mile out when the lights went", "decimals": 1, "topLabel": "1:25 A.M.", "_row": "KB-105"},
+      {"kind": "kinetic", "lines": ["THREE OF HER", "OWN LENGTHS."], "style": "emphasis", "emphasisWords": ["THREE"], "_row": "KB-105"},
+      {"kind": "kinetic", "lines": ["HR1 AND LR1", "OPENED UNTOLD."], "style": "emphasis", "emphasisWords": ["HR1 AND LR1"], "_row": "KB-105"},
+      {"kind": "kinetic", "lines": ["1:26:39.", "THEY CALLED FOR A TUG."], "style": "emphasis", "emphasisWords": ["1:26:39."], "_row": "KB-108"},
+      {"kind": "stat", "value": 3, "label": "miles away, and she never reached the ship", "topLabel": "THE ERIC McALLISTER", "_row": "KB-108"},
+      {"kind": "kinetic", "lines": ["DGR3 AND DGR4.", "HIGH SIDE AND LOW."], "style": "emphasis", "emphasisWords": ["DGR3 AND DGR4."], "_row": "KB-110"},
+      {"kind": "kinetic", "lines": ["1:27:25.", "A WARNING ON THE RADIO."], "style": "emphasis", "emphasisWords": ["1:27:25."], "_row": "KB-111"},
+      {"kind": "kinetic", "lines": ["1:27:53.", "STOP THE TRAFFIC."], "style": "emphasis", "emphasisWords": ["1:27:53."], "_row": "KB-113"},
+      {"kind": "stat", "value": 31, "label": "seconds after the second blackout, the lights came back", "topLabel": "CLOSED BY HAND", "_row": "KB-112"},
+      {"kind": "kinetic", "lines": ["1:29 A.M.", "PIER SEVENTEEN."], "style": "emphasis", "emphasisWords": ["PIER SEVENTEEN."], "_row": "KB-002"},
+      {"kind": "stat", "value": 6, "label": "of the eight did not come home", "topLabel": "THE SPAN CAME DOWN", "_row": "KB-003"}
+    ],
+    "ACT_2": [
+      {"kind": "acttitle", "title": "EVERYBODY GETS THIS PART WRONG", "kicker": "ACT TWO", "index": 2, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["SHIPS LOSE POWER.", "IT IS NOT RARE."], "style": "emphasis", "emphasisWords": ["IT IS NOT RARE."], "_row": "KB-105"},
+      {"kind": "stat", "value": 4, "label": "diesel generators, and several thousand connections", "topLabel": "A SMALL INDUSTRIAL CITY", "_row": "KB-105"},
+      {"kind": "kinetic", "lines": ["TR1 AND TR2.", "EITHER CAN FEED THE SHIP."], "style": "emphasis", "emphasisWords": ["TR1 AND TR2."], "_row": "KB-105"},
+      {"kind": "kinetic", "lines": ["A BUS TIE,", "CLOSED THAT NIGHT."], "style": "emphasis", "emphasisWords": ["A BUS TIE,"], "_row": "KB-105"},
+      {"kind": "quote", "quote": "the ship's critical systems were originally designed with reliable redundancies and automatic restart capabilities, so that after a blackout she could get her power back quickly", "attribution": "What the United States told a grand jury, 2026", "_row": "KB-406"},
+      {"kind": "kinetic", "lines": ["CLOSED BY HAND.", "TWICE. IN THE DARK."], "style": "emphasis", "emphasisWords": ["TWICE. IN THE DARK."], "_row": "KB-107"},
+      {"kind": "stat", "value": 74, "label": "seconds from the first blackout to the call for a tug", "topLabel": "THE PILOTS", "_row": "KB-108"},
+      {"kind": "compbars", "items": [{"label": "TUG, MILES AWAY", "value": 3}, {"label": "BRIDGE, MILES AHEAD", "value": 0.2}], "_row": "KB-108"},
+      {"kind": "kinetic", "lines": ["NOBODY WAS GOING", "TO CLOSE THAT GAP."], "style": "emphasis", "emphasisWords": ["THAT GAP."], "_row": "KB-110"},
+      {"kind": "kinetic", "lines": ["HER ENGINE", "DID NOT BREAK."], "style": "emphasis", "emphasisWords": ["DID NOT BREAK."], "_row": "KB-007"},
+      {"kind": "mechanism", "mechanism": "faultsplit", "_row": "KB-105"},
+      {"kind": "kinetic", "lines": ["THE RECORDER", "NEVER STOPPED LISTENING."], "style": "emphasis", "emphasisWords": ["NEVER STOPPED LISTENING."], "_row": "KB-116"},
+      {"kind": "stat", "value": 947, "label": "feet of loaded steel, with the lights on", "topLabel": "GOING WHERE THE TIDE TOOK HER", "_row": "KB-112"},
+      {"kind": "kinetic", "lines": ["1:27:32.", "LIGHTS. BUS. GENERATOR TWO."], "style": "emphasis", "emphasisWords": ["1:27:32."], "_row": "KB-112"},
+      {"kind": "kinetic", "lines": ["ELECTRICITY BACK.", "PROPELLER NOT."], "style": "emphasis", "emphasisWords": ["PROPELLER NOT."], "_row": "KB-112"}
+    ],
+    "ACT_3": [
+      {"kind": "acttitle", "title": "THE HINGE", "kicker": "ACT THREE", "index": 3, "_row": "structure"},
+      {"kind": "stat", "value": 440, "label": "volts on the low-voltage side, where the ordinary life of the ship lives", "topLabel": "THE DESIGN", "_row": "KB-105"},
+      {"kind": "kinetic", "lines": ["TEN HOURS BEFORE SHE SAILED,", "THE LIGHTS WENT OUT."], "style": "emphasis", "emphasisWords": ["TEN HOURS"], "_row": "KB-101"},
+      {"kind": "kinetic", "lines": ["AN INLINE EXHAUST DAMPER,", "CLOSED BY MISTAKE."], "style": "emphasis", "emphasisWords": ["CLOSED BY MISTAKE."], "_row": "KB-101"},
+      {"kind": "kinetic", "lines": ["THEN A SECOND TIME.", "NOT ENOUGH FUEL PRESSURE."], "style": "emphasis", "emphasisWords": ["A SECOND TIME."], "_row": "KB-102"},
+      {"kind": "kinetic", "lines": ["HR2, LR2 AND TR2 — OUT.", "HR1, LR1 AND TR1 — IN."], "style": "emphasis", "emphasisWords": ["HR1, LR1 AND TR1 — IN."], "_row": "KB-103"},
+      {"kind": "kinetic", "lines": ["AND THAT IS THE CONFIGURATION", "SHE SAILED ON."], "style": "emphasis", "emphasisWords": ["SHE SAILED ON."], "_row": "KB-104"},
+      {"kind": "stat", "value": 20, "label": "months before the Board could say why", "topLabel": "18 NOVEMBER 2025", "_row": "KB-201"},
+      {"kind": "quote", "quote": "a loose signal wire connection to a terminal block, stemming from the improper installation of wire-label banding", "attribution": "National Transportation Safety Board, probable cause, 18 November 2025", "_row": "KB-202"},
+      {"kind": "kinetic", "lines": ["THE BAND STOPPED THE WIRE", "SEATING IN THE GATE."], "style": "emphasis", "emphasisWords": ["SEATING IN THE GATE."], "_row": "KB-203"},
+      {"kind": "kinetic", "lines": ["12 MAY 2026.", "AN INDICTMENT UNSEALED."], "style": "emphasis", "emphasisWords": ["12 MAY 2026."], "_row": "KB-401"},
+      {"kind": "lowerthird", "primary": "An indictment is merely an accusation", "secondary": "All defendants are presumed innocent until proven guilty beyond a reasonable doubt", "_row": "KB-501"},
+      {"kind": "stat", "value": 3, "label": "defendants: two companies and one man", "topLabel": "CHARGED, NOT CONVICTED", "_row": "KB-401"},
+      {"kind": "kinetic", "lines": ["A FLUSHING PUMP.", "A HOUSEKEEPING DEVICE."], "style": "emphasis", "emphasisWords": ["A FLUSHING PUMP."], "_row": "KB-407"},
+      {"kind": "kinetic", "lines": ["THE GOVERNMENT SAYS IT WAS NOT DESIGNED", "TO RESTART ITSELF."], "style": "emphasis", "emphasisWords": ["TO RESTART ITSELF."], "_row": "KB-407"},
+      {"kind": "kinetic", "lines": ["18 JUNE 2026.", "A DEFERRED PROSECUTION AGREEMENT."], "style": "emphasis", "emphasisWords": ["18 JUNE 2026."], "_row": "KB-701"},
+      {"kind": "stat", "value": 3, "label": "ships he acknowledged used that pump", "topLabel": "NOT ONE SHIP", "_row": "KB-705"}
+    ],
+    "ACT_4": [
+      {"kind": "acttitle", "title": "ARITHMETIC THAT WENT QUIETLY OUT OF DATE", "kicker": "ACT FOUR", "index": 4, "_row": "structure"},
+      {"kind": "quote", "quote": "the absence of countermeasures to reduce the bridge's vulnerability to being struck by an ocean-going vessel", "attribution": "NTSB, contributing to the collapse and to the loss of life", "_row": "KB-204"},
+      {"kind": "kinetic", "lines": ["THE BOARD FOUND THEY WERE", "LIKELY UNAWARE."], "style": "emphasis", "emphasisWords": ["LIKELY UNAWARE."], "_row": "KB-205"},
+      {"kind": "kinetic", "lines": ["NOT A COVER-UP.", "A GAP."], "style": "emphasis", "emphasisWords": ["A GAP."], "_row": "KB-205"},
+      {"kind": "stat", "value": 68, "label": "bridges the Board recommended be evaluated", "topLabel": "20 MARCH 2025", "_row": "KB-206"},
+      {"kind": "kinetic", "lines": ["NOT SIXTY-EIGHT UNSAFE BRIDGES.", "SIXTY-EIGHT UNANSWERED QUESTIONS."], "style": "emphasis", "emphasisWords": ["SIXTY-EIGHT UNANSWERED QUESTIONS."], "_row": "KB-206"},
+      {"kind": "kinetic", "lines": ["1 APRIL 2024.", "SIX DAYS AFTER THE COLLAPSE."], "style": "emphasis", "emphasisWords": ["SIX DAYS AFTER THE COLLAPSE."], "_row": "KB-301"},
+      {"kind": "kinetic", "lines": ["EXONERATION FROM,", "OR LIMITATION OF, LIABILITY."], "style": "emphasis", "emphasisWords": ["LIMITATION OF, LIABILITY."], "_row": "KB-301"},
+      {"kind": "stat", "value": 43.7, "label": "million dollars — the cap they asked the court for", "decimals": 1, "prefix": "$", "_row": "KB-302"},
+      {"kind": "stat", "value": 103078056, "label": "claimed by the United States for answering the collapse", "prefix": "$", "_row": "KB-303"},
+      {"kind": "stat", "value": 101980000, "label": "the companies agreed to pay", "prefix": "$", "_row": "KB-304"},
+      {"kind": "lowerthird", "primary": "A settlement of a civil claim", "secondary": "is not an admission, and is not a criminal finding", "_row": "KB-305"},
+      {"kind": "numberticker", "value": 5000000000, "prefix": "$", "label": "alleged economic loss, at least", "group": true, "_row": "KB-404"},
+      {"kind": "compbars", "items": [{"label": "ALLEGED LOSS, $M", "value": 5000}, {"label": "REQUESTED CAP, $M", "value": 43.7}], "_row": "KB-404"},
+      {"kind": "kinetic", "lines": ["THE GAP BETWEEN THOSE TWO NUMBERS", "IS THE ENTIRE ARGUMENT."], "style": "emphasis", "emphasisWords": ["IS THE ENTIRE ARGUMENT."], "_row": "KB-404"},
+      {"kind": "kinetic", "lines": ["THE F.B.I. THE COAST GUARD.", "THE E.P.A.'S CRIMINAL INVESTIGATORS."], "style": "emphasis", "emphasisWords": ["THE F.B.I. THE COAST GUARD."], "_row": "KB-410"},
+      {"kind": "kinetic", "lines": ["NONE OF THEM", "HAS BEEN TRIED."], "style": "emphasis", "emphasisWords": ["HAS BEEN TRIED."], "_row": "KB-501"}
+    ],
+    "ENDING": [
+      {"kind": "kinetic", "lines": ["1:27:53 TO 1:29.", "SIXTY-SEVEN SECONDS."], "style": "emphasis", "emphasisWords": ["SIXTY-SEVEN SECONDS."], "_row": "KB-113"},
+      {"kind": "kinetic", "lines": ["EVERY LIGHT IN THIS STORY", "CAME BACK ON."], "style": "emphasis", "emphasisWords": ["CAME BACK ON."], "_row": "KB-112"}
+    ]
+  },
+  "_declared_values": {
+    "leadSeconds": "0 -- VC-0001 is voiced from frame 0; narration_index.v001.json puts the HOOK at 0.0s.",
+    "openingVariant": "'overlay' -- BrandOpening rides over the hook's settle, as on EP74-EP76. The voice does not stop.",
+    "captionLeadSeconds": "0.0 -- 08_edit/captions.final.v001.srt already carries the house 0.60 s lead.",
+    "hookSeconds": "MEASURED 2026-08-25 from 06_audio/narration_index.v001.json: section HOOK spans 0.0 to 17.900 across four chunks (VC-0001..VC-0004). Not estimated.",
+    "hookLine": "VC-0001 verbatim. It is also the film's last beat, which is why the ENDING card repeats the timestamp.",
+    "figures_by_section": "Authored 2026-08-25 from 03_script/script.en.v001.md and EP77_keybridge_FACTS_LEDGER.v001.md. Counts are 17/16/17/17 across ACT_1..ACT_4, inside episode_spec's figure_beats_per_act [13,17]; HOOK 2 and ENDING 2. EVERY number on a card is a number the narration speaks -- 8, 6, 9697428, 55626, 0.6, 3, 31, 4, 74, 947, 440, 20, 68, 43.7, 103078056, 101980000, 5000000000 all appear in the script, and every `value` is numeric so nothing can render as NaN.",
+    "no_OP_section": "episode_spec's section_vocabulary lists OP, but narration_index has no OP chunks -- the brand opening is an overlay on the HOOK, not a spoken section. Figures are therefore not authored for OP; a card there would have no window to live in.",
+    "quarantine": "No card states that Synergy Marine, Synergy Maritime or Radhakrishnan Karthik Nair caused the collapse, and no card says anyone lied (episode_spec forbidden_claims). The three cards that touch the criminal case carry the government's own framing -- 'the government says', 'alleged', 'CHARGED, NOT CONVICTED' -- and the presumption-of-innocence lower third sits in ACT_3 before any of them. The chief engineer's admissions are his own (KB-704..KB-707) and are the only conduct cards stated flatly; the one card that would touch Nair's conduct through the chief engineer's account (KB-709) is deliberately NOT drawn."
+  }
+}

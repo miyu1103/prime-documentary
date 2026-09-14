@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-075-lahaina",
+  "scope": "EP75_lahaina_CODEX_REDO_ALL_20260822",
+  "generated_at": "2026-08-22T01:48:51+09:00",
+  "provider": "Codex built-in image generation",
+  "provider_model_id": null,
+  "provider_seed": null,
+  "provider_cost_record": null,
+  "provider_metadata_note": "The built-in provider did not expose model id, seed, or per-image billing metadata.",
+  "one_prompt_one_image": true,
+  "automatic_retry": false,
+  "request_count": 14,
+  "generated_count": 14,
+  "technical_pass_count": 13,
+  "visual_and_semantic_pass_count": 8,
+  "deployed_count": 8,
+  "held_count": 6,
+  "prompt_contract": {
+    "path": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\_planning\\EP75_lahaina_CODEX_REDO_ALL.txt",
+    "sha256": "A39B3E4B183F19EDBEE74404ECD986B132590AC24687AAF04DCF083BCE46C793",
+    "compile_rule": "For each ID, the exact common STYLE and NEG blocks plus that ID's subject line were sent as one request. Execution-only additions reinforced one-image output, 16:9 framing, continuity references, safety context, and the existing prohibitions; no new narrative content was added."
+  },
+  "reference_inputs": [
+    {
+      "id": "H009",
+      "role": "H010 siren identity and geometry continuity reference",
+      "path": "E:\\pd-media\\assets\\ai\\lahaina\\H009.png",
+      "sha256": "9C6BB0FC51FE9F0364D348C96C5AB5772CEEFA44B225B928130CB65BB25D7371"
+    },
+    {
+      "id": "H018",
+      "role": "H019 and H020 fixed framing and four-horn continuity reference",
+      "path": "E:\\pd-media\\assets\\ai\\lahaina\\H018.png",
+      "sha256": "18D3DB075DCD8BEB0A0B56FBFDBAB4A4FB07B7AC56848118D83D2494986C18BE"
+    },
+    {
+      "id": "H119",
+      "role": "H119 coastal road composition reference; protected destination asset",
+      "path": "E:\\pd-media\\assets\\ai\\lahaina\\H119.png",
+      "sha256": "41BA3D723AD9CC9CF1E748E098750FF91B177ECE29D609481D5566FD9C2B3D4C"
+    }
+  ],
+  "staging_directory": "E:\\pd-media\\assets\\ai\\lahaina\\_codex_redo_20260822_01",
+  "destination_directory": "E:\\pd-media\\assets\\ai\\lahaina",
+  "backup_directory": "E:\\pd-media\\assets\\ai\\lahaina\\_backup_redo_20260822_01",
+  "contact_sheet": {
+    "path": "E:\\pd-media\\assets\\ai\\lahaina\\_codex_redo_20260822_01\\contact_sheet.v002.jpg",
+    "sha256": "130415AFF0C4A417CFBD87CF86278120B697A3BAE2A8EA9C91028D4FEBA04DEA"
+  },
+  "rows": [
+    {
+      "id": "H006",
+      "subject": "the first smoke, low",
+      "status": "held_visual_qc",
+      "reason": "forbidden palm trees and semantic mismatch: town foreground dominates instead of a low smoke front moving across dry grassland",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "AEF4F35B4BE52A37617EE4B0607C580354C44925BE48EAC980F9B20D31D31823"
+    },
+    {
+      "id": "H010",
+      "subject": "the pole, hero two",
+      "status": "deployed_replacement",
+      "reason": "technical, semantic, continuity, text, watermark, and safety QC pass",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "7E41A93575E3F6B6BF46D5D7C76328C7AD198E8250F64BD68F2F5FDAFFE5FDD1",
+      "replaced_sha256": "20E8E63AC9D6A3B7CFA378E0F306B25E7E1CFB06AD704576A2F4036D9DCA7EDD"
+    },
+    {
+      "id": "H019",
+      "subject": "monthly test, frame two",
+      "status": "deployed_new",
+      "reason": "technical pass; fixed H018 framing and four-horn geometry preserved with harder higher light",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "4E2D1CFA519C4BFC3195105D6ED36D7B93D0A6EA256C0D4608470FADF37FFE45"
+    },
+    {
+      "id": "H020",
+      "subject": "monthly test, frame three",
+      "status": "deployed_new",
+      "reason": "technical pass; fixed H018 framing and four-horn geometry preserved under flat overcast",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "85B3ABA019AD1FBD156BE4E106E0A54EFF3806D057433B490A73CA947D1CBB9B"
+    },
+    {
+      "id": "H058",
+      "subject": "the queue begins",
+      "status": "held_visual_qc",
+      "reason": "forbidden vehicle emblem and a numeral-like rear-window mark remain visible",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "035350079CD494B5C9B853D0CA9CF5D2FE145A758A6703F693F0AD619583E034"
+    },
+    {
+      "id": "H077",
+      "subject": "vehicles alight",
+      "status": "held_visual_qc",
+      "reason": "semantic mismatch: vehicles read as fully burned-out aftermath rather than paint blistering while smoke passes",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "1681A8F6E6BF5B61C9E80C48DA8484C630E1D5F21FC385BDD65AD4AFD3DC9034"
+    },
+    {
+      "id": "H095",
+      "subject": "the cars behind it",
+      "status": "deployed_replacement",
+      "reason": "technical, semantic, identity, text, watermark, and safety QC pass; intact queue and rear-obscured driver",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "657BF6511B578251F0D23BCEB2784EFF7677ABF9A21D248BB40751DD85A775BA",
+      "replaced_sha256": "9DB4141DD07C2E7B43BAD861F5D4698D3AC98898C213AB1D79706D0D89905164"
+    },
+    {
+      "id": "H096",
+      "subject": "the saw",
+      "status": "deployed_new",
+      "reason": "provider accepted the authorized-maintenance framing; technical, anatomy, text, watermark, and safety QC pass",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "42DC70D62414FB3E587A8D181E1F911ABC20D4DB1459EE22A46B580D8EEE3441"
+    },
+    {
+      "id": "H099",
+      "subject": "through the gate",
+      "status": "held_visual_qc",
+      "reason": "forbidden palm trees visible in the background",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "1C6B8DC49FCB27FB3FA7E87075F45BEC9E15A7660B8020E73E020B5D5FC6EB11"
+    },
+    {
+      "id": "H104",
+      "subject": "in the traffic",
+      "status": "held_visual_qc",
+      "reason": "forbidden palm trees and vehicle model markings remain visible; viewpoint is driver POV rather than behind the driver's seat",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "BFD22F9B595FFFFF61BBAA2631D7C4042EDD8033E172B7913ACE5500030AC673"
+    },
+    {
+      "id": "H119",
+      "subject": "one of four",
+      "status": "held_technical_qc",
+      "reason": "visual count is exactly four and palms are absent, but output inherited the 1881x836 reference ratio (2.25:1) instead of 16:9",
+      "width": 1881,
+      "height": 836,
+      "aspect_ratio": 2.25,
+      "sha256": "BB8D7A9DDC451BFB7E18732E0C101BF71738C3937628D0F08D3DCF4106C00CBC"
+    },
+    {
+      "id": "H133",
+      "subject": "a figure at a window, looking mauka",
+      "status": "deployed_new",
+      "reason": "technical, semantic, identity, text, watermark, and safety QC pass",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "3D31A32805514FBAFC977434DE4E756850635E93AB34A1A92815D31CB99F4068"
+    },
+    {
+      "id": "H134",
+      "subject": "a lineman on a pole",
+      "status": "deployed_new",
+      "reason": "technical, semantic, identity, text, watermark, anatomy, and safety QC pass",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "CADB2F84BED51D0417BB522621A3AE4D3D11B1D23B0A3EC70ABD753492C69EF0"
+    },
+    {
+      "id": "H135",
+      "subject": "a hand closing a folder",
+      "status": "deployed_new",
+      "reason": "technical, semantic, anatomy, text, watermark, and safety QC pass",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "478A08803269FEE2E7D5E05F46031507EA743067E3D720DAC9BAD84FECD7EC7B"
+    }
+  ],
+  "destination_inventory": {
+    "expected_ids": "H001-H135",
+    "present_count": 134,
+    "missing_ids": [
+      "H104"
+    ],
+    "extra_ids": []
+  },
+  "readback": {
+    "deployed_files_hash_match_staging": true,
+    "backup_file_count": 2,
+    "protected_existing_files_unchanged": [
+      "H006",
+      "H058",
+      "H077",
+      "H099",
+      "H119"
+    ]
+  }
+}

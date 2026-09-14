@@ -1,0 +1,43 @@
+{
+  "schema_version": "final_qc_v1",
+  "episode_id": "PD-2026-006-terry",
+  "revision": "v001",
+  "render": "artifact://episodes/PD-2026-006-terry/08_edit/terry_final_v001.mp4",
+  "render_actual_path": "H:\\pd-media\\episodes\\PD-2026-006-terry\\08_edit\\terry_final_v001.mp4",
+  "sha256": "938897c59113adb46d501b81c379ab692dc918fd8c931a9f4743cb9a8d30343e",
+  "duration_seconds": 678.0,
+  "target_duration_seconds": 678.0,
+  "video": "Remotion TerryPremium, approved AI stills only, symbolic reconstruction labels on AI/symbolic reenactment scenes",
+  "audio": {
+    "narration": "ElevenLabs channel voice slowed to fit timeline",
+    "narration_master": "artifact://episodes/PD-2026-006-terry/06_voice/master/vc_master_v001.mp3",
+    "narration_slowed": "artifact://episodes/PD-2026-006-terry/06_voice/master/vc_master_v001_slowed_672s.mp3",
+    "narration_slowed_seconds": 671.984,
+    "music": "H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3"
+  },
+  "captions": "artifact://episodes/PD-2026-006-terry/08_edit/captions.final.v001.srt",
+  "thumbnail": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_01.v001.png",
+  "title": "A Cop Can Search You Without a Warrant - Here's the Catch",
+  "synthetic_content_disclosure_required": true,
+  "upload_performed": false,
+  "publish_performed": false,
+  "approval_ids": [
+    "APR-0001",
+    "APR-0002",
+    "APR-0003"
+  ],
+  "qc_status": "pass_with_warnings",
+  "warnings": [
+    "No publish/upload approval; package is local final-ready only.",
+    "Caption timing is derived from ElevenLabs chunk timings and uniform slowdown, not Whisper word-level forced alignment.",
+    "Synthetic-content disclosure is required because symbolic AI reconstructions are used."
+  ],
+  "created_at": "2026-06-20T08:35:00.562022+00:00",
+  "automated_checks": {
+    "ffprobe": "pass: 678.000s, 1920x1080 h264 video, 48kHz stereo AAC audio",
+    "loudnorm_analysis": "pass: input_i -13.82 LUFS, input_tp -0.55 dBTP, input_lra 2.20",
+    "blackdetect": "warn: detected 672.000-677.967s because endcard uses a black brand background; frame inspection confirms visible endcard text",
+    "freezedetect": "warn: several short 3.0-3.4s low-motion intervals in dark graphic scenes; no blank/failed render found in contact sheet",
+    "contact_sheet": "artifact://episodes/PD-2026-006-terry/08_edit/terry_final_v001_contact.jpg"
+  }
+}

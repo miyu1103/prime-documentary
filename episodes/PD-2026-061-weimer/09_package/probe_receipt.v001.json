@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-061-weimer",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "out\\weimer_probe_slice.mp4",
+  "slice_seconds": 90.17,
+  "slice_sha256": "sha256:e455096747502e89c855573ea800b5fd1ee5a18673bc81d2ead5d4431b8a655f",
+  "film_sha256": "sha256:25326292f38c3cd571d5fde16c6608289ded096c248fe0b2f3c285a554162dcb",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 46.0 / p10 45.1 / p50 45.5 (2099 frames, 292 cuts masked +/-8f; 7 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-08-04T09:52:38.072850+00:00"
+}

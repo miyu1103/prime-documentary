@@ -1,0 +1,583 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "pd_release_deviations",
+  "episode_id": "PD-2026-074-itaewon",
+  "slug": "itaewon",
+  "generated_at": "2026-08-25T09:56:05.491028+00:00",
+  "dry_run": false,
+  "policy": {
+    "path": "config/ship_policy.v001.json",
+    "authored": "2026-08-12",
+    "the_rule": "A check may STOP a ship only if it is in `blocking`. Everything else is measured, recorded on the release, and shipped. Nothing here lowers a threshold -- every check still runs and every number is still written down. What changes is which numbers hold the door shut.",
+    "blocking_classes": [
+      "real_person_likeness",
+      "rights_and_licence",
+      "factual_support",
+      "fabricated_record"
+    ]
+  },
+  "receipt": {
+    "path": "episodes/PD-2026-074-itaewon/09_package/acceptance_receipt.v004.json",
+    "status": "FAIL",
+    "video_sha256": "sha256:bd02403d26374a88b6f0f39e07b602a48189c574743f82f627ca3a44e9598f55",
+    "hard_failures": [
+      "animation_density",
+      "caption_sync",
+      "arc_nonrepeat",
+      "thumb_subject_luma",
+      "padding",
+      "animation_mix",
+      "visual_asset_qc",
+      "script_structure",
+      "retention_cadence"
+    ]
+  },
+  "video": {
+    "path": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-074-itaewon\\08_edit\\itaewon_final_bgm.v001.mp4",
+    "sha256": "sha256:bd02403d26374a88b6f0f39e07b602a48189c574743f82f627ca3a44e9598f55"
+  },
+  "decision": "permit",
+  "blocking_failures": [],
+  "deviations": [
+    {
+      "check": "animation_density",
+      "class": "advisory",
+      "advisory_group": "craft_motion",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: movement and animation richness -- the owner's standing complaint, and a real one, but it is taste and it goes in the backlog, not on the door",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the acceptance receipt records this check as a pass/fail bit and not its measured value, and the gate needs the render to measure it (ffmpeg decode), which is not re-run at schedule time. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "caption_sync",
+      "class": "advisory",
+      "advisory_group": "craft_caption",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: caption timing, wording, line breaks and formatting",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "detail": "p50 +0.000s exact 63% late 23% drift +0.034s fword-ends 0 | p90 lag +0.466s > +0.35s (too many late cues)",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "arc_nonrepeat",
+      "class": "advisory",
+      "advisory_group": "craft_footage",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: which clips were used and how often -- diversity, reuse, utilisation, factory share",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the receipt records this check as a pass/fail bit and not its measured value, and it is not re-run at schedule time because re-running it re-fingerprints the whole prior-episode asset universe (gigabytes of hashing) to restate a number the receipt already decided. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "thumb_subject_luma",
+      "class": "advisory",
+      "advisory_group": "craft_packaging",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: title, thumbnail and description craft (the AI-disclosure line is split out and blocks -- see split_checks)",
+      "backlog": true,
+      "measured": {
+        "whole_luma": 40.8,
+        "subject_luma": 41.6,
+        "text_height_px": 501,
+        "outline_px": 26
+      },
+      "threshold": null,
+      "detail": "thumbnail.selected.v001.png: subject luma 41.6 < 60 (central subject is a dark blob)",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "padding",
+      "class": "advisory",
+      "advisory_group": "craft_pacing",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: dead air between narration chunks and repeated phrasing -- pacing craft",
+      "backlog": true,
+      "measured": {
+        "chunks": 343,
+        "has_timing": true,
+        "runtime_span_s": 1886.775,
+        "dead_air_seconds": 113.1,
+        "inter_chunk_dead_seconds": 113.1,
+        "dead_air_frac": 0.0599,
+        "leading_silence_s": 0.0,
+        "trailing_silence_s": 0.0,
+        "within_chunk_dead_s": 0.0,
+        "repeated_phrase_count": 20
+      },
+      "threshold": null,
+      "detail": "3 restated near-duplicate sentence(s) > 2: [0.85] 'the street is about fifty metres long'~'it is about fifty metres long'; [0.88] 'at the top it is about five metres wide'~'at the top it is about five metres acros'; [0.82] 'somebody wrote it down'~'nobody wrote that down'; 20 distinct 7-word phrase(s) repeat > 4",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "animation_mix",
+      "class": "advisory",
+      "advisory_group": "craft_motion",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: movement and animation richness -- the owner's standing complaint, and a real one, but it is taste and it goes in the backlog, not on the door",
+      "backlog": true,
+      "measured": {
+        "still_share": 0.296,
+        "motion_coverage": 0.775,
+        "mg_coverage": 0.259,
+        "footage_coverage": 0.703,
+        "long_still_holds": 87,
+        "longest_still_hold_s": 7.13,
+        "opening_seconds": 0.0,
+        "still_beats": 87,
+        "hero_beats": 87,
+        "total_beats": 356,
+        "body_seconds": 1886.8,
+        "source": "casefilm",
+        "episode_id": "PD-2026-074-itaewon"
+      },
+      "threshold": null,
+      "detail": "still-dependent plan (紙芝居 risk): 87 hero stills linger > 5s (cap 8; longest 7.1s) — lingering photos, not motion",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "visual_asset_qc",
+      "class": "advisory",
+      "advisory_group": "craft_footage",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: which clips were used and how often -- diversity, reuse, utilisation, factory share",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the receipt records this check as a pass/fail bit and not its measured value, and it is not re-run at schedule time because it shells out to ffmpeg over the staged clip pool. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "script_structure",
+      "class": "advisory",
+      "advisory_group": "craft_script",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: script length, structure, cadence and AI-smell",
+      "backlog": true,
+      "measured": {
+        "wpm": 160.0,
+        "timing_source": "word-count@160wpm",
+        "total_runtime_s": 2041.9,
+        "total_runtime_mmss": "34:02",
+        "n_sections": 221,
+        "n_body_acts": 221,
+        "hook_len_s": 0.0,
+        "rehook_max_gap_s": 2041.9,
+        "first_second_person_s": 40.9
+      },
+      "threshold": null,
+      "detail": "first section is 'SPN-0001' (role=body), expected HOOK; second section is 'SPN-0002' (role=body), expected OPENING to follow the hook; last section is 'SPN-0221' (role=body), expected ENDING/CTA last; 2042s with no re-hook beat (0:00->34:02, > 170s); open-loop at 0:00 (SPN-0001, fn='') has no later payoff/resolve/summary/CTA beat; open-loop at 16:44 (SPN-0121, fn='') has no later payoff/resolve/summary/CTA beat",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "retention_cadence",
+      "class": "advisory",
+      "advisory_group": "craft_script",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: script length, structure, cadence and AI-smell",
+      "backlog": true,
+      "measured": {
+        "runtime_s": 1886.8,
+        "rehook_marks": 44,
+        "rehook_gap_max_s": 180.0,
+        "question_marks": 1,
+        "first_question_s": 911.2,
+        "question_gap_max_s": 420.0
+      },
+      "threshold": {
+        "max_rehook_gap_s": 161.6,
+        "max_rehook_gap_at_s": 1141.2,
+        "max_question_gap_s": 975.6,
+        "max_question_gap_at_s": 911.2
+      },
+      "detail": "no direct question for 976s > 420s starting at 15.2min",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "spec_satisfied.distinct_video_assets",
+      "class": "advisory",
+      "advisory_group": "craft_footage",
+      "backlog": true,
+      "measured": "distinct_video_assets: 185 distinct footage+motion source(s) across 185 video cut(s), against a declared 265 -- 80 short, so 0 cut(s) repeat an asset already used",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "threshold": null,
+      "why_it_did_not_block": "advisory: a missing purpose-made still or a short distinct-asset count is coverage craft, not a ban or legal risk"
+    },
+    {
+      "check": "packaging_claims[title]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "A Street Fifty Metres Long Killed 159 People.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "kill",
+          "long",
+          "metr"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[title]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "A Street Fifty Metres Long Killed 159 People.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "peopl",
+          "kill",
+          "long"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[title]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "A Street Fifty Metres Long Killed 159 People.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "kill",
+          "long",
+          "metr"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[title]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "Eleven Calls Had Warned of the Crowd.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "warn",
+          "call",
+          "crowd"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[title]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "Eleven Calls Had Warned of the Crowd.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "warn",
+          "call",
+          "crowd"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "On the night of 29 October 2022, the first Halloween in three years without distancing rules, 159 people died in a street in Itaewon, Seoul.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "october",
+          "distanc",
+          "without"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "On the night of 29 October 2022, the first Halloween in three years without distancing rules, 159 people died in a street in Itaewon, Seoul.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "distanc",
+          "without",
+          "halloween"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "On the night of 29 October 2022, the first Halloween in three years without distancing rules, 159 people died in a street in Itaewon, Seoul.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "peopl",
+          "distanc",
+          "without"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "On the night of 29 October 2022, the first Halloween in three years without distancing rules, 159 people died in a street in Itaewon, Seoul.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "die",
+          "distanc",
+          "without"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "That is the official figure, recorded by the Ministry of the Interior and Safety.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "videotape",
+          "interior",
+          "ministry"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    }
+  ],
+  "unclassified_checks": [],
+  "unmeasured_checks": [
+    {
+      "check": "bgm_ending",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no music bed under the tail to resolve (body -91.0 dB)",
+      "backlog": true,
+      "why_it_did_not_block": "bgm_ending did not run (no_inputs): no music bed under the tail to resolve (body -91.0 dB). It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "hook_added",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "shotlist totals missing",
+      "backlog": true,
+      "why_it_did_not_block": "hook_added did not run (no_inputs): shotlist totals missing. It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "onscreen_text_verified",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "factual_support",
+      "skip_kind": "no_inputs",
+      "detail": "claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-074-itaewon\\01_research\\claims.v001.json (skipped honestly)",
+      "backlog": true,
+      "why_it_did_not_block": "UNMEASURED BLOCKING CLASS: onscreen_text_verified is the factual_support detector and it DID NOT RUN (no_inputs): claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-074-itaewon\\01_research\\claims.v001.json (skipped honestly). Nothing was measured, so nothing clears this class for this episode. It is permitted because a missing input is a tooling gap rather than evidence about the film, and it is recorded here so that no reader can mistake this receipt's green for a measurement."
+    },
+    {
+      "check": "check_encoder_settings",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no long-form final render resolved yet",
+      "backlog": true,
+      "why_it_did_not_block": "check_encoder_settings did not run (no_inputs): no long-form final render resolved yet. It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "preflight_receipt",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "retired 2026-08-23 (decisions/0012-RETIRE-PREFLIGHT-RECEIPT.md): measures artifacts the pipeline stopped producing at ~EP67; replaced by spec_satisfied + probe receipt + ep77 plan stage",
+      "backlog": true,
+      "why_it_did_not_block": "preflight_receipt did not run (no_inputs): retired 2026-08-23 (decisions/0012-RETIRE-PREFLIGHT-RECEIPT.md): measures artifacts the pipeline stopped producing at ~EP67; replaced by spec_satisfied + probe . It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "image_resolution",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no hero PNGs staged in remotion/public/itaewon",
+      "backlog": true,
+      "why_it_did_not_block": "image_resolution did not run (no_inputs): no hero PNGs staged in remotion/public/itaewon. It is not in a blocking class, so the absence is recorded and does not block."
+    }
+  ],
+  "unmeasured_blocking_classes": [
+    "factual_support"
+  ],
+  "blocking_class_detectors": {
+    "real_person_likeness": {
+      "detector": "check_shipped_frames.py (run by the scheduler, hard exit on failure)",
+      "evidence": "runs/qc/itaewon_shipped_frames_review.v001.json",
+      "sha_bound_to_this_render": false,
+      "reviewer": "Claude (Opus 5, Claude Code) -- main session, no subagents. All 55 sheets opened tile by tile in one pass, 2026-08-25 evening, against episode_spec.v001.json fo",
+      "plate_review": {
+        "detector": "check_plate_verdicts verdicts re-read against the built film",
+        "verdicts_file": "runs/qc/itaewon_plate_verdicts.v001.json",
+        "wired_here": true,
+        "state": "measured",
+        "plates": 120,
+        "cuts_tested": 274,
+        "rejected": 0,
+        "unresolved": 0,
+        "rejected_in_film": 0,
+        "unresolved_in_film": 0,
+        "blocking_rows": 0
+      },
+      "state": "partial",
+      "honest_limit": "the frame sampling and the sha binding are real; the LIKENESS judgement is free text in this file and nothing authenticates the reviewer field. There is no face or minor detector anywhere on the ship path. Since 2026-08-12 the PLATE verdicts are also re-read here against the built film, so a plate a reviewer rejected for an identifiable face can no longer reach the door by being rendered first -- but that too is the reviewer's free text, and a plate nobody looked at carefully passes it exactly as easily as one they did."
+    },
+    "rights_and_licence": {
+      "detector": {
+        "detector": "pd_footage_blocklist.hits over the built film",
+        "film": "itaewon_film.json",
+        "wired_here": true,
+        "state": "measured",
+        "cuts_tested": 280,
+        "hits": 0
+      },
+      "blocklist_hits": 0,
+      "rights_manifest": null,
+      "state": "partial",
+      "honest_limit": "the blocklist is a DENYLIST of assets already found to be bad. Nothing on the ship path requires positive licence or provenance clearance for the assets in the film, and this episode carries NO rights manifest."
+    },
+    "factual_support": {
+      "detector": "verify_onscreen_text (burned on-screen figures vs grade-A claims) + check_script_craft (forbidden-claim pass over the script) + check_packaging_claims (title/thumbnail/description vs this episode's own script, captions and ledgers)",
+      "claim_ledger": null,
+      "facts_ledger": "EP74_itaewon_FACTS_LEDGER.v005.md",
+      "episode_spec_forbidden_claims": 12,
+      "packaging_claims": {
+        "detector": "check_packaging_claims.evaluate over 09_package packaging",
+        "wired_here": true,
+        "state": "measured",
+        "claims_checked": 131,
+        "unsupported": 0,
+        "soft_unsupported": 71,
+        "record_sentences": 1873
+      },
+      "state": "partial",
+      "honest_limit": "verify_onscreen_text SKIPS on this episode -- there is no claims.v*.json in 01_research, so it reports ok=true without measuring anything. check_script_craft compares the SCRIPT against the FACTS ledger by literal substring, so a paraphrase evades it. episode_spec.forbidden_claims (12 declared) is read by no gate that can refuse. Narration is compared against no claim ledger anywhere on the ship path. The TITLE, THUMBNAIL TEXT and DESCRIPTION are now read against this episode's own record by check_packaging_claims (2026-08-12, after two false titles cleared every mechanical rule), and it blocks -- but it matches words, stems and numbers only: it cannot judge tone or implication, it passes a title whose words are all in a script that is itself wrong, and a paraphrase the film states in other words reads as UNVERIFIED. A green from it is not a substitute for reading the title against the film."
+    },
+    "fabricated_record": {
+      "detector": "check_packaging_qc: the AI-disclosure line in the description that is uploaded",
+      "has_ai_disclosure": true,
+      "state": "partial",
+      "honest_limit": "this is a substring test for a disclosure phrase, correctly bound to the description the scheduler uploads. NOTHING reads truth_status / source_type / license_decision, and nothing detects a generated document, judgment or police file on screen -- only a human reading the contact sheets can."
+    },
+    "plate_review": {
+      "detector": {
+        "detector": "check_plate_verdicts verdicts re-read against the built film",
+        "verdicts_file": "runs/qc/itaewon_plate_verdicts.v001.json",
+        "wired_here": true,
+        "state": "measured",
+        "plates": 120,
+        "cuts_tested": 274,
+        "rejected": 0,
+        "unresolved": 0,
+        "rejected_in_film": 0,
+        "unresolved_in_film": 0,
+        "blocking_rows": 0
+      },
+      "state": "partial",
+      "honest_limit": "the plate verdicts for this episode ARE re-read against the built film (0 rejected and 0 unresolved plate(s) found in cuts, 0 blocking). IT NEVER LOOKS AT A PICTURE -- check_plate_verdicts.py says so in its own docstring, and this reads its file, not the plates. It proves a verdict exists, that it is bound to the bytes on disk, and that no plate a reviewer rejected or left unresolved was cut into the film. Whether the plates a reviewer ACCEPTED are actually right is a judgement nothing on the ship path re-checks, and a careless review passes this exactly as easily as a careful one. The class is read from the reviewer's own reason text by substring, so a reason worded in new words falls to unclassified and blocks rather than being guessed."
+    }
+  },
+  "detector_gaps": [
+    "real_person_likeness: partial -- the frame sampling and the sha binding are real; the LIKENESS judgement is free text in this file and nothing authenticates the reviewer field. There is no face or minor detector anywhere on the ship path. Since 2026-08-12 the PLATE verdicts are also re-read here against the built film, so a plate a reviewer rejected for an identifiable face can no longer reach the door by being rendered first -- but that too is the reviewer's free text, and a plate nobody looked at carefully passes it exactly as easily as one they did.",
+    "rights_and_licence: partial -- the blocklist is a DENYLIST of assets already found to be bad. Nothing on the ship path requires positive licence or provenance clearance for the assets in the film, and this episode carries NO rights manifest.",
+    "factual_support: partial -- verify_onscreen_text SKIPS on this episode -- there is no claims.v*.json in 01_research, so it reports ok=true without measuring anything. check_script_craft compares the SCRIPT against the FACTS ledger by literal substring, so a paraphrase evades it. episode_spec.forbidden_claims (12 declared) is read by no gate that can refuse. Narration is compared against no claim ledger anywhere on the ship path. The TITLE, THUMBNAIL TEXT and DESCRIPTION are now read against this episode's own record by check_packaging_claims (2026-08-12, after two false titles cleared every mechanical rule), and it blocks -- but it matches words, stems and numbers only: it cannot judge tone or implication, it passes a title whose words are all in a script that is itself wrong, and a paraphrase the film states in other words reads as UNVERIFIED. A green from it is not a substitute for reading the title against the film.",
+    "fabricated_record: partial -- this is a substring test for a disclosure phrase, correctly bound to the description the scheduler uploads. NOTHING reads truth_status / source_type / license_decision, and nothing detects a generated document, judgment or police file on screen -- only a human reading the contact sheets can.",
+    "plate_review: partial -- the plate verdicts for this episode ARE re-read against the built film (0 rejected and 0 unresolved plate(s) found in cuts, 0 blocking). IT NEVER LOOKS AT A PICTURE -- check_plate_verdicts.py says so in its own docstring, and this reads its file, not the plates. It proves a verdict exists, that it is bound to the bytes on disk, and that no plate a reviewer rejected or left unresolved was cut into the film. Whether the plates a reviewer ACCEPTED are actually right is a judgement nothing on the ship path re-checks, and a careless review passes this exactly as easily as a careful one. The class is read from the reviewer's own reason text by substring, so a reason worded in new words falls to unclassified and blocks rather than being guessed.",
+    "factual_support: UNMEASURED -- onscreen_text_verified did not run (no_inputs): claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-074-itaewon\\01_research\\claims.v001.json (skipped honestly). This class was NOT cleared for this episode; the receipt's green for it is an absence."
+  ],
+  "measurement_unchanged": "check_final_acceptance.py ran every check and computed every number for this render; this file records which of its failures were permitted and with what value. No threshold was lowered and no check was switched off."
+}

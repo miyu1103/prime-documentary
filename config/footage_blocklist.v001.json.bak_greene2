@@ -1,0 +1,649 @@
+{
+ "schema_version": "1.0.0",
+ "note": "Shelf clips and generated plates that visual QC rejected. SCOPE OF THIS FILE CHANGED ON 2026-08-05. `blocked` is now HARD findings only -- the four kinds that can end the channel or harm a real person: (1) scraped or third-party copyrighted production footage (a y2mate rip, broadcast news carrying a chyron/watermark/branded mic, another production's burned-in subtitles or title cards, copyrighted characters); (2) a real identifiable minor on screen; (3) a real named person's identity captioned onto a different real person, including a generated plate presented AS a named real person; (4) legible personal data of a real private individual. `blocked` is the ONLY key any tool reads. Everything else -- legible generic document props, 'CITY COP' invented insignia, wrong-city police cruisers, foreign locations standing in for the US, foreign-language signage, stock-photo cliches, sci-fi imagery, register mismatches, ruins, restraint imagery and subject bans from an episode's own spec -- moved to `quality_deferred` by owner decision to ship. Those findings are correct and are kept verbatim; they simply no longer block, because the reject rate they imply is one the archive cannot sustain and the calendar was empty. A row with no `episodes` key is global; a row WITH one binds only for those slugs.",
+ "reviewed_by": "owner-standard visual QC, contact sheets runs/qc/ep51_new + runs/qc/ep52; plus runs/qc/*_shipped_frames_review.v001.json (EP51-EP61, 201 rejections) and runs/qc/burge_clip_verdicts.v001.json (172 rejections), re-read row by row and classified HARD/SOFT on 2026-08-05",
+ "blocked": [
+  {
+   "ids": [
+    "AR-the_bad_guys_2022_prison"
+   ],
+   "label": "copyrighted_animation_with_hud",
+   "reason": "a clip of a copyrighted animated feature with video-game health bars and a character name burned in; rights hazard, never footage",
+   "hard_category": "cat1_third_party_production_footage"
+  },
+  {
+   "ids": [
+    "AR-davidwoodamericantaliban"
+   ],
+   "label": "third_party_vlogger",
+   "reason": "a third-party YouTube vlogger talking to camera; not stock, not licensable",
+   "hard_category": "cat1_third_party_production_footage"
+  },
+  {
+   "ids": [
+    "AR-davidwoodr_kellyconverti"
+   ],
+   "label": "third_party_vlogger",
+   "reason": "a third-party YouTube vlogger talking to camera; not stock, not licensable",
+   "hard_category": "cat1_third_party_production_footage"
+  },
+  {
+   "ids": [
+    "AR-2019aug11_fbi_epsteins_d"
+   ],
+   "label": "broadcast_news_epstein",
+   "reason": "real Fox News broadcast with burned-in chyron and network logo, showing a real identifiable person from an unrelated story: rights risk and invariant 11",
+   "hard_category": "cat1_third_party_production_footage"
+  },
+  {
+   "ids": [
+    "AR-steve_bannon_and_prison"
+   ],
+   "label": "broadcast_news_bannon",
+   "reason": "real news footage with a broadcaster watermark showing a real identifiable person from an unrelated story: rights risk and invariant 11",
+   "hard_category": "cat1_third_party_production_footage"
+  },
+  {
+   "ids": [
+    "AR-2022_jan_26_vic_stasi_po",
+    "AR-y_2mate_so_do_the_pretty"
+   ],
+   "label": "scraped_third_party_production",
+   "reason": "scraped third-party video, not stock. The first is Rebel News footage with a branded stick microphone, a REBEL NEWS lanyard, a 'AVI YEMINI / REBEL REPORTER' chyron and a corner watermark, showing a real named reporter front-on. The second is a y2mate rip carrying ANOTHER production's burned-in subtitles and a full-screen '1970s NEW YORK' title card, which collided with PD's own captions on screen. Rights hazard plus invariant 11.",
+   "hard_category": "cat1_third_party_production_footage"
+  },
+  {
+   "ids": [
+    "AR-10643359",
+    "AR-10643401",
+    "AR-7924639",
+    "AR-6994429",
+    "AR-6994523",
+    "AR-8499734"
+   ],
+   "label": "real_identifiable_minor",
+   "reason": "real identifiable children in stock footage: two schoolgirls of roughly 14-17 front-on at stereo microscopes, and a girl of roughly 8-11 in bed lit by a phone screen. No PD film may put a real identifiable minor on screen; EP51 captioned the second one with a line about a father and his three dead daughters. Added 2026-08-05 from the burge clip verdicts: AR-6994429 is a boy of roughly ten at a front door with his face fully visible, AR-6994523 a girl of roughly eight opening a door, AR-8499734 three schoolchildren in a school corridor with faces sharp and front-facing.",
+   "hard_category": "cat2_real_identifiable_minor"
+  },
+  {
+   "ids": [
+    "AR-6125684"
+   ],
+   "label": "real_identifiable_prisoner",
+   "reason": "archive footage of a real, identifiable woman prisoner in an orange jumpsuit behind bars, forearm tattoo legible. A real person in custody, no release, no anonymisation. EP51 additionally bonded a named male expert's identification card to her.",
+   "hard_category": "cat3_named_person_identity_on_another_person"
+  },
+  {
+   "ids": [
+    "AF-BG-11522"
+   ],
+   "episodes": [
+    "burge"
+   ],
+   "label": "carried_false_identification_card",
+   "reason": "a young red-haired woman carrying a folder through a clinic corridor, over which EP55 placed a lower-third reading 'JON BURGE / Chicago Police - Area 2, South Side'. The clip is not the defect -- the card is -- but the clip is excluded from EP55 so the exact frame cannot recur while the card placement rule is decided.",
+   "hard_category": "cat3_named_person_identity_on_another_person"
+  },
+  {
+   "ids": [
+    "F003",
+    "P07"
+   ],
+   "episodes": [
+    "morton"
+   ],
+   "label": "named_real_person_likeness",
+   "reason": "EP52's own generated plates. F003 is a resolved front-on face at a courtroom bench under the caption 'His name is Michael Morton'; P07 is a resolved face carrying the lower-third 'Nina Morrison / Attorney, the Innocence Project'. Both are on the episode's forbidden-likeness list. Scoped to morton because F003 and P07 are per-episode plate numbers that name completely different pictures in centralpark, surfside, tekoh, burge, flowers, norfolk, postoffice and willingham.",
+   "hard_category": "cat3_named_person_identity_on_another_person"
+  },
+  {
+   "ids": [
+    "P14"
+   ],
+   "episodes": [
+    "norfolk"
+   ],
+   "label": "named_real_person_likeness",
+   "reason": "a resolved, front-on synthetic face at a press scrum carrying the lower-third 'Det. Robert Glenn Ford / Norfolk homicide, took over the questioning'. Ford is a real living named man on the forbidden-likeness list. P14 is a per-episode plate number used by seven other episodes for other pictures, so this is scoped, never global.",
+   "hard_category": "cat3_named_person_identity_on_another_person"
+  },
+  {
+   "ids": [
+    "P01",
+    "P03",
+    "P26"
+   ],
+   "label": "named_real_person_likeness",
+   "episodes": [
+    "willingham"
+   ],
+   "hard_category": "cat3_named_person_identity_on_another_person",
+   "reason": "EP51's own generated plates, each presented AS a real named person: P01 under 'for murdering his own children' reads as Cameron Todd Willingham; P26 carries the lower-third 'JOHNNY WEBB / Jailhouse informant'; P03 carries 'GERALD HURST / Cambridge-trained chemist'. A generated face captioned with a real person's name and role is the defect the owner named on 2026-08-05. Scoped: these plate numbers name different pictures in seven other episodes."
+  },
+  {
+   "ids": [
+    "AR-6980263"
+   ],
+   "episodes": [
+    "postoffice"
+   ],
+   "label": "carried_false_identification_card",
+   "reason": "a close-up of a stock actor's face over which EP56 placed the lower-third 'GARETH JENKINS / Fujitsu engineer, expert witness for the Post Office'. Jenkins is living, has been charged with nothing, and is on the design document's no-likeness list. The clip is innocent; the card is the defect. Excluded from EP56 so the frame cannot recur.",
+   "hard_category": "cat3_named_person_identity_on_another_person"
+  },
+  {
+   "ids": [
+    "AR-15069622"
+   ],
+   "label": "opens_on_black",
+   "reason": "a vintage CRT in a dark room whose first ~1.6s is near-black before the tube warms. It put a 1.6s black stretch into the EP56 postoffice master and the post-render gate failed it as flicker/gap; I extracted the frame at 197.5s and the picture is genuinely absent, with only the caption visible. The builder cuts a fixed window and cannot seek past dead head frames, so this is unusable in any episode, not only this one. KEPT BLOCKING 2026-08-05 THOUGH IT IS NOT ONE OF THE FOUR HARD CATEGORIES. It is not a visual-quality judgement at all: the file genuinely has no picture for its first ~1.6s, the builder cuts a fixed window and cannot seek past dead head frames, and the post-render gate fails the master as flicker/gap. Restoring it would cost a re-render, not a lower visual bar. Move it to quality_deferred if the owner wants the letter of the ship decision applied here too.",
+   "hard_category": "none_kept_for_a_mechanical_reason"
+  },
+  {
+   "ids": [
+    "AR-8419363",
+    "AF-BG-11511",
+    "AF-BG-11513",
+    "AF-BG-11514",
+    "AF-BG-11517"
+   ],
+   "label": "possible_minor_age_not_resolvable",
+   "hard_category": "cat2_real_identifiable_minor",
+   "reason": "Kept blocking on 2026-08-05 as the conservative call, not on a confident finding. AR-8419363 is a lone figure walking a school corridor in a 'VIRGINITY ROCKS' hoodie and a short skirt; the face is small and never resolves, so the subject cannot be aged from any frame and the reviewer's 'possibly a minor' cannot be ruled out. AF-BG-11511/11513/11514/11517 are the same chemotherapy patient -- shaved head, nasal cannula, hospital gown, face fully resolved front-on -- who reads anywhere between about fourteen and twenty. Five clips is a cheap price for not putting a real child on screen; if the owner ages them as adults, move this row to quality_deferred."
+  },
+  {
+   "ids": [
+    "AR-8061661",
+    "AR-8061662"
+   ],
+   "label": "named_private_individual_on_a_certificate",
+   "hard_category": "cat4_legible_personal_data_of_a_private_individual",
+   "reason": "A desk still-life whose framed certificate is legible on screen: 'THE INSTITUTE OF CONTINUING LEGAL EDUCATION / Certificate of Completion / Adam G. Zuwerink / The Probate and Estate Planning Certification Program / 2013'. That is a real private individual's name attached to his professional credential, readable in frame -- the same class as a bar number and name. Recorded 2026-08-05 from the burge clip verdicts."
+  },
+  {
+   "ids": [
+    "AR-10475365"
+   ],
+   "label": "carried_false_identification_card",
+   "episodes": [
+    "fieldtest"
+   ],
+   "hard_category": "cat3_named_person_identity_on_another_person",
+   "reason": "EP57 places the lower-third 'AMY ALBRITTON / Apartment manager, Frances Place, Monroe, Louisiana' over this clip, which shows a uniformed officer in profile and a tattooed man in inmate browns behind glass -- two unrelated real people, both faces fully resolved, neither of them Amy Albritton. Verified at full resolution on 2026-08-05 from runs/qc/shipped_frames/fieldtest/frames/001m30s_601__cut0017_p20.jpg. Same defect class as the JON BURGE card in EP55 and the GARETH JENKINS card in EP56. The clip is not the defect, the card is; the clip is excluded from EP57 so the exact frame cannot recur. NOTE FOR THE EDITOR: blocking the clip only moves the card -- the Albritton identification card itself still needs to be taken off any shot of a person."
+  },
+  {
+   "ids": [
+    "AR-9577270",
+    "AR-9586583"
+   ],
+   "label": "real_identifiable_minor",
+   "reason": "two clips of a real, identifiable child at prayer -- a child of roughly 8-11 at a rail with a woman, and a tight close-up of a boy of roughly 9-13 with a rosary at his forehead, his face filling the frame. Both reached the shipped EP54 flowers master at 18:30-18:38 and were found only when all 75 sheets were finally opened; the earlier review had opened 3. Licensed archive, so no rights issue -- this is the child. One of the four categories that stay blocked under the owner's 2026-08-06 ruling to compromise on visual quality and ship."
+  },
+  {
+   "ids": [
+    "AR-34088981",
+    "AR-37715200"
+   ],
+   "episodes": [
+    "morton"
+   ],
+   "label": "wrong_country_standing_in_for_texas",
+   "reason": "Government House in Baku with the Azerbaijani flag flying, and a fully legible 'Morning Kashmir' newspaper dated 21 May 2025, both used as the American justice system in a Texas story whose last event is 2011. Named by morton's own episode_spec forbidden_subjects (baku, kashmir); check_spec_satisfied fails the film while they are in it."
+  },
+  {
+   "ids": [
+    "AR-28388728",
+    "AR-20132104",
+    "AR-34719182"
+   ],
+   "episodes": [
+    "norfolk"
+   ],
+   "label": "wrong_place_standing_in_for_tidewater",
+   "reason": "a Vigo, Spain courthouse used as the case's courthouse; Lynden, Washington with snow-capped mountains used as coastal Tidewater Virginia; and a futuristic neon cityscape under the sex-offender registration line. Named by norfolk's own episode_spec forbidden_subjects (vigo, lynden, futuristic)."
+  },
+  {
+   "ids": [
+    "AF-BG-7372",
+    "AF-BG-7373"
+   ],
+   "label": "real_school_students_microscope",
+   "reason": "two real young women, plainly identifiable faces, in a school classroom biology setting (AF-BG-7372/7373 microscope_lab); both independent shipped-frame readers judged them teenage-looking and the lead confirmed at full resolution that minority cannot be excluded. Same class as the norfolk 3:21 schoolgirls rejection.",
+   "hard_category": "cat2_real_minor_on_screen"
+  },
+  {
+   "ids": [
+    "AR-10159563"
+   ],
+   "label": "real_person_age_indeterminate_marmet",
+   "reason": "EP65 marmet, found 2026-08-10 while restaging: a real person alone in a lounge chair against a bare wall, face sharp, centre-frame, smiling to camera at 0:51 and again at 18:22. Age cannot be settled from the footage, so it cannot be shown not to be a minor. It reached the scheduling command inside a finished render because the filename reads woman_sitting_on_a_chair_while_reading_a_magazine and every keyword and machine gate passed it. It was withdrawn from marmet by deleting the staged copy, which protects marmet only: the shelf row is live and any other episode query can stage it again. This entry is the actual guard.",
+   "hard_category": "cat2_real_identifiable_minor"
+  }
+ ],
+ "quality_deferred": [
+  {
+   "ids": [
+    "AR-8774546"
+   ],
+   "label": "labelled_coronavirus_vial",
+   "reason": "test tube legibly labelled Coronavirus; reads as a fabricated document on screen"
+  },
+  {
+   "ids": [
+    "9715",
+    "9716",
+    "9718",
+    "9720",
+    "9723",
+    "9724",
+    "9725",
+    "9726",
+    "9727"
+   ],
+   "label": "clock_ticking_macro",
+   "reason": "cheap stock 'time' symbol; 9721 kept as the single usable clock"
+  },
+  {
+   "ids": [
+    "9305",
+    "9306",
+    "9309",
+    "9310",
+    "9311",
+    "9313",
+    "9315",
+    "9316",
+    "9317",
+    "9318"
+   ],
+   "label": "storm_clouds_dramatic",
+   "reason": "featureless sky, no subject; 9307 and 9312 kept"
+  },
+  {
+   "ids": [
+    "10951",
+    "10954",
+    "10958",
+    "10959",
+    "10960",
+    "10961"
+   ],
+   "label": "fireplace_embers_close",
+   "reason": "cosy hearth reads as warmth, not fire as evidence"
+  },
+  {
+   "ids": [
+    "14087",
+    "14090",
+    "14091",
+    "14094",
+    "14096",
+    "14097",
+    "14098",
+    "14099"
+   ],
+   "label": "church_interior_light_beam",
+   "reason": "nine near-identical church interiors; 14089 and 14092 kept"
+  },
+  {
+   "ids": [
+    "13962",
+    "13964",
+    "13969",
+    "13970",
+    "13971"
+   ],
+   "label": "cemetery_fog",
+   "reason": "cartoon Halloween gravestone, ivy with no subject, snowy European rows"
+  },
+  {
+   "ids": [
+    "23315"
+   ],
+   "label": "barbed_wire_fence_sky",
+   "reason": "green scribble abstract, mislabelled"
+  },
+  {
+   "ids": [
+    "18181"
+   ],
+   "label": "evidence_bag",
+   "reason": "actually a close-up of a child's face; dignity + mislabel"
+  },
+  {
+   "ids": [
+    "30299",
+    "30300",
+    "30301"
+   ],
+   "label": "documents_on_desk",
+   "reason": "modern pastel office, wrong era for 1980s-2000s cases"
+  },
+  {
+   "ids": [
+    "9217"
+   ],
+   "label": "small_town_main_street",
+   "reason": "snowy mountain town, wrong region"
+  },
+  {
+   "ids": [
+    "32159",
+    "32160",
+    "32162",
+    "32164",
+    "32165"
+   ],
+   "label": "police_badge_close_up",
+   "reason": "eight near-identical modern patrol clips; 32157/32163/32166 kept"
+  },
+  {
+   "ids": [
+    "AR-6964023"
+   ],
+   "label": "keyboard_letters_message",
+   "reason": "lifestyle stock: hands arranging plastic letter tiles into a message. Read as a scam-word gag over police-torture narration in EP55. Never documentary."
+  },
+  {
+   "ids": [
+    "AR-8293117"
+   ],
+   "label": "couple_welcome_mat",
+   "reason": "smiling couple placing a WELCOME sign at a doorstep. Domestic-lifestyle stock; contradicts every PD subject."
+  },
+  {
+   "ids": [
+    "2061",
+    "2062",
+    "2064",
+    "2065",
+    "2066",
+    "2067"
+   ],
+   "label": "laboratory_glassware",
+   "reason": "rainbow school-chemistry beakers; not a forensic laboratory"
+  },
+  {
+   "ids": [
+    "AR-6963492",
+    "AR-6962707",
+    "AR-7247815"
+   ],
+   "label": "readable_irs_form_1040",
+   "reason": "the same US federal tax-form prop shot sharp and large: 'Form 1040', 'Department of the Treasury-Internal Revenue Service (99)', 'U.S. Individual Income Tax Return', '2020', 'OMB No. 1545-0074', the filing-status boxes, the name/address/SSN field labels and the 2020 crypto question all resolve on screen. A readable form on screen asserts its own content; EP59 ran it under narration about mortgage affidavits."
+  },
+  {
+   "ids": [
+    "AR-241",
+    "AR-8731513",
+    "AR-7841658",
+    "AR-8960642",
+    "AR-7841584",
+    "AR-5778854",
+    "AR-17050"
+   ],
+   "label": "readable_contract_prop",
+   "reason": "document props whose body text is legible and says something the film does not mean: a construction contract ('Article 10. Insurance.', '10.1 Contractor's Insurance.'), a British private-school text ('about 500 private schools in Great Britain', 'Winchester'), 'Product Development Agreement', 'LEASE AGREEMENT', a US 'At-Will Employment' contract used for a UK sub-postmaster contract, a photographer's 'Model Release Form' used as a plea document, and a subcontracting agreement used as a felony charge sheet. Every document on screen must be an unreadable smear."
+  },
+  {
+   "ids": [
+    "AR-8382677"
+   ],
+   "label": "readable_forensic_document",
+   "reason": "a fingerprint card with legible printed and handwritten fields -- 'LEAVE BLANK', 'CRIMINAL', a handwritten date and the place name 'New York' twice. A readable fabricated forensic record, and the legible state contradicts any story not set in New York."
+  },
+  {
+   "ids": [
+    "AR-8061568"
+   ],
+   "label": "readable_third_party_privacy_policy",
+   "reason": "a stapled agreement held flat to camera, in focus, filling a third of the frame: 'What are the legal basis for processing your Personal Information?', 'uses cookies and web beacons (including pixel tags)', 'political opinions, health or biometric'. Two readers independently identified the company named throughout as Yandex -- a real company's privacy policy standing in for a US foreclosure affidavit."
+  },
+  {
+   "ids": [
+    "AR-10325"
+   ],
+   "label": "readable_screen_code",
+   "reason": "sharply legible JavaScript filling the frame, including 'b.yaCounter29509970', '\"yandex_metrika_callbacks\"' and 'document.cookie' -- a real Russian analytics product's tracking code, on screen as a 1999 retail system. Text on a screen must never resolve; when it does it asserts a technology the story does not have."
+  },
+  {
+   "ids": [
+    "AF-BG-30798",
+    "AR-14614733",
+    "AR-12154580",
+    "AR-35182373",
+    "AR-34787807",
+    "AR-34088981",
+    "AR-28388728",
+    "AF-BG-6237",
+    "AR-6676510",
+    "AR-3360811"
+   ],
+   "label": "foreign_location_standing_in_for_us",
+   "reason": "identifiable non-US locations and vehicles used as American ones: a Japanese patrol car whose roof board reads 警視庁 (Tokyo Metropolitan Police); a Finnish VR train at a Nordic station; a Paris Metro/RER platform with 'Sortie' and Ile-de-France Mobilites livery; a Chinese lantern street; a Moroccan railway concourse; Government House in Baku with the Azerbaijani flag; a Vigo, Spain courthouse hyperlapse; the University of Havana colonnade with the 'ALMA MATER' statue and a Cuban national flag; a South American mill signed 'MOLINOS HNOS ... SANTA ROSA'; and a night street carrying a 'BEAUTIFUL BRITISH COLUMBIA' plate. The last two are also barred by EP60 surfside for ruin and ambulance content; the reason recorded here is the one that generalises."
+  },
+  {
+   "ids": [
+    "AR-4263",
+    "AR-v_143808",
+    "AR-v_28693",
+    "AR-v_28880",
+    "AR-1246"
+   ],
+   "label": "identifiable_london_street",
+   "reason": "London streets carrying legible identifying text: a red double-decker with route '47' and operator 'Stagecoach'; 'BIGBUS LONDON' at Parliament Square; a London Underground roundel with the nameplate 'BELGROVE STREET' and a real 'Post Office' shopfront sign; a converted bus at Albert Dock signed 'MERSEYSIDE MARITIME MUSEUM'; and a Transport for London roundel with a red double-decker in a film set in Norfolk, Virginia. PD is a US-case channel: these read as a foreign country in every episode. EP56 postoffice is the one UK story and forbids bus imagery outright, so nothing on the slate can use them."
+  },
+  {
+   "ids": [
+    "AR-21911",
+    "AR-5452720",
+    "AR-31940805",
+    "AR-27616566",
+    "AR-37715200",
+    "AR-5228146"
+   ],
+   "label": "foreign_language_signage_on_screen",
+   "reason": "foreign-language text legible on screen in American stories: a Cyrillic ATM ('Выдать чек?', 'Выберите сумму') with a EUR denomination menu; a Cyrillic Minsk street map covering the back wall of a 'US servicer call centre' set ('ул. Матусевича', 'Площадь Победы'); Buenos Aires gantries ('Av. GENERAL PAZ', 'AEROPARQUE', '100 MAXIMA'); an open Polish-language newspaper under US banknotes; a fully legible 'Morning Kashmir' newspaper dated 21 May 2025; and a street fascia with Polish copy plus a live phone number and URL ('www.pepes.co.uk', '0208 567 2211')."
+  },
+  {
+   "ids": [
+    "AR-10472376"
+   ],
+   "label": "third_party_courier_branding",
+   "reason": "a parcel hub with the real 'LEL EXPRESS' logo legible on three signs and trolleys, alongside readable gantry signs 'INBOUND LANE 15' and 'INBOUND LANE 16'. A live third-party commercial brand and a non-US depot standing in for a national postal operation."
+  },
+  {
+   "ids": [
+    "AF-BG-32300",
+    "AF-BG-62568",
+    "AR-10476422"
+   ],
+   "label": "invented_police_force",
+   "reason": "actors whose shoulder patch reads 'CITY COP', a force that does not exist, standing in for real named police departments. A fabricated insignia on a documentary screen asserts a fact (invariant 11), and the same stock family reached both EP55 burge and EP57 fieldtest. One of the three also shows a man gripping holding-cell bars with his face fully visible."
+  },
+  {
+   "ids": [
+    "AF-BG-62558"
+   ],
+   "label": "dc_police_with_live_recruitment_url",
+   "reason": "a cruiser with unit number 9751 and fully legible 'METROPOLITAN POLICE' plus the live recruitment address 'join us - dcpolicejobs.dc.gov', beside a military Humvee and camouflaged soldiers -- a dated 2020-21 Washington DC National Guard deployment. Wrong city, wrong decade and a specific real event, with a working third-party web address on screen."
+  },
+  {
+   "ids": [
+    "AF-BG-32299"
+   ],
+   "label": "mislabelled_vox_pop",
+   "reason": "filed on the shelf as 'evidence_bag'; it is a smiling, laughing woman in a red coat holding a microphone and gesturing to camera on a suburban street, face fully identifiable. Consumer vox-pop stock. It played under torture testimony in EP55 purely because the label lied."
+  },
+  {
+   "ids": [
+    "AR-7232001"
+   ],
+   "label": "glamour_stock_interrogation",
+   "reason": "a young woman under a single interrogation lamp styled as glamour stock -- low-cut top, choker, heavy makeup, shoji-screen backdrop, an open foam-lined case at frame left. Sexualised styling of a restrained person is never documentary and contradicts every PD subject."
+  },
+  {
+   "ids": [
+    "AR-34719182"
+   ],
+   "label": "sci_fi_cityscape",
+   "reason": "a glowing blue futuristic neon cityscape: explicit science-fiction imagery with no documentary referent, run under narration about sex-offender registration."
+  },
+  {
+   "ids": [
+    "AF-BG-6236",
+    "AF-BG-31848"
+   ],
+   "label": "identifiable_courthouse_wrong_town",
+   "reason": "aerials of the same real American town square dominated by a Second-Empire stone courthouse with mansard roof, clock tower and cupola, a US flag and brick storefronts. Architecturally identifiable and not any town PD has covered. EP61 weimer rejected AF-BG-6236 as 'not Fayette County'; because the rejection was never turned into a block, EP54 flowers then ran the same clip and its twin under an on-screen 'WINONA, MISSISSIPPI' card -- a town of about 5,000 people with no such building. This entry exists so that cannot happen a third time."
+  },
+  {
+   "ids": [
+    "AF-BG-14092",
+    "AF-BG-9595"
+   ],
+   "label": "foreign_orthodox_church_interior",
+   "reason": "Eastern Orthodox interiors: a bishop icon in Slavonic style, a three-bar cross and Cyrillic-style lettering on the analogion cloth, ornate gilt-brass candle stands with thin red and yellow tapers, a gold-ground Byzantine icon. Foreign-language lettering and non-US religious architecture presented as western Pennsylvania. Supersedes the 'kept' note on the church_interior_light_beam entry for 14092."
+  },
+  {
+   "ids": [
+    "AR-20132104"
+   ],
+   "label": "wrong_region_small_town",
+   "reason": "an aerial of Lynden, Washington -- the basename names it -- with snow-capped mountains on the horizon, used as coastal Tidewater Virginia. Same class as 9217."
+  },
+  {
+   "ids": [
+    "AF-BG-62560",
+    "AR-6125532",
+    "AF-BG-32230"
+   ],
+   "episodes": [
+    "burge"
+   ],
+   "label": "restraint_and_distress",
+   "reason": "EP55's design document forbids depicting the torture: 'no restrained person, no device touching anyone, no distress faces', and episode_spec forbids 'torture'. These are a full-frame close-up of hands locked in steel handcuffs, a woman handcuffed at an interrogation table mid-shout, and a man shot through cell bars with his face upturned reading as anguish. Handcuffs and cell bars are ordinary material for other episodes -- this is an EP55 constraint, not a shelf defect."
+  },
+  {
+   "ids": [
+    "AF-BG-36300"
+   ],
+   "episodes": [
+    "burge"
+   ],
+   "label": "lapd_seal_legible_wrong_city",
+   "reason": "a cruiser door carrying the legible seal 'CITY OF LOS ANGELES' around the California bear and the LAPD motto 'to protect and to serve', used for Chicago PD (whose cars read 'We Serve and Protect'). CLOSE CALL: this is a real US agency correctly depicted, so it is legitimate material for a Los Angeles story and is scoped rather than blocked. It must never be staged for an episode set anywhere else; a keyword gate cannot see that, so it is a review point."
+  },
+  {
+   "ids": [
+    "AR-23315"
+   ],
+   "episodes": [
+    "morton"
+   ],
+   "label": "couple_staged_on_a_bed",
+   "reason": "a young woman and a bearded man sitting together on a bed going through papers, both faces fully resolved. EP52's design document requires the bedroom to appear only as ABSENCE and bans any likeness of Michael or Christine Morton. Ordinary domestic-stress stock for a debt or foreclosure episode; unusable here."
+  },
+  {
+   "ids": [
+    "P06"
+   ],
+   "label": "unanonymised_courtroom_faces",
+   "episodes": [
+    "willingham"
+   ],
+   "reason": "P06 shows two unanonymised courtroom faces with severe colour corruption (teal suits, acid-green cast, posterisation). No name is captioned on either, so this is a likeness and grade problem, not a named-identity defect. Split out of the named_real_person_likeness row on 2026-08-05."
+  },
+  {
+   "ids": [
+    "AR-37957757",
+    "AR-30339957"
+   ],
+   "episodes": [
+    "postoffice"
+   ],
+   "label": "bus_in_frame",
+   "reason": "episode_spec forbids 'bus' outright -- Martin Griffiths died after walking in front of a moving bus. The first has a white-and-blue single-decker filling the right half of frame, defocused but unmistakable. The second is AMBIGUOUS and is recorded as such: a free-standing kerbside passenger shelter in heavy fog, the standard UK bus-shelter form, but the reviewer's own note says it cannot be read as unambiguously a BUS shelter from the sampled frames. Both are ordinary street footage for any other episode."
+  },
+  {
+   "ids": [
+    "AR-v_318039",
+    "AR-15040626"
+   ],
+   "episodes": [
+    "postoffice"
+   ],
+   "label": "method_adjacent_composition",
+   "reason": "EP56's restraint block bars bridge and parapet imagery and 'method emphasis'. The first is a road bridge on piers over a frozen river; the second is a lone human figure at a quay railing above black water at night. Neither is a shelf defect -- both are ordinary scenic footage -- and the second is an explicit editorial judgement no keyword names."
+  },
+  {
+   "ids": [
+    "AR-7714286"
+   ],
+   "episodes": [
+    "robosigning"
+   ],
+   "label": "charged_imagery_meaning_mismatch",
+   "reason": "a uniformed officer leaning into the window of a car driven by a Black man, run under narration about a Maine lawyer deposing a document processor and again under a line about mailing statements. Nothing in EP59 involves police or a traffic stop; three readers flagged it independently. Editorial, not a rights or truth defect, so it is scoped."
+  },
+  {
+   "ids": [
+    "AR-v_218133",
+    "AR-2691466",
+    "AR-34387138",
+    "AR-31687629"
+   ],
+   "episodes": [
+    "surfside"
+   ],
+   "label": "ruin_and_demolition",
+   "reason": "episode_spec forbids 'collapse', 'rubble', 'debris' and 'excavator' and its note calls that binding and non-negotiable. These are a drone descent over an active demolition site (yellow tracked excavator, spoil heaps, debris skips) filed on the shelf as 'rehabilitated_building_rehabilitation'; a gutted interior with fallen ceiling joists; a derelict room with broken masonry; and an abandoned entrance with a broken door and threshold debris. Ruins and demolition are ordinary material for other episodes."
+  },
+  {
+   "ids": [
+    "W066",
+    "W084",
+    "W044",
+    "W058",
+    "W059",
+    "W029"
+   ],
+   "episodes": [
+    "weimer"
+   ],
+   "label": "forbidden_subject_plates",
+   "reason": "EP61's own generated plates, each hitting a line of its episode_spec: W066 is a stainless post-mortem table under a surgical lamp ('a mortuary, a post-mortem examination'); W084 is a steel cell door with a wired-glass observation port, circled by the film's own annotation, and W044 an institutional corridor ('prison cells ... as the primary register'); W058 is a real photographed neoclassical civic building captioned as 'The Office of the Fayette County District Attorney' ('any real ... courthouse ... identifiable by architecture'); W059 is a plaster arch with a measurement arrow cutting to calipers ('dental casts of a human jaw'); W029 draws an evidence-marker ring onto empty asphalt, enclosing nothing, with the callout clipped mid-word ('evidence markers on a pavement'). W-numbers exist only in weimer."
+  },
+  {
+   "ids": [
+    "AF-BG-14089"
+   ],
+   "episodes": [
+    "weimer"
+   ],
+   "label": "reads_as_the_victim",
+   "reason": "a young man -- shaved head, neck tattoo, sleeveless top -- alone in a church pew, held across the line 'He wanted to be a chef.' episode_spec forbids 'the victim Curtis Haith in any depiction, real or generic'. The clip is an ordinary church interior elsewhere; note that the sibling entry church_interior_light_beam kept 14089 and 14092 as the two usable ones, and both have now been rejected -- 14092 globally, 14089 here."
+  },
+  {
+   "ids": [
+    "AF-BG-9208"
+   ],
+   "episodes": [
+    "weimer"
+   ],
+   "label": "seasonal_decorations_and_brand_sign",
+   "reason": "a dusk aerial down a main street with lit municipal snowflake Christmas decorations on the utility poles and a lit DOLLAR GENERAL sign, over flat terrain reading southern US rather than Appalachian Fayette County. AMBIGUOUS: a southern US main street is ordinary PD material and the decorations only misdate a film whose events are not at Christmas, so this is scoped rather than blocked. Any episode staging it must check the season."
+  },
+  {
+   "ids": [
+    "AF-BG-2665"
+   ],
+   "episodes": [
+    "weimer"
+   ],
+   "label": "monochrome_reads_as_archival",
+   "reason": "a fully monochrome silhouette insert among colour shots, under 'They told the jury they were not receiving deals in exchange for their testimony' -- it reads as an authentic archival record of real people, which is what invariant 11 exists to prevent. AMBIGUOUS: the defect is the grade, not the content, and a colour treatment would remove it, so this is scoped rather than blocked. The durable fix is a rule that no cut may render monochrome, not a ban on this clip."
+  }
+ ],
+ "quality_deferred_note": "Set aside on 2026-08-05 by owner decision to ship, NOT because the finding was wrong. Every row here was written from a frame someone actually opened and is an accurate record of what this shelf contains; it is retained verbatim so the same judgement does not have to be made again. These rows do not bind any tool. Restore a row to `blocked` by moving it back."
+}

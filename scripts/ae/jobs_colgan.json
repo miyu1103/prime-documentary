@@ -1,0 +1,206 @@
+[
+  {
+    "id": "colgan_ae001",
+    "beat": "AE001",
+    "act": "HOOK",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "22:17",
+    "style": "number",
+    "big": "22:17",
+    "bigSize": 300,
+    "label": "CONTINENTAL CONNECTION FLIGHT 3407",
+    "source": "FACTS_LEDGER row CO-001"
+  },
+  {
+    "id": "colgan_ae002",
+    "beat": "AE002",
+    "act": "HOOK",
+    "kind": "map_move",
+    "seconds": 8,
+    "headline": "FIVE MILES SHORT",
+    "value": 5,
+    "suffix": " NAUTICAL MILES",
+    "lines": [
+      {"t": "5 NAUTICAL MILES NORTH-EAST OF THE AIRPORT", "cite": "CO-002"}
+    ],
+    "source": "FACTS_LEDGER row CO-002",
+    "forbid": "The map STOPS five miles out. No crash site is drawn (spec note)."
+  },
+  {
+    "id": "colgan_ae003",
+    "beat": "AE003",
+    "act": "OP",
+    "kind": "title_card",
+    "seconds": 7.5,
+    "headline": "12 FEBRUARY 2009",
+    "style": "number",
+    "big": "12 FEBRUARY 2009",
+    "bigSize": 170,
+    "source": "FACTS_LEDGER row CO-001"
+  },
+  {
+    "id": "colgan_ae004",
+    "beat": "AE004",
+    "act": "ACT_1",
+    "kind": "system_map",
+    "seconds": 10,
+    "headline": "WHAT THE RED BAR IS FOR",
+    "lines": [
+      {"t": "A RED AND BLACK BAR ON THE AIRSPEED SCALE", "cite": "CO-301"},
+      {"t": "SPEED FALLS TO ITS TOP — THE STICK SHAKER FIRES", "cite": "CO-301"},
+      {"t": "THE NUMBERS TURN FROM WHITE TO RED", "cite": "CO-301"}
+    ],
+    "source": "FACTS_LEDGER row CO-301",
+    "forbid": "This is the episode MOTIF (script header): the bar itself, drawn plainly. Never explained as a symbol on the card."
+  },
+  {
+    "id": "colgan_ae005",
+    "beat": "AE005",
+    "act": "ACT_1",
+    "kind": "hero_number",
+    "seconds": 9,
+    "headline": "WINGS LEVEL, ONE G",
+    "style": "punch",
+    "words": ["WINGS LEVEL,", "ONE G"],
+    "bigSize": 150,
+    "value": 1,
+    "suffix": " G",
+    "source": "FACTS_LEDGER row CO-204",
+    "forbid": "The Board's own finding: the shaker fired WITH enough airspeed available to correct (CO-204). The card states the condition, never a verdict on the crew."
+  },
+  {
+    "id": "colgan_ae006",
+    "beat": "AE006",
+    "act": "ACT_2",
+    "kind": "comparison",
+    "seconds": 10,
+    "headline": "PUSH / PULL",
+    "lines": [
+      {"t": "THE PUSHER: A TACTILE INSTRUCTION TO PUSH FORWARD", "cite": "CO-303"},
+      {"t": "THE RESPONSE: A 41-POUND PULL", "cite": "CO-205"}
+    ],
+    "source": "FACTS_LEDGER row CO-303",
+    "forbid": "Two arrows, one right, one wrong. NO BLAME ON THE CARD (spec note) -- the captain is dead and is not this film's villain (R3)."
+  },
+  {
+    "id": "colgan_ae007",
+    "beat": "AE007",
+    "act": "ACT_2",
+    "kind": "hero_number",
+    "seconds": 9,
+    "headline": "FORTY-ONE POUNDS",
+    "style": "number",
+    "big": "41",
+    "bigSize": 340,
+    "label": "OF PULL ON THE CONTROL COLUMN",
+    "value": 41,
+    "suffix": " POUNDS",
+    "source": "FACTS_LEDGER row CO-205"
+  },
+  {
+    "id": "colgan_ae008",
+    "beat": "AE008",
+    "act": "ACT_3",
+    "kind": "timeline",
+    "seconds": 10,
+    "headline": "1991 · 2002 · 2004 · 2007",
+    "lines": [
+      {"t": "1991 — INSTRUMENT RATING, DISAPPROVED. PASSED 25 OCT", "cite": "CO-401"},
+      {"t": "2002 — COMMERCIAL SINGLE-ENGINE, DISAPPROVED. PASSED 25 JUN", "cite": "CO-402"},
+      {"t": "2004 — COMMERCIAL MULTI-ENGINE, DISAPPROVED. PASSED 29 APR", "cite": "CO-403"},
+      {"t": "2007 — ATP, DISAPPROVED. PASSED 18 OCT", "cite": "CO-404"}
+    ],
+    "source": "FACTS_LEDGER rows CO-401 to CO-404",
+    "forbid": "Built one at a time (spec note). EVERY line carries its PASSED date -- a card of bare failures would state a fact the record does not."
+  },
+  {
+    "id": "colgan_ae009",
+    "beat": "AE009",
+    "act": "ACT_3",
+    "kind": "document_blowup",
+    "seconds": 9,
+    "headline": "ONE LINE ON A FORM",
+    "lines": [
+      {"t": "\"HAVE YOU EVER FAILED ANY PROFICIENCY CHECK, FAA CHECK RIDE, IOE OR LINE CHECK?\"", "cite": "CO-501"}
+    ],
+    "source": "FACTS_LEDGER row CO-501",
+    "forbid": "Illustrate a FORM; no legible generated document text (spec note; fabricated_record). The question renders as designed typography, never as a facsimile."
+  },
+  {
+    "id": "colgan_ae010",
+    "beat": "AE010",
+    "act": "ACT_3",
+    "kind": "comparison",
+    "seconds": 10,
+    "headline": "WHAT WAS ASKED / WHAT WAS ANSWERED",
+    "lines": [
+      {"t": "ASKED: EVER FAILED ANY CHECK?", "cite": "CO-501"},
+      {"t": "ANSWERED, 2005: THE INSTRUMENT RATING ONLY", "cite": "CO-502"},
+      {"t": "NOT DISCLOSED: TWO OTHER CERTIFICATE DISAPPROVALS", "cite": "CO-503"}
+    ],
+    "source": "FACTS_LEDGER rows CO-502 and CO-503",
+    "forbid": "CO-502 is what he DID write, quoted in the ledger. The card may not add motive or the word 'lied' -- the record does not say it."
+  },
+  {
+    "id": "colgan_ae011",
+    "beat": "AE011",
+    "act": "ACT_3",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "THIRTEEN POINT ONE PER CENT",
+    "style": "number",
+    "big": "13.1%",
+    "bigSize": 300,
+    "label": "ATP FIRST-ATTEMPT FAILURES, 2008 — FAILING IS NOT RARE",
+    "value": 13.1,
+    "suffix": " PER CENT",
+    "source": "FACTS_LEDGER row CO-407",
+    "forbid": "This card exists so the film CANNOT imply failing a check ride is rare (spec note)."
+  },
+  {
+    "id": "colgan_ae012",
+    "beat": "AE012",
+    "act": "ACT_4",
+    "kind": "comparison",
+    "seconds": 10,
+    "headline": "WHAT EACH SEAT EARNED",
+    "value_a": 15800,
+    "value_b": 60000,
+    "prefix": "$",
+    "lines": [
+      {"t": "THE FIRST OFFICER, ON THE CVR: $15,800 GROSS LAST YEAR", "cite": "CO-605"},
+      {"t": "THE CAPTAIN, ON THE CVR: ABOUT $60,000", "cite": "CO-606"},
+      {"t": "COLGAN AVERAGES, 2008: CAPTAIN $67,000 · FIRST OFFICER $24,000", "cite": "CO-701"}
+    ],
+    "source": "FACTS_LEDGER rows CO-605, CO-606 and CO-701",
+    "forbid": "The $15,800 and $60,000 are the pilots' OWN statements on the CVR -- the card keeps the attribution, it does not present them as payroll records."
+  },
+  {
+    "id": "colgan_ae013",
+    "beat": "AE013",
+    "act": "ACT_4",
+    "kind": "list_build",
+    "seconds": 10,
+    "headline": "WHAT THE LAW THEN REQUIRED",
+    "lines": [
+      {"t": "EVERY FIRST OFFICER: AN ATP CERTIFICATE — THE 1,500-HOUR RULE", "cite": "CO-902"},
+      {"t": "SAFETY MANAGEMENT SYSTEMS AT COMMERCIAL CARRIERS", "cite": "CO-903"},
+      {"t": "A PILOT RECORDS DATABASE, KEPT FOR LIFE, CHECKED AT HIRING", "cite": "CO-904"}
+    ],
+    "source": "FACTS_LEDGER rows CO-902 to CO-904",
+    "forbid": "These are requirements of Public Law 111-216 as the ledger records them. The statute text itself is an Open item (S: not yet read) -- do not expand the wording beyond the ledger rows."
+  },
+  {
+    "id": "colgan_ae014",
+    "beat": "AE014",
+    "act": "ENDING",
+    "kind": "quote_card",
+    "seconds": 10,
+    "headline": "COULD NOT BE CONCLUSIVELY DETERMINED",
+    "quote": "The pilots' performance was likely impaired because of fatigue, but the extent of their impairment, and the degree to which it contributed, could not be conclusively determined.",
+    "attribution": "NATIONAL TRANSPORTATION SAFETY BOARD",
+    "source": "FACTS_LEDGER row CO-801",
+    "forbid": "The Board's sentence in its own words. THE RESTRAINT IS THE POINT (spec note) -- no card may resolve what the Board left open."
+  }
+]

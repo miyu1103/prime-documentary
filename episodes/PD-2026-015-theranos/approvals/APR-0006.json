@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0006",
+  "episode_id": "PD-2026-015-theranos",
+  "target_type": "upload_publish_schedule",
+  "target_revision": "v009",
+  "decision": "approved",
+  "requested_by": "owner",
+  "approved_by": "owner",
+  "actor": "codex",
+  "decision_source": "Owner messages on 2026-06-28 JST: 進めて / 全て承認します",
+  "decided_at": "2026-06-28T12:53:53+09:00",
+  "final_delivery": "episodes/PD-2026-015-theranos/09_package/final_delivery.v009.json",
+  "final_delivery_sha256": "sha256:994910f65df49e6629f561b2532ce68df91c96cc43ed898835c67da0f3428ad6",
+  "youtube_meta": "episodes/PD-2026-015-theranos/09_package/youtube_meta.v009.json",
+  "youtube_meta_sha256": "sha256:9f06451604144a2a054beec98fc7815ef64fa830ee8fb8b828216fc7aa07cfe2",
+  "video": "H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4",
+  "video_sha256": "sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec",
+  "thumbnail": "episodes/PD-2026-015-theranos/09_package/thumbnail.selected.v003.png",
+  "thumbnail_sha256": "sha256:17f4e97f0b34ce1697cf7ac089201b213df9184ae744a2cbc4c0b67d72aa2f3a",
+  "captions_sidecar": "episodes/PD-2026-015-theranos/08_edit/captions.v001.srt",
+  "captions_sha256": "sha256:fb8e241e4c54df7dea2c94a66b874e7d4836f9be0807446e0b7a225591ff03e6",
+  "scheduled_at_local": "2026-06-30T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-30T03:00:00Z",
+  "scope": [
+    "Upload exact final video privately to the allowlisted Prime Documentary YouTube channel.",
+    "Set exact selected thumbnail.",
+    "Upload English sidecar captions.",
+    "Schedule public release for 2026-06-30T12:00:00+09:00."
+  ],
+  "constraints": [
+    "Do not immediate-public publish.",
+    "Initial upload must remain private with publishAt schedule.",
+    "Synthetic media disclosure must be set where supported.",
+    "Do not delete or modify other episode uploads.",
+    "Do not change locked script, claims, narration, final video, title, or thumbnail."
+  ]
+}

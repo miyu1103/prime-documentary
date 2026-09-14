@@ -1,0 +1,1263 @@
+{
+  "episode_id": "PD-2026-009-timbs",
+  "slug": "timbs",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "m-uWzgWHGPg",
+    "title": "Police Took His $42,000 Car. The Supreme Court Drew a Line.",
+    "url": "https://www.youtube.com/watch?v=m-uWzgWHGPg",
+    "privacy": "public",
+    "views": 19
+  },
+  "shorts_existing": [
+    "short09"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short09": [
+      "Police can take your car, your cash, even your house, without ever convicting you of a crime.",
+      "An Indiana man bought a forty-two-thousand-dollar SUV with the life-insurance money his father left him.",
+      "After a small drug sale, with no prison time, the state seized the SUV.",
+      "That's about four times the most he could be fined.",
+      "In 2019, the Supreme Court ruled nine to nothing: the ban on excessive fines applies to the states too.",
+      "He got his car back, but the power to take your property still stands.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-009-timbs\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "The whole weight of \"innocent until proven guilty\" is built around a person.",
+    "The police can take your car, your cash, even your house — and never charge you with a crime .",
+    "Then, in 2019, one man's Land Rover — seized over a small drug case — carried that question all the way to the Supreme Court .",
+    "It is called civil asset forfeiture, and most people have never heard of it until it happens to them.",
+    "Used that way, supporters argue, it disrupts criminal enterprises in a way that arresting one person never could .",
+    "In 2019, the Supreme Court closed the gap.",
+    "And for Tyson Timbs himself, the story has an ending most of these cases never get."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short115",
+      "angle": "Forfeiture works by filing the case against your property instead of against you, which is the exact mechanism that lets 'innocent until proven guilty' stop applying.",
+      "type": "A — second-person threat ('this can reach you')",
+      "avoids": "The existing Short tells the seizure story and the nine to nothing outcome. It never explains the legal fiction that makes seizure possible without a conviction, or why forfeiture cases are captioned against objects.",
+      "funnel_question_left_for_longform": "Where the limit on all of this finally came from, and why it is older than the country.",
+      "era": "present-day America, framed by 2019 Indiana",
+      "loop": true,
+      "loop_join": "L5 poses the question and L1 answers it flatly on the restart: they do not charge you, they charge your car.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "The police do not have to charge you. They charge your car.",
+          "delivery": "intense",
+          "source_lines": [
+            "The police can take your car, your cash, even your house — and never charge you with a crime"
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "Civil asset forfeiture works on a legal fiction. The case is not brought against the person. It is brought against the thing.",
+          "delivery": "building",
+          "source_lines": [
+            "Civil asset forfeiture works on a legal fiction that sounds almost absurd when you first hear it. The case is not brought against the person. It is brought against the thing"
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "That is why these cases have such strange names. The government versus a car. Versus a house. The property itself is treated as the suspect.",
+          "delivery": "building",
+          "source_lines": [
+            "That is why forfeiture cases have such peculiar names — the government versus a car, versus a sum of cash, versus a house. In the eyes of the law, the property itself is treated as the suspect."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "And because the case targets the object, the protections you expect in a criminal trial do not all apply. In many places the owner never has to be convicted.",
+          "delivery": "intense",
+          "source_lines": [
+            "And because the case targets the object, not the owner, the protections you would expect in a criminal trial do not all apply. In many places, the owner does not have to be convicted of a crime to lose the property."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "There is a reason the power exists. Forfeiture grew as a tool to strip the profits out of organized crime and drug trafficking.",
+          "delivery": "building",
+          "source_lines": [
+            "Now, there is a reason this power exists. Forfeiture grew as a tool to strip the profits out of organized crime and drug trafficking — to take the boats, the planes, the cash that made the crime worth doing"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "But in many state systems, and in a federal program, the proceeds flow back to the very agencies that seized the property.",
+          "delivery": "building",
+          "source_lines": [
+            "In many state systems, and in a federal program, the proceeds flow back to the very agencies that seized the property"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The Institute for Justice calls that policing for profit, a built in incentive to seize. The criticism runs across the political spectrum.",
+          "delivery": "building",
+          "source_lines": [
+            "The Institute for Justice, the firm that took up Timbs's case, calls this \"policing for profit\" — a built-in incentive to seize, regardless of guilt",
+            "Criticism of civil forfeiture runs across the political spectrum, from civil-liberties groups to conservative reform groups, which is rare for any issue in American law"
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Ask yourself how a person keeps the presumption of innocence when the case is not filed against a person at all.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R09",
+          "subject": "a dark SUV standing alone in a floodlit impound lot",
+          "source": "GENERATE",
+          "prompt": "a single dark SUV standing alone on the cracked asphalt of a fenced impound lot at night, chain link on three sides, no plates or badges legible, lit ONLY by one floodlight which is switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "impound lot car night fence"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R12",
+          "subject": "a set of car keys on a bare steel counter",
+          "source": "GENERATE",
+          "prompt": "one set of car keys lying alone on a bare steel counter, no hands in frame, the fob and rings catching hard light, lit ONLY by one overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "car keys on counter macro"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R09",
+          "subject": "a vehicle being winched onto a flatbed",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "tow truck loading car night",
+          "bound_title": "cars passing through flood water on the side street caused by excessive rainfall",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4458,
+          "motion": 6.518,
+          "luma": 32.0
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R10",
+          "subject": "a dry rectangle on a wet driveway where a vehicle stood",
+          "source": "GENERATE",
+          "prompt": "a residential driveway soaked with rain except for one clean dry rectangle where a vehicle has just been taken from, nobody in frame, lit ONLY by one porch light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty driveway wet night"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "I03",
+          "subject": "a printed form with every field worn blank",
+          "source": "GENERATE",
+          "prompt": "one printed official form lying square on a dark desk with every field and heading worn completely blank, nobody at the desk, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "official form blank paper desk"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a hand signing paperwork on a clipboard",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand signing paperwork clipboard",
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\pixabay_extra__v_141435__pen-paper-office.mp4",
+          "bound_title": "man signing the paper",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.468,
+          "motion": 6.84,
+          "luma": 91.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U06",
+          "subject": "an empty counsel chair with a single car key on the table beside it",
+          "source": "GENERATE",
+          "prompt": "an empty chair pulled up to a bare counsel table in a dark courtroom with one car key on a ring lying on the table where a defendant's papers would be, lit ONLY by one brass lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chair table courtroom"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "W06",
+          "subject": "an evidence tag tied to a car door handle",
+          "source": "GENERATE",
+          "prompt": "macro of a blank paper evidence tag tied by wire to the chrome door handle of a parked vehicle, every marking on the tag worn completely blank, lit ONLY by one hard raking work light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "evidence tag tied handle"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "R09",
+          "subject": "a tow hook clamped under a front wheel at night",
+          "source": "GENERATE",
+          "prompt": "a heavy steel tow hook clamped under the front wheel of a vehicle on wet asphalt at night, no hands in frame, lit ONLY by one recovery truck lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "tow hook wheel clamp night"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "R09",
+          "subject": "a recovery truck lifting a car under sodium light",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "tow truck lifting car night",
+          "bound_file": "D:\\pd-archive\\decision_rooms\\pixabay_extra__v_23163__night-scene-roadside-twilight-landscape-pathway-avenue-cars.mp4",
+          "bound_title": "drone shot of the highway at night",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.7464,
+          "motion": 5.423,
+          "luma": 39.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "a chain and padlock across an impound gate",
+          "source": "GENERATE",
+          "prompt": "a heavy chain and padlock drawn across the wire gate of an impound compound at night, rows of dark vehicles behind it, no notices legible, lit ONLY by one floodlight which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "padlock chain gate fence"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "Y05",
+          "subject": "an open case folder holding a photograph of a vehicle",
+          "source": "GENERATE",
+          "prompt": "a case folder lying open on a dark bench with one photograph of a parked vehicle inside it, the vehicle turned so no plate is visible and every label on the folder worn completely blank, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open case file photograph desk"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "R08",
+          "subject": "an empty judge's bench in a dark courtroom",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty courtroom judge bench wooden",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14605__jury_box_empty.mp4",
+          "bound_title": "empty seats in a stadium",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3939,
+          "motion": 7.677,
+          "luma": 29.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "R10",
+          "subject": "a small house behind a chain link fence at dusk",
+          "source": "GENERATE",
+          "prompt": "a small single storey house standing alone behind a chain link fence at dusk, every notice board on the fence wiped completely blank, nobody in frame, lit ONLY by one porch light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "small house fence dusk"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "M06",
+          "subject": "rows of seized vehicles inside a floodlit compound",
+          "source": "GENERATE",
+          "prompt": "rows of identical dark vehicles parked nose to tail inside a floodlit compound at night, no plates or badges legible anywhere, lit ONLY by one compound floodlight which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rows of cars compound night"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "M06",
+          "subject": "a wide parking area of cars under night lights",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "rows of cars parking lot night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37600__empty_parking_garage.mp4",
+          "bound_title": "organized desk in office workspace",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4293,
+          "motion": 1.567,
+          "luma": 96.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "I07",
+          "subject": "an empty jury box of twelve chairs",
+          "source": "GENERATE",
+          "prompt": "an empty jury box of twelve plain wooden chairs in a dark courtroom, all of them vacant, lit ONLY by one shaft of light from a high fixture which is switched on above the front row, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty jury box seats"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "M06",
+          "subject": "a wall of numbered lock boxes with one drawer open and empty",
+          "source": "GENERATE",
+          "prompt": "a wall of small steel lock boxes with every number worn completely blank and one drawer pulled out and empty, lit ONLY by a single overhead fixture which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "safe deposit boxes wall drawer"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R12",
+          "subject": "keys lying on a bare table under one lamp",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "keys on table close up",
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_200104__coins-cash-money-currency-silver-slow-motion-fall-brass-copp.mp4",
+          "bound_title": "a person walking through a library with books",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3914,
+          "motion": 15.124,
+          "luma": 100.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R09",
+          "subject": "an empty driver's seat with the dome light on",
+          "source": "GENERATE",
+          "prompt": "the empty driver's seat of a parked car seen from the rear at night with the ignition empty and nobody in the vehicle, lit ONLY by the dome light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty drivers seat car interior"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M06",
+          "subject": "a counter of unclaimed property under one strip light",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "unclaimed property storage shelves",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7720__empty_office_cubicles.mp4",
+          "bound_title": "a woman getting a book in a bookshelves",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3977,
+          "motion": 7.071,
+          "luma": 59.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U02",
+          "subject": "a vehicle silhouette receding behind a closing gate",
+          "source": "GENERATE",
+          "prompt": "the silhouette of a single vehicle receding as a heavy compound gate rolls closed in front of it at night, nobody in frame, lit ONLY by one floodlight which is switched on above the gate, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day America, framed by 2019 Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "gate closing vehicle night"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01: a dark SUV standing alone in a floodlit impound lot",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "impound lot car night fence"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "an open duffel bag packed with bundled money",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "open duffel bag full of money",
+          "bound_file": "D:\\pd-archive\\economy_crisis\\pixabay_extra__v_119854__man-cartoon-people-shop-3d-shopping-red-boy-smile-fun-commun.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I05",
+          "subject": "shelves of stacked boxes in an evidence store",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "evidence room shelves stacked with boxes",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2220__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M05",
+          "subject": "a heavy steel security door with a throw bolt",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "heavy steel security door with bolt",
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_89276__door-green-screen-door-opening-chroma-key-intro-opening.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R01",
+          "subject": "a patrol car parked at a kerb in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "patrol car parked at kerb daytime street",
+          "bound_file": "D:\\pd-archive\\world_cities\\pixabay_extra__v_52943__road-car-tire-transportation-city-auto-traffic-transport-spe.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W05",
+          "subject": "a counting machine running banknotes through",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "banknote counting machine feeding bills",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0834__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "coins dropping one by one into a glass jar",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "coins dropping into a glass jar",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24876__physical_bitcoin_coin.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U10",
+          "subject": "hands laying banknotes into a cash drawer",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands placing banknotes into a cash drawer",
+          "bound_file": "D:\\pd-archive\\selling_floor\\pixabay_extra__v_158620__push-vending-machine-snack-purchase.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.334
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I02",
+          "subject": "the entrance doors of a police station by day",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "police station entrance doors in daytime",
+          "bound_file": "D:\\pd-archive\\economy_crisis\\pixabay_extra__v_138503__horror-eerie-scary-halloween-dark-shopping-mall-flickering-l.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "a garage door rolling up on a vehicle bay",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "garage door rolling up on vehicle bay",
+          "bound_file": "D:\\pd-archive\\police_modern\\pixabay_extra__v_31137__hot-rod-ford-custom-automobile-car-vehicle-vintage-classic-r.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M04",
+          "subject": "a steel cash box unlocked and opened on a desk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "steel cash box unlocked and opened",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63204__tax_forms_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R06",
+          "subject": "rows of empty seats in a public meeting hall",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "public meeting hall rows of empty seats",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26007__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R05",
+          "subject": "stone courthouse steps and columns in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stone courthouse steps and columns daytime",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3291__courthouse_steps.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "M03",
+          "subject": "coins stacked into rising columns on a desk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "coins stacked in rising columns desk",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63649__gold_coins_pile.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "M07",
+          "subject": "two microphones set side by side on a table",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "two microphones side by side on table",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15604__vintage_radio_microphone.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I01",
+          "subject": "a hand pressing a stamp down onto blank paper",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand pressing a stamp onto blank paper",
+          "bound_file": "D:\\pd-archive\\hands_and_transactions\\mixkit__50700__front-on-shot-of-calligrapher-writing-soul-with-fountain-pen.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L3",
+          "anchor": "property itself is treated as the suspect",
+          "style": "punch",
+          "words": [
+            "THE PROPERTY",
+            "IS THE SUSPECT"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L7",
+          "anchor": "policing for profit",
+          "style": "punch",
+          "words": [
+            "POLICING",
+            "FOR PROFIT"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
+    },
+    {
+      "short_id": "short116",
+      "angle": "The unanimous win did not abolish forfeiture and did not even declare the seizure of the car unconstitutional; it produced a ceiling that only people who can litigate for years are able to reach.",
+      "type": "A — second-person threat: the limit exists, and reaching it is the hard part",
+      "avoids": "The existing Short ends on the nine to nothing vote and the car coming back. It never says what the Court refused to decide, that civil forfeiture survived intact, or that the new protection is out of reach for most people it was meant to help.",
+      "funnel_question_left_for_longform": "Why two justices agreed with the result but insisted the Court had taken the wrong route to get there.",
+      "era": "2019 Washington, D.C., and Indiana",
+      "loop": true,
+      "loop_join": "L5 states the outcome in general, and hearing L1 again lands differently, because nine to nothing now reads as the small result it was.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "Nine to nothing, and the Court still did not call the seizure unconstitutional.",
+          "delivery": "intense",
+          "source_lines": [
+            "By a unanimous vote — nine to nothing — it held that the Excessive Fines Clause does apply to the states, just like the rest",
+            "It did not declare that taking Timbs's car was unconstitutional."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "Read the ruling carefully. It did not declare that taking Tyson Timbs's car was unconstitutional. It did not abolish civil forfeiture.",
+          "delivery": "building",
+          "source_lines": [
+            "But read the ruling carefully, because the Court was careful. It did not declare that taking Timbs's car was unconstitutional. It did not abolish civil forfeiture"
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "It did something narrower. It sent the case back to Indiana, and made whether a forfeiture is an excessive fine a real constitutional question the states must answer.",
+          "delivery": "building",
+          "source_lines": [
+            "it sent the case back to Indiana and held that, from now on, the question of whether a forfeiture is an excessive fine is a real constitutional question the states have to answer"
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "So it is a limit, not an ending. Police can still seize property. There is now a ceiling, but you have to know it exists, and fight for years to reach it. Most people cannot.",
+          "delivery": "intense",
+          "source_lines": [
+            "So Timbs is a limit, not an ending. Civil forfeiture still exists. Police can still seize property.",
+            "Timbs gave people a tool — a way to argue that a seizure is simply too much — but you have to know the tool exists, and you have to be able to fight for years to use it. Most people cannot."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "The Bill of Rights once restrained only the federal government, and Indiana used that gap to uphold taking the car.",
+          "delivery": "building",
+          "source_lines": [
+            "For most of American history, the Bill of Rights restrained only the federal government.",
+            "Indiana's Supreme Court had said no — and used that gap to uphold taking the car"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The open question was whether the ban on excessive fines had ever been applied to the states. In 2019 the Court closed it.",
+          "delivery": "building",
+          "source_lines": [
+            "The question in Timbs was whether the ban on excessive fines had ever been formally applied to the states at all.",
+            "In 2019, the Supreme Court closed the gap."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Back in Indiana, after years of litigation, the courts finally applied that principle and let Tyson Timbs keep the car.",
+          "delivery": "building",
+          "source_lines": [
+            "Back in Indiana, after years of litigation, the courts finally applied that principle and let him keep his car"
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "A unanimous Supreme Court win can still leave you roughly where you started, with a limit on paper and years of fighting ahead.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R08",
+          "subject": "nine brass lamps burning in a row along a long dark bench",
+          "source": "GENERATE",
+          "prompt": "nine identical brass reading lamps standing in a row along one long dark judicial bench, every one of them burning, the chairs behind them empty, lit ONLY by those lamps which are switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "row of brass lamps bench"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R09",
+          "subject": "a vehicle under a fitted dust cover in a dark compound",
+          "source": "GENERATE",
+          "prompt": "a single vehicle standing under a fitted grey dust cover on the concrete floor of a dark compound, its shape unmistakable beneath the fabric, lit ONLY by one floodlight which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "car under cover garage dark"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "a stone facade of columns at dusk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stone building facade columns dusk",
+          "bound_file": "D:\\pd-archive\\economy_crisis\\pixabay_extra__v_249274__kefalonia-greece-summer-holiday-abandoned-house-earthquake-t.mp4",
+          "bound_title": "the building where the apartment is located",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4295,
+          "motion": 9.745,
+          "luma": 52.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U10",
+          "subject": "a hand resting flat on an open document without lifting it",
+          "source": "GENERATE",
+          "prompt": "one hand resting flat and still on an open document lying on a dark bench, both pages completely blank, nothing visible above the wrist, lit ONLY by one brass bench lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand resting on document desk"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "Y05",
+          "subject": "a reading lamp burning over one open volume in a dark study",
+          "source": "GENERATE",
+          "prompt": "a single reading lamp burning over one heavy volume lying open in a dark study, both pages completely blank and unprinted, nobody in the room, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "reading lamp open book study"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a magnifying lens held over a blank page",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "magnifying glass over document",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15136__magnifying_glass_on_document.mp4",
+          "bound_title": "a woman give a document to a person",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3937,
+          "motion": 52.775,
+          "luma": 100.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.347
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "R09",
+          "subject": "a lone vehicle on a road shoulder at dusk with hazards on",
+          "source": "GENERATE",
+          "prompt": "a lone vehicle pulled onto the gravel shoulder of an empty two lane road at dusk, flat farmland running to the horizon, lit ONLY by one hazard lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "car on roadside dusk highway"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "M06",
+          "subject": "a vehicle at the top of an auction ramp in a dark warehouse",
+          "source": "GENERATE",
+          "prompt": "a vehicle standing at the top of a steel auction ramp inside a dark warehouse, rows of empty bidder chairs below it, no lettering anywhere, lit ONLY by one work lamp which is switched on above the ramp, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "auction ramp warehouse vehicle"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "M06",
+          "subject": "rows of vehicles waiting on an auction lot",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "car auction lot vehicles",
+          "bound_title": "vehicles passing by the expressway at night",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.9184,
+          "motion": 3.345,
+          "luma": 34.2,
+          "bound_file": "D:\\pd-archive\\selling_floor\\pixabay_extra__v_29947__parking-parking-lot-cars-city-mall-shopping-center-centre-cl.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I01",
+          "subject": "a rubber stamp pressed down on a blank page",
+          "source": "GENERATE",
+          "prompt": "macro of a wooden handled rubber stamp pressed down onto a blank page beside an ink pad, the die face worn completely smooth and unreadable, only the fingers visible, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rubber stamp blank page"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "I05",
+          "subject": "a filing drawer sliding shut on unlabelled folders",
+          "source": "GENERATE",
+          "prompt": "a deep steel filing drawer sliding shut on rows of unlabelled folders in a dark office, no hands in frame, lit ONLY by one fluorescent tube which is switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "filing drawer folders closing"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U15",
+          "subject": "one midwestern state glowing as a bare outline on a dark map",
+          "source": "GENERATE",
+          "prompt": "a dark relief map on which the outline of one midwestern state glows as a thin bright seam and everything around it falls to black, absolutely no place names or lettering anywhere, lit ONLY by that internal glow which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "state outline map glowing dark"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "Y03",
+          "subject": "an empty two lane highway running into dusk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "highway at dusk empty road",
+          "bound_file": "D:\\pd-archive\\world_cities\\pixabay_extra__v_230577__road-highway-traffic-cars-evening-speed-urban-street-infrast.mp4",
+          "bound_title": "lady justice statue",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4156,
+          "motion": 6.426,
+          "luma": 154.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "I08",
+          "subject": "a courthouse cupola against a dark sky with one lit window",
+          "source": "GENERATE",
+          "prompt": "a county courthouse cupola standing against a heavy dark sky with one small window lit in the tower, no inscriptions legible, lit ONLY by that tower lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "courthouse tower cupola night"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "M02",
+          "subject": "a tall column of banded cash beside one small car key",
+          "source": "GENERATE",
+          "prompt": "a tall column of banded cash standing on a bare steel counter beside one small car key on a ring, the cash towering over the key, denominations completely illegible, lit ONLY by one green banker's lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stacks of banded cash counter"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "M02",
+          "subject": "banded cash stacked under a hard lamp",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stacks of cash money counting",
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_286883__money-cash-dollars.mp4",
+          "bound_title": "flag of usa",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6118,
+          "motion": 11.918,
+          "luma": 116.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "I04",
+          "subject": "a low concrete ceiling pressing down over one bulb",
+          "source": "GENERATE",
+          "prompt": "a heavy low concrete ceiling pressing down over a narrow dark room with one bare bulb burning just beneath it, nobody in the room, lit ONLY by that bulb which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "low concrete ceiling bare bulb"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U04",
+          "subject": "a long stone stair rising into darkness toward one lamp",
+          "source": "GENERATE",
+          "prompt": "a long flight of worn stone steps rising away from camera into darkness with one lamp burning at the very top, nobody on the stair, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stone staircase steps climbing"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "clock hands sweeping with motion blur",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "clock hands moving time lapse",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14208__antique_brass_scales.mp4",
+          "bound_title": "time lapse footage of a raining clouds",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4017,
+          "motion": 4.847,
+          "luma": 138.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W09",
+          "subject": "calendar pages thinned to almost nothing",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "calendar pages turning wall",
+          "bound_title": "a dark hallway with a light on the wall",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.7148,
+          "motion": 1.809,
+          "luma": 45.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29,
+          "bound_file": "D:\\pd-archive\\economy_crisis\\pixabay_extra__v_341588__anime-2d-effects-screen-green-door-opening.mp4"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I02",
+          "subject": "a corridor of closed legal aid doors with one bulb burning",
+          "source": "GENERATE",
+          "prompt": "a narrow corridor of identical closed office doors with every nameplate worn completely blank and one bare bulb burning at the far end, nobody in the corridor, lit ONLY by that bulb which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "narrow corridor closed office doors"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "one car key lying alone in the middle of a vast dark floor",
+          "source": "GENERATE",
+          "prompt": "a single car key on a ring lying alone in the middle of a vast empty polished floor with a hard shaft of light falling across it, nothing else in frame, lit ONLY by that shaft from one fixture switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2019 Washington, D.C., and Indiana, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "key on floor empty hall"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01: nine brass lamps burning in a row along a long dark bench",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "row of brass lamps bench"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W08",
+          "subject": "a brick wall with one brick missing",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "plain brick wall with one brick missing",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0294__concrete_wall_texture_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a heavy closed book on a wooden stand",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "heavy closed book on a wooden stand",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22605__law_books_spines_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I07",
+          "subject": "a flag hanging still on an indoor pole",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "flag hanging still on an indoor pole",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4060__american_flag_waving.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "a chain with one link opened",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "chain with one open link closeup",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12145__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.349
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a door chain hanging loose and unlatched",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "door chain hanging loose and unlatched",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4810__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "a steel bolt sliding shut on a door",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "steel bolt sliding shut on door",
+          "bound_file": "D:\\pd-archive\\hands_and_transactions\\mixkit__46080__construction-worker-dismantling-old-windows.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "hands closing the cover of a thick book",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands closing a thick book cover",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63063__old_ledger_book.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U02",
+          "subject": "a padlock snapped shut on a metal hasp",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "padlock snapped shut on a metal hasp",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12164__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R07",
+          "subject": "a gavel coming down on its wooden block",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "gavel striking down on wooden block",
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\mixkit__46117__judge-shows-money-on-table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "wooden shutters latched closed over a window",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "wooden shutters latched closed over window",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51490__window_blinds_shadow_stripes.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R12",
+          "subject": "a hand lifting car keys off a hook",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand taking car keys from a hook",
+          "bound_file": "D:\\pd-archive\\hands_and_transactions\\mixkit__14971__opening-a-draw-with-a-key.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "a car door swinging open in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "car door opening in bright daylight",
+          "bound_file": "D:\\pd-archive\\police_modern\\pixabay_extra__v_64742__police-car-vehicle-road-neighborhood-aerial.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "a car driving away down a sunlit road",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "car driving away down a sunlit road",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6031__empty_road_sunset.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I03",
+          "subject": "a metal tray piled with blank forms",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "metal tray piled with blank forms",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23694__case_files_stack_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W10",
+          "subject": "a chain link gate swinging open on a yard",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "chain link gate swinging open daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36993__security_monitors_wall.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "fight for years to reach it",
+          "style": "punch",
+          "words": [
+            "A CEILING",
+            "MOST NEVER REACH"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "2019",
+          "style": "number",
+          "big": "2019",
+          "bigSize": 260,
+          "label": "THE GAP CLOSED",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "b"
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

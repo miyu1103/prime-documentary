@@ -1,0 +1,853 @@
+EP73_uri — 画像発注 バッチ 1/15（8枚）
+区分: HOOK — U001–U006 / OP — U007–U010
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U001.png
+   [the control room]  flags: P R D A
+   a utility control room at night, banks of screens on a curved desk seen from behind and above, the room lit mostly by the screens, one operator's back at the edge of frame
+
+2) U002.png
+   [the order]  flags: P R A
+   a hand resting beside a desk telephone on a control-room console, close, screens out of focus behind
+
+3) U003.png
+   [the street goes]  flags: R D A
+   a wide suburban street at night with thin snow, half the houses dark and half still lit, no traffic
+
+4) U004.png
+   [the wellhead]  flags: R D A
+   a gas wellhead valve assembly standing in flat open country at night, rime ice on the pipework, one distant light
+
+5) U005.png
+   [the line]  flags: R D A
+   a transmission line crossing open snow-dusted farmland at night, pylons receding
+
+6) U006.png
+   [the town, dark]  flags: D A
+   a small Texas town from a low rise at night, most of it unlit, a few generator-lit windows
+
+7) U007.png
+   [the map ground]  flags: R B
+   a top-down matte charcoal paper surface with faint embossed county-boundary contours and subtle fibre texture, evenly lit, empty — a ground for composited typography
+
+8) U008.png
+   [the frequency screen]  flags: R A
+   a single screen in a dark room showing an unlabelled line graph, the line low in the frame, no readable numerals
+
+
+EP73_uri — 画像発注 バッチ 2/15（8枚）
+区分: OP — U007–U010 / ACT_1 — THE ISLAND
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U009.png
+   [ice on a branch]  flags: D A
+   a live oak branch sheathed in clear ice against a flat grey sky, close
+
+2) U010.png
+   [black ground]  flags: B
+   a plain near-black surface with faint horizontal grain, empty
+
+3) U011.png
+   [a line at dusk]  flags: D B
+   a high-voltage transmission line crossing flat Texas ranchland at dusk, no snow, ordinary weather
+
+4) U012.png
+   [the substation]  flags: D B
+   a substation seen through a chain-link fence, transformers and busbars, flat daylight
+
+5) U013.png
+   [the border]  flags: D B
+   a straight rural road running to the horizon across flat land, a fence line beside it
+
+6) U014.png
+   [the old office]  flags: R B
+   a plain 1930s office interior, wooden desk, banker's lamp, no papers legible
+
+7) U015.png
+   [the ledger ground]  flags: R B
+   a large ruled ledger open on a desk, columns empty, one lamp
+
+8) U016.png
+   [the agreement]  flags: R B
+   a plain sheet of heavy paper on a dark table, blank, a fountain pen beside it
+
+
+EP73_uri — 画像発注 バッチ 3/15（8枚）
+区分: ACT_1 — THE ISLAND
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U017.png
+   [the switchyard]  flags: D B
+   an older switchyard with lattice steel structures, overcast, weeds at the fence
+
+2) U018.png
+   [a city at night, 1965 register]  flags: D B
+   a mid-century American city skyline at night with most windows dark, seen from across water — era-neutral, no modern towers
+
+3) U019.png
+   [the wall map]  flags: R B
+   a large blank wall map board in an operations room, no printing on it
+
+4) U020.png
+   [the room where it is decided]  flags: P D B
+   a plain institutional meeting room, long table, chairs, blinds half closed, one anonymous administrator seated at the far end seen from behind, small in frame
+
+5) U021.png
+   [the pylon, close]  flags: D B
+   the base of a steel transmission pylon from ground level, looking up, grey sky
+
+6) U022.png
+   [the turbine, iced]  flags: D A
+   a single wind turbine on flat ground with rime ice on the blades, grey sky
+
+7) U023.png
+   [the wellhead, iced]  flags: R D A
+   a gas wellhead valve tree with rime ice on every surface, flat land behind
+
+8) U024.png
+   [ordinary weather]  flags: D B
+   a Texas suburban street on a warm ordinary day, live oaks, parked pickups, nothing wrong
+
+
+EP73_uri — 画像発注 バッチ 4/15（8枚）
+区分: ACT_1 — THE ISLAND / ACT_2 — THE RECOMMENDATION
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U025.png
+   [the plant]  flags: D B
+   a gas-fired power station seen in ordinary operation from across a dry brown field, pale vapour rising from active stacks, service pipework visible, flat overcast daylight
+
+2) U026.png
+   [the meter]  flags: R B
+   a domestic electricity meter on the outside wall of a brick house, close, no numerals legible
+
+3) U027.png
+   [the panel outside]  flags: R B
+   a grey utility box on a stucco wall with cables entering, close
+
+4) U028.png
+   [the yard]  flags: D B
+   a utility service yard with spools of cable and parked bucket trucks, overcast
+
+5) U029.png
+   [the forecast screen]  flags: R A
+   a weather radar display on a screen in a dim room, no legible text or numerals, a large mass approaching
+
+6) U030.png
+   [the week before]  flags: P D B
+   a supermarket car park on an ordinary grey day, trolleys, a few cars, two ordinary shoppers crossing in the distance with invented unremarkable faces small in frame
+
+7) U031.png
+   [2011, the cold]  flags: R D A
+   a Texas street under thin snow at dawn, ten years older in feel: fewer modern cars, same houses
+
+8) U032.png
+   [the plant, iced]  flags: R D A
+   steam and rime on the pipework of a power station in freezing fog, no people
+
+
+EP73_uri — 画像発注 バッチ 5/15（8枚）
+区分: ACT_2 — THE RECOMMENDATION
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U033.png
+   [the inquiry room]  flags: P D B
+   a plain federal-style hearing room, rows of chairs and a long table at the front, three anonymous attendees seated apart and seen only from behind
+
+2) U034.png
+   [the report]  flags: R B
+   a thick bound report lying closed on a desk, cover entirely blank, one lamp
+
+3) U035.png
+   [the recommendation page]  flags: P R B
+   a single sheet of paper on a desk, blank, held flat by a hand at the edge of frame
+
+4) U036.png
+   [insulation]  flags: P R B
+   pipe lagging being wrapped around an outdoor pipe run, gloved hands, no face
+
+5) U037.png
+   [a heat trace]  flags: R B
+   electrical heat-trace cable taped along a length of steel pipe, close
+
+6) U038.png
+   [the cost]  flags: R B
+   a plain invoice-shaped card on a desk, blank, a calculator beside it with a blank display
+
+7) U039.png
+   [the decision]  flags: R D B
+   an empty chair pushed back from a meeting table in a plain room, papers squared and blank
+
+8) U040.png
+   [the filing]  flags: R B
+   a row of ring binders on a steel shelf, spines blank
+
+
+EP73_uri — 画像発注 バッチ 6/15（8枚）
+区分: ACT_2 — THE RECOMMENDATION
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U041.png
+   [the years]  flags: R B
+   a wall calendar grid with no printing, in a plain office
+
+2) U042.png
+   [the workshop]  flags: P D B
+   a training room with a projector, blank screen and rows of chairs, several anonymous utility trainees seated sparsely with their backs to camera
+
+3) U043.png
+   [the design plate]  flags: R B
+   a manufacturer's blank metal data plate riveted to a machine casing, no lettering
+
+4) U044.png
+   [the same valve]  flags: R B
+   an outdoor valve assembly on a plant site, no ice, ordinary day
+
+5) U045.png
+   [dust]  flags: R B
+   an unopened box file on a shelf with a film of dust, label area blank
+
+6) U046.png
+   [the corridor]  flags: P D B
+   a plain government office corridor, doors and strip lighting, one distant anonymous office worker walking away from camera
+
+7) U047.png
+   [the chair's statement]  flags: P R D B
+   an anonymous official standing at a lectern in a plain room, seen from behind and to one side with face hidden, no insignia
+
+8) U048.png
+   [ten years]  flags: D B
+   a straight road across flat land in ordinary weather, receding to a vanishing point
+
+
+EP73_uri — 画像発注 バッチ 7/15（8枚）
+区分: ACT_2 — THE RECOMMENDATION / ACT_3 — FOUR MINUTES AND TWENTY-THREE SECONDS
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U049.png
+   [the sky changes]  flags: D A
+   a vast flat-bottomed grey cloud mass over open country, cold light
+
+2) U050.png
+   [February arriving]  flags: D A
+   first snow settling on brown grass and a wire fence, close, thin cover
+
+3) U051.png
+   [the state, white]  flags: D A
+   a wide aerial-feel view of flat Texas farmland under thin snow, grey sky, no settlement
+
+4) U052.png
+   [the strip mall]  flags: D A
+   a strip-mall car park under snow, drive-through lane, no cars moving
+
+5) U053.png
+   [the fountain]  flags: R D A
+   a small-town square fountain frozen mid-flow, ice on the basin, no people
+
+6) U054.png
+   [the pool]  flags: R D A
+   a domestic swimming pool with a skin of ice, diving board, snow on the surround
+
+7) U055.png
+   [the sprinkler]  flags: D A
+   a lawn sprinkler head encased in ice, close, brown grass around it
+
+8) U056.png
+   [the pickup]  flags: D A
+   snow lying in the bed of a parked pickup truck on a residential street
+
+
+EP73_uri — 画像発注 バッチ 8/15（8枚）
+区分: ACT_3 — FOUR MINUTES AND TWENTY-THREE SECONDS
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U057.png
+   [the control room, working]  flags: P R D A
+   a utility control room at night with several operators at consoles, seen from behind, screens bright
+
+2) U058.png
+   [the screen wall]  flags: R A
+   a wall of unlabelled line-graph displays in a dim control room, no readable numerals
+
+3) U059.png
+   [the frequency trace]  flags: R A
+   one screen filling the frame, a single line descending, no legible text
+
+4) U060.png
+   [the phone]  flags: P R A
+   a desk telephone handset lifted, a hand and a forearm, control room behind out of focus
+
+5) U061.png
+   [the clock]  flags: R A
+   a plain analogue wall clock in an operations room, hands near half past one, no numerals legible
+
+6) U062.png
+   [the street goes dark]  flags: R D A
+   a suburban street at night in which the near half is lit and the far half is not
+
+7) U063.png
+   [the traffic light]  flags: R D A
+   a dead traffic signal over an empty snow-dusted intersection at night
+
+8) U064.png
+   [the breaker panel]  flags: P R A
+   a domestic breaker panel open on an interior wall, a hand at it holding a torch, no face
+
+
+EP73_uri — 画像発注 バッチ 9/15（8枚）
+区分: ACT_3 — FOUR MINUTES AND TWENTY-THREE SECONDS
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U065.png
+   [the candle]  flags: R D A
+   a candle burnt low on a kitchen counter, ice on the window behind
+
+2) U066.png
+   [the blanket]  flags: R D A
+   a blanket hung over an interior doorway with clothes pegs, dim room beyond
+
+3) U067.png
+   [breath]  flags: P R A
+   breath visible in a domestic interior, a figure in a coat indoors seen from behind
+
+4) U068.png
+   [the family]  flags: P R D A
+   three figures under blankets on a sofa by candlelight, faces turned away or in shadow
+
+5) U069.png
+   [the phone screen]  flags: P R A
+   a face lit only by a phone screen in a dark room, expression neutral, invented person
+
+6) U070.png
+   [the mug]  flags: P R A
+   two hands wrapped around a mug at a kitchen table, steam, no face
+
+7) U071.png
+   [the window]  flags: D A
+   frost patterns on the inside of a domestic window, a grey street beyond
+
+8) U072.png
+   [the driveway]  flags: R D A
+   an unshovelled driveway with undisturbed snow and a dark house behind
+
+
+EP73_uri — 画像発注 バッチ 10/15（8枚）
+区分: ACT_3 — FOUR MINUTES AND TWENTY-THREE SECONDS
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U073.png
+   [the note]  flags: R A
+   a plain sheet taped to a front door, no writing on it, snow on the step
+
+2) U074.png
+   [the queue]  flags: P D A
+   a queue of people outside a shop under a grey sky, coats and hats, faces small
+
+3) U075.png
+   [the generator]  flags: R A
+   a portable generator running in a carport with an extension lead, no person
+
+4) U076.png
+   [the car running]  flags: R D A
+   a car idling in a driveway with exhaust visible in the cold, windows fogged
+
+5) U077.png
+   [the lineman]  flags: P R D A
+   a utility worker in high-visibility clothing at the top of a pole against a grey sky, distant
+
+6) U078.png
+   [the substation, iced]  flags: R D A
+   a close layered view through an electrical substation, ceramic insulator strings and aluminium busbars edged with rime ice, steel gantries receding, no people
+
+7) U079.png
+   [four days]  flags: D A
+   the same suburban street in daylight, still snow-covered, still no traffic
+
+8) U080.png
+   [the margin]  flags: R A
+   a single line drawn across a dark screen with a second line below it, no text
+
+
+EP73_uri — 画像発注 バッチ 11/15（8枚）
+区分: ACT_4 — THE LOOP
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U081.png
+   [the field]  flags: R D A
+   a gas field of low wellheads across flat land under thin snow, grey sky
+
+2) U082.png
+   [the wellhead, close]  flags: R D A
+   a wellhead valve tree glazed with ice, close, no lettering on any plate
+
+3) U083.png
+   [the gauge, iced]  flags: R A
+   a pressure gauge on a wellhead with ice across the glass, no numerals legible
+
+4) U084.png
+   [the separator]  flags: R D A
+   a horizontal separator vessel on a gas pad with frozen pipework
+
+5) U085.png
+   [the compressor]  flags: R D A
+   a gas compressor station at night, buildings and stacks, lights on
+
+6) U086.png
+   [the compressor, dark]  flags: R D A
+   the same low gas compressor compound seen from outside its chain-link perimeter with every building and security lamp dark, silent exhaust stacks, thin snow on the metal roofs
+
+7) U087.png
+   [the meter run]  flags: R B
+   a gas metering skid with valves and pipework, ice on the frame
+
+8) U088.png
+   [the pipeline marker]  flags: R D A
+   a plain pipeline marker post in open country, sign blank, snow at its base
+
+
+EP73_uri — 画像発注 バッチ 12/15（8枚）
+区分: ACT_4 — THE LOOP
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U089.png
+   [the list]  flags: R B
+   a printed list on a plain desk under a lamp, the page entirely blank, ruled
+
+2) U090.png
+   [the list, held]  flags: P R B
+   two hands holding a blank ruled page over a desk, no face
+
+3) U091.png
+   [the switch]  flags: R A
+   an industrial disconnect switch on a pole, handle down, snow on the crossarm
+
+4) U092.png
+   [the loop ground]  flags: R B
+   a plain dark surface for a composited three-node diagram, empty
+
+5) U093.png
+   [the plant, no fuel]  flags: R D A
+   a gas-fired power station at night standing cold and dormant, stacks black against the grey sky with no vapour, yard lights off, iced foreground fence and untouched thin snow
+
+6) U094.png
+   [the yard, still]  flags: D A
+   a plant yard with snow undisturbed by any vehicle track
+
+7) U095.png
+   [the valve closed]  flags: P R A
+   a large hand-operated valve wheel on plant pipework, gloved hands closing it
+
+8) U096.png
+   [the water plant]  flags: R D A
+   a municipal water treatment plant from outside the fence, tanks, grey sky
+
+
+EP73_uri — 画像発注 バッチ 13/15（8枚）
+区分: ACT_4 — THE LOOP
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U097.png
+   [the pumps, dark]  flags: R D B
+   a pump hall interior with no lights on, daylight through high windows
+
+2) U098.png
+   [the tap]  flags: R A
+   a kitchen tap running a thin brown stream into a sink
+
+3) U099.png
+   [the bathtub]  flags: P R A
+   a bathtub being filled with water, hands at the tap, no face
+
+4) U100.png
+   [the bottles]  flags: D A
+   a supermarket shelf stripped bare except for a few bottles of water
+
+5) U101.png
+   [the pallet]  flags: P D A
+   a pallet of bottled water in a car park with people collecting from it, faces small
+
+6) U102.png
+   [the pot on the stove]  flags: R A
+   a large pot of water on a gas hob in a domestic kitchen
+
+7) U103.png
+   [the burst pipe]  flags: R B
+   water-stained ceiling tiles and a dripping join in a domestic hallway, no flood
+
+8) U104.png
+   [the meter, spinning]  flags: R B
+   a domestic water meter in its pit, lid off, snow at the edge
+
+
+EP73_uri — 画像発注 バッチ 14/15（8枚）
+区分: ACT_4 — THE LOOP / ACT_5 — THE PRICE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U105.png
+   [the boil notice]  flags: R A
+   a blank card taped inside a shop window, no writing, street beyond
+
+2) U106.png
+   [the thaw]  flags: D B
+   the same suburban street with the snow half gone, wet asphalt, grey sky
+
+3) U107.png
+   [the number ground]  flags: R B
+   a top-down sheet of pale warm-grey vellum on a white desk, softly side-lit with one clean folded edge and generous empty centre — ground for a composited figure
+
+4) U108.png
+   [the empty room]  flags: R D B
+   a plain domestic room with the furniture removed and one chair left, daylight
+
+5) U109.png
+   [the statement]  flags: R B
+   a blank statement-shaped sheet on a kitchen table under a lamp, a phone face-down beside it
+
+6) U110.png
+   [the hands]  flags: P R B
+   two hands resting flat on a kitchen table either side of a blank sheet, no face
+
+7) U111.png
+   [the office]  flags: P D B
+   a utility company office interior, desks and screens off, two anonymous employees in coats walking away toward the exit, small in frame
+
+8) U112.png
+   [the chamber]  flags: P D B
+   a legislative chamber interior from the back with a few anonymous staff crossing distant aisles, faces unresolved, no insignia legible
+
+
+EP73_uri — 画像発注 バッチ 15/15（8枚）
+区分: ACT_5 — THE PRICE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U113.png
+   [the bill]  flags: R B
+   a thick bound document on a desk, cover blank, a pen across it
+
+2) U114.png
+   [the map board]  flags: R B
+   a large blank board on an office wall with pins and string but no printing
+
+3) U115.png
+   [the inspector]  flags: P D B
+   a figure in high-visibility clothing walking a gas pad in ordinary weather, distant
+
+4) U116.png
+   [the lagging, new]  flags: R B
+   new pipe insulation on outdoor plant pipework, clean and recent
+
+5) U117.png
+   [the heat trace, new]  flags: R B
+   new heat-trace cable and cladding on a wellhead, clean
+
+6) U118.png
+   [the same field, summer]  flags: D B
+   the same gas field under a hot flat sky, dry grass, no snow
+
+7) U119.png
+   [the line, ordinary]  flags: D B
+   the transmission line from U011, ordinary weather, nothing wrong
+
+8) U120.png
+   [the bathtub, empty]  flags: R D B
+   an empty domestic bathtub, dry, daylight from a small window

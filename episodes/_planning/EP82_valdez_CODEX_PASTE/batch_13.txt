@@ -1,0 +1,56 @@
+EP82_valdez — 画像発注 バッチ 13/23（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, ship name, funnel marking, company colour, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) V097.png
+   [V097]  flags: 
+   An Alaskan fjord in brilliant winter daylight, spruce down to the waterline, snow above
+
+2) V098.png
+   [V098]  flags: 
+   A snow-covered dock in flat winter daylight, bollards and cleats, grey water
+
+3) V099.png
+   [V099]  flags: 
+   An Alaskan fishing harbour in brilliant morning light, small boats at moorings, mountains behind
+
+4) V100.png
+   [V100]  flags: 
+   Fishing nets stacked on a quay in bright daylight, close-up, frost on the mesh
+
+5) V101.png
+   [V101]  flags: 
+   A small fishing boat at a wooden dock in brilliant daylight, plain hull, no markings
+
+6) V102.png
+   [V102]  flags: 
+   A hearing room in bright daylight, a raised bench, microphones on stands, empty seating
+
+7) V103.png
+   [V103]  flags: 
+   A thick bound government report lying closed on a bare table under a hard overhead lamp, plain unmarked cover
+
+8) V104.png
+   [V104]  flags: 
+   The same report standing upright, brightly side-lit, no lettering

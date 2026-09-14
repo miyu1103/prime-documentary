@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 295,
+  "episode_id": "PD-2026-074-itaewon",
+  "slug": "itaewon",
+  "loop": true,
+  "loop_join": "The final beat p14 (short295_14.png) is the empty alley at dusk with its sign boxes lighting up, isCta and rewind:true so it plays backward under the FULL CASE card and holds on its last frame; frame 0 opens on p01 (short295_01.png), someone on a phone at the kerb seen from behind, so the loop restarts into the same street the caller was standing in.",
+  "second_watch_detail": "p09/p10 show a high-visibility vest and two officers at the far end of the street, distant and back-turned; on the first pass that reads as reassurance that police were present, but once L5-L7 have explained that officers were sent to only four of the eleven calls, the same distant figures read as officers who were in the area but not at whichever caller needed them next.",
+  "funnel_question_left_for_longform": "Where were the officers instead that night - and why did the official answer take three years?",
+  "funnel_long_title": "A Street Fifty Metres Long Killed 159 People",
+  "funnel_long_video_id": "RFDPSfllbk0",
+  "description_line_1": "▶ FULL CASE: A Street Fifty Metres Long Killed 159 People | https://youtu.be/RFDPSfllbk0",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Street Fifty Metres Long Killed...",
+    "ctaLongThumbSrc": "shorts/short295/short295_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "Where were the officers instead that night - and why did the official answer take three years? The full case is here: https://youtu.be/RFDPSfllbk0",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for short295, a finished, rendered Short that had no machine-readable corridor to its episode. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments in remotion/src/data/short295.ts, the standing question from that file's LEAVES FOR THE LONG-FORM header (checked against short295_lines.v001.json so no content word of it is already spoken), the CTA block from the same file's hardcoded ctaLongTitle/ctaHeadline/ctaLongThumbSrc, and the long-form title/video id from episodes/PD-2026-074-itaewon/09_package/youtube_schedule_result.v001.json (video is a scheduled private upload). Layer 4 -- the Studio related-video setting, which the API cannot set -- now has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but the short itself is not yet uploaded, so the Studio action has NOT been performed yet."
+}

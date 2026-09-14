@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-070-wronghouse",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "out\\wronghouse_preprobe.mp4",
+  "slice_seconds": 60.05,
+  "slice_sha256": "sha256:290baafc62ea9cf08dc9b365550e23d93db910f1ba3234f08e4485e7d412dd50",
+  "film_sha256": "sha256:3c2df5050cc5c010c0005fe725a16205933f314822f0e4e410b60f89c7025b36",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 45.8 / p10 45.1 / p50 45.3 (1332 frames, 287 cuts masked +/-8f; 5 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-08-21T02:08:50.953455+00:00"
+}

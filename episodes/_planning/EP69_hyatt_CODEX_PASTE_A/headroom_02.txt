@@ -1,0 +1,70 @@
+EP69 hyatt — 画像発注 予備バッチ 2/2（7枚）
+区分: B1 · headroom — ordered, NOT declared  [H121 – H127]
+
+★これは**予備**です。**生成してください。**本編の契約（mandatory_stills）には入って
+　いませんが、却下が出たときの差し替えと、ナレーションが伸びた場合の不足に備えます。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, American Midwest between 1978 and 1988, tungsten interiors and flat midday daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous surfaces, painted steel, vellum, brass, cut stone, plaster and travertine, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, dimension callouts, drawing title block, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsed building, collapsing structure, rubble, debris, wreckage, ruined interior, rescue worker, ambulance, stretcher, injured person, blood, body, casualty, funeral, firefighter, hospital, crowded hotel lobby, packed function room, crowd of people indoors, courtroom interior, gavel, judge's bench, scales of justice, hourglass, a handshake, police officer, uniform, handcuffs, prison bars, mobile phone, smartphone, laptop, flat-panel monitor, LED work lamp, cordless power tool, hi-vis safety vest, modern safety helmet, CAD screen, car built after 1990, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。**サムネイルでも [NEG] は変えません。**
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・寸法・手書き・署名・図面のタイトル欄を一切描かない
+・**崩落・瓦礫・救助・負傷者・遺体・満員のロビーを一切描かない**
+・**1978〜1988年のアメリカ中西部。**携帯電話・ノートPC・薄型モニタ・LED投光器・
+　充電式電動工具・蛍光色の安全ベスト・1990年以降の車を描かない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+・**「The same …」で始まるプロンプト（H004 / H051 / H053 / H054）は、直前の1枚と
+　同じ部屋・同じ画角・同じレンズでなければなりません。**別々に生成すると必ずずれます。
+　ずれた場合は作り直さず、元の1枚（H003 / H048 / H049）を色調整だけで作り直してください。
+
+★上の絶対条件は本編バッチから一字も変えずに引き写したものです。そこに出てくる
+　プロンプト ID は本編のもので、このファイルには入っていません。
+
+──────── プロンプト ────────
+
+■ H121.png
+A hardbound laboratory notebook lying open on a wooden bench under flat north light, photographed from directly above so both pages fill the frame, BOTH PAGES COMPLETELY BLANK with only a faint printed ruling across them, a plain pencil lying across the gutter and a steel rule along the outer edge of the right-hand page. Nothing else on the bench, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], handwriting, figures, sketches, printed page numbers, printed headings, readable ruling labels, person in frame
+
+■ H122.png
+A bench-mounted hardness tester of the early 1980s: a heavy cast column and an anvil with a short steel offcut sitting on it, photographed close from a low three-quarter angle in a laboratory, one hard light from the right putting a bright edge along the cast housing and the machined anvil. The instrument's dial is turned away from the camera and no face, scale or figure is visible anywhere. Nobody is in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], dial with numerals, gauge face, digits, calibration plate, brand name, nameplate, person in frame
+
+■ H123.png
+A small windowless anteroom outside a hearing room in a plain American public building of the middle 1980s: four grey stacking chairs standing in a row against a bare painted wall, an empty coat rail on the opposite wall, a hard vinyl floor, one recessed fluorescent panel in the ceiling. Photographed straight on from standing height. Nobody is present, and there is no notice, no sign and no lettering anywhere in the room Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], notices on the wall, room numbers, name plates, directory boards, seals, person in frame, courtroom interior, gavel, judge's bench
+
+■ H124.png
+A plain government-issue steel office desk photographed from directly above under flat north light, the desk top otherwise completely bare, with ONE CLOSED PLAIN MANILA FOLDER lying square in the middle of it and nothing else at all — no pen, no paper, no telephone. The folder's tab is blank. Nobody is in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], writing on the tab, labels, printed forms, readable documents, seals, person in frame
+
+■ H125.png
+A plain institutional wall clock hanging on a bare painted wall in an empty room, photographed slightly from below with a long lens so the clock fills the middle of the frame against flat wall, its face plain white with ONLY BARE TICK MARKS AROUND THE EDGE AND NO NUMERALS ANYWHERE ON IT, two plain black hands, a plain chrome bezel. Flat daylight from the left. Nobody is in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], numerals on the dial, digits, brand name on the face, maker's mark, lettering, person in frame
+
+■ H126.png
+Five identical plain cardboard document boxes with their lids on, stacked two and three high in the corner of a bare office of the middle 1980s, photographed from standing height at a shallow angle, one overhead fluorescent panel above them, a hard vinyl floor and plain painted walls. Every box is completely unmarked — no label, no writing, no number. Nobody is in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], labels with writing, box numbers, case numbers, handwriting on cardboard, seals, person in frame
+
+■ H127.png
+A very large empty interior atrium in an American building of about 1980 at first light, photographed from the floor at standing height at one end: pale tan travertine running away from the camera and still wet from cleaning so it holds one long soft reflection of the glazed roof five storeys above, the daylight cold and even, planting boxes dark at the edges. Nobody is present, nothing crosses the space overhead, and nothing in the picture identifies any particular building Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], walkways, bridges overhead, suspended structures, hotel branding, logos, signage, person in frame, crowd, rubble, debris, recognisable real building
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（このファイルは H121.png 〜 H127.png）で
+保存してください。**他のバッチの ID を使わないこと。**
+保存先 H:\pd-media\assets\ai\hyatt\
+長辺 3840px 以上・16:9・PNG。

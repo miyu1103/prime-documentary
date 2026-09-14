@@ -1,0 +1,16 @@
+{
+ "episode_id": "PD-2026-070-wronghouse",
+ "_placeholder": "PLACEHOLDER ONLY -- NOT A FILM. Written 2026-08-18 so Root.tsx can statically import this path and the composition can be registered before the pool is finished. Every array is empty on purpose: rendering this produces a blank film, the correct visible failure. _finish_episode.sh step [4/7] overwrites this with the real cuts/captions/graphics before the render. narrationSeconds is the REAL measured master; hookSeconds is provisional until the filmconfig exists.",
+ "fps": 30,
+ "narration": "wronghouse/narration.mp3",
+ "narrationSeconds": 2389.656,
+ "hookSeconds": 8.0,
+ "hookLine": "",
+ "hook": [],
+ "cuts": [],
+ "captions": [],
+ "graphics": [],
+ "figures": [],
+ "leadSeconds": 0,
+ "openingVariant": "overlay"
+}

@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 6/24（8枚）
+区分: ACT_1 — 4時00分36秒 / ACT_2 — 見えるはずだった部屋
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T041.png
+   [T041]  flags: 
+   A plant site seen from across the water in the early morning, cooling towers releasing white vapour, bright overcast
+
+2) T042.png
+   [T042]  flags: 
+   An empty visitor car park at a power plant at dawn, 1979 cars, low sunlight
+
+3) T043.png
+   [T043]  flags: 
+   A guard post at a plant gate at dawn, plain barrier, one floodlight still burning
+
+4) T044.png
+   [T044]  flags: 
+   A condensate polisher vessel in a plant basement, large steel tank with pipework, work lamp
+
+5) T045.png
+   [T045]  flags: 
+   A compressed-air line and small pneumatic actuator on a valve, close, one hard light
+
+6) T046.png
+   [T046]  flags: 
+   A maintenance work order pad on a bench, entirely blank, hard lamp above
+
+7) T047.png
+   [T047]  flags: 
+   A 1979 control room panel photographed straight on, hundreds of switches and tiles filling the frame, hard even lighting
+
+8) T048.png
+   [T048]  flags: 
+   The annunciator tile wall with roughly half the tiles lit, hard glare

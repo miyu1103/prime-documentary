@@ -1,0 +1,504 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-031-unlock",
+  "revision": "v002",
+  "language": "en",
+  "thesis": "The police can often force your phone open with your face or your thumb — physical acts courts frequently treat as non-testimonial — but a passcode you keep only in your mind may be protected by the Fifth Amendment; American courts are openly split (Payne, 9th Cir. 2024, allowed a forced thumbprint; Brown, D.C. Cir. 2025, forbade a forced fingerprint; states divide on passcodes), and the Supreme Court has repeatedly declined to settle it, so your right can change at a state line.",
+  "viewer_promise": "You will understand the real difference between the police searching your phone (Riley) and forcing you to unlock it (the Fifth Amendment), why a memorized passcode may be protected while your face and thumb often are not, how courts flatly disagree, and why the question is still unsettled.",
+  "claims_source": "episodes/_planning/EP31_unlock_fact_recheck.v001.md (FR-* labels map to that R2 packet). Real cases discussed neutrally; MYTHS list in the packet binds this script (never say SCOTUS 'decided' it; never state passcode 'always' protected or biometric 'never' protected; keep search vs. compel distinct).",
+  "chapters": [
+    {
+      "chapter_id": "hook",
+      "title": "Hook",
+      "function": "cold_open_tease",
+      "span_ids": [
+        "SPN-0001"
+      ]
+    },
+    {
+      "chapter_id": "opening",
+      "title": "Opening",
+      "function": "thesis_and_promise",
+      "span_ids": [
+        "SPN-0002"
+      ]
+    },
+    {
+      "chapter_id": "act1",
+      "title": "Act I — The Phone Is You",
+      "function": "stakes_and_riley",
+      "span_ids": [
+        "SPN-0003",
+        "SPN-0028",
+        "SPN-0032",
+        "SPN-0004",
+        "SPN-0005",
+        "SPN-0006",
+        "SPN-0007"
+      ]
+    },
+    {
+      "chapter_id": "act2",
+      "title": "Act II — Mind vs. Body",
+      "function": "mechanism",
+      "span_ids": [
+        "SPN-0008",
+        "SPN-0009",
+        "SPN-0010",
+        "SPN-0011",
+        "SPN-0012",
+        "SPN-0029",
+        "SPN-0013",
+        "SPN-0014"
+      ]
+    },
+    {
+      "chapter_id": "act3",
+      "title": "Act III — America Can't Agree",
+      "function": "split_and_silence",
+      "span_ids": [
+        "SPN-0015",
+        "SPN-0016",
+        "SPN-0033",
+        "SPN-0017",
+        "SPN-0018",
+        "SPN-0021",
+        "SPN-0031",
+        "SPN-0019",
+        "SPN-0020"
+      ]
+    },
+    {
+      "chapter_id": "act4",
+      "title": "Act IV — The Unsettled Line",
+      "function": "payoff",
+      "span_ids": [
+        "SPN-0022",
+        "SPN-0030",
+        "SPN-0023",
+        "SPN-0024",
+        "SPN-0025",
+        "SPN-0026"
+      ]
+    },
+    {
+      "chapter_id": "ending",
+      "title": "Ending",
+      "function": "cta",
+      "span_ids": [
+        "SPN-0027"
+      ]
+    }
+  ],
+  "spans": [
+    {
+      "span_id": "SPN-0001",
+      "text": "It's night, and a police officer is standing at your car window, holding your phone. Everything you are is inside it. And he wants it open. He can press it to your thumb. He can hold it up to your face. The one thing he may not be able to force open — is what's inside your head.",
+      "claim_ids": [
+        "FR-P",
+        "FR-T"
+      ],
+      "narrative_function": "hook_cold_open",
+      "visual_intent": "Cold-open, ~8s of ~2s punch cuts: a phone glowing on a car seat at night; red-blue light through the windshield; a macro thumb pressed to a blank sensor; a cold-blue face-scan grid across an anonymous profile; end on a jagged US map splitting into two tones. Dark, navy, tense. No faces, no phone logos.",
+      "on_screen_text": [
+        "CAN THEY FORCE IT OPEN?"
+      ]
+    },
+    {
+      "span_id": "SPN-0002",
+      "text": "This is the story of a question the Supreme Court keeps refusing to answer: can the police force you to unlock your phone? And why the answer can turn on one strange detail — whether you used your face, your thumb, or a passcode you keep only in your mind.",
+      "claim_ids": [
+        "FR-SC"
+      ],
+      "narrative_function": "thesis_and_promise",
+      "visual_intent": "Gold BrandOpening lands here (after the hook). Then the three unlock methods as restrained icons in cold light: a face, a thumbprint, a closed safe dial. Brand card, minimal.",
+      "on_screen_text": [
+        "YOUR FACE · YOUR THUMB · YOUR MIND"
+      ]
+    },
+    {
+      "span_id": "SPN-0003",
+      "text": "Start with what's actually in your pocket. Not a phone — your whole life. Every place you've been, mapped by the minute. Every message you've sent, every photo you've taken, who you love, what you fear, what you searched at three in the morning. There has never been a record of a human being this complete. And it fits in one hand.",
+      "claim_ids": [],
+      "narrative_function": "stakes",
+      "visual_intent": "A wall of small glowing rectangles in black — thousands of photos and messages, abstract. A phone's glow lighting only an anonymous jaw. The device as a whole life. bleed parallax.",
+      "on_screen_text": [
+        "Your whole life. One hand."
+      ]
+    },
+    {
+      "span_id": "SPN-0028",
+      "text": "Think about who else knows all of that. Not your closest friend. Not your doctor. Not even the person you share a bed with. Your phone has sat in rooms no one else was in. It knows what you look at when you can't sleep, the things you typed and deleted, the person you almost called. No human being alive knows you the way that glowing rectangle does — and it never forgets a single thing. That is what's really sitting in the officer's hand.",
+      "claim_ids": [],
+      "narrative_function": "stakes_deepen",
+      "visual_intent": "A phone's glow across an empty bed at night; a screen reflecting a single open eye; the most intimate witness of a life. parallax, cold intimate.",
+      "on_screen_text": [
+        "It knows you better than anyone."
+      ]
+    },
+    {
+      "span_id": "SPN-0032",
+      "text": "And this is not some rare, dramatic event. Somewhere in this country, a driver is pulled over every few seconds. Almost all of those stops end quietly, forgotten by morning. But any one of them can end with an open hand and two flat words: unlock it. The one thing that holds your entire life can be demanded in the most ordinary moment there is.",
+      "claim_ids": [],
+      "narrative_function": "stakes_frequency",
+      "visual_intent": "Many ordinary cars on a night highway; one set of brake lights peeling to the shoulder; a hand extended at a window. It could be anyone. duotone.",
+      "on_screen_text": [
+        "Every few seconds. Any one of them."
+      ]
+    },
+    {
+      "span_id": "SPN-0004",
+      "text": "The Supreme Court understood this. In 2014, in a case called Riley versus California, the justices ruled — unanimously — that a phone is not like anything else you carry. Before the police can search what's inside it, even after an arrest, they generally need a warrant. Chief Justice Roberts put it in four plain words: get a warrant.",
+      "claim_ids": [
+        "FR-R"
+      ],
+      "narrative_function": "legal_anchor",
+      "visual_intent": "Marble Supreme Court gravitas; '2014' and 'get a warrant' as restrained typography over stone. No justices' faces. scan texture.",
+      "on_screen_text": [
+        "Riley v. California, 2014",
+        "\"Get a warrant.\""
+      ]
+    },
+    {
+      "span_id": "SPN-0005",
+      "text": "So that's settled, right? They need a warrant. You're protected. But here is the trapdoor almost everyone falls through. A warrant gives the police permission to look inside your phone. It does not answer a completely different question — one that lives in a completely different part of the Constitution.",
+      "claim_ids": [
+        "FR-R"
+      ],
+      "narrative_function": "act1_turn_rehook",
+      "visual_intent": "A warrant document under cold light, then a locked phone beside it, a gap of black between them. Two separate objects: permission to look vs. the locked door. focus rack.",
+      "on_screen_text": [
+        "A warrant lets them LOOK."
+      ]
+    },
+    {
+      "span_id": "SPN-0006",
+      "text": "Because a warrant to search your phone is worthless if they can't get into it. And a modern phone, locked, is a very good safe. So the real fight was never really about searching. It was about this: can the government force you — you — to open it yourself?",
+      "claim_ids": [],
+      "narrative_function": "central_question",
+      "visual_intent": "A locked phone rendered like a vault; the warrant sliding uselessly against it. The question suspended on black.",
+      "on_screen_text": [
+        "Can they make YOU open it?"
+      ]
+    },
+    {
+      "span_id": "SPN-0007",
+      "text": "And the moment you ask that, you leave the Fourth Amendment behind — the one about searches — and you walk into the Fifth. The one you already know from every movie: you cannot be forced to be a witness against yourself.",
+      "claim_ids": [
+        "FR-T"
+      ],
+      "narrative_function": "bridge",
+      "visual_intent": "A cold transition from a 'search/warrant' motif to a 'silence/self' motif. The number shift 4 -> 5 as kinetic type. duotone.",
+      "on_screen_text": [
+        "The Fourth Amendment ends here.",
+        "The Fifth begins."
+      ]
+    },
+    {
+      "span_id": "SPN-0008",
+      "text": "But the Fifth Amendment has a strange edge to it. It doesn't protect everything the government can pull out of you. It only protects what the courts call testimonial — words, or acts, that reveal the contents of your mind. What you know. What you're thinking. That distinction is about to decide whether your phone is a fortress or an open door.",
+      "claim_ids": [
+        "FR-T"
+      ],
+      "narrative_function": "mechanism_setup",
+      "visual_intent": "A silhouette from behind with a faint glow where thoughts would be — 'the mind as the protected place.' Kinetic word 'TESTIMONIAL' resolving from noise.",
+      "on_screen_text": [
+        "Protected: the contents of your MIND"
+      ]
+    },
+    {
+      "span_id": "SPN-0009",
+      "text": "The courts have a picture for this that's almost two hundred years old. Imagine the police have a warrant to open a safe. They can force you to hand over the key. A key is just a physical object; giving it up says nothing about what's in your head. But they cannot force you to tell them the combination — because the combination lives in your mind, and speaking it is testimony.",
+      "claim_ids": [
+        "FR-T"
+      ],
+      "narrative_function": "core_metaphor",
+      "visual_intent": "The signature metaphor, shot for real: a brass key held out in an open palm (you can be forced to give it) vs. a closed safe combination dial in shadow (you cannot be forced to speak it). Split-frame, gold vs. navy.",
+      "on_screen_text": [
+        "THE KEY vs. THE COMBINATION"
+      ]
+    },
+    {
+      "span_id": "SPN-0010",
+      "text": "Now put your phone in that picture. A passcode is a combination. It's a string of numbers that exists nowhere but inside your memory. Force you to enter it, many courts have said, and you are being made to reveal the contents of your mind. So a passcode may be protected.",
+      "claim_ids": [
+        "FR-PC-prot",
+        "FR-T"
+      ],
+      "narrative_function": "mechanism_passcode",
+      "visual_intent": "A blank glowing keypad with an eye reflected above it (no readable digits), then a safe dial closing. The passcode = the combination = protected. focus.",
+      "on_screen_text": [
+        "Passcode = the combination in your head"
+      ]
+    },
+    {
+      "span_id": "SPN-0011",
+      "text": "But your face? Your thumb? Those aren't in your mind. They're on your body. And the law treats your body very differently. The police can already take your fingerprints at booking. They can draw your blood. They can stand you in a lineup. None of that is testimony — it reveals nothing you know. It's just physical evidence you happen to be made of.",
+      "claim_ids": [
+        "FR-T"
+      ],
+      "narrative_function": "mechanism_biometric",
+      "visual_intent": "A booking-style ink fingerprint being rolled; a cold-blue face scan; a lineup silhouette. The body as evidence, not testimony. scan.",
+      "on_screen_text": [
+        "Your BODY isn't testimony"
+      ]
+    },
+    {
+      "span_id": "SPN-0012",
+      "text": "Which leads somewhere most people never see coming. In 2024, a federal appeals court — the Ninth Circuit — looked at a case where officers took a man's phone and simply pressed his own thumb to the sensor to unlock it. The court said that did not violate the Fifth Amendment. Pressing a thumb, they reasoned, takes no thought at all. His body opened the door against him — and the Constitution had nothing to say about it.",
+      "claim_ids": [
+        "FR-P"
+      ],
+      "narrative_function": "turn_payne",
+      "visual_intent": "The chilling beat: a thumb pressed hard onto a blank sensor by another hand, cold-blue unlock glow flooding out. '9th Circuit, 2024.' bleed + Trail. Anonymous.",
+      "on_screen_text": [
+        "U.S. v. Payne, 9th Cir. 2024",
+        "The thumb was allowed."
+      ]
+    },
+    {
+      "span_id": "SPN-0029",
+      "text": "But even that ruling came with a chilling little footnote. The court hinted the answer might have been different if the officers had made the man choose which finger to use — because choosing is a decision, and a decision happens in your mind. Sit with how thin that line is. A thumb they press to the sensor: no protection. The very same thumb, if you are the one who decides to use it: maybe protected. Whether the Fifth Amendment shields you can come down to a single flicker of choice — the hair's breadth between your body doing something, and your mind deciding it.",
+      "claim_ids": [
+        "FR-P"
+      ],
+      "narrative_function": "payne_caveat",
+      "visual_intent": "A hand hovering over several fingers, choosing; the word CHOOSE flickering between a body icon and a mind glow. rack_focus into motion-graphics.",
+      "on_screen_text": [
+        "Choosing is a decision.",
+        "A decision lives in your mind."
+      ]
+    },
+    {
+      "span_id": "SPN-0013",
+      "text": "Sit with what that means. The passcode you can refuse to speak. But the fingerprint sensor you set up for convenience — the Face ID that unlocks your phone before you've even thought about it — those may hand the police everything, precisely because they ask nothing of your mind.",
+      "claim_ids": [
+        "FR-P",
+        "FR-T"
+      ],
+      "narrative_function": "irony",
+      "visual_intent": "A face unlocking a phone in a single cold-blue flash — effortless, automatic, and that's the danger. The convenience as the vulnerability.",
+      "on_screen_text": [
+        "The easy unlock is the weak one"
+      ]
+    },
+    {
+      "span_id": "SPN-0014",
+      "text": "So it's settled. Your mind is a fortress; your body is an open door. Clean, simple, done. Except — it isn't. Because barely a year later, another federal court looked at almost the exact same act, and came to the opposite conclusion.",
+      "claim_ids": [
+        "FR-B"
+      ],
+      "narrative_function": "act2_button_openloop",
+      "visual_intent": "A confident 'CASE CLOSED' motif that then cracks down the middle. Open the loop for Act III. Hard tension beat.",
+      "on_screen_text": [
+        "Except it wasn't that simple."
+      ]
+    },
+    {
+      "span_id": "SPN-0015",
+      "text": "In 2025, the D.C. Circuit ruled that forcing a man to unlock his phone with his fingerprint did violate the Fifth Amendment — because obeying that command, the court said, quietly admits something you know: that it's your phone, and that you know how to open it. Same act. Same country. Opposite answer.",
+      "claim_ids": [
+        "FR-B"
+      ],
+      "narrative_function": "split_biometric",
+      "visual_intent": "Two identical courtroom benches facing each other, one lit gold, one lit blue — 'same act, opposite rulings.' A crack running between them. duotone.",
+      "on_screen_text": [
+        "U.S. v. Brown, D.C. Cir. 2025",
+        "The fingerprint was forbidden."
+      ]
+    },
+    {
+      "span_id": "SPN-0016",
+      "text": "And it isn't just fingerprints. On the passcode — the thing that's supposed to be the safe part — the states can't agree either. In Pennsylvania, in Indiana, in Utah, top courts have ruled you cannot be forced to give it up. In New Jersey, in Illinois, courts have ruled you can. The same locked phone, the same Constitution — and your right depends on which side of a state line you're standing on.",
+      "claim_ids": [
+        "FR-PC-prot",
+        "FR-PC-comp"
+      ],
+      "narrative_function": "split_passcode_map",
+      "visual_intent": "A textured US map cracking into two cold tones; states lighting up on either side of the fracture (labels loaded in Remotion, not baked into the AI art). 'Your right changes at the line.'",
+      "on_screen_text": [
+        "PROTECTED here.",
+        "COMPELLED there."
+      ]
+    },
+    {
+      "span_id": "SPN-0033",
+      "text": "And this has already happened to real people. A man in New Jersey, ordered by a court to surrender his passcodes. A man in the Ninth Circuit, whose own thumb was pressed to his phone at the side of a road. Same country. Same Constitution. Opposite outcomes — decided not by what they did, but by which courthouse happened to be looking at them.",
+      "claim_ids": [
+        "FR-PC-comp",
+        "FR-P"
+      ],
+      "narrative_function": "split_concrete",
+      "visual_intent": "Two anonymous silhouettes, left and right, one bathed gold and one blue, a fracture between; no identifiable faces. The human face of the split.",
+      "on_screen_text": [
+        "Real people. Opposite outcomes."
+      ]
+    },
+    {
+      "span_id": "SPN-0017",
+      "text": "How can courts looking at the same words land so far apart? It comes down to a single, almost philosophical question the lawyers call the foregone conclusion. Roughly: the government can force you to hand something over if it already knows, for certain, what it's getting.",
+      "claim_ids": [
+        "FR-FC"
+      ],
+      "narrative_function": "mechanism_faultline",
+      "visual_intent": "A fault line running across a dark stone floor, cold light in the crack. The phrase 'FOREGONE CONCLUSION' resolving. The doctrinal hinge.",
+      "on_screen_text": [
+        "The fault line: \"foregone conclusion\""
+      ]
+    },
+    {
+      "span_id": "SPN-0018",
+      "text": "And here is the whole fight, in one sentence. Does the government already 'know' your passcode — the fact that it exists, that it's yours? Then handing it over reveals nothing new, and you can be forced. Or is the thing it really wants the ocean of secrets behind the passcode — which it obviously doesn't know? Then forcing you to open it is forcing you to testify. Courts split on which of those two things the question is even about. And on that hair-thin difference, your privacy stands or falls.",
+      "claim_ids": [
+        "FR-FC"
+      ],
+      "narrative_function": "mechanism_core",
+      "visual_intent": "Motion graphic: an arrow forking — 'the CODE (already known -> you can be forced)' vs 'the DATA (unknown -> protected).' The reversal made visual. Kinetic type, spring.",
+      "on_screen_text": [
+        "The code? Or what's behind it?"
+      ]
+    },
+    {
+      "span_id": "SPN-0021",
+      "text": "And there is one place where even this fragile protection gets thinner still: the border. At an airport, or a crossing, the normal rules bend. For years the government has claimed it can search your phone there with no warrant at all — and the courts cannot agree on how far that power goes. Some say officers need at least a reason to suspect you. Others say they need nothing. In 2023, one federal judge became the first to rule that the government does need a warrant to search a phone at the border — a real crack in the wall. But that too is unsettled, and it binds almost no one yet. So the same device that is a fortress in your living room can become an open book the moment you land.",
+      "claim_ids": [
+        "FR-BORDER"
+      ],
+      "narrative_function": "border_beat",
+      "visual_intent": "An airport at night; a phone alone on a steel inspection table beside a passport; a hard border-line of light. 2023 - a warrant, one judge said. scan + duotone.",
+      "on_screen_text": [
+        "At the border, the rules bend.",
+        "Fortress at home. Open book on landing."
+      ]
+    },
+    {
+      "span_id": "SPN-0031",
+      "text": "Airports. Traffic stops. State lines. Every one of them a different answer. You would think, with this much confusion, someone at the very top would finally step in.",
+      "claim_ids": [
+        "FR-SC"
+      ],
+      "narrative_function": "rehook_to_silence",
+      "visual_intent": "Quick reprise: the cracked map, an airport gate, a police light - three fragments - then a slow push toward tall institutional doors. motion_graphics.",
+      "on_screen_text": [
+        "Every place, a different answer."
+      ]
+    },
+    {
+      "span_id": "SPN-0019",
+      "text": "You would think, with the country this divided, the Supreme Court would step in and settle it. It hasn't. Case after case has climbed all the way up — Pennsylvania, New Jersey, Illinois — asking the justices to finally draw the line. And three times, the Court has quietly turned them away. It has never decided whether you can be forced to unlock your phone at all.",
+      "claim_ids": [
+        "FR-SC"
+      ],
+      "narrative_function": "silence",
+      "visual_intent": "A tall pair of institutional doors closing three times, cold light vanishing beneath them. 'The Court turned them away.' The refusal as a repeated motion.",
+      "on_screen_text": [
+        "The Supreme Court has NOT decided."
+      ]
+    },
+    {
+      "span_id": "SPN-0020",
+      "text": "So there is no national rule. There is a patchwork — a map where the same phone, in the same hand, is protected in one state and pried open in the next. A right that changes when you cross a bridge isn't really a settled right at all. It's a coin flip you don't get to see coming.",
+      "claim_ids": [
+        "FR-SC",
+        "FR-PC-prot",
+        "FR-PC-comp"
+      ],
+      "narrative_function": "act3_button",
+      "visual_intent": "The cracked map again, markers scattered like a patchwork; pull back to show the fracture running through everything. Unsettled, uneasy.",
+      "on_screen_text": [
+        "No national rule. Just a patchwork."
+      ]
+    },
+    {
+      "span_id": "SPN-0022",
+      "text": "So where does that leave you — tonight, at that car window? With one uncomfortable, defensible truth. In a lot of American courtrooms, the passcode you keep in your head is better protected than the face on the front of it or the thumb on your hand. Not everywhere. Not guaranteed. But as a rule of thumb, your mind is the strongest lock you own.",
+      "claim_ids": [
+        "FR-T",
+        "FR-PC-prot",
+        "FR-P"
+      ],
+      "narrative_function": "payoff_practical",
+      "visual_intent": "Back to the car at night, calmer now; the safe dial catching a single warm dawn glint — the mind still closed. Cold-to-warm shift begins.",
+      "on_screen_text": [
+        "Your mind may be your strongest lock"
+      ]
+    },
+    {
+      "span_id": "SPN-0030",
+      "text": "And here is the part that puts a little of the power back in your hands. On most modern phones there is a simple line between the easy lock and the strong one. Power the phone all the way off. When it turns back on, it will not take your face, and it will not take your thumb — not until the passcode has been typed once. In that single moment, the convenience turns back into the combination. The lock moves back inside your mind — the one place that, for now, is the hardest for anyone to force open.",
+      "claim_ids": [
+        "FR-BFU"
+      ],
+      "narrative_function": "practical_agency",
+      "visual_intent": "A phone powering down to full black, then waking to a passcode-shaped glow that refuses a face-scan; the combination reasserting. rack_focus, cold-to-warm.",
+      "on_screen_text": [
+        "Power off = the lock returns to your mind"
+      ]
+    },
+    {
+      "span_id": "SPN-0023",
+      "text": "Which flips something you do every day on its head. That fingerprint, that face-scan you set up because it was fast and easy — in a courtroom, it may be the weakest lock on the phone. The convenience is the vulnerability. The thing that opens your phone without a thought may open it for someone else without your consent.",
+      "claim_ids": [
+        "FR-P",
+        "FR-B"
+      ],
+      "narrative_function": "payoff_irony",
+      "visual_intent": "A hand lowering a phone face-down onto a table in soft morning light — a chosen silence. The easy unlock reframed as the risk. Resolved but pointed.",
+      "on_screen_text": [
+        "The easy unlock = the weak one"
+      ]
+    },
+    {
+      "span_id": "SPN-0024",
+      "text": "Remember how this started. An officer at your window, your whole life glowing in his hand. He can take your thumb. He can take your face. Your body, it turns out, can be turned against you. But your mind — the passcode you never say out loud — may be the last thing they can't force. For now.",
+      "claim_ids": [
+        "FR-P",
+        "FR-T"
+      ],
+      "narrative_function": "ending_callback_payoff",
+      "visual_intent": "Callback to the cold-open car and the split map — now half-lit by warm dawn, the fracture still there but calmer. Bookend the imagery.",
+      "on_screen_text": [
+        "Your body can be turned against you.",
+        "Your mind, maybe not."
+      ]
+    },
+    {
+      "span_id": "SPN-0025",
+      "text": "For now — because the case that finally settles this hasn't been decided yet. Somewhere, right now, there's a traffic stop, a locked phone, a demand to open it. One of those ordinary moments will become the case that draws the line for everyone. And there is nothing that says it won't be yours.",
+      "claim_ids": [
+        "FR-SC"
+      ],
+      "narrative_function": "ending_open_stakes",
+      "visual_intent": "An ordinary street at golden hour, one lit window — the stakes are everyone's, quietly. A single phone glowing on a sill. Warm, unresolved.",
+      "on_screen_text": [
+        "The next case could be yours."
+      ]
+    },
+    {
+      "span_id": "SPN-0026",
+      "text": "We built machines that read our faces and our fingerprints to make our lives easier. We never quite decided what happens when someone else holds them up to the lock. Until we do — until a court finally says where the line is — the only key they may never be able to take from you is the one you never speak.",
+      "claim_ids": [
+        "FR-T"
+      ],
+      "narrative_function": "ending_theme",
+      "visual_intent": "The thesis rendered plainly: a face and a thumb dissolving into cold light, and a single closed safe dial remaining, warm. 'Silence as the last lock.'",
+      "on_screen_text": [
+        "The last key is the one you never speak."
+      ]
+    },
+    {
+      "span_id": "SPN-0027",
+      "text": "If you just learned your passcode may protect you more than your face — hit like, so more people know it before an officer is ever holding their phone.",
+      "claim_ids": [],
+      "narrative_function": "cta",
+      "visual_intent": "Brand endcard tail. Warm, resolved street at dawn; earned, specific CTA — not a generic beg.",
+      "on_screen_text": [
+        "hit like — so more people know",
+        "Subscribe"
+      ]
+    }
+  ],
+  "estimated_duration_seconds": 700,
+  "qc_status": "pass1_2_3_done_v002",
+  "notes": "v002: +7 spans (~2087w) to clear the 690-750s band with margin. Added: SPN-0028 stakes-deepen; SPN-0032 stakes-frequency; SPN-0029 Payne finger-choice caveat (FR-P); SPN-0033 concrete split (FR-PC-comp/FR-P, doctrine-only, no crime detail); SPN-0021 border-search exception (FR-BORDER: Smith S.D.N.Y. 2023 + circuit split, framed unsettled); SPN-0031 rehook to SCOTUS silence; SPN-0030 reboot/BFU device-security fact (FR-BFU). MYTHS bind: no 'SCOTUS decided'; may/many-courts; biometric split Payne<->Brown; search vs compel distinct; defendants' crimes omitted."
+}

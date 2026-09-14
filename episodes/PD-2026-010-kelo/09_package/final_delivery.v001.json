@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-010-kelo",
+  "revision": "v001",
+  "generated_at": "2026-06-21T17:48:35.023493+00:00",
+  "status": "ready_for_private_upload",
+  "publish_performed": false,
+  "schedule_performed": false,
+  "upload_target": "youtube_private",
+  "youtube": {
+    "selected_title": "Your Home for a Developer? The Kelo Supreme Court Case",
+    "thumbnail": "episodes/PD-2026-010-kelo/09_package/thumbnail.selected.v001.png",
+    "thumbnail_sha256": "8378ed0b32e6fe359a600b39fc128c1efc575120ca7cb6d4d508a044cee9afd1",
+    "synthetic_content_disclosure_required": true,
+    "publish_gate": "closed"
+  },
+  "render": {
+    "file": "H:\\pd-media\\episodes\\PD-2026-010-kelo\\08_edit\\kelo_premium_v001.mp4",
+    "sha256": "8de1cc21c44853ffc81594d9e22f4dfcc19561e191db4fd979f6af6b07ac3258",
+    "duration_seconds": 640.555,
+    "video": "1920x1080 H.264/libx264, 30fps, yuv420p, CRF 16",
+    "audio": "AAC, narration + BGM + SFX + ambience, ducked",
+    "loudness_probe": {
+      "input_i": -14.07,
+      "input_tp": -1.42,
+      "input_lra": 2.5,
+      "target_offset": -0.05
+    }
+  },
+  "thumbnail": {
+    "selected_id": "B",
+    "selected_title": "YOUR HOME FOR A DEVELOPER?",
+    "selected_file": "episodes/PD-2026-010-kelo/09_package/thumbnail.selected.v001.png",
+    "selected_sha256": "8378ed0b32e6fe359a600b39fc128c1efc575120ca7cb6d4d508a044cee9afd1",
+    "selected_background": "THUMB-02.png",
+    "reason": "Selected. Turns the Kelo holding into an immediate viewer-facing question while staying neutral and factual."
+  },
+  "qc": {
+    "final_qc": "episodes/PD-2026-010-kelo/08_edit/renders/final.v001.qc.json",
+    "status": "PASS",
+    "rights_manifest": "episodes/PD-2026-010-kelo/09_package/rights_manifest.v001.json",
+    "captions": "episodes/PD-2026-010-kelo/08_edit/captions.v001.srt",
+    "thumbnail_candidates": "episodes/PD-2026-010-kelo/09_package/title_thumbnail_candidates.v001.json"
+  },
+  "locked_inputs_unchanged": [
+    "episodes/PD-2026-010-kelo/03_script/script.en.v001.md",
+    "episodes/PD-2026-010-kelo/01_research/claims.v001.json",
+    "episodes/PD-2026-010-kelo/01_research/sources.v001.json"
+  ]
+}

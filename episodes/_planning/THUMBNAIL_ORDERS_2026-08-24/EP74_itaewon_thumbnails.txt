@@ -1,0 +1,68 @@
+EP74 ITAEWON — サムネイル用生プレート追加発注（CTR最優先版・2枚）
+
+なぜこの発注が要るか: EP74は公開時のTest & compare（A/B 3枚）に使える生プレートが
+T01_bg.v002.png の1枚しかありません。他は旧文字焼き込みで再利用不可。02/03用に
+文字なしの生プレートが2枚必要です（docs/handover/THUMBNAILS_TO_MAIN_2026-08-24.md 参照）。
+
+この話数で越えてはいけない線:
+・実在人物の肖像は禁止。159人の犠牲者・遺族・生存者を想起させる特定可能な顔は一切不可。
+  顔そのものは禁止しないが、識別可能性が禁止（human face を [NEG] に足さないこと）。
+・倒れた人・押しつぶされる人・人の山・群集事故の瞬間・救護・搬送・遺体・献花・追悼は禁止。
+  悲嘆のサムネは丸ごと禁止（v001 §1 bar 5）。
+・韓国ソウル・梨泰院の路地であること。日本・中国・欧米の街並みに見えてはいけない。
+
+納品の決まり
+  ・1プロンプト＝1枚。16:9（横÷縦＝1.778）、長辺3840以上。
+  ・ファイル名は T07.png / T08.png（T01〜T06は使用済み）。
+  ・納品先: episodes/PD-2026-074-itaewon/10_thumbnail/
+  ・文字・数字は生成しない。見出しはこちらで合成します（生成グリフ禁止）。
+
+──────── CTR最優先の作画指示（この発注で最も重要な節） ────────
+
+オーナー指示 2026-08-24: **CTR最大化を最優先**。本編の美学（作りものに見えないこと・被写体を
+小さく・彩度を落とす）は、サムネイルでは逆に働きます。実測: このチャンネルのCTRは2.31%、目標6%。
+以下は「守れたら良い」ではなく必須です。
+
+1. 主題が1つで、320ピクセルで読めること。細い線・遠景の群衆・細部の説明は消えます。
+2. 色を分離すること。冷たい青の夜に、暖色の光源を1つ（看板のにじみ・電話の画面・シャッター越しの灯り）。
+   モノトーンにしない。本編プレートより2段階明るく、2段階彩度を上げてください。
+3. 前景・中景・背景を作ること。手前に何か（手・手すり・光条）を置いて奥行きを出す。
+4. 見出し用の空きを作ること。指定した三分の一を、意図的に暗く単純な面にする。
+5. コントラストは広く。主題が暗い場に浮かぶ1つの明るい形として読めること。中間グレーの画面は不可。
+6. 文字・数字は生成しないでください。見出しはRemotionで合成します。
+
+CTRを下げる実測パターン（禁止）: 引きの説明カット、同系色でまとめた画面、複数の主題、
+暗すぎて320ピクセルで潰れる画。
+
+──────── 全プロンプト共通 ────────
+
+各プロンプトの先頭に [STYLE] を付けてください:
+
+cinematic still, photographic, Itaewon in Yongsan-gu, central Seoul, South Korea — a dense hillside nightlife district of narrow sloping backstreets between low mixed-use buildings, contemporary and specifically 2022 to 2026, Korean urban texture and nothing else: painted steel roller shutters, tiled stair risers, granite kerbstones, air-conditioning condensers on wall brackets, bundled overhead cabling, PVC awnings, vertically stacked illuminated sign boxes whose lettering is out of focus and unreadable, delivery scooters, stainless steel handrails, breeze block and rendered concrete, muted natural colour, low contrast but never crushed — shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame, in motion, never posed and never looking toward the lens, worn unglamorous ordinary surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no readable signage
+
+各プロンプトに [NEG] を適用してください:
+
+> text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, dead body, fallen person, person on the ground, person being crushed, crush, pile of people, trampled, injured person, blood, cpr, chest compression, resuscitation, defibrillator, stretcher, gurney, paramedic, ambulance interior, hospital, emergency room, morgue, autopsy, coffin, funeral, grave, mourner, crying, grieving, rescue, search and rescue, victim portrait, portrait wall, memorial photograph, framed photograph of a person, candles, flowers laid on the ground, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs, firearm, prison bars, japanese signage, kana, hiragana, katakana, chinese characters as shopfront, chinese lantern, tokyo, shibuya, shanghai, hong kong, bangkok, times square, london street, european street, EU number plate, right-hand-drive traffic, american highway sign, US route shield, american flag, megacity skyline, skyscraper cluster, expressway interchange, palm trees, beach, surf, ocean, tropical, desert, cruise ship, mardi gras, carnival, parade float, confetti, music festival, concert crowd, stadium crowd, sports fans, fireworks, new year countdown, horror movie, zombie, video game, crash test, action movie explosion, golden hour, sunset glow, postcard scenery, christmas, wedding, handshake, money rain, falling banknotes, stock ticker, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, anime, oversaturated, HDR halo, watermark, small subject, busy background, clutter, washed out, monochrome
+
+──────── プロンプト ────────
+
+--- T07 — 路地の口（大通り越し）
+cinematic still, photographic, Itaewon in Yongsan-gu, central Seoul, South Korea — a dense hillside nightlife district of narrow sloping backstreets between low mixed-use buildings, contemporary and specifically 2022 to 2026, Korean urban texture and nothing else: painted steel roller shutters, tiled stair risers, granite kerbstones, air-conditioning condensers on wall brackets, bundled overhead cabling, PVC awnings, vertically stacked illuminated sign boxes whose lettering is out of focus and unreadable, delivery scooters, stainless steel handrails, breeze block and rendered concrete, muted natural colour, low contrast but never crushed — shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame, in motion, never posed and never looking toward the lens, worn unglamorous ordinary surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no readable signage, the mouth of a narrow alley at night seen from across a main road, warm streaks of passing traffic light crossing the near foreground for depth, the alley itself a hard black vertical slot between two walls of blurred warm sign glow, the slot clearly the single subject of the frame, two stops brighter and more saturated than documentary grading, cold blue night against warm orange sign light, the left third of the frame very dark, simple and empty for a headline
+NEGATIVE: text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, dead body, fallen person, person on the ground, person being crushed, crush, pile of people, trampled, injured person, blood, cpr, chest compression, resuscitation, defibrillator, stretcher, gurney, paramedic, ambulance interior, hospital, emergency room, morgue, autopsy, coffin, funeral, grave, mourner, crying, grieving, rescue, search and rescue, victim portrait, portrait wall, memorial photograph, framed photograph of a person, candles, flowers laid on the ground, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs, firearm, prison bars, japanese signage, kana, hiragana, katakana, chinese characters as shopfront, chinese lantern, tokyo, shibuya, shanghai, hong kong, bangkok, times square, london street, european street, EU number plate, right-hand-drive traffic, american highway sign, US route shield, american flag, megacity skyline, skyscraper cluster, expressway interchange, palm trees, beach, surf, ocean, tropical, desert, cruise ship, mardi gras, carnival, parade float, confetti, music festival, concert crowd, stadium crowd, sports fans, fireworks, new year countdown, horror movie, zombie, video game, crash test, action movie explosion, golden hour, sunset glow, postcard scenery, christmas, wedding, handshake, money rain, falling banknotes, stock ticker, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, anime, oversaturated, HDR halo, watermark, small subject, busy background, clutter, washed out, monochrome
+合成予定の見出し（生成しない・claims照合とペア承認は後工程）: 137 OFFICERS または NO LAW REQUIRED IT
+意図: 黒い縦スリット＝路地そのものが主題。左三分の一が見出し用に空く。v001 §3 T02の背景案のCTR強化版
+File name T07.png
+
+--- T08 — 電話の画面と手（路地の中）
+cinematic still, photographic, Itaewon in Yongsan-gu, central Seoul, South Korea — a dense hillside nightlife district of narrow sloping backstreets between low mixed-use buildings, contemporary and specifically 2022 to 2026, Korean urban texture and nothing else: painted steel roller shutters, tiled stair risers, granite kerbstones, air-conditioning condensers on wall brackets, bundled overhead cabling, PVC awnings, vertically stacked illuminated sign boxes whose lettering is out of focus and unreadable, delivery scooters, stainless steel handrails, breeze block and rendered concrete, muted natural colour, low contrast but never crushed — shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame, in motion, never posed and never looking toward the lens, worn unglamorous ordinary surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no readable signage, a single brightly lit phone screen held low in one hand in a narrow dark backstreet at night, the blank glowing screen and the hand and jacket cuff the only bright things and filling the right half of the frame large, everything behind reduced to dark standing shoulders and soft out-of-focus warm sign glow, no face anywhere in frame, high contrast, the upper left third of the frame very dark, simple and empty for a headline
+NEGATIVE: text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, dead body, fallen person, person on the ground, person being crushed, crush, pile of people, trampled, injured person, blood, cpr, chest compression, resuscitation, defibrillator, stretcher, gurney, paramedic, ambulance interior, hospital, emergency room, morgue, autopsy, coffin, funeral, grave, mourner, crying, grieving, rescue, search and rescue, victim portrait, portrait wall, memorial photograph, framed photograph of a person, candles, flowers laid on the ground, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs, firearm, prison bars, japanese signage, kana, hiragana, katakana, chinese characters as shopfront, chinese lantern, tokyo, shibuya, shanghai, hong kong, bangkok, times square, london street, european street, EU number plate, right-hand-drive traffic, american highway sign, US route shield, american flag, megacity skyline, skyscraper cluster, expressway interchange, palm trees, beach, surf, ocean, tropical, desert, cruise ship, mardi gras, carnival, parade float, confetti, music festival, concert crowd, stadium crowd, sports fans, fireworks, new year countdown, horror movie, zombie, video game, crash test, action movie explosion, golden hour, sunset glow, postcard scenery, christmas, wedding, handshake, money rain, falling banknotes, stock ticker, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, anime, oversaturated, HDR halo, watermark, small subject, busy background, clutter, washed out, monochrome
+合成予定の見出し（生成しない・claims照合とペア承認は後工程）: 6:34 PM 系（ELEVEN CALLS はタイトルAと数字重複のため不可）
+意図: 手と画面が主題（右半分・50%以上）。前景=手/中景=肩/背景=看板グロー。v001 §3 T05のCTR強化版
+File name T08.png
+
+──────── 注意（見出し側の制約・こちらの工程用メモ） ────────
+
+ライブタイトルA「Officers Were Deployed To Four Of The Eleven Reports Before The Itaewon Crush」
+と同じ数字・事実をサムネ文字で言わない（分業原則）。よって FOUR OF ELEVEN / ELEVEN CALLS は
+02/03の見出しに使えない。claims済みで残る候補: 137 OFFICERS / NOBODY ORGANISED IT /
+NO LAW REQUIRED IT（いずれも config/thumbnails/itaewon.json 追記→ビルド→claims再照合→ペア承認）。

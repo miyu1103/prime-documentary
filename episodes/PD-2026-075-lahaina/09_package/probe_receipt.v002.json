@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-075-lahaina",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "out\\lahaina_preprobe.mp4",
+  "slice_seconds": 60.05,
+  "slice_sha256": "sha256:86d58e1a56c497fd0033b045ed2963ffc6f93581f5627873b1efd7eb01622a91",
+  "film_sha256": "sha256:cf0768e357a2cba5825c1c298a45ef682e4fdb9da581e49f6e4a8de1dd9a5a0c",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 47.5 / p10 45.3 / p50 46.7 (1201 frames, 489 cuts masked +/-8f; 4 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-08-24T09:02:26.526131+00:00"
+}

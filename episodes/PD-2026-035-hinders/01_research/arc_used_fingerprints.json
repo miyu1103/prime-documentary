@@ -1,0 +1,4928 @@
+{
+  "schema_version": "1.0.0",
+  "artifact": "arc_used_fingerprints",
+  "purpose": "Cross-episode arc NON-reuse ledger (sha256 + pHash + content-tag) for the shipped VISUAL assets of upstream arc episodes EP33/EP34, per EP35 PD-2026-035-hinders DESIGN [OG-0.5]. Enables sha256 exact-dup and content-tag semantic-reuse checks across the 3-episode forfeiture arc.",
+  "generated_at_utc": "2026-07-08T23:55:00.004287+00:00",
+  "generator": "scripts/gen_arc_fingerprints.py (run from scratchpad copy)",
+  "phash": {
+    "algorithm": "dct-phash-64bit",
+    "pipeline": "L / resize 32x32 LANCZOS / 2-D DCT / top-left 8x8 / median(excl DC) threshold",
+    "bits": 64,
+    "hamming_reuse_threshold": 6,
+    "note": "still images only; videos carry sha256 + content-tag (frame pHash out of scope)"
+  },
+  "scope_note": "VISUAL assets only. Audio/music/ambience stems are produced in the separate 06_audio lane and are intentionally OUT OF SCOPE in this ledger.",
+  "note_consumer": "The implemented gate scripts/check_arc_nonrepeat.py computes basename fingerprints on-the-fly and does NOT read this file. This ledger is the DESIGN [OG-0.5] preflight artifact (sha+pHash+content-tag) for owner review and a future check_arc_footage_nonoverlap preflight.",
+  "episodes": [
+    "PD-2026-033-tyler",
+    "PD-2026-034-rolin"
+  ],
+  "counts": {
+    "total_assets": 489,
+    "per_episode": {
+      "PD-2026-033-tyler": 271,
+      "PD-2026-034-rolin": 218
+    },
+    "by_kind": {
+      "contact_sheet": 1,
+      "depth_map": 68,
+      "factory": 203,
+      "generated_still": 205,
+      "hero": 12
+    },
+    "images_with_phash": 274,
+    "distinct_content_tags": 122
+  },
+  "assets": [
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-0666__government_building_exterior.mp4",
+      "basename": "AF-BG-0666__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "e29e3a4a57cdca7ab120a7d7c28627e49283a2af3b6f55cade1be83d413de528",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-0667__government_building_exterior.mp4",
+      "basename": "AF-BG-0667__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "3a7af37c749cb1ba283c0ddee4f2bde4a885d3d9b77dc9b7fd01a1ec14488def",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-0668__government_building_exterior.mp4",
+      "basename": "AF-BG-0668__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "452bdc51b95acff4574eb10fd00fd13bdad06d9a688ec3e40e09fa842bd715a3",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-0669__government_building_exterior.mp4",
+      "basename": "AF-BG-0669__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "cce9f685e26af8a9c34d9b278238bd07f6e81e1aaa59ef25e30432e2de774ab4",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-0670__government_building_exterior.mp4",
+      "basename": "AF-BG-0670__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "dd10d8c51be2bf20a7347550b66b594007f640607c3ab302b6edbb0b0dfa5fd9",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10139__old_library_archive.mp4",
+      "basename": "AF-BG-10139__old_library_archive.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "old_library_archive",
+      "sha256": "10414f20c6ef474b9cd1daf35338b90399fe650895f39cec0b737d044911a200",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10140__old_library_archive.mp4",
+      "basename": "AF-BG-10140__old_library_archive.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "old_library_archive",
+      "sha256": "e218144f58bb8ee423455804c010b2216cc8df16673c9eb842e252b5094a2f54",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10141__old_library_archive.mp4",
+      "basename": "AF-BG-10141__old_library_archive.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "old_library_archive",
+      "sha256": "82c91f83a1ec3f246edb4a374c9a3243cea33f4fff45e73550184f5c4a0cf9fd",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10220__stacked_legal_documents.mp4",
+      "basename": "AF-BG-10220__stacked_legal_documents.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stacked_legal_documents",
+      "sha256": "7944ce30e68a2fbe88a16d1f05e03889775418389e058f5d028b60bf022e6b7f",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10221__stacked_legal_documents.mp4",
+      "basename": "AF-BG-10221__stacked_legal_documents.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stacked_legal_documents",
+      "sha256": "0aeb984f284f893f21e9883fac38e542a1fef956dd8befb0fa80845b834c8d53",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10222__stacked_legal_documents.mp4",
+      "basename": "AF-BG-10222__stacked_legal_documents.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stacked_legal_documents",
+      "sha256": "7b490fac2e7e154391b73325fe1907dc654cc42737738b9da0252d9726124a14",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10223__stacked_legal_documents.mp4",
+      "basename": "AF-BG-10223__stacked_legal_documents.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stacked_legal_documents",
+      "sha256": "9f19b8c460acdb0b29d388ff860521c92bad8b1e7053edc6e77c4d3bdb23911c",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10224__stacked_legal_documents.mp4",
+      "basename": "AF-BG-10224__stacked_legal_documents.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stacked_legal_documents",
+      "sha256": "252d87d5c8392969e5082db056c95a04caa015a701af8dd4196b8cab2bd8b7e0",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10714__snowy_street_night.mp4",
+      "basename": "AF-BG-10714__snowy_street_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "snowy_street_night",
+      "sha256": "c7f08ce15f105fad92e900dc7b5349e231e21eb03ce895c99dbd9b8dd00ba716",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10715__snowy_street_night.mp4",
+      "basename": "AF-BG-10715__snowy_street_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "snowy_street_night",
+      "sha256": "349876a38d365da01e7d40b974256191b13b4a31670a7096846a4d4d3c0dccf2",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10716__snowy_street_night.mp4",
+      "basename": "AF-BG-10716__snowy_street_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "snowy_street_night",
+      "sha256": "da0fd53182d4bf358e4539108807a4d1664e9e21688c1448296c76450f507275",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-10717__snowy_street_night.mp4",
+      "basename": "AF-BG-10717__snowy_street_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "snowy_street_night",
+      "sha256": "c083cf85f00c003cf0a3ac5a768cac09f7c63fbea3a860113b1153b5128d1b50",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1284__documents_on_desk.mp4",
+      "basename": "AF-BG-1284__documents_on_desk.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "documents_on_desk",
+      "sha256": "d8329b95a4bac1e7699445a1d4a7ca00a79d13f655cd0e7fc29481eac6f7b852",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1285__documents_on_desk.mp4",
+      "basename": "AF-BG-1285__documents_on_desk.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "documents_on_desk",
+      "sha256": "c3c7aac04872dbba3135684562f42bab4f5ae0756da19805beb22d06cf3faa73",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1286__documents_on_desk.mp4",
+      "basename": "AF-BG-1286__documents_on_desk.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "documents_on_desk",
+      "sha256": "3b654251ebef10c117fdf23b6940872571402ab6c4568ed93ff3e47dd03c12b0",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1287__documents_on_desk.mp4",
+      "basename": "AF-BG-1287__documents_on_desk.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "documents_on_desk",
+      "sha256": "a6febdba1bf1b7da7714e2afc54368228a4ac9f9ec213561a3551d7cd4cd82a9",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1288__documents_on_desk.mp4",
+      "basename": "AF-BG-1288__documents_on_desk.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "documents_on_desk",
+      "sha256": "7bacb3c2a5fe21254779314c6edbc9450e4b1d437961de78c642c06329010a84",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1289__documents_on_desk.mp4",
+      "basename": "AF-BG-1289__documents_on_desk.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "documents_on_desk",
+      "sha256": "578fcc850ad364097488c4c16314fc81f379a0658ddb4c8f40a5928de186f336",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-15128__magnifying_glass_on_document.mp4",
+      "basename": "AF-BG-15128__magnifying_glass_on_document.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "magnifying_glass_on_document",
+      "sha256": "22e676a3feb77f52aa016f484a3f532984c6bff6fb88c3fc53cd9c696869e578",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-15129__magnifying_glass_on_document.mp4",
+      "basename": "AF-BG-15129__magnifying_glass_on_document.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "magnifying_glass_on_document",
+      "sha256": "38b86ca15c30b3885d26dde5aae7e3cde3972e652e2af977b73b184f68056e18",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-15131__magnifying_glass_on_document.mp4",
+      "basename": "AF-BG-15131__magnifying_glass_on_document.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "magnifying_glass_on_document",
+      "sha256": "be97a6de9a658ddc7ce6641705916b3a6ddd61920327c3bee8e08579e4a567da",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-16349__capitol_dome_dusk.mp4",
+      "basename": "AF-BG-16349__capitol_dome_dusk.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "capitol_dome_dusk",
+      "sha256": "66770b0c18f68fd9961fc849fd9527a36a5388bd7ccdb021517d25ccf2837a61",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-16350__capitol_dome_dusk.mp4",
+      "basename": "AF-BG-16350__capitol_dome_dusk.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "capitol_dome_dusk",
+      "sha256": "602e5e5b2d036ad33a269678f5814c2db86285ea2429945010e783bf23175dce",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-16351__capitol_dome_dusk.mp4",
+      "basename": "AF-BG-16351__capitol_dome_dusk.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "capitol_dome_dusk",
+      "sha256": "97ca1e59e117feea6962b15f2b412227ca9f2a73fff0923edb5466f63a3057ee",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1668__suburban_house_exterior_night.mp4",
+      "basename": "AF-BG-1668__suburban_house_exterior_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "suburban_house_exterior_night",
+      "sha256": "16af46464c8bd47feedacab8121bdb9f41bf0c40ef5f9120a0ec397d9ed20456",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1669__suburban_house_exterior_night.mp4",
+      "basename": "AF-BG-1669__suburban_house_exterior_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "suburban_house_exterior_night",
+      "sha256": "ad8a63d3304b8e5453a60244aa64aefc285d3d3b0612656135d2212f51721b7f",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1670__suburban_house_exterior_night.mp4",
+      "basename": "AF-BG-1670__suburban_house_exterior_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "suburban_house_exterior_night",
+      "sha256": "b1871a000f3a262dc7fcccb8cff0b22346fbe793ef2b6994b312fc6684f24a2d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1672__suburban_house_exterior_night.mp4",
+      "basename": "AF-BG-1672__suburban_house_exterior_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "suburban_house_exterior_night",
+      "sha256": "494e81b37e0e6e3d57aae3a98f6132bd91eeff55d5aa93c0c9352cf3d88ff259",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1673__suburban_house_exterior_night.mp4",
+      "basename": "AF-BG-1673__suburban_house_exterior_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "suburban_house_exterior_night",
+      "sha256": "f474b93d5a5009da7acafdff247fd647bf166a4e87e0978c7aeb574c18f33d73",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1674__suburban_house_exterior_night.mp4",
+      "basename": "AF-BG-1674__suburban_house_exterior_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "suburban_house_exterior_night",
+      "sha256": "85fee38c6c09c46bf358460420340d3271b3235a06846b880e0f57fa671cca1a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1746__front_door_house.mp4",
+      "basename": "AF-BG-1746__front_door_house.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "front_door_house",
+      "sha256": "86fcf40ecce83b0cc84962929d468826b91937f5c74b611e5743ff777adea1e7",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1747__front_door_house.mp4",
+      "basename": "AF-BG-1747__front_door_house.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "front_door_house",
+      "sha256": "78ee6614af7e90d765925c738ec30845a514c6689518381b142140d08bf32b34",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1748__front_door_house.mp4",
+      "basename": "AF-BG-1748__front_door_house.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "front_door_house",
+      "sha256": "bf90f2d01bfc49283a34bac6a5a2394213b933f01780c04b6fa45aac083f0f6c",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1750__front_door_house.mp4",
+      "basename": "AF-BG-1750__front_door_house.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "front_door_house",
+      "sha256": "9e22d86b33bfc86af6d3b962a3fbc3c0154d02282cc0dbf0cc59ed855ef1a576",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1751__front_door_house.mp4",
+      "basename": "AF-BG-1751__front_door_house.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "front_door_house",
+      "sha256": "b342196ac1f5b01c242349db0d99c4203f2fc3613c85b16c3b218480faaefd46",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-1752__front_door_house.mp4",
+      "basename": "AF-BG-1752__front_door_house.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "front_door_house",
+      "sha256": "af2b8c70f971b08759cefad2bf3e4c4ef176fd85dcba799c7559f61cd0f2eaed",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-21905__american_suburb_aerial.mp4",
+      "basename": "AF-BG-21905__american_suburb_aerial.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "american_suburb_aerial",
+      "sha256": "3fe1dde240d5d57b57b851b282a4a03fc8b6b6529aa1baabd08deb13c9c7b927",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-21907__american_suburb_aerial.mp4",
+      "basename": "AF-BG-21907__american_suburb_aerial.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "american_suburb_aerial",
+      "sha256": "cc8f83ceae014c6090a21512bacb8f311c763a7317c52021a219f7c9fc8a45c6",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-21908__american_suburb_aerial.mp4",
+      "basename": "AF-BG-21908__american_suburb_aerial.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "american_suburb_aerial",
+      "sha256": "99d23fd77cf70936c71f0769f04a9615e57ee695fc642a75aa42f48d3c20f6ee",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-21909__american_suburb_aerial.mp4",
+      "basename": "AF-BG-21909__american_suburb_aerial.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "american_suburb_aerial",
+      "sha256": "c350d4ec6f03cece62306e6c175675aa6f97f174339ada69d32fee6ddcaf0390",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-21910__american_suburb_aerial.mp4",
+      "basename": "AF-BG-21910__american_suburb_aerial.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "american_suburb_aerial",
+      "sha256": "3158813688cc26a3a4bf59d4fa2ea8b6ebbdb971089f73f50a6ca123e5d773c7",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22093__white_picket_fence.mp4",
+      "basename": "AF-BG-22093__white_picket_fence.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "white_picket_fence",
+      "sha256": "492a94febbe3ce65118d5c1826159821e3493a461140203392c1b9e08f569b13",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22094__white_picket_fence.mp4",
+      "basename": "AF-BG-22094__white_picket_fence.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "white_picket_fence",
+      "sha256": "a92e6450a1def330b650b0d9a2ac069bbc74fbdbcdfb0390a897cb55a15f7bca",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22095__white_picket_fence.mp4",
+      "basename": "AF-BG-22095__white_picket_fence.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "white_picket_fence",
+      "sha256": "d6ca69e3dd064fa8f6177387d71b14e621f5fb90ea54414674d7a2c52d01961b",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22096__white_picket_fence.mp4",
+      "basename": "AF-BG-22096__white_picket_fence.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "white_picket_fence",
+      "sha256": "df89fbd5f2b8d115ba17c6b89a7e8fff1335436cc135754dd359cfaca15f6c08",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22097__white_picket_fence.mp4",
+      "basename": "AF-BG-22097__white_picket_fence.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "white_picket_fence",
+      "sha256": "7925ff976a49fb4ff1708fbd167ea752a7c794b67f4a2c072be219d2493711cd",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22282__for_sale_sign_yard.mp4",
+      "basename": "AF-BG-22282__for_sale_sign_yard.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "for_sale_sign_yard",
+      "sha256": "61fb01f667857cf593200f65cef15b90f13772f9206517b2fd07f2d29cbfe866",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22283__for_sale_sign_yard.mp4",
+      "basename": "AF-BG-22283__for_sale_sign_yard.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "for_sale_sign_yard",
+      "sha256": "4f473369dd1e4b1cfbe25e498597ef5f59c0c44e9212b38b1dd3863a564c901b",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22284__for_sale_sign_yard.mp4",
+      "basename": "AF-BG-22284__for_sale_sign_yard.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "for_sale_sign_yard",
+      "sha256": "4d784900e8e600c375a2dbb2c9ae22ade9b52c050797a2a1c53ee6f6875c11b4",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22285__for_sale_sign_yard.mp4",
+      "basename": "AF-BG-22285__for_sale_sign_yard.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "for_sale_sign_yard",
+      "sha256": "034b509c060c6dceb03b9cfd006def66e01c931d31b18c7ba4ebfe3d0a552aa1",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22286__for_sale_sign_yard.mp4",
+      "basename": "AF-BG-22286__for_sale_sign_yard.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "for_sale_sign_yard",
+      "sha256": "1cf660d8721448c2483a91c1cb3302664423354d7e203c6c73c5e5e02e961cf8",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22287__for_sale_sign_yard.mp4",
+      "basename": "AF-BG-22287__for_sale_sign_yard.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "for_sale_sign_yard",
+      "sha256": "66b9203830e78aa52316b099e66aa023c36151a0a45fc97ff2eea82f70028b79",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22469__moving_truck_loading.mp4",
+      "basename": "AF-BG-22469__moving_truck_loading.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_truck_loading",
+      "sha256": "d0b8f30804ac5a130eff95e4c305a634608787fafce6c771f371905b15a119ca",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22471__moving_truck_loading.mp4",
+      "basename": "AF-BG-22471__moving_truck_loading.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_truck_loading",
+      "sha256": "d3dec8388b7a6ef2a581dc34f74c163609311f06cfd8348f616ecae57cd195a5",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22472__moving_truck_loading.mp4",
+      "basename": "AF-BG-22472__moving_truck_loading.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_truck_loading",
+      "sha256": "f4820dd7d239b593073074831d3753f8471a906d3e3a98329b83846c501f410e",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22473__moving_truck_loading.mp4",
+      "basename": "AF-BG-22473__moving_truck_loading.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_truck_loading",
+      "sha256": "8b9e81a2dbdf3bffc56037f21e38611fcccf07053a8224406a11a322df065816",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-22474__moving_truck_loading.mp4",
+      "basename": "AF-BG-22474__moving_truck_loading.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_truck_loading",
+      "sha256": "7f198f3c8586313ddc3fa625ecb1fd3a1bbf2b21d3f9826604023dc4e564591f",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-23026__federal_building_columns_night.mp4",
+      "basename": "AF-BG-23026__federal_building_columns_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "federal_building_columns_night",
+      "sha256": "039bf84287097393eb461ceb7567ef2c64c7f02a850a901bd190aec0d3503424",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-23027__federal_building_columns_night.mp4",
+      "basename": "AF-BG-23027__federal_building_columns_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "federal_building_columns_night",
+      "sha256": "6797d4feaa259ec79bd383292fa98b6f6b9498d8c7574a500aecdd84299809db",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-23028__federal_building_columns_night.mp4",
+      "basename": "AF-BG-23028__federal_building_columns_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "federal_building_columns_night",
+      "sha256": "f1b38b658d2f3d353d3af9d34430bd8bf677558d8a84f3214d172e4b3c0301bc",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-23029__federal_building_columns_night.mp4",
+      "basename": "AF-BG-23029__federal_building_columns_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "federal_building_columns_night",
+      "sha256": "cb35607d07f8eb8e255d8fe546f3d1d02d08e2844e0538cf0e45fe4cf594bf0f",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-26768__elderly_hands_close_up.mp4",
+      "basename": "AF-BG-26768__elderly_hands_close_up.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "elderly_hands_close_up",
+      "sha256": "562431b5038f8b6f33d399c1dc4eba6eb4ebdbbe03782f44f7357306f3d30a81",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-26769__elderly_hands_close_up.mp4",
+      "basename": "AF-BG-26769__elderly_hands_close_up.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "elderly_hands_close_up",
+      "sha256": "7f90f379d0e1c65a61913401cf6630c9546fd05fc658794f77e78f0ebe827412",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-26770__elderly_hands_close_up.mp4",
+      "basename": "AF-BG-26770__elderly_hands_close_up.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "elderly_hands_close_up",
+      "sha256": "54cd49aeaf6c69d3db39c7571bf5c306e1ebb5e2a9bb101fa596a26dffec79ad",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-26771__elderly_hands_close_up.mp4",
+      "basename": "AF-BG-26771__elderly_hands_close_up.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "elderly_hands_close_up",
+      "sha256": "cb883edd3edda1b3a6715378101fe44190655543630dd135cfc2a0ed77b9476e",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-26772__elderly_hands_close_up.mp4",
+      "basename": "AF-BG-26772__elderly_hands_close_up.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "elderly_hands_close_up",
+      "sha256": "243b71359d381b2858530c3f45026fe8f44bb6e771cbe94811cdbb2dd4cc96c3",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-28417__snowy_forest_path.mp4",
+      "basename": "AF-BG-28417__snowy_forest_path.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "snowy_forest_path",
+      "sha256": "9d8883d0eab9345fab114950bc751aff137ff1b2f51e0d6fb6fe0ce852d910b4",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-28418__snowy_forest_path.mp4",
+      "basename": "AF-BG-28418__snowy_forest_path.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "snowy_forest_path",
+      "sha256": "bae840e4bca3d728a368250c0229a3be4824ada4bdd5fc332fa7f2a83a184733",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-28419__snowy_forest_path.mp4",
+      "basename": "AF-BG-28419__snowy_forest_path.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "snowy_forest_path",
+      "sha256": "db91533b36560c52707291a7a633274975674e9ee0b8a8f263769056cfadc3f5",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-28420__snowy_forest_path.mp4",
+      "basename": "AF-BG-28420__snowy_forest_path.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "snowy_forest_path",
+      "sha256": "827ef258d6c412ad5a9b2224038eed4882c6659a55cfaa00aed76c0cd708a72c",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3051__empty_road_sunset.mp4",
+      "basename": "AF-BG-3051__empty_road_sunset.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "empty_road_sunset",
+      "sha256": "aa373ec1baaee9c55d0d9d150f294ad64b4de005d3d92953cd0ba6769c061e54",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3052__empty_road_sunset.mp4",
+      "basename": "AF-BG-3052__empty_road_sunset.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "empty_road_sunset",
+      "sha256": "e35e4afcebeefa0721db2bdd9afaa875e1eba4da78e3da9795135f56ca20d00a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3053__empty_road_sunset.mp4",
+      "basename": "AF-BG-3053__empty_road_sunset.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "empty_road_sunset",
+      "sha256": "fdf6b2081cfe329291d284b6c95e02365a3cfd40679a87bdbb3630841b2f714d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3131__old_keys_on_table.mp4",
+      "basename": "AF-BG-3131__old_keys_on_table.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "old_keys_on_table",
+      "sha256": "dea3d4e41b6d600cf4e3036d116950e223087549f6d454ea574f50b7930fc07d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3132__old_keys_on_table.mp4",
+      "basename": "AF-BG-3132__old_keys_on_table.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "old_keys_on_table",
+      "sha256": "41919dda674c86c2e8b90060ebf7ac90dc1a454fc5adc46aab7bf52d9d482f80",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3133__old_keys_on_table.mp4",
+      "basename": "AF-BG-3133__old_keys_on_table.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "old_keys_on_table",
+      "sha256": "2373b68ec092ad9ea57ba6548c4cda3170dddfc777cc01848e7b15d43cc930de",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3134__old_keys_on_table.mp4",
+      "basename": "AF-BG-3134__old_keys_on_table.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "old_keys_on_table",
+      "sha256": "6c10b0f963b16972bb3971f5132962cc0d1e19f467d62045de45d4b8dade1d6a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3135__old_keys_on_table.mp4",
+      "basename": "AF-BG-3135__old_keys_on_table.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "old_keys_on_table",
+      "sha256": "13d4ba0bd58a7bd1f7c768286e46e3ae24ecfd9bb6044ee31e2b0aa2c13d9977",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3285__courthouse_steps.mp4",
+      "basename": "AF-BG-3285__courthouse_steps.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "courthouse_steps",
+      "sha256": "3c7e2f5fb758ef1d3439e451481803a2a425cdc942d53f861fea0e1a6e5face4",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3286__courthouse_steps.mp4",
+      "basename": "AF-BG-3286__courthouse_steps.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "courthouse_steps",
+      "sha256": "f1218b08c5d1ba870096e09ca51e3a1a412efeae5f4fd6676e6c75f5d6a188bf",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3287__courthouse_steps.mp4",
+      "basename": "AF-BG-3287__courthouse_steps.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "courthouse_steps",
+      "sha256": "7f62da2f9277b8bfd061f92e5d7df632eee5feb4019037d86d9c1b2808893156",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3288__courthouse_steps.mp4",
+      "basename": "AF-BG-3288__courthouse_steps.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "courthouse_steps",
+      "sha256": "1a62e00afd63e1dd4228c632052a9cf7e6cc38c840a2f36ea8b81c8f8132fb81",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3289__courthouse_steps.mp4",
+      "basename": "AF-BG-3289__courthouse_steps.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "courthouse_steps",
+      "sha256": "f4c4d9b05d61d8328b9c03a55804ca90e56d7f36e012b6ec263940410b0268ca",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3355__judge_gavel_wooden.mp4",
+      "basename": "AF-BG-3355__judge_gavel_wooden.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "judge_gavel_wooden",
+      "sha256": "faa9d0fa1dc0565a0d1a9cd23bf7f793937ffc6d2fcdc4be4162d5b4d10812d1",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-3356__judge_gavel_wooden.mp4",
+      "basename": "AF-BG-3356__judge_gavel_wooden.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "judge_gavel_wooden",
+      "sha256": "c1036eb2a57f439fe76155c87c555793882d11d72cf33a5633a5c678aff63b8a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-49827__person_signing_document_hand.mp4",
+      "basename": "AF-BG-49827__person_signing_document_hand.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "person_signing_document_hand",
+      "sha256": "004b1d69225c380fe5e721e7df56658eb22d547baba455baa49b6f3aa20a9d82",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-49828__person_signing_document_hand.mp4",
+      "basename": "AF-BG-49828__person_signing_document_hand.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "person_signing_document_hand",
+      "sha256": "15ba19290cc5407747280d9f4ac7dc9837b688a41ceda2eadeee4fd876c037f7",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-49829__person_signing_document_hand.mp4",
+      "basename": "AF-BG-49829__person_signing_document_hand.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "person_signing_document_hand",
+      "sha256": "9520511d48bfe80d81a540f2fd5dbf1a7ee6bc725694cbdddee6de2b8731fb3d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-60081__frozen_lake_snow.mp4",
+      "basename": "AF-BG-60081__frozen_lake_snow.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "frozen_lake_snow",
+      "sha256": "8064d23eb83ac517d088f35f6c5db9cf510e9818407482d00891f04477fe7ebe",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-60082__frozen_lake_snow.mp4",
+      "basename": "AF-BG-60082__frozen_lake_snow.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "frozen_lake_snow",
+      "sha256": "6cd1a52ca0edb3ae2689054583d4fee5ec6169c669213d62a7be5ba511fe4238",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-60083__frozen_lake_snow.mp4",
+      "basename": "AF-BG-60083__frozen_lake_snow.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "frozen_lake_snow",
+      "sha256": "fdf197fd4f903d354f628814af7e542ff4ff505ffe90b8fbd9764114c507f647",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-60084__frozen_lake_snow.mp4",
+      "basename": "AF-BG-60084__frozen_lake_snow.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "frozen_lake_snow",
+      "sha256": "64a3392325235bc31e04e01f230ab311e9c15c9b5098d6cf6225cc2ee4cf29e6",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-63123__audit_documents_stack.mp4",
+      "basename": "AF-BG-63123__audit_documents_stack.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "audit_documents_stack",
+      "sha256": "4709e180fd1509aaa59b4c613c09987507501beb4367161c1dc1ab13af850039",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-63125__audit_documents_stack.mp4",
+      "basename": "AF-BG-63125__audit_documents_stack.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "audit_documents_stack",
+      "sha256": "98a465b2748215c5a88150707a8fce7bc0a14b523db9a041f656a5c6d9021798",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-63126__audit_documents_stack.mp4",
+      "basename": "AF-BG-63126__audit_documents_stack.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "audit_documents_stack",
+      "sha256": "fa47d8bdb57b57f198bdd6595181fbc3d6e77276e57a6e7a2b996bbabc4ed6f2",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-63128__audit_documents_stack.mp4",
+      "basename": "AF-BG-63128__audit_documents_stack.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "audit_documents_stack",
+      "sha256": "83edcb45478212faefbb7f8a7af8a9884b2cb2f97ff5b89985ce3844e5bb69bf",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-6601__supreme_court_building.mp4",
+      "basename": "AF-BG-6601__supreme_court_building.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "supreme_court_building",
+      "sha256": "53606e46ad726224efb30475673c626e33a0ec8a4ada0194aad116df8702a1cc",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-6602__supreme_court_building.mp4",
+      "basename": "AF-BG-6602__supreme_court_building.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "supreme_court_building",
+      "sha256": "7f12a1491ece27eb795419c8180aa10d24a8785aff996c2b00731b48ef7cb448",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-6603__supreme_court_building.mp4",
+      "basename": "AF-BG-6603__supreme_court_building.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "supreme_court_building",
+      "sha256": "d4dae18ed6e58a3c5a4d16923adfc60088931586cf0a9ace5bc5f4611305aabe",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8242__contract_paperwork_signing.mp4",
+      "basename": "AF-BG-8242__contract_paperwork_signing.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "contract_paperwork_signing",
+      "sha256": "810eb9e8296943ba72ac8f7314bb7caa5d6cc1db3182109efabb55182540e99a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8243__contract_paperwork_signing.mp4",
+      "basename": "AF-BG-8243__contract_paperwork_signing.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "contract_paperwork_signing",
+      "sha256": "29056f4e60f2a5dcb4017da8234805c510ced504e26ead9794420fb5bd3e9c9b",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8244__contract_paperwork_signing.mp4",
+      "basename": "AF-BG-8244__contract_paperwork_signing.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "contract_paperwork_signing",
+      "sha256": "34b5d168fdb1d073550920aac0ce67aed89e397c644e4ffd26ee4ba4b1bcc922",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8245__contract_paperwork_signing.mp4",
+      "basename": "AF-BG-8245__contract_paperwork_signing.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "contract_paperwork_signing",
+      "sha256": "6138feba868c04fcb2339f44ed8fc62eaef5af6a99adfd576cfa66838c975d84",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8246__contract_paperwork_signing.mp4",
+      "basename": "AF-BG-8246__contract_paperwork_signing.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "contract_paperwork_signing",
+      "sha256": "0eaf26d2352c8f21e03bdaee8377d4420f9d56dfb8941a533264a732461a3f6d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8783__broken_house_demolition.mp4",
+      "basename": "AF-BG-8783__broken_house_demolition.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "broken_house_demolition",
+      "sha256": "f998f804f976301df5f199b0e3d39e8434d0bc8bfdab9cfd2601250b9066f9f4",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8784__broken_house_demolition.mp4",
+      "basename": "AF-BG-8784__broken_house_demolition.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "broken_house_demolition",
+      "sha256": "663232382fbc8d8a89574ee56cf0e26e160efcae04242a1635208d74940d9351",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8785__broken_house_demolition.mp4",
+      "basename": "AF-BG-8785__broken_house_demolition.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "broken_house_demolition",
+      "sha256": "e3f5d44377941e916e8415948cc0ed3f254863814624b8e2a82ff31b2441716e",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8915__moving_boxes_empty_room.mp4",
+      "basename": "AF-BG-8915__moving_boxes_empty_room.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_boxes_empty_room",
+      "sha256": "b04aca3ea10022acc1dee2d71be82310b27e064efa371e413793bdbae7aedc49",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8916__moving_boxes_empty_room.mp4",
+      "basename": "AF-BG-8916__moving_boxes_empty_room.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_boxes_empty_room",
+      "sha256": "b1cee194a02087775ad6ef2914c8f1916ebdda4f4e4129bf0c4098c002d483b1",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8917__moving_boxes_empty_room.mp4",
+      "basename": "AF-BG-8917__moving_boxes_empty_room.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_boxes_empty_room",
+      "sha256": "6a8082bbad13e19b71fbecb45b71f96cc2462148a7803ab17f735f7d6561f071",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8918__moving_boxes_empty_room.mp4",
+      "basename": "AF-BG-8918__moving_boxes_empty_room.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_boxes_empty_room",
+      "sha256": "125384784dbe24db81f3b67b0ea63c950fedaf72e9710bbd2c024a4ed6aedb2b",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-8919__moving_boxes_empty_room.mp4",
+      "basename": "AF-BG-8919__moving_boxes_empty_room.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "moving_boxes_empty_room",
+      "sha256": "f08030df56fcc8a2ee11e83367caf4c0d93606ee1f1586d9d33e24e99c658f08",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-9059__rural_road_america.mp4",
+      "basename": "AF-BG-9059__rural_road_america.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "rural_road_america",
+      "sha256": "de7f027ae40bee970ed8bc2ecac0877df12aa6cdc873adc88b14f197670d0308",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-9060__rural_road_america.mp4",
+      "basename": "AF-BG-9060__rural_road_america.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "rural_road_america",
+      "sha256": "d70e0cf470bc331aa1e361829d0a039ccc34258fd07d03fbd61244a5abb6afee",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-9061__rural_road_america.mp4",
+      "basename": "AF-BG-9061__rural_road_america.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "rural_road_america",
+      "sha256": "f9fbf49b75ba0c451b93de0c881caf95705001ebbc463f2459b61f2caa03651d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-9062__rural_road_america.mp4",
+      "basename": "AF-BG-9062__rural_road_america.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "rural_road_america",
+      "sha256": "6a706021464ed79f00729cf42e9c0748f8fd6d01eadcdb0a43e14071a863c122",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-9209__small_town_main_street.mp4",
+      "basename": "AF-BG-9209__small_town_main_street.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "small_town_main_street",
+      "sha256": "96a52b461796bdb143f6d47d64efdb8d4519105d187b1df03d20b2b280742945",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-9210__small_town_main_street.mp4",
+      "basename": "AF-BG-9210__small_town_main_street.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "small_town_main_street",
+      "sha256": "e6ee535ca8d98c52920cccb03ec191af542b3f20eb03e0bd64ba7cb1c7ae2ca0",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-9211__small_town_main_street.mp4",
+      "basename": "AF-BG-9211__small_town_main_street.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "small_town_main_street",
+      "sha256": "6013c99b6f23318d44530fa151e66789ce3603ae5dcd7bfb08bfe8321c45ed2a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-9212__small_town_main_street.mp4",
+      "basename": "AF-BG-9212__small_town_main_street.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "small_town_main_street",
+      "sha256": "004337f887e8c0a5bedfbd24465e344fd391c5698a5a948c3adc2f7d5427a6b9",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/factory/AF-BG-9213__small_town_main_street.mp4",
+      "basename": "AF-BG-9213__small_town_main_street.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "small_town_main_street",
+      "sha256": "54709aef829632536d73a7264708decf42ce8215cd252ab906f16871ed147088",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/hero/_ALL6_heroes_reel.mp4",
+      "basename": "_ALL6_heroes_reel.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "_all6_heroes_reel",
+      "sha256": "0bb51384978d35ad516442f9c7b9ab825bc51728bba6eb9c27195ae4ae977478",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/hero/equitybar.mp4",
+      "basename": "equitybar.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "equitybar",
+      "sha256": "551b9d947240c4ee059b5d5c5a1aa83a7bbeee2e3dc8aebc052c3193263b953e",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/hero/equitytheft_map.mp4",
+      "basename": "equitytheft_map.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "equitytheft_map",
+      "sha256": "dea6ffc0531f7f82ab0eea56166f235cf64a2fb175d60c10a9e01b966f8f6bf6",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/hero/govtargument_fracture.mp4",
+      "basename": "govtargument_fracture.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "govtargument_fracture",
+      "sha256": "be74880ee33e2f4df47fc0a007059d04018d0ebde27d8209712987e0367fd882",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/hero/magnacarta_scroll.mp4",
+      "basename": "magnacarta_scroll.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "magnacarta_scroll",
+      "sha256": "ed35cd5178dce6f2b7d4f5cb55a847e801e323b6081f94ee0a0052058b64f95a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/hero/taxdebtmeter.mp4",
+      "basename": "taxdebtmeter.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "taxdebtmeter",
+      "sha256": "413bd2f8536a793a73e9b73d5b7657a5f7357d02002b055623c9ca6f594e0bb2",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/hero/votetally_bench.mp4",
+      "basename": "votetally_bench.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "votetally_bench",
+      "sha256": "a24e1382dd53cc042225d015fee1780460b42f5d0a2d246f0b85d84cedfa773a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/CONTACT_SHEET_tyler_codex_v001.jpg",
+      "basename": "CONTACT_SHEET_tyler_codex_v001.jpg",
+      "kind": "contact_sheet",
+      "ext": "jpg",
+      "content_tag": null,
+      "sha256": "e368626d639f45459627c2c9d2339fea2175c6bd55f522457468197d39d69b90",
+      "phash": "8b2da82bd18b56b3"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S001-IMG-001.png",
+      "basename": "PD-2026-033-S001-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "4d2d3035d8d4aa565f6cd68c40c371a65d7562f06fa089b436d7cbfa21cf944c",
+      "phash": "969531390ec63b79"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S002-IMG-002.png",
+      "basename": "PD-2026-033-S002-IMG-002.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "899f0b4997bbc8158f11dfa3aa69ac8058b78d890e71474720039f27243c7f18",
+      "phash": "b5a51d3c4a63c36a"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S003-IMG-003.png",
+      "basename": "PD-2026-033-S003-IMG-003.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "fea29295d71e37148ba35cad7f00fefa8cbe1606b4d049ecce2857c110cbeb2e",
+      "phash": "fddb8000337f066e"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S003-IMG-004.png",
+      "basename": "PD-2026-033-S003-IMG-004.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "9c9ae848c15ab8df888608227954ca5927cf4b549c3b359c5506611cfd44583d",
+      "phash": "9d84737372357168"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S004-IMG-005.png",
+      "basename": "PD-2026-033-S004-IMG-005.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "8150889f87e38a179e9539441e5555ea5161bf747561fddae3ca6b7faf1d2059",
+      "phash": "adaf2fdb32b54004"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S004-IMG-006.png",
+      "basename": "PD-2026-033-S004-IMG-006.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "d4091ebf592fb896b241294d9a4612cbe6bac074d779f3962d4a632802aa46db",
+      "phash": "e7df3e201ef01a05"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S005-IMG-007.png",
+      "basename": "PD-2026-033-S005-IMG-007.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "98dfaa171e491a4e70c00942d95c3b6b88b30912390bb4675ab24463a4b51540",
+      "phash": "c0c71f1938f1e0ee"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S005-IMG-008.png",
+      "basename": "PD-2026-033-S005-IMG-008.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "5b8fc0d13bd15d1422295768f26ee5113f3144fb97ca182279d0b24796291ef3",
+      "phash": "c6c731393cd24cb6"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S006-IMG-009.png",
+      "basename": "PD-2026-033-S006-IMG-009.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "40ef24ae1515ce87d0dbad514991db469707bdb6057d5f5948d20817981ae853",
+      "phash": "d0f30fe8629d628e"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S006-IMG-010.png",
+      "basename": "PD-2026-033-S006-IMG-010.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "82537efaa261d3666e3fdec81418aaf86561d56475cd46187923ad804260283c",
+      "phash": "9a636196da9a3372"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S007-IMG-011.png",
+      "basename": "PD-2026-033-S007-IMG-011.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "4d721376aebb98eba0091fe31c864b7304e61010bf72a946d5fd6421184acb50",
+      "phash": "96796c976d06a958"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S007-IMG-012.png",
+      "basename": "PD-2026-033-S007-IMG-012.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "c5e467a6ed285a721c35b8afeef66369d68d64483c3fba8ad55d75fc7b67ba6f",
+      "phash": "84943c6b4bde3437"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S008-IMG-013.png",
+      "basename": "PD-2026-033-S008-IMG-013.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "d2a35354a4682c5fb47c91cc604fbe9804f21589a2c164cd443742cb2380669d",
+      "phash": "c3d366646cc49b99"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S008-IMG-014.png",
+      "basename": "PD-2026-033-S008-IMG-014.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f75995e6e8e9fdb8c33692d31c5e3ab20c084033d0cb3eef8464d2072f8f3609",
+      "phash": "c4970ed9f332388b"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S009-IMG-015.png",
+      "basename": "PD-2026-033-S009-IMG-015.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "5115425d49be5bec4e6fdb93d488cefb86267fb2b7b080d4fa3324be02ab63c4",
+      "phash": "feff01dd09013f01"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S010-IMG-016.png",
+      "basename": "PD-2026-033-S010-IMG-016.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e9b647b6b934176a3fdd139f46599ebc6ea46e0712284f850121e11dd733f45a",
+      "phash": "c434329d3f3ac963"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S010-IMG-017.png",
+      "basename": "PD-2026-033-S010-IMG-017.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "a5e40049e05a6739e53b766b97151ac3daf45a631976aa64e5f74b48dae44ce1",
+      "phash": "f8fe60e898f070f0"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S011-IMG-018.png",
+      "basename": "PD-2026-033-S011-IMG-018.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "7e4c53d909cff93e1d0115b96cc2364d55fc01f0301144436d7d9cd6ea715da1",
+      "phash": "cc33586333da5b26"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S011-IMG-019.png",
+      "basename": "PD-2026-033-S011-IMG-019.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e799cd7a84394917ae7e9e342178187b05da834f2f4cfb4ef17689a8a14f7053",
+      "phash": "d2346cdb96b43919"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S012-IMG-020.png",
+      "basename": "PD-2026-033-S012-IMG-020.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1938972c9d4bc07ffd76df1aee5c4b2af7ee69b33735bd5ebe11c79d6de91ffb",
+      "phash": "c13e3ec381bcdcb0"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S013-IMG-021.png",
+      "basename": "PD-2026-033-S013-IMG-021.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "16b966b4545a0b7f5b47acaef7b30aae5667c02b0a05f25d9dbeab6587ce18dd",
+      "phash": "c98b0babb81cb993"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S014-IMG-022.png",
+      "basename": "PD-2026-033-S014-IMG-022.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "6886493fc2d63ec1cb4fffca9248ef4b9f7f03f59b0641b9dba05e1270f1fa05",
+      "phash": "d8f01f0f27c72313"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S014-IMG-023.png",
+      "basename": "PD-2026-033-S014-IMG-023.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b0614e56e7923eaa84b98fd182710877d70a71b72c31ac3f4f635dfbb236e8f5",
+      "phash": "cccccc3833b31d39"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S015-IMG-024.png",
+      "basename": "PD-2026-033-S015-IMG-024.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "eb74576f504d661245687aaaa347a2d53b64238e88e85adf2ba660342e4e8806",
+      "phash": "d89473b18d6c0f99"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S016-IMG-025.png",
+      "basename": "PD-2026-033-S016-IMG-025.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "6b55f2f3046377b88205229ceeda1bfd5ee5909d277936e3b738919c072ed7ba",
+      "phash": "cc1933632dccdc33"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S017-IMG-026.png",
+      "basename": "PD-2026-033-S017-IMG-026.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "96cce1d5187206e73f7e00a64b98e09eb41a3905c970fd6412f0b510b4d4fe94",
+      "phash": "85d28b5a582d2f67"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S017-IMG-027.png",
+      "basename": "PD-2026-033-S017-IMG-027.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "381216890afc25c40f117968c081b599c02bbc0ca03aa16d3e72c2222b0ebd8b",
+      "phash": "de306c33d7618e19"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S018-IMG-028.png",
+      "basename": "PD-2026-033-S018-IMG-028.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f2802ba4c0179c446bdbcd4f6b2ee61d00cefc3efc206ec6c08451dea1350d1a",
+      "phash": "c1c7669e3a24cc7c"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S018-IMG-029.png",
+      "basename": "PD-2026-033-S018-IMG-029.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b053f8a1903aba8f134c53d0db85c3b7f3e0cc38ec55807027a7a3b8a58c9aaa",
+      "phash": "c926729d8e4371c7"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S019-IMG-030.png",
+      "basename": "PD-2026-033-S019-IMG-030.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "a4276d07a8622b3b93e2fbc0ae83468cc7e47427c568ada8187fd0bc68c01ac8",
+      "phash": "c1983c69c79c3e63"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S019-IMG-031.png",
+      "basename": "PD-2026-033-S019-IMG-031.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "ca175942f68bcc0cd6cc4972be453fda56377bbd9730fa3b9261592bc601ad3c",
+      "phash": "e0ee0e0ff7f01d10"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S020-IMG-032.png",
+      "basename": "PD-2026-033-S020-IMG-032.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "442321a6e730ec4b913e2d04e72899795192944da5585638c1992266532381b9",
+      "phash": "8a9d89f2657a6646"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S020-IMG-033.png",
+      "basename": "PD-2026-033-S020-IMG-033.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1bb9fa1e1dc8776794df92ea1dcddf91266181869a2519f5c46670a81bdd06d6",
+      "phash": "93c3446e5c2cbbc5"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S021-IMG-034.png",
+      "basename": "PD-2026-033-S021-IMG-034.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "ec8caeff07ee3bc55a3d26165a15da74da01b623a91d0e149d6106b7530e6075",
+      "phash": "ff0005ffc40207ef"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S021-IMG-035.png",
+      "basename": "PD-2026-033-S021-IMG-035.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "235ca3ab86a39c1fd3046bbf58719d021132a4886d4969533bf42954a8c4ae7f",
+      "phash": "c22d167b05d71dcc"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S022-IMG-036.png",
+      "basename": "PD-2026-033-S022-IMG-036.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "0b6b12e9925f863b7bf0a209bd7e1fdc65a4eae465bc0cadd924c15000f7f24d",
+      "phash": "e1c19e1e18b17373"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S022-IMG-037.png",
+      "basename": "PD-2026-033-S022-IMG-037.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "2b12497913978a908de37674b942018ca66247481423b9751b0f1601a14814af",
+      "phash": "95936d6a60583d6d"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S023-IMG-038.png",
+      "basename": "PD-2026-033-S023-IMG-038.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e36565865704f1528de6589a8c7d35c998423ef66f1d0678ec36ebe24ea02c39",
+      "phash": "d4ff2b02681d32bc"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S023-IMG-039.png",
+      "basename": "PD-2026-033-S023-IMG-039.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b1d1b22e37ff61446d8aad4c292dae9d919417677fa2ca297885e7704ba50dc7",
+      "phash": "9963492cb61e4db6"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S024-IMG-040.png",
+      "basename": "PD-2026-033-S024-IMG-040.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "010772c2716c7910863a9ac91dbb792f59c920fb96851c9981bab4855c144c52",
+      "phash": "d091959770786a7e"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S024-IMG-041.png",
+      "basename": "PD-2026-033-S024-IMG-041.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "4f16467dffde830d1b06d42c8aa2e0d7131df1fe61f06394802fb42a0c0e872e",
+      "phash": "a9ab6a52565515b5"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S025-IMG-042.png",
+      "basename": "PD-2026-033-S025-IMG-042.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "a37f442bc72c044b117c95236733047c759bdc129230ac7320cd0ca97fb66fb0",
+      "phash": "f1c30ffe063e3c20"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S025-IMG-043.png",
+      "basename": "PD-2026-033-S025-IMG-043.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "d86da014362bd96fa240d5f6dbcd5fd8f39dd299857cfa1be7f3e81fc222692b",
+      "phash": "e1631e882556dd8f"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S026-IMG-044.png",
+      "basename": "PD-2026-033-S026-IMG-044.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "0e8137c543253131263caa41063f901ff1b3f41abce05e307c34d46eb8662f3b",
+      "phash": "c5e773309c4e2699"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S026-IMG-045.png",
+      "basename": "PD-2026-033-S026-IMG-045.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e804c73d31313a77c8821948a05539ee44faa9c35c2c11d7bc084f4699e207dd",
+      "phash": "dcf8efdf338e0000"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S027-IMG-046.png",
+      "basename": "PD-2026-033-S027-IMG-046.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "c48747c933f86939d764ac8710a721cf17f3349248098bb573b5166e83b12f3f",
+      "phash": "d2c22d3f9ef0c01b"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S028-IMG-047.png",
+      "basename": "PD-2026-033-S028-IMG-047.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1b759581d3eaa65e618e7c46e5c17696742abe63df3d3a9c8b779953e5d09f4f",
+      "phash": "96aba96b696a6868"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S029-IMG-048.png",
+      "basename": "PD-2026-033-S029-IMG-048.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "3753307796cac5a1543e9f24d7cf7ae87bd67c3ad5806579732548428e0c4a22",
+      "phash": "9797b4969470c987"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S030-IMG-049.png",
+      "basename": "PD-2026-033-S030-IMG-049.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "db3ae4965932db742b9766fa1e9d48525b1680db5158cf55b25e03804487b797",
+      "phash": "91b15d6f25d43689"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S031-IMG-050.png",
+      "basename": "PD-2026-033-S031-IMG-050.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "de42dfe9401ea7a81756dec3fe75a961a00465178c80a3b2bf06c627dbb3fead",
+      "phash": "b5b54abb64892b45"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S032-IMG-051.png",
+      "basename": "PD-2026-033-S032-IMG-051.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1125ad03175f18ed623a7c115112990bb39f6e1f7508d54f11487117790cb0d5",
+      "phash": "868e32316df7594c"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S032-IMG-052.png",
+      "basename": "PD-2026-033-S032-IMG-052.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "8934f6bfa17dcd27fdb74d798b431071c454bc1d2f2c684385a782d2007f6550",
+      "phash": "956c66926d15936d"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S032-IMG-053.png",
+      "basename": "PD-2026-033-S032-IMG-053.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "edb5745b0c0dfb7d32b9852dd0ab33de4b707920de9264db650e9cf1603ec593",
+      "phash": "8dd6783c37336a81"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S033-IMG-054.png",
+      "basename": "PD-2026-033-S033-IMG-054.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "7953ce2cd6eff1758d3e3ca8a9626ad2172ba6748f69d4d3ddb42a0a547d6fc0",
+      "phash": "c03e3ee0e48f1cb9"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S033-IMG-055.png",
+      "basename": "PD-2026-033-S033-IMG-055.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "057d230d7896f187d66b322fee71bec96ddb4b08d02c4fef02f0833b9ba91d8c",
+      "phash": "c978319b648f19e5"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S033-IMG-056.png",
+      "basename": "PD-2026-033-S033-IMG-056.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "888e4eff3216ab9c8b082f104c0e8dd1feb4062712f6683c9108f4b0be07621b",
+      "phash": "917a423aa4f9768d"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S034-IMG-057.png",
+      "basename": "PD-2026-033-S034-IMG-057.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "06fffc989eaeea854cfe56a6d7be1206e8b2738c3c87401ab4f7a77ca691e59b",
+      "phash": "992d671a5a9a699c"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S034-IMG-058.png",
+      "basename": "PD-2026-033-S034-IMG-058.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "9a77d9d353034a14cbbfd2d9ebfde67dd8fa9ce1f747579ce7d372af168f26d7",
+      "phash": "f53a0b43fcb54a18"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S035-IMG-059.png",
+      "basename": "PD-2026-033-S035-IMG-059.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "5984cf49328e3e2c90e4b33d9ebc021760b789634def13e78b9c001214d6ca17",
+      "phash": "c0f8603f9e9c36c3"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S035-IMG-060.png",
+      "basename": "PD-2026-033-S035-IMG-060.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "97068df6f6a69d5b6514908e4f2919673ad789ba0bb059b8fcfc04aaca30f09d",
+      "phash": "c42e6fc4943a3ed1"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S036-IMG-061.png",
+      "basename": "PD-2026-033-S036-IMG-061.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "9c6486f97931051cb6a7076eba39b3a1f1e5e4ee8727fa147e7d166a7ae399d1",
+      "phash": "826e1d95688c77dc"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S036-IMG-062.png",
+      "basename": "PD-2026-033-S036-IMG-062.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "caca743c7849ceafec35c1204c11fa3226399068948e4272d616635257649016",
+      "phash": "c6fd1e1f870328d2"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S037-IMG-063.png",
+      "basename": "PD-2026-033-S037-IMG-063.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "5addb865e8c0d8c2f43f3d0d8da69e1d6cd7b6235c2374210cb515d36f60cd63",
+      "phash": "b0940ef017b95b8f"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S037-IMG-064.png",
+      "basename": "PD-2026-033-S037-IMG-064.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "d5dac29a93fa4b9071f7da045fb631e25e6611b2c96ad8a195b6716440ca460d",
+      "phash": "939b696424665b9b"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S038-IMG-065.png",
+      "basename": "PD-2026-033-S038-IMG-065.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b32e46d8bb1815381465a74dc788de47bf8dd6e74e44959c352aeb34a24aca7d",
+      "phash": "956b6e7034932759"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S039-IMG-066.png",
+      "basename": "PD-2026-033-S039-IMG-066.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "5f5c65e5f3abfa909e0ee399ef9251c22fb7f948ac3950b6f7e0d1bd778269c0",
+      "phash": "96b66969496d9991"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S039-IMG-067.png",
+      "basename": "PD-2026-033-S039-IMG-067.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "32fb930ac8c7b8ed916297e060506ff863a38e6ed360c3a591e98474d63065be",
+      "phash": "cd3333ce803c73c6"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/PD-2026-033-S040-IMG-068.png",
+      "basename": "PD-2026-033-S040-IMG-068.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e71978cf6d290ad57f1bdf811261d560e2f3962f499e6a74ccd7af8afe4c8df4",
+      "phash": "cc339c2637c933cc"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/QC_DETAIL_tyler_selected.jpg",
+      "basename": "QC_DETAIL_tyler_selected.jpg",
+      "kind": "generated_still",
+      "ext": "jpg",
+      "content_tag": null,
+      "sha256": "34cef0b200e32ccc40100bbbd103f6941a0f9fbe7e2c40c4e230ba9a9293e59e",
+      "phash": "80a34f4f3be0b98d"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S001-IMG-001.png",
+      "basename": "PD-2026-033-S001-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "aa5854d77bd901d5edccd46ddf5d9250a737a1eb87e057e31900b07082caa33c",
+      "phash": "969531390ec63b79"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S002-IMG-002.png",
+      "basename": "PD-2026-033-S002-IMG-002.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "004fe71e088e68ed86dd4e66ecd67c9d2207779428cf0ed8d0c6b484ff1e5c74",
+      "phash": "b5a51d3c4a63c36a"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S003-IMG-003.png",
+      "basename": "PD-2026-033-S003-IMG-003.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "bd2e043621f612b1aadf75fbf7274950035a0b8099a69cbb4ba8b187d855ca98",
+      "phash": "fddb8000337f066e"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S003-IMG-004.png",
+      "basename": "PD-2026-033-S003-IMG-004.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "8f935f921c4d43999d866980c5f0aeac772267365b3b061acc83e52ab1adb277",
+      "phash": "9d84737372357168"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S004-IMG-005.png",
+      "basename": "PD-2026-033-S004-IMG-005.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b778143e3266a2c8bb40cb9c9b7256d8456f9f93edd4e72dc5e114d718e4558a",
+      "phash": "adaf2fdb32b54004"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S004-IMG-006.png",
+      "basename": "PD-2026-033-S004-IMG-006.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "4c509f0b8339f4854f546ff0c48da2909f78ebf3453682c3fbe763bc5324a9d3",
+      "phash": "e7ff3e201ef01205"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S005-IMG-007.png",
+      "basename": "PD-2026-033-S005-IMG-007.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "95ae3c221eff8837e733b9cb09340ff8827f1f8ba0fb0eafeb5824ac7be1548b",
+      "phash": "c0c71f1938f1e0ee"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S005-IMG-008.png",
+      "basename": "PD-2026-033-S005-IMG-008.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "4e53698440a91e6125a2446d979cd5c4f67238a08f2e0fe71b1ef99426d9ce19",
+      "phash": "c6c731393cd24cb6"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S006-IMG-009.png",
+      "basename": "PD-2026-033-S006-IMG-009.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f964a3ff0cae52f2d11f8108604a34a0bc17d53ccd523a50a58498889d1fee9f",
+      "phash": "d0f30fe8629d628e"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S006-IMG-010.png",
+      "basename": "PD-2026-033-S006-IMG-010.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e831b7e5ca8eacfa1070dc3c7a62310c8c29fab59849291e1f70781c504b0a65",
+      "phash": "9a636196da9a3372"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S007-IMG-011.png",
+      "basename": "PD-2026-033-S007-IMG-011.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "fe71cea0a739ae3c85aa365c15056f18dfc7120145173dbff124f03f1c92cdec",
+      "phash": "96796c976d06a958"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S007-IMG-012.png",
+      "basename": "PD-2026-033-S007-IMG-012.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "9f23550162b3d7aa1cee331357d5eeaf186f43d3dfa8d8076c6348d9e1963d75",
+      "phash": "84943c6b4bdd3437"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S008-IMG-013.png",
+      "basename": "PD-2026-033-S008-IMG-013.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "ccbc1fe9b2719ed0cb025c483ebd27bc97c31a92ce01997df373350eca099f43",
+      "phash": "c3d366646cc49b99"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S008-IMG-014.png",
+      "basename": "PD-2026-033-S008-IMG-014.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "402a96c404eaabe444a46d8d4ccb99858444d6da6874f7bc19c67d5cf043c6c2",
+      "phash": "c4970ed9f332388b"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S009-IMG-015.png",
+      "basename": "PD-2026-033-S009-IMG-015.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "285355f0167368b6c35f1c09739e26a6462bca6f7906a94fde64b4a6f14b23fe",
+      "phash": "feff01dd09013f01"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S010-IMG-016.png",
+      "basename": "PD-2026-033-S010-IMG-016.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "adc387e1c05c9a465e7a6e51bd5fc84b1ca806b3c57b0c21da74d4188f0fe520",
+      "phash": "c434329d3f3ac963"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S010-IMG-017.png",
+      "basename": "PD-2026-033-S010-IMG-017.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "46437684f83733a318de4f830aef2cc53981f3740a5fee8f45ce403c0606a785",
+      "phash": "f8fe60e898f070f0"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S011-IMG-018.png",
+      "basename": "PD-2026-033-S011-IMG-018.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "c2ac1af636166f1322803657b688f1698f090b8d3a5dcf98337d43ff7f0a1292",
+      "phash": "cc33586333da5b26"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S011-IMG-019.png",
+      "basename": "PD-2026-033-S011-IMG-019.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "a06d134c895511698e484f0fa59db7d3e19c679e0889109c07bfc5c4907fff1a",
+      "phash": "d2346cdb96b43919"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S012-IMG-020.png",
+      "basename": "PD-2026-033-S012-IMG-020.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "31cbc2062a00e0e4b3540de2a21c198961c8fdfe1718cd97034ee2be4dfaff42",
+      "phash": "c13e3ec381bcdcb0"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S013-IMG-021.png",
+      "basename": "PD-2026-033-S013-IMG-021.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "131daffdb818aa41a0674763c6f62db17929b2eb102ea71203bef6e391faa648",
+      "phash": "c5cd0af87a27853c"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S014-IMG-022.png",
+      "basename": "PD-2026-033-S014-IMG-022.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "26be6346fbfa029befaca6fdab3d7801c9854bb22188c52213669e94e1a6779c",
+      "phash": "d8f01f0f27c72313"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S014-IMG-023.png",
+      "basename": "PD-2026-033-S014-IMG-023.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "fedc8ee80e961262be485259d80649e15bb788fd9454d5c158148909bea529f3",
+      "phash": "cccccc3833b31d39"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S015-IMG-024.png",
+      "basename": "PD-2026-033-S015-IMG-024.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b15f882544508268ce5be30392c350c7a685d6892c902c43dfd149e466be9b25",
+      "phash": "d89473b18d6c0f99"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S016-IMG-025.png",
+      "basename": "PD-2026-033-S016-IMG-025.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "efef6fe20407c2aa777040d4f4a90c5737dbf9494a8b313f635f71d5cc2630ac",
+      "phash": "cc1933632dccdc33"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S017-IMG-026.png",
+      "basename": "PD-2026-033-S017-IMG-026.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "2806c632b8dcdd2dd8a4d869f13ed58bff7e24b34178c39194a8c7dc50f592a5",
+      "phash": "85d28b5a582d2f67"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S017-IMG-027.png",
+      "basename": "PD-2026-033-S017-IMG-027.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e8d60cd1d10633acd3b84cabaf3bed210d0c1fb63bfbb86dccc512d066f28b41",
+      "phash": "de306c33d7618e19"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S018-IMG-028.png",
+      "basename": "PD-2026-033-S018-IMG-028.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "802a94c2585fb205503248b79291bfa84fb329ec282d42f61131a81b8352c192",
+      "phash": "c1c7669e3a24cc7c"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S018-IMG-029.png",
+      "basename": "PD-2026-033-S018-IMG-029.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "8bdc3b37cf9d70167ba6698125cad130e23891b4728489e0921ff4768e97c7ee",
+      "phash": "c926729d8e4371c7"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S019-IMG-030.png",
+      "basename": "PD-2026-033-S019-IMG-030.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "541a1305594a7d4040c7eed47d9ed521966b775f573958e8445bc87b026df737",
+      "phash": "c1983c69c79c3e63"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S019-IMG-031.png",
+      "basename": "PD-2026-033-S019-IMG-031.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "460a110df42492f7a2d6e33dff56e935c9b10998ff0877b36cf5c0a3037d22c3",
+      "phash": "e0ee0e0ff7f01d10"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S020-IMG-032.png",
+      "basename": "PD-2026-033-S020-IMG-032.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "9961c1293d5f82d63295b4c7b25a59b215e7ef5f3f4f1d7ee1f60be11de01dd9",
+      "phash": "8a9d89f2657a6646"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S020-IMG-033.png",
+      "basename": "PD-2026-033-S020-IMG-033.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e950193d7c0ca8a9763fd73bcddb05a1628c79c989a7ae5df6a01b50313a9ed5",
+      "phash": "93c3446e5c2cbbc5"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S021-IMG-034.png",
+      "basename": "PD-2026-033-S021-IMG-034.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f9d7b4f3ba4a7d4a863180c6821c45b2965e1e0b3a8044ff0c7249cb8873e9d1",
+      "phash": "ff0005ffc40207ef"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S021-IMG-035.png",
+      "basename": "PD-2026-033-S021-IMG-035.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f0545feba1bcdfa2901df1b9c7063caa532bacd72e2465e22056922c005d4361",
+      "phash": "c22d167b0dc71dcc"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S022-IMG-036.png",
+      "basename": "PD-2026-033-S022-IMG-036.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "cd66a92e63c5886e7c628607b9b18e1917038ab0a39c4de74c5ebf408a71d3a3",
+      "phash": "e1c19e1e18b17373"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S022-IMG-037.png",
+      "basename": "PD-2026-033-S022-IMG-037.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "89d83a7d98e768ab104dc5b09eabba544aa6f30f2d9a2e462f3319c2ddb17477",
+      "phash": "95936d6a60583d6d"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S023-IMG-038.png",
+      "basename": "PD-2026-033-S023-IMG-038.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "3abd4cc9e60f7d649ca264fc0537c07cfec08c3ea47b3af9d7de1e195ac67619",
+      "phash": "d4ff2b02681d32bc"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S023-IMG-039.png",
+      "basename": "PD-2026-033-S023-IMG-039.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "28d6861c447f18f0db8d4ab5be356df4498883e7fef3f90105c0bf48a23cfebe",
+      "phash": "9963492cb61e4db6"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S024-IMG-040.png",
+      "basename": "PD-2026-033-S024-IMG-040.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f150c02f7060020c602217f35c7e2410066a374f46e8b87deeff629a65924f96",
+      "phash": "d091959770786a7e"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S024-IMG-041.png",
+      "basename": "PD-2026-033-S024-IMG-041.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "0fa540971307a2c616e0e56e012cd40bbf55b592c3bc1ccc03c33878e4d0abf2",
+      "phash": "a9ab6a52565535a5"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S025-IMG-042.png",
+      "basename": "PD-2026-033-S025-IMG-042.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "c924d2607cccaac22ac290d305c947eb7425d7ffa5e0ebafac90f1d7fa32bab6",
+      "phash": "f1c30ffe063e3c20"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S025-IMG-043.png",
+      "basename": "PD-2026-033-S025-IMG-043.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "a053d435e27d30890ada07bc18c8413a79bb1aca649c040e0b775b4c3419b61a",
+      "phash": "e1631e882556dd8f"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S026-IMG-044.png",
+      "basename": "PD-2026-033-S026-IMG-044.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1323b3a0e9aa0c0662959f13e63df2cf4fbed651687ab59ce277dabdc86bcc97",
+      "phash": "c5e773309c4e2699"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S026-IMG-045.png",
+      "basename": "PD-2026-033-S026-IMG-045.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "2ea5a6cdb819d5464b65d2116e28304ef55aa3a1edf99171b2dec45a892fea02",
+      "phash": "dcf8efdf338e0000"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S027-IMG-046.png",
+      "basename": "PD-2026-033-S027-IMG-046.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "180c3c9fd72f8e666ea8401648c0e3a19f2e3a311ea68aa15f40637ca0b110af",
+      "phash": "d2c22d3f9ef0c01b"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S028-IMG-047.png",
+      "basename": "PD-2026-033-S028-IMG-047.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b04ddd81f85296f03cf4142bd0627c2357bbf626b43d742ff75ecb993f31f968",
+      "phash": "96aba96b696a6868"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S029-IMG-048.png",
+      "basename": "PD-2026-033-S029-IMG-048.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "76e045fbf92b17f10ffd3ecb0cc89ab7bb28965dce6a68e8bbb8ee6ba18a69e8",
+      "phash": "9797b4969470c987"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S030-IMG-049.png",
+      "basename": "PD-2026-033-S030-IMG-049.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "17be1efcad64225c91cff69c414ddf3155d47463ec2bce91eadb9d0d4746435c",
+      "phash": "91b15d6f25d43689"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S031-IMG-050.png",
+      "basename": "PD-2026-033-S031-IMG-050.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "a7bb6818c8855f58cefc806be1d4bda7864ea1abaf78834d6e0803bc2f03b22a",
+      "phash": "b5b54abb64892b45"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S032-IMG-051.png",
+      "basename": "PD-2026-033-S032-IMG-051.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "66758484c1b63ddb11575d3ba2b45a0ba44c06d1be5e553d54106c365ddc6440",
+      "phash": "868e32316df7594c"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S032-IMG-052.png",
+      "basename": "PD-2026-033-S032-IMG-052.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b702d7716577417dc2d282b58739d5ef64c8e51a181283c1a6d9fef5fb39c509",
+      "phash": "956c66926d15936d"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S032-IMG-053.png",
+      "basename": "PD-2026-033-S032-IMG-053.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "0eeebeaedf4813fa03b56b204dd8d7c921f48d3f1b6c945925920726d091eafd",
+      "phash": "8dd6783c37236b81"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S033-IMG-054.png",
+      "basename": "PD-2026-033-S033-IMG-054.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "46890f092fb63d61089cbc3512b0176dde42924c17888cdcabc12b214e61f894",
+      "phash": "c03e3ee0e48f1cb9"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S033-IMG-055.png",
+      "basename": "PD-2026-033-S033-IMG-055.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "54364dc97d7ccec660a4f449cfbf561b863cb69db1cca83a3f2525b2d63d0215",
+      "phash": "c978319b648f19e5"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S033-IMG-056.png",
+      "basename": "PD-2026-033-S033-IMG-056.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "a96f5cea8a914029d9f7397491d217632ad6fc66e474015697d45f6b0b09888a",
+      "phash": "917a423aa4f9768d"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S034-IMG-057.png",
+      "basename": "PD-2026-033-S034-IMG-057.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "d6590cbebe4b8731eb24528e6dc36d8ffee752454664ac52eb5bc780c056a98c",
+      "phash": "992d671a5a9a699c"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S034-IMG-058.png",
+      "basename": "PD-2026-033-S034-IMG-058.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "6f60fc6282ff2339787afd603ee99c406f8af0a08887d580bf636cec8e553a87",
+      "phash": "f53a0b43fcb54a18"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S035-IMG-059.png",
+      "basename": "PD-2026-033-S035-IMG-059.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1ed2244062bdb19ce482e8be15da2f3d5a37956f5a5bf1a9b5033ee4937b93b7",
+      "phash": "c0f0603f9e9c3ec3"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S035-IMG-060.png",
+      "basename": "PD-2026-033-S035-IMG-060.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "cdc446884eb70d999771bc3c4c28be9059ee1276f3915fe742e663d2fe17f54e",
+      "phash": "c42e6fc4943a3ed1"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S036-IMG-061.png",
+      "basename": "PD-2026-033-S036-IMG-061.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "183b4b231772e8daeb95bcc8f4b879f0933ecede6283029468b9b9d8bd9f9a04",
+      "phash": "826e1d95688c77dc"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S036-IMG-062.png",
+      "basename": "PD-2026-033-S036-IMG-062.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "25129bc8c6efbf29c991c9a35ec87da2ab9df913b873364279b525509d1aa95d",
+      "phash": "c7fd1e0f870328d2"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S037-IMG-063.png",
+      "basename": "PD-2026-033-S037-IMG-063.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1daa5e2a3f7b2a592f42f04ef65fdd9575a7a39a536e1b275a0b235b3e4fec9e",
+      "phash": "b0940ef017b95b8f"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S037-IMG-064.png",
+      "basename": "PD-2026-033-S037-IMG-064.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "09abe0764b0c2fa73d5fa7b07539ee3b816b1af76726a6853902e0b518eee05b",
+      "phash": "939b696424665b9b"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S038-IMG-065.png",
+      "basename": "PD-2026-033-S038-IMG-065.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "290874f60518ea2704d6fd30d61cfdf84ec3e7ae5d342e3c666391c61e028b22",
+      "phash": "956b6e7034932759"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S039-IMG-066.png",
+      "basename": "PD-2026-033-S039-IMG-066.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f795f74c241587a57e08eed13beacf57f3907ffca5e43efeb78630afb94431b8",
+      "phash": "96b66969496d9991"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S039-IMG-067.png",
+      "basename": "PD-2026-033-S039-IMG-067.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "ad89499b2d59448e43de96343f6280fbdf06de6e0fa4969dc3815cbb96206fec",
+      "phash": "cd3333ce803c73c6"
+    },
+    {
+      "episode": "PD-2026-033-tyler",
+      "path": "remotion/public/tyler/img/raw_model_output/PD-2026-033-S040-IMG-068.png",
+      "basename": "PD-2026-033-S040-IMG-068.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "754cc53d467fd5d07254a5b01ea86ecc5d2d8d272004364091d5144aca2caaf5",
+      "phash": "cc339c2637c933cc"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0445__office_interior_dark.mp4",
+      "basename": "AF-BG-0445__office_interior_dark.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "office_interior_dark",
+      "sha256": "4a2e261d1853fd2d37dc5571df1722377a6bcb2bcacdcfa82d56b6f832598882",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0446__office_interior_dark.mp4",
+      "basename": "AF-BG-0446__office_interior_dark.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "office_interior_dark",
+      "sha256": "abfbfe662327bddcadcf0dcc6e2507e396dfcbc49f231d79d80964d95692dc5a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0447__office_interior_dark.mp4",
+      "basename": "AF-BG-0447__office_interior_dark.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "office_interior_dark",
+      "sha256": "81a1ecd41858abfbd5fade8b58ca3b3e207eb98a619d2dc66c9f81f890681d10",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0448__office_interior_dark.mp4",
+      "basename": "AF-BG-0448__office_interior_dark.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "office_interior_dark",
+      "sha256": "77a7e90e376d7cd4af7fc1dd652277fd923e503dea32cd1f6e1a5141dabbae55",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0449__office_interior_dark.mp4",
+      "basename": "AF-BG-0449__office_interior_dark.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "office_interior_dark",
+      "sha256": "308df51006a2b21eb6dea824db2a2a34d800e892536c8c117531f1c0b2bf0fea",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0450__office_interior_dark.mp4",
+      "basename": "AF-BG-0450__office_interior_dark.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "office_interior_dark",
+      "sha256": "98b221c87ee1888b9e7f2b6547d6b09d0f094cc9f3ddea950d2fd7b757d25b5d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0671__government_building_exterior.mp4",
+      "basename": "AF-BG-0671__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "7aa58efa13f5349a9794e25f77b1950ec3b3a93228c3363654e0d99dfccde8ec",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0672__government_building_exterior.mp4",
+      "basename": "AF-BG-0672__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "285b78fe2e01334af5ebf04941c16d08303d9868c516f876026899c03b2f7c13",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0674__government_building_exterior.mp4",
+      "basename": "AF-BG-0674__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "0606a912f9ea4c5b40572379eeacdea469d41099acb8a304930a19038f21adf3",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0675__government_building_exterior.mp4",
+      "basename": "AF-BG-0675__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "3aeda4377395c341925fe7397907a4b000f34727c2db35e98a36a2b1049dd6ad",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0676__government_building_exterior.mp4",
+      "basename": "AF-BG-0676__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "840f20cacfaef72118f4bca452b89e3e66f90783c251865aea07b0b9ea71d5f6",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-0677__government_building_exterior.mp4",
+      "basename": "AF-BG-0677__government_building_exterior.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "government_building_exterior",
+      "sha256": "22598959d3d5f393ba3cf7877467845fd0f50f78d4f906dc4e820e8f726d58d9",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-11391__airport_terminal_empty.mp4",
+      "basename": "AF-BG-11391__airport_terminal_empty.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_terminal_empty",
+      "sha256": "5cabd21d6ee447e6c73489ef234fe51b9efdb4770221a04773c85eae0e54b4c7",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-11392__airport_terminal_empty.mp4",
+      "basename": "AF-BG-11392__airport_terminal_empty.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_terminal_empty",
+      "sha256": "b38bab7ba346195a44021c2daf0c127604ee29fc4e822fa4a6fc967f4fba73a2",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-11393__airport_terminal_empty.mp4",
+      "basename": "AF-BG-11393__airport_terminal_empty.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_terminal_empty",
+      "sha256": "7813e1a80a08eec4b1934251ceeb625d551eb26626959be082f9e0fa26b23f5e",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-11394__airport_terminal_empty.mp4",
+      "basename": "AF-BG-11394__airport_terminal_empty.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_terminal_empty",
+      "sha256": "4e1fdab17188b3e6c8c76184d6b315ba96f84e31890b00c4f436dc646a2ddaf2",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-11395__airport_terminal_empty.mp4",
+      "basename": "AF-BG-11395__airport_terminal_empty.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_terminal_empty",
+      "sha256": "7111971e00bb4b4296951eca3e6a003e92fd0402d2a98b3b1b79ae2f2cfb7d45",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-11396__airport_terminal_empty.mp4",
+      "basename": "AF-BG-11396__airport_terminal_empty.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_terminal_empty",
+      "sha256": "02b06e4f645545d6a9516f09fc3166bd0db527d731cedd110eb021fb606c04b2",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-11397__airport_terminal_empty.mp4",
+      "basename": "AF-BG-11397__airport_terminal_empty.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_terminal_empty",
+      "sha256": "6cb74dd8a43e027d2f59591e922f6b915c7fbc79917752fecb31cdb303e40c6d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-15794__security_monitors_wall.mp4",
+      "basename": "AF-BG-15794__security_monitors_wall.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "security_monitors_wall",
+      "sha256": "c62888fd1d482533bacc77ed9ce570ae2d83b4aebd250fa566345b149c5968fd",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-15795__security_monitors_wall.mp4",
+      "basename": "AF-BG-15795__security_monitors_wall.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "security_monitors_wall",
+      "sha256": "eb59978212e77fbb8590cc5e016cb3ae00244e1381de3c68b1c68088af7475a4",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-15796__security_monitors_wall.mp4",
+      "basename": "AF-BG-15796__security_monitors_wall.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "security_monitors_wall",
+      "sha256": "ec3c9f18190e9e821d1e1c7d7d20b89c1b26756a14ecc15331c7ca97c8008be6",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-1589__highway_night_long_exposure.mp4",
+      "basename": "AF-BG-1589__highway_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_night_long_exposure",
+      "sha256": "b8550c718e46e5b7fa11b6cdf1aa16bd238331d190f516d8cb4e505712cdf04e",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-1590__highway_night_long_exposure.mp4",
+      "basename": "AF-BG-1590__highway_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_night_long_exposure",
+      "sha256": "d2b1e8665d835371a1059510c7843033488d6f8a02acb0fb53db981f2d1a6f6d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-1591__highway_night_long_exposure.mp4",
+      "basename": "AF-BG-1591__highway_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_night_long_exposure",
+      "sha256": "35bd26a20f2c43b8c3ca67e125a047df5b71654ac18e09279a4ae11d2cfc740c",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-1592__highway_night_long_exposure.mp4",
+      "basename": "AF-BG-1592__highway_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_night_long_exposure",
+      "sha256": "675a19c06423e11c6c1b6c5a90e8b850a20db1bb835a031b1febc22837fa1770",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-1593__highway_night_long_exposure.mp4",
+      "basename": "AF-BG-1593__highway_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_night_long_exposure",
+      "sha256": "68e5d534e70ff76ea1814d8dcae8e93451ec5ca8bdc5f95875bbc927802c1622",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-1595__highway_night_long_exposure.mp4",
+      "basename": "AF-BG-1595__highway_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_night_long_exposure",
+      "sha256": "8d519c13213c8af4d876c03dca732ff72715617ff4d6d5cdab1e1d19d1b0bf02",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-1596__highway_night_long_exposure.mp4",
+      "basename": "AF-BG-1596__highway_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_night_long_exposure",
+      "sha256": "fd27848bb78bdddb360a6b6cde10a3cb42466f82bc85294f9592353afd0ccd6d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-16693__money_cash_counting.mp4",
+      "basename": "AF-BG-16693__money_cash_counting.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "money_cash_counting",
+      "sha256": "d68012f0d6d80d1451e19c2d9bdbc496a031696ce7488a129da3589d12cb259f",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-16694__money_cash_counting.mp4",
+      "basename": "AF-BG-16694__money_cash_counting.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "money_cash_counting",
+      "sha256": "86972528d6c70aa0ac4e4967491e70b23098823f56fb6441d8e886ab3fe28f42",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-18395__empty_office_cubicles.mp4",
+      "basename": "AF-BG-18395__empty_office_cubicles.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "empty_office_cubicles",
+      "sha256": "f76580d4b750207856cb54baee9ce613163fc506ed9cccc618b30c036298ea4e",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-18396__empty_office_cubicles.mp4",
+      "basename": "AF-BG-18396__empty_office_cubicles.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "empty_office_cubicles",
+      "sha256": "5ddafe4c3d5ea9c8111b49ff62b159ca9a56fc9907d544ab5b58b6a337f4a845",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-18469__cash_stacks_money.mp4",
+      "basename": "AF-BG-18469__cash_stacks_money.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "cash_stacks_money",
+      "sha256": "1499eaa661673f4b24b9465c2ac71e0d4bf8654d83a1e80888a8e26a09f5d963",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-18470__cash_stacks_money.mp4",
+      "basename": "AF-BG-18470__cash_stacks_money.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "cash_stacks_money",
+      "sha256": "cf7adcb3f2c79cff245c094aa409d76a51dbdac4085741634c063c50f47b9359",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-18471__cash_stacks_money.mp4",
+      "basename": "AF-BG-18471__cash_stacks_money.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "cash_stacks_money",
+      "sha256": "35f19681105b14864bd9e3c53ca959fc58a1505e0887447861809559389b1bf0",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-23030__federal_building_columns_night.mp4",
+      "basename": "AF-BG-23030__federal_building_columns_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "federal_building_columns_night",
+      "sha256": "aa61183976c7ee4cab9e0816f1ab67952a98e11eaae7f817853afc5f3504bc3e",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-23031__federal_building_columns_night.mp4",
+      "basename": "AF-BG-23031__federal_building_columns_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "federal_building_columns_night",
+      "sha256": "89db07f4ff656af7c547dcdb68ff83483b4cfedd07df151d84a8f2f6e11ce339",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-23032__federal_building_columns_night.mp4",
+      "basename": "AF-BG-23032__federal_building_columns_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "federal_building_columns_night",
+      "sha256": "35e1a0a9e33782da358b89953e39c0296c949331be8de79be0c32b28e30cc5ea",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-23981__money_counting_machine.mp4",
+      "basename": "AF-BG-23981__money_counting_machine.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "money_counting_machine",
+      "sha256": "4ec37680b99d21b59cf7c673fccb01c8a116eefffe2547da4af8616f721d74d6",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-23982__money_counting_machine.mp4",
+      "basename": "AF-BG-23982__money_counting_machine.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "money_counting_machine",
+      "sha256": "fdbc8f6f5b48fc7b721cff1f4d331b812cae5cc0eff03a7e20881202b2d64eee",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-23983__money_counting_machine.mp4",
+      "basename": "AF-BG-23983__money_counting_machine.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "money_counting_machine",
+      "sha256": "a4b987d234501e4b4986dc87b74064925bd062941d2a61a3d1f9d29b75b28409",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28816__stack_of_hundred_dollar_bills.mp4",
+      "basename": "AF-BG-28816__stack_of_hundred_dollar_bills.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stack_of_hundred_dollar_bills",
+      "sha256": "bac34b40527a2b834398ed1f9205e8dd3c363be5c435b6e9fd36793e56ef94ab",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28817__stack_of_hundred_dollar_bills.mp4",
+      "basename": "AF-BG-28817__stack_of_hundred_dollar_bills.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stack_of_hundred_dollar_bills",
+      "sha256": "bf83db151a517206dcb9ab6e1012bec0fb3ad34ea04f600d9537f6e69bbfd85f",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28818__stack_of_hundred_dollar_bills.mp4",
+      "basename": "AF-BG-28818__stack_of_hundred_dollar_bills.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stack_of_hundred_dollar_bills",
+      "sha256": "3d8be04bf51f7c020f19f8e1aaddd9a60d7bd8fd70df4100b3437d899cb2c01a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28819__stack_of_hundred_dollar_bills.mp4",
+      "basename": "AF-BG-28819__stack_of_hundred_dollar_bills.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stack_of_hundred_dollar_bills",
+      "sha256": "5522bb343888d7db7f89313b20efada51671c5804ddf1edd0d1b6086d243eea5",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28820__stack_of_hundred_dollar_bills.mp4",
+      "basename": "AF-BG-28820__stack_of_hundred_dollar_bills.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "stack_of_hundred_dollar_bills",
+      "sha256": "c6a168d92ffef38d6bbba46fa8aa6ca3bda50ad173fe6a17c0a30c0396cf55e3",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28939__open_briefcase_of_cash.mp4",
+      "basename": "AF-BG-28939__open_briefcase_of_cash.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "open_briefcase_of_cash",
+      "sha256": "d3f23eda773629ad825c6ee4ac251b8c44561b150c4efd2c30fa334b8c7946b9",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28940__open_briefcase_of_cash.mp4",
+      "basename": "AF-BG-28940__open_briefcase_of_cash.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "open_briefcase_of_cash",
+      "sha256": "32c92cbd05420e50732eb83942f375aa2aeefd700b7025caace3766c5bb13854",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28941__open_briefcase_of_cash.mp4",
+      "basename": "AF-BG-28941__open_briefcase_of_cash.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "open_briefcase_of_cash",
+      "sha256": "049a3eaf9a520d3ca1d5d3f8cc92514c4e288ac30425522c50edb032278bb464",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28943__open_briefcase_of_cash.mp4",
+      "basename": "AF-BG-28943__open_briefcase_of_cash.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "open_briefcase_of_cash",
+      "sha256": "1ef98930ceb08305f03fcf7d4c0d08a51fc7776c55a572a68c1f3f340b246c48",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-28944__open_briefcase_of_cash.mp4",
+      "basename": "AF-BG-28944__open_briefcase_of_cash.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "open_briefcase_of_cash",
+      "sha256": "fa1c7d375282c7adb2df0dd7eca025b8b42626b55fbc1e698eb19c907ef3f234",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-30050__money_cash_counting.mp4",
+      "basename": "AF-BG-30050__money_cash_counting.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "money_cash_counting",
+      "sha256": "6025cd7e377e372fd227c897b3d394d34315263709d8d7f95c451f233067c61a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-30051__money_cash_counting.mp4",
+      "basename": "AF-BG-30051__money_cash_counting.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "money_cash_counting",
+      "sha256": "a2c999108e6f951bc3b21a63a4eef0dd355226f5646fa00293882d7ab5f49f80",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-30052__money_cash_counting.mp4",
+      "basename": "AF-BG-30052__money_cash_counting.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "money_cash_counting",
+      "sha256": "8a822a31b7951cc6a21857b5671be04350b5e0cb3f24f6e7e97abf817507abcd",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-30053__money_cash_counting.mp4",
+      "basename": "AF-BG-30053__money_cash_counting.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "money_cash_counting",
+      "sha256": "bd974be16acda04903140348006c19306c5b9dfe5355b5634de0cd62070d2b76",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-32572__city_traffic_night_long_exposure.mp4",
+      "basename": "AF-BG-32572__city_traffic_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "city_traffic_night_long_exposure",
+      "sha256": "361ccf68dc4144da3e04039b2d90afd1881e3a2642604f5593e739d7bb00a351",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-32573__city_traffic_night_long_exposure.mp4",
+      "basename": "AF-BG-32573__city_traffic_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "city_traffic_night_long_exposure",
+      "sha256": "4490265cc30e656d46533546a833f3974736be272743a3b77c45c5652f312d59",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-32574__city_traffic_night_long_exposure.mp4",
+      "basename": "AF-BG-32574__city_traffic_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "city_traffic_night_long_exposure",
+      "sha256": "a0bdf32ef5c05a434253bdc220d4d464c1c539b57354345986fcaee0e14d352a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-32575__city_traffic_night_long_exposure.mp4",
+      "basename": "AF-BG-32575__city_traffic_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "city_traffic_night_long_exposure",
+      "sha256": "e5f2ba7f81546e200aa0b750ff42c2cc32bbf8f7242d9434a1087671c0d245db",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-32576__city_traffic_night_long_exposure.mp4",
+      "basename": "AF-BG-32576__city_traffic_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "city_traffic_night_long_exposure",
+      "sha256": "e749d7efae2de245fef3838687d81e4c95e40964b0758062ad3bee50341f656d",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-32577__city_traffic_night_long_exposure.mp4",
+      "basename": "AF-BG-32577__city_traffic_night_long_exposure.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "city_traffic_night_long_exposure",
+      "sha256": "a8008c55c987ae8210041299f60350c6726f8c11c67ec282b65b719d52618e28",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-32617__empty_office_cubicles.mp4",
+      "basename": "AF-BG-32617__empty_office_cubicles.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "empty_office_cubicles",
+      "sha256": "a3953ab0ff6d3c64d33eb35f9e12b660983a80c5b01add3ddc518e2f6506bcb6",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-32618__empty_office_cubicles.mp4",
+      "basename": "AF-BG-32618__empty_office_cubicles.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "empty_office_cubicles",
+      "sha256": "93fc2a0cdad4c09cb0dcd4582e811f9e1c262d5126088b0b9fddc6f144593e6b",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-56922__highway_underpass.mp4",
+      "basename": "AF-BG-56922__highway_underpass.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_underpass",
+      "sha256": "abdeb151657490d99653de074b2f8d7442d1716e7c3f76de448ad5db00bee970",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-56923__highway_underpass.mp4",
+      "basename": "AF-BG-56923__highway_underpass.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_underpass",
+      "sha256": "83dc12668fe62a4648899b310dee886d219b43652ed19a64839017741a135c6a",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-56924__highway_underpass.mp4",
+      "basename": "AF-BG-56924__highway_underpass.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_underpass",
+      "sha256": "7a6d8ee0ad56d10a7e05d990deaea3bb282c2b9b8196a562df287e44de59eac6",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-56925__highway_underpass.mp4",
+      "basename": "AF-BG-56925__highway_underpass.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_underpass",
+      "sha256": "9dd5aa87f4eaa4ab4888dc07225861daac9e20da3e8f5fcc45f0e735217f11ad",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-56926__highway_underpass.mp4",
+      "basename": "AF-BG-56926__highway_underpass.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_underpass",
+      "sha256": "a859f79f3e869c2de70cb5ddf881dcbb18d0c98c59f7ecb195e80d16d454e1ac",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-56928__highway_underpass.mp4",
+      "basename": "AF-BG-56928__highway_underpass.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "highway_underpass",
+      "sha256": "bd75a4a1a512acb7288429a6898cf0d54e3476ad574938803d19e5f0b9b9b925",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-57484__airport_runway_at_night.mp4",
+      "basename": "AF-BG-57484__airport_runway_at_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_runway_at_night",
+      "sha256": "efbc284eb5791b4083e0dcbb67d27bd4d7d0f7340bfb7e8224d2da4679f9f713",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-57486__airport_runway_at_night.mp4",
+      "basename": "AF-BG-57486__airport_runway_at_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_runway_at_night",
+      "sha256": "ef1ece3d290c520dc639eac255c4d21034ec86b43a5b0ef060f340c3b6b2983b",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-57487__airport_runway_at_night.mp4",
+      "basename": "AF-BG-57487__airport_runway_at_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_runway_at_night",
+      "sha256": "66999f5645eeb1a996d1170d394096c81d63ec9035f7b9572b7d83d571caced4",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-57488__airport_runway_at_night.mp4",
+      "basename": "AF-BG-57488__airport_runway_at_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_runway_at_night",
+      "sha256": "9737fc5cc8719a0c8aa22295494ea6a371c3b30e48eb2deb705146f4ba06ae98",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-57490__airport_runway_at_night.mp4",
+      "basename": "AF-BG-57490__airport_runway_at_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_runway_at_night",
+      "sha256": "6bc8f06373e06fcb3956f1f723a8b75e1a35ddb00f1f09d1de34e3a43fd2d4e5",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-57492__airport_runway_at_night.mp4",
+      "basename": "AF-BG-57492__airport_runway_at_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_runway_at_night",
+      "sha256": "6a3a27aa73fe84ef23bc4bf71d385c6bf8792146bd05247ed0529b7127946986",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/factory/AF-BG-57493__airport_runway_at_night.mp4",
+      "basename": "AF-BG-57493__airport_runway_at_night.mp4",
+      "kind": "factory",
+      "ext": "mp4",
+      "content_tag": "airport_runway_at_night",
+      "sha256": "215b27c0a84a8a677d56a2b7717f9e148264de3cbce95dae992886d42bb83878",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/hero_checkpointconverge.mp4",
+      "basename": "hero_checkpointconverge.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "checkpointconverge",
+      "sha256": "0d5574d1664f5758f5bf5033bc7d7c194c62e4911d967b2e8db723d40d390c5c",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/hero_signswap.mp4",
+      "basename": "hero_signswap.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "signswap",
+      "sha256": "08134ba2e6f602c952f19357601f61e585dc2cf3a9e5c7f79c53998b5150e891",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/hero_usforfeiture_209m.mp4",
+      "basename": "hero_usforfeiture_209m.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "usforfeiture_209m",
+      "sha256": "f510ba8fabb040661d95af7f49a2baa9c2d06ab5530575d6b0508165bad6a451",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/hero_usforfeiture_32b.mp4",
+      "basename": "hero_usforfeiture_32b.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "usforfeiture_32b",
+      "sha256": "94f5fe5fc3d25e0af70b1a327c75e8e9b4eb1061f4d73f041db5d6d7b697a5bd",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/hero_usforfeiture_688b.mp4",
+      "basename": "hero_usforfeiture_688b.mp4",
+      "kind": "hero",
+      "ext": "mp4",
+      "content_tag": "usforfeiture_688b",
+      "sha256": "10cd2fcaf61dab380b8b98cf963818f2a6e8ecfedb8b7031becaeb6899aa8108",
+      "phash": null
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S001-IMG-001.png",
+      "basename": "PD-2026-034-S001-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "c762b73d131dbf39b410c503e8a6dd7dc54bbbff703c432e1d5a02dafef0ed78",
+      "phash": "93c36c6793cb2643"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S001-IMG-001_depth.png",
+      "basename": "PD-2026-034-S001-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s001-img-001::depthmap",
+      "sha256": "23e33c26a7b9309b423c5df32c8031d7d382eaab92e3949b6c1bed3f7505e358",
+      "phash": "f838c33c1ee1f087"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S002-IMG-001.png",
+      "basename": "PD-2026-034-S002-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b9aaaf2fa3bbe83a32269240210753e1de0db6d9b1df9132a368380670d6e6ee",
+      "phash": "99963336a69c3333"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S002-IMG-001_depth.png",
+      "basename": "PD-2026-034-S002-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s002-img-001::depthmap",
+      "sha256": "4af72651204b37640103d34a0d829d66edf42929b120a5550057673460bbc42b",
+      "phash": "9612e263eb4de86c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S003-IMG-001.png",
+      "basename": "PD-2026-034-S003-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "2342a6311a7984597daa57abce28602f3d90970b909493ad58ea1fd2a962fc85",
+      "phash": "8ecece9a2e438caa"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S003-IMG-001_depth.png",
+      "basename": "PD-2026-034-S003-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s003-img-001::depthmap",
+      "sha256": "8517ab8b05503699cef8270594fc8f5f91fe2a4b55c71bc25c9fa9352357f46c",
+      "phash": "e37188c66759986e"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S004-IMG-001.png",
+      "basename": "PD-2026-034-S004-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "cfbc8bc344e104b2a642a6d68b170f691e02204c70a8fb52d15c12bcf273f3cc",
+      "phash": "dcee77030fb1026c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S004-IMG-001_depth.png",
+      "basename": "PD-2026-034-S004-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s004-img-001::depthmap",
+      "sha256": "61232e1cafb4b1cb5079a810b5c03bfc63c4f6dbbe9f1bbec88d63cf98c98d9e",
+      "phash": "e7399c3c9146b1c6"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S005-IMG-001.png",
+      "basename": "PD-2026-034-S005-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "366aa9e4f0623c2ab04478654cb3c2f47605de5a7fa9cbbba7ea018b54100d64",
+      "phash": "9c0323fe6395946e"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S005-IMG-001_depth.png",
+      "basename": "PD-2026-034-S005-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s005-img-001::depthmap",
+      "sha256": "ac443f1dfff742a3fea2d5a20516ec467e09949454471e69837e49d141434b7e",
+      "phash": "c13cfe63d2089637"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S006-IMG-001.png",
+      "basename": "PD-2026-034-S006-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "4cd87dfde2128a78c43934a8891b02050b1df5e01499075ba40c5ccc66a4e025",
+      "phash": "8be5acc6d19a7419"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S006-IMG-001_depth.png",
+      "basename": "PD-2026-034-S006-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s006-img-001::depthmap",
+      "sha256": "25d2e21982c45db680b3e15e2cdf70489f8d3f795ad1e3e1efe76507fbe0c8fd",
+      "phash": "fc3cc7381e470a9a"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S007-IMG-001.png",
+      "basename": "PD-2026-034-S007-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1e1367aee9e487d0a24adcd2aed813a42f1e89903a038c8e9a2c24e36e968ebf",
+      "phash": "d5e0e139393e9c86"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S007-IMG-001_depth.png",
+      "basename": "PD-2026-034-S007-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s007-img-001::depthmap",
+      "sha256": "9681bb0c83639c64b7e0aa484b927d43293016ebecbcdfb835fa2dfc5c09764d",
+      "phash": "fa6d97acca14350a"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S008-IMG-001.png",
+      "basename": "PD-2026-034-S008-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "3b35771c40498a78610a8a59f6fcdde426172b1c032c36a825e8a3786185e479",
+      "phash": "9dc073d64c2d3566"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S008-IMG-001_depth.png",
+      "basename": "PD-2026-034-S008-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s008-img-001::depthmap",
+      "sha256": "e6e5ee458eea6b9fadba8df97811b77b702c4bbd1d9495d76d83b74d2711d3c8",
+      "phash": "807b83600f6736bf"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S009-IMG-001.png",
+      "basename": "PD-2026-034-S009-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "43d696897c76be5359d13e4d160d7b7964b535ade5f9b42fb6e0ed62406e8916",
+      "phash": "81c974644ecff338"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S009-IMG-001_depth.png",
+      "basename": "PD-2026-034-S009-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s009-img-001::depthmap",
+      "sha256": "807e69aadf07fd32e38386c3d099f41e6013ceef9d14826ed4eafca9e12b3c2f",
+      "phash": "c1f17a6634b5354c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S010-IMG-001.png",
+      "basename": "PD-2026-034-S010-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "6b302b33bda5f49ce30b74770a94a918f8fd6263a426e59d5eaa3bb264007ace",
+      "phash": "f33c0760def11c07"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S010-IMG-001_depth.png",
+      "basename": "PD-2026-034-S010-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s010-img-001::depthmap",
+      "sha256": "f2d6eb35e96e91fde14ba2fb90112c862e51d5923c2bfb6ab88e3cd95da2187b",
+      "phash": "95316a4ed0b59d72"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S011-IMG-001.png",
+      "basename": "PD-2026-034-S011-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "edc3fe50ba736deeb423206a1a611a782fd55e24bb90141995f85e0c33dff18d",
+      "phash": "9583496d6e90b4f9"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S011-IMG-001_depth.png",
+      "basename": "PD-2026-034-S011-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s011-img-001::depthmap",
+      "sha256": "b65cfe319b4cfbd6e71a37603663026e13909f3b1cc5efc4c0570ac0d0938adc",
+      "phash": "eb68b269f9107931"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S012-IMG-001.png",
+      "basename": "PD-2026-034-S012-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "d9faf8f48e5a5ead41566a48e33768c772fb6fe820fe08d37e62b3866bd0f764",
+      "phash": "99587227a5765b89"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S012-IMG-001_depth.png",
+      "basename": "PD-2026-034-S012-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s012-img-001::depthmap",
+      "sha256": "756c3abbaa312973a4f7f999eb33fcb60358dc90d933430a015dec7aa306a012",
+      "phash": "dc5622a5e55a8ab5"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S013-IMG-001.png",
+      "basename": "PD-2026-034-S013-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "d456dba2e2e0a846f2652f3579fec7694aa6e8209d558d199fb960947f06f7b0",
+      "phash": "d8669a7167e12533"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S013-IMG-001_depth.png",
+      "basename": "PD-2026-034-S013-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s013-img-001::depthmap",
+      "sha256": "d652c35776aa02e5cf2934b08f3cd54f456f320d2195227bea8e6860c62e42ed",
+      "phash": "a778d027ad5866d4"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S014-IMG-001.png",
+      "basename": "PD-2026-034-S014-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "711853cba3427524934bc8c6a2c8e3fc519b00b693a3b539d2446f5b31588de6",
+      "phash": "9f9b627948247768"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S014-IMG-001_depth.png",
+      "basename": "PD-2026-034-S014-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s014-img-001::depthmap",
+      "sha256": "29c8fb4b57a6792a99c22a669f872a1e35713e244d52003d575c4b8d986d2f2d",
+      "phash": "e0009f5f06ff4f84"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S015-IMG-001.png",
+      "basename": "PD-2026-034-S015-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "fb5b7c3ea6fa07af887d640aa109acd73b565a21b4601f52353163aefa83c710",
+      "phash": "958f5a4accb5b14a"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S015-IMG-001_depth.png",
+      "basename": "PD-2026-034-S015-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s015-img-001::depthmap",
+      "sha256": "8ec4ab9365d06c5b58716cba6211b2e90d8c65f44ad4b189967bfd13404b519b",
+      "phash": "e120cccf3318ce6f"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S016-IMG-001.png",
+      "basename": "PD-2026-034-S016-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "501ac4140f1afcee276dc55099ca25f9e5060eac98a65274119a3f01fc332106",
+      "phash": "99366e6e8a8331d5"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S016-IMG-001_depth.png",
+      "basename": "PD-2026-034-S016-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s016-img-001::depthmap",
+      "sha256": "37a9a5048ddc7a9c55833384c92f08b7829d0936d70230baad4da958c1f6ae91",
+      "phash": "ce4dc923b4365aaa"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S017-IMG-001.png",
+      "basename": "PD-2026-034-S017-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "6a7337eb9592734ea60c72512aba3a7f33d20e51fd498f064a4f56e44ed76d9d",
+      "phash": "9366994a499b9397"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S017-IMG-001_depth.png",
+      "basename": "PD-2026-034-S017-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s017-img-001::depthmap",
+      "sha256": "194358110832314fde3a38fe7a6d405f108fc5eb9136e4512aba52458b2e9bd8",
+      "phash": "c8d827a0374dfa27"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S018-IMG-001.png",
+      "basename": "PD-2026-034-S018-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "0010fea2d04d6cb9d4b1b9d27b5a3e9edfc102dafdc164917884346a7841aac6",
+      "phash": "8e772e9649487936"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S018-IMG-001_depth.png",
+      "basename": "PD-2026-034-S018-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s018-img-001::depthmap",
+      "sha256": "ebdcf05b37d8c1f94b6fcbf247c2fe0c3add6c381a86534612641a0c91e9f3a0",
+      "phash": "877e038ef9033197"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S019-IMG-001.png",
+      "basename": "PD-2026-034-S019-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "279d368f0fa1a06276f641bdd757420a7e0e286189688ca5fbaa9021179f922b",
+      "phash": "e5a535585acaaaa5"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S019-IMG-001_depth.png",
+      "basename": "PD-2026-034-S019-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s019-img-001::depthmap",
+      "sha256": "3517d6fc1f8f1add45d3eae8ff7ed634b3867b0c2d431657833b250d629fa835",
+      "phash": "f83cc76380710f1f"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S020-IMG-001.png",
+      "basename": "PD-2026-034-S020-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1c9170749df14bc9ba5facf96bda4826067508b4feffe3ced9a5ad94229ea1a6",
+      "phash": "9469b1933899e64f"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S020-IMG-001_depth.png",
+      "basename": "PD-2026-034-S020-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s020-img-001::depthmap",
+      "sha256": "24acc6b1f62bc34a87228abe9c00a72be7b9a445d2a973174bc4fcdb384d0e18",
+      "phash": "c968fc1e2c6c561e"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S021-IMG-001.png",
+      "basename": "PD-2026-034-S021-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "79cd975ae11cb9138540bebee0a267b566ef1368598568503303ba840bacaa22",
+      "phash": "92096dd35eb49167"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S021-IMG-001_depth.png",
+      "basename": "PD-2026-034-S021-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s021-img-001::depthmap",
+      "sha256": "a368e4f6da4f7f440c0e7d315d8b2e170ad47b9d0cd766910d3eadb5aea59c19",
+      "phash": "ce46b131b9f97111"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S022-IMG-001.png",
+      "basename": "PD-2026-034-S022-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "39d24928341e3f32c223607b13d2fb7b081656bd03707994936ef0b4f35cf461",
+      "phash": "cc3133ce3331ccb5"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S022-IMG-001_depth.png",
+      "basename": "PD-2026-034-S022-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s022-img-001::depthmap",
+      "sha256": "bab7e202cf23468dd4bba2d857809931386629a7b344928010a2113b1b132f97",
+      "phash": "ea6085d4f001e7fe"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S023-IMG-001.png",
+      "basename": "PD-2026-034-S023-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "8c69b863a1fae1dee6637344e4bacb4de5bdbffa77a045e376e3ae653b70f4a3",
+      "phash": "c86c39cc338d72d9"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S023-IMG-001_depth.png",
+      "basename": "PD-2026-034-S023-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s023-img-001::depthmap",
+      "sha256": "504da68878699624d5b1c4ef3b86799277fed39c4cb9e00b639b6c1d6012123d",
+      "phash": "956a95eb1c61bac1"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S024-IMG-001.png",
+      "basename": "PD-2026-034-S024-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "1e85ed0a50336b86df7be58fdc56fc257104d00dfdc8d48e187d87a54e60a3de",
+      "phash": "937a8619976e2599"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S024-IMG-001_depth.png",
+      "basename": "PD-2026-034-S024-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s024-img-001::depthmap",
+      "sha256": "197355eb9166a924624cdd51e96eb604d7b393110df68f9b04207ae1d629a5d5",
+      "phash": "db238459e5669c1b"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S025-IMG-001.png",
+      "basename": "PD-2026-034-S025-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "dfecdf443653a487d37a2b3aade5d02252c248eb7c21530864a68996da07c2d1",
+      "phash": "90b84c6e27970b6f"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S025-IMG-001_depth.png",
+      "basename": "PD-2026-034-S025-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s025-img-001::depthmap",
+      "sha256": "97f0be6ed2263bf205ee4899a566396217f8aff7a18440eddcc21d63f9756156",
+      "phash": "c727b8389c4cfc1a"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S026-IMG-001.png",
+      "basename": "PD-2026-034-S026-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "15cdb5fa3bf1d88666be14855af1d28e0e136515f11c4371f632d9cf5df6bb45",
+      "phash": "c13b9ce163bc6887"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S026-IMG-001_depth.png",
+      "basename": "PD-2026-034-S026-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s026-img-001::depthmap",
+      "sha256": "36fb7c0f3e2ef5a5fde2eeeadf9c3690a69f59767802f53bf7fceec5df889414",
+      "phash": "833cb843bf69861d"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S027-IMG-001.png",
+      "basename": "PD-2026-034-S027-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "66a58a27d440d7e06f2f83d64f3338db185c74e3c14c68807c1e5d05aa398cac",
+      "phash": "cf6331c836cdb219"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S027-IMG-001_depth.png",
+      "basename": "PD-2026-034-S027-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s027-img-001::depthmap",
+      "sha256": "1597ba3885adbc426a74265bd97a0195491fcba0d741d4e6002a99e10241b3d7",
+      "phash": "af66bbc033ceb00c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S028-IMG-001.png",
+      "basename": "PD-2026-034-S028-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "64d7a46e7d0816c776ec1310dbac0516d6d5ef9fe9258e73b4b02faa7db5fdfc",
+      "phash": "cb66249b911931df"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S028-IMG-001_depth.png",
+      "basename": "PD-2026-034-S028-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s028-img-001::depthmap",
+      "sha256": "45e3f34ddedf348d08e6a24c7881564e7d15294b448c9c9c8840af653b7734b1",
+      "phash": "cf66f419b119b164"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S029-IMG-001.png",
+      "basename": "PD-2026-034-S029-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "24d85de58f01a3c318bdd1c63b3476ca405c533a7e67b18957e018bfb8d5b2af",
+      "phash": "944b6db4136b54ab"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S029-IMG-001_depth.png",
+      "basename": "PD-2026-034-S029-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s029-img-001::depthmap",
+      "sha256": "42178840ce1d78fa6e313a3d2a967a65dc6e06373a80866a6e2900f541e05410",
+      "phash": "8c3cf2c3cd1cdcc2"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S030-IMG-001.png",
+      "basename": "PD-2026-034-S030-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f0cd7fa3c91622413bea1649df41fb68d8f081f731c9b551965b6fc438e90301",
+      "phash": "94366dc912b4b5c7"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S030-IMG-001_depth.png",
+      "basename": "PD-2026-034-S030-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s030-img-001::depthmap",
+      "sha256": "5b98f10e2ee9436759ea42e07f56d7527410c3f64cafd7d4b523856154af69fc",
+      "phash": "db36e9923471c40f"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S031-IMG-001.png",
+      "basename": "PD-2026-034-S031-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "26acdc65eb8acce7b237062047447574d724f8afe172b688150bee8563be5b06",
+      "phash": "d643709e85e1c3e3"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S031-IMG-001_depth.png",
+      "basename": "PD-2026-034-S031-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s031-img-001::depthmap",
+      "sha256": "8c1d6464be5d9d435429c60a3ff0654a2d4aa667d0212a850b8125fb873c8533",
+      "phash": "97726a9a95488ce7"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S032-IMG-001.png",
+      "basename": "PD-2026-034-S032-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "83e05fd6dcb7d3a06fba5c7a6b64fd15f697034752bb0573cd038545044d2ee6",
+      "phash": "f7403b7600ff50a3"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S032-IMG-001_depth.png",
+      "basename": "PD-2026-034-S032-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s032-img-001::depthmap",
+      "sha256": "6395a712e44ae8136002cdb1cf1115171f8d0829ab6405b86d3ac9051b2b3982",
+      "phash": "842a7bc3c5d19c9e"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S033-IMG-001.png",
+      "basename": "PD-2026-034-S033-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "7f22bdfecf5379c026c1028663867ffe3213989302d9fafa8ec426ab971904c7",
+      "phash": "99b660dbcc6c9193"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S033-IMG-001_depth.png",
+      "basename": "PD-2026-034-S033-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s033-img-001::depthmap",
+      "sha256": "5eaf77cfe525018767ff0eb8d777db36f3bdbb611a9d34473809fb69ac953839",
+      "phash": "817078707c9fb399"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S034-IMG-001.png",
+      "basename": "PD-2026-034-S034-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "640ad105ab654da1f9295e4aa201c0b601dc7974ea314525712c3a54525edbbc",
+      "phash": "8e39b96ec6394e24"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S034-IMG-001_depth.png",
+      "basename": "PD-2026-034-S034-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s034-img-001::depthmap",
+      "sha256": "ce649294f22b65a3284719a42340b894cd7b33fcb378d9131832e1faf6b13361",
+      "phash": "d242ad46ad65a667"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S035-IMG-001.png",
+      "basename": "PD-2026-034-S035-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "36604e878ac9e9c0ac55783e8f826a4cedfb21695c222ecbbbd98011f9cc9ee1",
+      "phash": "c6e731869a35e5c4"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S035-IMG-001_depth.png",
+      "basename": "PD-2026-034-S035-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s035-img-001::depthmap",
+      "sha256": "fcb2d41f535526ca34ac49977c9e6c80af763db0b5179d6aa9934e924cdc5374",
+      "phash": "d118ea65951a9a6f"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S036-IMG-001.png",
+      "basename": "PD-2026-034-S036-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "6286f4e168058b73ba5a1ca6767932659ac82dd7ef29d0911d99b81a641f2d4a",
+      "phash": "c36576db2cc2531c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S036-IMG-001_depth.png",
+      "basename": "PD-2026-034-S036-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s036-img-001::depthmap",
+      "sha256": "18c51e5eb6bc14a66bd4bf801b2d845fa5d5ab8062315559ea0122095c39c095",
+      "phash": "8023f82afa6aee63"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S037-IMG-001.png",
+      "basename": "PD-2026-034-S037-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "6da2505f108ac7f022a1536a25513af6795960bdb0c943c0743adc776060ec09",
+      "phash": "d4daa8340b487bde"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S037-IMG-001_depth.png",
+      "basename": "PD-2026-034-S037-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s037-img-001::depthmap",
+      "sha256": "cb96509b020f27ad70ac25886ec6a34e3e2ebfa1c5adceb86477d1f26cc4281e",
+      "phash": "f378742f0978f0c1"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S038-IMG-001.png",
+      "basename": "PD-2026-034-S038-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f4d99d55b1ff3cf5f42d064428893cee11370287756f9c0e0ae24258311e4b15",
+      "phash": "966e34c9d66b486c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S038-IMG-001_depth.png",
+      "basename": "PD-2026-034-S038-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s038-img-001::depthmap",
+      "sha256": "8e0769b82c9f5bbf7d99ec98f3ce9d93f1ecea52dfbf6454c9f42c4b690b68ef",
+      "phash": "c2035fdc3b2b94b4"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S039-IMG-001.png",
+      "basename": "PD-2026-034-S039-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "098b07cbc9a7ce36dfac5da9da3b4e0602c3ceccce206d3820f89dbee0f80a27",
+      "phash": "c12f78c986791fc8"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S039-IMG-001_depth.png",
+      "basename": "PD-2026-034-S039-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s039-img-001::depthmap",
+      "sha256": "916824e09cb884558fc9c02691ce421ccd5ab66f78e8032ab80cb9c7e2b69476",
+      "phash": "d731669da748174c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S040-IMG-001.png",
+      "basename": "PD-2026-034-S040-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "0ff426cd5f654010fcec84d6769e30212af8c02ac4226b4c34b3404478b4234c",
+      "phash": "896347f8695075d5"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S040-IMG-001_depth.png",
+      "basename": "PD-2026-034-S040-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s040-img-001::depthmap",
+      "sha256": "d235d391f9f3a7e21a9c11839c5d52504fd94af0e638e2120a5e461ffd1c78ce",
+      "phash": "ea26dd758000fe7c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S041-IMG-001.png",
+      "basename": "PD-2026-034-S041-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "590608bf6830159f6dfe811ac6bfcaa9e2f5871c101bb9fc2293511a7b24df7d",
+      "phash": "954abc5a6a9345b5"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S041-IMG-001_depth.png",
+      "basename": "PD-2026-034-S041-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s041-img-001::depthmap",
+      "sha256": "63fc9380a4f62e5374c71343fc6fdc48f3b7e47e6b04dfe9ce7676bb1ac208fc",
+      "phash": "e323860339dc7771"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S042-IMG-001.png",
+      "basename": "PD-2026-034-S042-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "720c24d1feebeeeca6bbb96ff7e1baa1207c9654fec8b2fb55bf1dabbb96d5cf",
+      "phash": "c33c654d6033e9ce"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S042-IMG-001_depth.png",
+      "basename": "PD-2026-034-S042-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s042-img-001::depthmap",
+      "sha256": "7eab84ca7ed9cc2f1093d48e8f9d8c42bed544be58be5b6cde11e2e8bf97ad21",
+      "phash": "81507450feaaea9f"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S043-IMG-001.png",
+      "basename": "PD-2026-034-S043-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "536d9de0f629f467a65c3daeff010b217becb17abb0659fafefb41aed14d9149",
+      "phash": "92943666627b9aba"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S043-IMG-001_depth.png",
+      "basename": "PD-2026-034-S043-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s043-img-001::depthmap",
+      "sha256": "fe7f07ccc1d46188a4251063d8e92e08b003cdedeafeb8b0ec0bd5896b7607ad",
+      "phash": "dd14242b3c793e33"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S044-IMG-001.png",
+      "basename": "PD-2026-034-S044-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e185470b116a86d88ee1e3128dff6069b5cdcd55abc86897efd75acc16352ebc",
+      "phash": "959525696b9acaca"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S044-IMG-001_depth.png",
+      "basename": "PD-2026-034-S044-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s044-img-001::depthmap",
+      "sha256": "dbf222da3d67207b074bab342283b51467b0fee45f1ba3a8924ab9937ba584d8",
+      "phash": "ed19aaeab585530a"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S045-IMG-001.png",
+      "basename": "PD-2026-034-S045-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "36eb1c9fcf51b316ce8284df1490cce99092d1ef37b827d999b0e2990742c495",
+      "phash": "87cb6494ca94f4f2"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S045-IMG-001_depth.png",
+      "basename": "PD-2026-034-S045-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s045-img-001::depthmap",
+      "sha256": "a9985c7ea1cf775f5d74ed463d5c51120f4a79b93efb62652f16c6e493b2ec95",
+      "phash": "f1788c4e1236ae6d"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S046-IMG-001.png",
+      "basename": "PD-2026-034-S046-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "142b658a2307d8996d77c7b88541e56f36e6cdcebccbf78c0e03147613d8b8f0",
+      "phash": "cc303c0fd62f2de1"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S046-IMG-001_depth.png",
+      "basename": "PD-2026-034-S046-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s046-img-001::depthmap",
+      "sha256": "010393f3733088a72d6d38c6a0a88d004fdc7754c9e74d3b28dc71c9c17de61c",
+      "phash": "b6782db7d22b4960"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S047-IMG-001.png",
+      "basename": "PD-2026-034-S047-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "c32c544c56cb716234ebc498a76de5ad7cf649a0828278100111f126772f0f02",
+      "phash": "9718657a116f24db"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S047-IMG-001_depth.png",
+      "basename": "PD-2026-034-S047-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s047-img-001::depthmap",
+      "sha256": "5f8c0dd91877d3f3af2456590911624e800f039cbed2927baf25e9f01a1655f4",
+      "phash": "f0600f0f870ebe1f"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S048-IMG-001.png",
+      "basename": "PD-2026-034-S048-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "352490f2e7cbf231677b0981e67586a9283ac8fad293df7edaaf8aaa5771c326",
+      "phash": "93b2966452ee32cb"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S048-IMG-001_depth.png",
+      "basename": "PD-2026-034-S048-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s048-img-001::depthmap",
+      "sha256": "d657d8b67fd16570a8a608c2bf945b9122940d31b19c00ef120a26902912b476",
+      "phash": "cc1cb143b7e608fc"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S049-IMG-001.png",
+      "basename": "PD-2026-034-S049-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "04939c264f9ba422c44417415e3c709da1d46781ce4683466168291c006bdd34",
+      "phash": "9e71369f592432c9"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S049-IMG-001_depth.png",
+      "basename": "PD-2026-034-S049-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s049-img-001::depthmap",
+      "sha256": "d16233a0834af9f3bc182704eda7c7368f419c8404504e72712d561e7f288353",
+      "phash": "af2494d3ed96c08d"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S050-IMG-001.png",
+      "basename": "PD-2026-034-S050-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "c2c6b3b4544e64d5a1dffdeb0714592b45aab5b219bb8b3db387776d59677f98",
+      "phash": "c32766ce2ee3c311"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S050-IMG-001_depth.png",
+      "basename": "PD-2026-034-S050-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s050-img-001::depthmap",
+      "sha256": "a56f8627f0a139b0e2eed80b534a9aa3bcd2ebb6eafb4e70e16a7ea3a3058371",
+      "phash": "ff73927ae00cfc00"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S051-IMG-001.png",
+      "basename": "PD-2026-034-S051-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "8b842c89b144e6bfe017679cf8a17105f6e7d097d9e555f85559da85d8a4cabd",
+      "phash": "c4394d5bc63c39c6"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S051-IMG-001_depth.png",
+      "basename": "PD-2026-034-S051-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s051-img-001::depthmap",
+      "sha256": "a5eab2853a47e2eb51962510a5a8529a21530043e858b97dce0e51ef20bdfffc",
+      "phash": "9964b266ad13e46d"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S052-IMG-001.png",
+      "basename": "PD-2026-034-S052-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "e88b659200949b9c602b4dc12fe57ef754e930d29d1d59b7633e22bc6350ba09",
+      "phash": "923163c66dd639c6"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S052-IMG-001_depth.png",
+      "basename": "PD-2026-034-S052-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s052-img-001::depthmap",
+      "sha256": "df4b0c8833e006a7c03ab82b1346a389af187791c15b8ed794a0e0ae7fcb79f6",
+      "phash": "9a53e11ee11ee11e"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S053-IMG-001.png",
+      "basename": "PD-2026-034-S053-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "a98868b82798c7cea727105f14c69a6c5f67787a56bc9e3484f49481cb5b0a65",
+      "phash": "9c9e62f317f30b40"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S053-IMG-001_depth.png",
+      "basename": "PD-2026-034-S053-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s053-img-001::depthmap",
+      "sha256": "2108c202a6ceb1873cb305c6a3d3f0a92fa85d981ef2fdf7dd9011ba1d4da78d",
+      "phash": "8f87f00f3087f31c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S054-IMG-001.png",
+      "basename": "PD-2026-034-S054-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "cc02baeae2597b98143e560aaa95b998b3006e353e33cddccec12a8222a36f03",
+      "phash": "827c9c6bd318cbca"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S054-IMG-001_depth.png",
+      "basename": "PD-2026-034-S054-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s054-img-001::depthmap",
+      "sha256": "0a2ee1d3ccb6e2dad73db6e93a0a75be10b6c28f1c0dee49a83014e4a528912a",
+      "phash": "f0782a6ad95a5276"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S055-IMG-001.png",
+      "basename": "PD-2026-034-S055-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "08783481a78322298e23ee8340cd9c9d4b3b8784de10a8291bae78f8f7568fcf",
+      "phash": "d0271ca7c8966db9"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S055-IMG-001_depth.png",
+      "basename": "PD-2026-034-S055-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s055-img-001::depthmap",
+      "sha256": "3ff4bca775c7653c2c38670b59bc73ede370577b0fd3a9a7ecab1b4a3b674811",
+      "phash": "a92b4bdad6a5091b"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S056-IMG-001.png",
+      "basename": "PD-2026-034-S056-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "72d406f64dd445ba170ffc6703ff87465d6f74e11bbf1dd80ac543144ffa3049",
+      "phash": "c6e5637358989636"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S056-IMG-001_depth.png",
+      "basename": "PD-2026-034-S056-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s056-img-001::depthmap",
+      "sha256": "2b9297fb1cd00e3d061bb83669b4a07ed583d8cd327ce541d48ec4413e986d72",
+      "phash": "87667cdb609aa631"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S057-IMG-001.png",
+      "basename": "PD-2026-034-S057-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "75df50c8da06275957c5355075486125bf92be4b069bb77f3e1d11d84dc15d6f",
+      "phash": "9929723ad98d6693"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S057-IMG-001_depth.png",
+      "basename": "PD-2026-034-S057-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s057-img-001::depthmap",
+      "sha256": "6a41f120b6c4895e906ef0aec20e1e72878e867ee44b6ab2b0c07cf4c9c5b72e",
+      "phash": "e120f01ecfaf6712"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S058-IMG-001.png",
+      "basename": "PD-2026-034-S058-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "8f59879ea7a25899feb59eb21f4fb1a1637d2350fac63d3335dcad1fcd76a971",
+      "phash": "9064775f8f6591a4"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S058-IMG-001_depth.png",
+      "basename": "PD-2026-034-S058-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s058-img-001::depthmap",
+      "sha256": "8315aad1efb7a4d0da27ca17122c44987d1adff94aaa78878b354b72d40acf5b",
+      "phash": "da5beb0d8560b0b6"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S059-IMG-001.png",
+      "basename": "PD-2026-034-S059-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "f9d9caa5a1e1c1c43360c64c588de588aa181341fc646953a40c7573d9c85281",
+      "phash": "c03d71cc1f70cfc1"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S059-IMG-001_depth.png",
+      "basename": "PD-2026-034-S059-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s059-img-001::depthmap",
+      "sha256": "c617e02998f72979313f486552ef174613edc30fc8d025abc152d4b8be66dc38",
+      "phash": "d27284edf9708794"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S060-IMG-001.png",
+      "basename": "PD-2026-034-S060-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "0307ec950290d8b18f18723083e0ce7dbf9ed9aae93976425a99e9fe6120b847",
+      "phash": "cd3224c9cb361bcb"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S060-IMG-001_depth.png",
+      "basename": "PD-2026-034-S060-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s060-img-001::depthmap",
+      "sha256": "6e6df13bc4910860cd5e17f80048e69f32d922a4ae66be6a92d74563846f9b2c",
+      "phash": "956a9562e86b8f13"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S061-IMG-001.png",
+      "basename": "PD-2026-034-S061-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "d8f81e6a08daee9195cf533c2284a7079a203c5e1be193fb55537f7db38f5a0a",
+      "phash": "cb661b9c4e3f9340"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S061-IMG-001_depth.png",
+      "basename": "PD-2026-034-S061-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s061-img-001::depthmap",
+      "sha256": "659b5a4f67cec114d6d3eb8c6c4758d93058e04f4adeccc4e4ee9382b6456510",
+      "phash": "e261981c8e1ff762"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S062-IMG-001.png",
+      "basename": "PD-2026-034-S062-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "64d9bdb64f3aea505cd500db228bcebc558b64ef8d58d52c70d0c05e931099cf",
+      "phash": "9d036d944c3bd3b4"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S062-IMG-001_depth.png",
+      "basename": "PD-2026-034-S062-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s062-img-001::depthmap",
+      "sha256": "f3a2fc4ce6e1a16226eef567836f5a89c2c19c9ee2140f17ef42a17331715198",
+      "phash": "8e7fb160b813bc15"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S063-IMG-001.png",
+      "basename": "PD-2026-034-S063-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "15d56ff9695f86e0aa2ad1edab8366cd188c4028d8b3e7186a9b0847b489cea8",
+      "phash": "dc46f6a60f8d2a23"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S063-IMG-001_depth.png",
+      "basename": "PD-2026-034-S063-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s063-img-001::depthmap",
+      "sha256": "71f1bd4ace9d5d805247ee1c3deb0bf27a84caef11e744186e62891a6defe4a0",
+      "phash": "823fa8654bd8b2b3"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S064-IMG-001.png",
+      "basename": "PD-2026-034-S064-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "fb39b148173976bbd8eef4d7bc824b5b248cae34499dac2841e66defc018c584",
+      "phash": "8cb64c496d1fb592"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S064-IMG-001_depth.png",
+      "basename": "PD-2026-034-S064-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s064-img-001::depthmap",
+      "sha256": "4ee3f60157526916a219e11b074874b61a82513e19cecb3e5deefce9578b8434",
+      "phash": "81018f2fafbf94d0"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S065-IMG-001.png",
+      "basename": "PD-2026-034-S065-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "a0eb9b48ff7805ef9183aec4dfce2178a128dfc4d737309033ca47d083737286",
+      "phash": "d22c93da68957ca3"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S065-IMG-001_depth.png",
+      "basename": "PD-2026-034-S065-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s065-img-001::depthmap",
+      "sha256": "96ff4abd9ce5a65141e61d1793f4a2e6e2084d0b9a9ca79b8abbacb134ab56b0",
+      "phash": "8c7ae875e252aa55"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S066-IMG-001.png",
+      "basename": "PD-2026-034-S066-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "567624f073dda390b34bd356c07794a6cae3d83cab8c3bbcbc39fcba5ddb8191",
+      "phash": "946b6d9663499c36"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S066-IMG-001_depth.png",
+      "basename": "PD-2026-034-S066-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s066-img-001::depthmap",
+      "sha256": "2d727fda54a0036c2b8cdfc6979dd3877bf0de76a04f2401dd3fa313407f33ff",
+      "phash": "f0388ce7f1181e67"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S067-IMG-001.png",
+      "basename": "PD-2026-034-S067-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "2b8d7c896f5f1baba6e3a617bcddfae71146c40ec5517dc3eb0a86e866386806",
+      "phash": "b5a5a5884d6ba59c"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S067-IMG-001_depth.png",
+      "basename": "PD-2026-034-S067-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s067-img-001::depthmap",
+      "sha256": "b59978d9567f1d90c70d7840e2b00afcebf4f73ba0a29ad9318e3f0a8a5baf60",
+      "phash": "e16180cfff7898c2"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S068-IMG-001.png",
+      "basename": "PD-2026-034-S068-IMG-001.png",
+      "kind": "generated_still",
+      "ext": "png",
+      "content_tag": null,
+      "sha256": "b701e4fbf21e67c92059482065775c8df036bb31c068944ed6e15c29d990bad6",
+      "phash": "99862666617379d9"
+    },
+    {
+      "episode": "PD-2026-034-rolin",
+      "path": "remotion/public/rolin/img/PD-2026-034-S068-IMG-001_depth.png",
+      "basename": "PD-2026-034-S068-IMG-001_depth.png",
+      "kind": "depth_map",
+      "ext": "png",
+      "content_tag": "pd-2026-034-s068-img-001::depthmap",
+      "sha256": "dbffc6815bc3153890063e4d8867f64f9a3def041d7f83b46ed9ebb844a91540",
+      "phash": "be6fb850c934c11b"
+    }
+  ]
+}

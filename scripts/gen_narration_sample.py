@@ -43,7 +43,7 @@ def main() -> None:
         print("ERROR: ELEVENLABS_API_KEY または ELEVENLABS_VOICE_ID が .env にありません")
         sys.exit(1)
 
-    out_dir = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
+    out_dir = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "vc_hook_v001.mp3"
 

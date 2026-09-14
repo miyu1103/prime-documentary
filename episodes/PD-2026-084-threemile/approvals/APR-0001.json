@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-084-threemile",
+  "target_type": "script",
+  "target_id": "EP84_threemile_script.en.v001.md",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-08-28T02:50:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-08-28T02:50:00+09:00",
+  "decided_by": "owner",
+  "accepted_deviations": [
+    "runtime_band",
+    "script_words"
+  ],
+  "notes": "Owner instruction 2026-08-28, verbatim: '20分を超えてればOK' -- anything over twenty minutes is acceptable. THE MEASUREMENT, from the delivered master rather than a projection: ffprobe puts threemile's narration at 1545.618 s = 25:45, from 296 chunks and 4476 extractor words at the delivered rate. That is 194 s under episode_spec runtime_seconds [1740, 2100]. The extractor word count is also under the declared script_words [4700, 5300], and that is the real cause -- the script is short, the narration is not slow. THE DECLARED VALUES ARE NOT CHANGED (CLAUDE.md 4.6 / rule 19): no script was padded, no gap was stretched, and episode_spec.v001.json is untouched. The shortfall is recorded here as an owner-accepted deviation and must still be written into 09_package/release_deviations.v001.json at ship time. Precedent: PD-2026-082-valdez APR-0001, owner accepted 28:26 against the same band."
+}

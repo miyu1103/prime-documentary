@@ -1,0 +1,3396 @@
+{
+  "episode_id": "PD-2026-046-tlo",
+  "fps": 30,
+  "narration": "tlo/audio/narration_master.v001.mp3",
+  "narrationSeconds": 672.375,
+  "hookSeconds": 8.0,
+  "hookLine": "A teacher searched her purse. Did the Fourth Amendment walk into that school with her?",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tlo/img/S01.png",
+      "seed": "tlo-hook-00"
+    },
+    {
+      "start": 1.333,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tlo/img/S02.png",
+      "seed": "tlo-hook-01"
+    },
+    {
+      "start": 2.666,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tlo/img/S03.png",
+      "seed": "tlo-hook-02"
+    },
+    {
+      "start": 3.999,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tlo/img/S04.png",
+      "seed": "tlo-hook-03"
+    },
+    {
+      "start": 5.332,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tlo/img/S05.png",
+      "seed": "tlo-hook-04"
+    },
+    {
+      "start": 6.665,
+      "dur": 1.335,
+      "kind": "img",
+      "src": "tlo/img/S06.png",
+      "seed": "tlo-hook-05"
+    }
+  ],
+  "cuts": [
+    {
+      "id": "cut-000",
+      "start": 0.0,
+      "dur": 3.668,
+      "kind": "footage",
+      "src": "tlo/factory/F001__tlo_safe_broll_S01.mp4",
+      "seed": "tlo-000",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-001",
+      "start": 3.668,
+      "dur": 3.292,
+      "kind": "img",
+      "src": "tlo/img/S01.png",
+      "seed": "tlo-001",
+      "act": "HOOK",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-002",
+      "start": 6.96,
+      "dur": 3.668,
+      "kind": "footage",
+      "src": "tlo/motion/M01_rife.mp4",
+      "seed": "tlo-002",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-003",
+      "start": 10.628,
+      "dur": 3.668,
+      "kind": "footage",
+      "src": "tlo/factory/F002__tlo_safe_broll_S02.mp4",
+      "seed": "tlo-003",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-004",
+      "start": 14.296,
+      "dur": 3.292,
+      "kind": "img",
+      "src": "tlo/img/S02.png",
+      "seed": "tlo-004",
+      "act": "HOOK",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-005",
+      "start": 17.588,
+      "dur": 3.668,
+      "kind": "footage",
+      "src": "tlo/factory/F003__tlo_safe_broll_S03.mp4",
+      "seed": "tlo-005",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-006",
+      "start": 21.256,
+      "dur": 3.668,
+      "kind": "footage",
+      "src": "tlo/factory/F004__tlo_safe_broll_S04.mp4",
+      "seed": "tlo-006",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-007",
+      "start": 24.924,
+      "dur": 3.292,
+      "kind": "img",
+      "src": "tlo/img/S03.png",
+      "seed": "tlo-007",
+      "act": "HOOK",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-008",
+      "start": 28.216,
+      "dur": 3.668,
+      "kind": "footage",
+      "src": "tlo/motion/M02_rife.mp4",
+      "seed": "tlo-008",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-009",
+      "start": 31.884,
+      "dur": 3.668,
+      "kind": "footage",
+      "src": "tlo/factory/F005__tlo_safe_broll_S05.mp4",
+      "seed": "tlo-009",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-010",
+      "start": 35.552,
+      "dur": 3.292,
+      "kind": "img",
+      "src": "tlo/img/S04.png",
+      "seed": "tlo-010",
+      "act": "HOOK",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-011",
+      "start": 38.844,
+      "dur": 3.668,
+      "kind": "footage",
+      "src": "tlo/factory/F006__tlo_safe_broll_S06.mp4",
+      "seed": "tlo-011",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-012",
+      "start": 42.512,
+      "dur": 3.29,
+      "kind": "img",
+      "src": "tlo/img/S05.png",
+      "seed": "tlo-012",
+      "act": "HOOK",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-013",
+      "start": 45.802,
+      "dur": 2.993,
+      "kind": "footage",
+      "src": "tlo/factory/F007__tlo_safe_broll_S07.mp4",
+      "seed": "tlo-013",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-014",
+      "start": 48.795,
+      "dur": 2.686,
+      "kind": "img",
+      "src": "tlo/img/S06.png",
+      "seed": "tlo-014",
+      "act": "OP",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-015",
+      "start": 51.481,
+      "dur": 2.993,
+      "kind": "footage",
+      "src": "tlo/motion/M03_rife.mp4",
+      "seed": "tlo-015",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-016",
+      "start": 54.474,
+      "dur": 2.993,
+      "kind": "footage",
+      "src": "tlo/factory/F008__tlo_safe_broll_S08.mp4",
+      "seed": "tlo-016",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-017",
+      "start": 57.467,
+      "dur": 2.686,
+      "kind": "img",
+      "src": "tlo/img/S07.png",
+      "seed": "tlo-017",
+      "act": "OP",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-018",
+      "start": 60.153,
+      "dur": 2.993,
+      "kind": "footage",
+      "src": "tlo/factory/F009__tlo_safe_broll_S09.mp4",
+      "seed": "tlo-018",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-019",
+      "start": 63.146,
+      "dur": 2.993,
+      "kind": "footage",
+      "src": "tlo/motion/M04_rife.mp4",
+      "seed": "tlo-019",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-020",
+      "start": 66.139,
+      "dur": 2.686,
+      "kind": "img",
+      "src": "tlo/img/S08.png",
+      "seed": "tlo-020",
+      "act": "OP",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-021",
+      "start": 68.825,
+      "dur": 2.686,
+      "kind": "img",
+      "src": "tlo/img/S09.png",
+      "seed": "tlo-021",
+      "act": "OP",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-022",
+      "start": 71.511,
+      "dur": 2.686,
+      "kind": "img",
+      "src": "tlo/img/S10.png",
+      "seed": "tlo-022",
+      "act": "OP",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-023",
+      "start": 74.197,
+      "dur": 2.686,
+      "kind": "img",
+      "src": "tlo/img/S11.png",
+      "seed": "tlo-023",
+      "act": "OP",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-024",
+      "start": 76.883,
+      "dur": 2.686,
+      "kind": "img",
+      "src": "tlo/img/S12.png",
+      "seed": "tlo-024",
+      "act": "OP",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-025",
+      "start": 79.569,
+      "dur": 2.686,
+      "kind": "img",
+      "src": "tlo/img/S13.png",
+      "seed": "tlo-025",
+      "act": "OP",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-026",
+      "start": 82.255,
+      "dur": 2.686,
+      "kind": "img",
+      "src": "tlo/img/S14.png",
+      "seed": "tlo-026",
+      "act": "OP",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-027",
+      "start": 84.941,
+      "dur": 2.679,
+      "kind": "img",
+      "src": "tlo/img/S15.png",
+      "seed": "tlo-027",
+      "act": "OP",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-028",
+      "start": 87.62,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F010__tlo_safe_broll_S10.mp4",
+      "seed": "tlo-028",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-029",
+      "start": 91.582,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S16.png",
+      "seed": "tlo-029",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-030",
+      "start": 95.137,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/motion/M05_rife.mp4",
+      "seed": "tlo-030",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-031",
+      "start": 99.099,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F011__tlo_safe_broll_S11.mp4",
+      "seed": "tlo-031",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-032",
+      "start": 103.061,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S17.png",
+      "seed": "tlo-032",
+      "act": "ACT_1",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-033",
+      "start": 106.616,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F012__tlo_safe_broll_S12.mp4",
+      "seed": "tlo-033",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-034",
+      "start": 110.578,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F013__tlo_safe_broll_S13.mp4",
+      "seed": "tlo-034",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-035",
+      "start": 114.54,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S18.png",
+      "seed": "tlo-035",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-036",
+      "start": 118.095,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/motion/M06_rife.mp4",
+      "seed": "tlo-036",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-037",
+      "start": 122.057,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F014__tlo_safe_broll_S14.mp4",
+      "seed": "tlo-037",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-038",
+      "start": 126.019,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S19.png",
+      "seed": "tlo-038",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-039",
+      "start": 129.574,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F015__tlo_safe_broll_S15.mp4",
+      "seed": "tlo-039",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-040",
+      "start": 133.536,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F016__tlo_safe_broll_S16.mp4",
+      "seed": "tlo-040",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-041",
+      "start": 137.498,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S20.png",
+      "seed": "tlo-041",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-042",
+      "start": 141.053,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/motion/M07_rife.mp4",
+      "seed": "tlo-042",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-043",
+      "start": 145.015,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F017__tlo_safe_broll_S17.mp4",
+      "seed": "tlo-043",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-044",
+      "start": 148.977,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S21.png",
+      "seed": "tlo-044",
+      "act": "ACT_1",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-045",
+      "start": 152.532,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F018__tlo_safe_broll_S18.mp4",
+      "seed": "tlo-045",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-046",
+      "start": 156.494,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F019__tlo_safe_broll_S19.mp4",
+      "seed": "tlo-046",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-047",
+      "start": 160.456,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S22.png",
+      "seed": "tlo-047",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-048",
+      "start": 164.011,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/motion/M08_rife.mp4",
+      "seed": "tlo-048",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-049",
+      "start": 167.973,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F020__tlo_safe_broll_S20.mp4",
+      "seed": "tlo-049",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-050",
+      "start": 171.935,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S23.png",
+      "seed": "tlo-050",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-051",
+      "start": 175.49,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/factory/F021__tlo_safe_broll_S21.mp4",
+      "seed": "tlo-051",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-052",
+      "start": 179.452,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/motion/M09_rife.mp4",
+      "seed": "tlo-052",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-053",
+      "start": 183.414,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S24.png",
+      "seed": "tlo-053",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-054",
+      "start": 186.969,
+      "dur": 3.962,
+      "kind": "footage",
+      "src": "tlo/motion/M10_rife.mp4",
+      "seed": "tlo-054",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-055",
+      "start": 190.931,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S25.png",
+      "seed": "tlo-055",
+      "act": "ACT_1",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-056",
+      "start": 194.486,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S26.png",
+      "seed": "tlo-056",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-057",
+      "start": 198.041,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S27.png",
+      "seed": "tlo-057",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-058",
+      "start": 201.596,
+      "dur": 3.555,
+      "kind": "img",
+      "src": "tlo/img/S28.png",
+      "seed": "tlo-058",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-059",
+      "start": 205.151,
+      "dur": 3.559,
+      "kind": "img",
+      "src": "tlo/img/S29.png",
+      "seed": "tlo-059",
+      "act": "ACT_1",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-060",
+      "start": 208.71,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F022__tlo_safe_broll_S22.mp4",
+      "seed": "tlo-060",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-061",
+      "start": 210.935,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S30.png",
+      "seed": "tlo-061",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-062",
+      "start": 212.932,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/motion/M11_rife.mp4",
+      "seed": "tlo-062",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-063",
+      "start": 215.157,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F023__tlo_safe_broll_S23.mp4",
+      "seed": "tlo-063",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-064",
+      "start": 217.382,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S31.png",
+      "seed": "tlo-064",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-065",
+      "start": 219.379,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F024__tlo_safe_broll_S24.mp4",
+      "seed": "tlo-065",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-066",
+      "start": 221.604,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F025__tlo_safe_broll_S25.mp4",
+      "seed": "tlo-066",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-067",
+      "start": 223.829,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S32.png",
+      "seed": "tlo-067",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-068",
+      "start": 225.826,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/motion/M12_rife.mp4",
+      "seed": "tlo-068",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-069",
+      "start": 228.051,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F026__tlo_safe_broll_S26.mp4",
+      "seed": "tlo-069",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-070",
+      "start": 230.276,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S33.png",
+      "seed": "tlo-070",
+      "act": "ACT_2",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-071",
+      "start": 232.273,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F027__tlo_safe_broll_S27.mp4",
+      "seed": "tlo-071",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-072",
+      "start": 234.498,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F028__tlo_safe_broll_S28.mp4",
+      "seed": "tlo-072",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-073",
+      "start": 236.723,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S34.png",
+      "seed": "tlo-073",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-074",
+      "start": 238.72,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/motion/M13_rife.mp4",
+      "seed": "tlo-074",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-075",
+      "start": 240.945,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F029__tlo_safe_broll_S29.mp4",
+      "seed": "tlo-075",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-076",
+      "start": 243.17,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S35.png",
+      "seed": "tlo-076",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-077",
+      "start": 245.167,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F030__tlo_safe_broll_S30.mp4",
+      "seed": "tlo-077",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-078",
+      "start": 247.392,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F031__tlo_safe_broll_S31.mp4",
+      "seed": "tlo-078",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-079",
+      "start": 249.617,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S36.png",
+      "seed": "tlo-079",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-080",
+      "start": 251.614,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/motion/M14_rife.mp4",
+      "seed": "tlo-080",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-081",
+      "start": 253.839,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F032__tlo_safe_broll_S32.mp4",
+      "seed": "tlo-081",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-082",
+      "start": 256.064,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S37.png",
+      "seed": "tlo-082",
+      "act": "ACT_2",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-083",
+      "start": 258.061,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F033__tlo_safe_broll_S33.mp4",
+      "seed": "tlo-083",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-084",
+      "start": 260.286,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F034__tlo_safe_broll_S34.mp4",
+      "seed": "tlo-084",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-085",
+      "start": 262.511,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S38.png",
+      "seed": "tlo-085",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-086",
+      "start": 264.508,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/motion/M15_rife.mp4",
+      "seed": "tlo-086",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-087",
+      "start": 266.733,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F035__tlo_safe_broll_S35.mp4",
+      "seed": "tlo-087",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-088",
+      "start": 268.958,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S39.png",
+      "seed": "tlo-088",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-089",
+      "start": 270.955,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F036__tlo_safe_broll_S36.mp4",
+      "seed": "tlo-089",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-090",
+      "start": 273.18,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F037__tlo_safe_broll_S37.mp4",
+      "seed": "tlo-090",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-091",
+      "start": 275.405,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S40.png",
+      "seed": "tlo-091",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-092",
+      "start": 277.402,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/motion/M16_rife.mp4",
+      "seed": "tlo-092",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-093",
+      "start": 279.627,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F038__tlo_safe_broll_S38.mp4",
+      "seed": "tlo-093",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-094",
+      "start": 281.852,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S41.png",
+      "seed": "tlo-094",
+      "act": "ACT_2",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-095",
+      "start": 283.849,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F039__tlo_safe_broll_S39.mp4",
+      "seed": "tlo-095",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-096",
+      "start": 286.074,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/factory/F040__tlo_safe_broll_S40.mp4",
+      "seed": "tlo-096",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-097",
+      "start": 288.299,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S42.png",
+      "seed": "tlo-097",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-098",
+      "start": 290.296,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/motion/M01_rife.mp4",
+      "seed": "tlo-098",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-099",
+      "start": 292.521,
+      "dur": 2.225,
+      "kind": "footage",
+      "src": "tlo/motion/M02_rife.mp4",
+      "seed": "tlo-099",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-100",
+      "start": 294.746,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S43.png",
+      "seed": "tlo-100",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-101",
+      "start": 296.743,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S44.png",
+      "seed": "tlo-101",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-102",
+      "start": 298.74,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S45.png",
+      "seed": "tlo-102",
+      "act": "ACT_2",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-103",
+      "start": 300.737,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S46.png",
+      "seed": "tlo-103",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-104",
+      "start": 302.734,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S47.png",
+      "seed": "tlo-104",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-105",
+      "start": 304.731,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S48.png",
+      "seed": "tlo-105",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-106",
+      "start": 306.728,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S49.png",
+      "seed": "tlo-106",
+      "act": "ACT_2",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-107",
+      "start": 308.725,
+      "dur": 1.997,
+      "kind": "img",
+      "src": "tlo/img/S50.png",
+      "seed": "tlo-107",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-108",
+      "start": 310.722,
+      "dur": 2.009,
+      "kind": "img",
+      "src": "tlo/img/S51.png",
+      "seed": "tlo-108",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-109",
+      "start": 312.731,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F041__tlo_safe_broll_S41.mp4",
+      "seed": "tlo-109",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-110",
+      "start": 316.389,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S52.png",
+      "seed": "tlo-110",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-111",
+      "start": 319.672,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/motion/M03_rife.mp4",
+      "seed": "tlo-111",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-112",
+      "start": 323.33,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F042__tlo_safe_broll_S42.mp4",
+      "seed": "tlo-112",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-113",
+      "start": 326.988,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S53.png",
+      "seed": "tlo-113",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-114",
+      "start": 330.271,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F043__tlo_safe_broll_S43.mp4",
+      "seed": "tlo-114",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-115",
+      "start": 333.929,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F044__tlo_safe_broll_S44.mp4",
+      "seed": "tlo-115",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-116",
+      "start": 337.587,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S54.png",
+      "seed": "tlo-116",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-117",
+      "start": 340.87,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/motion/M04_rife.mp4",
+      "seed": "tlo-117",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-118",
+      "start": 344.528,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F045__tlo_safe_broll_S45.mp4",
+      "seed": "tlo-118",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-119",
+      "start": 348.186,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S55.png",
+      "seed": "tlo-119",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-120",
+      "start": 351.469,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F046__tlo_safe_broll_S46.mp4",
+      "seed": "tlo-120",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-121",
+      "start": 355.127,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F047__tlo_safe_broll_S47.mp4",
+      "seed": "tlo-121",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-122",
+      "start": 358.785,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S56.png",
+      "seed": "tlo-122",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-123",
+      "start": 362.068,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/motion/M05_rife.mp4",
+      "seed": "tlo-123",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-124",
+      "start": 365.726,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F048__tlo_safe_broll_S48.mp4",
+      "seed": "tlo-124",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-125",
+      "start": 369.384,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S57.png",
+      "seed": "tlo-125",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-126",
+      "start": 372.667,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F049__tlo_safe_broll_S49.mp4",
+      "seed": "tlo-126",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-127",
+      "start": 376.325,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F050__tlo_safe_broll_S50.mp4",
+      "seed": "tlo-127",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-128",
+      "start": 379.983,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S58.png",
+      "seed": "tlo-128",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-129",
+      "start": 383.266,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/motion/M06_rife.mp4",
+      "seed": "tlo-129",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-130",
+      "start": 386.924,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F051__tlo_safe_broll_S51.mp4",
+      "seed": "tlo-130",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-131",
+      "start": 390.582,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S59.png",
+      "seed": "tlo-131",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-132",
+      "start": 393.865,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F052__tlo_safe_broll_S52.mp4",
+      "seed": "tlo-132",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-133",
+      "start": 397.523,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F053__tlo_safe_broll_S53.mp4",
+      "seed": "tlo-133",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-134",
+      "start": 401.181,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S60.png",
+      "seed": "tlo-134",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-135",
+      "start": 404.464,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/motion/M07_rife.mp4",
+      "seed": "tlo-135",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-136",
+      "start": 408.122,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F054__tlo_safe_broll_S54.mp4",
+      "seed": "tlo-136",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-137",
+      "start": 411.78,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S61.png",
+      "seed": "tlo-137",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-138",
+      "start": 415.063,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F055__tlo_safe_broll_S55.mp4",
+      "seed": "tlo-138",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-139",
+      "start": 418.721,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F056__tlo_safe_broll_S56.mp4",
+      "seed": "tlo-139",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-140",
+      "start": 422.379,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S62.png",
+      "seed": "tlo-140",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-141",
+      "start": 425.662,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/motion/M08_rife.mp4",
+      "seed": "tlo-141",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-142",
+      "start": 429.32,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F057__tlo_safe_broll_S57.mp4",
+      "seed": "tlo-142",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-143",
+      "start": 432.978,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S63.png",
+      "seed": "tlo-143",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-144",
+      "start": 436.261,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F058__tlo_safe_broll_S58.mp4",
+      "seed": "tlo-144",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-145",
+      "start": 439.919,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F059__tlo_safe_broll_S59.mp4",
+      "seed": "tlo-145",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-146",
+      "start": 443.577,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S64.png",
+      "seed": "tlo-146",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-147",
+      "start": 446.86,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/motion/M09_rife.mp4",
+      "seed": "tlo-147",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-148",
+      "start": 450.518,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F060__tlo_safe_broll_S60.mp4",
+      "seed": "tlo-148",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-149",
+      "start": 454.176,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S65.png",
+      "seed": "tlo-149",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-150",
+      "start": 457.459,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F061__tlo_safe_broll_S61.mp4",
+      "seed": "tlo-150",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-151",
+      "start": 461.117,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F062__tlo_safe_broll_S62.mp4",
+      "seed": "tlo-151",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-152",
+      "start": 464.775,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S66.png",
+      "seed": "tlo-152",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-153",
+      "start": 468.058,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/motion/M10_rife.mp4",
+      "seed": "tlo-153",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-154",
+      "start": 471.716,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F063__tlo_safe_broll_S63.mp4",
+      "seed": "tlo-154",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-155",
+      "start": 475.374,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S67.png",
+      "seed": "tlo-155",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-156",
+      "start": 478.657,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F064__tlo_safe_broll_S64.mp4",
+      "seed": "tlo-156",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-157",
+      "start": 482.315,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F065__tlo_safe_broll_S65.mp4",
+      "seed": "tlo-157",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-158",
+      "start": 485.973,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S68.png",
+      "seed": "tlo-158",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-159",
+      "start": 489.256,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F066__tlo_safe_broll_S66.mp4",
+      "seed": "tlo-159",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-160",
+      "start": 492.914,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F067__tlo_safe_broll_S67.mp4",
+      "seed": "tlo-160",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-161",
+      "start": 496.572,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S69.png",
+      "seed": "tlo-161",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-162",
+      "start": 499.855,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F068__tlo_safe_broll_S68.mp4",
+      "seed": "tlo-162",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-163",
+      "start": 503.513,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F069__tlo_safe_broll_S69.mp4",
+      "seed": "tlo-163",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-164",
+      "start": 507.171,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S70.png",
+      "seed": "tlo-164",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-165",
+      "start": 510.454,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F070__tlo_safe_broll_S70.mp4",
+      "seed": "tlo-165",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-166",
+      "start": 514.112,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F071__tlo_safe_broll_S71.mp4",
+      "seed": "tlo-166",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-167",
+      "start": 517.77,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S71.png",
+      "seed": "tlo-167",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-168",
+      "start": 521.053,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F072__tlo_safe_broll_S72.mp4",
+      "seed": "tlo-168",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-169",
+      "start": 524.711,
+      "dur": 3.658,
+      "kind": "footage",
+      "src": "tlo/factory/F073__tlo_safe_broll_S73.mp4",
+      "seed": "tlo-169",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-170",
+      "start": 528.369,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S72.png",
+      "seed": "tlo-170",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-171",
+      "start": 531.652,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S73.png",
+      "seed": "tlo-171",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-172",
+      "start": 534.935,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S74.png",
+      "seed": "tlo-172",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-173",
+      "start": 538.218,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S75.png",
+      "seed": "tlo-173",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-174",
+      "start": 541.501,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S76.png",
+      "seed": "tlo-174",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-175",
+      "start": 544.784,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S77.png",
+      "seed": "tlo-175",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-176",
+      "start": 548.067,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S78.png",
+      "seed": "tlo-176",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-177",
+      "start": 551.35,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S79.png",
+      "seed": "tlo-177",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-178",
+      "start": 554.633,
+      "dur": 3.283,
+      "kind": "img",
+      "src": "tlo/img/S80.png",
+      "seed": "tlo-178",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-179",
+      "start": 557.916,
+      "dur": 3.294,
+      "kind": "img",
+      "src": "tlo/img/S81.png",
+      "seed": "tlo-179",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-180",
+      "start": 561.21,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F074__tlo_safe_broll_S74.mp4",
+      "seed": "tlo-180",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-181",
+      "start": 563.854,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S82.png",
+      "seed": "tlo-181",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-182",
+      "start": 566.226,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/motion/M11_rife.mp4",
+      "seed": "tlo-182",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-183",
+      "start": 568.87,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F075__tlo_safe_broll_S75.mp4",
+      "seed": "tlo-183",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-184",
+      "start": 571.514,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S83.png",
+      "seed": "tlo-184",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-185",
+      "start": 573.886,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F076__tlo_safe_broll_S76.mp4",
+      "seed": "tlo-185",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-186",
+      "start": 576.53,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F077__tlo_safe_broll_S77.mp4",
+      "seed": "tlo-186",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-187",
+      "start": 579.174,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S84.png",
+      "seed": "tlo-187",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-188",
+      "start": 581.546,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/motion/M12_rife.mp4",
+      "seed": "tlo-188",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-189",
+      "start": 584.19,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F078__tlo_safe_broll_S78.mp4",
+      "seed": "tlo-189",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-190",
+      "start": 586.834,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S01.png",
+      "seed": "tlo-190",
+      "act": "ENDING",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-191",
+      "start": 589.206,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F079__tlo_safe_broll_S79.mp4",
+      "seed": "tlo-191",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-192",
+      "start": 591.85,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F080__tlo_safe_broll_S80.mp4",
+      "seed": "tlo-192",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-193",
+      "start": 594.494,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S02.png",
+      "seed": "tlo-193",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-194",
+      "start": 596.866,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/motion/M13_rife.mp4",
+      "seed": "tlo-194",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-195",
+      "start": 599.51,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F081__tlo_safe_broll_S81.mp4",
+      "seed": "tlo-195",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-196",
+      "start": 602.154,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S03.png",
+      "seed": "tlo-196",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-197",
+      "start": 604.526,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F082__tlo_safe_broll_S82.mp4",
+      "seed": "tlo-197",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-198",
+      "start": 607.17,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F083__tlo_safe_broll_S83.mp4",
+      "seed": "tlo-198",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-199",
+      "start": 609.814,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S04.png",
+      "seed": "tlo-199",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-200",
+      "start": 612.186,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/motion/M14_rife.mp4",
+      "seed": "tlo-200",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-201",
+      "start": 614.83,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F084__tlo_safe_broll_S84.mp4",
+      "seed": "tlo-201",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-202",
+      "start": 617.474,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S05.png",
+      "seed": "tlo-202",
+      "act": "ENDING",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-203",
+      "start": 619.846,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F085__tlo_safe_broll_M01_src.mp4",
+      "seed": "tlo-203",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-204",
+      "start": 622.49,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F086__tlo_safe_broll_M02_src.mp4",
+      "seed": "tlo-204",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-205",
+      "start": 625.134,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S06.png",
+      "seed": "tlo-205",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-206",
+      "start": 627.506,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/motion/M15_rife.mp4",
+      "seed": "tlo-206",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-207",
+      "start": 630.15,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F087__tlo_safe_broll_M03_src.mp4",
+      "seed": "tlo-207",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-208",
+      "start": 632.794,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S07.png",
+      "seed": "tlo-208",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-209",
+      "start": 635.166,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F088__tlo_safe_broll_M04_src.mp4",
+      "seed": "tlo-209",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-210",
+      "start": 637.81,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F089__tlo_safe_broll_M05_src.mp4",
+      "seed": "tlo-210",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-211",
+      "start": 640.454,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S08.png",
+      "seed": "tlo-211",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-212",
+      "start": 642.826,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/motion/M16_rife.mp4",
+      "seed": "tlo-212",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-213",
+      "start": 645.47,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F090__tlo_safe_broll_M06_src.mp4",
+      "seed": "tlo-213",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-214",
+      "start": 648.114,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S09.png",
+      "seed": "tlo-214",
+      "act": "ENDING",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-215",
+      "start": 650.486,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F091__tlo_safe_broll_M07_src.mp4",
+      "seed": "tlo-215",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-216",
+      "start": 653.13,
+      "dur": 2.644,
+      "kind": "footage",
+      "src": "tlo/factory/F092__tlo_safe_broll_M08_src.mp4",
+      "seed": "tlo-216",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-217",
+      "start": 655.774,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S10.png",
+      "seed": "tlo-217",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-218",
+      "start": 658.146,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S11.png",
+      "seed": "tlo-218",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-219",
+      "start": 660.518,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S12.png",
+      "seed": "tlo-219",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-220",
+      "start": 662.89,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S13.png",
+      "seed": "tlo-220",
+      "act": "ENDING",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-221",
+      "start": 665.262,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S14.png",
+      "seed": "tlo-221",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-222",
+      "start": 667.634,
+      "dur": 2.372,
+      "kind": "img",
+      "src": "tlo/img/S15.png",
+      "seed": "tlo-222",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-223",
+      "start": 670.006,
+      "dur": 2.369,
+      "kind": "img",
+      "src": "tlo/img/S16.png",
+      "seed": "tlo-223",
+      "act": "ENDING",
+      "treatment": "focus"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.508,
+      "text": "A high school restroom, second period."
+    },
+    {
+      "start": 2.808,
+      "end": 7.08,
+      "text": "Two girls at the sinks, and a thin haze of cigarette smoke still hanging in the air."
+    },
+    {
+      "start": 7.38,
+      "end": 10.491,
+      "text": "A teacher opens the door at exactly the wrong moment."
+    },
+    {
+      "start": 10.791,
+      "end": 12.788,
+      "text": "One of the two is fourteen years old."
+    },
+    {
+      "start": 13.088,
+      "end": 14.11,
+      "text": "A freshman."
+    },
+    {
+      "start": 14.71,
+      "end": 22.93,
+      "text": "Minutes later her purse is upside down on an administrator's desk, and a man she has known for all of ten minutes is taking it apart one item at a time."
+    },
+    {
+      "start": 23.23,
+      "end": 25.18,
+      "text": "She says she does not smoke."
+    },
+    {
+      "start": 25.48,
+      "end": 26.966,
+      "text": "He opens the bag anyway."
+    },
+    {
+      "start": 27.266,
+      "end": 33.582,
+      "text": "And what he lifts out, one thing pointing to the next, will follow her all the way to the Supreme Court of the United States."
+    },
+    {
+      "start": 33.882,
+      "end": 36.39,
+      "text": "So here is the question riding on that purse."
+    },
+    {
+      "start": 36.69,
+      "end": 40.498,
+      "text": "Inside your own school, does the Fourth Amendment walk in with you?"
+    },
+    {
+      "start": 40.798,
+      "end": 44.002,
+      "text": "Or does it wait out at the curb until the last bell rings?"
+    },
+    {
+      "start": 45.802,
+      "end": 48.31,
+      "text": "Think about the bag on your own shoulder right now."
+    },
+    {
+      "start": 48.61,
+      "end": 54.043,
+      "text": "Your backpack, your locker, the pockets you would not want turned out in front of a stranger."
+    },
+    {
+      "start": 54.343,
+      "end": 62.424,
+      "text": "You have been taught, in a loose sort of way, that the government cannot just search your things without a good reason, and usually not without a warrant."
+    },
+    {
+      "start": 62.724,
+      "end": 64.814,
+      "text": "That promise is the Fourth Amendment."
+    },
+    {
+      "start": 65.114,
+      "end": 68.365,
+      "text": "And most people assume it stops cold at the schoolhouse door."
+    },
+    {
+      "start": 68.665,
+      "end": 71.916,
+      "text": "This is the case that decided whether that assumption is true."
+    },
+    {
+      "start": 72.216,
+      "end": 78.532,
+      "text": "It is called New Jersey versus T.L.O., and it climbed to the highest court in the country in the middle of the nineteen-eighties."
+    },
+    {
+      "start": 78.832,
+      "end": 83.987,
+      "text": "The answer it gave is more careful, and more surprising, than either side wanted it to be."
+    },
+    {
+      "start": 84.287,
+      "end": 85.82,
+      "text": "This is Prime Documentary."
+    },
+    {
+      "start": 87.62,
+      "end": 89.663,
+      "text": "Start in a public high school in New Jersey."
+    },
+    {
+      "start": 89.963,
+      "end": 93.91,
+      "text": "A teacher walks into a girls' restroom and finds two students smoking."
+    },
+    {
+      "start": 94.21,
+      "end": 99.643,
+      "text": "Smoking there breaks a school rule, so the teacher marches them both down to the front office."
+    },
+    {
+      "start": 99.943,
+      "end": 102.497,
+      "text": "One of them is that fourteen-year-old freshman."
+    },
+    {
+      "start": 102.797,
+      "end": 106.744,
+      "text": "Because she is a minor, the court records never print her full name."
+    },
+    {
+      "start": 107.044,
+      "end": 110.109,
+      "text": "They use only her initials, T.L.O., and so will we."
+    },
+    {
+      "start": 110.409,
+      "end": 112.267,
+      "text": "A set of letters, not a face."
+    },
+    {
+      "start": 112.567,
+      "end": 116.747,
+      "text": "An assistant vice principal takes her into his office and asks her about the cigarettes."
+    },
+    {
+      "start": 117.047,
+      "end": 118.44,
+      "text": "She denies all of it."
+    },
+    {
+      "start": 118.74,
+      "end": 121.48,
+      "text": "She was not smoking in the restroom, she tells him."
+    },
+    {
+      "start": 121.78,
+      "end": 123.405,
+      "text": "She does not smoke at all."
+    },
+    {
+      "start": 123.705,
+      "end": 125.423,
+      "text": "So he asks for her purse."
+    },
+    {
+      "start": 125.723,
+      "end": 128.695,
+      "text": "He opens it, and right on top there is a pack of cigarettes."
+    },
+    {
+      "start": 128.995,
+      "end": 130.11,
+      "text": "He pulls them out."
+    },
+    {
+      "start": 130.41,
+      "end": 137.794,
+      "text": "And as he does, he notices something tucked in beside them: a packet of rolling papers, the thin kind he associates with marijuana."
+    },
+    {
+      "start": 138.094,
+      "end": 142.692,
+      "text": "Hold onto that small detail, because it is the hinge the entire case turns on."
+    },
+    {
+      "start": 142.992,
+      "end": 148.333,
+      "text": "One ordinary object, sitting in plain view, that changes what he thinks he is looking at."
+    },
+    {
+      "start": 148.633,
+      "end": 149.84,
+      "text": "Now he keeps going."
+    },
+    {
+      "start": 150.14,
+      "end": 154.273,
+      "text": "He searches the rest of the bag more carefully, and it keeps handing him more."
+    },
+    {
+      "start": 154.573,
+      "end": 156.245,
+      "text": "A small amount of marijuana."
+    },
+    {
+      "start": 156.545,
+      "end": 157.381,
+      "text": "A pipe."
+    },
+    {
+      "start": 157.681,
+      "end": 159.214,
+      "text": "Empty plastic bags."
+    },
+    {
+      "start": 159.514,
+      "end": 161.511,
+      "text": "A thick fold of one-dollar bills."
+    },
+    {
+      "start": 161.811,
+      "end": 164.737,
+      "text": "A card with a list of names, students who owed her money."
+    },
+    {
+      "start": 165.037,
+      "end": 168.334,
+      "text": "And two letters that read as though she had been selling to other kids."
+    },
+    {
+      "start": 168.634,
+      "end": 175.646,
+      "text": "In the space of a few minutes and a few inches of zipper, that purse goes from a smoking violation to evidence of dealing."
+    },
+    {
+      "start": 175.946,
+      "end": 178.64,
+      "text": "The state brings charges against her in juvenile court."
+    },
+    {
+      "start": 178.94,
+      "end": 181.262,
+      "text": "Her lawyers make one central move."
+    },
+    {
+      "start": 181.562,
+      "end": 182.769,
+      "text": "Throw the purse out."
+    },
+    {
+      "start": 183.069,
+      "end": 192.821,
+      "text": "Everything inside it, they argue, is the fruit of an illegal search, a violation of her Fourth Amendment rights, and none of it should be allowed as evidence against her."
+    },
+    {
+      "start": 193.121,
+      "end": 198.369,
+      "text": "The juvenile court disagrees, refuses to suppress it, and she is adjudicated delinquent."
+    },
+    {
+      "start": 198.669,
+      "end": 203.22,
+      "text": "But that fight over the purse is the seed of everything that follows."
+    },
+    {
+      "start": 203.52,
+      "end": 206.91,
+      "text": "It climbs, court by court, until it lands in Washington."
+    },
+    {
+      "start": 208.71,
+      "end": 213.354,
+      "text": "To see why the Supreme Court cared, you have to see the two easy answers it turned down."
+    },
+    {
+      "start": 213.654,
+      "end": 216.58,
+      "text": "The first easy answer belonged to the school."
+    },
+    {
+      "start": 216.88,
+      "end": 222.731,
+      "text": "Its position, stripped to the bone, was that the Fourth Amendment simply did not apply to them at all."
+    },
+    {
+      "start": 223.031,
+      "end": 226.978,
+      "text": "A teacher or a principal, they argued, stands in the place of a parent."
+    },
+    {
+      "start": 227.278,
+      "end": 230.064,
+      "text": "A parent can go through your bag whenever they like."
+    },
+    {
+      "start": 230.364,
+      "end": 233.847,
+      "text": "So can we, and the Constitution has nothing to say about it."
+    },
+    {
+      "start": 234.147,
+      "end": 237.026,
+      "text": "The second easy answer sat at the opposite pole."
+    },
+    {
+      "start": 237.326,
+      "end": 240.763,
+      "text": "Treat that assistant vice principal exactly like a police officer."
+    },
+    {
+      "start": 241.063,
+      "end": 251.14,
+      "text": "Make him get a warrant signed by a judge, or at the very least have probable cause, the hard, specific level of proof the police need before they search you out on the street."
+    },
+    {
+      "start": 251.44,
+      "end": 254.644,
+      "text": "Now picture what each of those answers would actually mean for you."
+    },
+    {
+      "start": 254.944,
+      "end": 261.167,
+      "text": "If the school is right, then the moment you step onto campus you carry no privacy the government is bound to respect."
+    },
+    {
+      "start": 261.467,
+      "end": 269.083,
+      "text": "An administrator could empty any student's bag, on any day, for no reason at all, and the Constitution would stand there silent."
+    },
+    {
+      "start": 269.383,
+      "end": 282.897,
+      "text": "If the police standard is right, then a teacher who sees something dangerous in a classroom has to stop, go find a judge, and swear out a warrant before looking inside a student's bag, while whatever it is sits there in the room."
+    },
+    {
+      "start": 283.197,
+      "end": 288.398,
+      "text": "A building holding a thousand teenagers cannot run on paperwork designed for a criminal investigation."
+    },
+    {
+      "start": 288.698,
+      "end": 292.042,
+      "text": "The Court looked hard at both of these, and it said no to each of them."
+    },
+    {
+      "start": 292.342,
+      "end": 295.128,
+      "text": "And notice the word that matters most in that refusal."
+    },
+    {
+      "start": 295.428,
+      "end": 298.539,
+      "text": "The Court did not say students leave their rights at the door."
+    },
+    {
+      "start": 298.839,
+      "end": 300.139,
+      "text": "It said the opposite."
+    },
+    {
+      "start": 300.439,
+      "end": 303.458,
+      "text": "The Fourth Amendment travels with you into a public school."
+    },
+    {
+      "start": 303.758,
+      "end": 305.337,
+      "text": "It is real in there."
+    },
+    {
+      "start": 305.637,
+      "end": 310.931,
+      "text": "The only thing left to decide was not whether you are protected, but how much, and by what test."
+    },
+    {
+      "start": 312.731,
+      "end": 317.282,
+      "text": "This is where the Court drew its line, and it did so by a vote of six to three."
+    },
+    {
+      "start": 317.582,
+      "end": 319.997,
+      "text": "Justice Byron White wrote for the majority."
+    },
+    {
+      "start": 320.297,
+      "end": 324.941,
+      "text": "Start with the half of the ruling that is a clear win for every student."
+    },
+    {
+      "start": 325.241,
+      "end": 333.879,
+      "text": "School officials are agents of the state, the government wearing a different coat, and so the Fourth Amendment's ban on unreasonable searches applies to them."
+    },
+    {
+      "start": 334.179,
+      "end": 336.965,
+      "text": "That is settled at the very top of the opinion."
+    },
+    {
+      "start": 337.265,
+      "end": 341.584,
+      "text": "You do not lose the Constitution because you are sixteen and standing in a hallway."
+    },
+    {
+      "start": 341.884,
+      "end": 344.113,
+      "text": "Then comes the half that lowers the bar."
+    },
+    {
+      "start": 344.413,
+      "end": 359.46,
+      "text": "Because a school is not a police station, and because keeping order and safety inside a building full of children is urgent, everyday work, the Court held that a school official does not need a warrant, and does not need probable cause, in order to search a student."
+    },
+    {
+      "start": 359.76,
+      "end": 362.5,
+      "text": "What the official needs instead is reasonableness."
+    },
+    {
+      "start": 362.8,
+      "end": 366.515,
+      "text": "The name lawyers give that lower threshold is reasonable suspicion."
+    },
+    {
+      "start": 366.815,
+      "end": 369.509,
+      "text": "The Court did not pick that lower bar at random."
+    },
+    {
+      "start": 369.809,
+      "end": 372.363,
+      "text": "It weighed two real things against each other."
+    },
+    {
+      "start": 372.663,
+      "end": 382.555,
+      "text": "On one side, a student's genuine expectation of privacy, because you do carry personal things to school, a wallet, a phone, the small private cargo of a life."
+    },
+    {
+      "start": 382.855,
+      "end": 387.963,
+      "text": "On the other, the school's substantial interest in keeping enough order that learning can happen at all."
+    },
+    {
+      "start": 388.263,
+      "end": 391.235,
+      "text": "And the Court did not leave it floating as a vague word."
+    },
+    {
+      "start": 391.535,
+      "end": 396.04,
+      "text": "It built a two-part test, and that test is the real inheritance of this case."
+    },
+    {
+      "start": 396.34,
+      "end": 398.058,
+      "text": "It still governs your bag today."
+    },
+    {
+      "start": 398.358,
+      "end": 401.609,
+      "text": "First, the search has to be justified at its inception."
+    },
+    {
+      "start": 401.909,
+      "end": 412.219,
+      "text": "In the Court's own words, there must be reasonable grounds for suspecting that the search will turn up evidence that the student has violated or is violating either the law or the rules of the school."
+    },
+    {
+      "start": 412.519,
+      "end": 419.113,
+      "text": "Second, the search has to be reasonably related in scope to the circumstances that justified it in the first place."
+    },
+    {
+      "start": 419.413,
+      "end": 429.955,
+      "text": "The measures the official uses must be reasonably related to the objectives of the search, and not excessively intrusive in light of the age and sex of the student and the nature of the infraction."
+    },
+    {
+      "start": 430.255,
+      "end": 434.435,
+      "text": "Read those two prongs slowly, because together they are the whole game."
+    },
+    {
+      "start": 434.735,
+      "end": 437.986,
+      "text": "A search needs a real, specific reason at the start."
+    },
+    {
+      "start": 438.286,
+      "end": 446.181,
+      "text": "And it has to stay in proportion as it goes, so that a report of something small cannot be used to justify taking a student completely apart."
+    },
+    {
+      "start": 446.481,
+      "end": 448.71,
+      "text": "That second prong is not decoration."
+    },
+    {
+      "start": 449.01,
+      "end": 451.425,
+      "text": "It means a search can outgrow its own excuse."
+    },
+    {
+      "start": 451.725,
+      "end": 459.016,
+      "text": "If the reason you were pulled aside was a rumor about a single cigarette, an official cannot ride that into something far more invasive."
+    },
+    {
+      "start": 459.316,
+      "end": 465.818,
+      "text": "Stretch the search past what set it off, and it fails the test even when the first prong was cleanly satisfied."
+    },
+    {
+      "start": 466.118,
+      "end": 469.555,
+      "text": "Applied to the purse, the majority said the search cleared both prongs."
+    },
+    {
+      "start": 469.855,
+      "end": 476.403,
+      "text": "A teacher's report of smoking gave reasonable grounds to look for cigarettes, and that justified opening the bag at all."
+    },
+    {
+      "start": 476.703,
+      "end": 484.737,
+      "text": "Once the rolling papers turned up in plain view, suspicion of drugs became reasonable, and that justified the closer search that followed."
+    },
+    {
+      "start": 485.037,
+      "end": 488.984,
+      "text": "Each step was tied to what the step before it had already revealed."
+    },
+    {
+      "start": 489.284,
+      "end": 491.838,
+      "text": "Three justices would not sign all of that."
+    },
+    {
+      "start": 492.138,
+      "end": 499.15,
+      "text": "In opinions concurring in part and dissenting in part, Justices Brennan, Marshall, and Stevens broke with the majority."
+    },
+    {
+      "start": 499.45,
+      "end": 501.493,
+      "text": "Their worry was the lowered bar itself."
+    },
+    {
+      "start": 501.793,
+      "end": 513.449,
+      "text": "Trade probable cause for something as soft as reasonable suspicion, they warned, and you hand school officials a broad power that is easy to misuse, with a young person's privacy as the price."
+    },
+    {
+      "start": 513.749,
+      "end": 515.839,
+      "text": "They read the same balance the other way."
+    },
+    {
+      "start": 516.139,
+      "end": 524.545,
+      "text": "Probable cause, they argued, had guarded ordinary people for two centuries without paralyzing anyone, and no one had shown a school could not live within it."
+    },
+    {
+      "start": 524.845,
+      "end": 531.997,
+      "text": "Water the standard down to a hunch, they cautioned, and the students searched on the thinnest reasons are the ones with the least power to push back."
+    },
+    {
+      "start": 532.297,
+      "end": 537.498,
+      "text": "And there is one more line the Court was careful to draw, and it is one you should hold onto."
+    },
+    {
+      "start": 537.798,
+      "end": 541.002,
+      "text": "This case is about school officials acting on their own."
+    },
+    {
+      "start": 541.302,
+      "end": 550.033,
+      "text": "When the police get involved, when an officer runs the search or directs it from behind, a different and higher standard can come back into the picture."
+    },
+    {
+      "start": 550.333,
+      "end": 553.723,
+      "text": "The lowered bar was built for educators keeping order in a school."
+    },
+    {
+      "start": 554.023,
+      "end": 559.41,
+      "text": "It was not built for law enforcement using that school as a shortcut around the warrant it would otherwise need."
+    },
+    {
+      "start": 561.21,
+      "end": 565.297,
+      "text": "So go back to that purse on the desk, and the question we opened with."
+    },
+    {
+      "start": 565.597,
+      "end": 568.058,
+      "text": "Does the Fourth Amendment walk into school with you?"
+    },
+    {
+      "start": 568.358,
+      "end": 571.702,
+      "text": "The Supreme Court's answer, since nineteen eighty-five, is yes."
+    },
+    {
+      "start": 572.002,
+      "end": 573.395,
+      "text": "Genuinely yes."
+    },
+    {
+      "start": 573.695,
+      "end": 581.822,
+      "text": "You are not some rights-free zone the instant you cross onto campus, and any adult who tells you students simply have no privacy is wrong."
+    },
+    {
+      "start": 582.122,
+      "end": 583.655,
+      "text": "This case is the reason why."
+    },
+    {
+      "start": 583.955,
+      "end": 588.924,
+      "text": "But the answer has a second half, and the second half is where people get caught off guard."
+    },
+    {
+      "start": 589.224,
+      "end": 595.215,
+      "text": "The protection you carry into school is real, and it is also lighter than the protection you carry on the street."
+    },
+    {
+      "start": 595.515,
+      "end": 600.252,
+      "text": "Out there, the government usually needs a warrant, or at least probable cause."
+    },
+    {
+      "start": 600.552,
+      "end": 606.543,
+      "text": "Inside the schoolhouse, an official needs only reasonable suspicion, and a search that stays in proportion to it."
+    },
+    {
+      "start": 606.843,
+      "end": 609.815,
+      "text": "That is the trade sitting at the center of this case."
+    },
+    {
+      "start": 610.115,
+      "end": 611.276,
+      "text": "Not no rights."
+    },
+    {
+      "start": 611.576,
+      "end": 612.83,
+      "text": "Not full rights."
+    },
+    {
+      "start": 613.13,
+      "end": 616.659,
+      "text": "A specific, in-between standard, built for a specific place."
+    },
+    {
+      "start": 616.959,
+      "end": 622.764,
+      "text": "A teacher does not get to search you on a whim, and does not get to keep searching once the reason has run out."
+    },
+    {
+      "start": 623.064,
+      "end": 630.216,
+      "text": "But the bar they have to clear is lower than a police officer's, and that is the part almost nobody knows until the bag is already open."
+    },
+    {
+      "start": 630.816,
+      "end": 636.528,
+      "text": "The honest takeaway is not that you should be afraid of your own school, and it is not that your school owns you."
+    },
+    {
+      "start": 636.828,
+      "end": 641.1,
+      "text": "It is that the rule is narrower, and more exact, than either slogan."
+    },
+    {
+      "start": 641.4,
+      "end": 646.137,
+      "text": "Reasonable suspicion, tied to a real reason, kept in proportion to it."
+    },
+    {
+      "start": 646.437,
+      "end": 654.1,
+      "text": "That is the line one fourteen-year-old's purse drew, on one ordinary morning, for every locker and every backpack that came after her."
+    },
+    {
+      "start": 656.1,
+      "end": 665.295,
+      "text": "If you walked in here assuming students either hold the full Fourth Amendment or none of it, and you can now see it is a third thing sitting in between, that is worth a like."
+    },
+    {
+      "start": 665.595,
+      "end": 672.375,
+      "text": "It tells the channel to keep drawing these lines in plain language, before the day you are the one being asked to open your bag."
+    }
+  ],
+  "graphics": [],
+  "figures": [
+    {
+      "start": 5.45,
+      "end": 11.25,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction - no real person depicted"
+    },
+    {
+      "start": 14.151,
+      "end": 19.951,
+      "kind": "kinetic",
+      "lines": [
+        "THE BAG",
+        "ON THE DESK"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "BAG"
+      ]
+    },
+    {
+      "start": 22.851,
+      "end": 28.651,
+      "kind": "pindropmap",
+      "pins": [
+        {
+          "x": 0.3,
+          "y": 0.4,
+          "label": "New Jersey"
+        }
+      ]
+    },
+    {
+      "start": 31.552,
+      "end": 37.352,
+      "kind": "mechanism",
+      "mechanism": "closingdoor",
+      "label": "a restroom door swings shut"
+    },
+    {
+      "start": 94.663,
+      "end": 100.463,
+      "kind": "acttitle",
+      "title": "THE SEARCH",
+      "kicker": "ACT ONE",
+      "index": 1
+    },
+    {
+      "start": 108.549,
+      "end": 114.349,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "restroom",
+          "text": "two students found smoking"
+        },
+        {
+          "year": "front office",
+          "text": "sent to the vice principal"
+        },
+        {
+          "year": "the purse",
+          "text": "cigarettes, then rolling papers in view"
+        },
+        {
+          "year": "juvenile court",
+          "text": "motion to suppress denied; found delinquent"
+        },
+        {
+          "year": "appeals",
+          "text": "state high court suppressed; the Supreme Court reversed"
+        }
+      ]
+    },
+    {
+      "start": 122.436,
+      "end": 128.236,
+      "kind": "lowerthird",
+      "primary": "A 14-year-old freshman",
+      "secondary": "known in the record only by her initials, T.L.O."
+    },
+    {
+      "start": 136.322,
+      "end": 142.122,
+      "kind": "mechanism",
+      "mechanism": "faultsplit",
+      "label": "rolling papers in view - suspicion shifts"
+    },
+    {
+      "start": 150.208,
+      "end": 156.008,
+      "kind": "routemap",
+      "label": "the search widens, one step at a time",
+      "pins": [
+        {
+          "x": 0.16,
+          "y": 0.6,
+          "label": "cigarettes"
+        },
+        {
+          "x": 0.4,
+          "y": 0.44,
+          "label": "rolling papers"
+        },
+        {
+          "x": 0.64,
+          "y": 0.56,
+          "label": "marijuana"
+        },
+        {
+          "x": 0.86,
+          "y": 0.48,
+          "label": "evidence of dealing"
+        }
+      ]
+    },
+    {
+      "start": 164.094,
+      "end": 169.894,
+      "kind": "bar",
+      "items": [
+        {
+          "label": "cigarettes",
+          "value": 1
+        },
+        {
+          "label": "rolling papers",
+          "value": 1
+        },
+        {
+          "label": "pipe, empty bags",
+          "value": 2
+        },
+        {
+          "label": "cash, a list, two letters",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "start": 177.981,
+      "end": 183.781,
+      "kind": "numberticker",
+      "value": 14,
+      "label": "a 14-year-old freshman"
+    },
+    {
+      "start": 191.867,
+      "end": 197.667,
+      "kind": "stat",
+      "value": 2,
+      "label": "two students, one restroom, one broken rule",
+      "topLabel": "WHERE IT BEGAN"
+    },
+    {
+      "start": 214.033,
+      "end": 219.833,
+      "kind": "acttitle",
+      "title": "RIGHTS AT THE SCHOOLHOUSE",
+      "kicker": "ACT TWO",
+      "index": 2
+    },
+    {
+      "start": 224.48,
+      "end": 230.28,
+      "kind": "lowerthird",
+      "primary": "Does the Fourth Amendment apply inside a public school?",
+      "secondary": "and if it does, by what standard?"
+    },
+    {
+      "start": 234.927,
+      "end": 240.727,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "ON THE STREET: WARRANT AND PROBABLE CAUSE",
+          "value": 2
+        },
+        {
+          "label": "IN SCHOOL: NO WARRANT, BUT THE FOURTH AMENDMENT STILL APPLIES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "start": 245.374,
+      "end": 251.174,
+      "kind": "kinetic",
+      "lines": [
+        "THE FOURTH AMENDMENT",
+        "WALKS IN WITH YOU"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "WITH YOU"
+      ]
+    },
+    {
+      "start": 255.821,
+      "end": 261.62,
+      "kind": "stat",
+      "value": 2,
+      "label": "two easy answers the Court refused",
+      "topLabel": "NOT NO RIGHTS, NOT FULL RIGHTS"
+    },
+    {
+      "start": 266.267,
+      "end": 272.067,
+      "kind": "mechanism",
+      "mechanism": "gears",
+      "label": "two extremes rejected - a balance"
+    },
+    {
+      "start": 276.714,
+      "end": 282.514,
+      "kind": "lowerthird",
+      "primary": "The Fourth Amendment applies to public school officials",
+      "secondary": "students do not shed their rights at the schoolhouse door"
+    },
+    {
+      "start": 287.161,
+      "end": 292.961,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "NOT NO RIGHTS",
+          "value": 1
+        },
+        {
+          "label": "NOT FULL RIGHTS",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "start": 297.608,
+      "end": 303.408,
+      "kind": "stat",
+      "value": 1,
+      "label": "a lowered standard, not no standard",
+      "topLabel": "REASONABLE SUSPICION"
+    },
+    {
+      "start": 323.671,
+      "end": 329.471,
+      "kind": "acttitle",
+      "title": "REASONABLENESS",
+      "kicker": "ACT THREE",
+      "index": 3
+    },
+    {
+      "start": 345.351,
+      "end": 351.151,
+      "kind": "votetally",
+      "majority": 6,
+      "dissent": 3,
+      "label": "the Court reversed and upheld the search"
+    },
+    {
+      "start": 367.031,
+      "end": 372.831,
+      "kind": "lowerthird",
+      "primary": "New Jersey v. T.L.O.",
+      "secondary": "469 U.S. 325 (1985)"
+    },
+    {
+      "start": 388.711,
+      "end": 394.511,
+      "kind": "stat",
+      "value": 469,
+      "label": "U.S. Reports, page 325 - decided 1985",
+      "topLabel": "THE CITATION"
+    },
+    {
+      "start": 410.391,
+      "end": 416.191,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "STREET: PROBABLE CAUSE",
+          "value": 2
+        },
+        {
+          "label": "SCHOOL: NO WARRANT, NO PROBABLE CAUSE, REASONABLE SUSPICION - STILL APPLIES",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "start": 432.071,
+      "end": 437.871,
+      "kind": "quote",
+      "quote": "reasonable grounds for suspecting that the search will turn up evidence that the student has violated or is violating either the law or the rules of the school",
+      "attribution": "Justice White, for the Court"
+    },
+    {
+      "start": 453.75,
+      "end": 459.55,
+      "kind": "quote",
+      "quote": "reasonably related to the objectives of the search and not excessively intrusive in light of the age and sex of the student and the nature of the infraction",
+      "attribution": "Justice White, for the Court"
+    },
+    {
+      "start": 475.43,
+      "end": 481.23,
+      "kind": "stat",
+      "value": 2,
+      "label": "justified at its inception, reasonable in scope",
+      "topLabel": "A TWO-PART TEST"
+    },
+    {
+      "start": 497.11,
+      "end": 502.91,
+      "kind": "numberticker",
+      "value": 1985,
+      "label": "decided January 15, 1985",
+      "group": false
+    },
+    {
+      "start": 518.79,
+      "end": 524.59,
+      "kind": "mechanism",
+      "mechanism": "faultsplit",
+      "label": "inception then scope - each step builds on the last"
+    },
+    {
+      "start": 540.47,
+      "end": 546.27,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "1984",
+          "text": "argued, then reargued"
+        },
+        {
+          "year": "Jan 15, 1985",
+          "text": "decided, 6-3"
+        },
+        {
+          "year": "reversed",
+          "text": "the state high court's suppression undone"
+        }
+      ]
+    },
+    {
+      "start": 573.268,
+      "end": 579.068,
+      "kind": "kinetic",
+      "lines": [
+        "NOT NO RIGHTS.",
+        "NOT FULL RIGHTS."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "RIGHTS"
+      ]
+    },
+    {
+      "start": 597.184,
+      "end": 602.984,
+      "kind": "quote",
+      "quote": "reasonably related in scope to the circumstances which justified the interference in the first place",
+      "attribution": "Justice White, for the Court"
+    },
+    {
+      "start": 621.101,
+      "end": 626.901,
+      "kind": "lowerthird",
+      "primary": "When police step in, a higher standard can return",
+      "secondary": "footnote 7 - this case is about school officials only"
+    },
+    {
+      "start": 645.017,
+      "end": 650.817,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction - no real person depicted"
+    }
+  ],
+  "overlays": [
+    "tlo/overlay/O01__tlo_green_dust_light_01.mp4",
+    "tlo/overlay/O02__tlo_green_dust_light_02.mp4",
+    "tlo/overlay/O03__tlo_green_dust_light_03.mp4",
+    "tlo/overlay/O04__tlo_green_dust_light_04.mp4",
+    "tlo/overlay/O05__tlo_green_dust_light_05.mp4",
+    "tlo/overlay/O06__tlo_green_dust_light_06.mp4",
+    "tlo/overlay/O07__tlo_green_dust_light_07.mp4",
+    "tlo/overlay/O08__tlo_green_dust_light_08.mp4",
+    "tlo/overlay/O09__tlo_green_dust_light_09.mp4",
+    "tlo/overlay/O10__tlo_green_dust_light_10.mp4",
+    "tlo/overlay/O11__tlo_green_dust_light_11.mp4",
+    "tlo/overlay/O12__tlo_green_dust_light_12.mp4"
+  ]
+}

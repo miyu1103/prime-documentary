@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 200,
+  "episode_id": "PD-2026-053-norfolk",
+  "slug": "norfolk",
+  "loop": true,
+  "loop_join": "The last three beats (p23, p24, p25) rewind through the opening plates in reverse -- short200_03.png, then short200_02.png, then short200_01.png -- under the FULL CASE card, with p25 (short200_01.png, the bare interrogation lamp burning into camera, flagged rewind+isCta) held to the final frame. Frame 0 (p01) is that same short200_01.png interrogation-lamp plate, so the loop closes on the identical image the short opened on.",
+  "second_watch_detail": "The bare interrogation lamp in p01/p25 reads as a generic procedural establishing shot on the first pass; once L4 explains that three of the seven charged sailors never confessed at all, the same static lamp over an empty table reads as the site where statements were broken out of men who had nothing to confess, not evidence obtained from the guilty.",
+  "funnel_question_left_for_longform": "Why did Virginia accept a guilty plea from a DNA-excluded sailor six weeks after its own laboratory identified the real killer?",
+  "funnel_long_title": "4 Sailors Confess to One Murder. DNA Clears Each One.",
+  "funnel_long_video_id": "H8j_K1x9Dog",
+  "description_line_1": "▶ FULL CASE: 4 Sailors Confess to One Murder. DNA Clears Each One. | https://youtu.be/H8j_K1x9Dog",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "4 Sailors Confess to One Murder. DNA",
+    "ctaLongThumbSrc": "shorts/short200/short200_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "Why did Virginia accept a guilty plea from a DNA-excluded sailor six weeks after its own laboratory identified the real killer? The full case is here: https://youtu.be/H8j_K1x9Dog",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS list and inline comments in remotion/src/data/short200.ts (p23/p24/p25 rewind into frame 0), the standing question from that same file's header docstring, the spoken lines checked against episodes/PD-2026-053-norfolk/09_package/short200_lines.v001.json, and the CTA block from short200.ts. Layer 4 -- the Studio related-video setting, which the API cannot set -- already has a row for short200 in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md (the \"まだ公開していないショート\" table, added 2026-09-01), because short200 has not been uploaded yet; that row is a placeholder pointing at the long-form video id and layer 4 itself has NOT been performed and must be done manually in Studio after short200 is uploaded and gets its own video id."
+}

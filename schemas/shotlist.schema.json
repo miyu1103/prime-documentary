@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/shotlist.schema.json",
+  "title": "PD Shotlist (scene -> search keywords)",
+  "description": "Per-span sourcing sheet derived from the annotated script. Drives free-stock search (U2) and human review. Read-only transform output; not an approval artifact.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "episode_id",
+    "revision",
+    "generated_from",
+    "source_annotated_sha256",
+    "shots",
+    "totals"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "episode_id": {"type": "string", "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"},
+    "revision": {"type": "string", "pattern": "^v[0-9]{3}$"},
+    "generated_from": {"type": "string"},
+    "source_annotated_sha256": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "span_id",
+          "narrative_function",
+          "estimated_seconds",
+          "suggested_asset_type",
+          "motion",
+          "priority",
+          "search_keywords",
+          "on_screen_text",
+          "rights_note"
+        ],
+        "properties": {
+          "span_id": {"type": "string", "pattern": "^SPN-[0-9]{4}$"},
+          "chapter_id": {"type": ["string", "null"]},
+          "narrative_function": {"type": "string"},
+          "estimated_seconds": {"type": "number", "minimum": 0},
+          "suggested_asset_type": {
+            "description": "Suggested primary source for the shot. ai_image (Codex/SDXL) is first-class and may be used liberally; stock_video is preferred where real motion reads more authentically.",
+            "enum": ["stock_video", "stock_image", "ai_image", "motion_graphic", "archival_pd"]
+          },
+          "motion": {
+            "description": "How the shot must move so it never looks static/cheap ('shoboi'). Images are NEVER left static.",
+            "enum": ["video_native", "ken_burns", "parallax", "graphic_anim", "static"]
+          },
+          "priority": {"enum": ["A", "B", "C"]},
+          "search_keywords": {"type": "array", "items": {"type": "string"}},
+          "on_screen_text": {"type": "array", "items": {"type": "string"}},
+          "visual_intent": {"type": "string"},
+          "rights_note": {"type": "string"}
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shot_count", "estimated_total_seconds", "by_asset_type"],
+      "properties": {
+        "shot_count": {"type": "integer", "minimum": 0},
+        "estimated_total_seconds": {"type": "number", "minimum": 0},
+        "by_asset_type": {"type": "object", "additionalProperties": {"type": "integer"}}
+      }
+    }
+  }
+}

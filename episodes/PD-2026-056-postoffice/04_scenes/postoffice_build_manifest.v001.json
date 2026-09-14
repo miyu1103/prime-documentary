@@ -1,0 +1,44 @@
+{
+  "episode_id": "PD-2026-056-postoffice",
+  "producer": "scripts/build_case_film_generic.py",
+  "inputs": {
+    "assets": "episodes\\PD-2026-056-postoffice\\05_visuals\\asset_manifest.v003.json",
+    "narr": "episodes\\PD-2026-056-postoffice\\06_audio\\narration_index.v001.json",
+    "config": "episodes\\_planning\\EP56_postoffice_filmconfig.v001.json"
+  },
+  "report": {
+    "slug": "postoffice",
+    "cuts": 384,
+    "factory": 262,
+    "motion": 0,
+    "still": 122,
+    "pools": {
+      "factory": 240,
+      "motion": 0,
+      "still": 227,
+      "people": 16
+    },
+    "video_cuts": 262,
+    "still_cuts": 122,
+    "video_share": 0.6823,
+    "distinct_assets": 362,
+    "distinct_ratio": 0.9427,
+    "max_reuse": 2,
+    "avg_cut_sec": 4.6,
+    "figures": 88,
+    "captions": 476,
+    "narrationSeconds": 1765.923,
+    "duration_frames": 53593,
+    "duration_sec_with_bookends": 1786.43,
+    "sections": [
+      "HOOK",
+      "OP",
+      "ACT_1",
+      "ACT_2",
+      "ACT_3",
+      "ACT_4",
+      "ACT_5",
+      "ENDING"
+    ]
+  }
+}

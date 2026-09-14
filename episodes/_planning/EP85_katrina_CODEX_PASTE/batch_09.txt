@@ -1,0 +1,56 @@
+EP85_katrina — 画像発注 バッチ 9/24（8枚）
+区分: ACT_2 — 水が実際にしたこと
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, person in water, rooftop figure, rescue, school bus, crowd, body, corpse, cross marker, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) W065.png
+   [W065]  flags: 
+   A slide rule and a pocket calculator side by side on a desk, one lamp
+
+2) W066.png
+   [W066]  flags: 
+   Two blank report binders side by side on a plain desk, hard light
+
+3) W067.png
+   [W067]  flags: 
+   A wall of blank report spines on a technical library shelf, hard side light
+
+4) W068.png
+   [W068]  flags: 
+   An empty engineering office at night, drawing boards and desks, one lamp burning
+
+5) W069.png
+   [W069]  flags: 
+   A bathymetric chart pinned to a wall with no readable labels, one lamp
+
+6) W070.png
+   [W070]  flags: 
+   A model of an urban district under a sheet of clear water in a laboratory, bright light
+
+7) W071.png
+   [W071]  flags: 
+   A pump discharge pipe running dry, close, bright daylight
+
+8) W072.png
+   [W072]  flags: 
+   A flooded street shown at two different water levels as a split composition, bright daylight

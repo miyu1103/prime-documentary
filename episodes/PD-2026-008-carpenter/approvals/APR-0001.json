@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-008-carpenter",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T00:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T00:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner content/direction sign-off for the Carpenter v. United States script v001 (part of the EP6-8 trilogy approval, see episodes/_planning/EP6-8_HANDOFF.md sec.8). Bound to content_hash sha256:ce5869e9bc192b2ed722dff4d3ffa91b42dfe2af70325235434f3ef1c53c377b — re-approval required if the script revision/hash changes (rules/12). Facts fact-checked 2026-06-20 against the primary opinion (585 U.S. 296). Carries forward to the verified revision provided no fact or claim changes. [v001 extended 2026-06-20 to meet the ~12min/1,700-word target with substantive, claim-grounded content only — no fact or claim changes; content sign-off carries forward; hash re-bound.]",
+  "conditions": [
+    "Run script_qc (readability / anti-filler / claim-link audit) and a draft-voice timing check before promotion to script_verified.",
+    "Capture durable content hashes for SRC-0001/0002/0003 before publish.",
+    "Keep the vote as 5-4 (CLM-0002); ignore the stray 6-3 AI-summary. Describe Carpenter neutrally on the public record."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-008-carpenter/03_script/script.annotated.v001.json"
+}

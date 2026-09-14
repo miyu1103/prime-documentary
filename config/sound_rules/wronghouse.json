@@ -1,0 +1,353 @@
+[
+ {
+  "_comment": "EP70 wronghouse. Migrated 2026-08-22 from scripts/write_wronghouse_sound_plan.py (invariant 14: the one-off predated the generalised tool). The rule list is byte-identical to the one that produced this episode's shipped cue plan -- 81 cues / 39.9 min = 2.025/min PASS -- so re-running write_sound_plan.py --slug <slug> reproduces it. Nothing was retuned during the move.",
+  "needle": "__doc__",
+  "kind": "click",
+  "anchor": "__doc__"
+ },
+ {
+  "needle": "flash-bang",
+  "kind": "impact",
+  "anchor": "flash-bang"
+ },
+ {
+  "needle": "door comes in",
+  "kind": "impact",
+  "anchor": "door"
+ },
+ {
+  "needle": "being rammed",
+  "kind": "impact",
+  "anchor": "rammed"
+ },
+ {
+  "needle": "splintered",
+  "kind": "impact",
+  "anchor": "splintered"
+ },
+ {
+  "needle": "knocks",
+  "kind": "knock",
+  "anchor": "knocks"
+ },
+ {
+  "needle": "announces",
+  "kind": "knock",
+  "anchor": "announces"
+ },
+ {
+  "needle": "handcuffs",
+  "kind": "click",
+  "anchor": "handcuffs"
+ },
+ {
+  "needle": "shotgun",
+  "kind": "click",
+  "anchor": "shotgun"
+ },
+ {
+  "needle": "closet doors",
+  "kind": "latch",
+  "anchor": "closet"
+ },
+ {
+  "needle": "closet",
+  "kind": "latch",
+  "anchor": "closet"
+ },
+ {
+  "needle": "line of vehicles",
+  "kind": "pass-by",
+  "anchor": "vehicles"
+ },
+ {
+  "needle": "column",
+  "kind": "pass-by",
+  "anchor": "column"
+ },
+ {
+  "needle": "drove",
+  "kind": "pass-by",
+  "anchor": "drove"
+ },
+ {
+  "needle": "driven",
+  "kind": "pass-by",
+  "anchor": "driven"
+ },
+ {
+  "needle": "vehicle stops",
+  "kind": "pass-by",
+  "anchor": "vehicle"
+ },
+ {
+  "needle": "car park",
+  "kind": "pass-by",
+  "anchor": "car"
+ },
+ {
+  "needle": "headlights",
+  "kind": "pass-by",
+  "anchor": "headlights"
+ },
+ {
+  "needle": "mail",
+  "kind": "rustle",
+  "anchor": "mail"
+ },
+ {
+  "needle": "warrant",
+  "kind": "rustle",
+  "anchor": "warrant"
+ },
+ {
+  "needle": "complaint",
+  "kind": "rustle",
+  "anchor": "complaint"
+ },
+ {
+  "needle": "affidavit",
+  "kind": "rustle",
+  "anchor": "affidavit"
+ },
+ {
+  "needle": "paperwork",
+  "kind": "rustle",
+  "anchor": "paperwork"
+ },
+ {
+  "needle": "Operation Order",
+  "kind": "rustle",
+  "anchor": "Order"
+ },
+ {
+  "needle": "addendum",
+  "kind": "rustle",
+  "anchor": "addendum"
+ },
+ {
+  "needle": "file",
+  "kind": "rustle",
+  "anchor": "file"
+ },
+ {
+  "needle": "document",
+  "kind": "rustle",
+  "anchor": "document"
+ },
+ {
+  "needle": "brief",
+  "kind": "page turn",
+  "anchor": "brief"
+ },
+ {
+  "needle": "opinion",
+  "kind": "page turn",
+  "anchor": "opinion"
+ },
+ {
+  "needle": "record",
+  "kind": "page turn",
+  "anchor": "record"
+ },
+ {
+  "needle": "statute",
+  "kind": "page turn",
+  "anchor": "statute"
+ },
+ {
+  "needle": "business card",
+  "kind": "rustle",
+  "anchor": "card"
+ },
+ {
+  "needle": "photograph",
+  "kind": "camera",
+  "anchor": "photograph"
+ },
+ {
+  "needle": "photographs",
+  "kind": "camera",
+  "anchor": "photographs"
+ },
+ {
+  "needle": "photographed",
+  "kind": "camera",
+  "anchor": "photographed"
+ },
+ {
+  "needle": "binoculars",
+  "kind": "click",
+  "anchor": "binoculars"
+ },
+ {
+  "needle": "Supreme Court",
+  "kind": "gavel",
+  "anchor": "Court"
+ },
+ {
+  "needle": "Eleventh Circuit",
+  "kind": "gavel",
+  "anchor": "Circuit"
+ },
+ {
+  "needle": "district court",
+  "kind": "gavel",
+  "anchor": "court"
+ },
+ {
+  "needle": "jury",
+  "kind": "gavel",
+  "anchor": "jury"
+ },
+ {
+  "needle": "argued",
+  "kind": "gavel",
+  "anchor": "argued"
+ },
+ {
+  "needle": "ruled",
+  "kind": "gavel",
+  "anchor": "ruled"
+ },
+ {
+  "needle": "dismissed",
+  "kind": "gavel",
+  "anchor": "dismissed"
+ },
+ {
+  "needle": "signed",
+  "kind": "stamp",
+  "anchor": "signed"
+ },
+ {
+  "needle": "filed",
+  "kind": "stamp",
+  "anchor": "filed"
+ },
+ {
+  "needle": "sworn",
+  "kind": "stamp",
+  "anchor": "sworn"
+ },
+ {
+  "needle": "stamp",
+  "kind": "stamp",
+  "anchor": "stamp"
+ },
+ {
+  "needle": "years later",
+  "kind": "clock",
+  "anchor": "years"
+ },
+ {
+  "needle": "nine years",
+  "kind": "clock",
+  "anchor": "years"
+ },
+ {
+  "needle": "minutes",
+  "kind": "clock",
+  "anchor": "minutes"
+ },
+ {
+  "needle": "o'clock",
+  "kind": "clock",
+  "anchor": "clock"
+ },
+ {
+  "needle": "morning",
+  "kind": "clock",
+  "anchor": "morning"
+ },
+ {
+  "needle": "hearing",
+  "kind": "gavel",
+  "anchor": "hearing"
+ },
+ {
+  "needle": "appeal",
+  "kind": "page turn",
+  "anchor": "appeal"
+ },
+ {
+  "needle": "motion",
+  "kind": "page turn",
+  "anchor": "motion"
+ },
+ {
+  "needle": "testimony",
+  "kind": "page turn",
+  "anchor": "testimony"
+ },
+ {
+  "needle": "Congress",
+  "kind": "stamp",
+  "anchor": "Congress"
+ },
+ {
+  "needle": "Senate",
+  "kind": "stamp",
+  "anchor": "Senate"
+ },
+ {
+  "needle": "the Act",
+  "kind": "stamp",
+  "anchor": "Act"
+ },
+ {
+  "needle": "amendment",
+  "kind": "stamp",
+  "anchor": "amendment"
+ },
+ {
+  "needle": "mailbox",
+  "kind": "latch",
+  "anchor": "mailbox"
+ },
+ {
+  "needle": "gate",
+  "kind": "latch",
+  "anchor": "gate"
+ },
+ {
+  "needle": "phone",
+  "kind": "click",
+  "anchor": "phone"
+ },
+ {
+  "needle": "call",
+  "kind": "click",
+  "anchor": "call"
+ },
+ {
+  "needle": "window",
+  "kind": "rustle",
+  "anchor": "window"
+ },
+ {
+  "needle": "envelope",
+  "kind": "rustle",
+  "anchor": "envelope"
+ },
+ {
+  "needle": "stoop",
+  "kind": "footstep",
+  "anchor": "stoop"
+ },
+ {
+  "needle": "stairs",
+  "kind": "footstep",
+  "anchor": "stairs"
+ },
+ {
+  "needle": "walked",
+  "kind": "footstep",
+  "anchor": "walked"
+ },
+ {
+  "needle": "hallway",
+  "kind": "footstep",
+  "anchor": "hallway"
+ }
+]
