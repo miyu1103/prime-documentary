@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0007",
+  "episode_id": "PD-2026-006-terry",
+  "target_type": "publish",
+  "target_id": "dcqWIPXun7c_schedule_20260621_1200_jst",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T23:59:00+09:00",
+  "requested_by": "owner",
+  "decided_at": "2026-06-20T23:59:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner clarified the Terry YouTube release should remain scheduled for 2026-06-21 12:00 JST: '21でいいよ'. Approval covers updating the existing scheduled private YouTube video dcqWIPXun7c back to that exact public release time. It does not authorize uploading a duplicate, changing the final video file, changing the locked script/claims, deleting videos, or immediate public publish.",
+  "conditions": [
+    "Update only the existing YouTube video_id dcqWIPXun7c on the allowlisted Prime Documentary channel.",
+    "Schedule public release for 2026-06-21T12:00:00+09:00 (2026-06-21T03:00:00Z).",
+    "Do not upload a duplicate video.",
+    "Keep privacy_status=private before scheduled release.",
+    "Keep madeForKids=false and containsSyntheticMedia=true.",
+    "Keep the approved YouTube title and description metadata.",
+    "Do not alter locked script, annotated script, or claims."
+  ],
+  "expires_at": "2026-06-21T12:00:00+09:00",
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-006-terry/09_package/youtube_meta.v001.json"
+}

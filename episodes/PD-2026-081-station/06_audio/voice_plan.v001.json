@@ -1,0 +1,2613 @@
+{
+  "episode_id": "PD-2026-081-station",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "From the car park it is a pair of doors.",
+      "text_sha256": "sha256:df58d088299ec7f88929c7cd9b4b5b3e4bea7386cc5e6ea7d56928079ce08eba",
+      "idempotency_key": "sha256:f68650c5fa554b10e08944cb186834a48fed4cd9939a170d091db828e81557d7"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Wide, painted, obvious.",
+      "text_sha256": "sha256:552eebd4ad666edb48c0c5eaab11ee21bb343306746c611707a0b0e9278e310b",
+      "idempotency_key": "sha256:7a6499d9c4148b1adf961db8bfb23cc2bdd5a684615cbec620925cde0b6b672c"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "The way in.",
+      "text_sha256": "sha256:79db18c8ca6b7178c6d6c2b43099237d6941b0a1107a7df2a3d4b013685597c7",
+      "idempotency_key": "sha256:787720bafd9d06aa695dc2a12d78ec15f89c23d52af799759c6864671d50147d"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "One step inside there is a small lobby, and at the far side of that lobby there is one door.",
+      "text_sha256": "sha256:f9eb29a83b425ee2633ecb19a4f1af69a63afe4061a5ff0d2d9082c2b639a0ef",
+      "idempotency_key": "sha256:29429a14b0c6dadfbfbd5399befcb2736cbe487e903cf9ee92331ea0a0678af2"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "On a February night in 2003, somewhere between four hundred and forty and four hundred and fifty-eight people were in the building behind it.",
+      "text_sha256": "sha256:1632db1b356a58b4205aaca615f328d358473676f7ea7c100fdf183fc113346d",
+      "idempotency_key": "sha256:72d5ca2e929f54019d2f8ce391e193b3699664718d929ab9f83e0a14be3ba802"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "They had about ninety seconds.",
+      "text_sha256": "sha256:921cf74a4df427450dfca3a8cfdb8cda3f3a72640e81195618a0ad02203dab4d",
+      "idempotency_key": "sha256:119b5bc34323add51711203280c704ca7168ac7820de528828fd86632e02d3d7"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "So why does a building have two doors on the outside and one on the inside?",
+      "text_sha256": "sha256:410ac2d99a197c475804c2175e474889868693c8de7ec17fb1de8f6b6b39989a",
+      "idempotency_key": "sha256:b3d320a418ab72caf9a8367407693adf6f3c511134ad4f6bea1269d5cc2cb600"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Start with the building, because it is very ordinary, and that is the point.",
+      "text_sha256": "sha256:d6a8f947f82a1eeca910fddb7abfa63caa9038f64e6997834a7867984ce2cb25",
+      "idempotency_key": "sha256:2f9c50da43c71225ea4ef21128724606d99858db6771ecb00b6b34e43b6ef041"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Station stood at 211 Cowesett Avenue in West Warwick, Rhode Island.",
+      "text_sha256": "sha256:53be8f14136b62d9ddb18a66c395a9984b450fdaad34c4246f58cf38a9d3f2ec",
+      "idempotency_key": "sha256:146fd04da8c5be84a7493688fcb2a246ef94c35dc555d526d47401bb5734f1e5"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Single storey.",
+      "text_sha256": "sha256:699f73df0cd9185f329d0d8453a0bd1ab13257a3773ecbd9bb1e475743a78313",
+      "idempotency_key": "sha256:e800689a3d85df68eac95739f855f460277108476b3351653ead123518d72376"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Wood frame.",
+      "text_sha256": "sha256:2bea1cefaf4eef264cdaff39d27896bfe3bac34ee0849feff265c8486c425f7f",
+      "idempotency_key": "sha256:e8b2d0dd5b881a028ff09989fcad90b584eb5569e7d57739f46dae6b66ef8c81"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No sprinklers.",
+      "text_sha256": "sha256:46abcca8cc25d68e8987139e79d35522e95ef4cd8d14d9b96f844198abad8b9b",
+      "idempotency_key": "sha256:beba5ef7b51874e8b25aa4a85a830aafab16b7b3b349999fc8c1998139096814"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "About four hundred and twelve square metres — call it a large barn.",
+      "text_sha256": "sha256:3902598254d9b87bf7c093638f56adc4fa3d49f90058f2bc122cfcca91cf77f4",
+      "idempotency_key": "sha256:97906d37dd885de0c27cf9141261938380f9a4ee75139874f95fa7101ea6c43c"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Roadside buildings like it exist in every state.",
+      "text_sha256": "sha256:eef67ba0a094ba78c529af6dcf7cd668b46aec7ad879791df14b261de5a0602b",
+      "idempotency_key": "sha256:2e1326e92b0311840ec6e9e26272056e42f326218f3866945a9bb59bf8553464"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is not an accusation.",
+      "text_sha256": "sha256:22230b2077fa5864c021e69d77bb99a1f85df47eade9ed0ba6a030de9a060040",
+      "idempotency_key": "sha256:d2ce3d46b68d23f405c90fd588b9214bc881ee602316b4e2e8c5314c757c9c62"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is a description of the population this story belongs to.",
+      "text_sha256": "sha256:766576c563bd9cbbd3dc9f3c5386d74429848fe14c142d1e3f0875563c2bd327",
+      "idempotency_key": "sha256:2af6468cf2aeef32cbaf0125ae84d5e6a4966c3e434cb9e4f3e466c03aa9f431"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three exits were available to the people inside.",
+      "text_sha256": "sha256:f383e262fb16ce2219609002d3f4ec5bd4b50f7196931c25a4b3525ee4416488",
+      "idempotency_key": "sha256:023e10288b7bc05f6025d763fb49ac80289f8df66a57b25d980fad0a8c3b9dfe"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The front main entrance, on the north side.",
+      "text_sha256": "sha256:dfe2771277952aa849860cd8e022a3bb6436b51e849d0624860782aca15c7009",
+      "idempotency_key": "sha256:930536594866a6d1d8909d0fbd4cef1279c56129252b39b7fd12e8a60b33228a"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A single door on the west, near the platform the band used as a stage.",
+      "text_sha256": "sha256:25c87c1ae9a57afb72c2d58027f889a0ff55bbd707f5abef4f23a3dfe6ed6f94",
+      "idempotency_key": "sha256:cd91bf54295292195b7109a0ee5ba9e0ff2838ff433a60f619a0efedbdada65b"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And a single door on the east, at the side of the main bar.",
+      "text_sha256": "sha256:caf233691a4b00ba2a5921c9cd6af285d10f1bf917cda275a6276009b33e10a9",
+      "idempotency_key": "sha256:6f08cde8ffcfe63444f758d4685db1e0d98fce5f30c6c268538db04e5262a412"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There was a fourth door, in the kitchen.",
+      "text_sha256": "sha256:db4e6f7f892671435da681e0312967c320c277241900e332c4d737b7225cb95b",
+      "idempotency_key": "sha256:5bf18b48388e05b4920c10dbeb5f7c801b998e5d688795bc6e65db61224fe7ae"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It was not considered accessible to patrons.",
+      "text_sha256": "sha256:7a3362e65c5b9901ca544efffb6f3446e1face0d6dbd557140846a027edbbf2e",
+      "idempotency_key": "sha256:733735f6c0b2488a86bccd7fe4e90473a2971af97229f46a01a7232ece87fc73"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "So: three.",
+      "text_sha256": "sha256:a86a516211b7e0b7573675f1cf451a9e82c999f29843fae333e73a79e21bc3fa",
+      "idempotency_key": "sha256:0c185c36651e9caa44d1a41cd5272c4a0489ee581b1208c82cbce244a48bb314"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Now look closely at the first one, because the entire film is inside this detail.",
+      "text_sha256": "sha256:b9ae2bb32a0419cfc7c76d9c9ce722c1624e5ef444929de9e57d79a2077fc411",
+      "idempotency_key": "sha256:9cb35904c38f4ceb856b0379bc8b5f29a10ef731afa82925ba6f409c801a9bc0"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The front main entrance is a pair of doors.",
+      "text_sha256": "sha256:361c708ec518720f7fe504323e56619922748e52a314e47a27cab85ff2a36036",
+      "idempotency_key": "sha256:b3a4f2efd3244682f35901e2ccc37a9c59f88138c77aa39256a676d9ef6a7ed8"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "From outside, from the car park, from the road, it is plainly the way in and plainly wide.",
+      "text_sha256": "sha256:5aa852184c8f9497eb1912d91bd78f2d0759ec4fa2bde0510bbd0af95afec64d",
+      "idempotency_key": "sha256:457b89c9fb5d755d4bf19c9b6dc5938acf4e7756f37abe9addd0a5904a50abec"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Behind those doors is a vestibule — a small lobby, the sort of thing a New England building has so that February does not come inside every time somebody arrives.",
+      "text_sha256": "sha256:043a0b18a3792c150ce538553d186b98d6c90fec1158891ee9b0989b3609911a",
+      "idempotency_key": "sha256:19917e591c6ad55fd588395c17241cd4eaee00652bb83382149a719e401181aa"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And on the far side of that vestibule there is one door.",
+      "text_sha256": "sha256:fba913756f5cedc1ae16e6cfc9f34a675b9fc0589e797c688cc4b18bade67b0f",
+      "idempotency_key": "sha256:8bb8e4f16f4fdce2f207e33f176e1ed043e25e45170fd5839d3f5f5ede628a6a"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "NIST states the consequence in a single line, and it is the most important sentence in the report.",
+      "text_sha256": "sha256:92a3f0c42e673954203e744e1053c869009c8e9af609f3184d69723a91271bce",
+      "idempotency_key": "sha256:69d7c04411c5711e484eec88809b4e053ee9c4dbe6042dff73c8667bf11a8cc6"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The rate of egress from the main entrance was limited by the single doorway inside the vestibule — not by the double doors visible from the outside.",
+      "text_sha256": "sha256:b129dbbbb49a631d68573da2f763d86374bcb64b20c913d35558cada8b7cfd61",
+      "idempotency_key": "sha256:55fb92a1bc9337e6016d50fdfceb7ba5e1c9855796bdf170b8db3316775aaaf4"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Stay with that a moment, because it is not a defect anyone would see.",
+      "text_sha256": "sha256:f986f7058a38c94380b2ef879aa87bc4415f206b17bd4fb2c4381a45863f164b",
+      "idempotency_key": "sha256:adbe79ae7861ce5319b73b02f9b258bc191d481743845633d32c2fab69a7d663"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Walk in, and you go through the wide doors first and the narrow one second.",
+      "text_sha256": "sha256:48502487182f8db721f52f252c535b541da4a350d4bbd9eef8511ab04b842fce",
+      "idempotency_key": "sha256:610d6d44f400eefa54e7a07ae356fe9d0c4518e8572c579d7aa93dc8c401b4f6"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Your experience of the entrance is: wide, then a small lobby, then through.",
+      "text_sha256": "sha256:22ecca9a60f9933bccbae448ed6b20f0e7980bddf17adbd734c2bf141b946e44",
+      "idempotency_key": "sha256:37629f6aa64701a6896bf6236de4489322d4d5586456096871d67c4443305da0"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Nobody arriving at a club at nine o'clock at night forms a view about the throughput of a vestibule.",
+      "text_sha256": "sha256:2d0e64cbac7d2b9a29dd417f25dfd3d76341c9f90a8174a222b304b64b423caa",
+      "idempotency_key": "sha256:6c4d04e1d43184aa48b94c08c518610d2a4c453d0683b908b308b200f406f3c2"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And the building looks, from the road, exactly as capacious as its widest opening.",
+      "text_sha256": "sha256:f3d6abe25c7b0cd729811af9b053fe297c5afe81d54619c18aebe6a1b51d90ae",
+      "idempotency_key": "sha256:4d6af277ee404f6a66db58d66399a5f9b0055decb7ac8b2271f4f748f69b29c2"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "So why put a second, narrower door there at all?",
+      "text_sha256": "sha256:6f2ad41d1df3e254d559668fe40e2ee13d4a3c8d3cb3e0c9cbbec0459f03872b",
+      "idempotency_key": "sha256:dce7123615231a99b7589ce50417b8caefbf54a5e379c8331680faf3d1a85f89"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "For the reason every cold-climate building has one.",
+      "text_sha256": "sha256:e7c652e4d65f6df4a54e84dbfdeced3f03973669d2792f66d81922fde9c9205c",
+      "idempotency_key": "sha256:1e510d4a17e88261ab093bc3888838fb6054f2c12fcebdb849bfaac4e836a7f6"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A vestibule is an air lock.",
+      "text_sha256": "sha256:bb463237cef12d6250c19223452a7c819e439a0db532c4416c5f36f3fda8a37a",
+      "idempotency_key": "sha256:eacee5abc4d8c0ff35649ba23237006c2fbcc290702e3bdf58a6b8c9fe54ea6d"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It stops the weather arriving in the room every time somebody opens a door, it stops the heat leaving, and it gives a doorman somewhere to stand that is neither outside in February nor inside the noise.",
+      "text_sha256": "sha256:5e7c22666ef90e67b449361e301273356f88f765bd084c7105fc1cc0900dd883",
+      "idempotency_key": "sha256:13fb32a4386541a23821a6573ab76fa6327b946801e410da7bfabdf8692269ac"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is a good piece of building.",
+      "text_sha256": "sha256:47f8f91d2e09d0a3c49b8985da21b925c48130c172fb7c2799b34817b443d764",
+      "idempotency_key": "sha256:c80491db24f0836d0d8f1421cb83788dbf142ecc9910e35d5707d2bd5ba52587"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is in tens of thousands of them.",
+      "text_sha256": "sha256:7d034b1e629aa9fa58f0c5c70a094b1070c3721b0453cd8789893eb30e6873bc",
+      "idempotency_key": "sha256:218561342eb8f9e774d1a9ced15667aa9c0f7c06992b452b33a83ec9e862307b"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And it is the narrowest thing on the route out.",
+      "text_sha256": "sha256:eb4c9e141f9f2af9e9fd8074811ec5d9e0a0d28a9ede57d7b65b7ecb5a717982",
+      "idempotency_key": "sha256:2520f687fe7aaf58843367c63b6011f6ccdb830ce250671767e2a5c3bb42ae2b"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Now the walls.",
+      "text_sha256": "sha256:84fe372c6ee47c9665562ff811a859b5c8a6266c33d401553d559706b1b2473b",
+      "idempotency_key": "sha256:7acf52c11979aecfba4ab47790a75cdb042c5fb1b60f2dc6a71e86040215dbce"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The platform used as a stage was lined with polyurethane foam — on portions of the walls, and on the ceiling above it.",
+      "text_sha256": "sha256:1119dd1940c3394808c73398c308ecb80807e923a89075789e5bbefc285dde05",
+      "idempotency_key": "sha256:f0d2ffef059420294a71747745ce38872137611a8b11438667413c59695d9d15"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Foam goes on the walls of a small music venue for a reason that has nothing to do with fire.",
+      "text_sha256": "sha256:17983c82c96113385a2da1882616517ba22f444709d56c797fb3e93742cc5ca2",
+      "idempotency_key": "sha256:6c14ed3f1e74b29f8963d47ab101021e515eb4a578a16a743e4535dad64c7c98"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is there for sound.",
+      "text_sha256": "sha256:502010acab5c932f6809c414d52af60bb671c01169dbbd1137a0b05d0de2ce11",
+      "idempotency_key": "sha256:a11c366ad2926fab653dae90b8ee54db0d76eae023704664d8ac8caf2c5582b9"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A room with hard parallel walls and a low ceiling is unpleasant to play in and unpleasant to stand in.",
+      "text_sha256": "sha256:e94f40e3bf0f7dc098c49589bfb959c470ee027bb143bfe5b83770161ecc9dac",
+      "idempotency_key": "sha256:c3b82b54d5f6b03bf9f6d182c15917429623e09a36fc9f0e4f1249c8665715df"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Foam absorbs the reflections.",
+      "text_sha256": "sha256:bf38a79ce15182633f0caac70bac11abd677487343cd60ce35e19101879f0e82",
+      "idempotency_key": "sha256:92112e51d7bbba9a5ed05d17cce9d9a9f08b38998df20bffd38eeaf30a1b9237"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is cheap, it is light, and it goes up with adhesive in an afternoon.",
+      "text_sha256": "sha256:c1bd41af05033360c90bd3dc5f896d82e32cfd31553b0207608f2c3b2f298147",
+      "idempotency_key": "sha256:2fefb882066eddf5360743b0eb1cde57ecad207c4c81477ac0496e247521c654"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Thousands of rooms have it.",
+      "text_sha256": "sha256:3178e28d197c74994881136c3ba3cf19f80a0523bf0cc7bc9932ec7fd2314ec6",
+      "idempotency_key": "sha256:7d953ea4a1cd7ce94a50b6d74ad90d6678610f33d8d8fe59acc4d336c27eca43"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "What matters is which foam.",
+      "text_sha256": "sha256:ab85ddb273435b7f5decc9812b747c07b6bdfe612ce6fd71449eb6398f7bfd7b",
+      "idempotency_key": "sha256:729342faa4de435f4c76f5140f28efcb4a53e754f6f1f69568b8c94fd4f63c9f"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "After the fire, NIST bought foam and ran the test that nobody had run in that building.",
+      "text_sha256": "sha256:3e476bff3e0a2adfd2f780dbeea047e1ba47921791998a6ff1ee6b531486aa5d",
+      "idempotency_key": "sha256:1a86d233f197c7b6be9e9760ad5a6a0162cca7abe9bfd49eb241ff5c3f61e44b"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They took a non-fire-retarded polyurethane foam and set a pyrotechnic device beside it, arranged as it had been on the club's platform.",
+      "text_sha256": "sha256:ee6f67f41aaa4df18848fa3c32af6bbd5c7d552ff72532bd411e87554e79326f",
+      "idempotency_key": "sha256:e8fec4b7a96e2f7a3be0cf2564111090e3097cb525eff41e05188cf1c2361dc8"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It ignited in less than fifteen seconds.",
+      "text_sha256": "sha256:5faf39f98ab026a356e59a78c19324582c03a4f4254c1f7f54a1954f7f5407c7",
+      "idempotency_key": "sha256:2675656877d1ce5a7d1cf3f02f36cf778a22e7368ae21de19e9d407d52e858ac"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Then they took a fire-retarded polyurethane foam — the same material class, the same purpose, the same look, bought off the shelf — and did exactly the same thing.",
+      "text_sha256": "sha256:3c609985390577fdc00e512d74a6463d41e8bf5059b25b31d925c547ce5765eb",
+      "idempotency_key": "sha256:8d38f16c9b793c799742549ca6b870905b43216573a7b455e193e9638d3b8e13"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It did not ignite at all.",
+      "text_sha256": "sha256:a9b41a15b216f9ae89f7447f441d94ed9c6b3becd5cc385ca0a5a9c5f810c6e8",
+      "idempotency_key": "sha256:87b457170066db9195422a17145ae6b0abaaf8b022c31e17b47741d512732678"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And then they removed the foam entirely and exposed the bare wood panelling to the same source.",
+      "text_sha256": "sha256:af2f88733ebcd60ebd97373f35966b3f47bbed70575b4160dcf4be3e0f22c32f",
+      "idempotency_key": "sha256:4ef84b8dc97dd2a7ad0faabd4d6fbc42e5f5853314ef84880f69f07318e7c6db"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The wood did not ignite either.",
+      "text_sha256": "sha256:b871dd7bf8b1d1cb06b84b5685afd0a3f6accf62f56dcc2dcb7975e3325b2e15",
+      "idempotency_key": "sha256:6b586f152eba9b5dea73aedf597d461d70762b56621250c3d16320987b488b0e"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Same device.",
+      "text_sha256": "sha256:ccd343cc8c28584d9770f0a01de14f56877c04ff5d392d415b0207b1b073f81e",
+      "idempotency_key": "sha256:237bc71eacf07f7873e0a950136b5a2df9df51953939e789f12b9f0400594d70"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Same arrangement.",
+      "text_sha256": "sha256:39769e836047b4b77d7f28143c97c8295862ae28c678d78358f604dcdf462d4a",
+      "idempotency_key": "sha256:215b7667f00fd28753ea2459793d4d8b967d51298e50220db5a422fb7285e428"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Same room.",
+      "text_sha256": "sha256:33f26d8c6994a5bb346009cde572c65350ec257148ba99a4257b44864b5e77e4",
+      "idempotency_key": "sha256:4ee6c835205941f3eaada23c3313c0661676975fd4d21529159aeb2bf4eb76a7"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three outcomes, and only one of them ends this way.",
+      "text_sha256": "sha256:245408abdb8b0d58e76b32d8fac8e357c8dd06899d53a553d8fab907a9050311",
+      "idempotency_key": "sha256:b066e68dbfa0dba5ea86933806d9020fc9d3e17e28944daedb54ec3bcc53671e"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Now, what was actually on those walls.",
+      "text_sha256": "sha256:5ff0c2e1cabb131686d56a8739128bc8bf9a45dfd48c0ce213f518177aea953a",
+      "idempotency_key": "sha256:55a28b6bdd3c5bebd2370cb72fceff78eec9d5f319311ddb8639bac83ac79548"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The foam was there as sound attenuation - on the rear wall, on the platform wall, and in the alcove where the drums sat.",
+      "text_sha256": "sha256:3be22ffa3d7a80ad66ac36bce2b9ec2e341c9e7097f68381c22f86d490639619",
+      "idempotency_key": "sha256:85626b75e9476f861167e2bf610055224d555eab74521d1c9b60c436f25116e5"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is a packaging material.",
+      "text_sha256": "sha256:6b3ebbb00ef79f43f67698a5dec0ea1cb912286c4b6b60022c361528b7cbbe36",
+      "idempotency_key": "sha256:021f8f57353903bd41877d6d2ca931199514a6cbaf6b07f00d07419f707a473c"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is sold in sheets four feet by eight, in grey, flat or moulded into the convoluted egg-crate pattern that everybody recognises from a rehearsal room.",
+      "text_sha256": "sha256:e6b5134fc00bbadf096070a30bc3286f7b8ebfb57c153c89228232ecac1c5ece",
+      "idempotency_key": "sha256:bd412e7468bd52c214dd2390fa843554db5e59b953bea9e6a5a748dbd267aad0"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And the report states the thing that matters about the grade normally sold for packing: it typically contains no fire-retardant additives at all.",
+      "text_sha256": "sha256:b8518cbef8d74cae10ae2e65ccf4bc437b452fbefb8ab734d2ec3579be82fecc",
+      "idempotency_key": "sha256:5bb01bc5417fc0dc97571bd0dffbf53f80065e3f327b6c67f3b729c1dfe408f7"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Not a defective batch.",
+      "text_sha256": "sha256:bc9d1862b4db3e2fbe55a11a8902f01162105ab060f95e4b67aa1580c15e6d17",
+      "idempotency_key": "sha256:777d7a6b94d547cf0831f3e7613c75280124ca7628b9883b5b707a3fcfc7e119"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Not a counterfeit.",
+      "text_sha256": "sha256:632ae32307e9f18d6f59d3a3c316bfdce679843b7036af091a6355e7f0ed719b",
+      "idempotency_key": "sha256:4c2b8c5fb1d6a38588b0510edc4a252ae2fcd4e42764d4fb6d4363dd62680a5c"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The ordinary product, doing the ordinary job it is sold for, on a wall it was never sold for.",
+      "text_sha256": "sha256:6bbf3a140ae79f28b653836163294b2d2e418cb9e77642b80899907bc7cc0afb",
+      "idempotency_key": "sha256:885edeed2a770c77baac4599929ba4a5929ee984329fd81c7c12a8a3e3c31037"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The photographs of the interior show it in detail.",
+      "text_sha256": "sha256:f5d8fa5526260d1dcfc88343b267eb785e38d2fa88a9a7b3d5f334124d8b9b1a",
+      "idempotency_key": "sha256:a53ac5aa7f237b0c5f874815a2e082b60588e697e0e96ecbbbe59bab14ae9e08"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There are gaps where two sheets meet.",
+      "text_sha256": "sha256:10070a4ac8e5967803d1b0aaa4a85680d328f154226d241275642c6f4335e440",
+      "idempotency_key": "sha256:b4222613055e11457d1798ec946e9dabc672969a0e071660b02e9d6909f211c6"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There are gaps between the foam and the wall at the outside corners of the alcove.",
+      "text_sha256": "sha256:8360a94fe6f72ee441479a985dfd15e2280c57e132e95450b184c709cbb58963",
+      "idempotency_key": "sha256:2cce8a8a26d4ed338ce565bb79674c787a7be433802be0f58ddec3853ef26a6e"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And there is a detail in those photographs that tells you how long it had been there and how normal it had become.",
+      "text_sha256": "sha256:2f5024670ea073f4656c6984211fd90a0e8aa2055d3b8f25a2c77f259262b5b3",
+      "idempotency_key": "sha256:89dee8ab4807139924ab72ca83ace29761b224f8554c0be41edd9c774f43f164"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Earlier pictures show the foam grey.",
+      "text_sha256": "sha256:e4f8836a3e2927b78fbac70550ae1cf3ed5c93691212ec6f882ca2b23267c62e",
+      "idempotency_key": "sha256:853c9c94fa0d99292606deb02c7f1063e31d865a0bbb1490868102f64607356f"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Later pictures show it darker - the report says it may have been sprayed with black paint.",
+      "text_sha256": "sha256:88be28027ab7cf516dd77e3e900d6659fdeabbd9d13a02bc8002d1ce037b8783",
+      "idempotency_key": "sha256:92cc1bae5a2d9c9e82c9c32546eb89bb424767bec53a907e4d513d3acf082f87"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The surface has a glittery look, possibly wet paint dusted with glitter.",
+      "text_sha256": "sha256:1965f051223e3b125f6a3630a2b5f9ebcc618f84e64d4c96ea0adadc8b9f039c",
+      "idempotency_key": "sha256:3c9e1da01143c85272097089f60d09cd2d657a39c1a0a0cc2dff58c1d1e17780"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Somebody decorated it.",
+      "text_sha256": "sha256:83e8daf718f9662d52c28201e42cbe368d2a0b20a10ec9f9f16c95415945c7f2",
+      "idempotency_key": "sha256:46dfc41fae95efd4d0c5bf3e518a66b10567113d3d507ae8eda1373a211fa81f"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Does that sound careless?",
+      "text_sha256": "sha256:0924b57af0056f5681268797be339c91060e9a3666f713c2165ad0872a9f194f",
+      "idempotency_key": "sha256:3634b31f7680f57e596e6a739185caf135d63ebd5ea04568a4831ea1660c503f"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It should not.",
+      "text_sha256": "sha256:9db5c46d19a717a0358dc6b28acbfba262e1319242bf8e96338f37b6480b2b6f",
+      "idempotency_key": "sha256:3d7e598bd6e726fb4303247e5774be580bca20c3df962f2761ad8e69baeb6a87"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Painting the acoustic foam black is what you do to a room that is going to be dark with a band in it.",
+      "text_sha256": "sha256:a6f17c9d13a05336850fa1964daa4a795927532e9fc7a9218d0f965086d21328",
+      "idempotency_key": "sha256:c8e7048dd497a672c48b7bd1656a2ee7bde2a319fbaa4cdcd4afe58c6f40c431"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Grey packing foam looks like grey packing foam.",
+      "text_sha256": "sha256:090a422c0ec3519a82bfbdad19a15b7f08d2e9d7dffb0814f7723c32ac553a22",
+      "idempotency_key": "sha256:3b22098c533d5a5017000af3a6c3e7e2f44c6d4ab9b4a55f563b1ad08b813eb8"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Black looks like a stage.",
+      "text_sha256": "sha256:f3571eb3f80ee54b8d9a8c42c8a13fa5404e9a7cacdf5bcd57d8e0ab58e11c68",
+      "idempotency_key": "sha256:01cef070a89ac2eb5d45da182d915a9035ef0a606d8aeac4dc0da52fb6f78dea"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Adding glitter is the same instinct one step further.",
+      "text_sha256": "sha256:a7822e9cc3501d997ad9bc48f9af7de38571315bd66b717338c4b39e9a2120e8",
+      "idempotency_key": "sha256:e32ddb467b05fc212349591c09bf9842ae14ccecb198e5d62f804d84b5a0066a"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is a decision about how the room feels, made by somebody thinking about how the room feels.",
+      "text_sha256": "sha256:ab3ce6941402710d036fd9c5be3a2939d486470bb96ef5a69da90041bdb1f111",
+      "idempotency_key": "sha256:9a59a3800ff76934b9b237d03dc3357c0394fc77c09ac12261978aa1ad37dcae"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Behind the foam was more foam: rigid polystyrene thermal insulation, laid between the wood studs.",
+      "text_sha256": "sha256:55e5cc591cbda7b0a2f24c3d9081abf2e86fc747f9d10e3a52c668fae1569ef6",
+      "idempotency_key": "sha256:ef365bc4dba04531eab885488ce24b7bb43910604cb2055337ebea4a52eff762"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Above all of it, the ceiling over the dance floor and the platform had been raised to about twelve and a half feet, built of gypsum board, with a lighting rack hung a hand's width below it.",
+      "text_sha256": "sha256:a74228bfb90669b4fe8065a6abb99339b3f05244ff3e2461a9e8530694a82b14",
+      "idempotency_key": "sha256:9a9dae253839347391c849a3adcb1c441fa0026c64ac0e2de8566acc5543d013"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There was a second material as well, easy to overlook.",
+      "text_sha256": "sha256:d76dfd75e84b7402992c4d08a0029dbf54dc09d935db60d185ec69d52c47ede0",
+      "idempotency_key": "sha256:842b69c2441acd1b935ce2f93e26e810bf397080b6818b698d6fd0f78ae25549"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A foam plastic thermal insulation had been installed in the stud space of the drummer's alcove walls, with no fire-resistant barrier on the interior side.",
+      "text_sha256": "sha256:bf6574a983a577bb1641538955206ab9399de7d89a44f2aca44d6175252b9d02",
+      "idempotency_key": "sha256:f7aeabb4e51fb7ad0b8072dee9511daa6e0cf9c7b4e6dcfe302add3c29f4753b"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "NIST measured all of it properly, in a cone calorimeter, which does one thing: it exposes a small sample to a known heat and records how much energy comes back out.",
+      "text_sha256": "sha256:c107fece6e9bd1771a933091cc977748951619a0189738259434d682c52478cf",
+      "idempotency_key": "sha256:02f7031c32f6eb82aca49505d180ef296891831a714145225439a4f10d5c8bf1"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At the standard exposure, the non-flame-retarded foam peaked at around six hundred kilowatts per square metre.",
+      "text_sha256": "sha256:bb0a0f824b117ca94940c76c00b3d50f808f6c13ba8713ff6f592adcf4683b7a",
+      "idempotency_key": "sha256:3782d4999d7173a8a052f07867a8443f7982ff703bfbd3ffd756f81a0f0b67f7"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The flame-retarded foam peaked at four hundred and fifty-three.",
+      "text_sha256": "sha256:6de6c84e1ccf0931d7ea620e337c09ce752a4fae9094f51038c40e9c7ed0daa0",
+      "idempotency_key": "sha256:e66757557539fc38cd8c8b5cd420b774e9e235f97c8375d2de52848419fc9cce"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The ceiling tile did not ignite at all.",
+      "text_sha256": "sha256:13c08962e8b2375fbcc62767185d24c8447af98f40813f09046753b129211363",
+      "idempotency_key": "sha256:7622e2add61c288cdb28e88bde7c3e8b6bf6d7cce90ee6ac8317ecc207fa0a9e"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The wood panelling took forty-one seconds to sustained ignition.",
+      "text_sha256": "sha256:dbfbf5a1fd07b9caa6a2df18364ad9e0dedbac1b9ea58793a069a9b1cd801d94",
+      "idempotency_key": "sha256:b2cff5354f6f94bda8f127542c1f735d4d7969547eb1a3a424f32dc203f1ec6b"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And one number from the night itself, taken off the video frame by frame.",
+      "text_sha256": "sha256:b800b90ccb3ca74c8d45d7e07e7519faf1724bfa25fc07c1e8e9918110ad5563",
+      "idempotency_key": "sha256:d4c894c5a3e8c78ad33b27f7c90072489320a1241ebbad2788d356f9dceaba95"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The foam at the vertical corners of the drummer's alcove ignited eight seconds after the pyrotechnic display was initiated.",
+      "text_sha256": "sha256:62a27640741f9352aded25b6ecac1b645a5d2a25d7e6087e1639306c78c0ad08",
+      "idempotency_key": "sha256:a2e0ae0e79ee6c2cf776d08a38436ec02cc04ba1ec1faa024ec7ccec64679175"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Eight seconds.",
+      "text_sha256": "sha256:b7a485fc493c1c9d7639d6dbe3b2f5a107f95a486d4b13adf1319643b134de0a",
+      "idempotency_key": "sha256:a996ab89d181242e888dcd418b6daae55f820be56b1d87bb5eff66865fd954c9"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One more thing about the testing, and this programme is going to say it because leaving it out would make a cleaner story and a less true one.",
+      "text_sha256": "sha256:d1b69974783a7c6898061af93633cb9a8b82effc34e661afd78f340b4e84d90a",
+      "idempotency_key": "sha256:a42e8e0df59215cb6566e707f3e02a4e89752356429cafc83981b14e97537070"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In another bench arrangement, NIST aimed a device's sparks at foam with a deliberate gap and lip built in, specifically to catch hot sparks and make ignition more likely.",
+      "text_sha256": "sha256:e6628104614a0666b50e30f3b805468c827c035a7e9fc4a4bfb04f571f4057d9",
+      "idempotency_key": "sha256:e59022fba004d648163646ccc177e65c1d0080ad281d53ba2e172db11465ff9a"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No ignition was observed.",
+      "text_sha256": "sha256:07d90bfe323a226ed27c014de8c2fc91900432e93c568d1855edee390226ef96",
+      "idempotency_key": "sha256:33644313a7e26c40b23b29531db2b0b5ee063356bf170acc22f45936cae278a4"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The sparks pitted the foam - small melted craters - and the process did not spread.",
+      "text_sha256": "sha256:d2f460b109bdd4e86340ef08c16f11689363de6108d4087d467ee87933d25225",
+      "idempotency_key": "sha256:fb647e37583bea5c8654a17577546f28a67c744a45101bcd46cf385b1b48539d"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "So the honest statement is not that a device near this foam always sets it alight.",
+      "text_sha256": "sha256:92996016f921f33eda8e11a376e9e47d37272c79e4af9e92cc95d9eacea30a85",
+      "idempotency_key": "sha256:7325cf1a33b2e4a8e7476d460a993d0100b06d856e37c0a49945dc59bf31c637"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is that the same device, the same foam and a slightly different geometry can give you a wall of pits or a wall on fire, and nobody standing in the room can tell you in advance which one they have.",
+      "text_sha256": "sha256:fcbbfd4343354872be1e43644e576968b83c411641e162d0d745819285d161ae",
+      "idempotency_key": "sha256:5f144a57a2be4dc58778c9e1f6511c6c3b3e21a61111f023cc097d3aa590e179"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One more fact about the fuel, and it changes what kind of building this became.",
+      "text_sha256": "sha256:a95922367768df8dccc9ac9d2f6e69dddf832b06251bb0c47174ceae609e9720",
+      "idempotency_key": "sha256:7794d40e3725c0fc188eebeb1e1186ffdbab677387c0cd0f8bdd88450abae50a"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The wood structure and panelling contained over ninety-five percent of the fuel load.",
+      "text_sha256": "sha256:647b647ebdc47f7dcba9b09cc5268cb3d11862ec06b391fae1ab53590b722d07",
+      "idempotency_key": "sha256:1f9c5cac39097003ced7f202567b3635d87ee24ef069ab76ee3cf4a625c68589"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Once most of the foam was consumed, this stopped being a foam fire and became an ordinary wood-frame building fire.",
+      "text_sha256": "sha256:999bb9a5696cd456e19cbfef26cc171a8e2648042f1f7397465519982a0453a6",
+      "idempotency_key": "sha256:fd03a9f5f07d936401f051ef71b926566cfbf929c8945294847482ddc1bfbf7c"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The foam was not the fire.",
+      "text_sha256": "sha256:48a0eaf48a0884c23c85b8c2b46bb0e8f7cc31a84f22ab59893dd0443c3c264e",
+      "idempotency_key": "sha256:ad434155088ac64e1afc87ca9863f37f7efcec9126d6571447ed06c8e8156731"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The foam was the ignition.",
+      "text_sha256": "sha256:c1d4176b6bede2ac4c1f9006401deee0aaf26599a369d43b1146401f7f8b7403",
+      "idempotency_key": "sha256:5c8e6fb1a1a6c055d0cb34c5da7c04712e054c1a01b089028f8952be257d558b"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Before the numbers, what the number is for.",
+      "text_sha256": "sha256:ad3fae1187fa688152e650b1c6d329d6563deb48bf745e4f845baadb39e095ac",
+      "idempotency_key": "sha256:4e285bc9b193ffe9ae2a3659432c25cc76867779895a50e1d3d5bd71f7852c7c"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "An occupant limit is not a fire-safety decoration and it is not about comfort.",
+      "text_sha256": "sha256:cda960501173ce8c6885e6937cfa197fe2f108acf11a6c91e10caad789d3b1ba",
+      "idempotency_key": "sha256:b42e7c443a9349297bdeb8ff2974b8c32ece671bb7f1894f0adc138389e82b69"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is arithmetic tied to the exits.",
+      "text_sha256": "sha256:c083f9ce101d8bac3859e8774d93da2bfa574a72252983f3d80907ee716ee7ba",
+      "idempotency_key": "sha256:621962fcabc0a2999b2c1ce32cf3cf50e351a5eff071c55ed9da570135f6c707"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "You take the width of the ways out, you take how fast people move through an opening of that width, you take how long the building will stay survivable, and you work backwards to how many people may be inside.",
+      "text_sha256": "sha256:e7090c7eebe7dba2f5d412d4a6339c3c11574560426937f1dce8841012d6c015",
+      "idempotency_key": "sha256:af3229234f55568ba785e930a9db187e680390aac9ccc308c66ef28053e5e3ea"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the whole calculation.",
+      "text_sha256": "sha256:e73fc7b411cb8ac0166a7e5f01f629b686ee93cdd2dc5dd3fd11ca92e4508f1d",
+      "idempotency_key": "sha256:68b2e27223eef7e26429c0a988ba62fa77afb625db41bd75df733a794d48a804"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The limit is a statement about the doors.",
+      "text_sha256": "sha256:33c21fd0e4fe3afe05068d722de1ccf277c1bcd7adae4b5e0b12fcf15cf77f0e",
+      "idempotency_key": "sha256:9ae9b3537364b43db674bf6325cd4bc472f0f644b456e78635db663d7ba3b438"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Which means that if the doors do not change, the number cannot honestly change either.",
+      "text_sha256": "sha256:b213b4f25ff5fc019eb1e6b6d8198c3c5383ad56859bd3df1a8e6054ea0c729e",
+      "idempotency_key": "sha256:0c9c2385dd9a715551b164d3c140c4d6d468402ae69f6929bb64466c335daeb0"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Now the paperwork.",
+      "text_sha256": "sha256:73be960759a75ea5ebd8a53a005b1749375ff76a5055a97be7b075fe84b8b1bb",
+      "idempotency_key": "sha256:a2ed833b8bd707f7dbbdda778e438d4b5ca5026d5e263290e4bf8faed74e8c45"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In 1981, an application under the fire safety code — to leave the boiler room not fully enclosed — identified an occupant load of two hundred and twenty-five for the building as it was then being used.",
+      "text_sha256": "sha256:4a4cdd3e6c0ca066f8aed82c24dfbd4ae93e612e80b2ba15ddf69db0da015aa9",
+      "idempotency_key": "sha256:2555f440188989c91dab06a14de28d9cd368e858a524f428a974205d6bd98728"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In a memorandum dated the thirtieth of December, 1999, the West Warwick Fire Department identified the occupant load as two hundred and fifty-three.",
+      "text_sha256": "sha256:ed074e02036e8cfc33899ef11cd4e70002975d7b07c27847c548e14d6bb0d3e0",
+      "idempotency_key": "sha256:c6d664f165376b32d8b95452867310b5a40c7ee2378bdb59d28b8b5c4b54caa3"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And that same memorandum granted an allowance to increase the occupancy to three hundred and seventeen — by removing tables and chairs from three lounge areas and providing standing room only in those areas.",
+      "text_sha256": "sha256:7c664c7a3a2c9d9683ff7aac1e537e9530f160c33bd7b64b59e7df8e977a3613",
+      "idempotency_key": "sha256:2de92491d7de53f3c447a69c0004443bdfd1fc4cfbb7e3dc84459ca2a069883f"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Read that mechanism carefully, because it is reasonable and it is exactly how the number moved.",
+      "text_sha256": "sha256:2b2cabad13b8a0aefd4be21d87747a889f758126a478b572dcd104d81b2b3eab",
+      "idempotency_key": "sha256:9d72b63cb9e68d37db257c615968d47ef72f520d38fa3f062769a08a9c8057f2"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Tables and chairs take floor space.",
+      "text_sha256": "sha256:6dee3094237c86436d8d6dc9ce2b36cae38530e4e623db688cdbb3ff9b5877c4",
+      "idempotency_key": "sha256:79c1ba6b1f599b5de0a32bab3ffb8d399a5b054c3989c1399801dcfbc73d5aa8"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Take them out and more people fit.",
+      "text_sha256": "sha256:a3319b6c1ceec33447356228c5d3ea879a6ed472ea68add9e7963d39faf0aa33",
+      "idempotency_key": "sha256:5858500384005a83ebf582d02ad25405df47db3e61f8363ea3eb477355a327b7"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "If the constraint you are thinking about is floor area, then removing furniture genuinely does let you hold more people, and raising the number is the correct answer.",
+      "text_sha256": "sha256:23bc8299e1a3eb86910a80918e14589abce7f8e1ebe3dc7a20780e16b6444fcb",
+      "idempotency_key": "sha256:4dd61c8f483c18d9b3fd84df2b26f0919e1580fa080b6b994af9be1af603eedf"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "But the constraint that kills is not the floor.",
+      "text_sha256": "sha256:5d25b79539bf3638306bdf382710e2d95867e837f14807e67b38d8342f3facc4",
+      "idempotency_key": "sha256:360ae02146869f64ec0bebb2d48ed8edd6fc398d842ea15b386885b4ff8ff00f"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is the door.",
+      "text_sha256": "sha256:7df8b2b997e04f858a4cd5c940805ca24746405634c253cd8ef34ae02522f1f2",
+      "idempotency_key": "sha256:0240494bdf4abe9dde9f7866562aae696e65885730e21070b206850117865197"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And nobody moved the door.",
+      "text_sha256": "sha256:a682aeec3e487a988aa1714ca6a6e90615132c3c4da9c366d81977b5947b17f8",
+      "idempotency_key": "sha256:a492c192c8f780febc57fcb1e6cdb83581ff53e52431fd7f50e3ed47ad4e32df"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Against those figures, NIST offers the one from the codes: under the 2003 model codes, the occupant limit for a building like The Station would have been around four hundred and twenty.",
+      "text_sha256": "sha256:75320b7440389be265434a4cc0fa36b0e1bd0a76f04a241c4755cd0b7dd6e1a7",
+      "idempotency_key": "sha256:2f77aca7e6b92bb7970d58c80a345dc98f0ce79be21d60ba34993aab9088af0b"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And the number of people reported to have been inside on the night was between four hundred and forty and four hundred and fifty-eight.",
+      "text_sha256": "sha256:e23989c1d4077e435fbaf70d0048f33d9f44f0023f6e85ee1e42296cd288d5cd",
+      "idempotency_key": "sha256:1066d2f5d25dc53b012bc2440ff214a6677fa10edc0c1e54d6b2f6b806ea5204"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Where do those come from?",
+      "text_sha256": "sha256:7486ce85647f6ed1a2bcb946fd6a30447eceef22083641e02dc4a4d620112edb",
+      "idempotency_key": "sha256:b25b3e62748a8919cc536a8e3f09b2b2f507b7949964549b96534f1b9c635a37"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "News media reports, and an attribution to the state Attorney General's office for the higher figure.",
+      "text_sha256": "sha256:71c9b9e7232a804b61a2c676ca6eee127b1b6beff0edbc50227bedd4a7468723",
+      "idempotency_key": "sha256:3e8fb5adc73012482646909d745d240994fb8cf9486c04a8a6741bb6b7f22810"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "This programme is going to be careful here, because it is the kind of number that films state as fact.",
+      "text_sha256": "sha256:8683b5cac595bb593ee6711041885bc41e10af84b91763eb8b1521fcf382af59",
+      "idempotency_key": "sha256:7f485939c954fcb37a81f4e2acdcd60f9dd2e17710cd1b92d775e87cd8efe26d"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "NIST itself tried to count.",
+      "text_sha256": "sha256:4a2b455e468f11044992a935382c59b152aba335d6e2f95a6c877af9d80880bd",
+      "idempotency_key": "sha256:08f50f2eb977b2cc4d786357dbf109623974a0240a31cd774de2a2ffab884723"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Investigators used a television crew's video shot inside the club that night and counted the people visible in it.",
+      "text_sha256": "sha256:ffd4f84319437b47d2088efd88af6559ce54a8ed0dbcda3e6212142b78b41f73",
+      "idempotency_key": "sha256:3c3ea7a41119110eecb52c827ef76d1a7433ed787d1ec005f917fdc87613d5a9"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Across four still frames as the camera pans, one hundred and forty-four occupants can be seen.",
+      "text_sha256": "sha256:90a856c628c8ebe80e104f236d1ce3e61d3318cff572a3ec4ea1c3d20da3a054",
+      "idempotency_key": "sha256:95334bff248e3ed6724ac4fe0da3857d4a3b5cbde56262c91bfe1443871cf6a6"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And NIST says plainly that it is not clear at what point in the evening that sequence was recorded, so it cannot be scaled into a total.",
+      "text_sha256": "sha256:9984c826d43d3af96396b963864dcc5e982a06bf9223db256e9d5271f0c0f9bf",
+      "idempotency_key": "sha256:fc8c38e9ee8921cdc17f5da165e693726826ad0c02db20f07ecc8547d5b3849f"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So the honest statement is this.",
+      "text_sha256": "sha256:7b6287641dff5b5c5595cddf745ab9beb791f4114a3d34582e1036bf893736a8",
+      "idempotency_key": "sha256:97fae6ff328b3ee31ff674b240f0b220ed94969a9dc7d28d09b1bfa7e6fd6180"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The paperwork said two twenty-five, then two fifty-three, then three seventeen.",
+      "text_sha256": "sha256:1fe040864fef6be7d1be8356d9fc487131609263aa68b3edb2a6a92a57505e44",
+      "idempotency_key": "sha256:7b9b1767d157f114ee73b61d190df377036dabf006b7553426e7b71a0bf127d0"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The codes of the year said about four hundred and twenty.",
+      "text_sha256": "sha256:b8cc55424267d5816444642812a92efb4d85640fe0c9975e7f1fbac57600f8c2",
+      "idempotency_key": "sha256:e4ba6f955c4655236345609c44e857bc273b96d14f1a504a090edf7778ff1e26"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And the reported figure for that night was four hundred and forty to four hundred and fifty-eight.",
+      "text_sha256": "sha256:b2c9a3e8e7083ad047cf7b3c8023e89c2fbcaa2ace81ce77f05005a2e3856181",
+      "idempotency_key": "sha256:a005b050c0096c4aee70077462b0130f7fd51f301b5ebf906d5c0a3bfc68b350"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Every one of those numbers was calculated for a building whose front exit was one door wide.",
+      "text_sha256": "sha256:b0f5684ecf3c97feef98c5849e800116b15b40936c9bbac2ffee39f5b05c136e",
+      "idempotency_key": "sha256:65e5c7ef55381aa58b9836dce32c7708a55bd034975c120ca9baeb405b817291"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So who is supposed to notice?",
+      "text_sha256": "sha256:39985267be070e08e38ceaf37e5cd5469dd677fdeaf26c5496b6f78bb05473f9",
+      "idempotency_key": "sha256:fc22e8b873d125646cd6b1b7467f41a125397e08472c46bbbbdfcd3d661825d2"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is not a rhetorical question.",
+      "text_sha256": "sha256:38771b0c37ab7c7042a031f7f227595b86183033014997f59d025c07d195e960",
+      "idempotency_key": "sha256:734c4bbd76a89c40effe6cd7f3bcbbb35be37f18bc31f8970c212a8cf76c182a"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There is an answer, and it has a job title.",
+      "text_sha256": "sha256:e3e350b95a613986d7cf741d774560b21a5a158d703f00826535939e82565b5c",
+      "idempotency_key": "sha256:47b86351aa609e33711434d9e1ceb65b2eb4df614ee48bed49a78f19e1604335"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A code is only a document.",
+      "text_sha256": "sha256:0b21b4047ef94bf98431e59851cc2173a83bac9ffe036941a25586b14ee8f9b2",
+      "idempotency_key": "sha256:31e0e26207a76e6963a474e8dd55aeaf7faedd778c3a3ae96858326799dbd681"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "What converts a document into a building is an inspection regime - somebody with a tape measure, a floor plan and the authority to say no.",
+      "text_sha256": "sha256:1cadcc1c9030a30ae4b3193beb5a462b710d4466f1227d813d60d48a8f37cb9d",
+      "idempotency_key": "sha256:3f09d0238689d48c86f0f7c407866b4cccf3421e7fd4b6cc730ef3720e2b149a"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "NIST's first recommendation is entirely about that machinery, and it reads like a list of the places the machinery goes missing.",
+      "text_sha256": "sha256:c07e34d420bb9e7919c0e815fb72dbb14afa3d743f715eaafa4d3c036c727dd0",
+      "idempotency_key": "sha256:54a3d99bc8f291ce87269af37d2a47d953cc065813c2214f3a785ded0c2c465c"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It asks jurisdictions to adopt a model code and keep it updated.",
+      "text_sha256": "sha256:a10b946f23dd8db5b9097baca0a83f03bad8bd3b1518346a8215257d0c2d379e",
+      "idempotency_key": "sha256:6188b36a207dbd3f891e814f87aa3ee213262aae5540480a20be004b04a4eff0"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Then it asks for inspection and enforcement programmes that cover, specifically: documentation of building permits and alterations; inspection of the means of egress, and the record keeping that goes with it; the frequency and the rigour of inspections, including follow-up and auditing; and clear guidance on what an inspector can actually do when they find a deviation.",
+      "text_sha256": "sha256:9337ab0909cd959aa24c583bfc71302b6d2696846db589458aa6e1ba29133b9f",
+      "idempotency_key": "sha256:eb1bf911fcd520c1e9e4f4f7e9a4a08a0a1ebf2312f37fb8f9f3e7473ce84f10"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And then a plainer item than any of those: that enough inspectors and plan examiners are on the staff to do the job, and that they are professionally qualified.",
+      "text_sha256": "sha256:1accdb9fb601f2b053aed0cc787c709c149d133d348788b6cf2a4b260e46e66f",
+      "idempotency_key": "sha256:5fbfcf9db83446633724d08eca3667552e7256397ef0ada3a47229b7072ea809"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Enough people, properly trained, to go and look.",
+      "text_sha256": "sha256:80f2e9b7b45333a1efcd644d222ff70a4af11b2cbd9aa7aac8554fb148bbd67c",
+      "idempotency_key": "sha256:02e69b104fda58c19a49cb56919288f5a62de52c99ff8a9be099c007ea229e14"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "NIST also lists, without adjectives, the ordinary behaviours that quietly switch a protective system off: installing decorations that exceed the flame-spread provisions, exposing a building to strong ignition sources, exceeding the posted occupancy limits, temporarily blocking an exit, and disabling sprinklers for maintenance.",
+      "text_sha256": "sha256:133a085728c1e07e2981b8590b257604bf15cd3208b33f73fd5b14467a37b8b7",
+      "idempotency_key": "sha256:86dcb2c12a028f1036cc9e3e08545e223e5e59e15e5da154b6a485f46f932075"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Read that list again slowly.",
+      "text_sha256": "sha256:87bd3621fd30dfd91465169626a3d1e803d5b876e0ccc4632dff36be662b9cd9",
+      "idempotency_key": "sha256:59a100ff9603ffad4871b2bed9231935813cc66ef56bbe77bb4bc28d12f4bfb4"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Every item on it is a thing somebody does on an ordinary Tuesday afternoon, for an ordinary reason, in a building that is not on fire and will probably never be on fire.",
+      "text_sha256": "sha256:b5ebb12bc70f36f40122169c510774f1e903bef92bd7d77bebbd1d24340414df",
+      "idempotency_key": "sha256:356efa139d5221ae66ecdfcc03681e26fc03202858176e413caebb83efa3f8e3"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "None of them is sabotage.",
+      "text_sha256": "sha256:389f1ff95f2d3562b2e46bb6d49d3467aadb9d1e3b85e0c6c4d853f13611c838",
+      "idempotency_key": "sha256:30789ddcecd891234ea3ba924cd4e6c6c348c841d139bab7e31bcabdf583207b"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Each is a small local decision that makes the room work better for the thing the room is for.",
+      "text_sha256": "sha256:7cdf2e46de5d1e91b8e0c6859742b8b3830e941267d10911d4723a26c4e839b9",
+      "idempotency_key": "sha256:ef0bdfd0ddc860ff425495dced2c4b31861aa11e4d3722cdaffec7d9555f443b"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Here is the clock.",
+      "text_sha256": "sha256:aa1ec2bc75ef84c368e2dcf96ef1d607f8f3b160a3776cf31acdc1cdcc15e5f9",
+      "idempotency_key": "sha256:e6e4ec230914c87f439ae1ad12b59cac26a4128e9cfb35c1588c96beb753e5dd"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Every time on it is measured from the moment the foam ignited.",
+      "text_sha256": "sha256:f12727a93674a698b14228ddeb043cc28d94b773f50e0b900981f9cb1c0273f3",
+      "idempotency_key": "sha256:69a6434e85a077a447929174abb3bc24609ee226bfc6a7c66b2efc7d1b9cf31c"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Twenty-four seconds.",
+      "text_sha256": "sha256:7845567da63f53a95edbda660e061349325ea90762a14f5a925f8b33ca8de2bd",
+      "idempotency_key": "sha256:7bd7f69ea3f83b2cdfdb07bdc1dbd8c190b4aef574e83af76d1baeeb315f6474"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The first patrons recognise the danger.",
+      "text_sha256": "sha256:9268b262838fac6899e4e07c307985b4bd5f9547d0a0a92820e7e84ee87d17d6",
+      "idempotency_key": "sha256:f92c3c8eef1f94ced0e9a47fb3ac94eada55dda7b12b4271760ca37dfb86c031"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Thirty seconds.",
+      "text_sha256": "sha256:7c6392c259e281491fdb94728fb6678fe575a7a4b0d681524e01966e4e394999",
+      "idempotency_key": "sha256:902b88efd0358b3ae597e2f4cb61803fca3807dcfd13816ab4c25c5b84fec9a6"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The bulk of the crowd begins to move, around the time the band stops playing.",
+      "text_sha256": "sha256:3d356ff466070ae9b2bee444a7601116b21d9192240cf415adff9c4cde3189ad",
+      "idempotency_key": "sha256:e7a55c6bcf64f4b0438c1e56f0b4db427361965c9c656ce16beb2306ce105574"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Six seconds between the first person understanding and most of the room understanding.",
+      "text_sha256": "sha256:4b955480d5b362bbb9ee1388a34f917ca4318d91028803b8e5a2f75a65a1b247",
+      "idempotency_key": "sha256:7c63bbf365b51835f06a79d2d2eae095a2d516602889f6b2f12f3545b154810f"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is fast.",
+      "text_sha256": "sha256:03b0f6143a6e7b51ae6838c253fbf7070b2c4e0c1cb3414b502fd80e74166732",
+      "idempotency_key": "sha256:9ad7cfdcfa8fee031793fd102377c5cec85a7b02ec676c41f2148f3908eb5552"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Whatever else is true about that night, the recognition was not slow.",
+      "text_sha256": "sha256:7f86859c68036f01cb5b6564f8a212b865b18f216ef0d11034951cda573514d0",
+      "idempotency_key": "sha256:aeba0263821c31747a6f9499fff6687e6c63d016c902d94f01e589050b4ef343"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A little over one minute.",
+      "text_sha256": "sha256:90e441e2d5ee3c50c2d6f4f37d3a22fa76dc91e44648bb14849608aa69214a49",
+      "idempotency_key": "sha256:c6abd17fdf3ee84e547b10aa6a0a9688c68daf2f4451706fb33e0a3781e0ce54"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Smoke is visible in the exit doorways.",
+      "text_sha256": "sha256:1b41bdde8ba502407b78802ad6acd69cf0b7aa8981cda118bddce3a4e3e83720",
+      "idempotency_key": "sha256:37c158b3afaf9ff71f57798ae5e65570e4133652524d0bda944516e647084dbf"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One minute eleven.",
+      "text_sha256": "sha256:1ce011536cd352cbfa0419604acc548750cc96ee01e3bac946230d2de473abfe",
+      "idempotency_key": "sha256:c43173b1671b1ca4642d1dc7a7842e713f49d75d10e3515deb091ebdab8ab9ec"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "People are leaving the building in a steady stream.",
+      "text_sha256": "sha256:8bb1e92862b1ba56e8ef943760eeb52a18ae2d34cf2462a7e897e56bc809dc64",
+      "idempotency_key": "sha256:6421dda60d7d2c6d0e21e6953be8c20804dfaeea3e347f6f71265b726fa0d638"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Note what that means.",
+      "text_sha256": "sha256:6594d68653db461361fd36bbaf882d1ed69f691e6fb3580b4f4b682d92b3c1ad",
+      "idempotency_key": "sha256:222a921081ebbef066f27852b4da2811d1536607fe2095c72fe1645c557a93df"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The evacuation is working.",
+      "text_sha256": "sha256:f74b642faf7fb2a4fef6294c47fdffe31eb787ebb67fd234e906962903b3d068",
+      "idempotency_key": "sha256:986fae5f536c502672bd0022419c52e71c1d30518fb0ef083a45902229602925"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "There is a stream.",
+      "text_sha256": "sha256:153b98c522f9b8c3ca53e7c4787f71a2390e0594094acbdda7e15e7350a0061a",
+      "idempotency_key": "sha256:41c5f2555718b9af3c6d81aa2486af59ab22edc4fe615785170076eac1fa47c1"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is moving.",
+      "text_sha256": "sha256:8cbd874fc8c484557bce99f60d30923fe3e3fc7ad58a3b3496160718ce78636d",
+      "idempotency_key": "sha256:cf251126f6922d5ff541cab5f191322b7330674af502eaff9a54dd249e2ba1d2"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "About one minute thirty.",
+      "text_sha256": "sha256:ec7e61c71704c3cadfbd71108d001cfe7b674164107661df20c0f463543ef692",
+      "idempotency_key": "sha256:14d56762483bf9e259c266b2eb2c8799c31ed9f8d1122019b287fd9c2b36584b"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The front exit becomes blocked with people.",
+      "text_sha256": "sha256:28af7df9ea275a70f7b1320031238aa88af4fbda45f00085275bea00cd8508bd",
+      "idempotency_key": "sha256:01fc770fa68a61fbb18ef32709cca205ead7f3b822907e634ba8b24547303d31"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And on the video, occupants can be seen breaking windows and escaping from the pool room and the sun room.",
+      "text_sha256": "sha256:302293e7a35389351566a275f34326d8d08b2c4af2b439a936db7a3ab5a48e87",
+      "idempotency_key": "sha256:9105bfdef416ded7f38df0b53bec6808aaddf43bfc220f5cd8157acf2e72cdfb"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One minute forty-two.",
+      "text_sha256": "sha256:0f94ab07d66990e64b98c37e5517a4314a14554c975cf5e290a36aeb2e167e23",
+      "idempotency_key": "sha256:89b6ae5a0bb80ea209aa8e36ba953c3684b0df824d782c500ec678f9049a4cdb"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The crush at the front exit is on the recording.",
+      "text_sha256": "sha256:5aeffebd635eec4ede47f86894d6a47db4d015fc6cbf4b6d5dd07ffe958afb5c",
+      "idempotency_key": "sha256:45772d0ab6d3c2bf882098b97b5d2cd3583ffe3c25dd98cf10dc7f650a765076"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Now the part of the clock that is not on the video, because it is inside the air.",
+      "text_sha256": "sha256:d15011d53170d453da9cb74d42bd6dfde0efe03bb97fc3640e3d0f794eb741c6",
+      "idempotency_key": "sha256:1cbf7083edb53aa5e198785b81ca9d2853b476083cad3e64b583e9b4030713a5"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "NIST's simulation of the fire puts the dance floor and the areas next to it at untenable temperatures within ninety seconds of ignition.",
+      "text_sha256": "sha256:1dee9176c0acea6ef240a5e1bf8d0e8b3b3d1081579ed3f07731e667d8d9796a",
+      "idempotency_key": "sha256:5e6bf100256d132d24ce1ddba24aeb08607e1a05bb98c23aa2bba0c24ffd85d9"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The sun room and dart room reach the same state about ten seconds later.",
+      "text_sha256": "sha256:5e3c4b5dfc307f017d5c072fedae4ecbc6a274f414798b4cfd4671beb4dfc657",
+      "idempotency_key": "sha256:55c1d74904918b9a8162adbf75d718a7b41ceb71bb8b194cf8997dc461fe073a"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Untenable has a definition, and it is not a figure of speech.",
+      "text_sha256": "sha256:282422d77f64aca837fd7350b64caee671322a01bf3b971e1b67bf4919f321ed",
+      "idempotency_key": "sha256:d6ff3709d49f101d98be2647d464dbbb1cd7454c47f925f231b39848231f4648"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is the point at which the temperature passes a hundred and twenty degrees Celsius, or the heat flux passes a threshold, or the oxygen falls below twelve percent.",
+      "text_sha256": "sha256:dfc7a405877df41868c9c39a0be0b4258713f210a2c4474ccd9738a3e0bfaa35",
+      "idempotency_key": "sha256:3c4f84f017b275bd18e6afd0d2da9951ae2838be18ed93c6bffc617efcbd86b1"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And in the sun room beside the entranceway — a place where many of the dead were later found — the simulation shows the temperature going from ordinary room conditions to around a thousand degrees in ten seconds.",
+      "text_sha256": "sha256:a24ec47e04d3d4c3a96e8b30a0b1179e366d9681e3cb3d64c9de203f77de5807",
+      "idempotency_key": "sha256:aea2ced8161f93755ce2acd6eb53b5085419d0b0e09f2b03bce98c2f41a788b3"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "NIST puts the human consequence of that in one sentence, and it does not soften it.",
+      "text_sha256": "sha256:4fbb6a99c335ef52917a33621c86e707b70674e915876c652aa083245671a7f5",
+      "idempotency_key": "sha256:d27bfa8f175873044af18beef363720641a0ba64ae76fcc9f4be1a69023d3d50"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Comparing its own experiment with the full nightclub, the report says the conditions around the platform, the dance floor, the sun room and the dart room would have led to severe incapacitation or death within about a minute and a half of ignition for anyone remaining standing — and not much longer even for those close to the floor.",
+      "text_sha256": "sha256:1ea07e300ef01b96ea11c717accbb20cd3a22590849bcb80287b28a7e49a76e1",
+      "idempotency_key": "sha256:dc18dc77221f515db65f35910e9b9d7a790a855ab37785d0234769c298153828"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So how long did anybody actually have?",
+      "text_sha256": "sha256:49f03cde25d4d4f4180f287a6a09f45d94f85618462f716b051636a20d758c48",
+      "idempotency_key": "sha256:3b8fa108fd0a317650565c154a0680c2cbd10c534612b869f618e7c7867411b1"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Ninety seconds, from a fire nobody in the room knew about until twenty-four seconds in.",
+      "text_sha256": "sha256:914e7c815be880a60f80aa350e97de6e80b961256ad75086ba9998999ff7d804",
+      "idempotency_key": "sha256:dc483285a46c46274a36aa698b6b5f2a1a9b99ea8e7ac70930336ba11817871d"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Which leaves about a minute.",
+      "text_sha256": "sha256:2bf9943ea9ee7a2a2a56d56fe298e6dad3aa6f4cde348750b92210f9a27595e1",
+      "idempotency_key": "sha256:7ced51bffa369c5f413a989ffde18f60b07b481cef3dc26cf635077a1e7e0263"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One minute, from the moment the room understood, to the moment the room stopped being survivable — for four hundred and forty to four hundred and fifty-eight people, most of whom were heading for one door.",
+      "text_sha256": "sha256:90b0b186734ce2afdb54e870b44d2652a70675824a0193fef1764db7de82e6d4",
+      "idempotency_key": "sha256:624c256aaeeec102de6f3a7a3740f2b4daabda7bd2610468399f9f0f8a8048f6"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So set the two clocks beside each other.",
+      "text_sha256": "sha256:6fa671ba2fd0f568650cc2bc6c47fe89c04b106f5ec3a8fd5b799bdbe274b35d",
+      "idempotency_key": "sha256:fd25086f65754b07b4363ddd69b30ebc42477a0a5835968f7b728e2ab187835f"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The crush at the front door is on video at one minute forty-two.",
+      "text_sha256": "sha256:9f5d2506d40c661c89141186a3f4eed8834e00c3657772d4d141e075e56915c3",
+      "idempotency_key": "sha256:93b586671f0a952886dfefac620a89c13438995fd6af62658a71b9acd6a72a3a"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The air in that part of the building stopped being survivable at ninety seconds.",
+      "text_sha256": "sha256:031b51a26219f04970a0e5577e408dd14e526ee6a65b992eef208266889fc9a8",
+      "idempotency_key": "sha256:77de7b91f5ca63436a65416ce7c7f46455e6be2905b402d23aca0b06b9a4ece1"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The blockage and the deadline are the same twelve seconds apart.",
+      "text_sha256": "sha256:05cf5733adc1a7e09d67fbd47c375bba350462c1b8f7b8bab8fc7e2b8a93ae4a",
+      "idempotency_key": "sha256:be1264fab3d6bce6f228119712291b4bae72e632a172734d2d959e271910604c"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Now: where did everybody go?",
+      "text_sha256": "sha256:84d46e16593dc07fb887eb9dea2d4b2fa9d4eb8aa53b509309a4121f4a68d3ee",
+      "idempotency_key": "sha256:3e0eb1b3aa3fa570de74a65159accf695641129af9627ab160a2c9a757692d89"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Between fifty-six and sixty-six percent of the occupants appear to have attempted to leave through the single main entrance at the front.",
+      "text_sha256": "sha256:bc1873651f4660b0616a5aec77887b9e7bf5d59e8efe9d4f3baf721b4fe8cb9c",
+      "idempotency_key": "sha256:9efaadc0d2d5c94f11a3f3866814aa83910dab4446786a1a1c29e325fdb97bd0"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Many were unsuccessful.",
+      "text_sha256": "sha256:4b3882011bea6a35f705c5ffc679b48e86c71adadcb82b662093d72807c804eb",
+      "idempotency_key": "sha256:638bd1dbf47ee46cd8962983ae31e27b8f9bffdbce854dbad40a5411a91a36fe"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Between a half and two thirds of everyone in that building, at one door.",
+      "text_sha256": "sha256:293ee2e3edf1509b272dd8ca7fdd8e8966f716286ca2f5ecbe32e82a90f308e1",
+      "idempotency_key": "sha256:245168a1ac5788730c48a3189fc5258c957c4cb643af45932cc1a65a7c0375ae"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is not a failure of judgement.",
+      "text_sha256": "sha256:adbeaff729ba62210487c037568286915b3142b5dff16b66a4d27898600987f2",
+      "idempotency_key": "sha256:d02b3c1c97810d28138ab9421e8fe75a969a1b046b06a14ebbace8d02642c85c"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is the most ordinary thing people do in a building.",
+      "text_sha256": "sha256:d4bede862ffe2d6c2f6894e8d8768ba8045c8a3a9fe9db725d7c94330959cf1b",
+      "idempotency_key": "sha256:ab4e2477e284a7ecb6abe2074f21bc1146ac68276e0e0a71c28aea5beaa02588"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "You leave the way you came in.",
+      "text_sha256": "sha256:ad1c7940976c8c43fd585726e1925229624ede0bc82d2661487705935b783ad6",
+      "idempotency_key": "sha256:cd8a3c65ef862232fc33b048aeca7c134bc93aac3d56d05e2ba1bd99ba3e0844"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "You know that route.",
+      "text_sha256": "sha256:704cc97ba0eb4fbcc0905b3ec961f2778317a458bd32aa5d9f4087a8216f33d0",
+      "idempotency_key": "sha256:de33c23ac111075cd480e55322f78c2042930e3e107d8a1c1e7b19b3656a7203"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "You walked it.",
+      "text_sha256": "sha256:c374e827dcde78c61fc2587ce85422d8734269b66603f87da5189901e3336f43",
+      "idempotency_key": "sha256:6eeded43f23c9e96ae887e648bf33a2a4f40fcc1ed6f6a414c698d0279bab64d"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In a room you have never studied, filling with smoke, in the dark, the way you came in is the only route your body already has.",
+      "text_sha256": "sha256:35a80f99c8d55a1b57f851fa9804960f5e6ea59241b36d60f871a57d930ec1e6",
+      "idempotency_key": "sha256:4fa288a2a551d5b62a9b5ad4df8a09ab6dcd43e71fe776d4eb758c52d4886c59"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The side doors existed.",
+      "text_sha256": "sha256:4a46b2667dac2740f53948b29517b278426fe3870d994ef6c81878cd79874733",
+      "idempotency_key": "sha256:072e3003d4172cfae972919d84330e250eccb91bc3a17979b306ade34108ee7a"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The report lists them.",
+      "text_sha256": "sha256:ecf3379827acaade85ef9602b3518b0a8d2d25ac4d3eca530a9f125e47886714",
+      "idempotency_key": "sha256:8debb17d46ba2e61f22f513cfb83cf65b5bb63b5c166316ec3e564a4e46079fe"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "But knowing that a door exists and having walked through a door are not the same kind of knowledge, and only one of them is available to you at ninety seconds.",
+      "text_sha256": "sha256:dcf9a1ea0f70a20a3596941983ce40d0f87a792e0c0840acf1432c3bc9007e77",
+      "idempotency_key": "sha256:e62c5efb2a597db05bf7e39afff232a3a8c50a248199232ce13b652d666e9f4e"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And here the report is more precise than the summaries of it, in a way that changes the picture entirely.",
+      "text_sha256": "sha256:31a628837f46f8100954df9b8bb88c93538e5fce512ede18991c0cafb42af935",
+      "idempotency_key": "sha256:870616a65060bee5d0b6a78bccb73d6e598b96d27cbfa767eb0543827de85b08"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The crush did not happen at the outside doors.",
+      "text_sha256": "sha256:91e3371d196824d82a181189b18b78f7afb8a05908faa521f96ff91064d54b44",
+      "idempotency_key": "sha256:860173ac864968ca73f2f8fca9072688dd07ed0cf4db4816f37d0c818f31061a"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It happened inside the vestibule.",
+      "text_sha256": "sha256:83935d7959d6f3e4072a3c31a5b1dbba345f50df07add7f64cf8a11a509a6afc",
+      "idempotency_key": "sha256:b7eb86b7bdbf6dbc5dc435dfea66eecdb299af27ea5f6a0ba8f0aa832dda6bad"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That small lobby - the one that exists so the winter stays out - is where the flow stopped.",
+      "text_sha256": "sha256:02d3a668c4ceaf4c51ba5612de06939fd10376642ec406278d48706d83f89e6f",
+      "idempotency_key": "sha256:63d0628411efa5dd5c88ecc80770c80bde99cc39bd30315d119848186fddbd0b"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The report says the crush there almost entirely disrupted the flow through the main exit, and that many people became stuck in the prone position in the exterior double doors.",
+      "text_sha256": "sha256:cb868e361f496b3eb306aac2f98f850c2305dd51d6c2a7db58921cf3c851a5e0",
+      "idempotency_key": "sha256:347b50a9fb256706f7ea9ee279ae65f41303625e4489b0f4d40747fa4dde2c89"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Prone.",
+      "text_sha256": "sha256:f9681b372e246050a162edaf125d83154debd5f42be8f0889c04df76a1e8b5de",
+      "idempotency_key": "sha256:b8ecc593dfb3c10cb6d39306e86caa5b1c757c21e2d520dfaee67d5e23b9594e"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In the wide doors.",
+      "text_sha256": "sha256:ba588f12f3e300dca5ae5a3019f2216c2d2cb78a1eab4b710d9caf5a21f72e77",
+      "idempotency_key": "sha256:bac831fb6ed119564da55c2a4607de75f61d419e82381e8aac929bd2491b18e0"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The wide doors were not the problem and the wide doors are where it ended, because a single doorway upstream of them had already decided how many bodies per second could arrive.",
+      "text_sha256": "sha256:19cb6bd170d705603ac5ee6f2c6e1f6d3cbe732d88e68188b3acc3e14effc076",
+      "idempotency_key": "sha256:18c3d79a725c4efd1ab394b81ea458a8f1f70c8c3296102b6eeff8900fcb5951"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Once the front blocked, the windows of the main bar room and the sun room became the secondary routes of escape.",
+      "text_sha256": "sha256:1a16d449bdc11939d811033c869b9c8bc4983c1366f1cdce8c31a6bac2e7f847",
+      "idempotency_key": "sha256:1ec07c97a546319d9176d829b4ec28b253f8b7d207ce4f473268e4357c4c70a0"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the windows did something extraordinary.",
+      "text_sha256": "sha256:16b0cebfcfd2d4dc15d174a6eabddeae8cc330bce87ca02a085353449311c862",
+      "idempotency_key": "sha256:bb4c3993470287164232b9de265f6424dc32b97290943cae43e84f4c00e275f0"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They accounted for over one third of the successful evacuations.",
+      "text_sha256": "sha256:373b265a82429cc67c5df73d83ced13e514b1bc082de9209070ddf5d85f66edd",
+      "idempotency_key": "sha256:499d4e42e4c9b16aa89960919807034d25eb33c3051fc29aacc096370ccaf7f4"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "More than a third of everyone who got out of that building did not use a door.",
+      "text_sha256": "sha256:6622068a090f04ac0a600685df9732872891a843146bb7d53e3132ee47bc1397",
+      "idempotency_key": "sha256:72a11dd56bbb6020cfab39f56314e0e3d8307573f0f749e38ee47d896990eff9"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They went through a wall.",
+      "text_sha256": "sha256:a06560f796eade1315b16fb94c3b01ca6f2c975715218e7c0f0f06c343037f99",
+      "idempotency_key": "sha256:2ce1a89d8ce7bf99dec01fe1cf424eb5b7e3f6fcea47d1f3a75a54f3aab58fd8"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Think about what that number is made of.",
+      "text_sha256": "sha256:96da2a15870d9c400e95ea8baf6945cd2f97237eac7063a43de438019ac85e59",
+      "idempotency_key": "sha256:4551325fa5f82cd1e1cbe18635123d4d1ab88e3e86c643dedc8ef81a46984422"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Somebody has to decide that the window is the way.",
+      "text_sha256": "sha256:565835e1220f8e453c4cd5dd1946b2c5fa24be8625fe4f121a8e75aa3ab47c0d",
+      "idempotency_key": "sha256:37a9a50c553453c588091e24e5661c31e33aebe2d138b785c3e0b1d56e0834ea"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Somebody has to break it, in a room where the air is already going.",
+      "text_sha256": "sha256:274b1022c8465b2b69f0fab7087e98f45560d17055921a98bf3baf46b3b075b6",
+      "idempotency_key": "sha256:73f6bdee250664f35ae505183ea8890f59d77278e9eae4169ae92e14205d577a"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Somebody has to be near enough to a wall rather than caught in the middle of a floor.",
+      "text_sha256": "sha256:fc138021cb03e3902c4d819c12e01070a35b3877d83a0ca4326fc87c74acb1d3",
+      "idempotency_key": "sha256:b3b975863ef5a7895591d968bec2f89e5b7e264730210691c741535565df177d"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And then somebody outside has to reach back in.",
+      "text_sha256": "sha256:deccd3e9866a543ea2cd2b9454441aaebecd8aebd3fec1345a88f4d60c7ff5ab",
+      "idempotency_key": "sha256:24d87133a9eb2a6a159f1c45ffb8e09bf8e436fa27d2d8eb80cb52563ab5a7c9"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The video shows occupants still being helped out through the main bar windows at four minutes eight seconds.",
+      "text_sha256": "sha256:f44eaa9498d18d7ccf4075f19de0e7a1b602e2c9b638e6c81ec3cced41cf4beb",
+      "idempotency_key": "sha256:b3ac695f626cf551876f80873d18db8521eecaf18c35ba62f8216d42a72945b6"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "None of that is in a plan.",
+      "text_sha256": "sha256:8aba73e0a28e64323f5565b2bfb44b39460d5ac914e7afdccc05e21699e2155d",
+      "idempotency_key": "sha256:4821f4c276bc19028652cba456e1b079fac16fa2d517489eac45340d0627a2fb"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "All of it is in the count.",
+      "text_sha256": "sha256:2f34ccc495759257493f894a6f4e4746a56b51ec96eda941baa2201b2120e36d",
+      "idempotency_key": "sha256:3d2207b481ecfe3835c0de0e084df67dc136693ba6131182e28fba459a3ae080"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Nobody designed that.",
+      "text_sha256": "sha256:4b30fbd822047c905e5236094e31583e62fedb1cc3c724c8db60cc49cc743cb6",
+      "idempotency_key": "sha256:2d38d0c7f999904fb08494d0e54bbdab03d91b88d7bb6493b38d6a7c0987d40e"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Nobody drilled it.",
+      "text_sha256": "sha256:2bbf4452c63c155a3fc48765a7ee2cd0223358d0b97151f8062a2f271e6c44de",
+      "idempotency_key": "sha256:97539b08792557cc1c4d1750aa3a04ee8c955db0dd7899054e5040fc0bb3bcee"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is not on any plan.",
+      "text_sha256": "sha256:15bcb3f0e9136abd9d0221d89c5727ae49575eedf8c322e073cbaef376802e6c",
+      "idempotency_key": "sha256:098e32b8f0abe59084275ea1cf80e210cf930b07cecfbaf52973e8b130e2fbf6"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It happened because a window is a way out if you are willing to break it, and several hundred people worked that out at the same time in the dark.",
+      "text_sha256": "sha256:47ccbe51fea1d8c59a3f14e6d95b7443c487dfa383301526407bb3345a9d6510",
+      "idempotency_key": "sha256:ca3a0d4d0e886243a2451cfdb74090d765be83eafa2909b3283ae022e18d8eb3"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The last recorded escape from inside the main bar, through a window, is at four minutes eight seconds.",
+      "text_sha256": "sha256:47a459c82f7b3d61c43bb91bffaad06983124b116d03c4f8cb9b4b4f0b4a4b1d",
+      "idempotency_key": "sha256:0a5e730125c15236bd18363789831794e2e3b248ed7b0cab2e38f6fbbc9fc150"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And people stuck in the front entrance are seen escaping as late as five and a half minutes into the fire — just before the fire department ran its first hose line.",
+      "text_sha256": "sha256:ee003acbf948ecb5b23104228b798c53ec74e74539fc952acb0334e2eed74c37",
+      "idempotency_key": "sha256:033555399f20a7f918ca221af8733c52389b14f3901c219828109e942bd7a2ac"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In under five minutes, flames had come through part of the roof.",
+      "text_sha256": "sha256:cd049e2e33db63e7ce5281d11257f5cf544054c2fb7e836ab449fa6fc839db82",
+      "idempotency_key": "sha256:89e3f2350f0611a969b61a4c16c94bd0cee8f78f2b85d151ec7fe767a183ee2b"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The value of a technical investigation is that it can run the night again with one thing changed.",
+      "text_sha256": "sha256:ad512e614909fa34a663be48fd5896ad354b7350fe5398f2b7757ee34380df0e",
+      "idempotency_key": "sha256:f86cc4f52a2998fa57bf273b456049c3691425b2576db7bc85f1e2a9fbed50c4"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "NIST ran it twice.",
+      "text_sha256": "sha256:26cdd5731e6e4aad6a632f11959232c8701f7ad5e6f78ee2fda41c7f69955fe4",
+      "idempotency_key": "sha256:e17f6e5b5e5db224e236dea8a0d498302df32273c56ac32d9b6aba65033e7c60"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The first change was water.",
+      "text_sha256": "sha256:5ac6d879483523f63e42b0c79758d590646432ed693db1550fa0cf4ad2bb4498",
+      "idempotency_key": "sha256:6f1949448ff1514de4dd97742770e3de07e42c2d8a5beb830b918c503c238456"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In the laboratory reconstruction, the club was rebuilt and burned twice — once without sprinklers and once with them.",
+      "text_sha256": "sha256:b3328ddc3a28175d1c3e4d07399cc633d060f26e4ae82f16915aa8190c7c0bd3",
+      "idempotency_key": "sha256:2944078788cb9cdf78897fd37fb9a72ded9d60a01fe9ee50ad57b2fdf7660703"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In the unsprinklered version, investigators fitted sprinkler heads that had no water supply, purely to measure when they would have gone off.",
+      "text_sha256": "sha256:0dbfe0a7a6e5c7e36d516098529e9ca5d4e63873373c1c5cb9b74bdfd2da31be",
+      "idempotency_key": "sha256:b8326811e76365687a307eb881eabe1d215ebdb899085bce5826e68ca573858d"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The first one above the platform would have activated thirty-three seconds after ignition.",
+      "text_sha256": "sha256:afd8d150cd6647e14cbbd3531eb959e60f77183216e56a9c7d45a52f0042f569",
+      "idempotency_key": "sha256:97d24b03a49e08c9bd1fcab0541b20a7a32a679a94a3a9e0abbc9e8ca11d1410"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Thirty-three seconds.",
+      "text_sha256": "sha256:fd29e2ceb36a2eeda95a95ab8099944d7c870badab0b9705aa6d0ae343a576d5",
+      "idempotency_key": "sha256:f95ece766fb2af2dd5dd0efd6940fd967fdcf0e23c07528f8f4f117b5fabf05e"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Nine seconds after the first person in the room realised anything was wrong.",
+      "text_sha256": "sha256:3a3b2db6007d2bd548c1dc52b11d5e62549c53e9ffab988ee312d3ba3fc796ff",
+      "idempotency_key": "sha256:a649b19ef711ac45b62b6d696e558f71a03fb6bd697fb6f073e888b01b612aed"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The second change was the door.",
+      "text_sha256": "sha256:6e6c92f37c6b9344ce2df6a51c82db3fa6b7e67a25e1f3ea820a794d7629c40c",
+      "idempotency_key": "sha256:65700fdcfdc05aa9fe3b0a55557d4ffd26e764b21b7bd3dfec00ba24a5840eb9"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "NIST modelled the evacuation with the entrance doorway made twice as wide, and reports the result plainly: doubling the entrance door width brought the number of people still inside the building at ninety seconds back down to the range of the baseline scenario.",
+      "text_sha256": "sha256:b9e6fb434631a191ce520dfe9ea346c465e1116aee85a18fc6eda73d63693a34",
+      "idempotency_key": "sha256:8713b35150bcd22a30434b638cc81af9e6548ce47acb340201df123c35bbc647"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And there is a detail attached to that calculation which matters.",
+      "text_sha256": "sha256:ebed4a42914d497ff9521b2a9d4f39a12ee7c8c7e47690b213477d0283974bff",
+      "idempotency_key": "sha256:2ea9764065247c880e1decb8fe0afcc11fb7a4c9513c4cc4b8643607ec64c3e0"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The crush had not occurred before ninety seconds, and the front door remained open through those first ninety seconds.",
+      "text_sha256": "sha256:ddf20491fc6d6ff7c8161b6c4b3c3e7fa4cf7c3f984f42dc6668ccc738165eff",
+      "idempotency_key": "sha256:915119b2caf074b5491f032d9d2c3e81a7d8743ff1094c748e6fd1c1e4d90153"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So the model is not describing a miracle.",
+      "text_sha256": "sha256:9c43ec03e0f659497e9402595c9b7c547dd0ed486ad822dbdb3f35c10be53a80",
+      "idempotency_key": "sha256:8a2662ababb7e7d5f351a4fddcd823c6c92997aa0cc209c51a1cd0a4c1e2ad50"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is describing width.",
+      "text_sha256": "sha256:69ecedaab07d1b454215b4b4b97a20a920bd611daab29fdc40f1c6769dc60694",
+      "idempotency_key": "sha256:7d483ee9f4dcd65aa5a7d6d50b3543e31c0c86de88282d6ea6c725843347242b"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There is a third thing the report settles, and it closes a question this kind of film usually leaves hanging.",
+      "text_sha256": "sha256:7e966ed7f34d6528ce21c281db80d8bbd44fd0f75999ef251cdaa7836963fc33",
+      "idempotency_key": "sha256:c9385fbd8a84f15361f2c56532fdee38a1faf61191742f1403b96f40b0a628dd"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Where was the fire brigade?",
+      "text_sha256": "sha256:45f1aa8230dfcd1039327d8aa8db9ffdfdd2b921acc2376197f3321ebc30755b",
+      "idempotency_key": "sha256:a613461f0fc96d6fda30f06af99a9d340f131cc92574e16fb7afba505eec3648"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They were four hundred metres away.",
+      "text_sha256": "sha256:0b322d57bf0d14f12886dd611d0e5fd6afa227bedfc75fd36529c568d4a8702e",
+      "idempotency_key": "sha256:9662bca696b64a5b0e3bb4ea2dcfa70a93c649a8f3c5e78964bd0a4521c52dd2"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The first 911 call reporting a fire came in less than forty seconds after ignition.",
+      "text_sha256": "sha256:2e48298b6e7752ece5f214d78a6a8eb3ee130069afde8841f9893f763dbe8cc8",
+      "idempotency_key": "sha256:db28185f68f031173788a30d438d54e6e1ae2b1d1f4d9fb64cc9043bc7c8f33a"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "West Warwick police officers were already outside the building and reported the fire about a minute after ignition.",
+      "text_sha256": "sha256:4c093187881bf56cdcf69467ae51ee15acd107aaf627ddd00ea8fb1f1776964a",
+      "idempotency_key": "sha256:3d9542375d39fa446766128b5f7795d05351072656fb4ff47e653e5e5360fcfe"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That brought a dispatch of four engine companies, a tower-ladder truck, a rescue unit and a battalion chief.",
+      "text_sha256": "sha256:d194650bec0ae9a0c5ccc3d1acc3b7b9aa9dae9e861e789f373580d2211a9612",
+      "idempotency_key": "sha256:26b614ee85951a7b3af10932b2c15c4aea81ecf9bb855cd2cf6ab33aac41c7a6"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The first apparatus were sitting about five hundred metres west on the same avenue, and were on scene within three minutes of dispatch - roughly five and a half minutes into the fire.",
+      "text_sha256": "sha256:a577803ece194568afbe3fc1a7ef9d1afb5724836e0ba86d2cdbb53d99af0490",
+      "idempotency_key": "sha256:8d24291872464021c5fdf5b7b058812fd8897105ef3349ceadf241da3e383300"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And there is a detail in the staffing that says something about small-town American fire cover in 2003.",
+      "text_sha256": "sha256:1b4ab37a8450f29418e846c4bc250b2484b588254eb9c053fcfaba769fea9875",
+      "idempotency_key": "sha256:b2d8b4cabe62433f491cf87589248a276f01d25e009dd9578dc1c7b617c2620b"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The first engine carried one firefighter and one fire officer.",
+      "text_sha256": "sha256:b2ee9409b770e7dda3ddbaa6a71edc0e829d1af2e4c0a77a50dedca6e974da0e",
+      "idempotency_key": "sha256:9d80f7c0798e7e5a34850596a5e6ad2cf210e8900bd1e21d12520ee77bbbfc6e"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Two people.",
+      "text_sha256": "sha256:769c959b87eebddfd675a230addf02d7b78fba0d06bd08987ceeda5f1a09535d",
+      "idempotency_key": "sha256:4ee4be865d7177699f696bbd27a34fd3469bdedd992e3d00bf1b11aa3ed25cbc"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Water was flowing from that engine's own tank at about six minutes.",
+      "text_sha256": "sha256:2f255dd52a9e3d89b9754f6a53893c50eee7fb25a361bc9977fb0ef979294ace",
+      "idempotency_key": "sha256:c07895aab59ec5f59c7afe1d20cd6b1f660a627b4d227be6cbec79469d64d601"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The battalion chief invoked a mutual aid agreement, which brought seven more engine and ladder companies from surrounding towns, and requested twelve ambulances.",
+      "text_sha256": "sha256:cf2fa61b5d85b787c3b5537de836ae6eff1f5ccb1d04678002bf803955b04aa0",
+      "idempotency_key": "sha256:b4e1f6e948486f49c124d63fc2e257a8b938a7246879ff16ab0eb211f3c0c951"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A mass casualty plan was running within about ten minutes of the first engine's arrival.",
+      "text_sha256": "sha256:f229a739857902a6b5bc9fbecb2e5843b3ca94a17c9983f34d696e799689e564",
+      "idempotency_key": "sha256:4c4ea48da8fe60a098a37a8ae4d6047d408b8b25124cfdf3a6183abf86af6f20"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is a fast response by any measure, and NIST closes the question in one sentence.",
+      "text_sha256": "sha256:a05febfefaeb46465c6b9663700cc34e07e32e180e78ba72a6855824f6cd00bc",
+      "idempotency_key": "sha256:57b23b376580347414fa1ce59f12e4cee43d7269658b83551df8b6f7c4930c1f"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Given the hazardous mix of materials in The Station and the lack of installed sprinklers, nothing that the fire department could have done that night would have saved the building from the fast-growing fire.",
+      "text_sha256": "sha256:e290199e648673af6cb893a8b35ccdb5635fbe37a88872cb699ecf833a400e5c",
+      "idempotency_key": "sha256:9d901a206a5a56c77c362134094524e79be19bf3c5768b1ee46c0403ba753759"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Read that as the technical statement it is.",
+      "text_sha256": "sha256:e540e079ef5303c47b1e7415e8b8393ffc2e100ec672a98227877fadb6567e6f",
+      "idempotency_key": "sha256:298d8942823d1951692fad034aa0e00b3a9a8d1f4af4125e0966dc2c9eb36cd8"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is not consolation and it is not a compliment.",
+      "text_sha256": "sha256:2398bd9fa96b71efdf0a3448af5dd93478a6dcb38d018251e34e30d67c73bfad",
+      "idempotency_key": "sha256:a5043507e4fb1667f164a8551dc385e490ff03e75ee66ecf3d12840695e20ff8"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is a boundary.",
+      "text_sha256": "sha256:e40d747bc1136e174aa46a9b26ff287ce52679acdd13d8b80daf0014c85ff4e7",
+      "idempotency_key": "sha256:ed04b0f447a903b0a3874d08d6f37d1254d05f55db2827dbff00d0532f8798b9"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The event was over before the profession that exists to stop it could physically be present.",
+      "text_sha256": "sha256:9d21a66fccb885f797f52a2261b5d696e057d6f857108915a21043a7c0c34f8c",
+      "idempotency_key": "sha256:9b8560e6e2643d580247bcb9c002de420d5a7f1a8641ef528fde02d09397c8e5"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Which is precisely why the sprinkler timing matters.",
+      "text_sha256": "sha256:0e5dfa8cba9dd954640fff51523e05ea0bc7dad181f69866fbc1b537c332df52",
+      "idempotency_key": "sha256:32ede76bb61657b2be81ac0459fa08f70f602e394053ae827fa4d4ad8d54d4be"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The thing that would have been there in thirty-three seconds was not a truck.",
+      "text_sha256": "sha256:f945e04131d32f4d48d39dd867115899db3519020c0ba7e365643274558643a3",
+      "idempotency_key": "sha256:c6d8895f8c1ccc02bf97c6fb95ea9cc9acc1765e821fc235ab067548a0a9b7f3"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It was a pipe.",
+      "text_sha256": "sha256:ba9610f2d5fd94197cf5cb6613915e187355d2a82c41cae2f250c7095be9c9fd",
+      "idempotency_key": "sha256:720e0f90deb1fda1f36505911a33db52eaaf939c30a56883cb6de2a2b9ecdc2a"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So which of those two changes would have mattered more?",
+      "text_sha256": "sha256:61731189b5a69fd6d777acdeb85434dc05d404bfa1add33f0aa86c905c656815",
+      "idempotency_key": "sha256:261bfb8f9a4e20d5d7228cbbeee958721401776749aff82f473c1e3606dcd66e"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The report does not rank them and this programme will not either, because they are not alternatives.",
+      "text_sha256": "sha256:88b736a5a805cb0c5c22575c98ac783718a2cc3f9d391de1009f52b2b671e5eb",
+      "idempotency_key": "sha256:66d07bb68cc1fc439ff71b640133b9152d5479b47b4544d23c36ea5e4f9158db"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They are the same finding twice.",
+      "text_sha256": "sha256:eee1674842e465b1a82445c1f23ae993d659d2a6a6d726df1f3feea34a5415ff",
+      "idempotency_key": "sha256:8cd883b19a6e14d95ad49f8a19f744f40810824cd394271f7dbcf4bdf31f001e"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One is about the time the room gives you, and the other is about how fast the room can empty.",
+      "text_sha256": "sha256:698f451d5373b581039daa2ed6c408a3f8909c0976d4ccb41f582f1c1e7a5094",
+      "idempotency_key": "sha256:10179db74b59a5b9b3f25c3c454c94523b01ea7ab79cfb210f296793dac168af"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Water at thirty-three seconds makes the deadline later.",
+      "text_sha256": "sha256:fddd18fc24d2b08851cf4f469e1ec8ab033fc0619e7bf9d5881931f0fecefbd3",
+      "idempotency_key": "sha256:875da5811bd9f97646722d9e041a85ca71ef92dda828369f4ea01bbeb68a5d12"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A door twice as wide makes the queue shorter.",
+      "text_sha256": "sha256:1e1043de51ff4a1bf105cee4ec0a680c887991b19b09213aaa3389c5c654bd62",
+      "idempotency_key": "sha256:0c04b8e666d3fc3e52297e55a06e7a93278dc6be961a0d304583bc716330f50c"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Either one moves the two numbers apart, and the whole of that night lives in the gap between them.",
+      "text_sha256": "sha256:b086c1d5dbb3cb41d15c499626acd551fd6ac9cb1ee79008cbe5b174f421f3a9",
+      "idempotency_key": "sha256:431aff4856eecdc95ff0280a478559eb94fb9188bbad1235725ec7e6291afb66"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One hundred people lost their lives in the fire.",
+      "text_sha256": "sha256:c4a9813b495d8dc03fad6128ec8494f88c8a0a5c1086b7d7ca688600eb135953",
+      "idempotency_key": "sha256:360b57ea275a9aa90f3417c32bb677181214962e4898cca4698fee037a131515"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "NIST names three direct contributors, and it is worth hearing all three in order, because most tellings of this night stop after the first word of the first one.",
+      "text_sha256": "sha256:6d3398fcc6e6e496fe290e796204cae0096bef4b41500c8fb468e45ddd3791ef",
+      "idempotency_key": "sha256:f560e9dcce4f7f5c9a1591cd85f9c1a9708f9273442707c57c330211f509879c"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One: the hazardous mix of building contents.",
+      "text_sha256": "sha256:4a36a62c3716fbad2f8de48fd26399c2be3086c42ef767e7680db37b3bd887d8",
+      "idempotency_key": "sha256:66e4c2c3beac27b7051251a2644ea8ecf6969b65ba05c5f956f60ad772f54191"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Two: the inadequate capability to suppress the fire during its early stage of growth.",
+      "text_sha256": "sha256:97766c3ff8ce47e340f2c707bc09e826528ea500aa14f6d9312e3fc8ce4345f4",
+      "idempotency_key": "sha256:77fb34c96d06712e1549b613ef2c3bcc532ced0278fcdaaf38cabc20e5a478d2"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Three: the inability of the exits to handle all of the occupants in the short time available for such a fast-growing fire.",
+      "text_sha256": "sha256:50da9bafa74d5b4114bcb576dd042a3546c31a6edc88e3539db98cb076155a89",
+      "idempotency_key": "sha256:149b4001bb9389d6c17c697575c9ae6769b7bd91577349e00724c76371c7a527"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Contents.",
+      "text_sha256": "sha256:a8892ae63e25de881676af69f83effa4b6e7f38863000ea91207e10757b0a675",
+      "idempotency_key": "sha256:6035d081c2607d85fce060832b6139f283f38207bd717321a0daf7639694d1a2"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Suppression.",
+      "text_sha256": "sha256:4397555107ecd11dc85aa2e061f27e67c696316de1d048e5217ab7e326ea86b7",
+      "idempotency_key": "sha256:e4f46f21951746e41d971727a88438566fd842274ed9d8c6a6446b62936e223e"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Exits.",
+      "text_sha256": "sha256:701184f5085b563674acf8701cd3e40289257322e3f1157d2dd18cbf267c6624",
+      "idempotency_key": "sha256:c5bafc78594cb3370079ed4b7330babf3b3238c74fc082ddbc3c6c55b12bb2ff"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Not one of those three is a person.",
+      "text_sha256": "sha256:95cbe92aca5e5af3ee87e17ce1956e10137fe420126bec73b1c15a86fa89c014",
+      "idempotency_key": "sha256:dab34dfc12385cd1f9c4dcd2e2a2ad2212a9ca2c0c0f2df69e38bbbcb848389d"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And then the sentence in the report that is easiest to read past and hardest to answer.",
+      "text_sha256": "sha256:339b0f8968c64f1e5d6bdbf5c32f573c3d8eab7d5e6cd8648f75d56d3140bbd2",
+      "idempotency_key": "sha256:5c4bb3d94d94ead75ce5965f1f86bfcacd86fd175c93ffe05e5309171fd1fe1a"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Both of the 2003 editions of the major model building and fire codes have provisions that address these problems.",
+      "text_sha256": "sha256:ce366d9ee7bbae47cd4e15c39a7e384ad994a31f88c1ae974089b55389fe66de",
+      "idempotency_key": "sha256:1cdcd715c754c3d273db43159be6f3e62f07330ef47c446cd105d22d92ea313e"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The codes of that year already said it.",
+      "text_sha256": "sha256:17d3ea64e8faa7bf798654e5dc82e9da6982953f4725f0e0328e76140d95835f",
+      "idempotency_key": "sha256:97d11ee9d1506d22f6f7cd7af83406f65a81912ee488219a4eaae29802c82f02"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "NIST's recommendations are about closing the distance between what a code says and what a building is.",
+      "text_sha256": "sha256:2affc02f88587477f4ba686a42e76ed5b8a76bf7fbd1b3745df0dffe6eaeb6fe",
+      "idempotency_key": "sha256:46ca958ec3a5da2b3e78b02859b3f54f66c7dcb4569445412bc4b60d9329b6f6"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It asks that pyrotechnic devices be banned from indoor use in nightclubs that do not have a compliant sprinkler system.",
+      "text_sha256": "sha256:c984a22980c9ff4677cb1f2789607afba5aa81cb8cc359b7abc7d7382ab5c2cc",
+      "idempotency_key": "sha256:7c99bf9386313ac03d6de49538f01c0ceb6adbb2b7bfff875ed4f597798123b3"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It asks that the factor of safety used to set occupancy limits be increased.",
+      "text_sha256": "sha256:695331c741d6b9c2ed85d317261553af3ca0370ea2114a008f7fa24a1ef9d665",
+      "idempotency_key": "sha256:2d8729425d45fee0e5d19eef917a724fef057d74ab5cefa5b8dd1780c1199476"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And it lists, without adjectives, the ordinary behaviours that quietly disable a protective system: installing decorations that exceed the flame-spread provisions, exposing a building to strong ignition sources, exceeding the posted occupancy limits, temporarily blocking an exit, and disabling sprinklers for maintenance.",
+      "text_sha256": "sha256:8ba0d19f94d7e8d0efaf9fe653e8dbc3212fefce43a24edb2233af969bebdb00",
+      "idempotency_key": "sha256:1ef3999c0ea546c9b36f6d70830a9fa6182db2b1a2692239bee1f088b5ecf7b6"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Every item on that list is a thing somebody does on a normal Tuesday, for a normal reason, in a building that is not on fire.",
+      "text_sha256": "sha256:f30b0950361cc68db993bca9b88ec24fad0d36a4f41c01c1f84d8dbf9ad72026",
+      "idempotency_key": "sha256:c35de6aed7fa5b25bfdb1e8e3f78b933b01d33693db2b14ee26d7a1ec310ac09"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There is one more recommendation, and it is the most honest thing in the document.",
+      "text_sha256": "sha256:202c0ebe9262ecaf813e2f44dbb78552ec578a6b5305ed080f0e3b5c0d2183e9",
+      "idempotency_key": "sha256:a282c580b470d4ad5c94c432b38b85abe334e0260df637405aad8fc33dbe9de2"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "NIST says there is a clear need to understand better how people and crowds behave in emergencies, in order to pinpoint the factors that lead to crowd crush — so that buildings can be designed to make it less likely.",
+      "text_sha256": "sha256:82a59cb7dc38e5f0ad8d1b600077115461a0f44f4355312d28568bef71e4ebed",
+      "idempotency_key": "sha256:44f85ebb45d200a00defd153a699ca10dd3d58947669d8b3d119d4d37debeb0a"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Which is an official body saying, in print, that it does not yet know why a doorway does what a doorway did that night.",
+      "text_sha256": "sha256:6477578411880df833b92280fe673e4e0d88585c424c6819185523c2df9e90f6",
+      "idempotency_key": "sha256:a872a2c92b4234629e8c6adf4facfd8179c788736acb41e7b4b07a9890d98fd2"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is worth knowing how careful the modelling was, because the four-hundred-and-twenty figure is doing a lot of work in this film.",
+      "text_sha256": "sha256:aad9e7122f8c0b7546ab40fee79bac188d799fd1441045e91de0f3542fc5cdfb",
+      "idempotency_key": "sha256:8cf7d4daccf047e0f7cff06f7910c8a6fa93a181f8b6a477a3d44644bc6c4f97"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "NIST ran the evacuation through two separate commercial packages, and had to decide where to put four hundred and twenty people inside the floor plan before it could start.",
+      "text_sha256": "sha256:955d6d79a85c74c7774ee2e0ae258a7c06f98521e76a2c9719e4d2d69bf6edb6",
+      "idempotency_key": "sha256:33542320578ec012d54b29323ab75612a3a692e1083909844603ccdc6c10eabd"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It assumed the dance floor and the area around the platform were at the maximum density the model codes allow - a little over two people per square metre - and the sun room and the raised area around the dance floor at about one and a half.",
+      "text_sha256": "sha256:f5766d6fd7afb71cd6f9643e31721424045f5e596cf5dcb0ef851100e2ddddb2",
+      "idempotency_key": "sha256:bd299dbea9cef211f7e73e2061ad33d06986836aba3d0880f30b223e85d50030"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is a crowded room, modelled honestly as a crowded room, at the number the code would have permitted.",
+      "text_sha256": "sha256:748536a6d185b57d0b01f8a882f139f7a6bea13da66ea1ab0ac11b5f53105fc3",
+      "idempotency_key": "sha256:055adab11de5378856d08439b637a8037443bd12d03b0c76e1408866dd9c551b"
+    },
+    {
+      "chunk_id": "VC-0302",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And one last thing about how this report was written, which is not a finding and is in it anyway.",
+      "text_sha256": "sha256:587aa4471d33f4037b7b41ca123524b26bbb8fe9cd911402dfeb5d71913e38af",
+      "idempotency_key": "sha256:6e3a93b7c0b02b9c4415b691ce1eff09accf89e91d7dfa5c3b0ebc849214eb13"
+    },
+    {
+      "chunk_id": "VC-0303",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "To understand who got out and why, investigators tracked individual people frame by frame across the video - from where they were standing when the foam lit, to the moment they left the building.",
+      "text_sha256": "sha256:d1fcff1cd840e7416c4de1d1bbd2b813ea5a288bbb483122f0c7a52ba7bf4985",
+      "idempotency_key": "sha256:6d7e83549aceeee8fb31f63eae1c952bc438322b0ebce0b00d08219fffcfb7f9"
+    },
+    {
+      "chunk_id": "VC-0304",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One man is followed the whole way.",
+      "text_sha256": "sha256:d564d0ed1aa7be0bb110cb1580552a8d812a12a129da77a619a738ac46a0b48c",
+      "idempotency_key": "sha256:b5c21bc884d9a32e3bcd2ee086f65cbba6218c057576ee500aad02a2416c6419"
+    },
+    {
+      "chunk_id": "VC-0305",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The report says that his face has been blurred in the published figures in order to preserve his anonymity.",
+      "text_sha256": "sha256:9ac3ab7c5d2b4d173f713f911df419c6068e22e6b7cd9cedcac734c5eead6b5a",
+      "idempotency_key": "sha256:5dc1842935f983e6dffa85896470abca2fec99aa0d5a712f2310d37acdbb4b50"
+    },
+    {
+      "chunk_id": "VC-0306",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A federal technical report, in the middle of a fluid dynamics investigation, stopping to protect a survivor from being recognised.",
+      "text_sha256": "sha256:8f0302b77a07fc118330b22a218771c527c0c86acf7baa532097933ac84fdb59",
+      "idempotency_key": "sha256:a08c22261038d6c2fa94e4fc3692eb0b979f65f0a2f30b56a322e908994ff0fc"
+    },
+    {
+      "chunk_id": "VC-0307",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Go back to the doorway.",
+      "text_sha256": "sha256:7382b9b8b7896c8bf2f3c61a0211a4db20eb76408d329076b9861b84d2ec3e9c",
+      "idempotency_key": "sha256:c66c8fbfed4e19c024e5065c816939296d7b3b082b13c082d3177d253fe8285e"
+    },
+    {
+      "chunk_id": "VC-0308",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It is empty.",
+      "text_sha256": "sha256:fb7664829715f0e109a2ac869a3bdcd5cf2c53c8053508a355962722619ed7e8",
+      "idempotency_key": "sha256:6ef1b5aad3bf299f05379c6d88df1faa7f28aeb97a99c3964ead8c86ef95f63b"
+    },
+    {
+      "chunk_id": "VC-0309",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The wide doors are propped, the vestibule is lit, and the single door beyond is standing open onto a room where a band is setting up.",
+      "text_sha256": "sha256:e77ec478689dd44308652d655f949b89f5cbbdd73239840ed9954a3479af7e7d",
+      "idempotency_key": "sha256:4d2b930e6bc672b0550f901ca354c357bba2dad285f81efce563aa5f76ebc5a5"
+    },
+    {
+      "chunk_id": "VC-0310",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is what a building looks like when everything is correct.",
+      "text_sha256": "sha256:97d5f7c095a7efb4f3f1707de274458cf96ba0db051e7f3c2512c6a176652e3e",
+      "idempotency_key": "sha256:77773ea10078f9ca3263d8c9ca40551993137d7a703bae44d36bc85927141d56"
+    },
+    {
+      "chunk_id": "VC-0311",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It looks like a way in.",
+      "text_sha256": "sha256:1288287d51b0f84a12e4a55e8f912c8b8fcca7b1a420690b8852a775e0f481cb",
+      "idempotency_key": "sha256:5658e93377f3655cbcd9ea16cbd979d93dd9c7d67af865af797a5b9cde906662"
+    },
+    {
+      "chunk_id": "VC-0312",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The foam was on the walls for sound.",
+      "text_sha256": "sha256:9aa723095c64a05d32e3eaa36bbd4c5d223aa083ce237dde19156d37df53797a",
+      "idempotency_key": "sha256:37aedb0e8ef39e82525ca7d5fd98a56eebad93f3fc302b3db7ed76f05d480d96"
+    },
+    {
+      "chunk_id": "VC-0313",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The tables came out so more people could stand.",
+      "text_sha256": "sha256:880e291b7c0f0284c880fd29f956e8d6078c1f471a3ba51f9bf964ebb759d2cb",
+      "idempotency_key": "sha256:0904a442c0b5ad46f7cf74cdfc06b39ae9c5c8f0f227807779432a9ad7754d3c"
+    },
+    {
+      "chunk_id": "VC-0314",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The vestibule was there so February stayed outside.",
+      "text_sha256": "sha256:ef68e27955c4ccf9a5090a3d6b768ceff57bfb4c2eea841b6d30040a541fb9ce",
+      "idempotency_key": "sha256:998d232d1a0e7f125dcdf5ee4663964a0e00316e3f260859a38dc287247337d2"
+    },
+    {
+      "chunk_id": "VC-0315",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Nobody in that chain was doing anything unusual.",
+      "text_sha256": "sha256:9ea1059945568ae52b73d38409486149ae13455f29274ffe48cb65d2e5407dee",
+      "idempotency_key": "sha256:c0f77400d530bc14d1dcb5568fdb14536b3d60f4a61e8583c89d83010db01de7"
+    },
+    {
+      "chunk_id": "VC-0316",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Each decision was small, sensible, and about something other than the night it turned out to be about.",
+      "text_sha256": "sha256:11010b4bcce53b402a534495f0e931f2ace850d4b7beec68d8a00d33feaeb042",
+      "idempotency_key": "sha256:9f89cfdf4154c4e6e6f06151ec6de96e219b8e492be42c05a43191a4867c3fb3"
+    },
+    {
+      "chunk_id": "VC-0317",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And the arithmetic underneath all of them was the same arithmetic the whole time: a room holds as many people as it can put back outside, in the time the room gives them.",
+      "text_sha256": "sha256:aa77888e6b3f0493a624cc54ca24697c3d7fc8b7ccef19650a88adac93ab4235",
+      "idempotency_key": "sha256:88341500b2518942c0bdbc6ffb3e9f2794aead379375db0fdb03b89062a5f1eb"
+    },
+    {
+      "chunk_id": "VC-0318",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Ninety seconds.",
+      "text_sha256": "sha256:1cbb4c85e3cb8a32d90d4eca7febd62773dc0fddfa5752a579e04935b8d137cd",
+      "idempotency_key": "sha256:0aa25525ada07cd67abcd9c3b6b66ae806425264ba96b3ab72cad90118ba9cb0"
+    },
+    {
+      "chunk_id": "VC-0319",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "One door.",
+      "text_sha256": "sha256:576d2fcb0b036af619f493444a23f6070ed842c017d32747a53d530da3509e77",
+      "idempotency_key": "sha256:314efdaf5dc3b3126a63be6b9305962c0692c096d986425ae31ea957560d61fe"
+    },
+    {
+      "chunk_id": "VC-0320",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Between a half and two thirds of everyone in the building, walking toward the way they came in.",
+      "text_sha256": "sha256:cb9607f7b15ca83b662355684dffdab0b34f822ef8b0e702c775e2f8eb4ecfe5",
+      "idempotency_key": "sha256:0684ee8e1e8a12cd8bc5183a7cadce4e85ee03e5377bdaf0da785ec50bc2b12d"
+    },
+    {
+      "chunk_id": "VC-0321",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Tonight, in a small venue somewhere, a fire officer is standing in a vestibule with a tape measure and a clipboard, working out a number.",
+      "text_sha256": "sha256:424fb01f3c29645ba71f38e53c0985a96af5db632d2d53134a1604a0695f47d3",
+      "idempotency_key": "sha256:f5a72506fb4b13e048ced3cb82d918e59891c78226712f8a74aaffc46f6b8bc4"
+    },
+    {
+      "chunk_id": "VC-0322",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The number is not about the room.",
+      "text_sha256": "sha256:0b161c6b80428b5c2986108f9bf8ef8519f799fca180cee0419c4265ec8701e2",
+      "idempotency_key": "sha256:b820f27ccf7137dc8560e6d4a6ff08d2ecb895549548ed91416dd139fc86c014"
+    },
+    {
+      "chunk_id": "VC-0323",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It is about the door.",
+      "text_sha256": "sha256:4b47a058451b58d413b00cc3e49b5a189df155b16cdd29796595b5c50f7cc6eb",
+      "idempotency_key": "sha256:3f6b6ddb03f30fad1174f88c0439dbab302e7b56657cb8b5052cce312375d2cc"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-021-dbcooper",
+  "topic_id": "TOP-20260630-021",
+  "slug": "dbcooper",
+  "title_working": "D.B. Cooper: The Only Hijacking America Never Solved",
+  "state": "edit_review",
+  "risk_class": "R2",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "codex_image_prompts": "v001",
+    "audio_mix": "v001",
+    "captions": "v001",
+    "edit": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-021-dbcooper-topic",
+      "artifact_type": "topic",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-021-dbcooper/00_topic/topic.v001.json",
+      "checksum": "sha256:38eb04cd5e86aa2207bf21931118d97c79ccbf0af7f840579384748f87a73665",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-021-dbcooper-sources",
+      "artifact_type": "source_set",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-021-dbcooper/01_research/sources.v001.json",
+      "checksum": "sha256:00ce4514d7e11e6ab20b59c9f1fcad5e1425d303136d336ffff5b6546aa32159",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-021-dbcooper-claims",
+      "artifact_type": "claim_ledger",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-021-dbcooper/01_research/claims.v001.json",
+      "checksum": "sha256:08e03f7653e957be70ca5970ea6badb0c60dafb6bede7816915d309527513564",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-021-dbcooper-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-021-dbcooper/03_script/script.annotated.v001.json",
+      "checksum": "sha256:79db346b5404805bb0af6fb8a85cb6b098e880a51a5cfb7816d6bd88c297caba",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-021-dbcooper-codex-image-prompts",
+      "artifact_type": "image_prompt_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-021-dbcooper/04_scenes/codex_image_prompts.v001.md",
+      "checksum": "sha256:492c4595781325c7bff3627a381eb8e68bd38f5d4ca76dc537b982cf95f27576",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "R2 UNSOLVED. Never name/imply guilt of any person; FBI never confirmed any suspect. Visuals: no real-person likeness, no real airline/FBI logo, no fake-1971 footage.",
+    "Left-process only (Claude): topic/research/claims/script. Codex owns scenes/visuals/audio/edit/render.",
+    "Narration sized for the band; actual ElevenLabs ~173 wpm => ~25-26 min, final ~28-30 min.",
+    "Durable source hashes PENDING (FBI bot-protected); capture before publish.",
+    "Final-script approval recorded as APR-0001. 46 Codex image prompts ready; design doc codex_prompt_ep21.md; build prompt codex_local_ep21_build.md."
+  ],
+  "blockers": [],
+  "created_at": "2026-07-01T00:00:00+00:00",
+  "updated_at": "2026-07-01T02:33:48+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-026-katz",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 1730,
+    "sentences": 136,
+    "avg_sentence_words": 12.7,
+    "flesch_kincaid_grade": 6.2,
+    "est_duration_minutes": 11.5,
+    "em_dash_per_100w": 1.2,
+    "ai_filler_hits": {},
+    "claim_link_consistency": "pass"
+  },
+  "status": "pass",
+  "findings": [
+    "FK grade 6.2 (<= 9.5). Narration 1730 words, ~11.5 min at 150 wpm (within the 10.0-12.8 standard band). ~10.0 min at 173 wpm. Reflects the 2026-07-04 in-place content-polish pass (accuracy/locks re-verified, hook/retention/voice, line polish).",
+    "No banned AI-filler phrases. Em-dash density 1.2 per 100 words.",
+    "Claim-link consistency: every factual span maps to an approved claim; dangling refs 0; all 11 claims (CLM-0001..CLM-0011) are used at least once.",
+    "Neutrality/accuracy: holding is not overstated (CLM-0008) - the ruling required prior judicial authorization (a warrant) and did not ban wiretapping. The 'reasonable expectation of privacy' test is presented as Harlan's concurrence (CLM-0009), not the majority holding. Illegal gambling appears only as the factual reason for the surveillance, never depicted or glamorized."
+  ]
+}

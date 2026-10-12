@@ -1,0 +1,54 @@
+{
+  "episode_id": "PD-2026-001-miranda",
+  "slug": "miranda",
+  "created_at": "2026-06-23T15:11:49.937539+00:00",
+  "video_path": "H:\\pd-media\\episodes\\PD-2026-001-miranda\\08_edit\\miranda_premium_v001.mp4",
+  "video_sha256": "c2d6583b865a017b2a04894844aa31c17a30bbf82bb8a8012ca9a13734021efb",
+  "duration_seconds": 695.253333,
+  "duration_mmss": "11:35",
+  "target_duration_seconds": {
+    "min": 690,
+    "max": 750
+  },
+  "video_stream": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "avg_frame_rate": "30/1"
+  },
+  "audio_stream": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "channels": 2
+  },
+  "loudnorm_probe": {
+    "input_i": "-14.95",
+    "input_tp": "-4.12",
+    "input_lra": "2.50",
+    "input_thresh": "-25.49",
+    "output_i": "-14.01",
+    "output_tp": "-2.98",
+    "output_lra": "2.40",
+    "output_thresh": "-24.55",
+    "normalization_type": "dynamic",
+    "target_offset": "0.01"
+  },
+  "checks": {
+    "four_part_structure": true,
+    "duration_in_11_5_to_12_5_min_window": true,
+    "script_and_claims_unchanged": true,
+    "old_animatic_preserved": true,
+    "real_person_likeness_avoided": true,
+    "representative_frames_checked": true,
+    "typography_not_primary_surface": true,
+    "captions_generated_from_alignment": true,
+    "youtube_replacement_not_performed": true
+  },
+  "representative_frames": [
+    "remotion/out/miranda_qc_hook.jpg",
+    "remotion/out/miranda_qc_fourcases_clean.jpg",
+    "remotion/out/miranda_qc_vote_reveal.jpg",
+    "remotion/out/miranda_qc_warnings.jpg",
+    "remotion/out/miranda_qc_end.jpg"
+  ]
+}

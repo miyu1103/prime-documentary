@@ -6,7 +6,7 @@ Generate master narration for PD-2026-001-miranda from voice_plan.v001.json.
 Voice: Brian (nPczCjzI2devNBz1zQrb), eleven_multilingual_v2
 QC: loudnorm -16 LUFS / -1.5 TP / LRA 11
 Idempotency: SHA-256 of spoken_text → skip if file + hash match registry
-Output: H:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft\VC-NNNN.mp3
+Output: E:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft\VC-NNNN.mp3
 """
 from __future__ import annotations
 
@@ -31,7 +31,7 @@ VOICE_PLAN    = pathlib.Path(
     r"C:\Users\aab15\Documents\prime-documentary\episodes"
     r"\PD-2026-001-miranda\06_audio\voice_plan.v001.json"
 )
-DRAFT_DIR     = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft")
+DRAFT_DIR     = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft")
 PROV_PATH     = DRAFT_DIR / "provenance.v001.json"
 EVENTS_JSONL  = pathlib.Path(
     r"C:\Users\aab15\Documents\prime-documentary\episodes"

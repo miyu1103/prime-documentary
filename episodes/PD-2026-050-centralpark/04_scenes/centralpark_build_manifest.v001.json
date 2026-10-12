@@ -1,0 +1,25 @@
+{
+  "episode_id": "PD-2026-050-centralpark",
+  "producer": "scripts/build_centralpark_film.py",
+  "inputs": {
+    "assets": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-050-centralpark\\05_visuals\\asset_manifest.v003.json",
+    "narr": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-050-centralpark\\06_audio\\narration_index.v001.json"
+  },
+  "report": {
+    "cuts": 599,
+    "factory": 0,
+    "motion": 426,
+    "stills": 173,
+    "distinct_assets": 414,
+    "first_use_share": 0.6912,
+    "still_share_cut": 0.2888,
+    "still_time_share": 0.2679,
+    "motion_time_share": 0.7321,
+    "figures": 165,
+    "narrationSeconds": 3643.327,
+    "duration_frames": 109915,
+    "duration_frames_provisional": 109915,
+    "duration_sec_with_bookends": 3663.833,
+    "TODO": "narrationSeconds/durationInFrames PROVISIONAL until measured TTS; update SPEC + Root.tsx (5.1.1)"
+  }
+}

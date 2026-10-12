@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "EP78_EP79_EP80_EP82_additional_image_generation_and_raw_qc_only",
+  "generated_at": "2026-08-24T17:31:22.8939062Z",
+  "order_file": "episodes/_planning/EP77_82_CODEX_ADDITIONS_A.v001.txt",
+  "order_file_sha256": "e2c65315b076cd946d5e2fcde199b48bc347d793e0a3fc9466e3d62ac024b6c1",
+  "provider": "Codex built-in image generation",
+  "model_profile": "not_exposed_by_builtin_tool",
+  "seed": null,
+  "one_prompt_one_image": true,
+  "automatic_retries": 0,
+  "requested_count": 23,
+  "attempted_count": 23,
+  "delivered_count": 22,
+  "rejected_count": 1,
+  "prompt_contract": {
+    "canonical_prompt_set": "episodes/_planning/EP77_82_CODEX_ADDITIONS_A.v001.txt",
+    "shared_augmentations": [
+      "full-bleed exact 16:9 landscape composition with no cinematic bars",
+      "no readable text, logos or watermarks unless the source prompt requires otherwise",
+      "no real-person likeness; every P-marked subject remains non-identifiable with faces hidden",
+      "symbolic reconstruction, not authentic footage",
+      "each FIX line was repeated as a critical constraint and negative constraint"
+    ]
+  },
+  "technical_qc": {
+    "expected_size": "1672x941",
+    "size_counts": {
+      "1672x941": 22
+    },
+    "pixel_format_counts": {
+      "Format24bppRgb": 22
+    },
+    "exact_duplicate_groups": [],
+    "missing_from_destination": [
+      "V079"
+    ],
+    "unexpected_target_files_written": [],
+    "overwrites": 0
+  },
+  "visual_qc": {
+    "method": "Each built-in output was reviewed at generated resolution, followed by a labelled two-sheet review of all 22 delivered plates.",
+    "contact_sheets": [
+      {
+        "path": "runs/qc/plate_sheets/ep77-82-additions-a-v001/ep77-82-additions-a-v001_plates_01.png",
+        "sha256": "37c5b3ff78a33108bc447a283f5c9db7c7cb63137d7e59957d19ae9400bdd01d",
+        "plates": 12
+      },
+      {
+        "path": "runs/qc/plate_sheets/ep77-82-additions-a-v001/ep77-82-additions-a-v001_plates_02.png",
+        "sha256": "865cae70037532dced13eec8a19d6ceb43d7e11a73155359fd9f23c9e4946d05",
+        "plates": 10
+      }
+    ],
+    "accepted_raw_ids": [
+      "C123",
+      "C135",
+      "K102",
+      "K134",
+      "K146",
+      "K147",
+      "K163",
+      "K188",
+      "N003",
+      "N009",
+      "N019",
+      "N111",
+      "V007",
+      "V022",
+      "V023",
+      "V081",
+      "V082",
+      "V090",
+      "V116",
+      "V153",
+      "V168",
+      "V180"
+    ],
+    "rejected": [
+      {
+        "id": "V079",
+        "reason": "The chart contains clearly legible place names and depth numerals, violating the order's drawn-lines-only requirement.",
+        "destination_written": false,
+        "retry_performed": false,
+        "cache_path": "C:/Users/aab15/.codex/generated_images/01a034be-385b-7df0-8604-36c9dd150c93/exec-845dea22-6aae-426a-b16a-19bec8275a37.png",
+        "sha256": "f9a10f0093226568fb55921409eaad494d0c5d824a354be2ef51a4f266dccc6e",
+        "width": 1672,
+        "height": 941,
+        "pixel_format": "Format24bppRgb",
+        "bytes": 1992286
+      }
+    ],
+    "downstream_status": "BLOCKED_FOR_V079_ONLY",
+    "note": "Raw technical and visual QC does not authorize upscale, replacement of approved assets, staging into render truth, or publication."
+  },
+  "rows": [
+    {"episode_id":"PD-2026-078-colgan","id":"C123","path":"E:/pd-media/05_visuals/colgan/img/C123.png","sha256":"9197319ba55fccaff8c3e349d21d543a906eb7213b8d04884545bd3a60dfe87d","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1651082,"cache_file":"exec-15cdd26d-34d5-4231-8972-52453963fe75.png"},
+    {"episode_id":"PD-2026-078-colgan","id":"C135","path":"E:/pd-media/05_visuals/colgan/img/C135.png","sha256":"ededa9050f654c316cede99771389c3386b3c4bbc5784825b67f9d67e71e5ebc","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":799849,"cache_file":"exec-3916d685-9e8c-485e-8eba-9aa7f9656d8c.png"},
+    {"episode_id":"PD-2026-079-alaska261","id":"K102","path":"E:/pd-media/05_visuals/alaska261/img/K102.png","sha256":"e8d9201d778d6a8cdf57971d28720e0fc76ca8734a839f31a9479d61262740e7","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":2095694,"cache_file":"exec-1cad20d4-cfbf-44ca-bf73-e143ae6bdb0a.png"},
+    {"episode_id":"PD-2026-079-alaska261","id":"K134","path":"E:/pd-media/05_visuals/alaska261/img/K134.png","sha256":"f31c1091befbc1c583b237013fb2c7bde944e8c6a4d94b8ceb5f1dd8f38234fb","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1592684,"cache_file":"exec-7ec010b1-a745-413f-aceb-9c8045b547c6.png"},
+    {"episode_id":"PD-2026-079-alaska261","id":"K146","path":"E:/pd-media/05_visuals/alaska261/img/K146.png","sha256":"2382a35ed00934d68ec0852676081472f54f46a8d40190bec73f91ad90368576","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1914003,"cache_file":"exec-9a5bc7d5-7f13-41f7-84d8-81888c0d5b3a.png"},
+    {"episode_id":"PD-2026-079-alaska261","id":"K147","path":"E:/pd-media/05_visuals/alaska261/img/K147.png","sha256":"de8ae75480fe0aa62da0a8a7a20ca9d6304b144271359011b40649236e6a1d96","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1899799,"cache_file":"exec-af9e92b8-5237-41f8-b0ef-3ad978c07314.png"},
+    {"episode_id":"PD-2026-079-alaska261","id":"K163","path":"E:/pd-media/05_visuals/alaska261/img/K163.png","sha256":"692398cab533e8f513310aef7ac421411070da8d01acbbaaf3f76fbc02080dbf","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1862518,"cache_file":"exec-eb6223f9-2020-4888-aaf3-caa277cbe090.png"},
+    {"episode_id":"PD-2026-079-alaska261","id":"K188","path":"E:/pd-media/05_visuals/alaska261/img/K188.png","sha256":"78534d9917400bdad9abc1833eb3b31a9ced29273782063093e4bf8891a7e501","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":2265217,"cache_file":"exec-82a1ba46-4dea-460d-8eec-51d4ffc541da.png"},
+    {"episode_id":"PD-2026-080-concordia","id":"N003","path":"E:/pd-media/05_visuals/concordia/img/N003.png","sha256":"aaa97595b4240eccf84f8ee3f9065263e29e89290921f1dd7fb827cdd9ed8738","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1877463,"cache_file":"exec-8ec18268-c98e-482d-82e5-9783b8c16150.png"},
+    {"episode_id":"PD-2026-080-concordia","id":"N009","path":"E:/pd-media/05_visuals/concordia/img/N009.png","sha256":"1033c6ead8195cd1da48d39887ca0bb8cd7b00eccf74811b43bf24ac59cfc3af","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1883696,"cache_file":"exec-6b93ae27-bc08-4f84-ab82-3523e8dc3306.png"},
+    {"episode_id":"PD-2026-080-concordia","id":"N019","path":"E:/pd-media/05_visuals/concordia/img/N019.png","sha256":"a649fbe65a01707c6e0a86f623a339af2a9b6920b9032aef19629260097bdf09","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1808004,"cache_file":"exec-7e8d7f0e-5972-4297-abca-b7216aea2cbf.png"},
+    {"episode_id":"PD-2026-080-concordia","id":"N111","path":"E:/pd-media/05_visuals/concordia/img/N111.png","sha256":"47287c7d68a3238e832af5c054860091770589440a7a6a37ca543126c72b0b22","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1496234,"cache_file":"exec-45987cf8-c696-4f47-b6d1-45f0bd8235f1.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V007","path":"E:/pd-media/05_visuals/valdez/img/V007.png","sha256":"b6f180f8f9cea2f50c9e7a88679ae3e94c6f326d571f4bf2357e442118780525","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":2001059,"cache_file":"exec-17555527-71c3-4c33-915c-41ec86d66500.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V022","path":"E:/pd-media/05_visuals/valdez/img/V022.png","sha256":"16b2c59014890eef8750d0284b4fe921aac81a538ed93d43452fc5cb90183668","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":2083579,"cache_file":"exec-1fd82c6a-e7a1-44cd-9dec-d4eabc875fcf.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V023","path":"E:/pd-media/05_visuals/valdez/img/V023.png","sha256":"6df9f9c975f4e36099390990dd7d1bf3cf2f4d26dac628014acbc7f1fe3de74f","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1745908,"cache_file":"exec-eafc069e-b985-46ee-a32c-80f0da1bf085.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V081","path":"E:/pd-media/05_visuals/valdez/img/V081.png","sha256":"cbe2e34106cec287f943ec1a6e5448885ef905450a71e094ca4616220198ca2b","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1686277,"cache_file":"exec-a9f07253-d103-43a9-965b-b50eef79d968.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V082","path":"E:/pd-media/05_visuals/valdez/img/V082.png","sha256":"7112971f45754620055405e6621106ca3a22cdd146f28e4a00b5539db8bd4102","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1369501,"cache_file":"exec-1d95c110-7e19-45e2-b529-14f6afde4709.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V090","path":"E:/pd-media/05_visuals/valdez/img/V090.png","sha256":"dec686e915b4472f93a33d5d0321bd0e2447246ac46ab5efea6c1e05b112f63d","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1155686,"cache_file":"exec-dd1af958-eb5b-46c0-bc67-9f112523239b.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V116","path":"E:/pd-media/05_visuals/valdez/img/V116.png","sha256":"96591d54f03e2bee272fb59a47689e9340d30d84429491881d01cee530f1655c","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1619013,"cache_file":"exec-c43f85bb-37cf-4ae0-9e37-3ae9bc2c2e8a.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V153","path":"E:/pd-media/05_visuals/valdez/img/V153.png","sha256":"75f12924788b3299af1bf1e19e80af79c5e6d87f0c5086ce493b4f08c9f017a7","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1682313,"cache_file":"exec-fe947f22-d181-45f8-ab13-914a7c76b195.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V168","path":"E:/pd-media/05_visuals/valdez/img/V168.png","sha256":"cffdc4e811b4cc4628c84c7eb74e70fe49c239bc3f12add9c2eaf2b067784c36","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":1979921,"cache_file":"exec-abacb94f-cd0e-4349-9124-6937aa79bf95.png"},
+    {"episode_id":"PD-2026-082-valdez","id":"V180","path":"E:/pd-media/05_visuals/valdez/img/V180.png","sha256":"2c362294b80c28c7e44bfcc3264504f3ae8294c2aad5dcf8eadc98e141127428","width":1672,"height":941,"aspect_ratio":1.776833,"pixel_format":"Format24bppRgb","bytes":2517996,"cache_file":"exec-9a9f62c5-279c-4437-a52a-aebb0172a09c.png"}
+  ]
+}

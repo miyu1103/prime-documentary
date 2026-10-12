@@ -1,0 +1,3109 @@
+{
+  "episode_id": "PD-2026-062-greene",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "In Kentucky, a piece of paper fixed to a door was service.",
+      "text_sha256": "sha256:aa33896f3c2fad3f86c1b6bb88f12f66c6801dd4f180e171c51616f1a1b9362b",
+      "idempotency_key": "sha256:5b3a77fef0255331b1e4ad4230b90961aa466bc2bd99009153185694ff6dfce9"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "The question is whether the paper stayed up long enough to be read.",
+      "text_sha256": "sha256:822f9b699159e3d80f6ce7d9125597552dbd2be609786c05767f94391aa6878e",
+      "idempotency_key": "sha256:c04c0ebcb3acb73fe48e51d371cfc370f39b4af9769e8908e4967f325df5f756"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "The case they brought is called Greene v. Lindsey.",
+      "text_sha256": "sha256:cae48b10078aa982f2f483d52b54276b94dcb035064eca3e73a7a2edea334497",
+      "idempotency_key": "sha256:9129c27a0479c793d5f7f29192d95cf7f44f1a7e38ca4e672d2b46ba1656b768"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Greene is the sheriff.",
+      "text_sha256": "sha256:262a4961cbe494e61bb518e3fa543024fd1c603f9b555e602aef88588ab6503d",
+      "idempotency_key": "sha256:c2a18786594de0370db6925074cd375924fc72eeafcf797a52126deebcbc89ea"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Lindsey is a tenant.",
+      "text_sha256": "sha256:fac6deba7dcd153c4742b686549201aa5ca77cad590a5534dfb83b3d5d2a6b2e",
+      "idempotency_key": "sha256:35972891593621283a9e7680b46b11a095dc110547ff9e5671ca721ef677914e"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "The case is about a piece of paper.",
+      "text_sha256": "sha256:6d04a787a3318c28828e88a21898d3400bf3439338ce5d58e76b009c0b6c524e",
+      "idempotency_key": "sha256:9e18dab257ed2500bfb75e7aa46d76b54a33b3eab84497f07e118a108324c930"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In 1975, the Housing Authority of Louisville began proceedings against three of its tenants.",
+      "text_sha256": "sha256:d71f4bb818b1950a975959962cfd4a6e3e0d5f8e765bfe9a5d9db06aa90bc136",
+      "idempotency_key": "sha256:f1398130826fc7835e0030a1ed0015d34740ccf04796346be715017fb255881b"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Court's opinion names them once: Linnie Lindsey, Barbara Hodgens and Pamela Ray, tenants in a Louisville housing project.",
+      "text_sha256": "sha256:8c9a9bb00e206099226eb1c1c40c98a274067d8ae51c3a77ec681412cbc74b91",
+      "idempotency_key": "sha256:dda6ee48ffd3164ce5030aefcab6ae2aedc0a4d059d57fc5a126f8365121fe81"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is very nearly everything the opinion says about them as people.",
+      "text_sha256": "sha256:c5682d37e8d5e9dce387036db185b27261bc4ec3e4ea708787d1cb8394d88323",
+      "idempotency_key": "sha256:83708570d1c2f58b7dfe3f48a800416d77390cbf73abc722aed2223dddbe785b"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No ages.",
+      "text_sha256": "sha256:a3584e2275aea19241edcf0a94a2fa09c47e6c3482a97e4f5aac769439e40de4",
+      "idempotency_key": "sha256:df0e826112cd7cdb5f8dee54ac9871a3300c480b59c8e20ab649e12ae9326ddc"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No jobs.",
+      "text_sha256": "sha256:66f52811da799236b98f35b03d0d8352b267bfe29dffaf66f3742dc36dabd239",
+      "idempotency_key": "sha256:8eba7fa28b5a1b0e6eaa3e085e7da757877f09b11ed5926444dc791426be863f"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No families.",
+      "text_sha256": "sha256:58f41fcf28d16f49a851fdbaded60674b6623c2b574fb0a932cc30f2b722c14e",
+      "idempotency_key": "sha256:5e5927f2f47ce7e6d9dbe23de36ab614acc2b388e8ee767f4d4fc8345c360ae6"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No rent figures, no arrears, no account of what they were supposed to have done.",
+      "text_sha256": "sha256:3bf470a1da08b1af4591ebd0c32fa5b3e3edb6ad375b4be550d639b743ba2fc3",
+      "idempotency_key": "sha256:25d54addc8c8e6ad25c14c8dfe588b99801345ef126e3458e6a3dd1668d78145"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three names and a housing project.",
+      "text_sha256": "sha256:2e9814ef1cba8c1fa86bb80c67d7a9fa70c78d04c56ff40c1f8a5b717651d6a5",
+      "idempotency_key": "sha256:c20994d381d6c5c1d8e5e26d11ce26dfe9bf7d3229b5f846b48e4223669966c9"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The question in front of the courts was never whether the three of them were good tenants.",
+      "text_sha256": "sha256:77c1ddff4c859e8936ea94c74a9913837f2df192bab668428c233b8aee028b0b",
+      "idempotency_key": "sha256:252addca8eac61a8d217cbd0d7875175264b313c1138e47fce5ddf3eacb7c7de"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It was whether a particular piece of paper, fixed to a particular door, counted.",
+      "text_sha256": "sha256:6753f563bcff56da5e80885e633fc86782615554770251300f48622bb3e166d6",
+      "idempotency_key": "sha256:bb2d32b5383ea9e54d39c672cd32014e78348015453501f69f22cdfa619bfc0b"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Under the procedure, an officer went to an apartment door in Louisville and knocked.",
+      "text_sha256": "sha256:f0df26b106a8a15f1f1153d454af74e8d25fb000a4681d015c252911e742750c",
+      "idempotency_key": "sha256:8787d715da59f1a8e5f621da46dcfc8ab3a10d607bfb834907dafa5d415f9439"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "If nobody answered, he took a piece of paper and fixed it to the outside of the door.",
+      "text_sha256": "sha256:61d1b35480963efdccc45794b4f1e319aa6c3ac1cf503d6b65812cd76e886d38",
+      "idempotency_key": "sha256:ad9169f247dd979276913b481295cfaaf622890d5307cae08f74c85303f2a4e6"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Under Kentucky law, once the paper was on the door, the tenant had been served.",
+      "text_sha256": "sha256:a44064658a681cb5a4de4411f7d0212c86830b242ff0ec952852bf9a61a3fcf3",
+      "idempotency_key": "sha256:5ad06ca88a39c85d312c5440c2f9e47f76fbeda7374224e51400927394e1ed9e"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The clock started.",
+      "text_sha256": "sha256:4bf1cbf988441f4f03c88b8e55d5d867e365b1e65e6be674e37aae82fef4770b",
+      "idempotency_key": "sha256:743d9135f4f89376dec7c7ab4fafa74d25b89c75e2f3aba94c271f630b961998"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The hearing would happen whether or not anyone inside ever read a word of it.",
+      "text_sha256": "sha256:5ecd6b83566651a70d5f269d8b1a126d733480f88b8a5bfe24d18a64a8ceec17",
+      "idempotency_key": "sha256:c2bbdc13956659917326c2970161c4c43ed2664796c54c6318aabf2e2fe5b533"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three tenants said that is exactly what happened to them.",
+      "text_sha256": "sha256:a04799015283aff5d3229641fd83a002f677338010c03bc080f2068ad88a243e",
+      "idempotency_key": "sha256:52d0c5372fc2c1cbd31b3ed8d98916408ec9b53ff9a72df5ef31974600aa4a98"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That they never saw the paper.",
+      "text_sha256": "sha256:12ed9262fd5f1eb4e08080ab70ef5b96c3c6c539b1ae123a4789678b56c136bb",
+      "idempotency_key": "sha256:6913cae7cc13736285c4a3e68f2af6b95fe4e915f9151e304685b14f9077e9f1"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That the first they knew of any of it was when the writs of possession were served.",
+      "text_sha256": "sha256:13935bf865894d9ca8ba929bea61df4e25c13ff2098c4df52f8409def6b4a89b",
+      "idempotency_key": "sha256:546cfeb5ab2c5a7bc84bc87b95aa964d124f4e4eed2a9e62c181bda849e6aa6a"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is their account.",
+      "text_sha256": "sha256:5f075f6fcc19474272ccc44cafb6242c730c574dede593a745ec302509339f72",
+      "idempotency_key": "sha256:5cb4a21b4bd57f662c6bcd19ff0fd1142811435cef4bb0a70263c17342c981c8"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The proceeding was a forcible entry and detainer action — the summary process a landlord uses to get possession back quickly.",
+      "text_sha256": "sha256:416f71adaea6c9ef66461a29d5d492d007a16d94fd712f4d15c482c21517f870",
+      "idempotency_key": "sha256:7b1e9a3d9530a609e767d840c5c3c2c27b9b577a06e434c43f5964afc5a309c6"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Speed is the point of it.",
+      "text_sha256": "sha256:57a80855b65ab1d008fd644e9ad9fdd354f6d4835eb6c67cede88b7d49dbe1e0",
+      "idempotency_key": "sha256:e4d1296f7ba40cad5587f6670917b0787f61a6363350e27ce2eb7be8d7a614aa"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Service of the court's notice fell to the sheriff's office.",
+      "text_sha256": "sha256:da32737e05a974742c540fa28d84ce27dcc480a48c4d044a6ca1ad8e09ac39f0",
+      "idempotency_key": "sha256:87119264ab71e81bd4438499f25e66e4d6916789ab2e14035a67849d15953423"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Joseph Greene was the Jefferson County Sheriff.",
+      "text_sha256": "sha256:33bc1ab125696a8cff4bc2c0b98d1204334f24afa3ff816485fdb5145589b786",
+      "idempotency_key": "sha256:6ed8867d23f14e97bc081fb3f9eb3c7f9d1e6568475a2fd872e6f55a1fed5ed9"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "His deputies carried the writs.",
+      "text_sha256": "sha256:503c2fab282b7d4413f6c1b4b8d05e731d342549e9434eabb9f78feac7713e26",
+      "idempotency_key": "sha256:57bb5a11a9f12ff1044087bec0fb03cf767d4c6a5363d749403da82a2abb6af3"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Also named in the suit were the Housing Authority itself and several public officials responsible for particular Louisville projects.",
+      "text_sha256": "sha256:47450fc8d6decc44d6d062e6c211ee7a1228f1b388ea86b298ba51a8fc963a85",
+      "idempotency_key": "sha256:d72f9eb815a92cd691460057e08477a6613557c2f62f4885bda07ce9af8cfb26"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The deputy sheriffs are unnamed in the caption of the case — certain known and unknown Deputy Sheriffs.",
+      "text_sha256": "sha256:544a015277d4e75038a388947bb172fd56e8286a3702c021f15c728b2f93cf6f",
+      "idempotency_key": "sha256:d9f9c42cb98249ec1d408c4790fb1126a4dd85fe6b6c05e9939dc3210913333c"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The brief filed for the sheriff describes the job in one clause: the officer of the court who is charged with serving notice in a forcible entry and detainer action, usually a Jefferson County Deputy Sheriff.",
+      "text_sha256": "sha256:201fc81b39748f66d755f0862db6092ab0992555e35bd15eacf68124cc1147d0",
+      "idempotency_key": "sha256:96e797ab9ebc9b580b2cbbf2da57c1b050aebaa4dbb593968506acbb42e8c2ac"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Usually a deputy.",
+      "text_sha256": "sha256:fa0aef84dc1ed18c1cee404c619d4ddd2addcc375f174625d224947114f48191",
+      "idempotency_key": "sha256:4825038b9a6024325ccbf2e63e70b77a7545386aaee2dd4ecb9b78cf6729187f"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two of the men who did the work get their names back later, and only in the dissent.",
+      "text_sha256": "sha256:13808d172b53521aa07a21bbffe6cb5439d7bf22cdba8a86c571cf3975659916",
+      "idempotency_key": "sha256:c4f4d4a5d51a0dea538d96f29b1c2dff68bcc75d196845c2944c0c5665f21b5a"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "So on one side of this case: three tenants.",
+      "text_sha256": "sha256:8d0daf9a0311ca91eb08d3c04fa9ac32e06f0467fdb3b639ba0ef2256361ac81",
+      "idempotency_key": "sha256:4937aff6b67f86897c8dd113f5370ec77ffbf99b1cd58943effa5a1a2603f201"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On the other: a city housing authority, a county sheriff, and the Commonwealth's own statute.",
+      "text_sha256": "sha256:a8b4b26b68cfe0dfd0ea33a99ab0ef07f8adb6169a3c15984aa9a8fc437f65a1",
+      "idempotency_key": "sha256:818ded8a4c34ccb0777df0a04b0edaf6244d7c186cd8ff72f9570e5b1b06d91d"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Their landlord was not a landlord.",
+      "text_sha256": "sha256:6c65716be305d87ad48a95e239dfa4411b6cdd9bafa2ddfaae4ee57ce0e09cef",
+      "idempotency_key": "sha256:14503ef6089b061bed2a36fd0978e802d248f2016c022c00d24b283b67bd588f"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The body that started these proceedings was a government body — Louisville's own housing authority.",
+      "text_sha256": "sha256:bbac3db8a052621e0c42115c61ab88653f68c24f37d26260dea4e837332179ac",
+      "idempotency_key": "sha256:af0754d336f6ef10c1e61cd6275c2414c2b90c6994fe03232b45b9491db2dd02"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The men who carried the paper were sworn officers.",
+      "text_sha256": "sha256:56fd57e18a0a3795f1e0e855c6fcc67a7f250b9a96b3e5baea14585be88ef2e9",
+      "idempotency_key": "sha256:2a91fc2dd78c7b7b220f2336c45523597771adcc462cb4018302536547702af6"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Every step of what follows was done by the State, to people the State was housing.",
+      "text_sha256": "sha256:0b0f07ccc11d38754ae454a175bb8ff2f81993bcfc883568f6e7bac1ae4f7d64",
+      "idempotency_key": "sha256:e919c30eaa552df1c9204d8efa1fde8e3569cc08891e64f1ca34689e72304679"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The question the Supreme Court agreed to answer: whether this statute, as applied to tenants in a public housing project, fails to afford those tenants the notice of proceedings initiated against them required by the Due Process Clause of the Fourteenth Amendment.",
+      "text_sha256": "sha256:eaa1dea04eeb8b6ac4b4410c399fff86bb761113d01fd65363a1b67786f6a0a8",
+      "idempotency_key": "sha256:83f26f6333f5bea8c3902f7d382ce2ce64c33dfaa395750ff3b5682d173c5204"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "As applied.",
+      "text_sha256": "sha256:2f54e82fa046c8d8621d49e7a84a6c095648476b1f50f98f3d265b834c0b2f47",
+      "idempotency_key": "sha256:40be1fa030af99911ea85542b6622563fa2d3dc4443b143c4f42ffaf28ee75fd"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Not in the abstract.",
+      "text_sha256": "sha256:1e0ec050d89ffb541b81e37579095728f3336987f2e04ddaf9150eae66b5fe7e",
+      "idempotency_key": "sha256:10f12f4c29cc85b639f11cb49ede7c33b3ad9a5ef7fe42cc30519336c5bbe258"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Consider what a summary eviction actually requires of the person on the receiving end.",
+      "text_sha256": "sha256:dadef8ebe83b5dd2a4658bed6e4dcda03ada516cebb3444b67979e8ede5464df",
+      "idempotency_key": "sha256:5b040419ec26230c90303c98791ccb9cd7e3943d35216cb006b979f8c0e258ba"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A date.",
+      "text_sha256": "sha256:9d709ba803b0f65c276579b046c69c549b079861f7820b1525e75bc49a1ee005",
+      "idempotency_key": "sha256:40d16f1890798c87a84daa3f2c4d46e47a8d3df1c38d374051a664d48680a68c"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A courtroom.",
+      "text_sha256": "sha256:ddd4fb64a29070165875089e5d5d0bc9e5c31ede08eba772b2f811b951b054b3",
+      "idempotency_key": "sha256:8ba6f8a0f69a8f93e52d9ed19e57b3438deb4f36046bf1a86401919c94f96acc"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Whatever a person has to arrange in order to be somewhere at a particular hour on a particular day.",
+      "text_sha256": "sha256:b9ca064558fa461f34dc8520a2d8f9f8408dd18a9bec612ab3dd74175ad594e5",
+      "idempotency_key": "sha256:61d99c13116fea50ac0c3abb9471c7bd0326116e89a822a3d8578cda3d24a04e"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And before any of that, a single piece of information: that the thing is happening.",
+      "text_sha256": "sha256:2490919a254b28dfe4babbef93952258d164d199a605e2a38c97279713b125d5",
+      "idempotency_key": "sha256:879dbd3657c56aab0ce83429644bfc03b22257e320c601dea2c927f5cf1ce2af"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That information is what the law calls notice.",
+      "text_sha256": "sha256:a8671452c0fba25fbfacb67b5204cd29b1bcd59c9fb45097a5bdb902043657e4",
+      "idempotency_key": "sha256:4f9ef2470fbe5aaa6b0bdf2678007076cd13b2ad5c1dd8e96ad5c9d66b5dafeb"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Everything else in a court proceeding — the arguments, the evidence, the judgment — is downstream of it.",
+      "text_sha256": "sha256:de7c7ab06f9273de53c527c7aaf0724423e3830fddaaa5e829b2a05fc4ec7550",
+      "idempotency_key": "sha256:86f4051096a83301820d856a456b4f7e2c03bbc6d2b7cdd6ae8698be2148eb44"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A hearing that a person does not know about is not a hearing they failed to attend.",
+      "text_sha256": "sha256:2be003ad64ef730893cdee5c2a717e6272558a8461831d635d27fdbc4af2c631",
+      "idempotency_key": "sha256:6db8e7dc6e8730f32aa103f0a67b01f3ce17188c414b0fda83fd8e81bfd7e2f8"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is a hearing that happened to them.",
+      "text_sha256": "sha256:7de21a40ce19ee6263a9372184c79657c1f30d23120f5bcc501fd90fd30577fa",
+      "idempotency_key": "sha256:c5189d914777979cdfa2e9d80353862a9717b87d3812ca48506d8873803510b9"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Supreme Court put it in one line, borrowed from a 1914 case called Grannis v. Ordean: the fundamental requisite of due process of law is the opportunity to be heard.",
+      "text_sha256": "sha256:9d27f249cfc79f4fab576e0e02f1bf2d5e8ed59e1369ecadb59e6a7634f47ac8",
+      "idempotency_key": "sha256:0a43b0a0c8d13cdf6d54c8b4a7e867158d1efe80ebd8074c061c9d351a38f3e6"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Then it added the part that carries this case, from a 1950 decision called Mullane — that the right to be heard has little reality or worth unless one is informed that the matter is pending and can choose for himself whether to appear or default, acquiesce or contest.",
+      "text_sha256": "sha256:40ea96685fcc595b80f3b62b07f0597581f0e6dd86319be7053d67ec2cab5c86",
+      "idempotency_key": "sha256:6e3b9b6c0a2edf3f135df45a1e058ddbf9f6c6ff869fa59f37379f8d833577f0"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Little reality or worth.",
+      "text_sha256": "sha256:869bdf4f3c18f57f571b6969017500ceabe6bac3faa6a66414899956c59ac531",
+      "idempotency_key": "sha256:5f96576e9b34891fea95ed936be5d1396e4673a44744887870ac4a992d7d66de"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Not a technicality.",
+      "text_sha256": "sha256:345f54e5efa4510508c00d4d635ba4c1064b1088a9eb3a4deb1dc60a6ab79754",
+      "idempotency_key": "sha256:219f376b5f86ef5435a07485c216859f1e01429a945a29244c787398d9f666a5"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The whole substance of the thing.",
+      "text_sha256": "sha256:5c6ee79e60555e560d1efb3cc6b3f255b5c012be25a190fe0db80646283fe339",
+      "idempotency_key": "sha256:44790896c4b9ee7bdd3daec8ac7799a3aa776f72d18a22aff635bc4e991dc639"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Kentucky statute at issue was section 454.030.",
+      "text_sha256": "sha256:fe403c6041ce3e72bcbe6da03039a8cb030ac0b1f7a2c382a6f5c2fd38c9a729",
+      "idempotency_key": "sha256:31ce109c88e0714f98f73ce626b018eaf532af8fca6bd288a332bd1ac92ad175"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is two sentences long and it is worth hearing in full, because almost everything in this case turns on the order of its clauses.",
+      "text_sha256": "sha256:80fbbeaca7a3e3b50be0375ee9af8daedbbd603dfc6096b43588e08010501ab0",
+      "idempotency_key": "sha256:a97170d9c37c3ddcff8de463cd6b0070f67247848dc8d1a5d28828c7ebc7f886"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "If the officer directed to serve notice on the defendant in forcible entry or detainer proceedings cannot find the defendant on the premises mentioned in the writ, he may explain and leave a copy of the notice with any member of the defendant's family thereon over sixteen years of age, and if no such person is found he may serve the notice by posting a copy thereof in a conspicuous place on the premises.",
+      "text_sha256": "sha256:6f33cb52bef9c07f3aad2c0eb1f2576cd69e0d970c02991cac59c1ddb75fd0bd",
+      "idempotency_key": "sha256:b911b9037ce7a3ae6365f22d29d35aa9c2369a5af65876f101798b3c212b8158"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Read it slowly and it sounds careful.",
+      "text_sha256": "sha256:19bc425db70072ca5313557ec4221d064f121efac82d945e90edf233def5328e",
+      "idempotency_key": "sha256:d8fd78f75ce9f60251b3dbf683b69034b001bb3cc4c6c139a10ef18c2b6c0fae"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three steps, descending.",
+      "text_sha256": "sha256:2f0fca5a69042964fa6c0223bedf14ee190fa8d6b7f7c61d24cce3c30cd0504c",
+      "idempotency_key": "sha256:c88bd31fc1ebfec22cb23f5f347eadad2946d3e6c5fe9d3cf4112250b07c70c6"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Find the person.",
+      "text_sha256": "sha256:1b994188548a433a02ea58e50a2f2fe72783764da99b4633ae53686d5414f4d8",
+      "idempotency_key": "sha256:3c84fba81353924d840490509d9677bae85cd2961d60315d96ba4e1fd11a5209"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Failing that, find a family member over sixteen.",
+      "text_sha256": "sha256:f55aced6f2877a4094d13be8969e7f2074d67bae236475f794feba34800d08ab",
+      "idempotency_key": "sha256:8d1fc0f2c3dbe98410883731292edc2d1e821c4e26dfad523d81a2945e386624"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Failing that, post it somewhere conspicuous on the premises.",
+      "text_sha256": "sha256:20cf3b98606fd592aaa4892b44949061ff4976c47aac3c7e958a3a579a86783b",
+      "idempotency_key": "sha256:3c3d9fd317b57d41d9ad38052c6a91de5f298f78612083f015dcc0722bcc3ce9"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In practice, the door.",
+      "text_sha256": "sha256:22869ade362c896bb2484c46da730167cb7cd4e3c4d35ad770a0cef24c4c6e40",
+      "idempotency_key": "sha256:ccd781b045f1a84ec9f804d8d9c8229d34f3cfdd2f2108e9871a9fc1b6f6942d"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Look at the middle step for a moment, because of what it assumes.",
+      "text_sha256": "sha256:3331d931621c8b45b8125526b0440674c82ab7e24553f788a077f23a17aaa4b7",
+      "idempotency_key": "sha256:28f9636cce6d96c1bb2eaa10a22bae1c6e2ab1b89be44c2d1af3ed6c92715160"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A member of the defendant's family over sixteen years of age.",
+      "text_sha256": "sha256:58d1e5a8db1b943824977324992f0f148f030e5acd371543f3652b3389d681fa",
+      "idempotency_key": "sha256:d89c0758c34d7e185481c92dab21b0665b30b216e5f74c6b53340fb47b2a61ac"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Somebody home.",
+      "text_sha256": "sha256:8df9a26440530ccba2d748361c868219de830335f63d25f369403ec7fab182dd",
+      "idempotency_key": "sha256:cada8961ee63d154cf74bf9aff505ddf409d07b450940c116bbb917fdcb2b7a7"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Somebody old enough to understand a court paper and to pass it on.",
+      "text_sha256": "sha256:c1772d1a4f6f8ac66c79493beff46e5b5896d6ff0235c5a615b6d1091a75ab58",
+      "idempotency_key": "sha256:e8a01f89b443913a9def53dc77d12a0953a5514e89ffd90c47378e88f0f91b4a"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The statute even lets the officer explain it — he may explain and leave a copy.",
+      "text_sha256": "sha256:07e44a0f19e420c5a00a16e1aa4cfd54e88340cb1cab8865d6eb4aa9881cd847",
+      "idempotency_key": "sha256:96ea2055471cf316727a83b188005eede41db9ac4584b00b693a66dff8337a50"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is a conversation on a doorstep, with a person who lives there.",
+      "text_sha256": "sha256:f9d17bb186f75ea4ae29e984a8a786ce91d037ff07630c28b8f23cb12eb9182a",
+      "idempotency_key": "sha256:0cde21a7a43c39beab80ae167014bf7b231de85f857b25b0ee5b2d064dfd0702"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The statute is written for a household with somebody in it.",
+      "text_sha256": "sha256:c4301baedee95c958aa9dc0de668177c2201119fdec9a62f7a19ffbc79df4147",
+      "idempotency_key": "sha256:8b8c079737607c6f08a0a1b95dacbebab783416b5d22dc3d88a5ed750500db38"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And the third step is what happens when there is not.",
+      "text_sha256": "sha256:4f22ea4131c345cb992fb338126516937816dd33e6795c69eb27e80374060465",
+      "idempotency_key": "sha256:6bb231b84768d5df6c7c0482a0299e7321ac8ea65d2d7b0db05251aba43e5272"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There is one more sentence in section 454.030, and it is the shortest.",
+      "text_sha256": "sha256:14447180845ec744d45fbd91e0835869e3fcbde1220e35bfb3f9c2d66ad2bcd5",
+      "idempotency_key": "sha256:32f0b80fbbd13ad426d5c3f4999027745550e2b3b91a26b373451dfacfe0ae88"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The notice shall state the time and place of meeting of the court.",
+      "text_sha256": "sha256:a819d6aa6116246c3530acceb4b5d3d7a41ab8b2260acc88d970de6a767a5ea3",
+      "idempotency_key": "sha256:87beecc1b4fd75f3a55874fb746ada26b9d235d49d2d1346b0c1fa640a162baa"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That sentence is the reason the paper exists.",
+      "text_sha256": "sha256:7999d42fc64ebb491bf3d5dd8ffa8be453d4bbf8b47001a4031ecb5dd44c01c4",
+      "idempotency_key": "sha256:d7de89dcb85bc575310632e136bddc1498285b22e395aa590c21498f74ae9c06"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A date and an address.",
+      "text_sha256": "sha256:b6a4c33f26a62ced7b81e51ba69b15dfe6bae721e51f5d6f695e906058a2efe2",
+      "idempotency_key": "sha256:f1d6ba82704cbba80a712f8173d7fe6251571aac8ccd7d35927405a73bb3a199"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is the only thing in the procedure that tells a tenant where to go and when.",
+      "text_sha256": "sha256:e23f881c6c30c05554b384212d615bced56612905b17a608c466be55f02be456",
+      "idempotency_key": "sha256:94f8367b97e5c4d0f96605f3aa85673812f15ae5ba5e9bffd1bc9954f8c51e05"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The sheriff's side described the ladder exactly the way the statute reads.",
+      "text_sha256": "sha256:6f5e9b7a794d8e01cd8a9cd841eda4ad8d06194b4a82141e2f8e75eaa1bec5b5",
+      "idempotency_key": "sha256:586e6fef9dbd44b051a586fb5c376ccb67355b983f375a31aa388544189eddf5"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Personal service first.",
+      "text_sha256": "sha256:33d90a62b0ab2dd76282c8629178c24e70f7224e06309a761e5e5102f4bfe66a",
+      "idempotency_key": "sha256:ec1527926557e089ff51a86df67db79160a2965c3f762e5b0f175378f19c7d53"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A family member second.",
+      "text_sha256": "sha256:9e82d7f1bdc921334733568eb3a17546d7ef42ba5119844ddaaa51ab56b9fe22",
+      "idempotency_key": "sha256:c5187ed69e27b3a288f893e54447444a519df9d99873e5eafc4d8daea35a1103"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Posting as a last resort.",
+      "text_sha256": "sha256:2f1d4c0485fda9e1a31f46e3768fde3e6bf6e28525cac424b055c5ce43d3d876",
+      "idempotency_key": "sha256:8c3e0790340661bb29239fd2094dacab6f76123091897ea302b859b22dfd6bbf"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "For all three of them it went all the way down.",
+      "text_sha256": "sha256:032654abdf8680ef804fceb889c32edc98b7ab4b274cbf096c9481b04934a82e",
+      "idempotency_key": "sha256:6341f20b1fceee2051086a70a6ee74a439deb14a39b3621ab53d3c3a29c4acaa"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In each instance, the opinion says, notice took the form of posting a copy of the writ of forcible entry and detainer on the door of the tenant's apartment.",
+      "text_sha256": "sha256:fc6851e0fe00bd5f27ab6b8347bfb834c42bd0ac4754376adf0ed5c421da487e",
+      "idempotency_key": "sha256:86c35368419f605e6c007755e91c9c866259aa17c42a831fea86c81d5e2c3fa2"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three doors.",
+      "text_sha256": "sha256:5356a10b035eec297a9d7b3d51fab6eb48cd352aafad291ef66e41de36fc63e9",
+      "idempotency_key": "sha256:68fd4a8c2591d82e690f7a3354b906fdaf06fb61e454f17c4d5842982a398513"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No conversation on any doorstep.",
+      "text_sha256": "sha256:72f5814a79b19476f04e72a29dd87c7b6be2974e04058c63952c49b10adc45e9",
+      "idempotency_key": "sha256:14b857b657d9362cac57089d922f5077825b885cae9ac5cb9c13e1c313dce2bf"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Supreme Court would not accept that description.",
+      "text_sha256": "sha256:b156d9d54379416a79e1727f2d810c208868431d82559136650c45d7644c7016",
+      "idempotency_key": "sha256:8cf131c39f3e5133025a5bad45fcb484f22f76f57607ec428b63c5057d2e149e"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Not because anyone had lied about the words of the statute, but because of what the record showed actually happened when a process server walked up to a door in a Louisville housing project.",
+      "text_sha256": "sha256:a97a76a871dec730878231b8ecd4f0b7578a505ee68f06ecb23578311fb73202",
+      "idempotency_key": "sha256:6472e97f99b67fa4bfffe827824f7f7bec57df2cbe4c45e052384dc3239c24a1"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Start with what posting physically is.",
+      "text_sha256": "sha256:924f5dc89cd119bb3d98fde1372ba3d084820248e7bc6fbb1f26b9f727c28941",
+      "idempotency_key": "sha256:548c07471698b0e63a2cce0adf183deb2a865c89f9719b913d4c3e7f0b37d98e"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court defined it in a footnote, because it had to: posting refers to the practice of placing the writ on the property by use of a thumbtack, adhesive tape, or other means.",
+      "text_sha256": "sha256:5c0de72ab2195be3838e6e8a3f47312fbad9ed7d674b7fb8be74fcc05099fe7a",
+      "idempotency_key": "sha256:97471af8d63b6de75386ee7c59486d38540b11061782b585e5099e31de65ae74"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A thumbtack.",
+      "text_sha256": "sha256:5f07bf919044bfdded4409009d3976f517b3c3f4f6757e71e21753833cf32cb4",
+      "idempotency_key": "sha256:b9e1582a5ce5680992333609ba31257c2acdf0016891c034b07da38795da266f"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Adhesive tape.",
+      "text_sha256": "sha256:ef40e50de277b9900dc2fb3dedb5018627f0667ef840b7fdca6e62c703fd28dc",
+      "idempotency_key": "sha256:a654e71d2a1d36e879e5a838f616c5175ddfee9e2f2134acac14c12a0937bece"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Or other means.",
+      "text_sha256": "sha256:3eaf74eb4efec55a173f0b5a0744396453de032051a6fc7afb6c2955a5f4ecbb",
+      "idempotency_key": "sha256:08dc192041ce1c960cd1693523fa78f364cd2040440fb46300562b8d2b69f430"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the mechanism by which a citizen of Kentucky was informed that the State had begun a proceeding to remove them from their home.",
+      "text_sha256": "sha256:c5e779b7bfcda0e3674212b40f075c25fb8480e193857ff5bf1eceeb59cf92ac",
+      "idempotency_key": "sha256:075ec715224d85e7d61f39c0d8b3319a9a85aa878f8840340447d9ecc65cb4a0"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Now the sequence, in the words of the brief filed for the sheriff.",
+      "text_sha256": "sha256:772a3e19fede97469b785bf9761967581e54e495c333a6e9b6d50ed3fd94473d",
+      "idempotency_key": "sha256:b48ef26b92d3f60d35e0489ecc0996cb4537523c11f991d9d005437b001040af"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "First, the officer goes to the apartment in an effort to effectuate personal in-hand service.",
+      "text_sha256": "sha256:eb886e9a16350c0d76e0fc292233b376993cbddd957aa525ce4f385b979563fb",
+      "idempotency_key": "sha256:8b8810a119742f1dc350a83ab0c00ad5abd5bdbb68efea2d9c5d9791b130efdf"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Second, if the named tenant is absent or will not appear at the door, personal in-hand service is made on any member of the tenant's family over sixteen years of age.",
+      "text_sha256": "sha256:31e5ff071fd6e18261c6e6ec0b83e546afb0ba145dcc89872ece0b7cf5adb36a",
+      "idempotency_key": "sha256:d1b10066adc81e807d53e0130038e903d3f651c1183f8e10d6041594a31ffe26"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Finally, if no one answers the door, a copy of the notice is posted on the premises, usually the door.",
+      "text_sha256": "sha256:ac310d37186b680d0c2222ca9d500e1fe366ef017e009509f97c888f7c51dce6",
+      "idempotency_key": "sha256:5f0bb2c20af97c056c01efbbece8426add2b8de5a5bbf046d4fcacf23c1d30bd"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the brief's account of itself.",
+      "text_sha256": "sha256:70f35e5c47dcade8d36f9f1898b22850a1782b642a70a3b4a859f4e58bc91a93",
+      "idempotency_key": "sha256:6a857cd3d27fb499e6c22bea72c2ea245826dec6039beb159f04115f835b6e1d"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And then the Court's own sentence, the one that undoes it.",
+      "text_sha256": "sha256:aab7bc4fd4d0b8ff59753ffaaf6450618fa0400088ce0398e697ad19e1cb0e84",
+      "idempotency_key": "sha256:5ab37448edd917e66fd3ab601abb81c0e4cf9a78aea384aa860b4d2276e6969c"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "But if no one is at home at the time of that visit, as is apparently true in a good percentage of cases, posting follows forthwith.",
+      "text_sha256": "sha256:506510e0ded9444ba199ad248032522be47012dc6645179860288e7b3fbdb3b7",
+      "idempotency_key": "sha256:369fc45b36a027dc51945a38c4aa1f90f5905a4274562b7902d2debe862e16b5"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Forthwith.",
+      "text_sha256": "sha256:5d3de48129cd079410de496cfdc9293ea4c24b43924d4585653f1ea645845b33",
+      "idempotency_key": "sha256:96ba9a37a95a302ee8b158ca541964dbf5559c27ded9fe1b589205584085105b"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The same visit.",
+      "text_sha256": "sha256:df1d3695dfc970df05cc1dc49c203e2578e28e99e0b8c4e8ddec44f4af74bc0f",
+      "idempotency_key": "sha256:e681f27197d9da5dc84604a67afe6d3d2d6b4e827cfd5d5eec2c8324900051bd"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The officer knocks, nobody comes, and there is nobody at the door to hand it to.",
+      "text_sha256": "sha256:01b75ad7713eca4ee4dcd7ea5d9f5f850c85cd383adf099fc8c6eb2074bc4e08",
+      "idempotency_key": "sha256:47d1952a84b1530ba247d86af5bdbc59da127fc0f6678c955f6e3186cdf68c36"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So step two evaporates, step three happens, and the visit is over.",
+      "text_sha256": "sha256:a21f61cf7d8f2623c15ed58c62cc53638a5439b1e645903b98bbb8b385c295cd",
+      "idempotency_key": "sha256:a1b4b8259cd448450bcfedf714181ce1ae1460ccf312eea4426b7e65dc7dbe31"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court set this out plainly.",
+      "text_sha256": "sha256:bbd8b514a0bc00f57ebe27c1e76b7e5a0041dea3847c42765f2f0874d4531c8a",
+      "idempotency_key": "sha256:87f61682148c174fd9767b1e24c7e466ee5cf4373b0a70f076faf37270de7540"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Neither the statute, nor the practice of the process servers, makes provision for even a second attempt at personal service — perhaps at some time of day when the tenant is more likely to be at home.",
+      "text_sha256": "sha256:2bd5728bc89cb3ea4a4040883ca9e3f8495396e704942be7043fee35ec67ba8f",
+      "idempotency_key": "sha256:61071a27c3abbc97352cbc6a2ed94c90556fe4fcffcb3d59c4d2b65a0a17b8a2"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not a second visit the next morning.",
+      "text_sha256": "sha256:e35c4b094d34f7d7e8dfea1bfb4941357603c2d6fb543ac14b21a60d60fe7a02",
+      "idempotency_key": "sha256:fa639162510b869b291c19443db349937ccf0f4642d03d15cca8bc2db912134e"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not one after five o'clock.",
+      "text_sha256": "sha256:2f6c93933edd65ee2822353d07c4395291cb19272b6211698e62a550a6e11bde",
+      "idempotency_key": "sha256:4defa5b5df22ccb476bdbbe95c2d4bcf692989b50e2360e3c751316a08a2b0fa"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not one at the weekend.",
+      "text_sha256": "sha256:2ece062723abc1decae565841572c9873e7b8f2a1758e9f60f7cce56e735c99b",
+      "idempotency_key": "sha256:8431b8844fc90b8c09a7a03bb85d6b43f5bd6cb2a64a45e2d4a00b3cd4360b85"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "One attempt, at whatever hour the one visit happened to fall, and the paper went up.",
+      "text_sha256": "sha256:827a1d9c65d41d3ef24540917c85bf134b0cb7a9926933322ab6ac7a1579be17",
+      "idempotency_key": "sha256:b4d64b4008afee14bc505bb79c54d5bec379dfa210da29c7ca19dea4af7db962"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court had already refused that account, in its own words: we reject appellants' characterization of the procedure contemplated by section 454.030 as one in which posting is used as a method of service only as a last resort.",
+      "text_sha256": "sha256:ac867331094e9a97d4deabe14ac1fbec87c8a50ec8f00f3682b4c7ed6cdacaf6",
+      "idempotency_key": "sha256:d91c3985f9cece3102c60d080cc07b24dfddc6369a21b43c669f25be7eae4746"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The ladder had one rung.",
+      "text_sha256": "sha256:b3ee9e48aa5cf8b57b5efe908a0c1a5121859992903711dbe4c4a07f4a0ff01d",
+      "idempotency_key": "sha256:77ff6f12b14639ace572b8dac346c1b6bf98d5587786d46d4163e01892a2b117"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There is a detail in the phrase a good percentage that is easy to skate past.",
+      "text_sha256": "sha256:66d5d6751a064bc811be39993ddca56137a980dcc10876c50e324d173ff2596e",
+      "idempotency_key": "sha256:ea9e043bb473f3bbef417b706bb862cfdeeb81946856b7b46b01f3ad50ae7f46"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is not the Court's estimate.",
+      "text_sha256": "sha256:d156f094e2e0586ac0e2222d95552009938834b414313135935192ab2c2decc2",
+      "idempotency_key": "sha256:a4b59926402c1b6bf92d0a5086f25ad245c9708b3cb3de15e0d3b7379848ebdc"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court put it in quotation marks and sent it to a footnote, and the footnote points at a deposition — one of the men who carried the papers, under oath.",
+      "text_sha256": "sha256:d543732571d91b45b82d77b433283218849d1a90b6270c33accf8b973a9f4d96",
+      "idempotency_key": "sha256:73820e574312437daea4d450c87738961ad1aa63b9866596ab2eb3fd88ab2cb7"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The opinion does not say what time of day the process servers came.",
+      "text_sha256": "sha256:9ae34078ef2099db834c38a7fd60ee9f93bff0b34ef0a03e7243968510866811",
+      "idempotency_key": "sha256:26e1057455ffb70c96c13c04987a962951d90e766c515094f558b9852eb76862"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It says only that, apparently, in a good percentage of cases, nobody was there.",
+      "text_sha256": "sha256:79042c5f0a3c7b451410dd73284ead655ef4b77eb63799f08d74c6c088cf1d8f",
+      "idempotency_key": "sha256:bc2ea3ad3cbe71f0b281807e2b242d741898870c876a413b40fcc3367e985aaa"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "None of which, on its own, makes posting unconstitutional.",
+      "text_sha256": "sha256:2b4da40bc8ac1ee405c1d8ffb3771730b21d5337614a4faa1b7085100e962cb7",
+      "idempotency_key": "sha256:7f3923e6285b0c0d395faf1e4b3f7696a78e548ee0874bdd0d0c80735af706ed"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court was careful about this, and the care is worth keeping.",
+      "text_sha256": "sha256:4796467ec787e1effc7e4d2bfc82f9aaf0721b44792e3f11c2b2c5345d2fb51a",
+      "idempotency_key": "sha256:53cd3945167764261aaddf6d2639a9d375847a5d55cd8513b7c8d054928960d3"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Short of providing personal service, it wrote, posting notice on the door of a person's home would, in many or perhaps most instances, constitute not only a constitutionally acceptable means of service — but indeed a singularly appropriate and effective way of ensuring that a person who cannot conveniently be served personally is actually apprised of proceedings against him.",
+      "text_sha256": "sha256:c506bebf2397e9c483412c959855db2f3d98ad8751cd2affee076ff7b2beb92f",
+      "idempotency_key": "sha256:fdb4c895622f3a1d7d52ddf59f6150aa1b8d1dfa68a892fe022a9c9ed9298fea"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Singularly appropriate and effective.",
+      "text_sha256": "sha256:4efab471907cf86d4262ebc08c98d4228622677457eb769935007ea30c285420",
+      "idempotency_key": "sha256:87bb2d82800f3002cc3a4b7be501a069dcc3cbe3920dfb01257c4a1669b7100a"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Many or perhaps most.",
+      "text_sha256": "sha256:04fe471de72056155de5ad189be16c451caf39c89f8b0cc3fbe4dadff3af0b26",
+      "idempotency_key": "sha256:987f97522a613e20c1361846f272c3b99ccc15b801e3c63f29aba000355528a9"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court is not hostile to a piece of paper on a door.",
+      "text_sha256": "sha256:f0e6295b178e815cc19dda40d114e6a795aca08e4d4410b6e2b26d01a2acd7a8",
+      "idempotency_key": "sha256:5aecc483d9670336369ed52dd34b0f01b8b0df474517c9da6237addb0533c5a3"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In the ordinary case, a notice on your own front door is a perfectly sensible way to reach you.",
+      "text_sha256": "sha256:2321da9d082eaca361f993c688216e81bee7d90bac27a78602ab755a63df10cf",
+      "idempotency_key": "sha256:5f7c0c4a515fd57b0fd7c8f6245951790073c51235170e63aa2272658a0cc4fe"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is where you live.",
+      "text_sha256": "sha256:15f4af2c6e2f381f3eb4b54be401687fb73dd29aa3dfe866a296edb32ab0d74c",
+      "idempotency_key": "sha256:76497188929be7ea66eb210da9ebdb765e63345b0f1398af8628a6a37697fecc"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "You will be back.",
+      "text_sha256": "sha256:89331471a854858ea1ea171871bee6caff45dcf17f234d149f4a4378add5330f",
+      "idempotency_key": "sha256:8213186e1f515b73cde552a7bc65686c89069192449b487e78dd8d0afc8d171d"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That instinct is old.",
+      "text_sha256": "sha256:e16e8c21b94c0e9ce283411c84d47b69c5e109bb4e3451e9a5ed68d3b1304e38",
+      "idempotency_key": "sha256:8a9ae37590cc043e20cad2f93a172d701560977b6ae79db118168aedf95cf685"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "You watch your own door.",
+      "text_sha256": "sha256:c7c5d1c2efaa6a53a6ee3ce2f3c57eab19f46dd87e60c1c89ede42e871b68b5c",
+      "idempotency_key": "sha256:408afdeb3f412bf8242ccfc685aa1a23e23ffc813f723aa4b544de9276114a30"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So the question narrows to something much smaller and much harder than is posting good enough.",
+      "text_sha256": "sha256:86c0eec654bed3e3610569d078a7f90c983fe367b706869c4998f63196f2c269",
+      "idempotency_key": "sha256:d24d0d65eb88c80ebf9b642ad587f497d352be0f3eff4a925357d893e25e5ac5"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The question is whether, in these buildings, on these doors, the paper stayed up long enough to be read.",
+      "text_sha256": "sha256:74e3cf8477aa81d4cf8ef949a6038b04e71308b00408004430aeecd6a01e2dba",
+      "idempotency_key": "sha256:dd118d1c6509b0ee2f7b6ae60504f7316f07bb9617a89bd3177d4d25badf2ab2"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is a question of fact.",
+      "text_sha256": "sha256:fb5b315910c9a3fce67eb7f3e221d48da4cb560a6b256a7be5a266ab7438c7c9",
+      "idempotency_key": "sha256:5c1fce093b27064ee86a4b67793c98c8cd7c3bfc27480ef18603e610597cf4c5"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And there was a record.",
+      "text_sha256": "sha256:fbe39d1e3ed5f5cf7f3937e5de245b2d7ebc1b5b9cdc497c1855dd2fa85dc8f7",
+      "idempotency_key": "sha256:a2860a6dc5959768f1e6e84733e7a9bfe096199d15a18a421a4b7ab7a91551a8"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The record was made of depositions from the process servers themselves.",
+      "text_sha256": "sha256:a2d97068679fb6f1693a749a36e7f3d05736798d9229dc520e7d62e83ceaa5b4",
+      "idempotency_key": "sha256:acb9f8864fc20d485621108ebc1eaf37a3402fe4b59f893d840490e890a92fec"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The men who put the papers on the doors, under oath, describing their own work.",
+      "text_sha256": "sha256:da71875dfe01dd7b69e400faa529ca405d1c65abfed4f560bba4a4d707b93f11",
+      "idempotency_key": "sha256:9cc70221074b93e32658b936136c681df8134964210e57766fe0535c073d8203"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One deposition in that footnote records the exchange.",
+      "text_sha256": "sha256:d6b100f61389b29c428457ce06cce3a305329fdff0fcdc5cfeacf15c3f1c35e5",
+      "idempotency_key": "sha256:520add8a5fbecbe29e40b1a693801e1245c5426abd330590a87a181d1e2ed03d"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "He was asked whether he was aware of there being any problem with children ripping the writs off.",
+      "text_sha256": "sha256:1810a647d7f4140d7611661a0987a0b7ba2b769aba64a7da3a62853252f83a33",
+      "idempotency_key": "sha256:a8d86a22e157b3fc310cfb8712a4ec072be5dd65d57472e1725e2e522e95099d"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "His answer: oh, we had plenty of trouble.",
+      "text_sha256": "sha256:522a3b62e57fd24292858ca3feb0100f69d06521a1c9be556834803f566aa309",
+      "idempotency_key": "sha256:ce732594c538706130c1cd31eae8a58ae0a1715b42b10336e03e50392cc7b386"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The questioner checked it.",
+      "text_sha256": "sha256:6c1140b64260607b3938b1793ff27d2cdce042f747bafe3c7b17fae570cdaae9",
+      "idempotency_key": "sha256:ce5457340a0061207bf0e3593d606741bf807e1bd8c089a95ab845c0370c3f4c"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "You had trouble?",
+      "text_sha256": "sha256:f16dd51d0be32bb36a630e7b85885cd8ab20cb1fb53bd2f786c81fce8df965c3",
+      "idempotency_key": "sha256:da6240c4f816bc13c2e1b11d2a0525f8d848f8731e06a03a15b61d525a8bb2fe"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "With kids, yeah.",
+      "text_sha256": "sha256:ca70c2b1ad316fbe0c2efb5533816cc93987b00b8e24e37e03022a0197df8fff",
+      "idempotency_key": "sha256:cf68efa99d454ffcf2bd7fb4a1f99c0fe9e3b28c16f914c84c20c2eb1d9adcb9"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Yeah.",
+      "text_sha256": "sha256:85fec70372b092bb42d021a6d1b373081dde8bcf90feb49e0725e285043fb0ad",
+      "idempotency_key": "sha256:2761e9b6aeb4a7c54e31631e23301cd1b12c1316d7feebed9b50db2802fab081"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Asked whether he had ever seen it, he said he had.",
+      "text_sha256": "sha256:4bc5fd6c3c68a58c149a527bc56ffe7e034b2cbec3d777ef41ae606a33446308",
+      "idempotency_key": "sha256:12c37fe35755d20931124001ccccef8dc56a4c506b63f476e587cd35659348ae"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "I have seen them take them off of the door, and I would go back and tell them to put it back.",
+      "text_sha256": "sha256:fabe7b9273471e892483a69367c9dc781584afb9f146197440b057c7d14b0399",
+      "idempotency_key": "sha256:083486b1a1af011159757300ca11a17cd4255cf1a2b14a44c8c6c78e75b730a4"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They don't know.",
+      "text_sha256": "sha256:622e02363af63d869c9f45fdd3080c39b1b60a886a49bebffeda28d212241102",
+      "idempotency_key": "sha256:7cd242a0cdd9f3ff74fbf2c48879a912d0c59c052237d8b5b1861cf4c974de7e"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They didn't know.",
+      "text_sha256": "sha256:5c21ba51e20c90a5cb31c8f93289df418bed1908b2917fbdccbb9877fd32f923",
+      "idempotency_key": "sha256:ea914be4bef07bc394f286ee77e7019f10ee35a8144654f35741cdc736988b29"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Asked where, he named one place.",
+      "text_sha256": "sha256:206c30e4b8abca2f02cee91a76dac99508d5450ee0f9acdd5751d5366bdac483",
+      "idempotency_key": "sha256:1d3d7484bc2598614d6f32fb965e65a5b902600cede9608964fea130c027dce9"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Well most of that was in Village West.",
+      "text_sha256": "sha256:d24fe0f8815ab885925f934ff871e4e99cb4706c4891ffd0a7589fc006696a6a",
+      "idempotency_key": "sha256:2760988809380aac391d26a06ab51004e06f2dc40a6d957736788cfa44e5a1eb"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Another excerpt in the same footnote gives a smaller answer to the same question.",
+      "text_sha256": "sha256:d0a003179537db17ed93eb1118dc1e7116e4202079a0e74ca24737a261017963",
+      "idempotency_key": "sha256:eb26c5054b8f864c978375765b330aa46241ba6c53ed5ae2e7342167b4f04dc0"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Did you ever see kids pulling them off?",
+      "text_sha256": "sha256:69ac69a53fe2e0c47c5a93fd7b7eda53948627f2d7f95f42d36192814dab1b72",
+      "idempotency_key": "sha256:c318402b777ffeb7978b5a32c011cbe2225755e552d1e4451565c033cddb39be"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Yes.",
+      "text_sha256": "sha256:5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+      "idempotency_key": "sha256:391bdac8e4278dbafd3e77a0089126c98d7f0d9e0056d83c0a49e81f53c3611f"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Did you see many?",
+      "text_sha256": "sha256:850e191c00584be34fc7afe2cf1b29810ae6ec104860181c46bbf7ac1ae69058",
+      "idempotency_key": "sha256:a4028fdcca9fe819dafbf2ef8004964eab6db823684e916404e50539c36daa80"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "No, not too many — I did see it in one place over there.",
+      "text_sha256": "sha256:80eb6e353c8e1bdb39da71a27f7bbe5d2cf689b7230f459d7c9ba7f2e4354686",
+      "idempotency_key": "sha256:7ccfee487bf4457209a5831453ba4a7bc5eeeca192894935c5d93d92fd30b975"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Where was that?",
+      "text_sha256": "sha256:b763e02332c2197843ce886c4c171569a6094028dec9ce318fcc4c4fa188a990",
+      "idempotency_key": "sha256:cd11d044e97e2aa9d2518292d52b2a82cda51fa5cbd94f326bc0d14dfce5738c"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Village West.",
+      "text_sha256": "sha256:b9ba141f43111c68aa4820970e4cbd2bbe9259702843234d2cc8ed0661d3cff6",
+      "idempotency_key": "sha256:76eebe0e095989c03408e49f344adb561ee49df38a701e0d7d0071658164248b"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "How many times did you see that happen?",
+      "text_sha256": "sha256:99b6e70704f9a992648b1143fa2cf8f3c7303e3646fb5ad99c7b800aab2148af",
+      "idempotency_key": "sha256:709d2438a0cbd9e8279e9aa86243dd84f86af97ec1b53e52cb60cda4ecb7d5ed"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Well, probably a couple of times.",
+      "text_sha256": "sha256:4b490ef75135fd8330c37780ac1bea2d6d27bf8b930a2eb8bdb43f8bdc88db9f",
+      "idempotency_key": "sha256:5094e842eab2568cb4fc47f2840a75fab33c9297509cb91aae36c543757b7218"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The same development, named twice in the same footnote.",
+      "text_sha256": "sha256:76396895b1886877a77e32225a43a84801eeb5f0b7be50b4a9456397a5df4c71",
+      "idempotency_key": "sha256:f4b0119c31b4550c0c653c80353217b117c7a8d311b2002db05703e60c8d4401"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The dissent gives the man who said probably a couple of times a name: Carter Bacon.",
+      "text_sha256": "sha256:d9394d7b3c027c4c36594c2bf345f9fa92089f12042dae57877aa573a9932b1b",
+      "idempotency_key": "sha256:49d2ce286a241d0af192f8e335b56fdb59a8ef51c9bc9dfbf56a4262f6172edf"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A third excerpt describes the arrangement almost administratively.",
+      "text_sha256": "sha256:19085ba62f326a03bd189f32d452caa57a0d4bd8ad722e0e6eb8af22385450f0",
+      "idempotency_key": "sha256:ba3eccd2f2b96b3812256ef3d16341948378f62d2e76b6d60bb56a9a8c2d1f81"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The children — we had problems with children.",
+      "text_sha256": "sha256:7b8ecaae8a05596a5c15f6452314eb24344bf459850f1bf130fcf78e783d6199",
+      "idempotency_key": "sha256:a0efa2d7384c080030e55f8899d8df771c206028849914823976c352691e7166"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They would take them off.",
+      "text_sha256": "sha256:3301055af32f91e2099e41c56339a7f224fb406be85f4ec30569c0d5657f9bd9",
+      "idempotency_key": "sha256:48317a64eec5cd21f10f2bb181d8bb3c89481ab6b8f8108dd5c4e4b6fcda6ec1"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They never took them off when we were present, but we, you know, assume — the Housing Authority told us that they would take them off, so we always put them up high.",
+      "text_sha256": "sha256:b2b062e5de93f515f22782a7521176650fd84d005e2f585dca00a486d7067dbe",
+      "idempotency_key": "sha256:48d32a0640dbe20238f0f6eb482bf6f32159ae87ca438aa5f7e1df0070b9daaf"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Housing Authority told us.",
+      "text_sha256": "sha256:2fea24c579d73d9acc29f0480861543a4bc196accc85700bec3be48b50e6935a",
+      "idempotency_key": "sha256:8aaed9ca225197d200a61fe00d992e17dac896ecad0aef70d01a6412aa888be0"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It came out of a deposition, from the men themselves.",
+      "text_sha256": "sha256:b1ffd8e51e6031b85096b406c06e74d2a84bfeaadbdcd4418311cff1e8371c7a",
+      "idempotency_key": "sha256:2b9c9ec068b0f69510adcf31b76369ad8c84e2f5af6f6de4030f2482ca3466eb"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Housing Authority, one of them said, had told the servers that the children would take the writs off.",
+      "text_sha256": "sha256:e8f5daefd50340e811bc539a09d828f6ab7a671e5e001d617e6a95585083e350",
+      "idempotency_key": "sha256:8ded238d7c443181361f1978cfa31216de9a406e2dc6cf02c72537e15ed71a32"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Court's summary of all this was one sentence: as the process servers were well aware, notices posted on apartment doors in the area where these tenants lived were not infrequently removed by children or other tenants before they could have their intended effect.",
+      "text_sha256": "sha256:85013b52395c026fa5d753477d7523c6ef64d2b3580fcdd980b5eb1608505448",
+      "idempotency_key": "sha256:63fce96a3025307ead5c9d78e915f9b3c1a732a902eef4cba0c8130900cff23e"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Well aware.",
+      "text_sha256": "sha256:92b8df0f07422e186f5c490d22f51399253ee89fb664fb2a03fd70a1e4be8a16",
+      "idempotency_key": "sha256:cb1b95aa4334c56922271246d36e5ee879aebe3f0334ffdda13b0220c5b1522d"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And notice what the Court did not write.",
+      "text_sha256": "sha256:4993926af584637c9b56dc962f382019a4bc441ce50134559fd8bb4d9e3258bb",
+      "idempotency_key": "sha256:f6d645c0abc82e6118df1f02c57867b31792d996657cb7361ecd6d897e8f8b97"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It did not write a percentage.",
+      "text_sha256": "sha256:ddfdbf262e8ea7cf8ca0907d011b8582206e9300dfe876d960220b1e4f21a59f",
+      "idempotency_key": "sha256:2f5d4fdd1f6114750c56c62b8ef6ea2f829c3a958c86d489754f2385fcdd86dc"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It wrote a significant number of instances, and then, in quotation marks, not infrequently.",
+      "text_sha256": "sha256:b7f5bad647c219b303224e6459ea0fb1962056d4cd2198e4172dc6599ffccd07",
+      "idempotency_key": "sha256:eb2628271b1973a78dc1882cb9375e382b425fc9595b6bba3432996210d8e233"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The opinion never prints a rate of removal.",
+      "text_sha256": "sha256:c2775e5db377dd2dce20a82a53bd55004c55ce5fdcac61b4190010643c9df613",
+      "idempotency_key": "sha256:8dae7b19d15dbf5ec076bd07bf51d01b3cde2b06657e7a63ed66e13ab45acf48"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "What the record supported was a description, and the Court used the words the record supported and no stronger ones.",
+      "text_sha256": "sha256:4d775b952c9f6edc674015b1105d673154660a095b9a233153dfbe14fc0ed82e",
+      "idempotency_key": "sha256:a13490312b1d37cf930976c049d50a72cbb656537d33a0830bb457bb260e64c7"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The majority did not weigh the servers' testimony against a study, or a survey, or a count.",
+      "text_sha256": "sha256:b39488f697bff47afd62cfb5041e6ca39f519b2bff468a62036c861144e2026a",
+      "idempotency_key": "sha256:ae6e4fc9980bb38b9dbc4d91fe3d095c92ec27a3fbb76db603233511ae865826"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The opinion names nothing else.",
+      "text_sha256": "sha256:8141ccfea0311c10ff7da421f8316677b44759f1e95f1b82579c7f91f407b0a2",
+      "idempotency_key": "sha256:7e0a6fac0d2ccef739247498191270447a56ef906320f898f451b05e0e712a03"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The testimony was not all one way, and the dissent said so directly.",
+      "text_sha256": "sha256:bb73e2ca4dfeead4ff8d5b9e5f17c9a1de9d0e9c4ea959bd1bba9c23f774bdac",
+      "idempotency_key": "sha256:b721696af5916cd451a22f1226ef96196d693e896e22f28e38d79064db92ba2a"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One server told the court about a warning he had been given.",
+      "text_sha256": "sha256:60db10d0368f9619b0151a079dd313db8e0b3e8fb9073bf3dbc087ca2638bca5",
+      "idempotency_key": "sha256:67f0486a282ce2317041cbdca25fe47244fe10833297434b7fb1f726ca935b1c"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "I had been warned beforehand that, by Mr. Bacon, Carter Bacon, that he suspected — he wasn't certain, but he suspected that on some occasions the writs had been torn off the doors by kids.",
+      "text_sha256": "sha256:1dec07a41c28f8147b07b02659f3900f96bf883f29a05bd851a9ef85c1e37119",
+      "idempotency_key": "sha256:8f3190b0e9c9ae1e3aaf09ab0143ddfb918fe64f794bfcdda7221c8e9fcb9158"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then the witness stepped back from it.",
+      "text_sha256": "sha256:98ee09aa43e6d79d660e64f9050fe45a9dccf4323c0e1b77907bd2a56fd16392",
+      "idempotency_key": "sha256:04d3f0d049a548059948324dee5b622e2e9e88ef0f1f71c5bab4fa8f522e3ef7"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "This is what he told me.",
+      "text_sha256": "sha256:673de2ac2db643008b6437f8f39446cc48d2bc695110c74d259a5f56aa648477",
+      "idempotency_key": "sha256:c93184be2ba12c2433a1b6ada42bdffa0997d18fb808afc2d62700f43361bd22"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Whether that is true or not, I don't know.",
+      "text_sha256": "sha256:0a40a3e9fac6f0cbdaf06359d072cbee1f0eeaf054994931a0b7f5ae411be3fd",
+      "idempotency_key": "sha256:74d85b5203851ffd61fda29e4bb152342d6e4c277f83b1b251d3a8c79f10b793"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And I don't think that he observed that.",
+      "text_sha256": "sha256:93e216665c672148ee298409a810b75cefe4e422674c6777184be936b259607d",
+      "idempotency_key": "sha256:4d68848258755c938b387ebfebb0d6d8c0bc08238f2012707dd066e4c32e2fa5"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then his own account: and the six months I was working at it there was no occasion where I saw anyone tear the writs off of the door.",
+      "text_sha256": "sha256:ebb7d870c39762db1da02056f23ecf2768b169ca23b2c297622d7ae33b64bb31",
+      "idempotency_key": "sha256:89ea76831dae5e51f93cbea837af1a813796214046e6adafb17dde3ebaaf23c5"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Six months.",
+      "text_sha256": "sha256:077e7bf6fc32b35a4ca99af6c73c39ebfdeb5dc777d048b6d75a798bd3eeea7f",
+      "idempotency_key": "sha256:97551230f395c0d7a79b35fa82fed3b37a8cebed01080c47d30026e3b546b608"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not once.",
+      "text_sha256": "sha256:b3465895c4731f3485fac13cb17a60378022696ceccb5349874d1174107eb0f8",
+      "idempotency_key": "sha256:03a0a3f57289b1746318fb13adfc9f540d5f5a4c7660bd983c2a4102f0f9fd9f"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That man was Gilbert Brutscher, and the dissent set his answer directly against Bacon's.",
+      "text_sha256": "sha256:70b7e0f246d355ae16fcbeae59cca08141dee00a0aff0555c64f7540842fdccc",
+      "idempotency_key": "sha256:cc10675d1eae01c0981844e5f29bd9fd87e05799884fa13617f9ee899928735a"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Same job, opposite answers.",
+      "text_sha256": "sha256:95775b12748d417fe3d7668cb621e6f6e5b79042e0f2b1e6a35accdc18261764",
+      "idempotency_key": "sha256:2ab61919f4c3aae05be1c1ea80fa9474f7d3f04e87bb492c905793f6a9cd755c"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The dissent does not say they worked the same buildings.",
+      "text_sha256": "sha256:525b7333aaccfc30a9080a4ff7237e65f32586d6509cfce921290120512980a5",
+      "idempotency_key": "sha256:805166f70eae08e1ba777fb696c3a0b99ca40ebb9095c9a7eca1795c61b88ec1"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Another server put it the same way.",
+      "text_sha256": "sha256:6d7d445325061f69e407f10eae5b19249b2830eebc1108994b2550e7f3c4cd52",
+      "idempotency_key": "sha256:b4e755e653454b5d72ab4cfe706fa181029a985714bd26b043d6864d42cdb115"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "We always try to put the paper up above where, a, say a small child can't reach it.",
+      "text_sha256": "sha256:078043a4496fbc5c6ff69ade131ade675cd17191574d895d01a31603808a9178",
+      "idempotency_key": "sha256:784d02e4c1ec65f5116592eac80f86d36d1a5e6da83fa5199d9b5f2508e77cf3"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Asked whether he had had complaints about small children ripping them off, he answered that he had never had a complaint and had never seen a child try to rip a notice off.",
+      "text_sha256": "sha256:6507a3d9d494712d202e6c934d99bd3e3c85970c8959013fb3909e51ee7c175b",
+      "idempotency_key": "sha256:c39be95a6f4ca854b7b324fe345a57820afefd582a2f61782b55e3fc9999572b"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the man who said the Housing Authority had warned them said something else in the same deposition.",
+      "text_sha256": "sha256:df92a743d299814479131395ba152a128deb0da3b8b165790a4e9610d963e04c",
+      "idempotency_key": "sha256:9564b2f4be374a7d40905842fe45a23d4cf31309cad00c74d7bbf70a705ba18a"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "We always put them up high.",
+      "text_sha256": "sha256:ac6098fc2cf5e0b530f8d963f37649b1cf8fe6449b81401e6dedcb499c5b8f33",
+      "idempotency_key": "sha256:54d751d3a52ec191dff091fadfc0480a55ed3380b88f809049a4c84d91828f22"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So we never had any problems with that.",
+      "text_sha256": "sha256:413d1c8e597514d7b1bf3bed58a6779e116adbb8bb6f3dbec810efb9b59c569e",
+      "idempotency_key": "sha256:d4c66a0d4f7545cc2b72fbf9855729576c09c040859df4295f9ecdc7b30b053d"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The majority quoted the first half.",
+      "text_sha256": "sha256:1f4ef48217447e1fa9e588330bbc86bbd8e91b4403182ec5dee8c81ee28c9f6d",
+      "idempotency_key": "sha256:cde365e4e16fa3c06b4246fa59ea6525e6dd2429a0528e59d23eb155116290a2"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The dissent quoted the second.",
+      "text_sha256": "sha256:fb667fb7b3634dcebd288cee0930fd4a95c494244f75c98c4526408f7122f006",
+      "idempotency_key": "sha256:b5ecd20b69dd0af1638eab9c46660e8123905baebb174a831df0f37591b0c091"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So: a handful of men, describing a practice they had each seen differently.",
+      "text_sha256": "sha256:e52b8268870cf4cff659d41a71bc08a3342c413e8138857c421975790657d943",
+      "idempotency_key": "sha256:12a23cf96a22236b9bd17793f59bdeb7fe7356779dcde697ec08aeff40618ae7"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The opinion does not say where or when each of them worked.",
+      "text_sha256": "sha256:589027e71f2a3a9c3630f5ddd7622cc0b9b6ca4aba046f9ed124d12338b31432",
+      "idempotency_key": "sha256:620a32f6c145abc72bd194a3f854b235649458d57dd1c71eb10d7ceb6ff6f873"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is the entire evidentiary base.",
+      "text_sha256": "sha256:cf6ccffa28b8175205dea1a88dbf80fbe5d14c52eb5a7c87c3e541c15711e3e4",
+      "idempotency_key": "sha256:d7abc05c43928d1900eb8bf7787c5783092f29a8d20770f96dd1732c7acede80"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "What the tenants themselves said was narrow.",
+      "text_sha256": "sha256:233d0b3ed97feafe11e88b43d6b786b549ff4fe7a978b9d02313287faf22b124",
+      "idempotency_key": "sha256:9aa8aa9feb7e5e9622ca2afdab268418db29b068f49b85f575d1cd8359fc467a"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They claim never to have seen these posted summonses.",
+      "text_sha256": "sha256:5bc37e132eefab801574bf5c843ae659222247dfed02945e650c59dab8ff5881",
+      "idempotency_key": "sha256:c1a2c3a3859efbbd74c99fd21e93c6817df466d94aba6873e689f5daaf1f8fd5"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They state that they did not learn of the eviction proceedings until they were served with writs of possession, executed after default judgments had been entered against them, and after their opportunity for appeal had lapsed.",
+      "text_sha256": "sha256:e751ac5ef14d0b800a559fe2127257eb254f85f1258658a1c855a0117cb5198e",
+      "idempotency_key": "sha256:1a28b586fc4c0c7dbbdd62bf8efa1e92c9f574aac891e3708c34654f3408092b"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Claim.",
+      "text_sha256": "sha256:d48a8bf876cdfe543713024b321d9c0ea9f2e797f248b6d592e0985f3c600c0d",
+      "idempotency_key": "sha256:4780897f31de94b5ac858c21b8013eac8353b92ac80ef06302d956c84679e347"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "State.",
+      "text_sha256": "sha256:d50c1ce3803b2a58ef6afde44dfc322447e0c4dbf6ecd1de6998595285ad9309",
+      "idempotency_key": "sha256:bc2f15301ac44c47bd0afd6b52f8ba2b80827c14f4481eab7179d38f30f2f180"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Those are the Court's verbs, and the Court kept them.",
+      "text_sha256": "sha256:081f103c73bebe78f59203d60c5194209786a58ecdf64c1ee2e9880c9f9b9f99",
+      "idempotency_key": "sha256:d1ceb840df2c0a1333c0bf2e485ce4f6953bd8c0056b7d05d361d92639200618"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It wrote that appellees claim to have suffered precisely such a failure of actual notice.",
+      "text_sha256": "sha256:3fd4f6a7bb37a9495f8f6400a4e56c87b7f831692e12cfcbd1ae662fbb177062",
+      "idempotency_key": "sha256:d31729a5608adad76ce25552384c60c173a8dc801ad8fdbbcc0119e4bd819092"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not did suffer.",
+      "text_sha256": "sha256:b5c65bb4bbbe574dbdad2553583e2be9fa3d075066f67d1da3b4610852908c29",
+      "idempotency_key": "sha256:b8c6b481fa6d4b8b3e2630c84a827941206ee55d867a02ae24521d744463b472"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Claim to have suffered.",
+      "text_sha256": "sha256:ae19b7038bf46e6bfc69aac3735943bc69aadd65c342a8295e1c6dc72236d71c",
+      "idempotency_key": "sha256:d34977b01bd7a482aa455bfa61bf7e6931b2e11c3334d86e21e4088dfd9583bb"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Nobody ever tried that question.",
+      "text_sha256": "sha256:6a0f7f6f1a7f252888cd9339346015875d82b6f916509dd7ac4bb4ef2c59e038",
+      "idempotency_key": "sha256:a0a07c456f68f9eaa0bf8877f4a119c662f94201a379eac8123db3e6d863aff7"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It never got that far.",
+      "text_sha256": "sha256:3c7d4128a03768de3a88e1a51ab720daaa3de4b311efb159a2e0306bb084b49a",
+      "idempotency_key": "sha256:b28c03815646e6eef88965a369329fa36e3bad52f22bea0ac0d6d4c125089334"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The case arrived at the Supreme Court on summary judgment, which means the courts below were deciding whether the procedure could stand at all — not whether the three tenants were telling the truth about their own doors.",
+      "text_sha256": "sha256:1706cd39e28e12e1b72fd728bcf6763a2a60d2b28a0ea765dfc4178084c8e427",
+      "idempotency_key": "sha256:706000f793389221ce7eb3dc63a213dc6de3cf7c61d203a2c8e1b12353a0ae18"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "What is established is the practice.",
+      "text_sha256": "sha256:b85c96af8af3f4ec15ce0752448e29b28de019ea1b42cc6422f80997c4535991",
+      "idempotency_key": "sha256:59caef1597056c9486ac85330c7e22726df013800e16b94fb474a942753930c9"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "What is alleged, and never tested, is what happened at three particular apartments in 1975.",
+      "text_sha256": "sha256:244b92ed093548b93935b601b84973ce759a2e65f78835924e16e97f3895ed85",
+      "idempotency_key": "sha256:8a566f9e06ddffb1e1541ae6fbfd13f1ed467ced4caad080203d10da331bb4d6"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The three tenants had no way to reopen the evictions in the state courts.",
+      "text_sha256": "sha256:5d62e27f52d2b5c17ebf36b4325c735f5b13c110e60e64711ebb3f5ad10388f0",
+      "idempotency_key": "sha256:1d631bd8fceb25e66a48c14c776889fe37c6e02fa49eaa45c55a07825950210a"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Court's phrase for their position is thus without recourse in the state courts.",
+      "text_sha256": "sha256:869be193fa004b2127bfc5e74ed57499cbc7466bd16834e4914c0fe545ed2af5",
+      "idempotency_key": "sha256:a2129344ddeccd4fb9b2c7d58e56bd20d3e0643cbfabc41f939d6193d6d1bba4"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The judgments were final.",
+      "text_sha256": "sha256:91d421fd1d4fe5820331567c39ef849454dcba37eaa0bc483c46a87acc7425e9",
+      "idempotency_key": "sha256:69e9a5fc9ff39b5459e40cc3c4adc697bcc43d72b7a3da2b9d7701182518ec0b"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The appeal window had closed.",
+      "text_sha256": "sha256:dfddd3a4fb07fa774ec1a11d5b7970a19a538fad853b74799169cff9a17bbf64",
+      "idempotency_key": "sha256:2403a10f88a491e14d7c366b7a535f5a323542023c0bedf772b9877ee55c616b"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There was no door left to knock on.",
+      "text_sha256": "sha256:e3ad9d7566375f3954ffb7c3138a683adfaa7ce591e589d9f719011260c5dc18",
+      "idempotency_key": "sha256:8df48a3656cc3e8173062a35eee152faf7a499dd5a44881bbb9a6701f610d56a"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So they went to federal court, filing a class action in the Western District of Kentucky under section 1983 — the statute that lets a citizen sue a state official for violating a constitutional right.",
+      "text_sha256": "sha256:94e083ad145d915815c1e31f2fe5dd2f1e943fb7391377683e06102e2fad4bbe",
+      "idempotency_key": "sha256:52673a18cbfe76f3792c1c6a521eb35b7d24c4f4f1e7a16b64386178ab886ae9"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They asked for declaratory and injunctive relief: not money, but a ruling that the practice was unlawful and an order to stop it.",
+      "text_sha256": "sha256:f14ba30fac569a7e43a3802543d49bd2de8dd1d42c31c0f9abb0383a32e96250",
+      "idempotency_key": "sha256:e1d64440b3b4e6827910a2c6a3a65fd381bea81d5bdc3874ee85dc0322381ce2"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The notice procedure, they said, did not satisfy the minimum standards of constitutionally adequate notice described in Mullane v. Central Hanover Bank and Trust.",
+      "text_sha256": "sha256:50e8359caebf1503d9dba1c346be15d079540925a3dcc2050f02287202bf842f",
+      "idempotency_key": "sha256:9d3bd346dec7a37e476eda7e3f740490dba0d20b02a2cb84152312498519fccc"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A class action, because the point was never three apartments.",
+      "text_sha256": "sha256:eeefff0ef73469483c92a83455895dae06b4dfb5137bf05e96d69ed21289fd6a",
+      "idempotency_key": "sha256:f3cbda4072095d317d539c09935bced93a3d277c3491035880106289de450f25"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That was the theory of the class: if posting was constitutionally inadequate on these doors, it was inadequate on every door in the project, and on every door in every project served the same way.",
+      "text_sha256": "sha256:62f371ab5bb866417653d279b0314cba7529a6ab23081af8fcdafd49a689589d",
+      "idempotency_key": "sha256:89c24b9ce5f16d5bc6651496cd34623e2c07ccd7652762bbf4fb898574732ee6"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They lost.",
+      "text_sha256": "sha256:f89dd1f0077100e29244c7595671bab33a5573f01a2bfb2a321d459c11c13da7",
+      "idempotency_key": "sha256:2a27427f85c22f889d36b7e7ca3ae88fd89ec7378403685b7a1e339020836394"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On cross-motions for summary judgment, the District Court granted judgment for the sheriff and his deputies, in an unreported opinion.",
+      "text_sha256": "sha256:f364f45e34335bf24ef66ca490408cda9042c51488e29ed83c34ef423b24ab7b",
+      "idempotency_key": "sha256:ed5fc4033b6265d42fc3fea441f33904e599a4e66eb668d210e5fbe501daab0d"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "But it did something in that opinion that ends up mattering more than the result.",
+      "text_sha256": "sha256:f2bd20583da7daa5df4fef6135af6573b3210567208be7e0526e31d5f6b702da",
+      "idempotency_key": "sha256:95a481df7d60f699e47a3548f531f3e4f849ac6c849b0bb7db1cf7ae658e8e0f"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "What it leaned on was old — a case called Weber, decided by the Sixth Circuit some seventy years earlier.",
+      "text_sha256": "sha256:6e6e3d2b7bd982a6539ab79296fd441e896b97ccc25de8788404e758550a38b6",
+      "idempotency_key": "sha256:0bb0713ad41c24c3c28ad674a6b76706514551222f228df1ef5d0f05ef1bfd8a"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Weber had upheld posting under the statute that came before section 454.030, on the ground that it was reasonable for the State to presume that a notice posted on the door of the building in dispute would give the tenant actual notice in time to contest the action.",
+      "text_sha256": "sha256:d07d2bd9de105bda69ffc145935f44d8169ed19956dc4481137c47d27fcf216f",
+      "idempotency_key": "sha256:884f9387d83ebf1953ac42d4dece6f122470192f5ed70351c5f062e6c28e229e"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That was 1909.",
+      "text_sha256": "sha256:370d5751adccbec65ba5efb346050aa55416150d6d329c9a30db3957b5fe5353",
+      "idempotency_key": "sha256:84e377934fd7725e3f1a03c58c08e653796009b8a9ad6441631d4a0714d38334"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The presumption was doing all the work.",
+      "text_sha256": "sha256:8213c0d774796177a403a4943ffa33445302b07e61ab218c0cd067e1ba3136d9",
+      "idempotency_key": "sha256:7c481ee0438ef32bbe358a752f03b5fc788c4b3926e303bf636cefe16f96aa13"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then the District Court conceded that the ground had moved.",
+      "text_sha256": "sha256:94d65fa60b19c9b5ff4fb3503d689caa336686f81600e35547c3717d40952a6e",
+      "idempotency_key": "sha256:19246ad686b332d7292e194356e19a26ea875970029d0217493f7d31c72c9d91"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It acknowledged that conditions had changed since Weber, and that there was undisputed testimony in this case that notices posted on the apartment doors of tenants are often removed by other tenants.",
+      "text_sha256": "sha256:1ba3adbc82adb80f162951cef68a7907fd63d39ca1f48d8db73e99d30c43f33f",
+      "idempotency_key": "sha256:1c26546eafff551b8222c4e9d0622fdd1c407a8070937824f945c4ad95dad958"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Undisputed testimony.",
+      "text_sha256": "sha256:34e1c79b52bb0327d66704dbdddf36a0cb1e497104cdfae59e49e6c11c38e0c7",
+      "idempotency_key": "sha256:ba322c1b9add1d3fa24384d282260426843d23de8904192ddc65d8925c3b31e5"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Often removed.",
+      "text_sha256": "sha256:561ae257df2d517e76e33880d11f756e390f2a5a63b1a6c9b8c47faa0c63bbf5",
+      "idempotency_key": "sha256:94d3e98663a97e542a0ace57f704cd576f582a1613d40ebf167d3ff9191db8af"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Removed by other tenants, the District Court wrote — the depositions in the footnote had said children.",
+      "text_sha256": "sha256:0e9ff6167cff8a2f8b7ac547a0f5601989b463f70a1571f4926e1e50da6dff2e",
+      "idempotency_key": "sha256:29e7e448e488eefc7fba7bfeadb6a83b1e1773c7d888c15d8354025b742649d8"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The judge wrote all of that down.",
+      "text_sha256": "sha256:273cf8e1aff4b749812e4d24c924990d1fce323d0a516688fb9d945e676821a5",
+      "idempotency_key": "sha256:896dec81c167f81c476b2dece00b48b451be15e03ddf109da50449cde55f0288"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then he ruled that the procedure was constitutionally sufficient — on the ground that posting only comes into play after the officer directed to serve notice cannot find the defendant on the premises.",
+      "text_sha256": "sha256:fc5927aee8781613345d3bbacc78e03172f9626fba153a7652b86111a8229354",
+      "idempotency_key": "sha256:f4bdf920b62922350ae0594c16600b72c2cf78f298952ae6f3f725c213eee547"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Which is how the sheriff's side had described the statute.",
+      "text_sha256": "sha256:fff04ad0bee0566752b024c630bcaae4d03c325a56cfd6a467267e7eb3b3ac66",
+      "idempotency_key": "sha256:124280ad4adc10bb8d230d62b248f50d3bd8108cd4e5c4e40073808270619935"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The trial judge found that the testimony was undisputed.",
+      "text_sha256": "sha256:36a7863fe6e14b0de723b9598a3f019c231688a60711fc2535fd45fa5eccedf9",
+      "idempotency_key": "sha256:38e4ba62be697c3dc5977db8539010b2a8a81c8d32df354a64e36e51ee434a2a"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The trial judge found that the notices often came off.",
+      "text_sha256": "sha256:6d8fb3b759ab266fc9a1396feb74f6af1437e7397c9711a675d404401fd7f612",
+      "idempotency_key": "sha256:188d72a357faeccfee9f861188c57ade10ff829338d4700126c4b71968f91b63"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the trial judge ruled that the procedure was constitutionally sufficient — on the ground that posting only happens after the officer cannot find the defendant.",
+      "text_sha256": "sha256:b9dc7bdf40e8b1ba995dce23e1a41ab8cacee869cbe6f7ab1dc95affe33b8f75",
+      "idempotency_key": "sha256:d91390a0d1d43c7bdbfcb4cfdfde6070b23b6910b74427ff2e2a4990d45fe71e"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is not a contradiction in the judge's logic.",
+      "text_sha256": "sha256:8a58e9f758d0549e1f9ae364d3a2a381f19928ac6ae719175277b9903cf66325",
+      "idempotency_key": "sha256:b4838f838d5abeb5084dc3a9f5093521ea391af87c1d61af7afa2b2b3a2a3b60"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is the same assumption the sheriff's side made and the same one the statute makes: that a step described as a last resort is in fact a last resort.",
+      "text_sha256": "sha256:4ed7834849658844c6e0429e807ed44e6a7875b1432f3eb2ce86a641f3ab86c0",
+      "idempotency_key": "sha256:b6e0be5774f00902b1b0a9f4949fbe37601761acd7039f2ce363fe1244372954"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Read the words of the law and it is.",
+      "text_sha256": "sha256:439218e2a7cdbf8baaef00024fc50ad936c0c8ca22d21e4489c350c0236cea24",
+      "idempotency_key": "sha256:4d94b527e7df3ed2ba2002367452f2949e7ef78faada9b19fa784bf2a9bb762a"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Read the depositions and it is not.",
+      "text_sha256": "sha256:2b108a432a2c26f353bc06e24bb96635ad5559311507ea5c0b7f82f7d68c5133",
+      "idempotency_key": "sha256:8dab6eaaaf51f336fbc5ed179b6f873e71fd3ebcda78c54545ca6d0a668c6a18"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Sixth Circuit reversed, and overruled Weber to do it.",
+      "text_sha256": "sha256:743e97c72dd7a78a4f3f00c0ddd5853ff5c65f3708d3e23d34ca42429fbbb367",
+      "idempotency_key": "sha256:b8eabb0418d786dcedb0e8981afada8912c77336ee93c74d7b8812d2db753144"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Its own decision was seventy years old and pointed the other way, and the court of appeals said the ground underneath it had shifted.",
+      "text_sha256": "sha256:e9f5cac1b8ecec2a1b2c6ad13884426bc463df42751467cf74e85318395a0b66",
+      "idempotency_key": "sha256:2c2f9b7577d22d79387a6f52f5ba3388ae56f568f4d7643eb546fbeb6540ba54"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There may have been a time, it wrote, when posting provided a surer means of giving notice than did mailing.",
+      "text_sha256": "sha256:de416ca85214ef802ddf1ceeb405f4e98adfe818f14df802d450fd5745f25db3",
+      "idempotency_key": "sha256:e1bd3091b49bb5898e797ca4049cbfd514bb56775c66721b67072994a222f0d9"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That time has passed.",
+      "text_sha256": "sha256:dfbbc169b3c955738484fd8f0f28a24ab5d2bd225d0e929176e065c275d45d22",
+      "idempotency_key": "sha256:04bd43fef5d063bc47bb5aa178bab300164dbc8fd38cecf890f97d7f589fce3a"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The uncontradicted testimony by process servers themselves that posted summonses are not infrequently removed by persons other than those served constitutes effective confirmation of the conclusion that notice by posting is not reasonably calculated to reach those who could easily be informed by other means at hand.",
+      "text_sha256": "sha256:431147c7b9dd69fc9ca0ad12a3014cb022ba58182dbb81c86a5b0f7f80f41da5",
+      "idempotency_key": "sha256:72230a69b6e25d3e5fbf38e2c4a7344378ffc1ade56659dd2681d27c852db4ea"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "What it did with the case matters.",
+      "text_sha256": "sha256:b23d26c1816bd372a005e60bfdf0a480a515badbf972c25487333b9eb2cce9a5",
+      "idempotency_key": "sha256:f7930dee7c89f2bee9f6c5464f80da86af87721a5fa4f84710e9745b1fb0fe12"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It reversed the grant of summary judgment and remanded the case for further proceedings.",
+      "text_sha256": "sha256:c46402f8f763d315fa3972ab7a5db4d3fbf541458db7df321912b87e1e0041b2",
+      "idempotency_key": "sha256:e3abc88fcde8b8e4aedaa18f7cb2505b3a44ce2c1834ad66516ee7ebcaa1267d"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Reversed and remanded.",
+      "text_sha256": "sha256:388e26450aa36619863e370e1edcb0853db3e1ef98f8cedb0fac76ec60f0ffa3",
+      "idempotency_key": "sha256:01b87bf7c588fc350abe9e4a8e2c9259862d71c39d494ed934470f8fc72267b9"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Not decided.",
+      "text_sha256": "sha256:e812e23c74342a051d51053c004e55dd7a9459d473452e099cb31aa2ea1186f1",
+      "idempotency_key": "sha256:d9e33d52fd5336b91780515243f9120b751ed853f3d491c2e213af95e48a50b0"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Sent back.",
+      "text_sha256": "sha256:76c52aaa7bbe6a3f48fbcaec610cc36cb133d7a9fd981082e2c168348af8d7f4",
+      "idempotency_key": "sha256:8b94d48c79daa4675451b2f28c12da0d39bedb9de92b100751470b7c4aabacf6"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The court of appeals also did the arithmetic.",
+      "text_sha256": "sha256:39c11ca502880162cb3e067c29a10f47a2517f9a458c191898cf8bc694c8d26e",
+      "idempotency_key": "sha256:c34e27ac5b677aa5fbc0279281ef424f6ed52907a81f36b397db4b96ec2a3260"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Requiring Kentucky to provide notice by mail when personal service proves infeasible will not be overly burdensome.",
+      "text_sha256": "sha256:9e72ff65caf31e9d29e0173894722a5cfaa00320b8d4848da19b5f0a4dc8f39e",
+      "idempotency_key": "sha256:5c717c68c7a609f5b208818c050f5622354c6808a6273757f4d584cf06be720c"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The cost will be minimal.",
+      "text_sha256": "sha256:504b9a3da019b089f173ab401b1d687a5b60844bf346a5d691190f85a40b0d18",
+      "idempotency_key": "sha256:200d7f7c697e17a2247986a4504e0f40a746996bdf4f874ba92619d2ae82be74"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And it pointed at a State that had already done it.",
+      "text_sha256": "sha256:4739f3a04e6539ff8deacfa03cc24b4bfb4148d7d92459ecc34d045585820748",
+      "idempotency_key": "sha256:3f8ad89e84616cc0145a408beb32a44e3c24babeb210605bcefb2ed957e7bf21"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The court then noted with approval the provisions of the New York counterpart of section 454.030, which provides that when notice is served by posting, a copy of the petition must be sent by registered or certified mail within a day of the posting.",
+      "text_sha256": "sha256:1ed86c046a905be3b1f4d2284d107f84badd3fee9ef7cda51d24cd792a586985",
+      "idempotency_key": "sha256:24c19f8f1bec0c00973c8429c74f48c9d684136d3c7669df8c662712fd4263d1"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The remedy was a stamp, and another State was already buying them.",
+      "text_sha256": "sha256:6a2a42ff8a48ad7ebc5855afbfb49be0279070ed9207fa18fd2bc961ba3955ac",
+      "idempotency_key": "sha256:84ea4ba2d53cee72ccb01d3d0ef8464a22cc86bd96bc0330917c330e975f1e69"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Supreme Court took the appeal in 1981.",
+      "text_sha256": "sha256:d59ea9afb1b3241024b2f8d7fd6990f2f0040d22081f7451266b265e6daf2b9a",
+      "idempotency_key": "sha256:ad0d53e9346132f78f9c95f9518c5e39f2a0bcba5dfca8b270b11e8ebaa58cbe"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It heard argument on the twenty-third of February 1982, and decided it that May.",
+      "text_sha256": "sha256:fb8dc33a79a3d944d015d2fa35f80144b2ccf235dc70f83644f209b716b8e605",
+      "idempotency_key": "sha256:950a914d1fbee69129e6f5a4079c327a2586e1c41d5e872d0d71e8742077a79b"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Two lawyers argued it.",
+      "text_sha256": "sha256:5668c695ffaac4f8c9d86cdb0e07aafd4ce44acb89fec47cefa9c1919df1177e",
+      "idempotency_key": "sha256:eccde7156e724dd2f8afb99ffa8c74e4975bd4655935531ff85ff4235da13f59"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Two more filed briefs as friends of the court: the National Housing Law Project, and the Antioch School of Law, which urged the Court to affirm.",
+      "text_sha256": "sha256:bddf98ec9e7b4eec2dc27e3f3f74b92529b80ca827dbb890f2ba41b882b7fd0a",
+      "idempotency_key": "sha256:c773ab4e059dc0dcdcf10fb835c9d49e9a6626153367ccfd5e76bdecb1b7c164"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A dispute about a thumbtack in Jefferson County had become a question about how a summary eviction begins in every State that served notice this way.",
+      "text_sha256": "sha256:695e5c07ff4c3228a32d8064e2ce285186813c072cfb06bcb01d5f4698c7759b",
+      "idempotency_key": "sha256:6b7bf6fe7fc54aa2706508e29e3503f2104ffd30f040f3a427962829d7428008"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Before the holding, one more thing the sheriff's side conceded.",
+      "text_sha256": "sha256:d3e69184b301138e1db0b864c7b52b3e14cda8dc3911890fcddd3339527ff655",
+      "idempotency_key": "sha256:2958cc86efa0a3b2483809e904d5cd874fc84c286e6a1a7713b9b3455e661369"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "If the landlord had been seeking past-due rent rather than possession, personal service would be required by Kentucky law.",
+      "text_sha256": "sha256:a81743b82394739deaedff0e6ae6f00c1636c966c750802f1a92786afaec335a",
+      "idempotency_key": "sha256:f701752a81f8e1cdd238a66798013fe5fab87351e9a29cb35c34170597700ac9"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Money got a person served.",
+      "text_sha256": "sha256:5895231fd676d9d0239a28a48e63187bfcfa6c3f81022edacc5c35da4447724b",
+      "idempotency_key": "sha256:c09b1316822d8257aa298dc3deb06ac751ec1cb82121d57901759076e7c49df2"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The apartment did not.",
+      "text_sha256": "sha256:ee99f97bbc996fa9e7ac16baedb0a0fb3372cf943ac45a2b0366200b9a9c33e2",
+      "idempotency_key": "sha256:e2ab0c6b4e504ddf17c22eb5bc8c656b37a85289ec4cfdcff19f7c5b568cf436"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The opinion was delivered by Justice Brennan, and the standard he reached for was not new.",
+      "text_sha256": "sha256:3dfeadc7d3fede86897afb90725e79074d9b7b7636daad6c753f39483c2ef836",
+      "idempotency_key": "sha256:8529f8c1318babe45431d3237912b2fabc45baadc27c4620cfb88486e76a282e"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It came from that 1950 case, Mullane, and it was already thirty-two years old: an elementary and fundamental requirement of due process in any proceeding which is to be accorded finality is notice reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action and afford them an opportunity to present their objections.",
+      "text_sha256": "sha256:86a0874908a55ac23981d32f124849ef64edfffe7c328353d4d71db76b44ce57",
+      "idempotency_key": "sha256:3393be9d9e9cc00910e6f8314ef8434948bbb7a8ab91790df21d24fb89981823"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Reasonably calculated.",
+      "text_sha256": "sha256:61abdfa181483f905021d48d9d83f7aa8565430761e7b1e8e6f0aec5666f14e3",
+      "idempotency_key": "sha256:e147be6aafdf236ee6f4172cafca502e16f905b3c2fc0fe0034345df3672bf8a"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Under all the circumstances.",
+      "text_sha256": "sha256:5e9e747a8529531bf4ae351a7d8859d1945be83cc9b15428e511309211005158",
+      "idempotency_key": "sha256:77032862c040bf3dab35df29475b051ad4b77847fe3ceb8f6c675b3d74adbfb0"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Court then said what was at stake in the plainest words it used all day.",
+      "text_sha256": "sha256:a50dd142437220280a96ede204880dc56a199bb1cb815f6dd71164d4c7d0c111",
+      "idempotency_key": "sha256:0f3346078bad3c17709b228bf6ad125ecd0d214b756f0e2e56631a7a08a72e51"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In this case, appellees have been deprived of a significant interest in property — indeed, of the right to continued residence in their homes.",
+      "text_sha256": "sha256:9b4eda52aec23a43439484e652d585d185a666fd3c82a6810bb4a9177025b86f",
+      "idempotency_key": "sha256:9563ed5ce4dc169f71c3e2c3ba4cfdcc5944995fd1635a511c2b67ade9684ae6"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the test itself.",
+      "text_sha256": "sha256:b973f92d970da1678b1036381f4986f8c0187ccefa23e67eb38303f98927c182",
+      "idempotency_key": "sha256:a05aac7f647d9bda7d824f09a4e896bd9346517bfb37277b602d82bbce96d6db"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The sufficiency of notice must be tested with reference to its ability to inform people of the pendency of proceedings that affect their interests.",
+      "text_sha256": "sha256:ac129dc60f7bd7d36bb9258f976e5bb31e8ccf151cbf6f5221f581231acb391b",
+      "idempotency_key": "sha256:0c66c1b3d61f5f69420a5e1a5a51ce54cc5a3a9d628c4bc7154d882e1a0717bd"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Its effect, the Court said, borrowing a line from a 1925 case, must be judged in the light of its practical application to the affairs of men as they are ordinarily conducted.",
+      "text_sha256": "sha256:bc6d974e22fbcf9c869781eb14b9b9b595086112297b5bbb229f63349e24b00e",
+      "idempotency_key": "sha256:8e49c1a9938b1b7d92fb279c84b5b1f50953d5f68edfb3303c5c2917f8d1e74a"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Practical application.",
+      "text_sha256": "sha256:778fd25293b8c3997a65b1849bea05a9a5c858d607d3e463deb820db4bf93f05",
+      "idempotency_key": "sha256:87609717407bd99e725d08eb275a4a18f6b76a93842f2318e55560f544bef6f4"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not the words of the statute.",
+      "text_sha256": "sha256:4cfd65d8ef2029e10df3d2a94214742a51c7f8becf3f393fd8259df3514eeb18",
+      "idempotency_key": "sha256:47cfa81ef08abc6f7d88aad84211b87f80b8a40f91b8eb6a93b912174723a885"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What the thing does.",
+      "text_sha256": "sha256:980b15fbb26cf6b62167a75ae0f03941eedfface3bb5bd7bc7c1f1750365ec9f",
+      "idempotency_key": "sha256:6194a31217c28be75b68c2c9463ee714a065ec8d2e0c4bbd539c0a4bc92e331c"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And the Court had just restated the reason posting normally works, by quoting Mullane in a footnote.",
+      "text_sha256": "sha256:6711854a0fddf48170c69f33fe2ec391a94dd8a0c4f99f7041c149edabf77db3",
+      "idempotency_key": "sha256:8085dbea734b1f798d9d1bce87d05df8baba528faa48049596e6ce05c1faa609"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The ways of an owner with tangible property are such that he usually arranges means to learn of any direct attack upon his possessory or proprietary rights.",
+      "text_sha256": "sha256:1408d93f64963e6c31ba59fcda8b6c71ee38914be9611159ec9d2b998bf56ee8",
+      "idempotency_key": "sha256:2d8698a0342364df7eea315180c7b923bae22b69c1449ea37a19231851218181"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Entry upon real estate in the name of law may reasonably be expected to come promptly to the owner's attention.",
+      "text_sha256": "sha256:5a7f4fb012abd36a96a1d1fa1c2d277b0e139f12fb39443c4418fa4515160e74",
+      "idempotency_key": "sha256:659028fddae20d1c072e1cf7490520832d15a1db86337e042de3383daf7b26c0"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is the 1950 case, in a footnote.",
+      "text_sha256": "sha256:f77996c168d579d33bad2348e76cd48ca5da01c1722fa3357c0d769da2f6d7c2",
+      "idempotency_key": "sha256:4a163acb1b233b904f6f50587075a2e342b379ebbae066d827f22b77d7da3638"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the body of the opinion drew the conclusion from it.",
+      "text_sha256": "sha256:e2ea34ed130f906ec2eb7bc0785350c95c56348d07b97f3ef82abf56fcb48046",
+      "idempotency_key": "sha256:b4f3cbdc4a031e12703895ead515b63001608a6c43438e1dbd9973f30d9c63a8"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Upon this understanding, a State may in turn conclude that in most cases, the secure posting of a notice on the property of a person is likely to offer that property owner sufficient warning of the pendency of proceedings possibly affecting his interests.",
+      "text_sha256": "sha256:e8ea25de2ac97ef6d7f9f6c130ccbe5fa6fb9e6dd23d8a0e4967ff466fb0ad63",
+      "idempotency_key": "sha256:b3fc46240a6c9f2f8cc10adea1e3e058629ef68fee3689c8cc222469ef6a4a45"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the turn.",
+      "text_sha256": "sha256:82b331631349513c69177ce88f7b760eb966a59d147fb898b4225f8704212742",
+      "idempotency_key": "sha256:38b788b52996968fcc75160c7fff28debb3c4294c5440a23798af070a6fbfc4d"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "But whatever the efficacy of posting in many cases, it is clear that, in the circumstances of this case, merely posting notice on an apartment door does not satisfy minimum standards of due process.",
+      "text_sha256": "sha256:4cc50f2d266d06d2772e0dba190256e8f608499fa8f14aaffe2c04e82324816f",
+      "idempotency_key": "sha256:6dcc17110be94e3911a2299f999aa66650e3546fb4d9f5d831a96d1a86d440a9"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In a significant number of instances, reliance on posting pursuant to the provisions of section 454.030 results in a failure to provide actual notice to the tenant concerned.",
+      "text_sha256": "sha256:a8421c06d2d0ca105311ed329a037e0cf50b7995f5886a4327cec2e65c4adbfb",
+      "idempotency_key": "sha256:ae299038e136df9249b001e7fe6fd3e93ef40cb2dce253785e9e071b933ee7a6"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And under these conditions, notice by posting on the apartment door cannot be considered, in Mullane's words, a reliable means of acquainting interested parties of the fact that their rights are before the courts.",
+      "text_sha256": "sha256:3c470e5961d7bae31f53612aa7691d155a648855a2002003a83cefd8e52ab8dd",
+      "idempotency_key": "sha256:dbc5c4016ebd25f78c29d466db7841036a70e4af4f90dcae143e07c35da008a7"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Court closed the assumption that had held the practice up.",
+      "text_sha256": "sha256:c7c23d9ff4c18aeba7ca976710e1b2b00bc37a0ca8588977b517adb670155948",
+      "idempotency_key": "sha256:f438028cd2b3a4bc4cf4e402adc31d784b72a1b644b90b3e272f2f2d60935944"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Failure to effect personal service on the first visit, it wrote, hardly suggests that the tenant has abandoned his interest in the apartment such that mere pro forma notice might be held constitutionally adequate.",
+      "text_sha256": "sha256:ef025554ca89f854493433eeff5d1b6cd1e0882af304074ad4af37f7d4a57576",
+      "idempotency_key": "sha256:ddd482148d19a5a63f9d7c9a42a24c3fd31ae4970193afd34f6150dff41a6cca"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the mails, the Court was careful and comparative rather than absolute.",
+      "text_sha256": "sha256:ee434f4522da4a1d8371fea5a33c0558a571a7280ba6c9ea59180a27ab15a61e",
+      "idempotency_key": "sha256:ae7e97b4fd2554afd55487a17b0d9243bdfebf14d05cb34cf4489f645a4fe637"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The mails, as Mullane had put it, provide an efficient and inexpensive means of communication.",
+      "text_sha256": "sha256:27fd4ca255c7a98fc17ab542d0f8eed465f70aff2ef4b563553ae6ca1c675cd9",
+      "idempotency_key": "sha256:e149d7760b388afd16ab3b4f91e4d080ea8c81d016c6af64e33c65c9253432bd"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Notice by mail in the circumstances of this case would surely go a long way toward providing the constitutionally required assurance — that the State has not allowed its power to be invoked against a person who has had no opportunity to present a defense despite a continuing interest in the resolution of the controversy.",
+      "text_sha256": "sha256:01af873485ebdfdc8641bdeb2fbaf8e5acefd547279372d4f954e2cf2981fcdf",
+      "idempotency_key": "sha256:6e513a2a4d0782190ebb322f8c1e13aba1a2b92a7588eadeaf04de63116783c1"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then the shape of it.",
+      "text_sha256": "sha256:bfa5cfcec50e08f5bb4e985e3577776cf039f2889ec7d855107392fc6566c07a",
+      "idempotency_key": "sha256:d9203f7e8c2671f6c9ce745f825bba2f904e3d58bb551043912bda1f1f4d5ee5"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Particularly where the subject matter of the action also happens to be the mailing address of the defendant, and where personal service is ineffectual, notice by mail may reasonably be relied upon to provide interested persons with actual notice of judicial proceedings.",
+      "text_sha256": "sha256:6e9db4b1de071a6d1192abe62fe916409725a5058f6e78647d47123dd615a9c3",
+      "idempotency_key": "sha256:b017762d58f22e5e5f67165b1e5b15e96499f355c42851ecf52fa33854aa3761"
+    },
+    {
+      "chunk_id": "VC-0302",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The apartment they were trying to take was the place they would have got the letter.",
+      "text_sha256": "sha256:1d4e5fd5b06a09c29b4e56bbc3e4831f6a46faced59912f941bb2ec2d233d495",
+      "idempotency_key": "sha256:dec47b8aa61e311c7682ff7a148b352b98437725f266461b4211b6737e29cbb4"
+    },
+    {
+      "chunk_id": "VC-0303",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the Court named the failure exactly, and it named it in Mullane's words.",
+      "text_sha256": "sha256:7d404f75aa9e2964124b547eef2378f98bc75e1c2ba0f97f19bb94049d928e49",
+      "idempotency_key": "sha256:67d1f0330583fbd45f3de7244e93d567b77de57cb91fd06b2ae040a57e87555f"
+    },
+    {
+      "chunk_id": "VC-0304",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The State's continued exclusive reliance on an ineffective means of service is not notice reasonably calculated to reach those who could easily be informed by other means at hand.",
+      "text_sha256": "sha256:f13e3218a90d395a25115f34ece39d68879ecfe6b0f3a3ed95e892f26ee9bfe1",
+      "idempotency_key": "sha256:396fc2a0201923124e0224f930b0a2ef37dcda9743f3ca952a9d51b1610bbab1"
+    },
+    {
+      "chunk_id": "VC-0305",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Continued exclusive reliance.",
+      "text_sha256": "sha256:77932ef68c3e8299f936ae9f943ec12c3469547d3262717489a5539675e39789",
+      "idempotency_key": "sha256:6029cd5b967db5a8fb1cf9dc22733f00fe6a6c21c972776ebdcbafff621a17fc"
+    },
+    {
+      "chunk_id": "VC-0306",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The holding: in failing to afford appellees adequate notice of the proceedings against them before issuing final orders of eviction, the State has deprived them of property without the due process of law required by the Fourteenth Amendment.",
+      "text_sha256": "sha256:8449039fbfe67712ba8c696898ed60037659de910035ea4444450e8c210d5933",
+      "idempotency_key": "sha256:9d049a3f8937c601eb43690578b9c74318ca9a0f36b20423793f6a7f61173c71"
+    },
+    {
+      "chunk_id": "VC-0307",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Court did not ban posting.",
+      "text_sha256": "sha256:e040c82ffb2665b00d6f9b4e435a67a154a6464c07e81a5a85dca7e3ede6d5b8",
+      "idempotency_key": "sha256:ed8dbd3aa0781c6a05ef43322fde1fb1ca9d245cfb20bb6bdc2d65945f083c01"
+    },
+    {
+      "chunk_id": "VC-0308",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It said so itself, in terms, and it underlined the limit: in light of the findings of the courts below, we hold only that posted notice pursuant to section 454.030 is constitutionally inadequate.",
+      "text_sha256": "sha256:c47aadbb6265ce1d6af7f5b812a1ff1d39952b139cd9c01ba84bd54363d4b164",
+      "idempotency_key": "sha256:8000f7ae437f56ceefa2f0aa925075d57538f594a5366a0e9454f51c3cf5996c"
+    },
+    {
+      "chunk_id": "VC-0309",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Only.",
+      "text_sha256": "sha256:fc17abde4eee4e1dc1d5788959d25105661a534b2733bc757a74666ea4836b8d",
+      "idempotency_key": "sha256:2f689daa5031405b563b2d13b79306e815910afd63bf641e9036d81973a88780"
+    },
+    {
+      "chunk_id": "VC-0310",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In light of the findings below.",
+      "text_sha256": "sha256:df8072cd3ee65d90bcf4edf50ac8bef1a669a0ba0644f7a7d003f0bd3957da44",
+      "idempotency_key": "sha256:5a05d3915b7f2ec66f4ac2b953f480ea45a13ca1fe34429db498cfbb2e1a01ff"
+    },
+    {
+      "chunk_id": "VC-0311",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It did not order the mail either.",
+      "text_sha256": "sha256:bb4d1fd9084724ff888e0dcf435a3143558e133332ce4ab861b9db64fd0e2815",
+      "idempotency_key": "sha256:7aca49e9b894105ba5685522e7decfa58ca71e49bad81386a3b657ffece34604"
+    },
+    {
+      "chunk_id": "VC-0312",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It is not our responsibility to prescribe the form of service that the Commonwealth should adopt.",
+      "text_sha256": "sha256:4a7fafa36a0db6c55a8c63bbd679921990045584c669e324b2ce275130fc7bc2",
+      "idempotency_key": "sha256:c7eac7a1ad63d97fae3315cab16f9881c769ef75dad3c869d42028401960fed4"
+    },
+    {
+      "chunk_id": "VC-0313",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And it gave up more ground: even conceding that process served by mail is far from the ideal means of providing the notice the Due Process Clause of the Fourteenth Amendment requires.",
+      "text_sha256": "sha256:d43fa19ac2c8bdda9118d040b805ba79d84c38977a8b3c5e7f2699d4718550af",
+      "idempotency_key": "sha256:8d026125fd76b70fec70c88ffc754c311502ef668cf281d5523bc0b907bda299"
+    },
+    {
+      "chunk_id": "VC-0314",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Far from the ideal means.",
+      "text_sha256": "sha256:b187235687aa699bbb2a7a93b20e5b87d63b9f044497eaf0779266f182339b6d",
+      "idempotency_key": "sha256:1fc422bea5c74e161360925c6fe58e3d9b281b592cb75693f8685915fa40cf08"
+    },
+    {
+      "chunk_id": "VC-0315",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The furthest it would go was comparative — that posted service accompanied by mail service is constitutionally preferable to posted service alone.",
+      "text_sha256": "sha256:e93e2dcbd14fe53e11577430ae64617d19ed6f8b73563557adad3c037cae36d0",
+      "idempotency_key": "sha256:f7dbaa0fd33f3b3209b689eed6bd82a43ae55286c4e9667aa69bc7cbb89a25c7"
+    },
+    {
+      "chunk_id": "VC-0316",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And the case was not over.",
+      "text_sha256": "sha256:22f1150625c127d77f60c897b6c3007efc0f62f998ded4df699b9e5946be62d3",
+      "idempotency_key": "sha256:fa2ab192b60d2656e0dbbad5e59b21f80170b7c1480fcac6fe739fa7dc8beda8"
+    },
+    {
+      "chunk_id": "VC-0317",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What the Supreme Court affirmed was a judgment that had reversed a summary judgment and sent the whole thing back for further proceedings.",
+      "text_sha256": "sha256:db94d2297f573c91961d3a6c55b7d9273f7c53a2ed4431bae58a7937b65a5b3d",
+      "idempotency_key": "sha256:066b269163bda4821728de664d29223cf298278833e57be08810bd22365def35"
+    },
+    {
+      "chunk_id": "VC-0318",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Affirmed does not mean three tenants walked out holding a key.",
+      "text_sha256": "sha256:49fac037296e3b9845471f9023c5f2cdddd577aa8092ffcf0fb9af0f029ce36e",
+      "idempotency_key": "sha256:6607aaa91fefe1ef950c98b7fe69f6c4fe7ea850abcb259f18cec50ca3d0d66c"
+    },
+    {
+      "chunk_id": "VC-0319",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What happened on remand is not in this opinion, and neither is anything else about them.",
+      "text_sha256": "sha256:adf1aa9bf8cb026f9ccb461b0b555c3f676527358dc1312cd1e30f67cc412331",
+      "idempotency_key": "sha256:7b8bb899921b7fad0e586fc77bda21ba70a0fa63fef1146a09b983035326faa2"
+    },
+    {
+      "chunk_id": "VC-0320",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What became of Linnie Lindsey, Barbara Hodgens and Pamela Ray is not in the opinion.",
+      "text_sha256": "sha256:69774a07929b26295e3ca5c17a42d56ac57f5f96cefd7e3bbff629f97a3a67a0",
+      "idempotency_key": "sha256:3acab6e352ad1e3d1e2f62300697796f0c68e84429add419467b027adfce0ccd"
+    },
+    {
+      "chunk_id": "VC-0321",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It simply stops.",
+      "text_sha256": "sha256:03971995626b878b6a990ab0d2a78e166bde849b94f0e0c127fc2fce5c8f20c8",
+      "idempotency_key": "sha256:7a359a1c48b5daf47124b4581f4501dd18042267a43413e4b43a48d03234c938"
+    },
+    {
+      "chunk_id": "VC-0322",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Three Justices did not agree, and the dissent is not a footnote.",
+      "text_sha256": "sha256:159e6d941c8e25a7ad087287342f01f5847934a24a43f4b47b8eb915292cc42f",
+      "idempotency_key": "sha256:b82f3fafaffbfa037f8be736e231c14106a81349091c389e018f3c9fd0408efe"
+    },
+    {
+      "chunk_id": "VC-0323",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It was written by Justice O'Connor, joined by the Chief Justice and by Justice Rehnquist.",
+      "text_sha256": "sha256:ab868a5ee8fdb90318471dd55021320c40d65646026aba71bbd0a9e9437bb38c",
+      "idempotency_key": "sha256:f11b581103b5595fb2470f3a60c1d0e0c428ef9add1927a5f33060f725078353"
+    },
+    {
+      "chunk_id": "VC-0324",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The opinion prints no tally of the votes on the other side.",
+      "text_sha256": "sha256:cdee6b182f7b35680394e77d639a5bfb25d6808ff7e97e057e95fce40bd6baa2",
+      "idempotency_key": "sha256:93641f4e9f1774a22191f985f806314bde3947f2c7cae5b6105027e8ed006b1f"
+    },
+    {
+      "chunk_id": "VC-0325",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It opens: today, the Court holds that the Constitution prefers the use of the Postal Service to posted notice.",
+      "text_sha256": "sha256:b1296969e84ab0161652262ef955c22d8fa1d60fcaae8fece11274e58cbda27a",
+      "idempotency_key": "sha256:18d649effb0eba333e393e48a233d831a9653cb7372210fa2f153cc13e7f85fa"
+    },
+    {
+      "chunk_id": "VC-0326",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Court reaches this conclusion despite the total absence of any evidence in the record regarding the speed and reliability of the mails.",
+      "text_sha256": "sha256:fba7a60b04317a51a9fb5ac8a8b1de4db88625fd74d643d407795d4893518e56",
+      "idempotency_key": "sha256:5439d59cbd3d7c65bf324dedb7273d9f25854bcac3a8b4e64d5a822b8ca1d1dd"
+    },
+    {
+      "chunk_id": "VC-0327",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the charge.",
+      "text_sha256": "sha256:5e28133db9dcc003bf17c0a70154459a66669b21d3a13602005dbe690d64b84e",
+      "idempotency_key": "sha256:fb7cc0983ca2328b84f78922fa24f805e1bbca965770b108185a7fec3dc0872d"
+    },
+    {
+      "chunk_id": "VC-0328",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The sole ground for the Court's result is the scant and conflicting testimony of a handful of process servers in Kentucky.",
+      "text_sha256": "sha256:9d3636424240e4f67719dedd6ff61a47f6f9ff09cbdf176b73012019705da62e",
+      "idempotency_key": "sha256:4a75a4fe85952d43ac18bd976aaaa596e231710ed5a8c216c3e5e3256e449185"
+    },
+    {
+      "chunk_id": "VC-0329",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On this flimsy basis, the Court confidently overturns the work of the Kentucky Legislature, and, by implication, that of at least 10 other States.",
+      "text_sha256": "sha256:b330864f423cae35ca3a6db6ac9023c67bbaa3a24ef314ea3451933d9e8c1b54",
+      "idempotency_key": "sha256:8ba456f08cdeaf0a458989be357e850415baaeb9bd952b953af420e34a72b792"
+    },
+    {
+      "chunk_id": "VC-0330",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The District Court had called the same testimony undisputed.",
+      "text_sha256": "sha256:6599743f4ae39ee48182fbdacdf3d9f0dd39cdfa9d1b8e1e3c368c1cbd39bacf",
+      "idempotency_key": "sha256:c3a4562536847ef23d55d8f8d276aab082df83cf0b7a4c00b2993894e931d48b"
+    },
+    {
+      "chunk_id": "VC-0331",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then the point a lawyer notices first.",
+      "text_sha256": "sha256:c07f47265908af29a632e8efb141d4911dec2372a0ba119e8378f0e863b363fe",
+      "idempotency_key": "sha256:69331ebd58625b69e7709435943a782e02379040bbc0c76b459b65768507c745"
+    },
+    {
+      "chunk_id": "VC-0332",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Court, the dissent said, does not cite a single case, other than the decision below, supporting its position that notice by posting is constitutionally inadequate in summary eviction proceedings.",
+      "text_sha256": "sha256:a0f71515864979b71058e67b8ca6dd01c95ff3766fbe6a938d3c80a387f7b7bb",
+      "idempotency_key": "sha256:7e23acfd0eac518f06aa9e754e61fe8dadd9d6c16e19ea332904d5adc59f376c"
+    },
+    {
+      "chunk_id": "VC-0333",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not one case.",
+      "text_sha256": "sha256:01cee4f39b1bc8e65838c0eb6ed56796a4236d917e2fdf12eff89685384abd53",
+      "idempotency_key": "sha256:de13f0d7bf749c2f5cda4d5328211db2bc1bc0be553b31504a913308c5ff1b18"
+    },
+    {
+      "chunk_id": "VC-0334",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The dissent counted the legislatures involved: at least 11 States authorizing notice in summary eviction proceedings solely by posting or by leaving the notice at the tenant's residence.",
+      "text_sha256": "sha256:57a5d1a03b79a683f433710dcc4d9d7100e3737b556dfc6ec7017cc665a0ed58",
+      "idempotency_key": "sha256:92d8c1e8607ea15f03bb67c05b5c1cb28a662ba7d34785891b11ae04a3215139"
+    },
+    {
+      "chunk_id": "VC-0335",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It listed them in a footnote.",
+      "text_sha256": "sha256:18653d9a2aeeab59c3e01e5426276272373d6b4871df374552aa220c73a249f6",
+      "idempotency_key": "sha256:a2da05e2f3b63ee47f5110ac278c58a724e6b6190c30f0eac0dbb9e4c814c874"
+    },
+    {
+      "chunk_id": "VC-0336",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "At least eleven.",
+      "text_sha256": "sha256:1ff10406997b6505d38be369be82711e41fba0b072441fd90333bc70b478a81a",
+      "idempotency_key": "sha256:c3e725df70b190f275e11c316265e7a18b3674749695849ceaebd4bfc0c5d696"
+    },
+    {
+      "chunk_id": "VC-0337",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And it read the statute the way the sheriff's side had: personal service first, a family member over sixteen second, posting only as a last resort.",
+      "text_sha256": "sha256:5a3061c71d60a2fafc811625b8613acd148115a1d33663b0caa2fb40419d490f",
+      "idempotency_key": "sha256:0f514963f62f6898fe7cbb7115e634be50658bc90f86e4e8df30378e3de738a1"
+    },
+    {
+      "chunk_id": "VC-0338",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Both opinions read the same three clauses.",
+      "text_sha256": "sha256:ac0f26ff899acec16b377a329d64401322cf63d0ede77dd6ce209a24c40ab232",
+      "idempotency_key": "sha256:5c21241aff79c4909905e8e794ca2ce8aa89ce0add773c34d627f7a6eec82db9"
+    },
+    {
+      "chunk_id": "VC-0339",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "One read the words.",
+      "text_sha256": "sha256:1a92eddbcdcf6dcaa0b045d19a7a22b48b753e2193fb80bb916afce02465015e",
+      "idempotency_key": "sha256:5370b8923d5c5890867b29afd943e7fd9850629b3f1f6db778593d44b53c4b4f"
+    },
+    {
+      "chunk_id": "VC-0340",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The other read the depositions.",
+      "text_sha256": "sha256:771d800e0f1d58667898ca1ac765bcbdd1e3a678ef6c44367ec50cac454df1d6",
+      "idempotency_key": "sha256:8f060185543306023ce709ca8600247f0fb7708d74bcdd5f70e76faf9f7333d3"
+    },
+    {
+      "chunk_id": "VC-0341",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There is one more thing the Court declined to do, and the declining is deliberate.",
+      "text_sha256": "sha256:509170d37ba609c9b896f69e385fb7d7ed70f9f07a5f496a7baa98d1a077aee4",
+      "idempotency_key": "sha256:d693b942398bf019852e14e93ec0e35c98635f34d435935996c77c9a2230b5c1"
+    },
+    {
+      "chunk_id": "VC-0342",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Notice law had long turned on a category: whether an action was against a person or against a thing — in personam or in rem.",
+      "text_sha256": "sha256:5cf86a512ee6d22c3e26198183d90c291b3185a8fe528425f820995db98287e0",
+      "idempotency_key": "sha256:d86ad5edf8ec6be1c5604d5b9d08a1d5d4a7eade68f395e56caba81cb463c2be"
+    },
+    {
+      "chunk_id": "VC-0343",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Which box a summary eviction belonged in had been argued for decades.",
+      "text_sha256": "sha256:fa4dfa75b71089a21e79b2242861f225c729eca01b3cf97cd035fb667af6c068",
+      "idempotency_key": "sha256:5569e980ce67bd9e6708542054e368fe4cf7b5bbf0b5ac27b99749c78bda4c6e"
+    },
+    {
+      "chunk_id": "VC-0344",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Court refused to decide it, exactly as it had refused in 1950.",
+      "text_sha256": "sha256:c6b273e5c55afb6f18c21b00001e1083ea2e593fcb696335390fb32c0ab5a25b",
+      "idempotency_key": "sha256:119fafb351cb97522972dc5db7a16c5f4c981018d754a5c6c99eea97912364e6"
+    },
+    {
+      "chunk_id": "VC-0345",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "As in Mullane, we decline to resolve the constitutional question based upon the determination whether the particular action is more properly characterized as one in rem or in personam.",
+      "text_sha256": "sha256:d189ee07078b163006c0ec6dc1d7dd79bba5d32144f09344bd790299fecdde5d",
+      "idempotency_key": "sha256:25fef2ef1cc99b6d7ffc2bcc9cb602f7b07226f76ac08b6db19ec08990d1bc00"
+    },
+    {
+      "chunk_id": "VC-0346",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What the paper did was the question.",
+      "text_sha256": "sha256:292ab48d838d501d5e9fe44fde360f7e68c0b26fa1a68176acb886eb18db7add",
+      "idempotency_key": "sha256:08cb93d8d316f2077829ba6a5f9fd5760aa135cadf5631e63d1c8679f8ee4dfe"
+    },
+    {
+      "chunk_id": "VC-0347",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Earlier, in a footnote, the dissent had already accused the majority of doing the very thing it disclaimed.",
+      "text_sha256": "sha256:5c88715e41c401e40bbe9f203d6aab8765f2a98fcc641ef3fb73183c27f16bb6",
+      "idempotency_key": "sha256:7e0d3bb62377f90aa7af35caf8ccfe770c51f9f02f173b2c35cd16f3becb6bd3"
+    },
+    {
+      "chunk_id": "VC-0348",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Court gives lipservice to the principle that it is not our responsibility to prescribe the form of service that Kentucky should adopt, but then goes on to do just that.",
+      "text_sha256": "sha256:a745e36d6bf94726eccf956a797952080303b7581158f4196ee53e472db25d9c",
+      "idempotency_key": "sha256:a9ba43fb40814d3d589231a36ca159d1d75773873e9936dbae1273d872aef6c6"
+    },
+    {
+      "chunk_id": "VC-0349",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Its last move was institutional, and it is the oldest objection in constitutional law.",
+      "text_sha256": "sha256:659d4e21988dac704d2dd214fb269e0bb61b4b50e61043c2db1b50ba59a83a02",
+      "idempotency_key": "sha256:106b167b8f94c17e2f94f70d1ae16d8639f971e41ff927d86461157465c41228"
+    },
+    {
+      "chunk_id": "VC-0350",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Court, it said, seems to forget that we have long since discarded the concept that due process authorizes courts to hold laws unconstitutional when they believe the legislature has acted unwisely.",
+      "text_sha256": "sha256:162ed5e570dcafd86499a35d78e2b704b04d14697958f9bc5a9b344d156c4a4f",
+      "idempotency_key": "sha256:5aea436b5766eb4eaee51b3d29cd847e640c71952c05eee11c13f19d100803c3"
+    },
+    {
+      "chunk_id": "VC-0351",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The majority's opinion does not answer that one.",
+      "text_sha256": "sha256:2f711af49a4f6e9da041126c70cc7de82c0b83bc198af2b608f220aa31ce2eb4",
+      "idempotency_key": "sha256:c4065460f5e6304c16b2a12d64141e833ee499e307d4120b18b37a08a6a8c104"
+    },
+    {
+      "chunk_id": "VC-0352",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The dissent offered the counter-image that has outlived everything else in it.",
+      "text_sha256": "sha256:f4be45f4fcad3af2058265159d4b0b9f6379aa226b98cd5e0cc647bba782ac6d",
+      "idempotency_key": "sha256:9df460b41d84172d3b6636216d60c9f5fe67f0712e61d212a6ca5b8ceeb3a607"
+    },
+    {
+      "chunk_id": "VC-0353",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It is no secret, after all, that unattended mailboxes are subject to plunder by thieves.",
+      "text_sha256": "sha256:5b3b08c24a6d925fa79526b4aa94ff049f85288fbd1410de77dadf73327bd6b3",
+      "idempotency_key": "sha256:2522438c3541ae8b3790e8711769e2a9ca6e545f9c5caf60144361be0057c771"
+    },
+    {
+      "chunk_id": "VC-0354",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And unlike the use of the mails, posting notice at least gives assurance that the notice has gotten as far as the tenant's door.",
+      "text_sha256": "sha256:f98134e328413d8cc1e3b718e13553b5a02ae4aa7b6df4f7fd1938712a1fbfea",
+      "idempotency_key": "sha256:54571b290d80ac80f5c4086f874c50565fe5a1928c5c3ce9c42cdd6e8c0584e0"
+    },
+    {
+      "chunk_id": "VC-0355",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is a real argument.",
+      "text_sha256": "sha256:512f23a9a9039168f7e9a5c672691cb852fac5749c1cc6c6f1094971b1248d13",
+      "idempotency_key": "sha256:ccc7097880afb2f2556d951983f2dde7f6f85138b9e77985e5454273c9fcc253"
+    },
+    {
+      "chunk_id": "VC-0356",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A letter can be stolen, or misdelivered, or thrown out with the rest of the post.",
+      "text_sha256": "sha256:6edde72d1a82bce68b51f92ad2a553a4f05fcace333410f480011eaf93ea2739",
+      "idempotency_key": "sha256:049c3d0fc5df1de6734a6d69ebafe449bbada6a95f16c5565141f22a36921d1a"
+    },
+    {
+      "chunk_id": "VC-0357",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The majority never proved the mails were better.",
+      "text_sha256": "sha256:cb441970cda967d5d0d679f9defc56ec9e56c491bdf48a8d935125f54791851b",
+      "idempotency_key": "sha256:3397b55e29852e887d0f47e303d660fbbb5717cf23ea3c7282e751e281c2115a"
+    },
+    {
+      "chunk_id": "VC-0358",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It proved this door was worse.",
+      "text_sha256": "sha256:9b28b88bf157a826ccc16296380c6498554b84384079243c27828f38161c4bf0",
+      "idempotency_key": "sha256:88cb518ca35527670d8abb53a5a6e33719585375d1baf77fd16fb6ca20b47211"
+    },
+    {
+      "chunk_id": "VC-0359",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Its answer to the mailbox came in a footnote, in one line.",
+      "text_sha256": "sha256:bd4ff31b214ab3ff7f49861ce7e4ef85d517fea11565d7fa8cc4cc3bb554c14b",
+      "idempotency_key": "sha256:bfdb02a3d722daaa36d3b9f85202f8848e26a56dbfe8ba0608ea21d36bd9d040"
+    },
+    {
+      "chunk_id": "VC-0360",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The dissent misconstrues the constitutional standard.",
+      "text_sha256": "sha256:d357e0267cfba7cc332294a4f6db8be44d950b7eee6f464260b825b534db2c83",
+      "idempotency_key": "sha256:4d3cea95195c5358c0458c951fa312eaa5cb493ac9903ab982536aa5b0265dfe"
+    },
+    {
+      "chunk_id": "VC-0361",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The dissent had a second line of attack, and it went to the purpose of the procedure itself.",
+      "text_sha256": "sha256:0e3418c4d12e2050d5df91a327866ae9fbb0788753e527c181776ea7d1cab431",
+      "idempotency_key": "sha256:f05415ff2eea91682527f560d6d077066f5e9df2e7b951953c16946c69a56528"
+    },
+    {
+      "chunk_id": "VC-0362",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Kentucky's forcible entry and detainer action is a summary proceeding for quickly determining whether or not a landlord has the right to immediate possession of leased premises.",
+      "text_sha256": "sha256:cb9bf2fc618369b014c8654a8cb265bb429808251e599d0d619c995fe34b40ed",
+      "idempotency_key": "sha256:79d626ce9a95a2c00de58666d81a235e73d3d87e719b4e39bca17a2e337e3963"
+    },
+    {
+      "chunk_id": "VC-0363",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Speed is not a defect in it; speed is the design.",
+      "text_sha256": "sha256:5b345823efc1ae57dff4e0ecb1a5018c70fbd59986beb646bc58a83591728ed2",
+      "idempotency_key": "sha256:ddea0a891a27242151c11d71f40bb3a022153941921ce87926e1dd52ca30793c"
+    },
+    {
+      "chunk_id": "VC-0364",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And it quoted the Court's own earlier reasoning back at it.",
+      "text_sha256": "sha256:936538641d7803fb361e19d8e5259d69eca87034c391f37bc04cef2cfc9704bc",
+      "idempotency_key": "sha256:7200c02e2bf5a03b8af15f9ea28525fd777f27a11973ac6af0958f7e43102797"
+    },
+    {
+      "chunk_id": "VC-0365",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Many expenses of the landlord continue to accrue whether a tenant pays his rent or not.",
+      "text_sha256": "sha256:74a8a00c4fc6342dd398587bc191e87b6e1683a55bccac76962e1fd1940a1141",
+      "idempotency_key": "sha256:1e113591d59a804e249a8eb23a2427b39da43e1ed335ec6dc8afc469c048d4e4"
+    },
+    {
+      "chunk_id": "VC-0366",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Speedy adjudication is desirable to prevent subjecting the landlord to undeserved economic loss and the tenant to unmerited harassment and dispossession.",
+      "text_sha256": "sha256:9e350c3e6c6edd01052d1f350985d0a24fc5a942c691e5ee08ce1b58355fb9f9",
+      "idempotency_key": "sha256:313d554f59eb02c75a9f6e74e83bc5dbc0e1773b24ad8b8ba08bb124474340b1"
+    },
+    {
+      "chunk_id": "VC-0367",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The means chosen for making service of process, the dissent wrote, must be prompt and certain.",
+      "text_sha256": "sha256:efbfa2d9e85677cc9804f6832531de61704b182178dfb8e7044736d313319807",
+      "idempotency_key": "sha256:3b587dbb6bc43f5dd74ddac97b629137b83359dcbd1c430fc8ede296565c54e8"
+    },
+    {
+      "chunk_id": "VC-0368",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The majority answered that in a footnote, and the answer is the tightest sentence in the opinion.",
+      "text_sha256": "sha256:af4f6ba93692f2b148bab18ea21621d0a2f3feda62c388495922ec89d8b0e337",
+      "idempotency_key": "sha256:a35f4d6a979dffcb9d15d90fcfdf1594971a79e76f72253986d9d7c5fda7314a"
+    },
+    {
+      "chunk_id": "VC-0369",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "From the perspective of the tenant, it wrote, it is difficult to see how a means of serving process that fails to afford actual notice in a not insubstantial number of cases can be deemed either prompt or certain.",
+      "text_sha256": "sha256:1dec5adfe0a0a9d53b9bd8e7fd5a3acbd81926e21e842ff17fe60dc70b033a5e",
+      "idempotency_key": "sha256:d2626c1b9f4c5cc3eeee62b918daefae236c73ee4cab83e8393a7c5cbb9264fa"
+    },
+    {
+      "chunk_id": "VC-0370",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is where the two opinions stop talking to each other.",
+      "text_sha256": "sha256:c47978fc7b03df5b2c9ccf51c24de8e5cd24ea7649d04581a66596d6ff5de157",
+      "idempotency_key": "sha256:8fd455bdd0f86a5e19571f7615dd30a4d1286435b8d80e1b1d37535398cf31b8"
+    },
+    {
+      "chunk_id": "VC-0371",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "What the case leaves is smaller than a rule and more durable than a remedy.",
+      "text_sha256": "sha256:f9e0273e3f411ad095e5087bc50072ef7da53f7c940974a3efe4626565a8c629",
+      "idempotency_key": "sha256:f5c45f1f8f643e85be0987dba7da571aeea94cb727d0db08d09b8657a9f0c321"
+    },
+    {
+      "chunk_id": "VC-0372",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Not a rule about envelopes.",
+      "text_sha256": "sha256:b0552bf50f548ec02c737b6dd5aa8237db79a59647ba224d17c1f1e0400a7278",
+      "idempotency_key": "sha256:65ec27644a5af2fa70353f503b8ab2bb92a5e0f34289edc4ecf94e11439e04a4"
+    },
+    {
+      "chunk_id": "VC-0373",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A method.",
+      "text_sha256": "sha256:7fdb0c08776b64eba17f6f3a5b0043b573da6d0152f2ae6f198412b2967506f2",
+      "idempotency_key": "sha256:3ba9371e36a09965232d38b559cf6c6eca2d6ba4ddfc7900ab7079e0a1e85d8d"
+    },
+    {
+      "chunk_id": "VC-0374",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "In this case the evidence was a handful of men describing their own work, and one of them repeating what the Housing Authority had said.",
+      "text_sha256": "sha256:bdb60a6c710ad9a2f4842f259517d9cc7fc50bdb1d5995f52dcb3de4bb886e50",
+      "idempotency_key": "sha256:bffd30e56c9b4dcf58134cc1f8eda6c85d1855c51927e1bde276cda4638e3fcd"
+    },
+    {
+      "chunk_id": "VC-0375",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is a very small pile of paper to set against a statute, and the three dissenting Justices said so.",
+      "text_sha256": "sha256:1ad3787a4f204a6f5e40bb708776213dd6ec66b0a97bdabd922c024cbad1068f",
+      "idempotency_key": "sha256:704d767dbc44f5ccdc6c4e59e10f34ad946f595f9c86b8f7b2a1bc66d62ce4fc"
+    },
+    {
+      "chunk_id": "VC-0376",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It is also, on this record, the only evidence anybody brought.",
+      "text_sha256": "sha256:e06a7673545100d3d1a005fffad59995164d5221a1b6e1208670a6deba4cd28d",
+      "idempotency_key": "sha256:a02ebb9259b9d4b6035e8189f8832c52c7f297823d14d36af75f860511be9dc0"
+    },
+    {
+      "chunk_id": "VC-0377",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The statute described a ladder with three rungs.",
+      "text_sha256": "sha256:343d81675e27a667f2f3c3669c0dc42ef825d242ce164fc86f2ebdc8f3019697",
+      "idempotency_key": "sha256:83e74ea6e58adefc32ed2737577c698cbfeb4c7167fffe73593a87f9e5195cd0"
+    },
+    {
+      "chunk_id": "VC-0378",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The men who climbed it did not describe it the same way as each other.",
+      "text_sha256": "sha256:da452a0d9eafa69ec3f9a3cdca6266e6484a8c5ddd0699cb542693bc5771ad07",
+      "idempotency_key": "sha256:38dd61b59d1b2667842a0f23a5b30631f3a949f881d1da2db1c52e6147b91281"
+    },
+    {
+      "chunk_id": "VC-0379",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Both descriptions were in the record, and the Court chose the one made by the men who said the paper came off.",
+      "text_sha256": "sha256:3630129b52023212f160da131982ad23dd46c88b521a6bddb6fc96d4bc84f42c",
+      "idempotency_key": "sha256:1c9208d48975ca03e7814e3345c72ea2836163e7352718b9da9ae9a8bbfa4458"
+    },
+    {
+      "chunk_id": "VC-0380",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Somewhere in Louisville in 1975 an officer fixed a writ to a door — by thumbtack, or adhesive tape, or other means; the opinion does not say which.",
+      "text_sha256": "sha256:4a5e15478d3aa2fb5b93cae9a4008e093371b3db26e92f9cf6001b605c91d093",
+      "idempotency_key": "sha256:59234d932a4bfe9ae8166d38b60e253f495001d022d17e363ce8190d51dc1670"
+    },
+    {
+      "chunk_id": "VC-0381",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "He did what the statute told him to do.",
+      "text_sha256": "sha256:2fcbc8ed6f67e0e4f3addf029874ac1879e6abb12c04948bc0b5f2d75b3d788b",
+      "idempotency_key": "sha256:67081536ae589192968d249282449ad6648e164621e363bb7ae3d48e90d73cf0"
+    },
+    {
+      "chunk_id": "VC-0382",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The paper was on the premises.",
+      "text_sha256": "sha256:e82ef1b001d88d5d6028fd9422b0da93fdea266a3a6bda9ccabe304e9fe27672",
+      "idempotency_key": "sha256:024afeec5452b682327af4194dcf6cd2f93f9bc2f4099c17a64df65061d7c7d9"
+    },
+    {
+      "chunk_id": "VC-0383",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The service was complete.",
+      "text_sha256": "sha256:19330f4cf9bdccf5219b7d2f8e9b02a5b824929ffbb5fa9143c6575490ba3651",
+      "idempotency_key": "sha256:c26a8008c20ab262bd889fb106b75c2347321b513476b655b4eaeb810b7dc0ff"
+    },
+    {
+      "chunk_id": "VC-0384",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Everything after that — the date, the courtroom, the judgment, the order of possession — followed correctly from a single assumption.",
+      "text_sha256": "sha256:ab63a83afb687150ae789ef361da4a888ff27ba195e17e969de3983608885208",
+      "idempotency_key": "sha256:c1204a215504a2e858d0088f17b613c4a39b3a3bf997f073b478f8877a41968b"
+    },
+    {
+      "chunk_id": "VC-0385",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That the paper would still be there.",
+      "text_sha256": "sha256:3db5100594afa5c823f3511d4c2ce9472a2563d3c0cd176dc60b5868f16d3f9a",
+      "idempotency_key": "sha256:a91ee013b7f8572f63ce6f53441f4827b56a8d29d90117f1464ad67c5820bbeb"
+    }
+  ]
+}

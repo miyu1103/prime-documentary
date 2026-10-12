@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-009-timbs",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Timbs v. Indiana (2019) the Supreme Court held that the Eighth Amendment's Excessive Fines Clause is incorporated against the States through the Fourteenth Amendment's Due Process Clause, so it applies to state and local governments.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Ginsburg, J.), holding"
+      ],
+      "counterevidence": [],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled the ban on excessive fines applies to states and cities, not just the federal government."
+      ],
+      "prohibited_wording": [
+        "The Court abolished civil forfeiture.",
+        "The Court said the seizure was unconstitutional."
+      ],
+      "temporal_scope": "2019-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Timbs v. Indiana was decided on February 20, 2019 by a unanimous 9-0 vote, with the majority opinion by Justice Ruth Bader Ginsburg; Justices Gorsuch and Thomas concurred separately, arguing incorporation should run through the Privileges or Immunities Clause.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / vote / concurrences"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "A unanimous Court ruled in 2019; Justice Ginsburg wrote the opinion."
+      ],
+      "prohibited_wording": [
+        "The decision was 5-4."
+      ],
+      "temporal_scope": "2019",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/vote/author/concurrences."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The case arose from a civil (in rem) forfeiture: after Tyson Timbs's state drug conviction, Indiana sought to keep his Land Rover SUV, worth about $42,000.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, facts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "The state used civil forfeiture to try to keep his roughly $42,000 SUV."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2013-2019",
+      "geographic_scope": "Indiana, United States",
+      "units": "USD",
+      "status": "approved",
+      "notes": "Civil in rem forfeiture; vehicle ~$42,058."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The maximum statutory fine for Timbs's offense was $10,000 — roughly a quarter of the vehicle's value — and the trial court found the forfeiture grossly disproportionate to the offense.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, facts (max fine $10,000); trial court finding"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The most he could be fined was $10,000, but the car was worth about four times that."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2013-2019",
+      "geographic_scope": "Indiana, United States",
+      "units": "USD",
+      "status": "approved",
+      "notes": "Disproportion: $42k vehicle vs $10k max fine."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "Timbs bought the Land Rover for about $42,000 using part of roughly $73,000 in life-insurance proceeds he received after his father's death.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Opinion, facts (purchase price)",
+        "IJ case page (insurance proceeds)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "He bought the SUV with part of about $73,000 in life-insurance money."
+      ],
+      "prohibited_wording": [
+        "He received $42,000 in life insurance."
+      ],
+      "temporal_scope": "2013",
+      "geographic_scope": "Indiana, United States",
+      "units": "USD",
+      "status": "approved",
+      "notes": "Keep $73k insurance vs $42k car distinct (a common conflation)."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "Timbs became addicted to opioids and then heroin, sold a small quantity of heroin to undercover officers, pleaded guilty to state drug charges, and was sentenced to home detention and probation — no prison.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Opinion, facts",
+        "IJ case page"
+      ],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "He sold a small amount of heroin to undercover officers, pleaded guilty, and got home detention and probation, not prison."
+      ],
+      "prohibited_wording": [
+        "He was a major drug trafficker.",
+        "He went to prison."
+      ],
+      "temporal_scope": "2013-2015",
+      "geographic_scope": "Indiana, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real person; neutral, accurate, not sensationalized; no prison."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "The trial court and the Indiana Court of Appeals sided with Timbs; the Indiana Supreme Court reversed, holding the Excessive Fines Clause had not been incorporated against the States; the U.S. Supreme Court vacated and remanded.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Opinion, procedural history"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Indiana's top court said the clause didn't apply to states; the Supreme Court disagreed and sent the case back."
+      ],
+      "prohibited_wording": [
+        "The Supreme Court itself ruled the forfeiture excessive."
+      ],
+      "temporal_scope": "2015-2019",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Disposition = vacated and remanded; Court did not itself rule the seizure excessive."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "In civil (in rem) forfeiture the legal action is brought against the property itself, and in many jurisdictions an owner can lose property without being convicted — or even charged — with a crime.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "IJ explainer on how civil forfeiture works"
+      ],
+      "counterevidence": [
+        "Defenders argue forfeiture disrupts criminal enterprises and that property owners have procedures to contest seizures."
+      ],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "The case is filed against the property itself, so an owner can lose it without a conviction in many places."
+      ],
+      "prohibited_wording": [
+        "Police can take anything they want for any reason."
+      ],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "System claim; attribute; present defenders' view too."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "Critics — including the Institute for Justice — argue that because forfeiture proceeds often flow back to the seizing law-enforcement agencies, the system creates a 'policing for profit' incentive; criticism of civil forfeiture spans the political spectrum.",
+      "importance": "context",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0003",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "IJ 'policing for profit' framing",
+        "ACLU on bipartisan agreement"
+      ],
+      "counterevidence": [
+        "Defenders argue the proceeds fund legitimate law enforcement and that abuse is the exception, not the rule."
+      ],
+      "confidence": 0.82,
+      "allowed_wording": [
+        "Critics, including the Institute for Justice, call it 'policing for profit'; the criticism is bipartisan."
+      ],
+      "prohibited_wording": [
+        "Police seize property to enrich themselves personally.",
+        "Forfeiture is universally condemned."
+      ],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "ATTRIBUTE as critique; advocacy sources; keep neutral, non-partisan; note defenders."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "On remand after the Supreme Court's decision, the Indiana courts ultimately allowed Timbs to keep his vehicle.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0002",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Oyez / IJ: on-remand outcome"
+      ],
+      "counterevidence": [],
+      "confidence": 0.88,
+      "allowed_wording": [
+        "Back in Indiana, the courts eventually let Timbs keep the car."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2019-2020",
+      "geographic_scope": "Indiana, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Payoff: he kept the car."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable content hashes captured for 3/4 sources (SRC-0003 fetch-blocked). CLM-0008/0009 rest on attributed advocacy sources (IJ/ACLU) with defenders' view; consider R3 expert pass before publish."
+    ]
+  }
+}

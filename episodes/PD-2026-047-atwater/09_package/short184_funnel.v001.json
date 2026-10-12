@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 184,
+  "episode_id": "PD-2026-047-atwater",
+  "slug": "atwater",
+  "loop": true,
+  "loop_join": "the last beat returns to the opening plate -- the cuffed wrists with the palms open -- held under the FULL CASE card and played in rewind, so the parallax comes back to rest on the exact frame-0 framing",
+  "second_watch_detail": "the cuffs in the first shot read as the punishment on pass 1 and, on pass 2, as something that happened before anyone had decided she was guilty of anything",
+  "funnel_question_left_for_longform": "If a cell was never available as her punishment, what did the Supreme Court say the police were still permitted to do to her?",
+  "funnel_long_title": "She Was Handcuffed in Front of Her Children",
+  "funnel_long_video_id": "i95peRcdtz4",
+  "description_line_1": "▶ FULL CASE: She Was Handcuffed in Front of Her Children",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "She Was Handcuffed and Jailed Over a",
+    "ctaLongThumbSrc": "shorts/short184/short184_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If a cell was never available as her punishment, what did the Supreme Court say the police were still permitted to do to her?\n\nFull case here → https://www.youtube.com/watch?v=i95peRcdtz4",
+  "note": "Authored 2026-09-01 to unblock scheduling. short182-189 were finished and rendered but carried no funnel record, so check_short_funnel.py refused them and they could not be scheduled. Every field here was read off the built short: the spoken lines json, remotion/src/data/short<NNN>.ts and the contact sheet. Layer 4 -- the Studio related-video setting, which the YouTube API cannot set -- is recorded as a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

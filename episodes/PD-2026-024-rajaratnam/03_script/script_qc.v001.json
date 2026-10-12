@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-024-rajaratnam",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 4835,
+    "est_duration_minutes_at_150wpm": 32.2,
+    "est_duration_minutes_at_measured_173wpm": 28.0,
+    "planned_runtime_minutes_with_silence": 30,
+    "flesch_kincaid": 6.19,
+    "ai_filler_hits": 0,
+    "em_dashes_per_1000w": 3.31,
+    "conjunction_start_pct": 8.8,
+    "rhetorical_commands": 2,
+    "spans": 64,
+    "scenes": 42,
+    "claims_used_of_total": "20/20"
+  },
+  "status": "pass",
+  "findings": [
+    "v001 EXPANDED (owner request: increase spoken time + level up content). Narration now 4,835 words = ~28.0 min at the measured ElevenLabs pace (~173 wpm), and 32.2 min on the validator's conservative 150wpm yardstick — inside the mid narration band 24.0-32.4 min (ADR-0008). This is a near-full talking documentary; remaining runtime to ~30 min is continuous music + designed pauses (surveillance-room silences, verdict beat).",
+    "11 new scenes deepen the film: the ordinary investor on the other side of the trade (cold open stakes); how Rajaratnam operated the fund; why this matters to anyone with a pension; the institutions betrayed from within; the psychology of a network where no one feels like a criminal; the human texture of the listening room; the civil-liberties unease of the wiretap power; the named 'mosaic theory' defense and its collapse against tape; what the verdict broke; and the 'most Wall Street stories end with a shrug — this one didn't' payoff.",
+    "Voice gate (house standard): FK 6.19 (<=9.5); em-dashes 3.31/1000w (<=6); And/But/Because/So sentence-starts 8.8% (<=12%); rhetorical commands 2 ('Imagine','Sit') (<=3); banned-filler hits 0. 64 spans; 64/64 chapter span_ids match; 20/20 claims used; no dangling refs.",
+    "R2 discipline preserved: conviction at jury trial stated as fact (verdict May 11, 2011, all 14 counts; sentence Oct 13, 2011, 11 years); conduct framed as 'the jury found / prosecutors proved / the government said'; the 'longest sentence' superlative attributed to prosecutors and time-bound to 2011; profit hedged and anchored to the ~$53.8M forfeiture; the new 'mosaic theory' beat is the DEFENSE's argument, attributed.",
+    "Co-defendant separation intact: Rajat Gupta = SEPARATE trial/verdict/punishment (2 years), never merged; tippers (Goel/Intel, Kumar/McKinsey, Moffat/IBM, Chiesi/New Castle) charged separately; SEC $92.8M civil penalty distinct from the criminal forfeiture+fine.",
+    "Pre-publish (R2 legal review): re-verify verdict date/counts, 11-year sentence, $53,816,434 forfeiture + $10M fine, $92,805,705 SEC penalty, 2013 Second Circuit wiretap affirmance, and Gupta's separate disposition against primary DOJ/SEC/court records. Any verbatim wiretap dialogue must be confirmed against the public trial record before voicing (CLM-0018); verify memoir title/date before citing (CLM-0016). No real-person likeness (invariant 11). NOTE: scene count rose 31 -> 42; 04_scenes/codex_image_prompts.v001.md regenerated to cover all 42 scenes."
+  ]
+}

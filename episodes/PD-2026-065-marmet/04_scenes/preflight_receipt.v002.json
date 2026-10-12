@@ -1,0 +1,155 @@
+{
+  "artifact_type": "preflight_render_receipt",
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-065-marmet",
+  "generated_at": "2026-08-09T18:25:30.203829+00:00",
+  "gate": "preflight_render_gate.py",
+  "thresholds": {
+    "depth_floor_pct": 40.0,
+    "figure_beat_floor": 6,
+    "hero_surface_floor": 2,
+    "min_long_edge_px": 3840,
+    "cuts_per_graphic_max": 4
+  },
+  "inputs": {
+    "remotion_plan": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-065-marmet\\04_scenes\\remotion_plan.v001.json",
+    "scene_plan": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-065-marmet\\04_scenes\\scene_plan.v001.json",
+    "script_annotated": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-065-marmet\\03_script\\script.annotated.v001.json",
+    "asset_selection": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-065-marmet\\05_visuals\\asset_selection.v001.json",
+    "image_dir_exists": true
+  },
+  "verdict": "BLOCK",
+  "render_allowed": false,
+  "checks": [
+    {
+      "check": "script_length",
+      "status": "PASS",
+      "detail": "5,002 words -> ~28.1 min (band 27.0-32.0) [EP65_marmet_script.en.v002.md]"
+    },
+    {
+      "check": "motion_budget",
+      "status": "FAIL",
+      "detail": "cannot recompute motion budget -- required plan file(s) missing",
+      "subchecks": [
+        {
+          "check": "motion.inputs",
+          "status": "FAIL",
+          "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-065-marmet\\04_scenes\\remotion_plan.v001.json"
+        },
+        {
+          "check": "motion.inputs",
+          "status": "FAIL",
+          "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-065-marmet\\04_scenes\\scene_plan.v001.json"
+        }
+      ],
+      "recomputed": {}
+    },
+    {
+      "check": "assets_exist",
+      "status": "FAIL",
+      "detail": "referenced stills exist at 4K with depth maps for depth-treated scenes",
+      "subchecks": [
+        {
+          "check": "assets.references",
+          "status": "FAIL",
+          "detail": "no S0NN still references found in annotated/scene_plan (cannot verify prerequisites)"
+        },
+        {
+          "check": "assets.stills",
+          "status": "FAIL",
+          "detail": "0/0 referenced stills present & >= 3840px long edge; missing=none; under_res=none; unreadable=none"
+        },
+        {
+          "check": "assets.depth_maps",
+          "status": "PASS",
+          "detail": "0/0 depth maps present for depth-eligible stills; missing=0"
+        }
+      ],
+      "recomputed": {
+        "referenced_still_ids": [],
+        "referenced_still_count": 0,
+        "staged_still_files": 84,
+        "stills_present_ok": 0,
+        "stills_missing": [],
+        "stills_under_resolution": [],
+        "stills_unreadable": [],
+        "depth_eligible_still_count": 0,
+        "depth_maps_present": 0,
+        "depth_maps_missing": []
+      }
+    },
+    {
+      "check": "coverage",
+      "status": "FAIL",
+      "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-065-marmet\\05_visuals\\asset_selection.v001.json",
+      "recomputed": {
+        "expected_span_count": 0
+      }
+    },
+    {
+      "check": "film_crosscheck",
+      "status": "FAIL",
+      "detail": "film deviates from plan: film depth share 0.0% < 40%",
+      "recomputed": {
+        "film_path": "C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\src\\data\\marmet_film.json",
+        "film_cut_count": 363,
+        "film_kinds": {
+          "footage": 279,
+          "img": 84
+        },
+        "film_still_like_cuts": 84,
+        "film_depth_treated_cuts": 0,
+        "plan_total_cuts": 0,
+        "film_depth_pct_of_stills": 0.0
+      }
+    },
+    {
+      "check": "motion_density",
+      "status": "PASS",
+      "detail": "premium animation OK: 3.25 beats/min (>= 2.5), coverage 31.4% (>= 25%), variety 10 forms (>= 3); 102 kinetic beats [0 typo / 102 figures / 0 hero3d] vs 363 Ken-Burns cuts",
+      "density_per_min": 3.25,
+      "coverage": 0.314,
+      "variety": 10
+    },
+    {
+      "check": "animation_mix",
+      "status": "PASS",
+      "detail": "animation mix OK: stills 21.3% (<= 45%), motion 84.5% (>= 45%; mg 31% / footage 79%), 1 lingering stills (<= 8), opening 0s (<= 12s)"
+    },
+    {
+      "check": "asset_reuse",
+      "status": "FAIL",
+      "detail": "7 asset(s) over cap [AR-10159563__woman_sitting_on_a_chair_while_reading_a_magazin.mp4 2x>1; AR-4747__scientist_walking_down_a_corridor.mp4 2x>1; AR-5712753__chairs_arranged_in_a_circle.mp4 2x>1; AR-5971048__person_walking_on_a_white_corridor.mp4 2x>1] | first-use share 67% < 70% (mean 1.5x per asset)"
+    },
+    {
+      "check": "caption_integrity",
+      "status": "PASS",
+      "detail": "caption integrity OK: burned narration captions present (casefilm_data_captions); kinetic echo 0/0 (0%) <= 40%; no bottom collision"
+    },
+    {
+      "check": "caption_breaks",
+      "status": "PASS",
+      "detail": "515 cues, no mid-phrase breaks [captions.final.v001.srt]"
+    },
+    {
+      "check": "visual_asset_qc",
+      "status": "PASS",
+      "detail": "visual-asset QC OK — factory: all 9 staged factory clips reviewed + on_theme in factory_clip_qc.v001.json | stills: stills OK: 38.1% dark (<= 40%), variety 1.00 (>= 0.60)"
+    },
+    {
+      "check": "retention_cadence",
+      "status": "PASS",
+      "detail": "re-hook gap 158.4s <= 180s (41 marks); question gap 384.1s <= 420s (7 questions)"
+    },
+    {
+      "check": "packaging_qc",
+      "status": "PASS",
+      "detail": "title 51ch <= 60, 4 A/B candidates, AI disclosure present | title contains no number (soft: CTR hint only, not enforced)"
+    },
+    {
+      "check": "encoder_settings",
+      "status": "WARN",
+      "detail": "no long-form final render resolved yet"
+    }
+  ]
+}

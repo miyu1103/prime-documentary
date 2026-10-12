@@ -1,0 +1,630 @@
+{
+ "schema_version": "pd_filmconfig.v001",
+ "slug": "fieldtest",
+ "episode_id": "PD-2026-057-fieldtest",
+ "assets": "episodes/PD-2026-057-fieldtest/05_visuals/asset_manifest.v003.json",
+ "narration_index": "episodes/PD-2026-057-fieldtest/06_audio/narration_index.v001.json",
+ "narration": "fieldtest/narration.mp3",
+ "hookSeconds": 8.0,
+ "hookLine": "A twenty-one dollar bag, a two dollar test, and a pink liquid that turned blue in a Houston parking lot: Amy Albritton pleaded guilty to a crime the laboratory would later prove had never happened.",
+ "figures_by_section": {
+  "HOOK": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "A $2 TEST.",
+     "A FELONY RECORD."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "$2"
+    ]
+   },
+   {
+    "kind": "numberticker",
+    "value": 2,
+    "label": "Cost of the roadside test, essentially unchanged since 1973",
+    "prefix": "$"
+   }
+  ],
+  "OP": [
+   {
+    "kind": "lowerthird",
+    "primary": "HOUSTON, TEXAS",
+    "secondary": "August 2010 — a lane change on a late afternoon"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "IT WASN'T",
+     "A DRUG."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "WASN'T"
+    ]
+   }
+  ],
+  "ACT_1": [
+   {
+    "kind": "acttitle",
+    "title": "THE CRUMB",
+    "kicker": "ACT ONE",
+    "index": 1
+   },
+   {
+    "kind": "pindropmap",
+    "pins": [
+     {
+      "x": 0.42,
+      "y": 0.6,
+      "label": "MONROE, LOUISIANA"
+     },
+     {
+      "x": 0.46,
+      "y": 0.74,
+      "label": "HOUSTON, TEXAS"
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE APARTMENT CAME WITH THE JOB",
+    "secondary": "A free apartment was part of her compensation"
+   },
+   {
+    "kind": "numberticker",
+    "value": 2,
+    "label": "Years managing the complex"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "SHE WAS NOT",
+     "DRIVING."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOT"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE STOP",
+    "secondary": "A patrol car's lights; a strip-mall parking lot"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "WHAT THE SEARCH PRODUCED",
+    "secondary": "A white crumb on the floor, a needle, and BC Powder"
+   },
+   {
+    "kind": "highlightring",
+    "label": "THE CRUMB"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "COBALT THIOCYANATE",
+    "secondary": "A pink liquid. If cocaine meets it, a blue colour forms"
+   },
+   {
+    "kind": "mechanism",
+    "mechanism": "gears"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "PINK MEANS NO.",
+     "BLUE MEANS FELONY."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "FELONY"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "You're busted.",
+    "attribution": "the officer, of record"
+   },
+   {
+    "kind": "numberticker",
+    "value": 0.02,
+    "decimals": 2,
+    "suffix": " g",
+    "label": "Weight recorded on the evidence submission form"
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "3 AUG 2010",
+      "text": "Arrested as a passenger in her own car"
+     },
+     {
+      "year": "3:37 A.M.",
+      "text": "Booked into the Harris County jail, nine hours later"
+     },
+     {
+      "year": "5 AUG 2010",
+      "text": "She pleads guilty"
+     }
+    ]
+   }
+  ],
+  "ACT_2": [
+   {
+    "kind": "acttitle",
+    "title": "THE FASTEST WAY OUT",
+    "kicker": "ACT TWO",
+    "index": 2
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE OFFER",
+    "secondary": "Two years at most if convicted — or 45 days if she said yes"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "MAXIMUM IF CONVICTED (DAYS)",
+      "value": 730
+     },
+     {
+      "label": "THE PLEA (DAYS)",
+      "value": 45
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "The entire country works on these field-test kits, right?",
+    "attribution": "the lawyer appointed to defend her"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE RECITATION",
+    "secondary": "A guilty plea is a confession and a waiver of rights"
+   },
+   {
+    "kind": "numberticker",
+    "value": 21,
+    "label": "Days served of a 45-day sentence"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE INNOCENT",
+     "PLEAD FASTER."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "FASTER"
+    ]
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "INNOCENT: DAYS TO PLEA",
+      "value": 4
+     },
+     {
+      "label": "HAD DRUGS: DAYS TO PLEA",
+      "value": 22
+     }
+    ]
+   },
+   {
+    "kind": "stat",
+    "value": 58,
+    "suffix": "%",
+    "label": "Pleaded guilty at their first opportunity — at arraignment"
+   },
+   {
+    "kind": "quote",
+    "quote": "If the law said you had crack, you had crack.",
+    "attribution": "what her father had told her"
+   },
+   {
+    "kind": "numberticker",
+    "value": 1200000,
+    "group": true,
+    "label": "US drug-possession arrests a year"
+   },
+   {
+    "kind": "stat",
+    "value": 99.5,
+    "decimals": 1,
+    "suffix": "%",
+    "label": "Harris County felony drug convictions that come by plea"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "INADMISSIBLE AT TRIAL",
+    "secondary": "Field-test results, in nearly every jurisdiction"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "INADMISSIBLE AT A TRIAL",
+     "THAT NEVER HAPPENS."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NEVER"
+    ]
+   },
+   {
+    "kind": "stat",
+    "value": 9,
+    "label": "Of the 10 jurisdictions surveyed, this many took pleas on unconfirmed field tests — 2011 study for the Justice Department"
+   },
+   {
+    "kind": "numberticker",
+    "value": 100000,
+    "group": true,
+    "label": "People a year pleading guilty on field-test evidence, by the investigation's estimate"
+   }
+  ],
+  "ACT_3": [
+   {
+    "kind": "acttitle",
+    "title": "WHAT IS ACTUALLY IN THE VIAL",
+    "kicker": "ACT THREE",
+    "index": 3
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "1973",
+      "text": "Two California inventors patent a disposable comparison detector kit"
+     },
+     {
+      "year": "1974",
+      "text": "The National Bureau of Standards warns against using it as sole evidence"
+     },
+     {
+      "year": "1978",
+      "text": "The Justice Department determines the tests should not be used for evidential purposes"
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "should not be used as sole evidence for the identification of a narcotic or drug of abuse",
+    "attribution": "the National Bureau of Standards, 1974"
+   },
+   {
+    "kind": "quote",
+    "quote": "should not be used for evidential purposes",
+    "attribution": "the Department of Justice, 1978"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE OBJECT",
+    "secondary": "A glass vial in a plastic pouch. Break it, watch the colour"
+   },
+   {
+    "kind": "mechanism",
+    "mechanism": "gears"
+   },
+   {
+    "kind": "numberticker",
+    "value": 80,
+    "prefix": "+",
+    "label": "Other compounds that also turn cobalt thiocyanate blue"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AMONG THEM",
+    "secondary": "Methadone, certain acne medications, several common household cleaners"
+   },
+   {
+    "kind": "numberticker",
+    "value": 50,
+    "prefix": "+",
+    "label": "Legal substances on one manufacturer's own false-positive list"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "IN THAT MANUFACTURER'S KITS",
+    "secondary": "Chocolate produces a colour similar to the one heroin produces"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THREE STEPS.",
+     "THEN ONE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "ONE"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "No field test is fail safe. Any field test can give you an erroneous result.",
+    "attribution": "the chemist who invented the test Houston used"
+   },
+   {
+    "kind": "quote",
+    "quote": "I would. But that's just me.",
+    "attribution": "the same chemist, asked whether every field test should be confirmed"
+   },
+   {
+    "kind": "quote",
+    "quote": "it is possible (though unlikely) to receive a false positive result under certain conditions",
+    "attribution": "the manufacturer's own website"
+   },
+   {
+    "kind": "numberticker",
+    "value": 9000,
+    "group": true,
+    "label": "Kits the Houston Police Department bought in 2014"
+   },
+   {
+    "kind": "quote",
+    "quote": "ALL TEST RESULTS MUST BE CONFIRMED BY AN APPROVED ANALYTICAL LABORATORY.",
+    "attribution": "a manufacturer's warning label, added after the questions were asked"
+   }
+  ],
+  "ACT_4": [
+   {
+    "kind": "acttitle",
+    "title": "SIX MONTHS LATE",
+    "kicker": "ACT FOUR",
+    "index": 4
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "23 FEBRUARY 2011",
+    "secondary": "Houston Police Department crime laboratory"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "GAS CHROMATOGRAPHY–MASS SPECTROMETRY",
+    "secondary": "The examination a roadside vial cannot perform"
+   },
+   {
+    "kind": "numberticker",
+    "value": 0.0134,
+    "decimals": 4,
+    "suffix": " g",
+    "label": "What remained of the white chunk — about a tiny pinch of salt"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NO CONTROLLED",
+     "SUBSTANCE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NO"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE EXAMINATION SHEET",
+    "secondary": "N.A.M. — no acceptable match. N.C.S. — no controlled substance identified"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE WHITE POWDER",
+    "secondary": "Aspirin and caffeine — the ingredients in BC Powder"
+   },
+   {
+    "kind": "quote",
+    "quote": "It was just a syringe.",
+    "attribution": "too little residue on it even to test"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "WHY NOTHING HAPPENED NEXT",
+    "secondary": "Labs rarely notify officers when a false positive is found"
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "AUG 2010",
+      "text": "She pleads guilty"
+     },
+     {
+      "year": "SEP 2010",
+      "text": "She finishes 21 days in the county jail"
+     },
+     {
+      "year": "FEB 2011",
+      "text": "The laboratory reports no controlled substance"
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE CONVICTION INTEGRITY UNIT",
+    "secondary": "Harris County District Attorney's office — the office that convicted them"
+   },
+   {
+    "kind": "numberticker",
+    "value": 416,
+    "group": true,
+    "label": "Uncorrected variants, January 2004 to June 2015 — every one a guilty plea"
+   },
+   {
+    "kind": "numberticker",
+    "value": 251,
+    "group": true,
+    "label": "Of those, the result read simply: No Controlled Substance"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "VARIANTS FROM HPD ARRESTS",
+      "value": 301
+     },
+     {
+      "label": "NOT A CONTROLLED SUBSTANCE",
+      "value": 212
+     }
+    ]
+   },
+   {
+    "kind": "stat",
+    "value": 93,
+    "suffix": "%",
+    "label": "Of those 212 — all of whom pleaded guilty — the share given a jail or prison sentence"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "BLACK SHARE OF THOSE CONVICTED (%)",
+      "value": 59
+     },
+     {
+      "label": "BLACK SHARE OF THE CITY (%)",
+      "value": 24
+     }
+    ]
+   }
+  ],
+  "ACT_5": [
+   {
+    "kind": "acttitle",
+    "title": "THE HOOD OF A PATROL CAR",
+    "kicker": "ACT FIVE",
+    "index": 5
+   },
+   {
+    "kind": "quote",
+    "quote": "Police officers aren't chemists. We shouldn't be doing field tests on the hood of patrol cars.",
+    "attribution": "Charles McClelland, who commanded the Houston Police Department"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "29 JULY 2014",
+    "secondary": "A form letter reaches an address she had long since left"
+   },
+   {
+    "kind": "quote",
+    "quote": "Dear Sir or Madam",
+    "attribution": "the salutation on the letter"
+   },
+   {
+    "kind": "quote",
+    "quote": "Accordingly, you were prosecuted for a criminal drug offense and convicted in error.",
+    "attribution": "the Harris County District Attorney's office"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "2015",
+    "secondary": "The District Attorney bars drug-possession plea deals before the lab reports"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "LAB REPORT TAKES (DAYS)",
+      "value": 14
+     },
+     {
+      "label": "DEFENDANT SEES A JUDGE IN (DAYS)",
+      "value": 3
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "a breakdown at every point in the system",
+    "attribution": "the District Attorney"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "DECEMBER 2016",
+    "secondary": "A Texas commission recommends ending convictions on unverified field tests"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THEY RECOMMENDED A BAN.",
+     "THEY GOT A STUDY."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "STUDY"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TEXAS HB 34, EFFECTIVE 1 SEPTEMBER 2017",
+    "secondary": "Ordered a study of the kits. It did not require laboratory confirmation"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "JULY 2017",
+    "secondary": "Houston ends the $2 kits — the stated reason is officer safety from fentanyl"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE KITS WERE",
+     "NEVER WITHDRAWN."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NEVER"
+    ]
+   }
+  ],
+  "ENDING": [
+   {
+    "kind": "numberticker",
+    "value": 773000,
+    "group": true,
+    "label": "US drug arrests a year involving a colour-based field test"
+   },
+   {
+    "kind": "numberticker",
+    "value": 30000,
+    "group": true,
+    "label": "People a year falsely implicated by them"
+   },
+   {
+    "kind": "quote",
+    "quote": "arbitrary and unlawful guesswork",
+    "attribution": "a Massachusetts judge, 2021, on one brand of kit"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "26 MARCH 2026",
+    "secondary": "Colorado HB 26-1020 is signed — 65 to 0, and 33 to 0"
+   },
+   {
+    "kind": "numberticker",
+    "value": 1,
+    "label": "States barring an arrest on a field test alone"
+   },
+   {
+    "kind": "quote",
+    "quote": "No. You're not ever free and clear of it. It follows you everywhere you go.",
+    "attribution": "Amy Albritton"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE VIAL IS",
+     "STILL IN THE TRUNK."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "STILL"
+    ]
+   }
+  ]
+ }
+}

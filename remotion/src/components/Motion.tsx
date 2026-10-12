@@ -119,8 +119,8 @@ export const Vignette: React.FC<{strength?: number}> = ({strength = 1}) => (
   <AbsoluteFill
     style={{
       pointerEvents: 'none',
-      background: `radial-gradient(120% 100% at 50% 44%, transparent 52%, ${BRAND.color.ink}${
-        strength >= 1 ? 'cc' : 'aa'
+      background: `radial-gradient(120% 100% at 50% 44%, transparent 64%, ${BRAND.color.ink}${
+        strength >= 1 ? '80' : '5c'
       } 100%)`,
     }}
   />

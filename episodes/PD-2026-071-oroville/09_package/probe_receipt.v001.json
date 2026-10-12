@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-071-oroville",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "out\\oroville_preprobe.mp4",
+  "slice_seconds": 60.05,
+  "slice_sha256": "sha256:52f08f874020b7a5d7679143255f91c219ec8a9017b558e30709028fe0e2630a",
+  "film_sha256": "sha256:f8aab11b75223a750381f9a4c5fc63b1d5c426778711e3a4cdf58ec249ad276b",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 46.2 / p10 45.2 / p50 45.5 (1293 frames, 301 cuts masked +/-8f; 5 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-08-22T20:19:43.275251+00:00"
+}

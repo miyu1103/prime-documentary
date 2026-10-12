@@ -1,0 +1,48 @@
+EP66 openfields — 画像発注 バッチ 30/32（6枚）
+区分: PEOPLE（20枚）
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, muted natural colour, flat overcast daylight of a late Appalachian autumn, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, restrained documentary framing, rural Pennsylvania and Middle Tennessee between 2019 and 2026, ordinary working farmland and unmanaged second-growth woodland, worn unglamorous surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名を一切描かない（看板の面は必ず「褪せて読めない」状態）
+・警察・制服・記章・銃器・血液・ドローンを描かない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ L244.png
+An invented young man in his twenties in a canvas coat looking up at a tree trunk above head height, chin lifted and his face fully lit by flat overcast, bare second-growth woodland standing around him [STYLE] Avoid: [NEG]
+
+■ L245.png
+An invented man and woman in their sixties standing together on the bank of a farm pond, both facing the flat grey water and seen from the side so both faces are visible, two rods propped unused against a post beside them [STYLE] Avoid: [NEG]
+
+■ L246.png
+An invented person in a hooded coat standing at the edge of a wood with the hood pushed back and their face clearly visible, looking in among the trunks, hands at their sides and nothing in them [STYLE] Avoid: [NEG]
+
+■ L247.png
+An invented older man's hands and forearms resting on the top rail of a wooden fence with his face visible above them looking out across the field, deep lines and grey stubble, flat daylight and no jewellery [STYLE] Avoid: [NEG]
+
+■ L248.png
+An invented man in his fifties driving a pickup truck at walking pace down a farm lane, seen from in front and slightly to one side through the open driver's window, his face visible and one forearm resting on the sill [STYLE] Avoid: [NEG]
+
+■ L249.png
+An invented farmer standing alone in the middle of a wide stubble field, seen from about thirty yards at eye height so that he is small in the frame but his face and the set of his shoulders still read, hands at his sides [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: L070.png）で保存してください。
+長辺 3840px 以上・16:9・PNG。

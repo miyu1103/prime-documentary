@@ -1,0 +1,3433 @@
+{
+  "episode_id": "PD-2026-044-tekoh",
+  "fps": 30,
+  "narration": "tekoh/audio/narration_master.v001.mp3",
+  "narrationSeconds": 698.743,
+  "hookSeconds": 8.0,
+  "hookLine": "If they never read you your rights, can you make them answer?",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tekoh/img/S01.png",
+      "seed": "tekoh-hook-00"
+    },
+    {
+      "start": 1.333,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tekoh/img/S02.png",
+      "seed": "tekoh-hook-01"
+    },
+    {
+      "start": 2.666,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tekoh/img/S03.png",
+      "seed": "tekoh-hook-02"
+    },
+    {
+      "start": 3.999,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tekoh/img/S04.png",
+      "seed": "tekoh-hook-03"
+    },
+    {
+      "start": 5.332,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "tekoh/img/S05.png",
+      "seed": "tekoh-hook-04"
+    },
+    {
+      "start": 6.665,
+      "dur": 1.335,
+      "kind": "img",
+      "src": "tekoh/img/S06.png",
+      "seed": "tekoh-hook-05"
+    }
+  ],
+  "cuts": [
+    {
+      "id": "cut-000",
+      "start": 0.0,
+      "dur": 2.775,
+      "kind": "footage",
+      "src": "tekoh/factory/F001.mp4",
+      "seed": "tekoh-000",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-001",
+      "start": 2.775,
+      "dur": 2.49,
+      "kind": "img",
+      "src": "tekoh/img/S01.png",
+      "seed": "tekoh-001",
+      "act": "HOOK",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-002",
+      "start": 5.265,
+      "dur": 2.775,
+      "kind": "footage",
+      "src": "tekoh/motion/M01.mp4",
+      "seed": "tekoh-002",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-003",
+      "start": 8.04,
+      "dur": 2.775,
+      "kind": "footage",
+      "src": "tekoh/factory/F002.mp4",
+      "seed": "tekoh-003",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-004",
+      "start": 10.815,
+      "dur": 2.49,
+      "kind": "img",
+      "src": "tekoh/img/S02.png",
+      "seed": "tekoh-004",
+      "act": "HOOK",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-005",
+      "start": 13.305,
+      "dur": 2.775,
+      "kind": "footage",
+      "src": "tekoh/factory/F003.mp4",
+      "seed": "tekoh-005",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-006",
+      "start": 16.08,
+      "dur": 2.775,
+      "kind": "footage",
+      "src": "tekoh/factory/F004.mp4",
+      "seed": "tekoh-006",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-007",
+      "start": 18.855,
+      "dur": 2.49,
+      "kind": "img",
+      "src": "tekoh/img/S03.png",
+      "seed": "tekoh-007",
+      "act": "HOOK",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-008",
+      "start": 21.345,
+      "dur": 2.775,
+      "kind": "footage",
+      "src": "tekoh/motion/M02.mp4",
+      "seed": "tekoh-008",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-009",
+      "start": 24.12,
+      "dur": 2.775,
+      "kind": "footage",
+      "src": "tekoh/factory/F005.mp4",
+      "seed": "tekoh-009",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-010",
+      "start": 26.895,
+      "dur": 2.49,
+      "kind": "img",
+      "src": "tekoh/img/S04.png",
+      "seed": "tekoh-010",
+      "act": "HOOK",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-011",
+      "start": 29.385,
+      "dur": 2.772,
+      "kind": "footage",
+      "src": "tekoh/factory/F006.mp4",
+      "seed": "tekoh-011",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-012",
+      "start": 32.157,
+      "dur": 4.855,
+      "kind": "footage",
+      "src": "tekoh/factory/F007.mp4",
+      "seed": "tekoh-012",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-013",
+      "start": 37.012,
+      "dur": 4.357,
+      "kind": "img",
+      "src": "tekoh/img/S05.png",
+      "seed": "tekoh-013",
+      "act": "OP",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-014",
+      "start": 41.369,
+      "dur": 4.855,
+      "kind": "footage",
+      "src": "tekoh/factory/F008.mp4",
+      "seed": "tekoh-014",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-015",
+      "start": 46.224,
+      "dur": 4.855,
+      "kind": "footage",
+      "src": "tekoh/factory/F009.mp4",
+      "seed": "tekoh-015",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-016",
+      "start": 51.079,
+      "dur": 4.357,
+      "kind": "img",
+      "src": "tekoh/img/S06.png",
+      "seed": "tekoh-016",
+      "act": "OP",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-017",
+      "start": 55.436,
+      "dur": 4.357,
+      "kind": "img",
+      "src": "tekoh/img/S07.png",
+      "seed": "tekoh-017",
+      "act": "OP",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-018",
+      "start": 59.793,
+      "dur": 4.357,
+      "kind": "img",
+      "src": "tekoh/img/S08.png",
+      "seed": "tekoh-018",
+      "act": "OP",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-019",
+      "start": 64.15,
+      "dur": 4.357,
+      "kind": "img",
+      "src": "tekoh/img/S09.png",
+      "seed": "tekoh-019",
+      "act": "OP",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-020",
+      "start": 68.507,
+      "dur": 4.357,
+      "kind": "img",
+      "src": "tekoh/img/S10.png",
+      "seed": "tekoh-020",
+      "act": "OP",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-021",
+      "start": 72.864,
+      "dur": 4.357,
+      "kind": "img",
+      "src": "tekoh/img/S11.png",
+      "seed": "tekoh-021",
+      "act": "OP",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-022",
+      "start": 77.221,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F010.mp4",
+      "seed": "tekoh-022",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-023",
+      "start": 80.093,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S12.png",
+      "seed": "tekoh-023",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-024",
+      "start": 82.67,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/motion/M03.mp4",
+      "seed": "tekoh-024",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-025",
+      "start": 85.542,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F011.mp4",
+      "seed": "tekoh-025",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-026",
+      "start": 88.414,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S13.png",
+      "seed": "tekoh-026",
+      "act": "ACT_1",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-027",
+      "start": 90.991,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F012.mp4",
+      "seed": "tekoh-027",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-028",
+      "start": 93.863,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F013.mp4",
+      "seed": "tekoh-028",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-029",
+      "start": 96.735,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S14.png",
+      "seed": "tekoh-029",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-030",
+      "start": 99.312,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/motion/M04.mp4",
+      "seed": "tekoh-030",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-031",
+      "start": 102.184,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F014.mp4",
+      "seed": "tekoh-031",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-032",
+      "start": 105.056,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S15.png",
+      "seed": "tekoh-032",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-033",
+      "start": 107.633,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F015.mp4",
+      "seed": "tekoh-033",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-034",
+      "start": 110.505,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F016.mp4",
+      "seed": "tekoh-034",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-035",
+      "start": 113.377,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S16.png",
+      "seed": "tekoh-035",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-036",
+      "start": 115.954,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/motion/M05.mp4",
+      "seed": "tekoh-036",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-037",
+      "start": 118.826,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F017.mp4",
+      "seed": "tekoh-037",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-038",
+      "start": 121.698,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S17.png",
+      "seed": "tekoh-038",
+      "act": "ACT_1",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-039",
+      "start": 124.275,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F018.mp4",
+      "seed": "tekoh-039",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-040",
+      "start": 127.147,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F019.mp4",
+      "seed": "tekoh-040",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-041",
+      "start": 130.019,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S18.png",
+      "seed": "tekoh-041",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-042",
+      "start": 132.596,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F020.mp4",
+      "seed": "tekoh-042",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-043",
+      "start": 135.468,
+      "dur": 2.872,
+      "kind": "footage",
+      "src": "tekoh/factory/F021.mp4",
+      "seed": "tekoh-043",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-044",
+      "start": 138.34,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S19.png",
+      "seed": "tekoh-044",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-045",
+      "start": 140.917,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S20.png",
+      "seed": "tekoh-045",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-046",
+      "start": 143.494,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S21.png",
+      "seed": "tekoh-046",
+      "act": "ACT_1",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-047",
+      "start": 146.071,
+      "dur": 2.577,
+      "kind": "img",
+      "src": "tekoh/img/S22.png",
+      "seed": "tekoh-047",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-048",
+      "start": 148.648,
+      "dur": 2.579,
+      "kind": "img",
+      "src": "tekoh/img/S23.png",
+      "seed": "tekoh-048",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-049",
+      "start": 151.227,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F022.mp4",
+      "seed": "tekoh-049",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-050",
+      "start": 155.756,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S24.png",
+      "seed": "tekoh-050",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-051",
+      "start": 159.821,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/motion/M06.mp4",
+      "seed": "tekoh-051",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-052",
+      "start": 164.35,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F023.mp4",
+      "seed": "tekoh-052",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-053",
+      "start": 168.879,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S25.png",
+      "seed": "tekoh-053",
+      "act": "ACT_2",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-054",
+      "start": 172.944,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F024.mp4",
+      "seed": "tekoh-054",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-055",
+      "start": 177.473,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F025.mp4",
+      "seed": "tekoh-055",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-056",
+      "start": 182.002,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S26.png",
+      "seed": "tekoh-056",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-057",
+      "start": 186.067,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/motion/M07.mp4",
+      "seed": "tekoh-057",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-058",
+      "start": 190.596,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F026.mp4",
+      "seed": "tekoh-058",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-059",
+      "start": 195.125,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S27.png",
+      "seed": "tekoh-059",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-060",
+      "start": 199.19,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F027.mp4",
+      "seed": "tekoh-060",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-061",
+      "start": 203.719,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F028.mp4",
+      "seed": "tekoh-061",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-062",
+      "start": 208.248,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S28.png",
+      "seed": "tekoh-062",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-063",
+      "start": 212.313,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/motion/M08.mp4",
+      "seed": "tekoh-063",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-064",
+      "start": 216.842,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F029.mp4",
+      "seed": "tekoh-064",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-065",
+      "start": 221.371,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S29.png",
+      "seed": "tekoh-065",
+      "act": "ACT_2",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-066",
+      "start": 225.436,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F030.mp4",
+      "seed": "tekoh-066",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-067",
+      "start": 229.965,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F031.mp4",
+      "seed": "tekoh-067",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-068",
+      "start": 234.494,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S30.png",
+      "seed": "tekoh-068",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-069",
+      "start": 238.559,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F032.mp4",
+      "seed": "tekoh-069",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-070",
+      "start": 243.088,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F033.mp4",
+      "seed": "tekoh-070",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-071",
+      "start": 247.617,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S31.png",
+      "seed": "tekoh-071",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-072",
+      "start": 251.682,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F034.mp4",
+      "seed": "tekoh-072",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-073",
+      "start": 256.211,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F035.mp4",
+      "seed": "tekoh-073",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-074",
+      "start": 260.74,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S32.png",
+      "seed": "tekoh-074",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-075",
+      "start": 264.805,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F036.mp4",
+      "seed": "tekoh-075",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-076",
+      "start": 269.334,
+      "dur": 4.529,
+      "kind": "footage",
+      "src": "tekoh/factory/F037.mp4",
+      "seed": "tekoh-076",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-077",
+      "start": 273.863,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S33.png",
+      "seed": "tekoh-077",
+      "act": "ACT_2",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-078",
+      "start": 277.928,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S34.png",
+      "seed": "tekoh-078",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-079",
+      "start": 281.993,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S35.png",
+      "seed": "tekoh-079",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-080",
+      "start": 286.058,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S36.png",
+      "seed": "tekoh-080",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-081",
+      "start": 290.123,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S37.png",
+      "seed": "tekoh-081",
+      "act": "ACT_2",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-082",
+      "start": 294.188,
+      "dur": 4.065,
+      "kind": "img",
+      "src": "tekoh/img/S38.png",
+      "seed": "tekoh-082",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-083",
+      "start": 298.253,
+      "dur": 4.069,
+      "kind": "img",
+      "src": "tekoh/img/S39.png",
+      "seed": "tekoh-083",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-084",
+      "start": 302.322,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F038.mp4",
+      "seed": "tekoh-084",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-085",
+      "start": 305.394,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S40.png",
+      "seed": "tekoh-085",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-086",
+      "start": 308.151,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M09.mp4",
+      "seed": "tekoh-086",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-087",
+      "start": 311.223,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F039.mp4",
+      "seed": "tekoh-087",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-088",
+      "start": 314.295,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S41.png",
+      "seed": "tekoh-088",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-089",
+      "start": 317.052,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F040.mp4",
+      "seed": "tekoh-089",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-090",
+      "start": 320.124,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F041.mp4",
+      "seed": "tekoh-090",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-091",
+      "start": 323.196,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S42.png",
+      "seed": "tekoh-091",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-092",
+      "start": 325.953,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M10.mp4",
+      "seed": "tekoh-092",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-093",
+      "start": 329.025,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F042.mp4",
+      "seed": "tekoh-093",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-094",
+      "start": 332.097,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S43.png",
+      "seed": "tekoh-094",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-095",
+      "start": 334.854,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F043.mp4",
+      "seed": "tekoh-095",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-096",
+      "start": 337.926,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F044.mp4",
+      "seed": "tekoh-096",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-097",
+      "start": 340.998,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S44.png",
+      "seed": "tekoh-097",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-098",
+      "start": 343.755,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M11.mp4",
+      "seed": "tekoh-098",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-099",
+      "start": 346.827,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F045.mp4",
+      "seed": "tekoh-099",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-100",
+      "start": 349.899,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S45.png",
+      "seed": "tekoh-100",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-101",
+      "start": 352.656,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F046.mp4",
+      "seed": "tekoh-101",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-102",
+      "start": 355.728,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F047.mp4",
+      "seed": "tekoh-102",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-103",
+      "start": 358.8,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S46.png",
+      "seed": "tekoh-103",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-104",
+      "start": 361.557,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M12.mp4",
+      "seed": "tekoh-104",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-105",
+      "start": 364.629,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F048.mp4",
+      "seed": "tekoh-105",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-106",
+      "start": 367.701,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S47.png",
+      "seed": "tekoh-106",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-107",
+      "start": 370.458,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F049.mp4",
+      "seed": "tekoh-107",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-108",
+      "start": 373.53,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F050.mp4",
+      "seed": "tekoh-108",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-109",
+      "start": 376.602,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S48.png",
+      "seed": "tekoh-109",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-110",
+      "start": 379.359,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M13.mp4",
+      "seed": "tekoh-110",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-111",
+      "start": 382.431,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F051.mp4",
+      "seed": "tekoh-111",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-112",
+      "start": 385.503,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S49.png",
+      "seed": "tekoh-112",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-113",
+      "start": 388.26,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F052.mp4",
+      "seed": "tekoh-113",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-114",
+      "start": 391.332,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F053.mp4",
+      "seed": "tekoh-114",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-115",
+      "start": 394.404,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S50.png",
+      "seed": "tekoh-115",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-116",
+      "start": 397.161,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M14.mp4",
+      "seed": "tekoh-116",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-117",
+      "start": 400.233,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F054.mp4",
+      "seed": "tekoh-117",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-118",
+      "start": 403.305,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S51.png",
+      "seed": "tekoh-118",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-119",
+      "start": 406.062,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F055.mp4",
+      "seed": "tekoh-119",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-120",
+      "start": 409.134,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F056.mp4",
+      "seed": "tekoh-120",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-121",
+      "start": 412.206,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S52.png",
+      "seed": "tekoh-121",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-122",
+      "start": 414.963,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M15.mp4",
+      "seed": "tekoh-122",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-123",
+      "start": 418.035,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F057.mp4",
+      "seed": "tekoh-123",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-124",
+      "start": 421.107,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S53.png",
+      "seed": "tekoh-124",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-125",
+      "start": 423.864,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F058.mp4",
+      "seed": "tekoh-125",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-126",
+      "start": 426.936,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F059.mp4",
+      "seed": "tekoh-126",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-127",
+      "start": 430.008,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S54.png",
+      "seed": "tekoh-127",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-128",
+      "start": 432.765,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M16.mp4",
+      "seed": "tekoh-128",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-129",
+      "start": 435.837,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F060.mp4",
+      "seed": "tekoh-129",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-130",
+      "start": 438.909,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S55.png",
+      "seed": "tekoh-130",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-131",
+      "start": 441.666,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F061.mp4",
+      "seed": "tekoh-131",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-132",
+      "start": 444.738,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F062.mp4",
+      "seed": "tekoh-132",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-133",
+      "start": 447.81,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S56.png",
+      "seed": "tekoh-133",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-134",
+      "start": 450.567,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M01.mp4",
+      "seed": "tekoh-134",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-135",
+      "start": 453.639,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F063.mp4",
+      "seed": "tekoh-135",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-136",
+      "start": 456.711,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S57.png",
+      "seed": "tekoh-136",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-137",
+      "start": 459.468,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F064.mp4",
+      "seed": "tekoh-137",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-138",
+      "start": 462.54,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F065.mp4",
+      "seed": "tekoh-138",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-139",
+      "start": 465.612,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S58.png",
+      "seed": "tekoh-139",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-140",
+      "start": 468.369,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M02.mp4",
+      "seed": "tekoh-140",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-141",
+      "start": 471.441,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F066.mp4",
+      "seed": "tekoh-141",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-142",
+      "start": 474.513,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S59.png",
+      "seed": "tekoh-142",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-143",
+      "start": 477.27,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F067.mp4",
+      "seed": "tekoh-143",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-144",
+      "start": 480.342,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F068.mp4",
+      "seed": "tekoh-144",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-145",
+      "start": 483.414,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S60.png",
+      "seed": "tekoh-145",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-146",
+      "start": 486.171,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M03.mp4",
+      "seed": "tekoh-146",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-147",
+      "start": 489.243,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F069.mp4",
+      "seed": "tekoh-147",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-148",
+      "start": 492.315,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S61.png",
+      "seed": "tekoh-148",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-149",
+      "start": 495.072,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F070.mp4",
+      "seed": "tekoh-149",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-150",
+      "start": 498.144,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F071.mp4",
+      "seed": "tekoh-150",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-151",
+      "start": 501.216,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S62.png",
+      "seed": "tekoh-151",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-152",
+      "start": 503.973,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M04.mp4",
+      "seed": "tekoh-152",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-153",
+      "start": 507.045,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F072.mp4",
+      "seed": "tekoh-153",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-154",
+      "start": 510.117,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S63.png",
+      "seed": "tekoh-154",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-155",
+      "start": 512.874,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F073.mp4",
+      "seed": "tekoh-155",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-156",
+      "start": 515.946,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F074.mp4",
+      "seed": "tekoh-156",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-157",
+      "start": 519.018,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S64.png",
+      "seed": "tekoh-157",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-158",
+      "start": 521.775,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M05.mp4",
+      "seed": "tekoh-158",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-159",
+      "start": 524.847,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F075.mp4",
+      "seed": "tekoh-159",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-160",
+      "start": 527.919,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S65.png",
+      "seed": "tekoh-160",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-161",
+      "start": 530.676,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F076.mp4",
+      "seed": "tekoh-161",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-162",
+      "start": 533.748,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F077.mp4",
+      "seed": "tekoh-162",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-163",
+      "start": 536.82,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S66.png",
+      "seed": "tekoh-163",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-164",
+      "start": 539.577,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M06.mp4",
+      "seed": "tekoh-164",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-165",
+      "start": 542.649,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F078.mp4",
+      "seed": "tekoh-165",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-166",
+      "start": 545.721,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S67.png",
+      "seed": "tekoh-166",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-167",
+      "start": 548.478,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F079.mp4",
+      "seed": "tekoh-167",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-168",
+      "start": 551.55,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F080.mp4",
+      "seed": "tekoh-168",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-169",
+      "start": 554.622,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S68.png",
+      "seed": "tekoh-169",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-170",
+      "start": 557.379,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M07.mp4",
+      "seed": "tekoh-170",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-171",
+      "start": 560.451,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/factory/F081.mp4",
+      "seed": "tekoh-171",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-172",
+      "start": 563.523,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S69.png",
+      "seed": "tekoh-172",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-173",
+      "start": 566.28,
+      "dur": 3.072,
+      "kind": "footage",
+      "src": "tekoh/motion/M08.mp4",
+      "seed": "tekoh-173",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-174",
+      "start": 569.352,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S70.png",
+      "seed": "tekoh-174",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-175",
+      "start": 572.109,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S71.png",
+      "seed": "tekoh-175",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-176",
+      "start": 574.866,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S72.png",
+      "seed": "tekoh-176",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-177",
+      "start": 577.623,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S73.png",
+      "seed": "tekoh-177",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-178",
+      "start": 580.38,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S74.png",
+      "seed": "tekoh-178",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-179",
+      "start": 583.137,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S75.png",
+      "seed": "tekoh-179",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-180",
+      "start": 585.894,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S76.png",
+      "seed": "tekoh-180",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-181",
+      "start": 588.651,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S77.png",
+      "seed": "tekoh-181",
+      "act": "ACT_3",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-182",
+      "start": 591.408,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S78.png",
+      "seed": "tekoh-182",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-183",
+      "start": 594.165,
+      "dur": 2.757,
+      "kind": "img",
+      "src": "tekoh/img/S79.png",
+      "seed": "tekoh-183",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-184",
+      "start": 596.922,
+      "dur": 2.75,
+      "kind": "img",
+      "src": "tekoh/img/S80.png",
+      "seed": "tekoh-184",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-185",
+      "start": 599.672,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F082.mp4",
+      "seed": "tekoh-185",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-186",
+      "start": 602.222,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S81.png",
+      "seed": "tekoh-186",
+      "act": "ENDING",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-187",
+      "start": 604.511,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/motion/M09.mp4",
+      "seed": "tekoh-187",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-188",
+      "start": 607.061,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F083.mp4",
+      "seed": "tekoh-188",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-189",
+      "start": 609.611,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S82.png",
+      "seed": "tekoh-189",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-190",
+      "start": 611.9,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F084.mp4",
+      "seed": "tekoh-190",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-191",
+      "start": 614.45,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F085.mp4",
+      "seed": "tekoh-191",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-192",
+      "start": 617.0,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S83.png",
+      "seed": "tekoh-192",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-193",
+      "start": 619.289,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/motion/M10.mp4",
+      "seed": "tekoh-193",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-194",
+      "start": 621.839,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F086.mp4",
+      "seed": "tekoh-194",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-195",
+      "start": 624.389,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S84.png",
+      "seed": "tekoh-195",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-196",
+      "start": 626.678,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F087.mp4",
+      "seed": "tekoh-196",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-197",
+      "start": 629.228,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F088.mp4",
+      "seed": "tekoh-197",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-198",
+      "start": 631.778,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S85.png",
+      "seed": "tekoh-198",
+      "act": "ENDING",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-199",
+      "start": 634.067,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/motion/M11.mp4",
+      "seed": "tekoh-199",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-200",
+      "start": 636.617,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F089.mp4",
+      "seed": "tekoh-200",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-201",
+      "start": 639.167,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S01.png",
+      "seed": "tekoh-201",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-202",
+      "start": 641.456,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F090.mp4",
+      "seed": "tekoh-202",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-203",
+      "start": 644.006,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F091.mp4",
+      "seed": "tekoh-203",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-204",
+      "start": 646.556,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S02.png",
+      "seed": "tekoh-204",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-205",
+      "start": 648.845,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/motion/M12.mp4",
+      "seed": "tekoh-205",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-206",
+      "start": 651.395,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F092.mp4",
+      "seed": "tekoh-206",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-207",
+      "start": 653.945,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S03.png",
+      "seed": "tekoh-207",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-208",
+      "start": 656.234,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/factory/F093.mp4",
+      "seed": "tekoh-208",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-209",
+      "start": 658.784,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/motion/M13.mp4",
+      "seed": "tekoh-209",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-210",
+      "start": 661.334,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S04.png",
+      "seed": "tekoh-210",
+      "act": "ENDING",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-211",
+      "start": 663.623,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/motion/M14.mp4",
+      "seed": "tekoh-211",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-212",
+      "start": 666.173,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/motion/M15.mp4",
+      "seed": "tekoh-212",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-213",
+      "start": 668.723,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S05.png",
+      "seed": "tekoh-213",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-214",
+      "start": 671.012,
+      "dur": 2.55,
+      "kind": "footage",
+      "src": "tekoh/motion/M16.mp4",
+      "seed": "tekoh-214",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-215",
+      "start": 673.562,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S06.png",
+      "seed": "tekoh-215",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-216",
+      "start": 675.851,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S07.png",
+      "seed": "tekoh-216",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-217",
+      "start": 678.14,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S08.png",
+      "seed": "tekoh-217",
+      "act": "ENDING",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-218",
+      "start": 680.429,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S09.png",
+      "seed": "tekoh-218",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-219",
+      "start": 682.718,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S10.png",
+      "seed": "tekoh-219",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-220",
+      "start": 685.007,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S11.png",
+      "seed": "tekoh-220",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-221",
+      "start": 687.296,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S12.png",
+      "seed": "tekoh-221",
+      "act": "ENDING",
+      "treatment": "depth"
+    },
+    {
+      "id": "cut-222",
+      "start": 689.585,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S13.png",
+      "seed": "tekoh-222",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-223",
+      "start": 691.874,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S14.png",
+      "seed": "tekoh-223",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-224",
+      "start": 694.163,
+      "dur": 2.289,
+      "kind": "img",
+      "src": "tekoh/img/S15.png",
+      "seed": "tekoh-224",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-225",
+      "start": 696.452,
+      "dur": 2.291,
+      "kind": "img",
+      "src": "tekoh/img/S16.png",
+      "seed": "tekoh-225",
+      "act": "ENDING",
+      "treatment": "depth"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.972,
+      "text": "A hospital hallway in Los Angeles, late at night."
+    },
+    {
+      "start": 3.272,
+      "end": 5.78,
+      "text": "A man sits down at the end of a long shift."
+    },
+    {
+      "start": 6.08,
+      "end": 8.077,
+      "text": "A sheriff's deputy takes out a pen."
+    },
+    {
+      "start": 8.377,
+      "end": 9.817,
+      "text": "No recorder on the table."
+    },
+    {
+      "start": 10.117,
+      "end": 11.789,
+      "text": "No warning spoken first."
+    },
+    {
+      "start": 12.089,
+      "end": 14.875,
+      "text": "Just a page, and a signature waiting at the bottom of it."
+    },
+    {
+      "start": 15.175,
+      "end": 16.15,
+      "text": "He signs."
+    },
+    {
+      "start": 16.45,
+      "end": 23.788,
+      "text": "And the warning you can recite from memory, the one you have heard in a thousand arrests on a thousand screens, never came."
+    },
+    {
+      "start": 24.088,
+      "end": 30.357,
+      "text": "If they never read you your rights, and your own words go on trial in your place, can you ever make them answer for that?"
+    },
+    {
+      "start": 32.157,
+      "end": 34.293,
+      "text": "You think you know these words."
+    },
+    {
+      "start": 34.593,
+      "end": 36.451,
+      "text": "You have heard them your whole life."
+    },
+    {
+      "start": 36.751,
+      "end": 38.423,
+      "text": "The right to remain silent."
+    },
+    {
+      "start": 38.723,
+      "end": 41.788,
+      "text": "The warning that anything you say can be used against you."
+    },
+    {
+      "start": 42.088,
+      "end": 45.385,
+      "text": "Most people believe they know exactly what that promise protects."
+    },
+    {
+      "start": 45.685,
+      "end": 48.936,
+      "text": "Almost no one has ever been shown where the protection stops."
+    },
+    {
+      "start": 49.236,
+      "end": 57.131,
+      "text": "Because there is a difference, rarely spoken out loud, between holding a right in your hands and collecting anything at all when someone breaks it."
+    },
+    {
+      "start": 57.431,
+      "end": 58.824,
+      "text": "You can own the words."
+    },
+    {
+      "start": 59.124,
+      "end": 64.65,
+      "text": "You can also watch a man who owned them just as fully, and learn they came attached to nothing."
+    },
+    {
+      "start": 64.95,
+      "end": 73.449,
+      "text": "It runs from a signature on a hospital table all the way to the highest court in the country, and it ends on a line almost no one has ever had drawn for them."
+    },
+    {
+      "start": 73.749,
+      "end": 75.421,
+      "text": "This is Prime Documentary."
+    },
+    {
+      "start": 77.221,
+      "end": 82.933,
+      "text": "In 2014, inside a medical center in Los Angeles, a man named Terence Tekoh went to work."
+    },
+    {
+      "start": 83.233,
+      "end": 84.998,
+      "text": "He was a hospital employee."
+    },
+    {
+      "start": 85.298,
+      "end": 91.753,
+      "text": "To the people moving past him, an ordinary face in a corridor, the kind you forget the moment you have passed it."
+    },
+    {
+      "start": 92.053,
+      "end": 98.88,
+      "text": "One afternoon a Los Angeles County sheriff's deputy named Carlos Vega came to question him about a complaint someone had made."
+    },
+    {
+      "start": 99.18,
+      "end": 102.524,
+      "text": "What that complaint said does not belong at the center of this film."
+    },
+    {
+      "start": 102.824,
+      "end": 107.004,
+      "text": "A jury would later hear all of it, weigh every piece, and refuse to convict."
+    },
+    {
+      "start": 107.304,
+      "end": 110.137,
+      "text": "So two facts sit side by side, and they stay that way."
+    },
+    {
+      "start": 110.437,
+      "end": 112.759,
+      "text": "He was suspected of something serious."
+    },
+    {
+      "start": 113.059,
+      "end": 114.545,
+      "text": "He was later cleared of it."
+    },
+    {
+      "start": 114.845,
+      "end": 119.303,
+      "text": "A private person, accused and then let go, and he is spoken about that way here."
+    },
+    {
+      "start": 119.603,
+      "end": 122.761,
+      "text": "What matters is the room, and the paper that came out of it."
+    },
+    {
+      "start": 123.061,
+      "end": 124.686,
+      "text": "Vega asked his questions."
+    },
+    {
+      "start": 124.986,
+      "end": 127.215,
+      "text": "The conversation went on for a while."
+    },
+    {
+      "start": 127.515,
+      "end": 132.948,
+      "text": "And by the end there was a written statement, in Tekoh's own hand, lying on the table between them."
+    },
+    {
+      "start": 133.248,
+      "end": 135.106,
+      "text": "Something was missing from that room."
+    },
+    {
+      "start": 135.406,
+      "end": 140.004,
+      "text": "Before a single question was asked, no one told Terence Tekoh that he could stay silent."
+    },
+    {
+      "start": 140.304,
+      "end": 147.734,
+      "text": "No one told him the page he was filling out could one day be carried into a courtroom and read aloud to the people deciding whether he walked free."
+    },
+    {
+      "start": 148.034,
+      "end": 149.427,
+      "text": "The warning never came."
+    },
+    {
+      "start": 151.227,
+      "end": 153.874,
+      "text": "That statement did not stay behind in the hospital."
+    },
+    {
+      "start": 154.174,
+      "end": 155.149,
+      "text": "It traveled."
+    },
+    {
+      "start": 155.449,
+      "end": 156.517,
+      "text": "It went to court."
+    },
+    {
+      "start": 156.817,
+      "end": 163.922,
+      "text": "Terence Tekoh was charged, and he was put on trial, and the words he had written with no warning became part of the government's case."
+    },
+    {
+      "start": 164.222,
+      "end": 168.68,
+      "text": "His own hand, turned into the evidence against him, in front of twelve strangers."
+    },
+    {
+      "start": 168.98,
+      "end": 171.116,
+      "text": "Then those twelve strangers did something."
+    },
+    {
+      "start": 171.416,
+      "end": 172.577,
+      "text": "They acquitted him."
+    },
+    {
+      "start": 172.877,
+      "end": 176.871,
+      "text": "The ordinary man from the corridor walked out of that courtroom not guilty."
+    },
+    {
+      "start": 177.171,
+      "end": 181.397,
+      "text": "And yet he had already sat across a table from his own written words in open court."
+    },
+    {
+      "start": 181.697,
+      "end": 187.502,
+      "text": "He had already watched a page, taken without the famous warning, become a weapon in the state's hands."
+    },
+    {
+      "start": 187.802,
+      "end": 194.35,
+      "text": "So he did what the law openly allows a citizen to do when a government official steps over a constitutional line."
+    },
+    {
+      "start": 194.65,
+      "end": 195.811,
+      "text": "He sued the deputy."
+    },
+    {
+      "start": 196.111,
+      "end": 198.34,
+      "text": "One distinction now decides the whole case."
+    },
+    {
+      "start": 198.64,
+      "end": 201.38,
+      "text": "He was not trying to send Carlos Vega to prison."
+    },
+    {
+      "start": 201.68,
+      "end": 204.374,
+      "text": "This was no criminal charge against the officer."
+    },
+    {
+      "start": 204.674,
+      "end": 207.925,
+      "text": "It was a civil claim, and what Tekoh wanted was money."
+    },
+    {
+      "start": 208.225,
+      "end": 209.2,
+      "text": "Damages."
+    },
+    {
+      "start": 209.5,
+      "end": 213.587,
+      "text": "Accountability measured in dollars, for a wrong he believed had been done to him."
+    },
+    {
+      "start": 213.887,
+      "end": 220.389,
+      "text": "He brought that claim under a federal law with deep roots, known today by nothing more than its number in the code."
+    },
+    {
+      "start": 220.689,
+      "end": 229.698,
+      "text": "Section 1983 was written in the raw years after the Civil War to give ordinary people a way into federal court when the state itself becomes the wrongdoer."
+    },
+    {
+      "start": 229.998,
+      "end": 241.654,
+      "text": "It lets a person sue a state official who strips away a right the Constitution guarantees, the everyday tool for holding police and other officials personally answerable in a civil court."
+    },
+    {
+      "start": 241.954,
+      "end": 244.183,
+      "text": "It is a door to hold him to account."
+    },
+    {
+      "start": 244.483,
+      "end": 246.851,
+      "text": "Tekoh's road down that path was rough."
+    },
+    {
+      "start": 247.151,
+      "end": 251.934,
+      "text": "Twice, federal juries heard his civil case, and twice they sided with the deputy."
+    },
+    {
+      "start": 252.234,
+      "end": 261.94,
+      "text": "The first verdict was thrown out over a flaw in how the jury had been instructed, so the entire case was tried a second time, and a second jury again returned a verdict for Vega."
+    },
+    {
+      "start": 262.24,
+      "end": 266.42,
+      "text": "Tekoh appealed that second loss, and his appeal rested on one precise complaint."
+    },
+    {
+      "start": 266.72,
+      "end": 278.191,
+      "text": "He said the trial judge had refused to tell the jury one crucial thing: that using his unwarned statement at his criminal trial was, by itself, a violation he had every right to sue over."
+    },
+    {
+      "start": 278.491,
+      "end": 282.16,
+      "text": "A federal court of appeals looked at that argument and agreed with him."
+    },
+    {
+      "start": 282.46,
+      "end": 290.587,
+      "text": "It ruled that using such a statement against a defendant at trial could violate the Fifth Amendment, and could support a lawsuit under Section 1983."
+    },
+    {
+      "start": 290.887,
+      "end": 293.395,
+      "text": "It sent the case back for yet another trial."
+    },
+    {
+      "start": 293.695,
+      "end": 300.522,
+      "text": "And that is the moment Carlos Vega asked the Supreme Court of the United States to step in and settle the matter."
+    },
+    {
+      "start": 302.322,
+      "end": 306.13,
+      "text": "Everything now narrows to one small, almost technical question."
+    },
+    {
+      "start": 306.43,
+      "end": 309.495,
+      "text": "And the entire weight of your rights comes down on the answer."
+    },
+    {
+      "start": 309.795,
+      "end": 312.581,
+      "text": "Nobody in that courtroom was fighting about the famous case."
+    },
+    {
+      "start": 312.881,
+      "end": 323.376,
+      "text": "In 1966, in Miranda versus Arizona, the Supreme Court held that before police question someone who is in custody, they have to deliver the warnings you already know."
+    },
+    {
+      "start": 323.676,
+      "end": 325.162,
+      "text": "The right to say nothing."
+    },
+    {
+      "start": 325.462,
+      "end": 327.83,
+      "text": "The fact that your words can become evidence."
+    },
+    {
+      "start": 328.13,
+      "end": 331.288,
+      "text": "The right to a lawyer, appointed for you if you cannot pay."
+    },
+    {
+      "start": 331.588,
+      "end": 334.653,
+      "text": "No one was fighting about a second, quieter decision either."
+    },
+    {
+      "start": 334.953,
+      "end": 341.78,
+      "text": "In the year 2000, in a ruling called Dickerson, the Court confirmed that Miranda was not a suggestion or a courtesy."
+    },
+    {
+      "start": 342.08,
+      "end": 348.21,
+      "text": "It was a constitutional rule, rooted so deeply that Congress could not pass a law to sweep it away."
+    },
+    {
+      "start": 348.51,
+      "end": 353.247,
+      "text": "So when the case reached the Supreme Court, Tekoh's argument sounded almost like arithmetic."
+    },
+    {
+      "start": 353.547,
+      "end": 360.792,
+      "text": "If Miranda is a constitutional rule, and an officer broke it, then the officer stripped him of a constitutional right."
+    },
+    {
+      "start": 361.092,
+      "end": 366.665,
+      "text": "And Section 1983 exists precisely so a person can sue for the loss of a constitutional right."
+    },
+    {
+      "start": 366.965,
+      "end": 368.405,
+      "text": "Rule, broken, remedy."
+    },
+    {
+      "start": 368.705,
+      "end": 369.541,
+      "text": "Simple."
+    },
+    {
+      "start": 369.841,
+      "end": 372.581,
+      "text": "The majority did not see it as simple at all."
+    },
+    {
+      "start": 372.881,
+      "end": 380.59,
+      "text": "Writing for six of the nine justices, Justice Samuel Alito drew a distinction that is careful, technical, and enormous for you."
+    },
+    {
+      "start": 380.89,
+      "end": 384.93,
+      "text": "Miranda's warnings, he wrote, are what lawyers call prophylactic rules."
+    },
+    {
+      "start": 385.23,
+      "end": 392.057,
+      "text": "Picture a protective fence built around a deeper right, the Fifth Amendment promise that no one can force you to incriminate yourself."
+    },
+    {
+      "start": 392.357,
+      "end": 394.447,
+      "text": "The warnings guard that inner right."
+    },
+    {
+      "start": 394.747,
+      "end": 399.205,
+      "text": "But the warnings themselves, the majority reasoned, are not the constitutional right."
+    },
+    {
+      "start": 399.505,
+      "end": 400.48,
+      "text": "A fence."
+    },
+    {
+      "start": 400.78,
+      "end": 402.452,
+      "text": "Not the ground it stands on."
+    },
+    {
+      "start": 402.752,
+      "end": 405.399,
+      "text": "From that one distinction, the rest follows."
+    },
+    {
+      "start": 405.699,
+      "end": 414.012,
+      "text": "If the warnings are only a safeguard, and not the right itself, then failing to give them is not, on its own, a violation of the Constitution."
+    },
+    {
+      "start": 414.312,
+      "end": 421.696,
+      "text": "And an injury that is not a constitutional violation is not the kind of harm Section 1983 was ever built to repair."
+    },
+    {
+      "start": 421.996,
+      "end": 427.476,
+      "text": "So the deputy could not be made to pay money damages simply because the warning had been left out."
+    },
+    {
+      "start": 427.776,
+      "end": 430.748,
+      "text": "The majority insisted the warning still carries real weight."
+    },
+    {
+      "start": 431.048,
+      "end": 436.76,
+      "text": "Skip it, and a criminal court can still refuse to let the prosecution build its case on your unwarned words."
+    },
+    {
+      "start": 437.06,
+      "end": 440.729,
+      "text": "That protection at trial, Justice Alito wrote, is remedy enough."
+    },
+    {
+      "start": 441.029,
+      "end": 450.271,
+      "text": "What the Court closed was only the second door, the one that opens after the trial is over: the lawsuit that turns a missing warning into a bill the officer has to pay."
+    },
+    {
+      "start": 450.571,
+      "end": 455.912,
+      "text": "That is where the ruling leaves you."
+    },
+    {
+      "start": 456.212,
+      "end": 458.673,
+      "text": "Imagine your own chair in that hospital room."
+    },
+    {
+      "start": 458.973,
+      "end": 460.923,
+      "text": "You are questioned with no warning."
+    },
+    {
+      "start": 461.223,
+      "end": 463.266,
+      "text": "You are tried on the words you wrote."
+    },
+    {
+      "start": 463.566,
+      "end": 473.643,
+      "text": "And even if a jury clears you, the way one cleared Terence Tekoh, this decision means you cannot later walk into a civil court and ask the officer to pay for the warning he skipped."
+    },
+    {
+      "start": 473.943,
+      "end": 477.658,
+      "text": "The safeguard you always assumed had a price tag behind it does not."
+    },
+    {
+      "start": 477.958,
+      "end": 480.187,
+      "text": "Three justices refused to accept that."
+    },
+    {
+      "start": 480.487,
+      "end": 488.66,
+      "text": "In dissent, Justice Elena Kagan, joined by Justices Breyer and Sotomayor, went straight back to that overlooked ruling from the year 2000."
+    },
+    {
+      "start": 488.96,
+      "end": 499.734,
+      "text": "If Miranda truly is a constitutional rule, she argued, then it hands you a real and enforceable right: the power to keep an unwarned confession out of your own trial."
+    },
+    {
+      "start": 500.034,
+      "end": 505.375,
+      "text": "A right that no remedy can back up, she warned, slowly stops feeling like a right at all."
+    },
+    {
+      "start": 505.675,
+      "end": 514.313,
+      "text": "The Constitution, in her reading, does not hand you a promise on paper and then leave you with no way to enforce the most personal one you own."
+    },
+    {
+      "start": 514.613,
+      "end": 523.344,
+      "text": "Take away the ability to sue, and some people whose rights are genuinely broken will be left standing there with nothing to collect, and no one to answer for it."
+    },
+    {
+      "start": 523.644,
+      "end": 527.406,
+      "text": "The headlines will flatten what comes next into something it is not."
+    },
+    {
+      "start": 527.706,
+      "end": 530.957,
+      "text": "What actually changed is smaller, and far more exact."
+    },
+    {
+      "start": 531.257,
+      "end": 533.161,
+      "text": "The Court did not erase Miranda."
+    },
+    {
+      "start": 533.461,
+      "end": 535.597,
+      "text": "It said so, plainly, on the page."
+    },
+    {
+      "start": 535.897,
+      "end": 537.012,
+      "text": "Miranda stands."
+    },
+    {
+      "start": 537.312,
+      "end": 538.566,
+      "text": "Dickerson stands."
+    },
+    {
+      "start": 538.866,
+      "end": 544.717,
+      "text": "If police question you today without the warning, your unwarned words can be thrown out of your criminal trial."
+    },
+    {
+      "start": 545.017,
+      "end": 554.026,
+      "text": "That protection, the power to keep your own statement away from the jury that decides your fate, is fully alive, and nothing in this ruling touched it."
+    },
+    {
+      "start": 554.326,
+      "end": 564.311,
+      "text": "What the Court closed was a single door, and only that one: the door marked sue the officer for money, in civil court, purely because he failed to warn you."
+    },
+    {
+      "start": 564.611,
+      "end": 567.583,
+      "text": "On that theory, standing by itself, the door is now shut."
+    },
+    {
+      "start": 567.883,
+      "end": 569.88,
+      "text": "So the exact words matter here."
+    },
+    {
+      "start": 570.18,
+      "end": 576.728,
+      "text": "This is not the death of the right to remain silent, and it is not permission for police to stop reading anyone their rights."
+    },
+    {
+      "start": 577.028,
+      "end": 581.486,
+      "text": "It is a line, drawn between two things most of us have always treated as one."
+    },
+    {
+      "start": 581.786,
+      "end": 587.963,
+      "text": "On one side, the rule that shields you inside the trial, keeping your unwarned words away from the jury."
+    },
+    {
+      "start": 588.263,
+      "end": 591.792,
+      "text": "On the other, the check you might have hoped to win from the officer afterward."
+    },
+    {
+      "start": 592.092,
+      "end": 594.228,
+      "text": "The first survived this case whole."
+    },
+    {
+      "start": 594.528,
+      "end": 597.872,
+      "text": "The second, for a warning skipped and nothing more, did not."
+    },
+    {
+      "start": 599.672,
+      "end": 602.505,
+      "text": "Under all of this doctrine there is one life."
+    },
+    {
+      "start": 602.805,
+      "end": 605.034,
+      "text": "Terence Tekoh was accused of a crime."
+    },
+    {
+      "start": 605.334,
+      "end": 608.028,
+      "text": "A jury heard the case in full and let him go."
+    },
+    {
+      "start": 608.328,
+      "end": 614.69,
+      "text": "His own written words, taken with no warning, had already been carried into a courtroom and used to argue he belonged in a cell."
+    },
+    {
+      "start": 614.99,
+      "end": 619.495,
+      "text": "When it was over, he turned to the civil courts to hold the officer accountable for that."
+    },
+    {
+      "start": 619.795,
+      "end": 628.479,
+      "text": "And after the highest court in the country had finished speaking, that particular road, the one paved with Section 1983, was closed to him."
+    },
+    {
+      "start": 628.779,
+      "end": 634.12,
+      "text": "So the question we opened with finally gets its answer, cleanly, with nothing stretched."
+    },
+    {
+      "start": 634.42,
+      "end": 641.943,
+      "text": "If an officer never reads you your rights, can you make him pay for that single failure, on its own, in a lawsuit for damages?"
+    },
+    {
+      "start": 642.243,
+      "end": 646.701,
+      "text": "After the summer of 2022, the answer to that narrow question is no."
+    },
+    {
+      "start": 647.001,
+      "end": 651.924,
+      "text": "But your silence has not lost its power in the one place it was always built to matter most."
+    },
+    {
+      "start": 652.224,
+      "end": 657.054,
+      "text": "In the room where you are the one on trial, an unwarned statement can still be kept out."
+    },
+    {
+      "start": 657.354,
+      "end": 661.162,
+      "text": "The warning still shapes what a jury is ever allowed to hear about you."
+    },
+    {
+      "start": 661.462,
+      "end": 666.013,
+      "text": "The gap this case opened is real, and it opens long before you ever sit in that chair."
+    },
+    {
+      "start": 666.313,
+      "end": 668.589,
+      "text": "A right and a remedy are not the same thing."
+    },
+    {
+      "start": 668.889,
+      "end": 671.722,
+      "text": "The shield is the part the law still raises for you."
+    },
+    {
+      "start": 672.022,
+      "end": 678.524,
+      "text": "The payment was the part you had to win yourself, and for a warning skipped and nothing else, that is what this case took away."
+    },
+    {
+      "start": 678.824,
+      "end": 687.648,
+      "text": "You can hold the first of them firmly, reach for the second in the same breath, and find that the civil-damages remedy for that failure alone was never there to take."
+    },
+    {
+      "start": 687.948,
+      "end": 693.381,
+      "text": "If this is the kind of line you want drawn in plain words, before the day you actually need it, stay with us."
+    },
+    {
+      "start": 693.681,
+      "end": 698.743,
+      "text": "At Prime Documentary, we keep reading the fine print of your rights out loud, one case at a time."
+    }
+  ],
+  "graphics": [],
+  "figures": [
+    {
+      "start": 4.826,
+      "end": 10.226,
+      "kind": "kinetic",
+      "lines": [
+        "THE WORDS",
+        "THEY NEVER READ YOU"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "NEVER"
+      ]
+    },
+    {
+      "start": 11.878,
+      "end": 17.279,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction"
+    },
+    {
+      "start": 18.931,
+      "end": 24.331,
+      "kind": "mechanism",
+      "mechanism": "closingdoor",
+      "label": "a warning missing from the room"
+    },
+    {
+      "start": 82.855,
+      "end": 88.255,
+      "kind": "acttitle",
+      "title": "THAT NIGHT",
+      "kicker": "ACT ONE",
+      "index": 1
+    },
+    {
+      "start": 93.522,
+      "end": 98.922,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "2014",
+          "text": "medical center, Los Angeles"
+        }
+      ]
+    },
+    {
+      "start": 104.19,
+      "end": 109.59,
+      "kind": "pindropmap",
+      "pins": [
+        {
+          "x": 0.2,
+          "y": 0.58,
+          "label": "Los Angeles"
+        }
+      ]
+    },
+    {
+      "start": 114.858,
+      "end": 120.258,
+      "kind": "kinetic",
+      "lines": [
+        "NO WARNING",
+        "CAME"
+      ],
+      "style": "wordpop",
+      "emphasisWords": [
+        "WARNING"
+      ]
+    },
+    {
+      "start": 125.526,
+      "end": 130.925,
+      "kind": "lowerthird",
+      "primary": "Deputy Carlos Vega",
+      "secondary": "case participant, symbolic visuals only"
+    },
+    {
+      "start": 136.193,
+      "end": 141.593,
+      "kind": "mechanism",
+      "mechanism": "closingdoor",
+      "label": "a page between two people"
+    },
+    {
+      "start": 160.345,
+      "end": 165.745,
+      "kind": "acttitle",
+      "title": "THE TURN",
+      "kicker": "ACT TWO",
+      "index": 2
+    },
+    {
+      "start": 177.982,
+      "end": 183.382,
+      "kind": "kinetic",
+      "lines": [
+        "THEY",
+        "ACQUITTED HIM"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "ACQUITTED"
+      ]
+    },
+    {
+      "start": 195.619,
+      "end": 201.019,
+      "kind": "lowerthird",
+      "primary": "42 U.S.C. section 1983",
+      "secondary": "a civil door to seek accountability"
+    },
+    {
+      "start": 213.256,
+      "end": 218.656,
+      "kind": "stat",
+      "value": 2,
+      "label": "civil trials - twice for the deputy"
+    },
+    {
+      "start": 230.893,
+      "end": 236.293,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "acquitted",
+          "text": "criminal jury did not convict"
+        },
+        {
+          "year": "appeal",
+          "text": "Ninth Circuit reversed and remanded"
+        }
+      ]
+    },
+    {
+      "start": 248.53,
+      "end": 253.93,
+      "kind": "kinetic",
+      "lines": [
+        "A CIVIL CLAIM",
+        "FOR MONEY"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "MONEY"
+      ]
+    },
+    {
+      "start": 266.167,
+      "end": 271.567,
+      "kind": "mechanism",
+      "mechanism": "gears",
+      "label": "rule - broken - remedy"
+    },
+    {
+      "start": 283.804,
+      "end": 289.204,
+      "kind": "lowerthird",
+      "primary": "a private person, accused and cleared",
+      "secondary": "underlying allegation not shown"
+    },
+    {
+      "start": 312.2,
+      "end": 317.6,
+      "kind": "acttitle",
+      "title": "THE DOCTRINE",
+      "kicker": "ACT THREE",
+      "index": 3
+    },
+    {
+      "start": 331.357,
+      "end": 336.757,
+      "kind": "lowerthird",
+      "primary": "Miranda v. Arizona, 384 U.S. 436 (1966)",
+      "secondary": "still good law"
+    },
+    {
+      "start": 350.514,
+      "end": 355.914,
+      "kind": "lowerthird",
+      "primary": "Dickerson v. United States (2000)",
+      "secondary": "Miranda stands"
+    },
+    {
+      "start": 369.67,
+      "end": 375.07,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "1966",
+          "text": "Miranda"
+        },
+        {
+          "year": "2000",
+          "text": "Dickerson"
+        },
+        {
+          "year": "2022",
+          "text": "Vega v. Tekoh"
+        }
+      ]
+    },
+    {
+      "start": 388.827,
+      "end": 394.227,
+      "kind": "lowerthird",
+      "primary": "Vega v. Tekoh, 597 U.S. 134 (2022)",
+      "secondary": "No. 21-499"
+    },
+    {
+      "start": 407.984,
+      "end": 413.384,
+      "kind": "votetally",
+      "majority": 6,
+      "dissent": 3,
+      "label": "one door closed - exclusion stays open"
+    },
+    {
+      "start": 427.14,
+      "end": 432.54,
+      "kind": "stat",
+      "value": 6,
+      "label": "Alito, for six of nine"
+    },
+    {
+      "start": 446.297,
+      "end": 451.697,
+      "kind": "mechanism",
+      "mechanism": "faultsplit",
+      "left": "warning as fence",
+      "right": "Fifth Amendment ground"
+    },
+    {
+      "start": 465.454,
+      "end": 470.854,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "the warning - a fence",
+          "value": 1
+        },
+        {
+          "label": "the Fifth Amendment - the ground",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "start": 484.61,
+      "end": 490.01,
+      "kind": "kinetic",
+      "lines": [
+        "RULE",
+        "BROKEN",
+        "REMEDY"
+      ],
+      "style": "wordpop",
+      "emphasisWords": [
+        "REMEDY"
+      ]
+    },
+    {
+      "start": 503.767,
+      "end": 509.167,
+      "kind": "kinetic",
+      "lines": [
+        "NOT",
+        "SO SIMPLE"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "NOT"
+      ]
+    },
+    {
+      "start": 522.924,
+      "end": 528.324,
+      "kind": "lowerthird",
+      "primary": "standing alone",
+      "secondary": "no section 1983 damages for the missed warning"
+    },
+    {
+      "start": 542.08,
+      "end": 547.48,
+      "kind": "stat",
+      "value": 3,
+      "label": "in dissent - Kagan, Breyer, Sotomayor"
+    },
+    {
+      "start": 561.237,
+      "end": 566.637,
+      "kind": "mechanism",
+      "mechanism": "closingdoor",
+      "label": "second door closed - exclusion door open"
+    },
+    {
+      "start": 580.394,
+      "end": 585.794,
+      "kind": "kinetic",
+      "lines": [
+        "A RIGHT",
+        "AND A REMEDY",
+        "ARE NOT THE SAME"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "REMEDY"
+      ]
+    },
+    {
+      "start": 608.329,
+      "end": 613.729,
+      "kind": "lowerthird",
+      "primary": "EXCLUSION STAYS OPEN",
+      "secondary": "unwarned words can still be kept out"
+    },
+    {
+      "start": 625.043,
+      "end": 630.443,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction"
+    },
+    {
+      "start": 641.757,
+      "end": 647.157,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "the shield - still raised",
+          "value": 1
+        },
+        {
+          "label": "the payment - not there to take",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "start": 658.472,
+      "end": 663.872,
+      "kind": "kinetic",
+      "lines": [
+        "RIGHT",
+        "REMEDY",
+        "RESULT"
+      ],
+      "style": "wordpop",
+      "emphasisWords": [
+        "REMEDY"
+      ]
+    },
+    {
+      "start": 675.186,
+      "end": 680.586,
+      "kind": "mechanism",
+      "mechanism": "closingdoor",
+      "label": "one narrow door closes"
+    }
+  ],
+  "overlays": [
+    "tekoh/overlay/O01.mp4",
+    "tekoh/overlay/O02.mp4",
+    "tekoh/overlay/O03.mp4",
+    "tekoh/overlay/O04.mp4",
+    "tekoh/overlay/O05.mp4",
+    "tekoh/overlay/O06.mp4",
+    "tekoh/overlay/O07.mp4",
+    "tekoh/overlay/O08.mp4",
+    "tekoh/overlay/O09.mp4",
+    "tekoh/overlay/O10.mp4",
+    "tekoh/overlay/O11.mp4",
+    "tekoh/overlay/O12.mp4"
+  ]
+}

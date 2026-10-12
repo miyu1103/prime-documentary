@@ -1,0 +1,210 @@
+[
+  {
+    "id": "keybridge_ae001",
+    "beat": "AE001",
+    "act": "HOOK",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "01:27:53",
+    "style": "number",
+    "big": "01:27:53",
+    "bigSize": 260,
+    "label": "THE ORDER TO STOP THE TRAFFIC",
+    "source": "FACTS_LEDGER row KB-113",
+    "forbid": "Held silent, no music (spec note). The timestamp is KB-113 verbatim."
+  },
+  {
+    "id": "keybridge_ae002",
+    "beat": "AE002",
+    "act": "HOOK",
+    "kind": "timeline",
+    "seconds": 8,
+    "headline": "SIXTY-SEVEN SECONDS",
+    "value": 67,
+    "suffix": " SECONDS",
+    "lines": [
+      {"t": "01:27:53 — THE ORDER", "cite": "KB-113"},
+      {"t": "ABOUT 01:29 — CONTACT", "cite": "KB-002"}
+    ],
+    "source": "FACTS_LEDGER rows KB-113 and KB-002",
+    "forbid": "Arithmetic on two sourced timestamps, not an estimate. The second endpoint is 'about 01:29' -- keep the ABOUT."
+  },
+  {
+    "id": "keybridge_ae003",
+    "beat": "AE003",
+    "act": "OP",
+    "kind": "title_card",
+    "seconds": 7.5,
+    "headline": "26 MARCH 2024",
+    "style": "number",
+    "big": "26 MARCH 2024",
+    "bigSize": 170,
+    "source": "FACTS_LEDGER row KB-002"
+  },
+  {
+    "id": "keybridge_ae004",
+    "beat": "AE004",
+    "act": "ACT_1",
+    "kind": "map_move",
+    "seconds": 9,
+    "headline": "THREE SHIP LENGTHS OUT",
+    "value": 0.6,
+    "suffix": " MILES",
+    "lines": [
+      {"t": "0.6 MILES FROM THE BRIDGE", "cite": "KB-105"}
+    ],
+    "source": "FACTS_LEDGER row KB-105",
+    "forbid": "Do NOT convert to feet -- KB-601: three official documents give three different ship lengths. State no length."
+  },
+  {
+    "id": "keybridge_ae005",
+    "beat": "AE005",
+    "act": "ACT_1",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "01:25",
+    "style": "number",
+    "big": "01:25",
+    "bigSize": 300,
+    "label": "THE FIRST BLACKOUT UNDER WAY",
+    "source": "FACTS_LEDGER row KB-105"
+  },
+  {
+    "id": "keybridge_ae006",
+    "beat": "AE006",
+    "act": "ACT_2",
+    "kind": "comparison",
+    "seconds": 9,
+    "headline": "IN PORT / UNDER WAY",
+    "value_a": 2,
+    "value_b": 2,
+    "suffix": " BLACKOUTS",
+    "lines": [
+      {"t": "IN PORT: EXHAUST DAMPER", "cite": "KB-101"},
+      {"t": "IN PORT: FUEL PRESSURE", "cite": "KB-102"},
+      {"t": "UNDER WAY: 01:25, HR1/LR1 OPENED", "cite": "KB-105"},
+      {"t": "UNDER WAY: 0.2 MILES OUT, DGR3/DGR4", "cite": "KB-110"}
+    ],
+    "source": "FACTS_LEDGER rows KB-101 and KB-105",
+    "forbid": "Two blackouts on EACH side of the departure. This card exists to stop the four-in-port error (spec note)."
+  },
+  {
+    "id": "keybridge_ae007",
+    "beat": "AE007",
+    "act": "ACT_2",
+    "kind": "system_map",
+    "seconds": 10,
+    "headline": "THE SWITCH THEY MADE IN PORT",
+    "lines": [
+      {"t": "HR2 / LR2 / TR2 — IN USE FOR MONTHS", "cite": "KB-103"},
+      {"t": "SWITCHED TO HR1 / LR1 / TR1", "cite": "KB-103"},
+      {"t": "THE SHIP SAILED ON HR1 / LR1 / TR1", "cite": "KB-104"}
+    ],
+    "source": "FACTS_LEDGER rows KB-103 and KB-104"
+  },
+  {
+    "id": "keybridge_ae008",
+    "beat": "AE008",
+    "act": "ACT_3",
+    "kind": "system_map",
+    "seconds": 10,
+    "headline": "HOW A SHIP IS MEANT TO RESTART",
+    "lines": [
+      {"t": "RELIABLE REDUNDANCIES", "cite": "KB-406"},
+      {"t": "AUTOMATIC RESTART", "cite": "KB-406"},
+      {"t": "DESIGNED TO RECOVER QUICKLY FROM A BLACKOUT", "cite": "KB-406"}
+    ],
+    "attribution": "AS STATED IN THE U.S. INDICTMENT",
+    "source": "FACTS_LEDGER row KB-406",
+    "forbid": "KB-406 is the United States' account to a grand jury. The card carries the attribution line; it does not state the design promise as an independent finding."
+  },
+  {
+    "id": "keybridge_ae009",
+    "beat": "AE009",
+    "act": "ACT_3",
+    "kind": "document_blowup",
+    "seconds": 9,
+    "headline": "A BAND OF LABEL, ON ONE WIRE",
+    "lines": [
+      {"t": "WIRE-LABEL BANDING", "cite": "KB-203"},
+      {"t": "PREVENTED FULL INSERTION INTO THE SPRING-CLAMP GATE", "cite": "KB-203"},
+      {"t": "AN INADEQUATE CONNECTION", "cite": "KB-203"}
+    ],
+    "source": "FACTS_LEDGER row KB-203",
+    "forbid": "Illustrate the PART, never a readable document (spec note; fabricated_record class)."
+  },
+  {
+    "id": "keybridge_ae010",
+    "beat": "AE010",
+    "act": "ACT_3",
+    "kind": "list_build",
+    "seconds": 10,
+    "headline": "WHAT THE INDICTMENT CHARGES",
+    "lines": [
+      {"t": "CONSPIRACY TO DEFRAUD THE UNITED STATES", "cite": "KB-402"},
+      {"t": "FAILING TO INFORM THE COAST GUARD OF A KNOWN HAZARDOUS CONDITION", "cite": "KB-402"},
+      {"t": "OBSTRUCTION OF AN AGENCY PROCEEDING", "cite": "KB-402"},
+      {"t": "FALSE STATEMENTS", "cite": "KB-402"}
+    ],
+    "source": "FACTS_LEDGER row KB-402",
+    "forbid": "The card must carry the word CHARGES, never a verdict (spec note). No count may be shortened into an outcome."
+  },
+  {
+    "id": "keybridge_ae011",
+    "beat": "AE011",
+    "act": "ACT_4",
+    "kind": "comparison",
+    "seconds": 9,
+    "headline": "WHAT THEY OFFERED / WHAT WAS CLAIMED",
+    "value_a": 43.7,
+    "value_b": 103078056,
+    "prefix": "$",
+    "lines": [
+      {"t": "SOUGHT TO LIMIT LIABILITY: ABOUT $43.7 MILLION", "cite": "KB-302"},
+      {"t": "CLAIMED BY THE UNITED STATES: $103,078,056", "cite": "KB-303"}
+    ],
+    "source": "FACTS_LEDGER rows KB-302 and KB-303",
+    "forbid": "value_a is in millions (43.7) and value_b in dollars -- if the renderer animates both on one scale, use 43700000 and 103078056. The $43.7M figure is 'approximately' (KB-302); keep ABOUT on the card."
+  },
+  {
+    "id": "keybridge_ae012",
+    "beat": "AE012",
+    "act": "ACT_4",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "SIXTY-EIGHT BRIDGES",
+    "style": "number",
+    "big": "68",
+    "bigSize": 340,
+    "label": "BRIDGES THE NTSB SAID TO GO AND CHECK",
+    "value": 68,
+    "suffix": " BRIDGES",
+    "source": "FACTS_LEDGER row KB-206"
+  },
+  {
+    "id": "keybridge_ae013",
+    "beat": "AE013",
+    "act": "ENDING",
+    "kind": "quote_card",
+    "seconds": 10,
+    "headline": "MERELY AN ACCUSATION",
+    "quote": "An indictment is merely an accusation. All defendants are presumed innocent until proven guilty beyond a reasonable doubt in a court of law.",
+    "attribution": "U.S. DEPARTMENT OF JUSTICE",
+    "source": "FACTS_LEDGER row KB-501",
+    "forbid": "The DOJ's own sentence, on screen, IN FULL (spec note). Verbatim from KB-501 -- never paraphrase, never truncate."
+  },
+  {
+    "id": "keybridge_ae014",
+    "beat": "AE014",
+    "act": "ENDING",
+    "kind": "timeline",
+    "seconds": 9,
+    "headline": "WHAT IS STILL OPEN",
+    "lines": [
+      {"t": "NTSB COMPLETE REPORT — ANNOUNCED TO FOLLOW", "cite": "KB-207"},
+      {"t": "THE CRIMINAL CASE — NO ONE HAS BEEN TRIED", "cite": "KB-501"}
+    ],
+    "source": "FACTS_LEDGER row KB-207",
+    "forbid": "KB-207: whether the complete report has since been published is NOT established -- re-check before ship and update this line if it landed."
+  }
+]

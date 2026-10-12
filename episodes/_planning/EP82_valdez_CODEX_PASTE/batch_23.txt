@@ -1,0 +1,56 @@
+EP82_valdez — 画像発注 バッチ 23/23（8枚）
+区分: SPARE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, ship name, funnel marking, company colour, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) V177.png
+   [V177]  flags: 
+   Sea otters absent: an empty kelp bed on calm water in bright daylight, no animals
+
+2) V178.png
+   [V178]  flags: 
+   A gravel beach with driftwood in flat daylight, no animals, no oil
+
+3) V179.png
+   [V179]  flags: 
+   A weather mast and anemometer against a brilliant sky, seen from below
+
+4) V180.png
+   [V180]  flags: 
+   A harbour at blue hour with quay lamps burning and boats level at moorings
+
+5) V181.png
+   [V181]  flags: 
+   A wide Alaskan mountain range in brilliant winter light seen across water
+
+6) V182.png
+   [V182]  flags: 
+   An empty wooden dock stretching into calm water at sunrise, brilliant orange sky
+
+7) V183.png
+   [V183]  flags: 
+   A courthouse stairway in brilliant daylight, stone treads and a brass rail, empty
+
+8) V184.png
+   [V184]  flags: 
+   A wide American city street in bright daylight in the 2000s, ordinary cars and low buildings

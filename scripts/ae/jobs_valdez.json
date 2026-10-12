@@ -1,0 +1,222 @@
+[
+  {
+    "id": "valdez_ae001",
+    "beat": "AE001",
+    "act": "HOOK",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "FIVE OR SIX HOURS",
+    "style": "punch",
+    "words": ["FIVE OR SIX HOURS"],
+    "bigSize": 150,
+    "label": "OF SLEEP IN THE PREVIOUS TWENTY-FOUR — NTSB",
+    "source": "FACTS_LEDGER row VZ-106",
+    "forbid": "The Board's own 'could have had as little as' estimate (VZ-106) -- keep AS LITTLE AS framing; it is a bound, not a measurement."
+  },
+  {
+    "id": "valdez_ae002",
+    "beat": "AE002",
+    "act": "HOOK",
+    "kind": "comparison",
+    "seconds": 7,
+    "headline": "SIX ON / SIX OFF",
+    "value_a": 6,
+    "value_b": 6,
+    "suffix": " HOURS",
+    "lines": [
+      {"t": "TWO MATES COVERING A THIRD MAN'S WATCH", "cite": "VZ-104"},
+      {"t": "A SCHEDULE THAT SELDOM ALLOWS ADEQUATE REST — NTSB", "cite": "VZ-202"}
+    ],
+    "source": "FACTS_LEDGER rows VZ-104 and VZ-202"
+  },
+  {
+    "id": "valdez_ae003",
+    "beat": "AE003",
+    "act": "OP",
+    "kind": "title_card",
+    "seconds": 6,
+    "headline": "24 MARCH 1989",
+    "style": "number",
+    "big": "24 MARCH 1989",
+    "bigSize": 170,
+    "source": "FACTS_LEDGER row VZ-001"
+  },
+  {
+    "id": "valdez_ae004",
+    "beat": "AE004",
+    "act": "ACT_1",
+    "kind": "timeline",
+    "seconds": 12,
+    "headline": "0100 / 0520 / 0009",
+    "lines": [
+      {"t": "AFTER 0100 — TO BED, THROUGH CARGO OPERATIONS", "cite": "VZ-102"},
+      {"t": "PERHAPS AS EARLY AS 0520 — CALLED TO RELIEVE THE SECOND MATE", "cite": "VZ-103"},
+      {"t": "0009 THE NEXT NIGHT — BLIGH REEF", "cite": "VZ-001"}
+    ],
+    "source": "FACTS_LEDGER rows VZ-102, VZ-103, VZ-001",
+    "forbid": "VZ-103 is 'may have been called' -- keep PERHAPS on the card."
+  },
+  {
+    "id": "valdez_ae005",
+    "beat": "AE005",
+    "act": "ACT_1",
+    "kind": "map_move",
+    "seconds": 11,
+    "headline": "ICE ON ONE SIDE, REEF ON THE OTHER",
+    "lines": [
+      {"t": "TURN TOO EARLY: GLACIAL ICE AT SPEED", "cite": "VZ-108"},
+      {"t": "WAIT TOO LONG: BLIGH REEF", "cite": "VZ-108"}
+    ],
+    "source": "FACTS_LEDGER row VZ-108",
+    "forbid": "The Board's own framing of the bind (VZ-108). The map states the two hazards; it does not grade the man between them."
+  },
+  {
+    "id": "valdez_ae006",
+    "beat": "AE006",
+    "act": "ACT_2",
+    "kind": "system_map",
+    "seconds": 12,
+    "headline": "WHO COVERS THE CHIEF MATE",
+    "lines": [
+      {"t": "IN PORT, THE CHIEF MATE RUNS ALL CARGO — WIDELY PRACTISED", "cite": "VZ-201"},
+      {"t": "HIS WATCHES FALL TO THE OTHER TWO MATES", "cite": "VZ-201"},
+      {"t": "WHO THEN STAND SIX ON, SIX OFF", "cite": "VZ-202"}
+    ],
+    "source": "FACTS_LEDGER rows VZ-201 and VZ-202"
+  },
+  {
+    "id": "valdez_ae007",
+    "beat": "AE007",
+    "act": "ACT_2",
+    "kind": "comparison",
+    "seconds": 10,
+    "headline": "PANAMA / CALIFORNIA",
+    "lines": [
+      {"t": "THE MANNING LEVEL WAS SET FOR THE VALDEZ-PANAMA TRADE", "cite": "VZ-210"},
+      {"t": "THAT TRADE ENDED IN DECEMBER 1988 — SHE THEN RAN VALDEZ-CALIFORNIA", "cite": "VZ-210"}
+    ],
+    "source": "FACTS_LEDGER row VZ-210",
+    "forbid": "The decisive detail (ledger's own words): the crew number was a promise made about a different route. The card states both routes and the date, nothing more."
+  },
+  {
+    "id": "valdez_ae008",
+    "beat": "AE008",
+    "act": "ACT_2",
+    "kind": "quote_card",
+    "seconds": 8,
+    "headline": "THE LOOKOUT ROUTINELY WENT UNATTENDED",
+    "quote": "As a result, on the EXXON VALDEZ, the lookout position routinely went unattended when the AB was called for other tasks or took a break.",
+    "attribution": "NATIONAL TRANSPORTATION SAFETY BOARD",
+    "source": "FACTS_LEDGER row VZ-208",
+    "forbid": "Verbatim from VZ-208, never truncated past the 'As a result'."
+  },
+  {
+    "id": "valdez_ae009",
+    "beat": "AE009",
+    "act": "ACT_3",
+    "kind": "list_build",
+    "seconds": 13,
+    "headline": "FOUR THINGS WITH NO EXPLANATION",
+    "lines": [
+      {"t": "NO PROGRAMME TO ENSURE HOURS-OF-SERVICE RULES WERE KEPT", "cite": "VZ-216"},
+      {"t": "NO PROCEDURE FOR A RESTED DECK OFFICER AT DEPARTURE", "cite": "VZ-216"},
+      {"t": "PERFORMANCE RATED PARTLY ON WILLINGNESS TO WORK OVERTIME", "cite": "VZ-216"},
+      {"t": "WORK LOADS INCREASED ACROSS THE FLEET, BEFORE AND AFTER", "cite": "VZ-216"}
+    ],
+    "source": "FACTS_LEDGER row VZ-216",
+    "forbid": "The Board 'could find no reasonable explanation' for these four -- the card lists, it does not editorialise beyond that finding."
+  },
+  {
+    "id": "valdez_ae010",
+    "beat": "AE010",
+    "act": "ACT_3",
+    "kind": "document_blowup",
+    "seconds": 9,
+    "headline": "RATED ON WILLINGNESS TO WORK OVERTIME",
+    "lines": [
+      {"t": "AN APPRAISAL CRITERION THAT REWARDS EXCESSIVE HOURS — NTSB", "cite": "VZ-216"}
+    ],
+    "source": "FACTS_LEDGER row VZ-216",
+    "forbid": "Illustrate an appraisal form with a highlighted row; no legible generated document text (fabricated_record)."
+  },
+  {
+    "id": "valdez_ae011",
+    "beat": "AE011",
+    "act": "ACT_3",
+    "kind": "list_build",
+    "seconds": 13,
+    "headline": "SIX RECOMMENDATIONS. FIVE ABOUT STAFFING.",
+    "lines": [
+      {"t": "M-90-26 — END APPRAISALS THAT REWARD LONG HOURS", "cite": "VZ-401"},
+      {"t": "M-90-27 — MANNING THAT PREVENTS EXCESSIVE CARGO-WATCH HOURS", "cite": "VZ-402"},
+      {"t": "M-90-28 — FORBID SIX-ON, SIX-OFF SHARED WATCHES", "cite": "VZ-403"},
+      {"t": "M-90-29 — TWO LICENSED OFFICERS THROUGH PRINCE WILLIAM SOUND", "cite": "VZ-404"},
+      {"t": "M-90-30 / M-90-31 — THE ALCOHOL PROGRAMME AND ITS SUPERVISION", "cite": "VZ-405"}
+    ],
+    "source": "FACTS_LEDGER rows VZ-401 to VZ-406",
+    "forbid": "Recommendation ids verbatim. The alcohol line stays LAST and un-headlined: the film's thesis is the manning level, and the record's own order is kept."
+  },
+  {
+    "id": "valdez_ae012",
+    "beat": "AE012",
+    "act": "ACT_4",
+    "kind": "hero_number",
+    "seconds": 12,
+    "headline": "5,000,000,000 / 2,500,000,000 / 507,500,000",
+    "style": "punch",
+    "words": ["$5,000,000,000", "$2,500,000,000", "$507,500,000"],
+    "bigSize": 130,
+    "prefix": "$",
+    "lines": [
+      {"t": "THE JURY: $5 BILLION PUNITIVE AGAINST EXXON", "cite": "VZ-506"},
+      {"t": "THE NINTH CIRCUIT: REMITTED TO $2.5 BILLION", "cite": "VZ-508"},
+      {"t": "THE SUPREME COURT'S CAP: $507.5 MILLION", "cite": "VZ-510"}
+    ],
+    "source": "FACTS_LEDGER rows VZ-506, VZ-508, VZ-510"
+  },
+  {
+    "id": "valdez_ae013",
+    "beat": "AE013",
+    "act": "ACT_4",
+    "kind": "comparison",
+    "seconds": 8,
+    "headline": "1 : 1",
+    "value_a": 1,
+    "value_b": 1,
+    "lines": [
+      {"t": "PUNITIVE TO COMPENSATORY — THE FAIR UPPER LIMIT IN MARITIME CASES", "cite": "VZ-509"}
+    ],
+    "source": "FACTS_LEDGER row VZ-509",
+    "forbid": "The holding is about maritime cases like this one (VZ-509) -- the card may not generalise it to all punitive damages."
+  },
+  {
+    "id": "valdez_ae014",
+    "beat": "AE014",
+    "act": "ENDING",
+    "kind": "hero_number",
+    "seconds": 7,
+    "headline": "NINETEEN YEARS",
+    "style": "number",
+    "big": "19",
+    "bigSize": 340,
+    "label": "FROM THE GROUNDING TO THE SUPREME COURT — 25 JUNE 2008",
+    "value": 19,
+    "suffix": " YEARS",
+    "source": "FACTS_LEDGER row VZ-511"
+  },
+  {
+    "id": "valdez_ae015",
+    "beat": "AE015",
+    "act": "ENDING",
+    "kind": "timeline",
+    "seconds": 9,
+    "headline": "WHAT IS STILL OPEN",
+    "lines": [
+      {"t": "NTSB/MAR-90/04 — 257 SCANNED PAGES THIS FILM COULD NOT READ", "cite": "Open items"},
+      {"t": "THE PROBABLE CAUSE THEREFORE GOES UNSTATED HERE", "cite": "Open items"},
+      {"t": "THE ALASKA SPILL COMMISSION REPORT · THE OIL POLLUTION ACT OF 1990 — NOT YET READ", "cite": "Open items"}
+    ],
+    "source": "FACTS_LEDGER open items",
+    "forbid": "R3: the full report is unread (OCR pending owner approval) -- NO card states a probable cause. The script says this on screen; this card is that honesty made visible."
+  }
+]

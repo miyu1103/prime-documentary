@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 1/24（8枚）
+区分: HOOK / ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S001.png
+   [S001]  flags: 
+   A pair of wide painted double doors on the front of a small wood-shingled roadside building at night, both standing open, warm light spilling out onto the step, a bright porch lamp burning above them
+
+2) S002.png
+   [S002]  flags: 
+   The interior of a small entrance vestibule, brightly lit by one ceiling fixture, a single narrow doorway on the far side standing open to a dark room beyond
+
+3) S003.png
+   [S003]  flags: 
+   A tape measure stretched across the width of a single interior doorway, close-up, a bright work lamp raking across the frame, no numerals legible
+
+4) S004.png
+   [S004]  flags: 
+   A mechanical stopwatch lying on a dark bench under a hard bright lamp, second hand mid-sweep, no numerals on the dial
+
+5) S005.png
+   [S005]  flags: 
+   A small American roadside building at night in winter, wood shingle siding, a gravel car park, a single bright pole light, bare trees behind
+
+6) S006.png
+   [S006]  flags: 
+   Close-up of a green emergency exit sign glowing above a doorway in a dim corridor, its lens blown out bright, no lettering
+
+7) S007.png
+   [S007]  flags: 
+   A small single-storey wood-framed commercial building seen wide in flat winter daylight, shingle walls, a low roof, a gravel lot, grey sky
+
+8) S008.png
+   [S008]  flags: 
+   The same building from the road in brilliant winter sun, snow at the edges of the lot, a wooden ramp and steps up to the front doors

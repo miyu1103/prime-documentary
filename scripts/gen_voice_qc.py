@@ -1,7 +1,7 @@
 """Generate voice_qc.v001.json from provenance data."""
 import json, pathlib, datetime
 
-DRAFT = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft")
+DRAFT = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft")
 PROV  = DRAFT / "provenance.v001.json"
 OUT   = pathlib.Path(
     r"C:\Users\aab15\Documents\prime-documentary\episodes"

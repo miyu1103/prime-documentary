@@ -87,6 +87,13 @@
         "type": "string"
       }
     },
+    "accepted_deviations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Ship-gate hard-failure ids the owner formally accepts as deviations for this exact target (e.g. runtime_band, padding). Honored by upload_schedule_case_v001.py only for target_type=edit approved records."
+    },
     "expires_at": {
       "type": [
         "string",

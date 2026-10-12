@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-010-kelo",
+  "revision": "v001",
+  "generated_at": "2026-06-21T17:48:35.023493+00:00",
+  "status": "PASS",
+  "checks": {
+    "final_qc_pass": true,
+    "video_hash_matches_youtube_meta": true,
+    "thumbnail_hash_matches_youtube_meta": true,
+    "rights_clear": true,
+    "privacy_target_private": true,
+    "publish_or_schedule_requested": false,
+    "public_release_gate_closed": true,
+    "script_claims_locked": true,
+    "real_person_likeness_risk": false
+  },
+  "video_sha256": "sha256:8de1cc21c44853ffc81594d9e22f4dfcc19561e191db4fd979f6af6b07ac3258",
+  "thumbnail_sha256": "sha256:8378ed0b32e6fe359a600b39fc128c1efc575120ca7cb6d4d508a044cee9afd1",
+  "allowlist": {
+    "upload_privacy_status": [
+      "private"
+    ],
+    "forbidden_without_owner_approval": [
+      "public",
+      "unlisted",
+      "publishAt",
+      "schedule_public_release"
+    ]
+  }
+}

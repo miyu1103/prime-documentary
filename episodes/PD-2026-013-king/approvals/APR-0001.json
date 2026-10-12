@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-013-king",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T06:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T06:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner delegated EP10-15 topic selection to Claude and approved proceeding to the end. Content/direction sign-off for the Maryland v. King script v001, bound to content_hash sha256:914727b123acf960f84a2d2300a70cec63675a72c82ffd4ffdc0da6943249e66 — re-approval if revision/hash changes (rules/12). Facts web-verified 2026-06-20 against the primary opinion (569 U.S. 435). Carries forward provided no fact or claim changes.",
+  "conditions": [
+    "FRAMING: never imply the DNA swab was the purpose of/pretext for King's arrest — he was arrested for assault; the rape was a downstream database match (CLM-0004/0005).",
+    "Handle the sexual-assault subject soberly; keep neutral (public safety vs privacy). Alonzo King by role, neutral; no real-person likeness in AI visuals.",
+    "Capture durable content hashes for SRC-0001/0002/0003 before publish."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-013-king/03_script/script.annotated.v001.json"
+}

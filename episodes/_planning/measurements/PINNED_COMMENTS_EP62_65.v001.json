@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "generator": "authored for EP62-65 before upload, same convention as PINNED_COMMENTS.v001.json",
+  "channel_id": "UCuQPtAz1rca9eJ4xhvX0yKA",
+  "status": "drafted, not posted -- these four videos are not uploaded yet",
+  "why": "The channel has 5 top-level comments in total across 56 public long-forms, 4 of them written by the channel. A pinned comment is the only surface that has never been tried and costs nothing. Each states one checkable fact from the film, then asks something a viewer can answer in one line from their own life. No emotional commands: the audience measures 92.5% male, 75.8% aged 55+.",
+  "posting_note": "The Data API cannot pin -- there is no pin parameter and no pin endpoint. Post via commentThreads.insert, then pin with the Chrome CDP profile in scripts/studio/ (the same mechanism used for related-video links). Post AFTER each video is public; a comment on a private video is not visible.",
+  "comments": [
+    {
+      "episode": "PD-2026-062-greene",
+      "video_id": null,
+      "scheduled": "2026-08-16 12:00 JST",
+      "replaces_existing": false,
+      "text": "The process servers testified that children pulled the papers off doors, so they had been told to tape them up high. The tenants say they learned about the case when the writ of possession arrived -- after the judgment and after the appeal window had closed. If a notice about you was taped to your door today and it blew off, would you have any way of knowing it had been there?"
+    },
+    {
+      "episode": "PD-2026-063-correa",
+      "video_id": null,
+      "scheduled": "2026-08-17 12:00 JST",
+      "replaces_existing": false,
+      "text": "She was handed number 47 and waited around two hours with chest pains. No physician saw her, no vital signs were taken, and at trial the hospital could not produce a single record that she had been there at all. What is the longest you have waited in an emergency room before anyone measured anything?"
+    },
+    {
+      "episode": "PD-2026-064-memphis",
+      "video_id": null,
+      "scheduled": "2026-08-18 12:00 JST",
+      "replaces_existing": false,
+      "text": "One house, one family, and two accounts -- because a second bill came addressed to Willie C. Craft instead of Willie S. Craft. The power was cut five times over it. Has a utility or a bank ever opened a second account in your name off a typo? I want to know how often that actually happens."
+    },
+    {
+      "episode": "PD-2026-065-marmet",
+      "video_id": null,
+      "scheduled": "2026-08-19 12:00 JST",
+      "replaces_existing": false,
+      "text": "The arbitration clause sent every dispute to a private arbitrator, with one exception written into the same sentence: claims to collect late payments owed by the patient. Those stayed in court. If you have ever signed an admission agreement for a parent, did anyone read that paragraph out to you?"
+    }
+  ]
+}

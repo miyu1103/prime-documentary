@@ -1,0 +1,76 @@
+{
+  "episode_id": "PD-2026-021-dbcooper",
+  "revision": "v001",
+  "status": "BLOCKED",
+  "blocked_reason": "Hero image set incomplete and first still is below the 4K long-edge image gate; final render and thumbnails cannot be completed to acceptance.",
+  "approval_preflight": {
+    "approval_file": "episodes/PD-2026-021-dbcooper/approvals/APR-0001.json",
+    "file_decision": "pending",
+    "operator_prompt_claim": "approved",
+    "note": "Script was treated as locked and was not rewritten. Publish/upload remains a separate owner gate."
+  },
+  "image_preflight": {
+    "required_count": 46,
+    "found_count": 1,
+    "found": [
+      {
+        "name": "EP21-IMG-001.png",
+        "width": 1672,
+        "height": 941,
+        "long_edge_px": 1672
+      }
+    ],
+    "missing": "EP21-IMG-002.png..EP21-IMG-046.png",
+    "source_dir": "H:/pd-media/episodes/PD-2026-021-dbcooper/05_visuals/selected",
+    "local_image_generation_performed": false
+  },
+  "completed_work": {
+    "voice_provider": "elevenlabs",
+    "voice_chunks_ok": 61,
+    "voice_master": "H:/pd-media/episodes/PD-2026-021-dbcooper/06_audio/master_elevenlabs_v001/voice_master.v001.wav",
+    "audio_mix": "H:/pd-media/episodes/PD-2026-021-dbcooper/08_edit/dbcooper_final_mix.v001.wav",
+    "captions_srt": "episodes/PD-2026-021-dbcooper/08_edit/captions.v001.srt",
+    "caption_cues": 492,
+    "factory_assets_staged": 64,
+    "factory_asset_buckets": {
+      "aviation": 8,
+      "forest": 8,
+      "crime_police": 8,
+      "documents_paper": 8,
+      "money": 8,
+      "urban_night": 8,
+      "surveillance": 8,
+      "atmosphere": 8
+    },
+    "remotion_roughcut": "remotion/src/data/dbcooper_roughcut.ts",
+    "factory_gate_composition": "remotion/src/compositions/DBCooperPremium.tsx",
+    "asset_usage_report": "episodes/PD-2026-021-dbcooper/08_edit/asset_usage_report.json",
+    "motion_report": "episodes/PD-2026-021-dbcooper/08_edit/motion_report.json",
+    "image_preflight_report": "episodes/PD-2026-021-dbcooper/05_stock/image_preflight.v001.json"
+  },
+  "measurements": {
+    "voice_master_seconds": 1547.358,
+    "audio_mix_seconds": 1547.358,
+    "audio_mix_lufs_i": -14.2,
+    "audio_mix_lra": 2.1,
+    "caption_last_end_seconds": 1538.358,
+    "caption_format_violations": 0
+  },
+  "independent_gate": {
+    "command": ".venv/Scripts/python.exe scripts/check_final_acceptance.py 21 --json",
+    "exit_code": 1,
+    "status": "FAIL",
+    "hard_failures": [
+      "render_present: final render not found",
+      "thumbnail_ready: 0 thumbnails at 1280x720, selected=NO"
+    ],
+    "passing_checks": [
+      "voice_is_master",
+      "captions_final",
+      "caption_format",
+      "factory_used"
+    ]
+  },
+  "next_required_action": "Provide EP21-IMG-001.png through EP21-IMG-046.png at 4K long-edge quality in the selected hero image directory, then rerun scripts/build_ep21_dbcooper_final.py followed by scripts/check_final_acceptance.py 21 --json, scripts/check_dynamics.py 21, and scripts/check_runtime_band.py H:/pd-media/episodes/PD-2026-021-dbcooper/08_edit/final.mp4.",
+  "created_at": "2026-06-30T16:45:00+00:00"
+}

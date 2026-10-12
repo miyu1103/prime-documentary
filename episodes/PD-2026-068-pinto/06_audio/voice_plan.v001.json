@@ -1,0 +1,2685 @@
+{
+  "episode_id": "PD-2026-068-pinto",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "September, nineteen seventy-three.",
+      "text_sha256": "sha256:deadfa5934f3fffddc2eae36162d5acfb19b89c22739a54ebbafa76785c26703",
+      "idempotency_key": "sha256:7031a72088f1cd81ac593a335dd6a9a30c3b7ad8922194855df60456e29e3302"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Two engineers at Ford finish an eight-page report and send it to the federal government.",
+      "text_sha256": "sha256:2b003a31a1c206ff2b5f848fa8b27e1bd13f88bfc7ef29e1231220ad7136451d",
+      "idempotency_key": "sha256:2baa23e5349d74e907756ac091f62bea92c5f93269971553ec325259f0032e6d"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "On page six there is a table.",
+      "text_sha256": "sha256:b8689df9779b539b1a03717a7d9e1bb9f1c9d807361a0c16d2694a4d31af8e98",
+      "idempotency_key": "sha256:69acc4b49863e430e0c1d2fd1567540762ecbc88ff1deff678f83487fa37ee4c"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "It counts deaths, and it prices them.",
+      "text_sha256": "sha256:e8340304636e732613f8b3bc81150f59816e68199803ce1c419a7187cf7c58c2",
+      "idempotency_key": "sha256:9771af2deca0f117b86f2c93f7ca96171eaa6723d76e3d862e61c009db42863d"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Four years from now a magazine will reprint that table, and the country will decide it knows what Ford did.",
+      "text_sha256": "sha256:476897a7d22acef807714da574d2fb226bfd66f2f1ef17481c30f3eb1be54bb4",
+      "idempotency_key": "sha256:f510fab85a64b6ed221795b20270b915df2db78fa523ffbc0f36af7b55db34d0"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Almost nobody will notice what the table is about.",
+      "text_sha256": "sha256:746341dced22090ec8c9e5084ac83938a6b34d3d055881817b086105e976580b",
+      "idempotency_key": "sha256:a464ded80f2a0bb579a26d5d9aa6bf8be87bfc71d40c70dbc4bdc509bd11a5eb"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Two of those eight pages describe a car rolling over.",
+      "text_sha256": "sha256:c286e21140c274af5fd9b8b9fc629d8972026541f46a2954683da1fa5342dd68",
+      "idempotency_key": "sha256:5d2d9e4e6b5e0611d8fedb335d66cd69f2f11ef03b14d3fd6c252c22c364142f"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "One more thing before we start, because it changes how everything after it should be heard.",
+      "text_sha256": "sha256:81aefff64514da42de66f24bc44b91957affaa0406a1d2571a4aa6c623dc568c",
+      "idempotency_key": "sha256:c56e2265c0d2e970c20913700df0ba6d500c73a9ded023af9cc243e7ad669046"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Most of what is known about this case comes from a single appellate opinion, and that opinion says of itself that it viewed the evidence in the light most favourable to the side that had already won.",
+      "text_sha256": "sha256:351fc2c3c702505329b3c99e040571c25042af635c26a4e0a4ee62df9e82983e",
+      "idempotency_key": "sha256:f262a2f84050e249b24a4c0342027f6f9985c32f032191f81a8e201326f49eb7"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "It is not a neutral account.",
+      "text_sha256": "sha256:1ac5971611b50c4e617636ffe27247e08de28161b1cae289616fb01178ab87e8",
+      "idempotency_key": "sha256:d2c1dfc2004fded95e884b355e498ce79df40ee202f3752520597353e1f8edf1"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "It was never trying to be.",
+      "text_sha256": "sha256:3fb14c606dc1e6aa953ea5dc73c4170c7de6d380349a9cc3fe2fe581ebea8077",
+      "idempotency_key": "sha256:a4af8637e6aacaa7e0654771f1a30f55ee0804eb9e47ca2db4de6b2c7aa1aacc"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In nineteen sixty-eight Ford began designing a new subcompact.",
+      "text_sha256": "sha256:16dc5529cdb81b4be4e958cb1d81f3e761c60f0e5f794c1e7693073f90b2c773",
+      "idempotency_key": "sha256:41e99659dfed3775965fc543c8add4723e11b8bd11114e52c235ee5e4e9190f6"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A vice president named Lee Iacocca conceived the project and was its moving force.",
+      "text_sha256": "sha256:5ba91b1f7e3b06f5271989150cea33d282e263148d6b4170685cc7499cfd47db",
+      "idempotency_key": "sha256:f4acd70e15e586cdb088db93a0632c750b90a75f5b3c909f20a1386cb8b0e82d"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The objective was a car at or below two thousand pounds, to sell for no more than two thousand dollars.",
+      "text_sha256": "sha256:73e8e2e1ba214f4b7911ddd96ce9de8a2042e1683b2c085f3d5ebf06eccc67e5",
+      "idempotency_key": "sha256:76d017d338d923268f254d0c5b63e49f9bb023ba58dfe7f58cca72a168366f98"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The court that later heard the case put the next part plainly.",
+      "text_sha256": "sha256:16b03c71f9c0e0c744d5677fd23a346ca482b466a608e2ee04f71dbf4597f06f",
+      "idempotency_key": "sha256:a34b2db206a4bce6b9fd50e9b77d83fbf85b5d533999304331807a397ece5ba6"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Pinto was a rush project, so that styling preceded engineering and dictated engineering design to a greater degree than usual.",
+      "text_sha256": "sha256:89139cedebb085e2db44c57423e03ca1911ad90218867f8d0a49f872925d0c7e",
+      "idempotency_key": "sha256:14eb48bb73514457e61fc4d37dbf8968774b19d7777a6566d59592537d550a7a"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Among the engineering decisions dictated by styling was the placement of the fuel tank.",
+      "text_sha256": "sha256:9c3a145e64c6b5317295bda3de8a37315471c39118f67438cd71d4f9551cc186",
+      "idempotency_key": "sha256:f2beb2f24a118767488b95e22178fc1c8de2d72757a879a1eea070deacce93db"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The tank went behind the rear axle.",
+      "text_sha256": "sha256:5c078adc2bafaae19a434cc80ea6fea58397b20d4ff46231c911c3f46e9a841a",
+      "idempotency_key": "sha256:d0e63c4ef48077e055ce7e2dca0085230ed69f71c2356516b63521ac0116aca5"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There was a reason, and it was not a sinister one.",
+      "text_sha256": "sha256:c4bacdf3fc344d029077eb62fd49fbc96a1be62a551e44402690d9e7212f65d0",
+      "idempotency_key": "sha256:a926cc1cd05260a02af31846823ad7a4755d49568956fc7065b48b3e1439c185"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A law professor who read the trial record put it this way: if the fuel tank were located above the axle, the Pinto would have been left with a very small trunk.",
+      "text_sha256": "sha256:3299325adc0b1cd92638d74613782385a78c64178eb4413c859dfafc29c7de96",
+      "idempotency_key": "sha256:d1609a5d1e5826b4c35fca24f905ee4b58aff67fed9c74438d36e05bde1e1853"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That location was not unusual.",
+      "text_sha256": "sha256:10306e65b0318a4d5f07127bedc1782a03b3c42be3dfdbd48696c2aa4bfd5176",
+      "idempotency_key": "sha256:996e2310c5bbc9a181584646617165421dbda0c11e8ebd942f46ea98a5d59b7b"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It was a commonplace at the time in American cars.",
+      "text_sha256": "sha256:c4f7bcbad869b6badd9bce8fef98051f377f2b7194a9459c273460744ecae046",
+      "idempotency_key": "sha256:814aaf0736b5efefe5fa87e97d3218da18707317d819848b216cdba051263c7f"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "What was unusual was what was left behind it.",
+      "text_sha256": "sha256:f1d7c707b2abd294c404203c983eaba9362b90fdf0a08caac3341183ddfab7df",
+      "idempotency_key": "sha256:d16933b7cabe8fdf32f0bb68cee82ae7c35283e605235d195b6948db47b6f9b5"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Between the back of the tank and the rear of the car there were nine or ten inches of what engineers call crush space.",
+      "text_sha256": "sha256:11f37b9eda99af6ecd1f343784b06c0060e96fbc229e04a2328a0470f4fbfe36",
+      "idempotency_key": "sha256:3d42bc9528e48aa89ebc5a1747b1d2b256bdaec3f940b9363bf371ad2b1af7a9"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The opinion says nine or ten.",
+      "text_sha256": "sha256:da26f30bdd8eff6e0e04d07dc95820db9a3ba0b268b063dfe89ff54598f15027",
+      "idempotency_key": "sha256:df0c53bf34790fb36fd80567c0b269b087944d57808bce20299c3fbde34b4982"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Schwartz says nine.",
+      "text_sha256": "sha256:74d2200d2ba6fbf09520a77238fe737e8ae354ea1407029985541d9173b1ccb6",
+      "idempotency_key": "sha256:e4e5b42a26d53f3107ec01667ec3ae0adf432a399a5db442940ff09af6f2e997"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Either way it is less than any other American automobile, and less than any Ford subcompact built overseas.",
+      "text_sha256": "sha256:74961ceff50f93bd9bca3887472b0a5aa16e69dfc8e9e70c7c854debcb543336",
+      "idempotency_key": "sha256:c379c9c4f5d74b4fa05e0a0070e1f36d6bb0f580c1276d5e1c03a1bca4a08422"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The bumper, in Schwartz's words, was essentially ornamental.",
+      "text_sha256": "sha256:f2ded08a08ca6f6660e3fdd397e0453b71d70875e3260941bc740e180d769d73",
+      "idempotency_key": "sha256:3c3fae92bd3518bc5fa03ec861786efc2b60075c594c680f9538500295748404"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And here is the kind of sentence this film keeps having to say.",
+      "text_sha256": "sha256:bf8f861911ca2a5217d0146bfa65aaeafc40f5ccb36861c4189ebb4c8d739c7f",
+      "idempotency_key": "sha256:bf9e4d44c6fabe260f318cb5eb3c918f51c9fa6c2f1e6559db2fbae331e8d292"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At the criminal trial eight years later a witness called by the prosecution was asked about that bumper, and said it was about the same as the ones on the Gremlin, the Vega and the Dodge Colt.",
+      "text_sha256": "sha256:42aad52e3745fdfd0f92436d2ba7d8980a147cee1e2d7ed6db0afca2fe580c32",
+      "idempotency_key": "sha256:36b0007f464fd19166f5d84c0205c6328cf38469e8fcde4f19dca0a41609f099"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "I would say they were all bad.",
+      "text_sha256": "sha256:84053f5a7a873d6e14e64efe9bb071e50fa52d49263e7bf01587500fad49d1f6",
+      "idempotency_key": "sha256:b2163f5fafae21c02c06d0dd844c552258be2f398cc9680553d2aadd50b72ba0"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Ford crash-tested the car.",
+      "text_sha256": "sha256:41da526ba88c379dcb8df6911c7bc6b00d977d015197898221d9a4974a0a97e0",
+      "idempotency_key": "sha256:a82fd7fbbc9a7d08c605044dc0310ec23e9d419d53a44f47ec1dae82282fb11b"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The tests were run against a fuel-system standard the federal government had proposed but not yet imposed.",
+      "text_sha256": "sha256:dead984608ea1f4ac680e608d3582e18780d66cd350ea717de81b0d71e80bbd9",
+      "idempotency_key": "sha256:e3cf90abea01b281d62f59fb2cd956f0fb986e9f83d97dd0e25e33fccd663174"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The results are in the record, and they are not ambiguous.",
+      "text_sha256": "sha256:705d8baede974bc9db03641b38d556c3354df0bc63ef75a176679c18f747b63e",
+      "idempotency_key": "sha256:82bedfb8143d8edec04cc587ea924a91e1a4b549418a8c7310b0c973ccfe211b"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The crash tests revealed that the Pinto's fuel system as designed could not meet the twenty-mile-per-hour proposed standard.",
+      "text_sha256": "sha256:4bcb9fdabf6d7395390c1d3f19189c00d164185ed5ee72bec703b282c9805865",
+      "idempotency_key": "sha256:0be9f56cced89b455013b1a0d905b9fb676db8b7a33f71414a02a1a6bdebbba7"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At twenty-one miles an hour, prototypes had the tank driven forward and punctured.",
+      "text_sha256": "sha256:5731acb3f9075e6603c63f86734afcf38ffe217d4d2d9b8f8364507469560b9d",
+      "idempotency_key": "sha256:e1930495482e5471bd1098fd21805fd395ccb818d2937ce24fcff51e7e1d1ed4"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A production car struck at the same speed into a fixed barrier had the filler neck torn away from the tank, and the tank itself punctured by a bolt head on the differential housing.",
+      "text_sha256": "sha256:4fcb80305653b73f693447b5f4656a917bc09b771a485bed9e332ffea28173fe",
+      "idempotency_key": "sha256:2c524c779bb497df542b804a995fc992582eab88e9a3aac8a2ce64ee577f216a"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Bolts.",
+      "text_sha256": "sha256:c8526b05864a88472e1e9b68ca44282641e1728665c0730f84b25f25ad0a1955",
+      "idempotency_key": "sha256:496ab1203b11907e3fc2c1f65871cbb93f4d5148b5b9479e4afa541072450aef"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On the housing.",
+      "text_sha256": "sha256:c6ae6c6a7dad33e6c5a5609d528eb9cb81be43beed24c96af9d1fbecf171f3d3",
+      "idempotency_key": "sha256:96cd564c233da6e5ce322aebe423dae8f673be5a54c6f3d86dd0a2259203e206"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Facing the tank.",
+      "text_sha256": "sha256:44ebdd338236a38ed7645f944e91cbdd25b40fc3b8aa9c4cc80e534c4d3c60e4",
+      "idempotency_key": "sha256:bf6c86ba05ed1d1bb4f2bacae8f7f9c34c028508cb1370d5b85c904295a50d1d"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The federal regulator says the same thing in its own file.",
+      "text_sha256": "sha256:75085734e4750c118c6c990cf0953106172461ec78c6c7b74ec487fa1ed6bdf1",
+      "idempotency_key": "sha256:709cd23e8ed2e64c910c8539d6e8ea47e0bf71d15b3250b47eb9269ecb79aaaa"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Its investigation report of nineteen seventy-eight records that the Pinto performed badly in these initial crash tests, and that Ford responded by somewhat modifying the Pinto's rear design before production began.",
+      "text_sha256": "sha256:7a4d5cc86122977e8a332acaa8e1f68f36a75646e94a5678ac9ace459f7c41e4",
+      "idempotency_key": "sha256:84685c64c49cfe74e67305905107c9f2998440514895bf40794ff2461fab17db"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The fixes had prices, and the opinion lists them.",
+      "text_sha256": "sha256:03808407310cdd68b219020b5798ebdea9b316013d4ec3faed7278b30555b29b",
+      "idempotency_key": "sha256:55972d883da6543d2af6ded4e5525e13601be62ccf6816087f653fd5874ebcf3"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A smooth differential housing, two dollars ten.",
+      "text_sha256": "sha256:f180b924300b9570fb697df35600722385f62714cb1d48e5b7193bd3ad9744e2",
+      "idempotency_key": "sha256:334ee8c00080b2eddb1ae7d36eaac5838da55889ab0b20bf94c76faf55f1f614"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A shock-absorbent flak suit around the tank, four dollars.",
+      "text_sha256": "sha256:493a1e3408961b28bdbc89d8d4c3475ba37ccd7c7f15584ef8244a663137127a",
+      "idempotency_key": "sha256:270ecf78c08f8b6ee0decb977d12ce676815f869b231ddb4546a9ad56ed26d3a"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A nylon bladder, between five twenty-five and eight dollars.",
+      "text_sha256": "sha256:5adc656dd1178a1a7717337cc592059813d9187b39728463a8cdf1b50acd29fc",
+      "idempotency_key": "sha256:ab8cf3bf25b699e688d20d9155069f327022a402414b3978c8ebed4e4f8c7b15"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Eight more inches of crush space, six dollars forty.",
+      "text_sha256": "sha256:cf94f5f21c3d6970d96dfccd02cf49f8ff8a1c9421c209659f4c9e8b4ba3a2d0",
+      "idempotency_key": "sha256:3c53a94d43ab2b33355b383aef7ad312e5078039980829823f6f33419ee4d6fd"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And one combined figure.",
+      "text_sha256": "sha256:c1247eebc21dd3b8cd7f8db7a8829f18fd2cde55867d30d7b3a73eade43d8536",
+      "idempotency_key": "sha256:a67951e036249fcb781535c03597e9fa7892967b4b423facf269454990579d47"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Another number is going to try to take its place.",
+      "text_sha256": "sha256:7ee717c35791f94014ae75c4251cba6baea0358f1ad6d869172c83ffad750b7f",
+      "idempotency_key": "sha256:b5fc7130872b68167f58fbd6639cdba3af3149b140dcb65198c09a4b26a45fba"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Equipping the car with a reinforced rear structure, a smooth axle, an improved bumper and additional crush space, at a total cost of fifteen dollars and thirty cents, would have made the fuel tank safe in a rear-end collision at thirty-four to thirty-eight miles an hour, by a vehicle the size of a Ford Galaxie.",
+      "text_sha256": "sha256:16afb7c6d9cbfc84ab93094fcb70ea3491175a383b1c988fd04d4008ca420410",
+      "idempotency_key": "sha256:13c09b2e41a2f27faa9e044538ae2399d42e5893134fe56d4341b635564f63a5"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Fifteen thirty.",
+      "text_sha256": "sha256:88cc36c394833cf25d5e076266fd19ee4398942047ce4ec62bb41eb7c23c6707",
+      "idempotency_key": "sha256:22c23e0266694cf663d2b390371b770a531994dbd87f943dca5196fed01c4316"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Hold on to it.",
+      "text_sha256": "sha256:245fc32d6abd5d8efe0af4f94012dcf58151c1531d010d70ced53f760cf2386e",
+      "idempotency_key": "sha256:2d80eea5e9558fd989f58fd37e3bcc4ba8111c7f5ecf0c8e0ecb7ef6dedb1f41"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The results of those tests did not stay with the engineers.",
+      "text_sha256": "sha256:83b16f6a5f926160ea75eee5ca1b666739faf7652697dacd3554fa4fb1f10e0b",
+      "idempotency_key": "sha256:50208d4b66d0ff0569feadb30f0997877a0f12ee034e07ae03274d6d736cd884"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The court found that the Pinto crash test results had been forwarded up the chain of command to the ultimate decision-makers, and were known to the Ford officials who decided to go forward with production.",
+      "text_sha256": "sha256:b15f2d6a02f30ccd0821192862f13b58118b11e8e8835eb42ffe5ec2ef4eb658",
+      "idempotency_key": "sha256:f7e9509aa26e989fcf1353c508e0eb35364f72af6019df5e8a5cd18bec02257a"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In April nineteen seventy-one there was a product review meeting.",
+      "text_sha256": "sha256:1fcf7954381ee0c52ade32eb603077d6b00c326e508dc065e3e097f112b64755",
+      "idempotency_key": "sha256:8ffc7ed20202f854f9da9c65db7e91c266773fecab125ef69080cb5738b028f4"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A report was handed round.",
+      "text_sha256": "sha256:a1cdcc99d092f49ca31609b2521e223137672a39f9c4a736766b8a80322f3579",
+      "idempotency_key": "sha256:90dd6a1b632f2ec458155ea0c139231e102e609917b5efa1ccbab293cb16b2e3"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The court describes it as a report prepared by Ford engineers pertaining to the financial impact of a proposed federal standard on fuel system integrity, and the cost savings which would accrue from deferring even minimal fixes.",
+      "text_sha256": "sha256:14434cc7823d6849da6b5bd55f7bfe14641ce1579afdc780378126cd790be73b",
+      "idempotency_key": "sha256:d041c6133e50f7bebd40c8a47814c711158966b8979f36b39a785cde4507935e"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "This document is not the famous one.",
+      "text_sha256": "sha256:5949c23b122058516ef0d80f197fb27449bab78e8a79e6fc06d198599fc6865c",
+      "idempotency_key": "sha256:ddcb932ec333c27da5fbebd295e1bb196bac000347b1f27008a2f39a9d97f53e"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "This one was in evidence.",
+      "text_sha256": "sha256:1517dae1d89ffda96a5fb5c3fdafe8181eb25272aa0c07a30c99d16e9fae6a50",
+      "idempotency_key": "sha256:acc34b7ad858af5281c626473e1a12285cfbec66a2fa843e79309ce54b6eade5"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is quoted in the opinion's own footnotes, under the heading Fuel System integrity Program financial review, and it recommends a delay.",
+      "text_sha256": "sha256:c59b8943206c7b62a9730327bff8211b017735556867b0296609c5112e89789f",
+      "idempotency_key": "sha256:40d59f3a28db784c34ecb7bb500a81471dc2874417ad3cf474da54d952bab89b"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Its recommendation, in its own words: a design cost savings of ten point nine million dollars, for nineteen seventy-four and seventy-five, can be realised by this delay.",
+      "text_sha256": "sha256:da93329551003aa7da2c3bd7d0347dc7606fff36e415a9377c6c1bd4daa005d5",
+      "idempotency_key": "sha256:db7112e7f155ba02df1c173d2744627926f24d0d5ce1b57a7f690cfd6caaf5fe"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two more lines from the same paper.",
+      "text_sha256": "sha256:ed9a26b363094808715878c12a78792e77345d8a2ec895cc5a610c95772375cb",
+      "idempotency_key": "sha256:5b6b3ce42ed2abb3a718106a7c9eaa5d64c651efbf6bfbba46b6153d5f284a87"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Currently there are no plans for forward models to repackage the fuel tanks.",
+      "text_sha256": "sha256:a0424d6a4c0208409f58d2a689d837a54bf8dc1bbee0d1142a389361fca39506",
+      "idempotency_key": "sha256:7bb4a4a2a56e09d2b05dbbb6b1f52ca325981110aafd1e22f39e33686669b0d8"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And, of the Pinto: smallest car line with most difficulty in achieving compliance.",
+      "text_sha256": "sha256:efd501c77c0d38bacb85a37bba7786b495dc22557ee9c9222e72df8e819fe988",
+      "idempotency_key": "sha256:582293643936e0a901887e1b9907e219d7fe9f32f834d5ecdfabccfb98b9fa28"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In October of that year Ford officials decided against incorporating any of the modifications into current Pintos.",
+      "text_sha256": "sha256:72193d18e6f2b5ef6d45aeb30ce900f65f73e827832ac217769e8f13fa09984a",
+      "idempotency_key": "sha256:9af089a08234e3e5449c7de332b0e1cdd6b8d22815f6063fe9e496220f62740a"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The company would wait until the federal regulator clarified its position.",
+      "text_sha256": "sha256:7bdb49b05a32536eacf396aed843bb525765f03d8e227988c659b97838a14c19",
+      "idempotency_key": "sha256:73716216b18d010c61f2f15ac4c371a13ce397665153f95ce670d6a1e7d0910a"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The regulator clarified it in nineteen seventy-three.",
+      "text_sha256": "sha256:e2bef4fc43321e1c2d7ecdf175af0d26d172f114e087afc45ef284c6aeb75b33",
+      "idempotency_key": "sha256:a0092a7d670080cb7f29b309dc32725d2870113419383c98d5737a6ae7f30194"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It issued the fuel-tank standard, and ruled that the standard would apply only to nineteen seventy-seven models.",
+      "text_sha256": "sha256:d709d658e411b65ea64f1280b40ebb1b55929b49a582997aadbe9e002d8445ff",
+      "idempotency_key": "sha256:6bbd4b1023c8f7e0b35db1c4fa929c53f982b20a1d65cdfc222257357fdcd61d"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Four model years away.",
+      "text_sha256": "sha256:16105a81c5717241555a34af17c0b555c94237bf5f1cc24e49bdfa2193d7a2cd",
+      "idempotency_key": "sha256:e5f76d172d23dd85f9111269670369baee2bd6dd5a5a22f15a218ac631609757"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "On the twenty-eighth of May, nineteen seventy-two, Mrs Lilly Gray set out in her Pinto from Anaheim for Barstow, to meet her husband.",
+      "text_sha256": "sha256:96cdb4fb7a8dc4e1ef7114ec8cd0d00c305c80385c8f55f918f78cb63b43c89f",
+      "idempotency_key": "sha256:e4507be4f95d8016be5d09cdc660916089f3271e4eca3480b6e677379869f6ec"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The car was six months old and had been driven approximately three thousand miles.",
+      "text_sha256": "sha256:dfb1047db6128be33234931f5ee39f343c41857228f76b4037f2ad1c584b2f0b",
+      "idempotency_key": "sha256:4f9d34f9ece035ab02ac354f6c68f0cf2545578b99094044d8f7897d1efd1d73"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A thirteen-year-old neighbour was in the passenger seat.",
+      "text_sha256": "sha256:73f7c875d9a4fdd8d1b07a752cc8f04c60e131e730ce1f3cdb45924f14d3765f",
+      "idempotency_key": "sha256:8b6bc4406e0ce3e8bd5441c8e637e0ee3c6bd7f630424ab78d5a3a74abf9dcc3"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "She changed lanes.",
+      "text_sha256": "sha256:bde80d115bef17ee7b9a680f19405850b266ab083d966652800430c70b2e3675",
+      "idempotency_key": "sha256:f00f3942684c503424eabcc5a22ac585ea24c9559c0741f3ab1bee8614c26e69"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Then the car stalled and coasted to a halt in the middle lane of the freeway.",
+      "text_sha256": "sha256:ecf2cffb74456f5fa96fb536cdae52f46833d26d5981d66949bee4dda80fb4c2",
+      "idempotency_key": "sha256:0256a446f6dd9d1227a90f0547973f66b713ae8dbf57c08edfd3a444f9de51a1"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The reason was not the fuel tank.",
+      "text_sha256": "sha256:b050bebded3dfa9c4fb07297e3a579937d1538ee29734a25c4fab7fb7efabcd0",
+      "idempotency_key": "sha256:a2dd627e24798f4fff3c7a9f8f7892344c5545fcd46f304c2ab443ed8f3fc7e9"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It was later established that the carburettor float had become so saturated with gasoline that it suddenly sank, opening the float chamber and causing the engine to flood and stall.",
+      "text_sha256": "sha256:2d5753f4ff3cc9b45efa50468a9139d563332fc51865d783520c5ed841b94f3e",
+      "idempotency_key": "sha256:eae5b870774cb7048079445db5ff6e0a5e2c3528063b7b9e824f16730e917b36"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A car came up behind her.",
+      "text_sha256": "sha256:5145f9005abd37677b418e354de31ca34096110725e6b105adddf1d22aac6259",
+      "idempotency_key": "sha256:2895f0b2ad985870173f3bc74bff6a7cfca1f05812b2cd92ecfc4e99ff8ca5d7"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "How fast it was going is the single most contested fact in this entire story, and both answers are in the record.",
+      "text_sha256": "sha256:eb5f5844d9c87d749101e2ec51bb17acfbda7b949a7599f2d9b5238bfd86a194",
+      "idempotency_key": "sha256:4af3026beb7fa88d7a9df34002259e5604236cabc40ec9b450098b148e54c1a6"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The jury took the plaintiffs' version.",
+      "text_sha256": "sha256:df5b7f6b777192e228386a330c24360af6d5e2c09d135157f575f5277e6d635a",
+      "idempotency_key": "sha256:2325695d78e5691af0fea7fb5893f88f05ac2884d1c9f181673419591e95ba51"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Galaxie had been travelling from fifty to fifty-five miles per hour, but before the impact had been braked to a speed of from twenty-eight to thirty-seven miles per hour.",
+      "text_sha256": "sha256:3d60ce67961a34a8fc2b1e8fe356ad808133b75df05f5b6c0849c74220a30365",
+      "idempotency_key": "sha256:d1ccb1f2e719880021df0ce9824f0c7a7bfc4363a51e83afffe11836f6afac4b"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Ford's position at trial was the opposite.",
+      "text_sha256": "sha256:200d6001a42368de0744cd7e5b205ed2fd7dace6bc48d017e58008369744d23c",
+      "idempotency_key": "sha256:cae77065a6c9f2a9e1e09817be6009ff6d5063decde5e0ad4ea3129c56dbed9f"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Schwartz, who read the record, notes that the appellate opinion does not mention it at any point: Ford's basic position was that the approaching car had not slowed down at all, and had struck the Gray car at a speed in excess of fifty miles per hour.",
+      "text_sha256": "sha256:31e5170f3abab475cc2704bf8b819f059ed24dbfc1e865b88099de739f7a803c",
+      "idempotency_key": "sha256:7adbb29db99a80bed2fe6953b0044ac52054c9e90e588319ebe18a937ed566ff"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A nineteen seventy-two Ford Pinto hatchback automobile unexpectedly stalled on a freeway, erupting into flames when it was rear ended by a car proceeding in the same direction.",
+      "text_sha256": "sha256:975f27aba497eb90ab97378c5c3cb4cc4b234a9b9c56ee0c4d6ce122b51e0449",
+      "idempotency_key": "sha256:aacd32a2b189cbe2f749a54b57ea1e78efd980338b74229ee8ceedb77a08ffe6"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Mrs Gray died a few days later of congestive heart failure as a result of the burns.",
+      "text_sha256": "sha256:790c1dd901a6269d2c57eed87687b644f575534b33d0f121fee926ded82bb556",
+      "idempotency_key": "sha256:4505538f71fee820b202ed9aaa1536804dcc7d58a7393238bf3283259cbcbff1"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The boy survived.",
+      "text_sha256": "sha256:96b2a2331cfe623dfb40bd25da2fd495d08286ad1d6026b2f604cabcbb6f6e43",
+      "idempotency_key": "sha256:6ce5f2d5655f7d64c24259399fe1edf5458afb1d6746ad7fb94328973d4bbb1f"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He survived only through heroic medical measures, and he underwent numerous and extensive surgeries and skin grafts.",
+      "text_sha256": "sha256:cee60b962f767943e6ef68390c3888438f3ce77386fe4ad7d0936fdb3c10cf06",
+      "idempotency_key": "sha256:da8d71897ab0bc04d3c47336ceda6d2fa862de9903e821721a355cb3c82573a6"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And then the court stops.",
+      "text_sha256": "sha256:916386d78787c9a28c749d7df04292f13aa233b664dc4ca50aa0e8faa3524ff2",
+      "idempotency_key": "sha256:4a5be2e92038ced99b42f45aed6463478766a2956047dda33f976fbf27f910fd"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Because Ford does not contest the amount of compensatory damages awarded, it wrote, no purpose would be served by further description of the injuries suffered by Grimshaw.",
+      "text_sha256": "sha256:09415746b68ed593e5fdc5961de3b0cde7237d926c9be64aff7fa446903439e8",
+      "idempotency_key": "sha256:164735e7e59f0958b0b8c654a714fece7072124492ff0335063cf0379d5a59f3"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is a court with every reason to describe those injuries declining to describe them.",
+      "text_sha256": "sha256:ad49e5f849526de2a07ca9f51d021535344f3a89a49d8462e39386e3d2e91b4d",
+      "idempotency_key": "sha256:115ce5de5eb86aafaf9470837db3ab6315f4a2bad13ee817b7ec448566ab88c7"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He was thirteen.",
+      "text_sha256": "sha256:6ea3d9f961ec55150e7ec326aa0eabe504d7e3953531b1abdae79b4c17b62dbe",
+      "idempotency_key": "sha256:500e1927c30f8df23e903c1a0f56721305eddcd6bb6702254816cc201ad13cf7"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He is a private person.",
+      "text_sha256": "sha256:c82e68e57f2cebf1603acebf0cd5fdf4fc8ac7a680edc307aff8e667ac14ed93",
+      "idempotency_key": "sha256:2f62507c890d6b14751ffbe5b62f5272f78d0e4e60a4c102d77d021bd824b372"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "This film stops where the opinion stopped, and it will not go past it, and you have now been told why.",
+      "text_sha256": "sha256:17518b9e5dd94ad58c51a165ea50038f0338733f2f3406accda1ade8d58130a8",
+      "idempotency_key": "sha256:913aec6b1790b1ba7ba541b8714720e638273ef3a6c33606bf82a8ca9a77e5e8"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Other defendants settled before and during trial.",
+      "text_sha256": "sha256:19060272582e533e989da75c6836e4db8360a2086f3bc4a809b8a71248411837",
+      "idempotency_key": "sha256:0b64395fc9e845be22b84ad7c51d218f3671a4c5b8a35b7189ef8a5bbb5f1a90"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The case went to verdict only against Ford Motor Company.",
+      "text_sha256": "sha256:c9001ff982cacee3ba4b72e6c28bad3247732d59eb056f26c188088ba1476f23",
+      "idempotency_key": "sha256:3eb12e28fc1b01477d99d920e27267de26711b49c3897016d5a9d6bd0c71d24f"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The trial ran six months.",
+      "text_sha256": "sha256:c95794b6993bacd1ff2ad3c5ac2f2199663a11880614f307efaaa8bfa61c1e16",
+      "idempotency_key": "sha256:04f825e5202b6b4a182ea3f1e7cbf1436563939cc57acfc4807057cfed195886"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The jury deliberated for eight hours.",
+      "text_sha256": "sha256:cdd070f43d492cb246b60710422cde5c3109c8f16b168f951e8a83aed438ef9e",
+      "idempotency_key": "sha256:4ad4eefcf120af44d12beb3afe584a4b75a6458da1e306300a7dcfa076d3ed31"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It awarded the boy two million eight hundred and forty-one thousand dollars in compensatory damages, and one hundred and twenty-five million dollars in punitive damages.",
+      "text_sha256": "sha256:33f592a587542006a57f8f63ac6e7d6e17fda95434f344feef1e15fa6867b0a8",
+      "idempotency_key": "sha256:d300465f2050ed2861c7973994aff4dd1e073a52400b42111ad046d74ac51672"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It awarded Mrs Gray's family six hundred and fifty-nine thousand, six hundred and eighty.",
+      "text_sha256": "sha256:3678e7191ce5bc50bde708b66ea6bd6b5cec5cf737e50f40c94beeb95f8ad722",
+      "idempotency_key": "sha256:7d12ddc173f5e451ac2085deaa8e8339d655b79f38f85a750cff99c32c15f111"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "By stipulation, sums the plaintiffs had already received from the other defendants were deducted, and the judgment was entered at two million five hundred and sixteen thousand, and five hundred and fifty-nine thousand six hundred and eighty.",
+      "text_sha256": "sha256:6153fdf3eac8ff6baa4c7fdc26086f717ce786f96f46e0c9b3aa9198cff4d120",
+      "idempotency_key": "sha256:ca9bdef21da0b5d550dee6746836992a65eb1b27b528301f61936587af5446c5"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Then Ford moved for a new trial, and the judge did the thing that is missing from almost every retelling.",
+      "text_sha256": "sha256:978be288cd3e3c0b9054f26cfefea885fdd0243f70d3f438cd5e49208201b752",
+      "idempotency_key": "sha256:933857b36611875b2831f0194bbc38c7950485bbf03114ae6b0f1208f69a0246"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He granted the motion unless the boy gave the money back.",
+      "text_sha256": "sha256:b375b7da251fb607138944649519e75f06cdcac86fd3224d65b391d22456b1d1",
+      "idempotency_key": "sha256:3de718fe7e136be4d618308c4f043aaa5db6728c3dcdd9ae07c725f6196b8857"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "On Ford's motion for a new trial, Grimshaw was required to remit all but three and a half million dollars of the punitive award, as a condition of denial of the motion.",
+      "text_sha256": "sha256:a98642881b946a5c84c6ce70f928f854e6f8efd4af481ad9b10e42d0b98f4717",
+      "idempotency_key": "sha256:2c71313d78b0d2db64e740539578cbbab665ef28cdb0104a70cbf6f564a03e52"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "One hundred and twenty-five million, down to three and a half.",
+      "text_sha256": "sha256:37e016365bbf4a68a485cbd60698ca9f16a72a477a5fb9bad8691373e1270885",
+      "idempotency_key": "sha256:1db42b7cd9640bb0db6fe905ca795d2e0986519c095e555ce9e24c0b891b8567"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A reduction of ninety-seven point two per cent.",
+      "text_sha256": "sha256:468fb4b123b4a7657f5aaabad445af9bb5c2f755210f2ccd15140f2c1edbd5c6",
+      "idempotency_key": "sha256:0a508efb72fe9caf11d319cdb6248953b66ef605bd88352db654e246a559ba7a"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The judge's stated reasons are worth hearing, because they are not what you would expect.",
+      "text_sha256": "sha256:7da9312dbfd38d62790d868a4ebbc1bd757cd88f8593d72ba4733dc2005a9d7c",
+      "idempotency_key": "sha256:da7f51da4f2600f4da9569b61695c6661bf603f491cac7acac0f1bda53d444c3"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He noted that Ford's net worth was seven point seven billion dollars, and that its profits during the last quarter of the year in the financial statement introduced into evidence were more than twice the punitive award.",
+      "text_sha256": "sha256:63b119ec12bdf1848cb251117f708f8f63789096586249f7e5536dffd079b149",
+      "idempotency_key": "sha256:5db390f6bb077131ecac3d35c4d456cd89f49bb739e65456a01efff7c58c6cb4"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "On that basis the award was not disproportionate to Ford's net assets, or to its profit generating capacity.",
+      "text_sha256": "sha256:f634199bfb32545188ce463c7ea7139352bc63383e2eb7908dc98a2e41f696cc",
+      "idempotency_key": "sha256:20b43144dc9c7273b7004ec12f3cc44a2741f1536715d342fa9582d1f04edb9b"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He reduced it anyway.",
+      "text_sha256": "sha256:f79e1675f0b729fe47031b14cb6fd4a7ac613d16f271a1c891a073f7f90d3c88",
+      "idempotency_key": "sha256:df68d97b9cdf4eacb2698f68c1d75ad39d126c759d22e4ced8b796b31b7393ff"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "His stated reason was proportion of a different kind: the amount of the punitive award was forty-four times the compensatory award.",
+      "text_sha256": "sha256:8a53dda131b25b04600246a41c1651b591a6ec86a2cb73f7ce115ca980f5d3d0",
+      "idempotency_key": "sha256:e86c5b0cf8c2df385943bbfa97dbd5f9e2b5f52a79443bbca47b0319a052422c"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And he added something that ought to be quoted more often than it is.",
+      "text_sha256": "sha256:6732b3f4de15780c39d33b0fe08eb62e41789b6dbd4da4cf7f6e14a0d07df8cc",
+      "idempotency_key": "sha256:47e5ba1f92c3741c38ce4ce30650493bbd613bfbf1e1e07a3dc59538a9669ff2"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He was not suggesting, he said, that the amount was warranted, or that the jury did utilise Exhibit one twenty-five, or any other exhibits, and if they did, that they were justified in so doing.",
+      "text_sha256": "sha256:23854589aa359482af1e16463f47b04013fcb4478f3bb0c3d40b8cef61734cb6",
+      "idempotency_key": "sha256:645772e9aec33943d7b92de9253c1ec072af3b6aff7730eb080840789c725295"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Nobody knows how that jury reached one hundred and twenty-five million dollars.",
+      "text_sha256": "sha256:7ff7556bb583128e5e52d458fbdd8d6577ffad4a7acfd7cf65e03ba373d9069c",
+      "idempotency_key": "sha256:fb5a287b1703f76f587e59a1722b54002d08adda9a6e94b0fe2feca116a5816f"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The judge who watched the whole trial refused to guess.",
+      "text_sha256": "sha256:a363f2cdc41c87820ffb02a434c8a9accf9dac9d633e3e4739687138a584215d",
+      "idempotency_key": "sha256:24b7d06acba62a30474a6ccc178525dd0c1a0a28f875f6547ab425f4f1a658b7"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Mrs Gray's family received nothing punitive at all.",
+      "text_sha256": "sha256:b2ca708be0e4c901adfbff95a83067be7991212b3dc323642a5c32a66b19754e",
+      "idempotency_key": "sha256:67a9e4ad401a39c6e8e02a013ec83781395f60fa179f1387b0f1ead5bee61d19"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Under California law as it then stood, punitive damages were not recoverable in a wrongful death action, and the motion to add them was denied.",
+      "text_sha256": "sha256:1382620856a708cf35df0fa9bb0aab76951a4089b4d3a1ee21be246564c88ecb",
+      "idempotency_key": "sha256:47e783674d46f853c3577d5e245364cd6860aa9a8834ce559ea33ad8527a8a65"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The woman who died recovered nothing punitive.",
+      "text_sha256": "sha256:f2eaf11125c137f5892c0075fb458e0044c350a0c3fe8d6f2ec675aaae4727b4",
+      "idempotency_key": "sha256:4ac1f579805d0282514f463d9a440bcebf3b33d1d708e58fc4052abcd84f56da"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The boy who lived recovered three and a half million.",
+      "text_sha256": "sha256:1d562e802685fef95de1566fa4e4fdefe65202456d4bd5a466abeda23d20d968",
+      "idempotency_key": "sha256:3e7e349d45b71a4bf3f4c84e5df9c6c3ae73e33567e622c94b30e8c3759c5ef8"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Court of Appeal affirmed all of it on the twenty-ninth of May, nineteen eighty-one.",
+      "text_sha256": "sha256:c9102c71073f5bead2dece90a574504d2c83b99b451617b6c03ca68a63dc0c4a",
+      "idempotency_key": "sha256:4817d5bdc29c1361bd3cb3933f770b7eb132c6f5a8eebb05d7e3ad69fbea0756"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A rehearing was denied in June.",
+      "text_sha256": "sha256:dbff02d1c1ac9744c9833107e75a628d629409fbe0c7eed3d8a9555184ccd929",
+      "idempotency_key": "sha256:b4e9d1c4d749a6fabb18329b8239aa3ebadba32cef59b06db42bd66965deed0e"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The California Supreme Court denied review on the tenth of September.",
+      "text_sha256": "sha256:e83cce7333218e32ea46dbbddefb425f2a37f435847230465cacfa4cb2366401",
+      "idempotency_key": "sha256:37947855d6b3c58773428b80de60c5a57027cafbc35646177ab2170ec07612d5"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The appellate court changed no number.",
+      "text_sha256": "sha256:a1c8975684b8df4c4a37ca5835e3e89f4417f9c761d5546f76b4593f61753203",
+      "idempotency_key": "sha256:c83c9cd074eb3ee7043e677982e285200e84268a938535c8987526ce65bab7f4"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In September nineteen seventy-seven, four years after that eight-page report was posted to Washington, a magazine called Mother Jones published an article by Mark Dowie.",
+      "text_sha256": "sha256:aa5a1c32ec490367d210eba0da981efc81d016c2eec831c8737b41aa6ce01220",
+      "idempotency_key": "sha256:5942501bdc0ecd917791b708bcfed23897d63875ad856df145d64b1bff93ee0f"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It was titled Pinto Madness.",
+      "text_sha256": "sha256:a8bb5d076aea1b7207066c45beb70e575a5351c84149c6be57978778ea2c82f9",
+      "idempotency_key": "sha256:ec1bf790c80c90a02fffa398e4dcf885ede774bed50ea5ff6e2c6d5feb41d1a1"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The magazine held a press conference in Washington to launch it.",
+      "text_sha256": "sha256:aa1fdf1e417a5afc237b69822992ebac63fc3c96c0e7a0bcb020a2abb58a7371",
+      "idempotency_key": "sha256:7792310001e2ef312b67649ace07e2661b43730310775c9b2ccc72a4f320c236"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Dowie was accompanied by Ralph Nader.",
+      "text_sha256": "sha256:83d755914629dff26b3bf1b0168a8dbae9102e8b4d8f5847b766001eab2ec6e5",
+      "idempotency_key": "sha256:7ea362fba36c8c25da04b8125834384be955ff9d5e484f206137834619012f4f"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The article makes a number of claims.",
+      "text_sha256": "sha256:96672ab31cc86a06712fe2db45a6d1cf56fbd2d6017a85ebe97a7b506022d426",
+      "idempotency_key": "sha256:4bd55b62a48942a4a94b5d0ae133a1773276d3c70bc1a79ef3697c784e7d90c4"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One of them became the thing everybody knows.",
+      "text_sha256": "sha256:9c63645f31d0345f131daea43e21254b52fb516c33cc5e93aa4192eb18810539",
+      "idempotency_key": "sha256:7f2c37646f6d34c5f5e3bd58acf8d1989448f8414ad239aaf7c5be1e59cf5761"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "By conservative estimates, Dowie wrote, Pinto crashes have caused five hundred burn deaths to people who would not have been seriously injured if the car had not burst into flames.",
+      "text_sha256": "sha256:224b1630a47374d2335d9df5c7eb4391931c4390a338b464b94a0eb0e0a30993",
+      "idempotency_key": "sha256:9246134657c6ab171410a77093e9d345398fcdc36e7962d44d9ff9d2afe64be8"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The figure could be as high as nine hundred.",
+      "text_sha256": "sha256:75b6c4f2d6bbe825c93fc9d06dbb5ef944eb35268ab11871e584cf3b94d0ed61",
+      "idempotency_key": "sha256:b5de65d6ba4572054ce17ed05ad6af85559b9dfe40d8c0bb3ff2b2ad861ae528"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The article gives no source for either number.",
+      "text_sha256": "sha256:cea5176ed28fa260d62b0495b8c86148a9ea39a0b9251348d9f940951a119328",
+      "idempotency_key": "sha256:743a75820c1e7e15ddc59b26451b6374fa62b1a04d36ba6acd13417c92c44857"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not a footnote, not an agency, not a study.",
+      "text_sha256": "sha256:9d4ff043f563ca1065d4404b3865ef1eb94a219bef992b139f8e69a037588bba",
+      "idempotency_key": "sha256:e703f20a666af298d1cad2c9a1df7c9ad330e14b04da2aeb775820e4aec23df4"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Two figures, in one sentence, and nothing behind them in the text.",
+      "text_sha256": "sha256:467f5a37c3d1e140c569bab8d6359c7d24b244893a22f50ecaf5e5f59a3af684",
+      "idempotency_key": "sha256:1ca36af640dcb8ceaa62e03dcc55ac7a619ca413d0657a84ec6ade821d0e7ff2"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then the sentence that became the whole popular story.",
+      "text_sha256": "sha256:700d845ea9ff5cb91b692f59e827f84225d1e6b00e095ab9431fd507d4c0d3fc",
+      "idempotency_key": "sha256:7ff3f982b861b5bb0eb00e980dc0fa0011732840e26961cff24cc7ec3fb8ca66"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Ford waited eight years, Dowie wrote, because its internal cost-benefit analysis, which places a dollar value on human life, said it was not profitable to make the changes sooner.",
+      "text_sha256": "sha256:77cf0363300163edfce5c5adde47f75b068a08504cd711614e1a0969bf3ca2ea",
+      "idempotency_key": "sha256:d8467365424dd0cb4ec9449519f65558b9d613d5a70bd7832353f75c0a015514"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the one that misdescribes the document.",
+      "text_sha256": "sha256:45eaa64e7c5015f980116f02fa53c3a5dffa5a14b02e904555d099c09f8174b5",
+      "idempotency_key": "sha256:1cc7cc8b2ee2dc4358b19ba09b3f74dd4ed7dd1eaa9c9962e58b33bc3abf3f62"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "This cost-benefit analysis argued that Ford should not make an eleven-dollar-per-car improvement that would prevent one hundred and eighty fiery deaths a year.",
+      "text_sha256": "sha256:b3c86dac7a89f300500099c8f13c36af685d88b5de5183cf73a958fbc151074f",
+      "idempotency_key": "sha256:72b60bee497f0d3119a34627c24dd38e379c15853b93d066a30dc6a4d501f394"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Hold that eleven dollars too.",
+      "text_sha256": "sha256:ebc547026cef234328f1bac651fb36c1cdf54e584812f829d977d620ce23bcb6",
+      "idempotency_key": "sha256:7e49107a4cf86a10380e2758cc80abb04d6124efa491054675fba65e882e056e"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It comes back.",
+      "text_sha256": "sha256:67be0cdc8e274b5d92101376a0852db5009e533622a328c04f72f3a4ad024c52",
+      "idempotency_key": "sha256:a23144a3b4533490d430c369d7d0410eb26de3bec2371e17f87a2d6efd80fc4a"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "What the article did next is almost never told, and it produced the only reliable numbers anybody has.",
+      "text_sha256": "sha256:a9e62c0f32c8840c49f8491154477ea444699ba7ee4cf2c55e7f6e14f2edb3b3",
+      "idempotency_key": "sha256:65878a0fb2e4038da29ffba157946d882cf74e7debdd7f621709678c056330f9"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It moved the federal government.",
+      "text_sha256": "sha256:431ab0244f513f22c27fadcb0a18d2f04de1a17d23cec6ea09483b6c339d7b35",
+      "idempotency_key": "sha256:7af67295830c027c5542ce714969ca5e751d3e3cf9a621d95152a6d89ea43217"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The regulator's own investigation report opens on this point.",
+      "text_sha256": "sha256:e613d2d53d29006a00e454aabe94e3e2991766a64eeca98793ef5f1b9a6707aa",
+      "idempotency_key": "sha256:9e68a5738a6ceefd55a90466eba5d7e7c595ea8952ed74dcf70caf1a732ab523"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Following public release of the article, Pinto Madness, the agency initiated, on the eleventh of August nineteen seventy-seven, a preliminary evaluation of the alleged safety defect, and on the thirteenth of September, a formal defect investigation case.",
+      "text_sha256": "sha256:06b7fc4600b7a4b16845c7d6037a9f451f49410ddca11351012ef7f30cc5cfc7",
+      "idempotency_key": "sha256:7832b88fba09a09e6b2c3fdaf124cc38b663ef6cd5df622dd12046aa1a477fd5"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then it lists what it did, and the list is worth reading.",
+      "text_sha256": "sha256:b37742d970c14b19e9645f6183c9e3b361fd709d2ee9f6b29e98fa9928594816",
+      "idempotency_key": "sha256:b76641264cef846b4990bc2394edbf0ae24a8e46a333a3f84e3c85b31f8e96be"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The author of the magazine article, Mark Dowie, was asked to make available to the agency the documentation and evidence upon which his article was based.",
+      "text_sha256": "sha256:a46fec68f6db9ce129546880d4bd606e9e8287fa366fc38217b53544ec9629ac",
+      "idempotency_key": "sha256:d2d16b5f350f7d54920e0653aa3299bc0202200a268ffa1361f3ff96b75114e2"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Congressional inquiries were processed.",
+      "text_sha256": "sha256:89bac5808d8ff3f24d3c27559de105c40d34928a732fc45be2aa84b8070b1ca9",
+      "idempotency_key": "sha256:36f1a4ffbda422f3ef37c05afcafb482d3f0ae0191c14d7f43198a2fcd45e25e"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Fatal Accident Reporting System was searched.",
+      "text_sha256": "sha256:1f711cc94152dab5e461d8ed00f97754f339ccb040a69d6bc047dc4a4f8a2b52",
+      "idempotency_key": "sha256:81d8e3a3dd8d80ca44549e3cb41d7f67a7de79be67c5fd2d81ac4b1522f4d7ee"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Ford was requested to provide technical and legal data.",
+      "text_sha256": "sha256:2d30f47f123a8ded925c55ac3afb38982a46be2463878e7c07c6b18dce0e7637",
+      "idempotency_key": "sha256:ae9ec8235e75622074b197ab4891f221ca8bb69cdbb16b8ae34efcd262518ba3"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And a test program of staged vehicle-to-vehicle rear-end collisions was developed, and a contract awarded for the performance of these tests.",
+      "text_sha256": "sha256:b5a5c059365f6ed7d09a82a98ebe33f68a90ecbda1e5ac5807768d537c90c6b9",
+      "idempotency_key": "sha256:d48cd8cb317a6f2d85ed717474ff3b441938d53a1e3ca67b4a45540ad5745323"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Over nine hundred inquiries came in from the public.",
+      "text_sha256": "sha256:27b7803ee464507d402fcd81a5110a79d9ae7bb2aa747dbd6d620d90da5bd0ce",
+      "idempotency_key": "sha256:ba56985de87af6794e1d2ab5a08b9811dcbb3a537be7dc0c99f06e544caf6fc5"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Of all of them, one letter reported a fire the agency had not already heard about.",
+      "text_sha256": "sha256:c9731f4b615a1c1b02897cc051194c8d946209e9229ab2fc783ae5feb57b47cc",
+      "idempotency_key": "sha256:71850d4a15c8f67d867815627673528d684035cb551320992413fa9f5beb8744"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A parked Pinto, struck from behind by a nineteen sixty-nine Pontiac Firebird, in a residential area.",
+      "text_sha256": "sha256:b955f20053e8e21047e4d410ed94758f53ed61e81f8c46a1899305dd62653418",
+      "idempotency_key": "sha256:dea6d2fae1d77ae307662d06c65c2e1f08b496a106d5e0b034c4967999df64be"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "No bodily injuries and no fatalities were sustained.",
+      "text_sha256": "sha256:1a732a69731fe9fd1198ba948a15a9cc23f633c36e0dd4bac4b8b1b0cd0db70d",
+      "idempotency_key": "sha256:d466c298751ac680668926908dab1d565e6b13de1090e4376da21500ff655cb8"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Ford was asked for its own count, and gave it.",
+      "text_sha256": "sha256:f4d50979989b9fb74b2cdb8a5106375e9babe091dfc09acc568f1275c061dd1e",
+      "idempotency_key": "sha256:875142b5a3f8200f37424406e7de05c637a9bdf1344942351322be9eac3c9b77"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Thirty-five rear-impact fuel-leakage or fire cases.",
+      "text_sha256": "sha256:eb8805918fd94d400ba4f6487b5b08bdad5046d305670003f02a656f0b9e1070",
+      "idempotency_key": "sha256:5ad24fa3f9b1de6e1e59c36cdbcb260eab9667bd0b75be9f16acbc88f6056617"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Twenty-nine lawsuits and liability claims.",
+      "text_sha256": "sha256:1a1da5726262d61f936ea0afab182ac9e3883f9c9165e95632162f206f3575cc",
+      "idempotency_key": "sha256:d9d9a352d3c250af3504310368ca397d548aac4387c6036feb77c03da38ad973"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Twenty-six fatalities reported, of which twenty-five were Pinto occupants.",
+      "text_sha256": "sha256:4c63e6b8b6251bcbbe7f57adcb1f73b86bb6bfcc0bb88a112b25b552785e16f7",
+      "idempotency_key": "sha256:e7af3d34fc4fc945bbde863cb291077176cad3271f804eb18ad8d639131467f4"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And a breakdown of the claims that is worth putting beside the phrase everyone remembers about Ford settling out of court.",
+      "text_sha256": "sha256:998dcaba5236ecfc573e94d66cfb07afc125cfab69e76e4186652395d5bd8803",
+      "idempotency_key": "sha256:e2b741521a9a7692806f4e8bd69fabdbc2c4449b51a2df33980a1db567d9c819"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Cases settled out of court or by judgement against Ford or its co-defendants: eight.",
+      "text_sha256": "sha256:6ee1214d96e40eabf7893e22395d1614c8128e209a7994ec2160a79b70db40f8",
+      "idempotency_key": "sha256:cbcbf2d9e110c1342c4f8455a883da0278627daeeb7fd8c5dbf1b63d9ed49880"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Cases pending trial: nineteen.",
+      "text_sha256": "sha256:54792995488f9af4f886bda6da8858555f4e7f0b4ec0ed832c28bdbe335f54b7",
+      "idempotency_key": "sha256:e2344fbe1f2156584698d59342c6ffbbf0e6e3c9bfcb555d8b26b72c721ab3a2"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Cases settled in favour of Ford or under investigation: two.",
+      "text_sha256": "sha256:4392652bdb9f52d294e9b8035831f5db7877dd6d3122025d2ec4c2616cbef192",
+      "idempotency_key": "sha256:dd05807692102f0a24a19c23a2a36e831e6775d81adf60df0810baa77515af07"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then the agency added everything it had from every source, and wrote one paragraph.",
+      "text_sha256": "sha256:82375333dc04d453df05c61ce3dd8b109725d0729d99d5f721212d894102e583",
+      "idempotency_key": "sha256:6ab3cdd8de02d3e43031ee834a52126b576688c93a9385900457882c585ac6f5"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is the paragraph this whole film exists to put back into circulation.",
+      "text_sha256": "sha256:50124208a4f86da0c547fe56317860952f96bb3a83d2a6812d5042791fa4adca",
+      "idempotency_key": "sha256:8831339c73e51d54068b6013f63ff9f7b9002abafbd37ee5ed478b3dc053c056"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In total, the agency wrote, the National Highway Traffic Safety Administration is aware of thirty- eight cases in which rear-end collisions of Pinto vehicles have resulted in fuel tank damage, fuel system leakage and-or ensuing fire.",
+      "text_sha256": "sha256:92e1c682d3d5f763dde00dbb731d93e1eca116280c856afe7358a493e797cd1b",
+      "idempotency_key": "sha256:235cddebd224bf544dfaec4d17cc3506b85ad4f20ddfc4735a47056e70116035"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "These cases have resulted in a total of twenty-seven fatalities sustained by Pinto occupants, of which one is reported to have resulted from impact injuries.",
+      "text_sha256": "sha256:8e045061d31a3b16a9f38da8cd737b535d6a20beeaf5213df9f0cf4e71ef34b6",
+      "idempotency_key": "sha256:380be467aa04e18aab74f8bb298e4ceb9900760b12f49095bd281364e8cbe261"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In addition, twenty-four occupants of these Pinto vehicles have sustained non-fatal burn injuries.",
+      "text_sha256": "sha256:a2718200a582c2f5e6250620e962c2a1c18923e35e9bbf75c798046a1f80771d",
+      "idempotency_key": "sha256:41768ceea34c00ae4f5446f324e0ad91d01402f1a8f17ec6e30e467dad8fbe26"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Twenty-seven.",
+      "text_sha256": "sha256:ac31a017d647ee1f5561a26ac478f64f971f877f99eb34aaa1ca6051b62c4e64",
+      "idempotency_key": "sha256:aed9905b385ba20e82d38aaabb3e09d9a7bd3b812604ff1616e87788dbecae3f"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One of them from the impact rather than the fire.",
+      "text_sha256": "sha256:4e0fba7b2e663d017214e2311ef9284b13a74b7388f778aa456c54cfd6c1c4b5",
+      "idempotency_key": "sha256:8b054066d2de7b4af40390bea8a09c043620e48afa673a8571c5718214537b8b"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And because this film is about people quoting a number without its document, here is the rest of the document.",
+      "text_sha256": "sha256:45b2e718411da32542a5f40bac652c95568154c32808f23c01d7e242f163dd80",
+      "idempotency_key": "sha256:81a72b46ffefa93571ae8e4db5304b2980603e056a92e4f7355d112c9a930fa0"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The agency set out, in its own words, why its data might be wrong in both directions.",
+      "text_sha256": "sha256:44d0f451ec32268de971c8d133e8edb0006afb5d4fe23c0271d6c2a88746d1c0",
+      "idempotency_key": "sha256:ff3b76e45cabe9d890a1402eebb7f714f4d9525004946e9b68ca7a7cd224676e"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Fire or explosion is not a standard data element on most police reporting forms.",
+      "text_sha256": "sha256:f5091e5bfa120a307d962ff2f5ae2dd3f58096608c183e57ae3d8f0c14a0e464",
+      "idempotency_key": "sha256:c1ef152766bb50966d1f86a10c0de13df3d63360e9713ef204ac83ad79e5a448"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "If a death due to burns occurred sometime after the crash, it is less likely that it would be reported on the officer's accident report.",
+      "text_sha256": "sha256:8ee60e6762936f254336836bf5b7cb6ff74ec099bbf347f059164b59e2314dfb",
+      "idempotency_key": "sha256:fd1f1b64c8fa5e367a22c211555b76ff535a461b3280f07d133a387d6e4c72da"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The system does not record the cause of death, only its fact; it does not distinguish between deaths due to impact and those caused by the fire.",
+      "text_sha256": "sha256:44aeaa1166adfae8236c07ff050c0da223a59f46cf08a816c4accfd55316dd14",
+      "idempotency_key": "sha256:a91ca7deb756f13571104b338dd852e3a1629edcfa57077b25a0b8c511923f0f"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is the number.",
+      "text_sha256": "sha256:5989b9fc0fb75ee9b29f96cadfb97c55584e937478285af719671e08271cda2f",
+      "idempotency_key": "sha256:043efbf9702bb312b584055c990e5c66f69e4f789998400c4b04278c5a7b3e24"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Twenty-seven, with the government's own reasons for doubting it, attached.",
+      "text_sha256": "sha256:fa75c513c36be4dfc3dfa5b79ed3c106317035c3fadabcd6c9203ea1d6ad9e68",
+      "idempotency_key": "sha256:273bc8e3dd7f27c5a25346f03f130c29ce510a1d2e87ffcee590b317ef93e6ef"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In May nineteen seventy-eight the agency issued an initial determination that the Pinto's fuel system was defective, and scheduled a hearing for the fourteenth of June to enable Ford to reply.",
+      "text_sha256": "sha256:c54309eec5a4fa13b6c0f2b1c3f3348b74b33802c2ac760cdbb2f5a222c82982",
+      "idempotency_key": "sha256:5f0f409820ef121a223480344f4947e08f83550043162d5a9085e05134be6798"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The hearing never happened.",
+      "text_sha256": "sha256:a2c539c620470df09722e821cd7bf9bd3d44fa5a51f173e0dfddf6533c73c719",
+      "idempotency_key": "sha256:c01f8c27f73809f4cde07ef6ec13c222e08629d0eb27e1a3a916210f8b9d3a61"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "On the nineteenth of June the agency received a recall.",
+      "text_sha256": "sha256:208ad26b80c432df0ef41507059fe427e122692c26352a24c3aaae35bf106e19",
+      "idempotency_key": "sha256:b7f1af99ffa37a961672426ce3bac45ece800b5092618e7cf81173ef80419d9b"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Campaign seven eight V one four three.",
+      "text_sha256": "sha256:598796ca56cf8ab6ca2882b278a199727d86ba1af74b37d3198464709f0007b8",
+      "idempotency_key": "sha256:cb474bf4e0b3de2607c14e1c4432527901ce2744ad4036bc2245ccd2c75a0e23"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One million four hundred thousand vehicles.",
+      "text_sha256": "sha256:44ec3fb0ded1d1c026449c73a5be36023cdb70171f0897c110df793605cb484a",
+      "idempotency_key": "sha256:c3c6a9563e01b5e2b58831a5a8f00e876e87eae11a455e9c8d1ddf9a6368269f"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The remedy was a longer fuel filler pipe with an improved seal, and a polyethylene shield installed on the front of the fuel tank.",
+      "text_sha256": "sha256:0274cb2198d3b649dc67cc8095029d30b6dd85db245555f2b77ef24204c6c6f3",
+      "idempotency_key": "sha256:ab7affbb2c9d27b5ecfae3979ae62aa66e554bac7373ce83fa810d7d0307d22d"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Twelve days after a jury in California returned its verdict.",
+      "text_sha256": "sha256:1912e566f874c417a9d72bfee8458129d332e0ba89e2a5c170773fe3471a9380",
+      "idempotency_key": "sha256:eda97aaadb5573a362a1e3cb46d78a5003c0bc25342ad90de3a86376dfb8ac55"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Five days before the agency's hearing.",
+      "text_sha256": "sha256:2f8b41557d1ef3a04cf06b3086fdeffc64e2395960e1e17cf517c9fa2d62f2ee",
+      "idempotency_key": "sha256:7236fc8bf4b23c53fd764e0ca0c47313e339a9ec6fe58606c1cec875574b71b1"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And one last figure for this act, which is the least famous number in the story.",
+      "text_sha256": "sha256:84c5a3431a41b41385f90e455f1206b30f24f670a901b7989e50aa1fe5ebbe63",
+      "idempotency_key": "sha256:b90cac783baf082bb928ecfe92dce6c3b47a7fd9502f2186363c65f1f8575ec9"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "According to an agency official, only fifty-three per cent of Pinto owners responded to the recall offer extended by Ford in nineteen seventy-eight.",
+      "text_sha256": "sha256:25fe7ef1dd1489bf1d3bf43f0cb5a19abcfb2d5e1e686d0730f572b6d5a88688",
+      "idempotency_key": "sha256:7fe958e33d2c35cf3a5a20dba3ae0fb40fafa4deee68ae2c1f77f256b29ec5da"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Just over half the cars came back.",
+      "text_sha256": "sha256:c8eeeaac579b450e8cfb8dcbe8a821919e27b2f400f4698c316351bd5a7b8766",
+      "idempotency_key": "sha256:c1fd1bc14495897d81e4d0995ffedb2d123885a292a1fba8e330bce9487ad2ff"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Nobody, in fifty years of telling this story, has read out the title of the table.",
+      "text_sha256": "sha256:3511a126bd44c9cd0b4238e8135323f21a123d30a1c753a6b2231cf58bf022af",
+      "idempotency_key": "sha256:3051a49af5311e988a8cb8728868291d1b52a7bb09d1b274ea0ad0aa6ec9e99f"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So.",
+      "text_sha256": "sha256:12984637383b7b9cafd5ff2b61cb567addb6b6a8123c85ec0000efeacebc0082",
+      "idempotency_key": "sha256:757de76d8f204320609f591f5d1f2977c07f4a812d52378a03229f1d0a1741f8"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The document has a name, and it is not the one it is usually given.",
+      "text_sha256": "sha256:5704a6975523beda4fd8e7e9349dda041aa1274927b58ac717ca3651b0993854",
+      "idempotency_key": "sha256:18fc090d4769bfbed2e684cd347988cf94350b5b9b0d2a50b98e8b19f13c157c"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is called Fatalities Associated with Crash Induced Fuel Leakage and Fires, by E. S. Grush and C. S. Saunby, on the letterhead of Ford's Environmental and Safety Engineering office, and it is headed Attachment Two.",
+      "text_sha256": "sha256:759569e18152f2304dde6678ce36e4e0f781fb3270715c87f2acdb818cd919cd",
+      "idempotency_key": "sha256:9c3770c0a8ec187fcd8808619f345ad5b13ee059c82de84535decbb706d84ac6"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Attachment to what?",
+      "text_sha256": "sha256:38d121f037f79ed2803368de14f295db09cf9582cfd232e892b302d3a54c66a2",
+      "idempotency_key": "sha256:64efef63342f46d3d846daa76bc7216f6089c4365282a2ce63ce075eb4c456e8"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "To a submission Ford filed with the federal regulator on the nineteenth of September, nineteen seventy-three, captioned a Petition for Reconsideration of Federal Motor Vehicle Safety Standard Number Three Oh One.",
+      "text_sha256": "sha256:e42b1852a902b663470e4d90c705280e6bd2f171186fc412ec56cdf8268837e1",
+      "idempotency_key": "sha256:c0ccb529af5a5b2e63630c708ae664a915cde88737bfc705a9cf3e74d5d0401b"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is not an internal memorandum.",
+      "text_sha256": "sha256:dae76e0f6bb74eca82b8ff3495c9a3767de022c77aed35d674d1285b2748b653",
+      "idempotency_key": "sha256:771f30d83b55d267ee8f2e558d87c30ca4c1e2175306eb46bcf891c0ba6f4b87"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is a filing.",
+      "text_sha256": "sha256:6a630b5d44c6b8b7a9b8e1be1589b96d876bbdeee0148c443434db9d9c5d78c9",
+      "idempotency_key": "sha256:fcaeaacf5dd987aeb7efc8f799dfd02a09cffeac5c30d8040bccc1f9e8abccc7"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It says so in its first paragraph: the agency has issued Notice Two of Docket seventy dash twenty, and Notice One of Docket seventy-three dash twenty, both regarding fuel system integrity.",
+      "text_sha256": "sha256:05a19febd80733d94fa496c1263d23b56a1d6f58db8e002ac64af76093272820",
+      "idempotency_key": "sha256:f84dd4ce3ba2a653c78a6ab6858a4fc53d4803d92e386767c78139c5638d80c1"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And on page four it says what it is analysing.",
+      "text_sha256": "sha256:194a73cbe050d82848a63f5fbd0c127af07ee9af7b04f55b554c4e63189e10c1",
+      "idempotency_key": "sha256:690d2021edf0412d00837b481a35c3b357499eb476e018bc802a9f2b79e194e4"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The analysis discussed below concerns the static rollover requirement proposed for the standard.",
+      "text_sha256": "sha256:54c4bc7307cfbad29c6d8309b02a53ba819b903f37cf85793f57b0fa0d0e36c3",
+      "idempotency_key": "sha256:8597d98238a67ef9d022967dd324b5a376f35dbdc23ad3bc1cc8ab31d3ec23f0"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Rollover.",
+      "text_sha256": "sha256:098833814bb71e492c398b33b3c18efa7f437d829708fdda4f7098bf13523834",
+      "idempotency_key": "sha256:40686886496016ebe66a127cb2dfa4d42049cf2ac62c98f8f0699a10d0905bba"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Not rear impact.",
+      "text_sha256": "sha256:53fdc89c3ecc269eb212d6f555a87118b2007161020a16d2cb502ed496e53bc4",
+      "idempotency_key": "sha256:afbbe9a1405f50153d2ab8072c5dfb5bcf1f8699a92dfbb828392986f8f528b8"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A car turning over.",
+      "text_sha256": "sha256:ec51d88439bd9baec1e84c4979753239cfed8e1f6b2a1de3658028e092bdcc9d",
+      "idempotency_key": "sha256:1da243061df8966e84ddf91745195ebedb00e5bdce2e39384fdd8519fc5ec405"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The paper contradicts itself on which standard number that requirement belongs to — page four says three oh one and the table caption says two oh eight — and rather than quietly pick one, this film tells you the paper does that.",
+      "text_sha256": "sha256:f26e487390238982691484813bf2be32a565f4f06956b6b53c654fc5df22110d",
+      "idempotency_key": "sha256:432bd472b53d4d9b0a72e2d698bb1a569835f6b112476990b90f573b06a6aee6"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Schwartz, who went and found the filing, states it in one sentence: it was the rollover situation, and not the rear-end-impact situation, that was the subject of the Ford document.",
+      "text_sha256": "sha256:c2ce3c70c71229e2d6b76ff11963ef0bc0aa02d9da69c5602321693f65ca4c24",
+      "idempotency_key": "sha256:7b55ffc306ba40b155a64658e85807fae27e353a770cf1d06330193b166ec50b"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Now the table itself, one line at a time.",
+      "text_sha256": "sha256:8a9f165301ad324d62462d92902b891bcbced02363d1773fe50e761cf60ebebd",
+      "idempotency_key": "sha256:3f46dce43cce8a7e464c6ec2c58ceac55b7a633f871f44c58be0365a2b537fb4"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Savings: one hundred and eighty burn deaths, one hundred and eighty serious burn injuries, two thousand one hundred burned vehicles.",
+      "text_sha256": "sha256:8509f69742d99960a281b6ea0eb0198534566d1c594b730fba31262b184e648b",
+      "idempotency_key": "sha256:ce7ca710a0406c235affeb53d48e41c49bb5a9ed6d71910aa03f46c728d0af24"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Unit cost: two hundred thousand dollars per death, sixty-seven thousand per injury, seven hundred per vehicle.",
+      "text_sha256": "sha256:37803a38163f45e92b0f10280be6337cba157779e8c2bf0791f9f3b66de81ce1",
+      "idempotency_key": "sha256:070f2f5dd962e047b01467d2ddd19f70ca7d8861c17bb0d1b6caedf0f192a7a3"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Total benefit, forty-nine and a half million dollars.",
+      "text_sha256": "sha256:c415734113af3dd47448b34b53f16fab7bbd5676b11c08ac1ac48f893ba1b9f9",
+      "idempotency_key": "sha256:f431998d13dd0b2265706b50a321faedd4772a20a9f494ca38726c2f38e243df"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And then the line that makes it a different document from the one everybody thinks they are quoting.",
+      "text_sha256": "sha256:57d34729abc23769b7b3c8e8f43d662ff0b44871c0fb500cd39eedd2d8305670",
+      "idempotency_key": "sha256:c10fb50c40ccc78eece413bfc062bf0ad9168b9fb9bf25221b6692bb1b5bb1e2"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Sales: eleven million cars.",
+      "text_sha256": "sha256:cbfdc77ba81b314260841281dd3c7793d4ca3fe158a77d363b936328bbdfb6cf",
+      "idempotency_key": "sha256:8abc78e8550c61268d62b1455834312aabf3571d63b7e135fc1119de0d0be8c5"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One and a half million light trucks.",
+      "text_sha256": "sha256:69955cf0a9d826fe4a1ad984238ba56566bd05905d98f7dd1dec9f9a42c9df3d",
+      "idempotency_key": "sha256:c17a9c7ddb06889ed549348c8b684fe611ee5002c20163b1f662bcef4e789f42"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Eleven million cars is not a Ford model line.",
+      "text_sha256": "sha256:073ffe1f59c511f4ae6100441eb7a532e766729a4e0aa68abd69489ed24e1647",
+      "idempotency_key": "sha256:837b5249e69ee4277e3fdbcbff7f3c23d09371941306b663715e19ceca560cd9"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is the American market for a year.",
+      "text_sha256": "sha256:8c640cd41ea48e21b111beae6a1617a63800a60bb392c86fe505b3a544f94686",
+      "idempotency_key": "sha256:dbb4fc4f8fd55ad65fe440e46940bd267b8bf560ad3cd56d43ca6baa82bdaf93"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The paper says so itself.",
+      "text_sha256": "sha256:5fe0b8fc40d6ccbeba8084b310e902e9a9a7bf50e2fb61d6a830099fdda9a6ca",
+      "idempotency_key": "sha256:1c5fa0cb2d8ed9d3e47aec79b3908f0d9ff4aa0f6d5d0aed93056ccad5174cf8"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The retail price equivalent of the vehicle modifications necessary to assure compliance with the static rollover portion of the proposed standard has been determined by Ford to be an average of eleven dollars per passenger car and eleven dollars per light truck.",
+      "text_sha256": "sha256:55fcf94c5b3dc4ddf17334b40d78b4eef7d58c8df2c9960740db5282fbec160d",
+      "idempotency_key": "sha256:45ca7cdc5de41ece02c2afdb4c243f4ff953e684c644be86278a1651636acb8d"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "While these are Ford costs, they have been applied across the industry in this analysis.",
+      "text_sha256": "sha256:6ab39ddf9504ca442289713047775dbce5e062bbc1101d8a4d782487dcb896ba",
+      "idempotency_key": "sha256:cc3c0b78f9aa3a06439e94598a984d610435ec979e18b1fa04bce3fab1bcd0ea"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The word Pinto does not appear in that table.",
+      "text_sha256": "sha256:25b89611b9817a235a7c547b5dcd285d97db6d6dcb79c8584a8925c455924127",
+      "idempotency_key": "sha256:ffe8555e3d4f2daee66d0b04341a7521cff9b4b17c9cd4d7e7e0fca1735d3071"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Two more things the same eight pages say, and they cut in opposite directions.",
+      "text_sha256": "sha256:9b8ede66cf8b1ecefbee7ba774a5dc5ed7f9eb8f1ce8a45af5f760bfdfe901d8",
+      "idempotency_key": "sha256:98f72cc95d557a0129bcd29236f5fe4055b599cbb78f26dfaeba2a249469b863"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The first is Ford arguing its own case.",
+      "text_sha256": "sha256:f12e643d41cb31bc4ebd57bc31bbbf1f62d3de1504141468285720ecaf0b17ce",
+      "idempotency_key": "sha256:e21383537fa1986c92f00a4b8701aa075e046fda84c3d9f2665deaa6e3308756"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The agency's estimate of fatalities in fire-involved crashes, the report says, appears to overstate the seriousness of the fire problem.",
+      "text_sha256": "sha256:0b3bf98b2984508c2c3174d7ecb163717eaaba72e8ac5ce860e0d755614db0dd",
+      "idempotency_key": "sha256:77b6cfc7c3d01122a8070dd90a41e36bf3be9b0775085a3b4273a75198fcc3f7"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The basis is a sample of twenty-four, of whom, the paper says, in over half of the instances the deceased was not burned at all.",
+      "text_sha256": "sha256:0f8eaa77372463362642b36cb0bcdb5fab07500c8cd38697f5afb322d6782fac",
+      "idempotency_key": "sha256:f31c36823f0f67f635d8476bcaf7735c49021832b3001999f4f83ffe1bad094e"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The second is the opposite, and it is the strangest fact in this episode.",
+      "text_sha256": "sha256:18e82b631fd485598a3f73cf11cba26b2c62a7900c8f869583a5e6308992954b",
+      "idempotency_key": "sha256:83c14183092b6ce5e3cbaf877ba6620bd9413b1a3d7c60279a8042cd8dbc2662"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On page one, the same report tells the government that the likelihood of a given crash resulting in fuel spillage is much higher for rear impacts — twenty-six per cent with spillage in the sample studied — than for other crash types, such as frontals, at three and a half per cent.",
+      "text_sha256": "sha256:14cfc88518cf854ac67150aebad91e55baa76b9d333f715d7672c22b81a38e2f",
+      "idempotency_key": "sha256:90a7597a464ae03bae3109ba45f5d1c2c738adcad7bb0bfbe91855bac62e7710"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The document that is quoted to prove Ford ignored rear-impact fires is a document that told the federal government rear impact was by far the worst case.",
+      "text_sha256": "sha256:5f040394e517e5d0b03a2549b2c01200dcbf0514276ec0756dd03eea73f7d156",
+      "idempotency_key": "sha256:25b61d97933e69fcedec4c6fd87d909766845e0b38e17edf64b6535a6c7ed7bb"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Which leaves the two hundred thousand dollars.",
+      "text_sha256": "sha256:eff410e9d35ee0aefdfc246c2ca34dc726db3cfb27495068c96d486a3bab5919",
+      "idempotency_key": "sha256:26d485fc6cce556d2967f56886ae5c6b737589c238ed777c123a72fb51880374"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The report attributes it, twice, to the government.",
+      "text_sha256": "sha256:9d609f1d74f0fa8f8358c6a4da8c77a6d417e76a9e26e44c6f4eaad2c710bec3",
+      "idempotency_key": "sha256:16211e8201e3a7f058db6050e886b023829b4307cd316caf0dc04b06356c4676"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The agency has calculated a value of two hundred thousand dollars for each fatality.",
+      "text_sha256": "sha256:0c11f2dcd20e9b25419fe57b7913c7da1a9a4cf16b5c4fca3392df4be1d36f1d",
+      "idempotency_key": "sha256:b4aa28c0e2f1cb45d9a7a2ad8f6f2148cc657fb8efe0e1868d717888d3b954ac"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And it goes further than that.",
+      "text_sha256": "sha256:9fc43004445f63f1869ea5e75c5cf7aa20876c08c9175451584443beef7f3adb",
+      "idempotency_key": "sha256:6c484c24cc46670cc3f80fce72b33765f5c688b0205894fc4ef69331cf2e9673"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The casualty to dollars conversion factors used in this study, it says, were the societal cost values prepared by the agency.",
+      "text_sha256": "sha256:4f1f75d375f1423968255253326171db66ca36c6c9c676b4fa5d59883c7d3b7c",
+      "idempotency_key": "sha256:be6de432841e7e3c39d23e75ec1b2ae86a8a78b3f670f46d9539c0a5868a5b11"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "These values are generally higher than similarly-defined costs from other sources, and their use does not signify that Ford accepts or concurs in the values.",
+      "text_sha256": "sha256:7b1ded0ef5a01bef0d96bd54793fef7c7ae0027bcf4fa80f0964aaf3def5defb",
+      "idempotency_key": "sha256:ad7b1e3663a6cc2a5bff4385df7a9097cd93deca8e5cf0cc5c66f44f47f3a399"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And a shorter film would stop there.",
+      "text_sha256": "sha256:4fdc227018d3ee03fa99b8940bc4073d8182ded549dd893cec585ae05e941aa0",
+      "idempotency_key": "sha256:976f6c4431e42c29754668fd72f1ec193c108a5734e14c2f7a7f5d1a6fdf57e3"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The man who established most of that changed his mind about it, in print.",
+      "text_sha256": "sha256:d3fb47c0b466bbf5207e849cfe027e01fd07077ca615d13cfb1381a65f8846e5",
+      "idempotency_key": "sha256:1a16241884a39edba36484ffa3e454ffedc37ba52a829c30df73325fd0879849"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Schwartz first concluded that Ford's use of the figure was clearly proper, because it was the same datum the regulator would be using.",
+      "text_sha256": "sha256:883feec70140439f8f6be1db07afc629910dc070de67e1a65911e96a9221e11c",
+      "idempotency_key": "sha256:1ae10b5d9cd37cffae9da53f62cc498af21d39b5ae4acf6c85aa188901c5760f"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then, in his words, he did further homework.",
+      "text_sha256": "sha256:25fec557edfac3cf9356e11da823091132e42915b2b137bbb29d21b883262153",
+      "idempotency_key": "sha256:ba90d0d3b64a5781a65fb35298b401373669d58ee7fa840e8f23589ab4fe0d67"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Contrary to my earlier understanding, he wrote, in its standard-setting the agency was not, in the early nineteen seventies, relying on a two hundred thousand dollar life-value figure.",
+      "text_sha256": "sha256:bb69e0ccf4196d076264a9aa45822e088f6603de28439308995267da0efba427",
+      "idempotency_key": "sha256:ae77674177ec6af2ce1dee0875087a44e0718cf73982f833e2c953f075233cf6"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It was taking costs and benefits into account, and essentially finessing the question of the monetary value of life, while at the same time releasing documents that set forth a two hundred thousand dollar life-value datum.",
+      "text_sha256": "sha256:c542258739658eb0acd7c64055acb32811c4425a3d6126b570b22ebecb4a3a5e",
+      "idempotency_key": "sha256:d4bb784f99b64f0ed2dd101d8375eecde4cf2591d95d91a7ed508eb9de795714"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There is more, and it is worse for Ford.",
+      "text_sha256": "sha256:b53a786602a497dfe8047a23500a1e8509e7d62122916e953bd6363388a1d42a",
+      "idempotency_key": "sha256:04fbcfd5c528b1f22d7d72e141250c994834358a4f944ad2c24020692bf004b0"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The government's nineteen seventy-two report had said that its own figure represented the minimum, but not the maximum, that society should spend in preventing highway fatalities.",
+      "text_sha256": "sha256:92e36630028b3bda2510efee0d38ad0259d9573ee70cb139ae988b8af27090f0",
+      "idempotency_key": "sha256:7a50d9b93f28dfd08f92d047c422115ea802d2ac7730a12d9967465b69b2c511"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Schwartz's conclusion on that: the nineteen seventy-three Ford report can fairly be faulted for not taking account of the agency's explanation of the implications of its own figure.",
+      "text_sha256": "sha256:57d340fa159cc4cf75d605b104d814acf43f7b19b32fe7df9a969daa823e81e9",
+      "idempotency_key": "sha256:c09926288b8ad952870535284a700580bb85cd37bc26265ddfffc0aa23216a52"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Ford's answer, also in the record, is that it used the government's number in part because it was higher than other life-value estimates known to the company.",
+      "text_sha256": "sha256:740c13e479e57000d6e742db567b58e6c266f692cd744630b9da0dd50ff494f0",
+      "idempotency_key": "sha256:4585e66a22c91f7992405c7b02877778fbbd9bd9f1cd9c073cc18c3d679fac21"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So the honest version is narrower than the popular correction.",
+      "text_sha256": "sha256:c5b30673af1abf5b27250646a0cfc19bd094f3e23b3871399c81a26b9ab05cc0",
+      "idempotency_key": "sha256:09094d887e4f77f710807b7727064e895af45271b661d469e483f63b7ac86da9"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The two hundred thousand dollars is the government's published figure.",
+      "text_sha256": "sha256:2af4ba9a6c98dfa8db7eb98cc2f71478fb38855c00220511a1ca10b3393e676b",
+      "idempotency_key": "sha256:475816f0c27d1d0ac9e50ed9baa718480a2c72661cda86ce8a57affbbd8bad43"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It was not the government's decision rule.",
+      "text_sha256": "sha256:92f77ddcbe4f522573d8ac25cd19aa4415b8dc83b3e4cdb655c82f3b7ea5e2b4",
+      "idempotency_key": "sha256:b87598e675fca2d12d6c65951abc81eaf44f9fe421e4d9035d1f3874d3ab1dbf"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And Ford can fairly be faulted for using it without saying what the government said about it.",
+      "text_sha256": "sha256:2888003dbd277704298d0aab69829a1337e398102dbbe263e45b421675f36b88",
+      "idempotency_key": "sha256:8291863ccd9cbccc81a99d1aade94c621622b681782558a8f6a8456fe1c4a9e6"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One more thing, and it is small and it is not small.",
+      "text_sha256": "sha256:ab9ec6e51844e020c890c30b81c07b9388d397b3fbe63a888eced6f5579eb8de",
+      "idempotency_key": "sha256:0cbb45e94f9843a2f295932a0426d70872046aa1db2dc7fca9ddbbd461f863cf"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Mother Jones knew.",
+      "text_sha256": "sha256:24286873647d38cc717179c727cecf5aa23732d868e06444409f2af8fa8494c2",
+      "idempotency_key": "sha256:04836d1b31f7d4ca46406967ea95c45efba423aa57ddda99a49e88b6363ecfb7"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In a nineteen seventy-two report, Dowie wrote, the agency decided a human life was worth two hundred thousand seven hundred and twenty-five dollars.",
+      "text_sha256": "sha256:6607e63a4bf4d4bba5996ade4642b255ccce23d2d0e931d5b3328346ba0174fa",
+      "idempotency_key": "sha256:998fc057021814f90454546bac720d4709ac2f190ab37295f69da437728f1360"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That sentence is two sentences after the line about Ford having a better idea.",
+      "text_sha256": "sha256:0ead26cd97f704a6caf7096da2c3292fe7a6164af57afe9570595a15071b5eda",
+      "idempotency_key": "sha256:599f46415a52e9d7f1b548205acf0c67993b4d8ca96a635e7178a41b149aeace"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The correction was already in the article that created the problem.",
+      "text_sha256": "sha256:416e7950eb68d485cbade999b046053a20869834ad9dda62abd3badb974bebc0",
+      "idempotency_key": "sha256:26b64883223c4345a1d36a37900183104696b8ca4ff51af97de8e41dc38961a2"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And that report was never in evidence.",
+      "text_sha256": "sha256:50b5f3babda4593c65a61bc02183eec10964e3359281f3222afa48c276660381",
+      "idempotency_key": "sha256:401b0d4cb587483e5a2d0154461533288f55193eb6e356651ec12985cc7ac8a1"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The appellate opinion records Ford's objection to counsel's closing argument in these terms: Ford argues that the documentation referred to by Mr Copp, the Grush-Saunby Report, was excluded from evidence.",
+      "text_sha256": "sha256:8ffb07ff926825c307885e5c543fc114d9d9eba94c1bd403da361fb11e925c27",
+      "idempotency_key": "sha256:cc0fc22a45cff3e3f1b89b7458e628fb7333a8ab1757eeba9bf22d9a2e59c5dd"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The jury that returned one hundred and twenty-five million dollars never saw it.",
+      "text_sha256": "sha256:3cbad2bb7661f053c2148921e456fa78b9d9bd07bd9bfef33ea545309cca32d4",
+      "idempotency_key": "sha256:003d3d8659805b21333256aa4b5952e5997785c8aab600afd0f4c05bd4ac063e"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Schwartz gives the procedural history.",
+      "text_sha256": "sha256:63824f427d9a0f3b02ca5b5ae677050cc345cfe02fb21415051af997a14aac80",
+      "idempotency_key": "sha256:86520cf003498cc92421705746719905724f511a89116eaf514b886aeded9e8c"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The plaintiffs did not even claim that the document was relevant to the issue of liability; they attempted to introduce it on the issue of punitive damages, as indicative of Ford's corporate mentality.",
+      "text_sha256": "sha256:4633528ab82da8da40ecaf552792adb516081404217dfa97ae3fdb58e4d111d9",
+      "idempotency_key": "sha256:367347a1633b2efa1a30284ed412be16122dd10033e7c612ea3c6b6bbeaf4385"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "After considering the matter over a period of several weeks, the trial judge ruled against admissibility.",
+      "text_sha256": "sha256:db6de59d10d75d347c7bda38c55b3eb7fa52bd3040182f8b2179b037ccb3630c",
+      "idempotency_key": "sha256:dc51144f04c1ce50a75ca7287853adab146c14433cacd5669269cf05822472ff"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And in a footnote he gives the judge's reason, which is the last thing anyone would guess.",
+      "text_sha256": "sha256:8d9ecba2df07364e970d4bc9c1df1928b1a1c3186ad036e7ec57e39637c46986",
+      "idempotency_key": "sha256:c8f9c81985fd6662631719d0c970d3b50f146bc20f185ae3a7d89d0360331f02"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A primary reason given by the trial judge in ruling against the admissibility of the Ford report was that Ford was using the figure that the agency itself preferred.",
+      "text_sha256": "sha256:f8116011906f3eca04e0e2f71f5939f8a74f5b2e9bd9c18c8e19634a2b7c72eb",
+      "idempotency_key": "sha256:694c39cd62d696c0076ded574be80c66ada5437ab236b5924b7cdbd4546fd5fe"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The document was kept out because the number in it belonged to the government.",
+      "text_sha256": "sha256:4fa7b94b775f4a3f6b83d9aa5e9a8ef1f0fc8f1e6045e29877461345922cf1d0",
+      "idempotency_key": "sha256:1e27b56534bd729d19c2856c85e32a943a70cbf4b3107329299a0f6a7f782304"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So.",
+      "text_sha256": "sha256:12984637383b7b9cafd5ff2b61cb567addb6b6a8123c85ec0000efeacebc0082",
+      "idempotency_key": "sha256:6f1278f29986bd50ef8089ea7f882ba853dc4555b677e7d6976cb60dcc3ead62"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Two prices.",
+      "text_sha256": "sha256:c7fc3370511573f3f8b9681bbac01e41193225f22c9135133b34bf4eff59be7a",
+      "idempotency_key": "sha256:00a589df48bcad1ac1369e03e1d04159bd38838ff8a7d1732ff100a315475784"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Eleven dollars is a rollover-compliance figure, for every passenger car and light truck sold in America, in a nineteen seventy-three filing that a court excluded.",
+      "text_sha256": "sha256:de4471c8e17874af5ecb21e447bae3ddc1cea64db48c56b74dca81c5b37dcef1",
+      "idempotency_key": "sha256:1d347acc534f31587783ae2fd3481287e7469565bf29bd0cb87f1bffbc869813"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Fifteen dollars and thirty cents is an appellate court's figure for a package of rear-impact fixes on one car line, in an opinion that stands.",
+      "text_sha256": "sha256:07af974168bef869cdb8c3e32c1e2e8ac390406d027bcaaf584557e8fe3caec7",
+      "idempotency_key": "sha256:a8bf491868816f3b409d493fc04a10a8d529635c8821c3e3775786277ef55efa"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They are not the same number.",
+      "text_sha256": "sha256:82a527258a5d688b88ad827b3ba70171398454fe8662586a9dac3ca67f9d4d9c",
+      "idempotency_key": "sha256:c5bf3159fe21298b61fa2ee7e232b426b537167ed0bf7878fbab863f658b89f3"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They never were.",
+      "text_sha256": "sha256:c082f18ffa64eaeb9e4ac933e32e7cbe5569cb40fbf82ce43cf482a2ddac51de",
+      "idempotency_key": "sha256:4bf1d9ce134b1ccf15a5285dbdb27c9a3bbc389a7ad1c9385065a70311b1c57d"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the tenth of August, nineteen seventy-eight, in Elkhart County, Indiana, three young women died after a van struck the Pinto they were in.",
+      "text_sha256": "sha256:ec283bd207e3a5b64b8a9256b635acdfdd7d99a82137be5cb1a26f24e093b745",
+      "idempotency_key": "sha256:91f38a17cf8e4af7ae45e3c92bb8ec2a28b27234879593e57bcf5cb199adaff5"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The wire report named them: Judy Ulrich, eighteen, of Osceola, Indiana; her sixteen-year-old sister Lynn; and their cousin Donna Ulrich, eighteen, of Roanoke, Illinois.",
+      "text_sha256": "sha256:9c6adb8bde2a08a1ebf46d3da2bfd23eca0a112bc322e7689d9f05e17eec3608",
+      "idempotency_key": "sha256:b0c3238d5fb91d04a2dbd4224d4b0031c8ec666b79f0bbb1d717d1ef5d92fd23"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A grand jury indicted the company.",
+      "text_sha256": "sha256:2532b371d672d01f6c310ab94e80172d893e4708f18fb4caba0ab2a5d2e07466",
+      "idempotency_key": "sha256:43b6347baf858a80fabba2625ba47a27b88922e6c2a080eb7d64e3f2c195cf30"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Three counts of reckless homicide, and one count of criminal recklessness.",
+      "text_sha256": "sha256:b0af12964bc3e0f732487facdc8afde1573431970afad04c549bf76f9c9cddc7",
+      "idempotency_key": "sha256:ecd13cd3f47ab84a5a3a7e81e42826ce43a3ed9faccacb3cf3e1ae4de6760546"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The maximum penalties would total thirty-six thousand dollars in fines.",
+      "text_sha256": "sha256:df52f799d63501f08b51950e24d9850133849a68761161e4452ae460f74c307e",
+      "idempotency_key": "sha256:9d6c68b592f33b59eedf31bf3cc0960de70d38decc9fa794ee5d6ce956d980d5"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Thirty-six thousand.",
+      "text_sha256": "sha256:f72b65bffbf92f48ca82c3b53502ad86ebc854d1a58596b109a97b190ba8a2e0",
+      "idempotency_key": "sha256:d84c8c4253d02d528048d58ebd15850739f464b7515f8c5e673616ab969fac4d"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Against a company whose net worth the California trial judge had put at seven point seven billion.",
+      "text_sha256": "sha256:0bf08831cd40dd87d0ceef7f27ae47f313fb5d394a6a8b778ae68b0b83768d89",
+      "idempotency_key": "sha256:e5a55d87a0bdd98f48eee845b054683722d3a375ac5ae951d7d0c38510f530d8"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The grand jury could have indicted individual Ford executives.",
+      "text_sha256": "sha256:070398e642d7c9bc12f2f1678bc6b16b2336bc41abcc01af042e5ea44fbb0548",
+      "idempotency_key": "sha256:ff8db19b5701b658f8d50a07bdcd3f6057f70a9a028218eb9de99deed5bb3fdf"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It chose to charge only the corporation.",
+      "text_sha256": "sha256:fa72dcacc657f64fa77d00ad6f2dfb51a95a8209f34beb678542fdeedb139939",
+      "idempotency_key": "sha256:2eb840ff5bec5419a35b2c599e9cfcd1ac977f0c2400e2d038d252aa888a365c"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "This case has two numbers, and that is a fact about its shape.",
+      "text_sha256": "sha256:78e5b4bafc132b99434814f449e605a043a2a45544dabd93eb4cc77402e9e3ad",
+      "idempotency_key": "sha256:c55a3fc4ea613e245bc0796c365ba6237303a3975e5e62e48ef21b2d5de7db85"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It was filed in Elkhart Superior Court as number five three two four, on the thirteenth of September nineteen seventy-eight — and the source for that is a California appellate opinion five years later, surveying every corporate homicide prosecution then known.",
+      "text_sha256": "sha256:9bdfa90ee7a332382c082343a5a1e075811af7d22d1dcd7889a8369dd6d5e539",
+      "idempotency_key": "sha256:af12a9a0112a5bc6a66390836f2d828aa87349ed7fc4a9efed20f40c62281c6c"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The venue then changed, and judgment was entered at Winamac, in the Pulaski County Circuit Court, as number eleven dash four three one.",
+      "text_sha256": "sha256:e69a8f16f2c07438364a211665fda7b4bf571772f49c85a4964ae774d88c4705",
+      "idempotency_key": "sha256:bc0737a57da7629563a5b5d9bc9be6f92c04c8d6fb1635d89c5499c3c24cda1e"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The trial ran ten weeks.",
+      "text_sha256": "sha256:c110bb973ffeb44d3e4805e4813ee958df5b9550336e83b230998c95f79898b7",
+      "idempotency_key": "sha256:26547f96a9b1f890315a6f2ede68588c2ae022fc9f2188676c9c7d3e2ae66b8e"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And here is the structural fact that explains the whole thing, which almost nobody who tells this story has ever mentioned.",
+      "text_sha256": "sha256:8cab2d52d2077acf9f38b8c363a90a6d6242f23712021dfb7ecd9145a97c8d8b",
+      "idempotency_key": "sha256:d1afb0e1b33c8586ad6da03dd919c76027e2850e0ebcfc7a624630f09a01162c"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The reckless homicide statute Indiana charged under had been enacted only in nineteen seventy-seven.",
+      "text_sha256": "sha256:12f4ff71a2884ab411da998044e8ef721753530c3e79aee565c2fab4c41e918a",
+      "idempotency_key": "sha256:43b1c84c5ce432d25c0a7a3d233563e9409d7101739b928fa8360bdd7835b8cf"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "So Ford could not be prosecuted for the reckless design of the Pinto.",
+      "text_sha256": "sha256:b931e073360ace67544d0a2264ab278e47e20507439ac2465e12bd89c87f5d58",
+      "idempotency_key": "sha256:34992cb5815d779dbcd89b26670306779c0793def2649a3572e3820f911f97b7"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The prosecution needed to show a reckless failure, after nineteen seventy-seven, to repair or to warn.",
+      "text_sha256": "sha256:2d8073e924f18024ac113c29a695615f92d415fa1dc3a2b0d52587fec3a54596",
+      "idempotency_key": "sha256:cc9be8125341e164d8ade6476a408dbf693818a4c7797875bfe6af0f01fa940a"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The design was not on trial.",
+      "text_sha256": "sha256:b103f5f82df565f0b17b6a54878a7b9e0901ad02a7cf9d36cb42f764e4d4a763",
+      "idempotency_key": "sha256:375725f15f3800ea59bc56bb7f67f80d5c21b7368f94e325476405b2df73ef57"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It could not be.",
+      "text_sha256": "sha256:344110629cd493e3d2ef99b0ce520e9cb9bf86b575f12546dfaaea01205e53ff",
+      "idempotency_key": "sha256:1d3732e2290eac32e79c83aa85c47f4ed8cefc9389084ce490a59e7b750daedc"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And largely because of the narrowness of the resulting issue, the prosecution was not able to secure the admission of the internal Ford documents on which it had hoped to build its case.",
+      "text_sha256": "sha256:cad79b81e07c45b4ff20692fda6e917b310c1746f966f73dee5fb2063e09168b",
+      "idempotency_key": "sha256:f69e5215519347401160da6d2d1b8d4372ef140c4ed2147ba564b9850b03a6e1"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What was left was a fight about speed.",
+      "text_sha256": "sha256:2c4d8d5a2188d8085b9500ad15a6f71f43101e2ecad6999ad7abf5d8b0e9db41",
+      "idempotency_key": "sha256:4c37d3e085eb6697e34d5b44b85326d663092f3b1ddbe975c03248124cb650e4"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The defence showed films of test crashes in which other cars struck by the same model of van sustained similar damage.",
+      "text_sha256": "sha256:b0aac2f2abd9d4c054a1036db0e2a0525b14fcdff6c2a2f86a07c436b2f19dc4",
+      "idempotency_key": "sha256:4ba9dafc9786e777b2e82a2914718cb10d515c0286962f5380873a153ad5a6b4"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The prosecutor described the resources: it has just been a matter of David and Goliath.",
+      "text_sha256": "sha256:08aacd725c0d780e1abedc65936f85642783e160e11db0860e65e16de95fb2df",
+      "idempotency_key": "sha256:92ef1321a9bb35f435a0c55195226d1a9bcddadf639d1fab9730fe20b29d6264"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the thirteenth of March nineteen eighty, the jury found Ford not guilty.",
+      "text_sha256": "sha256:34af42ed32e8783a8c88f516ac8925cf940bc3eae31e13bbcb8a0f235c2217f6",
+      "idempotency_key": "sha256:e018a67c9fe5b8129c2abc44722f47cad06654778bb995f750ad65b1f1c34bae"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The Indiana Law Review, surveying the year, recorded what the jurors said afterwards.",
+      "text_sha256": "sha256:7941ca6b42f88ad3de683d761e29d8b3522a28d871594e8ef960340ec68c9bce",
+      "idempotency_key": "sha256:8f4a2fde049149ce108afdb8cb27ce679443512c3a63879fc0f0589c2054703d"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Interviews with the jury after trial indicated that the issue of closing speed was never resolved by the jury.",
+      "text_sha256": "sha256:55ccff48341a67a265105d788142e1629bb441904b575c76f513afbb5b0fc9fc",
+      "idempotency_key": "sha256:d514c0a3cf8047b0250b381b8b3dfc0c6ef9e318389c07b48523ced0da0b6e2c"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The case was not appealed from the trial level.",
+      "text_sha256": "sha256:a46febaadfeca5fe4471d61d1a1f713dfad92b80eb74e06cfe2409e6326001a3",
+      "idempotency_key": "sha256:cd731ea8955e9cce45cb8187b3964b5756ffa51ffc87c2590d46fb37951fe23e"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is why there is no Indiana appellate opinion about any of this, and why almost everything written about that trial since has come from two newspapers and a book.",
+      "text_sha256": "sha256:ef2c65c4d6bb488aacfe0a2f60316148b8efddb9fe7da00b6ad8558e7b077c36",
+      "idempotency_key": "sha256:cc0d3afa12bd88abfcd8618d616dda7c48b2642f7102e5230674961836606696"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "So the popular story is wrong in five places.",
+      "text_sha256": "sha256:296b61a03c66891da010ac65464557088253ba95083946ab8666ca2c975316d4",
+      "idempotency_key": "sha256:8603b177b0a9bcadfef8e5dc7c9cc9a706402a5888e6317405105b3720aaf7ea"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The document is about rollover.",
+      "text_sha256": "sha256:bc16c7ef10301929b1396c427b79ba3cdf80623b616702321571f7adf6a11986",
+      "idempotency_key": "sha256:fdba6ea9885dfafa29e0ae854e239204a08ca2dcf9df75d91f3fd0a6476ebf1d"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The units are the whole industry.",
+      "text_sha256": "sha256:4a00a3fed269b46778e4eb14c2c4187d355221ae7951295387374e7a79902c0f",
+      "idempotency_key": "sha256:8a0ef714904fc0095529fafe6353ae486920405add72d852546d598086e683ee"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The price of a life belonged to the government.",
+      "text_sha256": "sha256:9b74b8c77372f6307de51eb7b3b4e2bead8ea6481039f6680c521a25896017b6",
+      "idempotency_key": "sha256:436607aa96aa4751558b945babd7322291888bf0bf100c4641ddaed7c1553527"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The jury never saw the paper.",
+      "text_sha256": "sha256:32af5f24271e6a46952030e9d9f57df3c0ef471feb118233946ec77d0e3d36d2",
+      "idempotency_key": "sha256:feb6a912c22e33845025982d3bd53d280526535d08222cb4e76f9079c8268437"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And the criminal case ended in an acquittal.",
+      "text_sha256": "sha256:76170f6c9bacc077ad173888840cd0fb03fccc93c5f5614340bd26d9dd7a822b",
+      "idempotency_key": "sha256:b3d283ca2293ee5f22e867c3e61f814f12ef4fc05ad6106e7f3ffb7c57d0ae98"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "None of which makes the car innocent, and the man who established most of it says so on the same pages.",
+      "text_sha256": "sha256:2871f3826a935f6f95774b3ba37a28c1455b9b36354ac2d24858b7edbe454bfc",
+      "idempotency_key": "sha256:656b71b62d01ad96902b5230e6d0a62c0fa0e9c509b2d99dc416fab164a6f47d"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In the government's crash-testing, Schwartz writes, the Pinto was compared to the Chevrolet Vega, often regarded as having the least safe gas tank of the other subcompacts for sale in America.",
+      "text_sha256": "sha256:ec84a682a3bd2432166f59bdb6725f00d862fe26d0b210ec2e8969784111a75d",
+      "idempotency_key": "sha256:c82f2ae066fecc3697a76014c29997f9a93cac6703a00dfcc7ec0201dc3ca582"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In this process, the Pinto consistently flunked tests that the Vega was able to pass.",
+      "text_sha256": "sha256:911aed4b48665b1e6ebead3459037e58ee3f55ef247b2757248e4e307f703717",
+      "idempotency_key": "sha256:20d07ba95c1574db162d0b1894e5785b6bad7d5c3bdb3874b0b6c1a5bd60a609"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "At the criminal trial, Ford put in exhibits showing that Pintos were one point nine per cent of the cars on American roads and were involved in one point nine per cent of fatal accidents accompanied by fire.",
+      "text_sha256": "sha256:9dab2b09a50013ca691efd453282d9e38da5ecadd755284ac438359a8976b118",
+      "idempotency_key": "sha256:8eb72d0818870f3f646adae739172fac2bf465fd8f056137a3100a061998da0b"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The prosecution's own expert confirmed Ford's data.",
+      "text_sha256": "sha256:fbd262d01cf02f6618c1e4bf4d5124465ea06e8bedbe6f4f275f9af836ecffc3",
+      "idempotency_key": "sha256:941569da16c859a15cd4464f5a4db80deb396ae52421a917fed9c298bcb4827c"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the same expert narrowed it to the accidents that were actually the subject of the case: rear-end fire fatalities.",
+      "text_sha256": "sha256:e07458f55ce6e93fbe88d3d96889efc20b16b47b0fbb011de3bdcefdec1fee86",
+      "idempotency_key": "sha256:7ae6f777b9f1d2d726f137e2955235487b8186d73caf3451c6562bffc84f4175"
+    },
+    {
+      "chunk_id": "VC-0302",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "These data showed that Pintos, while comprising one point nine per cent of the auto population, were responsible for four point one per cent of all such fatalities.",
+      "text_sha256": "sha256:5ec9c0f21101aaac70e1b8df59f5d0398c1980c74765bf85001e46376eb120d6",
+      "idempotency_key": "sha256:a400bb4dd97ee8494741e5999d8a9553957815a7fa9f516ff12fa33769d8a459"
+    },
+    {
+      "chunk_id": "VC-0303",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "One point nine of the cars.",
+      "text_sha256": "sha256:6beda73838ebfd5fc071e6ecb8433a6cbb4fb38c0d0340fafa585d0e90bfef93",
+      "idempotency_key": "sha256:22716afb77add1557d34f9f4830ec10ade7f39a603961b952f9f72db612f0b7d"
+    },
+    {
+      "chunk_id": "VC-0304",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Four point one of the deaths.",
+      "text_sha256": "sha256:0423685693143f4a48004016a58ca95a134fbe0e9ff49880b1b12b258fa23025",
+      "idempotency_key": "sha256:32ad37bb7426d4e875d61ef83b865580ff42431c50fc78a6c033b2a1b059dece"
+    },
+    {
+      "chunk_id": "VC-0305",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then the fact this film has been walking towards.",
+      "text_sha256": "sha256:ca62f7cf102d6eb399e84a400ecda06bb755dbb33f13b427cb5ab3fc5771a02a",
+      "idempotency_key": "sha256:ae4d6d2bd571194b5e1a9700cb2b118194aa31e2514c1b16294e613802a4e506"
+    },
+    {
+      "chunk_id": "VC-0306",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Ford had its own comparative memorandum.",
+      "text_sha256": "sha256:6a557cf912d258709400aab8e74294a9bf7c0ea69e4d4cdee4c8fc72f3667d06",
+      "idempotency_key": "sha256:aa5dd9b1ea8c92560044363c0d5e5a18aaf23e1f9d6a52e0cbbb6b33f4924ee8"
+    },
+    {
+      "chunk_id": "VC-0307",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It showed the Pinto's rear-fire fatality rate below the Gremlin's, and considerably above the respective rates of the Vega, Toyota, Mazda and Datsun.",
+      "text_sha256": "sha256:88d76e38b5db6301c881c85031036542707571b5f51f87147573c1b93814c223",
+      "idempotency_key": "sha256:4de08b2885c5d1026a3f5c3b5817becc03e980af5e7903cb1cf620fd040f363c"
+    },
+    {
+      "chunk_id": "VC-0308",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Schwartz's next clause: perhaps for this reason, Ford did not introduce the memorandum during the criminal trial.",
+      "text_sha256": "sha256:cd65f90790c707ef38a0eb3af1a3ab58ecb5996fdc99c990b1a1921587f5e39d",
+      "idempotency_key": "sha256:8b718b5c5f74d7480ec13103fe11a58a5b12f11f1a4acd3ed7895760b3a08257"
+    },
+    {
+      "chunk_id": "VC-0309",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The company that was acquitted had a document that would have hurt it, and did not put it in.",
+      "text_sha256": "sha256:3cf06746ebf5d189804e2005ae8103dffe16ff577b9dfc102bccd35358c8e139",
+      "idempotency_key": "sha256:3fa3863cc1e30ac9941d80b71e5562bbdb97ec5d61275f333f164d824a2fbaa9"
+    },
+    {
+      "chunk_id": "VC-0310",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And the professor who took the myth apart ends up here.",
+      "text_sha256": "sha256:89f399686ab90ae1a5bf3bc1ab6ea463e3a6d19bfb97768376d80d4315ba862a",
+      "idempotency_key": "sha256:6fea66d1137874e71543582661e201cf8c623fdd5981651318812b9d5a847f86"
+    },
+    {
+      "chunk_id": "VC-0311",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There was a package of changes — a stronger bumper, a smooth bolt-free differential, hat sections and cross-members — that would have improved the Pinto's safety.",
+      "text_sha256": "sha256:a801f728e58b71c5ab85d81b8b299a3f151adae74f1521790a6dc25aa631c388",
+      "idempotency_key": "sha256:c7ca29928bf718d51caff1676b08d795a6ccb59c8d57737aedd11f881c8f443a"
+    },
+    {
+      "chunk_id": "VC-0312",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "According to the evidence, he writes, the overall cost of this combination would have been nine dollars.",
+      "text_sha256": "sha256:14aca393a5c4d8fb0f1bee8f63137db8b4c62a64902a28ed08e7fbdec9c32378",
+      "idempotency_key": "sha256:47d7cb1551e65d97e17a061822eb5a41e1277dae8a93fbc96d4afa07d84aa5c8"
+    },
+    {
+      "chunk_id": "VC-0313",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It makes sense to assume, he goes on, that these items were turned down primarily on account of their monetary costs.",
+      "text_sha256": "sha256:c06e201ec315fcea4c48d545899407b8e176a17443ffab807e50063eb3a00b06",
+      "idempotency_key": "sha256:8cc650fcc49a16bbdd4ca2e239d1773d599f77d607ea198df29d994fe5fc6053"
+    },
+    {
+      "chunk_id": "VC-0314",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It is plausible to believe that because of these costs, Ford decided not to improve the Pinto's design, knowing that its decision would increase the chances of the loss of consumer life.",
+      "text_sha256": "sha256:fd6df20bbef7746d4c8e9b48facae73e31dccaed856d590fc1353c258cc0b435",
+      "idempotency_key": "sha256:205307b04e154c7209cd632618f02d1478d0cba6f831704d92b91dc5e329ad20"
+    },
+    {
+      "chunk_id": "VC-0315",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Once a variety of misconceptions are stripped away, this limited core of the Pinto story remains.",
+      "text_sha256": "sha256:79ba5dca469c710280af3b6333da9646723527f33e63bfe2002d3c3745f4001c",
+      "idempotency_key": "sha256:0c696f9f4f2c23af4e23c0d7e019663330e26e961272cdc15428a2c5b55270b7"
+    },
+    {
+      "chunk_id": "VC-0316",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Thirty-eight cases.",
+      "text_sha256": "sha256:77a57a53d5960a677d4a8d58d846124d7f8877955caf16b8d5d56d8e7b37cac5",
+      "idempotency_key": "sha256:84af7c42f6a734120d79fa785bb22bcad321b3bb228c9dfc238eaef56c932689"
+    },
+    {
+      "chunk_id": "VC-0317",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Twenty-seven deaths, one of them from the impact.",
+      "text_sha256": "sha256:f5a55c267028792a0a5846346e65944bcd3afae54b289ff6696d6509546ed319",
+      "idempotency_key": "sha256:1773b272b4062b1355b2c1475fa3385ccfc3cd6ad187306e43032c7adac56156"
+    },
+    {
+      "chunk_id": "VC-0318",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Twenty-four burn injuries that were not fatal.",
+      "text_sha256": "sha256:12a2d0cb7746026fade3f469b5192fe53d5607cf5513d06fb2f06f23ac583c22",
+      "idempotency_key": "sha256:177f73ac4fd37d02175d14e1cecc3266fc4f55de57326a362f11785afb0560ae"
+    },
+    {
+      "chunk_id": "VC-0319",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is the government's own count, from May nineteen seventy-eight, with the government's own doubts attached to it.",
+      "text_sha256": "sha256:ef77ffeb94a8ce85c5e12571b3ffd52c8d1d382e068d26fa05f505862ebc7363",
+      "idempotency_key": "sha256:b6fa854f89b59f51306281818c3c812864a5b80ef9556890ef31819d176f4284"
+    },
+    {
+      "chunk_id": "VC-0320",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The rest of what this film stands on ends on the tenth of September, nineteen eighty-one, when the California Supreme Court declined to hear the case.",
+      "text_sha256": "sha256:36896ed6ca6b92fbd1c4aaf0c089e63dc055a92a25175e653aab092e1f88dc02",
+      "idempotency_key": "sha256:3eff5f9f4a988df5cb0ee1e135526bdd36854ed36cb21b39789fd12a26d122d8"
+    },
+    {
+      "chunk_id": "VC-0321",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "As for Winamac, a court in another state wrote down the number, and a law review in Indiana wrote down the date.",
+      "text_sha256": "sha256:caaf94cb466ea870d62bc656919aee861285655af39efea1e037555923df189a",
+      "idempotency_key": "sha256:3f067f02fdb6d97eb831fa4a7c9c6cc2d91140c56e7e26cabd74dd58c113f225"
+    },
+    {
+      "chunk_id": "VC-0322",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The indictment itself is still in a ledger in Elkhart County, and this film did not get it.",
+      "text_sha256": "sha256:c414206993fa47ac88e7c8de5dc70550cd939cb99d6c6b982755586ecc0d9f4f",
+      "idempotency_key": "sha256:20e0b7d773ecd1fb114a19a025b305b2e144c65b3bda76a823f3402637fb11ab"
+    },
+    {
+      "chunk_id": "VC-0323",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Eleven dollars, and fifteen dollars and thirty cents.",
+      "text_sha256": "sha256:f83db05a5da7e2a76cc35798a27032e14ec8acfb54cf577a7b7bda653525c4d2",
+      "idempotency_key": "sha256:ab71aa284891edb01938f38ecbfe3c8c6e9ec80aa3b9dc9e1338ddbf96273aaf"
+    },
+    {
+      "chunk_id": "VC-0324",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Schwartz again, and this is the sentence the last fifty years should have been built on.",
+      "text_sha256": "sha256:e0a0160dfa0695375aec8d716df7948f219c634aadcc83a569964530baef7ecc",
+      "idempotency_key": "sha256:9f7839d72de858d0a2148efe22b2b538dad58c5ed2d1e3f54d3f1b64549e0ad6"
+    },
+    {
+      "chunk_id": "VC-0325",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Even if the general portrayal of the Pinto as a firetrap should be rejected as false, a limited core of that myth seems fair enough: the Pinto's record in rear-end fire fatalities was not only much worse than the all-car average, but was apparently somewhat worse than the record of most, though not all, of its subcompact competitors.",
+      "text_sha256": "sha256:e778d2a8a1643f78620e968fa151d14e46dbcb651fa6fd91552a7107e850f541",
+      "idempotency_key": "sha256:d17a2a585edd6186a963ba77fc96b9bf2e4a76d1fe8abb074227dd8377a92549"
+    },
+    {
+      "chunk_id": "VC-0326",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And his last word on the car.",
+      "text_sha256": "sha256:3be5c7b18f2bb1b5e3334bcf0d0584384bd806bc099af5ec7d6485174d5ac30d",
+      "idempotency_key": "sha256:8e3316dfeb0c9c938e4a365027baf8d61f2af4e5b439ba7e2ff066764290ebd2"
+    },
+    {
+      "chunk_id": "VC-0327",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "From what I have been able to learn, as for safety the Pinto was a car that was neither admirable nor despicable.",
+      "text_sha256": "sha256:8863b808991b2d42b3c339c3767aaecaad7eaa97b81223f8f4ae33578623a458",
+      "idempotency_key": "sha256:72b07489e7674144ab968d8183d910779ad1381c98501d2a48515c5e1ff8d4b0"
+    },
+    {
+      "chunk_id": "VC-0328",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Its overall fatality rate was roughly in the middle of the subcompact range.",
+      "text_sha256": "sha256:9d4f16db567a8f9c429a53c87eff9a4c9826f6191b65a563306879db73c02cfd",
+      "idempotency_key": "sha256:91a5d3a7c80caae5a9e17e6c24a1036ec65bca4215cb1c50bffaf5135404ef37"
+    },
+    {
+      "chunk_id": "VC-0329",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Its record was better than the subcompact average with respect to fatalities with fire.",
+      "text_sha256": "sha256:89b641e59c02f0d249180a945df4825b53b2b090054f0e593c67474950d101f0",
+      "idempotency_key": "sha256:b706af288e47ac22bf230b081607ecf799ebf01db0b40fc593c88d979ccb86c0"
+    },
+    {
+      "chunk_id": "VC-0330",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Yet for the quite small category of fatalities with rear-end fire, its design features apparently gave it a worse-than-average record.",
+      "text_sha256": "sha256:7ec81346f2e8686a6260313f1164302a47f2f3f3f1b289fb643fdd5e60fb7224",
+      "idempotency_key": "sha256:a631fe19b739ca3ada1b99213da21be530cbc4970ded0b2225e146b8880d4fea"
+    },
+    {
+      "chunk_id": "VC-0331",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Hence, there was nothing clearly wrong in subjecting Ford to liability for harms resulting from that latter category of fires.",
+      "text_sha256": "sha256:9e474ac95facea31dd72647c4039d154a274a02440a84820ace818bf5580e41f",
+      "idempotency_key": "sha256:34bd755846cce2777f1086550f447f077a61dca2dcb226b0209f4021b2b3a056"
+    },
+    {
+      "chunk_id": "VC-0332",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Nine or ten inches.",
+      "text_sha256": "sha256:766e1ca498909d35e0780907dc51ae4d86240ebb8d5d08d757c8f9e7a6bee2a4",
+      "idempotency_key": "sha256:e4faec9f1e574db9ec50e4d0b75d6ccfefa3497b15bf99cc3d2bc61fed742834"
+    }
+  ]
+}

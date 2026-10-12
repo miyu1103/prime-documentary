@@ -1,0 +1,1031 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "case_film_audio_provenance",
+  "episode_id": "PD-2026-035-hinders",
+  "revision": "v001",
+  "generator": "scripts/build_case_film_audio.py",
+  "fps": 30,
+  "timeline": {
+    "total_sec": 1156.843,
+    "lead_sec": 11.54,
+    "body_len_sec": 1136.303,
+    "body_internal_sec": 1136.303,
+    "narration_starts_at_sec": 11.54,
+    "voice_end_sec": 1146.343,
+    "tail_sec": 1.5,
+    "chunks": 170,
+    "beats": 30,
+    "video_timeline": {
+      "note": "mix spans the whole CaseFilm composition; body (narration+cues) offset by lead so it aligns with the burned captions + figures",
+      "hook_seconds": 8.04,
+      "opening_sec": 3.5,
+      "endcard_sec": 9.0,
+      "narration_seconds": 1134.803,
+      "film_data": "remotion\\public\\hinders\\film_data.v001.json"
+    },
+    "timing_source": "narration_index chunk durations (measured per-chunk audio when present, else estimate); SFX placed by token position within the owning chunk; whole body shifted by lead",
+    "measured_chunks": 170,
+    "estimated_chunks": 0
+  },
+  "chapters": [
+    {
+      "chapter_id": "hook",
+      "title": "Hook",
+      "start": 11.54,
+      "end": 22.117,
+      "ambience_bed": "amb_tension_drone.mp3"
+    },
+    {
+      "chapter_id": "opening",
+      "title": "Opening",
+      "start": 22.117,
+      "end": 54.982,
+      "ambience_bed": "amb_highway_traffic.mp3"
+    },
+    {
+      "chapter_id": "setup_and_mechanism",
+      "title": "setup_and_mechanism",
+      "start": 54.982,
+      "end": 239.564,
+      "ambience_bed": "amb_institutional_drone.mp3"
+    },
+    {
+      "chapter_id": "seizure_and_inversion",
+      "title": "seizure_and_inversion",
+      "start": 239.564,
+      "end": 470.505,
+      "ambience_bed": "amb_courtroom_room_tone.mp3"
+    },
+    {
+      "chapter_id": "turn_and_partial_win",
+      "title": "turn_and_partial_win",
+      "start": 470.505,
+      "end": 644.557,
+      "ambience_bed": "amb_office_hum.mp3"
+    },
+    {
+      "chapter_id": "fake_ending_and_scale",
+      "title": "fake_ending_and_scale",
+      "start": 644.557,
+      "end": 847.058,
+      "ambience_bed": "amb_night_window.mp3"
+    },
+    {
+      "chapter_id": "payoff_reform_and_next_loop",
+      "title": "payoff_reform_and_next_loop",
+      "start": 847.058,
+      "end": 1107.441,
+      "ambience_bed": "amb_empty_hallway.mp3"
+    },
+    {
+      "chapter_id": "ending",
+      "title": "Ending / CTA",
+      "start": 1107.441,
+      "end": 1147.843,
+      "ambience_bed": "amb_night_window.mp3"
+    }
+  ],
+  "layers": {
+    "narration": {
+      "role": "front / sidechain-priority (VO wins)",
+      "master_uri": "artifact://episodes/PD-2026-035-hinders/06_voice/master/vc_master_v002.mp3",
+      "master_path_expected": "H:\\pd-media\\episodes\\PD-2026-035-hinders\\06_voice\\master\\vc_master_v002.mp3",
+      "master_exists": true,
+      "gain_db": 0.0
+    },
+    "music": {
+      "role": "per-chapter ducked musical bed (sidechained by VO) + hook/opening intro fill + endcard outro fill",
+      "cue_count": 8,
+      "distinct_tracks": 4,
+      "tracks": [
+        "music/hook/mus_20260614_hook_glass_air_bed_v2.mp3",
+        "music/opening/mus_20260614_opening_measured_arpeggio_v2.mp3",
+        "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v2.mp3",
+        "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v2.mp3",
+        "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v2.mp3",
+        "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v2.mp3",
+        "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v2.mp3",
+        "music/outro/mus_20260614_outro_last_frame_v2.mp3"
+      ],
+      "gain_db": -13.2,
+      "ducked": true,
+      "fills": [
+        {
+          "role": "hook",
+          "file": "music/hook/mus_20260614_hook_glass_air_bed_v2.mp3",
+          "start": 0.0,
+          "end": 8.04,
+          "vol": 0.3
+        },
+        {
+          "role": "opening",
+          "file": "music/opening/mus_20260614_opening_measured_arpeggio_v2.mp3",
+          "start": 8.04,
+          "end": 11.54,
+          "vol": 0.3
+        },
+        {
+          "role": "outro",
+          "file": "music/outro/mus_20260614_outro_last_frame_v2.mp3",
+          "start": 1147.843,
+          "end": 1156.843,
+          "vol": 0.26
+        }
+      ],
+      "fill_count": 3
+    },
+    "ambience": {
+      "role": "distinct constant location bed per chapter (audible; NOT sidechained -> capped duck)",
+      "bed_count": 8,
+      "distinct_beds": 7,
+      "beds": [
+        "amb_courtroom_room_tone.mp3",
+        "amb_empty_hallway.mp3",
+        "amb_highway_traffic.mp3",
+        "amb_institutional_drone.mp3",
+        "amb_night_window.mp3",
+        "amb_office_hum.mp3",
+        "amb_tension_drone.mp3"
+      ],
+      "beds_by_chapter": {
+        "hook": "amb_tension_drone.mp3",
+        "opening": "amb_highway_traffic.mp3",
+        "setup_and_mechanism": "amb_institutional_drone.mp3",
+        "seizure_and_inversion": "amb_courtroom_room_tone.mp3",
+        "turn_and_partial_win": "amb_office_hum.mp3",
+        "fake_ending_and_scale": "amb_night_window.mp3",
+        "payoff_reform_and_next_loop": "amb_empty_hallway.mp3",
+        "ending": "amb_night_window.mp3"
+      },
+      "floor_db": -18.0,
+      "ducking_capped": true,
+      "swell_automation_events": 13
+    },
+    "sfx": {
+      "role": "narration-timed one-shots at real words + chapter cuts (cue times are body-local; add timeline.lead_sec for absolute)",
+      "cue_count": 55,
+      "cues_before_dedup": 55,
+      "deduped": 0,
+      "distinct_files": 17,
+      "word_triggered": 1,
+      "riser_fill": "sfx_riser_2s.mp3",
+      "transient_bed": null,
+      "transient_bed_removed_note": "The former onset-density filler bed (326 meaningless tick/blip/whoosh hits placed on a fixed cadence to game the acceptance onset floor) was REMOVED (EP32 owner reject 2026-07-06). SFX are now ONLY the script's designed (SFX:) cues + chapter cuts at real narrated beats; the gate rewards distinct SFX files + beds, not raw transient count."
+    }
+  },
+  "mix": {
+    "wav_uri": "artifact://episodes/PD-2026-035-hinders/06_audio/mix/PD-2026-035-hinders_film_audio_v001.wav",
+    "wav_path_expected": "H:\\pd-media\\episodes\\PD-2026-035-hinders\\06_audio\\mix\\PD-2026-035-hinders_film_audio_v001.wav",
+    "render_audio_copy": "H:\\pd-media\\episodes\\PD-2026-035-hinders\\08_edit\\audio\\PD-2026-035-hinders_film_audio_v001.wav",
+    "exists": true,
+    "sha256": "a864d3f368abe97da8a4be6b73d9d1110ed1292269504155380af11866eb5625",
+    "duration_sec": 1156.786,
+    "sample_rate": 48000,
+    "channels": 2,
+    "codec": "pcm_s16le",
+    "loudnorm": {
+      "I": -14.0,
+      "TP": -1.5,
+      "LRA": 11.0,
+      "passes": 2
+    },
+    "loudnorm_measured": {
+      "input_i": "-24.13",
+      "input_tp": "-4.61",
+      "input_lra": "2.30",
+      "input_thresh": "-34.20",
+      "output_i": "-14.42",
+      "output_tp": "-1.50",
+      "output_lra": "2.30",
+      "output_thresh": "-24.46",
+      "normalization_type": "dynamic",
+      "target_offset": "0.42"
+    },
+    "final_weights": "1 0.90 0.80 0.95"
+  },
+  "mux": {
+    "note": "This WAV is the ONLY audio in the final deliverable; the video is muxed with -map 0:v -map 1:a so the render carries exactly this mix.",
+    "audio_source_uri": "artifact://episodes/PD-2026-035-hinders/06_audio/mix/PD-2026-035-hinders_film_audio_v001.wav",
+    "audio_source_sha256": "a864d3f368abe97da8a4be6b73d9d1110ed1292269504155380af11866eb5625",
+    "command_template": "ffmpeg -y -i <case_film_video.mp4> -i H:\\pd-media\\episodes\\PD-2026-035-hinders\\06_audio\\mix\\PD-2026-035-hinders_film_audio_v001.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 320k -ar 48000 -shortest <final.mp4>"
+  },
+  "density_gate": {
+    "sfx_count": 55,
+    "sfx_per_min": 2.853,
+    "ambience_coverage": 0.982,
+    "ambience_distinct_beds": 7,
+    "floors": {
+      "sfx_total": 20,
+      "sfx_per_min": 2.0,
+      "ambience_coverage": 0.85,
+      "ambience_distinct_beds": 4
+    },
+    "pass": true,
+    "failures": []
+  },
+  "unmapped_sfx": [],
+  "swells": [
+    {
+      "chapter_id": "hook",
+      "time": 2.529,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a held tone",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "opening",
+      "time": 16.81,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a warm room-tone bed underneath",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "setup_and_mechanism",
+      "time": 144.626,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a low unease tone underneath as a hand circles the pattern",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "setup_and_mechanism",
+      "time": 186.774,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a held minor tone beneath as a faint statute text scrolls, unnoticed",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "seizure_and_inversion",
+      "time": 416.607,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a hollow room-tone bed as the person thins to a silhouette",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "turn_and_partial_win",
+      "time": 530.665,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a quiet ominous tone beneath",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "turn_and_partial_win",
+      "time": 573.142,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a single bright note against a field of muted ones",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "fake_ending_and_scale",
+      "time": 730.092,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a paired tone that leaves one string unresolved",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 910.478,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a low room-murmur tone beneath as a clock icon appears over the government's side",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 1032.157,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a forward-leaning pulse and a distant courtroom tone",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 1060.79,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a sustained unresolved tone beneath the wall of open doors",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "chapter_id": "ending",
+      "time": 1096.567,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "a resolving tone anchored to the final word \"next,\" easing",
+      "trigger": "next,",
+      "timing": "word_trigger"
+    },
+    {
+      "chapter_id": "ending",
+      "time": 1102.89,
+      "dur": 2.8,
+      "bump": 0.6,
+      "phrase": "ending ambience",
+      "trigger": "",
+      "timing": "beat_offset"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "cue_id": "L4-001",
+      "file": "sfx/sfx_paper_rustle.mp3",
+      "chapter_id": "hook",
+      "time": 1.15,
+      "dur": 1.0,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a pen-nib rustle across the deposit slip",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-002",
+      "file": "sfx/sfx_riser_v2_1s.mp3",
+      "chapter_id": "hook",
+      "time": 1.15,
+      "dur": 2.0,
+      "gain_db": -13.2,
+      "source": "script_sfx",
+      "phrase": "a tight riser resolving",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-003",
+      "file": "sfx/sfx_stamp_seal.mp3",
+      "chapter_id": "hook",
+      "time": 2.529,
+      "dur": 0.9,
+      "gain_db": -14.0,
+      "source": "script_sfx",
+      "phrase": "a single stamp as the pen stops short of the reporting line",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-004",
+      "file": "sfx/sfx_whoosh_v2_short.mp3",
+      "chapter_id": "opening",
+      "time": 10.577,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into Opening",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-005",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "opening",
+      "time": 16.076,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a cash-register drawer latch clunks open as she carries the day's money to the bank",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-006",
+      "file": "sfx/sfx_whoosh_v2_med.mp3",
+      "chapter_id": "setup_and_mechanism",
+      "time": 43.442,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into setup_and_mechanism",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-007",
+      "file": "sfx/sfx_stamp_seal.mp3",
+      "chapter_id": "setup_and_mechanism",
+      "time": 48.947,
+      "dur": 0.9,
+      "gain_db": -14.0,
+      "source": "script_sfx",
+      "phrase": "a soft archival stamp lands on the 1970 ledger mark as the currency report fills the teller screen",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-008",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "setup_and_mechanism",
+      "time": 79.281,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a mechanical click as the timeline snaps 1970 to 1986",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-009",
+      "file": "sfx/sfx_low_boom.mp3",
+      "chapter_id": "setup_and_mechanism",
+      "time": 80.473,
+      "dur": 1.6,
+      "gain_db": -11.7,
+      "source": "script_sfx",
+      "phrase": "a low boom as the single statute splits in two",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-010",
+      "file": "sfx/sfx_sub_drop.mp3",
+      "chapter_id": "setup_and_mechanism",
+      "time": 109.433,
+      "dur": 1.4,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "a sub-drop as the word STRUCTURING slams in",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-011",
+      "file": "sfx/sfx_paper_rustle.mp3",
+      "chapter_id": "setup_and_mechanism",
+      "time": 110.553,
+      "dur": 0.9,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a run of data-blips as each small deposit lights up suspicious",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-012",
+      "file": "sfx/sfx_paper_rustle.mp3",
+      "chapter_id": "setup_and_mechanism",
+      "time": 144.029,
+      "dur": 0.9,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "soft data-blips as the deposit-by-day bars fill",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-013",
+      "file": "sfx/sfx_page_turn.mp3",
+      "chapter_id": "setup_and_mechanism",
+      "time": 186.216,
+      "dur": 0.9,
+      "gain_db": -14.9,
+      "source": "script_sfx",
+      "phrase": "a page-turn of the mother's old ledger",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-014",
+      "file": "sfx/sfx_whoosh_v2_long.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 228.024,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into seizure_and_inversion",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-015",
+      "file": "sfx/sfx_boom_v2_deep.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 231.497,
+      "dur": 1.6,
+      "gain_db": -11.7,
+      "source": "script_sfx",
+      "phrase": "a hard low boom as the balance drains to zero",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-016",
+      "file": "sfx/sfx_stamp_seal.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 232.192,
+      "dur": 0.9,
+      "gain_db": -14.0,
+      "source": "script_sfx",
+      "phrase": "a SEIZED stamp slams over the account",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-017",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 256.44,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a padlock click as the account locks and the unpaid invoices stack up",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-018",
+      "file": "sfx/sfx_soft_impact.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 278.323,
+      "dur": 0.6,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "staccato type-ticks as the court caption types on \"UNITED STATES v. $32,820.56 IN U.S. CURRENCY\"",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-019",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 305.141,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a slow metallic flip as the scales of justice invert",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-020",
+      "file": "sfx/sfx_stamp_seal.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 305.787,
+      "dur": 0.9,
+      "gain_db": -14.0,
+      "source": "script_sfx",
+      "phrase": "a strained low tone as the owner pushes uphill against a federal seal",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-021",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 354.441,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a closing-loop click as the diagram completes",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-022",
+      "file": "sfx/sfx_soft_impact.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 354.988,
+      "dur": 0.8,
+      "gain_db": -18.4,
+      "source": "script_sfx",
+      "phrase": "footsteps fading as the owner walks away",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-023",
+      "file": "sfx/sfx_boom_v2_deep.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 389.769,
+      "dur": 1.6,
+      "gain_db": -11.7,
+      "source": "script_sfx",
+      "phrase": "a heavy low boom as the file boxes are wheeled out",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-024",
+      "file": "sfx/sfx_riser_v2_1s.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 390.825,
+      "dur": 2.0,
+      "gain_db": -13.2,
+      "source": "script_sfx",
+      "phrase": "a suspended riser holds under the redacted number",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-025",
+      "file": "sfx/sfx_page_turn.mp3",
+      "chapter_id": "seizure_and_inversion",
+      "time": 415.857,
+      "dur": 0.9,
+      "gain_db": -14.9,
+      "source": "script_sfx",
+      "phrase": "a soft page-turn as the NO THEFT, NO DRUGS, NO VICTIM cards flip up",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-026",
+      "file": "sfx/sfx_whoosh_short.mp3",
+      "chapter_id": "turn_and_partial_win",
+      "time": 458.965,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into turn_and_partial_win",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-027",
+      "file": "sfx/sfx_soft_impact.mp3",
+      "chapter_id": "turn_and_partial_win",
+      "time": 463.346,
+      "dur": 1.0,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "rhythmic press thuds as the front page assembles",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-028",
+      "file": "sfx/sfx_riser_v2_1s.mp3",
+      "chapter_id": "turn_and_partial_win",
+      "time": 464.001,
+      "dur": 2.0,
+      "gain_db": -13.2,
+      "source": "script_sfx",
+      "phrase": "a rising riser as the paper multiplies across newsstands and phone screens",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-029",
+      "file": "sfx/sfx_page_turn.mp3",
+      "chapter_id": "turn_and_partial_win",
+      "time": 490.266,
+      "dur": 0.9,
+      "gain_db": -14.9,
+      "source": "script_sfx",
+      "phrase": "a case-file page-turn as the Institute for Justice steps in",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-030",
+      "file": "sfx/sfx_stamp_seal.mp3",
+      "chapter_id": "turn_and_partial_win",
+      "time": 490.936,
+      "dur": 0.9,
+      "gain_db": -14.0,
+      "source": "script_sfx",
+      "phrase": "a confident DISMISSED stamp that leaves a faint doubt-tone",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-031",
+      "file": "sfx/sfx_stamp_seal.mp3",
+      "chapter_id": "turn_and_partial_win",
+      "time": 529.489,
+      "dur": 0.9,
+      "gain_db": -14.0,
+      "source": "script_sfx",
+      "phrase": "a legal stamp on the dismissal order",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-032",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "turn_and_partial_win",
+      "time": 530.077,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a mechanical latch as WITHOUT PREJUDICE snaps to a corner node",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-033",
+      "file": "sfx/sfx_camera_shutter.mp3",
+      "chapter_id": "turn_and_partial_win",
+      "time": 572.626,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a camera-shutter as the one lit front page holds",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-034",
+      "file": "sfx/sfx_whoosh_v2_short.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 633.017,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into fake_ending_and_scale",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-035",
+      "file": "sfx/sfx_whoosh_v2_med.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 636.082,
+      "dur": 0.8,
+      "gain_db": -14.9,
+      "source": "script_sfx",
+      "phrase": "a paper whoosh as the memo blows across the map, not arriving",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-036",
+      "file": "sfx/sfx_impact_v2_tight.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 659.689,
+      "dur": 0.6,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a bright register tick per small sale on the counter",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-037",
+      "file": "sfx/sfx_low_boom.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 660.381,
+      "dur": 1.6,
+      "gain_db": -11.7,
+      "source": "script_sfx",
+      "phrase": "a low boom as the balance drains to $107,702.66 SEIZED",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-038",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 729.387,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "two case cards click together side by side",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-039",
+      "file": "sfx/sfx_impact_v2_tight.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 740.402,
+      "dur": 1.0,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "a hard impact as the false \"THE END\" card cracks",
+      "trigger": "THE END",
+      "timing": "word_trigger"
+    },
+    {
+      "cue_id": "L4-040",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 750.913,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a metallic sign-latch creak as the FOR SALE sign hangs",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-041",
+      "file": "sfx/sfx_camera_shutter.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 751.49,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a soft thud as the returned balance lands beside the shuttered storefront",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-042",
+      "file": "sfx/sfx_paper_rustle.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 783.176,
+      "dur": 0.9,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "data-blips build the panel to \"278 traceable cases, 91% legal source\"",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-043",
+      "file": "sfx/sfx_boom_v2_deep.mp3",
+      "chapter_id": "fake_ending_and_scale",
+      "time": 784.473,
+      "dur": 1.6,
+      "gain_db": -11.7,
+      "source": "script_sfx",
+      "phrase": "a decisive low boom lands on 91% as the bar fills nine-in-ten",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-044",
+      "file": "sfx/sfx_whoosh_v2_med.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 835.518,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into payoff_reform_and_next_loop",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-045",
+      "file": "sfx/sfx_gavel_knock.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 842.004,
+      "dur": 1.0,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "a gavel on the 2016 appeals ruling",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-046",
+      "file": "sfx/sfx_impact_v2_tight.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 842.741,
+      "dur": 1.0,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "a heavy ledger thud as the legal bill stays red",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-047",
+      "file": "sfx/sfx_riser_2s.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 876.16,
+      "dur": 2.0,
+      "gain_db": -13.2,
+      "source": "script_sfx",
+      "phrase": "a rising riser as McLellan's side lifts with fees, costs and interest",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-048",
+      "file": "sfx/sfx_impact_v2_tight.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 876.837,
+      "dur": 1.0,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "a flat low thud as Carole's side lands on nothing",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-049",
+      "file": "sfx/sfx_gavel_knock.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 909.967,
+      "dur": 1.0,
+      "gain_db": -12.4,
+      "source": "script_sfx",
+      "phrase": "a gavel opens the congressional hearing",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-050",
+      "file": "sfx/sfx_stamp_seal.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 969.612,
+      "dur": 0.9,
+      "gain_db": -14.0,
+      "source": "script_sfx",
+      "phrase": "a firm bill-signing stamp on the 2019 reform act",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-051",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 970.25,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a door latch as it eases shut on the specific trap",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-052",
+      "file": "sfx/sfx_binder_lock.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 1031.535,
+      "dur": 0.7,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a distant door click echoes down the hallway of open doors",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-053",
+      "file": "sfx/sfx_paper_rustle.mp3",
+      "chapter_id": "payoff_reform_and_next_loop",
+      "time": 1060.123,
+      "dur": 0.9,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a soft data-blip as a fresh account glows in the dark",
+      "trigger": "",
+      "timing": "beat_offset"
+    },
+    {
+      "cue_id": "L4-054",
+      "file": "sfx/sfx_whoosh_v2_long.mp3",
+      "chapter_id": "ending",
+      "time": 1095.901,
+      "dur": 0.8,
+      "gain_db": -15.9,
+      "source": "chapter_cut",
+      "phrase": "cut into Ending / CTA",
+      "trigger": "",
+      "timing": "chapter_start"
+    },
+    {
+      "cue_id": "L4-055",
+      "file": "sfx/sfx_paper_rustle.mp3",
+      "chapter_id": "ending",
+      "time": 1101.559,
+      "dur": 1.0,
+      "gain_db": -15.9,
+      "source": "script_sfx",
+      "phrase": "a soft pen-lift rustle as the pen finally leaves the deposit slip",
+      "trigger": "",
+      "timing": "beat_offset"
+    }
+  ],
+  "ffmpeg": {
+    "mixing": "narration(front) + music(sidechain-ducked) + ambience(constant audible bed + swell automation) + sfx(one-shots), two-pass loudnorm I=-14",
+    "output_expected": "H:\\pd-media\\episodes\\PD-2026-035-hinders\\06_audio\\mix\\PD-2026-035-hinders_film_audio_v001.wav",
+    "filter_complex": "[0:a]aresample=48000,volume=1.0,apad,atrim=0:1136.303,asetpts=PTS-STARTPTS,adelay=11540|11540,apad,atrim=0:1156.843,asetpts=PTS-STARTPTS,asplit=2[vo][key];[1:a]atrim=0:8.040,asetpts=PTS-STARTPTS,volume=0.3,afade=t=in:st=0:d=0.6,afade=t=out:st=7.240:d=0.8,adelay=0|0[mi0];[2:a]atrim=0:3.500,asetpts=PTS-STARTPTS,volume=0.3,afade=t=in:st=0:d=0.6,afade=t=out:st=2.700:d=0.8,adelay=8040|8040[mi1];[3:a]atrim=0:10.577,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=9.877:d=0.7,adelay=11540|11540[m0];[4:a]atrim=0:32.865,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=32.165:d=0.7,adelay=22117|22117[m1];[5:a]atrim=0:184.582,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=183.882:d=0.7,adelay=54982|54982[m2];[6:a]atrim=0:230.941,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=230.241:d=0.7,adelay=239564|239564[m3];[7:a]atrim=0:174.052,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=173.352:d=0.7,adelay=470505|470505[m4];[8:a]atrim=0:202.501,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=201.801:d=0.7,adelay=644557|644557[m5];[9:a]atrim=0:260.383,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=259.683:d=0.7,adelay=847058|847058[m6];[10:a]atrim=0:40.402,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=39.702:d=0.7,adelay=1107441|1107441[m7];[11:a]atrim=0:9.000,asetpts=PTS-STARTPTS,volume=0.26,afade=t=in:st=0:d=0.8,afade=t=out:st=2.500:d=3.000,adelay=1147843|1147843[mo];[mi0][mi1][m0][m1][m2][m3][m4][m5][m6][m7][mo]amix=inputs=11:normalize=0:dropout_transition=0[musraw];[musraw][key]sidechaincompress=threshold=0.03:ratio=8:attack=25:release=320[musd];[12:a]atrim=0:10.577,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=9.977:d=0.6,adelay=11540|11540[a0];[13:a]atrim=0:32.865,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=32.265:d=0.6,adelay=22117|22117[a1];[14:a]atrim=0:184.582,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=183.982:d=0.6,adelay=54982|54982[a2];[15:a]atrim=0:230.941,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=230.341:d=0.6,adelay=239564|239564[a3];[16:a]atrim=0:174.052,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=173.452:d=0.6,adelay=470505|470505[a4];[17:a]atrim=0:202.501,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=201.901:d=0.6,adelay=644557|644557[a5];[18:a]atrim=0:260.383,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=259.783:d=0.6,adelay=847058|847058[a6];[19:a]atrim=0:40.402,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=39.802:d=0.6,adelay=1107441|1107441[a7];[a0][a1][a2][a3][a4][a5][a6][a7]amix=inputs=8:normalize=0:dropout_transition=0[ambraw];[ambraw]volume=eval=frame:volume='1+0.600*between(t,14.069,16.869)+0.600*between(t,28.350,31.150)+0.600*between(t,156.166,158.966)+0.600*between(t,198.314,201.114)+0.600*between(t,428.147,430.947)+0.600*between(t,542.205,545.005)+0.600*between(t,584.682,587.482)+0.600*between(t,741.632,744.432)+0.600*between(t,922.018,924.818)+0.600*between(t,1043.697,1046.497)+0.600*between(t,1072.330,1075.130)+0.600*between(t,1108.107,1110.907)+0.600*between(t,1114.430,1117.230)'[ambd];[20:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=12690|12690[s0];[21:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=12690|12690[s1];[22:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=14069|14069[s2];[23:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=22117|22117[s3];[24:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=27616|27616[s4];[25:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=54982|54982[s5];[26:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=60487|60487[s6];[27:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=90821|90821[s7];[28:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=92013|92013[s8];[29:a]atrim=0:1.400,asetpts=PTS-STARTPTS,volume=0.24,adelay=120973|120973[s9];[30:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.16,adelay=122093|122093[s10];[31:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.16,adelay=155569|155569[s11];[32:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=197756|197756[s12];[33:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=239564|239564[s13];[34:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=243037|243037[s14];[35:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=243732|243732[s15];[36:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=267980|267980[s16];[37:a]atrim=0:0.600,asetpts=PTS-STARTPTS,volume=0.16,adelay=289863|289863[s17];[38:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=316681|316681[s18];[39:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=317327|317327[s19];[40:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=365981|365981[s20];[41:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.12,adelay=366528|366528[s21];[42:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=401309|401309[s22];[43:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=402365|402365[s23];[44:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=427397|427397[s24];[45:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=470505|470505[s25];[46:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=474886|474886[s26];[47:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=475541|475541[s27];[48:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=501806|501806[s28];[49:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=502476|502476[s29];[50:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=541029|541029[s30];[51:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=541617|541617[s31];[52:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=584166|584166[s32];[53:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=644557|644557[s33];[54:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=647622|647622[s34];[55:a]atrim=0:0.600,asetpts=PTS-STARTPTS,volume=0.16,adelay=671229|671229[s35];[56:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=671921|671921[s36];[57:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=740927|740927[s37];[58:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=751942|751942[s38];[59:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=762453|762453[s39];[60:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=763030|763030[s40];[61:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.16,adelay=794716|794716[s41];[62:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=796013|796013[s42];[63:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=847058|847058[s43];[64:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=853544|853544[s44];[65:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=854281|854281[s45];[66:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=887700|887700[s46];[67:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=888377|888377[s47];[68:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=921507|921507[s48];[69:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=981152|981152[s49];[70:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=981790|981790[s50];[71:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=1043075|1043075[s51];[72:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.16,adelay=1071663|1071663[s52];[73:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=1107441|1107441[s53];[74:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=1113099|1113099[s54];[75:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=9540|9540[sriser];[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22][s23][s24][s25][s26][s27][s28][s29][s30][s31][s32][s33][s34][s35][s36][s37][s38][s39][s40][s41][s42][s43][s44][s45][s46][s47][s48][s49][s50][s51][s52][s53][s54][sriser]amix=inputs=56:normalize=0:dropout_transition=0[sfxraw];[vo][musd][ambd][sfxraw]amix=inputs=4:weights=1 0.90 0.80 0.95:normalize=0:duration=first,atrim=0:1156.843,loudnorm=I=-14:TP=-1.5:LRA=11:linear=true,alimiter=level_in=1:level_out=1:limit=0.95[aout]",
+    "command": "ffmpeg -y -i \"H:\\pd-media\\episodes\\PD-2026-035-hinders\\06_voice\\master\\vc_master_v002.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\hook\\mus_20260614_hook_glass_air_bed_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\opening\\mus_20260614_opening_measured_arpeggio_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\hook\\mus_20260614_hook_glass_air_bed_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\opening\\mus_20260614_opening_measured_arpeggio_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\outro\\mus_20260614_outro_last_frame_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\outro\\mus_20260614_outro_last_frame_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_tension_drone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_highway_traffic.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_institutional_drone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_courtroom_room_tone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_office_hum.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_night_window.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_empty_hallway.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_night_window.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_v2_1s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_med.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_low_boom.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_sub_drop.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_page_turn.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_long.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_boom_v2_deep.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_soft_impact.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_soft_impact.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_boom_v2_deep.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_v2_1s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_page_turn.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_soft_impact.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_v2_1s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_page_turn.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_camera_shutter.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_med.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_impact_v2_tight.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_low_boom.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_impact_v2_tight.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_camera_shutter.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_boom_v2_deep.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_med.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_gavel_knock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_impact_v2_tight.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_2s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_impact_v2_tight.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_gavel_knock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_long.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_2s.mp3\" -filter_complex \"[0:a]aresample=48000,volume=1.0,apad,atrim=0:1136.303,asetpts=PTS-STARTPTS,adelay=11540|11540,apad,atrim=0:1156.843,asetpts=PTS-STARTPTS,asplit=2[vo][key];[1:a]atrim=0:8.040,asetpts=PTS-STARTPTS,volume=0.3,afade=t=in:st=0:d=0.6,afade=t=out:st=7.240:d=0.8,adelay=0|0[mi0];[2:a]atrim=0:3.500,asetpts=PTS-STARTPTS,volume=0.3,afade=t=in:st=0:d=0.6,afade=t=out:st=2.700:d=0.8,adelay=8040|8040[mi1];[3:a]atrim=0:10.577,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=9.877:d=0.7,adelay=11540|11540[m0];[4:a]atrim=0:32.865,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=32.165:d=0.7,adelay=22117|22117[m1];[5:a]atrim=0:184.582,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=183.882:d=0.7,adelay=54982|54982[m2];[6:a]atrim=0:230.941,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=230.241:d=0.7,adelay=239564|239564[m3];[7:a]atrim=0:174.052,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=173.352:d=0.7,adelay=470505|470505[m4];[8:a]atrim=0:202.501,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=201.801:d=0.7,adelay=644557|644557[m5];[9:a]atrim=0:260.383,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=259.683:d=0.7,adelay=847058|847058[m6];[10:a]atrim=0:40.402,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=39.702:d=0.7,adelay=1107441|1107441[m7];[11:a]atrim=0:9.000,asetpts=PTS-STARTPTS,volume=0.26,afade=t=in:st=0:d=0.8,afade=t=out:st=2.500:d=3.000,adelay=1147843|1147843[mo];[mi0][mi1][m0][m1][m2][m3][m4][m5][m6][m7][mo]amix=inputs=11:normalize=0:dropout_transition=0[musraw];[musraw][key]sidechaincompress=threshold=0.03:ratio=8:attack=25:release=320[musd];[12:a]atrim=0:10.577,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=9.977:d=0.6,adelay=11540|11540[a0];[13:a]atrim=0:32.865,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=32.265:d=0.6,adelay=22117|22117[a1];[14:a]atrim=0:184.582,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=183.982:d=0.6,adelay=54982|54982[a2];[15:a]atrim=0:230.941,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=230.341:d=0.6,adelay=239564|239564[a3];[16:a]atrim=0:174.052,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=173.452:d=0.6,adelay=470505|470505[a4];[17:a]atrim=0:202.501,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=201.901:d=0.6,adelay=644557|644557[a5];[18:a]atrim=0:260.383,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=259.783:d=0.6,adelay=847058|847058[a6];[19:a]atrim=0:40.402,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=39.802:d=0.6,adelay=1107441|1107441[a7];[a0][a1][a2][a3][a4][a5][a6][a7]amix=inputs=8:normalize=0:dropout_transition=0[ambraw];[ambraw]volume=eval=frame:volume='1+0.600*between(t,14.069,16.869)+0.600*between(t,28.350,31.150)+0.600*between(t,156.166,158.966)+0.600*between(t,198.314,201.114)+0.600*between(t,428.147,430.947)+0.600*between(t,542.205,545.005)+0.600*between(t,584.682,587.482)+0.600*between(t,741.632,744.432)+0.600*between(t,922.018,924.818)+0.600*between(t,1043.697,1046.497)+0.600*between(t,1072.330,1075.130)+0.600*between(t,1108.107,1110.907)+0.600*between(t,1114.430,1117.230)'[ambd];[20:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=12690|12690[s0];[21:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=12690|12690[s1];[22:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=14069|14069[s2];[23:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=22117|22117[s3];[24:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=27616|27616[s4];[25:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=54982|54982[s5];[26:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=60487|60487[s6];[27:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=90821|90821[s7];[28:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=92013|92013[s8];[29:a]atrim=0:1.400,asetpts=PTS-STARTPTS,volume=0.24,adelay=120973|120973[s9];[30:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.16,adelay=122093|122093[s10];[31:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.16,adelay=155569|155569[s11];[32:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=197756|197756[s12];[33:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=239564|239564[s13];[34:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=243037|243037[s14];[35:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=243732|243732[s15];[36:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=267980|267980[s16];[37:a]atrim=0:0.600,asetpts=PTS-STARTPTS,volume=0.16,adelay=289863|289863[s17];[38:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=316681|316681[s18];[39:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=317327|317327[s19];[40:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=365981|365981[s20];[41:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.12,adelay=366528|366528[s21];[42:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=401309|401309[s22];[43:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=402365|402365[s23];[44:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=427397|427397[s24];[45:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=470505|470505[s25];[46:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=474886|474886[s26];[47:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=475541|475541[s27];[48:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=501806|501806[s28];[49:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=502476|502476[s29];[50:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=541029|541029[s30];[51:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=541617|541617[s31];[52:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=584166|584166[s32];[53:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=644557|644557[s33];[54:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=647622|647622[s34];[55:a]atrim=0:0.600,asetpts=PTS-STARTPTS,volume=0.16,adelay=671229|671229[s35];[56:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=671921|671921[s36];[57:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=740927|740927[s37];[58:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=751942|751942[s38];[59:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=762453|762453[s39];[60:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=763030|763030[s40];[61:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.16,adelay=794716|794716[s41];[62:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.26,adelay=796013|796013[s42];[63:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=847058|847058[s43];[64:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=853544|853544[s44];[65:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=854281|854281[s45];[66:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=887700|887700[s46];[67:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=888377|888377[s47];[68:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=921507|921507[s48];[69:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=981152|981152[s49];[70:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=981790|981790[s50];[71:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=1043075|1043075[s51];[72:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.16,adelay=1071663|1071663[s52];[73:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=1107441|1107441[s53];[74:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=1113099|1113099[s54];[75:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.24,adelay=9540|9540[sriser];[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22][s23][s24][s25][s26][s27][s28][s29][s30][s31][s32][s33][s34][s35][s36][s37][s38][s39][s40][s41][s42][s43][s44][s45][s46][s47][s48][s49][s50][s51][s52][s53][s54][sriser]amix=inputs=56:normalize=0:dropout_transition=0[sfxraw];[vo][musd][ambd][sfxraw]amix=inputs=4:weights=1 0.90 0.80 0.95:normalize=0:duration=first,atrim=0:1156.843,loudnorm=I=-14:TP=-1.5:LRA=11:linear=true,alimiter=level_in=1:level_out=1:limit=0.95[aout]\" -map [aout] -t 1156.843 -ar 48000 -ac 2 -c:a pcm_s16le \"H:\\pd-media\\episodes\\PD-2026-035-hinders\\06_audio\\mix\\PD-2026-035-hinders_film_audio_v001.wav\""
+  },
+  "library_root": "H:\\pd-media\\library",
+  "provenance": {
+    "script_md": "episodes\\PD-2026-035-hinders\\03_script\\script.en.v001.md",
+    "script_md_sha256": "9aa352a676975691571e9312deb5ed1a4db582890340c1b863e199077e54f2c2",
+    "narration_index": "episodes\\PD-2026-035-hinders\\06_audio\\narration_index.v001.json",
+    "narration_index_sha256": "97b0b3258358aeeed33fcc61e70a65e29c8bc4f5e6f9fcf1cc7a3ee256747dd4",
+    "deterministic": true
+  },
+  "side_effects": {
+    "external_cost_usd": 0,
+    "external_calls": [],
+    "wrote_files": [
+      "episodes\\PD-2026-035-hinders\\06_audio\\audio_provenance.v001.json",
+      "H:\\pd-media\\episodes\\PD-2026-035-hinders\\06_audio\\mix\\PD-2026-035-hinders_film_audio_v001.wav"
+    ],
+    "ran_ffmpeg": true
+  }
+}

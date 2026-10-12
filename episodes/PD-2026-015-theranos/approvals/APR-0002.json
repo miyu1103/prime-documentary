@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-015-theranos",
+  "target_type": "final_video_review",
+  "target_revision": "v008",
+  "decision": "approved",
+  "requested_by": "codex",
+  "approved_by": "owner",
+  "actor": "codex",
+  "decision_source": "Owner message on 2026-06-28 JST: 全て承認します",
+  "decided_at": "2026-06-28T12:53:53+09:00",
+  "video": "H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4",
+  "video_sha256": "sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec",
+  "runtime_seconds": 735.42,
+  "acceptance": "episodes/PD-2026-015-theranos/08_edit/renders/final.v006.acceptance.json",
+  "acceptance_sha256": "sha256:9fd0129980216de24a68855829c0bd460440a34e3e27ba9013a3d22d01adea26",
+  "scope": [
+    "Approve exact final video candidate v008 for release workflow."
+  ],
+  "conditions": [
+    "No upload, schedule, or public release unless APR-0005 and APR-0006 are also approved for exact hashes."
+  ]
+}

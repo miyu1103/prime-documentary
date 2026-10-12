@@ -1,0 +1,44 @@
+{
+  "episode_id": "PD-2026-001-miranda",
+  "revision": "premium_v001_package_v004",
+  "created_at": "2026-06-23T15:11:49.937539+00:00",
+  "commercial_use": "allowed",
+  "publish_operation_allowed": false,
+  "ai_disclosure_required": true,
+  "script_claims_changed": false,
+  "real_person_likeness_policy": {
+    "ernesto_miranda": "not depicted",
+    "earl_warren": "not depicted",
+    "harlan_white_or_other_justices": "not depicted",
+    "allowed_visual_language": "symbolic rooms, documents, hands, silhouettes without identifiable likeness, typography, code diagrams",
+    "qc_status": "representative frames checked; no real-person portrait intentionally used"
+  },
+  "assets": {
+    "sdxl_scene_images": {
+      "count": 109,
+      "source": "local_sdxl_juggernautxl",
+      "ledger": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-001-miranda\\05_stock\\stock_ledger.v001.json",
+      "commercial_use": "allowed"
+    },
+    "sdxl_thumbnail_backgrounds": {
+      "count": 6,
+      "source": "local_sdxl_juggernautxl",
+      "path": "H:/pd-media/assets/ai/thumbs/miranda",
+      "commercial_use": "allowed"
+    },
+    "factory_assets": {
+      "count": 43,
+      "ledger": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-001-miranda\\05_stock\\factory_ledger.v001.json",
+      "commercial_use": "allowed"
+    },
+    "narration": {
+      "source": "ElevenLabs voice chunks reused/assembled",
+      "index": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-001-miranda\\06_audio\\narration_index.v001.json"
+    },
+    "captions": {
+      "source": "forced alignment",
+      "srt": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-001-miranda\\08_edit\\captions.v001.srt",
+      "caption_blocks": 266
+    }
+  }
+}

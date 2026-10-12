@@ -1,0 +1,121 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "colgan",
+  "episode_id": "PD-2026-078-colgan",
+  "assets": "episodes/PD-2026-078-colgan/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-078-colgan/06_audio/narration_index.v001.json",
+  "narration": "colgan/narration.mp3",
+  "captions": "episodes/PD-2026-078-colgan/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/colgan_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 20.68,
+  "hookLine": "At seventeen minutes past ten on a February night, a turboprop on approach to Buffalo was five miles from the runway.",
+  "captionLeadSeconds": 0.0,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses",
+        "_row": "invariant-11"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["EIGHTEEN SECONDS.", "THEN FOUR."],
+        "style": "emphasis",
+        "emphasisWords": ["EIGHTEEN SECONDS."],
+        "_row": "CO-1001"
+      }
+    ],
+    "ACT_1": [
+      {"kind": "acttitle", "title": "THE ONLY WARNING THAT ARRIVES EARLY", "kicker": "ACT ONE", "index": 1, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["THE BAR CLIMBS THE SCALE.", "THE NUMBERS TURN RED."], "style": "emphasis", "emphasisWords": ["THE NUMBERS TURN RED."], "_row": "CO-301"},
+      {"kind": "kinetic", "lines": ["ONCE THROUGH THE HANDS.", "ONCE THROUGH THE EYES."], "style": "emphasis", "emphasisWords": ["ONCE THROUGH THE EYES."], "_row": "CO-302"},
+      {"kind": "kinetic", "lines": ["12 FEBRUARY 2009.", "NEWARK TO BUFFALO."], "style": "emphasis", "emphasisWords": ["12 FEBRUARY 2009."], "_row": "CO-001"},
+      {"kind": "stat", "value": 3407, "label": "Continental Connection, flown for a regional carrier called Colgan Air", "topLabel": "THE FLIGHT", "_row": "CO-001"},
+      {"kind": "compbars", "items": [{"label": "PASSENGERS", "value": 45}, {"label": "FLIGHT ATTENDANTS", "value": 2}, {"label": "PILOTS", "value": 2}], "_row": "CO-001"},
+      {"kind": "kinetic", "lines": ["SHE FLEW ACROSS THE COUNTRY OVERNIGHT.", "SHE HAD NO CRASH PAD."], "style": "emphasis", "emphasisWords": ["SHE HAD NO CRASH PAD."], "_row": "CO-608"},
+      {"kind": "kinetic", "lines": ["BOTH WERE SEEN IN THE CREW ROOM.", "BEFORE A HALF-PAST-ONE REPORT TIME."], "style": "emphasis", "emphasisWords": ["BOTH WERE SEEN IN THE CREW ROOM."], "_row": "CO-610"},
+      {"kind": "kinetic", "lines": ["REF SPEEDS, SET TO INCREASE.", "THE SHAKER FIRES SOONER."], "style": "emphasis", "emphasisWords": ["THE SHAKER FIRES SOONER."], "_row": "CO-304"},
+      {"kind": "kinetic", "lines": ["NO AUTOTHROTTLES.", "A PERSON HOLDS THE SPEED."], "style": "emphasis", "emphasisWords": ["A PERSON HOLDS THE SPEED."], "_row": "CO-1003"},
+      {"kind": "stat", "value": 18, "label": "seconds while the low-speed cue climbed and nothing happened", "topLabel": "ON BOTH DISPLAYS", "_row": "CO-1001"},
+      {"kind": "kinetic", "lines": ["NEITHER PILOT RESPONDED", "TO THE PRESENCE OF THESE CUES."], "style": "emphasis", "emphasisWords": ["NEITHER PILOT RESPONDED"], "_row": "CO-1002"},
+      {"kind": "quote", "quote": "the flight crew's failure to monitor airspeed in relation to the rising position of the low-speed cue", "attribution": "The Board's first contributing factor, in its own words", "_row": "CO-202"},
+      {"kind": "kinetic", "lines": ["THE WINGS WERE LEVEL.", "THE LOAD FACTOR WAS ONE G."], "style": "emphasis", "emphasisWords": ["THE LOAD FACTOR WAS ONE G."], "_row": "CO-204"},
+      {"kind": "stat", "value": 105, "label": "right wing down, after the first stick pusher activation", "suffix": "°", "topLabel": "THE ROLL REACHED", "_row": "CO-205"},
+      {"kind": "stat", "value": 5, "label": "nautical miles north-east of the airport, on a house in Clarence Center", "topLabel": "WHERE IT CAME DOWN", "_row": "CO-002"}
+    ],
+    "ACT_2": [
+      {"kind": "acttitle", "title": "THE EASY STORY AND THE BOARD'S SENTENCE", "kicker": "ACT TWO", "index": 2, "_row": "structure"},
+      {"kind": "numberticker", "value": 15800, "prefix": "$", "label": "a year, the first officer's gross salary for the previous year", "topLabel": "THE EASY STORY", "group": true, "_row": "CO-605"},
+      {"kind": "kinetic", "lines": ["BOTH WERE TIRED.", "THE AIRLINE HAD MADE THAT NORMAL."], "style": "emphasis", "emphasisWords": ["THE AIRLINE HAD MADE THAT NORMAL."], "_row": "CO-703"},
+      {"kind": "quote", "quote": "the extent of their impairment, and the degree to which it contributed to the performance deficiencies that occurred during the flight, cannot be conclusively determined", "attribution": "The Board on fatigue, February 2010", "_row": "CO-801"},
+      {"kind": "kinetic", "lines": ["A BODY THAT EXISTS TO ASSIGN CAUSE.", "AND IT DECLINED."], "style": "emphasis", "emphasisWords": ["AND IT DECLINED."], "_row": "CO-801"},
+      {"kind": "quote", "quote": "the captain's inappropriate response to the activation of the stick shaker, which led to an aerodynamic stall from which the airplane did not recover", "attribution": "Probable cause, in full", "_row": "CO-201"},
+      {"kind": "kinetic", "lines": ["FOUR SECONDS", "AND A PAIR OF HANDS."], "style": "emphasis", "emphasisWords": ["FOUR SECONDS"], "_row": "CO-201"},
+      {"kind": "kinetic", "lines": ["THE SHAKER IS A WARNING.", "THE PUSHER IS AN INSTRUCTION."], "style": "emphasis", "emphasisWords": ["THE PUSHER IS AN INSTRUCTION."], "_row": "CO-303"},
+      {"kind": "stat", "value": 2, "label": "degrees nose down — the command the pusher gives to a human body", "suffix": "°", "topLabel": "PUSH", "_row": "CO-303"},
+      {"kind": "kinetic", "lines": ["A CREW CAN OVERPOWER IT.", "THE SYSTEM WAS DESIGNED SO THEY COULD."], "style": "emphasis", "emphasisWords": ["THE SYSTEM WAS DESIGNED SO THEY COULD."], "_row": "CO-303"},
+      {"kind": "compbars", "items": [{"label": "PULL ON THE COLUMN, POUNDS", "value": 41}, {"label": "STICK FORCE AT AUTOPILOT OUT, POUNDS", "value": 2}], "_row": "CO-206"},
+      {"kind": "kinetic", "lines": ["THE AEROPLANE WAS NOT FIGHTING HIM.", "NOTHING WAS DRAGGING THE COLUMN BACK."], "style": "emphasis", "emphasisWords": ["NOTHING WAS DRAGGING THE COLUMN BACK."], "_row": "CO-206"},
+      {"kind": "stat", "value": 118, "label": "knots, the reference speed returned at fifty-three minutes past nine", "topLabel": "FOR A CLEAN WING", "_row": "CO-1004"},
+      {"kind": "compbars", "items": [{"label": "FLAPS 15, KNOTS ADDED", "value": 20}, {"label": "FLAPS 35, KNOTS ADDED", "value": 15}], "_row": "CO-1005"},
+      {"kind": "kinetic", "lines": ["ICING. EICE.", "NEITHER WORD WAS TYPED."], "style": "emphasis", "emphasisWords": ["NEITHER WORD WAS TYPED."], "_row": "CO-1007"},
+      {"kind": "compbars", "items": [{"label": "BEFORE THE GEAR, KNOTS", "value": 180}, {"label": "BEFORE THE FINAL FIX, KNOTS", "value": 160}], "_row": "CO-1008"},
+      {"kind": "kinetic", "lines": ["A FLOOR WITH A NUMBER ON IT.", "THE AEROPLANE WENT THROUGH IT."], "style": "emphasis", "emphasisWords": ["THE AEROPLANE WENT THROUGH IT."], "_row": "CO-1008"}
+    ],
+    "ACT_3": [
+      {"kind": "acttitle", "title": "THE PAPER IS THE SUBSTITUTE FOR THE WATCHING", "kicker": "ACT THREE", "index": 3, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["EVERY CHECK RIDE IS A FILE.", "EVERY FAILURE IS A FILE."], "style": "emphasis", "emphasisWords": ["EVERY FAILURE IS A FILE."], "_row": "CO-505"},
+      {"kind": "timeline", "events": [{"year": "1991", "text": "INSTRUMENT RATING"}, {"year": "2002", "text": "COMMERCIAL SINGLE-ENGINE"}, {"year": "2004", "text": "COMMERCIAL MULTI-ENGINE"}, {"year": "2007", "text": "AIRLINE TRANSPORT PILOT"}], "_row": "CO-401..CO-404"},
+      {"kind": "stat", "value": 13.1, "decimals": 1, "suffix": "%", "label": "of first attempts at an airline transport pilot certificate failed in 2008", "topLabel": "FOR SCALE", "_row": "CO-407"},
+      {"kind": "kinetic", "lines": ["ONE APPLICANT IN EIGHT.", "FAILING IS NOT THE SIGNAL."], "style": "emphasis", "emphasisWords": ["ONE APPLICANT IN EIGHT."], "_row": "CO-407"},
+      {"kind": "quote", "quote": "Have you ever failed any proficiency check, FAA check ride, IOE or line check?", "attribution": "Colgan's employment application — one line", "_row": "CO-501"},
+      {"kind": "quote", "quote": "I missed the NDB approach, received additional instruction, then repeated the approach and passed.", "attribution": "The answer he wrote in 2005 — true, and not complete", "_row": "CO-502"},
+      {"kind": "kinetic", "lines": ["TWO OTHER DISAPPROVALS.", "NEITHER APPEARED ON THE FORM."], "style": "emphasis", "emphasisWords": ["NEITHER APPEARED ON THE FORM."], "_row": "CO-503"},
+      {"kind": "quote", "quote": "if the captain's incomplete answer had previously been known, it would have resulted in his dismissal from the company", "attribution": "Colgan's vice-president of administration, public hearing, May 2009", "_row": "CO-504"},
+      {"kind": "mechanism", "mechanism": "faultsplit", "_row": "CO-505"},
+      {"kind": "kinetic", "lines": ["28 OCTOBER 2005.", "TRAIN TO PROFICIENCY."], "style": "emphasis", "emphasisWords": ["TRAIN TO PROFICIENCY."], "_row": "CO-406"},
+      {"kind": "kinetic", "lines": ["THAT ONE THEY COULD SEE.", "THREE YEARS LATER, CAPTAIN."], "style": "emphasis", "emphasisWords": ["THREE YEARS LATER, CAPTAIN."], "_row": "CO-406"},
+      {"kind": "quote", "quote": "Sleeping in operations or any crew room in Newark is strictly prohibited and will have severe disciplinary consequences, up to and including termination.", "attribution": "Read-and-sign memo, Newark regional chief pilot, 24 May 2008", "_row": "CO-1102"},
+      {"kind": "kinetic", "lines": ["THE HANDBOOK, MARCH 2008.", "NO GUIDANCE AT ALL."], "style": "emphasis", "emphasisWords": ["NO GUIDANCE AT ALL."], "_row": "CO-704"},
+      {"kind": "compbars", "items": [{"label": "FIRST OFFICER, 2008 AVERAGE", "value": 24000}, {"label": "Q400 CAPTAIN, 2008 AVERAGE", "value": 67000}], "_row": "CO-701"},
+      {"kind": "kinetic", "lines": ["NO LOCALITY PAY FOR THE PILOTS.", "MANAGEMENT RECEIVED IT."], "style": "emphasis", "emphasisWords": ["MANAGEMENT RECEIVED IT."], "_row": "CO-702"},
+      {"kind": "quote", "quote": "It is possible that she did not challenge the captain because she did not consider his deviations from standard operating procedures to be remarkable.", "attribution": "The Board, on the eighteen seconds of her silence", "_row": "CO-1203"}
+    ],
+    "ACT_4": [
+      {"kind": "acttitle", "title": "WHAT CAME OUT OF IT", "kicker": "ACT FOUR", "index": 4, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["FEBRUARY 2010.", "A YEAR AFTER."], "style": "emphasis", "emphasisWords": ["A YEAR AFTER."], "_row": "CO-202"},
+      {"kind": "stat", "value": 4, "label": "contributing factors, and the fourth is the company's own procedures", "topLabel": "THE BOARD FOUND", "_row": "CO-202"},
+      {"kind": "kinetic", "lines": ["THREE FINDINGS ABOUT TWO PEOPLE.", "ONE ABOUT THE COMPANY."], "style": "emphasis", "emphasisWords": ["ONE ABOUT THE COMPANY."], "_row": "CO-202"},
+      {"kind": "stat", "value": 299, "label": "pages, and the safety issues were not mostly about that night", "topLabel": "THE REPORT RAN TO", "_row": "CO-505"},
+      {"kind": "kinetic", "lines": ["MONITORING. PROFESSIONALISM. FATIGUE.", "TRAINING RECORDS. OVERSIGHT."], "style": "emphasis", "emphasisWords": ["TRAINING RECORDS. OVERSIGHT."], "_row": "CO-505"},
+      {"kind": "kinetic", "lines": ["THE FAMILIES DID NOT GO HOME.", "THEY CAME TO WASHINGTON."], "style": "emphasis", "emphasisWords": ["THEY CAME TO WASHINGTON."], "_row": "CO-901"},
+      {"kind": "kinetic", "lines": ["AUGUST 2010.", "AN ACT OF CONGRESS."], "style": "emphasis", "emphasisWords": ["AUGUST 2010."], "_row": "CO-901"},
+      {"kind": "stat", "value": 3, "label": "things it required, and only the third one answers this file", "topLabel": "THE ACT DID", "_row": "CO-902..CO-904"},
+      {"kind": "kinetic", "lines": ["EVERY FIRST OFFICER, AN ATP CERTIFICATE.", "THE FIFTEEN-HUNDRED-HOUR RULE."], "style": "emphasis", "emphasisWords": ["THE FIFTEEN-HUNDRED-HOUR RULE."], "_row": "CO-902"},
+      {"kind": "kinetic", "lines": ["SAFETY MANAGEMENT SYSTEMS", "AT COMMERCIAL AIR CARRIERS."], "style": "emphasis", "emphasisWords": ["SAFETY MANAGEMENT SYSTEMS"], "_row": "CO-903"},
+      {"kind": "quote", "quote": "a central database of pilot records, kept for the life of a pilot, which an airline must review before it hires", "attribution": "The third requirement, and the one that answers this file", "_row": "CO-904"},
+      {"kind": "kinetic", "lines": ["CENTRAL. KEPT FOR LIFE.", "REVIEWED BEFORE HIRING."], "style": "emphasis", "emphasisWords": ["REVIEWED BEFORE HIRING."], "_row": "CO-904"},
+      {"kind": "kinetic", "lines": ["THE FORM WAS THE SAFEGUARD.", "BEHIND IT THERE WAS NOTHING."], "style": "emphasis", "emphasisWords": ["BEHIND IT THERE WAS NOTHING."], "_row": "CO-501"},
+      {"kind": "kinetic", "lines": ["IT WOULD NOT HAVE CHANGED THIS FLIGHT.", "HE WAS IN THE LEFT SEAT."], "style": "emphasis", "emphasisWords": ["IT WOULD NOT HAVE CHANGED THIS FLIGHT."], "_row": "CO-902"},
+      {"kind": "kinetic", "lines": ["THE HEADLINE REFORM", "AND THE USEFUL REFORM WERE NOT THE SAME."], "style": "emphasis", "emphasisWords": ["AND THE USEFUL REFORM WERE NOT THE SAME."], "_row": "CO-904"}
+    ],
+    "ENDING": [
+      {"kind": "kinetic", "lines": ["THE RED BAR IS AT THE BOTTOM.", "THAT IS WHAT CORRECT LOOKS LIKE."], "style": "emphasis", "emphasisWords": ["THAT IS WHAT CORRECT LOOKS LIKE."], "_row": "CO-301"},
+      {"kind": "kinetic", "lines": ["SOMEBODY LOOKED.", "THAT IS THE WHOLE DIFFERENCE."], "style": "emphasis", "emphasisWords": ["THAT IS THE WHOLE DIFFERENCE."], "_row": "CO-904"}
+    ]
+  },
+  "_declared_values": {
+    "leadSeconds": "0 -- VC-0001 is voiced from frame 0; 06_audio/narration_index.v001.json puts the HOOK at 0.0s.",
+    "openingVariant": "'overlay' -- BrandOpening over the hook's settle, as on EP74-EP77 and EP80. The voice does not stop.",
+    "captionLeadSeconds": "0.0 -- 08_edit/captions.final.v001.srt already carries the house lead; its first cue opens at 00:00:00,000 against a narration that starts at 0.0s.",
+    "hookSeconds": "MEASURED 2026-08-27 from 06_audio/narration_index.v001.json: section HOOK spans 0.0 to 20.680 across six chunks (VC-0001..VC-0006), and ACT_1 opens at 22.480 with 'Start with the instrument'. Not estimated.",
+    "hookLine": "VC-0001 verbatim, with the trailing claim comment stripped.",
+    "assets": "episodes/PD-2026-078-colgan/05_visuals/asset_manifest.v003.json does NOT exist yet. It is produced by scripts/build_asset_manifest_motionfirst.py from a filesystem scan of remotion/public/colgan, which on 2026-08-27 holds 332 files in img/ (166 plates + 166 depth maps) and 66 clips in factory/, plus narration.mp3. Build the manifest before build_case_film_generic.",
+    "figures_by_section": "Authored 2026-08-27 from 03_script/script.en.v001.md and EP78_colgan_FACTS_LEDGER.v001.md. Section boundaries were read out of narration_index.v001.json, not guessed: HOOK = script lines 9-15, ACT_1 = 16-109, ACT_2 = 110-191, ACT_3 = 193-378, ACT_4 = 379-443, ENDING = 444-471. Counts are 16/17/17/16 across ACT_1..ACT_4, inside episode_spec's figure_beats_per_act [13,17]; HOOK 2 and ENDING 2; 70 cards in total. EVERY number on a card is a number the narration speaks -- 3407, 45, 2, 2, 18, 105, 5, 15800, 2, 41, 2, 118, 20, 15, 180, 160, 13.1, 1991, 2002, 2004, 2007, 24000, 67000, 4, 299, 3 all appear in the script, and every `stat`/`numberticker` `value` is numeric so nothing can render as NaN. `group` appears only on the numberticker, which is the only kind whose type declares it.",
+    "no_OP_section": "episode_spec's section_vocabulary lists OP, but narration_index has no OP chunks -- the brand opening is an overlay on the HOOK, not a spoken section. A card there would have no window to live in. Same as EP80.",
+    "quarantine": "Read against episode_spec's forbidden_claims, one by one. (1) No card says fatigue caused this: the only fatigue card is the Board's own sentence that the degree of contribution cannot be conclusively determined. (2) No card says the captain lied: the application card carries the question, the answer card carries what he wrote, and the company card is the vice-president's quoted sentence about an incomplete answer. (3) No card blames the first officer's pay or her commute for the accident; the pay cards sit in ACT_3 where the film is describing the arrangements, and the 'easy story' numberticker is explicitly labelled THE EASY STORY, which the narration then takes apart. (4) The fifteen-hundred-hour card states, in the film's own words, that it would not have changed this flight. (5) No card calls either pilot unqualified; the 13.1 per cent card exists precisely so the record cannot be read as proof of a dangerous man. (6) No card characterises either pilot's state of mind; the closest, the ACT_3 closing quote, is the Board's own sentence and is attributed to the Board. (7) No card touches the deaths, the fire or the house: the only impact card gives the distance and the place, 'five nautical miles north-east of the airport, on a house in Clarence Center', and stops there -- no count of the dead appears on any card. (8) The database cards say what the Act required, not that the database exists because of this crash; Public Law 111-216 has not been opened, so nothing is attributed to the statute text itself."
+  }
+}

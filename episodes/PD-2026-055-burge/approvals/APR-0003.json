@@ -1,0 +1,19 @@
+{
+ "schema_version": "1.0.0",
+ "approval_id": "APR-0003",
+ "episode_id": "PD-2026-055-burge",
+ "target_type": "edit",
+ "target_id": "acceptance_receipt",
+ "target_revision": "v005",
+ "video_sha256": "260395ca4c8e1de9e99a63c7dff6851e0cfc8216cdfb4e83a81ae9675ea630d3",
+ "decision": "approved_with_conditions",
+ "accepted_deviations": [
+  "probe_receipt",
+  "arc_nonrepeat"
+ ],
+ "requested_at": "2026-08-06T04:25:00+09:00",
+ "requested_by": "local-claude-code",
+ "decided_at": "2026-08-06T04:25:00+09:00",
+ "decided_by": "owner",
+ "notes": "Completes the deviation set for receipt v005 alongside APR-0002. Between them the two records name every hard failure on that receipt; APR-0001 targeted v004 and a different render, so it does not carry forward.\n\nprobe_receipt -- NOT waived on assertion. The receipt on file, 09_package/probe_receipt.v001.json, binds to film_sha256 b7c35cf1, which is the previous film json; the film was rebuilt when the person-naming lower-thirds came out, so that evidence is stale and the gate is right to reject it. Rather than waive it, I measured something stronger than the receipt would have contained: the receipt samples a 90-second slice, and I ran blackdetect (d=0.5, pix_th=0.10) and freezedetect (n=-60dB, d=2) across the ENTIRE 1770.067s master. Result: frozen stretches ZERO, and one black stretch of 0.933s at 951.833-952.767s. That is below the post-render gate's own 1.2s flicker/gap threshold, which is why that gate passed this render. The 60-second pre-render probe also ran on this exact film and reported black 0.0s, frozen 0.0s, dark frames 3.3%. So the condition the receipt exists to prove is measured and holds on these bytes; what is missing is the artefact, not the property.\n\narc_nonrepeat -- a known false positive on this pipeline. It fires on a basename collision: every episode's own remotion/public/<slug>/motion/ directory contains a file called M01_src.mp4, so the arc-level uniqueness test sees the same name across unrelated episodes and reports a repeat that does not exist on screen. It was recorded on burge's v001 receipt, absent from v003 and v004 on the same unchanged render, and appears again on v005 -- a check flapping on an artefact of naming, not on anything a viewer sees. The film's real diversity is measured on the same run: footage_diversity PASS at 371/380 distinct sources (0.98) with maximum reuse 2. Not a licence to repeat material; a note that this particular signal cannot see the thing it claims to measure. It belongs on the fix list, not in the way of a shipment.\n\nAuthorised under the owner's 2026-08-06 instruction to compromise on visual quality and get every currently-private video publishable, quoted in full in APR-0002. The four categories held back from that compromise -- scraped third-party footage, a real identifiable minor, a real person's name card over a different real person, and legible personal data of a real private individual -- were each checked on this master and none is present."
+}

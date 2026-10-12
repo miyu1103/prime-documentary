@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-034-rolin",
+  "revision": "v001",
+  "status": "derived_from_final_render",
+  "note": "YouTube chapter timestamps derived from the FINAL render remotion/out/PD-2026-034-rolin_film.muxed.v002.mp4 (sha256 4590f86c1acde4347b99d9b3d5e85b92b9f8d0505786f196549af3125c04c5a7; 1920x1080; runtime 1149.9s). Act-turn times come from the acttitle 'figures' in remotion/src/data/rolin_film.json (narration-timeline seconds) plus the 11.5333s Hook+Opening render offset; the two acts with no on-screen title card (THE CHECKPOINT, ENDING/CTA) use their opening VO caption time + the same offset. Chapter 1 is pinned to 00:00 per YouTube requirements. Times are floored to the whole second so each marker never precedes its content. This file does NOT overwrite youtube_meta.v001.json; it supplies the timestamps its chapters_todo block was waiting for. Times should be re-confirmed against the accepted render if the render sha changes.",
+  "source_render": {
+    "final_video": "remotion/out/PD-2026-034-rolin_film.muxed.v002.mp4",
+    "video_sha256": "sha256:4590f86c1acde4347b99d9b3d5e85b92b9f8d0505786f196549af3125c04c5a7",
+    "runtime_seconds": 1149.9,
+    "resolution": "1920x1080",
+    "hook_opening_offset_seconds": 11.5333
+  },
+  "chapters": [
+    { "time": "00:00", "seconds": 0.0, "title": "Intro: your own cash, gone by the gate", "act_ref": "HOOK + OPENING (cold open / bookend)", "basis": "pinned 00:00" },
+    { "time": "00:44", "seconds": 44.75, "title": "The Checkpoint: Pittsburgh, 2019", "act_ref": "ACT I - THE CHECKPOINT (the seizure; no charges)", "basis": "VO 'It is late August, 2019' 33.220 + 11.5333" },
+    { "time": "04:05", "seconds": 245.83, "title": "The Machine: what civil forfeiture is", "act_ref": "ACT II - THE MACHINE (in rem, CAFRA, equitable sharing)", "basis": "acttitle 'THE MACHINE' 234.295 + 11.5333" },
+    { "time": "07:04", "seconds": 424.38, "title": "The Scale: how often this happens", "act_ref": "ACT III - THE SCALE (USA TODAY $209M; DOJ OIG $3.2B)", "basis": "acttitle 'THE SCALE' 412.851 + 11.5333" },
+    { "time": "10:46", "seconds": 646.95, "title": "The Return: Brown v. TSA and the money comes back", "act_ref": "ACT IV - THE FIGHT / on-screen card 'THE RETURN' (class action; savings returned early 2020)", "basis": "acttitle 'THE RETURN' 635.416 + 11.5333" },
+    { "time": "14:30", "seconds": 870.90, "title": "Unresolved: the question that stays open", "act_ref": "ACT V - THE RECKONING / on-screen card 'UNRESOLVED' (program shutdown; TSA case ongoing)", "basis": "acttitle 'UNRESOLVED' 859.362 + 11.5333" },
+    { "time": "18:17", "seconds": 1097.79, "title": "What it means for you", "act_ref": "ENDING / CTA (Bookend; resolution first)", "basis": "VO 'Your cash is legal to carry' 1086.260 + 11.5333" }
+  ],
+  "youtube_description_block": "00:00 Intro: your own cash, gone by the gate\n00:44 The Checkpoint: Pittsburgh, 2019\n04:05 The Machine: what civil forfeiture is\n07:04 The Scale: how often this happens\n10:46 The Return: Brown v. TSA and the money comes back\n14:30 Unresolved: the question that stays open\n18:17 What it means for you",
+  "validation": {
+    "first_chapter_is_zero": true,
+    "chapter_count": 7,
+    "min_gap_seconds_between_chapters": 44.75,
+    "all_within_runtime": true
+  }
+}

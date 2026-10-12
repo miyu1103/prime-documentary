@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-017-onecoin",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 3809,
+    "est_duration_minutes": 25.4,
+    "planned_runtime_minutes_with_silence": 30,
+    "flesch_kincaid": 0.0,
+    "ai_filler_hits": 0
+  },
+  "status": "pass",
+  "findings": [
+    "MID feature (~30 min runtime). Narration 3809 words (~25.4 min @150wpm) sits in the mid narration band 24.0-32.4 min (ADR-0008); the rest of the runtime is designed music/breathing + the silence beat at the void reveal. 16/16 claims used; no dangling refs.",
+    "R3: Ruja Ignatova is CHARGED, NOT CONVICTED - every reference uses 'alleged/charged/accused/the U.S. indictment'. Convicted associates (Greenwood 20y, Scott 10y - 'has appealed', K. Ignatov plea) stated plainly. 'No real blockchain' anchored to Greenwood's guilty plea; scale figures attributed to prosecutors / OneCoin's own records; her fate never asserted (CLM-0014).",
+    "DIGNITY: victims are the moral center; believers are not mocked; Jen McAdam / the Norwegian developer via documented public statements only, no invented dialogue. No real-person likeness of Ignatova or anyone (invariant 11); all visuals symbolic.",
+    "No AI-filler phrases. Pre-publish: LEGAL REVIEW REQUIRED (R3); verify the star verbatim DOJ/FBI quotes in a browser before locking narration."
+  ]
+}

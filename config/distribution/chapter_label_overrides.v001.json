@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "created_at": "2026-08-02",
+  "note": "Viewer-facing replacements for the production-internal chapter labels that the annotated scripts carry ('Hook', 'Ending', 'Subscribe'). Those names are act markers for the writer; on a YouTube progress bar they tell a viewer nothing. Each replacement below was written from that episode's own opening or closing narration -- see 'from' for the line it was drawn from. Where an episode has no annotated script the label is deliberately plain and non-specific rather than invented.",
+  "authored_by": "local-claude-code, read from 03_script/script.annotated.v001.json",
+  "drop": {
+    "PD-2026-001-miranda": ["Subscribe / endcard"],
+    "PD-2026-011-mahanoy": ["Subscribe"]
+  },
+  "overrides": {
+    "PD-2026-015-theranos": {
+      "Hook": "One drop of blood, nine billion dollars"
+    },
+    "PD-2026-017-onecoin": {
+      "Ending": "The question worth asking"
+    },
+    "PD-2026-020-gardner": {
+      "Ending": "The case that is still open"
+    },
+    "PD-2026-021-dbcooper": {
+      "Hook": "The man who jumped into the night"
+    },
+    "PD-2026-022-milken": {
+      "Hook": "$550 million in a single year"
+    },
+    "PD-2026-025-kyllo": {
+      "Hook": "The camera aimed at his house",
+      "Ending": "From heat to a phone booth"
+    },
+    "PD-2026-026-katz": {
+      "Hook": "The microphone on the phone booth",
+      "Ending": "From protecting places to protecting people"
+    },
+    "PD-2026-027-rodriguez": {
+      "Hook": "How long can they keep you?",
+      "Ending": "Where your rights live"
+    },
+    "PD-2026-028-forfeiture": {
+      "Hook": "The house itself was charged",
+      "Ending": "What most people never learn"
+    },
+    "PD-2026-029-hinton": {
+      "Hook": "Thirty years on one bullet that matched nothing",
+      "Ending": "After the release"
+    },
+    "PD-2026-030-cotton": {
+      "Hook": "Certain, and completely wrong",
+      "Ending": "What the two of them did next"
+    },
+    "PD-2026-031-unlock": {
+      "Hook": "The officer holding your phone",
+      "Ending": "Your passcode vs your face"
+    },
+    "PD-2026-032-carsearch": {
+      "Hook": "A hundred years of warrantless car searches",
+      "Ending": "Where the line is drawn now"
+    },
+    "PD-2026-033-tyler": {
+      "Hook": "A $2,300 bill took her paid-off home",
+      "Ending": "What the ruling changed"
+    },
+    "PD-2026-034-rolin": {
+      "Hook": "His own cash, gone at the gate",
+      "Ending": "How far this power reaches"
+    },
+    "PD-2026-035-hinders": {
+      "Hook": "No crime, no charge, account emptied",
+      "Ending": "What it means for your own account"
+    },
+    "PD-2026-036-williams": {
+      "Hook": "Arrested on a computer's guess",
+      "Ending": "The next way to become a suspect"
+    },
+    "PD-2026-038-kidsforcash": {
+      "Hook": "A prank web page, and a judge",
+      "Ending": "How close this is to an ordinary family"
+    },
+    "PD-2026-040-lech": {
+      "Hook": "The house the police destroyed",
+      "Ending": "Who pays"
+    },
+    "PD-2026-042-young": {
+      "Ending": "Where the law leaves you"
+    }
+  }
+}

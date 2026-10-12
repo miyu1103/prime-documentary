@@ -1,0 +1,195 @@
+{
+  "artifact_type": "preflight_render_receipt",
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-033-tyler",
+  "generated_at": "2026-07-09T16:28:11.608348+00:00",
+  "gate": "preflight_render_gate.py",
+  "thresholds": {
+    "depth_floor_pct": 40.0,
+    "figure_beat_floor": 6,
+    "hero_surface_floor": 2,
+    "min_long_edge_px": 3840,
+    "cuts_per_graphic_max": 4
+  },
+  "inputs": {
+    "remotion_plan": "ok",
+    "scene_plan": "ok",
+    "script_annotated": "ok",
+    "asset_selection": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-033-tyler\\05_visuals\\asset_selection.v001.json",
+    "image_dir_exists": true
+  },
+  "verdict": "BLOCK",
+  "render_allowed": false,
+  "checks": [
+    {
+      "check": "motion_budget",
+      "status": "FAIL",
+      "detail": "recomputed motion budget vs floors (hand-typed pass flags ignored)",
+      "subchecks": [
+        {
+          "check": "motion.depth_share",
+          "status": "PASS",
+          "detail": "depth-treated=238/252 still cuts = 94.4% (floor 40%)",
+          "value": 94.4,
+          "floor": 40.0
+        },
+        {
+          "check": "motion.figure_beats",
+          "status": "FAIL",
+          "detail": "0 moving FigureBeats recomputed from continuity_refs (floor 6) scenes=[]",
+          "value": 0,
+          "floor": 6
+        },
+        {
+          "check": "motion.hero_surfaces",
+          "status": "FAIL",
+          "detail": "0 distinct hero motion surfaces recomputed (floor 2) scenes={}",
+          "value": 0,
+          "floor": 2
+        },
+        {
+          "check": "motion.graphic_backing",
+          "status": "FAIL",
+          "detail": "under-backed graphic scenes: ['S002', 'S023', 'S024', 'S025', 'S026', 'S030', 'S031']",
+          "unbacked_scenes": [
+            "S002",
+            "S023",
+            "S024",
+            "S025",
+            "S026",
+            "S030",
+            "S031"
+          ]
+        }
+      ],
+      "recomputed": {
+        "still_cuts": 252,
+        "depth_cuts": 238,
+        "total_cuts": 539,
+        "depth_pct_of_still_cuts": 94.4,
+        "depth_pct_of_total_cuts": 44.2,
+        "moving_figure_beats": 0,
+        "moving_figure_beat_scenes": [],
+        "hero_motion_surfaces": 0,
+        "hero_motion_surface_scenes": {},
+        "graphic_dominated_scenes": [
+          {
+            "scene_id": "S001",
+            "graphic_cuts": 2,
+            "distinct_graphics": 1,
+            "required": 1,
+            "ok": true
+          },
+          {
+            "scene_id": "S002",
+            "graphic_cuts": 6,
+            "distinct_graphics": 1,
+            "required": 2,
+            "ok": false
+          },
+          {
+            "scene_id": "S023",
+            "graphic_cuts": 6,
+            "distinct_graphics": 1,
+            "required": 2,
+            "ok": false
+          },
+          {
+            "scene_id": "S024",
+            "graphic_cuts": 6,
+            "distinct_graphics": 0,
+            "required": 2,
+            "ok": false
+          },
+          {
+            "scene_id": "S025",
+            "graphic_cuts": 8,
+            "distinct_graphics": 1,
+            "required": 2,
+            "ok": false
+          },
+          {
+            "scene_id": "S026",
+            "graphic_cuts": 8,
+            "distinct_graphics": 0,
+            "required": 2,
+            "ok": false
+          },
+          {
+            "scene_id": "S030",
+            "graphic_cuts": 9,
+            "distinct_graphics": 0,
+            "required": 3,
+            "ok": false
+          },
+          {
+            "scene_id": "S031",
+            "graphic_cuts": 9,
+            "distinct_graphics": 1,
+            "required": 3,
+            "ok": false
+          }
+        ]
+      }
+    },
+    {
+      "check": "assets_exist",
+      "status": "FAIL",
+      "detail": "referenced stills exist at 4K with depth maps for depth-treated scenes",
+      "subchecks": [
+        {
+          "check": "assets.references",
+          "status": "FAIL",
+          "detail": "no S0NN still references found in annotated/scene_plan (cannot verify prerequisites)"
+        },
+        {
+          "check": "assets.stills",
+          "status": "FAIL",
+          "detail": "0/0 referenced stills present & >= 3840px long edge; missing=none; under_res=none; unreadable=none"
+        },
+        {
+          "check": "assets.depth_maps",
+          "status": "PASS",
+          "detail": "0/0 depth maps present for depth-eligible stills; missing=0"
+        }
+      ],
+      "recomputed": {
+        "referenced_still_ids": [],
+        "referenced_still_count": 0,
+        "staged_still_files": 68,
+        "stills_present_ok": 0,
+        "stills_missing": [],
+        "stills_under_resolution": [],
+        "stills_unreadable": [],
+        "depth_eligible_still_count": 0,
+        "depth_maps_present": 0,
+        "depth_maps_missing": []
+      }
+    },
+    {
+      "check": "coverage",
+      "status": "FAIL",
+      "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-033-tyler\\05_visuals\\asset_selection.v001.json",
+      "recomputed": {
+        "expected_span_count": 53
+      }
+    },
+    {
+      "check": "film_crosscheck",
+      "status": "WARN",
+      "detail": "film deviates from plan: film cut count 343 vs aspirational plan 539 (binding motion gate = motion_energy on the render)",
+      "recomputed": {
+        "film_path": "C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\src\\data\\tyler_film.json",
+        "film_cut_count": 343,
+        "film_kinds": {
+          "footage": 91,
+          "img": 252
+        },
+        "film_still_like_cuts": 252,
+        "film_depth_treated_cuts": 113,
+        "plan_total_cuts": 539,
+        "film_depth_pct_of_stills": 44.8
+      }
+    }
+  ]
+}

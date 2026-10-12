@@ -1,0 +1,48 @@
+EP66 openfields — 画像発注 バッチ 6/12（6枚）
+区分: CAMERA（8枚） — 幹の上の箱。**それ以上に演出しない。** / TRACK（6枚） — 入った、ということ。**人は写さない。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, muted natural colour, flat overcast daylight of a late Appalachian autumn, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, restrained documentary framing, rural Pennsylvania and Middle Tennessee between 2019 and 2026, ordinary working farmland and unmanaged second-growth woodland, worn unglamorous surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名を一切描かない（看板の面は必ず「褪せて読めない」状態）
+・警察・制服・記章・銃器・血液・ドローンを描かない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ L031.png
+The pale unweathered rectangle of bark left on a trunk where a box has been strapped for years and has now been taken off, seen close and straight on, two small nail holes at its upper corners [STYLE] Avoid: [NEG]
+
+■ L032.png
+A gravel farm track running straight away from the camera between two hedgerows under low cloud, the wheel ruts standing with rainwater, seen from the middle of the track at eye height [STYLE] Avoid: [NEG]
+
+■ L033.png
+The same kind of track seen from the crown of a rise looking down along it, the pale gravel standing out against wet grass, the far end of it lost in the tree line [STYLE] Avoid: [NEG]
+
+■ L034.png
+A fork in a farm track where the left branch has grassed over completely and the right branch is bare and used, seen from the fork itself at waist height [STYLE] Avoid: [NEG]
+
+■ L035.png
+Fresh vehicle tracks pressed over older ones in wet gravel, seen from close to the ground at waist height so the two sets of tread cross in the middle of the frame [STYLE] Avoid: [NEG]
+
+■ L036.png
+A concrete culvert pipe running under a farm track, the gravel worn thin over the crown of it, seen from the ditch below at ground level [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: L001.png）で保存してください。
+長辺 3840px 以上・16:9・PNG。

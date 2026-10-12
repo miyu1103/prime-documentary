@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 201,
+  "episode_id": "PD-2026-054-flowers",
+  "slug": "flowers",
+  "loop": true,
+  "loop_join": "The final three cuts (p23-p25, line L8) rewind the opening plates in reverse order -- short201_03.png, then short201_02.png, then short201_01.png -- with p25 marked isCta:true and rewind:true, holding on short201_01.png (a hand marking a blank juror sheet) under the FULL CASE card. That is the identical plate cut p01 opens the short on, so the last held frame and frame 0 are the same image and the loop closes clean.",
+  "second_watch_detail": "Cut p22 (short201_22.png, commented 'one man inside the arithmetic') reads as an abstract data image on the first pass; once L5-L7 name the DA whose office produced the disparity across 25 years, the same frame reads as a portrait of the person behind the numbers.",
+  "funnel_question_left_for_longform": "If those jury records were sitting in the storerooms the whole time, why did it take reporters rather than a court to add them up?",
+  "funnel_long_title": "6 Trials. 4 Death Sentences. 23 Years. Same Prosecutor.",
+  "funnel_long_video_id": "PfdEpNQyaQQ",
+  "description_line_1": "▶ FULL CASE: 6 Trials. 4 Death Sentences. 23 Years. Same Prosecutor. | https://youtu.be/PfdEpNQyaQQ",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "6 Trials. 4 Death Sentences. 23 Years.",
+    "ctaLongThumbSrc": "shorts/short201/short201_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If those jury records were sitting in the storerooms the whole time, why did it take reporters rather than a court to add them up? The full case is here: https://youtu.be/PfdEpNQyaQQ",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments in remotion/src/data/short201.ts, the CTA block (ctaHeadline/ctaLongTitle/ctaLongThumbSrc) from that same file, the standing question from its file-header docstring, and the long-form video id from the live YouTube title PfdEpNQyaQQ. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a placeholder row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet; short201 is not yet uploaded so its own Studio video id does not exist."
+}

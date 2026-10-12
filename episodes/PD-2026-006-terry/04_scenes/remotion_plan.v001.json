@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-006-terry",
+  "revision": "v001",
+  "note": "Tier-K motion graphics rendered in Remotion + FFmpeg. Exact text, dates, claim-linked citations, counters, diagrams, captions and labels are code-rendered, not embedded in generated images.",
+  "global": {
+    "fps": 30,
+    "resolution": "1920x1080",
+    "palette_ref": "remotion/src/brand.ts",
+    "synthetic_label": "symbolic reconstruction",
+    "citation_policy": "Use citation lower-thirds for case/vote/standard graphics tied to claim_id.",
+    "no_paid_api": true
+  },
+  "reusable_components": [
+    "SymbolicReconstructionLabel: small persistent label used on AI reenactment/location sequences.",
+    "LegalScale: hunch -> reasonable suspicion -> probable cause -> warrant, with animated threshold markers.",
+    "FourthAmendmentWall: dark wall with a narrow electric-blue gap.",
+    "PathCounter: top-down sidewalk/store-window path animation with counter ticking to about 12.",
+    "WeaponsOnlyFrisk: outer-clothing boundary icon and no-pocket-search warning.",
+    "VoteCard: 8-1 majority graphic with one dissent dot.",
+    "CitationLowerThird: case citation and claim-linked note.",
+    "ModernMontageCards: fact tiles for place/action/pattern, assembling into reasonable suspicion.",
+    "PhoneBridge: phone glow in pocket for EP7 tease.",
+    "OpenCaption: later force-aligned captions, bottom third."
+  ],
+  "key_graphics": [
+    {
+      "id": "G01",
+      "scene_id": "S001",
+      "component": "SymbolicReconstructionLabel",
+      "spec": "Small lower-left label appears over the POV stop sequence, then fades before kinetic hook type.",
+      "claim_ids": ["CLM-0001"]
+    },
+    {
+      "id": "G02",
+      "scene_id": "S002",
+      "component": "FourthAmendmentWall",
+      "spec": "Wall appears solid, then a narrow gap opens with electric-blue light. Caption: Suspicion, not proof.",
+      "claim_ids": ["CLM-0001"]
+    },
+    {
+      "id": "G03",
+      "scene_id": "S004",
+      "component": "PathCounter",
+      "spec": "Two anonymous path lines alternate past a storefront. Counter ticks to ~12, with smaller note five or six each implied visually by alternating passes.",
+      "claim_ids": ["CLM-0006"]
+    },
+    {
+      "id": "G04",
+      "scene_id": "S010",
+      "component": "LegalScale",
+      "spec": "Probable cause + warrant sit high on the scale; suspicion marker remains below it.",
+      "claim_ids": []
+    },
+    {
+      "id": "G05",
+      "scene_id": "S015",
+      "component": "VoteCard",
+      "spec": "1968 timeline hit, 8-1 vote, lower-third Terry v. Ohio, 392 U.S. 1.",
+      "claim_ids": ["CLM-0002"]
+    },
+    {
+      "id": "G06",
+      "scene_id": "S016",
+      "component": "LegalScale",
+      "spec": "Scale labels: hunch, reasonable suspicion, probable cause. Reasonable suspicion lights up below probable cause.",
+      "claim_ids": ["CLM-0004"]
+    },
+    {
+      "id": "G07",
+      "scene_id": "S017",
+      "component": "ModernMontageCards",
+      "spec": "Fact tiles appear: two men, same window, about 12 trips, heads together. Tiles assemble into specific and articulable facts.",
+      "claim_ids": ["CLM-0004", "CLM-0006"]
+    },
+    {
+      "id": "G08",
+      "scene_id": "S019",
+      "component": "WeaponsOnlyFrisk",
+      "spec": "Outer clothing boundary highlights, pockets stay locked/dim. Caption: Outer clothing - weapons only.",
+      "claim_ids": ["CLM-0001", "CLM-0003"]
+    },
+    {
+      "id": "G09",
+      "scene_id": "S020",
+      "component": "LegalEquation",
+      "spec": "Stop = seizure; Frisk = search; limited + reasonable. Three-beat type build.",
+      "claim_ids": ["CLM-0003", "CLM-0004"]
+    },
+    {
+      "id": "G10",
+      "scene_id": "S021",
+      "component": "VoteCard",
+      "spec": "Eight majority dots dim; one gold dissent dot remains with Douglas, J. (alone).",
+      "claim_ids": ["CLM-0008"]
+    },
+    {
+      "id": "G11",
+      "scene_id": "S023",
+      "component": "JudgmentBalance",
+      "spec": "Training sharpens judgment on one side; bias bends judgment on the other. No group-specific claim.",
+      "claim_ids": ["CLM-0009"]
+    },
+    {
+      "id": "G12",
+      "scene_id": "S029",
+      "component": "PhoneBridge",
+      "spec": "Street/pocket motif becomes a glowing phone silhouette. Caption: Next: can they search your phone?",
+      "claim_ids": []
+    }
+  ],
+  "status": "spec_ready_for_scene_planned"
+}

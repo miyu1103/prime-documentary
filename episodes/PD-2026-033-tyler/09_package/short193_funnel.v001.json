@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 193,
+  "episode_id": "PD-2026-033-tyler",
+  "slug": "tyler",
+  "loop": true,
+  "loop_join": "The last beat p25 is short193_01.png -- a hand resting with a pen over a blank sheet under a desk lamp -- played in rewind under the FULL CASE card and held to the end; that is the identical frame 0 image, so the short closes on the same unwritten page it began on and the loop has no visible seam.",
+  "second_watch_detail": "TWO COURTS TWO LOSSES at 47.1 s reads as the end of the story the first time through; on the second pass it reads as the setup, because the short never names the court that came after those two.",
+  "funnel_question_left_for_longform": "What did the Supreme Court say about a debt that had multiplied itself six times over?",
+  "funnel_long_title": "She Owed $15,000. The County Sold Her Home and Kept $40,000",
+  "funnel_long_video_id": "rU2vk9XL4vY",
+  "description_line_1": "▶ FULL CASE: She Owed $15,000. The County Sold Her Home and Kept $40,000 | https://youtu.be/rU2vk9XL4vY",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "The county sold her condo and kept the",
+    "ctaLongThumbSrc": "shorts/short193/short193_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What did the Supreme Court say about a debt that had multiplied itself six times over? The full case is here: https://youtu.be/rU2vk9XL4vY",
+  "note": "Record authored on 2026-09-01 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the contact sheet and the beat list in remotion/src/data/short193.ts, the CTA block from that same file, the long-form id from runs/short_funnel/episode_live_video_map.v001.json. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

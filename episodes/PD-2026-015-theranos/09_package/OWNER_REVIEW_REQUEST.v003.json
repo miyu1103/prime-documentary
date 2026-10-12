@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-015-theranos",
+  "revision": "v003",
+  "created_at": "2026-06-27T11:54:26.741902+00:00",
+  "status": "owner_review_required",
+  "gate": "final_candidate_owner_review_plus_R3_legal_rights_review",
+  "public_release_allowed": false,
+  "external_side_effects": {
+    "paid_api": false,
+    "upload": false,
+    "publish": false,
+    "schedule": false
+  },
+  "final_video": {
+    "path": "H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v002.mp4",
+    "sha256": "sha256:0ae40d6ed8b98be5a7d83e3276fb1c97f6c6e0c97282e0f117691c77c3d32f17",
+    "duration": 705.28,
+    "duration_mmss": "11:45"
+  },
+  "acceptance": {
+    "path": "episodes/PD-2026-015-theranos/08_edit/renders/final.v002.acceptance.json",
+    "sha256": "sha256:efe0ae49ad27e18fa675c36a4ae465c718f43d69d9ced68a71913b1d61507df5",
+    "status": "PASS"
+  },
+  "thumbnail": {
+    "path": "episodes/PD-2026-015-theranos/09_package/thumbnail.selected.v001.png",
+    "sha256": "sha256:f0d14264ffaf47aaa601ce7ad7eff5106dc828e30a3da8da17c31c3eca603963",
+    "selected": "B / DREAM OR CRIME?"
+  },
+  "youtube_meta": {
+    "path": "episodes/PD-2026-015-theranos/09_package/youtube_meta.v003.json",
+    "sha256": "sha256:26a4e8bf432944903dc7fb4b024d786e8e2f62ae7078631a4db79a81844df764",
+    "title": "When Does a Bold Promise Become a Crime? The Rise and Fall of Theranos",
+    "privacy_status_target": "private"
+  },
+  "captions": {
+    "path": "episodes/PD-2026-015-theranos/08_edit/captions.v001.srt",
+    "sha256": "sha256:8507ab33c9a41d833b5aa2cdc3341bb266a824d3faaf3a7ec9a660b3326dacca",
+    "burned_in": true
+  },
+  "rights_manifest": {
+    "path": "episodes/PD-2026-015-theranos/09_package/rights_manifest.v003.json",
+    "sha256": "sha256:f38e4da6a257d1cd10a2a1f915aba040fce55736743a0a6e7cd101c8cffbb310",
+    "status": "R3_review_required"
+  },
+  "final_delivery": {
+    "path": "episodes/PD-2026-015-theranos/09_package/final_delivery.v003.json",
+    "sha256": "sha256:fcdea1f017e463943ad98e2a502b0c3c5877f6009781e84a73101c331723dfe2"
+  },
+  "approval_needed": [
+    "APR-0002 first/final review approval for exact final video hash",
+    "APR-0003 title and thumbnail approval",
+    "APR-0004 final ElevenLabs narration release approval",
+    "APR-0005 dedicated R3 legal/rights review",
+    "APR-0006 upload/publish/schedule approval"
+  ]
+}

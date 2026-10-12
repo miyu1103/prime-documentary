@@ -1,0 +1,68 @@
+EP69 hyatt — 画像発注 バッチA 8/8（8枚）
+区分: ACT_5, ENDING　／　人物レーン 3枚
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, American Midwest between 1978 and 1988, tungsten interiors and flat midday daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous surfaces, painted steel, vellum, brass, cut stone, plaster and travertine, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, dimension callouts, drawing title block, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsed building, collapsing structure, rubble, debris, wreckage, ruined interior, rescue worker, ambulance, stretcher, injured person, blood, body, casualty, funeral, firefighter, hospital, crowded hotel lobby, packed function room, crowd of people indoors, courtroom interior, gavel, judge's bench, scales of justice, hourglass, a handshake, police officer, uniform, handcuffs, prison bars, mobile phone, smartphone, laptop, flat-panel monitor, LED work lamp, cordless power tool, hi-vis safety vest, modern safety helmet, CAD screen, car built after 1990, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いているプロンプトがあります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+★[HSTYLE] で始まるプロンプトは人物レーンです。[HSTYLE] の中身はプロンプト本文の一部として
+　そのまま使ってください（置換不要）。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・寸法・手書き・署名・図面のタイトル欄を一切描かない
+・**崩落・瓦礫・救助・負傷者・遺体・満員のロビーを一切描かない**
+・**1978〜1988年のアメリカ中西部。**携帯電話・ノートPC・薄型モニタ・LED投光器・
+　充電式電動工具・蛍光色の安全ベスト・1990年以降の車を描かない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+・**「The same …」で始まるプロンプト（H004 / H051 / H053 / H054）は、直前の1枚と
+　同じ部屋・同じ画角・同じレンズでなければなりません。**別々に生成すると必ずずれます。
+　ずれた場合は作り直さず、元の1枚（H003 / H048 / H049）を色調整だけで作り直してください。
+
+──────── プロンプト ────────
+
+■ H106.png
+A wall calendar page seen close in warm lamp light with a column of small pencil marks running down one side of the grid, the printed numbers deliberately soft and unreadable. The marks are simple short strokes, nothing else. Plain painted wall behind Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H107.png
+A single plain envelope lying face down on a doormat just inside a front door, seen from standing height looking down, cold morning light coming through the frosted glass of the door and falling across the mat. The envelope is completely blank. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H108.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A clerk in ordinary office clothes carrying a tall stack of loose paper down a plain corridor, seen from behind at about twenty feet so no face is visible, the stack held against the chest with both arms. Cold overhead light, worn carpet, closed doors down both sides Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H109.png
+The front of a large stone civic building at dusk, seen from across an empty street, one row of windows on the second floor lit warm yellow and every other window dark, the sky a deep blue behind the parapet. No signage, no inscription and no lettering anywhere. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H110.png
+A single length of threaded steel rod lying alone on a matt black surface that fills the whole frame, seen in macro from the side, lit by one hard raking light from the right so every turn of the thread throws its own shadow and a thin bright line runs along the crests. Slightly cooler and harder light than the same object at the head of the film. Nothing else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H111.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A single person in an ordinary dark coat walking away from the camera down a wide empty stone corridor, small in the frame and turned completely away so no face is visible, cold daylight from tall windows down one side falling across the floor in a row of bright patches. Nobody else in the corridor Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H112.png
+A single wide flat span crossing a large open interior space and resting at each end on two stout square columns that stand on the floor below it, seen from the floor at a low angle with a wide lens, cold daylight from a glazed roof above. Plain, heavy and undecorated, with no rods and nothing hanging. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H113.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A man in his forties in a plain jacket standing alone in the middle of a very large empty interior space, framed from the knees up and turned about three-quarters away from the camera so only the side of his face is visible in profile, looking up toward the roof. Cold daylight from above, the floor stretching away empty in every direction. Nobody else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: H001.png）で保存してください。
+保存先 H:\pd-media\assets\ai\hyatt\
+長辺 3840px 以上・16:9・PNG。

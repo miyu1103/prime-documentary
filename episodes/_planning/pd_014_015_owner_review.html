@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PD 014-015 Owner Review</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080a0f;
+      --panel: #101622;
+      --panel-2: #141d2d;
+      --line: #28354b;
+      --text: #eef4ff;
+      --muted: #9fb0c9;
+      --blue: #4aa3ff;
+      --gold: #d8aa55;
+      --warn: #ffcf70;
+      --blocked: #ff7676;
+      --ok: #72e0a4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      line-height: 1.55;
+    }
+    header {
+      padding: 28px 32px 18px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #0d1420, #080a0f);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 15px;
+      color: var(--gold);
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 10px; }
+    .muted { color: var(--muted); }
+    .wrap {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 24px 28px 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      align-items: start;
+    }
+    .episode {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .episode-head {
+      padding: 18px 18px 14px;
+      background: var(--panel-2);
+      border-bottom: 1px solid var(--line);
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: 116px 1fr;
+      gap: 6px 12px;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+    .label { color: var(--muted); }
+    .value {
+      min-width: 0;
+      overflow-wrap: anywhere;
+      font-family: Consolas, "Cascadia Mono", monospace;
+      color: #dce8ff;
+    }
+    .media {
+      padding: 16px 18px 8px;
+    }
+    video, img.thumb {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #000;
+    }
+    img.thumb {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      margin-top: 12px;
+    }
+    .links, .checks {
+      padding: 0 18px 18px;
+    }
+    .link-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 10px;
+    }
+    a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .btn {
+      display: block;
+      padding: 9px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #0c1220;
+      color: var(--text);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+    .btn:hover {
+      border-color: var(--blue);
+      color: #ffffff;
+    }
+    ul {
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 7px;
+      font-size: 13px;
+    }
+    li {
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #0b111d;
+    }
+    .ok { color: var(--ok); }
+    .warn { color: var(--warn); }
+    .blocked { color: var(--blocked); }
+    .footer {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0c111b;
+    }
+    code {
+      font-family: Consolas, "Cascadia Mono", monospace;
+      color: #dce8ff;
+    }
+    @media (max-width: 980px) {
+      .grid { grid-template-columns: 1fr; }
+      header { padding: 22px 18px 14px; }
+      .wrap { padding: 18px 14px 28px; }
+      .link-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prime Documentary 14-15 Owner Review</h1>
+    <p class="muted">14話・15話のレビュー動画、サムネ、承認ドラフト、公開前リスク資料への入口。ここから先の公開・予約投稿は明示承認が必要です。</p>
+  </header>
+
+  <main class="wrap">
+    <section class="grid">
+      <article class="episode">
+        <div class="episode-head">
+          <h2>PD-2026-014 Lange</h2>
+          <p class="muted">State: <code>edit_review</code> / review-proxy package</p>
+          <div class="meta">
+            <div class="label">Title</div>
+            <div class="value">Can a Cop Follow You Into Your Own Home?</div>
+            <div class="label">Duration</div>
+            <div class="value">10:32</div>
+            <div class="label">Video SHA</div>
+            <div class="value">sha256:0698e4294d536506c7eac40b693e911d548d23e24706d607f12f91c38d49022b</div>
+            <div class="label">Thumb SHA</div>
+            <div class="value">sha256:dae3f3a81eeb0253b077bbab5f581fc56e95d7eae9174fb8e84b18f73c6c6e97</div>
+            <div class="label">Final Delivery</div>
+            <div class="value">episodes/PD-2026-014-lange/09_package/final_delivery.v001.json</div>
+            <div class="label">Final Delivery SHA</div>
+            <div class="value">sha256:3d38b5b56d9b97df568e5316814acc2526c3bfb9284f55efcf15b9c004eadc61</div>
+          </div>
+        </div>
+        <div class="media">
+          <video controls preload="metadata" src="file:///H:/pd-media/episodes/PD-2026-014-lange/08_edit/renders/lange_premium_review_proxy_v001.mp4"></video>
+          <img class="thumb" src="../PD-2026-014-lange/09_package/thumbnail.selected.v001.png" alt="Lange selected thumbnail">
+        </div>
+        <div class="checks">
+          <h3>Current Evidence</h3>
+          <ul>
+            <li><span class="ok">PASS</span> validator: <code>validate_episode.py 14</code></li>
+            <li><span class="ok">PASS</span> rights hash: OK=173 MISMATCH=0 MISSING=0</li>
+            <li><span class="ok">PASS</span> ffmpeg decode for exact review video</li>
+            <li><span class="warn">GATE</span> first-cut, title/thumbnail, final narration, publish approval with final delivery SHA</li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3>Review Files</h3>
+          <div class="link-row">
+            <a class="btn" href="../PD-2026-014-lange/09_package/OWNER_REVIEW_REQUEST.v001.md">Owner review request</a>
+            <a class="btn" href="../PD-2026-014-lange/09_package/prepublish_review_packet.v001.md">Prepublish review packet</a>
+            <a class="btn" href="../PD-2026-014-lange/09_package/approval_drafts.v001.md">Approval drafts</a>
+            <a class="btn" href="../PD-2026-014-lange/09_package/youtube_meta.v001.json">YouTube metadata</a>
+            <a class="btn" href="../PD-2026-014-lange/09_package/final_delivery.v001.json">Final delivery manifest</a>
+            <a class="btn" href="../PD-2026-014-lange/09_package/rights_manifest.v001.json">Rights manifest</a>
+            <a class="btn" href="../PD-2026-014-lange/08_edit/renders/premium_qc/lange_review_contact.jpg">Contact sheet</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="episode">
+        <div class="episode-head">
+          <h2>PD-2026-015 Theranos</h2>
+          <p class="muted">State: <code>edit_review</code> / R3 legal-rights gate</p>
+          <div class="meta">
+            <div class="label">Title</div>
+            <div class="value">When Does a Bold Promise Become a Crime?</div>
+            <div class="label">Duration</div>
+            <div class="value">10:25</div>
+            <div class="label">Video SHA</div>
+            <div class="value">sha256:fa119c6af8c3f37c55f23f2885d34250f65c0b0ee2f87f73ca1cccb2ce873df9</div>
+            <div class="label">Thumb SHA</div>
+            <div class="value">sha256:f0d14264ffaf47aaa601ce7ad7eff5106dc828e30a3da8da17c31c3eca603963</div>
+            <div class="label">Final Delivery</div>
+            <div class="value">episodes/PD-2026-015-theranos/09_package/final_delivery.v001.json</div>
+            <div class="label">Final Delivery SHA</div>
+            <div class="value">sha256:d08b2adc890efcceda39df51c8b06c0d3d130d7132759887d9d8be65a0756e62</div>
+          </div>
+        </div>
+        <div class="media">
+          <video controls preload="metadata" src="file:///H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/theranos_premium_review_proxy_v003.mp4"></video>
+          <img class="thumb" src="../PD-2026-015-theranos/09_package/thumbnail.selected.v001.png" alt="Theranos selected thumbnail">
+        </div>
+        <div class="checks">
+          <h3>Current Evidence</h3>
+          <ul>
+            <li><span class="ok">PASS</span> validator: <code>validate_episode.py 15</code></li>
+            <li><span class="ok">PASS</span> rights hash: OK=160 MISMATCH=0 MISSING=0</li>
+            <li><span class="ok">PASS</span> ffmpeg decode for exact review video</li>
+            <li><span class="blocked">BLOCKED</span> legal/rights review before publish</li>
+            <li><span class="warn">GATE</span> first-cut, title/thumbnail, final narration, publish approval with final delivery SHA</li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3>Review Files</h3>
+          <div class="link-row">
+            <a class="btn" href="../PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v001.md">Owner review request</a>
+            <a class="btn" href="../PD-2026-015-theranos/09_package/legal_rights_review_packet.v001.md">Legal / rights packet</a>
+            <a class="btn" href="../PD-2026-015-theranos/09_package/approval_drafts.v001.md">Approval drafts</a>
+            <a class="btn" href="../PD-2026-015-theranos/09_package/youtube_meta.v001.json">YouTube metadata</a>
+            <a class="btn" href="../PD-2026-015-theranos/09_package/final_delivery.v001.json">Final delivery manifest</a>
+            <a class="btn" href="../PD-2026-015-theranos/09_package/rights_manifest.v001.json">Rights manifest</a>
+            <a class="btn" href="../PD-2026-015-theranos/08_edit/renders/premium_qc/theranos_review_proxy_v003_contact.jpg">Contact sheet</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="footer">
+      <h2>Decision Boundary</h2>
+      <p>このページはレビュー入口です。ここにあるドラフトは承認ではありません。実APRへの昇格、YouTubeアップロード、予約投稿、公開、課金ナレーション生成は、exact hash付きの明示承認があるまで実行しません。公開予約承認には各話の <code>final_delivery.v001.json</code> とそのSHA-256が必要です。</p>
+      <p class="muted">Status summary: <a href="pd_009_015_completion_status.v001.md">pd_009_015_completion_status.v001.md</a></p>
+      <p class="muted">Owner action required: <a href="pd_014_015_owner_action_required.v001.md">pd_014_015_owner_action_required.v001.md</a></p>
+      <p class="muted">Local launcher: <code>powershell -NoProfile -ExecutionPolicy Bypass -File scripts\open_pd_014_015_review.ps1</code></p>
+      <p class="muted">Approval copy packet: <a href="pd_014_015_owner_approval_packet.v001.md">pd_014_015_owner_approval_packet.v001.md</a></p>
+      <p class="muted">After-approval runbook: <a href="pd_014_015_after_owner_approval_runbook.v001.md">pd_014_015_after_owner_approval_runbook.v001.md</a></p>
+      <p class="muted">Approval dry-run result: <a href="pd_014_015_prepare_owner_approvals.dry_run.v001.json">pd_014_015_prepare_owner_approvals.dry_run.v001.json</a></p>
+      <p class="muted">Publish readiness preflight: <a href="pd_014_015_publish_readiness_preflight.v001.json">pd_014_015_publish_readiness_preflight.v001.json</a></p>
+      <p class="muted">9-15 readiness check: <a href="pd_009_015_readiness_check.latest.md">pd_009_015_readiness_check.latest.md</a></p>
+    </section>
+  </main>
+</body>
+</html>

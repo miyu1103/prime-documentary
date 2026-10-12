@@ -1,0 +1,31 @@
+{
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-012-arbitration",
+  "gate": "title_thumbnail_publish_schedule",
+  "decision": "approved",
+  "approved_by": "owner_chat",
+  "approved_at": "2026-06-23T21:55:17+09:00",
+  "scope": "Upload to YouTube as private, set selected title/thumbnail/description/captions, and schedule public release for 2026-06-27T12:00:00+09:00",
+  "title": "The Fine Print That Quietly Took Your Right to Sue",
+  "scheduled_at_local": "2026-06-27T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-27T03:00:00Z",
+  "video": "H:/pd-media/episodes/PD-2026-012-arbitration/08_edit/arbitration_premium_v001.mp4",
+  "video_sha256": "sha256:4cb8e5e9e67e36b118fd671a70c3b3e78e748562bbe08290d2d1b1514b4f7c0c",
+  "youtube_meta": "episodes/PD-2026-012-arbitration/09_package/youtube_meta.v001.json",
+  "youtube_meta_sha256": "sha256:41e9e8cb991db19319591c00224a1c2423d6f2c5a66ac8316c778ef45bd035a3",
+  "thumbnail": "episodes/PD-2026-012-arbitration/09_package/thumbnail.selected.v001.png",
+  "thumbnail_sha256": "sha256:013171c838f4b1c8626437620a66e2620e6a2df8086d36b44ad4236bfcb7ed66",
+  "captions": "episodes/PD-2026-012-arbitration/08_edit/captions.v001.srt",
+  "captions_sha256": "sha256:19c9b691a968d372b796ab12a9fe9a1f713bbc2faa3f59357f8bbf20c68fd47a",
+  "conditions": [
+    "privacyStatus must be private until scheduled release",
+    "publishAt must be 2026-06-27T03:00:00Z",
+    "selfDeclaredMadeForKids=false",
+    "containsSyntheticMedia=true",
+    "upload to allowlisted Prime Documentary channel only",
+    "set selected thumbnail from youtube_meta",
+    "upload English sidecar captions when accepted by YouTube",
+    "no immediate public publish",
+    "do not alter locked script, claims, narration, title, thumbnail, or description"
+  ]
+}

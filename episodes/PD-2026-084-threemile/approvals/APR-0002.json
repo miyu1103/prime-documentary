@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-084-threemile",
+  "target_type": "episode_spec",
+  "target_id": "episode_spec.v001.json",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-09-05T18:30:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-09-05T18:40:00+09:00",
+  "decided_by": "owner",
+  "accepted_deviations": [
+    "people_plates_min_amended",
+    "ae_beats_waived_this_round"
+  ],
+  "notes": "Owner decisions 2026-09-05 via structured decision prompt, verbatim options chosen: (1) 人物画像ゲート -> 「仕様を実態に合わせる(推奨)」: people_plates_min amended 20 -> 4. The 20 was a template default (people_plates list empty, no design ever planned 20 face plates); the approved design is anonymity-first and face detection is incidental. (2) AE演出 -> 「今回はなしで進める」: the spec ae_beats declaration (15 beats, min 12) is WAIVED for this production round -- no AE jobs/webm/placement exist and the film ships on Remotion-side animation (kinetic type, depth, motionkit) alone. The declaration stays in the spec as future intent; this APR pre-approves the deviation so it is recorded, not silent.",
+  "conditions": [
+    "The four ship-blocking classes are untouched and still bind.",
+    "ae_beats stays declared in the spec; any future round may build it.",
+    "people_plates themselves (anonymous) still ship per the design; only the face-count floor changed."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "docs/handover/2026-09-05-build-publish.md; build-readiness lint 2026-09-05"
+}

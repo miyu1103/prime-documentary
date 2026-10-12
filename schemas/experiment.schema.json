@@ -57,6 +57,19 @@
         "object",
         "null"
       ]
-    }
+    },
+    "owner_visible_name": { "type": "string" },
+    "read_on": { "type": "string", "description": "ISO date, or a prose rule when the date is not yet known. scripts/pd_brief.py prints an experiment whose ISO date has passed." },
+    "arms": { "type": "object", "description": "arm name -> {n, video_ids} or {n, derived_from}. derived_from points at the record the write itself produced, so an arm cannot drift from what was written." },
+    "locked_video_ids": { "type": "object", "description": "mutation kind (title|thumbnail|description) -> {ids_from_arm|video_ids, until, reason}. Enforced by scripts/pd_experiments.py assert_unlocked()." },
+    "verdicts": { "type": "array", "items": { "type": "object" }, "description": "pre-declared thresholds. Written before the read, never after." },
+    "abort_condition": { "type": "string" },
+    "noise_floor_pp": { "type": "number" },
+    "noise_floor_basis": { "type": "string" },
+    "baseline": { "type": "object" },
+    "supporting_measurement": { "type": "object" },
+    "standing_evidence": { "type": "string" },
+    "receipt": { "type": "string" },
+    "rollback": { "type": "string" }
   }
 }

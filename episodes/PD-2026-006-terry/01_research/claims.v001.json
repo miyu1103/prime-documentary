@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-006-terry",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Terry v. Ohio (1968) the Supreme Court held that a police officer may, without a warrant or probable cause, briefly stop a person and conduct a limited pat-down of outer clothing for weapons when the officer has reasonable suspicion that criminal activity is afoot and that the person is armed and dangerous.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Warren, C.J.), holding"
+      ],
+      "counterevidence": [
+        "Douglas, J. dissented, arguing this fell below the probable-cause requirement."
+      ],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled police can stop and frisk you on reasonable suspicion, a standard lower than probable cause."
+      ],
+      "prohibited_wording": [
+        "The Court said police can search anyone for any reason.",
+        "Terry abolished the Fourth Amendment on the street."
+      ],
+      "temporal_scope": "1968-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Terry v. Ohio was decided on June 10, 1968 by an 8-1 vote, with the majority opinion written by Chief Justice Earl Warren.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / decision date",
+        "Oyez: decision and vote"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In an 8-1 decision in 1968, Chief Justice Warren wrote for the Court."
+      ],
+      "prohibited_wording": [
+        "The decision was unanimous.",
+        "The decision was 5-4."
+      ],
+      "temporal_scope": "1968",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/vote/author."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The Court treated a stop as a 'seizure' and a frisk as a 'search' under the Fourth Amendment, but held that this limited intrusion can be 'reasonable' on less than probable cause.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, Fourth Amendment analysis"
+      ],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "A stop is a seizure and a frisk is a search, but the Court said this limited kind can be reasonable on a lower standard."
+      ],
+      "prohibited_wording": [
+        "The Court said a frisk is not a search at all."
+      ],
+      "temporal_scope": "1968-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Doctrinal core: search/seizure but reasonable."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The standard the Court applied — later called 'reasonable suspicion' — requires the officer to point to specific and articulable facts, not an inchoate hunch.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, 'specific and articulable facts'"
+      ],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "Reasonable suspicion means facts the officer can describe, not just a feeling."
+      ],
+      "prohibited_wording": [
+        "Reasonable suspicion means the officer needs no reason at all."
+      ],
+      "temporal_scope": "1968-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The new standard."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "The incident occurred in downtown Cleveland, Ohio on October 31, 1963; plainclothes Detective Martin McFadden, who had been a policeman for 39 years (35 as a detective), observed the men.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, facts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "A veteran Cleveland detective, Martin McFadden, was watching the street in 1963."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1963",
+      "geographic_scope": "Cleveland, Ohio, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real person by role; facts per opinion."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "McFadden watched John W. Terry and Richard Chilton repeatedly walk past and peer into a store window — about a dozen trips in all, roughly five or six each — suspected they were 'casing a job, a stick-up,' stopped and patted them down, and recovered a pistol from each.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, facts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.94,
+      "allowed_wording": [
+        "The two men cased a store window about a dozen times; the detective patted them down and found a gun on each."
+      ],
+      "prohibited_wording": [
+        "The men were caught committing a robbery.",
+        "The detective saw them commit a crime."
+      ],
+      "temporal_scope": "1963",
+      "geographic_scope": "Cleveland, Ohio, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real people charged accurately; suspicion, not a completed crime. A third companion (Katz) was frisked but unarmed; omitted for concision (not contradicted)."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "Terry was charged with carrying a concealed weapon, and the Supreme Court upheld the admission of the pistol against him.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, procedural posture and holding"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "Terry was charged with carrying a concealed weapon and the Court let the gun stand as evidence."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1963-1968",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Outcome for Terry."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "Justice William O. Douglas was the sole dissenter, warning that giving an officer power to seize and search on less than probable cause gave police greater authority than a magistrate and was 'a long step down the totalitarian path.'",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Dissenting opinion (Douglas, J.)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "Justice Douglas dissented alone, warning it gave police more power than a judge."
+      ],
+      "prohibited_wording": [
+        "Several justices dissented."
+      ],
+      "temporal_scope": "1968",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Dissent (balance); short quote is public domain."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "The 'Terry stop' became one of the most common police-citizen encounters in the United States, and because 'reasonable suspicion' depends on judgment, its application later became the center of national debate over stop-and-frisk practices.",
+      "importance": "context",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Oyez: significance / legacy"
+      ],
+      "counterevidence": [
+        "The 1968 ruling itself required specific facts and limited the frisk to weapons; later controversy concerns application, not the holding."
+      ],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "Terry stops became routine, and how 'reasonable suspicion' is applied later drove a national argument."
+      ],
+      "prohibited_wording": [
+        "The Supreme Court endorsed racial profiling."
+      ],
+      "temporal_scope": "1968-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Legacy/debate kept neutral; B-grade context, framed as application not holding."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable content hashes captured for all 2 sources (2026-06-20)."
+    ]
+  }
+}

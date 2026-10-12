@@ -1,0 +1,56 @@
+EP78_colgan — 画像発注 バッチ 1/21（8枚）
+区分: HOOK / ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) C001.png
+   [C001]  flags: 
+   Extreme close-up of a glass cockpit airspeed tape, a red and black bar sitting low and still at the bottom of the scale, the digits above it clean white, the instrument backlight burning bright behind the glass
+
+2) C002.png
+   [C002]  flags: 
+   A twin turboprop airliner on approach at night seen from below and behind, landing lights blazing directly into the lens through heavy falling snow
+
+3) C003.png
+   [C003]  flags: 
+   The same airspeed tape, the red and black bar now risen a third of the way up the scale, the whole instrument lit hard from one side by a blown-out panel lamp
+
+4) C004.png
+   [C004]  flags: 
+   Two control columns in a dark cockpit caught mid-vibration with heavy motion blur, a bright red instrument glow washing across them and one white panel light burning behind
+
+5) C005.png
+   [C005]  flags: 
+   An airport approach light bar firing sequenced strobes straight into the lens through snow, the strobes blown out white
+
+6) C006.png
+   [C006]  flags: 
+   A plain round wall clock in an airline operations room at night, hands near twenty past ten, a bright desk lamp burning beside it and flaring into the lens, no numerals on the dial
+
+7) C007.png
+   [C007]  flags: 
+   Macro of a glass instrument display showing a vertical speed scale, shallow depth of field, the red and black bar tack sharp at the bottom edge, the display backlight blazing through it
+
+8) C008.png
+   [C008]  flags: 
+   A cockpit instrument panel photographed square on in the dark, every display alight at full brightness, no crew present
