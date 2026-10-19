@@ -1,0 +1,588 @@
+{
+ "schema_version": "pd_filmconfig.v001",
+ "slug": "lacmegantic",
+ "episode_id": "PD-2026-072-lacmegantic",
+ "assets": "episodes/PD-2026-072-lacmegantic/05_visuals/asset_manifest.v003.json",
+ "narration_index": "episodes/PD-2026-072-lacmegantic/06_audio/narration_index.v001.json",
+ "narration": "lacmegantic/narration.mp3",
+ "captions": "episodes/PD-2026-072-lacmegantic/08_edit/captions.final.v001.srt",
+ "out": "remotion/src/data/lacmegantic_film.json",
+ "leadSeconds": 0,
+ "openingVariant": "overlay",
+ "hookSeconds": 25.282,
+ "hookLine": "Shortly before midnight, in a village called Nantes, somebody looked at a parked locomotive and",
+ "captionLeadSeconds": 0.0,
+ "figures_by_section": {
+  "HOOK": [
+   {
+    "kind": "lowerthird",
+    "primary": "AI-assisted visualization",
+    "secondary": "symbolic reconstruction, no real likenesses"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "5-6 JULY 2013.",
+     "NANTES, QUEBEC."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "5-6 JULY 2013"
+    ]
+   }
+  ],
+  "OP": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "SEVEN MILES",
+     "OF DESCENDING GRADE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "SEVEN MILES"
+    ]
+   }
+  ],
+  "ACT_1": [
+   {
+    "kind": "lowerthird",
+    "primary": "OCTOBER 2012",
+    "secondary": "Eight months before the accident, the lead locomotive goes to the repair shop after an engine failure. (LM-20)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "A NON-STANDARD REPAIR",
+    "secondary": "Given the time and cost of a standard repair, and the pressure to return the locomotive to service, the engine is repaired with an epoxy-like polymeric material. (LM-21)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE CAM BEARING",
+    "secondary": "Its mounting bolt is over-tightened during that repair. The bearing fractures, oil to the valve train falls away, and oil begins accumulating where it should not. (LM-22, LM-23)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TRAIN MMA-002",
+    "secondary": "72 Class 111 tank cars of petroleum crude, loaded at New Town, North Dakota. 7.7 million litres. (LM-01, LM-02)"
+   },
+   {
+    "kind": "numberticker",
+    "value": 10290,
+    "group": true,
+    "label": "Tons. 72 loaded tank cars, a buffer box car, five head-end locomotives and a VB car. (LM-39)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ONE ENGINEER",
+    "secondary": "Operated by a single locomotive engineer, under single-person train operations special instructions. (LM-41)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "22:50, NANTES",
+    "secondary": "The train stops at the designated crew change point, parked on a descending grade on the main track, just over seven miles from Lac-Megantic. (LM-03, LM-04)"
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "the locomotive that led the train was repaired with an epoxy-like material",
+    "primary": "THE REPAIR",
+    "secondary": "an epoxy-like material, in a diesel engine block"
+   },
+   {
+    "kind": "quote",
+    "_provenance": "the investigation's own words: it lacked the strength and the durability required for this use",
+    "quote": "It lacked the strength and the durability required for this use.",
+    "attribution": "Transportation Safety Board of Canada"
+   },
+   {
+    "kind": "stat",
+    "_provenance": "the locomotive went back out and worked for eight months",
+    "label": "THE REPAIR HELD FOR",
+    "value": 8,
+    "suffix": " MONTHS",
+    "_was_value": "8",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "a cam bearing cracked when its bolt was tightened too far; nothing happened",
+    "lines": [
+     "THE BEARING CRACKED.",
+     "NOTHING HAPPENED."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOTHING"
+    ]
+   },
+   {
+    "kind": "mechanism",
+    "_provenance": "less oil, more heat, more wear, a punctured piston, oil into the turbocharger",
+    "mechanism": "gears"
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "seven point seven million litres of crude oil",
+    "primary": "THE CARGO",
+    "secondary": "7.7 million litres of crude oil, in Class 111 tank cars"
+   }
+  ],
+  "ACT_2": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "SEVEN",
+     "HAND BRAKES."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "SEVEN"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NONE ON A TANK CAR",
+    "secondary": "All seven were on locomotives and the buffer car. Not one was applied to any of the 72 loaded tank cars. (LM-43)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE COMPANY'S OWN MINIMUM",
+    "secondary": "MMA General Special Instructions 112-1 set it by a ten-per-cent-plus-two formula. For a 72-car train that is nine. (LM-44)"
+   },
+   {
+    "kind": "stat",
+    "value": 17,
+    "label": "The minimum the investigation concluded was actually needed - and possibly as many as 26. (LM-10)",
+    "decimals": 0
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE TEST THAT COULD NOT WORK",
+    "secondary": "The brake effectiveness test was performed with the locomotive air brakes still applied. What it tested was the air, not the hand brakes. (LM-11, LM-47)"
+   },
+   {
+    "kind": "quote",
+    "quote": "It must be apparent when slack runs in or out, that the hand brakes are sufficient to prevent that cut of cars from moving.",
+    "attribution": "CROR 112(b) - the test the rule actually asks for (LM-46)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "23:30",
+    "secondary": "A taxi driver notes heavy smoke and oil droplets coming from the locomotive left running at Nantes. (LM-49, LM-50)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE FIRE SERVICE",
+    "secondary": "Firefighters use the emergency fuel shut-off and move the electrical breakers to the off position. Shutting the locomotive down is correct practice. (LM-07, LM-54)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AND THEN THE AIR",
+    "secondary": "With all locomotives shut down, the air compressor no longer supplies the air brake system. Nobody in the story knows this is happening. (LM-08)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NOTHING WAS WRITTEN DOWN",
+    "secondary": "After the fire was out, no decision was documented to move the train or to apply additional hand brakes. (LM-56)"
+   },
+   {
+    "kind": "mechanism",
+    "mechanism": "faultsplit"
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "the train stopped at Nantes at ten minutes to eleven that night",
+    "primary": "NANTES, 22:50",
+    "secondary": "the designated crew change point"
+   },
+   {
+    "kind": "stat",
+    "_provenance": "just over seven miles away, at the bottom of that grade, was the town",
+    "label": "DOWNHILL TO THE TOWN",
+    "value": 7,
+    "suffix": " MILES",
+    "_was_value": "7",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   }
+  ],
+  "ACT_3": [
+   {
+    "kind": "lowerthird",
+    "primary": "00:58:21",
+    "secondary": "The train begins to move, at one mile per hour, with brake pipe pressure at the rear measured at 29 psi. (LM-58)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "SEVENTEEN MINUTES",
+    "secondary": "7.2 miles, reaching a maximum of 65 mph at 01:15:30. Nobody is aboard. (LM-59)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE CURVE AT MILE 0.23",
+    "secondary": "A 4.25-degree right-hand curve. Centrifugal and dynamic forces at 65 mph were sufficient to derail the train. (LM-60, LM-61)"
+   },
+   {
+    "kind": "stat",
+    "value": 63,
+    "label": "Of the 72 tank cars, the number that derailed. 59 of those were breached. (LM-14, LM-66)",
+    "decimals": 0
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "SIX MILLION LITRES",
+    "secondary": "Approximately six million litres of crude were released into the centre of the town. (LM-15)"
+   },
+   {
+    "kind": "stat",
+    "value": 47,
+    "label": "People killed. (LM-16)",
+    "decimals": 0
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "WHAT THIS FILM DOES NOT SHOW",
+    "secondary": "No victim, no rescue, no body. Reconstructions are AI-assisted and symbolic, never a record of the night."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "IT BURNED INTO THE NEXT DAY",
+    "secondary": "Firefighters came from across the surrounding area and it took until the following afternoon to contain the fire. About 2,000 people - a third of the town - were evacuated. (LM-83, LM-81)"
+   },
+   {
+    "kind": "routemap",
+    "label": "NANTES TO LAC-MEGANTIC - 7.2 miles falling, 17 minutes, 65 mph at the curve",
+    "pins": [
+     {
+      "x": 0.24,
+      "y": 0.26,
+      "label": "NANTES"
+     },
+     {
+      "x": 0.5,
+      "y": 0.48,
+      "label": "THE GRADE"
+     },
+     {
+      "x": 0.76,
+      "y": 0.72,
+      "label": "LAC-MEGANTIC"
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "shortly before midnight the fire was reported to 911",
+    "primary": "SHORTLY BEFORE MIDNIGHT",
+    "secondary": "a fire on the lead locomotive is reported"
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "at fifty-eight minutes past midnight and twenty-one seconds, the train began to move",
+    "lines": [
+     "00:58:21",
+     "THE TRAIN BEGAN TO MOVE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "00:58:21"
+    ]
+   },
+   {
+    "kind": "stat",
+    "_provenance": "the pressure in the brake pipe at the back of the train was twenty-nine pounds per square inch",
+    "label": "BRAKE PIPE, REAR",
+    "value": 29,
+    "suffix": " PSI",
+    "_was_value": "29",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "stat",
+    "_provenance": "the speed that curve is built for is eighteen to twenty-two miles an hour",
+    "label": "THE CURVE IS BUILT FOR",
+    "value": 18,
+    "suffix": "-22 MPH",
+    "_was_value": "18",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   }
+  ],
+  "ACT_4": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "EIGHTEEN",
+     "CAUSES AND CONTRIBUTING FACTORS."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "EIGHTEEN"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NOT ONE CAUSE",
+    "secondary": "The TSB identified eighteen. A system with eighteen failure points does not have a villain; it has a design. (LM-24)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE SAFETY MANAGEMENT SYSTEM",
+    "secondary": "MMA developed one in 2002, did not begin implementing it until 2010, and by 2013 it was still not functioning effectively. (LM-26)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE REGULATOR",
+    "secondary": "Transport Canada's Quebec office did not audit that system until 2010, and does not validate a railway's special instructions or say how many hand brakes a train needs. (LM-27, LM-30)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE PAPERS WERE WRONG",
+    "secondary": "The crude was classified Packing Group III - the least dangerous option - when it should have been Packing Group II. High vapour pressure and low flashpoint made it readily ignitable. (LM-102, LM-103)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE TANK CARS COMPLIED",
+    "secondary": "All 63 derailed cars met the specification in force when they were built. None had thermal protection, and the regulations did not require it. (LM-64, LM-65)"
+   },
+   {
+    "kind": "quote",
+    "quote": "The investigation was not able to conclude that having another crew member would have prevented the accident.",
+    "attribution": "Transportation Safety Board of Canada (LM-25)"
+   },
+   {
+    "kind": "stat",
+    "_provenance": "all sixty-three of the derailed cars had been built to a single specification",
+    "label": "DERAILED CARS",
+    "value": 63,
+    "suffix": " ONE SPECIFICATION",
+    "_was_value": "63",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "stat",
+    "_provenance": "seventy-eight per cent of them were less than five years old",
+    "label": "LESS THAN FIVE YEARS OLD",
+    "value": 78,
+    "suffix": "%",
+    "_was_value": "78",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "numberticker",
+    "_provenance": "ninety-four per cent of them opened",
+    "value": 94,
+    "suffix": "%",
+    "label": "OF THE DERAILED CARS OPENED"
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "a car built in nineteen eighty and a car built in twenty twelve were both in compliance",
+    "lines": [
+     "BUILT IN 1980.",
+     "BUILT IN 2012.",
+     "BOTH IN COMPLIANCE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "BOTH"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "the requirement had not changed",
+    "primary": "THE SPECIFICATION",
+    "secondary": "Class 111, unchanged across three decades"
+   },
+   {
+    "kind": "compbars",
+    "_provenance": "seventy-eight per cent were less than five years old",
+    "items": [
+     {
+      "label": "under five years old",
+      "value": 78
+     },
+     {
+      "label": "older",
+      "value": 22
+     }
+    ]
+   }
+  ],
+  "ACT_5": [
+   {
+    "kind": "lowerthird",
+    "primary": "THREE CHARGED",
+    "secondary": "Thomas Harding, the locomotive engineer; Richard Labrie, the rail traffic controller; Jean Demaitre, the operations manager. Criminal negligence causing death. (LM-67)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE REPORT WAS NOT IN THE ROOM",
+    "secondary": "Before the trial began, the judge ruled the TSB report inadmissible. The jury never considered any of its conclusions. (LM-72)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE DEFENCE CALLED NO WITNESSES",
+    "secondary": "Sherbrooke, October 2017 to January 2018, before a bilingual jury. (LM-69, LM-71)"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "ACQUITTED.",
+     "ALL THREE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "ACQUITTED"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NINE DAYS",
+    "secondary": "The jury asked for its instructions to be clarified more than once, and reached an impasse, before returning the verdict in January 2018. (LM-35, LM-108)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "BUT NOT NOTHING",
+    "secondary": "Separately, six former MMA employees pleaded guilty under the Railway Safety Act, among them the chief executive. The engineer received a six-month conditional sentence served in the community. (LM-77, LM-78, LM-79)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE COMPANY",
+    "secondary": "MMA entered bankruptcy protection in August 2013 with insufficient insurance. A US judge approved a settlement fund of about C$446 million; some 25 companies contributed. (LM-31, LM-33)"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "SEVENTEEN DAYS LATER",
+    "secondary": "Transport Canada issued an emergency directive requiring at least two people to operate a train carrying dangerous goods. Formalised in Rule 112 in July 2015. (LM-89, LM-91)"
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "23 JUL 2013",
+      "text": "Emergency directive: at least two people on a dangerous-goods train"
+     },
+     {
+      "year": "AUG 2013",
+      "text": "MMA enters bankruptcy protection"
+     },
+     {
+      "year": "JUL 2015",
+      "text": "Rule 112 revised and made permanent"
+     },
+     {
+      "year": "OCT 2015",
+      "text": "A settlement fund of about C$446 million approved"
+     },
+     {
+      "year": "NOV 2016",
+      "text": "DOT-111 cars retired from crude service"
+     },
+     {
+      "year": "JAN 2018",
+      "text": "The jury acquits all three"
+     },
+     {
+      "year": "FEB 2018",
+      "text": "MMA pleads guilty under the Fisheries Act"
+     }
+    ]
+   },
+   {
+    "kind": "stat",
+    "_provenance": "the settlement fund came to between four hundred and forty-six and four hundred and fifty million Canadian dollars",
+    "label": "THE SETTLEMENT FUND",
+    "value": 446,
+    "prefix": "CA$",
+    "suffix": "-450M",
+    "_was_value": "446",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "stat",
+    "_correction_20260903": "added to restore ACT_5's beat count after two mistimed duplicate cards were deleted (see AUGUST 2013 / SHERBROOKE, OCTOBER 2017 removal above) rather than leave the section under the episode_spec floor. Uses two rows from FACTS_LEDGER v003 that were researched but never placed on screen: LM-96 (the bypass cost) here and LM-98 (expropriation and the signed agreement) below. Matches script.en.v001.md lines 425-429 verbatim.",
+    "_provenance": "it was costed in twenty eighteen at a hundred and thirty-three million dollars, sixty per cent federal and forty per cent provincial",
+    "label": "THE BYPASS",
+    "value": 133,
+    "prefix": "CA$",
+    "suffix": "M",
+    "decimals": 0
+   },
+   {
+    "kind": "lowerthird",
+    "_provenance": "the federal government took possession of the land it needed in august of twenty twenty-three, by expropriation; the contribution agreement with the province was signed in july of twenty twenty-four",
+    "primary": "THE LAND, THEN THE SIGNATURE",
+    "secondary": "Expropriated by the federal government in August 2023. The contribution agreement with Quebec was signed in July 2024. (LM-98)"
+   },
+   {
+    "kind": "kinetic",
+    "_provenance": "the eighteen findings this film has spent the last twenty minutes on were not evidence in the only criminal trial",
+    "lines": [
+     "EIGHTEEN FINDINGS.",
+     "NONE OF THEM WERE EVIDENCE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NONE"
+    ]
+   }
+  ],
+  "ENDING": [
+   {
+    "kind": "lowerthird",
+    "primary": "THE TOWN NOW",
+    "secondary": "Frontenac Street was destroyed and a new main street built a few hundred metres away. A decade later residents said the downtown still had not fully recovered - and freight trains were still running through it. (LM-92, LM-93, LM-94, LM-95)"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NO INDIVIDUAL WAS",
+     "FOUND TO BE THE CAUSE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NO INDIVIDUAL"
+    ]
+   }
+  ]
+ },
+ "_figure_sources": {
+  "_readme": [
+   "EVERY CARD CARRIES ITS LEDGER ROW ID. A card sits on screen longer than a sentence is spoken and",
+   "reads as the film's own voice, so none of them asserts anything the ledger does not.",
+   "",
+   "REWRITTEN AFTER CHECKING AGAINST THE LEDGER. The first draft was written from general knowledge",
+   "of the case and was vague exactly where the record is sharp -- it said 'the number is the case'",
+   "instead of the triple that IS the case: SEVEN applied (LM-43), TEN required by MMA's own",
+   "ten-per-cent-plus-two formula (LM-44), SEVENTEEN to TWENTY-SIX actually needed (LM-10).",
+   "",
+   "THE BIBLE'S FIRST WARNING IS LOAD-BEARING: do not make the engineer the villain. Three men were",
+   "charged and a jury acquitted all three. So ACT_4 leads with EIGHTEEN CAUSES AND CONTRIBUTING",
+   "FACTORS (LM-24) and carries LM-25 -- the TSB could NOT conclude a second crew member would have",
+   "prevented it -- which blocks the easiest false moral in the story. ACT_5 then does the harder",
+   "thing: it states the acquittal AND the six guilty pleas under the Railway Safety Act (LM-77-79),",
+   "because 'acquitted' on its own is not what the record says.",
+   "",
+   "TWO CARDS EXIST TO STOP THE AUDIENCE IMAGINING FOOTAGE WE DELIBERATELY DID NOT MAKE: ACT_3's",
+   "'what this film does not show', and LM-72, the ruling that the TSB report was inadmissible --",
+   "the most surprising fact in the file, and the one that explains an acquittal which otherwise",
+   "reads as a whitewash.",
+   "",
+   "BANNED FIGURE KINDS: no dochighlight -- the black bar / box / underline figure reads as a",
+   "rendering artefact; the owner flagged it on EP40, EP41 and EP42 and it is barred from PD",
+   "film.json. No DATE_STAMP. Kinds used: lowerthird, kinetic, stat, quote."
+  ]
+ },
+ "_declared_values": {
+  "leadSeconds": "0 -- the hook is voiced from frame 0, as the script's HOOK block specifies.",
+  "openingVariant": "overlay -- the brand sting sits over continuing footage rather than cutting to black.",
+  "captionLeadSeconds": "0.0 -- captions were force-aligned to this master by gen_captions_case.py.",
+  "hookSeconds": "25.282 -- MEASURED: the end of the last HOOK chunk in narration_index.v001.json, not a target.",
+  "designedSilence": "The script declares silences at the re-hooks; they are inside the measured chunk timings and need no separate budget."
+ }
+}

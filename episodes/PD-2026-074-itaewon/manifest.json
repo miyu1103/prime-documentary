@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-074-itaewon",
+  "topic_id": "TOP-20260821-074",
+  "slug": "itaewon",
+  "title_working": "Officers Were Deployed To Four Of The Eleven Reports Before The Itaewon Crush",
+  "state": "script_verified",
+  "risk_class": "R3",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "episode_spec": "v003",
+    "facts_ledger": "v005",
+    "film_bible": "v002",
+    "script": "v007",
+    "scene_plan": "v003",
+    "image_order": "v001",
+    "thumb_prompts": "v002",
+    "fact_recheck": "v002",
+    "script_annotated": "v007"
+  },
+  "artifacts": [
+    {
+      "kind": "episode_spec",
+      "path": "episodes/PD-2026-074-itaewon/episode_spec.v003.json",
+      "revision": "v003",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_episode_spec.py --slug itaewon -> exit 0",
+      "note": "v002 declared people_plates. v003 adds twelve PHRASE forbidden subjects -- ai generated, green screen, chroma key, vj loop, seamless loop, science fiction, 3d render and kin -- which became enforceable only on 2026-08-21 when forbidden_hit was fixed to match multi-word terms. 20 of this episode's own 453 downloaded clips carry 'ai generated' in their archive title, and invariant 11 forbids presenting generated visuals as authentic footage. No threshold changed."
+    },
+    {
+      "kind": "facts_ledger",
+      "path": "episodes/_planning/EP74_itaewon_FACTS_LEDGER.v005.md",
+      "revision": "v005",
+      "produced_at": "2026-08-21",
+      "note": "v001-v004 remain in force. v004 RESOLVES AB-02/AB-03 -- both appeals suspended, 14 July and 28 August 2025 -- and supersedes IT-58 with IT-93/IT-94. v005 adds no facts: it restates quarantine rule 15 as a table row, because it had been written as prose and no tool could enumerate it.",
+      "validated": "py -3.11 scripts/check_script_citations.py --slug itaewon -> exit 0: 223 of 223 narration lines cited, 98 distinct ids all resolving, no UNREAD row cited, no superseded row cited"
+    },
+    {
+      "kind": "film_bible",
+      "path": "episodes/_planning/EP74_itaewon_FILM_BIBLE.v002.md",
+      "revision": "v002",
+      "produced_at": "2026-08-21",
+      "note": "Amends v001 sections 4, 6, 7, 8 and 12.5 and adds 4.5; all other sections of v001 remain in force unedited. Forced by two measurements: SCENE_PLAN v001 found ENDING at 4:10 against a designed 1:00, and FACTS_LEDGER v004 resolved AB-02 in a way that changed the film's recognition."
+    },
+    {
+      "kind": "script",
+      "path": "episodes/_planning/EP74_itaewon_script.en.v007.md",
+      "revision": "v007",
+      "produced_at": "2026-08-21",
+      "validated": "check_script_craft PASS (every mechanical gate green); verify_script_lint PASS via the annotated artifact; check_script_citations exit 0 (221 lines, 98 ids, all resolving); NARRATION MASTER MEASURED: 343 chunks, 229 made / 114 cached / 0 failed, 1,886.779 s by ffprobe, 184.8 wpm -> finished film 1,895.8 s (31:36) inside runtime_seconds [1740, 1920]"
+    },
+    {
+      "kind": "scene_plan",
+      "path": "episodes/_planning/EP74_itaewon_SCENE_PLAN.v003.md",
+      "revision": "v003",
+      "produced_at": "2026-08-21",
+      "note": "MEASURED, not projected. Written from narration_index.v001.json off the delivered master. 526 cuts at a 3.60 s mean, ACT_5 at 3.2 s. Carries the measured timecode of all six AE beats and both large quote cards. v001 and v002 were projections and said so."
+    },
+    {
+      "kind": "image_order",
+      "path": "episodes/_planning/EP74_itaewon_CODEX_BATCH_A.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_image_order_neg.py --file <path> -> exit 0",
+      "note": "120 plates I001-I120, 28 of them people plates against a declared minimum of 24."
+    },
+    {
+      "kind": "thumb_prompts",
+      "path": "episodes/_planning/EP74_itaewon_thumb_prompts.v002.md",
+      "revision": "v002",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_packaging_claims.py --slug itaewon --title <A> --thumb-text <selected> --description-file <desc> -> [PASS] claims=34 unsupported=0, record=682 sentences from 4 files; py -3.11 scripts/check_image_order_neg.py --file <path> -> exit 0",
+      "note": "v002 amends v001 sections 4 and 5 only; the bars, the house look, the canonical [NEG] and the six concepts T01-T06 stand in v001. Titles are now MEASURED: v001's recommended title FAILS (UNVERIFIED) and a second candidate FAILS (CONTRADICTED). Selected title A, selected thumbnail text '3.2 METRES / 159 DIED IN THIS ALLEY' on concept T01, and a description that passes with zero unsupported claims."
+    },
+    {
+      "kind": "fact_recheck",
+      "path": "episodes/PD-2026-074-itaewon/01_research/fact_recheck.v002.md",
+      "revision": "v002",
+      "produced_at": "2026-08-21",
+      "note": "Three of v001's four pre-render items are resolved. The remaining one is check_packaging_claims on the chosen title and thumbnail. Six items remain before upload, of which AB-11 -- whether either suspended appeal has restarted -- is the most likely to change."
+    },
+    {
+      "kind": "script_annotated",
+      "path": "episodes/PD-2026-074-itaewon/03_script/script.annotated.v007.json",
+      "revision": "v007",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/verify_script_lint.py --ep PD-2026-074-itaewon -> RESULT: PASS, source annotated:script.annotated.v006.json",
+      "note": "The artifact v3 section 5 item 1 asks for and that this production had not made. 223 spans, 5,684 words, 196 of them carrying at least one ledger claim id and 27 carrying none because they are OURS lines -- characterisation, not sourced fact. Generated by scripts/build_annotated_script.py, which exists because script_structure has executed zero times across 32 episodes for want of this file."
+    },
+    {
+      "kind": "footage_queries",
+      "path": "config/episode_footage_queries.v001.json#episodes.itaewon",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "note": "86 archive queries, EVERY ONE PROBED against the shelf with measure_shelf_for_episode.py before it was written. Without this entry the staging queue falls back to one generic list for every episode, which is the recorded cause of a British Post Office film carrying the wrong footage. Fourteen plausible terms measured ZERO and were excluded (narrow, shutter, storefront, turnstile, handrail...); bare 'station' was excluded because 77 of its 99 rows are the International Space Station, and bare 'conference' because all 5 of its rows are NASA."
+    },
+    {
+      "kind": "plate_review",
+      "path": "runs/qc/itaewon_plate_verdicts.v001.json (gitignored)",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_plate_verdicts.py --slug itaewon -> exit 0: 114 in the set, every one carrying a resolved per-plate verdict whose sha256 matches the file on disk, 0 unresolved",
+      "note": "All 120 delivered plates were VIEWED on ten labelled contact sheets (scripts/build_plate_contact_sheet.py) plus two at full 3840x2160. All four blocking bars CLEAN across all 120: no body, no identifiable face, no legible glyph -- the eight document plates I097-I104 are genuinely blank -- and no Japanese, Chinese or Western signage. I119, the memorial plate, carries flowers and BLANK cards, no portraits. SIX REJECTED for subject, not for a bar: I005, I006, I025, I026, I027, I028. The pattern is that orders naming a SCENE TYPE came back right and orders naming a SPECIFIC OBJECT came back as another generic alley; section B of the order is the entire Hamilton Hotel terrace group and none of its four plates contains a terrace, which leaves a load-bearing ACT_1 beat without a picture. The six are retired to remotion/public/itaewon/img_rejected_v001/, not deleted, and are out of the pool the builder draws from -- which is the exact EP64 memphis failure and check_episode_inputs caught it."
+    },
+    {
+      "kind": "image_order_b",
+      "path": "episodes/_planning/EP74_itaewon_CODEX_BATCH_B.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_image_order_neg.py --file <path> -> exit 0",
+      "note": "Seven re-orders: the six rejected plates plus the thumbnail background. Object and camera position are the first two clauses of the prompt body, and each carries a one-line MUST CONTAIN."
+    },
+    {
+      "kind": "narration_master",
+      "path": "remotion/public/itaewon/narration.mp3",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "ffprobe -> 1886.779 s, matching narration_index.v001.json exactly",
+      "note": "ElevenLabs nPczCjzI2devNBz1zQrb, eleven_multilingual_v2, stability 0.35, similarity 0.80. Source of truth is E:/pd-media/episodes/PD-2026-074-itaewon/06_voice/master/vc_master_v001.mp3."
+    }
+  ],
+  "approvals": [],
+  "costs": {
+    "estimated": {
+      "amount": 12,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 19.5,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    },
+    "note": "ACT_1 measurement 1.4 + first master from v006 9.7 + v007 regeneration of the 229 changed chunks (114 cached) 8.4. The v006 master was not wasted: it is the measurement that found the film was 54 s over the ceiling and produced the per-section rates."
+  },
+  "warnings": [
+    "THE CRUSH IS NEVER DEPICTED. No body, no fallen person, no CPR, no stretcher, no blood, no covered figure, in any frame, including the thumbnail. The alley appears in exactly three states: empty, ordinarily busy, after. The event is carried by sound, by the width of the walls and by the slope. This is the one failure the channel cannot recover from.",
+    "THE TOLL IS 159 AND NEVER 160. 159 is the official figure recorded by the Ministry of the Interior and Safety and carried by named reporting through March 2026. The figure 160 appears in an English summary of a Korean forensic study reported 22 July 2026 and is not the official toll. It may not appear in narration, caption, title, thumbnail or description.",
+    "NO FINAL LEGAL OUTCOME IS ASSERTED FOR ANYONE, AND NONE EXISTS. Only first-instance judgments were delivered. BOTH APPEALS WERE SUSPENDED -- Seoul High Court Criminal Division 13 on 14 July 2025 for the police defendants, Criminal Division 9-1 on 28 August 2025 for the district office chief -- so that the special investigation commission could re-establish the facts. Every named person carries their status, its date and its court inside the same sentence that names them.",
+    "FACES ARE PERMITTED AND WANTED (owner decision 2026-08-21). The [NEG] blocks must NOT contain human face, facial features, eye contact or headshot. They contain identifiable person, recognisable person and likeness of a real individual, which satisfies the NEG gate without erasing the crowd. The crowd is the subject of this film.",
+    "KOREA IS NOT INTERCHANGEABLE WITH JAPAN OR CHINA. Kana, Chinese shopfronts, red lanterns and Tokyo neon are the same class of error as an EU number plate in a Texas film. Signage in frame is hangul or unreadable. Korean courts do not use a gavel.",
+    "NO COUNTERFACTUAL. Nothing 'would have' prevented it. No verified finding establishes that closing the street, one-way flow, more officers or a safety plan would have changed the outcome, and the script states that refusal out loud three times.",
+    "QUARANTINE 16 IS THE MOST FRAGILE RULE IN THE EPISODE. Lee Im-jae's March 2026 testimony that the disaster was less likely without the presidential office move is a counterfactual spoken by a man convicted at first instance with a suspended appeal. It is reported, attributed, dated and NEVER adopted, and the scene plan carries the same rule as a cutting instruction: under that testimony the picture stays on an empty hearing room, with no cut to the map."
+  ],
+  "blockers": [
+    "FOOTAGE: THE SHELF CANNOT CURRENTLY SUPPLY THIS EPISODE, MEASURED. Three dry-run passes took the candidate pool from 307 to 470 and the reviewable set from 173 to 288, against 265 DISTINCT video assets required over 357 video cuts. A title-level triage then rejected 116 of those 288 -- 40% -- on what the archive title alone disqualifies: 20 abstract/wallpaper, 16 wrong country, 16 sci-fi or synthetic, 10 wrong season, 9 wrong geography, 5 declared AI-generated, 5 green screen, 4 heritage Korea, 4 faces as subject, 2 named identifiable people. SURVIVORS: 172, against 265 needed -- and NO FRAME HAS BEEN OPENED YET. EP71 measured a comparable sample at 50% off-register on titles that looked fine, so expect fewer. THE OPTIONS, none of them taken: (a) many more probed queries -- the lever, since --per-query 14 returns the same pool as 6; (b) build_motion_from_plates.py, turning accepted stills into motion, which is an established path in this repository; (c) record a measured deviation and ship short. Lowering distinct_video_assets is NOT an option: 265 is runtime x 0.65 / 4.5 and the film's own cut sheet needs 357 video cuts. This is an owner decision.",
+    "SIX PLATES MUST BE RE-ORDERED: I005, I006, I025, I026, I027, I028. Name the object in the prompt BODY and state the camera position; do not leave it to the style block. Thumbnail T01 needs the same treatment -- it came back looking downhill when the alley rises. 114 of 120 are usable as delivered.",
+    "AB-11 -- WHETHER EITHER SUSPENDED APPEAL HAS RESTARTED IS NOT ESTABLISHED. The commission's June 2026 deliberation date passed and it extended itself to December 2027. A resumed hearing rewrites the last act. Re-check on the day of publish.",
+    "NO IMAGES EXIST. I001-I120 are ordered but not generated. Images are Codex's lane; local SDXL is not started for a long-form episode except to fix a Codex plate.",
+    "PREFLIGHT IS NOT ADVISORY. preflight_render_gate.py --ep PD-2026-074-itaewon must be GREEN before any render. 25 of 32 episodes failed it and 10 rendered anyway; on 2026-08-20 EP70 and EP71 were three GPU-hours from a captionless slideshow."
+  ],
+  "created_at": "2026-08-21T00:00:00+09:00",
+  "updated_at": "2026-08-22T00:00:00+09:00"
+}

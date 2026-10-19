@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-06-24T20:11:28+09:00",
+  "scope": "PD episodes 009-015",
+  "status": "episodes_009_013_scheduled_014_015_review_ready_gates_remaining",
+  "external_side_effects": {
+    "paid_api": false,
+    "upload": false,
+    "publish": false,
+    "schedule": false
+  },
+  "episodes": [
+    {
+      "episode": "PD-2026-009-timbs",
+      "state": "scheduled",
+      "approvals": [
+        "APR-0001",
+        "APR-0002"
+      ],
+      "owner_review_request": null,
+      "approval_drafts": null,
+      "prepublish_review_packet": null,
+      "legal_rights_review_packet": null,
+      "remaining_gate": "none_observed"
+    },
+    {
+      "episode": "PD-2026-010-kelo",
+      "state": "scheduled",
+      "approvals": [
+        "APR-0001",
+        "APR-0002"
+      ],
+      "owner_review_request": null,
+      "approval_drafts": null,
+      "prepublish_review_packet": null,
+      "legal_rights_review_packet": null,
+      "remaining_gate": "none_observed"
+    },
+    {
+      "episode": "PD-2026-011-mahanoy",
+      "state": "scheduled",
+      "approvals": [
+        "APR-0001",
+        "APR-0002"
+      ],
+      "owner_review_request": null,
+      "approval_drafts": null,
+      "prepublish_review_packet": null,
+      "legal_rights_review_packet": null,
+      "remaining_gate": "none_observed"
+    },
+    {
+      "episode": "PD-2026-012-arbitration",
+      "state": "scheduled",
+      "approvals": [
+        "APR-0001",
+        "APR-0002"
+      ],
+      "owner_review_request": null,
+      "approval_drafts": null,
+      "prepublish_review_packet": null,
+      "legal_rights_review_packet": null,
+      "remaining_gate": "none_observed"
+    },
+    {
+      "episode": "PD-2026-013-king",
+      "state": "scheduled",
+      "approvals": [
+        "APR-0001",
+        "APR-0002"
+      ],
+      "owner_review_request": null,
+      "approval_drafts": null,
+      "prepublish_review_packet": null,
+      "legal_rights_review_packet": null,
+      "remaining_gate": "none_observed"
+    },
+    {
+      "episode": "PD-2026-014-lange",
+      "state": "edit_review",
+      "approvals": [
+        "APR-0001"
+      ],
+      "owner_review_request": "episodes/PD-2026-014-lange/09_package/OWNER_REVIEW_REQUEST.v001.json",
+      "approval_drafts": "episodes/PD-2026-014-lange/09_package/approval_drafts.v001.json",
+      "prepublish_review_packet": "episodes/PD-2026-014-lange/09_package/prepublish_review_packet.v001.json",
+      "legal_rights_review_packet": null,
+      "remaining_gate": "owner first-cut/title-thumbnail/final narration; publish approval not granted"
+    },
+    {
+      "episode": "PD-2026-015-theranos",
+      "state": "edit_review",
+      "approvals": [
+        "APR-0001"
+      ],
+      "owner_review_request": "episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v001.json",
+      "approval_drafts": "episodes/PD-2026-015-theranos/09_package/approval_drafts.v001.json",
+      "prepublish_review_packet": null,
+      "legal_rights_review_packet": "episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v001.json",
+      "remaining_gate": "owner first-cut/title-thumbnail/final narration; legal/rights review required; publish approval not granted"
+    }
+  ],
+  "owner_review_dashboard": "episodes/_planning/pd_014_015_owner_review.html",
+  "owner_approval_packet": "episodes/_planning/pd_014_015_owner_approval_packet.v001.md",
+  "publish_schedule_hash_targets": {
+    "PD-2026-014-lange": {
+      "final_delivery": "episodes/PD-2026-014-lange/09_package/final_delivery.v001.json",
+      "final_delivery_sha256": "sha256:3d38b5b56d9b97df568e5316814acc2526c3bfb9284f55efcf15b9c004eadc61"
+    },
+    "PD-2026-015-theranos": {
+      "final_delivery": "episodes/PD-2026-015-theranos/09_package/final_delivery.v001.json",
+      "final_delivery_sha256": "sha256:d08b2adc890efcceda39df51c8b06c0d3d130d7132759887d9d8be65a0756e62"
+    }
+  },
+  "publish_readiness_preflight": "episodes/_planning/pd_014_015_publish_readiness_preflight.v001.json",
+  "publish_readiness_public_release_allowed": false,
+  "owner_approval_apply_helper": "scripts/prepare_lange_theranos_approvals.py",
+  "owner_approval_apply_dry_run": "episodes/_planning/pd_014_015_prepare_owner_approvals.dry_run.v001.json",
+  "after_owner_approval_runbook": "episodes/_planning/pd_014_015_after_owner_approval_runbook.v001.md",
+  "safety_script_tests": "py -3.11 -m unittest tests.test_lange_theranos_safety_scripts -v",
+  "readiness_check": "episodes/_planning/pd_009_015_readiness_check.latest.json",
+  "readiness_status": "REVIEW_READY_BLOCKED_BY_APPROVALS",
+  "owner_action_required": "episodes/_planning/pd_014_015_owner_action_required.v001.md"
+}

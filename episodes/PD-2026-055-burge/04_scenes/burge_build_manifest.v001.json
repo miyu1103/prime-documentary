@@ -1,0 +1,43 @@
+{
+  "episode_id": "PD-2026-055-burge",
+  "producer": "scripts/build_case_film_generic.py",
+  "inputs": {
+    "assets": "episodes\\PD-2026-055-burge\\05_visuals\\asset_manifest.v003.json",
+    "narr": "episodes\\PD-2026-055-burge\\06_audio\\narration_index.v001.json",
+    "config": "episodes\\_planning\\EP55_burge_filmconfig.v001.json"
+  },
+  "report": {
+    "slug": "burge",
+    "cuts": 380,
+    "factory": 259,
+    "motion": 0,
+    "still": 121,
+    "pools": {
+      "factory": 230,
+      "motion": 0,
+      "still": 226,
+      "people": 16
+    },
+    "video_cuts": 259,
+    "still_cuts": 121,
+    "video_share": 0.6816,
+    "distinct_assets": 351,
+    "distinct_ratio": 0.9237,
+    "max_reuse": 2,
+    "avg_cut_sec": 4.6,
+    "figures": 84,
+    "captions": 480,
+    "narrationSeconds": 1749.564,
+    "duration_frames": 53102,
+    "duration_sec_with_bookends": 1770.07,
+    "sections": [
+      "HOOK",
+      "OP",
+      "ACT_1",
+      "ACT_2",
+      "ACT_3",
+      "ACT_4",
+      "ENDING"
+    ]
+  }
+}

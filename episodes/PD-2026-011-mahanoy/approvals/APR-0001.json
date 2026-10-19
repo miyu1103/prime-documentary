@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-011-mahanoy",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T04:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T04:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner delegated EP10-15 topic selection to Claude and approved proceeding to the end. Content/direction sign-off for the Mahanoy v. B.L. script v001, bound to content_hash sha256:b28f42c87c4e194d6ebf41ca98f383f7f233bcd31e6e7ef78b8a9a396438c4f4 — re-approval if the script revision/hash changes (rules/12). Facts web-verified 2026-06-20 against the primary opinion (594 U.S. 180). Carries forward provided no fact or claim changes.",
+  "conditions": [
+    "ADVERTISER SAFETY: the narration must never read the post's profanity (CLM-0006) — describe it; on-screen text censored/blurred.",
+    "Capture durable content hashes for SRC-0001/0002/0003 before publish.",
+    "Keep neutral on school-vs-student; present the school's interest fairly. Name Brandi Levy per her public/ACLU disclosure; describe her neutrally; no real-person likeness in AI visuals."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-011-mahanoy/03_script/script.annotated.v001.json"
+}

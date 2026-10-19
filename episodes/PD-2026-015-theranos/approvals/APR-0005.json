@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0005",
+  "episode_id": "PD-2026-015-theranos",
+  "target_type": "R3_legal_rights_review",
+  "target_revision": "v008",
+  "decision": "approved",
+  "requested_by": "codex",
+  "approved_by": "owner",
+  "actor": "codex",
+  "decision_source": "Owner message on 2026-06-28 JST: 全て承認します",
+  "decided_at": "2026-06-28T12:53:53+09:00",
+  "legal_rights_review_packet": "episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v008.json",
+  "legal_rights_review_packet_sha256": "sha256:0ad72c5ce2f84ee2c01eb8c84f4540cc1da1cdb084fa5255ec06cb204a243d56",
+  "rights_manifest": "episodes/PD-2026-015-theranos/09_package/rights_manifest.v008.json",
+  "rights_manifest_sha256": "sha256:25b7b2837bf9dfd7466620386e86ee1d23718de0d5b8aab3ecf8d1a5d218b865",
+  "scope": [
+    "Approve dedicated R3 legal/rights review for exact v008 package hashes.",
+    "Allow public release workflow to proceed only together with APR-0006."
+  ],
+  "conditions": [
+    "Keep living-person framing record-based and neutral.",
+    "No Holmes/Balwani likeness, no Theranos logo or brand mark.",
+    "Patient counts remain ACQUITTED/not guilty.",
+    "Three counts remain NO VERDICT/mistrial.",
+    "Acquittal is not framed as exoneration or proof the technology worked.",
+    "Synthetic reconstruction disclosure remains enabled."
+  ]
+}

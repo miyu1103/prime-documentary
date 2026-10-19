@@ -1,0 +1,343 @@
+{
+  "schema_version": "pd_thumbnail_candidates.v1",
+  "episode_id": "PD-2026-074-itaewon",
+  "revision": "v001",
+  "created_at": "2026-08-20T17:57:54.900661+00:00",
+  "generator": "Codex built-in image generation",
+  "builder": "scripts/build_itaewon_thumbnails_v001.py",
+  "prompt_order": "episodes/_planning/EP74_itaewon_thumb_prompts.v001.md",
+  "selection_status": "owner_selection_required",
+  "package_lock_status": "blocked_by_strict_claim_check_and_owner_selection",
+  "contact_sheet": "episodes/PD-2026-074-itaewon/10_thumbnail/thumbnail.itaewon.contact_sheet.v001.png",
+  "contact_sheet_sha256": "165d1dcdb7fd4600ad3c6026d04dbed6dfdb6e3b006f926ef86b5ca335a3af8d",
+  "candidates": [
+    {
+      "id": "T01",
+      "source_uri": "artifact://media/assets/ai/itaewon/_thumb_v001/T01.generated.png",
+      "source_sha256": "1e5f396bf3038bbf6a5c6d25e49f12c488a57e67254174385bdfe4d52cdd1fc6",
+      "output": "episodes/PD-2026-074-itaewon/10_thumbnail/thumbnail.itaewon.T01.v001.png",
+      "output_sha256": "0a2fff42ffd463c5ab2fca5010f5ea6bf3b7e23b5b9746920a71080c95d4853e",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "headline": "3.2 METRES",
+      "kicker": "159 DIED IN THIS ALLEY",
+      "accent": "#E5B53A",
+      "technical_qc": {
+        "ok": true,
+        "width": 1280,
+        "height": 720,
+        "scale_to_1280": 1.0,
+        "whole_luma": 70.1,
+        "subject_luma": 73.6,
+        "text_height_px": 156,
+        "outline_px": 28
+      },
+      "claim_check": {
+        "strict": true,
+        "ok": false,
+        "record_has_narration": false,
+        "claims_checked": 3,
+        "unsupported": 2,
+        "soft_unsupported": 0,
+        "blockers": [
+          {
+            "claim": "159 DIED IN THIS ALLEY",
+            "verdict": "UNVERIFIED"
+          },
+          {
+            "claim": "159 DIED IN THIS ALLEY",
+            "verdict": "UNVERIFIED"
+          }
+        ]
+      },
+      "preliminary_qc": "reject",
+      "qc_note": "Generated plate looks downhill; order requires the lower-end square-on view."
+    },
+    {
+      "id": "T02",
+      "source_uri": "artifact://media/assets/ai/itaewon/_thumb_v001/T02.generated.png",
+      "source_sha256": "98e41dac2d4d6ed3c9fa0e5e3c2999f3a7e179a61c21a4769d5349ef6a648fe3",
+      "output": "episodes/PD-2026-074-itaewon/10_thumbnail/thumbnail.itaewon.T02.v001.png",
+      "output_sha256": "0d306995f4587f670ca5400769533b2232e7c130658456ec4e48e9d1ff0fa304",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "headline": "FOUR OF ELEVEN",
+      "kicker": "EVERY CALL SAID THE SAME THING",
+      "accent": "#E5B53A",
+      "technical_qc": {
+        "ok": true,
+        "width": 1280,
+        "height": 720,
+        "scale_to_1280": 1.0,
+        "whole_luma": 67.6,
+        "subject_luma": 77.6,
+        "text_height_px": 182,
+        "outline_px": 28
+      },
+      "claim_check": {
+        "strict": true,
+        "ok": false,
+        "record_has_narration": false,
+        "claims_checked": 2,
+        "unsupported": 1,
+        "soft_unsupported": 0,
+        "blockers": [
+          {
+            "claim": "FOUR OF ELEVEN",
+            "verdict": "UNVERIFIED"
+          }
+        ]
+      },
+      "preliminary_qc": "accept",
+      "qc_note": null
+    },
+    {
+      "id": "T03",
+      "source_uri": "artifact://media/assets/ai/itaewon/_thumb_v001/T03.generated.png",
+      "source_sha256": "d70bcf7ebb63c8da5e30118944c7955d36800e1ebf7579065442040a86c3ac32",
+      "output": "episodes/PD-2026-074-itaewon/10_thumbnail/thumbnail.itaewon.T03.v001.png",
+      "output_sha256": "6aaeae8dbaf1e06a68d40e9e6add3f47a558a06ddd5d898dbcb2c3f31d3bb346",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "headline": "137 OFFICERS",
+      "kicker": "FOR A HUNDRED THOUSAND PEOPLE",
+      "accent": "#1F6BFF",
+      "technical_qc": {
+        "ok": true,
+        "width": 1280,
+        "height": 720,
+        "scale_to_1280": 1.0,
+        "whole_luma": 59.3,
+        "subject_luma": 69.3,
+        "text_height_px": 153,
+        "outline_px": 28
+      },
+      "claim_check": {
+        "strict": true,
+        "ok": false,
+        "record_has_narration": false,
+        "claims_checked": 3,
+        "unsupported": 1,
+        "soft_unsupported": 0,
+        "blockers": [
+          {
+            "claim": "FOR A HUNDRED THOUSAND PEOPLE",
+            "verdict": "UNVERIFIED"
+          }
+        ]
+      },
+      "preliminary_qc": "accept",
+      "qc_note": null
+    },
+    {
+      "id": "T04",
+      "source_uri": "artifact://media/assets/ai/itaewon/_thumb_v001/T04.generated.png",
+      "source_sha256": "81e07dff7f337e318921eea6c12dd21bb8de099f8d847a46486e2fa406d3fa9c",
+      "output": "episodes/PD-2026-074-itaewon/10_thumbnail/thumbnail.itaewon.T04.v001.png",
+      "output_sha256": "df1f8b83af6060e2f2fb8f9195dc37125f0379dbce440760359f40f21cd3ce17",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "headline": "NOBODY ORGANISED IT",
+      "kicker": "AND SO NOBODY HAD TO PLAN FOR IT",
+      "accent": "#E5B53A",
+      "technical_qc": {
+        "ok": true,
+        "width": 1280,
+        "height": 720,
+        "scale_to_1280": 1.0,
+        "whole_luma": 63.8,
+        "subject_luma": 80.2,
+        "text_height_px": 155,
+        "outline_px": 28
+      },
+      "claim_check": {
+        "strict": true,
+        "ok": false,
+        "record_has_narration": false,
+        "claims_checked": 1,
+        "unsupported": 1,
+        "soft_unsupported": 0,
+        "blockers": [
+          {
+            "claim": "NOBODY ORGANISED IT",
+            "verdict": "UNVERIFIED"
+          }
+        ]
+      },
+      "preliminary_qc": "accept",
+      "qc_note": null
+    },
+    {
+      "id": "T05",
+      "source_uri": "artifact://media/assets/ai/itaewon/_thumb_v001/T05.generated.png",
+      "source_sha256": "66446e8ffec797af8a6313ab3ee88bc2360dc62a45e287d87f9bbed9bfc64501",
+      "output": "episodes/PD-2026-074-itaewon/10_thumbnail/thumbnail.itaewon.T05.v001.png",
+      "output_sha256": "b1e52d3abef6b572d42376fb20370548955e93ee4fd3bc42239d1b23e33ce599",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "headline": "ELEVEN CALLS",
+      "kicker": "THE FIRST CAME AT 6:34",
+      "accent": "#E5B53A",
+      "technical_qc": {
+        "ok": true,
+        "width": 1280,
+        "height": 720,
+        "scale_to_1280": 1.0,
+        "whole_luma": 64.7,
+        "subject_luma": 84.3,
+        "text_height_px": 188,
+        "outline_px": 28
+      },
+      "claim_check": {
+        "strict": true,
+        "ok": false,
+        "record_has_narration": false,
+        "claims_checked": 4,
+        "unsupported": 1,
+        "soft_unsupported": 0,
+        "blockers": [
+          {
+            "claim": "THE FIRST CAME AT 6:34",
+            "verdict": "UNVERIFIED"
+          }
+        ]
+      },
+      "preliminary_qc": "accept",
+      "qc_note": null
+    },
+    {
+      "id": "T06",
+      "source_uri": "artifact://media/assets/ai/itaewon/_thumb_v001/T06.generated.png",
+      "source_sha256": "eb8fb84b45cde2ee2ef5ca433a98292e8c6c9c196e62464a71b1679182e98521",
+      "output": "episodes/PD-2026-074-itaewon/10_thumbnail/thumbnail.itaewon.T06.v001.png",
+      "output_sha256": "e898c26b738a3c1bb0429458ff52d80f6cf7124a41b9527206dede61ec602239",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "headline": "NO LAW REQUIRED IT",
+      "kicker": "THE COURT SAID SO IN WRITING",
+      "accent": "#E5B53A",
+      "technical_qc": {
+        "ok": true,
+        "width": 1280,
+        "height": 720,
+        "scale_to_1280": 1.0,
+        "whole_luma": 78.6,
+        "subject_luma": 73.2,
+        "text_height_px": 158,
+        "outline_px": 28
+      },
+      "claim_check": {
+        "strict": true,
+        "ok": true,
+        "record_has_narration": false,
+        "claims_checked": 1,
+        "unsupported": 0,
+        "soft_unsupported": 0,
+        "blockers": []
+      },
+      "preliminary_qc": "accept",
+      "qc_note": null
+    }
+  ],
+  "title_candidates": [
+    {
+      "id": "A",
+      "title": "Eleven People Called The Police Before 159 Died In That Itaewon Alley",
+      "characters": 69,
+      "claim_check": {
+        "strict": true,
+        "ok": false,
+        "record_has_narration": false,
+        "claims_checked": 4,
+        "unsupported": 3,
+        "soft_unsupported": 0,
+        "blockers": [
+          {
+            "claim": "Eleven People Called The Police Before 159 Died In That Itaewon Alley",
+            "verdict": "NUMBER_MISMATCH"
+          },
+          {
+            "claim": "Eleven People Called The Police Before 159 Died In That Itaewon Alley",
+            "verdict": "UNVERIFIED"
+          },
+          {
+            "claim": "Eleven People Called The Police Before 159 Died In That Itaewon Alley",
+            "verdict": "UNVERIFIED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B",
+      "title": "Police Went To Four Of Eleven Warnings Before The Itaewon Crowd Crush",
+      "characters": 69,
+      "claim_check": {
+        "strict": true,
+        "ok": false,
+        "record_has_narration": false,
+        "claims_checked": 3,
+        "unsupported": 3,
+        "soft_unsupported": 0,
+        "blockers": [
+          {
+            "claim": "Police Went To Four Of Eleven Warnings Before The Itaewon Crowd Crush",
+            "verdict": "UNVERIFIED"
+          },
+          {
+            "claim": "Police Went To Four Of Eleven Warnings Before The Itaewon Crowd Crush",
+            "verdict": "CONTRADICTED"
+          },
+          {
+            "claim": "Police Went To Four Of Eleven Warnings Before The Itaewon Crowd Crush",
+            "verdict": "CONTRADICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "C",
+      "title": "The Court Convicted The Police Chief And Acquitted The District In Itaewon",
+      "characters": 74,
+      "claim_check": {
+        "strict": true,
+        "ok": true,
+        "record_has_narration": false,
+        "claims_checked": 2,
+        "unsupported": 0,
+        "soft_unsupported": 0,
+        "blockers": []
+      }
+    },
+    {
+      "id": "D",
+      "title": "No Law Required Anyone To Plan For The Crowd That Filled That Itaewon Alley",
+      "characters": 75,
+      "claim_check": {
+        "strict": true,
+        "ok": false,
+        "record_has_narration": false,
+        "claims_checked": 2,
+        "unsupported": 1,
+        "soft_unsupported": 0,
+        "blockers": [
+          {
+            "claim": "No Law Required Anyone To Plan For The Crowd That Filled That Itaewon Alley",
+            "verdict": "UNVERIFIED"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-069-hyatt",
+  "topic_id": "TOP-20260811-069",
+  "slug": "hyatt",
+  "title_working": "One Rod Became Two. Nobody Did the Arithmetic Again.",
+  "state": "researching",
+  "risk_class": "R3",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "active_revisions": {
+    "topic": "v001",
+    "facts_ledger": "v001"
+  },
+  "artifacts": [
+    {
+      "kind": "topic_record",
+      "path": "episodes/PD-2026-069-hyatt/00_topic/topic.v001.json",
+      "revision": "v001",
+      "produced_at": "2026-08-11"
+    },
+    {
+      "kind": "facts_ledger",
+      "path": "episodes/_planning/EP69_hyatt_FACTS_LEDGER.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-11"
+    },
+    {
+      "kind": "source",
+      "source_id": "SRC-0001",
+      "path": "episodes/PD-2026-069-hyatt/01_research/sources/SRC-0001_nbs_bss143.txt",
+      "origin": "https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience143.pdf",
+      "chars": 427229,
+      "sha256_prefix": "713e7e5cfee068da972be983b3464679",
+      "retrieved_at": "2026-08-11"
+    },
+    {
+      "kind": "source",
+      "source_id": "SRC-0002",
+      "path": "episodes/PD-2026-069-hyatt/01_research/sources/SRC-0002_duncan_744sw2d524.txt",
+      "origin": "https://static.case.law/sw2d/744/cases/0524-01.json",
+      "chars": 66251,
+      "sha256_prefix": "51f38fc52d6e6cfb1478af1abd1f7286",
+      "retrieved_at": "2026-08-11"
+    },
+    {
+      "kind": "source",
+      "source_id": "SRC-0003",
+      "path": "episodes/PD-2026-069-hyatt/01_research/sources/SRC-0003_pfatteicher_jpcf_14_2_62.txt",
+      "origin": "ASCE J. Perf. Constr. Facil. 14(2):62-66 (2000), open-access copy of the published PDF",
+      "chars": 36269,
+      "sha256_prefix": "664d0f0f8e847fcb0f9df0ee17a3b25b",
+      "retrieved_at": "2026-08-11"
+    },
+    {
+      "kind": "verifier",
+      "path": "episodes/PD-2026-069-hyatt/01_research/sources/verify_quotes.v001.py",
+      "revision": "v001",
+      "result": "140/140 located by exact string search, exit 0, 2026-08-11"
+    }
+  ],
+  "approvals": [
+    {
+      "what": "topic",
+      "by": "owner",
+      "on": "2026-08-11",
+      "note": "Topic approved. Not an approval of any downstream artifact."
+    }
+  ],
+  "costs": {
+    "estimated": { "amount": 0, "currency": "USD" },
+    "actual": { "amount": 0, "currency": "USD" },
+    "soft_limit": { "amount": 100, "currency": "USD" },
+    "hard_limit": { "amount": 200, "currency": "USD" }
+  },
+  "warnings": [
+    "FACTS LEDGER (binding, read before any script or asset work): episodes/_planning/EP69_hyatt_FACTS_LEDGER.v001.md - 138 fact rows, 140 machine-verified verbatim quotations, 21 forbidden claims, 12 open questions, and a BINDING shot-substitution table at section 12. Re-verify any quotation with: py -3.11 episodes/PD-2026-069-hyatt/01_research/sources/verify_quotes.v001.py (exits non-zero on failure).",
+    "THE LOAD ARITHMETIC, WHICH IS THE WHOLE FILM. Original single continuous rod: design load at each connection 20.3 kips. As built with two interrupted rods: 40.7 kips at the fourth-floor connection - essentially doubled, NBS's own word, Conclusion 6. Code-expected ultimate capacity at 40.7 kips design load with the AISC factor of safety of 1.67: at least 68 kips. Actual average ultimate capacity of the six fourth-floor connections: 18.6 kips. Load actually on the most heavily loaded connection on the night: 21.4 kips = 31 percent of the 68 kips the code expected, and 53 percent of the 40.7 kips design load. Had the change never been made: required ultimate 1.67 x 20.3 = 33.9 kips against an available 20.5 kips, i.e. about 60 percent - still illegal, but it would have held that night (NBS Conclusion 8). Source: NBS BSS 143 sections 10.2, 10.3, 10.5 and chapter 11.",
+    "THE NUMBER TRAP. NBS's 31 percent is a LOAD ratio (21.4 / 68), not a CAPACITY ratio. The as-built capacity ratio is 18.6 / 68 = about 27 percent and is OUR arithmetic - NBS never states it. The Missouri Court of Appeals conflates the two in its own footnote 12, so that footnote must never be quoted for the engineering. Ledger forbidden claim 1.",
+    "DEATH TOLL. Use 114, citing Duncan v. Missouri Bd., 744 S.W.2d 524 (Mo. App. 1988). NBS BSS 143 (May 1982) says 111 killed plus two of the injured who subsequently died = 113. No retrieved document explains the difference and the film must not invent one. Injured: 'at least 186' (court) or 188 (NBS). NOT 216 - that figure appears in no retrieved source. Ledger forbidden claims 3 and 4.",
+    "RIGHTS - CATEGORY 1. NO third-party broadcast or news footage or photographs of any kind. Not the KMBC TV videotape, not the Kansas City Star or Kansas City Times photographs, not rescue footage, not blurred, not behind a graphic. This is the most tempting case on the whole slate for a violation. Ledger forbidden claim 10.",
+    "DEPICTION - DECIDED, NOT LEFT TO THE DESIGNER. No body, no injured person, no rescue, no debris with a person under it, and no depiction of the crowded lobby at or near the moment of collapse from any angle. The film shows the empty ballroom, the atrium filling at 3 p.m., the rod, the box beam assembling itself in 3D, the two drawings side by side, the load bar, the rod-and-washer pull-through, and NBS's own rescue timeline as type on black. Every prohibited image has a named replacement in ledger section 12.",
+    "NO VICTIM IS NAMED AND NO REAL LIKENESS APPEARS. Neither NBS nor the court names a victim. The named people in this film are the ones the record names for documented professional acts: Duncan, Gillum, Havens Steel Company, Mayor Berkley, Judge Deutsch, Judge Smith. Engineers appear as hands, a seal and an empty stool - never a face.",
+    "R3 CONSTRAINTS ON THE ENGINEERS. Daniel M. Duncan and Jack D. Gillum may be living. Every criticism must be a quoted finding of the Missouri Administrative Hearing Commission as reproduced in 744 S.W.2d 524, or an NBS conclusion. No claim about knowledge, intent, motive, character or finances beyond them. They were NEVER criminally charged - the ending is the first American licence revocation for gross negligence, in January 1986, affirmed on appeal in January 1988.",
+    "DO NOT STAGE THE TELEPHONE CALL. The engineering-ethics teaching version (Havens rings G.C.E., someone approves, G.C.E. denies the call) is in neither the federal report nor the appellate opinion. What the record does establish is better: the drawings told the fabricator the engineer had designed the connection while the engineer intended the fabricator to design it, and a technician who queried the change was told it was 'basically the same as the one rod concept'. Ledger forbidden claim 5.",
+    "NOVELTY. Same family as EP60 surfside (building collapse, mass casualty, federal forensic investigation). Judged NOT too close - different cause (one decision vs forty years of decay), different epistemics (exact arithmetic vs contested margins) and the opposite ending (licences revoked vs no accountability). BINDING: do not schedule within four long-form slots of EP60; do not reuse EP60's hook framing, title shape or thumbnail composition; run the footage no-repeat check across EP60 and EP69 TOGETHER, not within EP69 alone; lead with the drawing and the rod, never with a building falling. Also do not ship back-to-back with EP68 pinto. Full reasoning in the topic record's novelty_check.",
+    "target_duration_minutes and the runtime band are deliberately NOT set, and episodes/PD-2026-069-hyatt/episode_spec.v001.json is deliberately NOT written. Per CLAUDE.md 4.6 an undeclared value is an error, never an inferred default; both derive from a measured narration word count against a script that does not exist."
+  ],
+  "blockers": [
+    "OQ-06 BLOCKS SCRIPT LOCK: whether Daniel M. Duncan and Jack D. Gillum are living. The most recent retrieved information is from 1994-95, thirty-one years old. An R3 episode that criticises named professionals cannot be wrong about this. Must be closed before script lock and re-checked before publish.",
+    "OQ-01: the Administrative Hearing Commission's own 442-page decision (Case AR-84-0239, filed 15 Nov 1985) was not retrieved. The Commission's findings are known only as the Court of Appeals reproduces and reviews them. Sufficient for the findings; NOT sufficient to narrate the twenty-seven days of hearing or any testimony not quoted in the opinion.",
+    "OQ-02: the Missouri Board's own revocation order (22 January 1986) was not retrieved.",
+    "OQ-03: Moncarz & Taylor and Luth (both JPCF 14(2), 2000) were not retrieved - ascelibrary.org serves a JavaScript shell and WebFetch returns 403.",
+    "OQ-08: nothing retrieved establishes that any code, statute or professional practice changed BECAUSE of this collapse. The 1976 ASCE canon predates it. Any 'and that is why today...' ending is unsourced and is the most tempting unsourced ending in the episode.",
+    "Demand probe (scripts/topic_demand_probe.py) not run this pass; the score block is zeros meaning UNMEASURED, not zero. The 2026-08-11 yt-dlp scan is recorded with attribution to the owner and was not independently re-run. Runtime band cannot be set until a script exists.",
+    "CourtListener returned HTTP 429 (125/day exceeded) again on 2026-08-11, ~4h40m to reset. Nothing in this episode depends on it - the appellate opinion came from the Harvard Caselaw Access Project's copy of the official reporter instead."
+  ],
+  "created_at": "2026-08-11T00:00:00+09:00",
+  "updated_at": "2026-08-11T00:00:00+09:00"
+}

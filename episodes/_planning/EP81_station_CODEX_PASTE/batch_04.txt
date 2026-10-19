@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 4/24（8枚）
+区分: ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S025.png
+   [S025]  flags: 
+   A second side exit door on the opposite wall of the same building in bright daylight, closed, a handrail beside the steps
+
+2) S026.png
+   [S026]  flags: 
+   A kitchen service door of a small restaurant, propped with a crate, brilliant daylight beyond, stainless steel inside
+
+3) S027.png
+   [S027]  flags: 
+   A sheet of grey convoluted egg-crate acoustic foam standing against a workshop wall, a bright work lamp raking across the peaks and valleys
+
+4) S028.png
+   [S028]  flags: 
+   Extreme macro of grey egg-crate acoustic foam, the ridges catching a hard bright light, deep shadow in the valleys
+
+5) S029.png
+   [S029]  flags: 
+   A wall lined with black-painted acoustic foam in a small venue, a bright stage light raking across it, a faint glitter in the surface
+
+6) S030.png
+   [S030]  flags: 
+   Close-up of the seam where two sheets of acoustic foam meet on a wall, a visible gap, a work lamp blazing along the join
+
+7) S031.png
+   [S031]  flags: 
+   Acoustic foam glued over plywood panelling at an internal corner, close-up, bright even light, a gap at the corner
+
+8) S032.png
+   [S032]  flags: 
+   A can of spray paint and a sheet of foam on a workshop floor under a bright shop light, the foam half black and half grey

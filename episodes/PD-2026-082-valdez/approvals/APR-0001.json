@@ -1,0 +1,25 @@
+{
+ "schema_version": "1.0.0",
+ "approval_id": "APR-0001",
+ "episode_id": "PD-2026-082-valdez",
+ "target_type": "script",
+ "target_id": "EP82_valdez_script.en.v001.md",
+ "target_revision": "v001",
+ "decision": "approved",
+ "requested_at": "2026-08-25T00:05:00+09:00",
+ "requested_by": "local-claude-code",
+ "decided_at": "2026-08-25T00:07:00+09:00",
+ "decided_by": "owner",
+ "accepted_deviations": [
+  "runtime_band"
+ ],
+ "notes": "Owner instruction 2026-08-25 00:07 JST, verbatim: '28:26でもいいよ'. THE MEASUREMENT: the gen_narration_case dry run extracts 341 chunks / 4,710 words; at the 178.4 raw-wpm delivered rate (EP76 morandi, same register) that is 1,584.1 s of speech + ~113 s of gaps + 9 s endcard = ~1,706 s (28:26), UNDER episode_spec runtime_seconds [1740, 1920] by ~34 s. THE DECLARED VALUE IS NOT CHANGED (rule 4); the shortfall is recorded here as an owner-accepted deviation. The projection is a model until the voice is measured; if the delivered narration lands inside the band this approval is moot, and if it lands short this approval covers it. The script is NOT to be padded to reach the band -- the owner accepted the length as written.",
+ "conditions": [
+  "Covers runtime_band ONLY. The four ship-blocking classes (real_person_likeness, rights_and_licence, factual_support, fabricated_record) are untouched and still bind.",
+  "runtime_seconds stays declared [1740, 1920] in episode_spec.v001.json.",
+  "Bound to script v001 (episodes/_planning/EP82_valdez_script.en.v001.md). A rewritten script re-opens the question.",
+  "Do not pad the narration, stretch gaps, or slow the read to manufacture band compliance."
+ ],
+ "expires_at": null,
+ "evidence_snapshot_ref": "scripts/gen_narration_case.py EP82 registry entry, DRY RUN 2026-08-24 comment"
+}

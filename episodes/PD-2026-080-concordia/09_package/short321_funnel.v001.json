@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 321,
+  "episode_id": "PD-2026-080-concordia",
+  "slug": "concordia",
+  "loop": true,
+  "loop_join": "The final beat p14 is short321_14.png, the lit superstructure of the ship seen from outside, rewound so its camera motion ends where it began and held under the FULL CASE card. That exterior view of every light aligned mirrors the orderly, every-display-aligned bridge of frame 0 (short321_01.png), so the loop back into the opening beat reads as the same composed, everything-in-place image rather than a cut.",
+  "second_watch_detail": "The crew notice board with several blank sheets pinned in p08 (short321_08.png) reads as background procedural clutter on a first pass; once L2-L5 have described a bridge team that urged nobody to act and an alarm procedure that never started, the same blank sheets read as the instructions that were never written down for anyone.",
+  "funnel_question_left_for_longform": "The investigators modelled a night where everybody got off. What was the difference between that night and this one?",
+  "funnel_long_title": "The Costa Concordia Took 69 Minutes to Order Everyone Off",
+  "funnel_long_video_id": "o98hKLTK93g",
+  "description_line_1": "▶ FULL CASE: The Costa Concordia Took 69 Minutes to Order Everyone Off | https://youtu.be/o98hKLTK93g",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "Sixty-Nine Minutes to Give the Order.",
+    "ctaLongThumbSrc": "shorts/short321/short321_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "The investigators modelled a night where everybody got off. What was the difference between that night and this one? The full case is here: https://youtu.be/o98hKLTK93g",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments and beat list in remotion/src/data/short321.ts, the CTA block from that same file, and the long-form id and title from the live upload (o98hKLTK93g, \"The Costa Concordia Took Sixty-Nine Minutes to Order Everyone Off.\"). Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet, and this short is not yet uploaded so no video id exists for it."
+}

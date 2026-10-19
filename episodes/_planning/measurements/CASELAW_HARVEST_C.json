@@ -1,0 +1,2949 @@
+{
+  "schema_version": "caselaw-harvest/v001",
+  "measured_utc": "2026-08-03T13:54:45+00:00",
+  "source": "CourtListener REST v4 /search/ type=o stat_Published=on",
+  "filed_after": "2008-01-01",
+  "lanes": [
+    "mine_safety",
+    "maritime",
+    "industrial_death",
+    "infrastructure",
+    "farm_labor",
+    "product_recall"
+  ],
+  "pages_per_lane": 2,
+  "caveat": "Scores are proxies for the channel's winning shape, not editorial judgement. An opinion states a holding, never whether the story carries 40 minutes. Run topic_demand_probe.py on the shortlist next.",
+  "errors": [],
+  "count": 120,
+  "candidates": [
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 4640885,
+      "case_name": "Peabody Twentymile Mining v. Secretary of Labor",
+      "court": "Court of Appeals for the Tenth Circuit",
+      "court_id": "ca10",
+      "date_filed": "2019-07-18",
+      "docket": "17-9540",
+      "cite_count": 15,
+      "citation": [
+        "931 F.3d 992"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4640885/peabody-twentymile-mining-v-secretary-of-labor/",
+      "suit_nature": "",
+      "snippet": "FILED\n                                                                   United States Court of Appeals\n                                      PUBLISH                              Tenth Circuit\n\n                      UNITED STATES COURT OF APPEALS                       July 18, 2019",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=15, +2)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 4320178,
+      "case_name": "Consol Buchanan Mining Company, LLC v. Secretary of Labor",
+      "court": "Court of Appeals for the Fourth Circuit",
+      "court_id": "ca4",
+      "date_filed": "2016-11-10",
+      "docket": "15-1321",
+      "cite_count": 2,
+      "citation": [
+        "841 F.3d 642",
+        "2016 U.S. App. LEXIS 20310",
+        "2016 WL 6648676"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4320178/consol-buchanan-mining-company-llc-v-secretary-of-labor/",
+      "suit_nature": "",
+      "snippet": "Petition for review denied by published opinion. Judge WYNN wrote the opinion, in which Judge WILKINSON and Judge DUNCAN joined.\n \n\n  WYNN, Circuit Judge:\n \n\n  Following a fatal accident in a coal mine operated by Consol Buchanan Mining Co. (“Consol”), the Federal Mine Safety and Health Review Commission (the “Commission”) determined that the accident resulted from",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=2, +2)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 9407183,
+      "case_name": "Peabody Midwest Mining, LLC v. Secretary of Labor",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2023-06-16",
+      "docket": "22-1242",
+      "cite_count": 1,
+      "citation": [
+        "70 F.4th 602"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9407183/peabody-midwest-mining-llc-v-secretary-of-labor/",
+      "suit_nature": "",
+      "snippet": "United States Court of Appeals\n         FOR THE DISTRICT OF COLUMBIA CIRCUIT\n\n\n\nArgued April 26, 2023                 Decided June 16, 2023\n\n                        No. 22-1242\n\n  PEABODY MIDWEST MINING, LLC AND MICHAEL BUTLER,\n     EMPLOYED BY PEABODY MIDWEST MINING, LLC,\n                    PETITIONERS\n\n                             v.\n\n    SECRETARY OF LABOR, MINE SAFETY AND HEALTH\n ADMINISTRAT",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=1, +2)",
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 6239140,
+      "case_name": "Pesticide Action Network N. Am. v. Cal. Dep't of Pesticide Regulation",
+      "court": "California Court of Appeal, 5th District",
+      "court_id": "calctapp5d",
+      "date_filed": "2017-09-19",
+      "docket": "A145632",
+      "cite_count": 4,
+      "citation": [
+        "224 Cal. Rptr. 3d 591",
+        "16 Cal. App. 5th 224",
+        "2017 WL 4849021",
+        "2017 Cal. App. LEXIS 917"
+      ],
+      "url": "https://www.courtlistener.com/opinion/6239140/pesticide-action-network-n-am-v-cal-dept-of-pesticide-regulation/",
+      "suit_nature": "",
+      "snippet": "Siggins, J.\n*232Defendant California Department of Pesticide Regulation (the Department), approved amended labels for two previously registered pesticides: Dinotefuran 20SG, manufactured by real party in interest Mitsui Chemicals Agro, Inc. (Mitsui), and Venom Insecticide, manufactured by real party in interest Valent U.S.A. Corporation (Vale",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 6.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=4, +2)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 4238125,
+      "case_name": "Morales v. 22nd District Agricultural Ass'n",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2016-07-13",
+      "docket": "D067247",
+      "cite_count": 38,
+      "citation": [
+        "1 Cal. App. 5th 504",
+        "206 Cal. Rptr. 3d 1",
+        "26 Wage & Hour Cas.2d (BNA) 1286",
+        "2016 Cal. App. LEXIS 573"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4238125/morales-v-22nd-district-agricultural-assn/",
+      "suit_nature": "",
+      "snippet": "*513\n   \n  Opinion\n \n\n  AARON, J.\n \n\n  This appeal addresses a collective action alleging nonpayment of overtime, as required by state law under Labor Code\n  \n   1\n  \n  section 510 and federal law under the Fair Labor Standards Act of 1938 (FLSA; 29 U.",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "やや知られている (citeCount=38, +1)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 2742698,
+      "case_name": "Cynthia Holliday v. Board of Supervisors of Lsu Agricultural and Mechanical College, Etc.",
+      "court": "Supreme Court of Louisiana",
+      "court_id": "la",
+      "date_filed": "2014-10-15",
+      "docket": "2014-CC-0585",
+      "cite_count": 25,
+      "citation": [
+        "149 So. 3d 227",
+        "23 Wage & Hour Cas.2d (BNA) 1717",
+        "2014 La. LEXIS 2249"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2742698/cynthia-holliday-v-board-of-supervisors-of-lsu-agricultural-and-mechanical/",
+      "suit_nature": "",
+      "snippet": "KNOLL, Justice.\n \n\n  | )This case concerns the State’s sovereign immunity from suit based on a federal cause of action. A claim for damages was filed against the Board of Supervisors of LSU Agricultural and Mechanical College, Etc. (State) pursuant to the Family and Medical Leave Act of 1993, 29 U.S.C. § 2601\n  \n   et seq.\n  \n  (FMLA). Plaintiff, Cynthia Holliday, alleges she",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "やや知られている (citeCount=25, +1)",
+        "12年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 170445,
+      "case_name": "Plateau Mining Corp. v. Federal Mine Safety & Health Review Commission",
+      "court": "Court of Appeals for the Tenth Circuit",
+      "court_id": "ca10",
+      "date_filed": "2008-03-17",
+      "docket": "06-9582",
+      "cite_count": 10,
+      "citation": [
+        "519 F.3d 1176",
+        "2008 U.S. App. LEXIS 5701",
+        "2008 WL 697389"
+      ],
+      "url": "https://www.courtlistener.com/opinion/170445/plateau-mining-corp-v-federal-mine-safety-health-review-commission/",
+      "suit_nature": "",
+      "snippet": "519 F.3d 1176 (2008)\nPLATEAU MINING CORPORATION, Petitioner,\nv.\nFEDERAL MINE SAFETY AND HEALTH REVIEW COMMISSION; The Secretary of Labor, Mine Safety & Health Administration, Respondents.\nNo. 06-9582.\nUnited States Court of Appeals, Tenth Circuit.\nMarch 17, 2008.\n*1177 *1178 Ralph Henry Mo",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=10, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 616732,
+      "case_name": "Wolf Run Mining Co. v. Federal Mine Safety & Health Review Commission",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2011-11-04",
+      "docket": "10-1392",
+      "cite_count": 7,
+      "citation": [
+        "659 F.3d 1197",
+        "398 U.S. App. D.C. 103",
+        "2011 U.S. App. LEXIS 22298",
+        "2011 WL 5245397"
+      ],
+      "url": "https://www.courtlistener.com/opinion/616732/wolf-run-mining-co-v-federal-mine-safety-health-review-commission/",
+      "suit_nature": "",
+      "snippet": "659 F.3d 1197 (2011)\nWOLF RUN MINING COMPANY, Petitioner\nv.\nFEDERAL MINE SAFETY AND HEALTH REVIEW COMMISSION and Secretary of Labor, Respondents.\nNo. 10-1392.\nUnited States Court of Appeals, District of Columbia Circuit.\nArgued September 19, 2011.\nDecided November 4, 2011.\nRalph Henry Moore argued the cause for the petitioner.\nSamuel Charles",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=7, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 8219205,
+      "case_name": "State ex rel. Wooten v. Coal Mine Safety Board of Appeals",
+      "court": "West Virginia Supreme Court",
+      "court_id": "wva",
+      "date_filed": "2010-11-01",
+      "docket": "Nos. 35493, 35648",
+      "cite_count": 3,
+      "citation": [
+        "226 W. Va. 508",
+        "703 S.E.2d 280",
+        "2010 W. Va. LEXIS 118"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8219205/state-ex-rel-wooten-v-coal-mine-safety-board-of-appeals/",
+      "suit_nature": "",
+      "snippet": "WORKMAN, Justice:\nThis case is before the Court upon the consolidated appeals of the West Virginia Office of Miners’ Health, Safety and Training (“OMHST”) from two separate Orders entered in two separate actions by the Circuit Court of Kanawha County. The first Order entered on July 24, 2009, dismissed the OMHST’s petition for writ of prohibition in which the OMHST sought to prohibit the Coal Min",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=3, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 2391950,
+      "case_name": "State Ex Rel. Wooten v. COAL MINE SAFETY BD. OF APPEALS",
+      "court": "West Virginia Supreme Court",
+      "court_id": "wva",
+      "date_filed": "2010-11-01",
+      "docket": "35493, 35648",
+      "cite_count": 1,
+      "citation": [
+        "703 S.E.2d 280"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2391950/state-ex-rel-wooten-v-coal-mine-safety-bd-of-appeals/",
+      "suit_nature": "",
+      "snippet": "703 S.E.2d 280 (2010)\nSTATE of West Virginia ex rel. Ronald L. WOOTEN, Director, and the West Virginia Office of Miners' Health, Safety and Training, Petitioners Below, Appellants,\nv.\nThe COAL MINE SAFETY BOARD OF APPEALS and William Coulson, Respondents Below, Appellees. and\nWest Virginia Office of Miners' Health, Safety and Training, Petitioner Below, Appellant\nv.\nWilliam A. Coulson, Defendant",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=1, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 814478,
+      "case_name": "Black Beauty Coal Co. v. Federal Mine Safety & Health Review Commission",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2012-12-28",
+      "docket": "11-1306",
+      "cite_count": 1,
+      "citation": [
+        "403 U.S. App. D.C. 233",
+        "703 F.3d 553",
+        "2012 U.S. App. LEXIS 26631",
+        "2012 WL 6720353"
+      ],
+      "url": "https://www.courtlistener.com/opinion/814478/black-beauty-coal-co-v-federal-mine-safety-health-review-commission/",
+      "suit_nature": "",
+      "snippet": "Opinion for the Court filed by Circuit Judge HENDERSON.\n \n\n  KAREN LeCRAFT HENDERSON, Circuit Judge:\n \n\n  Petitioner Black Beauty Coal Company (Black Beauty) petitions for review of an order of the Federal Mine Safety and Health Review Commission (FMSHRC) adopting the findings of its administrative law judge (ALJ) that: (1) Black Beauty violated 30 C.F.R. § 75.400",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=1, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 8695815,
+      "case_name": "Rex Coal Co. v. Secretary of Labor, Mine Safety & Health Administration",
+      "court": "Court of Appeals for the Sixth Circuit",
+      "court_id": "ca6",
+      "date_filed": "2015-10-29",
+      "docket": "No. 14-4123",
+      "cite_count": 0,
+      "citation": [
+        "630 F. App'x 359"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8695815/rex-coal-co-v-secretary-of-labor-mine-safety-health-administration/",
+      "suit_nature": "",
+      "snippet": "ROGERS, Circuit Judge.\nThis case is about safety violations at a coal mine that resulted in a fatal accident. Rhett Mosley, a truck driver at Rex Coal’s mine, was killed after he lost control of his truck while descending a hill. He was descending the hill in neutral gear, apparently by accident, and the truck’s brakes were in such poor condition that they could not stop the truck. After an inves",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "11年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: killed (+0.5)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 10628618,
+      "case_name": "Sheila Gayden McGee, Individually and on behalf of the Wrongful Death Beneficiaries of Tony James Jr. v. Neel Schaffer Engineers and Planners Inc., Pike County, Mississippi, and Chad Toles",
+      "court": "Court of Appeals of Mississippi",
+      "court_id": "missctapp",
+      "date_filed": "2022-03-29",
+      "docket": "2020-CA-01277-COA",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10628618/sheila-gayden-mcgee-individually-and-on-behalf-of-the-wrongful-death/",
+      "suit_nature": "",
+      "snippet": "IN THE COURT OF APPEALS OF THE STATE OF MISSISSIPPI\n\n                              NO. 2020-CA-01277-COA\n\nSHEILA GAYDEN McGEE, INDIVIDUALLY                                       APPELLANT\nAND ON BEHALF OF THE WRONGFUL\nDEATH BENEFICIARIES OF TONY JAMES JR.\n\nv.\n\nNEEL SCHAFFER ENGINEERS AND                                              APPELLEES\nPLANNERS INC., PIKE COUNTY, MISSISSIPPI,\nAND CHA",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 2253108,
+      "case_name": "Fernandez v. California Department of Pesticide Regulation",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2008-07-15",
+      "docket": "A114258",
+      "cite_count": 5,
+      "citation": [
+        "164 Cal. App. 4th 1214",
+        "80 Cal. Rptr. 3d 418",
+        "38 Envtl. L. Rep. (Envtl. Law Inst.) 20176",
+        "2008 Cal. App. LEXIS 1059"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2253108/fernandez-v-california-department-of-pesticide-regulation/",
+      "suit_nature": "",
+      "snippet": "164 Cal.App.4th 1214 (2008)\nJORGE FERNANDEZ et al., Plaintiffs and Respondents,\nv.\nCALIFORNIA DEPARTMENT OF PESTICIDE REGULATION, Defendant and Appellant;\nCALIFORNIA STRAWBERRY COMMISSION et al., Interveners and Appellants.\nNo. A114258.\nCourt of Appeals of California, First District, Division One.\nJuly 15, 2008.\n*1218 Edmund",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 5.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "無名だが実体はある (citeCount=5, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 8695933,
+      "case_name": "DQ Fire & Explosion Consultants, Inc. v. Secretary of Labor",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2015-12-01",
+      "docket": "No. 15-1008",
+      "cite_count": 0,
+      "citation": [
+        "632 F. App'x 622"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8695933/dq-fire-explosion-consultants-inc-v-secretary-of-labor/",
+      "suit_nature": "",
+      "snippet": "JUDGMENT\n\nPER CURIAM.\nThis petition for review of orders of the Federal Mine Safety and Health Review Commission (“Commission”) was presented to the Court and briefed and argued by counsel. The Court has accorded the issues full consideration and determined they do not warrant a published opinion. See D.C. Cir. R. 36(d). For the reasons stated below, it is\nORDERED and AD",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "11年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 2717393,
+      "case_name": "Peabody Midwest Mining, LLC v. Federal Mine Safety & Health Review Commission",
+      "court": "Court of Appeals for the Seventh Circuit",
+      "court_id": "ca7",
+      "date_filed": "2014-08-12",
+      "docket": "13-1659",
+      "cite_count": 0,
+      "citation": [
+        "762 F.3d 611",
+        "2014 WL 3906498",
+        "2014 U.S. App. LEXIS 15467"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2717393/peabody-midwest-mining-llc-v-federal-mine-safety-health-review/",
+      "suit_nature": "agency",
+      "snippet": "ROVNER, Circuit Judge.\n \n\n  An inspector of the Mine Safety and Health Administration cited Black Beauty Coal Company (which since has changed its name to Peabody Midwest Mining, LLC) for violating a federal regulation requiring a protective mound, or “berm,” along “the outer bank of elevated roadways.”\n  \n   See\n  \n  30 C.F.R. §§ 77.1605(k), 77.2(d). Black Beauty contested",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "12年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 7324156,
+      "case_name": "Monongalia County Coal Co. v. United Mine Workers of America",
+      "court": "District Court, N.D. West Virginia",
+      "court_id": "wvnd",
+      "date_filed": "2017-02-16",
+      "docket": "CIVIL ACTION NO. 1:16CV04",
+      "cite_count": 0,
+      "citation": [
+        "234 F. Supp. 3d 797",
+        "2017 WL 653271",
+        "2017 U.S. Dist. LEXIS 22265"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7324156/monongalia-county-coal-co-v-united-mine-workers-of-america/",
+      "suit_nature": "",
+      "snippet": "MEMORANDUM OPINION AND ORDER DENYING DEFENDANTS’ MOTION FOR SUMMARY JUDGMENT [DKT. NO. 13] AND GRANTING PLAINTIFF’S MOTION FOR SUMMARY JUDGMENT [DKT. NO. 15]\nIRENE M. KEELEY, UNITED STATES DISTRICT JUDGE\nPending for consideration are cross motions for summary judgment filed by the plaintiff, Monongalia County Coal Company (“Company”), and the defendants, United Mine Workers of America, Internatio",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 10927184,
+      "case_name": "County of Rockland v. Triborough Bridge & Tunnel Auth.",
+      "court": "Court of Appeals for the Second Circuit",
+      "court_id": "ca2",
+      "date_filed": "2026-07-13",
+      "docket": "25-1963",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10927184/county-of-rockland-v-triborough-bridge-tunnel-auth/",
+      "suit_nature": "",
+      "snippet": "25-1963(L)\nCounty of Rockland v. Triborough Bridge & Tunnel Auth.\n\n              United States Court of Appeals\n                  for the Second Circuit\n\n                            August Term 2025\n                          Argued: March 12, 2026\n                           Decided: July 13, 2026\n\n                       Nos. 25-1963(L), 25-1964(Con)\n\n\n COUNTY OF ROCKLAND; EDWIN J. DAY, IN HIS OFFI",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "0年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 10580976,
+      "case_name": "Glenda Emmons Aycock v. Board of Commissioners of the Bossier Levee District and City of Bossier City",
+      "court": "Louisiana Court of Appeal",
+      "court_id": "lactapp",
+      "date_filed": "2021-05-05",
+      "docket": "53,821-CA",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10580976/glenda-emmons-aycock-v-board-of-commissioners-of-the-bossier-levee/",
+      "suit_nature": "",
+      "snippet": "Judgment rendered May 5, 2021.\n                                   Application for rehearing may be filed\n                                   within the delay allowed by Art. 2166,\n                                   La. C.C.P.\n\n                           No. 53,821-CA\n\n                       COURT OF APPEAL\n                        SECOND CIRCUIT",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 4246651,
+      "case_name": "Pesticide Action Network North America v. U.S. Environmental Protection Agency",
+      "court": "Court of Appeals for the Ninth Circuit",
+      "court_id": "ca9",
+      "date_filed": "2016-08-12",
+      "docket": "14-72794",
+      "cite_count": 0,
+      "citation": [
+        "840 F.3d 1014",
+        "2016 WL 4254982"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4246651/pesticide-action-network-north-america-v-us-environmental-protection/",
+      "suit_nature": "Original Proceeding",
+      "snippet": "ORDER\n \n\n  Citing “extraordinary circumstances,” the United States Environmental Protection Agency (“EPA”) requests an additional six month extension to take final action on its proposed revocation rule and its final response to Pesticide Action Network North America and Natural Resources Defense Council’s (collectively, “PANNA”) 2007 administrative petition. CropLife and the other amici woul",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 6240165,
+      "case_name": "Caltec AG v. Dep't of Pesticide Regulation",
+      "court": "California Court of Appeal, 5th District",
+      "court_id": "calctapp5d",
+      "date_filed": "2019-01-02",
+      "docket": "F074334",
+      "cite_count": 0,
+      "citation": [
+        "242 Cal. Rptr. 3d 156",
+        "30 Cal. App. 5th 872"
+      ],
+      "url": "https://www.courtlistener.com/opinion/6240165/caltec-ag-v-dept-of-pesticide-regulation/",
+      "suit_nature": "",
+      "snippet": "FRANSON, J.\n*876Appellant Caltec Ag, Inc. (Caltec) challenges a final administrative decision of the California Department of Pesticide Regulation (Department or DPR) that three of Caltec's products were pesticides. Pursuant to Food and Agricultural Code sections 12993 and 12999.4,1 the Department imposed fines tota",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 4.5,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 4569819,
+      "case_name": "Palmer Ex Rel. Wrongful Death Beneficiaries v. Clark Clinic, Inc.",
+      "court": "Court of Appeals of Mississippi",
+      "court_id": "missctapp",
+      "date_filed": "2018-12-04",
+      "docket": "NO. 2017-CA-01048-COA",
+      "cite_count": 3,
+      "citation": [
+        "271 So. 3d 680"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4569819/palmer-ex-rel-wrongful-death-beneficiaries-v-clark-clinic-inc/",
+      "suit_nature": "",
+      "snippet": "IRVING, P.J., FOR THE COURT:\n \n\n  ¶ 1. In this appeal, we are tasked with deciding whether the Scott County Circuit Court abused its discretion in denying Showanda Palmer's motion for an extension of time to file her notice of appeal. After a thorough consideration of the facts, we find no abuse of discretion. Therefore, we affirm.\n \n\n  FACTS AND PROCEDURAL HISTORY",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 4.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=3, +2)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 3219841,
+      "case_name": "Rosebud Mining Co. v. Mine Safety & Health Administration",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2016-07-05",
+      "docket": "14-1285, 14-1286",
+      "cite_count": 7,
+      "citation": [
+        "424 U.S. App. D.C. 24",
+        "827 F.3d 1090",
+        "2016 WL 3606369"
+      ],
+      "url": "https://www.courtlistener.com/opinion/3219841/rosebud-mining-co-v-mine-safety-health-administration/",
+      "suit_nature": "",
+      "snippet": "KAREN LeCRAFT HENDERSON, Circuit Judge:\n \n\n  Several coal mine operators — Rosebud Mining Company, Parkwood Resources, Inc., Canyon Fuel Company, LLC, Mountain Coal Company, LLC, Bowie Resources, LLC and Peabody Sage Creek Mining, LLC (collectively, petitioners)— seek review of two orders of the United States Department of Labor (Labor) — per its Mine Safety and Health Administrati",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=7, +2)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 4685265,
+      "case_name": "Shaffer v. A.W. Chesterton Co.",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2019-12-09",
+      "docket": "18CA011440",
+      "cite_count": 1,
+      "citation": [
+        "2019 Ohio 5022"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4685265/shaffer-v-aw-chesterton-co/",
+      "suit_nature": "",
+      "snippet": "[Cite as Shaffer v. A.W. Chesterton Co., 2019-Ohio-5022.]\n\n\nSTATE OF OHIO                    )                           IN THE COURT OF APPEALS\n                                 )ss:                        NINTH JUDICIAL DISTRICT\nCOUNTY OF LORAIN                 )\n\nDIANE SHAFFER, Individually, and as                          C.A. No.   18CA011440\nExecutrix of the Estate of Edward Shaffer,\nDeceased",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 10134313,
+      "case_name": "OR-OSHA v. United Parcel Service, Inc.",
+      "court": "Court of Appeals of Oregon",
+      "court_id": "orctapp",
+      "date_filed": "2021-06-16",
+      "docket": "A168084",
+      "cite_count": 8,
+      "citation": [
+        "312 Or. App. 424",
+        "494 P.3d 959"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10134313/or-osha-v-united-parcel-service-inc/",
+      "suit_nature": "",
+      "snippet": "424\n\n  Argued and submitted May 21, 2019, reversed and remanded June 16, 2021\n\n\n                   OREGON OCCUPATIONAL\n                 SAFETY & HEALTH DIVISION,\n                            Petitioner,\n                                 v.\n                UNITED PARCEL SERVICE, INC.,\n                           Respondent.\n                  Workers’ Compensation",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=8, +2)",
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 10135202,
+      "case_name": "OR-OSHA v. Loy Clark Pipeline, Co.",
+      "court": "Court of Appeals of Oregon",
+      "court_id": "orctapp",
+      "date_filed": "2022-06-08",
+      "docket": "A171747",
+      "cite_count": 6,
+      "citation": [
+        "320 Or. App. 205",
+        "514 P.3d 544"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10135202/or-osha-v-loy-clark-pipeline-co/",
+      "suit_nature": "",
+      "snippet": "205\n\n   Argued and submitted April 1, reversed and remanded June 8, petition for\n               review denied November 23, 2022 (370 Or 471)\n\n\n                     OCCUPATIONAL SAFETY\n                      & HEALTH DIVISION,\n                              Petitioner,\n                                   v.\n                    LOY CLARK PIPELINE, CO.,",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=6, +2)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 10289384,
+      "case_name": "Jennings Plant Servs. v. Ellerbrock-Norris Agency",
+      "court": "Nebraska Supreme Court",
+      "court_id": "neb",
+      "date_filed": "2024-12-06",
+      "docket": "S-23-989",
+      "cite_count": 1,
+      "citation": [
+        "318 Neb. 138"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10289384/jennings-plant-servs-v-ellerbrock-norris-agency/",
+      "suit_nature": "",
+      "snippet": "Nebraska Supreme Court Online Library\nwww.nebraska.gov/apps-courts-epub/\n12/06/2024 09:08 AM CST\n\n\n\n\n                                                        - 138 -\n                               Nebraska Supreme Court Advance Sheets\n                                        318 Nebraska Reports\n                        JENNINGS PLANT SERVS. V. ELLERBROCK-NORRIS AGENCY",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 9469371,
+      "case_name": "Reese v. Triborough Bridge and Tunnel Authority",
+      "court": "Court of Appeals for the Second Circuit",
+      "court_id": "ca2",
+      "date_filed": "2024-01-26",
+      "docket": "22-751",
+      "cite_count": 10,
+      "citation": [
+        "91 F.4th 582"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9469371/reese-v-triborough-bridge-and-tunnel-authority/",
+      "suit_nature": "",
+      "snippet": "22-751-cv\nReese v. Triborough Bridge and Tunnel Authority\n\n                     United States Court of Appeals\n                         for the Second Circuit\n                                    August Term, 2022\n\n             (Argued: June 27, 2023                Decided: January 26, 2024)\n\n                                  Docket No. 22-751-cv\n\n                       ____________________________",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=10, +2)",
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 6592131,
+      "case_name": "Wrongful Death Estate of Krahmer ex rel. Peck v. Laurel Healthcare Providers, LLC",
+      "court": "New Mexico Court of Appeals",
+      "court_id": "nmctapp",
+      "date_filed": "2013-12-06",
+      "docket": "No. 34,362; Docket No. 30,868",
+      "cite_count": 9,
+      "citation": [
+        "5 N.M. 193",
+        "2014 NMCA 001"
+      ],
+      "url": "https://www.courtlistener.com/opinion/6592131/wrongful-death-estate-of-krahmer-ex-rel-peck-v-laurel-healthcare/",
+      "suit_nature": "",
+      "snippet": "OPINION KENNEDY, Chief Judge. {1} Chris Peck (Plaintiff) is the personal representative of the wrongful death estate of the decedent, Ann Krahmer, who he alleges died as a result of a nursing home’s poor care. Plaintiff filed a wrongful death action against the nursing home, which responded with a motion to compel arbitration, pursuant to an agreement signe",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=9, +2)",
+        "具体的な被害語: death, died, home (+1.5)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 9415953,
+      "case_name": "Rosa v. Triborough Bridge & Tunnel Auth.",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2023-07-26",
+      "docket": "Index No. 525024/18",
+      "cite_count": 4,
+      "citation": [
+        "194 N.Y.S.3d 68",
+        "218 A.D.3d 810",
+        "2023 NY Slip Op 03936"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9415953/rosa-v-triborough-bridge-tunnel-auth/",
+      "suit_nature": "",
+      "snippet": "Rosa v Triborough Bridge & Tunnel Auth. (2023 NY Slip Op 03936)\n\n\n\n\n\nRosa v Triborough Bridge & Tunnel Auth.\n\n\n2023 NY Slip Op 03936\n\n\nDecided on July 26, 2023\n\n\nAppellate Division, Second Department\n\n\n\nPublished by New York State Law Reporting B",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=4, +2)",
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 6622284,
+      "case_name": "Harvest Land Co-Op, Inc. v. Hora",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2022-07-08",
+      "docket": "26218 & 26227",
+      "cite_count": 2,
+      "citation": [
+        "2022 Ohio 2375"
+      ],
+      "url": "https://www.courtlistener.com/opinion/6622284/harvest-land-co-op-inc-v-hora/",
+      "suit_nature": "",
+      "snippet": "[Cite as Harvest Land Co-Op, Inc. v. Hora, 2022-Ohio-2375.]\n\n\n\n\n                              IN THE COURT OF APPEALS OF OHIO\n                                 SECOND APPELLATE DISTRICT\n                                     MONTGOMERY COUNTY\n\n HARVEST LAND CO-OP, INC.                              :\n                                                       :\n         Plaintiff-Appellee",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=2, +2)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 10038556,
+      "case_name": "Overwell Harvest, Limited v. Trading Technologies International, Inc.",
+      "court": "Court of Appeals for the Seventh Circuit",
+      "court_id": "ca7",
+      "date_filed": "2024-08-12",
+      "docket": "23-2150",
+      "cite_count": 2,
+      "citation": [
+        "114 F.4th 852"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10038556/overwell-harvest-limited-v-trading-technologies-international-inc/",
+      "suit_nature": "",
+      "snippet": "In the\n\n    United States Court of Appeals\n                 For the Seventh Circuit\n                     ____________________\nNo. 23-2150\nOVERWELL HARVEST, LTD., individually and\nderivatively on behalf of NEURENSIC, INC.,\n                                                  Plaintiff-Appellant,\n\n                                 v.\n\nTRADING TECHNOLOGIES INTERNATIONAL, IN",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=2, +2)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 7859287,
+      "case_name": "Lori Nicholson v. Biomet, Inc.",
+      "court": "Court of Appeals for the Eighth Circuit",
+      "court_id": "ca8",
+      "date_filed": "2022-08-24",
+      "docket": "21-2263",
+      "cite_count": 13,
+      "citation": [
+        "46 F.4th 757"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7859287/lori-nicholson-v-biomet-inc/",
+      "suit_nature": "",
+      "snippet": "United States Court of Appeals\n                            For the Eighth Circuit\n                        ___________________________\n\n                                No. 21-2263\n                        ___________________________\n\n                                Lori Nicholson\n\n                                    Plaintiff - Appellee\n\n                           Willis William Nicho",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=13, +2)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 7313383,
+      "case_name": "Benefield v. Pfizer Inc.",
+      "court": "District Court, S.D. New York",
+      "court_id": "nysd",
+      "date_filed": "2015-05-01",
+      "docket": "No. 14-CV-3394 (JPO)",
+      "cite_count": 4,
+      "citation": [
+        "103 F. Supp. 3d 449",
+        "2015 U.S. Dist. LEXIS 57586",
+        "2015 WL 1958929"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7313383/benefield-v-pfizer-inc/",
+      "suit_nature": "",
+      "snippet": "OPINION AND ORDER\n\nJ. PAUL OETKEN, District Judge:\nIn May 2012, Georgia resident Joyce Benefield sought treatment for a post-operative abdominal infection. She was prescribed Tygacil, an antibacterial drug manufactured by Pfizer and its subsidiary Wyeth Pharmaceuticals, for the infection. After she began taking the drug, Joyce says that she developed a number of conditions, including vasculitis,",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=4, +2)",
+        "11年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 7334424,
+      "case_name": "Thomas v. Borg-Warner Morse Tec LLC",
+      "court": "District Court, E.D. Arkansas",
+      "court_id": "ared",
+      "date_filed": "2018-12-21",
+      "docket": "CASE NO. 4:17-CV-00522 BSM",
+      "cite_count": 1,
+      "citation": [
+        "362 F. Supp. 3d 610"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7334424/thomas-v-borg-warner-morse-tec-llc/",
+      "suit_nature": "",
+      "snippet": "BRIAN S. MILLER, UNITED STATES DISTRICT JUDGE\nThe motions for summary judgment [Doc. Nos. 196, 201, 206] are granted as to the breach of warranty claims, granted in part as to the market share liability theory, and denied as to all other claims. The notices of adoption [219, 228] are recognized. The motions for summary judgment on the issue of punitive damages and motions to bifurcate [Doc. Nos.",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 10608293,
+      "case_name": "Theresa Vigo Miaoulis v. Toyota North America, Inc., D/B/A Toyota Motor Company",
+      "court": "Court of Appeals of Arkansas",
+      "court_id": "arkctapp",
+      "date_filed": "2021-01-13",
+      "docket": "",
+      "cite_count": 1,
+      "citation": [
+        "2021 Ark. App. 19"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10608293/theresa-vigo-miaoulis-v-toyota-north-america-inc-dba-toyota-motor/",
+      "suit_nature": "",
+      "snippet": "Cite as 2021 Ark. App. 19\nDigitally signed by Elizabeth\nPerry\n                                    ARKANSAS COURT OF APPEALS\nDate: 2022.08.15 10:40:50 -05'00'                   DIVISIONS II & III\nAdobe Acrobat version:                                No. CV-18-752\n2022.002.20191\n            THERESA VIGO MIAOULIS, AS",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 7318507,
+      "case_name": "Dorato ex rel. Wrongful Death Claim of Tillison v. Smith",
+      "court": "District Court, D. New Mexico",
+      "court_id": "nmd",
+      "date_filed": "2015-12-11",
+      "docket": "No. CIV 14-0365 JB/GBW",
+      "cite_count": 33,
+      "citation": [
+        "163 F. Supp. 3d 837",
+        "2015 U.S. Dist. LEXIS 176609",
+        "2015 WL 10383662"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7318507/dorato-ex-rel-wrongful-death-claim-of-tillison-v-smith/",
+      "suit_nature": "",
+      "snippet": "MEMORANDUM OPINION AND AMENDED ORDER1\nJames O. Browning, UNITED STATES DISTRICT JUDGE\nTHIS MATTER comes before the Court on: (i) the Plaintiffs’ Motion to Strike Defendants’ Affirmative Defenses and Officer Smith’s Defense of Doctor Patient Privilege [Doc. 10], filed May 14, 2014 (Doc. 13)(“MTS”); (ii) Defendant Martin Smith’s Motion for Protective Order, and Memorandum",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 3.0,
+      "reasons": [
+        "やや知られている (citeCount=33, +1)",
+        "11年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 4506756,
+      "case_name": "State Farm Mutual Automobile Insurance Co. v. Fisher",
+      "court": "Supreme Court of Colorado",
+      "court_id": "colo",
+      "date_filed": "2018-05-21",
+      "docket": "Supreme Court Case 15SC472",
+      "cite_count": 256,
+      "citation": [
+        "2018 CO 39",
+        "418 P.3d 501"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4506756/state-farm-mutual-automobile-insurance-co-v-fisher/",
+      "suit_nature": "Insurance—Underinsured Motorist Benefits—Unreasonable Delay/Denial of Payment",
+      "snippet": "JUSTICE HOOD delivered the Opinion of the Court.\n \n\n  ¶ 1 An underinsured motorist struck a car driven by Dale Fisher, causing Fisher injuries requiring over $60,000 in medical care. Fisher was not at fault, and he was covered under multiple State Farm underinsured motorist (\"UIM\") insurance policies. State Farm agreed that Fisher's medical bills were covered under the UIM policies, but it",
+      "person_vs_state": true,
+      "corporate_only": false,
+      "score": 3.0,
+      "reasons": [
+        "普通の人 or 押収財産 vs 国家 (+3)",
+        "著名判例 — 既出だらけ (citeCount=256, -2)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: injuries (+0.5)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 6225645,
+      "case_name": "NFIB v. OSHA",
+      "court": "Supreme Court of the United States",
+      "court_id": "scotus",
+      "date_filed": "2022-01-13",
+      "docket": "21A244",
+      "cite_count": 59,
+      "citation": [
+        "595 U.S. 109"
+      ],
+      "url": "https://www.courtlistener.com/opinion/6225645/nfib-v-osha/",
+      "suit_nature": "",
+      "snippet": "(Slip Opinion)            Cite as: 595 U. S. ____ (2022)                                 1\n\n                                      Per Curiam\n\n       NOTICE: This opinion is subject to formal revision before publication in the\n       preliminary print of the United States Reports. Readers are requested to\n       notify the Reporter of Decisions, Supreme Court of the United States, Wash-\n       ingt",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=59, +1)",
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 5297211,
+      "case_name": "BST Holdings, L.L.C. v. OSHA",
+      "court": "Court of Appeals for the Fifth Circuit",
+      "court_id": "ca5",
+      "date_filed": "2021-11-12",
+      "docket": "21-60845",
+      "cite_count": 51,
+      "citation": [
+        "17 F.4th 604"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5297211/bst-holdings-llc-v-osha/",
+      "suit_nature": "Agency",
+      "snippet": "Case: 21-60845   Document: 00516091902      Page: 1   Date Filed: 11/12/2021\n\n\n\n\n          United States Court of Appeals\n               for the Fifth Circuit\n                                                              United States Court of Appeals\n                                                                       Fifth Circuit",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=51, +1)",
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 8441512,
+      "case_name": "Fireman's Fund Insurance v. Plant Insulation Co. (In re Plant Insulation Co.)",
+      "court": "Court of Appeals for the Ninth Circuit",
+      "court_id": "ca9",
+      "date_filed": "2013-10-28",
+      "docket": "Nos. 12-17466, 12-17467",
+      "cite_count": 4,
+      "citation": [
+        "734 F.3d 900",
+        "2013 WL 5779568"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8441512/firemans-fund-insurance-v-plant-insulation-co-in-re-plant-insulation/",
+      "suit_nature": "",
+      "snippet": "OPINION\nO’SCANNLAIN, Circuit Judge:\nWe must decide whether a bankruptcy plan, which allegedly leaves a group of insurers paying more than their fair share on a large number of asbestos personal injury claims, complies with the Bankruptcy Code.\nI\nA\nPlant Insulation Co. (“Plant”) is a California corporation that was founded in 1937 and made a su",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "無名だが実体はある (citeCount=4, +2)",
+        "具体的な被害語: injury (+0.5)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 7332933,
+      "case_name": "Tears v. Bos. Scientific Corp.",
+      "court": "District Court, S.D. Illinois",
+      "court_id": "ilsd",
+      "date_filed": "2018-09-29",
+      "docket": "17 Civ. 9793 (AJN)",
+      "cite_count": 36,
+      "citation": [
+        "344 F. Supp. 3d 500"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7332933/tears-v-bos-scientific-corp/",
+      "suit_nature": "",
+      "snippet": "ALISON J. NATHAN, District Judge\nThis case arises from Plaintiff Terrance Tears' 2002 implantation with the Greenfield Filter, a vena cava filter manufactured by Defendant Boston Scientific Corporation (\"BSC\"). Tears seeks compensatory and punitive damages from BSC for alleged negligence, strict products liability, breach of express and implied warranties, fraudulent misrepresentation and conceal",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=36, +1)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 7860117,
+      "case_name": "Connie Thacker v. Ethicon, Inc.",
+      "court": "Court of Appeals for the Sixth Circuit",
+      "court_id": "ca6",
+      "date_filed": "2022-08-26",
+      "docket": "21-6193",
+      "cite_count": 31,
+      "citation": [
+        "47 F.4th 451"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7860117/connie-thacker-v-ethicon-inc/",
+      "suit_nature": "",
+      "snippet": "RECOMMENDED FOR PUBLICATION\n                                Pursuant to Sixth Circuit I.O.P. 32.1(b)\n                                       File Name: 22a0203p.06\n\n                    UNITED STATES COURT OF APPEALS\n                                  FOR THE SIXTH CIRCUIT\n\n\n\n                                                             ┐\n CONNIE J. THACKER,",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=31, +1)",
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 7312747,
+      "case_name": "Pasternak & Fidis, P.C. v. Recall Total Information Management, Inc.",
+      "court": "District Court, D. Maryland",
+      "court_id": "mdd",
+      "date_filed": "2015-03-25",
+      "docket": "Case No. PWG-14-2015",
+      "cite_count": 21,
+      "citation": [
+        "95 F. Supp. 3d 886",
+        "2015 U.S. Dist. LEXIS 37985",
+        "2015 WL 1405395"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7312747/pasternak-fidis-pc-v-recall-total-information-management-inc/",
+      "suit_nature": "",
+      "snippet": "MEMORANDUM OPINION\n\nPAUL W. GRIMM, District Judge.\nPlaintiff, a law firm, entered into an agreement with Defendant, under which Defendant would store Plaintiffs clients’ documents and files, including original-signature documents in a secure, climate-controlled environment in Defendant’s document storage facility. When an accident in 2012 resulted in the destruction of numerous documents at the",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=21, +1)",
+        "11年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 7321226,
+      "case_name": "Brazil v. Janssen Research & Development LLC",
+      "court": "District Court, N.D. Georgia",
+      "court_id": "gand",
+      "date_filed": "2016-07-11",
+      "docket": "CIVIL ACTION NO. 4:15-CV-0204-HLM",
+      "cite_count": 16,
+      "citation": [
+        "196 F. Supp. 3d 1351",
+        "2016 U.S. Dist. LEXIS 93528",
+        "2016 WL 3748771"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7321226/brazil-v-janssen-research-development-llc/",
+      "suit_nature": "",
+      "snippet": "ORDER\nHAROLD L. MURPHY, UNITED STATES DISTRICT JUDGE\nThis ease is before the Court on Defendants’ Motion to Dismiss [25].\nI. Background\nA. Plaintiffs Allegations\n1. The Parties\nPlaintiff is a citizen of the State of Georgia and resides in Dalton, Whitfield County, Georgia. (Am. Compl. (Docket Entry No. 21) ¶ 3.)",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.5,
+      "reasons": [
+        "やや知られている (citeCount=16, +1)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 187074,
+      "case_name": "National Mining Ass'n v. Mine Safety & Health Administration",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2008-01-11",
+      "docket": "07-1026",
+      "cite_count": 9,
+      "citation": [
+        "512 F.3d 696",
+        "379 U.S. App. D.C. 262",
+        "2008 U.S. App. LEXIS 482",
+        "2008 WL 108738"
+      ],
+      "url": "https://www.courtlistener.com/opinion/187074/national-mining-assn-v-mine-safety-health-administration/",
+      "suit_nature": "",
+      "snippet": "512 F.3d 696 (2008)\nNATIONAL MINING ASSOCIATION, Petitioner\nv.\nMINE SAFETY AND HEALTH ADMINISTRATION and Secretary of Labor, Respondents.\nUnited Mine Workers of America, Intervenor.\nNo. 07-1026.\nUnited States Court of Appeals, District of Columbia Circuit.\nArgued November 13, 2007.\nDecided January 11, 2008.\n*697",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=9, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 2472958,
+      "case_name": "Utahamerican Energy, Inc. v. Mine Safety & Health Administration",
+      "court": "District Court, District of Columbia",
+      "court_id": "dcd",
+      "date_filed": "2010-07-23",
+      "docket": "Civil Action 08-1780 (RWR)",
+      "cite_count": 6,
+      "citation": [
+        "725 F. Supp. 2d 78",
+        "2010 U.S. Dist. LEXIS 74789"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2472958/utahamerican-energy-inc-v-mine-safety-health-administration/",
+      "suit_nature": "",
+      "snippet": "725 F.Supp.2d 78 (2010)\nUTAHAMERICAN ENERGY, INC., Plaintiff,\nv.\nMINE SAFETY AND HEALTH ADMINISTRATION, Defendant.\nCivil Action No. 08-1780 (RWR).\nUnited States District Court, District of Columbia.\nJuly 23, 2010.\nJoseph Michael Klise, Thomas Cornell Means, Willa B. Perlmutter, Crowell & Moring LLP, Washington, DC, for Plaintiff.\nMarina Utgoff Braswell, U",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=6, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 1039898,
+      "case_name": "Northeast Research, LLC v. One Shipwrecked Vessel",
+      "court": "Court of Appeals for the Second Circuit",
+      "court_id": "ca2",
+      "date_filed": "2013-09-05",
+      "docket": "11-1644-cv",
+      "cite_count": 14,
+      "citation": [
+        "729 F.3d 197",
+        "2014 A.M.C. 882",
+        "2013 U.S. App. LEXIS 18454",
+        "2013 WL 4753732"
+      ],
+      "url": "https://www.courtlistener.com/opinion/1039898/northeast-research-llc-v-one-shipwrecked-vessel/",
+      "suit_nature": "",
+      "snippet": "DEBRA ANN LIVINGSTON, Circuit Judge:\n \n\n  This action arises from the chill depths of Lake Erie, where lies the intact shipwreck of an early nineteenth century wooden schooner. In 2004, Plaintiff-Appellant Northeast Research, LLC (“Northeast”) filed an\n  \n   in rem\n  \n  action in federal court laying claim to the shipwreck under admiralty law as the finder and salvor of the su",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=14, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 8441677,
+      "case_name": "Barlow v. Liberty Maritime Corp.",
+      "court": "Court of Appeals for the Second Circuit",
+      "court_id": "ca2",
+      "date_filed": "2014-03-04",
+      "docket": "Docket No. 13-0254-cv",
+      "cite_count": 4,
+      "citation": [
+        "746 F.3d 518",
+        "2014 A.M.C. 866",
+        "2014 WL 814929",
+        "2014 U.S. App. LEXIS 4070"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8441677/barlow-v-liberty-maritime-corp/",
+      "suit_nature": "",
+      "snippet": "WESLEY, Circuit Judge:\nGeorge Barlow started going to sea as a deck hand in 1974. He was twenty-three. In 1986, after working aboard ships for more than a decade, and without ever having attended college, he passed the merchant marine officer’s exam, licensing him to serve as an officer aboard U.S. flagged cargo vessels. In 1992 he received his master’s license, the merchant marine equivalent of",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=4, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 8719850,
+      "case_name": "Gabarick v. Laurin Maritime (America), Inc.",
+      "court": "District Court, E.D. Louisiana",
+      "court_id": "laed",
+      "date_filed": "2012-09-28",
+      "docket": "Civil Action Nos. 08-4007, 08-4156, 08-4023, 08-4046, 08-4261, 08-4600",
+      "cite_count": 1,
+      "citation": [
+        "900 F. Supp. 2d 669",
+        "2012 WL 4606221",
+        "2012 U.S. Dist. LEXIS 142842"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8719850/gabarick-v-laurin-maritime-america-inc/",
+      "suit_nature": "",
+      "snippet": "OPINION\n\nIVAN L.R. LEMELLE, District Judge.\nThis litigation involves complicated fact pattens and interwoven legal issues. It begins with a series of vessel chartering agreements by American Commercial Lines, Inc. (“ACL”) and D.R.D. Towing Company, LLC (“DRD”) — an arrangement described by ACL as a “two step, two contract process”. Record Document Number 1381, p. 55. The pertinent arrang",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 8714885,
+      "case_name": "Fathom Exploration, LLC v. Unidentified Shipwrecked Vessel or Vessels",
+      "court": "District Court, S.D. Alabama",
+      "court_id": "alsd",
+      "date_filed": "2012-03-12",
+      "docket": "Civil Action No. 04-0685-WS-M",
+      "cite_count": 1,
+      "citation": [
+        "857 F. Supp. 2d 1269",
+        "2012 A.M.C. 2875",
+        "2012 WL 827006",
+        "2012 U.S. Dist. LEXIS 32659"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8714885/fathom-exploration-llc-v-unidentified-shipwrecked-vessel-or-vessels/",
+      "suit_nature": "",
+      "snippet": "ORDER\nWILLIAM H. STEELE, Chief Judge.\nThis matter comes before the Court on the parties’ briefing (docs. 200, 201, 204, 205) concerning the identity of a vessel located in the admiralty arrest area established in 2004 and known as “Shipwreck #1.”\nI. Relevant Background.\nThis musty and barnacled action dates back to October 2004, when plaintiff Fathom Exploration,",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 8242656,
+      "case_name": "Far East MacHinery Co. v. Isabel Aranzamendi, Individually and as Wrongful Death Beneficiary of Wilber Dimas, Deceased: Bethany Helen Morales",
+      "court": "Texas Court of Appeals, 5th District (Dallas)",
+      "court_id": "txctapp5",
+      "date_filed": "2022-09-13",
+      "docket": "05-21-00267-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/8242656/far-east-machinery-co-v-isabel-aranzamendi-individually-and-as-wrongful/",
+      "suit_nature": "",
+      "snippet": "Reversed and Dismissed and Opinion Filed September 13, 2022\n\n\n\n\n                                         In The\n                               Court of Appeals\n                        Fifth District of Texas at Dallas\n                                 No. 05-21-00267-CV\n\n              FAR EAST MACHINERY CO., Appellant\n                             V.\n    ISABEL ARANZAMENDI, INDIVIDUALLY AND AS WRONG",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 10628751,
+      "case_name": "Victoria York, Individually and on behalf of the Wrongful Death Beneficiaries of Bennett York, Jr. v. Dr. Benjamin Root, Jr. and Mississippi Neuropsychiatric Clinic PLLC",
+      "court": "Court of Appeals of Mississippi",
+      "court_id": "missctapp",
+      "date_filed": "2021-10-05",
+      "docket": "2020-CA-00135-COA",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10628751/victoria-york-individually-and-on-behalf-of-the-wrongful-death/",
+      "suit_nature": "",
+      "snippet": "IN THE COURT OF APPEALS OF THE STATE OF MISSISSIPPI\n\n                                NO. 2020-CA-00135-COA\n\nVICTORIA YORK, INDIVIDUALLY AND ON                                          APPELLANT\nBEHALF OF THE WRONGFUL DEATH\nBENEFICIARIES OF BENNETT YORK, JR.,\nDECEASED\n\nv.\n\nDR. BENJAMIN ROOT, JR. AND MISSISSIPPI                                      APPELLEES\nNEUROPSYCHIATRIC CLINIC PLLC",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 10936222,
+      "case_name": "Carol Williams, Individually, and for and on Behalf of the Estate and the Wrongful Death Beneficiaries of Anthony David Williams v. Avco Corporation",
+      "court": "Supreme Court of Rhode Island",
+      "court_id": "ri",
+      "date_filed": "2026-07-29",
+      "docket": "2024-0144-Appeal.",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10936222/carol-williams-individually-and-for-and-on-behalf-of-the-estate-and-the/",
+      "suit_nature": "",
+      "snippet": "Supreme Court\n\n                                                     No. 2024-144-Appeal.\n                                                     (PC 15-4900)\n\nCarol Williams, Individually, and for   :\n and on Behalf of the Estate and the\n  Wrongful Death Beneficiaries of\n   Anthony David Williams, et al.\n\n                 v.                     :",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "0年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 9506258,
+      "case_name": "Ocnc, Inc. v. Renee Lewis, Individually and as Special Administrator of the Estate of Lillie Mae Edwards, and on Behalf of the Wrongful Death Beneficiaries of Lillie Mae Edwards",
+      "court": "Court of Appeals of Arkansas",
+      "court_id": "arkctapp",
+      "date_filed": "2024-05-22",
+      "docket": "",
+      "cite_count": 0,
+      "citation": [
+        "2024 Ark. App. 325"
+      ],
+      "url": "https://www.courtlistener.com/opinion/9506258/ocnc-inc-v-renee-lewis-individually-and-as-special-administrator-of-the/",
+      "suit_nature": "",
+      "snippet": "Cite as 2024 Ark. App. 325\n                ARKANSAS COURT OF APPEALS\n                                      DIVISION III\n                                      No. CV-22-762\n\n\n\n OCNC, INC. D/B/A SILVER OAKS   Opinion Delivered May 22, 2024\n HEALTH AND REHABILITATION\n                      APPELLANT APPEAL FROM THE OUACHITA\n                                COUNTY CIRCUIT",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 4792572,
+      "case_name": "Norma Lopez, Individually, as Personal Representative of the Estate of Alfonso Lopez and on Behalf of All Wrongful Death Beneficiaries of Alfonso Lopez v. Brian Callahan, M.D.",
+      "court": "Texas Court of Appeals, 14th District (Houston)",
+      "court_id": "txctapp14",
+      "date_filed": "2020-10-01",
+      "docket": "14-18-00913-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4792572/norma-lopez-individually-as-personal-representative-of-the-estate-of/",
+      "suit_nature": "",
+      "snippet": "Affirmed and Memorandum Opinion filed October 1, 2020.\n\n\n\n\n                                          In The\n\n                          Fourteenth Court of Appeals\n\n                                  NO. 14-18-00913-CV\n\nNORMA LOPEZ, INDIVIDUALLY, AS PERSONAL REPRESENTATIVE\n OF THE ESTATE OF ALFONSO LOPEZ, AND ON BEHALF OF ALL\nWRONGFUL DEATH BENEFICIARIES OF ALFONSO LOPEZ, Appellant",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 10629682,
+      "case_name": "Singing River Health System v. Amy Brand, Individually and as Administratrix of the Estate of Debbie Edwards, and on Behalf of all Wrongful Death Beneficiaries of Debbie Edwards, and April Kattawar",
+      "court": "Court of Appeals of Mississippi",
+      "court_id": "missctapp",
+      "date_filed": "2023-07-18",
+      "docket": "2022-CA-00090-COA",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10629682/singing-river-health-system-v-amy-brand-individually-and-as/",
+      "suit_nature": "",
+      "snippet": "IN THE COURT OF APPEALS OF THE STATE OF MISSISSIPPI\n\n                               NO. 2022-CA-00090-COA\n\nSINGING RIVER HEALTH SYSTEM                                               APPELLANT\n\nv.\n\nAMY BRAND, INDIVIDUALLY AND AS                                             APPELLEES\nADMINISTRATRIX OF THE ESTATE OF DEBBIE\nEDWARDS, DECEASED, AND ON BEHALF OF\nALL WRONGFUL DEATH BENEFICIARIES OF",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 4607563,
+      "case_name": "Rodolfo De La Pena, Individually, on Behalf of All Wrongful Death Beneficiaries and as Personal Representative of the Estate of Beatriz De La Pena v. Kevin R. Gordon, M.D.",
+      "court": "Texas Court of Appeals, 2nd District (Fort Worth)",
+      "court_id": "txctapp2",
+      "date_filed": "2019-04-04",
+      "docket": "02-18-00030-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4607563/rodolfo-de-la-pena-individually-on-behalf-of-all-wrongful-death/",
+      "suit_nature": "",
+      "snippet": "In the\n                    Court of Appeals\n            Second Appellate District of Texas\n                     at Fort Worth\n                 ___________________________\n                      No. 02-18-00030-CV\n                 ___________________________\n\nRODOLFO DE LA PEÑA, INDIVIDUALLY, ON BEHALF OF ALL WRONGFUL\n DEATH BENEFICIARIES AND AS PERSONAL REPRESENTATIVE OF TH",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 1637838,
+      "case_name": "In Re Gramercy Plant Explosion at Kaiser",
+      "court": "Supreme Court of Louisiana",
+      "court_id": "la",
+      "date_filed": "2008-05-02",
+      "docket": "2008-CC-0481",
+      "cite_count": 2,
+      "citation": [
+        "982 So. 2d 763",
+        "2008 La. LEXIS 2843",
+        "2008 WL 2208487"
+      ],
+      "url": "https://www.courtlistener.com/opinion/1637838/in-re-gramercy-plant-explosion-at-kaiser/",
+      "suit_nature": "",
+      "snippet": "982 So.2d 763 (2008)\nIn re GRAMERCY PLANT EXPLOSION AT KAISER.\nNo. 2008-CC-0481.\nSupreme Court of Louisiana.\nMay 2, 2008.\nIn re Q.B.E. International Insurance Ltd.; Swiss Reinsurance Company; Zurich Reinsurance Company; Houston Casualty Company; Munich Reinsurance Company; Qatar Insurance Company; AXA Global Risks (U.K.) et al.; Sorema Insurance Company; Winterthur Internat",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=2, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 8483948,
+      "case_name": "Fireman's Fund Insurance v. Plant Insulation Co. (In re Plant Insulation Co.)",
+      "court": "Court of Appeals for the Ninth Circuit",
+      "court_id": "ca9",
+      "date_filed": "2013-10-28",
+      "docket": "Nos. 12-17466, 12-17467",
+      "cite_count": 1,
+      "citation": [
+        "544 F. App'x 669"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8483948/firemans-fund-insurance-v-plant-insulation-co-in-re-plant-insulation/",
+      "suit_nature": "",
+      "snippet": "MEMORANDUM *\nAppellee insurance companies (the “Non-Settling Insurers”) challenge the bankruptcy court’s confirmation of Plant Insulation Co.’s Chapter 11 plan. We address several of their claims in an opinion filed concurrently with this memorandum disposition. The relevant facts are discussed in that opinion.\nI\nThe Non-Settling Insurers argue that the bankruptcy",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 2572587,
+      "case_name": "The STANDARD FIRE INS. CO. v. Donnelly",
+      "court": "District Court, D. Vermont",
+      "court_id": "vtd",
+      "date_filed": "2010-02-05",
+      "docket": "Civil Action 5:08-CV-258",
+      "cite_count": 1,
+      "citation": [
+        "689 F. Supp. 2d 696",
+        "2010 U.S. Dist. LEXIS 10161",
+        "2010 WL 503097"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2572587/the-standard-fire-ins-co-v-donnelly/",
+      "suit_nature": "",
+      "snippet": "689 F.Supp.2d 696 (2010)\nTHE STANDARD FIRE INSURANCE CO., Plaintiff,\nv.\nDeirdre DONNELLY, Defendant.\nCivil Action No. 5:08-CV-258.\nUnited States District Court, D. Vermont.\nFebruary 5, 2010.\n*697 Pietro J. Lynn, Esq., Robin A. Freeman, Esq., Lynn, Lynn & Blackman, P.C. Burlington, VT, for Plaintiff.\nMichael F. Hanley,",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=1, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 8728852,
+      "case_name": "Janes v. Triborough Bridge & Tunnel Authority",
+      "court": "District Court, S.D. New York",
+      "court_id": "nysd",
+      "date_filed": "2013-10-16",
+      "docket": "No. 06 Civ. 1427(PAE)",
+      "cite_count": 7,
+      "citation": [
+        "977 F. Supp. 2d 320",
+        "2013 WL 5630629",
+        "2013 U.S. Dist. LEXIS 148928"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8728852/janes-v-triborough-bridge-tunnel-authority/",
+      "suit_nature": "",
+      "snippet": "OPINION & ORDER\n\nPAUL A. ENGELMAYER, District Judge:\nPlaintiffs Riva Janes, Bruce Schwartz, Bette Goldstein, and Hillel Abraham (collectively, “plaintiffs”), on behalf of a class certified for injunctive purposes, bring this action against the Triborough Bridge and Tunnel Authority (“TBTA”); the Metropolitan Transportation Authority (“MTA”); Jay H. Walder, Chairman of the MTA (‘Walder”); and",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=7, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 10627630,
+      "case_name": "Joe McGee Construction Company, Inc. v. Dianne Brown-Bowens, Individually and on Behalf of The Wrongful Death Beneficiaries of Hattie W. Brown",
+      "court": "Mississippi Supreme Court",
+      "court_id": "miss",
+      "date_filed": "2023-08-17",
+      "docket": "2021-IA-01405-SCT",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10627630/joe-mcgee-construction-company-inc-v-dianne-brown-bowens-individually/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPREME COURT OF MISSISSIPPI\n\n                      NO. 2021-IA-01405-SCT\n\nJOE McGEE CONSTRUCTION COMPANY, INC.\n\nv.\n\nDIANNE BROWN-BOWENS, INDIVIDUALLY\nAND ON BEHALF OF THE WRONGFUL DEATH\nBENEFICIARIES OF HATTIE W. BROWN\n\nDATE OF JUDGMENT:             12/09/2021\nTRIAL JUDGE:                  HON. JOHN R. WHITE\nTRIAL COURT ATTORNEYS:        WILBUR O. COLOM",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 6466582,
+      "case_name": "Alejandro J. Betancourt, M.D. v. Mallory Cotton and Jeramy Bridges, Individually, and as Next Friends, Natural Parents, and as Wrongful Death Beneficiaries of Baby Boy Bridges",
+      "court": "Texas Court of Appeals, 13th District",
+      "court_id": "txctapp13",
+      "date_filed": "2022-05-05",
+      "docket": "13-21-00464-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/6466582/alejandro-j-betancourt-md-v-mallory-cotton-and-jeramy-bridges/",
+      "suit_nature": "",
+      "snippet": "THE THIRTEENTH COURT OF APPEALS\n\n                                   13-21-00464-CV\n\n\n                  ALEJANDRO J. BETANCOURT, M.D.\n                                v.\n    MALLORY COTTON AND JERAMY BRIDGES, INDIVIDUALLY, AND AS NEXT\n            FRIENDS, NATURAL PARENTS, AND AS WRONGFUL\n             DEATH BENEFICIARIES OF BABY BOY BRIDGES\n\n\n                                   On Ap",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 3211676,
+      "case_name": "Sears v. S3 Tunnel Construction AJV",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2016-06-09",
+      "docket": "1417 101748/12",
+      "cite_count": 0,
+      "citation": [
+        "140 A.D.3d 474",
+        "31 N.Y.S.3d 879"
+      ],
+      "url": "https://www.courtlistener.com/opinion/3211676/sears-v-s3-tunnel-construction-ajv/",
+      "suit_nature": "",
+      "snippet": "Order, Supreme Court, New York County (Kathryn E. Freed, J.), entered March 16, 2015, which, to the extent appealed from, denied defendant Metropolitan Transportation Authority’s (MTA) motion for summary judgment dismissing the complaint and all cross claims against it, unanimously affirmed, without costs.\n \n\n  Plaintiff seeks damages for injuries she allegedly sustained when a re-paved trenc",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: injuries (+0.5)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 6466583,
+      "case_name": "Alejandro J. Betancourt, M.D. v. Mallory Cotton and Jeramy Bridges, Individually, and as Next Friends, Natural Parents, and as Wrongful Death Beneficiaries of Baby Boy Bridges",
+      "court": "Texas Court of Appeals, 13th District",
+      "court_id": "txctapp13",
+      "date_filed": "2022-05-05",
+      "docket": "13-22-00132-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/6466583/alejandro-j-betancourt-md-v-mallory-cotton-and-jeramy-bridges/",
+      "suit_nature": "",
+      "snippet": "THE THIRTEENTH COURT OF APPEALS\n\n                                   13-22-00132-CV\n\n\n                  ALEJANDRO J. BETANCOURT, M.D.\n                                v.\n    MALLORY COTTON AND JERAMY BRIDGES, INDIVIDUALLY, AND AS NEXT\n            FRIENDS, NATURAL PARENTS, AND AS WRONGFUL\n             DEATH BENEFICIARIES OF BABY BOY BRIDGES\n\n\n                                   On Ap",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 4349262,
+      "case_name": "in Re: Charles Harley on Behalf of the Estate of Nellie Peele and on Behalf of All Wrongful Death Beneficiaries",
+      "court": "Texas Court of Appeals, 5th District (Dallas)",
+      "court_id": "txctapp5",
+      "date_filed": "2017-02-10",
+      "docket": "05-17-00077-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4349262/in-re-charles-harley-on-behalf-of-the-estate-of-nellie-peele-and-on-behalf/",
+      "suit_nature": "",
+      "snippet": "DENY; and Opinion Filed February 10, 2017.\n\n\n\n\n                                         S   In The\n                                Court of Appeals\n                         Fifth District of Texas at Dallas\n                                      No. 05-17-00077-CV\n\nIN RE CHARLES HARLEY ON BEHALF OF THE ESTATE OF NELLIE PEELE AND\n      ON BEHALF OF ALL WRONGFUL DEATH BENEFICIARIES, Relator",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 6466581,
+      "case_name": "Alejandro J. Betancourt, M.D. v. Mallory Cotton and Jeramy Bridges, Individually, and as Next Friends, Natural Parents, and as Wrongful Death Beneficiaries of Baby Boy Bridges",
+      "court": "Texas Court of Appeals, 13th District",
+      "court_id": "txctapp13",
+      "date_filed": "2022-05-05",
+      "docket": "13-21-00464-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/6466581/alejandro-j-betancourt-md-v-mallory-cotton-and-jeramy-bridges/",
+      "suit_nature": "",
+      "snippet": "NUMBER 13-21-00464-CV\n\n                            COURT OF APPEALS\n\n                  THIRTEENTH DISTRICT OF TEXAS\n\n                     CORPUS CHRISTI – EDINBURG\n\n\nALEJANDRO J. BETANCOURT, M.D.,                                           Appellant,\n\n                                             v.\n\nMALLORY COTTON AND JERAMY BRIDGES,\nINDIVIDUALLY, AND AS NEXT FRIENDS,\nNATUR",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 6457274,
+      "case_name": "Alejandro J. Betancourt, M.D. v. Mallory Cotton and Jeramy Bridges, Individually, and as Next Friends, Natural Parents, and as Wrongful Death Beneficiaries of Baby Boy Bridges",
+      "court": "Texas Court of Appeals, 13th District",
+      "court_id": "txctapp13",
+      "date_filed": "2022-03-28",
+      "docket": "13-21-00464-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/6457274/alejandro-j-betancourt-md-v-mallory-cotton-and-jeramy-bridges/",
+      "suit_nature": "",
+      "snippet": "NUMBER 13-21-00464-CV\n\n                          COURT OF APPEALS\n\n                 THIRTEENTH DISTRICT OF TEXAS\n\n                   CORPUS CHRISTI – EDINBURG\n\n\nALEJANDRO J. BETANCOURT, M.D.,                                          Appellant,\n\n                                            v.\n\nMALLORY COTTON AND JERAMY BRIDGES,\nINDIVIDUALLY, AND AS NEXT FRIENDS,\nNATURAL PAREN",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 2408048,
+      "case_name": "Reyes-Fuentes v. Shannon Produce Farm, Inc.",
+      "court": "District Court, S.D. Georgia",
+      "court_id": "gasd",
+      "date_filed": "2009-11-16",
+      "docket": "608CV059",
+      "cite_count": 5,
+      "citation": [
+        "671 F. Supp. 2d 1365",
+        "15 Wage & Hour Cas.2d (BNA) 1047",
+        "2009 U.S. Dist. LEXIS 107011",
+        "2009 WL 3855177"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2408048/reyes-fuentes-v-shannon-produce-farm-inc/",
+      "suit_nature": "",
+      "snippet": "671 F.Supp.2d 1365 (2009)\nJose Marcial REYES-FUENTES, et al., Plaintiffs,\nv.\nSHANNON PRODUCE FARM, INC., et al., Defendants.\nNo. 608CV059.\nUnited States District Court, S.D. Georgia, Statesboro Division.\nNovember 16, 2009.\n*1367 Dawson Morton, Lisa J. Krisher, Georgia Legal Services, Atlanta, GA, William J. Cobb, Cobb & Gardn",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=5, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 8730824,
+      "case_name": "Fraser v. Wyeth, Inc.",
+      "court": "District Court, D. Connecticut",
+      "court_id": "ctd",
+      "date_filed": "2014-01-14",
+      "docket": "Civil No. 3:04cv1373 (JBA)",
+      "cite_count": 14,
+      "citation": [
+        "992 F. Supp. 2d 68",
+        "2014 U.S. Dist. LEXIS 4730",
+        "2014 WL 129172"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8730824/fraser-v-wyeth-inc/",
+      "suit_nature": "",
+      "snippet": "RULING ON POST-TRIAL MOTIONS\nJANET BOND ARTERTON, District Judge.\nFollowing a jury trial and a verdict in favor of Plaintiffs Margaret Fraser and Joseph Fraser, Defendants Wyeth, Inc. and Wyeth Pharmaceuticals, Inc. (collectively “Wyeth”) move [Doc. # 337] pursuant to Federal Rule of Civil Procedure 50(b) for judgment as a matter of law on all of Plaintiffs’ claims and move [Doc. #339] pursuant t",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=14, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 2658032,
+      "case_name": "Scott v. Ford Motor Co.",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2014-03-26",
+      "docket": "A137975",
+      "cite_count": 2,
+      "citation": [
+        "224 Cal. App. 4th 1492",
+        "169 Cal. Rptr. 3d 823",
+        "2014 Cal. App. LEXIS 280"
+      ],
+      "url": "https://www.courtlistener.com/opinion/2658032/scott-v-ford-motor-co/",
+      "suit_nature": "",
+      "snippet": "Opinion\n \n\n  MARGULIES, Acting P. J.\n \n\n  Plaintiff Patrick\n  \n   Scott\n  \n  (Scott) owned and operated vehicle service stations for over 40 years, during which he was periodically exposed to asbestos from brake and clutch repair. He eventually developed mesothelioma, a form of cancer uniquely linked to asbestos",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 2.0,
+      "reasons": [
+        "無名だが実体はある (citeCount=2, +2)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 10688409,
+      "case_name": "Hobet Mining, Incorporated v. DOWCP",
+      "court": "Court of Appeals for the Fourth Circuit",
+      "court_id": "ca4",
+      "date_filed": "2025-10-01",
+      "docket": "23-2157",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10688409/hobet-mining-incorporated-v-dowcp/",
+      "suit_nature": "",
+      "snippet": "USCA4 Appeal: 23-2157     Doc: 93          Filed: 10/01/2025   Pg: 1 of 37\n\n\n\n\n                                             PUBLISHED\n\n                              UNITED STATES COURT OF APPEALS\n                                  FOR THE FOURTH CIRCUIT\n\n\n                                              No. 23-2157\n\n\n        HOBET MINING, INCORPORATED; ARCH RESOURCES,\n\n                            Peti",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "1年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 9412009,
+      "case_name": "GMS Mine Repair v. MSHR",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2023-07-07",
+      "docket": "22-1143",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/9412009/gms-mine-repair-v-mshr/",
+      "suit_nature": "",
+      "snippet": "United States Court of Appeals\n         FOR THE DISTRICT OF COLUMBIA CIRCUIT\n\n\n\nArgued April 17, 2023                  Decided July 7, 2023\n\n                        No. 22-1143\n\n                    GMS MINE REPAIR,\n                      PETITIONER\n\n                             v.\n\n FEDERAL MINE SAFETY AND HEALTH REVIEW COMMISSION\n  AND SECRETARY OF LABOR, MINE SAFETY AND HEALTH\n              ADMI",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 4755936,
+      "case_name": "United Mine Workers of America 1974 Pension Plan v. Energy West Mining Company",
+      "court": "District Court, District of Columbia",
+      "court_id": "dcd",
+      "date_filed": "2020-05-22",
+      "docket": "Civil Action No. 2018-1905",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4755936/united-mine-workers-of-america-1974-pension-plan-v-energy-west-mining/",
+      "suit_nature": "Civil",
+      "snippet": "UNITED STATES DISTRICT COURT\n                            FOR THE DISTRICT OF COLUMBIA\n\n\nUNITED MINE WORKERS OF AMERICA\n1974 PENSION PLAN, et al.,\n\n              Plaintiffs,\n\n      v.                                             Civil Action No. 1:18-cv-01905 (CJN)\n\nENERGY WEST MINING COMPANY,\n\n              Defendant.\n\n\n                                 MEMORANDUM OPINION",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 7314840,
+      "case_name": "Recovery Ltd. Partnership v. The Wrecked & Abandoned Vessel",
+      "court": "District Court, E.D. Virginia",
+      "court_id": "vaed",
+      "date_filed": "2015-08-11",
+      "docket": "Civil Action No. 2:87cv363",
+      "cite_count": 0,
+      "citation": [
+        "120 F. Supp. 3d 500",
+        "2015 U.S. Dist. LEXIS 105498"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7314840/recovery-ltd-partnership-v-the-wrecked-abandoned-vessel/",
+      "suit_nature": "",
+      "snippet": "OPINION\n\nREBECCA BEACH SMITH, Chief Judge.\nThis matter comes before the court on the Motion for Award of Title (“Motion”) and Memorandum in Support (“Memorandum”), filed by the Plaintiff, Recovery Limited Partnership (“RLP”), on September 5, 2014. ECF Nos. 139, 140.1 The Motion is now ripe for decision2 and, for the reasons set forth below,",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "11年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 10630023,
+      "case_name": "Julius Copeland v. WRBM, LLC, d/b/a Western Rivers Boat Management, Inc.",
+      "court": "Missouri Court of Appeals",
+      "court_id": "moctapp",
+      "date_filed": "2023-07-25",
+      "docket": "ED111141",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10630023/julius-copeland-v-wrbm-llc-dba-western-rivers-boat-management-inc/",
+      "suit_nature": "",
+      "snippet": "In the Missouri Court of Appeals\n                          Eastern District\n                                            DIVISION THREE\n\nJULIUS COPELAND,                                    )        No. ED111141\n                                                    )\n        Appellant,                                  )\n                                                    )        App",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 5447580,
+      "case_name": "In re Blanchard Refining Galveston Bay Refinery FCCU3 Fire Litigation",
+      "court": "Texas Judicial Panel on Multidistrict Litigation",
+      "court_id": "texjpml",
+      "date_filed": "2016-08-25",
+      "docket": "No. 16-0375",
+      "cite_count": 0,
+      "citation": [
+        "506 S.W.3d 204",
+        "2016 Tex. LEXIS 703",
+        "2016 WL 7742755"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5447580/in-re-blanchard-refining-galveston-bay-refinery-fccu3-fire-litigation/",
+      "suit_nature": "",
+      "snippet": "*205ON REVIEW BY THE MULTIDIS-TRICT LITIGATION PANEL\nPER CURIAM\nDefendants Marathon Petroleum Company LP (“Marathon Petroleum”), Marathon Petroleum Logistics Services LLC, Innovative Ventilation Systems, Inc., Al-tairStrickland, LLC, and Certified Safety, Inc. have filed a motion to transfer the following cases to a multidistrict litigation (“MDL”)",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 5307649,
+      "case_name": "United Food & Commercial Workers v. OSHA",
+      "court": "Court of Appeals for the Sixth Circuit",
+      "court_id": "ca6",
+      "date_filed": "2021-12-17",
+      "docket": "21-4094",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/5307649/united-food-commercial-workers-v-osha/",
+      "suit_nature": "",
+      "snippet": "RECOMMENDED FOR PUBLICATION\n                                   Pursuant to Sixth Circuit I.O.P. 32.1(b)\n                                          File Name: 21a0287p.06\n\n                       UNITED STATES COURT OF APPEALS\n                                      FOR THE SIXTH CIRCUIT\n\n\nIN RE: MCP NO. 165, OCCUPATIONAL SAFETY AND HEALTH ADMINISTRATION,            ┐",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 10290299,
+      "case_name": "Johnson v. Cincy Automall, Inc.",
+      "court": "Ohio Court of Appeals",
+      "court_id": "ohioctapp",
+      "date_filed": "2024-12-09",
+      "docket": "CA2024-02-033",
+      "cite_count": 0,
+      "citation": [
+        "2024 Ohio 5749"
+      ],
+      "url": "https://www.courtlistener.com/opinion/10290299/johnson-v-cincy-automall-inc/",
+      "suit_nature": "",
+      "snippet": "[Cite as Johnson v. Cincy Automall, Inc., 2024-Ohio-5749.]\n\n\n\n\n                                   IN THE COURT OF APPEALS\n\n                          TWELFTH APPELLATE DISTRICT OF OHIO\n\n                                           BUTLER COUNTY\n\n\n\n\n SANDRA JOHNSON,                                      :\n                                                             CASE NO. CA2024-02-033\n        Appell",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 7336021,
+      "case_name": "In re McNeilus Manufacturing Explosion Coordinated Litigation",
+      "court": "District Court, D. Maine",
+      "court_id": "med",
+      "date_filed": "2019-05-17",
+      "docket": "Case No. 17-cv-5237-PJS-KMM",
+      "cite_count": 0,
+      "citation": [
+        "381 F. Supp. 3d 1075"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7336021/in-re-mcneilus-manufacturing-explosion-coordinated-litigation/",
+      "suit_nature": "",
+      "snippet": "Katherine Menendez, United States Magistrate Judge\nThis matter is before the Court on Swagelok Company's and San Diego Valve and Fitting Company's (\"San Diego Valve\") Joint Motion to Certify Question to Minnesota Supreme Court and to Stay Proceedings.1 [ECF No. 131.] For the reasons that follow, Swagelok and San Diego's joint motion is denied.\nI. Relevant Factual Background",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 5306593,
+      "case_name": "United Food & Commercial Workers v. OSHA",
+      "court": "Court of Appeals for the Sixth Circuit",
+      "court_id": "ca6",
+      "date_filed": "2021-12-15",
+      "docket": "21-4094",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/5306593/united-food-commercial-workers-v-osha/",
+      "suit_nature": "",
+      "snippet": "RECOMMENDED FOR PUBLICATION\n                                   Pursuant to Sixth Circuit I.O.P. 32.1(b)\n                                          File Name: 21a0283p.06\n\n                       UNITED STATES COURT OF APPEALS\n                                      FOR THE SIXTH CIRCUIT\n\n\nIN RE: MCP NO. 165, OCCUPATIONAL SAFETY AND HEALTH ADMINISTRATION,            ┐",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 5889219,
+      "case_name": "Conklin v. Triborough Bridge & Tunnel Authority",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2008-03-11",
+      "docket": "",
+      "cite_count": 21,
+      "citation": [
+        "49 A.D.3d 320",
+        "855 N.Y.2d 54"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5889219/conklin-v-triborough-bridge-tunnel-authority/",
+      "suit_nature": "",
+      "snippet": "Flaintiff alleges that he was injured when he slipped on a *321“chicken ladder” or “makeshift ladder,” consisting of two parallel wooden planks with two-by-fours nailed across them at regular intervals, which was placed on sloped ground to function as a ramp, and which provided the sole means of access to his employer’s shanty. As a ramp, the “chicken ladder” presented a risk covered by Labor Law",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "やや知られている (citeCount=21, +1)",
+        "具体的な被害語: injured (+0.5)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 9430451,
+      "case_name": "Oroville Dam Cases",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2023-10-05",
+      "docket": "C093600",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/9430451/oroville-dam-cases/",
+      "suit_nature": "",
+      "snippet": "Filed 10/5/23\n\n                           CERTIFIED FOR PUBLICATION\n\n\n\n\n                IN THE COURT OF APPEAL OF THE STATE OF CALIFORNIA\n                            THIRD APPELLATE DISTRICT\n                                      (Sacramento)\n                                           ----\n\n\n\n\n OROVILLE DAM CASES                                                C093600",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 5300472,
+      "case_name": "G.T. Issa Construction, LLC v. Bonnie Blalock",
+      "court": "Court of Appeals of Tennessee",
+      "court_id": "tennctapp",
+      "date_filed": "2021-11-23",
+      "docket": "E2020-00853-COA-R3-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/5300472/gt-issa-construction-llc-v-bonnie-blalock/",
+      "suit_nature": "",
+      "snippet": "11/23/2021\n                IN THE COURT OF APPEALS OF TENNESSEE\n                           AT KNOXVILLE\n                                August 18, 2021 Session\n\n          G.T. ISSA CONSTRUCTION, LLC v. BONNIE BLALOCK\n\n                 Appeal from the Circuit Court for Hamilton County\n                    No.",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 4648746,
+      "case_name": "Clark v. Dept. of Transp.",
+      "court": "Ohio Court of Claims",
+      "court_id": "ohioctcl",
+      "date_filed": "2019-07-10",
+      "docket": "2015-00099JD",
+      "cite_count": 0,
+      "citation": [
+        "2019 Ohio 3264"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4648746/clark-v-dept-of-transp/",
+      "suit_nature": "",
+      "snippet": "[Cite as Clark v. Dept. of Transp., 2019-Ohio-3264.]\n\n\n\nMICHAEL A. CLARK, Admr.                                Case No. 2015-00099JD\n\n         Plaintiff                                     Judge Patrick M. McGrath\n\n         v.                                            DECISION\n\nOHIO DEPARTMENT OF\nTRANSPORTATION\n\n         Defendant\n\n\n         {¶1} Before the court is defendant Ohio Department of T",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 4539133,
+      "case_name": "John Pugno v. Blue Harvest Farms LLC",
+      "court": "Michigan Court of Appeals",
+      "court_id": "michctapp",
+      "date_filed": "2018-09-27",
+      "docket": "340142",
+      "cite_count": 90,
+      "citation": [
+        "930 N.W.2d 393",
+        "326 Mich. App. 1"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4539133/john-pugno-v-blue-harvest-farms-llc/",
+      "suit_nature": "",
+      "snippet": "Cameron, J.\n \n\n\n   *5\n  \n  In this negligence case, a jury awarded a total judgment of $358,288.98 in favor of plaintiffs, John and Ailene Pugno.\n  \n   1\n  \n  Defendant, Blue Harvest Farms, LLC, appeals the trial court's order denying its motion for a new trial",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 7479158,
+      "case_name": "Greater Harvest Global Ministries, Inc. v. Heating",
+      "court": "Supreme Court of North Carolina",
+      "court_id": "nc",
+      "date_filed": "2019-01-30",
+      "docket": "No. 219P18",
+      "cite_count": 0,
+      "citation": [
+        "822 S.E.2d 644"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7479158/greater-harvest-global-ministries-inc-v-heating/",
+      "suit_nature": "",
+      "snippet": "Upon consideration of the notice of appeal from the North Carolina Court of Appeals, filed by Plaintiff on the 10th of July 2018 in this matter pursuant to G.S. 7A-30 (substantial constitutional question), the following order was entered and is hereby certified to the North Carolina Court of Appeals: the notice of appeal is\n\"Dismissed Ex Mero Motu by order of the Court in conference, this the 30t",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 4435754,
+      "case_name": "Pesticide Action Network etc. v. Cal. Dept. of Pesticide Reg.",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2017-10-19",
+      "docket": "A145632M",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4435754/pesticide-action-network-etc-v-cal-dept-of-pesticide-reg/",
+      "suit_nature": "",
+      "snippet": "Filed 10/19/17 (unmodified opn. attached)\n                                CERTIFIED FOR PUBLICATION\n\n\n             IN THE COURT OF APPEAL OF THE STATE OF CALIFORNIA\n\n                                   FIRST APPELLATE DISTRICT\n\n                                            DIVISION THREE\n\n PESTICIDE ACTION NETWORK\n NORTH AMERICA et al.,\n          Plaintiffs and Appellants,                  A145632",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 4427366,
+      "case_name": "Pesticide Action Network etc. v. Cal. Dept. of Pesticide Reg.",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2017-09-19",
+      "docket": "A145632",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4427366/pesticide-action-network-etc-v-cal-dept-of-pesticide-reg/",
+      "suit_nature": "",
+      "snippet": "Filed 9/19/17\n                            CERTIFIED FOR PUBLICATION\n\n                IN THE COURT OF APPEAL OF THE STATE OF CALIFORNIA\n\n                              FIRST APPELLATE DISTRICT\n\n                                       DIVISION THREE\n\n\n PESTICIDE ACTION NETWORK\n NORTH AMERICA et al.,\n          Plaintiffs and Appellants,              A145632\n\n v.",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 5091896,
+      "case_name": "Vasquez v. Dept. of Pesticide Regulation",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2021-09-08",
+      "docket": "A154922",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/5091896/vasquez-v-dept-of-pesticide-regulation/",
+      "suit_nature": "",
+      "snippet": "Filed 9/8/21\n                      CERTIFIED FOR PUBLICATION\n\n        IN THE COURT OF APPEAL OF THE STATE OF CALIFORNIA\n\n                        FIRST APPELLATE DISTRICT\n\n                                DIVISION ONE\n\n\n JUANA VASQUEZ ET AL.,\n         Plaintiffs and Respondents,\n                                             A154922\n v.\n DEPARTMENT OF PESTICIDE                     (Alameda County\n REG",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 9425022,
+      "case_name": "Wright v. Office of Wage Hour",
+      "court": "District of Columbia Court of Appeals",
+      "court_id": "dc",
+      "date_filed": "2023-09-07",
+      "docket": "22-AA-0225",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/9425022/wright-v-office-of-wage-hour/",
+      "suit_nature": "",
+      "snippet": "Notice: This opinion is subject to formal revision before publication in the\nAtlantic and Maryland Reporters. Users are requested to notify the Clerk of the\nCourt of any formal errors so that corrections may be made before the bound\nvolumes go to press.\n\n             DISTRICT OF COLUMBIA COURT OF APPEALS\n\n                                 No. 22-AA-0225\n\n                       RAHAMA WRIGHT et al.,",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "3年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 4578373,
+      "case_name": "Caltec AG v. Dept. of Pesticide Regulation",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2019-01-02",
+      "docket": "F074334",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4578373/caltec-ag-v-dept-of-pesticide-regulation/",
+      "suit_nature": "",
+      "snippet": "Filed 1/2/19\n\n\n\n\n                      CERTIFIED FOR PARTIAL PUBLICATION*\n\n\n               IN THE COURT OF APPEAL OF THE STATE OF CALIFORNIA\n\n                               FIFTH APPELLATE DISTRICT\n\nCALTEC AG,\n                                                                   F074334\n    Plaintiff and Appellant,\n                                                           (Super. Ct. No. 2016497)",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 9484716,
+      "case_name": "seedway v. northeast agricultural",
+      "court": "Vermont Superior Court",
+      "court_id": "vtsuperct",
+      "date_filed": "2024-03-15",
+      "docket": "23-cv-4901",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/9484716/seedway-v-northeast-agricultural/",
+      "suit_nature": "",
+      "snippet": "Vermont Superior Court\n                                                                                                           Filed 02/02 24\n                                                                                                            Caledonia nit\n\n\n\n\nVERMONT SUPERIOR COURT",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 10798047,
+      "case_name": "In re Recall of Inslee",
+      "court": "Washington Supreme Court",
+      "court_id": "wash",
+      "date_filed": "2023-01-19",
+      "docket": "101,117-2",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10798047/in-re-recall-of-inslee/",
+      "suit_nature": "",
+      "snippet": "NOTICE: SLIP OPINION\n                      (not the court’s final written decision)\n\n\nThe opinion that begins on the next page is a slip opinion. Slip opinions are the\nwritten opinions that are originally filed by the court.\nA slip opinion is not necessarily the court’s final written decision. Slip opinions\ncan be changed by subsequent court orders. For example, a cour",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 6444255,
+      "case_name": "Pedicone Thompson/Center Arms Company",
+      "court": "Superior Court of Delaware",
+      "court_id": "delsuperct",
+      "date_filed": "2022-02-21",
+      "docket": "N17C-11-264 WCC",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/6444255/pedicone-thompsoncenter-arms-company/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPERIOR COURT OF THE STATE OF DELAWARE\n\n JOSEPH J. PEDICONE, III and    )\n HILMA L. PEDICONE, H/W,        )\n                                )\n                    Plaintiffs, )\n     v.                         )          C.A. No. N17C-11-264 WCC\n                                )\n THOMPSON/CENTER ARMS           )\n COMPANY, LLC F/K/A             )\n THOMPSON/CENTER ARMS           )\n COMPA",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 4888344,
+      "case_name": "Shealy v. Boston Scientific Corporation",
+      "court": "Superior Court of Delaware",
+      "court_id": "delsuperct",
+      "date_filed": "2021-06-01",
+      "docket": "N21C-01-068 PEL",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4888344/shealy-v-boston-scientific-corporation/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPERIOR COURT OF THE STATE OF DELAWARE\n\nIzabella Shealy,                             )\n                                             )\n                Plaintiff,                   )\n                                             )     C.A. No.: N21C-01-068 PEL\n       v.                                    )\n                                             )\nBoston Scientific Corporatio",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 4731637,
+      "case_name": "Kumaritakis v. AstraZenecaPharmaceuticals, LP",
+      "court": "Superior Court of Delaware",
+      "court_id": "delsuperct",
+      "date_filed": "2020-03-02",
+      "docket": "N19C-10-177 FAR",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4731637/kumaritakis-v-astrazenecapharmaceuticals-lp/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPERIOR COURT OF THE STATE OF DELAWARE\n\nVIOLA KUMARITAKIS, )\nPlaintiff,\n\nV. C.A. No.: N19C-10-177 FAR\nASTRAZENECA\nPHARMACEUTICALS, LP )\nDefendant.\nORDER\n\nThis 2nd day of March, 2020, upon consideration of Defendant AstraZeneca\nPharmaceutical’s (“Defendant”) Motion to Dismiss pursuant to Superior Court Civil\nRule 12(b)(6),' Plaintiff Viola Kumaritakis’ (“Plaintiff”) Response,” Defendant’s\nR",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "6年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 4882633,
+      "case_name": "Gunter v. Boston Scientific Corporation",
+      "court": "Superior Court of Delaware",
+      "court_id": "delsuperct",
+      "date_filed": "2021-05-12",
+      "docket": "N20C-11-032 PEL",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4882633/gunter-v-boston-scientific-corporation/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPERIOR COURT OF THE STATE OF DELAWARE\n\nZELDA GUNTER AND                             )\nLONNIE GUNTER,                               )\n                                             )\n                Plaintiff,                   )\n                                             )     C.A. No.: N20C-11-032 PEL\n       v.                                    )",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 10644420,
+      "case_name": "R.J. Reynolds Tobacco Company v. Jennifer Rey",
+      "court": "District Court of Appeal of Florida",
+      "court_id": "fladistctapp",
+      "date_filed": "2025-07-30",
+      "docket": "3D2023-1015",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/10644420/rj-reynolds-tobacco-company-v-jennifer-rey/",
+      "suit_nature": "",
+      "snippet": "Third District Court of Appeal\n                               State of Florida\n\n                          Opinion filed July 30, 2025.\n       Not final until disposition of timely filed motion for rehearing.\n\n                            ________________\n\n                             No. 3D23-1015\n                       Lower Tribunal No. 07-46340\n                          ________________",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "1年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 4882907,
+      "case_name": "Barnett v. Boston Scientific Corporation",
+      "court": "Superior Court of Delaware",
+      "court_id": "delsuperct",
+      "date_filed": "2021-05-13",
+      "docket": "N20C-12-076 PEL",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4882907/barnett-v-boston-scientific-corporation/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPERIOR COURT OF THE STATE OF DELAWARE\n\nJulia Barnett and Tim McCurty,               )\n                                             )\n                Plaintiff,                   )\n                                             )     C.A. No.: N20C-12-076 PEL\n       v.                                    )\n                                             )\nBoston Scientific Corporatio",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "5年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 4463584,
+      "case_name": "Samuel Medina, Obdulia Medina, Natalye Medina, and Navil Gibson v. Michelin North America, Inc., and Jose Bustillo D/B/A Mundo Cars",
+      "court": "Texas Court of Appeals, 5th District (Dallas)",
+      "court_id": "txctapp5",
+      "date_filed": "2018-01-29",
+      "docket": "05-16-00794-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4463584/samuel-medina-obdulia-medina-natalye-medina-and-navil-gibson-v-michelin/",
+      "suit_nature": "",
+      "snippet": "Affirm in part, Reverse and Remand in part; Opinion Filed January 29, 2018.\n\n\n\n\n                                             In The\n                                Court of Appeals\n                         Fifth District of Texas at Dallas\n                                      No. 05-16-00794-CV\n\n             SAMUEL MEDINA, OBDULIA MEDINA, NATALYE MEDINA,\n                       AND NAVIL GIBSON, A",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "9年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 6467488,
+      "case_name": "Kaur v. Boston Scientific Corporation",
+      "court": "Superior Court of Delaware",
+      "court_id": "delsuperct",
+      "date_filed": "2022-05-11",
+      "docket": "N19C-07-117 PEL",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/6467488/kaur-v-boston-scientific-corporation/",
+      "suit_nature": "",
+      "snippet": "IN THE SUPERIOR COURT OF THE STATE OF DELAWARE\n\nKULWINDER KAUR,            )\n                           )\n        Plaintiff,         )\n                           )\n    v.                     )               C.A. No.: N19C-07-117 PEL\n                           )\nBOSTON SCIENTIFIC          )\nCORPORATION (d/b/a/        )\nMANSFIELD SCIENTIFIC, INC. )\n& MICROVASIVE INC.),       )",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.5,
+      "reasons": [
+        "4年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 177917,
+      "case_name": "International Union, United Mine Workers v. Mine Safety & Health Administration",
+      "court": "Court of Appeals for the D.C. Circuit",
+      "court_id": "cadc",
+      "date_filed": "2010-10-26",
+      "docket": "09-1014",
+      "cite_count": 30,
+      "citation": [
+        "626 F.3d 84",
+        "393 U.S. App. D.C. 200",
+        "2010 U.S. App. LEXIS 21976",
+        "2010 WL 4180677"
+      ],
+      "url": "https://www.courtlistener.com/opinion/177917/international-union-united-mine-workers-v-mine-safety-health/",
+      "suit_nature": "",
+      "snippet": "626 F.3d 84 (2010)\nINTERNATIONAL UNION, UNITED MINE WORKERS OF AMERICA, Petitioner\nv.\nMINE SAFETY AND HEALTH ADMINISTRATION, et al., Respondents.\nNational Mining Association, Intervenor.\nNo. 09-1014.\nUnited States Court of Appeals, District of Columbia Circuit.\nArgued September 13, 2010.\nDecided October 26, 2010.\n*8",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 1.0,
+      "reasons": [
+        "やや知られている (citeCount=30, +1)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 2883425,
+      "case_name": "Charles T. Merrell, Sr., as Wrongful Death Beneficiary of Charles Thomas Merrell, II, and as Representative of the Estate of Charles Thomas Merrell, II, and Jane Cerverny, as Wrongful Death Beneficiary of Charles Thomas Merrell, II v. Wal-Mart Stores, Inc.",
+      "court": "Texas Court of Appeals, 6th District (Texarkana)",
+      "court_id": "txctapp6",
+      "date_filed": "2008-12-16",
+      "docket": "06-07-00122-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/2883425/charles-t-merrell-sr-as-wrongful-death-beneficiary-of-charles-thomas/",
+      "suit_nature": "",
+      "snippet": "In The\n                 Court of Appeals\n   Sixth Appellate District of Texas at Texarkana\n\n            ______________________________\n\n                  No. 06-07-00122-CV\n            ______________________________\n\n\n    CHARLES T. MERRELL, SR., AS WRONGFUL DEATH\n    BENEFICIARY OF CHARLES THOMAS MERRELL, II,\n  DECEASED AND AS REPRESENTATIVE OF THE ESTATE\n   OF CHARLES THOM",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.5,
+      "reasons": [
+        "具体的な被害語: death (+0.5)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 4618798,
+      "case_name": "Jose Carmona v. Leo Ship Management, Inc.",
+      "court": "Court of Appeals for the Fifth Circuit",
+      "court_id": "ca5",
+      "date_filed": "2019-05-10",
+      "docket": "18-20248",
+      "cite_count": 119,
+      "citation": [
+        "924 F.3d 190"
+      ],
+      "url": "https://www.courtlistener.com/opinion/4618798/jose-carmona-v-leo-ship-management-inc/",
+      "suit_nature": "Private Civil Diversity",
+      "snippet": "JERRY E. SMITH, Circuit Judge:\n \n\n  Jose Carmona was injured while unloading cargo from a vessel docked outside Houston. He sued Leo Ship Management, Inc. (\"LSM\"), a foreign corporation that managed the ship. Noting that LSM had no control over the ship's ports of call, the district court dismissed for want of personal jurisdiction, holding that the company did not purposely avail itself of",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "著名判例 — 既出だらけ (citeCount=119, -2)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "具体的な被害語: injured (+0.5)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 2655403,
+      "case_name": "Barlow v. Liberty Maritime",
+      "court": "Court of Appeals for the Second Circuit",
+      "court_id": "ca2",
+      "date_filed": "2014-03-04",
+      "docket": "13-0254-cv",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/2655403/barlow-v-liberty-maritime/",
+      "suit_nature": "",
+      "snippet": "13‐0254‐cv \n       Barlow v. Liberty Maritime, et al. \n\n\n\n\n13-0254-cv\nBarlow v. Liberty Maritime, et al. \n                                        \n                    UNITED STATES COURT OF APPEALS \n                         FOR THE SECOND CIRCUIT \n                                                                 \n                                        \n                             August Te",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 5046017,
+      "case_name": "In Re Gramercy Plant Explosion at Kaiser.",
+      "court": "Supreme Court of Louisiana",
+      "court_id": "la",
+      "date_filed": "2010-09-24",
+      "docket": "No. 2010-CC-1438",
+      "cite_count": 0,
+      "citation": [
+        "45 So. 3d 1083",
+        "2010 La. LEXIS 2195",
+        "2010 WL 3991569"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5046017/in-re-gramercy-plant-explosion-at-kaiser/",
+      "suit_nature": "",
+      "snippet": "Denied.\nVICTORY, J., would grant.",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 5055618,
+      "case_name": "In re Gramercy Plant Explosion at Kaiser",
+      "court": "Supreme Court of Louisiana",
+      "court_id": "la",
+      "date_filed": "2009-05-15",
+      "docket": "No. 2009-OC-388",
+      "cite_count": 0,
+      "citation": [
+        "8 So. 3d 572",
+        "2009 La. LEXIS 1545",
+        "2009 WL 1514320"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5055618/in-re-gramercy-plant-explosion-at-kaiser/",
+      "suit_nature": "",
+      "snippet": "In re Allianz Insurance Co.; AXA Global Risks (U.K.); Certain Underwriters at Lloyd’s London’s; Compagnie Transconti-nentale De Reassurance; Compagnie Transcontinentale De Reassurance; Hayes, Terrance; Houston Casualty Co.; Kaiser Alumina & Chemical Corp.; Lexington Insurance Co.; Munich Reinsurance Co.; National Union Fire Ins. Co.; Q.B.E. International Ins. Ltd.; Qatar Insurance Co.; Sorema Ins",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 5047248,
+      "case_name": "In Re Gramercy Plant Explosion at Kaiser.",
+      "court": "Supreme Court of Louisiana",
+      "court_id": "la",
+      "date_filed": "2009-04-13",
+      "docket": "No. 2009-OC-0388",
+      "cite_count": 0,
+      "citation": [
+        "5 So. 3d 151",
+        "2009 La. LEXIS 1440",
+        "2009 WL 1039404"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5047248/in-re-gramercy-plant-explosion-at-kaiser/",
+      "suit_nature": "",
+      "snippet": "Not considered, not timely filed. See Supreme Court Rule X, section 5.",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 5046014,
+      "case_name": "In re Gramercy Plant Explosion at Kaiser",
+      "court": "Supreme Court of Louisiana",
+      "court_id": "la",
+      "date_filed": "2010-09-24",
+      "docket": "No. 2010-CC-1424",
+      "cite_count": 0,
+      "citation": [
+        "45 So. 3d 1082",
+        "2010 La. LEXIS 2205",
+        "2010 WL 3991503"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5046014/in-re-gramercy-plant-explosion-at-kaiser/",
+      "suit_nature": "",
+      "snippet": "In re Federal Insurance Company;— Plaintiff; Applying For Supervisory and/or Remedial Writs, Parish of St. James, 23rd Judicial District Court Div. A, No. 25,975; to the Court of Appeal, Fifth Circuit, No. 10-C-240.\nDenied.\nVICTORY, J., would grant.",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "industrial_death",
+      "lane_label": "工場で死んだ — OSHAと企業",
+      "cluster_id": 1921656,
+      "case_name": "In Re Gramercy Plant Explosion at Kaiser",
+      "court": "Supreme Court of Louisiana",
+      "court_id": "la",
+      "date_filed": "2008-06-20",
+      "docket": "2008-CC-0481",
+      "cite_count": 0,
+      "citation": [
+        "983 So. 2d 1263",
+        "2008 WL 2627144"
+      ],
+      "url": "https://www.courtlistener.com/opinion/1921656/in-re-gramercy-plant-explosion-at-kaiser/",
+      "suit_nature": "",
+      "snippet": "983 So.2d 1263 (2008)\nIn re GRAMERCY PLANT EXPLOSION AT KAISER.\nNo. 2008-CC-0481.\nSupreme Court of Louisiana.\nJune 20, 2008.\nIn re Hayes, Terrance, Kaiser Alumina & Chemical Corporation, AXA Global Risks (U.K.) et al.;Plaintiff(s); Applying for Reconsideration of this Courts order dated May 2, 2008; Parish of St. James, 23rd Judicial District Court Div. D, No. 25,975;",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 5941093,
+      "case_name": "Martin v. Triborough Bridge & Tunnel Authority",
+      "court": "Appellate Division of the Supreme Court of the State of New York",
+      "court_id": "nyappdiv",
+      "date_filed": "2010-05-11",
+      "docket": "",
+      "cite_count": 0,
+      "citation": [
+        "73 A.D.3d 481",
+        "901 N.Y.S.2d 193"
+      ],
+      "url": "https://www.courtlistener.com/opinion/5941093/martin-v-triborough-bridge-tunnel-authority/",
+      "suit_nature": "",
+      "snippet": "*482Judgment, Supreme Court, New York County (Eileen A. Rakower, J.), entered April 10, 2009, upon a jury verdict in favor of Triborough Bridge and Tunnel Authority (TBTA), the only remaining defendant in this action, affirmed, without costs.\nThe trial court properly exercised its discretion in denying plaintiffs application to preclude TBTA from introducing the expert testimony",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 3094392,
+      "case_name": "Theodore Floyd Levee v. Cathey June Levee",
+      "court": "Texas Court of Appeals, 2nd District (Fort Worth)",
+      "court_id": "txctapp2",
+      "date_filed": "2014-02-20",
+      "docket": "02-12-00392-CV",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/3094392/theodore-floyd-levee-v-cathey-june-levee/",
+      "suit_nature": "",
+      "snippet": "COURT OF APPEALS\n                         SECOND DISTRICT OF TEXAS\n                                   FORT WORTH\n\n                               NO. 02-12-00392-CV\n\n\nTHEODORE FLOYD LEVEE                                                APPELLANT\n\n                                          V.\n\nCATHEY JUNE LEVEE                                                     APPELLEE",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 3888742,
+      "case_name": "Harvest v. Professional Heating",
+      "court": "North Carolina Industrial Commission",
+      "court_id": "ncworkcompcom",
+      "date_filed": "2009-09-01",
+      "docket": "I.C. NO. 860446.",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/3888742/harvest-v-professional-heating/",
+      "suit_nature": "",
+      "snippet": "***********\nThe Full Commission has reviewed the prior Opinion and Award based upon the record of the proceedings before Deputy Commissioner Deluca and the briefs and arguments before the Full Commission. The appealing party has shown good grounds to reconsider the evidence. The Full Commission REVERSES the Opinion and Award of Deputy Commissioner Deluca.",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "product_recall",
+      "lane_label": "これを売り続けた — リコールされなかったもの",
+      "cluster_id": 2671093,
+      "case_name": "Scott v. Ford Motor Co.",
+      "court": "California Court of Appeal",
+      "court_id": "calctapp",
+      "date_filed": "2014-04-23",
+      "docket": "A137975M",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/2671093/scott-v-ford-motor-co/",
+      "suit_nature": "",
+      "snippet": "Filed 4/23/14 Unmodfied version attached\n                       CERTIFIED FOR PARTIAL PUBLICATION*\n\n             IN THE COURT OF APPEAL OF THE STATE OF CALIFORNIA\n\n                                  FIRST APPELLATE DISTRICT\n\n                                           DIVISION ONE\n\n\nPATRICK SCOTT et al.,                               A137975\n        Plaintiffs and Appellants,",
+      "person_vs_state": false,
+      "corporate_only": false,
+      "score": 0.0,
+      "reasons": [
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "mine_safety",
+      "lane_label": "鉱山災害 — 危険を知っていた",
+      "cluster_id": 4675547,
+      "case_name": "Mine Temp, LLC v. Wells Fargo Insurance Services",
+      "court": "West Virginia Supreme Court",
+      "court_id": "wva",
+      "date_filed": "2019-11-04",
+      "docket": "18-0755",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/4675547/mine-temp-llc-v-wells-fargo-insurance-services/",
+      "suit_nature": "Tort, Contract, and Real Property",
+      "snippet": "STATE OF WEST VIRGINIA\n                           SUPREME COURT OF APPEALS\n\nMine Temp, LLC,\nPlaintiff Below, Petitioner                                                       FILED\n                                                                              November 4, 2019\nvs) No. 18-0755 (Barbour County 10-C-23)                                        EDYTHE NASH GAIS",
+      "person_vs_state": false,
+      "corporate_only": true,
+      "score": -2.5,
+      "reasons": [
+        "両当事者が法人 — 商事紛争 (-4)",
+        "7年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "maritime",
+      "lane_label": "海難 — 海で死んだ人",
+      "cluster_id": 7322147,
+      "case_name": "Sunglory Maritime, Ltd. v. PHI, Inc.",
+      "court": "District Court, E.D. Louisiana",
+      "court_id": "laed",
+      "date_filed": "2016-09-09",
+      "docket": "CIVIL ACTION CASE NO. 15-896",
+      "cite_count": 0,
+      "citation": [
+        "212 F. Supp. 3d 618",
+        "2016 U.S. Dist. LEXIS 186425",
+        "2016 WL 8229281"
+      ],
+      "url": "https://www.courtlistener.com/opinion/7322147/sunglory-maritime-ltd-v-phi-inc/",
+      "suit_nature": "",
+      "snippet": "SECTION: “G” (5)\nJUDGMENT AND REASONS\nNANNETTE JOLIVETTE BROWN, UNITED STATES DISTRICT JUDGE\nThis matter came before the Court for trial without a jury from March 17, 2016, to March 18, 2016.1 The Court has subject matter jurisdiction over this action pursuant to 28 U.S.C. § 1333, which confers on the federal district courts original jurisdiction over admiralt",
+      "person_vs_state": false,
+      "corporate_only": true,
+      "score": -2.5,
+      "reasons": [
+        "両当事者が法人 — 商事紛争 (-4)",
+        "10年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "infrastructure",
+      "lane_label": "インフラの崩壊 — 橋・ダム・トンネル",
+      "cluster_id": 9998459,
+      "case_name": "Figg Bridge Builders, LLC v. Cline Avenue Bridge, LLC and United Bridge Operating, LLC",
+      "court": "Indiana Court of Appeals",
+      "court_id": "indctapp",
+      "date_filed": "2024-07-09",
+      "docket": "23A-PL-02807",
+      "cite_count": 0,
+      "citation": [],
+      "url": "https://www.courtlistener.com/opinion/9998459/figg-bridge-builders-llc-v-cline-avenue-bridge-llc-and-united-bridge/",
+      "suit_nature": "",
+      "snippet": "IN THE\n\n            Court of Appeals of Indiana\n                                                                                           FILED\n                                  Figg Bridge Builders, LLC,                        Jul 09 2024, 10:30 am\n\n                                                                                           CLERK",
+      "person_vs_state": false,
+      "corporate_only": true,
+      "score": -2.5,
+      "reasons": [
+        "両当事者が法人 — 商事紛争 (-4)",
+        "2年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    },
+    {
+      "lane": "farm_labor",
+      "lane_label": "農場の労働 — 採む人",
+      "cluster_id": 8398655,
+      "case_name": "Greater Harvest Global Ministries, Inc. v. Blackwell Heating & Air Conditioning, Inc.",
+      "court": "Court of Appeals of North Carolina",
+      "court_id": "ncctapp",
+      "date_filed": "2018-06-05",
+      "docket": "No. COA17-630",
+      "cite_count": 0,
+      "citation": [
+        "814 S.E.2d 484"
+      ],
+      "url": "https://www.courtlistener.com/opinion/8398655/greater-harvest-global-ministries-inc-v-blackwell-heating-air/",
+      "suit_nature": "",
+      "snippet": "AFFIRMED.",
+      "person_vs_state": false,
+      "corporate_only": true,
+      "score": -2.5,
+      "reasons": [
+        "両当事者が法人 — 商事紛争 (-4)",
+        "8年前 — 当事者と資料が生きている (+1.5)",
+        "抽象的 — 何が起きたか読み取れない (0)"
+      ]
+    }
+  ]
+}

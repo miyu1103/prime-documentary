@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 196,
+  "episode_id": "PD-2026-035-hinders",
+  "slug": "hinders",
+  "loop": true,
+  "loop_join": "The last beat p25 returns to short196_01.png, two plain wooden chairs facing each other in an empty room with light falling through a small window, rewound under the FULL CASE card and held to the end; frame 0 is that same room, so the loop rejoins on an identical image.",
+  "second_watch_detail": "The two empty chairs read as an interview room on the first pass; after L1 and L7 they read as the two owners with the same law and opposite endings, one of them paid and one of them not.",
+  "funnel_question_left_for_longform": "Why did two words in a dismissal order decide which of them the law would make whole?",
+  "funnel_long_title": "She Banked Under $10,000. The IRS Took $32,820.",
+  "funnel_long_video_id": "Xc_PxdC_75c",
+  "description_line_1": "▶ FULL CASE: She Banked Under $10,000. The IRS Took $32,820. | https://youtu.be/Xc_PxdC_75c",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "Following the deposit rule is what",
+    "ctaLongThumbSrc": "shorts/short196/short196_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "Why did two words in a dismissal order decide which of them the law would make whole? The full case is here: https://youtu.be/Xc_PxdC_75c",
+  "note": "Record authored on 2026-09-01 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the contact sheet and the beat list in remotion/src/data/short196.ts, the CTA block from that same file, the long-form id from runs/short_funnel/episode_live_video_map.v001.json. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

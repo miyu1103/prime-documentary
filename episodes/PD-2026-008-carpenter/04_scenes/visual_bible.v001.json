@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-008-carpenter",
+  "revision": "v001",
+  "status": "draft_for_owner_review",
+  "visual_thesis": "Carpenter is not a historical courtroom story first; it is the moment the invisible map created by an ordinary phone became constitutionally legible.",
+  "palette": {
+    "base": "black and deep navy",
+    "primary_accent": "electric blue #1F6BFF",
+    "secondary_accent": "gold #E5B53A",
+    "support": "silver #C8CDD6 and white #F5F7FA"
+  },
+  "recurring_motifs": [
+    {
+      "motif_id": "location-trail",
+      "description": "A blue/gold path of points blooming on a dark map; starts as viewer-present data, becomes legal evidence, then returns as the viewer's own device."
+    },
+    {
+      "motif_id": "tower-ping",
+      "description": "Phone pings to tower sectors, then connects into a route. Render in Remotion for accurate labels and count animation."
+    },
+    {
+      "motif_id": "thin-list-vs-life-map",
+      "description": "A narrow 1970s dialed-number list contrasted with a dense modern location trail."
+    },
+    {
+      "motif_id": "moving-constitutional-line",
+      "description": "A single electric-blue line crossing body, phone contents, and phone location; used for the trilogy payoff."
+    },
+    {
+      "motif_id": "data-doors",
+      "description": "Doors labeled by data type, with location shown as the first door opened by Carpenter."
+    }
+  ],
+  "ai_visual_policy": {
+    "disclosure": "All generated or reconstructed visuals must be disclosed as AI-generated/symbolic reconstruction in the rights manifest and where context requires on-screen.",
+    "no_likeness": "Do not create an identifiable likeness of Timothy Carpenter, alleged confederates, officers, justices, store workers, or victims.",
+    "no_authenticity_claim": "Never imply generated scenes are authentic footage or documentary evidence.",
+    "image_text_rule": "Do not ask the image model to render readable text; exact text is added in Remotion."
+  },
+  "camera_and_motion": {
+    "stills": "Cinematic documentary stills with restrained 2.5D parallax, shallow depth, deep contrast, fine film grain.",
+    "graphics": "Remotion-first maps, diagrams, timelines, counters, lower thirds, chapter cards, vote graphics, and legal-standard comparisons.",
+    "motion": "Avoid flashy tech UI. Favor slow map blooms, tower pings, measured line drawing, and precise typography."
+  },
+  "prohibited_visuals": [
+    "real-person portrait likeness of Timothy Carpenter",
+    "store logos such as RadioShack or T-Mobile unless separately cleared",
+    "graphic violence or weapons pointed at camera",
+    "police hero/villain editorial framing",
+    "fake court documents with readable hallucinated text",
+    "claiming any AI scene is archival or authentic footage",
+    "any incorrect alternate vote count"
+  ],
+  "rights_and_qc_notes": [
+    "Every AI still and local SDXL/SVD output must be registered in the rights manifest before edit assembly.",
+    "Every reenactment-style image requires symbolic reconstruction labeling and human review.",
+    "All text, numbers, citations, maps, and diagrams should be Remotion-rendered for accuracy.",
+    "The 5-4 vote and ~12,898 point count are high-sensitivity accuracy checks."
+  ],
+  "image_quality_bar": {
+    "standard": "Museum-grade cinematic stills only; reject generic AI-stock, decorative, distorted, or merely adequate outputs.",
+    "minimum_acceptance_score": 92,
+    "candidate_counts": {
+      "hero": 8,
+      "tier_a": 6,
+      "tier_b": 4,
+      "tier_c": 2
+    },
+    "must_have": [
+      "clear narrative responsibility",
+      "strong focal hierarchy",
+      "brand-consistent motivated lighting",
+      "tactile material detail",
+      "safe negative space for Remotion text",
+      "no real-person likeness",
+      "no readable generated text",
+      "no logos or watermarks"
+    ],
+    "review_reference": "04_scenes/image_quality_gate.v001.md"
+  }
+}

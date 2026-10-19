@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 3/24（8枚）
+区分: ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S017.png
+   [S017]  flags: 
+   A dart room in a small club, a bright strip light overhead, boards on the wall, no one present
+
+2) S018.png
+   [S018]  flags: 
+   A narrow interior corridor in a roadside building, a ceiling light burning, a single door at the far end
+
+3) S019.png
+   [S019]  flags: 
+   A single interior door with a push bar, closed, a bright wall lamp beside it throwing hard shadow
+
+4) S020.png
+   [S020]  flags: 
+   A door closer arm at the top of a doorframe, extreme close-up, a work lamp blazing across the metal
+
+5) S021.png
+   [S021]  flags: 
+   A pair of exterior double doors seen from inside a small vestibule, brilliant daylight blowing out through the glass panels
+
+6) S022.png
+   [S022]  flags: 
+   A vestibule floor mat and threshold plate photographed from above, a bright ceiling light overhead
+
+7) S023.png
+   [S023]  flags: 
+   A single doorway seen straight on from a dark room, brilliantly lit from the vestibule beyond, the opening a hard white rectangle
+
+8) S024.png
+   [S024]  flags: 
+   A side exit door on the outside of a wood-shingled building, painted steel, a bright bulkhead lamp above it, wooden steps down to gravel

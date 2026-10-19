@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-012-arbitration",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In AT&T Mobility LLC v. Concepcion (2011) the Supreme Court held that the Federal Arbitration Act preempts state laws (such as California's 'Discover Bank' rule) that refuse to enforce class-action waivers in arbitration agreements, so companies can require individual arbitration and bar class actions.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Scalia, J.), holding"
+      ],
+      "counterevidence": [
+        "Breyer, J. dissented; the decision was 5-4."
+      ],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled companies can enforce arbitration clauses that ban class actions."
+      ],
+      "prohibited_wording": [
+        "The Court banned all lawsuits.",
+        "Arbitration clauses are illegal."
+      ],
+      "temporal_scope": "2011-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Concepcion was decided on April 27, 2011 by a 5-4 vote; the majority opinion was by Justice Antonin Scalia and the principal dissent was by Justice Stephen Breyer.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / vote / opinions"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In a 5-4 decision in 2011, Justice Scalia wrote for the Court; Justice Breyer dissented."
+      ],
+      "prohibited_wording": [
+        "The decision was unanimous."
+      ],
+      "temporal_scope": "2011",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/vote/author."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The Concepcions' dispute began over about $30 in sales tax charged on cellphones advertised as 'free'; their AT&T contract required disputes to go to individual arbitration and waived the right to bring a class action.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Opinion, facts",
+        "Oyez: facts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "It started over about thirty dollars in tax on 'free' phones; the contract required individual arbitration, no class action."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2006-2011",
+      "geographic_scope": "United States",
+      "units": "USD",
+      "status": "approved",
+      "notes": "Exact figure ~$30.22; small-claim hook."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The Federal Arbitration Act, enacted in 1925, embodies a federal policy favoring the enforcement of private arbitration agreements.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Opinion (FAA policy)",
+        "FAA enactment 1925"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "A 1925 federal law, the Arbitration Act, favors enforcing arbitration agreements."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1925-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "FAA 1925."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "In Epic Systems Corp. v. Lewis (2018), decided 5-4 with the majority opinion by Justice Neil Gorsuch, the Court extended the principle to employment, holding that contracts requiring individual arbitration and waiving class or collective actions are enforceable under the FAA and do not violate the National Labor Relations Act.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Gorsuch, J.)"
+      ],
+      "counterevidence": [
+        "Ginsburg, J. dissented."
+      ],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "In 2018, the Court extended it to the workplace: employers can require individual arbitration."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2018-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Epic Systems extension to employment."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "Mandatory pre-dispute arbitration clauses — which critics call 'forced arbitration' — appear in many consumer and employment contracts; people typically agree to them by using a product or service or taking a job, often without reading or being able to negotiate the terms.",
+      "importance": "context",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Overview of arbitration in consumer/employment contracts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "These clauses are common in everyday contracts; you usually agree just by using the service or taking the job."
+      ],
+      "prohibited_wording": [
+        "Every contract has one.",
+        "It is always hidden on purpose."
+      ],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "'Forced arbitration' = contested term; present as critics' term vs neutral 'mandatory/pre-dispute.'"
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "Critics argue that barring class actions can make small-dollar harms spread across many people practically impossible to pursue individually, and that arbitration is private and does not set legal precedent.",
+      "importance": "context",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Critics' position (attributed)"
+      ],
+      "counterevidence": [
+        "Defenders dispute these empirical claims (see CLM-0008)."
+      ],
+      "confidence": 0.8,
+      "allowed_wording": [
+        "Critics argue that without class actions, small claims become impractical to pursue."
+      ],
+      "prohibited_wording": [
+        "Arbitration always denies justice."
+      ],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "ATTRIBUTE explicitly ('critics argue'); empirical claims disputed."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "Defenders argue that arbitration is generally faster, cheaper, and less formal than court litigation, is consistent with the Federal Arbitration Act's long-standing federal policy, and that individual claimants can sometimes fare as well or better than in court.",
+      "importance": "context",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Defenders' position (attributed)"
+      ],
+      "counterevidence": [
+        "Critics dispute these empirical claims (see CLM-0007)."
+      ],
+      "confidence": 0.8,
+      "allowed_wording": [
+        "Defenders argue arbitration is faster and cheaper than court, and that the 1925 law favors it."
+      ],
+      "prohibited_wording": [
+        "Arbitration is always better for consumers."
+      ],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "ATTRIBUTE explicitly ('defenders argue'); keep balanced."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "In dissent in Concepcion, Justice Breyer argued that for many small claims the class action is the only realistic way to hold a company accountable, so barring it could leave such claims effectively unremedied.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Dissent (Breyer, J.)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Justice Breyer warned that for tiny claims, the class action may be the only practical remedy."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2011",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Dissent (balance)."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable hashes 3/4 (SRC-0003 blocked). NEUTRAL: 'forced arbitration' contested; CLM-0007/0008 attributed; empirical claims not stated as fact."
+    ]
+  }
+}

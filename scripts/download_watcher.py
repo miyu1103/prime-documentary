@@ -19,7 +19,7 @@ from datetime import datetime
 from pathlib import Path
 
 # SSD working area (machine-local; change here if the drive letter differs).
-BASE = Path(r"H:\pd-media\downloads")
+BASE = Path(r"E:\pd-media\downloads")
 INBOX = BASE / "inbox"
 DEST = {"image": BASE / "images", "music": BASE / "music", "video": BASE / "video"}
 LOGDIR = BASE / "logs"

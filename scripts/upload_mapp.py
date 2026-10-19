@@ -25,7 +25,7 @@ EPISODE_ID    = "PD-2026-003-mapp"
 EPISODE_DIR   = ROOT / "episodes" / EPISODE_ID
 META_PATH     = EPISODE_DIR / "09_package" / "youtube_meta.v001.json"
 APR_PATH      = EPISODE_DIR / "approvals" / "APR-0004.json"
-VIDEO_FILE    = Path(r"H:\pd-media\episodes\PD-2026-003-mapp\08_edit\mapp_premium_v002.mp4")
+VIDEO_FILE    = Path(r"E:\pd-media\episodes\PD-2026-003-mapp\08_edit\mapp_premium_v002.mp4")
 EXPECTED_HASH = "d153a16f08f74e0322190267d2640f88a45629dfbe69bea21d355c4f957b6abe"
 
 CHANNEL_ALLOWLIST = {"UCuQPtAz1rca9eJ4xhvX0yKA"}  # Prime Documentary

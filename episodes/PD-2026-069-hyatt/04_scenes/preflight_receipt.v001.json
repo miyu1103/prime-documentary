@@ -1,0 +1,165 @@
+{
+  "artifact_type": "preflight_render_receipt",
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-069-hyatt",
+  "generated_at": "2026-08-23T07:27:55.941528+00:00",
+  "gate": "preflight_render_gate.py",
+  "thresholds": {
+    "depth_floor_pct": 40.0,
+    "figure_beat_floor": 6,
+    "hero_surface_floor": 2,
+    "min_long_edge_px": 3840,
+    "cuts_per_graphic_max": 4
+  },
+  "inputs": {
+    "remotion_plan": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-069-hyatt\\04_scenes\\remotion_plan.v001.json",
+    "scene_plan": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-069-hyatt\\04_scenes\\scene_plan.v001.json",
+    "script_annotated": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-069-hyatt\\03_script\\script.annotated.v001.json",
+    "asset_selection": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-069-hyatt\\05_visuals\\asset_selection.v001.json",
+    "image_dir_exists": true
+  },
+  "verdict": "BLOCK",
+  "render_allowed": false,
+  "checks": [
+    {
+      "check": "script_length",
+      "status": "FAIL",
+      "detail": "4,678 words vs required 1,575-2,141 -> narrates in ~26.3 min, outside the 11.5-12.5 min band [script.en.v001.md]. LONG by 2601 words -> 26.6 min of speech, which finishes past 12.5 min even at the tightest measured pacing (1.04x). Cut, do not speed the voice."
+    },
+    {
+      "check": "motion_budget",
+      "status": "FAIL",
+      "detail": "cannot recompute motion budget -- required plan file(s) missing",
+      "subchecks": [
+        {
+          "check": "motion.inputs",
+          "status": "FAIL",
+          "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-069-hyatt\\04_scenes\\remotion_plan.v001.json"
+        },
+        {
+          "check": "motion.inputs",
+          "status": "FAIL",
+          "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-069-hyatt\\04_scenes\\scene_plan.v001.json"
+        }
+      ],
+      "recomputed": {}
+    },
+    {
+      "check": "assets_exist",
+      "status": "FAIL",
+      "detail": "referenced stills exist at 4K with depth maps for depth-treated scenes",
+      "subchecks": [
+        {
+          "check": "assets.references",
+          "status": "FAIL",
+          "detail": "no S0NN still references found in annotated/scene_plan (cannot verify prerequisites)"
+        },
+        {
+          "check": "assets.stills",
+          "status": "FAIL",
+          "detail": "0/0 referenced stills present & >= 3840px long edge; missing=none; under_res=none; unreadable=none"
+        },
+        {
+          "check": "assets.depth_maps",
+          "status": "PASS",
+          "detail": "0/0 depth maps present for depth-eligible stills; missing=0"
+        }
+      ],
+      "recomputed": {
+        "referenced_still_ids": [],
+        "referenced_still_count": 0,
+        "staged_still_files": 101,
+        "stills_present_ok": 0,
+        "stills_missing": [],
+        "stills_under_resolution": [],
+        "stills_unreadable": [],
+        "depth_eligible_still_count": 0,
+        "depth_maps_present": 0,
+        "depth_maps_missing": []
+      }
+    },
+    {
+      "check": "coverage",
+      "status": "FAIL",
+      "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-069-hyatt\\05_visuals\\asset_selection.v001.json",
+      "recomputed": {
+        "expected_span_count": 0
+      }
+    },
+    {
+      "check": "film_crosscheck",
+      "status": "FAIL",
+      "detail": "film deviates from plan: film depth share 0.0% < 40%",
+      "recomputed": {
+        "film_path": "C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\src\\data\\hyatt_film.json",
+        "film_cut_count": 292,
+        "film_kinds": {
+          "footage": 199,
+          "img": 93
+        },
+        "film_still_like_cuts": 93,
+        "film_depth_treated_cuts": 0,
+        "plan_total_cuts": 0,
+        "film_depth_pct_of_stills": 0.0
+      }
+    },
+    {
+      "check": "motion_density",
+      "status": "PASS",
+      "detail": "premium animation OK: 3.61 beats/min (>= 2.5), coverage 35.4% (>= 25%), variety 8 forms (>= 3); 102 kinetic beats [0 typo / 102 figures / 0 hero3d] vs 292 Ken-Burns cuts",
+      "density_per_min": 3.61,
+      "coverage": 0.354,
+      "variety": 8
+    },
+    {
+      "check": "animation_mix",
+      "status": "FAIL",
+      "detail": "still-dependent plan (紙芝居 risk): 92 hero stills linger > 5s (cap 8; longest 6.0s) — lingering photos, not motion"
+    },
+    {
+      "check": "asset_reuse",
+      "status": "PASS",
+      "detail": "258 distinct over 292 cuts (mean 1.13x, first-use 88%)"
+    },
+    {
+      "check": "caption_integrity",
+      "status": "PASS",
+      "detail": "caption integrity OK: burned narration captions present (casefilm_data_captions); kinetic echo 0/0 (0%) <= 40%; no bottom collision"
+    },
+    {
+      "check": "caption_breaks",
+      "status": "PASS",
+      "detail": "477 cues, no mid-phrase breaks [captions.final.v001.srt]"
+    },
+    {
+      "check": "visual_asset_qc",
+      "status": "PASS",
+      "detail": "visual-asset QC OK — factory: all 131 staged factory clips reviewed + on_theme in factory_clip_qc.v001.json | stills: stills OK: 24.8% dark (<= 40%), variety 0.96 (>= 0.60)"
+    },
+    {
+      "check": "pool_frame_review",
+      "status": "PASS",
+      "detail": "131 staged clip(s), every one carrying a per-clip verdict read from frames sampled across its own duration; binding=subset (the review names pool_id_sha256=2f8664bdf58e524b and the pool now hashes to dfe6073cd9f289ac; 467 clip(s) have been REMOVED since and none added, so every clip still staged was seen. Not an exact binding.). Reviewer: claude/prestage-content-review 2026-08-11 (round 2) 2026-08-11, and none of them is on the footage blocklist. This says who looked, not that the pool is clean."
+    },
+    {
+      "check": "plate_review",
+      "status": "PASS",
+      "detail": "127 plate(s) in the set (113 declared, 127 on disk), every one carrying a resolved per-plate verdict whose sha256 matches the file now on disk; binding=subset (the review names plate_id_sha256=(none) and this set hashes to 67fdccb614d8729f; 0 id(s) have been REMOVED since and none added, so every plate still in the set was seen. Not an exact binding.). Reviewer: Claude (Opus 5, Claude Code) 2026-08-17 10:42:18. THIS SAYS SOMEBODY SIGNED FOR EVERY PLATE. It does not say the plates are good: no pixel was examined here, and every content judgement came from that reviewer."
+    },
+    {
+      "check": "retention_cadence",
+      "status": "FAIL",
+      "detail": "no direct question for 1695s > 420s starting at 0.0min (episode poses ZERO questions)"
+    },
+    {
+      "check": "packaging_qc",
+      "status": "PASS",
+      "detail": "title 89ch <= 100, 4 A/B candidates, AI disclosure present | title contains no number (soft: CTR hint only, not enforced)"
+    },
+    {
+      "check": "encoder_settings",
+      "status": "WARN",
+      "detail": "no long-form final render resolved yet"
+    }
+  ]
+}

@@ -82,7 +82,7 @@ def main():
     }
     sc = ym["safety_checklist"]
     sc["final_cut_hash"] = cut_hash
-    sc["final_cut_path"] = f"H:/pd-media/episodes/{EP}/08_edit/gideon_premium_v001.mp4"
+    sc["final_cut_path"] = f"E:/pd-media/episodes/{EP}/08_edit/gideon_premium_v001.mp4"
     sc["final_cut_size_bytes"] = CUT.stat().st_size
     sc["title_thumbnail_content_match"] = True
     ym["publish_gate"] = "private_upload_ready"

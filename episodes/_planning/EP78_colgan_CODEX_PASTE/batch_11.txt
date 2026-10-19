@@ -1,0 +1,56 @@
+EP78_colgan — 画像発注 バッチ 11/21（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) C081.png
+   [C081]  flags: 
+   A rubber date stamp and ink pad on a bare desk in close-up, a hard lamp blazing from the side, no legible impression
+
+2) C082.png
+   [C082]  flags: 
+   A blank certificate-sized card lying on a dark desk, a hard lamp blown out just behind it, embossed border catching the light, no lettering
+
+3) C083.png
+   [C083]  flags: P
+   A turboprop flight deck seen from the jump seat in daylight, two crew from behind, brilliant cloud blowing out the windscreen
+
+4) C084.png
+   [C084]  flags: 
+   An airline employment office in daylight, a counter, a stack of blank forms, a brilliant window behind blowing out
+
+5) C085.png
+   [C085]  flags: 
+   Extreme close-up of a printed form with empty tick boxes and ruled blank lines, no readable characters, a lamp raking hard across the paper and blowing out one corner
+
+6) C086.png
+   [C086]  flags: 
+   A pen lying across a blank sheet of paper on a desk, shallow focus, a desk lamp blown out bright in the background
+
+7) C087.png
+   [C087]  flags: 
+   A steel in-tray on an office desk holding a stack of blank sheets, brilliant daylight from a window striking the metal
+
+8) C088.png
+   [C088]  flags: 
+   An empty conference room in a corporate office in bright daylight, long table, a glass wall blowing out, chairs pushed in

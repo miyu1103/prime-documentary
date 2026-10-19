@@ -1,0 +1,23 @@
+EP85 KATRINA — T06 再生成（1枚のみ）
+
+不合格の理由: 納品されたT06は**5枚のコラージュ（分割された複数カット）として出力**されており、
+サムネイルの必須条件「主題が1つ・320pxで読める」を満たしません。右側の設計図パネルは意図どおり
+でしたが縦長のため16:9に切り出せません。**1枚の連続した写真として作り直してください。**
+
+守ること（他は前回の発注書 EP85_katrina_thumbnails.txt と全て同じ）:
+  ・**1枚の連続した写真**。分割・コラージュ・複数パネル・枠線は禁止。
+  ・16:9（横÷縦＝1.778）、長辺3840以上。ファイル名 T06.png（同名で上書き納品）
+  ・納品先: episodes/PD-2026-085-katrina/10_thumbnail/
+  ・文字・数字は生成しない（図面の線は見えても文字は判読不能に）。
+  ・顔は禁止（この話数は人物を出さない）。
+
+
+各プロンプトに [NEG] を適用してください:
+
+> text, lettering, readable text, legible text, numerals, numbers, digits, handwriting, cursive, signature, seals, emblems, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, dead body, body bag, fallen person, injured person, blood, cpr, stretcher, gurney, paramedic, hospital, morgue, coffin, funeral, grave, mourner, crying, grieving, memorial, candles, flowers laid on the ground, victim portrait, portrait wall, framed photograph of a person, gavel, scales of justice, lady justice, courtroom interior, handcuffs, prison bars, money rain, falling banknotes, stock ticker, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, anime, oversaturated, HDR halo, golden hour, sunset glow, postcard scenery, watermark, small subject, busy background, clutter, washed out, monochrome, wide establishing shot with tiny subject, human face, facial features, eye contact, headshot, floating body, drowning person, person in the water, looting, gun, firearm, rifle, soldier aiming, child in distress, dead animal, dead pet, shark, alligator, satellite view, hurricane eye from space, weather map, storm chart, crowd of identifiable people, collage, split screen, multiple panels, grid of images, diptych, triptych, photo montage, contact sheet, framed borders, picture-in-picture
+
+--- T06 — 設計図の机（1枚の写真として）
+cinematic still, photographic, New Orleans in late August 2005, humid gulf-coast texture: flooded clapboard shotgun houses and porches standing in still dark water, live oaks, concrete I-wall floodwall panels and levee grass, water lines on siding, distant helicopters, cold blue dusk against sparse warm lamplight, muted natural colour, low contrast but never crushed — shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no readable signage, an engineer's metal desk under one lamp, a single cross-section drawing of a concrete floodwall and its sheet piling unrolled flat and filling most of the frame, brass dividers and one red pencil resting on it, the drawing lines visible but unreadable, a coffee ring on the corner, the dark office falling away behind, one single continuous photograph
+NEGATIVE: text, lettering, readable text, legible text, numerals, numbers, digits, handwriting, cursive, signature, seals, emblems, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, dead body, body bag, fallen person, injured person, blood, cpr, stretcher, gurney, paramedic, hospital, morgue, coffin, funeral, grave, mourner, crying, grieving, memorial, candles, flowers laid on the ground, victim portrait, portrait wall, framed photograph of a person, gavel, scales of justice, lady justice, courtroom interior, handcuffs, prison bars, money rain, falling banknotes, stock ticker, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, anime, oversaturated, HDR halo, golden hour, sunset glow, postcard scenery, watermark, small subject, busy background, clutter, washed out, monochrome, wide establishing shot with tiny subject, human face, facial features, eye contact, headshot, floating body, drowning person, person in the water, looting, gun, firearm, rifle, soldier aiming, child in distress, dead animal, dead pet, shark, alligator, satellite view, hurricane eye from space, weather map, storm chart, crowd of identifiable people, collage, split screen, multiple panels, grid of images, diptych, triptych, photo montage, contact sheet, framed borders, picture-in-picture
+意図: 紙の上に既にあった失敗。物1つのヒーローショット。右三分の一が見出し用に暗く空く
+File name T06.png

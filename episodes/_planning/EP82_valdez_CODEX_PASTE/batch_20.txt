@@ -1,0 +1,56 @@
+EP82_valdez — 画像発注 バッチ 20/23（8枚）
+区分: PEOPLE / SPARE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, ship name, funnel marking, company colour, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) V153.png
+   [V153]  flags: P
+   A row of people seated from behind in a courtroom gallery, brilliant daylight, faces not visible
+
+2) V154.png
+   [V154]  flags: P
+   A lone figure silhouetted at a ship's rail against a brilliant dawn sky
+
+3) V155.png
+   [V155]  flags: 
+   A brass porthole dog and rim in extreme close-up, a work lamp raking across the metal
+
+4) V156.png
+   [V156]  flags: 
+   A steel bulkhead with rivets and paint layers, close-up, hard side light
+
+5) V157.png
+   [V157]  flags: 
+   A ship's ladder rung and handrail, close-up, bright light from above
+
+6) V158.png
+   [V158]  flags: 
+   A life ring on a ship's rail, plain orange with no lettering, brilliant daylight
+
+7) V159.png
+   [V159]  flags: 
+   A radar antenna turning on a mast against a brilliant grey sky, seen from below
+
+8) V160.png
+   [V160]  flags: 
+   A ship's whistle on a funnel platform against a bright sky, plain metal, no markings

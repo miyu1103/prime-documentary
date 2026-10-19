@@ -71,7 +71,7 @@ def main():
     sc["ai_disclosure_notes"] = "On-screen 'symbolic reconstruction' label burned on AI reenactment shots; description discloses AI narration + reconstructions."
     sc["final_cut_hash_recorded"] = True
     sc["final_cut_hash"] = h
-    sc["final_cut_path"] = f"H:/pd-media/episodes/{EP}/08_edit/gideon_premium_v001.mp4"
+    sc["final_cut_path"] = f"E:/pd-media/episodes/{EP}/08_edit/gideon_premium_v001.mp4"
     sc["final_cut_size_bytes"] = size
     sc["final_cut_notes"] = f"PREMIUM v001 (GideonPremium: moving stage + real assets + clips + grade + 121 SFX). {dur:.1f}s."
     ym["publish_gate"] = "blocked"

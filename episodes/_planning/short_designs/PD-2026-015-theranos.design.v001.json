@@ -1,0 +1,1258 @@
+{
+  "episode_id": "PD-2026-015-theranos",
+  "slug": "theranos",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "LXFjJqE6vKU",
+    "title": "Behind the $9 billion promise was a machine that failed",
+    "url": "https://www.youtube.com/watch?v=LXFjJqE6vKU",
+    "privacy": "public",
+    "views": 0
+  },
+  "shorts_existing": [
+    "short15"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short15": [
+      "One drop of blood, every test, a nine-billion-dollar company.",
+      "But the machine didn't work.",
+      "Its founder was hailed as the next Steve Jobs.",
+      "Then whistleblowers said the device didn't work as advertised.",
+      "Many tests secretly ran on other machines, the finger-prick results unreliable, as investors poured in hundreds of millions.",
+      "In 2022, a jury convicted the founder of defrauding investors.",
+      "Not failure, but intent: knowingly selling a lie.",
+      "A bold promise becomes a crime when the deception is deliberate.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-015-theranos\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "It begins in 2003, with a nineteen-year-old who drops out of Stanford to start a company.",
+    "At its peak, around 2014, Theranos was valued at roughly nine billion dollars, briefly making Holmes a paper billionaire and one of the most celebrated founders in America .",
+    "In 2015, someone finally asked it in print.",
+    "In 2018, the Securities and Exchange Commission charged Holmes with fraud, and she settled those civil charges without admitting or denying wrongdoing — paying a penalty and accepting a ban from leading a public company .",
+    "On January 3rd, 2022, the jury delivered a verdict — and it was not a simple one.",
+    "It is tempting to read the patient acquittals as a verdict that the technology was fine, or that no one was hurt.",
+    "As for Holmes: in November 2022, she was sentenced to about eleven years and three months in federal prison ."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short154",
+      "angle": "The jury convicted her on four counts, acquitted her on the patient counts, and could not agree on three more.",
+      "type": "B - the split verdict, and what an acquittal does and does not mean",
+      "avoids": "short15 says only that a jury convicted the founder of defrauding investors. It never mentions the acquittals, the mistrial counts, or the separate trial that came out completely differently.",
+      "funnel_question_left_for_longform": "If the machine gave patients wrong answers, why did those charges not stick to her?",
+      "era": "January 2022, San Jose federal court",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "On January 3rd, 2022, the jury delivered a verdict. It was not a simple one.",
+          "delivery": "intense",
+          "source_lines": [
+            "On January 3rd, 2022, the jury delivered a verdict — and it was not a simple one."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "It convicted her on four counts of fraud against investors. One count of conspiracy, and three counts of wire fraud.",
+          "delivery": "building",
+          "source_lines": [
+            "It convicted Holmes on four counts of fraud against investors: one count of conspiracy, and three counts of wire fraud, for deceiving specific investors who had put in large sums"
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "But on the counts that accused her of defrauding patients, the jury found her not guilty. And on three more investor counts the jurors could not agree, so the judge declared a mistrial.",
+          "delivery": "building",
+          "source_lines": [
+            "But on the counts that accused her of defrauding patients, the jury found her not guilty.",
+            "And on three more investor counts, the jurors could not agree at all, so the judge declared a mistrial on those"
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "That is not a finding that the technology was fine, or that no one was hurt. It means only that the prosecution did not prove those charges beyond a reasonable doubt.",
+          "delivery": "intense",
+          "source_lines": [
+            "It is tempting to read the patient acquittals as a verdict that the technology was fine, or that no one was hurt.",
+            "An acquittal means only that the prosecution did not prove those particular charges beyond a reasonable doubt — the highest bar in law — not that the underlying conduct was harmless"
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "Criminal fraud requires intent to deceive. Proof that someone knowingly made false statements to get something of value.",
+          "delivery": "building",
+          "source_lines": [
+            "Criminal fraud requires intent to deceive — proof that a person knowingly made false statements to get something of value from someone who relied on them."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Prosecutors said she knew about the device's failures and hid them. Her defense said she believed the technology would work.",
+          "delivery": "building",
+          "source_lines": [
+            "Prosecutors argued that Holmes knew about the device's failures and hid them, pointing to internal results and warnings she had received.",
+            "Her defense argued that she was a true believer who genuinely thought the technology would work, and that being wrong is not the same as lying."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "In November 2022, on those four counts, she was sentenced to about eleven years and three months in federal prison.",
+          "delivery": "building",
+          "source_lines": [
+            "in November 2022, she was sentenced to about eleven years and three months in federal prison"
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "The company's former president was tried separately and convicted on all twelve counts, including the patient counts. Same company. Two different verdicts.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W07",
+          "subject": "one drop of blood on a fingertip",
+          "source": "GENERATE",
+          "prompt": "extreme macro of a single dark red bead of blood standing on the pad of a fingertip against total black, nothing else in frame, no face or body visible, lit ONLY by one hard task lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "blood drop finger"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "a drop of blood, macro",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "blood drop finger",
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_126939__bank-business-coins-cash-dollar-economy-autumnal-finance-inv.mp4",
+          "bound_title": "a person putting the blood samples in a machine",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4202,
+          "motion": 4.069,
+          "luma": 84.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R08",
+          "subject": "the bench, waiting for the answer",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, all panelling bare with no inscriptions or nameplates, lit ONLY by one shaft of window light which falls across its face and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty courtroom bench"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "a folded slip passed across a rail",
+          "source": "GENERATE",
+          "prompt": "macro of one hand laying a single folded slip of paper on a polished wooden courtroom rail, the paper completely blank with no writing or printing on it, no face or body visible, lit ONLY by one brass lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "folded paper on wood"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "I07",
+          "subject": "the jury box that split four ways",
+          "source": "GENERATE",
+          "prompt": "an empty jury box of twelve worn seats in two tiers behind a low rail, every seat vacant and every nameplate blank, lit ONLY by one bank of overhead lights which are switched on and are the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty jury box seats"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "four sealed vials standing in a rack",
+          "source": "GENERATE",
+          "prompt": "four small identical glass vials standing in a row in a dark steel rack, caps sealed, every label completely blank with no printing or numerals, lit ONLY by one task lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "vials in rack laboratory"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a vial of blood",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "vial of blood",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14315__wax_seal_on_document.mp4",
+          "bound_title": "3d animation of a futuristic dynamic pattern",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4374,
+          "motion": 31.816,
+          "luma": 111.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U10",
+          "subject": "two hands flat on a polished table",
+          "source": "GENERATE",
+          "prompt": "macro of two hands laid flat and still on a polished defence table, no face or body visible above the wrists, nothing else on the table, lit ONLY by one hard overhead lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands on polished table"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "stone columns from below",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courthouse columns",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2435__bank_building_columns.mp4",
+          "bound_title": "venice, statue, palace, arch, pillar, columns, italy, sculpture, lion, architect",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.3927,
+          "motion": 17.052,
+          "luma": 140.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "M07",
+          "subject": "the investors' room, chairs pushed in",
+          "source": "GENERATE",
+          "prompt": "a long polished boardroom table with high-backed chairs pushed in and a dark blank projection wall behind it, nobody present, no lettering anywhere, lit ONLY by one pendant which is switched on above the table and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "long conference table"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a conference table and chairs",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "conference table chairs",
+          "bound_title": "laboratory equipment on a table",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4095,
+          "motion": 4.731,
+          "luma": 137.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14686__witness_stand_empty.mp4"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "W05",
+          "subject": "the analyser, every display dark",
+          "source": "GENERATE",
+          "prompt": "a laboratory bench carrying one heavy analytical instrument, all of its displays dark and unreadable with no numerals or lettering anywhere on the casing, lit ONLY by one task lamp which is switched on beside it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "laboratory instrument bench"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "a microscope in a laboratory",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "microscope laboratory",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-25907__microscope_slide_macro.mp4",
+          "bound_title": "laboratory, microscope, science, experiment, equipment, chemistry, research, ana",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.4644,
+          "motion": 8.415,
+          "luma": 113.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "W11",
+          "subject": "a row of empty waiting-room chairs",
+          "source": "GENERATE",
+          "prompt": "a row of empty vinyl waiting-room chairs bolted together against a bare clinic wall, nobody in any of them, no signage or lettering anywhere, lit ONLY by one fixture which is switched on above them and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "waiting room chairs"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "a hospital corridor",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hospital corridor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2361__school_hallway_empty.mp4",
+          "bound_title": "senior man walking with cane in hospital corridor",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.48,
+          "motion": 9.313,
+          "luma": 121.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "I06",
+          "subject": "one blank sheet on the courthouse floor",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper lying alone on a scuffed marble courthouse floor with no printing or writing on it at all, lit ONLY by one hard shaft of corridor light which falls across it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper on floor"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W05",
+          "subject": "the cartridge, cracked open and empty",
+          "source": "GENERATE",
+          "prompt": "macro of a small flat plastic testing cartridge the size of a card lying cracked open on a steel counter, its internal channels empty, every marking on its shell worn completely blank with no lettering or numerals, lit ONLY by one hard task lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "plastic cartridge macro"
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "a laboratory centrifuge",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "centrifuge laboratory",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39688__laboratory_centrifuge.mp4",
+          "bound_title": "laboratory centrifuge process with safety gloves",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4557,
+          "motion": 4.835,
+          "luma": 59.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U16",
+          "subject": "dust in an empty deliberation room",
+          "source": "GENERATE",
+          "prompt": "a single shaft of light crossing an empty deliberation room, thick with slowly drifting dust, a bare table below it, nothing else in frame, lit ONLY by that shaft which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "dust in light beam"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I05",
+          "subject": "a pharmacy aisle of blank white cartons",
+          "source": "GENERATE",
+          "prompt": "an aisle of pharmacy shelving stacked with identical plain white cartons whose faces are completely blank with no printing or lettering, receding into shadow, nobody present, lit ONLY by one fluorescent tube which is switched on at the far end and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "shelves white boxes"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "a petri dish, macro",
+          "source": "GENERATE",
+          "prompt": "a petri dish, macro, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "W04",
+          "subject": "the cell block the other one went to",
+          "source": "GENERATE",
+          "prompt": "a long cell block corridor of iron doors receding into distance, all door numbers worn blank, nobody present, lit ONLY by a row of caged ceiling bulbs which are switched on and are the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, January 2022, San Jose federal court, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "prison corridor"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook plate: one drop of blood on a fingertip",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: one drop of blood on a fingertip",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: one drop of blood on a fingertip",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U06",
+          "subject": "the empty chair the question circles",
+          "source": "FOOTAGE",
+          "footage_query": "a single empty chair under a ceiling light",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29216__single_chair_empty_room.mp4"
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R04",
+          "subject": "two people across a small table",
+          "source": "FOOTAGE",
+          "footage_query": "two people seated across a small table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46949__lawyer_and_client_meeting_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "something of value, banded",
+          "source": "FOOTAGE",
+          "footage_query": "banded stacks of banknotes under a lamp",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_253669__coin-tower-money-yellow-overlay-graphics-increasing-coin-bal.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R07",
+          "subject": "the gavel that has to measure intent",
+          "source": "FOOTAGE",
+          "footage_query": "a gavel striking a wooden block",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0513__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "the office window at dawn over a desk",
+          "source": "FOOTAGE",
+          "footage_query": "an office window at dawn above a desk",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\business_corporate\\pixabay_extra__v_226936__coffee-work-office-relax-camera-forest-desk-nature.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "the sealed result nobody saw",
+          "source": "FOOTAGE",
+          "footage_query": "a sealed envelope resting on a laboratory bench",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6482__us_constitution_document.mp4"
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "the laboratory door, locked",
+          "source": "FOOTAGE",
+          "footage_query": "a locked door in a white corridor",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\goods_in_motion\\pixabay_extra__v_95518__door-door-open-entrance-chroma-key.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U09",
+          "subject": "one person alone in a bright hall",
+          "source": "FOOTAGE",
+          "footage_query": "a lone person in a large bright hall",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\pixabay_extra__v_149450__hallway-scary-horror-halloween-empty-mall-flickering-lights.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "M01",
+          "subject": "the line they were all shown",
+          "source": "FOOTAGE",
+          "footage_query": "a rising line glowing on a screen",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\science_tech\\ia__0559-threads-of-technology__threads-of-technology.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U01",
+          "subject": "the lamp left on over the bench",
+          "source": "FOOTAGE",
+          "footage_query": "a lamp switched on above a work bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51996__vintage_globe_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W01",
+          "subject": "the bars at the end of it",
+          "source": "FOOTAGE",
+          "footage_query": "close up of iron prison bars",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6846__jail_cell_bars.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "W10",
+          "subject": "the gate she went through",
+          "source": "FOOTAGE",
+          "footage_query": "a heavy gate at a prison entrance",
+          "prompt": null
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U05",
+          "subject": "the clock in the deliberation room",
+          "source": "FOOTAGE",
+          "footage_query": "a round clock on a plain wall",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\market_machinery\\pixabay_extra__v_28723__clock-time-watch-minutes-seconds-before.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U02",
+          "subject": "a heavy door closing behind her",
+          "source": "FOOTAGE",
+          "footage_query": "a heavy door swinging closed in a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4811__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "walking away through a bright doorway",
+          "source": "FOOTAGE",
+          "footage_query": "a figure walking away through a bright doorway",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\pixabay_extra__v_5023__street-walk-urban-city-walking-person-young-female-people-wa.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 sets her split verdict against her co-defendant's twelve convictions, so L1's 'it was not a simple one' reads as the answer to that mismatch.",
+      "kinetic_beats": [
+        {
+          "line": "L5",
+          "anchor": "requires intent to deceive",
+          "style": "punch",
+          "words": [
+            "FRAUD NEEDS",
+            "INTENT"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "she believed the technology would work",
+          "style": "punch",
+          "words": [
+            "SHE KNEW",
+            "OR SHE BELIEVED"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
+    },
+    {
+      "short_id": "short155",
+      "angle": "The board of household names was not oversight. It was the reason nobody looked.",
+      "type": "A - why the warning took twelve years to arrive",
+      "avoids": "short15 summarises the device, the whistleblowers and the conviction. It never asks the prior question: why hundreds of millions went in before a single person checked whether the machine worked.",
+      "funnel_question_left_for_longform": "When somebody finally did look, what did they find inside the machine?",
+      "era": "2003-2015 Palo Alto",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "A beautiful enough story can make very smart people stop asking the most basic question. Does the thing actually work?",
+          "delivery": "intense",
+          "source_lines": [
+            "And a beautiful enough story can make very smart people stop asking the most basic question: does the thing actually work?"
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "Its board filled with famous names. Former statesmen and military leaders. It struck a deal with a national pharmacy chain to put its testing in some stores.",
+          "delivery": "building",
+          "source_lines": [
+            "Its board filled with famous names — former statesmen and military leaders.",
+            "It struck a deal with the pharmacy chain Walgreens to put its testing in some stores"
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "A board of household names made the company look unimpeachable. A soaring valuation made skeptics look foolish for doubting.",
+          "delivery": "building",
+          "source_lines": [
+            "A board of household names made the company look unimpeachable; a soaring valuation made skeptics look foolish for doubting."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "Each famous believer became a reason for the next person not to look too closely. At its peak, around 2014, Theranos was valued at roughly nine billion dollars.",
+          "delivery": "intense",
+          "source_lines": [
+            "Each famous believer became a reason for the next person not to look too closely.",
+            "At its peak, around 2014, Theranos was valued at roughly nine billion dollars"
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "A blood test then meant a needle, a vial, a lab, a wait. Theranos promised to erase all of that.",
+          "delivery": "building",
+          "source_lines": [
+            "Today, a blood test means a needle, a vial, a lab, a wait.",
+            "Holmes promised to erase all of that."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Its device, the Edison, was said to run hundreds of tests from a single painless drop of blood.",
+          "delivery": "building",
+          "source_lines": [
+            "Her company, Theranos, said its device — called the Edison — could run hundreds of tests from a single, painless drop of blood from your finger, quickly and cheaply"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "A failed app costs money. A blood test that gives the wrong answer can cost someone a diagnosis.",
+          "delivery": "building",
+          "source_lines": [
+            "A failed app costs you money. A blood test that gives the wrong answer can cost you a diagnosis."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "For years, with nine billion dollars riding on it, the question went unasked in public. In 2015 a reporter with internal documents asked it in print.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W05",
+          "subject": "one tiny empty vial on black",
+          "source": "GENERATE",
+          "prompt": "extreme macro of one small squat glass vial the size of a thimble standing alone on a black surface, empty, its cap sealed and its label completely blank with no printing or numerals, lit ONLY by one hard task lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "small glass vial macro"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "gloved hands in a laboratory",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "laboratory gloves",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7369__microscope_lab.mp4",
+          "bound_title": "laboratory centrifuge process with safety gloves",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4557,
+          "motion": 4.835,
+          "luma": 59.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.34
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M07",
+          "subject": "high-backed chairs, all with their backs to us",
+          "source": "GENERATE",
+          "prompt": "a row of high-backed leather boardroom chairs seen from directly behind, all of them empty and facing a dark blank wall, nobody present, no lettering anywhere, lit ONLY by one pendant which is switched on above them and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "leather chairs from behind"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U06",
+          "subject": "a lectern alone on a dark stage",
+          "source": "GENERATE",
+          "prompt": "a single lectern standing in a hard pool of light on a wide dark stage with nobody behind it, the lectern face completely bare with no crest lettering or signage, lit ONLY by the one stage lamp which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "lectern empty stage"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "Y01",
+          "subject": "a rack of identical dark overcoats",
+          "source": "GENERATE",
+          "prompt": "a coat rack in a dark anteroom hung with a row of identical dark overcoats, no people faces or bodies anywhere in frame, no labels or lettering on any of them, lit ONLY by one wall lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "coats on rack"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a conference table and chairs",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "conference table chairs",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29696__office_interior_dark.mp4",
+          "bound_title": "analyzing stock market trends on a tablet",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3859,
+          "motion": 10.05,
+          "luma": 59.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U09",
+          "subject": "a half circle of silhouettes, all backs turned",
+          "source": "GENERATE",
+          "prompt": "a cluster of dark silhouettes standing in a half circle, every one of them with its back to camera and no face visible, the figures placed high in frame with a long empty floor below, lit ONLY by one hard lamp which is switched on above them and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouettes standing group"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "I05",
+          "subject": "a pharmacy aisle of blank cartons",
+          "source": "GENERATE",
+          "prompt": "an aisle of retail pharmacy shelving stacked with identical plain cartons whose faces are completely blank with no printing branding or lettering, receding into shadow, nobody present, lit ONLY by one fluorescent tube which is switched on at the far end and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "shelves white boxes"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a blood test tube",
+          "source": "GENERATE",
+          "prompt": "a blood test tube, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "a counter booth with the blind drawn",
+          "source": "GENERATE",
+          "prompt": "a small service counter booth at the end of a dark store aisle with its roller blind pulled down and its sign plate completely blank, nobody present, lit ONLY by one strip light which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "counter shutter closed"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "an empty office at night",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty office night",
+          "bound_title": "silhouetted crowd watching bonfire at night",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5889,
+          "motion": 9.069,
+          "luma": 40.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282,
+          "bound_file": "D:\\pd-archive\\decision_rooms\\pixabay_extra__v_1158__street-dark-night-lights-flickering-flashing-city-urban-road.mp4"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "M01",
+          "subject": "a line that only ever rises",
+          "source": "GENERATE",
+          "prompt": "a single pale line rising smoothly across dark glass with no dips at all, entirely abstract and unlabelled with no numerals grid or lettering anywhere, lit ONLY by its own glow which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "glowing line dark screen"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "an abstract market display",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stock market screen",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63313__stock_exchange_crowd.mp4",
+          "bound_title": "analyzing stock market trends on interactive screen",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4199,
+          "motion": 6.606,
+          "luma": 195.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.334
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U09",
+          "subject": "one silhouette in a vast atrium",
+          "source": "GENERATE",
+          "prompt": "a lone dark silhouette standing in a single vertical shaft of light in a vast dark atrium, the figure placed high in frame with a long empty polished floor below it, face not visible, lit ONLY by that shaft which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouette in shaft of light"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "tower windows at night",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "skyscraper night lights",
+          "bound_title": "city, nights, party, view, lights, skyscrapers, high-rises, houses, buildings",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.3847,
+          "motion": 1.313,
+          "luma": 50.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29632__blurred_city_night_bokeh.mp4"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U06",
+          "subject": "one raised hand in an auditorium of empty seats",
+          "source": "GENERATE",
+          "prompt": "a single raised hand and forearm caught in one narrow beam above rows of empty auditorium seats in near darkness, no face or body visible, lit ONLY by that beam which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "auditorium empty seats"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I02",
+          "subject": "a corridor of identical closed doors",
+          "source": "GENERATE",
+          "prompt": "a long corridor of identical closed doors receding into darkness, every nameplate on every door completely blank, nobody present, lit ONLY by one row of ceiling fixtures which are switched on and are the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "corridor closed doors"
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "an office building at night",
+          "source": "GENERATE",
+          "prompt": "an office building at night, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "a lobby floor with one pool of light",
+          "source": "GENERATE",
+          "prompt": "the vast polished lobby floor of a glass tower at night, entirely empty, with a single pool of light in the middle of it, nobody present, no signage or lettering anywhere, lit ONLY by that one fixture which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty lobby floor night"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "hands counting money",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "counting money hands",
+          "bound_file": "D:\\pd-archive\\money_banking\\mixkit__24584__counting-bank-notes.mp4",
+          "bound_title": "counting money close up of hands handling bills",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.527,
+          "motion": 8.005,
+          "luma": 63.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I04",
+          "subject": "a laboratory door, closed",
+          "source": "GENERATE",
+          "prompt": "a heavy laboratory door standing closed with a small dark observation window set into it, every notice on it worn completely blank, lit ONLY by one caged bulb which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "closed door small window"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a plain folder of blank pages, half open",
+          "source": "GENERATE",
+          "prompt": "macro of a plain unmarked manila folder lying half open on a dark desk with a thick stack of completely blank pages inside it, no printing writing or headings anywhere, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2003-2015 Palo Alto, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "manila folder papers desk"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook plate: one tiny empty vial on black",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: one tiny empty vial on black",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: one tiny empty vial on black",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U03",
+          "subject": "a gloved hand and a needle",
+          "source": "FOOTAGE",
+          "footage_query": "a gloved hand holding a syringe",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32427__blood_sample_vial.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "the samples waiting their turn",
+          "source": "FOOTAGE",
+          "footage_query": "a tray of glass tubes on a bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-19583__test_tubes_rack_lab.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I07",
+          "subject": "the hall where people wait their turn",
+          "source": "FOOTAGE",
+          "footage_query": "rows of seats in a waiting hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26007__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "the instruments laid out in a steel tray",
+          "source": "FOOTAGE",
+          "footage_query": "surgical instruments laid in a steel tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-34506__operating_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "an arm laid on a rest, sleeve pushed up",
+          "source": "FOOTAGE",
+          "footage_query": "a bare arm resting on a chair armrest",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31704__old_keys_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "the machine, a grey cabinet on a bench",
+          "source": "FOOTAGE",
+          "footage_query": "a closed grey machine cabinet on a bench",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\pixabay_extra__v_44527__abandoned-broken-collapse-daytime-debris-destroyed-empty-run.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "a fingertip under the lamp",
+          "source": "FOOTAGE",
+          "footage_query": "a fingertip held under a bright lamp",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14094__church_interior_light_beam.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "a rack of identical machines",
+          "source": "FOOTAGE",
+          "footage_query": "rows of identical machines in a laboratory",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2136__modern_medical_lab.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "the cartridge pushed into its slot",
+          "source": "FOOTAGE",
+          "footage_query": "a plastic cartridge pushed into a slot",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\science_tech\\pixabay_extra__v_9062__repair-electronics-fix-screw-metal-hand-screwdriver-technica.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M03",
+          "subject": "the laboratory from above, bench after bench",
+          "source": "FOOTAGE",
+          "footage_query": "a laboratory seen from above with benches",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54378__warehouse_loading_dock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "the doors of a hospital, swinging",
+          "source": "FOOTAGE",
+          "footage_query": "double doors swinging open in a hospital",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39824__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I06",
+          "subject": "a blank sheet left folded on the bed",
+          "source": "FOOTAGE",
+          "footage_query": "a folded blank sheet on a hospital bed",
+          "prompt": null,
+          "bound_file": "D:\\pd-archive\\newspapers_printing\\pixabay_extra__v_1657__laptop-notebook-developer-web-developer-programming-code-com.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R10",
+          "subject": "a front door seen from the hallway",
+          "source": "FOOTAGE",
+          "footage_query": "a front door seen from inside a hallway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51259__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R11",
+          "subject": "the phone put face down",
+          "source": "FOOTAGE",
+          "footage_query": "a phone lying face down on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-25280__smartphone_notification_glow.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "R03",
+          "subject": "the room where the answer gets given",
+          "source": "FOOTAGE",
+          "footage_query": "a small consulting room with a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39819__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 ends at the moment the question was finally asked out loud, and L1 names the question again from the top.",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "nine billion dollars",
+          "style": "punch",
+          "words": [
+            "$9 BILLION",
+            "AT ITS PEAK"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "hundreds of tests",
+          "style": "punch",
+          "words": [
+            "HUNDREDS OF TESTS",
+            "ONE DROP"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

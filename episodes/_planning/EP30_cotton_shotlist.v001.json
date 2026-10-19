@@ -1,0 +1,1145 @@
+{
+  "schema_version": "1.0.0-motionsample",
+  "episode_id": "PD-2026-030-cotton",
+  "revision": "v001",
+  "generated_from": "EP30_cotton_script.annotated.v001.json",
+  "source_annotated_sha256": "de54d6ead1c012afd978f25bf4106849453206f147bff4b7173c1974e17ec71c",
+  "note": "PLAN only. Build step (build_case_film assets) resolves real image filenames + audio-aligned per-cut start/dur into remotion/src/data/cotton_film.json. avg_cut<=~6s and freeze/animation_density gates apply at acceptance.",
+  "shots": [
+    {
+      "span_id": "SPN-0001",
+      "chapter_id": "hook",
+      "narrative_function": "hook_cold_open",
+      "estimated_seconds": 19.6,
+      "cut_count": 7,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 4,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-01",
+        "PD-2026-030-IMG-02",
+        "PD-2026-030-IMG-03",
+        "PD-2026-030-IMG-04",
+        "PD-2026-030-IMG-05"
+      ],
+      "footage_search_keywords": [
+        "police lineup silhouettes",
+        "eyes macro",
+        "two hands reaching"
+      ],
+      "on_screen_text": [
+        "SHE WAS SURE.",
+        "SHE WAS WRONG."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "8s cold open, ~2s cuts: a backlit lineup of anonymous figures; a macro of watching eyes (anonymous); 'THAT'S HIM' typography cracking to 'WRONG'; two hands almost touching (the reconciliation tease). Navy, restrained."
+    },
+    {
+      "span_id": "SPN-0002",
+      "chapter_id": "opening",
+      "narrative_function": "thesis_and_promise",
+      "estimated_seconds": 17.9,
+      "cut_count": 6,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 4,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-01",
+        "PD-2026-030-IMG-02",
+        "PD-2026-030-IMG-03",
+        "PD-2026-030-IMG-04",
+        "PD-2026-030-IMG-05"
+      ],
+      "footage_search_keywords": [
+        "single eye lineup"
+      ],
+      "on_screen_text": [
+        "RONALD COTTON",
+        "JENNIFER THOMPSON"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Gold BrandOpening lands here. Then a single eye / a lineup silhouette motif. Restrained brand card."
+    },
+    {
+      "span_id": "SPN-0003",
+      "chapter_id": "act1",
+      "narrative_function": "event",
+      "estimated_seconds": 50.1,
+      "cut_count": 18,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 7,
+        "footage": 11,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-01",
+        "PD-2026-030-IMG-02",
+        "PD-2026-030-IMG-03",
+        "PD-2026-030-IMG-04",
+        "PD-2026-030-IMG-05",
+        "PD-2026-030-IMG-06",
+        "PD-2026-030-IMG-07",
+        "PD-2026-030-IMG-08",
+        "PD-2026-030-IMG-09",
+        "PD-2026-030-IMG-10"
+      ],
+      "footage_search_keywords": [
+        "dark apartment window night",
+        "sketch artist pencil",
+        "photo lineup array",
+        "physical lineup room",
+        "detective desk night"
+      ],
+      "on_screen_text": [
+        "Burlington, NC · 1984"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "SUGGESTION ONLY, no depiction of violence: a dark apartment window at night, a curtain moving; then a macro of watchful eyes memorizing (anonymous). Restrained, respectful of the survivor."
+    },
+    {
+      "span_id": "SPN-0004",
+      "chapter_id": "act1",
+      "narrative_function": "event",
+      "estimated_seconds": 24.5,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-01",
+        "PD-2026-030-IMG-02",
+        "PD-2026-030-IMG-03",
+        "PD-2026-030-IMG-04",
+        "PD-2026-030-IMG-05",
+        "PD-2026-030-IMG-06",
+        "PD-2026-030-IMG-07",
+        "PD-2026-030-IMG-08",
+        "PD-2026-030-IMG-09"
+      ],
+      "footage_search_keywords": [
+        "dark apartment window night",
+        "sketch artist pencil",
+        "photo lineup array",
+        "physical lineup room",
+        "detective desk night"
+      ],
+      "on_screen_text": [
+        "Photo lineup → live lineup"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A sketch artist's pencil on an unfinished face; a six-photo array (anonymous); then a backlit physical lineup room. Procedural, cold."
+    },
+    {
+      "span_id": "SPN-0005",
+      "chapter_id": "act1",
+      "narrative_function": "central_mechanism",
+      "estimated_seconds": 25.6,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-10",
+        "PD-2026-030-IMG-01",
+        "PD-2026-030-IMG-02",
+        "PD-2026-030-IMG-03",
+        "PD-2026-030-IMG-04",
+        "PD-2026-030-IMG-05",
+        "PD-2026-030-IMG-06",
+        "PD-2026-030-IMG-07",
+        "PD-2026-030-IMG-08"
+      ],
+      "footage_search_keywords": [
+        "dark apartment window night",
+        "sketch artist pencil",
+        "photo lineup array",
+        "physical lineup room",
+        "detective desk night"
+      ],
+      "on_screen_text": [
+        "The only man in BOTH lineups"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A photo of one anonymous man lifting out of the array and reappearing in the live lineup — the same face in both. The structural flaw made visual."
+    },
+    {
+      "span_id": "SPN-0006",
+      "chapter_id": "act1",
+      "narrative_function": "explainer",
+      "estimated_seconds": 70.0,
+      "cut_count": 25,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 10,
+        "footage": 15,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-09",
+        "PD-2026-030-IMG-10",
+        "PD-2026-030-IMG-01",
+        "PD-2026-030-IMG-02",
+        "PD-2026-030-IMG-03",
+        "PD-2026-030-IMG-04",
+        "PD-2026-030-IMG-05",
+        "PD-2026-030-IMG-06",
+        "PD-2026-030-IMG-07",
+        "PD-2026-030-IMG-08"
+      ],
+      "footage_search_keywords": [
+        "dark apartment window night",
+        "sketch artist pencil",
+        "photo lineup array",
+        "physical lineup room",
+        "detective desk night"
+      ],
+      "on_screen_text": [
+        "Certainty is built, not remembered"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Motion graphic of a face-sketch being edited/reinforced each time it's recalled; a tentative outline hardening into a bold one. Memory as a rebuilt story."
+    },
+    {
+      "span_id": "SPN-0007",
+      "chapter_id": "act2",
+      "narrative_function": "complication",
+      "estimated_seconds": 21.7,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-11",
+        "PD-2026-030-IMG-12",
+        "PD-2026-030-IMG-13",
+        "PD-2026-030-IMG-14",
+        "PD-2026-030-IMG-15",
+        "PD-2026-030-IMG-16",
+        "PD-2026-030-IMG-17",
+        "PD-2026-030-IMG-18"
+      ],
+      "footage_search_keywords": [
+        "witness stand light",
+        "jury box",
+        "prison cell door",
+        "two similar silhouettes",
+        "prison corridor"
+      ],
+      "on_screen_text": [
+        "1985 — convicted"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A witness stand under a shaft of light; a jury box; a cell door closing. The power of certain testimony."
+    },
+    {
+      "span_id": "SPN-0008",
+      "chapter_id": "act2",
+      "narrative_function": "complication",
+      "estimated_seconds": 62.3,
+      "cut_count": 22,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 9,
+        "footage": 13,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-19",
+        "PD-2026-030-IMG-20",
+        "PD-2026-030-IMG-11",
+        "PD-2026-030-IMG-12",
+        "PD-2026-030-IMG-13",
+        "PD-2026-030-IMG-14",
+        "PD-2026-030-IMG-15",
+        "PD-2026-030-IMG-16",
+        "PD-2026-030-IMG-17",
+        "PD-2026-030-IMG-18"
+      ],
+      "footage_search_keywords": [
+        "witness stand light",
+        "jury box",
+        "prison cell door",
+        "two similar silhouettes",
+        "prison corridor"
+      ],
+      "on_screen_text": [
+        "Tried twice. Convicted twice."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An anonymous man in a cell, unheard; appeal papers; a second empty courtroom. The grind of not being believed."
+    },
+    {
+      "span_id": "SPN-0009",
+      "chapter_id": "act2",
+      "narrative_function": "turn",
+      "estimated_seconds": 29.1,
+      "cut_count": 10,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 6,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-19",
+        "PD-2026-030-IMG-20",
+        "PD-2026-030-IMG-11",
+        "PD-2026-030-IMG-12",
+        "PD-2026-030-IMG-13",
+        "PD-2026-030-IMG-14",
+        "PD-2026-030-IMG-15",
+        "PD-2026-030-IMG-16",
+        "PD-2026-030-IMG-17",
+        "PD-2026-030-IMG-18"
+      ],
+      "footage_search_keywords": [
+        "witness stand light",
+        "jury box",
+        "prison cell door",
+        "two similar silhouettes",
+        "prison corridor"
+      ],
+      "on_screen_text": [
+        "The other man who looked just like him"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Two anonymous men in silhouette, strikingly similar side by side; a prison corridor. The doppelgänger revealed. No real likeness."
+    },
+    {
+      "span_id": "SPN-0010",
+      "chapter_id": "act2",
+      "narrative_function": "act2_button_openloop",
+      "estimated_seconds": 64.1,
+      "cut_count": 23,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 9,
+        "footage": 14,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-19",
+        "PD-2026-030-IMG-20",
+        "PD-2026-030-IMG-11",
+        "PD-2026-030-IMG-12",
+        "PD-2026-030-IMG-13",
+        "PD-2026-030-IMG-14",
+        "PD-2026-030-IMG-15",
+        "PD-2026-030-IMG-16",
+        "PD-2026-030-IMG-17",
+        "PD-2026-030-IMG-18"
+      ],
+      "footage_search_keywords": [
+        "witness stand light",
+        "jury box",
+        "prison cell door",
+        "two similar silhouettes",
+        "prison corridor"
+      ],
+      "on_screen_text": [
+        "The real attacker. She felt nothing."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A courtroom; an anonymous man a few feet from an anonymous woman who registers nothing. The chilling image of memory's failure."
+    },
+    {
+      "span_id": "SPN-0011",
+      "chapter_id": "act3",
+      "narrative_function": "reveal_setup",
+      "estimated_seconds": 25.9,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-21",
+        "PD-2026-030-IMG-22",
+        "PD-2026-030-IMG-23",
+        "PD-2026-030-IMG-24",
+        "PD-2026-030-IMG-25",
+        "PD-2026-030-IMG-26",
+        "PD-2026-030-IMG-27",
+        "PD-2026-030-IMG-28",
+        "PD-2026-030-IMG-29"
+      ],
+      "footage_search_keywords": [
+        "forensic lab",
+        "dna autoradiograph lightbox",
+        "double helix macro",
+        "prison cell tally",
+        "prison gate daylight"
+      ],
+      "on_screen_text": [
+        "1995 — DNA testing"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A forensic lab; a DNA autoradiograph on a lightbox; gloved hands with sample tubes (anonymous). The arrival of a new kind of proof."
+    },
+    {
+      "span_id": "SPN-0012",
+      "chapter_id": "act3",
+      "narrative_function": "reveal",
+      "estimated_seconds": 9.5,
+      "cut_count": 3,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 1,
+        "footage": 2,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-30",
+        "PD-2026-030-IMG-31",
+        "PD-2026-030-IMG-21"
+      ],
+      "footage_search_keywords": [
+        "forensic lab",
+        "dna autoradiograph lightbox",
+        "double helix macro",
+        "prison cell tally",
+        "prison gate daylight"
+      ],
+      "on_screen_text": [
+        "Cotton: excluded. Poole: matched."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Two DNA banding patterns: one clearly not matching, one snapping into alignment. The truth, in cold light."
+    },
+    {
+      "span_id": "SPN-0013",
+      "chapter_id": "act3",
+      "narrative_function": "theme",
+      "estimated_seconds": 53.2,
+      "cut_count": 19,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 8,
+        "footage": 11,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-22",
+        "PD-2026-030-IMG-23",
+        "PD-2026-030-IMG-24",
+        "PD-2026-030-IMG-25",
+        "PD-2026-030-IMG-26",
+        "PD-2026-030-IMG-27",
+        "PD-2026-030-IMG-28",
+        "PD-2026-030-IMG-29",
+        "PD-2026-030-IMG-30",
+        "PD-2026-030-IMG-31",
+        "PD-2026-030-IMG-21"
+      ],
+      "footage_search_keywords": [
+        "forensic lab",
+        "dna autoradiograph lightbox",
+        "double helix macro",
+        "prison cell tally",
+        "prison gate daylight"
+      ],
+      "on_screen_text": [
+        "Honest. Confident. Wrong."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A 'recording' motif dissolving into a rebuilt sketch; sincerity and error held together. Never blaming her — the system and memory are the subject."
+    },
+    {
+      "span_id": "SPN-0014",
+      "chapter_id": "act3",
+      "narrative_function": "resolution_turn",
+      "estimated_seconds": 26.3,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-22",
+        "PD-2026-030-IMG-23",
+        "PD-2026-030-IMG-24",
+        "PD-2026-030-IMG-25",
+        "PD-2026-030-IMG-26",
+        "PD-2026-030-IMG-27",
+        "PD-2026-030-IMG-28",
+        "PD-2026-030-IMG-29",
+        "PD-2026-030-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "forensic lab",
+        "dna autoradiograph lightbox",
+        "double helix macro",
+        "prison cell tally",
+        "prison gate daylight"
+      ],
+      "on_screen_text": [
+        "Freed — June 30, 1995"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A gate opening to daylight; an anonymous man walking free from behind; a check dwarfed by a calendar of lost years. Bittersweet."
+    },
+    {
+      "span_id": "SPN-0015",
+      "chapter_id": "act3",
+      "narrative_function": "act3_button_openloop",
+      "estimated_seconds": 21.0,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-31",
+        "PD-2026-030-IMG-21",
+        "PD-2026-030-IMG-22",
+        "PD-2026-030-IMG-23",
+        "PD-2026-030-IMG-24",
+        "PD-2026-030-IMG-25",
+        "PD-2026-030-IMG-26",
+        "PD-2026-030-IMG-27"
+      ],
+      "footage_search_keywords": [
+        "forensic lab",
+        "dna autoradiograph lightbox",
+        "double helix macro",
+        "prison cell tally",
+        "prison gate daylight"
+      ],
+      "on_screen_text": [
+        "Could he ever forgive her?"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A woman (anonymous) alone with the weight of the truth; a door between two people. Sets up the final question."
+    },
+    {
+      "span_id": "SPN-0016",
+      "chapter_id": "act4",
+      "narrative_function": "payoff_setup",
+      "estimated_seconds": 22.8,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-32",
+        "PD-2026-030-IMG-33",
+        "PD-2026-030-IMG-34",
+        "PD-2026-030-IMG-35",
+        "PD-2026-030-IMG-36",
+        "PD-2026-030-IMG-37",
+        "PD-2026-030-IMG-38",
+        "PD-2026-030-IMG-39"
+      ],
+      "footage_search_keywords": [
+        "church office two chairs",
+        "two hands table warm",
+        "two microphones stage",
+        "lab building golden hour",
+        "two shadows walking"
+      ],
+      "on_screen_text": [
+        "1997 — they finally meet"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A quiet church office; two chairs facing; warm, soft light. Two anonymous figures, faces gentle/unseen. Intimate, tender."
+    },
+    {
+      "span_id": "SPN-0017",
+      "chapter_id": "act4",
+      "narrative_function": "payoff",
+      "estimated_seconds": 28.4,
+      "cut_count": 10,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 6,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-40",
+        "PD-2026-030-IMG-32",
+        "PD-2026-030-IMG-33",
+        "PD-2026-030-IMG-34",
+        "PD-2026-030-IMG-35",
+        "PD-2026-030-IMG-36",
+        "PD-2026-030-IMG-37",
+        "PD-2026-030-IMG-38",
+        "PD-2026-030-IMG-39"
+      ],
+      "footage_search_keywords": [
+        "church office two chairs",
+        "two hands table warm",
+        "two microphones stage",
+        "lab building golden hour",
+        "two shadows walking"
+      ],
+      "on_screen_text": [
+        "“I forgave you a long time ago.”"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Two hands meeting across a small table; warm light blooming. The forgiveness — the emotional peak. Anonymous."
+    },
+    {
+      "span_id": "SPN-0018",
+      "chapter_id": "act4",
+      "narrative_function": "impact",
+      "estimated_seconds": 54.6,
+      "cut_count": 20,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 8,
+        "footage": 12,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-40",
+        "PD-2026-030-IMG-32",
+        "PD-2026-030-IMG-33",
+        "PD-2026-030-IMG-34",
+        "PD-2026-030-IMG-35",
+        "PD-2026-030-IMG-36",
+        "PD-2026-030-IMG-37",
+        "PD-2026-030-IMG-38",
+        "PD-2026-030-IMG-39"
+      ],
+      "footage_search_keywords": [
+        "church office two chairs",
+        "two hands table warm",
+        "two microphones stage",
+        "lab building golden hour",
+        "two shadows walking"
+      ],
+      "on_screen_text": [
+        "Picking Cotton (2009)",
+        "They changed the law together"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "The book; two microphones on a stage (no people); a reformed lineup shown blind. Two shadows walking together. Redemption into purpose."
+    },
+    {
+      "span_id": "SPN-0019",
+      "chapter_id": "act4",
+      "narrative_function": "act4_button",
+      "estimated_seconds": 11.6,
+      "cut_count": 4,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 2,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-40",
+        "PD-2026-030-IMG-32",
+        "PD-2026-030-IMG-33",
+        "PD-2026-030-IMG-34"
+      ],
+      "footage_search_keywords": [
+        "church office two chairs",
+        "two hands table warm",
+        "two microphones stage",
+        "lab building golden hour",
+        "two shadows walking"
+      ],
+      "on_screen_text": [
+        "He went to work at the lab that freed him"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A lab building at golden hour; an anonymous figure walking in to work. The circle closing. Warm, quietly stunning."
+    },
+    {
+      "span_id": "SPN-0020",
+      "chapter_id": "ending",
+      "narrative_function": "ending_callback",
+      "estimated_seconds": 17.2,
+      "cut_count": 6,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 4,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-32",
+        "PD-2026-030-IMG-33",
+        "PD-2026-030-IMG-34",
+        "PD-2026-030-IMG-35",
+        "PD-2026-030-IMG-36",
+        "PD-2026-030-IMG-37"
+      ],
+      "footage_search_keywords": [
+        "eyes lineup callback",
+        "two shadows warm path"
+      ],
+      "on_screen_text": [
+        "She did everything right."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Callback to the cold-open eyes and lineup — now understood differently. Bookend the imagery."
+    },
+    {
+      "span_id": "SPN-0021",
+      "chapter_id": "ending",
+      "narrative_function": "ending_theme",
+      "estimated_seconds": 26.6,
+      "cut_count": 10,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 6,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-38",
+        "PD-2026-030-IMG-39",
+        "PD-2026-030-IMG-40",
+        "PD-2026-030-IMG-32",
+        "PD-2026-030-IMG-33",
+        "PD-2026-030-IMG-34",
+        "PD-2026-030-IMG-35",
+        "PD-2026-030-IMG-36",
+        "PD-2026-030-IMG-37"
+      ],
+      "footage_search_keywords": [
+        "eyes lineup callback",
+        "two shadows warm path"
+      ],
+      "on_screen_text": [
+        "Certainty is not proof"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "'CERTAINTY' and 'TRUTH' as two separate words that people keep trying to overlap; they don't align. The thesis, plainly."
+    },
+    {
+      "span_id": "SPN-0022",
+      "chapter_id": "ending",
+      "narrative_function": "cta",
+      "estimated_seconds": 24.2,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-38",
+        "PD-2026-030-IMG-39",
+        "PD-2026-030-IMG-40",
+        "PD-2026-030-IMG-32",
+        "PD-2026-030-IMG-33",
+        "PD-2026-030-IMG-34",
+        "PD-2026-030-IMG-35",
+        "PD-2026-030-IMG-36",
+        "PD-2026-030-IMG-37"
+      ],
+      "footage_search_keywords": [
+        "eyes lineup callback",
+        "two shadows warm path"
+      ],
+      "on_screen_text": [
+        "hit like — it's possible to be sure and wrong",
+        "Subscribe"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Brand endcard tail; two shadows walking together into warm light; a specific, earned CTA — not a generic beg."
+    }
+  ],
+  "totals": {
+    "span_count": 22,
+    "cut_count": 252,
+    "estimated_total_seconds": 706.2,
+    "avg_cut_seconds": 2.8,
+    "image_footage_ratio_target": "≈4:6",
+    "distinct_asset_target": ">= 23 (runtime/30)",
+    "max_reuse_per_clip": 3,
+    "hero_stills_available": 40
+  }
+}

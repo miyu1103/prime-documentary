@@ -1,0 +1,212 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "surfside",
+  "episode_id": "PD-2026-060-surfside",
+  "assets": "episodes/PD-2026-060-surfside/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-060-surfside/06_audio/narration_index.v001.json",
+  "narration": "surfside/narration.mp3",
+  "captions": "episodes/PD-2026-060-surfside/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/surfside_film.json",
+  "hookSeconds": 8.0,
+  "hookLine": "An engineer walked into the garage under the swimming pool, put a hammer to the ceiling, and wrote down what he heard.",
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "kinetic",
+        "lines": [
+          "IT HAD ALREADY",
+          "BEEN FALLING."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ALREADY"
+        ]
+      }
+    ],
+    "OP": [
+      {
+        "kind": "numberticker",
+        "value": 1981,
+        "label": "the year the margins were already too narrow",
+        "group": false
+      }
+    ],
+    "ACT_1": [
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE DECK",
+          "WAS A ROOF."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ROOF"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 136,
+        "label": "apartments above the garage"
+      }
+    ],
+    "ACT_2": [
+      {
+        "kind": "quote",
+        "lines": [
+          "“major structural damage to the concrete structural slab”"
+        ],
+        "attribution": "structural field survey, October 2018"
+      },
+      {
+        "kind": "numberticker",
+        "value": 9100000,
+        "label": "dollars to repair it, priced in 2018"
+      },
+      {
+        "kind": "quote",
+        "lines": [
+          "“in very good shape”"
+        ],
+        "attribution": "town building official, board minutes, November 2018"
+      }
+    ],
+    "ACT_3": [
+      {
+        "kind": "compbars",
+        "label": "what the reserve held against what the study said it needed",
+        "a": {
+          "label": "in reserve",
+          "value": 706000
+        },
+        "b": {
+          "label": "study figure",
+          "value": 10300000
+        }
+      },
+      {
+        "kind": "numberticker",
+        "value": 336135,
+        "label": "dollars, the penthouse share of the assessment"
+      },
+      {
+        "kind": "numberticker",
+        "value": 80190,
+        "label": "dollars, the one-bedroom share"
+      },
+      {
+        "kind": "quote",
+        "lines": [
+          "“has gotten significantly worse since the initial inspection”"
+        ],
+        "attribution": "board president to residents, 9 April 2021"
+      }
+    ],
+    "ACT_4": [
+      {
+        "kind": "timeline",
+        "label": "the last spring",
+        "items": [
+          {
+            "when": "9 April 2021",
+            "what": "the assessment is explained to every apartment"
+          },
+          {
+            "when": "first week of June",
+            "what": "two connections fail in the garage"
+          },
+          {
+            "when": "24 June",
+            "what": "the building comes down"
+          },
+          {
+            "when": "1 July",
+            "what": "the money was due"
+          }
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 7,
+        "label": "days between the collapse and the payment deadline"
+      }
+    ],
+    "ACT_5": [
+      {
+        "kind": "numberticker",
+        "value": 3,
+        "label": "weeks the failure spread before the building came down"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "faultsplit",
+        "label": "punching shear at a slab-column connection"
+      },
+      {
+        "kind": "quote",
+        "lines": [
+          "“these margins against failure were too narrow from the start”"
+        ],
+        "attribution": "Judith Mitrani-Reiser, NIST, 22 June 2026"
+      },
+      {
+        "kind": "casetimeline_c",
+        "label": "from the drawings to the finding",
+        "items": [
+          {
+            "when": "1981",
+            "what": "built, with margins already too narrow"
+          },
+          {
+            "when": "Oct 2018",
+            "what": "major structural damage, in writing"
+          },
+          {
+            "when": "Apr 2021",
+            "what": "significantly worse, and accelerating"
+          },
+          {
+            "when": "Jun 2021",
+            "what": "two connections fail"
+          },
+          {
+            "when": "Jun 2026",
+            "what": "the federal finding"
+          }
+        ]
+      }
+    ],
+    "ENDING": [
+      {
+        "kind": "numberticker",
+        "value": 1021199000,
+        "label": "dollars, the settlement approved in June 2022"
+      },
+      {
+        "kind": "numberticker",
+        "value": 98,
+        "label": "people died"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE PAPERWORK",
+          "WAS IN ORDER."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ORDER"
+        ]
+      }
+    ]
+  },
+  "_notes": {
+    "runtime": "40:00 total. Narration 35.6 min at the measured 173 wpm, from EP60_surfside_script.en.v004.md (6,304 words, 36.4 min at 173 wpm).",
+    "figures": "This file seeds the hero beats only; build_case_film_generic.py generates the rest. Recent 30-minute episodes landed 78-88 figures over ~380 cuts. At 40 minutes the target is 110-130 figures over ~520 cuts.",
+    "hero_windows": "Blender section shots go in via FilmData.heroCuts, not as cuts. Shot 1 (punching shear) is built and measured: remotion/src/blender/surfside_section.py, 6.0 s, no frozen frames, no black frames. Shots 2-6 pending.",
+    "ae": "AE cards also go through heroCuts, <=3.0 s each, never a full-frame black title card. See EP60_surfside_ASSET_DESIGN.v001.md section 4.",
+    "facts": "Every number above traces to EP60_surfside_FACTS_LEDGER.v001.md: 136=CT-03, 9.1M=CT-11, 'very good shape'=CT-13, 706k/10.3M=CT-26, 336135/80190=CT-24, 7 days=CT-25, 3 weeks=CT-05, Mitrani-Reiser=CT-07, 1,021,199,000=CT-17, 98=CT-02, 1981=CT-22.",
+    "quarantined": "Not used anywhere: a collapse duration, a precise collapse minute, the strength fraction. See the ledger's quarantine rows.",
+    "figure_kinds": "Every kind here is registered in remotion/src/components/FigureBeats.tsx. yearsweep is exported by motionkit but is NOT a FigureBeats kind - it was in the first draft of this config and would have failed silently at build time.",
+    "revision_note": "v002 (2026-08-02): retargeted from script v003 to v004. v004 restores the collapse time to 1:22 a.m. (quarantine released, CT-32) and adds the two-stage collapse — the pool deck fell more than four minutes before the tower (CT-24) — plus a how-they-know beat. Word count rose 6,154 -> 6,304, still inside the 6,150-6,350 band. The three paths below (asset_manifest, narration_index, captions) do not exist yet; they are produced by the assembly thread."
+  }
+}

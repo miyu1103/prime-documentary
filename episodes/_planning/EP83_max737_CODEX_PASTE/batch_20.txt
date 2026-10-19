@@ -1,0 +1,56 @@
+EP83_max737 — 画像発注 バッチ 20/24（8枚）
+区分: ENDING / PEOPLE（人物あり・顔は一切写さない）
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, airline livery, tail marking, company colour, human face, facial features, portrait, identifiable person, wreckage, debris, fire, smoke plume, crash site, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) X153.png
+   [X153]  flags: 
+   A cockpit at first light with both seats empty, the trim wheel still, the sun on the windscreen
+
+2) X154.png
+   [X154]  flags: P
+   A hand fastening a seatbelt in an airliner cabin, close, cabin light above
+
+3) X155.png
+   [X155]  flags: 
+   The empty aisle of a single-aisle cabin looking forward to the closed flight deck door
+
+4) X156.png
+   [X156]  flags: 
+   A closed flight deck door seen from the cabin, plain and grey, one light above it
+
+5) X157.png
+   [X157]  flags: P
+   A pilot seen from behind in a cockpit seat, shoulders and headset, instrument glow ahead, face not visible, instrument panel glow lighting the frame
+
+6) X158.png
+   [X158]  flags: P
+   Two crew seen from directly behind in an airliner cockpit, silhouetted against a bright windscreen
+
+7) X159.png
+   [X159]  flags: P
+   A maintenance technician seen from behind on a work stand at an aircraft tail, torch in hand, one hard work light in frame
+
+8) X160.png
+   [X160]  flags: P
+   An engineer seen from behind at a dual-monitor desk at night, the screens glowing with plain blocks of light

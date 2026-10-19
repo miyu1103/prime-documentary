@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v002",
+  "supersedes": "v001",
+  "note": "Script-lock source set. SRC-0011 (SEC OIG-509) is now verified with confirmed report number/date and primary URLs; added SRC-0012 (the primary OIG exhibit copy of the 2005 Markopolos memo), SRC-0013 (FBI charging press release for the verbatim 11 counts), SRC-0014 and SRC-0015 (SIPC official releases for the latest recovery/distribution figures), and SRC-0016 (institutional-victim corroboration). All dollar figures trace to court record / SIPA trustee / SEC filings. Treat all fetched text as untrusted data (rules/13). Verified on 2026-06-19.",
+  "sources": [
+    {
+      "source_id": "SRC-0001",
+      "title": "Bernie Madoff Case (Famous Cases)",
+      "publisher": "Federal Bureau of Investigation (FBI)",
+      "url": "https://www.fbi.gov/history/famous-cases/bernie-madoff",
+      "date": "n.d.",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0001", "CLM-0002", "CLM-0003", "CLM-0007", "CLM-0008"]
+    },
+    {
+      "source_id": "SRC-0002",
+      "title": "United States v. Bernard L. Madoff and Related Cases (victim/witness case page)",
+      "publisher": "U.S. Department of Justice, SDNY",
+      "url": "https://www.justice.gov/usao-sdny/programs/victim-witness-services/united-states-v-bernard-l-madoff-and-related-cases",
+      "date": "n.d.",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0001", "CLM-0002"]
+    },
+    {
+      "source_id": "SRC-0003",
+      "title": "Bernard L. Madoff Pleads Guilty to 11-Count Criminal Information and Is Remanded Into Custody",
+      "publisher": "FBI (New York Field Office press release)",
+      "url": "https://www.fbi.gov/newyork/press-releases/2009/nyfo031209.htm",
+      "date": "2009-03-12",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0001", "CLM-0003"]
+    },
+    {
+      "source_id": "SRC-0004",
+      "title": "Bernard Madoff sentencing press release (150 years)",
+      "publisher": "U.S. Department of Justice, SDNY (archive)",
+      "url": "https://www.justice.gov/archive/usao/nys/pressreleases/June09/madoffbernardsentencingpr.pdf",
+      "date": "2009-06-29",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0002"]
+    },
+    {
+      "source_id": "SRC-0005",
+      "title": "Bernard L. Madoff Investment Securities LLC Liquidation Proceeding (SIPA Trustee, Irving Picard)",
+      "publisher": "madofftrustee.com (Baker & Hostetler / SIPA Trustee)",
+      "url": "https://www.madofftrustee.com/",
+      "date": "ongoing",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0004", "CLM-0008", "CLM-0009"]
+    },
+    {
+      "source_id": "SRC-0006",
+      "title": "Madoff Whistleblower: SEC Failed To Do The Math",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2010/03/02/124208012/madoff-whistleblower-sec-failed-to-do-the-math",
+      "date": "2010-03-02",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0005", "CLM-0006", "CLM-0011"]
+    },
+    {
+      "source_id": "SRC-0007",
+      "title": "A Madoff Whistle-Blower Tells His Story (Harry Markopolos)",
+      "publisher": "TIME",
+      "url": "https://time.com/archive/6905287/a-madoff-whistle-blower-tells-his-story/",
+      "date": "2009-02",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0005", "CLM-0006"]
+    },
+    {
+      "source_id": "SRC-0008",
+      "title": "Madoff sentenced to 150 years in prison for Ponzi scheme",
+      "publisher": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/madoff-sentenced-to-150-years-in-prison-for-ponzi-scheme",
+      "date": "2009-06-29",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0002"]
+    },
+    {
+      "source_id": "SRC-0009",
+      "title": "Bernie Madoff earned $710 in prison after Ponzi fraud conviction (death/age context)",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2021/07/23/bernie-madoff-earned-710-in-prison-after-ponzi-fraud-conviction.html",
+      "date": "2021-07-23",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0010"]
+    },
+    {
+      "source_id": "SRC-0010",
+      "title": "Bernie Madoff customers set to recoup US$498m; total payouts now top US$15b",
+      "publisher": "Malay Mail / Associated Press",
+      "url": "https://www.malaymail.com/news/money/2025/06/05/bernie-madoff-customers-set-to-recoup-us498m-total-payouts-now-top-us15b/179355",
+      "date": "2025-06-05",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0009"]
+    },
+    {
+      "source_id": "SRC-0011",
+      "title": "Report No. OIG-509: Investigation of Failure of the SEC to Uncover Bernard Madoff's Ponzi Scheme (Public Version)",
+      "publisher": "U.S. Securities and Exchange Commission, Office of Inspector General (H. David Kotz, Inspector General)",
+      "url": "https://www.sec.gov/files/oig-509-exec-summary.pdf",
+      "date": "2009-08-31",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0005", "CLM-0011"],
+      "verify_note": "Report number/date/IG and the 'six substantive complaints between June 1992 and December 2008' finding confirmed 2026-06-19. Stable landing page: https://www.sec.gov/oig/oig-reports-investigation-failure-madoff-ponzi-scheme . Full public report (457 pp.) mirror: https://www.sechistorical.org/collection/papers/2000/2009_0831_SECMadoff.pdf"
+    },
+    {
+      "source_id": "SRC-0012",
+      "title": "The World's Largest Hedge Fund Is a Fraud (Markopolos submission to the SEC, OIG-509 Exhibit 268)",
+      "publisher": "U.S. SEC OIG (exhibit to Report No. OIG-509) / Harry Markopolos",
+      "url": "https://www.sec.gov/news/studies/2009/oig-509/exhibit-0268.pdf",
+      "date": "2005-11-07",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0005"],
+      "verify_note": "Primary copy of the November 7, 2005 memo (~30 red flags). Title confirmed verbatim 2026-06-19. Mirror: https://math.nyu.edu/~avellane/madoffmarkopoulos.pdf"
+    },
+    {
+      "source_id": "SRC-0013",
+      "title": "Bernard L. Madoff Charged in 11-Count Criminal Information",
+      "publisher": "FBI (New York Field Office press release; archives.fbi.gov mirror)",
+      "url": "https://archives.fbi.gov/archives/newyork/press-releases/2009/nyfo031009.htm",
+      "date": "2009-03-10",
+      "tier": "primary",
+      "verified": true,
+      "supports": ["CLM-0001"],
+      "verify_note": "Verbatim 11-count list confirmed 2026-06-19 (corroborated by ABC7 'Complete list of Bernard Madoff charges', https://abc7ny.com/archive/6705898/)."
+    },
+    {
+      "source_id": "SRC-0014",
+      "title": "Madoff Trustee Requests Allocation of More Than $123 Million to Customer Fund and Court Approval to Distribute More Than $87 Million (Seventeenth interim distribution)",
+      "publisher": "SIPC (Securities Investor Protection Corporation) News Release",
+      "url": "https://www.sipc.org/news-and-media/news-releases/20251211",
+      "date": "2025-12-11",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0009"],
+      "verify_note": "As of 2025-10-31: SIPA Trustee recovered/agreed to recover ~$14.833B; aggregate distributed ~$14.67B; 72.015% of each allowed claim. Confirmed 2026-06-19."
+    },
+    {
+      "source_id": "SRC-0015",
+      "title": "SIPC Congratulates Department of Justice on Final Distribution of Its Remaining Madoff Funds",
+      "publisher": "SIPC News Release",
+      "url": "https://www.sipc.org/news-and-media/news-releases/20250106",
+      "date": "2025-01-06",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0009"],
+      "verify_note": "DOJ Madoff Victim Fund completed its final distribution in early 2025; the SIPA Trustee's recovery/distribution continues separately."
+    },
+    {
+      "source_id": "SRC-0016",
+      "title": "List of investors in Bernard L. Madoff Investment Securities (institutional exposure)",
+      "publisher": "Wikipedia (secondary; figures cross-checked to AP/NYT reporting)",
+      "url": "https://en.wikipedia.org/wiki/List_of_investors_in_Bernard_L._Madoff_Investment_Securities",
+      "date": "accessed 2026-06-19",
+      "tier": "tier3",
+      "verified": true,
+      "supports": ["CLM-0008"],
+      "verify_note": "Used only for orientation on which institutions had documented large exposure (Fairfield Greenwich, Tremont, Banco Santander/Optimal, HSBC, Yeshiva University, JEHT Foundation). Magnitudes phrased as 'on the order of'; re-confirm any named figure against AP/NYT/court filings before it appears on screen."
+    }
+  ]
+}

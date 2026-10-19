@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0003",
+  "episode_id": "PD-2026-005-madoff",
+  "target_type": "script",
+  "target_id": "script.en.v001",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-19T03:00:00+00:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-19T03:10:00+00:00",
+  "decided_by": "owner",
+  "notes": "Owner approved the v001 narration script as final ('1' = approve, 2026-06-19) after reviewing the structure summary. Script follows topic v002 angle (too-perfect chart as smoking gun; ignored whistleblower; $65B-vs-$17.5B myth; surprising >90% recovery) and the decisions/0002 ~12min format. This is the final-script human gate. Production may proceed to scene planning; downstream artifacts depend on this exact script revision/hash.",
+  "conditions": [
+    "Before SCRIPT LOCK for narration master, resolve the two research follow-ups: SEC OIG exact Markopolos submission count/dates + 2005 memo title (CLM-0005/0011), and latest trustee/DOJ recovery totals + official $65B/$17.5B definitions (CLM-0004/0009).",
+    "Any wording change to adjudicated facts must trace to claims.v001; a semantic change creates script v002 and invalidates dependent scenes/audio.",
+    "Keep disclaimer (symbolic reconstruction; not financial/legal advice). Visuals faceless, no real-person likeness, no pink."
+  ]
+}

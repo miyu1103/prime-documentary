@@ -1,0 +1,33 @@
+{
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-063-correa",
+  "target_type": "edit",
+  "decision": "approved",
+  "granted_by": "owner",
+  "granted_at": "2026-08-09T18:55:22.771165+00:00",
+  "granted_in": "chat 2026-08-10: asked as a single question listing these five checks with the precedent counts below, offering (a) approve the five, (b) approve the five plus script_lint, (c) approve nothing and fix everything. The owner chose (a).",
+  "accepted_deviations": [
+    "asset_reuse",
+    "caption_format",
+    "factory_used",
+    "padding",
+    "preflight_receipt",
+    "sound_layers"
+  ],
+  "rationale": {
+    "sound_layers": "render carries no audio_mix_sha256 container tag; failed in 16 of the 21 acceptance receipts in this repo, including every long-form currently scheduled for 2026-08-10 to 08-15",
+    "preflight_receipt": "preflight verdict is not green; failed in 18 of the 21 acceptance receipts in this repo, including every long-form currently scheduled for 2026-08-10 to 08-15",
+    "asset_reuse": "some clips used twice; first-use share under 70%; failed in 10 of the 14 acceptance receipts in this repo, including every long-form currently scheduled for 2026-08-10 to 08-15",
+    "padding": "7-word phrases repeat above the cap; failed in 11 of the 20 acceptance receipts in this repo, including every long-form currently scheduled for 2026-08-10 to 08-15",
+    "caption_format": "one caption cue over the duration limit; failed in 6 of the 25 acceptance receipts in this repo, including every long-form currently scheduled for 2026-08-10 to 08-15",
+    "factory_used": "approved separately on 2026-08-09. Nine to eleven archive clips staged against a floor of 42 (one per 45s), because clips the visual QC rejected were removed from the pools. The gap is carried by 123-158 i2v clips built from this episode's own commissioned plates, each through six machine measures and then opened by eye."
+  },
+  "not_accepted": [
+    "script_lint -- resolved by correcting the check, not by waiving it",
+    "any weakening of animation_density, animation_mix, footage_diversity or arc_nonrepeat",
+    "reuse of a clip already burned into another episode",
+    "reinstating any clip the visual QC rejected",
+    "publishing with any of the four prohibited categories present"
+  ],
+  "expires": "this slate (EP62-65) only; not a precedent for the next one"
+}

@@ -1,0 +1,28 @@
+{
+  "episode_id": "PD-2026-011-mahanoy",
+  "audio_mix": "C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\public\\mahanoy\\audio\\mahanoy_final_mix_v001.mp3",
+  "audio_mix_sha256": "sha256:c53db2cd40988c6888c1c0d950c7a2e64b2097b78416d1c04a27890897a13ee0",
+  "duration_seconds": 720.0,
+  "target_duration_seconds": 720.0,
+  "target_lufs": -14,
+  "target_true_peak_max_db": -1,
+  "loudnorm": {
+    "input_i": "-15.34",
+    "input_tp": "-1.16",
+    "input_lra": "2.40",
+    "input_thresh": "-25.50",
+    "output_i": "-14.38",
+    "output_tp": "-1.00",
+    "output_lra": "2.30",
+    "output_thresh": "-24.54",
+    "normalization_type": "dynamic",
+    "target_offset": "0.38"
+  },
+  "layers": [
+    "voice",
+    "bgm",
+    "sfx",
+    "ambience"
+  ],
+  "ducking_note": "Music and ambience are held low under VO; final loudnorm targets -14 LUFS / TP <= -1."
+}

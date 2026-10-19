@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0.0",
+  "phases": [
+    {
+      "id": "P00",
+      "slug": "audit",
+      "name": "環境・リポジトリ監査",
+      "objective": "PC、Git、Remotion、FFmpeg、対象エピソード、素材ルートを読み取り中心で監査し、安全な実装境界を確定する。"
+    },
+    {
+      "id": "P01",
+      "slug": "baseline",
+      "name": "Baseline保存・紙芝居診断",
+      "objective": "対象エピソードから比較価値の高い連続60〜90秒を選び、現在版を保存して紙芝居要因を測定する。"
+    },
+    {
+      "id": "P02",
+      "slug": "benchmark",
+      "name": "参照チャンネルのショット分解",
+      "objective": "成功チャンネルの外見ではなく、ショット単位の情報設計、タイミング、音、再利用原理を観察記録する。"
+    },
+    {
+      "id": "P03",
+      "slug": "asset-index",
+      "name": "素材インデックス最小実証",
+      "objective": "100〜500素材に限定し、ffprobe、PySceneDetect、3点サンプリング、SQLite、再開可能処理を検証する。"
+    },
+    {
+      "id": "P04",
+      "slug": "semantic-search",
+      "name": "意味検索の最小実証",
+      "objective": "商用条件を記録した埋め込みモデルで、20クエリの検索品質を人間評価する。"
+    },
+    {
+      "id": "P05",
+      "slug": "motion-core",
+      "name": "Remotionコア5部品",
+      "objective": "EvidenceReveal、PenaltyVsProperty、CaseJourney、QuoteUnderExamination、VerdictReversalだけを高品質に実装する。"
+    },
+    {
+      "id": "P06",
+      "slug": "build-b1",
+      "name": "B1コア改善版",
+      "objective": "新ツールを増やさず、既存素材検索とコア5部品だけでbaseline区間を改善する。"
+    },
+    {
+      "id": "P07",
+      "slug": "audio-sync",
+      "name": "WhisperX同期・B2版",
+      "objective": "英語ナレーションを台本へ整列し、重要語・資料・SFXを単語単位で同期する。"
+    },
+    {
+      "id": "P08",
+      "slug": "parallax",
+      "name": "2.5D・B3版",
+      "objective": "静止画1枚だけで、明示的対象指定、SAM2、Depth Anything V2 Small、弱いパララックスを実証する。"
+    },
+    {
+      "id": "P09",
+      "slug": "evidence-room",
+      "name": "PD Evidence Room・C1版",
+      "objective": "再利用可能なBlenderセットを最小構成で作り、限定カメラ1カットを追加する。"
+    },
+    {
+      "id": "P10",
+      "slug": "ai-broll",
+      "name": "AI B-roll・C2版",
+      "objective": "既存素材で埋まらない1カットだけをComfyUI＋承認済みモデルで生成し、品質・時間・リスクを測る。"
+    },
+    {
+      "id": "P11",
+      "slug": "finishing",
+      "name": "音響・カラー・C3版",
+      "objective": "音響、章転換、カラー、ラウドネスを追加し、C2との差だけを評価する。"
+    },
+    {
+      "id": "P12",
+      "slug": "decision-rollout",
+      "name": "投資判断・全編展開",
+      "objective": "A/B1/B2/B3/C1/C2/C3の増分比較から、標準構成と不採用技術を決め、勝った方式だけを全編へ展開する。"
+    }
+  ],
+  "transition_policy": {
+    "automatic_phase_advance": false,
+    "completion_state": "candidate_complete",
+    "human_approval_required_to_advance": true
+  }
+}

@@ -8,8 +8,8 @@ try:
 except Exception:
     pass
 
-NARR_DIR = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
-OUT_SRT  = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\subs_s001_s023.srt")
+NARR_DIR = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
+OUT_SRT  = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\subs_s001_s023.srt")
 
 TARGET_WORDS = 4   # aim for ~4 words per subtitle line
 

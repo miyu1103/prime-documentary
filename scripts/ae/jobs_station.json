@@ -1,0 +1,224 @@
+[
+  {
+    "id": "station_ae001",
+    "beat": "AE001",
+    "act": "HOOK",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "TWO DOORS / ONE DOOR",
+    "style": "punch",
+    "words": ["TWO DOORS", "ONE DOOR"],
+    "bigSize": 170,
+    "lines": [
+      {"t": "OUTSIDE: DOUBLE DOORS", "cite": "ST-004"},
+      {"t": "INSIDE THE VESTIBULE: A SINGLE DOORWAY", "cite": "ST-005"}
+    ],
+    "source": "FACTS_LEDGER rows ST-004 and ST-005",
+    "forbid": "The doorway is the episode MOTIF (script header) -- shown, never explained as a symbol."
+  },
+  {
+    "id": "station_ae002",
+    "beat": "AE002",
+    "act": "HOOK",
+    "kind": "hero_number",
+    "seconds": 6,
+    "headline": "NINETY SECONDS",
+    "style": "number",
+    "big": "90",
+    "bigSize": 340,
+    "label": "TO UNTENABLE HEAT ON THE DANCE FLOOR — NIST SIMULATION",
+    "value": 90,
+    "suffix": " SECONDS",
+    "source": "FACTS_LEDGER row ST-310",
+    "forbid": "A simulation figure -- the label keeps the NIST SIMULATION attribution."
+  },
+  {
+    "id": "station_ae003",
+    "beat": "AE003",
+    "act": "OP",
+    "kind": "title_card",
+    "seconds": 6,
+    "headline": "20 FEBRUARY 2003",
+    "style": "number",
+    "big": "20 FEBRUARY 2003",
+    "bigSize": 170,
+    "source": "FACTS_LEDGER row ST-201"
+  },
+  {
+    "id": "station_ae004",
+    "beat": "AE004",
+    "act": "ACT_1",
+    "kind": "system_map",
+    "seconds": 12,
+    "headline": "THREE WAYS OUT",
+    "lines": [
+      {"t": "NORTH: THE MAIN ENTRANCE", "cite": "ST-002"},
+      {"t": "WEST: A SINGLE DOOR BY THE PLATFORM", "cite": "ST-002"},
+      {"t": "EAST: A SINGLE DOOR BY THE MAIN BAR", "cite": "ST-002"},
+      {"t": "A FOURTH, IN THE KITCHEN — NOT CONSIDERED ACCESSIBLE TO PATRONS", "cite": "ST-003"}
+    ],
+    "source": "FACTS_LEDGER rows ST-002 and ST-003"
+  },
+  {
+    "id": "station_ae005",
+    "beat": "AE005",
+    "act": "ACT_1",
+    "kind": "comparison",
+    "seconds": 10,
+    "headline": "15 SECONDS / NO IGNITION",
+    "value_a": 15,
+    "suffix": " SECONDS",
+    "lines": [
+      {"t": "NON-FIRE-RETARDED FOAM, NIST TEST: ALIGHT IN UNDER 15 SECONDS", "cite": "ST-203"},
+      {"t": "FIRE-RETARDED FOAM, SAME TEST: DID NOT IGNITE AT ALL", "cite": "ST-204"}
+    ],
+    "source": "FACTS_LEDGER rows ST-203 and ST-204"
+  },
+  {
+    "id": "station_ae006",
+    "beat": "AE006",
+    "act": "ACT_2",
+    "kind": "timeline",
+    "seconds": 13,
+    "headline": "225 / 253 / 317 / 420",
+    "lines": [
+      {"t": "1981 APPLICATION: OCCUPANT LOAD 225", "cite": "ST-103"},
+      {"t": "1999 FIRE DEPARTMENT MEMO: 253", "cite": "ST-104"},
+      {"t": "SAME MEMO, STANDING ROOM ONLY: 317", "cite": "ST-105"},
+      {"t": "2003 MODEL CODES WOULD HAVE SAID: AROUND 420", "cite": "ST-102"}
+    ],
+    "source": "FACTS_LEDGER rows ST-102 to ST-105"
+  },
+  {
+    "id": "station_ae007",
+    "beat": "AE007",
+    "act": "ACT_2",
+    "kind": "hero_number",
+    "seconds": 7,
+    "headline": "440 TO 458",
+    "style": "number",
+    "big": "440–458",
+    "bigSize": 260,
+    "label": "IN THE BUILDING THAT NIGHT — NEWS MEDIA FIGURES",
+    "source": "FACTS_LEDGER row ST-101",
+    "forbid": "ST-101 attributes the range to news media reports; the label carries that attribution."
+  },
+  {
+    "id": "station_ae008",
+    "beat": "AE008",
+    "act": "ACT_3",
+    "kind": "timeline",
+    "seconds": 14,
+    "headline": "24s / 30s / 71s / 90s / 102s",
+    "lines": [
+      {"t": "0:24 — THE FIRST PATRONS RECOGNISE THE DANGER", "cite": "ST-301"},
+      {"t": "0:30 — THE BAND STOPS. THE CROWD BEGINS TO LEAVE", "cite": "ST-302"},
+      {"t": "1:11 — A STEADY STREAM OUT OF THE BUILDING", "cite": "ST-304"},
+      {"t": "1:30 — THE FRONT EXIT BLOCKS WITH PEOPLE", "cite": "ST-305"},
+      {"t": "1:42 — THE CRUSH, ON VIDEO", "cite": "ST-306"}
+    ],
+    "source": "FACTS_LEDGER rows ST-301, ST-302, ST-304, ST-305, ST-306",
+    "forbid": "Timestamps only. No card shows the crush itself -- the video exists in the record, it is not re-enacted (fabricated_record)."
+  },
+  {
+    "id": "station_ae009",
+    "beat": "AE009",
+    "act": "ACT_3",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "56 TO 66 PER CENT",
+    "style": "number",
+    "big": "56–66%",
+    "bigSize": 280,
+    "label": "TRIED TO LEAVE BY THE SINGLE FRONT ENTRANCE",
+    "source": "FACTS_LEDGER row ST-401"
+  },
+  {
+    "id": "station_ae010",
+    "beat": "AE010",
+    "act": "ACT_3",
+    "kind": "document_blowup",
+    "seconds": 9,
+    "headline": "NOT THE DOUBLE DOORS",
+    "lines": [
+      {"t": "THE LIMIT: THE SINGLE DOORWAY INSIDE THE VESTIBULE", "cite": "ST-403"},
+      {"t": "NOT THE DOUBLE DOORS VISIBLE FROM OUTSIDE", "cite": "ST-004"}
+    ],
+    "source": "FACTS_LEDGER rows ST-403 and ST-004",
+    "forbid": "Illustrate as a floor-plan detail; no legible generated document text (fabricated_record)."
+  },
+  {
+    "id": "station_ae011",
+    "beat": "AE011",
+    "act": "ACT_4",
+    "kind": "comparison",
+    "seconds": 10,
+    "headline": "TWICE AS WIDE",
+    "lines": [
+      {"t": "THE MODEL: DOUBLE THE WIDTH OF THE ENTRANCE DOOR", "cite": "ST-502"},
+      {"t": "THE CROWD STILL INSIDE AT 90 SECONDS RETURNS TO THE BASELINE RANGE", "cite": "ST-502"}
+    ],
+    "source": "FACTS_LEDGER row ST-502",
+    "forbid": "An evacuation-model result. The card keeps the modelled framing -- it does not say the wider door WOULD have saved a stated number of lives."
+  },
+  {
+    "id": "station_ae012",
+    "beat": "AE012",
+    "act": "ACT_4",
+    "kind": "hero_number",
+    "seconds": 7,
+    "headline": "33 SECONDS",
+    "style": "number",
+    "big": "33",
+    "bigSize": 340,
+    "label": "TO THE FIRST SPRINKLER — IN NIST'S SPRINKLERED TEST",
+    "value": 33,
+    "suffix": " SECONDS",
+    "source": "FACTS_LEDGER row ST-501",
+    "forbid": "The real building was unsprinklered; the figure is from NIST's sprinklered mock-up. The card states the experiment, never a code-violation accusation (R3: three living people were convicted and the court record is unobtained)."
+  },
+  {
+    "id": "station_ae013",
+    "beat": "AE013",
+    "act": "ACT_4",
+    "kind": "list_build",
+    "seconds": 12,
+    "headline": "THREE DIRECT CONTRIBUTORS",
+    "lines": [
+      {"t": "THE HAZARDOUS MIX OF BUILDING CONTENTS", "cite": "ST-602"},
+      {"t": "THE INADEQUATE CAPABILITY TO SUPPRESS THE EARLY FIRE", "cite": "ST-602"},
+      {"t": "EXITS UNABLE TO HANDLE EVERYONE IN THE TIME THE FIRE ALLOWED", "cite": "ST-602"}
+    ],
+    "source": "FACTS_LEDGER row ST-602",
+    "forbid": "NIST's own three, compressed but not reweighted. No person is named on the card."
+  },
+  {
+    "id": "station_ae014",
+    "beat": "AE014",
+    "act": "ENDING",
+    "kind": "hero_number",
+    "seconds": 7,
+    "headline": "ONE HUNDRED",
+    "style": "number",
+    "big": "100",
+    "bigSize": 340,
+    "label": "PEOPLE LOST THEIR LIVES",
+    "value": 100,
+    "source": "FACTS_LEDGER row ST-601",
+    "forbid": "Held silent, no music under this card."
+  },
+  {
+    "id": "station_ae015",
+    "beat": "AE015",
+    "act": "ENDING",
+    "kind": "timeline",
+    "seconds": 9,
+    "headline": "WHAT IS STILL OPEN",
+    "lines": [
+      {"t": "THE RHODE ISLAND CRIMINAL RECORD — NOT AMONG THIS FILM'S SOURCES", "cite": "Open items"},
+      {"t": "NCSTAR 2 VOLUME 2 · THE CIVIL SETTLEMENTS · THE STATE'S LAW CHANGES — NOT YET READ", "cite": "Open items"}
+    ],
+    "source": "FACTS_LEDGER open items",
+    "forbid": "R3: three living people were convicted; with the record unobtained, NO charge, plea or sentence appears on any card. This card lists what the sources do not cover, nothing more."
+  }
+]

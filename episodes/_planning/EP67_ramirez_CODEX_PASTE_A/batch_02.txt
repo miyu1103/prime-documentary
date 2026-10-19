@@ -1,0 +1,69 @@
+EP67 ramirez — 画像発注 バッチ 2/18（8枚）
+区分: A1 · the dealership counter  [R010 – R017]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R010.png
+An empty customer chair at a sales desk, photographed straight on from the far side of the desk at seated eye height: a plain fabric office chair pushed back a few inches and slightly askew, the near edge of the desk crossing the bottom of the frame as a dark bar, bright showroom floor and soft glass beyond. Nothing on the desk, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, person seated, coat over the chair
+
+■ R011.png
+A plain grey office printer standing on a low cabinet against a pale wall, seen from the side at chest height, a single sheet of paper halfway out of its output slot and hanging slightly. The sheet is completely blank: an unbroken field of off-white paper with no print, no ruling, no letterform, no number and no mark of any kind on it. The printer's own panel is a blank dark rectangle with no icons and no display, and the machine carries no maker's mark. Soft interior daylight Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, printed page, control panel icons, brand logo on the printer
+
+■ R012.png
+A plain unmarked black car key fob lying at the centre of a single contract-sized sheet of paper on a laminate desk, photographed from directly overhead. The sheet is completely blank: an unbroken field of off-white paper with no print, no ruling, no letterform, no number and no mark of any kind on it — it is a completely empty white rectangle with two soft fold-creases across it and nothing printed anywhere, no signature line, no boxes, no small print at the foot. Even light from a window to the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, signature line, printed clauses, small print, boxes with labels
+
+■ R013.png
+The forecourt seen from inside the showroom through the open front door at the end of the day: the door frame makes a dark vertical border down both sides of the frame, low late sun coming in almost level and laying a long bright wedge across the floor tiles in the foreground, the parked cars outside reduced to dark shapes against the glare. Nobody in frame, no signage on the door or the glass Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram, opening hours on the door, vinyl lettering, sunset orange grade
+
+■ R014.png
+A close of a car's wing mirror seen from just behind and to the side, filling the right half of the frame, the mirror glass carrying a small sharp reflection of an empty asphalt forecourt with two distant parked cars on it and a pale sky. The mirror housing is plain unpainted plastic with nothing written on it, and there is no warning text etched into the mirror glass. Flat daylight Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, etched warning text on the mirror, reflection of a person, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram
+
+■ R015.png
+An overhead of a working desk top, filling the frame: a keyboard with COMPLETELY BLANK UNMARKED KEYCAPS, a plain grey mouse, a set of car keys, and a plain white mug with nothing printed on it, arranged the way a desk actually is rather than composed. No paper anywhere on the desk. Even overhead interior light, laminate grain visible Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, letters on the keycaps, printed mug, notepad, sticky notes
+
+■ R016.png
+A back-of-house corridor in a commercial building, photographed straight down its length at eye height: pale painted breeze-block walls, a hard-wearing grey floor, four plain flush doors in a row on the right and one at the far end, all closed, ALL OF THEM WITH BARE FACES — no numbers, no nameplates, no signs, no notices. Even fluorescent light from a run of fittings overhead, nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, door numbers, nameplate, fire notice, exit sign, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram
+
+■ R017.png
+The same car forecourt as the wide daylight lot, now with ONE EMPTY BAY IN THE MIDDLE OF AN OTHERWISE FULL ROW: the painted bay lines make a clear rectangle of bare pale asphalt with a car parked tight on either side of it, and the asphalt inside the empty bay is very slightly cleaner than the asphalt around it. Same standing height and same flat light as the earlier forecourt plate, nobody in frame. No vehicle anywhere in this frame carries a mark of any kind: no badge, no emblem, no oval on the grille, no wordmark, no nameplate, no model lettering, no dealer sticker and no plate of any kind on any part of any of them, front or rear Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram, numbers painted in the bay, reserved sign, person, dusk
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R010.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

@@ -1,0 +1,6377 @@
+{
+ "episode_id": "PD-2026-067-ramirez",
+ "fps": 30,
+ "narration": "ramirez/narration.mp3",
+ "narrationSeconds": 1600.813,
+ "hookSeconds": 19.68,
+ "hookLine": "The letter that follows will not say how to argue with it.",
+ "hook": [
+  {
+   "start": 0.0,
+   "dur": 2.46,
+   "kind": "img",
+   "src": "ramirez/img/R073.png",
+   "seed": "ramirez-hook-00"
+  },
+  {
+   "start": 2.46,
+   "dur": 2.46,
+   "kind": "img",
+   "src": "ramirez/img/R074.png",
+   "seed": "ramirez-hook-01"
+  },
+  {
+   "start": 4.92,
+   "dur": 2.46,
+   "kind": "img",
+   "src": "ramirez/img/R075.png",
+   "seed": "ramirez-hook-02"
+  },
+  {
+   "start": 7.38,
+   "dur": 2.46,
+   "kind": "img",
+   "src": "ramirez/img/R076.png",
+   "seed": "ramirez-hook-03"
+  },
+  {
+   "start": 9.84,
+   "dur": 2.46,
+   "kind": "img",
+   "src": "ramirez/img/R077.png",
+   "seed": "ramirez-hook-04"
+  },
+  {
+   "start": 12.3,
+   "dur": 2.46,
+   "kind": "img",
+   "src": "ramirez/img/R078.png",
+   "seed": "ramirez-hook-05"
+  },
+  {
+   "start": 14.76,
+   "dur": 2.46,
+   "kind": "img",
+   "src": "ramirez/img/R079.png",
+   "seed": "ramirez-hook-06"
+  },
+  {
+   "start": 17.22,
+   "dur": 2.46,
+   "kind": "img",
+   "src": "ramirez/img/R080.png",
+   "seed": "ramirez-hook-07"
+  }
+ ],
+ "cuts": [
+  {
+   "id": "cut-0000",
+   "start": 0.0,
+   "dur": 7.414,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-10148955__bird_s_eye_view_of_a_road_in_a_town.mp4",
+   "seed": "ramirez-0000",
+   "act": "HOOK",
+   "srcSeconds": 54.357,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0001",
+   "start": 7.414,
+   "dur": 7.414,
+   "kind": "footage",
+   "src": "ramirez/motion/R008.mp4",
+   "seed": "ramirez-0001",
+   "act": "HOOK",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0002",
+   "start": 14.828,
+   "dur": 6.652,
+   "kind": "img",
+   "src": "ramirez/img/R001.png",
+   "seed": "ramirez-0002",
+   "act": "HOOK",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0003",
+   "start": 21.48,
+   "dur": 6.462,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-10477780__librarian_carrying_books_in_library.mp4",
+   "seed": "ramirez-0003",
+   "act": "OP",
+   "srcSeconds": 12.053,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0004",
+   "start": 27.942,
+   "dur": 6.462,
+   "kind": "footage",
+   "src": "ramirez/motion/R011.mp4",
+   "seed": "ramirez-0004",
+   "act": "OP",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0005",
+   "start": 34.404,
+   "dur": 5.798,
+   "kind": "img",
+   "src": "ramirez/img/R002.png",
+   "seed": "ramirez-0005",
+   "act": "OP",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0006",
+   "start": 40.202,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-11504678__clear_sky_over_los_angeles_suburbs.mp4",
+   "seed": "ramirez-0006",
+   "act": "ACT_1",
+   "srcSeconds": 13.18,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0007",
+   "start": 45.548,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R013.mp4",
+   "seed": "ramirez-0007",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0008",
+   "start": 50.894,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-13322952__day_and_night_over_city.mp4",
+   "seed": "ramirez-0008",
+   "act": "ACT_1",
+   "srcSeconds": 18.585,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0009",
+   "start": 56.24,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R014.mp4",
+   "seed": "ramirez-0009",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0010",
+   "start": 61.586,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-1728__software_developer_working_on_code_screen_close.mp4",
+   "seed": "ramirez-0010",
+   "act": "ACT_1",
+   "srcSeconds": 18.333,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0011",
+   "start": 66.932,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R003.png",
+   "seed": "ramirez-0011",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0012",
+   "start": 71.73,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-18302__person_counting_money.mp4",
+   "seed": "ramirez-0012",
+   "act": "ACT_1",
+   "srcSeconds": 20.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0013",
+   "start": 77.076,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R024.mp4",
+   "seed": "ramirez-0013",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0014",
+   "start": 82.422,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-2075168__key_on_ignition.mp4",
+   "seed": "ramirez-0014",
+   "act": "ACT_1",
+   "srcSeconds": 7.92,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0015",
+   "start": 87.768,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R033.mp4",
+   "seed": "ramirez-0015",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0016",
+   "start": 93.114,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-20822__large_servers_in_a_datacenter.mp4",
+   "seed": "ramirez-0016",
+   "act": "ACT_1",
+   "srcSeconds": 5.04,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0017",
+   "start": 98.46,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R004.png",
+   "seed": "ramirez-0017",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0018",
+   "start": 103.258,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-22981__young_engineer_walking_through_data_center.mp4",
+   "seed": "ramirez-0018",
+   "act": "ACT_1",
+   "srcSeconds": 36.12,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0019",
+   "start": 108.604,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R034.mp4",
+   "seed": "ramirez-0019",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0020",
+   "start": 113.95,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-23380__time_lapse_of_engineers_working_in_a_data_center.mp4",
+   "seed": "ramirez-0020",
+   "act": "ACT_1",
+   "srcSeconds": 20.36,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0021",
+   "start": 119.296,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R037.mp4",
+   "seed": "ramirez-0021",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0022",
+   "start": 124.642,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-26575132__a_house_is_seen_at_dusk_by_the_water.mp4",
+   "seed": "ramirez-0022",
+   "act": "ACT_1",
+   "srcSeconds": 18.727,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0023",
+   "start": 129.988,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R005.png",
+   "seed": "ramirez-0023",
+   "act": "ACT_1",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0024",
+   "start": 134.786,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-27778015__a_man_is_riding_an_escalator_in_a_subway_station.mp4",
+   "seed": "ramirez-0024",
+   "act": "ACT_1",
+   "srcSeconds": 42.04,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0025",
+   "start": 140.132,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R043.mp4",
+   "seed": "ramirez-0025",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0026",
+   "start": 145.478,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-29188216__serene_view_of_the_white_house_lawn.mp4",
+   "seed": "ramirez-0026",
+   "act": "ACT_1",
+   "srcSeconds": 20.367,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0027",
+   "start": 150.824,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R046.mp4",
+   "seed": "ramirez-0027",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0028",
+   "start": 156.17,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-30494__judge_pregerson_highway_aerial_close_up.mp4",
+   "seed": "ramirez-0028",
+   "act": "ACT_1",
+   "srcSeconds": 31.657,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0029",
+   "start": 161.516,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R006.png",
+   "seed": "ramirez-0029",
+   "act": "ACT_1",
+   "treatment": "focus",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0030",
+   "start": 166.314,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R047.mp4",
+   "seed": "ramirez-0030",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0031",
+   "start": 171.66,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R049.mp4",
+   "seed": "ramirez-0031",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0032",
+   "start": 177.006,
+   "dur": 5.346,
+   "kind": "footage",
+   "src": "ramirez/motion/R053.mp4",
+   "seed": "ramirez-0032",
+   "act": "ACT_1",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0033",
+   "start": 182.352,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R007.png",
+   "seed": "ramirez-0033",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0034",
+   "start": 187.15,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R009.png",
+   "seed": "ramirez-0034",
+   "act": "ACT_1",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0035",
+   "start": 191.948,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R010.png",
+   "seed": "ramirez-0035",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0036",
+   "start": 196.746,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R012.png",
+   "seed": "ramirez-0036",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0037",
+   "start": 201.544,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R015.png",
+   "seed": "ramirez-0037",
+   "act": "ACT_1",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0038",
+   "start": 206.342,
+   "dur": 4.798,
+   "kind": "img",
+   "src": "ramirez/img/R016.png",
+   "seed": "ramirez-0038",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0039",
+   "start": 211.14,
+   "dur": 4.793,
+   "kind": "img",
+   "src": "ramirez/img/R017.png",
+   "seed": "ramirez-0039",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0040",
+   "start": 215.933,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-30611933__dramatic_ocean_horizon_under_stormy_skies.mp4",
+   "seed": "ramirez-0040",
+   "act": "ACT_2",
+   "srcSeconds": 26.927,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0041",
+   "start": 221.365,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R059.mp4",
+   "seed": "ramirez-0041",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0042",
+   "start": 226.797,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-30725324__serene_ocean_waves_under_cloudy_sky.mp4",
+   "seed": "ramirez-0042",
+   "act": "ACT_2",
+   "srcSeconds": 36.47,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0043",
+   "start": 232.229,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R063.mp4",
+   "seed": "ramirez-0043",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0044",
+   "start": 237.661,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-31286335__businessman_walking_with_briefcase_on_urban_stre.mp4",
+   "seed": "ramirez-0044",
+   "act": "ACT_2",
+   "srcSeconds": 6.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0045",
+   "start": 243.093,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R018.png",
+   "seed": "ramirez-0045",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0046",
+   "start": 247.968,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-32825565__aerial_view_busy_evening_at_urban_parking_lot.mp4",
+   "seed": "ramirez-0046",
+   "act": "ACT_2",
+   "srcSeconds": 17.667,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0047",
+   "start": 253.4,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R071.mp4",
+   "seed": "ramirez-0047",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0048",
+   "start": 258.832,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-33030__entrepreneur_receiving_a_call.mp4",
+   "seed": "ramirez-0048",
+   "act": "ACT_2",
+   "srcSeconds": 16.04,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0049",
+   "start": 264.264,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R073.mp4",
+   "seed": "ramirez-0049",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0050",
+   "start": 269.696,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-34199610__stunning_sunset_over_mountain_range_horizon.mp4",
+   "seed": "ramirez-0050",
+   "act": "ACT_2",
+   "srcSeconds": 30.02,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0051",
+   "start": 275.128,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R019.png",
+   "seed": "ramirez-0051",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0052",
+   "start": 280.003,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-37130584__busy_airport_terminal_with_people_traveling.mp4",
+   "seed": "ramirez-0052",
+   "act": "ACT_2",
+   "srcSeconds": 10.636,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0053",
+   "start": 285.435,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R074.mp4",
+   "seed": "ramirez-0053",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0054",
+   "start": 290.867,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-3740029__a_person_walking_carrying_a_traveling_bag.mp4",
+   "seed": "ramirez-0054",
+   "act": "ACT_2",
+   "srcSeconds": 9.428,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0055",
+   "start": 296.299,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R075.mp4",
+   "seed": "ramirez-0055",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0056",
+   "start": 301.731,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-38481__person_entering_bank_details_on_a_smartphone.mp4",
+   "seed": "ramirez-0056",
+   "act": "ACT_2",
+   "srcSeconds": 16.8,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0057",
+   "start": 307.163,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R020.png",
+   "seed": "ramirez-0057",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0058",
+   "start": 312.038,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-38482__entering_bank_details_on_a_computer.mp4",
+   "seed": "ramirez-0058",
+   "act": "ACT_2",
+   "srcSeconds": 13.08,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0059",
+   "start": 317.47,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R076.mp4",
+   "seed": "ramirez-0059",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0060",
+   "start": 322.902,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-3912850__a_person_making_payment_with_the_use_of_card_mac.mp4",
+   "seed": "ramirez-0060",
+   "act": "ACT_2",
+   "srcSeconds": 9.13,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0061",
+   "start": 328.334,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R077.mp4",
+   "seed": "ramirez-0061",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0062",
+   "start": 333.766,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-39790__worried_and_sad_woman_during_a_phone_call.mp4",
+   "seed": "ramirez-0062",
+   "act": "ACT_2",
+   "srcSeconds": 12.875,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0063",
+   "start": 339.198,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R021.png",
+   "seed": "ramirez-0063",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0064",
+   "start": 344.073,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-41268__fingers_typing_extreme_close_up.mp4",
+   "seed": "ramirez-0064",
+   "act": "ACT_2",
+   "srcSeconds": 12.095,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0065",
+   "start": 349.505,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R078.mp4",
+   "seed": "ramirez-0065",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0066",
+   "start": 354.937,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-41638__programmer_using_his_cell_phone_while_working_at.mp4",
+   "seed": "ramirez-0066",
+   "act": "ACT_2",
+   "srcSeconds": 11.011,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0067",
+   "start": 360.369,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R079.mp4",
+   "seed": "ramirez-0067",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0068",
+   "start": 365.801,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-42038__driving_through_a_night_city.mp4",
+   "seed": "ramirez-0068",
+   "act": "ACT_2",
+   "srcSeconds": 7.591,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0069",
+   "start": 371.233,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R022.png",
+   "seed": "ramirez-0069",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0070",
+   "start": 376.108,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-42661__face_of_a_young_woman_working_at_a_desk.mp4",
+   "seed": "ramirez-0070",
+   "act": "ACT_2",
+   "srcSeconds": 8.425,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0071",
+   "start": 381.54,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R080.mp4",
+   "seed": "ramirez-0071",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0072",
+   "start": 386.972,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-42665__professional_woman_working_on_graphs_in_the_offi.mp4",
+   "seed": "ramirez-0072",
+   "act": "ACT_2",
+   "srcSeconds": 10.594,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0073",
+   "start": 392.404,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R081.mp4",
+   "seed": "ramirez-0073",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0074",
+   "start": 397.836,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-4279418__flag_swaying_in_the_pole.mp4",
+   "seed": "ramirez-0074",
+   "act": "ACT_2",
+   "srcSeconds": 83.792,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0075",
+   "start": 403.268,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R023.png",
+   "seed": "ramirez-0075",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0076",
+   "start": 408.143,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-43539__woman_s_hand_using_computer_mouse.mp4",
+   "seed": "ramirez-0076",
+   "act": "ACT_2",
+   "srcSeconds": 20.187,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0077",
+   "start": 413.575,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R082.mp4",
+   "seed": "ramirez-0077",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0078",
+   "start": 419.007,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-4625__empty_airport_luggage_cart_close_up.mp4",
+   "seed": "ramirez-0078",
+   "act": "ACT_2",
+   "srcSeconds": 21.56,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0079",
+   "start": 424.439,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R083.mp4",
+   "seed": "ramirez-0079",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0080",
+   "start": 429.871,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-4801__young_man_sitting_scrolling_on_his_cell_phone.mp4",
+   "seed": "ramirez-0080",
+   "act": "ACT_2",
+   "srcSeconds": 15.716,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0081",
+   "start": 435.303,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R025.png",
+   "seed": "ramirez-0081",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.188
+  },
+  {
+   "id": "cut-0082",
+   "start": 440.178,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-4813__business_partners_meeting.mp4",
+   "seed": "ramirez-0082",
+   "act": "ACT_2",
+   "srcSeconds": 18.585,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0083",
+   "start": 445.61,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R084.mp4",
+   "seed": "ramirez-0083",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0084",
+   "start": 451.042,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-4937__young_woman_stops_her_work_to_answer_a_call.mp4",
+   "seed": "ramirez-0084",
+   "act": "ACT_2",
+   "srcSeconds": 10.219,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0085",
+   "start": 456.474,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R085.mp4",
+   "seed": "ramirez-0085",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0086",
+   "start": 461.906,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-49798__aerial_shot_to_a_big_highway_in_a_city.mp4",
+   "seed": "ramirez-0086",
+   "act": "ACT_2",
+   "srcSeconds": 20.062,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0087",
+   "start": 467.338,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R026.png",
+   "seed": "ramirez-0087",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0088",
+   "start": 472.213,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-50153__sky_view_at_sunset_with_an_airplane_in_the_dista.mp4",
+   "seed": "ramirez-0088",
+   "act": "ACT_2",
+   "srcSeconds": 7.007,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0089",
+   "start": 477.645,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R086.mp4",
+   "seed": "ramirez-0089",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0090",
+   "start": 483.077,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R087.mp4",
+   "seed": "ramirez-0090",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0091",
+   "start": 488.509,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R088.mp4",
+   "seed": "ramirez-0091",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0092",
+   "start": 493.941,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R089.mp4",
+   "seed": "ramirez-0092",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0093",
+   "start": 499.373,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R027.png",
+   "seed": "ramirez-0093",
+   "act": "ACT_2",
+   "treatment": "bleed",
+   "lift": 1.197
+  },
+  {
+   "id": "cut-0094",
+   "start": 504.248,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R090.mp4",
+   "seed": "ramirez-0094",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0095",
+   "start": 509.68,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R091.mp4",
+   "seed": "ramirez-0095",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0096",
+   "start": 515.112,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R092.mp4",
+   "seed": "ramirez-0096",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0097",
+   "start": 520.544,
+   "dur": 5.432,
+   "kind": "footage",
+   "src": "ramirez/motion/R093.mp4",
+   "seed": "ramirez-0097",
+   "act": "ACT_2",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0098",
+   "start": 525.976,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R028.png",
+   "seed": "ramirez-0098",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0099",
+   "start": 530.851,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R029.png",
+   "seed": "ramirez-0099",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.272
+  },
+  {
+   "id": "cut-0100",
+   "start": 535.726,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R030.png",
+   "seed": "ramirez-0100",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0101",
+   "start": 540.601,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R031.png",
+   "seed": "ramirez-0101",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.554
+  },
+  {
+   "id": "cut-0102",
+   "start": 545.476,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R032.png",
+   "seed": "ramirez-0102",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.387
+  },
+  {
+   "id": "cut-0103",
+   "start": 550.351,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R035.png",
+   "seed": "ramirez-0103",
+   "act": "ACT_2",
+   "treatment": "bleed",
+   "lift": 1.355
+  },
+  {
+   "id": "cut-0104",
+   "start": 555.226,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R036.png",
+   "seed": "ramirez-0104",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0105",
+   "start": 560.101,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R038.png",
+   "seed": "ramirez-0105",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.824
+  },
+  {
+   "id": "cut-0106",
+   "start": 564.976,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R039.png",
+   "seed": "ramirez-0106",
+   "act": "ACT_2",
+   "treatment": "bleed",
+   "lift": 1.47
+  },
+  {
+   "id": "cut-0107",
+   "start": 569.851,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R040.png",
+   "seed": "ramirez-0107",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0108",
+   "start": 574.726,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R041.png",
+   "seed": "ramirez-0108",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0109",
+   "start": 579.601,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R042.png",
+   "seed": "ramirez-0109",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0110",
+   "start": 584.476,
+   "dur": 4.875,
+   "kind": "img",
+   "src": "ramirez/img/R044.png",
+   "seed": "ramirez-0110",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.568
+  },
+  {
+   "id": "cut-0111",
+   "start": 589.351,
+   "dur": 4.872,
+   "kind": "img",
+   "src": "ramirez/img/R045.png",
+   "seed": "ramirez-0111",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.407
+  },
+  {
+   "id": "cut-0112",
+   "start": 594.223,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-5043429__man_unloading_boxes_from_van.mp4",
+   "seed": "ramirez-0112",
+   "act": "ACT_3",
+   "srcSeconds": 13.5,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0113",
+   "start": 599.707,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R094.mp4",
+   "seed": "ramirez-0113",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0114",
+   "start": 605.191,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-51615__camera_hovers_over_a_hand_on_a_backlit_keyboard.mp4",
+   "seed": "ramirez-0114",
+   "act": "ACT_3",
+   "srcSeconds": 9.176,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0115",
+   "start": 610.675,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R095.mp4",
+   "seed": "ramirez-0115",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0116",
+   "start": 616.159,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-51616__the_hands_on_an_intense_gaming_session_move_the.mp4",
+   "seed": "ramirez-0116",
+   "act": "ACT_3",
+   "srcSeconds": 15.182,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0117",
+   "start": 621.643,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R048.png",
+   "seed": "ramirez-0117",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0118",
+   "start": 626.564,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-5442__creative_man_thinking_about_work_project_at_desk.mp4",
+   "seed": "ramirez-0118",
+   "act": "ACT_3",
+   "srcSeconds": 10.427,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0119",
+   "start": 632.048,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R096.mp4",
+   "seed": "ramirez-0119",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0120",
+   "start": 637.532,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-5474325__showing_and_getting_a_memory_card.mp4",
+   "seed": "ramirez-0120",
+   "act": "ACT_3",
+   "srcSeconds": 16.48,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0121",
+   "start": 643.016,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R108.mp4",
+   "seed": "ramirez-0121",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0122",
+   "start": 648.5,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-5483096__a_man_in_an_office.mp4",
+   "seed": "ramirez-0122",
+   "act": "ACT_3",
+   "srcSeconds": 58.2,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0123",
+   "start": 653.984,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R050.png",
+   "seed": "ramirez-0123",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0124",
+   "start": 658.905,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-5917492__car_window_view_of_modern_windmills_in_open_fiel.mp4",
+   "seed": "ramirez-0124",
+   "act": "ACT_3",
+   "srcSeconds": 19.353,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0125",
+   "start": 664.389,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R109.mp4",
+   "seed": "ramirez-0125",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0126",
+   "start": 669.873,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-5917607__driving_in_the_roads_of_oklahoma_under_the_blue.mp4",
+   "seed": "ramirez-0126",
+   "act": "ACT_3",
+   "srcSeconds": 8.597,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0127",
+   "start": 675.357,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R120.mp4",
+   "seed": "ramirez-0127",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0128",
+   "start": 680.841,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-5977503__a_woman_engaged_in_a_video_conference.mp4",
+   "seed": "ramirez-0128",
+   "act": "ACT_3",
+   "srcSeconds": 11.12,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0129",
+   "start": 686.325,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R051.png",
+   "seed": "ramirez-0129",
+   "act": "ACT_3",
+   "treatment": "focus",
+   "lift": 1.104
+  },
+  {
+   "id": "cut-0130",
+   "start": 691.246,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-5978698__portrait_of_a_beautiful_woman.mp4",
+   "seed": "ramirez-0130",
+   "act": "ACT_3",
+   "srcSeconds": 34.167,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0131",
+   "start": 696.73,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R121.mp4",
+   "seed": "ramirez-0131",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0132",
+   "start": 702.214,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-6079432__close_up_of_a_roll_of_chains_for_chainsaws.mp4",
+   "seed": "ramirez-0132",
+   "act": "ACT_3",
+   "srcSeconds": 18.005,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0133",
+   "start": 707.698,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R123.mp4",
+   "seed": "ramirez-0133",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0134",
+   "start": 713.182,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-6101339__woman_talking_on_the_phone.mp4",
+   "seed": "ramirez-0134",
+   "act": "ACT_3",
+   "srcSeconds": 21.717,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0135",
+   "start": 718.666,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R052.png",
+   "seed": "ramirez-0135",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0136",
+   "start": 723.587,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-6169116__workers_unloading_a_delivery_truck.mp4",
+   "seed": "ramirez-0136",
+   "act": "ACT_3",
+   "srcSeconds": 25.8,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0137",
+   "start": 729.071,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R125.mp4",
+   "seed": "ramirez-0137",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0138",
+   "start": 734.555,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-6170613__male_worker_loading_boxes_into_a_white_van.mp4",
+   "seed": "ramirez-0138",
+   "act": "ACT_3",
+   "srcSeconds": 14.32,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0139",
+   "start": 740.039,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R127.mp4",
+   "seed": "ramirez-0139",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0140",
+   "start": 745.523,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-6415082__man_looking_at_smartphone_screen.mp4",
+   "seed": "ramirez-0140",
+   "act": "ACT_3",
+   "srcSeconds": 26.5,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0141",
+   "start": 751.007,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R054.png",
+   "seed": "ramirez-0141",
+   "act": "ACT_3",
+   "treatment": "duotone",
+   "lift": 1.441
+  },
+  {
+   "id": "cut-0142",
+   "start": 755.928,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-6534419__different_flags_in_one_pole.mp4",
+   "seed": "ramirez-0142",
+   "act": "ACT_3",
+   "srcSeconds": 18.005,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0143",
+   "start": 761.412,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R130.mp4",
+   "seed": "ramirez-0143",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0144",
+   "start": 766.896,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-6654779__person_unlocking_and_locking_buckle.mp4",
+   "seed": "ramirez-0144",
+   "act": "ACT_3",
+   "srcSeconds": 44.28,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0145",
+   "start": 772.38,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R132.mp4",
+   "seed": "ramirez-0145",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0146",
+   "start": 777.864,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-6749377__aerial_view_of_skyscrapers_rooftops.mp4",
+   "seed": "ramirez-0146",
+   "act": "ACT_3",
+   "srcSeconds": 23.125,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0147",
+   "start": 783.348,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R055.png",
+   "seed": "ramirez-0147",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0148",
+   "start": 788.269,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-6929603__person_preparing_tax_forms.mp4",
+   "seed": "ramirez-0148",
+   "act": "ACT_3",
+   "srcSeconds": 9.508,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0149",
+   "start": 793.753,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R145.mp4",
+   "seed": "ramirez-0149",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0150",
+   "start": 799.237,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-7647676__people_clapping_hands_during_conference.mp4",
+   "seed": "ramirez-0150",
+   "act": "ACT_3",
+   "srcSeconds": 16.633,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0151",
+   "start": 804.721,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R008.mp4",
+   "seed": "ramirez-0151",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0152",
+   "start": 810.205,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-7704860__slow_motion_of_a_usa_flag_waving.mp4",
+   "seed": "ramirez-0152",
+   "act": "ACT_3",
+   "srcSeconds": 24.533,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0153",
+   "start": 815.689,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R056.png",
+   "seed": "ramirez-0153",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0154",
+   "start": 820.61,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-7735903__a_person_calculating_family_budget.mp4",
+   "seed": "ramirez-0154",
+   "act": "ACT_3",
+   "srcSeconds": 16.24,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0155",
+   "start": 826.094,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R011.mp4",
+   "seed": "ramirez-0155",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0156",
+   "start": 831.578,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-7821610__close_up_video_of_a_credit_card.mp4",
+   "seed": "ramirez-0156",
+   "act": "ACT_3",
+   "srcSeconds": 7.033,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0157",
+   "start": 837.062,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R013.mp4",
+   "seed": "ramirez-0157",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0158",
+   "start": 842.546,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-7868__cables_in_a_server_room.mp4",
+   "seed": "ramirez-0158",
+   "act": "ACT_3",
+   "srcSeconds": 7.88,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0159",
+   "start": 848.03,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R057.png",
+   "seed": "ramirez-0159",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0160",
+   "start": 852.951,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R014.mp4",
+   "seed": "ramirez-0160",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0161",
+   "start": 858.435,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R024.mp4",
+   "seed": "ramirez-0161",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0162",
+   "start": 863.919,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R033.mp4",
+   "seed": "ramirez-0162",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0163",
+   "start": 869.403,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R034.mp4",
+   "seed": "ramirez-0163",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0164",
+   "start": 874.887,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R037.mp4",
+   "seed": "ramirez-0164",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0165",
+   "start": 880.371,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R058.png",
+   "seed": "ramirez-0165",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0166",
+   "start": 885.292,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R043.mp4",
+   "seed": "ramirez-0166",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0167",
+   "start": 890.776,
+   "dur": 5.484,
+   "kind": "footage",
+   "src": "ramirez/motion/R046.mp4",
+   "seed": "ramirez-0167",
+   "act": "ACT_3",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0168",
+   "start": 896.26,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R060.png",
+   "seed": "ramirez-0168",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0169",
+   "start": 901.181,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R061.png",
+   "seed": "ramirez-0169",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0170",
+   "start": 906.102,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R062.png",
+   "seed": "ramirez-0170",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0171",
+   "start": 911.023,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R064.png",
+   "seed": "ramirez-0171",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0172",
+   "start": 915.944,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R065.png",
+   "seed": "ramirez-0172",
+   "act": "ACT_3",
+   "treatment": "duotone",
+   "lift": 1.304
+  },
+  {
+   "id": "cut-0173",
+   "start": 920.865,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R066.png",
+   "seed": "ramirez-0173",
+   "act": "ACT_3",
+   "treatment": "focus",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0174",
+   "start": 925.786,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R067.png",
+   "seed": "ramirez-0174",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0175",
+   "start": 930.707,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R068.png",
+   "seed": "ramirez-0175",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0176",
+   "start": 935.628,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R069.png",
+   "seed": "ramirez-0176",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0177",
+   "start": 940.549,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R070.png",
+   "seed": "ramirez-0177",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0178",
+   "start": 945.47,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R072.png",
+   "seed": "ramirez-0178",
+   "act": "ACT_3",
+   "treatment": "duotone",
+   "lift": 1.4
+  },
+  {
+   "id": "cut-0179",
+   "start": 950.391,
+   "dur": 4.921,
+   "kind": "img",
+   "src": "ramirez/img/R097.png",
+   "seed": "ramirez-0179",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0180",
+   "start": 955.312,
+   "dur": 4.898,
+   "kind": "img",
+   "src": "ramirez/img/R098.png",
+   "seed": "ramirez-0180",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0181",
+   "start": 960.21,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-7878__flags_on_a_skyscraper.mp4",
+   "seed": "ramirez-0181",
+   "act": "ACT_4",
+   "srcSeconds": 12.9,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0182",
+   "start": 965.661,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R047.mp4",
+   "seed": "ramirez-0182",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0183",
+   "start": 971.112,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8116794__close_up_video_of_a_woman_hands.mp4",
+   "seed": "ramirez-0183",
+   "act": "ACT_4",
+   "srcSeconds": 15.5,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0184",
+   "start": 976.563,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R049.mp4",
+   "seed": "ramirez-0184",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0185",
+   "start": 982.014,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8348719__man_looking_at_graphs_on_a_monitor.mp4",
+   "seed": "ramirez-0185",
+   "act": "ACT_4",
+   "srcSeconds": 9.365,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0186",
+   "start": 987.465,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R099.png",
+   "seed": "ramirez-0186",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0187",
+   "start": 992.357,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8465184__person_using_credit_card.mp4",
+   "seed": "ramirez-0187",
+   "act": "ACT_4",
+   "srcSeconds": 11.775,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0188",
+   "start": 997.808,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R053.mp4",
+   "seed": "ramirez-0188",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0189",
+   "start": 1003.259,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8472__midwest_traffic.mp4",
+   "seed": "ramirez-0189",
+   "act": "ACT_4",
+   "srcSeconds": 14.306,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0190",
+   "start": 1008.71,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R059.mp4",
+   "seed": "ramirez-0190",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0191",
+   "start": 1014.161,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8531818__close_up_of_a_female_hand.mp4",
+   "seed": "ramirez-0191",
+   "act": "ACT_4",
+   "srcSeconds": 60.64,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0192",
+   "start": 1019.612,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R100.png",
+   "seed": "ramirez-0192",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0193",
+   "start": 1024.504,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8571783__a_man_looking_at_the_window.mp4",
+   "seed": "ramirez-0193",
+   "act": "ACT_4",
+   "srcSeconds": 14.2,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0194",
+   "start": 1029.955,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R063.mp4",
+   "seed": "ramirez-0194",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0195",
+   "start": 1035.406,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8731197__businessmen_talking_together.mp4",
+   "seed": "ramirez-0195",
+   "act": "ACT_4",
+   "srcSeconds": 9.72,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0196",
+   "start": 1040.857,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R071.mp4",
+   "seed": "ramirez-0196",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0197",
+   "start": 1046.308,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8860239__elderly_man_looking_outdoor_while_touching_his_f.mp4",
+   "seed": "ramirez-0197",
+   "act": "ACT_4",
+   "srcSeconds": 34.96,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0198",
+   "start": 1051.759,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R101.png",
+   "seed": "ramirez-0198",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0199",
+   "start": 1056.651,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8869980__money_for_tax_payment.mp4",
+   "seed": "ramirez-0199",
+   "act": "ACT_4",
+   "srcSeconds": 15.28,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0200",
+   "start": 1062.102,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R073.mp4",
+   "seed": "ramirez-0200",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0201",
+   "start": 1067.553,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-8869990__a_man_walking_in_the_office.mp4",
+   "seed": "ramirez-0201",
+   "act": "ACT_4",
+   "srcSeconds": 12.56,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0202",
+   "start": 1073.004,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R074.mp4",
+   "seed": "ramirez-0202",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0203",
+   "start": 1078.455,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-9024__pedestrian_traffic_light.mp4",
+   "seed": "ramirez-0203",
+   "act": "ACT_4",
+   "srcSeconds": 12.596,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0204",
+   "start": 1083.906,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R102.png",
+   "seed": "ramirez-0204",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0205",
+   "start": 1088.798,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-9831124__close_up_shot_of_a_male_hand.mp4",
+   "seed": "ramirez-0205",
+   "act": "ACT_4",
+   "srcSeconds": 21.2,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0206",
+   "start": 1094.249,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R075.mp4",
+   "seed": "ramirez-0206",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0207",
+   "start": 1099.7,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-9841147__a_woman_looking_for_job_hiring_using_a_magazine.mp4",
+   "seed": "ramirez-0207",
+   "act": "ACT_4",
+   "srcSeconds": 62.2,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0208",
+   "start": 1105.151,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R076.mp4",
+   "seed": "ramirez-0208",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0209",
+   "start": 1110.602,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_1025__hitch_hiking_travelling_travelers_backpackers_ba.mp4",
+   "seed": "ramirez-0209",
+   "act": "ACT_4",
+   "srcSeconds": 13.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0210",
+   "start": 1116.053,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R103.png",
+   "seed": "ramirez-0210",
+   "act": "ACT_4",
+   "treatment": "focus",
+   "lift": 1.668
+  },
+  {
+   "id": "cut-0211",
+   "start": 1120.945,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_10836__broadway_street_new_york_crossing_usa_america_ma.mp4",
+   "seed": "ramirez-0211",
+   "act": "ACT_4",
+   "srcSeconds": 16.042,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0212",
+   "start": 1126.396,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R077.mp4",
+   "seed": "ramirez-0212",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0213",
+   "start": 1131.847,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_110272__notebook_computer_digital_technology_business_of.mp4",
+   "seed": "ramirez-0213",
+   "act": "ACT_4",
+   "srcSeconds": 7.7,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0214",
+   "start": 1137.298,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R078.mp4",
+   "seed": "ramirez-0214",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0215",
+   "start": 1142.749,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R079.mp4",
+   "seed": "ramirez-0215",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0216",
+   "start": 1148.2,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R104.png",
+   "seed": "ramirez-0216",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0217",
+   "start": 1153.092,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R080.mp4",
+   "seed": "ramirez-0217",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0218",
+   "start": 1158.543,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R081.mp4",
+   "seed": "ramirez-0218",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0219",
+   "start": 1163.994,
+   "dur": 5.451,
+   "kind": "footage",
+   "src": "ramirez/motion/R082.mp4",
+   "seed": "ramirez-0219",
+   "act": "ACT_4",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0220",
+   "start": 1169.445,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R105.png",
+   "seed": "ramirez-0220",
+   "act": "ACT_4",
+   "treatment": "duotone",
+   "lift": 1.062
+  },
+  {
+   "id": "cut-0221",
+   "start": 1174.337,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R106.png",
+   "seed": "ramirez-0221",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0222",
+   "start": 1179.229,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R107.png",
+   "seed": "ramirez-0222",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0223",
+   "start": 1184.121,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R110.png",
+   "seed": "ramirez-0223",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0224",
+   "start": 1189.013,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R111.png",
+   "seed": "ramirez-0224",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0225",
+   "start": 1193.905,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R112.png",
+   "seed": "ramirez-0225",
+   "act": "ACT_4",
+   "treatment": "bleed",
+   "lift": 1.794
+  },
+  {
+   "id": "cut-0226",
+   "start": 1198.797,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R113.png",
+   "seed": "ramirez-0226",
+   "act": "ACT_4",
+   "treatment": "duotone",
+   "lift": 1.453
+  },
+  {
+   "id": "cut-0227",
+   "start": 1203.689,
+   "dur": 4.892,
+   "kind": "img",
+   "src": "ramirez/img/R114.png",
+   "seed": "ramirez-0227",
+   "act": "ACT_4",
+   "treatment": "focus",
+   "lift": 1.184
+  },
+  {
+   "id": "cut-0228",
+   "start": 1208.581,
+   "dur": 4.886,
+   "kind": "img",
+   "src": "ramirez/img/R115.png",
+   "seed": "ramirez-0228",
+   "act": "ACT_4",
+   "treatment": "bleed",
+   "lift": 1.463
+  },
+  {
+   "id": "cut-0229",
+   "start": 1213.467,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_11453__architecture_skyline_downtown_red_light_towers_s.mp4",
+   "seed": "ramirez-0229",
+   "act": "ACT_5",
+   "srcSeconds": 11.605,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0230",
+   "start": 1218.962,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R083.mp4",
+   "seed": "ramirez-0230",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0231",
+   "start": 1224.457,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_126557__man_person_reflection_thinking_think_lifestyle.mp4",
+   "seed": "ramirez-0231",
+   "act": "ACT_5",
+   "srcSeconds": 9.108,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0232",
+   "start": 1229.952,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R084.mp4",
+   "seed": "ramirez-0232",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0233",
+   "start": 1235.447,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_129__new_york_taxi_cabs_street_traffic_evening_dusk_d.mp4",
+   "seed": "ramirez-0233",
+   "act": "ACT_5",
+   "srcSeconds": 12.32,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0234",
+   "start": 1240.942,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R116.png",
+   "seed": "ramirez-0234",
+   "act": "ACT_5",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0235",
+   "start": 1245.874,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_136258__business_office_contemporary_computer_work_desk.mp4",
+   "seed": "ramirez-0235",
+   "act": "ACT_5",
+   "srcSeconds": 5.418,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0236",
+   "start": 1251.369,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R085.mp4",
+   "seed": "ramirez-0236",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0237",
+   "start": 1256.864,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_137267__office_business_contemporary_computer_work_desk.mp4",
+   "seed": "ramirez-0237",
+   "act": "ACT_5",
+   "srcSeconds": 10.88,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0238",
+   "start": 1262.359,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R086.mp4",
+   "seed": "ramirez-0238",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0239",
+   "start": 1267.854,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_141672__call_center_consultant_customer_service_business.mp4",
+   "seed": "ramirez-0239",
+   "act": "ACT_5",
+   "srcSeconds": 13.533,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0240",
+   "start": 1273.349,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R117.png",
+   "seed": "ramirez-0240",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0241",
+   "start": 1278.281,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_148867__accounting_analyst_analyze_app_business_business.mp4",
+   "seed": "ramirez-0241",
+   "act": "ACT_5",
+   "srcSeconds": 14.813,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0242",
+   "start": 1283.776,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R087.mp4",
+   "seed": "ramirez-0242",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0243",
+   "start": 1289.271,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_156818__dollar_us_dollar_american_dollar_us_dollar_flag.mp4",
+   "seed": "ramirez-0243",
+   "act": "ACT_5",
+   "srcSeconds": 10.04,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0244",
+   "start": 1294.766,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R088.mp4",
+   "seed": "ramirez-0244",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0245",
+   "start": 1300.261,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_1658__whiteboard_planning_strategy_writing_plan_teamwo.mp4",
+   "seed": "ramirez-0245",
+   "act": "ACT_5",
+   "srcSeconds": 13.4,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0246",
+   "start": 1305.756,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R118.png",
+   "seed": "ramirez-0246",
+   "act": "ACT_5",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0247",
+   "start": 1310.688,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_175344__empty_road_street_slope_traffic_sign_end_of_the.mp4",
+   "seed": "ramirez-0247",
+   "act": "ACT_5",
+   "srcSeconds": 12.08,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0248",
+   "start": 1316.183,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R089.mp4",
+   "seed": "ramirez-0248",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0249",
+   "start": 1321.678,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_186108__keyboard_laptop_computer_hard_working_people_wor.mp4",
+   "seed": "ramirez-0249",
+   "act": "ACT_5",
+   "srcSeconds": 11.05,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0250",
+   "start": 1327.173,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R090.mp4",
+   "seed": "ramirez-0250",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0251",
+   "start": 1332.668,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_191181__mountains_snow_fog_mist_andes_mountains_ice_moun.mp4",
+   "seed": "ramirez-0251",
+   "act": "ACT_5",
+   "srcSeconds": 18.282,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0252",
+   "start": 1338.163,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R119.png",
+   "seed": "ramirez-0252",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.461
+  },
+  {
+   "id": "cut-0253",
+   "start": 1343.095,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_19409__sun_fog_sunset_hill_landscape_haze_sunlight_time.mp4",
+   "seed": "ramirez-0253",
+   "act": "ACT_5",
+   "srcSeconds": 50.033,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0254",
+   "start": 1348.59,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R091.mp4",
+   "seed": "ramirez-0254",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0255",
+   "start": 1354.085,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_206221__highway_freeway_road_traffic_roadway_cars_trucks.mp4",
+   "seed": "ramirez-0255",
+   "act": "ACT_5",
+   "srcSeconds": 17.301,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0256",
+   "start": 1359.58,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R092.mp4",
+   "seed": "ramirez-0256",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0257",
+   "start": 1365.075,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_215751__man_office_work_business_payroll_payroll_managem.mp4",
+   "seed": "ramirez-0257",
+   "act": "ACT_5",
+   "srcSeconds": 18.64,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0258",
+   "start": 1370.57,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R122.png",
+   "seed": "ramirez-0258",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0259",
+   "start": 1375.502,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_222632__mountains_clouds_mountain_sky_cloudy_overcast_cl.mp4",
+   "seed": "ramirez-0259",
+   "act": "ACT_5",
+   "srcSeconds": 22.933,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0260",
+   "start": 1380.997,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R093.mp4",
+   "seed": "ramirez-0260",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0261",
+   "start": 1386.492,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_227133__laptop_email_typing_newsletter_communication_mes.mp4",
+   "seed": "ramirez-0261",
+   "act": "ACT_5",
+   "srcSeconds": 17.985,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0262",
+   "start": 1391.987,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R094.mp4",
+   "seed": "ramirez-0262",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0263",
+   "start": 1397.482,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_244023__yellow_leaves_branch_maple_autumn_japan.mp4",
+   "seed": "ramirez-0263",
+   "act": "ACT_5",
+   "srcSeconds": 26.267,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0264",
+   "start": 1402.977,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R124.png",
+   "seed": "ramirez-0264",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.441
+  },
+  {
+   "id": "cut-0265",
+   "start": 1407.909,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_24891__city_river_water_sky_architecture_outdoor_clouds.mp4",
+   "seed": "ramirez-0265",
+   "act": "ACT_5",
+   "srcSeconds": 20.938,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0266",
+   "start": 1413.404,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R095.mp4",
+   "seed": "ramirez-0266",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0267",
+   "start": 1418.899,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_249067__man_home_office_computer_work_laptop_desk_office.mp4",
+   "seed": "ramirez-0267",
+   "act": "ACT_5",
+   "srcSeconds": 10.042,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0268",
+   "start": 1424.394,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R096.mp4",
+   "seed": "ramirez-0268",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0269",
+   "start": 1429.889,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_28043__typing_computer_working_office_work_internet_scr.mp4",
+   "seed": "ramirez-0269",
+   "act": "ACT_5",
+   "srcSeconds": 8.108,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0270",
+   "start": 1435.384,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R126.png",
+   "seed": "ramirez-0270",
+   "act": "ACT_5",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0271",
+   "start": 1440.316,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_2967__iphone_computer_mouse_click_computing_online_com.mp4",
+   "seed": "ramirez-0271",
+   "act": "ACT_5",
+   "srcSeconds": 16.016,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0272",
+   "start": 1445.811,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R108.mp4",
+   "seed": "ramirez-0272",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0273",
+   "start": 1451.306,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R109.mp4",
+   "seed": "ramirez-0273",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0274",
+   "start": 1456.801,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R120.mp4",
+   "seed": "ramirez-0274",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0275",
+   "start": 1462.296,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R121.mp4",
+   "seed": "ramirez-0275",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0276",
+   "start": 1467.791,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R128.png",
+   "seed": "ramirez-0276",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0277",
+   "start": 1472.723,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R123.mp4",
+   "seed": "ramirez-0277",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0278",
+   "start": 1478.218,
+   "dur": 5.495,
+   "kind": "footage",
+   "src": "ramirez/motion/R125.mp4",
+   "seed": "ramirez-0278",
+   "act": "ACT_5",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0279",
+   "start": 1483.713,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R129.png",
+   "seed": "ramirez-0279",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.098
+  },
+  {
+   "id": "cut-0280",
+   "start": 1488.645,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R131.png",
+   "seed": "ramirez-0280",
+   "act": "ACT_5",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0281",
+   "start": 1493.577,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R133.png",
+   "seed": "ramirez-0281",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0282",
+   "start": 1498.509,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R134.png",
+   "seed": "ramirez-0282",
+   "act": "ACT_5",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0283",
+   "start": 1503.441,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R135.png",
+   "seed": "ramirez-0283",
+   "act": "ACT_5",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0284",
+   "start": 1508.373,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R136.png",
+   "seed": "ramirez-0284",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0285",
+   "start": 1513.305,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R137.png",
+   "seed": "ramirez-0285",
+   "act": "ACT_5",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0286",
+   "start": 1518.237,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R138.png",
+   "seed": "ramirez-0286",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.549
+  },
+  {
+   "id": "cut-0287",
+   "start": 1523.169,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R139.png",
+   "seed": "ramirez-0287",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0288",
+   "start": 1528.101,
+   "dur": 4.932,
+   "kind": "img",
+   "src": "ramirez/img/R140.png",
+   "seed": "ramirez-0288",
+   "act": "ACT_5",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0289",
+   "start": 1533.033,
+   "dur": 4.943,
+   "kind": "img",
+   "src": "ramirez/img/R141.png",
+   "seed": "ramirez-0289",
+   "act": "ACT_5",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0290",
+   "start": 1537.976,
+   "dur": 5.422,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_34623__sunset_haze_sun_mood_light_sunlight_clouds_horiz.mp4",
+   "seed": "ramirez-0290",
+   "act": "ENDING",
+   "srcSeconds": 27.527,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0291",
+   "start": 1543.398,
+   "dur": 5.422,
+   "kind": "footage",
+   "src": "ramirez/motion/R127.mp4",
+   "seed": "ramirez-0291",
+   "act": "ENDING",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0292",
+   "start": 1548.82,
+   "dur": 5.422,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_53125__los_angeles_traffic_california_road_cali_freeway.mp4",
+   "seed": "ramirez-0292",
+   "act": "ENDING",
+   "srcSeconds": 13.867,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0293",
+   "start": 1554.242,
+   "dur": 5.422,
+   "kind": "footage",
+   "src": "ramirez/motion/R130.mp4",
+   "seed": "ramirez-0293",
+   "act": "ENDING",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0294",
+   "start": 1559.664,
+   "dur": 5.422,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_74373__buildings_street_urban_city_b_roll_cincinnati_sc.mp4",
+   "seed": "ramirez-0294",
+   "act": "ENDING",
+   "srcSeconds": 22.633,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0295",
+   "start": 1565.086,
+   "dur": 4.866,
+   "kind": "img",
+   "src": "ramirez/img/R142.png",
+   "seed": "ramirez-0295",
+   "act": "ENDING",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0296",
+   "start": 1569.952,
+   "dur": 5.422,
+   "kind": "footage",
+   "src": "ramirez/factory/AR-v_82049__fence_metal_barrier_closure_cage_grid_discharge.mp4",
+   "seed": "ramirez-0296",
+   "act": "ENDING",
+   "srcSeconds": 12.946,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0297",
+   "start": 1575.374,
+   "dur": 5.422,
+   "kind": "footage",
+   "src": "ramirez/motion/R132.mp4",
+   "seed": "ramirez-0297",
+   "act": "ENDING",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0298",
+   "start": 1580.796,
+   "dur": 5.422,
+   "kind": "footage",
+   "src": "ramirez/motion/R145.mp4",
+   "seed": "ramirez-0298",
+   "act": "ENDING",
+   "srcSeconds": 5.033,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0299",
+   "start": 1586.218,
+   "dur": 4.866,
+   "kind": "img",
+   "src": "ramirez/img/R143.png",
+   "seed": "ramirez-0299",
+   "act": "ENDING",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0300",
+   "start": 1591.084,
+   "dur": 4.866,
+   "kind": "img",
+   "src": "ramirez/img/R144.png",
+   "seed": "ramirez-0300",
+   "act": "ENDING",
+   "treatment": "duotone",
+   "lift": 1.85
+  },
+  {
+   "id": "cut-0301",
+   "start": 1595.95,
+   "dur": 4.863,
+   "kind": "img",
+   "src": "ramirez/img/R146.png",
+   "seed": "ramirez-0301",
+   "act": "ENDING",
+   "treatment": "focus"
+  }
+ ],
+ "captions": [
+  {
+   "start": 0.0,
+   "end": 3.598,
+   "text": "Dublin, California. February 27th, 2011."
+  },
+  {
+   "start": 3.298,
+   "end": 6.824,
+   "text": "Sergio Ramirez has come to buy a Nissan Maxima."
+  },
+  {
+   "start": 6.524,
+   "end": 9.91,
+   "text": "His wife is with him, and his father-in-law."
+  },
+  {
+   "start": 9.61,
+   "end": 14.575,
+   "text": "The salesman runs a credit check, and says Nissan\nwill not sell him the car."
+  },
+  {
+   "start": 14.275,
+   "end": 16.64,
+   "text": "His name is on a terrorist list."
+  },
+  {
+   "start": 16.34,
+   "end": 19.68,
+   "text": "The letter that follows will not say how to argue\nwith it."
+  },
+  {
+   "start": 20.88,
+   "end": 23.756,
+   "text": "His wife buys the car in her own name."
+  },
+  {
+   "start": 23.456,
+   "end": 27.701,
+   "text": "Everything that happens after that — a jury,\nan appeal,"
+  },
+  {
+   "start": 27.101,
+   "end": 31.997,
+   "text": "and the Supreme Court of the United States — turns\non one question."
+  },
+  {
+   "start": 31.697,
+   "end": 34.526,
+   "text": "Not whether the list was wrong about him."
+  },
+  {
+   "start": 34.226,
+   "end": 38.402,
+   "text": "Whether the piece of paper it was written on ever\nleft the building."
+  },
+  {
+   "start": 39.602,
+   "end": 43.592,
+   "text": "The dealership ran his credit, the way\na dealership does."
+  },
+  {
+   "start": 43.292,
+   "end": 47.053,
+   "text": "What came back was a report produced\nby TransUnion,"
+  },
+  {
+   "start": 46.453,
+   "end": 49.743,
+   "text": "and it carried an alert across the top of it."
+  },
+  {
+   "start": 49.443,
+   "end": 53.334,
+   "text": "The alert said that the name that had been entered\nmatched a name"
+  },
+  {
+   "start": 52.734,
+   "end": 55.291,
+   "text": "on something called the OFAC database."
+  },
+  {
+   "start": 54.991,
+   "end": 58.817,
+   "text": "A salesman told him Nissan would not sell him\nthe car,"
+  },
+  {
+   "start": 58.217,
+   "end": 61.164,
+   "text": "because his name was on a terrorist list."
+  },
+  {
+   "start": 60.864,
+   "end": 64.622,
+   "text": "That is the entire record of what was said\nat that counter."
+  },
+  {
+   "start": 64.322,
+   "end": 67.971,
+   "text": "Nobody in this film knows what the salesman\nwas looking at,"
+  },
+  {
+   "start": 67.371,
+   "end": 72.653,
+   "text": "or what he had been told, because no court ever\nasked him. He was not a party."
+  },
+  {
+   "start": 72.353,
+   "end": 78.037,
+   "text": "He is not named anywhere in either opinion.\nHis wife bought the car in her own name."
+  },
+  {
+   "start": 77.737,
+   "end": 81.82,
+   "text": "The next day, Ramirez asked TransUnion for his own\ncredit file."
+  },
+  {
+   "start": 81.52,
+   "end": 83.792,
+   "text": "They sent it the same day."
+  },
+  {
+   "start": 83.492,
+   "end": 87.719,
+   "text": "It came with the standard federal summary\nof a consumer's rights,"
+  },
+  {
+   "start": 87.119,
+   "end": 89.804,
+   "text": "and it did not mention the alert at all."
+  },
+  {
+   "start": 89.504,
+   "end": 94.445,
+   "text": "The day after that, a second envelope arrived.\nThis one was about the alert."
+  },
+  {
+   "start": 94.145,
+   "end": 95.994,
+   "text": "It told him that the name"
+  },
+  {
+   "start": 95.394,
+   "end": 100.116,
+   "text": "on his TransUnion credit file was considered\na potential match to information"
+  },
+  {
+   "start": 99.516,
+   "end": 102.115,
+   "text": "on a United States Treasury database —"
+  },
+  {
+   "start": 101.515,
+   "end": 104.637,
+   "text": "and it did not enclose another copy of his rights."
+  },
+  {
+   "start": 104.337,
+   "end": 108.699,
+   "text": "Then the letter explained how this sort of thing\nis supposed to be checked."
+  },
+  {
+   "start": 108.399,
+   "end": 110.921,
+   "text": "Financial institutions, it said,"
+  },
+  {
+   "start": 110.321,
+   "end": 114.668,
+   "text": "are required to check customers' names\nagainst the OFAC database,"
+  },
+  {
+   "start": 114.068,
+   "end": 116.876,
+   "text": "and if a potential name match is found,"
+  },
+  {
+   "start": 116.276,
+   "end": 121.073,
+   "text": "to verify whether their potential customer\nis the person on the database."
+  },
+  {
+   "start": 120.773,
+   "end": 125.805,
+   "text": "For that reason, it said, some institutions\nmay ask for your date of birth,"
+  },
+  {
+   "start": 125.205,
+   "end": 129.082,
+   "text": "or ask to see a government-issued form\nof identification."
+  },
+  {
+   "start": 128.782,
+   "end": 133.608,
+   "text": "That is TransUnion's own letter, describing\nthe check a bank should make."
+  },
+  {
+   "start": 133.308,
+   "end": 138.92,
+   "text": "A date of birth. A piece of identification.\nSomething other than a name."
+  },
+  {
+   "start": 138.62,
+   "end": 141.468,
+   "text": "And enclosed with it were the OFAC records"
+  },
+  {
+   "start": 140.868,
+   "end": 143.818,
+   "text": "for the two people he had supposedly matched."
+  },
+  {
+   "start": 143.518,
+   "end": 147.044,
+   "text": "The Ninth Circuit describes what those records\ncontained."
+  },
+  {
+   "start": 147.042,
+   "end": 153.842,
+   "text": "First, middle and last names. Dates of birth.\nPassport information."
+  },
+  {
+   "start": 153.542,
+   "end": 158.25,
+   "text": "He had two mailings in front of him now. One said\nnothing about any alert."
+  },
+  {
+   "start": 157.95,
+   "end": 161.615,
+   "text": "The other said he was a potential match\nto a Treasury list."
+  },
+  {
+   "start": 161.315,
+   "end": 164.655,
+   "text": "Ramirez testified that he was confused by them."
+  },
+  {
+   "start": 164.355,
+   "end": 167.015,
+   "text": "The absence of any OFAC information"
+  },
+  {
+   "start": 166.415,
+   "end": 170.899,
+   "text": "in the credit-report mailing suggested the alert\nhad been removed."
+  },
+  {
+   "start": 170.599,
+   "end": 176.097,
+   "text": "The other mailing suggested otherwise. Neither one\ntold him how to dispute anything."
+  },
+  {
+   "start": 175.797,
+   "end": 178.626,
+   "text": "He cancelled a trip he had planned."
+  },
+  {
+   "start": 178.326,
+   "end": 183.291,
+   "text": "The Ninth Circuit calls it an international\nvacation he had planned with his family."
+  },
+  {
+   "start": 182.991,
+   "end": 188.156,
+   "text": "The Supreme Court says he consulted a lawyer\nand ultimately cancelled a planned trip"
+  },
+  {
+   "start": 187.556,
+   "end": 191.878,
+   "text": "to Mexico. TransUnion eventually removed the alert\nfrom his file."
+  },
+  {
+   "start": 191.578,
+   "end": 197.54,
+   "text": "So that is one man, over about a week, in one\ntown. A car he did not buy."
+  },
+  {
+   "start": 197.24,
+   "end": 203.223,
+   "text": "Two letters that disagreed with each other.\nA lawyer. A trip he did not take."
+  },
+  {
+   "start": 202.923,
+   "end": 207.265,
+   "text": "Everything past that point is about a question he\ncould not have asked"
+  },
+  {
+   "start": 206.665,
+   "end": 210.861,
+   "text": "at the counter, because nobody at the counter\ncould have answered it."
+  },
+  {
+   "start": 210.561,
+   "end": 214.133,
+   "text": "How did a machine decide that his name\nwas on that list?"
+  },
+  {
+   "start": 215.333,
+   "end": 218.719,
+   "text": "The list is real, and it belongs to the Treasury."
+  },
+  {
+   "start": 218.419,
+   "end": 222.943,
+   "text": "The Office of Foreign Assets Control publishes\na list of individuals"
+  },
+  {
+   "start": 222.343,
+   "end": 226.787,
+   "text": "and companies owned or controlled by, or acting\nfor or on behalf of,"
+  },
+  {
+   "start": 226.187,
+   "end": 231.303,
+   "text": "targeted countries. It also lists individuals,\ngroups and entities —"
+  },
+  {
+   "start": 230.703,
+   "end": 234.172,
+   "text": "such as terrorists and narcotics traffickers —"
+  },
+  {
+   "start": 233.572,
+   "end": 237.662,
+   "text": "designated under programs\nthat are not country-specific."
+  },
+  {
+   "start": 237.362,
+   "end": 241.259,
+   "text": "Collectively, they are called Specially Designated\nNationals."
+  },
+  {
+   "start": 240.959,
+   "end": 242.837,
+   "text": "Their assets are blocked,"
+  },
+  {
+   "start": 242.237,
+   "end": 246.528,
+   "text": "and United States persons are generally prohibited\nfrom dealing with them."
+  },
+  {
+   "start": 246.228,
+   "end": 249.196,
+   "text": "Treasury puts it more exactly than that."
+  },
+  {
+   "start": 248.896,
+   "end": 253.605,
+   "text": "United States persons are prohibited from engaging\nin any transactions"
+  },
+  {
+   "start": 253.005,
+   "end": 255.829,
+   "text": "with Specially Designated Nationals,"
+  },
+  {
+   "start": 255.229,
+   "end": 260.572,
+   "text": "and must block any property in their possession\nor under their control in which one"
+  },
+  {
+   "start": 259.972,
+   "end": 264.749,
+   "text": "of them has an interest. The Supreme Court's own\nsummary is shorter."
+  },
+  {
+   "start": 264.449,
+   "end": 268.748,
+   "text": "Individuals on the OFAC list are terrorists, drug\ntraffickers,"
+  },
+  {
+   "start": 268.148,
+   "end": 270.297,
+   "text": "or other serious criminals."
+  },
+  {
+   "start": 269.997,
+   "end": 274.591,
+   "text": "It is generally unlawful to transact business\nwith any person on the list."
+  },
+  {
+   "start": 274.291,
+   "end": 276.238,
+   "text": "How long is the list?"
+  },
+  {
+   "start": 275.938,
+   "end": 279.557,
+   "text": "On the eight Treasury pages retrieved\nfor this film,"
+  },
+  {
+   "start": 278.957,
+   "end": 281.646,
+   "text": "there is no current count of any kind."
+  },
+  {
+   "start": 281.346,
+   "end": 286.033,
+   "text": "There is one official figure,\nfrom a 2021 sanctions review,"
+  },
+  {
+   "start": 285.433,
+   "end": 289.904,
+   "text": "which speaks of over twelve thousand OFAC\ndesignations —"
+  },
+  {
+   "start": 289.304,
+   "end": 295.228,
+   "text": "but that is a cumulative count of designations,\nnot the size of the list today."
+  },
+  {
+   "start": 294.928,
+   "end": 297.293,
+   "text": "We counted the file ourselves."
+  },
+  {
+   "start": 296.993,
+   "end": 300.421,
+   "text": "Treasury publishes the list as a data file,"
+  },
+  {
+   "start": 299.821,
+   "end": 304.957,
+   "text": "and the copy dated the seventh of August, 2026\nholds nineteen thousand,"
+  },
+  {
+   "start": 304.357,
+   "end": 309.271,
+   "text": "one hundred and ninety-nine records.\nThat is our count of their file."
+  },
+  {
+   "start": 308.971,
+   "end": 313.008,
+   "text": "It is not a Treasury statement, and we\nare not going to present it as one."
+  },
+  {
+   "start": 312.708,
+   "end": 316.002,
+   "text": "Which brings us to the part of this story\nthat decides it."
+  },
+  {
+   "start": 315.702,
+   "end": 318.67,
+   "text": "OFAC does not simply publish names."
+  },
+  {
+   "start": 318.37,
+   "end": 323.521,
+   "text": "It publishes, alongside them, the things that tell\none human being from another."
+  },
+  {
+   "start": 323.221,
+   "end": 329.648,
+   "text": "An entry often will have, for example, a full\nname, an address, a nationality,"
+  },
+  {
+   "start": 329.048,
+   "end": 334.72,
+   "text": "a passport, a tax identification or cedula number,\na place of birth,"
+  },
+  {
+   "start": 334.12,
+   "end": 340.328,
+   "text": "a date of birth, former names, and aliases.\nAnd none of that is buried in prose."
+  },
+  {
+   "start": 340.028,
+   "end": 342.857,
+   "text": "Treasury publishes it as data."
+  },
+  {
+   "start": 342.557,
+   "end": 347.755,
+   "text": "The release consists of three linked files —\nthe main sanctions list,"
+  },
+  {
+   "start": 347.155,
+   "end": 352.462,
+   "text": "a separate file of addresses, and a separate file\nof alternate names —"
+  },
+  {
+   "start": 351.862,
+   "end": 355.239,
+   "text": "so that a machine can read a nationality,"
+  },
+  {
+   "start": 354.639,
+   "end": 358.761,
+   "text": "a passport number or a date of birth as its own\nfield."
+  },
+  {
+   "start": 358.461,
+   "end": 361.244,
+   "text": "And OFAC tells you what to do with them."
+  },
+  {
+   "start": 360.944,
+   "end": 365.724,
+   "text": "Its own procedure, published for anyone\nwho screens names, runs in steps."
+  },
+  {
+   "start": 365.424,
+   "end": 368.578,
+   "text": "Step three."
+  },
+  {
+   "start": 368.278,
+   "end": 372.168,
+   "text": "How much of the listed entry's name is matching\nagainst the name"
+  },
+  {
+   "start": 371.568,
+   "end": 377.49,
+   "text": "in your transaction? Is just one of two or more\nnames matching — just the last name?"
+  },
+  {
+   "start": 377.19,
+   "end": 381.619,
+   "text": "If yes, you do not have a valid match. Step four."
+  },
+  {
+   "start": 381.319,
+   "end": 384.558,
+   "text": "Compare the complete sanctions list entry with all"
+  },
+  {
+   "start": 383.958,
+   "end": 388.049,
+   "text": "of the information you have on the matching name\nin your transaction."
+  },
+  {
+   "start": 387.749,
+   "end": 390.764,
+   "text": "Are you missing a lot of this information?"
+  },
+  {
+   "start": 390.464,
+   "end": 393.72,
+   "text": "If yes, go back and get more information,"
+  },
+  {
+   "start": 393.12,
+   "end": 397.798,
+   "text": "and then compare your complete information\nagainst the entry."
+  },
+  {
+   "start": 397.498,
+   "end": 400.327,
+   "text": "OFAC knows what happens when you skip that."
+  },
+  {
+   "start": 400.027,
+   "end": 404.905,
+   "text": "It has a term for a name so broad or generic\nthat it generates a large volume"
+  },
+  {
+   "start": 404.305,
+   "end": 408.8,
+   "text": "of false hits when it is run\nthrough a computer-based screening system."
+  },
+  {
+   "start": 408.5,
+   "end": 410.818,
+   "text": "It calls it a weak alias."
+  },
+  {
+   "start": 410.518,
+   "end": 414.694,
+   "text": "Its own search tool carries a warning that using\nit is not a substitute"
+  },
+  {
+   "start": 414.094,
+   "end": 416.784,
+   "text": "for undertaking appropriate due diligence."
+  },
+  {
+   "start": 416.484,
+   "end": 419.638,
+   "text": "The tool works on approximate string matching."
+  },
+  {
+   "start": 419.338,
+   "end": 424.77,
+   "text": "Its scoring runs on Jaro-Winkler, a string\ndifference algorithm, and Soundex,"
+  },
+  {
+   "start": 424.17,
+   "end": 426.022,
+   "text": "a phonetic algorithm."
+  },
+  {
+   "start": 425.722,
+   "end": 430.125,
+   "text": "It is built, in other words, to return things\nthat are nearly right,"
+  },
+  {
+   "start": 429.525,
+   "end": 432.081,
+   "text": "so that a person can then check them."
+  },
+  {
+   "start": 431.781,
+   "end": 436.844,
+   "text": "And OFAC has a page written for the ordinary\nperson whose credit report has one"
+  },
+  {
+   "start": 436.244,
+   "end": 438.047,
+   "text": "of these alerts on it."
+  },
+  {
+   "start": 437.747,
+   "end": 442.512,
+   "text": "It says the alert is merely a reminder\nto the person checking your credit that he"
+  },
+  {
+   "start": 441.912,
+   "end": 445.431,
+   "text": "or she should verify whether you\nare the individual on one"
+  },
+  {
+   "start": 444.831,
+   "end": 449.585,
+   "text": "of OFAC's sanctions lists, by comparing\nyour information to the OFAC information."
+  },
+  {
+   "start": 449.285,
+   "end": 451.923,
+   "text": "If you are not that individual, it says,"
+  },
+  {
+   "start": 451.323,
+   "end": 455.99,
+   "text": "the person checking your credit should disregard\nthe alert. Now."
+  },
+  {
+   "start": 455.69,
+   "end": 457.441,
+   "text": "Beginning in 2002,"
+  },
+  {
+   "start": 456.841,
+   "end": 461.77,
+   "text": "TransUnion introduced an add-on product called\nOFAC Name Screen Alert."
+  },
+  {
+   "start": 461.47,
+   "end": 464.856,
+   "text": "Here is how it worked, in the Supreme Court's\nwords."
+  },
+  {
+   "start": 464.556,
+   "end": 469.147,
+   "text": "If the consumer's first and last name matched\nthe first and last name"
+  },
+  {
+   "start": 468.547,
+   "end": 470.977,
+   "text": "of an individual on OFAC's list,"
+  },
+  {
+   "start": 470.377,
+   "end": 474.903,
+   "text": "then TransUnion would place an alert on the credit\nreport indicating"
+  },
+  {
+   "start": 474.303,
+   "end": 478.995,
+   "text": "that the consumer's name was a potential match\nto a name on the OFAC list."
+  },
+  {
+   "start": 478.695,
+   "end": 483.103,
+   "text": "TransUnion did not compare any data other\nthan first and last names."
+  },
+  {
+   "start": 482.803,
+   "end": 486.05,
+   "text": "The software came from a vendor called Accuity."
+  },
+  {
+   "start": 485.75,
+   "end": 488.718,
+   "text": "The Ninth Circuit describes what it did."
+  },
+  {
+   "start": 488.418,
+   "end": 491.835,
+   "text": "Accuity's software conducted a name-only search,"
+  },
+  {
+   "start": 491.235,
+   "end": 496.077,
+   "text": "running a consumer's first and last name\nagainst the names on the OFAC list."
+  },
+  {
+   "start": 495.777,
+   "end": 499.682,
+   "text": "A search would result in a match if the consumer's\nfirst"
+  },
+  {
+   "start": 499.082,
+   "end": 503.715,
+   "text": "and last name were either identical or similar\nto a name on the list."
+  },
+  {
+   "start": 503.415,
+   "end": 507.405,
+   "text": "The court's own example is that Cortez would match\nwith Cortes."
+  },
+  {
+   "start": 507.105,
+   "end": 512.07,
+   "text": "Unsurprisingly, the Supreme Court says,\nthe product generated many false positives."
+  },
+  {
+   "start": 511.77,
+   "end": 517.497,
+   "text": "Thousands of law-abiding Americans happen to share\na first and last name with one"
+  },
+  {
+   "start": 516.897,
+   "end": 521.983,
+   "text": "of the terrorists, drug traffickers or serious\ncriminals on OFAC's list."
+  },
+  {
+   "start": 521.683,
+   "end": 525.162,
+   "text": "That is not the sentence that decides this case,\nthough."
+  },
+  {
+   "start": 524.862,
+   "end": 527.97,
+   "text": "This one is, and it is a footnote."
+  },
+  {
+   "start": 527.67,
+   "end": 532.285,
+   "text": "In collecting other types of data for use\non consumer reports —"
+  },
+  {
+   "start": 531.685,
+   "end": 534.958,
+   "text": "such as tax liens or bankruptcy judgments —"
+  },
+  {
+   "start": 534.358,
+   "end": 540.019,
+   "text": "TransUnion used at least one additional identifier\nother than the consumer's name."
+  },
+  {
+   "start": 539.719,
+   "end": 544.309,
+   "text": "An address. A date of birth. A social security\nnumber."
+  },
+  {
+   "start": 544.009,
+   "end": 547.837,
+   "text": "OFAC information was the only consumer-report data"
+  },
+  {
+   "start": 547.237,
+   "end": 552.247,
+   "text": "that TransUnion collected using name alone.\nThe company could do it."
+  },
+  {
+   "start": 551.947,
+   "end": 556.123,
+   "text": "It did do it, everywhere else on the same page\nof the same report."
+  },
+  {
+   "start": 555.823,
+   "end": 560.949,
+   "text": "For a tax lien, a name was not enough.\nFor a terrorist list, it was."
+  },
+  {
+   "start": 560.649,
+   "end": 563.71,
+   "text": "There is a second footnote, and it is shorter."
+  },
+  {
+   "start": 563.41,
+   "end": 566.538,
+   "text": "TransUnion presented no data showing that any"
+  },
+  {
+   "start": 565.938,
+   "end": 569.629,
+   "text": "of its name matches through the OFAC product\nwere correct."
+  },
+  {
+   "start": 569.329,
+   "end": 573.591,
+   "text": "In other words — and this is the court's own\nphrasing —"
+  },
+  {
+   "start": 572.991,
+   "end": 577.641,
+   "text": "TransUnion could not confirm that a single OFAC\nalert sold"
+  },
+  {
+   "start": 577.041,
+   "end": 579.774,
+   "text": "to its customers was accurate."
+  },
+  {
+   "start": 579.474,
+   "end": 582.131,
+   "text": "When it first began offering the product,"
+  },
+  {
+   "start": 581.531,
+   "end": 584.952,
+   "text": "the company had determined that the alerts it\nwas placing"
+  },
+  {
+   "start": 584.352,
+   "end": 588.619,
+   "text": "on consumer credit reports were exempt\nfrom the Fair Credit Reporting Act."
+  },
+  {
+   "start": 588.319,
+   "end": 592.423,
+   "text": "That was the position. Whether it was right\nis the next act."
+  },
+  {
+   "start": 593.623,
+   "end": 599.053,
+   "text": "In 1970, Congress passed and President Nixon\nsigned the Fair Credit Reporting Act."
+  },
+  {
+   "start": 598.753,
+   "end": 600.566,
+   "text": "Among other things,"
+  },
+  {
+   "start": 599.966,
+   "end": 604.986,
+   "text": "it requires a consumer reporting agency to follow\nreasonable procedures"
+  },
+  {
+   "start": 604.386,
+   "end": 608.827,
+   "text": "to assure maximum possible accuracy in the reports\nit prepares."
+  },
+  {
+   "start": 608.527,
+   "end": 613.168,
+   "text": "What \"reasonable procedures\" means, when the data\nis an OFAC alert,"
+  },
+  {
+   "start": 612.568,
+   "end": 617.925,
+   "text": "had been said out loud once already. In 2005,\na consumer sued."
+  },
+  {
+   "start": 617.625,
+   "end": 621.522,
+   "text": "Justice Thomas set out her case in his dissent\nin this one."
+  },
+  {
+   "start": 621.222,
+   "end": 626.048,
+   "text": "TransUnion had sold an OFAC credit report\nabout her to a car dealership."
+  },
+  {
+   "start": 625.748,
+   "end": 631.463,
+   "text": "The report flagged her — Sandra Jean Cortez, born\nin May 1944 —"
+  },
+  {
+   "start": 631.158,
+   "end": 637.958,
+   "text": "as a match for a person on the OFAC list: Sandra\nCortes Quintero, born in June 1971."
+  },
+  {
+   "start": 637.658,
+   "end": 641.695,
+   "text": "There is one more thing in Justice Thomas's\naccount of that case."
+  },
+  {
+   "start": 641.395,
+   "end": 645.681,
+   "text": "When Sandra Cortez asked TransUnion for her own\ncredit report,"
+  },
+  {
+   "start": 645.081,
+   "end": 647.893,
+   "text": "the alert was not in what they sent her."
+  },
+  {
+   "start": 647.593,
+   "end": 652.905,
+   "text": "It stayed on the file, and it stayed there\nfor years. Twenty-seven years apart."
+  },
+  {
+   "start": 652.605,
+   "end": 657.328,
+   "text": "A jury awarded her fifty thousand dollars\nin actual damages and seven hundred"
+  },
+  {
+   "start": 656.728,
+   "end": 659.382,
+   "text": "and fifty thousand in punitive damages."
+  },
+  {
+   "start": 659.082,
+   "end": 663.598,
+   "text": "The district court cut the punitive award\nto a hundred thousand,"
+  },
+  {
+   "start": 662.998,
+   "end": 666.672,
+   "text": "and in August 2010 the Third Circuit affirmed\nthat —"
+  },
+  {
+   "start": 666.072,
+   "end": 670.206,
+   "text": "stressing that TransUnion's failure to,\nat the very least,"
+  },
+  {
+   "start": 669.606,
+   "end": 674.032,
+   "text": "compare birth dates when they are available,\nwas reprehensible."
+  },
+  {
+   "start": 673.732,
+   "end": 678.508,
+   "text": "The Ninth Circuit, years later, described what\nthat decision had established,"
+  },
+  {
+   "start": 677.908,
+   "end": 679.719,
+   "text": "and what happened next."
+  },
+  {
+   "start": 679.419,
+   "end": 682.299,
+   "text": "Plaintiffs presented evidence that,"
+  },
+  {
+   "start": 681.699,
+   "end": 687.229,
+   "text": "despite being told in 2010 by another circuit\ncourt that OFAC alerts were covered"
+  },
+  {
+   "start": 686.629,
+   "end": 689.97,
+   "text": "by the Fair Credit Reporting Act and subject"
+  },
+  {
+   "start": 689.37,
+   "end": 692.527,
+   "text": "to the reasonable procedures requirement,"
+  },
+  {
+   "start": 691.927,
+   "end": 696.83,
+   "text": "TransUnion continued to use name-only searches\nto produce OFAC matches."
+  },
+  {
+   "start": 696.53,
+   "end": 699.431,
+   "text": "Most notably, the Ninth Circuit wrote,"
+  },
+  {
+   "start": 698.831,
+   "end": 703.544,
+   "text": "the Third Circuit specifically reprimanded\nTransUnion for failing"
+  },
+  {
+   "start": 702.944,
+   "end": 708.117,
+   "text": "to use an additional identifier such as date\nof birth to verify the accuracy"
+  },
+  {
+   "start": 707.517,
+   "end": 709.111,
+   "text": "of OFAC matches."
+  },
+  {
+   "start": 708.811,
+   "end": 714.242,
+   "text": "Despite this warning, TransUnion continued to use\nproblematic matching technology,"
+  },
+  {
+   "start": 713.642,
+   "end": 718.579,
+   "text": "and to treat OFAC information as separate\nfrom other types of information"
+  },
+  {
+   "start": 717.979,
+   "end": 719.721,
+   "text": "on consumer reports."
+  },
+  {
+   "start": 719.421,
+   "end": 724.433,
+   "text": "In doing so, the court held, it ran\nan unjustifiably high risk of error."
+  },
+  {
+   "start": 724.133,
+   "end": 727.235,
+   "text": "That is what a court found, on evidence,"
+  },
+  {
+   "start": 726.635,
+   "end": 731.281,
+   "text": "and it is where this film's account\nof the company's conduct stops."
+  },
+  {
+   "start": 730.981,
+   "end": 735.586,
+   "text": "Between the first of January and the twenty-sixth\nof July, 2011,"
+  },
+  {
+   "start": 734.986,
+   "end": 737.247,
+   "text": "the letters kept going out."
+  },
+  {
+   "start": 736.947,
+   "end": 740.633,
+   "text": "TransUnion sent the same OFAC letter to eight\nthousand,"
+  },
+  {
+   "start": 740.033,
+   "end": 744.804,
+   "text": "one hundred and eighty-four other consumers\nwho had also requested copies"
+  },
+  {
+   "start": 744.204,
+   "end": 746.928,
+   "text": "of their credit reports in that window."
+  },
+  {
+   "start": 746.628,
+   "end": 750.842,
+   "text": "In July 2011, TransUnion finally stopped sending\nthe letters,"
+  },
+  {
+   "start": 750.242,
+   "end": 755.773,
+   "text": "and began including OFAC alerts directly\non the credit reports it sent to consumers."
+  },
+  {
+   "start": 755.473,
+   "end": 761.668,
+   "text": "Ramirez sued in February 2012.\nIn 2014 the district court certified a class."
+  },
+  {
+   "start": 761.368,
+   "end": 765.405,
+   "text": "In 2016 it held that all of them had standing\nto be there."
+  },
+  {
+   "start": 765.105,
+   "end": 768.909,
+   "text": "The class the court certified was defined\nby a letter."
+  },
+  {
+   "start": 768.609,
+   "end": 773.596,
+   "text": "All natural persons in the United States\nand its Territories"
+  },
+  {
+   "start": 772.996,
+   "end": 778.371,
+   "text": "to whom TransUnion sent a letter similar in form\nto the March 1st,"
+  },
+  {
+   "start": 777.771,
+   "end": 784.116,
+   "text": "2011 OFAC Letter it sent to Ramirez, from January\n1st, 2011 to July 26th, 2011."
+  },
+  {
+   "start": 783.816,
+   "end": 787.11,
+   "text": "Before trial, the two sides agreed on the numbers,"
+  },
+  {
+   "start": 786.51,
+   "end": 789.106,
+   "text": "so that no jury would have to find them."
+  },
+  {
+   "start": 788.806,
+   "end": 792.952,
+   "text": "The parties stipulated that the class contained\neight thousand,"
+  },
+  {
+   "start": 792.352,
+   "end": 795.954,
+   "text": "one hundred and eighty-five members, including\nRamirez."
+  },
+  {
+   "start": 795.654,
+   "end": 801.292,
+   "text": "And they stipulated that only one thousand, eight\nhundred and fifty-three of them —"
+  },
+  {
+   "start": 800.692,
+   "end": 802.501,
+   "text": "Ramirez among them —"
+  },
+  {
+   "start": 801.901,
+   "end": 807.487,
+   "text": "had their credit reports disseminated\nby TransUnion to potential creditors during"
+  },
+  {
+   "start": 806.887,
+   "end": 810.254,
+   "text": "that same period. Hold on to those two numbers."
+  },
+  {
+   "start": 809.954,
+   "end": 813.48,
+   "text": "Everything left in this film is the distance\nbetween them."
+  },
+  {
+   "start": 813.18,
+   "end": 817.377,
+   "text": "There were three claims, and all three\nwere about willfulness,"
+  },
+  {
+   "start": 816.777,
+   "end": 821.274,
+   "text": "because statutory and punitive damages\nare available under the Act"
+  },
+  {
+   "start": 820.674,
+   "end": 824.136,
+   "text": "for willful violations and not for negligent ones."
+  },
+  {
+   "start": 823.836,
+   "end": 828.848,
+   "text": "One: a willful failure to follow reasonable\nprocedures to assure accuracy."
+  },
+  {
+   "start": 828.548,
+   "end": 832.526,
+   "text": "Two: a willful failure to disclose the whole file,"
+  },
+  {
+   "start": 831.926,
+   "end": 836.3,
+   "text": "because the copies sent to consumers left\nthe alerts out."
+  },
+  {
+   "start": 836.0,
+   "end": 841.058,
+   "text": "Three: a willful failure to provide the summary\nof rights with the second mailing."
+  },
+  {
+   "start": 840.758,
+   "end": 846.487,
+   "text": "The trial ran six days. Ramirez testified\nabout what happened at the dealership."
+  },
+  {
+   "start": 846.187,
+   "end": 850.973,
+   "text": "He did not present evidence about the experiences\nof other members of the class —"
+  },
+  {
+   "start": 850.373,
+   "end": 854.125,
+   "text": "and that absence will matter enormously\nin about ten minutes."
+  },
+  {
+   "start": 853.825,
+   "end": 857.034,
+   "text": "The jury returned a verdict for the plaintiffs,"
+  },
+  {
+   "start": 856.434,
+   "end": 859.766,
+   "text": "and it awarded the same amount to every one\nof them."
+  },
+  {
+   "start": 859.466,
+   "end": 864.199,
+   "text": "Nine hundred and eighty-four dollars\nand twenty-two cents in statutory damages."
+  },
+  {
+   "start": 863.899,
+   "end": 868.168,
+   "text": "Six thousand, three hundred and fifty-three\ndollars and eight cents"
+  },
+  {
+   "start": 867.568,
+   "end": 872.715,
+   "text": "in punitive damages. Each. More than sixty million\ndollars."
+  },
+  {
+   "start": 872.415,
+   "end": 877.427,
+   "text": "TransUnion appealed, and it appealed to a court\nthat mostly agreed with the jury."
+  },
+  {
+   "start": 877.127,
+   "end": 880.699,
+   "text": "The Ninth Circuit affirmed the verdict\nand the judgment."
+  },
+  {
+   "start": 880.399,
+   "end": 885.736,
+   "text": "It held that the punitive award was excessive\nunder constitutional due process,"
+  },
+  {
+   "start": 885.136,
+   "end": 887.928,
+   "text": "and it reduced it — from six thousand,"
+  },
+  {
+   "start": 887.328,
+   "end": 892.16,
+   "text": "three hundred and fifty-three dollars and eight\ncents per class member"
+  },
+  {
+   "start": 891.56,
+   "end": 896.789,
+   "text": "to three thousand, nine hundred and thirty-six\ndollars and eighty-eight cents."
+  },
+  {
+   "start": 896.489,
+   "end": 899.179,
+   "text": "On the willfulness question it was blunt."
+  },
+  {
+   "start": 898.879,
+   "end": 901.138,
+   "text": "The jury's verdict, it said,"
+  },
+  {
+   "start": 900.538,
+   "end": 904.912,
+   "text": "is consistent with the law and supported\nby substantial evidence."
+  },
+  {
+   "start": 904.612,
+   "end": 908.913,
+   "text": "The opinion was filed on the twenty-seventh\nof February, 2020 —"
+  },
+  {
+   "start": 908.313,
+   "end": 911.853,
+   "text": "nine years to the day after the afternoon\nin Dublin."
+  },
+  {
+   "start": 911.553,
+   "end": 916.843,
+   "text": "It also set out, in a list, what separated Ramirez\nfrom everybody else in the class."
+  },
+  {
+   "start": 916.543,
+   "end": 921.183,
+   "text": "His credit report with the false OFAC alert\nwas sent to a third party."
+  },
+  {
+   "start": 920.883,
+   "end": 924.966,
+   "text": "His alert said that he was a match, instead\nof a potential match."
+  },
+  {
+   "start": 924.666,
+   "end": 927.634,
+   "text": "He was denied credit because of the alert."
+  },
+  {
+   "start": 927.334,
+   "end": 930.349,
+   "text": "He cancelled a vacation because of the alert."
+  },
+  {
+   "start": 930.049,
+   "end": 934.477,
+   "text": "And he spent significant time and energy trying\nto remove the alert,"
+  },
+  {
+   "start": 933.877,
+   "end": 935.99,
+   "text": "including hiring a lawyer."
+  },
+  {
+   "start": 935.69,
+   "end": 939.819,
+   "text": "Three judges heard that appeal, and they\ndid not agree with each other."
+  },
+  {
+   "start": 939.519,
+   "end": 941.977,
+   "text": "Judge Murguia wrote the opinion."
+  },
+  {
+   "start": 941.677,
+   "end": 945.203,
+   "text": "Judge McKeown concurred in part and dissented\nin part."
+  },
+  {
+   "start": 944.903,
+   "end": 950.006,
+   "text": "She would have held that only\nthe 1,853 had standing on the accuracy claim,"
+  },
+  {
+   "start": 949.406,
+   "end": 954.673,
+   "text": "and only Ramirez on the other two. Nobody paid\nmuch attention to that at the time."
+  },
+  {
+   "start": 954.373,
+   "end": 958.41,
+   "text": "It is, almost exactly, what the Supreme Court\nwas about to say."
+  },
+  {
+   "start": 959.61,
+   "end": 965.241,
+   "text": "To have Article III standing to sue in federal\ncourt, plaintiffs must demonstrate,"
+  },
+  {
+   "start": 964.641,
+   "end": 968.616,
+   "text": "among other things, that they suffered a concrete\nharm."
+  },
+  {
+   "start": 968.316,
+   "end": 971.238,
+   "text": "No concrete harm, no standing."
+  },
+  {
+   "start": 970.938,
+   "end": 976.861,
+   "text": "That is the first thing the Supreme Court\nof the United States said about this case,"
+  },
+  {
+   "start": 976.261,
+   "end": 979.015,
+   "text": "on the twenty-fifth of June, 2021."
+  },
+  {
+   "start": 978.715,
+   "end": 982.566,
+   "text": "Justice Kavanaugh delivered the opinion\nof the Court."
+  },
+  {
+   "start": 982.266,
+   "end": 988.299,
+   "text": "He was joined by the Chief Justice and by Justices\nAlito, Gorsuch and Barrett."
+  },
+  {
+   "start": 987.999,
+   "end": 993.8,
+   "text": "Justice Thomas filed a dissent, joined by Justices\nBreyer, Sotomayor and Kagan."
+  },
+  {
+   "start": 993.5,
+   "end": 999.462,
+   "text": "Justice Kagan filed a second dissent, joined\nby Breyer and Sotomayor. Five to four."
+  },
+  {
+   "start": 999.162,
+   "end": 1001.712,
+   "text": "The holding is one sentence long."
+  },
+  {
+   "start": 1001.412,
+   "end": 1003.962,
+   "text": "Only plaintiffs concretely harmed"
+  },
+  {
+   "start": 1003.362,
+   "end": 1007.492,
+   "text": "by a defendant's statutory violation have Article\nIII standing"
+  },
+  {
+   "start": 1006.892,
+   "end": 1011.161,
+   "text": "to seek damages against that private defendant\nin federal court."
+  },
+  {
+   "start": 1010.861,
+   "end": 1014.665,
+   "text": "Congress can write a law that says a company owes\nyou something."
+  },
+  {
+   "start": 1014.365,
+   "end": 1016.544,
+   "text": "The company can break it."
+  },
+  {
+   "start": 1016.244,
+   "end": 1020.048,
+   "text": "That, on its own, does not get you into a federal\ncourtroom."
+  },
+  {
+   "start": 1019.748,
+   "end": 1024.485,
+   "text": "Article III standing requires a concrete injury\neven in the context"
+  },
+  {
+   "start": 1023.885,
+   "end": 1028.403,
+   "text": "of a statutory violation. An injury in law\nis not an injury in fact."
+  },
+  {
+   "start": 1028.103,
+   "end": 1029.91,
+   "text": "So where is the line?"
+  },
+  {
+   "start": 1029.61,
+   "end": 1034.529,
+   "text": "The Court drew it in a place that has nothing\nto do with whether the alert was true."
+  },
+  {
+   "start": 1034.229,
+   "end": 1037.605,
+   "text": "The standing inquiry in this case, the Court\nwrote,"
+  },
+  {
+   "start": 1037.005,
+   "end": 1039.601,
+   "text": "distinguishes between credit files"
+  },
+  {
+   "start": 1039.001,
+   "end": 1042.64,
+   "text": "that consumer reporting agencies maintain\ninternally,"
+  },
+  {
+   "start": 1042.04,
+   "end": 1046.823,
+   "text": "and the consumer credit reports that consumer\nreporting agencies disseminate"
+  },
+  {
+   "start": 1046.223,
+   "end": 1048.25,
+   "text": "to third-party creditors."
+  },
+  {
+   "start": 1047.95,
+   "end": 1052.852,
+   "text": "The mere presence of an inaccuracy in an internal\ncredit file,"
+  },
+  {
+   "start": 1052.252,
+   "end": 1057.095,
+   "text": "if it is not disclosed to a third party, causes\nno concrete harm."
+  },
+  {
+   "start": 1056.795,
+   "end": 1059.345,
+   "text": "And then the Court chose an image for it."
+  },
+  {
+   "start": 1059.045,
+   "end": 1063.712,
+   "text": "The plaintiffs' harm, it said, is roughly\nthe same, legally speaking,"
+  },
+  {
+   "start": 1063.112,
+   "end": 1068.19,
+   "text": "as if someone wrote a defamatory letter and then\nstored it in her desk drawer."
+  },
+  {
+   "start": 1067.89,
+   "end": 1071.387,
+   "text": "A letter that is not sent does not harm anyone,"
+  },
+  {
+   "start": 1070.787,
+   "end": 1075.338,
+   "text": "no matter how insulting the letter is. So too\nhere."
+  },
+  {
+   "start": 1075.038,
+   "end": 1077.914,
+   "text": "What about the risk that it would be sent later?"
+  },
+  {
+   "start": 1077.614,
+   "end": 1082.571,
+   "text": "The Court held that risk — the risk\nof dissemination to third parties —"
+  },
+  {
+   "start": 1081.971,
+   "end": 1087.038,
+   "text": "was too speculative to support Article III\nstanding in a suit for damages."
+  },
+  {
+   "start": 1086.738,
+   "end": 1090.635,
+   "text": "So the eight thousand, one hundred and eighty-five\nsplit in two."
+  },
+  {
+   "start": 1090.335,
+   "end": 1094.386,
+   "text": "One thousand, eight hundred and fifty-three class\nmembers,"
+  },
+  {
+   "start": 1093.786,
+   "end": 1098.052,
+   "text": "whose credit reports were provided to third-party\nbusinesses,"
+  },
+  {
+   "start": 1097.452,
+   "end": 1101.755,
+   "text": "suffered a concrete harm, and had standing\non the accuracy claim."
+  },
+  {
+   "start": 1101.455,
+   "end": 1105.523,
+   "text": "Six thousand, three hundred and thirty-two class\nmembers,"
+  },
+  {
+   "start": 1104.923,
+   "end": 1109.546,
+   "text": "whose credit reports were not provided\nto third-party businesses,"
+  },
+  {
+   "start": 1108.946,
+   "end": 1113.247,
+   "text": "did not suffer a concrete harm,\nand did not have standing on it."
+  },
+  {
+   "start": 1112.947,
+   "end": 1117.338,
+   "text": "As for the two claims about the format\nof the mailings —"
+  },
+  {
+   "start": 1116.738,
+   "end": 1121.169,
+   "text": "the incomplete file and the missing summary\nof rights —"
+  },
+  {
+   "start": 1120.569,
+   "end": 1126.643,
+   "text": "none of the 8,185 other than Ramirez himself\nhad suffered a concrete harm at all."
+  },
+  {
+   "start": 1126.343,
+   "end": 1131.448,
+   "text": "The judgment below was reversed, and the case\nwas remanded for further proceedings."
+  },
+  {
+   "start": 1131.148,
+   "end": 1137.085,
+   "text": "Not dismissed. Not decided against the class\non the merits. Sent back."
+  },
+  {
+   "start": 1136.785,
+   "end": 1138.803,
+   "text": "On remand, the Court said,"
+  },
+  {
+   "start": 1138.203,
+   "end": 1140.479,
+   "text": "the Ninth Circuit may consider"
+  },
+  {
+   "start": 1139.879,
+   "end": 1144.435,
+   "text": "in the first instance whether class certification\nis appropriate in light"
+  },
+  {
+   "start": 1143.835,
+   "end": 1147.205,
+   "text": "of our conclusion about standing. Now."
+  },
+  {
+   "start": 1146.905,
+   "end": 1151.731,
+   "text": "It would be very easy to make the majority sound\nstupid here, and it was not."
+  },
+  {
+   "start": 1151.431,
+   "end": 1157.836,
+   "text": "Here is the strongest thing in the opinion, and it\nis aimed straight at the 6,332."
+  },
+  {
+   "start": 1157.536,
+   "end": 1162.385,
+   "text": "The plaintiffs did not present any evidence\nthat those class members even knew"
+  },
+  {
+   "start": 1161.785,
+   "end": 1166.17,
+   "text": "that there were OFAC alerts in their internal\nTransUnion credit files."
+  },
+  {
+   "start": 1165.87,
+   "end": 1169.613,
+   "text": "If those plaintiffs prevailed in this case,\nthe Court wrote,"
+  },
+  {
+   "start": 1169.013,
+   "end": 1172.309,
+   "text": "many of them would first learn that they\nwere injured"
+  },
+  {
+   "start": 1171.709,
+   "end": 1175.944,
+   "text": "when they received a check compensating them\nfor their supposed injury."
+  },
+  {
+   "start": 1175.644,
+   "end": 1179.82,
+   "text": "The Ninth Circuit had recorded the same absence\nfrom the other direction."
+  },
+  {
+   "start": 1179.52,
+   "end": 1183.972,
+   "text": "Only a quarter of the other class members\nhad their credit reports sent"
+  },
+  {
+   "start": 1183.372,
+   "end": 1186.64,
+   "text": "to a third party during the class period, it\nwrote,"
+  },
+  {
+   "start": 1186.04,
+   "end": 1190.936,
+   "text": "and there was no evidence regarding whether other\nclass members had experiences"
+  },
+  {
+   "start": 1190.336,
+   "end": 1196.117,
+   "text": "similar to Ramirez's as a result of the alerts.\nThat gap is not a gap in this film."
+  },
+  {
+   "start": 1195.817,
+   "end": 1199.9,
+   "text": "It is a finding in the record, and the majority\nis standing on it."
+  },
+  {
+   "start": 1199.6,
+   "end": 1203.683,
+   "text": "That is a real problem, and a court is entitled\nto notice it."
+  },
+  {
+   "start": 1203.383,
+   "end": 1207.283,
+   "text": "A person who never learned of an entry that never\nmoved is going"
+  },
+  {
+   "start": 1206.683,
+   "end": 1211.667,
+   "text": "to have a hard time saying what it did to them.\nFour justices had an answer."
+  },
+  {
+   "start": 1212.867,
+   "end": 1217.0,
+   "text": "Justice Thomas wrote first, for himself and three\ncolleagues,"
+  },
+  {
+   "start": 1216.4,
+   "end": 1219.876,
+   "text": "and he began with the facts rather\nthan the doctrine."
+  },
+  {
+   "start": 1219.576,
+   "end": 1221.32,
+   "text": "TransUnion, he wrote,"
+  },
+  {
+   "start": 1220.72,
+   "end": 1225.222,
+   "text": "generated credit reports that erroneously flagged\nmany law-abiding people"
+  },
+  {
+   "start": 1224.622,
+   "end": 1227.606,
+   "text": "as potential terrorists and drug traffickers."
+  },
+  {
+   "start": 1227.306,
+   "end": 1232.933,
+   "text": "Yet despite Congress's judgment that such misdeeds\ndeserve redress, he went on,"
+  },
+  {
+   "start": 1232.333,
+   "end": 1237.202,
+   "text": "the majority decides that TransUnion's actions\nare so insignificant"
+  },
+  {
+   "start": 1236.602,
+   "end": 1241.698,
+   "text": "that the Constitution prohibits consumers\nfrom vindicating their rights"
+  },
+  {
+   "start": 1241.098,
+   "end": 1245.25,
+   "text": "in federal court. The Constitution does no such\nthing."
+  },
+  {
+   "start": 1244.95,
+   "end": 1247.547,
+   "text": "On the machine itself he was brief."
+  },
+  {
+   "start": 1247.247,
+   "end": 1252.459,
+   "text": "The system TransUnion used to decide\nwhich individuals to flag, he wrote,"
+  },
+  {
+   "start": 1251.859,
+   "end": 1253.884,
+   "text": "was rather rudimentary."
+  },
+  {
+   "start": 1253.584,
+   "end": 1258.689,
+   "text": "It compared only the consumer's first and last\nname with the names on the OFAC list."
+  },
+  {
+   "start": 1258.389,
+   "end": 1263.466,
+   "text": "It did not compare birth dates, middle initials,\nsocial security numbers,"
+  },
+  {
+   "start": 1262.866,
+   "end": 1266.98,
+   "text": "or any other available identifier routinely used\nto collect"
+  },
+  {
+   "start": 1266.38,
+   "end": 1268.834,
+   "text": "and verify credit-report data."
+  },
+  {
+   "start": 1268.534,
+   "end": 1273.453,
+   "text": "And he answered the majority's best argument\nwith one line from the trial record."
+  },
+  {
+   "start": 1273.153,
+   "end": 1275.885,
+   "text": "Quoting the Ninth Circuit's footnote,"
+  },
+  {
+   "start": 1275.285,
+   "end": 1279.816,
+   "text": "he wrote that TransUnion could not confirm\nthat a single OFAC alert sold"
+  },
+  {
+   "start": 1279.216,
+   "end": 1284.781,
+   "text": "to its customers was accurate. Think about what\nthat does to the desk-drawer letter."
+  },
+  {
+   "start": 1284.481,
+   "end": 1289.679,
+   "text": "The question was whether an alert sitting\nin a file, unsent, had harmed anybody."
+  },
+  {
+   "start": 1289.379,
+   "end": 1293.101,
+   "text": "The company that wrote it could not show that even\none"
+  },
+  {
+   "start": 1292.501,
+   "end": 1295.041,
+   "text": "of the ones it had sent was correct."
+  },
+  {
+   "start": 1294.741,
+   "end": 1299.013,
+   "text": "One need only tap into common sense, Justice\nThomas wrote,"
+  },
+  {
+   "start": 1298.413,
+   "end": 1303.849,
+   "text": "to know that receiving a letter identifying you\nas a potential drug trafficker"
+  },
+  {
+   "start": 1303.249,
+   "end": 1305.372,
+   "text": "or terrorist is harmful."
+  },
+  {
+   "start": 1305.072,
+   "end": 1309.971,
+   "text": "All the more so when the information comes\nin the context of a credit report,"
+  },
+  {
+   "start": 1309.371,
+   "end": 1314.124,
+   "text": "the entire purpose of which is to demonstrate\nthat a person can be trusted."
+  },
+  {
+   "start": 1313.824,
+   "end": 1318.0,
+   "text": "He also thought the decision might not do what\nTransUnion wanted."
+  },
+  {
+   "start": 1317.7,
+   "end": 1322.882,
+   "text": "State courts are not bound by the limitations\nof a case or controversy,"
+  },
+  {
+   "start": 1322.282,
+   "end": 1325.589,
+   "text": "or other federal rules of justiciability,"
+  },
+  {
+   "start": 1324.989,
+   "end": 1328.424,
+   "text": "even when they address issues of federal law."
+  },
+  {
+   "start": 1328.124,
+   "end": 1333.186,
+   "text": "If federal courts are closed to these plaintiffs,\nstate courts are not —"
+  },
+  {
+   "start": 1332.586,
+   "end": 1338.058,
+   "text": "and a defendant cannot remove a case to a forum\nthat has no jurisdiction over it."
+  },
+  {
+   "start": 1337.758,
+   "end": 1341.887,
+   "text": "He called that a possible pyrrhic victory\nfor TransUnion."
+  },
+  {
+   "start": 1341.587,
+   "end": 1344.741,
+   "text": "And then Justice Thomas ended by counting."
+  },
+  {
+   "start": 1344.441,
+   "end": 1347.192,
+   "text": "Who could possibly think, he wrote,"
+  },
+  {
+   "start": 1346.592,
+   "end": 1351.937,
+   "text": "that a person is harmed when he requests\nand is sent an incomplete credit report,"
+  },
+  {
+   "start": 1351.337,
+   "end": 1354.514,
+   "text": "or is sent a suspicious notice informing him"
+  },
+  {
+   "start": 1353.914,
+   "end": 1357.911,
+   "text": "that he may be a designated drug trafficker\nor terrorist,"
+  },
+  {
+   "start": 1357.311,
+   "end": 1362.549,
+   "text": "or is not sent anything informing him of how\nto remove this inaccurate red flag?"
+  },
+  {
+   "start": 1362.249,
+   "end": 1367.301,
+   "text": "The answer, he wrote, is of course legion:\nCongress, the President, the jury,"
+  },
+  {
+   "start": 1366.701,
+   "end": 1371.301,
+   "text": "the District Court, the Ninth Circuit, and four\nMembers of this Court."
+  },
+  {
+   "start": 1371.001,
+   "end": 1374.202,
+   "text": "Justice Kagan wrote separately, and shorter."
+  },
+  {
+   "start": 1373.902,
+   "end": 1376.057,
+   "text": "The Court here, she wrote,"
+  },
+  {
+   "start": 1375.457,
+   "end": 1380.265,
+   "text": "transforms standing law from a doctrine\nof judicial modesty into a tool"
+  },
+  {
+   "start": 1379.665,
+   "end": 1381.979,
+   "text": "of judicial aggrandizement."
+  },
+  {
+   "start": 1381.679,
+   "end": 1383.944,
+   "text": "It holds, for the first time,"
+  },
+  {
+   "start": 1383.344,
+   "end": 1387.348,
+   "text": "that a specific class of plaintiffs whom Congress\nallowed"
+  },
+  {
+   "start": 1386.748,
+   "end": 1390.22,
+   "text": "to bring a lawsuit cannot do so under Article III."
+  },
+  {
+   "start": 1389.92,
+   "end": 1392.241,
+   "text": "To say, as the majority does,"
+  },
+  {
+   "start": 1391.641,
+   "end": 1396.481,
+   "text": "that the resulting injuries did not exist\nin the real world, she wrote,"
+  },
+  {
+   "start": 1395.881,
+   "end": 1398.508,
+   "text": "is to inhabit a world I don't know."
+  },
+  {
+   "start": 1398.208,
+   "end": 1399.907,
+   "text": "Congress, she said,"
+  },
+  {
+   "start": 1399.307,
+   "end": 1404.261,
+   "text": "is better suited than courts to determine\nwhen something causes a harm or a risk"
+  },
+  {
+   "start": 1403.661,
+   "end": 1405.774,
+   "text": "of harm in the real world."
+  },
+  {
+   "start": 1405.474,
+   "end": 1409.22,
+   "text": "And then she asked the question this film\nhas been walking toward"
+  },
+  {
+   "start": 1408.62,
+   "end": 1410.486,
+   "text": "for twenty-seven minutes."
+  },
+  {
+   "start": 1410.186,
+   "end": 1413.813,
+   "text": "But why is it so speculative that a company\nin the business"
+  },
+  {
+   "start": 1413.213,
+   "end": 1417.795,
+   "text": "of selling credit reports to third parties\nwill in fact sell a credit report"
+  },
+  {
+   "start": 1417.195,
+   "end": 1418.681,
+   "text": "to a third party?"
+  },
+  {
+   "start": 1418.381,
+   "end": 1420.971,
+   "text": "She noted, as Justice Thomas had,"
+  },
+  {
+   "start": 1420.371,
+   "end": 1425.444,
+   "text": "that nearly twenty-five per cent of the class\nalready had these reports sent"
+  },
+  {
+   "start": 1424.844,
+   "end": 1430.38,
+   "text": "to potential creditors. Now — what did the Supreme\nCourt actually decide?"
+  },
+  {
+   "start": 1430.08,
+   "end": 1433.095,
+   "text": "Less than almost anyone remembers."
+  },
+  {
+   "start": 1432.795,
+   "end": 1437.807,
+   "text": "It did not decide whether TransUnion violated\nthe Fair Credit Reporting Act."
+  },
+  {
+   "start": 1437.507,
+   "end": 1442.054,
+   "text": "The 1,853 keep that claim, and Ramirez keeps all\nthree of his."
+  },
+  {
+   "start": 1441.754,
+   "end": 1445.373,
+   "text": "It did not decide whether the violations\nwere willful."
+  },
+  {
+   "start": 1445.073,
+   "end": 1449.022,
+   "text": "The word appears exactly once in the majority\nopinion,"
+  },
+  {
+   "start": 1448.422,
+   "end": 1452.685,
+   "text": "inside a quotation of the statute, and never\nin its analysis."
+  },
+  {
+   "start": 1452.385,
+   "end": 1457.537,
+   "text": "The jury's finding on willfulness, and the Ninth\nCircuit's affirmance of it,"
+  },
+  {
+   "start": 1456.937,
+   "end": 1459.487,
+   "text": "were simply not before the Court."
+  },
+  {
+   "start": 1459.187,
+   "end": 1463.038,
+   "text": "It did not decide whether the class was properly\ncertified."
+  },
+  {
+   "start": 1462.738,
+   "end": 1465.288,
+   "text": "It sent that question back."
+  },
+  {
+   "start": 1464.988,
+   "end": 1470.278,
+   "text": "It did not decide whether the 6,332 could sue\nin a state court."
+  },
+  {
+   "start": 1469.978,
+   "end": 1474.036,
+   "text": "Justice Thomas raised it. The majority\ndid not answer it."
+  },
+  {
+   "start": 1473.736,
+   "end": 1478.593,
+   "text": "It did not decide what would have happened\nin a suit for an injunction rather"
+  },
+  {
+   "start": 1477.993,
+   "end": 1482.117,
+   "text": "than damages. The Court's own reasoning reserves\nthat:"
+  },
+  {
+   "start": 1481.517,
+   "end": 1486.942,
+   "text": "a material risk of future harm can satisfy\nconcreteness in the context of a claim"
+  },
+  {
+   "start": 1486.342,
+   "end": 1490.379,
+   "text": "for injunctive relief to prevent the harm\nfrom occurring."
+  },
+  {
+   "start": 1490.079,
+   "end": 1494.044,
+   "text": "This was a claim for money. And it set no figure."
+  },
+  {
+   "start": 1493.744,
+   "end": 1497.455,
+   "text": "It did not remit, recalculate or apportion\nanything."
+  },
+  {
+   "start": 1497.155,
+   "end": 1501.331,
+   "text": "The Supreme Court removed people from claims\nand sent the case back."
+  },
+  {
+   "start": 1501.031,
+   "end": 1506.148,
+   "text": "The only per-person numbers anyone ever wrote down\nare the jury's nine hundred"
+  },
+  {
+   "start": 1505.548,
+   "end": 1508.806,
+   "text": "and eighty-four dollars and twenty-two cents,"
+  },
+  {
+   "start": 1508.206,
+   "end": 1512.853,
+   "text": "its six thousand three hundred and fifty-three\ndollars and eight cents,"
+  },
+  {
+   "start": 1512.253,
+   "end": 1517.624,
+   "text": "and the Ninth Circuit's reduced three thousand\nnine hundred and thirty-six dollars"
+  },
+  {
+   "start": 1517.024,
+   "end": 1521.554,
+   "text": "and eighty-eight cents — all of them as awarded\nor as ordered reduced."
+  },
+  {
+   "start": 1521.254,
+   "end": 1525.87,
+   "text": "None of them as received. One more thing\nabout what the case is not."
+  },
+  {
+   "start": 1525.57,
+   "end": 1528.817,
+   "text": "It is about one add-on product at one company."
+  },
+  {
+   "start": 1528.517,
+   "end": 1533.437,
+   "text": "It is not about credit scores, and it\nis not about Equifax or Experian,"
+  },
+  {
+   "start": 1532.837,
+   "end": 1538.951,
+   "text": "neither of which is mentioned anywhere in it. Two\nwords."
+  },
+  {
+   "start": 1538.651,
+   "end": 1542.988,
+   "text": "A first name and a last name. That was the whole\ncomparison."
+  },
+  {
+   "start": 1542.688,
+   "end": 1547.279,
+   "text": "The record this film is built on ends\non the twenty-fifth of June, 2021,"
+  },
+  {
+   "start": 1546.679,
+   "end": 1550.068,
+   "text": "with the case on its way back to the Ninth\nCircuit."
+  },
+  {
+   "start": 1549.768,
+   "end": 1555.467,
+   "text": "What happened after that — whether the 1,853 ever\nrecovered anything,"
+  },
+  {
+   "start": 1554.867,
+   "end": 1559.925,
+   "text": "whether the class was certified again, whether it\nsettled —"
+  },
+  {
+   "start": 1559.325,
+   "end": 1563.325,
+   "text": "is not in any document we were able to retrieve."
+  },
+  {
+   "start": 1563.025,
+   "end": 1565.947,
+   "text": "So this film ends where the record ends."
+  },
+  {
+   "start": 1565.647,
+   "end": 1570.285,
+   "text": "Eight thousand, one hundred and eighty-five people\nwere told by a credit bureau"
+  },
+  {
+   "start": 1569.685,
+   "end": 1574.142,
+   "text": "that their names matched a Treasury list\nof terrorists and drug traffickers."
+  },
+  {
+   "start": 1573.842,
+   "end": 1578.575,
+   "text": "One thousand, eight hundred and fifty-three\nof them had that sent to somebody else."
+  },
+  {
+   "start": 1578.275,
+   "end": 1582.169,
+   "text": "Six thousand, three hundred and thirty-two of them\nwere told,"
+  },
+  {
+   "start": 1581.569,
+   "end": 1586.445,
+   "text": "by the Supreme Court of the United States,\nthat nothing had happened to them yet."
+  },
+  {
+   "start": 1586.145,
+   "end": 1589.81,
+   "text": "Most of them, the majority pointed out,\ndid not know."
+  },
+  {
+   "start": 1589.51,
+   "end": 1594.429,
+   "text": "Justice Kagan's question is still on the table,\nand it is a short one."
+  },
+  {
+   "start": 1594.129,
+   "end": 1597.943,
+   "text": "Why is it so speculative that a company\nin the business"
+  },
+  {
+   "start": 1597.343,
+   "end": 1600.813,
+   "text": "of selling credit reports will in fact sell one?"
+  }
+ ],
+ "graphics": [],
+ "figures": [
+  {
+   "start": 2.147,
+   "end": 5.147,
+   "kind": "lowerthird",
+   "primary": "AI-assisted visualization",
+   "secondary": "symbolic reconstruction, no real likenesses"
+  },
+  {
+   "start": 9.24,
+   "end": 12.24,
+   "kind": "kinetic",
+   "lines": [
+    "THE SALESMAN SAID",
+    "HIS NAME WAS ON A TERRORIST LIST."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "A TERRORIST LIST"
+   ]
+  },
+  {
+   "start": 16.333,
+   "end": 19.333,
+   "kind": "kinetic",
+   "lines": [
+    "THE LETTER THAT FOLLOWED",
+    "DID NOT SAY HOW TO ARGUE WITH IT."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "DID NOT SAY HOW"
+   ]
+  },
+  {
+   "start": 24.71,
+   "end": 27.71,
+   "kind": "quote",
+   "quote": "Ramirez's wife had to purchase the car in her own name.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — SR-04"
+  },
+  {
+   "start": 33.971,
+   "end": 36.971,
+   "kind": "kinetic",
+   "lines": [
+    "IT ENDS ON ONE QUESTION:",
+    "WHO RECEIVED THE PIECE OF PAPER."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "WHO RECEIVED"
+   ]
+  },
+  {
+   "start": 45.397,
+   "end": 51.397,
+   "kind": "quote",
+   "quote": "On February 27, 2011, Ramirez visited a Nissan dealership in Dublin, California, seeking to buy a Nissan Maxima. Ramirez was accompanied by his wife and his father-in-law.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the Court's statement of facts (SR-01)"
+  },
+  {
+   "start": 55.786,
+   "end": 61.786,
+   "kind": "quote",
+   "quote": "***OFAC ADVISOR ALERT - INPUT NAME MATCHES NAME ON THE OFAC DATABASE.",
+   "attribution": "The alert carried on Ramirez's credit report, quoted at TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — SR-02"
+  },
+  {
+   "start": 66.176,
+   "end": 72.176,
+   "kind": "quote",
+   "quote": "A Nissan salesman told Ramirez that Nissan would not sell the car to him because his name was on a 'terrorist list.'",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021), quoting the trial record at App. 333 — SR-03"
+  },
+  {
+   "start": 76.565,
+   "end": 82.565,
+   "kind": "kinetic",
+   "lines": [
+    "HIS WIFE BOUGHT THE CAR",
+    "IN HER OWN NAME."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "IN HER OWN NAME"
+   ]
+  },
+  {
+   "start": 86.954,
+   "end": 92.954,
+   "kind": "casetimeline_c",
+   "events": [
+    {
+     "year": "Feb 27",
+     "text": "The dealership. The car is not sold to him."
+    },
+    {
+     "year": "Feb 28",
+     "text": "He requests his credit file. It arrives the same day — with no OFAC alert in it."
+    },
+    {
+     "year": "Mar 1",
+     "text": "A second mailing arrives. The OFAC Letter."
+    }
+   ]
+  },
+  {
+   "start": 97.344,
+   "end": 103.344,
+   "kind": "quote",
+   "quote": "the name that appears on your TransUnion credit file 'SERGIO L RAMIREZ' is considered a potential match to information listed on the United States Department of Treasury's Office of Foreign Asset Control ('OFAC') Database.",
+   "attribution": "The OFAC Letter, quoted in Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-06"
+  },
+  {
+   "start": 107.733,
+   "end": 113.733,
+   "kind": "quote",
+   "quote": "Financial institutions are required to check customers' names against the OFAC Database, and if a potential name match is found, to verify whether their potential customer is the person on the OFAC Database. For this reason, some financial institutions may ask for your date of birth, or they may ask to a see a copy of a government-issued form of identification",
+   "attribution": "The OFAC Letter's own instruction, quoted in Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-07"
+  },
+  {
+   "start": 118.123,
+   "end": 124.123,
+   "kind": "highlightring",
+   "cx": 0.5,
+   "cy": 0.46,
+   "r": 0.19,
+   "label": "Date of birth — the identifier the letter told institutions to ask for"
+  },
+  {
+   "start": 128.512,
+   "end": 134.512,
+   "kind": "quote",
+   "quote": "[OFAC records for the two prohibited SDNs who purportedly matched Ramirez, which include first, middle, and last names, dates of birth, and passport information]",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — the court's bracketed description of what the letter enclosed, not the letter's own words (SR-08)"
+  },
+  {
+   "start": 138.902,
+   "end": 144.902,
+   "kind": "kinetic",
+   "lines": [
+    "THE ENCLOSURE CONTAINED",
+    "DATES OF BIRTH."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "DATES OF BIRTH"
+   ]
+  },
+  {
+   "start": 149.291,
+   "end": 155.291,
+   "kind": "quote",
+   "quote": "Ramirez testified that he was confused by the two mailings. The lack of any OFAC information in the credit-report mailing suggested the alert had been removed, but the OFAC Letter mailing suggested otherwise.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-09"
+  },
+  {
+   "start": 159.681,
+   "end": 165.681,
+   "kind": "quote",
+   "quote": "Ramirez also did not know how to remedy the issue because the OFAC Letter did not include instructions for initiating a dispute. Concerned about possible consequences of the OFAC match, Ramirez canceled an international vacation he had planned with his family.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-10"
+  },
+  {
+   "start": 170.07,
+   "end": 176.07,
+   "kind": "quote",
+   "quote": "Concerned about the mailings, Ramirez consulted a lawyer and ultimately canceled a planned trip to Mexico. TransUnion eventually removed the OFAC alert from Ramirez's file.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — SR-11"
+  },
+  {
+   "start": 180.459,
+   "end": 186.459,
+   "kind": "lowerthird",
+   "primary": "Two courts, one cancelled trip",
+   "secondary": "The Supreme Court writes 'a planned trip to Mexico'; the Ninth Circuit writes 'an international vacation … with his family'. Both are the record. Neither is merged into a third version. (SR-10, SR-11)"
+  },
+  {
+   "start": 190.849,
+   "end": 196.849,
+   "kind": "quote",
+   "quote": "Ramirez's credit report with the false OFAC alert was sent to a third party; Ramirez's alert stated that he was a match instead of a potential match; Ramirez was denied credit because of the alert; he canceled a vacation because of the alert; and he spent significant time and energy trying to remove the alert, including hiring a lawyer.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-12"
+  },
+  {
+   "start": 201.238,
+   "end": 207.238,
+   "kind": "kinetic",
+   "lines": [
+    "THE ALERT WAS EVENTUALLY",
+    "REMOVED FROM HIS FILE."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "REMOVED"
+   ]
+  },
+  {
+   "start": 227.458,
+   "end": 233.458,
+   "kind": "quote",
+   "quote": "As part of its enforcement efforts, OFAC publishes a list of individuals and companies owned or controlled by, or acting for or on behalf of, targeted countries. It also lists individuals, groups, and entities, such as terrorists and narcotics traffickers designated under programs that are not country-specific.",
+   "attribution": "U.S. Treasury, Office of Foreign Assets Control — FAQ topic 1631 (LS-01)"
+  },
+  {
+   "start": 250.507,
+   "end": 256.507,
+   "kind": "quote",
+   "quote": "U.S. persons are prohibited from engaging in any transactions with SDNs and must block any property in their possession or under their control in which an SDN has an interest.",
+   "attribution": "U.S. Treasury, OFAC — FAQ topic 1631 (LS-03)"
+  },
+  {
+   "start": 273.556,
+   "end": 279.556,
+   "kind": "quote",
+   "quote": "OFAC maintains a list of 'specially designated nationals' who threaten America's national security. Individuals on the OFAC list are terrorists, drug traffickers, or other serious criminals. It is generally unlawful to transact business with any person on the list.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — LS-04"
+  },
+  {
+   "start": 296.606,
+   "end": 302.606,
+   "kind": "numberticker",
+   "value": 19199,
+   "group": true,
+   "label": "Records in Treasury's published sdn.csv dated 7 August 2026 — OUR count of Treasury's own file. Treasury publishes no current list size.",
+   "topLabel": "not a Treasury statement"
+  },
+  {
+   "start": 319.655,
+   "end": 325.655,
+   "kind": "quote",
+   "quote": "Step 3. How much of the listed entry's name is matching against the name in your transaction? Is just one of two or more names matching (i.e., just the last name)? If yes, you do not have a valid match.",
+   "attribution": "U.S. Treasury, OFAC — FAQ 5, the screener's own procedure (LS-06)"
+  },
+  {
+   "start": 342.705,
+   "end": 348.705,
+   "kind": "quote",
+   "quote": "Step 4. Compare the complete sanctions list entry with all of the information you have on the matching name in your transaction. … Are you missing a lot of this information for the name in your transaction? If yes, go back and get more information and then compare your complete information against the entry.",
+   "attribution": "U.S. Treasury, OFAC — FAQ 5 (LS-07)"
+  },
+  {
+   "start": 365.754,
+   "end": 371.754,
+   "kind": "quote",
+   "quote": "An entry often will have, for example, a full name, address, nationality, passport, tax ID or cedula number, place of birth, date of birth, former names and aliases.",
+   "attribution": "U.S. Treasury, OFAC — what OFAC publishes for each entry (LS-08)"
+  },
+  {
+   "start": 388.803,
+   "end": 394.803,
+   "kind": "quote",
+   "quote": "A 'weak AKA' is a term for a relatively broad or generic alias that may generate a large volume of false hits when such names are run through a computer-based screening system.",
+   "attribution": "U.S. Treasury, OFAC — FAQ topic 1646 (LS-09)"
+  },
+  {
+   "start": 411.853,
+   "end": 417.853,
+   "kind": "quote",
+   "quote": "It is merely a reminder to the person checking your credit that he or she should verify whether you are the individual on one of OFAC's sanctions lists by comparing your information to the OFAC information. If you are not the individual on the sanctions list, the person checking your credit should disregard the OFAC alert.",
+   "attribution": "U.S. Treasury, OFAC — guidance for the consumer whose credit report carries an alert (LS-10)"
+  },
+  {
+   "start": 434.902,
+   "end": 440.902,
+   "kind": "quote",
+   "quote": "Beginning in 2002, TransUnion introduced an add-on product called OFAC Name Screen Alert.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — LS-13"
+  },
+  {
+   "start": 457.951,
+   "end": 463.951,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "Identifiers OFAC publishes for each entry — name, address, nationality, passport, tax ID, place of birth, date of birth, former names, aliases",
+     "value": 9
+    },
+    {
+     "label": "Identifiers TransUnion compared — first name, last name",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "start": 481.001,
+   "end": 487.001,
+   "kind": "quote",
+   "quote": "Accuity's software conducted a 'name-only' search, running a consumer's first and last name against the names on the OFAC list. A search would result in a match if the consumer's first and last name were either identical or similar to a name on the OFAC list (e.g., 'Cortez' would match with 'Cortes').",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — LS-16"
+  },
+  {
+   "start": 504.05,
+   "end": 510.05,
+   "kind": "quote",
+   "quote": "Unsurprisingly, TransUnion's Name Screen product generated many false positives. Thousands of law-abiding Americans happen to share a first and last name with one of the terrorists, drug traffickers, or serious criminals on OFAC's list of specially designated nationals.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — LS-15"
+  },
+  {
+   "start": 527.1,
+   "end": 533.1,
+   "kind": "quote",
+   "quote": "In collecting other types of data for use on consumer reports—such as tax liens or bankruptcy judgments—TransUnion used at least one additional identifier other than the consumer's name (e.g., address, date of birth, or social security number). OFAC information was the only consumer-report data that TransUnion collected using name alone.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020), footnote 2 — LS-17"
+  },
+  {
+   "start": 550.149,
+   "end": 556.149,
+   "kind": "quote",
+   "quote": "TransUnion presented no data showing that any of its name matches through OFAC Advisor were correct. In other words, TransUnion could not confirm that a single OFAC alert sold to its customers was accurate.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020), footnote 4 — LS-19"
+  },
+  {
+   "start": 573.198,
+   "end": 579.198,
+   "kind": "quote",
+   "quote": "When TransUnion first began offering the OFAC Advisor product, it determined that the OFAC alerts being placed on consumer credit reports were exempt from the FCRA",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — the company's own legal position, as the court records it (LS-20)"
+  },
+  {
+   "start": 604.708,
+   "end": 610.708,
+   "kind": "quote",
+   "quote": "In 1970, Congress passed and President Nixon signed the Fair Credit Reporting Act.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — MN-09"
+  },
+  {
+   "start": 625.678,
+   "end": 631.678,
+   "kind": "casetimeline_c",
+   "events": [
+    {
+     "year": "1970",
+     "text": "The Fair Credit Reporting Act — 'reasonable procedures to assure maximum possible accuracy'"
+    },
+    {
+     "year": "2002",
+     "text": "TransUnion introduces OFAC Name Screen Alert"
+    },
+    {
+     "year": "2010",
+     "text": "The Third Circuit reprimands TransUnion"
+    },
+    {
+     "year": "2011",
+     "text": "The OFAC Letters — 1 January to 26 July"
+    }
+   ]
+  },
+  {
+   "start": 646.648,
+   "end": 652.648,
+   "kind": "lowerthird",
+   "primary": "Cortez v. Trans Union, LLC, 617 F.3d 688 (3d Cir. 2010)",
+   "secondary": "Recorded here only as Justice Thomas summarises it. The opinion itself was not retrieved, so nothing beyond his summary is said about it. (TH-04, open question ○-03)"
+  },
+  {
+   "start": 667.617,
+   "end": 673.617,
+   "kind": "quote",
+   "quote": "The report flagged her—Sandra Jean Cortez, born in May 1944—as a match for a person on the OFAC list: Sandra Cortes Quintero, born in June 1971.",
+   "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — TH-04"
+  },
+  {
+   "start": 688.587,
+   "end": 694.587,
+   "kind": "quote",
+   "quote": "Most notably, the Third Circuit specifically reprimanded TransUnion for failing to use an additional identifier such as date of birth to verify the accuracy of OFAC matches.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — N9-02"
+  },
+  {
+   "start": 709.557,
+   "end": 715.557,
+   "kind": "quote",
+   "quote": "Plaintiffs presented evidence that—despite being told in 2010 by another circuit court that OFAC alerts were covered by the FCRA and subject to § 1681e(b)'s reasonable procedures requirement—TransUnion continued to utilize name-only searches to produce OFAC 'matches.'",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — N9-01"
+  },
+  {
+   "start": 730.527,
+   "end": 736.527,
+   "kind": "quote",
+   "quote": "all natural persons in the United States and its Territories to whom TransUnion sent a letter similar in form to the March 1, 2011 [OFAC Letter] TransUnion sent to [Ramirez] . . . from January 1, 2011-July 26, 2011.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — the class definition (MN-01)"
+  },
+  {
+   "start": 751.497,
+   "end": 757.497,
+   "kind": "quote",
+   "quote": "TransUnion sent the same OFAC Letter to 8,184 other consumers who also requested copies of their credit reports between January 2011 and July 2011.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-13"
+  },
+  {
+   "start": 772.466,
+   "end": 778.466,
+   "kind": "quote",
+   "quote": "In July 2011, TransUnion finally stopped sending OFAC Letters and began including OFAC alerts directly on the credit reports it sent to consumers.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — LS-21"
+  },
+  {
+   "start": 793.436,
+   "end": 799.436,
+   "kind": "casetimeline_c",
+   "events": [
+    {
+     "year": "Feb 2012",
+     "text": "Ramirez sues"
+    },
+    {
+     "year": "2014",
+     "text": "The class is certified — 301 F.R.D. 408"
+    },
+    {
+     "year": "Oct 2016",
+     "text": "The District Court rules all 8,185 have standing"
+    }
+   ]
+  },
+  {
+   "start": 814.406,
+   "end": 820.406,
+   "kind": "numberticker",
+   "value": 8185,
+   "group": true,
+   "label": "Class members, including Ramirez — stipulated by both parties before trial",
+   "topLabel": "stipulated"
+  },
+  {
+   "start": 835.376,
+   "end": 841.376,
+   "kind": "numberticker",
+   "value": 1853,
+   "group": true,
+   "label": "Of them, the members whose credit reports were disseminated to third parties between 1 January and 26 July 2011 — the same stipulation",
+   "topLabel": "stipulated"
+  },
+  {
+   "start": 856.346,
+   "end": 862.346,
+   "kind": "quote",
+   "quote": "Ramirez and the class pursued only a willfulness theory for each of their three claims, presumably because statutory and punitive damages are available for willful, but not negligent, FCRA violations.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — MN-10"
+  },
+  {
+   "start": 877.316,
+   "end": 883.316,
+   "kind": "quote",
+   "quote": "At trial, Ramirez testified about his experience at the Nissan dealership. But Ramirez did not present evidence about the experiences of other members of the class.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — SR-15"
+  },
+  {
+   "start": 898.285,
+   "end": 904.285,
+   "kind": "quote",
+   "quote": "After six days of trial, the jury returned a verdict for the plaintiffs. The jury awarded each class member $984.22 in statutory damages and $6,353.08 in punitive damages for a total award of more than $60 million.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — MN-04"
+  },
+  {
+   "start": 919.255,
+   "end": 925.255,
+   "kind": "quote",
+   "quote": "We reduce the punitive-damages award from $6,353.08 per class member to $3,936.88 per class member, but otherwise affirm the verdict and judgment.",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — the Ninth Circuit, before the case reached the Supreme Court (MN-06)"
+  },
+  {
+   "start": 940.225,
+   "end": 946.225,
+   "kind": "quote",
+   "quote": "Opinion by Judge Murguia; Partial Concurrence and Partial Dissent by",
+   "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — Judge McKeown. The panel was not unanimous. (ID-07)"
+  },
+  {
+   "start": 968.335,
+   "end": 974.335,
+   "kind": "quote",
+   "quote": "To have Article III standing to sue in federal court, plaintiffs must demonstrate, among other things, that they suffered a concrete harm. No concrete harm, no standing.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the opening lines (HD-01)"
+  },
+  {
+   "start": 984.586,
+   "end": 990.586,
+   "kind": "lowerthird",
+   "primary": "25 June 2021 — TransUnion LLC v. Ramirez, No. 20–297",
+   "secondary": "JUSTICE KAVANAUGH delivered the opinion of the Court. On writ of certiorari to the United States Court of Appeals for the Ninth Circuit. (ID-01, ID-02)"
+  },
+  {
+   "start": 1000.836,
+   "end": 1006.836,
+   "kind": "votetally",
+   "majority": 5,
+   "dissent": 4,
+   "label": "Kavanaugh, Roberts, Alito, Gorsuch, Barrett — Thomas, Breyer, Sotomayor, Kagan"
+  },
+  {
+   "start": 1017.087,
+   "end": 1023.087,
+   "kind": "quote",
+   "quote": "Only plaintiffs concretely harmed by a defendant's statutory violation have Article III standing to seek damages against that private defendant in federal court.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the holding (HD-02)"
+  },
+  {
+   "start": 1033.337,
+   "end": 1039.337,
+   "kind": "quote",
+   "quote": "An injury in law is not an injury in fact.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-04"
+  },
+  {
+   "start": 1049.588,
+   "end": 1055.588,
+   "kind": "quote",
+   "quote": "The standing inquiry in this case thus distinguishes between (i) credit files that consumer reporting agencies maintain internally and (ii) the consumer credit reports that consumer reporting agencies disseminate to third-party creditors.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-06"
+  },
+  {
+   "start": 1065.838,
+   "end": 1071.838,
+   "kind": "quote",
+   "quote": "The mere presence of an inaccuracy in an internal credit file, if it is not disclosed to a third party, causes no concrete harm.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-07"
+  },
+  {
+   "start": 1082.089,
+   "end": 1088.089,
+   "kind": "quote",
+   "quote": "the plaintiffs' harm is roughly the same, legally speaking, as if someone wrote a defamatory letter and then stored it in her desk drawer. A letter that is not sent does not harm anyone, no matter how insulting the letter is. So too here.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the image the majority chose (HD-08)"
+  },
+  {
+   "start": 1098.339,
+   "end": 1104.339,
+   "kind": "quote",
+   "quote": "the risk of dissemination to third parties— was too speculative to support Article III standing",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-09"
+  },
+  {
+   "start": 1114.589,
+   "end": 1120.589,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "1,853 — the report went to a third party: standing",
+     "value": 1853
+    },
+    {
+     "label": "6,332 — the alert stayed in the internal file: no standing",
+     "value": 6332
+    }
+   ]
+  },
+  {
+   "start": 1130.84,
+   "end": 1136.84,
+   "kind": "quote",
+   "quote": "only 1,853 class members have standing for the reasonable-procedures claim and (ii) only Ramirez himself has standing for the two formatting claims relating to the mailings",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-03"
+  },
+  {
+   "start": 1147.09,
+   "end": 1153.09,
+   "kind": "quote",
+   "quote": "We reverse the judgment of the U. S. Court of Appeals for the Ninth Circuit and remand the case for further proceedings consistent with this opinion.",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-12"
+  },
+  {
+   "start": 1163.341,
+   "end": 1169.341,
+   "kind": "kinetic",
+   "lines": [
+    "REVERSED AND REMANDED.",
+    "NOT DISMISSED."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NOT DISMISSED"
+   ]
+  },
+  {
+   "start": 1179.591,
+   "end": 1185.591,
+   "kind": "quote",
+   "quote": "the plaintiffs did not present any evidence that the 6,332 class members even knew that there were OFAC alerts in their internal TransUnion credit files. If those plaintiffs prevailed in this case, many of them would first learn that they were 'injured' when they received a check compensating them for their supposed 'injury.'",
+   "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the majority's sharpest point (HD-10)"
+  },
+  {
+   "start": 1195.842,
+   "end": 1201.842,
+   "kind": "mechanism",
+   "mechanism": "faultsplit"
+  },
+  {
+   "start": 1224.717,
+   "end": 1230.717,
+   "kind": "quote",
+   "quote": "TransUnion generated credit reports that erroneously flagged many law-abiding people as potential terrorists and drug traffickers.",
+   "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — TH-01"
+  },
+  {
+   "start": 1247.218,
+   "end": 1253.218,
+   "kind": "quote",
+   "quote": "Yet despite Congress' judgment that such misdeeds deserve redress, the majority decides that TransUnion's actions are so insignificant that the Constitution prohibits consumers from vindicating their rights in federal court. The Constitution does no such thing.",
+   "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — TH-02"
+  },
+  {
+   "start": 1269.719,
+   "end": 1275.719,
+   "kind": "quote",
+   "quote": "TransUnion did not compare birth dates, middle initials, Social Security numbers, or any other available identifier routinely used to collect and verify credit-report data.",
+   "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — LS-18, TH-03"
+  },
+  {
+   "start": 1292.219,
+   "end": 1298.219,
+   "kind": "quote",
+   "quote": "TransUnion could not confirm that a single OFAC alert sold to its customers was accurate.",
+   "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021), quoting Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) footnote 4 — TH-06, LS-19"
+  },
+  {
+   "start": 1314.72,
+   "end": 1320.72,
+   "kind": "quote",
+   "quote": "one need only tap into common sense to know that receiving a letter identifying you as a potential drug trafficker or terrorist is harmful. All the more so when the information comes in the context of a credit report, the entire purpose of which is to demonstrate that a person can be trusted.",
+   "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — TH-05"
+  },
+  {
+   "start": 1337.221,
+   "end": 1343.221,
+   "kind": "quote",
+   "quote": "pyrrhic victory for TransUnion",
+   "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021), on state court as the remaining forum — TH-08"
+  },
+  {
+   "start": 1359.721,
+   "end": 1365.721,
+   "kind": "quote",
+   "quote": "The Court here transforms standing law from a doctrine of judicial modesty into a tool of judicial aggrandizement. It holds, for the first time, that a specific class of plaintiffs whom Congress allowed to bring a lawsuit cannot do so under Article III.",
+   "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — KG-01"
+  },
+  {
+   "start": 1382.222,
+   "end": 1388.222,
+   "kind": "quote",
+   "quote": "Congress is better suited than courts to determine when something causes a harm or risk of harm in the real world.",
+   "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — KG-05"
+  },
+  {
+   "start": 1404.722,
+   "end": 1410.722,
+   "kind": "quote",
+   "quote": "But why is it so speculative that a company in the business of selling credit reports to third parties will in fact sell a credit report to a third party?",
+   "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — KG-04"
+  },
+  {
+   "start": 1427.223,
+   "end": 1433.223,
+   "kind": "quote",
+   "quote": "nearly 25% of the class",
+   "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021), on the reports already sent to potential creditors — KG-06"
+  },
+  {
+   "start": 1449.724,
+   "end": 1455.724,
+   "kind": "kinetic",
+   "lines": [
+    "WHAT THE COURT DID NOT DECIDE:",
+    "WHETHER TRANSUNION BROKE THE LAW."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "DID NOT DECIDE"
+   ]
+  },
+  {
+   "start": 1472.224,
+   "end": 1478.224,
+   "kind": "lowerthird",
+   "primary": "Not decided: certification, and the state courts",
+   "secondary": "The Court held only that FEDERAL courts lack jurisdiction over the 6,332. Certification was left to the Ninth Circuit on remand, and Justice Thomas flags state court as the remaining forum. (ND-03, ND-04, TH-08)"
+  },
+  {
+   "start": 1494.725,
+   "end": 1500.725,
+   "kind": "lowerthird",
+   "primary": "Not decided: injunctive relief",
+   "secondary": "The risk-of-future-harm discussion expressly reserves the injunctive case — a material risk can satisfy concreteness there. This was a suit for damages. (ND-05)"
+  },
+  {
+   "start": 1517.226,
+   "end": 1523.226,
+   "kind": "lowerthird",
+   "primary": "Not decided: what anyone finally received",
+   "secondary": "No document retrieved states a final recovery. The Supreme Court set no dollar figure of its own. (ND-06, MN-11)"
+  },
+  {
+   "start": 1542.421,
+   "end": 1548.421,
+   "kind": "kinetic",
+   "lines": [
+    "FIRST NAME.",
+    "LAST NAME.",
+    "NOTHING ELSE."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NOTHING ELSE"
+   ]
+  },
+  {
+   "start": 1551.31,
+   "end": 1557.31,
+   "kind": "lowerthird",
+   "primary": "The record this film stands on ends on 25 June 2021",
+   "secondary": "What happened on remand, whether the 1,853 ever recovered anything, whether the parties settled — no document retrieved says. (open question ○-04)"
+  },
+  {
+   "start": 1560.2,
+   "end": 1566.2,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "8,185 in the class",
+     "value": 8185
+    },
+    {
+     "label": "1,853 whose reports went to a third party",
+     "value": 1853
+    },
+    {
+     "label": "6,332 whose did not",
+     "value": 6332
+    }
+   ]
+  },
+  {
+   "start": 1569.089,
+   "end": 1575.089,
+   "kind": "mechanism",
+   "mechanism": "closingdoor"
+  },
+  {
+   "start": 1577.979,
+   "end": 1583.979,
+   "kind": "quote",
+   "quote": "But why is it so speculative that a company in the business of selling credit reports to third parties will in fact sell a credit report to a third party?",
+   "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the last word of the film (KG-04)"
+  },
+  {
+   "start": 1586.868,
+   "end": 1592.868,
+   "kind": "lowerthird",
+   "primary": "AI-assisted visualization",
+   "secondary": "symbolic reconstruction, no real likenesses"
+  }
+ ],
+ "overlays": [],
+ "leadSeconds": 0.0,
+ "openingVariant": "overlay"
+}

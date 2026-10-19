@@ -1,0 +1,56 @@
+EP80_concordia — 画像発注 バッチ 6/23（8枚）
+区分: ACT_2
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, airline livery, airline tail markings, ship funnel markings, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) N041.png
+   [N041]  flags: 
+   A muster station marked out on an open cruise ship deck in brilliant daylight, painted lines and a station board with no lettering, empty
+
+2) N042.png
+   [N042]  flags: P
+   Rows of passengers in orange lifejackets standing at a muster station in brilliant daylight, all seen from behind, a crew member facing away at the front
+
+3) N043.png
+   [N043]  flags: P
+   Close-up of an orange lifejacket being fastened at the waist, hands only, brilliant daylight, no face in frame
+
+4) N044.png
+   [N044]  flags: 
+   A rack of folded orange lifejackets in a deck locker under a bright strip light
+
+5) N045.png
+   [N045]  flags: 
+   A muster station sign board mounted on a bulkhead, blank, a bright deck light burning beside it
+
+6) N046.png
+   [N046]  flags: 
+   A cruise ship promenade deck in brilliant daylight, lifeboats hanging in their davits along the side, sea beyond, the lifeboats plain orange with no name or marking painted on them
+
+7) N047.png
+   [N047]  flags: 
+   An orange enclosed lifeboat hanging level in its davit, seen close, brilliant sunlight on the hull, the hull plain orange with no name, no numerals and no marking of any kind
+
+8) N048.png
+   [N048]  flags: 
+   A lifeboat davit mechanism in close-up, steel arms and wire falls, a work lamp blazing into the lens

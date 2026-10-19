@@ -1,0 +1,174 @@
+{
+  "episode": "EP47",
+  "slug": "atwater",
+  "case": "Atwater v. City of Lago Vista, 532 U.S. 318 (2001)",
+  "decided": "2001-04-24",
+  "sources_master": [
+    "Majority opinion (Souter), Cornell LII: https://www.law.cornell.edu/supct/html/99-1408.ZO.html",
+    "Dissent (O'Connor), Cornell LII: https://www.law.cornell.edu/supct/html/99-1408.ZD.html",
+    "US Reports cite 532 U.S. 318; Oyez case 99-1408"
+  ],
+  "note": "Verified 2026-07-22 against primary opinion text (Cornell LII). Web budget partial; items resting on training knowledge alongside the fetched opinion are marked confidence:medium.",
+  "ledger": [
+    {
+      "id": "A01",
+      "claim": "Subject and place",
+      "detail": "Gail Atwater was driving her pickup truck through Lago Vista, Texas, with her two young children in the front cab. She is a living private person; non-convicted of any jailable crime (fine-only offense). Treat with dignity, symbols only, do not sensationalize the children.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO (majority statement of facts)", "Cornell LII ZD (dissent)"]
+    },
+    {
+      "id": "A02",
+      "claim": "The offense: unbelted, fine-only",
+      "detail": "Neither Atwater nor her children were wearing seatbelts, a violation of Texas law. The seatbelt violation is a misdemeanor punishable ONLY by a fine (no jail). Texas set the fine at not less than $25 and not more than $50.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO", "Tex. Transp. Code seatbelt provision as quoted in opinion"]
+    },
+    {
+      "id": "A03",
+      "claim": "Maximum fine figure",
+      "detail": "Maximum penalty for the seatbelt offense was $50 (statutory range $25-$50). Atwater ultimately pleaded no contest and was fined $50, the maximum. This is the figure featured in-script ('$50 maximum, no jail').",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZD (O'Connor: fined $50, the maximum penalty for her crime)", "Cornell LII ZO"]
+    },
+    {
+      "id": "A04",
+      "claim": "Arresting officer",
+      "detail": "Lago Vista police officer Bart Turek stopped Atwater and arrested her. He had stopped her once before over a seatbelt he mistakenly thought he had seen.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO", "Cornell LII ZD"]
+    },
+    {
+      "id": "A05",
+      "claim": "The arrest: handcuffs, squad car, station",
+      "detail": "Turek handcuffed Atwater with her hands behind her back, placed her in the police car, and drove her to the police station. Her children were taken in by a neighbor/friend so they would not witness the booking.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZD (O'Connor recounts handcuffs behind back, police car, station)", "Cornell LII ZO"]
+    },
+    {
+      "id": "A06",
+      "claim": "Booking and release",
+      "detail": "At the station Atwater was made to remove her shoes, relinquish her possessions, and was photographed (booking photo/mugshot). She was placed in a holding cell for about an hour, then taken before a magistrate and released on bond.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZD (removed shoes, relinquished possessions, holding cell ~1 hour)"]
+    },
+    {
+      "id": "A07",
+      "claim": "Plea and fine paid",
+      "detail": "Atwater pleaded no contest to the seatbelt offense and paid a $50 fine. That fine was the entire lawful penalty for the conduct; the custodial arrest was not a sentence.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZD"]
+    },
+    {
+      "id": "A08",
+      "claim": "The lawsuit",
+      "detail": "Atwater (with her husband) sued the City of Lago Vista, its police department, and Officer Turek under 42 U.S.C. Section 1983, claiming the custodial arrest for a fine-only offense was an unreasonable seizure violating the Fourth Amendment.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO", "Oyez 99-1408"]
+    },
+    {
+      "id": "A09",
+      "claim": "Probable cause conceded",
+      "detail": "It was undisputed that Officer Turek had probable cause to believe a seatbelt offense had been committed in his presence. The dispute was whether probable cause for a fine-only offense is, by itself, enough to justify a full custodial arrest.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO", "Cornell LII ZD"]
+    },
+    {
+      "id": "A10",
+      "claim": "HOLDING (arrest upheld / constitutional)",
+      "detail": "The Court UPHELD the arrest. Holding: if an officer has probable cause to believe an individual has committed even a very minor criminal offense in his presence, he may, without violating the Fourth Amendment, arrest the offender. A warrantless custodial arrest for a fine-only misdemeanor does NOT violate the Fourth Amendment. The arrest was CONSTITUTIONAL / ALLOWED. Do NOT call it illegal.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO (holding statement verbatim)"]
+    },
+    {
+      "id": "A11",
+      "claim": "Vote 5-4",
+      "detail": "Decided 5-4. Majority: Souter, joined by Rehnquist, Scalia, Kennedy, Thomas. Dissent: O'Connor, joined by Stevens, Ginsburg, Breyer.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO / ZD", "Oyez 99-1408"]
+    },
+    {
+      "id": "A12",
+      "claim": "Author of majority",
+      "detail": "Justice David Souter delivered the opinion of the Court.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO"]
+    },
+    {
+      "id": "A13",
+      "claim": "Souter reasoning: history + bright-line",
+      "detail": "Souter grounded the holding in common-law history (no firm founding-era tradition forbidding warrantless arrest for minor offenses committed in the officer's presence) and in the administrability of a clear rule over case-by-case judgments of offense-seriousness at the roadside.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO"]
+    },
+    {
+      "id": "A14",
+      "claim": "Souter 'pointless indignity' concession (MAJORITY) verbatim",
+      "detail": "VERBATIM (majority, Souter): \"Atwater's claim to live free of pointless indignity and confinement clearly outweighs anything the City can raise against it specific to her case.\" Souter conceded her case was sympathetic but declined to make the Fourth Amendment turn on case-by-case balancing.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO (phrase 'live free of pointless indignity and confinement clearly outweighs' confirmed on fetch)"]
+    },
+    {
+      "id": "A15",
+      "claim": "Souter: remedy is legislative",
+      "detail": "The majority held the fix for pointless minor-offense arrests belongs to legislatures, not to the Fourth Amendment; it is easier to devise a minor-offense limitation by statute than to derive one from the Constitution, and many states have enacted such statutory limits.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZO"]
+    },
+    {
+      "id": "A16",
+      "claim": "O'Connor dissent core reasoning",
+      "detail": "O'Connor (dissent) argued probable cause alone is not a sufficient condition for a full custodial arrest for a fine-only offense; Fourth Amendment reasonableness requires balancing the state's interest against the individual's liberty. For a fine-only offense an officer should issue a citation unless able to point to specific articulable facts warranting the greater intrusion of a custodial arrest.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZD"]
+    },
+    {
+      "id": "A17",
+      "claim": "O'Connor dissent verbatim (FEATURED)",
+      "detail": "VERBATIM (dissent, O'Connor): \"The Court neglects the Fourth Amendment's express command in the name of administrative ease. In so doing, it cloaks the pointless indignity that Gail Atwater suffered with the mantle of reasonableness.\" Attributed to the DISSENT, not the Court.",
+      "verified": true,
+      "confidence": "high",
+      "sources": ["Cornell LII ZD (confirmed verbatim on fetch)"]
+    },
+    {
+      "id": "A18",
+      "claim": "Year of stop vs decision",
+      "detail": "The traffic stop/arrest occurred in March 1997; the Supreme Court decided the case April 24, 2001.",
+      "verified": true,
+      "confidence": "medium",
+      "sources": ["Cornell LII ZO (decision date high)", "1997 arrest date from case record / training knowledge (medium)"]
+    },
+    {
+      "id": "A19",
+      "claim": "Children's ages",
+      "detail": "Atwater's two children in the truck were young (reported ages 3 and 5). Script uses only 'two young children' and does not dwell on ages, per no-sensationalize constraint.",
+      "verified": true,
+      "confidence": "medium",
+      "sources": ["Oyez/case summaries via fetch (medium)"]
+    },
+    {
+      "id": "A20",
+      "claim": "Lower courts before SCOTUS",
+      "detail": "The district court granted summary judgment for the defendants; the en banc Fifth Circuit affirmed; the Supreme Court affirmed. Not featured in narration but supports 'the case reached the Supreme Court.'",
+      "verified": true,
+      "confidence": "medium",
+      "sources": ["Cornell LII ZO procedural history (medium)"]
+    }
+  ]
+}

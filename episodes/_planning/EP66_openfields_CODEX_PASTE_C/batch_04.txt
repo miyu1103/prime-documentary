@@ -1,0 +1,55 @@
+EP66 openfields — 画像**再**発注 バッチC 4/4（5枚）
+区分: THUMB（5枚・上40%を空ける）
+
+★これは作り直しです。**同じ名前の既存ファイルを上書きしてください。**
+　新しい ID を振らない。`_v2` / `_02` を作らない。
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, muted natural colour, flat overcast daylight of a late Appalachian autumn, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, restrained documentary framing, rural Pennsylvania and Middle Tennessee between 2019 and 2026, ordinary working farmland and unmanaged second-growth woodland, worn unglamorous surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いているプロンプトがあります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名を一切描かない（看板の面は必ず「褪せて読めない」状態）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円も描かない
+・トレイルカメラは「幹にベルトで留めた艶消しオリーブの角い樹脂の箱」。銀の金属缶やコンパクトカメラにしない
+・警察・制服・記章・銃器・血液・ドローンを描かない
+・手は指が数えられること。組んだ指・融合した指・6本指にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ L255.png
+A closed steel tube farm gate with a chain and a plain padlock at its latch post, shot dead centre and close from directly in front at chest height, one hard directional key light raking from the left so the wet metal stands out bright against the darker ground, the horizon line held BELOW the midpoint of the frame and the gate, its chain and its padlock sitting wholly in the lower half of the frame and set slightly RIGHT of centre, and the ENTIRE UPPER 40% OF THE FRAME an unbroken field of pale bright overcast sky with nothing whatever entering it: no branch, no twig, no trunk, no post, no wire, no chain, no tree line, no distant hill and no horizon line anywhere within that upper 40% [STYLE] Avoid: [NEG]
+
+■ L256.png
+A small dull olive plastic box strapped to a tree trunk with a black webbing strap, seen at very close range from slightly below, the TRUNK CUT OFF BY THE FRAME so that its top edge is no higher than 40% down from the top of the frame and it occupies only the lower two thirds, the box strapped low on it and left of centre, one hard directional key light from the right throwing a crisp shadow of the box across the bark, and the ENTIRE UPPER 40% OF THE FRAME an unbroken field of pale bright overcast sky with nothing whatever entering it: no branch, no twig, no trunk, no post, no wire, no chain, no tree line, no distant hill and no horizon line anywhere within that upper 40% [STYLE] Avoid: [NEG]
+
+■ L257.png
+A thick vertical stripe of purple paint on the trunk of a tree, seen close and straight on, the TRUNK ENDING BELOW the upper 40% of the frame and filling only the lower two thirds, the purple stripe low in the frame and right of centre, hard light raking across the bark from the left so the paint reads bright and saturated against the grey wood, and the ENTIRE UPPER 40% OF THE FRAME an unbroken field of pale bright overcast sky with nothing whatever entering it: no branch, no twig, no trunk, no post, no wire, no chain, no tree line, no distant hill and no horizon line anywhere within that upper 40% [STYLE] Avoid: [NEG]
+
+■ L259.png
+An invented ordinary person's hands closing a padlock through a chain on a gate post with their face visible above the hands looking down at them, one hard key light from the right so both the hands and the face stand out bright against the darker gate, the GATE POST CUT OFF at 45% down from the top of the frame, the head and both hands held wholly in the lower half of the frame and set slightly RIGHT of centre, five clearly separated fingers on each hand and the eyes directed down at the padlock and not at the camera, and the ENTIRE UPPER 40% OF THE FRAME an unbroken field of pale bright overcast sky with nothing whatever entering it: no branch, no twig, no trunk, no post, no wire, no chain, no tree line, no distant hill and no horizon line anywhere within that upper 40%, and no hair entering that band either [STYLE] Avoid: [NEG]
+
+■ L260.png
+A blank weathered placard nailed to a tree at head height, its face faded to an even featureless pale surface with no characters or lines on it anywhere, shot dead centre and close, the BROKEN STUMP TOP CROPPED OUT of the frame entirely and the placard's top edge no higher than 45% down from the top of the frame, the placard and the trunk occupying the lower two thirds, one hard key light from the left so the board is markedly brighter than the wood behind it, and the ENTIRE UPPER 40% OF THE FRAME an unbroken field of pale bright overcast sky with nothing whatever entering it: no branch, no twig, no trunk, no post, no wire, no chain, no tree line, no distant hill and no horizon line anywhere within that upper 40% [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: L170.png）で、**既存の同名ファイルに上書き**保存してください。
+長辺 3840px 以上・16:9・PNG。
