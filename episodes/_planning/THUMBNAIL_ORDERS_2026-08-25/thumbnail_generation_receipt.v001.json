@@ -1,0 +1,184 @@
+{
+  "schema_version": "thumbnail_generation_receipt.v001",
+  "generated_at": "2026-08-25T02:48:52.9605463+09:00",
+  "scope": {
+    "episodes": ["EP83", "EP84", "EP85"],
+    "concepts_per_episode": 10,
+    "expected_images": 30,
+    "generated_images": 30,
+    "attempt_policy": "one_prompt_one_image_one_attempt",
+    "provider_requests_total": 30,
+    "retries": 0,
+    "overwrites": 0
+  },
+  "order": {
+    "combined_file": "CODEX_PASTE_ALL.txt",
+    "combined_sha256": "E9253624053FDD95018897AFD8811D789EA85832EA008AA262353480B88D3FC3",
+    "source_orders": [
+      {
+        "file": "EP83_max737_thumbnails.txt",
+        "sha256": "E7F460B529BC3B06BF8AA4A45E684A7F2360E26C1B02A7B6F3B4D34394FAC67F"
+      },
+      {
+        "file": "EP84_threemile_thumbnails.txt",
+        "sha256": "136CE1F7708B37DD23D96D25743E3A8736498C23C0705874FA00E0EAF0C68B45"
+      },
+      {
+        "file": "EP85_katrina_thumbnails.txt",
+        "sha256": "A1460F124FAC208C49AC3A650ED78F12BA4704D1EDF44DAC32714016624491DE"
+      }
+    ],
+    "neg_contract_check": "3 of 3 PASS scripts/check_image_order_neg.py",
+    "prompt_diversity_check": "NOT PARSED: scripts/check_prompt_diversity.py extracted 0 rows from this plain-text order format",
+    "manual_prompt_identity_check": "30 unique episode-id pairs and 30 unique literal prompt hashes"
+  },
+  "generation": {
+    "provider": "codex_builtin_image_gen",
+    "native_output_dimensions": ["1672x941", "1674x940", "1881x836", "1536x1024"],
+    "native_sources_retained": true,
+    "native_staging_directory": "runs/thumbnail_generation_20260825",
+    "cost": "not_reported_by_provider",
+    "external_publish_or_upload": false
+  },
+  "normalization_and_upscale": {
+    "aspect_normalization": "center crop to 16:9 before upscale",
+    "native_aspect_exceptions": ["EP84-T01", "EP84-T04", "EP84-T05", "EP84-T08"],
+    "normalized_staging_directory": "runs/thumbnail_generation_20260825_normalized",
+    "script": "scripts/upscale_plates_4k_esrgan.py",
+    "script_sha256": "75186260E4C900FBC0DC87F4B53B3571559463E1B00AD9F27422A0C502D53F79",
+    "model": "RealESRGAN_x4plus",
+    "final_resize": "LANCZOS",
+    "final_dimensions": "3840x2160",
+    "pixel_mode": "RGB"
+  },
+  "technical_qc": {
+    "passed": true,
+    "files_checked": 30,
+    "dimension_failures": [],
+    "unreadable_files": [],
+    "cross_set_exact_duplicate_groups": [],
+    "total_final_bytes": 224627859
+  },
+  "ctr_punch_qc": {
+    "tool": "scripts/check_thumb_punch.py",
+    "passed": false,
+    "passing_images": 0,
+    "failing_images": 30,
+    "summary": "All 30 plates fell outside at least one measured winner band; the dominant failures were low brightness, contrast, bright-area percentage, and saturation. No automatic grading or regeneration was performed."
+  },
+  "visual_qc": {
+    "status": "owner_review_required",
+    "full_size_contact_sheet_reviewed": true,
+    "mobile_168x94_reviewed": true,
+    "identifiable_real_people_observed": false,
+    "readable_generated_text_or_numerals_observed": false,
+    "exceptions": [
+      {
+        "id": "EP85-T06",
+        "status": "reject_recommended",
+        "reason": "Generated as a four-panel collage instead of one engineer's desk, violating the one-scene and no-graphic-collage contract."
+      },
+      {
+        "id": "EP84-T09",
+        "status": "review_required",
+        "reason": "A small recognizable United States flag appears in the meeting room although the negative contract excludes emblems."
+      }
+    ],
+    "contact_sheets": [
+      {
+        "file": "runs/qc/plate_sheets/max737_thumb_20260825_final/max737_thumb_20260825_final_plates_01.png",
+        "sha256": "2A64CC54D8BC608FBE89774FBF5908D669EC09F31FEEE93F1D4C5CE1F03682E9"
+      },
+      {
+        "file": "runs/qc/plate_sheets/max737_thumb_20260825_final_mobile/max737_thumb_20260825_final_mobile_plates_01.png",
+        "sha256": "92491D05E3FD24EB0CCC16DC81480517E291E4C3E86D9A6F938AB1FFBE65FB56"
+      },
+      {
+        "file": "runs/qc/plate_sheets/threemile_thumb_20260825_final/threemile_thumb_20260825_final_plates_01.png",
+        "sha256": "1F66EA7AF2DB17631148530A3CA424B6F64DDE8367E0043D95AF7339C39E037C"
+      },
+      {
+        "file": "runs/qc/plate_sheets/threemile_thumb_20260825_final_mobile/threemile_thumb_20260825_final_mobile_plates_01.png",
+        "sha256": "68A49074DFD947C125B0545A12E3DFECBF6ADFDE37840FF7A03A0E6A853A626D"
+      },
+      {
+        "file": "runs/qc/plate_sheets/katrina_thumb_20260825_final/katrina_thumb_20260825_final_plates_01.png",
+        "sha256": "7EF29E62E8E2789FECCF6CE20C5D005DBA5947B0459DA6F026CD8FCCAA002DF9"
+      },
+      {
+        "file": "runs/qc/plate_sheets/katrina_thumb_20260825_final_mobile/katrina_thumb_20260825_final_mobile_plates_01.png",
+        "sha256": "E6834038F9AB4CA4C668AC9D1B9E4227BE0C69E0C4CD6A4543EB17A51AE3B3F1"
+      }
+    ]
+  },
+  "sets": [
+    {
+      "episode": "EP83",
+      "slug": "max737",
+      "directory": "episodes/PD-2026-083-max737/10_thumbnail",
+      "dimensions": "3840x2160",
+      "images": {
+        "T01.png": "C02F02FFDA95A39DA5CE0F9F24DF9D649C6D9B00F4C9B32192B275879626D49A",
+        "T02.png": "FBCAD19EA3459066F99DC20BE616AB074B01FBF94B0B3119AAB7A969213CBDEA",
+        "T03.png": "04351F2C767C302CA2AB69F790F74F60CA246BB6521B3E8ED7B250E834FECF2A",
+        "T04.png": "2BA49F7CE0C0D078B96AC5838B3BE20D9E886ABA4C980C7ADBCB4B700840C59A",
+        "T05.png": "41A3193A4155F02E180A492170C457520BB9C58425757010A3EE5D914F4799BC",
+        "T06.png": "2EF948CBF0DB74918CC9D530CF134722815210F502931537E15D84D50FE36460",
+        "T07.png": "8DFD9F33421136E7BE7F9F97E78BF589FB37B4FD0B7F05F56FF362C2E20F939D",
+        "T08.png": "5178392F79F5629D20A6BAAC543C411C9EAF4846F94D504E7C60D3097CB6230C",
+        "T09.png": "D7D185375147B43BF4787D71B20CEF04CC66755E1258CE1D01645A7E80A7466B",
+        "T10.png": "7A84155D53C4FEFE7102BE703AB73F70597505A6E7D7666300420CB97597EA2E"
+      }
+    },
+    {
+      "episode": "EP84",
+      "slug": "threemile",
+      "directory": "episodes/PD-2026-084-threemile/10_thumbnail",
+      "dimensions": "3840x2160",
+      "images": {
+        "T01.png": "C63C7F23C95A743DEF410859C2FDC19691760D5D5F9AF23473674883A42D0BA9",
+        "T02.png": "DD77D0C246A9D30B5E670981EC27244B97858962525DF19919CF7A68307231CD",
+        "T03.png": "EA0938C158AA2C6E12B5EE647AE40C180E62CA8E6698CB761284D3668D72EF6E",
+        "T04.png": "9DA9D4850F00E3AFE51EED6B536A6C1E6DDCE0D49F93A13EE634CB628F984D39",
+        "T05.png": "F9E4CA8383A57144A36FA8CA9A2EF12D35223875039B11DB952CDFBBD118269C",
+        "T06.png": "D199C59CB0DF20876BED75865899C92601B3EE6157E4DC22832C2AF85F037A34",
+        "T07.png": "CD6550C6D91FC1FF4A4116CABA79D1CAA0CD869A25ED67EBD96CA85497BEA0A1",
+        "T08.png": "5E65522BA79B56F0C7E76FE22F772624BEE9D6F35ECA7AE233106F861977B490",
+        "T09.png": "63025E3503811DD72DD66916468FA0B0A8D0B045AFD8D47237336CBED6609C0A",
+        "T10.png": "7CC8D9B895DED3E429D1690C450EDCBCF0E93057349C30E398E3D7C412A9D4E2"
+      }
+    },
+    {
+      "episode": "EP85",
+      "slug": "katrina",
+      "directory": "episodes/PD-2026-085-katrina/10_thumbnail",
+      "dimensions": "3840x2160",
+      "images": {
+        "T01.png": "53D201EB8F5465BA369EDB591D9A202C0C53B6D1C09FB9E925A77EBC04874596",
+        "T02.png": "F7B4A43C11D90FC32CBAD85C26C4A06A40B977355CB75C595056AB6DFD58D85F",
+        "T03.png": "154C896B3840FCAD9CB7BD6DD2EDA21F2937A29BA14AD4790CCFE6E607938CBC",
+        "T04.png": "3F59F729C02B8FB97AE637A95EDEB36DD924E181F6BA8EDC0247B628ADAACFED",
+        "T05.png": "48B48867ED32F97B21B57DA4EDD052D6B4F16DB9A5F65A8001915375F45CE5EE",
+        "T06.png": "CFBE2EDB24C6F595D8E1BF4E4A704125365BF519DBC982C897E5B619D1CA4403",
+        "T07.png": "C126D168508D0EBA33F9EC6DA43425BADE26E25B8B4F38C4995245FDC14BE53B",
+        "T08.png": "54FAEA2614476D16B52BC5A99ED2DBB16C011A6E3D95201A720A4776479A7E44",
+        "T09.png": "D587FFA639F8AC6A4E751A9A0A8B609C979F3D948FE45BD5327E7F14188BC5D4",
+        "T10.png": "D760803EAC276CD1599655672DB2BE55865410B46228E15FA4DEF5B560090A2F"
+      }
+    }
+  ],
+  "release_state": {
+    "selected_assets": [],
+    "owner_approval": false,
+    "headline_composited": false,
+    "manifest_updated": false,
+    "published": false,
+    "next_gate": "owner visual review and decision on deterministic grading or targeted one-attempt replacements"
+  },
+  "side_effects": {
+    "uploaded": false,
+    "published": false,
+    "external_messages_sent": false,
+    "processes_restarted_or_terminated": false
+  }
+}

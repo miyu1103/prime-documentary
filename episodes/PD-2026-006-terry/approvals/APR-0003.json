@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0003",
+  "episode_id": "PD-2026-006-terry",
+  "target_type": "package",
+  "target_id": "title_thumbnail_v001",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T19:35:00+09:00",
+  "requested_by": "codex",
+  "decided_at": "2026-06-20T19:35:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner approved completion after the title/thumbnail gate package was presented. Codex applies the recommended title 'A Cop Can Search You Without a Warrant - Here's the Catch' and thumbnail_option_01.v001.png ('NO WARRANT?'). This approval does not authorize upload or publish.",
+  "conditions": [
+    "Use thumbnail_option_01.v001.png as the selected package thumbnail.",
+    "Use the recommended working title unless owner changes it later.",
+    "Keep YouTube synthetic-content disclosure required in package metadata.",
+    "No upload or publish under this approval."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_01.v001.png"
+}

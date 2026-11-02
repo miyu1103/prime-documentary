@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 322,
+  "episode_id": "PD-2026-081-station",
+  "slug": "station",
+  "loop": true,
+  "loop_join": "The final beat p14 (short322_14.png, an empty coat rail by a club entrance) carries isCta:true and rewind:true, so DepthImageV runs that beat's dolly backward ([1,0] instead of [0,1]): instead of pushing in further under the FULL CASE card it eases back out to the same base framing every beat opens at. That matches the opening energy of frame 0 (p01, short322_01.png, the pair of wide painted double doors), so the restart reads as a continuation of camera motion rather than a hard cut, even though the two plates are different photographs.",
+  "second_watch_detail": "The mechanical stopwatch at p06 reads as a generic prop on the first pass; once L3 states they had about ninety seconds, the same frame reads as counting down the exact window the record measured.",
+  "funnel_question_left_for_longform": "Ninety seconds is not long. What was on the walls that made it ninety?",
+  "funnel_long_title": "The Station Fire: Two Doors Outside, One Door Inside",
+  "funnel_long_video_id": "KDNJwRywx2M",
+  "description_line_1": "▶ FULL CASE: The Station Fire: Two Doors Outside, One Door Inside | https://youtu.be/KDNJwRywx2M",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "Two Doors on the Outside.",
+    "ctaLongThumbSrc": "shorts/short322/short322_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "Ninety seconds is not long. What was on the walls that made it ninety? The full case is here: https://youtu.be/KDNJwRywx2M",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments and rewind logic in remotion/src/data/short322.ts and remotion/src/compositions/Short.tsx, the CTA block from that same data file, and the long-form id from the private, 2026-09-05-scheduled upload KDNJwRywx2M (\"The Station Stood in West Warwick, Rhode Island. Two Doors Outside, One Door Inside.\") -- it is not yet public. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

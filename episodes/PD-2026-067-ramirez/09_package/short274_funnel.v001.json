@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 274,
+  "episode_id": "PD-2026-067-ramirez",
+  "slug": "ramirez",
+  "loop": true,
+  "loop_join": "The CTA card is p16 (short274_16.png, isCta:true, rewind:true) under L8; it cycles the plate sequence backward under the FULL CASE overlay and holds on the final frame, landing back on p01 (short274_01.png) -- the Dublin dealership counter frame 0 opens on -- so the loop closes on the identical picture.",
+  "second_watch_detail": "The single plate under L5 (p11, short274_11.png) carries the bare line 'His name is on a terrorist list' with nothing else on screen; on a first watch it reads as real jeopardy, but once L6-L7 explain the OFAC list is real Treasury machinery, the same frame reads as a computer match being handed to a customer as fact.",
+  "funnel_question_left_for_longform": "The letter that followed did not say how to argue with it. Who does a person appeal to?",
+  "funnel_long_title": "A Salesman Said His Name Was on a Terrorist List.",
+  "funnel_long_video_id": "DgpF4UxcsH4",
+  "description_line_1": "▶ FULL CASE: A Salesman Said His Name Was on a Terrorist List. | https://youtu.be/DgpF4UxcsH4",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Salesman Said His Name...",
+    "ctaLongThumbSrc": "shorts/short274/short274_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "The letter that followed did not say how to argue with it. Who does a person appeal to? The full case is here: https://youtu.be/DgpF4UxcsH4",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for short274, a Short that is already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the CUTS/beat structure, ctaHeadline/ctaLongTitle/ctaLongThumbSrc and kineticBeats from remotion/src/data/short274.ts, the standing question from that file's header (also present verbatim in episodes/_planning/short_designs/PD-2026-067-ramirez.design.v001.json), the spoken lines from short274_lines.v001.json (checked so no content word of the standing question is fully covered by them), and the long-form id/title from youtube_schedule_result.v001.json and youtube_meta.v001.json for the live video DgpF4UxcsH4. shorts/short274/short274_ctathumb.jpg is not present in this checkout -- the same is true of short194's reference ctathumb, so this appears to be a pipeline artifact generated/stored outside this repo rather than a regression specific to this short, but it should be confirmed to exist before the Studio-side CTA card is trusted visually. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a placeholder row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet because short274 is not yet uploaded."
+}

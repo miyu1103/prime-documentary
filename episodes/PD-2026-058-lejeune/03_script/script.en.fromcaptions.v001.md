@@ -1,0 +1,501 @@
+<!-- Derived from captions.final.v001.srt: this episode has no authored script file, so the
+delivered caption track is the narration of record. Sentences restored from
+caption timing. -->
+
+In September 1985, a Marine Corps drill instructor named Jerry Ensminger lost his nine-year-old daughter to leukemia.
+
+Her name was Janey.
+
+She was ill for nearly two and a half years, and the family was told what families are always told — that these things happen, and nobody is at fault.
+
+Ensminger had given the Corps twenty-four and a half years.
+
+He believed them.
+
+But the base where his wife had carried Janey had been putting industrial solvents into its own drinking water for decades, and the Corps' own laboratory had written that down by hand on a printed form, with an exclamation mark at the end — four years before the wells were shut off, and sixteen years before anybody told the families anything.
+
+Forty-one years later that piece of paper sits inside a federal lawsuit with roughly four hundred and eight thousand claimants behind it, and a court that has told both sides they have until the thirtieth of October to finish this.
+
+Camp Lejeune, North Carolina.
+
+It begins with a well.
+
+Camp Lejeune is a Marine Corps base on the flat coastal plain of North Carolina, all pine and sand and brackish water, and for most of the twentieth century it was also a town.
+
+Families were assigned quarters.
+
+Wives hung sheets on lines strung between brick duplexes.
+
+Children left tricycles on the concrete walks.
+
+Men who had been shouted at for thirteen weeks in boot camp came back a decade later as sergeants with mortgages and station wagons, and their sons went to the base school and their daughters were born at the base hospital, and the whole arrangement rested on a simple understanding: the Corps looks after its own.
+
+Jerry Ensminger was one of those men.
+
+He enlisted, he stayed, and by the mid-seventies he was a drill instructor, which is the most concentrated form of the institution there is — the man who stands in front of eighteen-year-olds and embodies everything the Marine Corps says about itself.
+
+He and his wife lived in base family housing at a place called Tarawa Terrace from 1973 to 1975.
+
+She spent the first three months of her pregnancy with Janey there.
+
+Then he was sent to drill instructor school at Parris Island, and on the twentieth of December 1975 they left.
+
+What they drank while they lived there came out of the tap like anybody's.
+
+That is the whole horror of this story, and it is worth being exact about it, because there is no villain in a kitchen.
+
+There is a tap, and a glass, and a woman filling it because her husband is coming off duty and she is thirsty and the day is ninety degrees and the air will not move.
+
+Coffee.
+
+Ice trays.
+
+Baths for the children.
+
+A hose on the lawn.
+
+Nobody in the history of that base ever looked at a glass of water and thought about it for a second.
+
+Underneath the housing at Tarawa Terrace, the groundwater had been picking up tetrachloroethylene — a dry-cleaning solvent, called PCE — from an off-base business named ABC One-Hour Cleaners.
+
+It had leaked into the aquifer that fed the wells.
+
+Four miles away, at the working heart of the base, the Hadnot Point system was drawing up a different solvent: trichloroethylene, TCE, an industrial degreaser, along with benzene and the chemicals that TCE breaks down into as it sits in the ground.
+
+The Marines were not doing anything unusual.
+
+Half of American industry in 1965 kept solvent in open drums behind the shop.
+
+The unusual part is what was underneath.
+
+The measured numbers, when they finally existed, were not close calls.
+
+In the drinking water at Tarawa Terrace the maximum recorded level of PCE was two hundred and fifteen micrograms per liter.
+
+The federal limit is five.
+
+In the drinking water at Hadnot Point the maximum recorded TCE was one thousand four hundred — two hundred and eighty times the limit.
+
+But nobody at the base was measuring for any of that, because in the 1950s and 1960s and most of the 1970s nobody in the United States was.
+
+The limits themselves did not exist yet.
+
+Janey Ensminger was born in 1976, after the family had left.
+
+She was, in her father's words under oath, born seemingly normal.
+
+She was diagnosed with acute lymphocytic leukemia at the age of six.
+
+She was ill for nearly two and a half years.
+
+She died at 3:35 in the afternoon on Tuesday the twenty-fourth of September 1985, and she was nine years old, and this film is not going to describe any part of that beyond what her father chose to say about it in a hearing room twenty-two years later, on the record, in public, because he decided the country ought to hear it.
+
+What happened after a child died on a Marine Corps base in 1985 was nothing.
+
+There was no letter.
+
+There was no notification.
+
+There was no suggestion, from anyone, that the water in the quarters had anything to do with anything, and there is no evidence that anyone at Camp Lejeune in 1985 connected the two.
+
+The family buried her, and the father went back to work, and the Marine Corps went on, and for twelve years the two facts sat in different filing cabinets in different states and never touched.
+
+In August 1997 Jerry Ensminger learned that the water at Camp Lejeune had been contaminated.
+
+He has been precise about the date ever since, because the date is the accusation.
+
+It was fourteen years after Janey was diagnosed.
+
+It was almost twelve years after she died.
+
+What he found out was that a federal health agency — the Agency for Toxic Substances and Disease Registry, ATSDR — was proposing a study of childhood leukemia and non-Hodgkin's lymphoma among children exposed in the womb while their parents lived at Camp Lejeune between 1968 and 1985.
+
+Read that back slowly.
+
+A federal agency had a hypothesis specific enough to write down.
+
+It named the base.
+
+It named the years.
+
+It named the exposure in the womb.
+
+And the man whose daughter had been conceived in that housing, and had died of exactly that disease at exactly that age, found out about it by accident, more than a decade later, as a civilian.
+
+This is the point where most people go quiet, and where this story turns, because Ensminger did the opposite.
+
+He was fifty-one years old, he was retired, he had no legal training and no scientific training, and what he had instead was twenty-four and a half years of learning how a military bureaucracy actually moves paper.
+
+He knew there would be paper.
+
+There is always paper.
+
+Somebody sampled that water.
+
+Somebody wrote a number on a form.
+
+Somebody signed the form and somebody filed it, and government files do not evaporate; they get boxed.
+
+So he began asking for them.
+
+Requests under the Freedom of Information Act.
+
+Letters to the base.
+
+Letters to Headquarters Marine Corps.
+
+Letters to the Navy.
+
+Requests that came back partial, requests that came back late, requests that came back with the useful part removed, requests that came back with a reference to another document that he then had to request in turn, which is how the thing propagates.
+
+He put what came back in a ring binder.
+
+Then he needed a second binder.
+
+Then he started using index tabs.
+
+That binder is the object at the centre of this film.
+
+It grew for the next quarter of a century.
+
+It is the reason anything is known about Camp Lejeune at all, and it is worth being clear about who built it: not a journalist, not a regulator, not a member of Congress.
+
+A retired drill instructor at a kitchen table in North Carolina, working through the evening after dinner, teaching himself to read a laboratory form.
+
+Along the way he found the others.
+
+There were always others — that is the arithmetic of a base that housed a moving population for thirty-four years.
+
+There were mothers who had miscarried at Tarawa Terrace and never wondered why.
+
+There were men from the barracks at Hadnot Point with kidney cancer at fifty.
+
+There were families who had left in 1974 and scattered to Ohio and Texas and Florida and had no idea they had anything in common at all, because the one thing the Marine Corps had never done was tell them.
+
+That failure is not an inference.
+
+It is Ensminger's own sworn testimony to a committee of the House of Representatives, on the twelfth of June 2007: "Ironically, most of these people still do not have any idea that they were exposed to these contaminants at Camp Lejeune.
+
+They have not been notified, and the United States Marine Corps has to date refused to institute any type of legitimate notification plan or policy." He also told them what he was, which is the most useful sentence anybody has ever produced about this case.
+
+"Through these people's misconduct and their deceit, they haven't filled me with a lot of pent-up anger.
+
+What they have filled me with is a terrible resolve to expose their misconduct, their arrogance, and their incompetence.
+
+And I want to expose the truth." By then he had the paper.
+
+Here is what the paper turned out to say, and it is not what anyone expected, because it is not a memo and it is not a decision.
+
+It is a technician's note in a margin.
+
+In October 1980 a team from the United States Army Environmental Hygiene Agency, based at Fort McPherson in Georgia, began running routine tests on water systems at Camp Lejeune.
+
+They were not looking for solvents.
+
+They were looking for trihalomethanes, which are the by-products you get when you chlorinate water, and which every municipal system in America has to check.
+
+It was housekeeping.
+
+The samples would not behave.
+
+A doctor named Michael Gros, who later testified about it, put the mechanism as plainly as anyone has: the routine tests "showed the presence of major contamination with other organic chemicals which required further action.
+
+Levels of these contaminants were so high so as to preclude THM testing.
+
+The water was so full of something else that the test for the ordinary thing could not be completed.
+
+So the analyst wrote it on the form.
+
+Thirtieth of October 1980, on a Hadnot Point sample form: "Water is highly contaminated with low molecular weight halogenated hydrocarbons." Two months later, on the twenty-ninth of December, another note on another form: "Heavy organic interference at CHCL2BR.
+
+You need to analyze for chlorinated organics by GC/MS.
+
+That is a laboratory technician telling the customer, in the customer's own paperwork, that they are testing for the wrong thing and need to go and test for the right thing.
+
+And then, on samples dated the ninth of March 1981, at Hadnot Point, the Army's own laboratory wrote the sentence that this entire case has turned on for four decades.
+
+It is nine words long.
+
+It ends with an exclamation mark, which is not a thing analytical chemists put in remarks boxes.
+
+"Water highly contaminated with other chlorinated hydrocarbons — solvents!" That form has a number.
+
+It is CLW 0443, and it sat in a government file for sixteen years until a retired drill instructor asked for it.
+
+Nothing happened.
+
+That is the finding, and it needs no adjective.
+
+The wells kept running.
+
+The families kept drinking.
+
+In May 1982 a co-owner of a private contract laboratory called Grainger, a chemist named Mike Hargett, telephoned the base's own supervising chemist to say his lab had found high levels of volatile organic compounds in both the Hadnot Point and the Tarawa Terrace systems.
+
+In August his colleague Bruce Babson put it in a letter to the Commanding General: these compounds "appeared to be at high levels and hence more important from a health standpoint than the total Trihalomethane content." More important from a health standpoint.
+
+That is 1982.
+
+The contaminated wells at Hadnot Point came out of service between November 1984 and February 1985.
+
+The most contaminated of them were shut down that February, seven months before Janey Ensminger died.
+
+The Tarawa Terrace treatment plant, the one that had served the family housing, was not closed until 1987.
+
+So the film's central arithmetic is this, and every number in it is from a government source.
+
+The Army's own laboratory wrote "highly contaminated" in October 1980.
+
+It wrote "solvents" with an exclamation mark in March 1981.
+
+A private laboratory said it again in 1982.
+
+The wells came off line at the end of 1984 and the start of 1985.
+
+The last plant closed in 1987.
+
+And the families were not told.
+
+It is important to say precisely what that does and does not prove, because this is where documentaries about this subject usually go wrong.
+
+It does not prove that anybody at Camp Lejeune understood in 1981 what those chemicals do to a human body — the federal drinking-water limits for TCE and PCE did not exist until 1989 and 1992.
+
+It does not prove a conspiracy; a federal criminal investigation looked for one for eighteen months, found no violation of federal law, and was declined for prosecution in 2007, and the Marine Corps' own review panel concluded that the Corps had acted responsibly.
+
+What it proves is narrower and, in its way, worse.
+
+It proves that the institution measured its own water, wrote down that the water was heavily contaminated, and then took between three and six years to turn off the taps — and then did not go and find the people who had been drinking it.
+
+The exposure window Congress eventually wrote into law runs from the first of August 1953 to the thirty-first of December 1987.
+
+ATSDR's own modelling is narrower and splits by system: at Hadnot Point at least one compound exceeded the modern federal limit from August 1953 through January 1985; at Tarawa Terrace, families in that housing were drinking PCE above the limit from November 1957 to February 1987.
+
+How many people is that?
+
+Nobody knows, and this film is not going to pretend otherwise.
+
+There is no official total.
+
+No federal health agency has ever published one.
+
+The number you may have seen — around a million — comes from a congressional hearing in 2010.
+
+What exists is what Ensminger said under oath, and it is enough: "hundreds of thousands of Marines, sailors, their families, and the loyal civilian employees who were unknowingly exposed." On his eighteenth wedding anniversary, in 2007, a forty-year-old insurance adjuster in Tallahassee, Florida sat down with his wife to be given a diagnosis.
+
+He described it under oath to a committee of Congress three years later, and he began with the sentence itself, because it is the only way to convey what it is like.
+
+"'You have male breast cancer' were the words which greeted me and my wife on our 18th wedding anniversary." His name is Mike Partain.
+
+He is the son and grandson of Marine Corps officers.
+
+His father, a captain, was stationed at Camp Lejeune after graduating from the Naval Academy, and Partain was conceived, carried and born there — at the base naval hospital, in 1968, while his parents lived at Tarawa Terrace.
+
+He had no family history of the disease.
+
+He tested negative for the hereditary breast cancer markers.
+
+He did not drink and he did not smoke.
+
+Male breast cancer accounts for less than one per cent of all breast cancer cases in the United States, and he was thirty-nine.
+
+He found out about the water from a television report while he was being treated.
+
+And then he did what Ensminger had done, from the other end: he started looking for men like himself.
+
+He found them.
+
+By September 2010, when he testified, he could tell Congress that he was "one of 64 men who share the unique commonality of male breast cancer and exposure to the contaminated water aboard Camp Lejeune.
+
+He had located sixty-three others himself, one at a time, on the telephone and by e-mail and through veterans' halls.
+
+By this year the count he keeps stands above a hundred and twenty-five.
+
+And here this film has to be more careful than it would like to be.
+
+That list is a registry one man assembled.
+
+It has no denominator and no control group.
+
+When federal epidemiologists actually tested the question — seventy-one cases against three hundred and seventy-three controls, published in 2015 — the odds ratio for ever having been stationed at Camp Lejeune came out at 1.14, with a confidence interval that runs straight through 1.
+
+In plain English: on male breast cancer specifically, the results point both ways and nothing is established.
+
+But that is not what the list was for.
+
+The list was an alarm, and alarms are supposed to be crude.
+
+Sixty-four men with a one-per-cent cancer, all connected to one water system, is the kind of thing that makes a government agency go and look properly — and that, eventually, is what happened.
+
+When he testified in 2010, Partain read the March 1981 remark aloud to the committee — the chlorinated hydrocarbons, the capital letters, the exclamation mark — and then finished it with five words of his own.
+
+"No further action was taken." What the agency found when it looked at itself first was not flattering.
+
+In 1997 — the same year Ensminger started asking questions — ATSDR had published a public health assessment for Camp Lejeune.
+
+On the twenty-eighth of April 2009, at a meeting with the community panel in Atlanta, the agency withdrew it.
+
+According to Partain's sworn testimony, it was the first time in the agency's history a public health assessment had been withdrawn.
+
+The reason ATSDR gave that May is in its own words, and it is a confession in bureaucratic clothing: benzene had been present in a drinking-water supply well at Hadnot Point; that well was shut down sometime before 1985; the information "should have been included in the PHA but was not," and the assessment "should have mentioned the contamination and stated that the extent of exposure to benzene from that well was unknown." An agency withdrew its own assessment.
+
+It had published a judgement about a base full of people, and twelve years later it took the judgement back, because it had left out a chemical.
+
+Meanwhile, the studies that would take the science somewhere firmer were finally being run — mortality studies published in 2014 comparing more than a hundred and fifty-four thousand Marines and sailors from Camp Lejeune against a matched group of the same size from Camp Pendleton in California, and then, in October 2024, a cancer incidence study across the same two populations, following diagnoses from 1996 to 2017.
+
+The 2024 study is the closest thing to an answer that exists, and its conclusion is worth quoting exactly, because the temptation to inflate it is enormous: "Increased risks of several cancers were observed among Marines/Navy personnel and civilian workers exposed to contaminated drinking water at Camp Lejeune compared with Camp Pendleton." Observed.
+
+Compared with.
+
+The elevated risks it found sit in the myeloid cancers — all myeloid cancers, acute myeloid leukemia, myelodysplastic and myeloproliferative syndromes — and in cancers of the esophagus, larynx, soft tissue and thyroid.
+
+Separately, ATSDR's 2017 review of the evidence went further about the chemicals themselves, finding sufficient evidence for causation for TCE and kidney cancer and non-Hodgkin's lymphoma, for PCE and bladder cancer, for benzene and leukemias, and for vinyl chloride and liver cancer.
+
+That is the honest state of it.
+
+The chemicals cause these diseases.
+
+Whether they caused any particular person's disease is a question no study has ever been able to answer, and it is the exact question the American legal system was about to be asked, four hundred and eight thousand times.
+
+For thirty years there was no lawsuit, and the reason is one of the driest doctrines in American law.
+
+North Carolina has a statute of repose.
+
+Unlike a statute of limitations, which starts running when you discover you were injured, a statute of repose starts running from the defendant's last act and then simply expires, whether you know anything or not.
+
+A Supreme Court case in 2014 confirmed that federal environmental law does not override it.
+
+About four thousand claims and seventeen federal lawsuits had already been filed by Camp Lejeune families; in December 2016 they were dismissed.
+
+The court held that the ten-year clock had started running on the day the contaminated wells were taken out of use — and they had been taken out of use in the nineteen-eighties, a decade and more before almost anybody knew there had been anything to sue about.
+
+The claims were too late because the water had been turned off.
+
+Congress fixed that, and it is worth giving Congress the credit, because it did the job properly.
+
+In 2012, the Janey Ensminger Act — named for her, sponsored in the House by a North Carolina congressman, signed on the sixth of August — gave veterans and family members who had been at Camp Lejeune for thirty days or more between 1953 and 1987 access to VA health care for fifteen specified conditions.
+
+Five years later the VA added eight presumptive conditions for disability compensation.
+
+Then, on the tenth of August 2022, came the Camp Lejeune Justice Act, passed as section 804 of the PACT Act.
+
+It created a cause of action in a single federal court.
+
+Every claimant in the country had to file first with the Navy, wait six months for an answer, and then bring the case to one district in eastern North Carolina — four judges, one courthouse, for everyone.
+
+It waived the government's immunity, including the discretionary-function defence that had beaten these claims before.
+
+And it took the statute of repose off the board entirely: "Any applicable statute of repose or statute of limitations… shall not apply to a claim under this section." Most remarkably, it lowered the burden of proof to a standard almost no plaintiff ever gets.
+
+A claimant must show that the relationship between the water and the harm is "sufficient to conclude that a causal relationship is at least as likely as not.
+
+Fifty-fifty is enough.
+
+Every wall was down.
+
+And then the country found out what happens when you open a courthouse door that has been shut for thirty years.
+
+Law firms spent nearly a hundred and twelve million dollars on television advertising for Camp Lejeune claimants in 2022 alone — more than double the next-biggest mass tort in America, according to the firm that tracks it.
+
+Between late March and the end of September that year, about ninety-four thousand Camp Lejeune commercials aired, in every media market in the country.
+
+The people this film is about spent twenty-five years trying to make anyone listen; the advertising industry needed six months.
+
+The filing window was two years, and for almost everyone it closed on the tenth of August 2024.
+
+By the middle of June 2026 the Department of Justice told the court the number: four hundred and eight thousand de-duplicated administrative claims.
+
+Three thousand seven hundred and fifty-nine lawsuits on file in the Eastern District of North Carolina.
+
+Every one of those files rests, somewhere near the bottom of it, on a laboratory form that a retired drill instructor had to ask the government to hand over, sixteen years after somebody wrote on it by hand and put an exclamation mark at the end.
+
+Then came the reversals, and they came from inside the courthouse.
+
+The first was the jury.
+
+Section 804 contains the sentence "Nothing in this subsection shall impair the right of any party to a trial by jury," and every claimant read it the obvious way.
+
+On the sixth of February 2024 all four judges of the district signed a thirty-four-page order holding that the Act "does not unequivocally, affirmatively, and unambiguously provide plaintiffs the right to a jury trial," and struck the jury demand.
+
+The sentence that looked like a guarantee was doing something else.
+
+Every Camp Lejeune case will be tried by a judge.
+
+The order contains a line that reads like an apology: "Congress could have made this dispute easy to resolve." The second reversal is the evidence.
+
+Congress lowered the burden to at-least-as-likely-as-not, and the government met it head on with thirty-one separate motions about causation.
+
+Awards are also offset by whatever the claimant already gets from the VA, from Medicare or from Medicaid.
+
+To move things along, the court picked twenty-five bellwether plaintiffs — five each for bladder cancer, kidney cancer, leukemia, Parkinson's disease and non-Hodgkin's lymphoma — and required every one of them to waive their claims for every other illness to be selected.
+
+Not one of those cases has been tried.
+
+Four years after the law passed, there is no trial date.
+
+What there is, is settlements.
+
+The government runs an "Elective Option" that pays on a grid — a hundred and fifty thousand dollars to four hundred and fifty thousand for the worst-exposed with the listed cancers, another hundred thousand if the claimant died.
+
+By June 2026 the Navy had approved three thousand and ninety-four offers and sent payment on two thousand three hundred and forty-one; the Justice Department had paid a hundred and five more.
+
+Total payments: seven hundred and twenty-three million, eight hundred and fifty thousand dollars.
+
+As of that filing, roughly two thousand four hundred and forty-six people had been paid.
+
+Out of four hundred and eight thousand who filed.
+
+Of the offers the Navy approved, one thousand one hundred and fifty-one were claims for an injury that had already resulted in death — and a reporter in North Carolina found this summer that at one firm alone, close to one in ten of its Camp Lejeune clients had died within two years of filing.
+
+The government's explanation is in the same filing: of the claims with even the minimum documentation, "more than 88% have insufficient evidence to support the claim and less than 2% have sufficient documentary substantiation to meet the EO requirements.
+
+Read carefully, that is a statement about paperwork — and the paperwork it wants is medical and service records from the 1960s and 1970s, held by the institution being sued.
+
+And then, at the bottom of that same June filing, three sentences that a father at a kitchen table in North Carolina has been working toward since 1997.
+
+The United States had reached agreement on settlement amounts for three of the twenty-five bellwether cases.
+
+Robert Fiolek, leukemia: ten thousand dollars.
+
+Edward Raymond, bladder cancer: twenty-four thousand dollars.
+
+Jose Vidana, non-Hodgkin's lymphoma: four hundred and five dollars.
+
+Four hundred and five dollars.
+
+Paid, and the case dismissed.
+
+On the thirtieth of June 2026, the four judges of the Eastern District of North Carolina reappointed the plaintiffs' leadership group — and reappointed it only until the thirtieth of October.
+
+After that date, the order says, the court will evaluate whether a new leadership group is needed, "as well as other action relating to either the PLG or the Department of Justice.
+
+In the meantime the lawyers and the government must meet the settlement masters every single week, and a week can only be skipped if the settlement masters approve it in writing.
+
+The court wrote that it expects both sides "to use their best efforts to achieve a global settlement by October 30, 2026." That is where this stands as this film goes out.
+
+Not a verdict.
+
+Not a finding.
+
+A deadline, imposed by judges who appear to have run out of patience with everyone in front of them.
+
+The lawyers who speak for four hundred and eight thousand people hold their authority only as far as that date.
+
+What happens on the thirty-first of October, the order does not say.
+
+No court has ever ruled on whether the United States is liable for any of it.
+
+No individual — no officer, no official, no civilian employee — has ever been publicly disciplined or prosecuted over the contamination.
+
+Jerry Ensminger is still doing this.
+
+So is Mike Partain, who says the strategy on the other side has always been the same three words and a fourth: delay, deny, and wait till they die.
+
+The binder is still on the table.
+
+The base is still there, and the pines still come down to the water, and somewhere in a records facility the form from the ninth of March 1981 is still exactly what it always was — nine words and an exclamation mark, written by a technician who was only trying to finish a routine test, and who did the one thing this entire story turned out to need.
+
+He wrote down what he found.
+
+Everything after that was other people deciding what to do about it.
+
+If you think a government that measures its own water owes the people drinking it the result, hit like, so the next one of these gets told before the deadline instead of after.

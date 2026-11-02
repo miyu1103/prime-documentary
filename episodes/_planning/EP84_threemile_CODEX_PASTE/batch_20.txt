@@ -1,0 +1,56 @@
+EP84_threemile — 画像発注 バッチ 20/24（8枚）
+区分: PEOPLE（人物あり・顔は一切写さない）
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, company mark, human face, facial features, portrait, identifiable person, explosion, fire, flames, green glow, glowing liquid, black smoke, flat panel display, LCD, LED, mobile phone, modern car, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) T153.png
+   [T153]  flags: P
+   A person seen from behind looking out of an office window in bright daylight
+
+2) T154.png
+   [T154]  flags: P
+   A survey technician seen from behind holding a probe at ground level in a field, one hard work lamp in frame
+
+3) T155.png
+   [T155]  flags: P
+   A reporter's hands holding a notebook, close, no face in frame, bright light
+
+4) T156.png
+   [T156]  flags: P
+   A person seen from behind loading a car in a driveway in bright daylight
+
+5) T157.png
+   [T157]  flags: P
+   A farmer seen from behind at a field gate in bright daylight
+
+6) T158.png
+   [T158]  flags: P
+   A person seen from behind switching on a 1979 television in a dim living room, panel lights bright across the frame
+
+7) T159.png
+   [T159]  flags: P
+   An emergency management officer seen from behind at a wall map, no readable labels, one desk lamp burning in frame
+
+8) T160.png
+   [T160]  flags: P
+   Two people seen from behind walking a plant corridor, hard overhead lights

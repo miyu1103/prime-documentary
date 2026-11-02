@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-009-timbs",
+  "revision": "v001",
+  "generated_at": "2026-06-21T08:13:41.142550+00:00",
+  "status": "ready_for_owner_review",
+  "recommended_pair": {
+    "title_id": "T1",
+    "thumbnail_asset_id": "PD-2026-009-THUMB-001",
+    "reason": "Best accuracy/click balance: concrete $42k car + Supreme Court line, without implying Timbs himself was never charged."
+  },
+  "title_candidates": [
+    {
+      "id": "T1",
+      "title": "Police Took His $42,000 Car. The Supreme Court Drew a Line.",
+      "score": 91,
+      "reason": "Specific, accurate, emotional, and clear. It does not overclaim that Timbs was uncharged."
+    },
+    {
+      "id": "T2",
+      "title": "Can Police Take Your Car Without Convicting You?",
+      "score": 87,
+      "reason": "Strong broad question and high curiosity, but the Timbs facts include a guilty plea, so description must clarify the system-level point."
+    },
+    {
+      "id": "T3",
+      "title": "The Supreme Court Case That Put a Limit on Civil Forfeiture",
+      "score": 82,
+      "reason": "Very accurate and searchable, but less emotionally immediate."
+    },
+    {
+      "id": "T4",
+      "title": "The Government Seized His Land Rover. A 700-Year-Old Rule Stopped It.",
+      "score": 88,
+      "reason": "Distinctive and story-driven. Slightly long, but the Magna Carta angle is memorable."
+    },
+    {
+      "id": "T5",
+      "title": "When the Government Accuses Your Property Instead of You",
+      "score": 79,
+      "reason": "Conceptually strong, but less clickable and less tied to the Supreme Court payoff."
+    }
+  ],
+  "thumbnail_candidates": [
+    {
+      "asset_id": "PD-2026-009-THUMB-001",
+      "rank": 1,
+      "headline": "TOO FAR",
+      "kicker": "$42K CAR",
+      "subline": "MAX FINE $10K",
+      "file": "H:/pd-media/episodes/PD-2026-009-timbs/09_package/thumbnails/PD-2026-009-timbs-thumb01.v001.jpg",
+      "background": "C:/Users/aab15/Documents/prime-documentary/remotion/public/timbs/pexels_tow_truck.jpg",
+      "content_hash": "sha256:5f524e533f9dcb7e4ea9c5ba706be2a6b7ad94f17db1d6c540a4846d3c5ba504",
+      "score": 90,
+      "notes": [
+        "No real-person likeness.",
+        "Uses existing Timbs still/stock material and local typography.",
+        "AI/synthetic disclosure still required because the video contains AI symbolic reconstructions."
+      ]
+    },
+    {
+      "asset_id": "PD-2026-009-THUMB-002",
+      "rank": 2,
+      "headline": "CAN THEY TAKE IT?",
+      "kicker": "CIVIL FORFEITURE",
+      "subline": "9-0 SUPREME COURT",
+      "file": "H:/pd-media/episodes/PD-2026-009-timbs/09_package/thumbnails/PD-2026-009-timbs-thumb02.v001.jpg",
+      "background": "C:/Users/aab15/Documents/prime-documentary/remotion/public/timbs/scotus_gavel.jpg",
+      "content_hash": "sha256:f59c62189e119cbacaf15e3423d0109d64c6f21594e188de10cd7fbfa2440e6d",
+      "score": 84,
+      "notes": [
+        "No real-person likeness.",
+        "Uses existing Timbs still/stock material and local typography.",
+        "AI/synthetic disclosure still required because the video contains AI symbolic reconstructions."
+      ]
+    },
+    {
+      "asset_id": "PD-2026-009-THUMB-003",
+      "rank": 3,
+      "headline": "TAKEN",
+      "kicker": "NO TRIAL?",
+      "subline": "PROPERTY ACCUSED",
+      "file": "H:/pd-media/episodes/PD-2026-009-timbs/09_package/thumbnails/PD-2026-009-timbs-thumb03.v001.jpg",
+      "background": "C:/Users/aab15/Documents/prime-documentary/remotion/public/timbs/pexels_police_car.jpg",
+      "content_hash": "sha256:2963d1e00ddb619d83efbf028ce859068cccd1c7312b940d7f662c478fe029e1",
+      "score": 76,
+      "notes": [
+        "No real-person likeness.",
+        "Uses existing Timbs still/stock material and local typography.",
+        "AI/synthetic disclosure still required because the video contains AI symbolic reconstructions."
+      ]
+    }
+  ],
+  "gate": {
+    "current_gate": "title_thumbnail_review_required",
+    "owner_approval_required_before_upload_or_publish": true,
+    "upload_performed": false,
+    "publish_performed": false
+  }
+}

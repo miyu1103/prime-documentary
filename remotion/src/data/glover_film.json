@@ -1,0 +1,3519 @@
+{
+  "episode_id": "PD-2026-048-glover",
+  "fps": 30,
+  "narration": "glover/audio/vc_master_v001.mp3",
+  "narrationSeconds": 678.461,
+  "hookSeconds": 8.0,
+  "hookLine": "A plate. A hit. A stop you never saw coming.",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "glover/img/S03.png",
+      "seed": "glover-hook-00"
+    },
+    {
+      "start": 1.333,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "glover/img/S04.png",
+      "seed": "glover-hook-01"
+    },
+    {
+      "start": 2.666,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "glover/img/S06.png",
+      "seed": "glover-hook-02"
+    },
+    {
+      "start": 3.999,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "glover/img/S12.png",
+      "seed": "glover-hook-03"
+    },
+    {
+      "start": 5.332,
+      "dur": 1.333,
+      "kind": "img",
+      "src": "glover/img/S27.png",
+      "seed": "glover-hook-04"
+    },
+    {
+      "start": 6.665,
+      "dur": 1.335,
+      "kind": "img",
+      "src": "glover/img/S43.png",
+      "seed": "glover-hook-05"
+    }
+  ],
+  "cuts": [
+    {
+      "id": "cut-000",
+      "start": 0.0,
+      "dur": 4.066667,
+      "kind": "footage",
+      "src": "glover/human/GAP-02.mp4",
+      "seed": "glover-000",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": false,
+      "stock_label": "patrol car interior, deputy watching traffic [human motion]",
+      "human_clip": true
+    },
+    {
+      "id": "cut-001",
+      "start": 4.066667,
+      "dur": 5.834333,
+      "kind": "footage",
+      "src": "glover/stock/pixabay_v_12126_6.mp4",
+      "seed": "glover-001",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "POV night driving (a truck goes by)"
+    },
+    {
+      "id": "cut-002",
+      "start": 9.901,
+      "dur": 5.216,
+      "kind": "footage",
+      "src": "glover/motion/M01_rife.mp4",
+      "seed": "glover-002",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-003",
+      "start": 15.117,
+      "dur": 5.216,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_36553218_2.mp4",
+      "seed": "glover-003",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "ANPR/plate-reader cameras (running the plate)"
+    },
+    {
+      "id": "cut-004",
+      "start": 20.333,
+      "dur": 2.733333,
+      "kind": "footage",
+      "src": "glover/human/GAP-01.mp4",
+      "seed": "glover-004",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": false,
+      "human_clip": true,
+      "stock_label": "deputy hands typing plate on patrol laptop [human motion]"
+    },
+    {
+      "id": "cut-005",
+      "start": 23.066333,
+      "dur": 7.167667,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_7140928_2.mp4",
+      "seed": "glover-005",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "records database server racks"
+    },
+    {
+      "id": "cut-006",
+      "start": 30.234,
+      "dur": 5.216,
+      "kind": "footage",
+      "src": "glover/factory/F004__glover_safe_broll_S04.mp4",
+      "seed": "glover-006",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-007",
+      "start": 35.45,
+      "dur": 4.685,
+      "kind": "img",
+      "src": "glover/img/S03.png",
+      "seed": "glover-007",
+      "act": "HOOK",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-008",
+      "start": 40.135,
+      "dur": 5.216,
+      "kind": "footage",
+      "src": "glover/motion/M02_rife.mp4",
+      "seed": "glover-008",
+      "act": "HOOK",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-009",
+      "start": 45.351,
+      "dur": 4.066667,
+      "kind": "footage",
+      "src": "glover/human/GAP-03.mp4",
+      "seed": "glover-009",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": false,
+      "stock_label": "officers in silhouette approaching the stopped truck [human motion]",
+      "human_clip": true
+    },
+    {
+      "id": "cut-010",
+      "start": 49.417667,
+      "dur": 5.834333,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_29635453_3.mp4",
+      "seed": "glover-010",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "house + car in driveway (your own car)"
+    },
+    {
+      "id": "cut-011",
+      "start": 55.252,
+      "dur": 5.216,
+      "kind": "footage",
+      "src": "glover/stock/pixabay_v_320453_1.mp4",
+      "seed": "glover-011",
+      "act": "HOOK",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "CCTV / surveillance camera"
+    },
+    {
+      "id": "cut-012",
+      "start": 60.468,
+      "dur": 4.689,
+      "kind": "img",
+      "src": "glover/img/S05.png",
+      "seed": "glover-012",
+      "act": "HOOK",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-013",
+      "start": 65.157,
+      "dur": 3.296,
+      "kind": "footage",
+      "src": "glover/factory/F007__glover_safe_broll_S07.mp4",
+      "seed": "glover-013",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-014",
+      "start": 68.453,
+      "dur": 2.96,
+      "kind": "img",
+      "src": "glover/img/S06.png",
+      "seed": "glover-014",
+      "act": "OP",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-015",
+      "start": 71.413,
+      "dur": 3.296,
+      "kind": "footage",
+      "src": "glover/motion/M03_rife.mp4",
+      "seed": "glover-015",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-016",
+      "start": 74.709,
+      "dur": 3.296,
+      "kind": "footage",
+      "src": "glover/factory/F008__glover_safe_broll_S08.mp4",
+      "seed": "glover-016",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-017",
+      "start": 78.005,
+      "dur": 2.96,
+      "kind": "img",
+      "src": "glover/img/S07_v2.png",
+      "seed": "glover-017",
+      "act": "OP",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-018",
+      "start": 80.965,
+      "dur": 3.296,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_29188241_4.mp4",
+      "seed": "glover-018",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "US Supreme Court building"
+    },
+    {
+      "id": "cut-019",
+      "start": 84.261,
+      "dur": 3.296,
+      "kind": "footage",
+      "src": "glover/motion/M04_rife.mp4",
+      "seed": "glover-019",
+      "act": "OP",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-020",
+      "start": 87.557,
+      "dur": 2.96,
+      "kind": "img",
+      "src": "glover/img/S08_v2.png",
+      "seed": "glover-020",
+      "act": "OP",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-021",
+      "start": 90.517,
+      "dur": 3.296,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_5636977_1.mp4",
+      "seed": "glover-021",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "gavel + scales (was the stop allowed)"
+    },
+    {
+      "id": "cut-022",
+      "start": 93.813,
+      "dur": 2.96,
+      "kind": "img",
+      "src": "glover/img/S09.png",
+      "seed": "glover-022",
+      "act": "OP",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-023",
+      "start": 96.773,
+      "dur": 2.96,
+      "kind": "img",
+      "src": "glover/img/S10_v2.png",
+      "seed": "glover-023",
+      "act": "OP",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-024",
+      "start": 99.733,
+      "dur": 2.96,
+      "kind": "img",
+      "src": "glover/img/S11.png",
+      "seed": "glover-024",
+      "act": "OP",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-025",
+      "start": 102.693,
+      "dur": 2.96,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_6101367_1.mp4",
+      "seed": "glover-025",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "judge striking gavel (the ruling) [PEOPLE]"
+    },
+    {
+      "id": "cut-026",
+      "start": 105.653,
+      "dur": 2.96,
+      "kind": "img",
+      "src": "glover/img/S13_v2.png",
+      "seed": "glover-026",
+      "act": "OP",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-027",
+      "start": 108.613,
+      "dur": 2.96,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_17040253_2.mp4",
+      "seed": "glover-027",
+      "act": "OP",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "US flag (section transition)"
+    },
+    {
+      "id": "cut-028",
+      "start": 111.573,
+      "dur": 2.962,
+      "kind": "img",
+      "src": "glover/img/S15_v2.png",
+      "seed": "glover-028",
+      "act": "OP",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-029",
+      "start": 114.535,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/factory/F010__glover_safe_broll_S10.mp4",
+      "seed": "glover-029",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-030",
+      "start": 117.62,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S16.png",
+      "seed": "glover-030",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-031",
+      "start": 120.391,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/motion/M06_rife.mp4",
+      "seed": "glover-031",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-032",
+      "start": 123.476,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_6581288_2.mp4",
+      "seed": "glover-032",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "US police cruiser on patrol"
+    },
+    {
+      "id": "cut-033",
+      "start": 126.561,
+      "dur": 2.771,
+      "kind": "footage",
+      "src": "glover/stock/pixabay_v_10822_1.mp4",
+      "seed": "glover-033",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "hands typing (running the check)"
+    },
+    {
+      "id": "cut-034",
+      "start": 129.332,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/factory/F012__glover_safe_broll_S12.mp4",
+      "seed": "glover-034",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-035",
+      "start": 132.417,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/factory/F013__glover_safe_broll_S13.mp4",
+      "seed": "glover-035",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-036",
+      "start": 135.502,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S18.png",
+      "seed": "glover-036",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-037",
+      "start": 138.273,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_7140928_4.mp4",
+      "seed": "glover-037",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "registration record returns (database)"
+    },
+    {
+      "id": "cut-038",
+      "start": 141.358,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/factory/F014__glover_safe_broll_S14.mp4",
+      "seed": "glover-038",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-039",
+      "start": 144.443,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S19.png",
+      "seed": "glover-039",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-040",
+      "start": 147.214,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/factory/F015__glover_safe_broll_S15.mp4",
+      "seed": "glover-040",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-041",
+      "start": 150.299,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/stock/pixabay_v_302857_0.mp4",
+      "seed": "glover-041",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "night wrecked car + police lights (revoked-license stakes)"
+    },
+    {
+      "id": "cut-042",
+      "start": 153.384,
+      "dur": 2.771,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_5243246_1.mp4",
+      "seed": "glover-042",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "jail cell bars (consequence)"
+    },
+    {
+      "id": "cut-043",
+      "start": 156.155,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/motion/M08_rife.mp4",
+      "seed": "glover-043",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-044",
+      "start": 159.24,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/factory/F017__glover_safe_broll_S17.mp4",
+      "seed": "glover-044",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-045",
+      "start": 162.325,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S21.png",
+      "seed": "glover-045",
+      "act": "ACT_1",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-046",
+      "start": 165.096,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/factory/F018__glover_safe_broll_S18.mp4",
+      "seed": "glover-046",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-047",
+      "start": 168.181,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/stock/pixabay_v_12126_12.mp4",
+      "seed": "glover-047",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "POV night driving (the inference)"
+    },
+    {
+      "id": "cut-048",
+      "start": 171.266,
+      "dur": 2.733333,
+      "kind": "footage",
+      "src": "glover/human/GAP-04.mp4",
+      "seed": "glover-048",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": false,
+      "human_clip": true,
+      "stock_label": "driver POV, hand on wheel, lights in mirror [human motion]"
+    },
+    {
+      "id": "cut-049",
+      "start": 173.999333,
+      "dur": 3.122667,
+      "kind": "footage",
+      "src": "glover/motion/M09_rife.mp4",
+      "seed": "glover-049",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-050",
+      "start": 177.122,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_10476430_12.mp4",
+      "seed": "glover-050",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "officer at patrol-car door (the stop) [PEOPLE]"
+    },
+    {
+      "id": "cut-051",
+      "start": 180.207,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S23_v2.png",
+      "seed": "glover-051",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-052",
+      "start": 182.978,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/factory/F021__glover_safe_broll_S21.mp4",
+      "seed": "glover-052",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-053",
+      "start": 186.063,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/motion/M10_rife.mp4",
+      "seed": "glover-053",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-054",
+      "start": 189.148,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S24.png",
+      "seed": "glover-054",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-055",
+      "start": 191.919,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/motion/M11_rife.mp4",
+      "seed": "glover-055",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-056",
+      "start": 195.004,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/motion/M12_rife.mp4",
+      "seed": "glover-056",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-057",
+      "start": 198.089,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S25_v2.png",
+      "seed": "glover-057",
+      "act": "ACT_1",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-058",
+      "start": 200.86,
+      "dur": 3.085,
+      "kind": "footage",
+      "src": "glover/motion/M13_rife.mp4",
+      "seed": "glover-058",
+      "act": "ACT_1",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-059",
+      "start": 203.945,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S26.png",
+      "seed": "glover-059",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-060",
+      "start": 206.716,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S27_v2.png",
+      "seed": "glover-060",
+      "act": "ACT_1",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-061",
+      "start": 209.487,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S28.png",
+      "seed": "glover-061",
+      "act": "ACT_1",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-062",
+      "start": 212.258,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S29_v2.png",
+      "seed": "glover-062",
+      "act": "ACT_1",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-063",
+      "start": 215.029,
+      "dur": 2.771,
+      "kind": "img",
+      "src": "glover/img/S30.png",
+      "seed": "glover-063",
+      "act": "ACT_1",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-064",
+      "start": 217.8,
+      "dur": 2.759,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_29188241_10.mp4",
+      "seed": "glover-064",
+      "act": "ACT_1",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "US Supreme Court building (reuse)"
+    },
+    {
+      "id": "cut-065",
+      "start": 220.559,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_29188235_3.mp4",
+      "seed": "glover-065",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "US Capitol (highest court establisher)"
+    },
+    {
+      "id": "cut-066",
+      "start": 223.52,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S32_v2.png",
+      "seed": "glover-066",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-067",
+      "start": 226.179,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_8061661_2.mp4",
+      "seed": "glover-067",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "Lady Justice + certificate (Fourth Amendment)"
+    },
+    {
+      "id": "cut-068",
+      "start": 229.14,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F023__glover_safe_broll_S23.mp4",
+      "seed": "glover-068",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-069",
+      "start": 232.101,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S33.png",
+      "seed": "glover-069",
+      "act": "ACT_2",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-070",
+      "start": 234.76,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F024__glover_safe_broll_S24.mp4",
+      "seed": "glover-070",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-071",
+      "start": 237.721,
+      "dur": 2.733333,
+      "kind": "footage",
+      "src": "glover/human/GAP-07.mp4",
+      "seed": "glover-071",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": false,
+      "human_clip": true,
+      "stock_label": "hands go still on the wheel as red/blue lights flood [human motion]"
+    },
+    {
+      "id": "cut-072",
+      "start": 240.454333,
+      "dur": 2.886667,
+      "kind": "img",
+      "src": "glover/img/S34_v2.png",
+      "seed": "glover-072",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-073",
+      "start": 243.341,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/motion/M15_rife.mp4",
+      "seed": "glover-073",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-074",
+      "start": 246.302,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F026__glover_safe_broll_S26.mp4",
+      "seed": "glover-074",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-075",
+      "start": 249.263,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S35.png",
+      "seed": "glover-075",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-076",
+      "start": 251.922,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F027__glover_safe_broll_S27.mp4",
+      "seed": "glover-076",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-077",
+      "start": 254.883,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F028__glover_safe_broll_S28.mp4",
+      "seed": "glover-077",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-078",
+      "start": 257.844,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S36_v2.png",
+      "seed": "glover-078",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-079",
+      "start": 260.503,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/motion/M16_rife.mp4",
+      "seed": "glover-079",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-080",
+      "start": 263.464,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F029__glover_safe_broll_S29.mp4",
+      "seed": "glover-080",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-081",
+      "start": 266.425,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S37.png",
+      "seed": "glover-081",
+      "act": "ACT_2",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-082",
+      "start": 269.084,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/stock/pexels_v_5636967_1.mp4",
+      "seed": "glover-082",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": true,
+      "stock_label": "scales of justice (reasonable suspicion in between)"
+    },
+    {
+      "id": "cut-083",
+      "start": 272.045,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F031__glover_safe_broll_S31.mp4",
+      "seed": "glover-083",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-084",
+      "start": 275.006,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S38_v2.png",
+      "seed": "glover-084",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-085",
+      "start": 277.665,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/motion/M01_rife.mp4",
+      "seed": "glover-085",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-086",
+      "start": 280.626,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F032__glover_safe_broll_S32.mp4",
+      "seed": "glover-086",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-087",
+      "start": 283.587,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S39.png",
+      "seed": "glover-087",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-088",
+      "start": 286.246,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F033__glover_safe_broll_S33.mp4",
+      "seed": "glover-088",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-089",
+      "start": 289.207,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F034__glover_safe_broll_S34.mp4",
+      "seed": "glover-089",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-090",
+      "start": 292.168,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S40_v2.png",
+      "seed": "glover-090",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-091",
+      "start": 294.827,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/motion/M02_rife.mp4",
+      "seed": "glover-091",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-092",
+      "start": 297.788,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F035__glover_safe_broll_S35.mp4",
+      "seed": "glover-092",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-093",
+      "start": 300.749,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S41.png",
+      "seed": "glover-093",
+      "act": "ACT_2",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-094",
+      "start": 303.408,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F036__glover_safe_broll_S36.mp4",
+      "seed": "glover-094",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-095",
+      "start": 306.369,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F037__glover_safe_broll_S37.mp4",
+      "seed": "glover-095",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-096",
+      "start": 309.33,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S42.png",
+      "seed": "glover-096",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-097",
+      "start": 311.989,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/motion/M03_rife.mp4",
+      "seed": "glover-097",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-098",
+      "start": 314.95,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F038__glover_safe_broll_S38.mp4",
+      "seed": "glover-098",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-099",
+      "start": 317.911,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S43_v2.png",
+      "seed": "glover-099",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-100",
+      "start": 320.57,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F039__glover_safe_broll_S39.mp4",
+      "seed": "glover-100",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-101",
+      "start": 323.531,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F040__glover_safe_broll_S40.mp4",
+      "seed": "glover-101",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-102",
+      "start": 326.492,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S44.png",
+      "seed": "glover-102",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-103",
+      "start": 329.151,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F041__glover_safe_broll_S41.mp4",
+      "seed": "glover-103",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-104",
+      "start": 332.112,
+      "dur": 2.733333,
+      "kind": "footage",
+      "src": "glover/human/GAP-05.mp4",
+      "seed": "glover-104",
+      "act": "ACT_2",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": false,
+      "human_clip": true,
+      "stock_label": "a young woman driving at night [human motion]"
+    },
+    {
+      "id": "cut-105",
+      "start": 334.845333,
+      "dur": 2.886667,
+      "kind": "img",
+      "src": "glover/img/S45_v2.png",
+      "seed": "glover-105",
+      "act": "ACT_2",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-106",
+      "start": 337.732,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F043__glover_safe_broll_S43.mp4",
+      "seed": "glover-106",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-107",
+      "start": 340.693,
+      "dur": 2.961,
+      "kind": "footage",
+      "src": "glover/factory/F044__glover_safe_broll_S44.mp4",
+      "seed": "glover-107",
+      "act": "ACT_2",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-108",
+      "start": 343.654,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S46.png",
+      "seed": "glover-108",
+      "act": "ACT_2",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-109",
+      "start": 346.313,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S47_v2.png",
+      "seed": "glover-109",
+      "act": "ACT_2",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-110",
+      "start": 348.972,
+      "dur": 2.659,
+      "kind": "img",
+      "src": "glover/img/S48.png",
+      "seed": "glover-110",
+      "act": "ACT_2",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-111",
+      "start": 351.631,
+      "dur": 2.658,
+      "kind": "img",
+      "src": "glover/img/S49_v2.png",
+      "seed": "glover-111",
+      "act": "ACT_2",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-112",
+      "start": 354.289,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F045__glover_safe_broll_S45.mp4",
+      "seed": "glover-112",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-113",
+      "start": 357.208,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S50.png",
+      "seed": "glover-113",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-114",
+      "start": 359.83,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/motion/M04_rife.mp4",
+      "seed": "glover-114",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-115",
+      "start": 362.749,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F046__glover_safe_broll_S46.mp4",
+      "seed": "glover-115",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-116",
+      "start": 365.668,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S51_v2.png",
+      "seed": "glover-116",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-117",
+      "start": 368.29,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F047__glover_safe_broll_S47.mp4",
+      "seed": "glover-117",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-118",
+      "start": 371.209,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F048__glover_safe_broll_S48.mp4",
+      "seed": "glover-118",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-119",
+      "start": 374.128,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S52.png",
+      "seed": "glover-119",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-120",
+      "start": 376.75,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/motion/M05_rife.mp4",
+      "seed": "glover-120",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-121",
+      "start": 379.669,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F049__glover_safe_broll_S49.mp4",
+      "seed": "glover-121",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-122",
+      "start": 382.588,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S53_v2.png",
+      "seed": "glover-122",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-123",
+      "start": 385.21,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F050__glover_safe_broll_S50.mp4",
+      "seed": "glover-123",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-124",
+      "start": 388.129,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F051__glover_safe_broll_S51.mp4",
+      "seed": "glover-124",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-125",
+      "start": 391.048,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S54.png",
+      "seed": "glover-125",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-126",
+      "start": 393.67,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/motion/M06_rife.mp4",
+      "seed": "glover-126",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-127",
+      "start": 396.589,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F052__glover_safe_broll_S52.mp4",
+      "seed": "glover-127",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-128",
+      "start": 399.508,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S55.png",
+      "seed": "glover-128",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-129",
+      "start": 402.13,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F053__glover_safe_broll_S53.mp4",
+      "seed": "glover-129",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-130",
+      "start": 405.049,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F054__glover_safe_broll_S54.mp4",
+      "seed": "glover-130",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-131",
+      "start": 407.968,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S56.png",
+      "seed": "glover-131",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-132",
+      "start": 410.59,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/motion/M07_rife.mp4",
+      "seed": "glover-132",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-133",
+      "start": 413.509,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F055__glover_safe_broll_S55.mp4",
+      "seed": "glover-133",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-134",
+      "start": 416.428,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S57.png",
+      "seed": "glover-134",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-135",
+      "start": 419.05,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F056__glover_safe_broll_S56.mp4",
+      "seed": "glover-135",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-136",
+      "start": 421.969,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F057__glover_safe_broll_S57.mp4",
+      "seed": "glover-136",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-137",
+      "start": 424.888,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S58.png",
+      "seed": "glover-137",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-138",
+      "start": 427.51,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/motion/M08_rife.mp4",
+      "seed": "glover-138",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-139",
+      "start": 430.429,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F058__glover_safe_broll_S58.mp4",
+      "seed": "glover-139",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-140",
+      "start": 433.348,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S59.png",
+      "seed": "glover-140",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-141",
+      "start": 435.97,
+      "dur": 2.733333,
+      "kind": "footage",
+      "src": "glover/human/GAP-06.mp4",
+      "seed": "glover-141",
+      "act": "ACT_3",
+      "treatment": "footage",
+      "startFrom": 0,
+      "stock": false,
+      "human_clip": true,
+      "stock_label": "officer sightline: young-woman driver behind glass [human motion]"
+    },
+    {
+      "id": "cut-142",
+      "start": 438.703333,
+      "dur": 3.104667,
+      "kind": "footage",
+      "src": "glover/factory/F060__glover_safe_broll_S60.mp4",
+      "seed": "glover-142",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-143",
+      "start": 441.808,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S60.png",
+      "seed": "glover-143",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-144",
+      "start": 444.43,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/motion/M09_rife.mp4",
+      "seed": "glover-144",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-145",
+      "start": 447.349,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F061__glover_safe_broll_S61.mp4",
+      "seed": "glover-145",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-146",
+      "start": 450.268,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S61.png",
+      "seed": "glover-146",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-147",
+      "start": 452.89,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F062__glover_safe_broll_S62.mp4",
+      "seed": "glover-147",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-148",
+      "start": 455.809,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F063__glover_safe_broll_S63.mp4",
+      "seed": "glover-148",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-149",
+      "start": 458.728,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S62.png",
+      "seed": "glover-149",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-150",
+      "start": 461.35,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/motion/M10_rife.mp4",
+      "seed": "glover-150",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-151",
+      "start": 464.269,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F064__glover_safe_broll_S64.mp4",
+      "seed": "glover-151",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-152",
+      "start": 467.188,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S63.png",
+      "seed": "glover-152",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-153",
+      "start": 469.81,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F065__glover_safe_broll_S65.mp4",
+      "seed": "glover-153",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-154",
+      "start": 472.729,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F066__glover_safe_broll_S66.mp4",
+      "seed": "glover-154",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-155",
+      "start": 475.648,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S64.png",
+      "seed": "glover-155",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-156",
+      "start": 478.27,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/motion/M11_rife.mp4",
+      "seed": "glover-156",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-157",
+      "start": 481.189,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F067__glover_safe_broll_S67.mp4",
+      "seed": "glover-157",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-158",
+      "start": 484.108,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S65.png",
+      "seed": "glover-158",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-159",
+      "start": 486.73,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F068__glover_safe_broll_S68.mp4",
+      "seed": "glover-159",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-160",
+      "start": 489.649,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F069__glover_safe_broll_S69.mp4",
+      "seed": "glover-160",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-161",
+      "start": 492.568,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S66.png",
+      "seed": "glover-161",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-162",
+      "start": 495.19,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F070__glover_safe_broll_S70.mp4",
+      "seed": "glover-162",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-163",
+      "start": 498.109,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F071__glover_safe_broll_S71.mp4",
+      "seed": "glover-163",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-164",
+      "start": 501.028,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S67.png",
+      "seed": "glover-164",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-165",
+      "start": 503.65,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F072__glover_safe_broll_S72.mp4",
+      "seed": "glover-165",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-166",
+      "start": 506.569,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F073__glover_safe_broll_S73.mp4",
+      "seed": "glover-166",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-167",
+      "start": 509.488,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S68.png",
+      "seed": "glover-167",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-168",
+      "start": 512.11,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F074__glover_safe_broll_S74.mp4",
+      "seed": "glover-168",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-169",
+      "start": 515.029,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F075__glover_safe_broll_S75.mp4",
+      "seed": "glover-169",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-170",
+      "start": 517.948,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S69.png",
+      "seed": "glover-170",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-171",
+      "start": 520.57,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F076__glover_safe_broll_S76.mp4",
+      "seed": "glover-171",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-172",
+      "start": 523.489,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F077__glover_safe_broll_S77.mp4",
+      "seed": "glover-172",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-173",
+      "start": 526.408,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S70.png",
+      "seed": "glover-173",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-174",
+      "start": 529.03,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F078__glover_safe_broll_S78.mp4",
+      "seed": "glover-174",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-175",
+      "start": 531.949,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F079__glover_safe_broll_S79.mp4",
+      "seed": "glover-175",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-176",
+      "start": 534.868,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S71.png",
+      "seed": "glover-176",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-177",
+      "start": 537.49,
+      "dur": 2.919,
+      "kind": "footage",
+      "src": "glover/factory/F080__glover_safe_broll_S80.mp4",
+      "seed": "glover-177",
+      "act": "ACT_3",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-178",
+      "start": 540.409,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S72.png",
+      "seed": "glover-178",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-179",
+      "start": 543.031,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S73.png",
+      "seed": "glover-179",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-180",
+      "start": 545.653,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S74.png",
+      "seed": "glover-180",
+      "act": "ACT_3",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-181",
+      "start": 548.275,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S75.png",
+      "seed": "glover-181",
+      "act": "ACT_3",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-182",
+      "start": 550.897,
+      "dur": 2.622,
+      "kind": "img",
+      "src": "glover/img/S76.png",
+      "seed": "glover-182",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-183",
+      "start": 553.519,
+      "dur": 2.634,
+      "kind": "img",
+      "src": "glover/img/S77.png",
+      "seed": "glover-183",
+      "act": "ACT_3",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-184",
+      "start": 556.153,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F081__glover_safe_broll_S81.mp4",
+      "seed": "glover-184",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-185",
+      "start": 559.325,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S78.png",
+      "seed": "glover-185",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-186",
+      "start": 562.174,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/motion/M12_rife.mp4",
+      "seed": "glover-186",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-187",
+      "start": 565.346,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F082__glover_safe_broll_S82.mp4",
+      "seed": "glover-187",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-188",
+      "start": 568.518,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S79.png",
+      "seed": "glover-188",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-189",
+      "start": 571.367,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F083__glover_safe_broll_S83.mp4",
+      "seed": "glover-189",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-190",
+      "start": 574.539,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F084__glover_safe_broll_S84.mp4",
+      "seed": "glover-190",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-191",
+      "start": 577.711,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S80.png",
+      "seed": "glover-191",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-192",
+      "start": 580.56,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/motion/M13_rife.mp4",
+      "seed": "glover-192",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-193",
+      "start": 583.732,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F085__glover_safe_broll_S85.mp4",
+      "seed": "glover-193",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-194",
+      "start": 586.904,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S81.png",
+      "seed": "glover-194",
+      "act": "ENDING",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-195",
+      "start": 589.753,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F086__glover_safe_broll_M01_src.mp4",
+      "seed": "glover-195",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-196",
+      "start": 592.925,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F087__glover_safe_broll_M02_src.mp4",
+      "seed": "glover-196",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-197",
+      "start": 596.097,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S82.png",
+      "seed": "glover-197",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-198",
+      "start": 598.946,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/motion/M14_rife.mp4",
+      "seed": "glover-198",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-199",
+      "start": 602.118,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F088__glover_safe_broll_M03_src.mp4",
+      "seed": "glover-199",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-200",
+      "start": 605.29,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S83.png",
+      "seed": "glover-200",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-201",
+      "start": 608.139,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F089__glover_safe_broll_M04_src.mp4",
+      "seed": "glover-201",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-202",
+      "start": 611.311,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F090__glover_safe_broll_M05_src.mp4",
+      "seed": "glover-202",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-203",
+      "start": 614.483,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S84.png",
+      "seed": "glover-203",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-204",
+      "start": 617.332,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/motion/M15_rife.mp4",
+      "seed": "glover-204",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-205",
+      "start": 620.504,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F091__glover_safe_broll_M06_src.mp4",
+      "seed": "glover-205",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-206",
+      "start": 623.676,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S85.png",
+      "seed": "glover-206",
+      "act": "ENDING",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-207",
+      "start": 626.525,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/factory/F092__glover_safe_broll_M07_src.mp4",
+      "seed": "glover-207",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-208",
+      "start": 629.697,
+      "dur": 3.172,
+      "kind": "footage",
+      "src": "glover/motion/M16_rife.mp4",
+      "seed": "glover-208",
+      "act": "ENDING",
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-209",
+      "start": 632.869,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S01.png",
+      "seed": "glover-209",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-210",
+      "start": 635.718,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S02.png",
+      "seed": "glover-210",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-211",
+      "start": 638.567,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S03.png",
+      "seed": "glover-211",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-212",
+      "start": 641.416,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S04.png",
+      "seed": "glover-212",
+      "act": "ENDING",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-213",
+      "start": 644.265,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S05.png",
+      "seed": "glover-213",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-214",
+      "start": 647.114,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S06.png",
+      "seed": "glover-214",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-215",
+      "start": 649.963,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S07.png",
+      "seed": "glover-215",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-216",
+      "start": 652.812,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S08.png",
+      "seed": "glover-216",
+      "act": "ENDING",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-217",
+      "start": 655.661,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S09.png",
+      "seed": "glover-217",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-218",
+      "start": 658.51,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S10.png",
+      "seed": "glover-218",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-219",
+      "start": 661.359,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S11.png",
+      "seed": "glover-219",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-220",
+      "start": 664.208,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S12.png",
+      "seed": "glover-220",
+      "act": "ENDING",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-221",
+      "start": 667.057,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S13.png",
+      "seed": "glover-221",
+      "act": "ENDING",
+      "treatment": "scan"
+    },
+    {
+      "id": "cut-222",
+      "start": 669.906,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S14.png",
+      "seed": "glover-222",
+      "act": "ENDING",
+      "treatment": "duotone"
+    },
+    {
+      "id": "cut-223",
+      "start": 672.755,
+      "dur": 2.849,
+      "kind": "img",
+      "src": "glover/img/S15.png",
+      "seed": "glover-223",
+      "act": "ENDING",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-224",
+      "start": 675.604,
+      "dur": 2.857,
+      "kind": "img",
+      "src": "glover/img/S16.png",
+      "seed": "glover-224",
+      "act": "ENDING",
+      "treatment": "bleed"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.601,
+      "text": "A two lane road at the edge of a Kansas town."
+    },
+    {
+      "start": 2.901,
+      "end": 8.009,
+      "text": "A sheriff's deputy sits in his patrol car, engine idling, watching traffic roll past."
+    },
+    {
+      "start": 8.309,
+      "end": 9.749,
+      "text": "A pickup truck goes by."
+    },
+    {
+      "start": 10.049,
+      "end": 11.674,
+      "text": "Nothing about it is wrong."
+    },
+    {
+      "start": 11.974,
+      "end": 13.367,
+      "text": "It is not speeding."
+    },
+    {
+      "start": 13.667,
+      "end": 15.06,
+      "text": "It is not weaving."
+    },
+    {
+      "start": 15.36,
+      "end": 17.589,
+      "text": "No brake light is out, no tag is expired."
+    },
+    {
+      "start": 17.889,
+      "end": 20.025,
+      "text": "Whoever is driving has done nothing."
+    },
+    {
+      "start": 20.325,
+      "end": 24.783,
+      "text": "The deputy types the truck's license plate into the laptop bolted to his dashboard."
+    },
+    {
+      "start": 25.083,
+      "end": 27.266,
+      "text": "A few seconds later the screen answers him."
+    },
+    {
+      "start": 27.566,
+      "end": 30.445,
+      "text": "The plate belongs to a man named Charles Glover Junior."
+    },
+    {
+      "start": 30.745,
+      "end": 33.81,
+      "text": "And Charles Glover's driver's license has been revoked."
+    },
+    {
+      "start": 34.11,
+      "end": 36.386,
+      "text": "The deputy has never seen the driver's face."
+    },
+    {
+      "start": 36.686,
+      "end": 43.606,
+      "text": "He cannot tell you if the person behind that wheel is a man or a woman, young or old, the owner or a total stranger."
+    },
+    {
+      "start": 43.906,
+      "end": 45.392,
+      "text": "He knows one thing only."
+    },
+    {
+      "start": 45.692,
+      "end": 48.386,
+      "text": "The man who owns this truck is not allowed to drive it."
+    },
+    {
+      "start": 48.686,
+      "end": 50.683,
+      "text": "He pulls the truck over anyway."
+    },
+    {
+      "start": 50.983,
+      "end": 54.048,
+      "text": "So ask it about your own car, sitting in your own driveway."
+    },
+    {
+      "start": 54.348,
+      "end": 63.357,
+      "text": "If the police run your plate and something on your record comes back, can they stop the car on that alone, before they have checked who is actually driving it?"
+    },
+    {
+      "start": 65.157,
+      "end": 67.99,
+      "text": "The driver that day really was Charles Glover."
+    },
+    {
+      "start": 68.29,
+      "end": 70.426,
+      "text": "The deputy's hunch turned out to be right."
+    },
+    {
+      "start": 70.726,
+      "end": 73.002,
+      "text": "But that is almost a trap to focus on."
+    },
+    {
+      "start": 73.302,
+      "end": 76.46,
+      "text": "The deputy did not know he was right when he flipped on his lights."
+    },
+    {
+      "start": 76.76,
+      "end": 83.215,
+      "text": "He saw a name on a screen and acted on it before confirming a single thing about the actual person in the truck."
+    },
+    {
+      "start": 83.515,
+      "end": 86.487,
+      "text": "That is the question the Supreme Court agreed to answer."
+    },
+    {
+      "start": 86.787,
+      "end": 89.016,
+      "text": "Not whether Charles Glover was guilty."
+    },
+    {
+      "start": 89.316,
+      "end": 90.245,
+      "text": "He was."
+    },
+    {
+      "start": 90.545,
+      "end": 93.517,
+      "text": "The question was whether the stop itself was allowed."
+    },
+    {
+      "start": 93.817,
+      "end": 102.919,
+      "text": "Whether an officer who knows nothing about you except that your car's registered owner cannot legally drive can pull that car over, on that fact and nothing else."
+    },
+    {
+      "start": 103.219,
+      "end": 106.098,
+      "text": "In the year 2020, the Court gave its answer."
+    },
+    {
+      "start": 106.398,
+      "end": 110.717,
+      "text": "And it is more careful, and more limited, than your gut reaction is likely to be."
+    },
+    {
+      "start": 111.017,
+      "end": 112.735,
+      "text": "This is Prime Documentary."
+    },
+    {
+      "start": 114.535,
+      "end": 118.9,
+      "text": "Start with what actually happened, because the facts here are unusually clean."
+    },
+    {
+      "start": 119.2,
+      "end": 123.89,
+      "text": "Almost everything in this case was agreed on by both sides before it ever reached a courtroom."
+    },
+    {
+      "start": 124.19,
+      "end": 128.23,
+      "text": "A deputy with the sheriff's office in Douglas County, Kansas, was on patrol."
+    },
+    {
+      "start": 128.53,
+      "end": 131.688,
+      "text": "He ran a routine check on the license plate of a pickup truck."
+    },
+    {
+      "start": 131.988,
+      "end": 134.031,
+      "text": "He was not responding to a call."
+    },
+    {
+      "start": 134.331,
+      "end": 136.885,
+      "text": "He had not watched the driver break any law."
+    },
+    {
+      "start": 137.185,
+      "end": 139.879,
+      "text": "Running a plate is something an officer can do at will."
+    },
+    {
+      "start": 140.179,
+      "end": 143.987,
+      "text": "The check told him the truck was registered to Charles Glover Junior."
+    },
+    {
+      "start": 144.287,
+      "end": 147.816,
+      "text": "It also told him that Glover's Kansas license had been revoked."
+    },
+    {
+      "start": 148.116,
+      "end": 151.135,
+      "text": "In Kansas, a revoked license is not a small thing."
+    },
+    {
+      "start": 151.435,
+      "end": 155.197,
+      "text": "It is what happens after a serious or repeated pattern of breaking driving laws."
+    },
+    {
+      "start": 155.497,
+      "end": 158.655,
+      "text": "It is the state saying you have lost the privilege to drive at all."
+    },
+    {
+      "start": 158.955,
+      "end": 161.277,
+      "text": "Here is the move the whole case turns on."
+    },
+    {
+      "start": 161.577,
+      "end": 165.292,
+      "text": "The deputy assumed that the registered owner was the person driving."
+    },
+    {
+      "start": 165.592,
+      "end": 167.589,
+      "text": "He did not pull up alongside to look."
+    },
+    {
+      "start": 167.889,
+      "end": 170.815,
+      "text": "He did not confirm the driver's age or anything else."
+    },
+    {
+      "start": 171.115,
+      "end": 178.406,
+      "text": "He simply reasoned that the truck was probably being driven by the man who owned it, and that man was not allowed behind a wheel."
+    },
+    {
+      "start": 178.706,
+      "end": 180.006,
+      "text": "So he made the stop."
+    },
+    {
+      "start": 180.306,
+      "end": 181.513,
+      "text": "And he was right."
+    },
+    {
+      "start": 181.813,
+      "end": 183.531,
+      "text": "The driver was Charles Glover."
+    },
+    {
+      "start": 183.831,
+      "end": 188.382,
+      "text": "He was charged with driving as a habitual violator, driving on a revoked license."
+    },
+    {
+      "start": 188.682,
+      "end": 191.143,
+      "text": "But Glover's lawyers did not fight the facts."
+    },
+    {
+      "start": 191.443,
+      "end": 192.743,
+      "text": "They fought the stop."
+    },
+    {
+      "start": 193.043,
+      "end": 196.48,
+      "text": "They argued the deputy never had a lawful reason to pull the truck over."
+    },
+    {
+      "start": 196.78,
+      "end": 198.916,
+      "text": "He had not seen Glover do anything wrong."
+    },
+    {
+      "start": 199.216,
+      "end": 203.349,
+      "text": "He had only guessed, from a name on a screen, that the owner was driving."
+    },
+    {
+      "start": 203.649,
+      "end": 208.339,
+      "text": "And a guess, they said, is not enough to seize a car and the person inside it."
+    },
+    {
+      "start": 208.639,
+      "end": 212.865,
+      "text": "If the stop was not allowed, then everything that came after it falls apart."
+    },
+    {
+      "start": 213.165,
+      "end": 214.372,
+      "text": "That is the stake."
+    },
+    {
+      "start": 214.672,
+      "end": 218.759,
+      "text": "A single assumption, made in a few seconds, decides whether any of it counts."
+    },
+    {
+      "start": 220.559,
+      "end": 227.386,
+      "text": "To see why this reached the highest court in the country, you have to understand the exact size of what the deputy was leaning on."
+    },
+    {
+      "start": 227.686,
+      "end": 231.773,
+      "text": "The Fourth Amendment protects you against unreasonable searches and seizures."
+    },
+    {
+      "start": 232.073,
+      "end": 234.209,
+      "text": "Pulling your car over is a seizure."
+    },
+    {
+      "start": 234.509,
+      "end": 240.082,
+      "text": "It is the government stopping you and taking a piece of your freedom, even if only for a few minutes."
+    },
+    {
+      "start": 240.382,
+      "end": 243.772,
+      "text": "And the Constitution allows that only when it is reasonable."
+    },
+    {
+      "start": 244.072,
+      "end": 248.344,
+      "text": "Now, the law does not demand that an officer be certain before stopping you."
+    },
+    {
+      "start": 248.644,
+      "end": 256.771,
+      "text": "To arrest you, or to search your home, police generally need probable cause, a solid, fact based belief that you have done something wrong."
+    },
+    {
+      "start": 257.071,
+      "end": 258.929,
+      "text": "A traffic stop asks for less."
+    },
+    {
+      "start": 259.229,
+      "end": 263.687,
+      "text": "It runs on a lower standard, and the name for that standard is reasonable suspicion."
+    },
+    {
+      "start": 263.987,
+      "end": 267.238,
+      "text": "Hold on to that phrase, because it is the heart of this case."
+    },
+    {
+      "start": 267.538,
+      "end": 270.928,
+      "text": "Reasonable suspicion is not a hunch, and it is not proof."
+    },
+    {
+      "start": 271.228,
+      "end": 272.528,
+      "text": "It sits in between."
+    },
+    {
+      "start": 272.828,
+      "end": 280.491,
+      "text": "The Court has described it as considerably less than proof by the greater weight of the evidence, and clearly less than what is needed for probable cause."
+    },
+    {
+      "start": 280.791,
+      "end": 285.574,
+      "text": "An officer needs specific facts, not a feeling, that point toward something wrong."
+    },
+    {
+      "start": 285.874,
+      "end": 288.428,
+      "text": "But he does not need the case already solved."
+    },
+    {
+      "start": 288.728,
+      "end": 290.632,
+      "text": "So the fight here was precise."
+    },
+    {
+      "start": 290.932,
+      "end": 293.3,
+      "text": "Everyone agreed the deputy had some facts."
+    },
+    {
+      "start": 293.6,
+      "end": 296.294,
+      "text": "He knew the truck's owner had a revoked license."
+    },
+    {
+      "start": 296.594,
+      "end": 301.517,
+      "text": "He knew, as a general matter, that people whose licenses are revoked often keep driving anyway."
+    },
+    {
+      "start": 301.817,
+      "end": 308.04,
+      "text": "The question was whether those facts, with nothing about the actual driver, added up to reasonable suspicion."
+    },
+    {
+      "start": 308.34,
+      "end": 315.399,
+      "text": "Or whether the deputy had to know more, had to see something, before he could treat the owner and the driver as the same person."
+    },
+    {
+      "start": 315.699,
+      "end": 318.16,
+      "text": "Kansas said the inference was reasonable."
+    },
+    {
+      "start": 318.46,
+      "end": 324.358,
+      "text": "Common sense, the state argued, tells you the person most likely to be driving a truck is the person who owns it."
+    },
+    {
+      "start": 324.658,
+      "end": 328.373,
+      "text": "Especially when that owner has already shown he ignores the rules of the road."
+    },
+    {
+      "start": 328.673,
+      "end": 332.156,
+      "text": "Glover's side said that is not evidence, it is a stereotype."
+    },
+    {
+      "start": 332.456,
+      "end": 336.032,
+      "text": "There are countless reasons someone other than the owner might be driving."
+    },
+    {
+      "start": 336.332,
+      "end": 338.7,
+      "text": "A spouse, a child, a friend, a mechanic."
+    },
+    {
+      "start": 339.0,
+      "end": 346.616,
+      "text": "To assume the owner is the driver, they argued, is to stop a car based on a probability about a name, not a fact about a person."
+    },
+    {
+      "start": 346.916,
+      "end": 352.489,
+      "text": "And if that is allowed, then your car can be pulled over for who owns it, not for anything you did."
+    },
+    {
+      "start": 354.289,
+      "end": 357.679,
+      "text": "In April of 2020, the Supreme Court sided with Kansas."
+    },
+    {
+      "start": 357.979,
+      "end": 362.716,
+      "text": "By a vote of eight to one, it held that the stop did not violate the Fourth Amendment."
+    },
+    {
+      "start": 363.016,
+      "end": 367.01,
+      "text": "Read the holding carefully, because its exact shape is the whole point."
+    },
+    {
+      "start": 367.31,
+      "end": 369.586,
+      "text": "Justice Clarence Thomas wrote for the Court."
+    },
+    {
+      "start": 369.886,
+      "end": 371.929,
+      "text": "The rule he laid down was this."
+    },
+    {
+      "start": 372.229,
+      "end": 378.591,
+      "text": "When an officer lacks information negating an inference that the owner is driving the vehicle, the stop is reasonable."
+    },
+    {
+      "start": 378.891,
+      "end": 381.817,
+      "text": "Sit with that wording, because it cuts both ways."
+    },
+    {
+      "start": 382.117,
+      "end": 389.408,
+      "text": "When the officer has nothing telling him the owner is not the driver, he may treat the owner as the driver, and stop the car to check."
+    },
+    {
+      "start": 389.708,
+      "end": 395.792,
+      "text": "The deputy knew the owner could not legally drive, and he had no reason yet to think anyone else was at the wheel."
+    },
+    {
+      "start": 396.092,
+      "end": 401.665,
+      "text": "On those facts, and only those facts, the inference was reasonable, and the brief stop was allowed."
+    },
+    {
+      "start": 401.965,
+      "end": 404.148,
+      "text": "The Court leaned on plain common sense."
+    },
+    {
+      "start": 404.448,
+      "end": 408.628,
+      "text": "It is a fair, everyday inference that the person driving a car is the one who owns it."
+    },
+    {
+      "start": 408.928,
+      "end": 413.433,
+      "text": "Reasonable suspicion never requires certainty, and the law did not pretend it was."
+    },
+    {
+      "start": 413.733,
+      "end": 422.232,
+      "text": "It requires a sensible, fact based reason to look closer, and the revoked license of the owner, the Court said, was exactly that kind of reason."
+    },
+    {
+      "start": 422.532,
+      "end": 424.808,
+      "text": "But now comes the part you most need to hear."
+    },
+    {
+      "start": 425.108,
+      "end": 428.173,
+      "text": "The Court went out of its way to say its holding was narrow."
+    },
+    {
+      "start": 428.473,
+      "end": 432.792,
+      "text": "The inference works only as long as the officer has nothing that cuts against it."
+    },
+    {
+      "start": 433.092,
+      "end": 435.368,
+      "text": "The moment he does, it collapses."
+    },
+    {
+      "start": 435.668,
+      "end": 437.665,
+      "text": "The justices gave their own example."
+    },
+    {
+      "start": 437.965,
+      "end": 447.299,
+      "text": "If an officer knows the registered owner is a man in his sixties, but can see that the driver is a woman in her twenties, the reason for the stop is gone."
+    },
+    {
+      "start": 447.599,
+      "end": 452.522,
+      "text": "He can no longer pretend the owner is driving, because his own eyes have told him otherwise."
+    },
+    {
+      "start": 452.822,
+      "end": 456.816,
+      "text": "The whole thing depends on the officer not having contrary information."
+    },
+    {
+      "start": 457.116,
+      "end": 460.738,
+      "text": "So this is not a rule that lets police stop any car at any time."
+    },
+    {
+      "start": 461.038,
+      "end": 465.636,
+      "text": "It is a narrow permission that dissolves the instant the officer can see he is likely wrong."
+    },
+    {
+      "start": 465.936,
+      "end": 472.159,
+      "text": "Justice Elena Kagan wrote separately to underline exactly that limit, joined by Justice Ruth Bader Ginsburg."
+    },
+    {
+      "start": 472.459,
+      "end": 475.292,
+      "text": "Her point was how little it takes to break the inference."
+    },
+    {
+      "start": 475.592,
+      "end": 483.58,
+      "text": "What made this stop reasonable, she stressed, was that Glover's license was revoked, which in Kansas signals a driver who keeps ignoring the law."
+    },
+    {
+      "start": 483.88,
+      "end": 492.843,
+      "text": "If his license had merely been suspended, over something like an unpaid fee, the case for assuming he was still behind the wheel would be far weaker."
+    },
+    {
+      "start": 493.143,
+      "end": 495.79,
+      "text": "And she pointed back to the Court's own example."
+    },
+    {
+      "start": 496.09,
+      "end": 501.106,
+      "text": "A single glance that shows the driver is not the owner is enough to wipe the suspicion away."
+    },
+    {
+      "start": 501.406,
+      "end": 503.356,
+      "text": "One justice rejected the whole thing."
+    },
+    {
+      "start": 503.656,
+      "end": 508.3,
+      "text": "Justice Sonia Sotomayor was the lone dissenter, and her warning was blunt."
+    },
+    {
+      "start": 508.6,
+      "end": 524.482,
+      "text": "Speaking in dissent, she wrote that in upholding routine stops of vehicles whose owners have revoked licenses, the Court ignores key foundations of our reasonable suspicion jurisprudence and impermissibly and unnecessarily reduces the State's burden of proof."
+    },
+    {
+      "start": 524.782,
+      "end": 526.732,
+      "text": "Her deeper worry was about effort."
+    },
+    {
+      "start": 527.032,
+      "end": 535.995,
+      "text": "The consequence of the majority's approach, she wrote, is to absolve officers from any responsibility to investigate the identity of a driver where feasible."
+    },
+    {
+      "start": 536.295,
+      "end": 540.01,
+      "text": "In her view the deputy could often just look, and should have to."
+    },
+    {
+      "start": 540.31,
+      "end": 542.4,
+      "text": "And she warned where it could lead."
+    },
+    {
+      "start": 542.7,
+      "end": 550.177,
+      "text": "The majority today, she wrote, has paved the road to finding reasonable suspicion based on nothing more than a demographic profile."
+    },
+    {
+      "start": 550.477,
+      "end": 552.381,
+      "text": "But hers was one vote against eight."
+    },
+    {
+      "start": 552.681,
+      "end": 554.353,
+      "text": "The rule is the majority's."
+    },
+    {
+      "start": 556.153,
+      "end": 558.8,
+      "text": "So go back to your own car in your own driveway."
+    },
+    {
+      "start": 559.1,
+      "end": 564.023,
+      "text": "If the police run your plate and something comes back, can they stop the car on that alone?"
+    },
+    {
+      "start": 564.323,
+      "end": 569.199,
+      "text": "After the spring of 2020, the answer is a careful yes, with a hard edge on it."
+    },
+    {
+      "start": 569.499,
+      "end": 581.248,
+      "text": "Yes, if the thing they find is a fact about the owner that makes it reasonable to think that person should not be driving, like a revoked license, and if they have no reason yet to believe someone else is at the wheel."
+    },
+    {
+      "start": 581.548,
+      "end": 585.867,
+      "text": "On that much, and nothing more, they can pull the car over to check."
+    },
+    {
+      "start": 586.167,
+      "end": 591.508,
+      "text": "But notice how much is packed into that limit, because it is where your protection actually lives."
+    },
+    {
+      "start": 591.808,
+      "end": 595.245,
+      "text": "The stop is allowed only for the brief moment of not knowing."
+    },
+    {
+      "start": 595.545,
+      "end": 607.062,
+      "text": "The instant he can see that the driver is plainly not the owner, the reason for the stop is gone, and the Constitution no longer lets him treat a name on a registration as if it were the face behind the wheel."
+    },
+    {
+      "start": 607.362,
+      "end": 609.545,
+      "text": "That is the line this case draws."
+    },
+    {
+      "start": 609.845,
+      "end": 614.303,
+      "text": "It is not the frightening version, where police can stop anyone for anything."
+    },
+    {
+      "start": 614.603,
+      "end": 619.479,
+      "text": "And it is not the comfortable version, where they can never act on a record until they have proof."
+    },
+    {
+      "start": 619.779,
+      "end": 621.962,
+      "text": "It is a narrow, in between rule."
+    },
+    {
+      "start": 622.262,
+      "end": 628.392,
+      "text": "An officer can act on a sensible inference, but only until the facts in front of him say that inference is wrong."
+    },
+    {
+      "start": 628.692,
+      "end": 634.265,
+      "text": "Charles Glover really was driving on a revoked license that day, and the Court let the stop stand."
+    },
+    {
+      "start": 634.565,
+      "end": 636.933,
+      "text": "What the case leaves behind is bigger than him."
+    },
+    {
+      "start": 637.233,
+      "end": 647.032,
+      "text": "It is the exact point where a reasonable guess becomes an unreasonable one, drawn for every plate that gets typed into every laptop on every quiet road after his."
+    },
+    {
+      "start": 647.332,
+      "end": 656.248,
+      "text": "The next time you hear that the police can stop your car for no reason at all, remember that it is not quite true, and remember that the difference is one word."
+    },
+    {
+      "start": 656.548,
+      "end": 657.709,
+      "text": "Not certainty."
+    },
+    {
+      "start": 658.009,
+      "end": 659.124,
+      "text": "Suspicion."
+    },
+    {
+      "start": 659.424,
+      "end": 663.743,
+      "text": "Reasonable, specific, and gone the moment the officer can see he is wrong."
+    },
+    {
+      "start": 664.043,
+      "end": 672.402,
+      "text": "If you would rather learn where the edges of your rights actually are before the afternoon you are the one being pulled over, stay with us."
+    },
+    {
+      "start": 672.702,
+      "end": 678.461,
+      "text": "At Prime Documentary, we read the fine print of the Constitution out loud, one case at a time."
+    }
+  ],
+  "graphics": [],
+  "figures": [
+    {
+      "start": 10.126,
+      "end": 15.926,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction, no likeness"
+    },
+    {
+      "start": 28.179,
+      "end": 33.979,
+      "kind": "kinetic",
+      "lines": [
+        "A PLATE",
+        "A HIT",
+        "A STOP"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "STOP"
+      ]
+    },
+    {
+      "start": 46.231,
+      "end": 52.031,
+      "kind": "routemap",
+      "label": "plate run - owner status - brief stop - Court review",
+      "pins": [
+        {
+          "x": 0.24,
+          "y": 0.62,
+          "label": "LICENSE REVOKED"
+        },
+        {
+          "x": 0.48,
+          "y": 0.46,
+          "label": "owner status known"
+        },
+        {
+          "x": 0.72,
+          "y": 0.58,
+          "label": "brief stop"
+        }
+      ]
+    },
+    {
+      "start": 124.237,
+      "end": 130.037,
+      "kind": "acttitle",
+      "title": "THE STOP",
+      "kicker": "ACT ONE",
+      "index": 1
+    },
+    {
+      "start": 143.442,
+      "end": 149.242,
+      "kind": "lowerthird",
+      "primary": "Charles Glover Jr.",
+      "secondary": "symbolic objects only"
+    },
+    {
+      "start": 162.647,
+      "end": 168.447,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "driver not yet identified",
+          "value": 1
+        },
+        {
+          "label": "owner status known",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "start": 181.852,
+      "end": 187.652,
+      "kind": "probablecause",
+      "outcome": "stall"
+    },
+    {
+      "start": 201.057,
+      "end": 206.857,
+      "kind": "kinetic",
+      "lines": [
+        "NOT PROOF",
+        "REASONABLE SUSPICION"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "REASONABLE"
+      ]
+    },
+    {
+      "start": 230.97,
+      "end": 236.77,
+      "kind": "acttitle",
+      "title": "THE INFERENCE",
+      "kicker": "ACT TWO",
+      "index": 2
+    },
+    {
+      "start": 251.591,
+      "end": 257.392,
+      "kind": "brightline",
+      "mode": "draw"
+    },
+    {
+      "start": 272.213,
+      "end": 278.013,
+      "kind": "lowerthird",
+      "primary": "reasonable suspicion",
+      "secondary": "less than probable cause"
+    },
+    {
+      "start": 292.835,
+      "end": 298.635,
+      "kind": "mechanism",
+      "mechanism": "faultsplit"
+    },
+    {
+      "start": 313.457,
+      "end": 319.257,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "common sense inference",
+          "value": 1
+        },
+        {
+          "label": "contrary information dissolves it",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "start": 334.078,
+      "end": 339.878,
+      "kind": "statemap",
+      "label": "a narrow rule, not a blank check"
+    },
+    {
+      "start": 361.241,
+      "end": 367.041,
+      "kind": "acttitle",
+      "title": "THE LIMIT",
+      "kicker": "ACT THREE",
+      "index": 3
+    },
+    {
+      "start": 374.946,
+      "end": 380.746,
+      "kind": "votetally",
+      "majority": 8,
+      "dissent": 1,
+      "label": "the stop stands under a narrow rule"
+    },
+    {
+      "start": 388.65,
+      "end": 394.45,
+      "kind": "stat",
+      "value": 8,
+      "suffix": " / 1",
+      "label": "UPHELD, with limits",
+      "topLabel": "KANSAS v. GLOVER"
+    },
+    {
+      "start": 402.355,
+      "end": 408.155,
+      "kind": "numberticker",
+      "value": 2020,
+      "label": "decided April 6",
+      "group": false
+    },
+    {
+      "start": 416.06,
+      "end": 421.86,
+      "kind": "quote",
+      "quote": "When the officer lacks information negating an inference that the owner is driving the vehicle, the stop is reasonable.",
+      "attribution": "Justice Thomas, for the Court"
+    },
+    {
+      "start": 429.764,
+      "end": 435.564,
+      "kind": "quote",
+      "quote": "We emphasize the narrow scope of our holding.",
+      "attribution": "Justice Thomas, for the Court"
+    },
+    {
+      "start": 443.469,
+      "end": 449.269,
+      "kind": "lowerthird",
+      "primary": "Justice Kagan, concurring",
+      "secondary": "joined by Justice Ginsburg"
+    },
+    {
+      "start": 457.173,
+      "end": 462.973,
+      "kind": "mechanism",
+      "mechanism": "closingdoor"
+    },
+    {
+      "start": 470.878,
+      "end": 476.678,
+      "kind": "quote",
+      "quote": "Consider, for example, if Kansas had suspended rather than revoked Glover's license.",
+      "attribution": "Justice Kagan, concurring"
+    },
+    {
+      "start": 484.582,
+      "end": 490.382,
+      "kind": "lowerthird",
+      "primary": "Justice Sotomayor, dissenting",
+      "secondary": "the lone dissent"
+    },
+    {
+      "start": 498.287,
+      "end": 504.087,
+      "kind": "quote",
+      "quote": "The majority today has paved the road to finding reasonable suspicion based on nothing more than a demographic profile.",
+      "attribution": "Justice Sotomayor, dissenting"
+    },
+    {
+      "start": 511.992,
+      "end": 517.792,
+      "kind": "kinetic",
+      "lines": [
+        "A NARROW RULE",
+        "NOT ANY CAR"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "NARROW"
+      ]
+    },
+    {
+      "start": 525.696,
+      "end": 531.496,
+      "kind": "timeline",
+      "events": [
+        {
+          "year": "plate",
+          "text": "owner status"
+        },
+        {
+          "year": "stop",
+          "text": "brief investigation"
+        },
+        {
+          "year": "2020",
+          "text": "upheld with limits"
+        }
+      ]
+    },
+    {
+      "start": 539.401,
+      "end": 545.201,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "owner may be driving",
+          "value": 1
+        },
+        {
+          "label": "plainly different driver",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "start": 562.929,
+      "end": 568.729,
+      "kind": "acttitle",
+      "title": "YOUR CAR",
+      "kicker": "ENDING",
+      "index": 4
+    },
+    {
+      "start": 576.279,
+      "end": 582.079,
+      "kind": "bar",
+      "items": [
+        {
+          "label": "reasonable",
+          "value": 1
+        },
+        {
+          "label": "certainty",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "start": 589.631,
+      "end": 595.431,
+      "kind": "numberticker",
+      "value": 589,
+      "suffix": " U.S.",
+      "label": "Kansas v. Glover"
+    },
+    {
+      "start": 602.981,
+      "end": 608.781,
+      "kind": "numberticker",
+      "value": 556,
+      "prefix": "No. 18-",
+      "label": "case docket"
+    },
+    {
+      "start": 616.333,
+      "end": 622.133,
+      "kind": "stat",
+      "value": 4,
+      "label": "Fourth Amendment question",
+      "topLabel": "YOUR CAR"
+    },
+    {
+      "start": 629.683,
+      "end": 635.483,
+      "kind": "kinetic",
+      "lines": [
+        "THE REASON",
+        "CAN DISAPPEAR"
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "DISAPPEAR"
+      ]
+    },
+    {
+      "start": 643.035,
+      "end": 648.835,
+      "kind": "lowerthird",
+      "primary": "The stop stood",
+      "secondary": "the inference remains limited"
+    },
+    {
+      "start": 656.385,
+      "end": 662.185,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction, no likeness"
+    }
+  ],
+  "overlays": [
+    "glover/overlay/O01__glover_dust_light_01.mp4",
+    "glover/overlay/O02__glover_dust_light_02.mp4",
+    "glover/overlay/O03__glover_dust_light_03.mp4",
+    "glover/overlay/O04__glover_dust_light_04.mp4",
+    "glover/overlay/O05__glover_dust_light_05.mp4",
+    "glover/overlay/O06__glover_dust_light_06.mp4",
+    "glover/overlay/O07__glover_dust_light_07.mp4",
+    "glover/overlay/O08__glover_dust_light_08.mp4",
+    "glover/overlay/O09__glover_dust_light_09.mp4",
+    "glover/overlay/O10__glover_dust_light_10.mp4",
+    "glover/overlay/O11__glover_dust_light_11.mp4",
+    "glover/overlay/O12__glover_dust_light_12.mp4"
+  ]
+}

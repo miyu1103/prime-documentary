@@ -1,0 +1,59 @@
+{
+  "slug": "facematch",
+  "working_title": "A Computer Picked His Face. Detroit Police Arrested Him in His Own Driveway.",
+  "one_line": "Detroit police ran a shoplifting still through face-recognition software, arrested Robert Williams in front of his wife and two daughters, held him thirty hours, and then did the same thing to at least three more people in the same city -- one of them eight months pregnant.",
+  "contradiction": "The software returned a name, no human checked whether the man it named had ever been near the shop, and he was arrested in his own driveway for a theft that happened while he was somewhere else.",
+  "series_id": "S33",
+  "scored_by": "claude, 2026-08-12, v002 rubric, for the 45-minute slot",
+  "scores": {
+    "personal_relevance": 14,
+    "wtf_factor": 13,
+    "human_stakes": 9,
+    "contradiction": 14,
+    "story_arc": 9,
+    "title_power": 9,
+    "thumbnail_power": 9,
+    "evidence": 9,
+    "broad_audience": 9,
+    "franchiseability": 5,
+    "evergreen": 4
+  },
+  "bonuses": [
+    "specific_money_amount",
+    "major_reversal"
+  ],
+  "justification": {
+    "personal_relevance": "Every viewer's driving-licence photograph is already in the database being searched. That is an unusually direct contact point. 14.",
+    "wtf_factor": "An arrest warrant issued on a machine's guess with no corroboration. Strong. Held at 13 because the audience has been told 'facial recognition is biased' many times and the surprise is partly spent.",
+    "human_stakes": "Thirty hours in a cell, charges dropped, a $300,000 settlement. Humiliating and frightening, but recoverable. The honest limiter. 9.",
+    "contradiction": "Identified by a system that cannot be cross-examined, arrested for being somewhere he was not. 14.",
+    "story_arc": "Ordinary Thursday, arrest in the driveway, release, four years of litigation, a settlement that rewrites the department's rules -- and then a fresh suit in 2025 saying it happened again. 9.",
+    "title_power": "Clean subject-verb-consequence; 'a computer picked his face' is the whole premise in five words. 9.",
+    "thumbnail_power": "A face with a match box drawn on it. One subject. 9.",
+    "evidence": "Four federal dockets in one district, verified in the repository's own CourtListener query: Burton 2:20-cv-12182 (2020), Oliver 2:20-cv-12711 (2020), Williams 2:21-cv-10827 (2021), Crutchfield 2:25-cv-10514 (2025, still open). Plus the settlement agreement and the department's revised policy. 9.",
+    "broad_audience": "Reaches beyond the channel's base toward a younger technology audience, which is an acquisition experiment, not a safe bet. 9.",
+    "franchiseability": "Documented wrongful face-match arrests exist in several states; this is a series, not an episode. 5.",
+    "evergreen": "The technology and the policy are both moving fast; a 2020 match error will read as history sooner than a wrongful conviction will. 4.",
+    "specific_money_amount": "$300,000 paid by the City of Detroit, June 2024.",
+    "major_reversal": "Charges dropped, then a settlement imposing what the ACLU calls the strongest face-recognition constraints on any US police department, then a further suit alleging a repeat."
+  },
+  "scored": {
+    "raw": 104,
+    "total": 97,
+    "bonuses_awarded": [
+      "specific_money_amount",
+      "major_reversal"
+    ],
+    "verdict": "PRODUCTION",
+    "problems": [],
+    "rubric": "config/pd_planning_os.v002.json",
+    "gate": {
+      "flagship": 110,
+      "priority": 100,
+      "production": 90,
+      "reserve": 80,
+      "reject": 79
+    },
+    "at": "2026-08-11T15:59:40.324871+00:00"
+  }
+}

@@ -1,0 +1,63 @@
+EP66 openfields — 画像**再**発注 バッチD 1/1（4枚）
+区分: 回収対1枚（`L075` と同一構図）＋ 車両2枚 ＋ 人物1枚
+
+★これは作り直しです。**同じ名前の既存ファイルを上書きしてください。**
+　新しい ID を振らない。`_v2` / `_02` を作らない。
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, muted natural colour, flat overcast daylight of a late Appalachian autumn, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, restrained documentary framing, rural Pennsylvania and Middle Tennessee between 2019 and 2026, ordinary working farmland and unmanaged second-growth woodland, worn unglamorous surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（4枚すべて）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名を一切描かない
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・警察・制服・記章・銃器・血液・ドローンを描かない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── この4枚で特に落ちやすい点 ────────
+
+・L170 は**3回目**です。柱は**丸太ではありません**。天面は平らな四辺形の面、
+　縦の稜が1本あり、その稜で明るさが**段差**になります。曲面の陰影にしないでください。
+・L146 は**3回目**です。トラックは**画面幅の10%以下**の小ささでなければなりません。
+　寄るとテールゲートにバッジが出ます。
+・L236 は**3回目**です。手は**上げません**。柵柱の平らな天面に伏せて置き、
+　4本の指が1本ずつ離れて向こう端に掛かり、親指は手前側にあります。
+・L096 は **L173 と車の向きを一致させる**ための発注です。両方とも**正面向き**にしてください。
+　後部（テールゲート・後バンパー）は画面に一切入れないでください。
+
+──────── プロンプト ────────
+
+■ L170.png
+A WOODEN GATE POST WHOSE WHOLE OUTLINE IS MADE OF STRAIGHT LINES: its left edge and its right edge are two straight vertical lines the same distance apart all the way from the top of the post down to the bottom of the frame, with no taper, no bulge and no curve in either of them, and the top of the post is closed off by a STRAIGHT HORIZONTAL EDGE. The camera sits below the top of the post, so THE FLAT SAWN TOP IS VISIBLE AS A FLAT PLANE: a four-sided figure with straight edges and sharp corners, its far edge a straight line running slightly downhill to the right, paler and greyer than the sides because rain stands on it. The post shows TWO FACES AT ONCE and they meet at ONE HARD VERTICAL EDGE that runs the full height of the post: the broad face turned to the camera fills about four fifths of the post's width and is mottled dark green and grey with moss and lichen, the narrow face beyond that edge fills the remaining fifth along the RIGHT and is markedly darker, and THE TONE DROPS IN ONE STEP AT THAT EDGE, light on one side of the line and dark on the other with no blend between them, so the edge reads as a line ruled down the post. Straight vertical saw grain runs down the broad face parallel to the two outer edges. This is the identical framing as the empty field at the head of the film: the post stands upright about a tenth of the frame width in from the LEFT EDGE with a narrow strip of field visible to the left of it, its top just below the top edge of the frame and its foot running out of the bottom edge, and on it now nothing but a loop of loose rusted wire hanging down its left face where a chain used to hang, the same flat low line of bare winter trees running level across the middle of the frame with one faint hazy low wooded ridge far behind them on the right almost lost in the haze, the same brown winter field of tufted dead grass running from the foot of the post to that tree line, the same even pale cool grey overcast sky filling the upper third, camera at the height a small box strapped to a trunk would sit [STYLE] Avoid: [NEG], curved top on the post, domed crown, rounded crown, elliptical top, curved silhouette, tapering post, cylindrical post, barrel-shaped post, shading wrapping continuously around the post, tone fading smoothly from the middle of the post out to both edges, post with no corner edge anywhere on it, smooth unbroken curved surface all round the post, round pole post, bare hillside filling the background, wooded slope rising close behind the field, post set in toward the middle of the frame, warm colour grade, mown pasture
+
+■ L146.png
+A plain unmarked pickup truck parked on the gravel shoulder of a public road at the edge of hardwood timber, empty and shut, with nobody near it and nobody in the frame. THE FRAME IS A WIDE VIEW OF THE ROAD AND NOT A VIEW OF THE TRUCK: the camera stands in the middle of the empty road at eye height, the full width of the carriageway with its painted centre line, both gravel shoulders and the timber standing over the road on both sides all fit inside the frame, the road runs away from the camera and bends out of sight, and THE TRUCK IS A SMALL PALE SHAPE FAR DOWN IT, no wider than a tenth of the frame width and no taller than a seventh of the frame height, far enough off that nothing smaller than a wing mirror can be made out on it. It is seen from behind and from slightly to one side, so the tailgate is turned away from the camera and foreshortened to a narrow sliver instead of facing the camera square on. At that size the tailgate is A SINGLE UNBROKEN SHEET OF WHITE PAINT running from one tail light to the other, the only shapes anywhere on it are the recessed handle at its centre and one horizontal press-line below that, and the lower right corner of the tailgate is bare white paint exactly like the rest of it. Empty wet road surface fills the whole foreground [STYLE] Avoid: [NEG], truck close to the camera, truck filling the frame, close view of the tailgate, badge on the tailgate, wordmark on the tailgate, chrome nameplate, manufacturer lettering, model name, raised letters on a panel, sticker, decal, licence plate, registration plate
+
+■ L236.png
+An invented woman in her fifties in a quilted work jacket standing at her own fence line, framed from the knees up and seen from the front at about twelve feet at eye height, the wire fence running away from her through the RIGHT half of the frame and a stubble field beyond it. Beside her, on the fence side of her, stands a weathered wooden fence post cut off flat across the top at about the height of her hip. THE HAND NEAREST THE FENCE IS ALREADY AT REST ON THE FLAT TOP OF THAT POST, not raised and not held in the air: the palm is laid flat down on the sawn top, the wrist is straight, the FOUR FINGERS LIE SIDE BY SIDE AND SEPARATE along the wood pointing away from her with the last joint of each one hooked down over the far edge of the post, EACH FINGER SHOWING ITS OWN NAIL AND CASTING ITS OWN SHADOW ON THE WOOD, and the thumb is down the near side of the post clearly apart from the fingers. Her other hand is in her jacket pocket. The barbed top strand of the fence is stapled to the side of the post well below her hand and she is not touching it. Her face is lit evenly by flat cloud with no expression put on for the camera, and the hand on the post is large enough in the frame and sharp enough to be read clearly [STYLE] Avoid: [NEG], raised hand, hand held up in the air, fingers splayed in the air, mitten hand, fingers fused into one mass, fingers merged, webbed fingers, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, blurred hand, hand out of focus, hand gripping barbed wire, fist
+
+■ L096.png
+A dark modern crew-cab pickup standing in a mown green grass field lane, SEEN HEAD-ON FROM IN FRONT OF IT so that the grille, the windscreen and both headlights face the camera and NO PART OF THE BACK OF THE VEHICLE IS ANYWHERE IN THE FRAME: no tailgate, no rear bumper and no tail light can be seen from this angle. BOTH CAB DOORS STAND WIDE OPEN, one on each side, as though the cab has just been gone through, and the bed behind them is empty. Nobody is in it and nobody is near it. It sits small in the frame, no wider than a tenth of the frame width, with the mown lane running away from the camera to it, a brown worked field on the left of the lane, a line of bare trees and rough grass on the right, low wooded hills faint in the far distance and a pale grey overcast sky, at eye height in flat light. The front of the vehicle is bare: the grille is a plain dark mesh panel WITH NOTHING MOUNTED AT ITS CENTRE, the bonnet above it is one unbroken sheet of dark paint, and the front bumper below it is a single plain bar with nothing fixed to it and nothing hanging from it, no oval, no emblem, no badge, no wordmark, no nameplate and no plate of any kind on any part of the vehicle [STYLE] Avoid: [NEG], rear of the vehicle, back of the truck, tailgate facing the camera, rear bumper, tail lights, licence plate, registration plate, number plate, plate mounted on a bumper, oval badge on the grille, manufacturer emblem, chrome nameplate, raised letters on a panel, sticker, decal, truck close to the camera, truck filling the frame, white truck, light-coloured truck, small old pickup, 1990s pickup
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: L170.png）で、**既存の同名ファイルに上書き**保存してください。
+保存先 H:\pd-media\assets\ai\openfields\
+長辺 3840px 以上・16:9・PNG。

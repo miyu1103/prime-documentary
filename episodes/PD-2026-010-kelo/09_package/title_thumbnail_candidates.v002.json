@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-010-kelo",
+  "slug": "kelo",
+  "revision": "v002",
+  "generated_at": "2026-06-21T19:03:33.946943+00:00",
+  "status": "selected_private_upload_candidate",
+  "selection": {
+    "selected_id": "A",
+    "selected_title": "YOUR HOME TAKEN?",
+    "selected_file": "episodes/PD-2026-010-kelo/09_package/thumbnail.selected.v002.png",
+    "selected_sha256": "5c1b8e6437980b12d6884b8342a896146bde1fcdb796fd0e6678e161a3f79f94",
+    "selected_background": "THUMB-02.png",
+    "reason": "Selected. Shorter and more readable than v001, while the enlarged brighter house/wrecking-ball image carries the Kelo-specific private-development threat."
+  },
+  "design_changes_from_v001": [
+    "Zoomed and brightened the symbolic house/wrecking-ball background so the image reads larger on mobile.",
+    "Shortened the headline from a long question to a two-line browse headline.",
+    "Restored stronger series continuity with blue eyebrow, gold rule, gold border, white/gold headline hierarchy, and PRIME DOCUMENTARY footer."
+  ],
+  "title_options": [
+    {
+      "id": "A",
+      "headlineTop": "YOUR HOME",
+      "headlineBottom": "TAKEN?",
+      "badge": "FOR A DEVELOPER",
+      "variant": "taken",
+      "score": 98,
+      "assessment": "Selected. Shorter and more readable than v001, while the enlarged brighter house/wrecking-ball image carries the Kelo-specific private-development threat.",
+      "file": "episodes/PD-2026-010-kelo/10_thumbnail/thumbnail.kelo_option_A.v002.png",
+      "sha256": "5c1b8e6437980b12d6884b8342a896146bde1fcdb796fd0e6678e161a3f79f94",
+      "background": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-02.png"
+    },
+    {
+      "id": "B",
+      "headlineTop": "HOME",
+      "headlineBottom": "FOR SALE?",
+      "badge": "BY THE GOVERNMENT",
+      "variant": "developer",
+      "score": 92,
+      "assessment": "Provocative but a little less precise than option A.",
+      "file": "episodes/PD-2026-010-kelo/10_thumbnail/thumbnail.kelo_option_B.v002.png",
+      "sha256": "bbda519cbfb9a503ce0fdfde1a63afceb4086209271197a416de9ff8005df88f",
+      "background": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-02.png"
+    },
+    {
+      "id": "C",
+      "headlineTop": "THE 5-4",
+      "headlineBottom": "TAKING",
+      "badge": "SUPREME COURT",
+      "variant": "vote",
+      "score": 91,
+      "assessment": "Very legal and compact, but less viewer-facing at browse size.",
+      "file": "episodes/PD-2026-010-kelo/10_thumbnail/thumbnail.kelo_option_C.v002.png",
+      "sha256": "c03292ea5588ad11ea2f0f9ac4945f1173c760f1e1178a7becc7d85aec0fac49",
+      "background": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-02.png"
+    }
+  ],
+  "contact_sheet": "episodes/PD-2026-010-kelo/10_thumbnail/thumbnail_contact_sheet.v002.jpg",
+  "rights_gate": {
+    "real_person_likeness": false,
+    "judge_likeness": false,
+    "deepfake": false,
+    "symbolic_ai_reconstruction": true,
+    "commercial_use_ok": true
+  }
+}

@@ -1,0 +1,1274 @@
+{
+  "episode_id": "PD-2026-010-kelo",
+  "slug": "kelo",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "89SQoRgAD7U",
+    "title": "Your Home for a Developer? The Kelo Supreme Court Case",
+    "url": "https://www.youtube.com/watch?v=89SQoRgAD7U",
+    "privacy": "public",
+    "views": 2
+  },
+  "shorts_existing": [
+    "short10"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short10": [
+      "The government can take your home, in perfect condition, and hand the land to a private developer.",
+      "In 2005, in New London, Connecticut, one woman's little pink house was perfectly fine.",
+      "She didn't want to sell.",
+      "But the city wanted offices and a hotel, for jobs and taxes.",
+      "The Constitution allows taking property for public use.",
+      "Was this?",
+      "In 2005, the Supreme Court said yes, five to four.",
+      "Her house was torn down.",
+      "But the project was never built.",
+      "The land sat empty for years.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-010-kelo\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "The Constitution allows takings \"for public use.\" Is handing your home to a private developer — for a plan that might create jobs — really a \"public use\"?",
+    "\"Public use,\" in other words, would be read as \"public purpose.\" One vote in the majority came with a caveat.",
+    "\"Passed a reform\" did not always mean \"actually protected homeowners\" .",
+    "In 2005, a woman's small pink house in Connecticut put that exact question in front of the Supreme Court .",
+    "So the case was never really about one pink house.",
+    "In 2005, the Supreme Court sided with the city.",
+    "Because the public reaction to Kelo did something American legal decisions almost never do: it united nearly everyone against it.",
+    "After the homes of Fort Trumbull were taken and demolished, the grand redevelopment was never built.",
+    "In 2009, Pfizer — the company whose arrival had justified the whole plan — closed its New London facility and left .",
+    "The neighborhood had been erased for a development that never came, to serve a company that did not stay.",
+    "The Supreme Court has never overturned it."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short117",
+      "angle": "Justice O'Connor's dissent is the part nobody quotes: after Kelo, any home could be taken for any private use that promised more tax revenue than the house did.",
+      "type": "C — a quotation or document (the dissent)",
+      "avoids": "The existing Short tells the pink-house story, the five to four vote and the empty lot. It never says what the four dissenters argued, or that the logic reaches any modest house that generates less revenue than what a developer would put there.",
+      "funnel_question_left_for_longform": "What the country did about the ruling afterward, and why forty state reforms changed less than people assume.",
+      "era": "2005 Washington, D.C.",
+      "loop": true,
+      "loop_join": "L5 leaves the majority rule in force, so L1 comes back as that rule applied to your own house rather than as a hypothetical.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "Your house produces less tax revenue than a hotel. After 2005, that alone could justify taking it.",
+          "delivery": "intense",
+          "source_lines": [
+            "A modest house almost always produces less tax revenue than offices or luxury condos. Under the broad reading, that gap alone could justify taking it"
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "The Court read for public use as public purpose. A development plan aimed at jobs and revenue counts, and courts should defer to the city.",
+          "delivery": "building",
+          "source_lines": [
+            "It said that a carefully considered economic-development plan, aimed at public benefits like jobs and revenue, qualifies as a public purpose — and that courts should largely defer to a city's judgment about what its community needs",
+            "\"Public use,\" in other words, would be read as \"public purpose.\""
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "Justice Sandra Day O'Connor wrote the main dissent. The government, she warned, could now take property from one private owner simply to give it to another who might use it more profitably.",
+          "delivery": "building",
+          "source_lines": [
+            "Justice Sandra Day O'Connor wrote the main dissent, and her warning was blunt.",
+            "Under this ruling, she argued, the government could now take property from one private owner simply to give it to another who might use it more profitably."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "The specter, she wrote, was that any home could be taken for any other private use that promised more taxes. That for public use had, in effect, been erased from the Constitution.",
+          "delivery": "intense",
+          "source_lines": [
+            "The specter, she wrote, was that any home could be taken for any other private use that promised more taxes — and that the words \"for public use\" had, in effect, been erased from the Constitution"
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "Justice Thomas wrote a separate dissent, arguing the Court had drifted far from the original meaning of the clause.",
+          "delivery": "building",
+          "source_lines": [
+            "Justice Thomas wrote a separate dissent arguing the Court had drifted far from the original meaning of the clause."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "One vote in the majority came with a caveat. Kennedy wrote separately that a merely pretextual public purpose would still be unconstitutional.",
+          "delivery": "building",
+          "source_lines": [
+            "One vote in the majority came with a caveat.",
+            "Justice Kennedy, who joined the Court's opinion, wrote separately to stress that a taking meant only to benefit a particular private party, with a merely pretextual public purpose, would still be unconstitutional"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "It was five to four, and unlike many such splits it did not fall along the usual lines.",
+          "delivery": "building",
+          "source_lines": [
+            "It was a 5-4 split, and unlike many such splits, it did not fall along the usual lines."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Her warning was a dissent, which means it never became the law. The majority's rule is the one still standing.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R10",
+          "subject": "a small clapboard cottage alone on a cleared lot at dusk",
+          "source": "GENERATE",
+          "prompt": "a small single storey clapboard cottage standing alone on a wide cleared lot at dusk with bare earth all around it, nobody in frame, lit ONLY by one porch light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "small cottage cleared land dusk"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M07",
+          "subject": "a hotel tower model dwarfing a tiny model house",
+          "source": "GENERATE",
+          "prompt": "an architect's scale model of a hotel tower standing on a dark table beside a tiny model of a single storey house, the tower dwarfing it completely, no lettering anywhere, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "architectural scale model table"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I06",
+          "subject": "a cleared lot of rubble where buildings stood",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty lot demolition rubble",
+          "bound_file": "D:\\pd-archive\\goods_in_motion\\pixabay_extra__v_242293__construction-volvo-excavator-machinery.mp4",
+          "bound_title": "hands counting polish zloty banknotes",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5981,
+          "motion": 2.649,
+          "luma": 95.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I06",
+          "subject": "a survey stake with a blank ribbon in a front yard",
+          "source": "GENERATE",
+          "prompt": "a wooden survey stake with a blank unprinted ribbon tied to it driven into the grass of a residential front yard at night, the house behind it dark, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "survey stake ground marker"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "I07",
+          "subject": "an empty tiered council chamber",
+          "source": "GENERATE",
+          "prompt": "an empty tiered municipal council chamber with rows of vacant seats facing a long bench, every nameplate worn blank, lit ONLY by one bank of overhead lights which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty council chamber seats"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "M07",
+          "subject": "a long empty conference table with chairs pushed in",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty conference room chairs table",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-47425__teacher_in_empty_classroom.mp4",
+          "bound_title": "laboratory glasswares on the white table",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4235,
+          "motion": 8.883,
+          "luma": 147.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "M07",
+          "subject": "a site plan opened flat with lines but no lettering",
+          "source": "GENERATE",
+          "prompt": "a large rolled site plan opened flat and weighted at the corners on a dark table, all drawn lines and blocks present but no lettering or annotation anywhere, lit ONLY by one pendant lamp which is switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "architectural plans unrolled table"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "M07",
+          "subject": "a scale model of a whole redeveloped waterfront",
+          "source": "GENERATE",
+          "prompt": "a scale model of an entire redeveloped waterfront district laid out on a dark table, every block built and every street empty, no lettering anywhere, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "city district scale model"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "I08",
+          "subject": "construction cranes standing over a skyline",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "construction site cranes skyline",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56292__construction_crane_against_sky.mp4",
+          "bound_title": "toronto skyline at twilight with cn tower",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4055,
+          "motion": 0.925,
+          "luma": 141.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "R08",
+          "subject": "an empty bench turned slightly away from the room",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench turned slightly away from a dark empty courtroom, the chair behind it vacant, lit ONLY by one shaft of light falling across its back from a fixture switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "judge bench turned empty courtroom"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "I02",
+          "subject": "a municipal building facade at night",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "city hall building facade night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23027__federal_building_columns_night.mp4",
+          "bound_title": "aerial footage of a city",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3938,
+          "motion": 2.834,
+          "luma": 133.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "hands writing with a fountain pen at a dark desk",
+          "source": "GENERATE",
+          "prompt": "macro of two hands writing with a fountain pen across a completely blank sheet at a dark desk, nothing visible above the wrists, lit ONLY by one banker's lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands writing fountain pen desk"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a pen moving across a blank page",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand writing with pen paper",
+          "bound_file": "D:\\pd-archive\\textures_backgrounds\\mixkit__45564__writing-on-a-school-notebook-with-a-blue-ink-pen.mp4",
+          "bound_title": "futuristic grid animation with light effects",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4099,
+          "motion": 19.35,
+          "luma": 58.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "R12",
+          "subject": "a front door key passed between two gloved hands",
+          "source": "GENERATE",
+          "prompt": "a single front door key being passed from one gloved hand to another across a dark polished counter, nothing visible above the wrists, lit ONLY by one overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "key passed between hands"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "M04",
+          "subject": "a deed folder slid across a conference table",
+          "source": "GENERATE",
+          "prompt": "a slim deed folder being slid across a long polished conference table, every page inside completely blank, only a hand at its edge, lit ONLY by one pendant which is switched on above the table, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "folder slid across table"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "M07",
+          "subject": "a handshake closing over a dark desk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "handshake across desk contract",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8244__contract_paperwork_signing.mp4",
+          "bound_title": "businessman doing a handshake",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4198,
+          "motion": 45.338,
+          "luma": 104.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R10",
+          "subject": "a row of porch lights burning down a dark street",
+          "source": "GENERATE",
+          "prompt": "a long row of ordinary porch lights burning one after another down a dark residential street seen from the far end, nobody outside, lit ONLY by those porch lights which are switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "row of porch lights street"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a bulldozer blade resting against a clapboard wall",
+          "source": "GENERATE",
+          "prompt": "the steel blade of a bulldozer resting against the clapboard wall of a small house at night, the machine itself in shadow, nobody in the cab, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "bulldozer blade against house"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a parchment page under glass rubbed back to bare fibre",
+          "source": "GENERATE",
+          "prompt": "an old parchment page displayed under glass with one passage rubbed completely away to bare fibre and no lettering anywhere on the sheet, lit ONLY by one display lamp which is switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "old parchment under glass display"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a wrecking ball swinging into a brick wall",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "wrecking ball demolition building",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-18688__broken_house_demolition.mp4",
+          "bound_title": "a timelapse video of moving cars at night near the four courts building",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.459,
+          "motion": 17.515,
+          "luma": 120.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "an empty foundation slab with weeds through the cracks",
+          "source": "GENERATE",
+          "prompt": "the bare concrete foundation slab of a demolished house with weeds pushing through its cracks, the outline of the rooms still readable in the concrete, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "concrete foundation slab overgrown"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "a porch light still burning above a doorway with no house left",
+          "source": "GENERATE",
+          "prompt": "a single porch light still burning above a door frame that stands alone on a cleared lot with no house left around it, nobody in frame, lit ONLY by that porch light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door frame standing alone lot"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01: a small clapboard cottage alone on a cleared lot at dusk",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "small cottage cleared land dusk"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U05",
+          "subject": "a brass compass lying on a blank chart",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "brass compass resting on a blank chart",
+          "bound_file": "D:\\pd-archive\\hands_and_transactions\\pixabay_extra__v_55686__dumbbell-weight-sports-equipment-equipment-device-support-br.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y03",
+          "subject": "a small boat drifting away from a dock",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "small boat drifting away from a dock",
+          "bound_file": "D:\\pd-archive\\small_town\\pixabay_extra__v_203974__boats-travel-journey-road-trip-coast-ocean-beach-trip-vacati.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y05",
+          "subject": "a bundle of papers tied shut with string",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "bundle of papers tied with string",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41352__open_briefcase_of_cash.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U06",
+          "subject": "one chair turned away from a long table",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "single chair turned away from long table",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2293__empty_stadium_seats.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U15",
+          "subject": "a stone boundary marker set in a grass field",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stone boundary marker in a grass field",
+          "bound_file": "D:\\pd-archive\\newspapers_printing\\pixabay_extra__v_22868__shishi-deer-scarer-blue-screen-bamboo-green-tibetan-bowl-gra.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "R01",
+          "subject": "a red traffic light burning above an intersection",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "red traffic light above an intersection",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54174__gas_station_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U02",
+          "subject": "a wooden wedge holding a door open",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "wooden wedge holding a door open",
+          "bound_file": "D:\\pd-archive\\government_buildings\\pixabay_extra__v_65860__stairs-door-wall-gate-building-architecture-house-entrance-d.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "a metal gate latch left half open",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "metal gate latch left half open",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10463__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R05",
+          "subject": "scaffolding propping up a building facade from behind",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "scaffolding propping up a building facade"
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "a hand dropping a card into a ballot box",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand dropping a card into ballot box",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16213__ballot_box_voting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.322
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W07",
+          "subject": "stones set out in a group of five and a group of four",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stones grouped five and four on wood",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63935__bread_line_vintage_depression.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U04",
+          "subject": "a path splitting into two directions in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "path splitting in two directions daylight",
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\pixabay_extra__v_96719__frame-black-design-graphic-symbol-art-blank-sign-pattern-ico.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W11",
+          "subject": "a thick rope pulled taut from both ends",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "thick rope pulled taut from both ends",
+          "bound_file": "D:\\pd-archive\\science_tech\\pixabay_extra__v_145640__horseshoe-hoof-filing-hooves-horse-stables-farrier-nails-too.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "M03",
+          "subject": "a stack of five coins beside a stack of four",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "five coins stacked beside four coins",
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_126332__bank-business-coins-cash-dollar-economy-autumnal-finance-inv.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "a long aisle between two tall rows of shelving",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "long aisle between two tall shelf rows",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2216__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "erased from the Constitution",
+          "style": "punch",
+          "words": [
+            "PUBLIC USE",
+            "ERASED"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L7",
+          "anchor": "five to four",
+          "style": "number",
+          "big": "5-4",
+          "bigSize": 260,
+          "label": "NOT THE USUAL LINES",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "b"
+        }
+      ]
+    },
+    {
+      "short_id": "short118",
+      "angle": "Roughly forty states rewrote their eminent domain laws after Kelo and many of those reforms were criticised as hollow, while the company whose arrival justified the whole plan closed up and left in 2009.",
+      "type": "B — a number/stakes gap (forty reform laws, one departed company)",
+      "avoids": "The existing Short ends at 'the project was never built, the land sat empty'. It never mentions the reform wave, how weak those reforms were said to be, or that Pfizer left New London four years after the homes came down.",
+      "funnel_question_left_for_longform": "What happened to Susette Kelo's pink house itself.",
+      "era": "2005 to 2009, New London, Connecticut",
+      "loop": true,
+      "loop_join": "L5 asks what anyone did about it and L1 answers immediately with the legislatures that rushed in and the laws that fell short.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "Dozens of state legislatures rushed to fix this. Many of those laws were criticized as hollow.",
+          "delivery": "intense",
+          "source_lines": [
+            "In the years after Kelo, by the Institute for Justice's count, roughly forty or more states passed new laws or constitutional amendments restricting the use of eminent domain for economic development.",
+            "many of these reforms were later criticized as weak, full of loopholes that left the core power largely intact"
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "The ruling set off one of the largest backlashes to any modern Supreme Court decision, and a rare bipartisan one. Legislatures responded fast.",
+          "delivery": "building",
+          "source_lines": [
+            "The ruling set off one of the largest popular backlashes to any modern Supreme Court decision — and a rare bipartisan one.",
+            "And legislatures responded."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "Roughly forty or more states passed new laws restricting eminent domain for economic development. But many were later criticized as weak, full of loopholes.",
+          "delivery": "building",
+          "source_lines": [
+            "In the years after Kelo, by the Institute for Justice's count, roughly forty or more states passed new laws or constitutional amendments restricting the use of eminent domain for economic development.",
+            "many of these reforms were later criticized as weak, full of loopholes that left the core power largely intact"
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "In 2009, Pfizer, the company whose arrival had justified the whole plan, closed its New London facility and left. A neighborhood erased for a development that never came, to serve a company that did not stay.",
+          "delivery": "intense",
+          "source_lines": [
+            "In 2009, Pfizer — the company whose arrival had justified the whole plan — closed its New London facility and left",
+            "The neighborhood had been erased for a development that never came, to serve a company that did not stay."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "The city never claimed Fort Trumbull was a slum, and the Court did not say the homes had to be blighted.",
+          "delivery": "building",
+          "source_lines": [
+            "The city was not claiming Fort Trumbull was a slum.",
+            "The Court did not say the homes had to be blighted."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Some families had lived there for generations. They were paid market value, which does not buy back a lifetime in one place.",
+          "delivery": "building",
+          "source_lines": [
+            "Some families had been in Fort Trumbull for generations.",
+            "They were paid the market value of their homes, as the Constitution requires — but market value does not buy back the place you have lived your whole life, or the neighbors who scatter once the bulldozers arrive."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "For a long time the most famous use of the bulldozed land was as a place to dump storm debris.",
+          "delivery": "building",
+          "source_lines": [
+            "For a long time, the most famous use of the bulldozed land was as a place to dump storm debris."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "The houses were gone, the company was gone, and the ruling still stood. Which raises the obvious question of what anyone did about it.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I08",
+          "subject": "a state capitol dome against a black sky",
+          "source": "GENERATE",
+          "prompt": "a state capitol dome standing against a black night sky, ribs and lantern in hard relief, no inscriptions legible anywhere, lit ONLY by one uplight which is switched on at its base, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "capitol dome night uplight"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I03",
+          "subject": "a clerk's bill box overflowing with blank folded papers",
+          "source": "GENERATE",
+          "prompt": "a wooden clerk's box on a counter overflowing with folded papers, every sheet worn completely blank, nobody behind the counter, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "overflowing box of papers counter"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I08",
+          "subject": "a capitol building standing against a dark sky",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "state capitol building dome",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16370__capitol_dome_dusk.mp4",
+          "bound_title": "united states supreme court building in dc",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3816,
+          "motion": 6.596,
+          "luma": 125.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "Y05",
+          "subject": "a thick statute volume with its pages hollowed into a cavity",
+          "source": "GENERATE",
+          "prompt": "a thick bound statute standing open on a dark desk with its pages hollowed out into an empty rectangular cavity, no lettering anywhere on the remaining paper, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hollowed out book cavity desk"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "I03",
+          "subject": "unopened blank envelopes spilling across an office floor",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "letters envelopes mail pile",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-2577__paper_scraps_flying.mp4",
+          "bound_title": "girl picking up mail at the door",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4138,
+          "motion": 17.878,
+          "luma": 106.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "I07",
+          "subject": "a legislative chamber with rows of empty desks",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "legislature chamber empty desks",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14510__courtroom_empty_wide.mp4",
+          "bound_title": "an empty cell of a prison",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4611,
+          "motion": 25.044,
+          "luma": 57.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "I03",
+          "subject": "a telephone switchboard with every lamp burning",
+          "source": "GENERATE",
+          "prompt": "an old telephone switchboard in a dark office with every call lamp burning at once and cords hanging slack, nobody at the position, lit ONLY by those switchboard lamps which are switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "telephone switchboard lights office"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U10",
+          "subject": "two hands from opposite sides pushing the same file",
+          "source": "GENERATE",
+          "prompt": "two hands reaching in from opposite sides of frame and pushing the same closed file across a dark table toward the centre, nothing visible above the wrists, every label on the file worn blank, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "two hands pushing file table"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U07",
+          "subject": "a tall stack of documents on a dark desk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stack of paper documents desk",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63076__old_ledger_book.mp4",
+          "bound_title": "video of a money counter machine",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.481,
+          "motion": 23.18,
+          "luma": 100.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I02",
+          "subject": "a corridor of legislature offices with blank nameplates",
+          "source": "GENERATE",
+          "prompt": "a long corridor of identical closed legislature office doors with every nameplate worn completely blank, lit ONLY by one row of ceiling fixtures which are switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "government corridor identical doors"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U05",
+          "subject": "a blank faced chamber clock with hands blurred by speed",
+          "source": "GENERATE",
+          "prompt": "a large round chamber clock with a completely blank featureless dial and its hands smeared by motion blur, no numerals anywhere, lit ONLY by one fixture which is switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "large wall clock blurred hands"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U15",
+          "subject": "a US map with about forty states glowing and the rest black",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States on which roughly forty state outlines glow as thin bright seams while the remainder stay black, absolutely no place names or lettering anywhere, lit ONLY by that internal glow which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "united states map states glowing"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U15",
+          "subject": "a wall map of the United States in dim light",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "map of united states wall",
+          "bound_file": "D:\\pd-archive\\vintage_ads_cartoons\\ia__baileys-comets__bailey-s-comets-cartoon.mp4",
+          "bound_title": "men taking notes in front of a computer",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.388,
+          "motion": 14.428,
+          "luma": 123.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "I04",
+          "subject": "a chain link fence with a wide gap cut through it",
+          "source": "GENERATE",
+          "prompt": "a chain link fence at night with a wide section cut clean out of it, the cut wire ends bright where the light catches them, nobody in frame, lit ONLY by one yard light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cut chain link fence hole"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "I06",
+          "subject": "a sheet punched through with holes on a dark desk",
+          "source": "GENERATE",
+          "prompt": "one sheet of paper riddled with punched holes lying on a dark desk with light coming up through every hole, no lettering anywhere on the sheet, lit ONLY by one lamp which is switched on beneath it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper with holes backlit desk"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "I03",
+          "subject": "paper feeding into a shredder",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "paper shredder shredding documents",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23982__money_counting_machine.mp4",
+          "bound_title": "a person holding the documents",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4292,
+          "motion": 19.945,
+          "luma": 158.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "I08",
+          "subject": "a corporate research block with every window dark",
+          "source": "GENERATE",
+          "prompt": "a large corporate research building standing at dusk with every window dark and blank, no lettering anywhere on the facade, lit ONLY by one security light which is switched on above the entrance, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "corporate building dark windows dusk"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "M06",
+          "subject": "an empty corporate car park with painted bays and no cars",
+          "source": "GENERATE",
+          "prompt": "a wide corporate car park at night with painted bays and not one vehicle in them, weeds in the expansion joints, lit ONLY by one pole light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty car park painted bays"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M06",
+          "subject": "an empty parking area under pole lights at night",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty parking lot night lights",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21499__empty_parking_garage.mp4",
+          "bound_title": "super fast footage of vehicle traveling at night",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3931,
+          "motion": 4.582,
+          "luma": 73.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a cleared block of graded earth with kerbs still visible",
+          "source": "GENERATE",
+          "prompt": "a cleared city block of bare graded earth where a neighbourhood stood, kerbs and driveway aprons still running through the dirt, nobody in frame, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cleared city block bare earth"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a fire hydrant standing alone in a field of weeds",
+          "source": "GENERATE",
+          "prompt": "a single fire hydrant standing alone in a wide field of waist high weeds where houses once stood, no lettering on the casting, lit ONLY by one street lamp which is switched on behind it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "fire hydrant overgrown field"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a concrete front step leading up to nothing",
+          "source": "GENERATE",
+          "prompt": "one concrete front step and stoop standing in long grass at dusk leading up to a door that is no longer there, nobody in frame, lit ONLY by one street lamp which is switched on at the kerb, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2005 to 2009, New London, Connecticut, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "concrete steps overgrown grass"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01: a state capitol dome against a black sky",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "capitol dome night uplight"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a painted front porch with a rocking chair",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "painted front porch with rocking chair",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1676__suburban_house_exterior_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "sunlight on the front of a clapboard house",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "sunlit clapboard house front daytime",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22906__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "a garden hose coiled beside stone steps",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "garden hose coiled beside stone steps",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53228__fountain_pen_signature.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "a screen door swinging open onto a bright porch",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "screen door opening onto bright porch",
+          "bound_file": "D:\\pd-archive\\prison_jail\\pixabay_extra__v_12284__autumn-maple-window-golden-autumn-maple-leaf-leaves-golden-m.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W11",
+          "subject": "two lawn chairs standing on a mown lawn",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "two lawn chairs on a mown lawn",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-48274__farmer_in_field_at_dawn.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y01",
+          "subject": "a wooden swing hanging from a tree branch",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "wooden swing hanging from a tree",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56297__construction_crane_against_sky.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "hands wrapping plates into a cardboard box",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands packing plates into cardboard box",
+          "bound_file": "D:\\pd-archive\\bench_to_line\\pixabay_extra__v_74506__machine-equipment-industry-factory-business-packaging-indust.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M02",
+          "subject": "banknotes counted out into an open palm",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "banknotes counted into an open palm",
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_60197__money-cash-bills-currency-finance.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R12",
+          "subject": "a doorframe marked with pencil height lines",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "doorframe with pencil height marks",
+          "bound_file": "E:\\pd-archive\\war_history\\nara__37236-14886638__training-women-for-war-productions.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "a moving van standing with its ramp down",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "moving van with ramp down daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56933__highway_underpass.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "a heap of broken tree branches on bare ground",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "heap of broken tree branches on ground",
+          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_29715__forest-floor-detritus-leaves-dirt-mud-autumn-nature-moss-moo.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R01",
+          "subject": "a dump truck tipping a load of rubble",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "dump truck tipping load of rubble",
+          "bound_file": "D:\\pd-archive\\goods_in_motion\\pixabay_extra__v_118612__road-building-excavator-road-repair-ukraine-workers.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.322
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W05",
+          "subject": "an excavator arm pushing a pile of brush",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "excavator arm pushing pile of brush",
+          "bound_file": "D:\\pd-archive\\market_machinery\\mixkit__48993__opencast-mining-quarry-with-lots-of-machinery-at-work.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y03",
+          "subject": "puddles standing across a rutted dirt lot",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "puddles across a rutted dirt lot",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-3575__ash_falling.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.28
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "a lone utility pole standing in an empty lot",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "lone utility pole standing in empty lot",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10716__snowy_street_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "suffix": "a",
+          "line": "L4",
+          "anchor": "In 2009",
+          "style": "number",
+          "big": "2009",
+          "bigSize": 260,
+          "label": "PFIZER LEFT",
+          "labelSize": 84,
+          "seconds": 1.95
+        },
+        {
+          "suffix": "b",
+          "line": "L7",
+          "anchor": "storm debris",
+          "style": "punch",
+          "words": [
+            "A DUMP FOR",
+            "STORM DEBRIS"
+          ],
+          "bigSize": 108,
+          "seconds": 2.5
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

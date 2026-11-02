@@ -1,0 +1,89 @@
+EP69 hyatt — 画像発注 バッチA 6/8（15枚）
+区分: ACT_4, ACT_5　／　人物レーン 3枚
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, American Midwest between 1978 and 1988, tungsten interiors and flat midday daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous surfaces, painted steel, vellum, brass, cut stone, plaster and travertine, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, dimension callouts, drawing title block, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, collapsed building, collapsing structure, rubble, debris, wreckage, ruined interior, rescue worker, ambulance, stretcher, injured person, blood, body, casualty, funeral, firefighter, hospital, crowded hotel lobby, packed function room, crowd of people indoors, courtroom interior, gavel, judge's bench, scales of justice, hourglass, a handshake, police officer, uniform, handcuffs, prison bars, mobile phone, smartphone, laptop, flat-panel monitor, LED work lamp, cordless power tool, hi-vis safety vest, modern safety helmet, CAD screen, car built after 1990, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いているプロンプトがあります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+★[HSTYLE] で始まるプロンプトは人物レーンです。[HSTYLE] の中身はプロンプト本文の一部として
+　そのまま使ってください（置換不要）。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・寸法・手書き・署名・図面のタイトル欄を一切描かない
+・**崩落・瓦礫・救助・負傷者・遺体・満員のロビーを一切描かない**
+・**1978〜1988年のアメリカ中西部。**携帯電話・ノートPC・薄型モニタ・LED投光器・
+　充電式電動工具・蛍光色の安全ベスト・1990年以降の車を描かない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+・**「The same …」で始まるプロンプト（H004 / H051 / H053 / H054）は、直前の1枚と
+　同じ部屋・同じ画角・同じレンズでなければなりません。**別々に生成すると必ずずれます。
+　ずれた場合は作り直さず、元の1枚（H003 / H048 / H049）を色調整だけで作り直してください。
+
+──────── プロンプト ────────
+
+■ H076.png
+A stack of six thick bound technical reports with plain uniform card covers lying flat on a desk under a lamp, seen close from a low three-quarter angle so the block of paper edges fills the middle of the frame. Nothing is printed on any cover or spine Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H077.png
+A single thick government report lying closed on a wooden desk under a work lamp, its cover plain uncoated card with no printing on it at all, the edges of the paper block slightly uneven, a pencil lying across the corner. Warm lamp light, deep shadow beyond Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H078.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. Two adult hands turning the pages of a thick bound report open flat on a desk, forearms in plain shirt sleeves entering from the bottom of the frame, no head or body visible, seen from above at a steep angle. The pages are blank paper. Warm lamp light from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H079.png
+A slide rule and a pad of plain paper lying on a wooden desk beside a heavy mug, seen from directly above in warm lamp light, a pencil across the pad. The scales of the slide rule are turned away and unreadable, and the pad is completely blank Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H080.png
+A large blackboard on an office wall, wiped clean but carrying the faint ghosting of old chalk, seen straight on so it fills the frame, a wooden chalk rail along the bottom with two short pieces of chalk and a felt eraser on it. Nothing is written on the board. Cold daylight from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H081.png
+A steel rod held upright in the jaws of a heavy bench vice, seen close from a low angle against a dark workshop, one hard light from the right catching the thread and the top edge of the vice. Iron filings on the bench top below. Nothing else in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H082.png
+A plain rectangular meeting room with one long table down the middle, a single microphone on a short stand at the near end of it, and a dozen empty chairs pushed in around it. Grey carpet, plain walls, cold daylight from a window on the left. Nobody in the frame and nothing on the table but the microphone Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H083.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. A man in his sixties in a plain dark jacket and open-collared shirt seated alone at the end of a long table in a plain room, framed from the chest up and turned three-quarters to the camera, hands folded in front of him, an ordinary composed expression, looking slightly away from the lens. Cold window light from the left. Nothing on the table in front of him Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H084.png
+Four rows of empty stacking chairs facing a long table at the far end of a plain hearing room, seen from behind the back row at seated height, cold flat light from windows down one side, grey carpet and plain walls. Every chair is empty and nobody is in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H085.png
+A large wall calendar hanging on a plain painted wall, seen slightly from below with a long lens so the printed grid is soft and completely unreadable, warm light from a lamp out of frame to the right. No characters of any kind are legible anywhere on it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H086.png
+The front of a large American civic building in pale limestone, seen from low on the steps at midday, six plain square piers carrying a heavy cornice, deep shadow between them, a flat bright sky above. Sober and undecorated. No signage, no inscription, no lettering anywhere on the stone Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H087.png
+A pair of heavy bronze doors set in a stone opening, closed, seen straight on and filling most of the frame, shallow panelled relief on the metal, a dark green patina in the recesses and a polished line along the edges where hands have passed. No words, no numbers and no emblem anywhere on the doors Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H088.png
+[HSTYLE] photographic, 35mm, natural light, real adults in ordinary late-1970s and 1980s American working clothes, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens. One adult hand resting on a polished brass handrail on a flight of stone stairs, seen close from below and behind so only the hand, the wrist and a dark coat cuff are in frame, the rail running away out of focus up the steps. Cold daylight from a high window Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H089.png
+A stone colonnade seen along its length in hard raking afternoon light, the columns throwing a regular rhythm of deep black shadows across a pale stone floor, the far end of the run falling into darkness. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ H090.png
+A polished stone floor in a large public hall with one long shaft of window light lying across it, seen from standing height at a low angle so the floor runs away and the light picks up the veining in the stone. The rest of the hall is in cool shadow. Nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: H001.png）で保存してください。
+保存先 H:\pd-media\assets\ai\hyatt\
+長辺 3840px 以上・16:9・PNG。

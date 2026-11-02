@@ -1,0 +1,24 @@
+{
+  "schema_version": "ae_placement.v001",
+  "episode_id": "PD-2026-077-keybridge",
+  "slug": "keybridge",
+  "source": "docs/AE_KEYBRIDGE_PLACEMENT.v001.md section 1",
+  "notes": [
+    "atSec is BODY-RELATIVE seconds -- the same clock cuts[].start uses. keybridge declares",
+    "leadSeconds 0, so these are also absolute inside <Sequence name=\"Body\">.",
+    "ORDERING CONSTRAINT: ae013 (presumption of innocence, script :267) MUST precede ae010",
+    "(the charges, script :271). That is the script's own order and the legally careful one.",
+    "If a timing tweak ever moves either card, this ordering is what has to survive.",
+    "keybridge_ae003 (26 MARCH 2024) is deliberately UNPLACED: the string '26 March' does not",
+    "occur in the script and every date sentence in the narration is the twenty-fifth, so",
+    "placing it would put two dates in the eye and the ear inside one second. See section 2 of",
+    "the placement doc for the three ways out; option (a), hold it, is what this file does."
+  ],
+  "beats": [
+    {"id": "keybridge_ae001", "kind": "hero_number", "atSec": 4.0, "durSec": 8.0, "script": "03_script/script.en.v001.md:9", "snap": "+0.00"},
+    {"id": "keybridge_ae005", "kind": "hero_number", "atSec": 195.17, "durSec": 8.0, "script": "03_script/script.en.v001.md:71", "snap": "-0.03"},
+    {"id": "keybridge_ae013", "kind": "quote_card", "atSec": 875.86, "durSec": 10.0, "script": "03_script/script.en.v001.md:267", "snap": "+0.18"},
+    {"id": "keybridge_ae010", "kind": "list_build", "atSec": 909.58, "durSec": 10.0, "script": "03_script/script.en.v001.md:271", "snap": "-0.04"},
+    {"id": "keybridge_ae012", "kind": "hero_number", "atSec": 1238.56, "durSec": 8.0, "script": "03_script/script.en.v001.md:352", "snap": "+0.00"}
+  ]
+}

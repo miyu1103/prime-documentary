@@ -1,0 +1,56 @@
+EP80_concordia — 画像発注 バッチ 14/23（8枚）
+区分: ACT_3 / ACT_4
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, airline livery, airline tail markings, ship funnel markings, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) N105.png
+   [N105]  flags: 
+   A ship's bridge with every screen alight and no one at the console, windows black
+
+2) N106.png
+   [N106]  flags: 
+   A ship's chart table with the chart lamp still burning over an abandoned chart, dividers left open
+
+3) N107.png
+   [N107]  flags: 
+   A panelled ship's corridor lit only by emergency lamps, doors closed along both sides
+
+4) N108.png
+   [N108]  flags: 
+   An empty cruise ship cabin lit by a single bright torch beam across the bed, the rest dark
+
+5) N109.png
+   [N109]  flags: 
+   A ship's laundry or service space in bright fluorescent light, trolleys and racks, no one present
+
+6) N110.png
+   [N110]  flags: 
+   A galley aboard ship in brilliant stainless-steel light, pans and counters, empty
+
+7) N111.png
+   [N111]  flags: 
+   An engineering render of a ship's watertight subdivision, two compartments picked out in bright colour against a dark hull profile, edge-lit, no lettering
+
+8) N112.png
+   [N112]  flags: 
+   A naval architecture model of a hull section on a bright laboratory bench, clean even lighting

@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "case_film_mux_receipt",
+  "episode_id": "PD-2026-033-tyler",
+  "receipt_version": "v001",
+  "generator": "scripts/build_case_film_mux.py",
+  "provenance_ref": {
+    "path": "episodes\\PD-2026-033-tyler\\06_audio\\audio_provenance.v001.json",
+    "sha256": "14597414f81d0f03f7fd6000ee75a22eff1bebe08c2c9f9d8c0b7558070f3c7c",
+    "mix_sha256": "bfb7d9c29148c8c34555e7dbd304ba82ec807fff0c95901643172c751f36091c"
+  },
+  "input_video": {
+    "path": "remotion\\out\\tyler_film_v001.mp4",
+    "sha256": "9895cb42b3b8d50e844283926b362f6a115afb242a165efebb33aafce877926c"
+  },
+  "mix_audio": {
+    "path": "H:\\pd-media\\episodes\\PD-2026-033-tyler\\08_edit\\audio\\PD-2026-033-tyler_film_audio_v001.wav",
+    "source": "provenance.mix.render_audio_copy",
+    "sha256_provenance": "bfb7d9c29148c8c34555e7dbd304ba82ec807fff0c95901643172c751f36091c",
+    "sha256_on_disk": "bfb7d9c29148c8c34555e7dbd304ba82ec807fff0c95901643172c751f36091c",
+    "sha256_stamped": "bfb7d9c29148c8c34555e7dbd304ba82ec807fff0c95901643172c751f36091c"
+  },
+  "output": {
+    "path": "remotion\\out\\PD-2026-033-tyler_film.muxed.v001.mp4",
+    "sha256": "234429f5b3d18129ef418aa6b06e219b6c0f2d448299e38f17265d2f60ebab2a",
+    "audio_codec": "aac",
+    "audio_bitrate": "320k",
+    "sample_rate": 48000,
+    "channels": 2,
+    "sole_audio_track": true
+  },
+  "stamp": {
+    "tag": "audio_mix_sha256",
+    "value": "bfb7d9c29148c8c34555e7dbd304ba82ec807fff0c95901643172c751f36091c",
+    "readback": "bfb7d9c29148c8c34555e7dbd304ba82ec807fff0c95901643172c751f36091c",
+    "verified": true,
+    "comment": "PD case film final mux; sole audio = built 4-layer mix; audio_mix_sha256=bfb7d9c29148c8c34555e7dbd304ba82ec807fff0c95901643172c751f36091c; generator=scripts/build_case_film_mux.py",
+    "note": "check_final_acceptance can read format_tags.audio_mix_sha256 off the render and confirm it equals audio_provenance.mix.sha256 -> this mix reached this render."
+  },
+  "ffmpeg": {
+    "command": "ffmpeg -y -i \"remotion\\out\\tyler_film_v001.mp4\" -i \"H:\\pd-media\\episodes\\PD-2026-033-tyler\\08_edit\\audio\\PD-2026-033-tyler_film_audio_v001.wav\" -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 320k -ar 48000 -ac 2 -metadata audio_mix_sha256=bfb7d9c29148c8c34555e7dbd304ba82ec807fff0c95901643172c751f36091c -metadata \"comment=PD case film final mux; sole audio = built 4-layer mix; audio_mix_sha256=bfb7d9c29148c8c34555e7dbd304ba82ec807fff0c95901643172c751f36091c; generator=scripts/build_case_film_mux.py\" -movflags +faststart+use_metadata_tags -shortest \"remotion\\out\\PD-2026-033-tyler_film.muxed.v001.mp4\"",
+    "mux_map": "-map 0:v:0 -map 1:a:0 (mix WAV is the SOLE audio; video's own audio dropped)"
+  },
+  "deterministic": true,
+  "side_effects": {
+    "external_cost_usd": 0,
+    "external_calls": [],
+    "wrote_files": [
+      "episodes\\PD-2026-033-tyler\\06_audio\\mux_receipt.v001.json",
+      "remotion\\out\\PD-2026-033-tyler_film.muxed.v001.mp4"
+    ],
+    "ran_ffmpeg": true
+  }
+}

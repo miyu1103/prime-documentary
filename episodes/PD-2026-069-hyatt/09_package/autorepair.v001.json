@@ -1,0 +1,30 @@
+{
+ "schema_version": "1.0.0",
+ "tool": "pd_autorepair.py",
+ "slug": "hyatt",
+ "generated_at": "2026-08-23T07:27:55.964531+00:00",
+ "dry_run": false,
+ "forecast_will_fail": [
+  "arc_nonrepeat",
+  "padding",
+  "animation_mix",
+  "script_length",
+  "retention_cadence",
+  "preflight_receipt"
+ ],
+ "repaired": [
+  {
+   "check": "preflight_receipt",
+   "done": true,
+   "what": "wrote preflight_receipt.v001.json",
+   "command": "py -3.11 C:\\Users\\aab15\\Documents\\prime-documentary\\scripts\\preflight_render_gate.py --ep PD-2026-069-hyatt"
+  }
+ ],
+ "needs_human": [
+  "arc_nonrepeat (no repair rule yet)",
+  "padding (no repair rule yet)",
+  "animation_mix (no repair rule yet)",
+  "script_length (no repair rule yet)",
+  "retention_cadence (no repair rule yet)"
+ ]
+}

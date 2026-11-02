@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-015-theranos",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "Theranos was a blood-testing startup founded in 2003 by Elizabeth Holmes, a Stanford dropout, which claimed its proprietary 'Edison' device could run many laboratory tests from a single finger-prick drop of blood.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0003",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "SEC press release (claims)",
+        "Overview: founding, Edison, finger-prick"
+      ],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "Theranos, founded in 2003 by Stanford dropout Elizabeth Holmes, claimed it could run many tests from one drop of blood."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2003-2018",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Founding + the core claim."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "At its peak around 2014, Theranos was valued at roughly $9 billion, briefly making Holmes a paper billionaire; it partnered with Walgreens to offer testing in some stores (a limited rollout, mostly in Arizona), and its board included prominent public figures.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0003",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "~$9B valuation",
+        "Walgreens partnership",
+        "board"
+      ],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "At its peak it was valued near $9 billion; it put testing in some Walgreens stores and had a prominent board."
+      ],
+      "prohibited_wording": [
+        "Theranos tests were in Walgreens nationwide."
+      ],
+      "temporal_scope": "2013-2015",
+      "geographic_scope": "United States",
+      "units": "USD",
+      "status": "approved",
+      "notes": "Walgreens rollout was limited (mostly Arizona) — do not imply nationwide."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "In October 2015, a Wall Street Journal investigation by reporter John Carreyrou reported that Theranos's technology did not work as claimed and that many tests were actually run on modified third-party commercial machines, with accuracy problems.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "WSJ/Carreyrou Oct 2015 investigation; third-party analyzers"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "In 2015 a Wall Street Journal investigation reported the technology did not work as claimed and that tests were run on other companies' machines."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2015",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The exposé; documented."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "Theranos collapsed and dissolved in 2018; the SEC charged Holmes with fraud in March 2018, and she settled the civil charges without admitting or denying wrongdoing, agreeing to a penalty and a ban from leading a public company.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "SEC 2018 charges and settlement terms"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "The company collapsed in 2018; the SEC charged Holmes with fraud, and she settled the civil case without admitting wrongdoing."
+      ],
+      "prohibited_wording": [
+        "The SEC settlement was an admission of guilt."
+      ],
+      "temporal_scope": "2018",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "SEC civil charge + no-admission settlement; distinct from the later criminal case."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "In the federal criminal case United States v. Holmes, on January 3, 2022 a jury convicted Elizabeth Holmes on four counts of fraud against investors — one count of conspiracy to commit wire fraud and three counts of wire fraud.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "DOJ sentencing release (convictions)",
+        "Verdict (count-by-count)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In January 2022 a jury convicted Holmes on four counts of defrauding investors — one conspiracy and three wire-fraud counts."
+      ],
+      "prohibited_wording": [
+        "She was convicted on all counts.",
+        "She was convicted of defrauding patients."
+      ],
+      "temporal_scope": "2022",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "STATE AS FACT: four investor-fraud convictions (jury verdict; upheld on appeal)."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "The same jury acquitted Holmes on the four counts related to patients (found her not guilty on those), and could not reach a verdict on three additional investor counts, on which a mistrial was declared.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Verdict split (acquittals + hung counts)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The jury found her not guilty on the four patient counts and could not agree on three other investor counts."
+      ],
+      "prohibited_wording": [
+        "She was found guilty of harming patients.",
+        "The acquittals proved the technology worked."
+      ],
+      "temporal_scope": "2022",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "PRECISION: 'acquitted' on patient counts; 'no verdict/mistrial' on 3 — NEVER 'guilty'. Acquittal != exoneration of conduct."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "In November 2022, Holmes was sentenced to 135 months — about eleven years and three months — in federal prison, and she reported to prison in 2023.",
+      "importance": "major",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "DOJ sentencing release (135 months)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "She was sentenced to about eleven years and three months in prison."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2022-2023",
+      "geographic_scope": "United States",
+      "units": "months",
+      "status": "approved",
+      "notes": "135 months imposed. (A later good-conduct reduction is optional context, not required.)"
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "Ramesh 'Sunny' Balwani, Theranos's former president and chief operating officer and Holmes's former partner, was separately convicted in 2022 on all twelve counts — including the patient-related counts — and sentenced to about 155 months, nearly thirteen years.",
+      "importance": "supporting",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "DOJ Balwani sentencing release"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Theranos's former president, Sunny Balwani, was convicted on all twelve counts, including the patient counts, and sentenced to nearly thirteen years."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2022",
+      "geographic_scope": "United States",
+      "units": "months",
+      "status": "approved",
+      "notes": "Balwani convicted on patient counts (unlike Holmes); ~155 months."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "Criminal fraud requires proof of intent to deceive, not merely optimism, ambition, or business failure; the split verdict — convicting Holmes of defrauding investors but acquitting her on the patient counts — illustrates the line the law draws between bold salesmanship and a crime.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Legal standard (intent to deceive)",
+        "Verdict split as illustration"
+      ],
+      "counterevidence": [],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "Fraud requires intent to deceive, not just failure; the split verdict shows where that line fell here."
+      ],
+      "prohibited_wording": [
+        "The acquittals mean she did nothing wrong.",
+        "The technology actually worked."
+      ],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Framing claim; attribute the legal standard; do not editorialize beyond the record."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "An acquittal on the patient counts means the prosecution did not prove those specific charges against Holmes beyond a reasonable doubt; it is not a finding that the technology worked or that patients were unharmed — a point underscored by Balwani's conviction on the patient counts.",
+      "importance": "context",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0002",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Legal meaning of acquittal",
+        "Balwani patient-count convictions (contrast)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Being found not guilty on those counts means they weren't proven beyond a reasonable doubt — not that the tech worked; Balwani was convicted on the patient counts."
+      ],
+      "prohibited_wording": [
+        "Holmes was cleared.",
+        "Patients were not harmed."
+      ],
+      "temporal_scope": "2022",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "CRITICAL nuance for fairness; prevents 'acquittal = exoneration' misread."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable hashes 4/4. R3 — pre-publish rights/legal review required. Convictions=fact; patient=acquitted; 3=mistrial; acquittal!=exoneration; attribute intent to jury/court; no likeness."
+    ]
+  }
+}

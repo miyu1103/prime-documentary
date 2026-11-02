@@ -1,0 +1,72 @@
+EP67 ramirez — 画像発注 バッチ 1/18（9枚）
+区分: A1 · the dealership counter  [R001 – R009]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R001.png
+A wide of a car showroom interior seen from the customer's side of the floor at eye height: a polished pale floor running away to a full-height glass wall, flat Californian midday coming through it, two plain mid-size saloon cars parked at an angle on the floor with nobody anywhere in the frame. No vehicle anywhere in this frame carries a mark of any kind: no badge, no emblem, no oval on the grille, no wordmark, no nameplate, no model lettering, no dealer sticker and no plate of any kind on any part of any of them, front or rear, and there is no dealership signage, no banner, no price board and no poster anywhere on the walls or the glass. Every surface is bare painted plasterboard, glass or floor Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram, showroom banner, wall poster, price board, balloons, sales pennant
+
+■ R002.png
+A sales desk seen from just behind and above a customer's shoulder, the shoulder a soft dark mass at the very bottom edge of the frame and out of focus: the desk edge crosses the middle of the frame, a slim computer monitor stands at the far side TURNED AWAY so only its plain back panel and a spill of light round its edge are visible. The screen is never legible: it is a single soft bloom of even light with no icons, no windows, no rows, no cursor and nothing that could be read as a document. A keyboard lies flat in front of it and a single set of car keys sits on the far corner of the desk just out of reach. The desk top is bare wood-effect laminate with no paper on it. Bright showroom daylight from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, face, head, second person in frame
+
+■ R003.png
+The same sales desk from the same camera position, now with nobody at it at all: the chair on the far side stands empty and slightly turned out, the keys are still on the far corner where they were, the monitor is still turned away. The screen is never legible: it is a single soft bloom of even light with no icons, no windows, no rows, no cursor and nothing that could be read as a document. Nothing on the desk has moved. Bright showroom daylight from the left, the floor beyond soft and out of focus Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, person in the chair, hands in frame
+
+■ R004.png
+A close, shallow-focus still of a single set of car keys lying on a laminate desk top, the fob a plain unmarked black plastic rectangle with no buttons legible and no maker's mark, the ring and two cut keys lying flat beside it, everything beyond the keys dissolving into soft bright showroom bokeh. Nobody in frame, no hand near them, nothing else on the desk Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, keyring tag, engraved key, buttons with symbols, hand, fingers
+
+■ R005.png
+A computer monitor photographed from directly behind it, so the frame is filled by the plain matte back panel of the case and its plain stand, with the light of the screen spilling out around the edges of the panel onto the desk and the wall as a soft even glow. NOT ONE PIXEL OF THE SCREEN ITSELF IS VISIBLE from this angle. No cable labels, no vents shaped like letters, no maker's mark on the case. Bright interior daylight Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, front of the monitor, reflected screen content, brand logo on the bezel
+
+■ R006.png
+A plain black computer keyboard photographed from directly overhead, filling most of the frame at a slight angle, THE KEYCAPS ALL COMPLETELY BLANK — smooth unmarked squares of dark plastic with no letters, no numbers and no symbols printed on any of them — and the hard shadow of a hand and forearm falling across the left half of the keys from outside the frame. The hand itself is not in shot, only its shadow. Laminate desk visible around the edges Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, letters on the keycaps, symbols on the keys, hand in frame, fingers
+
+■ R007.png
+The driver's door and front side window of a plain mid-size saloon car seen square on from outside at standing height, filling the frame from edge to edge, a clean reflection of pale sky and a soft line of parked cars sliding across the glass. No vehicle anywhere in this frame carries a mark of any kind: no badge, no emblem, no oval on the grille, no wordmark, no nameplate, no model lettering, no dealer sticker and no plate of any kind on any part of any of them, front or rear. The door handle is a plain flush chrome bar, the mirror housing is unpainted plastic with nothing on it, and there is no writing on the glass and no sticker in the corner of the window. Flat Californian midday Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram, inspection sticker, VIN plate, reflection of a person
+
+■ R008.png
+A car forecourt at midday: four straight rows of parked cars on hot pale asphalt seen from standing height at one corner of the lot, heat shimmer rising off the far row, low dry planting and a plain kerb along the far edge, a flat pale sky above. Nobody in the frame and no movement in it. No vehicle anywhere in this frame carries a mark of any kind: no badge, no emblem, no oval on the grille, no wordmark, no nameplate, no model lettering, no dealer sticker and no plate of any kind on any part of any of them, front or rear. No price stickers on any windscreen, no flags, no pennants and no signage of any kind on the lot Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram, windscreen price sticker, bunting, flags on poles, dealer sign
+
+■ R009.png
+A full-height showroom glass wall seen from outside on the forecourt, the interior behind it gone dim and grey because the glass is carrying a bright reflection of the empty lot and the sky: the cars inside read only as faint dark shapes through the reflection. The glass has no lettering, no vinyl graphics, no opening hours and no logo on it anywhere. Flat midday light, nobody in frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram, vinyl lettering on glass, opening hours, decal, reflection of a person
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R001.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

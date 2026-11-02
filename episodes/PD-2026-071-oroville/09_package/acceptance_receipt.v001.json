@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.1.0",
+  "episode_id": "PD-2026-071-oroville",
+  "gate": "check_final_acceptance",
+  "status": "FAIL",
+  "video_path": "episodes\\PD-2026-071-oroville\\08_edit\\oroville_final_bgm.v001.mp4",
+  "video_sha256": "sha256:0cb20275fecb4a7e68f40dac83160961cc222115b80a8eb8cdbc2d2596245bd2",
+  "hard_failures": [
+    "images_present",
+    "animation_density",
+    "image_cut_luma",
+    "padding",
+    "motion_density",
+    "visual_asset_qc",
+    "retention_cadence",
+    "preflight_receipt",
+    "thumbnail_ready"
+  ],
+  "checks": {
+    "runtime_band": true,
+    "render_resolution": true,
+    "render_freshness": true,
+    "images_present": false,
+    "motion_present": true,
+    "animation_density": false,
+    "motion_energy": true,
+    "body_luma": true,
+    "image_cut_luma": false,
+    "bgm_present": true,
+    "sound_layers": true,
+    "bgm_ending": "skipped",
+    "hook_added": "skipped",
+    "loudness": true,
+    "probe_receipt": true,
+    "voice_is_master": true,
+    "captions_final": true,
+    "caption_format": true,
+    "caption_narration_match": true,
+    "caption_sync": true,
+    "arc_nonrepeat": true,
+    "caption_coverage": true,
+    "footage_utilization": true,
+    "script_lint": true,
+    "thumb_subject_luma": "skipped",
+    "padding": false,
+    "onscreen_text_verified": "skipped",
+    "motion_density": false,
+    "animation_mix": true,
+    "caption_integrity": true,
+    "visual_asset_qc": false,
+    "script_structure": "skipped",
+    "script_craft": true,
+    "script_length": true,
+    "asset_reuse": true,
+    "caption_breaks": true,
+    "retention_cadence": false,
+    "check_packaging_qc": "skipped",
+    "check_encoder_settings": "skipped",
+    "structure_4part": true,
+    "op_ed_bookends": true,
+    "leveled_animation": true,
+    "preflight_receipt": false,
+    "thumbnail_ready": false,
+    "thumbnail_visibility": "skipped",
+    "image_resolution": "skipped",
+    "factory_used": true,
+    "footage_diversity": true
+  },
+  "checks_legend": {
+    "true": "measured and passed",
+    "false": "measured and failed",
+    "skipped": "THE GATE DID NOT MEASURE -- absent inputs, or it raised. Not a pass. See skipped_checks."
+  },
+  "skipped_checks": [
+    {
+      "check": "bgm_ending",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "no music bed under the tail to resolve (body -91.0 dB)"
+    },
+    {
+      "check": "hook_added",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "shotlist totals missing"
+    },
+    {
+      "check": "thumb_subject_luma",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "no selected thumbnail (09_package/thumbnail.selected*.png) to measure"
+    },
+    {
+      "check": "onscreen_text_verified",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-071-oroville\\01_research\\claims.v001.json (skipped honestly)"
+    },
+    {
+      "check": "script_structure",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "no annotated script under C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-071-oroville/03_script (SSD or not authored)"
+    },
+    {
+      "check": "check_packaging_qc",
+      "kind": "no_inputs",
+      "declared_hard": true,
+      "reason": "no 09_package/youtube_meta.v*.json yet (packaging not authored)"
+    },
+    {
+      "check": "check_encoder_settings",
+      "kind": "no_inputs",
+      "declared_hard": true,
+      "reason": "no long-form final render resolved yet"
+    },
+    {
+      "check": "thumbnail_visibility",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "no selected thumbnail to measure"
+    },
+    {
+      "check": "image_resolution",
+      "kind": "no_inputs",
+      "declared_hard": true,
+      "reason": "no hero PNGs staged in remotion/public/oroville"
+    }
+  ],
+  "generated_at": "2026-08-23T00:22:26.927886+00:00",
+  "motion_energy": {
+    "ok": true,
+    "body_mean": 46.64,
+    "body_p10": 45.16,
+    "body_p50": 46.05,
+    "min_mean": 12.0,
+    "min_p10": 9.0
+  }
+}

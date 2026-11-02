@@ -8,7 +8,7 @@ Suno Commercial License:
   Terms: https://suno.com/terms  (Section 4 — Output License)
   rights_basis: "suno_commercial" (verified 2026-06)
 
-Registry: H:\pd-media\library\music_registry.v001.json
+Registry: E:\pd-media\library\music_registry.v001.json
 Idempotency: content_hash (SHA-256 of file bytes) — skip if already registered.
 """
 from __future__ import annotations
@@ -20,9 +20,9 @@ import shutil
 import subprocess
 from datetime import datetime, timezone
 
-MUSIC_DL    = pathlib.Path(r"H:\pd-media\downloads\music")
-LIB_MUSIC   = pathlib.Path(r"H:\pd-media\library\music")
-REGISTRY    = pathlib.Path(r"H:\pd-media\library\music_registry.v001.json")
+MUSIC_DL    = pathlib.Path(r"E:\pd-media\downloads\music")
+LIB_MUSIC   = pathlib.Path(r"E:\pd-media\library\music")
+REGISTRY    = pathlib.Path(r"E:\pd-media\library\music_registry.v001.json")
 EVENTS      = pathlib.Path(
     r"C:\Users\aab15\Documents\prime-documentary\episodes"
     r"\PD-2026-001-miranda\events.jsonl"

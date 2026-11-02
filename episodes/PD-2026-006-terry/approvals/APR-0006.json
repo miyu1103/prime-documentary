@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0006",
+  "episode_id": "PD-2026-006-terry",
+  "target_type": "publish",
+  "target_id": "dcqWIPXun7c_thumbnail_option_09_codex_beauty",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T23:28:41+09:00",
+  "requested_by": "owner",
+  "decided_at": "2026-06-20T23:28:41+09:00",
+  "decided_by": "owner",
+  "notes": "Owner explicitly requested changing the YouTube thumbnail to a more beautiful Codex-made image: 'サムネイルの画像をCodexで美しいものに変更して差し替えて'. Approval covers replacing only the thumbnail for the already uploaded/scheduled EP6 Terry YouTube video. It does not authorize changing video file, title, description, schedule time, visibility, claims, or deleting/reuploading the video.",
+  "conditions": [
+    "Update only YouTube video_id dcqWIPXun7c on the allowlisted Prime Documentary channel.",
+    "Use selected thumbnail episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_09_codex_beauty.v001.png with sha256:5f364026fc46758441c9673e47cdd93f96ceec265810d2267643d0d4695c45bf.",
+    "Keep the existing scheduled release time, privacy status, madeForKids=false, and containsSyntheticMedia=true unchanged.",
+    "Do not upload a duplicate video.",
+    "Record the local result JSON and update local metadata references after the thumbnail API call succeeds."
+  ],
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_09_codex_beauty.v001.json"
+}

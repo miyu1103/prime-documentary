@@ -1,0 +1,124 @@
+"""
+Drive ComfyUI Wan 2.2 TI2V-5B image-to-video via HTTP API.
+Uploads a start image, builds the 5B i2v graph, queues it, waits, collects frames.
+"""
+import sys, os, json, time, uuid, glob, shutil, argparse
+import urllib.request, urllib.parse
+
+HOST = "http://127.0.0.1:8188"
+COMFY_OUT = r"C:\Users\aab15\ComfyUI\output"
+
+def post_json(path, obj):
+    data = json.dumps(obj).encode()
+    req = urllib.request.Request(HOST + path, data=data, headers={"Content-Type": "application/json"})
+    return json.loads(urllib.request.urlopen(req, timeout=60).read())
+
+def get_json(path):
+    return json.loads(urllib.request.urlopen(HOST + path, timeout=60).read())
+
+def upload_image(path):
+    # multipart/form-data
+    boundary = "----wanboundary" + uuid.uuid4().hex
+    fname = os.path.basename(path)
+    with open(path, "rb") as f:
+        filedata = f.read()
+    body = b""
+    body += ("--" + boundary + "\r\n").encode()
+    body += ('Content-Disposition: form-data; name="image"; filename="%s"\r\n' % fname).encode()
+    body += b"Content-Type: image/png\r\n\r\n"
+    body += filedata + b"\r\n"
+    body += ("--" + boundary + "\r\n").encode()
+    body += b'Content-Disposition: form-data; name="overwrite"\r\n\r\ntrue\r\n'
+    body += ("--" + boundary + "--\r\n").encode()
+    req = urllib.request.Request(HOST + "/upload/image", data=body,
+                                 headers={"Content-Type": "multipart/form-data; boundary=" + boundary})
+    r = json.loads(urllib.request.urlopen(req, timeout=60).read())
+    return r["name"]
+
+def build_graph(image_name, prompt, neg, w, h, length, steps, seed, shift, cfg):
+    g = {
+        "10": {"class_type": "UNETLoader", "inputs": {"unet_name": "wan2.2_ti2v_5B_fp16.safetensors", "weight_dtype": "default"}},
+        "11": {"class_type": "CLIPLoader", "inputs": {"clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors", "type": "wan"}},
+        "12": {"class_type": "VAELoader", "inputs": {"vae_name": "wan2.2_vae.safetensors"}},
+        "13": {"class_type": "ModelSamplingSD3", "inputs": {"model": ["10", 0], "shift": shift}},
+        "14": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["11", 0], "text": prompt}},
+        "15": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["11", 0], "text": neg}},
+        "16": {"class_type": "LoadImage", "inputs": {"image": image_name}},
+        "17": {"class_type": "Wan22ImageToVideoLatent", "inputs": {
+            "vae": ["12", 0], "width": w, "height": h, "length": length, "batch_size": 1,
+            "start_image": ["16", 0]}},
+        "18": {"class_type": "KSampler", "inputs": {
+            "model": ["13", 0], "positive": ["14", 0], "negative": ["15", 0], "latent_image": ["17", 0],
+            "seed": seed, "steps": steps, "cfg": cfg, "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0}},
+        "19": {"class_type": "VAEDecode", "inputs": {"samples": ["18", 0], "vae": ["12", 0]}},
+        "20": {"class_type": "SaveImage", "inputs": {"images": ["19", 0], "filename_prefix": "wanout/CLIENTPREFIX"}},
+    }
+    return g
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--image", required=True)
+    ap.add_argument("--prompt", required=True)
+    ap.add_argument("--neg", default="static, motionless, blurry, low quality, distorted, deformed, extra limbs, bad anatomy, morphing face, flickering, jitter, warping")
+    ap.add_argument("--prefix", required=True)          # output subdir under ae-demo
+    ap.add_argument("--w", type=int, default=1280)
+    ap.add_argument("--h", type=int, default=704)
+    ap.add_argument("--length", type=int, default=121)
+    ap.add_argument("--steps", type=int, default=30)
+    ap.add_argument("--seed", type=int, default=12345)
+    ap.add_argument("--shift", type=float, default=8.0)
+    ap.add_argument("--cfg", type=float, default=5.0)
+    a = ap.parse_args()
+
+    print("[wan] upload", a.image, flush=True)
+    name = upload_image(a.image)
+    g = build_graph(name, a.prompt, a.neg, a.w, a.h, a.length, a.steps, a.seed, a.shift, a.cfg)
+    fp = "wanout/" + a.prefix
+    g["20"]["inputs"]["filename_prefix"] = fp
+    client_id = uuid.uuid4().hex
+    print(f"[wan] queue {a.w}x{a.h} len={a.length} steps={a.steps} shift={a.shift} cfg={a.cfg}", flush=True)
+    r = post_json("/prompt", {"prompt": g, "client_id": client_id})
+    pid = r["prompt_id"]
+    print("[wan] prompt_id", pid, flush=True)
+
+    t0 = time.time()
+    while True:
+        time.sleep(3)
+        try:
+            hist = get_json("/history/" + pid)
+        except Exception as e:
+            continue
+        if pid in hist:
+            h = hist[pid]
+            status = h.get("status", {})
+            if status.get("completed") or h.get("outputs"):
+                print("[wan] done in %.0fs" % (time.time() - t0), flush=True)
+                break
+            if status.get("status_str") == "error":
+                print("[wan] ERROR", json.dumps(status)[:1000], flush=True)
+                sys.exit(2)
+        if time.time() - t0 > 1800:
+            print("[wan] timeout", flush=True); sys.exit(3)
+
+    # collect frames from ComfyUI/output/wanout
+    src = os.path.join(COMFY_OUT, "wanout")
+    # THE PREFIX MUST BE FOLLOWED BY DIGITS (2026-08-25, EP75 lahaina). ComfyUI names frames
+    # <prefix>_00001.png, so "<prefix>_*" ALSO matches a DIFFERENT job whose prefix merely starts
+    # with this one: collecting lahaina_H041 swept in lahaina_H041_depth as well, and the clip
+    # assembled as 81 real frames followed by 81 frames of that scene\x27s depth map. 37 of 91 hero
+    # clips shipped that way -- they open in colour and play out grey. Anchor on the digits.
+    files = sorted(glob.glob(os.path.join(src, a.prefix + "_[0-9]*.png")))
+    # ComfyUI writes <prefix>_00001_.png -- digits then a trailing underscore.
+    files = [f for f in files
+             if os.path.basename(f)[len(a.prefix) + 1:].split(".")[0].strip("_").isdigit()]
+    print(f"[wan] {len(files)} frames -> {a.prefix}", flush=True)
+    dst = r"C:\Users\aab15\ae-demo\wan_frames_" + a.prefix
+    os.makedirs(dst, exist_ok=True)
+    for f in os.listdir(dst):
+        os.remove(os.path.join(dst, f))
+    for i, f in enumerate(files):
+        shutil.copy(f, os.path.join(dst, f"f{i:04d}.png"))
+    print("[wan] frames copied to", dst, flush=True)
+
+if __name__ == "__main__":
+    main()

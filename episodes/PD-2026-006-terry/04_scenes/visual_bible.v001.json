@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-006-terry",
+  "revision": "v001",
+  "brand_within_channel": "Prime Documentary constitutional-rights style applied to a street-stop episode: neutral, cinematic, faceless, explanatory.",
+  "palette": {
+    "base": ["black", "deep navy"],
+    "primary_signal": ["electric blue"],
+    "accent": ["muted gold", "aged brass"],
+    "support": ["silver", "cool white"],
+    "forbidden": ["police-propaganda red/blue strobe dominance", "graphic violence", "neon/candy colors", "recognizable real-person portrait likeness"]
+  },
+  "mood": "present-tense unease moving into legal clarity, then back to a restrained modern tension.",
+  "lighting": "low-key, high-contrast, controlled street light, subtle haze, fine film grain; modern scenes are cool navy/electric-blue, 1963 scenes add muted brass/gold.",
+  "people_rule": "No identifiable likenesses of Martin McFadden, John Terry, Richard Chilton, Justice Warren, Justice Douglas, or any modern person. Use POV, hands, backs, torsos, silhouettes, distance, and diagrams. No deepfake or portrait reconstruction.",
+  "disclosure_rule": "All AI-generated reenactment/location/object visuals are treated as symbolic reconstruction. Reenactment shots carry an on-screen symbolic reconstruction label at least once per sequence and are registered in the rights manifest before downstream use.",
+  "hero_motif": {
+    "name": "THE LINE BETWEEN HUNCH AND PROOF",
+    "spec": "A horizontal legal threshold scale: hunch -> reasonable suspicion -> probable cause -> warrant. Electric-blue markers, gold legal threshold, black/navy ground. Rendered in Remotion so text and standards are exact.",
+    "render": "Remotion motion graphic, not AI image text."
+  },
+  "recurring_symbols": [
+    "POV street stop: officer torso/hands only",
+    "the Fourth Amendment wall with a narrow gap",
+    "store-window path counter ticking to about 12",
+    "legal sliding scale: hunch, reasonable suspicion, probable cause, warrant",
+    "weapons-only frisk icon: outer clothing boundary",
+    "single dissent dot against eight majority dots",
+    "modern sidewalk montage with no faces",
+    "phone glow in pocket for the EP7 bridge"
+  ],
+  "typography": {
+    "case_cards": "Impact/Arial Black style, large gold/electric-blue on black/navy.",
+    "citation_lower_thirds": "Small caps, silver text with gold claim/case accent; exact citations rendered in Remotion.",
+    "open_captions": "Burned-in captions later, high contrast, bottom-third, per channel style.",
+    "generated_image_text_policy": "No text in AI images. All words, dates, counters, legal standards, citations and labels are Remotion overlays."
+  },
+  "continuity_strategy": "Codex image generation first for hero stills; local SDXL/SVD allowed for variants. Keep a single style family: cinematic symbolic noir, faceless people, 16:9, restrained contrast, brand palette. Generate 3-4 candidates for Tier A shots, 2-3 for Tier B, then QC for faces, logos, text artifacts, anachronisms, and misleading authenticity.",
+  "thumbnail_concept": {
+    "primary": "POV street stop, officer torso/hands only, no faces, with a bold question: 'NO WARRANT?' or 'CAN THEY SEARCH YOU?'",
+    "alts": ["store-window counter with 'THE HUNCH'", "legal scale reading 'HUNCH < PROOF'"],
+    "rules": ["no identifiable person", "on-screen symbolic reconstruction disclosure in video/package", "mobile-readable, high contrast, <=5 words"]
+  },
+  "do_not": [
+    "rewrite or visually contradict the approved script",
+    "present symbolic visuals as authentic footage",
+    "show Terry, Chilton, McFadden, Warren, or Douglas as identifiable people",
+    "imply the men committed a completed robbery",
+    "turn later stop-and-frisk debate into an accusation beyond CLM-0009",
+    "use generated images for exact legal text"
+  ]
+}

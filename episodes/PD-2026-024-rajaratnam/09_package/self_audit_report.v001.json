@@ -1,0 +1,105 @@
+{
+  "episode_id": "PD-2026-024-rajaratnam",
+  "revision": "v001",
+  "status": "accepted",
+  "final_video": "H:/pd-media/episodes/PD-2026-024-rajaratnam/08_edit/v001.mp4",
+  "acceptance_gate": {
+    "check": "final_acceptance",
+    "episode": "PD-2026-024-rajaratnam",
+    "render": "H:\\pd-media\\episodes\\PD-2026-024-rajaratnam\\08_edit\\v001.mp4",
+    "render_duration_seconds": 1716.7,
+    "status": "PASS",
+    "results": [
+      {
+        "check": "runtime_band",
+        "ok": true,
+        "hard": true,
+        "reason": "1716.7s = 28.61min (band 1620-1980s)"
+      },
+      {
+        "check": "render_resolution",
+        "ok": true,
+        "hard": true,
+        "reason": "1920x1080 codec=h264 (need >= 1920x1080)"
+      },
+      {
+        "check": "images_present",
+        "ok": true,
+        "hard": true,
+        "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+      },
+      {
+        "check": "motion_present",
+        "ok": true,
+        "hard": true,
+        "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+      },
+      {
+        "check": "bgm_present",
+        "ok": true,
+        "hard": true,
+        "reason": "total silence 0s (limit 25s; high => no continuous BGM bed / narration-only mix)"
+      },
+      {
+        "check": "hook_added",
+        "ok": true,
+        "hard": false,
+        "skipped": true,
+        "reason": "shotlist totals missing"
+      },
+      {
+        "check": "loudness",
+        "ok": true,
+        "hard": false,
+        "reason": "integrated -14.3 LUFS (target -14, band -16.0..-12.0)"
+      },
+      {
+        "check": "voice_is_master",
+        "ok": true,
+        "hard": true,
+        "reason": "master narration present: ['elevenlabs']"
+      },
+      {
+        "check": "captions_final",
+        "ok": true,
+        "hard": true,
+        "reason": "final captions captions.v001.srt (last cue 1708s)"
+      },
+      {
+        "check": "caption_format",
+        "ok": true,
+        "hard": true,
+        "reason": "captions.v001.srt: line/duration/cps within limits"
+      },
+      {
+        "check": "thumbnail_ready",
+        "ok": true,
+        "hard": true,
+        "reason": "4 thumb(s) at 1280x720, selected=yes (need >=3 + selected)"
+      },
+      {
+        "check": "image_resolution",
+        "ok": true,
+        "hard": true,
+        "reason": "42 hero PNGs, all long-edge >= 3840px"
+      },
+      {
+        "check": "factory_used",
+        "ok": true,
+        "hard": true,
+        "reason": "72 factory clip(s) staged, referenced_in_composition=True, need >= 38 (1 per 45s)"
+      }
+    ],
+    "exit_code": 0
+  },
+  "manual_checks": {
+    "runtime_band": "measured by check_final_acceptance and check_runtime_band",
+    "narration_provider": "ElevenLabs only; no SAPI/local final plan",
+    "captions": "sidecar SRT generated from rendered chunk timings; burned into final MP4",
+    "bgm": "continuous six-track library bed mixed with VO and loudnorm",
+    "render": "libx264 slow CRF16 yuv420p bt709 AAC 320k, no NVENC",
+    "thumbnails": "three 1280x720 candidates plus selected copy",
+    "publication": "not uploaded, not scheduled, legal owner gates remain"
+  },
+  "created_at": "2026-07-01T02:37:09.329136+00:00"
+}

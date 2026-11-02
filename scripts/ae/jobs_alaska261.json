@@ -1,0 +1,224 @@
+[
+  {
+    "id": "alaska261_ae001",
+    "beat": "AE001",
+    "act": "HOOK",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "0.040 INCHES",
+    "style": "number",
+    "big": "0.040",
+    "bigSize": 320,
+    "label": "INCHES — THE MOST WEAR THE RULES ALLOWED",
+    "value": 0.04,
+    "suffix": " INCHES",
+    "source": "FACTS_LEDGER row AK-302"
+  },
+  {
+    "id": "alaska261_ae002",
+    "beat": "AE002",
+    "act": "HOOK",
+    "kind": "timeline",
+    "seconds": 7,
+    "headline": "ELEVEN MINUTES",
+    "value": 11,
+    "suffix": " MINUTES",
+    "lines": [
+      {"t": "1609:14.8 — THE INITIAL DIVE", "cite": "AK-006"},
+      {"t": "1619:36.6 — THE FINAL DIVE", "cite": "AK-013"}
+    ],
+    "source": "FACTS_LEDGER rows AK-006 and AK-013",
+    "forbid": "Arithmetic on two recorded timestamps. The card states the window, not what the crew should have done inside it."
+  },
+  {
+    "id": "alaska261_ae003",
+    "beat": "AE003",
+    "act": "OP",
+    "kind": "title_card",
+    "seconds": 6,
+    "headline": "31 JANUARY 2000",
+    "style": "number",
+    "big": "31 JANUARY 2000",
+    "bigSize": 170,
+    "source": "FACTS_LEDGER row AK-001"
+  },
+  {
+    "id": "alaska261_ae004",
+    "beat": "AE004",
+    "act": "ACT_1",
+    "kind": "system_map",
+    "seconds": 12,
+    "headline": "WHAT HOLDS THE TAIL",
+    "lines": [
+      {"t": "THE JACKSCREW TURNS INSIDE THE ACME NUT", "cite": "AK-301"},
+      {"t": "EACH NUT THREAD: 16 SPIRAL REVOLUTIONS — 32 IN ALL", "cite": "AK-505"},
+      {"t": "AN END PLAY CHECK READS THE WEAR ON A DIAL INDICATOR", "cite": "AK-301"}
+    ],
+    "source": "FACTS_LEDGER rows AK-301 and AK-505",
+    "forbid": "The dial indicator is the episode MOTIF (script header) -- drawn plainly, never explained as a symbol."
+  },
+  {
+    "id": "alaska261_ae005",
+    "beat": "AE005",
+    "act": "ACT_1",
+    "kind": "hero_number",
+    "seconds": 7,
+    "headline": "1619:36.6",
+    "style": "number",
+    "big": "1619:36.6",
+    "bigSize": 260,
+    "label": "THE FINAL DIVE",
+    "source": "FACTS_LEDGER row AK-013"
+  },
+  {
+    "id": "alaska261_ae006",
+    "beat": "AE006",
+    "act": "ACT_2",
+    "kind": "list_build",
+    "seconds": 11,
+    "headline": "ONE CAUSE. THREE CONTRIBUTING.",
+    "lines": [
+      {"t": "CAUSE: ACME NUT THREAD FAILURE FROM EXCESSIVE WEAR — INSUFFICIENT LUBRICATION", "cite": "AK-101"},
+      {"t": "THE EXTENDED LUBRICATION INTERVAL — AND THE FAA'S APPROVAL OF IT", "cite": "AK-102"},
+      {"t": "THE EXTENDED END PLAY CHECK INTERVAL — AND THE FAA'S APPROVAL OF IT", "cite": "AK-103"},
+      {"t": "NO FAIL-SAFE ON THE MD-80 FOR TOTAL THREAD LOSS", "cite": "AK-104"}
+    ],
+    "source": "FACTS_LEDGER rows AK-101 to AK-104",
+    "forbid": "All four lines compress VERBATIM Board findings (AK-101..104). Compression may not shift blame beyond the Board's own wording."
+  },
+  {
+    "id": "alaska261_ae007",
+    "beat": "AE007",
+    "act": "ACT_2",
+    "kind": "comparison",
+    "seconds": 9,
+    "headline": "90 PERCENT / 22 PERCENT",
+    "value_a": 90,
+    "value_b": 22,
+    "suffix": " PERCENT",
+    "lines": [
+      {"t": "THE ACCIDENT NUT: ABOUT 90% OF THREAD THICKNESS WORN AWAY", "cite": "AK-502"},
+      {"t": "AT THE MAXIMUM WEAR THE RULES PERMIT: ABOUT 22%", "cite": "AK-503"}
+    ],
+    "source": "FACTS_LEDGER rows AK-502 and AK-503",
+    "forbid": "Keep ABOUT on both figures -- the Board qualifies both."
+  },
+  {
+    "id": "alaska261_ae008",
+    "beat": "AE008",
+    "act": "ACT_3",
+    "kind": "timeline",
+    "seconds": 14,
+    "headline": "700 / 500 / 1,000 / 1,200 / 1,600 / 2,550",
+    "lines": [
+      {"t": "1985 — LUBRICATED EVERY 700 FLIGHT HOURS", "cite": "AK-202"},
+      {"t": "1987 — EVERY 500", "cite": "AK-203"},
+      {"t": "1988 — EVERY 1,000", "cite": "AK-204"},
+      {"t": "1991 — EVERY 1,200", "cite": "AK-205"},
+      {"t": "1994 — EVERY 1,600", "cite": "AK-206"},
+      {"t": "1996 — 8 MONTHS, NO HOUR LIMIT: ABOUT 2,550", "cite": "AK-207"}
+    ],
+    "source": "FACTS_LEDGER rows AK-202 to AK-207",
+    "forbid": "Six steps built one at a time. 1987's step DOWN to 500 stays in -- the record shows the interval once tightened, and dropping it would misstate the curve."
+  },
+  {
+    "id": "alaska261_ae009",
+    "beat": "AE009",
+    "act": "ACT_3",
+    "kind": "hero_number",
+    "seconds": 8,
+    "headline": "400 PERCENT",
+    "style": "number",
+    "big": "400%",
+    "bigSize": 340,
+    "label": "GREATER THAN THE 1987 INTERVAL — NTSB",
+    "value": 400,
+    "suffix": " PERCENT",
+    "source": "FACTS_LEDGER row AK-208",
+    "forbid": "AK-208 is a verbatim Board sentence; the label keeps the NTSB attribution."
+  },
+  {
+    "id": "alaska261_ae010",
+    "beat": "AE010",
+    "act": "ACT_3",
+    "kind": "timeline",
+    "seconds": 11,
+    "headline": "5,000 / 6,400 / 9,550 FLIGHT HOURS",
+    "lines": [
+      {"t": "1985 — END PLAY CHECKED ABOUT EVERY 5,000 FLIGHT HOURS", "cite": "AK-305"},
+      {"t": "1988 — ABOUT EVERY 6,400", "cite": "AK-306"},
+      {"t": "AT THE ACCIDENT — EVERY 30 MONTHS: ABOUT 9,550", "cite": "AK-308"}
+    ],
+    "source": "FACTS_LEDGER rows AK-305 to AK-308",
+    "forbid": "Keep ABOUT on the hour figures -- they are utilisation-rate conversions, and the ledger says so."
+  },
+  {
+    "id": "alaska261_ae011",
+    "beat": "AE011",
+    "act": "ACT_4",
+    "kind": "document_blowup",
+    "seconds": 9,
+    "headline": "NOT REQUIRED TO BE RECORDED",
+    "lines": [
+      {"t": "BEFORE JULY 2000: AN IN-LIMITS END PLAY READING LEFT NO RECORD AT ALL", "cite": "AK-309"}
+    ],
+    "source": "FACTS_LEDGER row AK-309",
+    "forbid": "Illustrate a blank column on a maintenance form, never legible generated document text (fabricated_record)."
+  },
+  {
+    "id": "alaska261_ae012",
+    "beat": "AE012",
+    "act": "ACT_4",
+    "kind": "comparison",
+    "seconds": 10,
+    "headline": "ONE FIXTURE / ELEVEN MORE",
+    "value_a": 1,
+    "value_b": 11,
+    "suffix": " FIXTURES",
+    "lines": [
+      {"t": "AT THE ACCIDENT: ONE RESTRAINING FIXTURE IN THE ENTIRE INVENTORY — IN-HOUSE, OFF-SPEC", "cite": "AK-405"},
+      {"t": "A MONTH LATER: ELEVEN MORE, TO THE SAME IN-HOUSE DESIGN", "cite": "AK-406"}
+    ],
+    "source": "FACTS_LEDGER rows AK-405 and AK-406"
+  },
+  {
+    "id": "alaska261_ae013",
+    "beat": "AE013",
+    "act": "ACT_4",
+    "kind": "quote_card",
+    "seconds": 8,
+    "headline": "WE DID EXACTLY WHAT WE WERE TOLD",
+    "quote": "We were directed to build the tools, and we did exactly what we were told.",
+    "attribution": "ALASKA AIRLINES MANAGER OF TOOL CONTROL, TO NTSB INVESTIGATORS",
+    "source": "FACTS_LEDGER row AK-407",
+    "forbid": "Verbatim from AK-407. The speaker is not named on the card and is not this film's villain (R3: no maintenance individual was ever charged, AK-901)."
+  },
+  {
+    "id": "alaska261_ae014",
+    "beat": "AE014",
+    "act": "ENDING",
+    "kind": "hero_number",
+    "seconds": 7,
+    "headline": "NO CHARGES",
+    "style": "punch",
+    "words": ["NO CHARGES"],
+    "bigSize": 200,
+    "label": "FEDERAL PROSECUTORS, DECEMBER 2001",
+    "source": "FACTS_LEDGER row AK-901",
+    "forbid": "R3: nobody in this story was ever prosecuted. The card states the prosecutors' decision, not an exoneration and not an accusation."
+  },
+  {
+    "id": "alaska261_ae015",
+    "beat": "AE015",
+    "act": "ENDING",
+    "kind": "timeline",
+    "seconds": 9,
+    "headline": "WHAT CHANGED IN JULY 2000",
+    "lines": [
+      {"t": "AD 2000-15-15 — FIVE MONTHS AFTER THE ACCIDENT", "cite": "AK-309"},
+      {"t": "EVERY END PLAY READING NOW GOES IN THE RECORD", "cite": "AK-902"}
+    ],
+    "source": "FACTS_LEDGER rows AK-309 and AK-902",
+    "forbid": "The AD's own text is an Open item (not yet read) -- the card states only what the ledger records about it."
+  }
+]

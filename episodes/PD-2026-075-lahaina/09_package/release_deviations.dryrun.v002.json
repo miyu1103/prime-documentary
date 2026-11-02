@@ -1,0 +1,537 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "pd_release_deviations",
+  "episode_id": "PD-2026-075-lahaina",
+  "slug": "lahaina",
+  "generated_at": "2026-08-25T15:45:31.417332+00:00",
+  "dry_run": true,
+  "policy": {
+    "path": "config/ship_policy.v001.json",
+    "authored": "2026-08-12",
+    "the_rule": "A check may STOP a ship only if it is in `blocking`. Everything else is measured, recorded on the release, and shipped. Nothing here lowers a threshold -- every check still runs and every number is still written down. What changes is which numbers hold the door shut.",
+    "blocking_classes": [
+      "real_person_likeness",
+      "rights_and_licence",
+      "factual_support",
+      "fabricated_record"
+    ]
+  },
+  "receipt": {
+    "path": "episodes/PD-2026-075-lahaina/09_package/acceptance_receipt.v004.json",
+    "status": "FAIL",
+    "video_sha256": "sha256:3503c1fc07777f8ad8de5d010786557504ff288e476cdb6917a5e377c05fc132",
+    "hard_failures": [
+      "render_freshness",
+      "sound_layers",
+      "caption_sync",
+      "arc_nonrepeat",
+      "script_structure",
+      "script_length",
+      "retention_cadence"
+    ]
+  },
+  "video": {
+    "path": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-075-lahaina\\08_edit\\lahaina_final_bgm.v001.mp4",
+    "sha256": "sha256:3503c1fc07777f8ad8de5d010786557504ff288e476cdb6917a5e377c05fc132"
+  },
+  "decision": "permit",
+  "blocking_failures": [],
+  "deviations": [
+    {
+      "check": "render_freshness",
+      "class": "advisory",
+      "advisory_group": "process_receipt",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: a preceding receipt is missing, stale or from another render. This is bookkeeping about the build, not a property of the film that goes out; the scheduler separately binds the acceptance receipt to the exact bytes and that binding is not relaxed",
+      "backlog": false,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the acceptance receipt records this check as a pass/fail bit and not its measured value, and the gate needs the render to measure it (ffmpeg decode), which is not re-run at schedule time. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "sound_layers",
+      "class": "advisory",
+      "advisory_group": "craft_audio",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: mix layers, music bed, loudness and ending fade",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the acceptance receipt records this check as a pass/fail bit and not its measured value, and the gate needs the render to measure it (ffmpeg decode), which is not re-run at schedule time. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "caption_sync",
+      "class": "advisory",
+      "advisory_group": "craft_caption",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: caption timing, wording, line breaks and formatting",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "detail": "p50 +0.000s exact 66% late 22% drift +0.000s fword-ends 0 | p90 lag +0.356s > +0.35s (too many late cues)",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "arc_nonrepeat",
+      "class": "advisory",
+      "advisory_group": "craft_footage",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: which clips were used and how often -- diversity, reuse, utilisation, factory share",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the receipt records this check as a pass/fail bit and not its measured value, and it is not re-run at schedule time because re-running it re-fingerprints the whole prior-episode asset universe (gigabytes of hashing) to restate a number the receipt already decided. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "script_structure",
+      "class": "advisory",
+      "advisory_group": "craft_script",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: script length, structure, cadence and AI-smell",
+      "backlog": true,
+      "measured": {
+        "wpm": 160.0,
+        "timing_source": "timecodes",
+        "total_runtime_s": 1857.4,
+        "total_runtime_mmss": "30:57",
+        "n_sections": 8,
+        "n_body_acts": 6,
+        "hook_len_s": 20.3,
+        "rehook_max_gap_s": 1845.2,
+        "first_second_person_s": 22.1,
+        "roles": [
+          "hook",
+          "body",
+          "body",
+          "body",
+          "body",
+          "body",
+          "body",
+          "ending"
+        ]
+      },
+      "threshold": null,
+      "detail": "second section is 'op' (role=body), expected OPENING to follow the hook; hook cold-open is 20.3s (> 8s budget); 1845s with no re-hook beat (0:12->30:57, > 170s); open-loop at 0:00 (SPN-0001, fn='hook') has no later payoff/resolve/summary/CTA beat",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "script_length",
+      "class": "advisory",
+      "advisory_group": "craft_script",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: script length, structure, cadence and AI-smell",
+      "backlog": true,
+      "measured": {
+        "words": 5320,
+        "words_required": [
+          1575,
+          2141
+        ],
+        "source": "voice_plan (voice_plan.v001.json)"
+      },
+      "threshold": {
+        "target_seconds": [
+          690.0,
+          750.0
+        ]
+      },
+      "detail": "5,320 words vs required 1,575-2,141 -> narrates in ~29.9 min, outside the 11.5-12.5 min band [script.en.v001.md]. LONG by 3243 words -> 30.2 min of speech, which finishes past 12.5 min even at the tightest measured pacing (1.04x). Cut, do not speed the voice.",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "retention_cadence",
+      "class": "advisory",
+      "advisory_group": "craft_script",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: script length, structure, cadence and AI-smell",
+      "backlog": true,
+      "measured": {
+        "runtime_s": 1857.4,
+        "rehook_marks": 40,
+        "rehook_gap_max_s": 180.0,
+        "question_marks": 0,
+        "question_gap_max_s": 420.0
+      },
+      "threshold": {
+        "max_rehook_gap_s": 251.4,
+        "max_rehook_gap_at_s": 437.3,
+        "max_question_gap_s": 1857.4,
+        "max_question_gap_at_s": 0.0
+      },
+      "detail": "re-hook gap 251s > 180s starting at 7.3min; no direct question for 1857s > 420s starting at 0.0min (episode poses ZERO questions)",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The County of Maui's origin and cause report, published on 3 October 2024, records that it claimed at least 102 lives.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "claim",
+          "least",
+          "october"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The County of Maui's origin and cause report, published on 3 October 2024, records that it claimed at least 102 lives.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "claim",
+          "least",
+          "october"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The County of Maui's origin and cause report, published on 3 October 2024, records that it claimed at least 102 lives.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "october",
+          "origin",
+          "publish"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The County of Maui's origin and cause report, published on 3 October 2024, records that it claimed at least 102 lives.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "claim",
+          "least",
+          "october"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The County's fire department, working with the federal Bureau of Alcohol, Tobacco, Firearms and Explosives, found that the fire originated off Lahainaluna Road ",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "explosiv",
+          "federal",
+          "alcohol"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The County's fire department, working with the federal Bureau of Alcohol, Tobacco, Firearms and Explosives, found that the fire originated off Lahainaluna Road ",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "morn",
+          "explosiv",
+          "federal"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The County's fire department, working with the federal Bureau of Alcohol, Tobacco, Firearms and Explosives, found that the fire originated off Lahainaluna Road ",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "molten",
+          "explosiv",
+          "federal"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The County's fire department, working with the federal Bureau of Alcohol, Tobacco, Firearms and Explosives, found that the fire originated off Lahainaluna Road ",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "find",
+          "explosiv",
+          "alcohol"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The County's fire department, working with the federal Bureau of Alcohol, Tobacco, Firearms and Explosives, found that the fire originated off Lahainaluna Road ",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "explosiv",
+          "firearm",
+          "originat"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "Hawaii operates the largest single integrated outdoor warning siren system in the world, tests it on the first business day of every month, and lists wildfires ",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "operat",
+          "integrat",
+          "singl"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    }
+  ],
+  "unclassified_checks": [],
+  "unmeasured_checks": [
+    {
+      "check": "bgm_ending",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no music bed under the tail to resolve (body -91.0 dB)",
+      "backlog": true,
+      "why_it_did_not_block": "bgm_ending did not run (no_inputs): no music bed under the tail to resolve (body -91.0 dB). It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "hook_added",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "shotlist totals missing",
+      "backlog": true,
+      "why_it_did_not_block": "hook_added did not run (no_inputs): shotlist totals missing. It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "onscreen_text_verified",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "factual_support",
+      "skip_kind": "no_inputs",
+      "detail": "claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-075-lahaina\\01_research\\claims.v001.json (skipped honestly)",
+      "backlog": true,
+      "why_it_did_not_block": "UNMEASURED BLOCKING CLASS: onscreen_text_verified is the factual_support detector and it DID NOT RUN (no_inputs): claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-075-lahaina\\01_research\\claims.v001.json (skipped honestly). Nothing was measured, so nothing clears this class for this episode. It is permitted because a missing input is a tooling gap rather than evidence about the film, and it is recorded here so that no reader can mistake this receipt's green for a measurement."
+    },
+    {
+      "check": "check_encoder_settings",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no long-form final render resolved yet",
+      "backlog": true,
+      "why_it_did_not_block": "check_encoder_settings did not run (no_inputs): no long-form final render resolved yet. It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "preflight_receipt",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "retired 2026-08-23 (decisions/0012-RETIRE-PREFLIGHT-RECEIPT.md): measures artifacts the pipeline stopped producing at ~EP67; replaced by spec_satisfied + probe receipt + ep77 plan stage",
+      "backlog": true,
+      "why_it_did_not_block": "preflight_receipt did not run (no_inputs): retired 2026-08-23 (decisions/0012-RETIRE-PREFLIGHT-RECEIPT.md): measures artifacts the pipeline stopped producing at ~EP67; replaced by spec_satisfied + probe . It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "image_resolution",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no hero PNGs staged in remotion/public/lahaina",
+      "backlog": true,
+      "why_it_did_not_block": "image_resolution did not run (no_inputs): no hero PNGs staged in remotion/public/lahaina. It is not in a blocking class, so the absence is recorded and does not block."
+    }
+  ],
+  "unmeasured_blocking_classes": [
+    "factual_support"
+  ],
+  "blocking_class_detectors": {
+    "real_person_likeness": {
+      "detector": "check_shipped_frames.py (run by the scheduler, hard exit on failure)",
+      "evidence": "runs/qc/lahaina_shipped_frames_review.v001.json",
+      "sha_bound_to_this_render": false,
+      "reviewer": "Claude (Opus 5, Claude Code) -- 76 labelled contact sheets read tile by tile, 1,518 frames from 377 cuts, coverage 0:00-31:06. Seven frames that the tile scale ",
+      "plate_review": {
+        "detector": "check_plate_verdicts verdicts re-read against the built film",
+        "verdicts_file": "runs/qc/lahaina_plate_verdicts.v001.json",
+        "wired_here": true,
+        "state": "measured",
+        "plates": 135,
+        "cuts_tested": 316,
+        "rejected": 0,
+        "unresolved": 0,
+        "rejected_in_film": 0,
+        "unresolved_in_film": 0,
+        "blocking_rows": 0
+      },
+      "state": "partial",
+      "honest_limit": "the frame sampling and the sha binding are real; the LIKENESS judgement is free text in this file and nothing authenticates the reviewer field. There is no face or minor detector anywhere on the ship path. Since 2026-08-12 the PLATE verdicts are also re-read here against the built film, so a plate a reviewer rejected for an identifiable face can no longer reach the door by being rendered first -- but that too is the reviewer's free text, and a plate nobody looked at carefully passes it exactly as easily as one they did."
+    },
+    "rights_and_licence": {
+      "detector": {
+        "detector": "pd_footage_blocklist.hits over the built film",
+        "film": "lahaina_film.json",
+        "wired_here": true,
+        "state": "measured",
+        "cuts_tested": 385,
+        "hits": 0
+      },
+      "blocklist_hits": 0,
+      "rights_manifest": null,
+      "state": "partial",
+      "honest_limit": "the blocklist is a DENYLIST of assets already found to be bad. Nothing on the ship path requires positive licence or provenance clearance for the assets in the film, and this episode carries NO rights manifest."
+    },
+    "factual_support": {
+      "detector": "verify_onscreen_text (burned on-screen figures vs grade-A claims) + check_script_craft (forbidden-claim pass over the script) + check_packaging_claims (title/thumbnail/description vs this episode's own script, captions and ledgers)",
+      "claim_ledger": null,
+      "facts_ledger": "EP75_lahaina_FACTS_LEDGER.v002.md",
+      "episode_spec_forbidden_claims": 10,
+      "packaging_claims": {
+        "detector": "check_packaging_claims.evaluate over 09_package packaging",
+        "wired_here": true,
+        "state": "measured",
+        "claims_checked": 104,
+        "unsupported": 0,
+        "soft_unsupported": 50,
+        "record_sentences": 1835
+      },
+      "state": "partial",
+      "honest_limit": "verify_onscreen_text SKIPS on this episode -- there is no claims.v*.json in 01_research, so it reports ok=true without measuring anything. check_script_craft compares the SCRIPT against the FACTS ledger by literal substring, so a paraphrase evades it. episode_spec.forbidden_claims (10 declared) is read by no gate that can refuse. Narration is compared against no claim ledger anywhere on the ship path. The TITLE, THUMBNAIL TEXT and DESCRIPTION are now read against this episode's own record by check_packaging_claims (2026-08-12, after two false titles cleared every mechanical rule), and it blocks -- but it matches words, stems and numbers only: it cannot judge tone or implication, it passes a title whose words are all in a script that is itself wrong, and a paraphrase the film states in other words reads as UNVERIFIED. A green from it is not a substitute for reading the title against the film."
+    },
+    "fabricated_record": {
+      "detector": "check_packaging_qc: the AI-disclosure line in the description that is uploaded",
+      "has_ai_disclosure": true,
+      "state": "partial",
+      "honest_limit": "this is a substring test for a disclosure phrase, correctly bound to the description the scheduler uploads. NOTHING reads truth_status / source_type / license_decision, and nothing detects a generated document, judgment or police file on screen -- only a human reading the contact sheets can."
+    },
+    "plate_review": {
+      "detector": {
+        "detector": "check_plate_verdicts verdicts re-read against the built film",
+        "verdicts_file": "runs/qc/lahaina_plate_verdicts.v001.json",
+        "wired_here": true,
+        "state": "measured",
+        "plates": 135,
+        "cuts_tested": 316,
+        "rejected": 0,
+        "unresolved": 0,
+        "rejected_in_film": 0,
+        "unresolved_in_film": 0,
+        "blocking_rows": 0
+      },
+      "state": "partial",
+      "honest_limit": "the plate verdicts for this episode ARE re-read against the built film (0 rejected and 0 unresolved plate(s) found in cuts, 0 blocking). IT NEVER LOOKS AT A PICTURE -- check_plate_verdicts.py says so in its own docstring, and this reads its file, not the plates. It proves a verdict exists, that it is bound to the bytes on disk, and that no plate a reviewer rejected or left unresolved was cut into the film. Whether the plates a reviewer ACCEPTED are actually right is a judgement nothing on the ship path re-checks, and a careless review passes this exactly as easily as a careful one. The class is read from the reviewer's own reason text by substring, so a reason worded in new words falls to unclassified and blocks rather than being guessed."
+    }
+  },
+  "detector_gaps": [
+    "real_person_likeness: partial -- the frame sampling and the sha binding are real; the LIKENESS judgement is free text in this file and nothing authenticates the reviewer field. There is no face or minor detector anywhere on the ship path. Since 2026-08-12 the PLATE verdicts are also re-read here against the built film, so a plate a reviewer rejected for an identifiable face can no longer reach the door by being rendered first -- but that too is the reviewer's free text, and a plate nobody looked at carefully passes it exactly as easily as one they did.",
+    "rights_and_licence: partial -- the blocklist is a DENYLIST of assets already found to be bad. Nothing on the ship path requires positive licence or provenance clearance for the assets in the film, and this episode carries NO rights manifest.",
+    "factual_support: partial -- verify_onscreen_text SKIPS on this episode -- there is no claims.v*.json in 01_research, so it reports ok=true without measuring anything. check_script_craft compares the SCRIPT against the FACTS ledger by literal substring, so a paraphrase evades it. episode_spec.forbidden_claims (10 declared) is read by no gate that can refuse. Narration is compared against no claim ledger anywhere on the ship path. The TITLE, THUMBNAIL TEXT and DESCRIPTION are now read against this episode's own record by check_packaging_claims (2026-08-12, after two false titles cleared every mechanical rule), and it blocks -- but it matches words, stems and numbers only: it cannot judge tone or implication, it passes a title whose words are all in a script that is itself wrong, and a paraphrase the film states in other words reads as UNVERIFIED. A green from it is not a substitute for reading the title against the film.",
+    "fabricated_record: partial -- this is a substring test for a disclosure phrase, correctly bound to the description the scheduler uploads. NOTHING reads truth_status / source_type / license_decision, and nothing detects a generated document, judgment or police file on screen -- only a human reading the contact sheets can.",
+    "plate_review: partial -- the plate verdicts for this episode ARE re-read against the built film (0 rejected and 0 unresolved plate(s) found in cuts, 0 blocking). IT NEVER LOOKS AT A PICTURE -- check_plate_verdicts.py says so in its own docstring, and this reads its file, not the plates. It proves a verdict exists, that it is bound to the bytes on disk, and that no plate a reviewer rejected or left unresolved was cut into the film. Whether the plates a reviewer ACCEPTED are actually right is a judgement nothing on the ship path re-checks, and a careless review passes this exactly as easily as a careful one. The class is read from the reviewer's own reason text by substring, so a reason worded in new words falls to unclassified and blocks rather than being guessed.",
+    "factual_support: UNMEASURED -- onscreen_text_verified did not run (no_inputs): claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-075-lahaina\\01_research\\claims.v001.json (skipped honestly). This class was NOT cleared for this episode; the receipt's green for it is an absence."
+  ],
+  "measurement_unchanged": "check_final_acceptance.py ran every check and computed every number for this render; this file records which of its failures were permitted and with what value. No threshold was lowered and no check was switched off."
+}

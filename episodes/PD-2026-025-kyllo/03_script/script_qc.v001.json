@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-025-kyllo",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 1762,
+    "sentences": 110,
+    "avg_sentence_words": 16.0,
+    "flesch_kincaid_grade": 7.3,
+    "est_duration_minutes": 11.7,
+    "em_dash_per_100w": 1.1,
+    "ai_filler_hits": {},
+    "claim_link_consistency": "pass"
+  },
+  "status": "pass",
+  "findings": [
+    "FK grade 7.3 (<= 9.5). Narration 1762 words, ~11.7 min at 150 wpm (within the 10.0-12.8 standard band). ~10.2 min at 173 wpm.",
+    "No banned AI-filler phrases. Em-dash density 1.1 per 100 words.",
+    "Claim-link consistency: every factual span maps to an approved claim; dangling refs 0; all 11 claims (CLM-0001..CLM-0011) are used at least once.",
+    "Neutrality/accuracy: holding is not overstated (CLM-0010) - the ruling required a warrant and remanded; it did not ban thermal imaging. No drug depiction; grow shown only as heat/light."
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "pd_planning_os",
+  "authored": "2026-08-11",
+  "authority": "owner directive, 2026-08-11. Prose form: docs/PD_PLANNING_OS.v001.md. This file is the machine form and is what scripts read.",
+
+  "brand": {
+    "one_line": "Prime Documentary shows you the hidden rules nobody tells you about.",
+    "centre": "The Hidden Rules of America",
+    "test": "Every episode must end up at: this could happen to you.",
+    "note": "The audience subscribes to a VIEWPOINT, not a topic. That is what lets a viewer who came for a police story stay for a bank story, an HOA story, an insurance story, an algorithm story."
+  },
+
+  "premise_score": {
+    "gate": {"build": 85, "improve": 75, "discard": 74},
+    "supersedes": "The 70-point gate in PD_EDITORIAL_STRATEGY.v001.md section 3. The owner raised the bar in the same week; 85 is binding. The earlier 8-axis rubric there is replaced by the 8 axes below.",
+    "axes": [
+      {"key": "personal_threat",  "max": 20, "question": "Does the viewer feel this could happen to them?"},
+      {"key": "wtf_factor",       "max": 20, "question": "Is there a 'wait, that is allowed?' moment?"},
+      {"key": "human_stakes",     "max": 15, "question": "Is what is lost large -- money, freedom, home, job, family?"},
+      {"key": "title_power",      "max": 15, "question": "Does one sentence make a brutal title?"},
+      {"key": "visual_power",     "max": 10, "question": "Can one thumbnail carry it?"},
+      {"key": "story_arc",        "max": 10, "question": "Protagonist -> incident -> it gets worse -> reversal or outcome?"},
+      {"key": "credibility",      "max": 5,  "question": "Can it be nailed down with public records and court documents?"},
+      {"key": "franchiseability", "max": 5,  "question": "Can 10-100 similar episodes follow it?"}
+    ],
+    "hard_rule": "An interesting subject is not enough. Only subjects a viewer would feel they LOST something by not watching."
+  },
+
+  "series": [
+    {"id": "S01", "name": "LEGAL, BUT HOW?", "thesis": "Things that are lawful and still feel indefensible.", "flagship": true},
+    {"id": "S02", "name": "ONE TRAFFIC STOP", "thesis": "An ordinary day, a patrol car, one small decision, a changed life.", "flagship": true},
+    {"id": "S03", "name": "THEY TOOK THE MONEY", "thesis": "Losing money translates across every border.", "thumbnail_rule": "a huge figure plus the protagonist is sufficient"},
+    {"id": "S04", "name": "INNOCENT", "thesis": "Not true crime. What happens when the system is wrong.", "note": "Sell the failure of the institution, never the murder."},
+    {"id": "S05", "name": "WHAT POLICE CAN ACTUALLY DO", "thesis": "Never a rights explainer. Always: here is what happened to one person."},
+    {"id": "S06", "name": "THE FINE PRINT", "thesis": "Rules nobody reads that change a life. Not 'corporations are evil'."},
+    {"id": "S07", "name": "YOUR DATA KNOWS", "thesis": "The category that will still be growing in ten years."},
+    {"id": "S08", "name": "THE HOUSE WASN'T REALLY THEIRS", "thesis": "A home carries money, family, status and retirement at once."},
+    {"id": "S09", "name": "THE SYSTEM SAID NO", "thesis": "An algorithm or an institution stops a life. Title it around the human."},
+    {"id": "S10", "name": "ONE SMALL MISTAKE", "thesis": "Small cause, enormous consequence. Viewers watch to ask 'could I have avoided it?'"},
+    {"id": "S11", "name": "THE PRICE YOU NEVER SAW", "thesis": "Money, split out from S03 and pointed at pricing."},
+    {"id": "S12", "name": "48 HOURS THAT CHANGED EVERYTHING", "thesis": "Sell TIME, not the institution. Timestamped, cinematic.", "tier": "premium", "cadence_per_month": [2, 4]}
+  ],
+
+  "title_archetypes": [
+    {"id": "T1", "name": "the enormous loss",        "shape": "He Lost $___ Because of ___."},
+    {"id": "T2", "name": "abnormal legality",        "shape": "This Is Legal in America."},
+    {"id": "T3", "name": "innocence",                "shape": "He Was Never Charged. They Took It Anyway."},
+    {"id": "T4", "name": "small act, huge result",   "shape": "He Said One Word. It Changed the Case."},
+    {"id": "T5", "name": "the hidden fact",          "shape": "The Jury Never Saw This."},
+    {"id": "T6", "name": "the thing you thought was ordinary", "shape": "Your Car Is Collecting More Than You Think."},
+    {"id": "T7", "name": "time",                     "shape": "48 Hours That Destroyed Everything."},
+    {"id": "T8", "name": "allowed after all",        "shape": "Police Are Allowed to Do This."}
+  ],
+  "title_rule": "Twenty candidates per episode, generated against these eight shapes and no others. The title and the thumbnail must not say the same thing.",
+
+  "thumbnail_rule": {
+    "words": [2, 4],
+    "subjects": 1,
+    "abnormality": 1,
+    "background": 1,
+    "example": {"title": "Police Took His $86,900. He Was Never Charged.", "thumbnail_text": "NO CRIME.", "image": "cash, a man, a patrol car"}
+  },
+
+  "production_order": [
+    "1. find the thing a human finds abnormal -- not a theme",
+    "2. twenty titles",
+    "3. three thumbnail concepts",
+    "4. SCORE. Under 85 and the episode is not made. This gate comes BEFORE research.",
+    "5. primary sources, court records, public documents",
+    "6. script",
+    "7. the first thirty seconds are reviewed separately, on their own",
+    "8. production"
+  ],
+  "order_note": "The old order was theme -> script. That is abolished. Scoring happens before research, so a weak premise costs hours instead of days.",
+
+  "slate_next_100": [
+    {"pillar": "Police / Rights / Traffic Stop", "count": 30},
+    {"pillar": "Government / Money / Seizure", "count": 20},
+    {"pillar": "Wrongful Justice", "count": 15},
+    {"pillar": "Fine Print / Consumer Traps", "count": 10},
+    {"pillar": "Housing / HOA / Property", "count": 10},
+    {"pillar": "Data / Algorithm", "count": 5},
+    {"pillar": "Insurance / Healthcare", "count": 5},
+    {"pillar": "Pure experiment", "count": 5}
+  ],
+  "slate_note": "Not a quota to complete. Capital allocation: when a pillar breaks out, double down on it mid-slate; when one dies, cut it. Supersedes the 35/30/25/10 split in PD_EDITORIAL_STRATEGY.v001.md section 2.",
+
+  "funnel": {
+    "harvest": 1000,
+    "after_scoring": 100,
+    "after_titles_and_thumbs": 20,
+    "human_review": 20,
+    "built": 5,
+    "principle": "Making AI generate videos matters less than making AI throw away the 99.5% of premises that are weak."
+  },
+
+  "learning_engine_fields": [
+    "theme", "sub_theme", "victim_type", "authority_type", "money_amount",
+    "title_archetype", "title_length", "thumbnail_words", "thumbnail_has_face",
+    "ctr", "retention_30s", "avd", "avp", "impressions",
+    "browse_ratio", "suggested_ratio", "subscriber_conversion"
+  ],
+  "learning_engine_note": "After a hundred episodes this yields win rates specific to PD's own audience -- e.g. female protagonist x explicit amount x Government x 'They Took' title x three-word thumbnail. Generative AI is available to everyone; this dataset is not.",
+
+  "integrity": {
+    "absolute": "Never bend a fact to fit a title. Outcomes differ by state and by case; a title written before the research is a hypothesis, not a promise.",
+    "ai_imagery": "Where the subject is a real event, AI-generated people and scenes must never be presented as authentic record. Label reconstructions."
+  }
+}

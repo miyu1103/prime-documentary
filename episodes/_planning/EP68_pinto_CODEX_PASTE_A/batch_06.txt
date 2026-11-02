@@ -1,0 +1,68 @@
+EP68 pinto — 画像発注 バッチ 6/13（8枚）
+区分: A3 THE ROAD AND THE MIDDLE LANE — hero object H5, and the unbadged car
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, the United States between 1968 and 1981, mixed tungsten and daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous period surfaces — painted steel, brushed aluminium, laminate, bakelite, manila card, newsprint, enamel — nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, readable words on a page, seals, emblems, logos, insignia, badge, name plates, wordmarks, manufacturer script, grille emblem, licence plate, registration plate, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, fire, flame, flames, smoke, burning, embers, soot, charred surfaces, a burning vehicle, a person on fire, burn injury, scarring, skin graft, bandages, hospital, ambulance, paramedic, blood, a crashed car, collision, wreckage, crumpled bodywork, shattered windscreen, police officer, uniform, patrol car, flashing lights, handcuffs, firearm, courtroom interior, gavel, judge's bench, jury box, witness stand, prison bars, scales of justice, hourglass, a handshake, children, modern smartphones, flat-screen monitors, LED headlights, modern cars, contemporary clothing, plastic modern fittings, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いている行があります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・**この話の中の誰か**として通る人物を描かない——Richard Grimshaw、Lilly Gray とその家族、
+　Ulrich 姉妹と従姉、バンの運転者、Ford の従業員、判事、検事、弁護人。全員不可
+・**火・炎・煙・火傷・負傷者・病院を一枚も描かない。**この映画に火は一度も出ない
+・**衝突・事故車・潰れた車体・割れたフロントガラスを描かない。**衝突は一度も映さない
+・読める文字・数字・手書き・署名を一切描かない。タイプ文字は「斜めから見た質感」までで、
+　一語も判読できてはいけない
+・車体のバッジ・オーバル・車名スクリプト・グリルのエンブレム・ネームプレート・
+　ナンバープレートを一切描かない。**実在の Pinto として通る車を作らない**
+・**1968〜1981年のアメリカ。**液晶モニタ・LEDヘッドライト・携帯電話・現代の車・現代の服・
+　現代の樹脂部品を一切入れない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R041.png
+A three-lane American freeway photographed from directly above from a fixed high vantage such as a road overbridge, at midday, dry pale concrete, the lane markings running vertically through the frame, dry scrub at both shoulders, completely empty of vehicles, with only a faint dark tyre scuff in the middle lane Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], debris, glass, scorch marks, fire damage
+
+■ R042.png
+A three-lane American freeway seen from ground level at the hard shoulder, a low wide lens, heat shimmer over the concrete, no vehicles, dry Southern Californian scrub and a low ridge on the horizon Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R043.png
+An early-1970s American subcompact hatchback parked alone on a dry gravel shoulder, side profile, midday, its bodywork a plain unmarked pale colour with no badge, no nameplate, no grille emblem and no plate front or rear Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], badge, oval, script, chrome nameplate, licence plate, decals
+
+■ R044.png
+A plain unmarked early-1970s american subcompact hatchback in a pale colour, with no badge, no nameplate, no grille emblem, no model script and no plate front or rear, three-quarter from the front on a dry gravel shoulder at midday, the grille a plain dark mesh panel with nothing mounted at its centre and the bumper a single plain bar with nothing fixed to it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], grille emblem, badge, plate, fog lamps, chrome script
+
+■ R045.png
+The rear three-quarter of a plain unmarked early-1970s American subcompact hatchback in a pale colour, with no badge, no nameplate, no grille emblem, no model script and no plate front or rear, on a dry gravel shoulder at midday, the hatchback tailgate a single unbroken pressed panel with only a recessed handle, both tail lights plain, no badge and no plate Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], badge, wordmark, plate, model script
+
+■ R046.png
+Close on the rear wheel and lower rear wing of a plain unmarked early-1970s American subcompact hatchback in a pale colour, with no badge, no nameplate, no grille emblem, no model script and no plate front or rear, the tyre sidewall plain, the paint slightly chalked, gravel underneath Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], tyre brand lettering
+
+■ R047.png
+The driver's door and window of a plain unmarked early-1970s American subcompact hatchback in a pale colour, with no badge, no nameplate, no grille emblem, no model script and no plate front or rear, seen from outside, sky reflected across the glass, the interior not visible Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R048.png
+The empty driver's seat and steering wheel of an early-1970s American car seen from the passenger side, vinyl and hard plastic, nobody in the car, the door shut Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], warning labels, badge on the horn boss, instrument numerals
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（このバッチは R041.png 〜 R048.png）で保存してください。**他のバッチの ID を使わないこと。**
+保存先 H:\pd-media\assets\ai\pinto\
+長辺 3840px 以上・16:9・PNG。

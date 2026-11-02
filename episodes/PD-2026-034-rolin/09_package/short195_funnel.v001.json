@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 195,
+  "episode_id": "PD-2026-034-rolin",
+  "slug": "rolin",
+  "loop": true,
+  "loop_join": "The closing beat p25 is short195_01.png, the archive aisle of shelved record boxes with a single figure at the far end, run in rewind under the FULL CASE card and held to the final frame -- the same shot frame 0 opens on, so the loop walks back down the same aisle instead of cutting.",
+  "second_watch_detail": "The aisle of identical record boxes is just an archive on the first pass; after the count in L2 it reads as sixty-five thousand of them, one box to a seizure.",
+  "funnel_question_left_for_longform": "What happened to the one family whose case put those numbers in front of a federal judge?",
+  "funnel_long_title": "They Took His Life Savings at the Airport — No Charges",
+  "funnel_long_video_id": "6ozsIfwqrP0",
+  "description_line_1": "▶ FULL CASE: They Took His Life Savings at the Airport — No Charges | https://youtu.be/6ozsIfwqrP0",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "They Took His Life Savings at the",
+    "ctaLongThumbSrc": "shorts/short195/short195_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What happened to the one family whose case put those numbers in front of a federal judge? The full case is here: https://youtu.be/6ozsIfwqrP0",
+  "note": "Record authored on 2026-09-01 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the contact sheet and the beat list in remotion/src/data/short195.ts, the CTA block from that same file, the long-form id from runs/short_funnel/episode_live_video_map.v001.json. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

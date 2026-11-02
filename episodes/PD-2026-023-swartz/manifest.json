@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-023-swartz",
+  "topic_id": "TOP-20260630-023",
+  "slug": "swartz",
+  "title_working": "The Internet's Own Boy: The Story of Aaron Swartz",
+  "state": "script_verified",
+  "risk_class": "R3",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 31,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "ai_prompts": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-023-swartz-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-023-swartz/03_script/script.annotated.v001.json",
+      "checksum": "sha256:4720227d4e2e9068d6251a210e9095c44b6cbbad87488fb68d09cb8eaee57b08",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Claude owns research+script+design (left process); Codex begins at scenes/visuals/narration/music/motion/edit/render (right process). AI image gen = Codex generation (NOT SDXL); edit = Remotion + FFmpeg, local CPU libx264, quality-first.",
+    "FEATURE ~30 min = mid profile (runtime band 27-33). Narration ~4,889 [VO:] words (~28-29 min at ElevenLabs pace ~173 wpm); runtime reached with hero shots, factory b-roll, designed transitions, held memorial beats, and 4-part bookends.",
+    "OUTPUT GATE = docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md. Codex must satisfy rows 1-16 from the first render; not done until check_final_acceptance.py 23 exits 0. Self-asserted QC forbidden.",
+    "R3 + SENSITIVE (death by suicide). DEDICATED legal/rights + safe-handling review REQUIRED before publish. SAFE-HANDLING LOCK: death stated ONCE ('died by suicide on January 11, 2013, at age 26'); NO method/location/note/scene; never 'committed suicide'. NO single-cause narrative (causation attributed to the family statement). 988 Suicide & Crisis Lifeline on-screen + in description; CTA quiet/respectful. No real-person likeness.",
+    "WORDING LOCKS: co-authored RSS 1.0 (not invented); key collaborator on Markdown (not co-created); helped build CC technical layer (not founded); Reddit co-owner via Infogami merger (co-founder disputed). Charged, never tried or convicted. JSTOR settled civilly + did not want charges; MIT neutral. THE 35 YEARS = theoretical stacked statutory maximum, always paired with the ~6-month plea signal (Peters) and the Kerr critique. Aaron's Law proposed and NEVER passed; CFAA not meaningfully reformed.",
+    "Durable source hashes pending (content_hash=sha256:pending) -> compute at fact_recheck before publish. Current facts to be re-verified pre-publish.",
+    "Script approval APR-0001 is PENDING (owner gate). Do not treat the script as owner-approved until APR-0001 flips. No publish/upload/scheduling without exact-revision approval + R3 review."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-30T12:00:00+09:00",
+  "updated_at": "2026-06-30T12:00:00+09:00"
+}

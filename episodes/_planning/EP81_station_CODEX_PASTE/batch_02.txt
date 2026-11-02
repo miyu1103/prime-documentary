@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 2/24（8枚）
+区分: ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S009.png
+   [S009]  flags: 
+   A wooden entrance ramp and handrail leading to a pair of doors, seen from below in bright daylight, hard shadows on the boards
+
+2) S010.png
+   [S010]  flags: 
+   Architectural floor plan of a small single-storey building drawn in clean black line on white, brilliantly lit from above, rooms and doorways only, no lettering
+
+3) S011.png
+   [S011]  flags: 
+   A close-up of a floor plan on a lit drafting table, a scale rule laid across one doorway, drawn lines only, no numerals
+
+4) S012.png
+   [S012]  flags: 
+   An empty nightclub dance floor in the afternoon with the house lights on full, scuffed wood, a raised platform at one end, no people
+
+5) S013.png
+   [S013]  flags: 
+   An empty raised performance platform in a small venue, house lights blazing, a bare drum riser and microphone stands, no band
+
+6) S014.png
+   [S014]  flags: 
+   A small bar room in a roadside club, lit by bright ceiling fixtures, stools upturned on the counter, no one present
+
+7) S015.png
+   [S015]  flags: 
+   A pool room in a small club in daylight, one table, a low pendant lamp burning above it, windows along one wall
+
+8) S016.png
+   [S016]  flags: 
+   A sun room with windows on three sides, brilliant winter daylight flooding in, a few tables, empty

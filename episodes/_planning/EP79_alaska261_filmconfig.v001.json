@@ -1,0 +1,133 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "alaska261",
+  "episode_id": "PD-2026-079-alaska261",
+  "assets": "episodes/PD-2026-079-alaska261/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-079-alaska261/06_audio/narration_index.v001.json",
+  "narration": "alaska261/narration.mp3",
+  "captions": "episodes/PD-2026-079-alaska261/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/alaska261_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 24.974,
+  "hookLine": "There is a gauge in this story.",
+  "captionLeadSeconds": 0.0,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses",
+        "_row": "invariant-11"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["MEASURED ONCE.", "TWO AND A HALF YEARS EARLIER."],
+        "style": "emphasis",
+        "emphasisWords": ["MEASURED ONCE."],
+        "_row": "script:13-16"
+      }
+    ],
+    "ACT_1": [
+      {"kind": "acttitle", "title": "ONE SCREW. ONE NUT. TWO THREADS.", "kicker": "ACT ONE", "index": 1, "_row": "structure / script:30-33"},
+      {"kind": "mechanism", "mechanism": "gears", "_row": "AK-301 / script:22-25"},
+      {"kind": "kinetic", "lines": ["THE TAIL OF AN AIRLINER", "IS NOT FIXED."], "style": "emphasis", "emphasisWords": ["IS NOT FIXED."], "_row": "script:20-21"},
+      {"kind": "stat", "value": 16, "label": "full turns in each of the two thread spirals", "topLabel": "THE THREADS", "_row": "AK-505 / script:26-28"},
+      {"kind": "stat", "value": 32, "label": "turns of steel holding the tail onto the rest of it", "topLabel": "IN TOTAL", "_row": "AK-505 / script:29"},
+      {"kind": "kinetic", "lines": ["31 JANUARY 2000.", "ALASKA AIRLINES FLIGHT 261."], "style": "emphasis", "emphasisWords": ["31 JANUARY 2000."], "_row": "AK-001 / script:35-36"},
+      {"kind": "stat", "value": 88, "label": "people on board, from the load sheet", "topLabel": "THE LOAD SHEET", "_row": "AK-002 / script:37-39"},
+      {"kind": "compbars", "items": [{"label": "FIRST CLASS", "value": 10}, {"label": "COACH", "value": 70}, {"label": "CREW", "value": 5}], "_row": "AK-002 / script:37"},
+      {"kind": "stat", "value": 35000, "label": "pounds, just under", "topLabel": "FUEL ON BOARD", "_row": "AK-003 / script:40"},
+      {"kind": "kinetic", "lines": ["THE TAIL HAS STOPPED MOVING.", "NOT SLIPPED. NOT DRIFTED."], "style": "emphasis", "emphasisWords": ["NOT SLIPPED. NOT DRIFTED."], "_row": "AK-005 / script:41-46"},
+      {"kind": "quote", "quote": "It appears to be jammed, the whole thing.", "attribution": "The captain, on the radio to the company", "_row": "AK-016 / script:50"},
+      {"kind": "quote", "quote": "We have a jammed stabilizer and we are maintaining altitude with difficulty.", "attribution": "The first officer to a controller, nineteen minutes past four", "_row": "AK-007 / script:59-61"},
+      {"kind": "quote", "quote": "I need to get down about ten, change my configuration, make sure I can control the jet.", "attribution": "The captain's plan, out over the bay", "_row": "AK-008 / script:65"},
+      {"kind": "kinetic", "lines": ["TEN MINUTES", "HOLDING IT BY HAND."], "style": "emphasis", "emphasisWords": ["TEN MINUTES"], "_row": "script:77-83"},
+      {"kind": "quote", "quote": "I think if it's controllable, we oughta just try to land it.", "attribution": "The first officer, eighteen seconds later", "_row": "AK-010 / script:93"},
+      {"kind": "stat", "value": 14, "label": "degrees leading edge up, at least, which puts the nose straight down", "suffix": "°", "topLabel": "THE STABILIZER MOVED", "_row": "AK-014 / script:100"}
+    ],
+    "ACT_2": [
+      {"kind": "acttitle", "title": "ONE CAUSE. THREE CONTRIBUTING FACTORS.", "kicker": "ACT TWO", "index": 2, "_row": "structure / script:112-113"},
+      {"kind": "quote", "quote": "a loss of airplane pitch control resulting from the in-flight failure of the horizontal stabilizer trim system jackscrew assembly's acme nut threads", "attribution": "The National Transportation Safety Board, probable cause", "_row": "AK-101 / script:105"},
+      {"kind": "quote", "quote": "The thread failure was caused by excessive wear resulting from Alaska Airlines' insufficient lubrication of the jackscrew assembly.", "attribution": "The probable cause, second sentence", "_row": "AK-101 / script:106"},
+      {"kind": "kinetic", "lines": ["THE EXTENDED LUBRICATION INTERVAL.", "AND THE APPROVAL OF THAT EXTENSION."], "style": "emphasis", "emphasisWords": ["AND THE APPROVAL OF THAT EXTENSION."], "_row": "AK-102 / script:108"},
+      {"kind": "kinetic", "lines": ["THE EXTENDED END PLAY CHECK.", "AND THE APPROVAL OF THAT EXTENSION."], "style": "emphasis", "emphasisWords": ["AND THE APPROVAL OF THAT EXTENSION."], "_row": "AK-103 / script:109"},
+      {"kind": "kinetic", "lines": ["NO FAIL-SAFE", "FOR TOTAL THREAD LOSS."], "style": "emphasis", "emphasisWords": ["FOR TOTAL THREAD LOSS."], "_row": "AK-104 / script:111"},
+      {"kind": "stat", "value": 3, "label": "contributing factors, two of which are approvals", "topLabel": "ONE CAUSE", "_row": "AK-102 to AK-104 / script:112-114"},
+      {"kind": "kinetic", "lines": ["THE THREADS WERE RECOVERED", "WRAPPED AROUND THE SCREW."], "style": "emphasis", "emphasisWords": ["WRAPPED AROUND THE SCREW."], "_row": "AK-501 / script:116-118"},
+      {"kind": "stat", "value": 90, "label": "per cent of the thread thickness had worn away", "suffix": "%", "topLabel": "THE RECOVERED NUT", "_row": "AK-502 / script:119-120"},
+      {"kind": "stat", "value": 22, "label": "per cent gone is the maximum the rules allow in service", "suffix": "%", "topLabel": "THE SCRAP POINT", "_row": "AK-503 / script:123-124"},
+      {"kind": "compbars", "items": [{"label": "WORN AWAY, PER CENT", "value": 90}, {"label": "SCRAP LIMIT, PER CENT", "value": 22}], "_row": "AK-502 and AK-503 / script:119-126"},
+      {"kind": "kinetic", "lines": ["NO INTACT THREADS AT ALL.", "ONLY RIDGES WHERE THEY HAD BEEN."], "style": "emphasis", "emphasisWords": ["NO INTACT THREADS AT ALL."], "_row": "AK-504 / script:127-128"},
+      {"kind": "stat", "value": 190000, "label": "pounds of load to shear all thirty-two turns at once", "topLabel": "MORE THAN", "_row": "AK-505 / script:130"},
+      {"kind": "kinetic", "lines": ["A PART THAT SNAPS IS AN EVENT.", "A PART THAT WEARS IS NOT."], "style": "emphasis", "emphasisWords": ["A PART THAT WEARS IS NOT."], "_row": "script:134-137"}
+    ],
+    "ACT_3": [
+      {"kind": "acttitle", "title": "THE STAIRCASE", "kicker": "ACT THREE", "index": 3, "_row": "structure / script:155-174"},
+      {"kind": "stat", "value": 600, "label": "to nine hundred flight hours, the manufacturer's own recommendation", "topLabel": "GREASE IT EVERY", "_row": "AK-201 / script:156"},
+      {"kind": "timeline", "events": [
+        {"year": "MARCH 1985", "text": "Every 700 flight hours"},
+        {"year": "MARCH 1987", "text": "Every 500 flight hours"},
+        {"year": "JULY 1988", "text": "Every 1,000 flight hours"},
+        {"year": "FEBRUARY 1991", "text": "Every 1,200 flight hours"},
+        {"year": "DECEMBER 1994", "text": "Every 1,600 flight hours"},
+        {"year": "JULY 1996", "text": "Eight months, no flight-hour limit"}
+      ], "_row": "AK-202 to AK-207 / script:158-170"},
+      {"kind": "kinetic", "lines": ["1987 IS THE HIGH-WATER MARK.", "EVERYTHING AFTER IT GOES ONE WAY."], "style": "emphasis", "emphasisWords": ["EVERYTHING AFTER IT GOES ONE WAY."], "_row": "AK-203 / script:164-165"},
+      {"kind": "stat", "value": 2550, "label": "flight hours is what eight months actually meant", "topLabel": "AT THOSE RATES", "_row": "AK-207 / script:172"},
+      {"kind": "stat", "value": 400, "label": "per cent greater than it was in 1987", "suffix": "%", "topLabel": "MORE THAN", "_row": "AK-208 / script:174"},
+      {"kind": "quote", "quote": "The investigation did not determine what information, if any, was presented as justification for the extensions of 1988, 1991 and 1994.", "attribution": "The Safety Board, on the paperwork behind three extensions", "_row": "AK-209 / script:177"},
+      {"kind": "kinetic", "lines": ["IT IS NOT SAYING IT WAS BAD.", "IT IS SAYING IT COULD NOT FIND ONE."], "style": "emphasis", "emphasisWords": ["IT IS SAYING IT COULD NOT FIND ONE."], "_row": "AK-209 / script:178-179"},
+      {"kind": "kinetic", "lines": ["THE ONLY UNITED STATES CARRIER", "ON CALENDAR TIME ALONE."], "style": "emphasis", "emphasisWords": ["ON CALENDAR TIME ALONE."], "_row": "AK-210 / script:181"},
+      {"kind": "kinetic", "lines": ["WEAR TRACKS FLIGHT HOURS.", "IT DOES NOT TRACK CALENDAR TIME."], "style": "emphasis", "emphasisWords": ["IT DOES NOT TRACK CALENDAR TIME."], "_row": "AK-211 / script:184-187"},
+      {"kind": "kinetic", "lines": ["29 MAY 1984.", "SIXTEEN YEARS EARLY."], "style": "emphasis", "emphasisWords": ["SIXTEEN YEARS EARLY."], "_row": "AK-705 / script:196"},
+      {"kind": "quote", "quote": "The grease was dry, and without evidence of recent renewal.", "attribution": "McDonnell Douglas service letter to operators, 29 May 1984", "_row": "AK-705 / script:201-203"},
+      {"kind": "stat", "value": 5780, "label": "flight hours, after which another airline's nut was past the limit", "topLabel": "AND IN 1990", "_row": "AK-706 / script:209"},
+      {"kind": "stat", "value": 40, "label": "thousandths of an inch, above which it comes off the aeroplane", "topLabel": "THE LIMIT", "_row": "AK-302 / script:222-223"},
+      {"kind": "timeline", "events": [
+        {"year": "MARCH 1985", "text": "End play check every 5,000 flight hours"},
+        {"year": "JULY 1988", "text": "Every 26 months, about 6,400 hours"},
+        {"year": "AT THE ACCIDENT", "text": "Every 30 months, about 9,550 hours"}
+      ], "_row": "AK-305 to AK-308 / script:229-233"},
+      {"kind": "kinetic", "lines": ["AN IN-LIMITS READING", "WAS NOT REQUIRED TO BE RECORDED."], "style": "emphasis", "emphasisWords": ["WAS NOT REQUIRED TO BE RECORDED."], "_row": "AK-309 / script:237"},
+      {"kind": "kinetic", "lines": ["A PASS PRODUCED SILENCE.", "SILENCE LOOKS LIKE A GOOD RESULT."], "style": "emphasis", "emphasisWords": ["A PASS PRODUCED SILENCE."], "_row": "AK-309 / script:243-249"}
+    ],
+    "ACT_4": [
+      {"kind": "acttitle", "title": "THE INSTRUMENT", "kicker": "ACT FOUR", "index": 4, "_row": "structure / script:277-291"},
+      {"kind": "kinetic", "lines": ["27 SEPTEMBER 1997.", "THE LAST END PLAY CHECK."], "style": "emphasis", "emphasisWords": ["27 SEPTEMBER 1997."], "_row": "AK-401 / script:275"},
+      {"kind": "kinetic", "lines": ["A TWO-PERSON JOB", "WITH ONE NUMBER AT THE END OF IT."], "style": "emphasis", "emphasisWords": ["WITH ONE NUMBER AT THE END OF IT."], "_row": "AK-301 / script:277-284"},
+      {"kind": "kinetic", "lines": ["IF THE FIXTURE IS THE WRONG SHAPE,", "THE NEEDLE STILL GIVES YOU A NUMBER."], "style": "emphasis", "emphasisWords": ["THE NEEDLE STILL GIVES YOU A NUMBER."], "_row": "AK-405 / script:285-291"},
+      {"kind": "quote", "quote": "I don't remember the exact number, but it was below forty thousandths, I believe.", "attribution": "The mechanic who performed the 1997 check, to investigators", "_row": "AK-402 / script:293"},
+      {"kind": "stat", "value": 1, "label": "restraining fixture in the entire inventory, made in-house", "topLabel": "AT OAKLAND", "_row": "AK-405 / script:303-307"},
+      {"kind": "compbars", "items": [{"label": "BEFORE THE ACCIDENT", "value": 1}, {"label": "MADE A MONTH AFTER", "value": 11}], "_row": "AK-405 and AK-406 / script:303-308"},
+      {"kind": "quote", "quote": "we were directed to build the tools, and we did exactly what we were told", "attribution": "Alaska Airlines' manager of tool control, to investigators", "_row": "AK-407 / script:309-311"},
+      {"kind": "stat", "value": 18, "label": "aeroplanes temporarily grounded over a doubt about a clamp", "topLabel": "2 AUGUST 2000", "_row": "AK-408 and AK-409 / script:314-316"},
+      {"kind": "kinetic", "lines": ["THE FIXTURE COULD NOT BE TESTED.", "IT WAS NOT IN SERVICEABLE CONDITION."], "style": "emphasis", "emphasisWords": ["IT WAS NOT IN SERVICEABLE CONDITION."], "_row": "AK-410 / script:318-320"},
+      {"kind": "kinetic", "lines": ["DECEMBER 2001.", "NO CHARGES WOULD BE FILED."], "style": "emphasis", "emphasisWords": ["NO CHARGES WOULD BE FILED."], "_row": "AK-901 / script:325-329"},
+      {"kind": "stat", "value": 214, "label": "jackscrew assemblies sent for overhaul between 1996 and 1999", "topLabel": "THE BENCH RECORDS", "_row": "AK-704 / script:351-352"},
+      {"kind": "compbars", "items": [{"label": "AT 45 THOUSANDTHS OR MORE", "value": 13}, {"label": "AT 55 OR MORE", "value": 5}], "_row": "AK-704 / script:353-354"},
+      {"kind": "stat", "value": 75, "label": "thousandths of an inch, nearly twice the limit for leaving service", "topLabel": "THE HIGHEST ONE", "_row": "AK-704 / script:355"},
+      {"kind": "quote", "quote": "if one thread fails, the other carries the load", "attribution": "A Boeing engineer, at the public hearing", "_row": "AK-602 / script:371"},
+      {"kind": "kinetic", "lines": ["NINETY PER CENT GONE: COVERED.", "ALL OF IT GONE: NOT CONSIDERED."], "style": "emphasis", "emphasisWords": ["ALL OF IT GONE: NOT CONSIDERED."], "_row": "AK-601 and AK-603 / script:368-378"},
+      {"kind": "quote", "quote": "the nut was not classed as a system, and so was not required to meet the certification requirements that apply to systems", "attribution": "The FAA's senior certification engineer, at the public hearing", "_row": "AK-604 / script:381"}
+    ],
+    "ENDING": [
+      {"kind": "kinetic", "lines": ["IT LOOKS LIKE A NEEDLE,", "NOT MOVING."], "style": "emphasis", "emphasisWords": ["NOT MOVING."], "_row": "script:405-409"},
+      {"kind": "kinetic", "lines": ["AND WHATEVER IT SAYS,", "IT GOES IN THE FILE."], "style": "emphasis", "emphasisWords": ["IT GOES IN THE FILE."], "_row": "AK-902 / script:419-422"},
+      {"kind": "lowerthird", "primary": "AI-assisted visualization", "secondary": "symbolic reconstruction, no real likenesses", "_row": "invariant-11"}
+    ]
+  },
+  "_declared_values": {
+    "assets": "episodes/PD-2026-079-alaska261/05_visuals/asset_manifest.v003.json -- the canonical name build_case_film_generic defaults to and the file scripts/build_asset_manifest_motionfirst.py --slug alaska261 writes. It does not exist yet: 198 plates with depth are in remotion/public/alaska261/img and 51 stock clips are staged, and the manifest is the scan step that turns them into a pool. Build it before the film.",
+    "leadSeconds": "0 -- VC-0001 is voiced from frame 0; narration_index.v001.json puts the HOOK at 0.0s.",
+    "openingVariant": "'overlay' -- BrandOpening over the hook's settle, as on EP74-EP77 and EP80. The voice does not stop.",
+    "captionLeadSeconds": "0.0 -- the same value EP74, EP75, EP77 and EP80 ship. The on-disk 08_edit/captions.final.v001.srt is NOT what the render burns: step [4/7] of _finish_episode.sh regenerates the srt from the narration index and step [4b] polish_captions_srt.py shifts it to THIS number as a destination, not an increment. Changing the lead is a one-line change here, not an edit to the srt.",
+    "hookSeconds": "MEASURED 2026-08-27 from 06_audio/narration_index.v001.json: section HOOK spans 0.0 to 24.974 across seven chunks (VC-0001..VC-0007). ACT_1 opens at 26.774. Not estimated.",
+    "hookLine": "VC-0001 verbatim.",
+    "section_windows": "MEASURED from the narration index, not assumed: HOOK 0.0-24.974, ACT_1 26.774-365.912, ACT_2 367.712-542.419, ACT_3 544.219-1025.0, ACT_4 1026.8-1530.933, ENDING 1532.733-1604.078. Total 1604.078 s = 26.7 min, inside episode_spec runtime_seconds [1740, 1920] once the brand opening, hook padding and ending bookend are added by the finisher.",
+    "figures_by_section": "Authored 2026-08-27 from 03_script/script.en.v001.md and EP79_alaska261_FACTS_LEDGER.v001.md. Counts are 16/14/17/17 across ACT_1..ACT_4, inside episode_spec's figure_beats_per_act [13, 17]; HOOK 2 and ENDING 3, 69 cards in total. ACT_2 carries 14 rather than 17 because its window is the shortest at 174.7 s -- 17 cards there would be one every 10 s at a 6 s hold. EVERY number on a card is a number the narration speaks: 16, 32, 88, 10, 70, 5, 35000, 14, 3, 90, 22, 190000, 600, 700, 500, 1000, 1200, 1600, 2550, 400, 5780, 40, 5000, 6400, 9550, 1, 11, 18, 214, 13, 5, 75 all appear in 03_script/script.en.v001.md, and every stat `value` is numeric with the unit in `label` or `suffix`, so no card can render NaN. No `stat` carries a `group` key -- FigureBeats types `group` on `numberticker` only.",
+    "no_OP_section": "episode_spec's section_vocabulary lists OP, but narration_index has no OP chunks -- the brand opening is an overlay on the HOOK, not a spoken section. A card there would have no window to live in.",
+    "disclosure_cards": "build_case_film_generic merges the AI-disclosure lowerthird onto the FIRST and LAST figure after sorting, overwriting whatever payload is there. So the first HOOK card and the last ENDING card are authored AS that lowerthird; nothing written is destroyed by the merge. This is why ENDING carries three cards and not two.",
+    "quarantine": "Nothing on screen accuses the mechanic who performed the September 1997 check (episode_spec forbidden_claims). His card is his own words and the card beside it is the tool his employer gave him. No card states a number for that check -- none exists (AK-309, AK-402). No card says Alaska Airlines was prosecuted: the DECEMBER 2001 card states that no charges would be filed, which is what the record says (AK-901). The 0.043, 0.048 and 0.075 inch readings appear only on ACT_4 cards labelled as the bench records of assemblies from other carriers (AK-702, AK-704), never as this aeroplane's. No card names a motive for the FAA approvals. No card blames the crew: their three quote cards are transcript, and the 14-degree card reports the stabilizer, not a pilot action. forbidden_subjects bans the accident itself, so no card depicts or names the impact, the wreckage or the recovery; the ENDING returns to the needle."
+  }
+}

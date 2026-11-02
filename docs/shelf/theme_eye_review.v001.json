@@ -1,0 +1,492 @@
+{
+ "reviewed": [
+  {
+   "theme": "americana_1930s_1970s",
+   "usable": 334,
+   "score": 1.8,
+   "eye_pct": 5,
+   "verdict": "QUARANTINE",
+   "note": "19 of 20 are 16th-18th c European allegorical engravings from the Met; the query 'america' matched 'allegory of america'"
+  },
+  {
+   "theme": "courtroom_justice",
+   "usable": 1889,
+   "score": 30.3,
+   "eye_pct": 5,
+   "verdict": "QUARANTINE",
+   "note": "1 courthouse in 20. Mountain, Delhi mosque, bedroom, Coca-Cola shelf, garden swing, Italian fruit market, Chomsky on green screen. 'bench'/'bank'/'case' collisions"
+  },
+  {
+   "theme": "legal_court",
+   "usable": 2292,
+   "score": 17.5,
+   "eye_pct": 10,
+   "verdict": "QUARANTINE",
+   "note": "1 Lady Justice statue in 20. Gym equipment, Hindu temple, London buses, Mars, Eiffel Tower, Swiss farm ('court farm yard'), Brussels palace of justice"
+  },
+  {
+   "theme": "government_buildings",
+   "usable": 3156,
+   "score": 74.4,
+   "eye_pct": 25,
+   "verdict": "US-FILTER",
+   "note": "score is generous. 4-5 US buildings in 20; rest Russian/Afghan/St Kitts flags, Delhi ministry, mosque, Westminster, Berlin. Plus an American football referee ('official') and a SEAL, the animal ('seal')"
+  },
+  {
+   "theme": "prison_jail",
+   "usable": 1566,
+   "score": 47.3,
+   "eye_pct": 35,
+   "verdict": "REVIEW",
+   "note": "7 of 20 real (guard tower, prison yard, barbed wire, cage). Off: table tennis, grapes, three spiders ('yard'), cowboy saddle"
+  },
+  {
+   "theme": "crime_police",
+   "usable": 1887,
+   "score": null,
+   "eye_pct": 57,
+   "verdict": "USABLE-WITH-CARE",
+   "note": "11-12 of 20 real. Off: butterflies, beer mug, cassette, spider, nativity. Barbed wire appears 4 times = diversity risk"
+  },
+  {
+   "theme": "documents_paper",
+   "usable": 2732,
+   "score": null,
+   "eye_pct": 95,
+   "verdict": "GOOD",
+   "note": "19 of 20 on theme. Caveat: several German newspapers with legible foreign text"
+  },
+  {
+   "theme": "surveillance_tech",
+   "usable": 4973,
+   "eye_pct": 30,
+   "verdict": "REVIEW",
+   "note": "raspberries matched 'raspberry pi'. Two British phone boxes, Eiffel, Munich Olympia tower. BRANDS VISIBLE: Canon, Samsung, Apple"
+  },
+  {
+   "theme": "finance_money",
+   "usable": 3119,
+   "eye_pct": 40,
+   "verdict": "US-FILTER",
+   "note": "currency is mostly EURO and POUND; one US-dollar tile in 20. Off: beer, mushrooms, chives on a cutting board ('board'), pole vault"
+  },
+  {
+   "theme": "police_modern",
+   "usable": 1771,
+   "score": 33.3,
+   "eye_pct": 0,
+   "verdict": "QUARANTINE",
+   "note": "ZERO real police in 20. TWO CARTOON POLICE FIGURINES, one steampunk CG hover-car. BRANDS: BMW, Morgan, IKEA. Score said 33.3% because titles contain 'police'"
+  },
+  {
+   "theme": "civic_voting",
+   "usable": 803,
+   "eye_pct": 75,
+   "verdict": "GOOD",
+   "note": "voting booths, protests, US flags. Caveat: 6 of 20 are US flags = repetition risk"
+  },
+  {
+   "theme": "forensics_dna",
+   "usable": 731,
+   "eye_pct": 45,
+   "verdict": "REVIEW",
+   "note": "snail shell matched 'helix'. A bloody Halloween horse head is off-brand. Chairlift matched 'lift'"
+  },
+  {
+   "theme": "medical_lab",
+   "usable": 1638,
+   "eye_pct": 85,
+   "verdict": "GOOD",
+   "note": "labs, doctors, test tubes, x-ray. Off: creepy hotel corridor, strawberries"
+  },
+  {
+   "theme": "small_town",
+   "usable": 1451,
+   "score": 21.0,
+   "eye_pct": 8,
+   "verdict": "QUARANTINE",
+   "note": "contains the 3D CARTOON COWBOY named in pd-factory-shelf-mislabeled. THYSSEN brand sign, Hungarian railway, Netherlands fields, rice paddy, fantasy CG diva"
+  },
+  {
+   "theme": "newspapers_printing",
+   "usable": 1112,
+   "eye_pct": 30,
+   "verdict": "REVIEW",
+   "note": "'printing press' matched 'running water', 'running kite', 'horse running'. THE TIMES masthead is British and legible"
+  },
+  {
+   "theme": "bank_and_branch",
+   "usable": 470,
+   "score": 12.1,
+   "eye_pct": 75,
+   "verdict": "GOOD",
+   "note": "METRIC WAS WRONG THE OTHER WAY. Mostly real American bank buildings from wikimedia; my score excluded 'bank' as a generic word. Caveat: a Pawn Stars cast photo is an identifiable real person"
+  },
+  {
+   "theme": "decision_rooms",
+   "usable": 209,
+   "score": 12.4,
+   "eye_pct": 20,
+   "verdict": "US-FILTER",
+   "note": "real meetings exist (EEO committee, Ford labor strike) but Bangladesh x2, Russia x2, Sweden, Britain dominate. Five tiles are blank paper"
+  },
+  {
+   "theme": "property_home",
+   "usable": 2129,
+   "eye_pct": 45,
+   "verdict": "REVIEW",
+   "note": "picket fence and suburban garage are good; also grain plant, cow, Brooklyn Bridge, P-51 Mustang, Greek FOR SALE sign"
+  },
+  {
+   "theme": "household_loss",
+   "usable": 289,
+   "eye_pct": 30,
+   "verdict": "QUARANTINE",
+   "note": "CHANNEL RISK: a 'FREE PALESTINE / END THE OCCUPATION' door sign. Another 3D cartoon figure. Berlin TV tower. Hand sanitizer"
+  },
+  {
+   "theme": "factory_manufacturing",
+   "usable": 2195,
+   "eye_pct": 85,
+   "verdict": "GOOD",
+   "note": "real American industrial archive (US Steel Homestead, Colorado Fuel & Iron, Champion paper mill NC). CAUTION: Lewis Hine child-labour photographs -- episode specs forbid 'child'"
+  },
+  {
+   "theme": "war_history",
+   "usable": 1129,
+   "eye_pct": 100,
+   "verdict": "RIGHTS-CAUTION",
+   "note": "100% on theme, but many are NAMED IDENTIFIABLE PEOPLE (gene mckinney, daniel ledesman, pfc kyle cross, newt gingrich) = the first blocking class. Artillery appears 6 times"
+  },
+  {
+   "theme": "anonymous_crowd",
+   "usable": 302,
+   "eye_pct": 20,
+   "verdict": "QUARANTINE",
+   "note": "'feet' matched a plate of pork feet. Swan, bear, bumblebee, frog, carousel, fashion model on white"
+  },
+  {
+   "theme": "economy_crisis",
+   "usable": 922,
+   "eye_pct": 25,
+   "verdict": "QUARANTINE",
+   "note": "CHINESE SCHOOLCHILDREN in uniform matched 'queue'. Children + foreign. Also Sicily, Barcelona, German traffic sign, Swedish factory brand sign"
+  },
+  {
+   "theme": "depression_hardship",
+   "usable": 174,
+   "eye_pct": 72,
+   "verdict": "GOOD",
+   "note": "real American Depression archive: six bread lines, Bowery mission, parade of unemployed men NY, soup kitchen. Faces are identifiable but historic"
+  },
+  {
+   "theme": "school_youth",
+   "usable": 884,
+   "eye_pct": 55,
+   "verdict": "US-FILTER",
+   "note": "on theme but SATURATED WITH CHILDREN, which episode specs forbid. Kyoto torii gates, Indonesian school bus, Polish sign"
+  },
+  {
+   "theme": "stock_market_exchange",
+   "usable": 452,
+   "eye_pct": 65,
+   "verdict": "GOOD",
+   "note": "real American financial archive: Wall Street, NYSE floor, three stock certificates, Chicago Stock Exchange. Foreign: Leeds x2, India, Melbourne x2, Tokyo"
+  },
+  {
+   "theme": "hands_and_transactions",
+   "usable": 597,
+   "eye_pct": 25,
+   "verdict": "REVIEW",
+   "note": "modern mixkit lifestyle stock, mostly European-looking. BRAND: Apple MacBook x3. Chinese warning label on a 3D printer"
+  },
+  {
+   "theme": "night_road_lamp",
+   "usable": 422,
+   "eye_pct": 25,
+   "verdict": "REVIEW",
+   "note": "5 real street lamps; rest is bokeh and glitter filler. One tile is a VISIBLY CORRUPTED image (colour-bar glitch on a Daimler)"
+  },
+  {
+   "theme": "clock_and_waiting",
+   "usable": 304,
+   "eye_pct": 50,
+   "verdict": "REVIEW",
+   "note": "half are green-screen and motion-graphic filler rather than footage. BRAND: a YouTube-branded 3D scene. Falcon, raccoon, tattooed hands"
+  },
+  {
+   "theme": "corridor_and_stairs",
+   "usable": 170,
+   "eye_pct": 85,
+   "verdict": "GOOD",
+   "note": "genuinely stairwells. All European architecture (Dortmund, Dusseldorf). One YouTube SUBSCRIBE outro template"
+  },
+  {
+   "theme": "selling_floor",
+   "usable": 634,
+   "eye_pct": 30,
+   "verdict": "US-FILTER",
+   "note": "BRANDS: Carrefour Paris storefront, Harrods London. Mostly foreign. Feather, cupcakes, roof panels off-theme"
+  },
+  {
+   "theme": "navy_harbor",
+   "usable": 349,
+   "eye_pct": 100,
+   "verdict": "RIGHTS-CAUTION",
+   "note": "excellent US Navy archive (NARA + IA newsreels) but NAMED PEOPLE again: bmcs thoma, thomas zets, captain larry seaqui, Senator John Warner"
+  },
+  {
+   "theme": "goods_in_motion",
+   "usable": 1564,
+   "eye_pct": 80,
+   "verdict": "GOOD",
+   "note": "cargo ships, containers, Nebraska grain elevators, dock workers, mail sorting. Foreign: Royal Mail Cornwall, Dundalk, Netherlands"
+  },
+  {
+   "theme": "money_banking",
+   "usable": 2256,
+   "eye_pct": 60,
+   "verdict": "US-FILTER",
+   "note": "good US material exists (Silver Eagle, Treasury cash room, Prelinger 'Using the Bank') but euro/peso currency and Monte Carlo casino dominate"
+  },
+  {
+   "theme": "urban_night",
+   "usable": 5612,
+   "eye_pct": 50,
+   "verdict": "US-FILTER",
+   "note": "NYC DUMBO and Manhattan skyline are good; Paris metro (Sortie), Zurich airport, Seoul, Netherlands, Senegal, Turkish boardroom are not"
+  },
+  {
+   "theme": "atmosphere_symbolic",
+   "usable": 6091,
+   "eye_pct": 40,
+   "verdict": "QUARANTINE",
+   "note": "CONTAINS A MICKEY MOUSE FIGURINE = Disney IP, marked usable. Two visibly CORRUPTED images (colour-bar glitch). JOHN BROADWOOD piano nameplate. Halloween tombstone, giraffes, watermelons"
+  },
+  {
+   "theme": "misc_background",
+   "usable": 4025,
+   "eye_pct": null,
+   "verdict": "QUARANTINE",
+   "note": "IP: a LEGO minifigure and a BEE GEES vinyl record with a legible label, both marked usable. Plus a 'Solis Power' branded heater. Mostly wedding rings and landscapes"
+  },
+  {
+   "theme": "business_corporate",
+   "usable": 906,
+   "eye_pct": 70,
+   "verdict": "US-FILTER",
+   "note": "usable neutral corporate B-roll but the skylines are Lisbon, Minsk, Paris La Defense, Frankfurt, Mexico City, Korea. MacBook visible x2"
+  },
+  {
+   "theme": "retail_commerce",
+   "usable": 889,
+   "eye_pct": 45,
+   "verdict": "REVIEW",
+   "note": "good US historic retail (Woodward & Lothrop DC, Progress dept store St Louis, A. Moll grocery). BUT four tiles are DEPARTMENT STORE TRADEMARK LOGOS that render as black PNGs"
+  },
+  {
+   "theme": "world_cities",
+   "usable": 1547,
+   "score": 12.3,
+   "eye_pct": 100,
+   "verdict": "NOT-FOR-PD",
+   "note": "honest name, wrong continent: Tokyo, St Petersburg, Madrid, Florence, Lisbon, Rome, Istanbul, Brussels, Barcelona, Hong Kong. Only 2 of 20 are American"
+  },
+  {
+   "theme": "science_tech",
+   "usable": 3145,
+   "eye_pct": 85,
+   "verdict": "GOOD",
+   "note": "strong NASA archive: mission control x3, Kennedy Space Center, wind tunnel, Webb hearing. Off: a cartoon OWL figurine, a hooded darknet figure. MacBook visible"
+  },
+  {
+   "theme": "weather_disasters",
+   "usable": 237,
+   "eye_pct": 90,
+   "verdict": "GOOD",
+   "note": "NASA hurricane imagery (Matthew, Irma, Dorian, Florence, Michael) plus KSC damage surveys. One DoD 'TRAUMA TALKS' title card, one black tile"
+  },
+  {
+   "theme": "ep70_american_suburb",
+   "usable": 33,
+   "eye_pct": 100,
+   "verdict": "GOOD",
+   "note": "RE-REVIEWED AFTER THE TOOL FIX. 1950s-60s American main streets, motels, farms, families from Prelinger. The first pass saw only title cards"
+  },
+  {
+   "theme": "vintage_ads_cartoons",
+   "usable": 65,
+   "eye_pct": 100,
+   "verdict": "RIGHTS-CAUTION",
+   "note": "genuine Prelinger American TV commercials -- and therefore wall-to-wall LIVE TRADEMARKS: Pontiac, Chevrolet, Sunbeam, Rice-A-Roni, RCA Victor, Lucky Strike, Crest, Scotties. Two C-SPAN hearings whose licence is not public domain by default"
+  },
+  {
+   "theme": "police_period",
+   "usable": 3,
+   "eye_pct": 33,
+   "verdict": "EMPTY",
+   "note": "only 3 assets exist and 2 are US Navy police BOATS. If an episode needs period police, the shelf has one clip"
+  },
+  {
+   "theme": "ep70_federal_court",
+   "usable": 7,
+   "eye_pct": 70,
+   "verdict": "MISNAMED-BUT-VALUABLE",
+   "note": "not courts: New Folsom groundbreaking, Ione prison construction, Pelican Bay SHU. Rare and useful. One Zoom webinar with a named law professor"
+  },
+  {
+   "theme": "space_nasa",
+   "usable": 10032,
+   "eye_pct": 90,
+   "verdict": "GOOD",
+   "note": "genuine NASA, public domain. But it is the LARGEST theme (8% of the shelf) and barely touches PD's editorial line"
+  },
+  {
+   "theme": "bench_to_line",
+   "usable": 46,
+   "eye_pct": 45,
+   "verdict": "REVIEW",
+   "note": "CHANNEL RISK: a masked woman in a pink suit POINTING A FIREARM AT CAMERA. BRAND: Metabo grinder. Beijing street"
+  },
+  {
+   "theme": "vfx",
+   "usable": 4174,
+   "eye_pct": 80,
+   "verdict": "AI-CONTAMINATED",
+   "note": "good elemental overlay footage (steam, lightning, ink, fire) BUT this is where the AI-generated assets were found: 33 of them self-tagged 'ai generated'"
+  },
+  {
+   "theme": "nature_landscape",
+   "usable": 8858,
+   "eye_pct": 80,
+   "verdict": "GENERIC",
+   "note": "clouds, mountains, sea, forest. Off: a concert festival, a flower pot, Hamburg port cranes. Held 50 AI-generated, now blocked"
+  },
+  {
+   "theme": "light",
+   "usable": 5586,
+   "eye_pct": 80,
+   "verdict": "GENERIC",
+   "note": "usable light overlays. A Halloween skull face-paint portrait, a Canon logo, a 'moon photoshop fantasy' composite. Held 33 AI-generated"
+  },
+  {
+   "theme": "itaewon_korea_night",
+   "usable": 858,
+   "eye_pct": 50,
+   "verdict": "NOT-FOR-PD",
+   "note": "built for EP74 Itaewon. Seoul, Japan, Bangalore, Florence. Held 47 AI-generated"
+  },
+  {
+   "theme": "market_machinery",
+   "usable": 109,
+   "eye_pct": 35,
+   "verdict": "REVIEW",
+   "note": "half the theme is clocks and departure boards. An UNDEAD HAND RISING FROM A GRAVE. A church hymn board"
+  },
+  {
+   "theme": "period_telephone_tech",
+   "usable": 17,
+   "eye_pct": 100,
+   "verdict": "GOOD",
+   "note": "perfect: NARA switchboard operators, candlestick phones, Prelinger 'How to Use the Dial Phone', 'Telephone Courtesy'. Small but flawless"
+  },
+  {
+   "theme": "laboratory_forensics",
+   "usable": 12,
+   "eye_pct": 8,
+   "verdict": "QUARANTINE",
+   "note": "nothing forensic. 'laboratory' matched NOAA's undersea AQUARIUS LABORATORY and Mars Science Laboratory. Also a NOAA logo PNG and lenticular clouds"
+  },
+  {
+   "theme": "chicago_city",
+   "usable": 9,
+   "eye_pct": 100,
+   "verdict": "GOOD",
+   "note": "all genuine: seven NARA Chicago aerials, the Chicago World's Fair home movie, and Chicago riots footage"
+  },
+  {
+   "theme": "window_interior_light",
+   "usable": 297,
+   "eye_pct": 35,
+   "verdict": "REVIEW",
+   "note": "'window' pulled in five forests via 'sunlight'. German level crossing, bear, sci-fi CG window, one green-screen asset"
+  },
+  {
+   "theme": "misc",
+   "usable": 26,
+   "eye_pct": 60,
+   "verdict": "GOOD-BUT-UNFINDABLE",
+   "note": "IRONY: handcuffs, a Metropolitan Police car, US $50 bills and an employment agreement -- more PD-relevant than courtroom_justice and police_modern combined, under a name nobody searches"
+  },
+  {
+   "theme": "texture",
+   "usable": 3346,
+   "eye_pct": 80,
+   "verdict": "GENERIC",
+   "note": "wood, parchment, rust, leather, barbed wire. A child's face in sepia and a nude Canova statue"
+  },
+  {
+   "theme": "particle",
+   "usable": 4397,
+   "eye_pct": 30,
+   "verdict": "REVIEW",
+   "note": "little is particle. A UFO-ABDUCTION FANTASY COMPOSITE WITH A CHILD, an Ash Wednesday cross, a Christmas angel. Held 32 AI-generated"
+  },
+  {
+   "theme": "abstract_loop",
+   "usable": 410,
+   "eye_pct": 85,
+   "verdict": "GOOD",
+   "note": "genuine abstract motion loops, good for transitions. One 'ai generated cyberpunk' city, now blocked"
+  },
+  {
+   "theme": "japan",
+   "usable": 2228,
+   "eye_pct": 85,
+   "verdict": "NOT-FOR-PD",
+   "note": "foreign by design. Some tiles are actually Indonesia and China. The NARA Pacific-war material (Pearl Harbor, USS Missouri) is the only US-relevant part"
+  },
+  {
+   "theme": "wildlife_animals",
+   "usable": 2994,
+   "eye_pct": 100,
+   "verdict": "NOT-FOR-PD",
+   "note": "honest label, wrong subject: African elephants, giraffe, lions, European birds. 3,000 assets of no use to a channel about American institutions"
+  },
+  {
+   "theme": "music_performance_pd_era",
+   "usable": 1,
+   "eye_pct": 100,
+   "verdict": "EMPTY",
+   "note": "one orchestra film"
+  },
+  {
+   "theme": "textures_backgrounds",
+   "usable": 1255,
+   "eye_pct": 50,
+   "verdict": "REVIEW",
+   "note": "half abstract motion, half SMITHSONIAN 18th-19th c decorative-arts drawings (iron banister, stove, vase, printed textiles) -- useful period paper, wrongly filed as texture"
+  },
+  {
+   "theme": "ocean_nature",
+   "usable": 2519,
+   "eye_pct": 90,
+   "verdict": "GENERIC",
+   "note": "coastlines and reefs, mostly tropical/foreign. One tile is a NOAA BUFFET RECEPTION with identifiable guests"
+  },
+  {
+   "theme": "landscapes_timelapse",
+   "usable": 2135,
+   "eye_pct": 100,
+   "verdict": "GENERIC",
+   "note": "on theme. One Manhattan timelapse is the only US tile; the rest Namibia, Dubai, Sahara, Alps, Scotland"
+  },
+  {
+   "theme": "abstract",
+   "usable": 564,
+   "eye_pct": 85,
+   "verdict": "GOOD",
+   "note": "genuine abstract backgrounds. One suggestive undressed-model portrait is off-brand"
+  }
+ ]
+}

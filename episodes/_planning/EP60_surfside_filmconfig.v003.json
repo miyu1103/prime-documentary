@@ -1,0 +1,906 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "surfside",
+  "episode_id": "PD-2026-060-surfside",
+  "assets": "episodes/PD-2026-060-surfside/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-060-surfside/06_audio/narration_index.v001.json",
+  "narration": "surfside/narration.mp3",
+  "captions": "episodes/PD-2026-060-surfside/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/surfside_film.json",
+  "hookSeconds": 8.0,
+  "hookLine": "An engineer walked into the garage under the swimming pool, put a hammer to the ceiling, and wrote down what he heard.",
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "kinetic",
+        "lines": [
+          "IT HAD ALREADY",
+          "BEEN FALLING."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ALREADY"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "SURFSIDE, FLORIDA",
+        "secondary": "24 June 2021 — 1:22 in the morning"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.5,
+        "cy": 0.62,
+        "r": 0.14,
+        "label": "The garage ceiling, under the swimming pool"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THREE WEEKS",
+          "BEFORE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THREE WEEKS"
+        ]
+      }
+    ],
+    "OP": [
+      {
+        "kind": "lowerthird",
+        "primary": "CHAMPLAIN TOWERS SOUTH",
+        "secondary": "Twelve storeys, built 1981, on the Atlantic"
+      },
+      {
+        "kind": "numberticker",
+        "value": 98,
+        "label": "People who died",
+        "group": true
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOBODY KNEW",
+          "IT HAD STARTED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOBODY"
+        ]
+      }
+    ],
+    "ACT_1": [
+      {
+        "kind": "acttitle",
+        "title": "THE DECK",
+        "kicker": "ACT ONE",
+        "index": 1
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE POOL DECK",
+        "secondary": "A flat concrete slab carried on a grid of columns"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "gears"
+      },
+      {
+        "kind": "numberticker",
+        "value": 136,
+        "label": "Apartments in the building",
+        "group": true
+      },
+      {
+        "kind": "numberticker",
+        "value": 1981,
+        "label": "The year it was finished",
+        "group": false
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "A FLAT PLATE",
+          "ON COLUMNS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "FLAT PLATE"
+        ]
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.44,
+        "cy": 0.55,
+        "r": 0.11,
+        "label": "Where the slab meets the column head"
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.5,
+          0.24
+        ],
+        "to": [
+          0.5,
+          0.5
+        ],
+        "label": "Every load in the bay arrives here"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "PUNCHING SHEAR",
+        "secondary": "The characteristic failure of a flat plate"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE COLUMN STAYS.",
+          "THE SLAB COMES DOWN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "SLAB"
+        ]
+      },
+      {
+        "kind": "spotlight",
+        "cx": 0.5,
+        "cy": 0.5,
+        "r": 0.2,
+        "dim": 0.72
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "SALT AIR",
+        "secondary": "Forty years of it, on reinforced concrete"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Concrete cover the drawings called for",
+            "value": 100
+          },
+          {
+            "label": "What protects the steel once water is inside",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "WATER GETS IN.",
+          "STEEL RUSTS.",
+          "RUST SWELLS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "RUST"
+        ]
+      }
+    ],
+    "ACT_2": [
+      {
+        "kind": "acttitle",
+        "title": "WHAT HE FOUND",
+        "kicker": "ACT TWO",
+        "index": 2
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "OCTOBER 2018",
+        "secondary": "The engineer's report"
+      },
+      {
+        "kind": "quote",
+        "quote": "major structural damage to the concrete structural slab below these areas",
+        "attribution": "Frank Morabito, structural field survey report, October 2018"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.52,
+        "cy": 0.48,
+        "r": 0.12,
+        "label": "The pool deck, the entrance drive, the planters"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HE WROTE IT DOWN.",
+          "IN 2018."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "2018"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 9128000,
+        "label": "The 2018 estimate, in dollars",
+        "group": true
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "NOVEMBER 2018",
+        "secondary": "The board meeting"
+      },
+      {
+        "kind": "spotlight",
+        "cx": 0.5,
+        "cy": 0.55,
+        "r": 0.24,
+        "dim": 0.7
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE REPORT WAS",
+          "NOT A WARNING",
+          "ANYBODY HAD TO ACT ON."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOT"
+        ]
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          {
+            "year": "Oct 2018",
+            "text": "The report describes major structural damage"
+          },
+          {
+            "year": "Nov 2018",
+            "text": "The board is briefed on it"
+          },
+          {
+            "year": "2019",
+            "text": "The work is not begun"
+          },
+          {
+            "year": "2020",
+            "text": "The work is not begun"
+          },
+          {
+            "year": "Apr 2021",
+            "text": "The cost has risen past sixteen million"
+          }
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "WATERPROOFING",
+        "secondary": "Failed, and under almost the whole ground level"
+      },
+      {
+        "kind": "quote",
+        "quote": "concrete deterioration to expand exponentially",
+        "attribution": "What the 2018 report said would happen if the waterproofing was not fixed"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "EXPONENTIALLY.",
+          "THAT WORD WAS",
+          "IN THE REPORT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "EXPONENTIALLY"
+        ]
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.22,
+          0.3
+        ],
+        "to": [
+          0.72,
+          0.66
+        ],
+        "label": "From a line in a report to a number nobody could pay"
+      },
+      {
+        "kind": "numberticker",
+        "value": 2018,
+        "label": "The year it was all knowable",
+        "group": false
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "gears"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE PAPERWORK EXISTED",
+        "secondary": "It was filed, and it was read, and it sat"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Years the damage was documented",
+            "value": 3
+          },
+          {
+            "label": "Years the repair was under way",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "EVERY YEAR IT WAITED,",
+          "IT COST MORE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "MORE"
+        ]
+      },
+      {
+        "kind": "stat",
+        "value": 0,
+        "label": "Repairs completed between the report and the collapse"
+      }
+    ],
+    "ACT_3": [
+      {
+        "kind": "acttitle",
+        "title": "THE ARITHMETIC",
+        "kicker": "ACT THREE",
+        "index": 3
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "APRIL 2021",
+        "secondary": "The letter to the owners"
+      },
+      {
+        "kind": "quote",
+        "quote": "The concrete deterioration is accelerating.",
+        "attribution": "Jean Wodnicki, board president, letter to residents, 9 April 2021"
+      },
+      {
+        "kind": "quote",
+        "quote": "When you can visually see the concrete spalling, that means that the rebar holding it together is rusting and deteriorating beneath the surface.",
+        "attribution": "Jean Wodnicki, 9 April 2021"
+      },
+      {
+        "kind": "numberticker",
+        "value": 16000000,
+        "label": "What the same repair now cost, in dollars",
+        "group": true
+      },
+      {
+        "kind": "numberticker",
+        "value": 707000,
+        "label": "Cash the association had on hand, in dollars",
+        "group": true
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Needed",
+            "value": 15000000
+          },
+          {
+            "label": "On hand",
+            "value": 707000
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NINE MILLION",
+          "BECAME SIXTEEN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "SIXTEEN"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 80000,
+        "label": "What a single apartment was asked to pay, in dollars",
+        "group": true
+      },
+      {
+        "kind": "bar",
+        "items": [
+          {
+            "label": "Pay it in one sum",
+            "value": 80000
+          },
+          {
+            "label": "Or across fifteen years",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "Because so much of the needed concrete/waterproofing work is underground, we must pull up almost the entire ground level",
+        "attribution": "Jean Wodnicki, 9 April 2021"
+      },
+      {
+        "kind": "quote",
+        "quote": "We have discussed, debated, and argued for years now, and will continue to do so.",
+        "attribution": "Jean Wodnicki, 9 April 2021"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE ARGUMENT WAS",
+          "ABOUT MONEY.",
+          "IT WAS ALWAYS",
+          "ABOUT THE DECK."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THE DECK"
+        ]
+      }
+    ],
+    "ACT_4": [
+      {
+        "kind": "acttitle",
+        "title": "THE LAST SPRING",
+        "kicker": "ACT FOUR",
+        "index": 4
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "APRIL — MAY 2021",
+        "secondary": "The money is voted. The work has a date"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          {
+            "year": "9 Apr 2021",
+            "text": "The letter goes to every owner"
+          },
+          {
+            "year": "Spring",
+            "text": "The assessment is agreed"
+          },
+          {
+            "year": "1 July 2021",
+            "text": "The date the work was to begin"
+          }
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 1,
+        "label": "July — the month the repair was to start",
+        "group": false
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE MONEY WAS",
+          "FINALLY MOVING."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "FINALLY"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 7,
+        "label": "Days between the collapse and the day the assessment was due",
+        "topLabel": "24 JUNE  /  1 JULY"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "EARLY JUNE 2021",
+        "secondary": "Something under the pool deck gives way"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.46,
+        "cy": 0.58,
+        "r": 0.1,
+        "label": "Two slab-column connections"
+      },
+      {
+        "kind": "stat",
+        "value": 2,
+        "label": "Connections that failed first"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NOBODY HEARD IT.",
+          "NOBODY COULD."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOBODY"
+        ]
+      },
+      {
+        "kind": "spotlight",
+        "cx": 0.5,
+        "cy": 0.6,
+        "r": 0.18,
+        "dim": 0.75
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "5 JUNE — 12 JUNE — 19 JUNE",
+        "secondary": "The building stands. Nothing looks different"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "IT STOOD.",
+          "THAT IS ALL",
+          "ANYBODY CAN SAY."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "STOOD"
+        ]
+      }
+    ],
+    "ACT_5": [
+      {
+        "kind": "acttitle",
+        "title": "THREE WEEKS",
+        "kicker": "ACT FIVE",
+        "index": 5
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "22 JUNE 2026",
+        "secondary": "The federal findings, five years late"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "NIST",
+        "secondary": "National Construction Safety Team investigation"
+      },
+      {
+        "kind": "quote",
+        "quote": "these margins against failure were too narrow from the start",
+        "attribution": "Judith Mitrani-Reiser, NIST investigative co-lead, 22 June 2026"
+      },
+      {
+        "kind": "quote",
+        "quote": "severe and widespread deviations in the building's original structural design from the codes and standards of the day",
+        "attribution": "Glenn Bell, NIST investigative co-lead, 22 June 2026"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "TOO NARROW",
+          "FROM THE START."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "FROM THE START"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "PUNCHING SHEAR",
+        "secondary": "A cone of concrete shears out around the column head"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "gears"
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.5,
+          0.28
+        ],
+        "to": [
+          0.5,
+          0.56
+        ],
+        "label": "The head passes through the slab"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.5,
+        "cy": 0.56,
+        "r": 0.09,
+        "label": "Then the load moves sideways"
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.5,
+          0.56
+        ],
+        "to": [
+          0.74,
+          0.56
+        ],
+        "label": "To connections built to carry their own share, and no more"
+      },
+      {
+        "kind": "stat",
+        "value": 24,
+        "label": "Possible starting points the investigation examined"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THEY TESTED",
+          "THE OTHER ANSWER.",
+          "AND BROKE IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "BROKE IT"
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 3,
+        "label": "Weeks between the first failure and the last",
+        "group": false
+      },
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "Early June 2021",
+            "text": "Two connections under the pool deck fail"
+          },
+          {
+            "year": "The three weeks",
+            "text": "Load transfers, connection by connection"
+          },
+          {
+            "year": "24 June 2021",
+            "text": "The pool deck goes"
+          },
+          {
+            "year": "Four minutes later",
+            "text": "The tower follows"
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THREE WEEKS.",
+          "NOT THREE SECONDS."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THREE WEEKS"
+        ]
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Photographs of those three weeks",
+            "value": 0
+          },
+          {
+            "label": "Witnesses to them",
+            "value": 0
+          },
+          {
+            "label": "Alarms that sounded",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "NOBODY RECORDED IT",
+        "secondary": "It was happening above the cars, in the dark, behind concrete"
+      },
+      {
+        "kind": "stat",
+        "value": 0,
+        "label": "Alarms, readings or gauges that registered anything"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE BUILDING WAS",
+          "FORTY YEARS OLD.",
+          "THE FAILURE INSIDE IT",
+          "WAS THREE WEEKS OLD."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "THREE WEEKS OLD"
+        ]
+      }
+    ],
+    "THE_NIGHT": [
+      {
+        "kind": "lowerthird",
+        "primary": "24 JUNE 2021",
+        "secondary": "1:22 in the morning"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "IT DID NOT COME DOWN",
+          "ALL AT ONCE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "ALL AT ONCE"
+        ]
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          {
+            "year": "1:22:04",
+            "text": "The first frames"
+          },
+          {
+            "year": "1:22:17",
+            "text": "Grid Line 9.1 begins to drop"
+          },
+          {
+            "year": "1:22:21",
+            "text": "The collapse reaches the east wing"
+          }
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 4,
+        "label": "Minutes the tower stood after the pool deck went",
+        "group": false
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "FOUR MINUTES IS",
+          "LONG ENOUGH TO",
+          "PUT SHOES ON."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "FOUR MINUTES"
+        ]
+      },
+      {
+        "kind": "stat",
+        "value": 0,
+        "label": "Systems in the building whose job was to tell anybody"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "MOST OF THEM WERE ASLEEP",
+        "secondary": "It was a Thursday"
+      }
+    ],
+    "ENDING": [
+      {
+        "kind": "numberticker",
+        "value": 98,
+        "label": "People who died",
+        "group": true
+      },
+      {
+        "kind": "numberticker",
+        "value": 1021199000,
+        "label": "The settlement, in dollars",
+        "group": true
+      },
+      {
+        "kind": "numberticker",
+        "value": 0,
+        "label": "People criminally charged",
+        "group": true
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Dollars paid to settle it",
+            "value": 1021199000
+          },
+          {
+            "label": "Dollars it would have cost to fix it in 2018",
+            "value": 9128000
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NINE MILLION",
+          "TO FIX IT.",
+          "A BILLION",
+          "TO SETTLE IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "A BILLION"
+        ]
+      },
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "2018",
+            "text": "$9,128,000 — to fix it"
+          },
+          {
+            "year": "2021",
+            "text": "$16,000,000 — to fix it"
+          },
+          {
+            "year": "Three weeks",
+            "text": "The failure, unseen"
+          },
+          {
+            "year": "1:22 a.m.",
+            "text": "Ninety-eight dead"
+          },
+          {
+            "year": "2022",
+            "text": "$1,021,199,000 — to settle it"
+          },
+          {
+            "year": "Today",
+            "text": "Nobody charged"
+          }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "these margins against failure were too narrow from the start",
+        "attribution": "Judith Mitrani-Reiser, NIST, 22 June 2026"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "IT WAS KNOWABLE.",
+          "IT WAS WRITTEN DOWN.",
+          "IT WAS FILED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "WRITTEN DOWN"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "THE FINDING IS PUBLIC NOW",
+        "secondary": "Five years after the night it stopped mattering to them"
+      }
+    ]
+  },
+  "_notes": {
+    "runtime": "40:00 total. Narration 35.6 min at the measured 173 wpm, from EP60_surfside_script.en.v004.md (6,304 words, 36.4 min at 173 wpm).",
+    "figures": "v003 (2026-08-03): figures_by_section rebuilt from 20 to 102 beats across 9 sections. 20 was far under the animation_density floor (other episodes run 78-91 over 27-30 min; this is 40 min). Every fact is from FACTS_LEDGER.v002 — the two quarantined claims (the 'less than half required strength' fraction, and any stated collapse duration) appear nowhere, and the collapse time is given as 1:22 because that quarantine was released against NIST's own annotated camera frames. Only the 16 FigureBeats kinds whose prop shapes were verified against working configs are used.",
+    "hero_windows": "Blender section shots go in via FilmData.heroCuts, not as cuts. Shot 1 (punching shear) is built and measured: remotion/src/blender/surfside_section.py, 6.0 s, no frozen frames, no black frames. Shots 2-6 pending.",
+    "ae": "AE cards also go through heroCuts, <=3.0 s each, never a full-frame black title card. See EP60_surfside_ASSET_DESIGN.v001.md section 4.",
+    "facts": "Every number above traces to EP60_surfside_FACTS_LEDGER.v001.md: 136=CT-03, 9.1M=CT-11, 'very good shape'=CT-13, 706k/10.3M=CT-26, 336135/80190=CT-24, 7 days=CT-25, 3 weeks=CT-05, Mitrani-Reiser=CT-07, 1,021,199,000=CT-17, 98=CT-02, 1981=CT-22.",
+    "quarantined": "Not used anywhere: a collapse duration, a precise collapse minute, the strength fraction. See the ledger's quarantine rows.",
+    "figure_kinds": "Every kind here is registered in remotion/src/components/FigureBeats.tsx. yearsweep is exported by motionkit but is NOT a FigureBeats kind - it was in the first draft of this config and would have failed silently at build time.",
+    "revision_note": "v002 (2026-08-02): retargeted from script v003 to v004. v004 restores the collapse time to 1:22 a.m. (quarantine released, CT-32) and adds the two-stage collapse — the pool deck fell more than four minutes before the tower (CT-24) — plus a how-they-know beat. Word count rose 6,154 -> 6,304, still inside the 6,150-6,350 band. The three paths below (asset_manifest, narration_index, captions) do not exist yet; they are produced by the assembly thread.",
+    "section_keys": "THE_NIGHT is a section in its own right (34:30-36:45 in script v004) and the narration index must emit it as its own section key, or these 7 beats will not attach to anything. Existing episodes only carry HOOK/OP/ACT_1..5/ENDING."
+  }
+}

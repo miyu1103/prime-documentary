@@ -1,0 +1,69 @@
+EP67 ramirez — 画像発注 バッチ 16/18（8枚）
+区分: F · 1970 and the statute  [R105 – R112]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R105.png
+A single plain hardback statute volume lying closed on a wooden desk, photographed from a low three-quarter angle so the cover and the fore-edge are both visible: heavy dark cloth boards, softly bumped corners, a plain sewn head band. THE COVER AND THE SPINE ARE COMPLETELY BLANK — no title, no gilt, no author, no volume number, no library label. One warm desk light from the left, the rest of the desk bare and soft Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, gilt title, spine lettering, library label, embossed crest
+
+■ R106.png
+The same plain hardback volume lying OPEN at a middle spread on the same desk in the same warm light, photographed from directly overhead so both pages fill the frame. The paper carries no writing of any kind, and this is what is on it instead: EVENLY SPACED FLAT GREY HORIZONTAL BARS of one uniform width and one uniform weight, laid in parallel like ruled bands of tone, each bar a solid unbroken block of soft grey with straight ends and no letter shapes, no word shapes, no gaps between words and no broken or ragged edge anywhere along it, so the sheet reads as printed matter purely by its rhythm of grey and white and carries not one readable character — each page carries two justified columns of the flat grey bars and nothing else: no headings, no page numbers, no section marks, no footnotes, no marginal notes. The gutter shadow runs down the middle and the paper is warm off-white Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, printed columns of text, section numbers, page numbers, footnotes, marginalia, highlighter
+
+■ R107.png
+An empty committee room photographed from the back at standing height: one long plain table across the far end, a curved run of plain chairs behind it, rows of plain public seating in the foreground, tall windows down the left throwing flat daylight across the carpet. THE ROOM IS COMPLETELY EMPTY — nobody in any seat, nothing on the table, no name cards, no microphones with branded flags, no seal on the wall, no lettering anywhere Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, courtroom, judge's bench, jury box, witness stand, gavel, scales of justice, state seal, carved motto, engraved lettering on stone, banner, memorial plaque, name cards, seal on the wall, microphone flags, person, flags
+
+■ R108.png
+A green-shaded desk lamp switched on over a wooden desk in an otherwise dark office, photographed from a seated three-quarter angle: the lamp throws one warm pool of light onto a plain leather blotter and falls away fast into shadow that still holds its detail. THE BLOTTER IS COMPLETELY EMPTY — no paper, no pen, no book, nothing in the pool of light at all. Nobody in the room Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, papers on the desk, open book, pen, person, crushed black shadow
+
+■ R109.png
+A tall stack of folded continuous fanfold paper standing on a plain floor beside a desk, photographed from a low angle so the stack rises through most of the frame and the concertina edges and sprocket margins step up it like a ladder. The paper carries no writing of any kind, and this is what is on it instead: EVENLY SPACED FLAT GREY HORIZONTAL BARS of one uniform width and one uniform weight, laid in parallel like ruled bands of tone, each bar a solid unbroken block of soft grey with straight ends and no letter shapes, no word shapes, no gaps between words and no broken or ragged edge anywhere along it, so the sheet reads as printed matter purely by its rhythm of grey and white and carries not one readable character — visible on the top sheet and faintly through the fold edges. Cool even office light, the wall behind plain and bare Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, printed figures, column headings, dot matrix text, tractor labels
+
+■ R110.png
+TWO identical paper wall calendars hanging SIDE BY SIDE on a plain painted wall, photographed square on from six feet away with the focus set on the wall so both calendars are SOFT AND OUT OF FOCUS: each reads only as a pale rectangle with a blurred grid of grey squares, and NO DIGIT, NO MONTH NAME AND NO WEEKDAY LETTER is resolvable on either of them. A clear gap of bare wall between the two. Even daylight from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, readable numbers, month names, sharp calendar, photograph on the calendar, circled date
+
+■ R111.png
+A plain heavy exterior door of a civic office building, closed, photographed square on from four feet away: dark painted timber, a broad brass kick plate at the foot polished bright by boots, a plain brass pull handle, a plain stone surround. THE DOOR AND THE KICK PLATE AND THE SURROUND ARE ALL BLANK — no name, no numbers, no opening hours, no seal, no plaque, no notice taped to the glass. Flat overcast light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, courtroom, judge's bench, jury box, witness stand, gavel, scales of justice, state seal, carved motto, engraved lettering on stone, banner, memorial plaque, opening hours, door number, nameplate, notice, seal, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram
+
+■ R112.png
+An open stone stairwell photographed from the bottom looking straight up, so three flights of plain stone steps and their plain iron balustrades spiral away above the camera and make a receding rectangular well with a pale skylight at the very top. Every surface is plain — no signs, no floor numbers, no arrows, no notices. Cool daylight falling down the well, nobody on any flight Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, courtroom, judge's bench, jury box, witness stand, gavel, scales of justice, state seal, carved motto, engraved lettering on stone, banner, memorial plaque, floor numbers, arrows, signs, person, vertigo fisheye distortion
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R105.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

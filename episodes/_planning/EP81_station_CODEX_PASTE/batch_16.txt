@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 16/24（8枚）
+区分: ACT_4
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S121.png
+   [S121]  flags: P
+   A dispatcher seen from directly behind at a lit console, headset on, screens blazing ahead
+
+2) S122.png
+   [S122]  flags: P
+   A 911 call centre in daylight, rows of consoles alight, a window wall, one person seen from behind
+
+3) S123.png
+   [S123]  flags: 
+   An ambulance parked at a kerb in bright daylight, plain white, rear doors open, no markings
+
+4) S124.png
+   [S124]  flags: 
+   A row of ambulances staged on a wide road in brilliant daylight, plain white, no markings
+
+5) S125.png
+   [S125]  flags: 
+   A police car at a roadside at night, its bar lights burning bright and flaring into the lens, plain white paintwork with no markings
+
+6) S126.png
+   [S126]  flags: 
+   A mutual aid staging area on a wide road in daylight, plain red apparatus lined up, no markings
+
+7) S127.png
+   [S127]  flags: 
+   An incident command board on the side of an apparatus, magnetic strips blank, a bright lamp above it
+
+8) S128.png
+   [S128]  flags: 
+   A wide daylight view of a small New England town centre, low buildings, a church spire, bare trees

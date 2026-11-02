@@ -1,0 +1,51 @@
+{
+  "episode_id": "PD-2026-011-mahanoy",
+  "revision": "v001",
+  "composition": "MahanoyPremium",
+  "video": "H:\\pd-media\\episodes\\PD-2026-011-mahanoy\\08_edit\\mahanoy_premium_v001.mp4",
+  "video_sha256": "sha256:898ee186255dc54989a944cb92e4d174e1e8603b77c4a75faf9a461497eaac87",
+  "duration_seconds": 720.043,
+  "target_seconds": 720,
+  "target_window_seconds": [
+    690,
+    750
+  ],
+  "fps": 30,
+  "resolution": "1920x1080",
+  "render_command": "cd remotion && npm run render -- MahanoyPremium out/mahanoy_premium.mp4 --crf=14",
+  "audio_loudnorm": {
+    "input_i": "-15.35",
+    "input_tp": "-4.18",
+    "input_lra": "2.40",
+    "input_thresh": "-25.52",
+    "output_i": "-14.03",
+    "output_tp": "-2.71",
+    "output_lra": "2.40",
+    "output_thresh": "-24.19",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  },
+  "four_part_structure": [
+    "hook",
+    "brand_opening",
+    "main_four_acts",
+    "ending_endcard"
+  ],
+  "captions": "episodes/PD-2026-011-mahanoy/08_edit/captions.v001.srt",
+  "captions_cues": 92,
+  "profanity_scan": {
+    "captions_matches": 0,
+    "screen_code_matches": 0,
+    "passed": true
+  },
+  "rights_safety": {
+    "profanity_always_censored": true,
+    "no_real_person_portraits": true,
+    "symbolic_reconstruction_labeled": true
+  },
+  "notes": [
+    "Rendered from MahanoyPremium with burned-in open captions and final mixed audio.",
+    "Source thumbnail directory for mahanoy was absent; thumbnail package uses existing body AI fallback backgrounds."
+  ],
+  "status": "pass"
+}

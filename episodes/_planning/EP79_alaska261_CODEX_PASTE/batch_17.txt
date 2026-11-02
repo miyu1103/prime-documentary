@@ -1,0 +1,56 @@
+EP79_alaska261 — 画像発注 バッチ 17/24（8枚）
+区分: ACT_4
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, airline livery, airline tail markings, ship funnel markings, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) K123.png
+   [K123]  flags: P
+   A safety inspection team of several people seen from behind walking through a bright hangar in high-visibility vests
+
+2) K124.png
+   [K124]  flags: 
+   A modern aircraft maintenance record on a CRT screen showing rows of empty fields, screen glow blown out, no legible text
+
+3) K125.png
+   [K125]  flags: 
+   An aircraft tail in a hangar with an inspection panel open and a bright lamp burning inside the fin
+
+4) K126.png
+   [K126]  flags: 
+   High-angle view from an indoor maintenance catwalk looking down across several aircraft bays, open access panels, mobile scaffolds and tool carts forming parallel lines, hard daylight pouring through distant hangar doors
+
+5) K127.png
+   [K127]  flags: 
+   A regulatory office in daylight with a wall of ring binders, a brilliant window, an empty desk
+
+6) K128.png
+   [K128]  flags: 
+   A steel component sealed in an evidence bag on a bright laboratory bench, unlabelled
+
+7) K129.png
+   [K129]  flags: 
+   A conference table with a jackscrew assembly laid across it under brilliant overhead light, several empty chairs around
+
+8) K191.png
+   [K191]  flags: 
+   Rows of steel jackscrew assemblies laid out on long benches in a brightly lit overhaul shop, dozens of them receding into the distance

@@ -1,0 +1,1146 @@
+{
+  "episode_id": "PD-2026-006-terry",
+  "slug": "terry",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "bYcqabvvxak",
+    "title": "Police Can Stop and Frisk You Without Arresting You",
+    "url": "https://www.youtube.com/watch?v=bYcqabvvxak",
+    "privacy": "public",
+    "views": 159
+  },
+  "shorts_existing": [
+    "short06"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short06": [
+      "Police can stop you and pat you down, even without arresting you.",
+      "No warrant.",
+      "No proof of a crime.",
+      "All they need is reasonable suspicion, a little more than a hunch.",
+      "In 1968, a detective watched two men pace outside a store, again and again.",
+      "He patted them down, and found a gun.",
+      "The Supreme Court allowed it, eight to one.",
+      "A lower standard, stop and frisk, was born.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-006-terry\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "The rule that allows it was written in 1968, and it began with one detective watching two men pace in front of a store window .",
+    "It is October 1963, in downtown Cleveland, Ohio.",
+    "If an officer can never check a person for a weapon until he already has proof of a crime, then the most dangerous moment of the job — the unknown person, the unseen gun — is also the moment the law leaves him most exposed.",
+    "The decision it wrote in 1968 tried to hold both truths at once, and that is exactly why it has been argued about ever since.",
+    "In 1968, by a vote of eight to one, the Supreme Court upheld the search .",
+    "The purpose is narrow: not to find evidence, but to make sure no one gets shot during the encounter.",
+    "That argument is not really a disagreement about the 1968 ruling."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short88",
+      "angle": "A frisk is not a search. That difference is the entire rule.",
+      "type": "A — second person, the limit on the power",
+      "avoids": "short06 covered what a Terry stop IS (no warrant, reasonable suspicion, 1968, 8-1). This one covers the LIMIT, which short06 never states.",
+      "funnel_question_left_for_longform": "What happens to something an officer finds after he has gone past that line?",
+      "era": "1963 Cleveland / present-day street",
+      "loop": true,
+      "loop_join": "L5 stops mid-sentence on a connective, and L1 completes the thought: an officer can pat you down without arresting you.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "An officer can pat you down without arresting you. But a frisk is not a search, and that difference is the whole rule.",
+          "delivery": "intense",
+          "source_lines": [
+            "The purpose is narrow: not to find evidence, but to make sure no one gets shot during the encounter."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "The purpose is narrow. Not to find evidence. To make sure nobody gets shot during the encounter.",
+          "delivery": "building",
+          "source_lines": [
+            "The purpose is narrow: not to find evidence, but to make sure no one gets shot during the encounter."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "So it is a pat of the outside of your clothing, for a weapon. Not a reach into your pockets for whatever might be in them.",
+          "delivery": "building",
+          "source_lines": [
+            "The purpose is narrow: not to find evidence, but to make sure no one gets shot during the encounter."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "That is the line the 1968 decision actually drew. It has been argued about ever since, in every stop on every street.",
+          "delivery": "intense",
+          "source_lines": [
+            "The decision it wrote in 1968 tried to hold both truths at once, and that is exactly why it has been argued about ever since."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "If he reaches in to explore for something that is plainly not a weapon, he is back in the world that needs a warrant.",
+          "delivery": "building",
+          "source_lines": [
+            "If an officer goes further, reaching in to explore for something that is plainly not a weapon, he has crossed the line the Court drew and stepped back into the world that needs probable cause and a warrant."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Reasonable suspicion is not a feeling the officer has. It is a story he must be able to tell a judge afterward.",
+          "delivery": "building",
+          "source_lines": [
+            "Reasonable suspicion is not a feeling the officer has; it is a story he can tell afterward, in specific terms, that a judge can test."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "One justice refused. Douglas warned the Court was handing a street officer a power that even a judge did not have.",
+          "delivery": "intense",
+          "source_lines": [
+            "One justice refused to go along.",
+            "William O. Douglas warned that the Court was giving an officer on the street a power that even a judge did not have — the power to seize and search a person without probable cause."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "That one line has been argued over ever since 1968. And that is why, to this day, on any street in America,",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "a flat hand pressed to the outside of a heavy coat",
+          "source": "GENERATE",
+          "prompt": "macro of one open hand pressed flat against the outside of a heavy wool overcoat at chest height, the cloth compressing under the palm, no face or body visible above the shoulders, lit ONLY by one hard streetlamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "an officer patting down a coat on the street",
+          "source": "FOOTAGE",
+          "footage_query": "police officer frisking a man",
+          "bound_title": "sunset by the ocean",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.3921,
+          "motion": 3.489,
+          "luma": 126.4
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "the overcoat alone on a hook, pockets heavy",
+          "source": "GENERATE",
+          "prompt": "a man's heavy wool overcoat hanging alone on an iron hook in a dark bare room, the pockets sagging with unseen weight, nobody present, lit ONLY by one bare bulb which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R01",
+          "subject": "the beacon of a 1960s cruiser at the kerb",
+          "source": "GENERATE",
+          "prompt": "tight low angle on the chrome front fender and single roof beacon of a 1960s American police cruiser parked at a kerb at night, dark paint filling the frame, no lettering on the body, lit ONLY by that beacon which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a revolver grip inside a coat, unseen",
+          "source": "GENERATE",
+          "prompt": "extreme macro of the checkered grip of a revolver just showing above the lip of an inside coat pocket, dark wool crowding around it, no face or body visible, lit ONLY by one hard raking streetlamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the store window they kept walking past",
+          "source": "GENERATE",
+          "prompt": "a downtown store window at night on a deserted street, faceless mannequin shapes standing behind the glass, no signage or lettering anywhere, lit ONLY by one streetlamp which is switched on above the pavement, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "one streetlamp burning over an empty pavement",
+          "source": "FOOTAGE",
+          "footage_query": "streetlight glowing at night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33401__rain_street_reflection_night.mp4",
+          "bound_title": "colorful bokeh lights in urban nightscape",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3954,
+          "motion": 2.733,
+          "luma": 41.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "two silhouettes pacing the same shopfront",
+          "source": "GENERATE",
+          "prompt": "two dark male silhouettes walking past a shopfront and turning back on themselves, seen from across a night street, faces not visible, no signage or lettering anywhere, lit ONLY by one streetlamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the detective watching from a doorway opposite",
+          "source": "GENERATE",
+          "prompt": "the silhouette of a man in a hat standing back inside a recessed doorway across a night street, watching, face not visible in the shadow of the brim, lit ONLY by one streetlamp which is switched on behind him, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a figure watching from a dark doorway",
+          "source": "FOOTAGE",
+          "footage_query": "silhouette standing in a doorway",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46103__person_crying_silhouette_window.mp4",
+          "bound_title": "flags on a skyscraper",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.4056,
+          "motion": 0.881,
+          "luma": 144.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.338
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R12",
+          "subject": "the revolver on the property counter",
+          "source": "GENERATE",
+          "prompt": "one revolver, a leather belt and a few loose coins laid out on a scratched steel property counter, no lettering on anything, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "a palm sweeping the outside of a sleeve",
+          "source": "GENERATE",
+          "prompt": "macro of one hand sweeping flat down the outside of a heavy coat sleeve, the cloth folding under the palm, nothing entering the fabric, no face or body visible, lit ONLY by one hard streetlamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "fingers going into the pocket instead",
+          "source": "GENERATE",
+          "prompt": "macro of a hand pushing down inside an open coat pocket with the fingers disappearing into the lining, the coat worn by an unseen figure with no face or body visible, lit ONLY by one hard streetlamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "a hand reaching into a coat pocket",
+          "source": "FOOTAGE",
+          "footage_query": "hand reaching into a pocket",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63658__gold_coins_pile.mp4",
+          "bound_title": "a glass building on lisbon street",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.3951,
+          "motion": 16.859,
+          "luma": 109.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.333
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "the coat laid out flat, pockets turned out",
+          "source": "GENERATE",
+          "prompt": "a heavy overcoat laid flat across a bare table with both pockets turned inside out and completely empty, nobody present, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U10",
+          "subject": "two hands held flat and still",
+          "source": "FOOTAGE",
+          "footage_query": "hands flat on a table",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63961__bread_line_vintage_depression.mp4",
+          "bound_title": "an old man looking out of the window",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.6063,
+          "motion": 11.359,
+          "luma": 66.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R08",
+          "subject": "the empty bench that drew the line",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the courtroom floor looking up, the seat behind it empty, every nameplate blank, lit ONLY by one shaft of window light falling across its face, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "R06",
+          "subject": "the gallery benches, empty",
+          "source": "FOOTAGE",
+          "footage_query": "empty courtroom benches interior",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14510__courtroom_empty_wide.mp4",
+          "bound_title": "interior of abandoned school in chernobyl",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5861,
+          "motion": 14.758,
+          "luma": 56.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "one hard line of light across a dark floor",
+          "source": "GENERATE",
+          "prompt": "a single hard blade of light lying across a dark polished stone floor, dividing the frame cleanly in two with deep shadow on both sides and nothing else present, lit ONLY by that one fixture switched on beyond the frame, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R07",
+          "subject": "the gavel coming down",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "the gavel coming down, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "two long shadows thrown across a pavement",
+          "source": "GENERATE",
+          "prompt": "looking down at a wet night pavement where the long shadows of two standing figures fall across the stone, the figures themselves out of frame, lit ONLY by one streetlamp which is switched on above, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "the kerb at first light, nobody there",
+          "source": "GENERATE",
+          "prompt": "an empty city kerb at first light with wet asphalt and a bare pavement and nobody in frame, lit ONLY by one streetlamp still switched on overhead, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland / present-day street, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the flat hand on the coat",
+          "source": "REUSE_01"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W06",
+          "subject": "a bag opened and gone through",
+          "source": "FOOTAGE",
+          "footage_query": "hands opening and searching a bag",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62757__vintage_wanted_poster.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a drawer emptied looking for something else",
+          "source": "FOOTAGE",
+          "footage_query": "hands searching through a desk drawer",
+          "prompt": null
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "the door that needs a warrant",
+          "source": "FOOTAGE",
+          "footage_query": "hand knocking on a wooden door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51275__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U03",
+          "subject": "the paper an officer needs first",
+          "source": "FOOTAGE",
+          "footage_query": "one person handing papers to another",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49830__person_signing_document_hand.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U04",
+          "subject": "the line being stepped over",
+          "source": "FOOTAGE",
+          "footage_query": "feet stepping across a doorway threshold",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1749__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "R03",
+          "subject": "the account given afterwards",
+          "source": "FOOTAGE",
+          "footage_query": "two men talking across a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46943__lawyer_and_client_meeting_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R04",
+          "subject": "the story told in specific terms",
+          "source": "FOOTAGE",
+          "footage_query": "hands gesturing during a conversation",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-50331__wedding_ring_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y05",
+          "subject": "the account opened up and tested",
+          "source": "FOOTAGE",
+          "footage_query": "hands opening a paper file folder",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46653__person_reading_a_letter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "the room where it has to hold up",
+          "source": "FOOTAGE",
+          "footage_query": "rows of empty seats in a hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2288__empty_stadium_seats.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I03",
+          "subject": "the notes he has to be able to point to",
+          "source": "FOOTAGE",
+          "footage_query": "pages of a notebook being turned",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46645__person_reading_a_letter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "the one who would not go along",
+          "source": "FOOTAGE",
+          "footage_query": "a lone figure standing in an empty hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14599__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U02",
+          "subject": "walking out rather than signing on",
+          "source": "FOOTAGE",
+          "footage_query": "figure walking out through a doorway",
+          "prompt": null
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U11",
+          "subject": "the dissent written alone at night",
+          "source": "FOOTAGE",
+          "footage_query": "one lit window in a dark building",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0293__concrete_wall_texture_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y01",
+          "subject": "the robe of the judge who has less",
+          "source": "FOOTAGE",
+          "footage_query": "dark robe hanging on a hook",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3363__judge_gavel_wooden.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "R02",
+          "subject": "the power handed to the street",
+          "source": "FOOTAGE",
+          "footage_query": "handcuffs closing around a man's wrists",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62565__police_lineup_wall.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        }
+      ]
+    },
+    {
+      "short_id": "short89",
+      "angle": "The argument that won was about the officer, not the suspect.",
+      "type": "C — the reasoning, stated as both sides",
+      "avoids": "short06 gives the holding and the vote. It never gives the reasoning that produced them.",
+      "funnel_question_left_for_longform": "The Court held both truths at once — so which one wins when they collide?",
+      "era": "1963 Cleveland",
+      "loop": true,
+      "loop_join": "L5 ends by asking which of the two truths wins, and L1 opens by saying here is the argument that won.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "Here is the argument that won. If an officer cannot check a person for a weapon until he already has proof of a crime...",
+          "delivery": "intense",
+          "source_lines": [
+            "If an officer can never check a person for a weapon until he already has proof of a crime, then the most dangerous moment of the job — the unknown person, the unseen gun — is also the moment the law leaves him most exposed."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "...then the most dangerous moment of the job, the unknown person and the unseen gun, is the moment the law leaves him most exposed.",
+          "delivery": "building",
+          "source_lines": [
+            "If an officer can never check a person for a weapon until he already has proof of a crime, then the most dangerous moment of the job — the unknown person, the unseen gun — is also the moment the law leaves him most exposed."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "That is one truth. Here is the other. A stop with no warrant and no proof is a real intrusion on a person who has done nothing.",
+          "delivery": "building",
+          "source_lines": [
+            "The decision it wrote in 1968 tried to hold both truths at once, and that is exactly why it has been argued about ever since."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "The decision tried to hold both at once. That is exactly why it has been argued about ever since.",
+          "delivery": "intense",
+          "source_lines": [
+            "The decision it wrote in 1968 tried to hold both truths at once, and that is exactly why it has been argued about ever since."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "The question that reached the Court was narrow. Whether a brief stop and a weapons check could sit below probable cause.",
+          "delivery": "building",
+          "source_lines": [
+            "So the question that reached the Supreme Court was narrow and uncomfortable.",
+            "Is there a kind of police contact that sits below a full arrest — a brief stop, a quick check for weapons — that the Constitution should allow on less than probable cause?"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The opinion came from the Warren Court, then expanding the rights of suspects. This was not a Court looking to help police.",
+          "delivery": "building",
+          "source_lines": [
+            "The opinion was written by Chief Justice Earl Warren — the same Court that, in these same years, was expanding the rights of suspects across the country.",
+            "This was not a Court looking for ways to help the police."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "It decided the street was a genuine exception, and gave an officer just enough, and not one inch more.",
+          "delivery": "intense",
+          "source_lines": [
+            "It was a Court that decided the street was a genuine exception.",
+            "The whole point was to give an officer just enough, and not one inch more."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Two truths, pulling in opposite directions, held inside one decision. So when they collide on a real street, which one actually won?",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U09",
+          "subject": "a patrolman alone at a dark corner",
+          "source": "GENERATE",
+          "prompt": "the back of one uniformed patrolman standing alone at a dark street corner with his head high in the upper third of the frame and empty wet pavement below him, face not visible, no lettering anywhere, lit ONLY by one streetlamp which is switched on above him, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "a lone figure under a streetlight",
+          "source": "FOOTAGE",
+          "footage_query": "silhouette standing under a streetlight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5680__lone_person_silhouette_walking.mp4",
+          "bound_title": "a trader making a call with his smartphone",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.4528,
+          "motion": 5.944,
+          "luma": 43.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "a duty belt with an empty holster",
+          "source": "GENERATE",
+          "prompt": "macro of a worn leather police duty belt coiled on a wooden chair with the holster empty and open, no badge or lettering anywhere, nobody present, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "a shape standing back inside a dark doorway",
+          "source": "GENERATE",
+          "prompt": "a recessed doorway on a night street with the vague shape of a person just visible inside the darkness of it, face not visible, no signage or lettering anywhere, lit ONLY by one streetlamp which is switched on across the road, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the butt of a revolver under a coat hem",
+          "source": "GENERATE",
+          "prompt": "extreme macro of the butt of a revolver showing beneath the hem of a dark overcoat worn by an unseen figure, no face or body visible above the waist, lit ONLY by one hard raking streetlamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "an unknown figure walking straight at camera",
+          "source": "GENERATE",
+          "prompt": "a single figure walking straight toward camera down a narrow night street, reduced entirely to a hard black silhouette by the light behind, face not visible, lit ONLY by one streetlamp which is switched on behind them, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U13",
+          "subject": "a silhouette coming up the street",
+          "source": "FOOTAGE",
+          "footage_query": "silhouette walking toward camera at night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3599__moody_atmosphere_fog.mp4",
+          "bound_title": "eerie foggy cemetery with cross silhouette",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5061,
+          "motion": 1.1,
+          "luma": 46.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a hand settling onto a holster flap",
+          "source": "FOOTAGE",
+          "footage_query": "hand resting on a holster",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52545__vintage_film_camera.mp4",
+          "bound_title": "time lapse video of the sky",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4172,
+          "motion": 6.087,
+          "luma": 62.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the patrolman seen through rain on glass",
+          "source": "GENERATE",
+          "prompt": "the blurred silhouette of a uniformed patrolman seen from inside through a rain-streaked window at night, face not visible, no lettering anywhere, lit ONLY by one streetlamp which is switched on behind him, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "an alley mouth with one bulb over a service door",
+          "source": "GENERATE",
+          "prompt": "the mouth of a narrow brick alley running back into total darkness with one caged bulb burning above a steel service door halfway down it, nobody present, lit ONLY by that bulb which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R09",
+          "subject": "the empty cruiser interior at a night stop",
+          "source": "GENERATE",
+          "prompt": "the interior of a parked 1960s police cruiser at night seen from the passenger side, bench seat empty, the radio set dark and unmarked, a red wash crossing the dashboard from behind, lit ONLY by that beacon which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "hands placed flat against a brick wall",
+          "source": "GENERATE",
+          "prompt": "macro of two men's hands placed flat and high against a rough brick wall with the arms disappearing out of frame, no face or body visible above the wrists, lit ONLY by one streetlamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "a man's hands against a wall",
+          "source": "FOOTAGE",
+          "footage_query": "hands against a wall",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51489__window_blinds_shadow_stripes.mp4",
+          "bound_title": "timelapse of a sunset",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.3938,
+          "motion": 9.049,
+          "luma": 136.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "a coat opened by an unseen hand",
+          "source": "FOOTAGE",
+          "footage_query": "hands searching coat pockets",
+          "bound_title": "a serious lawyer wearing black coat",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4296,
+          "motion": 2.052,
+          "luma": 54.3
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "onlookers watching from across the street",
+          "source": "GENERATE",
+          "prompt": "a loose line of dark onlooker silhouettes standing on the far pavement of a night street watching something out of frame, every face turned away and not visible, lit ONLY by one shop doorway light which is switched on behind them, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "R12",
+          "subject": "personal effects spilled on the pavement",
+          "source": "GENERATE",
+          "prompt": "a set of keys, a comb and a scatter of coins lying on wet night pavement where they were set down, nobody present, no lettering anywhere, lit ONLY by one streetlamp which is switched on above, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R05",
+          "subject": "courthouse columns from directly below",
+          "source": "GENERATE",
+          "prompt": "tall marble courthouse columns photographed from directly below against a dark storm sky with no inscriptions or lettering anywhere on the stone, lit ONLY by hard uplights switched on at their bases, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "R05",
+          "subject": "marble columns of a courthouse",
+          "source": "FOOTAGE",
+          "footage_query": "marble courthouse columns",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5457__bank_building_columns.mp4",
+          "bound_title": "france, paris, lion, statue, center, city, marble, metal, old, antique, europe, ",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.4237,
+          "motion": 5.85,
+          "luma": 135.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.352
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R08",
+          "subject": "the high bench from the floor",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the courtroom floor looking up, empty, every nameplate blank, lit ONLY by one shaft of window light falling across its face, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I07",
+          "subject": "nine empty chairs behind a long bench",
+          "source": "GENERATE",
+          "prompt": "nine tall empty leather chairs standing in a shallow arc behind one long dark wooden bench in an otherwise black chamber, nobody present, all nameplates blank, lit ONLY by one bank of overhead lights which are switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R07",
+          "subject": "the gavel striking its block",
+          "source": "FOOTAGE",
+          "footage_query": "judge gavel strike close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0518__courtroom_interior.mp4",
+          "bound_title": "close up shot of printed circuit board",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4413,
+          "motion": 10.776,
+          "luma": 97.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "two shadows meeting on a pavement",
+          "source": "GENERATE",
+          "prompt": "two long human shadows stretching across wet night pavement until they overlap, the two figures themselves out of frame above, lit ONLY by one streetlamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1963 Cleveland, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the patrolman on the corner",
+          "source": "REUSE_01"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U04",
+          "subject": "the way up to the chamber",
+          "source": "FOOTAGE",
+          "footage_query": "long empty corridor with a lit doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8118__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U03",
+          "subject": "the question typed into a brief",
+          "source": "FOOTAGE",
+          "footage_query": "typewriter keys striking a page",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6097__old_keys_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "the case as it arrived, on paper",
+          "source": "FOOTAGE",
+          "footage_query": "worn case folders piled on a table",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "the doors the case went through",
+          "source": "FOOTAGE",
+          "footage_query": "heavy wooden doors opening into light",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "I05",
+          "subject": "the law searched for an answer",
+          "source": "FOOTAGE",
+          "footage_query": "hand pulling a book from a shelf",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33694__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "the opinion going to print",
+          "source": "FOOTAGE",
+          "footage_query": "printing press running printed pages",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10320__newspaper_printing_press.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U15",
+          "subject": "the Court that was expanding rights",
+          "source": "FOOTAGE",
+          "footage_query": "old american flag hanging indoors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16651__american_flag_waving.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "the opinion written late",
+          "source": "FOOTAGE",
+          "footage_query": "desk lamp burning in a panelled office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0516__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "W01",
+          "subject": "the suspects whose rights were growing",
+          "source": "FOOTAGE",
+          "footage_query": "iron bars of an empty jail cell",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6846__jail_cell_bars.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U16",
+          "subject": "the room the ruling came out of",
+          "source": "FOOTAGE",
+          "footage_query": "sunlight falling through tall arched windows",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1754__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W07",
+          "subject": "just enough, and not one inch more",
+          "source": "FOOTAGE",
+          "footage_query": "a steel tape measure extended closeup",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-3268__frost_forming_time_lapse.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I06",
+          "subject": "only as much light as it allowed",
+          "source": "FOOTAGE",
+          "footage_query": "light shining under a closed door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14086__church_interior_light_beam.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y03",
+          "subject": "the street the exception was made for",
+          "source": "FOOTAGE",
+          "footage_query": "rain falling on an empty street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9440__rain_street_reflection_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U08",
+          "subject": "one long shadow on the wall",
+          "source": "FOOTAGE",
+          "footage_query": "long shadow cast on a brick wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49702__two_people_arguing_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "the line the Court actually drew",
+          "source": "FOOTAGE",
+          "footage_query": "white painted line on dark asphalt",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36651__long_shadow_of_a_person.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

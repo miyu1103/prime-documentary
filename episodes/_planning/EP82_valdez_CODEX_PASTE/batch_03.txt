@@ -1,0 +1,56 @@
+EP82_valdez — 画像発注 バッチ 3/23（8枚）
+区分: ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, ship name, funnel marking, company colour, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) V017.png
+   [V017]  flags: 
+   A cargo control room aboard a 1989 tanker, mimic panel glowing, ceiling lights on, no one present
+
+2) V018.png
+   [V018]  flags: 
+   A large pump room aboard a ship, pipework and valves, work lights blazing overhead
+
+3) V019.png
+   [V019]  flags: 
+   A valve wheel on a tanker deck at night, painted red, a bright deck light raking across it
+
+4) V020.png
+   [V020]  flags: 
+   A marine terminal berth at night seen wide, floodlit gantries and pipework, black water, snow on the rails
+
+5) V021.png
+   [V021]  flags: 
+   A narrow ship's alleyway with cabin doors along one side, a ceiling light burning the whole length
+
+6) V022.png
+   [V022]  flags: 
+   A ship's cabin interior, a bunk turned back and empty, a bright reading lamp on, a coat over a chair
+
+7) V023.png
+   [V023]  flags: 
+   The same bunk slept in and rumpled, the lamp still burning, a clock on the bulkhead
+
+8) V024.png
+   [V024]  flags: 
+   A small ship's cabin desk with a blank notebook under an angled bright lamp, a porthole dark beyond

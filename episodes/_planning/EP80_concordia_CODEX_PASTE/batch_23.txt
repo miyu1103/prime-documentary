@@ -1,0 +1,44 @@
+EP80_concordia — 画像発注 バッチ 23/23（5枚）
+区分: SPARE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, airline livery, airline tail markings, ship funnel markings, company colour scheme, low-resolution.
+
+──────── このバッチの5枚 ────────
+
+1) N177.png
+   [N177]  flags: 
+   An island church bell tower against a brilliant blue sky, seen from below
+
+2) N178.png
+   [N178]  flags: 
+   A narrow Italian island alley in brilliant daylight, stone steps, shuttered windows, washing lines
+
+3) N179.png
+   [N179]  flags: 
+   A harbour at blue hour with quay lamps burning and boats level at moorings, calm water
+
+4) N180.png
+   [N180]  flags: 
+   A weather station anemometer against a brilliant bright sky, seen from below
+
+5) N181.png
+   [N181]  flags: 
+   A wide aerial view of a Mediterranean island at midday, brilliant sun, deep blue water all around

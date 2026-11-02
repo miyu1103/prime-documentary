@@ -1,0 +1,13 @@
+import fs from 'fs';
+import {geoAlbersUsa, geoPath} from 'd3-geo';
+import {feature} from 'topojson-client';
+const topo = JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
+const states = feature(topo, topo.objects.states);
+const W=1920,H=1080;
+const proj = geoAlbersUsa().fitExtent([[90,90],[W-90,H-140]], states);
+const path = geoPath(proj);
+const feats = states.features.map(f=>({name:f.properties.name, d:path(f)})).filter(f=>f.d);
+const cities = {'New York':[-74.0,40.71],'Los Angeles':[-118.24,34.05],'Miami':[-80.19,25.76],'Chicago':[-87.63,41.88],'Washington':[-77.04,38.9]};
+const pins = Object.entries(cities).map(([name,ll])=>{const p=proj(ll);return p?{name,x:Math.round(p[0]),y:Math.round(p[1])}:null;}).filter(Boolean);
+fs.writeFileSync(process.argv[3], JSON.stringify({W,H,states:feats,pins}));
+console.log('states',feats.length,'pins',pins.length,'bytes',fs.statSync(process.argv[3]).size);

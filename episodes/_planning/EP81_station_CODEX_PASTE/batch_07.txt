@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 7/24（8枚）
+区分: ACT_2
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S049.png
+   [S049]  flags: 
+   A steel filing cabinet with one drawer open, hanging folders blank, a work lamp blazing into the lens
+
+2) S050.png
+   [S050]  flags: 
+   A municipal records office in brilliant daylight, shelves of unmarked binders, a window wall
+
+3) S051.png
+   [S051]  flags: 
+   A rubber date stamp and ink pad on a bare desk in close-up, a hard bright lamp from the side, no legible impression
+
+4) S052.png
+   [S052]  flags: 
+   A typewritten memorandum lying on a desk under a bright lamp, the page blank of any legible characters, ruled margins only
+
+5) S053.png
+   [S053]  flags: 
+   A small-town fire department office in daylight, plain desks, a radio on the wall, a brilliant window
+
+6) S054.png
+   [S054]  flags: 
+   A wall-mounted occupancy placard frame beside a doorway, the card inside blank, a bright lamp above it
+
+7) S055.png
+   [S055]  flags: 
+   A clipboard with a blank inspection checklist hanging by a door, a strip light burning overhead
+
+8) S056.png
+   [S056]  flags: 
+   A tape measure and a folded floor plan lying together on a bright counter, a lamp raking across them

@@ -1,0 +1,658 @@
+{
+ "schema_version": "pd_filmconfig.v001",
+ "slug": "robosigning",
+ "episode_id": "PD-2026-059-robosigning",
+ "assets": "episodes/PD-2026-059-robosigning/05_visuals/asset_manifest.v003.json",
+ "narration_index": "episodes/PD-2026-059-robosigning/06_audio/narration_index.v001.json",
+ "narration": "robosigning/narration.mp3",
+ "hookSeconds": 8.0,
+ "hookLine": "Charlie and Maria Cardoso owned their house outright, and a bank's contractors still emptied it, because somewhere a clerk was signing sworn statements at a rate no human being could read.",
+ "figures_by_section": {
+  "HOOK": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "HE PAID CASH.",
+     "THEY PADLOCKED THE DOOR."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "CASH"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "9 JANUARY 2010 · SPRING HILL, FLORIDA",
+    "secondary": "Charlie Cardoso cuts the padlocks off his own front door"
+   }
+  ],
+  "OP": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "MORE THAN 1,000,000 DOCUMENTS.",
+     "NOBODY COUNTED."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOBODY"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NEW BEDFORD, MASSACHUSETTS · 2005",
+    "secondary": "A couple buy somewhere to retire to, on the Gulf side of Florida"
+   }
+  ],
+  "ACT_1": [
+   {
+    "kind": "acttitle",
+    "title": "THE HOUSE THEY OWNED",
+    "kicker": "ACT ONE",
+    "index": 1
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "CHARLIE AND MARIA CARDOSO",
+    "secondary": "New Bedford, Massachusetts — a fishing city on the south coast"
+   },
+   {
+    "kind": "pindropmap",
+    "pins": [
+     {
+      "x": 0.86,
+      "y": 0.27,
+      "label": "NEW BEDFORD, MASSACHUSETTS"
+     },
+     {
+      "x": 0.79,
+      "y": 0.81,
+      "label": "SPRING HILL, FLORIDA"
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "9168 GENEVA STREET, SPRING HILL",
+    "secondary": "Three bedrooms and a pool, a few blocks south of Spring Hill Drive"
+   },
+   {
+    "kind": "numberticker",
+    "value": 139000,
+    "prefix": "$",
+    "group": true,
+    "topLabel": "MARCH 2005",
+    "label": "Paid in cash — Charlie's life savings, the complaint says"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "WHAT CASH MEANS",
+    "secondary": "No lender, no lien, no note, no monthly payment — and a deed stamped by the Hernando County recorder"
+   },
+   {
+    "kind": "numberticker",
+    "value": 0,
+    "label": "Loans the Cardosos ever had with Bank of America or Countrywide"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "LATE JUNE 2009",
+    "secondary": "The tenant telephones in a panic: three Bank of America men are there to foreclose"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THEY CLEANED IT OUT.",
+     "THEY PADLOCKED THE DOORS."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "PADLOCKED"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE BANK'S OWN LISTING AGENT",
+    "secondary": "Contacted Bank of America to advise it that it was foreclosing on the wrong home"
+   },
+   {
+    "kind": "quote",
+    "quote": "Their own real estate agent told them, and nevertheless Bank of America steamrolled right ahead.",
+    "attribution": "the Cardosos' attorney, to the St. Petersburg Times, 13 February 2010"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE HOUSE THEY MEANT TO TAKE",
+    "secondary": "Across the street, about ten doors down"
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "AUGUST 2009",
+      "text": "The bank's landscaping crew breaks the fence to get its mowers in"
+     },
+     {
+      "year": "CHRISTMAS 2009",
+      "text": "The frightened tenant moves out for good"
+     },
+     {
+      "year": "5 JAN 2010",
+      "text": "Bank of America's people come back and padlock the house again"
+     }
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NO MORTGAGE. NO LENDER.",
+     "NO DEBT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "DEBT"
+    ]
+   }
+  ],
+  "ACT_2": [
+   {
+    "kind": "acttitle",
+    "title": "NOBODY WAS READING",
+    "kicker": "ACT TWO",
+    "index": 2
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "5 JANUARY 2010",
+    "secondary": "A representative checks the file and says the bank had made a mistake"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "SOMEONE WOULD CALL BACK",
+     "WITHIN THE HOUR."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "HOUR"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "Countrywide/BOA never called Mr. Cardoso back that day or any day thereafter.",
+    "attribution": "Cardoso v. Bank of America, second amended complaint, D. Mass. 1:10-cv-10075"
+   },
+   {
+    "kind": "numberticker",
+    "value": 1300,
+    "suffix": " miles",
+    "group": true,
+    "topLabel": "7 JANUARY 2010",
+    "label": "Massachusetts to Florida — his son put him in a car and drove him"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE HOMECOMING HE MISSED",
+    "secondary": "Maria's son was coming home from his third tour in Iraq"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "9 JANUARY 2010",
+    "secondary": "The police finally agree to let him into his own house"
+   },
+   {
+    "kind": "quote",
+    "quote": "he cut all the locks off the doors and had to break into the back screen door to get in.",
+    "attribution": "Cardoso v. Bank of America, second amended complaint, paragraph 21"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "WHAT WAS GONE",
+    "secondary": "Air compressor, nail gun, table saw, lawnmower, two refrigerators, the gas grill, the family photographs"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "FROZEN PIPES, A DEAD POOL PUMP",
+    "secondary": "Water and power shut off, tire tracks across the lawn — only the attic was untouched"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "20 JANUARY 2010",
+    "secondary": "The Cardosos file suit in federal court in Massachusetts"
+   },
+   {
+    "kind": "quote",
+    "quote": "We have reached out to the Cardosos' representatives and hope to have the opportunity to work with them to properly assess and address their allegations.",
+    "attribution": "Bank of America statement, January 2010"
+   },
+   {
+    "kind": "numberticker",
+    "value": 1200000,
+    "group": true,
+    "topLabel": "2010",
+    "label": "American homes that completed foreclosure — the peak year"
+   },
+   {
+    "kind": "numberticker",
+    "value": 120000,
+    "group": true,
+    "topLabel": "SEPTEMBER 2010",
+    "label": "Foreclosures completed in the worst single month"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "SIX TIMES.",
+     "NOBODY OPENED THE FILE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOBODY"
+    ]
+   }
+  ],
+  "ACT_3": [
+   {
+    "kind": "acttitle",
+    "title": "WHAT A SWORN STATEMENT IS",
+    "kicker": "ACT THREE",
+    "index": 3
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "PERSONAL KNOWLEDGE",
+     "OF THE FACTS."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "PERSONAL"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE AFFIDAVIT",
+    "secondary": "One named person swears, on penalty of perjury, that they have read the file"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "IN A GREAT MANY CASES IT IS THE ONLY EVIDENCE",
+    "secondary": "Most homeowners in foreclosure have no lawyer; many never appear at all"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "10 DECEMBER 2009 · WEST PALM BEACH",
+    "secondary": "Christopher Immel of Ice Legal puts the question to a man named Jeffrey Stephan"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "JEFFREY STEPHAN",
+    "secondary": "Team leader of the document execution unit, a team of fourteen — GMAC Mortgage, Fort Washington, Pennsylvania"
+   },
+   {
+    "kind": "quote",
+    "quote": "in a month, my team brings to me approximately, I'd say a round number of 10,000. That's just an estimate, of course.",
+    "attribution": "Jeffrey Stephan, sworn deposition, 10 December 2009"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "DOCUMENTS BROUGHT TO HIM IN A MONTH",
+      "value": 10000
+     },
+     {
+      "label": "MINUTES IN AN EIGHT-HOUR WORKING MONTH",
+      "value": 10000
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "So these documents wouldn't be actually executed on your own personal knowledge? — Right.",
+    "attribution": "Christopher Immel and Jeffrey Stephan, sworn deposition, 10 December 2009"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "SIGNED 3 MARCH · NOTARISED 4 MARCH",
+    "secondary": "The notaries were not physically present, and he agreed that this was common"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "7 JUNE 2010",
+    "secondary": "Maine lawyer Thomas Cox deposes him a second time, in a second case"
+   },
+   {
+    "kind": "numberticker",
+    "value": 400,
+    "topLabel": "MAINE, JUNE 2010",
+    "label": "New requests a day, on his own sworn testimony"
+   },
+   {
+    "kind": "quote",
+    "quote": "I look for the figures.",
+    "attribution": "Jeffrey Stephan, asked what he reads before signing, 7 June 2010"
+   },
+   {
+    "kind": "quote",
+    "quote": "So you do not appear before the notary; is that correct? — I do not.",
+    "attribution": "Thomas Cox and Jeffrey Stephan, sworn deposition, 7 June 2010"
+   },
+   {
+    "kind": "numberticker",
+    "value": 23779.36,
+    "prefix": "$",
+    "decimals": 2,
+    "group": true,
+    "label": "Costs the Maine court ordered the plaintiff to pay, finding the affidavit submitted in bad faith"
+   },
+   {
+    "kind": "quote",
+    "quote": "The affidavit in this case is a disturbing example of a reprehensible practice. That such fraudulent evidentiary filings are being submitted to courts is both violative of the rules of court and ethically indefensible.",
+    "attribution": "Federal National Mortgage Ass'n v. Bradbury, Maine Supreme Judicial Court, 2011"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "1 MAY 2006",
+    "secondary": "A Florida court had already sanctioned the very same company for the very same practice"
+   }
+  ],
+  "ACT_4": [
+   {
+    "kind": "acttitle",
+    "title": "THE SIGNATURE FACTORY",
+    "kicker": "ACT FOUR",
+    "index": 4
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "DOCX LLC · ALPHARETTA, GEORGIA",
+    "secondary": "A low-rise office suite, owned by Lender Processing Services of Jacksonville, Florida"
+   },
+   {
+    "kind": "numberticker",
+    "value": 1000000,
+    "group": true,
+    "topLabel": "MARCH 2003 – LATE 2009",
+    "label": "Fraudulently signed and notarised mortgage documents, filed with property recorders"
+   },
+   {
+    "kind": "quote",
+    "quote": "a six-year scheme to prepare and file more than 1 million fraudulently signed and notarized mortgage-related documents with property recorders' offices throughout the United States.",
+    "attribution": "United States Department of Justice, 25 June 2013"
+   },
+   {
+    "kind": "numberticker",
+    "value": 60000000,
+    "prefix": "$",
+    "group": true,
+    "label": "DocX gross revenue over those six years"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "LINDA GREEN WAS REAL",
+    "secondary": "An auto-parts shipping clerk who took a job at DocX in 2003 — she was never charged with anything"
+   },
+   {
+    "kind": "quote",
+    "quote": "She told us she has never been a bank vice president.",
+    "attribution": "CBS, 60 Minutes, April 2011"
+   },
+   {
+    "kind": "quote",
+    "quote": "So you're Linda Green? — Yeah, can't you tell?",
+    "attribution": "Scott Pelley and DocX signer Chris Pendley, CBS, April 2011"
+   },
+   {
+    "kind": "stat",
+    "value": 350,
+    "topLabel": "$10 AN HOUR",
+    "label": "Signatures an hour — the floor quota at DocX"
+   },
+   {
+    "kind": "quote",
+    "quote": "So if Chris Pendley was signing for Linda Green, you'd notarize that document. — Yes.",
+    "attribution": "Scott Pelley and DocX signer and notary Shawanna Crite, CBS, April 2011"
+   },
+   {
+    "kind": "quote",
+    "quote": "Thousands and thousands and thousands of assignments . . . signed weekly.",
+    "attribution": "Florida Attorney General, Economic Crimes Division presentation, December 2010"
+   },
+   {
+    "kind": "numberticker",
+    "value": 20,
+    "label": "Banks the name was signed as vice president of at the same time — investigator Lynn Szymoniak, in her own foreclosure file"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE DEPOSITION THAT STOPPED IT",
+    "secondary": "A Bank of America official said she signed 7,000 to 8,000 foreclosure documents a month without reading them"
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "20 SEP 2010",
+      "text": "GMAC Mortgage tells brokers and agents to halt evictions in 23 states"
+     },
+     {
+      "year": "29 SEP 2010",
+      "text": "JPMorgan Chase suspends more than 50,000 foreclosures"
+     },
+     {
+      "year": "1 OCT 2010",
+      "text": "Bank of America freezes foreclosures in the same 23 states"
+     },
+     {
+      "year": "8 OCT 2010",
+      "text": "Bank of America extends the freeze to all fifty"
+     }
+    ]
+   },
+   {
+    "kind": "regionmap",
+    "label": "23 STATES WHERE A JUDGE MUST BE HANDED THE PAPER",
+    "pattern": "varied"
+   },
+   {
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "13 OCT 2010",
+      "text": "Attorneys general from all fifty states announce a joint investigation"
+     },
+     {
+      "year": "18 OCT 2010",
+      "text": "Bank of America says it will process affidavits in 102,000 proceedings"
+     },
+     {
+      "year": "27 OCT 2010",
+      "text": "Wells Fargo will file supplemental affidavits in 55,000 foreclosure actions"
+     }
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "SEVENTEEN DAYS.",
+     "THEY RE-SIGNED THEM."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "RE-SIGNED"
+    ]
+   }
+  ],
+  "ACT_5": [
+   {
+    "kind": "acttitle",
+    "title": "THE PRICE OF A MILLION HOMES",
+    "kicker": "ACT FIVE",
+    "index": 5
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "9 FEBRUARY 2012",
+    "secondary": "Justice, HUD, 49 state attorneys general and the District of Columbia — every state except Oklahoma — against the five biggest servicers"
+   },
+   {
+    "kind": "numberticker",
+    "value": 25000000000,
+    "prefix": "$",
+    "group": true,
+    "label": "The National Mortgage Settlement, as announced"
+   },
+   {
+    "kind": "quote",
+    "quote": "This agreement – the largest joint federal-state settlement ever obtained – is the result of unprecedented coordination among enforcement agencies throughout the government.",
+    "attribution": "Attorney General Eric Holder, 9 February 2012"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "CONSUMER RELIEF ($BN)",
+      "value": 20
+     },
+     {
+      "label": "OTHER PAYMENTS ($BN)",
+      "value": 5
+     },
+     {
+      "label": "CASH TO PEOPLE WHOSE HOMES WERE TAKEN ($BN)",
+      "value": 1.5
+     }
+    ]
+   },
+   {
+    "kind": "stat",
+    "value": 6,
+    "suffix": "%",
+    "label": "Share of the twenty-five billion that was cash to a person whose house had already been taken"
+   },
+   {
+    "kind": "numberticker",
+    "value": 962278,
+    "group": true,
+    "topLabel": "SECOND WEEK OF JUNE 2013",
+    "label": "Valid claims paid"
+   },
+   {
+    "kind": "numberticker",
+    "value": 1480,
+    "prefix": "$",
+    "group": true,
+    "label": "What each of those households received — the settlement had been sized for about three quarters of a million claims"
+   },
+   {
+    "kind": "quote",
+    "quote": "a pattern of misconduct and negligence related to deficient practices in residential mortgage loan servicing and foreclosure processing",
+    "attribution": "consent orders against fourteen banking organisations, 13 April 2011"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "7 JANUARY 2013",
+    "secondary": "The Independent Foreclosure Review is terminated — final reviews were done on about 14 per cent of the files, and no consultant finished a sample"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "COST TO FINISH THE REVIEWS ($BN)",
+      "value": 2
+     },
+     {
+      "label": "WHAT THE REVIEWS WOULD RETURN TO THE HARMED ($BN)",
+      "value": 1.2
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "regardless of whether the borrower had suffered financial injury caused by servicer error",
+    "attribution": "Federal Reserve, Independent Foreclosure Review Final Report, 2019"
+   },
+   {
+    "kind": "numberticker",
+    "value": 2358441,
+    "group": true,
+    "topLabel": "PAID $300",
+    "label": "Out of 3,949,896 borrowers in the Federal Reserve's own payment table, published 9 April 2013"
+   },
+   {
+    "kind": "numberticker",
+    "value": 1082,
+    "group": true,
+    "topLabel": "PAID $125,000",
+    "label": "Every one a servicemember whose home was foreclosed in breach of a law written to protect people on active duty"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "LORRAINE BROWN",
+    "secondary": "Chief executive of DocX — pleaded guilty 20 November 2012, sentenced 25 June 2013 to five years in prison and a $15,000 fine"
+   },
+   {
+    "kind": "numberticker",
+    "value": 35000000,
+    "prefix": "$",
+    "group": true,
+    "label": "Paid by Lender Processing Services under a non-prosecution agreement, four months before she was sentenced"
+   },
+   {
+    "kind": "numberticker",
+    "value": 5772.88,
+    "prefix": "$",
+    "decimals": 2,
+    "group": true,
+    "topLabel": "NAPLES, FLORIDA · JUNE 2011",
+    "label": "The cheque a branch manager wrote within the hour, after the Nyerges' lawyer arrived with deputies and a moving truck"
+   }
+  ],
+  "ENDING": [
+   {
+    "kind": "numberticker",
+    "value": 7800000,
+    "group": true,
+    "topLabel": "2007 – 2016",
+    "label": "Roughly, completed foreclosures in the United States, on CoreLogic's count"
+   },
+   {
+    "kind": "quote",
+    "quote": "Between 2006 and 2008, the number of foreclosure filings increased threefold from 700,000 to 2.3 million.",
+    "attribution": "CFPB Director Rohit Chopra, 26 April 2023"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ZOMBIE SECOND MORTGAGES",
+    "secondary": "Loans most homeowners last paid in 2015 or earlier, sold to debt collectors for pennies on the dollar"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "JANUARY 2025",
+    "secondary": "The Bureau found one or more companies had failed to send those homeowners the statements the law requires"
+   },
+   {
+    "kind": "quote",
+    "quote": "issuing stop-work orders; closing supervisory examinations; and terminating employees, contracts, and enforcement cases",
+    "attribution": "GAO-26-108448, on the Consumer Financial Protection Bureau since February 2025"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "A FEDERAL COURT HAS SO FAR BLOCKED THE PLAN",
+    "secondary": "The funding cap was cut in half by statute in July 2025; the litigation is live as this film goes out"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NOBODY EVER",
+     "COUNTED."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOBODY"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "pd_014_015_prepare_owner_approvals",
+  "apply": false,
+  "results": [
+    {
+      "episode_id": "PD-2026-014-lange",
+      "input": "episodes/PD-2026-014-lange/approvals/OWNER_APPROVAL_INPUT.v001.txt",
+      "apply": false,
+      "created": [],
+      "would_create": [],
+      "blocked": [
+        "missing owner approval input file"
+      ]
+    },
+    {
+      "episode_id": "PD-2026-015-theranos",
+      "input": "episodes/PD-2026-015-theranos/approvals/OWNER_APPROVAL_INPUT.v001.txt",
+      "apply": false,
+      "created": [],
+      "would_create": [],
+      "blocked": [
+        "missing owner approval input file"
+      ]
+    }
+  ]
+}

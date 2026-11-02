@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 275,
+  "episode_id": "PD-2026-067-ramirez",
+  "slug": "ramirez",
+  "loop": true,
+  "loop_join": "The CTA card is p14 (short275_14.png, isCta:true, rewind:true) under L8; it rewinds the plate sequence under the FULL CASE overlay and holds on the final frame, landing back on p01 (short275_01.png) -- the same credit-agency plate frame 0 opens on -- so the loop closes on the identical picture.",
+  "second_watch_detail": "The plates under L3-L4 (p05/p06, the Cortez OFAC match) sit behind the stark '27 YEARS APART' kinetic card; on a first watch that gap reads as a one-off computer glitch, but once L6-L8 explain the match tool compared first and last name only, the same birth-date gap reads as the predictable output of a system that never checked dates at all.",
+  "funnel_question_left_for_longform": "A jury had already punished the same failure once, six years earlier. Why did it keep happening?",
+  "funnel_long_title": "A Salesman Said His Name Was on a Terrorist List.",
+  "funnel_long_video_id": "DgpF4UxcsH4",
+  "description_line_1": "▶ FULL CASE: A Salesman Said His Name Was on a Terrorist List. | https://youtu.be/DgpF4UxcsH4",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Salesman Said His Name...",
+    "ctaLongThumbSrc": "shorts/short275/short275_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "A jury had already punished the same failure once, six years earlier. Why did it keep happening? The full case is here: https://youtu.be/DgpF4UxcsH4",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for short275, a Short that is already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the CUTS/beat structure, ctaHeadline/ctaLongTitle/ctaLongThumbSrc and kineticBeats from remotion/src/data/short275.ts, the standing question from that file's header (also present verbatim in episodes/_planning/short_designs/PD-2026-067-ramirez.design.v001.json), the spoken lines from short275_lines.v001.json (checked so no content word of the standing question -- 'jury', 'already', 'punished', 'once', 'six', 'earlier', 'keep', 'happening' -- is fully covered by them), and the long-form id/title from youtube_schedule_result.v001.json and youtube_meta.v001.json for the live video DgpF4UxcsH4. shorts/short275/short275_ctathumb.jpg is not present in this checkout, matching short194's reference record, so it appears to live outside this repo rather than being a defect specific to this short. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a placeholder row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet because short275 is not yet uploaded."
+}

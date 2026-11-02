@@ -1,0 +1,73 @@
+EP67 ramirez — 画像発注 バッチ 11/18（6枚）
+区分: C · the people lane  [HSTYLE]  [R073 – R078]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── この区分だけの追加指定（人物レーン）────────
+
+各プロンプトの先頭 [HSTYLE] は、次の文言に置き換えてください:
+
+photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens
+
+・この24枚のうち9枚は**顔がはっきり写ります。それが狙いです。**
+　ただし全員**架空の他人**です。実在の誰かに似せないでください。
+・カメラ目線にしない。作り笑いをしない。広告のモデル顔にしない。
+
+──────── プロンプト ────────
+
+■ R073.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. THREE ADULTS SEEN FROM BEHIND at a sales desk, framed from behind their shoulders at seated height: three backs and three sets of shoulders fill the lower half of the frame as dark soft masses, NO FACE IS VISIBLE AND NOT ONE HEAD IS TURNED, and the near hands of the middle figure rest flat on the desk edge in sharp focus with the fingers separate. Everything beyond them — the desk, the chair opposite, the bright showroom — falls away into soft focus. Ordinary weekday clothes, no coats, nothing branded Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, face, profile, turned head, reflection of a face, licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker
+
+■ R074.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. ONE adult hand alone on a laminate desk beside a set of car keys, photographed close from a low three-quarter angle. THE HAND IS AT REST FLAT ON THE SURFACE, not raised and not held in the air, the palm laid down in full contact with it and the wrist straight, THE FOUR FINGERS LYING SIDE BY SIDE AND SEPARATE with a visible line of shadow between each pair and one nail showing on each, and the thumb clearly apart from the fingers along the near side. A plain worn wedding band sits on the ring finger. The skin is mid-forties, dry, ordinary, with visible knuckle creases and short unmanicured nails. The keys lie a few inches beyond the fingertips, unmarked. Bright daylight from the left, the rest of the desk soft Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, manicured nails, jewellery beyond one plain band, wristwatch with a readable face, licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker
+
+■ R075.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. A hand on a computer keyboard photographed close from the side at desk height, THE PALM AND FINGERS RESTING DOWN ON THE KEYS rather than typing in mid-air, THE FOUR FINGERS SIDE BY SIDE AND SEPARATE each on its own key with a line of shadow between them and one nail visible on each, the thumb down by the space bar and clearly apart. The keycaps are blank and unmarked. A cool screen light from out of frame right lies along the knuckles and the back of the hand; THE SCREEN ITSELF IS NOT IN THE FRAME Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, letters on the keycaps, hands typing in mid-air, second hand
+
+■ R076.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. A woman's two hands at a counter, framed from the forearms down and seen from just above and in front, both hands DOWN ON THE COUNTER TOP AND IN FULL CONTACT WITH IT: the left hand lies flat and steady on the corner of a sheet of paper with its four fingers side by side and separate, and the right hand rests on the paper on the heel of the palm with a plain pen held between the thumb and the first two fingers, THE PEN'S TIP TOUCHING THE PAPER AND AT REST. Every finger on both hands is separately visible with its own nail. The sheet is completely blank: an unbroken field of off-white paper with no print, no ruling, no letterform, no number and no mark of any kind on it. Bright daylight from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, hand raised off the surface, pen in mid-air, signature on the paper, printed contract
+
+■ R077.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. A man in his forties SEEN ENTIRELY FROM BEHIND, standing still in the middle of a bright empty car showroom, framed from the knees up and placed slightly left of centre: an ordinary dark jacket, ordinary trousers, ordinary short hair, both arms hanging at his sides with the hands relaxed and the fingers loosely separate. HIS HEAD IS NOT TURNED AND NO PART OF HIS FACE IS VISIBLE. The showroom glass and floor beyond him are bright and soft Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, face, profile, turned head, reflection of his face in the glass, licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker
+
+■ R078.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. Two adults WALKING AWAY FROM THE CAMERA across an open car forecourt at midday, seen from behind and far off so that together they occupy less than a sixth of the frame height and no feature of either is resolvable — two ordinary dark silhouettes against hot pale asphalt, one slightly ahead of the other. Rows of parked unmarked cars either side, flat hard light, a pale sky Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, face, turned head, licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, dealership signage, price sticker, window sticker, close figures, recognisable clothing brand
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R073.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

@@ -1,0 +1,595 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "pd_release_deviations",
+  "episode_id": "PD-2026-071-oroville",
+  "slug": "oroville",
+  "generated_at": "2026-08-23T19:22:50.865755+00:00",
+  "dry_run": true,
+  "policy": {
+    "path": "config/ship_policy.v001.json",
+    "authored": "2026-08-12",
+    "the_rule": "A check may STOP a ship only if it is in `blocking`. Everything else is measured, recorded on the release, and shipped. Nothing here lowers a threshold -- every check still runs and every number is still written down. What changes is which numbers hold the door shut.",
+    "blocking_classes": [
+      "real_person_likeness",
+      "rights_and_licence",
+      "factual_support",
+      "fabricated_record"
+    ]
+  },
+  "receipt": {
+    "path": "episodes/PD-2026-071-oroville/09_package/acceptance_receipt.v001.json",
+    "status": "FAIL",
+    "video_sha256": "sha256:0cb20275fecb4a7e68f40dac83160961cc222115b80a8eb8cdbc2d2596245bd2",
+    "hard_failures": [
+      "images_present",
+      "animation_density",
+      "image_cut_luma",
+      "padding",
+      "motion_density",
+      "visual_asset_qc",
+      "retention_cadence",
+      "preflight_receipt",
+      "thumbnail_ready"
+    ]
+  },
+  "video": {
+    "path": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-071-oroville\\08_edit\\oroville_final_bgm.v001.mp4",
+    "sha256": "sha256:0cb20275fecb4a7e68f40dac83160961cc222115b80a8eb8cdbc2d2596245bd2"
+  },
+  "decision": "permit",
+  "blocking_failures": [],
+  "deviations": [
+    {
+      "check": "images_present",
+      "class": "advisory",
+      "advisory_group": "craft_image",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: picture brightness, resolution and per-cut exposure",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the acceptance receipt records this check as a pass/fail bit and not its measured value, and the gate needs the render to measure it (ffmpeg decode), which is not re-run at schedule time. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "animation_density",
+      "class": "advisory",
+      "advisory_group": "craft_motion",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: movement and animation richness -- the owner's standing complaint, and a real one, but it is taste and it goes in the backlog, not on the door",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the acceptance receipt records this check as a pass/fail bit and not its measured value, and the gate needs the render to measure it (ffmpeg decode), which is not re-run at schedule time. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "image_cut_luma",
+      "class": "advisory",
+      "advisory_group": "craft_image",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: picture brightness, resolution and per-cut exposure",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the receipt records this check as a pass/fail bit and not its measured value, and it is not re-run at schedule time because it decodes the render frame by frame. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "padding",
+      "class": "advisory",
+      "advisory_group": "craft_pacing",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: dead air between narration chunks and repeated phrasing -- pacing craft",
+      "backlog": true,
+      "measured": {
+        "chunks": 343,
+        "has_timing": true,
+        "runtime_span_s": 1650.11,
+        "dead_air_seconds": 118.2,
+        "inter_chunk_dead_seconds": 118.2,
+        "dead_air_frac": 0.0716,
+        "leading_silence_s": 0.0,
+        "trailing_silence_s": 0.0,
+        "within_chunk_dead_s": 0.0,
+        "repeated_phrase_count": 20
+      },
+      "threshold": null,
+      "detail": "1 padded dead-air gap(s); worst 3.00s at 20:35.88 (mid-section dead air); 5 restated near-duplicate sentence(s) > 2: [0.87] 'the supermarket announced that it was cl'~'the shop announced that it was closing'; [0.96] 'and it told its customers to go home and'~'it told its customers to go home and eva'; [0.84] 'within a few hours a hundred and eighty '~'a hundred and eighty eight thousand peop'; 20 distinct 7-word phrase(s) repeat > 4; phrase repeated x4 (>= 3): 'a hundred and eighty eight thousand people'",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "motion_density",
+      "class": "advisory",
+      "advisory_group": "craft_motion",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: movement and animation richness -- the owner's standing complaint, and a real one, but it is taste and it goes in the backlog, not on the door",
+      "backlog": true,
+      "measured": {
+        "episode_id": "PD-2026-071-oroville",
+        "density_per_min": 2.18,
+        "coverage": 0.212,
+        "variety": 6,
+        "kinetic_beats": 60,
+        "graphics_beats": 0,
+        "figure_beats": 60,
+        "hero_cuts": 0,
+        "plain_cuts": 301,
+        "body_minutes": 27.5
+      },
+      "threshold": null,
+      "detail": "premium animation too sparse (紙芝居 risk): kinetic-beat density 2.18/min < 2.5 (60 beats over 27.5min — mostly Ken-Burns stills); animated coverage 21.2% < 25% (349s of 1650s body has a kinetic beat)",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "visual_asset_qc",
+      "class": "advisory",
+      "advisory_group": "craft_footage",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: which clips were used and how often -- diversity, reuse, utilisation, factory share",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "measured_source": "unavailable",
+      "measured_unavailable": "the receipt records this check as a pass/fail bit and not its measured value, and it is not re-run at schedule time because it shells out to ffmpeg over the staged clip pool. Re-run `check_final_acceptance.py <ep> --render <mp4> --json` to see the number."
+    },
+    {
+      "check": "retention_cadence",
+      "class": "advisory",
+      "advisory_group": "craft_script",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: script length, structure, cadence and AI-smell",
+      "backlog": true,
+      "measured": {
+        "runtime_s": 1650.1,
+        "rehook_marks": 34,
+        "rehook_gap_max_s": 180.0,
+        "question_marks": 5,
+        "first_question_s": 595.8,
+        "question_gap_max_s": 420.0
+      },
+      "threshold": {
+        "max_rehook_gap_s": 167.2,
+        "max_rehook_gap_at_s": 59.7,
+        "max_question_gap_s": 595.8,
+        "max_question_gap_at_s": 0.0
+      },
+      "detail": "no direct question for 596s > 420s starting at 0.0min",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null
+    },
+    {
+      "check": "preflight_receipt",
+      "class": "advisory",
+      "advisory_group": "process_receipt",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: a preceding receipt is missing, stale or from another render. This is bookkeeping about the build, not a property of the film that goes out; the scheduler separately binds the acceptance receipt to the exact bytes and that binding is not relaxed",
+      "backlog": false,
+      "measured": null,
+      "threshold": null,
+      "detail": "retired 2026-08-23 (decisions/0012-RETIRE-PREFLIGHT-RECEIPT.md): measures artifacts the pipeline stopped producing at ~EP67; replaced by spec_satisfied + probe receipt + ep77 plan stage",
+      "measured_source": "reevaluated",
+      "measured_unavailable": "the gate skipped on re-run (its inputs are not in the repo), so the value behind the receipt's FAIL could not be recovered"
+    },
+    {
+      "check": "thumbnail_ready",
+      "class": "advisory",
+      "advisory_group": "craft_packaging",
+      "why_it_did_not_block": "advisory under config/ship_policy.v001.json: title, thumbnail and description craft (the AI-disclosure line is split out and blocks -- see split_checks)",
+      "backlog": true,
+      "measured": null,
+      "threshold": null,
+      "detail": "4 thumb(s) at 1280x720, selected=yes (need >=3 + selected)",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "reevaluation_disagrees": "the receipt records this check as FAILED on the shipped bytes; re-run now it PASSES. The receipt is the record of the render -- this row stands."
+    },
+    {
+      "check": "spec_satisfied.distinct_video_assets",
+      "class": "advisory",
+      "advisory_group": "craft_footage",
+      "backlog": true,
+      "measured": "distinct_video_assets: 220 distinct footage+motion source(s) across 296 video cut(s), against a declared 260 -- 40 short, so 76 cut(s) repeat an asset already used",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "threshold": null,
+      "why_it_did_not_block": "advisory: a missing purpose-made still or a short distinct-asset count is coverage craft, not a ban or legal risk"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "On the twelfth of February 2017, the emergency spillway at the Oroville Dam in northern California was failing, and 188,000 people were ordered out of their hom",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "northern",
+          "twelfth",
+          "fail"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "On the twelfth of February 2017, the emergency spillway at the Oroville Dam in northern California was failing, and 188,000 people were ordered out of their hom",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "peopl",
+          "northern",
+          "twelfth"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "On the twelfth of February 2017, the emergency spillway at the Oroville Dam in northern California was failing, and 188,000 people were ordered out of their hom",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "order",
+          "fail",
+          "california"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "Two days later they were allowed back.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "allow",
+          "day"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "Two days later they were allowed back.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "allow",
+          "day"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "This film is about what happened to the two days.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "happen",
+          "day",
+          "videotape"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "This film is about what happened to the two days.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "happen",
+          "day",
+          "videotape"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "asked the State of California to pay back what the evacuation had cost them: the out-of-pocket expenses of two days, and the loss of the use of their homes for ",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "day",
+          "pocket",
+          "pay"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "asked the State of California to pay back what the evacuation had cost them: the out-of-pocket expenses of two days, and the loss of the use of their homes for ",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "cost",
+          "pocket",
+          "pay"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    },
+    {
+      "check": "packaging_claims[description]",
+      "class": "factual_support_advisory",
+      "advisory_group": "craft_packaging",
+      "blocking": false,
+      "why_it_did_not_block": "an ordinary past-tense verb or a description sentence the record does not state in these words. The gate matches words; the films paraphrase. Recorded for review, not held against the ship.",
+      "measured": {
+        "claim": "The case turned on a question nobody expects.",
+        "verdict": "UNVERIFIED",
+        "required_terms": [
+          "question",
+          "expect",
+          "turn"
+        ],
+        "record_line": null,
+        "record_text": ""
+      },
+      "threshold": "every figure, name and outcome located in the episode's own record",
+      "measured_source": "reevaluated",
+      "measured_unavailable": null,
+      "why_it_blocks": "UNVERIFIED: the title/thumbnail/description states something the episode's own script and ledger do not"
+    }
+  ],
+  "unclassified_checks": [],
+  "unmeasured_checks": [
+    {
+      "check": "bgm_ending",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no music bed under the tail to resolve (body -91.0 dB)",
+      "backlog": true,
+      "why_it_did_not_block": "bgm_ending did not run (no_inputs): no music bed under the tail to resolve (body -91.0 dB). It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "hook_added",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "shotlist totals missing",
+      "backlog": true,
+      "why_it_did_not_block": "hook_added did not run (no_inputs): shotlist totals missing. It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "thumb_subject_luma",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no selected thumbnail (09_package/thumbnail.selected*.png) to measure",
+      "backlog": true,
+      "why_it_did_not_block": "thumb_subject_luma did not run (no_inputs): no selected thumbnail (09_package/thumbnail.selected*.png) to measure. It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "onscreen_text_verified",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "factual_support",
+      "skip_kind": "no_inputs",
+      "detail": "claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-071-oroville\\01_research\\claims.v001.json (skipped honestly)",
+      "backlog": true,
+      "why_it_did_not_block": "UNMEASURED BLOCKING CLASS: onscreen_text_verified is the factual_support detector and it DID NOT RUN (no_inputs): claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-071-oroville\\01_research\\claims.v001.json (skipped honestly). Nothing was measured, so nothing clears this class for this episode. It is permitted because a missing input is a tooling gap rather than evidence about the film, and it is recorded here so that no reader can mistake this receipt's green for a measurement."
+    },
+    {
+      "check": "script_structure",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no annotated script under C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-071-oroville/03_script (SSD or not authored)",
+      "backlog": true,
+      "why_it_did_not_block": "script_structure did not run (no_inputs): no annotated script under C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-071-oroville/03_script (SSD or not authored). It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "check_packaging_qc",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "fabricated_record",
+      "skip_kind": "no_inputs",
+      "detail": "no 09_package/youtube_meta.v*.json yet (packaging not authored)",
+      "backlog": true,
+      "why_it_did_not_block": "UNMEASURED BLOCKING CLASS: check_packaging_qc is the fabricated_record detector and it DID NOT RUN (no_inputs): no 09_package/youtube_meta.v*.json yet (packaging not authored). Nothing was measured, so nothing clears this class for this episode. It is permitted because a missing input is a tooling gap rather than evidence about the film, and it is recorded here so that no reader can mistake this receipt's green for a measurement."
+    },
+    {
+      "check": "check_encoder_settings",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no long-form final render resolved yet",
+      "backlog": true,
+      "why_it_did_not_block": "check_encoder_settings did not run (no_inputs): no long-form final render resolved yet. It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "thumbnail_visibility",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no selected thumbnail to measure",
+      "backlog": true,
+      "why_it_did_not_block": "thumbnail_visibility did not run (no_inputs): no selected thumbnail to measure. It is not in a blocking class, so the absence is recorded and does not block."
+    },
+    {
+      "check": "image_resolution",
+      "unmeasured": true,
+      "blocking": false,
+      "class": "advisory",
+      "skip_kind": "no_inputs",
+      "detail": "no hero PNGs staged in remotion/public/oroville",
+      "backlog": true,
+      "why_it_did_not_block": "image_resolution did not run (no_inputs): no hero PNGs staged in remotion/public/oroville. It is not in a blocking class, so the absence is recorded and does not block."
+    }
+  ],
+  "unmeasured_blocking_classes": [
+    "fabricated_record",
+    "factual_support"
+  ],
+  "blocking_class_detectors": {
+    "real_person_likeness": {
+      "detector": "check_shipped_frames.py (run by the scheduler, hard exit on failure)",
+      "evidence": "runs/qc/oroville_shipped_frames_review.v001.json",
+      "sha_bound_to_this_render": false,
+      "reviewer": "Claude (Opus 5, Claude Code) -- all 61 sheets opened and read tile by tile, 2026-08-23",
+      "plate_review": {
+        "detector": "check_plate_verdicts verdicts re-read against the built film",
+        "verdicts_file": "runs/qc/oroville_plate_verdicts.v001.json",
+        "wired_here": true,
+        "state": "measured",
+        "plates": 118,
+        "cuts_tested": 225,
+        "rejected": 0,
+        "unresolved": 0,
+        "rejected_in_film": 0,
+        "unresolved_in_film": 0,
+        "blocking_rows": 0
+      },
+      "state": "partial",
+      "honest_limit": "the frame sampling and the sha binding are real; the LIKENESS judgement is free text in this file and nothing authenticates the reviewer field. There is no face or minor detector anywhere on the ship path. Since 2026-08-12 the PLATE verdicts are also re-read here against the built film, so a plate a reviewer rejected for an identifiable face can no longer reach the door by being rendered first -- but that too is the reviewer's free text, and a plate nobody looked at carefully passes it exactly as easily as one they did."
+    },
+    "rights_and_licence": {
+      "detector": {
+        "detector": "pd_footage_blocklist.hits over the built film",
+        "film": "oroville_film.json",
+        "wired_here": true,
+        "state": "measured",
+        "cuts_tested": 309,
+        "hits": 0
+      },
+      "blocklist_hits": 0,
+      "rights_manifest": null,
+      "state": "partial",
+      "honest_limit": "the blocklist is a DENYLIST of assets already found to be bad. Nothing on the ship path requires positive licence or provenance clearance for the assets in the film, and this episode carries NO rights manifest."
+    },
+    "factual_support": {
+      "detector": "verify_onscreen_text (burned on-screen figures vs grade-A claims) + check_script_craft (forbidden-claim pass over the script) + check_packaging_claims (title/thumbnail/description vs this episode's own script, captions and ledgers)",
+      "claim_ledger": null,
+      "facts_ledger": "EP71_oroville_FACTS_LEDGER.v001.md",
+      "episode_spec_forbidden_claims": 27,
+      "packaging_claims": {
+        "detector": "check_packaging_claims.evaluate over 09_package packaging",
+        "wired_here": true,
+        "state": "measured",
+        "claims_checked": 50,
+        "unsupported": 0,
+        "soft_unsupported": 26,
+        "record_sentences": 1396
+      },
+      "state": "partial",
+      "honest_limit": "verify_onscreen_text SKIPS on this episode -- there is no claims.v*.json in 01_research, so it reports ok=true without measuring anything. check_script_craft compares the SCRIPT against the FACTS ledger by literal substring, so a paraphrase evades it. episode_spec.forbidden_claims (27 declared) is read by no gate that can refuse. Narration is compared against no claim ledger anywhere on the ship path. The TITLE, THUMBNAIL TEXT and DESCRIPTION are now read against this episode's own record by check_packaging_claims (2026-08-12, after two false titles cleared every mechanical rule), and it blocks -- but it matches words, stems and numbers only: it cannot judge tone or implication, it passes a title whose words are all in a script that is itself wrong, and a paraphrase the film states in other words reads as UNVERIFIED. A green from it is not a substitute for reading the title against the film."
+    },
+    "fabricated_record": {
+      "detector": "check_packaging_qc: the AI-disclosure line in the description that is uploaded",
+      "has_ai_disclosure": true,
+      "state": "partial",
+      "honest_limit": "this is a substring test for a disclosure phrase, correctly bound to the description the scheduler uploads. NOTHING reads truth_status / source_type / license_decision, and nothing detects a generated document, judgment or police file on screen -- only a human reading the contact sheets can."
+    },
+    "plate_review": {
+      "detector": {
+        "detector": "check_plate_verdicts verdicts re-read against the built film",
+        "verdicts_file": "runs/qc/oroville_plate_verdicts.v001.json",
+        "wired_here": true,
+        "state": "measured",
+        "plates": 118,
+        "cuts_tested": 225,
+        "rejected": 0,
+        "unresolved": 0,
+        "rejected_in_film": 0,
+        "unresolved_in_film": 0,
+        "blocking_rows": 0
+      },
+      "state": "partial",
+      "honest_limit": "the plate verdicts for this episode ARE re-read against the built film (0 rejected and 0 unresolved plate(s) found in cuts, 0 blocking). IT NEVER LOOKS AT A PICTURE -- check_plate_verdicts.py says so in its own docstring, and this reads its file, not the plates. It proves a verdict exists, that it is bound to the bytes on disk, and that no plate a reviewer rejected or left unresolved was cut into the film. Whether the plates a reviewer ACCEPTED are actually right is a judgement nothing on the ship path re-checks, and a careless review passes this exactly as easily as a careful one. The class is read from the reviewer's own reason text by substring, so a reason worded in new words falls to unclassified and blocks rather than being guessed."
+    }
+  },
+  "detector_gaps": [
+    "real_person_likeness: partial -- the frame sampling and the sha binding are real; the LIKENESS judgement is free text in this file and nothing authenticates the reviewer field. There is no face or minor detector anywhere on the ship path. Since 2026-08-12 the PLATE verdicts are also re-read here against the built film, so a plate a reviewer rejected for an identifiable face can no longer reach the door by being rendered first -- but that too is the reviewer's free text, and a plate nobody looked at carefully passes it exactly as easily as one they did.",
+    "rights_and_licence: partial -- the blocklist is a DENYLIST of assets already found to be bad. Nothing on the ship path requires positive licence or provenance clearance for the assets in the film, and this episode carries NO rights manifest.",
+    "factual_support: partial -- verify_onscreen_text SKIPS on this episode -- there is no claims.v*.json in 01_research, so it reports ok=true without measuring anything. check_script_craft compares the SCRIPT against the FACTS ledger by literal substring, so a paraphrase evades it. episode_spec.forbidden_claims (27 declared) is read by no gate that can refuse. Narration is compared against no claim ledger anywhere on the ship path. The TITLE, THUMBNAIL TEXT and DESCRIPTION are now read against this episode's own record by check_packaging_claims (2026-08-12, after two false titles cleared every mechanical rule), and it blocks -- but it matches words, stems and numbers only: it cannot judge tone or implication, it passes a title whose words are all in a script that is itself wrong, and a paraphrase the film states in other words reads as UNVERIFIED. A green from it is not a substitute for reading the title against the film.",
+    "fabricated_record: partial -- this is a substring test for a disclosure phrase, correctly bound to the description the scheduler uploads. NOTHING reads truth_status / source_type / license_decision, and nothing detects a generated document, judgment or police file on screen -- only a human reading the contact sheets can.",
+    "plate_review: partial -- the plate verdicts for this episode ARE re-read against the built film (0 rejected and 0 unresolved plate(s) found in cuts, 0 blocking). IT NEVER LOOKS AT A PICTURE -- check_plate_verdicts.py says so in its own docstring, and this reads its file, not the plates. It proves a verdict exists, that it is bound to the bytes on disk, and that no plate a reviewer rejected or left unresolved was cut into the film. Whether the plates a reviewer ACCEPTED are actually right is a judgement nothing on the ship path re-checks, and a careless review passes this exactly as easily as a careful one. The class is read from the reviewer's own reason text by substring, so a reason worded in new words falls to unclassified and blocks rather than being guessed.",
+    "factual_support: UNMEASURED -- onscreen_text_verified did not run (no_inputs): claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-071-oroville\\01_research\\claims.v001.json (skipped honestly). This class was NOT cleared for this episode; the receipt's green for it is an absence.",
+    "fabricated_record: UNMEASURED -- check_packaging_qc did not run (no_inputs): no 09_package/youtube_meta.v*.json yet (packaging not authored). This class was NOT cleared for this episode; the receipt's green for it is an absence."
+  ],
+  "measurement_unchanged": "check_final_acceptance.py ran every check and computed every number for this render; this file records which of its failures were permitted and with what value. No threshold was lowered and no check was switched off."
+}

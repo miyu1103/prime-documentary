@@ -1,0 +1,155 @@
+{
+  "artifact_type": "preflight_render_receipt",
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-050-centralpark",
+  "generated_at": "2026-07-22T20:14:08.416076+00:00",
+  "gate": "preflight_render_gate.py",
+  "thresholds": {
+    "depth_floor_pct": 40.0,
+    "figure_beat_floor": 6,
+    "hero_surface_floor": 2,
+    "min_long_edge_px": 3840,
+    "cuts_per_graphic_max": 4
+  },
+  "inputs": {
+    "remotion_plan": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-050-centralpark\\04_scenes\\remotion_plan.v001.json",
+    "scene_plan": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-050-centralpark\\04_scenes\\scene_plan.v001.json",
+    "script_annotated": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-050-centralpark\\03_script\\script.annotated.v001.json",
+    "asset_selection": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-050-centralpark\\05_visuals\\asset_selection.v001.json",
+    "image_dir_exists": true
+  },
+  "verdict": "BLOCK",
+  "render_allowed": false,
+  "checks": [
+    {
+      "check": "script_length",
+      "status": "FAIL",
+      "detail": "10,655 words vs required 1,575-2,141 -> narrates in ~59.8 min, outside the 11.5-12.5 min band [script.en.v001.md]. LONG by 8883 words -> 61.9 min of speech, which finishes past 12.5 min even at the tightest measured pacing (1.04x). Cut, do not speed the voice."
+    },
+    {
+      "check": "motion_budget",
+      "status": "FAIL",
+      "detail": "cannot recompute motion budget -- required plan file(s) missing",
+      "subchecks": [
+        {
+          "check": "motion.inputs",
+          "status": "FAIL",
+          "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-050-centralpark\\04_scenes\\remotion_plan.v001.json"
+        },
+        {
+          "check": "motion.inputs",
+          "status": "FAIL",
+          "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-050-centralpark\\04_scenes\\scene_plan.v001.json"
+        }
+      ],
+      "recomputed": {}
+    },
+    {
+      "check": "assets_exist",
+      "status": "FAIL",
+      "detail": "referenced stills exist at 4K with depth maps for depth-treated scenes",
+      "subchecks": [
+        {
+          "check": "assets.references",
+          "status": "FAIL",
+          "detail": "no S0NN still references found in annotated/scene_plan (cannot verify prerequisites)"
+        },
+        {
+          "check": "assets.stills",
+          "status": "FAIL",
+          "detail": "0/0 referenced stills present & >= 3840px long edge; missing=none; under_res=none; unreadable=none"
+        },
+        {
+          "check": "assets.depth_maps",
+          "status": "PASS",
+          "detail": "0/0 depth maps present for depth-eligible stills; missing=0"
+        }
+      ],
+      "recomputed": {
+        "referenced_still_ids": [],
+        "referenced_still_count": 0,
+        "staged_still_files": 430,
+        "stills_present_ok": 0,
+        "stills_missing": [],
+        "stills_under_resolution": [],
+        "stills_unreadable": [],
+        "depth_eligible_still_count": 0,
+        "depth_maps_present": 0,
+        "depth_maps_missing": []
+      }
+    },
+    {
+      "check": "coverage",
+      "status": "FAIL",
+      "detail": "missing file: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-050-centralpark\\05_visuals\\asset_selection.v001.json",
+      "recomputed": {
+        "expected_span_count": 0
+      }
+    },
+    {
+      "check": "film_crosscheck",
+      "status": "FAIL",
+      "detail": "film deviates from plan: film depth share 25.1% < 40%",
+      "recomputed": {
+        "film_path": "C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\src\\data\\centralpark_film.json",
+        "film_cut_count": 1160,
+        "film_kinds": {
+          "footage": 655,
+          "img": 505
+        },
+        "film_still_like_cuts": 505,
+        "film_depth_treated_cuts": 127,
+        "plan_total_cuts": 0,
+        "film_depth_pct_of_stills": 25.1
+      }
+    },
+    {
+      "check": "motion_density",
+      "status": "PASS",
+      "detail": "premium animation OK: 2.74 beats/min (>= 2.5), coverage 27.2% (>= 25%), variety 15 forms (>= 3); 165 kinetic beats [0 typo / 165 figures / 0 hero3d] vs 1160 Ken-Burns cuts",
+      "density_per_min": 2.74,
+      "coverage": 0.272,
+      "variety": 15
+    },
+    {
+      "check": "animation_mix",
+      "status": "PASS",
+      "detail": "animation mix OK: stills 40.7% (<= 45%), motion 70.4% (>= 45%; mg 27% / footage 59%), 0 lingering stills (<= 8), opening 0s (<= 12s)"
+    },
+    {
+      "check": "asset_reuse",
+      "status": "PASS",
+      "detail": "1000 distinct over 1160 cuts (mean 1.16x, first-use 86%)"
+    },
+    {
+      "check": "caption_integrity",
+      "status": "PASS",
+      "detail": "caption integrity OK: burned narration captions present (casefilm_data_captions); kinetic echo 0/0 (0%) <= 40%; no bottom collision"
+    },
+    {
+      "check": "caption_breaks",
+      "status": "PASS",
+      "detail": "617 cues, no mid-phrase breaks [captions.final.v001.srt]"
+    },
+    {
+      "check": "visual_asset_qc",
+      "status": "PASS",
+      "detail": "visual-asset QC OK — factory: all 485 staged factory clips reviewed + on_theme in factory_clip_qc.v001.json | stills: stills OK: 0.0% dark (<= 40%), variety 0.99 (>= 0.60)"
+    },
+    {
+      "check": "retention_cadence",
+      "status": "FAIL",
+      "detail": "no direct question for 665s > 420s starting at 15.8min"
+    },
+    {
+      "check": "packaging_qc",
+      "status": "WARN",
+      "detail": "no 09_package/youtube_meta.v*.json yet (packaging not authored)"
+    },
+    {
+      "check": "encoder_settings",
+      "status": "WARN",
+      "detail": "no long-form final render resolved yet"
+    }
+  ]
+}

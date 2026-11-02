@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-035-hinders",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "remotion\\out\\ep35_probe_slice_v004.mp4",
+  "slice_seconds": 75.07,
+  "slice_sha256": "sha256:9b87243c65e5c70f26bc1f167cd22312c015755eea0153c0122eed8e9db16f64",
+  "film_sha256": "sha256:5491d9b6e6d8c6fd6327017f3314216b1bd4afe37631407da9127c2d66656989",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 47.5 / p10 45.6 / p50 47.5 (1561 frames, 359 cuts masked +/-8f; 6 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-07-09T20:34:02.572697+00:00"
+}

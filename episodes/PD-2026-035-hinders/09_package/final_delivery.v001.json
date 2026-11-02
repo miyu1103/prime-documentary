@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-035-hinders",
+  "slug": "hinders",
+  "revision": "package_v001",
+  "title": "The IRS Seized Her Entire Bank Account — For Following the Bank's Own Rule",
+  "case": "Carole Hinders / IRS structuring civil forfeiture; United States v. $32,820.56 (2013-2014). Institute for Justice.",
+  "canonical_final": {
+    "path": "artifact://remotion/out/PD-2026-035-hinders_film.muxed.v002.mp4",
+    "render_source": "remotion/out/ep35_hinders.v004.mp4 (Ep35Hinders CaseFilm, 4K stills) + 4-layer audio mux",
+    "video_sha256": "sha256:dba8c8ea43a6bbfbe379c1c45011e234390c55bab726f5fc3b4a17bd67a8b3cc",
+    "duration_seconds": 1155.392,
+    "duration_min": 19.26,
+    "resolution": "1920x1080",
+    "codec": "h264",
+    "note": "THE single publish candidate for EP35. 4-layer audio (-13.6 LUFS) muxed as sole track; audio_mix_sha256 a864d3f3 stamped. Do not upload any other hinders render."
+  },
+  "audio": {
+    "mix_wav": "H:/pd-media/episodes/PD-2026-035-hinders/06_audio/mix/PD-2026-035-hinders_film_audio_v001.wav",
+    "integrated_lufs": -13.6,
+    "layers": "narration(ElevenLabs)+7 ambience beds+17 SFX files+8 music",
+    "mux_receipt": "episodes/PD-2026-035-hinders/06_audio/mux_receipt.v002.json"
+  },
+  "captions": {
+    "srt": "episodes/PD-2026-035-hinders/08_edit/captions.final.v001.srt",
+    "sync": "caption_sync PASS: p50 -0.180s, p90 +0.171s, 0 dangling breaks (fixed this pass)"
+  },
+  "thumbnail": {
+    "selected": "episodes/PD-2026-035-hinders/09_package/thumbnail.selected.v002.png",
+    "gates": "thumb_subject_luma outline 28px / subject 110.4 / text 572px; thumbnail_visibility luma 89.2 contrast 76.5 -- all PASS",
+    "note": "Flashy CTR thumbnail per owner request 2026-07-10; owner title/thumbnail approval pending."
+  },
+  "acceptance": {
+    "gate": "scripts/check_final_acceptance.py PD-2026-035-hinders --render <muxed.v002> --emit-receipt",
+    "receipt": "episodes/PD-2026-035-hinders/09_package/acceptance_receipt.v003.json",
+    "result": "37/39 hard PASS",
+    "deviations": "runtime_band (19.26min vs 19.5-20.5) + padding (case-name false positive) -- both owner-accepted, APR-0002 accepted_deviations"
+  },
+  "risk": {
+    "tier": "R2",
+    "real_persons": "Carole Hinders named per public record (IJ case); no likeness generated (invariant 11); AI visuals disclosed (containsSyntheticMedia=true)"
+  },
+  "publish": {
+    "status": "NOT PUBLISHED. Private/scheduled upload is a separate owner-gated step (rules/16).",
+    "proposed_slot": "2026-07-20T12:00:00+09:00 (private + publishAt)",
+    "external_side_effects": "none until owner GO on title/thumbnail + upload"
+  },
+  "created_at": "2026-07-10T09:10:00+09:00"
+}

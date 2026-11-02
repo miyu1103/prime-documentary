@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-051-willingham",
+  "slug": "willingham",
+  "runtime_seconds": [
+    1200,
+    1260
+  ],
+  "script_words": [
+    3480,
+    3710
+  ],
+  "section_vocabulary": [
+    "HOOK",
+    "OP",
+    "ACT_1",
+    "ACT_2",
+    "ACT_3",
+    "ENDING"
+  ],
+  "figure_beats_per_act": [
+    10,
+    21
+  ],
+  "distinct_video_assets": 179,
+  "people_plates_min": 8,
+  "mandatory_stills": [],
+  "thumbnail_candidates_min": 3,
+  "footage_review_required": true,
+  "audio_layers": 2,
+  "forbidden_subjects": [
+    "child",
+    "children",
+    "kid",
+    "kids",
+    "girl",
+    "girls",
+    "boy",
+    "boys",
+    "baby",
+    "infant",
+    "toddler",
+    "daughter",
+    "daughters",
+    "schoolgirl",
+    "teenager",
+    "teenagers",
+    "classroom",
+    "playground",
+    "nursery",
+    "corpse",
+    "human remains",
+    "burned body",
+    "body bag",
+    "gore",
+    "blood",
+    "autopsy",
+    "morgue",
+    "mugshot",
+    "deepfake",
+    "smartphone",
+    "cellphone"
+  ],
+  "forbidden_claims": [
+    "willingham was exonerated",
+    "cameron todd willingham was exonerated",
+    "a court found willingham innocent",
+    "willingham was proven innocent",
+    "the conviction was vacated",
+    "willingham is a monster",
+    "the man on screen is cameron todd willingham",
+    "the man on screen is johnny webb",
+    "the man on screen is gerald hurst",
+    "the person on screen is craig beyler"
+  ],
+  "approved_deviations": [
+    "runtime_band",
+    "script_length",
+    "sound_layers",
+    "retention_cadence",
+    "structure_4part",
+    "preflight_receipt",
+    "caption_sync",
+    "image_cut_luma",
+    "arc_nonrepeat"
+  ],
+  "notes": "WRITTEN 2026-08-06, RETROSPECTIVELY. The machine-contract standard (CLAUDE.md 4.6 / docs/PD_EPISODE_SPEC_STANDARD.v001.md) was added 2026-08-03 and specs existed only from EP54 on, so check_episode_inputs.py refused this episode outright and nothing about it could be verified. Owner authorised writing it. Every value below is MEASURED from this episode's own artefacts unless the field says otherwise; where a channel default was taken, this note says so explicitly. || runtime_seconds MEASURED: ffprobe on 08_edit/willingham_final_bgm.v001.mp4 = 1229.367s (20:29). v002 in the same directory has an identical duration but is a superseded render; v001 is the sha the 2026-08-05 shipped-frame review and acceptance_receipt.v003.json are both bound to (29f990e8...). The band is the measured length +/-2% rounded outward to the nearest 10s = 1200-1260. WHY 2%: the film json is deterministic, so re-rendering the same build reproduces the length to the frame; the band exists to catch a DIFFERENT or TRUNCATED film. 2% (24.6s) is narrower than the shortest real section of this film (OP, 34.3s), so losing any section fails the band, while a caption or BGM tail re-time of a few seconds does not. An 8s hook cannot be caught by any duration band and this one does not pretend to. NOT the channel default 1620-1920: this is a 20-minute film by the owner's explicit decision, recorded in approvals/APR-0001.json. || script_words MEASURED: 06_audio/narration_index.v001.json totals.words = 3,593 over 218 spoken chunks at 189.7 wpm, i.e. the narration actually voiced, which is what the standard's band refers to -- NOT the word count of _planning/EP51_willingham_script.en.v001.md, which carries front-matter, a runtime block and three self-check appendices. Band = 3,593 +/-3% rounded outward = 3,480-3,710. WHY 3% and not the 2% used for runtime: a permitted line-level rewrite moves the word count more than it moves the clock. || section_vocabulary MEASURED: the distinct act labels on the cuts of remotion/src/data/willingham_film.json, in first-appearance order -- HOOK, OP, ACT_1, ACT_2, ACT_3, ENDING. These are the film's sections, not the script's headings (the script is COLD OPEN / OPENING / ACT I-III / ENDING). _planning/EP51_willingham_filmconfig.v001.json figures_by_section carries the same six keys. NOTE this film has THREE acts, not four: _planning/EP51_willingham_CODEX_A_ASSETS.v001.md carries an explicit ACT-COUNT WARNING that ACT_4 is a VISUAL grouping only and the measured narration has no ACT_4. || figure_beats_per_act MEASURED: each figure in willingham_film.json assigned to the act whose cut time range contains its start -- HOOK 2, OP 1, ACT_1 10, ACT_2 10, ACT_3 21, ENDING 6. filmconfig.v001.json figures_by_section is identical. Across the ACT_* sections only, the real minimum is 10 and the real maximum is 21, so the band is [10, 21] exactly. The floor is NOT the channel default 13: ACT_1 and ACT_2 carry 10, and declaring 13 would fail this film on a requirement nobody designed it to and would block the episode this spec exists to unblock. || distinct_video_assets MEASURED: 179 distinct video basenames across 179 video cuts in willingham_film.json -- every clip is used exactly once, max reuse 1. The standard's formula (runtime x 0.65 / 4.5) would give 177, so the rebuilt film already clears it; 179 is what the film actually achieves and is declared as such. || people_plates_min = 8 is the CHANNEL DEFAULT from docs/PD_EPISODE_SPEC_STANDARD.v001.md, NOT a measurement. Measured for the record: 29 P###.png plates in remotion/public/willingham/img, of which check_episode_inputs.py's own counter (authored-as-person, else face detected) counts 20. The default is declared rather than 20 because the field is a FLOOR for future rebuilds, not a description of this build. || mandatory_stills = [] because no subset of this episode's stills was commissioned to cover a specific archive gap the way EP54's fourteen courtroom plates were. No such designation exists in _planning/EP51_willingham_CODEX_A_ASSETS.v001.md, so the list is empty rather than guessed. || thumbnail_candidates_min = 3 is the CHANNEL DEFAULT (what thumbnail_ready requires). Measured for the record: 09_package holds thumbnail.auto1/auto2/auto3 plus thumbnail.selected -- three candidates and a selection, exactly at the floor. || footage_review_required = true is the CHANNEL DEFAULT. Measured for the record: 05_visuals/factory_clip_qc.v001.json carries 140 rows, all verdict=accept, and APR-0001 records that the pool was rebuilt to share no clip id with any other episode (103 shared clips removed, 110 title-staged replacements). || audio_layers = 2 is the CHANNEL DEFAULT and is also CORROBORATED by this episode's own APR-0001, which accepts the sound_layers deviation on the ground that the mix is 'two-layer ducked'. Both sources agree, so this one is not a bare default. || target_cut_sec is deliberately OMITTED. It is a builder INPUT (read by build_case_film_generic.py to scale the cut count), not a property of the finished film. This film was built without it and its 5.144s measured average is an output of that build; declaring the measurement would change how a future rebuild cuts. || forbidden_subjects are DERIVED, not measured -- from _planning/EP51_willingham_DESIGN_ARCHITECTURE.v001.md 0.4 ('BANNED: real-person likeness ...; victim depiction / child-death imagery (the three daughters -- maximum restraint, never shown)'), from CODEX_A_ASSETS R2 ('The three daughters are NEVER shown -- no child, no baby, no infant, no child's body, in any form (unbreakable)') and its [NEG]/[HNEG]/[FNEG] blocks, and from the 2026-08-05 shipped-frame review runs/qc/willingham_shipped_frames_review.v001.json. That review rejected AR-7924639__girl_lying_on_bed_using_a_cellphone.mp4 at 18:37 and 18:40 -- a fully resolved, identifiable girl of roughly 8-11 lying in bed, under the burned-in caption 'It's an accidental fire, and a father who couldn't get to his kids.' The keyword 'girl' in the list below would have caught that clip by its own filename before it was ever staged. 'smartphone'/'cellphone' come from the same rejection, which also recorded the modern phone as an anachronism in a 1991-2004 story. MEASURED CONSEQUENCE: all 31 keywords together match 0 of the 235 cut sources in the current willingham_film.json and 0 of the 307 files in remotion/public/willingham/{img,factory,motion} -- the offending clip and the rejected P01/P03/P26 plates were pruned before this spec was written, so this list is preventive and blocks nothing today. || forbidden_claims are DERIVED, not measured. The first five are the HARD FRAME stated identically in DESIGN_ARCHITECTURE 0 and FACTS_LEDGER lines 39/44: 'Willingham was NEVER legally exonerated. No court has vacated the conviction ... Never state as fact that he was innocent or exonerated.' 'willingham is a monster' is banned because CODEX_A_ASSETS admits 'monster' ONLY as attributed state framing to be dismantled, never in the narrator's or the image's own voice. The four 'the man/person on screen is <name>' entries encode the four real-person-likeness rejections of 2026-08-05: a synthetic face carded 'JOHNNY WEBB' at 7:46, a face carded 'GERALD HURST' at 10:48, a front-on portrait read as Willingham at 0:33 under 'for murdering his own children', and -- worst -- a lower-third reading 'CRAIG BEYLER / Fire scientist hired by the Texas Forensic Science Commission' laid over AR-6125684__a_woman_in_jail.mp4, real archive footage of an identifiable woman prisoner with legible forearm tattoos. A real named male expert's identification was bonded to an unrelated real identifiable woman. No filename keyword can catch that class: the offence is the CARD, so it is recorded here as a claim. || PROSE CONSTRAINTS WITH NO SINGLE KEYWORD, recorded here rather than invented into a machine list: no readable fake documents (legible confession, autopsy, verdict, newspaper, case citation, date, license plate); anonymised human presence is REQUIRED and is not the same as a ban on people -- adults only, from behind / in shadow / hatted / hands-only / cropped below the eyes; the ~20 arson indicators stay soft-cited as the ledger hedges them; no global haze/fog/mist/vignette wash and no scanline or CRT texture (screen-wash opacity <= 0.07); no `depth` treatment on footage or stills. || approved_deviations mirrors approvals/APR-0001.json accepted_deviations verbatim -- the owner's decision of 2026-07-31 on acceptance_receipt v003, not a default and not a softening: nothing reads this field."
+}

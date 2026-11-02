@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-013-king",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Maryland v. King (2013) the Supreme Court held that taking a DNA cheek swab from a person arrested on probable cause for a serious offense, as part of a routine booking procedure, is a reasonable search under the Fourth Amendment.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Kennedy, J.), holding"
+      ],
+      "counterevidence": [
+        "Four justices dissented (Scalia, Ginsburg, Sotomayor, Kagan); 5-4."
+      ],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled police can swab the cheek of someone arrested for a serious crime."
+      ],
+      "prohibited_wording": [
+        "Police can take anyone's DNA at any time.",
+        "The Court required a warrant for the swab."
+      ],
+      "temporal_scope": "2013-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Maryland v. King was decided on June 3, 2013 by a 5-4 vote; the majority opinion was by Justice Anthony Kennedy, and Justice Antonin Scalia wrote the dissent, joined by Justices Ginsburg, Sotomayor, and Kagan.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / vote / opinions"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In a 5-4 decision in 2013, Justice Kennedy wrote for the Court; Justice Scalia led the dissent, joined by three liberal justices."
+      ],
+      "prohibited_wording": [
+        "The decision was unanimous."
+      ],
+      "temporal_scope": "2013",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/vote/cross-ideological lineup."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The majority analogized DNA swabbing to fingerprinting and photographing arrestees, framing it as a legitimate booking procedure that helps identify the person in custody.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, 'like fingerprinting and photographing'"
+      ],
+      "counterevidence": [
+        "The dissent rejected the identification framing (see CLM-0006)."
+      ],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The majority called it the modern version of fingerprinting — a way to identify who is in custody."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2013-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Majority's identification rationale."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "Alonzo King was arrested in Maryland in 2009 on assault charges for menacing a group of people with a shotgun; under the Maryland DNA Collection Act, a cheek swab was taken from him during booking.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, facts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "King was arrested for assault in 2009; his cheek was swabbed at booking under a state DNA law."
+      ],
+      "prohibited_wording": [
+        "King was arrested in order to get his DNA.",
+        "The swab was the reason for the arrest."
+      ],
+      "temporal_scope": "2009",
+      "geographic_scope": "Maryland, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Arrested independently for assault; swab at booking. Do NOT imply swab was the purpose of arrest."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "King's DNA profile matched evidence from an unsolved 2003 rape, and he was subsequently charged with and convicted of that rape.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Opinion, facts (database match; rape conviction)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.94,
+      "allowed_wording": [
+        "His DNA matched an unsolved 2003 rape, and he was convicted of it."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2003-2010",
+      "geographic_scope": "Maryland, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Downstream database hit; sober handling of sexual-assault subject."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "In dissent, Justice Scalia argued that the swab's real purpose was to investigate unsolved crimes rather than to identify the arrestee, and that the Fourth Amendment forbids suspicionless searches of a person for evidence of crime.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Dissent (Scalia, J.)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Scalia argued the swab was really about solving cold cases, not identification, and that the Fourth Amendment bars suspicionless searches for evidence."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2013",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Dissent core; balance."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "Scalia warned that, as a consequence of the decision, 'your DNA can be taken and entered into a national DNA database if you are ever arrested, rightly or wrongly, and for whatever reason,' and he read a summary of his dissent aloud from the bench.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Dissent (verbatim quote)",
+        "Reporting: bench reading"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Scalia warned your DNA can be taken if you are ever arrested 'rightly or wrongly, and for whatever reason,' and read part of his dissent from the bench."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2013",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Quote is 'national DNA database'; bench reading is a reporting fact (SRC-0003)."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "The DNA was taken at arrest, before any conviction; many states and the federal government have DNA-collection laws, and arrestee profiles can be run through CODIS, the FBI's national DNA database.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Opinion (CODIS, statutory context)",
+        "Context (DNA-collection laws)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.88,
+      "allowed_wording": [
+        "The swab happens at arrest, before conviction; profiles go into CODIS, the FBI's national DNA database."
+      ],
+      "prohibited_wording": [
+        "Every state takes DNA from everyone arrested."
+      ],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Pre-conviction; CODIS; laws vary by state."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "The case was a genuine clash between two interests: the majority emphasized identification and public-safety benefits of DNA at booking, while the dissent emphasized the privacy intrusion of suspicionless DNA searches.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion + dissent (competing interests)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "It pit catching criminals against the privacy of people who have only been arrested."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2013-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Both-sides framing; keep neutral."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable hashes 2/3 (SRC-0002 blocked). Framing: swab not arrest's purpose. Neutral; sober."
+    ]
+  }
+}

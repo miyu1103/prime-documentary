@@ -1,0 +1,402 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-019-varsityblues",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "On March 12, 2019, federal prosecutors in the District of Massachusetts unsealed charges in an investigation code-named 'Operation Varsity Blues,' arresting 50 people in a nationwide college-admissions bribery scheme.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0003"],
+      "evidence_locations": ["DOJ arrests release 2019-03-12", "DOJ case hub"],
+      "counterevidence": ["The cumulative total later rose to 55 charged / 53 convicted; '50' is the count at the initial unsealing."],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In March 2019, prosecutors unsealed 'Operation Varsity Blues' and arrested 50 people.",
+        "The case became public on March 12, 2019."
+      ],
+      "prohibited_wording": [
+        "Everyone involved was arrested that day.",
+        "Exactly 50 people were ultimately convicted."
+      ],
+      "temporal_scope": "2019-03-12",
+      "geographic_scope": "United States (District of Massachusetts)",
+      "units": "people charged (initial)",
+      "status": "approved",
+      "notes": "Date-qualify counts: 50 initial vs 55 final/53 convicted (CLM-0014)."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "William 'Rick' Singer ran a for-profit college-counseling business known as 'The Key' (Edge College & Career Network LLC) and a non-profit, the Key Worldwide Foundation, which prosecutors described as a purported charity used to disguise bribe payments as charitable donations.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["DOJ arrests release", "DOJ Singer sentencing release"],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "Singer ran a counseling business called The Key and a foundation prosecutors called a sham charity.",
+        "Bribes were disguised as donations to his foundation."
+      ],
+      "prohibited_wording": [
+        "The foundation was a legitimate charity.",
+        "Every donation to the foundation was a bribe."
+      ],
+      "temporal_scope": "2011-2019",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Mastermind framing; 'purported charity' per DOJ."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "Singer described three ways into elite schools — a 'front door' (earning admission), a 'back door' (large institutional donations), and a secret 'side door' he created that guaranteed admission through fraud; prosecutors adopted the 'side door' term for the scheme.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0010"],
+      "evidence_locations": ["DOJ arrests release ('side door')", "Criminal complaint recorded call via reporting"],
+      "counterevidence": ["The full verbatim quote is from the complaint's recorded call (grade B); the 'side door' summary is DOJ's own (grade A)."],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Singer called it a 'side door' — a guaranteed way in, for a price.",
+        "Front door is earning it; back door is a big donation; the side door was his fraud."
+      ],
+      "prohibited_wording": [
+        "The 'back door' of large donations is illegal.",
+        "Singer invented the only way wealthy families influence admissions."
+      ],
+      "temporal_scope": "2011-2019",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Central metaphor + recurring visual motif. Distinguish legal back door from criminal side door."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "Between approximately 2011 and February 2019, parents paid Singer approximately $25 million to bribe college coaches and administrators to designate their children as recruited athletes, regardless of the children's actual athletic ability.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["DOJ arrests release"],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "Parents paid Singer about $25 million to buy fake athletic recruiting spots.",
+        "Children were labeled recruits for sports they did not really play."
+      ],
+      "prohibited_wording": [
+        "All $25 million went into Singer's pocket.",
+        "Every recruited athlete in the country was fake."
+      ],
+      "temporal_scope": "2011 to 2019-02",
+      "geographic_scope": "United States",
+      "units": "USD (approximate)",
+      "status": "approved",
+      "notes": "$25M = athletic-bribery sum, the headline figure."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "In the exam-cheating scheme, families obtained extended testing time (including by purporting that children had learning disabilities), rerouted the SAT or ACT to one of two test centers controlled by Singer (in Houston and West Hollywood), and bribed administrators roughly $5,000 to $10,000 per test, while parents typically paid Singer $15,000 to $75,000 per test.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0004"],
+      "evidence_locations": ["DOJ arrests release", "DOJ Riddell materials"],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Families faked disabilities to get extra time, then sent the test to centers Singer controlled.",
+        "Administrators were paid a few thousand dollars per test; parents paid Singer far more."
+      ],
+      "prohibited_wording": [
+        "Everyone who gets extended testing time is cheating.",
+        "All test centers were corrupt."
+      ],
+      "temporal_scope": "2011-2019",
+      "geographic_scope": "United States (Houston, TX; West Hollywood, CA)",
+      "units": "USD per test",
+      "status": "approved",
+      "notes": "Keep the disability angle factual and narrow; do not impugn legitimate accommodations."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "Mark Riddell secretly produced the scores: he took exams in students' place using fake identification bearing the student's name and his own photo, or posed as a proctor and corrected the students' answers; he pleaded guilty, was sentenced in April 2022 to four months in prison, and had inflated scores for 24 students across 27 exams.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0004"],
+      "evidence_locations": ["DOJ Riddell plea/sentencing materials"],
+      "counterevidence": [],
+      "confidence": 0.94,
+      "allowed_wording": [
+        "A man secretly took the tests or fixed the answers himself.",
+        "Riddell pleaded guilty and was sentenced to four months."
+      ],
+      "prohibited_wording": [
+        "Riddell merely tutored the students.",
+        "Riddell was convicted by a jury."
+      ],
+      "temporal_scope": "2011-2022",
+      "geographic_scope": "United States",
+      "units": "students/exams",
+      "status": "approved",
+      "notes": "Pleaded guilty (not jury). Vivid mechanic for the body."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "Singer's team built falsified athletic profiles listing fake honors and teams the students never played on, and parents supplied staged photos; according to the FBI affidavit as reported, in some cases applicants' faces were composited onto real athletes' bodies. Coaches or administrators named in the charging documents spanned schools including Yale, Stanford, USC, Georgetown, Wake Forest, UCLA, and the University of Texas at Austin.",
+      "importance": "major",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0011"],
+      "evidence_locations": ["DOJ arrests release (staged photos, schools)", "Chronicle / affidavit (face-compositing, grade B)"],
+      "counterevidence": ["Face-compositing detail is from the affidavit/reporting (grade B); 'staged photographs' is DOJ (grade A)."],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Fake athletic resumes were built, with staged photos — and, per the FBI, some faces edited onto other athletes.",
+        "Coaches at several well-known universities were charged."
+      ],
+      "prohibited_wording": [
+        "The universities themselves committed the fraud.",
+        "Every coach at these schools was involved."
+      ],
+      "temporal_scope": "2011-2019",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Name schools only as appearing in charging docs; schools are victims (CLM-0011). Visuals: no real logos/likeness."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "Singer pleaded guilty in March 2019 to four counts — racketeering conspiracy, money-laundering conspiracy, conspiracy to defraud the United States, and obstruction of justice — and cooperated with the FBI; on January 4, 2023 he was sentenced to 42 months (three and a half years) in prison plus three years of supervised release, ordered to pay $10,668,841 in restitution to the IRS, and to forfeit assets.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0002"],
+      "evidence_locations": ["DOJ Singer sentencing release"],
+      "counterevidence": ["He was initially charged with three counts; the fourth (conspiracy to defraud the U.S.) was added at his guilty plea. 'Wore a wire' is grade B (court record/reporting)."],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Singer pleaded guilty to four felonies and cooperated.",
+        "He was sentenced to three and a half years in 2023."
+      ],
+      "prohibited_wording": [
+        "Singer was convicted at trial.",
+        "Singer pleaded guilty to the exact charges he was first arrested on."
+      ],
+      "temporal_scope": "2019-2023",
+      "geographic_scope": "United States",
+      "units": "months; USD",
+      "status": "approved",
+      "notes": "3 charged -> 4 pleaded. Keep restitution ($10,668,841) separate from forfeiture."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "Actress Felicity Huffman paid $15,000 to have a proctor secretly correct her older daughter's SAT answers; she pleaded guilty to one count of conspiracy to commit mail fraud and honest-services mail fraud and, on September 13, 2019, became the first parent sentenced — to 14 days in prison, a $30,000 fine, 250 hours of community service, and one year of supervised release.",
+      "importance": "major",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0005"],
+      "evidence_locations": ["DOJ Huffman sentencing release"],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Huffman paid $15,000 to have her daughter's SAT answers fixed and pleaded guilty.",
+        "She was the first parent sentenced — 14 days."
+      ],
+      "prohibited_wording": [
+        "Huffman was convicted at trial.",
+        "Huffman's daughter knew and participated."
+      ],
+      "temporal_scope": "2019",
+      "geographic_scope": "United States",
+      "units": "USD; days",
+      "status": "approved",
+      "notes": "Pleaded guilty. Do not impute knowledge to the child. Fine, not restitution."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "Actress Lori Loughlin and her husband, designer Mossimo Giannulli, paid $500,000 to have their two daughters designated as recruits to the USC crew team, though neither rowed competitively; both pleaded guilty in 2020 to a fraud-conspiracy count (the money-laundering and bribery counts against them were dismissed as part of the plea agreements), and in August 2020 Loughlin was sentenced to two months and Giannulli to five months in prison.",
+      "importance": "major",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0006"],
+      "evidence_locations": ["DOJ Loughlin/Giannulli sentencing release"],
+      "counterevidence": ["They initially pleaded not guilty and contested the charges for about a year before pleading guilty."],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Loughlin and Giannulli paid $500,000 for fake crew recruiting spots and pleaded guilty to fraud conspiracy.",
+        "Loughlin got two months; Giannulli five."
+      ],
+      "prohibited_wording": [
+        "Loughlin and Giannulli were convicted of money laundering.",
+        "They were convicted of bribery.",
+        "They were found guilty at trial."
+      ],
+      "temporal_scope": "2019-2020",
+      "geographic_scope": "United States",
+      "units": "USD; months",
+      "status": "approved",
+      "notes": "CRITICAL: money-laundering & bribery counts DISMISSED in plea. Only fraud-conspiracy plea."
+    },
+    {
+      "claim_id": "CLM-0011",
+      "normalized_claim": "Prosecutors treated the universities as victims rather than defendants — U.S. Attorney Andrew Lelling said 'the schools themselves are not targets' — because the legal theory was honest-services fraud: school employees took bribes and thereby defrauded their own employers.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0009", "SRC-0001"],
+      "evidence_locations": ["PBS/AP Lelling remarks", "DOJ arrests release"],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "The schools were treated as victims, not suspects.",
+        "Employees betrayed the universities they worked for."
+      ],
+      "prohibited_wording": [
+        "The universities were charged with crimes.",
+        "The schools approved the scheme."
+      ],
+      "temporal_scope": "2019",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Protects against defaming institutions; explains the honest-services theory."
+    },
+    {
+      "claim_id": "CLM-0012",
+      "normalized_claim": "Not every insider enriched himself personally: Stanford's sailing coach John Vandemoer pleaded guilty to racketeering conspiracy and agreed to accept $610,000, but the money went to the Stanford sailing program he ran rather than his own pocket; the judge called him the least culpable defendant and sentenced him to one day (deemed served), supervised release, and a $10,000 fine.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0007"],
+      "evidence_locations": ["DOJ Vandemoer sentencing release"],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "One coach took the money for his program, not himself, and got the lightest sentence.",
+        "The judge called Vandemoer the least culpable."
+      ],
+      "prohibited_wording": [
+        "Vandemoer pocketed the money.",
+        "Every coach personally profited."
+      ],
+      "temporal_scope": "2019",
+      "geographic_scope": "United States",
+      "units": "USD",
+      "status": "approved",
+      "notes": "Moral-complexity beat; preserves nuance. Omit unverified community-service term."
+    },
+    {
+      "claim_id": "CLM-0013",
+      "normalized_claim": "The Key Worldwide Foundation let clients disguise bribe payments as charitable donations so they could deduct them from their federal taxes, and it mailed thank-you letters falsely stating that no goods or services had been exchanged.",
+      "importance": "context",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["DOJ arrests release / case hub", "Singer sentencing release (IRS restitution)"],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "Families wrote off the bribes on their taxes as charity.",
+        "The foundation sent letters falsely saying nothing was exchanged."
+      ],
+      "prohibited_wording": [
+        "All charitable deductions are fraud.",
+        "The IRS approved the deductions."
+      ],
+      "temporal_scope": "2011-2019",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Tax-fraud layer; ties to Singer's IRS restitution."
+    },
+    {
+      "claim_id": "CLM-0014",
+      "normalized_claim": "Prosecutors framed the harm in terms of displaced students — Lelling said 'for every student admitted through fraud, an honest, genuinely talented student was rejected' — and in total 55 defendants were charged in the case and 53 were convicted, with essentially every major figure resolving by guilty plea rather than trial.",
+      "importance": "context",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0009", "SRC-0003"],
+      "evidence_locations": ["PBS/AP Lelling quote", "DOJ case hub totals"],
+      "counterevidence": ["One defendant received a presidential pardon and one a deferred-prosecution agreement (hence 55 charged but 53 convicted)."],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "For every faked admission, a deserving applicant was turned away.",
+        "In all, 55 were charged and 53 were convicted — almost all by guilty plea."
+      ],
+      "prohibited_wording": [
+        "All 55 were convicted.",
+        "The cases were decided by juries."
+      ],
+      "temporal_scope": "2019-2023",
+      "geographic_scope": "United States",
+      "units": "defendants",
+      "status": "approved",
+      "notes": "Theme (displaced student) + final scale. Date-qualify vs initial 50."
+    },
+    {
+      "claim_id": "CLM-0015",
+      "normalized_claim": "The investigation reached the scheme almost by accident: Rudy Meredith, the head women's soccer coach at Yale, was caught in a separate inquiry soliciting a bribe and cooperated with investigators; he had accepted about $860,000 to designate applicants as recruits, pleaded guilty to wire-fraud and honest-services-fraud counts, and was sentenced in 2022 to five months in prison.",
+      "importance": "major",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0008"],
+      "evidence_locations": ["DOJ Meredith sentencing release"],
+      "counterevidence": ["Exact plea date is grade B; the $860,000 figure and sentence terms are grade A."],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "A Yale coach, caught in another case, cooperated and led agents to Singer.",
+        "Meredith accepted about $860,000 and pleaded guilty."
+      ],
+      "prohibited_wording": [
+        "Meredith was convicted at trial.",
+        "Yale University was charged."
+      ],
+      "temporal_scope": "2015-2022",
+      "geographic_scope": "United States",
+      "units": "USD; months",
+      "status": "approved",
+      "notes": "The accidental thread that unraveled the case. Pleaded guilty. Sentenced 2022 (not 2021)."
+    },
+    {
+      "claim_id": "CLM-0016",
+      "normalized_claim": "Donna Heinel, a senior associate athletic director at the University of Southern California, helped usher fake recruits through; she took more than $1 million into USC accounts she controlled plus about $160,000 for her own benefit, pleaded guilty to one count of honest-services wire fraud, and was sentenced to six months in prison.",
+      "importance": "supporting",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0003"],
+      "evidence_locations": ["DOJ Heinel sentencing release / case hub"],
+      "counterevidence": ["Charge was reduced from racketeering/multiple fraud counts to one honest-services count at plea; aggregate '$1.3M' figures vary by outlet (split: >$1M to USC accounts vs ~$160,000 personal)."],
+      "confidence": 0.88,
+      "allowed_wording": [
+        "A USC athletic administrator took more than a million dollars into school accounts, plus money for herself, and pleaded guilty.",
+        "Heinel was sentenced to six months."
+      ],
+      "prohibited_wording": [
+        "Heinel was convicted at trial.",
+        "USC was charged with a crime."
+      ],
+      "temporal_scope": "2014-2023",
+      "geographic_scope": "United States",
+      "units": "USD; months",
+      "status": "approved",
+      "notes": "The inside gatekeeper. Distinguish >$1M to university accounts from ~$160,000 personal benefit. Pleaded guilty."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "All claims graded A except the face-compositing sub-detail in CLM-0007 (B, attributed to affidavit).",
+      "R3 wording locks applied: pleaded-guilty vs convicted; Loughlin/Giannulli money-laundering & bribery counts DISMISSED; Singer 3 charged -> 4 pleaded; counts date-qualified (50 initial vs 55/53 final); universities = victims.",
+      "Durable source content hashes PENDING (DOJ pages bot-protected); non-blocking, capture before publish."
+    ]
+  }
+}

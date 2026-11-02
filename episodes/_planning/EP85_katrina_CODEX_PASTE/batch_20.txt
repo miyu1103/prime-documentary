@@ -1,0 +1,56 @@
+EP85_katrina — 画像発注 バッチ 20/24（8枚）
+区分: PEOPLE（人物あり・顔は一切写さない）
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, person in water, rooftop figure, rescue, school bus, crowd, body, corpse, cross marker, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) W153.png
+   [W153]  flags: P
+   A person seen from behind carrying a document box down a courthouse corridor, brilliant daylight
+
+2) W154.png
+   [W154]  flags: P
+   Hands turning the pages of a blank bound report, close, no face in frame, reading lamp
+
+3) W155.png
+   [W155]  flags: P
+   A person seen from behind at an archive shelf, one strip light
+
+4) W156.png
+   [W156]  flags: P
+   A resident seen from behind standing on a porch looking at a dry street, bright morning light
+
+5) W157.png
+   [W157]  flags: P
+   A person seen from behind at a canal railing looking at the wall, bright daylight
+
+6) W158.png
+   [W158]  flags: P
+   Two people seen from behind at a courthouse door in brilliant daylight
+
+7) W159.png
+   [W159]  flags: P
+   A worker seen from behind laying stone armouring on a channel bank, bright daylight
+
+8) W160.png
+   [W160]  flags: P
+   A person seen from behind at a laboratory flume watching water flow, bright light

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-073-uri",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "out\\uri_preprobe.mp4",
+  "slice_seconds": 60.05,
+  "slice_sha256": "sha256:1c6315a4d2d1e1e86c55e289fdcaa5f407236f13fd6d90a388c04650f49bf81d",
+  "film_sha256": "sha256:a57308f0df7cab0ea6dd360deeb6216d6dabcaa1e7f5edc87a371ca4bca47ce1",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 46.7 / p10 45.3 / p50 46.0 (1264 frames, 364 cuts masked +/-8f; 4 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-08-27T17:53:06.506042+00:00"
+}

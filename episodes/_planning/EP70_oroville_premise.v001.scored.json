@@ -1,0 +1,57 @@
+{
+  "slug": "oroville",
+  "working_title": "They Warned the Government in 2005. In 2017, 188,000 People Had Two Hours to Leave.",
+  "one_line": "Three groups told the federal regulator in writing that Oroville Dam's emergency spillway was an unarmored hillside; twelve years later it began to erode and 188,000 people were ordered out; in 2023 a court held the agency could not be fined because it is not a 'person'.",
+  "series_id": "S01",
+  "title_archetype": "T2",
+  "scored_by": "claude, 2026-08-11, against the owner's planning-OS rubric, applied to a topic claude itself recommended earlier the same night",
+  "scores": {
+    "personal_threat": 12,
+    "wtf_factor": 18,
+    "human_stakes": 11,
+    "title_power": 13,
+    "visual_power": 8,
+    "story_arc": 7,
+    "credibility": 5,
+    "franchiseability": 3
+  },
+  "justification": {
+    "personal_threat": "The weakest axis and the honest reason this is not a GO. Most Americans do not live below a dam, so 'this could happen to you' does not land the way a traffic stop or a bank freeze does. 12, not 18. Raising it means reframing from 'a dam nearly failed' to 'you were never told what the government already knew about the thing next to your house' -- the generalisable threat is the regulator's silence, not the concrete.",
+    "wtf_factor": "Very strong. Told in writing in 2005, in a filed document quoting the operator's own 2002 memo; nothing done; and after 188,000 people were evacuated a court held the responsible agency cannot be fined at all because it is not a 'person' under the statute. That last holding is a genuine 'wait, that is allowed?'.",
+    "human_stakes": "188,000 people ordered out with about two hours' notice, homes and livelihoods at risk. But zero deaths and most people returned, so the permanent loss is smaller than a wrongful conviction or a seized life savings. 11 of 15 is the honest number, not 15.",
+    "title_power": "One sentence carries a date, an authority, a number and an unfinished feeling. Sits cleanly in archetype T2 (abnormal legality) with an alternative in T5 (the hidden fact).",
+    "visual_power": "The eroding hillside beside the intact concrete spillway is legible at 320 px, and the 2005 filing's line 'is not armored' is a real document no competitor has put on a thumbnail. Short of 10 because the hero image is landscape, not a human face.",
+    "story_arc": "2005 -> 2017 -> 2023 is four acts where a 45-minute film wants six, and -- the real defect -- the current protagonist is an institution, not a person. The brand rule is that the protagonist is always an ordinary person. Until a named evacuee carries the film this stays at 7.",
+    "credibility": "Full marks. FERC Project No. 2100-052 filing of 17 Oct 2005, the Independent Forensic Team Report of 5 Jan 2018, and Oroville Dam Cases No. C093600 with a verbatim disposition. All public records.",
+    "franchiseability": "Infrastructure-was-warned extends to bridges, levees, pipelines and grids, but each needs its own archive register and the abundant-register test is what made Oroville viable in the first place. Ten more is plausible; a hundred is not. 3 of 5."
+  },
+  "measured_context": {
+    "demand_median_views": 117477,
+    "channels_above_100k": 7,
+    "results_over_30min": 2,
+    "best_over_30min_views": 182912,
+    "archive_register_clips": 8289,
+    "video_cuts_needed_at_45min": 398,
+    "register_utilisation": "4.8%",
+    "calibration": "EP66 openfields succeeded at 5% utilisation; EP63 correa needed 74% and collapsed to 49% AI motion",
+    "ban_risk": "LOW, not R3 -- zero deaths, defendant is a state agency, no living private individual accused"
+  },
+  "how_to_reach_85": [
+    "Find and centre a named evacuee or family from the 12 February 2017 order. This is the single highest-value fix: it raises story_arc and personal_threat together, and it is what the brand rule requires. Local news and the county's own records from Oroville, Gridley and Marysville are the place to look.",
+    "Reframe the promise from 'a dam nearly failed' to 'the government knew, in writing, for twelve years, and nobody told the people living below it'. That is the transferable threat and it is what makes the film about a hidden rule rather than about concrete.",
+    "Open on the evacuation order, not on the 2005 filing and not on the water -- the first thirty seconds must carry an abnormal moment, not a document.",
+    "If personal_threat still cannot clear roughly 16 after the reframe, the honest conclusion is that this is a strong 30-minute film and not a 45-minute one, and that should be said rather than padded."
+  ],
+  "scored": {
+    "total": 77,
+    "verdict": "IMPROVE",
+    "problems": [],
+    "rubric": "config/pd_planning_os.v001.json",
+    "gate": {
+      "build": 85,
+      "improve": 75,
+      "discard": 74
+    },
+    "at": "2026-08-11T14:06:09.478694+00:00"
+  }
+}

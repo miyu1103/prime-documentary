@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 192,
+  "episode_id": "PD-2026-033-tyler",
+  "slug": "tyler",
+  "loop": true,
+  "loop_join": "The closing beat p25 returns to short192_01.png, the old leather book tied shut beside one candle, run in rewind beneath the FULL CASE card until the last frame; frame 0 is that same candlelit book, so the loop lands on an identical image and the eight hundred years start over.",
+  "second_watch_detail": "The kinetic beat THEY FORGOT THE LIMIT at 43.77 s reads as the medieval crown on the first pass, because the frames around it are lanterns and stone; on the second it is plainly the county, which is the whole argument.",
+  "funnel_question_left_for_longform": "What did the nine justices do when that promise was finally set against the county's own statute?",
+  "funnel_long_title": "She Owed $15,000. The County Sold Her Home and Kept $40,000",
+  "funnel_long_video_id": "rU2vk9XL4vY",
+  "description_line_1": "▶ FULL CASE: She Owed $15,000. The County Sold Her Home and Kept $40,000 | https://youtu.be/rU2vk9XL4vY",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "The county sold her condo and kept the",
+    "ctaLongThumbSrc": "shorts/short192/short192_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What did the nine justices do when that promise was finally set against the county's own statute? The full case is here: https://youtu.be/rU2vk9XL4vY",
+  "note": "Record authored on 2026-09-01 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the contact sheet and the beat list in remotion/src/data/short192.ts, the CTA block from that same file, the long-form id from runs/short_funnel/episode_live_video_map.v001.json. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
+}

@@ -1,0 +1,6549 @@
+{
+  "episode_id": "PD-2026-080-concordia",
+  "fps": 30,
+  "narration": "concordia/narration.mp3",
+  "narrationSeconds": 1667.172,
+  "hookSeconds": 22.98,
+  "hookLine": "A cruise ship is a building that floats, and the thing that tells you a building is in trouble is the floor.",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 2.873,
+      "kind": "img",
+      "src": "concordia/img/N033.png",
+      "seed": "concordia-hook-00"
+    },
+    {
+      "start": 2.873,
+      "dur": 2.873,
+      "kind": "img",
+      "src": "concordia/img/N034.png",
+      "seed": "concordia-hook-01"
+    },
+    {
+      "start": 5.746,
+      "dur": 2.873,
+      "kind": "img",
+      "src": "concordia/img/N035.png",
+      "seed": "concordia-hook-02"
+    },
+    {
+      "start": 8.619,
+      "dur": 2.873,
+      "kind": "img",
+      "src": "concordia/img/N042.png",
+      "seed": "concordia-hook-03"
+    },
+    {
+      "start": 11.492,
+      "dur": 2.873,
+      "kind": "img",
+      "src": "concordia/img/N043.png",
+      "seed": "concordia-hook-04"
+    },
+    {
+      "start": 14.365,
+      "dur": 2.873,
+      "kind": "img",
+      "src": "concordia/img/N049.png",
+      "seed": "concordia-hook-05"
+    },
+    {
+      "start": 17.238,
+      "dur": 2.873,
+      "kind": "img",
+      "src": "concordia/img/N059.png",
+      "seed": "concordia-hook-06"
+    },
+    {
+      "start": 20.111,
+      "dur": 2.869,
+      "kind": "img",
+      "src": "concordia/img/N062.png",
+      "seed": "concordia-hook-07"
+    }
+  ],
+  "cuts": [
+    {
+      "id": "cut-0000",
+      "start": 0.0,
+      "dur": 6.195,
+      "kind": "footage",
+      "src": "concordia/motion/N002.mp4",
+      "seed": "concordia-0000",
+      "act": "HOOK",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0001",
+      "start": 6.195,
+      "dur": 6.195,
+      "kind": "footage",
+      "src": "concordia/motion/N003.mp4",
+      "seed": "concordia-0001",
+      "act": "HOOK",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0002",
+      "start": 12.39,
+      "dur": 6.195,
+      "kind": "footage",
+      "src": "concordia/motion/N004.mp4",
+      "seed": "concordia-0002",
+      "act": "HOOK",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0003",
+      "start": 18.585,
+      "dur": 6.196,
+      "kind": "footage",
+      "src": "concordia/motion/N005.mp4",
+      "seed": "concordia-0003",
+      "act": "HOOK",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0004",
+      "start": 24.781,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/factory/AR-4827__hands_of_a_man_typing_on_a_laptop.mp4",
+      "seed": "concordia-0004",
+      "act": "ACT_1",
+      "srcSeconds": 10.711,
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-0005",
+      "start": 31.43,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N006.mp4",
+      "seed": "concordia-0005",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0006",
+      "start": 38.079,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N007.mp4",
+      "seed": "concordia-0006",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0007",
+      "start": 44.728,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N008.mp4",
+      "seed": "concordia-0007",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0008",
+      "start": 51.377,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N009.mp4",
+      "seed": "concordia-0008",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0009",
+      "start": 58.026,
+      "dur": 5.967,
+      "kind": "img",
+      "src": "concordia/img/N001.png",
+      "seed": "concordia-0009",
+      "act": "ACT_1",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-0010",
+      "start": 63.993,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N010.mp4",
+      "seed": "concordia-0010",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0011",
+      "start": 70.642,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N011.mp4",
+      "seed": "concordia-0011",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0012",
+      "start": 77.291,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N012.mp4",
+      "seed": "concordia-0012",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0013",
+      "start": 83.94,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N013.mp4",
+      "seed": "concordia-0013",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0014",
+      "start": 90.589,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N014.mp4",
+      "seed": "concordia-0014",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0015",
+      "start": 97.238,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N015.mp4",
+      "seed": "concordia-0015",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0016",
+      "start": 103.887,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N016.mp4",
+      "seed": "concordia-0016",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0017",
+      "start": 110.536,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N017.mp4",
+      "seed": "concordia-0017",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0018",
+      "start": 117.185,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N018.mp4",
+      "seed": "concordia-0018",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0019",
+      "start": 123.834,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N019.mp4",
+      "seed": "concordia-0019",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0020",
+      "start": 130.483,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N020.mp4",
+      "seed": "concordia-0020",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0021",
+      "start": 137.132,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N021.mp4",
+      "seed": "concordia-0021",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0022",
+      "start": 143.781,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N022.mp4",
+      "seed": "concordia-0022",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0023",
+      "start": 150.43,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N023.mp4",
+      "seed": "concordia-0023",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0024",
+      "start": 157.079,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N024.mp4",
+      "seed": "concordia-0024",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0025",
+      "start": 163.728,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N025.mp4",
+      "seed": "concordia-0025",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0026",
+      "start": 170.377,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N026.mp4",
+      "seed": "concordia-0026",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0027",
+      "start": 177.026,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N027.mp4",
+      "seed": "concordia-0027",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0028",
+      "start": 183.675,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N028.mp4",
+      "seed": "concordia-0028",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0029",
+      "start": 190.324,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N029.mp4",
+      "seed": "concordia-0029",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0030",
+      "start": 196.973,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N030.mp4",
+      "seed": "concordia-0030",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0031",
+      "start": 203.622,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N031.mp4",
+      "seed": "concordia-0031",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0032",
+      "start": 210.271,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N032.mp4",
+      "seed": "concordia-0032",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0033",
+      "start": 216.92,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N033.mp4",
+      "seed": "concordia-0033",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0034",
+      "start": 223.569,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N034.mp4",
+      "seed": "concordia-0034",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0035",
+      "start": 230.218,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N035.mp4",
+      "seed": "concordia-0035",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0036",
+      "start": 236.867,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N036.mp4",
+      "seed": "concordia-0036",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0037",
+      "start": 243.516,
+      "dur": 6.649,
+      "kind": "footage",
+      "src": "concordia/motion/N037.mp4",
+      "seed": "concordia-0037",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0038",
+      "start": 250.165,
+      "dur": 6.643,
+      "kind": "footage",
+      "src": "concordia/motion/N038.mp4",
+      "seed": "concordia-0038",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0039",
+      "start": 256.808,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/factory/AR-pexels_15200342__ocean_waves_under_the_cloudy_sky.mp4",
+      "seed": "concordia-0039",
+      "act": "ACT_2",
+      "srcSeconds": 4.907,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0040",
+      "start": 263.523,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N039.mp4",
+      "seed": "concordia-0040",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0041",
+      "start": 270.238,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/factory/AR-pexels_34453403__dramatic_cloudscape_over_turbulent_ocean_waves.mp4",
+      "seed": "concordia-0041",
+      "act": "ACT_2",
+      "srcSeconds": 21.722,
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-0042",
+      "start": 276.953,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N040.mp4",
+      "seed": "concordia-0042",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0043",
+      "start": 283.668,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/factory/AR-pexels_37643971__serene_ocean_waves_at_dusk.mp4",
+      "seed": "concordia-0043",
+      "act": "ACT_2",
+      "srcSeconds": 6.006,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0044",
+      "start": 290.383,
+      "dur": 6.026,
+      "kind": "img",
+      "src": "concordia/img/N104.png",
+      "seed": "concordia-0044",
+      "act": "ACT_2",
+      "treatment": "duotone",
+      "lift": 1.019
+    },
+    {
+      "id": "cut-0045",
+      "start": 296.409,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N041.mp4",
+      "seed": "concordia-0045",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0046",
+      "start": 303.124,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N042.mp4",
+      "seed": "concordia-0046",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0047",
+      "start": 309.839,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N043.mp4",
+      "seed": "concordia-0047",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0048",
+      "start": 316.554,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N044.mp4",
+      "seed": "concordia-0048",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0049",
+      "start": 323.269,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N045.mp4",
+      "seed": "concordia-0049",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0050",
+      "start": 329.984,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N046.mp4",
+      "seed": "concordia-0050",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0051",
+      "start": 336.699,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N047.mp4",
+      "seed": "concordia-0051",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0052",
+      "start": 343.414,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N048.mp4",
+      "seed": "concordia-0052",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0053",
+      "start": 350.129,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N049.mp4",
+      "seed": "concordia-0053",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0054",
+      "start": 356.844,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N050.mp4",
+      "seed": "concordia-0054",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0055",
+      "start": 363.559,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N051.mp4",
+      "seed": "concordia-0055",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0056",
+      "start": 370.274,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N052.mp4",
+      "seed": "concordia-0056",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0057",
+      "start": 376.989,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N053.mp4",
+      "seed": "concordia-0057",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0058",
+      "start": 383.704,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N054.mp4",
+      "seed": "concordia-0058",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0059",
+      "start": 390.419,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N055.mp4",
+      "seed": "concordia-0059",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0060",
+      "start": 397.134,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N056.mp4",
+      "seed": "concordia-0060",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0061",
+      "start": 403.849,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N057.mp4",
+      "seed": "concordia-0061",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0062",
+      "start": 410.564,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N058.mp4",
+      "seed": "concordia-0062",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0063",
+      "start": 417.279,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N059.mp4",
+      "seed": "concordia-0063",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0064",
+      "start": 423.994,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N060.mp4",
+      "seed": "concordia-0064",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0065",
+      "start": 430.709,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N061.mp4",
+      "seed": "concordia-0065",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0066",
+      "start": 437.424,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N062.mp4",
+      "seed": "concordia-0066",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0067",
+      "start": 444.139,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N063.mp4",
+      "seed": "concordia-0067",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0068",
+      "start": 450.854,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N064.mp4",
+      "seed": "concordia-0068",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0069",
+      "start": 457.569,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N065.mp4",
+      "seed": "concordia-0069",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0070",
+      "start": 464.284,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N066.mp4",
+      "seed": "concordia-0070",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0071",
+      "start": 470.999,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N067.mp4",
+      "seed": "concordia-0071",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0072",
+      "start": 477.714,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N068.mp4",
+      "seed": "concordia-0072",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0073",
+      "start": 484.429,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N069.mp4",
+      "seed": "concordia-0073",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0074",
+      "start": 491.144,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N070.mp4",
+      "seed": "concordia-0074",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0075",
+      "start": 497.859,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N071.mp4",
+      "seed": "concordia-0075",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0076",
+      "start": 504.574,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N072.mp4",
+      "seed": "concordia-0076",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0077",
+      "start": 511.289,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N073.mp4",
+      "seed": "concordia-0077",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0078",
+      "start": 518.004,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N074.mp4",
+      "seed": "concordia-0078",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0079",
+      "start": 524.719,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N075.mp4",
+      "seed": "concordia-0079",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0080",
+      "start": 531.434,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N076.mp4",
+      "seed": "concordia-0080",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0081",
+      "start": 538.149,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N077.mp4",
+      "seed": "concordia-0081",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0082",
+      "start": 544.864,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N078.mp4",
+      "seed": "concordia-0082",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0083",
+      "start": 551.579,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N079.mp4",
+      "seed": "concordia-0083",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0084",
+      "start": 558.294,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N080.mp4",
+      "seed": "concordia-0084",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0085",
+      "start": 565.009,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N081.mp4",
+      "seed": "concordia-0085",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0086",
+      "start": 571.724,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N082.mp4",
+      "seed": "concordia-0086",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0087",
+      "start": 578.439,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N083.mp4",
+      "seed": "concordia-0087",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0088",
+      "start": 585.154,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N084.mp4",
+      "seed": "concordia-0088",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0089",
+      "start": 591.869,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N085.mp4",
+      "seed": "concordia-0089",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0090",
+      "start": 598.584,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N086.mp4",
+      "seed": "concordia-0090",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0091",
+      "start": 605.299,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N087.mp4",
+      "seed": "concordia-0091",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0092",
+      "start": 612.014,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N088.mp4",
+      "seed": "concordia-0092",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0093",
+      "start": 618.729,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N089.mp4",
+      "seed": "concordia-0093",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0094",
+      "start": 625.444,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N090.mp4",
+      "seed": "concordia-0094",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0095",
+      "start": 632.159,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N091.mp4",
+      "seed": "concordia-0095",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0096",
+      "start": 638.874,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N092.mp4",
+      "seed": "concordia-0096",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0097",
+      "start": 645.589,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N094.mp4",
+      "seed": "concordia-0097",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0098",
+      "start": 652.304,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N095.mp4",
+      "seed": "concordia-0098",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0099",
+      "start": 659.019,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N096.mp4",
+      "seed": "concordia-0099",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0100",
+      "start": 665.734,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N097.mp4",
+      "seed": "concordia-0100",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0101",
+      "start": 672.449,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N098.mp4",
+      "seed": "concordia-0101",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0102",
+      "start": 679.164,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N099.mp4",
+      "seed": "concordia-0102",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0103",
+      "start": 685.879,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N100.mp4",
+      "seed": "concordia-0103",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0104",
+      "start": 692.594,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N101.mp4",
+      "seed": "concordia-0104",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0105",
+      "start": 699.309,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N102.mp4",
+      "seed": "concordia-0105",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0106",
+      "start": 706.024,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N103.mp4",
+      "seed": "concordia-0106",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0107",
+      "start": 712.739,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N105.mp4",
+      "seed": "concordia-0107",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0108",
+      "start": 719.454,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N106.mp4",
+      "seed": "concordia-0108",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0109",
+      "start": 726.169,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N107.mp4",
+      "seed": "concordia-0109",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0110",
+      "start": 732.884,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N108.mp4",
+      "seed": "concordia-0110",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0111",
+      "start": 739.599,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N109.mp4",
+      "seed": "concordia-0111",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0112",
+      "start": 746.314,
+      "dur": 6.715,
+      "kind": "footage",
+      "src": "concordia/motion/N110.mp4",
+      "seed": "concordia-0112",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0113",
+      "start": 753.029,
+      "dur": 6.746,
+      "kind": "footage",
+      "src": "concordia/motion/N111.mp4",
+      "seed": "concordia-0113",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0114",
+      "start": 759.775,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/factory/AR-pexels_4916486__waves_ripples_on_the_sea_surface.mp4",
+      "seed": "concordia-0114",
+      "act": "ACT_3",
+      "srcSeconds": 8.2,
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-0115",
+      "start": 766.388,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N112.mp4",
+      "seed": "concordia-0115",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0116",
+      "start": 773.001,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/factory/AR-pixabay_132932__sunset_sea_boat_sun_evening_nature_night.mp4",
+      "seed": "concordia-0116",
+      "act": "ACT_3",
+      "srcSeconds": 17.633,
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-0117",
+      "start": 779.614,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N113.mp4",
+      "seed": "concordia-0117",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0118",
+      "start": 786.227,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/factory/AR-pixabay_214592__waves_breaking_blue_aqua_force_ocean_sea_coast_w.mp4",
+      "seed": "concordia-0118",
+      "act": "ACT_3",
+      "srcSeconds": 28.92,
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-0119",
+      "start": 792.84,
+      "dur": 5.934,
+      "kind": "img",
+      "src": "concordia/img/N141.png",
+      "seed": "concordia-0119",
+      "act": "ACT_3",
+      "treatment": "focus"
+    },
+    {
+      "id": "cut-0120",
+      "start": 798.774,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N114.mp4",
+      "seed": "concordia-0120",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0121",
+      "start": 805.387,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N115.mp4",
+      "seed": "concordia-0121",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0122",
+      "start": 812.0,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N116.mp4",
+      "seed": "concordia-0122",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0123",
+      "start": 818.613,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N117.mp4",
+      "seed": "concordia-0123",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0124",
+      "start": 825.226,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N118.mp4",
+      "seed": "concordia-0124",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0125",
+      "start": 831.839,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N119.mp4",
+      "seed": "concordia-0125",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0126",
+      "start": 838.452,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N120.mp4",
+      "seed": "concordia-0126",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0127",
+      "start": 845.065,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N121.mp4",
+      "seed": "concordia-0127",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0128",
+      "start": 851.678,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N122.mp4",
+      "seed": "concordia-0128",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0129",
+      "start": 858.291,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N123.mp4",
+      "seed": "concordia-0129",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0130",
+      "start": 864.904,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N124.mp4",
+      "seed": "concordia-0130",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0131",
+      "start": 871.517,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N125.mp4",
+      "seed": "concordia-0131",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0132",
+      "start": 878.13,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N126.mp4",
+      "seed": "concordia-0132",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0133",
+      "start": 884.743,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N127.mp4",
+      "seed": "concordia-0133",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0134",
+      "start": 891.356,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N128.mp4",
+      "seed": "concordia-0134",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0135",
+      "start": 897.969,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N129.mp4",
+      "seed": "concordia-0135",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0136",
+      "start": 904.582,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N130.mp4",
+      "seed": "concordia-0136",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0137",
+      "start": 911.195,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N131.mp4",
+      "seed": "concordia-0137",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0138",
+      "start": 917.808,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N132.mp4",
+      "seed": "concordia-0138",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0139",
+      "start": 924.421,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N133.mp4",
+      "seed": "concordia-0139",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0140",
+      "start": 931.034,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N134.mp4",
+      "seed": "concordia-0140",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0141",
+      "start": 937.647,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N135.mp4",
+      "seed": "concordia-0141",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0142",
+      "start": 944.26,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N136.mp4",
+      "seed": "concordia-0142",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0143",
+      "start": 950.873,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N137.mp4",
+      "seed": "concordia-0143",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0144",
+      "start": 957.486,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N138.mp4",
+      "seed": "concordia-0144",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0145",
+      "start": 964.099,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N139.mp4",
+      "seed": "concordia-0145",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0146",
+      "start": 970.712,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N140.mp4",
+      "seed": "concordia-0146",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0147",
+      "start": 977.325,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N142.mp4",
+      "seed": "concordia-0147",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0148",
+      "start": 983.938,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N143.mp4",
+      "seed": "concordia-0148",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0149",
+      "start": 990.551,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N144.mp4",
+      "seed": "concordia-0149",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0150",
+      "start": 997.164,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N145.mp4",
+      "seed": "concordia-0150",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0151",
+      "start": 1003.777,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N146.mp4",
+      "seed": "concordia-0151",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0152",
+      "start": 1010.39,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N147.mp4",
+      "seed": "concordia-0152",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0153",
+      "start": 1017.003,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N148.mp4",
+      "seed": "concordia-0153",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0154",
+      "start": 1023.616,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N149.mp4",
+      "seed": "concordia-0154",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0155",
+      "start": 1030.229,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N150.mp4",
+      "seed": "concordia-0155",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0156",
+      "start": 1036.842,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N151.mp4",
+      "seed": "concordia-0156",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0157",
+      "start": 1043.455,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N152.mp4",
+      "seed": "concordia-0157",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0158",
+      "start": 1050.068,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N153.mp4",
+      "seed": "concordia-0158",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0159",
+      "start": 1056.681,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N154.mp4",
+      "seed": "concordia-0159",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0160",
+      "start": 1063.294,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N155.mp4",
+      "seed": "concordia-0160",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0161",
+      "start": 1069.907,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N156.mp4",
+      "seed": "concordia-0161",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0162",
+      "start": 1076.52,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N157.mp4",
+      "seed": "concordia-0162",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0163",
+      "start": 1083.133,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N158.mp4",
+      "seed": "concordia-0163",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0164",
+      "start": 1089.746,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N159.mp4",
+      "seed": "concordia-0164",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0165",
+      "start": 1096.359,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N160.mp4",
+      "seed": "concordia-0165",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0166",
+      "start": 1102.972,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N161.mp4",
+      "seed": "concordia-0166",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0167",
+      "start": 1109.585,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N162.mp4",
+      "seed": "concordia-0167",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0168",
+      "start": 1116.198,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N163.mp4",
+      "seed": "concordia-0168",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0169",
+      "start": 1122.811,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N164.mp4",
+      "seed": "concordia-0169",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0170",
+      "start": 1129.424,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N165.mp4",
+      "seed": "concordia-0170",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0171",
+      "start": 1136.037,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N166.mp4",
+      "seed": "concordia-0171",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0172",
+      "start": 1142.65,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N167.mp4",
+      "seed": "concordia-0172",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0173",
+      "start": 1149.263,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N168.mp4",
+      "seed": "concordia-0173",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0174",
+      "start": 1155.876,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N169.mp4",
+      "seed": "concordia-0174",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0175",
+      "start": 1162.489,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N170.mp4",
+      "seed": "concordia-0175",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0176",
+      "start": 1169.102,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N171.mp4",
+      "seed": "concordia-0176",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0177",
+      "start": 1175.715,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N172.mp4",
+      "seed": "concordia-0177",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0178",
+      "start": 1182.328,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N173.mp4",
+      "seed": "concordia-0178",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0179",
+      "start": 1188.941,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N174.mp4",
+      "seed": "concordia-0179",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0180",
+      "start": 1195.554,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N175.mp4",
+      "seed": "concordia-0180",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0181",
+      "start": 1202.167,
+      "dur": 6.613,
+      "kind": "footage",
+      "src": "concordia/motion/N176.mp4",
+      "seed": "concordia-0181",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0182",
+      "start": 1208.78,
+      "dur": 6.611,
+      "kind": "footage",
+      "src": "concordia/motion/N177.mp4",
+      "seed": "concordia-0182",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0183",
+      "start": 1215.391,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/factory/AR-pixabay_286278__waves_water_sea_seascape_ocean_horizon_peaceful.mp4",
+      "seed": "concordia-0183",
+      "act": "ACT_4",
+      "srcSeconds": 30.125,
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-0184",
+      "start": 1222.068,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N178.mp4",
+      "seed": "concordia-0184",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0185",
+      "start": 1228.745,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/factory/AR-v_320621__coast_coastline_rocky_shore_cliffs_rock_formatio.mp4",
+      "seed": "concordia-0185",
+      "act": "ACT_4",
+      "srcSeconds": 6.74,
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-0186",
+      "start": 1235.422,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N179.mp4",
+      "seed": "concordia-0186",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0187",
+      "start": 1242.099,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N180.mp4",
+      "seed": "concordia-0187",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0188",
+      "start": 1248.776,
+      "dur": 5.992,
+      "kind": "img",
+      "src": "concordia/img/N093.png",
+      "seed": "concordia-0188",
+      "act": "ACT_4",
+      "treatment": "bleed",
+      "lift": 1.241
+    },
+    {
+      "id": "cut-0189",
+      "start": 1254.768,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N181.mp4",
+      "seed": "concordia-0189",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0190",
+      "start": 1261.445,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N182.mp4",
+      "seed": "concordia-0190",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0191",
+      "start": 1268.122,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N183.mp4",
+      "seed": "concordia-0191",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0192",
+      "start": 1274.799,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N184.mp4",
+      "seed": "concordia-0192",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0193",
+      "start": 1281.476,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N185.mp4",
+      "seed": "concordia-0193",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0194",
+      "start": 1288.153,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N002.mp4",
+      "seed": "concordia-0194",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0195",
+      "start": 1294.83,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N003.mp4",
+      "seed": "concordia-0195",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0196",
+      "start": 1301.507,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N004.mp4",
+      "seed": "concordia-0196",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0197",
+      "start": 1308.184,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N005.mp4",
+      "seed": "concordia-0197",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0198",
+      "start": 1314.861,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N006.mp4",
+      "seed": "concordia-0198",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0199",
+      "start": 1321.538,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N007.mp4",
+      "seed": "concordia-0199",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0200",
+      "start": 1328.215,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N008.mp4",
+      "seed": "concordia-0200",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0201",
+      "start": 1334.892,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N009.mp4",
+      "seed": "concordia-0201",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0202",
+      "start": 1341.569,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N010.mp4",
+      "seed": "concordia-0202",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0203",
+      "start": 1348.246,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N011.mp4",
+      "seed": "concordia-0203",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0204",
+      "start": 1354.923,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N012.mp4",
+      "seed": "concordia-0204",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0205",
+      "start": 1361.6,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N013.mp4",
+      "seed": "concordia-0205",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0206",
+      "start": 1368.277,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N014.mp4",
+      "seed": "concordia-0206",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0207",
+      "start": 1374.954,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N015.mp4",
+      "seed": "concordia-0207",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0208",
+      "start": 1381.631,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N016.mp4",
+      "seed": "concordia-0208",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0209",
+      "start": 1388.308,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N017.mp4",
+      "seed": "concordia-0209",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0210",
+      "start": 1394.985,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N018.mp4",
+      "seed": "concordia-0210",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0211",
+      "start": 1401.662,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N019.mp4",
+      "seed": "concordia-0211",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0212",
+      "start": 1408.339,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N020.mp4",
+      "seed": "concordia-0212",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0213",
+      "start": 1415.016,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N021.mp4",
+      "seed": "concordia-0213",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0214",
+      "start": 1421.693,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N022.mp4",
+      "seed": "concordia-0214",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0215",
+      "start": 1428.37,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N023.mp4",
+      "seed": "concordia-0215",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0216",
+      "start": 1435.047,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N024.mp4",
+      "seed": "concordia-0216",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0217",
+      "start": 1441.724,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N025.mp4",
+      "seed": "concordia-0217",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0218",
+      "start": 1448.401,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N026.mp4",
+      "seed": "concordia-0218",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0219",
+      "start": 1455.078,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N027.mp4",
+      "seed": "concordia-0219",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0220",
+      "start": 1461.755,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N028.mp4",
+      "seed": "concordia-0220",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0221",
+      "start": 1468.432,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N029.mp4",
+      "seed": "concordia-0221",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0222",
+      "start": 1475.109,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N030.mp4",
+      "seed": "concordia-0222",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0223",
+      "start": 1481.786,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N031.mp4",
+      "seed": "concordia-0223",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0224",
+      "start": 1488.463,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N032.mp4",
+      "seed": "concordia-0224",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0225",
+      "start": 1495.14,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N033.mp4",
+      "seed": "concordia-0225",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0226",
+      "start": 1501.817,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N034.mp4",
+      "seed": "concordia-0226",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0227",
+      "start": 1508.494,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N035.mp4",
+      "seed": "concordia-0227",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0228",
+      "start": 1515.171,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N036.mp4",
+      "seed": "concordia-0228",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0229",
+      "start": 1521.848,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N037.mp4",
+      "seed": "concordia-0229",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0230",
+      "start": 1528.525,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N038.mp4",
+      "seed": "concordia-0230",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0231",
+      "start": 1535.202,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N039.mp4",
+      "seed": "concordia-0231",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0232",
+      "start": 1541.879,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N040.mp4",
+      "seed": "concordia-0232",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0233",
+      "start": 1548.556,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N041.mp4",
+      "seed": "concordia-0233",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0234",
+      "start": 1555.233,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N042.mp4",
+      "seed": "concordia-0234",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0235",
+      "start": 1561.91,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N043.mp4",
+      "seed": "concordia-0235",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0236",
+      "start": 1568.587,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N044.mp4",
+      "seed": "concordia-0236",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0237",
+      "start": 1575.264,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N045.mp4",
+      "seed": "concordia-0237",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0238",
+      "start": 1581.941,
+      "dur": 6.677,
+      "kind": "footage",
+      "src": "concordia/motion/N046.mp4",
+      "seed": "concordia-0238",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0239",
+      "start": 1588.618,
+      "dur": 6.687,
+      "kind": "footage",
+      "src": "concordia/motion/N047.mp4",
+      "seed": "concordia-0239",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0240",
+      "start": 1595.305,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/factory/AR-v_320623__coast_coastline_rocky_shore_cliffs_rock_formatio.mp4",
+      "seed": "concordia-0240",
+      "act": "ENDING",
+      "srcSeconds": 9.209,
+      "treatment": "footage"
+    },
+    {
+      "id": "cut-0241",
+      "start": 1601.838,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/motion/N048.mp4",
+      "seed": "concordia-0241",
+      "act": "ENDING",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0242",
+      "start": 1608.371,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/motion/N049.mp4",
+      "seed": "concordia-0242",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0243",
+      "start": 1614.904,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/motion/N050.mp4",
+      "seed": "concordia-0243",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0244",
+      "start": 1621.437,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/motion/N051.mp4",
+      "seed": "concordia-0244",
+      "act": "ENDING",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0245",
+      "start": 1627.97,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/motion/N052.mp4",
+      "seed": "concordia-0245",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0246",
+      "start": 1634.503,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/motion/N053.mp4",
+      "seed": "concordia-0246",
+      "act": "ENDING",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0247",
+      "start": 1641.036,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/motion/N054.mp4",
+      "seed": "concordia-0247",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0248",
+      "start": 1647.569,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/motion/N055.mp4",
+      "seed": "concordia-0248",
+      "act": "ENDING",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0249",
+      "start": 1654.102,
+      "dur": 6.533,
+      "kind": "footage",
+      "src": "concordia/motion/N056.mp4",
+      "seed": "concordia-0249",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0250",
+      "start": 1660.635,
+      "dur": 6.537,
+      "kind": "footage",
+      "src": "concordia/motion/N057.mp4",
+      "seed": "concordia-0250",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 4.467,
+      "text": "A cruise ship is a building that floats, and the thing that tells you a building is"
+    },
+    {
+      "start": 4.467,
+      "end": 5.759,
+      "text": "in trouble is the floor."
+    },
+    {
+      "start": 6.059,
+      "end": 10.813,
+      "text": "On a January night off the Italian coast, four thousand two hundred and twenty-nine"
+    },
+    {
+      "start": 10.813,
+      "end": 12.932,
+      "text": "people felt a floor stop being level."
+    },
+    {
+      "start": 13.232,
+      "end": 16.065,
+      "text": "It took sixty-nine minutes to give the order to leave."
+    },
+    {
+      "start": 16.365,
+      "end": 20.405,
+      "text": "The people who investigated it worked out that everybody could have got off."
+    },
+    {
+      "start": 20.705,
+      "end": 22.981,
+      "text": "So what used up the sixty-nine minutes?"
+    },
+    {
+      "start": 24.781,
+      "end": 28.961,
+      "text": "Start with the weather, because it removes an excuse before anyone can reach for it."
+    },
+    {
+      "start": 29.261,
+      "end": 31.862,
+      "text": "The sea and the weather that night were favourable."
+    },
+    {
+      "start": 32.162,
+      "end": 33.091,
+      "text": "No storm."
+    },
+    {
+      "start": 33.391,
+      "end": 34.459,
+      "text": "No fog."
+    },
+    {
+      "start": 34.759,
+      "end": 35.688,
+      "text": "No wind."
+    },
+    {
+      "start": 35.988,
+      "end": 38.96,
+      "text": "Whatever happened here, the weather did not do it."
+    },
+    {
+      "start": 39.26,
+      "end": 42.046,
+      "text": "It is the thirteenth of January, 2012."
+    },
+    {
+      "start": 42.346,
+      "end": 47.25,
+      "text": "The Costa Concordia is on a weekly Mediterranean cruise, working her way round a"
+    },
+    {
+      "start": 47.25,
+      "end": 51.541,
+      "text": "circuit of ports, picking people up and setting them down as she goes."
+    },
+    {
+      "start": 51.841,
+      "end": 55.37,
+      "text": "There are four thousand two hundred and twenty-nine people on board."
+    },
+    {
+      "start": 55.67,
+      "end": 58.271,
+      "text": "Three thousand two hundred and six passengers."
+    },
+    {
+      "start": 58.571,
+      "end": 60.614,
+      "text": "One thousand and twenty-three crew."
+    },
+    {
+      "start": 60.914,
+      "end": 62.354,
+      "text": "Hold that second number."
+    },
+    {
+      "start": 62.654,
+      "end": 64.976,
+      "text": "A thousand crew is not a skeleton staff."
+    },
+    {
+      "start": 65.276,
+      "end": 67.644,
+      "text": "It is a workforce the size of a factory."
+    },
+    {
+      "start": 67.944,
+      "end": 69.987,
+      "text": "Now the number that decides this film."
+    },
+    {
+      "start": 70.287,
+      "end": 74.979,
+      "text": "Of the three thousand two hundred and six passengers, one thousand two hundred and"
+    },
+    {
+      "start": 74.979,
+      "end": 76.696,
+      "text": "seventy had attended a muster."
+    },
+    {
+      "start": 76.996,
+      "end": 78.482,
+      "text": "A muster is the drill."
+    },
+    {
+      "start": 78.782,
+      "end": 83.325,
+      "text": "You put on the orange jacket, walk to a marked point on a specific deck, and stand"
+    },
+    {
+      "start": 83.325,
+      "end": 85.098,
+      "text": "there while somebody counts you."
+    },
+    {
+      "start": 85.398,
+      "end": 89.67,
+      "text": "It exists so that on the worst night, your legs already know where to go."
+    },
+    {
+      "start": 89.97,
+      "end": 92.71,
+      "text": "One thousand two hundred and seventy had done it."
+    },
+    {
+      "start": 93.01,
+      "end": 96.792,
+      "text": "Those were the people who had joined the ship at Savona, at the start of the"
+    },
+    {
+      "start": 96.792,
+      "end": 97.19,
+      "text": "circuit."
+    },
+    {
+      "start": 97.49,
+      "end": 100.416,
+      "text": "Everyone else received their safety instructions by video."
+    },
+    {
+      "start": 100.716,
+      "end": 103.827,
+      "text": "Four hundred and sixty-three of them at Toulon."
+    },
+    {
+      "start": 104.127,
+      "end": 106.403,
+      "text": "Four hundred and fifty-six at Barcelona."
+    },
+    {
+      "start": 106.703,
+      "end": 108.607,
+      "text": "More at the ports after that."
+    },
+    {
+      "start": 108.907,
+      "end": 112.297,
+      "text": "That is not a scandal, and it matters to say why first."
+    },
+    {
+      "start": 112.597,
+      "end": 115.801,
+      "text": "A ship on a circuit takes passengers on at every stop."
+    },
+    {
+      "start": 116.101,
+      "end": 120.532,
+      "text": "You cannot run a full muster daily for a few hundred arrivals without emptying the"
+    },
+    {
+      "start": 120.532,
+      "end": 125.017,
+      "text": "decks of everyone else, and the rules of the time allowed the briefing another way."
+    },
+    {
+      "start": 125.317,
+      "end": 129.543,
+      "text": "The arrangement was legal, ordinary, and used by the whole industry."
+    },
+    {
+      "start": 129.843,
+      "end": 133.975,
+      "text": "It also meant that on the night this happened, nearly two thousand people on that"
+    },
+    {
+      "start": 133.975,
+      "end": 136.577,
+      "text": "ship had never once walked to their muster station."
+    },
+    {
+      "start": 137.177,
+      "end": 139.638,
+      "text": "The ship is running south of Giglio Island."
+    },
+    {
+      "start": 139.938,
+      "end": 144.938,
+      "text": "At four minutes and five seconds past nine forty-four, she is three tenths of a mile"
+    },
+    {
+      "start": 144.938,
+      "end": 148.39,
+      "text": "from a set of rocks called Le Scole, making sixteen knots."
+    },
+    {
+      "start": 148.69,
+      "end": 153.204,
+      "text": "And she is half a mile south-west of her planned route - much closer to the coast"
+    },
+    {
+      "start": 153.204,
+      "end": 154.263,
+      "text": "than the plan says."
+    },
+    {
+      "start": 154.563,
+      "end": 155.585,
+      "text": "Half a mile."
+    },
+    {
+      "start": 155.885,
+      "end": 157.882,
+      "text": "On a chart, a finger's width."
+    },
+    {
+      "start": 158.182,
+      "end": 161.061,
+      "text": "On the water, at sixteen knots, under two minutes."
+    },
+    {
+      "start": 161.361,
+      "end": 166.382,
+      "text": "At seven seconds past nine forty-five, the hull strikes the rock furthest east of Le"
+    },
+    {
+      "start": 166.382,
+      "end": 167.816,
+      "text": "Scole, on the left side."
+    },
+    {
+      "start": 168.116,
+      "end": 171.32,
+      "text": "Fifty-one seconds later, the recorder captures the blackout."
+    },
+    {
+      "start": 171.62,
+      "end": 173.988,
+      "text": "The rudder and the bilge pumps lose power."
+    },
+    {
+      "start": 174.288,
+      "end": 177.399,
+      "text": "Seven seconds after that, the emergency generator starts."
+    },
+    {
+      "start": 177.699,
+      "end": 179.464,
+      "text": "It runs for forty-one seconds."
+    },
+    {
+      "start": 179.764,
+      "end": 184.3,
+      "text": "Then it stops being able to supply the ship's essential services continuously - and"
+    },
+    {
+      "start": 184.3,
+      "end": 188.727,
+      "text": "the two essential services named in the report are the rudder and the bilge pump."
+    },
+    {
+      "start": 189.027,
+      "end": 190.606,
+      "text": "The rudder is how you steer."
+    },
+    {
+      "start": 190.906,
+      "end": 193.042,
+      "text": "The bilge pump is how you get water out."
+    },
+    {
+      "start": 193.342,
+      "end": 196.128,
+      "text": "Both of them, gone, inside a minute and a half."
+    },
+    {
+      "start": 196.428,
+      "end": 200.867,
+      "text": "The master gives rudder orders at forty-three and forty-six seconds past nine"
+    },
+    {
+      "start": 200.867,
+      "end": 201.444,
+      "text": "forty-six."
+    },
+    {
+      "start": 201.744,
+      "end": 206.021,
+      "text": "The report states plainly that those orders would have had no effect even if they"
+    },
+    {
+      "start": 206.021,
+      "end": 206.76,
+      "text": "were executed."
+    },
+    {
+      "start": 207.06,
+      "end": 209.382,
+      "text": "There is nothing to execute them with."
+    },
+    {
+      "start": 209.682,
+      "end": 211.586,
+      "text": "And that is not bad luck."
+    },
+    {
+      "start": 211.886,
+      "end": 213.14,
+      "text": "It is geometry."
+    },
+    {
+      "start": 213.44,
+      "end": 218.104,
+      "text": "A ship this size is divided across its length into watertight compartments, and the"
+    },
+    {
+      "start": 218.104,
+      "end": 220.127,
+      "text": "machinery is distributed among them."
+    },
+    {
+      "start": 220.427,
+      "end": 224.467,
+      "text": "Compartment five held the propulsion electric motors, and the fire and bilge pumps."
+    },
+    {
+      "start": 224.767,
+      "end": 227.646,
+      "text": "Compartment six held three of the main diesel generators."
+    },
+    {
+      "start": 227.946,
+      "end": 229.571,
+      "text": "Those are the two the rock opened."
+    },
+    {
+      "start": 229.871,
+      "end": 233.4,
+      "text": "The pumps and the generators were in the compartments that filled."
+    },
+    {
+      "start": 233.7,
+      "end": 238.769,
+      "text": "So the water came in through the hole, and the two things that could have fought the"
+    },
+    {
+      "start": 238.769,
+      "end": 242.57,
+      "text": "water - the power and the pumping - were standing in the water."
+    },
+    {
+      "start": 242.87,
+      "end": 245.517,
+      "text": "The size of the hole was not known that night."
+    },
+    {
+      "start": 245.817,
+      "end": 248.278,
+      "text": "It was worked out in the days afterwards."
+    },
+    {
+      "start": 248.578,
+      "end": 249.971,
+      "text": "Fifty-three metres."
+    },
+    {
+      "start": 250.271,
+      "end": 254.592,
+      "text": "Longer than the wingspan of an airliner, opened along the side of the hull in a few"
+    },
+    {
+      "start": 254.592,
+      "end": 255.008,
+      "text": "seconds."
+    },
+    {
+      "start": 256.808,
+      "end": 261.08,
+      "text": "Go back to the drill, because everything that follows runs through it."
+    },
+    {
+      "start": 261.38,
+      "end": 263.656,
+      "text": "A muster station is not a safety theatre."
+    },
+    {
+      "start": 263.956,
+      "end": 267.16,
+      "text": "It is a piece of engineering that happens to be made of people."
+    },
+    {
+      "start": 267.46,
+      "end": 268.667,
+      "text": "Here is what it does."
+    },
+    {
+      "start": 268.967,
+      "end": 273.624,
+      "text": "It takes several thousand strangers spread across fifteen decks, and converts them"
+    },
+    {
+      "start": 273.624,
+      "end": 277.373,
+      "text": "into countable groups standing in known places, next to the boats."
+    },
+    {
+      "start": 277.673,
+      "end": 279.484,
+      "text": "That conversion takes time."
+    },
+    {
+      "start": 279.784,
+      "end": 281.038,
+      "text": "That is the point of it."
+    },
+    {
+      "start": 281.338,
+      "end": 285.736,
+      "text": "You do the walking in advance, in daylight, so that the walking is already done when"
+    },
+    {
+      "start": 285.736,
+      "end": 286.679,
+      "text": "the lights go out."
+    },
+    {
+      "start": 286.979,
+      "end": 292.197,
+      "text": "And a ship the size of this one has muster stations that the investigators describe"
+    },
+    {
+      "start": 292.197,
+      "end": 296.221,
+      "text": "as capacious and suitable - big enough, and in the right places."
+    },
+    {
+      "start": 296.521,
+      "end": 298.054,
+      "text": "The infrastructure was there."
+    },
+    {
+      "start": 298.354,
+      "end": 301.373,
+      "text": "The rehearsal, for most of the people aboard, was not."
+    },
+    {
+      "start": 301.673,
+      "end": 303.949,
+      "text": "Now put the two facts beside each other."
+    },
+    {
+      "start": 304.249,
+      "end": 307.314,
+      "text": "Nearly two thousand passengers had watched a video."
+    },
+    {
+      "start": 307.614,
+      "end": 312.221,
+      "text": "And the ship had lost all electrical power to its essential systems inside ninety"
+    },
+    {
+      "start": 312.221,
+      "end": 312.676,
+      "text": "seconds."
+    },
+    {
+      "start": 312.976,
+      "end": 316.552,
+      "text": "What happens to a video briefing in a corridor with no lights in it?"
+    },
+    {
+      "start": 316.852,
+      "end": 321.378,
+      "text": "The report answers this, and its answer is the bluntest passage in the whole"
+    },
+    {
+      "start": 321.378,
+      "end": 321.914,
+      "text": "document."
+    },
+    {
+      "start": 322.214,
+      "end": 325.883,
+      "text": "Passengers were not directed to muster stations according to procedure."
+    },
+    {
+      "start": 326.183,
+      "end": 329.666,
+      "text": "There was chaos and confusion, and a lack of communication."
+    },
+    {
+      "start": 329.966,
+      "end": 335.05,
+      "text": "In the report's own words: a complete disorganisation, mainly because nobody on the"
+    },
+    {
+      "start": 335.05,
+      "end": 337.071,
+      "text": "bridge coordinated the emergency."
+    },
+    {
+      "start": 337.371,
+      "end": 341.179,
+      "text": "That sentence names the failure precisely, and notice where it puts it."
+    },
+    {
+      "start": 341.479,
+      "end": 342.826,
+      "text": "Not on the passengers."
+    },
+    {
+      "start": 343.126,
+      "end": 344.659,
+      "text": "Not on the crew on the decks."
+    },
+    {
+      "start": 344.959,
+      "end": 346.213,
+      "text": "On the coordination."
+    },
+    {
+      "start": 346.513,
+      "end": 350.935,
+      "text": "Because the same paragraph contains the other half, and any film that leaves this"
+    },
+    {
+      "start": 350.935,
+      "end": 352.736,
+      "text": "out is not telling you the truth."
+    },
+    {
+      "start": 353.036,
+      "end": 357.636,
+      "text": "Passengers testified that despite the chaos, and despite how little they had been"
+    },
+    {
+      "start": 357.636,
+      "end": 362.065,
+      "text": "prepared, crew members supported them with humanity and effective action - and"
+    },
+    {
+      "start": 362.065,
+      "end": 364.507,
+      "text": "ferried them to the boats and off the ship."
+    },
+    {
+      "start": 364.807,
+      "end": 370.241,
+      "text": "A thousand crew, most of them with no instruction coming from anywhere, improvised"
+    },
+    {
+      "start": 370.241,
+      "end": 371.169,
+      "text": "an evacuation."
+    },
+    {
+      "start": 371.469,
+      "end": 376.113,
+      "text": "And the people they carried off said so afterwards, on the record, to investigators."
+    },
+    {
+      "start": 376.413,
+      "end": 379.896,
+      "text": "That is not the story this accident is usually told as."
+    },
+    {
+      "start": 380.196,
+      "end": 384.595,
+      "text": "Two hundred and seventy-two of that thousand had joined the ship since the first of"
+    },
+    {
+      "start": 384.595,
+      "end": 385.072,
+      "text": "December."
+    },
+    {
+      "start": 385.372,
+      "end": 388.344,
+      "text": "A quarter of the workforce, turned over in six weeks."
+    },
+    {
+      "start": 388.644,
+      "end": 391.012,
+      "text": "Twelve of them had embarked that same day."
+    },
+    {
+      "start": 391.312,
+      "end": 394.609,
+      "text": "And the investigators looked hard at that, and then set it aside."
+    },
+    {
+      "start": 394.909,
+      "end": 398.392,
+      "text": "The turnover was almost entirely in the hotel and service departments."
+    },
+    {
+      "start": 398.692,
+      "end": 400.828,
+      "text": "Very few key personnel were new."
+    },
+    {
+      "start": 401.128,
+      "end": 405.469,
+      "text": "The Body's conclusion is that the replacements are to be considered irrelevant to"
+    },
+    {
+      "start": 405.469,
+      "end": 406.701,
+      "text": "how the crew performed."
+    },
+    {
+      "start": 407.001,
+      "end": 411.413,
+      "text": "That finding is worth respecting, because it closes off an easy answer."
+    },
+    {
+      "start": 411.713,
+      "end": 413.292,
+      "text": "This was not a green crew."
+    },
+    {
+      "start": 413.592,
+      "end": 415.96,
+      "text": "The Body's own assessment is the opposite."
+    },
+    {
+      "start": 416.26,
+      "end": 421.707,
+      "text": "Taken as a whole, it says, the crew gave an adequate performance in the core phase"
+    },
+    {
+      "start": 421.707,
+      "end": 427.22,
+      "text": "of the evacuation - moving passengers off the ship until about four in the morning,"
+    },
+    {
+      "start": 427.22,
+      "end": 432.268,
+      "text": "with the vessel listed at eighty degrees, in conditions it describes as very"
+    },
+    {
+      "start": 432.268,
+      "end": 432.932,
+      "text": "dangerous."
+    },
+    {
+      "start": 433.232,
+      "end": 434.347,
+      "text": "Four in the morning."
+    },
+    {
+      "start": 434.647,
+      "end": 435.808,
+      "text": "At eighty degrees."
+    },
+    {
+      "start": 436.108,
+      "end": 440.102,
+      "text": "So if the people were not the problem, look at what was reaching them."
+    },
+    {
+      "start": 440.402,
+      "end": 444.932,
+      "text": "There is a rule that the company operating a ship must establish a language of work,"
+    },
+    {
+      "start": 444.932,
+      "end": 447.089,
+      "text": "so that safety performance is effective."
+    },
+    {
+      "start": 447.389,
+      "end": 452.126,
+      "text": "Somebody wrote that rule because somebody, once, could not be understood."
+    },
+    {
+      "start": 452.426,
+      "end": 455.63,
+      "text": "The crew of this ship were of thirty-eight different nationalities."
+    },
+    {
+      "start": 455.93,
+      "end": 458.391,
+      "text": "The passengers came from twenty-six countries."
+    },
+    {
+      "start": 458.691,
+      "end": 460.595,
+      "text": "The company had chosen Italian."
+    },
+    {
+      "start": 460.895,
+      "end": 464.146,
+      "text": "The Body is careful here, and its care is the point."
+    },
+    {
+      "start": 464.446,
+      "end": 469.312,
+      "text": "Formally, it says, the choice is not open to censure - the ship was Italian-flagged"
+    },
+    {
+      "start": 469.312,
+      "end": 471.598,
+      "text": "and the paperwork had to be in Italian."
+    },
+    {
+      "start": 471.898,
+      "end": 477.104,
+      "text": "But it also says that choosing a more widespread international language would have"
+    },
+    {
+      "start": 477.104,
+      "end": 481.612,
+      "text": "given, in its words, concrete advantages, above all in situations where"
+    },
+    {
+      "start": 481.612,
+      "end": 485.04,
+      "text": "understanding each other is of fundamental importance."
+    },
+    {
+      "start": 485.34,
+      "end": 486.733,
+      "text": "Then it lists what happened."
+    },
+    {
+      "start": 487.033,
+      "end": 491.188,
+      "text": "The safety trainer testified that in practice both Italian and English were used,"
+    },
+    {
+      "start": 491.188,
+      "end": 493.906,
+      "text": "and that training was usually carried out in English."
+    },
+    {
+      "start": 494.206,
+      "end": 498.848,
+      "text": "Many American passengers testified that during the emergency, several crew members"
+    },
+    {
+      "start": 498.848,
+      "end": 501.961,
+      "text": "on duty at the muster stations could not speak English."
+    },
+    {
+      "start": 502.261,
+      "end": 506.185,
+      "text": "And on the bridge, in the last phases, it was proved that the helmsman did not"
+    },
+    {
+      "start": 506.185,
+      "end": 508.298,
+      "text": "understand the master's orders in English."
+    },
+    {
+      "start": 508.598,
+      "end": 509.341,
+      "text": "Twice."
+    },
+    {
+      "start": 509.941,
+      "end": 514.643,
+      "text": "There is one more finding about language and it is administrative, which is why it"
+    },
+    {
+      "start": 514.643,
+      "end": 515.56,
+      "text": "is easy to skip."
+    },
+    {
+      "start": 515.86,
+      "end": 520.296,
+      "text": "When the flag authority audited the company in March 2012, it recorded a formal"
+    },
+    {
+      "start": 520.296,
+      "end": 524.788,
+      "text": "non-conformity: the recruitment procedure for deck and engine personnel does not"
+    },
+    {
+      "start": 524.788,
+      "end": 526.866,
+      "text": "assess the applicant's work language."
+    },
+    {
+      "start": 527.166,
+      "end": 529.627,
+      "text": "Nor does the procedure for the service departments."
+    },
+    {
+      "start": 529.927,
+      "end": 533.924,
+      "text": "The company had chosen a language of work, and had no step anywhere in its hiring"
+    },
+    {
+      "start": 533.924,
+      "end": 536.243,
+      "text": "that checked whether the person could speak it."
+    },
+    {
+      "start": 536.543,
+      "end": 540.794,
+      "text": "So what is a muster list worth, in a corridor where the person holding it and the"
+    },
+    {
+      "start": 540.794,
+      "end": 542.998,
+      "text": "person reading it do not share a language?"
+    },
+    {
+      "start": 543.298,
+      "end": 544.738,
+      "text": "It is worth something."
+    },
+    {
+      "start": 545.038,
+      "end": 547.035,
+      "text": "Just not what the paperwork says."
+    },
+    {
+      "start": 547.335,
+      "end": 548.868,
+      "text": "That is the pattern here."
+    },
+    {
+      "start": 549.168,
+      "end": 550.422,
+      "text": "Nothing is absent."
+    },
+    {
+      "start": 550.722,
+      "end": 552.58,
+      "text": "Everything is thinner than it looks."
+    },
+    {
+      "start": 552.88,
+      "end": 554.552,
+      "text": "There was a language of work."
+    },
+    {
+      "start": 554.852,
+      "end": 556.199,
+      "text": "Nobody tested for it."
+    },
+    {
+      "start": 556.499,
+      "end": 557.985,
+      "text": "There was a muster list."
+    },
+    {
+      "start": 558.285,
+      "end": 560.468,
+      "text": "Some assignments were inconsistent."
+    },
+    {
+      "start": 560.768,
+      "end": 564.019,
+      "text": "There were muster stations, big ones, correctly placed."
+    },
+    {
+      "start": 564.319,
+      "end": 566.595,
+      "text": "Most passengers had never walked to them."
+    },
+    {
+      "start": 566.895,
+      "end": 568.335,
+      "text": "There was a drill schedule."
+    },
+    {
+      "start": 568.635,
+      "end": 571.421,
+      "text": "The master had written to say the drills were getting worse."
+    },
+    {
+      "start": 571.721,
+      "end": 573.811,
+      "text": "Every one of those exists on paper."
+    },
+    {
+      "start": 574.111,
+      "end": 578.151,
+      "text": "Not one of them had ever been pulled on hard enough to find out what it would hold."
+    },
+    {
+      "start": 578.451,
+      "end": 583.106,
+      "text": "The investigators also went through the crew certification, the muster list and the"
+    },
+    {
+      "start": 583.106,
+      "end": 587.705,
+      "text": "familiarisation training, and found inconsistencies in the assignment of duties to"
+    },
+    {
+      "start": 587.705,
+      "end": 588.714,
+      "text": "some crew members."
+    },
+    {
+      "start": 589.014,
+      "end": 593.379,
+      "text": "A muster list is the document that says who does what in an emergency."
+    },
+    {
+      "start": 593.679,
+      "end": 595.862,
+      "text": "Which crew member takes which station."
+    },
+    {
+      "start": 596.162,
+      "end": 599.134,
+      "text": "Which boat."
+    },
+    {
+      "start": 599.434,
+      "end": 600.549,
+      "text": "Which stairwell."
+    },
+    {
+      "start": 600.849,
+      "end": 603.868,
+      "text": "It is the whole plan, on paper, in advance."
+    },
+    {
+      "start": 604.168,
+      "end": 605.84,
+      "text": "And it only works one way."
+    },
+    {
+      "start": 606.14,
+      "end": 607.58,
+      "text": "Somebody has to start it."
+    },
+    {
+      "start": 607.88,
+      "end": 612.179,
+      "text": "If the assignments are inconsistent, then on the night, two people think somebody"
+    },
+    {
+      "start": 612.179,
+      "end": 613.081,
+      "text": "else has the job."
+    },
+    {
+      "start": 613.381,
+      "end": 617.935,
+      "text": "And the report records the consequence of no orders arriving: the lack of direct"
+    },
+    {
+      "start": 617.935,
+      "end": 622.261,
+      "text": "orders from the bridge left the initiative to individuals, and the different"
+    },
+    {
+      "start": 622.261,
+      "end": 626.758,
+      "text": "backgrounds and basic training among the crew may have played a part in how the"
+    },
+    {
+      "start": 626.758,
+      "end": 628.01,
+      "text": "emergency was handled."
+    },
+    {
+      "start": 628.31,
+      "end": 629.61,
+      "text": "Read that carefully."
+    },
+    {
+      "start": 629.91,
+      "end": 632.139,
+      "text": "It is not saying the crew were untrained."
+    },
+    {
+      "start": 632.439,
+      "end": 637.344,
+      "text": "It is saying that when nothing comes down from the bridge, a thousand people fall"
+    },
+    {
+      "start": 637.344,
+      "end": 641.826,
+      "text": "back on their own judgement - and a thousand separate judgements is not an"
+    },
+    {
+      "start": 641.826,
+      "end": 642.795,
+      "text": "evacuation plan."
+    },
+    {
+      "start": 643.095,
+      "end": 646.021,
+      "text": "And someone had said so, in writing, three months earlier."
+    },
+    {
+      "start": 646.321,
+      "end": 651.244,
+      "text": "On the fifteenth of October, 2011, this ship held an abandon-ship drill."
+    },
+    {
+      "start": 651.544,
+      "end": 655.422,
+      "text": "Afterwards, the master warned the company that his crew's performance was"
+    },
+    {
+      "start": 655.422,
+      "end": 658.556,
+      "text": "decreasing, and that the drill had shown critical findings."
+    },
+    {
+      "start": 658.856,
+      "end": 663.262,
+      "text": "The safety trainer, when he joined, found the same thing from a different direction:"
+    },
+    {
+      "start": 663.262,
+      "end": 667.248,
+      "text": "the crew's training was unaligned, and there was no evidence on board of the"
+    },
+    {
+      "start": 667.248,
+      "end": 670.605,
+      "text": "training the company's own safety-management procedure required."
+    },
+    {
+      "start": 670.905,
+      "end": 672.205,
+      "text": "He told his superiors."
+    },
+    {
+      "start": 672.505,
+      "end": 675.963,
+      "text": "The master told him the company had asked the ship's management to improve the"
+    },
+    {
+      "start": 675.963,
+      "end": 676.406,
+      "text": "programme."
+    },
+    {
+      "start": 676.706,
+      "end": 681.211,
+      "text": "So the warning existed, it came from the top of the ship, and it went to the shore."
+    },
+    {
+      "start": 681.511,
+      "end": 685.319,
+      "text": "Now the other half of the training question, which is about the bridge rather than"
+    },
+    {
+      "start": 685.319,
+      "end": 685.783,
+      "text": "the decks."
+    },
+    {
+      "start": 686.083,
+      "end": 689.241,
+      "text": "There is a course called Bridge Resource Management."
+    },
+    {
+      "start": 689.541,
+      "end": 694.394,
+      "text": "Its entire subject is the problem the investigators would later describe on page"
+    },
+    {
+      "start": 694.394,
+      "end": 699.368,
+      "text": "eleven of their report - how a bridge team is supposed to speak up, challenge, and"
+    },
+    {
+      "start": 699.368,
+      "end": 701.43,
+      "text": "cross-check the person in command."
+    },
+    {
+      "start": 701.73,
+      "end": 704.191,
+      "text": "The master of this ship had never attended it."
+    },
+    {
+      "start": 704.491,
+      "end": 709.135,
+      "text": "Not the junior version, not the senior version, not the one for staff masters."
+    },
+    {
+      "start": 709.435,
+      "end": 711.014,
+      "text": "That is not a rule he broke."
+    },
+    {
+      "start": 711.314,
+      "end": 716.463,
+      "text": "He held the passenger-ship certificate the regulations required, obtained in 2008,"
+    },
+    {
+      "start": 716.463,
+      "end": 720.23,
+      "text": "and he had nearly seventeen years of sea service behind him."
+    },
+    {
+      "start": 720.53,
+      "end": 722.806,
+      "text": "The course simply was not mandatory."
+    },
+    {
+      "start": 723.106,
+      "end": 728.587,
+      "text": "Several of his officers had taken it - a staff master in 2010, and the chief mate,"
+    },
+    {
+      "start": 728.587,
+      "end": 733.868,
+      "text": "the safety officer, a second officer and two third officers during 2011, at the"
+    },
+    {
+      "start": 733.868,
+      "end": 736.341,
+      "text": "group's training centre in Amsterdam."
+    },
+    {
+      "start": 736.641,
+      "end": 739.242,
+      "text": "The people trained to challenge were on the bridge."
+    },
+    {
+      "start": 739.542,
+      "end": 743.071,
+      "text": "The person they would have been challenging had not taken the course."
+    },
+    {
+      "start": 743.371,
+      "end": 748.047,
+      "text": "From the first of September 2012 - eight months after this night - the parent"
+    },
+    {
+      "start": 748.047,
+      "end": 753.027,
+      "text": "corporation made that course mandatory, along with electronic chart training, ship"
+    },
+    {
+      "start": 753.027,
+      "end": 754.424,
+      "text": "handling and stability."
+    },
+    {
+      "start": 754.724,
+      "end": 757.975,
+      "text": "The master and the staff master have to attend all of them."
+    },
+    {
+      "start": 759.775,
+      "end": 760.936,
+      "text": "Here is the clock."
+    },
+    {
+      "start": 761.236,
+      "end": 764.022,
+      "text": "Every time in it comes off the ship's own recorder."
+    },
+    {
+      "start": 764.322,
+      "end": 766.923,
+      "text": "Nine forty-five and seven seconds: the contact."
+    },
+    {
+      "start": 767.223,
+      "end": 772.403,
+      "text": "At five to ten - ten minutes after the contact - compartments four, five, six and"
+    },
+    {
+      "start": 772.403,
+      "end": 774.514,
+      "text": "seven are ascertained as flooded."
+    },
+    {
+      "start": 774.814,
+      "end": 776.811,
+      "text": "No distress message has been sent."
+    },
+    {
+      "start": 777.111,
+      "end": 778.783,
+      "text": "No securite message either."
+    },
+    {
+      "start": 779.083,
+      "end": 783.689,
+      "text": "At thirty-four seconds past nine fifty-seven, the master informs the company's"
+    },
+    {
+      "start": 783.689,
+      "end": 788.65,
+      "text": "designated person ashore, who leaves for the company building to form a crisis team."
+    },
+    {
+      "start": 788.95,
+      "end": 790.436,
+      "text": "So the shore knows something."
+    },
+    {
+      "start": 790.736,
+      "end": 795.194,
+      "text": "Which shore, and what they were told, is the whole of the next twenty minutes."
+    },
+    {
+      "start": 795.494,
+      "end": 800.08,
+      "text": "At seven minutes past ten the rescue organisation at Civitavecchia contacts the"
+    },
+    {
+      "start": 800.08,
+      "end": 800.37,
+      "text": "ship."
+    },
+    {
+      "start": 800.67,
+      "end": 804.877,
+      "text": "The ship tells them about the black out, and that it is managing to solve the"
+    },
+    {
+      "start": 804.877,
+      "end": 805.314,
+      "text": "failure."
+    },
+    {
+      "start": 805.614,
+      "end": 806.961,
+      "text": "Only the black out."
+    },
+    {
+      "start": 807.261,
+      "end": 809.397,
+      "text": "What does a rescue centre do with that?"
+    },
+    {
+      "start": 809.697,
+      "end": 810.997,
+      "text": "It does what it did."
+    },
+    {
+      "start": 811.297,
+      "end": 815.919,
+      "text": "It notes a ship with an electrical fault, off an island, in calm weather, and it"
+    },
+    {
+      "start": 815.919,
+      "end": 816.266,
+      "text": "waits."
+    },
+    {
+      "start": 816.566,
+      "end": 821.24,
+      "text": "The investigators put a phrase in their own table against that line: very serious"
+    },
+    {
+      "start": 821.24,
+      "end": 822.51,
+      "text": "scenario is held back."
+    },
+    {
+      "start": 822.81,
+      "end": 826.386,
+      "text": "At eleven minutes past ten the ship is adrift towards the coastline."
+    },
+    {
+      "start": 826.686,
+      "end": 831.027,
+      "text": "At twelve minutes past ten, the public address makes its first announcement to the"
+    },
+    {
+      "start": 831.027,
+      "end": 831.609,
+      "text": "passengers."
+    },
+    {
+      "start": 831.909,
+      "end": 833.813,
+      "text": "It tells them to go to the lounges."
+    },
+    {
+      "start": 834.113,
+      "end": 835.738,
+      "text": "Not the muster stations."
+    },
+    {
+      "start": 836.038,
+      "end": 836.967,
+      "text": "The lounges."
+    },
+    {
+      "start": 837.267,
+      "end": 842.073,
+      "text": "And the report records what actually happened next, which is the strangest line in"
+    },
+    {
+      "start": 842.073,
+      "end": 846.88,
+      "text": "the document: crew and passengers moved towards the muster stations by themselves."
+    },
+    {
+      "start": 847.18,
+      "end": 848.295,
+      "text": "Without an order."
+    },
+    {
+      "start": 848.595,
+      "end": 852.907,
+      "text": "Several thousand people, most of whom had only watched a video, worked out on their"
+    },
+    {
+      "start": 852.907,
+      "end": 854.725,
+      "text": "own where they were supposed to be."
+    },
+    {
+      "start": 855.025,
+      "end": 860.02,
+      "text": "Ten past ten, near enough: the maritime rescue coordination centre at Livorno is"
+    },
+    {
+      "start": 860.02,
+      "end": 860.644,
+      "text": "contacted."
+    },
+    {
+      "start": 860.944,
+      "end": 862.848,
+      "text": "Twenty-nine minutes after the rocks."
+    },
+    {
+      "start": 863.148,
+      "end": 867.792,
+      "text": "At fourteen minutes past ten, Livorno finds the ship on its own tracking system."
+    },
+    {
+      "start": 868.092,
+      "end": 871.957,
+      "text": "The ship tells the rescue centre that it has had a blackout for about twenty"
+    },
+    {
+      "start": 871.957,
+      "end": 872.364,
+      "text": "minutes."
+    },
+    {
+      "start": 872.664,
+      "end": 874.661,
+      "text": "And makes no request for assistance."
+    },
+    {
+      "start": 874.961,
+      "end": 876.215,
+      "text": "Stay with that one."
+    },
+    {
+      "start": 876.515,
+      "end": 881.804,
+      "text": "A shore station with helicopters and patrol boats has a cruise ship on the screen,"
+    },
+    {
+      "start": 881.804,
+      "end": 885.803,
+      "text": "has it on the radio, and is told: we have had a power failure."
+    },
+    {
+      "start": 886.103,
+      "end": 887.914,
+      "text": "Not: we have struck rocks."
+    },
+    {
+      "start": 888.214,
+      "end": 890.025,
+      "text": "Not: we are taking water."
+    },
+    {
+      "start": 890.325,
+      "end": 895.201,
+      "text": "Not: we have four thousand people on board and I need everything you have."
+    },
+    {
+      "start": 895.501,
+      "end": 900.542,
+      "text": "At twenty-five minutes and fifteen seconds past ten, contacted again, the master"
+    },
+    {
+      "start": 900.542,
+      "end": 905.393,
+      "text": "tells Livorno there is a hull breach on the left side causing a gradual heel."
+    },
+    {
+      "start": 905.693,
+      "end": 910.269,
+      "text": "That is forty minutes after the contact, and it is the first time the shore hears"
+    },
+    {
+      "start": 910.269,
+      "end": 911.173,
+      "text": "the word breach."
+    },
+    {
+      "start": 911.473,
+      "end": 915.467,
+      "text": "At twenty-two minutes past ten the ship asks for the help of two tugs."
+    },
+    {
+      "start": 915.767,
+      "end": 919.885,
+      "text": "Four minutes later, the chief mate tells the rescue authority, for the first time,"
+    },
+    {
+      "start": 919.885,
+      "end": 922.547,
+      "text": "that there is a breach and that the ship is flooding."
+    },
+    {
+      "start": 922.847,
+      "end": 927.567,
+      "text": "The Body's comment on that line in its own table is the harshest sentence in the"
+    },
+    {
+      "start": 927.567,
+      "end": 932.464,
+      "text": "report, and it is aimed at the delay rather than at any person: this was an evident"
+    },
+    {
+      "start": 932.464,
+      "end": 937.066,
+      "text": "and very serious untruth, because the breach had been known since twenty-three"
+    },
+    {
+      "start": 937.066,
+      "end": 938.776,
+      "text": "seconds past nine forty-nine."
+    },
+    {
+      "start": 939.076,
+      "end": 941.119,
+      "text": "Known on board for thirty-seven minutes."
+    },
+    {
+      "start": 941.419,
+      "end": 944.066,
+      "text": "Told to the shore at twenty-six minutes past ten."
+    },
+    {
+      "start": 944.366,
+      "end": 946.316,
+      "text": "Why would anybody hold that back?"
+    },
+    {
+      "start": 946.616,
+      "end": 949.913,
+      "text": "The report does not say, and this programme will not guess."
+    },
+    {
+      "start": 950.213,
+      "end": 952.535,
+      "text": "But it is worth knowing what the word costs."
+    },
+    {
+      "start": 952.835,
+      "end": 954.878,
+      "text": "Declaring distress is not a phone call."
+    },
+    {
+      "start": 955.178,
+      "end": 956.293,
+      "text": "It is a legal act."
+    },
+    {
+      "start": 956.593,
+      "end": 958.543,
+      "text": "It hands the situation to the shore."
+    },
+    {
+      "start": 958.843,
+      "end": 962.759,
+      "text": "It launches helicopters, patrol boats, tugs, and other ships pulled off their"
+    },
+    {
+      "start": 962.759,
+      "end": 963.115,
+      "text": "routes."
+    },
+    {
+      "start": 963.415,
+      "end": 966.155,
+      "text": "It becomes an incident with a file attached."
+    },
+    {
+      "start": 966.455,
+      "end": 971.236,
+      "text": "So there is a pull, in the first minutes of anything, towards finding out a bit more"
+    },
+    {
+      "start": 971.236,
+      "end": 972.26,
+      "text": "before you say it."
+    },
+    {
+      "start": 972.56,
+      "end": 974.325,
+      "text": "Towards solving it yourself."
+    },
+    {
+      "start": 974.625,
+      "end": 976.901,
+      "text": "That pull is not unique to ships."
+    },
+    {
+      "start": 977.201,
+      "end": 981.659,
+      "text": "It is in every building that has ever had an alarm somebody hesitated to break."
+    },
+    {
+      "start": 981.959,
+      "end": 983.724,
+      "text": "Here it lasted fifty-one minutes."
+    },
+    {
+      "start": 984.024,
+      "end": 988.482,
+      "text": "At half past ten the flooding reaches Deck Zero, the watertight deck."
+    },
+    {
+      "start": 988.782,
+      "end": 991.661,
+      "text": "And passengers begin boarding the lifeboats by themselves."
+    },
+    {
+      "start": 991.961,
+      "end": 996.233,
+      "text": "At twenty-six seconds past ten thirty-three, the general emergency is announced."
+    },
+    {
+      "start": 996.533,
+      "end": 998.576,
+      "text": "Forty-eight minutes after the contact."
+    },
+    {
+      "start": 998.876,
+      "end": 1003.288,
+      "text": "Three minutes after that comes something that sounds like an order to abandon ship."
+    },
+    {
+      "start": 1003.588,
+      "end": 1004.749,
+      "text": "It is not one."
+    },
+    {
+      "start": 1005.049,
+      "end": 1006.721,
+      "text": "The words were never spoken."
+    },
+    {
+      "start": 1007.021,
+      "end": 1010.957,
+      "text": "What the announcement actually said was to reach the muster stations calmly and"
+    },
+    {
+      "start": 1010.957,
+      "end": 1012.501,
+      "text": "follow the crew's instructions."
+    },
+    {
+      "start": 1012.801,
+      "end": 1017.445,
+      "text": "At thirty-six minutes and thirty-four seconds past ten, Livorno calls again."
+    },
+    {
+      "start": 1017.745,
+      "end": 1020.113,
+      "text": "The bridge says the heeling is increasing."
+    },
+    {
+      "start": 1020.413,
+      "end": 1026.069,
+      "text": "And only then, after the rescue centre presses, does the ship declare that it is in"
+    },
+    {
+      "start": 1026.069,
+      "end": 1026.682,
+      "text": "distress."
+    },
+    {
+      "start": 1026.982,
+      "end": 1028.282,
+      "text": "Fifty-one minutes."
+    },
+    {
+      "start": 1028.582,
+      "end": 1032.92,
+      "text": "In that same call the bridge gives the number of people on board as three thousand"
+    },
+    {
+      "start": 1032.92,
+      "end": 1034.666,
+      "text": "two hundred and eight passengers."
+    },
+    {
+      "start": 1034.966,
+      "end": 1037.845,
+      "text": "The true figure was three thousand two hundred and six."
+    },
+    {
+      "start": 1038.145,
+      "end": 1042.199,
+      "text": "And it was different again from the figure the ship had given on departure from"
+    },
+    {
+      "start": 1042.199,
+      "end": 1045.483,
+      "text": "Civitavecchia, which was three thousand two hundred and sixteen."
+    },
+    {
+      "start": 1045.783,
+      "end": 1047.548,
+      "text": "Three numbers for the same people."
+    },
+    {
+      "start": 1047.848,
+      "end": 1051.795,
+      "text": "On the night that a shore station needs to know how many to look for."
+    },
+    {
+      "start": 1052.395,
+      "end": 1056.528,
+      "text": "At fifty-four minutes and ten seconds past ten, the abandon ship is ordered."
+    },
+    {
+      "start": 1056.828,
+      "end": 1059.568,
+      "text": "Sixty-nine minutes after the hull struck the rock."
+    },
+    {
+      "start": 1059.868,
+      "end": 1064.27,
+      "text": "And the finding attached to that order is the one this programme exists to put in"
+    },
+    {
+      "start": 1064.27,
+      "end": 1064.976,
+      "text": "front of you."
+    },
+    {
+      "start": 1065.276,
+      "end": 1068.434,
+      "text": "It was not preceded by an effective general emergency alarm."
+    },
+    {
+      "start": 1068.734,
+      "end": 1072.66,
+      "text": "Several passengers testified that they never caught the signal, or the voice"
+    },
+    {
+      "start": 1072.66,
+      "end": 1073.332,
+      "text": "announcement."
+    },
+    {
+      "start": 1073.632,
+      "end": 1075.768,
+      "text": "There is a sound designed for this."
+    },
+    {
+      "start": 1076.068,
+      "end": 1080.949,
+      "text": "Seven short blasts and one long one, on a system that reaches every space on the"
+    },
+    {
+      "start": 1080.949,
+      "end": 1085.708,
+      "text": "ship, which every passenger is told about in the briefing, and which means one"
+    },
+    {
+      "start": 1085.708,
+      "end": 1087.539,
+      "text": "thing: go to your station now."
+    },
+    {
+      "start": 1087.839,
+      "end": 1091.136,
+      "text": "The investigators' finding is that it was not effectively given."
+    },
+    {
+      "start": 1091.436,
+      "end": 1096.077,
+      "text": "So the order to abandon a ship reached several thousand people who had never been"
+    },
+    {
+      "start": 1096.077,
+      "end": 1098.541,
+      "text": "told, by the ship, that anything was wrong."
+    },
+    {
+      "start": 1098.841,
+      "end": 1102.417,
+      "text": "And the ship's own paperwork said exactly how it should have been done."
+    },
+    {
+      "start": 1102.717,
+      "end": 1107.635,
+      "text": "The muster list specifies it in capital letters: the order of the master, through"
+    },
+    {
+      "start": 1107.635,
+      "end": 1112.553,
+      "text": "the public address of the ship, followed by a continuous double tone sound, or by"
+    },
+    {
+      "start": 1112.553,
+      "end": 1115.952,
+      "text": "the alarm bells, until the ship evacuation is completed."
+    },
+    {
+      "start": 1116.252,
+      "end": 1120.199,
+      "text": "An order, and then a sound that does not stop until everyone is off."
+    },
+    {
+      "start": 1120.499,
+      "end": 1124.433,
+      "text": "What happened instead was an announcement in English, made by the second master,"
+    },
+    {
+      "start": 1124.433,
+      "end": 1124.679,
+      "text": "once."
+    },
+    {
+      "start": 1124.979,
+      "end": 1127.951,
+      "text": "Meanwhile, ashore, the company was assembling."
+    },
+    {
+      "start": 1128.251,
+      "end": 1131.084,
+      "text": "The designated person had been told at nine fifty-seven."
+    },
+    {
+      "start": 1131.384,
+      "end": 1135.772,
+      "text": "At twenty-one minutes past ten he telephoned a manager, believing him to be the"
+    },
+    {
+      "start": 1135.772,
+      "end": 1137.05,
+      "text": "crisis manager on duty."
+    },
+    {
+      "start": 1137.35,
+      "end": 1138.975,
+      "text": "The manager said that he was."
+    },
+    {
+      "start": 1139.275,
+      "end": 1143.735,
+      "text": "Under the company's own written procedure, the crisis manager on duty was a"
+    },
+    {
+      "start": 1143.735,
+      "end": 1147.541,
+      "text": "different person - and that person was not immediately informed."
+    },
+    {
+      "start": 1147.841,
+      "end": 1150.581,
+      "text": "The crisis committee was formed at eleven o'clock."
+    },
+    {
+      "start": 1150.881,
+      "end": 1152.878,
+      "text": "Seventy-five minutes after the rock."
+    },
+    {
+      "start": 1153.478,
+      "end": 1155.8,
+      "text": "The first lifeboats are lowered a minute later."
+    },
+    {
+      "start": 1156.1,
+      "end": 1159.537,
+      "text": "By ten past eleven they are on the shore with the first passengers."
+    },
+    {
+      "start": 1159.837,
+      "end": 1163.877,
+      "text": "The crew, including the master, leave the bridge at about twenty past eleven."
+    },
+    {
+      "start": 1164.177,
+      "end": 1167.381,
+      "text": "One officer stays behind to coordinate the abandon ship."
+    },
+    {
+      "start": 1167.681,
+      "end": 1170.142,
+      "text": "By about midnight the heel is forty degrees."
+    },
+    {
+      "start": 1170.442,
+      "end": 1175.429,
+      "text": "At thirty-four minutes past midnight a rescue unit reports the ship listed at ninety"
+    },
+    {
+      "start": 1175.429,
+      "end": 1180.357,
+      "text": "degrees, about fifty people still unable to get off - and that the master is not on"
+    },
+    {
+      "start": 1180.357,
+      "end": 1180.891,
+      "text": "the ship."
+    },
+    {
+      "start": 1181.191,
+      "end": 1185.4,
+      "text": "Eight minutes later, Livorno reaches the master, who says there seem to be about a"
+    },
+    {
+      "start": 1185.4,
+      "end": 1187.042,
+      "text": "hundred passengers still aboard."
+    },
+    {
+      "start": 1187.342,
+      "end": 1191.736,
+      "text": "The rescue centre strongly urges him to go back on board, with the other officers,"
+    },
+    {
+      "start": 1191.736,
+      "end": 1195.005,
+      "text": "and coordinate the disembarkation of the people who are left."
+    },
+    {
+      "start": 1195.305,
+      "end": 1199.724,
+      "text": "At fifty-three minutes past midnight the evacuation of those still on the ship"
+    },
+    {
+      "start": 1199.724,
+      "end": 1200.971,
+      "text": "begins, by helicopter."
+    },
+    {
+      "start": 1201.271,
+      "end": 1202.896,
+      "text": "Twenty-five patrol boats."
+    },
+    {
+      "start": 1203.196,
+      "end": 1204.636,
+      "text": "Fourteen vessels."
+    },
+    {
+      "start": 1204.936,
+      "end": 1205.865,
+      "text": "Four tugs."
+    },
+    {
+      "start": 1206.165,
+      "end": 1207.558,
+      "text": "Eight helicopters."
+    },
+    {
+      "start": 1207.858,
+      "end": 1209.065,
+      "text": "All of that arrived."
+    },
+    {
+      "start": 1209.365,
+      "end": 1213.591,
+      "text": "Most of it arrived after the ship had already been on the rocks for over an hour."
+    },
+    {
+      "start": 1215.391,
+      "end": 1220.12,
+      "text": "Now the physics, because it is the only part of this night that behaved exactly as"
+    },
+    {
+      "start": 1220.12,
+      "end": 1220.639,
+      "text": "designed."
+    },
+    {
+      "start": 1220.939,
+      "end": 1225.46,
+      "text": "A large ship is divided into watertight compartments, and the rule she is built to"
+    },
+    {
+      "start": 1225.46,
+      "end": 1228.602,
+      "text": "is that she must survive a given number of them flooding."
+    },
+    {
+      "start": 1228.902,
+      "end": 1232.339,
+      "text": "Beyond that number, no ship of this kind can be made unsinkable."
+    },
+    {
+      "start": 1232.639,
+      "end": 1237.232,
+      "text": "The investigative body states it directly: no measure is sufficient to render the"
+    },
+    {
+      "start": 1237.232,
+      "end": 1241.881,
+      "text": "ship unsinkable when more than two contiguous watertight compartments are flooded."
+    },
+    {
+      "start": 1242.181,
+      "end": 1244.503,
+      "text": "The rock opened compartments five and six."
+    },
+    {
+      "start": 1244.803,
+      "end": 1249.733,
+      "text": "Two contiguous compartments, violently flooded - compartment five filled completely"
+    },
+    {
+      "start": 1249.733,
+      "end": 1250.98,
+      "text": "in a very short time."
+    },
+    {
+      "start": 1251.28,
+      "end": 1253.695,
+      "text": "So the ship was going to end up on her side."
+    },
+    {
+      "start": 1253.995,
+      "end": 1258.473,
+      "text": "That was decided at the moment of contact and nothing on board could have changed"
+    },
+    {
+      "start": 1258.473,
+      "end": 1258.639,
+      "text": "it."
+    },
+    {
+      "start": 1258.939,
+      "end": 1262.747,
+      "text": "Which raises the only question that matters about the rest of that night."
+    },
+    {
+      "start": 1263.047,
+      "end": 1265.276,
+      "text": "If the ship could not be saved, what could?"
+    },
+    {
+      "start": 1265.576,
+      "end": 1268.827,
+      "text": "The answer is the people, and the answer is arithmetic."
+    },
+    {
+      "start": 1269.127,
+      "end": 1271.495,
+      "text": "A ship going over is not a ship going down."
+    },
+    {
+      "start": 1271.795,
+      "end": 1273.745,
+      "text": "It leans, and it leans slowly."
+    },
+    {
+      "start": 1274.045,
+      "end": 1276.692,
+      "text": "At thirteen degrees you can still walk, badly."
+    },
+    {
+      "start": 1276.992,
+      "end": 1278.85,
+      "text": "At thirty the decks are ramps."
+    },
+    {
+      "start": 1279.15,
+      "end": 1283.887,
+      "text": "At forty, which is where she was around midnight, walking is climbing."
+    },
+    {
+      "start": 1284.187,
+      "end": 1287.066,
+      "text": "At eighty, where she ended, the corridors are shafts."
+    },
+    {
+      "start": 1287.366,
+      "end": 1290.06,
+      "text": "Everything had to happen in the early part of that scale."
+    },
+    {
+      "start": 1290.36,
+      "end": 1294.354,
+      "text": "But here is the thing about a ship that is going over rather than going down."
+    },
+    {
+      "start": 1294.654,
+      "end": 1295.954,
+      "text": "It takes time."
+    },
+    {
+      "start": 1296.254,
+      "end": 1297.647,
+      "text": "The heel is gradual."
+    },
+    {
+      "start": 1297.947,
+      "end": 1302.452,
+      "text": "The master describes it that way himself to the rescue centre, forty minutes in."
+    },
+    {
+      "start": 1302.752,
+      "end": 1305.213,
+      "text": "And that gradual heel is the resource."
+    },
+    {
+      "start": 1305.513,
+      "end": 1310.51,
+      "text": "It is the only resource anybody had that night, and there was more of it than anyone"
+    },
+    {
+      "start": 1310.51,
+      "end": 1310.807,
+      "text": "used."
+    },
+    {
+      "start": 1311.107,
+      "end": 1314.544,
+      "text": "Which is exactly what the investigators went and calculated."
+    },
+    {
+      "start": 1314.844,
+      "end": 1316.887,
+      "text": "They ran the alternative timeline."
+    },
+    {
+      "start": 1317.187,
+      "end": 1321.502,
+      "text": "Suppose the general emergency signal had been given at thirty-nine minutes past ten"
+    },
+    {
+      "start": 1321.502,
+      "end": 1325.713,
+      "text": "- the point at which the ship grounded a second time, and the first rescue vessel"
+    },
+    {
+      "start": 1325.713,
+      "end": 1326.336,
+      "text": "reached her."
+    },
+    {
+      "start": 1326.636,
+      "end": 1330.524,
+      "text": "Suppose the passengers had been gathered and ready at the boats, waiting for the"
+    },
+    {
+      "start": 1330.524,
+      "end": 1330.816,
+      "text": "order."
+    },
+    {
+      "start": 1331.116,
+      "end": 1335.646,
+      "text": "On that timeline the abandon ship would have followed thirty-six minutes after the"
+    },
+    {
+      "start": 1335.646,
+      "end": 1340.065,
+      "text": "signal - which the investigators say is adequate to gather everybody into muster"
+    },
+    {
+      "start": 1340.065,
+      "end": 1342.772,
+      "text": "stations they describe as capacious and suitable."
+    },
+    {
+      "start": 1343.072,
+      "end": 1347.224,
+      "text": "Passengers would have started leaving the ship while she had thirteen degrees of"
+    },
+    {
+      "start": 1347.224,
+      "end": 1347.484,
+      "text": "heel."
+    },
+    {
+      "start": 1347.784,
+      "end": 1352.66,
+      "text": "And thirty-three minutes after that, when the ship reached thirty degrees, at twelve"
+    },
+    {
+      "start": 1352.66,
+      "end": 1356.143,
+      "text": "minutes past eleven - all of them could have reached safety."
+    },
+    {
+      "start": 1356.443,
+      "end": 1357.836,
+      "text": "From the same position."
+    },
+    {
+      "start": 1358.136,
+      "end": 1359.808,
+      "text": "With the ship already stopped."
+    },
+    {
+      "start": 1360.108,
+      "end": 1362.337,
+      "text": "Where thirty-two people instead died."
+    },
+    {
+      "start": 1362.637,
+      "end": 1364.866,
+      "text": "That is not a campaigner's claim."
+    },
+    {
+      "start": 1365.166,
+      "end": 1370.282,
+      "text": "That is the official investigation, writing down in its own report that everybody"
+    },
+    {
+      "start": 1370.282,
+      "end": 1371.482,
+      "text": "could have got off."
+    },
+    {
+      "start": 1371.782,
+      "end": 1376.587,
+      "text": "And it names how those thirty-two died: most were trapped, and the others were"
+    },
+    {
+      "start": 1376.587,
+      "end": 1377.819,
+      "text": "thrown into the sea."
+    },
+    {
+      "start": 1378.119,
+      "end": 1379.559,
+      "text": "Thirty people were found."
+    },
+    {
+      "start": 1379.859,
+      "end": 1383.481,
+      "text": "Two were never found - one passenger, one crew member."
+    },
+    {
+      "start": 1383.781,
+      "end": 1387.171,
+      "text": "Twenty-six passengers and four crew are recorded as deceased."
+    },
+    {
+      "start": 1387.471,
+      "end": 1390.072,
+      "text": "The last was found on the twenty-second of March."
+    },
+    {
+      "start": 1390.372,
+      "end": 1393.251,
+      "text": "A hundred and fifty-seven passengers claimed injuries."
+    },
+    {
+      "start": 1393.851,
+      "end": 1398.444,
+      "text": "Two more findings, and they belong together because they are the same failure seen"
+    },
+    {
+      "start": 1398.444,
+      "end": 1399.284,
+      "text": "from both ends."
+    },
+    {
+      "start": 1399.584,
+      "end": 1403.659,
+      "text": "Below decks, the engine and electrical departments worked the emergency from the"
+    },
+    {
+      "start": 1403.659,
+      "end": 1404.321,
+      "text": "first minute."
+    },
+    {
+      "start": 1404.621,
+      "end": 1409.445,
+      "text": "Under the chief engineer they fed the bridge a continuous, detailed, systematically"
+    },
+    {
+      "start": 1409.445,
+      "end": 1413.63,
+      "text": "updated picture of the flooding, the propulsion and the emergency power."
+    },
+    {
+      "start": 1413.93,
+      "end": 1417.367,
+      "text": "The chief engineer spoke to the master directly, several times."
+    },
+    {
+      "start": 1417.667,
+      "end": 1422.143,
+      "text": "They went into flooded compartments to try to restore vital equipment, at serious"
+    },
+    {
+      "start": 1422.143,
+      "end": 1424.354,
+      "text": "risk to themselves, and it did not work."
+    },
+    {
+      "start": 1424.654,
+      "end": 1429.132,
+      "text": "And they stayed on the bulkhead deck after the water reached it - knowing the ship"
+    },
+    {
+      "start": 1429.132,
+      "end": 1432.409,
+      "text": "was lost - and left only when the bridge cleared them to go."
+    },
+    {
+      "start": 1432.709,
+      "end": 1434.892,
+      "text": "That is the information arriving."
+    },
+    {
+      "start": 1435.192,
+      "end": 1436.771,
+      "text": "Now what was leaving."
+    },
+    {
+      "start": 1437.071,
+      "end": 1441.777,
+      "text": "Some crew members, meeting passengers in the corridors, told them to go back to"
+    },
+    {
+      "start": 1441.777,
+      "end": 1442.551,
+      "text": "their cabins."
+    },
+    {
+      "start": 1442.851,
+      "end": 1444.662,
+      "text": "That it was only a black out."
+    },
+    {
+      "start": 1444.962,
+      "end": 1446.727,
+      "text": "That it would be sorted out soon."
+    },
+    {
+      "start": 1447.027,
+      "end": 1448.745,
+      "text": "They were not inventing that."
+    },
+    {
+      "start": 1449.045,
+      "end": 1452.11,
+      "text": "It is what the ship had told the rescue services twice."
+    },
+    {
+      "start": 1452.41,
+      "end": 1456.729,
+      "text": "Passengers were not gathered from their cabins, as the procedure requires."
+    },
+    {
+      "start": 1457.029,
+      "end": 1461.279,
+      "text": "And the investigators offer one piece of proof for that which does not need any"
+    },
+    {
+      "start": 1461.279,
+      "end": 1462.462,
+      "text": "interpretation at all."
+    },
+    {
+      "start": 1462.762,
+      "end": 1466.709,
+      "text": "Two passengers were found alive on deck eight, three days later."
+    },
+    {
+      "start": 1467.009,
+      "end": 1469.47,
+      "text": "Deck eight has no lounges and no public rooms."
+    },
+    {
+      "start": 1469.77,
+      "end": 1470.931,
+      "text": "It is cabins."
+    },
+    {
+      "start": 1471.231,
+      "end": 1475.607,
+      "text": "The passengers also testified to something that explains why a cabin was the worst"
+    },
+    {
+      "start": 1475.607,
+      "end": 1476.247,
+      "text": "place to be."
+    },
+    {
+      "start": 1476.547,
+      "end": 1480.448,
+      "text": "The public spaces stayed lit throughout by the emergency lighting."
+    },
+    {
+      "start": 1480.748,
+      "end": 1482.698,
+      "text": "The cabins were completely dark."
+    },
+    {
+      "start": 1482.998,
+      "end": 1487.545,
+      "text": "People found their lifejackets in the wardrobe by the light of a torch, or a mobile"
+    },
+    {
+      "start": 1487.545,
+      "end": 1487.874,
+      "text": "phone."
+    },
+    {
+      "start": 1488.174,
+      "end": 1490.496,
+      "text": "And one last absence, recorded flatly."
+    },
+    {
+      "start": 1490.796,
+      "end": 1492.143,
+      "text": "Nobody called the roll."
+    },
+    {
+      "start": 1492.443,
+      "end": 1493.743,
+      "text": "Nobody attempted to."
+    },
+    {
+      "start": 1494.043,
+      "end": 1497.572,
+      "text": "Nobody counted the passengers as they boarded the lifeboats and the rafts."
+    },
+    {
+      "start": 1497.872,
+      "end": 1502.052,
+      "text": "Not one of the several thousand people who left that ship was counted leaving it."
+    },
+    {
+      "start": 1502.352,
+      "end": 1506.207,
+      "text": "The Body explains why, and its explanation is not about character."
+    },
+    {
+      "start": 1506.507,
+      "end": 1510.535,
+      "text": "The lack of orders in accordance with the muster list disoriented the crew who had"
+    },
+    {
+      "start": 1510.535,
+      "end": 1512.451,
+      "text": "been assigned by that same muster list."
+    },
+    {
+      "start": 1512.751,
+      "end": 1516.606,
+      "text": "They had been given jobs by a document, and then never told to start."
+    },
+    {
+      "start": 1517.206,
+      "end": 1520.317,
+      "text": "So what does the report conclude, at the top, in one line?"
+    },
+    {
+      "start": 1520.617,
+      "end": 1525.325,
+      "text": "That the human element is the root cause of the Costa Concordia casualty - in the"
+    },
+    {
+      "start": 1525.325,
+      "end": 1530.091,
+      "text": "action that caused the contact, and in the management of the emergency afterwards."
+    },
+    {
+      "start": 1530.391,
+      "end": 1535.045,
+      "text": "That sentence is going to be read, by most people who read it, as being about one"
+    },
+    {
+      "start": 1535.045,
+      "end": 1535.964,
+      "text": "man on a bridge."
+    },
+    {
+      "start": 1536.264,
+      "end": 1539.236,
+      "text": "An honest film has to say what else is in the same document."
+    },
+    {
+      "start": 1539.536,
+      "end": 1544.354,
+      "text": "On the bridge team, the investigators write: nobody seemed to have urged the master"
+    },
+    {
+      "start": 1544.354,
+      "end": 1548.127,
+      "text": "to accelerate the turn, or to give warning of the looming danger."
+    },
+    {
+      "start": 1548.427,
+      "end": 1552.838,
+      "text": "And they say the accident may lead to a wider discussion about the adequacy of"
+    },
+    {
+      "start": 1552.838,
+      "end": 1557.305,
+      "text": "bridge teams - how they are organised, and what the people standing on them are"
+    },
+    {
+      "start": 1557.305,
+      "end": 1558.04,
+      "text": "actually for."
+    },
+    {
+      "start": 1558.34,
+      "end": 1560.105,
+      "text": "That is not one man."
+    },
+    {
+      "start": 1560.405,
+      "end": 1561.473,
+      "text": "That is a room."
+    },
+    {
+      "start": 1561.773,
+      "end": 1566.732,
+      "text": "On the alarm: the general emergency alarm was not activated immediately after the"
+    },
+    {
+      "start": 1566.732,
+      "end": 1571.507,
+      "text": "impact, and that delayed the management of everything that came after it - the"
+    },
+    {
+      "start": 1571.507,
+      "end": 1573.894,
+      "text": "flooding, and the abandon ship process."
+    },
+    {
+      "start": 1574.194,
+      "end": 1576.005,
+      "text": "That is not one man either."
+    },
+    {
+      "start": 1576.305,
+      "end": 1578.627,
+      "text": "That is a procedure that did not start."
+    },
+    {
+      "start": 1578.927,
+      "end": 1583.324,
+      "text": "And underneath all of it: nearly two thousand people who had never walked to a"
+    },
+    {
+      "start": 1583.324,
+      "end": 1587.89,
+      "text": "muster station, because the operation they had bought a ticket from showed them a"
+    },
+    {
+      "start": 1587.89,
+      "end": 1588.679,
+      "text": "video instead."
+    },
+    {
+      "start": 1588.979,
+      "end": 1591.301,
+      "text": "The human element is the root cause."
+    },
+    {
+      "start": 1591.601,
+      "end": 1593.505,
+      "text": "It is just not one human."
+    },
+    {
+      "start": 1595.305,
+      "end": 1596.512,
+      "text": "Go back to the floor."
+    },
+    {
+      "start": 1596.812,
+      "end": 1597.787,
+      "text": "It is level."
+    },
+    {
+      "start": 1598.087,
+      "end": 1602.726,
+      "text": "It is carpeted, and warm, and there are several thousand people standing on it who"
+    },
+    {
+      "start": 1602.726,
+      "end": 1604.31,
+      "text": "have no reason to look down."
+    },
+    {
+      "start": 1604.61,
+      "end": 1607.721,
+      "text": "That is what a ship feels like when everything is correct."
+    },
+    {
+      "start": 1608.021,
+      "end": 1609.368,
+      "text": "It feels like a building."
+    },
+    {
+      "start": 1609.968,
+      "end": 1613.915,
+      "text": "The rock took the compartments and the ship was always going to lie down."
+    },
+    {
+      "start": 1614.215,
+      "end": 1617.141,
+      "text": "The blackout took the rudder and the pumps in ninety seconds."
+    },
+    {
+      "start": 1617.441,
+      "end": 1620.227,
+      "text": "Neither of those could be undone by anybody on board."
+    },
+    {
+      "start": 1620.527,
+      "end": 1624.382,
+      "text": "What was left was time, and there was more of it than the night needed."
+    },
+    {
+      "start": 1624.682,
+      "end": 1626.493,
+      "text": "Sixty-nine minutes to the order."
+    },
+    {
+      "start": 1626.793,
+      "end": 1629.672,
+      "text": "Another eighteen before the heel reached thirty degrees."
+    },
+    {
+      "start": 1629.972,
+      "end": 1631.365,
+      "text": "Thirteen degrees."
+    },
+    {
+      "start": 1631.665,
+      "end": 1632.687,
+      "text": "Thirty."
+    },
+    {
+      "start": 1632.987,
+      "end": 1633.869,
+      "text": "Forty."
+    },
+    {
+      "start": 1634.169,
+      "end": 1634.958,
+      "text": "Eighty."
+    },
+    {
+      "start": 1635.258,
+      "end": 1639.597,
+      "text": "Somewhere in the middle of that, the investigators say, every person aboard could"
+    },
+    {
+      "start": 1639.597,
+      "end": 1643.989,
+      "text": "have been standing on a rock in the Tyrrhenian Sea, cold and frightened and alive."
+    },
+    {
+      "start": 1644.289,
+      "end": 1645.589,
+      "text": "They needed a sound."
+    },
+    {
+      "start": 1645.889,
+      "end": 1647.05,
+      "text": "Given once."
+    },
+    {
+      "start": 1647.35,
+      "end": 1648.79,
+      "text": "In the first minutes."
+    },
+    {
+      "start": 1649.09,
+      "end": 1651.458,
+      "text": "On a system that reaches every room."
+    },
+    {
+      "start": 1651.758,
+      "end": 1654.173,
+      "text": "And a walk that most of them had never taken."
+    },
+    {
+      "start": 1654.473,
+      "end": 1659.134,
+      "text": "Tonight, on ships all over the world, several thousand people at a time put on an"
+    },
+    {
+      "start": 1659.134,
+      "end": 1663.853,
+      "text": "orange jacket and stand in a marked square on a deck, feeling faintly silly, while"
+    },
+    {
+      "start": 1663.853,
+      "end": 1665.061,
+      "text": "somebody counts them."
+    },
+    {
+      "start": 1665.361,
+      "end": 1667.172,
+      "text": "That is the whole difference."
+    }
+  ],
+  "graphics": [],
+  "figures": [
+    {
+      "start": 4.745,
+      "end": 7.745,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction, no real likenesses",
+      "_row": "invariant-11"
+    },
+    {
+      "start": 17.036,
+      "end": 20.036,
+      "kind": "kinetic",
+      "lines": [
+        "69 MINUTES",
+        "TO GIVE THE ORDER."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "69 MINUTES"
+      ],
+      "_row": "CC-001"
+    },
+    {
+      "start": 31.735,
+      "end": 37.735,
+      "kind": "acttitle",
+      "title": "FOUR THOUSAND TWO HUNDRED AND TWENTY-NINE",
+      "kicker": "ACT ONE",
+      "index": 1,
+      "_row": "structure"
+    },
+    {
+      "start": 45.643,
+      "end": 51.643,
+      "kind": "kinetic",
+      "lines": [
+        "13 JANUARY 2012.",
+        "OFF THE ITALIAN COAST."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "13 JANUARY 2012."
+      ],
+      "_row": "CC-002"
+    },
+    {
+      "start": 59.551,
+      "end": 65.551,
+      "kind": "stat",
+      "value": 4229,
+      "label": "people on board",
+      "topLabel": "A BUILDING THAT FLOATS",
+      "_row": "CC-003"
+    },
+    {
+      "start": 73.459,
+      "end": 79.459,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "PASSENGERS",
+          "value": 3206
+        },
+        {
+          "label": "CREW",
+          "value": 1023
+        }
+      ],
+      "_row": "CC-003"
+    },
+    {
+      "start": 87.367,
+      "end": 93.367,
+      "kind": "stat",
+      "value": 1270,
+      "label": "of the 3,206 passengers had attended a muster",
+      "topLabel": "WHO HAD WALKED IT",
+      "_row": "CC-004"
+    },
+    {
+      "start": 101.275,
+      "end": 107.275,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "AT TOULON",
+          "value": 463
+        },
+        {
+          "label": "AT BARCELONA",
+          "value": 456
+        }
+      ],
+      "_row": "CC-004"
+    },
+    {
+      "start": 115.183,
+      "end": 121.183,
+      "kind": "kinetic",
+      "lines": [
+        "NEARLY TWO THOUSAND",
+        "HAD NEVER WALKED IT."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "HAD NEVER WALKED IT."
+      ],
+      "_row": "CC-005"
+    },
+    {
+      "start": 129.091,
+      "end": 135.091,
+      "kind": "stat",
+      "value": 16,
+      "label": "knots, three tenths of a mile from Le Scole",
+      "topLabel": "21:44:05",
+      "_row": "CC-006"
+    },
+    {
+      "start": 142.998,
+      "end": 148.998,
+      "kind": "kinetic",
+      "lines": [
+        "21:45:07.",
+        "THE HULL STRIKES THE ROCK."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "21:45:07."
+      ],
+      "_row": "CC-007"
+    },
+    {
+      "start": 156.906,
+      "end": 162.906,
+      "kind": "stat",
+      "value": 51,
+      "label": "seconds later, the recorder captures the blackout",
+      "topLabel": "THE LIGHTS",
+      "_row": "CC-008"
+    },
+    {
+      "start": 170.814,
+      "end": 176.814,
+      "kind": "stat",
+      "value": 41,
+      "label": "seconds is how long the emergency generator ran",
+      "topLabel": "AND THEN",
+      "_row": "CC-009"
+    },
+    {
+      "start": 184.722,
+      "end": 190.722,
+      "kind": "kinetic",
+      "lines": [
+        "THE RUDDER.",
+        "THE BILGE PUMP."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "THE BILGE PUMP."
+      ],
+      "_row": "CC-009"
+    },
+    {
+      "start": 198.63,
+      "end": 204.63,
+      "kind": "kinetic",
+      "lines": [
+        "COMPARTMENT FIVE.",
+        "COMPARTMENT SIX."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "COMPARTMENT SIX."
+      ],
+      "_row": "CC-010"
+    },
+    {
+      "start": 212.538,
+      "end": 218.538,
+      "kind": "stat",
+      "value": 53,
+      "label": "metres of hull opened by the rock",
+      "topLabel": "THE BREACH",
+      "_row": "CC-011"
+    },
+    {
+      "start": 226.446,
+      "end": 232.446,
+      "kind": "kinetic",
+      "lines": [
+        "THE POWER AND THE PUMPING",
+        "WERE STANDING IN THE WATER."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "WERE STANDING IN THE WATER."
+      ],
+      "_row": "CC-010"
+    },
+    {
+      "start": 240.354,
+      "end": 246.354,
+      "kind": "stat",
+      "value": 90,
+      "label": "seconds to lose all power to the essential systems",
+      "topLabel": "INSIDE",
+      "_row": "CC-008"
+    },
+    {
+      "start": 272.229,
+      "end": 278.229,
+      "kind": "acttitle",
+      "title": "A THOUSAND SEPARATE JUDGEMENTS",
+      "kicker": "ACT TWO",
+      "index": 2,
+      "_row": "structure"
+    },
+    {
+      "start": 303.071,
+      "end": 309.071,
+      "kind": "stat",
+      "value": 272,
+      "label": "of the thousand crew had joined since 1 December",
+      "topLabel": "SIX WEEKS",
+      "_row": "CC-012"
+    },
+    {
+      "start": 333.912,
+      "end": 339.912,
+      "kind": "kinetic",
+      "lines": [
+        "TWELVE OF THEM",
+        "HAD EMBARKED THAT DAY."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "THAT DAY."
+      ],
+      "_row": "CC-012"
+    },
+    {
+      "start": 364.754,
+      "end": 370.754,
+      "kind": "stat",
+      "value": 38,
+      "label": "nationalities among the crew",
+      "topLabel": "ON ONE SHIP",
+      "_row": "CC-013"
+    },
+    {
+      "start": 395.596,
+      "end": 401.596,
+      "kind": "stat",
+      "value": 26,
+      "label": "countries the passengers came from",
+      "topLabel": "AND THE PASSENGERS",
+      "_row": "CC-013"
+    },
+    {
+      "start": 426.437,
+      "end": 432.437,
+      "kind": "quote",
+      "quote": "the recruitment procedure for deck and engine personnel does not assess the applicant's work language",
+      "attribution": "The flag authority's formal non-conformity, March 2012",
+      "_row": "CC-014"
+    },
+    {
+      "start": 457.279,
+      "end": 463.279,
+      "kind": "kinetic",
+      "lines": [
+        "EVERY ONE OF THOSE",
+        "EXISTS ON PAPER."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "EXISTS ON PAPER."
+      ],
+      "_row": "CC-015"
+    },
+    {
+      "start": 488.121,
+      "end": 494.121,
+      "kind": "kinetic",
+      "lines": [
+        "15 OCTOBER 2011.",
+        "AN ABANDON-SHIP DRILL."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "15 OCTOBER 2011."
+      ],
+      "_row": "CC-016"
+    },
+    {
+      "start": 518.962,
+      "end": 524.962,
+      "kind": "kinetic",
+      "lines": [
+        "THREE MONTHS",
+        "BEFORE THIS NIGHT."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "THREE MONTHS"
+      ],
+      "_row": "CC-016"
+    },
+    {
+      "start": 549.804,
+      "end": 555.804,
+      "kind": "stat",
+      "value": 2008,
+      "label": "is when the master obtained the passenger-ship certificate",
+      "topLabel": "QUALIFIED",
+      "_row": "CC-017"
+    },
+    {
+      "start": 580.646,
+      "end": 586.646,
+      "kind": "stat",
+      "value": 17,
+      "label": "years of sea service behind him",
+      "topLabel": "NEARLY",
+      "_row": "CC-017"
+    },
+    {
+      "start": 611.487,
+      "end": 617.487,
+      "kind": "kinetic",
+      "lines": [
+        "A STAFF MASTER IN 2010.",
+        "SIX MORE DURING 2011."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "SIX MORE DURING 2011."
+      ],
+      "_row": "CC-018"
+    },
+    {
+      "start": 642.329,
+      "end": 648.329,
+      "kind": "kinetic",
+      "lines": [
+        "1 SEPTEMBER 2012.",
+        "THE COURSE BECOMES MANDATORY."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "THE COURSE BECOMES MANDATORY."
+      ],
+      "_row": "CC-019"
+    },
+    {
+      "start": 673.171,
+      "end": 679.171,
+      "kind": "stat",
+      "value": 8,
+      "label": "months after this night",
+      "topLabel": "WHICH WAS",
+      "_row": "CC-019"
+    },
+    {
+      "start": 704.012,
+      "end": 710.012,
+      "kind": "kinetic",
+      "lines": [
+        "A THOUSAND SEPARATE JUDGEMENTS",
+        "IS NOT AN EVACUATION PLAN."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "IS NOT AN EVACUATION PLAN."
+      ],
+      "_row": "CC-015"
+    },
+    {
+      "start": 734.854,
+      "end": 740.854,
+      "kind": "kinetic",
+      "lines": [
+        "21:55.",
+        "FOUR COMPARTMENTS FLOODED."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "FOUR COMPARTMENTS FLOODED."
+      ],
+      "_row": "CC-020"
+    },
+    {
+      "start": 772.896,
+      "end": 778.896,
+      "kind": "acttitle",
+      "title": "WHICH SHORE, AND WHAT THEY WERE TOLD",
+      "kicker": "ACT THREE",
+      "index": 3,
+      "_row": "structure"
+    },
+    {
+      "start": 799.138,
+      "end": 805.138,
+      "kind": "kinetic",
+      "lines": [
+        "21:57:34.",
+        "THE COMPANY IS TOLD."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "21:57:34."
+      ],
+      "_row": "CC-021"
+    },
+    {
+      "start": 825.38,
+      "end": 831.38,
+      "kind": "kinetic",
+      "lines": [
+        "22:07.",
+        "CIVITAVECCHIA CONTACTS THE SHIP."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "22:07."
+      ],
+      "_row": "CC-021"
+    },
+    {
+      "start": 851.622,
+      "end": 857.622,
+      "kind": "kinetic",
+      "lines": [
+        "22:12.",
+        "THE FIRST WORD TO THE PASSENGERS."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "22:12."
+      ],
+      "_row": "CC-022"
+    },
+    {
+      "start": 877.865,
+      "end": 883.865,
+      "kind": "stat",
+      "value": 29,
+      "label": "minutes after the rocks",
+      "topLabel": "LIVORNO IS CONTACTED",
+      "_row": "CC-022"
+    },
+    {
+      "start": 904.107,
+      "end": 910.107,
+      "kind": "quote",
+      "quote": "there is a hull breach on the left side causing a gradual heel",
+      "attribution": "The master to Livorno, 22:25:15 — forty minutes after the contact",
+      "_row": "CC-023"
+    },
+    {
+      "start": 930.349,
+      "end": 936.349,
+      "kind": "stat",
+      "value": 40,
+      "label": "minutes before the shore hears the word breach",
+      "topLabel": "THE FIRST TIME",
+      "_row": "CC-023"
+    },
+    {
+      "start": 956.591,
+      "end": 962.591,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "KNOWN ON BOARD, MIN",
+          "value": 37
+        },
+        {
+          "label": "TOLD TO SHORE AT, MIN",
+          "value": 41
+        }
+      ],
+      "_row": "CC-023"
+    },
+    {
+      "start": 982.833,
+      "end": 988.833,
+      "kind": "kinetic",
+      "lines": [
+        "22:30.",
+        "THE FLOODING REACHES DECK ZERO."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "DECK ZERO."
+      ],
+      "_row": "CC-024"
+    },
+    {
+      "start": 1009.075,
+      "end": 1015.075,
+      "kind": "kinetic",
+      "lines": [
+        "22:33:26.",
+        "THE GENERAL EMERGENCY."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "22:33:26."
+      ],
+      "_row": "CC-025"
+    },
+    {
+      "start": 1035.317,
+      "end": 1041.317,
+      "kind": "stat",
+      "value": 48,
+      "label": "minutes after the contact",
+      "topLabel": "WHICH WAS",
+      "_row": "CC-025"
+    },
+    {
+      "start": 1061.559,
+      "end": 1067.559,
+      "kind": "kinetic",
+      "lines": [
+        "3,208. 3,206. 3,216.",
+        "THREE NUMBERS FOR THE SAME PEOPLE."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "THREE NUMBERS FOR THE SAME PEOPLE."
+      ],
+      "_row": "CC-026"
+    },
+    {
+      "start": 1087.801,
+      "end": 1093.801,
+      "kind": "kinetic",
+      "lines": [
+        "22:54:10.",
+        "ABANDON SHIP."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "ABANDON SHIP."
+      ],
+      "_row": "CC-027"
+    },
+    {
+      "start": 1114.044,
+      "end": 1120.044,
+      "kind": "stat",
+      "value": 69,
+      "label": "minutes after the hull struck the rock",
+      "topLabel": "THE ORDER CAME",
+      "_row": "CC-001"
+    },
+    {
+      "start": 1140.286,
+      "end": 1146.286,
+      "kind": "kinetic",
+      "lines": [
+        "SEVEN SHORT BLASTS",
+        "AND ONE LONG ONE."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "AND ONE LONG ONE."
+      ],
+      "_row": "CC-028"
+    },
+    {
+      "start": 1166.528,
+      "end": 1172.528,
+      "kind": "stat",
+      "value": 75,
+      "label": "minutes after the rock, the crisis committee is formed",
+      "topLabel": "23:00",
+      "_row": "CC-029"
+    },
+    {
+      "start": 1192.77,
+      "end": 1198.77,
+      "kind": "kinetic",
+      "lines": [
+        "23:20.",
+        "THE BRIDGE IS LEFT."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "23:20."
+      ],
+      "_row": "CC-030"
+    },
+    {
+      "start": 1226.286,
+      "end": 1232.286,
+      "kind": "acttitle",
+      "title": "WHAT THE ANGLE DOES",
+      "kicker": "ACT FOUR",
+      "index": 4,
+      "_row": "structure"
+    },
+    {
+      "start": 1248.075,
+      "end": 1254.075,
+      "kind": "quote",
+      "quote": "no measure is sufficient to render the ship unsinkable when more than two contiguous watertight compartments are flooded",
+      "attribution": "The investigative body, stated directly",
+      "_row": "CC-031"
+    },
+    {
+      "start": 1269.864,
+      "end": 1275.864,
+      "kind": "stat",
+      "value": 13,
+      "label": "degrees — you can still walk, badly",
+      "suffix": "°",
+      "topLabel": "THE HEEL",
+      "_row": "CC-032"
+    },
+    {
+      "start": 1291.653,
+      "end": 1297.653,
+      "kind": "stat",
+      "value": 30,
+      "label": "degrees — the decks are ramps",
+      "suffix": "°",
+      "topLabel": "THE HEEL",
+      "_row": "CC-032"
+    },
+    {
+      "start": 1313.442,
+      "end": 1319.442,
+      "kind": "stat",
+      "value": 40,
+      "label": "degrees around midnight — walking is climbing",
+      "suffix": "°",
+      "topLabel": "THE HEEL",
+      "_row": "CC-032"
+    },
+    {
+      "start": 1335.231,
+      "end": 1341.231,
+      "kind": "stat",
+      "value": 80,
+      "label": "degrees, where she ended — the corridors are shafts",
+      "suffix": "°",
+      "topLabel": "THE HEEL",
+      "_row": "CC-032"
+    },
+    {
+      "start": 1357.02,
+      "end": 1363.02,
+      "kind": "kinetic",
+      "lines": [
+        "00:34.",
+        "NINETY DEGREES."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "NINETY DEGREES."
+      ],
+      "_row": "CC-033"
+    },
+    {
+      "start": 1378.809,
+      "end": 1384.809,
+      "kind": "kinetic",
+      "lines": [
+        "00:53.",
+        "THE HELICOPTERS BEGIN."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "00:53."
+      ],
+      "_row": "CC-034"
+    },
+    {
+      "start": 1400.598,
+      "end": 1406.598,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "PATROL BOATS",
+          "value": 25
+        },
+        {
+          "label": "VESSELS",
+          "value": 14
+        },
+        {
+          "label": "HELICOPTERS",
+          "value": 8
+        },
+        {
+          "label": "TUGS",
+          "value": 4
+        }
+      ],
+      "_row": "CC-035"
+    },
+    {
+      "start": 1422.387,
+      "end": 1428.387,
+      "kind": "kinetic",
+      "lines": [
+        "SUPPOSE THE SIGNAL",
+        "HAD COME AT 22:39."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "AT 22:39."
+      ],
+      "_row": "CC-036"
+    },
+    {
+      "start": 1444.176,
+      "end": 1450.176,
+      "kind": "stat",
+      "value": 36,
+      "label": "minutes is what the investigators call adequate to muster",
+      "topLabel": "ON THAT TIMELINE",
+      "_row": "CC-036"
+    },
+    {
+      "start": 1465.965,
+      "end": 1471.965,
+      "kind": "kinetic",
+      "lines": [
+        "LEAVING AT THIRTEEN DEGREES.",
+        "NOT AT EIGHTY."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "NOT AT EIGHTY."
+      ],
+      "_row": "CC-036"
+    },
+    {
+      "start": 1487.754,
+      "end": 1493.754,
+      "kind": "stat",
+      "value": 33,
+      "label": "minutes later the ship reached thirty degrees",
+      "topLabel": "23:12",
+      "_row": "CC-036"
+    },
+    {
+      "start": 1509.543,
+      "end": 1515.543,
+      "kind": "kinetic",
+      "lines": [
+        "ALL OF THEM",
+        "COULD HAVE REACHED SAFETY."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "COULD HAVE REACHED SAFETY."
+      ],
+      "_row": "CC-036"
+    },
+    {
+      "start": 1531.332,
+      "end": 1537.332,
+      "kind": "stat",
+      "value": 32,
+      "label": "people died",
+      "topLabel": "INSTEAD",
+      "_row": "CC-037"
+    },
+    {
+      "start": 1553.121,
+      "end": 1559.121,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "PASSENGERS",
+          "value": 26
+        },
+        {
+          "label": "CREW",
+          "value": 4
+        }
+      ],
+      "_row": "CC-037"
+    },
+    {
+      "start": 1574.91,
+      "end": 1580.91,
+      "kind": "stat",
+      "value": 157,
+      "label": "passengers claimed injuries",
+      "topLabel": "AND",
+      "_row": "CC-038"
+    },
+    {
+      "start": 1610.897,
+      "end": 1616.897,
+      "kind": "kinetic",
+      "lines": [
+        "TWO WERE NEVER FOUND.",
+        "ONE PASSENGER. ONE CREW."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "TWO WERE NEVER FOUND."
+      ],
+      "_row": "CC-037"
+    },
+    {
+      "start": 1642.08,
+      "end": 1648.08,
+      "kind": "lowerthird",
+      "lines": [
+        "SIXTY-NINE MINUTES",
+        "TO SAY THE WORD."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "SIXTY-NINE MINUTES"
+      ],
+      "_row": "CC-001",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction, no real likenesses"
+    }
+  ],
+  "overlays": [],
+  "leadSeconds": 0.0,
+  "openingVariant": "overlay"
+}

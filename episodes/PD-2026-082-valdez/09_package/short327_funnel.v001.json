@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 327,
+  "episode_id": "PD-2026-082-valdez",
+  "slug": "valdez",
+  "loop": true,
+  "loop_join": "The closing beat p14 (short327_14.png, a wide Alaskan sound at dusk, spruce shore) carries isCta:true, rewind:true: its camera runs backward under the FULL CASE card so it lands on the same opening scale the film's first beat used, and the loop restarts clean on p01 (three officers' caps hanging in a row) at frame 0 rather than cutting.",
+  "second_watch_detail": "p04 is a small ship's cabin desk with a blank notepad, first read as generic ship-office detail. Once L6-L7 name the appraisal that rates a crewmember partly on willingness to work overtime and decides their promotion, pay and next ship, that blank pad reads as the very form that fatigue was being scored on.",
+  "funnel_question_left_for_longform": "Nineteen years later a second institution found the same shape from different evidence. What did it write down?",
+  "funnel_long_title": "The Exxon Valdez Was Operated With a Reduced Crew",
+  "funnel_long_video_id": "wgjY-OHAQZI",
+  "description_line_1": "▶ FULL CASE: The Exxon Valdez Was Operated With a Reduced Crew | https://youtu.be/wgjY-OHAQZI",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "The Number on the Paper Had Not Moved.",
+    "ctaLongThumbSrc": "shorts/short327/short327_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "Nineteen years later a second institution found the same shape from different evidence. What did it write down? The full case is here: https://youtu.be/wgjY-OHAQZI",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that is already finished and rendered (remotion/out/short327_yt.mp4) but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. The loop join, second-watch detail and CTA block are read off remotion/src/data/short327.ts; the standing question is the file-header LEAVES FOR THE LONG-FORM lines verbatim. The long-form video wgjY-OHAQZI is currently PRIVATE and scheduled for 2026-09-06 -- check_short_funnel.py's own comment on funnel_long_video_id confirms a private+scheduled upload satisfies the requirement that the long-form exist as at least a private upload before its short can be scheduled. BLOCKER carried forward, not fixed here: cta.ctaLongThumbSrc points at shorts/short327/short327_ctathumb.jpg, which does not exist anywhere in the working tree (remotion/public_min/shorts only goes up to short324) -- it was presumably baked into the render from a since-removed source and should be restored or regenerated before the in-video FULL CASE card is trusted. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet, and cannot be until short327 is uploaded and has a real video id."
+}

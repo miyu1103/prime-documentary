@@ -1,0 +1,73 @@
+EP67 ramirez — 画像発注 バッチ 14/18（6枚）
+区分: C · the people lane  [HSTYLE]  [R091 – R096]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── この区分だけの追加指定（人物レーン）────────
+
+各プロンプトの先頭 [HSTYLE] は、次の文言に置き換えてください:
+
+photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens
+
+・この24枚のうち9枚は**顔がはっきり写ります。それが狙いです。**
+　ただし全員**架空の他人**です。実在の誰かに似せないでください。
+・カメラ目線にしない。作り笑いをしない。広告のモデル顔にしない。
+
+──────── プロンプト ────────
+
+■ R091.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. An ordinary American family kitchen at night WITH NOBODY IN IT, photographed square on from the far side of the room at standing height: the overhead light off, one small warm lamp or under-cupboard light on somewhere to the left, a window black behind the sink, TWO CHAIRS PULLED OUT FROM THE TABLE AND LEFT ASKEW, the table bare. Shadow everywhere but never crushed — every corner still holds its detail. No person, no reflection of a person Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, person, silhouette, crushed black shadow, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words
+
+■ R092.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. A man in a plain overcoat standing on broad stone civic steps, seen FROM BEHIND AND SLIGHTLY TO ONE SIDE at three-quarters so that only the very edge of his cheek and jaw is visible and NO FEATURE OF HIS FACE CAN BE MADE OUT, framed from the knees up and placed left of centre, one hand hanging at his side with the fingers loosely separate and the other in his coat pocket. He is looking away up the steps. A plain city street soft and grey behind and below. Flat overcast daylight Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, face, profile, turned head, briefcase with a logo, courtroom, judge's bench, jury box, witness stand, gavel, scales of justice, state seal, carved motto, engraved lettering on stone, banner, memorial plaque, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram
+
+■ R093.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. One hand at rest on the front of a CLOSED office drawer, photographed close from a low three-quarter angle. THE HAND IS AT REST FLAT ON THE SURFACE, not raised and not held in the air, the palm laid down in full contact with it and the wrist straight, THE FOUR FINGERS LYING SIDE BY SIDE AND SEPARATE with a visible line of shadow between each pair and one nail showing on each, and the thumb clearly apart from the fingers along the near side — here the surface is the flat wooden drawer front itself, the palm laid against it with the fingers hanging down over the brass handle, separate and still, not gripping and not pulling. Mid-forties skin, short unmanicured nails. Soft north light from the left, the desk and the room beyond soft and dim Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, gripping the handle, pulling the drawer, drawer open, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words
+
+■ R094.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. TWO INVENTED, COMPLETELY FICTIONAL adults talking in a doorway, mid-shot from about eight feet away at eye height, one standing inside the room and one in the corridor, TURNED TOWARD EACH OTHER IN PROFILE SO NEITHER LOOKS ANYWHERE NEAR THE CAMERA. Both faces are visible in profile, ordinary, mid-conversation and unperformed. Ordinary work clothes. Their hands are down at their sides or resting on the door frame with fingers separate. The door frame makes a hard vertical edge between them. Even flat daylight Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, looking at the camera, model look, retouched skin, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, lanyard with a printed badge, courtroom, judge's bench, jury box, witness stand, gavel, scales of justice, state seal, carved motto, engraved lettering on stone, banner, memorial plaque
+
+■ R095.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. A plain empty office at dusk, photographed from the doorway at standing height: two or three bare desks, a run of low cabinets, one window on the left going deep blue, the overhead lights off so the room is lit only by that window. ONE CHAIR IS TURNED OUT FROM ITS DESK at an angle, as though somebody had just stood up. NOBODY IS IN THE ROOM. Nothing on any desk. Shadow that still holds its detail Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, person, silhouette, readable screen, spreadsheet on a monitor, web page, icons, cursor, user interface, readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, crushed black shadow
+
+■ R096.png
+[HSTYLE] photographic, 35mm, natural light, real adults, ordinary clothing, ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, faces neutral and unremarkable, nobody looking at the lens. A wide of an ordinary American residential street at dusk, photographed from the middle of the road at standing height: single-storey houses either side, driveways, a kerbline running away, the sky above still pale and the street below already dim. THREE SEPARATE PEOPLE are in the frame, ALL FAR AWAY AND ALL FAR APART FROM EACH OTHER — one on each pavement and one at a distant driveway — each no more than a fortieth of the frame height and each reduced to a soft dark shape with no resolvable feature. No house numbers, no street sign, nobody near the camera Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fingers fused into one mass, fingers merged, webbed fingers, mitten hand, stub fingers, missing thumb, extra fingers, six fingers, malformed hand, interlocked fingers, raised hand, hand held up in the air, blurred hand, sharp face, person close to the camera, house numbers, street sign, European streetscape, Irish town, Georgian doorway, EU number plate, foreign-language signage, cobbled lane, thatched roof, tram, streetlight flare
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R091.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-024-rajaratnam",
+  "target_type": "script",
+  "target_id": "PD-2026-024-rajaratnam-script-annotated",
+  "target_revision": "v001",
+  "decision": "pending",
+  "requested_at": "2026-06-30T00:00:00+09:00",
+  "requested_by": "claude",
+  "decided_at": null,
+  "decided_by": null,
+  "notes": "Final-script approval gate for the verified script package (script.en.v001.md + script.annotated.v001.json, 53 spans, ~3,776 narration words / ~25.2 min @150wpm in the mid-feature band). R2: living subject convicted at a jury trial. Owner must confirm before scene/asset/audio production begins. PUBLISH remains a separate downstream gate and requires R2 legal review.",
+  "conditions": [
+    "Pre-publish legal review (R2): re-verify the verdict date and 14 counts, the 11-year sentence, the $53,816,434 forfeiture + $10M fine, the $92,805,705 SEC civil penalty, the 2013 Second Circuit wiretap affirmance, and Rajat Gupta's SEPARATE disposition against primary DOJ/SEC/court records.",
+    "Keep co-defendants strictly separate; never merge Gupta's conduct or penalties with Rajaratnam's.",
+    "Any verbatim wiretap-call dialogue must be confirmed against the public trial record before it is voiced (CLM-0018); verify the memoir's title/date before citing (CLM-0016).",
+    "No real-person likeness, real logos, court seals, or identifiable real locations in any generated image (invariant 11)."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "episodes/PD-2026-024-rajaratnam/03_script/script_qc.v001.json"
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "id": "ep67_kin_two_words",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "FIRST NAME",
+      "LAST NAME",
+      "NOTHING ELSE"
+    ],
+    "bigSize": 132,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_2",
+    "_ledger": "LS-14",
+    "_line": "TransUnion did not compare any data other than first and last names.",
+    "_why": "The whole engine of the case is a two-field comparison. It is the one idea a viewer must hold for the next twenty minutes, and it is three words on a card. Lands on the line, not before it.",
+    "_note": "EP67 ramirez -- After Effects kinetic beats. Owner instruction 2026-08-11: AEはガッツリ使ってほしい。とにかく紙芝居をやめたい. The standing approval (2026-08-04) names one or two beats mid-film on the numbers and the turns; this episode authors SIX because the record's argument is carried by four numbers (8,185 / 1,853 / 6,332 / 5-4) plus the two-word comparison and the jury's two figures -- one beat every ~4.5 minutes, all of them between ACT_2 and ACT_4, none in the HOOK and none in the ENDING. That widening is recorded as an approved_deviation in episode_spec.v001.json and needs an owner line before the build. Render with scripts/ae/render_beats.sh scripts/ae/jobs_ep67_ramirez.json; install the resulting VP9-alpha webm at remotion/public/ramirez/ae/<id>.webm and place it as a cut in ramirez_film.json at the timestamp named in FILM_BIBLE 12.5. TWO TRAPS, both measured, both written down rather than discovered again: (1) kinetic_beat.jsx line 32 hardcodes var W = 1080, H = 1920 -- a Short's frame. Rendered as-is these overlays come out PORTRAIT and will pillarbox inside a 1920x1080 film. The canvas field on every job below is the value it must read; teaching the jsx to read it is a one-line edit through scripts/pd_edit.py and MUST happen before render_beats.sh is run for a long-form. (2) EP66's jobs file carries a style:'note' _meta object; kinetic_beat.jsx builds a comp for EVERY array element, so that object becomes a comp with no text, the build logs FAILED and render_beats.sh refuses to render. This file therefore has no note object -- the provenance lives in _note/_line/_why fields on the real beats, which the jsx ignores."
+  },
+  {
+    "id": "ep67_kin_cortez_dates",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "BORN MAY 1944",
+      "MATCHED TO",
+      "BORN JUNE 1971"
+    ],
+    "bigSize": 120,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_3",
+    "_ledger": "TH-04",
+    "_line": "The report flagged her -- Sandra Jean Cortez, born in May 1944 -- as a match for a person on the OFAC list: Sandra Cortes Quintero, born in June 1971.",
+    "_why": "Twenty-seven years apart, and a date of birth was the identifier the Third Circuit told the company to compare. The two dates side by side do the argument without a sentence of commentary. Quoted from Thomas summarising Cortez; the Cortez opinion itself was not retrieved (open question OQ-03), so this beat carries the two dates and nothing else about her."
+  },
+  {
+    "id": "ep67_kin_8185",
+    "style": "number",
+    "seconds": 2.4,
+    "big": "8,185",
+    "bigSize": 300,
+    "label": "PEOPLE, INCLUDING RAMIREZ",
+    "labelSize": 72,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_3",
+    "_ledger": "MN-02",
+    "_line": "Before trial, the parties stipulated that the class contained 8,185 members, including Ramirez.",
+    "_why": "The scale beat. It is a stipulated number -- both sides agreed to it -- which is why the film can put it on screen alone."
+  },
+  {
+    "id": "ep67_kin_jury_award",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "$984.22 STATUTORY",
+      "$6,353.08 PUNITIVE",
+      "TO EACH OF THEM"
+    ],
+    "bigSize": 112,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_3",
+    "_ledger": "MN-04",
+    "_line": "The jury awarded each class member $984.22 in statutory damages and $6,353.08 in punitive damages for a total award of more than $60 million.",
+    "_why": "The two jury figures have to be seen APART, because the film's most likely factual error is blending them with the Ninth Circuit's reduced $3,936.88 and with the Supreme Court, which set no figure at all (forbidden_claims 5 and 6). Three separate lines on screen is the cheapest way to stop that."
+  },
+  {
+    "id": "ep67_kin_five_four",
+    "style": "number",
+    "seconds": 2.4,
+    "big": "5–4",
+    "bigSize": 300,
+    "label": "FIVE JUSTICES. FOUR IN DISSENT.",
+    "labelSize": 66,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_4",
+    "_ledger": "ID-03, ID-04",
+    "_line": "Kavanaugh, Roberts, Alito, Gorsuch and Barrett. Thomas, Breyer, Sotomayor and Kagan. Five to four.",
+    "_why": "The single easiest factual error in this episode is 6-3, and it is also the easiest for a viewer to catch (forbidden_claims 1). Putting the arithmetic on screen at the moment the ruling arrives is the mechanism that stops it. Thomas's own closing counts them: 'four Members of this Court.'"
+  },
+  {
+    "id": "ep67_kin_1853_6332",
+    "style": "punch",
+    "seconds": 3.2,
+    "words": [
+      "1,853 COULD SUE",
+      "6,332 COULD NOT",
+      "SAME FALSE FLAG"
+    ],
+    "bigSize": 120,
+    "canvas": { "w": 1920, "h": 1080 },
+    "_section": "ACT_4",
+    "_ledger": "HD-11, MN-03",
+    "_line": "The 6,332 class members whose credit reports were not provided to third-party businesses did not suffer a concrete harm and thus do not have standing as to the reasonable-procedures claim.",
+    "_why": "The split IS the holding, and it is a subtraction the opinion states itself: 8,185 minus 1,853 is 6,332. The third line is the film's own compression and is true of both groups -- the same alert, produced the same way, on the same day. It is not a claim about what the Court decided."
+  }
+]

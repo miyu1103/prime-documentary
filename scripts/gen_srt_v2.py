@@ -4,8 +4,8 @@ Generate master narration MP3 + SRT from 06_voice/draft chunks.
 Reads voice_plan.v001.json for text; actual durations from ffprobe.
 
 Output:
-  H:\pd-media\episodes\PD-2026-001-miranda\06_voice\master\vc_master_v001.mp3
-  H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\subs_vc_v001.srt
+  E:\pd-media\episodes\PD-2026-001-miranda\06_voice\master\vc_master_v001.mp3
+  E:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\subs_vc_v001.srt
 """
 from __future__ import annotations
 
@@ -25,11 +25,11 @@ VOICE_PLAN  = pathlib.Path(
     r"C:\Users\aab15\Documents\prime-documentary\episodes"
     r"\PD-2026-001-miranda\06_audio\voice_plan.v001.json"
 )
-DRAFT_DIR   = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft")
-MASTER_DIR  = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\master")
+DRAFT_DIR   = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft")
+MASTER_DIR  = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_voice\master")
 MASTER_MP3  = MASTER_DIR / "vc_master_v001.mp3"
 OUT_SRT     = pathlib.Path(
-    r"H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\subs_vc_v001.srt"
+    r"E:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\subs_vc_v001.srt"
 )
 FFMPEG      = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 FFPROBE     = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 202,
+  "episode_id": "PD-2026-055-burge",
+  "slug": "burge",
+  "loop": true,
+  "loop_join": "The final CTA beat p25 (short202_01.png, isCta:true, rewind:true) is the same clock-face plate that opens the short at p01 -- CUTS labels both 'the clock the whole case runs on' -- rewound under the FULL CASE card and held to the last frame. Frame 0 is that identical clock image, so the loop closes on the same picture at both ends.",
+  "second_watch_detail": "The recurring clock frame (p01, then returned to at p23-p25 as 'return to plate 01: the clock the whole case runs on') reads as a generic ticking-case metaphor on the first pass. Once L2-L4 establish that Illinois' three-year charging clock had already died years before the Goldston report became public, the same clock frame reads as the specific statutory deadline that had already expired before anyone official believed the victims.",
+  "funnel_question_left_for_longform": "If every provable crime had expired, what was the one thing left that a federal jury could still convict him of?",
+  "funnel_long_title": "A Doctor Reports Police Torture in 1982. Buried 33 Years.",
+  "funnel_long_video_id": "Iw-EPUD2nHg",
+  "description_line_1": "▶ FULL CASE: A Doctor Reports Police Torture in 1982. Buried 33 Years. | https://youtu.be/Iw-EPUD2nHg",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Doctor Reports Police Torture in",
+    "ctaLongThumbSrc": "shorts/short202/short202_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "If every provable crime had expired, what was the one thing left that a federal jury could still convict him of? The full case is here: https://youtu.be/Iw-EPUD2nHg",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments and isCta/rewind flags in remotion/src/data/short202.ts, the CTA block (ctaHeadline/ctaLongTitle/ctaLongThumbSrc) from that same file verbatim, the long-form id and title from the live video Iw-EPUD2nHg. Layer 4 -- the Studio related-video setting, which the API cannot set -- already has a placeholder row for short202 in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md (added 2026-09-01, section 'まだ公開していないショート') but has NOT been performed yet; that row must move up to the actionable table once short202 is actually uploaded and has its own video id."
+}

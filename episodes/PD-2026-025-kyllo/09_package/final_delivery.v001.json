@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-025-kyllo",
+  "revision": "v001",
+  "title": "They Scanned His Home From the Street",
+  "case": "Kyllo v. United States, 533 U.S. 27 (2001)",
+  "canonical_final": {
+    "path": "artifact://episodes/PD-2026-025-kyllo/08_edit/final.v007.mp4",
+    "render_source": "remotion/out/kyllo_final.v007.bgm.mp4",
+    "video_sha256": "sha256:6f853432b861a3c43884a144c35bea2796904d6db5069db35266bc620fb6a6da",
+    "duration_seconds": 620.3,
+    "duration_min": 10.34,
+    "resolution": "1920x1080",
+    "codec": "h264",
+    "note": "THE single publish candidate. Do not upload any other kyllo_final.* — earlier versions (v001..v006) are superseded and kept only as history."
+  },
+  "audio": {
+    "voice": "ElevenLabs master (nPczCjzI2devNBz1zQrb / eleven_multilingual_v2)",
+    "narration_master": "artifact://episodes/PD-2026-025-kyllo/06_voice/master/vc_master_v001.mp3",
+    "bgm": "continuous ducked bed (Suno commercial library), integrated -13.8 LUFS",
+    "silence_gt2s": 0
+  },
+  "captions": {
+    "path": "artifact://episodes/PD-2026-025-kyllo/08_edit/captions.final.v001.srt",
+    "captions_sha256": "sha256:ee46830fd3e32ca7881ad053bb6355a26737b93619dd4509713713f971d7c5e4",
+    "method": "faster-whisper forced alignment to narration; <=2 lines, <=50 chars, <=27 cps, breath-group breaks"
+  },
+  "thumbnail": {
+    "selected": "artifact://episodes/PD-2026-025-kyllo/09_package/thumbnail.selected.v001.png",
+    "thumbnail_sha256": "sha256:663a1eec445c2dc0803d6189b3b8ffcb0a9dbc56a586710815906b022f5adcc6",
+    "options": 5,
+    "size": "1280x720"
+  },
+  "build": {
+    "composition": "remotion/src/compositions/CaseFilm.tsx (KylloFilm wrapper), id CaseFilm-kyllo",
+    "assets": "29 Codex hero stills + 61 factory clips (remotion/public/kyllo), all 109 used, no reuse cluster",
+    "structure": "8s cold-open hook -> BrandOpening -> body -> BrandEndcard",
+    "motion_graphics": "20 kinetic-typography beats from script.annotated on_screen_text (dates, '5-4', the holding, quotes), timed 1:1 to narration chunks; 5 still treatments (card rare); footage-forward"
+  },
+  "acceptance": {
+    "gate": "scripts/check_final_acceptance.py 25",
+    "result": "PASS on all hard checks EXCEPT runtime_band",
+    "runtime_band": "FAIL by design: 10.34 min vs standard 11.5-12.5; owner-accepted 2026-07-04 (data: this channel's best-retained videos run 9-12 min; shorter beats the old band). Documented deviation, gate not weakened.",
+    "passes": ["render_resolution", "images_present (black 0.0s)", "motion_present (frozen 0.0s)", "bgm_present", "loudness -13.8", "voice_is_master (ElevenLabs)", "captions_final", "caption_format", "thumbnail_ready (5 + selected)", "image_resolution", "factory_used (61)"]
+  },
+  "risk": {
+    "class": "R2 (low). Kyllo is public court record. No real-person likeness in visuals; the indoor grow is only heat/light, never drugs; holding not overstated (warrant required, not thermal imaging banned).",
+    "review": "owner review recommended before publish; APR-0001 approved (script gate)."
+  },
+  "publish": {
+    "status": "NOT PUBLISHED. Private/scheduled upload is a separate owner-gated step.",
+    "external_side_effects": "none performed"
+  },
+  "created_at": "2026-07-04"
+}

@@ -1,0 +1,187 @@
+{
+  "_note": "EP50 is the channel's FIRST 60-minute long-form. UPDATED 2026-07-23 to the LOCKED script: EP50_centralpark_script.en.v001.md = 10,715 spoken words = a true 60:00 at the channel's calibrated pace (owner: 'いつもの12分と同じ速度で60分になるように'). The 12-min cap of 2,141 does NOT apply. narrationSeconds + durationInFrames here are PROVISIONAL at 178.3 wpm; the FINAL values come from the measured TTS master + forced-align (regenerate via scripts/build_production_spec.py against the VO master and treat THAT as source of truth). The full 60-min re-derivation also lives in EP50_centralpark_DESIGN_and_CODEX_PROMPTS.v001.md §0.6.",
+  "schema": "pd_production_spec.v1_longform",
+  "episode_id": "PD-2026-050-centralpark",
+  "ep": "EP50",
+  "slug": "centralpark",
+  "case": "The Central Park Jogger Case / The Exonerated Five (1989-2014)",
+  "format": "long_form_60min",
+  "script_file": "EP50_centralpark_script.en.v001.md (LOCKED — 10,715 words, fact-verified, 3x self-checked)",
+  "wpm_used": 178.3,
+  "fps": 30,
+  "runtime_plan": {
+    "hookSeconds": 8.0,
+    "OPENING_SEC": 3.5,
+    "narrationSeconds": 3643.324,
+    "ENDCARD_SEC": 9.0,
+    "total_seconds": 3663.824,
+    "total_minutes": 61.06,
+    "total_mmss": "61:04",
+    "durationInFrames": 109915,
+    "_arithmetic": "MEASURED from TTS (Brian) master = 3643.324s narration (60.72 min). total = 8.0+3.5+3643.324+9.0 = 3663.824 s. durationInFrames = round(8*30)+round(3.5*30)+ceil(3643.324*30)+round(9*30) = 240+105+109300+270 = 109,915 frames. This supersedes the provisional 108,795 (+1,120 frames / +37.3s). Source: 06_voice/master/vc_master_v001.mp3 + 06_audio/narration_index.v001.json.",
+    "source": "measured_tts"
+  },
+  "word_target": {
+    "target_words": 10715,
+    "achieved_words": 10835,
+    "acceptable_range": [
+      10500,
+      10900
+    ],
+    "_arithmetic": "words = narration_minutes * wpm = 60.10 * 178.3 = 10,716. The locked script is 10,715 spoken words = inside [10500,10900]. GATE: check_script_length.py in LONGFORM mode (cap ~10,900, NOT the 12-min 2,141 cap). Under 10,500 the runtime falls short of the true hour (see runtime-shortfall root cause — most past eps shipped SHORT)."
+  },
+  "shot_plan": {
+    "mean_shot_seconds_target": 3.2,
+    "mean_shot_seconds_derived": 3.11,
+    "max_shot_seconds": 7.0,
+    "total_cuts": 1160,
+    "_arithmetic": "total_cuts scaled to the true-60:00 target: 505(still)+485(factory)+170(motion) = 1,160 cuts. derived mean_shot = narrationSeconds / total_cuts = 3606 / 1160 = 3.109 s (target 3.2; 3.11 keeps density up over an hour). max_shot 7.0 s for breathing room in the prison/exoneration acts. ~5.1x EP49's 226 cuts, consistent with a documentary hour."
+  },
+  "assets": {
+    "total_cuts": 1160,
+    "still": {
+      "distinct": 430,
+      "cuts": 505,
+      "mean_uses": 1.18,
+      "cap": 2,
+      "_arithmetic": "430 distinct SDXL stills, each used ~1.18x -> ~505 cuts (cap 2). EP49 still-distinct(85) * ~5.1x."
+    },
+    "factory": {
+      "distinct": 485,
+      "cuts": 485,
+      "mean_uses": 1.0,
+      "cap": 1,
+      "_arithmetic": "485 distinct stock/factory clips, cap 1 (no reuse) -> 485 cuts. EP49 factory(93) * ~5.2x."
+    },
+    "motion": {
+      "distinct": 85,
+      "cuts": 170,
+      "mean_uses": 2.0,
+      "cap": 2,
+      "_arithmetic": "85 distinct i2v/motion clips, each used 2x -> 170 cuts (cap 2). EP49 motion(16) * ~5.3x. Premium-animation-mandate lane — scale it fully."
+    },
+    "distinct_total": 1000,
+    "first_use_share": 0.862,
+    "first_use_floor": 0.7,
+    "still_share_of_cuts": 0.4353,
+    "still_share_cap": 0.45,
+    "_arithmetic": "cuts: 505+485+170 = 1,160 (=total_cuts). distinct_total = 430+485+85 = 1,000. first_use_share = 1000/1160 = 0.862 (>= 0.70 floor, PASS). still_share_of_cuts = 505/1160 = 0.4353 (<= 0.45 cap, PASS with headroom)."
+  },
+  "motion_density": {
+    "beats_floor": 151,
+    "beats_planned": 165,
+    "beats_per_min_floor": 2.5,
+    "variety_floor": 6,
+    "variety_planned": 15,
+    "_arithmetic": "floor = ceil(narration_minutes * 2.5) = ceil(60.1 * 2.5) = 151 in-film graphic beats minimum; the design doc schedules 165 (density 2.745/min). AE cards composited afterward do NOT count (see MEMORY: EP39/EP40 failed by planning around AE). variety_floor 6 (an hour needs KIND variety); design uses 15 kinds. dochighlight BANNED (reads as a bug). density over narration only."
+  },
+  "ae_hero_cards": {
+    "target_count": 36,
+    "range": [
+      34,
+      38
+    ],
+    "tier_a_standard": 24,
+    "tier_b_bespoke": 12,
+    "_arithmetic": "OWNER DIRECTIVE 'AEをガッツリ効かせて、時間はかかってもいい' — go HEAVY. Tier A = 24 standard hero cards on the 6 IMPLEMENTED layouts only (ACT_TITLE_CARD/CENTER_STACK/MONEY_STACK/QUOTE_CARD/VOTE_SPLIT/SPLIT_COMPARE; DATE_STAMP/SEAM_TRANSITION BANNED = crash). Tier B = 12 bespoke AE set-pieces on 8 NEW layouts IMPLEMENTED FOR REAL in build_centralpark_hero_cards.py (DNA_LADDER, STAT_RESOLVE, CARD_STACK, REC_LIGHT, SCALE_TIP, HERO_TIMELINE, NAME_WALL, SIGNATURE_ERASE), each --dryrun-proven + added to check_AE_layouts allowlist BEFORE use. These are SEPARATE from and additional to the 165 in-film beats. AE ACCENT RGB tuple [0.184,0.624,0.769]; dawn-amber [0.788,0.541,0.235] only at exoneration/close.",
+    "placement": "7 act-title cards + verdict SPLIT_COMPARE + DNA_LADDER (Act5 climax) + SIGNATURE_ERASE (vacatur) + CARD_STACK (Act2) + REC_LIGHT (off->on) + SCALE_TIP + HERO_TIMELINE (recurring spine) + NAME_WALL (five names->Exonerated Five) + STAT_RESOLVE (one-in-billions) + DEC 19 2002 VACATED + ~$41M 2014 + RECORD THE WHOLE INTERROGATION. NO invented quotes; NO VOTE_SPLIT (no verified jury split); NO victim depiction; NO Trump-ad reproduction; set NumberTicker group:false on year values."
+  },
+  "lane_accent": {
+    "name": "cold forensic steel-cyan",
+    "hex": "#2F9FC4",
+    "rgb_255": [
+      47,
+      159,
+      196
+    ],
+    "rgb_normalized": [
+      0.184,
+      0.624,
+      0.769
+    ],
+    "ink_background": "#0A0A0C",
+    "warm_accent_exoneration_only": {
+      "name": "dawn amber",
+      "hex": "#C98A3C",
+      "rgb_normalized": [
+        0.788,
+        0.541,
+        0.235
+      ]
+    },
+    "distinct_from_EP41_49": "gold #E5B53A / blue #3B7DD8 / amber #E0913C / teal #2FA6A0 / crimson #B23A48 / green #3F8F5F / violet #7A5CD0 / patrol-steel #5B8DB8 / plum #9C6BAA — none is this cold cyan (#2F9FC4 hue ~197 deg).",
+    "rationale": "Cold forensic cyan = the DNA truth cutting through a long dark case: lab light, cold evidence, the single match that undid five wrongful convictions. Used SPARINGLY in Acts 1-4, FLOODS the frame at the Act 5 DNA hinge. Dawn-amber ONLY at exoneration/close. CODEX_B sets OP props, AE accent, thumbnail accent to #2F9FC4; AE ACCENT tuple [0.184,0.624,0.769]."
+  },
+  "acts_plan": {
+    "_note": "Per-act minutes from EP50_centralpark_STRUCTURE.v001.md, scaled to the true-60:00 target. Words are from the LOCKED script (approximate per-act; total = 10,715).",
+    "acts": [
+      {
+        "heading": "[HOOK]",
+        "kind": "cold_open",
+        "target_seconds": 8.0,
+        "note": "8s pre-narration hook; first spoken lines"
+      },
+      {
+        "heading": "[OPENING]",
+        "kind": "title",
+        "target_seconds": 3.5,
+        "note": "title card, non-narrated"
+      },
+      {
+        "heading": "[ACT_1] The Night",
+        "target_minutes": 6.9,
+        "approx_words": 1240
+      },
+      {
+        "heading": "[ACT_2] The Interrogations",
+        "target_minutes": 12.6,
+        "approx_words": 2250,
+        "note": "LONGEST — the moral engine (false-confession science + legal techniques)"
+      },
+      {
+        "heading": "[ACT_3] The Trials",
+        "target_minutes": 9.8,
+        "approx_words": 1750
+      },
+      {
+        "heading": "[ACT_4] The Lost Years",
+        "target_minutes": 10.6,
+        "approx_words": 1900,
+        "note": "the five as individuals; Korey Wise spine"
+      },
+      {
+        "heading": "[ACT_5] The Confession & the DNA",
+        "target_minutes": 9.7,
+        "approx_words": 1730
+      },
+      {
+        "heading": "[ACT_6] Exoneration & Reckoning",
+        "target_minutes": 5.3,
+        "approx_words": 1900,
+        "note": "vacatur, settlement, reform, the victim, the men's advocacy"
+      },
+      {
+        "heading": "[ACT_7] What a Confession Is Worth",
+        "kind": "second_person_turn",
+        "target_minutes": 5.2,
+        "approx_words": 945
+      }
+    ],
+    "_arithmetic": "narrated act words sum ≈ 10,715 (the locked script). HOOK 8.0s + OPENING 3.5s are pre-narration composition segments. Per-act minutes are provisional pending the measured TTS per-act timing."
+  },
+  "endcard_seconds": 9.0,
+  "hook_seconds": 8.0,
+  "opening_seconds": 3.5,
+  "gates_to_pass_preflight": [
+    "check_script_length.py LONGFORM: words in [10500,10900]",
+    "check_motion_density.py: >=151 in-film beats, >=2.5/min, variety>=6, dochighlight=0",
+    "check_year_grouping.py: no numberticker year figure without group:false (prevents the '2,001'/'1,985' comma bug — EP46/EP47)",
+    "check_AE_layouts: every AE layout in {6 implemented} OR {newly-implemented+dryrun-passed Tier-B}; 0 phantom (no DATE_STAMP/SEAM_TRANSITION reference to an unimplemented layout)",
+    "still_share_of_cuts <= 0.45 (computed 0.4353)",
+    "first_use_share >= 0.70 (computed 0.862)",
+    "caption_integrity + visual_asset_qc (channel standing gates)",
+    "check_centralpark_facts.py (cloned from check_strieff_facts.py): R-INNOCENCE (never imply the five were involved; Armstrong only as rejected), R-VICTIM (dignity, no depiction/naming beyond record), R-REYES (established facts only), R-NUM (hedged figures), R-FACE (no faces on the five/Meili/Reyes), R-DOCHL (0), R-QUOTE (verified verbatim + attribution only).",
+    "topic novelty gate: confirmed NOT a dupe of EP1-49 — Central Park jogger / Exonerated Five is new to the slate."
+  ],
+  "r2_and_adsafe": "R2: silhouettes/symbols/hands only; no faces/portraits/likenesses of the five, Meili, or Reyes. Assault is CLINICAL and brief. Ad-safe framing = false-confession / wrongful-conviction justice documentary. No sensationalism, no graphic detail, no re-enactment of the assault."
+}

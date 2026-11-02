@@ -1,0 +1,738 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "ramirez",
+  "episode_id": "PD-2026-067-ramirez",
+  "assets": "episodes/PD-2026-067-ramirez/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-067-ramirez/06_audio/narration_index.v001.json",
+  "narration": "ramirez/narration.mp3",
+  "captions": "episodes/PD-2026-067-ramirez/08_edit/captions.final.v002.srt",
+  "out": "remotion/src/data/ramirez_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 19.68,
+  "hookLine": "The letter that follows will not say how to argue with it.",
+  "captionLeadSeconds": 0.6,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE SALESMAN SAID",
+          "HIS NAME WAS ON A TERRORIST LIST."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "A TERRORIST LIST"
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE LETTER THAT FOLLOWED",
+          "DID NOT SAY HOW TO ARGUE WITH IT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "DID NOT SAY HOW"
+        ]
+      }
+    ],
+    "OP": [
+      {
+        "kind": "quote",
+        "quote": "Ramirez's wife had to purchase the car in her own name.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — SR-04"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "IT ENDS ON ONE QUESTION:",
+          "WHO RECEIVED THE PIECE OF PAPER."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "WHO RECEIVED"
+        ]
+      }
+    ],
+    "ACT_1": [
+      {
+        "kind": "quote",
+        "quote": "On February 27, 2011, Ramirez visited a Nissan dealership in Dublin, California, seeking to buy a Nissan Maxima. Ramirez was accompanied by his wife and his father-in-law.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the Court's statement of facts (SR-01)"
+      },
+      {
+        "kind": "quote",
+        "quote": "***OFAC ADVISOR ALERT - INPUT NAME MATCHES NAME ON THE OFAC DATABASE.",
+        "attribution": "The alert carried on Ramirez's credit report, quoted at TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — SR-02"
+      },
+      {
+        "kind": "quote",
+        "quote": "A Nissan salesman told Ramirez that Nissan would not sell the car to him because his name was on a 'terrorist list.'",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021), quoting the trial record at App. 333 — SR-03"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HIS WIFE BOUGHT THE CAR",
+          "IN HER OWN NAME."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "IN HER OWN NAME"
+        ]
+      },
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "Feb 27",
+            "text": "The dealership. The car is not sold to him."
+          },
+          {
+            "year": "Feb 28",
+            "text": "He requests his credit file. It arrives the same day — with no OFAC alert in it."
+          },
+          {
+            "year": "Mar 1",
+            "text": "A second mailing arrives. The OFAC Letter."
+          }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "the name that appears on your TransUnion credit file 'SERGIO L RAMIREZ' is considered a potential match to information listed on the United States Department of Treasury's Office of Foreign Asset Control ('OFAC') Database.",
+        "attribution": "The OFAC Letter, quoted in Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-06"
+      },
+      {
+        "kind": "quote",
+        "quote": "Financial institutions are required to check customers' names against the OFAC Database, and if a potential name match is found, to verify whether their potential customer is the person on the OFAC Database. For this reason, some financial institutions may ask for your date of birth, or they may ask to a see a copy of a government-issued form of identification",
+        "attribution": "The OFAC Letter's own instruction, quoted in Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-07"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.5,
+        "cy": 0.46,
+        "r": 0.19,
+        "label": "Date of birth — the identifier the letter told institutions to ask for"
+      },
+      {
+        "kind": "quote",
+        "quote": "[OFAC records for the two prohibited SDNs who purportedly matched Ramirez, which include first, middle, and last names, dates of birth, and passport information]",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — the court's bracketed description of what the letter enclosed, not the letter's own words (SR-08)"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE ENCLOSURE CONTAINED",
+          "DATES OF BIRTH."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "DATES OF BIRTH"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "Ramirez testified that he was confused by the two mailings. The lack of any OFAC information in the credit-report mailing suggested the alert had been removed, but the OFAC Letter mailing suggested otherwise.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-09"
+      },
+      {
+        "kind": "quote",
+        "quote": "Ramirez also did not know how to remedy the issue because the OFAC Letter did not include instructions for initiating a dispute. Concerned about possible consequences of the OFAC match, Ramirez canceled an international vacation he had planned with his family.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-10"
+      },
+      {
+        "kind": "quote",
+        "quote": "Concerned about the mailings, Ramirez consulted a lawyer and ultimately canceled a planned trip to Mexico. TransUnion eventually removed the OFAC alert from Ramirez's file.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — SR-11"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "Two courts, one cancelled trip",
+        "secondary": "The Supreme Court writes 'a planned trip to Mexico'; the Ninth Circuit writes 'an international vacation … with his family'. Both are the record. Neither is merged into a third version. (SR-10, SR-11)"
+      },
+      {
+        "kind": "quote",
+        "quote": "Ramirez's credit report with the false OFAC alert was sent to a third party; Ramirez's alert stated that he was a match instead of a potential match; Ramirez was denied credit because of the alert; he canceled a vacation because of the alert; and he spent significant time and energy trying to remove the alert, including hiring a lawyer.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-12"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE ALERT WAS EVENTUALLY",
+          "REMOVED FROM HIS FILE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "REMOVED"
+        ]
+      }
+    ],
+    "ACT_2": [
+      {
+        "kind": "quote",
+        "quote": "As part of its enforcement efforts, OFAC publishes a list of individuals and companies owned or controlled by, or acting for or on behalf of, targeted countries. It also lists individuals, groups, and entities, such as terrorists and narcotics traffickers designated under programs that are not country-specific.",
+        "attribution": "U.S. Treasury, Office of Foreign Assets Control — FAQ topic 1631 (LS-01)"
+      },
+      {
+        "kind": "quote",
+        "quote": "U.S. persons are prohibited from engaging in any transactions with SDNs and must block any property in their possession or under their control in which an SDN has an interest.",
+        "attribution": "U.S. Treasury, OFAC — FAQ topic 1631 (LS-03)"
+      },
+      {
+        "kind": "quote",
+        "quote": "OFAC maintains a list of 'specially designated nationals' who threaten America's national security. Individuals on the OFAC list are terrorists, drug traffickers, or other serious criminals. It is generally unlawful to transact business with any person on the list.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — LS-04"
+      },
+      {
+        "kind": "numberticker",
+        "value": 19199,
+        "group": true,
+        "label": "Records in Treasury's published sdn.csv dated 7 August 2026 — OUR count of Treasury's own file. Treasury publishes no current list size.",
+        "topLabel": "not a Treasury statement"
+      },
+      {
+        "kind": "quote",
+        "quote": "Step 3. How much of the listed entry's name is matching against the name in your transaction? Is just one of two or more names matching (i.e., just the last name)? If yes, you do not have a valid match.",
+        "attribution": "U.S. Treasury, OFAC — FAQ 5, the screener's own procedure (LS-06)"
+      },
+      {
+        "kind": "quote",
+        "quote": "Step 4. Compare the complete sanctions list entry with all of the information you have on the matching name in your transaction. … Are you missing a lot of this information for the name in your transaction? If yes, go back and get more information and then compare your complete information against the entry.",
+        "attribution": "U.S. Treasury, OFAC — FAQ 5 (LS-07)"
+      },
+      {
+        "kind": "quote",
+        "quote": "An entry often will have, for example, a full name, address, nationality, passport, tax ID or cedula number, place of birth, date of birth, former names and aliases.",
+        "attribution": "U.S. Treasury, OFAC — what OFAC publishes for each entry (LS-08)"
+      },
+      {
+        "kind": "quote",
+        "quote": "A 'weak AKA' is a term for a relatively broad or generic alias that may generate a large volume of false hits when such names are run through a computer-based screening system.",
+        "attribution": "U.S. Treasury, OFAC — FAQ topic 1646 (LS-09)"
+      },
+      {
+        "kind": "quote",
+        "quote": "It is merely a reminder to the person checking your credit that he or she should verify whether you are the individual on one of OFAC's sanctions lists by comparing your information to the OFAC information. If you are not the individual on the sanctions list, the person checking your credit should disregard the OFAC alert.",
+        "attribution": "U.S. Treasury, OFAC — guidance for the consumer whose credit report carries an alert (LS-10)"
+      },
+      {
+        "kind": "quote",
+        "quote": "Beginning in 2002, TransUnion introduced an add-on product called OFAC Name Screen Alert.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — LS-13"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Identifiers OFAC publishes for each entry — name, address, nationality, passport, tax ID, place of birth, date of birth, former names, aliases",
+            "value": 9
+          },
+          {
+            "label": "Identifiers TransUnion compared — first name, last name",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "Accuity's software conducted a 'name-only' search, running a consumer's first and last name against the names on the OFAC list. A search would result in a match if the consumer's first and last name were either identical or similar to a name on the OFAC list (e.g., 'Cortez' would match with 'Cortes').",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — LS-16"
+      },
+      {
+        "kind": "quote",
+        "quote": "Unsurprisingly, TransUnion's Name Screen product generated many false positives. Thousands of law-abiding Americans happen to share a first and last name with one of the terrorists, drug traffickers, or serious criminals on OFAC's list of specially designated nationals.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — LS-15"
+      },
+      {
+        "kind": "quote",
+        "quote": "In collecting other types of data for use on consumer reports—such as tax liens or bankruptcy judgments—TransUnion used at least one additional identifier other than the consumer's name (e.g., address, date of birth, or social security number). OFAC information was the only consumer-report data that TransUnion collected using name alone.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020), footnote 2 — LS-17"
+      },
+      {
+        "kind": "quote",
+        "quote": "TransUnion presented no data showing that any of its name matches through OFAC Advisor were correct. In other words, TransUnion could not confirm that a single OFAC alert sold to its customers was accurate.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020), footnote 4 — LS-19"
+      },
+      {
+        "kind": "quote",
+        "quote": "When TransUnion first began offering the OFAC Advisor product, it determined that the OFAC alerts being placed on consumer credit reports were exempt from the FCRA",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — the company's own legal position, as the court records it (LS-20)"
+      }
+    ],
+    "ACT_3": [
+      {
+        "kind": "quote",
+        "quote": "In 1970, Congress passed and President Nixon signed the Fair Credit Reporting Act.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — MN-09"
+      },
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "1970",
+            "text": "The Fair Credit Reporting Act — 'reasonable procedures to assure maximum possible accuracy'"
+          },
+          {
+            "year": "2002",
+            "text": "TransUnion introduces OFAC Name Screen Alert"
+          },
+          {
+            "year": "2010",
+            "text": "The Third Circuit reprimands TransUnion"
+          },
+          {
+            "year": "2011",
+            "text": "The OFAC Letters — 1 January to 26 July"
+          }
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "Cortez v. Trans Union, LLC, 617 F.3d 688 (3d Cir. 2010)",
+        "secondary": "Recorded here only as Justice Thomas summarises it. The opinion itself was not retrieved, so nothing beyond his summary is said about it. (TH-04, open question ○-03)"
+      },
+      {
+        "kind": "quote",
+        "quote": "The report flagged her—Sandra Jean Cortez, born in May 1944—as a match for a person on the OFAC list: Sandra Cortes Quintero, born in June 1971.",
+        "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — TH-04"
+      },
+      {
+        "kind": "quote",
+        "quote": "Most notably, the Third Circuit specifically reprimanded TransUnion for failing to use an additional identifier such as date of birth to verify the accuracy of OFAC matches.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — N9-02"
+      },
+      {
+        "kind": "quote",
+        "quote": "Plaintiffs presented evidence that—despite being told in 2010 by another circuit court that OFAC alerts were covered by the FCRA and subject to § 1681e(b)'s reasonable procedures requirement—TransUnion continued to utilize name-only searches to produce OFAC 'matches.'",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — N9-01"
+      },
+      {
+        "kind": "quote",
+        "quote": "all natural persons in the United States and its Territories to whom TransUnion sent a letter similar in form to the March 1, 2011 [OFAC Letter] TransUnion sent to [Ramirez] . . . from January 1, 2011-July 26, 2011.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — the class definition (MN-01)"
+      },
+      {
+        "kind": "quote",
+        "quote": "TransUnion sent the same OFAC Letter to 8,184 other consumers who also requested copies of their credit reports between January 2011 and July 2011.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — SR-13"
+      },
+      {
+        "kind": "quote",
+        "quote": "In July 2011, TransUnion finally stopped sending OFAC Letters and began including OFAC alerts directly on the credit reports it sent to consumers.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — LS-21"
+      },
+      {
+        "kind": "casetimeline_c",
+        "events": [
+          {
+            "year": "Feb 2012",
+            "text": "Ramirez sues"
+          },
+          {
+            "year": "2014",
+            "text": "The class is certified — 301 F.R.D. 408"
+          },
+          {
+            "year": "Oct 2016",
+            "text": "The District Court rules all 8,185 have standing"
+          }
+        ]
+      },
+      {
+        "kind": "numberticker",
+        "value": 8185,
+        "group": true,
+        "label": "Class members, including Ramirez — stipulated by both parties before trial",
+        "topLabel": "stipulated"
+      },
+      {
+        "kind": "numberticker",
+        "value": 1853,
+        "group": true,
+        "label": "Of them, the members whose credit reports were disseminated to third parties between 1 January and 26 July 2011 — the same stipulation",
+        "topLabel": "stipulated"
+      },
+      {
+        "kind": "quote",
+        "quote": "Ramirez and the class pursued only a willfulness theory for each of their three claims, presumably because statutory and punitive damages are available for willful, but not negligent, FCRA violations.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — MN-10"
+      },
+      {
+        "kind": "quote",
+        "quote": "At trial, Ramirez testified about his experience at the Nissan dealership. But Ramirez did not present evidence about the experiences of other members of the class.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — SR-15"
+      },
+      {
+        "kind": "quote",
+        "quote": "After six days of trial, the jury returned a verdict for the plaintiffs. The jury awarded each class member $984.22 in statutory damages and $6,353.08 in punitive damages for a total award of more than $60 million.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — MN-04"
+      },
+      {
+        "kind": "quote",
+        "quote": "We reduce the punitive-damages award from $6,353.08 per class member to $3,936.88 per class member, but otherwise affirm the verdict and judgment.",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — the Ninth Circuit, before the case reached the Supreme Court (MN-06)"
+      },
+      {
+        "kind": "quote",
+        "quote": "Opinion by Judge Murguia; Partial Concurrence and Partial Dissent by",
+        "attribution": "Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) — Judge McKeown. The panel was not unanimous. (ID-07)"
+      }
+    ],
+    "ACT_4": [
+      {
+        "kind": "quote",
+        "quote": "To have Article III standing to sue in federal court, plaintiffs must demonstrate, among other things, that they suffered a concrete harm. No concrete harm, no standing.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the opening lines (HD-01)"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "25 June 2021 — TransUnion LLC v. Ramirez, No. 20–297",
+        "secondary": "JUSTICE KAVANAUGH delivered the opinion of the Court. On writ of certiorari to the United States Court of Appeals for the Ninth Circuit. (ID-01, ID-02)"
+      },
+      {
+        "kind": "votetally",
+        "majority": 5,
+        "dissent": 4,
+        "label": "Kavanaugh, Roberts, Alito, Gorsuch, Barrett — Thomas, Breyer, Sotomayor, Kagan"
+      },
+      {
+        "kind": "quote",
+        "quote": "Only plaintiffs concretely harmed by a defendant's statutory violation have Article III standing to seek damages against that private defendant in federal court.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the holding (HD-02)"
+      },
+      {
+        "kind": "quote",
+        "quote": "An injury in law is not an injury in fact.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-04"
+      },
+      {
+        "kind": "quote",
+        "quote": "The standing inquiry in this case thus distinguishes between (i) credit files that consumer reporting agencies maintain internally and (ii) the consumer credit reports that consumer reporting agencies disseminate to third-party creditors.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-06"
+      },
+      {
+        "kind": "quote",
+        "quote": "The mere presence of an inaccuracy in an internal credit file, if it is not disclosed to a third party, causes no concrete harm.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-07"
+      },
+      {
+        "kind": "quote",
+        "quote": "the plaintiffs' harm is roughly the same, legally speaking, as if someone wrote a defamatory letter and then stored it in her desk drawer. A letter that is not sent does not harm anyone, no matter how insulting the letter is. So too here.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the image the majority chose (HD-08)"
+      },
+      {
+        "kind": "quote",
+        "quote": "the risk of dissemination to third parties— was too speculative to support Article III standing",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-09"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "1,853 — the report went to a third party: standing",
+            "value": 1853
+          },
+          {
+            "label": "6,332 — the alert stayed in the internal file: no standing",
+            "value": 6332
+          }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "only 1,853 class members have standing for the reasonable-procedures claim and (ii) only Ramirez himself has standing for the two formatting claims relating to the mailings",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-03"
+      },
+      {
+        "kind": "quote",
+        "quote": "We reverse the judgment of the U. S. Court of Appeals for the Ninth Circuit and remand the case for further proceedings consistent with this opinion.",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — HD-12"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "REVERSED AND REMANDED.",
+          "NOT DISMISSED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOT DISMISSED"
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "the plaintiffs did not present any evidence that the 6,332 class members even knew that there were OFAC alerts in their internal TransUnion credit files. If those plaintiffs prevailed in this case, many of them would first learn that they were 'injured' when they received a check compensating them for their supposed 'injury.'",
+        "attribution": "TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the majority's sharpest point (HD-10)"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "faultsplit"
+      }
+    ],
+    "ACT_5": [
+      {
+        "kind": "quote",
+        "quote": "TransUnion generated credit reports that erroneously flagged many law-abiding people as potential terrorists and drug traffickers.",
+        "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — TH-01"
+      },
+      {
+        "kind": "quote",
+        "quote": "Yet despite Congress' judgment that such misdeeds deserve redress, the majority decides that TransUnion's actions are so insignificant that the Constitution prohibits consumers from vindicating their rights in federal court. The Constitution does no such thing.",
+        "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — TH-02"
+      },
+      {
+        "kind": "quote",
+        "quote": "TransUnion did not compare birth dates, middle initials, Social Security numbers, or any other available identifier routinely used to collect and verify credit-report data.",
+        "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — LS-18, TH-03"
+      },
+      {
+        "kind": "quote",
+        "quote": "TransUnion could not confirm that a single OFAC alert sold to its customers was accurate.",
+        "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021), quoting Ramirez v. TransUnion LLC, 951 F.3d 1008 (9th Cir. 2020) footnote 4 — TH-06, LS-19"
+      },
+      {
+        "kind": "quote",
+        "quote": "one need only tap into common sense to know that receiving a letter identifying you as a potential drug trafficker or terrorist is harmful. All the more so when the information comes in the context of a credit report, the entire purpose of which is to demonstrate that a person can be trusted.",
+        "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — TH-05"
+      },
+      {
+        "kind": "quote",
+        "quote": "pyrrhic victory for TransUnion",
+        "attribution": "Justice Thomas, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021), on state court as the remaining forum — TH-08"
+      },
+      {
+        "kind": "quote",
+        "quote": "The Court here transforms standing law from a doctrine of judicial modesty into a tool of judicial aggrandizement. It holds, for the first time, that a specific class of plaintiffs whom Congress allowed to bring a lawsuit cannot do so under Article III.",
+        "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — KG-01"
+      },
+      {
+        "kind": "quote",
+        "quote": "Congress is better suited than courts to determine when something causes a harm or risk of harm in the real world.",
+        "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — KG-05"
+      },
+      {
+        "kind": "quote",
+        "quote": "But why is it so speculative that a company in the business of selling credit reports to third parties will in fact sell a credit report to a third party?",
+        "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — KG-04"
+      },
+      {
+        "kind": "quote",
+        "quote": "nearly 25% of the class",
+        "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021), on the reports already sent to potential creditors — KG-06"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "WHAT THE COURT DID NOT DECIDE:",
+          "WHETHER TRANSUNION BROKE THE LAW."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "DID NOT DECIDE"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "Not decided: certification, and the state courts",
+        "secondary": "The Court held only that FEDERAL courts lack jurisdiction over the 6,332. Certification was left to the Ninth Circuit on remand, and Justice Thomas flags state court as the remaining forum. (ND-03, ND-04, TH-08)"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "Not decided: injunctive relief",
+        "secondary": "The risk-of-future-harm discussion expressly reserves the injunctive case — a material risk can satisfy concreteness there. This was a suit for damages. (ND-05)"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "Not decided: what anyone finally received",
+        "secondary": "No document retrieved states a final recovery. The Supreme Court set no dollar figure of its own. (ND-06, MN-11)"
+      }
+    ],
+    "ENDING": [
+      {
+        "kind": "kinetic",
+        "lines": [
+          "FIRST NAME.",
+          "LAST NAME.",
+          "NOTHING ELSE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOTHING ELSE"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "The record this film stands on ends on 25 June 2021",
+        "secondary": "What happened on remand, whether the 1,853 ever recovered anything, whether the parties settled — no document retrieved says. (open question ○-04)"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "8,185 in the class",
+            "value": 8185
+          },
+          {
+            "label": "1,853 whose reports went to a third party",
+            "value": 1853
+          },
+          {
+            "label": "6,332 whose did not",
+            "value": 6332
+          }
+        ]
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "closingdoor"
+      },
+      {
+        "kind": "quote",
+        "quote": "But why is it so speculative that a company in the business of selling credit reports to third parties will in fact sell a credit report to a third party?",
+        "attribution": "Justice Kagan, dissenting — TransUnion LLC v. Ramirez, 594 U.S. 413 (2021) — the last word of the film (KG-04)"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses"
+      }
+    ]
+  },
+  "_figure_sources": {
+    "_readme": [
+      "Provenance for figures_by_section. Every card above is an entry in EP67_ramirez_FACTS_LEDGER.v001.md; every `quote` payload is a row graded VERBATIM in that ledger and re-verifiable with episodes/PD-2026-067-ramirez/01_research/sources/verify_quotes.v001.py (74/74 green). The row id is printed at the end of each attribution, so any card can be checked against the ledger without a lookup table. Nothing in this block is read by any tool.",
+      "PLACEMENT. build_case_film_generic.build_figures() does not read a per-beat time: it spaces a section's payloads EVENLY inside the section window (dur 6.0s, 3.0s in HOOK/OP), reserving 3.0s at the head and 6.5s at the tail. ORDER and COUNT are the only placement controls, and both follow FILM_BIBLE v001 section 6, whose beats are already in narration order. The bible's clock times (A2-11 at 9:55 and so on) were written against a 1,760 s design; the delivered master is shorter, so those times are not reproduced here -- the even spacing inside each measured section window is.",
+      "BEAT COUNTS. episode_spec figure_beats_per_act is [13, 17] and every ACT is inside it: ACT_1 16, ACT_2 16, ACT_3 17, ACT_4 15, ACT_5 14 -- exactly the counts FILM_BIBLE section 6 declares for each act. HOOK 3, OP 2 and ENDING 6 are not acts and the floor does not apply to them.",
+      "SACRIFICIAL SLOTS. build_figures overwrites figures[0] and figures[-1] with the AI-disclosure lowerthird. HOOK[0] and ENDING[-1] are already that exact card, so no content beat is destroyed (EP65 lost its closing line this way).",
+      "ATTRIBUTION IS A HARD RULE HERE, not a courtesy. Ledger quarantine entry -06 forbids TH-01, TH-07 and KG-02 in the film's own voice. Every ACT_5 quote card names the dissenting justice in its attribution line, and TH-07 ('ill-gotten gains') is not used at all. No card states a holding without saying who held it.",
+      "THE THREE MONEY FIGURES NEVER TOUCH (quarantine -03, -04). ACT_3 carries the jury's $984.22 and $6,353.08 on one card (MN-04) and the Ninth Circuit's reduction to $3,936.88 on the next (MN-06), in that order and with the Ninth Circuit named. The Supreme Court set no dollar figure at all, and no card anywhere states one for it; the arithmetic ~$40.3M (MN-07) appears nowhere. ACT_5's last card says out loud that what anyone finally received is unstated.",
+      "IT WAS 5-4 (quarantine -01). ACT_4[2] is a votetally with all nine justices named, placed there as the MECHANISM against the single easiest error in this episode. It is the only vote card in the film.",
+      "THE COURT-STAFF SUMMARY IS NOT QUOTED (quarantine -14). 'TransUnion, aware that its practice was unlawful' is the most quotable line in the Ninth Circuit file and it is not on any card. ACT_3 carries N9-02 and N9-01 instead, which say the same thing in the court's own words.",
+      "NUMBERS. The only numerals asserted are 19,199 (LS-05, labelled as OUR count of Treasury's published file and never as a Treasury statement, per quarantine -11), 8,185 / 1,853 / 6,332 (MN-02, MN-03 -- all three stated by the opinion itself), the money figures above, the identifier counts 9 and 2 (LS-08 against LS-14), the dates, and 'nearly 25%' quoted as Kagan's phrase rather than converted to 22.6% (KG-06). No false-positive rate appears anywhere: none exists in any retrieved document (open question -07).",
+      "NO acttitle CARDS, following EP66. Every slot in this film is spoken for by a ledger row, and the bible's beat map has no title beats in it."
+    ],
+    "beats": {
+      "HOOK": [
+        "AI-assisted visualization",
+        "THE SALESMAN SAID / HIS NAME WAS ON A TERRORIST LIST.",
+        "THE LETTER THAT FOLLOWED / DID NOT SAY HOW TO ARGUE WITH IT."
+      ],
+      "OP": [
+        "Ramirez's wife had to purchase the car in her own name.",
+        "IT ENDS ON ONE QUESTION: / WHO RECEIVED THE PIECE OF PAPER."
+      ],
+      "ACT_1": [
+        "On February 27, 2011, Ramirez visited a Nissan dealership in Dublin, California, seeking to buy a Nissan Maxima. Ramirez was accompanied by his wife and his father-in-law.",
+        "***OFAC ADVISOR ALERT - INPUT NAME MATCHES NAME ON THE OFAC DATABASE.",
+        "A Nissan salesman told Ramirez that Nissan would not sell the car to him because his name was on a 'terrorist list.'",
+        "HIS WIFE BOUGHT THE CAR / IN HER OWN NAME.",
+        "The dealership. The car is not sold to him. | He requests his credit file. It arrives the same day — with no OFAC alert in it. | A second mailing arrives. The OFAC Letter.",
+        "the name that appears on your TransUnion credit file 'SERGIO L RAMIREZ' is considered a potential match to information listed on the United States Department of Treasury's Office of Foreign Asset Control ('OFAC') Database.",
+        "Financial institutions are required to check customers' names against the OFAC Database, and if a potential name match is found, to verify whether their potential customer is the person on the OFAC Database. For this reason, some financial institutions may ask for your date of birth, or they may ask to a see a copy of a government-issued form of identification",
+        "Date of birth — the identifier the letter told institutions to ask for",
+        "[OFAC records for the two prohibited SDNs who purportedly matched Ramirez, which include first, middle, and last names, dates of birth, and passport information]",
+        "THE ENCLOSURE CONTAINED / DATES OF BIRTH.",
+        "Ramirez testified that he was confused by the two mailings. The lack of any OFAC information in the credit-report mailing suggested the alert had been removed, but the OFAC Letter mailing suggested otherwise.",
+        "Ramirez also did not know how to remedy the issue because the OFAC Letter did not include instructions for initiating a dispute. Concerned about possible consequences of the OFAC match, Ramirez canceled an international vacation he had planned with his family.",
+        "Concerned about the mailings, Ramirez consulted a lawyer and ultimately canceled a planned trip to Mexico. TransUnion eventually removed the OFAC alert from Ramirez's file.",
+        "Two courts, one cancelled trip",
+        "Ramirez's credit report with the false OFAC alert was sent to a third party; Ramirez's alert stated that he was a match instead of a potential match; Ramirez was denied credit because of the alert; he canceled a vacation because of the alert; and he spent significant time and energy trying to remove the alert, including hiring a lawyer.",
+        "THE ALERT WAS EVENTUALLY / REMOVED FROM HIS FILE."
+      ],
+      "ACT_2": [
+        "As part of its enforcement efforts, OFAC publishes a list of individuals and companies owned or controlled by, or acting for or on behalf of, targeted countries. It also lists individuals, groups, and entities, such as terrorists and narcotics traffickers designated under programs that are not country-specific.",
+        "U.S. persons are prohibited from engaging in any transactions with SDNs and must block any property in their possession or under their control in which an SDN has an interest.",
+        "OFAC maintains a list of 'specially designated nationals' who threaten America's national security. Individuals on the OFAC list are terrorists, drug traffickers, or other serious criminals. It is generally unlawful to transact business with any person on the list.",
+        "Records in Treasury's published sdn.csv dated 7 August 2026 — OUR count of Treasury's own file. Treasury publishes no current list size.",
+        "Step 3. How much of the listed entry's name is matching against the name in your transaction? Is just one of two or more names matching (i.e., just the last name)? If yes, you do not have a valid match.",
+        "Step 4. Compare the complete sanctions list entry with all of the information you have on the matching name in your transaction. … Are you missing a lot of this information for the name in your transaction? If yes, go back and get more information and then compare your complete information against the entry.",
+        "An entry often will have, for example, a full name, address, nationality, passport, tax ID or cedula number, place of birth, date of birth, former names and aliases.",
+        "A 'weak AKA' is a term for a relatively broad or generic alias that may generate a large volume of false hits when such names are run through a computer-based screening system.",
+        "It is merely a reminder to the person checking your credit that he or she should verify whether you are the individual on one of OFAC's sanctions lists by comparing your information to the OFAC information. If you are not the individual on the sanctions list, the person checking your credit should disregard the OFAC alert.",
+        "Beginning in 2002, TransUnion introduced an add-on product called OFAC Name Screen Alert.",
+        "Identifiers OFAC publishes for each entry — name, address, nationality, passport, tax ID, place of birth, date of birth, former names, aliases | Identifiers TransUnion compared — first name, last name",
+        "Accuity's software conducted a 'name-only' search, running a consumer's first and last name against the names on the OFAC list. A search would result in a match if the consumer's first and last name were either identical or similar to a name on the OFAC list (e.g., 'Cortez' would match with 'Cortes').",
+        "Unsurprisingly, TransUnion's Name Screen product generated many false positives. Thousands of law-abiding Americans happen to share a first and last name with one of the terrorists, drug traffickers, or serious criminals on OFAC's list of specially designated nationals.",
+        "In collecting other types of data for use on consumer reports—such as tax liens or bankruptcy judgments—TransUnion used at least one additional identifier other than the consumer's name (e.g., address, date of birth, or social security number). OFAC information was the only consumer-report data that TransUnion collected using name alone.",
+        "TransUnion presented no data showing that any of its name matches through OFAC Advisor were correct. In other words, TransUnion could not confirm that a single OFAC alert sold to its customers was accurate.",
+        "When TransUnion first began offering the OFAC Advisor product, it determined that the OFAC alerts being placed on consumer credit reports were exempt from the FCRA"
+      ],
+      "ACT_3": [
+        "In 1970, Congress passed and President Nixon signed the Fair Credit Reporting Act.",
+        "The Fair Credit Reporting Act — 'reasonable procedures to assure maximum possible accuracy' | TransUnion introduces OFAC Name Screen Alert | The Third Circuit reprimands TransUnion | The OFAC Letters — 1 January to 26 July",
+        "Cortez v. Trans Union, LLC, 617 F.3d 688 (3d Cir. 2010)",
+        "The report flagged her—Sandra Jean Cortez, born in May 1944—as a match for a person on the OFAC list: Sandra Cortes Quintero, born in June 1971.",
+        "Most notably, the Third Circuit specifically reprimanded TransUnion for failing to use an additional identifier such as date of birth to verify the accuracy of OFAC matches.",
+        "Plaintiffs presented evidence that—despite being told in 2010 by another circuit court that OFAC alerts were covered by the FCRA and subject to § 1681e(b)'s reasonable procedures requirement—TransUnion continued to utilize name-only searches to produce OFAC 'matches.'",
+        "all natural persons in the United States and its Territories to whom TransUnion sent a letter similar in form to the March 1, 2011 [OFAC Letter] TransUnion sent to [Ramirez] . . . from January 1, 2011-July 26, 2011.",
+        "TransUnion sent the same OFAC Letter to 8,184 other consumers who also requested copies of their credit reports between January 2011 and July 2011.",
+        "In July 2011, TransUnion finally stopped sending OFAC Letters and began including OFAC alerts directly on the credit reports it sent to consumers.",
+        "Ramirez sues | The class is certified — 301 F.R.D. 408 | The District Court rules all 8,185 have standing",
+        "Class members, including Ramirez — stipulated by both parties before trial",
+        "Of them, the members whose credit reports were disseminated to third parties between 1 January and 26 July 2011 — the same stipulation",
+        "Ramirez and the class pursued only a willfulness theory for each of their three claims, presumably because statutory and punitive damages are available for willful, but not negligent, FCRA violations.",
+        "At trial, Ramirez testified about his experience at the Nissan dealership. But Ramirez did not present evidence about the experiences of other members of the class.",
+        "After six days of trial, the jury returned a verdict for the plaintiffs. The jury awarded each class member $984.22 in statutory damages and $6,353.08 in punitive damages for a total award of more than $60 million.",
+        "We reduce the punitive-damages award from $6,353.08 per class member to $3,936.88 per class member, but otherwise affirm the verdict and judgment.",
+        "Opinion by Judge Murguia; Partial Concurrence and Partial Dissent by"
+      ],
+      "ACT_4": [
+        "To have Article III standing to sue in federal court, plaintiffs must demonstrate, among other things, that they suffered a concrete harm. No concrete harm, no standing.",
+        "25 June 2021 — TransUnion LLC v. Ramirez, No. 20–297",
+        "Kavanaugh, Roberts, Alito, Gorsuch, Barrett — Thomas, Breyer, Sotomayor, Kagan",
+        "Only plaintiffs concretely harmed by a defendant's statutory violation have Article III standing to seek damages against that private defendant in federal court.",
+        "An injury in law is not an injury in fact.",
+        "The standing inquiry in this case thus distinguishes between (i) credit files that consumer reporting agencies maintain internally and (ii) the consumer credit reports that consumer reporting agencies disseminate to third-party creditors.",
+        "The mere presence of an inaccuracy in an internal credit file, if it is not disclosed to a third party, causes no concrete harm.",
+        "the plaintiffs' harm is roughly the same, legally speaking, as if someone wrote a defamatory letter and then stored it in her desk drawer. A letter that is not sent does not harm anyone, no matter how insulting the letter is. So too here.",
+        "the risk of dissemination to third parties— was too speculative to support Article III standing",
+        "1,853 — the report went to a third party: standing | 6,332 — the alert stayed in the internal file: no standing",
+        "only 1,853 class members have standing for the reasonable-procedures claim and (ii) only Ramirez himself has standing for the two formatting claims relating to the mailings",
+        "We reverse the judgment of the U. S. Court of Appeals for the Ninth Circuit and remand the case for further proceedings consistent with this opinion.",
+        "REVERSED AND REMANDED. / NOT DISMISSED.",
+        "the plaintiffs did not present any evidence that the 6,332 class members even knew that there were OFAC alerts in their internal TransUnion credit files. If those plaintiffs prevailed in this case, many of them would first learn that they were 'injured' when they received a check compensating them for their supposed 'injury.'",
+        "faultsplit"
+      ],
+      "ACT_5": [
+        "TransUnion generated credit reports that erroneously flagged many law-abiding people as potential terrorists and drug traffickers.",
+        "Yet despite Congress' judgment that such misdeeds deserve redress, the majority decides that TransUnion's actions are so insignificant that the Constitution prohibits consumers from vindicating their rights in federal court. The Constitution does no such thing.",
+        "TransUnion did not compare birth dates, middle initials, Social Security numbers, or any other available identifier routinely used to collect and verify credit-report data.",
+        "TransUnion could not confirm that a single OFAC alert sold to its customers was accurate.",
+        "one need only tap into common sense to know that receiving a letter identifying you as a potential drug trafficker or terrorist is harmful. All the more so when the information comes in the context of a credit report, the entire purpose of which is to demonstrate that a person can be trusted.",
+        "pyrrhic victory for TransUnion",
+        "The Court here transforms standing law from a doctrine of judicial modesty into a tool of judicial aggrandizement. It holds, for the first time, that a specific class of plaintiffs whom Congress allowed to bring a lawsuit cannot do so under Article III.",
+        "Congress is better suited than courts to determine when something causes a harm or risk of harm in the real world.",
+        "But why is it so speculative that a company in the business of selling credit reports to third parties will in fact sell a credit report to a third party?",
+        "nearly 25% of the class",
+        "WHAT THE COURT DID NOT DECIDE: / WHETHER TRANSUNION BROKE THE LAW.",
+        "Not decided: certification, and the state courts",
+        "Not decided: injunctive relief",
+        "Not decided: what anyone finally received"
+      ],
+      "ENDING": [
+        "FIRST NAME. / LAST NAME. / NOTHING ELSE.",
+        "The record this film stands on ends on 25 June 2021",
+        "8,185 in the class | 1,853 whose reports went to a third party | 6,332 whose did not",
+        "closingdoor",
+        "But why is it so speculative that a company in the business of selling credit reports to third parties will in fact sell a credit report to a third party?",
+        "AI-assisted visualization"
+      ]
+    }
+  },
+  "_declared_values": {
+    "leadSeconds": "0 -- SPEC v2 row 9 and PACKAGING v001 section 4: the hook is VOICED from frame 0 (script v001 heads its cold open '## HOOK (voice from frame 0)'), so the body sequence and the <Audio> master inside it start at the first frame and there is no silent lead. Absent, every consumer computes hookSeconds + OPENING_SEC, which is what EP62-65 use.",
+    "openingVariant": "'overlay' -- FILM_BIBLE section 4 and PACKAGING section 4: the brand band rises at 0:21.6 over the running cut and falls at 0:25.1, and picture and voice do not stop under it. With a zero lead there is no room in front of the body for the full-screen 3.5 s card, and build_case_film_generic refuses that combination outright.",
+    "hookSeconds": "19.68 -- MEASURED, from PD-2026-067-ramirez/06_audio/narration_index.v001.json: the HOOK section runs VC-0001 0.000 -> VC-0007 19.68. It is not the paper figure. PACKAGING section 3 designed a 21.2 s hook window; the delivered read is 19.68 s, so the brand band (hookSeconds + CaseFilm.OPENING_OVERLAY_OFFSET_SEC 0.2) rises at 19.88 and is held for Bookends.OPENING_SEC 3.5 s. OP is recorded 21.48-38.402, so the band lands over the OP lines exactly as the bible intends. structure_4part requires hookSeconds >= 5.0.",
+    "hookLine": "Verbatim, the closing line of the HOOK section of episodes/_planning/EP67_ramirez_script.en.v001.md as it was DELIVERED -- taken from the narration index rather than retyped from the script, so the two cannot drift. Ledger row SR-10.",
+    "captionLeadSeconds": "0.6 -- FILM_BIBLE section 12.6 declares this episode's lead as 0.60 s and says in terms that it is NOT the house 0.25. scripts/gen_captions_forced.py already bakes CAPTION_LEAD_SECONDS 0.60 into the srt it writes, and 08_edit/captions.final.v001.lead.json records that as applied_lead, so polish_captions_srt.py (here, and again at _finish_episode.sh step 4b which reads THIS key) computes a delta of 0.000 and shifts nothing. Declaring 0.25 would drag the whole track 0.35 s later than the design; leaving the key out would do the same, because the finish script falls back to 0.25.",
+    "assets": "episodes/PD-2026-067-ramirez/05_visuals/asset_manifest.v001.json -- NOT YET WRITTEN. The staging pass has not run for this episode. The path is declared so the builder fails on a missing file rather than on a missing key."
+  },
+  "_todo": "STILL MISSING BEFORE A BUILD (measured with scripts/check_episode_inputs.py --slug ramirez, not assumed): PD-2026-067-ramirez/05_visuals/asset_manifest.v001.json and the factory_clip_qc manifest; remotion/public/ramirez/img (122 mandatory_stills R001-R122 are declared in episode_spec and none is staged), remotion/public/ramirez/factory (>= 40 clips, 260 distinct declared), the 24 people plates R073-R096; the six AE kinetic WebMs of FILM_BIBLE section 12.5 under remotion/public/ramirez/ae/ (and the 1080x1920 canvas bug in scripts/ae/kinetic_beat.jsx line 32 must be fixed BEFORE render_beats.sh, per that section); the Ep67Ramirez composition in remotion/src/Root.tsx with its compositions/RamirezFilm.tsx wrapper; and manifest.json. narration.mp3, the narration index and captions.final.v001.srt ARE in place. RUNTIME DEVIATION CLOSED 2026-08-11 BY WRITING, NOT BY WIDENING: the v001 master measured 1448.020 s, a 1457.0 s film against episode_spec runtime_seconds [1560, 1895] -- 103 s under the floor. Root cause was a measuring-instrument error, not a short script: script_words [4400, 5000] was derived from check_script_craft.narration_lines() returning 4,682, which counted the script's front matter (182 w), the continuation lines of every wrapped production note (217 w) and the post-ENDING appendix (282 w); the spoken text was 4,044. narration_lines now delegates to gen_narration_case.extract_events and agrees with the delivered index to the word. Script v002 adds 447 narration words of pure insertion in ACT_2/3/4/5 (24 new chunks, $0.74; the 278 paid chunks were renumbered on disk rather than re-billed for $7.72). Delivered master 1600.809 s, film 1600.809 + ENDCARD_SEC 9.0 = 1609.809 s (26:50) -- INSIDE [1560, 1895]. No number in episode_spec.v001.json was edited. NOTE FOR WHOEVER TOUCHES THE SPEC NEXT: that file's `notes` field still narrates the band's derivation from the inflated 4,682 figure, and the narration index and this filmconfig now both point at v002 -- correct the notes in a spec v002 if one is ever cut, but do not move runtime_seconds or script_words to do it."
+}

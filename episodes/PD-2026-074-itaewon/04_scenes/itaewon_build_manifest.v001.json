@@ -1,0 +1,44 @@
+{
+  "episode_id": "PD-2026-074-itaewon",
+  "producer": "scripts/build_case_film_generic.py",
+  "inputs": {
+    "assets": "episodes\\PD-2026-074-itaewon\\05_visuals\\asset_manifest.v001.json",
+    "narr": "episodes\\PD-2026-074-itaewon\\06_audio\\narration_index.v001.json",
+    "config": "episodes\\_planning\\EP74_itaewon_filmconfig.v001.json"
+  },
+  "report": {
+    "slug": "itaewon",
+    "cuts": 372,
+    "factory": 253,
+    "motion": 0,
+    "still": 119,
+    "pools": {
+      "factory": 253,
+      "motion": 0,
+      "still": 120,
+      "people": 28
+    },
+    "video_cuts": 253,
+    "still_cuts": 119,
+    "video_share": 0.6801,
+    "distinct_assets": 372,
+    "distinct_ratio": 1.0,
+    "max_reuse": 1,
+    "avg_cut_sec": 5.07,
+    "figures": 83,
+    "captions": 554,
+    "narrationSeconds": 1886.775,
+    "duration_frames": 56874,
+    "duration_sec_with_bookends": 1895.8,
+    "sections": [
+      "HOOK",
+      "OP",
+      "ACT_1",
+      "ACT_2",
+      "ACT_3",
+      "ACT_4",
+      "ACT_5",
+      "ENDING"
+    ]
+  }
+}

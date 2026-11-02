@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-007-riley",
+  "target_type": "package",
+  "target_id": "riley_final_package_v001",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T23:39:35+09:00",
+  "requested_by": "owner",
+  "decided_at": "2026-06-20T23:39:35+09:00",
+  "decided_by": "owner",
+  "notes": "Owner explicitly instructed Codex to confirm no other thread is working on the stopped video, then resume and finish it: '他のスレッドで動いてないか先に確認して、被らないなら作業を再開して最後まで終わらせて'. Conflict check found no active Riley-specific render/generation/upload process. Approval covers paid ElevenLabs narration generation, local final render, music/captions, final title/thumbnail selection, package metadata, and private-first YouTube scheduling if all guards pass. It does not authorize deleting/replacing existing public videos or changing locked script/claims.",
+  "conditions": [
+    "Use the locked Riley script and annotated script v001 without claim changes.",
+    "Use the existing first-cut visual proxy v002 as the visual base unless a narrow technical fix is required.",
+    "Generate ElevenLabs narration idempotently and record cost/evidence locally.",
+    "Use rights-registered symbolic visual assets only; keep synthetic-content disclosure required.",
+    "Select the strongest existing thumbnail candidate unless a stronger deterministic local composite is required.",
+    "Before any YouTube write, verify the exact final video hash, channel allowlist, and duplicate-upload guard.",
+    "Keep upload private-first and schedule public release rather than immediate public publish."
+  ],
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-007-riley/manifest.json"
+}

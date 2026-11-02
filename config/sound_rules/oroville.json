@@ -1,0 +1,298 @@
+[
+ {
+  "_comment": "EP71 oroville. Migrated 2026-08-22 from scripts/write_oroville_sound_plan.py (invariant 14: the one-off predated the generalised tool). The rule list is byte-identical to the one that produced this episode's shipped cue plan -- 81 resolved / 27.5 min = 2.93/min PASS -- so re-running write_sound_plan.py --slug <slug> reproduces it. Nothing was retuned during the move.",
+  "needle": "__doc__",
+  "kind": "click",
+  "anchor": "__doc__"
+ },
+ {
+  "needle": "announced",
+  "kind": "click",
+  "anchor": "announced"
+ },
+ {
+  "needle": "broadcast",
+  "kind": "click",
+  "anchor": "broadcast"
+ },
+ {
+  "needle": "announcement",
+  "kind": "click",
+  "anchor": "announcement"
+ },
+ {
+  "needle": "loudspeaker",
+  "kind": "click",
+  "anchor": "loudspeaker"
+ },
+ {
+  "needle": "shouting",
+  "kind": "impact",
+  "anchor": "shouting"
+ },
+ {
+  "needle": "siren",
+  "kind": "click",
+  "anchor": "siren"
+ },
+ {
+  "needle": "television",
+  "kind": "click",
+  "anchor": "television"
+ },
+ {
+  "needle": "radio",
+  "kind": "click",
+  "anchor": "radio"
+ },
+ {
+  "needle": "phone",
+  "kind": "click",
+  "anchor": "phone"
+ },
+ {
+  "needle": "vehicle",
+  "kind": "pass-by",
+  "anchor": "vehicle"
+ },
+ {
+  "needle": "drove",
+  "kind": "pass-by",
+  "anchor": "drove"
+ },
+ {
+  "needle": "driving",
+  "kind": "pass-by",
+  "anchor": "driving"
+ },
+ {
+  "needle": "traffic",
+  "kind": "pass-by",
+  "anchor": "traffic"
+ },
+ {
+  "needle": "highway",
+  "kind": "pass-by",
+  "anchor": "highway"
+ },
+ {
+  "needle": "road",
+  "kind": "pass-by",
+  "anchor": "road"
+ },
+ {
+  "needle": "car",
+  "kind": "pass-by",
+  "anchor": "car"
+ },
+ {
+  "needle": "truck",
+  "kind": "pass-by",
+  "anchor": "truck"
+ },
+ {
+  "needle": "evacuate",
+  "kind": "footstep",
+  "anchor": "evacuate"
+ },
+ {
+  "needle": "evacuation",
+  "kind": "footstep",
+  "anchor": "evacuation"
+ },
+ {
+  "needle": "left",
+  "kind": "footstep",
+  "anchor": "left"
+ },
+ {
+  "needle": "walked",
+  "kind": "footstep",
+  "anchor": "walked"
+ },
+ {
+  "needle": "spillway",
+  "kind": "rustle",
+  "anchor": "spillway"
+ },
+ {
+  "needle": "reservoir",
+  "kind": "rustle",
+  "anchor": "reservoir"
+ },
+ {
+  "needle": "water",
+  "kind": "rustle",
+  "anchor": "water"
+ },
+ {
+  "needle": "river",
+  "kind": "rustle",
+  "anchor": "river"
+ },
+ {
+  "needle": "rain",
+  "kind": "rustle",
+  "anchor": "rain"
+ },
+ {
+  "needle": "claim",
+  "kind": "stamp",
+  "anchor": "claim"
+ },
+ {
+  "needle": "filed",
+  "kind": "stamp",
+  "anchor": "filed"
+ },
+ {
+  "needle": "sworn",
+  "kind": "stamp",
+  "anchor": "sworn"
+ },
+ {
+  "needle": "signed",
+  "kind": "stamp",
+  "anchor": "signed"
+ },
+ {
+  "needle": "statute",
+  "kind": "page turn",
+  "anchor": "statute"
+ },
+ {
+  "needle": "record",
+  "kind": "page turn",
+  "anchor": "record"
+ },
+ {
+  "needle": "opinion",
+  "kind": "page turn",
+  "anchor": "opinion"
+ },
+ {
+  "needle": "complaint",
+  "kind": "rustle",
+  "anchor": "complaint"
+ },
+ {
+  "needle": "document",
+  "kind": "rustle",
+  "anchor": "document"
+ },
+ {
+  "needle": "receipt",
+  "kind": "rustle",
+  "anchor": "receipt"
+ },
+ {
+  "needle": "invoice",
+  "kind": "rustle",
+  "anchor": "invoice"
+ },
+ {
+  "needle": "bill",
+  "kind": "rustle",
+  "anchor": "bill"
+ },
+ {
+  "needle": "file",
+  "kind": "rustle",
+  "anchor": "file"
+ },
+ {
+  "needle": "paperwork",
+  "kind": "rustle",
+  "anchor": "paperwork"
+ },
+ {
+  "needle": "court",
+  "kind": "gavel",
+  "anchor": "court"
+ },
+ {
+  "needle": "judge",
+  "kind": "gavel",
+  "anchor": "judge"
+ },
+ {
+  "needle": "appeal",
+  "kind": "gavel",
+  "anchor": "appeal"
+ },
+ {
+  "needle": "ruled",
+  "kind": "gavel",
+  "anchor": "ruled"
+ },
+ {
+  "needle": "dismissed",
+  "kind": "gavel",
+  "anchor": "dismissed"
+ },
+ {
+  "needle": "hearing",
+  "kind": "gavel",
+  "anchor": "hearing"
+ },
+ {
+  "needle": "trial",
+  "kind": "gavel",
+  "anchor": "trial"
+ },
+ {
+  "needle": "years later",
+  "kind": "clock",
+  "anchor": "years"
+ },
+ {
+  "needle": "hours",
+  "kind": "clock",
+  "anchor": "hours"
+ },
+ {
+  "needle": "minutes",
+  "kind": "clock",
+  "anchor": "minutes"
+ },
+ {
+  "needle": "afternoon",
+  "kind": "clock",
+  "anchor": "afternoon"
+ },
+ {
+  "needle": "o'clock",
+  "kind": "clock",
+  "anchor": "clock"
+ },
+ {
+  "needle": "night",
+  "kind": "clock",
+  "anchor": "night"
+ },
+ {
+  "needle": "door",
+  "kind": "latch",
+  "anchor": "door"
+ },
+ {
+  "needle": "house",
+  "kind": "latch",
+  "anchor": "house"
+ },
+ {
+  "needle": "window",
+  "kind": "rustle",
+  "anchor": "window"
+ },
+ {
+  "needle": "suitcase",
+  "kind": "latch",
+  "anchor": "suitcase"
+ },
+ {
+  "needle": "keys",
+  "kind": "click",
+  "anchor": "keys"
+ }
+]

@@ -1,0 +1,56 @@
+EP75_lahaina — 画像発注 バッチ 12/17（8枚）
+区分: ACT_4 — EVERYTHING THAT WAS ALREADY THERE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, documentary, the leeward west coast of Maui in the Hawaiian Islands, United States, contemporary 2023 — a small low-rise Pacific town on a narrow coastal shelf with a steep dry mountain wall rising directly behind it, single-storey plantation-era timber houses with corrugated metal roofs and jalousie windows, carports, chain-link fences, low lava-rock walls, timber utility poles carrying many crossarms, two-lane roads, dry pale non-native grass and low scrub on abandoned plantation slopes, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — ash, corrugated steel, oxidised galvanised metal, melted aluminium, chain-link wire, dry grass, painted breeze block, laminate desk, ruled card, kiawe bark — nothing staged for advertising, no tourism, no scenery, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no readable signage
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, street numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, unit marking, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, human remains, body bag, injured person, blood, burn victim, stretcher, paramedic, ambulance interior, hospital, funeral, grave, mourner, crying, grieving family, person running from flames, people fleeing fire, firefighter carrying person, cpr, rescue, resort, hotel, beach holiday, beach vacation, turquoise water, white sand beach, sunset palm, palm silhouette, palm trees, tropical paradise, luau, hula, lei greeting, tiki, surfing, surfer, snorkeling, scuba, swimming pool, cocktail, sunbathing, tourist selfie, honeymoon, cruise ship, drone over hotel, golf course, whale watching, directed energy weapon, energy beam, laser from sky, beam from the sky, ufo, conspiracy graphic, anomalous glow, movie explosion, action movie, video game, fireball vfx, fire with people in frame, pine forest fire, conifer forest, pine trees, spruce, crown fire, snow, desert, megacity skyline, skyscrapers, european street, asian cityscape, EU number plate, right-hand-drive traffic, mainland american main street, US route shield, expressway interchange, gavel, scales of justice, jury box, judge's bench, courtroom interior, handcuffs closeup, prison bars, money rain, falling banknotes, stock ticker, candlestick chart, memorial portrait, photo memorial, golden hour, sunset glow, orange hero light, warm firelight glamour, postcard scenery, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) H089.png
+   [the ocean's edge]  flags: R D S
+   a low sea wall of dark rock at the bottom of a town street with flat grey water beyond it and grey smoke lying across the whole horizon, no people, no colour
+
+2) H090.png
+   [the street, parked both sides]  flags: R D W
+   a narrow residential street with cars parked along both kerbs leaving barely one lane clear, single-storey houses, power lines overhead, empty of people
+
+3) H091.png
+   [the dead end]  flags: R D W
+   a narrow residential street ending in a chain-link fence with dry scrub beyond it, no through route, flat hard light
+
+4) H092.png
+   [eight ways out]  flags: R D O
+   a plain aerial-style view of a small grid town on a coastal shelf between a mountain wall and the sea, roads visible, no labels, no text
+
+5) H093.png
+   [the gate, hero one]  flags: R D W
+   a galvanised chain-link gate closed across a dirt access track with a heavy padlock and chain on it, dry grass either side, seen straight on
+
+6) H094.png
+   [the gate, hero two]  flags: R W
+   the same padlock and chain close up, the wire diamonds of the gate filling the frame behind it, hard light
+
+7) H095.png
+   [the cars behind it]  flags: P R D S
+   a line of stationary cars nose to tail on a dirt track, seen from in front and low, dust and grey smoke beyond them, windscreens reflecting flat sky
+
+8) H096.png
+   [the saw]  flags: P R S
+   a battery reciprocating saw held in two hands cutting into a padlock shackle, extreme close, sparks small and few, no face in frame

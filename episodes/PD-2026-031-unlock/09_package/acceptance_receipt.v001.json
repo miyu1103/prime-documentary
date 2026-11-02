@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-031-unlock",
+  "gate": "check_final_acceptance",
+  "status": "PASS",
+  "video_path": "episodes\\PD-2026-031-unlock\\08_edit\\renders\\unlock_final.v002.mp4",
+  "video_sha256": "sha256:0a8fafa3c2a2c052f44efc289e670a763dab6b597d4239999269f4511a7b6809",
+  "hard_failures": [],
+  "checks": {
+    "runtime_band": true,
+    "render_resolution": true,
+    "images_present": true,
+    "motion_present": true,
+    "animation_density": true,
+    "bgm_present": true,
+    "bgm_ending": true,
+    "hook_added": true,
+    "loudness": true,
+    "voice_is_master": true,
+    "captions_final": true,
+    "caption_format": true,
+    "caption_narration_match": true,
+    "structure_4part": true,
+    "op_ed_bookends": true,
+    "leveled_animation": true,
+    "thumbnail_ready": true,
+    "thumbnail_visibility": true,
+    "image_resolution": true,
+    "factory_used": true,
+    "footage_diversity": true
+  },
+  "generated_at": "2026-07-05T11:26:18.863691+00:00"
+}

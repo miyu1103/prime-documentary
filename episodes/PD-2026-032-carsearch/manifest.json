@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-032-carsearch",
+  "topic_id": "TOP-20260703-032",
+  "slug": "carsearch",
+  "title_working": "Can the Police Search Your Car Without a Warrant?",
+  "state": "script_verified",
+  "risk_class": "R2",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-032-carsearch-topic",
+      "artifact_type": "topic_brief",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-032-carsearch/00_topic/topic.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:1e880e64c1d1225fdec4956572481bae1e7e999171600610c7d165c8171c8abb"
+    },
+    {
+      "artifact_id": "PD-2026-032-carsearch-sources",
+      "artifact_type": "sources",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-032-carsearch/01_research/sources.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:2e5c31c138695adbac7592bc704a79aa22495e42946d55aa762fe121312f71d5"
+    },
+    {
+      "artifact_id": "PD-2026-032-carsearch-claims",
+      "artifact_type": "claims",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-032-carsearch/01_research/claims.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:b5cdab993b08b809d1980f2b64523466b205461a0475e0fe3c8a11a41333fb94"
+    },
+    {
+      "artifact_id": "PD-2026-032-carsearch-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-032-carsearch/03_script/script.annotated.v001.json",
+      "checksum": "sha256:4f7cc24fb611e2d94409c9cb2dcd4d46ac448b4410d3c89f64c58f8befc98578",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [],
+  "blockers": [],
+  "created_at": "2026-07-03T00:00:00+09:00",
+  "updated_at": "2026-07-06T00:00:00+09:00"
+}

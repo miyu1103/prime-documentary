@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-025-kyllo",
+  "topic_id": "TOP-20260703-025",
+  "slug": "kyllo",
+  "title_working": "The Police Scanned Your House From the Street",
+  "state": "script_verified",
+  "risk_class": "R2",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "codex_image_prompts": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-025-kyllo-topic",
+      "artifact_type": "topic_brief",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-025-kyllo/00_topic/topic.v001.json",
+      "checksum": "sha256:9123d3324fa68627d9319450b12abeb0c092b9abaabceac4d683a7f57d684aac",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-025-kyllo-sources",
+      "artifact_type": "source_registry",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-025-kyllo/01_research/sources.v001.json",
+      "checksum": "sha256:31d93af52ea7cfeb395221afce359ef9121fea303c0a6383006eba44b5604685",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-025-kyllo-claims",
+      "artifact_type": "claim_ledger",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-025-kyllo/01_research/claims.v001.json",
+      "checksum": "sha256:4c25583c1df097d61de58f769657d977935bc05b07442b9124bb5f90464b4e8c",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-025-kyllo-script",
+      "artifact_type": "script_markdown",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-025-kyllo/03_script/script.en.v001.md",
+      "checksum": "sha256:78540539aa583aacc2d88ddf6319b0e6975cd6538a958fd0a30ab3a0787abfdd",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-025-kyllo-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-025-kyllo/03_script/script.annotated.v001.json",
+      "checksum": "sha256:acf7b8b53f10aa2ebc295652e9ce71ab6fdc68478057a5f54ea24f3827dd5985",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-025-kyllo-script-qc",
+      "artifact_type": "qc_report",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-025-kyllo/03_script/script_qc.v001.json",
+      "checksum": "sha256:0e56b85f3f717a3c6133fb9345344ec3c301def13c3f5af7cb899f0f608dd3a9",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-025-kyllo-codex-image-prompts",
+      "artifact_type": "image_prompt_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-025-kyllo/04_scenes/codex_image_prompts.v001.md",
+      "checksum": "sha256:d488032b3cfcf55dd076470bb1b1d485a513d5458a5582e73e0a0873b6111ba6",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "not_run"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Claude owns research + script (left process); Codex begins production at scenes/visuals. Image generation = Codex; edit = Remotion + FFmpeg.",
+    "script_qc PASS (FK 7.3, no AI-filler, claim-links consistent, dangling=0) and draft-timing ~11.7 min at 150 wpm; state promoted to script_verified.",
+    "Facts fact-checked 2026-07-03 against the primary opinion (Kyllo v. United States, 533 U.S. 27) via Cornell LII, cross-checked on Oyez. Durable source content hashes captured.",
+    "APR-0001 is a machine-recorded content/direction sign-off placeholder: a HUMAN OWNER final-script gate is still REQUIRED before any downstream production. Not self-approved for publication.",
+    "Do NOT overstate the holding downstream: the Court required a warrant and remanded; it did not ban thermal imaging (CLM-0010).",
+    "Danny Kyllo is a living real person on the public court record; treat by role, factually; no real-person likeness in AI visuals (invariant 11). Depict the grow only as heat/light, never drugs.",
+    "An early Codex image-prompt file (04_scenes/codex_image_prompts.v001.md) predates this script and was NOT modified; the annotated script's visual_intent is broadly consistent with its beats.",
+    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo."
+  ],
+  "blockers": [],
+  "created_at": "2026-07-03T00:00:00+00:00",
+  "updated_at": "2026-07-03T00:00:00+00:00"
+}

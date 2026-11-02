@@ -1,0 +1,60 @@
+EP67 ramirez — 画像発注 バッチ 10/18（5枚）
+区分: B · the identifiers that were never compared  [R068 – R072]
+
+★これは新規発注です。同名の既存ファイルはありません。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, restrained documentary framing, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, ordinary suburban and civic California in the United States between 2011 and 2026, plain worn everyday surfaces, nothing staged for advertising, nothing in shot that would date the picture outside those years, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, house numbers, handwriting, cursive writing, legible signature, seals, emblems, logos, insignia, badge, name plates, readable words on a sign, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, police officer, sheriff, trooper, uniform, patrol car, flashing lights, handcuffs, rifle, shotgun, firearm, holster, dead animal, carcass, blood, taxidermy, mounted antlers, courtroom interior, gavel, judge's bench, prison bars, razor wire, scales of justice, hourglass, a handshake, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, aerial view from above the treetops, golden hour, sunset glow, postcard scenery, autumn colour explosion, Christmas, tropical, modern smartphones, laptops, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・読める文字・数字・手書き・署名・印章・記章・ロゴを一切描かない
+・書類は「読めない灰色の横棒の並び」または「完全な白紙」として描く（本文に指定あり）
+・車体のバッジ・文字マーク・ネームプレート・グリルの楕円・ナンバープレートも描かない
+・実在ブランドを出さない。車は「中型セダン」、販売店は「販売店」でよい
+・画面（モニタ・スマホ・PC）は絶対に読めないこと。背面か、ピンぼけか、一様な光
+・警察・制服・記章・銃器・血液・法廷内部・天秤・砂時計・握手・子どもを描かない
+・手は指が数えられること。融合した指・6本指・親指の欠落・組んだ指は不可。
+　**手が主役のときは必ず「平らな面に伏せて置いた手」**（EP66 L236 の失敗と、通った修正）
+・舞台は**カリフォルニア州ダブリン**。アイルランドのダブリンではない。欧州の街並みにしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R068.png
+Hundreds of small identical pale record cards laid out edge to edge IN A DENSE REGULAR GRID filling the entire frame, photographed from directly overhead in even soft light, the picture reading as texture and repetition. EVERY CARD IS COMPLETELY BLANK — no printing, no ruling, no writing, no numbers. ONE SINGLE CARD near the lower middle is LIFTED SLIGHTLY OUT OF THE GRID at an angle and catches a brighter highlight along its raised edge, throwing a small shadow onto the cards beneath. The lower edge of the frame is the brightest part of the picture Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, writing on the cards, printed forms, ruled lines, hand, numbers
+
+■ R069.png
+The same dense overhead grid of identical blank record cards, now with TWO CARDS LIFTED slightly out of the grid, FAR APART FROM ONE ANOTHER — one near the upper left, one near the lower right — each catching its own highlight and throwing its own small shadow, everything between them flat and identical. Same overhead camera, same even light. All cards completely blank Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, writing on the cards, hand, numbers, arrows, connecting line
+
+■ R070.png
+The same field of identical blank record cards photographed FROM A LOW RAKING ANGLE just above the surface instead of overhead, so the near cards are sharp and huge in the foreground and the grid recedes fast into soft focus and finally into a pale blur at the top of the frame. All cards completely blank, no card lifted. Even soft light from the left Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, writing on the cards, hand, sharp far cards, numbers
+
+■ R071.png
+A folded stack of continuous fanfold computer paper lying on a plain dark surface, photographed from a low three-quarter angle so the concertina folds and the perforated sprocket margins down both sides are the shape of the picture. The paper carries no writing of any kind, and this is what is on it instead: EVENLY SPACED FLAT GREY HORIZONTAL BARS of one uniform width and one uniform weight, laid in parallel like ruled bands of tone, each bar a solid unbroken block of soft grey with straight ends and no letter shapes, no word shapes, no gaps between words and no broken or ragged edge anywhere along it, so the sheet reads as printed matter purely by its rhythm of grey and white and carries not one readable character, and the sprocket holes are the only regular punctuation in the frame. Soft side light picking out each fold Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, printed rows of figures, column headings, dot matrix text, tractor-feed labels
+
+■ R072.png
+ONE single plain pale card lying alone at the centre of an otherwise completely empty dark table, photographed from a low three-quarter angle a foot away, one soft light from the left so the card is the brightest thing in the frame and its thin shadow runs away to the right. THE CARD IS COMPLETELY BLANK. Nothing else is in the frame at all Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable document, printed words on paper, letterforms, typed lines, printed paragraph, form fields with labels, letterhead, stamp with words, writing on the card, second card, hand, spotlight vignette
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（例: R068.png）で保存してください。
+保存先 H:\pd-media\assets\ai\ramirez\
+長辺 3840px 以上・16:9・PNG。

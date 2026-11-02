@@ -1,0 +1,56 @@
+EP78_colgan — 画像発注 バッチ 20/21（8枚）
+区分: SPARE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) C153.png
+   [C153]  flags: 
+   A kitchen table in morning daylight with a coffee cup and car keys, a brilliant window behind, no one present
+
+2) C154.png
+   [C154]  flags: 
+   A wide view of an American suburb from the air in bright daylight, ordinary streets and houses, clear sky
+
+3) C155.png
+   [C155]  flags: 
+   A modern data centre aisle in daylight-balanced white light, rack doors closed, the far end blown out bright
+
+4) C156.png
+   [C156]  flags: 
+   Close-up of a fibre optic patch panel, dozens of cables lit by a bright work lamp, one blown-out highlight on the metal
+
+5) C157.png
+   [C157]  flags: 
+   An office window at night with a lit monitor visible from outside, the rest of the building dark
+
+6) C158.png
+   [C158]  flags: 
+   A commercial airliner on short final over an American highway in bright daylight, gear down, clear sky
+
+7) C159.png
+   [C159]  flags: 
+   A wide airport view at golden hour, aircraft at stands, brilliant low sun flaring across the apron
+
+8) C160.png
+   [C160]  flags: 
+   A calm empty winter field at sunrise, brilliant sun on the horizon, bare trees, untouched snow

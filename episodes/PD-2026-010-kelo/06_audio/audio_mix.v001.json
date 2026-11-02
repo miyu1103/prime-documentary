@@ -1,0 +1,28 @@
+{
+  "episode_id": "PD-2026-010-kelo",
+  "revision": "v001",
+  "created_at": "2026-06-21T17:45:33.467080+00:00",
+  "narration_master": "artifact://episodes/PD-2026-010-kelo/06_voice/master/vc_master_v001.mp3",
+  "narration_fit": "artifact://episodes/PD-2026-010-kelo/06_voice/master/vc_master_v001_fit_631s.wav",
+  "narration_fit_seconds": 630.989,
+  "target_voice_seconds": 631.0,
+  "timeline_seconds": 640.5,
+  "mix": "artifact://episodes/PD-2026-010-kelo/07_audio/kelo_final_mix_v001.mp3",
+  "remotion_static_audio": "kelo/audio/kelo_final_mix_v001.mp3",
+  "layers": [
+    "voice",
+    "bgm",
+    "sfx",
+    "ambience"
+  ],
+  "ducking": "FFmpeg sidechaincompress on music and ambience keyed by voice",
+  "loudness_probe": {
+    "input_i": -14.06,
+    "input_tp": -1.47,
+    "input_lra": 2.4,
+    "target_offset": -0.05
+  },
+  "captions": "artifact://episodes/PD-2026-010-kelo/08_edit/captions.v001.srt",
+  "caption_cues": 256,
+  "caption_timing_note": "Timed from measured ElevenLabs chunk durations and uniformly scaled to the final voice-fit timeline."
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-075-lahaina",
+  "scope": "EP75_lahaina_CODEX_REDO_ALL_20260822_six_plate_pass",
+  "generated_at": "2026-08-22T04:15:52.6201294+09:00",
+  "provider": "Codex built-in image generation",
+  "provider_model_id": null,
+  "provider_seed": null,
+  "provider_cost_record": null,
+  "provider_metadata_note": "The built-in provider did not expose model id, seed, or per-image billing metadata.",
+  "one_prompt_one_image": true,
+  "automatic_retry": false,
+  "request_count": 6,
+  "generated_count": 6,
+  "technical_pass_count": 6,
+  "visual_and_semantic_pass_count": 4,
+  "deployed_count": 4,
+  "held_count": 2,
+  "prompt_contract": {
+    "path": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\_planning\\EP75_lahaina_CODEX_REDO_ALL.txt",
+    "sha256": "E76E2263BF4AFEE1D1DAA3E123F44FA72200530A318BFB8A0A481557F041D6B7",
+    "structured_path": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\_planning\\EP75_lahaina_CODEX_REDO\\plates.v001.jsonl",
+    "structured_sha256": "40F1A0BA3E9B187EFAB2FAF61A56D3C1817F2C0060F29DAD3276CE28FF29F353",
+    "compile_rule": "For each ID, the exact common STYLE and NEG blocks plus that ID's subject line were sent as one request. Execution-only additions reinforced exact 16:9 framing and the repair condition recorded in the source contract; no new narrative content was added."
+  },
+  "staging_directory": "E:\\pd-media\\assets\\ai\\lahaina\\_codex_redo_20260822_02",
+  "destination_directory": "E:\\pd-media\\assets\\ai\\lahaina",
+  "backup_directory": "E:\\pd-media\\assets\\ai\\lahaina\\_backup_redo_20260822_02",
+  "contact_sheet": {
+    "path": "E:\\pd-media\\assets\\ai\\lahaina\\_codex_redo_20260822_02\\contact_sheet.v003.png",
+    "sha256": "5939A37C9477F58ABC99F1258F603C62DE77D79467662CC12274A856B4BBDE93"
+  },
+  "rows": [
+    {
+      "id": "H006",
+      "subject": "the first smoke, low",
+      "status": "deployed_replacement",
+      "reason": "technical, semantic, text, watermark, and safety QC pass; low wind-flattened smoke stays over dry grassland with no flame, town foreground, or palm trees",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "E8DBBA0C503ADD0CAFA3F7C495BEB50EE7E62E97ECE61D77F0FCF9CEB408A8AB",
+      "replaced_sha256": "271899F8BCC03E1B6E999B4B86891011CA85FDAB628F06267548514A816D0B4A"
+    },
+    {
+      "id": "H058",
+      "subject": "the queue begins",
+      "status": "deployed_replacement",
+      "reason": "technical, semantic, identity, text, watermark, and safety QC pass; one rear-view driver stands in the open door and no face or readable marking is visible",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "E7AED6DAB4B9C3951C9E71D0294D023EBA0FAC57FE19E44DC79C839C7ED30BD1",
+      "replaced_sha256": "7D40A634187C55DE06262795FF451DBF88547622D46F9137EDCFBC83FCB46B7F"
+    },
+    {
+      "id": "H077",
+      "subject": "vehicles alight",
+      "status": "deployed_replacement",
+      "reason": "technical, semantic, text, watermark, and safety QC pass; pickup and saloon remain structurally intact with blistered paint, open doors, visibly empty cabs, and nobody nearby",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "DE91EA2ED02FD6EC2C068FFE49EE2BB497F0863C925B487434FDB693584EF2BC",
+      "replaced_sha256": "8B2D3FDEDC8FBE15DEE2F610FA65E416954789245C0A7E1903BE233B214C8345"
+    },
+    {
+      "id": "H099",
+      "subject": "through the gate",
+      "status": "deployed_replacement",
+      "reason": "technical, semantic, identity, text, watermark, and safety QC pass; one rear-view figure holds the open gate while cars move away and no palm tree is visible",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "4F3ED5B6BE657A6D10F8AD76627B28FC7152413B14CE0BB48962AE41C863419D",
+      "replaced_sha256": "05E4FAF5F9B1CC8ED7A8F439A3BE6C993F5316F38C18A19B5F592BD905F9715A"
+    },
+    {
+      "id": "H104",
+      "subject": "in the traffic",
+      "status": "held_visual_qc",
+      "reason": "forbidden registration plates and vehicle badge/model markings remain visible in the traffic queue",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "92AA411EF2CF4E9FE554A6FB35AE822A700850EA582711A598DE1F4FADEB53F2",
+      "destination_action": "held in staging; destination remains missing"
+    },
+    {
+      "id": "H119",
+      "subject": "one of four",
+      "status": "held_visual_qc",
+      "reason": "more than four siren poles are visible when the distant roadside poles are counted",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.776833,
+      "sha256": "B23DFE5D8C240EF2B2BC609B893F3F0C8EC7B6BEFC21EDD7ABC64E3A08DB7F51",
+      "destination_action": "new candidate held in staging; protected prior destination H119 retained",
+      "retained_destination_sha256": "41BA3D723AD9CC9CF1E748E098750FF91B177ECE29D609481D5566FD9C2B3D4C"
+    }
+  ],
+  "destination_inventory": {
+    "expected_ids": "H001-H135",
+    "present_count": 134,
+    "missing_ids": [
+      "H104"
+    ],
+    "extra_ids": []
+  },
+  "readback": {
+    "deployed_files_hash_match_staging": true,
+    "backup_file_count": 5,
+    "protected_h119_unchanged": true,
+    "h104_destination_absent": true
+  }
+}

@@ -1,0 +1,1178 @@
+export type ArbitrationCaptionCue = {
+  start: number;
+  end: number;
+  text: string;
+};
+
+export const ARBITRATION_CAPTIONS: ArbitrationCaptionCue[] = [
+  {
+    "start": 0.0,
+    "end": 2.64,
+    "text": "You do it constantly. You tap \"I"
+  },
+  {
+    "start": 2.64,
+    "end": 5.28,
+    "text": "agree.\" You do not read it —"
+  },
+  {
+    "start": 5.28,
+    "end": 7.921,
+    "text": "almost no one does . And buried"
+  },
+  {
+    "start": 7.921,
+    "end": 10.561,
+    "text": "in that fine print, again and again,"
+  },
+  {
+    "start": 10.561,
+    "end": 13.201,
+    "text": "is a single clause that can quietly"
+  },
+  {
+    "start": 13.201,
+    "end": 15.841,
+    "text": "take away two of your most basic"
+  },
+  {
+    "start": 15.841,
+    "end": 18.482,
+    "text": "legal rights: the right to take the"
+  },
+  {
+    "start": 18.482,
+    "end": 21.122,
+    "text": "company to court, and the right to"
+  },
+  {
+    "start": 21.122,
+    "end": 23.762,
+    "text": "join with everyone else they treated the"
+  },
+  {
+    "start": 23.762,
+    "end": 26.402,
+    "text": "same way . In 2011, a fight"
+  },
+  {
+    "start": 26.402,
+    "end": 29.043,
+    "text": "over about thirty\ndollars turned that clause"
+  },
+  {
+    "start": 29.043,
+    "end": 31.683,
+    "text": "into the law of the land ."
+  },
+  {
+    "start": 32.137,
+    "end": 35.282,
+    "text": "The clause is an arbitration agreement. It"
+  },
+  {
+    "start": 35.282,
+    "end": 38.428,
+    "text": "says that if you have a dispute,"
+  },
+  {
+    "start": 38.428,
+    "end": 41.573,
+    "text": "you will not sue in a public"
+  },
+  {
+    "start": 41.573,
+    "end": 44.719,
+    "text": "court — you will take it to"
+  },
+  {
+    "start": 44.719,
+    "end": 47.864,
+    "text": "a private arbitrator, one customer at a"
+  },
+  {
+    "start": 47.864,
+    "end": 51.01,
+    "text": "time. And it usually adds a second"
+  },
+  {
+    "start": 51.01,
+    "end": 54.155,
+    "text": "piece: a class-action\nwaiver, a promise that"
+  },
+  {
+    "start": 54.155,
+    "end": 57.301,
+    "text": "you will never band together with other"
+  },
+  {
+    "start": 57.301,
+    "end": 60.446,
+    "text": "people who were harmed the same way"
+  },
+  {
+    "start": 60.446,
+    "end": 63.592,
+    "text": ". This is one of the most"
+  },
+  {
+    "start": 63.592,
+    "end": 66.737,
+    "text": "consequential and most\nargued-about features of modern"
+  },
+  {
+    "start": 66.737,
+    "end": 69.883,
+    "text": "American law, and\nreasonable people strongly disagree"
+  },
+  {
+    "start": 69.883,
+    "end": 73.029,
+    "text": "about whether it is fair. Over the"
+  },
+  {
+    "start": 73.029,
+    "end": 76.174,
+    "text": "next twelve minutes:\nthe thirty-dollar case that"
+  },
+  {
+    "start": 76.174,
+    "end": 79.32,
+    "text": "made it enforceable,\nwhat the Court actually"
+  },
+  {
+    "start": 79.32,
+    "end": 82.465,
+    "text": "decided, and the honest arguments on both"
+  },
+  {
+    "start": 82.465,
+    "end": 82.914,
+    "text": "sides."
+  },
+  {
+    "start": 83.368,
+    "end": 86.587,
+    "text": "It starts with a couple in California,"
+  },
+  {
+    "start": 86.587,
+    "end": 89.806,
+    "text": "Vincent and Liza Concepcion. They sign up"
+  },
+  {
+    "start": 89.806,
+    "end": 93.025,
+    "text": "with AT&T for\ncellphones advertised as \"free.\""
+  },
+  {
+    "start": 93.025,
+    "end": 96.244,
+    "text": "Then the bill comes, and they have"
+  },
+  {
+    "start": 96.244,
+    "end": 99.463,
+    "text": "been charged about thirty dollars in sales"
+  },
+  {
+    "start": 99.463,
+    "end": 102.222,
+    "text": "tax on those \"free\" phones ."
+  },
+  {
+    "start": 102.676,
+    "end": 105.768,
+    "text": "Thirty dollars. On its own, it is"
+  },
+  {
+    "start": 105.768,
+    "end": 108.86,
+    "text": "nothing — no lawyer on earth takes"
+  },
+  {
+    "start": 108.86,
+    "end": 111.952,
+    "text": "a thirty-dollar case. And that is exactly"
+  },
+  {
+    "start": 111.952,
+    "end": 115.044,
+    "text": "the point that makes this story matter."
+  },
+  {
+    "start": 115.044,
+    "end": 118.136,
+    "text": "Because the Concepcions were not the only"
+  },
+  {
+    "start": 118.136,
+    "end": 121.228,
+    "text": "customer charged that tax. If a company"
+  },
+  {
+    "start": 121.228,
+    "end": 124.32,
+    "text": "charges thirty dollars too much to one"
+  },
+  {
+    "start": 124.32,
+    "end": 127.412,
+    "text": "person, it is a rounding error. If"
+  },
+  {
+    "start": 127.412,
+    "end": 130.504,
+    "text": "it charges thirty dollars too much to"
+  },
+  {
+    "start": 130.504,
+    "end": 133.596,
+    "text": "millions of people, it is tens of"
+  },
+  {
+    "start": 133.596,
+    "end": 136.688,
+    "text": "millions of dollars — and now it"
+  },
+  {
+    "start": 136.688,
+    "end": 138.455,
+    "text": "is worth fighting ."
+  },
+  {
+    "start": 138.909,
+    "end": 141.949,
+    "text": "The tool for that fight is the"
+  },
+  {
+    "start": 141.949,
+    "end": 144.988,
+    "text": "class action: a\nsingle lawsuit that bundles"
+  },
+  {
+    "start": 144.988,
+    "end": 148.028,
+    "text": "together everyone with\nthe same small claim,"
+  },
+  {
+    "start": 148.028,
+    "end": 151.068,
+    "text": "so that harms too tiny to sue"
+  },
+  {
+    "start": 151.068,
+    "end": 154.107,
+    "text": "over individually can be challenged all at"
+  },
+  {
+    "start": 154.107,
+    "end": 157.147,
+    "text": "once. The Concepcions wanted to bring one"
+  },
+  {
+    "start": 157.147,
+    "end": 157.581,
+    "text": "."
+  },
+  {
+    "start": 158.035,
+    "end": 161.873,
+    "text": "But their AT&T contract said no. It"
+  },
+  {
+    "start": 161.873,
+    "end": 165.71,
+    "text": "required any dispute to go to individual"
+  },
+  {
+    "start": 165.71,
+    "end": 169.548,
+    "text": "arbitration, and it\nspecifically waived class actions"
+  },
+  {
+    "start": 169.548,
+    "end": 173.385,
+    "text": ". So the legal question became: is"
+  },
+  {
+    "start": 173.385,
+    "end": 177.223,
+    "text": "that waiver enforceable?\nCalifornia had a rule"
+  },
+  {
+    "start": 177.223,
+    "end": 181.06,
+    "text": "— from a case called Discover Bank"
+  },
+  {
+    "start": 181.06,
+    "end": 184.898,
+    "text": "— that treated\nthese class-action waivers in"
+  },
+  {
+    "start": 184.898,
+    "end": 188.735,
+    "text": "consumer contracts as\nunconscionable, and refused to"
+  },
+  {
+    "start": 188.735,
+    "end": 192.573,
+    "text": "enforce them. Under\nCalifornia law, the Concepcions"
+  },
+  {
+    "start": 192.573,
+    "end": 195.862,
+    "text": "could keep their class action ."
+  },
+  {
+    "start": 196.316,
+    "end": 199.012,
+    "text": "AT&T argued that California rule had to"
+  },
+  {
+    "start": 199.012,
+    "end": 201.709,
+    "text": "give way to a much older federal"
+  },
+  {
+    "start": 201.709,
+    "end": 204.405,
+    "text": "law. And so a dispute over thirty"
+  },
+  {
+    "start": 204.405,
+    "end": 207.102,
+    "text": "dollars in phone tax became a case"
+  },
+  {
+    "start": 207.102,
+    "end": 209.799,
+    "text": "about who gets to decide whether you"
+  },
+  {
+    "start": 209.799,
+    "end": 212.495,
+    "text": "can ever join a class action at"
+  },
+  {
+    "start": 212.495,
+    "end": 212.88,
+    "text": "all."
+  },
+  {
+    "start": 213.334,
+    "end": 217.129,
+    "text": "To understand the case, you have to"
+  },
+  {
+    "start": 217.129,
+    "end": 220.924,
+    "text": "understand two things: a 1925 law, and"
+  },
+  {
+    "start": 220.924,
+    "end": 223.092,
+    "text": "one small, powerful sentence."
+  },
+  {
+    "start": 223.546,
+    "end": 226.844,
+    "text": "The 1925 law is the Federal Arbitration"
+  },
+  {
+    "start": 226.844,
+    "end": 230.142,
+    "text": "Act. It was passed to make arbitration"
+  },
+  {
+    "start": 230.142,
+    "end": 233.44,
+    "text": "agreements enforceable, reflecting\na federal policy that"
+  },
+  {
+    "start": 233.44,
+    "end": 236.738,
+    "text": "favors arbitration — the idea that if"
+  },
+  {
+    "start": 236.738,
+    "end": 240.036,
+    "text": "two parties agree\nto resolve disputes privately,"
+  },
+  {
+    "start": 240.036,
+    "end": 243.334,
+    "text": "courts should hold them to it ."
+  },
+  {
+    "start": 243.334,
+    "end": 246.632,
+    "text": "For most of its life, that law"
+  },
+  {
+    "start": 246.632,
+    "end": 249.93,
+    "text": "lived quietly. Then\ncompanies began writing arbitration"
+  },
+  {
+    "start": 249.93,
+    "end": 253.228,
+    "text": "clauses into the\neveryday contracts ordinary people"
+  },
+  {
+    "start": 253.228,
+    "end": 256.526,
+    "text": "sign — for phones, banks, credit cards,"
+  },
+  {
+    "start": 256.526,
+    "end": 257.939,
+    "text": "and jobs ."
+  },
+  {
+    "start": 258.393,
+    "end": 261.087,
+    "text": "And here is what makes them so"
+  },
+  {
+    "start": 261.087,
+    "end": 263.78,
+    "text": "easy to miss. You do not sign"
+  },
+  {
+    "start": 263.78,
+    "end": 266.474,
+    "text": "these clauses with a pen at a"
+  },
+  {
+    "start": 266.474,
+    "end": 269.168,
+    "text": "desk. You accept them by activating a"
+  },
+  {
+    "start": 269.168,
+    "end": 271.861,
+    "text": "phone, opening an account, clicking a box,"
+  },
+  {
+    "start": 271.861,
+    "end": 274.555,
+    "text": "or showing up for your first day"
+  },
+  {
+    "start": 274.555,
+    "end": 277.248,
+    "text": "of work. The law treats that as"
+  },
+  {
+    "start": 277.248,
+    "end": 279.942,
+    "text": "a real agreement — and for the"
+  },
+  {
+    "start": 279.942,
+    "end": 282.635,
+    "text": "most part, the terms are not up"
+  },
+  {
+    "start": 282.635,
+    "end": 285.329,
+    "text": "for negotiation. It is take it or"
+  },
+  {
+    "start": 285.329,
+    "end": 288.022,
+    "text": "leave it, and \"leaving it\" can mean"
+  },
+  {
+    "start": 288.022,
+    "end": 290.716,
+    "text": "going without the service, or the job"
+  },
+  {
+    "start": 290.716,
+    "end": 291.101,
+    "text": "."
+  },
+  {
+    "start": 291.555,
+    "end": 294.8,
+    "text": "The powerful sentence\nis the class-action waiver."
+  },
+  {
+    "start": 294.8,
+    "end": 298.044,
+    "text": "Arbitration by itself\njust changes the venue"
+  },
+  {
+    "start": 298.044,
+    "end": 301.289,
+    "text": "— court versus a private arbitrator. The"
+  },
+  {
+    "start": 301.289,
+    "end": 304.534,
+    "text": "waiver does something\nmore: it forces every"
+  },
+  {
+    "start": 304.534,
+    "end": 307.779,
+    "text": "claim to be brought one person at"
+  },
+  {
+    "start": 307.779,
+    "end": 311.024,
+    "text": "a time. And for the small, scattered"
+  },
+  {
+    "start": 311.024,
+    "end": 314.269,
+    "text": "harms we just described, \"one person at"
+  },
+  {
+    "start": 314.269,
+    "end": 317.514,
+    "text": "a time\" can mean, in practice, \"no"
+  },
+  {
+    "start": 317.514,
+    "end": 320.758,
+    "text": "one at all,\" because no individual claim"
+  },
+  {
+    "start": 320.758,
+    "end": 323.54,
+    "text": "is large enough to pursue ."
+  },
+  {
+    "start": 323.994,
+    "end": 327.542,
+    "text": "This is where honest people split, and"
+  },
+  {
+    "start": 327.542,
+    "end": 331.09,
+    "text": "it is worth hearing both sides plainly."
+  },
+  {
+    "start": 331.09,
+    "end": 334.638,
+    "text": "Critics argue that\nmandatory arbitration with class-action"
+  },
+  {
+    "start": 334.638,
+    "end": 338.186,
+    "text": "waivers — what\nthey call \"forced arbitration\""
+  },
+  {
+    "start": 338.186,
+    "end": 341.734,
+    "text": "— can quietly close the courthouse door,"
+  },
+  {
+    "start": 341.734,
+    "end": 345.282,
+    "text": "leaving widespread small\nharms with no realistic"
+  },
+  {
+    "start": 345.282,
+    "end": 348.83,
+    "text": "remedy, decided in\nprivate proceedings that set"
+  },
+  {
+    "start": 348.83,
+    "end": 350.858,
+    "text": "no public precedent ."
+  },
+  {
+    "start": 351.312,
+    "end": 354.813,
+    "text": "Defenders argue the\nopposite: that arbitration is"
+  },
+  {
+    "start": 354.813,
+    "end": 358.314,
+    "text": "generally faster, cheaper,\nand less formal than"
+  },
+  {
+    "start": 358.314,
+    "end": 361.816,
+    "text": "a lawsuit, that the 1925 law reflects"
+  },
+  {
+    "start": 361.816,
+    "end": 365.317,
+    "text": "a long-standing policy\nof honoring agreements people"
+  },
+  {
+    "start": 365.317,
+    "end": 368.818,
+    "text": "make, and that\nindividual claimants can sometimes"
+  },
+  {
+    "start": 368.818,
+    "end": 372.319,
+    "text": "do as well or better than they"
+  },
+  {
+    "start": 372.319,
+    "end": 375.821,
+    "text": "would in a crowded court . Those"
+  },
+  {
+    "start": 375.821,
+    "end": 379.322,
+    "text": "empirical claims — about cost, speed, and"
+  },
+  {
+    "start": 379.322,
+    "end": 382.823,
+    "text": "outcomes — are genuinely disputed, and we"
+  },
+  {
+    "start": 382.823,
+    "end": 386.325,
+    "text": "are not going to pretend one side"
+  },
+  {
+    "start": 386.325,
+    "end": 389.826,
+    "text": "has settled them. The case is about"
+  },
+  {
+    "start": 389.826,
+    "end": 390.826,
+    "text": "who decides."
+  },
+  {
+    "start": 391.28,
+    "end": 394.786,
+    "text": "In 2011, the Supreme Court sided with"
+  },
+  {
+    "start": 394.786,
+    "end": 398.292,
+    "text": "AT&T. By a vote of five to"
+  },
+  {
+    "start": 398.292,
+    "end": 401.798,
+    "text": "four, it held that the Federal Arbitration"
+  },
+  {
+    "start": 401.798,
+    "end": 405.304,
+    "text": "Act preempts California's rule — that a"
+  },
+  {
+    "start": 405.304,
+    "end": 408.81,
+    "text": "state cannot refuse\nto enforce a class-action"
+  },
+  {
+    "start": 408.81,
+    "end": 412.316,
+    "text": "waiver just because it finds the waiver"
+  },
+  {
+    "start": 412.316,
+    "end": 415.822,
+    "text": "unfair. If the\ncontract says individual arbitration,"
+  },
+  {
+    "start": 415.822,
+    "end": 418.326,
+    "text": "individual arbitration it is ."
+  },
+  {
+    "start": 418.78,
+    "end": 422.284,
+    "text": "The opinion was written by Justice Antonin"
+  },
+  {
+    "start": 422.284,
+    "end": 425.787,
+    "text": "Scalia. A state rule that singles out"
+  },
+  {
+    "start": 425.787,
+    "end": 429.291,
+    "text": "arbitration's class-action waivers\nand blocks them, he"
+  },
+  {
+    "start": 429.291,
+    "end": 432.795,
+    "text": "reasoned, stands as an obstacle to the"
+  },
+  {
+    "start": 432.795,
+    "end": 436.299,
+    "text": "federal policy favoring\narbitration, and so it"
+  },
+  {
+    "start": 436.299,
+    "end": 439.802,
+    "text": "cannot stand. The federal law wins ."
+  },
+  {
+    "start": 440.256,
+    "end": 442.939,
+    "text": "Justice Stephen Breyer\nwrote the dissent, and"
+  },
+  {
+    "start": 442.939,
+    "end": 445.623,
+    "text": "it put the other half of the"
+  },
+  {
+    "start": 445.623,
+    "end": 448.306,
+    "text": "problem into words. For claims worth only"
+  },
+  {
+    "start": 448.306,
+    "end": 450.989,
+    "text": "a few dollars each, he argued, the"
+  },
+  {
+    "start": 450.989,
+    "end": 453.672,
+    "text": "class action is often the only realistic"
+  },
+  {
+    "start": 453.672,
+    "end": 456.355,
+    "text": "way to hold a large company accountable"
+  },
+  {
+    "start": 456.355,
+    "end": 459.039,
+    "text": "at all. Take it away, and you"
+  },
+  {
+    "start": 459.039,
+    "end": 461.722,
+    "text": "have not just changed the forum —"
+  },
+  {
+    "start": 461.722,
+    "end": 464.405,
+    "text": "you may have ended the case before"
+  },
+  {
+    "start": 464.405,
+    "end": 465.555,
+    "text": "it starts ."
+  },
+  {
+    "start": 466.009,
+    "end": 469.382,
+    "text": "That five-to-four split did not settle the"
+  },
+  {
+    "start": 469.382,
+    "end": 472.755,
+    "text": "country's mind, but it settled the law."
+  },
+  {
+    "start": 472.755,
+    "end": 476.128,
+    "text": "And seven years later, the Court extended"
+  },
+  {
+    "start": 476.128,
+    "end": 479.502,
+    "text": "it into the one place most adults"
+  },
+  {
+    "start": 479.502,
+    "end": 482.875,
+    "text": "spend their days: work. In Epic Systems"
+  },
+  {
+    "start": 482.875,
+    "end": 486.248,
+    "text": "v. Lewis, in 2018, by another five-to-four"
+  },
+  {
+    "start": 486.248,
+    "end": 489.621,
+    "text": "vote, with Justice\nNeil Gorsuch writing, the"
+  },
+  {
+    "start": 489.621,
+    "end": 492.994,
+    "text": "Court held that\nemployers, too, can require"
+  },
+  {
+    "start": 492.994,
+    "end": 496.367,
+    "text": "employees to arbitrate\nindividually and waive class"
+  },
+  {
+    "start": 496.367,
+    "end": 499.74,
+    "text": "or collective actions — and that doing"
+  },
+  {
+    "start": 499.74,
+    "end": 503.114,
+    "text": "so does not violate federal labor law"
+  },
+  {
+    "start": 503.114,
+    "end": 506.487,
+    "text": ". The same logic that governed your"
+  },
+  {
+    "start": 506.487,
+    "end": 509.378,
+    "text": "phone contract now governed your job."
+  },
+  {
+    "start": 509.832,
+    "end": 512.91,
+    "text": "Epic was not a quiet decision either."
+  },
+  {
+    "start": 512.91,
+    "end": 515.988,
+    "text": "Justice Ruth Bader\nGinsburg wrote a forceful"
+  },
+  {
+    "start": 515.988,
+    "end": 519.066,
+    "text": "dissent, arguing that\nforcing employees to face"
+  },
+  {
+    "start": 519.066,
+    "end": 522.144,
+    "text": "their employer one at a time ignored"
+  },
+  {
+    "start": 522.144,
+    "end": 525.222,
+    "text": "the very reason federal law lets workers"
+  },
+  {
+    "start": 525.222,
+    "end": 528.3,
+    "text": "act together — and she read part"
+  },
+  {
+    "start": 528.3,
+    "end": 531.378,
+    "text": "of it aloud from the bench, a"
+  },
+  {
+    "start": 531.378,
+    "end": 534.456,
+    "text": "step justices reserve for the rulings they"
+  },
+  {
+    "start": 534.456,
+    "end": 536.215,
+    "text": "most strongly oppose ."
+  },
+  {
+    "start": 536.669,
+    "end": 539.717,
+    "text": "So here is where it leaves you."
+  },
+  {
+    "start": 539.717,
+    "end": 542.765,
+    "text": "Mandatory arbitration clauses,\nwith class-action waivers, are"
+  },
+  {
+    "start": 542.765,
+    "end": 545.814,
+    "text": "now a standard feature of American life"
+  },
+  {
+    "start": 545.814,
+    "end": 548.862,
+    "text": "— in the contracts for your phone,"
+  },
+  {
+    "start": 548.862,
+    "end": 551.91,
+    "text": "your bank account,\nyour streaming apps, and"
+  },
+  {
+    "start": 551.91,
+    "end": 554.959,
+    "text": "very often your employment . You have"
+  },
+  {
+    "start": 554.959,
+    "end": 558.007,
+    "text": "almost certainly agreed\nto several of them,"
+  },
+  {
+    "start": 558.007,
+    "end": 561.055,
+    "text": "by doing nothing more than using a"
+  },
+  {
+    "start": 561.055,
+    "end": 563.232,
+    "text": "service or starting a job."
+  },
+  {
+    "start": 563.686,
+    "end": 566.506,
+    "text": "Whether that is a good thing depends"
+  },
+  {
+    "start": 566.506,
+    "end": 569.326,
+    "text": "on which argument\nyou find more convincing,"
+  },
+  {
+    "start": 569.326,
+    "end": 572.147,
+    "text": "and that is a real debate, not"
+  },
+  {
+    "start": 572.147,
+    "end": 574.967,
+    "text": "a settled one . What is not"
+  },
+  {
+    "start": 574.967,
+    "end": 577.787,
+    "text": "in dispute is the mechanism. Two ordinary"
+  },
+  {
+    "start": 577.787,
+    "end": 580.607,
+    "text": "rights — to sue in open court,"
+  },
+  {
+    "start": 580.607,
+    "end": 583.427,
+    "text": "and to join with others — are"
+  },
+  {
+    "start": 583.427,
+    "end": 586.247,
+    "text": "now, for most people, waivable by a"
+  },
+  {
+    "start": 586.247,
+    "end": 588.261,
+    "text": "sentence almost no one reads."
+  },
+  {
+    "start": 588.715,
+    "end": 592.141,
+    "text": "What can you actually do about it?"
+  },
+  {
+    "start": 592.141,
+    "end": 595.567,
+    "text": "Honestly, not much in the moment —"
+  },
+  {
+    "start": 595.567,
+    "end": 598.993,
+    "text": "the terms are rarely negotiable. But the"
+  },
+  {
+    "start": 598.993,
+    "end": 602.419,
+    "text": "argument itself is\nnot over. Lawmakers, regulators,"
+  },
+  {
+    "start": 602.419,
+    "end": 605.845,
+    "text": "and companies keep\nfighting over where mandatory"
+  },
+  {
+    "start": 605.845,
+    "end": 609.27,
+    "text": "arbitration should apply\nand where it should"
+  },
+  {
+    "start": 609.27,
+    "end": 612.696,
+    "text": "not, especially for the most serious kinds"
+  },
+  {
+    "start": 612.696,
+    "end": 616.122,
+    "text": "of claims. The line this series keeps"
+  },
+  {
+    "start": 616.122,
+    "end": 619.548,
+    "text": "chasing is, here too, still being drawn"
+  },
+  {
+    "start": 619.548,
+    "end": 620.037,
+    "text": "."
+  },
+  {
+    "start": 620.491,
+    "end": 623.702,
+    "text": "And notice what makes this different from"
+  },
+  {
+    "start": 623.702,
+    "end": 626.912,
+    "text": "everything else in this series. No officer"
+  },
+  {
+    "start": 626.912,
+    "end": 630.122,
+    "text": "took anything. No\nschool punished anyone. The"
+  },
+  {
+    "start": 630.122,
+    "end": 633.332,
+    "text": "power here was handed over voluntarily, in"
+  },
+  {
+    "start": 633.332,
+    "end": 636.542,
+    "text": "the most ordinary act of modern life:"
+  },
+  {
+    "start": 636.542,
+    "end": 639.752,
+    "text": "tapping a button to make a screen"
+  },
+  {
+    "start": 639.752,
+    "end": 640.669,
+    "text": "go away."
+  },
+  {
+    "start": 641.123,
+    "end": 643.767,
+    "text": "A thirty-dollar charge on a \"free\" phone"
+  },
+  {
+    "start": 643.767,
+    "end": 646.411,
+    "text": "ended up drawing one of the quietest"
+  },
+  {
+    "start": 646.411,
+    "end": 649.054,
+    "text": "but widest lines in modern law —"
+  },
+  {
+    "start": 649.054,
+    "end": 651.698,
+    "text": "the line between the rights you have"
+  },
+  {
+    "start": 651.698,
+    "end": 654.342,
+    "text": "and the rights you can sign away"
+  },
+  {
+    "start": 654.342,
+    "end": 656.985,
+    "text": "without realizing it . The Court did"
+  },
+  {
+    "start": 656.985,
+    "end": 659.629,
+    "text": "not take those rights from you. It"
+  },
+  {
+    "start": 659.629,
+    "end": 662.273,
+    "text": "said you were free to give them"
+  },
+  {
+    "start": 662.273,
+    "end": 664.916,
+    "text": "up. The fine print did the rest."
+  },
+  {
+    "start": 665.37,
+    "end": 668.399,
+    "text": "We have now watched the state search"
+  },
+  {
+    "start": 668.399,
+    "end": 671.428,
+    "text": "you, track you, take your property, and"
+  },
+  {
+    "start": 671.428,
+    "end": 674.457,
+    "text": "police your speech — and watched you"
+  },
+  {
+    "start": 674.457,
+    "end": 677.486,
+    "text": "hand over rights yourself, by contract. In"
+  },
+  {
+    "start": 677.486,
+    "end": 680.515,
+    "text": "every case, the\nsame question keeps returning"
+  },
+  {
+    "start": 680.515,
+    "end": 683.544,
+    "text": "in a new costume: where is the"
+  },
+  {
+    "start": 683.544,
+    "end": 686.573,
+    "text": "line, and who gets to move it?"
+  },
+  {
+    "start": 687.027,
+    "end": 689.971,
+    "text": "The next case\nmoves that question somewhere"
+  },
+  {
+    "start": 689.971,
+    "end": 692.915,
+    "text": "more intimate than a phone or a"
+  },
+  {
+    "start": 692.915,
+    "end": 695.859,
+    "text": "contract. Not what you carry, or what"
+  },
+  {
+    "start": 695.859,
+    "end": 698.803,
+    "text": "you sign, but what is inside your"
+  },
+  {
+    "start": 698.803,
+    "end": 701.747,
+    "text": "body. When the police arrest you —"
+  },
+  {
+    "start": 701.747,
+    "end": 704.691,
+    "text": "before any trial, before any conviction —"
+  },
+  {
+    "start": 704.691,
+    "end": 707.635,
+    "text": "can they take a sample of your"
+  },
+  {
+    "start": 707.635,
+    "end": 710.579,
+    "text": "DNA, and keep it? That is next"
+  },
+  {
+    "start": 710.579,
+    "end": 711.0,
+    "text": "time."
+  }
+];

@@ -1,0 +1,379 @@
+{
+  "episode": "EP50",
+  "slug": "centralpark",
+  "episode_id": "PD-2026-050-centralpark",
+  "case": "The Central Park Jogger Case / The Exonerated Five (1989 assault; 1990 convictions; 2002 vacatur; 2014 & 2016 settlements)",
+  "case_type": "Wrongful conviction / coerced juvenile false confessions (NOT a Supreme Court opinion — this is a multi-year human-justice saga sourced from trial record, the 2002 DA reinvestigation, and news of record)",
+  "sources_master": [
+    "New York County District Attorney (Morgenthau) reinvestigation — Affirmation in Response to Motion to Vacate (Nancy Ryan), Dec 2002, recommending vacatur of all convictions",
+    "People v. Wise et al. — motion to vacate granted by Justice Charles J. Tejada, N.Y. Supreme Court, Dec 19, 2002",
+    "NYPD 'Armstrong Report' (Jan 2003, panel chaired by Michael F. Armstrong) — internal review that disputed Reyes's lone-attacker claim; it did NOT prevail. The vacatur and DNA finding stand.",
+    "Reyes conviction record: People v. Matias Reyes (sentenced 33 1/3 years to life, Nov 1991)",
+    "2014 federal civil-rights settlement, McCray et al. v. City of New York (approx $41M; announced June 2014, approved Sept 2014)",
+    "2016 New York State Court of Claims settlement (approx $3.9M)",
+    "Contemporaneous news of record (NYT, etc.) for the May 1, 1989 Trump full-page ad and the 'wilding' coverage",
+    "Web verification pass 2026-07-23: WebSearch budget was exhausted, so verification was done via WebFetch against the well-cited public encyclopedic aggregation of the case record (Wikipedia 'Central Park jogger case', 'Matias Reyes', 'Korey Wise', 'Trisha Meili'), which itself cites the primary court/DA records and news of record. Primary court/DA PDFs were NOT directly fetched this session — see FACT_VERIFICATION report.",
+    "PRIMARY-SOURCE CITATION PASS 2026-07-23 (second pass, see EP50_centralpark_CITATIONS.v001.md): WebSearch remained exhausted; went straight to WebFetch on authoritative URLs. ENVIRONMENT NOTE — most news-of-record domains were BLOCKED/403 this session (nytimes.com, apnews.com, reuters.com, theguardian.com, nydailynews.com, cnn.com, time.com, web.archive.org, justia/courtlistener, and the washingtonpost-CDN primary-doc PDF). SUCCESSFULLY FETCHED independent corroborators: History.com (https://www.history.com/articles/central-park-five), ABC News (https://abcnews.com/Primetime/story?id=132017), Innocence Project (https://innocenceproject.org/central-park-five/), TheWrap, plus Wikipedia. RESULT: 4 of the 5 load-bearing beats now have >=2 independent FETCHED sources — vacatur DATE (Wiki+History), 2014 $41M city settlement (Wiki+History+TheWrap), Trump ad existence/date/papers/headline (Wiki+History), and Matias Reyes sentence+confession (Wiki+ABC+History). The 2016 ~$3.9M STATE settlement was DOWNGRADED high->medium (both fetched sources trace to one 2019 NYDN scoop = single-origin). Single-fetched-source items to keep hedged: Trump ad ~$85,000 cost + 'did not name teens' (Wiki only), Reyes April 17 1989 prior-park-rape (Wiki only), the exact '1-in-6-billion' DNA figure (Wiki only), judge NAME Tejada + ADA Nancy Ryan (Wiki + primary docs that exist but were 403). NO figures changed except the CP31 confidence downgrade. The harvested-but-unfetched NYT/AP/Reuters/NYDN URLs and the primary Ryan Affirmation PDF URL are recorded per-beat in each ledger item's 'sources' array as news-of-record anchors."
+  ],
+  "note": "Verified 2026-07-23 (web pass via WebFetch; WebSearch budget exhausted). Core spine (names, ages, attack date April 19 1989, no-DNA-match-at-trial, Reyes DNA match one-in-6-billion + lone-attacker confession, Dec 19 2002 vacatur by Justice Tejada, ~$41M 2014 settlement, ~$3.9M 2016 state settlement) is confidence:high and corroborated. Items still resting on approximate/reported figures (cumulative interrogation hours beyond the firm 7, Reyes's Lourdes Gonzalez murder exact month, exact per-person prison months, Trump ad exact dollar cost, per-defendant charge mix, specific prison facilities for Wise) are confidence:medium and carry a screen_phrasing field with the exact hedged wording to speak on screen. R2 RULE: real living people (the Five are living public figures; Trisha Meili is a living survivor; Matias Reyes is an incarcerated convicted criminal). No faces, no portraits, no likenesses — silhouettes/symbols only. The assault is treated CLINICALLY and non-graphically. The film's subject is the false-confession/wrongful-conviction injustice and the exoneration, NOT the assault. NO invented quotes. Where a famous line is not verbatim-confirmed, paraphrase as narration and say so.",
+  "DO_NOT_STATE_AS_FACT": [
+    "Do NOT state or imply the five were involved in the attack in any way. DNA identified Matias Reyes as the sole source; he said he acted alone; all convictions are vacated. They are the Exonerated Five.",
+    "Do NOT present the 2003 NYPD 'Armstrong Report' as evidence the Five may still be guilty. It was a contested internal police panel view that the DA and the courts did NOT adopt; the convictions remain vacated. If mentioned at all, frame it strictly as a rejected counter-narrative.",
+    "Do NOT assert an exact cumulative interrogation total (e.g. '30 hours') as fact. Firm fact = 'at least seven hours in custody before the cameras were turned on.' Larger totals are 'reported' / 'as much as.'",
+    "Do NOT assert a precise dollar figure for Trump's 1989 ad as exact. '~$85,000' is a reported estimate; the ad did NOT name the teenagers.",
+    "Do NOT assert Reyes crime specifics beyond the established record (e.g. exact month of the Lourdes Gonzalez murder). Established: he raped four women and murdered one (Lourdes Gonzalez) in 1989, and is believed to have raped a woman in the same part of the park two days before the jogger attack.",
+    "Do NOT invent or quote confession language, interrogation dialogue, or any quotation not on the record.",
+    "Do NOT show faces, portraits, or likenesses of any real living person (R2). Silhouettes/symbols only. Keep the assault clinical and non-graphic."
+  ],
+  "ledger": [
+    {
+      "id": "CP01",
+      "claim": "Episode identity and R2 dignity frame",
+      "detail": "This is the story of five Black and Latino teenagers — Antron McCray, Kevin Richardson, Yusef Salaam, Raymond Santana, and Korey Wise — who were coerced into false confessions, wrongfully convicted in 1990 for the 1989 Central Park jogger attack, imprisoned for years, and fully exonerated in 2002 after Matias Reyes confessed and DNA matched him alone. R2: all are living public figures; use no faces, no portraits, no likenesses — silhouettes, hands, symbols only. The doc's subject is coerced juvenile confessions and wrongful conviction, framed as a justice documentary. Fully ad-safe. Do NOT sensationalize.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case (aggregates 2002 DA reinvestigation, Tejada vacatur order, 2014/2016 settlements)"
+    },
+    {
+      "id": "CP02",
+      "claim": "The victim (Trisha Meili) — clinical",
+      "detail": "The victim of the assault was Patricia 'Trisha' Ellen Meili, a 28-year-old investment banker (a vice president at Salomon Brothers). She was for years known publicly only as 'the Central Park jogger' before disclosing her identity in a 2003 memoir. She is a living survivor. Treat with dignity; refer to her as 'the jogger' / 'Trisha Meili' plainly, no imagery of her, no graphic detail.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Trisha_Meili — confirmed age 28, VP at Salomon Brothers, identity revealed April 2003 memoir 'I Am the Central Park Jogger'"
+    },
+    {
+      "id": "CP03",
+      "claim": "The attack — date and place (CLINICAL, non-graphic)",
+      "detail": "On the night of April 19, 1989, Trisha Meili was attacked while jogging in Central Park, New York City, and was severely beaten and raped. STATE THIS CLINICALLY AND BRIEFLY — 'she was attacked and left for dead' is the ceiling of detail. No description of injuries, no re-enactment, no graphic language. This is a justice/false-confession documentary; the assault is context, not content.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — confirmed April 19, 1989, ~9–10 p.m."
+    },
+    {
+      "id": "CP04",
+      "claim": "Severity and survival (clinical)",
+      "detail": "Meili was found hours later with severe injuries, lost a large volume of blood, and was in a coma for 12 days (regained consciousness May 1, 1989). She survived but had no memory of the attack itself. Keep clinical: 'she survived, but could not remember what happened.' The absence of her testimony is legally relevant because the case against the teens rested on their confessions, not on her account.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Trisha_Meili — confirmed coma 12 days, no memory of the attack or hour before"
+    },
+    {
+      "id": "CP05",
+      "claim": "The five defendants — names and exact 1989 ages",
+      "detail": "The five were juveniles when arrested in April 1989: Antron McCray (15), Kevin Richardson (14), Yusef Salaam (15), Raymond Santana (14), and Korey Wise (16; then known as 'Kharey' Wise). AGES ARE LOAD-BEARING — the whole injustice is that children were interrogated for hours and convicted on coerced confessions. State ages precisely.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — ages confirmed exactly: McCray 15, Richardson 14, Salaam 15, Santana 14, Wise 16 (b. July 26 1972)"
+    },
+    {
+      "id": "CP06",
+      "claim": "The 'wilding' label (media term, contested origin)",
+      "detail": "Police and press described a group of teens as 'wilding' in the park that night, and the word became a national headline. Its origin is DISPUTED: investigative reporter Barry Michael Cooper reported that officers misunderstood teens referencing 'doing the wild thing' (lyrics from Tone Loc's song 'Wild Thing'). Present 'wilding' as a MEDIA/POLICE label of the era, NOT as established fact about what the five did — attribute the term to the coverage, not to the boys.",
+      "verified": true,
+      "confidence": "medium",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — origin attributed to Barry Michael Cooper / Tone Loc 'Wild Thing'; genuinely disputed",
+      "screen_phrasing": "\"The police and the papers called it 'wilding' — a word that became a national headline. Its origin is disputed; one account traces it to officers mishearing teenagers quoting a rap lyric. It described the media panic, not a proven act by these five.\""
+    },
+    {
+      "id": "CP07",
+      "claim": "The arrests (night of April 19-20, 1989)",
+      "detail": "Police detained a number of teenagers in and around Central Park that night in connection with several assaults reported in the park. The five were taken into custody and questioned over the following hours/days. They were rounded up amid a chaotic night of multiple reported incidents; the connection to the jogger attack was made by police during interrogation, not by physical evidence.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case"
+    },
+    {
+      "id": "CP08",
+      "claim": "The interrogations — hours, largely unrecorded, juveniles (THE CORE INJUSTICE)",
+      "detail": "The teens were subjected to lengthy police interrogation. FIRM, VERIFIED: the videotaped statements began April 21 after the suspects had been in custody for AT LEAST SEVEN HOURS of unrecorded interrogation; only the final statements were taped. The larger cumulative-hours figures sometimes cited (e.g. into the low tens of hours across the group, '~30 hours') are REPORTED/APPROXIMATE and were NOT independently confirmed this pass. This is the heart of the false-confession problem: hours of unrecorded pressure, then a short taped statement.",
+      "verified": true,
+      "confidence": "medium",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — 'in custody for at least seven hours' before videotaping confirmed; larger cumulative totals not verified",
+      "screen_phrasing": "FIRM: \"By the time the cameras were switched on, the boys had been in custody for at least seven hours — none of it recorded.\" If a larger total is used: \"Some accounts describe interrogations stretching far longer — as much as a day or more across the group\" (frame as reported, never as an exact figure)."
+    },
+    {
+      "id": "CP09",
+      "claim": "Absence of parents/counsel — especially Korey Wise",
+      "detail": "Korey Wise, 16, gave his videotaped statement ALONE — without a parent, guardian, or attorney present. The three younger boys who were videotaped (Santana, McCray, Richardson) had a parent present for the taped statement, but the preceding unrecorded questioning is where the pressure was applied. Keep precise: FIRM that Wise had no parent/guardian/counsel for his statement; do NOT overstate that all five had no adult for all questioning.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — Wise videotaped alone (no parent/counsel); Santana/McCray/Richardson videotaped with a parent present"
+    },
+    {
+      "id": "CP10",
+      "claim": "The confessions — coerced, taped/oral breakdown, later recanted",
+      "detail": "VERIFIED breakdown: FOUR of the five gave videotaped statements — Raymond Santana, Antron McCray, and Kevin Richardson (each with a parent present) and Korey Wise (alone). Yusef Salaam gave an ORAL (untaped) statement only; his videotaped statement was not taken/was rejected after he requested counsel — he signed and taped nothing. All statements were extracted after hours of unrecorded interrogation and were quickly recanted. The five have consistently said the confessions were coerced — that they were fed details, told they could go home if they talked, and pressured as frightened children. FRAME AS COERCED/FALSE.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — videotaped: Santana, McCray, Richardson, Wise; Salaam oral/untaped only",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Park_jogger_case — FETCHED 2026-07-23. 'Santana, McCray, and Richardson made video statements in the presence of parents. Wise made several statements unaccompanied by any parent, guardian or counsel... Salaam... neither made a videotape nor signed the earlier written statement.'",
+        "https://www.history.com/articles/central-park-five — FETCHED 2026-07-23. 'Four of the five teens, all from Harlem, confessed on videotape following hours of interrogation. The boys later recanted and plead not guilty, saying their confessions had been coerced.' (corroborates 4-of-5 videotaped and the coercion/recantation.)"
+      ],
+      "citation_note": "CONFIRMED by 2 independent fetched sources: FOUR of the five were videotaped and one (Salaam) was not (Wikipedia + History.com). The precise per-person breakdown — Santana/McCray/Richardson with a parent, Wise alone, Salaam oral-only — is on a single fetched source (Wikipedia, quoting the trial record). Safe to state; the load-bearing '4 taped / Salaam none' split has two sources."
+    },
+    {
+      "id": "CP11",
+      "claim": "The confessions contradicted each other and the crime scene",
+      "detail": "The statements were mutually inconsistent and did not match the known facts — they disagreed on time, place, who did what, what the victim wore, and how the attack unfolded. No confession accurately described the crime scene. This internal contradiction is a hallmark of the 2002 reinvestigation's conclusion that the confessions were unreliable.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case (2002 Ryan affirmation summary)"
+    },
+    {
+      "id": "CP12",
+      "claim": "NO DNA match at trial — semen excluded all five",
+      "detail": "The DNA/serology evidence available at the 1990 trials EXCLUDED all five defendants. Semen recovered from the victim and scene did not match any of the five; it belonged to an unidentified male. Prosecutors proceeded on the confessions despite the exculpatory forensic result. THIS IS LOAD-BEARING: the state convicted five children on coerced confessions while the physical evidence pointed to someone else. State it plainly.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — no DNA/semen match to any of the five at trial"
+    },
+    {
+      "id": "CP13",
+      "claim": "Donald Trump's full-page 'death penalty' ad (May 1, 1989)",
+      "detail": "On May 1, 1989 — before any trial — Donald Trump paid for full-page advertisements in all four major New York City newspapers, headlined 'BRING BACK THE DEATH PENALTY. BRING BACK OUR POLICE!' (the ad also read, in part, 'Criminals must be told that their Civil Liberties End When an Attack On Our Safety Begins!'). The ads are reported to have cost roughly $85,000. Trump did NOT name the teens, but the ad was universally understood as about this case. FRAME NEUTRALLY as documented public record of the media/political climate. The $85,000 is a reported estimate — hedge it.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — May 1 1989, four NYC papers, ~$85,000 (equiv ~$221,000 in 2025); headline and 'Civil Liberties End' line confirmed",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Park_jogger_case — FETCHED 2026-07-23. Quotes NYT: 'The ad does not name any defendant, instead referring collectively to \"roving bands of wild criminals.\"' Cost 'an estimated US$85,000 (equivalent to $221,000 in 2025).'",
+        "https://www.history.com/articles/central-park-five — FETCHED 2026-07-23. 'In May 1989, real estate developer (and future U.S. president) Donald Trump took out full-page ads in The New York Times, the New York Daily News, the New York Post and New York Newsday with the headline, \"Bring Back The Death Penalty. Bring Back Our Police!\"' (does NOT state cost or the not-named point).",
+        "https://www.nytimes.com/1989/05/01/nyregion/angered-by-attack-trump-urges-return-of-the-death-penalty.html — NEWS OF RECORD, harvested from Wikipedia citation apparatus; NOT directly fetchable this session (nytimes.com blocked in this environment).",
+        "https://www.nytimes.com/2002/10/23/nyregion/trump-draws-criticism-for-ad-he-ran-after-jogger-attack.html — NEWS OF RECORD, harvested; nytimes.com blocked this session."
+      ],
+      "citation_note": "CONFIRMED by 2 independent fetched sources: ad existence, May 1989 date, all four NYC papers, and the 'BRING BACK THE DEATH PENALTY' headline (Wikipedia + History.com). SINGLE fetched source only for the ~$85,000 cost AND the 'did not name the teenagers' point (Wikipedia, which quotes the NYT). Keep both hedged per screen_phrasing: 'reportedly ~$85,000' and attribute the not-named framing.",
+      "screen_phrasing": "\"On May 1, 1989 — before any trial — Donald Trump paid for full-page ads in New York's four major papers reading 'BRING BACK THE DEATH PENALTY. BRING BACK OUR POLICE!' The ads, reportedly costing around $85,000, did not name the teenagers — but no one doubted whom they were about.\""
+    },
+    {
+      "id": "CP14",
+      "claim": "Media firestorm and race",
+      "detail": "The case became a national symbol of urban crime and was covered with intense, racialized language. Five Black and Latino teenagers were tried in the press before trial. Race, class, and a fearful city are essential context for how coerced confessions went unquestioned. Handle soberly and factually; the theme is documented, not speculative.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case (contemporaneous coverage and retrospectives)"
+    },
+    {
+      "id": "CP15",
+      "claim": "First trial (1990) — McCray, Salaam, Santana",
+      "detail": "The first trial ran approximately June 25 to August 18, 1990. Defendants: Antron McCray, Yusef Salaam, and Raymond Santana. All three were convicted. They were tried as juveniles.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — first trial June 25–Aug 18, 1990 (McCray, Salaam, Santana)"
+    },
+    {
+      "id": "CP16",
+      "claim": "Second trial (1990) — Richardson and Wise; Wise tried as an ADULT",
+      "detail": "The second trial ran from approximately October 22 to December 1990. Defendants: Kevin Richardson (14, tried as a juvenile) and Korey Wise (16). Because Wise was 16, he was CHARGED AND TRIED AS AN ADULT under New York law of the time — the pivotal fact that sent him to adult jails and made his years the longest and hardest. Both were convicted.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — second trial Oct 22–Dec 1990 (Richardson, Wise); Wise the only one tried as an adult"
+    },
+    {
+      "id": "CP17",
+      "claim": "Charges and convictions (acquitted of the top count)",
+      "detail": "The five were convicted of various felonies arising from that night — the convictions included rape, assault, and robbery (and related riot charges); they were ACQUITTED of the most serious count (attempted murder). The precise per-defendant verdict mix varies by defendant. Keep it accurate: convicted of serious felonies including rape and assault; acquitted of attempted murder. Do NOT recite an exact per-person charge list on screen.",
+      "verified": true,
+      "confidence": "medium",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — convicted of assault/robbery/rape/riot charges; acquitted of attempted murder; per-defendant mix varies",
+      "screen_phrasing": "\"They were convicted of serious felonies — including rape and assault — but acquitted of the most serious charge, attempted murder.\" (Do not enumerate counts per person.)"
+    },
+    {
+      "id": "CP18",
+      "claim": "Sentences — juveniles 5-10 years; Wise 5-15 years as an adult",
+      "detail": "The four tried as juveniles (McCray, Richardson, Salaam, Santana) received indeterminate juvenile sentences of roughly 5 to 10 years. Korey Wise, sentenced as an adult, received roughly 5 to 15 years and was sent to adult prison. State the two tiers clearly; the adult sentence for Wise is the reason his story is the emotional spine of the prison act.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — 5–10 yrs juvenile (four); 5–15 yrs adult (Wise)"
+    },
+    {
+      "id": "CP19",
+      "claim": "Time actually served",
+      "detail": "The four juveniles served roughly 6 to 7 years each (Santana released ~1995; McCray ~1996; Richardson and Salaam ~1997). Korey Wise served roughly 13 years and was not released until 2002, after Reyes confessed (some sources say ~14 years — hedge Wise's figure). State served-time as approximate.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case & https://en.wikipedia.org/wiki/Korey_Wise — four served ~6–7 yrs (released 1995–1997); Wise ~13 yrs (released 2002; his page says ~14)",
+      "screen_phrasing": "\"The four younger boys each served about six to seven years. Korey Wise — tried as an adult — served roughly thirteen years, and was only freed in 2002.\" (Say 'roughly'/'about'; sources vary on Wise between 13 and 14.)"
+    },
+    {
+      "id": "CP20",
+      "claim": "Korey Wise in the adult system",
+      "detail": "Because he was tried as an adult, Wise served his sentence in the adult prison system — reportedly including Rikers Island early on and state facilities such as Attica and, later, Auburn (where he crossed paths with Reyes). He was the oldest, served the longest, and happened to be incarcerated near Matias Reyes, which set the exoneration in motion. Keep the prison detail sober and non-graphic. NOTE: the specific facility list (Rikers/Attica) is commonly reported but was not confirmed this pass — Auburn IS confirmed as the site of the Reyes encounter; hedge the rest.",
+      "verified": true,
+      "confidence": "medium",
+      "source": "https://en.wikipedia.org/wiki/Korey_Wise (adult system, exact facilities not enumerated) & https://en.wikipedia.org/wiki/Matias_Reyes (Auburn Correctional Facility, ~2001)",
+      "screen_phrasing": "\"Tried as an adult, Korey Wise served his time in adult prisons — the only one of the five to do so. In one of them, Auburn, he would cross paths with the man who actually committed the crime.\" (Avoid asserting a specific facility list beyond Auburn.)"
+    },
+    {
+      "id": "CP21",
+      "claim": "Matias Reyes — the actual lone attacker",
+      "detail": "Matias Reyes is a convicted serial rapist and murderer who was already serving a long prison sentence for other crimes when, in 2002, he confessed that he alone attacked the Central Park jogger. He is an incarcerated convicted criminal (R2: no glorification, no face; name him factually as the person the DNA identified).",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Matias_Reyes — 2002 confession, acted alone; convicted serial rapist/murderer",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Park_jogger_case — FETCHED 2026-07-23. 'In November 1991, he was sentenced to 33½ years to life after he pleaded guilty to the top counts in each case.' 'In 2002, Reyes told officials that on the night of April 19, 1989, he had assaulted and raped the female jogger.'",
+        "https://abcnews.com/Primetime/story?id=132017&page=1 — FETCHED 2026-07-23 (ABC News). 'Reyes was sentenced to 33 1/3 years in prison after pleading guilty in 1991 to a string of three rapes and one rape-murder on Manhattan's Upper East Side, near Central Park.' Describes him as 'the convicted murderer who has come forward after 13 years to say that he committed the notorious 1989 rape of a jogger.'",
+        "https://www.history.com/articles/central-park-five — FETCHED 2026-07-23. Confirms Reyes was 'a positive DNA match to the evidence found at the crime scene' and 'confessed to the Meili attack.'"
+      ],
+      "citation_note": "CONFIRMED by 3 independent fetched sources: Reyes as convicted serial rapist/murderer, 33 1/3-to-life sentence (1991 guilty plea), and his 2002 confession that he committed the attack. 'Acted alone' corroborated (ABC: 'come forward... to say that he committed' it; History: confessed)."
+    },
+    {
+      "id": "CP22",
+      "claim": "Reyes's other crimes establishing him as the attacker",
+      "detail": "Reyes committed a series of rapes in New York in 1989 and murdered a pregnant woman, Lourdes Gonzalez, while her children were nearby (in 1989 — treat the exact month as unconfirmed; do NOT assert 'June'). He is believed to have raped a woman in the SAME AREA of Central Park during the day on April 17, 1989 — TWO DAYS BEFORE the jogger attack — establishing his presence and pattern. He pleaded guilty and was sentenced to 33 1/3 years to life in November 1991. These crimes corroborate that he was the Central Park attacker. Keep Reyes specifics within the established record.",
+      "verified": true,
+      "confidence": "medium",
+      "source": "https://en.wikipedia.org/wiki/Matias_Reyes — April 17 1989 park rape (two days prior, same area) confirmed; Lourdes Gonzalez murder in 1989 (month not specified in source); 33 1/3-to-life Nov 1991 confirmed",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Park_jogger_case — FETCHED 2026-07-23. 'Reyes was believed to have raped another woman in the same area of the park during the day on April 17, two days before the attack on Meili.' '...he was sentenced to 33½ years to life... in November 1991.'",
+        "https://abcnews.com/Primetime/story?id=132017&page=1 — FETCHED 2026-07-23 (ABC News). Corroborates 33 1/3-to-life sentence and 1991 guilty plea to 'three rapes and one rape-murder... near Central Park' (does NOT mention the April 17 prior park rape).",
+        "https://www.nydailynews.com/services/central-park-five/profile-matias-reyes-article-1.1308560 — NEWS OF RECORD (NY Daily News Reyes profile), harvested from Wikipedia citations; nydailynews.com blocked this session — NOT fetched."
+      ],
+      "citation_note": "CONFIRMED by 2 fetched sources: the 33 1/3-to-life sentence / Nov 1991 guilty plea (Wikipedia + ABC News). SINGLE fetched source (Wikipedia) for the April 17, 1989 prior-park-rape 'two days before' detail — keep the hedged 'is believed to have.' Lourdes Gonzalez murder month remains unspecified (1989 only) — do NOT assign a month.",
+      "screen_phrasing": "\"Reyes was already a convicted serial rapist and murderer. Just two days before the jogger was attacked, he is believed to have raped another woman in the same part of the park — the same predator, the same ground.\" (Do not assign an exact month to the Lourdes Gonzalez murder.)"
+    },
+    {
+      "id": "CP23",
+      "claim": "Reyes met Korey Wise in prison, then confessed (2002)",
+      "detail": "Reyes and Korey Wise were both held at Auburn Correctional Facility around 2001. Reyes subsequently told a corrections officer, and then authorities in 2002, that he had committed the Central Park jogger attack alone. His coming forward triggered the DA's reinvestigation. Keep the chain clear: Wise was still in prison for a crime he did not commit when the real attacker, by chance, was nearby.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Matias_Reyes — met Wise at Auburn in 2001; told a CO, then confessed to officials in 2002"
+    },
+    {
+      "id": "CP24",
+      "claim": "DNA match to Reyes — and he acted ALONE",
+      "detail": "DNA testing in 2002 confirmed Matias Reyes as the source of the semen recovered from the victim (matched to a factor of one in 6,000,000,000). Reyes stated he committed the attack alone. The single-attacker conclusion matched the physical evidence that had EXCLUDED the five in 1990. This is the forensic hinge of the exoneration: one man's DNA, no accomplices.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case & https://en.wikipedia.org/wiki/Matias_Reyes — DNA match 1 in 6,000,000,000; acted alone",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Park_jogger_case — FETCHED 2026-07-23. 'his DNA matched the DNA evidence at the scene, confirming that he was the sole source of the semen found in and on the victim \"to a factor of one in 6,000,000,000 people\".'",
+        "https://www.history.com/articles/central-park-five — FETCHED 2026-07-23. Reyes was 'a positive DNA match to the evidence found at the crime scene' (confirms the DNA match; does NOT state the 1-in-6-billion figure).",
+        "https://innocenceproject.org/central-park-five/ — FETCHED 2026-07-23. 'DNA evidence exonerated them and implicated the real perpetrator—a convicted murderer and rapist.'",
+        "https://www.nytimes.com/2002/12/06/nyregion/a-crime-revisited-the-decision-13-years-later-official-reversal-in-jogger-attack.html — NEWS OF RECORD, harvested from Wikipedia citations; nytimes.com blocked this session — NOT fetched."
+      ],
+      "citation_note": "CONFIRMED by 3 fetched sources: DNA matched Reyes as the source and he was the sole/lone attacker (Wikipedia + History + Innocence Project). The EXACT figure 'one in 6,000,000,000' rests on a SINGLE fetched source (Wikipedia), which attributes it to the 2002 Ryan affirmation / DA record. Safe to state, but if a source must be named on screen, say 'the district attorney's reinvestigation.'"
+    },
+    {
+      "id": "CP25",
+      "claim": "Reyes not charged for the jogger attack (statute of limitations)",
+      "detail": "By the time Reyes confessed in 2002, the statute of limitations for the jogger attack had expired, so he was not (and could not be) newly charged for it. He remained imprisoned for his other convictions. State plainly to preempt the natural viewer question 'why wasn't he charged?'",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — statute of limitations expired; not charged for the jogger attack"
+    },
+    {
+      "id": "CP26",
+      "claim": "The DA reinvestigation (Morgenthau / Nancy Ryan)",
+      "detail": "Manhattan District Attorney Robert Morgenthau's office reinvestigated. Assistant DA Nancy Ryan led the review and filed an affirmation in December 2002 concluding the confessions were unreliable and recommending that all five convictions be vacated. This is a PRIMARY document for the exoneration and should be the anchor citation for the 'the state itself reversed course' beat.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — Morgenthau DA office; ADA Nancy Ryan led review; Dec 2002 affirmation recommending vacatur",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Park_jogger_case — FETCHED 2026-07-23. Names Morgenthau's office and ADA Nancy Ryan; Dec 2002 affirmation recommending all five convictions be vacated.",
+        "https://innocenceproject.org/central-park-five/ — FETCHED 2026-07-23. Confirms the DA moved to vacate after DNA implicated the real perpetrator.",
+        "PRIMARY DOCUMENT — Nancy E. Ryan, 'Affirmation in Response to Motion to Vacate Judgment of Conviction,' Supreme Court of the State of New York, County of New York, Dec 5, 2002. PDF: https://games-cdn.washingtonpost.com/notes/prod/default/documents/c7ba1e71-fc62-4169-a008-bcc8938ff808/note/6e97303c-37a7-44b2-aa42-c0992729cdee.pdf — harvested from Wikipedia citations; returned HTTP 403 this session — NOT fetched, but URL exists as the primary anchor.",
+        "https://www.nytimes.com/2002/12/06/nyregion/a-crime-revisited-the-decision-13-years-later-official-reversal-in-jogger-attack.html — NEWS OF RECORD, harvested; nytimes.com blocked this session — NOT fetched."
+      ],
+      "citation_note": "The DA-reinvestigation-recommended-vacatur beat is CONFIRMED by 2 fetched sources (Wikipedia + Innocence Project). The specific attribution to ADA NANCY RYAN and the Dec 2002 affirmation rests on a single fetched source (Wikipedia) PLUS the primary document itself (the Ryan Affirmation PDF, which exists but was 403 this session). Strongly documented; safe to state 'the Manhattan district attorney's office, under Robert Morgenthau,' and attribute the reinvestigation to the DA's office rather than naming Ryan on screen if a conservative phrasing is preferred."
+    },
+    {
+      "id": "CP27",
+      "claim": "Convictions VACATED — December 19, 2002 (Justice Tejada)",
+      "detail": "On December 19, 2002, New York Supreme Court Justice Charles J. Tejada granted the motion and vacated all convictions of the five. This is the legal moment of exoneration. Date and judge are load-bearing — state precisely.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — vacated Dec 19, 2002 by Justice Charles J. Tejada",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Park_jogger_case — FETCHED 2026-07-23. 'The five defendants' convictions were vacated by New York Supreme Court Justice Charles J. Tejada on December 19, 2002.'",
+        "https://www.history.com/articles/central-park-five — FETCHED 2026-07-23. 'On December 19, 2002, a New York Supreme Court justice vacated the convictions of the five previously accused men.' (confirms date + court; does NOT name Tejada).",
+        "https://www.nytimes.com/2002/12/20/nyregion/convictions-and-charges-voided-in-89-central-park-jogger-attack.html — NEWS OF RECORD (NYT, day-after report), harvested from Wikipedia citations; nytimes.com blocked this session — NOT fetched.",
+        "PRIMARY: People v. Wise et al. — motion to vacate granted by Justice Charles J. Tejada, N.Y. Sup. Ct., Dec 19, 2002 (reported at 752 N.Y.S.2d 837 / 194 Misc.2d 481). Court-record databases (justia/courtlistener) returned 403 this session — NOT fetched."
+      ],
+      "citation_note": "CONFIRMED: the Dec 19, 2002 vacatur date and that a New York Supreme Court justice vacated all five convictions are corroborated by 2 independent fetched sources (Wikipedia + History.com). The specific judge NAME 'Charles J. Tejada' is on a single fetched source (Wikipedia) plus the primary case citation People v. Wise — well documented, safe to state. Date and judge remain load-bearing; state both precisely."
+    },
+    {
+      "id": "CP28",
+      "claim": "The Armstrong Report dissent (HANDLE CAREFULLY — do NOT state as fact)",
+      "detail": "A NYPD internal review released in January 2003 (the 'Armstrong Report,' a panel chaired by attorney Michael F. Armstrong) found no misconduct in the 1989 investigation and disputed Reyes's lone-attacker account, suggesting the five might still have been involved. This view did NOT prevail: the DA moved to vacate, the court vacated the convictions, and the DNA identified Reyes as the sole source. The report itself conceded 'the word of a serial rapist killer is not something to be heavily relied upon.' If the doc addresses counter-narratives at all, frame it accurately — a contested internal police view the courts and DA did NOT adopt; the convictions remain vacated. Do NOT present it as an open question about guilt.",
+      "verified": true,
+      "confidence": "medium",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — Armstrong panel (Jan 2003, chaired by Michael F. Armstrong); disputed but did not prevail",
+      "screen_phrasing": "If used at all: \"A police panel later questioned whether Reyes truly acted alone. But the district attorney and the courts rejected that view — the DNA pointed to one man, and the convictions stayed vacated.\" (Never imply the Five may be guilty.)"
+    },
+    {
+      "id": "CP29",
+      "claim": "Civil rights lawsuit filed (2003)",
+      "detail": "After exoneration, the five filed a federal civil-rights lawsuit against New York City (filed 2003), alleging malicious prosecution, racial discrimination, and coerced confessions. The city contested it for roughly a decade before settling.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — McCray et al. v. City of New York, filed 2003"
+    },
+    {
+      "id": "CP30",
+      "claim": "2014 NYC settlement — approximately $41 million",
+      "detail": "In 2014, New York City settled the civil suit for approximately $41 million (announced June 2014, approved September 2014) — roughly $1 million for each year of wrongful imprisonment. Reported apportionment: about $7.1 million each to McCray, Richardson, Salaam, and Santana, and about $12.2 million to Korey Wise (reflecting his longer, adult incarceration). State the total as '~$41 million' (firm); the exact per-person split is reported and should be spoken as approximate.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — ~$40–41M (June 2014 announced / Sept 2014 approved); ~$7.1M each to four + $12.2M to Wise",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Park_jogger_case — FETCHED 2026-07-23. 'The settlement was officially approved in September 2014. Santana, Salaam, McCray, and Richardson each received around $7.1 million from the city for their years in prison, while Wise received $12.2 million because he had served six additional years.'",
+        "https://www.history.com/articles/central-park-five — FETCHED 2026-07-23. 'City officials fought the case for more than a decade before finally settling for $41 million,' which 'equaled about $1 million for each year of imprisonment.'",
+        "https://www.thewrap.com/central-park-five-received-additional-3-9-million-settlement-from-new-york-in-2016-report/ — FETCHED 2026-07-23. References 'the $41 million received in 2014.'",
+        "https://www.nytimes.com/2014/09/06/nyregion/41-million-settlement-for-5-convicted-in-jogger-case-is-approved.html and https://www.reuters.com/article/us-usa-crime-jogger-idUSKBN0EV08X20140620 — NEWS OF RECORD, harvested from Wikipedia citations; both domains blocked this session — NOT fetched."
+      ],
+      "citation_note": "CONFIRMED by 3 independent fetched sources: the ~$41M total 2014 NYC settlement (Wikipedia + History.com + TheWrap). The per-person split (~$7.1M each to four, $12.2M to Wise) rests on a single fetched source (Wikipedia) — keep as 'about'/'around' per screen_phrasing.",
+      "screen_phrasing": "\"In 2014, New York City settled for roughly $41 million — about a million dollars for every year these men lost. Around $7.1 million went to each of the four; about $12.2 million to Korey Wise, who had served the longest.\""
+    },
+    {
+      "id": "CP31",
+      "claim": "2016 New York State settlement — approximately $3.9 million",
+      "detail": "In 2016, the five reached an additional settlement with New York State (via the Court of Claims) for approximately $3.9 million total, with amounts varying by length of incarceration. This is separate from and on top of the 2014 city settlement. State as approximate.",
+      "verified": true,
+      "confidence": "medium",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — 2016 NY State suit settled for $3.9M, amounts varying by time served",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Central_Park_jogger_case — FETCHED 2026-07-23. 'In 2016, the state-court suit settled for $3.9 million, with varying amounts related to the period of time that each man had served in prison.'",
+        "https://www.thewrap.com/central-park-five-received-additional-3-9-million-settlement-from-new-york-in-2016-report/ — FETCHED 2026-07-23. 'received a newly discovered $3.9 million settlement from the New York State Court of Claims in 2016 in addition to the $41 million received in 2014, according to the New York Daily News.'",
+        "https://www.nydailynews.com/new-york/ny-central-park-five-claims-settlement-20190609-... — ORIGINATING NEWS OF RECORD (NY Daily News, June 2019 scoop that both above trace back to); nydailynews.com blocked this session — NOT fetched."
+      ],
+      "citation_note": "DOWNGRADED high→MEDIUM. Two fetched outlets carry the ~$3.9M state figure (Wikipedia + TheWrap), but BOTH trace to the SAME originating source — a June 2019 New York Daily News report — so this is effectively single-origin, not two independent sources. The figure itself is consistent and plausibly firm, but until the NYDN report (or the Court of Claims record) is fetched directly, treat as 'reported' on screen.",
+      "screen_phrasing": "\"Two years later, in 2016, a separate settlement with New York State reportedly added roughly $3.9 million more.\" (Say 'reportedly'; single-origin figure.)"
+    },
+    {
+      "id": "CP32",
+      "claim": "Terminology — 'The Exonerated Five' (preferred), formerly 'Central Park Five'",
+      "detail": "The men are now known as 'The Exonerated Five.' The older label 'Central Park Five' refers to the case/era. Prefer 'the Exonerated Five' when referring to the men as people; 'the Central Park jogger case' or 'the Central Park Five case' when referring to the legal case. Do not use dehumanizing era language.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — 'Exonerated Five' term popularized after 'When They See Us' (2019)"
+    },
+    {
+      "id": "CP33",
+      "claim": "Aftermath and public lives",
+      "detail": "The five became advocates for criminal-justice reform. Yusef Salaam was elected to the New York City Council (2023). Their story was told in Ken Burns's documentary 'The Central Park Five' (2012) and Ava DuVernay's dramatized series 'When They See Us' (2019). Use for the closing/reckoning act to show lives rebuilt. State the Salaam election year as firm; keep other biographical detail general.",
+      "verified": true,
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — Salaam elected NYC Council 2023; Burns doc 2012; 'When They See Us' 2019"
+    },
+    {
+      "id": "CP34",
+      "claim": "The justice theme — juvenile interrogation and false-confession science",
+      "detail": "The case is a landmark in the study of false confessions, especially by juveniles: youths are disproportionately likely to confess falsely under prolonged, unrecorded interrogation, to accept suggested details, and to comply with authority to end the ordeal. The case contributed to reform pushes for recording interrogations and for protections when minors are questioned. Present the SCIENCE as established (well-documented research consensus), while attributing specific reforms carefully. This is the doc's thesis and its ad-safe 'why it matters' spine.",
+      "verified": true,
+      "confidence": "high",
+      "source": "False-confession research literature (Kassin et al.); case retrospectives. Present as research consensus; attribute specific reforms carefully."
+    },
+    {
+      "id": "CP35",
+      "claim": "The 'sixth' teen (Steve Lopez) — keep peripheral",
+      "detail": "A sixth teenager, Steve Lopez, was also charged in connection with that night; his case was handled separately (he pleaded to a lesser charge). His conviction was later vacated in 2022 (under DA Alvin Bragg). He is NOT one of 'the Five' and should not be folded into their story. Mention only if needed for completeness; do not distract from the five-person spine.",
+      "verified": true,
+      "confidence": "medium",
+      "source": "https://en.wikipedia.org/wiki/Central_Park_jogger_case — Steve Lopez conviction vacated 2022 under DA Alvin Bragg",
+      "screen_phrasing": "Optional/peripheral: \"A sixth teenager charged that night, Steve Lopez, had his own conviction vacated years later, in 2022.\" (Do not fold him into 'the Five.')"
+    }
+  ]
+}

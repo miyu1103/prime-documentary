@@ -1,0 +1,56 @@
+EP83_max737 — 画像発注 バッチ 6/24（8枚）
+区分: ACT_1 — 前日の便と、翌朝の便 / ACT_2 — なぜ起きないはずだったか
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, airline livery, tail marking, company colour, human face, facial features, portrait, identifiable person, wreckage, debris, fire, smoke plume, crash site, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) X041.png
+   [X041]  flags: 
+   A headset lying on an empty cockpit seat, the cord coiled, one bright light above
+
+2) X042.png
+   [X042]  flags: 
+   A tropical sea horizon at mid morning from very high, the curve of the earth faint, empty sky, bright daylight
+
+3) X043.png
+   [X043]  flags: 
+   A single seat in an airline operations office, a desk lamp burning, papers face down and blank
+
+4) X044.png
+   [X044]  flags: 
+   An aircraft nose seen head on at dawn on an empty apron, plain unpainted, both sensor vanes visible on the sides
+
+5) X045.png
+   [X045]  flags: 
+   A cockpit voice recorder unit on a bench beside the flight data recorder, plain orange casing, hard lamp
+
+6) X046.png
+   [X046]  flags: 
+   A trim wheel still and silent beside an empty pilot seat, dust in the light
+
+7) X047.png
+   [X047]  flags: 
+   A full flight simulator box raised on six hydraulic legs in a dark training hall, one bright floodlight beneath it
+
+8) X048.png
+   [X048]  flags: 
+   The same simulator box from below, the hydraulic legs extended, cables running to the floor, one bright floodlight in the hall

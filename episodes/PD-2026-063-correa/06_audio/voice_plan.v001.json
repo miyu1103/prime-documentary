@@ -1,0 +1,2909 @@
+{
+  "episode_id": "PD-2026-063-correa",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "She was handed a number and told to bide her time.",
+      "text_sha256": "sha256:9ad89d9338754d3bcd9e2328bf033b9c165c8c974d993e99eac34d38ae9e734e",
+      "idempotency_key": "sha256:2f5da3873f78d4baeccfa74d4ea6877be7ddbd787bf1f20ee265bb293d203cb8"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Forty-seven.",
+      "text_sha256": "sha256:f4c20f09da9d547b960b603a5f8db3902d37f06286c77132489f9447dacc0eef",
+      "idempotency_key": "sha256:cfd57f63e3a801215448bdef450aa95a24674a176f632a1639d022eaa3bb0eb0"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Two hours later, she got up and left.",
+      "text_sha256": "sha256:f93811db18d2d289b9ff035873f36d4cdac6dd523f52976d1c991ae4d5af5827",
+      "idempotency_key": "sha256:02e5a997cba53fedad05a203fec5be6a6222be0f64cfef72d5a672b1e89f0f98"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "The case is Correa v. Hospital San Francisco, decided by the United States Court of Appeals for the First Circuit on the thirty-first of October, 1995.",
+      "text_sha256": "sha256:5034cad86b767acfce8669c9f2cc2333158b9f4101ed205337b7c9fbf861eebd",
+      "idempotency_key": "sha256:ccb7355a2c6e8e2d7dc5a0b2726a24929bf3f9d5a83ce239e6fe92969298c74b"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Nobody at that hospital ever told Carmen Gonzalez no.",
+      "text_sha256": "sha256:71d988f70b03128c4ee05c5631f900b5be366cb3c103011223f161bca070ea8f",
+      "idempotency_key": "sha256:3999ebd27f736ddccda7cf88672ed9222cc5a89cad67e911ab282a569d96b647"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Nobody discharged her.",
+      "text_sha256": "sha256:470db529dc8253b53f98646afd8bd3ef563d517b707b6e41b65eaf40340799b7",
+      "idempotency_key": "sha256:60c71c8399e89810cb9d8696887b2a33c4ae8bf8635506e46fabb0ad962c0d5a"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "A jury awarded her family seven hundred thousand dollars, and the First Circuit did not reduce it by a dollar.",
+      "text_sha256": "sha256:063f050de9fce3fb66acab1c6c8d5aec06181dd6f2414241c062470144d6a185",
+      "idempotency_key": "sha256:6e1977638af97347f9f5a970e0d1ea6ada466adb0777a1f9c190b1ea616cb1d3"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On the morning of the sixth of September, 1991, a sixty-five-year-old widow in Puerto Rico woke up feeling, in her son's words, real bad.",
+      "text_sha256": "sha256:5d1212dbfc66877a0b83f1fc4a09d006d9079ef47df15fde2f49f53f6ee54e2e",
+      "idempotency_key": "sha256:d533941fb2e6747b55cf2536fdfa26665feb2b3405b55f871cbd7ecf3b73c424"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Chills.",
+      "text_sha256": "sha256:5b9f0f48825eb35d7285a4339fc99eca763f0f48939f8b98c8794a95247b5819",
+      "idempotency_key": "sha256:94681bab53aaaffa3bedcbd3234805a730b82cf7fc1f35e6d0113bb76d0ba790"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Cold sweat.",
+      "text_sha256": "sha256:9c232b6878f05587d576c513017712bc2f2af233812b7b1d5e8af9f077f37554",
+      "idempotency_key": "sha256:344f60d5eec887286423df1fd5f556bbe9172524974f130d8a849234b1353a65"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Dizziness.",
+      "text_sha256": "sha256:7d5f49d8ffd4d74ed82859e6137bb777d56bf316cf4fa84e2309b19b5a319a9e",
+      "idempotency_key": "sha256:f5bcbb1f3f9cb44503fe78046e564bd153889c41d7425d4d39929787192ac220"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Chest pains.",
+      "text_sha256": "sha256:7db55f0b0cb85924ad2165a2f413db4caa097ec2489767a5fa5a5932cf07e167",
+      "idempotency_key": "sha256:cb324f7c83e2bc1fca71359a0070fa2021542fd8670113559ca44d80853a89f7"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Her name was Carmen Gloria Gonzalez Figueroa.",
+      "text_sha256": "sha256:8600af826163cabddc6da7f1b1b2474083d1b5a618ee5b589a84869f82e9a002",
+      "idempotency_key": "sha256:541d4035d76bc9ffcd8911e391459c22d71637c71cfd48e7fa025f734b192393"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She asked her son Angel to drive her to the emergency room at Hospital San Francisco — HSF in the opinion — where she had been treated before.",
+      "text_sha256": "sha256:a65610401a8779efff026c69602638d44a649f0a5a612d126666d5349ae02b68",
+      "idempotency_key": "sha256:7c6355ee2f77bbbfc9b9c01bb8325a4df21bad2a60d07614b3573cdd014b1f00"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She was inside no later than one o'clock in the afternoon.",
+      "text_sha256": "sha256:96d0d500cc712bcc37ebd84ceb5feefb09848905c234669d9f5408404edb0b63",
+      "idempotency_key": "sha256:cfc885248db660991658e8a1803667e23fda843f00d08cc7f8af451010d6bf00"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Start with what was in dispute, because almost everything in this case runs through it.",
+      "text_sha256": "sha256:ebdc182f8701c69b1b1ede20355a025484ace6c30a0367ff80dca82cc37d27ff",
+      "idempotency_key": "sha256:36b9dde360ee91ec6af3372cc212aa8f42b481f459bafa517b507c3953635d36"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The evidence is conflicted, the court wrote, as to whom she saw and what that person was told about her condition.",
+      "text_sha256": "sha256:b05e2a5b33c4aa3a9b2582f0c301e0c5858ec102020320bb9f0673ad9434b6f6",
+      "idempotency_key": "sha256:24cbf5fb854ccf115f1aab4eea4af4a53cc0b9e68f38e79e5a96c3e3e7b613c8"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Angel Correa testified that he implored the receptionist to have someone take care of my mother, because she feels sick and has chest pains.",
+      "text_sha256": "sha256:7c743ed43113c81a52230dfb70a1d1f25f9b17d9f5470cfaf95ca3b611dcaed3",
+      "idempotency_key": "sha256:e46459a93d9a6200aa1a9780943e79d49f69d327bbd7e6f865440785c9dc555b"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Hospital disagrees, maintaining that its personnel were told only that Ms. Gonzalez felt dizzy and nauseated.",
+      "text_sha256": "sha256:54c7bfe363e02e230cbda987da6b0d32994cd3fbcb1c9dcc169574681390ff5b",
+      "idempotency_key": "sha256:48b7ea9adb6b2a5c0ba086a335ff5159824f792085c1911159df414d925d2721"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two accounts.",
+      "text_sha256": "sha256:4dfc6f4a307ffb864e487d7716833641e6e0cc97f6578ec6883cb18aea646103",
+      "idempotency_key": "sha256:f7dce142a639ac9575840bbac3515347359e8cfd9e5a7800d4b60ca611fac32f"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One counter.",
+      "text_sha256": "sha256:e7f24bdd5abef9252da031d4ea4c66ee669ad580fe5eec47a7db2c2c5935fc90",
+      "idempotency_key": "sha256:4e65bf1f8c1b003425a43834a01adad9d7f19b4ab35ff9ac4cb4f53e9ad79bf2"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No way, now, to stand between them.",
+      "text_sha256": "sha256:4c756ef24a38cd953f8fe859bc44b89eccf36bcdbabbcf217a43c4de7f8f0fbb",
+      "idempotency_key": "sha256:34890d39042dc7cfa5b5484cc53e70e1c7c3a4728f97aecf2c080fcc0e5780f3"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "What follows is therefore not a set of appellate findings.",
+      "text_sha256": "sha256:fe1e54a5e6894ab149571cd3a765607b98bf5143bc8fce7e7edb1c6903be67b5",
+      "idempotency_key": "sha256:2f913ab178a66a9dcc46c4a971aae1d17a16e882fb92580d2ec22c25aaa801fc"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "When the losing side attacks the sufficiency of the evidence, the court of appeals must, in the opinion's own words, take both the facts and the reasonable inferences therefrom in the light most hospitable to the jury's verdict.",
+      "text_sha256": "sha256:c613a06dbbc35831cb9a1f5e6f8dc7a300e4d027066530b3ef8421a15ec4212c",
+      "idempotency_key": "sha256:cc296d629c828ecb69b4add5c73abbcad958db17b425d837ff32ca6269a64054"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Judge Selya, writing for the panel, described what he was working with in one phrase: the thicket of conflicting testimony and the chasmal gaps in the direct evidence.",
+      "text_sha256": "sha256:14517dbf7cfed8b66dca299275f22f002167801f6a019ec1dbe7860a8acfb1a0",
+      "idempotency_key": "sha256:93b2abb5a6cd95735da931563dee3fbc29ae71ed666179365066ab2945845445"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "So this is the version of that afternoon a jury was entitled to believe.",
+      "text_sha256": "sha256:63bfe63707148be991c2145e01e5f7098ef5c12906c42e788d4bf8cd538a7f7d",
+      "idempotency_key": "sha256:f6dc6326ee0796888a8a99fec0d57ce9b5053cd92d980936ca50b8f70f548c4c"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is not the only one offered.",
+      "text_sha256": "sha256:c39fae061f4f97710005e52290af262c3bd19d1c6322e7f5038883090aeacc12",
+      "idempotency_key": "sha256:8bb2658d62312137a06b400e2a89a09263ac44e0f9844be27428ae8cafd5f11f"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In any event — and this the opinion states as undisputed — a Hospital employee assigned the patient a number, forty-seven, told her to bide her time, and checked her medical insurance card.",
+      "text_sha256": "sha256:43e10e873c31f5c417c98f37eabcd1f27e19241e0764dec93a772ad2b43f82d9",
+      "idempotency_key": "sha256:04ffb1a11b1f59684956109e7eceffe51d9592a41648b9ee59a471a91e920e4b"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That card matters, though not for the reason it looks like it should.",
+      "text_sha256": "sha256:44bccd26ea72f5e745525ccf29e5d025ca031b8d45fcd4123bfe35e015c3819c",
+      "idempotency_key": "sha256:706993a61b4f6d8314de136d54d186f74332eb2509ac6b29d11ec33004b0bc85"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Her health plan required her to seek routine treatment at Hospmed, a local clinic, during its business hours, but allowed her to see any appropriate health-care provider in case of an emergency.",
+      "text_sha256": "sha256:465f15ac3084d4b90d5855e4383f7c0333b92ea3163a067fe02d8c2b74e6625e",
+      "idempotency_key": "sha256:61df51cb041f4ac13b940241fdd5e96dec1844a26afb7111aa991ab6dac3f647"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She was entitled to be where she was.",
+      "text_sha256": "sha256:87c2396c9840931f976dc4f9f7c414e74db319228319385863d83808e3fc3658",
+      "idempotency_key": "sha256:fe73c45d37add44f5c2e37bcd87c62af4ff2f343fe4aee34ffdae1cdce5a1545"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Then the waiting.",
+      "text_sha256": "sha256:87dd5959755feb72275104f3feefcc6758e45bedb5f66b0c32dc57cbd6d4bf9a",
+      "idempotency_key": "sha256:44d599935e1eacc7c9ec6da4b8dac3605cc3bb9d453455102a182190717817ff"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "After approximately one hour, Angel called Esther.",
+      "text_sha256": "sha256:b678dc59fc8d2ee40dcadf23cbd12e249d1c33cb4b826a0d5d302551029c2077",
+      "idempotency_key": "sha256:6749dea6406bbca540ed2568200866b2c26ac1d7aced9ddb24af389799092dce"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Esther came.",
+      "text_sha256": "sha256:14e6a59987f2c3c6ffffda0f046b9de8588d9de1fa7148012663dc133c5d7f4a",
+      "idempotency_key": "sha256:341ab42efbd6f89cec8e9283ff5fd42300e23f95ab24446f085ca3b51e8727d6"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Angel left, and heard number twenty-four called on his way out.",
+      "text_sha256": "sha256:f63a45939b6a164616e3189be62a748d2b70f582cf55172e7096fdf3486accdc",
+      "idempotency_key": "sha256:579fa2154d0df7da26202aa8f8ceb7a8fe2e536809065a22e2f8520a1b240119"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Now accompanied by her daughter, the opinion says, Ms. Gonzalez maintained her unproductive vigil for an additional forty-five to seventy-five minutes.",
+      "text_sha256": "sha256:dfec191db7769b7874a1158402f0d83976fa845aca75c1e48bd1336c87b52748",
+      "idempotency_key": "sha256:3c5b0c55d37f2035cf8db993dce21278385611bebee35e7e8408c8704329dc45"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Hospital staff continued blithely to ignore her.",
+      "text_sha256": "sha256:78bf1ff5f9ec34b2e54c475f6f8cbe7f60ed406b21e3e73f49b1e58a3f7a2cea",
+      "idempotency_key": "sha256:04749241f174bb48ef86a83f3cff16b7978b31cfc5bd9874aaff2e89ffb7b909"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Blithely.",
+      "text_sha256": "sha256:dfee3250936b9683202a49e283d242c2811631b285595d045b79d71cd1ff38d8",
+      "idempotency_key": "sha256:f04fe39840c0acca5104a88886ffdce21bdae743f3c47caf7a2060c9b96e9cfe"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is the court's adverb, not ours, and it is the only description of the staff's conduct anywhere in the record.",
+      "text_sha256": "sha256:903354a81b8b7a1e976f064f0d2a5a51467bc9c73b35896d2793bec306debc04",
+      "idempotency_key": "sha256:1dcb433e1b0ba663c94d54cbc7d59d6e35131a2b1dfd72c67809512f43700352"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Add up the clock.",
+      "text_sha256": "sha256:cfb38882c99dfc234fb573f6ce2c5d73e61aace25a7b9d86a9f1010abcb7970c",
+      "idempotency_key": "sha256:23d105e4e4e4dc51f4af4a2fc31dc0522591e4aac1d3993348e896f994a40e7b"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "From no later than one o'clock until somewhere between three and half past three, she was inside that emergency room — something between two hours and two and a half — with a number in her hand and a card that had already been checked.",
+      "text_sha256": "sha256:3f0909b3c2988276e6bf703161963a94f99be23dbfd626425caca8d11474dcd1",
+      "idempotency_key": "sha256:c94b9146959574929dee67a9dcc214b1d3b9eac6b98131b50245545137cac217"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "No physician saw her.",
+      "text_sha256": "sha256:293bc83488b4dc8f9e3cae92710eb2ddd8308d02427738ec6d279b7f7292f10d",
+      "idempotency_key": "sha256:95c0b227a966c7b78898fe242be38ac910df00c0b47cb73aa45c87ff2da93293"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Weary of waiting, the two women drove to the office of Dr. Acacia Rojas Davis, the director of Hospmed, arriving there between three and half past three in the afternoon.",
+      "text_sha256": "sha256:c0ad5df70a375e3edb57c0b3fa78331caddf552c45e4367f597a365cad3ed893",
+      "idempotency_key": "sha256:9ab9bc84079e99549e90710dee09e5302299e36caa7d1b87ceaeb4f2a02a7532"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The opinion does not describe anyone turning her away.",
+      "text_sha256": "sha256:23960de8d6be7d2d5c12c2e80392514f840bac4adc1029c95b9d41f70748d86e",
+      "idempotency_key": "sha256:0e2e859b8f9b6598d007e8e6d0b4db28ea977349a95922e6c0543711cc0745a0"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It does not describe anyone discharging her.",
+      "text_sha256": "sha256:9cc3deac1856500d5a6a6e2d4e93163a9d45e0b8b439c2eb8f7d33bba6c4fdbe",
+      "idempotency_key": "sha256:7f28951e1c739c7835a5d9ad233af76d761609c699ee669344b444011864c48a"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She left because she had been waiting.",
+      "text_sha256": "sha256:c2356e138083ffd751a2aad807fdf621491552415da07718cc5cbd39839348f4",
+      "idempotency_key": "sha256:9ed86a1ce471144d989f93d703202766e331c8aa020de20b479344e116effe36"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At the clinic she told Dr. Rojas that she was nauseated and had taken a double dose of her high blood pressure medication.",
+      "text_sha256": "sha256:1193ddd167ec51cf9d4cf5514a01168e07de8a8ef6fd36153b76e8fc06346562",
+      "idempotency_key": "sha256:752777eeb91b30e09bb112ad3f0df83dedf0b1b378c95f61347c10cf877c779e"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Her blood pressure was very low: ninety over sixty.",
+      "text_sha256": "sha256:8b4a193241f1eebb789a7fbced66ec984b223518c41685dea7d6f5ceccbf1efa",
+      "idempotency_key": "sha256:3cec24864641d3830201c1ac9d1da77a017e46861098e6717ff6d6aff408ceba"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "When she began vomiting, the physician immediately started intravenous infusions of fluids.",
+      "text_sha256": "sha256:8f743ce29276b9fb0dba13ca942c3bd584bc525631261587af279d735d941fa3",
+      "idempotency_key": "sha256:3439055563131fe7d98287f8089a4e9eca256bcfa922d28a6cd7ec8df4fb0160"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She also dispensed medicine to control the emesis.",
+      "text_sha256": "sha256:2251438bc9ddcaa7d93faf1246819d416935811334c7e5a8481a031d075a1c31",
+      "idempotency_key": "sha256:603433fdf6808faf4f34524707ebc012212a5c19426f179ff90884f85c9d2b03"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Despite these ministrations, the opinion continues, Ms. Gonzalez's condition steadily deteriorated.",
+      "text_sha256": "sha256:a860a6b0e69a16e8cd20ea62deee8356150e2cf7e6fff77a6738cfc343f854d5",
+      "idempotency_key": "sha256:728ae9e87c9d34ce3c00b592c8dd0e80c24277a104c393d021e3ec38320e61e7"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Dr. Rojas had to resuscitate her soon after her arrival.",
+      "text_sha256": "sha256:c0807bab95576e5034b546adaf0b65704611ae1f322adcf6ae4e217a4a5204aa",
+      "idempotency_key": "sha256:9b77d9088c6af2699048ba8ed17ebc485a71b6cc826c90a28f65d13b76e8cfbb"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The doctor then attempted to transfer her to the Hato Rey Community Hospital, but could not commandeer an ambulance.",
+      "text_sha256": "sha256:16e81632ea3f83a39bb1bfd1262d677c07e83ff8a3d440b0e7c4548246a2958b",
+      "idempotency_key": "sha256:dfdc447b8d021ae67cd03458068526dade2ca6e369dc5a3fa032ffbd0cdba5f0"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "As Dr. Rojas began preparations to transport Ms. Gonzalez by van, the patient expired.",
+      "text_sha256": "sha256:8df08bbabf1a7722da9cae1045a62187dfc3c8a196052ef528e9bf8fec60df27",
+      "idempotency_key": "sha256:13885bc0d97b1464cdd3e7b5834b16da968722a4708a2d8af2826457c8567fe9"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Her death, which occurred at around half past four, was attributed to hypovolemic shock.",
+      "text_sha256": "sha256:7381eec02c4dda52a6f03a755580a2fd94c5a7952de7152160e5081da033e2d2",
+      "idempotency_key": "sha256:d4a0ac8149881f8019893d3d8028db64365f1cbe19d3fcab176339d8996ec995"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is the whole of what the record says about how she died.",
+      "text_sha256": "sha256:8f434984a7dbf7fcc1e12a4c115154c75ece2087095a9c460617f1c899e41786",
+      "idempotency_key": "sha256:7036262779ce719eb92d1d703457f3602a616024a3d6a86eddad192eae86d8ab"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The opinion never says the hospital's delay killed her.",
+      "text_sha256": "sha256:2145c2e4e90d3023c32c5f06f329a489bb0174afcc81b9f4b52b907284720a73",
+      "idempotency_key": "sha256:2e0bb4d7c1b82323a771f7cb413726ebdc4dce124edfbaf06856b2400a4a4a8c"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It never says she would have lived.",
+      "text_sha256": "sha256:ac458f8ad1b786cda504b0f9031612c562a585bf161b74412b4f00c8d1510021",
+      "idempotency_key": "sha256:4b73aea082a30ca6c2cde6525ccf045c37d55b16241f51fcbbc4a6e566652ab0"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Her death was attributed to hypovolemic shock, it happened at another facility, and it happened under a physician's care.",
+      "text_sha256": "sha256:c30621addf84894b239b75a7959127fb0e8950c50de79b5bca6653c3be7c0dd6",
+      "idempotency_key": "sha256:2420415f3d6091a686724a84b4679c2842c070944fc7dd29f9d1718f888f37c8"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The federal case that follows is not about her death.",
+      "text_sha256": "sha256:b3155e5eb9762f387125fb590d186d2d80c2bd7d8a226280fe0d389c2588195d",
+      "idempotency_key": "sha256:7e007194cb2db85b9bc61541af994bddbb88d527eedf33b29444f33b205168b0"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is about what happened while she was still sitting there.",
+      "text_sha256": "sha256:63a15139c76c592c4f77106208ca73e9aaabe42e9065845fbc5617c7405bcc4a",
+      "idempotency_key": "sha256:9a32a0fcee2e0d28a0b6f512870ed738021d08fc65ca19ee7d17345d346ae6d9"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One more thing from that afternoon.",
+      "text_sha256": "sha256:1bf676806505b957949102f1f941ea0dcae0a3ba81602c33e2ef85dd9920426e",
+      "idempotency_key": "sha256:ea291aaf975ecd0edacecf74e70f99b5a4627558fe5acdf3e035d0a0aebc9347"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Dr. Rojas testified that a nurse called from HSF to advise her that the patient would be coming to Hospmed for treatment.",
+      "text_sha256": "sha256:4afe0de5dcb0320800a25c77ad5f6c315c78969147b4c59ed84c2cfa00959fb3",
+      "idempotency_key": "sha256:022a1b4a5842089ff1f8df9401422ab6b5da047bfd00a598340a6d80c30553bc"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "She said that this conversation probably occurred earlier that day, perhaps around one o'clock.",
+      "text_sha256": "sha256:f6d37b623874f4f686ce08ea87b183d69aac7fd9cff7419ee5d4a53e09a4bbb7",
+      "idempotency_key": "sha256:d1add3dc69e2540bfa1ba5d6456c7dae1f559d8ee56a5a31c8b808e4e05b9610"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The panel called that a datum suggesting that HSF tried to shunt Ms. Gonzalez to Hospmed as soon as it scrutinized her insurance card.",
+      "text_sha256": "sha256:4359acb7f0b92e2d4871d6c2f01cc52d30ffdd35439b0e54aedbc6b2793f4b5d",
+      "idempotency_key": "sha256:a141aa38c8d5bf8afb501cb788e7744031a8337d37e101744e49a66619085f02"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Probably.",
+      "text_sha256": "sha256:bb78112f20f2c256111a388cc0fcfb95e279ccadb28b403492fba6a8d3fc7745",
+      "idempotency_key": "sha256:215c7bc028b871f6e0cab4c57bda70133fd97a8b96687a3b726634a599530d9f"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Perhaps.",
+      "text_sha256": "sha256:a627919d78ec4cce6252b297f0ffb7f02eeadb3fdd6767d973b2e0b936c5efd0",
+      "idempotency_key": "sha256:9fc49b10aac0bb4474a96e7cb53a6e676659cfcb7ef5c554d67af56979459210"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Suggesting.",
+      "text_sha256": "sha256:54bf5198fa773f4a62484da647ad28dfa8319a45a45e775349e05024241a7500",
+      "idempotency_key": "sha256:489ab448e808908d36a221c0c2a7850325027477cdc356e1f5a9d9e47bec2c8d"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Nobody ever proved why the call was made, or by whom, or what was in anybody's mind.",
+      "text_sha256": "sha256:a4f084688fc1edb2f503107d6a43e9970af22d4b307d6a21c4826fa19c67925d",
+      "idempotency_key": "sha256:f60717bf63b11e532a820493b286b0dde3b02c2750207520ba305233c3ecb46b"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "What the jury had was a physician's recollection of a call, placed at about the hour a card was checked.",
+      "text_sha256": "sha256:03b6b3cdcffbe93919e0140e361adbfe00d7496d301ea0b74c8164ab02f3c02f",
+      "idempotency_key": "sha256:d9483a743ff34356074ebb8d00bf430a51bf9deca7569c89b61d90e0abd231d8"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Seven people sued.",
+      "text_sha256": "sha256:507ff2b09d03d6e26fcb5badb46a93fe0fc9443ccdae7840f2897851d4fc9f1b",
+      "idempotency_key": "sha256:c7df06c3384b2c84c94e21eaabefc129d5611dd9c705af5897f5f91fc4665294"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Ms. Gonzalez's three adult children — Angel, Esther and Gloria — and four of her grandchildren, the progeny of her late son, Felix Correa, who had predeceased her.",
+      "text_sha256": "sha256:1d6e5c1429415c4208e195ebce8461e12d148cd41bb06bbc69eb92ed647bd984",
+      "idempotency_key": "sha256:a67e44dd9a077ec52d5d3fab41473bc126b3c3e662f88da12800fb204ba6202a"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The grandchildren are named in the opinion: Glendalis, Glorimar, Angelis and Sarai.",
+      "text_sha256": "sha256:ee5c17c15e4c6a8a6b4a99c7eb315d42890f7c0e82c33fd7f0caf93b85118cb1",
+      "idempotency_key": "sha256:c7cb388351a35e384e9b6828745da84a6eebefcbc1526f819fae634f72032421"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "They sued in the United States District Court for the District of Puerto Rico.",
+      "text_sha256": "sha256:a59d74736f5e18aa398d9247cec4c5604cf418e666521cfcedcce29f0bb66e44",
+      "idempotency_key": "sha256:4a772eadcd9df2ed24fd8f5eadd7abfef9e01170a8f8cdbe01d862bcf6463af1"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "They alleged two violations of a federal statute called EMTALA — inappropriate screening and improper transfer — and a pendent claim of medical malpractice under local law.",
+      "text_sha256": "sha256:bb7144bf45be2f17e25f4b0497120c4758684704fbe0654c8cbeedc42625a25f",
+      "idempotency_key": "sha256:848cddb98a45c90246e8966d5bea205b2cd098ca93fbcae144098fa5f10c8f2e"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The malpractice claim did not survive.",
+      "text_sha256": "sha256:214e37c716ffbe8236e11a460d86d08632cc2a3612f42e7acbcc8e49553f9874",
+      "idempotency_key": "sha256:be397a3ccc9576818d6b6a7a887cd6a61a1bf14a49f84b47beb7eed677a2cd38"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The district court dismissed it, and that ruling was never appealed.",
+      "text_sha256": "sha256:c5ac08fc549812f8309e445d92d664ec4d1a6c7affd4975aa9bfc196f41937d2",
+      "idempotency_key": "sha256:32ee37a22a516e941dce6f739e0f4b1b036d9c02ec9ac31c783736e8dbb9add2"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "From that point on, nobody in this case was arguing about whether she was treated well.",
+      "text_sha256": "sha256:c469cba4df066928ce6012ed1af4d0d871bb3493d48cc0703e482f5a910a6108",
+      "idempotency_key": "sha256:3e2d11e87367ca2fa29a2402280299104b1507612197af5726ed41f69249f7d2"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Only about whether she was looked at.",
+      "text_sha256": "sha256:7b2daf48ff8f3dec6b6a5ed4cea0628f1a396efc9cd650a1dd4ebd886a91aec2",
+      "idempotency_key": "sha256:a6d8752dd267433de54279688a9b839533c44163bbb3c3d252926c3add2b13d1"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The case went to the jury on the two EMTALA theories, and the jury returned a series of special written findings.",
+      "text_sha256": "sha256:65c3454ee5cab8d0f1ecc49f54f7fc30b9d58d6e3f0aaf56cedebdf05dbb7209",
+      "idempotency_key": "sha256:531ecbae8cb01a5b7bf70d1271757eeeea4497eb1f4b595b4c5145a5a9c98f58"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It found that she did present an emergency medical condition, and the evidence to that effect, the appeals court later said, was ample.",
+      "text_sha256": "sha256:9be01bf54e67cbee05d6d8c732473cc240546a4fedc769e92e09eb9b0febffea",
+      "idempotency_key": "sha256:8f28911a48367961465d4d1a048657c1848f0c7ef0f4a5f56e9cad489c102350"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It found that the hospital had failed to afford her an appropriate screening.",
+      "text_sha256": "sha256:420234db37de3e7ce33aa707488d2536028d4c478a336565952f169db613fe3c",
+      "idempotency_key": "sha256:26270ef10586d3e355d7a390d2eb418e8e67015f2cfc05d6af55a53e73ba8608"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And it found, separately, that the hospital had violated the statute by transferring her improperly, before her condition had stabilized.",
+      "text_sha256": "sha256:47d77b0b9cf9d0aea62799b5a89f803fbd6c6255ea491086de167c7ea99c4cd1",
+      "idempotency_key": "sha256:f22892ff0ff04d3a9962c1ed32fd047cfd759a71e62d31be8b833c01a0967301"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That third finding needs a marker on it.",
+      "text_sha256": "sha256:a6eac3d2f2488eea81949f399ccbcd948f622508cae15266e535d215393a28bf",
+      "idempotency_key": "sha256:62e41e7c03cc4aea342e2efcfb616204e1cfb00ff4d22ad8e91b58fc13ae2f24"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The court of appeals never reviewed it.",
+      "text_sha256": "sha256:b4b9ba3f97cdb3a84a42381a51be24eaf483c5c532c8c538015e7e47ca2bf458",
+      "idempotency_key": "sha256:3f35ad37ca1e0b87fdfb72650b7587338b6b638b1333f8e0b5d4056c0ca1b09a"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In footnote seven the panel wrote that because it upheld the screening finding, it need not comment upon the jury's finding that HSF also violated EMTALA by improperly transferring Ms. Gonzalez before her condition had stabilized.",
+      "text_sha256": "sha256:c24975769597d0d5572b784b5fb34d830131f4e62a4b2d0e1d2eb05313484d95",
+      "idempotency_key": "sha256:52fdaf0bbcd2d2304197b54992748d4740607f7c02a490070e920fc0b7d65783"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It plays no part in what this case decided.",
+      "text_sha256": "sha256:7ef86ffe1963c1f6809e982f8389a2d5d5673b335ab1b7fea4598cda24761236",
+      "idempotency_key": "sha256:628756d7334f696d7791dbc652c80e286080e638379fc7f2d874138a9d358be6"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Then the money.",
+      "text_sha256": "sha256:a102083f9d7bf336a5119c2c3eaa50c801e308c6ffee7606dc0fc91b8eac782b",
+      "idempotency_key": "sha256:37d9398eaa188fcf2ea3424f7a388b2b1f44e4dd143c6dcda8a603f46a76be59"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The jury assessed two hundred thousand dollars in damages on the decedent's account, payable to the heirs.",
+      "text_sha256": "sha256:c614f476edd6ae32870286037cf48198f812184fb40ddcafe9a7e43d4a9feccd",
+      "idempotency_key": "sha256:02e045ed1cb1ebe7f478dc4c36bf6b68fbdd4744cc47c2d969d3f97688eab157"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And five hundred thousand dollars for the pain, suffering, and mental anguish experienced by the survivors — one hundred thousand apiece for the three children, and fifty thousand apiece for the four grandchildren.",
+      "text_sha256": "sha256:fa8814dbcb107816329964005271b19f96021136a4de4d041e4f960ca4eaf470",
+      "idempotency_key": "sha256:719482e28f55a94ea969dfda5100f6bc28f7107fc7bff4472385193ea036af88"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Seven hundred thousand dollars in total.",
+      "text_sha256": "sha256:acb3662f349b88f96e22e97b5ddb42329369a50ce6eabbd4ab957d41f25941c1",
+      "idempotency_key": "sha256:e70bfccf8e967b0dc75525f473fde65e492e2f4baa72077a9e6a840511873d50"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The district court denied the Hospital's post-trial motions for judgment as a matter of law, a new trial, and remission of damages.",
+      "text_sha256": "sha256:aec37766049aa836b95f6c484d8858fa826de9a0ef7d4f9eb31d802edd709506",
+      "idempotency_key": "sha256:b0a354fcdf7560266268c5b479376cbb17afa308efbe48fe75fac09c92dd1f36"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Judge Juan Perez-Gimenez, who had tried the case, gave the award what the appeals court later called his unconditional seal of approval.",
+      "text_sha256": "sha256:2cfe0f43dae8d93a084f33a4504fd0aa0d0e9ce8f79a6353bcc51e0e8b5d4251",
+      "idempotency_key": "sha256:e9dc553b4d26575ee44087d5b4eace566fd261347c745c170fdeec216b43350c"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So the hospital appealed.",
+      "text_sha256": "sha256:62e249f1ed0b91d4f4048385cc0eeedd55934b50329359e28f0b6e568906d981",
+      "idempotency_key": "sha256:c26d2b883730b8cc1757a05dc0e1bf7c4910d35f507b437d0522b1820102efcc"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Comprehensively.",
+      "text_sha256": "sha256:276187180d8e2501a56f20480ee0fdc56cec58b08da80947e53c2ab4cbdbb4a8",
+      "idempotency_key": "sha256:726ff95442f2edab0f8ffa96fec2d8f9f2df3b59a8a3613681f8854a38514b4b"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "HSF assigns error in no fewer than eight iterations, the opinion notes: five attacks on the sufficiency of the evidence, one demand for a new trial, and two attacks on the damages.",
+      "text_sha256": "sha256:4bb21ea3b53c2b69f0fe9debd3ae26c52e201ffb10119d9acef9c0a03df00754",
+      "idempotency_key": "sha256:630303953b31da0c94b5c55192eee3e70401590a11db228662692366cfcad68e"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Eight ways of saying the same thing.",
+      "text_sha256": "sha256:7e80f8f4527a1518988c4ae03e183984b5da015687dc6b05bb7448aeba93e417",
+      "idempotency_key": "sha256:c3ff843d151a8a6abcb8306813b271ae4f86215b17d32798b34d54b8a31ca219"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "None of them worked.",
+      "text_sha256": "sha256:401f7be8274cd07e4eb137ecc2d3069bf73540a6c50b8d13bf26f2a6e2fc74c5",
+      "idempotency_key": "sha256:3650933713a04fb176066f2ed0ff4d59daa7fdfe6c9b317ccacbc7d795f21609"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Why they failed depends on what this statute actually promises.",
+      "text_sha256": "sha256:95484618e8b0bc932fe164e57faba66b3639aa6b10c4795ec323034440f61787",
+      "idempotency_key": "sha256:303b70bdc0f4fe74492b800ea92cb459fd94bbe89d697cf2b6e3a515f863af5a"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is less than most people assume.",
+      "text_sha256": "sha256:a68e8f7eb79a93301113acb0755f2ae641436794344370815219f9f3fa6d34a6",
+      "idempotency_key": "sha256:b6061811f8c3e0823a78f7459b50c8e969cc9719e3763f55d4886f4e682704f4"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "EMTALA is the Emergency Medical Treatment and Active Labor Act.",
+      "text_sha256": "sha256:84f4c9e5d5e9066f9890b278c9829d5736f4ad87d598beee75163c9d7ca52d2e",
+      "idempotency_key": "sha256:5d67b823745602d52ae7dcb4b8b45b4228c529df332541f48a574cb18060f25f"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In 1995, the First Circuit had never interpreted it.",
+      "text_sha256": "sha256:5a364b04a5e2b7003729ef6c7b3cffe220f000fb6b876d23b1cb092a2ac34d8a",
+      "idempotency_key": "sha256:e4e9e329cc7576edb2443423a8bcd96725248f6f222f49a5782dfe5ca05b535e"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The opening line of the opinion says as much: this appeal requires us to interpret, for the first time, the Emergency Medical Treatment and Active Labor Act.",
+      "text_sha256": "sha256:b73c31aa725eeb0bae51d9438fa4b410d3b0270bf06e0ede827f49dcaf5245bc",
+      "idempotency_key": "sha256:5b5d30364b4da7cbcceb2bbae028d299490ba9b09f6daeda624ba73ff94e154a"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Six years earlier a plaintiff had put an EMTALA question to the same court, in a case called Wilson v. Atlanticare Medical Center, and the court refused to answer it, because the issue had not been preserved.",
+      "text_sha256": "sha256:f59ce45f567350be023d8cb74fb16779a8d47dfa5481be442a227b8ef9e4514c",
+      "idempotency_key": "sha256:f244df4dcf8961cb17561b924ae4ee23af47ce56b58e8ff96340093bcc07608a"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So the panel started where Congress did.",
+      "text_sha256": "sha256:1e71acb619e4fecab3da9620ce554a8f4e13784cbd97d3f686ae616e4a3d8933",
+      "idempotency_key": "sha256:0b880ec4abc292d09bf378ee55f2ae3fab377e8ee7dfa3af4a4a9fea2f367549"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "As health-care costs spiralled upward and third-party payments assumed increased importance, Congress became concerned — this is the House report, quoted in the opinion — about the increasing number of reports that hospital emergency rooms are refusing to accept or treat patients with emergency conditions if the patient does not have medical insurance.",
+      "text_sha256": "sha256:1cdc9da84e3be4f566976232f8a157e5d32ca7cae0e08962b16abdaad5483b36",
+      "idempotency_key": "sha256:f208937ba3db4eba2a736a168b160cc8bfd5bc05ffe46a13a7b5c49f9a8633e7"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The enforcement mechanism was not a police force.",
+      "text_sha256": "sha256:4d6d1ffeec57f422a95955df300024f0bf23ce3d996e57ccb9baa90619fac6c0",
+      "idempotency_key": "sha256:7a007cb5877f9fc00bb174cdc28ac98b879f09e0ee9c60e81ff2d4672aa88ffe"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It was money.",
+      "text_sha256": "sha256:02a9deb46ac599f39c57517118888bcdb03daf9f1c1bef4c63c4340db3133677",
+      "idempotency_key": "sha256:4862e2ed3c889725cbec64a466819086141608d03dd48518c2494bb128490d1f"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Needing a carrot to make health-care providers more receptive to the stick, the court wrote, Congress simultaneously amended the Social Security Act, conditioning hospitals' continued participation in the federal Medicare program — a lucrative source of institutional revenue — on acceptance of the duties imposed by the new law.",
+      "text_sha256": "sha256:b584b40a013a2582d28a0042cb8adc71b1e2a803652bdbc7b79375065f09004c",
+      "idempotency_key": "sha256:83bd113753681732d796113347ffc4ceb3013ed8569afd4825bbbbf29ad72c42"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A hospital that wants Medicare money accepts EMTALA's duties.",
+      "text_sha256": "sha256:0df751a57ece7b0e9397c823c5b4bf9dfdfb29881b1a38128f8ea5dd7bf69f64",
+      "idempotency_key": "sha256:ae5fa3a5295eb31b0142cbc1925e970557ff215b64f7063bdf77ef1da5f2ac61"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the entire architecture.",
+      "text_sha256": "sha256:f9a9ceae32cfeee8b62d3181bef0c68984626ad6c69fb72a771d2ebfef2e6a26",
+      "idempotency_key": "sha256:f4a8606e34469cebfa40f2cfc83d7e84020a2a7b9674f81b272af6e918d4c447"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Nobody is commanded.",
+      "text_sha256": "sha256:7ee14d525f000e145b500f49fe7c2c8b788f9428f549274839989a575037e26d",
+      "idempotency_key": "sha256:dc2e676652aec7a915c89d8a6f3aa025f6b83152d038ed72de59b581a24c138c"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Everybody is paid.",
+      "text_sha256": "sha256:27296214cc848408dd9365b2980de89256cf57b2e99e20015f1bca83ce17b022",
+      "idempotency_key": "sha256:bd64c61314e6bcc05493e57f75e6d66a1d8f62eeddfeb7310255fef57760239a"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "For patients such as Ms. Gonzalez, the court said, the statute has two linchpin provisions.",
+      "text_sha256": "sha256:3b491cf5ad485e5c056d8bd6a86f37cbb95ff2eaffca9306001e7dbd9bc1f64e",
+      "idempotency_key": "sha256:83abc05b5c88291fe798767e0cdd350fee86cbadacf1266c1ac726fd5fd26db4"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "First: a participating hospital must afford an appropriate medical screening to all persons who come to its emergency room seeking medical assistance.",
+      "text_sha256": "sha256:806d9089e995d5f3a30255635f956fa32e6544087b7a8107bb4c39163f78fee5",
+      "idempotency_key": "sha256:f9c07d9a0dcdd0f5f22107446577c3b91ea00bb1f3124aa2f47523117ae7ad74"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Second: if an emergency medical condition exists, the participating hospital must render the services that are necessary to stabilize the patient's condition, unless transferring the patient to another facility is medically indicated and can be accomplished with relative safety.",
+      "text_sha256": "sha256:5b8ff6af504de3c89bb06e5c3e4e9a752e1ff45099c2c8c06816749abf587802",
+      "idempotency_key": "sha256:e9112472b9414926722005b77985f0d92d0e960328f5c77c09e677c1e3f2b294"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "To add bite to its provisions, EMTALA establishes monetary penalties for noncompliance — not more than fifty thousand dollars for each negligent violation — and authorizes private rights of action against those who transgress its mandates.",
+      "text_sha256": "sha256:58835f4abe104f084c5cf29249b720ed85f944db66759f00221d4461046ed6ed",
+      "idempotency_key": "sha256:4d51090cfba988aea4a5eb6e6c5593914bc5d66cd031c8389154a3d56b24eaac"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Three elements make a claim.",
+      "text_sha256": "sha256:1d80f3588ce757c3bea68393743d0be933810777ae8f0fcdfe31b75b12374311",
+      "idempotency_key": "sha256:64e7c432f1bffec19100d5f76027832c92dafb37bda01d5bb9f447bafc2115bd"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "One: the hospital is a participating hospital, covered by EMTALA, that operates an emergency department.",
+      "text_sha256": "sha256:72722f2e679652296238d96584f719ff96f543c84d6973652bed8420cdc5c9ad",
+      "idempotency_key": "sha256:f895b5e262d6b255b65a7977128236bafe4adb6ba4bd09154c66d0953ddd6df1"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Two: the patient arrived at the facility seeking treatment.",
+      "text_sha256": "sha256:42cd6b3b8196a4420c8893bb1f9062588d35f6e6ddabf7f0341347b8320fbee2",
+      "idempotency_key": "sha256:0c6be425bc7da9fd8406cfa79d9fa89f74ab01d926b0810833faf761b7087567"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Three: the hospital either did not afford the patient an appropriate screening in order to determine if she had an emergency medical condition, or bade farewell to the patient — whether by turning her away, discharging her, or improvidently transferring her — without first stabilizing the emergency medical condition.",
+      "text_sha256": "sha256:9f67ef88aa28313626e71af6c68d5051307bdf2348a1866708bb1fe45a2e53fa",
+      "idempotency_key": "sha256:2243cd5b3efccea6e2ef071b8cbab49e00493c467abdf6d7dfa7205bfa8d9bb4"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Element three has two doors.",
+      "text_sha256": "sha256:5242e31e28f27783b3505bd9f5129631bdffde3981ffd2b8c110de6aaadf506f",
+      "idempotency_key": "sha256:4366f682cb140eb205dd4b0f5c3faea05f7dbc39e2d5bc08c01a638560162499"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "This case went through the first one.",
+      "text_sha256": "sha256:56f57301442cc599f8af17ec41c61fcb1d5b5018f48daeed202f22257f86ce5c",
+      "idempotency_key": "sha256:06646ae8c7089190799c2fc6f4829e3c18a74132ac28a67105dd754d16e6b5f9"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And then the panel decided something that was genuinely open at the time.",
+      "text_sha256": "sha256:b3b4ba0c5c2726093eddba639560291e38766f518bfca788b9e32dea9e9b3891",
+      "idempotency_key": "sha256:0010f2706344d6df7a0b1455fddcda0ec13cd6a7caae2e6c71a01fefb9183797"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The hospital argued that a screening claim requires proof that the patient actually had an emergency medical condition when she arrived.",
+      "text_sha256": "sha256:6ea770751ade50c0e2fa792520709f9897ca873efbc432327406efcce687a50d",
+      "idempotency_key": "sha256:8acf57be6ea46904f6d94ec5104cc96310ee7688c14c249917b28cf5c08307f4"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Some courts had said so in dictum.",
+      "text_sha256": "sha256:1887e7ba369a726ffd26fd21106d7ce0dc997f5d9dd4bc7309d606c7dd447d9e",
+      "idempotency_key": "sha256:4781c45d14031274905ba86bb556a225a0971ed56ae9449be26e85f0b39a4e0d"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The First Circuit refused: this suggestion finds no purchase in the statute's text, and we reject it.",
+      "text_sha256": "sha256:aff1d5da8ac0c73352966d9edd2c811942f4e59d4e2ef2bea62499ee8dbfe632",
+      "idempotency_key": "sha256:c746115f99aefdcd978418bd346b95df54bda8a76186a4075b8a4351a6989598"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The failure appropriately to screen, by itself, is sufficient to ground liability as long as the other elements of the cause of action are met.",
+      "text_sha256": "sha256:21c9cc4f5451906c574c8e028e53ec3ad1477fcdf4002eff49be3374a5de8263",
+      "idempotency_key": "sha256:0e7730172c067ea739d8cabf6801a070dac3a2f9acd094755ab77be37279357d"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The duty to look does not depend on what the looking would have found.",
+      "text_sha256": "sha256:e2232b71614dbdf4020c940d2cfe9a63eb6e76058559d73bf74d1bb6a8331e1d",
+      "idempotency_key": "sha256:bb0ea24e840649d795b96f276876dbf6deb6ab2fce056f129228d0ebf1039c07"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The court fenced that in immediately, in the same footnote.",
+      "text_sha256": "sha256:428d2df14c279b1eac11c873cfa5a8198970f61f051ebb6bd69d8ae4bce5d72f",
+      "idempotency_key": "sha256:b49ba958dddca68a759b7c91360e085d772ee4e9e691e6d2f9aed4597eaa2a08"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Civil monetary penalties are imposable irrespective of resulting harm.",
+      "text_sha256": "sha256:2e6d5e735da98e53d2622c5c84f5d32a5d2c71b55fb58562a44018d0c6fd6c51",
+      "idempotency_key": "sha256:96708a136b156f0c5bfa49999ecb96c189a28d5eb78985eec195bb95c16dce35"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "But the statutory damage remedy requires a showing of personal harm as a direct result of a participating hospital's violation.",
+      "text_sha256": "sha256:3c399e1802bcdff69e94df110920c88a77a762baff005f949b54a4692e9a4b9a",
+      "idempotency_key": "sha256:4f92518e6cd24901d5cb944dedd60376fac214c1677946c051b56277d39abd97"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is difficult, the panel said, to imagine a case in which a patient who does not present an emergency medical condition will meet the statute's causation requirement.",
+      "text_sha256": "sha256:965b80d19359d04d0d5492be074988eaf7ddb7ae132189ce24ff7b886e0036dd",
+      "idempotency_key": "sha256:1d79c3416fc19090ec1fb6af8a6a924a95670fc2c3e11af0a93f14a873a8955a"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Here the question never arose.",
+      "text_sha256": "sha256:2669c54f787d44580ee6cfc3b614a834b4b168b94b645da3a4c7819aa132e12b",
+      "idempotency_key": "sha256:18c136a33718d798e419dc12cb6c4b5cff069bdcd98e6633ae43e129caa275d0"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The plaintiffs alleged she presented an emergency medical condition, the jury so found, and the evidence to that effect was ample.",
+      "text_sha256": "sha256:c682a09dbaa05a44460628e06b394b80ec01c544b12b3cab6da624dfa9a861ea",
+      "idempotency_key": "sha256:ea59c2f2028843ece66adeacd51de14f952cbbc8ae4926aee8263fc37e1596c2"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So the statute applied — if the hospital did.",
+      "text_sha256": "sha256:56e8baa759550629a2334faa328b36df0e25deddea7be1bf1abb93485a4c83f0",
+      "idempotency_key": "sha256:1197832ea9adc5fc7db63ecd2ab7a935a9ec64a7625c2243a181ce265469117f"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The hospital's first argument on appeal was that EMTALA did not cover it at all.",
+      "text_sha256": "sha256:9310f180f5a377b6cf31400431ba8484539dafc28833d1785809180e7cb6f274",
+      "idempotency_key": "sha256:f0c1fe13245570a96eabfbe79c9c146e9160d5b374a69533761b870c57620786"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not that it had complied.",
+      "text_sha256": "sha256:35ab64b0fdb7f0322c788a1a6dc87025c1294c2e719100d8abb71d8724638120",
+      "idempotency_key": "sha256:3d72ddabefe64ed1750daec82845d9fdb60ead90f157f16b0ca1f51f33a997ef"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That the law did not reach it.",
+      "text_sha256": "sha256:29abbe965c25a1a51f4273887b3364494154e4315377e87a6dab38d198929a9e",
+      "idempotency_key": "sha256:2ceef65474d89d9947b38a1d56934b0e1202da3b75d16aee572c2c43cae09261"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The plaintiffs, it said, had failed to prove the predicate fact: that HSF had accepted the federal government's carrot and agreed to come under the statute.",
+      "text_sha256": "sha256:5e959c06035b2911fef2c8591db6f6c640984f2c844b626da1881a898976ad43",
+      "idempotency_key": "sha256:30b0fc2f60c10c0185e322a47a24a57d939ddff19b9f26bedc071ed566857d73"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At trial the plaintiffs had introduced into evidence, without objection, HSF's policy statement outlining for its employees and associates how the Hospital intended to ensure compliance with EMTALA in its emergency room.",
+      "text_sha256": "sha256:aea9d4ca02706607bbedd3429fe7bcb7a29c26df196793390fcb4c8d11c88879",
+      "idempotency_key": "sha256:b0080e8a58701a7f424cde93816b53a6a7aa954f76e55f68d430bfc6740672aa"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then, during the defense case, the hospital's own health services administrator testified that he had dutifully instructed his staff regarding the fine points of EMTALA compliance.",
+      "text_sha256": "sha256:0e42b6a89270bd8e492b2fe0e8a80c5412f076cc3f39c0a20f5843e7b58bdcdc",
+      "idempotency_key": "sha256:3b5cc105014c7146f3dac74b750c8020103422f697961d3ccd9d4c1f8efe4a8f"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It had written a manual about complying with EMTALA.",
+      "text_sha256": "sha256:6dba6b32f3c2404037ef037c2a0437bf72f7c873d3a0b784002e26ce1f954a25",
+      "idempotency_key": "sha256:e9dd1b5999b464cb0f9d0f741174d8edded6ac577528ef81ad2f9f76edba70c2"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Its executive told a jury he had trained the staff on it.",
+      "text_sha256": "sha256:c4329ea778f0a23dad95e5bee2a64ea9b4b04c22db371230fec563950fe34a17",
+      "idempotency_key": "sha256:817ce29081d18c9a0ac899bc8646ac025ba4afb8e1c797e6191fc469aa1bbb03"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And then it argued that EMTALA did not apply.",
+      "text_sha256": "sha256:2c0d120f07bb0cac6d32c18f89698d79b2c439ab7cd3e2fa5924f17f334c1714",
+      "idempotency_key": "sha256:ff0dc6f1ab7b2dc097170ee351f240eb69803be77406e50f7e4657e3cd44364a"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The court's reply runs eight words.",
+      "text_sha256": "sha256:26af5ff332c40a961d7a2f716860a26b015346d516d30791481b029d5f4c65f4",
+      "idempotency_key": "sha256:edfb72c7d950a3a74d86e1b6f857cff47ec6c1bd5d08aa327aeb8c64e816284a"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "This argument has the shrill ring of desperation.",
+      "text_sha256": "sha256:bce0aff6de4a31cd63a40c4fa95acb4a4336c6bebcb56799b1f34884047a154b",
+      "idempotency_key": "sha256:2bd8b7e42c344636b8709fde64c2a0b986855edddae7d6928e9b9d57a11962be"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "On appeal it added that the policy statement was inadmissible hearsay and that no proper foundation had been laid.",
+      "text_sha256": "sha256:04b0e2ab8dec45f78d0cbec06884895cf5b1b551aab8291ef7292890d3f56d83",
+      "idempotency_key": "sha256:3632d8149be1c5a8c84496fd8f04d7c5e496e6e9a8f56856a82b401333ea7497"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Neither objection had been made at trial.",
+      "text_sha256": "sha256:b32ce7f39e96297748af73b4d21c50f858081dd0cb226e45437479e945497a68",
+      "idempotency_key": "sha256:15724054b54d31ac77123f4f65f25317aff551bf071872d27a562214335d09ce"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Voiced for the first time on appeal, absent plain error, they were waived.",
+      "text_sha256": "sha256:603ca1c7e14afe0f00d7ecffdc7d72672ba02ce2d75fb7f548df8a25ce97f06f",
+      "idempotency_key": "sha256:71f784de94a6eef1d730aae469958597a462cbb888bb689769f30ffa4d9cb271"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The jury, the court held, had a rational basis on which to conclude that HSF is among the ninety-nine percent of American hospitals covered by EMTALA.",
+      "text_sha256": "sha256:eafc326a70862ccb675b4fa02c57fa0ed8ce51dcbecd8dce59c985d4b1bd1fcd",
+      "idempotency_key": "sha256:3ff02fd68a450e6b694359b956b2129f841b9d700bf386c1f84aaa68c245b071"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That figure is the court's, offered without a citation, and it is worth leaving exactly where the court left it.",
+      "text_sha256": "sha256:207af21c12c29818732d275e082854f42424170bb3c6c9a5a85c37ae48e5d6b1",
+      "idempotency_key": "sha256:9c5368d57b137cd2a896c86faa40b80dd6e1750cba7cb3e8d26dffa7ccaca8d5"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Ninety-nine is not one hundred.",
+      "text_sha256": "sha256:8ee842ff9afebb65a27fc36bdbdd929611ceead845aa016c7c5846332ba4aa5f",
+      "idempotency_key": "sha256:6e47e7154259dc1a645fe316bcc53ac5ab1b15dccbf74cb4d938ffb3e11f24f5"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then the second argument.",
+      "text_sha256": "sha256:289659d4638516fe20942f297e7c779c1e0b02fa6e633e0a9227f3605de7bf6d",
+      "idempotency_key": "sha256:286315844b638f328531f8162f0ba18a14c5fa16ccf20845d7ff32f20492463a"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The Hospital asserts that it had no obligation to screen because Ms. Gonzalez did not have an emergency medical condition when she reported to its facility.",
+      "text_sha256": "sha256:a72966bc807b0616f4f51dcd57b8c7108f9b2e6095f2297d25dabf0e8e6ecec8",
+      "idempotency_key": "sha256:bd8b8602e24b5ff6e7edcacc0646cc48e4bc2d3a3afaf8f0409de74bf74090ba"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "This theory of defense, the panel wrote, is doubly flawed.",
+      "text_sha256": "sha256:4d285b9fe7cdf8efec11e2d62e7f77b11acff114237add5bba02ca5167c8b852",
+      "idempotency_key": "sha256:c1b98f75d4b24ae4eeaa30d8c9a217f4424c648166ff16786a8afdb25c3e7fc0"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The first flaw had already been dealt with.",
+      "text_sha256": "sha256:bfa79bbaf747d81a9c62e7e1150143c3c1145278f336ec9716ddfc35a0134faa",
+      "idempotency_key": "sha256:16b59caf54464af1ce88c775730e42a8695adb71c6b5d7544a2c74e42065c126"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The duty runs to all who enter the hospitals' emergency departments, whether or not they are in the throes of a medical emergency when they arrive.",
+      "text_sha256": "sha256:4d571eff5c3e1fa2fc0631671984e7389a5d910a0f32ea88dd7eab927eb17243",
+      "idempotency_key": "sha256:4f1dcbfb1636f51a67d8b2017874d9bf49adba93b0327efa736d0b0a110372b4"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The second flaw was evidentiary.",
+      "text_sha256": "sha256:ca622d737169605b14f92bc9353c3bbd20ed19cca27b62c3d54b62a5ab82748d",
+      "idempotency_key": "sha256:a73d32da9b20c75f6435059cf4a28fbea7af83198176a43ef2b16293c844cdb0"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Angel testified that he told the receptionist his mother was experiencing chest pains.",
+      "text_sha256": "sha256:46a9f324bcf38d9eddfc2cef5c0f627899c2918c36ac085dda98ca7c1c0c7816",
+      "idempotency_key": "sha256:9f87b7f1faba5615a03b7f37e5721484f77f2e54490d68106adc47804afcb093"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And HSF concedes, the opinion records, that a patient of Ms. Gonzalez's age who suffered from chest pains would be regarded as having an emergency medical condition.",
+      "text_sha256": "sha256:fa1b2865d2e7ed5ad60bd5ce10a3585be92d905580b104b8e12d30c366f0c8b3",
+      "idempotency_key": "sha256:ef19dff95b09fc0f89cefd3f1e339c1f8cf6f42468e3a51fcbf89432e92e8f51"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The hospital's answer was to point at Dr. Rojas, who had testified that Ms. Gonzalez did not develop chest pains until some time after she arrived at Hospmed.",
+      "text_sha256": "sha256:e54c035fc6813964cc211899e41e9be3e94d9bd1b5859e11d7063694c90659f1",
+      "idempotency_key": "sha256:dad839be5333a3b13c7914e0e14a6a937d859d47c90392acc85b472dd0d18a34"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Believe the physician, it said.",
+      "text_sha256": "sha256:6f1ae8a04487747166904807d4723eaf2a405bbcfa90e929ba3d2706a0d2fac7",
+      "idempotency_key": "sha256:731cfda014fa7d3a85bd48c061064ef5333abca2de1ba521965b736482725bb8"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not the son.",
+      "text_sha256": "sha256:c91bc08e5e3d9151c30c8396e7f844e8c5b062d9c3dbd88a2d6a90ead3c3e4e5",
+      "idempotency_key": "sha256:9037b35eb87c4c46eb95f9294d318df44b07e5bb4319c5fb66232adf7fb77495"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "There is no principled way in which we can accommodate HSF's request, the court replied.",
+      "text_sha256": "sha256:b4dc76a0e5fb42a85394dc3d8f14314339cb5d4c1b934f855a36c49aa763ce4f",
+      "idempotency_key": "sha256:bcca4878a9c26825f3864e7f9ef200ea51ffecb5487d82aa2acb420742aa0b13"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Credibility choices are generally for the jury, not for the court of appeals.",
+      "text_sha256": "sha256:15c9c4767b36ebc7e01190962f490cca42a7d20f08b5f0ee3df7970205930fa3",
+      "idempotency_key": "sha256:019b5987ee4cbb5c4b5d31092147161ad03732554679a586322f7b0add9808b7"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then it went further.",
+      "text_sha256": "sha256:1d315b50092b9f5efa748c28490f89b35ef0ce833b8dea74e4c032de06ebb913",
+      "idempotency_key": "sha256:7b37de1bc37f2901f813a042f53d933eeb0963fcfbd69091203167b6b1b0dc16"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Even taking the doctor at her word, the chest pains might well have spurted and later subsided.",
+      "text_sha256": "sha256:3fac9b6ba2125a43ceb45d12679b8c673c56dab6ac78834adab16018bff9d4ad",
+      "idempotency_key": "sha256:3a24fa5f06b818790bf69f651c5e8a8c038b6d829faf7718acdeff7383d6f6bf"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And even if Ms. Gonzalez had complained only of nausea and dizziness, that symptomatology — as Dr. Rojas explained — might well herald the onset of an emergency medical condition in the case of a hypertensive diabetic.",
+      "text_sha256": "sha256:635b3574c6a3fe56f8c735e117d91a305b6492b358ac72e05a980e7a95b1fa8a",
+      "idempotency_key": "sha256:87dfb253421e5938bf821bcda29533f65b34dfdac8286cbc1f17d69979eacc85"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Which Carmen Gonzalez was.",
+      "text_sha256": "sha256:afe57488e610df79bb3bde133a5c607e3815ad5c91d3ff4eeb36842df10e69e7",
+      "idempotency_key": "sha256:5fdfaf6058a3edadf6dd07f2cb9b49ed9410f2c1103dbd350771d628a9e0b5ec"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Everything now turns on one adjective.",
+      "text_sha256": "sha256:9c2ad7d1aecf841b8223288a64cee975b227dddad719553dc60669e1f6cedc66",
+      "idempotency_key": "sha256:b2edd95456cf414e0fd95c5cb8405c66f7fe95d76753b79b143aa3856a0f6091"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "EMTALA requires an appropriate medical screening, but does not explain what constitutes one.",
+      "text_sha256": "sha256:5bfb0203c68e88aa28d9313d2e0bb6bd492b0e4658324f705302b29c799aed28",
+      "idempotency_key": "sha256:5b73d888ef0271cd900659606f290baa3a1ecc25ed6e7364c0d04a5b3519824e"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The adjectival phrase, the court observed, is not self-defining.",
+      "text_sha256": "sha256:817acb6160de7498997531cdc8a424e054a258ba6c2c1817e043a1d9a336606d",
+      "idempotency_key": "sha256:2d19b88b454bb39cb76ed7f69b96480c1ae7d33da52bf80904918974a5287575"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then it quoted the Sixth Circuit, and for one paragraph the opinion stops sounding like a judgment.",
+      "text_sha256": "sha256:fccd7ae6bada2b260c318aeb16b8b646bb20eb0eb1688b3161a3689f5402d6b6",
+      "idempotency_key": "sha256:883c54ca9dd788457d8ad580ed0adf4bb62e94fa5da7c95ff4a6943d72351ef6"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Appropriate is one of the most wonderful weasel words in the dictionary, and a great aid to the resolution of disputed issues in the drafting of legislation.",
+      "text_sha256": "sha256:f38fb26945acaff63f747ad4e0f9e4ede5268165f8585aaffdd665c3e24eb245",
+      "idempotency_key": "sha256:00876aa92e687db86717c52bd5ae07ab395a23da0284943fb9abcd55ff7bd793"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Who, after all, can be found to stand up for inappropriate treatment or actions of any sort?",
+      "text_sha256": "sha256:c2fd4d16859ba95cb174a6e2865ca79f4e21e6706494a7c620f647ec49bac989",
+      "idempotency_key": "sha256:0bf04a336dc2693a8cb77d0af55f70d47dde5bbe52bd23dfbfe59114f04e68f7"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Selya then added his own flourish, borrowed from Emerson: appropriateness, like nature, is a mutable cloud which is always and never the same.",
+      "text_sha256": "sha256:b9e2782bbd253854a92bacff170682ffbb2d06f24b6572bfb5926b15a3172f7f",
+      "idempotency_key": "sha256:13aae830802094ae47384e8d01a11be8cdad8e529d5a614d9292eceeddfea7b9"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A cloud is not a standard.",
+      "text_sha256": "sha256:0a42f0ecd918301093cd2c7e4a8a3aff63db1a3d080a6653628294b821818aa9",
+      "idempotency_key": "sha256:a1d075824842c748f4ae17e941bc9dd2c87ec7f04730f1de03f0e4b3b4b20bac"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So the courts had built one, and the First Circuit adopted it.",
+      "text_sha256": "sha256:a9e99aacd198c0ea5bca303246f1d3e3db46b66e6fb8c947e3a5a73d3e1a494b",
+      "idempotency_key": "sha256:dc102c8ff57d959e145c36bf7a0e8b001774a18b36ce422619f5c2d53864f8c1"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A hospital fulfills its statutory duty to screen patients in its emergency room if it provides for a screening examination reasonably calculated to identify critical medical conditions that may be afflicting symptomatic patients, and provides that level of screening uniformly to all those who present substantially similar complaints.",
+      "text_sha256": "sha256:7e31e23bf82712b947963fc36118f61b5c19b5ba40307fe764b0ed7ade234594",
+      "idempotency_key": "sha256:036e611b7efaefc24ad8c332f0f17c470f1207ae2c253f753eacae7e33d4c2d3"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Then the compression.",
+      "text_sha256": "sha256:30430ab1434d0a188f73be98b53591fc396a7b35f879790599c0c947d0aa5a6f",
+      "idempotency_key": "sha256:de9f085afb3233da33172f123dbdf294a0e228a057b3bf9eaf226457d7ac8a5c"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The essence of this requirement is that there be some screening procedure, and that it be administered even-handedly.",
+      "text_sha256": "sha256:1af6bf128ab6ce8cc7b12fcd9889025dc1ce2feb6447cf0a71b58a6646921836",
+      "idempotency_key": "sha256:53fa6d468aa45df43ef44e1a9e7317e591ec2fa6265b0df97ac4f856f744c719"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Some procedure.",
+      "text_sha256": "sha256:4104885c739e4be32b667eaa9af3526f0c89cba23866c52ea746886e6b427dc6",
+      "idempotency_key": "sha256:f89f6d398db50f238a04b6016b1f7c4bca72f152cb418ebef3fdbc4244366d07"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Even-handed.",
+      "text_sha256": "sha256:9655e6720093f3d7fefdd800c9b02e123fb755a8f2ee05a0ce23ad2d92a35c42",
+      "idempotency_key": "sha256:450d4cc04efc294d20e1e1e93cf1648e79da4e0f3a333624e4880f890bd3507b"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is the whole of the federal duty.",
+      "text_sha256": "sha256:33c84121be0aba8558520ce1ab296849420fb11292af8ce9c04f68cec14ec94e",
+      "idempotency_key": "sha256:19f1cffab6b6d8c57dce0a58045a70193cf1b7fa845300aa9bb06ad3f36ad17c"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And immediately, the limit.",
+      "text_sha256": "sha256:c9a0f758d41fcadacc01b31a7f5125cf4fb7b36142dd48c6be1ff287708ad6ee",
+      "idempotency_key": "sha256:8c6c7e9eee66e15352717f428ae1158a8af51b6b11c5cd4888601f2db68121ad"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "EMTALA does not create a cause of action for medical malpractice.",
+      "text_sha256": "sha256:33054efcedc00f8f1f7544b89be570e686af71b48a03d5c5f85a6b388e6ac497",
+      "idempotency_key": "sha256:932b35419a9334420e3eb36f7d2f480bb5cfe2325572e37a82d82df8f7890bac"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A refusal to follow regular screening procedures in a particular instance contravenes the statute.",
+      "text_sha256": "sha256:4bd519a75aeda93b70e8553803c02befbce950cbc6a24d629186df8896fcd3a6",
+      "idempotency_key": "sha256:4a97c20f340cefe4e9ee4f7d21aab84c7483805db54e420f5c4290f7de01d14d"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "But faulty screening, in a particular case, as opposed to disparate screening or refusing to screen at all, does not contravene the statute.",
+      "text_sha256": "sha256:87e3e27f8a925d0faf932f5f452aae98e90c690fab31e8872e0b5aa4209a0c25",
+      "idempotency_key": "sha256:7604d820b4aa7804129bff6364e92e479b45e32c23784868961a2be9c17c60ef"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A hospital that examines you badly has not violated this law.",
+      "text_sha256": "sha256:140c2eebc22c3acbd9784cbe327fa33c9c14c49c48ea119cc19e7f3d1588bf51",
+      "idempotency_key": "sha256:9d5a0cb950581043facdb263b62893928c02e2f68a9e6a4e4860103b9b8db5a4"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A hospital that examines you differently, or does not examine you at all, has.",
+      "text_sha256": "sha256:4f29f07fcc836674fa473dba9ae6029a55e856d091510d4f4eeb10978fcccebf",
+      "idempotency_key": "sha256:5318d34cd040e6bdc6cca76b4750ef845fc32c499bc4dd1ebc659224a9e3d313"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Which raises a measurement problem.",
+      "text_sha256": "sha256:a76ada4432631db40a685bc55d46193943188b4d15c058c85a40fbbe198fdde0",
+      "idempotency_key": "sha256:f809c91f208f7269d49d13dadc2b47bd34d92a6c4b2af8aa3b9333f74dccc3b8"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Differently from what?",
+      "text_sha256": "sha256:a55ed00eaf8c157acfda02e853a9246c6edcaeb11bcc137b2923098dc37ac3a4",
+      "idempotency_key": "sha256:4ece96196bd24eac6f440ad97dddc62a93940f98339c8c0c0d21e493a7478277"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Uniform compared to which standard?",
+      "text_sha256": "sha256:252ae24009a94b248fb13751037f0cda30bf80d7bac7ff34544c77e7a20e1d69",
+      "idempotency_key": "sha256:c384b31a80f6701d061d40de147c9d8b814eb17413fd559e8cafd23eb0bb7ba8"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The court's answer, in this case, was to use the hospital's own.",
+      "text_sha256": "sha256:bbb04d395fe0f100dd07a7150e650b1d616a49f602924556280b7a24cbe90509",
+      "idempotency_key": "sha256:6535dc887f3af684eb0fc5bf1e45bd3fc036139b9c8dccf60865a48bbb333db6"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Its rules, as explicated in its policy statement, required its emergency room personnel promptly to take the vital signs of every patient who visited the facility.",
+      "text_sha256": "sha256:48b37658db7cd2d26582fd480eeaeaa30463e581fe4ef3a4118c239e4a31b17c",
+      "idempotency_key": "sha256:2c95d397a75b33cfc8cd1bc7b696c01155b33c8be01055ed439fceaa7f143b5b"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "To make a written record of all such visits.",
+      "text_sha256": "sha256:8d87fb29b73986d97bf05a967874ca2c2f922a2d469c543995439998bc18a635",
+      "idempotency_key": "sha256:d8e0966bc1056c018839c3abb191dbd43839a382ea433d78701fed129fdf7a56"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "To treat patients suffering from chest pains as critical cases.",
+      "text_sha256": "sha256:90d316cac84943ac2988818c00fe940e3cff44cc4c878a66af8de40e78e8aa92",
+      "idempotency_key": "sha256:7293bfb182293511f977b8987e5c98807c54e6b44c63931a70ebcbc081bc0ac5"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And to refer all critical cases to an in-house physician immediately.",
+      "text_sha256": "sha256:efae741961791c09a2fd6ac9ef0e13f7f18872822e630fbd2b4f36347d460f94",
+      "idempotency_key": "sha256:5bd1dc5e68b687b6f06f0a86f583bc2a45e51df7672c7385205222d15141d313"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Four rules.",
+      "text_sha256": "sha256:bf920fb2f5ac6155f1e144937160f0b67167836bb608f456ad32a90a0cebd9a9",
+      "idempotency_key": "sha256:30f70566794b267b1c9ebe9884828e1a132f8537245d86250f3d20ba4bfb6665"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The hospital wrote them for itself.",
+      "text_sha256": "sha256:d0271243545ea5aa7c4401c91696c32d016539ead9e4a346eb171bd0c370c51b",
+      "idempotency_key": "sha256:69fa3ac11947c935d9d044a55f0ef0f1cae40825091e07d03f46959ab9aed897"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Now set them beside what the trial produced.",
+      "text_sha256": "sha256:f50042bcb22aabad395ba73b005c20c79d7f2f653457d98a44674d560cade8a3",
+      "idempotency_key": "sha256:a042d656841da7ba8ccaaa4f30b45ee00b2b18c2eefffabbc5ee39cc8e7162c8"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "From the evidence adduced at trial, the court wrote — especially Angel Correa's recollections, and the Hospital's utter inability to produce any records.",
+      "text_sha256": "sha256:0bb179a9ed85c51307e126db7dd5543e4312e26bf1f09b91890e15397434bcd2",
+      "idempotency_key": "sha256:224ab0ca590a1cade6400e4e97bbda990b1f20c955ffa80b5449de2571d56bf8"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The hospital could not produce a record.",
+      "text_sha256": "sha256:d3fa1707f5ff8badc9179bf07bf3eea1646d67554e0044d1950334abdc5f9c8c",
+      "idempotency_key": "sha256:db3eb8165c29f688cf4a25458464c4f32bcded482f718da853cd3e3f7b76df22"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not a thin one.",
+      "text_sha256": "sha256:f2a15d6217c251ca8d444a70a5abb0565c93c0ee89a77f55c2a8ab186217195b",
+      "idempotency_key": "sha256:7a296e70e868b16142606b7a0722fa941edcdd4d711104f7388d2f621ec559c9"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "None at all.",
+      "text_sha256": "sha256:e2f390a14b24b12e8ef946bcf2e9a666fc5cbac0d71f859502631a092fbeb681",
+      "idempotency_key": "sha256:d12e22a027143f8cb09cf820c1c47b3e3dac544834bab2d1e965f05587bc2894"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A hospital whose own rules demanded a written record of every visit came to trial with nothing for a patient who had been inside it for two hours.",
+      "text_sha256": "sha256:1f192be96fa8e2fe6288b820b5177e8d638841ed5d3f150223517ac15c0257d5",
+      "idempotency_key": "sha256:df7f633a3e0aafd52eae9743ff2f325d06bf0a4e408524f50fbec6918fef6062"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "From that, the jury reasonably could have inferred that the Hospital did not measure up to the parameters it had established, and that the decedent was denied the screening — monitoring of vital signs, compilation of a written chart, immediate referral to an in-house physician — that HSF customarily afforded to persons complaining of chest pains.",
+      "text_sha256": "sha256:171ecca39b0dc7021093e1bf39d39677d5a0a9c15f742cfa0c51d7e1dc33a12a",
+      "idempotency_key": "sha256:0edab48351d2e86b15b99d4d31c52e61a7465480180d39d311a45e64dcce5ab3"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The conclusion is one sentence and every clause of it is a limit.",
+      "text_sha256": "sha256:4c2e3ce19a56590ec509baebc93b69b6cc1c647a9008eb35c356ce2d8e3990e1",
+      "idempotency_key": "sha256:d0dee2b462bd0a7d83e2724493680a56339732be80d9acd7b74bf0bd5ed702a0"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In this case, HSF's delay in attending to the patient was so egregious and lacking in justification as to amount to an effective denial of a screening examination.",
+      "text_sha256": "sha256:5a6bfa04a0e1af29529a4b1ac31eb644406a90a267368237fe571b3d2b677eef",
+      "idempotency_key": "sha256:257852658351ecbc7a5c54aa39918a9df5a59249ce55f5b1a5a16412c35d057a"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In this case.",
+      "text_sha256": "sha256:1b7ca4cc8a37c8d3b3ac33439c79a0eaa31d1a066ef5e7feadeee8c2d6e4252d",
+      "idempotency_key": "sha256:629eadf756a4e3622b1bd064e7f96770232e24e8ca027af674f0e0d14963f171"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So egregious.",
+      "text_sha256": "sha256:fc781f77c9a736d38bd9b5ac833a67b84b85c5c38c6db9bd633129746219c655",
+      "idempotency_key": "sha256:89cca2f82e1e4da432d69a9dbf8dc6b99853d0ee9c459ca475ebd7a4fb2fd0c7"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Lacking in justification.",
+      "text_sha256": "sha256:d21ccbff5efd7860969782cf05e6dd3081157dc01e801419010f00c680574dd7",
+      "idempotency_key": "sha256:adea760c9497863000fc083758ee7fb799458268b4541126140259948f928d6d"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And then the door the panel deliberately left shut: thus, we need not decide whether mere negligence in failing to expedite screening would itself violate the federal statute.",
+      "text_sha256": "sha256:3cb0ce50bb85c9237194e8d893c8d27526c26f0c218044716772e476a6560d03",
+      "idempotency_key": "sha256:ff2be268c5597098f1dea1962f724b9c80ef617fbd2cfe2ae7d1c1ba40cd9128"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That ends the matter, the opinion says.",
+      "text_sha256": "sha256:53d7ff77b361733eda8b779042d14e17cb2063fa3cff2201f7de63cb21dd08e7",
+      "idempotency_key": "sha256:440ea9ced95c06d1cd1e20b1650658e2bbfa7d475cf296c8be5b3a416a7bf5bb"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The hospital had one more argument.",
+      "text_sha256": "sha256:4036dc8c0dfb6ec476355a9ed090137a424aba7fff9ab1431d47527a6e91863a",
+      "idempotency_key": "sha256:2a0f3976e963780f8a595f1c74f919bf4bcadb7ca623e66d0ac487036969e527"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Put at its strongest, its case went like this.",
+      "text_sha256": "sha256:0646f7ec607a9a34f988967afd3b6d47876386339e4079a9c2b24224719c88b9",
+      "idempotency_key": "sha256:70a2b068609cf10a90952e89b8370eb5e659f1512fe51eba404a49eb91011870"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Begin with what the court said about its own record.",
+      "text_sha256": "sha256:783d0c0750d1c7184985c5668f681abb0890903c6ade116dac65ffb83854b716",
+      "idempotency_key": "sha256:1bc5718a4cab92988c6c1c599c4f8ec3e9c7b227fcb6feac43980e61f95b60a6"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "To be sure, the evidence in this case is not particularly precise.",
+      "text_sha256": "sha256:47c07d531c802ecb7d8cbed1a4698650dd24aafd4c2a9ebbabf5c085970b792a",
+      "idempotency_key": "sha256:e856d39647c0a44b43a0f27c9e6af8e16ae32a7a31a07dc0c4fd36b8b2e04a22"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "But facts at trial, as in life, do not always appear in black and white.",
+      "text_sha256": "sha256:b211ad747dd043c78310e7bd6f91f7ab4e8c2195ccc8d538f466de65bba0a1c2",
+      "idempotency_key": "sha256:e253bffa1dbdf82d8649f7d0659d4edf00625298156a23ef58320c34b4344af0"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Juries and judges frequently must distinguish between manifold shades of gray.",
+      "text_sha256": "sha256:7f94f271524cfcca136a9f3311968b7ad02cbec46d38870f14455c1c2ff782ab",
+      "idempotency_key": "sha256:e9e53b0d27a6e1575085059ffbf1741f83ff3115a2a0dc4662d06dcfa440d1c9"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The panel found that the grays predominate here, in a record it had already called the thicket of conflicting testimony and the chasmal gaps in the direct evidence.",
+      "text_sha256": "sha256:be5be7d447d04cdbe6f045c0b88289114160d21200ccb74e2536afbb589d4bcd",
+      "idempotency_key": "sha256:b38304e9e175c14e79a78cb6031364eba0aa6630e65867d8584d554fcd51aa08"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The evidence, it said, was conflicted as to whom she saw and what that person was told about her condition.",
+      "text_sha256": "sha256:aa5c0855f24db7ddd13b0e4475299f8a5e342f6370b1cbe8fc8aa92e95fbbf69",
+      "idempotency_key": "sha256:16a4f824159c0fd89ec1bdeecb9c9ecae4f9b3e26b291791b8c239100c8ec6c1"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The Hospital maintained that its personnel were told only that Ms. Gonzalez felt dizzy and nauseated.",
+      "text_sha256": "sha256:bf76ecbf995427d047b9156e31ad25d0ca66b6c3a5921003f846e68fd814b509",
+      "idempotency_key": "sha256:d40c319aa15345349ae9b0958b34f24be71d051a48fa171bb4276a53cbe90715"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Its own witness, Dr. Rojas — the physician who treated her that afternoon — testified that she did not develop chest pains until some time after she arrived at Hospmed.",
+      "text_sha256": "sha256:4184fd5f07cd405665ce7cbad343fbd79e01f1ec2fb5c08f3680fe4991bd177f",
+      "idempotency_key": "sha256:2d9763890937758557b929475b6d7f4761ac9010017b189bfcaae49e1fd29759"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The malpractice claim, the one that asks whether her care was competent, had been dismissed and was not on appeal.",
+      "text_sha256": "sha256:0b755b64bb7cb37ad003470d0213ebe37234ce8684cf1db1bcab24e2d1bde45a",
+      "idempotency_key": "sha256:da2cd8ee2506771c1bb8c1010ea28d6b8ae3a8d42a2867f308782444afa3de8f"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the court agreed, in the middle of its own holding, that an emergency room cannot serve everyone simultaneously.",
+      "text_sha256": "sha256:870087bc8cefbcf87d94700a5d3f68a2b2cf8ea6a8ac234804d5945507d4efc3",
+      "idempotency_key": "sha256:3ec1dc17c68604ccc8132caad552abe07e1aec77e5f531ff5c135ff174d506e2"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Nobody sent her away.",
+      "text_sha256": "sha256:e6035d398b90534f4ee8492cf549b34727153dd49874704cc1b0c40b69a831bf",
+      "idempotency_key": "sha256:ea2fcdaaa2f1bfd7ab2adf0875864539879ddc12f78ccf5c040a5331534b86fb"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Nobody discharged her.",
+      "text_sha256": "sha256:470db529dc8253b53f98646afd8bd3ef563d517b707b6e41b65eaf40340799b7",
+      "idempotency_key": "sha256:d109b0da996d912920a060e15b2fa3075c367a0850320a12680c6d9accf015d4"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "She was given a number, and she left before it was called.",
+      "text_sha256": "sha256:792c8009f779fd4890f2b4395051b72dd241e256b3e2e765024f6a4db572b81d",
+      "idempotency_key": "sha256:f5e88600c1b4378ec804a0643f644d486fb82d39cbcdc5c2e1efeee7ffd832b7"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The hospital said it had neither denied Ms. Gonzalez an initial screening nor refused her essential treatment.",
+      "text_sha256": "sha256:607a821509fd9371749f01a8e51579c222a966ff040c9b038bc4c76f94903960",
+      "idempotency_key": "sha256:41990d5952567de2dece6ec544c759b3378cf63e7cdd348b7328412b7e37b278"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Its point was that it gave the patient a number, and would have ministered to her had she waited.",
+      "text_sha256": "sha256:f7146289e904b7d02907d5cbbe993329531691a3eab58df7c337ffa30b240b6d",
+      "idempotency_key": "sha256:4ae3b1b6357484a7729e4a5fbfeb154b713af1c5d6b900cc1a89befc3bbdb407"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The court's answer is four words.",
+      "text_sha256": "sha256:c5f76f66cf0284b92379810fdf7c73e6cd8cea5ad24cad62234d7b82f1f768f4",
+      "idempotency_key": "sha256:a61e3dffd4c169ff8d6f6a2d5e66152f6f21666553bf91664d3e142a9cea1181"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "This contention is spurious.",
+      "text_sha256": "sha256:582bee9b89f34a6b3b23bbcb90b4647b3df2033dfa5298bcbaf061ae02928434",
+      "idempotency_key": "sha256:906d8043cd464e44615aa3e9bd8634194f7d6fefb9d5831ec815cb197a5b9fc8"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then two reasons, in order.",
+      "text_sha256": "sha256:5bc9c1a157a49ffc1c8bf42d7682ce2384d03c3ad14ec731590b20bc189cf2e8",
+      "idempotency_key": "sha256:b8b575b4d6294b8be18fb2447a22999fb278b81d1bbf9f35e88325c9bf86a782"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The first is the telephone call.",
+      "text_sha256": "sha256:c92786c3bde8afb8e32ba64197734455ee477155d726fa77c394b882d087d3e8",
+      "idempotency_key": "sha256:f8efe8a29ff77cacbb37f0f5b2cec54c493243e8f3f0fbd4121444b01d468a3a"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "According to Dr. Rojas, HSF referred Ms. Gonzalez to Hospmed.",
+      "text_sha256": "sha256:f6b892b6ee97ebc63d5f8c77c4ff4fa4f0f672084bf5075322a373fa06247824",
+      "idempotency_key": "sha256:891519a2e882da23c673f71aea48de2af6463eb55d12086339f2d727e6f77840"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the panel adds a dry aside of its own — we note, as an aside, that HSF called Dr. Rojas as its witness.",
+      "text_sha256": "sha256:15cf659ea4ce87283b69ba90b593d0e55cd1415a8b10a3a7b7ab1b4be5a79d3c",
+      "idempotency_key": "sha256:36c5454a9e062830165d621359ed2f54236b72afd7e047c8157bdc9a6167ac7e"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The hospital's own witness described a call she said came from the hospital, about a patient who would be coming to her instead.",
+      "text_sha256": "sha256:3a96ecf4e587f05440231ca25ad8ffd7b028529ca958139a48ca549210d12f69",
+      "idempotency_key": "sha256:25093f331e4ee579284d320550fb3cf4edfba5cdee55bea186976fff360e6a8e"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "If the jury believed the physician's testimony, the court wrote, it could well have found that HSF never intended to treat the decedent, or, at the least, was itself responsible for truncating her wait.",
+      "text_sha256": "sha256:b0d000062a850172519fd63ed1377875ab5ce9699cdf810304f52a74173fd644",
+      "idempotency_key": "sha256:5084c85c51faffbf2c354011fffe21dfc53d15eab48d08946edf19fb2893d6f5"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "If the jury believed that, the hospital was the reason she got up and drove there.",
+      "text_sha256": "sha256:a384f354036135e130d20f3ae06f58119b2fcdbc16c3b5e7973551b69006b322",
+      "idempotency_key": "sha256:75dc8a473fbc3341678b317a7a517e33c6dec7991297b32a4790217d7851b884"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then the wait it says she abandoned would be a wait it had already ended.",
+      "text_sha256": "sha256:60a5843fabf3a3663ce1ba0b7b735edad8705d9530354369c3f3a352da7ae82c",
+      "idempotency_key": "sha256:1cae71e6ad1ace83ed00dee6c287ca6df060db0bdcef3e88840aa55fe0484e6e"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The second reason does not depend on the telephone call at all.",
+      "text_sha256": "sha256:d8c5cd06fb2dcb30cabd4ef1115c41c4570a944c9f04297dcf5a72f525d89dc1",
+      "idempotency_key": "sha256:dff7ce44e13597b39b141e18fd3811986ebe1e150b0dc584307fa48af4529abc"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Regardless of motive, the court wrote, a complete failure to attend a patient who presents a condition that practically everyone knows may indicate an immediate and acute threat to life can constitute a denial of an appropriate medical screening examination.",
+      "text_sha256": "sha256:4a241c4f3dc9efff579ef8845ad910964c2227dc5a0e37cc5f3688995ae4cd53",
+      "idempotency_key": "sha256:fd9e3692a1f686dd001b570d5a1381d0e118a8a02f4e889dfd0310147c3c134f"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And immediately, the panel fenced its own holding.",
+      "text_sha256": "sha256:23dea1fefddf0263229ac83bd0f3a4281f916334de198d33b4e7729b4049130d",
+      "idempotency_key": "sha256:7366f37a992dfff7e7f0d99098efc6151a59307b7fbb551fe4aa93355035cb43"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Much depends upon circumstances.",
+      "text_sha256": "sha256:ded2c4329d1aa0c3502e94e308affc365a713d980a36143719a109495ad36a35",
+      "idempotency_key": "sha256:15f30d7004bdfcbda13744487143de435a956cdaf339027b0b707a2740b26c0a"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The court was not saying that waiting is unlawful.",
+      "text_sha256": "sha256:2430fd59585fbddc45d9c51fa9feca542fc4224f323e74467b0d6b300f2f097d",
+      "idempotency_key": "sha256:db440a6fb8858b1ecad87fe357d56201f29fca0db45a12620002c0f98b8aee8c"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It was saying that in this case, absent any explanation or mitigating circumstances, the jury could rationally conclude that the Hospital's inaction here amounted to a deliberate denial of screening.",
+      "text_sha256": "sha256:63ba0af19e09bf4da65986c03f79630665817cf33ad3a1b906081dc9452650df",
+      "idempotency_key": "sha256:df7eefac6f2cec3489350d6d764b6c47585baf521f6473fa50cb8bc26c248f2a"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Absent any explanation.",
+      "text_sha256": "sha256:f071b4f356c5db5e1539d76d02be93c7a9cb324cef9aa0d5b5b489c59987064e",
+      "idempotency_key": "sha256:d9b05e9b868b22c642ca5e90d8f2bb849d106d73a74296066af3b8860dd1f085"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And then the sentence the whole case is built on.",
+      "text_sha256": "sha256:cf7c84b16126c94009ccf7c9ba3240f04f744d1e762e3cb5e7fd9e1c51d9ba04",
+      "idempotency_key": "sha256:a465d2ce35b00f11f973e31df4fce228ddf41f7ab33f6c31c27c35b9c6a26db6"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "EMTALA should be read to proscribe both actual and constructive dumping of patients.",
+      "text_sha256": "sha256:6a48d904e0033b635e77b4317fa9cd00e006a676eb6f66f0874c5cfbd487ee00",
+      "idempotency_key": "sha256:4bd6348ade1e26e3026dda7d317f6560afba4c21a23b2f8d2ede4419227f82d1"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Constructive.",
+      "text_sha256": "sha256:de3c258a5c12186bb5364b39a083ed6f9ae527c233e697bbbbdfd3b3b4b2963a",
+      "idempotency_key": "sha256:c9765989be4f54a2f62cbfa757f79571b418d34d0f370eb6549212faf58c3ad6"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The jury's finding that HSF denied Ms. Gonzalez an appropriate screening examination is unimpugnable.",
+      "text_sha256": "sha256:01dce479f2b72b9519644475c078597b234efb7ba1a0012655f8b97f8c7d443e",
+      "idempotency_key": "sha256:92a37716e0aef552fffd83a452c9229ad54d723cea84222cbe5866eb7e2b4395"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On the new-trial motion the court added two observations.",
+      "text_sha256": "sha256:875809e2cd4847a759c7db415a3e50e4ac9deba60bb2ce7231150ee7e04ff6e1",
+      "idempotency_key": "sha256:322923dad6390247e3f5496b2f49ffe76f42eddbf017530204abb4576ed4e571"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Angel Correa's credibility emerged relatively unscathed from cross-examination, and we cannot fault the jury either for crediting his recollection or for concluding that the Hospital denied Ms. Gonzalez any vestige of an appropriate screening.",
+      "text_sha256": "sha256:e059628807134e54d1f565f68a959509cb75d73f513cd4a1443d6ead942e880f",
+      "idempotency_key": "sha256:26c81934067216281e84a49925e470c95c4361a93932ea9ba75d31bdb5a5bfdc"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And on coverage, it noticed a silence: the hospital, which could have supplied a foolproof answer from its own records, offered nothing to suggest that it did not welcome Medicare patients.",
+      "text_sha256": "sha256:4cb6330945a41013b3bd3bbcfcb31cd137849dce112837026acf0ff52870a433",
+      "idempotency_key": "sha256:64fc669e78bd21f03225afdcb6d8c7d2162c4d3d683285971a20b566066caa1c"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The jury, the court summarized, heard testimony from which it could have concluded that Ms. Gonzalez went to the Hospital in critical condition and received only a high number and a cold shoulder.",
+      "text_sha256": "sha256:8677368de4d4fd8c8852075844b2ff967a0550e26a04f7c58aa08240047f5a64",
+      "idempotency_key": "sha256:0e1a2bff953f8c1e2687366998aa30a749d729a3fcee3bf42ac0cdca2195b9a5"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A high number and a cold shoulder.",
+      "text_sha256": "sha256:4cb4b82ddb9b4b3b08b439b3cf45260ef9580814e2dca6ada291ad42b6e7215b",
+      "idempotency_key": "sha256:d0bdb3479a6133054851dfa07d825dec6f48e88279ad7e7ef553084a81590ec4"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Forty-seven.",
+      "text_sha256": "sha256:f4c20f09da9d547b960b603a5f8db3902d37f06286c77132489f9447dacc0eef",
+      "idempotency_key": "sha256:880e2d1da48b8d13402757076c6fa0fcb696c65fad103c5bca88890c808a565d"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Twenty-four.",
+      "text_sha256": "sha256:0211b9b27f3e3e3320c142bbb63d97daa6ebf1f6dd55d0a77026ae16e9176c80",
+      "idempotency_key": "sha256:a7ba7e5054a42502cd1e9ea3a5c82dbdf951102da1553d78802e10dde40c4454"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A number in a hand, an attendant calling a different one, and between them a distance nobody inside that building ever had to explain to anyone.",
+      "text_sha256": "sha256:ee8e8148a5f28679e935efcb7de7dfc52e1e7411f5241f0d1388b3403174a6ae",
+      "idempotency_key": "sha256:4d4347cbf8b106a4faf4af50472975c824548f34f85d263c9b95116e999b1e40"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "One argument was left.",
+      "text_sha256": "sha256:baf80911e1e9a532669d4ffc5e75dde2f8ba098b0ad4c23af5c3288cc0ba190b",
+      "idempotency_key": "sha256:c88ed0279b3cb634f3f575e3316899095484bf4de4da31ae80966d4fd1d6378a"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Liability under EMTALA, the hospital said, requires an economic motive — the suspicion that the patient will be unable adequately to pay her way.",
+      "text_sha256": "sha256:c00c66c045e77f6bf61216ce2b6129fa2cb724eb41cc10b8ee4f4a18e1b21f8d",
+      "idempotency_key": "sha256:bb0ada25371e3b63e6748808b6008b1a7bf11770caccdde65d3b6c17ec3b4e8b"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Ms. Gonzalez had insurance that permitted her hospital visit if an emergency existed.",
+      "text_sha256": "sha256:b82596a8e88046083bc0aa5a53973afe529fd0467c5df8896c4643ad47a07d6a",
+      "idempotency_key": "sha256:42d227ab299b523a0b7cd2366034302e8304773b286703585e933589af9c60d1"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "So no such motive could have existed.",
+      "text_sha256": "sha256:ee4fbccf4461ee323dfff3497f0835730bb4158a48e1149e4e89b072182a5375",
+      "idempotency_key": "sha256:389def28333f0e29c8d9725d58e65449fec935ac15368a51b97bf287668449b9"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The court reviewed that de novo, as a pure question of law, and rejected it flatly.",
+      "text_sha256": "sha256:23c442952ea4e6f223727407ebec38a0387a19b250b35779a33b76d56646ef20",
+      "idempotency_key": "sha256:e8915d2e4f8189a4adddaed8c1d5601d8068ace9662684f4968709b820d4e54e"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Every court of appeals that has considered this issue has concluded that a desire to shirk the burden of uncompensated care is not a necessary element of a cause of action under EMTALA.",
+      "text_sha256": "sha256:f9f959a0820d37304035a83ff60ca46e13073a21b0a6ea8939595ed8bc7d33b5",
+      "idempotency_key": "sha256:beeb794ad71ec8232b216329fd802801ee3b84c51358e30689cfbc28f67a6240"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then the holding, in its own words.",
+      "text_sha256": "sha256:ad849e99565bebea7fcfd19b9976c68903bd0e7977570a881766c4f52ec6aa96",
+      "idempotency_key": "sha256:0b8e0d6643663581a59bceeeab36df56f107ea24d2da7ffcf7b72aa1ad0b7c51"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "We hold, therefore, that EMTALA, by its terms, covers all patients who come to a hospital's emergency department, and requires that they be appropriately screened, regardless of insurance status or ability to pay.",
+      "text_sha256": "sha256:4775729249da1e9fbcf2434e96d125fa732f2373716923e8e882d9e0e1796b19",
+      "idempotency_key": "sha256:cdd20f6f8d7fc1238e383d8d6fafc6f07af87a496e76ea0c5e523bf96c319ddf"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The panel called the argument an oversimplification, and said so in a footnote.",
+      "text_sha256": "sha256:0e9c3e687a06a308b5e501d74fc13b92496d25a4d4bfc0bef58ff75873bfd040",
+      "idempotency_key": "sha256:6796a5b72fa1a920d91045d72ebb5bbf218cacda33b65b982cbb5abbf5f68f70"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "All insurance plans are not created equal.",
+      "text_sha256": "sha256:5a20d86d9bb01613040b857c4509fb0aac940e61cf034837caa2afef98163401",
+      "idempotency_key": "sha256:56e1e72cefab46f45a39a022896919b6551e7fdf09dc752c35a16b81663c027e"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Given the bewildering array of coverage conditions, deductibles, reimbursement rates, and the like, sophisticated but esurient providers have ample provocation to discriminate not only between insured and uninsured patients but also among patients who are insured under different plans.",
+      "text_sha256": "sha256:f2773d4f8e64f9ac15ea8a4b1619504dc85f56fd9a28f63af86132e566b11c5f",
+      "idempotency_key": "sha256:8232e7a01905b07d8ca92c0d1c9dba82f8f80ba8150d5cda285bef4971a17639"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Esurient.",
+      "text_sha256": "sha256:2bb68664e7c622c7443519a656bde7ca5feee3d3873e4ea5857d6ae52549edad",
+      "idempotency_key": "sha256:99649c00cd8b6d313fc09da4327cf91102989f59baf01272bce644992ac74832"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Greedy.",
+      "text_sha256": "sha256:38d2d44df546f82813fc124c9ca6c77982435f41362d80f58d0419362032a312",
+      "idempotency_key": "sha256:ed897a7e24c89f934fbb391879988da6037e25cbe12ec847ad2bc1c7350dc4d6"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And in the statutory appendix at the back of the opinion is a provision that reads differently once a card has been checked at one o'clock.",
+      "text_sha256": "sha256:1e29d5b404c2145eb24bd5e5f694f1583ec9539334a80082a325ced31a053584",
+      "idempotency_key": "sha256:5d2847fb09959b8df318b1a59a5c77c11cd998192a22e0c172c0db5ca3b4d0ce"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A participating hospital may not delay provision of an appropriate medical screening examination required under subsection (a) of this section in order to inquire about the individual's method of payment or insurance status.",
+      "text_sha256": "sha256:5ad8d91e5f6e8c8518717c218e681505730aeba66de4430237020912d07d9865",
+      "idempotency_key": "sha256:8bc0621e4b7fa3c83d8fc6e12da9d9a250f77e3b069d099ae8c6a8854a28195a"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The court decided none of this on motive.",
+      "text_sha256": "sha256:be122910313d4d3e4297d7fdace58eafb8a0d4fb371a625d24637d6a99bd8bd8",
+      "idempotency_key": "sha256:89cd0f13437f049d508e0042c1eab05842b45cb6a8fbbb33fb33c56fd33a6718"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Under its own holding, it did not have to.",
+      "text_sha256": "sha256:2f85900195bd7a2cbb26662ca32bf0894870b6f762b30d3050c79b38e6d4ff64",
+      "idempotency_key": "sha256:b1632b4c1b0c40021dd9c2e45180e518e5232efa9fe003890278c06a729ba2b9"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is liability.",
+      "text_sha256": "sha256:5ecf331689c674e32c30a45514b60ff880cfd8ca2c7fadd50ec92e6b0b8ce5b1",
+      "idempotency_key": "sha256:fc43748a1b12c079dda153ecceb749befe00c905412abac66a1a161f1b3ba825"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What is left is money, and the strangest part of the case happens here.",
+      "text_sha256": "sha256:7064732a3b46773be493a2f5e2fea1569dd6eb612c33fe2ba8c7b516c467ba01",
+      "idempotency_key": "sha256:fec99790dee511cdcc98095e501881ec24dcac4eeb92db45f6c77dd02532f57a"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The hospital's best legal argument on appeal was about damages.",
+      "text_sha256": "sha256:8cbb5aef0335b9d2e330041105f361d665af5dd56f878dbdfaa8ff1873857c21",
+      "idempotency_key": "sha256:682a1aee21b572399401a8436ddae52f9a5e428f9a6e8a0885a8ede1ff90157c"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Its position was that EMTALA compensates the patient's harm and nothing else — that seven relatives cannot be paid for their own grief under a federal statute about emergency rooms.",
+      "text_sha256": "sha256:4bd0e4b31bb4b1278827635db6d49da5954888a9c765727223a1b288ef7fd107",
+      "idempotency_key": "sha256:97f28f0da48fb9f74b7b0e0abc19f8d5bdb41f4920e774d84a0bacaca4a77a1e"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The court never decided it.",
+      "text_sha256": "sha256:1c20a996db290244bdfee4d58308bc2ab234ccf017e2736748839847948074dc",
+      "idempotency_key": "sha256:3e84351e2d1cee52f85fd8f4c5293b526b9741c519de56ffde449e035f0d2687"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The chronology is why.",
+      "text_sha256": "sha256:71cc0fc9f811e100c00a059d99dc68e84258f6971ef6c63589bc3c30fc042ce9",
+      "idempotency_key": "sha256:a3159806dac433db29ddb47a6a102d1254b8e6878c2dcb71acfb3510847b050c"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The hospital first had the opportunity to assert this defense in its answer to the complaint, and did not.",
+      "text_sha256": "sha256:659f4c3a974d4bb8389a39e1886d95da782b7111686c7ced19f7bcb88d2c0601",
+      "idempotency_key": "sha256:b6609a0d6d6d1a884c8fdc48e267aaebc0e95e3e8b51855114e421aff238dadb"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It omitted it from its submissions for the initial scheduling conference.",
+      "text_sha256": "sha256:c7147c3c738ebf212420a1010e2d7cee4638b2d00d1d0d89e577aaadf7da76a5",
+      "idempotency_key": "sha256:5ab7acf510e2e730f3c65f4c3b6ccbc38326215e5eeddc1123a54c4f8df59490"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It omitted it from its submissions for the pretrial conference, so the pretrial order, signed by all counsel and entered by the district court, made no mention of it.",
+      "text_sha256": "sha256:61f276595595a5329f69cd9941c193284596fd5475f3734733e885b77bdde763",
+      "idempotency_key": "sha256:cc55e3db391027f1080662252b566f2e1e77f8633b4de0617dc57ec9733a8a25"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Its trial brief enumerated three legal issues and this was not among them.",
+      "text_sha256": "sha256:5cfe9af4dc33757ec0baddf2d23d43342b366e05ffefa0d0516a4f92d93d9731",
+      "idempotency_key": "sha256:68f985289170699d7d4c7a07376dc010da26d567c58698b011e1eea7a86ccb5c"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It moved for judgment as a matter of law at the close of the plaintiffs' case without raising it, renewed that motion at the close of all the evidence without adding it, and then raised no objection to the verdict forms or the jury instructions that put the relatives' own suffering to the jury.",
+      "text_sha256": "sha256:2c47646792d37f5a77bba627f499a330994b5c8c6ab7c28cbc40dc9f21f12218",
+      "idempotency_key": "sha256:5831ca093724e763f6eadb82d9eb28980be60cfbac04479d2fdcb86778056d1b"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "This was a waiver, pure and simple.",
+      "text_sha256": "sha256:4fc95c4b25ee1c5353e5ae90d33f312b844253d7beae63bb68bb25f7155d365d",
+      "idempotency_key": "sha256:fff69cfb318102cb6830ebd0221837cb147ac8987a54c8d83de42509b88c0340"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Based on this somber record of inattention, the panel held, HSF forfeited the theory of defense that it now espouses.",
+      "text_sha256": "sha256:8c515890806f6952b3391e169ef9323e04e34fec453e7421cfbfd3d6fd02eb5a",
+      "idempotency_key": "sha256:af649d22ac7d93ccde26ae6426288a3bf11b0ed9272804ec6777872f2eb50d4a"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It gave special weight to the Hospital's boycott of the final pretrial order.",
+      "text_sha256": "sha256:39ca32e18745be99684152ed1014e6d61c995d93713e42befb726e1a33b31a82",
+      "idempotency_key": "sha256:b1ca7320221d17d66537fe81df6479cdf4dc575b3a8b8b36887a5b0cb2a1b69f"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That order is intended to control the subsequent course of the action, and can be modified only to prevent manifest injustice.",
+      "text_sha256": "sha256:04df1bf47f84b46744ab3bc2bda69af8fda635bc6c08fdf5777b606772d85191",
+      "idempotency_key": "sha256:5bda056b52b98f04b3e3e971b34fa5b53694621a4fd69773f92deb16f1babcc6"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The post-trial motion that finally raised the point got the sentence it deserved.",
+      "text_sha256": "sha256:b4bdbba632f2497e14d06177d136bc6ee5dc176efc01fefe30c86eac6f5d8829",
+      "idempotency_key": "sha256:764969b77d11ba2e68941ae71a6b384aed99df8a2c9e140940b08748dd7a0a1a"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "This motion is a classic example of a litigant locking the barn door long after the horse has bolted.",
+      "text_sha256": "sha256:d603d79acfcb7eed7e99de75d7f51b0e3f543de6ec664cbb8893175f00dac5f6",
+      "idempotency_key": "sha256:5b18c248c8c042a463ca19962bb5be310bb5f24b214f0701179788f59b3b888a"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A renewed motion under Rule 50(b) is bounded by the movant's earlier Rule 50(a) motion.",
+      "text_sha256": "sha256:de6c1c1820ee6b00cb828dfb4741fbe0310a2ab25858c61b995c1537c5d20bc1",
+      "idempotency_key": "sha256:3395b4050cbb94fc279058baa0e20593f86d3e7147633f2ece212fd69e25ceca"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The movant cannot use such a motion as a vehicle to introduce a legal theory not distinctly articulated in its close-of-evidence motion for a directed verdict.",
+      "text_sha256": "sha256:8789b1addf01602d18ee366eafb06ec0593e54ac6a9d3f37affb98b83befe81f",
+      "idempotency_key": "sha256:b825df06011b256b38cb81bbb55963696cf6ca420f091045449b5d3c225848e8"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "So whether relatives may recover under EMTALA for their own anguish was left open.",
+      "text_sha256": "sha256:97566e431419ad6f4f646c71cfaef217c729347424eac1b17752acf0b1d557f2",
+      "idempotency_key": "sha256:0cc34e09828f25b09aed70e2f7dca302af9a7a7758cc316c1213599bd25f3c72"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The court said only that both readings of the statute are superficially plausible, and that it could not say it was plain error for the lower court, in the absence of any timely objection, to interpret the statute generously.",
+      "text_sha256": "sha256:4e8468ecc931169b800850bf1bbd55f40cc71cdc714228011e08319a0e44daa5",
+      "idempotency_key": "sha256:2ef13bc4b7451eee0e095761733e00d56af35cb9d1b70a5ebab106c1065c97a7"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not decided.",
+      "text_sha256": "sha256:e812e23c74342a051d51053c004e55dd7a9459d473452e099cb31aa2ea1186f1",
+      "idempotency_key": "sha256:6218508ebcd3a100641d4853475a560caf322f920680b6660d0cafaab586e940"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Forfeited.",
+      "text_sha256": "sha256:eac9830704a08bb01635164b2c523b795e53f8036021c6322845f351a6616c58",
+      "idempotency_key": "sha256:e4da334ba153506e17b263566381d69f48f623e7515f2f7d221fccb0b9067ec0"
+    },
+    {
+      "chunk_id": "VC-0302",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "This case turns on that difference twice.",
+      "text_sha256": "sha256:fa342c368454cb3a16c3be2a7c21ddc48e382fe3360fcd53ff702c6f5a6508ba",
+      "idempotency_key": "sha256:f18f99d9126334dda5474e8219d9a5b13b6669ae6e645bcdaa876535cde73bc3"
+    },
+    {
+      "chunk_id": "VC-0303",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That left excessiveness, reviewed for abuse of discretion.",
+      "text_sha256": "sha256:29b1ec716e6130fd82fdd7bedc7f97049fc421afa4a2b682dc741a381913e5f5",
+      "idempotency_key": "sha256:aad421bfb6dda3eb6ec3ea8e1a0cbb9be4cfdc65990a2e52b7e026850af4ed94"
+    },
+    {
+      "chunk_id": "VC-0304",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "An award must endure unless it is grossly excessive, inordinate, shocking to the conscience of the court, or so high that it would be a denial of justice to permit it to stand.",
+      "text_sha256": "sha256:836bcd79c2f696be7b44f3737df584d77ae3cc0b1d9be6300c0dcc466450c5e7",
+      "idempotency_key": "sha256:2242d01cb55304afac5e54fc021932ad4fc489113ca8635575facc147ffc271e"
+    },
+    {
+      "chunk_id": "VC-0305",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The evidence behind the five hundred thousand dollars was ordinary and exact.",
+      "text_sha256": "sha256:15dc03c24922c42d2cd19d464340a3bc0e79d53755d988df9672cab152421727",
+      "idempotency_key": "sha256:d2dfabfc7b76cf91224831d2a9d6d08eb0a52691197f59cb871b8013138dddb5"
+    },
+    {
+      "chunk_id": "VC-0306",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The testimony indicated that the decedent was a matriarchal figure who functioned as the hub of the family circle.",
+      "text_sha256": "sha256:bd8b18723226f177c975d46ac9d88bcedd6b263723b055a1d496ba0beb3dd6f5",
+      "idempotency_key": "sha256:27076cf7f8a67ed61a625cb9f386acdad294701b0152a6c88ad4cc700a5e499b"
+    },
+    {
+      "chunk_id": "VC-0307",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Her son Angel lived with her.",
+      "text_sha256": "sha256:5c236f5676897f75e895251a3c3072498db89a851023a5e3cf2a4fd34a36208b",
+      "idempotency_key": "sha256:59f98db8d1158f2449a4c4ef6b63b3a538bd1ae67ca00689a11a6727a1aa8340"
+    },
+    {
+      "chunk_id": "VC-0308",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Her two daughters, Gloria and Esther, resided nearby.",
+      "text_sha256": "sha256:9ae57aa72b4da7ecfbe9b0719cc32a90de0fd9a1d85c6c9dc0e823e6d7c9382d",
+      "idempotency_key": "sha256:ae127fd5d8c8caf07625cbce245def64ac2211862e3cdf705665eb657659d7a2"
+    },
+    {
+      "chunk_id": "VC-0309",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Her deceased son's four children — who lost their father a mere five months before their grandmother perished — dwelt in her home for much of their lives.",
+      "text_sha256": "sha256:1ea04960b3e75cd8450831b1661df2f28c658f57b93633965ccba4f9b682064f",
+      "idempotency_key": "sha256:ef653fc1dc29d0816a01910134ffbc4bd34a14b692965d98cfe9a7104c2cbef0"
+    },
+    {
+      "chunk_id": "VC-0310",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "An expert testified that all three of her children suffered depression in the wake of their mother's death, and that the four grandchildren experienced sadness, suffering and the like that would take up to five years to abate.",
+      "text_sha256": "sha256:2d438fb9de4d00c0d69cdbbb61b0e9b59bbece668e49627191da140ec26901a6",
+      "idempotency_key": "sha256:e3d385a632dd499fc2ce31e94e79a1b0b7080fcde36334cf356082ea59ff0e60"
+    },
+    {
+      "chunk_id": "VC-0311",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "At trial, HSF neither rebutted this testimony in kind nor effectively impeached it.",
+      "text_sha256": "sha256:25a9717981de1d44e09744cdd9300020794f013935de666f08330c3f212da858",
+      "idempotency_key": "sha256:455d751fb7bbb6d9f7d585674a15d572acf55827dcec2c29ae1b4c7eed0c2921"
+    },
+    {
+      "chunk_id": "VC-0312",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On appeal it cited a case as authority for a proposition exactly the opposite of what the case holds, without ellipses to signify what it had cut out.",
+      "text_sha256": "sha256:fc4dbc37853d45352128a042e2f044cb1c48038e630d56c388b90b8161025b5c",
+      "idempotency_key": "sha256:61846a6e9bb0a16f4f464234615d9d4f757343c4fc49887e4f5e6473f650f254"
+    },
+    {
+      "chunk_id": "VC-0313",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The court called the argument both disingenuous and unpersuasive.",
+      "text_sha256": "sha256:752d1f62011a7f8abff67943defa51a284ba33ea01069000c39ab76a3a8e2de3",
+      "idempotency_key": "sha256:62410efea34e14fbfafc3b5bd0dfd12441d4ef2e8d8fd254eb9fca504287a89b"
+    },
+    {
+      "chunk_id": "VC-0314",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It is hard to doubt, the opinion says, that the plaintiffs suffered when the woman described by one witness as the trunk of the family tree was cut down.",
+      "text_sha256": "sha256:02bf7a1972cd3b7e7eb603de115b614cc8daf75a26a8eca65114f7a2f7d189a1",
+      "idempotency_key": "sha256:ec17b319089e89361651315dc3b3a1d19a9fd9148128fe01a20309165494c0a9"
+    },
+    {
+      "chunk_id": "VC-0315",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The sums awarded, the court said, do not shock our collective conscience.",
+      "text_sha256": "sha256:161cefc16258bb3428e4be2e881a25559eb7f1f744f3a2253c0df269745ae3ac",
+      "idempotency_key": "sha256:1630356b1ecd3c4a399bceafaeb10b8a8e291f323786ea8d6bd4598b8fd04440"
+    },
+    {
+      "chunk_id": "VC-0316",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the two hundred thousand awarded on her own account.",
+      "text_sha256": "sha256:7aa6efdfa6bb2ec7b9d05020d02a2c6132df16b51a285d48aa380a3d44130b3e",
+      "idempotency_key": "sha256:b4497fff9d2d5c475d018825d731ed4f538dca59ebe6797dbc617b2845c6effe"
+    },
+    {
+      "chunk_id": "VC-0317",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Though generous, the jury's assessment does not outstrip the bounds of reason.",
+      "text_sha256": "sha256:0466ec255c6f981e6e5dc4c16a4cb5fb37264deaa63cd07f1145d64e372e5c79",
+      "idempotency_key": "sha256:70069c70df34c8182cc7f39fc3a09a03293c7d7ca2b00a4251930fcef6a6ed7f"
+    },
+    {
+      "chunk_id": "VC-0318",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The court gave its reason in two sentences.",
+      "text_sha256": "sha256:65131098caa1d20d183b7c493b74c5e0575ac7ecd4d6c618330272f666a22480",
+      "idempotency_key": "sha256:c928f8a55d461f529894bd11e14b829813d15408016b6162e79b74d45c5101d6"
+    },
+    {
+      "chunk_id": "VC-0319",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Due to the Hospital's failure to provide even the most rudimentary screening, the court wrote, Ms. Gonzalez spent the few remaining hours of her life in agony, beset by nausea, dizziness, and chest pains.",
+      "text_sha256": "sha256:ba1d589e7e27090d42ecfcacb557576f2162789cc0316c7d21ed3d9edadfa82f",
+      "idempotency_key": "sha256:cefff436ec1fbd244b1fb9217216d790d72fc354148dc1d75f6030b395766c35"
+    },
+    {
+      "chunk_id": "VC-0320",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It is hard to imagine — let alone to quantify in dollars — the sheer terror that she must have felt while waiting for medical attention that never came.",
+      "text_sha256": "sha256:975bdba8e052d9b3dc6685d3a78d7000553e65bf13de13d44262449186ef9f8a",
+      "idempotency_key": "sha256:f094bd9ec41fea96968d9f22abbd5dc35dab6ef2dd35f916acb0677ef85cac93"
+    },
+    {
+      "chunk_id": "VC-0321",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not her death.",
+      "text_sha256": "sha256:e131ecbb6a5ab08c88abe65c8e2d22ae617cee1a981ba7d4b55550728326fce6",
+      "idempotency_key": "sha256:e26a14b6353030dce9ce1d1c3aa95913ec239415f833f039adb15526d614f71e"
+    },
+    {
+      "chunk_id": "VC-0322",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The waiting.",
+      "text_sha256": "sha256:b8feeb5e1ca10ada62fc1c6c66c163d27df460c5800ea7971df2a0b9236366d8",
+      "idempotency_key": "sha256:79e70eb26074609cf66fe839ae2e44f662595143561dd52c5bbff884cf378d85"
+    },
+    {
+      "chunk_id": "VC-0323",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "This case, the court added, in which the decedent's travails extended over a period of several hours, is unlike cases involving sudden death in which a decedent's pain and suffering is limited to a few seconds or, at most, a matter of minutes.",
+      "text_sha256": "sha256:4d924c3730d77e30878ae79a9533f74757cbe4d0ae1e1fdd86b9d6315b684c04",
+      "idempotency_key": "sha256:2113718d68bdf055fe83d8be4f659f5236ddd37419b1b1a3ebd6ef3965fa08d9"
+    },
+    {
+      "chunk_id": "VC-0324",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Nothing was reversed.",
+      "text_sha256": "sha256:d91e57b43be96337ada12507ba0889af7b0f1c09d8147bbdf257c69a494398e8",
+      "idempotency_key": "sha256:cab9f3e25a5c5df3ab578ca913c5e12a35cf4e66c69194bc4993d26bfd01d80e"
+    },
+    {
+      "chunk_id": "VC-0325",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Nothing was vacated.",
+      "text_sha256": "sha256:0a0da74b3f682fe5e3fd4d0969245d15146c7e0c43d638d1110166c7fc69041e",
+      "idempotency_key": "sha256:e06d22d70c2d17166742b075c08c097967df8c883267756dd088e516bd4f7351"
+    },
+    {
+      "chunk_id": "VC-0326",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "No remittitur was ordered.",
+      "text_sha256": "sha256:fbc6b2bece37d06b3c2a969502f9a87de01127905ebe11f9b0cdef89dc858fd2",
+      "idempotency_key": "sha256:b458b25a1d33b5187f2e1e740939bb765ab56b6136a5b7f6b04569b169067531"
+    },
+    {
+      "chunk_id": "VC-0327",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "We need go no further, the panel wrote.",
+      "text_sha256": "sha256:a4f45b9723cd4f3cab264228472e3c1cab0d4e84649f94ee1d43179346075fe1",
+      "idempotency_key": "sha256:90997294676eb9052ff065007f02bcd79c703fc4bf52cde41881d9cb0619ab5e"
+    },
+    {
+      "chunk_id": "VC-0328",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "HSF has not presented arguments capable of overcoming the formidable hurdles it faces in challenging either the liability determination or the damage assessment of a properly instructed jury.",
+      "text_sha256": "sha256:c6751d83e31177b09b68079c92683343e28c159278f2c49fede630b52af06f84",
+      "idempotency_key": "sha256:0d838ae9cd6a5a8d49af64e6fca379202a60eee279b1b95cb81359f5f144238c"
+    },
+    {
+      "chunk_id": "VC-0329",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The judgment below must therefore be affirmed.",
+      "text_sha256": "sha256:13aca808f9645edc16095f758539dc4d0c72818d1f45faf795bbb78a81a252b2",
+      "idempotency_key": "sha256:9a560633cda8d89210a3edc70dd97d8f1aa30d81b7b9f4c0c1ec01cfcb362ae6"
+    },
+    {
+      "chunk_id": "VC-0330",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "What this case gives is narrower than it sounds, and the court was careful to say so.",
+      "text_sha256": "sha256:0c600a255f75d33de3bfbae09849de502e54a13d2fdfc893b0ea79a00164e5a8",
+      "idempotency_key": "sha256:5f0bf6cb1897b7096fb054adc5876ea3be268cb5a13196cc43fe66f80c3d296a"
+    },
+    {
+      "chunk_id": "VC-0331",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It does not guarantee treatment.",
+      "text_sha256": "sha256:aa4206651e375ec27243f2a10c070cb60978df6b74fd3a9bf73a702fc4278ea4",
+      "idempotency_key": "sha256:115c03241643c35b64497797c7d955f394b7308416b0f3166354c90d007341d6"
+    },
+    {
+      "chunk_id": "VC-0332",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "EMTALA promises a screening — some procedure, administered even-handedly — and stabilisation if an emergency condition is found.",
+      "text_sha256": "sha256:183ff50cfbc516030c60acef273919008221b7e61e0b807cab3886562dd939b2",
+      "idempotency_key": "sha256:e0d4bc3c531f712ed85bb8d960a0fcab6e3c411ea2da00afee955433f0b59f1d"
+    },
+    {
+      "chunk_id": "VC-0333",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A hospital that examines you badly has not broken this law.",
+      "text_sha256": "sha256:d1fd90f9a7906f04a45e35785f2b55af445f48ea45e15b0db37dcec2af69f0f1",
+      "idempotency_key": "sha256:b23814a6ebe9b6716d1fe8505bdbfcba932379ad72ef6c07dfb5b1c7c1e85f4d"
+    },
+    {
+      "chunk_id": "VC-0334",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "An emergency room, the panel said in the middle of its own holding, cannot serve everyone simultaneously.",
+      "text_sha256": "sha256:129810b8fbb89f79a36eaec8e9f50e4109d19a73c54a4189de55911fadf25bea",
+      "idempotency_key": "sha256:2cec50b97adf8f2ffe4186ca0ef30b600f400ce834bf29564b725f297f1249f0"
+    },
+    {
+      "chunk_id": "VC-0335",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It does not make delay unlawful.",
+      "text_sha256": "sha256:b2389c9b28f3ef5cc3125ab4bdf31fa5bc67676cfdaf43352e48069b5ef89ec4",
+      "idempotency_key": "sha256:1af9825cf2e26581745c9cce1f2ba5c94a238160611f88d13643863bfd8fdb48"
+    },
+    {
+      "chunk_id": "VC-0336",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The court expressly refused to decide whether mere negligence in failing to expedite screening would violate the statute.",
+      "text_sha256": "sha256:5d97253515927d7be3114cd704d8019cac47988b1bc767f450cbe1023046d2b0",
+      "idempotency_key": "sha256:3c98d69d423b2a50e6110c1e1cde2303579a4607350330c4edea6f22edfd271c"
+    },
+    {
+      "chunk_id": "VC-0337",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It held only that this delay, on this record, was so egregious and lacking in justification as to amount to an effective denial of a screening examination.",
+      "text_sha256": "sha256:f1f19b7fda66cb97b005053a7f9fd5a92364da5f4ab3c326d69e97aa3e91f2d8",
+      "idempotency_key": "sha256:ae0ccbe5afc07d689ab523306cf19d9369d37406e61aa8382f463fb6b1c4d44b"
+    },
+    {
+      "chunk_id": "VC-0338",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It does not find that the hospital dumped her.",
+      "text_sha256": "sha256:6bf8a2baa7f93701d0748bcc677e181c689276e1941c1f34b950d7e0f1b46966",
+      "idempotency_key": "sha256:d6cd98c9edc59ba9d9aea00c62943792059aa5a86151e2fe4bbb99aea8021ddd"
+    },
+    {
+      "chunk_id": "VC-0339",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A jury found a screening violation.",
+      "text_sha256": "sha256:275842057243b6c6ae734f735134262e9f315fbe46b5075286d5c5f26ad5fcb1",
+      "idempotency_key": "sha256:645e339c8c4bb528d93a2d35b818a5eb4322e46f7b1bac10f0b23b85ca946b8f"
+    },
+    {
+      "chunk_id": "VC-0340",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The court of appeals held that finding unimpugnable, and said, as a proposition of law, that the statute reaches constructive dumping as well as actual dumping.",
+      "text_sha256": "sha256:48d8ae682984c6b012cea9be3ceb2571989ee502a3350021bdf0022c7bccb176",
+      "idempotency_key": "sha256:e9c0784f182d452f56e5332948cd0b2d4a06efaa5708ec1a6a309eb53ae231a1"
+    },
+    {
+      "chunk_id": "VC-0341",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Those are two different sentences, and the case is the second one.",
+      "text_sha256": "sha256:670a0433f9010a11eafa3bdca3e5a671ab5b6c7a9ad835e47adba15e4cf5f6f9",
+      "idempotency_key": "sha256:8a6ecdc1d3f4d38b2dca0f71c8f398b56c9f1959b24a689dae71b8f041220997"
+    },
+    {
+      "chunk_id": "VC-0342",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It does not hold that the transfer was unlawful.",
+      "text_sha256": "sha256:39cc2a85022642c280d13d90e1fe1af9158090a09352fec796e7f178f910a0ed",
+      "idempotency_key": "sha256:a03d1ccc7d475f1c498d69374507cd470ad87981101374e49dfa187a64e5a019"
+    },
+    {
+      "chunk_id": "VC-0343",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That finding was never reviewed.",
+      "text_sha256": "sha256:4edf2cc0e1db68a93b537d3b732fda11920e9d123685ce05b3303e2609a9d0ed",
+      "idempotency_key": "sha256:511ff3a05d65a2cc04becd8426f73cc1c1ec498c1c40e35bfa1bc31f5045378d"
+    },
+    {
+      "chunk_id": "VC-0344",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "What is left is a method, and it is the most portable thing in the opinion.",
+      "text_sha256": "sha256:790389774cd56205710b815b08476d413e1b46e90a23b2719cb5bdf8ec1455e7",
+      "idempotency_key": "sha256:92a41b3d41c75f73cef61e4dd587e8199861161ade2e515c96c0f8ede330dd31"
+    },
+    {
+      "chunk_id": "VC-0345",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "To find out whether an emergency room had screened someone, the court did not call a medical expert.",
+      "text_sha256": "sha256:e823321300ce87122d53fcd1343995459fa27f43e781d00f2bd7630d5f2ce5fd",
+      "idempotency_key": "sha256:d58d71c57ec63990d13fc725d12531798fefec1f30b3165c46583672d60bced3"
+    },
+    {
+      "chunk_id": "VC-0346",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It asked what the hospital's own rules required, and then asked what the hospital could produce.",
+      "text_sha256": "sha256:aac8c42adf8e66e259dc4df487de52efb90f6ead76a95e1b191de851ef744627",
+      "idempotency_key": "sha256:b78ba2bfec9038b8410018589f926655c97ad6b32da13c3000796353a307a0d0"
+    },
+    {
+      "chunk_id": "VC-0347",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Vital signs.",
+      "text_sha256": "sha256:a651d0c4ecf582d775dbd9a228d2c490dbf3230c225efb06b0edf755882db10d",
+      "idempotency_key": "sha256:c69ea95eb3288b0d54f54f3cae401c41c11045a5ccd33736af0bf3b02ef9bd4a"
+    },
+    {
+      "chunk_id": "VC-0348",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A written chart.",
+      "text_sha256": "sha256:fed9feaabbbfcbe21f8d17fe5e1e451e5dbfa53408e81ef740e96e30a960bcf9",
+      "idempotency_key": "sha256:ef42aa30cb46370775d949de31299eadf910fb3b7d4b8a47f2255af9f919091a"
+    },
+    {
+      "chunk_id": "VC-0349",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A referral to an in-house physician.",
+      "text_sha256": "sha256:ca2511f5fd01475abf20909706d96c24906f2061c9461c9109ca6e0a4d1211b1",
+      "idempotency_key": "sha256:8e3015ea78bd5465cef5cd5bd411bf4fce43e642a7ef7a538828e43bff9270e8"
+    },
+    {
+      "chunk_id": "VC-0350",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Four rules the hospital wrote for itself, and nothing produced for a woman who had been inside it for two hours.",
+      "text_sha256": "sha256:290a0940a2d6ba3c42a009b1e8c9da364bd4c6df70772b37a28a49c00fd222a3",
+      "idempotency_key": "sha256:1e4d801e1701c6c692e5a38c5798ecc5a3e054f977da0199c804de89b7b758b5"
+    },
+    {
+      "chunk_id": "VC-0351",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "There is no villain in this record.",
+      "text_sha256": "sha256:388ba17af3c8af328d13ba76a2ba9a3e356ba3d0f7755510773f1f0afc85ac27",
+      "idempotency_key": "sha256:bedfe531c590ed4e4f383f16d9c6c95c00dfd8f0b3d21876adadf0994f14b7df"
+    },
+    {
+      "chunk_id": "VC-0352",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "No decision was ever testified to.",
+      "text_sha256": "sha256:49f7794e8bbe2a3de61df5eec649f89e244bbd021af1d6a0325e07f6aee291ae",
+      "idempotency_key": "sha256:2b81b858bab4d9f1a15f4e4812eb00dd52802cafc91574d2455b3ecf606274a1"
+    },
+    {
+      "chunk_id": "VC-0353",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Nobody was shown to have looked at an insurance card and formed a judgment about the person holding it.",
+      "text_sha256": "sha256:d0a1f34b3667e0dbca58b6fb88c4d14008ccecadeb5bb4b731902bf33b795b84",
+      "idempotency_key": "sha256:42bceb1d1f0ecef52ae7fa8805c5723aa6a5c21b028436c8496a9117ccb399bc"
+    },
+    {
+      "chunk_id": "VC-0354",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is what the court's word is for.",
+      "text_sha256": "sha256:9876dfcf8f9ea8a83e1f75891691fe674ba87d9c982a9ad255fde5149006ed03",
+      "idempotency_key": "sha256:775555e2efc92b3aece3198f783d2cd6bcbbde8fac7ca8a1a4ea72d79f5ee305"
+    },
+    {
+      "chunk_id": "VC-0355",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Constructive.",
+      "text_sha256": "sha256:de3c258a5c12186bb5364b39a083ed6f9ae527c233e697bbbbdfd3b3b4b2963a",
+      "idempotency_key": "sha256:2d6a649fc727136c2dcafb90d69e365659289aae464ea2607740d21c6fd5e4aa"
+    },
+    {
+      "chunk_id": "VC-0356",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It does not require anybody to decide anything.",
+      "text_sha256": "sha256:9e2e634461b17eebced9121eb908a7a59fc76dffdfedfe0cd0f340f7524b805b",
+      "idempotency_key": "sha256:d18c8643b54ab456c2724e3b08283dfdb353fb0f91fc6d1e14480054b3a549de"
+    },
+    {
+      "chunk_id": "VC-0357",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Somewhere in that building, while she was still sitting in it, an attendant called number twenty-four.",
+      "text_sha256": "sha256:6b89fe7c871c624033f3695963d20356ab567890b1cfca7364bd7559deb7a64c",
+      "idempotency_key": "sha256:712d2382011e74c19a3fa0d246f38559881851427d6b22fb375feeb10b46b105"
+    },
+    {
+      "chunk_id": "VC-0358",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Nothing was refused.",
+      "text_sha256": "sha256:45e2ec5fee61ec6479bf6cfa8d2011278d692e4897b3c8f0cf76dae17b7914f3",
+      "idempotency_key": "sha256:05e6d731d9f404bf8413c1a61197b752de17bf3c1f3862249de45369c9a52eab"
+    },
+    {
+      "chunk_id": "VC-0359",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Nothing was said.",
+      "text_sha256": "sha256:f1bd356ff68c3b960929757e446ff7011ee75a4842ab3da7d0bc1417dcc0643f",
+      "idempotency_key": "sha256:9495a4a2eb69eb19e54752b886dae0aaf913ca55113a057abcc050c38dc55858"
+    },
+    {
+      "chunk_id": "VC-0360",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Forty-seven was never called.",
+      "text_sha256": "sha256:7a6a8d478ddf01b541197b2820c144feca430af8a99f3158fb95a1b158efa47f",
+      "idempotency_key": "sha256:817ba99e886632170305c9ca5065f055776620cc0bf91ae4cb250f393b4542e0"
+    }
+  ]
+}

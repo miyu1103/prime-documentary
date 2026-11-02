@@ -1,0 +1,56 @@
+EP82_valdez — 画像発注 バッチ 18/23（8枚）
+区分: ENDING / PEOPLE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, ship name, funnel marking, company colour, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) V137.png
+   [V137]  flags: 
+   View from the dark chart-table corner across an empty ship's bridge at dawn, analogue instruments glowing below brilliant orange windows
+
+2) V138.png
+   [V138]  flags: 
+   An empty lookout position at a bow rail at first light, brilliant pale sky, calm water
+
+3) V139.png
+   [V139]  flags: 
+   A wide Alaskan sound at sunrise, brilliant sun on the horizon, snow on the mountains, empty water
+
+4) V140.png
+   [V140]  flags: 
+   A plain unmarked tanker at sea in brilliant morning light seen from the air, open ocean
+
+5) V141.png
+   [V141]  flags: 
+   A blank ruled crew list form pinned beneath a brass paperweight on a steel desk, brilliant morning light cutting diagonally across its empty columns
+
+6) V142.png
+   [V142]  flags: 
+   A cabin porthole at sunrise with brilliant orange light coming through onto an empty bunk
+
+7) V143.png
+   [V143]  flags: P
+   A ship's officer seen from directly behind at a lit chart table, dividers in hand
+
+8) V144.png
+   [V144]  flags: P
+   An officer seen from behind standing at a bridge window at night, instruments glowing behind him

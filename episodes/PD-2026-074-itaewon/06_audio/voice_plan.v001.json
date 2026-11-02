@@ -1,0 +1,2773 @@
+{
+  "episode_id": "PD-2026-074-itaewon",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Thirty-four minutes past six, on a Saturday evening in Seoul, someone pushed their way out of a crowded alley, took out a phone, and called the police.",
+      "text_sha256": "sha256:dd2f997b852c24ede45d657cbced918771671dc05eba14975bf8a9d8e250054e",
+      "idempotency_key": "sha256:2fe62f4bfcd5946efe76023dbec933bebe065f6330eb7cf673dc9670b5082bd7"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "It was not a crime they were reporting.",
+      "text_sha256": "sha256:ee497c07ebd36abdb0393fd82d364267841bc3fdbebdc71f44bae339999e6f74",
+      "idempotency_key": "sha256:c2b3db6b8f60cb65af83081d0c9a60544f2c1259b37a5c78121bacf328ab2cd4"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "They said people were being forced uphill into a place where there was no room to come back down, and that somebody should come and control it.",
+      "text_sha256": "sha256:c69ec576776955f262564b76f2dd1e7d38c09461b8709c9e8d64007f418c2fcb",
+      "idempotency_key": "sha256:3fc36b0ea173a83644c70b8fce0aeb08ff21f070709cfe562ccea92e56f557ba"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Ten more people were going to make that same call.",
+      "text_sha256": "sha256:e83081bf5388ab7a254558054c88b0ef786ca9162a414161e32a858546361dd2",
+      "idempotency_key": "sha256:58830e2d442042788121592e3699f8b1fa94fabe29f6f5a02377763da34db5ff"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "This is a story about a street, a telephone number, and a definition.",
+      "text_sha256": "sha256:cf922bc8e05d9ee23fb75e69ce5f5d2d2ba98aac524f285c629c5125e5d3884d",
+      "idempotency_key": "sha256:c14313cd211e83b53736e5a5964b6262ea8dabe4b7674345dbc0a5ce97673c72"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "The street is about fifty metres long.",
+      "text_sha256": "sha256:e638cedf8fc6d369f818e72c092414e2bf6ce8717de842035f210a719c319d1e",
+      "idempotency_key": "sha256:12df208b03812ba0f2cbb16ecbd3599c9ef70f67628c06dea2957b5eeb0f5daf"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "At the top it is about five metres wide.",
+      "text_sha256": "sha256:372569a971a9f3bbf9725d3a140b598ef09a5888305e76b88932095aa64af117",
+      "idempotency_key": "sha256:0d487dcd239f2f270fa4dc04e5b7712dddabd7c943097e1d1f2eeb214a531438"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "At the bottom it is three point two.",
+      "text_sha256": "sha256:a0e27687da6d1dd51213b1fa2fcda70a6cb257c79a8d8cd2e9fa7fa3eb486feb",
+      "idempotency_key": "sha256:0aac2d5e02f7c4078815a7d832cbd283f5eb49bd06293c6f13e02791ddc7a75c"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "The telephone number is one-one-two, which in South Korea is what you dial for the police.",
+      "text_sha256": "sha256:746bbbda9c8c01faa280cfc44403fc8311ea096b1cd4ea8e84b0f56580cdf72d",
+      "idempotency_key": "sha256:e027bb883fd91f2c2263368f89f2040b1a925cfe2c801148f42a0fa643a43c21"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "And the definition is the one the country's disaster and safety law used for an event: something with an organiser, somebody whose name is on it, somebody who files a safety plan in advance.",
+      "text_sha256": "sha256:19012346371d2b570ca41f953020b8b577afc1525af72849c728dfb2d97e5316",
+      "idempotency_key": "sha256:5434075d62953e045aed951221fbd577cc900ebd48944540a7fa60822f5544a7"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "That definition is a real sentence in a real statute with a number on it, and by the end of this film you are going to hear the sentence that replaced it.",
+      "text_sha256": "sha256:c8ea5544ef210b453f183f12c736e86b200e9654764dd65ba5fee6fcaf76b05a",
+      "idempotency_key": "sha256:c8d25d219830a02863298ae4c92c7ac895ad1b832c6f906e6652d6873c4f1a6c"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "On the night this film is about, an estimated hundred thousand people came to a district where nothing had an organiser at all.",
+      "text_sha256": "sha256:91b5547ecf1b188daca913de4a82745dd9bdf3b3cf7d46effafac8773c0135b2",
+      "idempotency_key": "sha256:1a3d7cd7ab3e5d7ae4520b5b5a7f4a3b45a9351b53b8fa937521a762cf6cb59f"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "By the end of that night a hundred and fifty-nine people were dead, and by the end of the following year a court had convicted one official, acquitted another, and explained the difference in a single sentence about who the law was written for.",
+      "text_sha256": "sha256:f578872f16d345177f2615919e0c8e7301eda5692c4a68883b19569aeea63c27",
+      "idempotency_key": "sha256:ff74cf338a67ac84f081bff41ea34e364a0ed5ef3af8eaba1e8aad43e66f0321"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Over the next half hour you will hear what eleven people said when they called, what the state did with four of those calls and did not do with seven, where its officers were instead, and why the district office walked out of court.",
+      "text_sha256": "sha256:0ef20c6aec724f7704279e735d7bff12f86fcefe30462ec095fb2b6cfe46d9b0",
+      "idempotency_key": "sha256:569aa8b45cafc69d083b8bacd132b6aef866eea9d64d657ad2d4faf1d2e74998"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "The question is not who to blame.",
+      "text_sha256": "sha256:eaa14f760adbeca65b983632980717cf48a27de3d093ff19878e138cd625d9be",
+      "idempotency_key": "sha256:82cad622b72d4c2b4198f1700d24678e41f67c64c6085413debbdb861cee341e"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "It is what happens to a warning after somebody makes it.",
+      "text_sha256": "sha256:68c413729ce7428800fb96c4f1d337b81f6a39d0a59b4459047078538f917bee",
+      "idempotency_key": "sha256:1e246197896b5f8d7c788c0ddef51b2dd5d22ec0479d23c72fc8bd704206f431"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Start with the street, because the street is the part of this that anyone can stand in.",
+      "text_sha256": "sha256:4c9360e1cd16d42fd61b73b06967b112ab14400e55722d0e77c71961e6e7ff77",
+      "idempotency_key": "sha256:6169f78bd224b882d4f9855656dd4233807e8a4351ff6ef6e5308629e820bfa7"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It runs off Itaewon-ro, the main road through the district, up between the back of the Hamilton Hotel and the buildings behind it, toward the streets above.",
+      "text_sha256": "sha256:e1ead06e52302ff036447f54421489c9c00912647cea23f8a643160f6391b249",
+      "idempotency_key": "sha256:06bd427a1f34dbdba3a9c8ada56997d43f71a69256a8e5fdcb8f8317af4a5053"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Exit One of Itaewon station comes up almost at the foot of it.",
+      "text_sha256": "sha256:b2db89d4a278c3a1b0f72e010980a63e5ac9bc669d962ddd2dc5c898babd78b7",
+      "idempotency_key": "sha256:aa3fc48b444aa2ee23cab75827b2b30f0ba0aeb7aae07b11d320fdb38d7247b8"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "If you have been to any city in the world, you have walked up a street like this one.",
+      "text_sha256": "sha256:6eb259b43f608c6df7e98c46d03178e869fb51c733c0dac83d86ed505d06b01d",
+      "idempotency_key": "sha256:fa37e4f8a3668afec8beb5ea5ca6e038912f256ce6a0283f237167f3fd932a5c"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is a shortcut.",
+      "text_sha256": "sha256:bfdfcd9716a92b67479bd005345a5bcd7b36cb87456dbca3aa809d38393dbd19",
+      "idempotency_key": "sha256:79ad7a33cae9b1d4ef6b6d74e8e9a7ef2f417357735f572262e429ebfe92a9c5"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is how people get from the station to the bars.",
+      "text_sha256": "sha256:5dc5c0370aa538ca97153945f0e4468ad9df0b68b48fd0c95a07b81394a2c3dc",
+      "idempotency_key": "sha256:bed4dcfbd665cd7a45ae5f31be3491b9bb3599ea4a0d8405c7e641e770ed5cda"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Nobody goes the long way round.",
+      "text_sha256": "sha256:f3d9eccf31dbab2b3eb9a0c1d0f1ba39103d07b78cd686a91db3eea5a5df69af",
+      "idempotency_key": "sha256:8bc45a5ff601554086caa06faf89a25dc62b5246e11ffb2913ee8a2a4db8f0ff"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is about fifty metres long.",
+      "text_sha256": "sha256:0e0172da96d571fbe4e1ecc59f7df00d67ff7c6f457c3b5f79addd1ac0f972a2",
+      "idempotency_key": "sha256:292b13c6254d64c3c2744d03749fe2b4e9c1ea43af02ad9cb6c14717bfad09f1"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That is a short walk.",
+      "text_sha256": "sha256:193b6dac89fa9160308c562c3d48837adfe36f3b1fb4f97598b1d816be7a67ea",
+      "idempotency_key": "sha256:14dc03bc52ec680ae9506600685e88ab9de29eee63da3e8b118686da7a1dd6b3"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Twenty-five seconds, at a normal pace, without stopping.",
+      "text_sha256": "sha256:1023bab2adba19ab5d1885842af5a8d9c88a1fc8ae7d6c6cb3981ecb2bdba605",
+      "idempotency_key": "sha256:042f7ab4187ec7b0d6f8e45c898897ee153220696466d280dd1438b467192839"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At the top it is about five metres across.",
+      "text_sha256": "sha256:05e729c3834dfc712c4b8f3adb26ecb73a9c62b42c754917b0800d1a3c1aea68",
+      "idempotency_key": "sha256:74dac5ce6055dd8857d1b51e63eebcf5d323b12a2d3088f37cc03b91a328fd14"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At the bottom — the end that opens onto the main road — it is three point two.",
+      "text_sha256": "sha256:09b849aaeb2684b8bb0bf8bd72a193813e7a57f180ff3ab07970bc8ace13c40d",
+      "idempotency_key": "sha256:5f5d1f5d116fa567cc9bfd0e9e9307f4b2bfc424c3de1016239cdca8e5a5c160"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three point two metres is two cars side by side.",
+      "text_sha256": "sha256:ba6032a28273de7cd68e9546563a9fd5a90015e04263bf305a3a44827a22ae11",
+      "idempotency_key": "sha256:055eafceb56833aae08acc2b84dbc526839e73fbaf55c324f7d93ef57bf79277"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is a living room, turned on its end and stretched out for fifty metres.",
+      "text_sha256": "sha256:d528e9dbb6b8cf86516245d5e2ab08f56c16667cad04f746e3bfe0800799f06b",
+      "idempotency_key": "sha256:58ca05bbba1fe45f7f2412b47630695562d8f7112a49e67a781ea89f066e11d7"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A study published in 2024 by researchers writing in the journal PLOS One put the average width of that alley at under four metres along its length.",
+      "text_sha256": "sha256:a027eaa555252e0d4972a55e07b2a4563a1d3157976b4abf951c01c4257e1f05",
+      "idempotency_key": "sha256:9ce836e25c8c06790a612113e843c83c62831b5a370d22b93c6ec253169da175"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And it is not flat.",
+      "text_sha256": "sha256:ed7acefe620fdddcff22eafbf17aea56eabb0245dc8860b7baaedf1d10ef9fe9",
+      "idempotency_key": "sha256:9f1f8786d287845a030b192fbf05d3a4983d824c1db4dede4944d65b17805ba7"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The street slopes.",
+      "text_sha256": "sha256:3d2cfdc2ed8e027703f5cab5bf7ad1969b198cd4f69e8d864e0a6a22057005ec",
+      "idempotency_key": "sha256:d1b79a3e37eec2d78cba9e0c2a8a10908c96c2430eba128ffeaf658e20d53c59"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It rises from the main road up toward the streets behind, which means that anybody standing in it is standing on a hill.",
+      "text_sha256": "sha256:ed21d56ab30a13249b9f06af1b210b46f3d94d471d7969d1e841921b2cc62980",
+      "idempotency_key": "sha256:79d5aa404c169afbc4197f26668dc21fa164518189b6442bffc3a74bd5602c98"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Nobody has published how steep.",
+      "text_sha256": "sha256:ec92f4c61ff547b4abce8c0946f6004f0dde0ad25be47cb74798d632d00e16dc",
+      "idempotency_key": "sha256:201b36f35e8a02da6c0636e627912a0105aa10946d16b24adf3e548d7ebec0a7"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There is a figure for the width and a figure for the length and there is no figure for the gradient, so this film will not give you one.",
+      "text_sha256": "sha256:4c58b4546b9e892d5d5079adefc7fb0a49acd00ab137ec8bb1c5cc1bc66a5e6f",
+      "idempotency_key": "sha256:1baf60936dddaa3f59c01cc4d3dedf2aabeeba114899b9eac3c3fc8b5dd87657"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "What it will tell you is the direction: up, away from the main road.",
+      "text_sha256": "sha256:aa51444126a0ca135491c0fba935ab21b4f56239a98f4ee314e7e8f438857266",
+      "idempotency_key": "sha256:f97f54206f2c8061be6d18a706be685cc9c29d8206a520658ab91b7770eb26da"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "That direction matters more than any number would, because it decides which way the weight goes.",
+      "text_sha256": "sha256:ac999837da30153a717b219be56ba3ebed3aca5e53b3a2ab5bf1d9dc7a25066d",
+      "idempotency_key": "sha256:fbac4a141294f945f1dddbe2eb3193de143bd6e6c0aa5de3df73da21f73dbd92"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There is one more thing about the width, and it had been on file with the district for over a year.",
+      "text_sha256": "sha256:07d606def8b5c4d6212e13575d54d574dd920c49a551349253496338a8c051d3",
+      "idempotency_key": "sha256:da753e495e72a5a08290fee169c3b1a1df0dba2ef626e939841f0ee267668098"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Hamilton Hotel had illegally extended a terrace on the northern side of its main building — seventeen point two square metres of it — along the side that faces the alley.",
+      "text_sha256": "sha256:dece992729c6aafe4c0e741b646a4e483eeee6a97f76c8d9b5febcab5ce6399d",
+      "idempotency_key": "sha256:90e8f4d175912c8ab8c880da31547b5252f2fd920685fd4f023ee7795b488b42"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Korea Times, reading the building records a few days after, wrote that the extension had made the narrow path even narrower.",
+      "text_sha256": "sha256:fae5832b854a5afa291103ac62ed507004dfc45a03fcfa50ce6a929327e7b05c",
+      "idempotency_key": "sha256:65b568c50aaafb6a28f0d86381fd601a6ec9fab7c9e835e94085dea96b087611"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The district office already knew.",
+      "text_sha256": "sha256:0dcd9a36718e9c3933d972d4435cd0e515448c3617073e7ff1e7f082700686f3",
+      "idempotency_key": "sha256:9a6be954e95edaa265880ce410fb31a9865412cf40ac57b5d344b880ee02e406"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It had notified the hotel of the violation and levied fines the previous year.",
+      "text_sha256": "sha256:03c20a85af40785ef038ac67f42c9401b86d3de73d1ade1ddb31bbdd206b11f6",
+      "idempotency_key": "sha256:89b8f6110cc4303161e5e319ac13bf2effe561bcac2cb73a5d591611e1e0c116"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "So the state's knowledge of that street was not zero.",
+      "text_sha256": "sha256:9f26cdaa71f3cf2f082d769d3a75e204e9ff5e8e851b7cc1a439b223625867ae",
+      "idempotency_key": "sha256:3eea32633d3c07804ef7d574b9647f0be7e117f4303c1bb448543a151d691e92"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Somebody had measured it.",
+      "text_sha256": "sha256:1bda3fbce159cec3a3748085ee583111146d66cbfca38a101d2d11085673abc0",
+      "idempotency_key": "sha256:8aed6c5465cf37c897bdd399a632d31e6a765bd45702e764d0b093ca94c6c9b0"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Somebody wrote it down.",
+      "text_sha256": "sha256:528c4f5e85c2fc3aff1b0ca7c60ef31c12d42f16e0cf94edde07822433e135f3",
+      "idempotency_key": "sha256:a2ecfbcf3c76311b449d60ca48b84b5819e7292db6efab62d86dd315ad123542"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Somebody issued a penalty about it, in 2021.",
+      "text_sha256": "sha256:e3fc2d9909bb00803d564ddb4d8a5bf347869cb5d3245201416ba7528ee3c3c0",
+      "idempotency_key": "sha256:1d037c5399ecb9e0a45fd292e8d7eb23ebd672625191f4a603f67d0466270ad7"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "What nobody had done was ask what the street was for on a Saturday night.",
+      "text_sha256": "sha256:9871c8608339b9bd10b0cd8a1ca6a5bf3d0a6545e1e89e70039006af23a4e1a3",
+      "idempotency_key": "sha256:01ee26e8fe12a2b7dbdda9b42092e6b6c7b5a82a17e6a3f03b09ea08fc5e232a"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The date was the twenty-ninth of October, 2022.",
+      "text_sha256": "sha256:f495628eb216acf8f0f764b7299f60b4e16fc3856e2d38ee24a5a52e0627d61a",
+      "idempotency_key": "sha256:0b1075de6e3d3cc56db9e9f531c749becfb2b825ec2de5012b0406cddfb71809"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A Saturday.",
+      "text_sha256": "sha256:396f3e8bfb84819822f1f03483ee8a2452bc5b891b4fe8714cb4250f7b833ce4",
+      "idempotency_key": "sha256:740b9f5a7bc840c5f93f7289bac9f06ce6fe29b6bf5c3acf56d0be062157e286"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It was the first Halloween in three years without distancing rules, and the first with the outdoor mask requirement lifted.",
+      "text_sha256": "sha256:c5db7513afd7eedd875d2538af6efc7d305a014b5b16767a752fcb80659338bf",
+      "idempotency_key": "sha256:16df0f24c340a6ea8e1dfa42333336778dfa38a153066218ec57f970ef2ee164"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Itaewon is where that happens in Seoul.",
+      "text_sha256": "sha256:e971ba2a380237d1d473dbe28fa26e134bec3bbc3b5bd18292cc094221650a59",
+      "idempotency_key": "sha256:d97f23f36d283298b56c5e7ef73bb7a2e3b94c48179ff8b4ea3cadebccf91056"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is the district with the foreign restaurants and the bars that stay open, a few minutes from a station on two lines, and for one weekend a year it is where the whole city goes to be somewhere crowded.",
+      "text_sha256": "sha256:fa9e2836b98b3d9ce4c072b7daa10b9fd4ed4b4bed97a977e2a0261160595cb7",
+      "idempotency_key": "sha256:8f53cb70ebc0f663dfcefc36df202f355ee1c92fd091578ed9d67682bf1da1c4"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Al Jazeera, reporting three days later, put the number at an estimated hundred thousand people, many of them in their teens and twenties, and dressed in costume.",
+      "text_sha256": "sha256:2e7be3d7744a5c1904c15baf742a0d8d7dbcf66e024334b9f8a5b264bd354e91",
+      "idempotency_key": "sha256:a0dabdcf3abdee5f3d16ece9565ffeb8f57f5fcf48a2f62126f68042ff74730d"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A hundred thousand people is a stadium, arriving in one district, on foot, over about six hours, in the dark.",
+      "text_sha256": "sha256:3090f100af34fca9680c8f2a82aceb81939c894214ac67344a73ab8773b400ca",
+      "idempotency_key": "sha256:c862c41a6d8bac3c09a663aaf42424f6e933646a7caf82134c171460d2e997c8"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The city knew how many.",
+      "text_sha256": "sha256:474b8374dda33313f43635583ad1ca85a235a6c81d5411c357e2d72f9cb0fa32",
+      "idempotency_key": "sha256:83e4326d401912a2b5aa10560502689c5d5e90582fb219d653ab9d1f4ec0b521"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Not afterwards — that evening, in the ordinary course of running a railway.",
+      "text_sha256": "sha256:adf718c3a5a93ba966a5535ab51ef025f2faaf8b4d54e758e62475e9c14d88d5",
+      "idempotency_key": "sha256:7d152b15ca0974ee1b4ff191d73c03acb493dcedc4d938e9b9276d5f33873da2"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Eighty-one thousand five hundred and seventy-three people got off the train at Itaewon station that day, on figures from Seoul Transportation Corporation.",
+      "text_sha256": "sha256:2880b524c949c65ffc589574f13fad0749ccb90796ea1de28c8a2c2b2d6b4296",
+      "idempotency_key": "sha256:c945aa04c5696f1db1e6d2df5fe06f4aab73fb228509dc995398fd60f617c238"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On the equivalent Saturday a year earlier it had been thirty-one thousand eight hundred and seventy-eight.",
+      "text_sha256": "sha256:045b7af103b173ca24d33143cf1d05a078d087c5090847dc3d6faafdb9b3ea52",
+      "idempotency_key": "sha256:0995efebf144cf41db8792bfb21589c9b7047e7f5a18cd7dc42398f8aeafcb0d"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Two point six times as many.",
+      "text_sha256": "sha256:879abed33139adbd663cb17d6a74bee62771d97bace7a95f6a0e034f86ea97ee",
+      "idempotency_key": "sha256:a4a0de697ebe0925232efb860462fedc02e49af63a5549a203b66e30daf490cd"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And they arrived in a curve anybody could read.",
+      "text_sha256": "sha256:a23de3b7817cdfa08de79c0af1e8df8a7cad598e582213d857f154c4ea2a1cf0",
+      "idempotency_key": "sha256:4151cbcb546b33e7491259cf79cb6ab26d22e68ef9d741706173b020994fd214"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Ten thousand seven hundred and forty-seven between six and seven.",
+      "text_sha256": "sha256:ea6d7f4614651789e6d587c3764cbac9deb603b3f227f0bbebb08465c430e087",
+      "idempotency_key": "sha256:e39f4277ee98970608afe2414bb6d6f039fc424094e61b9eb9b4b2a2395d7543"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Eleven thousand eight hundred and seventy-three between seven and eight.",
+      "text_sha256": "sha256:5bafa8e41d75fa86633b3bc4627b5279a5e63f21451741c4e083c6ce24887327",
+      "idempotency_key": "sha256:f48189b37f7f5d778208b6cfe519838f9156e542673e12b59f0901c45570f5c9"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Eleven thousand six hundred and sixty-six between eight and nine.",
+      "text_sha256": "sha256:d6c3e44be470b392b3c60dfe037bfa70baa78f06ead07e49adc1c5c6415c9eb5",
+      "idempotency_key": "sha256:e025e480e6e0bd1da5bfea0841eecaa93a9a69b70e8ddb11d5c1102c41350046"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "One stop from that alley, a state-owned company was counting them as they came, hour by hour.",
+      "text_sha256": "sha256:56706e64dd82f7f84d085a9c8c0bac780e0bdd8104677fa5cb93499b11ef2592",
+      "idempotency_key": "sha256:0923193f4aa085ec34f77fada5c06634be333124da5ed8a839465d5571e96d64"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Nobody organised it.",
+      "text_sha256": "sha256:5a75bb7cf1798bb10233f15a16d0d5070694b6c88ec339b72cec53b9ccd0612e",
+      "idempotency_key": "sha256:d78ea9313288ebf9c8e9f558750f20175d64add51e71c022eb7de36f4a005f64"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There was no ticket, no promoter, no stage, no permit, no name on anything.",
+      "text_sha256": "sha256:ae673345eb5c716550b15975e084f07246f950e24738681dde37a4810276e398",
+      "idempotency_key": "sha256:a1fd33d3f5498db91c18de09f8c07703fe3399a01c586bbd2c13eaec974c6a3e"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Hold on to that, because in two years' time a court is going to build an acquittal on it.",
+      "text_sha256": "sha256:5b2d2d39fad3616687db0a517ac06607587f52c8bbf12f3e58f8ad0a6d6aef20",
+      "idempotency_key": "sha256:5188febc8a5619435718d3620b11e464bf697570b755647c855b9c0adfe431a4"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "By the middle of the evening the alley was full, and it was full in both directions: people coming up from the station at the bottom, and people coming down from the streets at the top, in a passage that narrows as it descends.",
+      "text_sha256": "sha256:0194a39898ec97672bd8cf34caa660b17ce74ea91ddbe808872d0d65d09497cf",
+      "idempotency_key": "sha256:e801b8eb4f9ce99d183bc147d84e3f847ef332875e93c475a3addf909a4fcba4"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Remember that too.",
+      "text_sha256": "sha256:c0062b704a4d20d32d62da944679c5b7765078166192058bd525bedeec3360fe",
+      "idempotency_key": "sha256:fb4f411c982b8b68ad612bc0677fa7b21d336798e73f45b74612d827f95975ec"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Both directions.",
+      "text_sha256": "sha256:1341cbe8d35b89242b5844eee269bee8dd1e44a04ff45b733d40c46bc638ebc4",
+      "idempotency_key": "sha256:908fddd150f218427bb10b202943e56d2945c2f252438997e858a3d1a1d56e02"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is going to turn out to be the whole mechanism.",
+      "text_sha256": "sha256:fed96992fd09b74ce0fc7d6c58cd823698221b4a68c695cc8c47b92f100f47d4",
+      "idempotency_key": "sha256:4e59baefb94936202f20f4355934eef3c92bcec5ba383020b580c98c6a668510"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At thirty-four minutes past six, somebody in it decided that this was a matter for the police.",
+      "text_sha256": "sha256:a645b0878aeca747efa96cbc60df4cf126e5ee31865fc09ad91b6b80ed110cbc",
+      "idempotency_key": "sha256:7382d925cb6618ab81bb4ae9b51375095b8ad9100d97192112b94c80ac77a6cf"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Between six thirty-four in the evening and eleven minutes past ten, the police in Itaewon received eleven distress reports about dangerous levels of overcrowding.",
+      "text_sha256": "sha256:b4683b08ca79504ae4f287a8bd4850fd3e69e42c12f6ab9d0d364b3d5b6c8dea",
+      "idempotency_key": "sha256:a8210e5b863d6f9b50c9bdc65f9041aaf0e7dfa04185fb92d07dd07cd749536b"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is the sentence the Korea Times printed in March of this year, reporting an investigative hearing, and it is worth taking apart slowly, because every word in it is doing work.",
+      "text_sha256": "sha256:c646a0018d4795a64033f2f873379f0512dcae315aec1f8c737bf4e707813af6",
+      "idempotency_key": "sha256:601972bcddd97c00073180b6ca2c65e23533f053e61371b0eddd7efb004b43c8"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Eleven reports.",
+      "text_sha256": "sha256:84e7d56a9fd1d227eb89cae5802c74cc59c213a451cf16a7703145915c10ff49",
+      "idempotency_key": "sha256:061e9b1d4eb689acb715396526e943b1013710599aaede4e7d34814d9239c6f7"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not noise complaints.",
+      "text_sha256": "sha256:7fc21a962b7631a4e8eabc5f5b39f6dc9d7d518dfa63d2fd1bf09459b585bd3f",
+      "idempotency_key": "sha256:685cf9047cdbe851c03ca9ac865b7d8c9714107883fc4e03cf47c4b79fdbfaab"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Reports about dangerous levels of overcrowding, made to the police, by the people standing in it.",
+      "text_sha256": "sha256:e8628b6e1fab67a2c96adf4941c07b4f7d0a5d037f412b477529ee0152a5b9bf",
+      "idempotency_key": "sha256:d20559b2a41858dce53cd2dd94a7f1ba9884bb37f3cd19e663942522267d9b4e"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Here is the first one.",
+      "text_sha256": "sha256:4b2b0ed47f254cdca323b5667091c885b26a643136d561d4d94edae269f5aa9d",
+      "idempotency_key": "sha256:46458cbf864e9cd212e7ca0aad9c31e95653c5897b16dfc7c2ea41601f35e104"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Looks like you can get crushed to death with people keep coming up here while there's no room for people to go down.",
+      "text_sha256": "sha256:7793e7b5b42c219f15c0b4a1fb114c9e25f304829929a8b8235c73130320213a",
+      "idempotency_key": "sha256:86561315fe8e1930efad32714d9f21449847974429c72a68496d0db3c0e21c06"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "I barely managed to leave but there are too many people, looks like you should come and control.",
+      "text_sha256": "sha256:9c618c3c903bc5dcfa1668dd1d7f97e6cf6e49f994621d2bcd6d39aa0901af34",
+      "idempotency_key": "sha256:3ebb2b4b3b5eced2d0f5a0dbb337838fa085a9d92e59eb608563b446160b94d7"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is a translation, and it is worth saying so.",
+      "text_sha256": "sha256:cc1a48f3023db718aa6f9fef0b6c77c5be63d5857774bb8838f4dea6960789ad",
+      "idempotency_key": "sha256:38258ec4750e66a7cf0b4ff43af83b41bc9665e3e646d21c9263e8fff0ffb3a0"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The caller was speaking Korean.",
+      "text_sha256": "sha256:acd7d4f2df64dd89a3c901cf1384c3d36c32a7c314dc07ef89009d4cf6500cbc",
+      "idempotency_key": "sha256:7b07b2f9f6aa113fde7266dd37d55df1311f35451b05c4379dcf5e56358da26f"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Different outlets rendered it differently — Al Jazeera published it as I feel like I would be almost crushed to death here because people continued to come up even though no more can go down.",
+      "text_sha256": "sha256:d86ed6acba1b17fd5df78ba74e9ee1f4dcd79a950c6aad043b742bd8d8d4b68e",
+      "idempotency_key": "sha256:285f9b1795b2749f968d15aa9712363a3b84d9095b3e372c8b9edf2fcb1f93ec"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The wording moves.",
+      "text_sha256": "sha256:9ed953c03a1ef903697252580ce3804604cd24463013f39f04fced0ea2e7e321",
+      "idempotency_key": "sha256:39b7be9645765b8554cf545e4a31ca5128d062dfe76c78bfbba3b3654e708620"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "What does not move is the content.",
+      "text_sha256": "sha256:e742c34cb2d04aca112a86bbca88e3003f58027eb1f907eec3f53c19789c4260",
+      "idempotency_key": "sha256:b8c23319a0c2d7fcedad6ec388e5f7d4e5aef071edbc737dcaa6e12faacd9659"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Four hours before anything happened, a person standing in that alley used the words crushed to death, and asked for somebody to come and control it.",
+      "text_sha256": "sha256:3acd51ef08e848b07775d1dac3ecbcb50e79a77f37628db87c5e7893e38da52c",
+      "idempotency_key": "sha256:6c8cddb224aa7dfebfb808d6e731b44f6386b6b584a280838a239644c300bae2"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Officers were sent.",
+      "text_sha256": "sha256:428a1804de994f4b37fac2c52dbdd14fe733a1fccfdc435e5669636ec62f7222",
+      "idempotency_key": "sha256:bc151163f1149355f7d0b8ae8a6634d0467b70397409e4f1a5b44dfacc93ee08"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That matters, and this film is going to be careful about it, because the easy version of this story is that nobody did anything, and the easy version is false.",
+      "text_sha256": "sha256:7b213fd0e11c2e9c88038686a6a97b269d1937e6860e2f1cdc48a1df490cd297",
+      "idempotency_key": "sha256:527625277991cc1eb78ec22f1c16e9008b01ed68c18d098df32f9cd72d403fc7"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Officers went.",
+      "text_sha256": "sha256:ec76ab4a8d40c22ff6dc16b4e19b025b1fd68aedeb34fe014bbc7113fc37054b",
+      "idempotency_key": "sha256:57db400f036edf1f7b04e166dcdcb72077bc6871e8ea17f6791909d11fb87955"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "They dispersed crowds where they went.",
+      "text_sha256": "sha256:ebd7c5012a82d29680e29d45da0f1e1f9efbf08a70c979cd97f6f0fcea0ffc01",
+      "idempotency_key": "sha256:a0b6b662f5db2b197e67a57d4108d67beaedf0d2803b1348effef6817cfb3976"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The next call in the study's timeline came at nine minutes past eight.",
+      "text_sha256": "sha256:92b372ac4692ce4ed5bef887155c63947cdfd982b6fb38f46c8f70c197be60ac",
+      "idempotency_key": "sha256:51e86089f394a426e4402419b60fed6a5db468ee1eac1028ccedb2751d94cbd4"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "One hour and thirty-five minutes after the first one.",
+      "text_sha256": "sha256:d8baa661374b2a230f59b955b3d77bbbfd58f4645930cb84a235627bdda72ffa",
+      "idempotency_key": "sha256:85df88151183379a6ef5e9b422e211809cf7ac1feedf6d881eb8e864161d2e82"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There are people who fell over and got hurt because there are too many people.",
+      "text_sha256": "sha256:eadff213c479b510e8b1b2983a47881f7c0470b1dbf048e89ff40bf467b236b2",
+      "idempotency_key": "sha256:b8ee92d3e1316f72cb4258032f30278b41412be556fe9247b9cf646064a18475"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Read that as a piece of information arriving at a police switchboard.",
+      "text_sha256": "sha256:84af314022f6c82b9417189e5b18855c1e0fc562ee82f60a0666b09951042378",
+      "idempotency_key": "sha256:e7cf6f21b897fc5dba0c7151ecec56d6e4b5b87c4cfca4925e3534448432e277"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not it is busy.",
+      "text_sha256": "sha256:b019b4906a18d7f718ef2ea2612cf0446c56702660d177715201990cfec11499",
+      "idempotency_key": "sha256:cdf00228871463ffd9c55f437d8a4f68b0f749020e80a21d400fa3dd153783be"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not it is uncomfortable.",
+      "text_sha256": "sha256:eb976b7d48b2991972133d0f9e59b8b491b830d49959e62e0226040f01ef0317",
+      "idempotency_key": "sha256:f00610725f16154bb7f0316f4c3d18a4ff40d44d90a763bb2c67cfab27145fa6"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "People have fallen over, and people have been hurt, and the reason given is the number of people.",
+      "text_sha256": "sha256:9e40ba1150281c99af9bf36312181e05589f9c701cfc282168b203c66e016377",
+      "idempotency_key": "sha256:dfa16f039225b3e7ef63967cc49beb6b0b1a98accbf5deba95c7ca9e57bcab7d"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Two hours before anything was reported as an accident, the word fallen was already in the record.",
+      "text_sha256": "sha256:f1f15115e4bb3a6dbc198c427adbde39e377ca07863f983e11f2c40f0da94e31",
+      "idempotency_key": "sha256:6a85114045a5eef2c3e7f442a246b7b07f7f95510d962f5e28e757cdbc2d538c"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The calls kept coming, and the language in them stopped being about congestion.",
+      "text_sha256": "sha256:565554652ae776ae6dfef29d7e67673b8f09bdbb08b2e7daf86232ecb2325408",
+      "idempotency_key": "sha256:ade8e80aa0cf05cd0135a7dd5d6018f7f574a4e83c826eb9d6871687c8ccd68a"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "We are on the verge of a terrible accident due to the massive crowds.",
+      "text_sha256": "sha256:c981ff1d7d29e8d0310f51e440d3c86c0c0d626f13f864de236afe637eb01700",
+      "idempotency_key": "sha256:075f62159862b74d3d28b1b3e9701600141b6119601f79b7f8b1307451687a3e"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "I am almost being crushed to death.",
+      "text_sha256": "sha256:0debf585d5cd08dfeab5fd4fad92831ec8d3faab7c723fec5665045ba1f88db9",
+      "idempotency_key": "sha256:58817fb8704fb5cba42f7cd9bcfffa0731750412fb1656995af7317eccb1fa9d"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Those are two different people, on two different calls, on the same evening, in the same street.",
+      "text_sha256": "sha256:e2d8d32643a731ff1c9fea16a53df43a3345560e3953c6dd7008b3ed0e321c7b",
+      "idempotency_key": "sha256:2d8bdd09ea684f5dca10230f75d562c64ddd8e3b05b5496c1acea821d91bc03d"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The last of the eleven came in at eleven minutes past ten.",
+      "text_sha256": "sha256:5c231e11b90568499c3cb9d64518b944768d6ccb06c0f7537036ee857e4c9f29",
+      "idempotency_key": "sha256:24bc9987f70e6582a8aa7c87285007bb00c124de7c115b3b0725cf77b014a957"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Eleven calls.",
+      "text_sha256": "sha256:53986a1718d014c8455547cf612e9e9c7730879686e1766bb3ac099b1eb89585",
+      "idempotency_key": "sha256:3f47f3475e1fd980543bf14ffc79eaa8b002fa9272f0a74d2daca45777a0b012"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Officers were deployed to four of them.",
+      "text_sha256": "sha256:71aba9274fe103602cd698b0157bef3260b2f07fe7375274aeefc66905dc6fd6",
+      "idempotency_key": "sha256:973fe948294a3d154770a738b4db78ff454b5fea88a0903475a78f646ab644f6"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "On the other seven, according to Al Jazeera's reporting at the time, there was no action.",
+      "text_sha256": "sha256:f7b7683774ea7d4cc8a4c4a8d6f5ff54c219bec5e1a8e003ba5f980df959a362",
+      "idempotency_key": "sha256:b34c88970094317bf923e9e9b699e9f1c0268500d4746e220ffa3ef62c394a64"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Three hours and thirty-seven minutes separate the first of those calls from the last one.",
+      "text_sha256": "sha256:ac22f765234a1914b50b91032cedb9b125a321ab4de8f2e0d5cb8cbc4f0955b4",
+      "idempotency_key": "sha256:fa263218530a2fe190c835cd17854eee2460905b174459fe7c0bfdffe7b49469"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Three hours and thirty-seven minutes is long enough to drive across a country.",
+      "text_sha256": "sha256:0c63bf84aee989d7c33f9104846f4fbaccf69e82f46f4242cf670bf361dedef0",
+      "idempotency_key": "sha256:03414ab465c66ec17067623e464c8b3d43f3e97404e4ef5d7e070706af9115f0"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is long enough that the shift you started the evening on is a different shift by the end of it.",
+      "text_sha256": "sha256:cf1a67f9e50d71a65a8cc715d407bd871470958ef6372e0e4058cedce83f6645",
+      "idempotency_key": "sha256:5fe7709485753e1d116ea45d51be2c25a939312d1b2c600abb4094d9acc6a9c9"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And across all of it, the width of the street did not change.",
+      "text_sha256": "sha256:d2feef9898b4e79693948652602bde89ffc8360cc422faefae230cae4dc147e7",
+      "idempotency_key": "sha256:4cc452bdeaf9349a91e91830f88fcf5936eec7d0eb47974cfc8f22c02197809f"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The National Police Commissioner, Yoon Hee-keun, said afterwards that crowd control at the scene had been inadequate, and that there had been multiple reports to the police indicating the seriousness at the site just before the accident occurred.",
+      "text_sha256": "sha256:7d1ec654712d148fc1720f0ff67fd86cfb273b27e0519be90113a37b5ebf364e",
+      "idempotency_key": "sha256:963243465827af9f2857ba23d3156946999ac8cdd2a98ebc4eef3abbc6d5c879"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The Prime Minister, Han Duck-soo, said the police must conduct thorough inspections and provide a clear and transparent explanation to the public.",
+      "text_sha256": "sha256:b1025daacefae593a377570b79275116055a5340c3336a7b01d45aa7fd9a0177",
+      "idempotency_key": "sha256:8acca1ee66eec2ee65b3d33710cb10897e07349cb28781d353ad90f9839d21e4"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There is a version of this story in which those eleven calls are the whole of the scandal, and that version is not quite right either.",
+      "text_sha256": "sha256:80548321f08ee2b6d7fa2df63d130363a195b8fa97922a4c9a787ab624860dba",
+      "idempotency_key": "sha256:6ab7d4a0669937c266da036e8f51c63423c497cf5b5ee7853d4060b9fe31efa1"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "A call is information arriving at an organisation, and what an organisation does with it depends on what else it is doing and where its people are standing at the time.",
+      "text_sha256": "sha256:95cbb3dc16b3ec79b5816cd882dae7fb9252ebe4587d75b158311e62a9117e61",
+      "idempotency_key": "sha256:1ca6214002bd520baa400ded85acd91d48e85675b733b6170e95276682d46b43"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That is not an excuse.",
+      "text_sha256": "sha256:54fe62423faed5b3fed50b88fe1f99ec2c048ba801fd235c0252f125ef70ef9e",
+      "idempotency_key": "sha256:5db3a2bdd1fdcda10e0e68a9d923c2ada4bb2982edc0d9b2f8c4072d7bd7a762"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "It is the next question.",
+      "text_sha256": "sha256:3acbd39fcada065e1abd243ebe79c8c919b40bd83efe12a3372ce29166a9bddb",
+      "idempotency_key": "sha256:41437f2f711a88de8c0293f2ddab4a848117adf570c3477c477fd7d9c311b383"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Both of those statements are true and neither of them is an answer, because neither of them says where the officers were.",
+      "text_sha256": "sha256:ebd49994a16e1c64f92afa2c69e3af086d1e7dd3611b1bb92e351e7334aea147",
+      "idempotency_key": "sha256:620c44f141d1d438ff41a8e79046205d303e72535b5fe014991e62b2bc23d922"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "That answer took three years, and it did not come from the police.",
+      "text_sha256": "sha256:a82b3d11937cd9102222d2299ecb6d74166326d3392e2e67e766051b5badde42",
+      "idempotency_key": "sha256:5debb0cd9c5dcc4c4d658be0cfad7adf1eedd98b052a5ae987979a9053963c76"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "This film is not going to show you what happened in that street, and it is worth saying why rather than just doing it.",
+      "text_sha256": "sha256:5a3762dd4323e749be82ace607087f1dfce538faf672b47c51d3138c585b3104",
+      "idempotency_key": "sha256:06944d0936b2f9e3c62e62286a7cfddb1df058e2ec6c5c5680d38e1de7bdf85c"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A hundred and fifty-nine people died there.",
+      "text_sha256": "sha256:904f128a5ade880734b703e3f6b5f73d08ac6bc855ecdbd1e9f2fdd3b24e8c41",
+      "idempotency_key": "sha256:666bec17b08e23f0e4f70f7e0ee385eede3cc30833e050dede9ad2717823e667"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Their families are alive.",
+      "text_sha256": "sha256:3618362e46b29355d8497090bb705c589e80dcf2250b6f12864e01367e3afca3",
+      "idempotency_key": "sha256:02470375f869c966c08381c90dcc9e8f7e9a146d3dd6047c4d44b4526aafd37e"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Their names are in the public record and are not going to be in this film.",
+      "text_sha256": "sha256:db36e4c137423ee646eb023f4b44180b76f841d9374104d031178c737f68580b",
+      "idempotency_key": "sha256:5c1a888094cd8c0a575a4c4ece82a390d8a92029cfa63117b27da5e6892bf220"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "So the street will appear three ways and no other way: empty, ordinarily busy, and afterwards.",
+      "text_sha256": "sha256:8ebcdb84330145c3099920475664ec725fb069862fc7f23fa61f36cd11f88fec",
+      "idempotency_key": "sha256:2ffebe43ed9a0ec91901e51894474cf69d356369654b3ef46d8f26c226c5d6ac"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "What can be described is the shape of the problem, and in this case somebody has measured it.",
+      "text_sha256": "sha256:2d45f2d76a3c821ec4882b057f7721817898ae9bb7055be0922141296c21772f",
+      "idempotency_key": "sha256:fdfbbff6c38ccf49ea8e2b7d8ff5916e26acf88b8f2a7c81b23cc293dcf66bba"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In 2024 four researchers published a study of that night in PLOS One, reconstructing the crowd from the record.",
+      "text_sha256": "sha256:2a68dc5170e70f9de6241b10e1e7d2ac758c81040c569dea20236deb0de8a969",
+      "idempotency_key": "sha256:6ff7b14b18def40610d583bc26d258cda2ea6a4de4e59968d151440bf0933c23"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They put the average density during the crush at seven point five seven people per square metre, with a maximum of nine point nine five.",
+      "text_sha256": "sha256:d9d06006704a05a01a81ee6d695e7d3ab3b2a821b0bba633b1d5b94099f8d244",
+      "idempotency_key": "sha256:0803b67952a16a247607f25beba3c544f3c45f105a7762655160b845c66c7911"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "One square metre is a doormat.",
+      "text_sha256": "sha256:5d7f478aba4df673b40c2597d9ed08e26771f657be10be7f0dd31f8d6482efc7",
+      "idempotency_key": "sha256:4b6c7de3d853005525c66b045600a7c9f28628477b7ddd8fddca57ee295a153e"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Nine people.",
+      "text_sha256": "sha256:0cce80132e5eeb63623acf83e876236e86f5f707d7e84a131fc275d813328a20",
+      "idempotency_key": "sha256:3bf46c8037a072c8f88495a3ffab262086b1a8ca0094cdd8c882b570e3f47863"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "On a doormat.",
+      "text_sha256": "sha256:316c7dbc80607e5202e421bf1e97c870a37ef961ed74db453d4dad990ffaa3d6",
+      "idempotency_key": "sha256:78fd50a2e93e365cb87aa1765a20e0ee6ff2e5aec458431386b2ca7594a05081"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They calculated the pressure inside it.",
+      "text_sha256": "sha256:99410bfca902c5fc17b45bedd5ef978e22238dcc1a40a59c4348b33f5eef9b5e",
+      "idempotency_key": "sha256:6e2af164dc318486386aeb77f62a1301944c8f06a364a17bb77121abec6f6bf2"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "On average it peaked at one thousand and sixty-three newtons per metre, and at maximum, one thousand nine hundred and sixty-one.",
+      "text_sha256": "sha256:45278b5c2d0cf090bdbcc21b0298ae9b90ce191a7621bf4244adcdfc300ce5cf",
+      "idempotency_key": "sha256:5f9ade69a9d1e59e289b26399c4cd4060d497a6201a0a30e097aaa9567a851fb"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Those are not numbers most people have a feel for, so here is the one that matters instead.",
+      "text_sha256": "sha256:8d8167f7ff0ee5d5c49e880d91f287b651adef20608c2b3852f00b0773b860b6",
+      "idempotency_key": "sha256:f5dabff7707f4e85231449cfade444327f4cebf9eaddddc3ded6731830bc2600"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In an area of eighteen square metres, the study records that over three hundred people were concentrated.",
+      "text_sha256": "sha256:d814cd03128d3b81a6be16f2d644dc8da123cce7d226be46eb9c0cb44a0b8f22",
+      "idempotency_key": "sha256:22ca634c74651db03573552577b65d476ad12747ce177f3a62f37c341b24f149"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Eighteen square metres is a small bedroom.",
+      "text_sha256": "sha256:155a495c4ea88b92ec3a548606d457d5d1e5739170e3a358bd84886110df1a91",
+      "idempotency_key": "sha256:ce1c5b61adb661e2e769b0622d307cc512861f8d9bee4f5579007bf4f7818d16"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "At the density those researchers measured, a person cannot lift their arms.",
+      "text_sha256": "sha256:b81b029a499582e6cbbd4a559a66699d59c249612b2e27cf2bcd325ada482692",
+      "idempotency_key": "sha256:231b7b3360fc00f01ff2aae901f3b8379c58c08927609c770081053ba224888b"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They cannot choose where to put their feet.",
+      "text_sha256": "sha256:91eed68fbad0806d26eed955ce1fe2e3206bc5ecd7add8c54cb2387a65f057e1",
+      "idempotency_key": "sha256:31d24b8e7cb964c93f377fba90503366f4ae4b98514200d1d57c5c4ba341ab5d"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They are not standing in a crowd any more; they are part of one, and the direction they travel is decided by the people behind them.",
+      "text_sha256": "sha256:96c6909956c53f76ce59783b60f1b0f99677adbd941595aaf09db7f620e717bc",
+      "idempotency_key": "sha256:7deab04b59b69665c58882d3334f884338b615de75c258fa859f8000786e4042"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is what those numbers describe: at the same headcount, a narrow sloping alley is a different kind of place from a wide flat one.",
+      "text_sha256": "sha256:a0e6757dd319025a75aeaada46fd1bde5cf990e956b93416e45098e4a5b30740",
+      "idempotency_key": "sha256:7f547546e5bce7d47c94cf0d3c4da1456f0ae9d859a01c4ee10df2f7b6fa3fca"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the mechanism they identify is the thing planted at the end of the first act.",
+      "text_sha256": "sha256:6c2c821c1ff7e2c2a53edcb58f6672444b4c01f1b206dd6cf0b55be2e4440b6a",
+      "idempotency_key": "sha256:0071c8a43610d9e3077e77ff251c057b5bee9bf6344a115ec132b8b3edce37be"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The primary causes, in their words, were the substantial population, bidirectional collision, and escalating panic — a bidirectional stream of pedestrians colliding in a narrow alley.",
+      "text_sha256": "sha256:34c72168b2b58732494f7bf655e3a64805c01aa5a4b9beac10f2ab1fee675020",
+      "idempotency_key": "sha256:0ba73b735fe3b44432ac93eed5ef8b442a49442ba573477494e15be979430845"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "People going up and people coming down, in a passage that gets narrower as it descends, on a hill.",
+      "text_sha256": "sha256:30ea408f90797953def0f826a79bedda863d98be38473affea1adc8aedf26bdf",
+      "idempotency_key": "sha256:acca192b2da63a4f638f67edd2586a8baf1a53999938dfe5cad7a643118315d9"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A crowd on flat ground that becomes too dense has one thing going for it: the pressure has somewhere to go, in every direction at once.",
+      "text_sha256": "sha256:1408ff9343f7bdee9b1472b49f31c5d54b0ab5d2ceea01d8650f3a0d9f8a5474",
+      "idempotency_key": "sha256:2d3be805f376a2b2d96bd0e97fb9fbf8c27e08c5c34180aadd343949478d933d"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A crowd in a passage between two buildings has two directions instead of every direction.",
+      "text_sha256": "sha256:34bc54880a1b25f362ed04fbfca3fd3ea415cb9b75640a31f89c0bef6f2a22ac",
+      "idempotency_key": "sha256:a2f69d975a55e0a89c7abdab8b0f1f9160ed7ec6cce75a9061f8ee502113f146"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A crowd being fed into that passage from both ends has none.",
+      "text_sha256": "sha256:54b0568ec4f8401febaba195e5efd8738adf3c8216fbc883a1d6b9f3f856e6f9",
+      "idempotency_key": "sha256:c505770e67f68c675192b8231736e5983e8db6f6f8c607e6ac5bc9973aab0ceb"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the incline decided which way the weight went.",
+      "text_sha256": "sha256:233c99caaecb73970994012d20802b94c6088016764ec3b17f8b80a68b8bccb8",
+      "idempotency_key": "sha256:d29eaef5f28cb31aeb07f3861bbba9443ec47546611463f3301a410e51bb3d83"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It went downward.",
+      "text_sha256": "sha256:db8c7b107fc359fff44a4d70425117141dfd5f34c2207348cbeaff1b0952bce8",
+      "idempotency_key": "sha256:9949061f5521ec9f4514dc5f034c87a290913ec27ad4960ac4790f2dc7eaa914"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The study's timeline puts the first report of a crushing accident, involving approximately ten people, at fifteen minutes past ten.",
+      "text_sha256": "sha256:1256a93b16920136042b4c8f0ed34b432568f6ac74f2e22222788de9ee5cab87",
+      "idempotency_key": "sha256:c524eef3f3b72036dcfa8c118e41454dcea6d2cadafdaf47edbe92d79b224e7c"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Three minutes later, at eighteen minutes past, the police chief ordered all available personnel to the scene.",
+      "text_sha256": "sha256:6cc0f3bc25252ec7609617560b3fc405dc0e3e5e762c2fe0b6faaa3616973040",
+      "idempotency_key": "sha256:17e82c117c3908e266d0c03ef6c265307f5359205b42e958d3fa5cf9757b80cf"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The first emergency rescue team arrived at twenty-eight minutes past ten.",
+      "text_sha256": "sha256:dc7bcb713d4ad9a0df0e5a274d1b2a6f447a6a4e3e2d7b7f41b9afc4e8e170bb",
+      "idempotency_key": "sha256:bef3f8222433fe995bd974c45e1effe0d959cdde7cba7de4726857794f678294"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Thirteen minutes.",
+      "text_sha256": "sha256:893402f2b287b478db20c7c9e0f68fccb5e7e67d65d040957a1ee34c4b0a6049",
+      "idempotency_key": "sha256:cc8f28cee36b4914ad838bcecd77416c3cf36502b47a273d2c40d287a2da340a"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Written down like that, thirteen minutes is a short time.",
+      "text_sha256": "sha256:6ecf2924623bb7014a59687c0c9fde5497c63a8c606ca55df9b13a08eef4eca6",
+      "idempotency_key": "sha256:4de2eb11004ee14f114a4600f22c330eb641a0dcee448f46f4b7db90209ae1f8"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Measured against what the study says was happening inside eighteen square metres, it is not a short time at all.",
+      "text_sha256": "sha256:dca9799d13c664d2d18d1ea892d3e9758fe9f3047c40d20a9dea7e4ac43185ff",
+      "idempotency_key": "sha256:8cd719157a334413eeabc9eea3366712bd52ae7427319ef5660a5e62ed2c3aaa"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The next part is a count, and the count moved for two months.",
+      "text_sha256": "sha256:20176d99d25e5cc95672a90419a06301c093b9f6ad1311985f83fe767d21b7e8",
+      "idempotency_key": "sha256:32be49f404cebd76f68ef14c4d4c5fc0f95fae34c70bf2f5d30e8f59775e4839"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In the immediate aftermath, the figure reported was a hundred and fifty-seven.",
+      "text_sha256": "sha256:f5f0a101b540b5230d59e741c3dc43129b3f1655b47c8b2c08299b74e92ba900",
+      "idempotency_key": "sha256:8cb02eefa75339605a58c46d4fe865f92a86c9f33609d33736a12f2cc15b32c0"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "By the fourteenth of November it was a hundred and fifty-eight.",
+      "text_sha256": "sha256:9fecce25f293b968e40fcd476a076977ace9c3e8572e52baa5a5f5b6f87d844d",
+      "idempotency_key": "sha256:992f72984df7b9dc53d0bd14de86e539c5a7dd746f81adce80df87769f1d4680"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "By the third of January it was a hundred and fifty-nine.",
+      "text_sha256": "sha256:6bf786ed43b1fadcba4be15a43132198b43b9139da77baab4c53ad26f41bc2d4",
+      "idempotency_key": "sha256:231cf367a57b0fdaab380f3aa9fb25f3cbfb8b7f8ec10d12de86dfab979f27c7"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The last of them was a high-school student who had been in that street and survived it, found dead on the twelfth of December, and recognised by the Ministry of the Interior and Safety as a victim of the disaster.",
+      "text_sha256": "sha256:d57dc5716388a81ad63ab04cb03ddbe23e370573abe34db7b198146e511a77e2",
+      "idempotency_key": "sha256:4f6d12eed4fabaa5d370b3687b5ee7a4222440debd549882ffb029e038b7bbe6"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A hundred and fifty-nine.",
+      "text_sha256": "sha256:6ff45b023fa3808f382a5cb5632102e06f4e67679ecbec9bd81bc69a8f312507",
+      "idempotency_key": "sha256:61d196009d31fab54d8a578953babdc6b423df8f6def98fc6839dac67cb82dc1"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A further hundred and ninety-six people were injured.",
+      "text_sha256": "sha256:a4784561ddadbd8e9d013bf9294dcddff54a2fccbf34c4c7f6b81795e005596b",
+      "idempotency_key": "sha256:b5ee956a143c95cf5d02f259b28c8f73249629de2486976837e3624dcb46fa27"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Reuters described the dead as mostly young people, and that is as far as this film will characterise them, with one exception, which is a matter of public record and is about countries rather than about people.",
+      "text_sha256": "sha256:293e55ef512ff1897a02c5c27bd91efa4dfaba3db14ebf2306cadd54085bba63",
+      "idempotency_key": "sha256:b72a701db89be802c91c5281a581cbc4b00df8cb888e80c6268124f302365134"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Twenty-six of the a hundred and fifty-nine were foreign nationals, from fourteen countries.",
+      "text_sha256": "sha256:83e69f31f9de5665330667c68eacdac2097497f1fa3dfb77d56187a2d31cee53",
+      "idempotency_key": "sha256:522adaf766f9ed0c6eb0a4f770bfcb5eccff038dc9c3e959359070e81a3fa0ff"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Three years later, in October 2025, forty-six relatives of twenty-one of those twenty-six travelled to Seoul for a week, at the official invitation of the Korean government, and went to the site.",
+      "text_sha256": "sha256:93038f559cfe30873f9160280aa45d2e830de97eebb9492493f4b5854b083bdc",
+      "idempotency_key": "sha256:1f8e5b17bd592f80ad2b04098db6294887ff2d371010332d088de92d9b40881c"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "They came from twelve nations.",
+      "text_sha256": "sha256:368aa3a177f26c68bc5151e434030fc3850fd017b65402d5494f3afe976a3587",
+      "idempotency_key": "sha256:434a30d9aa22683ad1de8f0418a964afaf277fce50c9f3d3e33f03348e1aae1f"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Iran, Russia, the United States, Australia, China, Japan, France, Austria, Norway, Sri Lanka, Kazakhstan, Uzbekistan.",
+      "text_sha256": "sha256:b3b3b2139b7d448f2f0304ec611ecf5af387d41683da4cd543855a4a4dd6c1d1",
+      "idempotency_key": "sha256:91e8d5517aec46cc0712c65e28c7957712b8a9bb8ca6672d8dfd786dfc23e21b"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is a list of countries, not a list of people, and it is the only list this film is going to read out.",
+      "text_sha256": "sha256:7e8e646c1b47a3491c34973de0c3b82a29a26e5eea9255f51b3dd6715c2dca01",
+      "idempotency_key": "sha256:6b56295fa5f480e93a4f855de69a2843e79cb20617bafce6a290a4dce2b64607"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "There is a second toll figure in circulation, and you may see it if you go looking.",
+      "text_sha256": "sha256:609db7c7c34b42fe346497563219f5291242dddcbdf42c38b727940043eefe0f",
+      "idempotency_key": "sha256:e18d2b3951966979bdbe08590cb7a602c4aa29c1d1ee7d4788d1b8f5f6fe9ecb"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A study published in July of this year by the special investigation commission works from a slightly larger set.",
+      "text_sha256": "sha256:a6db45da9a04895e3b0769bde7efc726330a8556e397e37ab979bb80b0ceded3",
+      "idempotency_key": "sha256:b7be5d404e09269c1d59b493e4e24b96b77aa73c3e2dd7fb5f98980fd2c25709"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The official figure, recorded by the ministry and carried by the reporting, is a hundred and fifty-nine.",
+      "text_sha256": "sha256:7dd782edd1cd9fb87c4f9b54ee830b8f159398858ba7a306cdb320302e09d128",
+      "idempotency_key": "sha256:fc6b84b58f7f9a5567d019dc525f70361633902671c6ddcdc0e308ae54761435"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Until that changes, this film uses it.",
+      "text_sha256": "sha256:82ed83bfaf203fc4179acd60e231ed3c12ac70cde2ce578011bfe05523029953",
+      "idempotency_key": "sha256:6295860b906bcd335fa8a33a840b86e9d9844e30b7cb3fa0f591a2bf15326837"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That study is worth knowing about for a different reason.",
+      "text_sha256": "sha256:ff2a2c514d6590674691119e112e3c063904b082b26deec56ccc2fef7d8e2721",
+      "idempotency_key": "sha256:c4e38de237479c578bbb64127609b10e5ef996e9c7d8bf8952b36d0c0d6cb154"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It was carried out by the Department of Forensic Medicine at Pusan National University School of Medicine, working from death certificates, post-mortem reports and medical records.",
+      "text_sha256": "sha256:4ecdae14ed038c5169825974da01a0da05f7208d0274948fda3be26485a53436",
+      "idempotency_key": "sha256:05d0c2568f637f02b74f68d460852e7649e15e26df542c1bcff1c1b758de1ad4"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It found that about one in ten of the dead may not have died of asphyxiation at all — that the cause may have been crush syndrome, or rhabdomyolysis, or damage to internal organs from compression.",
+      "text_sha256": "sha256:5352667633566cf4765fa3a671c36301ceed9e8d3b98328db834585aa4e736a6",
+      "idempotency_key": "sha256:391a1ce12ec920326f06f809fd789630cb7c435b2656c3dc85b03de321016e97"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The distinction is not academic.",
+      "text_sha256": "sha256:d4700c62b0ef1d1dbd8b06af061499fc7ed705d279d9c172c004187146b21f14",
+      "idempotency_key": "sha256:c8a70111495a58d71ad0d27d4b3cf890cff5d89826448646c994d6af909d3dc1"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Asphyxiation is fast.",
+      "text_sha256": "sha256:bc01b7c82037a2f511c731415d5c98971e221354c13a4c9ab4d2798d21937775",
+      "idempotency_key": "sha256:375f2510ca3394bd4c8f7bc91d3991cfd78b8a8e90c068e2bb20fc441e53f936"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The others are not.",
+      "text_sha256": "sha256:970df38ae10bedb4d83466024978ee04b7d9e971e6f104abc78a6089c7d66841",
+      "idempotency_key": "sha256:0f7a3f52bc7d7153eae9acbc4b896bd60d604df7452500a3bfc463ba2c247c63"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And the commission's conclusion from it was that more people might have survived if rescue efforts had continued immediately after the incident.",
+      "text_sha256": "sha256:aa9d2afbb7a396ffde714aaf99186a9a9e98c0a89f56861f1474ab4b979e6bc6",
+      "idempotency_key": "sha256:2556429312c10cefe802212087e1fec9bcad4848aff65d69ad82f7dc022a7431"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is their finding, published in 2026, three and a half years afterwards.",
+      "text_sha256": "sha256:437c1d762581e7a06601de8286131e8e0504a0a2d031db17ced18ac580b7c3a7",
+      "idempotency_key": "sha256:8716ecc9b4b71a1e968e76cbaee46c3f90241a083f61f26da6b6a128c7665bb6"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It is theirs and not this film's, and this film is not going to extend it into a sentence about what would have happened, because nobody has established that.",
+      "text_sha256": "sha256:0a4f8c571506a3ff85a6a0acb8b97e8047f3b87064572fb32b94c00546b2b7f0",
+      "idempotency_key": "sha256:981e3777f7836599788d37bba6ae8b1ae97ae59e0845660e918e4f176dec87e9"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "By the morning of the thirtieth of October, the street was open again.",
+      "text_sha256": "sha256:133c72e6a526c88f8f49c8bb6eab6dea4b7d1eb8dba6db33e56206efc6c26d5a",
+      "idempotency_key": "sha256:5b9e1e534ae45d309ea8633a76c89c917391c97b0423018d73795a234e465119"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Which leaves the question the rest of this is about: on a Saturday night, in a district that fills up every Halloween, in a city with one of the largest police forces in the world, where were the officers?",
+      "text_sha256": "sha256:219231d2d5ffdf6479e46691318b88aba4bfd706f59ffea63196b29ff67b1a76",
+      "idempotency_key": "sha256:a70609fc09a0944fd0535813bce382d6e423e289738836081edfc01f7000b878"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A hundred and thirty-seven.",
+      "text_sha256": "sha256:99d332dd7eba513ffd6f26c976303eacfaeae24fc5a3310bab651a17a9a6d965",
+      "idempotency_key": "sha256:c7925377049f25f9b52f38825b09bedf815f82edb75683ac1ebf5580544fbb54"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is the number of police officers deployed to Itaewon for Halloween, as the police themselves had previously said, and as Al Jazeera reported three days afterwards.",
+      "text_sha256": "sha256:c23652139fb2d2d8c1282c3fc35e20121a0639c39d75e8465f7e398b15961bb3",
+      "idempotency_key": "sha256:8cd3f8ca3c8bdd119d40c1fc6bc0e3dde6e784624725648bf7cf65252fe354fc"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A hundred and thirty-seven officers is a real deployment.",
+      "text_sha256": "sha256:8aaa375b24e4a2f53153b738d02222f04b99353fe4feb0f0d7046dc2057f9432",
+      "idempotency_key": "sha256:3056b372d7e5184ddb79cab5583cc079e18c2fd7599e42f14d4329526cffd79b"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Spread across a district of bars and restaurants on its busiest night, against an estimated hundred thousand people, most of them working on crime rather than crowds, it is also not very many.",
+      "text_sha256": "sha256:2613daf6c66343685726a6684c8ca76660e5643af558a1efd60f5724ce022c77",
+      "idempotency_key": "sha256:8d06f4216b0e76e92e28112f5a4123d444be79a8c8f2a77fe23d057ed74a94fe"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is one officer for every seven hundred and thirty people.",
+      "text_sha256": "sha256:607d730a1f180e54fa23ca317f93b8274c1da3286e25779288d2e588bfbecb2d",
+      "idempotency_key": "sha256:1ab4aacfeba56e0098b35398e65d8b87e1424f9f62351aa427782241d452df8b"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The obvious question is why there were not more, and for three years the obvious question had no official answer.",
+      "text_sha256": "sha256:b52f538a1620537f7831cb931e857f0fa3e46f511c05809dbcfe428b80e78a59",
+      "idempotency_key": "sha256:4ebc710cbd29b4035fdc57f083e4ad556f74bf507d6d7276a56e1c2ef01af80a"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It got one on the twenty-third of October, 2025.",
+      "text_sha256": "sha256:eac76293d80c89260c38c737b901e8e18547801cc8fe1ec94883c26221221337",
+      "idempotency_key": "sha256:256b6260e0d04e5b881eb4a74949146338462a3cd5eb33be6b2a366895e2ec93"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On that date the Korea Times reported the findings of a joint audit, carried out together by the Office for Government Policy Coordination, the National Police Agency, and the Ministry of the Interior and Safety.",
+      "text_sha256": "sha256:1d6fa2462c7fe73a8b241e0a76aa3ed856e7a1bd738490ab965e12babf376a1a",
+      "idempotency_key": "sha256:8f21b1c468ae3274cdbb6e69054bf5f2d00387acb9d49bf03bfa3aac33c771a7"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Three government bodies, including the police themselves, auditing what the police had done.",
+      "text_sha256": "sha256:9835509c1a1d539eb24c9730f8ae32ca17984faad86e390734e7aa11cac7e628",
+      "idempotency_key": "sha256:40d5e44cbe0ad415ed9c0ef96c732824f1dda51fd7ae2eb911941dc46804fb01"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And what they found was about a building.",
+      "text_sha256": "sha256:e41e5e657a3b28dbfc8bef77f34b601b0fb545775f2543152d1205dce60ab87b",
+      "idempotency_key": "sha256:9d4dc336e675f7f3e16924afd2a3b66888d18cd24ddb79822f34d4e3837723bf"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In 2022, the President of South Korea moved the presidential office.",
+      "text_sha256": "sha256:9579366c99641e7e3be20c2e741ebe53d0c05a907131f76635719e86b3a65b09",
+      "idempotency_key": "sha256:4360292eefd91ac432ae85ffa0dd69e96d892547c1b7552fdaa7b9d451e07518"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It left the compound it had occupied for decades and moved into Yongsan — the same district as Itaewon, a little over two kilometres from that alley.",
+      "text_sha256": "sha256:130d62f3388341642ed52ff72c975b55d5005adc37c6e1de51d48bac534d1115",
+      "idempotency_key": "sha256:f3ac367e1941226609c4c69a72b6e4f95c1ab5355ba27c036fd35e2acbcdd8a7"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A presidential office is more than a building.",
+      "text_sha256": "sha256:1309142e8c91c06ca9a78faa7d0beb614c2b9b2b7df254c970cc0047288437e1",
+      "idempotency_key": "sha256:eb7d3260f3e264da32faa7f2e37a158e49ba0d4c1022e3b61abb6a7f75022766"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is a place people come to be heard outside of.",
+      "text_sha256": "sha256:fb13c6ab159b72b1bbb804f719251bd75c0d4616b65ec7ee75b4ef6e7b3b3eb8",
+      "idempotency_key": "sha256:edfa840aa439f7c670ca76d5a3c7096400cf5cd1ffd0b804e8f2f23e64756202"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Rallies and demonstrations inside the Yongsan police station's jurisdiction went from thirty-four in the whole of 2021 to nine hundred and twenty-one between May and October of 2022.",
+      "text_sha256": "sha256:abc601caa3b7127993bfcb08e9e18d67e3610a3bff183bd1ba1c31629d3939d4",
+      "idempotency_key": "sha256:e37a0a85da30a1185a8d49bc06e9ac8592bdda4040bed9642147d2b935864712"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Thirty-four in a year.",
+      "text_sha256": "sha256:3140d5e7fe9e3c03f36da314a124edeb03f66e7784eeaf72b3304776061c8f42",
+      "idempotency_key": "sha256:267222750ba0d634abf96e8615569bc0222f0bfe0fe6558603cfff31c3e1407a"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Nine hundred and twenty-one in six months.",
+      "text_sha256": "sha256:d3b3b35bc3b9f62f7b415dc6e0b76a686f3c07887f4a6291984d91411e3f8741",
+      "idempotency_key": "sha256:7d5a1021254f517a01e1e6a48d6cf8146b811b62ef93190325c22f81f08b1f84"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is not a rounding error in a workload.",
+      "text_sha256": "sha256:f66514fb41faffd0bf70a99fa91901403363d5159fa73b84406e60997f24c31a",
+      "idempotency_key": "sha256:f7da048269233deea240dd8337f4d7d894b13d580a2342438993d5ea14a261a6"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is a different job.",
+      "text_sha256": "sha256:90a27b13c553f400df16f0ff4452f4cc9eb01319ed0f958d01c568ded662d4c8",
+      "idempotency_key": "sha256:3a5e4892f609fe684a14e7bbf2c227e1ba9163ee95c14b5b4024424a6ae503e0"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Police resources in the district had been redirected to the Samgakji area, near the presidential office.",
+      "text_sha256": "sha256:d4a961a0ce1e5dbf493db71480e51f27d117e0cc109d068f974c34937e672e66",
+      "idempotency_key": "sha256:d36de514083baec23f3cc7ed0a099d6d266810e26ec7504687da63b9ea353819"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the audit's own sentence, three years after the fact, was this.",
+      "text_sha256": "sha256:1b9064d0486ee548cb8002843eee46626ba8731681abf6168ef18c8733dcdc15",
+      "idempotency_key": "sha256:e57a081a5895bd32bbe35a1ac089cf4c1ee5c936de36c5188a5f83271a2f01d6"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The relocation of the presidential office to Yongsan increased the demand for police deployment in the area, which was a key factor behind the lack of crowd control officers in Itaewon.",
+      "text_sha256": "sha256:a269f17bd595c52909ab20742ec98cd8eb800df7dea628a20bc4da2a3db6e26b",
+      "idempotency_key": "sha256:7e2db8f278b663e47076c104e875fcb76d688aad26749dcf1d5bdba5821c817c"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Read it slowly, because it is the closest thing in this story to a structural answer.",
+      "text_sha256": "sha256:ae6c8148fd7a2830e13417079278ccea10a1be21c424467be42d35935e881b6b",
+      "idempotency_key": "sha256:eb38d9eba73b326773b064268ff312549a3a2e95b3ba315ffa8459f911df9ed1"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Nobody in that sentence decided that Itaewon should be short of officers on Halloween.",
+      "text_sha256": "sha256:380184248053cfc3290a141d3f1e1a0339bdd8dedfc8bf0df9e089953dcfcbe7",
+      "idempotency_key": "sha256:cb26a2a0d98f511ea5161e912ad96098bfc567bac0792362639a41646abfd558"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Nobody wrote that down.",
+      "text_sha256": "sha256:dc80b30cbcf2c9f57dea62aba5179ec382454a195eb59d30c351ce92ab84e88d",
+      "idempotency_key": "sha256:1e7d13ccff012905e1dae91bfc9f14523996ca09fae9990761329570a2049d92"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Nobody signed it.",
+      "text_sha256": "sha256:6db33af1fc191cee70cccfec29441df51e84a7284c60309e3ad460fa73a33c90",
+      "idempotency_key": "sha256:b2a04cc5fecb91cbdb4c5b89c40db10c7daf55e40c996d4529d56dc122858b1b"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A government made a decision about where a president should sit.",
+      "text_sha256": "sha256:231f3833a4584bfd0dd9adc810c1de75d781a4c77f8937fa4617b31aa751b600",
+      "idempotency_key": "sha256:0be3d960a5c47a85ccda3ea39f0c4e456b67c2d76d8cf9fd32a52213d2d3630e"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That decision created a standing demand for officers in one part of a district.",
+      "text_sha256": "sha256:866a0017a8efda1e7181a27c2bc1549873366ad02f6b8dcdfd13e620f4ec9a92",
+      "idempotency_key": "sha256:d8839ab9b225e88989cce346e74358900b1e7a97b538c4ea742295399a772805"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The officers came from the same place all officers in that district come from.",
+      "text_sha256": "sha256:15aa90f488a5c24b085a4ebb2ff0e1050fc0a2160647fa6e3e5ded1b56cc847d",
+      "idempotency_key": "sha256:64fce2141df7de78d2596ef5b2f79bee90b05a9553bace62b43e73ff4d813db1"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And on the last Saturday in October, in the other part of the district, there were a hundred and thirty-seven.",
+      "text_sha256": "sha256:f18b4e04fad2859f3596075195d9f51c5735498342a44c2946153523ea8e424b",
+      "idempotency_key": "sha256:6b18bf2549cb2aca0dd6f2d0f679e50912550b820cda60c949427138c16eac2c"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "This film is not going to tell you that more officers would have changed the outcome, because nobody has established that, and a film that says would have about a hundred and fifty-nine deaths is making something up.",
+      "text_sha256": "sha256:62339c429060a4aacef3f19d48febdda416fe5704e49a1c90e34372b50dd6d15",
+      "idempotency_key": "sha256:c3d15702b2a596c180b134d212b246f8b7defe1b7d7bc8fa7db370b8cd1096ed"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "What can be said is narrower and worse.",
+      "text_sha256": "sha256:a0aca7caa0520d44e9d4a1b911c2d9314dbbeafe17d4dce1245f1f5d44edf895",
+      "idempotency_key": "sha256:38f74165d309961fbe705c5f975973ab303ba30751898e6d2b69a39434e02547"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Eleven people called the number the state gives you for exactly this.",
+      "text_sha256": "sha256:c5414118c8c0a706ccadd0d6aa88959760db81df0e324455058ee8610a934835",
+      "idempotency_key": "sha256:0b48a73423fcac53ff868e22a6b50410f60da81e947d87606e48ead6e0b2acc0"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Four of those calls were attended.",
+      "text_sha256": "sha256:23a3dd439c324b4eb968a5e35b88b328369585a4fe793da32828e497afbe39e4",
+      "idempotency_key": "sha256:da6faa59017acd7feb25605914c7623a15075e1579d598bc4fee2f5d21f15aaf"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the reason the district was thin that night has now been written down by the government itself, three years later, in a document it published about its own conduct.",
+      "text_sha256": "sha256:1da1f77ec8d29fd617aefce8be1dd43ad986473bdafccee9c82926a31196e4fc",
+      "idempotency_key": "sha256:9b659e13c1d5d451ba2cbb00eab14aa76fe5cfb8f03b352d4f7a43bcb26d2d22"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Three years is a long time for a sentence like that to take.",
+      "text_sha256": "sha256:40ba37d15e3e008956779cecc6c144458b2fc051fe095210ea351e6088e2b351",
+      "idempotency_key": "sha256:c3fb6d8621b6fac27faa120a3e1a41e3dc3cce8477a18b591f897740f831f2c7"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "By the time it was published, the courts had already finished with it, and so had the Constitutional Court.",
+      "text_sha256": "sha256:3ee97d2a1bf71e0615057bd9c41804a61b0c5939d5cacc1c0643726f1662c5b3",
+      "idempotency_key": "sha256:0222881bbd749a238c401b26c4089236da72bf77bc460b78d32523565c1eeb09"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There is one more official document about that night.",
+      "text_sha256": "sha256:0b1f12839f5a87947b1239d9d6a753363f60f688f91398396981f212f7affb1f",
+      "idempotency_key": "sha256:3afc20fb85edd6af241b6f930ac0bfc7c8daa5b2b43b6c2a2de2bfa8924d8a48"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It came two years before the audit, and it says the opposite of it.",
+      "text_sha256": "sha256:eb5d4c590f831476f6acceb761400468c898c6525aaf47b7350839376a93d316",
+      "idempotency_key": "sha256:8e29ff2612d163b0f2b426b77f7b6c248ac0fdbcd2e4355e7b235bc90c92baf3"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In February 2023, the National Assembly voted to impeach Lee Sang-min, the Interior and Safety Minister, over the disaster.",
+      "text_sha256": "sha256:6a8a669d9734a9d362e40c60d418d4ad2703968bfee566a28fe68c26e12248b8",
+      "idempotency_key": "sha256:7af2ff94401e1dbe73435356db846f5babd46835a9a55b065d0574c9a2c0c514"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On the twenty-fifth of July that year, all nine judges of the Constitutional Court rejected the impeachment, unanimously, and he was reinstated as minister.",
+      "text_sha256": "sha256:c5254738e72813d920bef06bcf554f5ac95110e0a366f7d40f67a9236d377f6e",
+      "idempotency_key": "sha256:57929e836156996375568b2f1aa228fb2a7dceda118e136fb8918f3a5b8293b4"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The court's reasoning was that the emergency response system used to handle the incident was not significantly deficient, given the communication between the ministry, the police and the district office.",
+      "text_sha256": "sha256:9a42d469a71aeb0a71496f903749df117e8f6fd22fc6e215d1ea6e669ecf368b",
+      "idempotency_key": "sha256:dc3e3d3cc2f40da3adf6336323b06df7c3f1f3cb93fb0290ec30510484141e61"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Hold that sentence next to the audit you heard two minutes ago.",
+      "text_sha256": "sha256:63fd37c7ba78510429d0326d69912b51e615b38b6329339150bed7ad18259511",
+      "idempotency_key": "sha256:60416ce92c9545fb00d23dfee3ffc0f2c7f1d49d08089a92d07f26b829b91ab5"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Not significantly deficient.",
+      "text_sha256": "sha256:9f1a8e5ca0021510908f2491aecf427150d8093bb8e009f00f52be24c53513fe",
+      "idempotency_key": "sha256:4385901e27bb8329b0b80418755f4ba175c91d62fb3b973400f6ee10810b586a"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And: a key factor behind the lack of crowd control officers in Itaewon.",
+      "text_sha256": "sha256:151fd239c95c206d18a2faa8079b28580cd05961db8d0db9bf962ef7a0440fe0",
+      "idempotency_key": "sha256:88dd4645e2c20a9ca4ca39a336a1de0a75353183e0d5d2d1f4fe5ec28563ec0c"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Both are official.",
+      "text_sha256": "sha256:8b195b2fdb1e5a1f17dc04af9c3aebf7d2bb4b662ac6441157511de9e16b4ebb",
+      "idempotency_key": "sha256:06703fa3d50f464e5b1b701f0d8e45fd309f9f3aca4f02f0c4f4cc0af2fc2557"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Both are in writing.",
+      "text_sha256": "sha256:468c6a592b2ada75800bc68511fd7b74b99049a57a1a4ca6ba949f4097a88aca",
+      "idempotency_key": "sha256:91b5a904b27d057fa66cbe1e90fe57dacc552cbbd9d7002efadd2d206473d4cc"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They describe the same night.",
+      "text_sha256": "sha256:4d10de4d57e7884251761d4cf00582e7827187a98acb658791828aa4bfd19099",
+      "idempotency_key": "sha256:88c1cdf55c67b35eef140b33209b7e5267f2d0e7d298eb987de671314c28b3a6"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "They are two years apart.",
+      "text_sha256": "sha256:3716865d4b99d7405999c50c24f7e995aec607ed6fc2617b87b7afd7e1bc48ea",
+      "idempotency_key": "sha256:6740a5ed1ec92d6704c5bc79f818cfef7d950438cc4af6d3c92fdc17be6c0e9a"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And in March of this year one more person said it out loud, at a hearing, under his own name.",
+      "text_sha256": "sha256:fbd3a94cc8a1ad156570401ba0671f3586600d92bd0bc248fafc9570942d864e",
+      "idempotency_key": "sha256:04a62cda0d6ea75be42e1f413cae64230ba767911af76274623274e4a1d7ca4d"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On the twelfth of March, 2026, the special investigation commission held an investigative hearing in central Seoul.",
+      "text_sha256": "sha256:10297a51c340e7c38c500a91c6b63e24602c68085338f24eaf50caacc1e1db54",
+      "idempotency_key": "sha256:3c66d19dfe3213a59cb56b116c2af2782d039ff905301ff5fdcaa7a432600ea0"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Lee Im-jae — the former station chief, convicted at first instance in September 2024, his appeal suspended since July 2025 — appeared as a witness.",
+      "text_sha256": "sha256:15505348b8cb055de87d9e27fc5a334a8fb061948d3337d14f663ffce64cf039",
+      "idempotency_key": "sha256:9b2d1bd596de3cb77475040530e17f09fcbf1619492526a2982e41d8b2b27767"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "He said that if the presidential office had not been moved to Yongsan, he thought the possibility of such a terrible accident would have been considerably lower.",
+      "text_sha256": "sha256:d28c5720a6bbf6d049d8d3980eea7e08ab7724a3c0e9c67c1e974f73be74238a",
+      "idempotency_key": "sha256:4dccb9466e1dbf0b2ad4da4ef7f7cb58833d991cf0abc166af9d9a4b0d5937d6"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "He said that with a great deal of manpower dispersed to the presidential office, and fatigue accumulating, response capability had been degraded.",
+      "text_sha256": "sha256:fb53ea30d47a82be6b4c1c25c78d8a33d9035152dca2f9f8111c403515099477",
+      "idempotency_key": "sha256:dafd4c21e47a46b5f8a4739712c7620aed42b4d1cdfd92c09eb9cbf977978490"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is his account, given four years afterwards, by a man with a conviction to appeal against.",
+      "text_sha256": "sha256:01d130d7f79cd3e84e437c5672fda0955f79043432b384bda41ef0833c0eea1d",
+      "idempotency_key": "sha256:cc012fa4c290d37c6a43c1b133bf2c1977a539b8a402338a21d88fcd169b0ab3"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "This film does not adopt it.",
+      "text_sha256": "sha256:ad7f4b238913e0827124dc238b5f4b3330f5841237a3837806b52b14a5bc353e",
+      "idempotency_key": "sha256:df9e2a737fcf05f95ab7d85116e35a75cb11782b643f449c76b49b9bb33b0f7f"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It reports that he said it — and notes that the government's own audit had already said the first half of it, five months earlier.",
+      "text_sha256": "sha256:9ba6b1172882e036e3666b0afd79139fe255f686c844ef51bc9d4977d61ece15",
+      "idempotency_key": "sha256:b3d9d88d12351f555f70441b16ac42622125722fe0f5243cdd82518e0293d9d9"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the thirtieth of September, 2024, the Seoul Western District Court delivered its judgment on the officials who had been indicted over that night.",
+      "text_sha256": "sha256:bfa382d3d15b1e540804e34d5e7b89ed9b36bdb52ac7c7f6355ad03a7b54be8d",
+      "idempotency_key": "sha256:646bca4eca91288c5cc4c7c85ee69a3220efbcf06319406b01942d204c9505fb"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Everything that follows is a first-instance judgment.",
+      "text_sha256": "sha256:022599eacb538eaa3571d4bb6ee46ba120d309638fbbb6db9ca0ae874b717126",
+      "idempotency_key": "sha256:6b4d4b5b5efb73dfe244119a7726a8301e324b967b6f8200032c39568739a24a"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Lee Im-jae, then fifty-four, the former chief of the Yongsan police station, was sentenced at first instance that day to three years in prison without labour, on charges of professional negligence resulting in death and injury.",
+      "text_sha256": "sha256:0ffa5c83760968b9896dff7f12a2c03cd85075c9876894e76ed2876b4ad2ff3d",
+      "idempotency_key": "sha256:9dabecc68b7eac685923b41c351ff2106d32c3f6d6f233e6e15df8b8d7e580da"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The court's reasoning: it was either foreseen or it could have been anticipated that a large crowd of people gathering at the slanted alleyway in Itaewon for the 2022 Halloween could cause a serious danger to bodies from pedestrians pushing.",
+      "text_sha256": "sha256:e47fc44448e5410aebc3309f75f8db96c37d251527f2274907f9be35d5cfe20d",
+      "idempotency_key": "sha256:e6c075b5b6b012c1d4629f34e369d01ab7f8a3d4f3491223a3f5574a3d7f769e"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The court found that he had neglected to establish and implement a safety management plan to prevent it.",
+      "text_sha256": "sha256:929b03f2cb71215a2777958177e890b0da1202c98a3f579fa68151b4ad4492f8",
+      "idempotency_key": "sha256:31a4657b97d86e53e3ed6734d0ea7a9917658ef539e8dc2b78c3f35d8b6e7c5b"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Two others from the same station were sentenced that day: Song Byung-ju, who headed its one-one-two situation room, to two years without labour, and a situation team leader to one year, suspended.",
+      "text_sha256": "sha256:47c7755da3a2c45826ed568933055bc84e7178f770d98fffe8c3dddbbce454a6",
+      "idempotency_key": "sha256:2a801dfd114c5e93bc82edc284e7e6162c501c512c94e10fc484d1e7b7c2d5da"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "He was acquitted at first instance on the other charges: perjury before the National Assembly, and a false official document.",
+      "text_sha256": "sha256:9afa432840ddcae652ac4b30a412e0f0fb317e8e24863be7ed595c32d17d3f2c",
+      "idempotency_key": "sha256:cce6872fabb0d02cbbfeed97581f5f51cf90d4272928106d11b444949fa81b36"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then the same court, the same day, turned to the district.",
+      "text_sha256": "sha256:9e21654b560276a3cf04f05d2c2c7c70b72c2012252ded7088093f32275c7040",
+      "idempotency_key": "sha256:8964075d019cd5f0b8abaa1c08c7d0b3a47edeb83788704bd7331070d4b145cf"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Park Hee-young, the chief of the Yongsan ward office, and other ward officials, were also indicted.",
+      "text_sha256": "sha256:55c52a7663fbbf919094ead1990038db74e2d5a75ba8b25371e973e29b22a530",
+      "idempotency_key": "sha256:cb571bd310bd2f3de54edad34eb798c0e7e0c1b1c61983868de52532a28c5ee7"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The same court found them not guilty.",
+      "text_sha256": "sha256:075c163e7bb52c997025a8cede058e4b2e8ed512529e8673c316741fa3aec614",
+      "idempotency_key": "sha256:0cbe5d21533e2da06bcddcce1c3d4a739f9c0a59eddd5694fc38d1bda731a16c"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not insufficient evidence.",
+      "text_sha256": "sha256:d97024262e8aa6bbb3681e33383851bf97c2a2cc10de14fba33184db376eb127",
+      "idempotency_key": "sha256:fa3214e49cd578e4a9a53a4bb9a50b1305b01f534625bc050f21c8d70b42f12f"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not we cannot be sure.",
+      "text_sha256": "sha256:c2acea5e041da1c0384af745a7a69717019b13876985bd381f49e6caa551953a",
+      "idempotency_key": "sha256:e2608c8334b157d977431c0c13df0445d12daa1182db0e669a1f7d542ffec912"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Something more specific than that, and it is the sentence this whole film has been walking toward.",
+      "text_sha256": "sha256:d47e30ce41c68f4ff7e493baaa1b5d46b05174a548a9b73e8ef81c26bfd2ecc3",
+      "idempotency_key": "sha256:9036efa7022fb90e5ab0e707a58f73e4b8075761a5a63bbebca6cfaa248c7e33"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Related law and regulations did not require them to come up with safety measures for events without organizers.",
+      "text_sha256": "sha256:539c10335f33b107007e8a5fdfb1e92916055594ab872d2cc2b51e11c4f30201",
+      "idempotency_key": "sha256:d72d392b6bb51fc6eec745131d6c81e6732da55c5c35331b50ff4b1ef1712a85"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And: there were no obligatory regulations specifying the need to establish separate safety management plans.",
+      "text_sha256": "sha256:4afd537b938ca045764f0db5ee338b12989be97ebe26acf6828f18671c7d356b",
+      "idempotency_key": "sha256:d6533209336cb1fb5a567aebfe9cc11285de7876c569fcce370b1806e1fb7833"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In the court's own language: it was hard to find that she bore a specific and direct duty of care to supplement a safety management plan for Halloween 2022.",
+      "text_sha256": "sha256:bf2142d8069eaaf04db01f089f958d531b00ea9346ca711be3916907ca2aee65",
+      "idempotency_key": "sha256:70f67774ac654c3f8204eef9476a2d96be7b671f8b5a0710d1150a799d391f7e"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is not a loophole somebody found.",
+      "text_sha256": "sha256:14a732a787ad8dd1f4226f414ab335061d7f05513647400771900d6b41d62e52",
+      "idempotency_key": "sha256:224c15944cf2ca4fa2b7a261cc293b66f5bcea7575021630618a85d4a190f6ce"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It is what the law said.",
+      "text_sha256": "sha256:fddaaf485bd90addd0ff802aeb5c2d8ac13bc36173135ec2cbf5b9029b0a1f63",
+      "idempotency_key": "sha256:9bb6f2922f109ac039edae181136cf978960caf51135211482ce0a7a9e194964"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Under South Korea's framework law on disaster and safety management, a voluntary event with no organiser did not have to file a safety plan in advance, and it was ambiguous where responsibility on the ground sat.",
+      "text_sha256": "sha256:54ea07590d3c845a4ed4e478d7cea238abb56f27b5f5e2909db596099851273d",
+      "idempotency_key": "sha256:ef29fabc23e4b1b42ac76c69e1d4e2f0e75b3fcaf8f4bc895c17316a5a8fd09c"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Until the law was revised, it set out administrative duty and liability for official events and for local festivals — the ones where it was clear whose event it was.",
+      "text_sha256": "sha256:ea693a6ddf1560eaf9fca4d8235118bca0583a32f211a5d064ded682fa6d8e5b",
+      "idempotency_key": "sha256:2e5ad145af87b8c20c414f7d89cefa210272e63d976f50d3e7ad9134a0edf9a3"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A hundred thousand people walking into a district because it is the twenty-ninth of October is not anybody's event.",
+      "text_sha256": "sha256:798c278ba9ecbd3684309d72bdc048368ff4549447f73c0945941da42cd4640a",
+      "idempotency_key": "sha256:7270eb4713c1f00f8595124cb033d253ffb006e8a21748423dc319382f71fd8f"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There is no form for it.",
+      "text_sha256": "sha256:63d3bf87a05ed34782cea5348dab34af7665ccb4d49f73f02301a1cc6afe0c1a",
+      "idempotency_key": "sha256:46bd17fd8a29e2ff5024e59c5a0c10d89626431dcc1e66e1524c638875dcb230"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And so, in the judgment of that court, there was no duty attached to it.",
+      "text_sha256": "sha256:5ae1db338a2ad74ff760ada2e98122409d2e9c22f79f52b42c6b536169e30b87",
+      "idempotency_key": "sha256:a27be6a845ef39e970f4e1ba3188ca1372e3a8a067deb594d17a6db4c2dd6ac6"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There is now.",
+      "text_sha256": "sha256:0c803c67894d9f6cf67992054e85ca09f61bcdc19e58a0b086e003611e3815a7",
+      "idempotency_key": "sha256:eae0bf02b0a765dc6f2dfa3c2656380aea7cb45af668bc5ad34070947361fbac"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Article sixty-six dash eleven of the Framework Act on the Management of Disasters and Safety is titled safety management measures when holding a local festival.",
+      "text_sha256": "sha256:a52d74a397d7b37d9e3f96dfa42819975cb5a72a2e1503358d2e6ab09c51d214",
+      "idempotency_key": "sha256:76ff9205c08d443fccb4f95448adcc66f44dc595b50abf072c2643e6fdb497b7"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It was inserted into that act in 2013.",
+      "text_sha256": "sha256:76702f2d761aa4b772f7f537a24ba9b1e3710af0fe9cbc2bb7431a7a9043cb4d",
+      "idempotency_key": "sha256:0357efacb50e6d2ebb16e8e37599b2b3c56018a576ecfda30c571a16e4a854ff"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the twenty-sixth of December, 2023, its first paragraph was amended.",
+      "text_sha256": "sha256:4ffd182eea4f1cf1def6ba60192c18317b9fbfa1b6fc2d8e271bc2d33cee46b4",
+      "idempotency_key": "sha256:a0cd22feb8712206c637951745bc3ea2146bda5d49f128e964bab81d8cdb737a"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Where a local festival at which the participation of a crowd is expected has no organiser, or its organiser is unclear, the head of the competent local government shall establish a local-festival safety management plan, taking into account the expected scale of participants and the venue.",
+      "text_sha256": "sha256:f6ce62e342401c2c5d8284b811e56b77d9dd94f0d37d9df4921105cf9527a270",
+      "idempotency_key": "sha256:04fc2c92b3b62cd0917658918ba1c1f978a7ebb099f3e24b1323fadc2b4e5e7c"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is the sentence.",
+      "text_sha256": "sha256:ad83afdcb04f2b1a00c2d612196f3998d362f336b93bf2644f9c168e52e5e8bf",
+      "idempotency_key": "sha256:104706045cde4d50413314dc51d3957135c302a6e218699083176249cef7f0de"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the night this film is about, it was not law.",
+      "text_sha256": "sha256:eed8b9a2c54e43f50f3f3eec9f024db8f58a86d1019e09c5793eccf5ba38bc9e",
+      "idempotency_key": "sha256:618e0311b3edb17fffa4d11e246187e6760bf2f60e780c0f9addc25b37e0f867"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "One thing about the order of those dates, because it is easy to get backwards.",
+      "text_sha256": "sha256:71adebcad98b33d5c227ef0e0736ff5ae3450fce0f79f7861bb7281eace33d49",
+      "idempotency_key": "sha256:f141ad4c5373d3dbd5db5b84c1fbb3618d31393ca465595e6df3164680b30fbe"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The amendment was already law in September 2024, when the court delivered the acquittal.",
+      "text_sha256": "sha256:23dbd7a1f02a6afc920ec230d5afe5fa95056b68db52ca76792acb71220c52b2",
+      "idempotency_key": "sha256:d413d0bfd368f209a35859de9e09594d3083809b4d4737e5ffe3137e4179c24d"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The court was not ignoring it: a criminal court applies the law as it stood on the night, and on that night the sentence did not exist.",
+      "text_sha256": "sha256:d156b20efd6638ec786286efa7c550a72a42178c445e23bee34099168b7bcdae",
+      "idempotency_key": "sha256:8c66bb97e7a8ab3325b5843603491498f416b230ea2648dd52b8c3badc75687f"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The law now knows that a crowd can happen without anybody calling it an event.",
+      "text_sha256": "sha256:dfa0d8e38c5a628e8694d818104b83e52e0272c7cf6903bfe5344bf272e8a855",
+      "idempotency_key": "sha256:62a0d1c3cb777aace013ae3942d67060d798835bcb409bc72502a1c00d7ab246"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It learned that in December 2023, fourteen months late.",
+      "text_sha256": "sha256:115f69027d9f03fdea7ed09031f9455a2231e783893f068475547844afe45d57",
+      "idempotency_key": "sha256:a6eaae664b135e4d642f5f01ba3e1d11452c0bbfffcc94d7bb71f75ec7df2835"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The act says who has to write the plan.",
+      "text_sha256": "sha256:2d1051e38cfa6c4d787c45a7def98c098afb793226641b835f4dfac275fff7e9",
+      "idempotency_key": "sha256:6423ead2fff07ce744d802a84d425fd9891f478602e4543dde110e547ebf5923"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A second document, the enforcement decree of the same act, says what has to be in it.",
+      "text_sha256": "sha256:46fa39fc922c454972f1438de601a0826cb259feaf842c1cdd3979aa45b04df8",
+      "idempotency_key": "sha256:8fe352715f27ba1e7982e29dba44265e963f956530b6dd26cb99d66ffbf41fc4"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Article seventy-three dash nine.",
+      "text_sha256": "sha256:2725890494bcfbf84da4b1fcfa6d01d440c4b9484ec9250bac343d124debb00c",
+      "idempotency_key": "sha256:5cc069a719091876f9eba261a7723957408ffb63db4a0afef1571875d6c578c5"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Where a festival has no organiser, or its organiser is unclear, the plan is written by the mayor, the county governor, or the district head with jurisdiction.",
+      "text_sha256": "sha256:bc3e5bc88b761b434a998afbe240743e6c8f4309d5f3c1e0bb85d2b921c7fb19",
+      "idempotency_key": "sha256:101ddafea1e2ae77147b4190e24fb9d4bc16da5673a07920e902991a5cdcfe06"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And the plan has to contain five things.",
+      "text_sha256": "sha256:a8486170ec93e11aada4f3748ccead09654e3b11546b89f5ef0abd497786d4eb",
+      "idempotency_key": "sha256:f99101244e98e50d516ff9b9c0e98c6dc7ba094e05c0c2982969095c3930cc6c"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "An outline of the event.",
+      "text_sha256": "sha256:dff63fb0be6845d4d4af44dfa9befdd299bf580593d77f9dca35e980eeee55cd",
+      "idempotency_key": "sha256:c2c3ce176277a26b9e147657f1d1283970d6d0021ec158d2dff8ec798529d5d3"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The person responsible for safety management, the organisation that manages it, and its duties.",
+      "text_sha256": "sha256:0c497effb25f90c17aec00d94d55f8464c82abba73547730b69a380432d4c17e",
+      "idempotency_key": "sha256:a806af0cdc75d1c72d33b48162dfc9ae94b90d2518cc6aa55fdeb79ae6aef77a"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Measures to prevent loss of life from fire and from crowd concentration.",
+      "text_sha256": "sha256:62dcb29633d2d396b018eacb0141289d6ee72d2ea8b0e7b74c36b78e30140017",
+      "idempotency_key": "sha256:b3f9c2b54d1ced8d94a31bb13776688cfef80cb8e06216e5c881b452bbfd165f"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A plan for securing and deploying safety-management personnel.",
+      "text_sha256": "sha256:ce05dc97bc7ce828ffe4e9b3b9d4bed4d10526c98e7cb680acbbd18c93534773",
+      "idempotency_key": "sha256:ff4df1e45b01f871078c7d6eaa470c3eb76b8cfbf291d6a24e9183682d50f588"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And emergency response procedures, with the contact details of the relevant agencies.",
+      "text_sha256": "sha256:40f103c342d6b49fc7f7dbf589b6709868f26c987e8ef95b7655e77f7cdea5de",
+      "idempotency_key": "sha256:d12464b3180c70b9c6010f92bcba3a3cfc0921956efcc74977b67ab63a4c8d0e"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That is the list.",
+      "text_sha256": "sha256:cc5167fb2f8087769fcac0af83e02b7284f444d0e463548dc9d693f0313967d5",
+      "idempotency_key": "sha256:1b7ea617919e3e9e4a9d3e037b2f192db633424c8fbcd776e804ad3cd0ba0bbb"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There is nothing clever in it.",
+      "text_sha256": "sha256:4d7b705e7779b9e552e66e2ff51acfecbee7de31fe5a1d3db77d45bc7df0c638",
+      "idempotency_key": "sha256:8819736c4443f719eba4d8440b167b84b88dca2b48403d13c2824f4ca0e053e5"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Every line of it is something somebody has to decide in advance, on paper, with their name on it.",
+      "text_sha256": "sha256:41a5ceeb2f7ff1015e390a9be842079878358261463e3ecd383bb608ac2cadb8",
+      "idempotency_key": "sha256:b419083281694e93ace09a866c7e990b7e5e05ba8cf31bf1c7f0c7fc10db7967"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "This film is not going to tell you what such a plan would have done on the twenty-ninth of October, 2022, because nobody has established that, and it is not a thing anybody can know.",
+      "text_sha256": "sha256:e916cd0c568a009c35a7854cf73b7fea5eaa4db68017307ba05d468ec64af7f4",
+      "idempotency_key": "sha256:af70d7a27c43e1b72fa48d2e287f34b5905a1852bcd094a9da0684d3946db53b"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What can be said is that it exists now, that it did not exist then, and that it is written in the language of the night: fire, crowd concentration, personnel, deployment, responsibility.",
+      "text_sha256": "sha256:460b313545a9f2fa60d856a671bff4c24a4f1ba12fc6decd844a3cde2160d845",
+      "idempotency_key": "sha256:a598243325ed9421f5e34b1b8638840c616efab06b612819f09b76b8ebbb616d"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The duty is still missing something.",
+      "text_sha256": "sha256:5589acded000dfb5e9af929dabc4bb07240e7a3b5bf8728b411000810362be09",
+      "idempotency_key": "sha256:e81ce81c2599300638b7e6a5c8b33d2363aae44de4ff4ce13248162e69319593"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In April of this year a member of the National Assembly proposed adding a penalty — an administrative fine of up to two million won for failing to file one of those plans, and a power to demand that a bad plan be improved.",
+      "text_sha256": "sha256:5acf4ebc8923739a9c8efde84e15f923fc6cc0e6e1c8e8ca639c740455f0cff3",
+      "idempotency_key": "sha256:a839ae09a3a0c5bf687d19cf792f8798fb54883e534ba21464c171f22711b6dd"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The reason given was that the duty was already a legal obligation, and there was no basis on which to sanction anybody who ignored it.",
+      "text_sha256": "sha256:4cff3a87bb12c370a59083d4c53e6bb3f445673ac79281b47971e637435e92a1",
+      "idempotency_key": "sha256:8e144b2a9dcbde73f068c59f92159e49c12ad2a49be0f49971aa7b765fa70316"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Three and a half years after a hundred and fifty-nine people died in a street that belonged to nobody, the rule exists — and the penalty for ignoring it was still a bill.",
+      "text_sha256": "sha256:b5fc1322a5e5ee63b7063f7647e525c9d767b10bc06b3740882cedbb304affad",
+      "idempotency_key": "sha256:4d761a77ba736abeac7b9d0bcb8095c94bdb3fbf2e1af828afe64c6b21a823f8"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Kim Kwang-ho, the former Seoul police chief and the highest-ranking officer indicted over that night, was acquitted on the seventeenth of October, 2024, along with two other police officers.",
+      "text_sha256": "sha256:4697a9f011c1f93273d84e4f43247955b4c2dc10902d72121b9d1f489a336c4e",
+      "idempotency_key": "sha256:accaa58b7499a0ceeaa5289d9fe788364df0cc2bb75b59579821e9cd8cb40ad3"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The court said it was hard to establish beyond reasonable doubt, with the evidence put forward by the prosecution, that the defendants committed professional negligence.",
+      "text_sha256": "sha256:833675e179068247cf9bd746dc01336892dda667094fe6729c75684f583e16b2",
+      "idempotency_key": "sha256:4a26960ede895c5a05376136f3bd0926ba6dc90537d510ddebe4117c2181f520"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the seventh of October, 2024, prosecutors appealed.",
+      "text_sha256": "sha256:1f85483751dc89e4ee3ef66b09793c978f9cd4db4030585a93ec5a5513212e3e",
+      "idempotency_key": "sha256:7e841897a0e74a3269af2bbfff622f1bfca81b28d18b99addfb3a95fb28acabe"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "They appealed against the former station chief, the district office chief, and seven other officials.",
+      "text_sha256": "sha256:f50333fc234a578b14e992d35696279c8cba8fc8abe31f9ce09355c6c73cf42d",
+      "idempotency_key": "sha256:74d5ebd8543af4635930c93c27f48118110dea39a3966deec7eea39167f959d4"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Their grounds, as reported by MBC, were that the defendants were shifting the blame and not seriously reflecting, and that the court had misapprehended the law on the district chief's duty under the disaster and safety act.",
+      "text_sha256": "sha256:b63c7666992fa45d2051beb869f7ea25b27cdb5466379bbcb72a2e2d23df1eb7",
+      "idempotency_key": "sha256:fd896c3d1c942a3921447f9fa34863de1a4655a8d2b4d3b13be72cad3fd3357a"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then, in the summer of 2025, both appeals stopped.",
+      "text_sha256": "sha256:10fd661aa58a643187d56d4387be7dea4fdc32fdfc754deb6310308337b6913f",
+      "idempotency_key": "sha256:96afb0927d4d3500a4f5da5f166b7cf46f9d02ecd110f44ce44fd0f0595ca931"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Not concluded.",
+      "text_sha256": "sha256:56873fb41d2d3d1dbdd8a0403c2c33fd55d07585b488e199247f2985ca2a4cad",
+      "idempotency_key": "sha256:c196ebc9d4f4caf8ed6ed08bfb23497e3b299feb3db817cf85aecc1182b5d01f"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Stopped.",
+      "text_sha256": "sha256:f8ec77e7a3a08e74c874907cf6d20cd0ec0a6ad2c637f8f2a11770e986f92676",
+      "idempotency_key": "sha256:beb169c94f6bc443295786692a4a8514394728e3621d1846caa049e1634a77fc"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "By the court itself.",
+      "text_sha256": "sha256:84d7267cdb9d79c87229ea795f0db4435f773077764f824a35db6bcae49469ed",
+      "idempotency_key": "sha256:7672f3fff5753f7e0769f8e49ad9d24447488dc8218b62ec5647bf69246149f1"
+    },
+    {
+      "chunk_id": "VC-0302",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the fourteenth of July, 2025, the thirteenth criminal division of the Seoul High Court suspended the appeal of the former station chief and the two officers from his one-one-two room.",
+      "text_sha256": "sha256:03d7079e693f4ed8d1dbab3252d1beff5c416a41e27cdeb0ca0eff46bed3f4e7",
+      "idempotency_key": "sha256:64dd94cf6254374a3f678239b9cd1abf5d915118bbe41748d1df222f6794650f"
+    },
+    {
+      "chunk_id": "VC-0303",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "If what the special committee is doing is re-investigating the facts, the bench said, then it is right to try the case afterwards.",
+      "text_sha256": "sha256:fe6afb0d858ccc14bd81503acb4503df32447ce58aa4ad13d6a4d89c96237db1",
+      "idempotency_key": "sha256:2287444b94bcc103369b24bcbf3485fb3cb40fcb9b155ac1983bc46a1c607ab4"
+    },
+    {
+      "chunk_id": "VC-0304",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "There are still many unresolved matters from the disaster, and if there is no integrated resolution and the procedures become fragmented, the harm to the victims is aggravated.",
+      "text_sha256": "sha256:c0e75a97eb12916b2a9cf16f3fa61461e2d2bb3a4819d1b2f6a50f21b8d726e7",
+      "idempotency_key": "sha256:6c551d0cbd5a223c7d545e4968483ef2f38774c179630f97095dc5220fb50f41"
+    },
+    {
+      "chunk_id": "VC-0305",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Six weeks later, on the twenty-eighth of August, a different bench did the same with the district office chief's appeal.",
+      "text_sha256": "sha256:b4880b45bb6637e966d851915a06a75f2a19a9b391608c3407b413c20e6bc3af",
+      "idempotency_key": "sha256:69268d5067f94cc7dffe2f9b6cad55762e83a14a4245da17ba17e6b7be3d9f59"
+    },
+    {
+      "chunk_id": "VC-0306",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The commission had written to the court on the first of July, asking that the appeals be held until it had deliberated on its findings, which it expected to do the following June.",
+      "text_sha256": "sha256:f324f07eba02a7f4675e7ac547a0b4edc2ae4bf095d938bf093604ba727aa752",
+      "idempotency_key": "sha256:16b187179fca09f108a3bbe76feb8f62a6404ca0f78f0648da6592072d3d1562"
+    },
+    {
+      "chunk_id": "VC-0307",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Read that again, because it is the strangest sentence in this story.",
+      "text_sha256": "sha256:8454195fdd7196b3615c163d08918be26d2f2a6393c46e1c51e6e681ef9ed0d5",
+      "idempotency_key": "sha256:c7e615581b6a71c5752a841fbcb875fb2e49e8936b356a36e250219bb38563e2"
+    },
+    {
+      "chunk_id": "VC-0308",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A criminal appeal about a hundred and fifty-nine deaths was paused, by the court, because nobody had yet established what happened.",
+      "text_sha256": "sha256:98fe96c249e9554d99b550fdcaa60284150c7f30857bd28d6aa52518c4a3132a",
+      "idempotency_key": "sha256:c8089192eb4657cbd3216236083b61c2c2eb97b7b31137bef602a0423ff5b292"
+    },
+    {
+      "chunk_id": "VC-0309",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Nearly three years after the night itself.",
+      "text_sha256": "sha256:77fbd77935f78649cdc3d2c5ef2deb369e590116b02e83c618a79cba007ec835",
+      "idempotency_key": "sha256:02ede9d2a551ca8c5992eb04cf8f76731753cc167f4cc4fca5c3e6f184f9f93d"
+    },
+    {
+      "chunk_id": "VC-0310",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The commission is still working, and it is the reason this story is not over.",
+      "text_sha256": "sha256:73991113315112ed3febb9d00d02966b2cb5b52d14c0c7fa152e0b2b7e22e4ed",
+      "idempotency_key": "sha256:d5c8f5750a7342681879a52e794fa200eef80b671c127b7a5f8d25fae83619cd"
+    },
+    {
+      "chunk_id": "VC-0311",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In January 2024 the President at the time, Yoon Suk Yeol, rejected a special act to investigate the disaster, the government arguing that an opposition-driven committee undermined constitutional principles.",
+      "text_sha256": "sha256:9c28218606fb0e25e47548e59f5589d6e999922e497facf6c18369bbb44912c8",
+      "idempotency_key": "sha256:7bf3acc0807d007f6682bdc1bd4d1dce977a4729aa82f27d9d57771e327ad2b4"
+    },
+    {
+      "chunk_id": "VC-0312",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A commission was established in September 2024, with a name that is itself a sentence: the National Commission for the Investigation of the October 29 Itaewon Disaster and Prevention of Recurrence.",
+      "text_sha256": "sha256:57f055321b54773d887f4550c055975443c6251fdb62ac29ae55d582b76a99f4",
+      "idempotency_key": "sha256:25fa92f70e32f8eeb967143c8dbc51b8d314db54975afc706a2871bed9d762f0"
+    },
+    {
+      "chunk_id": "VC-0313",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In July 2025 a new President, Lee Jae Myung, ordered the setting up of a further investigation team of police and prosecutors, to work alongside it.",
+      "text_sha256": "sha256:ba756c32564ed400b3fb0cff319e9dc111ef91e478bcfee841c93149b943a835",
+      "idempotency_key": "sha256:375ff52215a521f5c168f19331837a99eac25213b1dd461ec19388f33d5b8ac0"
+    },
+    {
+      "chunk_id": "VC-0314",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "He apologised.",
+      "text_sha256": "sha256:541bf6e7c201187d287021965488109d38b1a53c6cea2331ff1c624844528d02",
+      "idempotency_key": "sha256:fb1c2e69cf878d57ea02047f8745044f9b47623dae81eb080d13d13dd7b49214"
+    },
+    {
+      "chunk_id": "VC-0315",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "As the head of the state, he said, I would like to formally apologize on behalf of the government for failing to fulfill its responsibility to protect the lives and safety of the people.",
+      "text_sha256": "sha256:dac25edbb779b1219dc53a0c4e865e1ee02ecbd400cfbf2c83ddc0e9966f97c0",
+      "idempotency_key": "sha256:20a1a47c02f30ec326c1866a9a643c5b489bacbaad6132f12645379324fce717"
+    },
+    {
+      "chunk_id": "VC-0316",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "At the same time, a lawyer representing the victims' families, Song Hae-jin, said police records and information about the government's response had been withheld from the commission.",
+      "text_sha256": "sha256:6365cf586f9e63343b7df8ca6b42ec7010baa6a223a80cea638e4ffef1bca76e",
+      "idempotency_key": "sha256:c2add56acfa7d617bc1bbd3a8de6372d973ca840afd089e13fd7e582c43ad713"
+    },
+    {
+      "chunk_id": "VC-0317",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "At the hearing you heard about a few minutes ago, a survivor testified and police officials traded blame.",
+      "text_sha256": "sha256:e3f03d929f814ac0f027dbfa8570c10fda507771b5e96350b71745a137e28a04",
+      "idempotency_key": "sha256:5c50467728abb41637ac7b1dd3f705bd4cd825b2fa75dee4e63182e84002d4da"
+    },
+    {
+      "chunk_id": "VC-0318",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Kim Kwang-ho — the former Seoul police chief, acquitted at first instance in October 2024 — refused to take the witness oath.",
+      "text_sha256": "sha256:bf0e47c869528a771c1351536a67c9d2ca9d32da0bf16e76d4823967bc844e6e",
+      "idempotency_key": "sha256:4495da2b0dce391dfb0d750b04f364d5f1f3f29a2b29526c42bb5ec4ae979953"
+    },
+    {
+      "chunk_id": "VC-0319",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "In May it asked prosecutors to investigate the district office chief again, and a former Itaewon station chief over an allegation of perjury at a parliamentary hearing.",
+      "text_sha256": "sha256:efe0a8c27500fd8281e1686362d89aca2a742e9ed26e3202ba23133bed10669a",
+      "idempotency_key": "sha256:296f400f80c9119e9863975ed6e67976d89d261b246c4af3454b1a830d0fa13c"
+    },
+    {
+      "chunk_id": "VC-0320",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And in June it concluded that it needed another year and three months, to December 2027, and said it would be looking upward — at the chain of command, including the Office of the President.",
+      "text_sha256": "sha256:7bb6da2480e4586300516b30d6bfd9e17234374941da8a0f11fe1e7502cb7288",
+      "idempotency_key": "sha256:15eeabcd0b15c186b6312c9b243cb5cf11ef22adf7a1aee9b775d50e049a741c"
+    },
+    {
+      "chunk_id": "VC-0321",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Four years on, the question of who was responsible for that street is still open, and it is being asked higher up than it was.",
+      "text_sha256": "sha256:b2d5bb4626c475b26fa69ffcb82c64242bb37b02b63f123df59ba447e0407336",
+      "idempotency_key": "sha256:6b62353ae5edf8669272253a90918a4e1c69f882c7a08fa812f5194878b71879"
+    },
+    {
+      "chunk_id": "VC-0322",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Go to Itaewon now, on the last weekend in October, and you will find that something has changed.",
+      "text_sha256": "sha256:39bb1e11d74848288a209aea316439b62bf115380516b40cccdecd60756d45b0",
+      "idempotency_key": "sha256:01174cace87351c28cf7abcffed25f7e11a39a5d12add2a17f6c83f8689add51"
+    },
+    {
+      "chunk_id": "VC-0323",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "There is a temporary median barrier down the middle of World Food Street, put there to make people walk one way.",
+      "text_sha256": "sha256:5e9fd24ab98d658092fc4467a69daac808703cb81b13e55135fcdea9ab1617ac",
+      "idempotency_key": "sha256:9528e0ef952a1b29ad58524235006ffe34fb3a037774127be72e16314c376a84"
+    },
+    {
+      "chunk_id": "VC-0324",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Officers and station staff guide people through the underground station to stop it backing up.",
+      "text_sha256": "sha256:490fd0c6775b9120d30458ee913d95bc50b5bfc268cf2281b099697476b1b39b",
+      "idempotency_key": "sha256:0596f755a1400815d9716e42166504737dc05d00f71b4aba5ddc4def0ef986d6"
+    },
+    {
+      "chunk_id": "VC-0325",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "A mobile patrol unit starts at six in the evening.",
+      "text_sha256": "sha256:40c0cc5ed9d584ccbcf8df54e4e92dc8a3151d29af1bbb74ed6de49e8bb20374",
+      "idempotency_key": "sha256:d8d167b0e032fa7b060bedf6a014b97742dc77d94438b77e07abc10901f98eb4"
+    },
+    {
+      "chunk_id": "VC-0326",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Streets are checked for hazards, and somebody makes sure the cameras and the emergency bells work.",
+      "text_sha256": "sha256:aa83aa5207917bcc63148fd4f50b4850f907444f02f02e04aa3b4f7131bb2a34",
+      "idempotency_key": "sha256:787424085dbb42a72b3c387ef33c073c0feb057d37853209aab1f16eb3ccc0e6"
+    },
+    {
+      "chunk_id": "VC-0327",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "When the road gets crowded, traffic police blow whistles.",
+      "text_sha256": "sha256:00f1195101c9ba6375ca99b228b8c381644a6446e3eeca3033da586ffa117f46",
+      "idempotency_key": "sha256:4d15be384e4d077ad4c25dbcdf7908f978d2ff509ed3f1844acc7f7cbd3d9970"
+    },
+    {
+      "chunk_id": "VC-0328",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And there are signs.",
+      "text_sha256": "sha256:3ba13479bd50e471a1243cd327430824e1bc7120663b89cd0d673e462a97b69d",
+      "idempotency_key": "sha256:956f8fe5f2ad14727d5e3726482516ad979cb2788032a7eb256848ad645b0b7d"
+    },
+    {
+      "chunk_id": "VC-0329",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The Korea JoongAng Daily quoted one of them: crowded areas can be dangerous.",
+      "text_sha256": "sha256:e88558e34e382948d7a5060c6af4372ac6f6b61dfd5b7721296eb575db8a1c62",
+      "idempotency_key": "sha256:10ef21f8a9da1e65173dac1295aee4c2bfbbe69aaeb582f4a56efe9a8bdb2fe7"
+    },
+    {
+      "chunk_id": "VC-0330",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Above all of that there is now a system, and the Seoul Metropolitan Government describes it in its own words as an intelligent people counting system, which automatically monitors crowding and raises alarms if it detects signs of dangerous crowd problems.",
+      "text_sha256": "sha256:ef478bbab4f617c4013f76a614bb1e2aff96d96805b85ee4808089519326449f",
+      "idempotency_key": "sha256:f261a64e48c4f5efd841c8eedc27e3db4b1d28840765a188b425143e7589bf14"
+    },
+    {
+      "chunk_id": "VC-0331",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Cameras connected to analytical software automatically calculate the number of people per unit area, and when they see something, they tell the local disaster situation rooms, the city government, the fire and disaster headquarters, and the police.",
+      "text_sha256": "sha256:4c84876734d320a9cf8b5e3b901106845b3c24e616b8fa7eb64da1ce287e8a5b",
+      "idempotency_key": "sha256:2426e883c0c90c55e9c4410041e36ffc1b06286f47a22aaefe172525362c1310"
+    },
+    {
+      "chunk_id": "VC-0332",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The city listed seventy-one areas where large crowds were expected, and put nine hundred and nine cameras into them.",
+      "text_sha256": "sha256:bb199df3faaf1f8c0b487b0db2dbf698b6ae93eb0433a105db64518159515c6c",
+      "idempotency_key": "sha256:73f5d2a0ebb5c07aa47388c2835c25196d250e2912c959d8ac613ae788cf9ebe"
+    },
+    {
+      "chunk_id": "VC-0333",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The page does not say at what density the alarm goes off, and this film is not going to invent a number for it.",
+      "text_sha256": "sha256:cc148397c3677ab1182296dbfb48bb8a156f27bff7d18d3e4d8bda9a19f306ef",
+      "idempotency_key": "sha256:f56bea525a02ea18163789cfae413fb6a8229830739218e2f6b9149792fb9f6a"
+    },
+    {
+      "chunk_id": "VC-0334",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Nine hundred and nine cameras, and a plastic barrier at knee height.",
+      "text_sha256": "sha256:2bbaae780395a942859461d57557d694ff7def487407fb502fc3a43fe98296d3",
+      "idempotency_key": "sha256:ca889baefdc0e1211d093067639203ce64edf604510933db5e67264754c5bcb8"
+    },
+    {
+      "chunk_id": "VC-0335",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is the part worth sitting with.",
+      "text_sha256": "sha256:aabdec7d97a063530407cad2d78643f11e3644cd9c03a2e09d28b2f3a3d1e21d",
+      "idempotency_key": "sha256:5891e0838813a15ed5699fcfcee325ac3147e91d0a5fc63506e7a1c2ec8ca67f"
+    },
+    {
+      "chunk_id": "VC-0336",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "What was missing in that street was not technology and it was not money.",
+      "text_sha256": "sha256:b1b0554c65532385b1886add88b470675da3e776e99472d73b7f251ebea5497f",
+      "idempotency_key": "sha256:15156c59fb560ed251c08045ded1217ffaffa2073b002ce261a9d284b2141de0"
+    },
+    {
+      "chunk_id": "VC-0337",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It was a barrier, a direction, and somebody whose job it was to decide those two things before the evening started.",
+      "text_sha256": "sha256:f899a0cb6a25cf28d7793d13846f8c34860be2761bb50d58565929b5605afcb2",
+      "idempotency_key": "sha256:812a842e2d102e702703b47db85582bb80def3306e76ca54ef771b68a52a7ef3"
+    },
+    {
+      "chunk_id": "VC-0338",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "You go into crowds.",
+      "text_sha256": "sha256:25bbb36d72feb40a921fbb53d5601df7a2881016269b2eec4a36c153ec47d55b",
+      "idempotency_key": "sha256:551e11677f09b7695edf2429829b0b3530b407196d5f1903faccdd7007aba48a"
+    },
+    {
+      "chunk_id": "VC-0339",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Everybody does — a station at rush hour, a stadium emptying, a street at New Year.",
+      "text_sha256": "sha256:8dc68dc57acc38eef6da3eefd7037a9cdf017e00f2310f01074b40e985da5763",
+      "idempotency_key": "sha256:efeced257a05343d55479272af7f095f620acfd3d169bfdf9eb25cbc035aaed2"
+    },
+    {
+      "chunk_id": "VC-0340",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The next time you are in one and it stops feeling like a crowd and starts feeling like a current, the useful question is not whether somebody is watching.",
+      "text_sha256": "sha256:7f14d192205d27b433dd61c8ad00f4919806dcea4857eefed8125b59edf7e65d",
+      "idempotency_key": "sha256:237ca61003574cb22abeee2507b68dc8a8dc1380e897cf8ba3159224ebaf6b22"
+    },
+    {
+      "chunk_id": "VC-0341",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It is whether anybody has been given the job.",
+      "text_sha256": "sha256:b466be4e85462e7e8ab405ed30f7108a2f5054590f81376f5fe1b446b4d10843",
+      "idempotency_key": "sha256:db89462e00bdd8081a78ae98a1d3656855e48c0583777bc7a3c6fd526857c050"
+    },
+    {
+      "chunk_id": "VC-0342",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Somewhere there is a street you walk through without thinking.",
+      "text_sha256": "sha256:a35317cffa13edc3895d8dd56cbd14f2dbb14449446aa14c8b808066325dff53",
+      "idempotency_key": "sha256:fca97c2002e620083d70c73f865174df0f1b9d68e9f4bdae23a7227367605b4e"
+    },
+    {
+      "chunk_id": "VC-0343",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Ask who decided that it was safe.",
+      "text_sha256": "sha256:65331456cba6632744fe7e3bc94792d93a95000f3b7f9daf7f3171b53c3c48b4",
+      "idempotency_key": "sha256:06521be420d44933ff1cce1ef3dbe6a00533ceae15c9285ae84ef28083d6f79e"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+EP77_keybridge — 画像発注 バッチ 2/16（8枚）
+区分: ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame throwing a directional beam, atmospheric haze and river mist catching the light, deep shadow on one side only, restrained colour with a single dominant accent, high contrast, ultra high resolution, hyper-detailed, razor-sharp focus, photorealistic, volumetric light, shallow depth of field, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, legible text, readable text, captions, subtitles, handwriting, cursive, signature, numerals, numbers, digits, house numbers, readable documents, signage lettering, watermark, seal, seals, emblem, emblems, logo, logos, badge, insignia, human face, facial features, portrait, identifiable person, recognisable person, looking at the camera, bodies, corpse, injuries, blood, rescue operations, the moment of collision, the bridge collapsing, wreckage in water, children, gavel, handcuffs, prison bars, police uniform, patrol car, golden hour, drone shot, cartoon, oversaturated, flat evenly-dark image, muted grey wash, desaturated, low-resolution, distorted anatomy, extra fingers.
+
+──────── このバッチの8枚 ────────
+
+1) H009.png
+   [H009]  flags: 
+   Close on a hot-tar patching kit and hand tools laid on the deck under a portable lamp
+
+2) H010.png
+   [H010]  flags: 
+   A thermos and two paper cups on a concrete parapet, steam rising, harbour lights far behind
+
+3) H011.png
+   [H011]  flags: P
+   A gloved hand pressing fresh asphalt into a pothole with a hand tamper, lit by a low work lamp
+
+4) H012.png
+   [H012]  flags: 
+   A container terminal at night from the water, gantry cranes lit, stacks of containers in rows, no legible markings
+
+5) H013.png
+   [H013]  flags: 
+   The bow of a large container ship seen from the quay at night, floodlit, towering, no name visible
+
+6) H014.png
+   [H014]  flags: P
+   Mooring lines being let go from a bollard on a wet quay, an anonymous dockworker's hands only
+
+7) H015.png
+   [H015]  flags: 
+   A ship's engine room walkway between towering machinery, work lights in a receding line, nobody present
+
+8) H016.png
+   [H016]  flags: 
+   An engine control room console with rows of indicator lamps and switches, warm glow, no legible labels

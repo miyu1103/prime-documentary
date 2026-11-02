@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-076-morandi",
+  "gate": "check_final_acceptance.probe",
+  "status": "PASS",
+  "slice_path": "out\\morandi_preprobe.mp4",
+  "slice_seconds": 60.05,
+  "slice_sha256": "sha256:b794a1fae6c3afba18acfaea847d918a2a21d0dda811ae64441d988009538d9c",
+  "film_sha256": "sha256:d394242595ad230c1a65d643ee02ba80c32bf33d3a2ff717f84689d5e18ba854",
+  "results": {
+    "motion_energy": {
+      "ok": true,
+      "reason": "WITHIN-SHOT motion mean 47.4 / p10 45.6 / p50 46.6 (1230 frames, 382 cuts masked +/-8f; 4 body windows all >= 8; floors mean >= 12, p10 >= 9; MotionSample 46.6 vs slideshow 3.5)"
+    },
+    "images_present": {
+      "ok": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    "motion_present": {
+      "ok": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    }
+  },
+  "generated_at": "2026-08-26T03:17:14.371627+00:00"
+}

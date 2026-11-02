@@ -1,0 +1,73 @@
+EP68 pinto — 画像発注 予備バッチ 1/2（7枚）
+区分: B1 · headroom — ordered, NOT declared  [R105 – R111]
+
+★これは**予備**です。**生成してください。**本編の契約（mandatory_stills）には入って
+　いませんが、却下が出たときの差し替えと、ナレーションが伸びた場合の不足に備えます。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, the United States between 1968 and 1981, mixed tungsten and daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous period surfaces — painted steel, brushed aluminium, laminate, bakelite, manila card, newsprint, enamel — nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, readable words on a page, seals, emblems, logos, insignia, badge, name plates, wordmarks, manufacturer script, grille emblem, licence plate, registration plate, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, fire, flame, flames, smoke, burning, embers, soot, charred surfaces, a burning vehicle, a person on fire, burn injury, scarring, skin graft, bandages, hospital, ambulance, paramedic, blood, a crashed car, collision, wreckage, crumpled bodywork, shattered windscreen, police officer, uniform, patrol car, flashing lights, handcuffs, firearm, courtroom interior, gavel, judge's bench, jury box, witness stand, prison bars, scales of justice, hourglass, a handshake, children, modern smartphones, flat-screen monitors, LED headlights, modern cars, contemporary clothing, plastic modern fittings, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。**サムネイルでも [NEG] は変えません。**
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・**この話の中の誰か**として通る人物を描かない——Richard Grimshaw、Lilly Gray とその家族、
+　Ulrich 姉妹と従姉、バンの運転者、Ford の従業員、判事、検事、弁護人。全員不可
+・**火・炎・煙・火傷・負傷者・病院を一枚も描かない。**この映画に火は一度も出ない
+・**衝突・事故車・潰れた車体・割れたフロントガラスを描かない。**衝突は一度も映さない
+・読める文字・数字・手書き・署名を一切描かない。タイプ文字は「斜めから見た質感」までで、
+　一語も判読できてはいけない
+・車体のバッジ・オーバル・車名スクリプト・グリルのエンブレム・ネームプレート・
+　ナンバープレートを一切描かない。**実在の Pinto として通る車を作らない**
+・**1968〜1981年のアメリカ。**液晶モニタ・LEDヘッドライト・携帯電話・現代の車・現代の服・
+　現代の樹脂部品を一切入れない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+★上の絶対条件は本編バッチから一字も変えずに引き写したものです。そこに出てくる
+　プロンプト ID は本編のもので、このファイルには入っていません。
+
+──────── プロンプト ────────
+
+■ R105.png
+A workshop lift raised to chest height with an early-1970s American subcompact hatchback standing on it, photographed from the side at floor level from twelve feet away so the whole underbody runs across the middle of the frame as one long dark band, one work light on a stand throwing hard raking light along it from the left, bare stained concrete in the foreground and a dim shop wall behind. Nobody is in the frame. No vehicle anywhere in this frame carries a mark of any kind: no badge, no emblem, no oval on the grille, no wordmark, no nameplate, no model lettering and no plate of any kind on any part of it, front or rear. The car is undamaged and intact Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, shop signage, price sticker, crumpled bodywork, collision damage, fire, flame, smoke, scorch marks, person in frame
+
+■ R106.png
+A plain pressed-steel fuel tank shell removed from a car and standing alone on a heavy workbench on its flat forward face, photographed straight on from bench height under one work lamp, the pressed seam running across it and nothing else on its surface, the metal dull grey and lightly scuffed, a dark shop falling away behind it. The shell is empty, clean, dry and undamaged, and there is no liquid, no vapour, no flame and no scorching anywhere in the picture. No badge, no stamped mark, no label and no writing on it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fire, flame, smoke, fuel spill, liquid, vapour, scorch marks, rust holes, crumpled metal, stamped lettering, part number, manufacturer wordmark, label, sticker
+
+■ R107.png
+A wide three-lane American freeway photographed from the hard shoulder at dusk with a low wide lens, the pale concrete running away to a low ridge on the horizon and going cold blue-grey as the light leaves it, dry Southern Californian scrub along the shoulder, the lane markings just holding their brightness. There is no vehicle anywhere in the frame and nobody is on the road Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], vehicles, cars, traffic, headlights, tail lights, street lighting, road signs, gantry, billboard, golden hour, sunset glow, orange sky
+
+■ R108.png
+A 1970s wire-service teleprinter standing on a steel stand in the corner of a newspaper office, photographed three-quarter from the side at standing height, a continuous roll of pale paper feeding up out of the machine and falling in a loose fold to the floor, the printing on the paper reduced by distance and shallow focus to fine even grey banding with no character, word or line resolving anywhere on it. Flat overhead office light, nobody in the room Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible typing, readable words on a page, letterforms, printed paragraph, headline, masthead, letterhead, manufacturer wordmark on the machine, nameplate, person in frame
+
+■ R109.png
+A two-lane blacktop road running dead straight away from the camera between two walls of corn at full height in flat mid-August light, photographed from the middle of the road at standing height, the crown of the road slightly raised, telephone poles receding down the left verge, a wide pale sky above and no cloud shape in it. Northern Indiana farmland. There is no vehicle in the frame and nobody is on the road, and no sign, board or marker carries any writing Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], vehicles, cars, traffic, road signs with words, billboards, mailboxes with names, farm signage, golden hour, sunset glow, person in frame
+
+■ R110.png
+A tall corrugated-steel grain elevator standing over a set of rail sidings under flat overcast light in a small Midwestern farming town, photographed from across the tracks at standing height so the elevator fills the right of the frame and empty gravel and rail run away to the left, weeds between the sleepers, no lettering, no company name and no painted sign anywhere on the steel. Nobody is in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], painted lettering on the silo, company name, grain co-op sign, billboard, modern trucks, modern cars, person in frame
+
+■ R111.png
+A small Midwestern county courthouse square in flat grey light: a modest three-storey limestone courthouse standing across an empty street with a bare metal flagpole in front of it carrying no flag, a small open bandstand on the lawn, mature trees bare of leaves, photographed from the far pavement at standing height. There is no signage of any kind on the building or the lawn, no vehicle at the kerb and nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], courthouse signage, engraved lettering on the stone, plaques, notice boards, flags, vehicles at the kerb, modern cars, person in frame, courtroom interior
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（このファイルは R105.png 〜 R111.png）で
+保存してください。**他のバッチの ID を使わないこと。**
+保存先 H:\pd-media\assets\ai\pinto\
+長辺 3840px 以上・16:9・PNG。

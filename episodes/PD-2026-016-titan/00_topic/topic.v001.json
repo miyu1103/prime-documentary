@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "topic_id": "TOP-20260624-016",
+  "subject": "OceanGate's Titan submersible: how a culture that treated safety as optional dived, warned and warned again, to the bottom of the sea",
+  "angle": "hidden system",
+  "central_question": "Five intelligent people sealed themselves inside an uncertified, experimental submersible that engineers and an entire industry had warned would fail. Why did they believe it would be fine — and what does that belief say about us?",
+  "viewer_promise": "By the end, the viewer understands the full chain of warnings the Titan ignored, what the U.S. Coast Guard found, and why the disaster was officially judged preventable — a study of how the worship of the rule-breaking visionary can override warning after warning until physics forecloses the choice.",
+  "surprise": "The four-day search the entire world held its breath for was, investigators concluded, a search for people who had already died on the first day — and the deeper shock is that nearly everyone who mattered had been warned, in writing, for years.",
+  "stakes": "When does 'move fast and break things' stop being innovation and become the predictable killing of the people who trusted you? The question under every founder who calls safety a waste.",
+  "target_audience": "English-speaking US general audience interested in disasters, hubris, business, engineering, and how warnings get ignored",
+  "evergreen_horizon": "10y_plus",
+  "series_cluster": "modern-hubris",
+  "demand_evidence": [
+    "The Titan implosion was one of the most-followed news events of 2023; sustained, high-search, advertiser-safe interest with a clear moral arc.",
+    "Recent, self-relevant ('why did smart people believe him?'), strong flagship; the 2025 Coast Guard report ('preventable') gives an authoritative, documentary-grade spine."
+  ],
+  "competition": [
+    "Heavily covered as breaking news; few retellings unify the full warning chain (Lochridge + MTS + ignored hull anomalies) with the official 'preventable' finding into one feature-length tragedy centered on belief, not schadenfreude."
+  ],
+  "differentiation": "First PD FEATURE (60 min). Treats a thriller premise as a Greek tragedy: the ending is known, so suspense becomes 'why was it not stopped?' Implicates the audience's own worship of the visionary founder. Strict record-based, dignity-first.",
+  "research_feasibility": "High: U.S. Coast Guard MBI report (2025), hearing exhibits (incl. the 2018 MTS letter), 2018 court filings (Lochridge), and major-outlet reporting are extensive and authoritative.",
+  "visual_feasibility": "High via symbolic AI imagery + factory ocean/abyss b-roll + code graphics: a sealed hatch, a tiny sub in the abyss, ink-in-water, a game controller, a Rubik's Cube, sonar screens, the Titanic wreck (symbolic), empty chairs. No real-person likeness (invariant 11).",
+  "scores": {
+    "demand": 19,
+    "clickability": 15,
+    "retention": 15,
+    "evergreen": 8,
+    "differentiation": 9,
+    "visual": 8,
+    "sources": 8,
+    "series": 4,
+    "monetization": 4,
+    "efficiency": 1,
+    "risk_deduction": -4,
+    "total": 87
+  },
+  "risk_class": "R2",
+  "risk_notes": [
+    "R2 — recent disaster with named, deceased victims and living relatives. Pre-publish fact re-check REQUIRED (current event; verify USCG report wording, the MTS exhibit URL, and the exact source/wording of the Rush quote).",
+    "Dignity is the safeguard: the moral center is Suleman (19). No schadenfreude, no 'they deserved it.' No graphic depiction of the implosion or remains; the implosion was near-instantaneous (no suffering implied).",
+    "Living relatives (e.g., Christine Dawood) and the whistleblower (David Lochridge) represented ONLY via documented public statements; no invented dialogue. Attribute the boy's reported anxiety as 'reportedly.'",
+    "Attribute CAUSE to the U.S. Coast Guard Board, not as the narrator's independent assertion. Stockton Rush is deceased (not subject to defamation) but is not reduced to a cartoon villain — show the logic of his belief to implicate the audience.",
+    "No real-person likeness or deepfake of any of the five, or of Rush (invariant 11). All AI visuals symbolic and disclosed; brand markings (OceanGate/Logitech/Titanic operators) kept non-specific.",
+    "FEATURE format (60 min) requires the new 'feature' duration profile in the validator; do NOT silently weaken validation (invariant 15) — add an explicit profile + ADR."
+  ],
+  "estimated_cost_band": "medium",
+  "recommendation": "priority",
+  "kill_conditions": [
+    "Cannot sustain strict record-based neutrality and dignity; or the feature-length script cannot keep retention without sensationalizing the deaths; or core facts cannot be re-verified to USCG/court records plus independent reporting at publish time."
+  ],
+  "status": "candidate"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-020-gardner",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 4503,
+    "est_duration_minutes_at_150wpm": 30.0,
+    "est_duration_minutes_at_173wpm_actual_voice": 26.0,
+    "target_profile": "mid (30:00; narration band 24.0-32.4 @150wpm)",
+    "claim_link_consistency": "pass",
+    "risk_class": "R2"
+  },
+  "status": "pass",
+  "findings": [
+    "R2 wording locks: never name/imply guilt of any living person; FBI never publicly named the thieves; believed thieves named by journalists not FBI; '$500M' is an estimate; 'largest' attributed; unsolved.",
+    "Durable source hashes PENDING (FBI/DOJ/museum bot-protected); non-blocking, capture before publish.",
+    "Before broadcast: confirm living/deceased status of any named person of interest; lock verbatim FBI/DOJ quotes."
+  ]
+}

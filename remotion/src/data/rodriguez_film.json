@@ -1,0 +1,3256 @@
+{
+  "episode_id": "PD-2026-027-rodriguez",
+  "fps": 30,
+  "narration": "rodriguez/narration.mp3",
+  "narrationSeconds": 626.836,
+  "hookSeconds": 8.04,
+  "hookLine": "The ticket was written. Then they made him wait for a dog.",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S001-stop-on-dark-highway.png",
+      "seed": "hook-0.0"
+    },
+    {
+      "start": 1.34,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S002-stopwatch-macro.png",
+      "seed": "hook-1.34"
+    },
+    {
+      "start": 2.68,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S003-headlights-two-lane.png",
+      "seed": "hook-2.68"
+    },
+    {
+      "start": 4.02,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S004-hands-on-wheel.png",
+      "seed": "hook-4.0200000000000005"
+    },
+    {
+      "start": 5.36,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S005-warning-slip-handed.png",
+      "seed": "hook-5.36"
+    },
+    {
+      "start": 6.7,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S006-patrol-car-behind.png",
+      "seed": "hook-6.7"
+    }
+  ],
+  "cuts": [
+    {
+      "start": 0.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S001-stop-on-dark-highway.png",
+      "seed": "rodriguez-0",
+      "treatment": "bleed"
+    },
+    {
+      "start": 3.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0365__blurred_city_night_bokeh.mp4",
+      "seed": "rodriguez-1",
+      "treatment": "footage"
+    },
+    {
+      "start": 6.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S002-stopwatch-macro.png",
+      "seed": "rodriguez-2",
+      "treatment": "scan"
+    },
+    {
+      "start": 9.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0366__blurred_city_night_bokeh.mp4",
+      "seed": "rodriguez-3",
+      "treatment": "footage"
+    },
+    {
+      "start": 13.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0510__courtroom_interior.mp4",
+      "seed": "rodriguez-4",
+      "treatment": "footage"
+    },
+    {
+      "start": 17.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S003-headlights-two-lane.png",
+      "seed": "rodriguez-5",
+      "treatment": "duotone"
+    },
+    {
+      "start": 20.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0511__courtroom_interior.mp4",
+      "seed": "rodriguez-6",
+      "treatment": "footage"
+    },
+    {
+      "start": 23.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S004-hands-on-wheel.png",
+      "seed": "rodriguez-7",
+      "treatment": "focus"
+    },
+    {
+      "start": 26.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10218__stacked_legal_documents.mp4",
+      "seed": "rodriguez-8",
+      "treatment": "footage"
+    },
+    {
+      "start": 29.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10219__stacked_legal_documents.mp4",
+      "seed": "rodriguez-9",
+      "treatment": "footage"
+    },
+    {
+      "start": 33.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S005-warning-slip-handed.png",
+      "seed": "rodriguez-10",
+      "treatment": "bleed"
+    },
+    {
+      "start": 37.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10586__rain_on_glass_macro.mp4",
+      "seed": "rodriguez-11",
+      "treatment": "footage"
+    },
+    {
+      "start": 40.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S006-patrol-car-behind.png",
+      "seed": "rodriguez-12",
+      "treatment": "duotone"
+    },
+    {
+      "start": 43.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10587__rain_on_glass_macro.mp4",
+      "seed": "rodriguez-13",
+      "treatment": "footage"
+    },
+    {
+      "start": 46.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10712__snowy_street_night.mp4",
+      "seed": "rodriguez-14",
+      "treatment": "footage"
+    },
+    {
+      "start": 49.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S007-the-waiting.png",
+      "seed": "rodriguez-15",
+      "treatment": "card"
+    },
+    {
+      "start": 53.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10713__snowy_street_night.mp4",
+      "seed": "rodriguez-16",
+      "treatment": "footage"
+    },
+    {
+      "start": 57.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S008-k9-silhouette.png",
+      "seed": "rodriguez-17",
+      "treatment": "scan"
+    },
+    {
+      "start": 60.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-11241__subway_tunnel_empty.mp4",
+      "seed": "rodriguez-18",
+      "treatment": "footage"
+    },
+    {
+      "start": 63.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-11242__subway_tunnel_empty.mp4",
+      "seed": "rodriguez-19",
+      "treatment": "footage"
+    },
+    {
+      "start": 66.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S009-dog-circling-car.png",
+      "seed": "rodriguez-20",
+      "treatment": "focus"
+    },
+    {
+      "start": 69.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-14765__police_station_at_night.mp4",
+      "seed": "rodriguez-21",
+      "treatment": "footage"
+    },
+    {
+      "start": 73.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S010-line-crossed-in-time.png",
+      "seed": "rodriguez-22",
+      "treatment": "bleed"
+    },
+    {
+      "start": 77.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-14766__police_station_at_night.mp4",
+      "seed": "rodriguez-23",
+      "treatment": "footage"
+    },
+    {
+      "start": 80.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-1587__highway_night_long_exposure.mp4",
+      "seed": "rodriguez-24",
+      "treatment": "footage"
+    },
+    {
+      "start": 83.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S011-courthouse-colonnade.png",
+      "seed": "rodriguez-25",
+      "treatment": "duotone"
+    },
+    {
+      "start": 86.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-1588__highway_night_long_exposure.mp4",
+      "seed": "rodriguez-26",
+      "treatment": "footage"
+    },
+    {
+      "start": 89.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S012-six-three-division.png",
+      "seed": "rodriguez-27",
+      "treatment": "scan"
+    },
+    {
+      "start": 93.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17799__empty_road_sunset.mp4",
+      "seed": "rodriguez-28",
+      "treatment": "footage"
+    },
+    {
+      "start": 97.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17800__empty_road_sunset.mp4",
+      "seed": "rodriguez-29",
+      "treatment": "footage"
+    },
+    {
+      "start": 100.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S013-mission-of-the-stop.png",
+      "seed": "rodriguez-30",
+      "treatment": "bleed"
+    },
+    {
+      "start": 103.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17928__courthouse_steps.mp4",
+      "seed": "rodriguez-31",
+      "treatment": "footage"
+    },
+    {
+      "start": 106.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S014-modern-everyday-stop.png",
+      "seed": "rodriguez-32",
+      "treatment": "scan"
+    },
+    {
+      "start": 109.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17929__courthouse_steps.mp4",
+      "seed": "rodriguez-33",
+      "treatment": "footage"
+    },
+    {
+      "start": 113.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17958__judge_gavel_wooden.mp4",
+      "seed": "rodriguez-34",
+      "treatment": "footage"
+    },
+    {
+      "start": 117.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S015-open-road-rights.png",
+      "seed": "rodriguez-35",
+      "treatment": "duotone"
+    },
+    {
+      "start": 120.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17959__judge_gavel_wooden.mp4",
+      "seed": "rodriguez-36",
+      "treatment": "footage"
+    },
+    {
+      "start": 123.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S016-wet-asphalt-lights.png",
+      "seed": "rodriguez-37",
+      "treatment": "focus"
+    },
+    {
+      "start": 126.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18359__city_traffic_night_long_exposure.mp4",
+      "seed": "rodriguez-38",
+      "treatment": "footage"
+    },
+    {
+      "start": 129.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18360__city_traffic_night_long_exposure.mp4",
+      "seed": "rodriguez-39",
+      "treatment": "footage"
+    },
+    {
+      "start": 133.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S017-clock-on-dash.png",
+      "seed": "rodriguez-40",
+      "treatment": "bleed"
+    },
+    {
+      "start": 137.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18764__rural_road_america.mp4",
+      "seed": "rodriguez-41",
+      "treatment": "footage"
+    },
+    {
+      "start": 140.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S018-leash-and-hand.png",
+      "seed": "rodriguez-42",
+      "treatment": "duotone"
+    },
+    {
+      "start": 143.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18765__rural_road_america.mp4",
+      "seed": "rodriguez-43",
+      "treatment": "footage"
+    },
+    {
+      "start": 146.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18973__clock_ticking_macro.mp4",
+      "seed": "rodriguez-44",
+      "treatment": "footage"
+    },
+    {
+      "start": 149.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S019-side-mirror-lights.png",
+      "seed": "rodriguez-45",
+      "treatment": "card"
+    },
+    {
+      "start": 153.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18974__clock_ticking_macro.mp4",
+      "seed": "rodriguez-46",
+      "treatment": "footage"
+    },
+    {
+      "start": 157.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S020-empty-shoulder-cones.png",
+      "seed": "rodriguez-47",
+      "treatment": "scan"
+    },
+    {
+      "start": 160.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-50633__military_dog_tags.mp4",
+      "seed": "rodriguez-48",
+      "treatment": "footage"
+    },
+    {
+      "start": 163.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-50634__military_dog_tags.mp4",
+      "seed": "rodriguez-49",
+      "treatment": "footage"
+    },
+    {
+      "start": 166.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S021-courtroom-interior.png",
+      "seed": "rodriguez-50",
+      "treatment": "focus"
+    },
+    {
+      "start": 169.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-53644__pocket_watch_macro.mp4",
+      "seed": "rodriguez-51",
+      "treatment": "footage"
+    },
+    {
+      "start": 173.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S022-hourglass-seizure.png",
+      "seed": "rodriguez-52",
+      "treatment": "bleed"
+    },
+    {
+      "start": 177.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-53645__pocket_watch_macro.mp4",
+      "seed": "rodriguez-53",
+      "treatment": "footage"
+    },
+    {
+      "start": 180.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54020__motel_neon_sign_night.mp4",
+      "seed": "rodriguez-54",
+      "treatment": "footage"
+    },
+    {
+      "start": 183.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S023-scales-time-vs-power.png",
+      "seed": "rodriguez-55",
+      "treatment": "duotone"
+    },
+    {
+      "start": 186.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54021__motel_neon_sign_night.mp4",
+      "seed": "rodriguez-56",
+      "treatment": "footage"
+    },
+    {
+      "start": 189.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S024-dashcam-frame-symbolic.png",
+      "seed": "rodriguez-57",
+      "treatment": "scan"
+    },
+    {
+      "start": 193.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54170__gas_station_at_night.mp4",
+      "seed": "rodriguez-58",
+      "treatment": "footage"
+    },
+    {
+      "start": 197.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54171__gas_station_at_night.mp4",
+      "seed": "rodriguez-59",
+      "treatment": "footage"
+    },
+    {
+      "start": 200.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S025-taillights-recede.png",
+      "seed": "rodriguez-60",
+      "treatment": "bleed"
+    },
+    {
+      "start": 203.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0365__blurred_city_night_bokeh.mp4",
+      "seed": "rodriguez-61",
+      "treatment": "footage"
+    },
+    {
+      "start": 206.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S026-first-light-horizon.png",
+      "seed": "rodriguez-62",
+      "treatment": "scan"
+    },
+    {
+      "start": 209.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0366__blurred_city_night_bokeh.mp4",
+      "seed": "rodriguez-63",
+      "treatment": "footage"
+    },
+    {
+      "start": 213.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0510__courtroom_interior.mp4",
+      "seed": "rodriguez-64",
+      "treatment": "footage"
+    },
+    {
+      "start": 217.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S001-stop-on-dark-highway.png",
+      "seed": "rodriguez-65",
+      "treatment": "duotone"
+    },
+    {
+      "start": 220.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0511__courtroom_interior.mp4",
+      "seed": "rodriguez-66",
+      "treatment": "footage"
+    },
+    {
+      "start": 223.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S002-stopwatch-macro.png",
+      "seed": "rodriguez-67",
+      "treatment": "focus"
+    },
+    {
+      "start": 226.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10218__stacked_legal_documents.mp4",
+      "seed": "rodriguez-68",
+      "treatment": "footage"
+    },
+    {
+      "start": 229.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10219__stacked_legal_documents.mp4",
+      "seed": "rodriguez-69",
+      "treatment": "footage"
+    },
+    {
+      "start": 233.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S003-headlights-two-lane.png",
+      "seed": "rodriguez-70",
+      "treatment": "bleed"
+    },
+    {
+      "start": 237.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10586__rain_on_glass_macro.mp4",
+      "seed": "rodriguez-71",
+      "treatment": "footage"
+    },
+    {
+      "start": 240.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S004-hands-on-wheel.png",
+      "seed": "rodriguez-72",
+      "treatment": "duotone"
+    },
+    {
+      "start": 243.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10587__rain_on_glass_macro.mp4",
+      "seed": "rodriguez-73",
+      "treatment": "footage"
+    },
+    {
+      "start": 246.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10712__snowy_street_night.mp4",
+      "seed": "rodriguez-74",
+      "treatment": "footage"
+    },
+    {
+      "start": 249.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S005-warning-slip-handed.png",
+      "seed": "rodriguez-75",
+      "treatment": "card"
+    },
+    {
+      "start": 253.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10713__snowy_street_night.mp4",
+      "seed": "rodriguez-76",
+      "treatment": "footage"
+    },
+    {
+      "start": 257.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S006-patrol-car-behind.png",
+      "seed": "rodriguez-77",
+      "treatment": "scan"
+    },
+    {
+      "start": 260.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-11241__subway_tunnel_empty.mp4",
+      "seed": "rodriguez-78",
+      "treatment": "footage"
+    },
+    {
+      "start": 263.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-11242__subway_tunnel_empty.mp4",
+      "seed": "rodriguez-79",
+      "treatment": "footage"
+    },
+    {
+      "start": 266.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S007-the-waiting.png",
+      "seed": "rodriguez-80",
+      "treatment": "focus"
+    },
+    {
+      "start": 269.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-14765__police_station_at_night.mp4",
+      "seed": "rodriguez-81",
+      "treatment": "footage"
+    },
+    {
+      "start": 273.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S008-k9-silhouette.png",
+      "seed": "rodriguez-82",
+      "treatment": "bleed"
+    },
+    {
+      "start": 277.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-14766__police_station_at_night.mp4",
+      "seed": "rodriguez-83",
+      "treatment": "footage"
+    },
+    {
+      "start": 280.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-1587__highway_night_long_exposure.mp4",
+      "seed": "rodriguez-84",
+      "treatment": "footage"
+    },
+    {
+      "start": 283.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S009-dog-circling-car.png",
+      "seed": "rodriguez-85",
+      "treatment": "duotone"
+    },
+    {
+      "start": 286.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-1588__highway_night_long_exposure.mp4",
+      "seed": "rodriguez-86",
+      "treatment": "footage"
+    },
+    {
+      "start": 289.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S010-line-crossed-in-time.png",
+      "seed": "rodriguez-87",
+      "treatment": "scan"
+    },
+    {
+      "start": 293.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17799__empty_road_sunset.mp4",
+      "seed": "rodriguez-88",
+      "treatment": "footage"
+    },
+    {
+      "start": 297.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17800__empty_road_sunset.mp4",
+      "seed": "rodriguez-89",
+      "treatment": "footage"
+    },
+    {
+      "start": 300.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S011-courthouse-colonnade.png",
+      "seed": "rodriguez-90",
+      "treatment": "bleed"
+    },
+    {
+      "start": 303.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17928__courthouse_steps.mp4",
+      "seed": "rodriguez-91",
+      "treatment": "footage"
+    },
+    {
+      "start": 306.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S012-six-three-division.png",
+      "seed": "rodriguez-92",
+      "treatment": "scan"
+    },
+    {
+      "start": 309.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17929__courthouse_steps.mp4",
+      "seed": "rodriguez-93",
+      "treatment": "footage"
+    },
+    {
+      "start": 313.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17958__judge_gavel_wooden.mp4",
+      "seed": "rodriguez-94",
+      "treatment": "footage"
+    },
+    {
+      "start": 317.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S013-mission-of-the-stop.png",
+      "seed": "rodriguez-95",
+      "treatment": "duotone"
+    },
+    {
+      "start": 320.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17959__judge_gavel_wooden.mp4",
+      "seed": "rodriguez-96",
+      "treatment": "footage"
+    },
+    {
+      "start": 323.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S014-modern-everyday-stop.png",
+      "seed": "rodriguez-97",
+      "treatment": "focus"
+    },
+    {
+      "start": 326.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18359__city_traffic_night_long_exposure.mp4",
+      "seed": "rodriguez-98",
+      "treatment": "footage"
+    },
+    {
+      "start": 329.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18360__city_traffic_night_long_exposure.mp4",
+      "seed": "rodriguez-99",
+      "treatment": "footage"
+    },
+    {
+      "start": 333.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S015-open-road-rights.png",
+      "seed": "rodriguez-100",
+      "treatment": "bleed"
+    },
+    {
+      "start": 337.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18764__rural_road_america.mp4",
+      "seed": "rodriguez-101",
+      "treatment": "footage"
+    },
+    {
+      "start": 340.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S016-wet-asphalt-lights.png",
+      "seed": "rodriguez-102",
+      "treatment": "duotone"
+    },
+    {
+      "start": 343.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18765__rural_road_america.mp4",
+      "seed": "rodriguez-103",
+      "treatment": "footage"
+    },
+    {
+      "start": 346.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18973__clock_ticking_macro.mp4",
+      "seed": "rodriguez-104",
+      "treatment": "footage"
+    },
+    {
+      "start": 349.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S017-clock-on-dash.png",
+      "seed": "rodriguez-105",
+      "treatment": "card"
+    },
+    {
+      "start": 353.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18974__clock_ticking_macro.mp4",
+      "seed": "rodriguez-106",
+      "treatment": "footage"
+    },
+    {
+      "start": 357.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S018-leash-and-hand.png",
+      "seed": "rodriguez-107",
+      "treatment": "scan"
+    },
+    {
+      "start": 360.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-50633__military_dog_tags.mp4",
+      "seed": "rodriguez-108",
+      "treatment": "footage"
+    },
+    {
+      "start": 363.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-50634__military_dog_tags.mp4",
+      "seed": "rodriguez-109",
+      "treatment": "footage"
+    },
+    {
+      "start": 366.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S019-side-mirror-lights.png",
+      "seed": "rodriguez-110",
+      "treatment": "focus"
+    },
+    {
+      "start": 369.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-53644__pocket_watch_macro.mp4",
+      "seed": "rodriguez-111",
+      "treatment": "footage"
+    },
+    {
+      "start": 373.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S020-empty-shoulder-cones.png",
+      "seed": "rodriguez-112",
+      "treatment": "bleed"
+    },
+    {
+      "start": 377.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-53645__pocket_watch_macro.mp4",
+      "seed": "rodriguez-113",
+      "treatment": "footage"
+    },
+    {
+      "start": 380.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54020__motel_neon_sign_night.mp4",
+      "seed": "rodriguez-114",
+      "treatment": "footage"
+    },
+    {
+      "start": 383.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S021-courtroom-interior.png",
+      "seed": "rodriguez-115",
+      "treatment": "duotone"
+    },
+    {
+      "start": 386.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54021__motel_neon_sign_night.mp4",
+      "seed": "rodriguez-116",
+      "treatment": "footage"
+    },
+    {
+      "start": 389.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S022-hourglass-seizure.png",
+      "seed": "rodriguez-117",
+      "treatment": "scan"
+    },
+    {
+      "start": 393.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54170__gas_station_at_night.mp4",
+      "seed": "rodriguez-118",
+      "treatment": "footage"
+    },
+    {
+      "start": 397.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54171__gas_station_at_night.mp4",
+      "seed": "rodriguez-119",
+      "treatment": "footage"
+    },
+    {
+      "start": 400.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S023-scales-time-vs-power.png",
+      "seed": "rodriguez-120",
+      "treatment": "bleed"
+    },
+    {
+      "start": 403.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0365__blurred_city_night_bokeh.mp4",
+      "seed": "rodriguez-121",
+      "treatment": "footage"
+    },
+    {
+      "start": 406.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S024-dashcam-frame-symbolic.png",
+      "seed": "rodriguez-122",
+      "treatment": "scan"
+    },
+    {
+      "start": 409.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0366__blurred_city_night_bokeh.mp4",
+      "seed": "rodriguez-123",
+      "treatment": "footage"
+    },
+    {
+      "start": 413.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0510__courtroom_interior.mp4",
+      "seed": "rodriguez-124",
+      "treatment": "footage"
+    },
+    {
+      "start": 417.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S025-taillights-recede.png",
+      "seed": "rodriguez-125",
+      "treatment": "duotone"
+    },
+    {
+      "start": 420.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0511__courtroom_interior.mp4",
+      "seed": "rodriguez-126",
+      "treatment": "footage"
+    },
+    {
+      "start": 423.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S026-first-light-horizon.png",
+      "seed": "rodriguez-127",
+      "treatment": "focus"
+    },
+    {
+      "start": 426.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10218__stacked_legal_documents.mp4",
+      "seed": "rodriguez-128",
+      "treatment": "footage"
+    },
+    {
+      "start": 429.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10219__stacked_legal_documents.mp4",
+      "seed": "rodriguez-129",
+      "treatment": "footage"
+    },
+    {
+      "start": 433.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S001-stop-on-dark-highway.png",
+      "seed": "rodriguez-130",
+      "treatment": "bleed"
+    },
+    {
+      "start": 437.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10586__rain_on_glass_macro.mp4",
+      "seed": "rodriguez-131",
+      "treatment": "footage"
+    },
+    {
+      "start": 440.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S002-stopwatch-macro.png",
+      "seed": "rodriguez-132",
+      "treatment": "duotone"
+    },
+    {
+      "start": 443.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10587__rain_on_glass_macro.mp4",
+      "seed": "rodriguez-133",
+      "treatment": "footage"
+    },
+    {
+      "start": 446.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10712__snowy_street_night.mp4",
+      "seed": "rodriguez-134",
+      "treatment": "footage"
+    },
+    {
+      "start": 449.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S003-headlights-two-lane.png",
+      "seed": "rodriguez-135",
+      "treatment": "card"
+    },
+    {
+      "start": 453.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-10713__snowy_street_night.mp4",
+      "seed": "rodriguez-136",
+      "treatment": "footage"
+    },
+    {
+      "start": 457.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S004-hands-on-wheel.png",
+      "seed": "rodriguez-137",
+      "treatment": "scan"
+    },
+    {
+      "start": 460.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-11241__subway_tunnel_empty.mp4",
+      "seed": "rodriguez-138",
+      "treatment": "footage"
+    },
+    {
+      "start": 463.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-11242__subway_tunnel_empty.mp4",
+      "seed": "rodriguez-139",
+      "treatment": "footage"
+    },
+    {
+      "start": 466.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S005-warning-slip-handed.png",
+      "seed": "rodriguez-140",
+      "treatment": "focus"
+    },
+    {
+      "start": 469.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-14765__police_station_at_night.mp4",
+      "seed": "rodriguez-141",
+      "treatment": "footage"
+    },
+    {
+      "start": 473.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S006-patrol-car-behind.png",
+      "seed": "rodriguez-142",
+      "treatment": "bleed"
+    },
+    {
+      "start": 477.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-14766__police_station_at_night.mp4",
+      "seed": "rodriguez-143",
+      "treatment": "footage"
+    },
+    {
+      "start": 480.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-1587__highway_night_long_exposure.mp4",
+      "seed": "rodriguez-144",
+      "treatment": "footage"
+    },
+    {
+      "start": 483.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S007-the-waiting.png",
+      "seed": "rodriguez-145",
+      "treatment": "duotone"
+    },
+    {
+      "start": 486.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-1588__highway_night_long_exposure.mp4",
+      "seed": "rodriguez-146",
+      "treatment": "footage"
+    },
+    {
+      "start": 489.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S008-k9-silhouette.png",
+      "seed": "rodriguez-147",
+      "treatment": "scan"
+    },
+    {
+      "start": 493.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17799__empty_road_sunset.mp4",
+      "seed": "rodriguez-148",
+      "treatment": "footage"
+    },
+    {
+      "start": 497.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17800__empty_road_sunset.mp4",
+      "seed": "rodriguez-149",
+      "treatment": "footage"
+    },
+    {
+      "start": 500.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S009-dog-circling-car.png",
+      "seed": "rodriguez-150",
+      "treatment": "bleed"
+    },
+    {
+      "start": 503.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17928__courthouse_steps.mp4",
+      "seed": "rodriguez-151",
+      "treatment": "footage"
+    },
+    {
+      "start": 506.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S010-line-crossed-in-time.png",
+      "seed": "rodriguez-152",
+      "treatment": "scan"
+    },
+    {
+      "start": 509.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17929__courthouse_steps.mp4",
+      "seed": "rodriguez-153",
+      "treatment": "footage"
+    },
+    {
+      "start": 513.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17958__judge_gavel_wooden.mp4",
+      "seed": "rodriguez-154",
+      "treatment": "footage"
+    },
+    {
+      "start": 517.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S011-courthouse-colonnade.png",
+      "seed": "rodriguez-155",
+      "treatment": "duotone"
+    },
+    {
+      "start": 520.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-17959__judge_gavel_wooden.mp4",
+      "seed": "rodriguez-156",
+      "treatment": "footage"
+    },
+    {
+      "start": 523.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S012-six-three-division.png",
+      "seed": "rodriguez-157",
+      "treatment": "focus"
+    },
+    {
+      "start": 526.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18359__city_traffic_night_long_exposure.mp4",
+      "seed": "rodriguez-158",
+      "treatment": "footage"
+    },
+    {
+      "start": 529.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18360__city_traffic_night_long_exposure.mp4",
+      "seed": "rodriguez-159",
+      "treatment": "footage"
+    },
+    {
+      "start": 533.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S013-mission-of-the-stop.png",
+      "seed": "rodriguez-160",
+      "treatment": "bleed"
+    },
+    {
+      "start": 537.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18764__rural_road_america.mp4",
+      "seed": "rodriguez-161",
+      "treatment": "footage"
+    },
+    {
+      "start": 540.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S014-modern-everyday-stop.png",
+      "seed": "rodriguez-162",
+      "treatment": "duotone"
+    },
+    {
+      "start": 543.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18765__rural_road_america.mp4",
+      "seed": "rodriguez-163",
+      "treatment": "footage"
+    },
+    {
+      "start": 546.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18973__clock_ticking_macro.mp4",
+      "seed": "rodriguez-164",
+      "treatment": "footage"
+    },
+    {
+      "start": 549.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S015-open-road-rights.png",
+      "seed": "rodriguez-165",
+      "treatment": "card"
+    },
+    {
+      "start": 553.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-18974__clock_ticking_macro.mp4",
+      "seed": "rodriguez-166",
+      "treatment": "footage"
+    },
+    {
+      "start": 557.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S016-wet-asphalt-lights.png",
+      "seed": "rodriguez-167",
+      "treatment": "scan"
+    },
+    {
+      "start": 560.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-50633__military_dog_tags.mp4",
+      "seed": "rodriguez-168",
+      "treatment": "footage"
+    },
+    {
+      "start": 563.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-50634__military_dog_tags.mp4",
+      "seed": "rodriguez-169",
+      "treatment": "footage"
+    },
+    {
+      "start": 566.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S017-clock-on-dash.png",
+      "seed": "rodriguez-170",
+      "treatment": "focus"
+    },
+    {
+      "start": 569.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-53644__pocket_watch_macro.mp4",
+      "seed": "rodriguez-171",
+      "treatment": "footage"
+    },
+    {
+      "start": 573.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S018-leash-and-hand.png",
+      "seed": "rodriguez-172",
+      "treatment": "bleed"
+    },
+    {
+      "start": 577.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-53645__pocket_watch_macro.mp4",
+      "seed": "rodriguez-173",
+      "treatment": "footage"
+    },
+    {
+      "start": 580.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54020__motel_neon_sign_night.mp4",
+      "seed": "rodriguez-174",
+      "treatment": "footage"
+    },
+    {
+      "start": 583.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S019-side-mirror-lights.png",
+      "seed": "rodriguez-175",
+      "treatment": "duotone"
+    },
+    {
+      "start": 586.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54021__motel_neon_sign_night.mp4",
+      "seed": "rodriguez-176",
+      "treatment": "footage"
+    },
+    {
+      "start": 589.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S020-empty-shoulder-cones.png",
+      "seed": "rodriguez-177",
+      "treatment": "scan"
+    },
+    {
+      "start": 593.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54170__gas_station_at_night.mp4",
+      "seed": "rodriguez-178",
+      "treatment": "footage"
+    },
+    {
+      "start": 597.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-54171__gas_station_at_night.mp4",
+      "seed": "rodriguez-179",
+      "treatment": "footage"
+    },
+    {
+      "start": 600.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S021-courtroom-interior.png",
+      "seed": "rodriguez-180",
+      "treatment": "bleed"
+    },
+    {
+      "start": 603.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0365__blurred_city_night_bokeh.mp4",
+      "seed": "rodriguez-181",
+      "treatment": "footage"
+    },
+    {
+      "start": 606.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S022-hourglass-seizure.png",
+      "seed": "rodriguez-182",
+      "treatment": "scan"
+    },
+    {
+      "start": 609.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0366__blurred_city_night_bokeh.mp4",
+      "seed": "rodriguez-183",
+      "treatment": "footage"
+    },
+    {
+      "start": 613.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0510__courtroom_interior.mp4",
+      "seed": "rodriguez-184",
+      "treatment": "footage"
+    },
+    {
+      "start": 617.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S023-scales-time-vs-power.png",
+      "seed": "rodriguez-185",
+      "treatment": "duotone"
+    },
+    {
+      "start": 620.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "rodriguez/factory/AF-BG-0511__courtroom_interior.mp4",
+      "seed": "rodriguez-186",
+      "treatment": "footage"
+    },
+    {
+      "start": 623.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "rodriguez/img/COD-S024-dashcam-frame-symbolic.png",
+      "seed": "rodriguez-187",
+      "treatment": "focus"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 1.48,
+      "text": "How long can the police keep"
+    },
+    {
+      "start": 1.48,
+      "end": 2.954,
+      "text": "you at the side of the road?"
+    },
+    {
+      "start": 3.44,
+      "end": 6.705,
+      "text": "Not why they can stop you —"
+    },
+    {
+      "start": 6.706,
+      "end": 10.081,
+      "text": "how long they can hold you once they have. Just after midnight on a dark Nebraska"
+    },
+    {
+      "start": 9.98,
+      "end": 12.4,
+      "text": "highway, a driver drifts onto the shoulder"
+    },
+    {
+      "start": 12.4,
+      "end": 14.46,
+      "text": "for a second, and a patrol car"
+    },
+    {
+      "start": 14.46,
+      "end": 18.201,
+      "text": "lights up behind him."
+    },
+    {
+      "start": 18.202,
+      "end": 21.911,
+      "text": "The officer checks his papers, writes a warning, hands everything back. The stop is over;"
+    },
+    {
+      "start": 21.64,
+      "end": 24.771,
+      "text": "its business is done."
+    },
+    {
+      "start": 24.772,
+      "end": 28.7,
+      "text": "And then nothing moves. No one tells the driver he is free to go. He waits."
+    },
+    {
+      "start": 29.04,
+      "end": 30.02,
+      "text": "Seven minutes."
+    },
+    {
+      "start": 31.22,
+      "end": 32.12,
+      "text": "Eight."
+    },
+    {
+      "start": 32.32,
+      "end": 33.72,
+      "text": "A second cruiser rolls up,"
+    },
+    {
+      "start": 34.24,
+      "end": 35.82,
+      "text": "a dog begins to circle the car"
+    },
+    {
+      "start": 35.821,
+      "end": 36.35,
+      "text": "—"
+    },
+    {
+      "start": 36.38,
+      "end": 37.54,
+      "text": "and the whole night turns"
+    },
+    {
+      "start": 37.54,
+      "end": 39.38,
+      "text": "on a question the Supreme Court would"
+    },
+    {
+      "start": 39.38,
+      "end": 40.748,
+      "text": "take up three years later:"
+    },
+    {
+      "start": 41.22,
+      "end": 42.852,
+      "text": "not whether the stop was legal,"
+    },
+    {
+      "start": 43.18,
+      "end": 45.136,
+      "text": "but whether it lasted too long."
+    },
+    {
+      "start": 45.38,
+      "end": 46.84,
+      "text": "We spend a lot of energy arguing"
+    },
+    {
+      "start": 46.84,
+      "end": 48.92,
+      "text": "about when the police can pull you over."
+    },
+    {
+      "start": 48.98,
+      "end": 50.82,
+      "text": "This case is about something quieter,"
+    },
+    {
+      "start": 50.82,
+      "end": 53.757,
+      "text": "and more personal —"
+    },
+    {
+      "start": 53.758,
+      "end": 54.37,
+      "text": "the clock."
+    },
+    {
+      "start": 54.4,
+      "end": 56.1,
+      "text": "Once an officer has a reason"
+    },
+    {
+      "start": 56.1,
+      "end": 58.22,
+      "text": "to stop you, how many minutes does"
+    },
+    {
+      "start": 58.22,
+      "end": 59.12,
+      "text": "that reason buy?"
+    },
+    {
+      "start": 59.86,
+      "end": 61.281,
+      "text": "Can they finish the ticket,"
+    },
+    {
+      "start": 61.34,
+      "end": 64.08,
+      "text": "then keep you sitting there on a hunch while they go looking"
+    },
+    {
+      "start": 64.08,
+      "end": 65.08,
+      "text": "for something else?"
+    },
+    {
+      "start": 65.76,
+      "end": 68.34,
+      "text": "In 2015, in a case called Rodriguez"
+    },
+    {
+      "start": 68.34,
+      "end": 68.89,
+      "text": "v."
+    },
+    {
+      "start": 68.92,
+      "end": 71.28,
+      "text": "United States, the Supreme Court drew"
+    },
+    {
+      "start": 71.28,
+      "end": 72.18,
+      "text": "a line —"
+    },
+    {
+      "start": 72.28,
+      "end": 74.271,
+      "text": "not in space, but in time."
+    },
+    {
+      "start": 74.8,
+      "end": 76.326,
+      "text": "Over the next twelve minutes:"
+    },
+    {
+      "start": 76.46,
+      "end": 78.1,
+      "text": "a traffic stop that ran a few"
+    },
+    {
+      "start": 78.1,
+      "end": 80.3,
+      "text": "minutes too long, the weight the Court"
+    },
+    {
+      "start": 80.3,
+      "end": 81.52,
+      "text": "hung on a single word,"
+    },
+    {
+      "start": 81.98,
+      "end": 84.4,
+      "text": "\"mission,\" and why those seven or eight"
+    },
+    {
+      "start": 84.4,
+      "end": 86.66,
+      "text": "minutes still shape every stop on every"
+    },
+    {
+      "start": 86.66,
+      "end": 87.838,
+      "text": "road today."
+    },
+    {
+      "start": 88.1,
+      "end": 90.36,
+      "text": "Just after midnight on March 27,"
+    },
+    {
+      "start": 90.36,
+      "end": 93.4,
+      "text": "2012, Dennys Rodriguez was driving a Mercury"
+    },
+    {
+      "start": 93.4,
+      "end": 95.64,
+      "text": "Mountaineer down a Nebraska highway"
+    },
+    {
+      "start": 96.03,
+      "end": 99.684,
+      "text": "when it drifted onto the shoulder for a moment, then swung back."
+    },
+    {
+      "start": 99.685,
+      "end": 100.585,
+      "text": "That was enough."
+    },
+    {
+      "start": 101.46,
+      "end": 103.86,
+      "text": "Under Nebraska law, driving on the shoulder"
+    },
+    {
+      "start": 103.86,
+      "end": 106.32,
+      "text": "is a violation, and an officer named"
+    },
+    {
+      "start": 106.32,
+      "end": 107.82,
+      "text": "Morgan Struble was watching."
+    },
+    {
+      "start": 108.82,
+      "end": 110.609,
+      "text": "Struble was no ordinary patrolman."
+    },
+    {
+      "start": 110.66,
+      "end": 112.02,
+      "text": "He was a K-9 officer,"
+    },
+    {
+      "start": 112.38,
+      "end": 113.38,
+      "text": "and riding in the back"
+    },
+    {
+      "start": 113.38,
+      "end": 115.41,
+      "text": "of his car was a trained drug-detection"
+    },
+    {
+      "start": 115.44,
+      "end": 116.402,
+      "text": "dog."
+    },
+    {
+      "start": 116.68,
+      "end": 117.9,
+      "text": "What happened next was,"
+    },
+    {
+      "start": 118.38,
+      "end": 120.34,
+      "text": "for a while, completely routine."
+    },
+    {
+      "start": 121.3,
+      "end": 122.81,
+      "text": "Struble pulled Rodriguez over,"
+    },
+    {
+      "start": 122.84,
+      "end": 125.334,
+      "text": "walked up to the window, and did the ordinary things."
+    },
+    {
+      "start": 125.62,
+      "end": 126.936,
+      "text": "He collected the license,"
+    },
+    {
+      "start": 127.3,
+      "end": 129.48,
+      "text": "the registration, the proof of insurance."
+    },
+    {
+      "start": 130.16,
+      "end": 131.107,
+      "text": "He ran his checks."
+    },
+    {
+      "start": 131.62,
+      "end": 133.146,
+      "text": "He asked the usual questions."
+    },
+    {
+      "start": 133.46,
+      "end": 138.226,
+      "text": "Then he did the thing that, on paper, ends a traffic stop: he wrote Rodriguez a warning,"
+    },
+    {
+      "start": 138.7,
+      "end": 139.647,
+      "text": "not even a ticket,"
+    },
+    {
+      "start": 139.9,
+      "end": 141.0,
+      "text": "just a written warning,"
+    },
+    {
+      "start": 141.0,
+      "end": 143.68,
+      "text": "explained it, and handed the documents back"
+    },
+    {
+      "start": 143.901,
+      "end": 144.73,
+      "text": "."
+    },
+    {
+      "start": 144.76,
+      "end": 146.813,
+      "text": "Stop and notice what that moment means."
+    },
+    {
+      "start": 147.04,
+      "end": 151.26,
+      "text": "The reason for the stop was that the car had touched the shoulder, and Struble had now dealt"
+    },
+    {
+      "start": 151.26,
+      "end": 152.07,
+      "text": "with it."
+    },
+    {
+      "start": 152.1,
+      "end": 153.363,
+      "text": "The warning was written."
+    },
+    {
+      "start": 153.66,
+      "end": 154.976,
+      "text": "The papers were returned."
+    },
+    {
+      "start": 155.14,
+      "end": 158.66,
+      "text": "In the language the Court would later use, the \"mission\" of the stop"
+    },
+    {
+      "start": 158.66,
+      "end": 160.773,
+      "text": "was complete."
+    },
+    {
+      "start": 160.774,
+      "end": 163.947,
+      "text": "By any ordinary understanding, Rodriguez was now free to drive away."
+    },
+    {
+      "start": 164.42,
+      "end": 165.32,
+      "text": "He wasn't."
+    },
+    {
+      "start": 165.96,
+      "end": 168.065,
+      "text": "Struble never said, \"You're free to go.\""
+    },
+    {
+      "start": 168.4,
+      "end": 170.347,
+      "text": "Instead he asked for something more —"
+    },
+    {
+      "start": 170.66,
+      "end": 172.48,
+      "text": "permission to walk his dog around"
+    },
+    {
+      "start": 172.48,
+      "end": 173.38,
+      "text": "the car."
+    },
+    {
+      "start": 174.0,
+      "end": 174.947,
+      "text": "Rodriguez said no."
+    },
+    {
+      "start": 175.14,
+      "end": 176.86,
+      "text": "And that refusal did not end"
+    },
+    {
+      "start": 176.86,
+      "end": 177.76,
+      "text": "the encounter."
+    },
+    {
+      "start": 177.9,
+      "end": 180.481,
+      "text": "It started the clock this whole case is about."
+    },
+    {
+      "start": 180.8,
+      "end": 182.72,
+      "text": "Because Rodriguez would not consent,"
+    },
+    {
+      "start": 183.46,
+      "end": 186.06,
+      "text": "Struble ordered him to shut off the engine, step out,"
+    },
+    {
+      "start": 186.26,
+      "end": 187.365,
+      "text": "and wait by the road."
+    },
+    {
+      "start": 187.92,
+      "end": 189.74,
+      "text": "He radioed for a second officer."
+    },
+    {
+      "start": 190.14,
+      "end": 191.72,
+      "text": "And for the next seven to eight"
+    },
+    {
+      "start": 191.72,
+      "end": 193.9,
+      "text": "minutes, Rodriguez stood on the shoulder"
+    },
+    {
+      "start": 193.9,
+      "end": 194.88,
+      "text": "of a dark highway,"
+    },
+    {
+      "start": 195.4,
+      "end": 196.74,
+      "text": "no longer being ticketed,"
+    },
+    {
+      "start": 196.74,
+      "end": 198.88,
+      "text": "no longer processed for anything at all,"
+    },
+    {
+      "start": 199.26,
+      "end": 200.479,
+      "text": "simply held."
+    },
+    {
+      "start": 200.82,
+      "end": 202.45,
+      "text": "When the backup finally arrived,"
+    },
+    {
+      "start": 202.48,
+      "end": 206.4,
+      "text": "Struble retrieved his dog and led it around the Mountaineer. On the second pass,"
+    },
+    {
+      "start": 206.56,
+      "end": 208.66,
+      "text": "the dog alerted, and a search turned"
+    },
+    {
+      "start": 208.66,
+      "end": 209.66,
+      "text": "up methamphetamine."
+    },
+    {
+      "start": 210.2,
+      "end": 212.845,
+      "text": "From the first flash of the patrol lights to that alert,"
+    },
+    {
+      "start": 213.26,
+      "end": 215.207,
+      "text": "about twenty-nine minutes had passed,"
+    },
+    {
+      "start": 215.3,
+      "end": 216.82,
+      "text": "and what the search found came"
+    },
+    {
+      "start": 216.82,
+      "end": 220.576,
+      "text": "in the stretch of time after the warning, not before."
+    },
+    {
+      "start": 220.7,
+      "end": 222.96,
+      "text": "So here is the hard problem."
+    },
+    {
+      "start": 222.96,
+      "end": 226.1,
+      "text": "Everything Struble did up to the warning was clearly legal."
+    },
+    {
+      "start": 226.1,
+      "end": 227.54,
+      "text": "Stopping a car that drifts onto"
+    },
+    {
+      "start": 227.54,
+      "end": 229.308,
+      "text": "the shoulder —"
+    },
+    {
+      "start": 231.04,
+      "end": 231.94,
+      "text": "legal."
+    },
+    {
+      "start": 232.38,
+      "end": 236.94,
+      "text": "Checking a license — legal. A dog sniff, on its own, the Court had said in an earlier"
+    },
+    {
+      "start": 236.94,
+      "end": 238.466,
+      "text": "case, is not even a \"search\"."
+    },
+    {
+      "start": 239.6,
+      "end": 241.24,
+      "text": "Each piece, by itself,"
+    },
+    {
+      "start": 241.24,
+      "end": 241.7,
+      "text": "was fine."
+    },
+    {
+      "start": 241.7,
+      "end": 243.96,
+      "text": "What turned this into a constitutional case"
+    },
+    {
+      "start": 243.96,
+      "end": 245.84,
+      "text": "was the order they came in,"
+    },
+    {
+      "start": 246.38,
+      "end": 249.58,
+      "text": "and the gap in the middle:"
+    },
+    {
+      "start": 249.58,
+      "end": 251.52,
+      "text": "the officer finished the traffic stop,"
+    },
+    {
+      "start": 251.52,
+      "end": 253.16,
+      "text": "then kept the driver there,"
+    },
+    {
+      "start": 253.161,
+      "end": 256.869,
+      "text": "with no ticket left to write, waiting for a dog. The government's answer was, in essence:"
+    },
+    {
+      "start": 256.68,
+      "end": 257.58,
+      "text": "what's the harm?"
+    },
+    {
+      "start": 257.92,
+      "end": 259.762,
+      "text": "It was only seven or eight minutes."
+    },
+    {
+      "start": 260.38,
+      "end": 264.52,
+      "text": "Officers, it argued, should have a little breathing room, a small buffer to run"
+    },
+    {
+      "start": 264.52,
+      "end": 265.64,
+      "text": "a dog around a car,"
+    },
+    {
+      "start": 266.06,
+      "end": 267.42,
+      "text": "especially with a second unit"
+    },
+    {
+      "start": 267.42,
+      "end": 268.578,
+      "text": "on the way for safety."
+    },
+    {
+      "start": 269.24,
+      "end": 270.7,
+      "text": "A few extra minutes is such"
+    },
+    {
+      "start": 270.7,
+      "end": 272.49,
+      "text": "a small thing, the government said,"
+    },
+    {
+      "start": 272.52,
+      "end": 274.68,
+      "text": "that the Constitution shouldn't even count"
+    },
+    {
+      "start": 274.68,
+      "end": 275.35,
+      "text": "it."
+    },
+    {
+      "start": 275.38,
+      "end": 277.38,
+      "text": "In legal terms, it was \"de minimis\""
+    },
+    {
+      "start": 277.433,
+      "end": 277.89,
+      "text": "—"
+    },
+    {
+      "start": 277.92,
+      "end": 279.37,
+      "text": "too slight to notice."
+    },
+    {
+      "start": 279.5,
+      "end": 281.237,
+      "text": "And that argument has real force."
+    },
+    {
+      "start": 281.74,
+      "end": 283.12,
+      "text": "Seven minutes is not long."
+    },
+    {
+      "start": 283.82,
+      "end": 286.618,
+      "text": "If you have ever idled at a red light or in a drive-through,"
+    },
+    {
+      "start": 286.92,
+      "end": 289.64,
+      "text": "you have surrendered more without a second thought."
+    },
+    {
+      "start": 289.98,
+      "end": 290.98,
+      "text": "Why should a brief,"
+    },
+    {
+      "start": 291.06,
+      "end": 293.82,
+      "text": "careful delay, done partly for the officer's"
+    },
+    {
+      "start": 293.82,
+      "end": 296.48,
+      "text": "own safety, suddenly count as a violation"
+    },
+    {
+      "start": 296.48,
+      "end": 297.782,
+      "text": "of your rights?"
+    },
+    {
+      "start": 298.02,
+      "end": 299.96,
+      "text": "On April 21, 2015,"
+    },
+    {
+      "start": 300.24,
+      "end": 302.17,
+      "text": "the Supreme Court gave its answer —"
+    },
+    {
+      "start": 302.34,
+      "end": 303.38,
+      "text": "six votes to three."
+    },
+    {
+      "start": 304.18,
+      "end": 306.18,
+      "text": "Justice Ruth Bader Ginsburg wrote"
+    },
+    {
+      "start": 306.18,
+      "end": 308.34,
+      "text": "for the majority, and her reasoning turned"
+    },
+    {
+      "start": 308.34,
+      "end": 309.24,
+      "text": "on that one word:"
+    },
+    {
+      "start": 309.48,
+      "end": 310.33,
+      "text": "mission."
+    },
+    {
+      "start": 310.36,
+      "end": 311.76,
+      "text": "A traffic stop, she wrote,"
+    },
+    {
+      "start": 312.04,
+      "end": 313.748,
+      "text": "is a seizure —"
+    },
+    {
+      "start": 313.749,
+      "end": 316.852,
+      "text": "for those minutes, the government is holding you —"
+    },
+    {
+      "start": 316.853,
+      "end": 321.36,
+      "text": "and it is justified only by its purpose. The stop exists to handle the violation"
+    },
+    {
+      "start": 321.78,
+      "end": 323.88,
+      "text": "and the safety concerns that ride along"
+    },
+    {
+      "start": 323.88,
+      "end": 324.78,
+      "text": "with it:"
+    },
+    {
+      "start": 325.08,
+      "end": 327.28,
+      "text": "checking your license, your registration,"
+    },
+    {
+      "start": 327.84,
+      "end": 330.34,
+      "text": "your insurance, whether there are warrants out for you."
+    },
+    {
+      "start": 330.56,
+      "end": 332.034,
+      "text": "Those tasks are the mission."
+    },
+    {
+      "start": 332.32,
+      "end": 333.88,
+      "text": "And the authority to hold you,"
+    },
+    {
+      "start": 333.88,
+      "end": 335.8,
+      "text": "the Court said, ends when the tasks"
+    },
+    {
+      "start": 335.8,
+      "end": 338.582,
+      "text": "tied to the traffic violation are —"
+    },
+    {
+      "start": 338.583,
+      "end": 340.652,
+      "text": "or reasonably should have been —"
+    },
+    {
+      "start": 340.653,
+      "end": 341.553,
+      "text": "completed."
+    },
+    {
+      "start": 342.28,
+      "end": 343.56,
+      "text": "A stop may last as long"
+    },
+    {
+      "start": 343.56,
+      "end": 344.48,
+      "text": "as its job takes,"
+    },
+    {
+      "start": 344.48,
+      "end": 346.171,
+      "text": "and no longer."
+    },
+    {
+      "start": 346.48,
+      "end": 347.84,
+      "text": "A dog sniff is not part"
+    },
+    {
+      "start": 347.84,
+      "end": 348.74,
+      "text": "of that job."
+    },
+    {
+      "start": 349.24,
+      "end": 351.135,
+      "text": "Sniffing for drugs, the Court noted,"
+    },
+    {
+      "start": 351.22,
+      "end": 353.68,
+      "text": "has nothing to do with keeping a car safe on the road;"
+    },
+    {
+      "start": 354.28,
+      "end": 357.5,
+      "text": "it is a different errand entirely —"
+    },
+    {
+      "start": 357.501,
+      "end": 360.081,
+      "text": "ordinary crime detection, aimed at finding evidence."
+    },
+    {
+      "start": 360.1,
+      "end": 362.14,
+      "text": "So when Struble held Rodriguez past"
+    },
+    {
+      "start": 362.14,
+      "end": 363.561,
+      "text": "the warning to run the dog,"
+    },
+    {
+      "start": 363.82,
+      "end": 365.98,
+      "text": "he was no longer doing traffic-stop work."
+    },
+    {
+      "start": 366.44,
+      "end": 370.727,
+      "text": "He was doing something else, on the government's initiative, with the driver's time."
+    },
+    {
+      "start": 371.12,
+      "end": 375.34,
+      "text": "Then the Court did the thing that makes the case famous. It refused to let the outcome hang"
+    },
+    {
+      "start": 375.34,
+      "end": 376.9,
+      "text": "on the order the officer happened"
+    },
+    {
+      "start": 376.9,
+      "end": 377.8,
+      "text": "to choose."
+    },
+    {
+      "start": 378.16,
+      "end": 379.15,
+      "text": "It would not matter,"
+    },
+    {
+      "start": 379.18,
+      "end": 381.52,
+      "text": "Ginsburg wrote, whether the sniff came before"
+    },
+    {
+      "start": 381.52,
+      "end": 383.06,
+      "text": "the warning or after it."
+    },
+    {
+      "start": 383.72,
+      "end": 384.72,
+      "text": "One thing mattered:"
+    },
+    {
+      "start": 384.9,
+      "end": 386.6,
+      "text": "did holding the driver for the dog"
+    },
+    {
+      "start": 386.6,
+      "end": 390.375,
+      "text": "add time to the stop?"
+    },
+    {
+      "start": 390.376,
+      "end": 392.66,
+      "text": "An officer cannot bank the minutes he saves by working fast"
+    },
+    {
+      "start": 391.76,
+      "end": 393.8,
+      "text": "and then spend them on an unrelated"
+    },
+    {
+      "start": 393.8,
+      "end": 394.7,
+      "text": "investigation."
+    },
+    {
+      "start": 395.28,
+      "end": 398.363,
+      "text": "A stop, she wrote —"
+    },
+    {
+      "start": 398.364,
+      "end": 400.027,
+      "text": "quoting an earlier case —"
+    },
+    {
+      "start": 400.028,
+      "end": 404.04,
+      "text": "becomes unlawful when it is \"prolonged beyond the time reasonably required to complete"
+    },
+    {
+      "start": 404.04,
+      "end": 404.94,
+      "text": "the mission.\""
+    },
+    {
+      "start": 405.24,
+      "end": 406.7,
+      "text": "And that is why the government's"
+    },
+    {
+      "start": 406.7,
+      "end": 409.02,
+      "text": "\"it was only a few minutes\" argument lost."
+    },
+    {
+      "start": 409.24,
+      "end": 412.88,
+      "text": "The Court refused to measure the intrusion by whether it felt big or small."
+    },
+    {
+      "start": 413.5,
+      "end": 414.98,
+      "text": "The question was not how long"
+    },
+    {
+      "start": 414.98,
+      "end": 416.16,
+      "text": "the extra delay ran,"
+    },
+    {
+      "start": 416.56,
+      "end": 418.62,
+      "text": "but whether the officer had any authority"
+    },
+    {
+      "start": 418.62,
+      "end": 419.673,
+      "text": "to impose it at all."
+    },
+    {
+      "start": 420.22,
+      "end": 421.59,
+      "text": "Once the mission was finished,"
+    },
+    {
+      "start": 421.62,
+      "end": 422.52,
+      "text": "he did not."
+    },
+    {
+      "start": 422.66,
+      "end": 424.08,
+      "text": "Seven minutes past the end"
+    },
+    {
+      "start": 424.08,
+      "end": 425.58,
+      "text": "of a stop is still seven minutes"
+    },
+    {
+      "start": 425.58,
+      "end": 427.22,
+      "text": "the government had no reason to hold"
+    },
+    {
+      "start": 427.22,
+      "end": 428.12,
+      "text": "you."
+    },
+    {
+      "start": 428.32,
+      "end": 432.82,
+      "text": "It is worth being precise about what the Court did not do. It did not ban dog sniffs."
+    },
+    {
+      "start": 433.3,
+      "end": 435.02,
+      "text": "It did not ban traffic stops,"
+    },
+    {
+      "start": 435.42,
+      "end": 437.0,
+      "text": "or order officers to rush,"
+    },
+    {
+      "start": 437.44,
+      "end": 439.24,
+      "text": "or say the police can never act"
+    },
+    {
+      "start": 439.24,
+      "end": 440.14,
+      "text": "on a hunch."
+    },
+    {
+      "start": 440.56,
+      "end": 442.54,
+      "text": "And it did not set Rodriguez free"
+    },
+    {
+      "start": 443.488,
+      "end": 443.788,
+      "text": "."
+    },
+    {
+      "start": 443.789,
+      "end": 446.78,
+      "text": "In fact, it left a second door wide open. If Struble had a real,"
+    },
+    {
+      "start": 446.78,
+      "end": 449.5,
+      "text": "specific reason to suspect Rodriguez of something"
+    },
+    {
+      "start": 449.5,
+      "end": 452.335,
+      "text": "beyond the traffic violation —"
+    },
+    {
+      "start": 452.336,
+      "end": 453.915,
+      "text": "genuine reasonable suspicion —"
+    },
+    {
+      "start": 454.38,
+      "end": 457.595,
+      "text": "then holding him for the dog might have been perfectly lawful."
+    },
+    {
+      "start": 457.92,
+      "end": 461.9,
+      "text": "So the Court sent the case back to the lower courts to answer exactly that:"
+    },
+    {
+      "start": 462.02,
+      "end": 463.599,
+      "text": "setting the timing rule aside,"
+    },
+    {
+      "start": 463.84,
+      "end": 465.88,
+      "text": "did the officer have independent grounds"
+    },
+    {
+      "start": 465.88,
+      "end": 468.421,
+      "text": "to keep Rodriguez waiting?"
+    },
+    {
+      "start": 468.422,
+      "end": 470.78,
+      "text": "The dissenters thought the answer was plainly yes."
+    },
+    {
+      "start": 471.28,
+      "end": 475.9,
+      "text": "Justice Clarence Thomas, joined by Justice Samuel Alito, argued that the whole encounter"
+    },
+    {
+      "start": 475.901,
+      "end": 476.41,
+      "text": "—"
+    },
+    {
+      "start": 476.44,
+      "end": 477.756,
+      "text": "all twenty-nine minutes —"
+    },
+    {
+      "start": 477.86,
+      "end": 480.28,
+      "text": "was reasonable, and that the officer had"
+    },
+    {
+      "start": 480.28,
+      "end": 482.36,
+      "text": "enough to justify the wait regardless."
+    },
+    {
+      "start": 483.28,
+      "end": 485.18,
+      "text": "Alito added that the majority's rule"
+    },
+    {
+      "start": 485.18,
+      "end": 486.32,
+      "text": "was strangely formal:"
+    },
+    {
+      "start": 486.96,
+      "end": 488.4,
+      "text": "an officer who paused to call"
+    },
+    {
+      "start": 488.4,
+      "end": 490.242,
+      "text": "for backup before running the dog —"
+    },
+    {
+      "start": 490.66,
+      "end": 491.923,
+      "text": "a sensible safety step —"
+    },
+    {
+      "start": 492.3,
+      "end": 494.22,
+      "text": "would now be penalized for the timing"
+    },
+    {
+      "start": 494.221,
+      "end": 494.75,
+      "text": "."
+    },
+    {
+      "start": 494.78,
+      "end": 496.5,
+      "text": "Their point was not that time doesn't"
+    },
+    {
+      "start": 496.5,
+      "end": 497.37,
+      "text": "matter."
+    },
+    {
+      "start": 497.4,
+      "end": 498.453,
+      "text": "It was that a short,"
+    },
+    {
+      "start": 498.5,
+      "end": 500.14,
+      "text": "careful delay by a lone officer"
+    },
+    {
+      "start": 500.14,
+      "end": 501.614,
+      "text": "at midnight was reasonable —"
+    },
+    {
+      "start": 501.98,
+      "end": 504.937,
+      "text": "which is the very thing the Fourth Amendment asks."
+    },
+    {
+      "start": 505.14,
+      "end": 506.48,
+      "text": "But the majority's line held,"
+    },
+    {
+      "start": 506.48,
+      "end": 507.42,
+      "text": "and its strength"
+    },
+    {
+      "start": 507.42,
+      "end": 508.473,
+      "text": "is that it is clean."
+    },
+    {
+      "start": 509.02,
+      "end": 510.4,
+      "text": "It does not ask a judge"
+    },
+    {
+      "start": 510.4,
+      "end": 512.14,
+      "text": "to guess whether a delay felt long"
+    },
+    {
+      "start": 512.14,
+      "end": 514.18,
+      "text": "or short, or whether a hunch"
+    },
+    {
+      "start": 514.18,
+      "end": 516.2,
+      "text": "was strong enough to be worth a few minutes."
+    },
+    {
+      "start": 516.56,
+      "end": 517.981,
+      "text": "It asks a simpler question:"
+    },
+    {
+      "start": 518.52,
+      "end": 520.79,
+      "text": "is the traffic stop still doing traffic-stop"
+    },
+    {
+      "start": 520.82,
+      "end": 521.65,
+      "text": "work?"
+    },
+    {
+      "start": 521.68,
+      "end": 525.38,
+      "text": "The moment the mission is finished, the clock stops, and holding you any"
+    },
+    {
+      "start": 525.38,
+      "end": 527.594,
+      "text": "longer needs its own reason."
+    },
+    {
+      "start": 527.84,
+      "end": 529.66,
+      "text": "That rule now sits behind millions"
+    },
+    {
+      "start": 529.66,
+      "end": 530.78,
+      "text": "of ordinary stops."
+    },
+    {
+      "start": 531.64,
+      "end": 533.52,
+      "text": "Every time an officer finishes a ticket"
+    },
+    {
+      "start": 533.52,
+      "end": 535.0,
+      "text": "and then lingers —"
+    },
+    {
+      "start": 535.12,
+      "end": 537.24,
+      "text": "one more question, one more check,"
+    },
+    {
+      "start": 537.82,
+      "end": 539.603,
+      "text": "a slow walk around the car —"
+    },
+    {
+      "start": 540.3,
+      "end": 541.86,
+      "text": "Rodriguez is the case that asks"
+    },
+    {
+      "start": 541.86,
+      "end": 543.46,
+      "text": "the quiet question underneath:"
+    },
+    {
+      "start": 544.66,
+      "end": 545.713,
+      "text": "is the mission over?"
+    },
+    {
+      "start": 545.94,
+      "end": 546.9,
+      "text": "Because if it is,"
+    },
+    {
+      "start": 546.98,
+      "end": 548.5,
+      "text": "the time that comes after belongs"
+    },
+    {
+      "start": 548.5,
+      "end": 549.515,
+      "text": "to you."
+    },
+    {
+      "start": 549.66,
+      "end": 551.26,
+      "text": "So go back to that dark shoulder"
+    },
+    {
+      "start": 551.26,
+      "end": 553.3,
+      "text": "in Nebraska, just after midnight."
+    },
+    {
+      "start": 553.86,
+      "end": 555.123,
+      "text": "The warning was written."
+    },
+    {
+      "start": 555.48,
+      "end": 556.954,
+      "text": "The papers were handed back."
+    },
+    {
+      "start": 557.38,
+      "end": 559.78,
+      "text": "The reason for the whole encounter was finished —"
+    },
+    {
+      "start": 560.02,
+      "end": 561.74,
+      "text": "and still the driver could not leave"
+    },
+    {
+      "start": 561.741,
+      "end": 562.37,
+      "text": "."
+    },
+    {
+      "start": 562.4,
+      "end": 564.42,
+      "text": "The Supreme Court looked at those seven"
+    },
+    {
+      "start": 564.42,
+      "end": 566.04,
+      "text": "or eight silent minutes and said"
+    },
+    {
+      "start": 566.04,
+      "end": 568.093,
+      "text": "they were not the government's to take."
+    },
+    {
+      "start": 568.18,
+      "end": 569.41,
+      "text": "Your rights, it turns out,"
+    },
+    {
+      "start": 569.44,
+      "end": 571.75,
+      "text": "are not only about where the state can go."
+    },
+    {
+      "start": 571.78,
+      "end": 573.26,
+      "text": "They are about how long it can"
+    },
+    {
+      "start": 573.26,
+      "end": 574.274,
+      "text": "keep you."
+    },
+    {
+      "start": 574.44,
+      "end": 576.28,
+      "text": "And that is the thread running quietly"
+    },
+    {
+      "start": 576.28,
+      "end": 577.333,
+      "text": "through all of this."
+    },
+    {
+      "start": 577.6,
+      "end": 579.08,
+      "text": "Three times now, we have watched"
+    },
+    {
+      "start": 579.08,
+      "end": 580.2,
+      "text": "the law draw its line"
+    },
+    {
+      "start": 580.2,
+      "end": 581.305,
+      "text": "in a different place."
+    },
+    {
+      "start": 581.78,
+      "end": 583.48,
+      "text": "Around the home, and the walls"
+    },
+    {
+      "start": 583.48,
+      "end": 584.901,
+      "text": "that hold your heat inside."
+    },
+    {
+      "start": 585.26,
+      "end": 587.44,
+      "text": "Around the person, and words spoken"
+    },
+    {
+      "start": 587.44,
+      "end": 589.04,
+      "text": "where no wall stands at all."
+    },
+    {
+      "start": 589.5,
+      "end": 591.287,
+      "text": "And now around time itself —"
+    },
+    {
+      "start": 591.56,
+      "end": 592.66,
+      "text": "the minutes at the side"
+    },
+    {
+      "start": 592.66,
+      "end": 593.76,
+      "text": "of a road that no one"
+    },
+    {
+      "start": 593.76,
+      "end": 595.286,
+      "text": "is entitled to take from you."
+    },
+    {
+      "start": 595.76,
+      "end": 597.48,
+      "text": "The same idea keeps surfacing"
+    },
+    {
+      "start": 597.48,
+      "end": 598.427,
+      "text": "in a new disguise:"
+    },
+    {
+      "start": 599.2,
+      "end": 600.884,
+      "text": "your freedom lives at the edges,"
+    },
+    {
+      "start": 601.1,
+      "end": 603.22,
+      "text": "in exactly the places the state would"
+    },
+    {
+      "start": 603.22,
+      "end": 605.225,
+      "text": "find it easiest to slip past."
+    },
+    {
+      "start": 605.42,
+      "end": 607.12,
+      "text": "We call the Fourth Amendment a wall"
+    },
+    {
+      "start": 607.12,
+      "end": 608.436,
+      "text": "around your private life."
+    },
+    {
+      "start": 608.58,
+      "end": 610.36,
+      "text": "But it may be truer to call"
+    },
+    {
+      "start": 610.36,
+      "end": 612.701,
+      "text": "it a line —"
+    },
+    {
+      "start": 612.702,
+      "end": 615.78,
+      "text": "drawn sometimes in space, sometimes in sound, and here,"
+    },
+    {
+      "start": 615.78,
+      "end": 616.68,
+      "text": "in time."
+    },
+    {
+      "start": 617.0,
+      "end": 618.4,
+      "text": "Wherever it runs, the task"
+    },
+    {
+      "start": 618.4,
+      "end": 619.3,
+      "text": "is the same:"
+    },
+    {
+      "start": 619.46,
+      "end": 621.24,
+      "text": "to mark the point where the government"
+    },
+    {
+      "start": 621.24,
+      "end": 623.06,
+      "text": "has to stop, and you begin."
+    },
+    {
+      "start": 623.72,
+      "end": 626.567,
+      "text": "That is where your rights have always lived. Right at the edge."
+    }
+  ],
+  "graphics": [
+    {
+      "start": 0.0,
+      "end": 5.6,
+      "lines": [
+        "How long can they hold you?",
+        "The stop was over."
+      ]
+    },
+    {
+      "start": 45.35,
+      "end": 50.95,
+      "lines": [
+        "A line drawn in time",
+        "Rodriguez v. United States (2015)"
+      ]
+    },
+    {
+      "start": 88.053,
+      "end": 93.653,
+      "lines": [
+        "Nebraska — March 27, 2012, just after midnight"
+      ]
+    },
+    {
+      "start": 116.638,
+      "end": 122.238,
+      "lines": [
+        "License · registration · insurance · warning"
+      ]
+    },
+    {
+      "start": 144.434,
+      "end": 150.034,
+      "lines": [
+        "The mission was complete"
+      ]
+    },
+    {
+      "start": 164.475,
+      "end": 170.075,
+      "lines": [
+        "But the stop did not end"
+      ]
+    },
+    {
+      "start": 180.707,
+      "end": 186.307,
+      "lines": [
+        "7-8 minutes — simply held"
+      ]
+    },
+    {
+      "start": 200.701,
+      "end": 206.301,
+      "lines": [
+        "~29 minutes total",
+        "The dog alerted — after the warning"
+      ]
+    },
+    {
+      "start": 220.788,
+      "end": 226.388,
+      "lines": [
+        "Each step was legal — the gap was not"
+      ]
+    },
+    {
+      "start": 254.017,
+      "end": 259.617,
+      "lines": [
+        "“de minimis” — too small to count?"
+      ]
+    },
+    {
+      "start": 279.584,
+      "end": 285.184,
+      "lines": [
+        "A minor delay — or a real intrusion?"
+      ]
+    },
+    {
+      "start": 297.999,
+      "end": 303.599,
+      "lines": [
+        "April 21, 2015 — 6–3",
+        "Rodriguez v. United States, 575 U.S. 348"
+      ]
+    },
+    {
+      "start": 310.516,
+      "end": 316.116,
+      "lines": [
+        "Authority ends when the traffic tasks are done"
+      ]
+    },
+    {
+      "start": 346.393,
+      "end": 351.993,
+      "lines": [
+        "The sniff was a different mission"
+      ]
+    },
+    {
+      "start": 370.938,
+      "end": 376.538,
+      "lines": [
+        "Not the order — the added time",
+        "“prolonged beyond the time reasonably required to complete the mission”"
+      ]
+    },
+    {
+      "start": 405.236,
+      "end": 410.836,
+      "lines": [
+        "Not the size of the delay — the authority to impose it"
+      ]
+    },
+    {
+      "start": 428.202,
+      "end": 433.802,
+      "lines": [
+        "Not banned — and not automatically freed",
+        "Reasonable suspicion could still justify it"
+      ]
+    },
+    {
+      "start": 457.809,
+      "end": 463.409,
+      "lines": [
+        "Dissent: Thomas, Alito, Kennedy",
+        "‘a short, careful delay was reasonable’"
+      ]
+    },
+    {
+      "start": 505.156,
+      "end": 510.756,
+      "lines": [
+        "Is the stop still doing stop work?"
+      ]
+    },
+    {
+      "start": 527.797,
+      "end": 533.397,
+      "lines": [
+        "Is the mission over?"
+      ]
+    },
+    {
+      "start": 549.742,
+      "end": 555.342,
+      "lines": [
+        "Not where — how long"
+      ]
+    },
+    {
+      "start": 574.473,
+      "end": 580.073,
+      "lines": [
+        "Home. Person. Time."
+      ]
+    },
+    {
+      "start": 605.427,
+      "end": 611.027,
+      "lines": [
+        "Right at the edge.",
+        "Subscribe"
+      ]
+    }
+  ]
+}
